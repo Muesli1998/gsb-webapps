@@ -1,0 +1,16 @@
+{
+  "key": "2023:446332",
+  "season": 2023,
+  "matchId": 446332,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "Vanløse 3",
+  "ageGroupId": "9",
+  "leagueGroupId": "15888",
+  "roundDate": "2023-12-03",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,15888,1,8,,446332,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2023-446332.json",
+  "verifiedAt": "2026-09-12T16:56:30.208Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree"
+}

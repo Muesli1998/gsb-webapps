@@ -1,0 +1,16 @@
+{
+  "key": "2023:445394",
+  "season": 2023,
+  "matchId": 445394,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Frederiksberg 2",
+  "ageGroupId": "17",
+  "leagueGroupId": "15897",
+  "roundDate": "2024-01-07",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,15897,1,8,,445394,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2023-445394.json",
+  "verifiedAt": "2026-09-12T16:56:30.208Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree"
+}
