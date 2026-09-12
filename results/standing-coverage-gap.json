@@ -1,0 +1,687 @@
+{
+  "generatedAt": "2026-09-12T18:28:57.232Z",
+  "totalUniqueGroups": 97,
+  "withStanding": 0,
+  "missingStanding": 97,
+  "rows": [
+    {
+      "season": 2025,
+      "groupId": "18733",
+      "teams": 1,
+      "matches": 6,
+      "standingCaptured": false
+    },
+    {
+      "season": 2025,
+      "groupId": "18504",
+      "teams": 1,
+      "matches": 4,
+      "standingCaptured": false
+    },
+    {
+      "season": 2025,
+      "groupId": "18154",
+      "teams": 1,
+      "matches": 6,
+      "standingCaptured": false
+    },
+    {
+      "season": 2025,
+      "groupId": "18122",
+      "teams": 1,
+      "matches": 12,
+      "standingCaptured": false
+    },
+    {
+      "season": 2025,
+      "groupId": "17999",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2025,
+      "groupId": "17955",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2025,
+      "groupId": "17963",
+      "teams": 1,
+      "matches": 8,
+      "standingCaptured": false
+    },
+    {
+      "season": 2025,
+      "groupId": "17965",
+      "teams": 1,
+      "matches": 7,
+      "standingCaptured": false
+    },
+    {
+      "season": 2024,
+      "groupId": "17100",
+      "teams": 1,
+      "matches": 12,
+      "standingCaptured": false
+    },
+    {
+      "season": 2024,
+      "groupId": "16931",
+      "teams": 1,
+      "matches": 7,
+      "standingCaptured": false
+    },
+    {
+      "season": 2024,
+      "groupId": "16929",
+      "teams": 1,
+      "matches": 7,
+      "standingCaptured": false
+    },
+    {
+      "season": 2023,
+      "groupId": "16610",
+      "teams": 1,
+      "matches": 3,
+      "standingCaptured": false
+    },
+    {
+      "season": 2023,
+      "groupId": "16654",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2023,
+      "groupId": "16087",
+      "teams": 1,
+      "matches": 6,
+      "standingCaptured": false
+    },
+    {
+      "season": 2023,
+      "groupId": "16088",
+      "teams": 1,
+      "matches": 8,
+      "standingCaptured": false
+    },
+    {
+      "season": 2023,
+      "groupId": "15888",
+      "teams": 1,
+      "matches": 6,
+      "standingCaptured": false
+    },
+    {
+      "season": 2023,
+      "groupId": "15897",
+      "teams": 1,
+      "matches": 8,
+      "standingCaptured": false
+    },
+    {
+      "season": 2022,
+      "groupId": "15662",
+      "teams": 1,
+      "matches": 2,
+      "standingCaptured": false
+    },
+    {
+      "season": 2022,
+      "groupId": "15670",
+      "teams": 1,
+      "matches": 2,
+      "standingCaptured": false
+    },
+    {
+      "season": 2022,
+      "groupId": "15334",
+      "teams": 1,
+      "matches": 6,
+      "standingCaptured": false
+    },
+    {
+      "season": 2022,
+      "groupId": "14882",
+      "teams": 1,
+      "matches": 6,
+      "standingCaptured": false
+    },
+    {
+      "season": 2021,
+      "groupId": "13790",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2021,
+      "groupId": "13959",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2021,
+      "groupId": "13961",
+      "teams": 1,
+      "matches": 5,
+      "standingCaptured": false
+    },
+    {
+      "season": 2021,
+      "groupId": "13966",
+      "teams": 1,
+      "matches": 6,
+      "standingCaptured": false
+    },
+    {
+      "season": 2021,
+      "groupId": "13965",
+      "teams": 1,
+      "matches": 4,
+      "standingCaptured": false
+    },
+    {
+      "season": 2020,
+      "groupId": "13228",
+      "teams": 1,
+      "matches": 3,
+      "standingCaptured": false
+    },
+    {
+      "season": 2020,
+      "groupId": "13230",
+      "teams": 1,
+      "matches": 3,
+      "standingCaptured": false
+    },
+    {
+      "season": 2020,
+      "groupId": "13285",
+      "teams": 1,
+      "matches": 5,
+      "standingCaptured": false
+    },
+    {
+      "season": 2020,
+      "groupId": "13297",
+      "teams": 1,
+      "matches": 6,
+      "standingCaptured": false
+    },
+    {
+      "season": 2020,
+      "groupId": "13299",
+      "teams": 1,
+      "matches": 6,
+      "standingCaptured": false
+    },
+    {
+      "season": 2020,
+      "groupId": "13300",
+      "teams": 1,
+      "matches": 6,
+      "standingCaptured": false
+    },
+    {
+      "season": 2020,
+      "groupId": "13293",
+      "teams": 1,
+      "matches": 5,
+      "standingCaptured": false
+    },
+    {
+      "season": 2020,
+      "groupId": "13304",
+      "teams": 1,
+      "matches": 7,
+      "standingCaptured": false
+    },
+    {
+      "season": 2020,
+      "groupId": "13305",
+      "teams": 1,
+      "matches": 7,
+      "standingCaptured": false
+    },
+    {
+      "season": 2020,
+      "groupId": "13306",
+      "teams": 1,
+      "matches": 5,
+      "standingCaptured": false
+    },
+    {
+      "season": 2020,
+      "groupId": "13307",
+      "teams": 1,
+      "matches": 6,
+      "standingCaptured": false
+    },
+    {
+      "season": 2020,
+      "groupId": "13311",
+      "teams": 1,
+      "matches": 6,
+      "standingCaptured": false
+    },
+    {
+      "season": 2020,
+      "groupId": "13312",
+      "teams": 1,
+      "matches": 6,
+      "standingCaptured": false
+    },
+    {
+      "season": 2020,
+      "groupId": "13302",
+      "teams": 1,
+      "matches": 4,
+      "standingCaptured": false
+    },
+    {
+      "season": 2019,
+      "groupId": "13102",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2019,
+      "groupId": "13144",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2019,
+      "groupId": "12570",
+      "teams": 1,
+      "matches": 2,
+      "standingCaptured": false
+    },
+    {
+      "season": 2019,
+      "groupId": "12580",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2019,
+      "groupId": "12583",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2019,
+      "groupId": "12585",
+      "teams": 1,
+      "matches": 2,
+      "standingCaptured": false
+    },
+    {
+      "season": 2019,
+      "groupId": "12584",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2019,
+      "groupId": "12588",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2019,
+      "groupId": "12589",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2019,
+      "groupId": "12590",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2019,
+      "groupId": "12591",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2019,
+      "groupId": "12594",
+      "teams": 1,
+      "matches": 2,
+      "standingCaptured": false
+    },
+    {
+      "season": 2019,
+      "groupId": "12595",
+      "teams": 1,
+      "matches": 2,
+      "standingCaptured": false
+    },
+    {
+      "season": 2019,
+      "groupId": "12597",
+      "teams": 1,
+      "matches": 6,
+      "standingCaptured": false
+    },
+    {
+      "season": 2018,
+      "groupId": "11355",
+      "teams": 1,
+      "matches": 7,
+      "standingCaptured": false
+    },
+    {
+      "season": 2018,
+      "groupId": "11771",
+      "teams": 1,
+      "matches": 6,
+      "standingCaptured": false
+    },
+    {
+      "season": 2017,
+      "groupId": "9592",
+      "teams": 1,
+      "matches": 2,
+      "standingCaptured": false
+    },
+    {
+      "season": 2017,
+      "groupId": "9288",
+      "teams": 1,
+      "matches": 6,
+      "standingCaptured": false
+    },
+    {
+      "season": 2016,
+      "groupId": "7685",
+      "teams": 1,
+      "matches": 4,
+      "standingCaptured": false
+    },
+    {
+      "season": 2016,
+      "groupId": "8918",
+      "teams": 1,
+      "matches": 2,
+      "standingCaptured": false
+    },
+    {
+      "season": 2016,
+      "groupId": "9019",
+      "teams": 1,
+      "matches": 2,
+      "standingCaptured": false
+    },
+    {
+      "season": 2016,
+      "groupId": "7640",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2016,
+      "groupId": "7643",
+      "teams": 1,
+      "matches": 8,
+      "standingCaptured": false
+    },
+    {
+      "season": 2016,
+      "groupId": "7644",
+      "teams": 1,
+      "matches": 3,
+      "standingCaptured": false
+    },
+    {
+      "season": 2016,
+      "groupId": "7631",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2016,
+      "groupId": "7647",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2016,
+      "groupId": "7652",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2016,
+      "groupId": "7654",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2016,
+      "groupId": "7660",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2015,
+      "groupId": "6099",
+      "teams": 1,
+      "matches": 9,
+      "standingCaptured": false
+    },
+    {
+      "season": 2015,
+      "groupId": "6013",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2015,
+      "groupId": "6019",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2015,
+      "groupId": "6022",
+      "teams": 1,
+      "matches": 3,
+      "standingCaptured": false
+    },
+    {
+      "season": 2015,
+      "groupId": "5984",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2014,
+      "groupId": "4266",
+      "teams": 1,
+      "matches": 10,
+      "standingCaptured": false
+    },
+    {
+      "season": 2014,
+      "groupId": "4267",
+      "teams": 1,
+      "matches": 7,
+      "standingCaptured": false
+    },
+    {
+      "season": 2014,
+      "groupId": "4245",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2014,
+      "groupId": "4247",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2013,
+      "groupId": "2692",
+      "teams": 1,
+      "matches": 4,
+      "standingCaptured": false
+    },
+    {
+      "season": 2013,
+      "groupId": "2693",
+      "teams": 1,
+      "matches": 6,
+      "standingCaptured": false
+    },
+    {
+      "season": 2012,
+      "groupId": "1329",
+      "teams": 1,
+      "matches": 8,
+      "standingCaptured": false
+    },
+    {
+      "season": 2012,
+      "groupId": "1285",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2012,
+      "groupId": "1301",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2011,
+      "groupId": "110",
+      "teams": 1,
+      "matches": 8,
+      "standingCaptured": false
+    },
+    {
+      "season": 2011,
+      "groupId": "71",
+      "teams": 1,
+      "matches": 1,
+      "standingCaptured": false
+    },
+    {
+      "season": 2011,
+      "groupId": "58",
+      "teams": 1,
+      "matches": 7,
+      "standingCaptured": false
+    },
+    {
+      "season": 2011,
+      "groupId": "60",
+      "teams": 1,
+      "matches": 7,
+      "standingCaptured": false
+    },
+    {
+      "season": 2011,
+      "groupId": "74",
+      "teams": 1,
+      "matches": 7,
+      "standingCaptured": false
+    },
+    {
+      "season": 2011,
+      "groupId": "77",
+      "teams": 1,
+      "matches": 7,
+      "standingCaptured": false
+    },
+    {
+      "season": 2011,
+      "groupId": "79",
+      "teams": 1,
+      "matches": 7,
+      "standingCaptured": false
+    },
+    {
+      "season": 2011,
+      "groupId": "82",
+      "teams": 1,
+      "matches": 6,
+      "standingCaptured": false
+    },
+    {
+      "season": 2011,
+      "groupId": "87",
+      "teams": 1,
+      "matches": 7,
+      "standingCaptured": false
+    },
+    {
+      "season": 2011,
+      "groupId": "88",
+      "teams": 1,
+      "matches": 7,
+      "standingCaptured": false
+    },
+    {
+      "season": 2011,
+      "groupId": "91",
+      "teams": 1,
+      "matches": 7,
+      "standingCaptured": false
+    },
+    {
+      "season": 2011,
+      "groupId": "86",
+      "teams": 1,
+      "matches": 6,
+      "standingCaptured": false
+    },
+    {
+      "season": 2010,
+      "groupId": "417",
+      "teams": 1,
+      "matches": 4,
+      "standingCaptured": false
+    },
+    {
+      "season": 2010,
+      "groupId": "431",
+      "teams": 1,
+      "matches": 7,
+      "standingCaptured": false
+    }
+  ]
+}
