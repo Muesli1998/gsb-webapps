@@ -1,0 +1,18 @@
+{
+  "key": "2019:366948",
+  "season": 2019,
+  "matchId": 366948,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "KMB2010 1",
+  "ageGroupId": "13",
+  "leagueGroupId": "12595",
+  "roundDate": "2020-04-05",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12595,1,8,,366948,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2019-366948.json",
+  "verifiedAt": "2026-09-12T19:14:41.994Z",
+  "resultSource": "playwright_persistent_browser_retry",
+  "verification": "Dynamic match page rendered with match details",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12595,1,8,,366948,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+60 2019/2020\nVis rækker\n\n\n60+ 2. Serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t366948\nRunde\t9 05-04-2020\nTid\tsø 05-04-2020 13:00\nSpillested\tKMB-Hallen\nGl. Kirkevej 92-94\n2770 Kastrup\nTelefon 32 50 08 05\nHjemmehold\tKMB2010 1\nKenneth Darell\ndarell@live.dk\n26361909\nUdehold\tGladsaxe Søborg 2\nMogens Jørgensen\nMj@motech.dk\n40253404\nResultat\t-\nPoint\t-\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

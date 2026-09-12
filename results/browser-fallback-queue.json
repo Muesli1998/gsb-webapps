@@ -12516,7 +12516,9 @@
       "resultFile": "results/browser-fallback/2020-387862.json",
       "verifiedAt": "2026-09-12T17:08:15.190Z",
       "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verification": "Page loaded but match id was not visible",
+      "retryStatus": "still_no_match_detail",
+      "retryCheckedAt": "2026-09-12T19:13:14.086Z"
     },
     {
       "key": "2020:387864",
@@ -12532,7 +12534,9 @@
       "resultFile": "results/browser-fallback/2020-387864.json",
       "verifiedAt": "2026-09-12T17:08:16.921Z",
       "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verification": "Page loaded but match id was not visible",
+      "retryStatus": "still_no_match_detail",
+      "retryCheckedAt": "2026-09-12T19:13:16.163Z"
     },
     {
       "key": "2020:404142",
@@ -12544,11 +12548,11 @@
       "leagueGroupId": "13305",
       "roundDate": "2021-04-11",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13305,1,8,,404142,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-404142.json",
-      "verifiedAt": "2026-09-12T17:08:18.029Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:13:18.136Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:404710",
@@ -12560,11 +12564,11 @@
       "leagueGroupId": "13305",
       "roundDate": "2021-04-25",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13305,1,8,,404710,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-404710.json",
-      "verifiedAt": "2026-09-12T17:08:18.970Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:13:19.979Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:387878",
@@ -12576,11 +12580,11 @@
       "leagueGroupId": "13306",
       "roundDate": "2020-12-13",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13306,1,8,,387878,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-387878.json",
-      "verifiedAt": "2026-09-12T17:08:19.929Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:13:21.828Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:387879",
@@ -12592,11 +12596,11 @@
       "leagueGroupId": "13306",
       "roundDate": "2021-01-10",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13306,1,8,,387879,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-387879.json",
-      "verifiedAt": "2026-09-12T17:08:20.894Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:13:23.911Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:387884",
@@ -12608,11 +12612,11 @@
       "leagueGroupId": "13306",
       "roundDate": "2021-01-31",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13306,1,8,,387884,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-387884.json",
-      "verifiedAt": "2026-09-12T17:08:21.835Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:13:25.994Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:387887",
@@ -12624,11 +12628,11 @@
       "leagueGroupId": "13306",
       "roundDate": "2021-03-21",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13306,1,8,,387887,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-387887.json",
-      "verifiedAt": "2026-09-12T17:08:22.786Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:13:27.878Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:404143",
@@ -12640,11 +12644,11 @@
       "leagueGroupId": "13306",
       "roundDate": "2021-04-11",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13306,1,8,,404143,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-404143.json",
-      "verifiedAt": "2026-09-12T17:08:23.732Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:13:29.735Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:387902",
@@ -12656,11 +12660,11 @@
       "leagueGroupId": "13307",
       "roundDate": "2020-12-13",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13307,1,8,,387902,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-387902.json",
-      "verifiedAt": "2026-09-12T17:08:24.673Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:13:31.585Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:387907",
@@ -12672,11 +12676,11 @@
       "leagueGroupId": "13307",
       "roundDate": "2021-01-10",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13307,1,8,,387907,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-387907.json",
-      "verifiedAt": "2026-09-12T17:08:25.621Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:13:33.433Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:387909",
@@ -12688,11 +12692,11 @@
       "leagueGroupId": "13307",
       "roundDate": "2021-01-31",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13307,1,8,,387909,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-387909.json",
-      "verifiedAt": "2026-09-12T17:08:26.566Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:13:35.278Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:387915",
@@ -12704,11 +12708,11 @@
       "leagueGroupId": "13307",
       "roundDate": "2021-03-21",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13307,1,8,,387915,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-387915.json",
-      "verifiedAt": "2026-09-12T17:08:27.509Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:13:37.132Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:404147",
@@ -12720,11 +12724,11 @@
       "leagueGroupId": "13307",
       "roundDate": "2021-04-11",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13307,1,8,,404147,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-404147.json",
-      "verifiedAt": "2026-09-12T17:08:28.455Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:13:38.987Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:404714",
@@ -12736,11 +12740,11 @@
       "leagueGroupId": "13307",
       "roundDate": "2021-04-25",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13307,1,8,,404714,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-404714.json",
-      "verifiedAt": "2026-09-12T17:08:29.397Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:13:40.828Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:388014",
@@ -12752,11 +12756,11 @@
       "leagueGroupId": "13311",
       "roundDate": "2021-01-10",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13311,1,8,,388014,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-388014.json",
-      "verifiedAt": "2026-09-12T17:08:30.345Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:13:42.660Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:388019",
@@ -12768,11 +12772,11 @@
       "leagueGroupId": "13311",
       "roundDate": "2021-01-31",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13311,1,8,,388019,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-388019.json",
-      "verifiedAt": "2026-09-12T17:08:31.300Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:13:44.499Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:388020",
@@ -12784,11 +12788,11 @@
       "leagueGroupId": "13311",
       "roundDate": "2021-02-14",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13311,1,8,,388020,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-388020.json",
-      "verifiedAt": "2026-09-12T17:08:32.274Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:13:46.337Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:388024",
@@ -12800,11 +12804,11 @@
       "leagueGroupId": "13311",
       "roundDate": "2021-03-21",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13311,1,8,,388024,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-388024.json",
-      "verifiedAt": "2026-09-12T17:08:33.219Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:13:48.177Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:403990",
@@ -12816,11 +12820,11 @@
       "leagueGroupId": "13311",
       "roundDate": "2021-04-11",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13311,1,8,,403990,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-403990.json",
-      "verifiedAt": "2026-09-12T17:08:34.163Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:13:50.053Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:403996",
@@ -12832,11 +12836,11 @@
       "leagueGroupId": "13311",
       "roundDate": "2021-04-25",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13311,1,8,,403996,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-403996.json",
-      "verifiedAt": "2026-09-12T17:08:35.155Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:13:51.974Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:388044",
@@ -12848,11 +12852,11 @@
       "leagueGroupId": "13312",
       "roundDate": "2020-12-13",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13312,1,8,,388044,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-388044.json",
-      "verifiedAt": "2026-09-12T17:08:36.091Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:13:53.877Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:388049",
@@ -12864,11 +12868,11 @@
       "leagueGroupId": "13312",
       "roundDate": "2021-01-10",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13312,1,8,,388049,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-388049.json",
-      "verifiedAt": "2026-09-12T17:08:37.028Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:13:55.751Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:388054",
@@ -12880,11 +12884,11 @@
       "leagueGroupId": "13312",
       "roundDate": "2021-01-31",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13312,1,8,,388054,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-388054.json",
-      "verifiedAt": "2026-09-12T17:08:37.965Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:13:57.597Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:388063",
@@ -12896,11 +12900,11 @@
       "leagueGroupId": "13312",
       "roundDate": "2021-03-21",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13312,1,8,,388063,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-388063.json",
-      "verifiedAt": "2026-09-12T17:08:38.932Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:13:59.446Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:403998",
@@ -12912,11 +12916,11 @@
       "leagueGroupId": "13312",
       "roundDate": "2021-04-11",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13312,1,8,,403998,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-403998.json",
-      "verifiedAt": "2026-09-12T17:08:39.877Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:01.283Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:404003",
@@ -12928,11 +12932,11 @@
       "leagueGroupId": "13312",
       "roundDate": "2021-04-25",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13312,1,8,,404003,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-404003.json",
-      "verifiedAt": "2026-09-12T17:08:40.828Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:03.134Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:387755",
@@ -12944,11 +12948,11 @@
       "leagueGroupId": "13302",
       "roundDate": "2020-09-13",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13302,1,8,,387755,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-387755.json",
-      "verifiedAt": "2026-09-12T17:08:41.778Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:04.984Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:387757",
@@ -12960,11 +12964,11 @@
       "leagueGroupId": "13302",
       "roundDate": "2020-10-11",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13302,1,8,,387757,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-387757.json",
-      "verifiedAt": "2026-09-12T17:08:42.718Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:06.831Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:404672",
@@ -12976,11 +12980,11 @@
       "leagueGroupId": "13302",
       "roundDate": "2021-03-21",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13302,1,8,,404672,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-404672.json",
-      "verifiedAt": "2026-09-12T17:08:43.645Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:08.679Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2020:403986",
@@ -12992,11 +12996,11 @@
       "leagueGroupId": "13302",
       "roundDate": "2021-04-25",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13302,1,8,,403986,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2020-403986.json",
-      "verifiedAt": "2026-09-12T17:08:44.577Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:10.522Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2019:373813",
@@ -13288,11 +13292,11 @@
       "leagueGroupId": "13102",
       "roundDate": "2020-03-21",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,13102,1,8,,384292,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2019-384292.json",
-      "verifiedAt": "2026-09-12T17:08:45.517Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:12.390Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2019:385098",
@@ -13304,11 +13308,11 @@
       "leagueGroupId": "13144",
       "roundDate": "2020-03-22",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,13144,1,8,,385098,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2019-385098.json",
-      "verifiedAt": "2026-09-12T17:08:46.464Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:14.302Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2019:365220",
@@ -13320,11 +13324,11 @@
       "leagueGroupId": "12570",
       "roundDate": "2020-03-22",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12570,1,8,,365220,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2019-365220.json",
-      "verifiedAt": "2026-09-12T17:08:47.405Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:16.135Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2019:365224",
@@ -13336,11 +13340,11 @@
       "leagueGroupId": "12570",
       "roundDate": "2020-04-05",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12570,1,8,,365224,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2019-365224.json",
-      "verifiedAt": "2026-09-12T17:08:48.348Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:17.980Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2019:365416",
@@ -13352,11 +13356,11 @@
       "leagueGroupId": "12580",
       "roundDate": "2020-03-22",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12580,1,8,,365416,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2019-365416.json",
-      "verifiedAt": "2026-09-12T17:08:49.290Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:19.833Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2019:365483",
@@ -13368,11 +13372,11 @@
       "leagueGroupId": "12583",
       "roundDate": "2020-03-22",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12583,1,8,,365483,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2019-365483.json",
-      "verifiedAt": "2026-09-12T17:08:50.231Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:21.690Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2019:365545",
@@ -13384,11 +13388,11 @@
       "leagueGroupId": "12585",
       "roundDate": "2020-03-22",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12585,1,8,,365545,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2019-365545.json",
-      "verifiedAt": "2026-09-12T17:08:51.162Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:23.537Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2019:365548",
@@ -13400,11 +13404,11 @@
       "leagueGroupId": "12585",
       "roundDate": "2020-04-05",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12585,1,8,,365548,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2019-365548.json",
-      "verifiedAt": "2026-09-12T17:08:52.093Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:25.386Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2019:365512",
@@ -13416,11 +13420,11 @@
       "leagueGroupId": "12584",
       "roundDate": "2020-03-22",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12584,1,8,,365512,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2019-365512.json",
-      "verifiedAt": "2026-09-12T17:08:53.043Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:27.238Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2019:365718",
@@ -13432,11 +13436,11 @@
       "leagueGroupId": "12588",
       "roundDate": "2020-03-22",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12588,1,8,,365718,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2019-365718.json",
-      "verifiedAt": "2026-09-12T17:08:54.065Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:29.085Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2019:365749",
@@ -13448,11 +13452,11 @@
       "leagueGroupId": "12589",
       "roundDate": "2020-03-22",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12589,1,8,,365749,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2019-365749.json",
-      "verifiedAt": "2026-09-12T17:08:54.993Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:30.927Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2019:365774",
@@ -13464,11 +13468,11 @@
       "leagueGroupId": "12590",
       "roundDate": "2020-03-22",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12590,1,8,,365774,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2019-365774.json",
-      "verifiedAt": "2026-09-12T17:08:55.933Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:32.768Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2019:365803",
@@ -13480,11 +13484,11 @@
       "leagueGroupId": "12591",
       "roundDate": "2020-03-22",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12591,1,8,,365803,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2019-365803.json",
-      "verifiedAt": "2026-09-12T17:08:56.875Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:34.605Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2019:366979",
@@ -13496,11 +13500,11 @@
       "leagueGroupId": "12594",
       "roundDate": "2020-03-22",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12594,1,8,,366979,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2019-366979.json",
-      "verifiedAt": "2026-09-12T17:08:57.823Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:36.435Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2019:366986",
@@ -13512,11 +13516,11 @@
       "leagueGroupId": "12594",
       "roundDate": "2020-04-05",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12594,1,8,,366986,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2019-366986.json",
-      "verifiedAt": "2026-09-12T17:08:58.766Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:38.276Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2019:366944",
@@ -13528,11 +13532,11 @@
       "leagueGroupId": "12595",
       "roundDate": "2020-03-22",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12595,1,8,,366944,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2019-366944.json",
-      "verifiedAt": "2026-09-12T17:08:59.717Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:40.138Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2019:366948",
@@ -13544,11 +13548,11 @@
       "leagueGroupId": "12595",
       "roundDate": "2020-04-05",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12595,1,8,,366948,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2019-366948.json",
-      "verifiedAt": "2026-09-12T17:09:00.663Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:41.994Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2019:366883",
@@ -13560,11 +13564,11 @@
       "leagueGroupId": "12597",
       "roundDate": "2019-11-03",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12597,1,8,,366883,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2019-366883.json",
-      "verifiedAt": "2026-09-12T17:09:01.602Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:43.849Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2019:366885",
@@ -13576,11 +13580,11 @@
       "leagueGroupId": "12597",
       "roundDate": "2019-11-24",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12597,1,8,,366885,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2019-366885.json",
-      "verifiedAt": "2026-09-12T17:09:02.548Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:45.697Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2019:366887",
@@ -13592,11 +13596,11 @@
       "leagueGroupId": "12597",
       "roundDate": "2019-12-15",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12597,1,8,,366887,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2019-366887.json",
-      "verifiedAt": "2026-09-12T17:09:03.490Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:47.526Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2019:366889",
@@ -13608,11 +13612,11 @@
       "leagueGroupId": "12597",
       "roundDate": "2020-01-12",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12597,1,8,,366889,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2019-366889.json",
-      "verifiedAt": "2026-09-12T17:09:04.438Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:49.358Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2019:366891",
@@ -13624,11 +13628,11 @@
       "leagueGroupId": "12597",
       "roundDate": "2020-02-02",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12597,1,8,,366891,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2019-366891.json",
-      "verifiedAt": "2026-09-12T17:09:05.371Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:51.197Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2019:366893",
@@ -13640,11 +13644,11 @@
       "leagueGroupId": "12597",
       "roundDate": "2020-03-22",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12597,1,8,,366893,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2019-366893.json",
-      "verifiedAt": "2026-09-12T17:09:06.301Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:53.026Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2018:340290",
@@ -14020,11 +14024,11 @@
       "leagueGroupId": "11355",
       "roundDate": "2018-10-28",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2018,11355,1,8,,337416,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2018-337416.json",
-      "verifiedAt": "2026-09-12T17:09:07.235Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:54.859Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2018:337417",
@@ -14036,11 +14040,11 @@
       "leagueGroupId": "11355",
       "roundDate": "2018-10-28",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2018,11355,1,8,,337417,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2018-337417.json",
-      "verifiedAt": "2026-09-12T17:09:08.241Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:56.689Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2018:337423",
@@ -14052,11 +14056,11 @@
       "leagueGroupId": "11355",
       "roundDate": "2018-11-18",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2018,11355,1,8,,337423,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2018-337423.json",
-      "verifiedAt": "2026-09-12T17:09:09.183Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:14:58.532Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2018:337425",
@@ -14068,11 +14072,11 @@
       "leagueGroupId": "11355",
       "roundDate": "2018-11-18",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2018,11355,1,8,,337425,1093,",
-      "status": "browser_no_match_id",
+      "status": "verified",
       "resultFile": "results/browser-fallback/2018-337425.json",
-      "verifiedAt": "2026-09-12T17:09:10.228Z",
-      "resultSource": "playwright_persistent_browser",
-      "verification": "Page loaded but match id was not visible"
+      "verifiedAt": "2026-09-12T19:15:00.365Z",
+      "resultSource": "playwright_persistent_browser_retry",
+      "verification": "Dynamic match page rendered with match details"
     },
     {
       "key": "2018:337430",

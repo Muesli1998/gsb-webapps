@@ -1,0 +1,18 @@
+{
+  "key": "2019:366889",
+  "season": 2019,
+  "matchId": 366889,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Gentofte Motionist BK 1",
+  "ageGroupId": "17",
+  "leagueGroupId": "12597",
+  "roundDate": "2020-01-12",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12597,1,8,,366889,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2019-366889.json",
+  "verifiedAt": "2026-09-12T19:14:49.358Z",
+  "resultSource": "playwright_persistent_browser_retry",
+  "verification": "Dynamic match page rendered with match details",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12597,1,8,,366889,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+70 2019/2020\nVis rækker\n\n\n70+ 1. Serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t366889\nRunde\t4 12-01-2020\nTid\tlø 04-01-2020 14:00\nSpillested\tKrøyersvej\nKrøyersvej 5A\n2930 Klampenborg\nTelefon 39 64 23 83\nHjemmehold\tGentofte Motionist BK 1\nJørgen Benni Højager Christensen\nskjoldg@gmail.com\n20976440\nUdehold\tGladsaxe Søborg 1\nKurt Mehlsen\nKurt.mehlsen@post.tele.dk\n40386493\nResultat\t0-6\nPoint\t0-2\n\tGentofte Motionist BK 1\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. D\t\nChristian Voetman\nSteen tabart\n\t\nMogens Jørgensen\nLeif Hansen\n\t20 - 22\t6 - 21\t\t\n2. D\t\nHenning Jacobsen\nKarl Iver Madsen\n\t\nSvend Valentin Rasmussen\nHans Thor christensen\n\t21 - 18\t16 - 21\t14 - 21\t\n3. D\t\nBirgit Andreasen\nHelle Littauer\n\t\nMarcel Yulzari\nKurt Mehlsen\n\t13 - 21\t11 - 21\t\t\n4. D\t\nKarl Iver Madsen\nSteen tabart\n\t\nMogens Jørgensen\nSvend Valentin Rasmussen\n\t7 - 21\t21 - 23\t\t\n5. D\t\nChristian Voetman\nBirgit Andreasen\n\t\nLeif Hansen\nKurt Mehlsen\n\t15 - 21\t16 - 21\t\t\n6. D\t\nHenning Jacobsen\nHelle Littauer\n\t\nMarcel Yulzari\nHans Thor christensen\n\t16 - 21\t21 - 18\t16 - 21\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}
