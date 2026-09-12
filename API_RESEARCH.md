@@ -303,3 +303,15 @@ Dette er dokumenteret evidens for, at spillerprofiler kan hentes uden manuel kli
 - 2010: responsen indeholder en eksplicit `Turneringer`-sektion med dato, arrangør, række og links til `VisResultater`, eksempelvis turnering `22644`, `410`, `373` og `647`.
 
 Det er første direkte evidens for, at spillerprofilkaldet kan levere historiske individuelle turneringsdeltagelser. Der skal stadig testes, om nyere sæsoner bruger en anden struktur eller kun viser data, når spilleren har registrerede turneringer.
+## 2025-turneringer fra spillerprofil
+
+For spiller `84737` og `seasonid=2025` indeholder `GetPlayerProfile` en eksplicit `Turneringer`-tabel med 6 poster:
+
+- 27-09-2025, SAIF Kbh., turnering `110017`, SEN A
+- 29-11-2025, KSI Badmintonklub Kbh., turnering `112803`, SEN A
+- 17-01-2026, Badminton Roskilde, turnering `111328`, SEN A
+- 14-02-2026, Farum, turnering `112497`, SEN A
+- 14-03-2026, Holte, turnering `113361`, SEN A
+- 11-04-2026, Greve, turnering `111133`, SEN A
+
+Dette bekræfter, at profilen kan bruges som discovery-kilde til spillerens turnerings-ID’er i en sæson. Datoerne kan ligge i kalenderåret efter sæson-ID’et.

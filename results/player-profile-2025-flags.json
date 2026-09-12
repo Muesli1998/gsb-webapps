@@ -1,0 +1,82 @@
+[
+  {
+    "getplayerdata": true,
+    "showUserProfile": true,
+    "showheader": true,
+    "http": 200,
+    "len": 6895,
+    "tournaments": true,
+    "holdkampe": true,
+    "turneringLinks": 6
+  },
+  {
+    "getplayerdata": true,
+    "showUserProfile": true,
+    "showheader": false,
+    "http": 200,
+    "len": 6850,
+    "tournaments": true,
+    "holdkampe": true,
+    "turneringLinks": 6
+  },
+  {
+    "getplayerdata": true,
+    "showUserProfile": false,
+    "showheader": true,
+    "http": 200,
+    "len": 6895,
+    "tournaments": true,
+    "holdkampe": true,
+    "turneringLinks": 6
+  },
+  {
+    "getplayerdata": true,
+    "showUserProfile": false,
+    "showheader": false,
+    "http": 200,
+    "len": 6850,
+    "tournaments": true,
+    "holdkampe": true,
+    "turneringLinks": 6
+  },
+  {
+    "getplayerdata": false,
+    "showUserProfile": true,
+    "showheader": true,
+    "http": 200,
+    "len": 6895,
+    "tournaments": true,
+    "holdkampe": true,
+    "turneringLinks": 6
+  },
+  {
+    "getplayerdata": false,
+    "showUserProfile": true,
+    "showheader": false,
+    "http": 200,
+    "len": 6850,
+    "tournaments": true,
+    "holdkampe": true,
+    "turneringLinks": 6
+  },
+  {
+    "getplayerdata": false,
+    "showUserProfile": false,
+    "showheader": true,
+    "http": 200,
+    "len": 6895,
+    "tournaments": true,
+    "holdkampe": true,
+    "turneringLinks": 6
+  },
+  {
+    "getplayerdata": false,
+    "showUserProfile": false,
+    "showheader": false,
+    "http": 200,
+    "len": 6850,
+    "tournaments": true,
+    "holdkampe": true,
+    "turneringLinks": 6
+  }
+]
