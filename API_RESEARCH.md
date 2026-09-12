@@ -353,6 +353,14 @@ er fortsat den primære kandidat til historiske point før holdkampe. Det skal
 ikke antages, at Nembadminton kan erstatte arkivet, før et dateret kald er
 maskinelt verificeret.
 
+## Tilbage til holdkamp-hovedsporet
+
+Query-overfladen indeholder også `teamRound`, `teamRounds` og `teams`.
+`teamRounds` tager `clubhouseId`, datointerval, sortering og pagination, så det
+er en relevant kandidat til gruppe-/runde- og eventuelle stillingsdata. Den er
+endnu ikke testet med et faktisk svar for GSB og skal behandles som
+uafklaret/login-spor, indtil et konkret kald er gennemført.
+
 ## Terra-review: alternativ ranglistevej
 
 Terra vurderer, at de alternative ASMX-metoder (`GetRankingListPlayersSenior` og `GetRankingListPlayersHide`) ikke løser problemet med kendte parametre; gentagne kald og parameter-grid gav HTTP 500. Den nye SPA-endpoint `/api/RangkingListVersion` er ikke offentlig (401).
