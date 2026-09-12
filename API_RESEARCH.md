@@ -145,3 +145,29 @@ Greve bekræfter Ligaen-data i API-sæsonerne 2010, 2011 og 2012, i tråd med
 `Guldmatchen Guldmatchen` og blot `Semifinaler`. Klassifikation må derfor
 bruge rå `league`, holdnavn, sæson og `leagueGroupId`; en streng søgning efter
 ordet `Ligaen` vil overse nogle slutspilsgrupper.
+## Seneste fund: browserfallback og datakomplethed
+
+En fuld kørsel af 2.818 GSB-kampe gav 1.374 komplette kampdetaljeopslag og
+1.444 fejl. Fejlene er gemt med sæson, hold og kamp-ID i
+`results/gsb-match-detail-errors-summary.json`.
+
+BadmintonPlayer.dk's dynamiske kampvisning kan vise data, som GraphQL-kaldet
+ikke kan hente. Fungerende URL-form:
+
+```text
+https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,{season},{leagueGroupId},1,8,,{matchId},{clubId},
+```
+
+Verificerede eksempler: kamp 486396 (SEN40+, 12-0, afgjort uden kamp) og kamp
+487423 (SEN60+, 8-0 med individuelle resultater).
+
+Brug statusværdierne `nembadminton_complete`, `nembadminton_no_players`,
+`nembadminton_error`, `badmintonplayer_verified` og `manual_verified`.
+
+`ageGroupId` er intern og skal gemmes sammen med det viste rækkenavn. Observerede
+2025/26-værdier er 1=SEN, 9=SEN40+, 13=SEN60+ og 17=SEN70+; mappingen skal
+valideres pr. sæson.
+
+BadmintonPlayer.dk's dynamiske `Stilling`-tabel viser puljens hold, kampe,
+resultater, score, point og placering og bør bruges som autoritativ kilde til
+slutstillinger og walkovers.
