@@ -1,0 +1,1 @@
+for(const u of ['https://badmintonplayer.dk/DBF/Spiller/VisSpiller/#84737','https://badmintonplayer.dk/DBF/Turnering/VisResultater/#115342,490920']){const r=await fetch(u); const s=await r.text(); console.log(u,r.status,s.length,/Christoffer|84737|Jernløse|Jannick/i.test(s));}
