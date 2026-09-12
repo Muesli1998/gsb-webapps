@@ -361,6 +361,18 @@ er en relevant kandidat til gruppe-/runde- og eventuelle stillingsdata. Den er
 endnu ikke testet med et faktisk svar for GSB og skal behandles som
 uafklaret/login-spor, indtil et konkret kald er gennemført.
 
+### `teamRounds`-test
+
+Skemaet blev testet direkte med `clubhouseId: 331`, `first: 100` og `page: 1`.
+`teamRounds` findes og returnerer typen `TeamRound`, hvis felter blandt andet
+er `id`, `name`, `round`, `gameDate`, `season`, `squads`, `receiver` og
+`clubhouse`. Det faktiske kald returnerede `Unauthenticated` med guard `api`.
+
+Konklusionen er derfor, at `teamRounds` er en lovende kandidat til runde-/
+stillingsdata, men ikke kan bruges uden login i den nuværende test. Råsvaret
+er gemt i `results/team-rounds-probe.json`. Næste valg er enten en test i
+brugerens aktive session eller fortsat fallback via BadmintonPlayer.
+
 ## Terra-review: alternativ ranglistevej
 
 Terra vurderer, at de alternative ASMX-metoder (`GetRankingListPlayersSenior` og `GetRankingListPlayersHide`) ikke løser problemet med kendte parametre; gentagne kald og parameter-grid gav HTTP 500. Den nye SPA-endpoint `/api/RangkingListVersion` er ikke offentlig (401).
