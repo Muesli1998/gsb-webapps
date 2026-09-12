@@ -256,3 +256,33 @@ Med `SR_CallbackContext` fra sidens HTML lykkedes `GetTournamentEvents` direkte:
 `SearchTournamentMatches` lykkedes også for event `490920` og returnerede HTML med klub-ID’er, spiller-ID’er og resultater. Kaldet bruger `tournamentclassid`, `tournamenteventid`, klub-/spillerfilter samt tab-/gruppe-/lokationsnumre.
 
 Dette er første direkte reproduktion af turneringskald uden manuel klikning. Callback-konteksten kommer fra den aktuelle side og kan udløbe; den skal derfor hentes på ny ved en senere kørsel.
+
+## Detaljeret reproduktion af turneringskald
+
+**Servicebase:** `https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/`
+
+**1. Hent events for en turnering**
+
+Metode: `GetTournamentEvents` (POST, `content-type: application/json; charset=utf-8`).
+
+På reference `tournamentclassid=115342` returnerede kaldet disse events:
+
+- `490920` MensSingles
+- `490921` WomensSingles
+- `490922` MensDoubles
+- `490923` WomensDoubles
+- `490924` MixedDoubles
+
+Responsen indeholder både HTML-fragmenter (`Info`, `Html`) og strukturerede `Events` med `tournamentID`, `tournamentClassID`, `tournamentEventID`, `playerCount` og `discipline`.
+
+**2. Hent kampe for et event**
+
+Metode: `SearchTournamentMatches` med `tournamentclassid`, `tournamenteventid`, klub-/spillerfilter samt `tabnumber`, `groupnumber` og `locationnumber`. Responsen indeholder et HTML-fragment med klub-ID’er, spiller-ID’er og kamprækker.
+
+**3. Callback-kontekst**
+
+`callbackcontextkey` læses fra `SR_CallbackContext` i den friske turneringsside. Værdien er sessions-/sidebunden og må ikke gemmes i repo eller genbruges efter timeout. Scripts kræver derfor miljøvariablen `SR_CALLBACK_CONTEXT`.
+
+**Faktisk testresultat:** Begge metoder returnerede HTTP 200 med reference-ID’erne. Før callback-konteksten blev fundet, returnerede samme typer kald HTTP 500.
+
+**Genoptagelse:** Hent en frisk `VisResultater`-side, udlæs ny `SR_CallbackContext`, kald `GetTournamentEvents`, iterér `Events`, og kald derefter `SearchTournamentMatches` pr. event og eventuelt pr. klub/spillerfilter. Parseren skal gemme både rå HTML og strukturerede felter.
