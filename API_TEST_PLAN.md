@@ -1,0 +1,99 @@
+# Foreløbig testplan for Nembadminton API
+
+Formål: kortlægge hvilke data GSB kan hente uden login, hvor langt historikken
+går tilbage, og hvilke kald der senere kan bruges til statistiksystemet.
+
+Alle tests er read-only. De må ikke skrive til Google Sheets, Netlify eller
+andre eksterne systemer. Testresultater logges i `API_RESEARCH.md`.
+
+## Fase 1 — Schema og adgang
+
+1. Hent GraphQL-schemaets Query-felter og inputtyper.
+2. Gruppér felterne i:
+   - bekræftet uden login
+   - kræver login
+   - svarer, men er ikke forstået endnu
+   - giver schema- eller intern fejl
+3. Gem præcise fejlbeskeder og de input, der blev brugt.
+
+## Fase 2 — Discovery-kæden
+
+Test med `clubId = 1093`:
+
+1. `badmintonPlayerTeams` for én sæson.
+2. `badmintonPlayerTeamsBulk` for flere sæsoner.
+3. `badmintonPlayerTeamFights` for én holdgruppe.
+4. `badmintonPlayerTeamFightsBulk` for flere grupper.
+5. Sammenlign bulk-resultater med individuelle kald.
+6. Kontrollér samme fysiske hold med flere `leagueGroupId`’er.
+7. Deduplicér på `matchId` og kontrollér overlap mellem grupper.
+
+For hver sæson registreres antal hold, grupper, unikke kampe, fejl, ældste
+`roundDate` og nyeste `roundDate`.
+
+## Fase 3 — Historisk rækkevidde
+
+1. Kør `badmintonPlayerTeamsBulk` i intervaller bagud fra 2025.
+2. For sæsoner med hold: hent gruppernes kampe.
+3. Fortsæt mindst til 2000 eller til flere på hinanden følgende år uden reelle
+   data.
+4. Skeln mellem tomt svar, `null`, API-fejl og reelle hold uden kampe.
+5. Bekræft cutoff med mindst ét ekstra kald efter det sidste reelle år.
+
+## Fase 4 — Kampdetaljer
+
+1. Hent én kamp med `badmintonPlayerTeamMatch`.
+2. Test valgfrit `version`-felt.
+3. Test `badmintonPlayerTeamMatches` med korrekt `leagueMatches`-input.
+4. Sammenlign enkelt- og bulk-resultater.
+5. Registrér hjemmehold, udehold, kampsted, kategorier, spillere og sæt.
+6. Kontroller walkovers, tomme sæt, doubler og forskelle mellem `roundDate` og
+   `gameTime`.
+
+## Fase 5 — Andre login-frie datakilder
+
+Test og dokumentér:
+
+- `clubhouseStats`
+- `calendarEvents`
+- `highestPointGain`
+- `memberStats` og `membersStats` for kendte spiller-ID’er
+- `badmintonPlayerClubs`
+- `clubsSearch`
+- `cancellationCollectorPublic` med en kendt eller bevidst manglende ID
+- `badmintonPlayerApiTeamMatches`
+- `teamMatchesFormattedForValidation`
+
+For hvert kald skal vi beskrive, om det kan bruges til historisk statistik,
+kommende kampe, roster-data, ranglistehistorik eller validering.
+
+## Fase 6 — Login-spor, separat
+
+Først når login-frie muligheder er kortlagt, kan følgende testes med brugerens
+egen aktive browser-session:
+
+- `seasons`
+- `teams`
+- `teamRounds`
+- `membersSearch`
+- `memberSearchPoints`
+- `memberSearchTeamFight`
+- `clubhouse`
+- `logs`
+
+Adgangskoder skal aldrig kopieres ind i projektfiler eller chatten.
+
+## Fase 7 — Beslutningsrapport
+
+Efter testene udarbejdes en kort rapport med:
+
+1. Hvad der kan hentes uden login.
+2. Ældste dokumenterede sæson med reelle GSB-kampe.
+3. Hvilket kald der er bedst til discovery.
+4. Hvilket kald der er bedst til kampdetaljer.
+5. Kendte datakvalitetsproblemer.
+6. Hvad der eventuelt kræver login eller BadmintonPlayer.dk.
+7. Anbefaling til næste isolerede discovery-implementering.
+
+Ingen regelsætkatalog, Google Sheets-model eller ændring af
+`netlify-tool-prod` indgår i denne testplan.
