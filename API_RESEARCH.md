@@ -328,3 +328,8 @@ Konklusion: Vi har endnu ingen dokumenteret metode til at rekonstruere tidligere
 ## Korrektion af historiske ranglistepoint
 
 En tidligere note konkluderede for kategorisk, at historiske point ikke kan findes. Brugeren har oplyst, at de generelle ranglistearkiver indeholder ranglister fra alle sæsoner, så historiske point kan muligvis rekonstrueres derfra. Dette er endnu ikke maskinelt verificeret i projektet og skal behandles som næste researchtest.
+## Ranglistehistorik: versionskald
+
+Webservicen har en særskilt metode `GetRankingListVersions(callbackcontextkey, rankinglistagegroupid, rankinglistid, seasonid)`. Med spiller `84737`, `seasonid=2026` og `rankinglistid=288` returnerede den HTTP 200 og en liste af historiske ranglistedatoer fra 01-07-2026 til 11-09-2026 samt månedlige ranglister.
+
+Det bekræfter, at ranglistedatoer kan enumereres maskinelt. Det efterfølgende `GetRankingListPlayers`-kald kræver yderligere præcise filterværdier; vores første generiske parameterpakke gav HTTP 500. Næste test skal aflæse disse værdier fra ranglistesidens egen JavaScript.
