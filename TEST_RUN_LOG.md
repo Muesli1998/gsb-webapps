@@ -172,3 +172,9 @@ Pulje 2016/9019 og 2022/15670 viser kun den endelige placeringsrækkefølge i ta
 
 - Tilføjet backlogpunkt til fremtidig fuld klubimport: særskilt coronaklassifikation af suspenderede kampe og bevaring af rå evidens.
 
+
+## Audit af samlet individuel ekstraktion
+
+Efterkontrol viste, at de 420 filer fra den samlede kørsel teknisk blev skrevet uden exception, men browserindholdet var i praksis kun BadmintonPlayer-standardskallen. Alle 420 havde ingen kategorisektioner og ingen scorelinjer; hver havde kun en placeholder-spillerlink. De skal derfor ikke regnes som valide individuelle udtræk.
+
+De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende browserkontekst, er fortsat det valide testgrundlag. Den samlede 420-kørsel skal gentages med en renderingskontrol, der kræver Kampnr, Resultat og mindst én rigtig spiller-/kampsektion, før en fil accepteres.
