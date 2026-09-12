@@ -180,3 +180,6 @@ Før første store kørsel skal Chris godkende:
 4. maksimal køretid og forsigtig parallelitet
 
 Indtil denne godkendelse er testen kun planlagt.
+# Genoptagelsesnote
+
+Testplanen dækker sæson-/klubiteration, fejlregistrering, aldersgruppe-ID’er, ligaer og fallback-links. Kør nye tests i `gsb-statistik-test`, gem resultater i `results/`, og commit scripts + rapport. Produktionsmappen `netlify-tool-prod` må aldrig ændres.

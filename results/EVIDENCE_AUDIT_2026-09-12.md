@@ -86,3 +86,6 @@ aldersgruppenavn uden en konkret række-observation.
 Før en statistik offentliggøres, skal en reviewer godkende: rå kilde, parser-
 version, afledte felter, dækningsgrad og mindst ét manuelt stikprøveopslag pr.
 sæson/aldersgruppe/rækketype, der indgår i statistikken.
+# Genoptagelsesnote
+
+Reviewerens hovedkonklusioner: 2010/11 er observeret cutoff, ikke absolut bevis; `teams`-arrayposition er ikke stabil; alderslabels skal være kildebaserede; browserfallback er endnu ikke masseautomatiseret; 1.444/2.818 detaljekald fejlede. Brug auditten som review-gate før officiel statistik eller databaseimport.

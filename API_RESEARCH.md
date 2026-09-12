@@ -243,3 +243,6 @@ Konklusion: GraphQL kan levere række-/tier-kataloget, men vi har ikke evidens
 for, at selve `VisResultater/#115342,490920` kan hentes gennem den offentlige
 GraphQL-schema. Turneringsresultater skal derfor indtil videre undersøges via
 BadmintonPlayer-sidens egne browserkald eller dokumenterede netværkskald.
+# Genoptagelsesnote
+
+Holdturneringssporet er dokumenteret gennem GraphQL-kæden `badmintonPlayerTeams` → `badmintonPlayerTeamFights` → match-ID’er. 2010/11 er ældste observerede sæson. 1.444/2.818 detaljekald fejlede. Turneringssporet har offentlige `tournamentTiers`/`tournamentGroups`, men sæsonlisten kræver login; browserens webservice-metoder er fundet, mens direkte replay endnu giver HTTP 500. Fortsæt med browser-/webserviceparametre, og markér ukendt i stedet for at gætte.

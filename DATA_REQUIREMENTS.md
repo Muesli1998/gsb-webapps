@@ -75,4 +75,7 @@ Disse skal ikke gemmes som eneste sandhed, men beregnes fra rådata:
    kun gemmes med det rå liganavn?
 4. Hvilke felter er minimumskrav for at en kamp må indgå i en statistik?
 5. Skal spilleridentitet baseres på spiller-ID, navn eller begge dele?
+# Genoptagelsesnote
+
+Dette er et arbejdsudkast, ikke en fastlagt model. Før mere masseudtræk skal besluttes: holdstatistik kontra spillerstatistik, walkover-behandling, liganormalisering, minimumsfelter og spiller-ID-strategi. Gem altid rå kilde samt afledte felter.
 
