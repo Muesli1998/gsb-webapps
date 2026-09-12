@@ -1,5 +1,4 @@
 PRAGMA foreign_keys=ON;
-BEGIN;
 CREATE TABLE IF NOT EXISTS seasons(season INTEGER PRIMARY KEY);
 CREATE TABLE IF NOT EXISTS teams(id INTEGER PRIMARY KEY AUTOINCREMENT,season INTEGER NOT NULL REFERENCES seasons(season),name TEXT NOT NULL,league TEXT,age_group_id INTEGER,league_group_id INTEGER,UNIQUE(season,name,age_group_id,league_group_id));
 CREATE TABLE IF NOT EXISTS matches(match_id INTEGER PRIMARY KEY,season INTEGER NOT NULL REFERENCES seasons(season),team_id INTEGER REFERENCES teams(id),league TEXT,league_group_id INTEGER,round TEXT,round_date TEXT,game_time TEXT,home_name TEXT,guest_name TEXT,raw_json TEXT);
@@ -832,4 +831,4 @@ INSERT OR IGNORE INTO matches(match_id,season,league,league_group_id,round,round
 INSERT OR IGNORE INTO matches(match_id,season,league,league_group_id,round,round_date,game_time,raw_json) VALUES(465018,2024,'70+ Eliteserien Pulje 1',16929,'5','2025-02-02','2025-02-01 10:30:00','{"matchId":465018,"round":5,"roundDate":"2025-02-02","gameTime":"2025-02-01 10:30:00","ageGroupId":"17","leagueGroupId":"16929","teamName":"Gladsaxe Søborg 1","league":"70+ Eliteserien Pulje 1"}');
 INSERT OR IGNORE INTO matches(match_id,season,league,league_group_id,round,round_date,game_time,raw_json) VALUES(465025,2024,'70+ Eliteserien Pulje 1',16929,'6','2025-03-02','2025-03-08 14:00:00','{"matchId":465025,"round":6,"roundDate":"2025-03-02","gameTime":"2025-03-08 14:00:00","ageGroupId":"17","leagueGroupId":"16929","teamName":"Gladsaxe Søborg 1","league":"70+ Eliteserien Pulje 1"}');
 INSERT OR IGNORE INTO matches(match_id,season,league,league_group_id,round,round_date,game_time,raw_json) VALUES(465026,2024,'70+ Eliteserien Pulje 1',16929,'7','2025-03-30','2025-03-30 10:00:00','{"matchId":465026,"round":7,"roundDate":"2025-03-30","gameTime":"2025-03-30 10:00:00","ageGroupId":"17","leagueGroupId":"16929","teamName":"Gladsaxe Søborg 1","league":"70+ Eliteserien Pulje 1"}');
-COMMIT;
+
