@@ -31,6 +31,13 @@ Test med `clubId = 1093`:
 For hver sæson registreres antal hold, grupper, unikke kampe, fejl, ældste
 `roundDate` og nyeste `roundDate`.
 
+Rapporten skal også have en særskilt **Badmintonligaen-sanitytest**. Den
+finder holdposter, hvor den rå `league`-tekst peger på Ligaen, bevarer alle
+parallelle `leagueGroupId`’er og kontrollerer kampdækning for udvalgte klubber
+og historiske sæsoner. Ligaen prioriteres som reference for, om de vigtigste
+nationale resultater er bevaret. Selve Ligaen, kvalifikation og slutspil skal
+skelnes fra hinanden ud fra rå tekst og gruppe-ID.
+
 ## Fase 3 — Historisk rækkevidde
 
 1. Kør `badmintonPlayerTeamsBulk` i intervaller bagud fra 2025.
@@ -115,6 +122,7 @@ Den store test skal kunne afbrydes og fortsætte fra seneste checkpoint.
 7. Forsigtigt udvalg af andre kendte BadmintonPlayer `clubId`’er, hvis en
    pålidelig klub-ID-kilde kan etableres.
 8. Klub-, kalender-, rangliste- og medlemskald, der virker uden login.
+9. Badmintonligaen som særskilt sanity test på tværs af klubber og sæsoner.
 
 ### Checkpoint-model
 
