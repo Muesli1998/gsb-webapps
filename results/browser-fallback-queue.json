@@ -12552,7 +12552,10 @@
       "resultFile": "results/browser-fallback/2020-404142.json",
       "verifiedAt": "2026-09-12T19:13:18.136Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.167Z"
     },
     {
       "key": "2020:404710",
@@ -12568,7 +12571,10 @@
       "resultFile": "results/browser-fallback/2020-404710.json",
       "verifiedAt": "2026-09-12T19:13:19.979Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.169Z"
     },
     {
       "key": "2020:387878",
@@ -12584,7 +12590,10 @@
       "resultFile": "results/browser-fallback/2020-387878.json",
       "verifiedAt": "2026-09-12T19:13:21.828Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.170Z"
     },
     {
       "key": "2020:387879",
@@ -12600,7 +12609,10 @@
       "resultFile": "results/browser-fallback/2020-387879.json",
       "verifiedAt": "2026-09-12T19:13:23.911Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.171Z"
     },
     {
       "key": "2020:387884",
@@ -12616,7 +12628,10 @@
       "resultFile": "results/browser-fallback/2020-387884.json",
       "verifiedAt": "2026-09-12T19:13:25.994Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.175Z"
     },
     {
       "key": "2020:387887",
@@ -12632,7 +12647,10 @@
       "resultFile": "results/browser-fallback/2020-387887.json",
       "verifiedAt": "2026-09-12T19:13:27.878Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.177Z"
     },
     {
       "key": "2020:404143",
@@ -12648,7 +12666,10 @@
       "resultFile": "results/browser-fallback/2020-404143.json",
       "verifiedAt": "2026-09-12T19:13:29.735Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.179Z"
     },
     {
       "key": "2020:387902",
@@ -12664,7 +12685,10 @@
       "resultFile": "results/browser-fallback/2020-387902.json",
       "verifiedAt": "2026-09-12T19:13:31.585Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.180Z"
     },
     {
       "key": "2020:387907",
@@ -12680,7 +12704,10 @@
       "resultFile": "results/browser-fallback/2020-387907.json",
       "verifiedAt": "2026-09-12T19:13:33.433Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.181Z"
     },
     {
       "key": "2020:387909",
@@ -12696,7 +12723,10 @@
       "resultFile": "results/browser-fallback/2020-387909.json",
       "verifiedAt": "2026-09-12T19:13:35.278Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.182Z"
     },
     {
       "key": "2020:387915",
@@ -12712,7 +12742,10 @@
       "resultFile": "results/browser-fallback/2020-387915.json",
       "verifiedAt": "2026-09-12T19:13:37.132Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.183Z"
     },
     {
       "key": "2020:404147",
@@ -12728,7 +12761,10 @@
       "resultFile": "results/browser-fallback/2020-404147.json",
       "verifiedAt": "2026-09-12T19:13:38.987Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.185Z"
     },
     {
       "key": "2020:404714",
@@ -12744,7 +12780,10 @@
       "resultFile": "results/browser-fallback/2020-404714.json",
       "verifiedAt": "2026-09-12T19:13:40.828Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.186Z"
     },
     {
       "key": "2020:388014",
@@ -12760,7 +12799,10 @@
       "resultFile": "results/browser-fallback/2020-388014.json",
       "verifiedAt": "2026-09-12T19:13:42.660Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.187Z"
     },
     {
       "key": "2020:388019",
@@ -12776,7 +12818,10 @@
       "resultFile": "results/browser-fallback/2020-388019.json",
       "verifiedAt": "2026-09-12T19:13:44.499Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.188Z"
     },
     {
       "key": "2020:388020",
@@ -12792,7 +12837,10 @@
       "resultFile": "results/browser-fallback/2020-388020.json",
       "verifiedAt": "2026-09-12T19:13:46.337Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.191Z"
     },
     {
       "key": "2020:388024",
@@ -12808,7 +12856,10 @@
       "resultFile": "results/browser-fallback/2020-388024.json",
       "verifiedAt": "2026-09-12T19:13:48.177Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.192Z"
     },
     {
       "key": "2020:403990",
@@ -12824,7 +12875,10 @@
       "resultFile": "results/browser-fallback/2020-403990.json",
       "verifiedAt": "2026-09-12T19:13:50.053Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.194Z"
     },
     {
       "key": "2020:403996",
@@ -12840,7 +12894,10 @@
       "resultFile": "results/browser-fallback/2020-403996.json",
       "verifiedAt": "2026-09-12T19:13:51.974Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.195Z"
     },
     {
       "key": "2020:388044",
@@ -12856,7 +12913,10 @@
       "resultFile": "results/browser-fallback/2020-388044.json",
       "verifiedAt": "2026-09-12T19:13:53.877Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.210Z"
     },
     {
       "key": "2020:388049",
@@ -12872,7 +12932,10 @@
       "resultFile": "results/browser-fallback/2020-388049.json",
       "verifiedAt": "2026-09-12T19:13:55.751Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.214Z"
     },
     {
       "key": "2020:388054",
@@ -12888,7 +12951,10 @@
       "resultFile": "results/browser-fallback/2020-388054.json",
       "verifiedAt": "2026-09-12T19:13:57.597Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.216Z"
     },
     {
       "key": "2020:388063",
@@ -12904,7 +12970,10 @@
       "resultFile": "results/browser-fallback/2020-388063.json",
       "verifiedAt": "2026-09-12T19:13:59.446Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.228Z"
     },
     {
       "key": "2020:403998",
@@ -12920,7 +12989,10 @@
       "resultFile": "results/browser-fallback/2020-403998.json",
       "verifiedAt": "2026-09-12T19:14:01.283Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.230Z"
     },
     {
       "key": "2020:404003",
@@ -12936,7 +13008,10 @@
       "resultFile": "results/browser-fallback/2020-404003.json",
       "verifiedAt": "2026-09-12T19:14:03.134Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.232Z"
     },
     {
       "key": "2020:387755",
@@ -12984,7 +13059,10 @@
       "resultFile": "results/browser-fallback/2020-404672.json",
       "verifiedAt": "2026-09-12T19:14:08.679Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.234Z"
     },
     {
       "key": "2020:403986",
@@ -13000,7 +13078,10 @@
       "resultFile": "results/browser-fallback/2020-403986.json",
       "verifiedAt": "2026-09-12T19:14:10.522Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.235Z"
     },
     {
       "key": "2019:373813",
@@ -13296,7 +13377,10 @@
       "resultFile": "results/browser-fallback/2019-384292.json",
       "verifiedAt": "2026-09-12T19:14:12.390Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.237Z"
     },
     {
       "key": "2019:385098",
@@ -13312,7 +13396,10 @@
       "resultFile": "results/browser-fallback/2019-385098.json",
       "verifiedAt": "2026-09-12T19:14:14.302Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.242Z"
     },
     {
       "key": "2019:365220",
@@ -13328,7 +13415,10 @@
       "resultFile": "results/browser-fallback/2019-365220.json",
       "verifiedAt": "2026-09-12T19:14:16.135Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.246Z"
     },
     {
       "key": "2019:365224",
@@ -13344,7 +13434,10 @@
       "resultFile": "results/browser-fallback/2019-365224.json",
       "verifiedAt": "2026-09-12T19:14:17.980Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.247Z"
     },
     {
       "key": "2019:365416",
@@ -13360,7 +13453,10 @@
       "resultFile": "results/browser-fallback/2019-365416.json",
       "verifiedAt": "2026-09-12T19:14:19.833Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.250Z"
     },
     {
       "key": "2019:365483",
@@ -13376,7 +13472,10 @@
       "resultFile": "results/browser-fallback/2019-365483.json",
       "verifiedAt": "2026-09-12T19:14:21.690Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.252Z"
     },
     {
       "key": "2019:365545",
@@ -13392,7 +13491,10 @@
       "resultFile": "results/browser-fallback/2019-365545.json",
       "verifiedAt": "2026-09-12T19:14:23.537Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.254Z"
     },
     {
       "key": "2019:365548",
@@ -13408,7 +13510,10 @@
       "resultFile": "results/browser-fallback/2019-365548.json",
       "verifiedAt": "2026-09-12T19:14:25.386Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.255Z"
     },
     {
       "key": "2019:365512",
@@ -13424,7 +13529,10 @@
       "resultFile": "results/browser-fallback/2019-365512.json",
       "verifiedAt": "2026-09-12T19:14:27.238Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.257Z"
     },
     {
       "key": "2019:365718",
@@ -13440,7 +13548,10 @@
       "resultFile": "results/browser-fallback/2019-365718.json",
       "verifiedAt": "2026-09-12T19:14:29.085Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.261Z"
     },
     {
       "key": "2019:365749",
@@ -13456,7 +13567,10 @@
       "resultFile": "results/browser-fallback/2019-365749.json",
       "verifiedAt": "2026-09-12T19:14:30.927Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.263Z"
     },
     {
       "key": "2019:365774",
@@ -13472,7 +13586,10 @@
       "resultFile": "results/browser-fallback/2019-365774.json",
       "verifiedAt": "2026-09-12T19:14:32.768Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.264Z"
     },
     {
       "key": "2019:365803",
@@ -13488,7 +13605,10 @@
       "resultFile": "results/browser-fallback/2019-365803.json",
       "verifiedAt": "2026-09-12T19:14:34.605Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.265Z"
     },
     {
       "key": "2019:366979",
@@ -13504,7 +13624,10 @@
       "resultFile": "results/browser-fallback/2019-366979.json",
       "verifiedAt": "2026-09-12T19:14:36.435Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.266Z"
     },
     {
       "key": "2019:366986",
@@ -13520,7 +13643,10 @@
       "resultFile": "results/browser-fallback/2019-366986.json",
       "verifiedAt": "2026-09-12T19:14:38.276Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.267Z"
     },
     {
       "key": "2019:366944",
@@ -13536,7 +13662,10 @@
       "resultFile": "results/browser-fallback/2019-366944.json",
       "verifiedAt": "2026-09-12T19:14:40.138Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.268Z"
     },
     {
       "key": "2019:366948",
@@ -13552,7 +13681,10 @@
       "resultFile": "results/browser-fallback/2019-366948.json",
       "verifiedAt": "2026-09-12T19:14:41.994Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.269Z"
     },
     {
       "key": "2019:366883",
@@ -13648,7 +13780,10 @@
       "resultFile": "results/browser-fallback/2019-366893.json",
       "verifiedAt": "2026-09-12T19:14:53.026Z",
       "resultSource": "playwright_persistent_browser_retry",
-      "verification": "Dynamic match page rendered with match details"
+      "verification": "Dynamic match page rendered with match details",
+      "classification": "corona_suspended",
+      "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+      "classifiedAt": "2026-09-12T19:43:48.272Z"
     },
     {
       "key": "2018:340290",
