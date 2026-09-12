@@ -1,0 +1,16 @@
+{
+  "key": "2024:469711",
+  "season": 2024,
+  "matchId": 469711,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Vallensbæk 1",
+  "ageGroupId": "18",
+  "leagueGroupId": "17100",
+  "roundDate": "2024-12-08",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2024,17100,1,8,,469711,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2024-469711.json",
+  "verifiedAt": "2026-09-12T16:48:44.370Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree"
+}

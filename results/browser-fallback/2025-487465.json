@@ -1,0 +1,16 @@
+{
+  "key": "2025:487465",
+  "season": 2025,
+  "matchId": 487465,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "KBK Kbh. 1",
+  "ageGroupId": "17",
+  "leagueGroupId": "17965",
+  "roundDate": "2025-11-16",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,17965,1,8,,487465,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2025-487465.json",
+  "verifiedAt": "2026-09-12T16:48:44.370Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree"
+}

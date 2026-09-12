@@ -1,0 +1,16 @@
+{
+  "key": "2024:469723",
+  "season": 2024,
+  "matchId": 469723,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Rødovre 1",
+  "ageGroupId": "18",
+  "leagueGroupId": "17100",
+  "roundDate": "2025-02-02",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2024,17100,1,8,,469723,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2024-469723.json",
+  "verifiedAt": "2026-09-12T16:49:35.017Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree"
+}
