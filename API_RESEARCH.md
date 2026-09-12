@@ -339,3 +339,11 @@ Det bekræfter, at ranglistedatoer kan enumereres maskinelt. Det efterfølgende 
 `GetRankingListPlayers` er forsøgt med callback fra både spillerprofil og ranglisteside samt kombinationer af rangliste-/aldersgruppe-ID; alle generiske forsøg returnerede HTTP 500. De præcise værdier skal sandsynligvis komme fra sidens postback eller dens interne kald med flere serverfelter.
 
 Ranglistesiden viser dog direkte, at historiske versioner kan vælges, med versionstekst, dato og periode. Derfor er sporet ikke afvist, men den nuværende direkte replay-metode er en blind vej, indtil request-parametrene kan aflæses fra browserens netværk.
+
+## Terra-review: alternativ ranglistevej
+
+Terra vurderer, at de alternative ASMX-metoder (`GetRankingListPlayersSenior` og `GetRankingListPlayersHide`) ikke løser problemet med kendte parametre; gentagne kald og parameter-grid gav HTTP 500. Den nye SPA-endpoint `/api/RangkingListVersion` er ikke offentlig (401).
+
+Anbefalet vej er browserens offentlige ranglisteside med hash-parametre, eksempelvis kategori 288 og sæson 2025. UI’en har historiske versioner (Terra observerede 159 datoer i 2025/26). En fremtidig beriger skal åbne ranglistesiden, vælge seneste version <= kampdato, læse tabellen og gemme HTML/screenshot samt valgt version som provenance. Det er ikke endnu bevist, at versionen kan sættes sikkert direkte via URL eller rå request.
+
+Dette researchspor er en fremtidig enrichment og ikke en kritisk afhængighed for holdkampdatabasen.
