@@ -1,0 +1,16 @@
+{
+  "key": "2024:465545",
+  "season": 2024,
+  "matchId": 465545,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Hvidovre HB2000",
+  "ageGroupId": "13",
+  "leagueGroupId": "16931",
+  "roundDate": "2025-02-02",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2024,16931,1,8,,465545,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2024-465545.json",
+  "verifiedAt": "2026-09-12T16:51:18.397Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree"
+}
