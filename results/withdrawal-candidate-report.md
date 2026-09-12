@@ -31,3 +31,8 @@ Det er et dækningsresultat, ikke et bevis på at ingen GSB-hold blev trukket. D
 `possible_withdrawal`, `withdrawal_confidence`, `withdrawal_evidence_raw`, `appeal_evidence_raw`, `standing_source_url`, `standing_snapshot_date`.
 
 Kilde: lokalt ekstraherede BadmintonPlayer-stillinger og browser-fallback-data i dette repository.
+## Screening efter hentning af 97 stillinger
+
+Den strukturerede screening fandt 13 GSB-rækker med 0 point. Flere indeholder den eksplicitte tekst `udgået` eller `trukket` i holdnavnet, hvilket er stærkere evidens end 0 point alene. To rækker (2016/pulje 7652 og 7654) har henholdsvis 7 og 6 kampe, 0 sejre og 0 point uden eksplicit statusord i holdnavnet; de er fortsat kun kandidater og kræver kildekontrol.
+
+Se den fulde tabel i `results/standing-gsb-analysis.md`.
