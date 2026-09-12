@@ -121,3 +121,9 @@ classificationReason
 
 Det gør det muligt at måle sæsonkomplethed pr. turneringsfamilie uden at
 ødelægge de oprindelige API-navne.
+
+En turnering kan have mange parallelle grupper med samme liganavn. Eksempelvis
+kan Danmarksserien bestå af otte grupper. `league` identificerer derfor kun
+turnerings-/niveau-navnet; `leagueGroupId` er den konkrete pulje eller gruppe.
+Historiske optællinger skal vise begge niveauer og må ikke deduplikere grupper
+blot fordi deres `league`-tekst er ens.
