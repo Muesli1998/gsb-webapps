@@ -153,3 +153,7 @@ U9–U15-fallbackberigelse er midlertidigt udskudt. Rådata og fejlregistreringe
 
 - Parser rettet til historiske stillingsoverskrifter med præfikser (K.Kampe, V.Vundne, P.Point). Pulje 2014/4247 er efterkontrolleret og importeret med 8 rækker.
 
+
+## Playoff-stillinger uden aggregatfelter
+
+Pulje 2016/9019 og 2022/15670 viser kun den endelige placeringsrækkefølge i tabellen. De er finaleslutspil, ikke almindelige puljer. Kampstrukturen ligger i kampoversigten: semifinaler, finale og bronzekamp. Derfor skal kampantal, sejre, score og sæt beregnes fra de tilknyttede kamp-ID'er, når de hentes. De manglende kolonner er et formatvalg på kilden, ikke nødvendigvis manglende historik.
