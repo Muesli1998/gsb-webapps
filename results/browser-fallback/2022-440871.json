@@ -1,0 +1,16 @@
+{
+  "key": "2022:440871",
+  "season": 2022,
+  "matchId": 440871,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Gentofte 2",
+  "ageGroupId": "18",
+  "leagueGroupId": "15334",
+  "roundDate": "2023-03-26",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,15334,1,8,,440871,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2022-440871.json",
+  "verifiedAt": "2026-09-12T16:58:08.668Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree"
+}

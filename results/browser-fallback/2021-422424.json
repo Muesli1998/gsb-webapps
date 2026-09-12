@@ -1,0 +1,16 @@
+{
+  "key": "2021:422424",
+  "season": 2021,
+  "matchId": 422424,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Nordbyens Badmintonklub",
+  "ageGroupId": "1",
+  "leagueGroupId": "13790",
+  "roundDate": "2022-03-12",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2021,13790,1,8,,422424,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2021-422424.json",
+  "verifiedAt": "2026-09-12T16:58:08.668Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree"
+}

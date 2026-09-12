@@ -1,0 +1,16 @@
+{
+  "key": "2020:405625",
+  "season": 2020,
+  "matchId": 405625,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Humlebæk",
+  "ageGroupId": "1",
+  "leagueGroupId": "13228",
+  "roundDate": "2021-06-02",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13228,1,8,,405625,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2020-405625.json",
+  "verifiedAt": "2026-09-12T16:58:08.668Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree"
+}
