@@ -1,0 +1,26 @@
+{
+  "errors": [
+    {
+      "message": "Unauthenticated.",
+      "locations": [
+        {
+          "line": 1,
+          "column": 7
+        }
+      ],
+      "path": [
+        "seasons"
+      ],
+      "extensions": {
+        "guards": [
+          "api"
+        ]
+      }
+    }
+  ],
+  "extensions": {
+    "lighthouse_subscriptions": {
+      "channel": null
+    }
+  }
+}
