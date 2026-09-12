@@ -1,0 +1,29 @@
+{
+  "key": "2011:1733",
+  "season": 2011,
+  "matchId": 1733,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "KFUM Badminton Kbh.",
+  "ageGroupId": "1",
+  "leagueGroupId": "60",
+  "roundDate": "2012-02-05",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,60,1,8,,1733,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2011-1733.json",
+  "verifiedAt": "2026-09-12T17:11:01.671Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,60,1,8,,1733,1093,",
+  "individual": {
+    "text": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+    "players": [
+      {
+        "name": "Vis spillerprofil",
+        "href": "https://www.badmintonplayer.dk/DBF/Spiller/VisSpiller/",
+        "id": null
+      }
+    ],
+    "categories": [],
+    "scores": []
+  }
+}

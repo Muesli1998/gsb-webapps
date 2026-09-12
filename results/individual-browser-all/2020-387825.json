@@ -1,0 +1,29 @@
+{
+  "key": "2020:387825",
+  "season": 2020,
+  "matchId": 387825,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Charlottenlund 1",
+  "ageGroupId": "11",
+  "leagueGroupId": "13304",
+  "roundDate": "2021-02-14",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13304,1,8,,387825,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2020-387825.json",
+  "verifiedAt": "2026-09-12T17:02:02.386Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13304,1,8,,387825,1093,",
+  "individual": {
+    "text": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+    "players": [
+      {
+        "name": "Vis spillerprofil",
+        "href": "https://www.badmintonplayer.dk/DBF/Spiller/VisSpiller/",
+        "id": null
+      }
+    ],
+    "categories": [],
+    "scores": []
+  }
+}
