@@ -166,3 +166,6 @@ Pulje 2016/9019 og 2022/15670 viser kun den endelige placeringsrækkefølge i ta
 
 - Officiel corona-kontekst fra Badminton Danmark tilføjet til datoanalysen med kildelinks. Datoer i marts/april 2020 og december 2020–april 2021 behandles som mulige suspenderede/aflyste kampe, ikke automatisk som datamangler.
 
+
+- 45 genfundne kampe med Resultat '-' og dato i dokumenterede coronaperioder er markeret corona_suspended. Original status og råtekst er bevaret.
+
