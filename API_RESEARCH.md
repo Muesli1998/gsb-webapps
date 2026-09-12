@@ -286,3 +286,10 @@ Metode: `SearchTournamentMatches` med `tournamentclassid`, `tournamenteventid`, 
 **Faktisk testresultat:** Begge metoder returnerede HTTP 200 med reference-ID’erne. Før callback-konteksten blev fundet, returnerede samme typer kald HTTP 500.
 
 **Genoptagelse:** Hent en frisk `VisResultater`-side, udlæs ny `SR_CallbackContext`, kald `GetTournamentEvents`, iterér `Events`, og kald derefter `SearchTournamentMatches` pr. event og eventuelt pr. klub/spillerfilter. Parseren skal gemme både rå HTML og strukturerede felter.
+## Reproduceret spillerprofilkald
+
+Med en frisk `SR_CallbackContext` fra `/DBF/Spiller/VisSpiller/#84737` lykkedes `GetPlayerProfile` direkte med `seasonid=2025` og `playerid=84737`.
+
+Responsen indeholder strukturerede stamdata (`playerid`, `playernumber`, `playername`, `clubid`, `clubnumber`, `clubname`) samt et HTML-fragment med sæsonvælger, ranglistestatus, licensstatus og spillerens holdkampe. Holdkampstabellen indeholder kampdato, række, hold, modstander og direkte kamp-/pulje-URL’er.
+
+Dette er dokumenteret evidens for, at spillerprofiler kan hentes uden manuel klikning. Det er endnu ikke evidens for, at individuelle turneringsresultater ligger i samme profilkald.
