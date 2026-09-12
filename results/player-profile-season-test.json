@@ -1,0 +1,71 @@
+[
+  {
+    "seasonid": 2025,
+    "http": 200,
+    "playername": "Christoffer Müller",
+    "club": "Gladsaxe Søborg",
+    "htmlLength": 6895,
+    "terms": {
+      "turnering": 47,
+      "holdkampe": 1,
+      "matchLinks": 40
+    },
+    "sample": [
+      "><th>Kampdato</th><th>R&#230;kke</th><th>Hold</th><th>Modstander</th></tr><tr><td><a href='/DBF/HoldTurnering/Stilling/#5,2025,17966,1,8,,486807,'>06-09-2025 11:00:00</a></td><td><a href='/DBF/HoldTurnering/Stilling/#2,2025,17966,1,8,,486807,'> SEN Københavnsserien\t Pulje 1</a></td><td><a",
+      " href='/DBF/HoldTurnering/Stilling/#3,2025,17966,1,8,116533,486807,'>Gladsaxe Søborg 2</a></td><td><a href='/DBF/HoldTurnering/Stilling/#3,2025,17966,1,8,116530,486807,'>BC37 Amager 3</a></td></tr><tr><td>",
+      "<a href='/DBF/HoldTurnering/Stilling/#5,2025,17966,1,8,,486811,'>20-09-2025 16:00:00</a></td><td><a href='/DBF/HoldTurnering/Stilling/#2,2025,17966,1,8,,486811,'> SEN Københavnsserien\t Pulje 1</a></td><td><a",
+      " href='/DBF/HoldTurnering/Stilling/#3,2025,17966,1,8,116532,486811,'>Gladsaxe Søborg 2</a></td><td><a href='/DBF/HoldTurnering/Stilling/#3,2025,17966,1,8,116533,486811,'>Drive 4</a></td></tr><tr><td><a hre",
+      "f='/DBF/HoldTurnering/Stilling/#5,2025,17966,1,8,,486818,'>25-10-2025 15:00:00</a></td><td><a href='/DBF/HoldTurnering/Stilling/#2,2025,17966,1,8,,486818,'> SEN Københavnsserien\t Pulje 1</a></td><td><a"
+    ]
+  },
+  {
+    "seasonid": 2024,
+    "http": 200,
+    "playername": "Christoffer Müller",
+    "club": "Gladsaxe Søborg",
+    "htmlLength": 2621,
+    "terms": {
+      "turnering": 8,
+      "holdkampe": 1,
+      "matchLinks": 8
+    },
+    "sample": [
+      "><th>Kampdato</th><th>R&#230;kke</th><th>Hold</th><th>Modstander</th></tr><tr><td><a href='/DBF/HoldTurnering/Stilling/#5,2024,16833,1,8,,466226,'>16-11-2024 13:00:00</a></td><td><a href='/DBF/HoldTurnering/Stilling/#2,2024,16833,1,8,,466226,'> SEN Københavnsserien Pulje 2</a></td><td><a ",
+      "href='/DBF/HoldTurnering/Stilling/#3,2024,16833,1,8,111039,466226,'>Gladsaxe Søborg 2</a></td><td><a href='/DBF/HoldTurnering/Stilling/#3,2024,16833,1,8,111040,466226,'>SAIF Kbh. 3</a></td></tr><tr><td><a",
+      " href='/DBF/HoldTurnering/Stilling/#5,2024,16833,1,8,,466228,'>07-12-2024 15:00:00</a></td><td><a href='/DBF/HoldTurnering/Stilling/#2,2024,16833,1,8,,466228,'> SEN Københavnsserien Pulje 2</a></td><td><a ",
+      "href='/DBF/HoldTurnering/Stilling/#3,2024,16833,1,8,111041,466228,'>Gladsaxe Søborg 2</a></td><td><a href='/DBF/HoldTurnering/Stilling/#3,2024,16833,1,8,111039,466228,'>Dragør 2</a></td></tr></table>"
+    ]
+  },
+  {
+    "seasonid": 2020,
+    "http": 200,
+    "playername": "Christoffer Müller",
+    "club": "Gladsaxe Søborg",
+    "htmlLength": 1664,
+    "terms": {
+      "turnering": 0,
+      "holdkampe": 0,
+      "matchLinks": 0
+    },
+    "sample": []
+  },
+  {
+    "seasonid": 2010,
+    "http": 200,
+    "playername": "Christoffer Müller",
+    "club": "Gladsaxe Søborg",
+    "htmlLength": 2925,
+    "terms": {
+      "turnering": 10,
+      "holdkampe": 0,
+      "matchLinks": 0
+    },
+    "sample": [
+      "<h2>Turneringer</h2>",
+      "/tr><tr><td>01-07-2010</td><td>Badminton Danmark</td><td>Overførte point 2010</td><td><a href='/DBF/Turnering/VisResultater/#22644,'>U13 B</a><br></td></tr>",
+      "<tr><td>11-09-2010</td><td>Hillerød</td><td></td><td><a href='/DBF/Turnering/VisResultater/#410,'>U13 B</a><br></td></tr>",
+      "<tr><td>02-10-2010</td><td>Herlev/Hjorten</td><td></td><td><a href='/DBF/Turnering/VisResultater/#373,'>U13 B</a><br></td></tr>",
+      "<tr><td>13-11-2010</td><td>Hillerød</td><td></td><td><a href='/DBF/Turnering/VisResultater/#647,'>U13 A</a><br></td></tr>"
+    ]
+  }
+]

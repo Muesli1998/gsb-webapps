@@ -293,3 +293,13 @@ Med en frisk `SR_CallbackContext` fra `/DBF/Spiller/VisSpiller/#84737` lykkedes 
 Responsen indeholder strukturerede stamdata (`playerid`, `playernumber`, `playername`, `clubid`, `clubnumber`, `clubname`) samt et HTML-fragment med sæsonvælger, ranglistestatus, licensstatus og spillerens holdkampe. Holdkampstabellen indeholder kampdato, række, hold, modstander og direkte kamp-/pulje-URL’er.
 
 Dette er dokumenteret evidens for, at spillerprofiler kan hentes uden manuel klikning. Det er endnu ikke evidens for, at individuelle turneringsresultater ligger i samme profilkald.
+## Spillerprofilens turneringsdata
+
+`GetPlayerProfile` blev testet for spiller `84737` med en frisk callback-kontekst og sæson-ID’erne 2025, 2024, 2020 og 2010.
+
+- 2025: responsen indeholder primært holdkampe.
+- 2024: responsen indeholder primært holdkampe.
+- 2020: ingen holdkamp-/turneringstabel i HTML-fragmentet.
+- 2010: responsen indeholder en eksplicit `Turneringer`-sektion med dato, arrangør, række og links til `VisResultater`, eksempelvis turnering `22644`, `410`, `373` og `647`.
+
+Det er første direkte evidens for, at spillerprofilkaldet kan levere historiske individuelle turneringsdeltagelser. Der skal stadig testes, om nyere sæsoner bruger en anden struktur eller kun viser data, når spilleren har registrerede turneringer.
