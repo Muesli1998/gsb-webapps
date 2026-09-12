@@ -71,3 +71,21 @@ medlems-, runde- og logkald forventes at have samme begrænsning.
   tom liste i den testede forespørgsel.
 - `teamMatchesFormattedForValidation` gav `Internal server error` med første
   testede input og kræver en separat undersøgelse af inputformat/version.
+
+## Klubliste og tværklubtest (sæson 2025 = 2025/26)
+
+- `badmintonPlayerClubs { id name }` returnerede 1.428 poster. Listen er en
+  offentlig BadmintonPlayer-klubliste og indeholder også negative/særlige
+  pseudo-ID’er.
+- `clubs { id name1 badmintonPlayerId initialized }` returnerede 1.159 poster.
+  Et fuldt `clubs`-kald med `name2` fejlede på en null-værdi, så klienten bør
+  behandle det felt som valgfrit.
+- `clubsSearch` virker for nogle konkrete navne (fx `Søborg` → ID 1232 og
+  `Køge` → ID 481), men gav 0 resultater for `Gladsaxe`, `Drive` og `Valby`.
+  Den bør derfor ikke bruges som eneste metode til komplet klubinventar.
+- `badmintonPlayerTeams` virkede på tværs af klubber: ID 1093 gav 77 hold,
+  1097 gav 21, 1098 gav 19, 1102 gav 2 og 1103 gav 4 i 2025/26.
+
+Dette er en metode-/kapacitetstest, ikke endnu en fuld scanning af alle 1.159
+klubber. En komplet scanning bør køres batchvist med checkpoints og begrænset
+parallelitet.
