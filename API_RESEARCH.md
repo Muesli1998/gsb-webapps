@@ -324,3 +324,7 @@ Brugeren har bekræftet, at pointene ud for spillerne i `GetPlayerRankingListPoi
 Testet 2026-09-12 med spiller `84737` og season-ID’erne 2025, 2024, 2023, 2020 og 2010. Kun den aktuelle profilvisning (2026/2027) indeholder `ShowRankingListPoints(...)`-links med rankinglistplayer-ID’er. Tidligere profilvisninger indeholder turneringer/holdkampe, men ingen tilsvarende ranglistehistorik. Et direkte `GetPlayerRankingListPoints`-kald med `seasonid=2025` og aktuelle rankinglistplayer-ID’er returnerede HTTP 500.
 
 Konklusion: Vi har endnu ingen dokumenteret metode til at rekonstruere tidligere sæsoners ranglistepoint efter sommeropdateringen. Den sikre fremtidige løsning er at gemme ranglistepoint løbende før hvert sæsonskift. Historiske point kræver en separat arkivkilde eller en allerede gemt eksport.
+
+## Korrektion af historiske ranglistepoint
+
+En tidligere note konkluderede for kategorisk, at historiske point ikke kan findes. Brugeren har oplyst, at de generelle ranglistearkiver indeholder ranglister fra alle sæsoner, så historiske point kan muligvis rekonstrueres derfra. Dette er endnu ikke maskinelt verificeret i projektet og skal behandles som næste researchtest.
