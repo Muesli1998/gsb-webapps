@@ -129,3 +129,7 @@ Alle agenter skrev kun til afgrænsede testområder. `netlify-tool-prod` blev ik
 - Afklare de ukendte aldersgruppe-ID’er med konkrete observationer.
 - Bygge den endelige rådata- og normaliserede SQL-model.
 - Først derefter beregne avanceret statistik.
+
+## Prioriteringsbeslutning: U15 og yngre udskudt
+
+U9–U15-fallbackberigelse er midlertidigt udskudt. Rådata og fejlregistreringer bevares, men den aktive fallback-kø prioriterer senior- og veterangrupper. Køstatus `deferred_youth_u15` betyder udskudt efter denne beslutning, ikke at data mangler.
