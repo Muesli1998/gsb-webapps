@@ -1,5 +1,33 @@
 # Datakrav til GSB-statistiksystemet
 
+## Bestyrelsens hovedkrav
+
+- alle GSB-hold i sæsonerne 2010/2011–2026/2027
+- alle holdkampe for hvert hold
+- endelig stilling for hver pulje/gruppe
+- eventuelle løbende stillinger, hvis kilden gemmer dem
+- holdkampens samlede resultat og point
+- alle individuelle kampe med spillere, kategori/rang og scores
+- filtrering på sæson, hold, spiller, kategori, kampnummer, modstander, liga
+  og pulje
+
+## Ekstra funktioner der er relevante
+
+- hjemme/ude og spillested
+- kampens status: spillet, afbud, walkover, udsat eller ukendt
+- holdets placering og point over tid
+- modstanderhistorik
+- spillerens holdtilknytning pr. sæson
+- spillerens antal optrædener pr. kategori og rang (fx 1. mix, 2. mix)
+- sejre/nederlag og score for både holdkampe og individuelle kampe
+- sæson- og karriereoversigt for spillere
+- datadækning: hvilke kampe/grupper der mangler detaljer
+- kilde, hentetidspunkt og rå respons for hver post
+
+Løbende stillinger skal kun gemmes, hvis de kan dokumenteres som historiske
+stikprøver eller snapshots. En nutidig slutstilling må ikke fremstilles som en
+løbende historik.
+
 Dette er et arbejdsudkast til datakontrakten. Felter med `unknown` eller
 `unverified` må ikke udfyldes ved gæt. Rå API- og BadmintonPlayer-værdier skal
 gemmes, så alle beregninger kan spores tilbage til kilden.
@@ -78,4 +106,3 @@ Disse skal ikke gemmes som eneste sandhed, men beregnes fra rådata:
 # Genoptagelsesnote
 
 Dette er et arbejdsudkast, ikke en fastlagt model. Før mere masseudtræk skal besluttes: holdstatistik kontra spillerstatistik, walkover-behandling, liganormalisering, minimumsfelter og spiller-ID-strategi. Gem altid rå kilde samt afledte felter.
-
