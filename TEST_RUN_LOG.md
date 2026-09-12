@@ -163,3 +163,6 @@ Pulje 2016/9019 og 2022/15670 viser kun den endelige placeringsrækkefølge i ta
 
 - Datoanalyse af alle 58 browser_no_match_id-kampe gemt i results/browser-no-match-dates.csv og results/browser-no-match-date-analysis.md. 23 er fra 2019-sæsonen (18 med dato i marts/april 2020), 31 fra 2020-sæsonen, 4 fra 2018.
 
+
+- Officiel corona-kontekst fra Badminton Danmark tilføjet til datoanalysen med kildelinks. Datoer i marts/april 2020 og december 2020–april 2021 behandles som mulige suspenderede/aflyste kampe, ikke automatisk som datamangler.
+
