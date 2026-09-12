@@ -165,8 +165,9 @@ Brug statusværdierne `nembadminton_complete`, `nembadminton_no_players`,
 `nembadminton_error`, `badmintonplayer_verified` og `manual_verified`.
 
 `ageGroupId` er intern og skal gemmes sammen med det viste rækkenavn. Observerede
-2025/26-værdier er 1=SEN, 9=SEN40+, 13=SEN60+ og 17=SEN70+; mappingen skal
-valideres pr. sæson.
+2025/26-værdier omfatter 1=SEN, 8=VETERAN, 9=VETERAN A/SEN40+, 11=SEN50+,
+12=SEN55+, 13=SEN60+, 17=SEN70+, 2=U9, 3=U11, 4=U13, 5=U15, 6=U17 og
+18=U17/U19 ungdom. Mappingen skal stadig valideres pr. sæson.
 
 BadmintonPlayer.dk's dynamiske `Stilling`-tabel viser puljens hold, kampe,
 resultater, score, point og placering og bør bruges som autoritativ kilde til
