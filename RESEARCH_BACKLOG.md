@@ -53,3 +53,7 @@ login-frit Nembadminton-felt eller skal suppleres fra BadmintonPlayer. Kamp-
 discovery-kæden indeholder kampe og gruppe-ID’er, men en slutstilling er endnu
 ikke dokumenteret i dens svar. Testen skal bevare rå gruppe-/række-tekst og
 skelne mellem almindelig pulje, kvalifikation og slutspil.
+
+## Potentielt punkt ved fuld klubimport
+
+Ved import af andre klubbers hold skal kampe i de dokumenterede corona-perioder klassificeres særskilt. Et resultatfelt med `-` i disse perioder bør gemmes som mulig suspenderet/ikke gennemført kamp, ikke som almindelig kampfejl. Kamp-ID, dato, pulje og rå kilde skal stadig bevares, så klassifikationen kan efterprøves.

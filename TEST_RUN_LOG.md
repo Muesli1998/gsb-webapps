@@ -169,3 +169,6 @@ Pulje 2016/9019 og 2022/15670 viser kun den endelige placeringsrækkefølge i ta
 
 - 45 genfundne kampe med Resultat '-' og dato i dokumenterede coronaperioder er markeret corona_suspended. Original status og råtekst er bevaret.
 
+
+- Tilføjet backlogpunkt til fremtidig fuld klubimport: særskilt coronaklassifikation af suspenderede kampe og bevaring af rå evidens.
+
