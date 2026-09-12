@@ -214,3 +214,14 @@ eller usikre værdier skal markeres eksplicit som `unknown` eller `unverified`.
 Der må ikke gættes på betydningen af et ID, et liganavn, et resultat eller en
 fejltype. Enhver afledt klassifikation skal kunne spores til den konkrete
 API-post, BadmintonPlayer-visning eller en manuel, dokumenteret verifikation.
+
+## Test: `teams`-rækkefølge
+
+Kørt 2026-09-12 på 462 grupper fra den historiske GSB-discovery. I 2.811 kampe stod GSB-holdet i `teams[0]` eller `teams[1]`; i 7 kampe stod det i `teams[2]`. De 7 observationer er:
+
+- 2024, gruppe 17849, kamp 484777: `Badminton Esbjerg | Kolding BK | Gladsaxe Søborg`
+- 2020, gruppe 13328, kampe 388606, 388609, 402365, 402367, 388870, 388873: blandede holdnavne og klubnavne
+
+Det viser, at array-positionen ikke er stabil nok til alene at definere hjemmehold/udehold. Rå `teams` skal derfor bevares, og hjemme-/udehold skal valideres særskilt mod synlige kampvisninger.
+
+Maskinresultatet ligger i `results/teams-order-test.json`, og testen kan gentages med `node test-teams-order.mjs`.
