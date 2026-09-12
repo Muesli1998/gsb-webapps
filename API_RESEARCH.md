@@ -333,3 +333,9 @@ En tidligere note konkluderede for kategorisk, at historiske point ikke kan find
 Webservicen har en særskilt metode `GetRankingListVersions(callbackcontextkey, rankinglistagegroupid, rankinglistid, seasonid)`. Med spiller `84737`, `seasonid=2026` og `rankinglistid=288` returnerede den HTTP 200 og en liste af historiske ranglistedatoer fra 01-07-2026 til 11-09-2026 samt månedlige ranglister.
 
 Det bekræfter, at ranglistedatoer kan enumereres maskinelt. Det efterfølgende `GetRankingListPlayers`-kald kræver yderligere præcise filterværdier; vores første generiske parameterpakke gav HTTP 500. Næste test skal aflæse disse værdier fra ranglistesidens egen JavaScript.
+## Ranglisteparameter: status
+
+`GetRankingListVersions` er reproduceret og returnerer ranglistedatoer.
+`GetRankingListPlayers` er forsøgt med callback fra både spillerprofil og ranglisteside samt kombinationer af rangliste-/aldersgruppe-ID; alle generiske forsøg returnerede HTTP 500. De præcise værdier skal sandsynligvis komme fra sidens postback eller dens interne kald med flere serverfelter.
+
+Ranglistesiden viser dog direkte, at historiske versioner kan vælges, med versionstekst, dato og periode. Derfor er sporet ikke afvist, men den nuværende direkte replay-metode er en blind vej, indtil request-parametrene kan aflæses fra browserens netværk.
