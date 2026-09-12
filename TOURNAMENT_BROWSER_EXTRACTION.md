@@ -1,5 +1,13 @@
 # Browserudtræk af turneringsdata
 
+## Genoptagelsesnote
+
+Seneste test brugte Codex-browserens læsning af den rendere­de DOM på
+`https://badmintonplayer.dk/DBF/Turnering/VisResultater/#115342,490920`.
+Turnering `115342` og event/program `490920` er bekræftet. Siden indeholdt 77
+tabelrækker og viste spillerlinks, klubber, faser, scores og `W.O.`. Brug den
+samme side som reference, hvis arbejdet genoptages efter timeout.
+
 ## Verificeret reference
 
 På `VisResultater/#115342,490920` kunne browserens rendere­de DOM læses med følgende felter:
