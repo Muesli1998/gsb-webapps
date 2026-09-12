@@ -386,6 +386,12 @@ Det bekræfter, at slutstillinger kan hentes via BadmintonPlayer-browseren med
 gruppe-ID, sæson, aldersgruppe og klub-ID. Det er en verificeret fallback-
 kilde; automatiseret råkald/HTML-parser er næste tekniske trin.
 
+Parallel fallback-gennemgang bekræftede, at kamp `486396` kan læses i den
+autentificerede browser som et eksplicit afbud/walkover med resultat 12-0 og
+point 2-0. Terminal-`fetch` returnerer kun en dynamisk skal, så browser-
+rendering er nødvendig for denne type data. Walkovers skal gemmes som særskilt
+status og ikke fortolkes som almindelige sætresultater.
+
 ## Terra-review: alternativ ranglistevej
 
 Terra vurderer, at de alternative ASMX-metoder (`GetRankingListPlayersSenior` og `GetRankingListPlayersHide`) ikke løser problemet med kendte parametre; gentagne kald og parameter-grid gav HTTP 500. Den nye SPA-endpoint `/api/RangkingListVersion` er ikke offentlig (401).
