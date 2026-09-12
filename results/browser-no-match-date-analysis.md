@@ -27,3 +27,8 @@ Kilder:
 - https://www.ssi.dk/-/media/arkiv/subsites/covid19/presse/tidslinje-over-covid-19/covid-19-tidslinje-for-2020-2022-lang-version---version-1---april-2022.pdf
 
 Fortolkning: En browserfejl på en kamp med dato i marts/april 2020 eller december 2020–april 2021 bør først klassificeres som mulig corona-aflysning/suspendering. Den må ikke automatisk tælles som en manglende spillet kamp.
+
+## Resultatkontrol efter browser-retry
+
+Af de 56 genfundne kampsider har 33 resultatfeltet - uden individuelle kampe, 11 er walkover/ikke fremmødt, og 12 har individuelle spillerdata. De 33 falder primært sammen med corona-datoerne og bør klassificeres som aflyst/ikke gennemført, ikke som manglende API-data.
+
