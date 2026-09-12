@@ -1,0 +1,2152 @@
+[
+  {
+    "season": 2025,
+    "ageGroupId": "2",
+    "leagueGroupId": "18733",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "DMU Holdtræf U9 - 3 Spillere U9 DMU holdtræf",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "2",
+    "leagueGroupId": "18504",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "U09 C 3600 (3 spillere) BD (2. halvår) Pulje 2",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "2",
+    "leagueGroupId": "18129",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "U09 C 3600 (3 spillere) BD Pulje 1",
+    "matches": 4,
+    "errors": 4,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "2",
+    "leagueGroupId": "18507",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U09 D 3300 (3 spillere) BD  (2. halvår) Pulje 2",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "2",
+    "leagueGroupId": "18127",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U09 D 3300 (3 spillere) BD Pulje 1",
+    "matches": 4,
+    "errors": 4,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "2",
+    "leagueGroupId": "18506",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "U09 D 3300 (3 spillere) BD  (2. halvår) Pulje 1",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "2",
+    "leagueGroupId": "18128",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "U09 D 3300 (3 spillere) BD Pulje 2",
+    "matches": 4,
+    "errors": 4,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "2",
+    "leagueGroupId": "18508",
+    "teamName": "Gladsaxe Søborg 4",
+    "league": "U09 D 3300 (3 spillere) BD  (2. halvår) Pulje 3",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "2",
+    "leagueGroupId": "18509",
+    "teamName": "Gladsaxe Søborg 5",
+    "league": "U09 D 3300 (3 spillere) BD  (2. halvår) Pulje 4",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "3",
+    "leagueGroupId": "18583",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU Hold U11C-D (4800) - 4 Spillere Pulje 2",
+    "matches": 3,
+    "errors": 3,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "3",
+    "leagueGroupId": "18697",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU Hold U11C-D (4800) - 4 Spillere Finaleslutspil (1. - 4. plads)",
+    "matches": 2,
+    "errors": 2,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "3",
+    "leagueGroupId": "18134",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U11 C-D 4800 (4 spillere) BD Pulje 1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "3",
+    "leagueGroupId": "18135",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "U11 D 4600 (4 spillere) BD Pulje 1",
+    "matches": 10,
+    "errors": 10,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "3",
+    "leagueGroupId": "18138",
+    "teamName": "Gladsaxe Søborg 4",
+    "league": "U11 D 4600 (4 spillere) BD Pulje 4",
+    "matches": 8,
+    "errors": 8,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "3",
+    "leagueGroupId": "18133",
+    "teamName": "Gladsaxe Søborg 5",
+    "league": "U11 4200 (4 piger) BD Pulje 2",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "4",
+    "leagueGroupId": "18604",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU Hold U13C-D (5000) - 4 Spillere Pulje 2",
+    "matches": 3,
+    "errors": 3,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "4",
+    "leagueGroupId": "18702",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU Hold U13C-D (5000) - 4 Spillere Placeringskampe 9. - 12. plads (3'ere)",
+    "matches": 2,
+    "errors": 2,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "4",
+    "leagueGroupId": "18610",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "DMU Hold U13D (4800) - 4 Spillere Pulje 4",
+    "matches": 3,
+    "errors": 3,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "4",
+    "leagueGroupId": "18735",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "DMU Hold U13D (4800) - 4 Spillere Kvartfinale 2 (nr. 1 fra pulje 3 og 4)",
+    "matches": 1,
+    "errors": 1,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "4",
+    "leagueGroupId": "18739",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "DMU Hold U13D (4800) - 4 Spillere 5. - 8. plads",
+    "matches": 2,
+    "errors": 2,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "4",
+    "leagueGroupId": "18611",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "DMU Hold U13D (4800) - 4 Spillere Pulje 5",
+    "matches": 3,
+    "errors": 3,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "4",
+    "leagueGroupId": "18740",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "DMU Hold U13D (4800) - 4 Spillere Placeringskampe 9. - 16. plads (2'ere i puljen)",
+    "matches": 2,
+    "errors": 2,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "4",
+    "leagueGroupId": "18139",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "U13 C 5300 (4 spillere) BD Pulje 1",
+    "matches": 10,
+    "errors": 10,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "4",
+    "leagueGroupId": "18142",
+    "teamName": "Gladsaxe Søborg 7",
+    "league": "U13 D 4800 (4 spillere) BD Pulje 1",
+    "matches": 10,
+    "errors": 10,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "4",
+    "leagueGroupId": "18143",
+    "teamName": "Gladsaxe Søborg 5",
+    "league": "U13 D 4800 (4 spillere) BD Pulje 2",
+    "matches": 10,
+    "errors": 10,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "4",
+    "leagueGroupId": "18144",
+    "teamName": "Gladsaxe Søborg 6",
+    "league": "U13 D 4800 (4 spillere) BD Pulje 3",
+    "matches": 8,
+    "errors": 8,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "4",
+    "leagueGroupId": "18141",
+    "teamName": "Gladsaxe Søborg 8",
+    "league": "U13 D 4400 (4 piger) BD Pulje 1",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "4",
+    "leagueGroupId": "17985",
+    "teamName": "Gladsaxe Søborg 8",
+    "league": "Uge 38 - U13 B, 5400 (2+2) Pulje 1",
+    "matches": 2,
+    "errors": 2,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "5",
+    "leagueGroupId": "18632",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU Hold U15B (6400) - 4 Spillere Pulje 4",
+    "matches": 3,
+    "errors": 3,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "5",
+    "leagueGroupId": "18708",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU Hold U15B (6400) - 4 Spillere Finaleslutspil (1. - 4. plads)",
+    "matches": 2,
+    "errors": 2,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "5",
+    "leagueGroupId": "18623",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "DMU Hold U15C-D (5200) - 4 Spillere Pulje 1",
+    "matches": 2,
+    "errors": 2,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "5",
+    "leagueGroupId": "18716",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "DMU Hold U15C-D (5200) - 4 Spillere Finaleslutspil (1. - 4. plads)",
+    "matches": 2,
+    "errors": 2,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "5",
+    "leagueGroupId": "18145",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U15 B 6400 (4 spillere) BD Pulje 1",
+    "matches": 9,
+    "errors": 9,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "5",
+    "leagueGroupId": "18148",
+    "teamName": "Gladsaxe Søborg 4",
+    "league": "U15 C-D 5200 (4 spillere) BD Pulje 1",
+    "matches": 8,
+    "errors": 8,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "5",
+    "leagueGroupId": "18149",
+    "teamName": "Gladsaxe Søborg 5",
+    "league": "U15 D 5000 (4 spillere) BD Pulje 1",
+    "matches": 12,
+    "errors": 12,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "5",
+    "leagueGroupId": "18150",
+    "teamName": "Gladsaxe Søborg 6",
+    "league": "U15 D 5000 (4 spillere) BD Pulje 2",
+    "matches": 12,
+    "errors": 12,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "18",
+    "leagueGroupId": "18154",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "C-D 5600 (4 spillere) BD Pulje 1",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "18",
+    "leagueGroupId": "18122",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U17/U19 D, 5200 (4 spillere) Pulje 3",
+    "matches": 12,
+    "errors": 12,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "13",
+    "leagueGroupId": "17963",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "1. Serie Pulje 1",
+    "matches": 8,
+    "errors": 8,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2025,
+    "ageGroupId": "17",
+    "leagueGroupId": "17965",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "70+ Eliteserien Pulje 1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2024,
+    "ageGroupId": "2",
+    "leagueGroupId": "17590",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU Hold U9D (2800) 4 Spillere Pulje 3",
+    "matches": 3,
+    "errors": 3,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2024,
+    "ageGroupId": "2",
+    "leagueGroupId": "17650",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU Hold U9D (2800) 4 Spillere Placeringskampe (9. - 14. plads)",
+    "matches": 2,
+    "errors": 2,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2024,
+    "ageGroupId": "2",
+    "leagueGroupId": "17156",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "U9 D 2800 (4 spillere). Pulje 1",
+    "matches": 10,
+    "errors": 10,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2024,
+    "ageGroupId": "2",
+    "leagueGroupId": "17157",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U9 D 2800 (4 spillere). Pulje 2",
+    "matches": 10,
+    "errors": 10,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2024,
+    "ageGroupId": "3",
+    "leagueGroupId": "17813",
+    "teamName": "Gladsaxe Søborg",
+    "league": "DMU Hold U11C (4000) 4 Spillere Kvartfinale 3 (nr. 1 pulje 2 og nr. 2 pulje 2)",
+    "matches": 1,
+    "errors": 1,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2024,
+    "ageGroupId": "3",
+    "leagueGroupId": "17849",
+    "teamName": "Gladsaxe Søborg",
+    "league": "DMU Hold U11C (4000) 4 Spillere Placeringskampe (5. - 8. plads) NY",
+    "matches": 3,
+    "errors": 3,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2024,
+    "ageGroupId": "3",
+    "leagueGroupId": "17809",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU Hold U11C (4000) 4 Spillere Pulje 3",
+    "matches": 2,
+    "errors": 2,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2024,
+    "ageGroupId": "3",
+    "leagueGroupId": "17148",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "U11 C 4000 (4 spillere). Pulje 1",
+    "matches": 10,
+    "errors": 10,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2024,
+    "ageGroupId": "3",
+    "leagueGroupId": "17152",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U11 D 3200 (4 spillere). Pulje 1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2024,
+    "ageGroupId": "3",
+    "leagueGroupId": "17153",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "U11 D 3200 (4 spillere). Pulje 2",
+    "matches": 5,
+    "errors": 5,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2024,
+    "ageGroupId": "3",
+    "leagueGroupId": "17154",
+    "teamName": "Gladsaxe Søborg 4",
+    "league": "U11 D 3200 (4 spillere). Pulje 3",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2024,
+    "ageGroupId": "3",
+    "leagueGroupId": "17151",
+    "teamName": "Gladsaxe Søborg 5",
+    "league": "U11 D 2800 (4 piger). Pulje 2",
+    "matches": 10,
+    "errors": 10,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2024,
+    "ageGroupId": "4",
+    "leagueGroupId": "17635",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "DMU Hold U13B (5000) 4 Spillere Pulje 2",
+    "matches": 4,
+    "errors": 4,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2024,
+    "ageGroupId": "4",
+    "leagueGroupId": "17674",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "DMU Hold U13B (5000) 4 Spillere Placeringskamp (5. - 6. plads)",
+    "matches": 1,
+    "errors": 1,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2024,
+    "ageGroupId": "4",
+    "leagueGroupId": "17117",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U13 B, 5000 (4 spillere) Pulje 2",
+    "matches": 10,
+    "errors": 10,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2024,
+    "ageGroupId": "4",
+    "leagueGroupId": "17636",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "DMU Hold U13C (4200) 4 Spillere Pulje 1",
+    "matches": 3,
+    "errors": 3,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2024,
+    "ageGroupId": "4",
+    "leagueGroupId": "17677",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "DMU Hold U13C (4200) 4 Spillere Finale slutspil (1. - 4. plads)",
+    "matches": 2,
+    "errors": 2,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2024,
+    "ageGroupId": "4",
+    "leagueGroupId": "17094",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "U13 C, 4200 (4 spillere) Pulje 1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2024,
+    "ageGroupId": "4",
+    "leagueGroupId": "17146",
+    "teamName": "Gladsaxe Søborg 7",
+    "league": "U13 D 3600 (4 spillere). Pulje 2",
+    "matches": 8,
+    "errors": 8,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2024,
+    "ageGroupId": "4",
+    "leagueGroupId": "17147",
+    "teamName": "Gladsaxe Søborg 5",
+    "league": "U13 D 3600 (4 spillere). Pulje 3",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2024,
+    "ageGroupId": "4",
+    "leagueGroupId": "17145",
+    "teamName": "Gladsaxe Søborg 6",
+    "league": "U13 D 3600 (4 spillere). Pulje 1",
+    "matches": 5,
+    "errors": 5,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2024,
+    "ageGroupId": "5",
+    "leagueGroupId": "17141",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U15 C 4800 (4 spillere). Pulje 1",
+    "matches": 9,
+    "errors": 9,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2024,
+    "ageGroupId": "5",
+    "leagueGroupId": "17143",
+    "teamName": "Gladsaxe Søborg 5",
+    "league": "U15 D 4000 (4 spillere). Pulje 1",
+    "matches": 9,
+    "errors": 9,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2024,
+    "ageGroupId": "18",
+    "leagueGroupId": "17100",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "U17/U19 D, 4600 (4 spillere) Pulje 1",
+    "matches": 12,
+    "errors": 12,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2024,
+    "ageGroupId": "13",
+    "leagueGroupId": "16931",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "60+ 1. Serie Pulje 1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2024,
+    "ageGroupId": "17",
+    "leagueGroupId": "16929",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "70+ Eliteserien Pulje 1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2023,
+    "ageGroupId": "2",
+    "leagueGroupId": "16024",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U09 2400 4 Spillere Pulje 1",
+    "matches": 8,
+    "errors": 8,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2023,
+    "ageGroupId": "3",
+    "leagueGroupId": "16534",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "DMU H - U11 3200 (4 spillere) Pulje 3",
+    "matches": 2,
+    "errors": 2,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2023,
+    "ageGroupId": "3",
+    "leagueGroupId": "16677",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "DMU H - U11 3200 (4 spillere) Kvartfinale 2 (nr. 1 pulje 3 og 4)",
+    "matches": 1,
+    "errors": 1,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2023,
+    "ageGroupId": "3",
+    "leagueGroupId": "16680",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "DMU H - U11 3200 (4 spillere) Finale slutspil (1. - 4. plads)",
+    "matches": 2,
+    "errors": 2,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2023,
+    "ageGroupId": "3",
+    "leagueGroupId": "16030",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U11 - 3200 4 spillere Pulje 1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2023,
+    "ageGroupId": "3",
+    "leagueGroupId": "16031",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "U11 - 3200 4 spillere Pulje 2",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2023,
+    "ageGroupId": "3",
+    "leagueGroupId": "16026",
+    "teamName": "Gladsaxe Søborg 4",
+    "league": "U11 - 2900 4 spillere Pulje 2",
+    "matches": 10,
+    "errors": 10,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2023,
+    "ageGroupId": "4",
+    "leagueGroupId": "16097",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "U13 - 5000 4 spillere Pulje 1",
+    "matches": 10,
+    "errors": 10,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2023,
+    "ageGroupId": "4",
+    "leagueGroupId": "15993",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "U13 - 4400 (4 spillere) Pulje 1",
+    "matches": 10,
+    "errors": 10,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2023,
+    "ageGroupId": "4",
+    "leagueGroupId": "16099",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "U13 - 3500 4 spillere Pulje 1",
+    "matches": 8,
+    "errors": 8,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2023,
+    "ageGroupId": "5",
+    "leagueGroupId": "16091",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U15 - 4200 4 spillere Pulje 1",
+    "matches": 12,
+    "errors": 12,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2023,
+    "ageGroupId": "5",
+    "leagueGroupId": "16093",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "U15 - 3800 4 spillere Pulje 1",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2023,
+    "ageGroupId": "5",
+    "leagueGroupId": "16094",
+    "teamName": "Gladsaxe Søborg 4",
+    "league": "U15 - 3800 4 spillere Pulje 2",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2023,
+    "ageGroupId": "18",
+    "leagueGroupId": "16610",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU H - U17/U19 6600 (4 spillere) Pulje 4",
+    "matches": 3,
+    "errors": 3,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2023,
+    "ageGroupId": "18",
+    "leagueGroupId": "16654",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU H - U17/U19 6600 (4 spillere) Slutspil 5.-8. plads",
+    "matches": 1,
+    "errors": 1,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2023,
+    "ageGroupId": "18",
+    "leagueGroupId": "16087",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "U17/U19 - 6600 4 spillere Pulje 1",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2023,
+    "ageGroupId": "18",
+    "leagueGroupId": "16088",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U17/U19 - 4800 4 spillere Pulje 1",
+    "matches": 8,
+    "errors": 8,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2023,
+    "ageGroupId": "9",
+    "leagueGroupId": "15888",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "20. serie Pulje 1",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2023,
+    "ageGroupId": "17",
+    "leagueGroupId": "15897",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "1. Serie Pulje 1",
+    "matches": 8,
+    "errors": 8,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2022,
+    "ageGroupId": "2",
+    "leagueGroupId": "14983",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "U09 2800 4 Spillere Pulje 1",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2022,
+    "ageGroupId": "3",
+    "leagueGroupId": "15528",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU H - U11 3600 4 spillere Pulje 1",
+    "matches": 5,
+    "errors": 5,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2022,
+    "ageGroupId": "3",
+    "leagueGroupId": "14989",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U11 3600 4 Spillere Pulje 1",
+    "matches": 10,
+    "errors": 10,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2022,
+    "ageGroupId": "3",
+    "leagueGroupId": "15538",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "DMU H - U11 3000 4 spillere Pulje 1",
+    "matches": 3,
+    "errors": 3,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2022,
+    "ageGroupId": "3",
+    "leagueGroupId": "15579",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "DMU H - U11 3000 4 spillere Placeringskampe (9. - 12. plads)",
+    "matches": 2,
+    "errors": 2,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2022,
+    "ageGroupId": "3",
+    "leagueGroupId": "14987",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "U11 3200 4 Spillere Pulje 1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2022,
+    "ageGroupId": "3",
+    "leagueGroupId": "14985",
+    "teamName": "Gladsaxe Søborg 4",
+    "league": "U11 3000 4 Spillere Pulje 1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2022,
+    "ageGroupId": "3",
+    "leagueGroupId": "14986",
+    "teamName": "Gladsaxe Søborg 5",
+    "league": "U11 3000 4 Spillere Pulje 2",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2022,
+    "ageGroupId": "4",
+    "leagueGroupId": "14996",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "U13 4400 4 Spillere Pulje 2",
+    "matches": 10,
+    "errors": 10,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2022,
+    "ageGroupId": "4",
+    "leagueGroupId": "14992",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U13 3400 4 Spillere Pulje 2",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2022,
+    "ageGroupId": "4",
+    "leagueGroupId": "15698",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "DMU H - U13 3400 4 spillere Pulje 1",
+    "matches": 2,
+    "errors": 2,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2022,
+    "ageGroupId": "4",
+    "leagueGroupId": "15710",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "DMU H - U13 3400 4 spillere Kvartfinale 5 (nr. 2 pulje 1 og 2)",
+    "matches": 1,
+    "errors": 1,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2022,
+    "ageGroupId": "4",
+    "leagueGroupId": "15721",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "DMU H - U13 3400 4 spillere Placeringskamp (13. - 16. plads)",
+    "matches": 2,
+    "errors": 2,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2022,
+    "ageGroupId": "4",
+    "leagueGroupId": "14991",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "U13 3400 4 Spillere Pulje 1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2022,
+    "ageGroupId": "5",
+    "leagueGroupId": "15620",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU H - U15 6400 4 spillere Pulje 1",
+    "matches": 2,
+    "errors": 2,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2022,
+    "ageGroupId": "5",
+    "leagueGroupId": "15791",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU H - U15 6400 4 spillere Finale slutspil (1. - 4. plads)",
+    "matches": 2,
+    "errors": 2,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2022,
+    "ageGroupId": "5",
+    "leagueGroupId": "15003",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "U15 6400 4 Spillere Pulje 1",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2022,
+    "ageGroupId": "5",
+    "leagueGroupId": "15002",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U15 5600 4 Spillere Pulje 1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2022,
+    "ageGroupId": "5",
+    "leagueGroupId": "15001",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "U15 4800 4 Spillere Pulje 2",
+    "matches": 10,
+    "errors": 10,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2022,
+    "ageGroupId": "5",
+    "leagueGroupId": "14999",
+    "teamName": "Gladsaxe Søborg 4",
+    "league": "U15 4000 4 Spillere Pulje 2",
+    "matches": 4,
+    "errors": 4,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2022,
+    "ageGroupId": "5",
+    "leagueGroupId": "14997",
+    "teamName": "Gladsaxe Søborg 5",
+    "league": "U15 3400 4 Piger Pulje 1",
+    "matches": 10,
+    "errors": 10,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2022,
+    "ageGroupId": "18",
+    "leagueGroupId": "15662",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU H - U17/U19 5200 4 spillere Pulje 1",
+    "matches": 2,
+    "errors": 2,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2022,
+    "ageGroupId": "18",
+    "leagueGroupId": "15670",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU H - U17/U19 5200 4 spillere Finale slutspil (1. - 4. plads)",
+    "matches": 2,
+    "errors": 2,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2022,
+    "ageGroupId": "18",
+    "leagueGroupId": "15334",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "U17/U19 5200 4 Spillere pulje 1 - Ny Pulje 1",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2022,
+    "ageGroupId": "17",
+    "leagueGroupId": "14882",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "SEN+70 1.serie Pulje 1",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2021,
+    "ageGroupId": "2",
+    "leagueGroupId": "14556",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU H - U9 2700 - 4 spillere Pulje 1",
+    "matches": 4,
+    "errors": 4,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2021,
+    "ageGroupId": "2",
+    "leagueGroupId": "14558",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU H - U9 2700 - 4 spillere Finale",
+    "matches": 1,
+    "errors": 1,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2021,
+    "ageGroupId": "2",
+    "leagueGroupId": "14136",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "U09 2700 4 Spillere Pulje 1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2021,
+    "ageGroupId": "3",
+    "leagueGroupId": "14138",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "U11 3100 4 Spillere Pulje 1",
+    "matches": 8,
+    "errors": 8,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2021,
+    "ageGroupId": "3",
+    "leagueGroupId": "14139",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U11 3100 4 Spillere Pulje 2",
+    "matches": 8,
+    "errors": 8,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2021,
+    "ageGroupId": "3",
+    "leagueGroupId": "14140",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "U11 3100 4 Spillere Pulje 3",
+    "matches": 8,
+    "errors": 8,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2021,
+    "ageGroupId": "4",
+    "leagueGroupId": "14731",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU H - U13 5200 - 4 spillere Pulje 3",
+    "matches": 2,
+    "errors": 2,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2021,
+    "ageGroupId": "4",
+    "leagueGroupId": "14735",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU H - U13 5200 - 4 spillere Kvartfinale 3",
+    "matches": 1,
+    "errors": 1,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2021,
+    "ageGroupId": "4",
+    "leagueGroupId": "14737",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU H - U13 5200 - 4 spillere Finale slutspil 1. - 4. plads",
+    "matches": 2,
+    "errors": 2,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2021,
+    "ageGroupId": "4",
+    "leagueGroupId": "14147",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "U13 5200 4 Spillere Pulje 1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2021,
+    "ageGroupId": "4",
+    "leagueGroupId": "14143",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U13 3500 4 Spillere Pulje 3",
+    "matches": 9,
+    "errors": 9,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2021,
+    "ageGroupId": "4",
+    "leagueGroupId": "14142",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "U13 3500 4 Spillere Pulje 2",
+    "matches": 8,
+    "errors": 8,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2021,
+    "ageGroupId": "5",
+    "leagueGroupId": "14081",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "U15 7600 4 Spillere Pulje 1",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2021,
+    "ageGroupId": "5",
+    "leagueGroupId": "14157",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U15 4800 4 Spillere Pulje 1",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2021,
+    "ageGroupId": "5",
+    "leagueGroupId": "14155",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "U15 4300 4 Spillere Pulje 1",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2021,
+    "ageGroupId": "9",
+    "leagueGroupId": "13961",
+    "teamName": "Gladsaxe Søborg 4",
+    "league": "SEN+40 20. Serie Pulje 1",
+    "matches": 5,
+    "errors": 5,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2021,
+    "ageGroupId": "13",
+    "leagueGroupId": "13966",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "SEN+60 1. Serie Pulje 1",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2021,
+    "ageGroupId": "17",
+    "leagueGroupId": "13965",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "SEN+70 1. Serie P1 Pulje 1",
+    "matches": 4,
+    "errors": 4,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2020,
+    "ageGroupId": "2",
+    "leagueGroupId": "13487",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U09 2500 4 Spillere Pulje 1",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2020,
+    "ageGroupId": "3",
+    "leagueGroupId": "13484",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "U11 3000 4 Spillere Pulje 1",
+    "matches": 8,
+    "errors": 8,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2020,
+    "ageGroupId": "3",
+    "leagueGroupId": "13485",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U11 3000 4 Spillere Pulje 2",
+    "matches": 8,
+    "errors": 8,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2020,
+    "ageGroupId": "4",
+    "leagueGroupId": "13477",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "U13 3800 4 Spillere Pulje 1",
+    "matches": 9,
+    "errors": 9,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2020,
+    "ageGroupId": "4",
+    "leagueGroupId": "13480",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U13 3400 4 Spillere Pulje 2",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2020,
+    "ageGroupId": "5",
+    "leagueGroupId": "13470",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "U15 6400 4 Spillere Pulje 1",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2020,
+    "ageGroupId": "5",
+    "leagueGroupId": "13473",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U15 4200 4 Spillere P2 Pulje 2",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2020,
+    "ageGroupId": "9",
+    "leagueGroupId": "13299",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "40+ 2. Serie Pulje 1",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2020,
+    "ageGroupId": "9",
+    "leagueGroupId": "13293",
+    "teamName": "Gladsaxe Søborg 4",
+    "league": "40+ 20. Serie Pulje 1",
+    "matches": 5,
+    "errors": 5,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2020,
+    "ageGroupId": "17",
+    "leagueGroupId": "13302",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "70+ 1. Serie Pulje 1",
+    "matches": 4,
+    "errors": 4,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2019,
+    "ageGroupId": "3",
+    "leagueGroupId": "12798",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "U11 - 3400 - 4 spillere Pulje 1",
+    "matches": 5,
+    "errors": 5,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2019,
+    "ageGroupId": "4",
+    "leagueGroupId": "12792",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "U13 - 3800 - 4 spillere Pulje 1",
+    "matches": 5,
+    "errors": 5,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2019,
+    "ageGroupId": "5",
+    "leagueGroupId": "12784",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "U15 - 6200 - 4 spillere Pulje 1",
+    "matches": 10,
+    "errors": 10,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2019,
+    "ageGroupId": "17",
+    "leagueGroupId": "12597",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "70+ 1. Serie Pulje 1",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2018,
+    "ageGroupId": "3",
+    "leagueGroupId": "11279",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "U11 C 4 Spillere Pulje 1",
+    "matches": 10,
+    "errors": 10,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2018,
+    "ageGroupId": "3",
+    "leagueGroupId": "11401",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U11 D 4 Spillere P2 Pulje 2",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2018,
+    "ageGroupId": "4",
+    "leagueGroupId": "11418",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "U13 CD 4 Spillere Pulje 1",
+    "matches": 10,
+    "errors": 10,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2018,
+    "ageGroupId": "18",
+    "leagueGroupId": "11355",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "U17/19 M 4 Spillere Pulje 1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2018,
+    "ageGroupId": "18",
+    "leagueGroupId": "11771",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U17/U19 A 4 spillere Pulje 1",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2017,
+    "ageGroupId": "3",
+    "leagueGroupId": "9302",
+    "teamName": "Gladsaxe Søborg",
+    "league": "U11 D (4) P2 Pulje 2",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2017,
+    "ageGroupId": "4",
+    "leagueGroupId": "9291",
+    "teamName": "Gladsaxe Søborg",
+    "league": "U13 B (4) Pulje 1",
+    "matches": 5,
+    "errors": 5,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2017,
+    "ageGroupId": "4",
+    "leagueGroupId": "9296",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U13 C (4) Pulje 1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2017,
+    "ageGroupId": "5",
+    "leagueGroupId": "10543",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU-Hold U15 M 4 Spillere Pulje 1",
+    "matches": 3,
+    "errors": 3,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2017,
+    "ageGroupId": "5",
+    "leagueGroupId": "10548",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU-Hold U15 M 4 Spillere 7. - 8. plads",
+    "matches": 1,
+    "errors": 1,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2017,
+    "ageGroupId": "5",
+    "leagueGroupId": "9595",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "U15 M 4 spillere Pulje 1",
+    "matches": 9,
+    "errors": 9,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2017,
+    "ageGroupId": "5",
+    "leagueGroupId": "9290",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U15 B (4) Pulje 1",
+    "matches": 5,
+    "errors": 5,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2017,
+    "ageGroupId": "18",
+    "leagueGroupId": "9288",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U17/19 B (4) Pulje 1",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2016,
+    "ageGroupId": "3",
+    "leagueGroupId": "9137",
+    "teamName": "Gladsaxe Søborg",
+    "league": "Slutspil U11 D (4) Pulje 1",
+    "matches": 1,
+    "errors": 1,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2016,
+    "ageGroupId": "3",
+    "leagueGroupId": "7668",
+    "teamName": "Gladsaxe Søborg",
+    "league": "U11 D (4) P1 Pulje 1",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2016,
+    "ageGroupId": "3",
+    "leagueGroupId": "8987",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU-Hold U11 D 4 Spillere Pulje 1",
+    "matches": 3,
+    "errors": 3,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2016,
+    "ageGroupId": "3",
+    "leagueGroupId": "8997",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU-Hold U11 D 4 Spillere Finale 1. - 4. plads",
+    "matches": 2,
+    "errors": 2,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2016,
+    "ageGroupId": "4",
+    "leagueGroupId": "7692",
+    "teamName": "Gladsaxe Søborg",
+    "league": "U13 C (4) P2 Pulje 1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2016,
+    "ageGroupId": "5",
+    "leagueGroupId": "7679",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U15 B (4) Pulje 1",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2016,
+    "ageGroupId": "6",
+    "leagueGroupId": "7685",
+    "teamName": "Gladsaxe Søborg",
+    "league": "U17/U19 B (4) P2 Pulje 1",
+    "matches": 4,
+    "errors": 4,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2016,
+    "ageGroupId": "18",
+    "leagueGroupId": "8918",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU-Hold U17/19 B 4 Spillere Pulje 4",
+    "matches": 2,
+    "errors": 2,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2016,
+    "ageGroupId": "18",
+    "leagueGroupId": "9019",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "DMU-Hold U17/19 B 4 Spillere Finale 1. - 4. plads",
+    "matches": 2,
+    "errors": 2,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2016,
+    "ageGroupId": "1",
+    "leagueGroupId": "7643",
+    "teamName": "Gladsaxe Søborg 4",
+    "league": "4. Serie P2 Pulje 1",
+    "matches": 8,
+    "errors": 8,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2015,
+    "ageGroupId": "3",
+    "leagueGroupId": "6083",
+    "teamName": "Gladsaxe Søborg",
+    "league": "U11 B Række 4 Pulje 1",
+    "matches": 9,
+    "errors": 9,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2015,
+    "ageGroupId": "3",
+    "leagueGroupId": "6085",
+    "teamName": "Gladsaxe Søborg",
+    "league": "U11 D Række 4 Pulje 1",
+    "matches": 8,
+    "errors": 8,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2015,
+    "ageGroupId": "4",
+    "leagueGroupId": "6089",
+    "teamName": "Gladsaxe Søborg",
+    "league": "U13 B Række 4 Pulje 1",
+    "matches": 8,
+    "errors": 8,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2015,
+    "ageGroupId": "4",
+    "leagueGroupId": "6091",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U13 D Række 4 Pulje 1",
+    "matches": 8,
+    "errors": 8,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2015,
+    "ageGroupId": "6",
+    "leagueGroupId": "6099",
+    "teamName": "Gladsaxe Søborg",
+    "league": "U17 A Række 4+2 Pulje 1",
+    "matches": 9,
+    "errors": 9,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2014,
+    "ageGroupId": "3",
+    "leagueGroupId": "4253",
+    "teamName": "Gladsaxe Søborg",
+    "league": "U11 serie X1 (4 spillere C) Pulje 1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2014,
+    "ageGroupId": "3",
+    "leagueGroupId": "4254",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U11 serie X2 (4 spillere C) Pulje 1",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2014,
+    "ageGroupId": "4",
+    "leagueGroupId": "4260",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U13 serie X2 (4 spillere C) Pulje 1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2014,
+    "ageGroupId": "5",
+    "leagueGroupId": "4262",
+    "teamName": "Gladsaxe Søborg",
+    "league": "U15 2.serie (4+2 M) Pulje 1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2014,
+    "ageGroupId": "5",
+    "leagueGroupId": "4264",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U15 serie X1 (4 spillere C) Pulje 1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2014,
+    "ageGroupId": "6",
+    "leagueGroupId": "4266",
+    "teamName": "Gladsaxe Søborg",
+    "league": "U17 2.serie (4+2 M) Pulje 1",
+    "matches": 10,
+    "errors": 10,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2014,
+    "ageGroupId": "6",
+    "leagueGroupId": "4267",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U17 serie X1 (4 spillere C) Pulje 1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2013,
+    "ageGroupId": "3",
+    "leagueGroupId": "2644",
+    "teamName": "Gladsaxe Søborg",
+    "league": "U11 3. Serie Pulje 1",
+    "matches": 8,
+    "errors": 8,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2013,
+    "ageGroupId": "3",
+    "leagueGroupId": "2645",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U11 Serie X1 Pulje 1",
+    "matches": 5,
+    "errors": 5,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2013,
+    "ageGroupId": "5",
+    "leagueGroupId": "2686",
+    "teamName": "Gladsaxe Søborg",
+    "league": "U15 2. serie Pulje 1",
+    "matches": 9,
+    "errors": 9,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2013,
+    "ageGroupId": "5",
+    "leagueGroupId": "2688",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U15 Serie X1 Pulje 1",
+    "matches": 5,
+    "errors": 5,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2013,
+    "ageGroupId": "5",
+    "leagueGroupId": "2690",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "U15 Serie X3 Pulje 1",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2013,
+    "ageGroupId": "6",
+    "leagueGroupId": "2692",
+    "teamName": "Gladsaxe Søborg",
+    "league": "U17 2. serie Pulje 1",
+    "matches": 4,
+    "errors": 4,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2013,
+    "ageGroupId": "6",
+    "leagueGroupId": "2693",
+    "teamName": "Gladsaxe Søborg",
+    "league": "U17 Serie X1 Pulje 1",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2012,
+    "ageGroupId": "3",
+    "leagueGroupId": "1311",
+    "teamName": "Gladsaxe Søborg",
+    "league": "U11 3. Serie U11 3. Serie",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2012,
+    "ageGroupId": "4",
+    "leagueGroupId": "1318",
+    "teamName": "Gladsaxe Søborg",
+    "league": "U13 3. Serie U13 3. Serie",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2012,
+    "ageGroupId": "4",
+    "leagueGroupId": "1322",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U13 Serie X1 U13 Serie X1",
+    "matches": 9,
+    "errors": 9,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2012,
+    "ageGroupId": "5",
+    "leagueGroupId": "1326",
+    "teamName": "Gladsaxe Søborg",
+    "league": "U15 3. Serie U15 3. Serie",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2012,
+    "ageGroupId": "5",
+    "leagueGroupId": "1327",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U15 Serie X1 U15 Serie X1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2012,
+    "ageGroupId": "5",
+    "leagueGroupId": "1321",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "U15 Serie X2 U15 Serie X2",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2012,
+    "ageGroupId": "6",
+    "leagueGroupId": "1329",
+    "teamName": "Gladsaxe Søborg",
+    "league": "U17 2. Serie U17 2. Serie",
+    "matches": 8,
+    "errors": 8,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2011,
+    "ageGroupId": "3",
+    "leagueGroupId": "97",
+    "teamName": "Gladsaxe Søborg",
+    "league": "U11 2. Serie U11 2. Serie",
+    "matches": 8,
+    "errors": 8,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2011,
+    "ageGroupId": "3",
+    "leagueGroupId": "98",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U11 3. Serie U11 3. Serie",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2011,
+    "ageGroupId": "3",
+    "leagueGroupId": "99",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "U11 Serie X1 U11 Serie X1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2011,
+    "ageGroupId": "3",
+    "leagueGroupId": "100",
+    "teamName": "Gladsaxe Søborg 4",
+    "league": "U11 Serie X2 U11 Serie X2",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2011,
+    "ageGroupId": "4",
+    "leagueGroupId": "101",
+    "teamName": "Gladsaxe Søborg",
+    "league": "U13 2. Serie U13 2. erie",
+    "matches": 9,
+    "errors": 9,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2011,
+    "ageGroupId": "4",
+    "leagueGroupId": "102",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U13 3. Serie U13 3. Serie",
+    "matches": 8,
+    "errors": 8,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2011,
+    "ageGroupId": "4",
+    "leagueGroupId": "103",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "U13 Serie X1 U13 Serie X1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2011,
+    "ageGroupId": "4",
+    "leagueGroupId": "104",
+    "teamName": "Gladsaxe Søborg 4",
+    "league": "U13 Serie X2 U13 Serie X2",
+    "matches": 8,
+    "errors": 8,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2011,
+    "ageGroupId": "5",
+    "leagueGroupId": "106",
+    "teamName": "Gladsaxe Søborg",
+    "league": "U15 3. Serie U15 3. Serie",
+    "matches": 8,
+    "errors": 8,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2011,
+    "ageGroupId": "5",
+    "leagueGroupId": "107",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "U15 Serie X1 U15 Serie X1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2011,
+    "ageGroupId": "5",
+    "leagueGroupId": "108",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "U15 Serie X2 U15 Serie X2",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2011,
+    "ageGroupId": "6",
+    "leagueGroupId": "110",
+    "teamName": "Gladsaxe Søborg",
+    "league": "U17 2. Serie U17 2. Serie",
+    "matches": 8,
+    "errors": 8,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2011,
+    "ageGroupId": "1",
+    "leagueGroupId": "58",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "1. Serie Pulje 1 1. Serie Pulje 1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2011,
+    "ageGroupId": "1",
+    "leagueGroupId": "60",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "2. Serie Pulje 1 2. Serie Pulje 1",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2011,
+    "ageGroupId": "9",
+    "leagueGroupId": "74",
+    "teamName": "Gladsaxe Søborg",
+    "league": "2. Serie Veteran 2. Serie Veteran",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2011,
+    "ageGroupId": "9",
+    "leagueGroupId": "77",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "3. Serie Veteran 3. Serie Veteran",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2011,
+    "ageGroupId": "9",
+    "leagueGroupId": "79",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "5. Serie Veteran 5. Serie Veteran",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2011,
+    "ageGroupId": "9",
+    "leagueGroupId": "82",
+    "teamName": "Gladsaxe Søborg 4",
+    "league": "8. Serie Veteran 8. Serie Veteran",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2011,
+    "ageGroupId": "11",
+    "leagueGroupId": "87",
+    "teamName": "Gladsaxe Søborg",
+    "league": "50+ 1. Serie 50+ 1. Serie",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2011,
+    "ageGroupId": "11",
+    "leagueGroupId": "88",
+    "teamName": "Gladsaxe Søborg 2",
+    "league": "50+ 2. Serie 50+ 2. Serie",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2011,
+    "ageGroupId": "11",
+    "leagueGroupId": "91",
+    "teamName": "Gladsaxe Søborg 3",
+    "league": "50+ 5. Serie 50+ 5. Serie",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2011,
+    "ageGroupId": "13",
+    "leagueGroupId": "86",
+    "teamName": "Gladsaxe Søborg",
+    "league": "60+ 2. Serie 60+ 2. Serie",
+    "matches": 6,
+    "errors": 6,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2010,
+    "ageGroupId": "1",
+    "leagueGroupId": "417",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "Kvalifikation til 3.division B Øst",
+    "matches": 4,
+    "errors": 4,
+    "errorRate": 100.0
+  },
+  {
+    "season": 2010,
+    "ageGroupId": "1",
+    "leagueGroupId": "431",
+    "teamName": "Gladsaxe Søborg 1",
+    "league": "Danmarksserien Øst pulje 4",
+    "matches": 7,
+    "errors": 7,
+    "errorRate": 100.0
+  }
+]
