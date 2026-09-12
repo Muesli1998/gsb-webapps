@@ -133,3 +133,9 @@ Alle agenter skrev kun til afgrænsede testområder. `netlify-tool-prod` blev ik
 ## Prioriteringsbeslutning: U15 og yngre udskudt
 
 U9–U15-fallbackberigelse er midlertidigt udskudt. Rådata og fejlregistreringer bevares, men den aktive fallback-kø prioriterer senior- og veterangrupper. Køstatus `deferred_youth_u15` betyder udskudt efter denne beslutning, ikke at data mangler.
+
+## 2026-09-12: screening for mulige tilbagetrækninger
+- Tilføjet results/withdrawal-candidate-report.md.
+- 0-point-rækker screenes som kandidater, aldrig som bekræftede trækninger.
+- Nuværende browser-standing-filer gav ingen GSB-kandidat; stillingsdækningen er ufuldstændig.
+
