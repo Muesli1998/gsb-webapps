@@ -97,3 +97,78 @@ Efter testene udarbejdes en kort rapport med:
 
 Ingen regelsætkatalog, Google Sheets-model eller ændring af
 `netlify-tool-prod` indgår i denne testplan.
+
+## Langvarig genoptagelig test
+
+Den store test skal kunne afbrydes og fortsætte fra seneste checkpoint.
+
+### Testområder
+
+1. GSB (`clubId 1093`) for sæsoner fra 2025 bagud til første tomme historiske
+   område.
+2. Bekræftelse af cutoff med ekstra år efter sidste reelle data.
+3. Flere `leagueGroupId`-grupper for samme hold og sæson.
+4. Sammenligning af individuelle kald og bulk-kald.
+5. Kampdeduplicering på `matchId`.
+6. Kampdetaljer for et repræsentativt udvalg: senior, ungdom, veteran,
+   playoff, doubles og walkover hvis de findes.
+7. Forsigtigt udvalg af andre kendte BadmintonPlayer `clubId`’er, hvis en
+   pålidelig klub-ID-kilde kan etableres.
+8. Klub-, kalender-, rangliste- og medlemskald, der virker uden login.
+
+### Checkpoint-model
+
+Testen gemmer løbende filer i `results/`:
+
+```text
+results/
+  run-<id>.json                 samlet status og resume
+  seasons-<id>.jsonl            én sæsonpost pr. linje
+  groups-<id>.jsonl             én gruppepost pr. linje
+  matches-<id>.jsonl            én unik matchpost pr. linje
+  errors-<id>.jsonl             fejl og advarsler
+  probes-<id>.jsonl             schema- og felt-tests
+```
+
+`run-<id>.json` skal mindst indeholde:
+
+```json
+{
+  "runId": "...",
+  "startedAt": "...",
+  "updatedAt": "...",
+  "status": "running|paused|complete|failed",
+  "nextTask": "...",
+  "completedTasks": 0,
+  "totalTasks": 0,
+  "apiVersionUnknown": true
+}
+```
+
+Hver resultatlinje skal indeholde input, tidspunkt, status, kort responsresume
+og eventuel fejl. Store rå API-svar gemmes kun, hvis de er nødvendige for at
+forklare en fejl; ellers gemmes et normaliseret resume for at holde repository
+og usage nede.
+
+### Genoptagelse og sikkerhed
+
+- En opgave markeres først som færdig efter et gyldigt svar er gemt.
+- En fejl gemmes med forsøg nummer og fortsætter til næste opgave.
+- Retry bruges kun ved timeout, HTTP-fejl eller midlertidig GraphQL-fejl.
+- Der bruges begrænset parallelitet og en kort pause mellem batches.
+- Samme `matchId` gemmes én gang i den samlede resultatvisning, men alle
+  kilder/grupper registreres som referencer.
+- Testen må aldrig skrive til Google Sheets eller bruge hemmelige nøgler.
+- Resultaterne commit’es først efter en afsluttet eller bevidst pauset kørsel,
+  så en afbrudt test ikke efterlader et uklart Git-punkt.
+
+### Godkendelsespunkt før kørsel
+
+Før første store kørsel skal Chris godkende:
+
+1. sæsonintervallet
+2. om andre klubber skal med i første kørsel
+3. om normaliserede svar er nok, eller om udvalgte rå svar skal gemmes
+4. maksimal køretid og forsigtig parallelitet
+
+Indtil denne godkendelse er testen kun planlagt.
