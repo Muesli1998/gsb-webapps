@@ -1,0 +1,8 @@
+"season","leagueGroupId","team","matchId","teams","detailStatus","error"
+"2024","17849","Gladsaxe Søborg","484777","Badminton Esbjerg | Kolding BK | Gladsaxe Søborg","error","Internal server error"
+"2020","13328","Gladsaxe Søborg 1","388606","Solrød Strand 1 | BC37/Gladsaxe Søborg 1 | Solrød Strand","ok",
+"2020","13328","Gladsaxe Søborg 1","388609","BC37/Gladsaxe Søborg 1 | Skovshoved 1 | Solrød Strand","ok",
+"2020","13328","Gladsaxe Søborg 1","402365","BC37/Gladsaxe Søborg 1 | Solrød Strand 1 | Lyngby","error","Could not find any players on match"
+"2020","13328","Gladsaxe Søborg 1","402367","BC37/Gladsaxe Søborg 1 | Lyngby 1 | Lyngby","ok",
+"2020","13328","Gladsaxe Søborg 1","388870","Lyngby 1 | BC37/Gladsaxe Søborg 1 | Skovshoved","error","Could not find any players on match"
+"2020","13328","Gladsaxe Søborg 1","388873","Skovshoved 1 | BC37/Gladsaxe Søborg 1 | Skovshoved","error","Could not find any players on match"
