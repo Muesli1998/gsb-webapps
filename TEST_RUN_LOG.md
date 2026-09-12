@@ -139,3 +139,14 @@ U9–U15-fallbackberigelse er midlertidigt udskudt. Rådata og fejlregistreringe
 - 0-point-rækker screenes som kandidater, aldrig som bekræftede trækninger.
 - Nuværende browser-standing-filer gav ingen GSB-kandidat; stillingsdækningen er ufuldstændig.
 
+
+## 2026-09-12: hentning og parsing af officielle stillinger
+
+- Kilde: BadmintonPlayer Holdturnering/Stilling via lokal Playwright-browser.
+- For hver unik sæson + leagueGroupId blev siden åbnet med URL-formatet `#2,{season},{leagueGroupId},1,,,,1093,`.
+- Browseren ventede på dynamisk rendering og gemte både sidens fulde synlige tekst (`rawText`) og alle HTML-tabeller (`tables`).
+- Der blev gemt én JSON-fil pr. pulje i `results/browser-standings/` med sæson, pulje-ID, kilde-URL, hentetidspunkt og status.
+- Stillingskolonnerne er bevaret råt: placering, hold, kampe, vundne, score, sæt og point.
+- Den efterfølgende analyse udtrækker GSB-rækker og beregner kandidater. Afledte flag må ikke erstatte rå kildedata.
+- 97/97 puljer blev hentet uden browserfejl.
+- Ved screening blev 0 point først behandlet som en kandidatindikator. Efter kontrol blev heuristikken korrigeret: score og sætscore skal vurderes, og eksplicit tekst som `trukket` eller `udgået` er stærkere evidens.
