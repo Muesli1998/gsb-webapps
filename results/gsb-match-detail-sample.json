@@ -1,0 +1,477 @@
+{
+  "sampleSize": 32,
+  "results": [
+    {
+      "season": 2025,
+      "matchId": 485648,
+      "source": {
+        "league": "Danmarksserien Pulje 7",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2025-09-06"
+      },
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "Valby BC",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2025,
+      "matchId": 485652,
+      "source": {
+        "league": "Danmarksserien Pulje 7",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2025-09-20"
+      },
+      "status": "ok",
+      "home": "Måløv",
+      "guest": "Gladsaxe Søborg",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2024,
+      "matchId": 482619,
+      "source": {
+        "league": "Danmarksserien Kvalifikation til 3. division pulje D",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2025-02-01"
+      },
+      "status": "ok",
+      "home": "Kirke Hyllinge-Skibby",
+      "guest": "Gladsaxe Søborg",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2024,
+      "matchId": 482624,
+      "source": {
+        "league": "Danmarksserien Kvalifikation til 3. division pulje D",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2025-02-22"
+      },
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "Drive 3",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2023,
+      "matchId": 444585,
+      "source": {
+        "league": "Danmarksserien Pulje 7",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2023-09-09"
+      },
+      "status": "ok",
+      "home": "BC37 Amager",
+      "guest": "Gladsaxe Søborg",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2023,
+      "matchId": 444591,
+      "source": {
+        "league": "Danmarksserien Pulje 7",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2023-09-23"
+      },
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "KMB2010 3",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2022,
+      "matchId": 425504,
+      "source": {
+        "league": "Danmarksserien Pulje 6",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2022-09-10"
+      },
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "KBK Kbh. 3",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2022,
+      "matchId": 425508,
+      "source": {
+        "league": "Danmarksserien Pulje 6",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2022-09-24"
+      },
+      "status": "ok",
+      "home": "Greve 4",
+      "guest": "Gladsaxe Søborg",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2021,
+      "matchId": 406110,
+      "source": {
+        "league": "Danmarksserien Pulje 5",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2021-09-11"
+      },
+      "status": "ok",
+      "home": "Vanløse",
+      "guest": "Gladsaxe Søborg",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2021,
+      "matchId": 406112,
+      "source": {
+        "league": "Danmarksserien Pulje 5",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2021-09-25"
+      },
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "Nivå-Kokkedal",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2020,
+      "matchId": 385765,
+      "source": {
+        "league": "Danmarksserien Pulje 5",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2020-09-05"
+      },
+      "status": "ok",
+      "home": "Vanløse",
+      "guest": "Gladsaxe Søborg",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2020,
+      "matchId": 385767,
+      "source": {
+        "league": "Danmarksserien Pulje 5",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2020-09-19"
+      },
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "Nivå-Kokkedal",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2019,
+      "matchId": 365989,
+      "source": {
+        "league": "Danmarksserien Pulje 8",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2019-09-07"
+      },
+      "status": "ok",
+      "home": "Solrød Strand 5",
+      "guest": "Gladsaxe Søborg",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2019,
+      "matchId": 365995,
+      "source": {
+        "league": "Danmarksserien Pulje 8",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2019-09-21"
+      },
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "Vanløse",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2018,
+      "matchId": 322653,
+      "source": {
+        "league": "Danmarksserien Øst pulje 4",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2018-09-08"
+      },
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "Hvidovre 2",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2018,
+      "matchId": 322657,
+      "source": {
+        "league": "Danmarksserien Øst pulje 4",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2018-09-22"
+      },
+      "status": "ok",
+      "home": "Hillerød 2",
+      "guest": "Gladsaxe Søborg",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2017,
+      "matchId": 320284,
+      "source": {
+        "league": "Kvalifikation til 3. division (runde 12) Kvalifikationsevent kamp 5",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2018-04-21 14:30:00"
+      },
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "Holte 2",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2017,
+      "matchId": 288594,
+      "source": {
+        "league": "Danmarksserien Øst pulje 1",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2017-09-09"
+      },
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "Solrød Strand 5",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2016,
+      "matchId": 237253,
+      "source": {
+        "league": "Danmarksserien Øst pulje 2",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2016-09-10"
+      },
+      "status": "ok",
+      "home": "KMB2010 3",
+      "guest": "Gladsaxe Søborg",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2016,
+      "matchId": 237259,
+      "source": {
+        "league": "Danmarksserien Øst pulje 2",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2016-09-24"
+      },
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "KBK Kbh. 2",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2015,
+      "matchId": 230613,
+      "source": {
+        "league": "Kvalifikation til 3. division Pulje B Øst",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2016-01-16"
+      },
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "Herlev Badminton",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2015,
+      "matchId": 230615,
+      "source": {
+        "league": "Kvalifikation til 3. division Pulje B Øst",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2016-02-27"
+      },
+      "status": "ok",
+      "home": "Holte 2",
+      "guest": "Gladsaxe Søborg",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2014,
+      "matchId": 188627,
+      "source": {
+        "league": "Kvalifikation til 3. division Pulje A øst",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2015-02-01"
+      },
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "Herlev Badminton",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2014,
+      "matchId": 188633,
+      "source": {
+        "league": "Kvalifikation til 3. division Pulje A øst",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2015-02-22"
+      },
+      "status": "ok",
+      "home": "Brøndby Strand",
+      "guest": "Gladsaxe Søborg",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2013,
+      "matchId": 135908,
+      "source": {
+        "league": "Kvalifikation til 3. division Pulje B øst",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2014-02-02"
+      },
+      "status": "ok",
+      "home": "Køge-Strøby",
+      "guest": "Gladsaxe Søborg",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2013,
+      "matchId": 135913,
+      "source": {
+        "league": "Kvalifikation til 3. division Pulje B øst",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2014-02-23"
+      },
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "Slagelse",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2012,
+      "matchId": 89979,
+      "source": {
+        "league": "Kvalifikation til 3. division Pulje B øst",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2013-02-03"
+      },
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "Drive 2",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2012,
+      "matchId": 89981,
+      "source": {
+        "league": "Kvalifikation til 3. division Pulje B øst",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2013-02-24"
+      },
+      "status": "ok",
+      "home": "Hørsholm",
+      "guest": "Gladsaxe Søborg",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2011,
+      "matchId": 46330,
+      "source": {
+        "league": "Nedrykning fra Danmarksserien Pulje 3",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2012-02-12"
+      },
+      "status": "ok",
+      "home": "Slagelse",
+      "guest": "Gladsaxe Søborg",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2011,
+      "matchId": 46333,
+      "source": {
+        "league": "Nedrykning fra Danmarksserien Pulje 3",
+        "teamName": "Gladsaxe Søborg",
+        "roundDate": "2012-02-26"
+      },
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "Ishøj SB 50",
+      "categories": [],
+      "hasPlayers": false,
+      "hasScores": false
+    },
+    {
+      "season": 2010,
+      "matchId": 23219,
+      "source": {
+        "league": "Kvalifikation til 3.division B Øst",
+        "teamName": "Gladsaxe Søborg 1",
+        "roundDate": "2010-09-26"
+      },
+      "status": "error",
+      "error": "Internal server error"
+    },
+    {
+      "season": 2010,
+      "matchId": 23222,
+      "source": {
+        "league": "Kvalifikation til 3.division B Øst",
+        "teamName": "Gladsaxe Søborg 1",
+        "roundDate": "2010-10-10"
+      },
+      "status": "error",
+      "error": "Internal server error"
+    }
+  ]
+}
