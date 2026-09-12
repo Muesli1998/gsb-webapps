@@ -2930,8 +2930,12 @@
       "leagueGroupId": "18154",
       "roundDate": "2025-10-05",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18154,1,8,,494334,1093,",
-      "status": "pending",
-      "resultFile": "results/browser-fallback/2025-494334.json"
+      "status": "verified",
+      "resultFile": "results/browser-fallback/2025-494334.json",
+      "verifiedAt": "2026-09-12T16:37:17.668Z",
+      "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+      "resultSource": "browser_accessibility_tree",
+      "walkoverObserved": false
     },
     {
       "key": "2025:494335",
@@ -2943,8 +2947,12 @@
       "leagueGroupId": "18154",
       "roundDate": "2025-10-05",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18154,1,8,,494335,1093,",
-      "status": "pending",
-      "resultFile": "results/browser-fallback/2025-494335.json"
+      "status": "verified",
+      "resultFile": "results/browser-fallback/2025-494335.json",
+      "verifiedAt": "2026-09-12T16:37:17.669Z",
+      "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+      "resultSource": "browser_accessibility_tree",
+      "walkoverObserved": false
     },
     {
       "key": "2025:494336",
@@ -2956,8 +2964,12 @@
       "leagueGroupId": "18154",
       "roundDate": "2025-10-26",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18154,1,8,,494336,1093,",
-      "status": "pending",
-      "resultFile": "results/browser-fallback/2025-494336.json"
+      "status": "verified",
+      "resultFile": "results/browser-fallback/2025-494336.json",
+      "verifiedAt": "2026-09-12T16:37:17.669Z",
+      "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+      "resultSource": "browser_accessibility_tree",
+      "walkoverObserved": false
     },
     {
       "key": "2025:494337",
@@ -2969,8 +2981,12 @@
       "leagueGroupId": "18154",
       "roundDate": "2025-10-26",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18154,1,8,,494337,1093,",
-      "status": "pending",
-      "resultFile": "results/browser-fallback/2025-494337.json"
+      "status": "verified",
+      "resultFile": "results/browser-fallback/2025-494337.json",
+      "verifiedAt": "2026-09-12T16:37:17.669Z",
+      "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+      "resultSource": "browser_accessibility_tree",
+      "walkoverObserved": false
     },
     {
       "key": "2025:494347",
@@ -2982,8 +2998,12 @@
       "leagueGroupId": "18154",
       "roundDate": "2026-02-22",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18154,1,8,,494347,1093,",
-      "status": "pending",
-      "resultFile": "results/browser-fallback/2025-494347.json"
+      "status": "verified",
+      "resultFile": "results/browser-fallback/2025-494347.json",
+      "verifiedAt": "2026-09-12T16:37:17.669Z",
+      "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+      "resultSource": "browser_accessibility_tree",
+      "walkoverObserved": false
     },
     {
       "key": "2025:494348",
@@ -2995,8 +3015,12 @@
       "leagueGroupId": "18154",
       "roundDate": "2026-02-22",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18154,1,8,,494348,1093,",
-      "status": "pending",
-      "resultFile": "results/browser-fallback/2025-494348.json"
+      "status": "verified",
+      "resultFile": "results/browser-fallback/2025-494348.json",
+      "verifiedAt": "2026-09-12T16:37:17.669Z",
+      "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+      "resultSource": "browser_accessibility_tree",
+      "walkoverObserved": false
     },
     {
       "key": "2025:492129",
@@ -3008,8 +3032,12 @@
       "leagueGroupId": "18122",
       "roundDate": "2025-10-26",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18122,1,8,,492129,1093,",
-      "status": "pending",
-      "resultFile": "results/browser-fallback/2025-492129.json"
+      "status": "verified",
+      "resultFile": "results/browser-fallback/2025-492129.json",
+      "verifiedAt": "2026-09-12T16:37:17.669Z",
+      "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+      "resultSource": "browser_accessibility_tree",
+      "walkoverObserved": true
     },
     {
       "key": "2025:492293",
@@ -3021,8 +3049,12 @@
       "leagueGroupId": "18122",
       "roundDate": "2025-10-26",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18122,1,8,,492293,1093,",
-      "status": "pending",
-      "resultFile": "results/browser-fallback/2025-492293.json"
+      "status": "verified",
+      "resultFile": "results/browser-fallback/2025-492293.json",
+      "verifiedAt": "2026-09-12T16:37:17.669Z",
+      "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+      "resultSource": "browser_accessibility_tree",
+      "walkoverObserved": false
     },
     {
       "key": "2025:492136",
@@ -3034,8 +3066,12 @@
       "leagueGroupId": "18122",
       "roundDate": "2025-11-16",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18122,1,8,,492136,1093,",
-      "status": "pending",
-      "resultFile": "results/browser-fallback/2025-492136.json"
+      "status": "verified",
+      "resultFile": "results/browser-fallback/2025-492136.json",
+      "verifiedAt": "2026-09-12T16:37:17.669Z",
+      "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+      "resultSource": "browser_accessibility_tree",
+      "walkoverObserved": true
     },
     {
       "key": "2025:492138",
@@ -3047,8 +3083,12 @@
       "leagueGroupId": "18122",
       "roundDate": "2025-11-16",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18122,1,8,,492138,1093,",
-      "status": "pending",
-      "resultFile": "results/browser-fallback/2025-492138.json"
+      "status": "verified",
+      "resultFile": "results/browser-fallback/2025-492138.json",
+      "verifiedAt": "2026-09-12T16:37:17.669Z",
+      "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+      "resultSource": "browser_accessibility_tree",
+      "walkoverObserved": true
     },
     {
       "key": "2025:492297",
