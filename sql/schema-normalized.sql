@@ -117,3 +117,6 @@ CREATE INDEX IF NOT EXISTS idx_team_matches_gsb_team ON team_matches(gsb_team_id
 CREATE INDEX IF NOT EXISTS idx_individual_matches_team ON individual_matches(team_match_id);
 CREATE INDEX IF NOT EXISTS idx_match_players_player ON individual_match_players(player_id);
 CREATE INDEX IF NOT EXISTS idx_standings_competition ON standings(competition_id);
+
+-- Added after initial import: explicit winner for verified walkovers
+-- team_matches.walkover_winner_raw is added by scripts/add-walkover-winner.mjs
