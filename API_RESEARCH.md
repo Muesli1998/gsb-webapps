@@ -55,3 +55,19 @@ medlems-, runde- og logkald forventes at have samme begrænsning.
 - API'et er uofficielt og reverse-engineered.
 - `roundDate` og `gameTime` kan være forskellige i ældre data; begge skal
   bevares i en fremtidig discovery-rapport.
+
+## Seneste read-only tests
+
+- `clubhouseStats(331)` returnerede 496 spillere: 149 kvinder og 347 mænd.
+  `rankingProgression` var `null` i dette svar.
+- `calendarEvents([1093])` returnerede 53 kommende events med start/slut,
+  titel, tekst og matchId. De viste både seniorhold og holdnumre, men dette er
+  en kommende-kampe-kilde, ikke en historisk kilde.
+- `highestPointGain(331, HS, 3, DESC, [SEN])` returnerede spiller-ID,
+  navn og pointudvikling uden login.
+- `badmintonPlayerTeamsBulk` virker med flere sæsoner i samme kald.
+- `badmintonPlayerTeamFightsBulk` virker med flere gruppeinput i samme kald.
+- `badmintonPlayerApiTeamMatches({ clubId: 1093 })` svarede korrekt, men med
+  tom liste i den testede forespørgsel.
+- `teamMatchesFormattedForValidation` gav `Internal server error` med første
+  testede input og kræver en separat undersøgelse af inputformat/version.
