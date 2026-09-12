@@ -406,3 +406,7 @@ Terra vurderer, at de alternative ASMX-metoder (`GetRankingListPlayersSenior` og
 Anbefalet vej er browserens offentlige ranglisteside med hash-parametre, eksempelvis kategori 288 og sæson 2025. UI’en har historiske versioner (Terra observerede 159 datoer i 2025/26). En fremtidig beriger skal åbne ranglistesiden, vælge seneste version <= kampdato, læse tabellen og gemme HTML/screenshot samt valgt version som provenance. Det er ikke endnu bevist, at versionen kan sættes sikkert direkte via URL eller rå request.
 
 Dette researchspor er en fremtidig enrichment og ikke en kritisk afhængighed for holdkampdatabasen.
+
+## Fallback-berigelse af API-fejl
+
+`results/gsb-api-error-fallback-index.json` indeholder 1.444 fejlende kampopslag med direkte BadmintonPlayer-URL’er. `scripts/prepare-browser-fallback-queue.mjs` opretter den genoptagelige kø `results/browser-fallback-queue.json`. Hver køpost har sæson, kamp-ID, aldersgruppe, gruppe, hjemme/udehold, modstander og URL samt et separat målfilnavn. Queue-status ændres først til `verified`, `not_found` eller `browser_error`, når den dynamiske BadmintonPlayer-visning faktisk er læst; URL-generering alene tæller ikke som hentet kampdata.
