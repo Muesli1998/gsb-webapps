@@ -373,6 +373,19 @@ stillingsdata, men ikke kan bruges uden login i den nuværende test. Råsvaret
 er gemt i `results/team-rounds-probe.json`. Næste valg er enten en test i
 brugerens aktive session eller fortsat fallback via BadmintonPlayer.
 
+### BadmintonPlayer-stilling: autentificeret test
+
+Den aktive browser-session var autentificeret og kunne søge på `Gladsaxe
+Søborg`. Gruppe-linket brugte
+`ShowStanding('2', '2026', '18861', '1', '', '', '', '1093', '')` og åbnede
+Danmarksserien Pulje 8. Tabellen viste position, hold, kampe, sejre, score,
+sæt, point og sætpoin​t. Resultatet er gemt i
+`results/browser-standing-2026-18861.json`.
+
+Det bekræfter, at slutstillinger kan hentes via BadmintonPlayer-browseren med
+gruppe-ID, sæson, aldersgruppe og klub-ID. Det er en verificeret fallback-
+kilde; automatiseret råkald/HTML-parser er næste tekniske trin.
+
 ## Terra-review: alternativ ranglistevej
 
 Terra vurderer, at de alternative ASMX-metoder (`GetRankingListPlayersSenior` og `GetRankingListPlayersHide`) ikke løser problemet med kendte parametre; gentagne kald og parameter-grid gav HTTP 500. Den nye SPA-endpoint `/api/RangkingListVersion` er ikke offentlig (401).

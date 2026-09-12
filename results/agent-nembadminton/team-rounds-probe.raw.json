@@ -1,0 +1,250 @@
+{
+  "querySurface": [
+    {
+      "name": "teamRound",
+      "args": [
+        {
+          "name": "id",
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "ID"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "teamRoundReceiver",
+      "args": [
+        {
+          "name": "teamRoundId",
+          "type": {
+            "kind": "SCALAR",
+            "name": "ID",
+            "ofType": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "teamRounds",
+      "args": [
+        {
+          "name": "clubhouseId",
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "ID"
+            }
+          }
+        },
+        {
+          "name": "order",
+          "type": {
+            "kind": "LIST",
+            "name": null,
+            "ofType": {
+              "kind": "NON_NULL",
+              "name": null
+            }
+          }
+        },
+        {
+          "name": "gameDate",
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "DateRange",
+            "ofType": null
+          }
+        },
+        {
+          "name": "first",
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "Int"
+            }
+          }
+        },
+        {
+          "name": "page",
+          "type": {
+            "kind": "SCALAR",
+            "name": "Int",
+            "ofType": null
+          }
+        }
+      ]
+    }
+  ],
+  "typeProbe": {
+    "typeName": "TeamRound",
+    "http": 200,
+    "body": {
+      "data": {
+        "__type": {
+          "name": "TeamRound",
+          "fields": [
+            {
+              "name": "id",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "ID"
+                }
+              }
+            },
+            {
+              "name": "squads",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "name",
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              }
+            },
+            {
+              "name": "version",
+              "type": {
+                "kind": "SCALAR",
+                "name": "Date",
+                "ofType": null
+              }
+            },
+            {
+              "name": "round",
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              }
+            },
+            {
+              "name": "gameDate",
+              "type": {
+                "kind": "SCALAR",
+                "name": "Date",
+                "ofType": null
+              }
+            },
+            {
+              "name": "season",
+              "type": {
+                "kind": "OBJECT",
+                "name": "Season",
+                "ofType": null
+              }
+            },
+            {
+              "name": "updatedAt",
+              "type": {
+                "kind": "SCALAR",
+                "name": "DateTime",
+                "ofType": null
+              }
+            },
+            {
+              "name": "createdAt",
+              "type": {
+                "kind": "SCALAR",
+                "name": "DateTime",
+                "ofType": null
+              }
+            },
+            {
+              "name": "activityLogs",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "receiver",
+              "type": {
+                "kind": "OBJECT",
+                "name": "TeamReceivers",
+                "ofType": null
+              }
+            },
+            {
+              "name": "clubhouse",
+              "type": {
+                "kind": "OBJECT",
+                "name": "Clubhouse",
+                "ofType": null
+              }
+            },
+            {
+              "name": "reachablePlayerRefIds",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null
+                }
+              }
+            }
+          ]
+        }
+      },
+      "extensions": {
+        "lighthouse_subscriptions": {
+          "channel": null
+        }
+      }
+    }
+  },
+  "call": {
+    "http": 200,
+    "body": {
+      "errors": [
+        {
+          "message": "Unauthenticated.",
+          "locations": [
+            {
+              "line": 2,
+              "column": 3
+            }
+          ],
+          "path": [
+            "teamRounds"
+          ],
+          "extensions": {
+            "guards": [
+              "api"
+            ]
+          }
+        }
+      ],
+      "extensions": {
+        "lighthouse_subscriptions": {
+          "channel": null
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,390 @@
+{
+  "total": 2818,
+  "ok": 1374,
+  "errors": 1444,
+  "bySeason": {
+    "2011": 159,
+    "2024": 165,
+    "2013": 43,
+    "2017": 45,
+    "2016": 54,
+    "2019": 43,
+    "2021": 100,
+    "2025": 242,
+    "2018": 39,
+    "2010": 11,
+    "2023": 127,
+    "2020": 131,
+    "2012": 52,
+    "2014": 53,
+    "2022": 132,
+    "2015": 48
+  },
+  "byTeamSeason": [
+    {
+      "season": 2024,
+      "teamName": "Gladsaxe Søborg 6",
+      "count": 5
+    },
+    {
+      "season": 2015,
+      "teamName": "Gladsaxe Søborg 4",
+      "count": 1
+    },
+    {
+      "season": 2017,
+      "teamName": "Gladsaxe Søborg 2",
+      "count": 18
+    },
+    {
+      "season": 2024,
+      "teamName": "Gladsaxe Søborg 4",
+      "count": 7
+    },
+    {
+      "season": 2020,
+      "teamName": "Gladsaxe Søborg 1",
+      "count": 49
+    },
+    {
+      "season": 2016,
+      "teamName": "Gladsaxe Søborg 4",
+      "count": 11
+    },
+    {
+      "season": 2024,
+      "teamName": "Gladsaxe Søborg 7",
+      "count": 8
+    },
+    {
+      "season": 2011,
+      "teamName": "Gladsaxe Søborg",
+      "count": 54
+    },
+    {
+      "season": 2013,
+      "teamName": "Gladsaxe Søborg",
+      "count": 27
+    },
+    {
+      "season": 2014,
+      "teamName": "Gladsaxe Søborg 2",
+      "count": 27
+    },
+    {
+      "season": 2021,
+      "teamName": "Gladsaxe Søborg 4",
+      "count": 5
+    },
+    {
+      "season": 2024,
+      "teamName": "Gladsaxe Søborg 3",
+      "count": 17
+    },
+    {
+      "season": 2023,
+      "teamName": "Gladsaxe Søborg 2",
+      "count": 40
+    },
+    {
+      "season": 2022,
+      "teamName": "Gladsaxe Søborg 2",
+      "count": 34
+    },
+    {
+      "season": 2025,
+      "teamName": "Gladsaxe Søborg 7",
+      "count": 11
+    },
+    {
+      "season": 2023,
+      "teamName": "Gladsaxe Søborg 4",
+      "count": 16
+    },
+    {
+      "season": 2024,
+      "teamName": "Gladsaxe Søborg 2",
+      "count": 48
+    },
+    {
+      "season": 2019,
+      "teamName": "Gladsaxe Søborg 2",
+      "count": 5
+    },
+    {
+      "season": 2024,
+      "teamName": "Gladsaxe Søborg 5",
+      "count": 25
+    },
+    {
+      "season": 2020,
+      "teamName": "Gladsaxe Søborg",
+      "count": 3
+    },
+    {
+      "season": 2021,
+      "teamName": "Gladsaxe Søborg 3",
+      "count": 23
+    },
+    {
+      "season": 2025,
+      "teamName": "Gladsaxe Søborg 4",
+      "count": 23
+    },
+    {
+      "season": 2011,
+      "teamName": "Gladsaxe Søborg 2",
+      "count": 42
+    },
+    {
+      "season": 2016,
+      "teamName": "Gladsaxe Søborg 1",
+      "count": 12
+    },
+    {
+      "season": 2023,
+      "teamName": "Gladsaxe Søborg 3",
+      "count": 28
+    },
+    {
+      "season": 2015,
+      "teamName": "Gladsaxe Søborg 5",
+      "count": 3
+    },
+    {
+      "season": 2018,
+      "teamName": "Gladsaxe Søborg 2",
+      "count": 12
+    },
+    {
+      "season": 2013,
+      "teamName": "Gladsaxe Søborg 3",
+      "count": 6
+    },
+    {
+      "season": 2025,
+      "teamName": "Gladsaxe Søborg 3",
+      "count": 44
+    },
+    {
+      "season": 2019,
+      "teamName": "Gladsaxe Søborg 4",
+      "count": 2
+    },
+    {
+      "season": 2025,
+      "teamName": "Gladsaxe Søborg 8",
+      "count": 9
+    },
+    {
+      "season": 2015,
+      "teamName": "Gladsaxe Søborg 3",
+      "count": 1
+    },
+    {
+      "season": 2011,
+      "teamName": "Gladsaxe Søborg 4",
+      "count": 21
+    },
+    {
+      "season": 2011,
+      "teamName": "Gladsaxe Søborg 3",
+      "count": 42
+    },
+    {
+      "season": 2013,
+      "teamName": "Gladsaxe Søborg 2",
+      "count": 10
+    },
+    {
+      "season": 2025,
+      "teamName": "Gladsaxe Søborg 2",
+      "count": 58
+    },
+    {
+      "season": 2021,
+      "teamName": "Gladsaxe Søborg 2",
+      "count": 23
+    },
+    {
+      "season": 2018,
+      "teamName": "Gladsaxe Søborg 1",
+      "count": 27
+    },
+    {
+      "season": 2012,
+      "teamName": "Gladsaxe Søborg 3",
+      "count": 7
+    },
+    {
+      "season": 2022,
+      "teamName": "Gladsaxe Søborg 3",
+      "count": 24
+    },
+    {
+      "season": 2023,
+      "teamName": "Gladsaxe Søborg 1",
+      "count": 41
+    },
+    {
+      "season": 2016,
+      "teamName": "Gladsaxe Søborg 3",
+      "count": 3
+    },
+    {
+      "season": 2020,
+      "teamName": "Gladsaxe Søborg 4",
+      "count": 11
+    },
+    {
+      "season": 2019,
+      "teamName": "Gladsaxe Søborg 3",
+      "count": 5
+    },
+    {
+      "season": 2012,
+      "teamName": "Gladsaxe Søborg",
+      "count": 28
+    },
+    {
+      "season": 2022,
+      "teamName": "Gladsaxe Søborg 1",
+      "count": 47
+    },
+    {
+      "season": 2017,
+      "teamName": "Gladsaxe Søborg",
+      "count": 12
+    },
+    {
+      "season": 2024,
+      "teamName": "Gladsaxe Søborg 8",
+      "count": 2
+    },
+    {
+      "season": 2015,
+      "teamName": "Gladsaxe Søborg 2",
+      "count": 9
+    },
+    {
+      "season": 2025,
+      "teamName": "Gladsaxe Søborg 9",
+      "count": 1
+    },
+    {
+      "season": 2015,
+      "teamName": "Gladsaxe Søborg",
+      "count": 34
+    },
+    {
+      "season": 2010,
+      "teamName": "Gladsaxe Søborg 1",
+      "count": 11
+    },
+    {
+      "season": 2017,
+      "teamName": "Gladsaxe Søborg 1",
+      "count": 15
+    },
+    {
+      "season": 2012,
+      "teamName": "Gladsaxe Søborg 2",
+      "count": 17
+    },
+    {
+      "season": 2024,
+      "teamName": "Gladsaxe Søborg 1",
+      "count": 49
+    },
+    {
+      "season": 2014,
+      "teamName": "Gladsaxe Søborg 4",
+      "count": 1
+    },
+    {
+      "season": 2019,
+      "teamName": "Gladsaxe Søborg 1",
+      "count": 30
+    },
+    {
+      "season": 2025,
+      "teamName": "Gladsaxe Søborg 5",
+      "count": 35
+    },
+    {
+      "season": 2019,
+      "teamName": "Gladsaxe Søborg",
+      "count": 1
+    },
+    {
+      "season": 2022,
+      "teamName": "Gladsaxe Søborg 5",
+      "count": 16
+    },
+    {
+      "season": 2014,
+      "teamName": "Gladsaxe Søborg 3",
+      "count": 1
+    },
+    {
+      "season": 2014,
+      "teamName": "Gladsaxe Søborg",
+      "count": 24
+    },
+    {
+      "season": 2021,
+      "teamName": "Gladsaxe Søborg 1",
+      "count": 48
+    },
+    {
+      "season": 2025,
+      "teamName": "Gladsaxe Søborg 1",
+      "count": 41
+    },
+    {
+      "season": 2020,
+      "teamName": "Gladsaxe Søborg 3",
+      "count": 18
+    },
+    {
+      "season": 2020,
+      "teamName": "Gladsaxe Søborg 2",
+      "count": 50
+    },
+    {
+      "season": 2021,
+      "teamName": "Gladsaxe Søborg",
+      "count": 1
+    },
+    {
+      "season": 2022,
+      "teamName": "Gladsaxe Søborg 4",
+      "count": 11
+    },
+    {
+      "season": 2016,
+      "teamName": "Gladsaxe Søborg 2",
+      "count": 6
+    },
+    {
+      "season": 2025,
+      "teamName": "Gladsaxe Søborg 6",
+      "count": 20
+    },
+    {
+      "season": 2024,
+      "teamName": "Gladsaxe Søborg",
+      "count": 4
+    },
+    {
+      "season": 2023,
+      "teamName": "Gladsaxe Søborg 5",
+      "count": 2
+    },
+    {
+      "season": 2016,
+      "teamName": "Gladsaxe Søborg",
+      "count": 22
+    }
+  ]
+}

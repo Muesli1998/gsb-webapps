@@ -1,0 +1,118 @@
+[
+  {
+    "id": 486396,
+    "variant": "})",
+    "http": 200,
+    "body": {
+      "errors": [
+        {
+          "message": "Could not find any players on match",
+          "locations": [
+            {
+              "line": 1,
+              "column": 9
+            }
+          ],
+          "path": [
+            "badmintonPlayerTeamMatch"
+          ]
+        }
+      ],
+      "data": {
+        "badmintonPlayerTeamMatch": null
+      },
+      "extensions": {
+        "lighthouse_subscriptions": {
+          "channel": null
+        }
+      }
+    }
+  },
+  {
+    "id": 486396,
+    "variant": ",version:\"2025-10-05\"})",
+    "http": 200,
+    "body": {
+      "errors": [
+        {
+          "message": "Could not find any players on match",
+          "locations": [
+            {
+              "line": 1,
+              "column": 9
+            }
+          ],
+          "path": [
+            "badmintonPlayerTeamMatch"
+          ]
+        }
+      ],
+      "data": {
+        "badmintonPlayerTeamMatch": null
+      },
+      "extensions": {
+        "lighthouse_subscriptions": {
+          "channel": null
+        }
+      }
+    }
+  },
+  {
+    "id": 487423,
+    "variant": "})",
+    "http": 200,
+    "body": {
+      "errors": [
+        {
+          "message": "Internal server error",
+          "locations": [
+            {
+              "line": 1,
+              "column": 9
+            }
+          ],
+          "path": [
+            "badmintonPlayerTeamMatch"
+          ]
+        }
+      ],
+      "data": {
+        "badmintonPlayerTeamMatch": null
+      },
+      "extensions": {
+        "lighthouse_subscriptions": {
+          "channel": null
+        }
+      }
+    }
+  },
+  {
+    "id": 487423,
+    "variant": ",version:\"2025-09-21\"})",
+    "http": 200,
+    "body": {
+      "errors": [
+        {
+          "message": "Internal server error",
+          "locations": [
+            {
+              "line": 1,
+              "column": 9
+            }
+          ],
+          "path": [
+            "badmintonPlayerTeamMatch"
+          ]
+        }
+      ],
+      "data": {
+        "badmintonPlayerTeamMatch": null
+      },
+      "extensions": {
+        "lighthouse_subscriptions": {
+          "channel": null
+        }
+      }
+    }
+  }
+]
