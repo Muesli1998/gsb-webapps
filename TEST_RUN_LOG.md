@@ -150,3 +150,6 @@ U9–U15-fallbackberigelse er midlertidigt udskudt. Rådata og fejlregistreringe
 - Den efterfølgende analyse udtrækker GSB-rækker og beregner kandidater. Afledte flag må ikke erstatte rå kildedata.
 - 97/97 puljer blev hentet uden browserfejl.
 - Ved screening blev 0 point først behandlet som en kandidatindikator. Efter kontrol blev heuristikken korrigeret: score og sætscore skal vurderes, og eksplicit tekst som `trukket` eller `udgået` er stærkere evidens.
+
+- Parser rettet til historiske stillingsoverskrifter med præfikser (K.Kampe, V.Vundne, P.Point). Pulje 2014/4247 er efterkontrolleret og importeret med 8 rækker.
+
