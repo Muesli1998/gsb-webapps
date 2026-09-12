@@ -1,0 +1,17 @@
+{
+  "key": "2012:50364",
+  "season": 2012,
+  "matchId": 50364,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Valby BC",
+  "ageGroupId": "6",
+  "leagueGroupId": "1329",
+  "roundDate": "2013-03-24",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2012,1329,1,8,,50364,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2012-50364.json",
+  "verifiedAt": "2026-09-12T17:10:38.592Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2012,1329,1,8,,50364,1093,"
+}

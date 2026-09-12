@@ -1,0 +1,17 @@
+{
+  "key": "2011:1655",
+  "season": 2011,
+  "matchId": 1655,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "KBK Kbh. 5",
+  "ageGroupId": "1",
+  "leagueGroupId": "58",
+  "roundDate": "2012-04-01",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,58,1,8,,1655,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2011-1655.json",
+  "verifiedAt": "2026-09-12T17:10:56.927Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,58,1,8,,1655,1093,"
+}

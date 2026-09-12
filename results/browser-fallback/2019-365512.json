@@ -1,0 +1,17 @@
+{
+  "key": "2019:365512",
+  "season": 2019,
+  "matchId": 365512,
+  "teamName": "Gladsaxe Søborg 4",
+  "opponent": "Posten Kbh. 2",
+  "ageGroupId": "9",
+  "leagueGroupId": "12584",
+  "roundDate": "2020-03-22",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12584,1,8,,365512,1093,",
+  "status": "browser_no_match_id",
+  "resultFile": "results/browser-fallback/2019-365512.json",
+  "verifiedAt": "2026-09-12T17:08:53.043Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Page loaded but match id was not visible",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12584,1,8,,365512,1093,"
+}

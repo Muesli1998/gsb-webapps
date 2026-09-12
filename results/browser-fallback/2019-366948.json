@@ -1,0 +1,17 @@
+{
+  "key": "2019:366948",
+  "season": 2019,
+  "matchId": 366948,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "KMB2010 1",
+  "ageGroupId": "13",
+  "leagueGroupId": "12595",
+  "roundDate": "2020-04-05",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12595,1,8,,366948,1093,",
+  "status": "browser_no_match_id",
+  "resultFile": "results/browser-fallback/2019-366948.json",
+  "verifiedAt": "2026-09-12T17:09:00.663Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Page loaded but match id was not visible",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12595,1,8,,366948,1093,"
+}

@@ -1,0 +1,17 @@
+{
+  "key": "2020:387757",
+  "season": 2020,
+  "matchId": 387757,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "KBK Kbh. 1",
+  "ageGroupId": "17",
+  "leagueGroupId": "13302",
+  "roundDate": "2020-10-11",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13302,1,8,,387757,1093,",
+  "status": "browser_no_match_id",
+  "resultFile": "results/browser-fallback/2020-387757.json",
+  "verifiedAt": "2026-09-12T17:08:42.718Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Page loaded but match id was not visible",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13302,1,8,,387757,1093,"
+}

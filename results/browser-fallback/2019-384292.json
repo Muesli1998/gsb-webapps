@@ -1,0 +1,17 @@
+{
+  "key": "2019:384292",
+  "season": 2019,
+  "matchId": 384292,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Vordingborg",
+  "ageGroupId": "1",
+  "leagueGroupId": "13102",
+  "roundDate": "2020-03-21",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,13102,1,8,,384292,1093,",
+  "status": "browser_no_match_id",
+  "resultFile": "results/browser-fallback/2019-384292.json",
+  "verifiedAt": "2026-09-12T17:08:45.517Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Page loaded but match id was not visible",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,13102,1,8,,384292,1093,"
+}

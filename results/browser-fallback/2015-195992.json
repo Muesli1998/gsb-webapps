@@ -1,0 +1,17 @@
+{
+  "key": "2015:195992",
+  "season": 2015,
+  "matchId": 195992,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "BC37 Amager",
+  "ageGroupId": "6",
+  "leagueGroupId": "6099",
+  "roundDate": "2016-02-28",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6099,1,8,,195992,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2015-195992.json",
+  "verifiedAt": "2026-09-12T17:09:56.752Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6099,1,8,,195992,1093,"
+}

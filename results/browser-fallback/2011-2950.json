@@ -1,0 +1,17 @@
+{
+  "key": "2011:2950",
+  "season": 2011,
+  "matchId": 2950,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Sundby KFUM",
+  "ageGroupId": "11",
+  "leagueGroupId": "88",
+  "roundDate": "2011-10-02",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,88,1,8,,2950,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2011-2950.json",
+  "verifiedAt": "2026-09-12T17:11:37.062Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,88,1,8,,2950,1093,"
+}

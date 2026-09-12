@@ -1,0 +1,17 @@
+{
+  "key": "2013:96272",
+  "season": 2013,
+  "matchId": 96272,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Tono Kbh.",
+  "ageGroupId": "6",
+  "leagueGroupId": "2693",
+  "roundDate": "2013-10-27",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2013,2693,1,8,,96272,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2013-96272.json",
+  "verifiedAt": "2026-09-12T17:10:28.098Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2013,2693,1,8,,96272,1093,"
+}

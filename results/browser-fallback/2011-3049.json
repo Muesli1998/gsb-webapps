@@ -1,0 +1,17 @@
+{
+  "key": "2011:3049",
+  "season": 2011,
+  "matchId": 3049,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "Hvidovre HB2000 2",
+  "ageGroupId": "11",
+  "leagueGroupId": "91",
+  "roundDate": "2011-12-11",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,91,1,8,,3049,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2011-3049.json",
+  "verifiedAt": "2026-09-12T17:11:45.684Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,91,1,8,,3049,1093,"
+}

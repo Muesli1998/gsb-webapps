@@ -1,0 +1,17 @@
+{
+  "key": "2016:238985",
+  "season": 2016,
+  "matchId": 238985,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Gentofte",
+  "ageGroupId": "13",
+  "leagueGroupId": "7660",
+  "roundDate": "2016-12-18",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7660,1,8,,238985,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2016-238985.json",
+  "verifiedAt": "2026-09-12T17:09:50.137Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7660,1,8,,238985,1093,"
+}

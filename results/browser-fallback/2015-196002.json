@@ -1,0 +1,17 @@
+{
+  "key": "2015:196002",
+  "season": 2015,
+  "matchId": 196002,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Valby BC",
+  "ageGroupId": "6",
+  "leagueGroupId": "6099",
+  "roundDate": "2016-04-03",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6099,1,8,,196002,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2015-196002.json",
+  "verifiedAt": "2026-09-12T17:09:58.674Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6099,1,8,,196002,1093,"
+}

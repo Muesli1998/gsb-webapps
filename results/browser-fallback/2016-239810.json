@@ -1,0 +1,17 @@
+{
+  "key": "2016:239810",
+  "season": 2016,
+  "matchId": 239810,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "KBK Kbh.",
+  "ageGroupId": "11",
+  "leagueGroupId": "7652",
+  "roundDate": "2017-02-12",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7652,1,8,,239810,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2016-239810.json",
+  "verifiedAt": "2026-09-12T17:09:48.236Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7652,1,8,,239810,1093,"
+}

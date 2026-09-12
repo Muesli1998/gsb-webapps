@@ -1,0 +1,17 @@
+{
+  "key": "2011:2939",
+  "season": 2011,
+  "matchId": 2939,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Lyngby",
+  "ageGroupId": "11",
+  "leagueGroupId": "87",
+  "roundDate": "2012-03-18",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,87,1,8,,2939,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2011-2939.json",
+  "verifiedAt": "2026-09-12T17:11:35.169Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,87,1,8,,2939,1093,"
+}

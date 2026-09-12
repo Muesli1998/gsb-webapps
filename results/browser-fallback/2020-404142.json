@@ -1,0 +1,17 @@
+{
+  "key": "2020:404142",
+  "season": 2020,
+  "matchId": 404142,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "BC37 Amager 1",
+  "ageGroupId": "11",
+  "leagueGroupId": "13305",
+  "roundDate": "2021-04-11",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13305,1,8,,404142,1093,",
+  "status": "browser_no_match_id",
+  "resultFile": "results/browser-fallback/2020-404142.json",
+  "verifiedAt": "2026-09-12T17:08:18.029Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Page loaded but match id was not visible",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13305,1,8,,404142,1093,"
+}

@@ -1,0 +1,17 @@
+{
+  "key": "2019:365545",
+  "season": 2019,
+  "matchId": 365545,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "FKIF Frederiksberg 3",
+  "ageGroupId": "9",
+  "leagueGroupId": "12585",
+  "roundDate": "2020-03-22",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12585,1,8,,365545,1093,",
+  "status": "browser_no_match_id",
+  "resultFile": "results/browser-fallback/2019-365545.json",
+  "verifiedAt": "2026-09-12T17:08:51.162Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Page loaded but match id was not visible",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12585,1,8,,365545,1093,"
+}

@@ -1,0 +1,17 @@
+{
+  "key": "2013:96274",
+  "season": 2013,
+  "matchId": 96274,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "BC37 Amager",
+  "ageGroupId": "6",
+  "leagueGroupId": "2693",
+  "roundDate": "2013-11-17",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2013,2693,1,8,,96274,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2013-96274.json",
+  "verifiedAt": "2026-09-12T17:10:29.112Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2013,2693,1,8,,96274,1093,"
+}

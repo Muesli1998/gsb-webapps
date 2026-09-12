@@ -1,0 +1,17 @@
+{
+  "key": "2017:282751",
+  "season": 2017,
+  "matchId": 282751,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Hvidovre 2",
+  "ageGroupId": "18",
+  "leagueGroupId": "9288",
+  "roundDate": "2018-03-11",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2017,9288,1,8,,282751,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2017-282751.json",
+  "verifiedAt": "2026-09-12T17:09:26.447Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2017,9288,1,8,,282751,1093,"
+}

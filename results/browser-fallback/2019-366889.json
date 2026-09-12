@@ -1,0 +1,17 @@
+{
+  "key": "2019:366889",
+  "season": 2019,
+  "matchId": 366889,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Gentofte Motionist BK 1",
+  "ageGroupId": "17",
+  "leagueGroupId": "12597",
+  "roundDate": "2020-01-12",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12597,1,8,,366889,1093,",
+  "status": "browser_no_match_id",
+  "resultFile": "results/browser-fallback/2019-366889.json",
+  "verifiedAt": "2026-09-12T17:09:04.438Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Page loaded but match id was not visible",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12597,1,8,,366889,1093,"
+}

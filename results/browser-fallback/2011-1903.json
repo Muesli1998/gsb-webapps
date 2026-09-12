@@ -1,0 +1,17 @@
+{
+  "key": "2011:1903",
+  "season": 2011,
+  "matchId": 1903,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Kalundborg",
+  "ageGroupId": "1",
+  "leagueGroupId": "71",
+  "roundDate": "2011-12-18",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,71,1,8,,1903,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2011-1903.json",
+  "verifiedAt": "2026-09-12T17:10:50.125Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,71,1,8,,1903,1093,"
+}

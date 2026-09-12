@@ -1,0 +1,17 @@
+{
+  "key": "2011:1652",
+  "season": 2011,
+  "matchId": 1652,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Charlottenlund 3",
+  "ageGroupId": "1",
+  "leagueGroupId": "58",
+  "roundDate": "2012-03-04",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,58,1,8,,1652,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2011-1652.json",
+  "verifiedAt": "2026-09-12T17:10:55.985Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,58,1,8,,1652,1093,"
+}

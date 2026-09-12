@@ -1,0 +1,17 @@
+{
+  "key": "2020:388020",
+  "season": 2020,
+  "matchId": 388020,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Drive 1",
+  "ageGroupId": "13",
+  "leagueGroupId": "13311",
+  "roundDate": "2021-02-14",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13311,1,8,,388020,1093,",
+  "status": "browser_no_match_id",
+  "resultFile": "results/browser-fallback/2020-388020.json",
+  "verifiedAt": "2026-09-12T17:08:32.274Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Page loaded but match id was not visible",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13311,1,8,,388020,1093,"
+}

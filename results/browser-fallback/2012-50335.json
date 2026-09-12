@@ -1,0 +1,17 @@
+{
+  "key": "2012:50335",
+  "season": 2012,
+  "matchId": 50335,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "FKIF Frederiksberg",
+  "ageGroupId": "6",
+  "leagueGroupId": "1329",
+  "roundDate": "2012-09-23",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2012,1329,1,8,,50335,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2012-50335.json",
+  "verifiedAt": "2026-09-12T17:10:32.877Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2012,1329,1,8,,50335,1093,"
+}

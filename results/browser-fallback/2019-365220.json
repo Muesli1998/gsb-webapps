@@ -1,0 +1,17 @@
+{
+  "key": "2019:365220",
+  "season": 2019,
+  "matchId": 365220,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "KSI Badmintonklub Kbh. 3",
+  "ageGroupId": "1",
+  "leagueGroupId": "12570",
+  "roundDate": "2020-03-22",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12570,1,8,,365220,1093,",
+  "status": "browser_no_match_id",
+  "resultFile": "results/browser-fallback/2019-365220.json",
+  "verifiedAt": "2026-09-12T17:08:47.405Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Page loaded but match id was not visible",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12570,1,8,,365220,1093,"
+}

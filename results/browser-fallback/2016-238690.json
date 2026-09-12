@@ -1,0 +1,17 @@
+{
+  "key": "2016:238690",
+  "season": 2016,
+  "matchId": 238690,
+  "teamName": "Gladsaxe Søborg 4",
+  "opponent": "CBS Sport Badminton",
+  "ageGroupId": "1",
+  "leagueGroupId": "7643",
+  "roundDate": "2017-04-02",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7643,1,8,,238690,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2016-238690.json",
+  "verifiedAt": "2026-09-12T17:09:42.510Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7643,1,8,,238690,1093,"
+}

@@ -1,0 +1,17 @@
+{
+  "key": "2019:365548",
+  "season": 2019,
+  "matchId": 365548,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "Tingbjerg 2",
+  "ageGroupId": "9",
+  "leagueGroupId": "12585",
+  "roundDate": "2020-04-05",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12585,1,8,,365548,1093,",
+  "status": "browser_no_match_id",
+  "resultFile": "results/browser-fallback/2019-365548.json",
+  "verifiedAt": "2026-09-12T17:08:52.093Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Page loaded but match id was not visible",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12585,1,8,,365548,1093,"
+}

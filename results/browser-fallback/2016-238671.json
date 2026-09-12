@@ -1,0 +1,17 @@
+{
+  "key": "2016:238671",
+  "season": 2016,
+  "matchId": 238671,
+  "teamName": "Gladsaxe Søborg 4",
+  "opponent": "Dragør 3",
+  "ageGroupId": "1",
+  "leagueGroupId": "7643",
+  "roundDate": "2016-11-20",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7643,1,8,,238671,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2016-238671.json",
+  "verifiedAt": "2026-09-12T17:09:37.822Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7643,1,8,,238671,1093,"
+}

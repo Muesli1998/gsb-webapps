@@ -1,0 +1,17 @@
+{
+  "key": "2020:404147",
+  "season": 2020,
+  "matchId": 404147,
+  "teamName": "Gladsaxe Søborg 4",
+  "opponent": "Vanløse 1",
+  "ageGroupId": "11",
+  "leagueGroupId": "13307",
+  "roundDate": "2021-04-11",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13307,1,8,,404147,1093,",
+  "status": "browser_no_match_id",
+  "resultFile": "results/browser-fallback/2020-404147.json",
+  "verifiedAt": "2026-09-12T17:08:28.455Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Page loaded but match id was not visible",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13307,1,8,,404147,1093,"
+}

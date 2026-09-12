@@ -1,0 +1,17 @@
+{
+  "key": "2017:282746",
+  "season": 2017,
+  "matchId": 282746,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Charlottenlund 2",
+  "ageGroupId": "18",
+  "leagueGroupId": "9288",
+  "roundDate": "2018-01-14",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2017,9288,1,8,,282746,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2017-282746.json",
+  "verifiedAt": "2026-09-12T17:09:24.550Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2017,9288,1,8,,282746,1093,"
+}

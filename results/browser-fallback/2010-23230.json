@@ -1,0 +1,17 @@
+{
+  "key": "2010:23230",
+  "season": 2010,
+  "matchId": 23230,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "KBK Kbh. 3",
+  "ageGroupId": "1",
+  "leagueGroupId": "417",
+  "roundDate": "2010-11-21",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2010,417,1,8,,23230,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2010-23230.json",
+  "verifiedAt": "2026-09-12T17:11:58.901Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2010,417,1,8,,23230,1093,"
+}

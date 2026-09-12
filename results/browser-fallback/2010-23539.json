@@ -1,0 +1,17 @@
+{
+  "key": "2010:23539",
+  "season": 2010,
+  "matchId": 23539,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Team Roskilde 2",
+  "ageGroupId": "1",
+  "leagueGroupId": "431",
+  "roundDate": "2010-12-05",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2010,431,1,8,,23539,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2010-23539.json",
+  "verifiedAt": "2026-09-12T17:12:03.648Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2010,431,1,8,,23539,1093,"
+}

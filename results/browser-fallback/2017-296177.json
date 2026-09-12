@@ -1,0 +1,17 @@
+{
+  "key": "2017:296177",
+  "season": 2017,
+  "matchId": 296177,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Drive 2",
+  "ageGroupId": "18",
+  "leagueGroupId": "9592",
+  "roundDate": "2017-10-08",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2017,9592,1,8,,296177,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2017-296177.json",
+  "verifiedAt": "2026-09-12T17:09:19.826Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2017,9592,1,8,,296177,1093,"
+}

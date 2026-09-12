@@ -1,0 +1,17 @@
+{
+  "key": "2020:387915",
+  "season": 2020,
+  "matchId": 387915,
+  "teamName": "Gladsaxe Søborg 4",
+  "opponent": "Gentofte 4",
+  "ageGroupId": "11",
+  "leagueGroupId": "13307",
+  "roundDate": "2021-03-21",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13307,1,8,,387915,1093,",
+  "status": "browser_no_match_id",
+  "resultFile": "results/browser-fallback/2020-387915.json",
+  "verifiedAt": "2026-09-12T17:08:27.509Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Page loaded but match id was not visible",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13307,1,8,,387915,1093,"
+}

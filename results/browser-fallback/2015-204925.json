@@ -1,0 +1,17 @@
+{
+  "key": "2015:204925",
+  "season": 2015,
+  "matchId": 204925,
+  "teamName": "Gladsaxe Søborg 5",
+  "opponent": "Rødovre/KFUM KBH 2",
+  "ageGroupId": "1",
+  "leagueGroupId": "6022",
+  "roundDate": "2015-11-22",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6022,1,8,,204925,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2015-204925.json",
+  "verifiedAt": "2026-09-12T17:10:01.499Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6022,1,8,,204925,1093,"
+}

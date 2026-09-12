@@ -1,0 +1,17 @@
+{
+  "key": "2011:1728",
+  "season": 2011,
+  "matchId": 1728,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "Pan Kbh. 2",
+  "ageGroupId": "1",
+  "leagueGroupId": "60",
+  "roundDate": "2012-01-08",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,60,1,8,,1728,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2011-1728.json",
+  "verifiedAt": "2026-09-12T17:11:00.717Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,60,1,8,,1728,1093,"
+}

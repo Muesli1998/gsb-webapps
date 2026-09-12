@@ -1,0 +1,17 @@
+{
+  "key": "2018:337423",
+  "season": 2018,
+  "matchId": 337423,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Herlev/Hjorten 1",
+  "ageGroupId": "18",
+  "leagueGroupId": "11355",
+  "roundDate": "2018-11-18",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2018,11355,1,8,,337423,1093,",
+  "status": "browser_no_match_id",
+  "resultFile": "results/browser-fallback/2018-337423.json",
+  "verifiedAt": "2026-09-12T17:09:09.183Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Page loaded but match id was not visible",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2018,11355,1,8,,337423,1093,"
+}

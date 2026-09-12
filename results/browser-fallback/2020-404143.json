@@ -1,0 +1,17 @@
+{
+  "key": "2020:404143",
+  "season": 2020,
+  "matchId": 404143,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "Lyngby 3",
+  "ageGroupId": "11",
+  "leagueGroupId": "13306",
+  "roundDate": "2021-04-11",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13306,1,8,,404143,1093,",
+  "status": "browser_no_match_id",
+  "resultFile": "results/browser-fallback/2020-404143.json",
+  "verifiedAt": "2026-09-12T17:08:23.732Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Page loaded but match id was not visible",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13306,1,8,,404143,1093,"
+}

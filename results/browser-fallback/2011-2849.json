@@ -1,0 +1,17 @@
+{
+  "key": "2011:2849",
+  "season": 2011,
+  "matchId": 2849,
+  "teamName": "Gladsaxe Søborg 4",
+  "opponent": "Rødovre 3",
+  "ageGroupId": "9",
+  "leagueGroupId": "82",
+  "roundDate": "2012-03-25",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,82,1,8,,2849,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2011-2849.json",
+  "verifiedAt": "2026-09-12T17:11:29.407Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,82,1,8,,2849,1093,"
+}

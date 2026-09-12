@@ -1,0 +1,17 @@
+{
+  "key": "2011:3167",
+  "season": 2011,
+  "matchId": 3167,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Posten Kbh.",
+  "ageGroupId": "13",
+  "leagueGroupId": "86",
+  "roundDate": "2012-01-08",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,86,1,8,,3167,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2011-3167.json",
+  "verifiedAt": "2026-09-12T17:11:52.289Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,86,1,8,,3167,1093,"
+}

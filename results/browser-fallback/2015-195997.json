@@ -1,0 +1,17 @@
+{
+  "key": "2015:195997",
+  "season": 2015,
+  "matchId": 195997,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "FKIF Frederiksberg",
+  "ageGroupId": "6",
+  "leagueGroupId": "6099",
+  "roundDate": "2016-03-13",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6099,1,8,,195997,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2015-195997.json",
+  "verifiedAt": "2026-09-12T17:09:57.688Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6099,1,8,,195997,1093,"
+}

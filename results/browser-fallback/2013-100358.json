@@ -1,0 +1,17 @@
+{
+  "key": "2013:100358",
+  "season": 2013,
+  "matchId": 100358,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "KBK Kbh.",
+  "ageGroupId": "6",
+  "leagueGroupId": "2692",
+  "roundDate": "2014-03-09",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2013,2692,1,8,,100358,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2013-100358.json",
+  "verifiedAt": "2026-09-12T17:10:26.190Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2013,2692,1,8,,100358,1093,"
+}

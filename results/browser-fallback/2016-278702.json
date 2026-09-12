@@ -1,0 +1,17 @@
+{
+  "key": "2016:278702",
+  "season": 2016,
+  "matchId": 278702,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Dybbøl 1",
+  "ageGroupId": "18",
+  "leagueGroupId": "8918",
+  "roundDate": null,
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,8918,1,8,,278702,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2016-278702.json",
+  "verifiedAt": "2026-09-12T17:09:31.182Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,8918,1,8,,278702,1093,"
+}

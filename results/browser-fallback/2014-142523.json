@@ -1,0 +1,17 @@
+{
+  "key": "2014:142523",
+  "season": 2014,
+  "matchId": 142523,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Amager ABC",
+  "ageGroupId": "6",
+  "leagueGroupId": "4266",
+  "roundDate": "2014-12-07",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2014,4266,1,8,,142523,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2014-142523.json",
+  "verifiedAt": "2026-09-12T17:10:10.081Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2014,4266,1,8,,142523,1093,"
+}

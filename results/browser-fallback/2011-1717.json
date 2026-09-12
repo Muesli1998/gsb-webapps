@@ -1,0 +1,17 @@
+{
+  "key": "2011:1717",
+  "season": 2011,
+  "matchId": 1717,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "KSI Badmintonklub Kbh. 2",
+  "ageGroupId": "1",
+  "leagueGroupId": "60",
+  "roundDate": "2011-10-02",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,60,1,8,,1717,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2011-1717.json",
+  "verifiedAt": "2026-09-12T17:10:57.863Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,60,1,8,,1717,1093,"
+}

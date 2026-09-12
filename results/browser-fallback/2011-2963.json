@@ -1,0 +1,17 @@
+{
+  "key": "2011:2963",
+  "season": 2011,
+  "matchId": 2963,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Skovshoved",
+  "ageGroupId": "11",
+  "leagueGroupId": "88",
+  "roundDate": "2012-02-05",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,88,1,8,,2963,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2011-2963.json",
+  "verifiedAt": "2026-09-12T17:11:40.874Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,88,1,8,,2963,1093,"
+}

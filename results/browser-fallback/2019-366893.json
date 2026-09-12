@@ -1,0 +1,17 @@
+{
+  "key": "2019:366893",
+  "season": 2019,
+  "matchId": 366893,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Hvidovre 1",
+  "ageGroupId": "17",
+  "leagueGroupId": "12597",
+  "roundDate": "2020-03-22",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12597,1,8,,366893,1093,",
+  "status": "browser_no_match_id",
+  "resultFile": "results/browser-fallback/2019-366893.json",
+  "verifiedAt": "2026-09-12T17:09:06.301Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Page loaded but match id was not visible",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12597,1,8,,366893,1093,"
+}

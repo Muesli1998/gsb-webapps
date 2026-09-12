@@ -1,0 +1,17 @@
+{
+  "key": "2014:142478",
+  "season": 2014,
+  "matchId": 142478,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "KFUM Badminton Kbh. 2",
+  "ageGroupId": "6",
+  "leagueGroupId": "4267",
+  "roundDate": "2014-11-16",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2014,4267,1,8,,142478,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2014-142478.json",
+  "verifiedAt": "2026-09-12T17:10:16.743Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2014,4267,1,8,,142478,1093,"
+}

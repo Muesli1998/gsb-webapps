@@ -1,0 +1,17 @@
+{
+  "key": "2016:240054",
+  "season": 2016,
+  "matchId": 240054,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "Rødovre 2",
+  "ageGroupId": "11",
+  "leagueGroupId": "7654",
+  "roundDate": "2017-04-02",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7654,1,8,,240054,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2016-240054.json",
+  "verifiedAt": "2026-09-12T17:09:49.179Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7654,1,8,,240054,1093,"
+}

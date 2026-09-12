@@ -1,0 +1,17 @@
+{
+  "key": "2016:238662",
+  "season": 2016,
+  "matchId": 238662,
+  "teamName": "Gladsaxe Søborg 4",
+  "opponent": "KSI Badmintonklub Kbh. 4",
+  "ageGroupId": "1",
+  "leagueGroupId": "7643",
+  "roundDate": "2016-09-18",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7643,1,8,,238662,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2016-238662.json",
+  "verifiedAt": "2026-09-12T17:09:36.880Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7643,1,8,,238662,1093,"
+}

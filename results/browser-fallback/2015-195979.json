@@ -1,0 +1,17 @@
+{
+  "key": "2015:195979",
+  "season": 2015,
+  "matchId": 195979,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Vanløse",
+  "ageGroupId": "6",
+  "leagueGroupId": "6099",
+  "roundDate": "2015-12-06",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6099,1,8,,195979,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2015-195979.json",
+  "verifiedAt": "2026-09-12T17:09:54.871Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6099,1,8,,195979,1093,"
+}

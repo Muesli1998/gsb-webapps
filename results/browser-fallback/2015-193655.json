@@ -1,0 +1,17 @@
+{
+  "key": "2015:193655",
+  "season": 2015,
+  "matchId": 193655,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "Frederiksberg 5",
+  "ageGroupId": "1",
+  "leagueGroupId": "6013",
+  "roundDate": "2016-01-31",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6013,1,8,,193655,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2015-193655.json",
+  "verifiedAt": "2026-09-12T17:09:59.623Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6013,1,8,,193655,1093,"
+}

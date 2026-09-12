@@ -1,0 +1,17 @@
+{
+  "key": "2017:282737",
+  "season": 2017,
+  "matchId": 282737,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Valby BC 2",
+  "ageGroupId": "18",
+  "leagueGroupId": "9288",
+  "roundDate": "2017-10-29",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2017,9288,1,8,,282737,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2017-282737.json",
+  "verifiedAt": "2026-09-12T17:09:22.653Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2017,9288,1,8,,282737,1093,"
+}

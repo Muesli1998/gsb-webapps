@@ -1,0 +1,17 @@
+{
+  "key": "2019:365483",
+  "season": 2019,
+  "matchId": 365483,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "BC KVIK Kbh. 1",
+  "ageGroupId": "9",
+  "leagueGroupId": "12583",
+  "roundDate": "2020-03-22",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12583,1,8,,365483,1093,",
+  "status": "browser_no_match_id",
+  "resultFile": "results/browser-fallback/2019-365483.json",
+  "verifiedAt": "2026-09-12T17:08:50.231Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Page loaded but match id was not visible",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12583,1,8,,365483,1093,"
+}

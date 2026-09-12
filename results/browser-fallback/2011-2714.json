@@ -1,0 +1,17 @@
+{
+  "key": "2011:2714",
+  "season": 2011,
+  "matchId": 2714,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "NBK Amager",
+  "ageGroupId": "9",
+  "leagueGroupId": "77",
+  "roundDate": "2012-04-01",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,77,1,8,,2714,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2011-2714.json",
+  "verifiedAt": "2026-09-12T17:11:16.924Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,77,1,8,,2714,1093,"
+}

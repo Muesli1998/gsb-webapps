@@ -1,0 +1,17 @@
+{
+  "key": "2016:238869",
+  "season": 2016,
+  "matchId": 238869,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "NBK Amager",
+  "ageGroupId": "9",
+  "leagueGroupId": "7647",
+  "roundDate": "2017-02-12",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7647,1,8,,238869,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2016-238869.json",
+  "verifiedAt": "2026-09-12T17:09:47.283Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7647,1,8,,238869,1093,"
+}

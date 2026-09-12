@@ -1,0 +1,17 @@
+{
+  "key": "2014:159975",
+  "season": 2014,
+  "matchId": 159975,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Charlottenlund 2",
+  "ageGroupId": "6",
+  "leagueGroupId": "4267",
+  "roundDate": "2015-01-11",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2014,4267,1,8,,159975,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2014-159975.json",
+  "verifiedAt": "2026-09-12T17:10:18.644Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2014,4267,1,8,,159975,1093,"
+}

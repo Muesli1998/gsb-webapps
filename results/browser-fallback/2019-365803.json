@@ -1,0 +1,17 @@
+{
+  "key": "2019:365803",
+  "season": 2019,
+  "matchId": 365803,
+  "teamName": "Gladsaxe Søborg 4",
+  "opponent": "Frederiksberg 1",
+  "ageGroupId": "11",
+  "leagueGroupId": "12591",
+  "roundDate": "2020-03-22",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12591,1,8,,365803,1093,",
+  "status": "browser_no_match_id",
+  "resultFile": "results/browser-fallback/2019-365803.json",
+  "verifiedAt": "2026-09-12T17:08:56.875Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Page loaded but match id was not visible",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12591,1,8,,365803,1093,"
+}

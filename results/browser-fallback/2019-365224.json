@@ -1,0 +1,17 @@
+{
+  "key": "2019:365224",
+  "season": 2019,
+  "matchId": 365224,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "SAIF Kbh. 8",
+  "ageGroupId": "1",
+  "leagueGroupId": "12570",
+  "roundDate": "2020-04-05",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12570,1,8,,365224,1093,",
+  "status": "browser_no_match_id",
+  "resultFile": "results/browser-fallback/2019-365224.json",
+  "verifiedAt": "2026-09-12T17:08:48.348Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Page loaded but match id was not visible",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12570,1,8,,365224,1093,"
+}

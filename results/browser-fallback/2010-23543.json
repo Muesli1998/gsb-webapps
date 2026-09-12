@@ -1,0 +1,17 @@
+{
+  "key": "2010:23543",
+  "season": 2010,
+  "matchId": 23543,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Herlev/Hjorten 2",
+  "ageGroupId": "1",
+  "leagueGroupId": "431",
+  "roundDate": "2010-12-19",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2010,431,1,8,,23543,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2010-23543.json",
+  "verifiedAt": "2026-09-12T17:12:04.671Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2010,431,1,8,,23543,1093,"
+}

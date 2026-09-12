@@ -1,0 +1,17 @@
+{
+  "key": "2014:142545",
+  "season": 2014,
+  "matchId": 142545,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Lyngby 2",
+  "ageGroupId": "6",
+  "leagueGroupId": "4266",
+  "roundDate": "2015-03-08",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2014,4266,1,8,,142545,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2014-142545.json",
+  "verifiedAt": "2026-09-12T17:10:12.941Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2014,4266,1,8,,142545,1093,"
+}

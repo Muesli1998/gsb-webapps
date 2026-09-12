@@ -1,0 +1,17 @@
+{
+  "key": "2016:238725",
+  "season": 2016,
+  "matchId": 238725,
+  "teamName": "Gladsaxe Søborg 4",
+  "opponent": "SAIF Kbh. 11",
+  "ageGroupId": "1",
+  "leagueGroupId": "7644",
+  "roundDate": "2017-02-05",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7644,1,8,,238725,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2016-238725.json",
+  "verifiedAt": "2026-09-12T17:09:43.466Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7644,1,8,,238725,1093,"
+}
