@@ -45,6 +45,7 @@ CREATE TABLE IF NOT EXISTS team_matches (
   points_raw TEXT,
   status TEXT NOT NULL DEFAULT 'unknown',
   walkover_text_raw TEXT,
+  walkover_winner_raw TEXT,
   source_status TEXT,
   raw_payload_id INTEGER
 );
