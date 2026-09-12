@@ -1,0 +1,108 @@
+[
+  {
+    "name": "tournamentGroups",
+    "args": [
+      {
+        "name": "seasonId"
+      },
+      {
+        "name": "phaseType"
+      },
+      {
+        "name": "order"
+      }
+    ]
+  },
+  {
+    "name": "tournamentTiers",
+    "args": [
+      {
+        "name": "order"
+      }
+    ]
+  },
+  {
+    "name": "badmintonPlayerClubs",
+    "args": []
+  },
+  {
+    "name": "badmintonPlayerTeams",
+    "args": [
+      {
+        "name": "input"
+      }
+    ]
+  },
+  {
+    "name": "badmintonPlayerTeamsBulk",
+    "args": [
+      {
+        "name": "input"
+      }
+    ]
+  },
+  {
+    "name": "badmintonPlayerTeamFights",
+    "args": [
+      {
+        "name": "input"
+      }
+    ]
+  },
+  {
+    "name": "badmintonPlayerTeamFightsBulk",
+    "args": [
+      {
+        "name": "input"
+      }
+    ]
+  },
+  {
+    "name": "badmintonPlayerTeamMatch",
+    "args": [
+      {
+        "name": "input"
+      }
+    ]
+  },
+  {
+    "name": "badmintonPlayerTeamMatches",
+    "args": [
+      {
+        "name": "input"
+      }
+    ]
+  },
+  {
+    "name": "badmintonPlayerApiTeamMatches",
+    "args": [
+      {
+        "name": "input"
+      }
+    ]
+  },
+  {
+    "name": "teamMatchesFormattedForValidation",
+    "args": [
+      {
+        "name": "input"
+      }
+    ]
+  },
+  {
+    "name": "calendarEvents",
+    "args": [
+      {
+        "name": "clubIds"
+      }
+    ]
+  },
+  {
+    "name": "cancellationEvents",
+    "args": [
+      {
+        "name": "id"
+      }
+    ]
+  }
+]

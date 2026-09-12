@@ -225,3 +225,21 @@ Kørt 2026-09-12 på 462 grupper fra den historiske GSB-discovery. I 2.811 kampe
 Det viser, at array-positionen ikke er stabil nok til alene at definere hjemmehold/udehold. Rå `teams` skal derfor bevares, og hjemme-/udehold skal valideres særskilt mod synlige kampvisninger.
 
 Maskinresultatet ligger i `results/teams-order-test.json`, og testen kan gentages med `node test-teams-order.mjs`.
+## GraphQL-resultat for turneringssporet
+
+Schema-probe kørt 2026-09-12 mod `https://app.nembadminton.dk/graphql`.
+
+Query-felter med turnerings-/resultatrelaterede navne er begrænset til:
+
+- `tournamentGroups(seasonId, phaseType, order)`
+- `tournamentTiers(order)`
+- holdturneringsfelter som `badmintonPlayerTeamMatch`, `badmintonPlayerTeamMatches` og `teamMatchesFormattedForValidation`
+
+Schemaets typer med turneringsnavn er kun `TournamentGroupOption` og
+`TournamentTierOption`. Der blev ikke fundet en offentlig GraphQL-type for
+turneringsprogram, individuel turneringskamp eller spillerresultat.
+
+Konklusion: GraphQL kan levere række-/tier-kataloget, men vi har ikke evidens
+for, at selve `VisResultater/#115342,490920` kan hentes gennem den offentlige
+GraphQL-schema. Turneringsresultater skal derfor indtil videre undersøges via
+BadmintonPlayer-sidens egne browserkald eller dokumenterede netværkskald.
