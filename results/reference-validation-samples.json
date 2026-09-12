@@ -1,7 +1,16 @@
 [
   {
     "matchId": 486396,
-    "discovery": null,
+    "discovery": {
+      "matchId": 486396,
+      "round": 3,
+      "roundDate": "2025-11-30",
+      "gameTime": "2025-12-14 13:00:00",
+      "ageGroupId": "9",
+      "leagueGroupId": "17955",
+      "teamName": "Gladsaxe Søborg 4",
+      "league": "4. Serie Pulje 1"
+    },
     "detail": {
       "season": 2025,
       "matchId": 486396,
@@ -13,7 +22,16 @@
   },
   {
     "matchId": 487423,
-    "discovery": null,
+    "discovery": {
+      "matchId": 487423,
+      "round": 1,
+      "roundDate": "2025-09-21",
+      "gameTime": "2025-09-21 10:00:00",
+      "ageGroupId": "13",
+      "leagueGroupId": "17963",
+      "teamName": "Gladsaxe Søborg 2",
+      "league": "1. Serie Pulje 1"
+    },
     "detail": {
       "season": 2025,
       "matchId": 487423,
@@ -25,7 +43,16 @@
   },
   {
     "matchId": 484777,
-    "discovery": null,
+    "discovery": {
+      "matchId": 484777,
+      "round": null,
+      "roundDate": null,
+      "gameTime": "2025-04-26 10:00:00",
+      "ageGroupId": "3",
+      "leagueGroupId": "17849",
+      "teamName": "Gladsaxe Søborg",
+      "league": "DMU Hold U11C (4000) 4 Spillere Placeringskampe (5. - 8. plads) NY"
+    },
     "detail": {
       "season": 2024,
       "matchId": 484777,
@@ -37,7 +64,16 @@
   },
   {
     "matchId": 388606,
-    "discovery": null,
+    "discovery": {
+      "matchId": 388606,
+      "round": 4,
+      "roundDate": "2020-11-15",
+      "gameTime": "2020-11-15 09:00:00",
+      "ageGroupId": "3",
+      "leagueGroupId": "13328",
+      "teamName": "Gladsaxe Søborg 1",
+      "league": "U11 4+2 Pulje 1"
+    },
     "detail": {
       "season": 2020,
       "matchId": 388606,
@@ -454,7 +490,16 @@
   },
   {
     "matchId": 402365,
-    "discovery": null,
+    "discovery": {
+      "matchId": 402365,
+      "round": 5,
+      "roundDate": "2020-12-06",
+      "gameTime": "2020-12-05 14:00:00",
+      "ageGroupId": "3",
+      "leagueGroupId": "13328",
+      "teamName": "Gladsaxe Søborg 1",
+      "league": "U11 4+2 Pulje 1"
+    },
     "detail": {
       "season": 2020,
       "matchId": 402365,
