@@ -1,0 +1,467 @@
+[
+  {
+    "matchId": 486396,
+    "discovery": null,
+    "detail": {
+      "season": 2025,
+      "matchId": 486396,
+      "teamName": "Gladsaxe Søborg 4",
+      "league": "4. Serie Pulje 1",
+      "status": "error",
+      "error": "Could not find any players on match"
+    }
+  },
+  {
+    "matchId": 487423,
+    "discovery": null,
+    "detail": {
+      "season": 2025,
+      "matchId": 487423,
+      "teamName": "Gladsaxe Søborg 2",
+      "league": "1. Serie Pulje 1",
+      "status": "error",
+      "error": "Internal server error"
+    }
+  },
+  {
+    "matchId": 484777,
+    "discovery": null,
+    "detail": {
+      "season": 2024,
+      "matchId": 484777,
+      "teamName": "Gladsaxe Søborg",
+      "league": "DMU Hold U11C (4000) 4 Spillere Placeringskampe (5. - 8. plads) NY",
+      "status": "error",
+      "error": "Internal server error"
+    }
+  },
+  {
+    "matchId": 388606,
+    "discovery": null,
+    "detail": {
+      "season": 2020,
+      "matchId": 388606,
+      "teamName": "Gladsaxe Søborg 1",
+      "league": "U11 4+2 Pulje 1",
+      "status": "ok",
+      "home": {
+        "name": "Solrød Strand 1",
+        "squad": {
+          "categories": [
+            {
+              "category": "MD",
+              "name": "1. MD",
+              "results": [
+                {
+                  "homePoints": 19,
+                  "guestPoints": 21
+                },
+                {
+                  "homePoints": 21,
+                  "guestPoints": 18
+                },
+                {
+                  "homePoints": 19,
+                  "guestPoints": 21
+                }
+              ],
+              "players": [
+                {
+                  "name": "Maja From"
+                },
+                {
+                  "name": "Erik Skov Hilding"
+                }
+              ]
+            },
+            {
+              "category": "DS",
+              "name": "1. DS",
+              "results": [
+                {
+                  "homePoints": 21,
+                  "guestPoints": 10
+                },
+                {
+                  "homePoints": 21,
+                  "guestPoints": 6
+                },
+                {
+                  "homePoints": null,
+                  "guestPoints": null
+                }
+              ],
+              "players": [
+                {
+                  "name": "Alva Jacobsen"
+                }
+              ]
+            },
+            {
+              "category": "HS",
+              "name": "1. HS",
+              "results": [
+                {
+                  "homePoints": 21,
+                  "guestPoints": 13
+                },
+                {
+                  "homePoints": 21,
+                  "guestPoints": 14
+                },
+                {
+                  "homePoints": null,
+                  "guestPoints": null
+                }
+              ],
+              "players": [
+                {
+                  "name": "Nicholas Mikkelsen"
+                }
+              ]
+            },
+            {
+              "category": "HS",
+              "name": "2. HS",
+              "results": [
+                {
+                  "homePoints": 21,
+                  "guestPoints": 12
+                },
+                {
+                  "homePoints": 21,
+                  "guestPoints": 8
+                },
+                {
+                  "homePoints": null,
+                  "guestPoints": null
+                }
+              ],
+              "players": [
+                {
+                  "name": "William Haurholm-Rasmussen"
+                }
+              ]
+            },
+            {
+              "category": "HS",
+              "name": "3. HS",
+              "results": [
+                {
+                  "homePoints": 21,
+                  "guestPoints": 6
+                },
+                {
+                  "homePoints": 21,
+                  "guestPoints": 2
+                },
+                {
+                  "homePoints": null,
+                  "guestPoints": null
+                }
+              ],
+              "players": [
+                {
+                  "name": "William Kriwat Petersen"
+                }
+              ]
+            },
+            {
+              "category": "DD",
+              "name": "1. DD",
+              "results": [
+                {
+                  "homePoints": 21,
+                  "guestPoints": 11
+                },
+                {
+                  "homePoints": 21,
+                  "guestPoints": 19
+                },
+                {
+                  "homePoints": null,
+                  "guestPoints": null
+                }
+              ],
+              "players": [
+                {
+                  "name": "Maja From"
+                },
+                {
+                  "name": "Alva Jacobsen"
+                }
+              ]
+            },
+            {
+              "category": "HD",
+              "name": "1. HD",
+              "results": [
+                {
+                  "homePoints": 21,
+                  "guestPoints": 11
+                },
+                {
+                  "homePoints": 21,
+                  "guestPoints": 11
+                },
+                {
+                  "homePoints": null,
+                  "guestPoints": null
+                }
+              ],
+              "players": [
+                {
+                  "name": "William Haurholm-Rasmussen"
+                },
+                {
+                  "name": "Nicholas Mikkelsen"
+                }
+              ]
+            },
+            {
+              "category": "HD",
+              "name": "2. HD",
+              "results": [
+                {
+                  "homePoints": 21,
+                  "guestPoints": 15
+                },
+                {
+                  "homePoints": 21,
+                  "guestPoints": 11
+                },
+                {
+                  "homePoints": null,
+                  "guestPoints": null
+                }
+              ],
+              "players": [
+                {
+                  "name": "Erik Skov Hilding"
+                },
+                {
+                  "name": "William Kriwat Petersen"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "guest": {
+        "name": "BC37/Gladsaxe Søborg 1",
+        "squad": {
+          "categories": [
+            {
+              "category": "MD",
+              "name": "1. MD",
+              "results": [
+                {
+                  "homePoints": 19,
+                  "guestPoints": 21
+                },
+                {
+                  "homePoints": 21,
+                  "guestPoints": 18
+                },
+                {
+                  "homePoints": 19,
+                  "guestPoints": 21
+                }
+              ],
+              "players": [
+                {
+                  "name": "Isabella Frisch Erichsen"
+                },
+                {
+                  "name": "Mads Weibøl"
+                }
+              ]
+            },
+            {
+              "category": "DS",
+              "name": "1. DS",
+              "results": [
+                {
+                  "homePoints": 21,
+                  "guestPoints": 10
+                },
+                {
+                  "homePoints": 21,
+                  "guestPoints": 6
+                },
+                {
+                  "homePoints": null,
+                  "guestPoints": null
+                }
+              ],
+              "players": [
+                {
+                  "name": "Frida Kruse Møller"
+                }
+              ]
+            },
+            {
+              "category": "HS",
+              "name": "1. HS",
+              "results": [
+                {
+                  "homePoints": 21,
+                  "guestPoints": 13
+                },
+                {
+                  "homePoints": 21,
+                  "guestPoints": 14
+                },
+                {
+                  "homePoints": null,
+                  "guestPoints": null
+                }
+              ],
+              "players": [
+                {
+                  "name": "Oscar Dinu Andersen"
+                }
+              ]
+            },
+            {
+              "category": "HS",
+              "name": "2. HS",
+              "results": [
+                {
+                  "homePoints": 21,
+                  "guestPoints": 12
+                },
+                {
+                  "homePoints": 21,
+                  "guestPoints": 8
+                },
+                {
+                  "homePoints": null,
+                  "guestPoints": null
+                }
+              ],
+              "players": [
+                {
+                  "name": "Nicklas Selzer-Plon"
+                }
+              ]
+            },
+            {
+              "category": "HS",
+              "name": "3. HS",
+              "results": [
+                {
+                  "homePoints": 21,
+                  "guestPoints": 6
+                },
+                {
+                  "homePoints": 21,
+                  "guestPoints": 2
+                },
+                {
+                  "homePoints": null,
+                  "guestPoints": null
+                }
+              ],
+              "players": [
+                {
+                  "name": "Mikkel Røikjær"
+                }
+              ]
+            },
+            {
+              "category": "DD",
+              "name": "1. DD",
+              "results": [
+                {
+                  "homePoints": 21,
+                  "guestPoints": 11
+                },
+                {
+                  "homePoints": 21,
+                  "guestPoints": 19
+                },
+                {
+                  "homePoints": null,
+                  "guestPoints": null
+                }
+              ],
+              "players": [
+                {
+                  "name": "Isabella Frisch Erichsen"
+                },
+                {
+                  "name": "Frida Kruse Møller"
+                }
+              ]
+            },
+            {
+              "category": "HD",
+              "name": "1. HD",
+              "results": [
+                {
+                  "homePoints": 21,
+                  "guestPoints": 11
+                },
+                {
+                  "homePoints": 21,
+                  "guestPoints": 11
+                },
+                {
+                  "homePoints": null,
+                  "guestPoints": null
+                }
+              ],
+              "players": [
+                {
+                  "name": "Nicklas Selzer-Plon"
+                },
+                {
+                  "name": "Oscar Dinu Andersen"
+                }
+              ]
+            },
+            {
+              "category": "HD",
+              "name": "2. HD",
+              "results": [
+                {
+                  "homePoints": 21,
+                  "guestPoints": 15
+                },
+                {
+                  "homePoints": 21,
+                  "guestPoints": 11
+                },
+                {
+                  "homePoints": null,
+                  "guestPoints": null
+                }
+              ],
+              "players": [
+                {
+                  "name": "Mads Weibøl"
+                },
+                {
+                  "name": "Mikkel Røikjær"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "matchId": 402365,
+    "discovery": null,
+    "detail": {
+      "season": 2020,
+      "matchId": 402365,
+      "teamName": "Gladsaxe Søborg 1",
+      "league": "U11 4+2 Pulje 1",
+      "status": "error",
+      "error": "Could not find any players on match"
+    }
+  }
+]
