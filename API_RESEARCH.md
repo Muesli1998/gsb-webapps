@@ -192,3 +192,17 @@ Vores nye tests udvider dette på tre punkter:
 Claude-noterne markerede tidligere `ageGroupId`-tabellen som et åbent punkt.
 Det er derfor stadig nødvendigt at gemme både rå ID og det viste række-/league-
 navn og at validere mappingen pr. sæson.
+## Reviewer-proces
+
+Ved større milepæle skal en separat reviewer kontrollere både metode og
+resultater, ikke kun kode. Det gælder især efter:
+
+- komplette historiske API-kørsler
+- ændringer i aldersgruppe- eller ligaklassifikation
+- nye fallback-metoder mod BadmintonPlayer.dk
+- databaseimporter og ændringer i datamodellen
+- beregning af officielle statistikker
+
+Reviewerens kontrol skal sammenholde rå input, scripts, aggregerede rapporter
+og et stikprøveudvalg af synlige BadmintonPlayer-resultater. Små API-kald og
+rene dokumentationsændringer kan fortsat håndteres uden særskilt review.
