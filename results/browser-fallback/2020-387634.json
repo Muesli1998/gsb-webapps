@@ -1,0 +1,16 @@
+{
+  "key": "2020:387634",
+  "season": 2020,
+  "matchId": 387634,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Hvidovre 2",
+  "ageGroupId": "9",
+  "leagueGroupId": "13297",
+  "roundDate": "2021-02-14",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13297,1,8,,387634,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2020-387634.json",
+  "verifiedAt": "2026-09-12T16:59:39.253Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree"
+}

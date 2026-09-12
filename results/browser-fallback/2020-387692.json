@@ -1,0 +1,16 @@
+{
+  "key": "2020:387692",
+  "season": 2020,
+  "matchId": 387692,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Rødovre/KFUM KBH 1",
+  "ageGroupId": "9",
+  "leagueGroupId": "13299",
+  "roundDate": "2021-01-10",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13299,1,8,,387692,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2020-387692.json",
+  "verifiedAt": "2026-09-12T16:59:39.253Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree"
+}
