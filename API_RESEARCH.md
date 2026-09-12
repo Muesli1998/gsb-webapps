@@ -207,3 +207,10 @@ resultater, ikke kun kode. Det gælder især efter:
 Reviewerens kontrol skal sammenholde rå input, scripts, aggregerede rapporter
 og et stikprøveudvalg af synlige BadmintonPlayer-resultater. Små API-kald og
 rene dokumentationsændringer kan fortsat håndteres uden særskilt review.
+## Evidensregel
+
+Statistik og klassifikation må kun bygge på dokumenterede observationer. Ukendte
+eller usikre værdier skal markeres eksplicit som `unknown` eller `unverified`.
+Der må ikke gættes på betydningen af et ID, et liganavn, et resultat eller en
+fejltype. Enhver afledt klassifikation skal kunne spores til den konkrete
+API-post, BadmintonPlayer-visning eller en manuel, dokumenteret verifikation.
