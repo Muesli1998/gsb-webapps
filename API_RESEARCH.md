@@ -315,3 +315,7 @@ For spiller `84737` og `seasonid=2025` indeholder `GetPlayerProfile` en eksplici
 - 11-04-2026, Greve, turnering `111133`, SEN A
 
 Dette bekræfter, at profilen kan bruges som discovery-kilde til spillerens turnerings-ID’er i en sæson. Datoerne kan ligge i kalenderåret efter sæson-ID’et.
+
+## Brugerbekræftet betydning af pointfeltet
+
+Brugeren har bekræftet, at pointene ud for spillerne i `GetPlayerRankingListPoints` er de præcise point, spillerne havde på den rangliste, der var gældende på spilletidspunktet. Dette skal behandles som en domænebekræftet fortolkning og ikke som en modelantagelse. Selve API-responsen viser kun kolonnen `Point`.
