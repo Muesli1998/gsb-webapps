@@ -246,3 +246,13 @@ BadmintonPlayer-sidens egne browserkald eller dokumenterede netværkskald.
 # Genoptagelsesnote
 
 Holdturneringssporet er dokumenteret gennem GraphQL-kæden `badmintonPlayerTeams` → `badmintonPlayerTeamFights` → match-ID’er. 2010/11 er ældste observerede sæson. 1.444/2.818 detaljekald fejlede. Turneringssporet har offentlige `tournamentTiers`/`tournamentGroups`, men sæsonlisten kræver login; browserens webservice-metoder er fundet, mens direkte replay endnu giver HTTP 500. Fortsæt med browser-/webserviceparametre, og markér ukendt i stedet for at gætte.
+## Reproduceret browser-webservicekald
+
+Med `SR_CallbackContext` fra sidens HTML lykkedes `GetTournamentEvents` direkte:
+
+- `tournamentclassid=115342`
+- events: 490920 herresingle, 490921 damesingle, 490922 herredouble, 490923 damedouble, 490924 mixdouble
+
+`SearchTournamentMatches` lykkedes også for event `490920` og returnerede HTML med klub-ID’er, spiller-ID’er og resultater. Kaldet bruger `tournamentclassid`, `tournamenteventid`, klub-/spillerfilter samt tab-/gruppe-/lokationsnumre.
+
+Dette er første direkte reproduktion af turneringskald uden manuel klikning. Callback-konteksten kommer fra den aktuelle side og kan udløbe; den skal derfor hentes på ny ved en senere kørsel.
