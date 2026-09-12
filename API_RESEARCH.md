@@ -127,3 +127,21 @@ kan Danmarksserien bestå af otte grupper. `league` identificerer derfor kun
 turnerings-/niveau-navnet; `leagueGroupId` er den konkrete pulje eller gruppe.
 Historiske optællinger skal vise begge niveauer og må ikke deduplikere grupper
 blot fordi deres `league`-tekst er ens.
+
+## Greve historisk sanitytest (clubId 18)
+
+En målrettet test af Greve fra API-sæson 2025 tilbage til 2000 er gemt i
+`results/greve-historical-2025-2000.json` og `.csv`. API'et returnerer seniorhold
+og kampe for 2010–2025, mens 2009 og ældre ikke gav holdrækker i denne kæde.
+
+Greve bekræfter Ligaen-data i API-sæsonerne 2010, 2011 og 2012, i tråd med
+10/11–12/13. Der findes separate `leagueGroupId` for grundspil og slutspil:
+
+- 2010: gruppe 398 (9), 400 (1), 403 (3), 404 (1) — 14 unikke kampe
+- 2011: gruppe 3 (9), 1075 (3), 1127 (1), 1160 (1) — 14 unikke kampe
+- 2012: gruppe 1637 (9), 2183 (3), 2184 (1), 2186 (1), 2188 (1) — 15 unikke kampe
+
+Ældre API-navne er uensartede, fx `Badmintonligaen Badmintonligaen`,
+`Guldmatchen Guldmatchen` og blot `Semifinaler`. Klassifikation må derfor
+bruge rå `league`, holdnavn, sæson og `leagueGroupId`; en streng søgning efter
+ordet `Ligaen` vil overse nogle slutspilsgrupper.
