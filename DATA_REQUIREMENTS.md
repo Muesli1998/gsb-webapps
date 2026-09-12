@@ -114,3 +114,11 @@ Disse skal ikke gemmes som eneste sandhed, men beregnes fra rådata:
 # Genoptagelsesnote
 
 Dette er et arbejdsudkast, ikke en fastlagt model. Før mere masseudtræk skal besluttes: holdstatistik kontra spillerstatistik, walkover-behandling, liganormalisering, minimumsfelter og spiller-ID-strategi. Gem altid rå kilde samt afledte felter.
+
+## Normaliseret lokal database (første import)
+
+Den lokale testdatabase ligger i `data/gsb-statistik-normalized.db` og bygges fra `sql/schema-normalized.sql` og `scripts/generate-normalized-import.mjs`. Den bruger linkede tabeller for sæsoner, turneringsgrupper, hold, holdkampe, individuelle kampe, spillere, spillerrelationer og stillinger. De oprindelige API-svar gemmes i `raw_payloads`, så manglende felter kan genbehandles uden at hente alt igen.
+
+Første import indeholder 26 sæsoner (2000–2025), 462 grupper, 472 hold, 2.818 unikke holdkampe, 1.374 komplette kampdetaljer, 14.216 individuelle kampe, 5.043 navn-baserede spilleridentiteter og 49.986 spillerrelationer. 1.444 kampdetaljer er registreret som fejl (1.085 API-fejl og 359 uden spillere). Kun én verificeret BadmintonPlayer-stilling er importeret indtil videre (2025/26, gruppe 17922); øvrige stillinger skal hentes via browser-fallback.
+
+Spilleridentiteter i denne import er navn-baserede (`external_player_id` starter med `name:`), fordi Nembadminton-detaljesvaret ikke leverer et verificeret spiller-ID. De må derfor senere deduplikeres eller kobles til BadmintonPlayer-ID'er før spillerstatistik på tværs af navnevariationer.
