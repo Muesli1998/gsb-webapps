@@ -171,3 +171,24 @@ valideres pr. sæson.
 BadmintonPlayer.dk's dynamiske `Stilling`-tabel viser puljens hold, kampe,
 resultater, score, point og placering og bør bruges som autoritativ kilde til
 slutstillinger og walkovers.
+## Sammenholdt med Claude-resultater
+
+Claude-materialet bekræfter de centrale fund: `badmintonPlayerTeams` og
+`badmintonPlayerTeamFights` kan bruges til discovery, mens
+`badmintonPlayerTeamMatch` bruges til fulde kampdetaljer. Claude havde allerede
+identificeret walkover-teksten `Ikke fremmødt` som en særlig situation og havde
+foreslået at afgøre vinderen ud fra modstandersiden, når ingen sæt er spillet.
+
+Vores nye tests udvider dette på tre punkter:
+
+1. Vi har kørt discovery historisk tilbage til API-sæson 2010/11 og fundet den
+   ældste moderne sæson med GSB-data.
+2. Vi har verificeret direkte browserdata fra BadmintonPlayer.dk for både en
+   walkover og en kamp med fulde resultater, selv når GraphQL-detaljekaldet
+   fejler.
+3. Vi har dokumenteret, at `ageGroupId` ikke må fortolkes som blot senior/
+   ungdom. Eksempelvis er 9=SEN40+ og 13=SEN60+ i 2025/26.
+
+Claude-noterne markerede tidligere `ageGroupId`-tabellen som et åbent punkt.
+Det er derfor stadig nødvendigt at gemme både rå ID og det viste række-/league-
+navn og at validere mappingen pr. sæson.
