@@ -5,8 +5,11 @@
 Seneste test brugte Codex-browserens læsning af den rendere­de DOM på
 `https://badmintonplayer.dk/DBF/Turnering/VisResultater/#115342,490920`.
 Turnering `115342` og event/program `490920` er bekræftet. Siden indeholdt 77
-tabelrækker og viste spillerlinks, klubber, faser, scores og `W.O.`. Brug den
-samme side som reference, hvis arbejdet genoptages efter timeout.
+tabelrækker og viste spillerlinks, klubber, faser, scores og `W.O.`. Dette var
+kun det aktuelt viste udsnit, primært én række/event; det er ikke en komplet
+turneringseksport. En brugbar udtrækker skal først finde alle event-/række-
+varianter og derefter hente hver variant separat. Brug samme side som
+reference, hvis arbejdet genoptages efter timeout.
 
 ## Verificeret reference
 
