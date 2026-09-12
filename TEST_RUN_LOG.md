@@ -157,3 +157,6 @@ U9–U15-fallbackberigelse er midlertidigt udskudt. Rådata og fejlregistreringe
 ## Playoff-stillinger uden aggregatfelter
 
 Pulje 2016/9019 og 2022/15670 viser kun den endelige placeringsrækkefølge i tabellen. De er finaleslutspil, ikke almindelige puljer. Kampstrukturen ligger i kampoversigten: semifinaler, finale og bronzekamp. Derfor skal kampantal, sejre, score og sæt beregnes fra de tilknyttede kamp-ID'er, når de hentes. De manglende kolonner er et formatvalg på kilden, ikke nødvendigvis manglende historik.
+
+- Via fungerende Holdturnering-visning (#6,2016,,,,,,1093,) blev kamp 278705 dokumenteret som Viborg 2 - Gladsaxe Søborg 1 3-4, og 278706 som Solrød Strand 2 - Gladsaxe Søborg 1 4-2. Resultaterne blev skrevet som browser_verified.
+
