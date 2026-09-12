@@ -160,3 +160,6 @@ Pulje 2016/9019 og 2022/15670 viser kun den endelige placeringsrækkefølge i ta
 
 - Via fungerende Holdturnering-visning (#6,2016,,,,,,1093,) blev kamp 278705 dokumenteret som Viborg 2 - Gladsaxe Søborg 1 3-4, og 278706 som Solrød Strand 2 - Gladsaxe Søborg 1 4-2. Resultaterne blev skrevet som browser_verified.
 
+
+- Datoanalyse af alle 58 browser_no_match_id-kampe gemt i results/browser-no-match-dates.csv og results/browser-no-match-date-analysis.md. 23 er fra 2019-sæsonen (18 med dato i marts/april 2020), 31 fra 2020-sæsonen, 4 fra 2018.
+
