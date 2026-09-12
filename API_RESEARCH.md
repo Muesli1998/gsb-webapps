@@ -340,6 +340,19 @@ Det bekræfter, at ranglistedatoer kan enumereres maskinelt. Det efterfølgende 
 
 Ranglistesiden viser dog direkte, at historiske versioner kan vælges, med versionstekst, dato og periode. Derfor er sporet ikke afvist, men den nuværende direkte replay-metode er en blind vej, indtil request-parametrene kan aflæses fra browserens netværk.
 
+## Nembadminton-ranglistedata: vurdering
+
+Nembadminton er verificeret som en mulig støttekilde: `highestPointGain` kan
+returnere pointudvikling, og `memberStats`/`membersStats` findes i skemaet.
+`rankingProgression` var dog `null` i det testede `clubhouseStats`-svar.
+
+Der er endnu ikke dokumenteret et Nembadminton-kald, som returnerer historiske
+ranglisteversioner eller en spillers point pr. dato. Sporet kan derfor bruges
+til spiller-/klubkatalog og sanity checks, men BadmintonPlayers ranglistearkiv
+er fortsat den primære kandidat til historiske point før holdkampe. Det skal
+ikke antages, at Nembadminton kan erstatte arkivet, før et dateret kald er
+maskinelt verificeret.
+
 ## Terra-review: alternativ ranglistevej
 
 Terra vurderer, at de alternative ASMX-metoder (`GetRankingListPlayersSenior` og `GetRankingListPlayersHide`) ikke løser problemet med kendte parametre; gentagne kald og parameter-grid gav HTTP 500. Den nye SPA-endpoint `/api/RangkingListVersion` er ikke offentlig (401).
