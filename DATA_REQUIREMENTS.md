@@ -24,6 +24,14 @@
 - datadækning: hvilke kampe/grupper der mangler detaljer
 - kilde, hentetidspunkt og rå respons for hver post
 
+## Mulige statistikmål fra sportsanalyse
+
+Som senere udvidelser kan vi overveje styrkerating (Elo), modstanderstyrke og
+strength of schedule, justeret sejrprocent, pointdifference/-ratio, form over
+seneste kampe, win rate pr. kategori/rang, spiller-/par-kombinationer,
+opstillingsfrekvens og bidrag til holdkampsejre. De bør først indføres, når de
+rå kamp- og spillerdata er komplette nok til at bære dem.
+
 Løbende stillinger skal kun gemmes, hvis de kan dokumenteres som historiske
 stikprøver eller snapshots. En nutidig slutstilling må ikke fremstilles som en
 løbende historik.
