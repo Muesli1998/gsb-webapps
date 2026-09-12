@@ -178,3 +178,34 @@ Pulje 2016/9019 og 2022/15670 viser kun den endelige placeringsrækkefølge i ta
 Efterkontrol viste, at de 420 filer fra den samlede kørsel teknisk blev skrevet uden exception, men browserindholdet var i praksis kun BadmintonPlayer-standardskallen. Alle 420 havde ingen kategorisektioner og ingen scorelinjer; hver havde kun en placeholder-spillerlink. De skal derfor ikke regnes som valide individuelle udtræk.
 
 De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende browserkontekst, er fortsat det valide testgrundlag. Den samlede 420-kørsel skal gentages med en renderingskontrol, der kræver Kampnr, Resultat og mindst én rigtig spiller-/kampsektion, før en fil accepteres.
+
+# Status ved dagens afslutning – 2026-09-12
+
+## Hvad der blev gennemført
+
+- 97 sæson/pulje-stillinger blev hentet via lokal Playwright-browser og gemt med rå tekst, tabeller, URL og tidspunkt.
+- Stillingsdata blev importeret til `data/gsb-statistik-normalized.db`; historiske kolonnevarianter som `K.Kampe`, `V.Vundne` og `P.Point` understøttes.
+- 420 holdkampe blev browser-verificeret; 56 tidligere browserfejl blev genkørt med korrekt kampvisning.
+- 45 kampe med resultat `-` i dokumenterede coronaperioder blev klassificeret som `corona_suspended`.
+- 11 af de 56 havde faktisk resultat-/walkover-indhold.
+- Kendte playoff-kampe 278705 og 278706 blev dokumenteret med holdresultater og hjemme/udehold.
+- Rå browserpayloads blev gemt i SQLite `raw_payloads`.
+- En samlet individuel ekstraktion for 420 kampe blev kørt, men audit viste at alle 420 filer kun indeholdt standardskallen. De må ikke bruges som gyldige spillerdata.
+- Processen, usikkerheder og corona-reglen er skrevet i `TEST_RUN_LOG.md`, `RESEARCH_BACKLOG.md` og rapporterne under `results/`.
+
+## Kendte fejl og begrænsninger
+
+- Den samlede 420-kørsel skal gentages med streng renderingskontrol. Succes kræver Kampnr, Resultat og reel kamp-/spillersektion.
+- De 56 retry-filer er det validerede browsergrundlag; de 420 bulkfiler er kun fejllog/arbejdsartefakt.
+- Individuelle spillere og sæt er endnu ikke fuldt importeret til `individual_matches`/`individual_match_players`.
+- To playoff-stillinger viser kun placering; kampene skal bruges til at beregne aggregater.
+- U15 og yngre er fortsat udskudt.
+
+## Næste Luna-steps
+
+1. Ret browser-extractoren: afvis standardskal, vent på Kampnr/Resultat, og kræv mindst én reel kampsektion eller dokumenteret walkover.
+2. Kør først på de 56 validerede referencekampe og sammenlign med kendte resultater.
+3. Kør derefter på de resterende verificerede kampe i små genoptagelige batches.
+4. Parse og importér individuelle kampe, spillere, makkere og sæt til SQLite.
+5. Byg en dæknings-/afvigelsesrapport mod stillingernes kampantal.
+6. Først derefter begyndes resultatoversigtens UI og filtre.
