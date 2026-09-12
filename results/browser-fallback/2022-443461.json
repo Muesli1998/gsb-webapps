@@ -1,0 +1,16 @@
+{
+  "key": "2022:443461",
+  "season": 2022,
+  "matchId": 443461,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Dalum Hjallese BK 3",
+  "ageGroupId": "18",
+  "leagueGroupId": "15662",
+  "roundDate": "2023-04-29",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,15662,1,8,,443461,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2022-443461.json",
+  "verifiedAt": "2026-09-12T16:54:07.512Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree"
+}
