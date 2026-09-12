@@ -89,3 +89,35 @@ medlems-, runde- og logkald forventes at have samme begrænsning.
 Dette er en metode-/kapacitetstest, ikke endnu en fuld scanning af alle 1.159
 klubber. En komplet scanning bør køres batchvist med checkpoints og begrænset
 parallelitet.
+
+## Turneringer og ligaklassifikation
+
+GSB's vigtigste turneringsfamilier er:
+
+- DH: Ligaen, 1./2./3. division og Danmarksserien
+- Badminton Sjælland: Sjællandsserien og underliggende serier
+- Badminton København: Københavnsserien og underliggende serier
+- Badminton Vest: Kredsserie Vest og underliggende serier
+
+Bornholm og Lolland-Falster findes også, men er lavere prioritet i første
+statistikarbejde.
+
+Et liganavn som `1. Serie` eller `2. Serie` er ikke entydigt på tværs af
+regioner. Den historiske rapport skal derfor altid gemme det rå `league`-felt,
+`ageGroupId`, `leagueGroupId` og holdnavnet. En afledt turneringsfamilie skal
+kun sættes automatisk, når den kan dokumenteres; ellers markeres den som
+`unknown`/`ambiguous` frem for at gætte.
+
+En senere klassifikator bør have mindst:
+
+```text
+rawLeague
+competitionFamily
+region
+level
+classificationConfidence
+classificationReason
+```
+
+Det gør det muligt at måle sæsonkomplethed pr. turneringsfamilie uden at
+ødelægge de oprindelige API-navne.
