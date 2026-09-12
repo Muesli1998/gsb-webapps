@@ -1,0 +1,40 @@
+[
+  {
+    "matchId": 486396,
+    "season": 2025,
+    "leagueGroupId": 17955,
+    "ageGroupId": 9,
+    "clubId": 1093,
+    "teamName": "Gladsaxe Søborg 4",
+    "fragment": "#5,2025,17955,1,8,,486396,1093,",
+    "attempts": [
+      {
+        "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,17955,1,8,,486396,1093,",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "length": 20203,
+        "hasMatchId": false,
+        "title": ""
+      }
+    ]
+  },
+  {
+    "matchId": 487423,
+    "season": 2025,
+    "leagueGroupId": 17963,
+    "ageGroupId": 13,
+    "clubId": 1093,
+    "teamName": "Gladsaxe Søborg 2",
+    "fragment": "#5,2025,17963,1,8,,487423,1093,",
+    "attempts": [
+      {
+        "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,17963,1,8,,487423,1093,",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "length": 20203,
+        "hasMatchId": false,
+        "title": ""
+      }
+    ]
+  }
+]
