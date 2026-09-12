@@ -1,0 +1,99 @@
+{
+  "season": 2016,
+  "groupId": "7631",
+  "status": "verified",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2016,7631,1,,,,1093,",
+  "retrievedAt": "2026-09-12T18:34:32.297Z",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+40 2016/2017\nVis rækker\n\n\n40+ 1.serie Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVUNDNE\tSCORE\tSÆT\tPOINT\n1\tFKIF Frederiksberg\t6\t4\t46-26\t102-59\t10\n2\tGentofte 2\t6\t3\t34-38\t71-84\t7\n3\tCharlottenlund 2\t6\t3\t41-31\t94-78\t6\n4\tRødovre\t6\t3\t40-32\t88-68\t6\n5\tGladsaxe Søborg\t6\t2\t31-41\t75-91\t5\n6\tKMB2010 2\t6\t1\t33-39\t73-84\t4\n7\tDragør\t6\t1\t27-45\t60-99\t4\n8\tKBK Kbh. udgået\t0\t0\t0-0\t0-0\t0\n\nUdskriv | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+  "tables": [
+    [
+      [
+        "",
+        "FAQ Opret brugerkonto Log ind"
+      ]
+    ],
+    [
+      [
+        "#",
+        "HOLD",
+        "KAMPE",
+        "VUNDNE",
+        "SCORE",
+        "SÆT",
+        "POINT"
+      ],
+      [
+        "1",
+        "FKIF Frederiksberg",
+        "6",
+        "4",
+        "46-26",
+        "102-59",
+        "10"
+      ],
+      [
+        "2",
+        "Gentofte 2",
+        "6",
+        "3",
+        "34-38",
+        "71-84",
+        "7"
+      ],
+      [
+        "3",
+        "Charlottenlund 2",
+        "6",
+        "3",
+        "41-31",
+        "94-78",
+        "6"
+      ],
+      [
+        "4",
+        "Rødovre",
+        "6",
+        "3",
+        "40-32",
+        "88-68",
+        "6"
+      ],
+      [
+        "5",
+        "Gladsaxe Søborg",
+        "6",
+        "2",
+        "31-41",
+        "75-91",
+        "5"
+      ],
+      [
+        "6",
+        "KMB2010 2",
+        "6",
+        "1",
+        "33-39",
+        "73-84",
+        "4"
+      ],
+      [
+        "7",
+        "Dragør",
+        "6",
+        "1",
+        "27-45",
+        "60-99",
+        "4"
+      ],
+      [
+        "8",
+        "KBK Kbh. udgået",
+        "0",
+        "0",
+        "0-0",
+        "0-0",
+        "0"
+      ]
+    ]
+  ]
+}

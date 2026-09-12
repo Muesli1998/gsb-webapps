@@ -1,0 +1,108 @@
+{
+  "season": 2020,
+  "groupId": "13297",
+  "status": "verified",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2020,13297,1,,,,1093,",
+  "retrievedAt": "2026-09-12T18:33:47.201Z",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+40 2020/2021\nVis rækker\n\n\n40+ 1. Serie Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVUNDNE\tSCORE\tSÆT\tPOINT\n1\tLyngby 2\t2\t2\t18-6\t39-13\t4\n2\tCharlottenlund 2\t2\t1\t16-8\t35-26\t3\n3\tDragør 1\t2\t1\t14-10\t33-29\t3\n4\tGladsaxe Søborg 1\t2\t1\t14-10\t32-26\t2\n5\tHvidovre HB2000 1\t2\t1\t13-11\t32-27\t2\n6\tFrederiksberg 1\t2\t1\t8-16\t18-36\t2\n7\tFKIF Frederiksberg 1\t1\t0\t4-8\t15-18\t0\n8\tBC37 Amager 1\t1\t0\t2-10\t7-21\t0\n9\tHvidovre 2\t2\t0\t7-17\t22-37\t0\n\nUdskriv | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+  "tables": [
+    [
+      [
+        "",
+        "FAQ Opret brugerkonto Log ind"
+      ]
+    ],
+    [
+      [
+        "#",
+        "HOLD",
+        "KAMPE",
+        "VUNDNE",
+        "SCORE",
+        "SÆT",
+        "POINT"
+      ],
+      [
+        "1",
+        "Lyngby 2",
+        "2",
+        "2",
+        "18-6",
+        "39-13",
+        "4"
+      ],
+      [
+        "2",
+        "Charlottenlund 2",
+        "2",
+        "1",
+        "16-8",
+        "35-26",
+        "3"
+      ],
+      [
+        "3",
+        "Dragør 1",
+        "2",
+        "1",
+        "14-10",
+        "33-29",
+        "3"
+      ],
+      [
+        "4",
+        "Gladsaxe Søborg 1",
+        "2",
+        "1",
+        "14-10",
+        "32-26",
+        "2"
+      ],
+      [
+        "5",
+        "Hvidovre HB2000 1",
+        "2",
+        "1",
+        "13-11",
+        "32-27",
+        "2"
+      ],
+      [
+        "6",
+        "Frederiksberg 1",
+        "2",
+        "1",
+        "8-16",
+        "18-36",
+        "2"
+      ],
+      [
+        "7",
+        "FKIF Frederiksberg 1",
+        "1",
+        "0",
+        "4-8",
+        "15-18",
+        "0"
+      ],
+      [
+        "8",
+        "BC37 Amager 1",
+        "1",
+        "0",
+        "2-10",
+        "7-21",
+        "0"
+      ],
+      [
+        "9",
+        "Hvidovre 2",
+        "2",
+        "0",
+        "7-17",
+        "22-37",
+        "0"
+      ]
+    ]
+  ]
+}

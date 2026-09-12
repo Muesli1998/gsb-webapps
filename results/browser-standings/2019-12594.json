@@ -1,0 +1,108 @@
+{
+  "season": 2019,
+  "groupId": "12594",
+  "status": "verified",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2019,12594,1,,,,1093,",
+  "retrievedAt": "2026-09-12T18:34:15.874Z",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+60 2019/2020\nVis rækker\n\n\n60+ 1. Serie Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVUNDNE\tSCORE\tSÆT\tPOINT\n1\tLyngby 1\t6\t5\t40-8\t82-21\t10\n2\tFKIF Frederiksberg 1\t6\t5\t30-18\t66-42\t10\n3\tGladsaxe Søborg 1\t6\t4\t35-13\t76-30\t9\n4\tHvidovre 1\t6\t3\t25-23\t54-54\t7\n5\tKBK Kbh. 1\t6\t2\t30-18\t68-43\t7\n6\tDrive 1\t6\t2\t22-26\t49-59\t6\n7\tHvidovre HB2000 1\t7\t2\t16-40\t38-85\t4\n8\tDragør 1\t6\t1\t16-32\t39-68\t3\n9\tBK36 Kbh. 1\t7\t0\t10-46\t26-96\t0\n\nUdskriv | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+  "tables": [
+    [
+      [
+        "",
+        "FAQ Opret brugerkonto Log ind"
+      ]
+    ],
+    [
+      [
+        "#",
+        "HOLD",
+        "KAMPE",
+        "VUNDNE",
+        "SCORE",
+        "SÆT",
+        "POINT"
+      ],
+      [
+        "1",
+        "Lyngby 1",
+        "6",
+        "5",
+        "40-8",
+        "82-21",
+        "10"
+      ],
+      [
+        "2",
+        "FKIF Frederiksberg 1",
+        "6",
+        "5",
+        "30-18",
+        "66-42",
+        "10"
+      ],
+      [
+        "3",
+        "Gladsaxe Søborg 1",
+        "6",
+        "4",
+        "35-13",
+        "76-30",
+        "9"
+      ],
+      [
+        "4",
+        "Hvidovre 1",
+        "6",
+        "3",
+        "25-23",
+        "54-54",
+        "7"
+      ],
+      [
+        "5",
+        "KBK Kbh. 1",
+        "6",
+        "2",
+        "30-18",
+        "68-43",
+        "7"
+      ],
+      [
+        "6",
+        "Drive 1",
+        "6",
+        "2",
+        "22-26",
+        "49-59",
+        "6"
+      ],
+      [
+        "7",
+        "Hvidovre HB2000 1",
+        "7",
+        "2",
+        "16-40",
+        "38-85",
+        "4"
+      ],
+      [
+        "8",
+        "Dragør 1",
+        "6",
+        "1",
+        "16-32",
+        "39-68",
+        "3"
+      ],
+      [
+        "9",
+        "BK36 Kbh. 1",
+        "7",
+        "0",
+        "10-46",
+        "26-96",
+        "0"
+      ]
+    ]
+  ]
+}

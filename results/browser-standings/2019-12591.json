@@ -1,0 +1,95 @@
+{
+  "season": 2019,
+  "groupId": "12591",
+  "status": "verified",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2019,12591,1,,,,1093,",
+  "retrievedAt": "2026-09-12T18:34:14.628Z",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+50 2019/2020\nVis rækker\n\n\n50+ 5. Serie Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVUNDNE\tSCORE\tSÆT\tPOINT\n1\tGladsaxe Søborg 4\t5\t4\t27-13\t58-33\t8\n2\tGentofte 4\t5\t3\t23-17\t49-38\t8\n3\tDrive 3\t5\t3\t24-16\t53-38\t6\n4\tBC37 Amager 2\t5\t2\t22-18\t50-42\t6\n5\tHvidovre HB2000 2\t6\t2\t19-29\t44-62\t5\n6\tBKPOINT Kbh. 1\t5\t0\t16-24\t35-51\t2\n7\tFrederiksberg 1\t5\t0\t13-27\t34-59\t1\n\tKBK Kbh. 2\tHoldet trukket\n\nUdskriv | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+  "tables": [
+    [
+      [
+        "",
+        "FAQ Opret brugerkonto Log ind"
+      ]
+    ],
+    [
+      [
+        "#",
+        "HOLD",
+        "KAMPE",
+        "VUNDNE",
+        "SCORE",
+        "SÆT",
+        "POINT"
+      ],
+      [
+        "1",
+        "Gladsaxe Søborg 4",
+        "5",
+        "4",
+        "27-13",
+        "58-33",
+        "8"
+      ],
+      [
+        "2",
+        "Gentofte 4",
+        "5",
+        "3",
+        "23-17",
+        "49-38",
+        "8"
+      ],
+      [
+        "3",
+        "Drive 3",
+        "5",
+        "3",
+        "24-16",
+        "53-38",
+        "6"
+      ],
+      [
+        "4",
+        "BC37 Amager 2",
+        "5",
+        "2",
+        "22-18",
+        "50-42",
+        "6"
+      ],
+      [
+        "5",
+        "Hvidovre HB2000 2",
+        "6",
+        "2",
+        "19-29",
+        "44-62",
+        "5"
+      ],
+      [
+        "6",
+        "BKPOINT Kbh. 1",
+        "5",
+        "0",
+        "16-24",
+        "35-51",
+        "2"
+      ],
+      [
+        "7",
+        "Frederiksberg 1",
+        "5",
+        "0",
+        "13-27",
+        "34-59",
+        "1"
+      ],
+      [
+        "",
+        "KBK Kbh. 2",
+        "Holdet trukket"
+      ]
+    ]
+  ]
+}

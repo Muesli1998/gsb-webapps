@@ -1,0 +1,90 @@
+{
+  "season": 2011,
+  "groupId": "87",
+  "status": "verified",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2011,87,1,,,,1093,",
+  "retrievedAt": "2026-09-12T18:35:05.910Z",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+40 2011/2012\nVis rækker\n\n\n8. Serie Veteran 8. Serie Veteran\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVUNDNE\tSCORE\tSÆT\tPOINT\n1\tKMB2010 3\t6\t5\t53-19\t0-0\t11\n2\tGladsaxe Søborg 4\t6\t4\t38-34\t0-0\t9\n3\tDrive 4\t6\t2\t44-28\t0-0\t7\n4\tLyngby 5\t6\t2\t31-41\t0-0\t5\n5\tFKIF Frederiksberg 4\t6\t2\t28-44\t0-0\t4\n6\tHvidovre HB2000 4\t6\t1\t27-45\t0-0\t3\n7\tRødovre 3\t6\t0\t31-41\t0-0\t3\n\nUdskriv | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+  "tables": [
+    [
+      [
+        "",
+        "FAQ Opret brugerkonto Log ind"
+      ]
+    ],
+    [
+      [
+        "#",
+        "HOLD",
+        "KAMPE",
+        "VUNDNE",
+        "SCORE",
+        "SÆT",
+        "POINT"
+      ],
+      [
+        "1",
+        "KMB2010 3",
+        "6",
+        "5",
+        "53-19",
+        "0-0",
+        "11"
+      ],
+      [
+        "2",
+        "Gladsaxe Søborg 4",
+        "6",
+        "4",
+        "38-34",
+        "0-0",
+        "9"
+      ],
+      [
+        "3",
+        "Drive 4",
+        "6",
+        "2",
+        "44-28",
+        "0-0",
+        "7"
+      ],
+      [
+        "4",
+        "Lyngby 5",
+        "6",
+        "2",
+        "31-41",
+        "0-0",
+        "5"
+      ],
+      [
+        "5",
+        "FKIF Frederiksberg 4",
+        "6",
+        "2",
+        "28-44",
+        "0-0",
+        "4"
+      ],
+      [
+        "6",
+        "Hvidovre HB2000 4",
+        "6",
+        "1",
+        "27-45",
+        "0-0",
+        "3"
+      ],
+      [
+        "7",
+        "Rødovre 3",
+        "6",
+        "0",
+        "31-41",
+        "0-0",
+        "3"
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "season": 2011,
+  "groupId": "71",
+  "status": "verified",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2011,71,1,,,,1093,",
+  "retrievedAt": "2026-09-12T18:34:57.123Z",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U17 2011/2012\nVis rækker\n\n\nU17 2. Serie U17 2. Serie\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVUNDNE\tSCORE\tSÆT\tPOINT\n1\tCharlottenlund\t8\t8\t57-7\t0-0\t16\n2\tSundby KFUM\t8\t6\t48-16\t0-0\t12\n3\tKBK Kbh. 2\t8\t6\t46-18\t0-0\t12\n4\tBC37 Amager\t8\t4\t36-28\t0-0\t9\n5\tHvidovre HB2000\t8\t4\t32-32\t0-0\t8\n6\tDrive\t8\t3\t34-30\t0-0\t7\n7\tFKIF Frederiksberg\t8\t3\t27-37\t0-0\t6\n8\tLyngby *udgået*\t8\t0\t4-60\t0-0\t1\n9\tGladsaxe Søborg *udgået*\t8\t0\t4-60\t0-0\t1\n\nUdskriv | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+  "tables": [
+    [
+      [
+        "",
+        "FAQ Opret brugerkonto Log ind"
+      ]
+    ],
+    [
+      [
+        "#",
+        "HOLD",
+        "KAMPE",
+        "VUNDNE",
+        "SCORE",
+        "SÆT",
+        "POINT"
+      ],
+      [
+        "1",
+        "Charlottenlund",
+        "8",
+        "8",
+        "57-7",
+        "0-0",
+        "16"
+      ],
+      [
+        "2",
+        "Sundby KFUM",
+        "8",
+        "6",
+        "48-16",
+        "0-0",
+        "12"
+      ],
+      [
+        "3",
+        "KBK Kbh. 2",
+        "8",
+        "6",
+        "46-18",
+        "0-0",
+        "12"
+      ],
+      [
+        "4",
+        "BC37 Amager",
+        "8",
+        "4",
+        "36-28",
+        "0-0",
+        "9"
+      ],
+      [
+        "5",
+        "Hvidovre HB2000",
+        "8",
+        "4",
+        "32-32",
+        "0-0",
+        "8"
+      ],
+      [
+        "6",
+        "Drive",
+        "8",
+        "3",
+        "34-30",
+        "0-0",
+        "7"
+      ],
+      [
+        "7",
+        "FKIF Frederiksberg",
+        "8",
+        "3",
+        "27-37",
+        "0-0",
+        "6"
+      ],
+      [
+        "8",
+        "Lyngby *udgået*",
+        "8",
+        "0",
+        "4-60",
+        "0-0",
+        "1"
+      ],
+      [
+        "9",
+        "Gladsaxe Søborg *udgået*",
+        "8",
+        "0",
+        "4-60",
+        "0-0",
+        "1"
+      ]
+    ]
+  ]
+}

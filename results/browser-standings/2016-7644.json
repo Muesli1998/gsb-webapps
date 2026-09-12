@@ -1,0 +1,117 @@
+{
+  "season": 2016,
+  "groupId": "7644",
+  "status": "verified",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2016,7644,1,,,,1093,",
+  "retrievedAt": "2026-09-12T18:34:31.061Z",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN 2016/2017\nVis rækker\n\n\n30. Serie P1 Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVUNDNE\tSCORE\tSÆT\tPOINT\n1\tHvidovre 5\t7\t7\t49-21\t104-51\t14\n2\tVanløse 4\t7\t6\t48-22\t101-58\t12\n3\tKSI Badmintonklub Kbh. 5\t7\t5\t48-22\t101-52\t10\n4\tVanløse 5\t7\t4\t42-28\t98-63\t8\n5\tIslands Brygge\t7\t2\t29-41\t66-89\t4\n6\tRyparken\t7\t2\t27-43\t59-98\t4\n7\tSAIF Kbh. 11\t7\t1\t20-50\t51-107\t2\n8\tPan Kbh. 3\t7\t1\t17-53\t48-110\t2\n9\tGladsaxe Søborg 4 trukket\t0\t0\t0-0\t0-0\t0\n9\tKBK Kbh. 6 trukket\t0\t0\t0-0\t0-0\t0\n\nUdskriv | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+  "tables": [
+    [
+      [
+        "",
+        "FAQ Opret brugerkonto Log ind"
+      ]
+    ],
+    [
+      [
+        "#",
+        "HOLD",
+        "KAMPE",
+        "VUNDNE",
+        "SCORE",
+        "SÆT",
+        "POINT"
+      ],
+      [
+        "1",
+        "Hvidovre 5",
+        "7",
+        "7",
+        "49-21",
+        "104-51",
+        "14"
+      ],
+      [
+        "2",
+        "Vanløse 4",
+        "7",
+        "6",
+        "48-22",
+        "101-58",
+        "12"
+      ],
+      [
+        "3",
+        "KSI Badmintonklub Kbh. 5",
+        "7",
+        "5",
+        "48-22",
+        "101-52",
+        "10"
+      ],
+      [
+        "4",
+        "Vanløse 5",
+        "7",
+        "4",
+        "42-28",
+        "98-63",
+        "8"
+      ],
+      [
+        "5",
+        "Islands Brygge",
+        "7",
+        "2",
+        "29-41",
+        "66-89",
+        "4"
+      ],
+      [
+        "6",
+        "Ryparken",
+        "7",
+        "2",
+        "27-43",
+        "59-98",
+        "4"
+      ],
+      [
+        "7",
+        "SAIF Kbh. 11",
+        "7",
+        "1",
+        "20-50",
+        "51-107",
+        "2"
+      ],
+      [
+        "8",
+        "Pan Kbh. 3",
+        "7",
+        "1",
+        "17-53",
+        "48-110",
+        "2"
+      ],
+      [
+        "9",
+        "Gladsaxe Søborg 4 trukket",
+        "0",
+        "0",
+        "0-0",
+        "0-0",
+        "0"
+      ],
+      [
+        "9",
+        "KBK Kbh. 6 trukket",
+        "0",
+        "0",
+        "0-0",
+        "0-0",
+        "0"
+      ]
+    ]
+  ]
+}

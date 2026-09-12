@@ -1,0 +1,99 @@
+{
+  "season": 2014,
+  "groupId": "4247",
+  "status": "verified",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2014,4247,1,,,,1093,",
+  "retrievedAt": "2026-09-12T18:34:48.340Z",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+40 2014/2015\nVis rækker\n\n\n40+ 5.serie Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVUNDNE\tSCORE\tSÆT\tPOINT\n1\tGladsaxe Søborg 3\t6\t6\t61-11\t126-40\t12\n2\tBC37 Amager\t6\t4\t38-34\t89-77\t8\n3\tGentofte 4\t6\t3\t38-34\t88-80\t7\n4\tTjenerne Kbh.\t6\t1\t29-43\t63-101\t5\n5\tLyngby 4\t6\t1\t30-42\t75-92\t4\n6\tFKIF Frederiksberg 3\t6\t1\t30-42\t78-92\t3\n7\tHvidovre 4\t6\t0\t26-46\t65-102\t3\n8\tSundby KFUM udgået\t0\t0\t0-0\t0-0\t0\n\nUdskriv | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+  "tables": [
+    [
+      [
+        "",
+        "FAQ Opret brugerkonto Log ind"
+      ]
+    ],
+    [
+      [
+        "#",
+        "Hold",
+        "K.Kampe",
+        "V.Vundne",
+        "Score",
+        "Sæt",
+        "P.Point"
+      ],
+      [
+        "1",
+        "Gladsaxe Søborg 3",
+        "6",
+        "6",
+        "61-11",
+        "126-40",
+        "12"
+      ],
+      [
+        "2",
+        "BC37 Amager",
+        "6",
+        "4",
+        "38-34",
+        "89-77",
+        "8"
+      ],
+      [
+        "3",
+        "Gentofte 4",
+        "6",
+        "3",
+        "38-34",
+        "88-80",
+        "7"
+      ],
+      [
+        "4",
+        "Tjenerne Kbh.",
+        "6",
+        "1",
+        "29-43",
+        "63-101",
+        "5"
+      ],
+      [
+        "5",
+        "Lyngby 4",
+        "6",
+        "1",
+        "30-42",
+        "75-92",
+        "4"
+      ],
+      [
+        "6",
+        "FKIF Frederiksberg 3",
+        "6",
+        "1",
+        "30-42",
+        "78-92",
+        "3"
+      ],
+      [
+        "7",
+        "Hvidovre 4",
+        "6",
+        "0",
+        "26-46",
+        "65-102",
+        "3"
+      ],
+      [
+        "8",
+        "Sundby KFUM udgået",
+        "0",
+        "0",
+        "0-0",
+        "0-0",
+        "0"
+      ]
+    ]
+  ]
+}

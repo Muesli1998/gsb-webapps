@@ -1,0 +1,108 @@
+{
+  "season": 2020,
+  "groupId": "13311",
+  "status": "verified",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2020,13311,1,,,,1093,",
+  "retrievedAt": "2026-09-12T18:33:57.997Z",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+60 2020/2021\nVis rækker\n\n\n60+ 1. Serie Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVUNDNE\tSCORE\tSÆT\tPOINT\n1\tGladsaxe Søborg 1\t2\t1\t12-4\t26-10\t3\n2\tKBK Kbh. 1\t2\t1\t12-4\t26-11\t3\n3\tHvidovre 1\t2\t1\t10-6\t21-16\t3\n4\tLyngby 1\t1\t1\t8-0\t16-0\t2\n5\tFKIF Frederiksberg 1\t1\t1\t7-1\t14-4\t2\n6\tDrive 1\t2\t0\t5-11\t14-22\t1\n7\tDragør 1\t1\t0\t0-8\t0-16\t0\n8\tVanløse 1\t1\t0\t0-8\t0-16\t0\n9\tHvidovre HB2000 1\t2\t0\t2-14\t7-29\t0\n\nUdskriv | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+  "tables": [
+    [
+      [
+        "",
+        "FAQ Opret brugerkonto Log ind"
+      ]
+    ],
+    [
+      [
+        "#",
+        "HOLD",
+        "KAMPE",
+        "VUNDNE",
+        "SCORE",
+        "SÆT",
+        "POINT"
+      ],
+      [
+        "1",
+        "Gladsaxe Søborg 1",
+        "2",
+        "1",
+        "12-4",
+        "26-10",
+        "3"
+      ],
+      [
+        "2",
+        "KBK Kbh. 1",
+        "2",
+        "1",
+        "12-4",
+        "26-11",
+        "3"
+      ],
+      [
+        "3",
+        "Hvidovre 1",
+        "2",
+        "1",
+        "10-6",
+        "21-16",
+        "3"
+      ],
+      [
+        "4",
+        "Lyngby 1",
+        "1",
+        "1",
+        "8-0",
+        "16-0",
+        "2"
+      ],
+      [
+        "5",
+        "FKIF Frederiksberg 1",
+        "1",
+        "1",
+        "7-1",
+        "14-4",
+        "2"
+      ],
+      [
+        "6",
+        "Drive 1",
+        "2",
+        "0",
+        "5-11",
+        "14-22",
+        "1"
+      ],
+      [
+        "7",
+        "Dragør 1",
+        "1",
+        "0",
+        "0-8",
+        "0-16",
+        "0"
+      ],
+      [
+        "8",
+        "Vanløse 1",
+        "1",
+        "0",
+        "0-8",
+        "0-16",
+        "0"
+      ],
+      [
+        "9",
+        "Hvidovre HB2000 1",
+        "2",
+        "0",
+        "2-14",
+        "7-29",
+        "0"
+      ]
+    ]
+  ]
+}

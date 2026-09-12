@@ -1,0 +1,99 @@
+{
+  "season": 2024,
+  "groupId": "16929",
+  "status": "verified",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2024,16929,1,,,,1093,",
+  "retrievedAt": "2026-09-12T18:33:23.200Z",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+70 2024/2025\nVis rækker\n\n\n70+ Eliteserien Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVUNDNE\tSCORE\tSÆT\tPOINT\n1\tGladsaxe Søborg 1\t7\t6\t32-10\t68-26\t12\n2\tKBK Kbh. 1\t7\t5\t29-13\t61-30\t11\n3\tNBK Amager 1\t7\t4\t28-14\t60-35\t8\n4\tHvidovre 1\t7\t3\t22-20\t47-32\t8\n5\tFrederiksberg 1\t7\t2\t17-25\t38-54\t5\n6\tFKIF Frederiksberg 1\t7\t2\t15-27\t33-56\t5\n7\tBK36 Kbh. 1\t7\t2\t15-27\t19-56\t4\n8\tFrederiksberg 2\t7\t1\t10-32\t28-65\t3\n\nUdskriv | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+  "tables": [
+    [
+      [
+        "",
+        "FAQ Opret brugerkonto Log ind"
+      ]
+    ],
+    [
+      [
+        "#",
+        "HOLD",
+        "KAMPE",
+        "VUNDNE",
+        "SCORE",
+        "SÆT",
+        "POINT"
+      ],
+      [
+        "1",
+        "Gladsaxe Søborg 1",
+        "7",
+        "6",
+        "32-10",
+        "68-26",
+        "12"
+      ],
+      [
+        "2",
+        "KBK Kbh. 1",
+        "7",
+        "5",
+        "29-13",
+        "61-30",
+        "11"
+      ],
+      [
+        "3",
+        "NBK Amager 1",
+        "7",
+        "4",
+        "28-14",
+        "60-35",
+        "8"
+      ],
+      [
+        "4",
+        "Hvidovre 1",
+        "7",
+        "3",
+        "22-20",
+        "47-32",
+        "8"
+      ],
+      [
+        "5",
+        "Frederiksberg 1",
+        "7",
+        "2",
+        "17-25",
+        "38-54",
+        "5"
+      ],
+      [
+        "6",
+        "FKIF Frederiksberg 1",
+        "7",
+        "2",
+        "15-27",
+        "33-56",
+        "5"
+      ],
+      [
+        "7",
+        "BK36 Kbh. 1",
+        "7",
+        "2",
+        "15-27",
+        "19-56",
+        "4"
+      ],
+      [
+        "8",
+        "Frederiksberg 2",
+        "7",
+        "1",
+        "10-32",
+        "28-65",
+        "3"
+      ]
+    ]
+  ]
+}

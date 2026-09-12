@@ -1,0 +1,90 @@
+{
+  "season": 2023,
+  "groupId": "16087",
+  "status": "verified",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2023,16087,1,,,,1093,",
+  "retrievedAt": "2026-09-12T18:33:26.914Z",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U17/U19 2023/2024\nVis rækker\n\n\nU17/U19 - 6600 4 spillere Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVUNDNE\tSCORE\tSÆT\tPOINT\n1\tNBK Amager 1\t6\t5\t30-7\t64-19\t21\n2\tGladsaxe Søborg 1\t6\t5\t28-8\t56-23\t20\n3\tBC37 Amager 4\t6\t4\t24-13\t50-30\t16\n4\tBC37 Amager 3\t6\t4\t23-13\t52-29\t16\n5\tValby BC 1\t6\t2\t13-23\t30-47\t7\n6\tLyngby 3\t6\t1\t6-30\t15-61\t4\n7\tVanløse 1\t6\t0\t3-33\t10-68\t1\n\nUdskriv | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+  "tables": [
+    [
+      [
+        "",
+        "FAQ Opret brugerkonto Log ind"
+      ]
+    ],
+    [
+      [
+        "#",
+        "HOLD",
+        "KAMPE",
+        "VUNDNE",
+        "SCORE",
+        "SÆT",
+        "POINT"
+      ],
+      [
+        "1",
+        "NBK Amager 1",
+        "6",
+        "5",
+        "30-7",
+        "64-19",
+        "21"
+      ],
+      [
+        "2",
+        "Gladsaxe Søborg 1",
+        "6",
+        "5",
+        "28-8",
+        "56-23",
+        "20"
+      ],
+      [
+        "3",
+        "BC37 Amager 4",
+        "6",
+        "4",
+        "24-13",
+        "50-30",
+        "16"
+      ],
+      [
+        "4",
+        "BC37 Amager 3",
+        "6",
+        "4",
+        "23-13",
+        "52-29",
+        "16"
+      ],
+      [
+        "5",
+        "Valby BC 1",
+        "6",
+        "2",
+        "13-23",
+        "30-47",
+        "7"
+      ],
+      [
+        "6",
+        "Lyngby 3",
+        "6",
+        "1",
+        "6-30",
+        "15-61",
+        "4"
+      ],
+      [
+        "7",
+        "Vanløse 1",
+        "6",
+        "0",
+        "3-33",
+        "10-68",
+        "1"
+      ]
+    ]
+  ]
+}

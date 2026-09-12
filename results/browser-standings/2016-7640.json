@@ -1,0 +1,99 @@
+{
+  "season": 2016,
+  "groupId": "7640",
+  "status": "verified",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2016,7640,1,,,,1093,",
+  "retrievedAt": "2026-09-12T18:34:28.558Z",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN 2016/2017\nVis rækker\n\n\n3. Serie P1 Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVUNDNE\tSCORE\tSÆT\tPOINT\n1\tGladsaxe Søborg 3\t6\t5\t62-16\t129-43\t16\n2\tDrive 7\t6\t5\t48-30\t104-81\t13\n3\tBC KVIK Kbh.\t6\t3\t40-38\t91-83\t10\n4\tKSI Badmintonklub Kbh. 3\t6\t3\t38-40\t89-89\t9\n5\tHvidovre HB2000 3\t6\t3\t36-42\t85-93\t8\n6\tKBK Kbh. 5\t6\t1\t24-54\t56-120\t4\n7\tSct. Jørgen Kbh.\t6\t1\t25-53\t68-113\t3\n8\tCharlottenlund 5 udgået\t0\t0\t0-0\t0-0\t0\n\nUdskriv | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+  "tables": [
+    [
+      [
+        "",
+        "FAQ Opret brugerkonto Log ind"
+      ]
+    ],
+    [
+      [
+        "#",
+        "HOLD",
+        "KAMPE",
+        "VUNDNE",
+        "SCORE",
+        "SÆT",
+        "POINT"
+      ],
+      [
+        "1",
+        "Gladsaxe Søborg 3",
+        "6",
+        "5",
+        "62-16",
+        "129-43",
+        "16"
+      ],
+      [
+        "2",
+        "Drive 7",
+        "6",
+        "5",
+        "48-30",
+        "104-81",
+        "13"
+      ],
+      [
+        "3",
+        "BC KVIK Kbh.",
+        "6",
+        "3",
+        "40-38",
+        "91-83",
+        "10"
+      ],
+      [
+        "4",
+        "KSI Badmintonklub Kbh. 3",
+        "6",
+        "3",
+        "38-40",
+        "89-89",
+        "9"
+      ],
+      [
+        "5",
+        "Hvidovre HB2000 3",
+        "6",
+        "3",
+        "36-42",
+        "85-93",
+        "8"
+      ],
+      [
+        "6",
+        "KBK Kbh. 5",
+        "6",
+        "1",
+        "24-54",
+        "56-120",
+        "4"
+      ],
+      [
+        "7",
+        "Sct. Jørgen Kbh.",
+        "6",
+        "1",
+        "25-53",
+        "68-113",
+        "3"
+      ],
+      [
+        "8",
+        "Charlottenlund 5 udgået",
+        "0",
+        "0",
+        "0-0",
+        "0-0",
+        "0"
+      ]
+    ]
+  ]
+}

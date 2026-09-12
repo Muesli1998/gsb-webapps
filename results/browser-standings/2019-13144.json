@@ -1,0 +1,99 @@
+{
+  "season": 2019,
+  "groupId": "13144",
+  "status": "verified",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2019,13144,1,,,,1093,",
+  "retrievedAt": "2026-09-12T18:34:03.060Z",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN 2019/2020\nVis rækker\n\n\nKS-Oprykning KS-Oprykning\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVUNDNE\tSCORE\tSÆT\tPOINT\n1\tKSI Badmintonklub Kbh. 1\t3\t3\t33-6\t67-19\t15\n2\tGladsaxe Søborg 2\t3\t2\t26-13\t58-33\t12\n3\tDragør 2\t3\t3\t26-13\t57-40\t11\n4\tDrive 4\t3\t1\t16-23\t41-50\t7\n5\tHvidovre 4\t3\t1\t15-24\t34-53\t7\n6\tVanløse 2\t3\t1\t12-27\t34-56\t3\n7\tFrederiksberg 2\t3\t0\t13-26\t33-55\t3\n8\tBC37 Amager 2\t3\t1\t15-24\t36-54\t2\n\nUdskriv | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+  "tables": [
+    [
+      [
+        "",
+        "FAQ Opret brugerkonto Log ind"
+      ]
+    ],
+    [
+      [
+        "#",
+        "HOLD",
+        "KAMPE",
+        "VUNDNE",
+        "SCORE",
+        "SÆT",
+        "POINT"
+      ],
+      [
+        "1",
+        "KSI Badmintonklub Kbh. 1",
+        "3",
+        "3",
+        "33-6",
+        "67-19",
+        "15"
+      ],
+      [
+        "2",
+        "Gladsaxe Søborg 2",
+        "3",
+        "2",
+        "26-13",
+        "58-33",
+        "12"
+      ],
+      [
+        "3",
+        "Dragør 2",
+        "3",
+        "3",
+        "26-13",
+        "57-40",
+        "11"
+      ],
+      [
+        "4",
+        "Drive 4",
+        "3",
+        "1",
+        "16-23",
+        "41-50",
+        "7"
+      ],
+      [
+        "5",
+        "Hvidovre 4",
+        "3",
+        "1",
+        "15-24",
+        "34-53",
+        "7"
+      ],
+      [
+        "6",
+        "Vanløse 2",
+        "3",
+        "1",
+        "12-27",
+        "34-56",
+        "3"
+      ],
+      [
+        "7",
+        "Frederiksberg 2",
+        "3",
+        "0",
+        "13-26",
+        "33-55",
+        "3"
+      ],
+      [
+        "8",
+        "BC37 Amager 2",
+        "3",
+        "1",
+        "15-24",
+        "36-54",
+        "2"
+      ]
+    ]
+  ]
+}
