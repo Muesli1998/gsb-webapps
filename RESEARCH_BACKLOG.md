@@ -45,3 +45,11 @@ ikke gemmes eller genbruges efter timeout.
 Turnerings-/spillerresearch er et side-/idéspor. Det aktive hovedmål er igen
 en komplet, evidensbaseret GSB-holdkampdatabase med rådata, fejlstatus,
 walkovers, aldersgruppe-ID’er og dokumenterede fallback-links.
+
+## Næste holdkamp-test
+
+Undersøg særskilt, om slutstillinger og gruppeplaceringer kan hentes fra et
+login-frit Nembadminton-felt eller skal suppleres fra BadmintonPlayer. Kamp-
+discovery-kæden indeholder kampe og gruppe-ID’er, men en slutstilling er endnu
+ikke dokumenteret i dens svar. Testen skal bevare rå gruppe-/række-tekst og
+skelne mellem almindelig pulje, kvalifikation og slutspil.
