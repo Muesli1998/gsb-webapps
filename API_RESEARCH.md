@@ -392,6 +392,13 @@ point 2-0. Terminal-`fetch` returnerer kun en dynamisk skal, så browser-
 rendering er nødvendig for denne type data. Walkovers skal gemmes som særskilt
 status og ikke fortolkes som almindelige sætresultater.
 
+Under trin 1–5 blev der fundet en checkpoint-fejl i den eksisterende
+kampberigelse: talbaserede `matchId` blev sammenlignet med tekstbaserede ID’er,
+så en genkørsel kunne skrive dubletter. Sammenligningen er rettet til
+normaliserede tekst-ID’er. Den oprindelige råfil er bevaret, og en deduplikeret
+arbejdsfil med 2.818 unikke kampe er genereret som
+`results/gsb-match-details-all-dedup.jsonl`.
+
 ## Terra-review: alternativ ranglistevej
 
 Terra vurderer, at de alternative ASMX-metoder (`GetRankingListPlayersSenior` og `GetRankingListPlayersHide`) ikke løser problemet med kendte parametre; gentagne kald og parameter-grid gav HTTP 500. Den nye SPA-endpoint `/api/RangkingListVersion` er ikke offentlig (401).
