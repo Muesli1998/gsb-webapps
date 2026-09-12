@@ -1,0 +1,1 @@
+const qs=['query{tournamentGroups(seasonId:2025){id name}}','query{tournamentTiers{id name}}']; for(const query of qs){const r=await fetch('https://app.nembadminton.dk/graphql',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({query})});console.log(query,JSON.stringify(await r.json()));}
