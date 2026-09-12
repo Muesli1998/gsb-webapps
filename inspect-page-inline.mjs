@@ -1,0 +1,1 @@
+const u='https://badmintonplayer.dk/DBF/Turnering/VisResultater/#115342,490920'; const s=await (await fetch(u)).text(); console.log('len',s.length); for(const term of ['SearchTournamentResults','SearchTournamentMatches','GetTournamentEvents','tournamentclassid']){let i=s.indexOf(term); console.log(term,i,i>=0?s.slice(i-500,i+1000):'');}

@@ -1,0 +1,5 @@
+len 23289
+SearchTournamentResults -1 
+SearchTournamentMatches -1 
+GetTournamentEvents -1 
+tournamentclassid -1 
