@@ -215,3 +215,9 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 - Den kræver in-app-browser/CUA accessibility snapshot efter dynamisk rendering; statisk Playwright body/HTML alene er ikke et gyldigt succesflag.
 - Gate: Kampnr + Resultat + hold + individuel sektion eller dokumenteret walkover.
 
+
+## 2026-09-13 – parallel gap audit og ungdomsgenindlæsning
+- Ungdomsgenindlæsningen kører resumérbart via `scripts/run-youth-browser-fallback.mjs` og gemmer hver dynamiske browserpayload separat i `results/browser-fallback-youth/`.
+- En særskilt read-only audit (`scripts/audit-browser-recovery-candidates.mjs`) sammenholder de gemte payloads med `team_matches` og måler, hvilke manglende hjemme/ude-, resultat- og pointfelter der kan dokumenteres direkte.
+- Ved første måling var 726 dynamiske kampdetaljer tilgængelige; 670 havde udfyldelige hjemme/ude-felter og 640 havde udfyldelige resultater/point. Tallene skal regenereres, når ungdomskørslen er færdig.
+- API-/felt-auditten i `results/api-gap-audit.md` viser fortsat, at status `complete` ikke i sig selv dokumenterer udfyldte felter. Feltdækning skal derfor valideres særskilt.
