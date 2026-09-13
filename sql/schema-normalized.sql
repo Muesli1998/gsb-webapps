@@ -64,7 +64,8 @@ CREATE TABLE IF NOT EXISTS individual_matches (
   home_score_raw TEXT,
   away_score_raw TEXT,
   winner_side TEXT,
-  status TEXT DEFAULT 'unknown'
+  status TEXT DEFAULT 'unknown',
+  result_marker_raw TEXT
 );
 CREATE TABLE IF NOT EXISTS individual_match_players (
   individual_match_id INTEGER NOT NULL REFERENCES individual_matches(individual_match_id),

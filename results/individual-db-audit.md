@@ -1,15 +1,19 @@
 # Audit af individuelle holdkampdata
 
-Genereret: 2026-09-13T07:24:09.140Z
+Genereret: 2026-09-13T07:43:59.377Z
 
 - Holdkampe i SQLite: **2818**
-- Holdkampe med individuelle rækker: **1374**
-- Individuelle rækker: **14216**
-- Spillerrelationer: **49986**
-- Individuelle rækker med vinderfelt: **13256**
-- Individuelle rækker med score: **14216**
-- Individuelle rækker hvor hjemme- og ude-score er identiske tekstfelter: **933**
-- Holdkampe med resultat men uden individuelle rækker: **1308**
+- Holdkampe med individuelle rækker: **2367**
+- Individuelle rækker: **20319**
+- Spillerrelationer: **67196**
+- Individuelle rækker med vinderfelt: **19352**
+- Individuelle rækker med score: **20319**
+- Individuelle rækker hvor hjemme- og ude-score er identiske tekstfelter: **936**
+- Holdkampe med resultat men uden individuelle rækker: **315**
+
+- 0-0-særstatusser: **8**
+- Rækker med rå resultatmarkør: **309**
+- Statusfordeling: api_repaired=13285, browser_parsed=6100, browser_zero_score=8, complete=926
 
 ## Browserpayloads
 
@@ -22,23 +26,23 @@ Genereret: 2026-09-13T07:24:09.140Z
 
 | Sæson | Holdkampe | Med individuelle rækker | Individuelle rækker | Med holdresultat | Resultat uden individuelle rækker |
 |---:|---:|---:|---:|---:|---:|
-| 2010 | 11 | 0 | 0 | 11 | 11 |
+| 2010 | 11 | 11 | 142 | 11 | 0 |
 | 2011 | 169 | 10 | 130 | 169 | 159 |
-| 2012 | 131 | 79 | 860 | 131 | 52 |
-| 2013 | 134 | 91 | 966 | 134 | 43 |
-| 2014 | 144 | 91 | 984 | 142 | 51 |
-| 2015 | 156 | 108 | 1166 | 156 | 48 |
-| 2016 | 147 | 93 | 1000 | 147 | 54 |
-| 2017 | 133 | 88 | 949 | 133 | 45 |
-| 2018 | 143 | 104 | 1093 | 143 | 39 |
-| 2019 | 125 | 82 | 869 | 107 | 25 |
-| 2020 | 162 | 31 | 303 | 51 | 20 |
-| 2021 | 186 | 86 | 881 | 186 | 100 |
-| 2022 | 227 | 95 | 986 | 227 | 132 |
-| 2023 | 255 | 128 | 1178 | 255 | 127 |
-| 2024 | 295 | 130 | 1272 | 294 | 164 |
-| 2025 | 400 | 158 | 1579 | 396 | 238 |
+| 2012 | 131 | 112 | 1092 | 131 | 19 |
+| 2013 | 134 | 128 | 1195 | 134 | 6 |
+| 2014 | 144 | 122 | 1173 | 142 | 20 |
+| 2015 | 156 | 127 | 1269 | 156 | 29 |
+| 2016 | 147 | 127 | 1206 | 147 | 20 |
+| 2017 | 133 | 127 | 1193 | 133 | 6 |
+| 2018 | 143 | 138 | 1300 | 143 | 5 |
+| 2019 | 125 | 106 | 1009 | 107 | 1 |
+| 2020 | 162 | 51 | 423 | 51 | 0 |
+| 2021 | 186 | 180 | 1459 | 186 | 6 |
+| 2022 | 227 | 221 | 1736 | 227 | 6 |
+| 2023 | 255 | 239 | 1842 | 255 | 16 |
+| 2024 | 295 | 286 | 2229 | 294 | 8 |
+| 2025 | 400 | 382 | 2921 | 396 | 14 |
 
 ## Fortolkning
 
-Den nuværende individuelle tabel dækker kun en delmængde af holdkampene. Identiske scoretekster i hjemme- og ude-felterne er et datamodel-/importproblem, som skal rettes ved næste parserimport; det er ikke evidens for ens scores i selve kampen. Browserpayload-statistikken måler kun filer, der ligger lokalt, og er derfor et dækningsmål, ikke et bevis på at resten af kampene mangler på badmintonplayer.dk.
+Den individuelle tabel dækker nu både API-rækker og browserfundne kategorier. Rækker med 0-0-sæt og rå markør gemmes særskilt som administrative/no-score-hændelser; de behandles ikke som almindelige spillede sæt. Browserpayload-statistikken måler kun filer, der ligger lokalt, og er derfor et dækningsmål, ikke et bevis på at resten af kampene mangler på badmintonplayer.dk.

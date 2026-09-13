@@ -37,3 +37,13 @@ Dato: 2026-09-13
 
 Metodedetaljer til en senere skill står i `COMPLETE_RESULT_FALLBACK_METHOD.md`; procesloggen står i `TEST_RUN_LOG.md`.
 
+
+## Individuelle kampe – seneste synkronisering
+
+- 20.319 individuelle kategorier er nu gemt for 2.367 af de 2.818 holdkampe.
+- 67.196 spillerrelationer og 7.599 unikke spillernavne er gemt.
+- 6.103 browserkategorier blev tilføjet efter en score-dry-run uden konflikter mod API-rækkerne.
+- 138 Golden Set-sektioner blev fundet; 133 har scores og er gemt som egne kategorier.
+- 8 kategorier har 0-0-sæt med rå resultatmarkør. De er markeret browser_zero_score og skal ikke tælles som almindelige spillede sæt.
+- 315 holdkampe med et holdresultat mangler fortsat individuelle kategorier. De er næste dækningshul.
+- Ingen ID- eller foreign-key-fejl efter importen.

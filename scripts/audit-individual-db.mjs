@@ -16,6 +16,9 @@ const report = {
     individualRowsWithWinnerSide: scalar("SELECT COUNT(*) AS n FROM individual_matches WHERE winner_side IS NOT NULL AND trim(winner_side)<>''").n,
     individualRowsWithAnyScore: scalar("SELECT COUNT(*) AS n FROM individual_matches WHERE (trim(home_score_raw)<>'') OR (trim(away_score_raw)<>'')").n,
     individualRowsWithSameHomeAwayScore: scalar("SELECT COUNT(*) AS n FROM individual_matches WHERE home_score_raw IS NOT NULL AND trim(home_score_raw)<>'' AND home_score_raw=away_score_raw").n,
+    individualRowsWithZeroZeroScore: scalar("SELECT COUNT(*) AS n FROM individual_matches WHERE trim(COALESCE(home_score_raw,''))='0' AND trim(COALESCE(away_score_raw,''))='0'").n,
+    individualRowsWithResultMarker: scalar("SELECT COUNT(*) AS n FROM individual_matches WHERE trim(COALESCE(result_marker_raw,''))<>''").n,
+    individualRowsByStatus: all('SELECT status, COUNT(*) AS n FROM individual_matches GROUP BY status ORDER BY status'),
     teamMatchesWithResultAndNoIndividualRows: scalar("SELECT COUNT(*) AS n FROM team_matches tm LEFT JOIN individual_matches im ON im.team_match_id=tm.team_match_id WHERE trim(COALESCE(tm.result_raw,''))<>'' AND trim(tm.result_raw)<>'-' AND im.individual_match_id IS NULL").n
   },
   bySeason: all(`SELECT tm.season_id AS season,
@@ -56,9 +59,10 @@ report.browserPayloads = {
 fs.writeFileSync('results/individual-db-audit.json', JSON.stringify(report, null, 2));
 let md = `# Audit af individuelle holdkampdata\n\nGenereret: ${report.generatedAt}\n\n`;
 md += `- Holdkampe i SQLite: **${report.database.teamMatches}**\n- Holdkampe med individuelle rækker: **${report.database.teamMatchesWithIndividualRows}**\n- Individuelle rækker: **${report.database.individualMatches}**\n- Spillerrelationer: **${report.database.playerRelations}**\n- Individuelle rækker med vinderfelt: **${report.database.individualRowsWithWinnerSide}**\n- Individuelle rækker med score: **${report.database.individualRowsWithAnyScore}**\n- Individuelle rækker hvor hjemme- og ude-score er identiske tekstfelter: **${report.database.individualRowsWithSameHomeAwayScore}**\n- Holdkampe med resultat men uden individuelle rækker: **${report.database.teamMatchesWithResultAndNoIndividualRows}**\n\n`;
+md += `- 0-0-særstatusser: **${report.database.individualRowsWithZeroZeroScore}**\n- Rækker med rå resultatmarkør: **${report.database.individualRowsWithResultMarker}**\n- Statusfordeling: ${report.database.individualRowsByStatus.map((x) => `${x.status}=${x.n}`).join(', ')}\n\n`;
 md += `## Browserpayloads\n\n- Unikke payloads med rå tekst: **${report.browserPayloads.uniqueWithRawText}**\n- Med kategorisektioner: **${report.browserPayloads.withCategories}**\n- Med faktiske scores efter Resultat-feltet: **${report.browserPayloads.withScores}**\n- Med eksplicit no-play-/walkovertekst: **${report.browserPayloads.withNoPlayText}**\n\n`;
 md += `## Pr. sæson\n\n| Sæson | Holdkampe | Med individuelle rækker | Individuelle rækker | Med holdresultat | Resultat uden individuelle rækker |\n|---:|---:|---:|---:|---:|---:|\n`;
 for (const row of report.bySeason) md += `| ${row.season} | ${row.team_matches} | ${row.with_individual_rows} | ${row.individual_rows} | ${row.with_team_result} | ${row.result_without_individual_rows} |\n`;
-md += `\n## Fortolkning\n\nDen nuværende individuelle tabel dækker kun en delmængde af holdkampene. Identiske scoretekster i hjemme- og ude-felterne er et datamodel-/importproblem, som skal rettes ved næste parserimport; det er ikke evidens for ens scores i selve kampen. Browserpayload-statistikken måler kun filer, der ligger lokalt, og er derfor et dækningsmål, ikke et bevis på at resten af kampene mangler på badmintonplayer.dk.\n`;
+md += `\n## Fortolkning\n\nDen individuelle tabel dækker nu både API-rækker og browserfundne kategorier. Rækker med 0-0-sæt og rå markør gemmes særskilt som administrative/no-score-hændelser; de behandles ikke som almindelige spillede sæt. Browserpayload-statistikken måler kun filer, der ligger lokalt, og er derfor et dækningsmål, ikke et bevis på at resten af kampene mangler på badmintonplayer.dk.\n`;
 fs.writeFileSync('results/individual-db-audit.md', md);
 console.log(JSON.stringify(report, null, 2));

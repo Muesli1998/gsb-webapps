@@ -274,3 +274,12 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 - Efter reparation har 13.256 rækker et vinderfelt. 933 rækker har stadig identiske hjemme/ude-tekster: 926 med `- - -` samt 7 med lave administrative værdier (`0-0`, `2-2` eller `3-3`), som kræver separat semantisk afklaring og ikke bruges som almindelige badminton-scores.
 - En backup ligger i `data/backups/gsb-statistik-normalized-pre-score-repair.db`. Reparationen ændrede ikke holdkampfelter, stillinger eller de dokumenterede no-result-statusser.
 - Rapporten er gemt i `results/api-individual-score-repair.json`, `results/api-individual-score-repair.md` og `results/individual-db-audit.md`.
+
+## 2026-09-13 – browserparser, Golden Set og 0-0-markører
+- \`scripts/parse-browser-individual-payloads.mjs\` blev gjort strengere: et scoresignal skal være tab/NBSP-afgrænset, så datoer i spillernavne som \`27/04-62\` ikke læses som sætresultater.
+- Parseren deler nu også en særskilt \`Golden Set\`-sektion ud fra den foregående kategori. Der blev fundet 138 Golden Set-sektioner, hvor 133 har scores.
+- Dry-run mod SQLite viste 6.103 nye kategorier uden scorekonflikter mod de eksisterende API-rækker. 27 tidligere rapporterede forskelle var alene spillernavne/orden/ukendt-spiller-markeringer; ingen havde scoreforskel.
+- 6.103 browserkategorier blev importeret i en transaktion med 17.210 spillerrelationer og 2.556 nye spillernavne. Backup ligger i \`data/backups/gsb-statistik-normalized-pre-browser-individual-import.db\`.
+- \`individual_matches.result_marker_raw\` blev tilføjet til skemaet. Markørteksten gemmes ordret, og 0-0-kategorier med markør sættes til status \`browser_zero_score\`, så de ikke forveksles med spillede sæt.
+- Efter import: 20.319 individuelle rækker, 67.196 spillerrelationer, 7.599 spillere, 2.367 holdkampe med individuelle rækker. 315 holdkampe med holdresultat mangler fortsat individuelle rækker.
+- Efterkontrol: ingen foreign-key-fejl eller ID-dubletter; holdkampenes 2.818-rækkers status/feltdækning er uændret. 8 individuelle kategorier har dokumenterede 0-0-sæt, og 309 har rå resultatmarkør.
