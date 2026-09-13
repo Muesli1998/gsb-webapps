@@ -266,3 +266,11 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 - De ruter, der faktisk viste kampdetaljen, viste fortsat `Resultat -` og ingen individuelle scores. Ingen alternativ rute afslørede et skjult holdresultat eller en skjult individuel kamp.
 - 384292 gav ved én kort 1,8 sekunders prøve et tomt standardsvar, men viste efter 7 sekunders ventetid den korrekte kamp med `Resultat -`; det var en renderingsforsinkelse, ikke et skjult resultat. Derfor er render-gate fortsat nødvendig, men den ændrer ikke no-result-fundene.
 - Ruteprøven er reproducerbar via `scripts/probe-no-result-routes.mjs`; den ændrer ikke databasen.
+
+## 2026-09-13 – reparation af API-individuelscores
+- `scripts/audit-individual-db.mjs` viste, at SQLite før reparation havde 14.216 individuelle rækker, men alle 14.216 havde samme tekst i `home_score_raw` og `away_score_raw`, fordi den oprindelige import skrev den samlede scoretekst til begge kolonner.
+- Dry-run af `scripts/repair-api-individual-scores.mjs` matchede alle 14.216 rækker mod 1.374 gemte API-kampdetaljer uden uoverensstemmende kamp/kategori-nøgler.
+- 13.290 rækker blev repareret fra de dokumenterede `homePoints`/`guestPoints`-sæt; `winner_side` blev beregnet ud fra flest vundne sæt. 926 rækker havde ingen numeriske scores (`- - -`) og blev ikke ændret.
+- Efter reparation har 13.256 rækker et vinderfelt. 933 rækker har stadig identiske hjemme/ude-tekster: 926 med `- - -` samt 7 med lave administrative værdier (`0-0`, `2-2` eller `3-3`), som kræver separat semantisk afklaring og ikke bruges som almindelige badminton-scores.
+- En backup ligger i `data/backups/gsb-statistik-normalized-pre-score-repair.db`. Reparationen ændrede ikke holdkampfelter, stillinger eller de dokumenterede no-result-statusser.
+- Rapporten er gemt i `results/api-individual-score-repair.json`, `results/api-individual-score-repair.md` og `results/individual-db-audit.md`.
