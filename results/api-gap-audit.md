@@ -1,6 +1,6 @@
 # API- og felt-dækning: aktuel audit
 
-Dato: 2026-09-13T06:42:38.468Z
+Dato: 2026-09-13T07:24:16.889Z
 
 ## Samlet
 
