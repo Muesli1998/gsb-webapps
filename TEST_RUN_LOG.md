@@ -260,3 +260,9 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 - Kamp 452835 er et separat, direkte dokumenteret eksempel uden for coronavinduet: `0-0`, `Point 0-0` og teksten `Afgjort uden kamp (afbud/udeblivelse)`.
 - Kamp 395200 har ungdomsopstilling uden scores og uden holdresultat; den skal behandles som `no_result`/uafklaret, ikke som spillet kamp.
 - Maskinlæsbar og læsbar rapport: `results/corona-no-result-audit.json` og `results/corona-no-result-audit.md`.
+
+### Rute-kontrol af mistanken om forkert indlæsning
+- Seks repræsentative no-result-kampe (384292, 365220, 387380, 395109, 395200 og 395153) blev åbnet via den normale kampfragmentrute og de alternative `1,1`-fragmentvarianter, der tidligere fandt kampene 1884/1888.
+- De ruter, der faktisk viste kampdetaljen, viste fortsat `Resultat -` og ingen individuelle scores. Ingen alternativ rute afslørede et skjult holdresultat eller en skjult individuel kamp.
+- 384292 gav ved én kort 1,8 sekunders prøve et tomt standardsvar, men viste efter 7 sekunders ventetid den korrekte kamp med `Resultat -`; det var en renderingsforsinkelse, ikke et skjult resultat. Derfor er render-gate fortsat nødvendig, men den ændrer ikke no-result-fundene.
+- Ruteprøven er reproducerbar via `scripts/probe-no-result-routes.mjs`; den ændrer ikke databasen.
