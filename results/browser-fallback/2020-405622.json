@@ -12,5 +12,10 @@
   "resultFile": "results/browser-fallback/2020-405622.json",
   "verifiedAt": "2026-09-12T16:58:08.668Z",
   "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
-  "resultSource": "browser_accessibility_tree"
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:49:41.998Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13228,1,8,,405622,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADDAN SEN 2020/2021\nVis rækker\n\n\nDanmarksserien Pulje 5\nStilling\nVis alle kampe\n\nKampnr\t405622\nRunde\tNY6 29-05-2021\nTid\tlø 29-05-2021 14:00\nSpillested\tGribskovhallen\nLarsensvej 15B\n3230 Græsted\nHjemmehold\tTeam GSG\nJesper Mikkelsen\nteamgsg.jesper@gmail.com\n40159527\nUdehold\tGladsaxe Søborg\nKristian Boye Nielsen\nboye@firkant.net\n217651561\nResultat\t-\nPoint\t-\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

@@ -8,10 +8,17 @@
   "leagueGroupId": "12591",
   "roundDate": "2020-03-22",
   "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12591,1,8,,365803,1093,",
-  "status": "browser_no_match_id",
+  "status": "verified",
   "resultFile": "results/browser-fallback/2019-365803.json",
-  "verifiedAt": "2026-09-12T17:08:56.875Z",
-  "resultSource": "playwright_persistent_browser",
-  "verification": "Page loaded but match id was not visible",
-  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12591,1,8,,365803,1093,"
+  "verifiedAt": "2026-09-12T19:14:34.605Z",
+  "resultSource": "playwright_persistent_browser_retry",
+  "verification": "Dynamic match page rendered with match details",
+  "classification": "corona_suspended",
+  "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+  "classifiedAt": "2026-09-12T19:43:48.265Z",
+  "reverifiedAt": "2026-09-13T05:51:59.692Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12591,1,8,,365803,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+50 2019/2020\nVis rækker\n\n\n50+ 5. Serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t365803\nRunde\t7 22-03-2020\nTid\tsø 15-03-2020 11:00\nSpillested\tFBK-Hallen\nRolighedsvej 31\n1958 Frederiksberg C\nTelefon 35 39 18 87\nHjemmehold\tFrederiksberg 1\nClaus B. Lemche\nclemche@hotmail.dk\n53787210\nUdehold\tGladsaxe Søborg 4\nGert Poulsen\nNgp2860@gmail.com\n23203534\nResultat\t-\nPoint\t-\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

@@ -12,5 +12,10 @@
   "resultFile": "results/browser-fallback/2022-427011.json",
   "verifiedAt": "2026-09-12T16:58:08.668Z",
   "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
-  "resultSource": "browser_accessibility_tree"
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:49:04.214Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14882,1,8,,427011,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+70 2022/2023\nVis rækker\n\n\nSEN+70 1.serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t427011\nRunde\t4 06-11-2022\nTid\tsø 26-03-2023 12:30\nSpillested\tKBK-Hallen\nKrausesvej 12\n2100 København Ø\nTelefon 35 38 72 92\nHjemmehold\tKBK Kbh. 1\nVilhelm Schultz\nvilhelm.schultz@hotmail.com\n24840356\nUdehold\tGladsaxe Søborg 1\nLeif Hansen\n3xl@webspeed.dk\n20949568\nResultat\t5-1\nPoint\t2-0\n\tKBK Kbh. 1\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. D\t\nJesper Sletting Pedersen\nSteen Bergholdt\n\t\nLeif Hansen\nMogens Jørgensen\n\t21 - 18\t21 - 7\t\t\n2. D\t\nJens Carlsson\nVilhelm Schultz\n\t\nIrene Sterlie\nHelle Larsen\n\t21 - 14\t21 - 15\t\t\n3. D\t\nOle Steffen Johansen\nLars Clemmensen\n\t\nSvend Valentin Rasmussen\nNoomi Mortensen\n\t10 - 21\t13 - 21\t\t\n4. D\t\nJesper Sletting Pedersen\nJens Carlsson\n\t\nLeif Hansen\nHelle Larsen\n\t21 - 15\t21 - 11\t\t\n5. D\t\nOle Steffen Johansen\nSteen Bergholdt\n\t\nMogens Jørgensen\nNoomi Mortensen\n\t21 - 15\t22 - 20\t\t\n6. D\t\nLars Clemmensen\nVilhelm Schultz\n\t\nIrene Sterlie\nSvend Valentin Rasmussen\n\t21 - 16\t21 - 14\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

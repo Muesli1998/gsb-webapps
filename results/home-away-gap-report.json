@@ -1,116 +1,116 @@
 {
-  "generatedAt": "2026-09-13T05:37:56.877Z",
+  "generatedAt": "2026-09-13T06:40:14.796Z",
   "bySeason": [
     {
       "season_id": 2010,
-      "missing_home": 11,
-      "missing_away": 11,
-      "missing_result": 11,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 0,
       "total": 11
     },
     {
       "season_id": 2011,
-      "missing_home": 77,
-      "missing_away": 77,
-      "missing_result": 87,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 2,
       "total": 169
     },
     {
       "season_id": 2012,
-      "missing_home": 10,
-      "missing_away": 10,
-      "missing_result": 89,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 0,
       "total": 131
     },
     {
       "season_id": 2013,
-      "missing_home": 10,
-      "missing_away": 10,
-      "missing_result": 101,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 0,
       "total": 134
     },
     {
       "season_id": 2014,
-      "missing_home": 19,
-      "missing_away": 19,
-      "missing_result": 110,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 0,
       "total": 144
     },
     {
       "season_id": 2015,
-      "missing_home": 15,
-      "missing_away": 15,
-      "missing_result": 123,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 0,
       "total": 156
     },
     {
       "season_id": 2016,
-      "missing_home": 23,
-      "missing_away": 23,
-      "missing_result": 116,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 0,
       "total": 147
     },
     {
       "season_id": 2017,
-      "missing_home": 8,
-      "missing_away": 8,
-      "missing_result": 96,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 0,
       "total": 133
     },
     {
       "season_id": 2018,
-      "missing_home": 9,
-      "missing_away": 9,
-      "missing_result": 113,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 0,
       "total": 143
     },
     {
       "season_id": 2019,
       "missing_home": 0,
       "missing_away": 0,
-      "missing_result": 82,
+      "missing_result": 0,
       "total": 125
     },
     {
       "season_id": 2020,
-      "missing_home": 46,
-      "missing_away": 46,
-      "missing_result": 77,
+      "missing_home": 2,
+      "missing_away": 2,
+      "missing_result": 2,
       "total": 162
     },
     {
       "season_id": 2021,
-      "missing_home": 17,
-      "missing_away": 17,
-      "missing_result": 103,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 0,
       "total": 186
     },
     {
       "season_id": 2022,
-      "missing_home": 16,
-      "missing_away": 16,
-      "missing_result": 111,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 0,
       "total": 227
     },
     {
       "season_id": 2023,
-      "missing_home": 32,
-      "missing_away": 32,
-      "missing_result": 160,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 0,
       "total": 255
     },
     {
       "season_id": 2024,
-      "missing_home": 26,
-      "missing_away": 26,
-      "missing_result": 156,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 0,
       "total": 295
     },
     {
       "season_id": 2025,
-      "missing_home": 47,
-      "missing_away": 47,
-      "missing_result": 202,
+      "missing_home": 4,
+      "missing_away": 4,
+      "missing_result": 4,
       "total": 400
     }
   ],
@@ -134,78 +134,6 @@
       "result_raw": null
     },
     {
-      "external_match_id": "506441",
-      "season_id": 2025,
-      "gsb_team_id": 7,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "506838",
-      "season_id": 2025,
-      "gsb_team_id": 7,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "506844",
-      "season_id": 2025,
-      "gsb_team_id": 7,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "506845",
-      "season_id": 2025,
-      "gsb_team_id": 7,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "505211",
-      "season_id": 2025,
-      "gsb_team_id": 2,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "505213",
-      "season_id": 2025,
-      "gsb_team_id": 2,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "505215",
-      "season_id": 2025,
-      "gsb_team_id": 2,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "505216",
-      "season_id": 2025,
-      "gsb_team_id": 2,
-      "status": "browser_verified",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": "5-0"
-    },
-    {
       "external_match_id": "505217",
       "season_id": 2025,
       "gsb_team_id": 2,
@@ -224,793 +152,19 @@
       "result_raw": null
     },
     {
-      "external_match_id": "494334",
-      "season_id": 2025,
-      "gsb_team_id": 56,
-      "status": "api_error",
+      "external_match_id": "387862",
+      "season_id": 2020,
+      "gsb_team_id": 267,
+      "status": "corona_suspended",
       "home_name_raw": "",
       "away_name_raw": "",
       "result_raw": null
     },
     {
-      "external_match_id": "494335",
-      "season_id": 2025,
-      "gsb_team_id": 56,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "494336",
-      "season_id": 2025,
-      "gsb_team_id": 56,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "494337",
-      "season_id": 2025,
-      "gsb_team_id": 56,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "494347",
-      "season_id": 2025,
-      "gsb_team_id": 56,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "494348",
-      "season_id": 2025,
-      "gsb_team_id": 56,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "492129",
-      "season_id": 2025,
-      "gsb_team_id": 57,
-      "status": "browser_verified",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": "6-0"
-    },
-    {
-      "external_match_id": "492293",
-      "season_id": 2025,
-      "gsb_team_id": 57,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "492136",
-      "season_id": 2025,
-      "gsb_team_id": 57,
-      "status": "browser_verified",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "492138",
-      "season_id": 2025,
-      "gsb_team_id": 57,
-      "status": "browser_verified",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": "1-5"
-    },
-    {
-      "external_match_id": "492297",
-      "season_id": 2025,
-      "gsb_team_id": 57,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "492298",
-      "season_id": 2025,
-      "gsb_team_id": 57,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "492141",
-      "season_id": 2025,
-      "gsb_team_id": 57,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "492142",
-      "season_id": 2025,
-      "gsb_team_id": 57,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "492154",
-      "season_id": 2025,
-      "gsb_team_id": 57,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "492155",
-      "season_id": 2025,
-      "gsb_team_id": 57,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "492161",
-      "season_id": 2025,
-      "gsb_team_id": 57,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "492163",
-      "season_id": 2025,
-      "gsb_team_id": 57,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "487735",
-      "season_id": 2025,
-      "gsb_team_id": 58,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "486396",
-      "season_id": 2025,
-      "gsb_team_id": 70,
-      "status": "missing_players",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "487423",
-      "season_id": 2025,
-      "gsb_team_id": 76,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "486774",
-      "season_id": 2025,
-      "gsb_team_id": 76,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "486778",
-      "season_id": 2025,
-      "gsb_team_id": 76,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "486783",
-      "season_id": 2025,
-      "gsb_team_id": 76,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "487435",
-      "season_id": 2025,
-      "gsb_team_id": 76,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "487440",
-      "season_id": 2025,
-      "gsb_team_id": 76,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "487443",
-      "season_id": 2025,
-      "gsb_team_id": 76,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "486803",
-      "season_id": 2025,
-      "gsb_team_id": 76,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "487451",
-      "season_id": 2025,
-      "gsb_team_id": 77,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "487456",
-      "season_id": 2025,
-      "gsb_team_id": 77,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "487458",
-      "season_id": 2025,
-      "gsb_team_id": 77,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "487464",
-      "season_id": 2025,
-      "gsb_team_id": 77,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "487465",
-      "season_id": 2025,
-      "gsb_team_id": 77,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "487472",
-      "season_id": 2025,
-      "gsb_team_id": 77,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "487478",
-      "season_id": 2025,
-      "gsb_team_id": 77,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "469693",
-      "season_id": 2024,
-      "gsb_team_id": 112,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "469694",
-      "season_id": 2024,
-      "gsb_team_id": 112,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "469703",
-      "season_id": 2024,
-      "gsb_team_id": 112,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "469706",
-      "season_id": 2024,
-      "gsb_team_id": 112,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "469711",
-      "season_id": 2024,
-      "gsb_team_id": 112,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "469713",
-      "season_id": 2024,
-      "gsb_team_id": 112,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "469718",
-      "season_id": 2024,
-      "gsb_team_id": 112,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "469720",
-      "season_id": 2024,
-      "gsb_team_id": 112,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "469721",
-      "season_id": 2024,
-      "gsb_team_id": 112,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "469723",
-      "season_id": 2024,
-      "gsb_team_id": 112,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "469732",
-      "season_id": 2024,
-      "gsb_team_id": 112,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "469733",
-      "season_id": 2024,
-      "gsb_team_id": 112,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "465529",
-      "season_id": 2024,
-      "gsb_team_id": 129,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "465532",
-      "season_id": 2024,
-      "gsb_team_id": 129,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "465537",
-      "season_id": 2024,
-      "gsb_team_id": 129,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "465541",
-      "season_id": 2024,
-      "gsb_team_id": 129,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "465545",
-      "season_id": 2024,
-      "gsb_team_id": 129,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "465549",
-      "season_id": 2024,
-      "gsb_team_id": 129,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "465553",
-      "season_id": 2024,
-      "gsb_team_id": 129,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "465002",
-      "season_id": 2024,
-      "gsb_team_id": 130,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "465006",
-      "season_id": 2024,
-      "gsb_team_id": 130,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "465010",
-      "season_id": 2024,
-      "gsb_team_id": 130,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "465014",
-      "season_id": 2024,
-      "gsb_team_id": 130,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "465018",
-      "season_id": 2024,
-      "gsb_team_id": 130,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "465025",
-      "season_id": 2024,
-      "gsb_team_id": 130,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "465026",
-      "season_id": 2024,
-      "gsb_team_id": 130,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "462821",
-      "season_id": 2023,
-      "gsb_team_id": 152,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "462823",
-      "season_id": 2023,
-      "gsb_team_id": 152,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "462825",
-      "season_id": 2023,
-      "gsb_team_id": 152,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "463488",
-      "season_id": 2023,
-      "gsb_team_id": 153,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "452566",
-      "season_id": 2023,
-      "gsb_team_id": 154,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "452567",
-      "season_id": 2023,
-      "gsb_team_id": 154,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "452570",
-      "season_id": 2023,
-      "gsb_team_id": 154,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "452571",
-      "season_id": 2023,
-      "gsb_team_id": 154,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "452572",
-      "season_id": 2023,
-      "gsb_team_id": 154,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "452573",
-      "season_id": 2023,
-      "gsb_team_id": 154,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "454632",
-      "season_id": 2023,
-      "gsb_team_id": 155,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "454634",
-      "season_id": 2023,
-      "gsb_team_id": 155,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "452096",
-      "season_id": 2023,
-      "gsb_team_id": 155,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "452099",
-      "season_id": 2023,
-      "gsb_team_id": 155,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "452105",
-      "season_id": 2023,
-      "gsb_team_id": 155,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "452106",
-      "season_id": 2023,
-      "gsb_team_id": 155,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "452109",
-      "season_id": 2023,
-      "gsb_team_id": 155,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "452111",
-      "season_id": 2023,
-      "gsb_team_id": 155,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "446325",
-      "season_id": 2023,
-      "gsb_team_id": 165,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "446328",
-      "season_id": 2023,
-      "gsb_team_id": 165,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "446330",
-      "season_id": 2023,
-      "gsb_team_id": 165,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "446332",
-      "season_id": 2023,
-      "gsb_team_id": 165,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "446338",
-      "season_id": 2023,
-      "gsb_team_id": 165,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "446341",
-      "season_id": 2023,
-      "gsb_team_id": 165,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "445371",
-      "season_id": 2023,
-      "gsb_team_id": 172,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "445376",
-      "season_id": 2023,
-      "gsb_team_id": 172,
-      "status": "api_error",
-      "home_name_raw": "",
-      "away_name_raw": "",
-      "result_raw": null
-    },
-    {
-      "external_match_id": "445385",
-      "season_id": 2023,
-      "gsb_team_id": 172,
-      "status": "api_error",
+      "external_match_id": "387864",
+      "season_id": 2020,
+      "gsb_team_id": 267,
+      "status": "corona_suspended",
       "home_name_raw": "",
       "away_name_raw": "",
       "result_raw": null

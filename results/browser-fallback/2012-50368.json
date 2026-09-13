@@ -13,5 +13,9 @@
   "verifiedAt": "2026-09-12T17:10:39.555Z",
   "resultSource": "playwright_persistent_browser",
   "verification": "Dynamic BadmintonPlayer page rendered successfully",
-  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2012,1329,1,8,,50368,1093,"
+  "reverifiedAt": "2026-09-13T05:54:56.772Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2012,1329,1,8,,50368,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U17 2012/2013\nVis rækker\n\n\nU17 2. Serie U17 2. Serie\nStilling\nVis alle kampe\n\nKampnr\t50368\nRunde\t9 07-04-2013\nTid\tsø 07-04-2013 14:30\nSpillested\tFBK-Hallen\nRolighedsvej 31\n1958 Frederiksberg C\nTelefon 35 39 18 87\nHjemmehold\tFrederiksberg\nUdehold\tGladsaxe Søborg\nResultat\t0-8\nPoint\t0-2\nAfgjort uden kamp (afbud/udeblivelse)\n\nIndberetningen er ikke endelig og kan ændres\n\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

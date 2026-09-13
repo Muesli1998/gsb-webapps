@@ -13,5 +13,9 @@
   "verifiedAt": "2026-09-12T17:09:48.236Z",
   "resultSource": "playwright_persistent_browser",
   "verification": "Dynamic BadmintonPlayer page rendered successfully",
-  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7652,1,8,,239810,1093,"
+  "reverifiedAt": "2026-09-13T05:53:28.308Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7652,1,8,,239810,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+50 2016/2017\nVis rækker\n\n\n50+ 1.serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t239810\nRunde\t7 12-02-2017\nTid\tsø 05-02-2017 14:30\nSpillested\tKBK-Hallen\nKrausesvej 12\n2100 København Ø\nTelefon 35 38 72 92\nHjemmehold\tKBK Kbh.\nIvan Janell\nivanjanell@yahoo.dk\n41436903\nUdehold\tGladsaxe Søborg\nMichael Bjergsted\na.m.bjergsted@gmail.com\n27804490\nResultat\t0-8\nPoint\t0-2\nAfgjort uden kamp (afbud/udeblivelse)\n\nIndberetningen er ikke endelig og kan ændres\n\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

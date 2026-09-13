@@ -8,10 +8,17 @@
   "leagueGroupId": "13307",
   "roundDate": "2021-03-21",
   "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13307,1,8,,387915,1093,",
-  "status": "browser_no_match_id",
+  "status": "verified",
   "resultFile": "results/browser-fallback/2020-387915.json",
-  "verifiedAt": "2026-09-12T17:08:27.509Z",
-  "resultSource": "playwright_persistent_browser",
-  "verification": "Page loaded but match id was not visible",
-  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13307,1,8,,387915,1093,"
+  "verifiedAt": "2026-09-12T19:13:37.132Z",
+  "resultSource": "playwright_persistent_browser_retry",
+  "verification": "Dynamic match page rendered with match details",
+  "classification": "corona_suspended",
+  "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+  "classifiedAt": "2026-09-12T19:43:48.183Z",
+  "reverifiedAt": "2026-09-13T05:51:09.009Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13307,1,8,,387915,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+50 2020/2021\nVis rækker\n\n\n50+ 4. Serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t387915\nRunde\t7 21-03-2021\nTid\tsø 14-03-2021\nSpillested\t\nHjemmehold\tGentofte 4\nHanne Nielsen\nHanne.3.nielsen@sktst.dk\n72378573\nUdehold\tGladsaxe Søborg 4\nGert Poulsen\nngp2860@gmail.com\n23203534\nResultat\t-\nPoint\t-\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

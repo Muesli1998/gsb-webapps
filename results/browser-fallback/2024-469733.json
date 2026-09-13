@@ -12,5 +12,10 @@
   "resultFile": "results/browser-fallback/2024-469733.json",
   "verifiedAt": "2026-09-12T16:49:35.017Z",
   "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
-  "resultSource": "browser_accessibility_tree"
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:47:29.003Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2024,17100,1,8,,469733,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH,BADSJ,DGI-NSJ,DGI-MVS U17/U19 2024/2025\nVis rækker\n\n\nU17/U19 D, 4600 (4 spillere) Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t469733\nRunde\t9 09-03-2025\nTid\tsø 09-03-2025 15:15\nSpillested\tRødovre Stadionhal\nElstedvej 40\n2610 Rødovre\nTelefon 36704515\nHjemmehold\tHvidovre 3\nCarsten Jørgensen\ncarsten.flyger@gmail.com\n29808565\nUdehold\tGladsaxe Søborg 1\nPia Lebeck Frederiksen\npia@lebeckfrederiksen.dk\n29938604\nResultat\t2-4\nPoint\t1-3\n\tHvidovre 3\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. S\t\nLeo Gøttske Petersen\n\t\nHjalte Palmqvist\n\t21 - 15\t21 - 16\t\t\n2. S\t\nNaja Jørgensen\n\t\nJakob Lebeck Frederiksen\n\t14 - 21\t11 - 21\t\t\n3. S\t\nSilas Kongsbak Saugstrup\n\t\nJonas Felk Øster\n\t22 - 20\t21 - 15\t\t\n4. S\t\nOscar Diaz Rasztar\n\t\nDavid Vad Chawes\n\t16 - 21\t9 - 21\t\t\n1. D\t\nLeo Gøttske Petersen\nSilas Kongsbak Saugstrup\n\t\nHjalte Palmqvist\nDavid Vad Chawes\n\t21 - 23\t22 - 20\t13 - 21\t\n2. D\t\nNaja Jørgensen\nOscar Diaz Rasztar\n\t\nJakob Lebeck Frederiksen\nJonas Felk Øster\n\t18 - 21\t21 - 23\t\t\n\n\nReserver\nHvidovre 3\tGladsaxe Søborg 1\n\n\t\n\nDavid Vad Chawes\nfor Manya Bhardwaj\n\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

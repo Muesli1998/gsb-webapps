@@ -12,5 +12,10 @@
   "resultFile": "results/browser-fallback/2021-427793.json",
   "verifiedAt": "2026-09-12T16:58:08.668Z",
   "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
-  "resultSource": "browser_accessibility_tree"
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:49:27.256Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2021,13966,1,8,,427793,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+60 2021/2022\nVis rækker\n\n\nSEN+60 1. Serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t427793\nRunde\t4 28-11-2021\nTid\t\nSpillested\t\nHjemmehold\tFKIF Frederiksberg 1\nThomas Fjeldberg\nholdleder60plus1@fkif.dk\n51611166\nUdehold\tGladsaxe Søborg 1\nHelle Larsen\nhelle.larsen.hl@gmail.com\n51521909\nResultat\t4-4\nPoint\t1-1\n\tFKIF Frederiksberg 1\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. MD\t\nBirger Steenberg\nLotte Kristensen\n\t\nNils Ole Andersen\nIrene Sterlie\n\t21 - 16\t21 - 11\t\t\n2. MD\t\nHenrik Søltoft\nKarin Borgstrøm\n\t\nSvend Videbæk\nDorte Petersen\n\t15 - 21\t15 - 21\t\t\n4. HD\t\nNiels Busk\nPer F. Nielsen\n\t\nMichael Bjergsted\nSteffen Wad\n\t21 - 10\t21 - 13\t\t\n5. HD\t\nPer Dabelsteen\nThomas Fjeldberg\n\t\nBent Horn Andersen\nTue Abelskov\n\t19 - 21\t13 - 21\t\t\n1. DD\t\nLotte Kristensen\nKarin Borgstrøm\n\t\nIrene Sterlie\nDorte Petersen\n\t22 - 20\t22 - 20\t\t\n1. HD\t\nBirger Steenberg\nNiels Busk\n\t\nNils Ole Andersen\nMichael Bjergsted\n\t18 - 21\t19 - 21\t\t\n2. HD\t\nPer F. Nielsen\nPer Dabelsteen\n\t\nBent Horn Andersen\nSteffen Wad\n\t21 - 16\t21 - 11\t\t\n3. HD\t\nThomas Fjeldberg\nHenrik Søltoft\n\t\nSvend Videbæk\nTue Abelskov\n\t17 - 21\t19 - 21\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

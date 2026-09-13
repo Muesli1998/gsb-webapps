@@ -12,5 +12,10 @@
   "resultFile": "results/browser-fallback/2020-405601.json",
   "verifiedAt": "2026-09-12T16:59:39.253Z",
   "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
-  "resultSource": "browser_accessibility_tree"
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:49:48.573Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13230,1,8,,405601,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADDAN SEN 2020/2021\nVis rækker\n\n\nDanmarksserien Pulje 7\nStilling\nVis alle kampe\n\nKampnr\t405601\nRunde\tNY7 02-06-2021\nTid\tti 01-06-2021 19:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 2\nRasmus Hemmingsen\nrahem@hotmail.dk\n20893324\nUdehold\tHolte 3\nMartin Skovgaard\nanette.skovgaard@gmail.com\n22 31 94 79\nResultat\t-\nPoint\t-\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

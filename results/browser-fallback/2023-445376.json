@@ -12,5 +12,10 @@
   "resultFile": "results/browser-fallback/2023-445376.json",
   "verifiedAt": "2026-09-12T16:56:30.208Z",
   "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
-  "resultSource": "browser_accessibility_tree"
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:48:34.680Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,15897,1,8,,445376,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+70 2023/2024\nVis rækker\n\n\n1. Serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t445376\nRunde\t2 15-10-2023\nTid\tsø 15-10-2023 13:00\nSpillested\tKatrinedalshallen\nKatrinedalsvej 6\n2720 Vanløse\nTelefon 38 71 88 48\nHjemmehold\tBK36 Kbh. 1\nGert Højer\nGertfjer@outlook.dk\n20115007\nUdehold\tGladsaxe Søborg 1\nLeif Hansen\n3xl@webspeed.dk\n20949568\nResultat\t0-6\nPoint\t0-2\n\tBK36 Kbh. 1\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. D\t\nGert Højer\nTeddy Søegaard\n\t\nTue Abelskov\nSteen Kiorboe\n\t14 - 21\t3 - 21\t\t\n2. D\t\nRene Petersen\nErik Tommy Due\n\t\nMogens Jørgensen\nLeif Hansen\n\t14 - 21\t16 - 21\t\t\n3. D\t\nPoul Egeberg Carlsen\nKurt Mehlsen\n\t\nIrene Sterlie\nSvend Valentin Rasmussen\n\t23 - 25\t9 - 21\t\t\n4. D\t\nErik Tommy Due\nGert Højer\n\t\nTue Abelskov\nLeif Hansen\n\t14 - 21\t7 - 21\t\t\n5. D\t\nPoul Egeberg Carlsen\nTeddy Søegaard\n\t\nMogens Jørgensen\nSvend Valentin Rasmussen\n\t14 - 21\t9 - 21\t\t\n6. D\t\nRene Petersen\nKurt Mehlsen\n\t\nSteen Kiorboe\nIrene Sterlie\n\t19 - 21\t21 - 17\t15 - 21\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

@@ -13,5 +13,9 @@
   "verifiedAt": "2026-09-12T17:10:15.799Z",
   "resultSource": "playwright_persistent_browser",
   "verification": "Dynamic BadmintonPlayer page rendered successfully",
-  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2014,4267,1,8,,142978,1093,"
+  "reverifiedAt": "2026-09-13T05:54:15.816Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2014,4267,1,8,,142978,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U17 2014/2015\nVis rækker\n\n\nU17 serie X1 (4 spillere C) Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t142978\nRunde\t2 05-10-2014\nTid\tsø 05-10-2014 15:00\nSpillested\tVBC-Hallen\nSkellet 30\n2500 Valby\nTelefon 36 46 98 88\nHjemmehold\tValby BC\nMathias Haulund Jensen\nvbc.ungdom@gmail.com\n40144685\nUdehold\tGladsaxe Søborg 2\nChristian Thrysøe\nchristian.fam.thrysoe@gmail.com\n29482620\nResultat\t6-0\nPoint\t2-0\nIndberetningen er ikke endelig og kan ændres\n\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

@@ -1,12 +1,21 @@
 {
-  "matchId": 505211,
+  "key": "2025:505211",
   "season": 2025,
+  "matchId": 505211,
   "teamName": "Gladsaxe Søborg 1",
   "opponent": "KBK Kbh. 1",
   "ageGroupId": "2",
   "leagueGroupId": "18504",
+  "roundDate": "2026-02-22",
   "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18504,1,8,,505211,1093,",
   "status": "verified",
+  "resultFile": "results/browser-fallback/2025-505211.json",
+  "verifiedAt": "2026-09-12T16:10:08.869Z",
   "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
-  "verifiedAt": "2026-09-12T16:10:08.869Z"
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:46:06.579Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18504,1,8,,505211,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH,BADSJ U09 2025/2026\nVis rækker\n\n\nU09 C 3600 (3 spillere) BD (2. halvår) Pulje 2\nStilling\nVis alle kampe\n\nKampnr\t505211\nRunde\t8 22-02-2026\nTid\tsø 22-02-2026 11:30\nSpillested\tKBK-Hallen\nKrausesvej 12\n2100 København Ø\nTelefon 35 38 72 92\nHjemmehold\tKBK Kbh. 1\nRobin Taponen Orthagen\ntapo_87@gmail.com\n52180267\nUdehold\tGladsaxe Søborg 1\nClaus Geil\nclausgeil73@gmail.com\n28999902\nResultat\t0-5\nPoint\t0-3\n\tKBK Kbh. 1\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. S\t\nVictor Taponen Orthagen\n\t\nTobias Geil Christophersen\n\t1 - 15\t7 - 15\t\t\n2. S\t\nJonathan Kramarz Cohen\n\t\nVitus Reinholdt Amelung\n\t3 - 15\t7 - 15\t\t\n3. S\t\n(Ikke fremmødt)\n\t\nJingyi Victoria Han\n\t\t\t\tG\n4. S\t\n(Ikke fremmødt)\n\t\nVitus Reinholdt Amelung\n\t\t\t\tG\n1. D\t\nVictor Taponen Orthagen\nJonathan Kramarz Cohen\n\t\nTobias Geil Christophersen\nJingyi Victoria Han\n\t6 - 15\t6 - 15\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

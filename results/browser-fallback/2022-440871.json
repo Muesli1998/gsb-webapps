@@ -12,5 +12,10 @@
   "resultFile": "results/browser-fallback/2022-440871.json",
   "verifiedAt": "2026-09-12T16:58:08.668Z",
   "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
-  "resultSource": "browser_accessibility_tree"
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:48:59.294Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,15334,1,8,,440871,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U17/U19 2022/2023\nVis rækker\n\n\nU17/U19 5200 4 Spillere pulje 1 - Ny Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t440871\nRunde\t9 26-03-2023\nTid\tsø 26-03-2023 10:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 1\nAnn-Louise Bergstrøm\nannlouberg@gmail.com\n51609532\nUdehold\tGentofte 2\nPeter Maigaard\npetermaigaard@hotmail.com\n20270120\nResultat\t4-2\nPoint\t3-1\n\tGladsaxe Søborg 1\tGentofte 2\t1\t2\t3\tVinder W.O.\n1. S\t\nSebastian Almeida Møller\n\t\nVillads Bjerregaard\n\t21 - 14\t21 - 12\t\t\n2. S\t\nAnton Krog Søbygaard\n\t\nEmil Harvig-Maigaard\n\t18 - 21\t22 - 20\t20 - 22\t\n3. S\t\nLinus Bergstrøm Hesselballe\n\t\nBorna Daneshvar\n\t21 - 9\t21 - 7\t\t\n4. S\t\nSimon Vils Pedersen\n\t\nVictor Fellenius Wanner\n\t21 - 17\t21 - 17\t\t\n1. D\t\nSebastian Almeida Møller\nLinus Bergstrøm Hesselballe\n\t\nEmil Harvig-Maigaard\nVictor Fellenius Wanner\n\t21 - 7\t21 - 8\t\t\n2. D\t\nAnton Krog Søbygaard\nSimon Vils Pedersen\n\t\nVillads Bjerregaard\nBorna Daneshvar\n\t21 - 18\t17 - 21\t20 - 22\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

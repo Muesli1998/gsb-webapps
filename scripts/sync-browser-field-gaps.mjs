@@ -1,0 +1,9 @@
+import fs from 'node:fs';
+import { DatabaseSync } from 'node:sqlite';
+
+const db = new DatabaseSync('data/gsb-statistik-normalized.db');
+function field(raw, label) { const lines = String(raw ?? '').split(/\r?\n/).map((x) => x.trim()); const i = lines.findIndex((x) => x.startsWith(label)); if (i < 0) return null; const same = lines[i].slice(label.length).replace(/^[:\t ]+/, '').trim(); return same || (lines[i + 1] ?? '').trim() || null; }
+const up = db.prepare(`UPDATE team_matches SET home_name_raw=COALESCE(?,home_name_raw), away_name_raw=COALESCE(?,away_name_raw), result_raw=COALESCE(?,result_raw), points_raw=COALESCE(?,points_raw), walkover_text_raw=COALESCE(?,walkover_text_raw), walkover_winner_raw=COALESCE(?,walkover_winner_raw), status=CASE WHEN ? IS NULL OR ?='' THEN status ELSE ? END, source_status='browser_field_fallback' WHERE external_match_id=?`);
+let files=0,updated=0,notFound=0;
+for(const dir of ['results/browser-fallback','results/browser-fallback-complete']){if(!fs.existsSync(dir))continue;for(const name of fs.readdirSync(dir).filter(x=>x.endsWith('.json')&&!x.endsWith('.retry.json'))){const o=JSON.parse(fs.readFileSync(`${dir}/${name}`,'utf8'));if(o.reverifyStatus!=='dynamic_detail'&&o.status!=='dynamic_detail')continue;const raw=o.rawText||'';const h=field(raw,'Hjemmehold'),a=field(raw,'Udehold'),r=field(raw,'Resultat'),p=field(raw,'Point');const w=raw.match(/\(\s*Ikke fremmødt\s*\)/i)?.[0]??null;const sc=r?.match(/^\s*(\d+)\s*-\s*(\d+)\s*$/);const winner=w&&sc&&h&&a?(Number(sc[1])>Number(sc[2])?h:Number(sc[2])>Number(sc[1])?a:null):null;const st=r&&r!=='-'?'browser_verified':'browser_verified_no_result';const matchId=o.matchId ?? o.external_match_id;const z=up.run(h,a,r,p,w,winner,r,st,st,String(matchId));files++;if(z.changes)updated++;else notFound++}}
+db.close(); console.log(JSON.stringify({files,updated,notFound},null,2));

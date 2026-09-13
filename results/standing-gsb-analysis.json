@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T18:36:34.960Z",
+  "generatedAt": "2026-09-13T06:20:52.791Z",
   "standingRows": 96,
   "candidates": 13,
   "rows": [
@@ -1022,7 +1022,7 @@
       "matches": 3,
       "wins": 2,
       "points": 5,
-      "queueRows": 4,
+      "queueRows": 6,
       "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2025,18504,1,,,,1093,",
       "candidate": null
     },

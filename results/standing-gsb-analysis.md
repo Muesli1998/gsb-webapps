@@ -1,6 +1,6 @@
 # GSB-stillingsanalyse
 
-Genereret: 2026-09-12T18:36:34.960Z
+Genereret: 2026-09-13T06:20:52.791Z
 
 - GSB-rækker fundet: **96**
 - 0-point-kandidater: **13**
@@ -117,7 +117,7 @@ Genereret: 2026-09-12T18:36:34.960Z
 | 2025 | 17999 | Gladsaxe Søborg 3 | 2 | 0 | 2 | 1 |
 | 2025 | 18122 | Gladsaxe Søborg 2 | 12 | 3 | 15 | 12 |
 | 2025 | 18154 | Gladsaxe Søborg 1 | 6 | 1 | 6 | 6 |
-| 2025 | 18504 | Gladsaxe Søborg 1 | 3 | 2 | 5 | 4 |
+| 2025 | 18504 | Gladsaxe Søborg 1 | 3 | 2 | 5 | 6 |
 | 2025 | 18733 | Gladsaxe Søborg 1 | 6 | 6 | 16 | 0 |
 | 2025 | 18733 | Gladsaxe Søborg 2 | 6 | 3 | 7 | 0 |
 | 2025 | 18733 | Gladsaxe Søborg 3 | 6 | 1 | 4 | 6 |

@@ -12,5 +12,10 @@
   "resultFile": "results/browser-fallback/2023-445404.json",
   "verifiedAt": "2026-09-12T16:54:07.512Z",
   "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
-  "resultSource": "browser_accessibility_tree"
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:48:44.528Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,15897,1,8,,445404,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+70 2023/2024\nVis rækker\n\n\n1. Serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t445404\nRunde\t9 17-03-2024\nTid\ton 20-03-2024 18:45\nSpillested\tHBC-Hallen\nBibliotekvej 62\n2650 Hvidovre\nTelefon 36 49 10 05\nHjemmehold\tHvidovre 1\nLajla Sørensen\nxlys2650@gmail.com\n60521911\nUdehold\tGladsaxe Søborg 1\nLeif Hansen\n3xl@webspeed.dk\n20949568\nResultat\t0-6\nPoint\t0-2\n\tHvidovre 1\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. D\t\nHenrik Westborg\nErling Bo Sørensen\n\t\nTue Abelskov\nSteen Kiorboe\n\t21 - 23\t17 - 21\t\t\n2. D\t\nJohn Larsen\nKaj Broch\n\t\nMogens Jørgensen\nLeif Hansen\n\t11 - 21\t24 - 22\t17 - 21\t\n3. D\t\nIlse Langhorn\nLajla Sørensen\n\t\nSvend Valentin Rasmussen\nIrene Sterlie\n\t18 - 21\t17 - 21\t\t\n4. D\t\nHenrik Westborg\nIlse Langhorn\n\t\nTue Abelskov\nLeif Hansen\n\t10 - 21\t17 - 21\t\t\n5. D\t\nErling Bo Sørensen\nKaj Broch\n\t\nSteen Kiorboe\nSvend Valentin Rasmussen\n\t17 - 21\t16 - 21\t\t\n6. D\t\nJohn Larsen\nLajla Sørensen\n\t\nMogens Jørgensen\nIrene Sterlie\n\t16 - 21\t15 - 21\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

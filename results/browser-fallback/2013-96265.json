@@ -13,5 +13,9 @@
   "verifiedAt": "2026-09-12T17:10:27.140Z",
   "resultSource": "playwright_persistent_browser",
   "verification": "Dynamic BadmintonPlayer page rendered successfully",
-  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2013,2693,1,8,,96265,1093,"
+  "reverifiedAt": "2026-09-13T05:54:35.447Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2013,2693,1,8,,96265,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U17 2013/2014\nVis rækker\n\n\nU17 Serie X1 Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t96265\nRunde\t3 06-10-2013\nTid\tsø 06-10-2013 14:00\nSpillested\tTennishallen, Pilé Allé\nPile Allé\n2000 Frederiksberg\nTelefon 36 30 23 00\nHjemmehold\tSMASH\nUdehold\tGladsaxe Søborg\nKurt Mehlsen\nkurt.mehlsen@post.tele.dk\n11111111\nResultat\t0-6\nPoint\t0-2\n\tSMASH\tGladsaxe Søborg\t1\t2\t3\tVinder W.O.\n1. S\t\nJakob Stig Christensen\n\t\nJens Perregaard\n\t6 - 21\t10 - 21\t\t\n2. S\t\nCasper Skovbo Christensen\n\t\nErik Juul\n\t15 - 21\t13 - 21\t\t\n3. S\t\nFrederik Holst Laimonis Reicherts\n\t\nNicolai Mehlsen\n\t7 - 21\t8 - 21\t\t\n4. S\t\nAugust Hilliger\n\t\nAlexander Bonde Skov\n\t9 - 21\t6 - 21\t\t\n1. D\t\nCasper Skovbo Christensen\nJakob Stig Christensen\n\t\nJens Perregaard\nErik Juul\n\t12 - 21\t14 - 21\t\t\n2. D\t\nFrederik Holst Laimonis Reicherts\nAugust Hilliger\n\t\nNicolai Mehlsen\nAlexander Bonde Skov\n\t10 - 21\t9 - 21\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

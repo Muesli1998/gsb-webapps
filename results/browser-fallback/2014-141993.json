@@ -13,5 +13,9 @@
   "verifiedAt": "2026-09-12T17:10:21.491Z",
   "resultSource": "playwright_persistent_browser",
   "verification": "Dynamic BadmintonPlayer page rendered successfully",
-  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2014,4245,1,8,,141993,1093,"
+  "reverifiedAt": "2026-09-13T05:54:25.643Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2014,4245,1,8,,141993,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+40 2014/2015\nVis rækker\n\n\n40+ 5.serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t141993\nRunde\t2 12-10-2014\nTid\ton 05-11-2014 20:00\nSpillested\tSundby Hal 3\nEnglandsvej 61\n2300 København S\nHjemmehold\tSundby KFUM\nUdehold\tGladsaxe Søborg 3\nLene Thrysøe\nlet@brf.dk\n51177751\nResultat\t0-12\nPoint\t0-2\nAfgjort uden kamp (afbud/udeblivelse)\n\nIndberetningen er ikke endelig og kan ændres\n\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

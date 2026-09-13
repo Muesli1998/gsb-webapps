@@ -12,5 +12,10 @@
   "resultFile": "results/browser-fallback/2023-452571.json",
   "verifiedAt": "2026-09-12T16:56:30.208Z",
   "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
-  "resultSource": "browser_accessibility_tree"
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:48:05.144Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,16087,1,8,,452571,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U17/U19 2023/2024\nVis rækker\n\n\nU17/U19 - 6600 4 spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t452571\nRunde\t9 10-03-2024\nTid\tlø 09-03-2024 13:45\nSpillested\tVBC-Hallen\nSkellet 30\n2500 Valby\nTelefon 36 46 98 88\nHjemmehold\tGladsaxe Søborg 1\nJens Møller\nJksmoller@hotmail.com\n20457741\nUdehold\tLyngby 3\nSigne Feiling Kirkedal\nSignekirkedal@gmail.com\n40408282\nResultat\t6-0\nPoint\t4-0\n\tGladsaxe Søborg 1\tLyngby 3\t1\t2\t3\tVinder W.O.\n1. S\t\nNikolaj Thorslund Hindsbo\n\t\nNoah Welling\n\t22 - 20\t21 - 19\t\t\n2. S\t\nAnton Krog Søbygaard\n\t\nFrederik Abild\n\t21 - 11\t21 - 17\t\t\n3. S\t\nLinus Bergstrøm Hesselballe\n\t\nMathias Møller Fabiansen\n\t21 - 5\t21 - 8\t\t\n4. S\t\nThøger Eusebius Jakobsen\n\t\nSienna Larsen\n\t21 - 10\t21 - 9\t\t\n1. D\t\nLinus Bergstrøm Hesselballe\nSebastian Almeida Møller\n\t\nFrederik Abild\nNoah Welling\n\t21 - 13\t21 - 9\t\t\n2. D\t\nNikolaj Thorslund Hindsbo\nThøger Eusebius Jakobsen\n\t\nSienna Larsen\nMathias Møller Fabiansen\n\t21 - 13\t21 - 13\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

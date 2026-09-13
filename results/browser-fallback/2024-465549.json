@@ -12,5 +12,10 @@
   "resultFile": "results/browser-fallback/2024-465549.json",
   "verifiedAt": "2026-09-12T16:51:18.397Z",
   "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
-  "resultSource": "browser_accessibility_tree"
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:47:38.854Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2024,16931,1,8,,465549,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+60 2024/2025\nVis rækker\n\n\n60+ 1. Serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t465549\nRunde\t6 02-03-2025\nTid\tlø 22-02-2025 11:30\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 2\nNoomi Mortensen\nbani.privat@gmail.com\n30256137\nUdehold\tFrederiksberg\nFinn Jensen\nfinn@finnjconsult.dk\n25761865\nResultat\t8-0\nPoint\t2-0\n\tGladsaxe Søborg 2\tFrederiksberg\t1\t2\t3\tVinder W.O.\n1. MD\t\nLennart Høy\nNoomi Mortensen\n\t\npia marxen\nFinn Jensen\n\t21 - 13\t15 - 21\t21 - 9\t\n2. MD\t\nJohn Kørboe\nDorte Petersen\n\t\nHelle Erichsen\nPer Holtveg\n\t21 - 12\t21 - 12\t\t\n4. D\t\nKim Jørgensen\nTue Abelskov\n\t\nOle Rahn Rasmussen\nFlemming Petersen\n\t21 - 13\t21 - 9\t\t\n5. D\t\nSteen Kiorboe\nJan Holzmann Rasmussen\n\t\nClaus Lemche\nAllan Pansbo\n\t21 - 8\t21 - 18\t\t\n1. D\t\nKim Jørgensen\nSteen Kiorboe\n\t\nFinn Jensen\nAllan Pansbo\n\t26 - 24\t21 - 12\t\t\n2. D\t\nLennart Høy\nJohn Kørboe\n\t\nClaus Lemche\nFlemming Petersen\n\t21 - 15\t21 - 12\t\t\n3. D\t\nJan Holzmann Rasmussen\nTue Abelskov\n\t\nPer Holtveg\nOle Rahn Rasmussen\n\t21 - 6\t21 - 12\t\t\n1. DD\t\nDorte Petersen\nNoomi Mortensen\n\t\nHelle Erichsen\npia marxen\n\t21 - 15\t21 - 17\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

@@ -12,5 +12,10 @@
   "resultFile": "results/browser-fallback/2023-446330.json",
   "verifiedAt": "2026-09-12T16:56:30.208Z",
   "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
-  "resultSource": "browser_accessibility_tree"
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:48:26.470Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,15888,1,8,,446330,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+40 2023/2024\nVis rækker\n\n\n20. serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t446330\nRunde\t3 12-11-2023\nTid\tsø 12-11-2023 14:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 3\nFrank Nielsen\nfrank.nielsen@post.tele.dk\n41951100\nUdehold\tHvidovre HB2000 3\nBjørn Kyed\nbkyed@yahoo.dk\n40827118\nResultat\t8-0\nPoint\t2-0\n\tGladsaxe Søborg 3\tHvidovre HB2000 3\t1\t2\t3\tVinder W.O.\n1. D\t\nMartin Yulzari\nMorten Nielsen\n\t\nChristian Janfelt\nTariq Shafi\n\t21 - 16\t21 - 13\t\t\n2. D\t\nCarsten Nørgaard\nJan Hindsbo\n\t\nBjørn Kyed\nAnders Starck\n\t21 - 10\t18 - 21\t21 - 17\t\n3. D\t\nChristian Thrysøe\nLennart Høy\n\t\nErling Maidstone\nRene Holm\n\t21 - 7\t21 - 8\t\t\n4. D\t\nHenrik Vilhemsen\nFrank Nielsen\n\t\nJohn Jepsen\nClaus Thomsen\n\t21 - 18\t21 - 13\t\t\n5. D\t\nMartin Yulzari\nJan Hindsbo\n\t\nChristian Janfelt\nBjørn Kyed\n\t22 - 20\t21 - 16\t\t\n6. D\t\nCarsten Nørgaard\nMorten Nielsen\n\t\nTariq Shafi\nAnders Starck\n\t21 - 17\t21 - 12\t\t\n7. D\t\nLennart Høy\nHenrik Vilhemsen\n\t\nJohn Jepsen\nErling Maidstone\n\t21 - 11\t21 - 11\t\t\n8. D\t\nChristian Thrysøe\nFrank Nielsen\n\t\nClaus Thomsen\nRene Holm\n\t21 - 14\t22 - 20\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

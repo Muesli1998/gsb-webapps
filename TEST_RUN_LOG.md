@@ -234,3 +234,19 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 - Walkovermarkering blev efterkontrolleret: teksten `Vinder W.O.` alene er en tabeloverskrift og tælles ikke som walkover. Kun den eksplicitte tekst `(Ikke fremmødt)` tælles. Det gav 58 dokumenterede ungdoms-walkovers; 57 havde en entydig vinder ud fra den viste holdscore. Samlet er 64 kø-walkovers og 57 med vinder; SQLite har nu 61 rækker med walkoverfelt.
 - Coverage-rapporten er opdateret efter ungdoms- og walkover-synkronisering.
 - API-gap audit blev gjort reproducerbar med `scripts/run-api-gap-audit.mjs`; sæsontabellen tæller nu manglende hjemme/ude som manglende rækker (ikke dobbelt som felter).
+
+## 2026-09-13 – metode dokumenteret til senere skill
+- Arbejdsgangen for dynamisk browser-fallback er samlet i `results/COMPLETE_RESULT_FALLBACK_METHOD.md`.
+- Dokumentet beskriver URL, render-gate, label-parser, walkover-evidens, genoptagelse/idempotens, COALESCE-synkronisering, corona-statusbevarelse og efterfølgende kvalitetstjek.
+- Vigtig fejlforebyggelse: `Vinder W.O.` er kun kolonneoverskrift. Kun `(Ikke fremmødt)` tælles som eksplicit walkover.
+- Den aktive fulde resultatrunde kører via `scripts/run-complete-result-fallback.mjs`; hver kamp gemmes løbende i `results/browser-fallback-complete/` og kan senere importeres med `scripts/sync-browser-field-gaps.mjs` efter tilpasning til outputmappen.
+
+## 2026-09-13 – komplet resultat-fallback afsluttet
+- `scripts/run-complete-result-fallback.mjs` forsøgte 1.374 `complete`-rækker uden resultat: 1.372 dynamiske kampdetaljer, 2 uden dynamisk detalje, 0 browserfejl.
+- En parserfejl i første synkroniseringsforsøg blev opdaget: complete-filer bruger `external_match_id`, mens køfiler bruger `matchId`. Synkroniseringsscriptet blev rettet til begge feltnavne og kørt igen.
+- Efter korrekt synkronisering og corona-genoprettelse: kun 6 rækker mangler resultat i SQLite — 4 U09-kampe uden dynamisk detalje (505217, 505219, 506407, 506413) og 2 eksplicit corona-suspenderede kampe (387862, 387864). Kun de fire U09-sager er tekniske hentehuller.
+- Kun 6 rækker mangler hjemme/ude, de samme fire U09-sager plus de to corona-suspenderede. Ingen manglende spillerdata-statusser er tilbage i normaliseret tabel.
+- SQLite har 2.818 unikke team_matches, ingen foreign-key- eller ID-dubletter, 2.682 browser_verified, 85 browser_verified_no_result og 47 corona_suspended.
+- Fallbackresultatet er opsummeret i `results/complete-result-fallback-report.md`; metodebeskrivelsen står i `results/COMPLETE_RESULT_FALLBACK_METHOD.md`.
+- De to standardrute-huller 1884 og 1888 blev undersøgt med fem fragmentvarianter. `#5,...,1,1,,{matchId},1093,` gav fuld dynamisk detalje, selv om `#5,...,1,8,,...` ikke gjorde. Begge blev importeret med resultaterne 10-3 og 7-6 via `scripts/sync-legacy-route-probe.mjs`.
+- Efter legacy-fallback er effektiv resultatdækning 2.818/2.818 for alle rækker, der ikke er eksplicit corona-suspenderede eller U09-sider uden kampdetalje.

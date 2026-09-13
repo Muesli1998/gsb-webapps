@@ -13,5 +13,9 @@
   "verifiedAt": "2026-09-12T17:10:11.989Z",
   "resultSource": "playwright_persistent_browser",
   "verification": "Dynamic BadmintonPlayer page rendered successfully",
-  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2014,4266,1,8,,142541,1093,"
+  "reverifiedAt": "2026-09-13T05:54:09.253Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2014,4266,1,8,,142541,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U17 2014/2015\nVis rækker\n\n\nU17 2.serie (4+2 M) Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t142541\nRunde\t9 22-02-2015\nTid\tsø 22-02-2015 10:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg\nChristian Thrysøe\nchristian.fam.thrysoe@gmail.com\n29482620\nUdehold\tKBK Kbh. 2\nAnton Tømming Larsen\nAntontlarsen@hotmail.com\n20917555\nResultat\t0-8\nPoint\t0-2\nAfgjort uden kamp (afbud/udeblivelse)\n\nIndberetningen er ikke endelig og kan ændres\n\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

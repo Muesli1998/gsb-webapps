@@ -12,5 +12,10 @@
   "resultFile": "results/browser-fallback/2023-452572.json",
   "verifiedAt": "2026-09-12T16:56:30.208Z",
   "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
-  "resultSource": "browser_accessibility_tree"
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:48:06.792Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,16087,1,8,,452572,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U17/U19 2023/2024\nVis rækker\n\n\nU17/U19 - 6600 4 spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t452572\nRunde\t10 24-03-2024\nTid\tsø 24-03-2024 14:45\nSpillested\tBC37-Hallen\nStrandlodsvej 69\n2300 København S\nTelefon 32 97 08 96\nHjemmehold\tBC37 Amager 3\nAnne Petri Olesen\nanne.petri@gmail.com\n51387981\nUdehold\tGladsaxe Søborg 1\nJens Møller\nJksmoller@hotmail.com\n20457741\nResultat\t0-6\nPoint\t0-4\n\tBC37 Amager 3\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. S\t\nAske Groth Jensen\n\t\nAsk Unden\n\t13 - 21\t17 - 21\t\t\n2. S\t\nJohannes Petri Olesen\n\t\nSebastian Almeida Møller\n\t21 - 18\t16 - 21\t16 - 21\t\n3. S\t\nTore Martin Hedin\n\t\nAnton Krog Søbygaard\n\t21 - 23\t21 - 19\t18 - 21\t\n4. S\t\nSimon Thorsen\n\t\nLinus Bergstrøm Hesselballe\n\t10 - 21\t15 - 21\t\t\n1. D\t\nTore Martin Hedin\nJohannes Petri Olesen\n\t\nLinus Bergstrøm Hesselballe\nSebastian Almeida Møller\n\t18 - 21\t19 - 21\t\t\n2. D\t\nSimon Thorsen\nAske Groth Jensen\n\t\nAnton Krog Søbygaard\nAsk Unden\n\t18 - 21\t21 - 14\t18 - 21\t\n\n\nReserver\nBC37 Amager 3\tGladsaxe Søborg 1\n\n\t\n\nAsk Unden\nfor Nikolaj Thorslund Hindsbo\n\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

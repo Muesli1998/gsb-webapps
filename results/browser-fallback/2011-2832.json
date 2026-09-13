@@ -13,5 +13,9 @@
   "verifiedAt": "2026-09-12T17:11:24.567Z",
   "resultSource": "playwright_persistent_browser",
   "verification": "Dynamic BadmintonPlayer page rendered successfully",
-  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,82,1,8,,2832,1093,"
+  "reverifiedAt": "2026-09-13T05:56:13.820Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,82,1,8,,2832,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+40 2011/2012\nVis rækker\n\n\n8. Serie Veteran 8. Serie Veteran\nStilling\nVis alle kampe\n\nKampnr\t2832\nRunde\t2 16-10-2011\nTid\tsø 09-10-2011 15:00\nSpillested\tKMB-Hallen\nGl. Kirkevej 92-94\n2770 Kastrup\nTelefon 32 50 08 05\nHjemmehold\tKMB2010 3\nUdehold\tGladsaxe Søborg 4\nResultat\t9-3\nPoint\t2-0\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

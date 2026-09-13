@@ -12,5 +12,10 @@
   "resultFile": "results/browser-fallback/2020-404189.json",
   "verifiedAt": "2026-09-12T16:59:39.253Z",
   "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
-  "resultSource": "browser_accessibility_tree"
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:50:26.218Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13300,1,8,,404189,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+40 2020/2021\nVis rækker\n\n\n40+ 4. Serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t404189\nRunde\t9 25-04-2021\nTid\t\nSpillested\t\nHjemmehold\tVanløse 2\nPalle Olsen\npo@johannesskolen.dk\n29922512\nUdehold\tGladsaxe Søborg 3\nJohn Koerboe\njohn.koerboe@gmail.com\n51390011\nResultat\t-\nPoint\t-\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

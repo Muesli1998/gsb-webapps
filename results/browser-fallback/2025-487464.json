@@ -12,5 +12,10 @@
   "resultFile": "results/browser-fallback/2025-487464.json",
   "verifiedAt": "2026-09-12T16:48:44.370Z",
   "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
-  "resultSource": "browser_accessibility_tree"
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:47:04.062Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,17965,1,8,,487464,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+70 2025/2026\nVis rækker\n\n\n70+ Eliteserien Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t487464\nRunde\t4 26-10-2025\nTid\tsø 02-11-2025 11:00\nSpillested\tKatrinedalshallen\nKatrinedalsvej 6\n2720 Vanløse\nTelefon 38 71 88 48\nHjemmehold\tBK36 Kbh. 1\nGert Højer\nGertfjer@outlook.dk\n20115007\nUdehold\tGladsaxe Søborg 1\nLeif Hansen\n3xl@webspeed.dk\n20949568\nResultat\t0-6\nPoint\t0-2\n\tBK36 Kbh. 1\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. D\t\nTeddy Søegaard\nErik Tommy Due\n\t\nTue Abelskov\nJan Holzmann Rasmussen\n\t12 - 21\t6 - 21\t\t\n2. D\t\nRene Petersen\nLeif H Nielsen\n\t\nGert Poulsen\nSvend Valentin Rasmussen\n\t13 - 21\t17 - 21\t\t\n3. D\t\nPoul Egeberg Carlsen\nKurt Mehlsen\n\t\nLeif Hansen\nBirgitte Jakobsen\n\t10 - 21\t13 - 21\t\t\n4. D\t\nErik Tommy Due\nRene Petersen\n\t\nTue Abelskov\nGert Poulsen\n\t9 - 21\t9 - 21\t\t\n5. D\t\nLeif H Nielsen\nKurt Mehlsen\n\t\nJan Holzmann Rasmussen\nLeif Hansen\n\t14 - 21\t14 - 21\t\t\n6. D\t\nPoul Egeberg Carlsen\nTeddy Søegaard\n\t\nSvend Valentin Rasmussen\nBirgitte Jakobsen\n\t13 - 21\t16 - 21\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

@@ -1,14 +1,23 @@
 {
-  "matchId": 492298,
+  "key": "2025:492298",
   "season": 2025,
+  "matchId": 492298,
   "teamName": "Gladsaxe Søborg 2",
   "opponent": "Vallensbæk 2",
   "ageGroupId": "18",
   "leagueGroupId": "18122",
+  "roundDate": "2025-12-07",
   "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18122,1,8,,492298,1093,",
   "status": "verified",
+  "resultFile": "results/browser-fallback/2025-492298.json",
+  "verifiedAt": "2026-09-12T16:45:40.432Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
   "walkoverObserved": true,
   "walkoverWinner": "Vallensbæk 2",
-  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
-  "verifiedAt": "2026-09-12T16:45:40.432Z"
+  "reverifiedAt": "2026-09-13T05:46:31.153Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18122,1,8,,492298,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH,BADSJ,DGI-NSJ,DGI-MVS U17/U19 2025/2026\nVis rækker\n\n\nU17/U19 D, 5200 (4 spillere) Pulje 3\nStilling\nVis alle kampe\n\nKampnr\t492298\nRunde\t5 07-12-2025\nTid\tsø 07-12-2025 12:00\nSpillested\tVallensbæk Idrætscenter\nIdræts Allé 2\n2625 Vallensbæk\nTelefon 42 62 12 10\nHjemmehold\tGladsaxe Søborg 2\nJacob Hinge Carlsson\njaccarl@hotmail.com\n21943796\nUdehold\tVallensbæk 2\nMagnus Kvalheim\nmagnus@kvalheim.dk\n61665679\nResultat\t0-6\nPoint\t0-4\nAfgjort uden kamp (afbud/udeblivelse)\n\n\n\tGladsaxe Søborg 2\tVallensbæk 2\t1\t2\t3\tVinder W.O.\n1. S\t\n(Ikke fremmødt)\n\t\nSophie Rudland Sepp\n\t\t\t\t\n2. S\t\n(Ikke fremmødt)\n\t\nSara Cecilie Kvalheim\n\t\t\t\t\n3. S\t\n(Ikke fremmødt)\n\t\nJulie Frendrup Skovborg\n\t\t\t\t\n4. S\t\n(Ikke fremmødt)\n\t\nSiddhi Khanal\n\t\t\t\t\n1. D\t\n(Ikke fremmødt)\n(Ikke fremmødt)\n\t\nSara Cecilie Kvalheim\nVictoria Frederiksen Bengtsson\n\t\t\t\t\n2. D\t\n(Ikke fremmødt)\n(Ikke fremmødt)\n\t\nSiddhi Khanal\nJulie Frendrup Skovborg\n\t\t\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

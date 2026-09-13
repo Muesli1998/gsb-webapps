@@ -12,5 +12,10 @@
   "resultFile": "results/browser-fallback/2020-387717.json",
   "verifiedAt": "2026-09-12T16:59:39.253Z",
   "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
-  "resultSource": "browser_accessibility_tree"
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:50:19.673Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13300,1,8,,387717,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+40 2020/2021\nVis rækker\n\n\n40+ 4. Serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t387717\nRunde\t5 10-01-2021\nTid\tsø 03-01-2021 12:00\nSpillested\tGBK Hallen\nVed Stadion 4\n2820 Gentofte\nTelefon 39 68 01 59\nHjemmehold\tGentofte 3\nPeter Klinke\nklinke64@gmail.com\n2620 7130\nUdehold\tGladsaxe Søborg 3\nJohn Koerboe\njohn.koerboe@gmail.com\n51390011\nResultat\t-\nPoint\t-\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

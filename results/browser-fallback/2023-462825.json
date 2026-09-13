@@ -12,5 +12,10 @@
   "resultFile": "results/browser-fallback/2023-462825.json",
   "verifiedAt": "2026-09-12T16:56:30.208Z",
   "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
-  "resultSource": "browser_accessibility_tree"
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:47:56.852Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,16610,1,8,,462825,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADDAN,DGI U17/U19 2023/2024\nVis rækker\n\n\nDMU H - U17/U19 6600 (4 spillere) Pulje 4\nStilling\nVis alle kampe\n\nKampnr\t462825\nRunde\t1 20-04-2024\nTid\tlø 20-04-2024 19:30\nSpillested\tHørning Idrætscenter\nToftevej 53\n8362 Hørning\nHjemmehold\tGladsaxe Søborg 1\nJens Møller\nJksmoller@hotmail.com\n20457741\nUdehold\tSolbjerg 2\nPeter Laursen\npetermlaursen@gmail.com\n30564059\nResultat\t6-0\nPoint\t4-0\n\tGladsaxe Søborg 1\tSolbjerg 2\t1\t2\t3\tVinder W.O.\n1. S\t\nNikolaj Thorslund Hindsbo\n\t\nEmilie Simonnæs Laursen\n\t21 - 10\t21 - 13\t\t\n2. S\t\nSebastian Almeida Møller\n\t\nIda Machon\n\t21 - 10\t21 - 18\t\t\n3. S\t\nAnton Krog Søbygaard\n\t\nElla Machon\n\t21 - 19\t21 - 19\t\t\n4. S\t\nLinus Bergstrøm Hesselballe\n\t\nAndreas Birkegaard Andersen\n\t21 - 17\t21 - 13\t\t\n1. D\t\nSebastian Almeida Møller\nLinus Bergstrøm Hesselballe\n\t\nAlex Busk\nEmilie Simonnæs Laursen\n\t21 - 14\t21 - 5\t\t\n2. D\t\nAnton Krog Søbygaard\nNikolaj Thorslund Hindsbo\n\t\nIda Machon\nElla Machon\n\t21 - 12\t21 - 16\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }

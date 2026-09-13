@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T05:42:49.658Z",
+  "generatedAt": "2026-09-13T05:58:19.359Z",
   "source": "results/browser-fallback-queue.json",
   "definition": {
     "verified": "browser page rendered and match ID found (including youth_verified)",
@@ -9,7 +9,7 @@
   },
   "totals": {
     "total": 1444,
-    "verified": 1440,
+    "verified": 1395,
     "noMatch": 2,
     "pending": 0,
     "deferred": 0,
@@ -140,7 +140,7 @@
     {
       "season": 2019,
       "total": 43,
-      "verified": 43,
+      "verified": 25,
       "noMatch": 0,
       "pending": 0,
       "deferred": 0,
@@ -148,12 +148,13 @@
       "withWinner": 1,
       "teams": 5,
       "groups": 17,
-      "opponents": 33
+      "opponents": 33,
+      "other": null
     },
     {
       "season": 2020,
       "total": 131,
-      "verified": 129,
+      "verified": 102,
       "noMatch": 0,
       "pending": 0,
       "deferred": 0,

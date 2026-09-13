@@ -12,5 +12,10 @@
   "resultFile": "results/browser-fallback/2023-462823.json",
   "verifiedAt": "2026-09-12T16:56:30.208Z",
   "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
-  "resultSource": "browser_accessibility_tree"
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:47:55.221Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,16610,1,8,,462823,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADDAN,DGI U17/U19 2023/2024\nVis rækker\n\n\nDMU H - U17/U19 6600 (4 spillere) Pulje 4\nStilling\nVis alle kampe\n\nKampnr\t462823\nRunde\t1 20-04-2024\nTid\tlø 20-04-2024 15:00\nSpillested\tHørning Idrætscenter\nToftevej 53\n8362 Hørning\nHjemmehold\tGladsaxe Søborg 1\nJens Møller\nJksmoller@hotmail.com\n20457741\nUdehold\tTeam Træf 1\nThomas Sørensen\nThomasschelersorensen@gmail.com\n20557686\nResultat\t4-3\nPoint\t3-2\n\tGladsaxe Søborg 1\tTeam Træf 1\t1\t2\t3\tVinder W.O.\n1. S\t\nNikolaj Thorslund Hindsbo\n\t\nMikkel Sørensen\n\t21 - 18\t21 - 15\t\t\n2. S\t\nSebastian Almeida Møller\n\t\nMagnus Balle Jeppesen\n\t15 - 21\t21 - 23\t\t\n3. S\t\nAnton Krog Søbygaard\n\t\nMilan Mircevski Hansen\n\t16 - 21\t18 - 21\t\t\n4. S\t\nLinus Bergstrøm Hesselballe\n\t\nJeppe Mikkelsen\n\t13 - 21\t16 - 21\t\t\n1. D\t\nLinus Bergstrøm Hesselballe\nSebastian Almeida Møller\n\t\nMikkel Sørensen\nMagnus Balle Jeppesen\n\t21 - 17\t21 - 19\t\t\n2. D\t\nAnton Krog Søbygaard\nNikolaj Thorslund Hindsbo\n\t\nJeppe Mikkelsen\nMilan Mircevski Hansen\n\t21 - 13\t21 - 19\t\t\n\nGolden Set\nHD\t\nNikolaj Thorslund Hindsbo\nSebastian Almeida Møller\n\t\nMagnus Balle Jeppesen\nMilan Mircevski Hansen\n\t\n21 - 2\n\t\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
 }
