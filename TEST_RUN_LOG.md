@@ -303,3 +303,11 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 - scripts/probe-individual-gap-routes.mjs udvalgte 16 repræsentative kampe og fem kendte fragmentvarianter.
 - Browserkonteksten kunne ikke startes i denne runtime (Playwright spawn EPERM). Scriptet afsluttede kontrolleret, gemte fejlen og ændrede ikke databasen.
 - De eksisterende gemte payloads er fortsat den autoritative evidens for gap-auditen. Ruteprøven skal genkøres, når browser-runtime er tilgængelig.
+
+## 2026-09-13 – samlet audit af holdresultat mod individuelle resultater
+- `scripts/audit-team-vs-individual-results.mjs` sammenholder holdets registrerede resultat med vinderfelterne fra de importerede individuelle kategorier.
+- Seneste kørsel: 2.367 holdkampe sammenlignet; 1.909 eksakte samsvar; 458 afvigelser; 313 kampe har mindst én uafklaret kategori; 121 Golden Sets blev medtaget, når de udfyldte holdresultatets forventede kampantal.
+- 39 afvigelser har ordret `Bemærkning`, og 18 af disse er uden uafklarede kategorier. Afvigelserne er audit-signaler: de kan skyldes administrative afgørelser, markeringer, manglende kategorier eller forskellige kampantal. De fortolkes ikke automatisk som parserfejl.
+- Rå resultatmarkører (`G`, `F`, `D`, m.fl.) gemmes ordret i `individual_matches.result_marker_raw`; deres betydning er ikke gættet.
+- De 8 dokumenterede 0-0-kategorier med markør er fortsat markeret `browser_zero_score` og tælles ikke som almindelige spillede sæt.
+- Browser-ruteprøven for repræsentative dækningshuller kunne ikke starte i denne runtime på grund af Playwright `spawn EPERM`; forsøget er gemt uden databaseændringer.

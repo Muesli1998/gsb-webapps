@@ -67,3 +67,13 @@ Metodedetaljer til en senere skill står i `COMPLETE_RESULT_FALLBACK_METHOD.md`;
 - 16 repræsentative gap-kampe er klar til fem fragmentvarianter.
 - Denne runtime kunne ikke starte Playwright (spawn EPERM); forsøget er gemt og ændrede ikke databasen.
 - De gemte browserpayloads bruges derfor fortsat som evidens, indtil browserkørslen kan gentages.
+
+## Seneste synkroniseringsaudit: holdresultat vs. individuelle resultater
+
+- 2.367 af 2.818 holdkampe har individuelle rækker og er sammenlignet.
+- 1.909 matcher holdresultatets vinderantal nøjagtigt; 458 afviger.
+- 313 afvigelser indeholder mindst én uafklaret kategori. 121 Golden Sets er medtaget, når de passer med holdresultatets samlede kampantal.
+- 39 afvigelser har en gemt `Bemærkning`; 18 er afvigelser uden uafklarede kategorier. Disse skal gennemgås som audit-kandidater og må ikke automatisk omskrives.
+- Rå kategori-markører gemmes i `individual_matches.result_marker_raw`, men deres betydning er ikke fastslået og bliver ikke gættet.
+- Detaljer og sæsonfordeling: `results/team-vs-individual-result-audit.md` og `.json`.
+- Næste genoptagelsespunkt er at klassificere afvigelserne efter evidens (administrativ bemærkning, Golden Set, manglende kategori, markeret 0-0) og derefter genkøre browser-ruteprøven, når runtime kan starte Playwright.
