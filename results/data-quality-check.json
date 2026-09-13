@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-09-13T04:58:34.356Z",
+  "teamMatchesByStatus": [
+    {
+      "status": "api_error",
+      "n": 1066
+    },
+    {
+      "status": "browser_verified",
+      "n": 17
+    },
+    {
+      "status": "complete",
+      "n": 1374
+    },
+    {
+      "status": "corona_suspended",
+      "n": 47
+    },
+    {
+      "status": "missing_players",
+      "n": 314
+    }
+  ],
+  "missingResult": [
+    {
+      "n": 2757
+    }
+  ],
+  "missingSides": [
+    {
+      "n": 1386
+    }
+  ],
+  "standingsRows": 736,
+  "walkovers": 3,
+  "corona": 47
+}
