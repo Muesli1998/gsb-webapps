@@ -1,0 +1,7 @@
+* text=auto
+*.png binary
+*.jpg binary
+*.pdf binary
+*.mp4 binary
+*.xlsx binary
+*.db binary

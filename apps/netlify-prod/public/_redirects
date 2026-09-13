@@ -1,0 +1,9 @@
+# Rodsiden skal vise app-vælgeren (forside.html), ikke Tilmelding eller Netlifys egen
+# implicitte index.html-visning. Duplikeret her som en _redirects-fil (ud over samme regel
+# i netlify.toml), fordi visse deploy-metoder (fx manuel drag-and-drop af public/-mappen)
+# ikke læser netlify.toml's [[redirects]] — en _redirects-fil i selve publish-mappen
+# virker uanset deploy-metode. Se netlify.toml for baggrunden.
+# "!" efter 200 = force: uden den serverer Netlify den statiske public/index.html
+# direkte på "/" FØR redirect-reglen overhovedet tjekkes (statiske filer vinder som
+# standard), så man aldrig ramte denne regel.
+/  /forside.html  200!

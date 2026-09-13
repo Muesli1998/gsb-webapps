@@ -1,0 +1,3440 @@
+[
+  {
+    "navn": "Anna Rudolph",
+    "id": "16490",
+    "refId": "120215-04",
+    "single": 1770,
+    "double": 1495,
+    "mix": 1225,
+    "koen": "D"
+  },
+  {
+    "navn": "Chaojun Li",
+    "id": "34542",
+    "refId": "861220-09",
+    "single": null,
+    "double": 1745,
+    "mix": 1630,
+    "koen": "D"
+  },
+  {
+    "navn": "Charlotte Neerdal",
+    "id": "38336",
+    "refId": "000228-07",
+    "single": null,
+    "double": 1214,
+    "mix": 1293,
+    "koen": "D"
+  },
+  {
+    "navn": "Aanya Sarma",
+    "id": "16496",
+    "refId": "121004-02",
+    "single": 1387,
+    "double": 1126,
+    "mix": 1197,
+    "koen": "D"
+  },
+  {
+    "navn": "Hannah Clausen",
+    "id": "16151",
+    "refId": "001021-04",
+    "single": 2491,
+    "double": 2383,
+    "mix": 2384,
+    "koen": "D"
+  },
+  {
+    "navn": "Irene Sterlie",
+    "id": "16152",
+    "refId": "470818-01",
+    "single": null,
+    "double": 1738,
+    "mix": 1933,
+    "koen": "D"
+  },
+  {
+    "navn": "Helle Vibeke Bust",
+    "id": "16158",
+    "refId": "610208-01",
+    "single": null,
+    "double": 1114,
+    "mix": 1141,
+    "koen": "D"
+  },
+  {
+    "navn": "Ditte Nyeng",
+    "id": "16166",
+    "refId": "730724-02",
+    "single": null,
+    "double": 2415,
+    "mix": 2434,
+    "koen": "D"
+  },
+  {
+    "navn": "Lena Vang",
+    "id": "16169",
+    "refId": "741114-01",
+    "single": null,
+    "double": 2266,
+    "mix": 2548,
+    "koen": "D"
+  },
+  {
+    "navn": "Signe Aarøe Jørgensen",
+    "id": "16171",
+    "refId": "760519-01",
+    "single": null,
+    "double": 2226,
+    "mix": 2296,
+    "koen": "D"
+  },
+  {
+    "navn": "Rikke Krawcyk",
+    "id": "16178",
+    "refId": "781129-02",
+    "single": null,
+    "double": 2436,
+    "mix": 2445,
+    "koen": "D"
+  },
+  {
+    "navn": "Louise Kofoed",
+    "id": "16179",
+    "refId": "790314-01",
+    "single": 2060,
+    "double": 2275,
+    "mix": 2359,
+    "koen": "D"
+  },
+  {
+    "navn": "Line Nielsen",
+    "id": "16191",
+    "refId": "841225-01",
+    "single": null,
+    "double": 2409,
+    "mix": 2708,
+    "koen": "D"
+  },
+  {
+    "navn": "Stine Louise Knudsen",
+    "id": "16193",
+    "refId": "850604-14",
+    "single": 1998,
+    "double": 2243,
+    "mix": 2258,
+    "koen": "D"
+  },
+  {
+    "navn": "Linda Bækgaard",
+    "id": "16197",
+    "refId": "860705-05",
+    "single": 2168,
+    "double": 2276,
+    "mix": 2041,
+    "koen": "D"
+  },
+  {
+    "navn": "Simone Møller Jensen",
+    "id": "16209",
+    "refId": "931208-02",
+    "single": 2378,
+    "double": 2526,
+    "mix": 2354,
+    "koen": "D"
+  },
+  {
+    "navn": "Merete Jacobsen",
+    "id": "16232",
+    "refId": "591230-02",
+    "single": null,
+    "double": 1620,
+    "mix": 1777,
+    "koen": "D"
+  },
+  {
+    "navn": "Liselotte Seider",
+    "id": "16246",
+    "refId": "691228-02",
+    "single": null,
+    "double": 2143,
+    "mix": 2379,
+    "koen": "D"
+  },
+  {
+    "navn": "Annette Kørboe",
+    "id": "16248",
+    "refId": "660330-04",
+    "single": null,
+    "double": 1761,
+    "mix": 1865,
+    "koen": "D"
+  },
+  {
+    "navn": "Lene Thrysøe",
+    "id": "16249",
+    "refId": "600813-01",
+    "single": null,
+    "double": 1729,
+    "mix": 1689,
+    "koen": "D"
+  },
+  {
+    "navn": "Camilla Edfors Terkildsen",
+    "id": "16256",
+    "refId": "900421-22",
+    "single": 2334,
+    "double": 2356,
+    "mix": 2352,
+    "koen": "D"
+  },
+  {
+    "navn": "Dorte Petersen",
+    "id": "16263",
+    "refId": "590303-03",
+    "single": null,
+    "double": 1960,
+    "mix": 1869,
+    "koen": "D"
+  },
+  {
+    "navn": "Noomi Mortensen",
+    "id": "16272",
+    "refId": "570404-04",
+    "single": null,
+    "double": 1940,
+    "mix": 1871,
+    "koen": "D"
+  },
+  {
+    "navn": "Birgitte Jakobsen",
+    "id": "16289",
+    "refId": "610503-01",
+    "single": null,
+    "double": 1724,
+    "mix": 1573,
+    "koen": "D"
+  },
+  {
+    "navn": "Helle Larsen",
+    "id": "16296",
+    "refId": "570802-01",
+    "single": null,
+    "double": 1955,
+    "mix": 1989,
+    "koen": "D"
+  },
+  {
+    "navn": "Liselotte Hermansen",
+    "id": "16306",
+    "refId": "680623-06",
+    "single": null,
+    "double": 1908,
+    "mix": 1935,
+    "koen": "D"
+  },
+  {
+    "navn": "Ulla Milsted",
+    "id": "16333",
+    "refId": "630524-02",
+    "single": null,
+    "double": 1423,
+    "mix": 1441,
+    "koen": "D"
+  },
+  {
+    "navn": "Marie Gotfred Johansen",
+    "id": "16385",
+    "refId": "790708-03",
+    "single": 2268,
+    "double": 2262,
+    "mix": 2384,
+    "koen": "D"
+  },
+  {
+    "navn": "Lykke Unden",
+    "id": "16399",
+    "refId": "080122-04",
+    "single": 1423,
+    "double": 1432,
+    "mix": 1271,
+    "koen": "D"
+  },
+  {
+    "navn": "Maria Søberg Roed",
+    "id": "16404",
+    "refId": "070314-08",
+    "single": 1477,
+    "double": 1424,
+    "mix": null,
+    "koen": "D"
+  },
+  {
+    "navn": "Freja Bygsø",
+    "id": "16406",
+    "refId": "060512-08",
+    "single": 1059,
+    "double": 1075,
+    "mix": 990,
+    "koen": "D"
+  },
+  {
+    "navn": "Mikkeline Maagaard Isager-Sally",
+    "id": "16414",
+    "refId": "081017-05",
+    "single": 1156,
+    "double": 1156,
+    "mix": 1166,
+    "koen": "D"
+  },
+  {
+    "navn": "Mille-marie Fischer Andersen",
+    "id": "16470",
+    "refId": "070412-13",
+    "single": 1190,
+    "double": 1190,
+    "mix": 1190,
+    "koen": "D"
+  },
+  {
+    "navn": "Caroline Palmer Haushøj",
+    "id": "16479",
+    "refId": "060409-15",
+    "single": 990,
+    "double": 990,
+    "mix": 990,
+    "koen": "D"
+  },
+  {
+    "navn": "Amanda Seidler",
+    "id": "16480",
+    "refId": "070601-14",
+    "single": 1193,
+    "double": 1190,
+    "mix": 1190,
+    "koen": "D"
+  },
+  {
+    "navn": "Julie Isager",
+    "id": "16481",
+    "refId": "060623-14",
+    "single": 990,
+    "double": 990,
+    "mix": 990,
+    "koen": "D"
+  },
+  {
+    "navn": "Kamille Møller Glendorf",
+    "id": "16482",
+    "refId": "060119-13",
+    "single": 990,
+    "double": 990,
+    "mix": 990,
+    "koen": "D"
+  },
+  {
+    "navn": "Julie Storgaard Scheibel",
+    "id": "16511",
+    "refId": "080221-06",
+    "single": 1150,
+    "double": 1233,
+    "mix": 1167,
+    "koen": "D"
+  },
+  {
+    "navn": "Elena Shojaei",
+    "id": "16521",
+    "refId": "080830-13",
+    "single": 1165,
+    "double": 1150,
+    "mix": 1166,
+    "koen": "D"
+  },
+  {
+    "navn": "Helga Kjersgaard Olesen",
+    "id": "16522",
+    "refId": "080324-13",
+    "single": 1156,
+    "double": 1156,
+    "mix": 1166,
+    "koen": "D"
+  },
+  {
+    "navn": "Bettina Meyer Hansen",
+    "id": "16545",
+    "refId": "690904-02",
+    "single": null,
+    "double": 1067,
+    "mix": 1089,
+    "koen": "D"
+  },
+  {
+    "navn": "Asta Skovgaard Andersen",
+    "id": "16559",
+    "refId": "080922-06",
+    "single": 1156,
+    "double": 1156,
+    "mix": null,
+    "koen": "D"
+  },
+  {
+    "navn": "Michelle Christensen",
+    "id": "22839",
+    "refId": "930609-21",
+    "single": 2486,
+    "double": 2621,
+    "mix": null,
+    "koen": "D"
+  },
+  {
+    "navn": "Søs Stadil",
+    "id": "1604",
+    "refId": "521007-01",
+    "single": null,
+    "double": 1366,
+    "mix": 1448,
+    "koen": "D"
+  },
+  {
+    "navn": "Helle Mathiasen",
+    "id": "26431",
+    "refId": "701117-03",
+    "single": 2056,
+    "double": 2420,
+    "mix": 2116,
+    "koen": "D"
+  },
+  {
+    "navn": "Nadia Sawangjai Mortensen",
+    "id": "26432",
+    "refId": "021022-04",
+    "single": 2313,
+    "double": 2290,
+    "mix": 2363,
+    "koen": "D"
+  },
+  {
+    "navn": "Gitte Mathiasen",
+    "id": "26433",
+    "refId": "721122-10",
+    "single": 2236,
+    "double": 2263,
+    "mix": 2315,
+    "koen": "D"
+  },
+  {
+    "navn": "Anja Thomsen",
+    "id": "26699",
+    "refId": "701024-03",
+    "single": 1988,
+    "double": 2663,
+    "mix": 2906,
+    "koen": "D"
+  },
+  {
+    "navn": "Hanne Meinertz Hagendal",
+    "id": "28336",
+    "refId": "830407-02",
+    "single": 1417,
+    "double": 1455,
+    "mix": 1420,
+    "koen": "D"
+  },
+  {
+    "navn": "Hanne Reck",
+    "id": "29400",
+    "refId": "841224-01",
+    "single": null,
+    "double": 1092,
+    "mix": 1116,
+    "koen": "D"
+  },
+  {
+    "navn": "Rosa Føge",
+    "id": "29401",
+    "refId": "841221-01",
+    "single": null,
+    "double": 1097,
+    "mix": 1081,
+    "koen": "D"
+  },
+  {
+    "navn": "Ida Louise Jørgensen",
+    "id": "29403",
+    "refId": "080718-18",
+    "single": 1156,
+    "double": 1156,
+    "mix": 1166,
+    "koen": "D"
+  },
+  {
+    "navn": "Chiori Nagatsuka",
+    "id": "29408",
+    "refId": "820203-02",
+    "single": null,
+    "double": 1122,
+    "mix": 1391,
+    "koen": "D"
+  },
+  {
+    "navn": "Lene Offersgaard",
+    "id": "29409",
+    "refId": "660316-07",
+    "single": null,
+    "double": 1061,
+    "mix": 1084,
+    "koen": "D"
+  },
+  {
+    "navn": "Manya Bhardwaj",
+    "id": "16505",
+    "refId": "090228-11",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "D"
+  },
+  {
+    "navn": "Sarah Hansen Tulinius",
+    "id": "16554",
+    "refId": "090611-11",
+    "single": 1150,
+    "double": 1150,
+    "mix": null,
+    "koen": "D"
+  },
+  {
+    "navn": "Emilie Høgh Haugaard",
+    "id": "16557",
+    "refId": "090408-19",
+    "single": 1150,
+    "double": 1150,
+    "mix": null,
+    "koen": "D"
+  },
+  {
+    "navn": "Cecilia Suhr-Virranniemi",
+    "id": "16558",
+    "refId": "090822-100",
+    "single": 1150,
+    "double": 1150,
+    "mix": null,
+    "koen": "D"
+  },
+  {
+    "navn": "Sofie Granau Holm",
+    "id": "16560",
+    "refId": "090105-12",
+    "single": 1150,
+    "double": 1150,
+    "mix": null,
+    "koen": "D"
+  },
+  {
+    "navn": "Emilie Libak Rasmussen",
+    "id": "29814",
+    "refId": "090318-10",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "D"
+  },
+  {
+    "navn": "Tenna Schrøder",
+    "id": "1227",
+    "refId": "681008-06",
+    "single": null,
+    "double": 1555,
+    "mix": 1721,
+    "koen": "D"
+  },
+  {
+    "navn": "Lisbeth Laursen",
+    "id": "16156",
+    "refId": "591115-02",
+    "single": null,
+    "double": 1665,
+    "mix": 1562,
+    "koen": "D"
+  },
+  {
+    "navn": "Dorthe Høst",
+    "id": "16168",
+    "refId": "741020-01",
+    "single": 1207,
+    "double": 1187,
+    "mix": null,
+    "koen": "D"
+  },
+  {
+    "navn": "Sabina Juul Larsson",
+    "id": "16175",
+    "refId": "780202-01",
+    "single": null,
+    "double": 1736,
+    "mix": 1752,
+    "koen": "D"
+  },
+  {
+    "navn": "Tina Skov Mikkelsen",
+    "id": "16188",
+    "refId": "821019-01",
+    "single": null,
+    "double": 1733,
+    "mix": 1760,
+    "koen": "D"
+  },
+  {
+    "navn": "Lene Sørensen",
+    "id": "16194",
+    "refId": "851120-11",
+    "single": null,
+    "double": 2282,
+    "mix": 2321,
+    "koen": "D"
+  },
+  {
+    "navn": "Tina Kærgaard Wissing",
+    "id": "12876",
+    "refId": "860208-02",
+    "single": 2232,
+    "double": 2432,
+    "mix": 2668,
+    "koen": "D"
+  },
+  {
+    "navn": "Lisa Munch Andersen",
+    "id": "16261",
+    "refId": "620403-02",
+    "single": null,
+    "double": 1089,
+    "mix": 1121,
+    "koen": "D"
+  },
+  {
+    "navn": "Lotte Hermansen",
+    "id": "16358",
+    "refId": "640623-02",
+    "single": null,
+    "double": 1107,
+    "mix": 1081,
+    "koen": "D"
+  },
+  {
+    "navn": "Kathrine Blichsted Brauer",
+    "id": "16396",
+    "refId": "780613-08",
+    "single": null,
+    "double": 1107,
+    "mix": 1078,
+    "koen": "D"
+  },
+  {
+    "navn": "Nete Fossing",
+    "id": "16367",
+    "refId": "020803-12",
+    "single": null,
+    "double": 1089,
+    "mix": 1089,
+    "koen": "D"
+  },
+  {
+    "navn": "Saritha Soman",
+    "id": "34543",
+    "refId": "820728-05",
+    "single": null,
+    "double": 1747,
+    "mix": 1713,
+    "koen": "D"
+  },
+  {
+    "navn": "Hannah Klein (EU)",
+    "id": "34615",
+    "refId": "080326-15",
+    "single": 1508,
+    "double": 1421,
+    "mix": 1355,
+    "koen": "D"
+  },
+  {
+    "navn": "Tanja Willumsen",
+    "id": "36069",
+    "refId": "770225-01",
+    "single": 1282,
+    "double": 1226,
+    "mix": 1178,
+    "koen": "D"
+  },
+  {
+    "navn": "Karen Obling",
+    "id": "36073",
+    "refId": "831011-05",
+    "single": null,
+    "double": 1606,
+    "mix": 1632,
+    "koen": "D"
+  },
+  {
+    "navn": "Helle Juel-berg",
+    "id": "36145",
+    "refId": "810123-02",
+    "single": 1500,
+    "double": 1558,
+    "mix": 1567,
+    "koen": "D"
+  },
+  {
+    "navn": "Freja Fan Fuglsang",
+    "id": "16462",
+    "refId": "100124-04",
+    "single": 1395,
+    "double": 1303,
+    "mix": 1165,
+    "koen": "D"
+  },
+  {
+    "navn": "Mina Lorin Özden",
+    "id": "16473",
+    "refId": "100123-07",
+    "single": 1468,
+    "double": 1491,
+    "mix": 1303,
+    "koen": "D"
+  },
+  {
+    "navn": "Mathilde Francl",
+    "id": "16477",
+    "refId": "100622-05",
+    "single": 1100,
+    "double": 1100,
+    "mix": 1100,
+    "koen": "D"
+  },
+  {
+    "navn": "Rosa Hinge Carlsson",
+    "id": "16561",
+    "refId": "100219-13",
+    "single": 1635,
+    "double": 1351,
+    "mix": 1157,
+    "koen": "D"
+  },
+  {
+    "navn": "Ruhani Ahana Mukherjee",
+    "id": "16562",
+    "refId": "100831-17",
+    "single": 1100,
+    "double": 1100,
+    "mix": 1100,
+    "koen": "D"
+  },
+  {
+    "navn": "Elisabeth Bakkegaard",
+    "id": "37092",
+    "refId": "101019-13",
+    "single": 1100,
+    "double": 1100,
+    "mix": 1100,
+    "koen": "D"
+  },
+  {
+    "navn": "Sara keinicke",
+    "id": "37094",
+    "refId": "100418-08",
+    "single": 1100,
+    "double": 1100,
+    "mix": 1100,
+    "koen": "D"
+  },
+  {
+    "navn": "Athena Villegas-Lauth",
+    "id": "37096",
+    "refId": "101222-12",
+    "single": 1100,
+    "double": 1100,
+    "mix": 1100,
+    "koen": "D"
+  },
+  {
+    "navn": "Qian Zhang",
+    "id": "38418",
+    "refId": "100730-18",
+    "single": 1125,
+    "double": 1152,
+    "mix": 1200,
+    "koen": "D"
+  },
+  {
+    "navn": "Chastine Christiansen",
+    "id": "16491",
+    "refId": "121005-02",
+    "single": 1075,
+    "double": 1075,
+    "mix": null,
+    "koen": "D"
+  },
+  {
+    "navn": "Varneka Prasanna Kumar Lavanya",
+    "id": "16499",
+    "refId": "111113-01",
+    "single": 1253,
+    "double": 1100,
+    "mix": 1160,
+    "koen": "D"
+  },
+  {
+    "navn": "Cecilie Nygård",
+    "id": "16514",
+    "refId": "120816-04",
+    "single": 1075,
+    "double": 1075,
+    "mix": 1075,
+    "koen": "D"
+  },
+  {
+    "navn": "Svea Lisbeth Bergström Hesselballe",
+    "id": "16519",
+    "refId": "121003-02",
+    "single": 1114,
+    "double": 1215,
+    "mix": 1100,
+    "koen": "D"
+  },
+  {
+    "navn": "Alemeh Mousavi Hejazi",
+    "id": "16563",
+    "refId": "110523-11",
+    "single": 1100,
+    "double": 1100,
+    "mix": 1100,
+    "koen": "D"
+  },
+  {
+    "navn": "Mejse Bjerre Bennike",
+    "id": "16573",
+    "refId": "110601-09",
+    "single": 1100,
+    "double": 1100,
+    "mix": 1100,
+    "koen": "D"
+  },
+  {
+    "navn": "Maryam Yousefi",
+    "id": "39335",
+    "refId": "771130-02",
+    "single": null,
+    "double": 1494,
+    "mix": 1493,
+    "koen": "D"
+  },
+  {
+    "navn": "Jasmine Abdelqadir",
+    "id": "39340",
+    "refId": "120314-10",
+    "single": 1075,
+    "double": 1075,
+    "mix": 1075,
+    "koen": "D"
+  },
+  {
+    "navn": "Advika Sawardekar",
+    "id": "39349",
+    "refId": "120806-15",
+    "single": 1075,
+    "double": 1075,
+    "mix": 1075,
+    "koen": "D"
+  },
+  {
+    "navn": "Sophia Abrahamsen",
+    "id": "39361",
+    "refId": "110313-11",
+    "single": 1100,
+    "double": 1100,
+    "mix": 1100,
+    "koen": "D"
+  },
+  {
+    "navn": "Yasi Mosafer",
+    "id": "40748",
+    "refId": "111230-11",
+    "single": 1100,
+    "double": 1100,
+    "mix": 1100,
+    "koen": "D"
+  },
+  {
+    "navn": "Eshaal Azam",
+    "id": "40749",
+    "refId": "120215-14",
+    "single": 1075,
+    "double": 1075,
+    "mix": 1075,
+    "koen": "D"
+  },
+  {
+    "navn": "Sophia Rita Giuliani",
+    "id": "40750",
+    "refId": "120121-06",
+    "single": 1075,
+    "double": 1075,
+    "mix": 1075,
+    "koen": "D"
+  },
+  {
+    "navn": "Ditte Hjorth Laursen",
+    "id": "40824",
+    "refId": "810701-03",
+    "single": null,
+    "double": 1520,
+    "mix": 1516,
+    "koen": "D"
+  },
+  {
+    "navn": "Laura Kyndborg",
+    "id": "41671",
+    "refId": "810116-02",
+    "single": null,
+    "double": 1519,
+    "mix": 1560,
+    "koen": "D"
+  },
+  {
+    "navn": "Mia Elizabeth Toftager",
+    "id": "41774",
+    "refId": "761123-07",
+    "single": null,
+    "double": 1492,
+    "mix": 1474,
+    "koen": "D"
+  },
+  {
+    "navn": "Laura Budtz Backlund",
+    "id": "41790",
+    "refId": "110424-08",
+    "single": 1100,
+    "double": 1100,
+    "mix": 1100,
+    "koen": "D"
+  },
+  {
+    "navn": "Changsi Cai",
+    "id": "42094",
+    "refId": "830205-01",
+    "single": null,
+    "double": 1491,
+    "mix": 1516,
+    "koen": "D"
+  },
+  {
+    "navn": "Ahana Mondal",
+    "id": "16574",
+    "refId": "131203-09",
+    "single": 1075,
+    "double": 1075,
+    "mix": 1075,
+    "koen": "D"
+  },
+  {
+    "navn": "Dagmar Sally Birch",
+    "id": "43069",
+    "refId": "130914-08",
+    "single": 1075,
+    "double": 1075,
+    "mix": 1075,
+    "koen": "D"
+  },
+  {
+    "navn": "Cornelia Viola Bender-Jacobsen",
+    "id": "43079",
+    "refId": "130111-09",
+    "single": 1299,
+    "double": 1292,
+    "mix": 1231,
+    "koen": "D"
+  },
+  {
+    "navn": "Afifa kulsum Baig",
+    "id": "43087",
+    "refId": "130427-07",
+    "single": 1075,
+    "double": 1075,
+    "mix": 1075,
+    "koen": "D"
+  },
+  {
+    "navn": "Christina Liu",
+    "id": "43107",
+    "refId": "130228-06",
+    "single": 1075,
+    "double": 1075,
+    "mix": 1075,
+    "koen": "D"
+  },
+  {
+    "navn": "Camilla Steinmetz Bagge",
+    "id": "44449",
+    "refId": "981116-07",
+    "single": null,
+    "double": 2290,
+    "mix": 2340,
+    "koen": "D"
+  },
+  {
+    "navn": "Bhavya Kavya Sri Singam",
+    "id": "44508",
+    "refId": "900815-25",
+    "single": null,
+    "double": 1438,
+    "mix": 1486,
+    "koen": "D"
+  },
+  {
+    "navn": "Julie Reholt",
+    "id": "44510",
+    "refId": "931222-17",
+    "single": null,
+    "double": 1438,
+    "mix": 1474,
+    "koen": "D"
+  },
+  {
+    "navn": "Ida Lindgaard Christiansen",
+    "id": "16452",
+    "refId": "071012-08",
+    "single": 1190,
+    "double": null,
+    "mix": null,
+    "koen": "D"
+  },
+  {
+    "navn": "Cornelia Holzmann",
+    "id": "29404",
+    "refId": "080512-22",
+    "single": 1156,
+    "double": null,
+    "mix": null,
+    "koen": "D"
+  },
+  {
+    "navn": "Emeli Hansen",
+    "id": "41040",
+    "refId": "961105-20",
+    "single": null,
+    "double": null,
+    "mix": 1492,
+    "koen": "D"
+  },
+  {
+    "navn": "Lauge Juul Hornsgaard",
+    "id": "16498",
+    "refId": "130104-03",
+    "single": 1916,
+    "double": 1774,
+    "mix": 1520,
+    "koen": "H"
+  },
+  {
+    "navn": "Thøger Eusebius Jakobsen",
+    "id": "16424",
+    "refId": "080402-08",
+    "single": 1602,
+    "double": 1650,
+    "mix": 1372,
+    "koen": "H"
+  },
+  {
+    "navn": "Sebastian Almeida Møller",
+    "id": "16467",
+    "refId": "080624-11",
+    "single": 1918,
+    "double": 1904,
+    "mix": 1877,
+    "koen": "H"
+  },
+  {
+    "navn": "Marius Steenstrup Leth-Espensen",
+    "id": "16488",
+    "refId": "120413-02",
+    "single": 2028,
+    "double": 1740,
+    "mix": 1508,
+    "koen": "H"
+  },
+  {
+    "navn": "Sverre Stütz",
+    "id": "18383",
+    "refId": "930107-09",
+    "single": 1679,
+    "double": 1793,
+    "mix": 1496,
+    "koen": "H"
+  },
+  {
+    "navn": "Shenai Antony",
+    "id": "44450",
+    "refId": "950827-18",
+    "single": 3063,
+    "double": 2970,
+    "mix": 2904,
+    "koen": "H"
+  },
+  {
+    "navn": "Fariborz Mosafer",
+    "id": "34541",
+    "refId": "790421-05",
+    "single": 1285,
+    "double": 1281,
+    "mix": 1336,
+    "koen": "H"
+  },
+  {
+    "navn": "Steen Kiorboe",
+    "id": "16153",
+    "refId": "491220-01",
+    "single": null,
+    "double": 2332,
+    "mix": 2295,
+    "koen": "H"
+  },
+  {
+    "navn": "Tue Abelskov",
+    "id": "16155",
+    "refId": "540325-01",
+    "single": null,
+    "double": 2444,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Svend Videbæk",
+    "id": "16157",
+    "refId": "600124-01",
+    "single": null,
+    "double": 2507,
+    "mix": 2366,
+    "koen": "H"
+  },
+  {
+    "navn": "Kent Meiling Sørensen",
+    "id": "16160",
+    "refId": "650424-03",
+    "single": null,
+    "double": 2478,
+    "mix": 2561,
+    "koen": "H"
+  },
+  {
+    "navn": "Christian Thrysøe",
+    "id": "16163",
+    "refId": "661124-04",
+    "single": null,
+    "double": 1794,
+    "mix": 1879,
+    "koen": "H"
+  },
+  {
+    "navn": "Kristian Boye Nielsen",
+    "id": "16172",
+    "refId": "760626-01",
+    "single": null,
+    "double": 2668,
+    "mix": 2702,
+    "koen": "H"
+  },
+  {
+    "navn": "Kenneth Hasselby",
+    "id": "16173",
+    "refId": "761122-01",
+    "single": null,
+    "double": 3196,
+    "mix": 3125,
+    "koen": "H"
+  },
+  {
+    "navn": "Kristian Serup",
+    "id": "16176",
+    "refId": "780705-01",
+    "single": 2185,
+    "double": 2332,
+    "mix": 2174,
+    "koen": "H"
+  },
+  {
+    "navn": "Morten Aarøe",
+    "id": "16184",
+    "refId": "811027-01",
+    "single": 3240,
+    "double": 3291,
+    "mix": 3059,
+    "koen": "H"
+  },
+  {
+    "navn": "Anders Amelung",
+    "id": "16186",
+    "refId": "820528-01",
+    "single": null,
+    "double": 3143,
+    "mix": 3000,
+    "koen": "H"
+  },
+  {
+    "navn": "Jonas Niebling",
+    "id": "16187",
+    "refId": "820904-01",
+    "single": null,
+    "double": 2847,
+    "mix": 2924,
+    "koen": "H"
+  },
+  {
+    "navn": "Claus Christophersen",
+    "id": "16189",
+    "refId": "831222-01",
+    "single": 2903,
+    "double": 3138,
+    "mix": 2697,
+    "koen": "H"
+  },
+  {
+    "navn": "Brian Oddershede",
+    "id": "16196",
+    "refId": "860325-15",
+    "single": 2684,
+    "double": 2861,
+    "mix": 2246,
+    "koen": "H"
+  },
+  {
+    "navn": "Rasmus Holmslykke Andersen",
+    "id": "16204",
+    "refId": "911210-16",
+    "single": 3047,
+    "double": 3080,
+    "mix": 2728,
+    "koen": "H"
+  },
+  {
+    "navn": "Rasmus Hemmingsen",
+    "id": "16210",
+    "refId": "941107-16",
+    "single": 2748,
+    "double": 2618,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Adnan Bacic",
+    "id": "16214",
+    "refId": "980325-17",
+    "single": 1912,
+    "double": 1468,
+    "mix": 1660,
+    "koen": "H"
+  },
+  {
+    "navn": "Erik Juul",
+    "id": "16215",
+    "refId": "980517-08",
+    "single": 2377,
+    "double": 2398,
+    "mix": 1287,
+    "koen": "H"
+  },
+  {
+    "navn": "Jonas Trusell-Jensen",
+    "id": "16217",
+    "refId": "981024-08",
+    "single": 3271,
+    "double": 3201,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Jonathan W. Hansen",
+    "id": "16220",
+    "refId": "000122-08",
+    "single": 3314,
+    "double": 3021,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Oliver Guldbæk",
+    "id": "16229",
+    "refId": "990902-07",
+    "single": 2753,
+    "double": 2722,
+    "mix": 2689,
+    "koen": "H"
+  },
+  {
+    "navn": "Jesper Hyldal",
+    "id": "16230",
+    "refId": "680825-02",
+    "single": null,
+    "double": 2750,
+    "mix": 2542,
+    "koen": "H"
+  },
+  {
+    "navn": "Tobias Weinreich Hansen",
+    "id": "16231",
+    "refId": "030223-03",
+    "single": 3046,
+    "double": 3030,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Bent Horn Andersen",
+    "id": "16233",
+    "refId": "570330-01",
+    "single": null,
+    "double": 2018,
+    "mix": 1747,
+    "koen": "H"
+  },
+  {
+    "navn": "Christian Staal",
+    "id": "16240",
+    "refId": "990521-15",
+    "single": null,
+    "double": 2453,
+    "mix": 2234,
+    "koen": "H"
+  },
+  {
+    "navn": "Tim Guldbæk",
+    "id": "16250",
+    "refId": "660906-02",
+    "single": null,
+    "double": 2362,
+    "mix": 2170,
+    "koen": "H"
+  },
+  {
+    "navn": "Gert Poulsen",
+    "id": "16251",
+    "refId": "540804-01",
+    "single": null,
+    "double": 1978,
+    "mix": 1322,
+    "koen": "H"
+  },
+  {
+    "navn": "Claus Starcke",
+    "id": "16254",
+    "refId": "600804-04",
+    "single": null,
+    "double": 1907,
+    "mix": 1967,
+    "koen": "H"
+  },
+  {
+    "navn": "Frank Nielsen",
+    "id": "16257",
+    "refId": "650814-03",
+    "single": null,
+    "double": 1901,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Christian Rein Johannessen",
+    "id": "16259",
+    "refId": "660819-03",
+    "single": null,
+    "double": 2191,
+    "mix": 2077,
+    "koen": "H"
+  },
+  {
+    "navn": "Kim Jørgensen",
+    "id": "16264",
+    "refId": "600101-59",
+    "single": null,
+    "double": 2367,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Lennart Høy",
+    "id": "16267",
+    "refId": "611121-03",
+    "single": null,
+    "double": 2299,
+    "mix": 1995,
+    "koen": "H"
+  },
+  {
+    "navn": "Svend Valentin Rasmussen",
+    "id": "16269",
+    "refId": "460116-01",
+    "single": null,
+    "double": 1878,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "John Kørboe",
+    "id": "16276",
+    "refId": "630819-03",
+    "single": null,
+    "double": 1987,
+    "mix": 2127,
+    "koen": "H"
+  },
+  {
+    "navn": "Michael Villiam Nielsen",
+    "id": "16286",
+    "refId": "740228-01",
+    "single": null,
+    "double": 3080,
+    "mix": 2833,
+    "koen": "H"
+  },
+  {
+    "navn": "Mogens Jørgensen",
+    "id": "16287",
+    "refId": "460115-02",
+    "single": null,
+    "double": 2059,
+    "mix": 1675,
+    "koen": "H"
+  },
+  {
+    "navn": "Jan Holzmann Rasmussen",
+    "id": "16288",
+    "refId": "550115-02",
+    "single": null,
+    "double": 1939,
+    "mix": 1631,
+    "koen": "H"
+  },
+  {
+    "navn": "Per Wengenroth",
+    "id": "16291",
+    "refId": "670304-02",
+    "single": null,
+    "double": 2179,
+    "mix": 2023,
+    "koen": "H"
+  },
+  {
+    "navn": "Leif Hansen",
+    "id": "16293",
+    "refId": "470415-01",
+    "single": null,
+    "double": 2008,
+    "mix": 1396,
+    "koen": "H"
+  },
+  {
+    "navn": "Jesper Norup Johansen",
+    "id": "16294",
+    "refId": "600211-01",
+    "single": null,
+    "double": 1883,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Michael Bjergsted",
+    "id": "16295",
+    "refId": "571204-03",
+    "single": null,
+    "double": 2328,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Martin Gath Ridorf-Hansen",
+    "id": "16298",
+    "refId": "711103-03",
+    "single": null,
+    "double": 2556,
+    "mix": 2263,
+    "koen": "H"
+  },
+  {
+    "navn": "Nils Ole Andersen",
+    "id": "16299",
+    "refId": "590313-03",
+    "single": null,
+    "double": 2313,
+    "mix": 2121,
+    "koen": "H"
+  },
+  {
+    "navn": "henrik perregaard",
+    "id": "16309",
+    "refId": "590519-01",
+    "single": null,
+    "double": 2004,
+    "mix": 1824,
+    "koen": "H"
+  },
+  {
+    "navn": "Oliver Frei",
+    "id": "16310",
+    "refId": "000825-11",
+    "single": 3088,
+    "double": 3013,
+    "mix": 2940,
+    "koen": "H"
+  },
+  {
+    "navn": "Carsten Nørgaard",
+    "id": "16323",
+    "refId": "690924-03",
+    "single": null,
+    "double": 2169,
+    "mix": 2016,
+    "koen": "H"
+  },
+  {
+    "navn": "Yiting Chen",
+    "id": "16338",
+    "refId": "820908-02",
+    "single": 2315,
+    "double": 2420,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Peter Gundersen",
+    "id": "16356",
+    "refId": "791207-02",
+    "single": null,
+    "double": 2694,
+    "mix": 1905,
+    "koen": "H"
+  },
+  {
+    "navn": "Steffen Wad",
+    "id": "16373",
+    "refId": "600813-02",
+    "single": null,
+    "double": 2162,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Casper Bjerre Labori Olsen",
+    "id": "16383",
+    "refId": "940729-14",
+    "single": null,
+    "double": 2571,
+    "mix": 2692,
+    "koen": "H"
+  },
+  {
+    "navn": "Najeeb Durrani",
+    "id": "16387",
+    "refId": "670318-04",
+    "single": null,
+    "double": 2037,
+    "mix": 1287,
+    "koen": "H"
+  },
+  {
+    "navn": "Martin Yulzari",
+    "id": "16393",
+    "refId": "720704-02",
+    "single": 2081,
+    "double": 2106,
+    "mix": 1364,
+    "koen": "H"
+  },
+  {
+    "navn": "Konrad Juul Wurlitzer",
+    "id": "16394",
+    "refId": "070909-02",
+    "single": 1319,
+    "double": 1361,
+    "mix": 1316,
+    "koen": "H"
+  },
+  {
+    "navn": "Raz Matteo Palima ",
+    "id": "16398",
+    "refId": "060107-06",
+    "single": 1262,
+    "double": 1262,
+    "mix": 1262,
+    "koen": "H"
+  },
+  {
+    "navn": "Linus Bergstrøm Hesselballe",
+    "id": "16407",
+    "refId": "070903-07",
+    "single": 1647,
+    "double": 1665,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Anton Sevald",
+    "id": "16411",
+    "refId": "590316-02",
+    "single": null,
+    "double": 1263,
+    "mix": 1311,
+    "koen": "H"
+  },
+  {
+    "navn": "Tobias Holm-Hansen",
+    "id": "16412",
+    "refId": "061005-10",
+    "single": 1262,
+    "double": 1262,
+    "mix": 1262,
+    "koen": "H"
+  },
+  {
+    "navn": "Victor August Drabik Espersen",
+    "id": "16420",
+    "refId": "051220-09",
+    "single": 1571,
+    "double": 1459,
+    "mix": 1287,
+    "koen": "H"
+  },
+  {
+    "navn": "Morten Nielsen",
+    "id": "16436",
+    "refId": "730419-05",
+    "single": null,
+    "double": 2028,
+    "mix": 2050,
+    "koen": "H"
+  },
+  {
+    "navn": "Marcel Yulzari",
+    "id": "16437",
+    "refId": "390718-01",
+    "single": null,
+    "double": 1672,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Mads Vinding",
+    "id": "16439",
+    "refId": "081209-04",
+    "single": 1254,
+    "double": 1254,
+    "mix": 1265,
+    "koen": "H"
+  },
+  {
+    "navn": "Aksel Egedal Kristensen",
+    "id": "16440",
+    "refId": "080913-06",
+    "single": 1524,
+    "double": 1412,
+    "mix": 1265,
+    "koen": "H"
+  },
+  {
+    "navn": "Thomas Stevnsbak Andersen",
+    "id": "16443",
+    "refId": "700710-01",
+    "single": null,
+    "double": 1669,
+    "mix": 1677,
+    "koen": "H"
+  },
+  {
+    "navn": "David Bendix Bie",
+    "id": "16447",
+    "refId": "061213-05",
+    "single": 1866,
+    "double": 1714,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Tore Kristian Krogh",
+    "id": "16453",
+    "refId": "060609-12",
+    "single": 1262,
+    "double": 1262,
+    "mix": 1262,
+    "koen": "H"
+  },
+  {
+    "navn": "Loui Stenbæk",
+    "id": "16457",
+    "refId": "081021-08",
+    "single": 1468,
+    "double": 1315,
+    "mix": 1283,
+    "koen": "H"
+  },
+  {
+    "navn": "Kenn Blæsbjerg Christensen",
+    "id": "11043",
+    "refId": "820503-01",
+    "single": 3112,
+    "double": 3097,
+    "mix": 2912,
+    "koen": "H"
+  },
+  {
+    "navn": "Rasmus Kjær",
+    "id": "16466",
+    "refId": "080407-09",
+    "single": 1434,
+    "double": 1321,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Simon Greve Amdi",
+    "id": "16469",
+    "refId": "080926-16",
+    "single": 1254,
+    "double": 1254,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Anton Krog Søbygaard",
+    "id": "16474",
+    "refId": "081013-10",
+    "single": 1647,
+    "double": 1555,
+    "mix": 1460,
+    "koen": "H"
+  },
+  {
+    "navn": "Emil Juul Lund",
+    "id": "16484",
+    "refId": "080427-09",
+    "single": 1254,
+    "double": 1254,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Loke Kristiansen",
+    "id": "16486",
+    "refId": "080311-11",
+    "single": 1255,
+    "double": 1282,
+    "mix": 1265,
+    "koen": "H"
+  },
+  {
+    "navn": "Henrik Vilhemsen",
+    "id": "16500",
+    "refId": "660118-03",
+    "single": null,
+    "double": 1590,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Ebbe Rokkedal Therkildsen",
+    "id": "16501",
+    "refId": "070220-13",
+    "single": 1385,
+    "double": 1338,
+    "mix": 1289,
+    "koen": "H"
+  },
+  {
+    "navn": "Maximilian Bybeck Ostenfeld",
+    "id": "16512",
+    "refId": "070714-11",
+    "single": 1291,
+    "double": 1289,
+    "mix": 1289,
+    "koen": "H"
+  },
+  {
+    "navn": "Simon Vils Pedersen",
+    "id": "16515",
+    "refId": "070617-12",
+    "single": 1344,
+    "double": 1316,
+    "mix": 1289,
+    "koen": "H"
+  },
+  {
+    "navn": "Jonas Lykke Adamsen",
+    "id": "16516",
+    "refId": "071104-06",
+    "single": 1289,
+    "double": 1289,
+    "mix": 1289,
+    "koen": "H"
+  },
+  {
+    "navn": "Hannibal Skovbye",
+    "id": "16524",
+    "refId": "080502-10",
+    "single": 1254,
+    "double": 1254,
+    "mix": 1265,
+    "koen": "H"
+  },
+  {
+    "navn": "Ruben Jakobi From Søvndal",
+    "id": "16525",
+    "refId": "080825-13",
+    "single": 1254,
+    "double": 1254,
+    "mix": 1265,
+    "koen": "H"
+  },
+  {
+    "navn": "Arthur Esgerd Rohde",
+    "id": "16526",
+    "refId": "080814-19",
+    "single": 1254,
+    "double": 1254,
+    "mix": 1265,
+    "koen": "H"
+  },
+  {
+    "navn": "Mika Steen Thrane",
+    "id": "16531",
+    "refId": "071113-13",
+    "single": 1289,
+    "double": 1289,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Tobias Lerche",
+    "id": "16539",
+    "refId": "070207-17",
+    "single": 1289,
+    "double": 1289,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Viggo Jacobsen",
+    "id": "16540",
+    "refId": "081206-08",
+    "single": 1254,
+    "double": 1254,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Jacob Bloch Schousboe",
+    "id": "16541",
+    "refId": "070317-11",
+    "single": 1289,
+    "double": 1289,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Kim Kristiansen",
+    "id": "16542",
+    "refId": "630413-02",
+    "single": 1261,
+    "double": 1261,
+    "mix": 1287,
+    "koen": "H"
+  },
+  {
+    "navn": "Jens Møller",
+    "id": "16552",
+    "refId": "711008-05",
+    "single": 2732,
+    "double": 2691,
+    "mix": 2742,
+    "koen": "H"
+  },
+  {
+    "navn": "Jan Søborg Meinertz",
+    "id": "16553",
+    "refId": "670819-03",
+    "single": 2230,
+    "double": 2311,
+    "mix": 2246,
+    "koen": "H"
+  },
+  {
+    "navn": "Valdemar Hougaard Poulsen",
+    "id": "16556",
+    "refId": "081022-13",
+    "single": 1254,
+    "double": 1254,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Henrick Villemoes Poulsen",
+    "id": "25494",
+    "refId": "690926-08",
+    "single": 1254,
+    "double": 1244,
+    "mix": 1271,
+    "koen": "H"
+  },
+  {
+    "navn": "Thomas Malmros",
+    "id": "25493",
+    "refId": "781113-10",
+    "single": 1284,
+    "double": 1298,
+    "mix": 1351,
+    "koen": "H"
+  },
+  {
+    "navn": "Malthe Baltzer",
+    "id": "16392",
+    "refId": "070723-03",
+    "single": 2900,
+    "double": 2900,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Sampath Swamy",
+    "id": "21023",
+    "refId": "731211-05",
+    "single": null,
+    "double": 1296,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Kaspar Andreasen",
+    "id": "28399",
+    "refId": "581208-01",
+    "single": null,
+    "double": 1704,
+    "mix": 1652,
+    "koen": "H"
+  },
+  {
+    "navn": "Valdemar Styner Rostock",
+    "id": "24765",
+    "refId": "081023-13",
+    "single": 1263,
+    "double": 1254,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Martin Andersen",
+    "id": "16165",
+    "refId": "730420-01",
+    "single": 1274,
+    "double": 1274,
+    "mix": 1287,
+    "koen": "H"
+  },
+  {
+    "navn": "Kim Bagge",
+    "id": "25495",
+    "refId": "720318-04",
+    "single": 1284,
+    "double": 1320,
+    "mix": 1426,
+    "koen": "H"
+  },
+  {
+    "navn": "Philip John Patrick Stack",
+    "id": "29399",
+    "refId": "800401-08",
+    "single": 1299,
+    "double": 1294,
+    "mix": 1283,
+    "koen": "H"
+  },
+  {
+    "navn": "Jannik Farup",
+    "id": "29402",
+    "refId": "791024-05",
+    "single": 1287,
+    "double": 1291,
+    "mix": 1313,
+    "koen": "H"
+  },
+  {
+    "navn": "Tristan Vindevoghel Hansen",
+    "id": "29405",
+    "refId": "080303-14",
+    "single": 1254,
+    "double": 1254,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Michael Lindbo",
+    "id": "29406",
+    "refId": "791110-04",
+    "single": null,
+    "double": 1830,
+    "mix": 1828,
+    "koen": "H"
+  },
+  {
+    "navn": "Christoffer Ring",
+    "id": "29407",
+    "refId": "800812-02",
+    "single": 1823,
+    "double": 1894,
+    "mix": 1825,
+    "koen": "H"
+  },
+  {
+    "navn": "Shamil Balakrishnan",
+    "id": "29410",
+    "refId": "830711-01",
+    "single": 1382,
+    "double": 1436,
+    "mix": 1405,
+    "koen": "H"
+  },
+  {
+    "navn": "Ask Unden",
+    "id": "16400",
+    "refId": "090909-02",
+    "single": 1729,
+    "double": 1778,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Pelle Emil Jessing Schjøtt",
+    "id": "16430",
+    "refId": "090425-01",
+    "single": 1250,
+    "double": 1250,
+    "mix": 1250,
+    "koen": "H"
+  },
+  {
+    "navn": "Elias Hestehave",
+    "id": "16438",
+    "refId": "090721-04",
+    "single": 1534,
+    "double": 1493,
+    "mix": 1305,
+    "koen": "H"
+  },
+  {
+    "navn": "Hjalte Palmqvist",
+    "id": "16461",
+    "refId": "090626-05",
+    "single": 1470,
+    "double": 1379,
+    "mix": 1351,
+    "koen": "H"
+  },
+  {
+    "navn": "Aksel Wulff Pedersen",
+    "id": "16471",
+    "refId": "090604-09",
+    "single": 1250,
+    "double": 1250,
+    "mix": 1250,
+    "koen": "H"
+  },
+  {
+    "navn": "Max Kristiansen",
+    "id": "16487",
+    "refId": "090707-10",
+    "single": 1250,
+    "double": 1250,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Markus Kruse",
+    "id": "16517",
+    "refId": "091001-14",
+    "single": 1250,
+    "double": 1250,
+    "mix": 1250,
+    "koen": "H"
+  },
+  {
+    "navn": "Rasmus Kimer Fogtmann",
+    "id": "16533",
+    "refId": "091207-16",
+    "single": 1253,
+    "double": 1250,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Simon wagner nielsen",
+    "id": "16538",
+    "refId": "090114-12",
+    "single": 1250,
+    "double": 1250,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Hans Schmidt Berthelsen",
+    "id": "16544",
+    "refId": "090101-14",
+    "single": 1250,
+    "double": 1250,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Jonas Felk Øster",
+    "id": "29817",
+    "refId": "090619-18",
+    "single": 1302,
+    "double": 1250,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Rasmus Herskind",
+    "id": "16221",
+    "refId": "010911-04",
+    "single": 1281,
+    "double": 1283,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Carsten Kromann",
+    "id": "16460",
+    "refId": "720519-04",
+    "single": null,
+    "double": 1406,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Martin Nielsen",
+    "id": "34539",
+    "refId": "930827-06",
+    "single": 1290,
+    "double": 1312,
+    "mix": 1321,
+    "koen": "H"
+  },
+  {
+    "navn": "arslan falak",
+    "id": "34540",
+    "refId": "980809-22",
+    "single": 1317,
+    "double": 1339,
+    "mix": 1274,
+    "koen": "H"
+  },
+  {
+    "navn": "Anoop Narayanan",
+    "id": "34544",
+    "refId": "910701-14",
+    "single": 1344,
+    "double": 1361,
+    "mix": 1476,
+    "koen": "H"
+  },
+  {
+    "navn": "Amir Tayari",
+    "id": "34545",
+    "refId": "810308-02",
+    "single": 1308,
+    "double": 1280,
+    "mix": 1283,
+    "koen": "H"
+  },
+  {
+    "navn": "Kenneth Jørgensen",
+    "id": "34546",
+    "refId": "621210-06",
+    "single": 1239,
+    "double": 1244,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Daniel Hoang",
+    "id": "34548",
+    "refId": "971214-16",
+    "single": 1371,
+    "double": 1302,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Victor Adriano Okstoft Carmelo",
+    "id": "34629",
+    "refId": "860517-15",
+    "single": 1289,
+    "double": 1280,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Farshid Attarhamed",
+    "id": "34630",
+    "refId": "750823-01",
+    "single": null,
+    "double": 1315,
+    "mix": 1282,
+    "koen": "H"
+  },
+  {
+    "navn": "Brian Heiner",
+    "id": "34703",
+    "refId": "830604-02",
+    "single": 1361,
+    "double": 1514,
+    "mix": 1544,
+    "koen": "H"
+  },
+  {
+    "navn": "Morten Høyrup",
+    "id": "34674",
+    "refId": "800323-04",
+    "single": 1565,
+    "double": 1669,
+    "mix": 1579,
+    "koen": "H"
+  },
+  {
+    "navn": "Kasper Viktor Petersen",
+    "id": "35061",
+    "refId": "900312-16",
+    "single": 1383,
+    "double": 1287,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Abhilash Vijayannair",
+    "id": "35062",
+    "refId": "790528-02",
+    "single": null,
+    "double": 1981,
+    "mix": 1885,
+    "koen": "H"
+  },
+  {
+    "navn": "Christian Kjær",
+    "id": "35063",
+    "refId": "690423-07",
+    "single": 1319,
+    "double": 1330,
+    "mix": 1300,
+    "koen": "H"
+  },
+  {
+    "navn": "Villads Bjerregaard",
+    "id": "26914",
+    "refId": "070305-03",
+    "single": 1573,
+    "double": 1544,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Aniket Mule",
+    "id": "35674",
+    "refId": "930201-22",
+    "single": 1311,
+    "double": 1364,
+    "mix": 1458,
+    "koen": "H"
+  },
+  {
+    "navn": "Kenneth Jørgensen",
+    "id": "35709",
+    "refId": "631210-04",
+    "single": 1760,
+    "double": 1695,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Oliver Walbum",
+    "id": "35710",
+    "refId": "970529-32",
+    "single": 1753,
+    "double": 1760,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Tom Larsen",
+    "id": "900",
+    "refId": "740305-01",
+    "single": null,
+    "double": 2321,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Carsten Jensen",
+    "id": "36153",
+    "refId": "630611-03",
+    "single": null,
+    "double": 1734,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Hans Schwartzlose",
+    "id": "36170",
+    "refId": "960806-24",
+    "single": 1751,
+    "double": 1713,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Frederik Pedersen",
+    "id": "36171",
+    "refId": "930728-18",
+    "single": null,
+    "double": 1721,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Ehan Shadat",
+    "id": "16449",
+    "refId": "101120-02",
+    "single": 1271,
+    "double": 1200,
+    "mix": 1225,
+    "koen": "H"
+  },
+  {
+    "navn": "Noi Kolka",
+    "id": "24770",
+    "refId": "100217-06",
+    "single": 1285,
+    "double": 1200,
+    "mix": 1225,
+    "koen": "H"
+  },
+  {
+    "navn": "Aarav Jha",
+    "id": "16472",
+    "refId": "100706-08",
+    "single": 1200,
+    "double": 1200,
+    "mix": 1225,
+    "koen": "H"
+  },
+  {
+    "navn": "Peter Holger Bjørndal Axelsen",
+    "id": "16476",
+    "refId": "101027-07",
+    "single": 1200,
+    "double": 1200,
+    "mix": 1225,
+    "koen": "H"
+  },
+  {
+    "navn": "Konrad Kunckel",
+    "id": "37086",
+    "refId": "100729-08",
+    "single": 1603,
+    "double": 1379,
+    "mix": 1225,
+    "koen": "H"
+  },
+  {
+    "navn": "David Bataju-Rohde",
+    "id": "16509",
+    "refId": "100105-14",
+    "single": 1200,
+    "double": 1200,
+    "mix": 1225,
+    "koen": "H"
+  },
+  {
+    "navn": "Frederik Tuegaard Birk",
+    "id": "16510",
+    "refId": "101121-06",
+    "single": 1200,
+    "double": 1200,
+    "mix": 1225,
+    "koen": "H"
+  },
+  {
+    "navn": "Mads Scheibel Borgen Paulsen",
+    "id": "16518",
+    "refId": "100302-08",
+    "single": 1200,
+    "double": 1200,
+    "mix": 1225,
+    "koen": "H"
+  },
+  {
+    "navn": "Lauge Bruhn Elnegaard",
+    "id": "16523",
+    "refId": "100717-07",
+    "single": 1200,
+    "double": 1200,
+    "mix": 1225,
+    "koen": "H"
+  },
+  {
+    "navn": "Mohammed Aarshil Azad",
+    "id": "23241",
+    "refId": "100108-09",
+    "single": 1200,
+    "double": 1200,
+    "mix": 1225,
+    "koen": "H"
+  },
+  {
+    "navn": "Laurits Lindegaard Hebeltoft",
+    "id": "37088",
+    "refId": "100726-13",
+    "single": 1200,
+    "double": 1200,
+    "mix": 1225,
+    "koen": "H"
+  },
+  {
+    "navn": "William Romm Egi",
+    "id": "37089",
+    "refId": "100715-17",
+    "single": 1372,
+    "double": 1227,
+    "mix": 1225,
+    "koen": "H"
+  },
+  {
+    "navn": "Rumle Pedersen",
+    "id": "37095",
+    "refId": "100907-08",
+    "single": 1200,
+    "double": 1200,
+    "mix": 1225,
+    "koen": "H"
+  },
+  {
+    "navn": "Ian Park",
+    "id": "37099",
+    "refId": "100221-12",
+    "single": 1342,
+    "double": 1216,
+    "mix": 1217,
+    "koen": "H"
+  },
+  {
+    "navn": "Ludvig Maunuksela Voss",
+    "id": "37101",
+    "refId": "100111-11",
+    "single": 1200,
+    "double": 1200,
+    "mix": 1225,
+    "koen": "H"
+  },
+  {
+    "navn": "Nikolaj Thorslund Hindsbo",
+    "id": "16405",
+    "refId": "080919-04",
+    "single": 2092,
+    "double": 1931,
+    "mix": 1970,
+    "koen": "H"
+  },
+  {
+    "navn": "Oscar Donovan",
+    "id": "13098",
+    "refId": "000708-13",
+    "single": 2730,
+    "double": 2763,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Aleksander Juulsgaard",
+    "id": "15350",
+    "refId": "930210-12",
+    "single": 1610,
+    "double": 1638,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Jan Pedersen",
+    "id": "38376",
+    "refId": "681002-04",
+    "single": 1684,
+    "double": 1666,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Anders Køhler",
+    "id": "33222",
+    "refId": "760925-02",
+    "single": null,
+    "double": 1856,
+    "mix": 1828,
+    "koen": "H"
+  },
+  {
+    "navn": "Thomas Nolfi",
+    "id": "38702",
+    "refId": "710607-05",
+    "single": null,
+    "double": 2021,
+    "mix": 1992,
+    "koen": "H"
+  },
+  {
+    "navn": "Tommy Sonne Alstrøm",
+    "id": "16421",
+    "refId": "790203-08",
+    "single": 1722,
+    "double": 1674,
+    "mix": 1713,
+    "koen": "H"
+  },
+  {
+    "navn": "Bertram Hammarkvist",
+    "id": "16468",
+    "refId": "110630-03",
+    "single": 1200,
+    "double": 1200,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Bertram Hjorth Laursen",
+    "id": "16475",
+    "refId": "120624-01",
+    "single": 1542,
+    "double": 1556,
+    "mix": 1354,
+    "koen": "H"
+  },
+  {
+    "navn": "Ludvig Alexander Rosager Pedas",
+    "id": "16478",
+    "refId": "120724-02",
+    "single": 1741,
+    "double": 1697,
+    "mix": 1547,
+    "koen": "H"
+  },
+  {
+    "navn": "Anton Aavang Arvidson",
+    "id": "16485",
+    "refId": "120403-03",
+    "single": 1422,
+    "double": 1393,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Theodor Lumby Jessen",
+    "id": "2664",
+    "refId": "110407-04",
+    "single": 1803,
+    "double": 1577,
+    "mix": 1376,
+    "koen": "H"
+  },
+  {
+    "navn": "Jonas P. Hamann",
+    "id": "16489",
+    "refId": "120125-02",
+    "single": 1150,
+    "double": 1150,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Zayn Bhuiya",
+    "id": "16492",
+    "refId": "120424-05",
+    "single": 1150,
+    "double": 1150,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Cornelius Maagaard Isager-Sally",
+    "id": "16493",
+    "refId": "120416-02",
+    "single": 1150,
+    "double": 1150,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Silas Buron",
+    "id": "16494",
+    "refId": "120307-02",
+    "single": 1522,
+    "double": 1378,
+    "mix": 1290,
+    "koen": "H"
+  },
+  {
+    "navn": "Erik Kragh Winther",
+    "id": "16495",
+    "refId": "120613-03",
+    "single": 1448,
+    "double": 1524,
+    "mix": 1321,
+    "koen": "H"
+  },
+  {
+    "navn": "Joshua Pasgaard-Westerman",
+    "id": "16506",
+    "refId": "110919-05",
+    "single": 1200,
+    "double": 1200,
+    "mix": 1200,
+    "koen": "H"
+  },
+  {
+    "navn": "Louis Valdemar Hedegaard Toftlund",
+    "id": "16507",
+    "refId": "110729-04",
+    "single": 1817,
+    "double": 1739,
+    "mix": 1463,
+    "koen": "H"
+  },
+  {
+    "navn": "Rishi Mandapati",
+    "id": "16508",
+    "refId": "120507-04",
+    "single": 1481,
+    "double": 1459,
+    "mix": 1254,
+    "koen": "H"
+  },
+  {
+    "navn": "Asger Kure Weeke",
+    "id": "16520",
+    "refId": "120214-04",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1175,
+    "koen": "H"
+  },
+  {
+    "navn": "Villads Markersen",
+    "id": "16530",
+    "refId": "120329-02",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1175,
+    "koen": "H"
+  },
+  {
+    "navn": "Gustav Kruse Johansen",
+    "id": "16532",
+    "refId": "120206-05",
+    "single": 1150,
+    "double": 1150,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Arjun Kharwandikar",
+    "id": "12275",
+    "refId": "110705-07",
+    "single": 1200,
+    "double": 1200,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Carsten Yan",
+    "id": "16564",
+    "refId": "111113-03",
+    "single": 1406,
+    "double": 1410,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Mads Kaarsberg Andersen",
+    "id": "16565",
+    "refId": "110809-09",
+    "single": 1200,
+    "double": 1207,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Sylvester Østberg",
+    "id": "16566",
+    "refId": "110204-07",
+    "single": 1827,
+    "double": 1575,
+    "mix": 1405,
+    "koen": "H"
+  },
+  {
+    "navn": "Magnus Filtenborg Lybeck",
+    "id": "24486",
+    "refId": "110612-06",
+    "single": 1200,
+    "double": 1200,
+    "mix": 1200,
+    "koen": "H"
+  },
+  {
+    "navn": "David Vad Chawes",
+    "id": "39313",
+    "refId": "110915-08",
+    "single": 1499,
+    "double": 1459,
+    "mix": 1254,
+    "koen": "H"
+  },
+  {
+    "navn": "Rasmus Hammershaimb Pedersen",
+    "id": "39314",
+    "refId": "110522-10",
+    "single": 1355,
+    "double": 1300,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Ingvar Forman",
+    "id": "39315",
+    "refId": "110226-09",
+    "single": 1200,
+    "double": 1200,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Christian Mørch",
+    "id": "39318",
+    "refId": "120728-04",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1175,
+    "koen": "H"
+  },
+  {
+    "navn": "Isaiah Oluwatobi St Hilaire",
+    "id": "39321",
+    "refId": "120606-08",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1175,
+    "koen": "H"
+  },
+  {
+    "navn": "Messum Abbas Mohammad",
+    "id": "39324",
+    "refId": "110503-07",
+    "single": 1200,
+    "double": 1200,
+    "mix": 1200,
+    "koen": "H"
+  },
+  {
+    "navn": "William Bülow Schou Hansen",
+    "id": "39326",
+    "refId": "111019-09",
+    "single": 1200,
+    "double": 1200,
+    "mix": 1200,
+    "koen": "H"
+  },
+  {
+    "navn": "Theodor Christian Riis",
+    "id": "39327",
+    "refId": "110522-11",
+    "single": 1200,
+    "double": 1200,
+    "mix": 1200,
+    "koen": "H"
+  },
+  {
+    "navn": "Sebastian Larsen Lund",
+    "id": "39329",
+    "refId": "110812-13",
+    "single": 1200,
+    "double": 1216,
+    "mix": 1200,
+    "koen": "H"
+  },
+  {
+    "navn": "Benjamin Damgaard Hantsøe",
+    "id": "39330",
+    "refId": "110224-04",
+    "single": 1200,
+    "double": 1202,
+    "mix": 1210,
+    "koen": "H"
+  },
+  {
+    "navn": "Oliver Rafah Peddinini Joe",
+    "id": "39336",
+    "refId": "110823-03",
+    "single": 1388,
+    "double": 1317,
+    "mix": 1207,
+    "koen": "H"
+  },
+  {
+    "navn": "Georg Engedal Nielsen",
+    "id": "39337",
+    "refId": "121222-09",
+    "single": 1169,
+    "double": 1202,
+    "mix": 1224,
+    "koen": "H"
+  },
+  {
+    "navn": "Idhant Ghosh Dastidar",
+    "id": "39346",
+    "refId": "120501-07",
+    "single": 1150,
+    "double": 1153,
+    "mix": 1175,
+    "koen": "H"
+  },
+  {
+    "navn": "Ludvig Rydhof Thor Hansen",
+    "id": "39352",
+    "refId": "120820-08",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1175,
+    "koen": "H"
+  },
+  {
+    "navn": "Malthe Egholm Hansen",
+    "id": "39355",
+    "refId": "121011-10",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1175,
+    "koen": "H"
+  },
+  {
+    "navn": "August Svane Worsøe Schleien",
+    "id": "39357",
+    "refId": "120913-13",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1175,
+    "koen": "H"
+  },
+  {
+    "navn": "Erik Bjarthur Stein Thorsteinsson",
+    "id": "39360",
+    "refId": "120718-16",
+    "single": 1150,
+    "double": 1151,
+    "mix": 1175,
+    "koen": "H"
+  },
+  {
+    "navn": "Lukas Ferdinandsen",
+    "id": "39362",
+    "refId": "121222-10",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1175,
+    "koen": "H"
+  },
+  {
+    "navn": "Victor Lundby Bresemann",
+    "id": "39365",
+    "refId": "111111-969",
+    "single": 1200,
+    "double": 1200,
+    "mix": 1200,
+    "koen": "H"
+  },
+  {
+    "navn": "Oscar Rugaard Sørensen",
+    "id": "39367",
+    "refId": "120102-14",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1175,
+    "koen": "H"
+  },
+  {
+    "navn": "Lukas Hansen",
+    "id": "39370",
+    "refId": "121027-14",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Torben Larsen",
+    "id": "39371",
+    "refId": "720316-02",
+    "single": null,
+    "double": 1832,
+    "mix": 1684,
+    "koen": "H"
+  },
+  {
+    "navn": "Lasse Friberg Andersen",
+    "id": "40709",
+    "refId": "111231-09",
+    "single": 1697,
+    "double": 1272,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Conrad Lind",
+    "id": "40751",
+    "refId": "100817-26",
+    "single": 1200,
+    "double": 1200,
+    "mix": 1200,
+    "koen": "H"
+  },
+  {
+    "navn": "Steffen Danielsen",
+    "id": "40812",
+    "refId": "570514-06",
+    "single": 1674,
+    "double": 1677,
+    "mix": 1669,
+    "koen": "H"
+  },
+  {
+    "navn": "Salvatore Buccoliero",
+    "id": "40822",
+    "refId": "701111-08",
+    "single": null,
+    "double": 1685,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Chayatat Inma",
+    "id": "40840",
+    "refId": "881230-14",
+    "single": 1682,
+    "double": 1693,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Carl-Emil G Pedersen",
+    "id": "40958",
+    "refId": "121005-06",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Magnus Nørtoft",
+    "id": "41041",
+    "refId": "821018-01",
+    "single": 1774,
+    "double": 1806,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Jakob Hartvig Thomsen",
+    "id": "42113",
+    "refId": "840710-05",
+    "single": 1704,
+    "double": 1693,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Oskar Isbosethsen",
+    "id": "42401",
+    "refId": "040125-08",
+    "single": 1700,
+    "double": 1694,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Jakob Wiborg",
+    "id": "42618",
+    "refId": "770710-06",
+    "single": null,
+    "double": 1710,
+    "mix": 1695,
+    "koen": "H"
+  },
+  {
+    "navn": "Benjamin Hinge Carlsson",
+    "id": "16502",
+    "refId": "130314-01",
+    "single": 1705,
+    "double": 1712,
+    "mix": 1497,
+    "koen": "H"
+  },
+  {
+    "navn": "Kasper Mason",
+    "id": "16503",
+    "refId": "131110-01",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Saxo Ghotbi",
+    "id": "16504",
+    "refId": "130714-01",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Laurits Schjerning Andersen",
+    "id": "16527",
+    "refId": "130413-04",
+    "single": 1559,
+    "double": 1348,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Siddharth Puthran",
+    "id": "16528",
+    "refId": "131217-01",
+    "single": 1151,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "William Gullberg",
+    "id": "16529",
+    "refId": "130414-02",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Svend Anders Hansen Uhrbrand",
+    "id": "16567",
+    "refId": "130220-02",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Felix Langvad Vajse",
+    "id": "16571",
+    "refId": "130805-03",
+    "single": 1198,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Luc Nørmark Jespersen",
+    "id": "16572",
+    "refId": "130910-01",
+    "single": 1302,
+    "double": 1320,
+    "mix": 1219,
+    "koen": "H"
+  },
+  {
+    "navn": "Arav DInesh Nittur",
+    "id": "16577",
+    "refId": "130605-06",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Magne Gjervan Majborn",
+    "id": "22297",
+    "refId": "130602-04",
+    "single": 1697,
+    "double": 1579,
+    "mix": 1361,
+    "koen": "H"
+  },
+  {
+    "navn": "Pontus Einar Anker Mikkelsen",
+    "id": "43063",
+    "refId": "130721-08",
+    "single": 1233,
+    "double": 1327,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Mohammad Kumayl Abbas",
+    "id": "43066",
+    "refId": "130604-04",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Isak Riis Stidsen",
+    "id": "43067",
+    "refId": "130411-03",
+    "single": 1160,
+    "double": 1209,
+    "mix": 1173,
+    "koen": "H"
+  },
+  {
+    "navn": "Mohammad Kumayl Abbas",
+    "id": "43068",
+    "refId": "130604-05",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Kristian Almeida Møller",
+    "id": "43071",
+    "refId": "130709-12",
+    "single": 1485,
+    "double": 1247,
+    "mix": 1153,
+    "koen": "H"
+  },
+  {
+    "navn": "Gorm Hundebøl",
+    "id": "43072",
+    "refId": "130806-04",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Oscar Bo Dan Ouyang",
+    "id": "43073",
+    "refId": "130603-06",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Lukas Glaring",
+    "id": "43074",
+    "refId": "131003-05",
+    "single": 1376,
+    "double": 1325,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Anton Chiramel",
+    "id": "43075",
+    "refId": "130227-06",
+    "single": 1194,
+    "double": 1249,
+    "mix": 1212,
+    "koen": "H"
+  },
+  {
+    "navn": "Smayan Kiran Vaddin",
+    "id": "43076",
+    "refId": "130525-08",
+    "single": 1311,
+    "double": 1237,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Oskar Hjorth Lund",
+    "id": "43081",
+    "refId": "130710-04",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Carl Specht Hoelgaard",
+    "id": "43083",
+    "refId": "130912-07",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Magne Sand Christensen",
+    "id": "43085",
+    "refId": "130411-04",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Anton Stensbo Knudsen",
+    "id": "43086",
+    "refId": "131020-05",
+    "single": 1337,
+    "double": 1322,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Sofus Goodley Kortegaard",
+    "id": "43092",
+    "refId": "130718-06",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Vincent Patrick Stack",
+    "id": "43100",
+    "refId": "131010-09",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Mikkel Skov Heimann",
+    "id": "43101",
+    "refId": "130815-10",
+    "single": 1194,
+    "double": 1265,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Nicholas Andersen",
+    "id": "43103",
+    "refId": "130601-10",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Ilyas Ali",
+    "id": "43106",
+    "refId": "131229-08",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Oscar Goodley Kortegaard",
+    "id": "43112",
+    "refId": "130718-09",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Noah larsen",
+    "id": "43113",
+    "refId": "130204-11",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Johan Lundsbye Smistrup",
+    "id": "43117",
+    "refId": "130430-08",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Frederik Ellebæk Steensgaard",
+    "id": "43122",
+    "refId": "130106-07",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Alexander Lindholm Boysen",
+    "id": "43123",
+    "refId": "131029-11",
+    "single": 1186,
+    "double": 1219,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Carl Winning Laursen",
+    "id": "43125",
+    "refId": "130308-14",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Juncheng Yumao",
+    "id": "43127",
+    "refId": "130330-05",
+    "single": 1150,
+    "double": 1150,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Thorfin Holm",
+    "id": "43847",
+    "refId": "760923-09",
+    "single": null,
+    "double": 1722,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Sakarias Thornild Berthelsen",
+    "id": "39325",
+    "refId": "120618-05",
+    "single": 1799,
+    "double": 1698,
+    "mix": 1501,
+    "koen": "H"
+  },
+  {
+    "navn": "Noah Aackersberg",
+    "id": "39529",
+    "refId": "110426-09",
+    "single": 1514,
+    "double": 1200,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Christian Nedergaard Antvorskov",
+    "id": "39521",
+    "refId": "111218-02",
+    "single": 1485,
+    "double": 1334,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Prabhuji Mudragalla",
+    "id": "44509",
+    "refId": "901223-26",
+    "single": null,
+    "double": 1675,
+    "mix": 1686,
+    "koen": "H"
+  },
+  {
+    "navn": "Oliver Nielsen",
+    "id": "44511",
+    "refId": "960911-20",
+    "single": 1698,
+    "double": 1719,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Azam",
+    "id": "44512",
+    "refId": "780503-01",
+    "single": null,
+    "double": 1716,
+    "mix": null,
+    "koen": "H"
+  },
+  {
+    "navn": "Nikolas Yin",
+    "id": "43070",
+    "refId": "130322-05",
+    "single": 1264,
+    "double": 1254,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Konrad Bybeck Tosev",
+    "id": "43097",
+    "refId": "130916-05",
+    "single": 1363,
+    "double": 1282,
+    "mix": 1150,
+    "koen": "H"
+  },
+  {
+    "navn": "Mads Broholm",
+    "id": "43064",
+    "refId": "130501-06",
+    "single": 2010,
+    "double": 1622,
+    "mix": 1409,
+    "koen": "H"
+  },
+  {
+    "navn": "Christoffer Müller",
+    "id": "13007",
+    "refId": "980701-01",
+    "single": 2896,
+    "double": 2917,
+    "mix": 2929,
+    "koen": "H"
+  },
+  {
+    "navn": "Thor Pedersen",
+    "id": "3074",
+    "refId": "980822-04",
+    "single": 2675,
+    "double": 2854,
+    "mix": 2482,
+    "koen": "H"
+  },
+  {
+    "navn": "Santosh Kumar",
+    "id": "35091",
+    "refId": "850129-05",
+    "single": 1236,
+    "double": 1382,
+    "mix": 1412,
+    "koen": "H"
+  },
+  {
+    "navn": "Anders Christiansen",
+    "id": "41039",
+    "refId": "020215-16",
+    "single": 1655,
+    "double": null,
+    "mix": null,
+    "koen": "H"
+  }
+]

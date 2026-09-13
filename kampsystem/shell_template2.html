@@ -1,0 +1,238 @@
+<title>GSB Webapps Preview</title>
+<style>
+  :root {
+    --shell-bg: #101a15; --shell-bg-raised: #182720; --shell-bg-raised2: #14201a;
+    --shell-border: #263a30; --shell-text: #f2f0e8; --shell-text-muted: #93a89b;
+    --shell-accent: #e8a33d; --shell-locked: #b98fe0;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body { background: var(--shell-bg); color: var(--shell-text); font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; display: flex; flex-direction: column; }
+
+  .shell-row { display: flex; align-items: center; gap: 4px; padding: 7px 12px; border-bottom: 1px solid var(--shell-border); flex-wrap: wrap; }
+  .row-apps { background: var(--shell-bg-raised); }
+  .row-pages { background: var(--shell-bg-raised2); }
+  .row-pages.hidden { display: none; }
+
+  .shell-label { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--shell-text-muted); padding: 0 10px 0 4px; white-space: nowrap; }
+
+  .shell-tabs { display: flex; gap: 2px; flex-wrap: wrap; }
+  .shell-tab { appearance: none; border: 1px solid transparent; background: transparent; color: var(--shell-text-muted); font-family: inherit; font-size: 0.82rem; font-weight: 600; padding: 7px 12px; border-radius: 7px; cursor: pointer; white-space: nowrap; }
+  .shell-tab:hover { color: var(--shell-text); background: rgba(255,255,255,0.05); }
+  .shell-tab.active { background: var(--shell-accent); color: #2b1c05; }
+  .row-apps .shell-tab.active { background: var(--shell-accent); }
+
+  .shell-tab.sub { font-size: 0.78rem; padding: 6px 11px; }
+  .shell-tab.sub.active { background: #dfe8e2; color: #123a28; }
+
+  .shell-tab.admin-pill { margin-left: auto; font-size: 0.72rem; opacity: 0.65; padding: 5px 10px; }
+  .shell-tab.admin-pill:hover { opacity: 1; }
+  .shell-tab.admin-pill.active { opacity: 1; background: var(--shell-locked); color: #2b1540; }
+
+  .lock-icon { margin-left: 3px; font-size: 0.75em; opacity: 0.8; }
+
+  .shell-note { margin-left: auto; font-size: 0.7rem; color: var(--shell-text-muted); padding: 0 6px; white-space: nowrap; }
+
+  .frame-wrap { position: relative; flex: 1; min-height: 0; }
+  .frame-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; display: none; background: #f7f5ef; }
+  .frame-wrap iframe.active { display: block; }
+
+  /* Gate overlay */
+  .gate-overlay { position: absolute; inset: 0; background: rgba(16,26,21,0.94); display: none; align-items: center; justify-content: center; z-index: 50; }
+  .gate-overlay.show { display: flex; }
+  .gate-box { background: var(--shell-bg-raised); border: 1px solid var(--shell-border); border-radius: 12px; padding: 28px 30px; max-width: 320px; text-align: center; }
+  .gate-box .icon { font-size: 1.8rem; margin-bottom: 8px; }
+  .gate-box h3 { margin: 0 0 6px; font-size: 1rem; }
+  .gate-box p { margin: 0 0 16px; font-size: 0.8rem; color: var(--shell-text-muted); }
+  .gate-box input { width: 100%; padding: 10px 12px; border-radius: 6px; border: 1px solid var(--shell-border); background: #0d1712; color: var(--shell-text); font-size: 0.95rem; text-align: center; margin-bottom: 10px; }
+  .gate-box input:focus-visible { outline: 2px solid var(--shell-accent); outline-offset: 1px; }
+  .gate-box button { width: 100%; padding: 10px; border-radius: 6px; border: none; background: var(--shell-accent); color: #2b1c05; font-weight: 700; font-size: 0.88rem; cursor: pointer; }
+  .gate-box button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+  .shell-tab:focus-visible { outline: 2px solid var(--shell-accent); outline-offset: 1px; }
+  .gate-box .err { color: #e8836f; font-size: 0.78rem; min-height: 1.2em; margin-top: 8px; }
+  .gate-box .hint { color: var(--shell-text-muted); font-size: 0.68rem; margin-top: 12px; }
+
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="shell-row row-apps" id="appTabs">
+  <span class="shell-label">GSB Webapps</span>
+</div>
+<div class="shell-row row-pages" id="pageTabsWrap">
+  <div class="shell-tabs" id="pageTabs"></div>
+</div>
+
+<div class="frame-wrap" id="frameWrap">
+  <div class="gate-overlay" id="gateOverlay">
+    <div class="gate-box">
+      <div class="icon">🔒</div>
+      <h3 id="gateTitle">Beskyttet side</h3>
+      <p id="gateDesc">Indtast koden for at fortsætte.</p>
+      <input type="password" id="gateInput" placeholder="Kode" autocomplete="off">
+      <button id="gateSubmit">Lås op</button>
+      <div class="err" id="gateErr"></div>
+      <div class="hint" id="gateHint"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var PAGES_B64 = __PAGES_B64_JSON__;
+
+  function b64ToUtf8(b64) {
+    var binary = atob(b64);
+    var bytes = new Uint8Array(binary.length);
+    for (var i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+    return new TextDecoder('utf-8').decode(bytes);
+  }
+
+  // ---- Nav model -----------------------------------------------------
+  var APPS = [
+    { key: 'landing',    label: '🏠 Forside' },
+    { key: 'dreamteam',  label: '🏸 GSB Dream Team' },
+    { key: 'ungdom',     label: '🎾 Ungdomssparring' },
+    { key: 'sondag',     label: '🌅 Søndagstræning', locked: 'sondag' },
+    { key: 'kampsystem', label: '⚡ Kampsystem', locked: 'kampsystem' },
+  ];
+  var PAGE_META = {
+    landing:    { app: 'landing',   label: 'Forside' },
+    tilmelding: { app: 'dreamteam', label: '✍️ Tilmelding' },
+    analyse:    { app: 'dreamteam', label: '📊 Statistik' },
+    stilling:   { app: 'dreamteam', label: '🏆 Historisk stilling' },
+    index:      { app: 'dreamteam', label: '⚙ Admin', locked: 'admin', pill: true },
+    senior:     { app: 'ungdom',    label: 'Ungdomssparring' },
+    sondag:     { app: 'sondag',    label: 'Søndagstræning', locked: 'sondag' },
+    kampsystem: { app: 'kampsystem', label: 'Kampsystem', locked: 'kampsystem' },
+  };
+  var APP_DEFAULT_PAGE = { landing: 'landing', dreamteam: 'tilmelding', ungdom: 'senior', sondag: 'sondag', kampsystem: 'kampsystem' };
+  var APP_PAGES = {
+    dreamteam: ['tilmelding', 'analyse', 'stilling'],
+    ungdom: [],
+    sondag: [],
+    landing: [],
+    kampsystem: [],
+  };
+  var GATES = {
+    admin:  { code: 'admin2026',  title: '⚙ Admin', desc: 'Data-indskrivning er kun for klubbens administratorer.' },
+    sondag: { code: 'sondag2026', title: '🌅 Søndagstræning', desc: 'Lukket træning — koden deles i gruppens Messenger-tråd.' },
+    kampsystem: { code: 'kamp2026', title: '⚡ Kampsystem', desc: 'Trænernes rundefordelingsværktøj — koden deles kun med trænerne.' },
+  };
+  var unlocked = {}; // gate key -> true, resets on reload (in-memory only, preview scope)
+
+  var order = Object.keys(PAGE_META);
+  var wrap = document.getElementById('frameWrap');
+  var frames = {};
+  order.forEach(function(key) {
+    var iframe = document.createElement('iframe');
+    iframe.id = 'frame-' + key;
+    iframe.srcdoc = b64ToUtf8(PAGES_B64[key]);
+    wrap.insertBefore(iframe, document.getElementById('gateOverlay'));
+    frames[key] = iframe;
+  });
+
+  var currentApp = null, currentPage = null;
+  var pendingActivate = null;
+
+  function renderAppTabs() {
+    var el = document.getElementById('appTabs');
+    el.innerHTML = '<span class="shell-label">GSB Webapps</span>';
+    APPS.forEach(function(a) {
+      var btn = document.createElement('button');
+      btn.className = 'shell-tab' + (a.key === currentApp ? ' active' : '');
+      btn.setAttribute('data-app', a.key);
+      var locked = a.locked && !unlocked[a.locked];
+      btn.innerHTML = a.label + (locked ? '<span class="lock-icon">🔒</span>' : '');
+      btn.addEventListener('click', function() { goTo(a.key); });
+      el.appendChild(btn);
+    });
+    var note = document.createElement('span');
+    note.className = 'shell-note';
+    note.textContent = 'Eksempeldata · intet gemmes til Google Sheets';
+    el.appendChild(note);
+  }
+
+  function renderPageTabs() {
+    var wrapEl = document.getElementById('pageTabsWrap');
+    var el = document.getElementById('pageTabs');
+    el.innerHTML = '';
+    var pages = APP_PAGES[currentApp] || [];
+    var pillPage = null;
+    Object.keys(PAGE_META).forEach(function(p) {
+      if (PAGE_META[p].app === currentApp && PAGE_META[p].pill) pillPage = p;
+    });
+    if (pages.length === 0 && !pillPage) { wrapEl.classList.add('hidden'); return; }
+    wrapEl.classList.remove('hidden');
+    pages.forEach(function(p) {
+      var meta = PAGE_META[p];
+      var btn = document.createElement('button');
+      btn.className = 'shell-tab sub' + (p === currentPage ? ' active' : '');
+      btn.textContent = meta.label;
+      btn.addEventListener('click', function() { goTo(currentApp, p); });
+      el.appendChild(btn);
+    });
+    if (pillPage) {
+      var meta = PAGE_META[pillPage];
+      var locked = meta.locked && !unlocked[meta.locked];
+      var btn = document.createElement('button');
+      btn.className = 'shell-tab admin-pill' + (pillPage === currentPage ? ' active' : '');
+      btn.innerHTML = meta.label + (locked ? '<span class="lock-icon">🔒</span>' : '');
+      btn.addEventListener('click', function() { goTo(currentApp, pillPage); });
+      el.appendChild(btn);
+    }
+  }
+
+  function showGate(key, onSuccess) {
+    var g = GATES[key];
+    pendingActivate = onSuccess;
+    document.getElementById('gateTitle').textContent = g.title;
+    document.getElementById('gateDesc').textContent = g.desc;
+    document.getElementById('gateHint').textContent = 'Preview-kode: ' + g.code;
+    document.getElementById('gateErr').textContent = '';
+    document.getElementById('gateInput').value = '';
+    document.getElementById('gateOverlay').classList.add('show');
+    setTimeout(function() { document.getElementById('gateInput').focus(); }, 50);
+    document.getElementById('gateOverlay').setAttribute('data-key', key);
+  }
+
+  function tryUnlock() {
+    var key = document.getElementById('gateOverlay').getAttribute('data-key');
+    var g = GATES[key];
+    var val = document.getElementById('gateInput').value;
+    if (val === g.code) {
+      unlocked[key] = true;
+      document.getElementById('gateOverlay').classList.remove('show');
+      var fn = pendingActivate; pendingActivate = null;
+      if (fn) fn();
+    } else {
+      document.getElementById('gateErr').textContent = 'Forkert kode — prøv igen.';
+    }
+  }
+  document.getElementById('gateSubmit').addEventListener('click', tryUnlock);
+  document.getElementById('gateInput').addEventListener('keydown', function(e) { if (e.key === 'Enter') tryUnlock(); });
+
+  function activate(app, page) {
+    currentApp = app; currentPage = page;
+    order.forEach(function(key) { frames[key].classList.toggle('active', key === page); });
+    renderAppTabs();
+    renderPageTabs();
+  }
+
+  function goTo(app, page) {
+    page = page || APP_DEFAULT_PAGE[app];
+    var meta = PAGE_META[page];
+    if (!meta) return;
+    if (meta.locked && !unlocked[meta.locked]) {
+      showGate(meta.locked, function() { activate(app, page); });
+      return;
+    }
+    activate(app, page);
+  }
+
+  window.addEventListener('message', function(e) {
+    if (e.data && e.data.type === 'gsbnav' && e.data.page && PAGE_META[e.data.page]) {
+      goTo(e.data.app || PAGE_META[e.data.page].app, e.data.page);
+    }
+  });
+
+  goTo('landing');
+</script>

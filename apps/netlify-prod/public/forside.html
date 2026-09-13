@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GSB Webapps</title>
+<script src="/gsb-nav.js" defer></script>
+<style>
+  :root {
+    --court-green: #1f5c3f; --court-green-dark: #123a28; --line-white: #f7f5ef;
+    --shuttle: #e8a33d; --ink: #1c2420; --muted: #5c6b62; --border: #d7ddd4;
+    --kamp-accent: #2f5fa8;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--line-white); color: var(--ink); line-height: 1.45; }
+  header { background: var(--court-green); color: var(--line-white); padding: 40px 24px 32px; text-align: center; position: relative; overflow: hidden; }
+  header::after { content: ""; position: absolute; right: -50px; top: -60px; width: 220px; height: 220px; border: 3px solid rgba(255,255,255,0.10); border-radius: 50%; }
+  header::before { content: ""; position: absolute; left: -60px; bottom: -70px; width: 200px; height: 200px; border: 3px solid rgba(255,255,255,0.08); border-radius: 50%; }
+  header h1 { margin: 0 0 8px; font-size: 1.7rem; font-weight: 800; }
+  header p { margin: 0 auto; color: rgba(247,245,239,0.8); font-size: 0.95rem; max-width: 480px; }
+
+  main { max-width: 760px; margin: 0 auto; padding: 32px 20px 60px; }
+  .app-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 700px) { .app-grid { grid-template-columns: 1fr; } }
+
+  .app-card { display: block; text-decoration: none; color: inherit; background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 22px 18px; text-align: left; transition: transform 0.12s, box-shadow 0.12s; cursor: pointer; }
+  .app-card:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+  .app-card:focus-visible, .admin-link:focus-visible { outline: 2px solid var(--court-green); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) { .app-card { transition: none; } .app-card:hover { transform: none; } }
+  .app-card .icon { font-size: 1.8rem; margin-bottom: 10px; display: block; }
+  .app-card h2 { margin: 0 0 6px; font-size: 1.05rem; font-weight: 800; }
+  .app-card p { margin: 0; font-size: 0.83rem; color: var(--muted); }
+  .app-card .badge { display: inline-block; margin-top: 10px; font-size: 0.7rem; font-weight: 700; padding: 3px 9px; border-radius: 20px; }
+  .badge.open { background: #eaf3ee; color: var(--court-green); }
+  .badge.locked { background: #eef1f8; color: var(--kamp-accent); }
+
+  .app-card.dreamteam { border-top: 4px solid var(--court-green); }
+  .app-card.ungdom { border-top: 4px solid var(--shuttle); }
+  .app-card.kampsystem { border-top: 4px solid var(--kamp-accent); }
+
+  .admin-link { display: block; text-align: center; margin-top: 36px; font-size: 0.8rem; color: var(--muted); text-decoration: none; }
+  .admin-link:hover { color: var(--ink); }
+</style>
+</head>
+<body data-gsb-page="landing">
+
+<div id="gsb-nav-root"></div>
+
+<header>
+  <h1>🏸 GSB Webapps</h1>
+  <p>Gladsaxe Søborg Badminton — vælg hvad du vil ind til.</p>
+</header>
+
+<main>
+  <div class="app-grid">
+    <a class="app-card dreamteam" href="/tilmelding.html">
+      <span class="icon">🏆</span>
+      <h2>GSB Dream Team</h2>
+      <p>Fantasyliga blandt klubbens seniorspillere — tilmelding, statistik og historisk stilling.</p>
+      <span class="badge open">Åben for alle</span>
+    </a>
+    <a class="app-card ungdom" href="/senior-ungdom-tilmelding.html">
+      <span class="icon">🎾</span>
+      <h2>Ungdomssparring</h2>
+      <p>Seniorer melder sig til at give en hånd med sparring til ungdomstræningen.</p>
+      <span class="badge open">Åben for alle</span>
+    </a>
+    <a class="app-card kampsystem" href="/kampsystem.html">
+      <span class="icon">⚡</span>
+      <h2>Kampsystem</h2>
+      <p>Automatisk rundefordeling til træning ud fra rating — for Senior og SuperUng Teen, plus Veteran/Motionist du selv bygger op.</p>
+      <span class="badge locked">🔒 Kræver kode (trænere)</span>
+    </a>
+  </div>
+
+  <a class="admin-link" href="/index.html">⚙ Admin — data-indskrivning</a>
+</main>
+
+</body>
+</html>

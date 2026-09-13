@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GSB Dream Team – Historisk stilling</title>
+<script src="/seasons.js"></script>
+<style>
+  :root {
+    --court-green: #1f5c3f; --court-green-dark: #123a28; --line-white: #f7f5ef;
+    --shuttle: #e8a33d; --ink: #1c2420; --muted: #5c6b62; --border: #d7ddd4; --error: #b3432f; --ok: #1f5c3f;
+    --gold: #ffd966; --silver: #d9d9d9; --bronze: #e8b589;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--line-white); color: var(--ink); line-height: 1.45; }
+  header { background: var(--court-green); color: var(--line-white); padding: 28px 24px 24px; position: relative; overflow: hidden; }
+  header::after { content: ""; position: absolute; right: -40px; top: -40px; width: 180px; height: 180px; border: 3px solid rgba(255,255,255,0.12); border-radius: 50%; }
+  header h1 { margin: 0 0 4px; font-size: 1.5rem; font-weight: 700; }
+  header p { margin: 0; color: rgba(247,245,239,0.75); font-size: 0.92rem; max-width: 640px; }
+  main { max-width: 900px; margin: 0 auto; padding: 24px 20px 60px; }
+  .card { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 20px; }
+  .card h2 { margin: 0 0 4px; font-size: 1.05rem; }
+  .card .desc { margin: 0 0 16px; color: var(--muted); font-size: 0.86rem; }
+  .selector-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: flex-end; margin-bottom: 4px; }
+  .selector-field { display: flex; flex-direction: column; gap: 4px; }
+  .selector-field label { font-size: 0.74rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.03em; }
+  .selector-field select, .selector-field input { padding: 8px 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.9rem; font-family: inherit; }
+  .loading, .error-msg { text-align: center; padding: 30px; color: var(--muted); }
+  .error-msg { color: var(--error); }
+  table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { background: #f2f1eb; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.03em; color: var(--muted); }
+  tr.rank-1 td:first-child, tr.rank-2 td:first-child, tr.rank-3 td:first-child { font-weight: 800; }
+  .medal { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; font-size: 0.75rem; font-weight: 800; margin-right: 4px; }
+  .medal.gold { background: var(--gold); color: #6b5300; }
+  .medal.silver { background: var(--silver); color: #444; }
+  .medal.bronze { background: var(--bronze); color: #6b3a00; }
+  .total-cell { font-weight: 700; font-variant-numeric: tabular-nums; }
+  .picks-toggle { cursor: pointer; color: var(--court-green); font-size: 0.78rem; font-weight: 600; background: none; border: none; padding: 0; }
+  .picks-row { display: none; }
+  .picks-row.show { display: table-row; }
+  .picks-row td { background: #f7fbf8; padding: 12px 14px; }
+  .pick-pill { display: inline-block; background: #fff; border: 1px solid var(--border); border-radius: 20px; padding: 3px 10px; font-size: 0.78rem; margin: 2px 4px 2px 0; }
+
+  /* Podium / Hall of Fame */
+  .podium-card.current { border: 1.5px solid var(--court-green); background: linear-gradient(180deg, #f7fbf8, #fff); }
+  .podium-row { display: flex; gap: 10px; align-items: flex-end; flex-wrap: wrap; }
+  .podium-slot { flex: 1; min-width: 120px; background: #f7fbf8; border: 1px solid var(--border); border-radius: 10px 10px 6px 6px; padding: 14px 10px 12px; text-align: center; display: flex; flex-direction: column; align-items: center; }
+  .podium-slot.p1 { order: 2; border-color: var(--gold); background: linear-gradient(180deg, #fffbea, #fff7d6); padding-top: 22px; box-shadow: 0 4px 14px rgba(255, 217, 102, 0.35); }
+  .podium-slot.p2 { order: 1; border-color: var(--silver); padding-top: 14px; }
+  .podium-slot.p3 { order: 3; border-color: var(--bronze); background: #fdf5ee; padding-top: 8px; }
+  .podium-slot .step { width: 100%; border-radius: 8px; margin-top: 10px; font-weight: 800; font-size: 1.1rem; display: flex; align-items: center; justify-content: center; color: #fff; }
+  .podium-slot.p1 .step { height: 58px; background: linear-gradient(180deg, #ffd966, #e8bd3b); }
+  .podium-slot.p2 .step { height: 40px; background: linear-gradient(180deg, #d9d9d9, #b9b9b9); }
+  .podium-slot.p3 .step { height: 28px; background: linear-gradient(180deg, #e8b589, #cf9868); }
+  .podium-slot .medal-big { font-size: 1.6rem; display: block; margin-bottom: 4px; }
+  .podium-slot .p-navn { font-weight: 700; font-size: 0.9rem; }
+  .podium-slot .p-point { color: var(--muted); font-size: 0.78rem; margin-top: 2px; }
+  .podium-toggle { margin-top: 8px; cursor: pointer; color: var(--court-green); font-size: 0.74rem; font-weight: 600; background: none; border: none; padding: 0; }
+  .podium-picks { display: none; margin-top: 8px; text-align: left; }
+  .podium-picks.show { display: block; }
+  .hof-list { display: flex; flex-direction: column; gap: 10px; }
+  .hof-season { padding: 10px 12px; background: #fafaf7; border: 1px solid var(--border); border-radius: 8px; }
+  .hof-season .hof-top { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+  .hof-season .hof-label { font-weight: 700; font-size: 0.85rem; min-width: 110px; color: var(--court-green-dark); }
+  .hof-season .hof-medals { display: flex; gap: 6px; flex-wrap: wrap; font-size: 0.82rem; }
+  .hof-season .hof-medals .m-entry { display: inline-flex; align-items: center; gap: 4px; background: #fff; border: 1px solid var(--border); border-radius: 20px; padding: 3px 10px 3px 6px; }
+  .hof-season .hof-medals button.podium-toggle { margin: 0; }
+  .hof-empty { color: var(--muted); font-size: 0.82rem; font-style: italic; }
+
+  /* B5: Honorable mentions + gratis-badge */
+  .honorable-mentions { margin-top: 14px; padding: 12px 14px; background: #fffaf0; border: 1px solid #f0dfae; border-radius: 8px; }
+  .hm-title { font-weight: 700; font-size: 0.86rem; color: #7a5b16; margin-bottom: 2px; }
+  .hm-desc { margin: 0 0 8px; color: var(--muted); font-size: 0.78rem; }
+  .hm-entry { display: flex; justify-content: space-between; gap: 10px; padding: 4px 0; font-size: 0.84rem; border-top: 1px dashed #ecdcae; }
+  .hm-entry:first-of-type { border-top: none; }
+  .hm-navn { font-weight: 600; }
+  .hm-info { color: var(--muted); }
+  .honorable-mentions-inline { margin-top: 6px; font-size: 0.78rem; color: #7a5b16; }
+  .gratis-badge { display: inline-block; font-size: 0.68rem; font-weight: 700; color: #7a5b16; background: #fff3d6; border: 1px solid #f0dfae; border-radius: 10px; padding: 1px 7px; margin-left: 6px; vertical-align: middle; }
+</style>
+<script src="/gsb-nav.js" defer></script>
+</head>
+<body data-gsb-page="stilling">
+
+<div id="gsb-nav-root"></div>
+
+
+<header>
+  <h1>🏆 GSB Dream Team – Historisk stilling</h1>
+  <p>Se hvem der vandt tidligere sæsoner, og hvilket hold de spillede med. Vælg sæson og evt. et bestemt runde-interval for at sammenligne.</p>
+</header>
+
+<main>
+  <div id="podium-area">
+    <div class="card loading">Henter podie...</div>
+  </div>
+
+  <div class="card">
+    <div class="selector-row">
+      <div class="selector-field">
+        <label for="f-season">Sæson</label>
+        <select id="f-season"></select>
+      </div>
+      <div class="selector-field">
+        <label for="f-preset">Runder</label>
+        <select id="f-preset" onchange="onPresetChange()"></select>
+      </div>
+      <div class="selector-field" id="custom-rounds" style="display:none;">
+        <label>Fra – til runde</label>
+        <div style="display:flex; gap:6px; align-items:center;">
+          <input type="number" id="f-runde-min" min="1" max="12" value="1" style="width:60px;">
+          <span>–</span>
+          <input type="number" id="f-runde-max" min="1" max="12" value="11" style="width:60px;">
+        </div>
+      </div>
+      <button onclick="hentData()" style="background:#1f5c3f; color:#fff; border:none; padding:10px 18px; border-radius:6px; font-weight:700; cursor:pointer;">Hent stilling</button>
+      <button onclick="kopierLink()" id="copy-link-btn" style="background:transparent; color:#1f5c3f; border:1px solid #1f5c3f; padding:10px 14px; border-radius:6px; font-weight:600; cursor:pointer;">🔗 Kopiér link</button>
+    </div>
+  </div>
+
+  <div id="content"></div>
+</main>
+
+<script>
+let allData = null;
+
+// ---------------------------------------------------------------------
+// Podium / Hall of Fame — current season on top, past seasons below.
+// Uses the same /stilling function, just called once per configured season.
+// ---------------------------------------------------------------------
+function medalIcon(plads) {
+  if (plads === 1) return '🥇';
+  if (plads === 2) return '🥈';
+  if (plads === 3) return '🥉';
+  return '';
+}
+
+// B5: podiet viser kun podie-berettigede (betalt/blank) deltagere — gratis-deltagere beholder
+// deres rigtige plads/point i den fulde tabel, men springes over på selve podiet. "Honorable
+// mentions" viser separat de gratis-deltagere hvis rigtige (ufiltrerede) plads ville have været
+// i sæsonens samlede top 5.
+async function fetchSeasonData(spreadsheetId) {
+  const res = await fetch(`/.netlify/functions/stilling?spreadsheetId=${spreadsheetId}&rundeMin=1&rundeMax=11`);
+  const json = await res.json();
+  if (!res.ok) throw new Error(json.error || 'Ukendt fejl');
+  const all = json.participants;
+  const eligible = all.filter(p => p.podieBerettiget !== false);
+  const podium = eligible.slice(0, 3).map((p, i) => Object.assign({}, p, { podiumPlads: i + 1 }));
+  const honorable = all.filter(p => p.podieBerettiget === false && p.plads <= 5);
+  return { all, podium, honorable };
+}
+
+function picksHtml(picks) {
+  if (!picks || picks.length === 0) return '<span style="color:var(--muted); font-size:0.78rem;">Ingen holddata fundet</span>';
+  return picks.map(pl => `<span class="pick-pill">${pl}</span>`).join('');
+}
+
+function honorableMentionsHtml(list) {
+  if (!list || list.length === 0) return '';
+  const items = list.map(p => `<div class="hm-entry"><span class="hm-navn">${p.navn}</span><span class="hm-info">${p.total} point — ville have været nr. ${p.plads}</span></div>`).join('');
+  return `<div class="honorable-mentions"><div class="hm-title">🌟 Honorable mentions</div><p class="hm-desc">Gratis-deltagere hvis pointtotal ville have placeret dem i sæsonens samlede top 5.</p>${items}</div>`;
+}
+
+function honorableMentionsInlineHtml(list) {
+  if (!list || list.length === 0) return '';
+  const names = list.map(p => `${p.navn} (nr. ${p.plads})`).join(', ');
+  return `<div class="honorable-mentions-inline">🌟 Honorable mentions: ${names}</div>`;
+}
+
+async function renderPodiumArea() {
+  const area = document.getElementById('podium-area');
+  const configured = GSB_SEASONS.filter(s => !s.spreadsheetId.startsWith('SÆT_'));
+  const current = configured[0];
+  const historical = configured.slice(1);
+
+  let html = '';
+
+  // --- Current season, highlighted ---
+  html += `<div class="card podium-card current"><h2>🏅 Nuværende sæson &middot; ${current.label}</h2>`;
+  try {
+    const data = await fetchSeasonData(current.spreadsheetId);
+    if (data.all.length === 0) {
+      html += `<p class="hof-empty">Sæsonen er lige i gang — ingen resultater indtastet endnu. Podiet fyldes automatisk ud, efterhånden som runder bliver spillet.</p>`;
+    } else {
+      html += podiumRowHtml(data.podium, 'cur');
+      html += honorableMentionsHtml(data.honorable);
+    }
+  } catch (e) {
+    html += `<p class="error-msg">Kunne ikke hente: ${e.message}</p>`;
+  }
+  html += `</div>`;
+
+  // --- Historical seasons ---
+  html += `<div class="card"><h2>Tidligere sæsoner</h2><p class="desc">Podie for hver afsluttede sæson. Klik "Hold" for at se en placerings 10 valgte spillere.</p><div class="hof-list">`;
+  if (historical.length === 0) {
+    html += `<p class="hof-empty">Ingen tidligere sæsoner sat op endnu.</p>`;
+  } else {
+    for (let si = 0; si < historical.length; si++) {
+      const s = historical[si];
+      try {
+        const data = await fetchSeasonData(s.spreadsheetId);
+        const podium = data.podium;
+        html += `<div class="hof-season"><div class="hof-top"><span class="hof-label">${s.label}</span><span class="hof-medals">`;
+        if (podium.length === 0) {
+          html += `<span class="hof-empty">Ingen data</span>`;
+        } else {
+          podium.forEach(p => {
+            const id = `hof-${si}-${p.podiumPlads}`;
+            html += `<span class="m-entry">${medalIcon(p.podiumPlads)} ${p.navn} — ${p.total} p. <button class="podium-toggle" data-target="${id}">Hold</button></span>`;
+          });
+        }
+        html += `</span></div>`;
+        podium.forEach(p => {
+          const id = `hof-${si}-${p.podiumPlads}`;
+          html += `<div class="podium-picks" id="${id}">${picksHtml(p.picks)}</div>`;
+        });
+        html += honorableMentionsInlineHtml(data.honorable);
+        html += `</div>`;
+      } catch (e) {
+        html += `<div class="hof-season"><div class="hof-top"><span class="hof-label">${s.label}</span><span class="error-msg">Kunne ikke hente</span></div></div>`;
+      }
+    }
+  }
+  html += `</div></div>`;
+
+  area.innerHTML = html;
+  area.querySelectorAll('.podium-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.getElementById(btn.dataset.target).classList.toggle('show');
+    });
+  });
+}
+
+function podiumRowHtml(podium, ns) {
+  const byPlads = {};
+  podium.forEach(p => { byPlads[p.podiumPlads] = p; });
+  let html = '<div class="podium-row">';
+  [1, 2, 3].forEach(plads => {
+    const p = byPlads[plads];
+    const id = `podium-${ns}-${plads}`;
+    html += `<div class="podium-slot p${plads}">`;
+    if (p) {
+      html += `<span class="medal-big">${medalIcon(plads)}</span><div class="p-navn">${p.navn}</div><div class="p-point">${p.total} point</div>
+        <button class="podium-toggle" data-target="${id}">Se hold ▾</button>
+        <div class="podium-picks" id="${id}">${picksHtml(p.picks)}</div>
+        <div class="step">${plads}</div>`;
+    } else {
+      html += `<span class="medal-big" style="opacity:.3;">${medalIcon(plads)}</span><div class="p-navn" style="color:var(--muted);">–</div><div class="step">${plads}</div>`;
+    }
+    html += `</div>`;
+  });
+  html += '</div>';
+  return html;
+}
+
+// ---------------------------------------------------------------------
+// Existing single-season detail explorer
+// ---------------------------------------------------------------------
+function populateSelectors() {
+  const seasonSel = document.getElementById('f-season');
+  GSB_SEASONS.forEach((s) => {
+    const opt = document.createElement('option');
+    opt.value = s.spreadsheetId;
+    opt.textContent = s.label;
+    seasonSel.appendChild(opt);
+  });
+
+  const presetSel = document.getElementById('f-preset');
+  GSB_ROUND_PRESETS.forEach((p) => {
+    const opt = document.createElement('option');
+    opt.value = p.key;
+    opt.textContent = p.label;
+    presetSel.appendChild(opt);
+  });
+}
+
+function onPresetChange() {
+  const key = document.getElementById('f-preset').value;
+  const preset = GSB_ROUND_PRESETS.find((p) => p.key === key);
+  const customEl = document.getElementById('custom-rounds');
+  if (!preset || preset.key === 'brugerdef') {
+    customEl.style.display = 'flex';
+  } else {
+    customEl.style.display = 'none';
+    document.getElementById('f-runde-min').value = preset.min;
+    document.getElementById('f-runde-max').value = preset.max;
+  }
+}
+
+function applyUrlParams() {
+  try {
+    const p = new URLSearchParams(location.search);
+    if (p.get('season')) document.getElementById('f-season').value = p.get('season');
+    if (p.get('preset')) document.getElementById('f-preset').value = p.get('preset');
+    onPresetChange();
+    if (p.get('rundeMin')) document.getElementById('f-runde-min').value = p.get('rundeMin');
+    if (p.get('rundeMax')) document.getElementById('f-runde-max').value = p.get('rundeMax');
+  } catch (e) { /* no-op */ }
+}
+
+function updateUrl() {
+  try {
+    const p = new URLSearchParams();
+    p.set('season', document.getElementById('f-season').value);
+    p.set('preset', document.getElementById('f-preset').value);
+    p.set('rundeMin', document.getElementById('f-runde-min').value);
+    p.set('rundeMax', document.getElementById('f-runde-max').value);
+    history.replaceState(null, '', '?' + p.toString());
+  } catch (e) { /* preview sandbox may not allow history writes — harmless */ }
+}
+
+function kopierLink() {
+  updateUrl();
+  const btn = document.getElementById('copy-link-btn');
+  try {
+    navigator.clipboard.writeText(location.href);
+    const old = btn.textContent;
+    btn.textContent = '✓ Link kopieret';
+    setTimeout(() => { btn.textContent = old; }, 1500);
+  } catch (e) {
+    prompt('Kopiér linket herunder:', location.href);
+  }
+}
+
+async function hentData() {
+  const spreadsheetId = document.getElementById('f-season').value;
+  const rundeMin = document.getElementById('f-runde-min').value || 1;
+  const rundeMax = document.getElementById('f-runde-max').value || 11;
+  const content = document.getElementById('content');
+
+  if (spreadsheetId.startsWith('SÆT_')) {
+    content.innerHTML = '<div class="error-msg">Denne sæsons Sheet-ID er ikke sat op endnu i seasons.js.</div>';
+    return;
+  }
+
+  content.innerHTML = '<div class="loading">Henter stilling...</div>';
+
+  try {
+    const res = await fetch(`/.netlify/functions/stilling?spreadsheetId=${spreadsheetId}&rundeMin=${rundeMin}&rundeMax=${rundeMax}`);
+    const json = await res.json();
+    if (!res.ok) throw new Error(json.error || 'Ukendt fejl');
+    allData = json;
+    updateUrl();
+    render();
+  } catch (err) {
+    content.innerHTML = `<div class="error-msg">Kunne ikke hente stilling: ${err.message}</div>`;
+  }
+}
+
+function medal(plads) {
+  if (plads === 1) return '<span class="medal gold">1</span>';
+  if (plads === 2) return '<span class="medal silver">2</span>';
+  if (plads === 3) return '<span class="medal bronze">3</span>';
+  return plads;
+}
+
+function render() {
+  const content = document.getElementById('content');
+  const { participants, rundeMin, rundeMax } = allData;
+
+  if (participants.length === 0) {
+    content.innerHTML = `<div class="card"><p class="error-msg" style="padding:10px 0;">Ingen deltagere fundet for denne sæson/runde-interval endnu.</p></div>`;
+    return;
+  }
+
+  let html = `<div class="card"><h2>Stilling · runde ${rundeMin}-${rundeMax}</h2>
+    <p class="desc">${participants.length} deltagere. Klik "Vis hold" for at se en deltagers 10 valgte spillere.</p>
+    <table>
+    <thead><tr><th style="width:50px;">Plads</th><th>Navn</th><th style="width:90px;">Point</th><th></th></tr></thead>
+    <tbody>`;
+
+  participants.forEach((p, i) => {
+    const rowId = `picks-${i}`;
+    const badge = p.podieBerettiget === false ? '<span class="gratis-badge" title="Gratis-deltagelse — ikke podie-berettiget">Gratis</span>' : '';
+    html += `<tr class="rank-${p.plads}">
+      <td>${medal(p.plads)}</td>
+      <td>${p.navn}${badge}</td>
+      <td class="total-cell">${p.total}</td>
+      <td><button class="picks-toggle" onclick="togglePicks('${rowId}')">Vis hold</button></td>
+    </tr>
+    <tr class="picks-row" id="${rowId}">
+      <td colspan="4">
+        ${p.picks.length ? p.picks.map(pl => `<span class="pick-pill">${pl}</span>`).join('') : '<span style="color:var(--muted);">Ingen holddata fundet</span>'}
+      </td>
+    </tr>`;
+  });
+
+  html += `</tbody></table></div>`;
+  content.innerHTML = html;
+}
+
+function togglePicks(rowId) {
+  document.getElementById(rowId).classList.toggle('show');
+}
+
+populateSelectors();
+applyUrlParams();
+onPresetChange();
+renderPodiumArea();
+hentData();
+</script>
+
+</body>
+</html>

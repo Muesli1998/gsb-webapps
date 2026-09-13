@@ -1,0 +1,34 @@
+SÅDAN STARTER DU DEN LOKALE PREVIEW
+====================================
+
+Denne mappe er en komplet, opdateret kopi af GSB Dream Team-webappen,
+inkl. det nye 24/25-sæson-ID i seasons.js. Filen .env indeholder allerede
+jeres Google service-konto-nøgle, så du IKKE selv skal sætte noget op —
+bare start den.
+
+Åbn en terminal (PowerShell) i denne mappe og kør:
+
+    npm install
+    npx netlify-cli dev
+
+Første gang tager "npm install" typisk 30-60 sekunder. Når "netlify dev"
+er startet, åbner den typisk automatisk en browser på
+http://localhost:8888 — ellers åbn den adresse selv.
+
+Herfra kan du klikke rundt i navigationen øverst:
+  - Historisk stilling -> vælg "2024/25" i sæson-dropdown -> se stillingen
+  - Statistik -> se winrate pr. hold/spiller for 24/25
+  - Tilmelding -> virker mod det LEVENDE 26/27-ark (ikke 24/25)
+  - Data-indskrivning -> kun til at hente NYE resultater, brug ikke på 24/25
+
+BEMÆRK: ingen data skrives til jeres rigtige Google Sheets fra dette
+lokale preview, medmindre du selv trykker "Hent og skriv til arket" på
+Data-indskrivnings-siden. "Hent kun" og alle de andre sider læser blot.
+
+Luk serveren igen med Ctrl+C i terminalen når du er færdig.
+
+Hvis "npx netlify-cli dev" fejler eller ikke findes, kan du i stedet køre
+en simplere variant uden netlify-cli (kræver kun 'node'):
+  1. npm install express googleapis dotenv
+  2. Sig til i chatten, så bygger jeg en lille server.js der gør det samme
+     uden at kræve netlify-cli.

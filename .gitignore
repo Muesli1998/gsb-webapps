@@ -1,0 +1,68 @@
+# Hemmeligheder - ligger i Dropbox under Projects\GSB-Webapps\secrets\
+.env
+.env.*
+!.env.example
+secrets/
+*service*account*.json
+*credentials*.json
+*.pem
+*.key
+googlesheetsapikey*.txt
+
+# Maskinspecifik konfiguration - forskellig paa hver computer
+config.local.json
+
+# Afhaengigheder
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Playwright browserprofil - ren cache, skrives ved hver testkoersel
+.browser-state/
+
+# Genereret data i statistik (~3.500 filer, kan altid genskabes)
+statistik/results/browser-fallback/
+statistik/results/browser-fallback-complete/
+statistik/results/browser-fallback-youth/
+statistik/results/browser-standings/
+statistik/results/individual-browser/
+statistik/results/individual-browser-all/
+statistik/results/complete-result-sample/
+statistik/results/legacy-route-probe/
+statistik/results/*.jsonl
+statistik/results/browser-individual-parse-report.json
+statistik/results/team-vs-individual-result-audit.json
+statistik/sql/normalized-import.sql
+# BEMAERK: .md-rapporterne i statistik/results/ bliver bevidst i repoet -
+# CURRENT_VALIDATION_STATUS.md og coverage-revisionerne er obligatorisk laesning.
+
+# Databaser - kopier hoerer i Dropbox
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+statistik/data/backups/
+
+# Medier og regneark - hoerer i Dropbox under dream-team-data
+*.mp4
+*.mov
+*.zip
+*.xlsx
+*.xlsm
+
+# Haandlavede backups - git overtager den rolle
+*_BACKUP_*
+*_backup_*
+_backups/
+
+# Dropbox og Windows
+*conflicted copy*
+desktop.ini
+Thumbs.db
+.DS_Store
+
+# Byggeoutput
+dist/
+.netlify/

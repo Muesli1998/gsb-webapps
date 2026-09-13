@@ -1,0 +1,9 @@
+{
+  "name": "gsb-resultatimport",
+  "version": "1.0.0",
+  "description": "Henter GSB holdkampresultater fra Nembadminton og skriver dem til Google Sheets via en Netlify Function.",
+  "private": true,
+  "dependencies": {
+    "googleapis": "^140.0.0"
+  }
+}

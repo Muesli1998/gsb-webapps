@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Søndagstræning – Tilmelding/afbud</title>
+<style>
+  :root {
+    --sondag-dark: #2b2440; --sondag-mid: #453a68; --line-white: #f7f5ef;
+    --shuttle: #e8a33d; --ink: #1c2420; --muted: #5c6b62; --border: #d7ddd4;
+    --ok: #1f5c3f; --error: #b3432f; --warn: #a3721f;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--line-white); color: var(--ink); line-height: 1.45; }
+  header { background: var(--sondag-dark); color: var(--line-white); padding: 28px 24px 24px; position: relative; overflow: hidden; }
+  header::after { content: ""; position: absolute; right: -40px; top: -40px; width: 180px; height: 180px; border: 3px solid rgba(255,255,255,0.10); border-radius: 50%; }
+  header h1 { margin: 0 0 4px; font-size: 1.5rem; font-weight: 700; }
+  header p { margin: 0; color: rgba(247,245,239,0.75); font-size: 0.92rem; max-width: 640px; }
+  .lock-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.12); color: var(--line-white); font-size: 0.74rem; font-weight: 700; padding: 4px 10px; border-radius: 20px; margin-top: 12px; }
+
+  main { max-width: 720px; margin: 0 auto; padding: 24px 20px 60px; }
+
+  .summary-bar { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
+  .summary-pill { flex: 1; min-width: 120px; background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; text-align: center; }
+  .summary-pill .num { font-size: 1.6rem; font-weight: 800; display: block; }
+  .summary-pill .lbl { font-size: 0.76rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.03em; }
+  .summary-pill.kommer .num { color: var(--ok); }
+  .summary-pill.afbud .num { color: var(--error); }
+  .summary-pill.venter .num { color: var(--warn); }
+
+  .card { background: #fff; border: 1px solid var(--border); border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
+  .player-row { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-bottom: 1px solid var(--border); }
+  .player-row:last-child { border-bottom: none; }
+  .player-name { flex: 1; min-width: 0; }
+  .player-name .navn { font-weight: 700; font-size: 0.95rem; }
+  .player-name .comment { font-size: 0.78rem; color: var(--muted); font-style: italic; margin-top: 2px; }
+  .status-btns { display: flex; gap: 6px; flex-shrink: 0; }
+  .status-btn { font-family: inherit; font-size: 0.8rem; font-weight: 700; padding: 7px 12px; border-radius: 6px; border: 1.5px solid var(--border); background: #fff; cursor: pointer; color: var(--muted); white-space: nowrap; }
+  .status-btn:hover { border-color: var(--sondag-mid); }
+  .status-btn.kommer.active { background: var(--ok); border-color: var(--ok); color: #fff; }
+  .status-btn.afbud.active { background: var(--error); border-color: var(--error); color: #fff; }
+  .status-btn:focus-visible { outline: 2px solid var(--sondag-mid); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+  .comment-field { display: none; padding: 0 16px 14px; }
+  .comment-field.show { display: block; }
+  .comment-field input { width: 100%; padding: 8px 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.85rem; font-family: inherit; }
+
+  .section-title { font-size: 1rem; font-weight: 700; color: var(--sondag-dark); margin: 24px 0 12px; }
+  .note { font-size: 0.82rem; color: var(--muted); background: #f1eef7; border: 1px solid #ddd6ec; border-radius: 8px; padding: 12px 14px; margin-top: 20px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🌅 Søndagstræning</h1>
+  <p>Lukket træning for den udvalgte gruppe. Meld dig til eller giv afbud til kommende søndag — så kan alle se holdet uden at rode i Messenger-tråden.</p>
+  <div class="lock-badge">🔒 Kun for gruppen — link deles ikke offentligt</div>
+  <nav style="display:none;"></nav>
+</header>
+
+<main>
+  <div class="section-title" id="dato-title">Kommende søndag: —</div>
+
+  <div class="summary-bar">
+    <div class="summary-pill kommer"><span class="num" id="sum-kommer">0</span><span class="lbl">Kommer</span></div>
+    <div class="summary-pill afbud"><span class="num" id="sum-afbud">0</span><span class="lbl">Afbud</span></div>
+    <div class="summary-pill venter"><span class="num" id="sum-venter">0</span><span class="lbl">Ikke svaret</span></div>
+  </div>
+
+  <div class="card" id="player-list"></div>
+
+  <div class="note">
+    <strong>Preview-note:</strong> dette er en ny idé, ikke en rigtig feature endnu — spillerne herover er
+    eksempeldata, ikke rigtige klubmedlemmer. Status gemmes kun i denne browser-fane og forsvinder ved genindlæsning.
+    En rigtig version ville kræve et lille Netlify-endpoint + et Google Sheets-faneblad, ligesom resten af sitet.
+  </div>
+</main>
+
+<script>
+  const PLAYERS = [
+    'Eksempel Spiller A', 'Eksempel Spiller B', 'Eksempel Spiller C', 'Eksempel Spiller D',
+    'Eksempel Spiller E', 'Eksempel Spiller F', 'Eksempel Spiller G', 'Eksempel Spiller H',
+  ];
+
+  // status: null (ikke svaret) | 'kommer' | 'afbud'
+  const state = {};
+  PLAYERS.forEach((p, i) => { state[p] = { status: i < 3 ? 'kommer' : (i === 3 ? 'afbud' : null), comment: i === 3 ? 'Skader knæ' : '' }; });
+
+  function nextSunday() {
+    const d = new Date();
+    const day = d.getDay(); // 0 = søndag
+    const add = day === 0 ? 7 : (7 - day);
+    d.setDate(d.getDate() + add);
+    return d.toLocaleDateString('da-DK', { weekday: 'long', day: 'numeric', month: 'long' });
+  }
+
+  function render() {
+    document.getElementById('dato-title').textContent = 'Kommende søndag: ' + nextSunday();
+
+    let kommer = 0, afbud = 0, venter = 0;
+    PLAYERS.forEach(p => {
+      if (state[p].status === 'kommer') kommer++;
+      else if (state[p].status === 'afbud') afbud++;
+      else venter++;
+    });
+    document.getElementById('sum-kommer').textContent = kommer;
+    document.getElementById('sum-afbud').textContent = afbud;
+    document.getElementById('sum-venter').textContent = venter;
+
+    const list = document.getElementById('player-list');
+    list.innerHTML = '';
+    PLAYERS.forEach(navn => {
+      const s = state[navn];
+      const row = document.createElement('div');
+      row.className = 'player-row';
+      row.innerHTML = `
+        <div class="player-name">
+          <div class="navn">${navn}</div>
+          ${s.comment ? `<div class="comment">${s.comment}</div>` : ''}
+        </div>
+        <div class="status-btns">
+          <button class="status-btn kommer ${s.status === 'kommer' ? 'active' : ''}" data-navn="${navn}" data-status="kommer">Kommer</button>
+          <button class="status-btn afbud ${s.status === 'afbud' ? 'active' : ''}" data-navn="${navn}" data-status="afbud">Afbud</button>
+        </div>
+      `;
+      list.appendChild(row);
+    });
+  }
+
+  document.getElementById('player-list').addEventListener('click', function (e) {
+    const btn = e.target.closest('.status-btn');
+    if (!btn) return;
+    const navn = btn.getAttribute('data-navn');
+    const status = btn.getAttribute('data-status');
+    state[navn].status = state[navn].status === status ? null : status;
+    if (state[navn].status !== 'afbud') state[navn].comment = '';
+    else if (!state[navn].comment) {
+      const reason = prompt('Kort besked ved afbud (valgfrit):', '');
+      if (reason) state[navn].comment = reason;
+    }
+    render();
+  });
+
+  render();
+</script>
+
+</body>
+</html>

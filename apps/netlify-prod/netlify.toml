@@ -1,0 +1,18 @@
+[build]
+  functions = "netlify/functions"
+  publish = "public"
+
+[functions]
+  node_bundler = "esbuild"
+
+# Rodsiden viser den nye app-vælger/landingsside i stedet for en 404 —
+# tilføjet som del af nav/IA-omlægningen (2026-09-03). index.html forbliver
+# Data-indskrivnings-siden, uændret, på sin egen URL.
+# force = true er nødvendigt: Netlify serverer ellers den statiske public/index.html
+# direkte på "/" FØR den overhovedet tjekker redirects (statiske filer vinder som
+# standard over redirect-regler) — uden force ramte man aldrig denne regel.
+[[redirects]]
+  from = "/"
+  to = "/forside.html"
+  status = 200
+  force = true

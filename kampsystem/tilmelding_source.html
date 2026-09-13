@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GSB Dream Team – Tilmelding</title>
+<style>
+  :root {
+    --court-green: #1f5c3f; --court-green-dark: #123a28; --line-white: #f7f5ef;
+    --shuttle: #e8a33d; --ink: #1c2420; --muted: #5c6b62; --border: #d7ddd4; --error: #b3432f; --ok: #1f5c3f;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--line-white); color: var(--ink); line-height: 1.45; }
+  header { background: var(--court-green); color: var(--line-white); padding: 28px 24px 24px; position: relative; overflow: hidden; }
+  header::after { content: ""; position: absolute; right: -40px; top: -40px; width: 180px; height: 180px; border: 3px solid rgba(255,255,255,0.12); border-radius: 50%; }
+  header h1 { margin: 0 0 4px; font-size: 1.5rem; font-weight: 700; }
+  header p { margin: 0; color: rgba(247,245,239,0.75); font-size: 0.92rem; max-width: 640px; }
+  main { max-width: 720px; margin: 0 auto; padding: 24px 20px 60px; }
+  .card { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 24px; margin-bottom: 20px; }
+  .field { display: flex; flex-direction: column; gap: 4px; margin-bottom: 16px; }
+  .field label { font-size: 0.8rem; font-weight: 600; color: var(--muted); }
+  .field input, .field select { padding: 10px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.95rem; font-family: inherit; }
+  .field input:focus, .field select:focus { outline: 2px solid var(--court-green); outline-offset: 1px; }
+  .field select option:disabled { color: #c3c9c5; }
+  .section-title { font-size: 1rem; font-weight: 700; color: var(--court-green); margin: 24px 0 12px; padding-top: 12px; border-top: 1px solid var(--border); }
+  .section-title:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+  .pick-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  @media (max-width: 480px) { .pick-grid { grid-template-columns: 1fr; } }
+  button { font-family: inherit; font-size: 0.95rem; font-weight: 700; padding: 12px 20px; border-radius: 6px; border: none; cursor: pointer; width: 100%; margin-top: 8px; }
+  button:disabled { opacity: 0.5; cursor: not-allowed; }
+  .btn-primary { background: var(--court-green); color: #fff; }
+  .btn-primary:hover:not(:disabled) { background: var(--court-green-dark); }
+  .status { margin-top: 14px; font-size: 0.9rem; padding: 10px 14px; border-radius: 6px; display: none; }
+  .status.show { display: block; }
+  .status.ok { background: #eaf3ee; color: var(--ok); }
+  .status.error { background: #fbeae7; color: var(--error); }
+  .status.info { background: #eef1f6; color: #3a5570; }
+  .loading-players { font-size: 0.85rem; color: var(--muted); padding: 10px 0; }
+  .picks-count { font-size: 0.82rem; color: var(--muted); margin: -6px 0 14px; }
+  .picks-count strong { color: var(--court-green); }
+
+  .payment-choice { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+  .payment-option { display: flex; align-items: flex-start; gap: 10px; padding: 12px 14px; border: 1px solid var(--border); border-radius: 8px; cursor: pointer; font-size: 0.9rem; }
+  .payment-option:hover { border-color: var(--court-green); }
+  .payment-option input { margin-top: 2px; accent-color: var(--court-green); }
+  .payment-option.checked { border-color: var(--court-green); background: #f2f8f5; }
+  .payment-option .opt-title { font-weight: 600; display: block; }
+  .payment-option .opt-desc { font-size: 0.8rem; color: var(--muted); }
+
+  .mobilepay-box { display: flex; align-items: center; gap: 12px; background: #fdf3e3; border: 1px solid #eecb8f; border-radius: 8px; padding: 14px 16px; margin-bottom: 4px; }
+  .mobilepay-box .mp-badge { background: var(--shuttle); color: #2b1c05; font-weight: 700; font-size: 0.78rem; padding: 4px 9px; border-radius: 5px; white-space: nowrap; }
+  .mobilepay-box .mp-text { font-size: 0.85rem; color: var(--ink); }
+  .mobilepay-box .mp-number { font-weight: 700; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🏸 GSB Dream Team – Tilmelding</h1>
+  <p>Vælg 6 herrer og 4 damer fra klubbens seniortrup. Prototype-version – erstatter ikke Google Forms endnu.</p>
+  <nav style="display:flex; gap:16px; margin-top:14px; flex-wrap:wrap; position:relative; z-index:1;">
+    <a href="/index.html" style="color:rgba(247,245,239,0.85); font-size:0.85rem; text-decoration:none;">📥 Data-indskrivning</a>
+    <a href="/tilmelding.html" style="color:#fff; font-size:0.85rem; text-decoration:none; font-weight:700; border-bottom:2px solid #fff; padding-bottom:2px;">✍️ Tilmelding</a>
+    <a href="/analyse.html" style="color:rgba(247,245,239,0.85); font-size:0.85rem; text-decoration:none;">📊 Statistik</a>
+    <a href="/stilling.html" style="color:rgba(247,245,239,0.85); font-size:0.85rem; text-decoration:none;">🏆 Historisk stilling</a>
+    <a href="/senior-ungdom-tilmelding.html" style="color:rgba(247,245,239,0.85); font-size:0.85rem; text-decoration:none;">🏸 Ungdomssparring</a>
+  </nav>
+</header>
+
+<main>
+  <div class="card">
+    <div class="field">
+      <label for="f-navn">Dit navn</label>
+      <input type="text" id="f-navn" placeholder="Skriv dit navn eller kaldenavn">
+    </div>
+    <div class="field">
+      <label for="f-email">Email</label>
+      <input type="email" id="f-email" placeholder="din@email.dk">
+    </div>
+
+    <div id="players-loading" class="loading-players">Henter spillertrup...</div>
+
+    <div id="picks-container" style="display:none;">
+      <div class="section-title">Herrer (vælg 6)</div>
+      <div class="pick-grid" id="herrer-grid"></div>
+
+      <div class="section-title">Damer (vælg 4)</div>
+      <div class="pick-grid" id="damer-grid"></div>
+      <p class="picks-count"><strong id="picks-count-num">0</strong> af 10 valgt — en spiller kan kun vælges én gang, uanset felt.</p>
+    </div>
+
+    <div id="betaling-container" style="display:none;">
+      <div class="section-title">Betaling</div>
+      <div class="payment-choice">
+        <label class="payment-option" id="betaling-option-betalt" for="betaling-betalt">
+          <input type="radio" name="betaling" value="betalt" id="betaling-betalt">
+          <span>
+            <span class="opt-title">Jeg betaler kontingent</span>
+            <span class="opt-desc">Kommer i spil til podiet og evt. gevinster ved sæsonens afslutning.</span>
+          </span>
+        </label>
+        <label class="payment-option" id="betaling-option-gratis" for="betaling-gratis">
+          <input type="radio" name="betaling" value="gratis" id="betaling-gratis">
+          <span>
+            <span class="opt-title">Jeg deltager gratis</span>
+            <span class="opt-desc">Med i stillingen som alle andre, men ikke i spil til podiet/gevinster.</span>
+          </span>
+        </label>
+      </div>
+      <div class="mobilepay-box">
+        <span class="mp-badge">MobilePay</span>
+        <span class="mp-text">Betal kontingentet på boks <span class="mp-number">1572BU</span> — skriv dit navn i overførslen.</span>
+      </div>
+    </div>
+
+    <button class="btn-primary" id="submit-btn" onclick="tilmeld()" disabled>Tilmeld hold</button>
+    <div id="status" class="status"></div>
+  </div>
+</main>
+
+<script>
+// Sheet ID is fixed for this prototype — update to your actual sheet.
+const SPREADSHEET_ID = '1naV601-lJWqXJ9XZ5ovRwfuaKFWVYaflnLpwf5OUrW4';
+const ALL_SELECT_IDS = [1,2,3,4,5,6].map(i => `herre-${i}`).concat([1,2,3,4].map(i => `dame-${i}`));
+
+function showStatus(msg, type) {
+  const el = document.getElementById('status');
+  el.textContent = msg;
+  el.className = 'status show ' + type;
+}
+
+async function lastSpillere() {
+  try {
+    const res = await fetch(`/.netlify/functions/spillere?spreadsheetId=${SPREADSHEET_ID}`);
+    const json = await res.json();
+    if (!res.ok) throw new Error(json.error || 'Ukendt fejl');
+
+    const herrerGrid = document.getElementById('herrer-grid');
+    const damerGrid = document.getElementById('damer-grid');
+
+    // Brug kønsopdelte lister hvis backend leverer dem (json.herrer/json.damer).
+    // Fald tilbage til den udifferentierede json.players-liste i begge felter,
+    // hvis backend'en ikke (endnu) understøtter kønsopdeling.
+    const herrerListe = json.herrer || json.players;
+    const damerListe = json.damer || json.players;
+
+    for (let i = 1; i <= 6; i++) {
+      const sel = lavDropdown(`herre-${i}`, herrerListe, `Herre ${i}`);
+      herrerGrid.appendChild(sel);
+    }
+    for (let i = 1; i <= 4; i++) {
+      const sel = lavDropdown(`dame-${i}`, damerListe, `Dame ${i}`);
+      damerGrid.appendChild(sel);
+    }
+
+    document.getElementById('players-loading').style.display = 'none';
+    document.getElementById('picks-container').style.display = 'block';
+    document.getElementById('betaling-container').style.display = 'block';
+    refreshDisabledOptions();
+    opsaetBetalingsvalg();
+  } catch (err) {
+    document.getElementById('players-loading').textContent = 'Kunne ikke hente spillertrup: ' + err.message;
+  }
+}
+
+// "Tilmeld hold"-knappen er deaktiveret indtil deltageren har valgt betalt
+// eller gratis — MobilePay-boksen (1572BU) står altid synligt lige over
+// knappen, uanset valg.
+function opsaetBetalingsvalg() {
+  const radios = [document.getElementById('betaling-betalt'), document.getElementById('betaling-gratis')];
+  radios.forEach(r => r.addEventListener('change', opdaterBetalingsvalg));
+  opdaterBetalingsvalg();
+}
+
+function betalingValgt() {
+  const checked = document.querySelector('input[name="betaling"]:checked');
+  return checked ? checked.value : null;
+}
+
+function opdaterBetalingsvalg() {
+  document.getElementById('betaling-option-betalt').classList.toggle('checked', document.getElementById('betaling-betalt').checked);
+  document.getElementById('betaling-option-gratis').classList.toggle('checked', document.getElementById('betaling-gratis').checked);
+  document.getElementById('submit-btn').disabled = !betalingValgt();
+}
+
+function lavDropdown(id, players, label) {
+  const wrap = document.createElement('div');
+  wrap.className = 'field';
+  wrap.style.marginBottom = '0';
+  const lbl = document.createElement('label');
+  lbl.textContent = label;
+  lbl.setAttribute('for', id);
+  const sel = document.createElement('select');
+  sel.id = id;
+  const emptyOpt = document.createElement('option');
+  emptyOpt.value = '';
+  emptyOpt.textContent = '– Vælg spiller –';
+  sel.appendChild(emptyOpt);
+  players.forEach(p => {
+    const opt = document.createElement('option');
+    opt.value = p;
+    opt.textContent = p;
+    sel.appendChild(opt);
+  });
+  sel.addEventListener('change', refreshDisabledOptions);
+  wrap.appendChild(lbl);
+  wrap.appendChild(sel);
+  return wrap;
+}
+
+// Live duplicate prevention: once a player is chosen in one dropdown, that
+// player becomes disabled (greyed out) in every other dropdown, so it's
+// simply not possible to pick the same person twice — no need to wait for
+// the submit-time error message to find out.
+function refreshDisabledOptions() {
+  const chosen = {}; // navn -> select id that holds it
+  ALL_SELECT_IDS.forEach(id => {
+    const sel = document.getElementById(id);
+    if (sel && sel.value) chosen[sel.value] = id;
+  });
+
+  ALL_SELECT_IDS.forEach(id => {
+    const sel = document.getElementById(id);
+    if (!sel) return;
+    Array.from(sel.options).forEach(opt => {
+      if (!opt.value) return;
+      const owner = chosen[opt.value];
+      opt.disabled = !!owner && owner !== id;
+    });
+  });
+
+  const count = Object.keys(chosen).length;
+  const counter = document.getElementById('picks-count-num');
+  if (counter) counter.textContent = String(count);
+}
+
+async function tilmeld() {
+  const navn = document.getElementById('f-navn').value.trim();
+  const email = document.getElementById('f-email').value.trim();
+  const herrer = [1,2,3,4,5,6].map(i => document.getElementById(`herre-${i}`).value).filter(Boolean);
+  const damer = [1,2,3,4].map(i => document.getElementById(`dame-${i}`).value).filter(Boolean);
+
+  const betaling = betalingValgt();
+
+  if (!navn) { showStatus('Skriv dit navn.', 'error'); return; }
+  if (!betaling) { showStatus('Vælg om du betaler kontingent eller deltager gratis.', 'error'); return; }
+  if (herrer.length !== 6) { showStatus('Vælg præcis 6 herrer.', 'error'); return; }
+  if (damer.length !== 4) { showStatus('Vælg præcis 4 damer.', 'error'); return; }
+  const alle = [...herrer, ...damer];
+  if (new Set(alle).size !== 10) { showStatus('Du har valgt den samme spiller mere end én gang.', 'error'); return; }
+
+  const btn = document.getElementById('submit-btn');
+  btn.disabled = true;
+  showStatus('Sender...', 'info');
+
+  try {
+    const res = await fetch('/.netlify/functions/tilmeld', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ spreadsheetId: SPREADSHEET_ID, navn, herrer, damer, email, betaling, tidsstempel: new Date().toISOString() }),
+    });
+    const json = await res.json();
+    if (!res.ok) throw new Error(json.error || 'Ukendt fejl');
+    showStatus('Tilmelding modtaget! Held og lykke med sæsonen 🏸', 'ok');
+  } catch (err) {
+    showStatus('Noget gik galt: ' + err.message, 'error');
+    btn.disabled = false;
+  }
+}
+
+lastSpillere();
+</script>
+
+</body>
+</html>

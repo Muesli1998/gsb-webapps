@@ -1,0 +1,98 @@
+{
+  "beskrivelse": "Navne bruges nogle gange forskelligt i Tilmeldinger (fulde/officielle navne folk selv skriver) vs. Resultater (kortere navne fra Nembadminton-scraping). Ved import af en ny sæson: byg altid en tilsvarende rename-liste ved at krydstjekke alle Herrer/Damer-picks mod de unikke 'Spiller'-navne i den konverterede Resultater-fane. Nedenfor er de allerede fundne alias for 24/25 og 25/26 til reference.",
+
+  "alias_2526": {
+    "Anja Gunna Thomsen": "Anja Thomsen",
+    "Dorthe Høst Sarup": "Dorthe Høst",
+    "Hannah Phoebe Ejada Clausen": "Hannah Clausen",
+    "Holger Tscherning Lindholm": "Holger Lindholm",
+    "Jonathan Hansen": "Jonathan W. Hansen",
+    "Louise Korsby Kofoed": "Louise Kofoed",
+    "Sebastian Møller": "Sebastian Almeida Møller",
+    "Thøger Jakobsen": "Thøger Eusebius Jakobsen",
+    "Thor Percy Hinge Pedersen": "Thor Pedersen",
+    "Nadia Mortensen": "Nadia Sawangjai Mortensen",
+    "Linus Bergström Hesselballe": "Linus Bergstrøm Hesselballe",
+    "Rasmus Holmlykke Andersen": "Rasmus Holmslykke Andersen"
+  },
+
+  "alias_2425": {
+    "Anja Gunna Thomsen": "Anja Thomsen",
+    "Dorthe Høst Sarup": "Dorthe Høst",
+    "Hannah Phoebeejada Clausen": "Hannah Clausen",
+    "Lena Bigum Vang": "Lena Vang",
+    "Linus Bergström Hesselballe": "Linus Bergstrøm Hesselballe",
+    "Louise Korsby Kofoed": "Louise Kofoed",
+    "Sebastian Møller": "Sebastian Almeida Møller",
+    "Rasmus Holmlykke Andersen": "Rasmus Holmslykke Andersen"
+  },
+
+  "alias_2627_zakobo_vs_resultater": {
+    "beskrivelse": "Fundet 2026-08-31 ved opsætning af 26/27-tilmeldingens kønsopdeling: Zakobo-eksportens fulde navne matchet mod alle historiske Resultater-navne (24/25+25/26) for at udlede køn pr. spiller via HS/DS/HD/DD-kategorierne. Samme alias-mønster som ovenfor, nu mellem Zakobo (26/27-tilmeldte) og Resultater.",
+    "Rasmus Holmlykke Andersen": "Rasmus Holmslykke Andersen"
+  },
+
+  "alias_2627_senior_vs_sut_ungdom": {
+    "beskrivelse": "Fundet 2026-09-01 ved opsætning af Kampsystemets nye SUT-ungdomsgruppe (fra Chris' uploadede 'SUT 2627.xlsx', 21 navne). Sammenlignet mod den eksisterende 26/27 senior-spillerliste (Zakobo, 43 navne) — tre navne går igen på tværs af de to lister. BEKRÆFTET af Chris 2026-09-01: 'Det er de samme spillere, der er lidt overlap mellem de bedste ungdomsspillere og senior.' Kampsystem-previewet beholder i alle tre tilfælde kun Senior-listens rating (ingen dobbelt SUT-linje), for at undgå navnekollisioner i rundefordelingen.",
+    "Rosa Hinge Carlsson": "eksakt navnematch mellem Senior- og SUT-listen — bekræftet samme person",
+    "Sylvester Østberg": "eksakt navnematch mellem Senior- og SUT-listen — bekræftet samme person (var også en af de 7 spillere uden kamphistorik, gættet/bekræftet som ny for 26/27 — konsistent med at være opflyttet fra ungdom)",
+    "Louis Toftlund": "Senior-listens korte navn — SUT-listen har 'Louis Valdemar Hedegaard Toftlund' — bekræftet samme person med fulde mellemnavne"
+  },
+
+  "kampsystem_manglende_bd_rating_2026_09_02": {
+    "beskrivelse": "Kampsystemets rigtige BD-rating-seeding, endelig status efter ANDEN rettelsesrunde 2026-09-02 (Chris' screenshots + refId-opslag). Værdier der genuint mangler er nu NULL i KAMPSYSTEM_ROSTER (build3.py) — IKKE et opdigtet placeholder-tal, jf. Chris' regel 2026-09-02: 'Hvis de ikke har spillet single, så giv dem ikke en værdi lige pt'. UI'et (kampsystem_source.html) viser '–' og deaktiverer det manglende felt som valgmulighed. Når Chris sender rigtige tal for de resterende, opdater KAMPSYSTEM_ROSTER i build3.py direkte (og evt. ELO_Spillere i det nye Kampsystem-Sheet, når Fase 1 er koblet på).",
+    "loest_2026_09_02_anden_runde": {
+      "Michelle Christensen (tidl. Liljengren)": "Bekræftet samme spiller — navn ændret i Nembadminton, men BadmintonID/refId er uændret (930609-21). Fundet blandt 3 'Christensen'-kandidater ved at matche på refId. Rigtig data: single=2486, double=2621, mix=double-fallback (2621, ingen mix-kampe registreret).",
+      "Emilie Reinholdt Amelung": "SUT Ungdom — ikke fundet via highestPointGain-unionen (formentlig absolutte point uden 'point gain'-historik endnu), men seedet fra Chris' rangliste-screenshot: single=1691, double=1502, mix=double-fallback (1502).",
+      "Katia Lundby Bresemann": "SUT Ungdom — samme situation, seedet fra screenshot: single=1771, double=1436, mix=double-fallback (1436).",
+      "Qingyi Marie Han": "SUT Ungdom — samme situation, seedet fra screenshot: single=1505, double=1247, mix=double-fallback (1247).",
+      "Guanyan Chen": "SUT Ungdom — samme situation, seedet fra screenshot: single=1937, double=1547, mix=null (ikke fundet i nogen af de 3 kategorier på screenshottene)."
+    },
+    "genuint_stadig_manglende_data": {
+      "beskrivelse": "Bekræftet af Chris 2026-09-02: disse findes enten slet ikke på ranglisten endnu, eller har ikke spillet den 3. kategori. Ingen fiktive placeholder-tal — feltet er null i KAMPSYSTEM_ROSTER indtil Chris finder/leverer en værdi.",
+      "Andreas Drasbek": "Senior — single/double/mix ALLE null. Ingen BD-match fundet overhovedet; 'findes ikke på ranglisten endnu' pr. Chris.",
+      "August Carl Toftager-Larsen": "SUT Ungdom — samme, single/double/mix ALLE null. 'Findes ikke på ranglisten endnu' pr. Chris.",
+      "Camilla Bagge": "Senior — kun SINGLE er null (double=2290, mix=2340 er rigtige). Har ikke spillet single.",
+      "Christian Staal": "Senior — kun SINGLE er null (double=2453, mix=2234 er rigtige). Har ikke spillet single.",
+      "Kenneth Hasselby": "Senior — kun SINGLE er null (double=3196, mix=3125 er rigtige). Har ikke spillet single.",
+      "Lene Sørensen": "Senior — kun SINGLE er null (double=2282, mix=2321 er rigtige). Har ikke spillet single.",
+      "Line Nielsen": "Senior — kun SINGLE er null (double=2409, mix=2708 er rigtige). Har ikke spillet single.",
+      "Signe Aarøe Jørgensen": "Senior — kun SINGLE er null (double=2226, mix=2296 er rigtige). Har ikke spillet single."
+    }
+  },
+
+  "navneaendring_2026_09_02": {
+    "Michelle Liljengren": "Hedder nu Michelle Christensen (bekræftet af Chris 2026-09-02). BadmintonID/refId uændret: 930609-21. Historiske referencer nedenfor ('spillere_uden_kampe_*', 'koen_2627_udledt') bruger stadig det gamle navn 'Michelle Liljengren', da det var det aktuelle navn på det tidspunkt de blev registreret — samme person."
+  },
+
+  "spillere_uden_kampe_2526": [
+    "Freja Fan Fuglsang",
+    "Karen Obling",
+    "Michelle Liljengren"
+  ],
+  "spillere_uden_kampe_2425": [
+    "Daniel Hoang",
+    "Michelle Liljengren"
+  ],
+
+  "koen_2627_udledt": {
+    "beskrivelse": "Køn for 26/27-Zakobo-truppens 43 spillere, udledt 2026-08-31 af historiske HS/DS/HD/DD-kampresultater (24/25+25/26) + alias-listerne ovenfor. 36 af 43 er bekræftet af faktisk kampdata. De sidste 7 havde INGEN kamphistorik (nye spillere for 26/27) og blev gættet ud fra dansk/skandinavisk navnekonvention — Chris har 2026-08-31 bekræftet at alle 7 gæt er korrekte.",
+    "bekraeftet_af_kampdata": 36,
+    "bekraeftet_af_chris_2026_08_31": [
+      "Andreas Drasbek (M)",
+      "Camilla Bagge (K)",
+      "Louis Toftlund (M)",
+      "Michelle Liljengren (K)",
+      "Sverre Stütz (M)",
+      "Sylvester Østberg (M)",
+      "Theodor Lumby (M)"
+    ]
+  },
+
+  "kendte_anomalier": {
+    "Adnan (25/26)": "Havde oprindeligt 5 damer valgt i stedet for 4 ved tilmelding. Rettet manuelt til 4 (fjernet 'Simone Møller Jensen') for at følge standardreglen fremadrettet — dette ændrer hans historiske total en smule ift. det oprindelige (fejlbehæftede) facit.",
+    "Signe (25/26 og lignende i 24/25)": "Har historisk valgt kun 4 herrer i stedet for 6 ved nogle tilmeldinger. H5/H6 bliver blot tomme i Holdoversigt — ingen manuel rettelse nødvendig, formlerne håndterer det.",
+    "24/25 Hold-fane": "Indeholder to tabeller med de SAMME 23 deltagere — én i standardformat (Tidsstempel|Navn|Herrer-tekst|Damer-tekst|Email), én manuelt kolonnesplittet uden tidsstempel (Navn|Herre1-6|Dame1-4). Skal deduplikeres ved navn, ikke behandles som 46 forskellige deltagere.",
+    "24/25 Pivot-fane": "Indeholder to tabeller med de samme 'Gætter'-navne, hvor den ANDEN (nederste) er fuldstændig #REF!-brækket. Brug kun den øverste tabel til reference/validering, og selv den er kun pålidelig for omtrent R1-R6 (R7+ er #REF!, og selv R1-R6 er hårdkodede, frosne tal fra en tidligere, muligvis fejlbehæftet manuel udregning — se PROJECT_BRIEF.md punkt 7)."
+  }
+}

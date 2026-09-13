@@ -1,0 +1,11 @@
+{
+  "_kommentar": "Kopier denne fil til config.local.json og ret stierne til denne maskine. config.local.json er ignoreret af git, fordi Dropbox ligger forskellige steder paa forskellige computere.",
+  "dropboxRod": "C:\\Users\\chril\\Dropbox",
+  "gsbData": "C:\\Users\\chril\\Dropbox\\Projects\\GSB-Webapps",
+  "secrets": "C:\\Users\\chril\\Dropbox\\Projects\\GSB-Webapps\\secrets",
+  "_eksempelAndenMaskine": {
+    "dropboxRod": "D:\\Dropbox",
+    "gsbData": "D:\\Dropbox\\Projects\\GSB-Webapps",
+    "secrets": "D:\\Dropbox\\Projects\\GSB-Webapps\\secrets"
+  }
+}

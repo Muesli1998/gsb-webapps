@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Senior på ungdomstræning 26/27 — GSB</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --court:#1B4332;
+    --court-light:#2D6A4F;
+    --shuttle:#F7F5F0;
+    --ink:#1F2421;
+    --ink-soft:#5B6660;
+    --coral:#E8603C;
+    --coral-soft:#FBE2D8;
+    --thu:#3D7A99;
+    --thu-soft:#DCEBF2;
+    --line:#E2DED4;
+    --card:#FFFFFF;
+    --past:#F0EFE9;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--shuttle);
+    color:var(--ink);
+    font-family:'Inter',system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    padding:0 0 48px;
+  }
+  a{color:inherit;}
+
+  header{
+    background:linear-gradient(155deg,var(--court) 0%,var(--court-light) 100%);
+    color:var(--shuttle);
+    padding:28px 20px 26px;
+    position:relative;
+    overflow:hidden;
+  }
+  header .shuttle-icon{
+    position:absolute;
+    right:-18px;
+    top:-18px;
+    width:130px;
+    height:130px;
+    opacity:0.14;
+  }
+  header h1{
+    font-family:'Space Grotesk',sans-serif;
+    font-size:clamp(22px,5.5vw,30px);
+    line-height:1.15;
+    margin:0 0 8px;
+    font-weight:700;
+    max-width:520px;
+  }
+  header p{
+    margin:0;
+    font-size:14.5px;
+    line-height:1.55;
+    color:#DCEEE3;
+    max-width:480px;
+  }
+  .legend{
+    display:flex;
+    gap:14px;
+    margin-top:16px;
+    flex-wrap:wrap;
+  }
+  .legend span{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-size:12.5px;
+    font-weight:600;
+    color:var(--shuttle);
+  }
+  .dot{width:9px;height:9px;border-radius:50%;display:inline-block;}
+  .dot.tue{background:var(--coral);}
+  .dot.thu{background:#7FC3E0;}
+
+  nav.sitenav{
+    display:flex;
+    gap:16px;
+    margin-top:16px;
+    flex-wrap:wrap;
+    position:relative;
+    z-index:1;
+  }
+  nav.sitenav a{
+    color:rgba(247,245,239,0.85);
+    font-size:0.85rem;
+    text-decoration:none;
+  }
+  nav.sitenav a.active{
+    color:#fff;
+    font-weight:700;
+    border-bottom:2px solid #fff;
+    padding-bottom:2px;
+  }
+
+  .namebar{
+    position:sticky;
+    top:0;
+    z-index:20;
+    background:var(--card);
+    border-bottom:1px solid var(--line);
+    padding:12px 20px;
+    display:flex;
+    gap:10px;
+    align-items:center;
+    box-shadow:0 2px 10px rgba(27,67,50,0.06);
+  }
+  .namebar input{
+    flex:1;
+    min-width:0;
+    padding:11px 14px;
+    border-radius:10px;
+    border:1.5px solid var(--line);
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    background:var(--shuttle);
+    color:var(--ink);
+  }
+  .namebar input:focus{
+    outline:none;
+    border-color:var(--court-light);
+    background:#fff;
+  }
+  .namebar .status{
+    font-size:12px;
+    color:var(--ink-soft);
+    white-space:nowrap;
+  }
+
+  main{max-width:720px;margin:0 auto;padding:22px 16px 0;}
+
+  .setup-banner{
+    max-width:720px;
+    margin:20px auto 0;
+    padding:14px 18px;
+    background:#FBE2D8;
+    border:1px solid var(--coral);
+    border-radius:12px;
+    color:#7A2E13;
+    font-size:13.5px;
+    line-height:1.5;
+  }
+  .setup-banner code{
+    background:rgba(0,0,0,0.06);
+    padding:1px 5px;
+    border-radius:4px;
+  }
+
+  .season{
+    font-family:'Space Grotesk',sans-serif;
+    font-weight:600;
+    font-size:13px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--court-light);
+    margin:30px 4px 12px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .season::after{
+    content:"";
+    flex:1;
+    height:1px;
+    background:var(--line);
+  }
+
+  .row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    margin-bottom:10px;
+  }
+  @media (max-width:480px){
+    .row{grid-template-columns:1fr;}
+  }
+  .row.covered{
+    border:1px solid var(--court-light);
+    border-radius:16px;
+    padding:10px 10px 2px;
+    margin:0 0 10px;
+  }
+  .covered-badge{
+    grid-column:1 / -1;
+    display:flex;
+    align-items:center;
+    gap:6px;
+    font-size:11.5px;
+    font-weight:700;
+    letter-spacing:0.03em;
+    text-transform:uppercase;
+    color:var(--court-light);
+    padding:0 2px 8px;
+  }
+  .covered-badge::before{
+    content:"✓";
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    background:var(--court-light);
+    color:var(--shuttle);
+    font-size:10px;
+  }
+
+  .slot{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:13px 14px;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+  }
+  .slot.empty-slot{
+    background:transparent;
+    border:1px dashed var(--line);
+    align-items:center;
+    justify-content:center;
+    color:var(--ink-soft);
+    font-size:12.5px;
+  }
+  .slot.past{
+    background:var(--past);
+    opacity:0.65;
+  }
+  .slot-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:8px;
+  }
+  .slot-day{
+    font-size:11.5px;
+    font-weight:700;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    padding:3px 8px;
+    border-radius:20px;
+  }
+  .slot.tue .slot-day{background:var(--coral-soft);color:var(--coral);}
+  .slot.thu .slot-day{background:var(--thu-soft);color:var(--thu);}
+  .slot-date{
+    font-family:'Space Grotesk',sans-serif;
+    font-weight:600;
+    font-size:15px;
+  }
+  .slot-time{
+    font-size:12px;
+    color:var(--ink-soft);
+  }
+  .names{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+    min-height:4px;
+  }
+  .name-pill{
+    display:inline-flex;
+    align-items:center;
+    gap:5px;
+    background:var(--shuttle);
+    border:1px solid var(--line);
+    border-radius:20px;
+    padding:4px 6px 4px 10px;
+    font-size:12.5px;
+    font-weight:500;
+  }
+  .name-pill .pill-time{
+    font-weight:400;
+    color:var(--ink-soft);
+    font-size:10.5px;
+    margin-left:2px;
+  }
+  .name-pill button{
+    border:none;
+    background:none;
+    color:var(--ink-soft);
+    cursor:pointer;
+    font-size:14px;
+    line-height:1;
+    padding:2px 4px;
+    border-radius:50%;
+  }
+  .name-pill button:hover{background:var(--coral-soft);color:var(--coral);}
+  .signup-btn{
+    margin-top:2px;
+    align-self:flex-start;
+    border:none;
+    background:var(--court);
+    color:var(--shuttle);
+    font-family:'Inter',sans-serif;
+    font-weight:600;
+    font-size:12.5px;
+    padding:7px 13px;
+    border-radius:20px;
+    cursor:pointer;
+    transition:transform .1s ease, background .15s ease;
+  }
+  .signup-btn:hover{background:var(--court-light);}
+  .signup-btn:active{transform:scale(0.96);}
+  .signup-btn:disabled{
+    background:var(--line);
+    color:var(--ink-soft);
+    cursor:not-allowed;
+  }
+  .slot.past .signup-btn{display:none;}
+  .past-label{
+    font-size:11.5px;
+    color:var(--ink-soft);
+    font-style:italic;
+  }
+
+  footer{
+    max-width:720px;
+    margin:34px auto 0;
+    padding:0 20px;
+    font-size:12px;
+    color:var(--ink-soft);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+    flex-wrap:wrap;
+  }
+  .refresh-btn{
+    border:1px solid var(--line);
+    background:var(--card);
+    color:var(--ink);
+    font-size:12px;
+    font-weight:600;
+    padding:7px 12px;
+    border-radius:20px;
+    cursor:pointer;
+  }
+  .refresh-btn:hover{border-color:var(--court-light);}
+
+  @media (prefers-reduced-motion:reduce){
+    *{transition:none!important;}
+  }
+</style>
+<script src="/gsb-nav.js" defer></script>
+</head>
+<body data-gsb-page="ungdom">
+
+<div id="gsb-nav-root"></div>
+
+
+<header>
+  <svg class="shuttle-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M50 95 L40 55 L20 15 L45 30 L50 5 L55 30 L80 15 L60 55 Z" stroke="#F7F5F0" stroke-width="2.5" stroke-linejoin="round"/>
+    <circle cx="50" cy="88" r="6" fill="#F7F5F0"/>
+  </svg>
+  <h1>Senior på ungdomstræning</h1>
+  <p>Skriv dit navn og tryk dig på de datoer, hvor du kommer og giver en hånd med sparring. Sæson 26/27.</p>
+  <div class="legend">
+    <span><span class="dot tue"></span>Tirsdag · Super Ung Teen · 17.30–18.30</span>
+    <span><span class="dot thu"></span>Torsdag · Plus/Super Ung Teen · 18.30–19.15</span>
+  </div>
+</header>
+
+<div class="namebar">
+  <input id="nameInput" type="text" placeholder="Dit navn (skriv én gang)" autocomplete="off">
+  <span class="status" id="nameStatus"></span>
+</div>
+
+<div id="setupBanner" style="display:none;" class="setup-banner">
+  Denne side er ikke koblet til et Google Sheet endnu. Sæt <code>SCRIPT_URL</code> i koden til din Apps Script-URL — se opsætningsguiden.
+</div>
+
+<main id="main">
+  <p style="text-align:center;color:var(--ink-soft);font-size:13px;padding:30px 0;">Henter datoer …</p>
+</main>
+
+<footer>
+  <span id="lastUpdated"></span>
+  <button class="refresh-btn" id="refreshBtn">Opdater tilmeldinger</button>
+</footer>
+
+<script>
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxCyM4u9iwJqPaEIzm9Qmk-UKSAxxwoU7yWgZbpZZUhL02jblL9UKsuwGYurIxdqV2L/exec';
+
+const SCHEDULE = [
+  {week:35, tue:'2026-08-25', thu:'2026-08-27'},
+  {week:36, tue:'2026-09-01', thu:'2026-09-03'},
+  {week:37, tue:'2026-09-08', thu:'2026-09-10'},
+  {week:38, tue:'2026-09-15', thu:'2026-09-17'},
+  {week:39, tue:'2026-09-22', thu:'2026-09-24'},
+  {week:40, tue:'2026-09-29', thu:'2026-10-01'},
+  {week:41, tue:'2026-10-06', thu:'2026-10-08'},
+  {week:43, tue:'2026-10-20', thu:'2026-10-22'},
+  {week:44, tue:'2026-10-27', thu:'2026-10-29'},
+  {week:45, tue:'2026-11-03', thu:'2026-11-05'},
+  {week:46, tue:'2026-11-10', thu:'2026-11-12'},
+  {week:47, tue:'2026-11-17', thu:'2026-11-19'},
+  {week:48, tue:'2026-11-24', thu:'2026-11-26'},
+  {week:49, tue:'2026-12-01', thu:'2026-12-03'},
+  {week:50, tue:'2026-12-08', thu:'2026-12-10'},
+  {week:51, tue:'2026-12-15', thu:'2026-12-17'},
+  {week:2,  tue:'2027-01-05', thu:'2027-01-07'},
+  {week:3,  tue:'2027-01-12', thu:'2027-01-14'},
+  {week:4,  tue:'2027-01-19', thu:'2027-01-21'},
+  {week:5,  tue:'2027-01-26', thu:'2027-01-28'},
+  {week:6,  tue:'2027-02-02', thu:'2027-02-04'},
+  {week:8,  tue:'2027-02-16', thu:'2027-02-18'},
+  {week:9,  tue:'2027-02-23', thu:'2027-02-25'},
+  {week:10, tue:'2027-03-02', thu:'2027-03-04'},
+  {week:11, tue:'2027-03-09', thu:'2027-03-11'},
+  {week:12, tue:'2027-03-16', thu:'2027-03-18'},
+  {week:14, tue:'2027-03-30', thu:'2027-04-01'},
+  {week:15, tue:'2027-04-06', thu:'2027-04-08'},
+  {week:16, tue:'2027-04-13', thu:'2027-04-15'},
+  {week:17, tue:'2027-04-20', thu:'2027-04-22'},
+  {week:18, tue:'2027-04-27', thu:'2027-04-29'},
+  {week:19, tue:'2027-05-04', thu:null},
+  {week:20, tue:'2027-05-11', thu:'2027-05-13'},
+];
+
+const MONTH_NAMES_DA = ['Januar','Februar','Marts','April','Maj','Juni','Juli','August','September','Oktober','November','December'];
+
+function monthLabelForRow(row){
+  const refDate = row.tue || row.thu;
+  const d = new Date(refDate + 'T00:00:00');
+  return `${MONTH_NAMES_DA[d.getMonth()]} ${d.getFullYear()}`;
+}
+
+let signups = {};
+let myName = '';
+let configured = SCRIPT_URL.indexOf('YOUR_APPS_SCRIPT_URL_HERE') === -1;
+
+const nameInput = document.getElementById('nameInput');
+const nameStatus = document.getElementById('nameStatus');
+const mainEl = document.getElementById('main');
+const lastUpdatedEl = document.getElementById('lastUpdated');
+const refreshBtn = document.getElementById('refreshBtn');
+const setupBanner = document.getElementById('setupBanner');
+
+nameInput.addEventListener('input', () => {
+  myName = nameInput.value.trim();
+  nameStatus.textContent = myName ? '' : '↑ udfyld for at tilmelde dig';
+  render();
+});
+
+refreshBtn.addEventListener('click', loadSignups);
+
+function fmtDate(iso){
+  const d = new Date(iso + 'T00:00:00');
+  return d.toLocaleDateString('da-DK', {day:'numeric', month:'short'});
+}
+
+function fmtSignupTime(ts){
+  const d = new Date(ts);
+  const datePart = d.toLocaleDateString('da-DK', {day:'numeric', month:'numeric'});
+  const timePart = d.toLocaleTimeString('da-DK', {hour:'2-digit', minute:'2-digit'});
+  return `· ${datePart} ${timePart}`;
+}
+
+function isPast(iso){
+  const d = new Date(iso + 'T23:59:59');
+  return d.getTime() < Date.now();
+}
+
+async function loadSignups(){
+  if (!configured){
+    setupBanner.style.display = 'block';
+    mainEl.innerHTML = '';
+    render();
+    return;
+  }
+  refreshBtn.textContent = 'Henter …';
+  try {
+    const res = await fetch(SCRIPT_URL);
+    const rows = await res.json();
+    signups = {};
+    rows.forEach(r => {
+      if (!signups[r.date]) signups[r.date] = [];
+      signups[r.date].push({id: r.id, name: r.name, ts: r.ts});
+    });
+    lastUpdatedEl.textContent = 'Opdateret ' + new Date().toLocaleTimeString('da-DK', {hour:'2-digit', minute:'2-digit'});
+  } catch (e) {
+    lastUpdatedEl.textContent = 'Kunne ikke hente — tjek forbindelsen';
+  }
+  refreshBtn.textContent = 'Opdater tilmeldinger';
+  render();
+}
+
+async function addSignup(dateIso, dayType){
+  if (!myName){
+    nameInput.focus();
+    nameStatus.textContent = '↑ skriv dit navn først';
+    return;
+  }
+  if (!signups[dateIso]) signups[dateIso] = [];
+  const already = signups[dateIso].some(p => p.name.toLowerCase() === myName.toLowerCase());
+  if (already) return;
+
+  try {
+    const res = await fetch(SCRIPT_URL, {
+      method: 'POST',
+      headers: {'Content-Type': 'text/plain;charset=utf-8'},
+      body: JSON.stringify({action:'add', date: dateIso, dayType: dayType, name: myName})
+    });
+    await res.json();
+  } catch (e) {
+    alert('Kunne ikke gemme lige nu — prøv igen.');
+  }
+  await loadSignups();
+}
+
+function slotHTML(dateIso, dayType, timeLabel){
+  if (!dateIso){
+    return `<div class="slot empty-slot">Ingen ${dayType==='tue'?'tirsdags':'torsdags'}træning</div>`;
+  }
+  const past = isPast(dateIso);
+  const names = signups[dateIso] || [];
+  const dayLabel = dayType === 'tue' ? 'Tirsdag' : 'Torsdag';
+  const pills = names.map(p => `
+    <span class="name-pill">${escapeHtml(p.name)}<span class="pill-time">${p.ts ? fmtSignupTime(p.ts) : ''}</span></span>`).join('');
+  const alreadyIn = myName && names.some(p => p.name.toLowerCase() === myName.toLowerCase());
+  const btn = past
+    ? `<span class="past-label">Overstået</span>`
+    : `<button class="signup-btn" ${alreadyIn ? 'disabled' : ''} onclick="addSignup('${dateIso}','${dayType}')">${alreadyIn ? 'Du er med ✓' : '+ Tilmeld mig'}</button>`;
+  return `
+    <div class="slot ${dayType} ${past ? 'past' : ''}">
+      <div class="slot-top">
+        <span class="slot-day">${dayLabel}</span>
+        <span class="slot-date">${fmtDate(dateIso)}</span>
+      </div>
+      <span class="slot-time">${timeLabel}</span>
+      <div class="names">${pills}</div>
+      ${btn}
+    </div>`;
+}
+
+function escapeHtml(str){
+  return str.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function render(){
+  if (!configured){
+    setupBanner.style.display = 'block';
+  }
+  let html = '';
+  let currentMonth = null;
+  SCHEDULE.forEach(row => {
+    const monthLabel = monthLabelForRow(row);
+    if (monthLabel !== currentMonth){
+      currentMonth = monthLabel;
+      html += `<div class="season">${currentMonth}</div>`;
+    }
+    const tueCount = row.tue && signups[row.tue] ? signups[row.tue].length : 0;
+    const thuCount = row.thu && signups[row.thu] ? signups[row.thu].length : 0;
+    const covered = (tueCount + thuCount) > 0;
+    html += `<div class="row ${covered ? 'covered' : ''}">
+      ${covered ? '<div class="covered-badge">Uge dækket</div>' : ''}
+      ${slotHTML(row.tue, 'tue', '17.30–18.30')}
+      ${slotHTML(row.thu, 'thu', '18.30–19.15')}
+    </div>`;
+  });
+  mainEl.innerHTML = html;
+}
+
+loadSignups();
+setInterval(loadSignups, 30000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GSB Resultatimport</title>
+<style>
+  :root {
+    --court-green: #1f5c3f;
+    --court-green-dark: #123a28;
+    --line-white: #f7f5ef;
+    --ink: #1c2420;
+    --muted: #5c6b62;
+    --border: #d7ddd4;
+    --error: #b3432f;
+    --ok: #1f5c3f;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--line-white); color: var(--ink); line-height: 1.45; }
+  header { background: var(--court-green); color: var(--line-white); padding: 28px 24px 24px; position: relative; overflow: hidden; }
+  header::after { content: ""; position: absolute; right: -40px; top: -40px; width: 180px; height: 180px; border: 3px solid rgba(255,255,255,0.12); border-radius: 50%; }
+  header h1 { margin: 0 0 4px; font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em; }
+  header p { margin: 0; color: rgba(247,245,239,0.75); font-size: 0.92rem; max-width: 640px; }
+  main { max-width: 980px; margin: 0 auto; padding: 24px 20px 60px; }
+  .card { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 20px; }
+  .card h2 { margin: 0 0 4px; font-size: 1.05rem; display: flex; align-items: center; gap: 8px; }
+  .card h2 .num { background: var(--court-green); color: #fff; width: 22px; height: 22px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.72rem; font-weight: 700; }
+  .card .desc { margin: 0 0 16px; color: var(--muted); font-size: 0.86rem; }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: flex-end; }
+  .field { display: flex; flex-direction: column; gap: 4px; }
+  .field.grow { flex: 1; min-width: 220px; }
+  .field label { font-size: 0.74rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.03em; }
+  .field input { padding: 8px 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.9rem; font-family: inherit; }
+  .field input:focus { outline: 2px solid var(--court-green); outline-offset: 1px; }
+  .field .hint { font-size: 0.72rem; color: var(--muted); }
+  button { font-family: inherit; font-size: 0.88rem; font-weight: 600; padding: 9px 16px; border-radius: 6px; border: none; cursor: pointer; }
+  button:active { transform: scale(0.98); }
+  button:disabled { opacity: 0.5; cursor: not-allowed; }
+  .btn-primary { background: var(--court-green); color: #fff; }
+  .btn-primary:hover:not(:disabled) { background: var(--court-green-dark); }
+  .btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+  .status { margin-top: 12px; font-size: 0.85rem; padding: 8px 12px; border-radius: 6px; display: none; white-space: pre-wrap; }
+  .status.show { display: block; }
+  .status.ok { background: #eaf3ee; color: var(--ok); }
+  .status.error { background: #fbeae7; color: var(--error); }
+  .status.info { background: #eef1f6; color: #3a5570; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+  th, td { text-align: left; padding: 7px 9px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  th { background: #f2f1eb; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.03em; color: var(--muted); }
+  .winner-tag { display: inline-block; padding: 1px 8px; border-radius: 20px; font-size: 0.72rem; font-weight: 700; }
+  .winner-tag.home { background: #eaf3ee; color: var(--court-green); }
+  .winner-tag.away { background: #f6ece0; color: #a05a1e; }
+  .table-wrap { max-height: 420px; overflow: auto; border: 1px solid var(--border); border-radius: 8px; margin-top: 12px; }
+  .empty-state { text-align: center; padding: 30px 20px; color: var(--muted); font-size: 0.86rem; }
+  footer { text-align: center; color: var(--muted); font-size: 0.78rem; padding: 20px; }
+  code { background: #f2f1eb; padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🏸 GSB Resultatimport</h1>
+  <p>Hent holdkampresultater fra Nembadminton og skriv dem direkte i Google Sheets — ét klik, ingen copy-paste.</p>
+  <nav style="display:flex; gap:16px; margin-top:14px; flex-wrap:wrap; position:relative; z-index:1;">
+    <a href="/index.html" style="color:#fff; font-size:0.85rem; text-decoration:none; font-weight:700; border-bottom:2px solid #fff; padding-bottom:2px;">📥 Data-indskrivning</a>
+    <a href="/tilmelding.html" style="color:rgba(247,245,239,0.85); font-size:0.85rem; text-decoration:none;">✍️ Tilmelding</a>
+    <a href="/analyse.html" style="color:rgba(247,245,239,0.85); font-size:0.85rem; text-decoration:none;">📊 Statistik</a>
+    <a href="/stilling.html" style="color:rgba(247,245,239,0.85); font-size:0.85rem; text-decoration:none;">🏆 Historisk stilling</a>
+    <a href="/senior-ungdom-tilmelding.html" style="color:rgba(247,245,239,0.85); font-size:0.85rem; text-decoration:none;">🏸 Ungdomssparring</a>
+  </nav>
+</header>
+
+<main>
+  <div class="card">
+    <h2><span class="num">1</span> Runde-opsætning</h2>
+    <p class="desc">Angiv jeres Google Sheet, runde-nummer og match-ID'erne for runden (kommasepareret — typisk 4, ét pr. GSB-hold).</p>
+    <div class="row">
+      <div class="field grow">
+        <label for="f-sheet">Google Sheet-ID</label>
+        <input type="text" id="f-sheet" placeholder="1AbC...xyz (fra arkets URL)">
+        <span class="hint">Findes i URL'en: docs.google.com/spreadsheets/d/<strong>DETTE-STYKKE</strong>/edit</span>
+      </div>
+      <div class="field">
+        <label for="f-password">Adgangskode</label>
+        <input type="password" id="f-password" placeholder="Kun for holdledere" style="width:150px">
+      </div>
+      <div class="field">
+        <label for="f-runde">Runde</label>
+        <input type="number" id="f-runde" min="1" value="1" style="width:80px">
+      </div>
+      <div class="field">
+        <label for="f-season">Sæson</label>
+        <input type="number" id="f-season" value="2025" style="width:90px">
+      </div>
+    </div>
+    <div class="row" style="margin-top:12px;">
+      <div class="field grow">
+        <label for="f-matchids">Match-ID'er (kommasepareret)</label>
+        <input type="text" id="f-matchids" placeholder="486829, 486830, 486831, 486832">
+      </div>
+      <div class="field">
+        <label for="f-hint">Klub-navn</label>
+        <input type="text" id="f-hint" value="Gladsaxe Søborg" style="width:180px">
+      </div>
+    </div>
+    <div class="row" style="margin-top:16px;">
+      <button class="btn-primary" id="run-btn" onclick="kørImport()">Hent og skriv til arket</button>
+      <button class="btn-ghost" onclick="kunHent()">Hent kun (vis her, skriv ikke)</button>
+    </div>
+    <div id="status" class="status"></div>
+  </div>
+
+  <div class="card">
+    <h2 style="margin:0 0 4px;"><span class="num">2</span> Sidst hentede rækker</h2>
+    <p class="desc">Til reference — vises uanset om de blev skrevet til arket eller kun forhåndsvist.</p>
+    <div class="table-wrap">
+      <table id="result-table">
+        <thead>
+          <tr><th>Runde</th><th>Hold</th><th>Kategori</th><th>Hjemme</th><th>Ude</th><th>Sæt 1</th><th>Sæt 2</th><th>Sæt 3</th><th>Vinder</th></tr>
+        </thead>
+        <tbody id="result-body"></tbody>
+      </table>
+      <div id="empty-state" class="empty-state">Ingen rækker endnu.</div>
+    </div>
+  </div>
+</main>
+
+<footer>Bygget til GSB Dream Team · data hentes fra Nembadmintons offentlige API (uofficielt, kan ændre sig uden varsel)</footer>
+
+<script>
+function showStatus(msg, type) {
+  const el = document.getElementById('status');
+  el.textContent = msg;
+  el.className = 'status show ' + type;
+}
+
+function renderRows(rows) {
+  const body = document.getElementById('result-body');
+  const empty = document.getElementById('empty-state');
+  body.innerHTML = '';
+  if (!rows || rows.length === 0) { empty.style.display = 'block'; return; }
+  empty.style.display = 'none';
+  rows.forEach(r => {
+    const [runde, hold, kategori, hjemme, ude, s1, s2, s3, vinder] = r;
+    const tagClass = vinder === 'Hjemme' ? 'home' : (vinder === 'Ude' ? 'away' : '');
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${runde}</td><td>${hold}</td><td>${kategori}</td><td>${hjemme}</td><td>${ude}</td><td>${s1}</td><td>${s2}</td><td>${s3}</td><td><span class="winner-tag ${tagClass}">${vinder}</span></td>`;
+    body.appendChild(tr);
+  });
+}
+
+function hentInput() {
+  const sheet = document.getElementById('f-sheet').value.trim();
+  const password = document.getElementById('f-password').value;
+  const runde = document.getElementById('f-runde').value;
+  const season = document.getElementById('f-season').value;
+  const hint = document.getElementById('f-hint').value;
+  const matchIds = document.getElementById('f-matchids').value
+    .split(',').map(s => s.trim()).filter(Boolean).map(Number);
+  return { sheet, password, runde, season, hint, matchIds };
+}
+
+async function kald(skrivTilArk) {
+  const { sheet, password, runde, season, hint, matchIds } = hentInput();
+  if (matchIds.length === 0) { showStatus('Udfyld mindst ét match-ID.', 'error'); return; }
+  if (skrivTilArk && !sheet) { showStatus('Udfyld Google Sheet-ID, eller brug "Hent kun" for bare at forhåndsvise.', 'error'); return; }
+
+  const btn = document.getElementById('run-btn');
+  btn.disabled = true;
+  showStatus(`Henter ${matchIds.length} kamp(e)...`, 'info');
+
+  try {
+    const res = await fetch('/.netlify/functions/hent-resultater', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        runde: Number(runde), season: Number(season), hint, matchIds, password,
+        spreadsheetId: skrivTilArk ? sheet : null,
+      }),
+    });
+    const json = await res.json();
+
+    if (!res.ok) {
+      showStatus('Fejl: ' + (json.error || 'Ukendt fejl') + (json.rows ? `\n(${json.rows.length} rækker blev dog hentet, se tabel)` : ''), 'error');
+      if (json.rows) renderRows(json.rows);
+      return;
+    }
+
+    renderRows(json.rows);
+    let msg = `${json.rowsAdded} rækker hentet fra ${matchIds.length - json.matchErrors.length}/${matchIds.length} kampe.`;
+    if (skrivTilArk && json.sheetsResult) msg += ` Skrevet til arket (${json.sheetsResult.updatedRange || 'OK'}).`;
+    if (!skrivTilArk) msg += ' (Kun forhåndsvist — intet skrevet til arket.)';
+    if (json.matchErrors && json.matchErrors.length) {
+      msg += '\nFejl på: ' + json.matchErrors.map(e => `${e.matchId} (${e.message})`).join(', ');
+    }
+    showStatus(msg, json.matchErrors && json.matchErrors.length ? 'error' : 'ok');
+  } catch (err) {
+    showStatus('Kunne ikke kontakte funktionen: ' + err.message, 'error');
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+function kørImport() { kald(true); }
+function kunHent() { kald(false); }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GSB Kampsystem – Rundefordeling</title>
+<style>
+  :root {
+    --kamp-accent: #2f5fa8; --kamp-accent-dark: #1e3d70; --line-white: #f7f5ef;
+    --ink: #1c2420; --muted: #5c6b62; --border: #d7ddd4; --error: #b3432f; --ok: #1f5c3f;
+    --shuttle: #e8a33d;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--line-white); color: var(--ink); line-height: 1.45; }
+  header { background: var(--kamp-accent); color: var(--line-white); padding: 28px 24px 22px; position: relative; overflow: hidden; }
+  header::after { content: ""; position: absolute; right: -40px; top: -40px; width: 180px; height: 180px; border: 3px solid rgba(255,255,255,0.12); border-radius: 50%; }
+  header h1 { margin: 0 0 4px; font-size: 1.4rem; font-weight: 700; }
+  header p { margin: 0; color: rgba(247,245,239,0.8); font-size: 0.86rem; max-width: 640px; }
+  main { max-width: 860px; margin: 0 auto; padding: 20px 20px 60px; }
+  .card { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 20px 22px; margin-bottom: 18px; }
+  .card h2 { margin: 0 0 4px; font-size: 1rem; color: var(--kamp-accent-dark); }
+  .card .card-sub { margin: 0 0 14px; font-size: 0.8rem; color: var(--muted); }
+  .field-row { display: flex; gap: 16px; flex-wrap: wrap; align-items: flex-end; margin-bottom: 14px; }
+  .field { display: flex; flex-direction: column; gap: 4px; }
+  .field label { font-size: 0.78rem; font-weight: 600; color: var(--muted); }
+  .field input[type=number] { width: 90px; padding: 8px 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.92rem; }
+  .field input[type=text] { padding: 8px 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.9rem; width: 220px; }
+  .field select { padding: 8px 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.88rem; min-width: 180px; }
+  .radio-group { display: flex; gap: 14px; flex-wrap: wrap; }
+  .gruppe-checkboxes { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; min-height: 34px; }
+  .gruppe-checkboxes label { display: flex; align-items: center; gap: 4px; font-size: 0.85rem; white-space: nowrap; }
+  .radio-opt { display: flex; align-items: center; gap: 6px; font-size: 0.85rem; }
+  .roster-filter { display: flex; gap: 10px; align-items: flex-end; margin-bottom: 10px; flex-wrap: wrap; }
+  .soeg-liste { display: flex; flex-direction: column; gap: 4px; max-height: 220px; overflow-y: auto; }
+  .soeg-row { display: flex; justify-content: space-between; align-items: center; background: #f6f5ee; border-radius: 6px; padding: 6px 10px; font-size: 0.85rem; }
+  .soeg-row .rating-cell { font-size: 0.78rem; }
+  .soeg-empty { font-size: 0.8rem; color: var(--muted); }
+  .roster-group-title { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); margin: 14px 0 6px; }
+  .roster-group-title:first-of-type { margin-top: 0; }
+  table.roster { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  table.roster th { text-align: left; font-size: 0.72rem; text-transform: uppercase; color: var(--muted); padding: 4px 6px; border-bottom: 1px solid var(--border); }
+  table.roster td { padding: 5px 6px; border-bottom: 1px solid #f0efe9; vertical-align: middle; }
+  table.roster tr.hidden-row { display: none; }
+  .rating-cell { color: var(--muted); font-variant-numeric: tabular-nums; }
+  .mode-checks { display: flex; gap: 8px; font-size: 0.78rem; flex-wrap: wrap; }
+  .mode-checks label { display: flex; align-items: center; gap: 3px; }
+  .mode-checks label.no-rating-label { color: var(--shuttle); }
+  button { font-family: inherit; font-size: 0.9rem; font-weight: 700; padding: 10px 18px; border-radius: 6px; border: none; cursor: pointer; }
+  button:disabled { opacity: 0.5; cursor: not-allowed; }
+  .btn-primary { background: var(--kamp-accent); color: #fff; }
+  .btn-primary:hover:not(:disabled) { background: var(--kamp-accent-dark); }
+  .btn-secondary { background: #eef2f7; color: var(--kamp-accent-dark); }
+  .btn-secondary:hover { background: #e2e9f2; }
+  .btn-small { padding: 5px 10px; font-size: 0.78rem; }
+  .lock-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 10px; }
+  .lock-row select { padding: 6px 8px; border-radius: 6px; border: 1px solid var(--border); font-size: 0.82rem; min-width: auto; }
+  .locked-list { display: flex; flex-direction: column; gap: 6px; margin-bottom: 6px; }
+  .locked-item { display: flex; justify-content: space-between; align-items: center; background: #f6f5ee; border-radius: 6px; padding: 6px 10px; font-size: 0.82rem; }
+  .locked-item .x { cursor: pointer; color: var(--error); font-weight: 700; }
+  .status { margin-top: 12px; font-size: 0.85rem; padding: 9px 12px; border-radius: 6px; display: none; }
+  .status.show { display: block; }
+  .status.error { background: #fbeae7; color: var(--error); }
+  .status.ok { background: #eaf3ee; color: var(--ok); }
+  .status.info { background: #eef2f7; color: var(--kamp-accent-dark); }
+  .match .no-rating-note { font-size: 0.75rem; color: var(--shuttle); margin: 4px 0 0; }
+  .match .udskift-note { font-size: 0.75rem; color: var(--kamp-accent-dark); margin: 4px 0 0; font-weight: 600; }
+  .kamplog-row .no-rating { color: var(--shuttle); }
+  .siddende-over-actions { display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap; }
+  .match-list { display: flex; flex-direction: column; gap: 10px; }
+  .match { border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+  .match.done { opacity: 0.6; }
+  .match .match-head { display: flex; justify-content: space-between; align-items: center; font-size: 0.75rem; color: var(--muted); margin-bottom: 6px; }
+  .match .sides { display: flex; align-items: center; gap: 10px; font-size: 0.9rem; flex-wrap: wrap; }
+  .match .side { flex: 1; min-width: 140px; }
+  .match .side strong { display: block; }
+  .match .side .pct { font-size: 0.75rem; color: var(--muted); }
+  .match .vs { font-weight: 700; color: var(--kamp-accent); }
+  .match .win-btns { display: flex; gap: 6px; margin-top: 8px; }
+  .match .win-btns button { flex: 1; }
+  .siddende-over { font-size: 0.85rem; color: var(--muted); }
+  .badge-locked { background: var(--shuttle); color: #2b1c05; font-size: 0.68rem; font-weight: 700; padding: 2px 7px; border-radius: 20px; margin-left: 6px; }
+  .h2h-result { margin-top: 14px; }
+  .h2h-score { font-size: 1.3rem; font-weight: 800; color: var(--kamp-accent-dark); margin-bottom: 10px; }
+  .h2h-row { display: flex; justify-content: space-between; font-size: 0.82rem; padding: 6px 0; border-bottom: 1px solid #f0efe9; }
+  .h2h-row .win { font-weight: 700; color: var(--ok); }
+  .kamplog { max-height: 220px; overflow-y: auto; font-size: 0.8rem; }
+  .kamplog-row { display: flex; justify-content: space-between; padding: 5px 0; border-bottom: 1px solid #f0efe9; gap: 10px; }
+  .kamplog-row .muted { color: var(--muted); }
+</style>
+<script src="/gsb-nav.js" defer></script>
+</head>
+<body data-gsb-page="kampsystem">
+
+<div id="gsb-nav-root"></div>
+
+
+<header>
+  <h1>⚡ Kampsystem – Rundefordeling</h1>
+  <p>Prototype til automatisk rundefordeling, runde for runde, ud fra spillernes rating. Senior og
+  ungdomstruppen SuperUng Teen, plus gæster og manuelt oprettede spillere. Vælg en gruppe nedenfor
+  for at køre runder for kun ét hold ad gangen. Hver spiller vælger selv, nede i punkt 1, hvilke(n)
+  kategori(er) — single/double/mix, 1, 2 eller alle 3 — de er med til at spille denne runde; ved
+  rundegenerering placeres hver spiller i højst én kamp. Ratings for langt de fleste rigtige
+  spillere er nu ægte Badminton Danmark-point (hentet/opdateret 2026-09-02). Et lille antal
+  spillere mangler stadig en eller flere ratings hos Badminton Danmark (fx ingen registreret
+  single-kamp) — de vises som "–" i tabellen nederst og med en anden farve ved den manglende
+  kategori i punkt 1, og kan sagtens sættes til at spille den manglende disciplin (fx en helt ny
+  spiller), men kampen giver ingen ratingændring før de har en rigtig BD-rating i den kategori.
+  Ratings gemmes endnu ikke permanent — nulstilles ved genindlæsning.</p>
+</header>
+
+<main>
+  <div class="card">
+    <h2>0. Tilføj en spiller fra klubben</h2>
+    <p class="card-sub">Søg blandt alle GSB's medlemmer (hentet fra Nembadminton) og træk en spiller
+    ind der ikke allerede er i en af de faste grupper nedenfor — fx en spiller fra et andet hold,
+    en gæst, eller en veteran. Vælg hvilken gruppe de skal tilføjes til nedenfor — "Veteran" findes
+    bevidst ikke som en færdig, forudfyldt gruppe (kun Senior og SuperUng Teen har en fast trup),
+    men kan bygges op efterhånden ved at tilføje de veteraner der er brug for, herfra. De får deres
+    rigtige BD-rating med det samme hvis den findes (ellers kan de stadig spille, jf. reglen om
+    manglende rating ovenfor).</p>
+    <div class="roster-filter">
+      <div class="field" style="flex:1;">
+        <label for="soeg-spiller-input">Søg navn</label>
+        <input type="text" id="soeg-spiller-input" placeholder="Skriv mindst 2 bogstaver..." style="width:100%;">
+      </div>
+      <div class="field">
+        <label for="tilfoej-gruppe">Tilføj til gruppe</label>
+        <select id="tilfoej-gruppe"></select>
+      </div>
+    </div>
+    <div id="soeg-resultater"></div>
+
+    <p class="card-sub" style="margin:16px 0 8px;">Kan spilleren ikke findes ovenfor? Opret en
+    midlertidig spiller uden rating i den valgte gruppe ovenfor — de kan spille kampene med det
+    samme (uden ratingændring, jf. reglen ovenfor), og senere "indplaceres" med rigtige BD-point
+    når de findes i klublisten.</p>
+    <div class="roster-filter">
+      <div class="field" style="flex:1;">
+        <label for="ny-spiller-navn">Navn på ny spiller</label>
+        <input type="text" id="ny-spiller-navn" placeholder="Fornavn Efternavn" style="width:100%;">
+      </div>
+      <button class="btn-secondary btn-small" id="opret-spiller-btn" type="button">Opret spiller (i valgt gruppe ovenfor)</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>1. Hvem er til stede, og hvilke kategorier spiller de?</h2>
+    <p class="card-sub">Sæt flueben ved de fremmødte, og vælg for hver spiller hvilke kategorier
+    (single/double/mix) de er med til at spille denne runde — 1, 2 eller alle 3 kan vælges. Ved
+    rundegenerering placeres hver spiller i højst én kamp, blandt de kategorier de har valgt.</p>
+    <div class="roster-filter">
+      <div class="field">
+        <label>Grupper med i denne runde</label>
+        <div class="gruppe-checkboxes" id="gruppe-checkboxes"></div>
+      </div>
+      <div class="field">
+        <label for="filter-input">Filtrér liste</label>
+        <input type="text" id="filter-input" placeholder="Søg navn...">
+      </div>
+      <button class="btn-secondary btn-small" onclick="vaelgAlleTilstede(true)">Vælg alle til stede</button>
+      <button class="btn-secondary btn-small" onclick="vaelgAlleTilstede(false)">Fjern alle</button>
+    </div>
+    <p class="card-sub" style="margin:-4px 0 10px;">Fravælg de grupper der ikke skal med — fx kun
+    "SuperUng Teen" + "Ungsenior" til en ungdomstræning, eller kun "Senior" + "Ungsenior" til en
+    seniortræning. "Vælg alle til stede"/"Fjern alle" og selve rundegenereringen bruger kun de
+    grupper der er markeret her; resten blandes ikke ind, selvom de tidligere er sat til stede.</p>
+    <div id="roster-container"></div>
+  </div>
+
+  <div class="card">
+    <h2>2. Opsætning for denne runde</h2>
+    <div class="field-row">
+      <div class="field">
+        <label for="bane-antal">Ledige baner</label>
+        <input type="number" id="bane-antal" value="4" min="0" max="10">
+      </div>
+      <div class="field">
+        <label>Hold-filosofi (double + mix)</label>
+        <div class="radio-group">
+          <label class="radio-opt"><input type="radio" name="filosofi" value="ens" checked> Ens niveau som makker</label>
+          <label class="radio-opt"><input type="radio" name="filosofi" value="spredt"> Stærk+svag som makker (jævnbyrdige hold)</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>3. Lås/fastsæt kampe manuelt (valgfrit, fleksibelt)</h2>
+    <p class="card-sub">Fastsæt hvem som helst, og lad resten stå på "– auto –" — fx kun makkerparret,
+    og lad systemet finde en jævnbyrdig modstander automatisk. Fastsatte spillere tages ud af den
+    almindelige fordeling. Kun spillere krydset af som "til stede" i punkt 1 kan vælges her.</p>
+    <div class="lock-row">
+      <select id="lock-type">
+        <option value="single">Single</option>
+        <option value="double" selected>Double</option>
+        <option value="mixed">Mixed double</option>
+      </select>
+      <select id="lock-a1"></select>
+      <select id="lock-a2"></select>
+      <span class="vs">mod</span>
+      <select id="lock-b1"></select>
+      <select id="lock-b2"></select>
+      <button class="btn-secondary btn-small" onclick="tilfoejLaastKamp()">Tilføj kamp</button>
+    </div>
+    <div class="locked-list" id="locked-list"></div>
+  </div>
+
+  <div class="card">
+    <h2>4. Generér runde</h2>
+    <button class="btn-primary" onclick="genererRunde()">Generér runde</button>
+    <button class="btn-secondary" onclick="gemTilSheets()" style="margin-left:8px;">💾 Gem nu</button>
+    <button class="btn-secondary" onclick="nulstilEksempeldata()" style="margin-left:8px;">Nulstil eksempeldata</button>
+    <p class="card-sub" id="sync-status" style="margin:8px 0 0;"></p>
+    <div id="status" class="status"></div>
+    <div id="runde-container" style="margin-top:16px;"></div>
+  </div>
+
+  <div class="card">
+    <h2>5. Historik &amp; indbyrdes opgør (H2H)</h2>
+    <p class="card-sub">Bygget op af de kampe der registreres ovenfor i denne session. Tæller alle
+    kampe hvor de to spillere har været på hver sin side — uanset hvem makkeren var i double/mix.</p>
+    <div class="field-row">
+      <div class="field">
+        <label for="h2h-a">Spiller A</label>
+        <select id="h2h-a"></select>
+      </div>
+      <div class="field">
+        <label for="h2h-b">Spiller B</label>
+        <select id="h2h-b"></select>
+      </div>
+      <button class="btn-secondary" onclick="visH2H()">Vis opgør</button>
+    </div>
+    <div id="h2h-result" class="h2h-result"></div>
+  </div>
+
+  <div class="card">
+    <h2>Kamplog (denne session)</h2>
+    <div id="kamplog" class="kamplog"></div>
+  </div>
+
+  <div class="card">
+    <h2>Spillertrup og ratings</h2>
+    <p class="card-sub">Opdateres live når kampresultater registreres ovenfor. Nulstilles ved genindlæsning af siden (eller med knappen ovenfor).</p>
+    <table class="roster" id="rating-table">
+      <thead><tr><th>Navn</th><th>Gruppe</th><th>Single</th><th>Double</th><th>Mix</th></tr></thead>
+      <tbody id="rating-table-body"></tbody>
+    </table>
+  </div>
+</main>
+
+<script>
+// K-faktor og Elo-divisor genkalibreret 2026-09-02 til den rigtige BD-point-skala (~1300-3300,
+// spredning ~1900) i stedet for de gamle eksempeltal (~950-1850, spredning ~900) — ren mekanisk
+// skala-bevarende oversættelse (samme forhold K/divisor som før: 32/400 ≈ 70/850), så formlens
+// RELATIVE følsomhed er uændret. Aftalt af Chris 2026-09-02 ("Fix det korrekt").
+const K = 70;
+const ELO_DIVISOR = 850;
+const RATING_KEY = { single: 'single', double: 'double', mixed: 'mix' };
+const TYPE_LABEL = { single: 'Single', double: 'Double', mixed: 'Mixed double' };
+// mix kommer nu direkte fra data (rigtig værdi, eller double som fallback, eller null hvis
+// spilleren hverken har mix- eller double-rating) — beregnes IKKE længere som et klient-gennemsnit.
+const ROSTER_INITIAL = [{"navn": "Adnan Bacic", "gruppe": "Senior", "single": 1912, "double": 1468, "mix": 1660}, {"navn": "Andreas Drasbek", "gruppe": "Senior", "single": null, "double": null, "mix": null}, {"navn": "Anja Gunna Thomsen", "gruppe": "Senior", "single": 1988, "double": 2663, "mix": 2906}, {"navn": "Brian Oddershede", "gruppe": "Senior", "single": 2684, "double": 2861, "mix": 2246}, {"navn": "Camilla Bagge", "gruppe": "Senior", "single": null, "double": 2290, "mix": 2340}, {"navn": "Christian Staal", "gruppe": "Senior", "single": null, "double": 2453, "mix": 2234}, {"navn": "Christoffer Müller", "gruppe": "Senior", "single": 2896, "double": 2917, "mix": 2929}, {"navn": "Erik Juul", "gruppe": "Senior", "single": 2377, "double": 2398, "mix": 1287}, {"navn": "Gitte Mathiasen", "gruppe": "Senior", "single": 2236, "double": 2263, "mix": 2315}, {"navn": "Hannah Phoebe Ejada Clausen", "gruppe": "Senior", "single": 2491, "double": 2383, "mix": 2384}, {"navn": "Helle Mathiasen", "gruppe": "Senior", "single": 2056, "double": 2420, "mix": 2116}, {"navn": "Jonas Trusell-Jensen", "gruppe": "Senior", "single": 3271, "double": 3201, "mix": 3201}, {"navn": "Jonathan Hansen", "gruppe": "Senior", "single": 3314, "double": 3021, "mix": 3021}, {"navn": "Kenn Blæsbjerg Christensen", "gruppe": "Senior", "single": 3112, "double": 3097, "mix": 2912}, {"navn": "Kenneth Hasselby", "gruppe": "Senior", "single": null, "double": 3196, "mix": 3125}, {"navn": "Lene Sørensen", "gruppe": "Senior", "single": null, "double": 2282, "mix": 2321}, {"navn": "Linda Bækgaard", "gruppe": "Senior", "single": 2168, "double": 2276, "mix": 2041}, {"navn": "Line Nielsen", "gruppe": "Senior", "single": null, "double": 2409, "mix": 2708}, {"navn": "Linus Bergström Hesselballe", "gruppe": "Senior", "single": 1647, "double": 1665, "mix": 1665}, {"navn": "Louise Korsby Kofoed", "gruppe": "Senior", "single": 2060, "double": 2275, "mix": 2359}, {"navn": "Malthe Baltzer", "gruppe": "Senior", "single": 2900, "double": 2900, "mix": 2900}, {"navn": "Marie Gotfred Johansen", "gruppe": "Senior", "single": 2268, "double": 2262, "mix": 2384}, {"navn": "Michelle Liljengren", "gruppe": "Senior", "single": 2486, "double": 2621, "mix": 2621}, {"navn": "Mina Lorin Özden", "gruppe": "Senior", "single": 1468, "double": 1491, "mix": 1303}, {"navn": "Morten Aarøe", "gruppe": "Senior", "single": 3240, "double": 3291, "mix": 3059}, {"navn": "Nadia Mortensen", "gruppe": "Senior", "single": 2313, "double": 2290, "mix": 2363}, {"navn": "Oliver Frei", "gruppe": "Senior", "single": 3088, "double": 3013, "mix": 2940}, {"navn": "Oliver Guldbæk", "gruppe": "Senior", "single": 2753, "double": 2722, "mix": 2689}, {"navn": "Oscar Donovan", "gruppe": "Senior", "single": 2730, "double": 2763, "mix": 2763}, {"navn": "Oskar Isbosethsen", "gruppe": "Senior", "single": 1700, "double": 1694, "mix": 1694}, {"navn": "Rasmus Holmlykke Andersen", "gruppe": "Senior", "single": 3047, "double": 3080, "mix": 2728}, {"navn": "Sebastian Møller", "gruppe": "Senior", "single": 1918, "double": 1904, "mix": 1877}, {"navn": "Signe Aarøe Jørgensen", "gruppe": "Senior", "single": null, "double": 2226, "mix": 2296}, {"navn": "Stine Louise Knudsen", "gruppe": "Senior", "single": 1998, "double": 2243, "mix": 2258}, {"navn": "Sverre Stütz", "gruppe": "Senior", "single": 1679, "double": 1793, "mix": 1496}, {"navn": "Theodor Lumby", "gruppe": "Senior", "single": 1803, "double": 1577, "mix": 1376}, {"navn": "Thor Percy Hinge Pedersen", "gruppe": "Senior", "single": 2675, "double": 2854, "mix": 2482}, {"navn": "Thøger Jakobsen", "gruppe": "Senior", "single": 1602, "double": 1650, "mix": 1372}, {"navn": "Tobias Weinreich Hansen", "gruppe": "Senior", "single": 3046, "double": 3030, "mix": 3030}, {"navn": "Yiting Chen", "gruppe": "Senior", "single": 2315, "double": 2420, "mix": 2420}, {"navn": "Louis Toftlund", "gruppe": "Ungsenior", "single": 1817, "double": 1739, "mix": 1463}, {"navn": "Rosa Hinge Carlsson", "gruppe": "Ungsenior", "single": 1635, "double": 1351, "mix": 1157}, {"navn": "Sylvester Østberg", "gruppe": "Ungsenior", "single": 1827, "double": 1575, "mix": 1405}, {"navn": "Anna Rudolph", "gruppe": "SuperUng Teen", "single": 1770, "double": 1495, "mix": 1225}, {"navn": "August Carl Toftager-Larsen", "gruppe": "SuperUng Teen", "single": null, "double": null, "mix": null}, {"navn": "Benjamin Hinge Carlsson", "gruppe": "SuperUng Teen", "single": 1705, "double": 1712, "mix": 1497}, {"navn": "Bertram Hjorth Laursen", "gruppe": "SuperUng Teen", "single": 1542, "double": 1556, "mix": 1354}, {"navn": "Emilie Reinholdt Amelung", "gruppe": "SuperUng Teen", "single": 1691, "double": 1502, "mix": 1502}, {"navn": "Freja Fan Fuglsang", "gruppe": "SuperUng Teen", "single": 1395, "double": 1303, "mix": 1165}, {"navn": "Guanyan Chen", "gruppe": "SuperUng Teen", "single": 1937, "double": 1547, "mix": 1547}, {"navn": "Katia Lundby Bresemann", "gruppe": "SuperUng Teen", "single": 1771, "double": 1436, "mix": 1436}, {"navn": "Lasse Friberg Andersen", "gruppe": "SuperUng Teen", "single": 1697, "double": 1272, "mix": 1272}, {"navn": "Lauge Juul Hornsgaard", "gruppe": "SuperUng Teen", "single": 1916, "double": 1774, "mix": 1520}, {"navn": "Ludvig Alexander Rosager Pedas Rosager", "gruppe": "SuperUng Teen", "single": 1741, "double": 1697, "mix": 1547}, {"navn": "Mads Balmer Broholm", "gruppe": "SuperUng Teen", "single": 2010, "double": 1622, "mix": 1409}, {"navn": "Magne Gjervan Majborn", "gruppe": "SuperUng Teen", "single": 1697, "double": 1579, "mix": 1361}, {"navn": "Marius Steenstrup Leth-Espensen", "gruppe": "SuperUng Teen", "single": 2028, "double": 1740, "mix": 1508}, {"navn": "Oliver Soon Nielsen", "gruppe": "SuperUng Teen", "single": 1698, "double": 1719, "mix": 1719}, {"navn": "Qingyi Marie Han", "gruppe": "SuperUng Teen", "single": 1505, "double": 1247, "mix": 1247}, {"navn": "Sakarias Thornild Berthelsen", "gruppe": "SuperUng Teen", "single": 1799, "double": 1698, "mix": 1501}, {"navn": "Silas Due Buron", "gruppe": "SuperUng Teen", "single": 1522, "double": 1378, "mix": 1290}];
+
+// Fase 1 — Sheets-persistering (godkendt af Chris 2026-09-02: "Sheets ja tak"). Bruger RELATIVE
+// URL'er med vilje: elo-hent.js/elo-gem.js er deployet i netlify-tool-prod, men ligger på et
+// andet domæne end selve denne Claude-preview, så disse kald fejler her (forventet, fanges op
+// og falder tilbage til kun-i-hukommelse-prototypen, jf. tidligere runder). Så snart selve
+// kampsystem-siden bliver kopieret til de rigtige produktionsfiler (egen, separat "byg det"),
+// peger de relative URL'er automatisk på de rigtige funktioner på samme domæne — ingen ændring
+// nødvendig her på det tidspunkt.
+const KAMPSYSTEM_SPREADSHEET_ID = '12hIYb2roD2RjyeBX6eTY0ZBl91zXV1UuWhGmR58ga5c';
+let sidstGemtKampIndex = 0;
+let sheetsForbindelseOk = null; // null = ikke afprøvet endnu, true/false efter første forsøg
+
+// Alle 382 GSB-medlemmer (navn + BD-rating, hentet 2026-09-02) — bruges kun af søg/tilføj-
+// systemet nedenfor til at trække en spiller ind der ikke allerede er i en af de faste grupper.
+const GSB_ALLE_SPILLERE = [{"navn": "Anna Rudolph", "id": "16490", "refId": "120215-04", "single": 1770, "double": 1495, "mix": 1225}, {"navn": "Chaojun Li", "id": "34542", "refId": "861220-09", "single": null, "double": 1745, "mix": 1630}, {"navn": "Charlotte Neerdal", "id": "38336", "refId": "000228-07", "single": null, "double": 1214, "mix": 1293}, {"navn": "Aanya Sarma", "id": "16496", "refId": "121004-02", "single": 1387, "double": 1126, "mix": 1197}, {"navn": "Hannah Clausen", "id": "16151", "refId": "001021-04", "single": 2491, "double": 2383, "mix": 2384}, {"navn": "Irene Sterlie", "id": "16152", "refId": "470818-01", "single": null, "double": 1738, "mix": 1933}, {"navn": "Helle Vibeke Bust", "id": "16158", "refId": "610208-01", "single": null, "double": 1114, "mix": 1141}, {"navn": "Ditte Nyeng", "id": "16166", "refId": "730724-02", "single": null, "double": 2415, "mix": 2434}, {"navn": "Lena Vang", "id": "16169", "refId": "741114-01", "single": null, "double": 2266, "mix": 2548}, {"navn": "Signe Aarøe Jørgensen", "id": "16171", "refId": "760519-01", "single": null, "double": 2226, "mix": 2296}, {"navn": "Rikke Krawcyk", "id": "16178", "refId": "781129-02", "single": null, "double": 2436, "mix": 2445}, {"navn": "Louise Kofoed", "id": "16179", "refId": "790314-01", "single": 2060, "double": 2275, "mix": 2359}, {"navn": "Line Nielsen", "id": "16191", "refId": "841225-01", "single": null, "double": 2409, "mix": 2708}, {"navn": "Stine Louise Knudsen", "id": "16193", "refId": "850604-14", "single": 1998, "double": 2243, "mix": 2258}, {"navn": "Linda Bækgaard", "id": "16197", "refId": "860705-05", "single": 2168, "double": 2276, "mix": 2041}, {"navn": "Simone Møller Jensen", "id": "16209", "refId": "931208-02", "single": 2378, "double": 2526, "mix": 2354}, {"navn": "Merete Jacobsen", "id": "16232", "refId": "591230-02", "single": null, "double": 1620, "mix": 1777}, {"navn": "Liselotte Seider", "id": "16246", "refId": "691228-02", "single": null, "double": 2143, "mix": 2379}, {"navn": "Annette Kørboe", "id": "16248", "refId": "660330-04", "single": null, "double": 1761, "mix": 1865}, {"navn": "Lene Thrysøe", "id": "16249", "refId": "600813-01", "single": null, "double": 1729, "mix": 1689}, {"navn": "Camilla Edfors Terkildsen", "id": "16256", "refId": "900421-22", "single": 2334, "double": 2356, "mix": 2352}, {"navn": "Dorte Petersen", "id": "16263", "refId": "590303-03", "single": null, "double": 1960, "mix": 1869}, {"navn": "Noomi Mortensen", "id": "16272", "refId": "570404-04", "single": null, "double": 1940, "mix": 1871}, {"navn": "Birgitte Jakobsen", "id": "16289", "refId": "610503-01", "single": null, "double": 1724, "mix": 1573}, {"navn": "Helle Larsen", "id": "16296", "refId": "570802-01", "single": null, "double": 1955, "mix": 1989}, {"navn": "Liselotte Hermansen", "id": "16306", "refId": "680623-06", "single": null, "double": 1908, "mix": 1935}, {"navn": "Ulla Milsted", "id": "16333", "refId": "630524-02", "single": null, "double": 1423, "mix": 1441}, {"navn": "Marie Gotfred Johansen", "id": "16385", "refId": "790708-03", "single": 2268, "double": 2262, "mix": 2384}, {"navn": "Lykke Unden", "id": "16399", "refId": "080122-04", "single": 1423, "double": 1432, "mix": 1271}, {"navn": "Maria Søberg Roed", "id": "16404", "refId": "070314-08", "single": 1477, "double": 1424, "mix": null}, {"navn": "Freja Bygsø", "id": "16406", "refId": "060512-08", "single": 1059, "double": 1075, "mix": 990}, {"navn": "Mikkeline Maagaard Isager-Sally", "id": "16414", "refId": "081017-05", "single": 1156, "double": 1156, "mix": 1166}, {"navn": "Mille-marie Fischer Andersen", "id": "16470", "refId": "070412-13", "single": 1190, "double": 1190, "mix": 1190}, {"navn": "Caroline Palmer Haushøj", "id": "16479", "refId": "060409-15", "single": 990, "double": 990, "mix": 990}, {"navn": "Amanda Seidler", "id": "16480", "refId": "070601-14", "single": 1193, "double": 1190, "mix": 1190}, {"navn": "Julie Isager", "id": "16481", "refId": "060623-14", "single": 990, "double": 990, "mix": 990}, {"navn": "Kamille Møller Glendorf", "id": "16482", "refId": "060119-13", "single": 990, "double": 990, "mix": 990}, {"navn": "Julie Storgaard Scheibel", "id": "16511", "refId": "080221-06", "single": 1150, "double": 1233, "mix": 1167}, {"navn": "Elena Shojaei", "id": "16521", "refId": "080830-13", "single": 1165, "double": 1150, "mix": 1166}, {"navn": "Helga Kjersgaard Olesen", "id": "16522", "refId": "080324-13", "single": 1156, "double": 1156, "mix": 1166}, {"navn": "Bettina Meyer Hansen", "id": "16545", "refId": "690904-02", "single": null, "double": 1067, "mix": 1089}, {"navn": "Asta Skovgaard Andersen", "id": "16559", "refId": "080922-06", "single": 1156, "double": 1156, "mix": null}, {"navn": "Michelle Christensen", "id": "22839", "refId": "930609-21", "single": 2486, "double": 2621, "mix": null}, {"navn": "Søs Stadil", "id": "1604", "refId": "521007-01", "single": null, "double": 1366, "mix": 1448}, {"navn": "Helle Mathiasen", "id": "26431", "refId": "701117-03", "single": 2056, "double": 2420, "mix": 2116}, {"navn": "Nadia Sawangjai Mortensen", "id": "26432", "refId": "021022-04", "single": 2313, "double": 2290, "mix": 2363}, {"navn": "Gitte Mathiasen", "id": "26433", "refId": "721122-10", "single": 2236, "double": 2263, "mix": 2315}, {"navn": "Anja Thomsen", "id": "26699", "refId": "701024-03", "single": 1988, "double": 2663, "mix": 2906}, {"navn": "Hanne Meinertz Hagendal", "id": "28336", "refId": "830407-02", "single": 1417, "double": 1455, "mix": 1420}, {"navn": "Hanne Reck", "id": "29400", "refId": "841224-01", "single": null, "double": 1092, "mix": 1116}, {"navn": "Rosa Føge", "id": "29401", "refId": "841221-01", "single": null, "double": 1097, "mix": 1081}, {"navn": "Ida Louise Jørgensen", "id": "29403", "refId": "080718-18", "single": 1156, "double": 1156, "mix": 1166}, {"navn": "Chiori Nagatsuka", "id": "29408", "refId": "820203-02", "single": null, "double": 1122, "mix": 1391}, {"navn": "Lene Offersgaard", "id": "29409", "refId": "660316-07", "single": null, "double": 1061, "mix": 1084}, {"navn": "Manya Bhardwaj", "id": "16505", "refId": "090228-11", "single": 1150, "double": 1150, "mix": 1150}, {"navn": "Sarah Hansen Tulinius", "id": "16554", "refId": "090611-11", "single": 1150, "double": 1150, "mix": null}, {"navn": "Emilie Høgh Haugaard", "id": "16557", "refId": "090408-19", "single": 1150, "double": 1150, "mix": null}, {"navn": "Cecilia Suhr-Virranniemi", "id": "16558", "refId": "090822-100", "single": 1150, "double": 1150, "mix": null}, {"navn": "Sofie Granau Holm", "id": "16560", "refId": "090105-12", "single": 1150, "double": 1150, "mix": null}, {"navn": "Emilie Libak Rasmussen", "id": "29814", "refId": "090318-10", "single": 1150, "double": 1150, "mix": 1150}, {"navn": "Tenna Schrøder", "id": "1227", "refId": "681008-06", "single": null, "double": 1555, "mix": 1721}, {"navn": "Lisbeth Laursen", "id": "16156", "refId": "591115-02", "single": null, "double": 1665, "mix": 1562}, {"navn": "Dorthe Høst", "id": "16168", "refId": "741020-01", "single": 1207, "double": 1187, "mix": null}, {"navn": "Sabina Juul Larsson", "id": "16175", "refId": "780202-01", "single": null, "double": 1736, "mix": 1752}, {"navn": "Tina Skov Mikkelsen", "id": "16188", "refId": "821019-01", "single": null, "double": 1733, "mix": 1760}, {"navn": "Lene Sørensen", "id": "16194", "refId": "851120-11", "single": null, "double": 2282, "mix": 2321}, {"navn": "Tina Kærgaard Wissing", "id": "12876", "refId": "860208-02", "single": 2232, "double": 2432, "mix": 2668}, {"navn": "Lisa Munch Andersen", "id": "16261", "refId": "620403-02", "single": null, "double": 1089, "mix": 1121}, {"navn": "Lotte Hermansen", "id": "16358", "refId": "640623-02", "single": null, "double": 1107, "mix": 1081}, {"navn": "Kathrine Blichsted Brauer", "id": "16396", "refId": "780613-08", "single": null, "double": 1107, "mix": 1078}, {"navn": "Nete Fossing", "id": "16367", "refId": "020803-12", "single": null, "double": 1089, "mix": 1089}, {"navn": "Saritha Soman", "id": "34543", "refId": "820728-05", "single": null, "double": 1747, "mix": 1713}, {"navn": "Hannah Klein (EU)", "id": "34615", "refId": "080326-15", "single": 1508, "double": 1421, "mix": 1355}, {"navn": "Tanja Willumsen", "id": "36069", "refId": "770225-01", "single": 1282, "double": 1226, "mix": 1178}, {"navn": "Karen Obling", "id": "36073", "refId": "831011-05", "single": null, "double": 1606, "mix": 1632}, {"navn": "Helle Juel-berg", "id": "36145", "refId": "810123-02", "single": 1500, "double": 1558, "mix": 1567}, {"navn": "Freja Fan Fuglsang", "id": "16462", "refId": "100124-04", "single": 1395, "double": 1303, "mix": 1165}, {"navn": "Mina Lorin Özden", "id": "16473", "refId": "100123-07", "single": 1468, "double": 1491, "mix": 1303}, {"navn": "Mathilde Francl", "id": "16477", "refId": "100622-05", "single": 1100, "double": 1100, "mix": 1100}, {"navn": "Rosa Hinge Carlsson", "id": "16561", "refId": "100219-13", "single": 1635, "double": 1351, "mix": 1157}, {"navn": "Ruhani Ahana Mukherjee", "id": "16562", "refId": "100831-17", "single": 1100, "double": 1100, "mix": 1100}, {"navn": "Elisabeth Bakkegaard", "id": "37092", "refId": "101019-13", "single": 1100, "double": 1100, "mix": 1100}, {"navn": "Sara keinicke", "id": "37094", "refId": "100418-08", "single": 1100, "double": 1100, "mix": 1100}, {"navn": "Athena Villegas-Lauth", "id": "37096", "refId": "101222-12", "single": 1100, "double": 1100, "mix": 1100}, {"navn": "Qian Zhang", "id": "38418", "refId": "100730-18", "single": 1125, "double": 1152, "mix": 1200}, {"navn": "Chastine Christiansen", "id": "16491", "refId": "121005-02", "single": 1075, "double": 1075, "mix": null}, {"navn": "Varneka Prasanna Kumar Lavanya", "id": "16499", "refId": "111113-01", "single": 1253, "double": 1100, "mix": 1160}, {"navn": "Cecilie Nygård", "id": "16514", "refId": "120816-04", "single": 1075, "double": 1075, "mix": 1075}, {"navn": "Svea Lisbeth Bergström Hesselballe", "id": "16519", "refId": "121003-02", "single": 1114, "double": 1215, "mix": 1100}, {"navn": "Alemeh Mousavi Hejazi", "id": "16563", "refId": "110523-11", "single": 1100, "double": 1100, "mix": 1100}, {"navn": "Mejse Bjerre Bennike", "id": "16573", "refId": "110601-09", "single": 1100, "double": 1100, "mix": 1100}, {"navn": "Maryam Yousefi", "id": "39335", "refId": "771130-02", "single": null, "double": 1494, "mix": 1493}, {"navn": "Jasmine Abdelqadir", "id": "39340", "refId": "120314-10", "single": 1075, "double": 1075, "mix": 1075}, {"navn": "Advika Sawardekar", "id": "39349", "refId": "120806-15", "single": 1075, "double": 1075, "mix": 1075}, {"navn": "Sophia Abrahamsen", "id": "39361", "refId": "110313-11", "single": 1100, "double": 1100, "mix": 1100}, {"navn": "Yasi Mosafer", "id": "40748", "refId": "111230-11", "single": 1100, "double": 1100, "mix": 1100}, {"navn": "Eshaal Azam", "id": "40749", "refId": "120215-14", "single": 1075, "double": 1075, "mix": 1075}, {"navn": "Sophia Rita Giuliani", "id": "40750", "refId": "120121-06", "single": 1075, "double": 1075, "mix": 1075}, {"navn": "Ditte Hjorth Laursen", "id": "40824", "refId": "810701-03", "single": null, "double": 1520, "mix": 1516}, {"navn": "Laura Kyndborg", "id": "41671", "refId": "810116-02", "single": null, "double": 1519, "mix": 1560}, {"navn": "Mia Elizabeth Toftager", "id": "41774", "refId": "761123-07", "single": null, "double": 1492, "mix": 1474}, {"navn": "Laura Budtz Backlund", "id": "41790", "refId": "110424-08", "single": 1100, "double": 1100, "mix": 1100}, {"navn": "Changsi Cai", "id": "42094", "refId": "830205-01", "single": null, "double": 1491, "mix": 1516}, {"navn": "Ahana Mondal", "id": "16574", "refId": "131203-09", "single": 1075, "double": 1075, "mix": 1075}, {"navn": "Dagmar Sally Birch", "id": "43069", "refId": "130914-08", "single": 1075, "double": 1075, "mix": 1075}, {"navn": "Cornelia Viola Bender-Jacobsen", "id": "43079", "refId": "130111-09", "single": 1299, "double": 1292, "mix": 1231}, {"navn": "Afifa kulsum Baig", "id": "43087", "refId": "130427-07", "single": 1075, "double": 1075, "mix": 1075}, {"navn": "Christina Liu", "id": "43107", "refId": "130228-06", "single": 1075, "double": 1075, "mix": 1075}, {"navn": "Camilla Steinmetz Bagge", "id": "44449", "refId": "981116-07", "single": null, "double": 2290, "mix": 2340}, {"navn": "Bhavya Kavya Sri Singam", "id": "44508", "refId": "900815-25", "single": null, "double": 1438, "mix": 1486}, {"navn": "Julie Reholt", "id": "44510", "refId": "931222-17", "single": null, "double": 1438, "mix": 1474}, {"navn": "Ida Lindgaard Christiansen", "id": "16452", "refId": "071012-08", "single": 1190, "double": null, "mix": null}, {"navn": "Cornelia Holzmann", "id": "29404", "refId": "080512-22", "single": 1156, "double": null, "mix": null}, {"navn": "Emeli Hansen", "id": "41040", "refId": "961105-20", "single": null, "double": null, "mix": 1492}, {"navn": "Lauge Juul Hornsgaard", "id": "16498", "refId": "130104-03", "single": 1916, "double": 1774, "mix": 1520}, {"navn": "Thøger Eusebius Jakobsen", "id": "16424", "refId": "080402-08", "single": 1602, "double": 1650, "mix": 1372}, {"navn": "Sebastian Almeida Møller", "id": "16467", "refId": "080624-11", "single": 1918, "double": 1904, "mix": 1877}, {"navn": "Marius Steenstrup Leth-Espensen", "id": "16488", "refId": "120413-02", "single": 2028, "double": 1740, "mix": 1508}, {"navn": "Sverre Stütz", "id": "18383", "refId": "930107-09", "single": 1679, "double": 1793, "mix": 1496}, {"navn": "Shenai Antony", "id": "44450", "refId": "950827-18", "single": 3063, "double": 2970, "mix": 2904}, {"navn": "Fariborz Mosafer", "id": "34541", "refId": "790421-05", "single": 1285, "double": 1281, "mix": 1336}, {"navn": "Steen Kiorboe", "id": "16153", "refId": "491220-01", "single": null, "double": 2332, "mix": 2295}, {"navn": "Tue Abelskov", "id": "16155", "refId": "540325-01", "single": null, "double": 2444, "mix": null}, {"navn": "Svend Videbæk", "id": "16157", "refId": "600124-01", "single": null, "double": 2507, "mix": 2366}, {"navn": "Kent Meiling Sørensen", "id": "16160", "refId": "650424-03", "single": null, "double": 2478, "mix": 2561}, {"navn": "Christian Thrysøe", "id": "16163", "refId": "661124-04", "single": null, "double": 1794, "mix": 1879}, {"navn": "Kristian Boye Nielsen", "id": "16172", "refId": "760626-01", "single": null, "double": 2668, "mix": 2702}, {"navn": "Kenneth Hasselby", "id": "16173", "refId": "761122-01", "single": null, "double": 3196, "mix": 3125}, {"navn": "Kristian Serup", "id": "16176", "refId": "780705-01", "single": 2185, "double": 2332, "mix": 2174}, {"navn": "Morten Aarøe", "id": "16184", "refId": "811027-01", "single": 3240, "double": 3291, "mix": 3059}, {"navn": "Anders Amelung", "id": "16186", "refId": "820528-01", "single": null, "double": 3143, "mix": 3000}, {"navn": "Jonas Niebling", "id": "16187", "refId": "820904-01", "single": null, "double": 2847, "mix": 2924}, {"navn": "Claus Christophersen", "id": "16189", "refId": "831222-01", "single": 2903, "double": 3138, "mix": 2697}, {"navn": "Brian Oddershede", "id": "16196", "refId": "860325-15", "single": 2684, "double": 2861, "mix": 2246}, {"navn": "Rasmus Holmslykke Andersen", "id": "16204", "refId": "911210-16", "single": 3047, "double": 3080, "mix": 2728}, {"navn": "Rasmus Hemmingsen", "id": "16210", "refId": "941107-16", "single": 2748, "double": 2618, "mix": null}, {"navn": "Adnan Bacic", "id": "16214", "refId": "980325-17", "single": 1912, "double": 1468, "mix": 1660}, {"navn": "Erik Juul", "id": "16215", "refId": "980517-08", "single": 2377, "double": 2398, "mix": 1287}, {"navn": "Jonas Trusell-Jensen", "id": "16217", "refId": "981024-08", "single": 3271, "double": 3201, "mix": null}, {"navn": "Jonathan W. Hansen", "id": "16220", "refId": "000122-08", "single": 3314, "double": 3021, "mix": null}, {"navn": "Oliver Guldbæk", "id": "16229", "refId": "990902-07", "single": 2753, "double": 2722, "mix": 2689}, {"navn": "Jesper Hyldal", "id": "16230", "refId": "680825-02", "single": null, "double": 2750, "mix": 2542}, {"navn": "Tobias Weinreich Hansen", "id": "16231", "refId": "030223-03", "single": 3046, "double": 3030, "mix": null}, {"navn": "Bent Horn Andersen", "id": "16233", "refId": "570330-01", "single": null, "double": 2018, "mix": 1747}, {"navn": "Christian Staal", "id": "16240", "refId": "990521-15", "single": null, "double": 2453, "mix": 2234}, {"navn": "Tim Guldbæk", "id": "16250", "refId": "660906-02", "single": null, "double": 2362, "mix": 2170}, {"navn": "Gert Poulsen", "id": "16251", "refId": "540804-01", "single": null, "double": 1978, "mix": 1322}, {"navn": "Claus Starcke", "id": "16254", "refId": "600804-04", "single": null, "double": 1907, "mix": 1967}, {"navn": "Frank Nielsen", "id": "16257", "refId": "650814-03", "single": null, "double": 1901, "mix": null}, {"navn": "Christian Rein Johannessen", "id": "16259", "refId": "660819-03", "single": null, "double": 2191, "mix": 2077}, {"navn": "Kim Jørgensen", "id": "16264", "refId": "600101-59", "single": null, "double": 2367, "mix": null}, {"navn": "Lennart Høy", "id": "16267", "refId": "611121-03", "single": null, "double": 2299, "mix": 1995}, {"navn": "Svend Valentin Rasmussen", "id": "16269", "refId": "460116-01", "single": null, "double": 1878, "mix": null}, {"navn": "John Kørboe", "id": "16276", "refId": "630819-03", "single": null, "double": 1987, "mix": 2127}, {"navn": "Michael Villiam Nielsen", "id": "16286", "refId": "740228-01", "single": null, "double": 3080, "mix": 2833}, {"navn": "Mogens Jørgensen", "id": "16287", "refId": "460115-02", "single": null, "double": 2059, "mix": 1675}, {"navn": "Jan Holzmann Rasmussen", "id": "16288", "refId": "550115-02", "single": null, "double": 1939, "mix": 1631}, {"navn": "Per Wengenroth", "id": "16291", "refId": "670304-02", "single": null, "double": 2179, "mix": 2023}, {"navn": "Leif Hansen", "id": "16293", "refId": "470415-01", "single": null, "double": 2008, "mix": 1396}, {"navn": "Jesper Norup Johansen", "id": "16294", "refId": "600211-01", "single": null, "double": 1883, "mix": null}, {"navn": "Michael Bjergsted", "id": "16295", "refId": "571204-03", "single": null, "double": 2328, "mix": null}, {"navn": "Martin Gath Ridorf-Hansen", "id": "16298", "refId": "711103-03", "single": null, "double": 2556, "mix": 2263}, {"navn": "Nils Ole Andersen", "id": "16299", "refId": "590313-03", "single": null, "double": 2313, "mix": 2121}, {"navn": "henrik perregaard", "id": "16309", "refId": "590519-01", "single": null, "double": 2004, "mix": 1824}, {"navn": "Oliver Frei", "id": "16310", "refId": "000825-11", "single": 3088, "double": 3013, "mix": 2940}, {"navn": "Carsten Nørgaard", "id": "16323", "refId": "690924-03", "single": null, "double": 2169, "mix": 2016}, {"navn": "Yiting Chen", "id": "16338", "refId": "820908-02", "single": 2315, "double": 2420, "mix": null}, {"navn": "Peter Gundersen", "id": "16356", "refId": "791207-02", "single": null, "double": 2694, "mix": 1905}, {"navn": "Steffen Wad", "id": "16373", "refId": "600813-02", "single": null, "double": 2162, "mix": null}, {"navn": "Casper Bjerre Labori Olsen", "id": "16383", "refId": "940729-14", "single": null, "double": 2571, "mix": 2692}, {"navn": "Najeeb Durrani", "id": "16387", "refId": "670318-04", "single": null, "double": 2037, "mix": 1287}, {"navn": "Martin Yulzari", "id": "16393", "refId": "720704-02", "single": 2081, "double": 2106, "mix": 1364}, {"navn": "Konrad Juul Wurlitzer", "id": "16394", "refId": "070909-02", "single": 1319, "double": 1361, "mix": 1316}, {"navn": "Raz Matteo Palima ", "id": "16398", "refId": "060107-06", "single": 1262, "double": 1262, "mix": 1262}, {"navn": "Linus Bergstrøm Hesselballe", "id": "16407", "refId": "070903-07", "single": 1647, "double": 1665, "mix": null}, {"navn": "Anton Sevald", "id": "16411", "refId": "590316-02", "single": null, "double": 1263, "mix": 1311}, {"navn": "Tobias Holm-Hansen", "id": "16412", "refId": "061005-10", "single": 1262, "double": 1262, "mix": 1262}, {"navn": "Victor August Drabik Espersen", "id": "16420", "refId": "051220-09", "single": 1571, "double": 1459, "mix": 1287}, {"navn": "Morten Nielsen", "id": "16436", "refId": "730419-05", "single": null, "double": 2028, "mix": 2050}, {"navn": "Marcel Yulzari", "id": "16437", "refId": "390718-01", "single": null, "double": 1672, "mix": null}, {"navn": "Mads Vinding", "id": "16439", "refId": "081209-04", "single": 1254, "double": 1254, "mix": 1265}, {"navn": "Aksel Egedal Kristensen", "id": "16440", "refId": "080913-06", "single": 1524, "double": 1412, "mix": 1265}, {"navn": "Thomas Stevnsbak Andersen", "id": "16443", "refId": "700710-01", "single": null, "double": 1669, "mix": 1677}, {"navn": "David Bendix Bie", "id": "16447", "refId": "061213-05", "single": 1866, "double": 1714, "mix": null}, {"navn": "Tore Kristian Krogh", "id": "16453", "refId": "060609-12", "single": 1262, "double": 1262, "mix": 1262}, {"navn": "Loui Stenbæk", "id": "16457", "refId": "081021-08", "single": 1468, "double": 1315, "mix": 1283}, {"navn": "Kenn Blæsbjerg Christensen", "id": "11043", "refId": "820503-01", "single": 3112, "double": 3097, "mix": 2912}, {"navn": "Rasmus Kjær", "id": "16466", "refId": "080407-09", "single": 1434, "double": 1321, "mix": null}, {"navn": "Simon Greve Amdi", "id": "16469", "refId": "080926-16", "single": 1254, "double": 1254, "mix": null}, {"navn": "Anton Krog Søbygaard", "id": "16474", "refId": "081013-10", "single": 1647, "double": 1555, "mix": 1460}, {"navn": "Emil Juul Lund", "id": "16484", "refId": "080427-09", "single": 1254, "double": 1254, "mix": null}, {"navn": "Loke Kristiansen", "id": "16486", "refId": "080311-11", "single": 1255, "double": 1282, "mix": 1265}, {"navn": "Henrik Vilhemsen", "id": "16500", "refId": "660118-03", "single": null, "double": 1590, "mix": null}, {"navn": "Ebbe Rokkedal Therkildsen", "id": "16501", "refId": "070220-13", "single": 1385, "double": 1338, "mix": 1289}, {"navn": "Maximilian Bybeck Ostenfeld", "id": "16512", "refId": "070714-11", "single": 1291, "double": 1289, "mix": 1289}, {"navn": "Simon Vils Pedersen", "id": "16515", "refId": "070617-12", "single": 1344, "double": 1316, "mix": 1289}, {"navn": "Jonas Lykke Adamsen", "id": "16516", "refId": "071104-06", "single": 1289, "double": 1289, "mix": 1289}, {"navn": "Hannibal Skovbye", "id": "16524", "refId": "080502-10", "single": 1254, "double": 1254, "mix": 1265}, {"navn": "Ruben Jakobi From Søvndal", "id": "16525", "refId": "080825-13", "single": 1254, "double": 1254, "mix": 1265}, {"navn": "Arthur Esgerd Rohde", "id": "16526", "refId": "080814-19", "single": 1254, "double": 1254, "mix": 1265}, {"navn": "Mika Steen Thrane", "id": "16531", "refId": "071113-13", "single": 1289, "double": 1289, "mix": null}, {"navn": "Tobias Lerche", "id": "16539", "refId": "070207-17", "single": 1289, "double": 1289, "mix": null}, {"navn": "Viggo Jacobsen", "id": "16540", "refId": "081206-08", "single": 1254, "double": 1254, "mix": null}, {"navn": "Jacob Bloch Schousboe", "id": "16541", "refId": "070317-11", "single": 1289, "double": 1289, "mix": null}, {"navn": "Kim Kristiansen", "id": "16542", "refId": "630413-02", "single": 1261, "double": 1261, "mix": 1287}, {"navn": "Jens Møller", "id": "16552", "refId": "711008-05", "single": 2732, "double": 2691, "mix": 2742}, {"navn": "Jan Søborg Meinertz", "id": "16553", "refId": "670819-03", "single": 2230, "double": 2311, "mix": 2246}, {"navn": "Valdemar Hougaard Poulsen", "id": "16556", "refId": "081022-13", "single": 1254, "double": 1254, "mix": null}, {"navn": "Henrick Villemoes Poulsen", "id": "25494", "refId": "690926-08", "single": 1254, "double": 1244, "mix": 1271}, {"navn": "Thomas Malmros", "id": "25493", "refId": "781113-10", "single": 1284, "double": 1298, "mix": 1351}, {"navn": "Malthe Baltzer", "id": "16392", "refId": "070723-03", "single": 2900, "double": 2900, "mix": null}, {"navn": "Sampath Swamy", "id": "21023", "refId": "731211-05", "single": null, "double": 1296, "mix": null}, {"navn": "Kaspar Andreasen", "id": "28399", "refId": "581208-01", "single": null, "double": 1704, "mix": 1652}, {"navn": "Valdemar Styner Rostock", "id": "24765", "refId": "081023-13", "single": 1263, "double": 1254, "mix": null}, {"navn": "Martin Andersen", "id": "16165", "refId": "730420-01", "single": 1274, "double": 1274, "mix": 1287}, {"navn": "Kim Bagge", "id": "25495", "refId": "720318-04", "single": 1284, "double": 1320, "mix": 1426}, {"navn": "Philip John Patrick Stack", "id": "29399", "refId": "800401-08", "single": 1299, "double": 1294, "mix": 1283}, {"navn": "Jannik Farup", "id": "29402", "refId": "791024-05", "single": 1287, "double": 1291, "mix": 1313}, {"navn": "Tristan Vindevoghel Hansen", "id": "29405", "refId": "080303-14", "single": 1254, "double": 1254, "mix": null}, {"navn": "Michael Lindbo", "id": "29406", "refId": "791110-04", "single": null, "double": 1830, "mix": 1828}, {"navn": "Christoffer Ring", "id": "29407", "refId": "800812-02", "single": 1823, "double": 1894, "mix": 1825}, {"navn": "Shamil Balakrishnan", "id": "29410", "refId": "830711-01", "single": 1382, "double": 1436, "mix": 1405}, {"navn": "Ask Unden", "id": "16400", "refId": "090909-02", "single": 1729, "double": 1778, "mix": null}, {"navn": "Pelle Emil Jessing Schjøtt", "id": "16430", "refId": "090425-01", "single": 1250, "double": 1250, "mix": 1250}, {"navn": "Elias Hestehave", "id": "16438", "refId": "090721-04", "single": 1534, "double": 1493, "mix": 1305}, {"navn": "Hjalte Palmqvist", "id": "16461", "refId": "090626-05", "single": 1470, "double": 1379, "mix": 1351}, {"navn": "Aksel Wulff Pedersen", "id": "16471", "refId": "090604-09", "single": 1250, "double": 1250, "mix": 1250}, {"navn": "Max Kristiansen", "id": "16487", "refId": "090707-10", "single": 1250, "double": 1250, "mix": null}, {"navn": "Markus Kruse", "id": "16517", "refId": "091001-14", "single": 1250, "double": 1250, "mix": 1250}, {"navn": "Rasmus Kimer Fogtmann", "id": "16533", "refId": "091207-16", "single": 1253, "double": 1250, "mix": null}, {"navn": "Simon wagner nielsen", "id": "16538", "refId": "090114-12", "single": 1250, "double": 1250, "mix": null}, {"navn": "Hans Schmidt Berthelsen", "id": "16544", "refId": "090101-14", "single": 1250, "double": 1250, "mix": null}, {"navn": "Jonas Felk Øster", "id": "29817", "refId": "090619-18", "single": 1302, "double": 1250, "mix": null}, {"navn": "Rasmus Herskind", "id": "16221", "refId": "010911-04", "single": 1281, "double": 1283, "mix": null}, {"navn": "Carsten Kromann", "id": "16460", "refId": "720519-04", "single": null, "double": 1406, "mix": null}, {"navn": "Martin Nielsen", "id": "34539", "refId": "930827-06", "single": 1290, "double": 1312, "mix": 1321}, {"navn": "arslan falak", "id": "34540", "refId": "980809-22", "single": 1317, "double": 1339, "mix": 1274}, {"navn": "Anoop Narayanan", "id": "34544", "refId": "910701-14", "single": 1344, "double": 1361, "mix": 1476}, {"navn": "Amir Tayari", "id": "34545", "refId": "810308-02", "single": 1308, "double": 1280, "mix": 1283}, {"navn": "Kenneth Jørgensen", "id": "34546", "refId": "621210-06", "single": 1239, "double": 1244, "mix": null}, {"navn": "Daniel Hoang", "id": "34548", "refId": "971214-16", "single": 1371, "double": 1302, "mix": null}, {"navn": "Victor Adriano Okstoft Carmelo", "id": "34629", "refId": "860517-15", "single": 1289, "double": 1280, "mix": null}, {"navn": "Farshid Attarhamed", "id": "34630", "refId": "750823-01", "single": null, "double": 1315, "mix": 1282}, {"navn": "Brian Heiner", "id": "34703", "refId": "830604-02", "single": 1361, "double": 1514, "mix": 1544}, {"navn": "Morten Høyrup", "id": "34674", "refId": "800323-04", "single": 1565, "double": 1669, "mix": 1579}, {"navn": "Kasper Viktor Petersen", "id": "35061", "refId": "900312-16", "single": 1383, "double": 1287, "mix": null}, {"navn": "Abhilash Vijayannair", "id": "35062", "refId": "790528-02", "single": null, "double": 1981, "mix": 1885}, {"navn": "Christian Kjær", "id": "35063", "refId": "690423-07", "single": 1319, "double": 1330, "mix": 1300}, {"navn": "Villads Bjerregaard", "id": "26914", "refId": "070305-03", "single": 1573, "double": 1544, "mix": null}, {"navn": "Aniket Mule", "id": "35674", "refId": "930201-22", "single": 1311, "double": 1364, "mix": 1458}, {"navn": "Kenneth Jørgensen", "id": "35709", "refId": "631210-04", "single": 1760, "double": 1695, "mix": null}, {"navn": "Oliver Walbum", "id": "35710", "refId": "970529-32", "single": 1753, "double": 1760, "mix": null}, {"navn": "Tom Larsen", "id": "900", "refId": "740305-01", "single": null, "double": 2321, "mix": null}, {"navn": "Carsten Jensen", "id": "36153", "refId": "630611-03", "single": null, "double": 1734, "mix": null}, {"navn": "Hans Schwartzlose", "id": "36170", "refId": "960806-24", "single": 1751, "double": 1713, "mix": null}, {"navn": "Frederik Pedersen", "id": "36171", "refId": "930728-18", "single": null, "double": 1721, "mix": null}, {"navn": "Ehan Shadat", "id": "16449", "refId": "101120-02", "single": 1271, "double": 1200, "mix": 1225}, {"navn": "Noi Kolka", "id": "24770", "refId": "100217-06", "single": 1285, "double": 1200, "mix": 1225}, {"navn": "Aarav Jha", "id": "16472", "refId": "100706-08", "single": 1200, "double": 1200, "mix": 1225}, {"navn": "Peter Holger Bjørndal Axelsen", "id": "16476", "refId": "101027-07", "single": 1200, "double": 1200, "mix": 1225}, {"navn": "Konrad Kunckel", "id": "37086", "refId": "100729-08", "single": 1603, "double": 1379, "mix": 1225}, {"navn": "David Bataju-Rohde", "id": "16509", "refId": "100105-14", "single": 1200, "double": 1200, "mix": 1225}, {"navn": "Frederik Tuegaard Birk", "id": "16510", "refId": "101121-06", "single": 1200, "double": 1200, "mix": 1225}, {"navn": "Mads Scheibel Borgen Paulsen", "id": "16518", "refId": "100302-08", "single": 1200, "double": 1200, "mix": 1225}, {"navn": "Lauge Bruhn Elnegaard", "id": "16523", "refId": "100717-07", "single": 1200, "double": 1200, "mix": 1225}, {"navn": "Mohammed Aarshil Azad", "id": "23241", "refId": "100108-09", "single": 1200, "double": 1200, "mix": 1225}, {"navn": "Laurits Lindegaard Hebeltoft", "id": "37088", "refId": "100726-13", "single": 1200, "double": 1200, "mix": 1225}, {"navn": "William Romm Egi", "id": "37089", "refId": "100715-17", "single": 1372, "double": 1227, "mix": 1225}, {"navn": "Rumle Pedersen", "id": "37095", "refId": "100907-08", "single": 1200, "double": 1200, "mix": 1225}, {"navn": "Ian Park", "id": "37099", "refId": "100221-12", "single": 1342, "double": 1216, "mix": 1217}, {"navn": "Ludvig Maunuksela Voss", "id": "37101", "refId": "100111-11", "single": 1200, "double": 1200, "mix": 1225}, {"navn": "Nikolaj Thorslund Hindsbo", "id": "16405", "refId": "080919-04", "single": 2092, "double": 1931, "mix": 1970}, {"navn": "Oscar Donovan", "id": "13098", "refId": "000708-13", "single": 2730, "double": 2763, "mix": null}, {"navn": "Aleksander Juulsgaard", "id": "15350", "refId": "930210-12", "single": 1610, "double": 1638, "mix": null}, {"navn": "Jan Pedersen", "id": "38376", "refId": "681002-04", "single": 1684, "double": 1666, "mix": null}, {"navn": "Anders Køhler", "id": "33222", "refId": "760925-02", "single": null, "double": 1856, "mix": 1828}, {"navn": "Thomas Nolfi", "id": "38702", "refId": "710607-05", "single": null, "double": 2021, "mix": 1992}, {"navn": "Tommy Sonne Alstrøm", "id": "16421", "refId": "790203-08", "single": 1722, "double": 1674, "mix": 1713}, {"navn": "Bertram Hammarkvist", "id": "16468", "refId": "110630-03", "single": 1200, "double": 1200, "mix": null}, {"navn": "Bertram Hjorth Laursen", "id": "16475", "refId": "120624-01", "single": 1542, "double": 1556, "mix": 1354}, {"navn": "Ludvig Alexander Rosager Pedas", "id": "16478", "refId": "120724-02", "single": 1741, "double": 1697, "mix": 1547}, {"navn": "Anton Aavang Arvidson", "id": "16485", "refId": "120403-03", "single": 1422, "double": 1393, "mix": null}, {"navn": "Theodor Lumby Jessen", "id": "2664", "refId": "110407-04", "single": 1803, "double": 1577, "mix": 1376}, {"navn": "Jonas P. Hamann", "id": "16489", "refId": "120125-02", "single": 1150, "double": 1150, "mix": null}, {"navn": "Zayn Bhuiya", "id": "16492", "refId": "120424-05", "single": 1150, "double": 1150, "mix": null}, {"navn": "Cornelius Maagaard Isager-Sally", "id": "16493", "refId": "120416-02", "single": 1150, "double": 1150, "mix": null}, {"navn": "Silas Buron", "id": "16494", "refId": "120307-02", "single": 1522, "double": 1378, "mix": 1290}, {"navn": "Erik Kragh Winther", "id": "16495", "refId": "120613-03", "single": 1448, "double": 1524, "mix": 1321}, {"navn": "Joshua Pasgaard-Westerman", "id": "16506", "refId": "110919-05", "single": 1200, "double": 1200, "mix": 1200}, {"navn": "Louis Valdemar Hedegaard Toftlund", "id": "16507", "refId": "110729-04", "single": 1817, "double": 1739, "mix": 1463}, {"navn": "Rishi Mandapati", "id": "16508", "refId": "120507-04", "single": 1481, "double": 1459, "mix": 1254}, {"navn": "Asger Kure Weeke", "id": "16520", "refId": "120214-04", "single": 1150, "double": 1150, "mix": 1175}, {"navn": "Villads Markersen", "id": "16530", "refId": "120329-02", "single": 1150, "double": 1150, "mix": 1175}, {"navn": "Gustav Kruse Johansen", "id": "16532", "refId": "120206-05", "single": 1150, "double": 1150, "mix": null}, {"navn": "Arjun Kharwandikar", "id": "12275", "refId": "110705-07", "single": 1200, "double": 1200, "mix": null}, {"navn": "Carsten Yan", "id": "16564", "refId": "111113-03", "single": 1406, "double": 1410, "mix": null}, {"navn": "Mads Kaarsberg Andersen", "id": "16565", "refId": "110809-09", "single": 1200, "double": 1207, "mix": null}, {"navn": "Sylvester Østberg", "id": "16566", "refId": "110204-07", "single": 1827, "double": 1575, "mix": 1405}, {"navn": "Magnus Filtenborg Lybeck", "id": "24486", "refId": "110612-06", "single": 1200, "double": 1200, "mix": 1200}, {"navn": "David Vad Chawes", "id": "39313", "refId": "110915-08", "single": 1499, "double": 1459, "mix": 1254}, {"navn": "Rasmus Hammershaimb Pedersen", "id": "39314", "refId": "110522-10", "single": 1355, "double": 1300, "mix": null}, {"navn": "Ingvar Forman", "id": "39315", "refId": "110226-09", "single": 1200, "double": 1200, "mix": null}, {"navn": "Christian Mørch", "id": "39318", "refId": "120728-04", "single": 1150, "double": 1150, "mix": 1175}, {"navn": "Isaiah Oluwatobi St Hilaire", "id": "39321", "refId": "120606-08", "single": 1150, "double": 1150, "mix": 1175}, {"navn": "Messum Abbas Mohammad", "id": "39324", "refId": "110503-07", "single": 1200, "double": 1200, "mix": 1200}, {"navn": "William Bülow Schou Hansen", "id": "39326", "refId": "111019-09", "single": 1200, "double": 1200, "mix": 1200}, {"navn": "Theodor Christian Riis", "id": "39327", "refId": "110522-11", "single": 1200, "double": 1200, "mix": 1200}, {"navn": "Sebastian Larsen Lund", "id": "39329", "refId": "110812-13", "single": 1200, "double": 1216, "mix": 1200}, {"navn": "Benjamin Damgaard Hantsøe", "id": "39330", "refId": "110224-04", "single": 1200, "double": 1202, "mix": 1210}, {"navn": "Oliver Rafah Peddinini Joe", "id": "39336", "refId": "110823-03", "single": 1388, "double": 1317, "mix": 1207}, {"navn": "Georg Engedal Nielsen", "id": "39337", "refId": "121222-09", "single": 1169, "double": 1202, "mix": 1224}, {"navn": "Idhant Ghosh Dastidar", "id": "39346", "refId": "120501-07", "single": 1150, "double": 1153, "mix": 1175}, {"navn": "Ludvig Rydhof Thor Hansen", "id": "39352", "refId": "120820-08", "single": 1150, "double": 1150, "mix": 1175}, {"navn": "Malthe Egholm Hansen", "id": "39355", "refId": "121011-10", "single": 1150, "double": 1150, "mix": 1175}, {"navn": "August Svane Worsøe Schleien", "id": "39357", "refId": "120913-13", "single": 1150, "double": 1150, "mix": 1175}, {"navn": "Erik Bjarthur Stein Thorsteinsson", "id": "39360", "refId": "120718-16", "single": 1150, "double": 1151, "mix": 1175}, {"navn": "Lukas Ferdinandsen", "id": "39362", "refId": "121222-10", "single": 1150, "double": 1150, "mix": 1175}, {"navn": "Victor Lundby Bresemann", "id": "39365", "refId": "111111-969", "single": 1200, "double": 1200, "mix": 1200}, {"navn": "Oscar Rugaard Sørensen", "id": "39367", "refId": "120102-14", "single": 1150, "double": 1150, "mix": 1175}, {"navn": "Lukas Hansen", "id": "39370", "refId": "121027-14", "single": 1150, "double": 1150, "mix": 1150}, {"navn": "Torben Larsen", "id": "39371", "refId": "720316-02", "single": null, "double": 1832, "mix": 1684}, {"navn": "Lasse Friberg Andersen", "id": "40709", "refId": "111231-09", "single": 1697, "double": 1272, "mix": null}, {"navn": "Conrad Lind", "id": "40751", "refId": "100817-26", "single": 1200, "double": 1200, "mix": 1200}, {"navn": "Steffen Danielsen", "id": "40812", "refId": "570514-06", "single": 1674, "double": 1677, "mix": 1669}, {"navn": "Salvatore Buccoliero", "id": "40822", "refId": "701111-08", "single": null, "double": 1685, "mix": null}, {"navn": "Chayatat Inma", "id": "40840", "refId": "881230-14", "single": 1682, "double": 1693, "mix": null}, {"navn": "Carl-Emil G Pedersen", "id": "40958", "refId": "121005-06", "single": 1150, "double": 1150, "mix": 1150}, {"navn": "Magnus Nørtoft", "id": "41041", "refId": "821018-01", "single": 1774, "double": 1806, "mix": null}, {"navn": "Jakob Hartvig Thomsen", "id": "42113", "refId": "840710-05", "single": 1704, "double": 1693, "mix": null}, {"navn": "Oskar Isbosethsen", "id": "42401", "refId": "040125-08", "single": 1700, "double": 1694, "mix": null}, {"navn": "Jakob Wiborg", "id": "42618", "refId": "770710-06", "single": null, "double": 1710, "mix": 1695}, {"navn": "Benjamin Hinge Carlsson", "id": "16502", "refId": "130314-01", "single": 1705, "double": 1712, "mix": 1497}, {"navn": "Kasper Mason", "id": "16503", "refId": "131110-01", "single": 1150, "double": 1150, "mix": 1150}, {"navn": "Saxo Ghotbi", "id": "16504", "refId": "130714-01", "single": 1150, "double": 1150, "mix": 1150}, {"navn": "Laurits Schjerning Andersen", "id": "16527", "refId": "130413-04", "single": 1559, "double": 1348, "mix": 1150}, {"navn": "Siddharth Puthran", "id": "16528", "refId": "131217-01", "single": 1151, "double": 1150, "mix": 1150}, {"navn": "William Gullberg", "id": "16529", "refId": "130414-02", "single": 1150, "double": 1150, "mix": 1150}, {"navn": "Svend Anders Hansen Uhrbrand", "id": "16567", "refId": "130220-02", "single": 1150, "double": 1150, "mix": 1150}, {"navn": "Felix Langvad Vajse", "id": "16571", "refId": "130805-03", "single": 1198, "double": 1150, "mix": 1150}, {"navn": "Luc Nørmark Jespersen", "id": "16572", "refId": "130910-01", "single": 1302, "double": 1320, "mix": 1219}, {"navn": "Arav DInesh Nittur", "id": "16577", "refId": "130605-06", "single": 1150, "double": 1150, "mix": 1150}, {"navn": "Magne Gjervan Majborn", "id": "22297", "refId": "130602-04", "single": 1697, "double": 1579, "mix": 1361}, {"navn": "Pontus Einar Anker Mikkelsen", "id": "43063", "refId": "130721-08", "single": 1233, "double": 1327, "mix": 1150}, {"navn": "Mohammad Kumayl Abbas", "id": "43066", "refId": "130604-04", "single": 1150, "double": 1150, "mix": 1150}, {"navn": "Isak Riis Stidsen", "id": "43067", "refId": "130411-03", "single": 1160, "double": 1209, "mix": 1173}, {"navn": "Mohammad Kumayl Abbas", "id": "43068", "refId": "130604-05", "single": 1150, "double": 1150, "mix": 1150}, {"navn": "Kristian Almeida Møller", "id": "43071", "refId": "130709-12", "single": 1485, "double": 1247, "mix": 1153}, {"navn": "Gorm Hundebøl", "id": "43072", "refId": "130806-04", "single": 1150, "double": 1150, "mix": 1150}, {"navn": "Oscar Bo Dan Ouyang", "id": "43073", "refId": "130603-06", "single": 1150, "double": 1150, "mix": 1150}, {"navn": "Lukas Glaring", "id": "43074", "refId": "131003-05", "single": 1376, "double": 1325, "mix": 1150}, {"navn": "Anton Chiramel", "id": "43075", "refId": "130227-06", "single": 1194, "double": 1249, "mix": 1212}, {"navn": "Smayan Kiran Vaddin", "id": "43076", "refId": "130525-08", "single": 1311, "double": 1237, "mix": 1150}, {"navn": "Oskar Hjorth Lund", "id": "43081", "refId": "130710-04", "single": 1150, "double": 1150, "mix": 1150}, {"navn": "Carl Specht Hoelgaard", "id": "43083", "refId": "130912-07", "single": 1150, "double": 1150, "mix": 1150}, {"navn": "Magne Sand Christensen", "id": "43085", "refId": "130411-04", "single": 1150, "double": 1150, "mix": 1150}, {"navn": "Anton Stensbo Knudsen", "id": "43086", "refId": "131020-05", "single": 1337, "double": 1322, "mix": 1150}, {"navn": "Sofus Goodley Kortegaard", "id": "43092", "refId": "130718-06", "single": 1150, "double": 1150, "mix": 1150}, {"navn": "Vincent Patrick Stack", "id": "43100", "refId": "131010-09", "single": 1150, "double": 1150, "mix": 1150}, {"navn": "Mikkel Skov Heimann", "id": "43101", "refId": "130815-10", "single": 1194, "double": 1265, "mix": 1150}, {"navn": "Nicholas Andersen", "id": "43103", "refId": "130601-10", "single": 1150, "double": 1150, "mix": 1150}, {"navn": "Ilyas Ali", "id": "43106", "refId": "131229-08", "single": 1150, "double": 1150, "mix": 1150}, {"navn": "Oscar Goodley Kortegaard", "id": "43112", "refId": "130718-09", "single": 1150, "double": 1150, "mix": 1150}, {"navn": "Noah larsen", "id": "43113", "refId": "130204-11", "single": 1150, "double": 1150, "mix": 1150}, {"navn": "Johan Lundsbye Smistrup", "id": "43117", "refId": "130430-08", "single": 1150, "double": 1150, "mix": 1150}, {"navn": "Frederik Ellebæk Steensgaard", "id": "43122", "refId": "130106-07", "single": 1150, "double": 1150, "mix": 1150}, {"navn": "Alexander Lindholm Boysen", "id": "43123", "refId": "131029-11", "single": 1186, "double": 1219, "mix": 1150}, {"navn": "Carl Winning Laursen", "id": "43125", "refId": "130308-14", "single": 1150, "double": 1150, "mix": 1150}, {"navn": "Juncheng Yumao", "id": "43127", "refId": "130330-05", "single": 1150, "double": 1150, "mix": 1150}, {"navn": "Thorfin Holm", "id": "43847", "refId": "760923-09", "single": null, "double": 1722, "mix": null}, {"navn": "Sakarias Thornild Berthelsen", "id": "39325", "refId": "120618-05", "single": 1799, "double": 1698, "mix": 1501}, {"navn": "Noah Aackersberg", "id": "39529", "refId": "110426-09", "single": 1514, "double": 1200, "mix": null}, {"navn": "Christian Nedergaard Antvorskov", "id": "39521", "refId": "111218-02", "single": 1485, "double": 1334, "mix": null}, {"navn": "Prabhuji Mudragalla", "id": "44509", "refId": "901223-26", "single": null, "double": 1675, "mix": 1686}, {"navn": "Oliver Nielsen", "id": "44511", "refId": "960911-20", "single": 1698, "double": 1719, "mix": null}, {"navn": "Azam", "id": "44512", "refId": "780503-01", "single": null, "double": 1716, "mix": null}, {"navn": "Nikolas Yin", "id": "43070", "refId": "130322-05", "single": 1264, "double": 1254, "mix": 1150}, {"navn": "Konrad Bybeck Tosev", "id": "43097", "refId": "130916-05", "single": 1363, "double": 1282, "mix": 1150}, {"navn": "Mads Broholm", "id": "43064", "refId": "130501-06", "single": 2010, "double": 1622, "mix": 1409}, {"navn": "Christoffer Müller", "id": "13007", "refId": "980701-01", "single": 2896, "double": 2917, "mix": 2929}, {"navn": "Thor Pedersen", "id": "3074", "refId": "980822-04", "single": 2675, "double": 2854, "mix": 2482}, {"navn": "Santosh Kumar", "id": "35091", "refId": "850129-05", "single": 1236, "double": 1382, "mix": 1412}, {"navn": "Anders Christiansen", "id": "41039", "refId": "020215-16", "single": 1655, "double": null, "mix": null}];
+const TILFOEJET_GRUPPE = 'Ekstra (tilføjet)';
+// Faste "altid tilgængelige" grupper man kan tilføje/oprette en spiller til, selvom de (endnu)
+// ikke har nogen medlemmer i KAMPSYSTEM_ROSTER — vises altid i "Tilføj til gruppe"-dropdown'en i
+// punkt 0, uanset om nogen allerede er i dem. GAEST_GRUPPE dækker item 0 (Chris 2026-09-03: "De
+// skal enten under en gæstegruppe, eller bare tilføjes til senior/ungdom"). VETERAN_GRUPPE er
+// tilføjet 2026-09-03 efter Chris' ønske om at Veteran IKKE skal være en færdig, forudfyldt
+// gruppe i roster-dataen (kun Senior og SuperUng Teen har det) — i stedet bygger Chris selv
+// veterangruppen op efter behov, enten ved at søge en spiller ind eller oprette en manuelt, og
+// vælge "Veteran" som mål-gruppe her. MOTIONIST_GRUPPE er tilføjet på samme måde 2026-09-03
+// (Chris: "jeg vil egentlig bare have motionist og veteran på som 2 grupper ligesom de andre") —
+// hele klublisten (GSB_ALLE_SPILLERE) er allerede søgbar, så Chris bygger begge grupper op via
+// søgesystemet, uden at der er brug for en separat forudfyldt kilde-liste.
+const GAEST_GRUPPE = 'Gæst';
+const VETERAN_GRUPPE = 'Veteran';
+const MOTIONIST_GRUPPE = 'Motionist';
+const KATEGORI_TYPER = ['single', 'double', 'mixed'];
+// Standard er alle 3 kategorier valgt — UNDTAGEN for spillere der kun mangler en single-rating,
+// mens de rent faktisk har både double- og mix-rating (Chris 2026-09-03: "de herrer og damer der
+// KUN mangler singlepoint i Senior (dvs. Kenneth, Lene osv spiller aldrig single alligevel)").
+// Det mønster (single: null, double og mix begge kendte) er netop hvordan de spillere, der reelt
+// aldrig spiller single, er seedet i KAMPSYSTEM_ROSTER — så det bruges som signalet i stedet for
+// en hårdkodet navneliste, og virker automatisk for nye/andre spillere i samme situation.
+function defaultModes(p) {
+  const kunManglerSingle = p.single === null && p.double !== null && p.mix !== null;
+  return { single: !kunManglerSingle, double: true, mixed: true };
+}
+
+function fmtRating(v) { return (v === null || v === undefined) ? '–' : v; }
+
+function normaliserSoegetekst(s) {
+  return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
+let roster = ROSTER_INITIAL.map(p => Object.assign({}, p, { tilstede: false, modes: defaultModes(p) }));
+let lockedMatches = []; // { type, aSlots:[navn|''], bSlots:[navn|''] }
+let matchHistory = []; // { runde, type, a:[navne], b:[navne], vinder:'a'|'b' }
+let lastRoundKeys = new Set();
+let rundeTaeller = 0;
+// aktivGrupper: hvilke af roster-grupperne der er markeret som "med" i gruppe-filteret (checkbokse,
+// erstattede 2026-09-03 en tidligere enkelt-valgs-dropdown, jf. Chris' ønske om selv at kunne
+// sammensætte grupper — fx "SuperUng Teen + Ungsenior" til en ungdomstræning). kendteGrupper holder
+// styr på hvilke gruppenavne vi allerede har vist checkbokse for, så en NY gruppe (fx en spiller
+// tilføjet til "Veteran" for første gang) som udgangspunkt bliver markeret/inkluderet automatisk —
+// præcis som den gamle "Alle grupper"-default gjorde — mens brugerens EGNE fravalg af eksisterende
+// grupper ikke bliver nulstillet, hver gang roster ændrer sig.
+let aktivGrupper = new Set();
+let kendteGrupper = new Set();
+
+function byNavn(navn) { return roster.find(p => p.navn === navn); }
+
+function renderSoegeResultater(query) {
+  const el = document.getElementById('soeg-resultater');
+  const q = query.trim();
+  if (q.length < 2) { el.innerHTML = ''; return; }
+  const qNorm = normaliserSoegetekst(q);
+  const alleredeIRoster = new Set(roster.map(p => p.navn));
+  const traeffere = GSB_ALLE_SPILLERE
+    .filter(p => !alleredeIRoster.has(p.navn) && normaliserSoegetekst(p.navn).includes(qNorm))
+    .slice(0, 8);
+  if (traeffere.length === 0) {
+    el.innerHTML = '<p class="soeg-empty">Ingen (flere) match — eller spilleren er allerede i en af grupperne nedenfor.</p>';
+    return;
+  }
+  const liste = document.createElement('div');
+  liste.className = 'soeg-liste';
+  traeffere.forEach(p => {
+    const row = document.createElement('div');
+    row.className = 'soeg-row';
+    row.innerHTML = `
+      <span>${p.navn} <span class="rating-cell">(S ${fmtRating(p.single)} / D ${fmtRating(p.double)} / M ${fmtRating(p.mix)})</span></span>
+      <button class="btn-secondary btn-small" type="button">Tilføj</button>
+    `;
+    row.querySelector('button').addEventListener('click', () => tilfoejFraSoegning(p));
+    liste.appendChild(row);
+  });
+  el.innerHTML = '';
+  el.appendChild(liste);
+}
+
+function tilfoejFraSoegning(spiller) {
+  if (roster.some(p => p.navn === spiller.navn)) { showStatus(`${spiller.navn} er allerede i en gruppe.`, 'error'); return; }
+  const gruppeSel = document.getElementById('tilfoej-gruppe');
+  const gruppe = (gruppeSel && gruppeSel.value) || TILFOEJET_GRUPPE;
+  roster.push({
+    navn: spiller.navn,
+    gruppe,
+    single: spiller.single,
+    double: spiller.double,
+    mix: spiller.mix,
+    tilstede: true,
+    modes: defaultModes(spiller),
+  });
+  document.getElementById('soeg-spiller-input').value = '';
+  renderSoegeResultater('');
+  opsaetGruppeSelect();
+  renderRoster();
+  opdaterLaasDropdowns();
+  renderRatingTable();
+  opdaterH2HDropdowns();
+  showStatus(`${spiller.navn} er tilføjet (gruppe "${gruppe}") og sat til stede.`, 'ok');
+}
+document.getElementById('soeg-spiller-input').addEventListener('input', e => renderSoegeResultater(e.target.value));
+
+// Item 0 (Chris 2026-09-03): kan spilleren ikke findes i søgningen ovenfor, kan man oprette en
+// midlertidig spiller uden BD-rating — de kan spille med det samme (uden ratingændring, jf.
+// null-safe reglen), og "indplaceres" med rigtige point senere når de findes i klublisten.
+// Bruger den samme delte "Tilføj til gruppe"-vælger som søgesystemet ovenfor (Chris 2026-09-03:
+// "i Kampsystemet skal der være mulighed for at tilføje spillere (enten fra søgning) eller som
+// tilføjelse til en veterangruppe" — samme gruppevalg skal virke for begge indgange).
+function opretNySpiller() {
+  const navnInput = document.getElementById('ny-spiller-navn');
+  const navn = navnInput.value.trim();
+  if (!navn) { showStatus('Skriv et navn på den nye spiller.', 'error'); return; }
+  if (roster.some(p => p.navn.toLowerCase() === navn.toLowerCase())) {
+    showStatus(`${navn} findes allerede i en af grupperne.`, 'error');
+    return;
+  }
+  const gruppeSel = document.getElementById('tilfoej-gruppe');
+  const gruppe = (gruppeSel && gruppeSel.value) || GAEST_GRUPPE;
+  roster.push({
+    navn,
+    gruppe,
+    single: null,
+    double: null,
+    mix: null,
+    tilstede: true,
+    modes: defaultModes({ single: null, double: null, mix: null }),
+  });
+  navnInput.value = '';
+  opsaetGruppeSelect();
+  renderRoster();
+  opdaterLaasDropdowns();
+  renderRatingTable();
+  opdaterH2HDropdowns();
+  showStatus(`${navn} er oprettet (gruppe "${gruppe}") uden BD-rating endnu — kan indplaceres senere, når de er fundet i klublisten.`, 'ok');
+}
+document.getElementById('opret-spiller-btn').addEventListener('click', opretNySpiller);
+
+function opsaetGruppeSelect() {
+  const container = document.getElementById('gruppe-checkboxes');
+  // Bruger `roster` (ikke ROSTER_INITIAL) så en gruppe der først opstår ved at tilføje en
+  // spiller via søgesystemet eller "Opret spiller" (fx "Ekstra (tilføjet)", "Gæst" eller
+  // "Veteran") også dukker op i checkboks-listen.
+  const grupper = [...new Set(roster.map(p => p.gruppe))];
+  // Nye grupper (ikke set før) inkluderes automatisk (checket), så adfærden matcher den gamle
+  // "Alle grupper"-default, indtil brugeren selv fravælger dem. Grupper der ikke længere findes
+  // (ingen medlemmer tilbage) fjernes fra det aktive sæt, så det ikke vokser uendeligt.
+  grupper.forEach(g => { if (!kendteGrupper.has(g)) { aktivGrupper.add(g); kendteGrupper.add(g); } });
+  [...aktivGrupper].forEach(g => { if (!grupper.includes(g)) aktivGrupper.delete(g); });
+  container.innerHTML = grupper.map(g => `
+    <label><input type="checkbox" data-gruppe="${g}" ${aktivGrupper.has(g) ? 'checked' : ''}> ${g}</label>
+  `).join('');
+  container.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+    cb.addEventListener('change', e => {
+      const g = e.target.dataset.gruppe;
+      if (e.target.checked) aktivGrupper.add(g); else aktivGrupper.delete(g);
+      renderRoster();
+      opdaterLaasDropdowns();
+    });
+  });
+  opsaetTilfoejGruppeSelect(grupper);
+}
+
+function opsaetTilfoejGruppeSelect(grupper) {
+  const sel = document.getElementById('tilfoej-gruppe');
+  if (!sel) return;
+  const current = sel.value;
+  // "Ekstra (tilføjet)", "Gæst", "Veteran" og "Motionist" er altid tilgængelige som mål-gruppe
+  // her, selvom ingen spillere er i dem endnu i roster-dataen — se VETERAN_GRUPPE-kommentaren
+  // for hvorfor.
+  const alle = [...new Set([...(grupper || roster.map(p => p.gruppe)), TILFOEJET_GRUPPE, GAEST_GRUPPE, VETERAN_GRUPPE, MOTIONIST_GRUPPE])];
+  sel.innerHTML = alle.map(g => `<option value="${g}">${g}</option>`).join('');
+  if (alle.includes(current)) sel.value = current;
+  else sel.value = TILFOEJET_GRUPPE;
+}
+function renderRoster() {
+  const container = document.getElementById('roster-container');
+  container.innerHTML = '';
+  const grupper = [...new Set(roster.map(p => p.gruppe))].filter(g => aktivGrupper.has(g));
+  grupper.forEach(gruppe => {
+    const title = document.createElement('div');
+    title.className = 'roster-group-title';
+    title.textContent = gruppe;
+    container.appendChild(title);
+    const table = document.createElement('table');
+    table.className = 'roster';
+    table.innerHTML = '<thead><tr><th>Til stede</th><th>Navn</th><th>Kategorier denne runde</th><th>Rating (S/D/Mix)</th></tr></thead>';
+    const tbody = document.createElement('tbody');
+    roster.filter(p => p.gruppe === gruppe).forEach(p => {
+      const tr = document.createElement('tr');
+      tr.dataset.navn = p.navn;
+      const label = (type, tekst, ratingVal) => {
+        const mangler = ratingVal === null;
+        const cls = mangler ? ' class="no-rating-label"' : '';
+        const title = mangler ? ' title="Ingen BD-rating endnu — kan stadig spille, men kampen giver ingen ratingændring"' : '';
+        return `<label${cls}${title}><input type="checkbox" data-type="${type}" ${p.modes[type] ? 'checked' : ''}> ${tekst}</label>`;
+      };
+      tr.innerHTML = `
+        <td><input type="checkbox" data-role="tilstede" ${p.tilstede ? 'checked' : ''}></td>
+        <td>${p.navn}</td>
+        <td>
+          <div class="mode-checks">
+            ${label('single', 'Single', p.single)}
+            ${label('double', 'Double', p.double)}
+            ${label('mixed', 'Mix', p.mix)}
+          </div>
+        </td>
+        <td class="rating-cell">${fmtRating(p.single)} / ${fmtRating(p.double)} / ${fmtRating(p.mix)}</td>
+      `;
+      tr.querySelector('[data-role="tilstede"]').addEventListener('change', e => { p.tilstede = e.target.checked; opdaterLaasDropdowns(); });
+      tr.querySelectorAll('.mode-checks input[type="checkbox"]').forEach(cb => {
+        cb.addEventListener('change', e => { p.modes[e.target.dataset.type] = e.target.checked; });
+      });
+      tbody.appendChild(tr);
+    });
+    table.appendChild(tbody);
+    container.appendChild(table);
+  });
+}
+
+function vaelgAlleTilstede(vaerdi) {
+  roster.filter(p => aktivGrupper.has(p.gruppe)).forEach(p => { p.tilstede = vaerdi; });
+  renderRoster();
+  opdaterLaasDropdowns();
+}
+
+document.getElementById('filter-input').addEventListener('input', e => {
+  const q = e.target.value.trim().toLowerCase();
+  document.querySelectorAll('#roster-container tbody tr').forEach(tr => {
+    tr.classList.toggle('hidden-row', q && !tr.dataset.navn.toLowerCase().includes(q));
+  });
+});
+
+function eksplicitLaasteNavne() {
+  const s = new Set();
+  lockedMatches.forEach(m => { [...m.aSlots, ...m.bSlots].forEach(n => { if (n) s.add(n); }); });
+  return s;
+}
+
+function opdaterLaasDropdowns() {
+  // Bevidst begrænset til spillere krydset af som "til stede" i punkt 1 (Chris 2026-09-03: uden
+  // den begrænsning dukker fx ungdomsspillere op som valgmulighed selvom kun seniorspillerne
+  // rent faktisk er mødt op — det er forvirrende, så det er rullet tilbage til dette).
+  const present = roster.filter(p => p.tilstede && aktivGrupper.has(p.gruppe));
+  const laast = eksplicitLaasteNavne();
+  ['lock-a1', 'lock-a2', 'lock-b1', 'lock-b2'].forEach(id => {
+    const sel = document.getElementById(id);
+    const current = sel.value;
+    const valgbare = present.filter(p => !laast.has(p.navn) || p.navn === current);
+    sel.innerHTML = '<option value="">– auto –</option>' + valgbare.map(p => `<option value="${p.navn}">${p.navn}</option>`).join('');
+    if (valgbare.some(p => p.navn === current)) sel.value = current;
+  });
+}
+document.getElementById('lock-type').addEventListener('change', e => {
+  const flerspiller = e.target.value !== 'single';
+  document.getElementById('lock-a2').style.display = flerspiller ? '' : 'none';
+  document.getElementById('lock-b2').style.display = flerspiller ? '' : 'none';
+});
+document.getElementById('lock-a2').style.display = '';
+document.getElementById('lock-b2').style.display = '';
+
+function tilfoejLaastKamp() {
+  const type = document.getElementById('lock-type').value;
+  const enkelt = type === 'single';
+  const a1 = document.getElementById('lock-a1').value;
+  const a2 = enkelt ? '' : document.getElementById('lock-a2').value;
+  const b1 = document.getElementById('lock-b1').value;
+  const b2 = enkelt ? '' : document.getElementById('lock-b2').value;
+  const aSlots = enkelt ? [a1] : [a1, a2];
+  const bSlots = enkelt ? [b1] : [b1, b2];
+  const navngivne = [...aSlots, ...bSlots].filter(Boolean);
+  if (navngivne.length === 0) { showStatus('Vælg mindst én spiller — resten kan stå på auto.', 'error'); return; }
+  if (new Set(navngivne).size !== navngivne.length) { showStatus('Samme spiller kan ikke optræde flere gange i samme kamp.', 'error'); return; }
+  const allerede = eksplicitLaasteNavne();
+  if (navngivne.some(n => allerede.has(n))) { showStatus('En af spillerne indgår allerede i en anden fastsat kamp.', 'error'); return; }
+  lockedMatches.push({ type, aSlots, bSlots });
+  renderLockedList();
+  opdaterLaasDropdowns();
+}
+
+function beskrivSlots(slots) {
+  return slots.map(n => n || 'auto').join(' / ');
+}
+
+function renderLockedList() {
+  const el = document.getElementById('locked-list');
+  el.innerHTML = '';
+  lockedMatches.forEach((m, i) => {
+    const div = document.createElement('div');
+    div.className = 'locked-item';
+    div.innerHTML = `<span>${TYPE_LABEL[m.type]}: ${beskrivSlots(m.aSlots)} <span class="vs">mod</span> ${beskrivSlots(m.bSlots)} <span class="badge-locked">FASTSAT</span></span><span class="x" data-i="${i}">✕ fjern</span>`;
+    div.querySelector('.x').addEventListener('click', () => { lockedMatches.splice(i, 1); renderLockedList(); opdaterLaasDropdowns(); });
+    el.appendChild(div);
+  });
+}
+
+function showStatus(msg, type) {
+  const el = document.getElementById('status');
+  el.textContent = msg;
+  el.className = 'status show ' + type;
+  setTimeout(() => el.classList.remove('show'), 5000);
+}
+
+function teamAvg(spillere, ratingKey) {
+  return spillere.reduce((s, p) => s + p[ratingKey], 0) / spillere.length;
+}
+function expectedScore(rA, rB) {
+  return 1 / (1 + Math.pow(10, (rB - rA) / ELO_DIVISOR));
+}
+function matchKey(m) {
+  return [...m.a, ...m.b].map(p => p.navn).sort().join('|');
+}
+
+function pairSingles(pool) {
+  const rest = pool.slice();
+  const matches = [];
+  while (rest.length >= 2) matches.push({ type: 'single', a: [rest.shift()], b: [rest.shift()] });
+  return { matches, sidder: rest };
+}
+
+function formTeams(pool, filosofi) {
+  const dp = pool.slice();
+  const teams = [];
+  const sidder = [];
+  if (filosofi === 'ens') {
+    for (let i = 0; i + 1 < dp.length; i += 2) teams.push([dp[i], dp[i + 1]]);
+    if (dp.length % 2 === 1) sidder.push(dp[dp.length - 1]);
+  } else {
+    let lo = 0, hi = dp.length - 1;
+    while (lo < hi) { teams.push([dp[lo], dp[hi]]); lo++; hi--; }
+    if (lo === hi) sidder.push(dp[lo]);
+  }
+  return { teams, sidder };
+}
+
+function matchTeams(teams, type, ratingKey) {
+  const sorted = teams.slice().sort((t1, t2) => teamAvg(t2, ratingKey) - teamAvg(t1, ratingKey));
+  const matches = [];
+  for (let i = 0; i + 1 < sorted.length; i += 2) matches.push({ type, a: sorted[i], b: sorted[i + 1] });
+  const sidder = sorted.length % 2 === 1 ? sorted[sorted.length - 1] : [];
+  return { matches, sidder };
+}
+
+// En spiller kan godt sættes til stede og vælge en disciplin han/hun ikke har nogen BD-rating i
+// endnu (fx en helt ny spiller fra søgesystemet) — de skal kunne spille kampene med det samme.
+// Til selve parringen får de en MIDLERTIDIG "effektiv rating" (gennemsnittet af de andre kendte
+// ratings i samme pulje denne runde, eller en neutral standardværdi hvis ingen er kendte) — det
+// er kun en parrings-hjælp og bliver ALDRIG skrevet til deres rigtige `single`/`double`/`mix`-felt.
+// Se opdaterRating(): en kamp hvor mindst én deltager mangler rigtig rating giver INGEN
+// ratingændring for nogen af deltagerne (kan udregnes bagefter når spilleren får en rigtig
+// BD-rating — se logKamp()).
+const NEUTRAL_FALLBACK_RATING = 1500;
+
+function fallbackRating(kandidater, ratingKey) {
+  const kendte = kandidater.map(p => p[ratingKey]).filter(v => v !== null);
+  if (kendte.length === 0) return NEUTRAL_FALLBACK_RATING;
+  return Math.round(kendte.reduce((s, v) => s + v, 0) / kendte.length);
+}
+
+function wrapForRound(p, ratingKey, fallback) {
+  const w = Object.assign({}, p);
+  w[ratingKey] = p[ratingKey] !== null ? p[ratingKey] : fallback;
+  w._real = p;
+  w._ratingKey = ratingKey;
+  w._hasRating = p[ratingKey] !== null;
+  return w;
+}
+
+function resolveLockedMatches(pools, fallbackByType) {
+  const resolved = [];
+  const ufuldstaendige = [];
+  lockedMatches.forEach(m => {
+    const pool = pools[m.type];
+    const ratingKey = RATING_KEY[m.type];
+    const fallback = fallbackByType[m.type];
+    const fillSlot = navn => {
+      if (navn) { const real = byNavn(navn); return real ? wrapForRound(real, ratingKey, fallback) : null; }
+      return pool.shift();
+    };
+    const aTeam = m.aSlots.map(fillSlot).filter(Boolean);
+    const bTeam = m.bSlots.map(fillSlot).filter(Boolean);
+    const komplet = aTeam.length === m.aSlots.length && bTeam.length === m.bSlots.length;
+    const kamp = { type: m.type, a: aTeam, b: bTeam, locked: true };
+    if (komplet) resolved.push(kamp); else ufuldstaendige.push(kamp);
+  });
+  return { resolved, ufuldstaendige };
+}
+
+function genererRunde() {
+  const present = roster.filter(p => p.tilstede && aktivGrupper.has(p.gruppe));
+  if (present.length === 0) { showStatus('Ingen fremmødte spillere valgt.', 'error'); return; }
+  const explicitte = eksplicitLaasteNavne();
+  const filosofi = document.querySelector('input[name="filosofi"]:checked').value;
+  const statusMsgs = [];
+
+  const ledige = present.filter(p => !explicitte.has(p.navn));
+
+  // Item 1 (Chris 2026-09-03): det er IKKE runden der har kategorier — det er hver spillers
+  // EGNE valgte kategorier (punkt 1, 1/2/3 kan vælges). Spillere uden nogen valgt kategori
+  // sidder automatisk over.
+  const ingenKategoriValgt = ledige.filter(p => !KATEGORI_TYPER.some(t => p.modes[t]));
+  if (ingenKategoriValgt.length) {
+    statusMsgs.push(`Spiller(e) uden nogen valgt kategori denne runde: ${ingenKategoriValgt.map(p => p.navn).join(', ')} — sidder automatisk over.`);
+  }
+
+  // Fordel hver ledig spiller (der har valgt mindst én kategori) til PRÆCIS én kategori-pulje
+  // denne runde — de kan ikke spille flere kategorier samtidig. Spillere med kun ét valg
+  // placeres først; spillere med flere valgte kategorier lægges i den pulje der p.t. har
+  // færrest spillere, for at holde puljerne nogenlunde lige store og runde-fordelingen fair.
+  const kandidater = ledige.filter(p => KATEGORI_TYPER.some(t => p.modes[t]));
+  kandidater.sort((a, b) => {
+    const na = KATEGORI_TYPER.filter(t => a.modes[t]).length;
+    const nb = KATEGORI_TYPER.filter(t => b.modes[t]).length;
+    return na - nb;
+  });
+  const puljeNavne = { single: [], double: [], mixed: [] };
+  const tildeltType = new Map();
+  kandidater.forEach(p => {
+    const valgte = KATEGORI_TYPER.filter(t => p.modes[t]);
+    let valgtType = valgte[0];
+    let mindsteAntal = Infinity;
+    valgte.forEach(t => { if (puljeNavne[t].length < mindsteAntal) { mindsteAntal = puljeNavne[t].length; valgtType = t; } });
+    puljeNavne[valgtType].push(p);
+    tildeltType.set(p.navn, valgtType);
+  });
+
+  function buildPool(type) {
+    const ratingKey = RATING_KEY[type];
+    const kand = puljeNavne[type];
+    const fallback = fallbackRating(kand, ratingKey);
+    const pool = kand.map(p => wrapForRound(p, ratingKey, fallback)).sort((a, b) => b[ratingKey] - a[ratingKey]);
+    return { pool, fallback };
+  }
+  const singleBuild = buildPool('single');
+  const doubleBuild = buildPool('double');
+  const mixedBuild = buildPool('mixed');
+  const pools = { single: singleBuild.pool, double: doubleBuild.pool, mixed: mixedBuild.pool };
+  const fallbackByType = { single: singleBuild.fallback, double: doubleBuild.fallback, mixed: mixedBuild.fallback };
+
+  // Spillere uden BD-rating i deres tildelte kategori er stadig MED i runden — de får bare ingen
+  // ratingændring, se NEUTRAL_FALLBACK_RATING-kommentaren ovenfor.
+  const ingenRating = kandidater.filter(p => p[RATING_KEY[tildeltType.get(p.navn)]] === null);
+  if (ingenRating.length) {
+    statusMsgs.push(`Spiller(e) uden BD-rating i den tildelte kategori: ${ingenRating.map(p => p.navn).join(', ')} — med i runden, men uden ratingændring, indtil de får en rigtig rating.`);
+  }
+
+  const { resolved: laasteKampe, ufuldstaendige } = resolveLockedMatches(pools, fallbackByType);
+  if (ufuldstaendige.length) {
+    statusMsgs.push(`${ufuldstaendige.length} fastsat kamp kunne ikke fyldes helt op (for få ledige spillere til "auto") og er udeladt denne runde.`);
+  }
+  if (statusMsgs.length) showStatus(statusMsgs.join(' '), 'info');
+
+  const { matches: singleMatches, sidder: singleSidder } = pairSingles(pools.single);
+  const { teams: doubleTeams, sidder: doubleFormSidder } = formTeams(pools.double, filosofi);
+  const { matches: doubleMatches, sidder: doubleMatchSidder } = matchTeams(doubleTeams, 'double', 'double');
+  const { teams: mixedTeams, sidder: mixedFormSidder } = formTeams(pools.mixed, filosofi);
+  const { matches: mixedMatches, sidder: mixedMatchSidder } = matchTeams(mixedTeams, 'mixed', 'mix');
+
+  const autoMatches = [...singleMatches, ...doubleMatches, ...mixedMatches];
+  const siddendeOver = [
+    ...singleSidder, ...doubleFormSidder, ...mixedFormSidder,
+    ...doubleMatchSidder, ...mixedMatchSidder,
+    ...ingenKategoriValgt,
+  ];
+
+  // Simpel gentagelses-undgåelse: undgå eksakt samme kamp som sidste runde, ved at
+  // bytte én spiller med naboopgøret hvis muligt (kun ét forsøg pr. kamp, samme type,
+  // ikke fuld optimering — se idébanken for den kendte begrænsning).
+  autoMatches.forEach((m, i) => {
+    if (lastRoundKeys.has(matchKey(m)) && i + 1 < autoMatches.length && m.type === autoMatches[i + 1].type) {
+      const tmp = m.b[m.b.length - 1];
+      m.b[m.b.length - 1] = autoMatches[i + 1].b[autoMatches[i + 1].b.length - 1];
+      autoMatches[i + 1].b[autoMatches[i + 1].b.length - 1] = tmp;
+    }
+  });
+  lastRoundKeys = new Set(autoMatches.map(matchKey));
+
+  const alleMatches = [...laasteKampe, ...autoMatches];
+  const baner = parseInt(document.getElementById('bane-antal').value) || 0;
+  alleMatches.forEach((m, i) => { m.bane = i < baner ? i + 1 : null; });
+  const paaBane = alleMatches.filter(m => m.bane !== null);
+  const ventende = alleMatches.filter(m => m.bane === null);
+
+  rundeTaeller++;
+  renderRunde(paaBane, ventende, siddendeOver);
+}
+
+// Fælles kamp-kort-bygger, brugt både til de almindelige runde-kampe og til ad hoc
+// udskiftningssingler (item 2) — udskiftningskampe har ingen troværdig fælles ratingKey (deltagerne
+// kommer fra forskellige puljer/kategorier), så de viser ingen forventet-procent og påvirker aldrig
+// ratingen, uanset om deltagerne har en rigtig BD-rating.
+function byggMatchCard(m) {
+  const ratingKey = m.udskiftning ? null : RATING_KEY[m.type];
+  const rA = ratingKey ? teamAvg(m.a, ratingKey) : null;
+  const rB = ratingKey ? teamAvg(m.b, ratingKey) : null;
+  const eA = ratingKey ? expectedScore(rA, rB) : null;
+  const manglerNogen = !m.udskiftning && [...m.a, ...m.b].some(p => p._hasRating === false);
+  const div = document.createElement('div');
+  div.className = 'match';
+  div.innerHTML = `
+    <div class="match-head">
+      <span>${m.udskiftning ? 'Udskiftning' : (m.bane ? 'Bane ' + m.bane : 'Venter på ledig bane')} · ${TYPE_LABEL[m.type]}${m.locked ? ' <span class="badge-locked">FASTSAT</span>' : ''}</span>
+    </div>
+    <div class="sides">
+      <div class="side"><strong>${m.a.map(p => p.navn).join(' / ')}</strong>${eA !== null ? `<span class="pct">${Math.round(eA * 100)}% forventet</span>` : ''}</div>
+      <span class="vs">vs</span>
+      <div class="side"><strong>${m.b.map(p => p.navn).join(' / ')}</strong>${eA !== null ? `<span class="pct">${Math.round((1 - eA) * 100)}% forventet</span>` : ''}</div>
+    </div>
+    ${m.udskiftning ? '<p class="udskift-note">🔁 Udskiftningskamp for oversiddende spillere — tæller ikke i ratingen, uanset BD-rating.</p>' : ''}
+    ${manglerNogen ? '<p class="no-rating-note">⚠ Mindst én spiller mangler BD-rating i denne kategori — kampen kan spilles, men giver ingen ratingændring.</p>' : ''}
+    <div class="win-btns">
+      <button class="btn-secondary btn-small" data-side="a">${m.a.map(p => p.navn).join('/')} vandt</button>
+      <button class="btn-secondary btn-small" data-side="b">${m.b.map(p => p.navn).join('/')} vandt</button>
+    </div>
+  `;
+  div.querySelectorAll('.win-btns button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      opdaterRating(m, btn.dataset.side, ratingKey, rA, rB);
+      logKamp(m, btn.dataset.side);
+      div.classList.add('done');
+      div.querySelectorAll('.win-btns button').forEach(b => b.disabled = true);
+      renderRatingTable();
+      renderKamplog();
+    });
+  });
+  return div;
+}
+
+// Item 2 (Chris 2026-09-03): "Denne runde spilles" (runde-niveau kategorier) er fjernet —
+// funktionaliteten er flyttet op i punkt 1 (per-spiller kategorivalg). I stedet skal man for de
+// oversiddende spillere (ulige puljer) kunne enten sætte dem eksplicit på bænken/teknik, eller
+// lave en udskiftningssingle for dem der ALDRIG giver ratingændring.
+function lavUdskiftningskampe(spillere) {
+  const effVaerdi = p => (p.single !== null && p.single !== undefined) ? p.single
+    : (p.double !== null && p.double !== undefined) ? p.double
+    : (p.mix !== null && p.mix !== undefined) ? p.mix
+    : NEUTRAL_FALLBACK_RATING;
+  const sorted = spillere.slice().sort((a, b) => effVaerdi(b) - effVaerdi(a));
+  const kampe = [];
+  for (let i = 0; i + 1 < sorted.length; i += 2) {
+    kampe.push({ type: 'single', a: [sorted[i]], b: [sorted[i + 1]], udskiftning: true, bane: null });
+  }
+  return kampe;
+}
+
+function renderRunde(paaBane, ventende, siddendeOver) {
+  const container = document.getElementById('runde-container');
+  container.innerHTML = `<div class="roster-group-title">Runde ${rundeTaeller}</div>`;
+  const list = document.createElement('div');
+  list.className = 'match-list';
+  [...paaBane, ...ventende].forEach(m => list.appendChild(byggMatchCard(m)));
+  container.appendChild(list);
+  if (siddendeOver.length) {
+    const wrap = document.createElement('div');
+    const p = document.createElement('p');
+    p.className = 'siddende-over';
+    p.textContent = 'Sidder over denne runde: ' + siddendeOver.map(x => x.navn).join(', ');
+    wrap.appendChild(p);
+
+    const btnRow = document.createElement('div');
+    btnRow.className = 'siddende-over-actions';
+    const benchBtn = document.createElement('button');
+    benchBtn.className = 'btn-secondary btn-small';
+    benchBtn.type = 'button';
+    benchBtn.textContent = 'Sæt på bænken/teknik';
+    benchBtn.addEventListener('click', () => {
+      p.textContent = 'På bænken/teknik denne runde: ' + siddendeOver.map(x => x.navn).join(', ');
+      btnRow.querySelectorAll('button').forEach(b => b.disabled = true);
+      showStatus('De oversiddende spillere er markeret som på bænken/teknik denne runde.', 'ok');
+    });
+    btnRow.appendChild(benchBtn);
+
+    if (siddendeOver.length >= 2) {
+      const udskiftBtn = document.createElement('button');
+      udskiftBtn.className = 'btn-secondary btn-small';
+      udskiftBtn.type = 'button';
+      udskiftBtn.textContent = 'Lav udskiftningssingle (ingen ratingændring)';
+      udskiftBtn.addEventListener('click', () => {
+        const kampe = lavUdskiftningskampe(siddendeOver);
+        kampe.forEach(m => list.appendChild(byggMatchCard(m)));
+        btnRow.querySelectorAll('button').forEach(b => b.disabled = true);
+        showStatus(`${kampe.length} udskiftningskamp(e) oprettet for de oversiddende — påvirker ikke ratings.`, 'ok');
+      });
+      btnRow.appendChild(udskiftBtn);
+    }
+    wrap.appendChild(btnRow);
+    container.appendChild(wrap);
+  }
+}
+
+function opdaterRating(m, vinderSide, ratingKey, rA, rB) {
+  // Udskiftningskampe (item 2) giver ALDRIG ratingændring — uanset om deltagerne har en rigtig
+  // BD-rating, da de er sat sammen på tværs af kategorier og ikke tæller med i den normale runde.
+  if (m.udskiftning) { m.ratingOpdateret = false; return; }
+  const deltagere = [...m.a, ...m.b];
+  const alleHarRating = deltagere.every(p => p._hasRating !== false);
+  if (!alleHarRating) { m.ratingOpdateret = false; return; }
+  m.ratingOpdateret = true;
+  const eA = expectedScore(rA, rB);
+  const resultA = vinderSide === 'a' ? 1 : 0;
+  const delta = Math.round(K * (resultA - eA));
+  m.delta = delta;
+  m.a.forEach(p => { const real = p._real || p; real[ratingKey] += delta; p[ratingKey] = real[ratingKey]; });
+  m.b.forEach(p => { const real = p._real || p; real[ratingKey] -= delta; p[ratingKey] = real[ratingKey]; });
+}
+
+function logKamp(m, vinderSide) {
+  matchHistory.push({
+    runde: rundeTaeller,
+    type: m.type,
+    a: m.a.map(p => p.navn),
+    b: m.b.map(p => p.navn),
+    vinder: vinderSide,
+    udskiftning: !!m.udskiftning,
+    ratingOpdateret: m.ratingOpdateret !== false,
+    manglerRatingFor: [...m.a, ...m.b].filter(p => p._hasRating === false).map(p => p.navn),
+    ratingDelta: m.ratingOpdateret ? m.delta : null,
+  });
+}
+
+function renderKamplog() {
+  const el = document.getElementById('kamplog');
+  if (matchHistory.length === 0) { el.innerHTML = '<p class="card-sub" style="margin:0;">Ingen kampe registreret endnu.</p>'; return; }
+  el.innerHTML = '';
+  matchHistory.slice().reverse().forEach(m => {
+    const vinderTekst = (m.vinder === 'a' ? m.a : m.b).join('/');
+    const div = document.createElement('div');
+    div.className = 'kamplog-row';
+    let ratingNote = '';
+    if (m.udskiftning) {
+      ratingNote = ' <span class="no-rating">(udskiftningskamp — ingen ratingændring)</span>';
+    } else if (m.ratingOpdateret === false) {
+      ratingNote = ' <span class="no-rating">(ingen ratingændring — mangler BD-rating for ' + m.manglerRatingFor.join('/') + ')</span>';
+    }
+    div.innerHTML = `<span class="muted">R${m.runde} · ${TYPE_LABEL[m.type]}</span><span>${m.a.join('/')} vs ${m.b.join('/')} — <strong>${vinderTekst}</strong> vandt${ratingNote}</span>`;
+    el.appendChild(div);
+  });
+}
+
+function opdaterH2HDropdowns() {
+  const sorted = roster.slice().sort((a, b) => a.navn.localeCompare(b.navn, 'da'));
+  ['h2h-a', 'h2h-b'].forEach(id => {
+    const sel = document.getElementById(id);
+    sel.innerHTML = sorted.map(p => `<option value="${p.navn}">${p.navn}</option>`).join('');
+  });
+  if (sorted.length > 1) document.getElementById('h2h-b').selectedIndex = 1;
+}
+
+function visH2H() {
+  const navnA = document.getElementById('h2h-a').value;
+  const navnB = document.getElementById('h2h-b').value;
+  const el = document.getElementById('h2h-result');
+  if (!navnA || !navnB || navnA === navnB) { showStatus('Vælg to forskellige spillere.', 'error'); return; }
+
+  const opgoer = matchHistory.filter(m => {
+    const aHarA = m.a.includes(navnA), bHarA = m.b.includes(navnA);
+    const aHarB = m.a.includes(navnB), bHarB = m.b.includes(navnB);
+    return (aHarA && bHarB) || (bHarA && aHarB);
+  });
+
+  let sejreA = 0, sejreB = 0;
+  const rows = opgoer.map(m => {
+    const aHarA = m.a.includes(navnA);
+    const sideAVandt = m.vinder === 'a';
+    const navnAVandt = (aHarA && sideAVandt) || (!aHarA && !sideAVandt);
+    if (navnAVandt) sejreA++; else sejreB++;
+    return { m, navnAVandt };
+  });
+
+  el.innerHTML = `<div class="h2h-score">${navnA} ${sejreA} – ${sejreB} ${navnB}</div>`;
+  if (rows.length === 0) {
+    el.innerHTML += '<p class="card-sub" style="margin:0;">Ingen registrerede indbyrdes kampe endnu (kun kampe fra denne session tælles).</p>';
+    return;
+  }
+  rows.slice().reverse().forEach(({ m, navnAVandt }) => {
+    const div = document.createElement('div');
+    div.className = 'h2h-row';
+    div.innerHTML = `<span>R${m.runde} · ${TYPE_LABEL[m.type]} · ${m.a.join('/')} vs ${m.b.join('/')}</span><span class="${navnAVandt ? 'win' : ''}">${navnAVandt ? navnA : navnB} vandt</span>`;
+    el.appendChild(div);
+  });
+}
+
+function renderRatingTable() {
+  const tbody = document.getElementById('rating-table-body');
+  tbody.innerHTML = '';
+  roster.forEach(p => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${p.navn}</td><td>${p.gruppe}</td><td class="rating-cell">${fmtRating(p.single)}</td><td class="rating-cell">${fmtRating(p.double)}</td><td class="rating-cell">${fmtRating(p.mix)}</td>`;
+    tbody.appendChild(tr);
+  });
+}
+
+function visSyncStatus(tekst) {
+  const el = document.getElementById('sync-status');
+  if (el) el.textContent = tekst;
+}
+
+async function hentFraSheets() {
+  visSyncStatus('Henter gemt data fra Sheets...');
+  try {
+    const url = `/.netlify/functions/elo-hent?spreadsheetId=${encodeURIComponent(KAMPSYSTEM_SPREADSHEET_ID)}`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    sheetsForbindelseOk = true;
+
+    if (Array.isArray(data.roster) && data.roster.length > 0) {
+      const gemt = new Map(data.roster.map(p => [p.navn, p]));
+      // Overlay: gemte spillere (inkl. deres eventuelt opdaterede rating og evt. nye grupper som
+      // "Ekstra (tilføjet)") lægges over ROSTER_INITIAL. Spillere der endnu ikke er gemt i
+      // Sheets (fx allerførste gang) beholder deres BD-seedede startværdi fra ROSTER_INITIAL.
+      const navneFraInitial = new Set(ROSTER_INITIAL.map(p => p.navn));
+      const merged = ROSTER_INITIAL.map(p => {
+        const g = gemt.get(p.navn);
+        return g ? Object.assign({}, p, { gruppe: g.gruppe || p.gruppe, single: g.single, double: g.double, mix: g.mix }) : p;
+      });
+      data.roster.forEach(g => {
+        if (!navneFraInitial.has(g.navn)) merged.push({ navn: g.navn, gruppe: g.gruppe, single: g.single, double: g.double, mix: g.mix });
+      });
+      roster = merged.map(p => Object.assign({}, p, { tilstede: false, modes: defaultModes(p) }));
+    }
+
+    if (Array.isArray(data.kampe) && data.kampe.length > 0) {
+      matchHistory = data.kampe.map(k => ({
+        runde: k.runde,
+        type: k.type,
+        a: [k.a1, k.a2].filter(Boolean),
+        b: [k.b1, k.b2].filter(Boolean),
+        vinder: k.vinder,
+        ratingOpdateret: k.ratingAendring !== '' && k.ratingAendring !== null && k.ratingAendring !== undefined,
+        manglerRatingFor: [],
+        ratingDelta: k.ratingAendring === '' ? null : k.ratingAendring,
+      }));
+      sidstGemtKampIndex = matchHistory.length;
+      rundeTaeller = matchHistory.reduce((m, k) => Math.max(m, k.runde || 0), 0);
+    }
+
+    opsaetGruppeSelect();
+    renderRoster();
+    opdaterLaasDropdowns();
+    renderRatingTable();
+    renderKamplog();
+    opdaterH2HDropdowns();
+    visSyncStatus('Hentet fra Sheets ' + new Date().toLocaleTimeString('da-DK'));
+  } catch (err) {
+    sheetsForbindelseOk = false;
+    // Rammes både i Claude-previewet (andet domæne end de deployede funktioner) OG på den rigtige
+    // side FØR Google Sheet'et er oprettet/delt med service-kontoen — teksten er derfor bevidst
+    // holdt neutral i stedet for at antage det er en preview, så den er retvisende i begge tilfælde.
+    visSyncStatus('Ingen forbindelse til Sheets — kører uden gem/hent lige nu (data findes kun i denne session).');
+  }
+}
+
+async function gemTilSheets() {
+  visSyncStatus('Gemmer til Sheets...');
+  const nyeKampe = matchHistory.slice(sidstGemtKampIndex).map(k => ({
+    runde: k.runde,
+    type: k.type,
+    a1: k.a[0] || '', a2: k.a[1] || '',
+    b1: k.b[0] || '', b2: k.b[1] || '',
+    vinder: k.vinder,
+    ratingAendring: k.ratingDelta === null || k.ratingDelta === undefined ? '' : k.ratingDelta,
+  }));
+  const body = {
+    spreadsheetId: KAMPSYSTEM_SPREADSHEET_ID,
+    roster: roster.map(p => ({ navn: p.navn, gruppe: p.gruppe, single: p.single, double: p.double, mix: p.mix })),
+    nyeKampe,
+  };
+  try {
+    const res = await fetch('/.netlify/functions/elo-gem', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    sheetsForbindelseOk = true;
+    sidstGemtKampIndex = matchHistory.length;
+    visSyncStatus('Gemt til Sheets ' + new Date().toLocaleTimeString('da-DK'));
+    showStatus('Gemt til Sheets.', 'ok');
+  } catch (err) {
+    sheetsForbindelseOk = false;
+    visSyncStatus('Kunne ikke gemme til Sheets — data er stadig i denne session.');
+    showStatus('Kunne ikke gemme til Sheets lige nu. Intet er tabt — data ligger stadig i denne session, prøv "Gem nu" igen når Sheets-forbindelsen virker (kræver at det rigtige regneark er oprettet og delt med service-kontoen).', 'error');
+  }
+}
+
+function nulstilEksempeldata() {
+  roster = ROSTER_INITIAL.map(p => Object.assign({}, p, { tilstede: false, modes: defaultModes(p) }));
+  lockedMatches = [];
+  matchHistory = [];
+  sidstGemtKampIndex = 0;
+  lastRoundKeys = new Set();
+  rundeTaeller = 0;
+  document.getElementById('runde-container').innerHTML = '';
+  document.getElementById('h2h-result').innerHTML = '';
+  aktivGrupper = new Set();
+  kendteGrupper = new Set();
+  opsaetGruppeSelect();
+  renderRoster();
+  opdaterLaasDropdowns();
+  renderLockedList();
+  renderRatingTable();
+  renderKamplog();
+  opdaterH2HDropdowns();
+  renderSoegeResultater('');
+  showStatus('Eksempeldata nulstillet (inkl. spillere tilføjet via søgesystemet).', 'ok');
+}
+
+opsaetGruppeSelect();
+renderRoster();
+opdaterLaasDropdowns();
+renderRatingTable();
+renderKamplog();
+opdaterH2HDropdowns();
+hentFraSheets(); // best-effort, opdaterer visningen igen hvis/når den lykkes
+</script>
+
+</body>
+</html>

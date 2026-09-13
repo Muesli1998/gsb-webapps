@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GSB Dream Team – Statistik</title>
+<script src="/seasons.js"></script>
+<style>
+  :root {
+    --court-green: #1f5c3f; --court-green-dark: #123a28; --line-white: #f7f5ef;
+    --shuttle: #e8a33d; --ink: #1c2420; --muted: #5c6b62; --border: #d7ddd4; --error: #b3432f; --ok: #1f5c3f;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--line-white); color: var(--ink); line-height: 1.45; }
+  header { background: var(--court-green); color: var(--line-white); padding: 28px 24px 24px; position: relative; overflow: hidden; }
+  header::after { content: ""; position: absolute; right: -40px; top: -40px; width: 180px; height: 180px; border: 3px solid rgba(255,255,255,0.12); border-radius: 50%; }
+  header h1 { margin: 0 0 4px; font-size: 1.5rem; font-weight: 700; }
+  header p { margin: 0; color: rgba(247,245,239,0.75); font-size: 0.92rem; max-width: 640px; }
+  main { max-width: 1080px; margin: 0 auto; padding: 24px 20px 60px; }
+  .card { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 20px; }
+  .card h2 { margin: 0 0 4px; font-size: 1.05rem; }
+  .card .desc { margin: 0 0 16px; color: var(--muted); font-size: 0.86rem; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  th { background: #f2f1eb; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.03em; color: var(--muted); cursor: pointer; }
+  th:hover { color: var(--court-green); }
+  tr:hover td { background: #f7fbf8; }
+  .bar-cell { display: flex; align-items: center; gap: 8px; min-width: 140px; }
+  .bar-track { flex: 1; height: 8px; background: #eee; border-radius: 4px; overflow: hidden; }
+  .bar-fill { height: 100%; background: var(--court-green); }
+  .pct { font-weight: 700; font-variant-numeric: tabular-nums; min-width: 42px; text-align: right; }
+  .team-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; }
+  .team-card { background: #f7fbf8; border: 1px solid var(--border); border-radius: 8px; padding: 14px; text-align: center; }
+  .team-card .hold { font-size: 0.78rem; color: var(--muted); font-weight: 600; }
+  .team-card .pct-big { font-size: 1.8rem; font-weight: 800; color: var(--court-green); margin: 4px 0; }
+  .team-card .record { font-size: 0.78rem; color: var(--muted); }
+  .loading, .error-msg { text-align: center; padding: 30px; color: var(--muted); }
+  .error-msg { color: var(--error); }
+  .field { margin-bottom: 16px; }
+  .field input { padding: 8px 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.9rem; width: 100%; max-width: 400px; }
+  .selector-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: flex-end; margin-bottom: 4px; }
+  .selector-field { display: flex; flex-direction: column; gap: 4px; }
+  .selector-field label { font-size: 0.74rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.03em; }
+  .selector-field select, .selector-field input { padding: 8px 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.9rem; font-family: inherit; }
+  .search { margin-bottom: 12px; }
+
+  /* Season multi-select pills */
+  .season-pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .season-pill { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--border); border-radius: 20px; padding: 6px 12px; font-size: 0.84rem; cursor: pointer; user-select: none; background: #fff; }
+  .season-pill input { margin: 0; accent-color: var(--court-green); }
+  .season-pill.checked { border-color: var(--court-green); background: #eaf3ee; color: var(--court-green-dark); font-weight: 600; }
+
+  /* Hold x Kategori matrix */
+  .matrix-wrap { overflow-x: auto; }
+  table.matrix { min-width: 560px; }
+  table.matrix th, table.matrix td { text-align: center; }
+  table.matrix th:first-child, table.matrix td:first-child { text-align: left; }
+  table.matrix td.cell { cursor: pointer; border-radius: 6px; padding: 6px 8px; transition: background .12s ease; }
+  table.matrix td.cell:hover { background: #eaf3ee; }
+  table.matrix td.cell.selected { background: var(--court-green); }
+  table.matrix td.cell.selected .cell-pct, table.matrix td.cell.selected .cell-n { color: #fff; }
+  table.matrix td.cell.empty { color: #b7beb9; cursor: default; }
+  table.matrix td.cell.empty:hover { background: transparent; }
+  .cell-pct { font-weight: 700; font-variant-numeric: tabular-nums; display: block; }
+  .cell-n { font-size: 0.68rem; color: var(--muted); display: block; }
+  table.matrix td.cell.selected .cell-n { color: rgba(255,255,255,0.8); }
+  tr.matrix-total td { border-top: 2px solid var(--border); font-weight: 700; background: #fbfaf6; }
+
+  .filter-bar {
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    background: #eaf3ee; border: 1px solid var(--court-green); border-radius: 8px;
+    padding: 8px 12px; margin-bottom: 12px; font-size: 0.85rem;
+  }
+  .filter-bar strong { color: var(--court-green-dark); }
+  .filter-bar .chip { background: #fff; border: 1px solid var(--court-green); border-radius: 20px; padding: 2px 10px; font-size: 0.78rem; }
+  .filter-bar button.reset {
+    margin-left: auto; background: none; border: 1px solid var(--court-green); color: var(--court-green);
+    border-radius: 6px; padding: 4px 10px; font-size: 0.78rem; font-weight: 600; cursor: pointer;
+  }
+  .filter-bar button.reset:hover { background: var(--court-green); color: #fff; }
+
+  tr.player-row { cursor: pointer; }
+  tr.player-detail-row { display: none; }
+  tr.player-detail-row.show { display: table-row; }
+  tr.player-detail-row td { background: #f7fbf8; padding: 10px 14px; }
+  .detail-pill { display: inline-block; background: #fff; border: 1px solid var(--border); border-radius: 20px; padding: 3px 10px; font-size: 0.78rem; margin: 2px 6px 2px 0; }
+  .board-trend { color: var(--shuttle); font-weight: 700; }
+
+  .compare-note { background: #eef1f6; border: 1px solid #c7d2e0; border-radius: 8px; padding: 10px 14px; font-size: 0.85rem; color: #3a5570; margin-bottom: 16px; }
+  table.compare th.season-col, table.compare td.season-col { text-align: right; font-variant-numeric: tabular-nums; }
+  .expand-toggle { background: none; border: none; color: var(--court-green); font-size: 0.78rem; font-weight: 600; cursor: pointer; padding: 0; }
+  tr.compare-detail { display: none; }
+  tr.compare-detail.show { display: table-row; }
+  tr.compare-detail td { background: #f7fbf8; padding: 10px 14px; }
+  .compare-detail-season { font-size: 0.8rem; margin-bottom: 6px; }
+  .compare-detail-season strong { color: var(--court-green-dark); }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🏸 GSB Dream Team – Statistik</h1>
+  <p>Winrate for hold, spillere og kategorier. Vælg én sæson for at zoome ind, eller flere for at sammenligne dem.</p>
+  <nav style="display:flex; gap:16px; margin-top:14px; flex-wrap:wrap; position:relative; z-index:1;">
+    <a href="/index.html" style="color:rgba(247,245,239,0.85); font-size:0.85rem; text-decoration:none;">📥 Data-indskrivning</a>
+    <a href="/tilmelding.html" style="color:rgba(247,245,239,0.85); font-size:0.85rem; text-decoration:none;">✍️ Tilmelding</a>
+    <a href="/analyse.html" style="color:#fff; font-size:0.85rem; text-decoration:none; font-weight:700; border-bottom:2px solid #fff; padding-bottom:2px;">📊 Statistik</a>
+    <a href="/stilling.html" style="color:rgba(247,245,239,0.85); font-size:0.85rem; text-decoration:none;">🏆 Historisk stilling</a>
+    <a href="/senior-ungdom-tilmelding.html" style="color:rgba(247,245,239,0.85); font-size:0.85rem; text-decoration:none;">🏸 Ungdomssparring</a>
+  </nav>
+</header>
+
+<main>
+  <div class="card" id="fetch-card">
+    <div class="selector-field" style="margin-bottom:14px;">
+      <label>Sæson(er)</label>
+      <div class="season-pills" id="season-pills"></div>
+    </div>
+    <div class="selector-row">
+      <div class="selector-field">
+        <label for="f-preset">Runder</label>
+        <select id="f-preset" onchange="onPresetChange(); hentData();"></select>
+      </div>
+      <div class="selector-field" id="custom-rounds" style="display:none;">
+        <label>Fra – til runde</label>
+        <div style="display:flex; gap:6px; align-items:center;">
+          <input type="number" id="f-runde-min" min="1" max="12" value="1" style="width:60px;">
+          <span>–</span>
+          <input type="number" id="f-runde-max" min="1" max="12" value="11" style="width:60px;">
+        </div>
+      </div>
+      <button onclick="kopierLink()" id="copy-link-btn" style="background:transparent; color:#1f5c3f; border:1px solid #1f5c3f; padding:10px 14px; border-radius:6px; font-weight:600; cursor:pointer;">🔗 Kopiér link til denne visning</button>
+    </div>
+  </div>
+
+  <div id="content"></div>
+</main>
+
+<footer style="text-align:center; color:var(--muted); font-size:0.78rem; padding:8px 20px 30px;">
+  Hold der ikke spiller slutspil den pågældende sæson (sat i seasons.js pr. sæson) tæller altid deres fulde sæson med, uanset runde-filter.
+</footer>
+
+<script>
+let seasonResults = [];          // [{season, data}], one per selected+valid season
+let selectedCells = new Set();   // "hold|kategori" — single-season matrix multi-select
+let expandedPlayers = new Set(); // player names with an open detail row
+let expandedCompareRows = new Set();
+let fetchToken = 0;
+
+function getConfiguredSeasons() { return GSB_SEASONS; }
+
+function populateSelectors() {
+  const wrap = document.getElementById('season-pills');
+  GSB_SEASONS.forEach((s, i) => {
+    const label = document.createElement('label');
+    label.className = 'season-pill' + (i === 0 ? ' checked' : '');
+    label.innerHTML = `<input type="checkbox" value="${s.spreadsheetId}" ${i === 0 ? 'checked' : ''}> ${s.label}`;
+    const input = label.querySelector('input');
+    input.addEventListener('change', () => {
+      label.classList.toggle('checked', input.checked);
+      selectedCells = new Set();
+      hentData();
+    });
+    wrap.appendChild(label);
+  });
+
+  const presetSel = document.getElementById('f-preset');
+  GSB_ROUND_PRESETS.forEach((p) => {
+    const opt = document.createElement('option');
+    opt.value = p.key;
+    opt.textContent = p.label;
+    presetSel.appendChild(opt);
+  });
+}
+
+function onPresetChange() {
+  const key = document.getElementById('f-preset').value;
+  const preset = GSB_ROUND_PRESETS.find((p) => p.key === key);
+  const customEl = document.getElementById('custom-rounds');
+  if (!preset || preset.key === 'brugerdef') {
+    customEl.style.display = 'flex';
+  } else {
+    customEl.style.display = 'none';
+    document.getElementById('f-runde-min').value = preset.min;
+    document.getElementById('f-runde-max').value = preset.max;
+  }
+}
+
+let debounceTimer = null;
+function onRangeInputChanged() {
+  clearTimeout(debounceTimer);
+  debounceTimer = setTimeout(hentData, 400);
+}
+
+function getCheckedSeasonIds() {
+  return Array.from(document.querySelectorAll('#season-pills input:checked')).map(i => i.value);
+}
+
+function applyUrlParams() {
+  try {
+    const p = new URLSearchParams(location.search);
+    if (p.get('seasons')) {
+      const wanted = new Set(p.get('seasons').split(','));
+      document.querySelectorAll('#season-pills input').forEach(input => {
+        input.checked = wanted.has(input.value);
+        input.closest('.season-pill').classList.toggle('checked', input.checked);
+      });
+    }
+    if (p.get('preset')) document.getElementById('f-preset').value = p.get('preset');
+    onPresetChange();
+    if (p.get('rundeMin')) document.getElementById('f-runde-min').value = p.get('rundeMin');
+    if (p.get('rundeMax')) document.getElementById('f-runde-max').value = p.get('rundeMax');
+    if (p.get('cells')) {
+      selectedCells = new Set(p.get('cells').split(',').map(c => c.replace('::', '|')));
+    }
+  } catch (e) { /* no-op */ }
+}
+
+function updateUrl() {
+  try {
+    const p = new URLSearchParams();
+    p.set('seasons', getCheckedSeasonIds().join(','));
+    p.set('preset', document.getElementById('f-preset').value);
+    p.set('rundeMin', document.getElementById('f-runde-min').value);
+    p.set('rundeMax', document.getElementById('f-runde-max').value);
+    if (selectedCells.size) p.set('cells', Array.from(selectedCells).map(c => c.replace('|', '::')).join(','));
+    history.replaceState(null, '', '?' + p.toString());
+  } catch (e) { /* preview sandbox may not allow history writes — harmless */ }
+}
+
+function kopierLink() {
+  updateUrl();
+  const btn = document.getElementById('copy-link-btn');
+  try {
+    navigator.clipboard.writeText(location.href);
+    const old = btn.textContent;
+    btn.textContent = '✓ Link kopieret';
+    setTimeout(() => { btn.textContent = old; }, 1500);
+  } catch (e) {
+    prompt('Kopiér linket herunder:', location.href);
+  }
+}
+
+async function hentData() {
+  const token = ++fetchToken;
+  const checkedIds = new Set(getCheckedSeasonIds());
+  const checked = GSB_SEASONS.filter(s => checkedIds.has(s.spreadsheetId));
+  const content = document.getElementById('content');
+
+  if (checked.length === 0) {
+    content.innerHTML = '<div class="card"><p class="error-msg" style="padding:10px 0;">Vælg mindst én sæson.</p></div>';
+    return;
+  }
+  const valid = checked.filter(s => !s.spreadsheetId.startsWith('SÆT_'));
+  if (valid.length === 0) {
+    content.innerHTML = '<div class="card"><p class="error-msg" style="padding:10px 0;">Ingen af de valgte sæsoner er sat op endnu i seasons.js.</p></div>';
+    return;
+  }
+
+  const rundeMin = document.getElementById('f-runde-min').value || 1;
+  const rundeMax = document.getElementById('f-runde-max').value || 11;
+  content.innerHTML = '<div class="loading">Henter og beregner...</div>';
+
+  try {
+    const results = await Promise.all(valid.map(async (s) => {
+      const exempt = (s.ikkeSlutspilHold || []).join(',');
+      const res = await fetch(`/.netlify/functions/analyse?spreadsheetId=${s.spreadsheetId}&rundeMin=${rundeMin}&rundeMax=${rundeMax}&ikkeSlutspilHold=${encodeURIComponent(exempt)}`);
+      const json = await res.json();
+      if (!res.ok) throw new Error(`${s.label}: ` + (json.error || 'Ukendt fejl'));
+      return { season: s, data: json };
+    }));
+    if (token !== fetchToken) return; // a newer request superseded this one
+    seasonResults = results;
+    updateUrl();
+    render();
+  } catch (err) {
+    if (token !== fetchToken) return;
+    content.innerHTML = `<div class="error-msg">Kunne ikke hente statistik: ${err.message}</div>`;
+  }
+}
+
+// Board-position trend for one hold|kategori slice, e.g. "· Board 2→2→1".
+// Boards are numbered 1 (bedste/top-board) og opefter, udledt af rækkefølgen
+// hent-resultater.js skrev kampene i (se runAnalyse). Kun vist når vi har data.
+function boardTrend(s) {
+  if (!s.positions || !s.positions.length) return '';
+  var sorted = s.positions.slice().sort(function (a, b) { return a.runde - b.runde; });
+  var seq = sorted.map(function (x) { return x.position; }).join('→');
+  return ` · <span class="board-trend">Board ${seq}</span>`;
+}
+
+function pillHtml(key, s) {
+  return `<span class="detail-pill">${key.replace('|', ' · ')}: ${s.wins}S/${s.losses}T (${s.winPct}%)${boardTrend(s)}</span>`;
+}
+
+function pctBar(pct, wins, losses) {
+  if (pct === null || pct === undefined) return '<span style="color:#999">Ingen kampe</span>';
+  return `<div class="bar-cell">
+    <div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div>
+    <span class="pct">${pct}%</span>
+  </div><div style="font-size:0.72rem; color:var(--muted);">${wins}S / ${losses}T</div>`;
+}
+
+function render() {
+  const content = document.getElementById('content');
+  if (seasonResults.length === 1) {
+    content.innerHTML = renderSingleSeason(seasonResults[0]);
+    wireSingleSeasonEvents(seasonResults[0]);
+  } else {
+    content.innerHTML = renderCompare(seasonResults);
+    wireCompareEvents(seasonResults);
+  }
+}
+
+// ---------------------------------------------------------------------
+// Single-season view: team cards, hold×kategori matrix (multi-select),
+// player table with click-to-drill-down.
+// ---------------------------------------------------------------------
+function renderSingleSeason(entry) {
+  const { data } = entry;
+  const { players, teams, matrix, categories, totalRows } = data;
+
+  if (totalRows === 0) {
+    return `<div class="card"><p class="error-msg" style="padding:10px 0;">Ingen kampe fundet for denne sæson/runde-interval endnu.</p></div>`;
+  }
+
+  const holds = [...teams].sort((a, b) => a.hold.localeCompare(b.hold));
+  const kats = [...categories].sort((a, b) => a.kategori.localeCompare(b.kategori));
+
+  let html = '';
+
+  html += `<div class="card"><h2>Hold</h2><p class="desc">Winrate pr. GSB-hold · runde ${data.rundeMin}-${data.rundeMax} (${totalRows} kamplinjer analyseret)</p><div class="team-cards">`;
+  holds.forEach(t => {
+    html += `<div class="team-card">
+      <div class="hold">${t.hold}</div>
+      <div class="pct-big">${t.winPct !== null ? t.winPct + '%' : '–'}</div>
+      <div class="record">${t.wins} sejre / ${t.losses} tab</div>
+    </div>`;
+  });
+  html += `</div></div>`;
+
+  html += `<div class="card"><h2>Hold &times; Kategori</h2><p class="desc">Klik &eacute;n eller flere celler for at zoome ind i spillerlisten nedenfor &mdash; fx DD for b&aring;de GSB 1 og GSB 2.</p>
+    <div class="matrix-wrap"><table class="matrix"><thead><tr><th>Hold</th>`;
+  kats.forEach(k => { html += `<th>${k.kategori}</th>`; });
+  html += `<th>Total</th></tr></thead><tbody>`;
+
+  holds.forEach(t => {
+    html += `<tr><td>${t.hold}</td>`;
+    kats.forEach(k => {
+      const cell = (matrix[t.hold] || {})[k.kategori];
+      if (!cell || cell.total === 0) {
+        html += `<td class="cell empty">–</td>`;
+      } else {
+        const key = t.hold + '|' + k.kategori;
+        const sel = selectedCells.has(key) ? ' selected' : '';
+        html += `<td class="cell${sel}" data-hold="${t.hold}" data-kategori="${k.kategori}">
+          <span class="cell-pct">${cell.winPct}%</span><span class="cell-n">${cell.total} kampe</span>
+        </td>`;
+      }
+    });
+    html += `<td class="cell empty" style="cursor:default; color:var(--ink); font-weight:700;">${t.winPct !== null ? t.winPct + '%' : '–'}</td></tr>`;
+  });
+
+  html += `<tr class="matrix-total"><td>Alle hold</td>`;
+  kats.forEach(k => { html += `<td>${k.winPct !== null ? k.winPct + '%' : '–'}</td>`; });
+  const grandWins = holds.reduce((a, t) => a + t.wins, 0);
+  const grandLosses = holds.reduce((a, t) => a + t.losses, 0);
+  const grandTotal = grandWins + grandLosses;
+  const grandPct = grandTotal > 0 ? Math.round((grandWins / grandTotal) * 1000) / 10 : null;
+  html += `<td>${grandPct !== null ? grandPct + '%' : '–'}</td></tr>`;
+  html += `</tbody></table></div></div>`;
+
+  // Player table, optionally filtered by selected matrix cells
+  let rows = players.map(p => ({ navn: p.navn, total: p.total, winPct: p.winPct, wins: p.wins, losses: p.losses, byHoldCategory: p.byHoldCategory, holdKategori: null }));
+  if (selectedCells.size > 0) {
+    rows = [];
+    players.forEach(p => {
+      selectedCells.forEach(key => {
+        const slice = p.byHoldCategory && p.byHoldCategory[key];
+        if (slice) {
+          const [hold, kategori] = key.split('|');
+          rows.push({ navn: p.navn, total: slice.total, winPct: slice.winPct, wins: slice.wins, losses: slice.losses, holdKategori: `${hold} · ${kategori}`, byHoldCategory: p.byHoldCategory });
+        }
+      });
+    });
+    rows.sort((a, b) => b.total - a.total);
+  }
+
+  html += `<div class="card"><h2>Spillere</h2>`;
+  if (selectedCells.size > 0) {
+    html += `<div class="filter-bar">Filter:`;
+    selectedCells.forEach(key => { html += ` <span class="chip">${key.replace('|', ' · ')}</span>`; });
+    html += `<button class="reset" id="reset-filter-btn">Nulstil filter</button></div>`;
+  } else {
+    html += `<p class="desc">Winrate pr. spiller (samlet). Klik en spiller for at se deres opdeling pr. hold og kategori, inkl. hvilket board de har spillet på runde for runde. Klik en kolonne for at sortere.</p>`;
+  }
+  html += `<input type="text" class="search" id="player-search" placeholder="Søg efter spiller..." style="padding:8px 10px; border:1px solid var(--border); border-radius:6px; width:100%; max-width:300px;">
+    <table id="player-table">
+    <thead><tr>
+      <th data-sort="navn">Spiller</th>
+      ${selectedCells.size > 0 ? '<th>Hold · Kategori</th>' : ''}
+      <th data-sort="total">Kampe</th>
+      <th data-sort="winPct">Winrate</th>
+    </tr></thead><tbody id="player-tbody"></tbody></table></div>`;
+
+  window.__playerRows = rows;
+  window.__playerFiltered = selectedCells.size > 0;
+  return html;
+}
+
+let currentSort = { key: 'total', dir: -1 };
+
+function playerRowsHtml(rows, filtered) {
+  return rows.map((p, i) => {
+    const rowId = `player-detail-${i}-${p.navn.replace(/[^a-zA-Z0-9]/g, '')}`;
+    let detail = '';
+    if (p.byHoldCategory) {
+      const entries = Object.keys(p.byHoldCategory).sort();
+      detail = entries.map(k => pillHtml(k, p.byHoldCategory[k])).join('') || '<span style="color:var(--muted);">Ingen data</span>';
+    }
+    return `
+    <tr class="player-row" data-name="${p.navn.toLowerCase()}" data-detail="${rowId}">
+      <td>${p.navn}</td>
+      ${filtered ? `<td>${p.holdKategori || ''}</td>` : ''}
+      <td>${p.total}</td>
+      <td>${pctBar(p.winPct, p.wins, p.losses)}</td>
+    </tr>
+    <tr class="player-detail-row" id="${rowId}"><td colspan="${filtered ? 4 : 3}">${detail}</td></tr>`;
+  }).join('');
+}
+
+function wireSingleSeasonEvents(entry) {
+  document.querySelectorAll('table.matrix td.cell[data-hold]').forEach(td => {
+    td.addEventListener('click', () => {
+      const key = td.dataset.hold + '|' + td.dataset.kategori;
+      if (selectedCells.has(key)) selectedCells.delete(key); else selectedCells.add(key);
+      updateUrl();
+      render();
+    });
+  });
+  const resetBtn = document.getElementById('reset-filter-btn');
+  if (resetBtn) resetBtn.addEventListener('click', () => { selectedCells = new Set(); updateUrl(); render(); });
+
+  const tbody = document.getElementById('player-tbody');
+  function draw(rows) {
+    tbody.innerHTML = playerRowsHtml(rows, window.__playerFiltered);
+    tbody.querySelectorAll('tr.player-row').forEach(tr => {
+      tr.addEventListener('click', () => {
+        document.getElementById(tr.dataset.detail).classList.toggle('show');
+      });
+    });
+  }
+  draw(window.__playerRows);
+
+  document.querySelectorAll('#player-table th[data-sort]').forEach(th => {
+    th.addEventListener('click', () => {
+      const key = th.dataset.sort;
+      if (currentSort.key === key) currentSort.dir *= -1; else { currentSort.key = key; currentSort.dir = key === 'navn' ? 1 : -1; }
+      const sorted = [...window.__playerRows].sort((a, b) => {
+        if (typeof a[key] === 'string') return a[key].localeCompare(b[key]) * currentSort.dir;
+        return ((a[key] || 0) - (b[key] || 0)) * currentSort.dir;
+      });
+      draw(sorted);
+    });
+  });
+
+  const search = document.getElementById('player-search');
+  search.addEventListener('keyup', () => {
+    const q = search.value.toLowerCase();
+    tbody.querySelectorAll('tr.player-row').forEach(tr => {
+      const show = tr.dataset.name.includes(q);
+      tr.style.display = show ? '' : 'none';
+      const detailRow = document.getElementById(tr.dataset.detail);
+      if (!show) detailRow.classList.remove('show');
+      detailRow.style.display = show ? '' : 'none';
+    });
+  });
+}
+
+// ---------------------------------------------------------------------
+// Compare view: 2+ seasons selected. Team / category / player trends
+// side by side, oldest season first (left) so it reads as a timeline.
+// ---------------------------------------------------------------------
+function renderCompare(results) {
+  const chronological = [...results].reverse(); // GSB_SEASONS lists newest first
+  let html = `<div class="compare-note">Sammenligner ${chronological.length} sæsoner. Hold &times; kategori-matrixen findes kun for &eacute;n sæson ad gangen &mdash; fjern flueben ved sæsoner ovenfor for at bruge den igen.</div>`;
+
+  // --- Team comparison ---
+  const allHolds = Array.from(new Set(chronological.flatMap(r => r.data.teams.map(t => t.hold)))).sort();
+  html += `<div class="card"><h2>Hold &middot; winrate pr. sæson</h2><div style="overflow-x:auto;"><table class="compare">
+    <thead><tr><th>Hold</th>${chronological.map(r => `<th class="season-col">${r.season.label}</th>`).join('')}</tr></thead><tbody>`;
+  allHolds.forEach(hold => {
+    html += `<tr><td>${hold}</td>`;
+    chronological.forEach(r => {
+      const t = r.data.teams.find(x => x.hold === hold);
+      html += `<td class="season-col">${t && t.winPct !== null ? t.winPct + '% <span style=\"color:var(--muted); font-weight:400;\">(' + t.total + ')</span>' : '–'}</td>`;
+    });
+    html += `</tr>`;
+  });
+  html += `</tbody></table></div></div>`;
+
+  // --- Category comparison ---
+  const allKats = Array.from(new Set(chronological.flatMap(r => r.data.categories.map(c => c.kategori)))).sort();
+  html += `<div class="card"><h2>Kategori &middot; winrate pr. sæson</h2><div style="overflow-x:auto;"><table class="compare">
+    <thead><tr><th>Kategori</th>${chronological.map(r => `<th class="season-col">${r.season.label}</th>`).join('')}</tr></thead><tbody>`;
+  allKats.forEach(kategori => {
+    html += `<tr><td>${kategori}</td>`;
+    chronological.forEach(r => {
+      const c = r.data.categories.find(x => x.kategori === kategori);
+      html += `<td class="season-col">${c && c.winPct !== null ? c.winPct + '% <span style=\"color:var(--muted); font-weight:400;\">(' + c.total + ')</span>' : '–'}</td>`;
+    });
+    html += `</tr>`;
+  });
+  html += `</tbody></table></div></div>`;
+
+  // --- Player comparison ---
+  const allPlayers = Array.from(new Set(chronological.flatMap(r => r.data.players.map(p => p.navn)))).sort((a, b) => a.localeCompare(b, 'da'));
+  html += `<div class="card"><h2>Spillere &middot; winrate pr. sæson</h2>
+    <p class="desc">Klik "Vis kategorier" for at se en spillers hold/kategori-opdeling og board-historik i en given sæson.</p>
+    <input type="text" class="search" id="compare-player-search" placeholder="Søg efter spiller..." style="padding:8px 10px; border:1px solid var(--border); border-radius:6px; width:100%; max-width:300px;">
+    <div style="overflow-x:auto;"><table class="compare" id="compare-player-table">
+    <thead><tr><th>Spiller</th>${chronological.map(r => `<th class="season-col">${r.season.label}</th>`).join('')}<th></th></tr></thead>
+    <tbody id="compare-player-tbody">`;
+
+  allPlayers.forEach((navn, i) => {
+    const rowId = `compare-detail-${i}`;
+    html += `<tr data-name="${navn.toLowerCase()}"><td>${navn}</td>`;
+    chronological.forEach(r => {
+      const p = r.data.players.find(x => x.navn === navn);
+      html += `<td class="season-col">${p ? p.winPct + '% <span style=\"color:var(--muted); font-weight:400;\">(' + p.total + ')</span>' : '–'}</td>`;
+    });
+    html += `<td><button class="expand-toggle" data-target="${rowId}">Vis kategorier ▾</button></td></tr>`;
+    html += `<tr class="compare-detail" id="${rowId}"><td colspan="${chronological.length + 2}">`;
+    chronological.forEach(r => {
+      const p = r.data.players.find(x => x.navn === navn);
+      html += `<div class="compare-detail-season"><strong>${r.season.label}:</strong> `;
+      if (!p || !p.byHoldCategory || Object.keys(p.byHoldCategory).length === 0) {
+        html += `<span style="color:var(--muted);">Ingen kampe</span>`;
+      } else {
+        html += Object.keys(p.byHoldCategory).sort().map(k => pillHtml(k, p.byHoldCategory[k])).join('');
+      }
+      html += `</div>`;
+    });
+    html += `</td></tr>`;
+  });
+  html += `</tbody></table></div></div>`;
+
+  return html;
+}
+
+function wireCompareEvents() {
+  document.querySelectorAll('.expand-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.getElementById(btn.dataset.target).classList.toggle('show');
+    });
+  });
+  const search = document.getElementById('compare-player-search');
+  if (search) {
+    search.addEventListener('keyup', () => {
+      const q = search.value.toLowerCase();
+      document.querySelectorAll('#compare-player-tbody tr[data-name]').forEach(tr => {
+        tr.style.display = tr.dataset.name.includes(q) ? '' : 'none';
+      });
+    });
+  }
+}
+
+populateSelectors();
+applyUrlParams();
+onPresetChange();
+document.getElementById('f-runde-min').addEventListener('input', onRangeInputChanged);
+document.getElementById('f-runde-max').addEventListener('input', onRangeInputChanged);
+hentData();
+</script>
+
+</body>
+</html>

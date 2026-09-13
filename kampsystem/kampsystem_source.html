@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<title>Kampsystem</title>
+<style>
+:root {
+  --kamp-accent: #2f5fa8; --kamp-accent-dark: #1e3d70; --line-white: #f7f5ef;
+  --ink: #1c2420; --muted: #5c6b62; --border: #d7ddd4; --error: #b3432f; --ok: #1f5c3f;
+  --shuttle: #e8a33d;
+}
+*{box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:1100px;margin:0 auto;padding:0 0 60px;background:var(--line-white);color:var(--ink);line-height:1.45}
+h1{font-size:1.4rem;font-weight:700;margin:0;background:var(--kamp-accent);color:var(--line-white);padding:22px 24px;position:relative;overflow:hidden}
+h1::after{content:"";position:absolute;right:-40px;top:-40px;width:150px;height:150px;border:3px solid rgba(255,255,255,0.12);border-radius:50%}
+.faner{display:flex;gap:4px;margin:0 20px 16px;border-bottom:2px solid var(--border);padding-top:16px}
+.fane-btn{padding:8px 16px;border:none;background:none;cursor:pointer;font-size:0.92rem;font-weight:600;color:var(--muted);border-bottom:3px solid transparent;border-radius:6px 6px 0 0}
+.fane-btn:hover{background:#eef2f7}
+.fane-btn.aktiv{border-bottom-color:var(--kamp-accent);color:var(--kamp-accent-dark)}
+#gruppe-checkboxer,#fane-koer-runde,#fane-spillere,#fane-historik{margin:0 20px}
+.card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:18px 20px;margin-bottom:16px}
+.card.advarsel{background:#fff6e0;border-color:var(--shuttle)}
+.card h3{margin:0 0 10px;font-size:0.98rem;color:var(--kamp-accent-dark)}
+table{width:100%;border-collapse:collapse;font-size:0.85rem}
+th{text-align:left;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.03em;color:var(--muted);padding:5px 6px;border-bottom:1px solid var(--border)}
+td{text-align:left;padding:6px 6px;border-bottom:1px solid #f0efe9;vertical-align:top}
+.dim{color:var(--muted);font-size:0.85em}
+.badge{display:inline-block;background:var(--kamp-accent);color:#fff;border-radius:12px;padding:2px 10px;font-size:0.8em;font-weight:600}
+.chip{display:inline-block;background:#eef2f7;border-radius:14px;padding:4px 12px;margin:3px;font-size:0.85em}
+label{margin-right:10px;font-size:0.9rem}
+button{cursor:pointer;padding:8px 16px;border-radius:6px;border:1px solid var(--border);background:#eef2f7;color:var(--kamp-accent-dark);font-weight:600;font-size:0.85rem;margin:3px 3px 3px 0;transition:background .1s}
+button:hover{background:#e2e9f2}
+.card > button:first-child, .card > h3 + button{background:var(--kamp-accent);color:#fff;border-color:var(--kamp-accent)}
+.card > button:first-child:hover, .card > h3 + button:hover{background:var(--kamp-accent-dark)}
+input[type=text],input[type=number],select{padding:7px 10px;border-radius:6px;border:1px solid var(--border);font-size:0.88rem;background:#fff}
+.rad{overflow-x:auto}
+[hidden]{display:none!important}
+.match{border:1px solid var(--border);border-radius:8px;padding:12px 14px;margin-bottom:10px;background:#fff}
+
+</style>
+</head>
+<body>
+<h1>⚡ Kampsystem — ELO-rating og rundefordeling</h1>
+
+<div class="faner">
+  <button id="btn-fane-koer-runde" class="fane-btn aktiv" onclick="App.skiftFane('koer-runde')">Kør runde</button>
+  <button id="btn-fane-spillere" class="fane-btn" onclick="App.skiftFane('spillere')">Spillere</button>
+  <button id="btn-fane-historik" class="fane-btn" onclick="App.skiftFane('historik')">Historik &amp; statistik</button>
+</div>
+
+<div id="gruppe-checkboxer" class="card"></div>
+
+<!-- ============ KØR RUNDE ============ -->
+<div id="fane-koer-runde">
+
+  <div class="card">
+    <button onclick="App.opdaterStandarder()">↻ Opdater standarder</button>
+    <span class="dim">Nulstiller "Kategorier denne runde" til Normal rolle (eller standard) for alle til stede.</span>
+  </div>
+
+  <div class="card">
+    <h3>1. Fremmøde og kategorier <span id="badge-1" class="badge"></span></h3>
+    <button onclick="App.vaelgAlleTilStede()">Vælg alle til stede</button>
+    <button onclick="App.fjernAlleTilStede()">Fjern alle</button>
+    <div id="roster-tabel" class="rad"></div>
+  </div>
+
+  <div class="card">
+    <h3>2. Opsætning for denne runde <span id="badge-2" class="badge"></span></h3>
+    <div id="opsaetning-info" class="dim"></div>
+    <label>Ledige baner: <input type="number" id="baner-input" min="0" max="20" value="5"></label>
+    <button onclick="App.saetBaner(5)">5 baner</button>
+    <button onclick="App.saetBaner(10)">10 baner</button>
+    <br>
+    <label>Hold-filosofi:
+      <select id="filosofi-select">
+        <option value="ens">Ens niveau som makker</option>
+        <option value="staerksvag">Stærk+svag som makker</option>
+      </select>
+    </label>
+    <br>
+    <label>Reservér op til <input type="number" id="teknikloft-input" min="0" max="5" value="0" style="width:4em"> bane(r) til teknik (loft, ikke fast reservation)</label>
+    <br>
+    <label><input type="checkbox" id="udskif-single"> Tillad udskiftningssingle (3 på banen)</label>
+    <label><input type="checkbox" id="udskif-double"> Tillad udskiftningsdouble (5 på banen) — sidste udvej</label>
+  </div>
+
+  <div class="card">
+    <h3>3. Lås/fastsæt kampe <span id="badge-3" class="badge"></span></h3>
+    <div id="laas-info" class="dim"></div>
+    <select id="lock-kategori"><option value="single">Single</option><option value="double">Double</option><option value="mixed">Mixed double</option></select>
+    <select id="lock-a1"></select> + <select id="lock-a2"></select>
+    mod
+    <select id="lock-b1"></select> + <select id="lock-b2"></select>
+    <button onclick="App.tilfoejLaastKampUI()">Tilføj låst kamp</button>
+    <div id="laaste-kampe-liste"></div>
+  </div>
+
+  <div class="card">
+    <h3>4. Kør runden</h3>
+    <button onclick="App.genererRunde()">🎲 Generér runde</button>
+    <span class="dim">Preview kun — rører ingen tællere før "Bekræft runde".</span>
+  </div>
+
+  <div id="runde-container"></div>
+</div>
+
+<!-- ============ SPILLERE ============ -->
+<div id="fane-spillere" hidden>
+  <div class="card">
+    <h3>Tilføj en spiller fra klubben</h3>
+    <input type="text" id="soege-input" placeholder="Søg navn...">
+    <div id="soege-resultat"></div>
+  </div>
+  <div class="card">
+    <h3>Opret ny spiller</h3>
+    <input type="text" id="ny-spiller-navn" placeholder="Navn">
+    <select id="ny-spiller-koen"><option value="">– ukendt –</option><option value="H">Herre</option><option value="D">Dame</option></select>
+    <button onclick="App.opretNySpiller()">Opret</button>
+  </div>
+  <div class="card">
+    <h3>Spillerindstillinger — Normal rolle (holdkamp)</h3>
+    <p class="dim">Single/Mix: den kategori spilleren normalt spiller til holdkampe ud over sin double. Double er altid underforstået — alle spiller HD/DD.</p>
+    <div id="spiller-admin-tabel" class="rad"></div>
+  </div>
+</div>
+
+<!-- ============ HISTORIK & STATISTIK ============ -->
+<div id="fane-historik" hidden>
+  <div class="card">
+    <h3>Head-to-head</h3>
+    <select id="h2h-spiller"></select>
+    <select id="h2h-kategori">
+      <option value="alle">Alle</option><option value="single">Single</option><option value="double">Double</option><option value="mixed">Mixed</option>
+    </select>
+    <div id="h2h-output"></div>
+  </div>
+  <div class="card">
+    <h3>Kamplog</h3>
+    <div id="kamplog" class="rad"></div>
+  </div>
+  <div class="card">
+    <h3>Spillertrup / ratings</h3>
+    <div id="rating-tabel" class="rad"></div>
+  </div>
+</div>
+
+<script>
+window.__ROSTER_DATA__ = __ROSTER_JSON__;
+window.__ALLE_SPILLERE_DATA__ = __ALLE_SPILLERE_JSON__;
+</script>
+<script>
+/* Kampsystem — genopbygget 2026-09-07 fra idébank + historik efter regression af kampsystem_source.html.
+   Se claude/gsb-kampsystem-idebank.md / -historik.md for den fulde byggehistorik denne fil implementerer. */
+(function () {
+  'use strict';
+
+  var K_FAKTOR = 70, DIVISOR = 850;
+  var GENTAGELSE_VINDUE_RUNDER = 5;
+  var RETFAERDIGHED_VINDUE_RUNDER = 10;
+
+  function forventetVind(a, b) { return 1 / (1 + Math.pow(10, (b - a) / DIVISOR)); }
+  function eloAendring(a, b, aVandt) { return Math.round(K_FAKTOR * ((aVandt ? 1 : 0) - forventetVind(a, b))); }
+
+  // Uratede spillere (null i den givne kategori) regnes MIDLERTIDIGT som 2000 point ved
+  // parring/visning (sortering, holdgennemsnit, forventet-%-visning). Bruges ALDRIG til selve
+  // ELO-opdateringen efter en spillet kamp — se registerVinder, som tjekker de RIGTIGE (evt. null)
+  // ratings og springer ALLE ratingændringer i kampen over, hvis mindst én reel deltager mangler
+  // rating i kategorien.
+  var FALLBACK_RATING = 2000;
+  function effektivRating(p, ratingKey) { var v = p[ratingKey]; return v != null ? v : FALLBACK_RATING; }
+
+  // ---------------- State ----------------
+  var ROSTER_INITIAL = window.__ROSTER_DATA__ || [];
+  var GSB_ALLE_SPILLERE = window.__ALLE_SPILLERE_DATA__ || [];
+
+  function friskSpiller(p) {
+    return {
+      navn: p.navn, gruppe: p.gruppe, koen: p.koen || null,
+      single: p.single == null ? null : p.single,
+      double: p.double == null ? null : p.double,
+      mix: p.mix == null ? null : p.mix,
+      tilstede: false,
+      modes: defaultModes(p),
+      tvungenSpil: false,
+      tvingTilTeknik: false,
+      normalKategorier: { single: false, mixed: false },
+      normalKategorierRoert: false,
+      oversidderTaeller: 0
+    };
+  }
+
+  function defaultModes(p) {
+    return { single: p.single != null, double: p.double != null, mixed: p.mix != null };
+  }
+  function harNormalKategorier(p) {
+    return !!(p.normalKategorier && (p.normalKategorier.single || p.normalKategorier.mixed));
+  }
+  function standardModesFor(p) {
+    if (harNormalKategorier(p)) {
+      return { single: !!p.normalKategorier.single, double: true, mixed: !!p.normalKategorier.mixed };
+    }
+    return defaultModes(p);
+  }
+  function forudfyldModesFraNormal(p) {
+    p.modes = standardModesFor(p);
+  }
+
+  var roster = ROSTER_INITIAL.map(friskSpiller);
+  var kendteGrupper = uniqueGrupper();
+  var aktivGrupper = new Set(kendteGrupper);
+
+  var matchHistory = [];          // {runde, type, a:[navn], b:[navn], vinder}
+  var oversidderHistorik = [];    // {runde, navn}
+  var udskiftningsHistorik = [];  // {runde, navn}
+  var rundeTaeller = 0;
+  var lockedMatches = [];         // {kategori, a:[navn|null,navn|null], b:[navn|null,navn|null]}
+  var rundeAlleMatches = [];      // aktuel genereret rundes kampe (rå objekter)
+  var pendingOversiddereForRunde = [];
+  var pendingUdskiftningForRunde = [];
+  var rundeErBekraeftet = false;
+  var aktivFane = 'koer-runde';
+
+  function uniqueGrupper() {
+    var s = new Set();
+    roster.forEach(function (p) { s.add(p.gruppe); });
+    ['Veteran', 'Motionist'].forEach(function (g) { s.add(g); });
+    return Array.from(s);
+  }
+
+  function byNavn(navn) { return roster.filter(function (p) { return p.navn === navn; })[0]; }
+
+  // ---------------- Rullende vinduer ----------------
+  function seneseRunder(historik, gaeldendeRunde, vindue) {
+    var min = gaeldendeRunde - vindue + 1;
+    return historik.filter(function (p) { return p.runde >= min && p.runde <= gaeldendeRunde; });
+  }
+  function oversidderCount(navn) {
+    return seneseRunder(oversidderHistorik, rundeTaeller, RETFAERDIGHED_VINDUE_RUNDER)
+      .filter(function (p) { return p.navn === navn; }).length;
+  }
+  function udskiftningCount(navn) {
+    return seneseRunder(udskiftningsHistorik, rundeTaeller, RETFAERDIGHED_VINDUE_RUNDER)
+      .filter(function (p) { return p.navn === navn; }).length;
+  }
+
+  function vaelgFlereOversiddere(kandidater, antal) {
+    if (antal <= 0) return [];
+    var ikkeTvungne = kandidater.filter(function (p) { return !p.tvungenSpil; });
+    var pool = ikkeTvungne.length >= antal ? ikkeTvungne : kandidater;
+    var sorteret = pool.slice().sort(function (a, b) { return oversidderCount(a.navn) - oversidderCount(b.navn); });
+    return sorteret.slice(0, Math.min(antal, sorteret.length));
+  }
+
+  function sortEfterRating(spillere, ratingKey) {
+    return spillere.slice().sort(function (a, b) { return effektivRating(b, ratingKey) - effektivRating(a, ratingKey); });
+  }
+
+  // ---------------- Single / double / mixed holddannelse ----------------
+  function pairSingles(spillere) {
+    var sorteret = sortEfterRating(spillere, 'single');
+    var oversiddere = [];
+    if (sorteret.length % 2 === 1) {
+      var v = vaelgFlereOversiddere(sorteret, 1)[0];
+      oversiddere.push(v);
+      sorteret = sorteret.filter(function (p) { return p !== v; });
+    }
+    var kampe = [];
+    for (var i = 0; i < sorteret.length; i += 2) kampe.push({ type: 'single', a: [sorteret[i]], b: [sorteret[i + 1]] });
+    return { kampe: kampe, oversiddere: oversiddere };
+  }
+
+  function dannHold(spillere, filosofi) {
+    var n = spillere.length, hold = [];
+    if (filosofi === 'staerksvag') {
+      for (var i = 0; i < Math.floor(n / 2); i++) hold.push([spillere[i], spillere[n - 1 - i]]);
+    } else {
+      for (var j = 0; j < n - 1; j += 2) hold.push([spillere[j], spillere[j + 1]]);
+    }
+    return hold;
+  }
+  function holdRating(hold, key) { return effektivRating(hold[0], key) + effektivRating(hold[1], key); }
+  // Som holdRating, men for en side af vilkårlig størrelse (bruges kun til forventet-%-visning,
+  // hvor en single-side kun har 1 spiller) — bruger effektivRating (2000-fallback), aldrig til
+  // selve ELO-opdateringen.
+  function effektivHoldRating(hold, key) { return hold.reduce(function (s, p) { return s + effektivRating(p, key); }, 0); }
+
+  // FJERNET (2026-09-07, Chris' testrapport punkt 2/3): forsoegKoensblanding byttede spillere
+  // MELLEM to rent kønsopdelte hold for at skabe et kønsblandet double-hold — fejlfortolkning af
+  // den oprindelige idé (som handlede om hvilke to allerede rent-kønnede HOLD der spiller mod
+  // hinanden, ikke om hvem der sidder PÅ et hold). formTeams danner nu altid rene H+H/D+D-hold.
+
+  // formTeams: danner double-hold RENT EFTER KØN (H+H eller D+D), parallelt med formTeamsMixed som
+  // kun danner 1H+1D-hold. Ukendt-køn-spillere lægges i den mindste gruppe (skiftevis) så begge
+  // grupper helst går op i par. Kun ved et REELT ulige antal i BEGGE rene kønsgrupper samtidig
+  // pares de to overskydende sammen på tværs af køn som SIDSTE udvej (i stedet for at begge sidder
+  // unødvendigt over).
+  function formTeams(spillere, filosofi, blandKoen) {
+    var maend = spillere.filter(function (p) { return p.koen === 'H'; });
+    var kvinder = spillere.filter(function (p) { return p.koen === 'D'; });
+    var ukendte = sortEfterRating(spillere.filter(function (p) { return p.koen !== 'H' && p.koen !== 'D'; }), 'double');
+    ukendte.forEach(function (p) {
+      if (maend.length <= kvinder.length) maend = maend.concat([p]);
+      else kvinder = kvinder.concat([p]);
+    });
+    maend = sortEfterRating(maend, 'double');
+    kvinder = sortEfterRating(kvinder, 'double');
+
+    var oversiddere = [];
+    var restMand = null, restKvinde = null;
+    if (maend.length % 2 === 1) {
+      restMand = vaelgFlereOversiddere(maend, 1)[0];
+      maend = maend.filter(function (p) { return p !== restMand; });
+    }
+    if (kvinder.length % 2 === 1) {
+      restKvinde = vaelgFlereOversiddere(kvinder, 1)[0];
+      kvinder = kvinder.filter(function (p) { return p !== restKvinde; });
+    }
+
+    var hold = dannHold(maend, filosofi).concat(dannHold(kvinder, filosofi));
+    if (restMand && restKvinde) {
+      hold.push([restMand, restKvinde]);
+    } else {
+      if (restMand) oversiddere.push(restMand);
+      if (restKvinde) oversiddere.push(restKvinde);
+    }
+
+    if (hold.length % 2 === 1) { oversiddere = oversiddere.concat(hold[hold.length - 1]); hold = hold.slice(0, -1); }
+    var sortHold = hold.slice().sort(function (a, b) { return holdRating(b, 'double') - holdRating(a, 'double'); });
+    var kampe = [];
+    for (var k = 0; k < sortHold.length - 1; k += 2) kampe.push({ type: 'double', a: sortHold[k], b: sortHold[k + 1] });
+    return { kampe: kampe, oversiddere: oversiddere };
+  }
+
+  function formTeamsMixed(pool, filosofi) {
+    var maend = sortEfterRating(pool.filter(function (p) { return p.koen === 'H'; }), 'mix');
+    var kvinder = sortEfterRating(pool.filter(function (p) { return p.koen === 'D'; }), 'mix');
+    var oversiddere = pool.filter(function (p) { return p.koen !== 'H' && p.koen !== 'D'; });
+    var n = Math.min(maend.length, kvinder.length);
+    oversiddere = oversiddere.concat(maend.slice(n), kvinder.slice(n));
+    maend = maend.slice(0, n); kvinder = kvinder.slice(0, n);
+    var hold = [];
+    if (filosofi === 'staerksvag') { for (var i = 0; i < n; i++) hold.push([maend[i], kvinder[n - 1 - i]]); }
+    else { for (var j = 0; j < n; j++) hold.push([maend[j], kvinder[j]]); }
+    if (hold.length % 2 === 1) { oversiddere = oversiddere.concat(hold[hold.length - 1]); hold = hold.slice(0, -1); }
+    var sortHold = hold.slice().sort(function (a, b) { return holdRating(b, 'mix') - holdRating(a, 'mix'); });
+    var kampe = [];
+    for (var k = 0; k < sortHold.length - 1; k += 2) kampe.push({ type: 'mixed', a: sortHold[k], b: sortHold[k + 1] });
+    return { kampe: kampe, oversiddere: oversiddere };
+  }
+
+  // ---------------- Gentagelses-undgåelse ----------------
+  function moedeAntal(navnA, navnB, type) {
+    var vindue = seneseRunder(matchHistory, rundeTaeller, GENTAGELSE_VINDUE_RUNDER);
+    var antal = 0;
+    vindue.forEach(function (k) {
+      if (k.type !== type) return;
+      var aA = k.a.indexOf(navnA) !== -1, bA = k.b.indexOf(navnA) !== -1;
+      var aB = k.a.indexOf(navnB) !== -1, bB = k.b.indexOf(navnB) !== -1;
+      if ((aA && bB) || (bA && aB)) antal++;
+    });
+    return antal;
+  }
+  function omkostning(kamp) {
+    var sum = 0;
+    kamp.a.forEach(function (pa) { kamp.b.forEach(function (pb) { sum += moedeAntal(pa.navn, pb.navn, kamp.type); }); });
+    return sum;
+  }
+  function reducerGentagelse(kampe) {
+    var res = kampe.slice();
+    for (var i = 0; i < res.length - 1; i++) {
+      var k1 = res[i], k2 = res[i + 1];
+      if (k1.type !== k2.type) continue;
+      var foer = omkostning(k1) + omkostning(k2);
+      var b1 = k1.b.slice(), b2 = k2.b.slice();
+      var s1 = b1[b1.length - 1], s2 = b2[b2.length - 1];
+      b1[b1.length - 1] = s2; b2[b2.length - 1] = s1;
+      var nk1 = { type: k1.type, a: k1.a, b: b1, laast: k1.laast }, nk2 = { type: k2.type, a: k2.a, b: b2, laast: k2.laast };
+      var efter = omkostning(nk1) + omkostning(nk2);
+      if (efter < foer) { res[i] = nk1; res[i + 1] = nk2; }
+    }
+    return res;
+  }
+
+  // ---------------- Kønsbevidst double/mixed t-søgning ----------------
+  function kaonsbevidstFordeling(kunDobbelt, kunMixed, begge) {
+    var mBegge = begge.filter(function (p) { return p.koen === 'H'; });
+    var kBegge = begge.filter(function (p) { return p.koen === 'D'; });
+    var uBegge = begge.filter(function (p) { return p.koen !== 'H' && p.koen !== 'D'; });
+    var mKunMixed = kunMixed.filter(function (p) { return p.koen === 'H'; }).length;
+    var kKunMixed = kunMixed.filter(function (p) { return p.koen === 'D'; }).length;
+    var maxT = Math.min(mBegge.length + mKunMixed, kBegge.length + kKunMixed);
+    var bedste = null;
+    for (var t = 0; t <= maxT; t++) {
+      var behovM = Math.max(0, t - mKunMixed), behovK = Math.max(0, t - kKunMixed);
+      if (behovM > mBegge.length || behovK > kBegge.length) continue;
+      var mixedRest = t % 2;
+      var doubleAntal = kunDobbelt.length + (mBegge.length - behovM) + (kBegge.length - behovK) + uBegge.length;
+      var doubleRest = doubleAntal % 4;
+      var oversiddere = mixedRest * 2 + doubleRest;
+      var antalKampe = Math.floor(t / 2) + Math.floor(doubleAntal / 4);
+      var kand = { t: t, oversiddere: oversiddere, antalKampe: antalKampe };
+      if (!bedste || kand.oversiddere < bedste.oversiddere ||
+        (kand.oversiddere === bedste.oversiddere && kand.antalKampe > bedste.antalKampe) ||
+        (kand.oversiddere === bedste.oversiddere && kand.antalKampe === bedste.antalKampe && kand.t > bedste.t)) bedste = kand;
+    }
+    return bedste;
+  }
+
+  function fordelTilDoubleOgMixed(dobbeltOnly, mixedOnly, begge, filosofi) {
+    var fordeling = kaonsbevidstFordeling(dobbeltOnly, mixedOnly, begge);
+    var t = fordeling ? fordeling.t : 0;
+    var mBegge = sortEfterRating(begge.filter(function (p) { return p.koen === 'H'; }), 'mix');
+    var kBegge = sortEfterRating(begge.filter(function (p) { return p.koen === 'D'; }), 'mix');
+    var mKunMixed = mixedOnly.filter(function (p) { return p.koen === 'H'; });
+    var kKunMixed = mixedOnly.filter(function (p) { return p.koen === 'D'; });
+    var behovM = Math.max(0, t - mKunMixed.length), behovK = Math.max(0, t - kKunMixed.length);
+    var mTilMixed = mKunMixed.concat(mBegge.slice(0, behovM));
+    var kTilMixed = kKunMixed.concat(kBegge.slice(0, behovK));
+    var mTilDouble = mBegge.slice(behovM);
+    var kTilDouble = kBegge.slice(behovK);
+    var ukendteBegge = begge.filter(function (p) { return p.koen !== 'H' && p.koen !== 'D'; });
+    var mixedPool = mTilMixed.concat(kTilMixed);
+    var doublePool = dobbeltOnly.concat(mTilDouble, kTilDouble, ukendteBegge);
+    return { mixedPool: mixedPool, doublePool: doublePool };
+  }
+
+  // ---------------- Delvist-låst kamp: reservation FØR optimering ----------------
+  function reserverLaasteKampe(kandidater) {
+    var reserveret = [];
+    var uloeselige = []; // navngivne spillere hvis modstander ikke kunne findes
+    var faerdigeLaasteKampe = [];
+    lockedMatches.forEach(function (lm) {
+      var aNavne = lm.a.filter(function (x) { return x; });
+      var bNavne = lm.b.filter(function (x) { return x; });
+      var navngivne = aNavne.concat(bNavne).map(byNavn).filter(Boolean);
+      var manglerA = 2 - lm.a.filter(function (x) { return x; }).length;
+      var manglerB = 2 - lm.b.filter(function (x) { return x; }).length;
+      var mangler = manglerA + manglerB;
+      var tilgaengelige = kandidater.filter(function (p) { return reserveret.indexOf(p) === -1; });
+
+      var fundne = [];
+      if (mangler > 0) {
+        if (lm.kategori === 'mixed') {
+          var navngivneKoen = navngivne.map(function (p) { return p.koen; });
+          for (var slot = 0; slot < mangler; slot++) {
+            var oenskeKoen = navngivneKoen.indexOf('H') !== -1 && navngivneKoen.indexOf('D') === -1 ? 'D'
+              : navngivneKoen.indexOf('D') !== -1 && navngivneKoen.indexOf('H') === -1 ? 'H' : (slot === 0 ? 'H' : 'D');
+            var kand = sortEfterRating(tilgaengelige.filter(function (p) {
+              return p.koen === oenskeKoen && p.modes.mixed && fundne.indexOf(p) === -1;
+            }), 'mix')[0];
+            if (kand) fundne.push(kand);
+          }
+        } else {
+          var katFelt = lm.kategori === 'single' ? 'single' : 'double';
+          var kandidater2 = sortEfterRating(tilgaengelige.filter(function (p) {
+            return p.modes[lm.kategori] && fundne.indexOf(p) === -1;
+          }), katFelt);
+          fundne = kandidater2.slice(0, mangler);
+        }
+      }
+      if (fundne.length === mangler) {
+        fundne.forEach(function (p) { reserveret.push(p); });
+        var alleA = [], alleB = [];
+        var fi = 0;
+        lm.a.forEach(function (n) { alleA.push(n ? byNavn(n) : fundne[fi++]); });
+        lm.b.forEach(function (n) { alleB.push(n ? byNavn(n) : fundne[fi++]); });
+        faerdigeLaasteKampe.push({ type: lm.kategori, a: alleA, b: alleB, laast: true });
+      } else {
+        // Uløseligt: send de navngivne spillere til sidder over
+        uloeselige = uloeselige.concat(navngivne);
+      }
+    });
+    return { reserveret: reserveret, faerdigeLaasteKampe: faerdigeLaasteKampe, uloeselige: uloeselige };
+  }
+
+  // ---------------- Hovedfunktion: genererRunde (PREVIEW, rører ingen tællere) ----------------
+  var settings = { baner: 5, filosofi: 'ens', teknikLoft: 0, tillTeknikBaner: 0, tillUdskifSingle: false, tillUdskifDouble: false };
+
+  function genererRunde() {
+    rundeErBekraeftet = false;
+    var kandidater = roster.filter(function (p) {
+      return p.tilstede && aktivGrupper.has(p.gruppe) && p.modes && (p.modes.single || p.modes.double || p.modes.mixed);
+    });
+
+    // Fjern spillere der indgår i en lås (uanset om alle 4 pladser er navngivet)
+    var laasteNavne = {};
+    lockedMatches.forEach(function (lm) { lm.a.concat(lm.b).forEach(function (n) { if (n) laasteNavne[n] = true; }); });
+    kandidater = kandidater.filter(function (p) { return !laasteNavne[p.navn]; });
+
+    // Tving-til-teknik: fjern fra kandidater, reservér Math.ceil(n/4) teknikbaner
+    var tvungneTilTeknik = kandidater.filter(function (p) { return p.tvingTilTeknik; });
+    kandidater = kandidater.filter(function (p) { return !p.tvingTilTeknik; });
+    var tvungneBaner = tvungneTilTeknik.length > 0 ? Math.ceil(tvungneTilTeknik.length / 4) : 0;
+
+    // Delvist-låste kampe: reservér kandidater FØR resten af optimeringen kører
+    var laasResultat = reserverLaasteKampe(kandidater);
+    kandidater = kandidater.filter(function (p) { return laasResultat.reserveret.indexOf(p) === -1; });
+
+    var singleOnly = [], teamOnly = [], fleksible = [];
+    kandidater.forEach(function (p) {
+      var harS = !!p.modes.single, harT = !!(p.modes.double || p.modes.mixed);
+      if (harS && harT) fleksible.push(p); else if (harS) singleOnly.push(p); else if (harT) teamOnly.push(p);
+    });
+
+    var laasteBanerBrugt = laasResultat.faerdigeLaasteKampe.length;
+    var baneBudget = Math.max(0, settings.baner - tvungneBaner - laasteBanerBrugt);
+
+    var bedste = null;
+    for (var x = 0; x <= fleksible.length; x++) {
+      var singleDel = fleksible.slice(0, x), teamDel = fleksible.slice(x);
+      var td_dobbelt = teamDel.filter(function (p) { return p.modes.double && !p.modes.mixed; });
+      var td_mixed = teamDel.filter(function (p) { return p.modes.mixed && !p.modes.double; });
+      var td_begge = teamDel.filter(function (p) { return p.modes.double && p.modes.mixed; });
+      var allDob = teamOnly.filter(function (p) { return p.modes.double && !p.modes.mixed; }).concat(td_dobbelt);
+      var allMix = teamOnly.filter(function (p) { return p.modes.mixed && !p.modes.double; }).concat(td_mixed);
+      var allBegge = teamOnly.filter(function (p) { return p.modes.double && p.modes.mixed; }).concat(td_begge);
+      var fordeling = kaonsbevidstFordeling(allDob, allMix, allBegge);
+      var singlePulje = singleOnly.concat(singleDel);
+      var singleKampe = Math.floor(singlePulje.length / 2), singleOver = singlePulje.length % 2;
+      var samletKampe = fordeling.antalKampe + singleKampe;
+      var samletOver = fordeling.oversiddere + singleOver;
+      var overskud = Math.max(0, samletKampe - baneBudget);
+      var singleSkaer = Math.min(overskud, singleKampe);
+      var teamSkaer = overskud - singleSkaer;
+      var overFraSkaering = singleSkaer * 2 + teamSkaer * 4;
+      var kand = {
+        x: x, antalKampe: Math.min(samletKampe, baneBudget), antalSingler: singleKampe - singleSkaer,
+        oversiddere: samletOver + overFraSkaering, t: fordeling.t, allDob: allDob, allMix: allMix, allBegge: allBegge, singlePulje: singlePulje
+      };
+      if (!bedste || kand.oversiddere < bedste.oversiddere ||
+        (kand.oversiddere === bedste.oversiddere && kand.antalKampe > bedste.antalKampe) ||
+        (kand.oversiddere === bedste.oversiddere && kand.antalKampe === bedste.antalKampe && kand.antalSingler > bedste.antalSingler)) bedste = kand;
+    }
+    bedste = bedste || { x: 0, singlePulje: [], allDob: [], allMix: [], allBegge: [] };
+
+    var fordelt = fordelTilDoubleOgMixed(bedste.allDob, bedste.allMix, bedste.allBegge, settings.filosofi);
+    var singleRes = pairSingles(bedste.singlePulje);
+    var doubleRes = formTeams(fordelt.doublePool, settings.filosofi, true);
+    var mixedRes = formTeamsMixed(fordelt.mixedPool, settings.filosofi);
+
+    var autoKampe = doubleRes.kampe.concat(mixedRes.kampe, singleRes.kampe); // double/mixed forrang til baner
+    var algoritmeOversiddere = doubleRes.oversiddere.concat(mixedRes.oversiddere, singleRes.oversiddere, laasResultat.uloeselige);
+
+    // Banekapacitetsbeskæring af auto-kampe (låste kampe har allerede fået deres baner)
+    var brugte = autoKampe.slice(0, baneBudget);
+    var skaarne = autoKampe.slice(baneBudget);
+    skaarne.forEach(function (k) { algoritmeOversiddere = algoritmeOversiddere.concat(k.a, k.b); });
+
+    brugte = reducerGentagelse(brugte);
+
+    var alleKampe = laasResultat.faerdigeLaasteKampe.concat(brugte);
+
+    // Teknik-loft (opportunistisk): brug kun ubrugte fysiske baner
+    var banerBrugtAlt = alleKampe.length + tvungneBaner;
+    var frieBaner = Math.max(0, settings.baner - banerBrugtAlt);
+    var teknikLoftBaner = Math.min(settings.teknikLoft || 0, frieBaner);
+    var teknikGruppe = tvungneTilTeknik.slice();
+    if (teknikLoftBaner > 0 && algoritmeOversiddere.length > 0) {
+      var kapacitet = teknikLoftBaner * 4;
+      var flyt = algoritmeOversiddere.splice(0, Math.min(kapacitet, algoritmeOversiddere.length));
+      teknikGruppe = teknikGruppe.concat(flyt);
+    }
+
+    // Udskiftningssingle/-double: absorbér præcis 1 ekstra spiller. Vælg den eksisterende kamp
+    // hvis deltageres gennemsnitsrating (i den relevante kategori, effektiv-fallback for uratede)
+    // ligger TÆTTEST på den overskydende spillers egen (effektive) rating — ikke bare den første
+    // fundne kamp — så en høj-ratet overskydende spiller ikke presses ind på en bane med langt
+    // svagere spillere (Chris' testrapport punkt 5).
+    function vaelgTaetteseteKamp(kandidatKampe, ratingKeyFn, spillerRating) {
+      if (!kandidatKampe.length) return null;
+      var bedste = null, bedsteAfstand = Infinity;
+      kandidatKampe.forEach(function (k) {
+        var ratingKey = ratingKeyFn(k);
+        var alle = k.a.concat(k.b);
+        var gns = effektivHoldRating(alle, ratingKey) / alle.length;
+        var afstand = Math.abs(gns - spillerRating);
+        if (afstand < bedsteAfstand) { bedsteAfstand = afstand; bedste = k; }
+      });
+      return bedste;
+    }
+
+    var udskiftningsDeltagere = [];
+    if (algoritmeOversiddere.length === 1) {
+      var enOver = algoritmeOversiddere[0];
+      if (settings.tillUdskifSingle) {
+        var enOverSingleRating = effektivRating(enOver, 'single');
+        var singleKandidater = alleKampe.filter(function (k) { return k.type === 'single'; });
+        var singleKamp = vaelgTaetteseteKamp(singleKandidater, function () { return 'single'; }, enOverSingleRating);
+        if (singleKamp) {
+          singleKamp.udskiftning = enOver;
+          udskiftningsDeltagere = [enOver];
+          algoritmeOversiddere = [];
+        }
+      }
+      if (algoritmeOversiddere.length === 1 && settings.tillUdskifDouble) {
+        var enOverDoubleRating = effektivRating(enOver, 'double');
+        var teamKandidater = alleKampe.filter(function (k) { return (k.type === 'double' || k.type === 'mixed') && !k.udskiftning; });
+        var teamKamp = vaelgTaetteseteKamp(teamKandidater, function (k) { return k.type === 'double' ? 'double' : 'mix'; }, enOverDoubleRating);
+        if (teamKamp) {
+          teamKamp.udskiftning = enOver;
+          udskiftningsDeltagere = [enOver];
+          algoritmeOversiddere = [];
+        }
+      }
+    }
+
+    // Sæt banenumre: låste først, så auto (double/mixed/single), teknik/sidder-over har intet banenr
+    alleKampe.forEach(function (k, i) { k.bane = i + 1; });
+
+    rundeAlleMatches = alleKampe;
+    pendingOversiddereForRunde = algoritmeOversiddere.filter(Boolean);
+    pendingUdskiftningForRunde = udskiftningsDeltagere;
+    window.__sidsteTeknikGruppe = teknikGruppe.filter(Boolean);
+    render();
+  }
+
+  function bekraeftRunde() {
+    if (rundeAlleMatches.length === 0 && pendingOversiddereForRunde.length === 0) return;
+    rundeTaeller++;
+    pendingOversiddereForRunde.forEach(function (p) {
+      oversidderHistorik.push({ runde: rundeTaeller, navn: p.navn });
+      p.oversidderTaeller++;
+    });
+    pendingUdskiftningForRunde.forEach(function (p) {
+      udskiftningsHistorik.push({ runde: rundeTaeller, navn: p.navn });
+    });
+    rundeErBekraeftet = true;
+    render();
+  }
+
+  function nulstilRunde() {
+    if (rundeErBekraeftet) {
+      oversidderHistorik = oversidderHistorik.filter(function (p) { return p.runde !== rundeTaeller; });
+      udskiftningsHistorik = udskiftningsHistorik.filter(function (p) { return p.runde !== rundeTaeller; });
+      pendingOversiddereForRunde.forEach(function (p) { p.oversidderTaeller = Math.max(0, p.oversidderTaeller - 1); });
+      rundeTaeller = Math.max(0, rundeTaeller - 1);
+    }
+    rundeAlleMatches = [];
+    pendingOversiddereForRunde = [];
+    pendingUdskiftningForRunde = [];
+    rundeErBekraeftet = false;
+    render();
+  }
+
+  function registerVinder(kampIndex, side) {
+    if (!rundeErBekraeftet) bekraeftRunde();
+    var k = rundeAlleMatches[kampIndex];
+    if (!k || k.vinder) return;
+    k.vinder = side;
+    if (k.type === 'single' || k.type === 'double' || k.type === 'mixed') {
+      var ratingKey = k.type === 'single' ? 'single' : (k.type === 'double' ? 'double' : 'mix');
+      // BESKYTTELSE (Chris' eksplicitte regel): hvis mindst én reel deltager mangler en RIGTIG
+      // rating i den spillede kategori (p[ratingKey] === null), må INGEN af deltagernes RIGTIGE
+      // ratings ændres af denne kamp — hverken den uratede spillers (den skal ikke "låses" til en
+      // ny værdi afledt af 2000-fallbacken) eller modstandernes (deres rigtige rating må heller
+      // ikke ændres ud fra en sammenligning mod en fiktiv 2000-værdi). Kampen tælles og logges
+      // stadig (kamplog/H2H), men uden ratingændring. Brug de RIGTIGE (evt. null) værdier her —
+      // aldrig effektivRating/FALLBACK_RATING — til selve dette tjek.
+      var alleDeltagere = k.a.concat(k.b);
+      var alleHarRigtigRating = alleDeltagere.every(function (p) { return p[ratingKey] != null; });
+      if (alleHarRigtigRating) {
+        var ratingA = holdRatingSafe(k.a, ratingKey), ratingB = holdRatingSafe(k.b, ratingKey);
+        var aVandt = side === 'a';
+        var deltaA = eloAendring(ratingA / k.a.length, ratingB / k.b.length, aVandt);
+        var deltaB = -deltaA;
+        k.a.forEach(function (p) { p[ratingKey] += deltaA; });
+        k.b.forEach(function (p) { p[ratingKey] += deltaB; });
+      }
+      matchHistory.push({ runde: rundeTaeller, type: k.type, a: k.a.map(function (p) { return p.navn; }), b: k.b.map(function (p) { return p.navn; }), vinder: side });
+    }
+    render();
+  }
+  // OBS: holdRatingSafe bruges KUN til den faktiske ELO-opdatering ovenfor (kaldes kun når alle
+  // deltagere reelt har rating, så || 0-fallbacken her aldrig rammes i praksis). Til visning
+  // (forventet-%, kort) bruges effektivRating/holdRating (2000-fallback) i byggMatchCard.
+  function holdRatingSafe(hold, key) { return hold.reduce(function (s, p) { return s + (p[key] || 0); }, 0); }
+
+  // ---------------- Fremmøde / roster-handlinger ----------------
+  function settilstede(navn, vaerdi) {
+    var p = byNavn(navn); if (!p) return;
+    var varTilStede = p.tilstede;
+    p.tilstede = vaerdi;
+    if (vaerdi && !varTilStede) forudfyldModesFraNormal(p);
+    render();
+  }
+  function vaelgAlleTilStede() {
+    roster.forEach(function (p) { if (aktivGrupper.has(p.gruppe)) { var var0 = p.tilstede; p.tilstede = true; if (!var0) forudfyldModesFraNormal(p); } });
+    render();
+  }
+  function fjernAlleTilStede() {
+    roster.forEach(function (p) { if (aktivGrupper.has(p.gruppe)) p.tilstede = false; });
+    render();
+  }
+  function opdaterStandarder() {
+    roster.forEach(function (p) { if (p.tilstede) p.modes = standardModesFor(p); });
+    render();
+  }
+  function antalTilStede() {
+    return roster.filter(function (p) { return p.tilstede && aktivGrupper.has(p.gruppe); }).length;
+  }
+
+  function opretNySpiller(navn, koen) {
+    if (!navn) return;
+    var ny = friskSpiller({ navn: navn, gruppe: 'Motionist', single: 1500, double: 1500, mix: 1500, koen: koen || null });
+    roster.push(ny);
+    kendteGrupper = uniqueGrupper();
+    aktivGrupper.add(ny.gruppe);
+    render();
+  }
+  function tilfoejFraSoegning(navn) {
+    var kilde = GSB_ALLE_SPILLERE.filter(function (s) { return s.navn === navn; })[0];
+    if (!kilde) return;
+    var ny = friskSpiller({ navn: kilde.navn, gruppe: 'Motionist', single: kilde.single, double: kilde.double, mix: kilde.mix, koen: kilde.koen || null });
+    roster.push(ny);
+    kendteGrupper = uniqueGrupper();
+    aktivGrupper.add(ny.gruppe);
+    render();
+  }
+
+  function tilfoejLaastKamp(kategori, a1, a2, b1, b2) {
+    var alle = [a1, a2, b1, b2].filter(function (x) { return x; });
+    if (new Set(alle).size !== alle.length) { alert('Samme spiller kan ikke optræde to gange i én kamp.'); return; }
+    lockedMatches.push({ kategori: kategori, a: [a1 || null, a2 || null], b: [b1 || null, b2 || null] });
+    render();
+  }
+  function fjernLaastKamp(i) { lockedMatches.splice(i, 1); render(); }
+
+  // ---------------- H2H ----------------
+  function alleOpgoer(navn, kategoriFilter) {
+    var modstandere = {};
+    matchHistory.forEach(function (k) {
+      if (kategoriFilter !== 'alle' && k.type !== kategoriFilter) return;
+      var iA = k.a.indexOf(navn) !== -1, iB = k.b.indexOf(navn) !== -1;
+      if (!iA && !iB) return;
+      var modstanderSide = iA ? k.b : k.a;
+      var vandt = (iA && k.vinder === 'a') || (iB && k.vinder === 'b');
+      modstanderSide.forEach(function (m) {
+        if (!modstandere[m]) modstandere[m] = { sejre: 0, nederlag: 0, seneste: [] };
+        if (vandt) modstandere[m].sejre++; else modstandere[m].nederlag++;
+        modstandere[m].seneste.push(k);
+      });
+    });
+    return modstandere;
+  }
+  function makkerMestMed(navn, kategoriFilter) {
+    var makkere = {};
+    matchHistory.forEach(function (k) {
+      if (kategoriFilter !== 'alle' && k.type !== kategoriFilter) return;
+      [k.a, k.b].forEach(function (side) {
+        if (side.length === 2 && side.indexOf(navn) !== -1) {
+          var makker = side[0] === navn ? side[1] : side[0];
+          makkere[makker] = (makkere[makker] || 0) + 1;
+        }
+      });
+    });
+    return makkere;
+  }
+
+  // ---------------- Rendering ----------------
+  var $ = function (id) { return document.getElementById(id); };
+
+  function skiftFane(navn) {
+    aktivFane = navn;
+    ['koer-runde', 'spillere', 'historik'].forEach(function (f) {
+      $('fane-' + f).hidden = f !== navn;
+      $('btn-fane-' + f).classList.toggle('aktiv', f === navn);
+    });
+    render();
+  }
+
+  function esc(s) { return (s == null ? '' : String(s)).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+
+  function render() {
+    renderGruppeCheckboxer();
+    if (aktivFane === 'koer-runde') { renderRoster(); renderOpsaetning(); renderLaasPanel(); renderRundeVisning(); }
+    if (aktivFane === 'spillere') { renderSpillerAdmin(); renderSoegning(); }
+    if (aktivFane === 'historik') { renderH2H(); renderKamplog(); renderRatingTabel(); }
+    renderBadges();
+  }
+
+  function renderBadges() {
+    var tekst = '👥 ' + antalTilStede() + ' til stede';
+    ['badge-1', 'badge-2', 'badge-3'].forEach(function (id) { var el = $(id); if (el) el.textContent = tekst; });
+  }
+
+  function renderGruppeCheckboxer() {
+    var c = $('gruppe-checkboxer'); if (!c) return;
+    c.innerHTML = kendteGrupper.map(function (g) {
+      return '<label class="chip"><input type="checkbox" ' + (aktivGrupper.has(g) ? 'checked' : '') +
+        ' onchange="App.toggleGruppe(\'' + esc(g) + '\', this.checked)"> ' + esc(g) + '</label>';
+    }).join('');
+  }
+  function toggleGruppe(g, til) { if (til) aktivGrupper.add(g); else aktivGrupper.delete(g); render(); }
+
+  function renderRoster() {
+    var c = $('roster-tabel'); if (!c) return;
+    var synlige = roster.filter(function (p) { return aktivGrupper.has(p.gruppe); });
+    var rows = synlige.map(function (p) {
+      var m = p.modes;
+      return '<tr>' +
+        '<td><input type="checkbox" ' + (p.tilstede ? 'checked' : '') + ' onchange="App.settilstede(\'' + esc(p.navn) + '\', this.checked)"></td>' +
+        '<td>' + esc(p.navn) + ' <span class="dim">(' + esc(p.gruppe) + (p.koen ? ', ' + p.koen : '') + ')</span></td>' +
+        '<td>' +
+        chk(p, 'single', m.single) + chk(p, 'double', m.double) + chk(p, 'mixed', m.mixed) +
+        '</td>' +
+        '<td class="dim">S:' + fmt(p.single) + ' D:' + fmt(p.double) + ' M:' + fmt(p.mix) + '</td>' +
+        '<td><label><input type="checkbox" ' + (p.tvungenSpil ? 'checked' : '') + ' onchange="App.setFelt(\'' + esc(p.navn) + '\',\'tvungenSpil\',this.checked)"> Skal spille</label></td>' +
+        '<td><label><input type="checkbox" ' + (p.tvingTilTeknik ? 'checked' : '') + ' onchange="App.setFelt(\'' + esc(p.navn) + '\',\'tvingTilTeknik\',this.checked)"> Tving til teknik</label></td>' +
+        '<td class="dim">siddet over ' + oversidderCount(p.navn) + '× (10 runder)</td>' +
+        '</tr>';
+    }).join('');
+    c.innerHTML = '<table><thead><tr><th>Til stede</th><th>Navn</th><th>Kategorier denne runde</th><th>Rating</th><th></th><th></th><th></th></tr></thead><tbody>' + rows + '</tbody></table>';
+  }
+  function chk(p, felt, checked) {
+    return '<label><input type="checkbox" ' + (checked ? 'checked' : '') + ' onchange="App.setMode(\'' + esc(p.navn) + '\',\'' + felt + '\',this.checked)"> ' + felt + '</label> ';
+  }
+  function fmt(v) { return v == null ? '–' : v; }
+  function setMode(navn, felt, val) { var p = byNavn(navn); if (p) p.modes[felt] = val; render(); }
+  function setFelt(navn, felt, val) { var p = byNavn(navn); if (p) p[felt] = val; render(); }
+
+  function renderOpsaetning() {
+    var el = $('opsaetning-info'); if (el) el.textContent = '👥 ' + antalTilStede() + ' til stede';
+    $('baner-input').value = settings.baner;
+    $('teknikloft-input').value = settings.teknikLoft;
+    $('udskif-single').checked = settings.tillUdskifSingle;
+    $('udskif-double').checked = settings.tillUdskifDouble;
+    $('filosofi-select').value = settings.filosofi;
+  }
+  function saetBaner(n) { settings.baner = n; renderOpsaetning(); }
+  function opdaterIndstilling(felt, val) { settings[felt] = val; }
+
+  function renderLaasPanel() {
+    var tilstede = roster.filter(function (p) { return p.tilstede && aktivGrupper.has(p.gruppe); });
+    var opts = '<option value="">– auto –</option>' + tilstede.map(function (p) { return '<option value="' + esc(p.navn) + '">' + esc(p.navn) + '</option>'; }).join('');
+    ['lock-a1', 'lock-a2', 'lock-b1', 'lock-b2'].forEach(function (id) { if ($(id)) $(id).innerHTML = opts; });
+    var liste = $('laaste-kampe-liste');
+    if (liste) {
+      liste.innerHTML = lockedMatches.map(function (lm, i) {
+        return '<div class="chip">' + esc(lm.kategori) + ': ' + [lm.a[0] || 'auto', lm.a[1] || 'auto'].join('+') + ' mod ' + [lm.b[0] || 'auto', lm.b[1] || 'auto'].join('+') +
+          ' <button onclick="App.fjernLaastKamp(' + i + ')">✕</button></div>';
+      }).join('');
+    }
+    var info = $('laas-info'); if (info) info.textContent = '👥 ' + antalTilStede() + ' til stede';
+  }
+  function tilfoejLaastKampUI() {
+    var kategori = $('lock-kategori').value;
+    var a1 = $('lock-a1').value, a2 = $('lock-a2').value, b1 = $('lock-b1').value, b2 = $('lock-b2').value;
+    tilfoejLaastKamp(kategori, a1, a2, b1, b2);
+    ['lock-a1', 'lock-a2', 'lock-b1', 'lock-b2'].forEach(function (id) { $(id).value = ''; });
+  }
+
+  function navneListe(hold) { return hold.map(function (p) { return p.navn; }).join(' + '); }
+
+  function byggMatchCard(k, i) {
+    var proc = '';
+    if (k.type !== 'udskiftning') {
+      var ratingKey = k.type === 'single' ? 'single' : (k.type === 'double' ? 'double' : 'mix');
+      var ra = effektivHoldRating(k.a, ratingKey) / k.a.length, rb = effektivHoldRating(k.b, ratingKey) / k.b.length;
+      proc = Math.round(forventetVind(ra, rb) * 100) + '% / ' + Math.round(forventetVind(rb, ra) * 100) + '%';
+    }
+    var titel = k.type === 'single' ? 'Single' : k.type === 'double' ? 'Double' : 'Mixed double';
+    var advarsel = k.laast ? ' 🔒 låst' : '';
+    var udskifText = k.udskiftning ? ('<div class="dim">+ udskiftning: ' + esc(k.udskiftning.navn) + ' (' + (k.type === 'single' ? '3' : '5') + ' på banen, ingen ratingændring)</div>') : '';
+    var knapper = k.vinder ? '<div class="dim">Vinder: ' + (k.vinder === 'a' ? navneListe(k.a) : navneListe(k.b)) + '</div>' :
+      '<button onclick="App.registerVinder(' + i + ',\'a\')">Side A vandt</button> <button onclick="App.registerVinder(' + i + ',\'b\')">Side B vandt</button>';
+    return '<div class="card">' +
+      '<div><b>Bane ' + k.bane + '</b> — ' + titel + advarsel + '</div>' +
+      '<div>' + esc(navneListe(k.a)) + ' <span class="dim">mod</span> ' + esc(navneListe(k.b)) + '</div>' +
+      (proc ? '<div class="dim">Forventet: ' + proc + '</div>' : '') +
+      udskifText +
+      '<div>' + knapper + '</div>' +
+      '<button onclick="App.aabnRedigering(' + i + ')">✎ Rediger kamp</button>' +
+      '</div>';
+  }
+
+  function renderRundeVisning() {
+    var c = $('runde-container'); if (!c) return;
+    if (rundeAlleMatches.length === 0 && pendingOversiddereForRunde.length === 0) { c.innerHTML = '<p class="dim">Ingen runde genereret endnu.</p>'; return; }
+    var overKort = '';
+    if (pendingOversiddereForRunde.length > 0) {
+      overKort = '<div class="card advarsel"><b>🪑 ' + pendingOversiddereForRunde.length + ' sidder over denne runde</b><div>' +
+        pendingOversiddereForRunde.map(function (p) { return esc(p.navn) + ' (siddet over ' + oversidderCount(p.navn) + '× seneste 10 runder)'; }).join(', ') + '</div></div>';
+    }
+    var teknikKort = '';
+    if (window.__sidsteTeknikGruppe && window.__sidsteTeknikGruppe.length) {
+      teknikKort = '<div class="card"><b>🏸 Teknikbane</b><div>' + window.__sidsteTeknikGruppe.map(function (p) { return esc(p.navn); }).join(', ') + '</div></div>';
+    }
+    var kampKort = rundeAlleMatches.map(byggMatchCard).join('');
+    var bekraeftKnap = rundeErBekraeftet ? '<span class="dim">✅ Runde bekræftet (runde ' + rundeTaeller + ')</span>' :
+      '<button onclick="App.bekraeftRunde()">✅ Bekræft runde</button>';
+    var nulstilKnap = '<button onclick="App.nulstilRunde()">↺ Nulstil runde</button>';
+    c.innerHTML = '<div class="card">' + bekraeftKnap + ' ' + nulstilKnap + '</div>' + overKort + teknikKort + kampKort;
+  }
+
+  // Simpel redigering: prompt-baseret (holder scope nede, men rører aldrig lockedMatches)
+  function aabnRedigering(i) {
+    var k = rundeAlleMatches[i];
+    var tilstede = roster.filter(function (p) { return p.tilstede; }).map(function (p) { return p.navn; });
+    var nuvaerende = navneListe(k.a) + ' | ' + navneListe(k.b);
+    var svar = prompt('Rediger kamp (Bane ' + k.bane + '). Skriv "sideA | sideB" med navne adskilt af "+". Nuværende:\n' + nuvaerende, nuvaerende);
+    if (svar == null) return;
+    var dele = svar.split('|');
+    if (dele.length !== 2) { alert('Forkert format.'); return; }
+    var nyA = dele[0].split('+').map(function (s) { return s.trim(); }).filter(Boolean).map(byNavn).filter(Boolean);
+    var nyB = dele[1].split('+').map(function (s) { return s.trim(); }).filter(Boolean).map(byNavn).filter(Boolean);
+    if (nyA.length === 0 || nyB.length === 0) { alert('Begge sider skal have mindst én spiller.'); return; }
+    k.a = nyA; k.b = nyB; k.vinder = null;
+    // Advarsel hvis en spiller nu findes i en anden vist kamp
+    var andre = rundeAlleMatches.filter(function (m, idx) { return idx !== i; });
+    var dobbeltNavne = [];
+    nyA.concat(nyB).forEach(function (p) {
+      andre.forEach(function (m) { if (m.a.indexOf(p) !== -1 || m.b.indexOf(p) !== -1) dobbeltNavne.push(p.navn); });
+    });
+    if (dobbeltNavne.length) alert('OBS: ' + dobbeltNavne.join(', ') + ' optræder nu i mere end én kamp denne runde — ret den anden kamp manuelt.');
+    render();
+  }
+
+  function renderSpillerAdmin() {
+    var c = $('spiller-admin-tabel'); if (!c) return;
+    var rows = roster.map(function (p) {
+      return '<tr><td>' + esc(p.navn) + ' <span class="dim">(' + esc(p.gruppe) + ')</span></td>' +
+        '<td><label><input type="checkbox" ' + (p.normalKategorier.single ? 'checked' : '') + ' onchange="App.setNormal(\'' + esc(p.navn) + '\',\'single\',this.checked)"> Single</label> ' +
+        '<label><input type="checkbox" ' + (p.normalKategorier.mixed ? 'checked' : '') + ' onchange="App.setNormal(\'' + esc(p.navn) + '\',\'mixed\',this.checked)"> Mix</label> ' +
+        '<span class="dim">(double altid inkluderet)</span></td></tr>';
+    }).join('');
+    c.innerHTML = '<table><thead><tr><th>Navn</th><th>Normal rolle (holdkamp)</th></tr></thead><tbody>' + rows + '</tbody></table>';
+  }
+  function setNormal(navn, felt, val) {
+    var p = byNavn(navn); if (!p) return;
+    p.normalKategorier[felt] = val; p.normalKategorierRoert = true; render();
+  }
+
+  function renderSoegning() {
+    var c = $('soege-resultat'); if (!c) return;
+    var q = ($('soege-input') && $('soege-input').value || '').toLowerCase();
+    if (!q) { c.innerHTML = ''; return; }
+    var eksisterende = new Set(roster.map(function (p) { return p.navn; }));
+    var hits = GSB_ALLE_SPILLERE.filter(function (s) { return s.navn.toLowerCase().indexOf(q) !== -1 && !eksisterende.has(s.navn); }).slice(0, 15);
+    c.innerHTML = hits.map(function (s) { return '<div><button onclick="App.tilfoejFraSoegning(\'' + esc(s.navn) + '\')">+ ' + esc(s.navn) + '</button></div>'; }).join('');
+  }
+
+  function renderH2H() {
+    var sel = $('h2h-spiller'); if (!sel) return;
+    var navne = roster.map(function (p) { return p.navn; }).sort();
+    sel.innerHTML = '<option value="">– vælg spiller –</option>' + navne.map(function (n) { return '<option value="' + esc(n) + '">' + esc(n) + '</option>'; }).join('');
+    var navn = sel.value;
+    var kat = $('h2h-kategori') ? $('h2h-kategori').value : 'alle';
+    var out = $('h2h-output');
+    if (!navn) { out.innerHTML = ''; return; }
+    var opgoer = alleOpgoer(navn, kat);
+    var rows = Object.keys(opgoer).map(function (m) {
+      var o = opgoer[m];
+      var seneste = o.seneste.slice().sort(function (a, b) { return b.runde - a.runde; })[0];
+      return { navn: m, o: o, seneste: seneste };
+    }).sort(function (a, b) { return (b.seneste ? b.seneste.runde : 0) - (a.seneste ? a.seneste.runde : 0); });
+    var liste = rows.map(function (r) {
+      return '<div class="card"><b>' + esc(r.navn) + '</b> — ' + r.o.sejre + 'S / ' + r.o.nederlag + 'N (seneste møde: runde ' + (r.seneste ? r.seneste.runde : '?') + ')</div>';
+    }).join('');
+    var makkere = makkerMestMed(navn, kat);
+    var makkerListe = Object.keys(makkere).sort(function (a, b) { return makkere[b] - makkere[a]; })
+      .map(function (m) { return esc(m) + ' (' + makkere[m] + ' kampe)'; }).join(', ');
+    out.innerHTML = '<h4>Modstandere (nyeste møde først)</h4>' + (liste || '<p class="dim">Ingen kampe endnu.</p>') +
+      '<h4>Makker mest med</h4><p>' + (makkerListe || '<span class="dim">Ingen double/mixed-kampe endnu.</span>') + '</p>';
+  }
+
+  function renderKamplog() {
+    var c = $('kamplog'); if (!c) return;
+    var rows = matchHistory.slice().reverse().map(function (k) {
+      return '<tr><td>' + k.runde + '</td><td>' + esc(k.type) + '</td><td>' + esc(k.a.join('+')) + '</td><td>' + esc(k.b.join('+')) + '</td><td>' + (k.vinder === 'a' ? esc(k.a.join('+')) : esc(k.b.join('+'))) + '</td></tr>';
+    }).join('');
+    c.innerHTML = '<table><thead><tr><th>Runde</th><th>Type</th><th>Side A</th><th>Side B</th><th>Vinder</th></tr></thead><tbody>' + rows + '</tbody></table>';
+  }
+
+  function renderRatingTabel() {
+    var c = $('rating-tabel'); if (!c) return;
+    var rows = sortEfterRating(roster, 'single').map(function (p) {
+      return '<tr><td>' + esc(p.navn) + '</td><td>' + fmt(p.single) + '</td><td>' + fmt(p.double) + '</td><td>' + fmt(p.mix) + '</td></tr>';
+    }).join('');
+    c.innerHTML = '<table><thead><tr><th>Navn</th><th>Single</th><th>Double</th><th>Mix</th></tr></thead><tbody>' + rows + '</tbody></table>';
+  }
+
+  // ---------------- Init ----------------
+  window.App = {
+    skiftFane: skiftFane, toggleGruppe: toggleGruppe, settilstede: settilstede,
+    vaelgAlleTilStede: vaelgAlleTilStede, fjernAlleTilStede: fjernAlleTilStede,
+    setMode: setMode, setFelt: setFelt, opdaterStandarder: opdaterStandarder,
+    opretNySpiller: function () { opretNySpiller($('ny-spiller-navn').value, $('ny-spiller-koen').value || null); $('ny-spiller-navn').value = ''; },
+    tilfoejFraSoegning: tilfoejFraSoegning, renderSoegning: renderSoegning,
+    tilfoejLaastKampUI: tilfoejLaastKampUI, fjernLaastKamp: fjernLaastKamp,
+    saetBaner: saetBaner, opdaterIndstilling: function (felt, val) { opdaterIndstilling(felt, val); },
+    genererRunde: genererRunde, bekraeftRunde: bekraeftRunde, nulstilRunde: nulstilRunde,
+    registerVinder: registerVinder, aabnRedigering: aabnRedigering,
+    setNormal: setNormal
+  };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    $('baner-input').addEventListener('change', function () { settings.baner = parseInt(this.value, 10) || 0; });
+    $('teknikloft-input').addEventListener('change', function () { settings.teknikLoft = parseInt(this.value, 10) || 0; });
+    $('udskif-single').addEventListener('change', function () { settings.tillUdskifSingle = this.checked; });
+    $('udskif-double').addEventListener('change', function () { settings.tillUdskifDouble = this.checked; });
+    $('filosofi-select').addEventListener('change', function () { settings.filosofi = this.value; });
+    $('soege-input').addEventListener('input', renderSoegning);
+    $('h2h-spiller').addEventListener('change', renderH2H);
+    $('h2h-kategori').addEventListener('change', renderH2H);
+    render();
+  });
+
+  // Eksponer engine-funktioner til evt. konsol-/testbrug
+  window.__kampsystemInternals = {
+    genererRunde: genererRunde, roster: roster, settings: settings,
+    lockedMatches: lockedMatches, rundeAlleMatches: function () { return rundeAlleMatches; },
+    bekraeftRunde: bekraeftRunde, nulstilRunde: nulstilRunde
+  };
+})();
+
+</script>
+</body>
+</html>
