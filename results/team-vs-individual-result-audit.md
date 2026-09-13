@@ -1,6 +1,6 @@
 # Holdresultat mod individuelle resultater
 
-Genereret: 2026-09-13T08:06:39.990Z
+Genereret: 2026-09-13T08:10:16.203Z
 
 - Holdkampe sammenlignet: **2367**
 - Eksakt samsvar på vinderantal: **1909**

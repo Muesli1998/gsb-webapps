@@ -311,3 +311,8 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 - Rå resultatmarkører (`G`, `F`, `D`, m.fl.) gemmes ordret i `individual_matches.result_marker_raw`; deres betydning er ikke gættet.
 - De 8 dokumenterede 0-0-kategorier med markør er fortsat markeret `browser_zero_score` og tælles ikke som almindelige spillede sæt.
 - Browser-ruteprøven for repræsentative dækningshuller kunne ikke starte i denne runtime på grund af Playwright `spawn EPERM`; forsøget er gemt uden databaseændringer.
+
+## 2026-09-13 – reproduceret kvalitetstjek før pause
+- `check-normalized-db.mjs`, `audit-individual-db.mjs`, `audit-individual-coverage-gaps.mjs`, `audit-team-vs-individual-results.mjs` og `run-data-quality-check.mjs` blev kørt igen mod den aktuelle SQLite-fil.
+- Resultaterne er konsistente med den gemte status: ingen foreign-key-fejl eller ID-dubletter; 2.818 holdkampe; 20.319 individuelle rækker; 315 dækningshuller; 458 hold/individ-afvigelser; 47 corona-suspenderede; 6 rækker med manglende resultat/sider.
+- Audit-JSON/Markdown-filerne er regenereret med ny kørselstid og gemmes sammen med dokumentationen.

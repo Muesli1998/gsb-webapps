@@ -1,6 +1,6 @@
 # Audit af holdkampe uden individuelle kategorier
 
-Genereret: 2026-09-13T07:53:45.824Z
+Genereret: 2026-09-13T08:10:12.645Z
 
 - Holdkampe med holdresultat men uden individuelle rækker: **315**
 - categories_without_scores: **54**
