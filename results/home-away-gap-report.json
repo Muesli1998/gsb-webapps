@@ -1,0 +1,1019 @@
+{
+  "generatedAt": "2026-09-13T05:13:58.271Z",
+  "bySeason": [
+    {
+      "season_id": 2010,
+      "missing_home": 11,
+      "missing_away": 11,
+      "missing_result": 11,
+      "total": 11
+    },
+    {
+      "season_id": 2011,
+      "missing_home": 159,
+      "missing_away": 159,
+      "missing_result": 169,
+      "total": 169
+    },
+    {
+      "season_id": 2012,
+      "missing_home": 52,
+      "missing_away": 52,
+      "missing_result": 131,
+      "total": 131
+    },
+    {
+      "season_id": 2013,
+      "missing_home": 43,
+      "missing_away": 43,
+      "missing_result": 134,
+      "total": 134
+    },
+    {
+      "season_id": 2014,
+      "missing_home": 53,
+      "missing_away": 53,
+      "missing_result": 144,
+      "total": 144
+    },
+    {
+      "season_id": 2015,
+      "missing_home": 48,
+      "missing_away": 48,
+      "missing_result": 156,
+      "total": 156
+    },
+    {
+      "season_id": 2016,
+      "missing_home": 52,
+      "missing_away": 52,
+      "missing_result": 145,
+      "total": 147
+    },
+    {
+      "season_id": 2017,
+      "missing_home": 45,
+      "missing_away": 45,
+      "missing_result": 133,
+      "total": 133
+    },
+    {
+      "season_id": 2018,
+      "missing_home": 35,
+      "missing_away": 35,
+      "missing_result": 139,
+      "total": 143
+    },
+    {
+      "season_id": 2019,
+      "missing_home": 20,
+      "missing_away": 20,
+      "missing_result": 102,
+      "total": 125
+    },
+    {
+      "season_id": 2020,
+      "missing_home": 102,
+      "missing_away": 102,
+      "missing_result": 133,
+      "total": 162
+    },
+    {
+      "season_id": 2021,
+      "missing_home": 100,
+      "missing_away": 100,
+      "missing_result": 186,
+      "total": 186
+    },
+    {
+      "season_id": 2022,
+      "missing_home": 132,
+      "missing_away": 132,
+      "missing_result": 227,
+      "total": 227
+    },
+    {
+      "season_id": 2023,
+      "missing_home": 127,
+      "missing_away": 127,
+      "missing_result": 255,
+      "total": 255
+    },
+    {
+      "season_id": 2024,
+      "missing_home": 165,
+      "missing_away": 165,
+      "missing_result": 295,
+      "total": 295
+    },
+    {
+      "season_id": 2025,
+      "missing_home": 242,
+      "missing_away": 242,
+      "missing_result": 397,
+      "total": 400
+    }
+  ],
+  "examples": [
+    {
+      "external_match_id": "506407",
+      "season_id": 2025,
+      "gsb_team_id": 7,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "506413",
+      "season_id": 2025,
+      "gsb_team_id": 7,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "506441",
+      "season_id": 2025,
+      "gsb_team_id": 7,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "506838",
+      "season_id": 2025,
+      "gsb_team_id": 7,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "506844",
+      "season_id": 2025,
+      "gsb_team_id": 7,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "506845",
+      "season_id": 2025,
+      "gsb_team_id": 7,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505211",
+      "season_id": 2025,
+      "gsb_team_id": 2,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505213",
+      "season_id": 2025,
+      "gsb_team_id": 2,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505215",
+      "season_id": 2025,
+      "gsb_team_id": 2,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505216",
+      "season_id": 2025,
+      "gsb_team_id": 2,
+      "status": "browser_verified",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": "5-0"
+    },
+    {
+      "external_match_id": "505217",
+      "season_id": 2025,
+      "gsb_team_id": 2,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505219",
+      "season_id": 2025,
+      "gsb_team_id": 2,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "494475",
+      "season_id": 2025,
+      "gsb_team_id": 3,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "494477",
+      "season_id": 2025,
+      "gsb_team_id": 3,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "494479",
+      "season_id": 2025,
+      "gsb_team_id": 3,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "494480",
+      "season_id": 2025,
+      "gsb_team_id": 3,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505242",
+      "season_id": 2025,
+      "gsb_team_id": 5,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505244",
+      "season_id": 2025,
+      "gsb_team_id": 5,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505246",
+      "season_id": 2025,
+      "gsb_team_id": 5,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505248",
+      "season_id": 2025,
+      "gsb_team_id": 5,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505250",
+      "season_id": 2025,
+      "gsb_team_id": 5,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505252",
+      "season_id": 2025,
+      "gsb_team_id": 5,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493220",
+      "season_id": 2025,
+      "gsb_team_id": 6,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493222",
+      "season_id": 2025,
+      "gsb_team_id": 6,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493224",
+      "season_id": 2025,
+      "gsb_team_id": 6,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493225",
+      "season_id": 2025,
+      "gsb_team_id": 6,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505230",
+      "season_id": 2025,
+      "gsb_team_id": 8,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505232",
+      "season_id": 2025,
+      "gsb_team_id": 8,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505234",
+      "season_id": 2025,
+      "gsb_team_id": 8,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505236",
+      "season_id": 2025,
+      "gsb_team_id": 8,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505238",
+      "season_id": 2025,
+      "gsb_team_id": 8,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505240",
+      "season_id": 2025,
+      "gsb_team_id": 8,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493230",
+      "season_id": 2025,
+      "gsb_team_id": 9,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493232",
+      "season_id": 2025,
+      "gsb_team_id": 9,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493234",
+      "season_id": 2025,
+      "gsb_team_id": 9,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493235",
+      "season_id": 2025,
+      "gsb_team_id": 9,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505254",
+      "season_id": 2025,
+      "gsb_team_id": 10,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505256",
+      "season_id": 2025,
+      "gsb_team_id": 10,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505278",
+      "season_id": 2025,
+      "gsb_team_id": 10,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505280",
+      "season_id": 2025,
+      "gsb_team_id": 10,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505282",
+      "season_id": 2025,
+      "gsb_team_id": 10,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505284",
+      "season_id": 2025,
+      "gsb_team_id": 10,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505294",
+      "season_id": 2025,
+      "gsb_team_id": 11,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505296",
+      "season_id": 2025,
+      "gsb_team_id": 11,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505299",
+      "season_id": 2025,
+      "gsb_team_id": 11,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505300",
+      "season_id": 2025,
+      "gsb_team_id": 11,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505302",
+      "season_id": 2025,
+      "gsb_team_id": 11,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505305",
+      "season_id": 2025,
+      "gsb_team_id": 11,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505972",
+      "season_id": 2025,
+      "gsb_team_id": 12,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505974",
+      "season_id": 2025,
+      "gsb_team_id": 12,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505975",
+      "season_id": 2025,
+      "gsb_team_id": 12,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505988",
+      "season_id": 2025,
+      "gsb_team_id": 13,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505990",
+      "season_id": 2025,
+      "gsb_team_id": 13,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493359",
+      "season_id": 2025,
+      "gsb_team_id": 15,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493360",
+      "season_id": 2025,
+      "gsb_team_id": 15,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493363",
+      "season_id": 2025,
+      "gsb_team_id": 15,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493364",
+      "season_id": 2025,
+      "gsb_team_id": 15,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493375",
+      "season_id": 2025,
+      "gsb_team_id": 15,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493376",
+      "season_id": 2025,
+      "gsb_team_id": 15,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493379",
+      "season_id": 2025,
+      "gsb_team_id": 15,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493255",
+      "season_id": 2025,
+      "gsb_team_id": 16,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493256",
+      "season_id": 2025,
+      "gsb_team_id": 16,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493258",
+      "season_id": 2025,
+      "gsb_team_id": 16,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493260",
+      "season_id": 2025,
+      "gsb_team_id": 16,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493266",
+      "season_id": 2025,
+      "gsb_team_id": 16,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493267",
+      "season_id": 2025,
+      "gsb_team_id": 16,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493269",
+      "season_id": 2025,
+      "gsb_team_id": 16,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493271",
+      "season_id": 2025,
+      "gsb_team_id": 16,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493277",
+      "season_id": 2025,
+      "gsb_team_id": 16,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493278",
+      "season_id": 2025,
+      "gsb_team_id": 16,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "492852",
+      "season_id": 2025,
+      "gsb_team_id": 17,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "492854",
+      "season_id": 2025,
+      "gsb_team_id": 17,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493198",
+      "season_id": 2025,
+      "gsb_team_id": 17,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493515",
+      "season_id": 2025,
+      "gsb_team_id": 17,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493517",
+      "season_id": 2025,
+      "gsb_team_id": 17,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493520",
+      "season_id": 2025,
+      "gsb_team_id": 17,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493206",
+      "season_id": 2025,
+      "gsb_team_id": 17,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "493522",
+      "season_id": 2025,
+      "gsb_team_id": 17,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "492732",
+      "season_id": 2025,
+      "gsb_team_id": 18,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "492734",
+      "season_id": 2025,
+      "gsb_team_id": 18,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "492736",
+      "season_id": 2025,
+      "gsb_team_id": 18,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "492737",
+      "season_id": 2025,
+      "gsb_team_id": 18,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "492738",
+      "season_id": 2025,
+      "gsb_team_id": 18,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "492739",
+      "season_id": 2025,
+      "gsb_team_id": 18,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "506023",
+      "season_id": 2025,
+      "gsb_team_id": 19,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "506025",
+      "season_id": 2025,
+      "gsb_team_id": 19,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "506027",
+      "season_id": 2025,
+      "gsb_team_id": 19,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "506361",
+      "season_id": 2025,
+      "gsb_team_id": 20,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "506363",
+      "season_id": 2025,
+      "gsb_team_id": 20,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "487893",
+      "season_id": 2025,
+      "gsb_team_id": 21,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "487902",
+      "season_id": 2025,
+      "gsb_team_id": 21,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "506461",
+      "season_id": 2025,
+      "gsb_team_id": 22,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "506463",
+      "season_id": 2025,
+      "gsb_team_id": 22,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "506465",
+      "season_id": 2025,
+      "gsb_team_id": 22,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "506483",
+      "season_id": 2025,
+      "gsb_team_id": 23,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "506490",
+      "season_id": 2025,
+      "gsb_team_id": 24,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "506492",
+      "season_id": 2025,
+      "gsb_team_id": 24,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "490145",
+      "season_id": 2025,
+      "gsb_team_id": 25,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "488009",
+      "season_id": 2025,
+      "gsb_team_id": 25,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "506467",
+      "season_id": 2025,
+      "gsb_team_id": 26,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    }
+  ]
+}
