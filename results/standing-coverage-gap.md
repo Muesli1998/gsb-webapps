@@ -1,6 +1,6 @@
 # Stillingsdækning og huller
 
-Genereret: 2026-09-12T18:35:45.985Z
+Genereret: 2026-09-13T04:50:12.097Z
 
 - Unikke ikke-ungdoms puljer i køen: **97**
 - Med gemt stilling: **0**
