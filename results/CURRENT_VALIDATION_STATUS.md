@@ -47,3 +47,17 @@ Metodedetaljer til en senere skill står i `COMPLETE_RESULT_FALLBACK_METHOD.md`;
 - 8 kategorier har 0-0-sæt med rå resultatmarkør. De er markeret browser_zero_score og skal ikke tælles som almindelige spillede sæt.
 - 315 holdkampe med et holdresultat mangler fortsat individuelle kategorier. De er næste dækningshul.
 - Ingen ID- eller foreign-key-fejl efter importen.
+
+## Individuelle dækningshuller
+
+- 315 holdkampe har registreret holdresultat, men ingen individuelle SQLite-rækker.
+- 257 gemte payloads har ingen kategorisektioner.
+- 58 payloads har kategorier uden scores; 57 har eksplicit no-play-/walkovertekst.
+- Kamp 340495 er den eneste uafklarede række i denne gruppe.
+- Ingen af de 315 gaps indeholder scorede kategorier, som importøren har undladt at importere.
+
+## Bemærkninger og afgørelser
+
+- 80 holdkampe har nu ordret Bemærkning gemt i team_matches.remark_raw.
+- De fire individuelle gaps med Bemærkning er 340495, 429571, 429790 og 446325; de er dokumenteret i gap-auditen.
+- 340495 er en protestafgørelse: resultatet er ændret jf. kendelse i protest.

@@ -43,6 +43,7 @@ CREATE TABLE IF NOT EXISTS team_matches (
   away_name_raw TEXT,
   result_raw TEXT,
   points_raw TEXT,
+  remark_raw TEXT,
   status TEXT NOT NULL DEFAULT 'unknown',
   walkover_text_raw TEXT,
   walkover_winner_raw TEXT,

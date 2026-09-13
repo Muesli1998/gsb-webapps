@@ -1,6 +1,6 @@
 # Browser-individuelparser – dækningsaudit
 
-Genereret: 2026-09-13T07:42:45.664Z
+Genereret: 2026-09-13T07:52:05.873Z
 
 - Unikke payloads: **2816**
 - Med holdresultat: **2680**

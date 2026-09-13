@@ -56,11 +56,11 @@ function parseCategories(raw) {
 function parse(raw) {
   const categories = parseCategories(raw);
   const result = resultField(raw, 'Resultat'); const points = resultField(raw, 'Point');
-  const home = resultField(raw, 'Hjemmehold'); const away = resultField(raw, 'Udehold');
+  const home = resultField(raw, 'Hjemmehold'); const away = resultField(raw, 'Udehold'); const remark = resultField(raw, 'Bemærkning');
   const explicitNoPlay = /Afgjort uden kamp|Ikke fremmødt/i.test(raw);
   const categoryWithScore = categories.filter((x) => x.hasScore).length;
   const playerCount = categories.reduce((n, x) => n + x.homePlayers.length + x.awayPlayers.length, 0);
-  return { result, points, home, away, categories, categoryCount: categories.length, categoryWithScore, playerCount, explicitNoPlay };
+  return { result, points, home, away, remark, categories, categoryCount: categories.length, categoryWithScore, playerCount, explicitNoPlay };
 }
 
 const parsed = [...payloads.values()].map((p) => ({ id: p.id, source: p.source, ...parse(p.rawText) }));

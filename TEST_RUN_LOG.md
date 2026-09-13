@@ -283,3 +283,18 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 - \`individual_matches.result_marker_raw\` blev tilføjet til skemaet. Markørteksten gemmes ordret, og 0-0-kategorier med markør sættes til status \`browser_zero_score\`, så de ikke forveksles med spillede sæt.
 - Efter import: 20.319 individuelle rækker, 67.196 spillerrelationer, 7.599 spillere, 2.367 holdkampe med individuelle rækker. 315 holdkampe med holdresultat mangler fortsat individuelle rækker.
 - Efterkontrol: ingen foreign-key-fejl eller ID-dubletter; holdkampenes 2.818-rækkers status/feltdækning er uændret. 8 individuelle kategorier har dokumenterede 0-0-sæt, og 309 har rå resultatmarkør.
+
+## 2026-09-13 – audit af resterende individuelle dækningshuller
+- audit-individual-coverage-gaps.mjs sammenholder alle holdkampe med et registreret holdresultat mod de parserede browserpayloads.
+- Der er 315 holdkampe uden individuelle SQLite-rækker.
+- 257 payloads indeholder ingen kategorisektioner overhovedet. 58 indeholder kategorier, men ingen scores.
+- Af de 58 uden scores har 57 eksplicit no-play-/walkovertekst. Den ene uafklarede række er kamp 340495.
+- Der blev ikke fundet en gap-række med scorede kategorier, som importøren havde overset.
+- Fordelingen er gemt i results/individual-coverage-gap-audit.json og .md; rapporten er evidens for sidens indhold, ikke en antagelse om årsagen til manglende delkampe.
+
+## 2026-09-13 – bemærkninger, protester og afgørelser
+- 80 gemte browserpayloads indeholder feltet Bemærkning. Det gemmes nu ordret i team_matches.remark_raw.
+- Nøgleordstælling: protest 20, kendelse 5, afbud 6, corona 1, ændret/ændring 22. Tællingerne overlapper, og markørerne fortolkes ikke automatisk.
+- Gap-auditen fandt fire holdkampe med Bemærkning, men uden individuelle scores: 340495 (resultat ændret efter protest), 429571 (modstander mødte ikke op), 429790 (spiller indsat efter registrering) og 446325 (afbud).
+- Kamp 340495 er dermed dokumenteret som en administrativ afgørelse, ikke som en skjult scoremangel.
+- Rapporten ligger i results/team-match-remarks-audit.json/.md og results/individual-coverage-gap-audit.json/.md.
