@@ -1,6 +1,6 @@
 # Corona- og no-result-audit
 
-Genereret: 2026-09-13T07:00:44.119Z
+Genereret: 2026-09-13T07:09:34.492Z
 
 Denne rapport undersøger rækker hvor resultatet er NULL, tomt, `-` eller `0-0`. Den bruger et separat analysevindue for de to berørte sæsoner: 2019/20 fra 15. marts til 30. juni 2020 og 2020/21 fra 1. november 2020 til 30. juni 2021. Vinduet er et evidensfilter og ændrer ikke automatisk status.
 
