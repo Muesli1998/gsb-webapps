@@ -1,0 +1,367 @@
+{
+  "generatedAt": "2026-09-13T05:19:33.827Z",
+  "status": [
+    {
+      "status": "complete",
+      "n": 1374
+    },
+    {
+      "status": "api_error",
+      "n": 1066
+    },
+    {
+      "status": "missing_players",
+      "n": 314
+    },
+    {
+      "status": "corona_suspended",
+      "n": 47
+    },
+    {
+      "status": "browser_verified",
+      "n": 17
+    }
+  ],
+  "season": [
+    {
+      "season_id": 2010,
+      "total": 11,
+      "no_result": 11,
+      "no_home": 11,
+      "no_away": 11
+    },
+    {
+      "season_id": 2011,
+      "total": 169,
+      "no_result": 169,
+      "no_home": 159,
+      "no_away": 159
+    },
+    {
+      "season_id": 2012,
+      "total": 131,
+      "no_result": 131,
+      "no_home": 52,
+      "no_away": 52
+    },
+    {
+      "season_id": 2013,
+      "total": 134,
+      "no_result": 134,
+      "no_home": 43,
+      "no_away": 43
+    },
+    {
+      "season_id": 2014,
+      "total": 144,
+      "no_result": 144,
+      "no_home": 53,
+      "no_away": 53
+    },
+    {
+      "season_id": 2015,
+      "total": 156,
+      "no_result": 156,
+      "no_home": 48,
+      "no_away": 48
+    },
+    {
+      "season_id": 2016,
+      "total": 147,
+      "no_result": 145,
+      "no_home": 52,
+      "no_away": 52
+    },
+    {
+      "season_id": 2017,
+      "total": 133,
+      "no_result": 133,
+      "no_home": 45,
+      "no_away": 45
+    },
+    {
+      "season_id": 2018,
+      "total": 143,
+      "no_result": 139,
+      "no_home": 35,
+      "no_away": 35
+    },
+    {
+      "season_id": 2019,
+      "total": 125,
+      "no_result": 102,
+      "no_home": 20,
+      "no_away": 20
+    },
+    {
+      "season_id": 2020,
+      "total": 162,
+      "no_result": 133,
+      "no_home": 102,
+      "no_away": 102
+    },
+    {
+      "season_id": 2021,
+      "total": 186,
+      "no_result": 186,
+      "no_home": 100,
+      "no_away": 100
+    },
+    {
+      "season_id": 2022,
+      "total": 227,
+      "no_result": 227,
+      "no_home": 132,
+      "no_away": 132
+    },
+    {
+      "season_id": 2023,
+      "total": 255,
+      "no_result": 255,
+      "no_home": 127,
+      "no_away": 127
+    },
+    {
+      "season_id": 2024,
+      "total": 295,
+      "no_result": 295,
+      "no_home": 165,
+      "no_away": 165
+    },
+    {
+      "season_id": 2025,
+      "total": 400,
+      "no_result": 397,
+      "no_home": 242,
+      "no_away": 242
+    }
+  ],
+  "apiErrorBySeason": [
+    {
+      "season_id": 2025,
+      "n": 237
+    },
+    {
+      "season_id": 2024,
+      "n": 164
+    },
+    {
+      "season_id": 2022,
+      "n": 131
+    },
+    {
+      "season_id": 2023,
+      "n": 124
+    },
+    {
+      "season_id": 2021,
+      "n": 96
+    },
+    {
+      "season_id": 2012,
+      "n": 41
+    },
+    {
+      "season_id": 2020,
+      "n": 41
+    },
+    {
+      "season_id": 2013,
+      "n": 40
+    },
+    {
+      "season_id": 2017,
+      "n": 39
+    },
+    {
+      "season_id": 2016,
+      "n": 33
+    },
+    {
+      "season_id": 2014,
+      "n": 32
+    },
+    {
+      "season_id": 2018,
+      "n": 32
+    },
+    {
+      "season_id": 2015,
+      "n": 25
+    },
+    {
+      "season_id": 2019,
+      "n": 19
+    },
+    {
+      "season_id": 2010,
+      "n": 11
+    },
+    {
+      "season_id": 2011,
+      "n": 1
+    }
+  ],
+  "samples": [
+    {
+      "external_match_id": "506407",
+      "season_id": 2025,
+      "status": "api_error",
+      "result_raw": null,
+      "home_name_raw": "",
+      "away_name_raw": ""
+    },
+    {
+      "external_match_id": "506413",
+      "season_id": 2025,
+      "status": "api_error",
+      "result_raw": null,
+      "home_name_raw": "",
+      "away_name_raw": ""
+    },
+    {
+      "external_match_id": "506441",
+      "season_id": 2025,
+      "status": "api_error",
+      "result_raw": null,
+      "home_name_raw": "",
+      "away_name_raw": ""
+    },
+    {
+      "external_match_id": "506838",
+      "season_id": 2025,
+      "status": "api_error",
+      "result_raw": null,
+      "home_name_raw": "",
+      "away_name_raw": ""
+    },
+    {
+      "external_match_id": "506844",
+      "season_id": 2025,
+      "status": "api_error",
+      "result_raw": null,
+      "home_name_raw": "",
+      "away_name_raw": ""
+    },
+    {
+      "external_match_id": "506845",
+      "season_id": 2025,
+      "status": "api_error",
+      "result_raw": null,
+      "home_name_raw": "",
+      "away_name_raw": ""
+    },
+    {
+      "external_match_id": "505211",
+      "season_id": 2025,
+      "status": "api_error",
+      "result_raw": null,
+      "home_name_raw": "",
+      "away_name_raw": ""
+    },
+    {
+      "external_match_id": "505213",
+      "season_id": 2025,
+      "status": "api_error",
+      "result_raw": null,
+      "home_name_raw": "",
+      "away_name_raw": ""
+    },
+    {
+      "external_match_id": "505215",
+      "season_id": 2025,
+      "status": "api_error",
+      "result_raw": null,
+      "home_name_raw": "",
+      "away_name_raw": ""
+    },
+    {
+      "external_match_id": "505217",
+      "season_id": 2025,
+      "status": "api_error",
+      "result_raw": null,
+      "home_name_raw": "",
+      "away_name_raw": ""
+    },
+    {
+      "external_match_id": "505219",
+      "season_id": 2025,
+      "status": "api_error",
+      "result_raw": null,
+      "home_name_raw": "",
+      "away_name_raw": ""
+    },
+    {
+      "external_match_id": "494475",
+      "season_id": 2025,
+      "status": "api_error",
+      "result_raw": null,
+      "home_name_raw": "",
+      "away_name_raw": ""
+    },
+    {
+      "external_match_id": "494477",
+      "season_id": 2025,
+      "status": "api_error",
+      "result_raw": null,
+      "home_name_raw": "",
+      "away_name_raw": ""
+    },
+    {
+      "external_match_id": "494479",
+      "season_id": 2025,
+      "status": "api_error",
+      "result_raw": null,
+      "home_name_raw": "",
+      "away_name_raw": ""
+    },
+    {
+      "external_match_id": "494480",
+      "season_id": 2025,
+      "status": "api_error",
+      "result_raw": null,
+      "home_name_raw": "",
+      "away_name_raw": ""
+    },
+    {
+      "external_match_id": "505242",
+      "season_id": 2025,
+      "status": "api_error",
+      "result_raw": null,
+      "home_name_raw": "",
+      "away_name_raw": ""
+    },
+    {
+      "external_match_id": "505244",
+      "season_id": 2025,
+      "status": "api_error",
+      "result_raw": null,
+      "home_name_raw": "",
+      "away_name_raw": ""
+    },
+    {
+      "external_match_id": "505246",
+      "season_id": 2025,
+      "status": "api_error",
+      "result_raw": null,
+      "home_name_raw": "",
+      "away_name_raw": ""
+    },
+    {
+      "external_match_id": "505248",
+      "season_id": 2025,
+      "status": "api_error",
+      "result_raw": null,
+      "home_name_raw": "",
+      "away_name_raw": ""
+    },
+    {
+      "external_match_id": "505250",
+      "season_id": 2025,
+      "status": "api_error",
+      "result_raw": null,
+      "home_name_raw": "",
+      "away_name_raw": ""
+    }
+  ]
+}
