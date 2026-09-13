@@ -1,0 +1,39 @@
+# Aktuel valideringsstatus
+
+Dato: 2026-09-13
+
+## Datagrundlag
+
+- 2.818 deduplikerede GSB-holdkampe i SQLite.
+- 2.812/2.818 har dokumenteret hjemmehold, udehold og holdresultat. De resterende seks er de to eksplicit corona-suspenderede og fire U09-sider, der ikke viser dynamisk kampdetalje.
+- 2.682 rækker er `browser_verified`; 85 er `browser_verified_no_result` med eksplicit resultatværdi `-`; 47 er `corona_suspended`.
+- 1.440/1.444 fallback-køposter er verificeret; 2 er corona-suspenderede og 2 er U09 uden dynamisk detalje.
+- 126 rækker har walkovertekst i SQLite; 57 køposter har dokumenteret walkovervinder. `Vinder W.O.` alene tælles ikke.
+- 736 standingsrækker er gemt; 96 GSB-stillingsrækker er fundet i den aktuelle stillingssamling.
+
+## Resterende dokumenterede huller
+
+- **4 U09-kampe:** 505217, 505219, 506407, 506413. API giver Internal Server Error, og standard browser-URL viser ingen dynamisk detalje. De er bevaret med URL og status.
+- **2 corona-suspenderede:** 387862 og 387864. De skal ikke behandles som tekniske fejl; siderne har ingen spillet resultat.
+- Individuelle kampopstillinger er endnu ikke komplet parseret for alle 2.818 holdkampe. De eksisterende 56 retrypayloads gav 11 fulde individuelle detaljer og 45 corona-/resultat-minus-sider; ungdomspayloads indeholder yderligere rå spillertekst, der kræver separat normalisering.
+
+## Valideringskontroller
+
+- Ingen ID-dubletter.
+- Ingen foreign-key-fejl.
+- Status og faktisk felt-dækning måles separat.
+- Standardrute og legacy-rute prøves før en kamp klassificeres som manglende detalje.
+- Alle rå dynamiske payloads og fejl gemmes lokalt, før synkronisering.
+
+## Reproducerbare scripts
+
+- `run-youth-browser-fallback.mjs`
+- `rerun-browser-field-gaps.mjs`
+- `run-complete-result-fallback.mjs`
+- `sync-browser-field-gaps.mjs`
+- `sync-legacy-route-probe.mjs`
+- `run-api-gap-audit.mjs`
+- `run-data-quality-check.mjs`
+
+Metodedetaljer til en senere skill står i `COMPLETE_RESULT_FALLBACK_METHOD.md`; procesloggen står i `TEST_RUN_LOG.md`.
+
