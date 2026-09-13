@@ -209,3 +209,9 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 4. Parse og importér individuelle kampe, spillere, makkere og sæt til SQLite.
 5. Byg en dæknings-/afvigelsesrapport mod stillingernes kampantal.
 6. Først derefter begyndes resultatoversigtens UI og filtre.
+
+## Valideret browsersekvens fastholdt
+- Den fungerende metode er nu beskrevet i results/VALIDATED_BROWSER_METHOD.md.
+- Den kræver in-app-browser/CUA accessibility snapshot efter dynamisk rendering; statisk Playwright body/HTML alene er ikke et gyldigt succesflag.
+- Gate: Kampnr + Resultat + hold + individuel sektion eller dokumenteret walkover.
+
