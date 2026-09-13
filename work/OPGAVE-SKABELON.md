@@ -1,13 +1,16 @@
 # Opgave NNN — kort titel
 
 Kopiér denne fil til `work/aabne/NNN-kort-navn.md` og udfyld den.
-Når opgaven er løst, flyttes filen til `work/loeste/` med resultatnoten
-udfyldt nederst.
+Når opgaven er løst, flyttes filen til `work/loeste/` med kontroloutput
+og resultatnote udfyldt nederst.
 
 Skabelonen er til opgaver der **gives videre** til en anden — en Codex-
 session, en Claude-session, eller dig selv om tre uger. Små rettelser du
 selv laver med det samme, skal ikke have en opgavefil; så er ceremonien
 dyrere end arbejdet.
+
+**Trin:** Test & Validation / Results / Preview / Prod Push
+(streg de uaktuelle, se `AGENTS.md`)
 
 ---
 
@@ -26,20 +29,33 @@ tages — den der løser opgaven, ved bedre end dig hvilke skridt der skal til.
 ## Kontekst
 
 Kun det der er nødvendigt for netop denne opgave, konkret og med filnavne.
-Ikke "læs hele repoet" — det er dyrt og upræcist. Hvis noget er forældet
-eller upålideligt, så sig det her.
+Ikke "læs hele repoet" — det er dyrt og upræcist. Er noget forældet eller
+upålideligt, så sig det her.
 
-## Acceptkriterier
+## Kontrol
 
-Hvordan afgøres det at opgaven er løst? Skal kunne efterprøves uden at
-diskutere smag. For eksempel:
+Kommandoer, ikke påstande. Kør dem **før** du går i gang, så du har et
+udgangspunkt, og **efter**, og skriv begge tal i resultatnoten.
 
-- `grep -r "gsb-statistik-test" --exclude-dir=historik` giver ingen træf
-- `node apps/netlify-prod/...` kører uden fejl
-- `docs/START-HER.md` nævner ingen sti under `Dropbox\`
+**Målet — hvad skal blive sandt:**
 
-Er kriterierne vage, bliver review dyrt, og så er det dig der ender med at
-fejlsøge output.
+```
+(kommando)        forventet efter: (tal)
+```
+
+**Værnet — hvad må ikke ændre sig:**
+
+```
+(kommando)        skal være uændret fra før
+```
+
+Værnene er dem der glemmes, og det er dem der fanger den klassiske skade:
+at opgaven løses, og noget andet går i stykker undervejs uden at nogen
+opdager det.
+
+**Skøn** (kan ikke måles — markér tydeligt som vurdering):
+
+- (fx "dokumentet læses stadig sammenhængende")
 
 ## Ved tvivl
 
@@ -48,16 +64,33 @@ Et forkert gæt der ser rigtigt ud, koster mere at opdage end at spørge.
 
 ## Gren
 
-Arbejde udført af en agent kører på `arbejde/NNN-kort-navn`, så ændringen
-kan læses samlet før den flettes ind i `main`.
+`arbejde/NNN-kort-navn`. Arbejde udført af en agent flettes først ind i
+`main` efter gennemgang.
 
 ---
 
 ## Spørgsmål
 
-(Udfyldes af den der løser opgaven. Manageren svarer her i filen.)
+(Udfyldes af den der løser opgaven. Christoffer svarer her i filen.)
+
+## Tilbagefald
+
+(Én linje hver gang opgaven falder tilbage til et tidligere trin, med
+hvorfor. Tre tilbagefald på samme opgave betyder at kriterierne var for
+vage eller opgaven for stor — ikke at posten er besværlig.)
 
 ## Resultat
 
-(Udfyldes når opgaven er løst: hvad blev gjort, hvilke commits, og hvad
-der eventuelt blev fravalgt undervejs og hvorfor.)
+**Kontroloutput — før og efter:**
+
+```
+(indsæt det faktiske output, ikke en beskrivelse af det)
+```
+
+**Hvad blev gjort:** kort, i tal hvor det kan lade sig gøre. "13
+forekomster bevaret, 0 stier tilbage" kan efterprøves på et sekund;
+"produktnavnet er bevaret" kan ikke.
+
+**Hvad blev fravalgt og hvorfor:**
+
+**Commits:**

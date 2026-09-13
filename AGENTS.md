@@ -57,16 +57,6 @@ Ligger i Dropbox under `Projects\GSB-Webapps\`:
 
 Dette er det vigtigste afsnit i dokumentet.
 
-**`docs/START-HER.md` er forældet.** Den beskriver den gamle Dropbox-struktur
-og henviser til mapper som `D:\Dropbox\gsb-claude-projekt-docs-backup`, der
-ikke findes mere. Den påstår også at der findes et GitHub-repo ved navn
-`gsb-projekt-docs-backup` — det blev aldrig oprettet. Dokumentet skal skrives
-om; indtil da er dette dokument (AGENTS.md) den gældende beskrivelse.
-
-**`docs/roadmap.md`, idébankerne og `docs/planlagte-features-spec.md`**
-indeholder stier og mappenavne fra før omlægningen. Indholdet om *hvad* der
-skal bygges er stadig gyldigt; det er *hvor tingene ligger* der er forkert.
-
 **`kampsystem/build3.py` kan ikke køre nogen steder.** Den har hårdkodede
 stier ind i en Claude-sandkasse (`/mnt/user-data/uploads/...`,
 `/home/claude/...`). Den skal laves om til at bruge `config.local.json`
@@ -75,6 +65,11 @@ før den virker på en almindelig maskine.
 **`apps/netlify-prod/START_LOKAL_PREVIEW.txt` lyver.** Den lover at der
 ligger en `.env` med Google-nøglen i mappen. Det gør der ikke; nøglerne
 ligger i Dropbox under `secrets\`.
+
+**Rettet siden omlægningen:** `docs/START-HER.md` blev skrevet om i opgave
+001, og sti-referencerne i roadmap, idébankerne og spec-filen i opgave 002.
+De er nu retvisende. Én overset reference til det gamle dokumentnavn
+`gsb-roadmap.md` er kendt og håndteres i opgave 003.
 
 ---
 
@@ -119,6 +114,105 @@ historikken.
 **Genereret data holdes ude af git.** Browser-fallback-mapperne,
 databaserne, den store SQL-import og browserprofilen står i `.gitignore`.
 Filerne ligger stadig på disken; de versionsstyres bare ikke.
+
+---
+
+## Prioritet
+
+**Statistik har førsteprioritet indtil den har nået Prod Push.** Alt andet
+venter. Det gælder også gode idéer der dukker op undervejs — de hører i
+idébankerne, ikke i opgavekøen.
+
+Undtagelsen er snæver med vilje: kun noget der taber data, noget der er
+i stykker i produktion, eller noget der direkte blokerer statistik, må
+springe køen. Alt andet venter, uanset hvor rigtigt det lyder i øjeblikket.
+
+---
+
+## Udviklingstrin
+
+Et arbejde bevæger sig gennem fire trin og lander til sidst i det femte:
+
+**Test & Validation** — koden gør det den skal, og tallene er holdt op mod
+et facit. Afvigelser er enten forklarede eller dokumenteret som kendte.
+
+**Results** — grundessensen af det man bad om kan aflæses i en form et
+menneske kan forstå.
+
+**Preview** — brugerflade og funktion er afprøvet, men ikke live.
+
+**Prod Push** — det er ude hos brugerne.
+
+**Videreudvikling** — nye features og forbedringer. Alt hvad der falder
+uden for den aktuelle færdig-definition, hører hjemme her, altså bagefter.
+
+### Når noget falder tilbage
+
+Viser det sig i Preview at tallene er forkerte, ryger posten tilbage til
+Test & Validation. Den har ikke overhalet noget — den er gået baglæns, og
+var altså ikke færdig.
+
+**En post der falder tilbage, går forrest i det trin den lander i.**
+Næsten færdigt arbejde er mere værd end knap påbegyndt.
+
+**Om noget er et tilbagefald eller et nyt fund, afgør Christoffer.** Den
+der arbejder på noget, har en indbygget skævhed mod at kalde det
+tilbagefald, fordi det føles forbundet med det igangværende. Foreslå
+gerne en klassifikation med én linjes begrundelse — men vent på svaret.
+
+**Notér hvert tilbagefald i opgavefilen med en linje om hvorfor.** Bouncer
+den samme post tre gange, er det ikke posten der er problemet: så var
+udgangskriterierne for vage, eller opgaven for stor.
+
+---
+
+## Opgavekøen
+
+`work/aabne/` er indbakken. Ligger der en opgavefil dér, er den besluttet
+og klar til at blive løst. Er du i tvivl om hvad du skal lave, så kig der
+først.
+
+`work/loeste/` er arkivet. En opgave flyttes dertil når den er løst, med
+resultatnoten udfyldt.
+
+Idébankerne i `docs/` er noget andet: dér ligger det der er *fundet*, ikke
+det der er *besluttet*. At skrive en idé ned skal koste ingenting og må
+ikke skabe forpligtelse.
+
+---
+
+## Kontrol og resultatnoter
+
+Hver opgave bærer sin egen kontrol — som kommandoer, ikke som påstande.
+To slags:
+
+**Målet:** hvad skal blive sandt. `grep -rF 'D:\\Dropbox' docs/*.md`
+skal give nul.
+
+**Værnet:** hvad må ikke ændre sig. Antallet af "GSB Dream Team" i
+dokumenterne skal være det samme før og efter. Det er værnene der fanger
+den klassiske skade — at opgaven løses og noget andet går i stykker
+undervejs.
+
+**Resultatnoten skal angive tal, ikke vurderinger.** "13 forekomster
+bevaret, 0 stier tilbage" kan efterprøves på et sekund. "Produktnavnet er
+bevaret" kan ikke, og har allerede én gang været upræcist i denne
+kodebase.
+
+Kan et kriterium ikke måles — "er dokumentet velskrevet" — så markér det
+tydeligt som en vurdering, så man kan se hvad der er bevist og hvad der
+er en mening.
+
+Kontroller der er værd at beholde permanent, flyttes til `tools/tjek/`.
+
+---
+
+## Beslutninger
+
+Afgørelser der ikke handler om en konkret filændring, skrives i
+`docs/BESLUTNINGER.md`. Commit-beskeder dokumenterer kode; beslutningsloggen
+dokumenterer hvorfor. Uden den bliver de samme spørgsmål afgjort forfra
+hver gang, og typisk anderledes.
 
 ---
 
