@@ -233,3 +233,4 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 - Walkoverkontrol: ungdomspayloads indeholder 863 eksplicitte W.O.-markeringer; den samlede normaliserede tabel har fortsat kun 3 walkoverfelter, fordi individuelle kampdata endnu ikke er fuldt parseret ind.
 - Walkovermarkering blev efterkontrolleret: teksten `Vinder W.O.` alene er en tabeloverskrift og tælles ikke som walkover. Kun den eksplicitte tekst `(Ikke fremmødt)` tælles. Det gav 58 dokumenterede ungdoms-walkovers; 57 havde en entydig vinder ud fra den viste holdscore. Samlet er 64 kø-walkovers og 57 med vinder; SQLite har nu 61 rækker med walkoverfelt.
 - Coverage-rapporten er opdateret efter ungdoms- og walkover-synkronisering.
+- API-gap audit blev gjort reproducerbar med `scripts/run-api-gap-audit.mjs`; sæsontabellen tæller nu manglende hjemme/ude som manglende rækker (ikke dobbelt som felter).

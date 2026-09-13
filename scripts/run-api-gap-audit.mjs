@@ -8,6 +8,7 @@ const bySeason = db.prepare(`
     SUM(CASE WHEN result_raw IS NULL OR trim(result_raw) = '' THEN 1 ELSE 0 END) AS missing_result,
     SUM(CASE WHEN home_name_raw IS NULL OR trim(home_name_raw) = '' THEN 1 ELSE 0 END) AS missing_home,
     SUM(CASE WHEN away_name_raw IS NULL OR trim(away_name_raw) = '' THEN 1 ELSE 0 END) AS missing_away,
+    SUM(CASE WHEN home_name_raw IS NULL OR trim(home_name_raw) = '' OR away_name_raw IS NULL OR trim(away_name_raw) = '' THEN 1 ELSE 0 END) AS missing_sides,
     SUM(CASE WHEN status = 'api_error' THEN 1 ELSE 0 END) AS api_errors
   FROM team_matches GROUP BY season_id ORDER BY season_id
 `).all();
@@ -27,7 +28,7 @@ fs.writeFileSync('results/api-gap-audit-data.json', JSON.stringify(report, null,
 let md = `# API- og felt-dækning: aktuel audit\n\nDato: ${report.generatedAt}\n\n## Samlet\n\n- Teamkampe: **${totals.total}**\n- API-fejl: **${totals.api_errors}**\n- Manglende spillerdata-status: **${totals.missing_players}**\n- Manglende resultatfelt: **${totals.missing_result}**\n- Manglende hjemme/ude: **${totals.missing_sides}**\n\n## Status\n\n| Status | Antal |\n|---|---:|\n`;
 for (const r of status) md += `| ${r.status} | ${r.n} |\n`;
 md += `\n## Pr. sæson\n\n| Sæson | Kampe | API-fejl | Mangler resultat | Mangler hjemme/ude |\n|---:|---:|---:|---:|---:|\n`;
-for (const r of bySeason) md += `| ${r.season_id} | ${r.total} | ${r.api_errors} | ${r.missing_result} | ${Number(r.missing_home) + Number(r.missing_away)} |\n`;
+for (const r of bySeason) md += `| ${r.season_id} | ${r.total} | ${r.api_errors} | ${r.missing_result} | ${r.missing_sides} |\n`;
 md += `\n## Fortolkning\n\n- Browserverificerede rækker er synkroniseret med de felter, der faktisk stod på den dynamiske side.\n- To ungdomskampe mangler stadig dynamisk kampdetalje og står som særskilte huller i køen.\n- De resterende mangler prioriteres efter sæson og felt: først hjemme/ude og resultat, derefter individuelle spillere og detaljer.\n`;
 fs.writeFileSync('results/api-gap-audit.md', md);
 db.close();
