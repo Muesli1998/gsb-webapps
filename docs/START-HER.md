@@ -1,250 +1,183 @@
-# START HER — kondenseret regelsæt for GSB Webapps-projektet
+# START HER — kondenseret regelsæt for GSB Webapps
 
-Læses ved starten af enhver session i dette projekt, sammen med `GSB_DREAM_TEAM_PROJECT_BRIEF.md`
-og `claude/gsb-feature-idebank.md` (jf. Project Instructions).
+Læs dette dokument ved starten af en arbejdssession. Læs også `AGENTS.md`,
+som er den gældende reference for repositoryets struktur, maskiner og kendte
+begrænsninger. Åbn derefter kun de dokumenter, der er relevante for opgaven.
 
-**OPDATERET 2026-09-04 — trimmet:** denne fil var ved at blive for lang at læse hver session.
-Baggrundsviden om Dropbox-mappestruktur, fil-versionering, enhedsadgang og løsfil-oprydning er
-flyttet til `claude/gsb-dropbox-filstruktur.md` — slå den op når du rent faktisk arbejder med
-filer på Chris' computer, men den behøver ikke genlæses hver samtale. Det der er tilbage her er
-kun det der reelt er relevant for EVERY session.
+Dokumentet blev skrevet om 13. september 2026 efter flytningen til det samlede
+Git-repository `gsb-webapps`. Git er versionshistorikken for kode og dokumenter;
+tunge og binære filer opbevares eksternt.
 
-**OPDATERET 2026-09-05 — nyt afsnit om store dokumenter:** to konkrete hændelser (en
-placeholder-tekst der ødelagde et dokument ved en fuld genskrivning, og et helt dokument der gik
-tabt uden gendannelsesmulighed — se `gsb-kampsystem-idebank.md` for et bekræftet, konkret
-eksempel) har vist at fuld-genskrivnings-mekanismen for projekt-docs er en reel risiko. Nyt afsnit
-nedenfor dækker det.
+## Kilde og struktur
 
-**OPDATERET 2026-09-07 — temp-fil til hurtige noter:** enkeltstående idéer i chatten udløste
-hidtil hele backup-protokollen for én linje. Nyt afsnit nedenfor beskriver `gsb-temp-noter.md`
-som et billigt mellemlag, der er bevidst UNDTAGET reglerne i "Store dokumenter".
+Repositoryet er den kanoniske kilde til kode, dokumenter og små tekstdata.
+Eksterne data og hemmeligheder findes uden for repositoryet. Deres placering
+slås op gennem `config.local.json`, som er maskinspecifik og ignoreret af Git.
+`config.example.json` viser formatet.
+
+Skriv aldrig en maskinspecifik eller absolut sti ind i kode. Brug relative stier
+inden for repositoryet og `config.local.json` til filer udenfor.
+
+```text
+docs/               levende projektdokumentation og idébanker
+docs/historik/      historiske logs og afsluttede forløb
+apps/netlify-prod/  den deployede webapp
+kampsystem/         kilder, data og byggescripts til kampsystemet
+statistik/          Nembadminton-dataarbejde, scripts og rapporter
+data/               små fælles tekstdata og hjælpekilder
+tools/              lokale hjælpe- og synkroniseringsscripts
+work/               opgavefiler til arbejde, der gives videre
+```
+
+`docs/historik/` og Dropbox' `_arkiv/` beskriver fortiden og må ikke rettes,
+bare fordi deres gamle stier eller struktur ikke længere er aktuelle.
 
 ## Standing regel — vigtigst af alt
 
-**Intet bygges, kodes eller deployes uden Chris' eksplicitte, utvetydige "byg det"-signal for
-det specifikke punkt.** At en idé står beskrevet, endda med færdigt design, betyder IKKE at den
-må implementeres. Denne regel gælder hele projektet, ikke kun idébanken.
+Intet bygges, kodes eller deployes uden Chris' eksplicitte og utvetydige
+"byg det"-signal for det konkrete punkt. En idé, plan eller færdig specifikation
+er ikke i sig selv tilladelse til implementering.
 
-Undtagelser der løbende opdateres i `gsb-feature-idebank.md`'s egen STANDING REGEL-boks —
-tjek den for den aktuelle, præcise liste over hvad der konkret ER givet go-ahead til.
+Undtagelser og allerede godkendte funktioner fremgår af det relevante
+projektdokument. Ved tvivl stoppes arbejdet, og spørgsmålet skrives ned. Der
+gættes ikke.
 
-## Feature-planlægning — Opus-gennemgang kun hvis Chris siger ja, aldrig automatisk
+## Arbejdsform og Git
 
-For ikke-trivielle, algoritmisk komplekse feature-idéer (Kampsystemets matchnings-/fordelingslogik
-er det tydeligste eksempel — se den lange historik af "byg → Chris tester → fandt kant-tilfælde →
-ret"-runder i `gsb-kampsystem-idebank.md`/`gsb-kampsystem-idebank-historik.md`) KAN en uafhængig
-Opus-subagent bruges til at gennemgå idéen for edge cases/uklare punkter/designspørgsmål, FØR der
-bygges noget.
+- Kør `git pull` før arbejdet begynder og `git push`, når det afsluttes.
+- Arbejde udført af en agent sker på en særskilt gren, så ændringen kan læses
+  samlet før fletning. Eget, mindre arbejde kan committes direkte på `main`.
+- En opgave, der gives videre, får en fil under `work/aabne/` baseret på
+  `work/OPGAVE-SKABELON.md`. Den skal angive mål, afgrænsning, kontekst,
+  acceptkriterier, gren og åbne spørgsmål.
+- Når opgaven er løst, udfyldes resultatet, og opgavefilen flyttes til
+  `work/loeste/`.
+- Små rettelser, der udføres med det samme, kræver ikke en opgavefil.
+- Commit ændringer i sammenhængende bidder med en besked, der beskriver
+  resultatet.
+- Genererede databaser, browserprofiler, store importer og genskabelige
+  fallback-data holdes ude af Git efter reglerne i `.gitignore`.
 
-- **Spørg altid Chris først, brug den ALDRIG automatisk.** Opus er markant dyrere end Sonnet —
-  samme "byg det"-princip som resten af projektet, blot anvendt på selve modelvalget/
-  token-forbruget: Claude foreslår at bruge Opus til gennemgangen og venter på Chris' ja, før en
-  sådan subagent rent faktisk spawnes.
-- **Kun for reelt komplekse idéer** — ikke simple UI-tilføjelser (en badge, en knap, en
-  dropdown), hvor der ikke er meget at gennemtænke, og hvor det bare koster ekstra uden at give
-  noget igen.
-- Opus-gennemgangen bygger intet selv — kun en liste af edge cases/opklarende spørgsmål/et
-  designforslag til Chris. Selve implementeringen sker altid i den almindelige (Sonnet-)session.
-- Erstatter IKKE test med Chris' rigtige data — flere af de historiske Kampsystem-bugs kunne kun
-  findes ved faktisk test (fx det specifikke 40-spiller/10-bane kønsskæve fremmøde), ikke ved
-  mere gennemtænkning alene.
-- Samme princip gælder det bredere strategiske review på tværs af hele projektet, se
-  `claude/gsb-opus-strategisk-review-prompt.md` og `claude/gsb-roadmap.md` nedenfor.
+## Planlægning og ekstra modelreview
 
-## Dokumentkort — hvad er hvad
+Et uafhængigt review med en dyrere eller mere avanceret model kan foreslås til
+ikke-trivielle, algoritmisk komplekse ændringer. Det må kun sættes i gang efter
+Chris' udtrykkelige godkendelse.
 
-- **`GSB_DREAM_TEAM_PROJECT_BRIEF.md`** — arkitektur-reference for selve Dream Team-scoringen
-  (Tilmeldinger → Holdoversigt → Resultater → Spillerpoint → Beregning → Stilling). Læs først
-  ved spørgsmål om hvordan noget FAKTISK virker i dag. **Bemærk:** ikke opdateret siden
-  2026-08-29 og afspejler hverken Kampsystem, nav/IA-omlægningen eller B5-betaling — brug
-  driftloggen/status-tabellen for aktuel status, ikke denne fil, indtil den er opdateret.
-- **`claude/gsb-feature-idebank.md`** — feature-idéer der ikke er statistik/spilleranalyse og ikke
-  Kampsystem: Tilmelding, nav/IA, Søndagstræning, Kampkalender, Betaling. Status-linje pr. afsnit.
-- **`claude/gsb-statistik-idebank.md`** — al statistik-/spilleranalyse-/rankings-relateret
-  idéarbejde (Board-position/win%-dedup, sæson-sammenligning, B3-baggrund, 24/25-data-
-  rekonstruktion, "værdi"/"effektivitet"-ranking, Hot streak). Samme type arbejde genbruges på
-  tværs af flere features, derfor samlet ét sted.
-- **`claude/gsb-kampsystem-idebank.md`** — alt om ELO-rating/Kampsystem-appen (B4). **Flyttet til
-  git/Dropbox 2026-09-12 — se "Tunge logs flyttet til git" nedenfor; kun stub tilbage her.**
-- **`claude/gsb-driftlog.md`** — kronologisk log, runde for runde, over hvad der faktisk ER
-  shippet til de rigtige `netlify-tool-prod`-filer og testet der. Tjek denne for "hvad er
-  live/shippet lige nu". **Flyttet til git/Dropbox 2026-09-12 — se "Tunge logs flyttet til git"
-  nedenfor; kun stub tilbage her.**
-- **`claude/gsb-roadmap.md`** — tværgående, prioriteret liste over næste skridt på tværs af ALLE
-  initiativer. Levende dokument, opdateres ved det periodiske Opus-strategiske-review
-  (`claude/gsb-opus-strategisk-review-prompt.md`), ikke ved hver enkelt byggerunde. Tjek denne
-  for "hvad bør ske herefter" — til forskel fra driftloggen ("hvad er sket/live").
-- **`claude/gsb-planlagte-features-spec.md`** — features der ER konkret aftalt i detalje, men
-  endnu ikke bygget. DEL A (skal testes), DEL B (klar til bygning), DEL C (baggrundsviden),
-  DEL 0 (bekræftede tekniske fakta, kun til opslag).
-- **`claude/generel-idebank.md`** — ikke-GSB-specifikke kuriositeter.
-- **`NEMBADMINTON_API_NOTES.md`** — samlet, ren teknisk API-reference. Genbrug fremfor at
-  gen-undersøge fra bunden.
-- **`GSB_NAVNE_ALIAS_OG_ANOMALIER.json`** — navnematching mellem forskellige kilders stavemåder.
-- **`claude/gsb_preview.html`** — selve den byggede Claude-preview.
-- **`claude/gsb-preview-vs-live-status.md`** — én tabel: er en feature 🟢 live, 🟡 kun i
-  previewet, eller ⚪ kun en idé. Tjek/opdatér den hver gang noget shippes/bygges, se reglen
-  nedenfor.
-- **`claude/gsb-dropbox-filstruktur.md`** — Dropbox-mappenavne, fil-versionerings-konvention,
-  enhedsadgang, løsfil-oprydning, samt (fra 2026-09-05) den nye backup-mappe til projekt-docs.
-  Slås op ved behov, ikke standard-læsning.
-- **`claude/gsb-opus-strategisk-review-prompt.md`** — opskriften/prompten til det periodiske,
-  Chris-igangsatte Opus-strategiske-review der producerer/opdaterer `gsb-roadmap.md`. Slås op
-  ved behov (når reviewet skal køres), ikke standard-læsning.
-- **`claude/gsb-temp-noter.md`** — kortlivet samle-fil til hurtige noter fra chatten, INDEN de
-  sorteres ind i de rigtige idébanker. Ikke en kilde i sig selv, og ikke standard-læsning — se
-  reglen nedenfor for hvordan den bruges og tømmes.
-- **`claude/gsb-kampsystem-idebank-historik.md`** — historisk arkiv for Kampsystem-idébanken.
-  **Flyttet til git/Dropbox 2026-09-12 — se "Tunge logs flyttet til git" nedenfor; kun stub
-  tilbage her.**
-- **`claude/_arkiv/gsb-driftlog-arkiv-runde8-10.md`** — arkiveret driftlog, runde 8-10.
-  **Flyttet til git/Dropbox 2026-09-12 — se "Tunge logs flyttet til git" nedenfor; kun stub
-  tilbage her.**
+Brug ikke et tungt review til simple UI-ændringer eller små dokumentrettelser.
+Et modelreview bygger ikke selv løsningen; det finder kanttilfælde, uklare
+forudsætninger og designspørgsmål. Det erstatter aldrig test med klubbens rigtige
+data.
 
-## Tunge logs flyttet til git (2026-09-12)
+## Dokumentkort
 
-Claude Projects har ingen delvis-skrivning ("in-place patch") — enhver opdatering af en
-projekt-doc kræver at Claude læser og genskriver HELE filen (jf. "Filhåndtering" og "Store
-dokumenter" nedenfor). For de fire tungeste, mest append-drevne logfiler i projektet var det ved
-at blive et reelt token-/tidsproblem hver gang de skulle opdateres. Disse fire filer er derfor
-flyttet ud af Claude Projects og ind i en git-tracket mappe på Chris' Windows-computer:
+- `AGENTS.md` — struktur, maskiner, arbejdsform og aktuelle faldgruber.
+- `docs/dream-team-brief.md` — arkitekturreference for Dream Team-scoringen.
+  Brug aktuelle statusdokumenter, hvis briefen og nyere driftserfaring afviger.
+- `docs/idebank-feature.md` — øvrige produktidéer som tilmelding, navigation,
+  træning, kalender og betaling.
+- `docs/idebank-statistik.md` — statistik, spilleranalyse og rankings.
+- `docs/idebank-kampsystem.md` — ELO, kampfordeling og kampsystemet.
+- `docs/roadmap.md` — prioriterede næste skridt på tværs af projekterne.
+- `docs/planlagte-features-spec.md` — aftalte og specificerede funktioner, der
+  endnu ikke nødvendigvis er bygget.
+- `docs/preview-vs-live-status.md` — samlet status for idé, preview og live.
+- `docs/temp-noter.md` — kortlivede noter, før de sorteres til rette dokument.
+- `docs/nembadminton-api.md` — samlet teknisk reference for Nembadminton-kald.
+- `docs/opus-strategisk-review-prompt.md` — opskrift til et Chris-igangsat
+  strategisk review.
+- `data/navne-alias.json` — navnematching og kendte navnevariationer.
+- `statistik/API_RESEARCH.md` — forskningslog og teknisk kontekst for
+  statistikprojektet.
+- `statistik/TEST_RUN_LOG.md` — reproducerbar log over statistikkørsler.
+- `statistik/results/CURRENT_VALIDATION_STATUS.md` — seneste validerede status
+  for statistikdata.
 
-- `claude/gsb-kampsystem-idebank.md` → nu på `D:\Dropbox\gsb-claude-projekt-docs-backup\gsb-kampsystem-idebank.md`
-- `claude/gsb-driftlog.md` → nu på `D:\Dropbox\gsb-claude-projekt-docs-backup\gsb-driftlog.md`
-- `claude/gsb-kampsystem-idebank-historik.md` → nu på `D:\Dropbox\gsb-claude-projekt-docs-backup\gsb-kampsystem-idebank-historik.md`
-- `claude/_arkiv/gsb-driftlog-arkiv-runde8-10.md` → nu på `D:\Dropbox\gsb-claude-projekt-docs-backup\gsb-driftlog-arkiv-runde8-10.md`
+## Hvad du ikke kan stole på lige nu
 
-Mappen er et git-repo, pushet til et privat GitHub-repo ved navn `gsb-projekt-docs-backup`. De
-tilbageværende entries for disse fire filer i Claude Projects er nu kun korte "stub"-pointere til
-denne git-mappe — IKKE den fulde historik. De mindre, hyppigt læste regel-/reference-filer
-(denne fil, `gsb-roadmap.md`, `gsb-feature-idebank.md`, `gsb-statistik-idebank.md`,
-`gsb-planlagte-features-spec.md` m.fl.) BLIVER i Claude Projects, netop så enhver session — også
-en der ikke er forbundet til Chris' computer — altid kan læse dem.
+Nogle dokumenter blev skrevet før flytningen. I `docs/roadmap.md`, idébankerne
+og `docs/planlagte-features-spec.md` er beskrivelserne af, hvad der skal bygges,
+fortsat relevante, men ældre oplysninger om filplacering kan være forældede.
+Bekræft placeringen mod `AGENTS.md` og den faktiske repositorystruktur.
 
-**Kendt, accepteret trade-off — ikke en fejl:** indhold der kun findes i git/Dropbox kan KUN
-læses af en session der har enhedsbroen forbundet til Chris' computer. En session uden den
-forbindelse (fx fra Chris' telefon, eller hvis desktop-appen ikke kører) kan IKKE læse den fulde
-historik i disse fire filer — kun deres korte stub i Claude Projects. Dette er bevidst valgt for
-at spare token/tid på de fire tungeste filer, ikke en overset begrænsning.
+`kampsystem/build3.py` har stadig stier fra et tidligere sandkassemiljø og kan
+ikke bruges som almindeligt lokalt byggescript, før det er omlagt til
+`config.local.json`.
 
-**Fremtidig opdatering af en af disse fire git-trackede filer:**
-- En session med enhedsbroen forbundet læser filen (fx via
-  `mcp__remote-devices__device_stage_files` + `Read`, eller beder Chris køre sin egen sync).
-- Ændringen laves som en diff-baseret redigering (`Edit`), ALDRIG ved at hele filen skrives om
-  fra bunden i én stor tekstblok — netop det denne fil-flytning skulle undgå.
-- Der findes ikke noget `device_bash`-værktøj i dette miljø (bekræftet fravær, ikke en midlertidig
-  mangel) — INGEN session kan selv køre `git add/commit/push`. Enten beder man Chris køre sit eget
-  `sync-git-gsb.ps1`-script for at committe og pushe ændringen, eller også noteres det tydeligt at
-  ændringen er lavet lokalt men endnu ikke synkroniseret (pending sync), så det ikke glemmes.
+`apps/netlify-prod/START_LOKAL_PREVIEW.txt` beskriver en lokal nøglefil, som
+ikke findes i appmappen. Hemmeligheder skal findes via den maskinspecifikke
+konfiguration og må ikke lægges i Git.
 
-## Preview vs. live — hold status synlig, ikke kun i prosa
+## Preview og live-status
 
-- **Når noget bygges KUN i previewet:** opdatér rækken i `gsb-preview-vs-live-status.md` til 🟡,
-  med en konkret gap-note (hvilke filer/dele mangler i produktion).
-- **Når noget shippes til `netlify-tool-prod`:** opdatér rækken til 🟢 i SAMME session som selve
-  shipningen, ikke som en efterfølgende oprydning.
+Når noget kun bygges i et preview, opdateres den relevante række i
+`docs/preview-vs-live-status.md` til preview-status med en konkret beskrivelse
+af, hvad der mangler før produktion.
 
-## Filhåndtering — hold docs små, opdatér efter emne
+Når noget deployes fra `apps/netlify-prod/`, opdateres rækken til live i samme
+arbejdssession som deployeringen. Status må ikke kun gemmes i løbende prosa.
 
-Claudes projekt-docs har INGEN in-place-patch — enhver ændring kræver at HELE filen genskrives.
-Derfor er projektet splittet efter EMNE, ikke mekanisk "én fil pr. feature":
-- Runde-opdateringer/bug-fixes → `gsb-driftlog.md`.
-- Kampsystem/ELO → `gsb-kampsystem-idebank.md`.
-- Statistik/spilleranalyse/rankings (uanset hvilken feature) → `gsb-statistik-idebank.md`.
-- Ren Nembadminton-API-teknik → `NEMBADMINTON_API_NOTES.md`.
-- Resten (Tilmelding, nav/IA, Søndagstræning, Kampkalender, Betaling) → `gsb-feature-idebank.md`.
-- Splittes kun når et emne reelt er blevet stort/aktivt nok til selv at være et churn-problem
-  (som Kampsystem og Statistik/Analyse har vist sig at være) — ikke som en generel regel om én
-  fil pr. feature.
-- Når noget er FÆRDIGT (shippet, eller flyttet til spec-filen som B-punkt), trim afsnittet i
-  idébanken til en kort status-pointer i stedet for at lade den fulde byggehistorik blive
-  stående.
-- **Enkeltstående, hurtige noter fra chatten går IKKE direkte i disse filer** — se næste afsnit.
+## Dokumentation efter emne
 
-## Hurtige noter i chatten — temp-fil, ikke direkte i idébank
+Skriv information dér, hvor den senere kan findes igen:
 
-Én enkelt idé i chatten udløste hidtil hele protokollen i "Store dokumenter" nedenfor (frisk
-læsning + evt. backup + genskrivning af en stor idébank-fil) — spild af tid/tokens for én linje.
-I stedet går hurtige noter i **`claude/gsb-temp-noter.md`**: en lille, kortlivet samle-fil, ikke
-en autoritativ kilde.
+- Shippede ændringer og historiske forløb dokumenteres i den relevante levende
+  status, før afsluttede forløb eventuelt arkiveres under `docs/historik/`.
+- Kampsystem og ELO hører i `docs/idebank-kampsystem.md`.
+- Statistik, spilleranalyse og rankings hører i `docs/idebank-statistik.md`.
+- Ren Nembadminton-teknik hører i `docs/nembadminton-api.md` og, når den er
+  eksperimentel eller kørselsnær, i statistikprojektets egne dokumenter.
+- Andre produktfunktioner hører i `docs/idebank-feature.md`.
+- Tværgående prioritering hører i `docs/roadmap.md`.
 
-- **Skrivning til temp-filen er UNDTAGET fra backup-reglerne (D) i "Store dokumenter" nedenfor**,
-  uanset filens størrelse — den er bevidst disponibel. Mistes den, mistes kun et par dages
-  usorterede noter, ikke den autoritative idébank. Frisk læsning (B) og ingen placeholder (A)
-  gælder stadig, men er billige for en lille fil.
-- Hver note tilføjes kort med dato og et emne-hint, fx `- [2026-09-07] Kampsystem: ...`, så
-  sorteringen ved tømning er hurtig.
-- **Tøm ALDRIG temp-filen automatisk.** Foreslå tømning til Chris når filen vokser sig stor
-  (tommelfingerregel: omkring 15-20 noter, eller når den nærmer sig et par hundrede ord) — eller
-  når Chris selv beder om det (fx "saml temp ind"). Vent på et udtrykkeligt ja, før tømningen
-  udføres.
-- **Ved tømning:** læs temp-filen frisk, sortér hver note til den rigtige idébank efter
-  emne-inddelingen i "Filhåndtering" ovenfor, og skriv dem ind i målfilerne — HER gælder den
-  fulde protokol i "Store dokumenter" nedenfor uden undtagelse (frisk læsning af målfilen,
-  størrelsestjek, backup hvis over grænsen, stop-betingelser). Når alle noter er flyttet,
-  nulstilles temp-filen til tom/kun header — denne sidste skrivning kræver ingen backup (samme
-  undtagelse som ovenfor).
+Split kun et dokument, når emnet reelt er blevet stort eller hyppigt ændret.
+Når et forløb er færdigt eller flyttet til en specifikation, forkortes
+idébankens afsnit til en status og en tydelig henvisning.
 
-## Store dokumenter — ingen data må gå tabt ved en fuld genskrivning
+## Hurtige noter
 
-Fordi projekt-docs ikke har in-place-patch (se ovenfor), er enhver opdatering en fuld
-genskrivning af hele filen — og der findes INGEN indbygget versionshistorik/fortryd for
-projekt-viden (bekræftet, ikke antaget). En fejl her er derfor ikke automatisk gendannelig. To
-konkrete hændelser har vist konsekvensen: en placeholder-tekst ("[resten uændret]"/
-"$(cat existing)") indsat i stedet for det faktiske indhold, og et helt dokument tabt uden
-gendannelsesmulighed.
+Enkeltstående idéer skrives først kort i `docs/temp-noter.md` med dato og
+emne. Temp-filen er ikke en autoritativ kilde.
 
-**A. Ingen placeholder, nogensinde, i nogen fil.** En fuld genskrivning må ALDRIG indeholde
-stedfortræder-tekst for indhold der skal bevares — hverken "[uændret]", "[resten uændret]",
-"$(cat ...)", "// unchanged", "..." ved et afsnitsskel eller lignende. Alt der skal bevares,
-skal stå fysisk og fuldt ud i teksten der sendes til `project_write`. Gælder ALLE filer,
-uanset størrelse — ingen undtagelser.
+Tøm den aldrig automatisk. Foreslå sortering, når den har omtrent 15–20 noter
+eller er blevet svær at overskue, og vent på Chris' godkendelse. Ved sortering
+læses både temp-filen og hvert måldokument frisk. Først når alle noter er
+placeret og kontrolleret, nulstilles temp-filen.
 
-**B. Altid frisk læsning, samme tur.** Før enhver fuld genskrivning: kald `project_read` på
-filen IGEN i samme tur — byg aldrig den nye version ud fra en kopi tidligere i samtalen. Dette
-kald er også det der bruges til størrelsestjekket i C.
+## Sikre dokumentændringer
 
-**C. Størrelsestjek — dynamisk, IKKE en fast liste over filnavne.** Mål filens længde ud fra det
-`project_read` netop returnerede. Er den over ca. 1.500 ord (~9.000-10.000 tegn), gælder D+E+F
-nedenfor. Dette er bevidst uafhængigt af hvilken fil det er — en helt ny idébank-fil oprettet til
-en fremtidig feature kvalificerer automatisk den dag den vokser forbi grænsen, uden at denne
-fil skal opdateres med et nyt filnavn.
+Git har overtaget rollen som backup og versionshistorik. Lav derfor ikke
+særskilte dokumentbackups før en omskrivning.
 
-**D. Backup før skrivning, for filer over grænsen (C).** Skriv en kopi af det FRISKE indhold
-(fra B, før noget ændres) til Dropbox-mappen `D:\Dropbox\gsb-claude-projekt-docs-backup\`, under
-SAMME filnavn som originalen (fx `gsb-driftlog.md`) — IKKE tidsstemplet, så Dropbox's egen
-versionshistorik automatisk holder styr på tidligere versioner (efter dit abonnements
-retention-periode). Kræver at enhedsbroen til Chris' computer er forbundet i øjeblikket.
-**Er den ikke forbundet:** skriv i stedet en tidsstemplet kopi som en projekt-doc,
-`claude/_backups/<filnavn>_<ÅÅÅÅ-MM-DD>.md`, og behold kun de seneste 2-3 af den slags pr. fil
-(slet ældre, aldrig den nyeste eller selve hovedfilen). Kun EFTER backuppen er skrevet (den ene
-eller den anden vej), skrives den nye version til den rigtige fil.
+Følgende regler gælder stadig:
 
-**E. Sub-agent til selve flet-arbejdet, for filer over grænsen (C) — PÅKRÆVET, ikke valgfrit.**
-For filer over grænsen SKAL selve genskrivningen uddelegeres til en sub-agent (via `Agent`-værktøjet)
-med et snævert opdrag: læs hele filen (frisk, jf. B), indsæt/opdatér præcis det beskrevne, skriv hele
-det nye dokument til Dropbox-backup (D) og derefter til selve filen (`project_write`) — eksplicit
-instrueret i regel A, og bedt om selv at rapportere størrelse/hash-verifikation tilbage. Formålet er
-IKKE kun kvalitet — det er at undgå at hele det store dokuments indhold skal læses ind i og skrives ud
-af selve hovedsamtalens kontekst (typisk to gange: én gang ved læsning, én gang ved skrivning), hvilket
-er en direkte og unødvendig token-/usage-omkostning i hovedsessionen. At gøre det selv i stedet for at
-uddelegere er en fejl, ikke bare en gråzone — også selvom opgaven virker simpel eller hastende. For
-filer under grænsen er almindelig direkte redigering (med A+B) fint, ingen sub-agent nødvendig.
+1. Læs altid den aktuelle fil igen i samme arbejdssession før redigering.
+2. Brug en præcis patch frem for at rekonstruere uændrede afsnit fra hukommelsen.
+3. Brug aldrig placeholders eller anden stedfortrædertekst i stedet for indhold,
+   der skal bevares.
+4. Gennemgå Git-diff efter ændringen. Kontroller især, at dokumentet ikke er
+   blevet utilsigtet kortere, og at henviste overskrifter stadig findes.
+5. For store dokumenter skal ændringen holdes snæver. Hvis en stor omskrivning
+   er nødvendig, skal den opdeles i reviewbare commits eller gennemgås særskilt.
+6. Commit først, når acceptkriterierne er kontrolleret.
 
-**F. Stop-betingelser efter skrivning, for filer over grænsen (C).** Efter `project_write`:
-tjek at den nye længde ikke er markant kortere end den gamle (>15-20%) uden at det var en
-bevidst oprydning/split, at ingen af regel A's placeholder-mønstre optræder i den nye tekst, og
-at afsnitsoverskrifter andre filer eksplicit henviser til (fx "se X, BYGGERUNDE ...") stadig
-findes. Slår noget af dette fejl: STOP, opgaven er IKKE færdig — flag det til Chris i stedet for
-at fortsætte eller antage det nok er fint.
+## Synkronisering mellem idébank og specifikation
 
-## Synkronisering mellem idébank og spec-fil
+Der er ingen automatisk sammenhæng mellem idébankerne og
+`docs/planlagte-features-spec.md`.
 
-Der er INGEN automatisk sammenhæng mellem idébankerne og `gsb-planlagte-features-spec.md` — kun
-Claude der husker at opdatere begge, hver gang en feature-diskussion rykker sig.
-- Så snart en feature er aftalt i detalje (scope/arkitektur låst), FLYTTES den til spec-filen
-  som et DEL A/B-punkt, og idébankens afsnit erstattes af en kort henvisning ("Landet som Bx, se
-  spec-filen"). B1, B3, B4 er skabelonen.
-- Så snart et konkret, blokerende spørgsmål dukker op for en næsten-aftalt feature, får det sit
-  eget nummererede DEL A-punkt, med feature-afsnittet henvisende til det som blokering.
-- Dette skal ske LØBENDE, under selve samtalen — ikke som en separat oprydningsrunde bagefter.
+Når en funktion er aftalt i detaljer, flyttes den til den relevante del af
+specifikationen. Idébankens lange afsnit erstattes af en kort status og en
+henvisning. Når et konkret spørgsmål blokerer en næsten aftalt funktion, får
+spørgsmålet et tydeligt punkt i specifikationen, og idébanken henviser til det.
+Dette vedligeholdes løbende under arbejdet.
+
+## Starttjek for en session
+
+1. Læs `AGENTS.md` og dette dokument.
+2. Læs kun den relevante brief, idébank, specifikation eller status.
+3. Kør `git pull` og kontroller arbejdsstatus.
+4. Bekræft, at opgaven har et tydeligt byg-signal og en afgrænsning.
+5. Brug en arbejdsgren og opgavefil, når arbejdet er givet videre.
+6. Test mod de relevante rigtige data, gennemgå diffen, dokumentér resultatet,
+   commit og push.
