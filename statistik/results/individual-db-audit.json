@@ -1,0 +1,170 @@
+{
+  "generatedAt": "2026-09-13T08:10:12.329Z",
+  "database": {
+    "teamMatches": 2818,
+    "teamMatchesWithIndividualRows": 2367,
+    "individualMatches": 20319,
+    "playerRelations": 67196,
+    "players": 7599,
+    "individualRowsWithWinnerSide": 19352,
+    "individualRowsWithAnyScore": 20319,
+    "individualRowsWithSameHomeAwayScore": 936,
+    "individualRowsWithZeroZeroScore": 8,
+    "individualRowsWithResultMarker": 309,
+    "individualRowsByStatus": [
+      {
+        "status": "api_repaired",
+        "n": 13285
+      },
+      {
+        "status": "browser_parsed",
+        "n": 6100
+      },
+      {
+        "status": "browser_zero_score",
+        "n": 8
+      },
+      {
+        "status": "complete",
+        "n": 926
+      }
+    ],
+    "teamMatchesWithResultAndNoIndividualRows": 315
+  },
+  "bySeason": [
+    {
+      "season": 2010,
+      "team_matches": 11,
+      "with_individual_rows": 11,
+      "individual_rows": 142,
+      "with_team_result": 11,
+      "result_without_individual_rows": 0
+    },
+    {
+      "season": 2011,
+      "team_matches": 169,
+      "with_individual_rows": 10,
+      "individual_rows": 130,
+      "with_team_result": 169,
+      "result_without_individual_rows": 159
+    },
+    {
+      "season": 2012,
+      "team_matches": 131,
+      "with_individual_rows": 112,
+      "individual_rows": 1092,
+      "with_team_result": 131,
+      "result_without_individual_rows": 19
+    },
+    {
+      "season": 2013,
+      "team_matches": 134,
+      "with_individual_rows": 128,
+      "individual_rows": 1195,
+      "with_team_result": 134,
+      "result_without_individual_rows": 6
+    },
+    {
+      "season": 2014,
+      "team_matches": 144,
+      "with_individual_rows": 122,
+      "individual_rows": 1173,
+      "with_team_result": 142,
+      "result_without_individual_rows": 20
+    },
+    {
+      "season": 2015,
+      "team_matches": 156,
+      "with_individual_rows": 127,
+      "individual_rows": 1269,
+      "with_team_result": 156,
+      "result_without_individual_rows": 29
+    },
+    {
+      "season": 2016,
+      "team_matches": 147,
+      "with_individual_rows": 127,
+      "individual_rows": 1206,
+      "with_team_result": 147,
+      "result_without_individual_rows": 20
+    },
+    {
+      "season": 2017,
+      "team_matches": 133,
+      "with_individual_rows": 127,
+      "individual_rows": 1193,
+      "with_team_result": 133,
+      "result_without_individual_rows": 6
+    },
+    {
+      "season": 2018,
+      "team_matches": 143,
+      "with_individual_rows": 138,
+      "individual_rows": 1300,
+      "with_team_result": 143,
+      "result_without_individual_rows": 5
+    },
+    {
+      "season": 2019,
+      "team_matches": 125,
+      "with_individual_rows": 106,
+      "individual_rows": 1009,
+      "with_team_result": 107,
+      "result_without_individual_rows": 1
+    },
+    {
+      "season": 2020,
+      "team_matches": 162,
+      "with_individual_rows": 51,
+      "individual_rows": 423,
+      "with_team_result": 51,
+      "result_without_individual_rows": 0
+    },
+    {
+      "season": 2021,
+      "team_matches": 186,
+      "with_individual_rows": 180,
+      "individual_rows": 1459,
+      "with_team_result": 186,
+      "result_without_individual_rows": 6
+    },
+    {
+      "season": 2022,
+      "team_matches": 227,
+      "with_individual_rows": 221,
+      "individual_rows": 1736,
+      "with_team_result": 227,
+      "result_without_individual_rows": 6
+    },
+    {
+      "season": 2023,
+      "team_matches": 255,
+      "with_individual_rows": 239,
+      "individual_rows": 1842,
+      "with_team_result": 255,
+      "result_without_individual_rows": 16
+    },
+    {
+      "season": 2024,
+      "team_matches": 295,
+      "with_individual_rows": 286,
+      "individual_rows": 2229,
+      "with_team_result": 294,
+      "result_without_individual_rows": 8
+    },
+    {
+      "season": 2025,
+      "team_matches": 400,
+      "with_individual_rows": 382,
+      "individual_rows": 2921,
+      "with_team_result": 396,
+      "result_without_individual_rows": 14
+    }
+  ],
+  "browserPayloads": {
+    "uniqueWithRawText": 2816,
+    "withCategories": 2484,
+    "withScores": 2680,
+    "withNoPlayText": 360
+  }
+}

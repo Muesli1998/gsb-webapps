@@ -1,0 +1,19 @@
+{
+  "key": "2011:2390",
+  "season": 2011,
+  "matchId": 2390,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "KBK Kbh. 4",
+  "ageGroupId": "4",
+  "leagueGroupId": "103",
+  "roundDate": "2012-03-25",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,103,1,8,,2390,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2011-2390.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:32:08.038Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,103,1,8,,2390,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U13 2011/2012\nVis rækker\n\n\nU13 Serie X1 U13 Serie X1\nStilling\nVis alle kampe\n\nKampnr\t2390\nRunde\t7 25-03-2012\nTid\tsø 25-03-2012 15:00\nSpillested\tKBK-Hallen\nKrausesvej 12\n2100 København Ø\nTelefon 35 38 72 92\nHjemmehold\tKBK Kbh. 4\nUdehold\tGladsaxe Søborg 3\nResultat\t0-6\nPoint\t0-2\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

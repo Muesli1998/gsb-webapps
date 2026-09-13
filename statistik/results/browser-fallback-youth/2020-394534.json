@@ -1,0 +1,19 @@
+{
+  "key": "2020:394534",
+  "season": 2020,
+  "matchId": 394534,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Rødovre 1",
+  "ageGroupId": "5",
+  "leagueGroupId": "13473",
+  "roundDate": "2021-03-14",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13473,1,8,,394534,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2020-394534.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:23:41.460Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13473,1,8,,394534,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2020/2021\nVis rækker\n\n\nU15 4200 4 Spillere P2 Pulje 2\nStilling\nVis alle kampe\n\nKampnr\t394534\nRunde\t7 14-03-2021\nTid\tlø 20-03-2021 15:45\nSpillested\tRødovre Stadionhal\nElstedvej 40\n2610 Rødovre\nTelefon 36704515\nHjemmehold\tGladsaxe Søborg 2\nAnn-Louise Bergström\nannlouberg@gmail.com\n51609532\nUdehold\tRødovre 1\nAino Rudebeck Goos\naino@rudebeck.dk\n24667410\nResultat\t-\nPoint\t-\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

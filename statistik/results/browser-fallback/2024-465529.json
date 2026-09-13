@@ -1,0 +1,21 @@
+{
+  "key": "2024:465529",
+  "season": 2024,
+  "matchId": 465529,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "FKIF Frederiksberg 2",
+  "ageGroupId": "13",
+  "leagueGroupId": "16931",
+  "roundDate": "2024-09-29",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2024,16931,1,8,,465529,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2024-465529.json",
+  "verifiedAt": "2026-09-12T16:49:35.017Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:47:30.646Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2024,16931,1,8,,465529,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+60 2024/2025\nVis rækker\n\n\n60+ 1. Serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t465529\nRunde\t1 29-09-2024\nTid\tlø 21-09-2024 11:30\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 2\nNoomi Mortensen\nbani.privat@gmail.com\n30256137\nUdehold\tFKIF Frederiksberg 2\nJohnny Miltoft\njohnny@miltoft.dk\n20117838\nResultat\t3-5\nPoint\t0-2\n\tGladsaxe Søborg 2\tFKIF Frederiksberg 2\t1\t2\t3\tVinder W.O.\n1. MD\t\nLene Thrysøe\nJohn Kørboe\n\t\nJørgen Mattsson\nIben Mauritzen\n\t21 - 15\t17 - 21\t22 - 20\t\n2. MD\t\nGert Poulsen\nLisa Munch Andersen\n\t\nJytte Kay\nErling B. Nielsen\n\t20 - 22\t21 - 18\t13 - 21\t\n4. D\t\nLeif Hansen\nJan Holzmann Rasmussen\n\t\nThomas Fjeldberg\nEric Christensen\n\t20 - 22\t20 - 22\t\t\n5. D\t\nClaus Starcke\nPer Thygesen\n\t\nJohnny Miltoft\nMickey Larsen\n\t21 - 12\t21 - 23\t22 - 20\t\n1. D\t\nJan Holzmann Rasmussen\nJohn Kørboe\n\t\nEric Christensen\nMickey Larsen\n\t13 - 21\t15 - 21\t\t\n2. D\t\nClaus Starcke\nGert Poulsen\n\t\nJørgen Mattsson\nThomas Fjeldberg\n\t21 - 19\t21 - 14\t\t\n3. D\t\nLeif Hansen\nPer Thygesen\n\t\nErling B. Nielsen\nJohnny Miltoft\n\t16 - 21\t6 - 21\t\t\n1. DD\t\nLisa Munch Andersen\nLene Thrysøe\n\t\nJytte Kay\nIben Mauritzen\n\t20 - 22\t21 - 14\t12 - 21\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

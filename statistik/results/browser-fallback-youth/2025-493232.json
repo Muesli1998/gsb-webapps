@@ -1,0 +1,19 @@
+{
+  "key": "2025:493232",
+  "season": 2025,
+  "matchId": 493232,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "NBK Amager 1",
+  "ageGroupId": "2",
+  "leagueGroupId": "18128",
+  "roundDate": "2025-10-05",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18128,1,8,,493232,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2025-493232.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:05:12.036Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18128,1,8,,493232,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U09 2025/2026\nVis rækker\n\n\nU09 D 3300 (3 spillere) BD Pulje 2\nStilling\nVis alle kampe\n\nKampnr\t493232\nRunde\t2 05-10-2025\nTid\tsø 26-10-2025 16:00\nSpillested\tKBK-Hallen\nKrausesvej 12\n2100 København Ø\nTelefon 35 38 72 92\nHjemmehold\tGladsaxe Søborg 3\nOdin Flyger\nodinflyger@gmail.com\n23826792\nUdehold\tNBK Amager 1\nCamilla Rath\ncamillafrath@gmail.com\n30298020\nResultat\t2-3\nPoint\t1-2\n\tGladsaxe Søborg 3\tNBK Amager 1\t1\t2\t3\tVinder W.O.\n1. S\t\nOscar Flyger\n\t\nLinus Larsen\n\t15 - 11\t16 - 18\t7 - 15\t\n2. S\t\nHugo Logo Lambertsen\n\t\nNoah Milan Frederiksen\n\t11 - 15\t7 - 15\t\t\n3. S\t\nVictor Jønch Langberg\n\t\n(Ikke fremmødt)\n\t\t\t\tG\n4. S\t\nVictor Jønch Langberg\n\t\n(Ikke fremmødt)\n\t\t\t\tG\n1. D\t\nHugo Logo Lambertsen\nOscar Flyger\n\t\nNoah Milan Frederiksen\nLinus Larsen\n\t13 - 15\t15 - 13\t12 - 15\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

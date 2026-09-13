@@ -1,0 +1,297 @@
+[
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/DBF/DBF.css?v=14",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/sportsresults/standalone/scripts/treeview.js?v=3",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/sportsresults/sportsresults.js?v=14",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/sportsresults/components/clubcomponents/clublistclientscript.aspx?unionid=1&version=639247387111970000",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/sportsresults/components/general/textboxselectcontroller.js?v=4",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/sportsresults/sportsresults.css?v=10",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/sportsresults/components/league/showstandings.css?v=13",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/sportsresults/components/league/league.css?v=16",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/sportsresults/components/general/textboxselectcontroller.css?v=4",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/DBF/DBFMaster.js?v=7",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/WebResource.axd?d=511fvNyMrOe-i5YYZiiv_b9CErKKJE0NMl5mrMv23eYjNc7gnudt5jLX_b4AItOAZu7s_QeWBYRwIvqR6Uzjil_Mwsw1&t=639190905332169432",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/SportsResults/Classes/WebControls.js?v=6",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/ScriptResource.axd?d=rNJl-2P05icAvdVDr4JYkS9ZCeMr3mVkTihEUlmrdVBzEQIzAHRlm_szvIpgDI6FGi9BrrKNFdKPRbBaOEe2q2HTGPeaoAgY4CjGSnJcdXm4PwoDC7lTn2VOUq0asYIPiMrp3Q2&t=ffffffffec54f2d7",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/ScriptResource.axd?d=Zla5mgB5Mph_4Jy-7vx-jJke-g14RaQ9quVC2G6hk0CL3ChCspGwj6dYo7yde6dkmv75doFYaOhwpoHM_PAvbBpoJAEuziVPzKVR7cfkQrQVc1YGINvJ9LaCnv-TYdi1rFVZZA2&t=ffffffffec54f2d7",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/SportsResults/Components/WebService1.asmx/js",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/DBF/Images/Administrator.png",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/SportsResults/Images/Wait.gif",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/DBF/Plugins/Master/dgilogonyt.png",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/DBF/Plugins/Master/logo_dbf.png",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/DBF/v2-vendors.js",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/DBF/v2-app.js",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://consentcdn.cookiebot.com/consentconfig/41505298-4391-4a8a-8e88-20cab1484061/badmintonplayer.dk/configuration.js",
+    "postData": null
+  },
+  {
+    "method": "POST",
+    "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-JV8VJ9REB6&gtm=45je6992v9110933265za20g&_p=1789239223436&gcs=G100&gcd=13m3mPm2m5l1&npa=1&dma_cps=-&dma=1&gdid=dMWZhNz&_eu=EAAIAGAC&_ng=1&cid=45636832.1789239224&frm=0&ir=1&pscdl=denied&rcb=9&sr=1280x720&uaa=x86&uab=64&uafvl=Chromium%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0.0&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=115616985~115938465~115938469~118897920~118897930~119793973~120213116~120385422~120469145~120469153&sid=1789239223&sct=1&seg=0&dl=https%3A%2F%2Fwww.badmintonplayer.dk%2FDBF%2FHoldTurnering%2FStilling%2F&dt=Holdturnering&_tu=CA&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=805",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/DBF/Images/top-Logo-desktop.jpg?v=3",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/DBF/Plugins/Master/Banner30042026/4/LBS.jpg",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/DBF/Plugins/Master/Banner30042026/4/DO_Junior.jpg",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/DBF/Plugins/Master/Banner30042026/4/DO%20Senior.jpg",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/DBF/Plugins/Master/Banner30042026/Side/SidebannerDO_160x400px.jpg",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/DBF/Plugins/Master/Banner30042026/Side/SidebannerDO_160x400px3.jpg",
+    "postData": null
+  },
+  {
+    "method": "POST",
+    "url": "https://www.badmintonplayer.dk/api/BotToken?id=91358076f3b004e01e3c0d2c20495b94",
+    "postData": null
+  },
+  {
+    "method": "PUT",
+    "url": "https://www.badmintonplayer.dk/api/BotToken?id=91358076f3b004e01e3c0d2c20495b94",
+    "postData": null
+  },
+  {
+    "method": "PUT",
+    "url": "https://www.badmintonplayer.dk/api/BotToken?id=91358076f3b004e01e3c0d2c20495b94",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/DBF/DBF.css?v=14",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/sportsresults/standalone/scripts/treeview.js?v=3",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/sportsresults/sportsresults.js?v=14",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/sportsresults/components/clubcomponents/clublistclientscript.aspx?unionid=1&version=639247387111970000",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/sportsresults/components/general/textboxselectcontroller.js?v=4",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/sportsresults/sportsresults.css?v=10",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/sportsresults/components/league/showstandings.css?v=13",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/sportsresults/components/league/league.css?v=16",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/sportsresults/components/general/textboxselectcontroller.css?v=4",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/DBF/DBFMaster.js?v=7",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/WebResource.axd?d=511fvNyMrOe-i5YYZiiv_b9CErKKJE0NMl5mrMv23eYjNc7gnudt5jLX_b4AItOAZu7s_QeWBYRwIvqR6Uzjil_Mwsw1&t=639190905332169432",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/SportsResults/Classes/WebControls.js?v=6",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/ScriptResource.axd?d=rNJl-2P05icAvdVDr4JYkS9ZCeMr3mVkTihEUlmrdVBzEQIzAHRlm_szvIpgDI6FGi9BrrKNFdKPRbBaOEe2q2HTGPeaoAgY4CjGSnJcdXm4PwoDC7lTn2VOUq0asYIPiMrp3Q2&t=ffffffffec54f2d7",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/ScriptResource.axd?d=Zla5mgB5Mph_4Jy-7vx-jJke-g14RaQ9quVC2G6hk0CL3ChCspGwj6dYo7yde6dkmv75doFYaOhwpoHM_PAvbBpoJAEuziVPzKVR7cfkQrQVc1YGINvJ9LaCnv-TYdi1rFVZZA2&t=ffffffffec54f2d7",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/SportsResults/Components/WebService1.asmx/js",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/DBF/Images/Administrator.png",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/SportsResults/Images/Wait.gif",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/DBF/Plugins/Master/dgilogonyt.png",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/DBF/Plugins/Master/logo_dbf.png",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/DBF/v2-vendors.js",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/DBF/v2-app.js",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://consentcdn.cookiebot.com/consentconfig/41505298-4391-4a8a-8e88-20cab1484061/badmintonplayer.dk/configuration.js",
+    "postData": null
+  },
+  {
+    "method": "POST",
+    "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-JV8VJ9REB6&gtm=45je6992v9110933265za20g&_p=1789239226780&gcs=G100&gcd=13m3mPm2m5l1&npa=1&dma_cps=-&dma=1&gdid=dMWZhNz&_eu=EAAIAGAC&_ng=1&cid=1275247552.1789239227&frm=0&ir=1&pscdl=denied&rcb=0&sr=1280x720&uaa=x86&uab=64&uafvl=Chromium%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0.0&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=115938466~115938468~118897920~118897930~120213116~120385422~120469145~120469153&sid=1789239226&sct=1&seg=0&dl=https%3A%2F%2Fwww.badmintonplayer.dk%2FDBF%2FHoldTurnering%2FStilling%2F&dr=https%3A%2F%2Fwww.badmintonplayer.dk%2FDBF%2FHoldTurnering%2FStilling%2F&dt=Holdturnering&_tu=CA&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=804",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "https://www.badmintonplayer.dk/DBF/Images/iconlogo.png",
+    "postData": null
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "key": "2013:96226",
+  "season": 2013,
+  "matchId": 96226,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "Tono Kbh.",
+  "ageGroupId": "5",
+  "leagueGroupId": "2690",
+  "roundDate": "2013-10-27",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2013,2690,1,8,,96226,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2013-96226.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:29:26.451Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2013,2690,1,8,,96226,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2013/2014\nVis rækker\n\n\nU15 Serie X3 Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t96226\nRunde\t4 27-10-2013\nTid\tsø 27-10-2013 11:30\nSpillested\tGrøndal Centret Hal J\nHvidkildevej 64\n2400 København NV\nHjemmehold\tTono Kbh.\nUdehold\tGladsaxe Søborg 3\nAnne-Dorthe Sørensen\nans@regioner.dk\n11111111\nResultat\t5-1\nPoint\t2-0\n\tTono Kbh.\tGladsaxe Søborg 3\t1\t2\t3\tVinder W.O.\n1. S\t\nHjalte Jørgensen\n\t\nOliver Frei\n\t13 - 21\t16 - 21\t\t\n2. S\t\nCasper Suder\n\t\nLaura Friestrup-Jensen\n\t20 - 22\t21 - 15\t21 - 12\t\n3. S\t\nGustav Kappe\n\t\nSigurd Heinager Sørensen\n\t24 - 22\t21 - 12\t\t\n4. S\t\nAsbjørn Herløv Jørgensen\n\t\nTheodor Peter Guttesen\n\t21 - 14\t22 - 20\t\t\n1. D\t\nHjalte Jørgensen\nGustav Kappe\n\t\nOliver Frei\nLaura Friestrup-Jensen\n\t21 - 14\t22 - 20\t\t\n2. D\t\nCasper Suder\nAsbjørn Herløv Jørgensen\n\t\nSigurd Heinager Sørensen\nTheodor Peter Guttesen\n\t\t\t\tT\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

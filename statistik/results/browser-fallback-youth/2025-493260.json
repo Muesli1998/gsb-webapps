@@ -1,0 +1,19 @@
+{
+  "key": "2025:493260",
+  "season": 2025,
+  "matchId": 493260,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "BC37 Amager 3",
+  "ageGroupId": "3",
+  "leagueGroupId": "18135",
+  "roundDate": "2025-11-16",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18135,1,8,,493260,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2025-493260.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:06:01.828Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18135,1,8,,493260,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U11 2025/2026\nVis rækker\n\n\nU11 D 4600 (4 spillere) BD Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t493260\nRunde\t4 16-11-2025\nTid\tsø 16-11-2025 15:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 3\nMette Fløistrup\nmeskyf@yahoo.dk\n20266775\nUdehold\tBC37 Amager 3\nJesper Spang\nadmin@bc37.dk\n53801000\nResultat\t5-1\nPoint\t4-0\n\tGladsaxe Søborg 3\tBC37 Amager 3\t1\t2\t3\tVinder W.O.\n1. S\t\nTobias Geil Christophersen\n\t\nOliver Hrafn Bjarkason\n\t21 - 9\t21 - 6\t\t\n2. S\t\nVitus Reinholdt Amelung\n\t\nOtto Schmidt-Frederiksen\n\t21 - 8\t21 - 16\t\t\n3. S\t\nMatyás Bartosek\n\t\nAleksandr Menshikov\n\t21 - 12\t21 - 3\t\t\n4. S\t\nNarvin Krishna Mudragalla\n\t\nFrederik Bahr Christensen\n\t21 - 19\t12 - 21\t17 - 21\t\n1. D\t\nTobias Geil Christophersen\nVitus Reinholdt Amelung\n\t\nOliver Hrafn Bjarkason\nFrederik Bahr Christensen\n\t21 - 11\t21 - 5\t\t\n2. D\t\nHalfdan Olrik Fløistrup\nMatyás Bartosek\n\t\nOtto Schmidt-Frederiksen\nAleksandr Menshikov\n\t21 - 6\t21 - 18\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

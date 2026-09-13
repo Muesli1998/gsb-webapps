@@ -1,0 +1,22 @@
+{
+  "source": "BadmintonPlayer browser",
+  "season": 2025,
+  "competition": "Danmarksserien Pulje 7",
+  "region": "Badminton Danmark",
+  "ageGroup": "SEN",
+  "groupId": 17922,
+  "clubId": 1093,
+  "columns": ["position", "team", "matches", "wins", "score", "sets", "points", "setPoints"],
+  "rows": [
+    [1, "Frederiksberg", 7, 7, "55-36", "123-91", 73, 50],
+    [2, "Gladsaxe Søborg", 7, 4, "56-35", "123-86", 71, 49],
+    [3, "Måløv", 7, 5, "56-35", "126-82", 70, 46],
+    [4, "Herlev/Hjorten 2", 7, 4, "54-37", "124-97", 68, 45],
+    [5, "Dragør", 7, 2, "47-44", "109-109", 55, 45],
+    [6, "BC37 Amager 2 (O)", 7, 4, "44-47", "109-107", 53, 40],
+    [7, "Solrød Strand 5", 7, 2, "40-51", "97-120", 46, 39],
+    [8, "Valby BC (O)", 7, 0, "12-79", "46-165", 12, 8]
+  ],
+  "urlHash": "#2,2025,17922,1,,,,1093,",
+  "verifiedAt": "2026-09-12"
+}

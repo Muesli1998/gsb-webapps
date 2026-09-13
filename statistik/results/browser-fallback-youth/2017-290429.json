@@ -1,0 +1,19 @@
+{
+  "key": "2017:290429",
+  "season": 2017,
+  "matchId": 290429,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Amager ABC",
+  "ageGroupId": "5",
+  "leagueGroupId": "9290",
+  "roundDate": "2018-03-11",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2017,9290,1,8,,290429,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2017-290429.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:26:02.146Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2017,9290,1,8,,290429,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2017/2018\nVis rækker\n\n\nU15 B (4) Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t290429\nRunde\t5 11-03-2018\nTid\tsø 11-03-2018 13:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 2\nHeidi og Søren Hilbert\nshi@lundgrens.dk\n31187871\nUdehold\tAmager ABC\nNicklas Jensen\nJensen.Nicklas@ymail.com\n22991848\nResultat\t1-5\nPoint\t0-3\n\tGladsaxe Søborg 2\tAmager ABC\t1\t2\t3\tVinder W.O.\n1. S\t\nJens Undén\n\t\nViggo Romme Jakobsen\n\t21 - 14\t21 - 8\t\t\n2. S\t\nMalte Hvid Ribergaard\n\t\nFrederik Weibøl\n\t12 - 21\t21 - 10\t18 - 21\t\n3. S\t\nViggo Kongslev Hilbert\n\t\nElliot Charrier\n\t13 - 21\t18 - 21\t\t\n4. S\t\nFabian Aagren\n\t\nAnton Abildstrøm\n\t9 - 21\t10 - 21\t\t\n1. D\t\nJens Undén\nMalte Hvid Ribergaard\n\t\nViggo Romme Jakobsen\nFrederik Weibøl\n\t9 - 21\t19 - 21\t\t\n2. D\t\nViggo Kongslev Hilbert\nFabian Aagren\n\t\nElliot Charrier\nAnton Abildstrøm\n\t5 - 21\t7 - 21\t\t\n\n\nReserver\nGladsaxe Søborg 2\tAmager ABC\n\n\nJens Undén\nfor Yasmin Kjær Thøgersen\n\nMalte Hvid Ribergaard\nfor Bertram Wilhardt Jensen\n\n\t\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

@@ -1,0 +1,21 @@
+{
+  "key": "2011:2677",
+  "season": 2011,
+  "matchId": 2677,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "ØBK/BK Kbh.",
+  "ageGroupId": "9",
+  "leagueGroupId": "74",
+  "roundDate": "2012-03-04",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,74,1,8,,2677,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2011-2677.json",
+  "verifiedAt": "2026-09-12T17:11:08.400Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "reverifiedAt": "2026-09-13T05:55:45.972Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,74,1,8,,2677,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+40 2011/2012\nVis rækker\n\n\n2. Serie Veteran 2. Serie Veteran\nStilling\nVis alle kampe\n\nKampnr\t2677\nRunde\t5 04-03-2012\nTid\tsø 26-02-2012 13:30\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg\nUdehold\tØBK/BK Kbh.\nResultat\t7-5\nPoint\t2-0\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

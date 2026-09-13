@@ -1,0 +1,19 @@
+{
+  "key": "2022:429509",
+  "season": 2022,
+  "matchId": 429509,
+  "teamName": "Gladsaxe Søborg 4",
+  "opponent": "Skovshoved 5",
+  "ageGroupId": "3",
+  "leagueGroupId": "14985",
+  "roundDate": "2023-03-12",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14985,1,8,,429509,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2022-429509.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:17:30.940Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14985,1,8,,429509,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U11 2022/2023\nVis rækker\n\n\nU11 3000 4 Spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t429509\nRunde\t8 12-03-2023\nTid\tsø 19-03-2023 10:00\nSpillested\tFrederiksberghal 3\nFrederiksberghallerne, Jens Jessensvej 20\n2000 Frederiksberg\nHjemmehold\tSkovshoved 5\nMikkel Sigurd\nmsigurd@gmail.com\n29371699\nUdehold\tGladsaxe Søborg 4\nAnders Uhrbrand\nanders.uhrbrand@gmail.com\n31230788\nResultat\t0-6\nPoint\t0-4\nAfgjort uden kamp (afbud/udeblivelse)\n\nIndberetningen er ikke endelig og kan ændres\n\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

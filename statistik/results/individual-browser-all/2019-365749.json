@@ -1,0 +1,32 @@
+{
+  "key": "2019:365749",
+  "season": 2019,
+  "matchId": 365749,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Gentofte 3",
+  "ageGroupId": "11",
+  "leagueGroupId": "12589",
+  "roundDate": "2020-03-22",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12589,1,8,,365749,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2019-365749.json",
+  "verifiedAt": "2026-09-12T19:14:30.927Z",
+  "resultSource": "playwright_persistent_browser_retry",
+  "verification": "Dynamic match page rendered with match details",
+  "classification": "corona_suspended",
+  "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period",
+  "classifiedAt": "2026-09-12T19:43:48.263Z",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12589,1,8,,365749,1093,",
+  "individual": {
+    "text": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+    "players": [
+      {
+        "name": "Vis spillerprofil",
+        "href": "https://www.badmintonplayer.dk/DBF/Spiller/VisSpiller/",
+        "id": null
+      }
+    ],
+    "categories": [],
+    "scores": []
+  }
+}

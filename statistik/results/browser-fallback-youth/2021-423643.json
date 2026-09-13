@@ -1,0 +1,19 @@
+{
+  "key": "2021:423643",
+  "season": 2021,
+  "matchId": 423643,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Dragør 1",
+  "ageGroupId": "2",
+  "leagueGroupId": "14558",
+  "roundDate": "2022-04-24",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2021,14558,1,8,,423643,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2021-423643.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:19:52.119Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2021,14558,1,8,,423643,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADDAN,DGI U09 2021/2022\nVis rækker\n\n\nDMU H - U9 2700 - 4 spillere Finale\nStilling\nVis alle kampe\n\nKampnr\t423643\nRunde\t2 24-04-2022\nTid\tsø 24-04-2022 14:00\nSpillested\tMAGION Hal 3\nTinghusgade 15\n7200 Grindsted\nHjemmehold\tGladsaxe Søborg 1\nJacob Carlsson\njaccarl@hotmail.com\n+4521943796\nUdehold\tDragør 1\nMorten Geertsen\nMortengeertsen86@gmail.com\n21498364\nResultat\t1-5\n\tGladsaxe Søborg 1\tDragør 1\t1\t2\t3\tVinder W.O.\n1. S\t\nBenjamin Hinge Carlsson\n\t\nViggo Møller Ovesen\n\t13 - 21\t15 - 21\t\t\n2. S\t\nLauge Juul Hornsgaard\n\t\nVillads Geertsen\n\t7 - 21\t11 - 21\t\t\n3. S\t\nOliver Soon Nielsen\n\t\nHector Nikolaisen\n\t20 - 22\t21 - 17\t16 - 21\t\n4. S\t\nJohanne Brogaard Baltzer\n\t\nArthur Jensen\n\t21 - 8\t21 - 11\t\t\n1. D\t\nBenjamin Hinge Carlsson\nOliver Soon Nielsen\n\t\nVillads Geertsen\nViggo Møller Ovesen\n\t5 - 21\t11 - 21\t\t\n2. D\t\nLauge Juul Hornsgaard\nJohanne Brogaard Baltzer\n\t\nHector Nikolaisen\nArthur Jensen\n\t9 - 21\t20 - 22\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

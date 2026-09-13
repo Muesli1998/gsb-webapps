@@ -1,0 +1,197 @@
+season,leagueGroupId,league,name,matches,oldest,newest
+2025,17880,"Badmintonligaen\t Grundspil","Greve",9,2025-09-02,2026-02-20
+2025,18801,"Badmintonligaen (oversidder-runder) Oversidder-runder/papirhold","Greve",1,2026-04-18,2026-04-18
+2025,17893,"2. division Pulje 2","Greve 2",7,2025-09-06,2026-01-10
+2025,17894,"2. division Kvalifikation til 1. division","Greve 2",4,2026-01-31,2026-03-21
+2025,18803,"2. division (oversidder-runder) Oversidder-runder/papirhold","Greve 2",1,2026-04-18,2026-04-18
+2025,17906,"3. division Pulje 1","Greve 3",7,2025-09-06,2026-01-10
+2025,17910,"3. division Kvalifikation til 2.division pulje A","Greve 3",4,2026-01-31,2026-03-21
+2025,18804,"3. division (oversidder-runde) Oversidder-runder/papirhold","Greve 3",1,2026-04-18,2026-04-18
+2025,17909,"3. division Pulje 4","Greve 4",7,2025-09-06,2026-01-10
+2025,17913,"3. division Nedrykning fra 3. division pulje B","Greve 4",4,2026-01-31,2026-03-21
+2025,17915,"3. division Kvalkampe: Nedrykning til DS","Greve 4",1,2026-04-18,2026-04-18
+2025,17934,"Sjællandsserien Pulje 1","Greve 5",6,2025-09-06,2026-01-10
+2025,18479,"Sjællandsserien slutspil - nedrykning Pulje 1","Greve 5",4,2026-01-31,2026-03-21
+2025,17942,"Serie 1 Pulje 1","Greve 6",7,2025-09-06,2026-01-10
+2025,18481,"Serie 1 slutspil - nedrykning Pulje 1","Greve 6",4,2026-01-31,2026-03-21
+2025,17945,"Serie 2 Pulje 1","Greve 7",7,2025-09-06,2026-01-10
+2025,18483,"Serie 2 slutspil - nedrykning Pulje 1","Greve 7",4,2026-01-31,2026-03-21
+2024,16861,"1. division Pulje 2","Greve",7,2024-09-07,2025-01-11
+2024,16862,"1. division Kvalifikation til Badmintonligaen","Greve",4,2025-02-01,2025-03-22
+2024,17595,"1. division (oversidder-runder)\t Oversidder-runder/papirhold","Greve",1,2025-04-05,2025-04-05
+2024,16927,"Serie 3 Pulje 2","Greve",0,,
+2024,16864,"1. division Kvalifikationskampe til 1. division","Greve 2",1,2025-04-05,2025-04-05
+2024,16867,"2. division Kvalifikation til 1. division","Greve 2",4,2025-02-01,2025-03-22
+2024,16866,"2. division Pulje 2","Greve 2",7,2024-09-07,2025-01-11
+2024,16874,"3. division Kvalifikation til 2.division pulje B","Greve 3",4,2025-02-01,2025-03-22
+2024,16877,"3. division Kvalkampe: Oprykning til 2. division","Greve 3",1,2025-04-05,2025-04-05
+2024,16872,"3. division Pulje 4","Greve 3",7,2024-09-07,2025-01-11
+2024,16889,"Danmarksserien Kvalifikation til 3. division pulje C","Greve 4",4,2025-02-01,2025-03-22
+2024,16884,"Danmarksserien Pulje 6","Greve 4",7,2024-09-07,2025-01-11
+2024,16895,"Danmarksserien Kvalkampe: Oprykning til 3. division","Greve 4",1,2025-04-05,2025-04-05
+2024,16923,"Serie 1 Pulje 2","Greve 5",9,2024-09-21,2025-03-08
+2024,16922,"Serie 1 Pulje 1","Greve 6",9,2024-09-21,2025-03-08
+2024,16926,"Serie 3 Pulje 1","Greve 7",5,2024-09-07,2024-12-07
+2024,17425,"Serie 3 slutspil - Oprykning Pulje 1","Greve 7",4,2025-02-01,2025-03-22
+2023,16444,"Badmintonligaen Kvalifikationskamp til Ligaen","Greve",1,2024-04-02,2024-04-02
+2023,15823,"1. division Pulje 2","Greve",7,2023-09-09,2024-01-13
+2023,16378,"1. division Kvalifikation til Badmintonligaen","Greve",4,2024-02-03,2024-03-23
+2023,15829,"3. division Pulje 4","Greve 2",7,2023-09-09,2024-01-13
+2023,16383,"3. division Kvalifikation til 2.division pulje B","Greve 3",4,2024-02-03,2024-03-23
+2023,15828,"3. division Pulje 3","Greve 3",7,2023-09-09,2024-01-13
+2023,15846,"Danmarksserien Pulje 8","Greve 4",7,2023-09-09,2024-01-13
+2023,16393,"Danmarksserien Nedrykning fra Danmarksserien pulje D","Greve 4",4,2024-02-03,2024-03-23
+2023,15847,"Sjællandsserien Pulje 1","Greve 5",7,2023-09-09,2024-01-13
+2023,16399,"Sjællandsserien slutspil - Nedrykning Pulje 1","Greve 5",4,2024-02-03,2024-03-23
+2023,15859,"Serie 1 Pulje 1","Greve 6",5,2023-09-23,2023-12-09
+2023,16368,"Serie 1 slutspil - nedrykning syd/vest Pulje 1","Greve 6",4,2024-01-13,2024-03-23
+2023,15866,"Serie 3 Pulje 2","Greve 7",5,2023-09-23,2023-12-09
+2023,16371,"Serie 3 slutspil - oprykning Pulje 1","Greve 7",5,2024-01-13,2024-03-23
+2022,14809,"1. division Pulje 2","Greve",7,2022-09-10,2023-01-14
+2022,15339,"1. division Kvalifikation til Badmintonligaen","Greve",4,2023-02-04,2023-03-25
+2022,15543,"1. division (oversidder-runder)\t Papirhold","Greve",1,2023-04-15,2023-04-15
+2022,14813,"2. division Nedrykning fra 2. division","Greve 2",4,2023-02-04,2023-03-25
+2022,14811,"2. division Pulje 2","Greve 2",7,2022-09-10,2023-01-14
+2022,15544,"2. division (oversidder-runder)\t Papirhold","Greve 2",1,2023-04-15,2023-04-15
+2022,14817,"3. division Pulje 4","Greve 3",7,2022-09-10,2023-01-14
+2022,15345,"3. division Nedrykning fra 3. division, pulje B","Greve 3",4,2023-02-04,2023-03-25
+2022,14822,"3. division Kvalifikationskampe","Greve 3",1,2023-04-15,2023-04-15
+2022,14828,"Danmarksserien Pulje 6","Greve 4",7,2022-09-10,2023-01-14
+2022,15352,"Danmarksserien Nedrykning fra Danmarksserien, pulje C","Greve 4",4,2023-02-04,2023-03-25
+2022,15517,"Danmarksserien Kvalifikationskampe","Greve 4",1,2023-04-15,2023-04-15
+2022,14852,"Serie 1 Nord Pulje 1","Greve 5",7,2022-09-10,2023-01-14
+2022,15416,"Serie 1 slutspil - oprykning Nord Pulje 1","Greve 5",4,2023-02-04,2023-03-25
+2022,14859,"Serie 2 Pulje 2","Greve 6",7,2022-09-10,2023-01-14
+2022,15418,"Serie 2 slutspil - oprykning Pulje 1","Greve 6",4,2023-02-04,2023-03-25
+2022,14861,"Serie 3 Pulje 1","Greve 7",7,2022-09-10,2023-01-14
+2022,15420,"Serie 3 slutspil - oprykning Pulje 1","Greve 7",3,2023-02-04,2023-03-25
+2021,13945,"Badmintonligaen Grundspil","Greve",9,2021-08-24,2022-02-24
+2021,13761,"1. division (grundspil) Pulje 2","Greve 2",7,2021-09-11,2022-01-15
+2021,14462,"1. division (slutspil) Nedrykning fra 1. division","Greve 2",4,2022-02-05,2022-03-26
+2021,13765,"2. division Pulje 2","Greve 3",7,2021-09-11,2022-01-15
+2021,13767,"2. division Nedrykning fra 2. division","Greve 3",4,2022-02-05,2022-03-26
+2021,13783,"Danmarksserien Pulje 8","Greve 4",7,2021-09-11,2022-01-15
+2021,13787,"Danmarksserien Kvalifikation til 3. division pulje D","Greve 4",4,2022-02-05,2022-03-26
+2021,13982,"Serie 1 Pulje 2","Greve 5",6,2021-09-11,2022-01-15
+2021,14441,"Serie 1 slutspil - oprykning Pulje 1","Greve 5",4,2022-02-05,2022-03-26
+2021,13989,"Serie 3 Pulje 1","Greve 6",10,2021-09-11,2022-03-26
+2020,13240,"Badmintonligaen Grundspil","Greve",9,2020-08-25,2021-02-08
+2020,13209,"1. division Pulje 2","Greve 2",7,2020-09-05,2021-06-02
+2020,13213,"2. division Pulje 2","Greve 3",7,2020-09-05,2021-06-02
+2020,13231,"Danmarksserien Pulje 8","Greve 4",7,2020-09-05,2021-06-02
+2020,13270,"Serie 1 Pulje 2","Greve 5",7,2020-09-05,2021-03-27
+2020,13759,"Serie 3 Pulje 1","Greve 6",11,2020-09-05,2021-04-27
+2019,12536,"Badmintonligaen Grundspil","Greve",7,2019-09-06,2020-02-03
+2019,12538,"1. division Pulje 2","Greve 2",7,2019-09-07,2020-02-03
+2019,13119,"1. division Kvalifikation til Badmintonligaen","Greve 2",4,2020-02-22,2020-04-14
+2019,13127,"Spilletider i slutspillet i 1.division  Pulje 2","Greve 2",2,2020-03-07,2020-04-14
+2019,12546,"3. division Pulje 4","Greve 3",7,2019-09-07,2020-01-11
+2019,13108,"3. division Kvalifikation til 2. division pulje B","Greve 3",4,2020-01-25,2020-03-21
+2019,12558,"Sjællandsserien Pulje 2","Greve 4",7,2019-09-07,2020-01-11
+2019,13138,"Sjællandsserien Slutspil - oprykning Pulje 1","Greve 4",4,2020-01-25,2020-03-21
+2019,12556,"Serie 2 Pulje 2","Greve 5",9,2019-09-07,2020-03-21
+2019,12560,"Serie 3 Pulje 2","Greve 6",6,2019-09-21,2020-01-25
+2019,13150,"Serie 3 - mellemste slutspil Pulje 1","Greve 6",3,2020-02-22,2020-03-21
+2018,12165,"Badmintonligaen Guldkamp","Greve",1,2019-04-22,2019-04-22
+2018,10955,"Badmintonligaen Grundspil","Greve",9,2018-09-03,2019-01-31
+2018,12042,"Badmintonligaen, semifinaler Semifinale 1","Greve",1,2019-03-19,2019-03-19
+2018,10847,"1. division Grundspil","Greve 2",7,2018-09-08,2019-01-12
+2018,12017,"Kvalifikation til 1. division Pulje B","Greve 2",5,2019-01-26,2019-04-27
+2018,10909,"Danmarksserien Øst pulje 1","Greve 3",7,2018-09-08,2019-01-12
+2018,11995,"Danmarksserien Kvalifikation til 3. division, A Øst","Greve 3",4,2019-01-26,2019-03-23
+2018,10996,"Serie 1 Pulje 4","Greve 4",6,2018-09-08,2019-01-12
+2018,12004,"Serie 1 Slutspil - oprykning Pulje 2","Greve 4",4,2019-01-26,2019-03-23
+2018,11169,"Serie 3 Pulje 1","Greve 5",8,2018-09-22,2019-03-23
+2017,9241,"Badmintonligaen Grundspil","Greve",9,2017-09-05,2017-12-07
+2017,10207,"Badmintonligaen Kvartfinaler","Greve",2,2018-03-20,2018-03-26
+2017,9262,"2. division Pulje 1","Greve 2",7,2017-09-09,2018-01-13
+2017,10334,"2. division Kvalifikation til 1. division","Greve 2",4,2018-01-27,2018-03-24
+2017,10725,"Kvalifikation til 3. division (runde 12) Kvalifikationsevent kamp 6","Greve 3",1,2018-04-21 14:30:00,2018-04-21 14:30:00
+2017,9320,"Danmarksserien Øst pulje 1","Greve 3",7,2017-09-09,2018-01-13
+2017,10342,"Danmarksserien Kvalifikation til 3. division pulje A Øst","Greve 3",4,2018-01-27,2018-03-24
+2017,9510,"Sjællandsserien Pulje 2","Greve 4",7,2017-09-09,2018-01-13
+2017,10329,"Sjællandsserien slutspil - nedrykning Pulje 1","Greve 4",4,2018-01-27,2018-03-24
+2016,8703,"Badmintonligaen Kvartfinaler","Greve",2,2017-01-31,2017-02-07
+2016,7826,"Badmintonligaen Grundspil","Greve",9,2016-09-05,2017-01-09
+2016,7578,"2. division Pulje 2","Greve 2",7,2016-09-10,2017-01-14
+2016,8713,"2. division Kvalifikation til 1. division","Greve 2",4,2017-01-28,2017-03-25
+2016,7589,"3. division Pulje 4","Greve 3",7,2016-09-10,2017-01-14
+2016,8720,"3. division Nedrykning fra 3. division pulje B","Greve 3",4,2017-01-28,2017-03-25
+2016,7599,"Danmarksserien Øst pulje 4","Greve 4",7,2016-09-10,2017-01-14
+2016,8734,"Danmarksserien Nedrykning fra Danmarksserien Øst pulje B","Greve 4",4,2017-01-28,2017-03-25
+2016,8831,"Nedrykning fra Danmarksserien (runde 12) Kvalifikationsevent kamp 9","Greve 4",1,2017-04-22 10:30:00,2017-04-22 10:30:00
+2016,7862,"Serie 1 Pulje 1","Greve 5",7,2016-09-10,2017-01-14
+2016,8708,"Serie 1 slutspil - nedrykning Pulje 1","Greve 5",4,2017-01-28,2017-03-25
+2015,6887,"Badmintonligaen Bronzekamp","Greve",1,2016-03-24,2016-03-24
+2015,6889,"Badmintonligaen Semifinaler","Greve",2,2016-02-23,2016-02-26
+2015,6888,"Badmintonligaen Kvartfinaler","Greve",2,2016-02-09,2016-02-12
+2015,6072,"Badmintonligaen Grundspil","Greve",9,2015-09-01,2016-01-07
+2015,6883,"1. division Nedrykning","Greve 2",5,2016-01-16,2016-04-11
+2015,5931,"1. division Grundspil","Greve 2",7,2015-09-05,2015-12-19
+2015,6860,"Nedrykning fra 3. division Pulje B","Greve 3",4,2016-01-16,2016-04-02
+2015,5936,"3. division Pulje 3","Greve 3",7,2015-09-05,2015-12-19
+2015,6868,"Nedrykning fra Danmarksserien (øst) Pulje B Øst","Greve 4",4,2016-01-16,2016-04-02
+2015,5946,"Danmarksserien Øst pulje 3","Greve 4",7,2015-09-05,2015-12-19
+2015,6131,"Serie 1 Pulje 4","Greve 5",7,2015-09-05,2015-12-19
+2015,7030,"Serie 1 Slutspil - nedrykning Pulje 2","Greve 5",4,2016-01-16,2016-04-02
+2014,5230,"Badmintonligaen Finale","Greve",1,2015-04-23,2015-04-23
+2014,5228,"Badmintonligaen Kvartfinaler","Greve",2,2015-01-29,2015-02-03
+2014,5229,"Badmintonligaen Semifinaler","Greve",2,2015-02-17,2015-03-18
+2014,4278,"Badmintonligaen Grundspil","Greve",9,2014-09-08,2014-12-11
+2014,5179,"Kval. til 1. division Kval. til 1. div.","Greve 2",4,2015-02-01,2015-03-22
+2014,4280,"2. division Pulje 2","Greve 2",7,2014-09-07,2015-01-11
+2014,5182,"Kvalifikation til 2. division Pulje B","Greve 3",4,2015-02-01,2015-03-22
+2014,4286,"3. division Pulje 2","Greve 3",7,2014-09-07,2015-01-11
+2014,5189,"Nedrykning fra Danmarksserien Pulje A øst","Greve 4",4,2015-02-01,2015-03-22
+2014,5450,"Nedrykning fra Danmarksserien (runde 12) Kvalifikationsevent kamp 9","Greve 4",1,2015-03-28 10:30:00,2015-03-28 10:30:00
+2014,4294,"Danmarksserien Øst pulje 2","Greve 4",7,2014-09-07,2015-01-11
+2014,4685,"4+2 rækken Pulje 1","Greve 5",8,2014-10-05,2015-03-22
+2013,3600,"Badmintonligaen Kvartfinale 2","Greve",1,2014-02-20,2014-02-20
+2013,3829,"Badmintonligaen Semifinale 1","Greve",1,2014-03-25,2014-03-25
+2013,3597,"Badmintonligaen Medaljeslutspil A","Greve",3,2014-01-23,2014-02-04
+2013,3846,"Badmintonligaen Bronzekamp","Greve",1,2014-04-16,2014-04-16
+2013,2792,"Badmintonligaen Grundspil","Greve",9,2013-09-03,2013-12-18
+2013,3581,"2. division Kval. til 1. div.","Greve 2",4,2014-02-02,2014-03-23
+2013,2602,"2. division Pulje 1","Greve 2",7,2013-09-08,2014-01-12
+2013,2937,"SM DH-rækken Pulje 1","Greve 3",2,2013-08-23,2013-08-24
+2013,3584,"Kvalifikation til 2. division Pulje B","Greve 3",4,2014-02-02,2014-03-23
+2013,2612,"3. division Pulje 4","Greve 3",7,2013-09-08,2014-01-12
+2013,2488,"Sjællandsserien Pulje 2","Greve 4",7,2013-09-08,2014-01-12
+2013,3708,"Sjællandsserien Slutspil - Oprykning Pulje 1","Greve 4",4,2014-02-02,2014-03-23
+2013,2655,"Serie 2-3, 4+2, Syd/Vest Pulje 1","Greve 5",7,2013-09-08,2014-01-12
+2013,3765,"Serie 2-3, 4+2, Slutspil Syd/Vest - oprykning Pulje 1","Greve 5",3,2014-02-02,2014-03-23
+2012,2188,"Badmintonligaen Bronzekamp","Greve",1,2013-04-16,2013-04-16
+2012,2186,"Badmintonligaen Semifinale 2","Greve",1,2013-03-25,2013-03-25
+2012,2183,"Badmintonligaen Medaljeslutspil B","Greve",3,2013-01-28,2013-02-20
+2012,2184,"Badmintonligaen Kvartfinale 2","Greve",1,2013-03-19,2013-03-19
+2012,1637,"Badmintonligaen Grundspil","Greve",9,2012-09-03,2012-12-18
+2012,1837,"SM - DH Rækken SM DH-rækken","Greve 2",2,2012-08-26,2012-08-26
+2012,2164,"2. division Kval. til 1. div.","Greve 2",4,2013-02-03,2013-03-24
+2012,1335,"2. division Pulje 2","Greve 2",7,2012-09-09,2013-01-13
+2012,1660,"SM - DS/SJ Rækken DS/Sj-rækken","Greve 3",2,2012-08-21,2012-08-26
+2012,2171,"Kvalifikation til 3. division Pulje A øst","Greve 3",4,2013-02-03,2013-03-24
+2012,1352,"Danmarksserien Øst pulje 2","Greve 3",7,2012-09-09,2013-01-13
+2012,1419,"Serie 1 Pulje 4","Greve 4",7,2012-09-09,2013-01-13
+2012,2322,"Serie 1 Slutspil - oprykning Pulje 2","Greve 4",4,2013-02-03,2013-03-24
+2012,1455,"Serie 2, 6+4 Pulje 3","Greve 5",10,2012-09-09,2013-03-24
+2011,1127,"Badmintonligaen Semifinaler","Greve",1,2012-03-23,2012-03-23
+2011,1160,"Badmintonligaen Guldmatchen","Greve",1,2012-04-11,2012-04-11
+2011,1075,"Badmintonligaen, slutspil Medaljeslutspil pulje A","Greve",3,2012-01-26,2012-02-09
+2011,3,"Badmintonligaen Grundspil","Greve",9,2011-09-01,2012-01-17
+2011,390,"SM - DH-rækken DH-rækken","Greve 2",1,2011-08-27,2011-08-27
+2011,1074,"Kvalifikation til 1. division Slutspil","Greve 2",4,2012-02-12,2012-03-25
+2011,6,"2. division Pulje 2","Greve 2",7,2011-09-25,2012-01-15
+2011,391,"SM - DS/Sj-rækken DS/Sj-rækken","Greve 3",2,2011-08-18,2011-08-28
+2011,1072,"Kvalifikation til 3. division Pulje A Øst","Greve 3",4,2012-02-12,2012-03-25
+2011,71,"Danmarksserien Øst pulje 2","Greve 3",7,2011-09-25,2012-01-15
+2011,1053,"Serie 1, oprykning Pulje 2","Greve 4",4,2012-02-12,2012-03-25
+2011,229,"Serie 1 Pulje 4","Greve 4",7,2011-09-25,2012-01-15
+2011,238,"Serie 3 Pulje 3","Greve 5",10,2011-09-25,2012-03-25
+2010,398,"Badmintonligaen Badmintonligaen","Greve 1",9,2010-09-26,2011-02-27
+2010,400,"Guldmatchen Guldmatchen","Greve 1",1,2010-09-26,2010-09-26
+2010,403,"Medaljeslutspil Medaljeslutspil A","Greve 1",3,2010-09-26,2010-11-07
+2010,404,"Semifinaler Semifinaler","Greve 1",1,2010-09-26,2010-09-26
+2010,408,"2.division pulje 2","Greve 2",7,2010-09-26,2011-01-16
+2010,413,"Kvalifikation til 1.division Kvalifikation til 1.division","Greve 2",4,2010-09-26,2010-11-21
+2010,412,"3.division pulje 4","Greve 3",7,2010-09-26,2011-01-16
+2010,423,"Nedrykning fra 3.division Pulje B","Greve 3",4,2010-09-26,2010-11-21

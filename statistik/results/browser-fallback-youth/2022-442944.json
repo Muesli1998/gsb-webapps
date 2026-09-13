@@ -1,0 +1,19 @@
+{
+  "key": "2022:442944",
+  "season": 2022,
+  "matchId": 442944,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Hjørring 2",
+  "ageGroupId": "3",
+  "leagueGroupId": "15528",
+  "roundDate": "2023-04-30",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,15528,1,8,,442944,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2022-442944.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:16:40.865Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,15528,1,8,,442944,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADDAN,DGI U11 2022/2023\nVis rækker\n\n\nDMU H - U11 3600 4 spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t442944\nRunde\t2 30-04-2023\nTid\tsø 30-04-2023 08:30\nSpillested\tViadukthallen\nBlåhøjvej 10\n7200 Grindsted\nHjemmehold\tHjørring 2\nMark Christiansen\nmarkchristiansen8@hotmaill.com\n26657472\nUdehold\tGladsaxe Søborg 1\nJakob Buron\njakob@buron.eu\n61303703\nResultat\t1-5\nPoint\t0-4\n\tHjørring 2\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. S\t\nLucas Hjermitslev Kjelgaard\n\t\nAnton Aavang Arvidson\n\t14 - 21\t9 - 21\t\t\n2. S\t\nMikkel Hansen\n\t\nSilas Buron\n\t19 - 21\t21 - 18\t16 - 21\t\n3. S\t\nDexter Christiansen\n\t\nOliver Soon Nielsen\n\t5 - 21\t4 - 21\t\t\n4. S\t\nHolger B. Lillelund\n\t\nErik Kragh Winther\n\t13 - 21\t12 - 21\t\t\n1. D\t\nLucas Hjermitslev Kjelgaard\nMikkel Hansen\n\t\nOliver Soon Nielsen\nSilas Buron\n\t22 - 20\t14 - 21\t21 - 19\t\n2. D\t\nDexter Christiansen\nHolger B. Lillelund\n\t\nAnton Aavang Arvidson\nErik Kragh Winther\n\t13 - 21\t9 - 21\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

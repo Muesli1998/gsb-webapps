@@ -1,0 +1,21 @@
+{
+  "key": "2015:196002",
+  "season": 2015,
+  "matchId": 196002,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Valby BC",
+  "ageGroupId": "6",
+  "leagueGroupId": "6099",
+  "roundDate": "2016-04-03",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6099,1,8,,196002,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2015-196002.json",
+  "verifiedAt": "2026-09-12T17:09:58.674Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "reverifiedAt": "2026-09-13T05:53:46.331Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6099,1,8,,196002,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U17 2015/2016\nVis rækker\n\n\nU17 A Række 4+2 Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t196002\nRunde\t9 03-04-2016\nTid\tsø 03-04-2016 12:00\nSpillested\tVBC-Hallen\nSkellet 30\n2500 Valby\nTelefon 36 46 98 88\nHjemmehold\tValby BC\nMathias Haulund Jensen\nvbc.ungdom@gmail.com\n40144685\nUdehold\tGladsaxe Søborg\nLene Sørensen\nsorensenlene@ymail.com\n29392379\nResultat\t8-0\nPoint\t2-0\nAfgjort uden kamp (afbud/udeblivelse)\n\nIndberetningen er ikke endelig og kan ændres\n\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

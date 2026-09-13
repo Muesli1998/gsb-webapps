@@ -1,0 +1,1 @@
+const q=`query{__schema{types{name kind}}}`; const res=await fetch('https://app.nembadminton.dk/graphql',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({query:q})}); const j=await res.json(); console.log((j.data.__schema.types||[]).filter(t=>/tournament|result|event|program/i.test(t.name)).map(t=>t.name).join('\n'));

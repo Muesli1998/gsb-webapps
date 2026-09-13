@@ -1,0 +1,3 @@
+SearchTournamentResults 500 {"Message":"There was an error processing the request.","StackTrace":"","ExceptionType":""}
+GetTournamentEvents 500 {"Message":"There was an error processing the request.","StackTrace":"","ExceptionType":""}
+SearchTournamentMatches 500 {"Message":"There was an error processing the request.","StackTrace":"","ExceptionType":""}

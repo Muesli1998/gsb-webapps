@@ -1,0 +1,21 @@
+{
+  "key": "2020:405598",
+  "season": 2020,
+  "matchId": 405598,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "SAIF Kbh. 2",
+  "ageGroupId": "1",
+  "leagueGroupId": "13230",
+  "roundDate": "2021-05-29",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13230,1,8,,405598,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2020-405598.json",
+  "verifiedAt": "2026-09-12T16:59:39.253Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:49:46.927Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13230,1,8,,405598,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADDAN SEN 2020/2021\nVis rækker\n\n\nDanmarksserien Pulje 7\nStilling\nVis alle kampe\n\nKampnr\t405598\nRunde\tNY6 29-05-2021\nTid\t\nSpillested\t\nHjemmehold\tSAIF Kbh. 2\nThomas Irving Pedersen\nThomas@saif.dk\n22199154\nUdehold\tGladsaxe Søborg 2\nRasmus Hemmingsen\nrahem@hotmail.dk\n20893324\nResultat\t-\nPoint\t-\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

@@ -1,0 +1,19 @@
+{
+  "key": "2019:373820",
+  "season": 2019,
+  "matchId": 373820,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Hvidovre 3",
+  "ageGroupId": "3",
+  "leagueGroupId": "12798",
+  "roundDate": "2020-01-26",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12798,1,8,,373820,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2019-373820.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:23:53.008Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12798,1,8,,373820,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U11 2019/2020\nVis rækker\n\n\nU11 - 3400 - 4 spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t373820\nRunde\t5 26-01-2020\nTid\tsø 26-01-2020 09:00\nSpillested\tHBC-Hallen\nBibliotekvej 62\n2650 Hvidovre\nTelefon 36 49 10 05\nHjemmehold\tHvidovre 3\nKasper Ullegård\nullegard@outlook.dk\n23715811\nUdehold\tGladsaxe Søborg 1\nKlaus Hestehave\nklaus@hestehave.com\n30762930\nResultat\t0-6\nPoint\t0-3\n\tHvidovre 3\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. S\t\nSofie Høyer\n\t\nElias Hestehave\n\t16 - 21\t22 - 20\t15 - 21\t\n2. S\t\nNaja Jørgensen\n\t\nBertram Aavang Arvidson\n\t7 - 21\t8 - 21\t\t\n3. S\t\nDaniel Kasper Jensen\n\t\nAksel Egedal Kristensen\n\t12 - 21\t15 - 21\t\t\n4. S\t\nAdam Rønberg Puukka\n\t\nFreja Fan Fuglsang\n\t21 - 13\t12 - 21\t13 - 21\t\n1. D\t\nSofie Høyer\nNaja Jørgensen\n\t\nBertram Aavang Arvidson\nElias Hestehave\n\t4 - 21\t14 - 21\t\t\n2. D\t\nDaniel Kasper Jensen\nAdam Rønberg Puukka\n\t\nFreja Fan Fuglsang\nAksel Egedal Kristensen\n\t16 - 21\t15 - 21\t\t\n\n\nReserver\nHvidovre 3\tGladsaxe Søborg 1\n\n\nSofie Høyer\nfor Bertram Schrøder Facius\n\n\t\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

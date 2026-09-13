@@ -1,0 +1,5342 @@
+[
+  {
+    "season": 2010,
+    "opponent": "Charlottenlund 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2010,
+    "opponent": "Herlev/Hjorten 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2010,
+    "opponent": "Karlslunde 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2010,
+    "opponent": "KBK Kbh. 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2010,
+    "opponent": "Rødovre 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2010,
+    "opponent": "SAIF Kbh. 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2010,
+    "opponent": "Skibby 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2010,
+    "opponent": "Solrød Strand 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2010,
+    "opponent": "Taastrup Elite 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2010,
+    "opponent": "Team Roskilde 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2010,
+    "opponent": "Vordingborg 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "Amager ABC",
+    "error": "Could not find any players on match",
+    "count": 4
+  },
+  {
+    "season": 2011,
+    "opponent": "Amager ABC 2",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2011,
+    "opponent": "Amager ABC 3",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "BC KVIK Kbh.",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "BC37 Amager",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2011,
+    "opponent": "BC37 Amager 3",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "BK36 Kbh.",
+    "error": "Could not find any players on match",
+    "count": 5
+  },
+  {
+    "season": 2011,
+    "opponent": "BKPOINT Kbh.",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2011,
+    "opponent": "Charlottenlund",
+    "error": "Could not find any players on match",
+    "count": 4
+  },
+  {
+    "season": 2011,
+    "opponent": "Charlottenlund 2",
+    "error": "Could not find any players on match",
+    "count": 3
+  },
+  {
+    "season": 2011,
+    "opponent": "Charlottenlund 3",
+    "error": "Could not find any players on match",
+    "count": 4
+  },
+  {
+    "season": 2011,
+    "opponent": "Dragør",
+    "error": "Could not find any players on match",
+    "count": 3
+  },
+  {
+    "season": 2011,
+    "opponent": "Dragør 2",
+    "error": "Could not find any players on match",
+    "count": 3
+  },
+  {
+    "season": 2011,
+    "opponent": "Dragør 3",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "Drive",
+    "error": "Could not find any players on match",
+    "count": 6
+  },
+  {
+    "season": 2011,
+    "opponent": "Drive 2",
+    "error": "Could not find any players on match",
+    "count": 3
+  },
+  {
+    "season": 2011,
+    "opponent": "Drive 3",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "Drive 4",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "FKIF Frederiksberg",
+    "error": "Could not find any players on match",
+    "count": 5
+  },
+  {
+    "season": 2011,
+    "opponent": "FKIF Frederiksberg 2",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2011,
+    "opponent": "FKIF Frederiksberg 3",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2011,
+    "opponent": "FKIF Frederiksberg 4",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "Frederiksberg",
+    "error": "Could not find any players on match",
+    "count": 5
+  },
+  {
+    "season": 2011,
+    "opponent": "Frederiksberg 2",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2011,
+    "opponent": "Frederiksberg 3",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "Frederiksberg 4",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "Gentofte",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2011,
+    "opponent": "Gentofte 3",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "Gentofte 4",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "Gentofte 5",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "Hvidovre",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2011,
+    "opponent": "Hvidovre 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "Hvidovre HB2000",
+    "error": "Could not find any players on match",
+    "count": 5
+  },
+  {
+    "season": 2011,
+    "opponent": "Hvidovre HB2000 2",
+    "error": "Could not find any players on match",
+    "count": 4
+  },
+  {
+    "season": 2011,
+    "opponent": "Hvidovre HB2000 3",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "Hvidovre HB2000 4",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "Kalundborg",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "KBK Kbh.",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "KBK Kbh. 2",
+    "error": "Could not find any players on match",
+    "count": 4
+  },
+  {
+    "season": 2011,
+    "opponent": "KBK Kbh. 3",
+    "error": "Could not find any players on match",
+    "count": 4
+  },
+  {
+    "season": 2011,
+    "opponent": "KBK Kbh. 4",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2011,
+    "opponent": "KBK Kbh. 5",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "KFUM Badminton Kbh.",
+    "error": "Could not find any players on match",
+    "count": 3
+  },
+  {
+    "season": 2011,
+    "opponent": "KFUM Badminton Kbh. 2",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2011,
+    "opponent": "KMB2010",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2011,
+    "opponent": "KMB2010 2",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2011,
+    "opponent": "KMB2010 3",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "KSI Badmintonklub Kbh. 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "Lyngby",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2011,
+    "opponent": "Lyngby 2",
+    "error": "Could not find any players on match",
+    "count": 3
+  },
+  {
+    "season": 2011,
+    "opponent": "Lyngby 3",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2011,
+    "opponent": "Lyngby 4",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "Lyngby 5",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "NBK Amager",
+    "error": "Could not find any players on match",
+    "count": 5
+  },
+  {
+    "season": 2011,
+    "opponent": "ØBK/BK Kbh.",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "Pan Kbh. 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "Posten Kbh.",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2011,
+    "opponent": "Rødovre",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2011,
+    "opponent": "Rødovre 2",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2011,
+    "opponent": "Rødovre 3",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "Skovshoved",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "Skovshoved 2",
+    "error": "Could not find any players on match",
+    "count": 3
+  },
+  {
+    "season": 2011,
+    "opponent": "Skovshoved 3",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "SMASH",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "SMASH 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "Sporvejenes IF",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "Sundby KFUM",
+    "error": "Could not find any players on match",
+    "count": 4
+  },
+  {
+    "season": 2011,
+    "opponent": "Sundby KFUM 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "Tingbjerg",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2011,
+    "opponent": "Tono Kbh.",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "Valby BC",
+    "error": "Could not find any players on match",
+    "count": 5
+  },
+  {
+    "season": 2011,
+    "opponent": "Valby BC 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "Vanløse",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2011,
+    "opponent": "Vanløse 2",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2011,
+    "opponent": "Vanløse 3",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2012,
+    "opponent": "Amager ABC",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "Amager ABC",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "BC37 Amager",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "BC37 Amager",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2012,
+    "opponent": "Charlottenlund 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "Charlottenlund 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2012,
+    "opponent": "Charlottenlund 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "Dragør",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "Drive",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2012,
+    "opponent": "Drive 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "FKIF Frederiksberg",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "FKIF Frederiksberg",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2012,
+    "opponent": "FKIF Frederiksberg 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "Frederiksberg",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "Frederiksberg",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2012,
+    "opponent": "Frederiksberg 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "Frederiksberg 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "Hvidovre",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2012,
+    "opponent": "Hvidovre 5",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "Hvidovre HB2000",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2012,
+    "opponent": "Hvidovre HB2000 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "KBK Kbh. 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "KBK Kbh. 3",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2012,
+    "opponent": "KBK Kbh. 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "KFUM Badminton Kbh.",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "KFUM Badminton Kbh.",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "KFUM Badminton Kbh. 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "Lyngby",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "Lyngby 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2012,
+    "opponent": "NBK Amager",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2012,
+    "opponent": "Sct. Jørgen Kbh.",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "SMASH",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "Sundby KFUM",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "Tono Kbh.",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "Valby BC",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "Valby BC",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2012,
+    "opponent": "Valby BC 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "Vanløse",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2012,
+    "opponent": "Vanløse",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2013,
+    "opponent": "Amager ABC",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2013,
+    "opponent": "BC37 Amager",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2013,
+    "opponent": "Charlottenlund",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2013,
+    "opponent": "Charlottenlund 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2013,
+    "opponent": "Charlottenlund 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2013,
+    "opponent": "Dragør",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2013,
+    "opponent": "Drive",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2013,
+    "opponent": "FKIF Frederiksberg",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2013,
+    "opponent": "FKIF Frederiksberg 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2013,
+    "opponent": "Frederiksberg",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2013,
+    "opponent": "Frederiksberg 3",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2013,
+    "opponent": "Hvidovre",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2013,
+    "opponent": "Hvidovre 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2013,
+    "opponent": "Hvidovre HB2000 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2013,
+    "opponent": "KBK Kbh.",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2013,
+    "opponent": "KBK Kbh. 2",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2013,
+    "opponent": "KFUM Badminton Kbh.",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2013,
+    "opponent": "KMB2010",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2013,
+    "opponent": "KMB2010 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2013,
+    "opponent": "Lyngby",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2013,
+    "opponent": "Lyngby 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2013,
+    "opponent": "Sct. Jørgen Kbh.",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2013,
+    "opponent": "Skovshoved 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2013,
+    "opponent": "SMASH",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2013,
+    "opponent": "Sundby KFUM",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2013,
+    "opponent": "Tono Kbh.",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2013,
+    "opponent": "Valby BC",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2013,
+    "opponent": "Valby BC 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "Amager ABC",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "BC37 Amager",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "BC37 Amager",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "BK36 Kbh.",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "Charlottenlund",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "Charlottenlund",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "Charlottenlund 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "Charlottenlund 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "Charlottenlund 3",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "Charlottenlund 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "Dragør",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "Dragør",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "Dragør 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2014,
+    "opponent": "Drive",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "Drive",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "FKIF Frederiksberg",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "FKIF Frederiksberg",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "FKIF Frederiksberg 2",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2014,
+    "opponent": "FKIF Frederiksberg 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2014,
+    "opponent": "Frederiksberg",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "Hvidovre",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "Hvidovre HB2000",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "KBK Kbh. 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "KBK Kbh. 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "KBK Kbh. 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "KFUM Badminton Kbh.",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2014,
+    "opponent": "KFUM Badminton Kbh.",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "KFUM Badminton Kbh. 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "KMB2010 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "Lyngby 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "Lyngby 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2014,
+    "opponent": "Lyngby 5",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "NBK Amager",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "Rødovre",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "Rødovre",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "Skovshoved 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "Skovshoved 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "Sundby KFUM",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2014,
+    "opponent": "Tono Kbh.",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "Tono Kbh.",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2014,
+    "opponent": "Valby BC",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "Valby BC 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2014,
+    "opponent": "Vanløse",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2015,
+    "opponent": "Amager ABC",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Amager ABC",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2015,
+    "opponent": "Amager ABC 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "BC KVIK Kbh. 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "BC37 Amager",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2015,
+    "opponent": "BC37 Amager",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "CBS Sport Badminton",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Charlottenlund",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Charlottenlund",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Charlottenlund 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Dragør",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Dragør 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Dragør 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Drive",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Drive 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "FKIF Frederiksberg",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "FKIF Frederiksberg 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2015,
+    "opponent": "Frederiksberg",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Frederiksberg 5",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Frederiksberg 6",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Gentofte",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Gentofte",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Hvidovre 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Hvidovre 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Hvidovre HB2000",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Hvidovre HB2000",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Islands Brygge",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2015,
+    "opponent": "KBK Kbh. 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "KFUM Badminton Kbh.",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "KMB2010",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "KMB2010 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Lyngby 2",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2015,
+    "opponent": "Rødovre/KFUM KBH 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Skovshoved 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Skovshoved 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Tono Kbh. 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Valby BC",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Valby BC",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Valby BC 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Vanløse",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2015,
+    "opponent": "Vanløse",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2015,
+    "opponent": "Vanløse 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Amager ABC 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2016,
+    "opponent": "Amager ABC 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "BC37 Amager 4",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "BKPOINT Kbh.",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "CBS Sport Badminton",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Charlottenlund",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Charlottenlund 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2016,
+    "opponent": "Charlottenlund 5",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Dalum Hjallese BK 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Dragør",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Dragør 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Dragør 3",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Drive 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Drive 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Dybbøl 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Frederiksberg",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Gentofte",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Hadsund 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Højbjerg 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Hvidovre 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Hvidovre HB2000",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Islands Brygge",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "KBK Kbh.",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2016,
+    "opponent": "KBK Kbh. 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "KBK Kbh. 6",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "KFUM Badminton Kbh.",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "KMB2010",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Køge 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "KSI Badmintonklub Kbh. 4",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Middelfart 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "NBK Amager",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "NBK Amager",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Ørslevkloster 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Rødovre",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Rødovre 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Rødovre/KFUM KBH 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "SAIF Kbh. 10",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "SAIF Kbh. 11",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Skovshoved 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Solrød Strand 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Team 7000 Fredericia 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Tingbjerg 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Tono Kbh.",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Valby BC",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Valby BC 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2016,
+    "opponent": "Valby BC 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Vanløse",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Vanløse 5",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Viborg 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2016,
+    "opponent": "Vorup FB 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Amager ABC",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Amager ABC",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Badminton Roskilde 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Charlottenlund",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2017,
+    "opponent": "Charlottenlund 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Charlottenlund 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Charlottenlund 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Dragør 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Drive 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2017,
+    "opponent": "Drive 3",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "FKIF Frederiksberg",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2017,
+    "opponent": "Frederiksberg",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Gentofte",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Greve 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Greve 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Herlev/Hjorten 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Hillerød 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Holstebro 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Holte 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Hvidovre 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Hvidovre HB2000",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Hvidovre HB2000",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Islands Brygge",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2017,
+    "opponent": "KBK Kbh. 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Lillerød 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Lyngby 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "NBK Amager",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Odense OBK 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Skovshoved 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Slagelse/Gørlev Badminton 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Solrød Strand 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Team Storstrøm 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Tono Kbh.",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Valby BC",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2017,
+    "opponent": "Valby BC 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Valby BC 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Vanløse",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2017,
+    "opponent": "Vanløse 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2017,
+    "opponent": "Viby J 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2018,
+    "opponent": "Charlottenlund 1",
+    "error": "Internal server error",
+    "count": 5
+  },
+  {
+    "season": 2018,
+    "opponent": "Dragør 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2018,
+    "opponent": "Drive 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2018,
+    "opponent": "Drive 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2018,
+    "opponent": "FKIF Frederiksberg 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2018,
+    "opponent": "FKIF Frederiksberg 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2018,
+    "opponent": "Gentofte 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2018,
+    "opponent": "Herlev/Hjorten 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2018,
+    "opponent": "Herlufsholm 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2018,
+    "opponent": "Holbæk 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2018,
+    "opponent": "Hvidovre 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2018,
+    "opponent": "Islands Brygge 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2018,
+    "opponent": "KBK Kbh. 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2018,
+    "opponent": "KBK Kbh. 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2018,
+    "opponent": "KMB2010 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2018,
+    "opponent": "Lillerød 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2018,
+    "opponent": "Lyngby 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2018,
+    "opponent": "Lyngby 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2018,
+    "opponent": "Skælskør 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2018,
+    "opponent": "Skovshoved 3",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2018,
+    "opponent": "Skovshoved 6",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2018,
+    "opponent": "Team Storstrøm 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2018,
+    "opponent": "Valby BC 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2018,
+    "opponent": "Valby BC 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "Allinge-S.G. Badminton 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "BC KVIK Kbh. 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "BK36 Kbh. 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "Charlottenlund 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "Dragør 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "Drive 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "FKIF Frederiksberg 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "FKIF Frederiksberg 3",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "Frederiksberg 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "Frederiksberg 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "Gentofte 3",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "Gentofte Motionist BK 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2019,
+    "opponent": "Hvidovre 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "Hvidovre 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "Hvidovre 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2019,
+    "opponent": "Hvidovre 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "Hvidovre HB2000 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "Islands Brygge 1",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2019,
+    "opponent": "KBK Kbh. 1",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2019,
+    "opponent": "KBK Kbh. 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "KMB2010 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "KMB2010 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "KMB2010 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "KMB2010 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "KSI Badmintonklub Kbh. 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "KSI Badmintonklub Kbh. 3",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "Lyngby 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "Posten Kbh. 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "Rødovre 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "SAIF Kbh. 8",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "Tingbjerg 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "Tingbjerg 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "Valby BC 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "Valby BC 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "Valby BC 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "Vanløse 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2019,
+    "opponent": "Vordingborg",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Could not find any players on match",
+    "error": null,
+    "count": 3
+  },
+  {
+    "season": 2020,
+    "opponent": "Badminton i indre By 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "BC37 Amager 1",
+    "error": "Could not find any players on match",
+    "count": 3
+  },
+  {
+    "season": 2020,
+    "opponent": "BC37 Amager 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "BC37 Amager 4",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "BC37 Amager 6",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "BK36 Kbh. 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "BK36 Kbh. 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "CBS Sport Badminton 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Charlottenlund 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Charlottenlund 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Charlottenlund 2",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2020,
+    "opponent": "Charlottenlund 3",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Dragør 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Dragør 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2020,
+    "opponent": "Dragør 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Dragør 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2020,
+    "opponent": "Drive 1",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2020,
+    "opponent": "Drive 2",
+    "error": "Could not find any players on match",
+    "count": 4
+  },
+  {
+    "season": 2020,
+    "opponent": "Drive 3",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "FKIF Frederiksberg 1",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2020,
+    "opponent": "FKIF Frederiksberg 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "FKIF Frederiksberg 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "FKIF Frederiksberg 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "FKIF Frederiksberg 3",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "FKIF Frederiksberg 4",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "FKIF/VBC 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Frederiksberg 1",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2020,
+    "opponent": "Frederiksberg 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Frederiksberg 2",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2020,
+    "opponent": "Frederiksberg 4",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Gentofte 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Gentofte 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Gentofte 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Gentofte 3",
+    "error": "Could not find any players on match",
+    "count": 3
+  },
+  {
+    "season": 2020,
+    "opponent": "Gentofte 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Gentofte 4",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Gentofte 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Gladsaxe Søborg 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Holte 3",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Humlebæk",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Hvidovre 1",
+    "error": "Could not find any players on match",
+    "count": 4
+  },
+  {
+    "season": 2020,
+    "opponent": "Hvidovre 2",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2020,
+    "opponent": "Hvidovre 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Hvidovre HB2000",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Hvidovre HB2000 1",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2020,
+    "opponent": "Hvidovre HB2000 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Hvidovre HB2000 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Hvidovre HB2000 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Islands Brygge 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2020,
+    "opponent": "Islands Brygge 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "KBK Kbh. 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "KBK Kbh. 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2020,
+    "opponent": "KBK Kbh. 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "KBK Kbh. 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "KBK Kbh. 3",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "KBK Kbh. 5",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "KFUM Badminton Kbh. 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "KMB2010 2",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2020,
+    "opponent": "KMB2010 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "KMB2010 3",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Lyngby 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Lyngby 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Lyngby 2",
+    "error": "Could not find any players on match",
+    "count": 3
+  },
+  {
+    "season": 2020,
+    "opponent": "Lyngby 3",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2020,
+    "opponent": "Lyngby 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Lyngby 4",
+    "error": "Could not find any players on match",
+    "count": 3
+  },
+  {
+    "season": 2020,
+    "opponent": "NBK Amager 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "ØBK/BK Kbh. 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "PI København 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Posten Kbh. 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Rødovre 1",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2020,
+    "opponent": "Rødovre 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Rødovre/KFUM KBH 1",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2020,
+    "opponent": "Rødovre/KFUM KBH 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Ryparken 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "SAIF Kbh. 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "SAIF Kbh. 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "SAIF Kbh. 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Sct. Jørgen Kbh. 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Skovshoved 1",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2020,
+    "opponent": "Skovshoved 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Skovshoved 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Skovshoved 5",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Søvang 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Team GSG",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Tingbjerg 1",
+    "error": "Could not find any players on match",
+    "count": 3
+  },
+  {
+    "season": 2020,
+    "opponent": "Tingbjerg 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Valby BC 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Valby BC 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Valby BC 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2020,
+    "opponent": "Vanløse 1",
+    "error": "Could not find any players on match",
+    "count": 2
+  },
+  {
+    "season": 2020,
+    "opponent": "Vanløse 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2020,
+    "opponent": "Vanløse 3",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Badminton Esbjerg 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2021,
+    "opponent": "BC37 Amager 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2021,
+    "opponent": "BC37 Amager 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2021,
+    "opponent": "BC37 Amager 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "BC37 Amager 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "BK36 Kbh. 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Charlottenlund 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Charlottenlund 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2021,
+    "opponent": "Dragør 1",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2021,
+    "opponent": "Dragør 2",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2021,
+    "opponent": "Drive 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Drive 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "FKIF Frederiksberg 1",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2021,
+    "opponent": "FKIF Frederiksberg 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2021,
+    "opponent": "FKIF/VBC 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Frederiksberg 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2021,
+    "opponent": "Frederiksberg 2",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2021,
+    "opponent": "Gentofte 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Gentofte 3",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Gentofte 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Hillerød 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Hjørring 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Hvidovre 1",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2021,
+    "opponent": "Hvidovre 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Hvidovre 3",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2021,
+    "opponent": "Hvidovre 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Hvidovre HB2000 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2021,
+    "opponent": "Hvidovre HB2000 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Islands Brygge 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2021,
+    "opponent": "Islands Brygge 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Jernløse 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2021,
+    "opponent": "KBK Kbh. 1",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2021,
+    "opponent": "KBK Kbh. 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "KBK Kbh. 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2021,
+    "opponent": "KFUM Badminton Kbh. 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "KMB2010 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "KMB2010 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "KMB2010 4",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Lejre 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Lyngby 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Lyngby 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Lyngby 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Lyngby 4",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Lyngby 5",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Næstved/Herlufsholm 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "NBK Amager 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "NBK Amager 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2021,
+    "opponent": "Nordbyens Badmintonklub",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Nykøbing F 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "PI København 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Ringsted 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Rødovre 1",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2021,
+    "opponent": "Ryparken 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "SAIF Kbh. 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Skælskør 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Skovshoved 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Skovshoved 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2021,
+    "opponent": "Skovshoved 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Skovshoved 6",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Solrød Strand 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Valby BC 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2021,
+    "opponent": "Valby BC 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Vanløse 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Vanløse 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2021,
+    "opponent": "Vanløse 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2021,
+    "opponent": "Vejle 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2021,
+    "opponent": "Viby J 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "Aarhus AB 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "abc Aalborg 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "Badminton i indre By 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "BC37 Amager 2",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2022,
+    "opponent": "BC37 Amager 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "BC37 Amager 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "BK36 Kbh. 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "BK36 Kbh. 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "BK36 Kbh. 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "Børkop 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "Charlottenlund 2",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2022,
+    "opponent": "Dalum Hjallese BK 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "Dragør",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "Dragør 1",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2022,
+    "opponent": "Drive 1",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2022,
+    "opponent": "Drive 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "FKIF Frederiksberg 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "FKIF Frederiksberg 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "FKIF Frederiksberg 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "Frederiksberg 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "Frederiksberg 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "Gentofte 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "Gentofte 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "Gentofte 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "Gentofte 5",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "Gudum Nissum IF 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "Hjørring 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "Horsens 1",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2022,
+    "opponent": "Hørsholm 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "Humlebæk 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "Hvidovre 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "Hvidovre 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "Hvidovre 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "Islands Brygge 1",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2022,
+    "opponent": "Islands Brygge 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "Islands Brygge 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "Jernløse 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "Jernløse/Sorø 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "KBK Kbh. 1",
+    "error": "Internal server error",
+    "count": 6
+  },
+  {
+    "season": 2022,
+    "opponent": "KBK Kbh. 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "KBK Kbh. 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "KBK Kbh. 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "KMB2010 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "KMB2010 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "KMB2010 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "KMB2010 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "Korup 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "Lillerød 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "Lyngby 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "Lyngby 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "Lyngby 3",
+    "error": "Internal server error",
+    "count": 5
+  },
+  {
+    "season": 2022,
+    "opponent": "Lystrup 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "NBK Amager 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "NBK Amager 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "NBK Amager 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "Nykøbing F 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "Posten Kbh. 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "Rødovre 1",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2022,
+    "opponent": "SAIF Kbh. 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "Skovshoved 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "Skovshoved 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "Skovshoved 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "Skovshoved 5",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "Skovshoved 5",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "Skovshoved 8",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "Skovshoved 9",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "Slangerup 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "Valby BC 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "Valby BC 2",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2022,
+    "opponent": "Vanløse 1",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2022,
+    "opponent": "Vanløse 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "Vanløse 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2022,
+    "opponent": "Vejlby Risskov 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2022,
+    "opponent": "Viborg 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "Badminton i indre By 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "BC37 Amager 1",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2023,
+    "opponent": "BC37 Amager 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2023,
+    "opponent": "BC37 Amager 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2023,
+    "opponent": "BC37 Amager 4",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2023,
+    "opponent": "BK36 Kbh. 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "BK36 Kbh. 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "BKPOINT Kbh. 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "Dragør 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2023,
+    "opponent": "Drive 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2023,
+    "opponent": "Drive 2",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2023,
+    "opponent": "Drive 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2023,
+    "opponent": "FKIF Frederiksberg 1",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2023,
+    "opponent": "FKIF Frederiksberg 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "FKIF Frederiksberg 4",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2023,
+    "opponent": "Frederiksberg 1",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2023,
+    "opponent": "Frederiksberg 2",
+    "error": "Internal server error",
+    "count": 6
+  },
+  {
+    "season": 2023,
+    "opponent": "Frederiksberg 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "Frederikssund 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "Gentofte 1",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2023,
+    "opponent": "Gentofte 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2023,
+    "opponent": "Gentofte 7",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "Gentofte 8",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "Gladsaxe Søborg 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "Glostrup 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2023,
+    "opponent": "Gørlev 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "Hammel 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "Horsens 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "Hvidovre 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "Hvidovre 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "Hvidovre 4",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2023,
+    "opponent": "Hvidovre HB2000 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "Islands Brygge 1",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2023,
+    "opponent": "Islands Brygge 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "KBK Kbh. 1",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2023,
+    "opponent": "KBK Kbh. 4",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2023,
+    "opponent": "KMB2010 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2023,
+    "opponent": "KMB2010 4",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2023,
+    "opponent": "Lyngby 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "Lyngby 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "Lyngby 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2023,
+    "opponent": "Lyngby 4",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "Lyngby 4",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2023,
+    "opponent": "Lystrup/TMIF 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "NBK Amager 1",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2023,
+    "opponent": "NBK Amager 2",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2023,
+    "opponent": "Pan Kbh. 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "Randers BK 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "Rødovre 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2023,
+    "opponent": "Rødovre 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "Skovshoved 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2023,
+    "opponent": "Skovshoved 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2023,
+    "opponent": "Skovshoved 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "Skovshoved 5",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "Skovshoved 6",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "Solbjerg 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "Solrød Strand 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2023,
+    "opponent": "Stubbekøbing 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "Team Træf 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "Valby BC 1",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2023,
+    "opponent": "Vallensbæk 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2023,
+    "opponent": "Vanløse 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2023,
+    "opponent": "Vanløse 2",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2023,
+    "opponent": "Vanløse 3",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2023,
+    "opponent": "Vanløse 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2023,
+    "opponent": "Viby J 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Internal server error",
+    "error": null,
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Aalborg Triton 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Aarhus AB 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Badminton Esbjerg 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2024,
+    "opponent": "Badminton i indre By 1",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Badminton i indre By 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Badminton Roskilde 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Badminton Roskilde 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "BC37 Amager 1",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2024,
+    "opponent": "BC37 Amager 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2024,
+    "opponent": "BC37 Amager 3",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2024,
+    "opponent": "BC37 Amager 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "BK36 Kbh. 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Charlottenlund 1",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2024,
+    "opponent": "Charlottenlund 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2024,
+    "opponent": "Charlottenlund 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Dragør 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Dragør 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Drive 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2024,
+    "opponent": "Drive 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Drive 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2024,
+    "opponent": "Drive 4",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2024,
+    "opponent": "Drive 5",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Dybbøl 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Dybbøl 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "FKIF Frederiksberg 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "FKIF Frederiksberg 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "FKIF Frederiksberg 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Frederiksberg",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Frederiksberg 1",
+    "error": "Internal server error",
+    "count": 6
+  },
+  {
+    "season": 2024,
+    "opponent": "Frederiksberg 2",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2024,
+    "opponent": "Frederiksberg 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Frem - Hellebæk 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Gentofte 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2024,
+    "opponent": "Gentofte 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Gentofte 3",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2024,
+    "opponent": "Gentofte 4",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2024,
+    "opponent": "Gladsaxe Søborg 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Gladsaxe Søborg 4",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2024,
+    "opponent": "Glostrup 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2024,
+    "opponent": "Grindsted BK 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Herlev/Hjorten 5",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Herning 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "HOG Badminton",
+    "error": "Hinnerup, Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Holte 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Hørsholm 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Humlebæk",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Humlebæk 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Humlebæk 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Hvidovre 1",
+    "error": "Internal server error",
+    "count": 5
+  },
+  {
+    "season": 2024,
+    "opponent": "Hvidovre 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2024,
+    "opponent": "Hvidovre 3",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2024,
+    "opponent": "Hvidovre HB2000",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Islands Brygge 1",
+    "error": "Internal server error",
+    "count": 5
+  },
+  {
+    "season": 2024,
+    "opponent": "Islands Brygge 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Karlslunde 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2024,
+    "opponent": "KBK Kbh. 1",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2024,
+    "opponent": "KBK Kbh. 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2024,
+    "opponent": "KBK Kbh. 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "KMB2010 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2024,
+    "opponent": "KMB2010 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2024,
+    "opponent": "KMB2010 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "KMB2010 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "KMB2010 5",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Kolding BK",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Kolding BK 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Kolding BK 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Lyngby 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2024,
+    "opponent": "Lyngby 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2024,
+    "opponent": "Lyngby 5",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2024,
+    "opponent": "NBK Amager",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "NBK Amager 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2024,
+    "opponent": "NBK Amager 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Ølstykke 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Posten Kbh.",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Rødovre 1",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2024,
+    "opponent": "Rødovre 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Skovshoved 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2024,
+    "opponent": "Skovshoved 2",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2024,
+    "opponent": "Skovshoved 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Skovshoved 4",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2024,
+    "opponent": "Slangerup 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Solbjerg 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Støvring 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Svenstrup 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Team Slagelse/Skælskør 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Team Vejleå 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2024,
+    "opponent": "Team-Work Nordjylland Bje... 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Valby BC 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2024,
+    "opponent": "Valby BC 2",
+    "error": "Internal server error",
+    "count": 5
+  },
+  {
+    "season": 2024,
+    "opponent": "Vallensbæk 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2024,
+    "opponent": "Vanløse",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Vanløse 1",
+    "error": "Internal server error",
+    "count": 5
+  },
+  {
+    "season": 2024,
+    "opponent": "Vanløse 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2024,
+    "opponent": "Vindinge 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2025,
+    "opponent": "Auning 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Badminton Esbjerg 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Badminton Roskilde 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "BC37 Amager 1",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2025,
+    "opponent": "BC37 Amager 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "BC37 Amager 3",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2025,
+    "opponent": "BC37 Amager 4",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2025,
+    "opponent": "BC37 Amager 5",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Birkerød BK13",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Birkerød BK13 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "BK36 Kbh. 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2025,
+    "opponent": "Charlottenlund 1",
+    "error": "Internal server error",
+    "count": 7
+  },
+  {
+    "season": 2025,
+    "opponent": "Charlottenlund 2",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2025,
+    "opponent": "Charlottenlund 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2025,
+    "opponent": "Dragør 1",
+    "error": "Internal server error",
+    "count": 7
+  },
+  {
+    "season": 2025,
+    "opponent": "Dragør 2",
+    "error": "Internal server error",
+    "count": 6
+  },
+  {
+    "season": 2025,
+    "opponent": "Dragør 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2025,
+    "opponent": "Drive 1",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2025,
+    "opponent": "Drive 2",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2025,
+    "opponent": "Drive 3",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2025,
+    "opponent": "Drive 4",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2025,
+    "opponent": "Drive 5",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2025,
+    "opponent": "Drive 6",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2025,
+    "opponent": "Farum 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "FKIF Frederiksberg 1",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2025,
+    "opponent": "FKIF Frederiksberg 2",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2025,
+    "opponent": "Frederiksberg 1",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2025,
+    "opponent": "Frederiksberg 2",
+    "error": "Internal server error",
+    "count": 6
+  },
+  {
+    "season": 2025,
+    "opponent": "Frederiksberg 4",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2025,
+    "opponent": "Gentofte 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Gentofte 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2025,
+    "opponent": "Gentofte 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Gladsaxe Søborg 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Gladsaxe Søborg 4",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2025,
+    "opponent": "Glostrup 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Hadsten BK 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Herlev/Hjorten 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Herlev/Hjorten 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2025,
+    "opponent": "Herlev/Hjorten 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Herning 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Hillerød 1",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2025,
+    "opponent": "Højbjerg",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Højbjerg 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Holbæk 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Hørning IF 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Hørsholm 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2025,
+    "opponent": "Hørsholm 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Hvidovre 1",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2025,
+    "opponent": "Hvidovre 2",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2025,
+    "opponent": "Hvidovre 3",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2025,
+    "opponent": "Hvidovre 4",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2025,
+    "opponent": "Hvidovre HB2000 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Ikast 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Islands Brygge 1",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2025,
+    "opponent": "Islands Brygge 2",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2025,
+    "opponent": "Islands Brygge 3",
+    "error": "Internal server error",
+    "count": 6
+  },
+  {
+    "season": 2025,
+    "opponent": "Karlslunde 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "KBK Kbh. 1",
+    "error": "Internal server error",
+    "count": 5
+  },
+  {
+    "season": 2025,
+    "opponent": "KBK Kbh. 3",
+    "error": "Internal server error",
+    "count": 7
+  },
+  {
+    "season": 2025,
+    "opponent": "KBK Kbh. 4",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "KMB2010 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "KMB2010 2",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2025,
+    "opponent": "KMB2010 3",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "KMB2010 4",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2025,
+    "opponent": "KMB2010 6",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "KMB2010 7",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Kolding BK 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2025,
+    "opponent": "Lyngby 1",
+    "error": "Internal server error",
+    "count": 3
+  },
+  {
+    "season": 2025,
+    "opponent": "Lyngby 2",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2025,
+    "opponent": "Lyngby 4",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2025,
+    "opponent": "Lyngby 5",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2025,
+    "opponent": "Lystrup 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2025,
+    "opponent": "NBK Amager 1",
+    "error": "Internal server error",
+    "count": 8
+  },
+  {
+    "season": 2025,
+    "opponent": "NBK Amager 2",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2025,
+    "opponent": "NBK Amager 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2025,
+    "opponent": "Nørhalne 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Nyborg 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Odense OBK 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Oksbøl Badminton Klub 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Rødovre 1",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2025,
+    "opponent": "SAIF Kbh. 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Sdr. Hygum 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Skødstrup 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Skovshoved 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Skovshoved 2",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2025,
+    "opponent": "Skovshoved 3",
+    "error": "Internal server error",
+    "count": 5
+  },
+  {
+    "season": 2025,
+    "opponent": "Skovshoved 4",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2025,
+    "opponent": "Slangerup 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Solrød Strand 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Solrød Strand 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2025,
+    "opponent": "Solrød Strand 7",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Sorø 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Svenstrup 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Tarup-Pårup 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Tarup-Pårup 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Team Work Nordjylland abc... 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Tingbjerg 2",
+    "error": "Could not find any players on match",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Tranbjerg AIA 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Valby BC 1",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2025,
+    "opponent": "Valby BC 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2025,
+    "opponent": "Valby BC 3",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2025,
+    "opponent": "Vallensbæk 2",
+    "error": "Internal server error",
+    "count": 2
+  },
+  {
+    "season": 2025,
+    "opponent": "Vanløse 1",
+    "error": "Internal server error",
+    "count": 4
+  },
+  {
+    "season": 2025,
+    "opponent": "Vanløse 2",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "VBK‑Gistrup 1",
+    "error": "Internal server error",
+    "count": 1
+  },
+  {
+    "season": 2025,
+    "opponent": "Vinding SF 2",
+    "error": "Internal server error",
+    "count": 1
+  }
+]

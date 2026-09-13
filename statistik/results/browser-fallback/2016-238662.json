@@ -1,0 +1,21 @@
+{
+  "key": "2016:238662",
+  "season": 2016,
+  "matchId": 238662,
+  "teamName": "Gladsaxe Søborg 4",
+  "opponent": "KSI Badmintonklub Kbh. 4",
+  "ageGroupId": "1",
+  "leagueGroupId": "7643",
+  "roundDate": "2016-09-18",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7643,1,8,,238662,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2016-238662.json",
+  "verifiedAt": "2026-09-12T17:09:36.880Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "reverifiedAt": "2026-09-13T05:53:08.604Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7643,1,8,,238662,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN 2016/2017\nVis rækker\n\n\n4. Serie P2 Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t238662\nRunde\t2 18-09-2016\nTid\tlø 24-09-2016 13:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 4\nLene Sørensen\nsorensenlene@ymail.com\n29392379\nUdehold\tKSI Badmintonklub Kbh. 4\nAndreas Straarup\nastraarup@hotmail.com\n60958229\nResultat\t0-12\nPoint\t0-2\nAfgjort uden kamp (afbud/udeblivelse)\n\nIndberetningen er ikke endelig og kan ændres\n\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

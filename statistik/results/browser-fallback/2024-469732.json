@@ -1,0 +1,21 @@
+{
+  "key": "2024:469732",
+  "season": 2024,
+  "matchId": 469732,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Valby BC 2",
+  "ageGroupId": "18",
+  "leagueGroupId": "17100",
+  "roundDate": "2025-03-09",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2024,17100,1,8,,469732,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2024-469732.json",
+  "verifiedAt": "2026-09-12T16:49:35.017Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:47:27.355Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2024,17100,1,8,,469732,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH,BADSJ,DGI-NSJ,DGI-MVS U17/U19 2024/2025\nVis rækker\n\n\nU17/U19 D, 4600 (4 spillere) Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t469732\nRunde\t9 09-03-2025\nTid\tsø 09-03-2025 14:00\nSpillested\tRødovre Stadionhal\nElstedvej 40\n2610 Rødovre\nTelefon 36704515\nHjemmehold\tGladsaxe Søborg 1\nPia Lebeck Frederiksen\npia@lebeckfrederiksen.dk\n29938604\nUdehold\tValby BC 2\nAnders\nHovehove@hotmail.com\n30663862\nResultat\t6-0\nPoint\t4-0\n\tGladsaxe Søborg 1\tValby BC 2\t1\t2\t3\tVinder W.O.\n1. S\t\nHjalte Palmqvist\n\t\nKristine Eskesen Møller\n\t21 - 18\t21 - 13\t\t\n2. S\t\nJakob Lebeck Frederiksen\n\t\nAlberte Hove\n\t21 - 16\t21 - 2\t\t\n3. S\t\nJonas Felk Øster\n\t\nKarla Hummel Nathan\n\t21 - 18\t21 - 11\t\t\n4. S\t\nDavid Vad Chawes\n\t\nOlivia Napier-Rasmussen\n\t21 - 10\t21 - 10\t\t\n1. D\t\nHjalte Palmqvist\nDavid Vad Chawes\n\t\nKristine Eskesen Møller\nKarla Hummel Nathan\n\t25 - 23\t21 - 17\t\t\n2. D\t\nJonas Felk Øster\nJakob Lebeck Frederiksen\n\t\nOlivia Napier-Rasmussen\nAlberte Hove\n\t21 - 6\t21 - 4\t\t\n\n\nReserver\nGladsaxe Søborg 1\tValby BC 2\n\n\nDavid Vad Chawes\nfor Manya Bhardwaj\n\n\t\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

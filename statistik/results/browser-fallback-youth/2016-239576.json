@@ -1,0 +1,19 @@
+{
+  "key": "2016:239576",
+  "season": 2016,
+  "matchId": 239576,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Valby BC",
+  "ageGroupId": "3",
+  "leagueGroupId": "7668",
+  "roundDate": "2017-01-15",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7668,1,8,,239576,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2016-239576.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:26:10.340Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7668,1,8,,239576,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U11 2016/2017\nVis rækker\n\n\nU11 D (4) P1 Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t239576\nRunde\t5 15-01-2017\nTid\tlø 14-01-2017 10:00\nSpillested\tVBC-Hallen\nSkellet 30\n2500 Valby\nTelefon 36 46 98 88\nHjemmehold\tValby BC\nMaiken Christensen\nmaiken.chr@outlook.com\n51849805\nUdehold\tGladsaxe Søborg\nGregers Gorm\ngregersgorm@icloud.com\n22539966\nResultat\t2-4\nPoint\t0-3\n\tValby BC\tGladsaxe Søborg\t1\t2\t3\tVinder W.O.\n1. S\t\nJacob Christensen Breüner\n\t\nKasper Gorm\n\t19 - 21\t11 - 21\t\t\n2. S\t\nJulius Koefoed Savin\n\t\nLasse Bjerregaard Kirt\n\t12 - 21\t10 - 21\t\t\n3. S\t\nEigil Krintel Rohrberg\n\t\nRaz Matteo Palima\n\t11 - 21\t10 - 21\t\t\n4. S\t\nSofie Carlson Heindorff\n\t\nAnton Berner\n\t\t\t\tV\n1. D\t\nJacob Christensen Breüner\nEigil Krintel Rohrberg\n\t\nKasper Gorm\nLasse Bjerregaard Kirt\n\t14 - 21\t10 - 21\t\t\n2. D\t\nJulius Koefoed Savin\nSofie Carlson Heindorff\n\t\nAnton Berner\nRaz Matteo Palima\n\t\t\t\tV\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

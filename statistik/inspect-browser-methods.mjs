@@ -1,0 +1,1 @@
+const s=await (await fetch('https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/js')).text(); for(const n of ['SearchTournamentClass','GetTournamentEvents','SearchTournamentResults','SearchTournamentMatches','SearchTournamentInvitation']){const i=s.indexOf(n+':function'); console.log('\n'+s.slice(i,i+700));}

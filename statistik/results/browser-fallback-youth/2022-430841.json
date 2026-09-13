@@ -1,0 +1,19 @@
+{
+  "key": "2022:430841",
+  "season": 2022,
+  "matchId": 430841,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Lyngby 2",
+  "ageGroupId": "5",
+  "leagueGroupId": "15003",
+  "roundDate": "2023-02-05",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,15003,1,8,,430841,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2022-430841.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:18:51.994Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,15003,1,8,,430841,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2022/2023\nVis rækker\n\n\nU15 6400 4 Spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t430841\nRunde\t6 05-02-2023\nTid\tsø 05-02-2023 11:00\nSpillested\tGladsaxe ny Badmintonhal\nGladsaxevej 200\n2860 Søborg\nHjemmehold\tGladsaxe Søborg 1\nJens Møller\njks@hotmail.com\n20726242\nUdehold\tLyngby 2\nGitte Rosendal\nrosendal.gitte@gmail.com\n20800586\nResultat\t5-1\nPoint\t4-0\n\tGladsaxe Søborg 1\tLyngby 2\t1\t2\t3\tVinder W.O.\n1. S\t\nMalthe Baltzer\n\t\nLinnea Danielsen\n\t21 - 13\t21 - 18\t\t\n2. S\t\nNikolaj Thorslund Hindsbo\n\t\nBjørk Elting\n\t11 - 21\t19 - 21\t\t\n3. S\t\nAsk Unden\n\t\nNikoline Korsby Kofoed\n\t21 - 12\t21 - 14\t\t\n4. S\t\nSebastian Almeida Møller\n\t\nVictor Rosendal\n\t21 - 8\t21 - 10\t\t\n1. D\t\nMalthe Baltzer\nMads Baltzer\n\t\nBjørk Elting\nVictor Rosendal\n\t21 - 15\t8 - 21\t21 - 13\t\n2. D\t\nSebastian Almeida Møller\nNikolaj Thorslund Hindsbo\n\t\nLinnea Danielsen\nNikoline Korsby Kofoed\n\t20 - 22\t21 - 11\t25 - 23\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

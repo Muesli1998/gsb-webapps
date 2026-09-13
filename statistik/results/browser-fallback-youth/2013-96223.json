@@ -1,0 +1,19 @@
+{
+  "key": "2013:96223",
+  "season": 2013,
+  "matchId": 96223,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "Charlottenlund 3",
+  "ageGroupId": "5",
+  "leagueGroupId": "2690",
+  "roundDate": "2013-10-06",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2013,2690,1,8,,96223,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2013-96223.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:29:24.813Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2013,2690,1,8,,96223,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2013/2014\nVis rækker\n\n\nU15 Serie X3 Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t96223\nRunde\t3 06-10-2013\nTid\tsø 06-10-2013 15:00\nSpillested\tCBK-Hallen\nMaltegaardsvej 18\n2820 Gentofte\nTelefon 39 65 24 66\nHjemmehold\tCharlottenlund 3\nAnnemarie Varming\namvarming@gmail.com\n24779023\nUdehold\tGladsaxe Søborg 3\nAnne-Dorthe Sørensen\nans@regioner.dk\n11111111\nResultat\t4-2\nPoint\t2-0\n\tCharlottenlund 3\tGladsaxe Søborg 3\t1\t2\t3\tVinder W.O.\n1. S\t\nAugust Ikov\n\t\nOliver Frei\n\t11 - 21\t12 - 21\t\t\n2. S\t\nMarcus B Nøies\n\t\nLaura Friestrup-Jensen\n\t21 - 18\t21 - 16\t\t\n3. S\t\nFrederik Nagel\n\t\nSigurd Heinager Sørensen\n\t21 - 10\t21 - 12\t\t\n4. S\t\nChristian Rasmussen\n\t\nTheodor Peter Guttesen\n\t\t\t\tC\n1. D\t\nAugust Ikov\nChristian Rasmussen\n\t\nLaura Friestrup-Jensen\nOliver Frei\n\t21 - 16\t14 - 21\t17 - 21\t\n2. D\t\nMarcus B Nøies\nFrederik Nagel\n\t\nSigurd Heinager Sørensen\nTheodor Peter Guttesen\n\t\t\t\tC\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

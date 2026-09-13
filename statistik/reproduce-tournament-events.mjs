@@ -1,0 +1,3 @@
+const callbackcontextkey=process.env.SR_CALLBACK_CONTEXT; if(!callbackcontextkey) throw new Error('Set SR_CALLBACK_CONTEXT from a fresh VisResultater page');
+const body={callbackcontextkey,selecteventfunction:'',instance:'1',tournamentclassid:'115342',playerlistselectfunction:'',selectclassfunction:'',selectopenonly:false,clubid:0,adminclubid:0,selecteddisciplinecode:''};
+const r=await fetch('https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetTournamentEvents',{method:'POST',headers:{'content-type':'application/json; charset=utf-8'},body:JSON.stringify(body)}); console.log(r.status,(await r.text()).slice(0,4000));

@@ -1,0 +1,90 @@
+{
+  "season": 2016,
+  "groupId": "7685",
+  "status": "verified",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2016,7685,1,,,,1093,",
+  "retrievedAt": "2026-09-12T18:34:24.841Z",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U17/U19 2017/2018\nVis rækker\n\n\nU17/19 B (4) Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVUNDNE\tSCORE\tSÆT\tPOINT\n1\tHvidovre 2\t5\t5\t22-8\t46-23\t15\n2\tHvidovre HB2000\t5\t4\t19-12\t35-32\t11\n3\tAmager ABC\t5\t2\t15-16\t32-32\t7\n4\tDrive 3\t5\t2\t14-16\t31-31\t6\n5\tCharlottenlund 2\t5\t1\t11-19\t15-39\t3\n6\tValby BC 2\t5\t1\t10-20\t23-25\t3\n7\tGladsaxe Søborg 2 udgået\t0\t0\t0-0\t0-0\t0\n\nUdskriv | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+  "tables": [
+    [
+      [
+        "",
+        "FAQ Opret brugerkonto Log ind"
+      ]
+    ],
+    [
+      [
+        "#",
+        "HOLD",
+        "KAMPE",
+        "VUNDNE",
+        "SCORE",
+        "SÆT",
+        "POINT"
+      ],
+      [
+        "1",
+        "Hvidovre 2",
+        "5",
+        "5",
+        "22-8",
+        "46-23",
+        "15"
+      ],
+      [
+        "2",
+        "Hvidovre HB2000",
+        "5",
+        "4",
+        "19-12",
+        "35-32",
+        "11"
+      ],
+      [
+        "3",
+        "Amager ABC",
+        "5",
+        "2",
+        "15-16",
+        "32-32",
+        "7"
+      ],
+      [
+        "4",
+        "Drive 3",
+        "5",
+        "2",
+        "14-16",
+        "31-31",
+        "6"
+      ],
+      [
+        "5",
+        "Charlottenlund 2",
+        "5",
+        "1",
+        "11-19",
+        "15-39",
+        "3"
+      ],
+      [
+        "6",
+        "Valby BC 2",
+        "5",
+        "1",
+        "10-20",
+        "23-25",
+        "3"
+      ],
+      [
+        "7",
+        "Gladsaxe Søborg 2 udgået",
+        "0",
+        "0",
+        "0-0",
+        "0-0",
+        "0"
+      ]
+    ]
+  ]
+}

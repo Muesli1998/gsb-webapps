@@ -1,0 +1,19 @@
+{
+  "key": "2023:452203",
+  "season": 2023,
+  "matchId": 452203,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Drive 2",
+  "ageGroupId": "5",
+  "leagueGroupId": "16091",
+  "roundDate": "2024-01-14",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,16091,1,8,,452203,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2023-452203.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:15:50.967Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,16091,1,8,,452203,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2023/2024\nVis rækker\n\n\nU15 - 4200 4 spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t452203\nRunde\t6 14-01-2024\nTid\tsø 14-01-2024 10:30\nSpillested\tVanløse Hallerne, hal 2\nHirtshalsvej 6C\n2720 Vanløse\nTelefon 38 71 55 05\nHjemmehold\tGladsaxe Søborg 2\nPer Martin Palmqvist\npermartin76@gmail.com\n20663335\nUdehold\tDrive 2\nAnne Gro Jensen\nannegro-msn@hotmail.com\n61604059\nResultat\t5-1\nPoint\t4-0\n\tGladsaxe Søborg 2\tDrive 2\t1\t2\t3\tVinder W.O.\n1. S\t\nKonrad Kunckel\n\t\nLeonardo Mouritsen\n\t21 - 16\t21 - 12\t\t\n2. S\t\nHjalte Palmqvist\n\t\nRasmus Villum Jensen\n\t21 - 19\t19 - 21\t17 - 21\t\n3. S\t\nEhan Shadat\n\t\nJulius Stidsen\n\t21 - 8\t21 - 6\t\t\n4. S\t\nRasmus Kimer Fogtmann\n\t\nChristianTodos\n\t21 - 17\t21 - 7\t\t\n1. D\t\nHjalte Palmqvist\nKonrad Kunckel\n\t\nLeonardo Mouritsen\nRasmus Villum Jensen\n\t21 - 17\t21 - 12\t\t\n2. D\t\nRasmus Kimer Fogtmann\nEhan Shadat\n\t\nChristianTodos\nJulius Stidsen\n\t21 - 7\t21 - 10\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

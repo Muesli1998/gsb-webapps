@@ -1,0 +1,21 @@
+{
+  "key": "2024:469693",
+  "season": 2024,
+  "matchId": 469693,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Gentofte 3",
+  "ageGroupId": "18",
+  "leagueGroupId": "17100",
+  "roundDate": "2024-10-27",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2024,17100,1,8,,469693,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2024-469693.json",
+  "verifiedAt": "2026-09-12T16:48:44.370Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:47:10.643Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2024,17100,1,8,,469693,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH,BADSJ,DGI-NSJ,DGI-MVS U17/U19 2024/2025\nVis rækker\n\n\nU17/U19 D, 4600 (4 spillere) Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t469693\nRunde\t3 27-10-2024\nTid\tlø 26-10-2024 12:00\nSpillested\tGBK Hallen\nVed Stadion 4\n2820 Gentofte\nTelefon 39 68 01 59\nHjemmehold\tGentofte 3\nUlla Nordström Joensen\nulla_nordstrom@hotmail.com\n26137760\nUdehold\tGladsaxe Søborg 1\nPia Lebeck Frederiksen\npia@lebeckfrederiksen.dk\n29938604\nResultat\t2-4\nPoint\t1-3\n\tGentofte 3\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. S\t\nOscar Dehn Nørmark\n\t\nHjalte Palmqvist\n\t10 - 21\t11 - 21\t\t\n2. S\t\nJohan Kær Nielsen\n\t\nRasmus Kimer Fogtmann\n\t5 - 21\t7 - 21\t\t\n3. S\t\nDaniel Joensen\n\t\nJakob Lebeck Frederiksen\n\t6 - 21\t8 - 21\t\t\n4. S\t\nMikkel Avnbøg\n\t\nJonas Felk Øster\n\t21 - 14\t21 - 14\t\t\n1. D\t\nOscar Dehn Nørmark\nJohan Kær Nielsen\n\t\nHjalte Palmqvist\nRasmus Kimer Fogtmann\n\t11 - 21\t11 - 21\t\t\n2. D\t\nDaniel Joensen\nMikkel Avnbøg\n\t\nManya Bhardwaj\nElena Shojaei\n\t21 - 12\t21 - 15\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

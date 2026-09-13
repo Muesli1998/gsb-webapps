@@ -1,0 +1,21 @@
+{
+  "key": "2015:193743",
+  "season": 2015,
+  "matchId": 193743,
+  "teamName": "Gladsaxe Søborg 4",
+  "opponent": "Frederiksberg 6",
+  "ageGroupId": "1",
+  "leagueGroupId": "6019",
+  "roundDate": "2016-03-06",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6019,1,8,,193743,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2015-193743.json",
+  "verifiedAt": "2026-09-12T17:10:00.571Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "reverifiedAt": "2026-09-13T05:53:49.632Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6019,1,8,,193743,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN 2015/2016\nVis rækker\n\n\n4. serie P1 Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t193743\nRunde\t7 06-03-2016\nTid\tlø 12-03-2016 12:15\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 4\nLene Sørensen\nsorensenlene@ymail.com\n29392379\nUdehold\tFrederiksberg 6\nFBK\nfbk@fbk-hal.dk\n51789134\nResultat\t12-0\nPoint\t2-0\nAfgjort uden kamp (afbud/udeblivelse)\n\nIndberetningen er ikke endelig og kan ændres\n\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

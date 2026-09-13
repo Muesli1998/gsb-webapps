@@ -1,0 +1,19 @@
+{
+  "key": "2020:395199",
+  "season": 2020,
+  "matchId": 395199,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Dragør 1",
+  "ageGroupId": "2",
+  "leagueGroupId": "13487",
+  "roundDate": "2020-12-06",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13487,1,8,,395199,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2020-395199.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:22:11.584Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13487,1,8,,395199,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U09 2020/2021\nVis rækker\n\n\nU09 2500 4 Spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t395199\nRunde\t3 06-12-2020\nTid\tsø 06-12-2020 10:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tDragør 1\nCamilla Suhr\ncamillasuhr@gmail.com\n22549977\nUdehold\tGladsaxe Søborg 2\nAnders Leth-Epsensen\nandersle27@hotmail.com\n22397778\nResultat\t5-1\nPoint\t3-0\n\tDragør 1\tGladsaxe Søborg 2\t1\t2\t3\tVinder W.O.\n1. S\t\nChristian Suhr\n\t\nZayn Bhuiya\n\t21 - 1\t21 - 8\t\t\n2. S\t\nAxel Emil Fogelstrøm\n\t\nChastine Christiansen\n\t21 - 8\t21 - 12\t\t\n3. S\t\nVillads Geertsen\n\t\nJonas P. Hamann\n\t24 - 22\t21 - 19\t\t\n4. S\t\nArthur Jensen\n\t\nMarius Steenstrup Leth-Espensen\n\t12 - 21\t13 - 21\t\t\n1. D\t\nChristian Suhr\nAxel Emil Fogelstrøm\n\t\nZayn Bhuiya\nMarius Steenstrup Leth-Espensen\n\t21 - 15\t21 - 10\t\t\n2. D\t\nArthur Jensen\nVillads Geertsen\n\t\nAnna Rudolph\nJonas P. Hamann\n\t21 - 16\t21 - 18\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

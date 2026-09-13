@@ -1,0 +1,99 @@
+{
+  "season": 2020,
+  "groupId": "13228",
+  "status": "verified",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2020,13228,1,,,,1093,",
+  "retrievedAt": "2026-09-12T18:33:43.384Z",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADDAN SEN 2020/2021\nVis rækker\n\n\nDanmarksserien Pulje 5\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVUNDNE\tSCORE\tSÆT\tPOINT\n1\tHumlebæk (N)\t4\t4\t42-10\t91-32\t54\n2\tNivå-Kokkedal\t4\t2\t29-23\t67-55\t36\n3\tHvidovre HB2000 (O)\t4\t2\t29-23\t69-58\t36\n4\tVanløse\t4\t2\t27-25\t65-63\t34\n5\tGladsaxe Søborg\t4\t2\t26-26\t58-59\t32\n6\tTeam GSG\t4\t3\t21-31\t52-73\t27\n7\tLyngby 3\t4\t1\t24-28\t60-66\t27\n8\tDragør 2 (O)\t4\t0\t10-42\t32-88\t10\n\nUdskriv | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+  "tables": [
+    [
+      [
+        "",
+        "FAQ Opret brugerkonto Log ind"
+      ]
+    ],
+    [
+      [
+        "#",
+        "HOLD",
+        "KAMPE",
+        "VUNDNE",
+        "SCORE",
+        "SÆT",
+        "POINT"
+      ],
+      [
+        "1",
+        "Humlebæk (N)",
+        "4",
+        "4",
+        "42-10",
+        "91-32",
+        "54"
+      ],
+      [
+        "2",
+        "Nivå-Kokkedal",
+        "4",
+        "2",
+        "29-23",
+        "67-55",
+        "36"
+      ],
+      [
+        "3",
+        "Hvidovre HB2000 (O)",
+        "4",
+        "2",
+        "29-23",
+        "69-58",
+        "36"
+      ],
+      [
+        "4",
+        "Vanløse",
+        "4",
+        "2",
+        "27-25",
+        "65-63",
+        "34"
+      ],
+      [
+        "5",
+        "Gladsaxe Søborg",
+        "4",
+        "2",
+        "26-26",
+        "58-59",
+        "32"
+      ],
+      [
+        "6",
+        "Team GSG",
+        "4",
+        "3",
+        "21-31",
+        "52-73",
+        "27"
+      ],
+      [
+        "7",
+        "Lyngby 3",
+        "4",
+        "1",
+        "24-28",
+        "60-66",
+        "27"
+      ],
+      [
+        "8",
+        "Dragør 2 (O)",
+        "4",
+        "0",
+        "10-42",
+        "32-88",
+        "10"
+      ]
+    ]
+  ]
+}

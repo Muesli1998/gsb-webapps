@@ -1,0 +1,19 @@
+{
+  "key": "2022:433615",
+  "season": 2022,
+  "matchId": 433615,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "FKIF Frederiksberg 1",
+  "ageGroupId": "3",
+  "leagueGroupId": "14989",
+  "roundDate": "2023-02-05",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14989,1,8,,433615,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2022-433615.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:16:55.579Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14989,1,8,,433615,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U11 2022/2023\nVis rækker\n\n\nU11 3600 4 Spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t433615\nRunde\t6 05-02-2023\nTid\tsø 05-02-2023 13:45\nSpillested\tKBK-Hallen\nKrausesvej 12\n2100 København Ø\nTelefon 35 38 72 92\nHjemmehold\tGladsaxe Søborg 2\nJakob Buron\njakob@buron.eu\n61303703\nUdehold\tFKIF Frederiksberg 1\nJesper Holme\njesper.holme@yahoo.com\n20609626\nResultat\t4-2\nPoint\t3-1\n\tGladsaxe Søborg 2\tFKIF Frederiksberg 1\t1\t2\t3\tVinder W.O.\n1. S\t\nLudvig Alexander Rosager Pedas\n\t\nGustav Westergaard Clausen\n\t22 - 20\t14 - 21\t14 - 21\t\n2. S\t\nSilas Buron\n\t\nFabian Bæk-Sørensen\n\t21 - 18\t22 - 20\t\t\n3. S\t\nAnton Aavang Arvidson\n\t\nBastian Bæk-Sørensen\n\t21 - 6\t21 - 14\t\t\n4. S\t\nErik Kragh Winther\n\t\n(Ikke fremmødt)\n\t\t\t\tG\n1. D\t\nErik Kragh Winther\nAnton Aavang Arvidson\n\t\nGustav Westergaard Clausen\nFabian Bæk-Sørensen\n\t15 - 21\t17 - 21\t\t\n2. D\t\nOliver Soon Nielsen\nSilas Buron\n\t\n(Ikke fremmødt)\nBastian Bæk-Sørensen\n\t\t\t\tG\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

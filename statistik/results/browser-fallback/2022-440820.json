@@ -1,0 +1,21 @@
+{
+  "key": "2022:440820",
+  "season": 2022,
+  "matchId": 440820,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Drive 2",
+  "ageGroupId": "18",
+  "leagueGroupId": "15334",
+  "roundDate": "2022-10-30",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,15334,1,8,,440820,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2022-440820.json",
+  "verifiedAt": "2026-09-12T16:54:07.512Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:48:52.725Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,15334,1,8,,440820,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U17/U19 2022/2023\nVis rækker\n\n\nU17/U19 5200 4 Spillere pulje 1 - Ny Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t440820\nRunde\t2 30-10-2022\nTid\tsø 30-10-2022 10:00\nSpillested\tMariendalshallen Hal A\nMariendalsvej 21 C\n2000 Frederiksberg\nTelefon 38 86 07 08\nHjemmehold\tDrive 2\nSune Levy Thomsen\nhit_me_sonnie@hotmail.com\n27293054\nUdehold\tGladsaxe Søborg 1\nAnn-Louise Bergstrøm\nannlouberg@gmail.com\n51609532\nResultat\t3-4\nPoint\t2-3\n\tDrive 2\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. S\t\nWilliam Dürr\n\t\nLinus Bergstrøm Hesselballe\n\t17 - 21\t17 - 21\t\t\n2. S\t\nMagnus Olsen\n\t\nAnton Krog Søbygaard\n\t15 - 21\t16 - 21\t\t\n3. S\t\nLaura Steen Mahler\n\t\nJacob Bloch Schousboe\n\t21 - 12\t12 - 21\t21 - 14\t\n4. S\t\nSamuel Borring Poulsen\n\t\nTobias Lerche\n\t21 - 11\t21 - 14\t\t\n1. D\t\nWilliam Dürr\nMagnus Olsen\n\t\nLinus Bergstrøm Hesselballe\nAnton Krog Søbygaard\n\t11 - 21\t8 - 21\t\t\n2. D\t\nSamuel Borring Poulsen\nLaura Steen Mahler\n\t\nJacob Bloch Schousboe\nTobias Lerche\n\t21 - 19\t21 - 8\t\t\n\nGolden Set\nD\t\nWilliam Dürr\nLaura Steen Mahler\n\t\nJacob Bloch Schousboe\nTobias Lerche\n\t\n20 - 22\n\t\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

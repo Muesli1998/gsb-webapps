@@ -1,0 +1,21 @@
+{
+  "key": "2022:427018",
+  "season": 2022,
+  "matchId": 427018,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Frederiksberg 1",
+  "ageGroupId": "17",
+  "leagueGroupId": "14882",
+  "roundDate": "2022-12-18",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14882,1,8,,427018,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2022-427018.json",
+  "verifiedAt": "2026-09-12T16:58:08.668Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:49:07.499Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14882,1,8,,427018,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+70 2022/2023\nVis rækker\n\n\nSEN+70 1.serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t427018\nRunde\t6 18-12-2022\nTid\tsø 11-12-2022 14:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 1\nLeif Hansen\n3xl@webspeed.dk\n20949568\nUdehold\tFrederiksberg 1\nSøren Berggreen\nberggreen@oncable.dk\n30383032\nResultat\t6-0\nPoint\t2-0\n\tGladsaxe Søborg 1\tFrederiksberg 1\t1\t2\t3\tVinder W.O.\n1. D\t\nSteen Kiorboe\nLeif Hansen\n\t\nDan Mogensen\nNiels Jørgen Madsen\n\t21 - 16\t21 - 11\t\t\n2. D\t\nIrene Sterlie\nSvend Valentin Rasmussen\n\t\nTonny Jensen\nJens Bekke\n\t21 - 18\t21 - 19\t\t\n3. D\t\nMogens Jørgensen\nMarcel Yulzari\n\t\nJørn Holm\nHeini Johannesen\n\t21 - 16\t21 - 17\t\t\n4. D\t\nMogens Jørgensen\nLeif Hansen\n\t\nNiels Jørgen Madsen\nJens Bekke\n\t21 - 11\t21 - 13\t\t\n5. D\t\nIrene Sterlie\nSteen Kiorboe\n\t\nTonny Jensen\nHeini Johannesen\n\t21 - 12\t21 - 6\t\t\n6. D\t\nSvend Valentin Rasmussen\nMarcel Yulzari\n\t\nJørn Holm\nDan Mogensen\n\t21 - 18\t21 - 9\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

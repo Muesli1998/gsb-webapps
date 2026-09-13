@@ -1,0 +1,21 @@
+{
+  "key": "2012:49665",
+  "season": 2012,
+  "matchId": 49665,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Vanløse",
+  "ageGroupId": "9",
+  "leagueGroupId": "1301",
+  "roundDate": "2012-12-02",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2012,1301,1,8,,49665,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2012-49665.json",
+  "verifiedAt": "2026-09-12T17:10:41.578Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "reverifiedAt": "2026-09-13T05:55:00.050Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2012,1301,1,8,,49665,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+40 2012/2013\nVis rækker\n\n\n40+ 2.Serie 40+ 2. Serie\nStilling\nVis alle kampe\n\nKampnr\t49665\nRunde\t3 02-12-2012\nTid\tsø 25-11-2012 13:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 2\nUdehold\tVanløse\nResultat\t12-0\nPoint\t2-0\nAfgjort uden kamp (afbud/udeblivelse)\n\nIndberetningen er ikke endelig og kan ændres\n\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

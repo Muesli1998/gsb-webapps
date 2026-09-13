@@ -1,0 +1,188 @@
+
+URL https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/js HTTP 200 LEN 49586
+registerNamespace(
+function(
+initializeBase(
+_get_path:function
+get_path(
+if (
+get_path(
+CheckLicense:function
+_invoke(
+_get_path(
+AddLicense:function
+_invoke(
+_get_path(
+ChangePaymentMethod:function
+_invoke(
+_get_path(
+AddRegistration:function
+_invoke(
+_get_path(
+AddRegistrationOptions:function
+_invoke(
+_get_path(
+GetRegistrationPlayerOptionsRequired:function
+_invoke(
+_get_path(
+AddRegistrationFromList:function
+_invoke(
+_get_path(
+DeleteRegistrationFromList:function
+_invoke(
+_get_path(
+GetOrderRegistrationList:function
+_invoke(
+_get_path(
+RemoveOrderItem:function
+_invoke(
+_get_path(
+CompleteOrder:function
+_invoke(
+_get_path(
+CancelOrder:function
+_invoke(
+_get_path(
+SearchPlayer:function
+_invoke(
+_get_path(
+SearchPlayerDuplicate:function
+_invoke(
+_get_path(
+SearchClub:function
+_invoke(
+_get_path(
+SearchClubInfo:function
+_invoke(
+_get_path(
+CreatePlayer:function
+_invoke(
+_get_path(
+AssignPlayer:function
+_invoke(
+_get_path(
+GetPlayerProfile:function
+_invoke(
+_get_path(
+GetPlayerRankingListPoints:function
+_invoke(
+_get_path(
+UnassignPlayer:function
+_invoke(
+_get_path(
+UnassignPlayerMulti:function
+_invoke(
+_get_path(
+MoveAssignPlayerMulti:function
+_invoke(
+_get_path(
+CheckAssignPlayer:function
+_invoke(
+_get_path(
+SearchTournamentClass:function
+Type.registerNamespace('SportsResults_WebApp.SportsResults.Components');
+SportsResults_WebApp.SportsResults.Components.WebService1=function() {
+SportsResults_WebApp.SportsResults.Components.WebService1.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+SportsResults_WebApp.SportsResults.Components.WebService1.prototype={
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return SportsResults_WebApp.S
+
+URL https://badmintonplayer.dk/sportsresults/components/tournamentcomponents/selecttournament.js?v=16 HTTP 200 LEN 8738
+SelectTournament(
+getElementById(
+getElementById(
+getElementById(
+getElementById(
+getElementById(
+if (
+function (
+SR_SetPositionAtElement(
+if (
+onshow(
+function (
+getElementById(
+if (
+onhide(
+function (
+getElementById(
+getElementById(
+if (
+onshow(
+function (
+getElementById(
+getElementById(
+if (
+onhide(
+function (
+ClosePopup(
+function(
+if (
+oncommit(
+if (
+getElementById(
+function (
+ClosePopup(
+if (
+if (
+get_SelectFunctionName(
+GetTournamentEvents(
+if (
+GetTournamentClassInfo(
+Commit(
+function (
+set_ClassInfo(
+if (
+if (
+SetSearchPlayerFromResult(
+if (
+for (
+get_PlayerID(
+if (
+get_IsDefaultPlayer(
+SetPlayer(
+set_IsDefaultPlayer(
+if (
+get_SearchPlayer(
+SetSearchPlayerFromResult(
+if (
+SelectEvent(
+function (
+if (
+if (
+Commit(
+get_TournamentClassID(
+Commit(
+function(
+function (
+Reset(
+set_AgeGroupID(
+set_Club(
+set_TournamentDate(
+set_LicenseOnly(
+SetSearchResult(
+function(
+function(
+function(
+function(
+function(
+function(
+function (
+if (
+function SelectTournament(instance, popupid, oncommit, searchplayer, showevents, autoupdateinfo, selectopenonly, clubid, adminclubid, showaspopup) {
+    this.instance = instance;
+    this.popupid = popupid;
+    this.oncommit = oncommit;
+    this.searchplayer = searchplayer;
+    this.showevents = showevents;
+    this.autoupdateinfo = autoupdateinfo;
+    this.selectopenonly = selectopenonly;
+    this.clubid = clubid;
+    this.adminclubid = adminclubid;
+    this.hiddenSelectedTournamentCl

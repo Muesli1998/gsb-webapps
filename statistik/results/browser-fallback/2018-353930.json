@@ -1,0 +1,21 @@
+{
+  "key": "2018:353930",
+  "season": 2018,
+  "matchId": 353930,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Gentofte 1",
+  "ageGroupId": "18",
+  "leagueGroupId": "11771",
+  "roundDate": "2018-12-09",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2018,11771,1,8,,353930,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2018-353930.json",
+  "verifiedAt": "2026-09-12T17:09:14.197Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "reverifiedAt": "2026-09-13T05:52:29.241Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2018,11771,1,8,,353930,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U17/U19 2018/2019\nVis rækker\n\n\nU17/U19 A 4 spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t353930\nRunde\t4 09-12-2018\nTid\tsø 09-12-2018 11:30\nSpillested\tGBK Hallen\nVed Stadion 4\n2820 Gentofte\nTelefon 39 68 01 59\nHjemmehold\tGentofte 1\nAnne Christine Hagedorn\nannechagedorn@gmail.com\n20413033\nUdehold\tGladsaxe Søborg 2\nMads Hvid Ribergaard\nmhribergaard@yahoo.dk\n61261897\nResultat\t5-1\nPoint\t3-0\n\tGentofte 1\tGladsaxe Søborg 2\t1\t2\t3\tVinder W.O.\n1. S\t\nJens Undén\n\t\nLaurits Roland Nielsen\n\t21 - 9\t21 - 16\t\t\n2. S\t\nFrederik Gjøl\n\t\n(Ikke fremmødt)\n\t\t\t\t(1)\n3. S\t\nMagnus Rasmussen\n\t\nMalte Hvid Ribergaard\n\t19 - 21\t20 - 22\t\t\n4. S\t\nSilas Hagedorn\n\t\nFabian Aagren\n\t16 - 21\t21 - 17\t21 - 9\t\n1. D\t\nJens Undén\nFrederik Gjøl\n\t\nLaurits Roland Nielsen\n(Ikke fremmødt)\n\t\t\t\t(1)\n2. D\t\nMagnus Rasmussen\nSilas Hagedorn\n\t\nMalte Hvid Ribergaard\nFabian Aagren\n\t21 - 12\t24 - 22\t\t\n\n\nReserver\nGentofte 1\tGladsaxe Søborg 2\n\n\t\n\nFabian Aagren\nfor Rasmus Lyhne Fiehn\n\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

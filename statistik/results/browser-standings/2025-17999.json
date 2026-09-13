@@ -1,0 +1,54 @@
+{
+  "season": 2025,
+  "groupId": "17999",
+  "status": "verified",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2025,17999,1,,,,1093,",
+  "retrievedAt": "2026-09-12T18:33:15.643Z",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH,BADSJ,DGI-NSJ,DGI-MVS U17/U19 2025/2026\nVis rækker\n\n\nUge 38 - U17/U19 D, 5000 (2+2) Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVUNDNE\tSCORE\tSÆT\tPOINT\n1\tTeam Sydkysten 3\t2\t2\t13-3\t27-10\t8\n2\tSAIF Kbh. 1\t2\t1\t6-11\t15-22\t3\n3\tGladsaxe Søborg 3\t2\t0\t6-11\t13-23\t2\n\nUdskriv | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+  "tables": [
+    [
+      [
+        "",
+        "FAQ Opret brugerkonto Log ind"
+      ]
+    ],
+    [
+      [
+        "#",
+        "HOLD",
+        "KAMPE",
+        "VUNDNE",
+        "SCORE",
+        "SÆT",
+        "POINT"
+      ],
+      [
+        "1",
+        "Team Sydkysten 3",
+        "2",
+        "2",
+        "13-3",
+        "27-10",
+        "8"
+      ],
+      [
+        "2",
+        "SAIF Kbh. 1",
+        "2",
+        "1",
+        "6-11",
+        "15-22",
+        "3"
+      ],
+      [
+        "3",
+        "Gladsaxe Søborg 3",
+        "2",
+        "0",
+        "6-11",
+        "13-23",
+        "2"
+      ]
+    ]
+  ]
+}

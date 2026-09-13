@@ -1,0 +1,21 @@
+{
+  "key": "2022:443484",
+  "season": 2022,
+  "matchId": 443484,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Humlebæk 1",
+  "ageGroupId": "18",
+  "leagueGroupId": "15670",
+  "roundDate": "2023-04-30",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,15670,1,8,,443484,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2022-443484.json",
+  "verifiedAt": "2026-09-12T16:54:07.512Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:48:51.092Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,15670,1,8,,443484,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADDAN,DGI U17/U19 2022/2023\nVis rækker\n\n\nDMU H - U17/U19 5200 4 spillere Finale slutspil (1. - 4. plads)\nStilling\nVis alle kampe\n\nKampnr\t443484\nRunde\t2 30-04-2023\nTid\tsø 30-04-2023 15:30\nSpillested\tHammel Idrætscenter Hal 2 - 6 baner\nThorsvej 4\n8450 Hammel\nTelefon 86 96 18 85\nHjemmehold\tGladsaxe Søborg 1\nMartin Roed\nroed.martin@gmail.com\n20457741\nUdehold\tHumlebæk 1\nLene Palling\nlene@palling.dk\n21828305\nResultat\t2-4\n\tGladsaxe Søborg 1\tHumlebæk 1\t1\t2\t3\tVinder W.O.\n1. S\t\nBertram Aavang Arvidson\n\t\nAugust Conrad\n\t21 - 8\t21 - 11\t\t\n2. S\t\nLinus Bergstrøm Hesselballe\n\t\nTobias Lohse\n\t21 - 19\t19 - 21\t26 - 28\t\n3. S\t\nAnton Krog Søbygaard\n\t\nManu Olesen Berglund\n\t19 - 21\t24 - 26\t\t\n4. S\t\nTobias Lerche\n\t\nJonathan Bech Tharsgaard\n\t14 - 21\t20 - 22\t\t\n1. D\t\nBertram Aavang Arvidson\nAnton Krog Søbygaard\n\t\nAugust Conrad\nManu Olesen Berglund\n\t21 - 9\t21 - 15\t\t\n2. D\t\nLinus Bergstrøm Hesselballe\nTobias Lerche\n\t\nTobias Lohse\nJonathan Bech Tharsgaard\n\t21 - 13\t19 - 21\t13 - 21\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

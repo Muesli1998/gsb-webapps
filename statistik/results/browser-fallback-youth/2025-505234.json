@@ -1,0 +1,19 @@
+{
+  "key": "2025:505234",
+  "season": 2025,
+  "matchId": 505234,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "Lyngby 1",
+  "ageGroupId": "2",
+  "leagueGroupId": "18506",
+  "roundDate": "2026-03-08",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18506,1,8,,505234,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2025-505234.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:05:03.913Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18506,1,8,,505234,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH,BADSJ U09 2025/2026\nVis rækker\n\n\nU09 D 3300 (3 spillere) BD (2. halvår) Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t505234\nRunde\t9 08-03-2026\nTid\tlø 07-03-2026 14:30\nSpillested\tGladsaxe ny Badmintonhal\nGladsaxevej 200\n2860 Søborg\nHjemmehold\tGladsaxe Søborg 3\nAnders Amelung\naamelung@gmail.com\n22837649\nUdehold\tLyngby 1\nAditi Goyal\nAditigoyal2086@gmail.com\n00000000\nResultat\t2-3\nPoint\t1-2\n\tGladsaxe Søborg 3\tLyngby 1\t1\t2\t3\tVinder W.O.\n1. S\t\nNorr Bagge Køhler\n\t\nAdam Plaza\n\t15 - 5\t15 - 3\t\t\n2. S\t\nNorr Bagge Køhler\n\t\nReyansh Goyal\n\t15 - 1\t15 - 4\t\t\n3. S\t\nSamuel Lynge\n\t\nNohr Friis Bach\n\t3 - 15\t7 - 15\t\t\n4. S\t\nViggo Engedal Nielsen\n\t\nMarius Kaptain Young\n\t6 - 15\t15 - 9\t9 - 15\t\n1. D\t\nViggo Engedal Nielsen\nSamuel Lynge\n\t\nReyansh Goyal\nNohr Friis Bach\n\t15 - 9\t7 - 15\t5 - 15\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

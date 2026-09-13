@@ -1,0 +1,19 @@
+{
+  "key": "2025:505246",
+  "season": 2025,
+  "matchId": 505246,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Lyngby 2",
+  "ageGroupId": "2",
+  "leagueGroupId": "18507",
+  "roundDate": "2026-02-22",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18507,1,8,,505246,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2025-505246.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:04:47.580Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18507,1,8,,505246,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH,BADSJ U09 2025/2026\nVis rækker\n\n\nU09 D 3300 (3 spillere) BD (2. halvår) Pulje 2\nStilling\nVis alle kampe\n\nKampnr\t505246\nRunde\t8 22-02-2026\nTid\tlø 21-02-2026 14:30\nSpillested\tGladsaxe ny Badmintonhal\nGladsaxevej 200\n2860 Søborg\nHjemmehold\tGladsaxe Søborg 2\nOdin Flyger\nodinflyger@gmail.com\n23826792\nUdehold\tLyngby 2\nFrederik Greisen\nfrederik.greisen@gmail.com\n00000000\nResultat\t4-1\nPoint\t3-0\n\tGladsaxe Søborg 2\tLyngby 2\t1\t2\t3\tVinder W.O.\n1. S\t\nNorr Bagge Køhler\n\t\nMolly Fisker Christensen\n\t15 - 7\t15 - 6\t\t\n2. S\t\nJens Antonio Manfredi Willumsen\n\t\nWilliam Chu Twisselmann\n\t15 - 11\t15 - 4\t\t\n3. S\t\nJonathan Nielsen\n\t\nAnker Lindgren Greisen\n\t15 - 8\t15 - 6\t\t\n4. S\t\nSaishiv Prasanna kumar Lavanya\n\t\nMorgan Hjelm Kamstrup\n\t5 - 15\t0 - 15\t\t\n1. D\t\nJonathan Nielsen\nNorr Bagge Køhler\n\t\nMolly Fisker Christensen\nMarius Kaptain Young\n\t15 - 5\t15 - 5\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

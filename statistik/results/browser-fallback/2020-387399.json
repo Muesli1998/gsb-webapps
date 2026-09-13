@@ -1,0 +1,21 @@
+{
+  "key": "2020:387399",
+  "season": 2020,
+  "matchId": 387399,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "CBS Sport Badminton 1",
+  "ageGroupId": "1",
+  "leagueGroupId": "13285",
+  "roundDate": "2021-03-21",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13285,1,8,,387399,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2020-387399.json",
+  "verifiedAt": "2026-09-12T16:59:39.253Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:49:55.130Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13285,1,8,,387399,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN 2020/2021\nVis rækker\n\n\nSEN 2. Serie P1 Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t387399\nRunde\t7 21-03-2021\nTid\tsø 28-03-2021 10:00\nSpillested\tMariendalshallen Hal B\nMariendalsvej 21 C\n2000 Frederiksberg\nHjemmehold\tCBS Sport Badminton 1\nFrederik Dahl Rasmuseen\nfrederikdahlrasmussen@gmail.com\n24265257\nUdehold\tGladsaxe Søborg 3\nRasmus Hemmingsen\nrahem@hotmail.dk\n20893324\nResultat\t-\nPoint\t-\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

@@ -1,0 +1,21 @@
+{
+  "key": "2023:452566",
+  "season": 2023,
+  "matchId": 452566,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "NBK Amager 1",
+  "ageGroupId": "18",
+  "leagueGroupId": "16087",
+  "roundDate": "2024-02-25",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,16087,1,8,,452566,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2023-452566.json",
+  "verifiedAt": "2026-09-12T16:56:30.208Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:48:00.133Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,16087,1,8,,452566,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U17/U19 2023/2024\nVis rækker\n\n\nU17/U19 - 6600 4 spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t452566\nRunde\t8 25-02-2024\nTid\tsø 25-02-2024 13:30\nSpillested\tVanløse Hallerne, hal 2\nHirtshalsvej 6C\n2720 Vanløse\nTelefon 38 71 55 05\nHjemmehold\tNBK Amager 1\nRonnie Bakka\nRonniebakka@gmail.com\n60379853\nUdehold\tGladsaxe Søborg 1\nJens Møller\nJksmoller@hotmail.com\n20457741\nResultat\t4-2\nPoint\t3-1\n\tNBK Amager 1\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. S\t\nMathias Wellejus\n\t\nSebastian Almeida Møller\n\t22 - 20\t22 - 20\t\t\n2. S\t\nPhilip Elias Halberg\n\t\nAnton Krog Søbygaard\n\t21 - 13\t21 - 14\t\t\n3. S\t\nMarcus Bertram Bruun\n\t\nLinus Bergstrøm Hesselballe\n\t21 - 13\t21 - 15\t\t\n4. S\t\nMikkel Bakka\n\t\nThøger Eusebius Jakobsen\n\t21 - 19\t15 - 21\t12 - 21\t\n1. D\t\nMathias Wellejus\nPhilip Elias Halberg\n\t\nSebastian Almeida Møller\nLinus Bergstrøm Hesselballe\n\t22 - 20\t16 - 21\t20 - 22\t\n2. D\t\nMarcus Bertram Bruun\nMikkel Bakka\n\t\nThøger Eusebius Jakobsen\nAnton Krog Søbygaard\n\t21 - 19\t21 - 17\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

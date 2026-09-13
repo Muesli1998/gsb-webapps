@@ -1,0 +1,21 @@
+{
+  "key": "2015:204934",
+  "season": 2015,
+  "matchId": 204934,
+  "teamName": "Gladsaxe Søborg 5",
+  "opponent": "BC KVIK Kbh. 2",
+  "ageGroupId": "1",
+  "leagueGroupId": "6022",
+  "roundDate": "2016-01-31",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6022,1,8,,204934,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2015-204934.json",
+  "verifiedAt": "2026-09-12T17:10:03.391Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "reverifiedAt": "2026-09-13T05:53:54.550Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6022,1,8,,204934,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN 2015/2016\nVis rækker\n\n\n5. serie P1 Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t204934\nRunde\t6 31-01-2016\nTid\tlø 06-02-2016 13:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 5\nLene Sørensen\nsorensenlene@ymail.com\n29392379\nUdehold\tBC KVIK Kbh. 2\nMikael Dupont\nmikael.dupont.76@gmail.com\n26839357\nResultat\t0-12\nPoint\t0-2\nAfgjort uden kamp (afbud/udeblivelse)\n\nIndberetningen er ikke endelig og kan ændres\n\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

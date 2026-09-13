@@ -1,0 +1,21 @@
+{
+  "key": "2025:505213",
+  "season": 2025,
+  "matchId": 505213,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Hillerød 1",
+  "ageGroupId": "2",
+  "leagueGroupId": "18504",
+  "roundDate": "2026-02-22",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18504,1,8,,505213,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2025-505213.json",
+  "verifiedAt": "2026-09-12T16:10:08.869Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:46:08.219Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18504,1,8,,505213,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH,BADSJ U09 2025/2026\nVis rækker\n\n\nU09 C 3600 (3 spillere) BD (2. halvår) Pulje 2\nStilling\nVis alle kampe\n\nKampnr\t505213\nRunde\t8 22-02-2026\nTid\tsø 22-02-2026 13:00\nSpillested\tKBK-Hallen\nKrausesvej 12\n2100 København Ø\nTelefon 35 38 72 92\nHjemmehold\tHillerød 1\nMorten Hessner\nmortenhessnernielsen@gmail.com\n30705335\nUdehold\tGladsaxe Søborg 1\nClaus Geil\nclausgeil73@gmail.com\n28999902\nResultat\t2-3\nPoint\t1-2\n\tHillerød 1\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. S\t\nSimon Hessner Labeau\n\t\nTobias Geil Christophersen\n\t14 - 16\t15 - 12\t15 - 8\t\n2. S\t\nMagnus Styrmer Teglbjærg\n\t\nNorr Bagge Køhler\n\t15 - 8\t11 - 15\t13 - 15\t\n3. S\t\nJonathan Skov\n\t\nVitus Reinholdt Amelung\n\t5 - 15\t6 - 15\t\t\n4. S\t\nJonathan Skov\n\t\nJingyi Victoria Han\n\t4 - 15\t15 - 11\t13 - 15\t\n1. D\t\nSimon Hessner Labeau\nMagnus Styrmer Teglbjærg\n\t\nNorr Bagge Køhler\nVitus Reinholdt Amelung\n\t15 - 8\t15 - 13\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

@@ -1,0 +1,313 @@
+{
+  "generatedAt": "2026-09-13T07:22:23.922Z",
+  "apply": true,
+  "apiOkMatches": 1374,
+  "dbIndividualRows": 14216,
+  "changes": 13290,
+  "skippedNoScore": 926,
+  "unmatched": 0,
+  "duplicateKeys": [],
+  "sampleChanges": [
+    {
+      "id": 12301,
+      "external_match_id": "100369",
+      "category": "1. MD",
+      "before": {
+        "home": "11-11",
+        "away": "21-21"
+      },
+      "after": {
+        "home": "11-11",
+        "away": "21-21",
+        "winner": "away",
+        "scoredSets": 2
+      }
+    },
+    {
+      "id": 12302,
+      "external_match_id": "100369",
+      "category": "1. DS",
+      "before": {
+        "home": "21-21-21",
+        "away": "17-23-14"
+      },
+      "after": {
+        "home": "21-21-21",
+        "away": "17-23-14",
+        "winner": "home",
+        "scoredSets": 3
+      }
+    },
+    {
+      "id": 12303,
+      "external_match_id": "100369",
+      "category": "1. HS",
+      "before": {
+        "home": "21-21",
+        "away": "9-11"
+      },
+      "after": {
+        "home": "21-21",
+        "away": "9-11",
+        "winner": "home",
+        "scoredSets": 2
+      }
+    },
+    {
+      "id": 12304,
+      "external_match_id": "100369",
+      "category": "2. HS",
+      "before": {
+        "home": "10-21-21",
+        "away": "21-14-19"
+      },
+      "after": {
+        "home": "10-21-21",
+        "away": "21-14-19",
+        "winner": "home",
+        "scoredSets": 3
+      }
+    },
+    {
+      "id": 12306,
+      "external_match_id": "100369",
+      "category": "1. DD",
+      "before": {
+        "home": "21-21",
+        "away": "14-15"
+      },
+      "after": {
+        "home": "21-21",
+        "away": "14-15",
+        "winner": "home",
+        "scoredSets": 2
+      }
+    },
+    {
+      "id": 12307,
+      "external_match_id": "100369",
+      "category": "1. HD",
+      "before": {
+        "home": "21-21",
+        "away": "12-7"
+      },
+      "after": {
+        "home": "21-21",
+        "away": "12-7",
+        "winner": "home",
+        "scoredSets": 2
+      }
+    },
+    {
+      "id": 12395,
+      "external_match_id": "100936",
+      "category": "1. MD",
+      "before": {
+        "home": "11-21-15",
+        "away": "21-19-21"
+      },
+      "after": {
+        "home": "11-21-15",
+        "away": "21-19-21",
+        "winner": "away",
+        "scoredSets": 3
+      }
+    },
+    {
+      "id": 12396,
+      "external_match_id": "100936",
+      "category": "2. MD",
+      "before": {
+        "home": "21-22",
+        "away": "17-20"
+      },
+      "after": {
+        "home": "21-22",
+        "away": "17-20",
+        "winner": "home",
+        "scoredSets": 2
+      }
+    },
+    {
+      "id": 12397,
+      "external_match_id": "100936",
+      "category": "1. DS",
+      "before": {
+        "home": "16-25-21",
+        "away": "21-23-18"
+      },
+      "after": {
+        "home": "16-25-21",
+        "away": "21-23-18",
+        "winner": "home",
+        "scoredSets": 3
+      }
+    },
+    {
+      "id": 12398,
+      "external_match_id": "100936",
+      "category": "2. DS",
+      "before": {
+        "home": "14-21-11",
+        "away": "21-19-21"
+      },
+      "after": {
+        "home": "14-21-11",
+        "away": "21-19-21",
+        "winner": "away",
+        "scoredSets": 3
+      }
+    },
+    {
+      "id": 12399,
+      "external_match_id": "100936",
+      "category": "1. HS",
+      "before": {
+        "home": "21-13-8",
+        "away": "16-21-21"
+      },
+      "after": {
+        "home": "21-13-8",
+        "away": "16-21-21",
+        "winner": "away",
+        "scoredSets": 3
+      }
+    },
+    {
+      "id": 12400,
+      "external_match_id": "100936",
+      "category": "2. HS",
+      "before": {
+        "home": "21-21-21",
+        "away": "17-23-13"
+      },
+      "after": {
+        "home": "21-21-21",
+        "away": "17-23-13",
+        "winner": "home",
+        "scoredSets": 3
+      }
+    },
+    {
+      "id": 12401,
+      "external_match_id": "100936",
+      "category": "3. HS",
+      "before": {
+        "home": "21-21",
+        "away": "13-16"
+      },
+      "after": {
+        "home": "21-21",
+        "away": "13-16",
+        "winner": "home",
+        "scoredSets": 2
+      }
+    },
+    {
+      "id": 12402,
+      "external_match_id": "100936",
+      "category": "4. HS",
+      "before": {
+        "home": "18-21-21",
+        "away": "21-16-8"
+      },
+      "after": {
+        "home": "18-21-21",
+        "away": "21-16-8",
+        "winner": "home",
+        "scoredSets": 3
+      }
+    },
+    {
+      "id": 12403,
+      "external_match_id": "100936",
+      "category": "1. DD",
+      "before": {
+        "home": "16-16",
+        "away": "21-21"
+      },
+      "after": {
+        "home": "16-16",
+        "away": "21-21",
+        "winner": "away",
+        "scoredSets": 2
+      }
+    },
+    {
+      "id": 12404,
+      "external_match_id": "100936",
+      "category": "2. DD",
+      "before": {
+        "home": "21-19-17",
+        "away": "13-21-21"
+      },
+      "after": {
+        "home": "21-19-17",
+        "away": "13-21-21",
+        "winner": "away",
+        "scoredSets": 3
+      }
+    },
+    {
+      "id": 12405,
+      "external_match_id": "100936",
+      "category": "1. HD",
+      "before": {
+        "home": "21-21",
+        "away": "16-16"
+      },
+      "after": {
+        "home": "21-21",
+        "away": "16-16",
+        "winner": "home",
+        "scoredSets": 2
+      }
+    },
+    {
+      "id": 12406,
+      "external_match_id": "100936",
+      "category": "2. HD",
+      "before": {
+        "home": "21-15-21",
+        "away": "13-21-19"
+      },
+      "after": {
+        "home": "21-15-21",
+        "away": "13-21-19",
+        "winner": "home",
+        "scoredSets": 3
+      }
+    },
+    {
+      "id": 12407,
+      "external_match_id": "100936",
+      "category": "3. HD",
+      "before": {
+        "home": "16-9",
+        "away": "21-21"
+      },
+      "after": {
+        "home": "16-9",
+        "away": "21-21",
+        "winner": "away",
+        "scoredSets": 2
+      }
+    },
+    {
+      "id": 12317,
+      "external_match_id": "135908",
+      "category": "1. MD",
+      "before": {
+        "home": "19-13",
+        "away": "21-21"
+      },
+      "after": {
+        "home": "19-13",
+        "away": "21-21",
+        "winner": "away",
+        "scoredSets": 2
+      }
+    }
+  ],
+  "unmatchedRows": []
+}

@@ -1,0 +1,21 @@
+{
+  "key": "2016:238686",
+  "season": 2016,
+  "matchId": 238686,
+  "teamName": "Gladsaxe Søborg 4",
+  "opponent": "BC37 Amager 4",
+  "ageGroupId": "1",
+  "leagueGroupId": "7643",
+  "roundDate": "2017-03-05",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7643,1,8,,238686,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2016-238686.json",
+  "verifiedAt": "2026-09-12T17:09:41.578Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "reverifiedAt": "2026-09-13T05:53:16.816Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7643,1,8,,238686,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN 2016/2017\nVis rækker\n\n\n4. Serie P2 Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t238686\nRunde\t8 05-03-2017\nTid\tlø 11-03-2017 13:00\nSpillested\tBC37-Hallen\nStrandlodsvej 69\n2300 København S\nTelefon 32 97 08 96\nHjemmehold\tBC37 Amager 4\nMathias Buur\nmabu@widex.com\n23708009\nUdehold\tGladsaxe Søborg 4\nLene Sørensen\nsorensenlene@ymail.com\n29392379\nResultat\t12-0\nPoint\t2-0\nAfgjort uden kamp (afbud/udeblivelse)\n\nIndberetningen er ikke endelig og kan ændres\n\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

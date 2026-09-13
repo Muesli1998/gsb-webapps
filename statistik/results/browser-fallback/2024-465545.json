@@ -1,0 +1,21 @@
+{
+  "key": "2024:465545",
+  "season": 2024,
+  "matchId": 465545,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Hvidovre HB2000",
+  "ageGroupId": "13",
+  "leagueGroupId": "16931",
+  "roundDate": "2025-02-02",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2024,16931,1,8,,465545,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2024-465545.json",
+  "verifiedAt": "2026-09-12T16:51:18.397Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:47:37.225Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2024,16931,1,8,,465545,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+60 2024/2025\nVis rækker\n\n\n60+ 1. Serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t465545\nRunde\t5 02-02-2025\nTid\tsø 26-01-2025 12:00\nSpillested\tPræstemosehallen\nPræstemosen 209\n2650 Hvidovre\nHjemmehold\tHvidovre HB2000\nJohn Berling\nJohn@Berling-mail.dk\n20701981\nUdehold\tGladsaxe Søborg 2\nNoomi Mortensen\nbani.privat@gmail.com\n30256137\nResultat\t4-4\nPoint\t1-1\n\tHvidovre HB2000\tGladsaxe Søborg 2\t1\t2\t3\tVinder W.O.\n1. MD\t\nBjarne Engstrøm\nLise Gavnholt Christensen\n\t\nNoomi Mortensen\nLennart Høy\n\t10 - 21\t9 - 21\t\t\n2. MD\t\nBo Calstrup\nKit Knudsen\n\t\nLene Thrysøe\nJohn Kørboe\n\t7 - 21\t8 - 21\t\t\n4. D\t\nJannik Sørensen\nMichael de Blanck\n\t\nSteen Kiorboe\nGert Poulsen\n\t21 - 16\t21 - 12\t\t\n5. D\t\nJohn Berling\nAllan Løwe Christensen\n\t\nLeif Hansen\nJan Holzmann Rasmussen\n\t21 - 18\t21 - 9\t\t\n1. D\t\nBjarne Engstrøm\nAllan Løwe Christensen\n\t\nLennart Høy\nJohn Kørboe\n\t15 - 21\t12 - 21\t\t\n2. D\t\nJohn Berling\nMichael de Blanck\n\t\nSteen Kiorboe\nJan Holzmann Rasmussen\n\t21 - 19\t17 - 21\t21 - 17\t\n3. D\t\nBo Calstrup\nJannik Sørensen\n\t\nLeif Hansen\nGert Poulsen\n\t21 - 16\t21 - 18\t\t\n1. DD\t\nKit Knudsen\nLise Gavnholt Christensen\n\t\nNoomi Mortensen\nLene Thrysøe\n\t10 - 21\t15 - 21\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

@@ -1,0 +1,179 @@
+{
+  "generatedAt": "2026-09-13T07:45:24.513Z",
+  "totals": {
+    "total": 2818,
+    "missing_result": 6,
+    "missing_sides": 6,
+    "api_errors": 4,
+    "missing_players": 0
+  },
+  "status": [
+    {
+      "status": "api_error",
+      "n": 4
+    },
+    {
+      "status": "browser_verified",
+      "n": 2682
+    },
+    {
+      "status": "browser_verified_no_result",
+      "n": 85
+    },
+    {
+      "status": "corona_suspended",
+      "n": 47
+    }
+  ],
+  "bySeason": [
+    {
+      "season_id": 2010,
+      "total": 11,
+      "missing_result": 0,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_sides": 0,
+      "api_errors": 0
+    },
+    {
+      "season_id": 2011,
+      "total": 169,
+      "missing_result": 0,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_sides": 0,
+      "api_errors": 0
+    },
+    {
+      "season_id": 2012,
+      "total": 131,
+      "missing_result": 0,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_sides": 0,
+      "api_errors": 0
+    },
+    {
+      "season_id": 2013,
+      "total": 134,
+      "missing_result": 0,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_sides": 0,
+      "api_errors": 0
+    },
+    {
+      "season_id": 2014,
+      "total": 144,
+      "missing_result": 0,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_sides": 0,
+      "api_errors": 0
+    },
+    {
+      "season_id": 2015,
+      "total": 156,
+      "missing_result": 0,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_sides": 0,
+      "api_errors": 0
+    },
+    {
+      "season_id": 2016,
+      "total": 147,
+      "missing_result": 0,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_sides": 0,
+      "api_errors": 0
+    },
+    {
+      "season_id": 2017,
+      "total": 133,
+      "missing_result": 0,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_sides": 0,
+      "api_errors": 0
+    },
+    {
+      "season_id": 2018,
+      "total": 143,
+      "missing_result": 0,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_sides": 0,
+      "api_errors": 0
+    },
+    {
+      "season_id": 2019,
+      "total": 125,
+      "missing_result": 0,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_sides": 0,
+      "api_errors": 0
+    },
+    {
+      "season_id": 2020,
+      "total": 162,
+      "missing_result": 2,
+      "missing_home": 2,
+      "missing_away": 2,
+      "missing_sides": 2,
+      "api_errors": 0
+    },
+    {
+      "season_id": 2021,
+      "total": 186,
+      "missing_result": 0,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_sides": 0,
+      "api_errors": 0
+    },
+    {
+      "season_id": 2022,
+      "total": 227,
+      "missing_result": 0,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_sides": 0,
+      "api_errors": 0
+    },
+    {
+      "season_id": 2023,
+      "total": 255,
+      "missing_result": 0,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_sides": 0,
+      "api_errors": 0
+    },
+    {
+      "season_id": 2024,
+      "total": 295,
+      "missing_result": 0,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_sides": 0,
+      "api_errors": 0
+    },
+    {
+      "season_id": 2025,
+      "total": 400,
+      "missing_result": 4,
+      "missing_home": 4,
+      "missing_away": 4,
+      "missing_sides": 4,
+      "api_errors": 4
+    }
+  ],
+  "interpretation": [
+    "Status og faktisk felt-dækning rapporteres separat.",
+    "En række med status complete kan stadig mangle resultatfelter; status er derfor ikke et bevis på komplet række.",
+    "Manglende felter betyder ikke, at data ikke findes online; gemte dynamiske browserpayloads er den dokumenterede fallback."
+  ]
+}

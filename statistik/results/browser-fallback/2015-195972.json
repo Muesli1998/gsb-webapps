@@ -1,0 +1,21 @@
+{
+  "key": "2015:195972",
+  "season": 2015,
+  "matchId": 195972,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Dragør",
+  "ageGroupId": "6",
+  "leagueGroupId": "6099",
+  "roundDate": "2015-10-25",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6099,1,8,,195972,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2015-195972.json",
+  "verifiedAt": "2026-09-12T17:09:53.010Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "reverifiedAt": "2026-09-13T05:53:36.509Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6099,1,8,,195972,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U17 2015/2016\nVis rækker\n\n\nU17 A Række 4+2 Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t195972\nRunde\t3 25-10-2015\nTid\tsø 25-10-2015 10:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg\nLene Sørensen\nsorensenlene@ymail.com\n29392379\nUdehold\tDragør\nSofie Nygaard Hansen\nsofie.nygaard@gmail.com\n26 73 54 12\nResultat\t0-8\nPoint\t0-2\nAfgjort uden kamp (afbud/udeblivelse)\n\nIndberetningen er ikke endelig og kan ændres\n\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

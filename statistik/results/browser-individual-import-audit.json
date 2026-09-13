@@ -1,0 +1,803 @@
+{
+  "generatedAt": "2026-09-13T07:45:24.979Z",
+  "parsedPayloads": 2816,
+  "existingIndividualRows": 20319,
+  "candidateCategories": 0,
+  "conflicts": 27,
+  "missingMatches": [],
+  "candidates": [],
+  "conflictRows": [
+    {
+      "external_match_id": "49672",
+      "category": "2. MD",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "18-21-12",
+        "awayScore": "21-19-21",
+        "homePlayers": [
+          "Hans Møller",
+          "Dorte Petersen"
+        ],
+        "awayPlayers": [
+          "Michael Anker",
+          "Mette Rasmussen"
+        ]
+      },
+      "database": {
+        "homeScore": "18-21-12",
+        "awayScore": "21-19-21",
+        "homePlayers": [
+          "Dorte Petersen",
+          "Hans Møller"
+        ],
+        "awayPlayers": [
+          "Michael Anker",
+          "Mette  Rasmussen"
+        ]
+      }
+    },
+    {
+      "external_match_id": "49672",
+      "category": "1. DD",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "15-19",
+        "awayScore": "21-21",
+        "homePlayers": [
+          "Birgitte Jakobsen",
+          "Merete Jacobsen"
+        ],
+        "awayPlayers": [
+          "Cathrine Bennike",
+          "Mette Rasmussen"
+        ]
+      },
+      "database": {
+        "homeScore": "15-19",
+        "awayScore": "21-21",
+        "homePlayers": [
+          "Birgitte Jakobsen",
+          "Merete Jacobsen"
+        ],
+        "awayPlayers": [
+          "Cathrine Bennike",
+          "Mette  Rasmussen"
+        ]
+      }
+    },
+    {
+      "external_match_id": "96013",
+      "category": "1. MD",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "13-14",
+        "awayScore": "21-21",
+        "homePlayers": [
+          "(Ukendt spiller)",
+          "(Ukendt spiller)"
+        ],
+        "awayPlayers": [
+          "Harald Greve Høiby",
+          "Josefine Guldbæk"
+        ]
+      },
+      "database": {
+        "homeScore": "13-14",
+        "awayScore": "21-21",
+        "homePlayers": [
+          "Ikke fremmødt"
+        ],
+        "awayPlayers": [
+          "Josefine Guldbæk",
+          "Harald Greve Høiby"
+        ]
+      }
+    },
+    {
+      "external_match_id": "96013",
+      "category": "1. DS",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "5-4",
+        "awayScore": "21-21",
+        "homePlayers": [
+          "(Ukendt spiller)"
+        ],
+        "awayPlayers": [
+          "Silje Buus Nyeng"
+        ]
+      },
+      "database": {
+        "homeScore": "5-4",
+        "awayScore": "21-21",
+        "homePlayers": [
+          "Ikke fremmødt"
+        ],
+        "awayPlayers": [
+          "Silje Buus Nyeng"
+        ]
+      }
+    },
+    {
+      "external_match_id": "96013",
+      "category": "1. DD",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "10-7",
+        "awayScore": "21-21",
+        "homePlayers": [
+          "(Ukendt spiller)",
+          "(Ukendt spiller)"
+        ],
+        "awayPlayers": [
+          "Silje Buus Nyeng",
+          "Josefine Guldbæk"
+        ]
+      },
+      "database": {
+        "homeScore": "10-7",
+        "awayScore": "21-21",
+        "homePlayers": [
+          "Ikke fremmødt"
+        ],
+        "awayPlayers": [
+          "Josefine Guldbæk",
+          "Silje Buus Nyeng"
+        ]
+      }
+    },
+    {
+      "external_match_id": "96013",
+      "category": "2. HD",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "12-7",
+        "awayScore": "21-21",
+        "homePlayers": [
+          "Julius A. H. Knudsen",
+          "(Ukendt spiller)"
+        ],
+        "awayPlayers": [
+          "Sebastian Woll",
+          "Harald Greve Høiby"
+        ]
+      },
+      "database": {
+        "homeScore": "12-7",
+        "awayScore": "21-21",
+        "homePlayers": [
+          "Ikke fremmødt",
+          "Julius A. H. Knudsen"
+        ],
+        "awayPlayers": [
+          "Sebastian Woll",
+          "Harald Greve Høiby"
+        ]
+      }
+    },
+    {
+      "external_match_id": "96018",
+      "category": "2. HD",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "21-19-10",
+        "awayScore": "19-21-21",
+        "homePlayers": [
+          "Harald Greve Høiby",
+          "Sebastian Woll"
+        ],
+        "awayPlayers": [
+          "Magnus Schousboe Vilmann",
+          "(Ukendt spiller)"
+        ]
+      },
+      "database": {
+        "homeScore": "21-19-10",
+        "awayScore": "19-21-21",
+        "homePlayers": [
+          "Sebastian Woll",
+          "Harald Greve Høiby"
+        ],
+        "awayPlayers": [
+          "Ikke fremmødt",
+          "Magnus Schousboe Vilmann"
+        ]
+      }
+    },
+    {
+      "external_match_id": "96725",
+      "category": "1. DD",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "21-21",
+        "awayScore": "14-10",
+        "homePlayers": [
+          "Julie Irby",
+          "Julie Irby"
+        ],
+        "awayPlayers": [
+          "Caroline Borup Andersen",
+          "Christina Stensvig"
+        ]
+      },
+      "database": {
+        "homeScore": "21-21",
+        "awayScore": "14-10",
+        "homePlayers": [
+          "Julie Irby"
+        ],
+        "awayPlayers": [
+          "Caroline Borup Andersen",
+          "Christina Stensvig"
+        ]
+      }
+    },
+    {
+      "external_match_id": "96732",
+      "category": "1. MD",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "19-21-21",
+        "awayScore": "21-18-19",
+        "homePlayers": [
+          "Stig Christophersen",
+          "Camilla Suhr Meinecke"
+        ],
+        "awayPlayers": [
+          "(Ukendt spiller)",
+          "(Ukendt spiller)"
+        ]
+      },
+      "database": {
+        "homeScore": "19-21-21",
+        "awayScore": "21-18-19",
+        "homePlayers": [
+          "Camilla Suhr Meinecke",
+          "Stig Christophersen"
+        ],
+        "awayPlayers": [
+          "Ikke fremmødt"
+        ]
+      }
+    },
+    {
+      "external_match_id": "96732",
+      "category": "2. MD",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "20-16",
+        "awayScore": "22-21",
+        "homePlayers": [
+          "Michael Hansen",
+          "Camilla Zwergius"
+        ],
+        "awayPlayers": [
+          "(Ukendt spiller)",
+          "(Ukendt spiller)"
+        ]
+      },
+      "database": {
+        "homeScore": "20-16",
+        "awayScore": "22-21",
+        "homePlayers": [
+          "Michael Hansen",
+          "Camilla Zwergius"
+        ],
+        "awayPlayers": [
+          "Ikke fremmødt"
+        ]
+      }
+    },
+    {
+      "external_match_id": "96732",
+      "category": "1. DD",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "21-21",
+        "awayScore": "18-18",
+        "homePlayers": [
+          "Camilla Suhr Meinecke",
+          "Maria Kristensen"
+        ],
+        "awayPlayers": [
+          "(Ukendt spiller)",
+          "Julie Irby"
+        ]
+      },
+      "database": {
+        "homeScore": "21-21",
+        "awayScore": "18-18",
+        "homePlayers": [
+          "Camilla Suhr Meinecke",
+          "Maria Kristensen"
+        ],
+        "awayPlayers": [
+          "Ikke fremmødt",
+          "Julie Irby"
+        ]
+      }
+    },
+    {
+      "external_match_id": "96732",
+      "category": "2. DD",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "9-4",
+        "awayScore": "21-21",
+        "homePlayers": [
+          "Camilla Zwergius",
+          "Lise Heslop Finstad"
+        ],
+        "awayPlayers": [
+          "Csenge Virag Varjas",
+          "(Ukendt spiller)"
+        ]
+      },
+      "database": {
+        "homeScore": "9-4",
+        "awayScore": "21-21",
+        "homePlayers": [
+          "Camilla Zwergius",
+          "Lise Heslop Finstad"
+        ],
+        "awayPlayers": [
+          "Ikke fremmødt",
+          "Csenge Virag Varjas"
+        ]
+      }
+    },
+    {
+      "external_match_id": "96732",
+      "category": "2. HD",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "21-19-19",
+        "awayScore": "16-21-21",
+        "homePlayers": [
+          "Michael Hansen",
+          "Stig Christophersen"
+        ],
+        "awayPlayers": [
+          "(Ukendt spiller)",
+          "(Ukendt spiller)"
+        ]
+      },
+      "database": {
+        "homeScore": "21-19-19",
+        "awayScore": "16-21-21",
+        "homePlayers": [
+          "Michael Hansen",
+          "Stig Christophersen"
+        ],
+        "awayPlayers": [
+          "Ikke fremmødt"
+        ]
+      }
+    },
+    {
+      "external_match_id": "281758",
+      "category": "4. MD",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "18-21-18",
+        "awayScore": "21-18-21",
+        "homePlayers": [
+          "Peter Gerhardt",
+          "Susanne Meldgaard"
+        ],
+        "awayPlayers": [
+          "Mogens Jørgensen",
+          "Anne Gerner Andersen"
+        ]
+      },
+      "database": {
+        "homeScore": "18-21-18",
+        "awayScore": "21-18-21",
+        "homePlayers": [
+          "Susanne  Meldgaard",
+          "Peter Gerhardt"
+        ],
+        "awayPlayers": [
+          "Mogens Jørgensen",
+          "Anne Gerner Andersen"
+        ]
+      }
+    },
+    {
+      "external_match_id": "281758",
+      "category": "2. DD",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "15-14",
+        "awayScore": "21-21",
+        "homePlayers": [
+          "Annemarie Meldgaard",
+          "Susanne Meldgaard"
+        ],
+        "awayPlayers": [
+          "Anne Gerner Andersen",
+          "Ulla Milsted"
+        ]
+      },
+      "database": {
+        "homeScore": "15-14",
+        "awayScore": "21-21",
+        "homePlayers": [
+          "Susanne  Meldgaard",
+          "Annemarie Meldgaard"
+        ],
+        "awayPlayers": [
+          "Ulla Milsted",
+          "Anne Gerner Andersen"
+        ]
+      }
+    },
+    {
+      "external_match_id": "330229",
+      "category": "2. MD",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "21-9-14",
+        "awayScore": "19-21-21",
+        "homePlayers": [
+          "Troels Ovdal Larsen",
+          "Susanne Meldgaard"
+        ],
+        "awayPlayers": [
+          "Carsten Nielsen",
+          "Kathrine Blichsted Brauer"
+        ]
+      },
+      "database": {
+        "homeScore": "21-9-14",
+        "awayScore": "19-21-21",
+        "homePlayers": [
+          "Troels Ovdal Larsen",
+          "Susanne  Meldgaard"
+        ],
+        "awayPlayers": [
+          "Carsten Nielsen",
+          "Kathrine Blichsted Brauer"
+        ]
+      }
+    },
+    {
+      "external_match_id": "330229",
+      "category": "1. DD",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "3-5",
+        "awayScore": "21-21",
+        "homePlayers": [
+          "Lone Basse",
+          "Susanne Meldgaard"
+        ],
+        "awayPlayers": [
+          "Kathrine Blichsted Brauer",
+          "Maria Hjortshøj"
+        ]
+      },
+      "database": {
+        "homeScore": "3-5",
+        "awayScore": "21-21",
+        "homePlayers": [
+          "Susanne  Meldgaard",
+          "Lone Basse"
+        ],
+        "awayPlayers": [
+          "Kathrine Blichsted Brauer",
+          "Maria Hjortshøj"
+        ]
+      }
+    },
+    {
+      "external_match_id": "428969",
+      "category": "2. HS",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "19-10",
+        "awayScore": "21-21",
+        "homePlayers": [
+          "Yiting Chen"
+        ],
+        "awayPlayers": [
+          "Markus Larsen"
+        ]
+      },
+      "database": {
+        "homeScore": "19-10",
+        "awayScore": "21-21",
+        "homePlayers": [
+          "Yiting Chen"
+        ],
+        "awayPlayers": [
+          "Markus  Larsen"
+        ]
+      }
+    },
+    {
+      "external_match_id": "428969",
+      "category": "1. HD",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "14-10",
+        "awayScore": "21-21",
+        "homePlayers": [
+          "Jesper Hyldal",
+          "Mathias Brænder"
+        ],
+        "awayPlayers": [
+          "Markus Larsen",
+          "Morten Sode"
+        ]
+      },
+      "database": {
+        "homeScore": "14-10",
+        "awayScore": "21-21",
+        "homePlayers": [
+          "Jesper Hyldal",
+          "Mathias Brænder"
+        ],
+        "awayPlayers": [
+          "Morten Sode",
+          "Markus  Larsen"
+        ]
+      }
+    },
+    {
+      "external_match_id": "465737",
+      "category": "2. MD",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "21-21",
+        "awayScore": "0-0",
+        "homePlayers": [
+          "Ditte Nyeng",
+          "Jesper Hyldal"
+        ],
+        "awayPlayers": [
+          "Lars Balling",
+          "(Ikke fremmødt)"
+        ]
+      },
+      "database": {
+        "homeScore": "21-21",
+        "awayScore": "0-0",
+        "homePlayers": [
+          "Ditte Nyeng",
+          "Jesper Hyldal"
+        ],
+        "awayPlayers": [
+          "Ikke fremmødt",
+          "Lars Balling"
+        ]
+      }
+    },
+    {
+      "external_match_id": "465737",
+      "category": "1. DD",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "21-21",
+        "awayScore": "0-0",
+        "homePlayers": [
+          "Ditte Nyeng",
+          "Leila Soon Jørgensen"
+        ],
+        "awayPlayers": [
+          "Camilla Boesen",
+          "(Ikke fremmødt)"
+        ]
+      },
+      "database": {
+        "homeScore": "21-21",
+        "awayScore": "0-0",
+        "homePlayers": [
+          "Ditte Nyeng",
+          "Leila Soon Jørgensen"
+        ],
+        "awayPlayers": [
+          "Ikke fremmødt",
+          "Camilla Boesen"
+        ]
+      }
+    },
+    {
+      "external_match_id": "466576",
+      "category": "4. MD",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "3-13",
+        "awayScore": "21-21",
+        "homePlayers": [
+          "Susanne Meldgaard",
+          "Jens Kjølby Larsen"
+        ],
+        "awayPlayers": [
+          "Christoffer Ring",
+          "Helle Juel-berg"
+        ]
+      },
+      "database": {
+        "homeScore": "3-13",
+        "awayScore": "21-21",
+        "homePlayers": [
+          "Susanne  Meldgaard",
+          "Jens Kjølby Larsen"
+        ],
+        "awayPlayers": [
+          "Christoffer Ring",
+          "Helle Juel-berg"
+        ]
+      }
+    },
+    {
+      "external_match_id": "466576",
+      "category": "2. DD",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "4-4",
+        "awayScore": "21-21",
+        "homePlayers": [
+          "Benthe Hansen",
+          "Susanne Meldgaard"
+        ],
+        "awayPlayers": [
+          "Lene Thrysøe",
+          "Helle Juel-berg"
+        ]
+      },
+      "database": {
+        "homeScore": "4-4",
+        "awayScore": "21-21",
+        "homePlayers": [
+          "Susanne  Meldgaard",
+          "Benthe Hansen"
+        ],
+        "awayPlayers": [
+          "Helle Juel-berg",
+          "Lene Thrysøe"
+        ]
+      }
+    },
+    {
+      "external_match_id": "486393",
+      "category": "2. MD",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "15-21-21",
+        "awayScore": "21-11-13",
+        "homePlayers": [
+          "Tommy Sonne Alstrøm",
+          "Ditte Hjorth Laursen"
+        ],
+        "awayPlayers": [
+          "Susanne Meldgaard",
+          "Troels Ovdal Larsen"
+        ]
+      },
+      "database": {
+        "homeScore": "15-21-21",
+        "awayScore": "21-11-13",
+        "homePlayers": [
+          "Tommy Sonne Alstrøm",
+          "Ditte Hjorth Laursen"
+        ],
+        "awayPlayers": [
+          "Troels Ovdal Larsen",
+          "Susanne  Meldgaard"
+        ]
+      }
+    },
+    {
+      "external_match_id": "486393",
+      "category": "1. DD",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "21-21",
+        "awayScore": "7-6",
+        "homePlayers": [
+          "Tanja Willumsen",
+          "Ditte Hjorth Laursen"
+        ],
+        "awayPlayers": [
+          "Annette Stæhr",
+          "Susanne Meldgaard"
+        ]
+      },
+      "database": {
+        "homeScore": "21-21",
+        "awayScore": "7-6",
+        "homePlayers": [
+          "Tanja Willumsen",
+          "Ditte Hjorth Laursen"
+        ],
+        "awayPlayers": [
+          "Annette Stæhr",
+          "Susanne  Meldgaard"
+        ]
+      }
+    },
+    {
+      "external_match_id": "486829",
+      "category": "2. HS",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "16-21-21",
+        "awayScore": "21-16-18",
+        "homePlayers": [
+          "Malthe Baltzer"
+        ],
+        "awayPlayers": [
+          "Markus Larsen"
+        ]
+      },
+      "database": {
+        "homeScore": "16-21-21",
+        "awayScore": "21-16-18",
+        "homePlayers": [
+          "Malthe Baltzer"
+        ],
+        "awayPlayers": [
+          "Markus  Larsen"
+        ]
+      }
+    },
+    {
+      "external_match_id": "486829",
+      "category": "1. HD",
+      "sameScore": true,
+      "samePlayers": false,
+      "browser": {
+        "homeScore": "21-21",
+        "awayScore": "18-13",
+        "homePlayers": [
+          "Oliver Guldbæk",
+          "Tobias Weinreich Hansen"
+        ],
+        "awayPlayers": [
+          "Morten Sode",
+          "Markus Larsen"
+        ]
+      },
+      "database": {
+        "homeScore": "21-21",
+        "awayScore": "18-13",
+        "homePlayers": [
+          "Oliver Guldbæk",
+          "Tobias Weinreich Hansen"
+        ],
+        "awayPlayers": [
+          "Morten Sode",
+          "Markus  Larsen"
+        ]
+      }
+    }
+  ]
+}

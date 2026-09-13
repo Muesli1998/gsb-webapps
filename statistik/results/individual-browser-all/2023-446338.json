@@ -1,0 +1,29 @@
+{
+  "key": "2023:446338",
+  "season": 2023,
+  "matchId": 446338,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "Dragør 1",
+  "ageGroupId": "9",
+  "leagueGroupId": "15888",
+  "roundDate": "2024-03-03",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,15888,1,8,,446338,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2023-446338.json",
+  "verifiedAt": "2026-09-12T16:56:30.208Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,15888,1,8,,446338,1093,",
+  "individual": {
+    "text": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+    "players": [
+      {
+        "name": "Vis spillerprofil",
+        "href": "https://www.badmintonplayer.dk/DBF/Spiller/VisSpiller/",
+        "id": null
+      }
+    ],
+    "categories": [],
+    "scores": []
+  }
+}

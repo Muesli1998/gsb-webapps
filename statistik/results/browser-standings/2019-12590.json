@@ -1,0 +1,99 @@
+{
+  "season": 2019,
+  "groupId": "12590",
+  "status": "verified",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2019,12590,1,,,,1093,",
+  "retrievedAt": "2026-09-12T18:34:13.388Z",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+50 2019/2020\nVis rækker\n\n\n50+ 4. Serie Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVUNDNE\tSCORE\tSÆT\tPOINT\n1\tGladsaxe Søborg 3\t6\t6\t38-10\t77-30\t12\n2\tKMB2010 2\t6\t5\t41-7\t85-22\t11\n3\tPosten Kbh. 1\t6\t3\t22-26\t52-60\t6\n4\tRødovre/KFUM KBH 2\t6\t2\t23-25\t54-61\t5\n5\tLyngby 4\t6\t2\t21-27\t53-59\t5\n6\tTingbjerg 2\t6\t2\t20-28\t49-67\t5\n7\tValby BC 1\t6\t1\t21-27\t52-59\t4\n8\tFKIF Frederiksberg 3\t6\t0\t6-42\t21-85\t0\n\nUdskriv | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+  "tables": [
+    [
+      [
+        "",
+        "FAQ Opret brugerkonto Log ind"
+      ]
+    ],
+    [
+      [
+        "#",
+        "HOLD",
+        "KAMPE",
+        "VUNDNE",
+        "SCORE",
+        "SÆT",
+        "POINT"
+      ],
+      [
+        "1",
+        "Gladsaxe Søborg 3",
+        "6",
+        "6",
+        "38-10",
+        "77-30",
+        "12"
+      ],
+      [
+        "2",
+        "KMB2010 2",
+        "6",
+        "5",
+        "41-7",
+        "85-22",
+        "11"
+      ],
+      [
+        "3",
+        "Posten Kbh. 1",
+        "6",
+        "3",
+        "22-26",
+        "52-60",
+        "6"
+      ],
+      [
+        "4",
+        "Rødovre/KFUM KBH 2",
+        "6",
+        "2",
+        "23-25",
+        "54-61",
+        "5"
+      ],
+      [
+        "5",
+        "Lyngby 4",
+        "6",
+        "2",
+        "21-27",
+        "53-59",
+        "5"
+      ],
+      [
+        "6",
+        "Tingbjerg 2",
+        "6",
+        "2",
+        "20-28",
+        "49-67",
+        "5"
+      ],
+      [
+        "7",
+        "Valby BC 1",
+        "6",
+        "1",
+        "21-27",
+        "52-59",
+        "4"
+      ],
+      [
+        "8",
+        "FKIF Frederiksberg 3",
+        "6",
+        "0",
+        "6-42",
+        "21-85",
+        "0"
+      ]
+    ]
+  ]
+}

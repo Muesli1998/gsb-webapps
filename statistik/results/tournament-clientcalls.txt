@@ -1,0 +1,69 @@
+
+URL https://badmintonplayer.dk/sportsresults/components/tournamentcomponents/selecttournament.js?v=16
+sid;
+        this.hiddenSelectedTournamentEventID.value = '';
+        this.ClosePopup();
+        if (this.showevents) {
+            this.imageWait.style.display = '';
+            this.divEvents.innerHTML = '';
+            this.events = null;
+            var playerselectfunction = '';
+            if (this.searchplayer) {
+                playerselectfunction = this.searchplayer.get_SelectFunctionName();
+            }
+            SportsResults_WebApp.SportsResults.Components.WebService1.GetTournamentEvents(SR_CallbackContext, 'selectTournament' + this.instance + '.SelectEvent', this.instance, tournamentclassid, playerselectfunction, 'SelectTournamentClass' + this.instance, this.selectopenonly, this.clubid, this.adminclubid, this.selectediscipline, SelectTournamentSucceededCallback, SelectTournamentFailedCallback, this);
+        } else if (this.autoupdateinfo) {
+            this.imageWait.style.display = '';
+            SportsResults_WebApp.SportsResults.Components.WebService1.GetTournamentClassInfo(SR_CallbackContext, this.instance, tournamentclassid, SelectTournamentSucceededCallback, SelectTournamentFailedCallback, this);
+        }
+        this.Commit(tournamentclassid, null);
+        return false;
+    };
+    this.SucceededCallback = function (result, userContext, methodName) {
+        this.imageWait.style.display = 'none';
+        this.set_ClassInfo(result.
+urnamentclassid;
+        this.hiddenSelectedTournamentEventID.value = '';
+        this.ClosePopup();
+        if (this.showevents) {
+            this.imageWait.style.display = '';
+            this.divEvents.innerHTML = '';
+            this.events = null;
+            var playerselectfunction = '';
+            if (this.searchplayer) {
+                playerselectfunction = this.searchplayer.get_SelectFunctionName();
+            }
+            SportsResults_WebApp.SportsResults.Components.WebService1.GetTournamentEvents(SR_CallbackContext, 'selectTournament' + this.instance + '.SelectEvent', this.instance, tournamentclassid, playerselectfunction, 'SelectTournamentClass' + this.instance, this.selectopenonly, this.clubid, this.adminclubid, this.selectediscipline, SelectTournamentSucceededCallback, SelectTournamentFailedCallback, this);
+        } else if (this.autoupdateinfo) {
+            this.imageWait.style.display = '';
+            SportsResults_WebApp.SportsResults.Components.WebService1.GetTournamentClassInfo(SR_CallbackContext, this.instance, tournamentclassid, SelectTournamentSucceededCallback, SelectTournamentFailedCallback, this);
+        }
+        this.Commit(tournamentclassid, null);
+        return false;
+    };
+    this.SucceededCallback = function (result, userContext, methodName) {
+        this.imageWait.style.display = 'none';
+        this.set_Class
+bService1.GetTournamentEvents(SR_CallbackContext, 'selectTournament' + this.instance + '.SelectEvent', this.instance, tournamentclassid, playerselectfunction, 'SelectTournamentClass' + this.instance, this.selectopenonly, this.clubid, this.adminclubid, this.selectediscipline, SelectTournamentSucceededCallback, SelectTournamentFailedCallback, this);
+        } else if (this.autoupdateinfo) {
+            this.imageWait.style.display = '';
+            SportsResults_WebApp.SportsResults.Components.WebService1.GetTournamentClassInfo(SR_CallbackContext, this.instance, tournamentclassid, SelectTournamentSucceededCallback, SelectTournamentFailedCallback, this);
+        }
+        this.Commit(tournamentclassid, null);
+        return false;
+    };
+    this.SucceededCallback = function (result, userContext, methodName) {
+        this.imageWait.style.display = 'none';
+        this.set_ClassInfo(result.Info != null ? result.Info : '');
+        if (result.Html) {
+            this.divEvents.innerHTML = result.Html;
+        }
+        this.events = result.Events;
+        if (this.searchplayer && result.Players) {
+            this.SetSearchPlayerFromResult(this.searchplayer, result);
+        }
+        if (this.selectplayers && result.DefaultPlayer && result.DefaultPlayer.playerID) {
+            for (var i=0; i<this.selectplayers.length; i++) {
+                var selectplayer = 
+
+URL https://badmintonplayer.dk/sportsresults/sportsresults.js?v=14

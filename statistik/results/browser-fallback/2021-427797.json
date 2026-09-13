@@ -1,0 +1,21 @@
+{
+  "key": "2021:427797",
+  "season": 2021,
+  "matchId": 427797,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Lyngby 1",
+  "ageGroupId": "13",
+  "leagueGroupId": "13966",
+  "roundDate": "2021-12-19",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2021,13966,1,8,,427797,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2021-427797.json",
+  "verifiedAt": "2026-09-12T16:58:08.668Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:49:28.902Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2021,13966,1,8,,427797,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+60 2021/2022\nVis rækker\n\n\nSEN+60 1. Serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t427797\nRunde\t5 19-12-2021\nTid\t\nSpillested\t\nHjemmehold\tGladsaxe Søborg 1\nHelle Larsen\nhelle.larsen.hl@gmail.com\n51521909\nUdehold\tLyngby 1\nHenrik Nordvig\njarsnordvig@gmail.com\n20859070\nResultat\t6-2\nPoint\t2-0\n\tGladsaxe Søborg 1\tLyngby 1\t1\t2\t3\tVinder W.O.\n1. MD\t\nBent Horn Andersen\nHelle Larsen\n\t\nKarsten Meier\nHelle Monberg\n\t21 - 12\t15 - 21\t21 - 16\t\n2. MD\t\nhenrik perregaard\nIrene Sterlie\n\t\nHans-Henrik Eigtved\nKirsten Møller\n\t21 - 15\t18 - 21\t22 - 20\t\n4. HD\t\nMichael Bjergsted\nNils Ole Andersen\n\t\nJørgen Jepsen\nLeif Nørgaard\n\t21 - 16\t21 - 12\t\t\n5. HD\t\nTue Abelskov\nSteffen Wad\n\t\nHenning Jørgensen\nKnud Danielsen\n\t21 - 10\t21 - 17\t\t\n1. DD\t\nIrene Sterlie\nHelle Larsen\n\t\nHelle Monberg\nKirsten Møller\n\t21 - 16\t21 - 6\t\t\n1. HD\t\nSteffen Wad\nNils Ole Andersen\n\t\nJørgen Jepsen\nHans-Henrik Eigtved\n\t22 - 20\t16 - 21\t20 - 22\t\n2. HD\t\nMichael Bjergsted\nBent Horn Andersen\n\t\nKarsten Meier\nKnud Danielsen\n\t13 - 21\t21 - 13\t15 - 21\t\n3. HD\t\nTue Abelskov\nhenrik perregaard\n\t\nLeif Nørgaard\nHenning Jørgensen\n\t21 - 10\t21 - 9\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

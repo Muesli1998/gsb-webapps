@@ -1,0 +1,37 @@
+
+ https://badmintonplayer.dk/DBF/Turnering/VisResultater/ len 23289
+SR_CallbackContext ,
+   'minYear'    : 1900
+};SR_InvalidDate='Fejl i dato';
+SR_MissingValue='Værdi mangler';
+SR_InvalidNumber='Fejl i talværdi';SR_dateSeparator = '-';
+SR_dayIndex = 0;
+SR_monthIndex = 1;
+SR_yearIndex = 2;
+var SR_Today = new Date(2026, 8, 12);
+var SR_MinBirthDate = new Date(1926, 8, 12);
+var SR_CallbackContext = 'A97E75D017E82AA07510A67A29F61A2C0998B332CF99A204023BDC688288E4BD9B9DB455959F818DD00573A764C6AECB';
+(function() {var fn = function() {$get("ctl00_ToolkitScriptManager1_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();var TextboxSelectController1=new TextBoxSelectController('Panel1', 'HiddenField1', '#ffe1e1', null, SportsResultsTeamList, SportsResultsExcludeTeams, false);var TextboxSelectController2=new TextBoxSelectController('Pa
+
+ https://badmintonplayer.dk/sportsresults/sportsresults.js?v=14 len 25976
+
+ https://badmintonplayer.dk/sportsresults/components/tournamentcomponents/selecttournament.js?v=16 len 8738
+SR_CallbackContext         this.events = null;
+            var playerselectfunction = '';
+            if (this.searchplayer) {
+                playerselectfunction = this.searchplayer.get_SelectFunctionName();
+            }
+            SportsResults_WebApp.SportsResults.Components.WebService1.GetTournamentEvents(SR_CallbackContext, 'selectTournament' + this.instance + '.SelectEvent', this.instance, tournamentclassid, playerselectfunction, 'SelectTournamentClass' + this.instance, this.selectopenonly, this.clubid, this.adminclubid, this.selectediscipline, SelectTournamentSucceededCallback, SelectTournamentFailedCallback, this);
+        } else if (this.autoupdateinfo) {
+            this.imageWait.style.display = '';
+            SportsResults_WebApp.SportsResults.Components.WebService1.GetTournamentClass
+GetTournamentEvents nnerHTML = '';
+            this.events = null;
+            var playerselectfunction = '';
+            if (this.searchplayer) {
+                playerselectfunction = this.searchplayer.get_SelectFunctionName();
+            }
+            SportsResults_WebApp.SportsResults.Components.WebService1.GetTournamentEvents(SR_CallbackContext, 'selectTournament' + this.instance + '.SelectEvent', this.instance, tournamentclassid, playerselectfunction, 'SelectTournamentClass' + this.instance, this.selectopenonly, this.clubid, this.adminclubid, this.selectediscipline, SelectTournamentSucceededCallback, SelectTournamentFailedCallback, this);
+        } else if (this.autoupdateinfo) {
+            this.imageWait.style.display = '';
+            SportsResults_WebApp.SportsResults.Components.WebService

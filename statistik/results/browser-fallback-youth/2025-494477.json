@@ -1,0 +1,19 @@
+{
+  "key": "2025:494477",
+  "season": 2025,
+  "matchId": 494477,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Skovshoved 1",
+  "ageGroupId": "2",
+  "leagueGroupId": "18129",
+  "roundDate": "2025-10-26",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18129,1,8,,494477,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2025-494477.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:04:39.384Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18129,1,8,,494477,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH,BADSJ U09 2025/2026\nVis rækker\n\n\nU09 C 3600 (3 spillere) BD Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t494477\nRunde\t3 26-10-2025\nTid\tsø 26-10-2025 12:15\nSpillested\tSolrød Idrætscenter Hal C\nTingryds Alle 27\n2680 Solrød Strand\nTelefon 56 14 20 55\nHjemmehold\tGladsaxe Søborg 1\nCamilla Terkildsen\ncamilla.terkildsen@hotmail.com\n28999902\nUdehold\tSkovshoved 1\nMalene Rohden\nmwrohden@gmail.com\n60661001\nResultat\t2-3\nPoint\t1-2\n\tGladsaxe Søborg 1\tSkovshoved 1\t1\t2\t3\tVinder W.O.\n1. S\t\nTobias Geil Christophersen\n\t\nWinston Ryttov Damgaard\n\t12 - 15\t15 - 7\t8 - 15\t\n2. S\t\nNorr Bagge Køhler\n\t\nWilliam West Rohden\n\t17 - 15\t15 - 1\t\t\n3. S\t\nVitus Reinholdt Amelung\n\t\nOskar Spurr Pihlkjær\n\t15 - 6\t15 - 12\t\t\n4. S\t\nJingyi Victoria Han\n\t\nWilliam West Rohden\n\t12 - 15\t12 - 15\t\t\n1. D\t\nNorr Bagge Køhler\nJingyi Victoria Han\n\t\nWinston Ryttov Damgaard\nOskar Spurr Pihlkjær\n\t13 - 15\t16 - 18\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

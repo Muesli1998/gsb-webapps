@@ -1,0 +1,90 @@
+{
+  "season": 2020,
+  "groupId": "13306",
+  "status": "verified",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2020,13306,1,,,,1093,",
+  "retrievedAt": "2026-09-12T18:33:55.331Z",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+50 2020/2021\nVis rækker\n\n\n50+ 3. Serie Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVUNDNE\tSCORE\tSÆT\tPOINT\n1\tDrive 2\t1\t1\t6-2\t13-6\t2\n2\tGladsaxe Søborg 3\t1\t1\t5-3\t11-9\t2\n3\tKBK Kbh. 1\t1\t0\t4-4\t10-9\t1\n4\tLyngby 3\t1\t0\t4-4\t9-10\t1\n5\tKMB2010 2\t1\t0\t4-4\t8-9\t1\n6\tGentofte 3\t2\t0\t6-10\t15-21\t1\n7\tFKIF Frederiksberg 2\t1\t0\t3-5\t9-11\t0\n\nUdskriv | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+  "tables": [
+    [
+      [
+        "",
+        "FAQ Opret brugerkonto Log ind"
+      ]
+    ],
+    [
+      [
+        "#",
+        "HOLD",
+        "KAMPE",
+        "VUNDNE",
+        "SCORE",
+        "SÆT",
+        "POINT"
+      ],
+      [
+        "1",
+        "Drive 2",
+        "1",
+        "1",
+        "6-2",
+        "13-6",
+        "2"
+      ],
+      [
+        "2",
+        "Gladsaxe Søborg 3",
+        "1",
+        "1",
+        "5-3",
+        "11-9",
+        "2"
+      ],
+      [
+        "3",
+        "KBK Kbh. 1",
+        "1",
+        "0",
+        "4-4",
+        "10-9",
+        "1"
+      ],
+      [
+        "4",
+        "Lyngby 3",
+        "1",
+        "0",
+        "4-4",
+        "9-10",
+        "1"
+      ],
+      [
+        "5",
+        "KMB2010 2",
+        "1",
+        "0",
+        "4-4",
+        "8-9",
+        "1"
+      ],
+      [
+        "6",
+        "Gentofte 3",
+        "2",
+        "0",
+        "6-10",
+        "15-21",
+        "1"
+      ],
+      [
+        "7",
+        "FKIF Frederiksberg 2",
+        "1",
+        "0",
+        "3-5",
+        "9-11",
+        "0"
+      ]
+    ]
+  ]
+}

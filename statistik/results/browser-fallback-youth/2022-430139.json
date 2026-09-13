@@ -1,0 +1,19 @@
+{
+  "key": "2022:430139",
+  "season": 2022,
+  "matchId": 430139,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "KBK Kbh. 4",
+  "ageGroupId": "5",
+  "leagueGroupId": "15002",
+  "roundDate": "2023-01-15",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,15002,1,8,,430139,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2022-430139.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:19:00.199Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,15002,1,8,,430139,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2022/2023\nVis rækker\n\n\nU15 5600 4 Spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t430139\nRunde\t5 15-01-2023\nTid\tsø 15-01-2023 10:15\nSpillested\tKrøyersvej\nKrøyersvej 5A\n2930 Klampenborg\nTelefon 39 64 23 83\nHjemmehold\tKBK Kbh. 4\nStine Svarre Gaardhøj\nssvarre@hotmail.com\n22200816\nUdehold\tGladsaxe Søborg 2\nKlaus Hestehave\nklaus@hestehave.com\n30762930\nResultat\t3-4\nPoint\t2-3\n\tKBK Kbh. 4\tGladsaxe Søborg 2\t1\t2\t3\tVinder W.O.\n1. S\t\nCasper Lindhardt Lønborg\n\t\nAsk Unden\n\t\t\t\tG\n2. S\t\nSofie Juul Sandell Sørensen\n\t\nBertram Aavang Arvidson\n\t9 - 21\t14 - 21\t\t\n3. S\t\nAmalie Thrane Vendelbo\n\t\nElias Hestehave\n\t21 - 14\t16 - 21\t21 - 13\t\n4. S\t\nAlma Gaardhøj\n\t\nLoui Stenbæk\n\t21 - 8\t21 - 8\t\t\n1. D\t\nCasper Lindhardt Lønborg\nSofie Juul Sandell Sørensen\n\t\nBertram Aavang Arvidson\nElias Hestehave\n\t\t\t\tG\n2. D\t\nAmalie Thrane Vendelbo\nAlma Gaardhøj\n\t\nLykke Unden\nLoui Stenbæk\n\t21 - 17\t20 - 22\t21 - 12\t\n\nGolden Set\nDD\t\nSofie Juul Sandell Sørensen\nAlma Gaardhøj\n\t\nAsk Unden\nBertram Aavang Arvidson\n\t\n9 - 21\n\t\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

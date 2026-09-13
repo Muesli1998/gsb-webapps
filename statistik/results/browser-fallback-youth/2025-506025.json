@@ -1,0 +1,19 @@
+{
+  "key": "2025:506025",
+  "season": 2025,
+  "matchId": 506025,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Nørhalne 1",
+  "ageGroupId": "4",
+  "leagueGroupId": "18604",
+  "roundDate": "2026-04-11",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18604,1,8,,506025,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2025-506025.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:06:37.815Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18604,1,8,,506025,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADDAN,DGI U13 2025/2026\nVis rækker\n\n\nDMU Hold U13C-D (5000) - 4 Spillere Pulje 2\nStilling\nVis alle kampe\n\nKampnr\t506025\nRunde\t1 11-04-2026\nTid\tlø 11-04-2026 12:00\nSpillested\tVorbasse Fritidscenter Hal 2\nDrivvejen 1\n6623 Vorbasse\nHjemmehold\tNørhalne 1\ndennis.buus.bundgaard\ndennis.buus.bundgaard@gmail.com\n26799377\nUdehold\tGladsaxe Søborg 1\nJesper Stensbo Knudsen\njesperstensbo@gmail.com\n23810023\nResultat\t3-4\nPoint\t2-3\n\tNørhalne 1\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. S\t\nTobias Kjær Rasmussen\n\t\nKristian Almeida Møller\n\t25 - 23\t21 - 14\t\t\n2. S\t\nFreja Østergaard\n\t\nLuc Nørmark Jespersen\n\t16 - 21\t7 - 21\t\t\n3. S\t\nWilliam Hartvig Lauesen\n\t\nPontus Einar Anker Mikkelsen\n\t21 - 19\t21 - 16\t\t\n4. S\t\nMikkel Levin\n\t\nSofus Hedegaard Toftlund\n\t19 - 21\t19 - 21\t\t\n1. D\t\nTobias Kjær Rasmussen\nWilliam Hartvig Lauesen\n\t\nLuc Nørmark Jespersen\nPontus Einar Anker Mikkelsen\n\t17 - 21\t21 - 8\t21 - 12\t\n2. D\t\nFreja Østergaard\nOliver Skov Hansen\n\t\nKristian Almeida Møller\nAnton Stensbo Knudsen\n\t16 - 21\t10 - 21\t\t\n\nGolden Set\nD\t\nTobias Kjær Rasmussen\nOliver Skov Hansen\n\t\nKristian Almeida Møller\nLuc Nørmark Jespersen\n\t\n20 - 22\n\t\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

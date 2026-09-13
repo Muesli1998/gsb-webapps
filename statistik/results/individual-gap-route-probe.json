@@ -1,0 +1,88 @@
+{
+  "generatedAt": "2026-09-13T07:56:12.005Z",
+  "sampledMatches": [
+    {
+      "season_id": 2011,
+      "external_match_id": "1634",
+      "league_group_id": "58"
+    },
+    {
+      "season_id": 2012,
+      "external_match_id": "49469",
+      "league_group_id": "1285"
+    },
+    {
+      "season_id": 2013,
+      "external_match_id": "118590",
+      "league_group_id": "2688"
+    },
+    {
+      "season_id": 2014,
+      "external_match_id": "141993",
+      "league_group_id": "4245"
+    },
+    {
+      "season_id": 2015,
+      "external_match_id": "193095",
+      "league_group_id": "5984"
+    },
+    {
+      "season_id": 2016,
+      "external_match_id": "238585",
+      "league_group_id": "7640"
+    },
+    {
+      "season_id": 2017,
+      "external_match_id": "282735",
+      "league_group_id": "9288"
+    },
+    {
+      "season_id": 2018,
+      "external_match_id": "337433",
+      "league_group_id": "11355"
+    },
+    {
+      "season_id": 2019,
+      "external_match_id": "373813",
+      "league_group_id": "12798"
+    },
+    {
+      "season_id": 2021,
+      "external_match_id": "407422",
+      "league_group_id": "13959"
+    },
+    {
+      "season_id": 2022,
+      "external_match_id": "429509",
+      "league_group_id": "14985"
+    },
+    {
+      "season_id": 2023,
+      "external_match_id": "446325",
+      "league_group_id": "15888"
+    },
+    {
+      "season_id": 2024,
+      "external_match_id": "469703",
+      "league_group_id": "17100"
+    },
+    {
+      "season_id": 2025,
+      "external_match_id": "486396",
+      "league_group_id": "17955"
+    },
+    {
+      "season_id": 2011,
+      "external_match_id": "1636",
+      "league_group_id": "58"
+    },
+    {
+      "season_id": 2018,
+      "external_match_id": "340495",
+      "league_group_id": "11418"
+    }
+  ],
+  "variants": 5,
+  "rows": [],
+  "launchError": "Error: browserType.launchPersistentContext: spawn EPERM\nCall log:\n\u001b[2m  - <launching> C:\\Users\\chril\\AppData\\Local\\ms-playwright\\chromium-1243\\chrome-win64\\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --user-data-dir=C:\\Users\\chril\\Dropbox\\gsb-statistik-test\\.browser-state --remote-debugging-pipe about:blank\u001b[22m\n"
+}

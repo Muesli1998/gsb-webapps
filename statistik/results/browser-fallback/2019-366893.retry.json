@@ -1,0 +1,20 @@
+{
+  "key": "2019:366893",
+  "season": 2019,
+  "matchId": 366893,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Hvidovre 1",
+  "ageGroupId": "17",
+  "leagueGroupId": "12597",
+  "roundDate": "2020-03-22",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12597,1,8,,366893,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2019-366893.json",
+  "verifiedAt": "2026-09-12T19:14:53.026Z",
+  "resultSource": "playwright_persistent_browser_retry",
+  "verification": "Dynamic match page rendered with match details",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12597,1,8,,366893,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+70 2019/2020\nVis rækker\n\n\n70+ 1. Serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t366893\nRunde\t6 22-03-2020\nTid\ton 18-03-2020 18:30\nSpillested\tHBC-Hallen\nBibliotekvej 62\n2650 Hvidovre\nTelefon 36 49 10 05\nHjemmehold\tHvidovre 1\nLajla Sørensen\nxlys@godmail.dk\n60521911\nUdehold\tGladsaxe Søborg 1\nKurt Mehlsen\nKurt.mehlsen@post.tele.dk\n40386493\nResultat\t-\nPoint\t-\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+  "classification": "corona_suspended",
+  "classificationReason": "Resultat minus and date falls within documented Danish badminton suspension period"
+}

@@ -1,0 +1,21 @@
+{
+  "key": "2023:446341",
+  "season": 2023,
+  "matchId": 446341,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "Pan Kbh. 1",
+  "ageGroupId": "9",
+  "leagueGroupId": "15888",
+  "roundDate": "2024-03-17",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,15888,1,8,,446341,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2023-446341.json",
+  "verifiedAt": "2026-09-12T16:56:30.208Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:48:31.400Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,15888,1,8,,446341,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+40 2023/2024\nVis rækker\n\n\n20. serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t446341\nRunde\t7 17-03-2024\nTid\tsø 17-03-2024 12:00\nSpillested\tGrøndal Centret Hal J\nHvidkildevej 64\n2400 København NV\nHjemmehold\tPan Kbh. 1\nJakob Esposito\nespositojakob@gmail.com\n31505129\nUdehold\tGladsaxe Søborg 3\nFrank Nielsen\nfrank.nielsen@post.tele.dk\n41951100\nResultat\t1-7\nPoint\t0-2\n\tPan Kbh. 1\tGladsaxe Søborg 3\t1\t2\t3\tVinder W.O.\n1. D\t\nHenrik Skibsted Als Jørgensen\nFlemming Green Sørensen\n\t\nMartin Yulzari\nKristian Serup\n\t13 - 21\t16 - 21\t\tG\n2. D\t\nGelo De La Cruz\nRikko Steengaard\n\t\nMorten Nielsen\nTim Guldbæk\n\t21 - 17\t7 - 21\t14 - 21\tG\n3. D\t\nAdrian Arsenal\nGray Pendrick\n\t\nJan Hindsbo\nCarsten Nørgaard\n\t4 - 21\t9 - 21\t\tG\n4. D\t\nKim Dreiøe\nSofia Lifshits\n\t\nFrank Nielsen\nMichael Lindbo\n\t10 - 21\t10 - 21\t\tG\n5. D\t\nRikko Steengaard\nHenrik Skibsted Als Jørgensen\n\t\nMartin Yulzari\nMorten Nielsen\n\t21 - 18\t18 - 21\t17 - 21\tG\n6. D\t\nSofia Lifshits\nFlemming Green Sørensen\n\t\nKristian Serup\nTim Guldbæk\n\t11 - 21\t12 - 21\t\tG\n7. D\t\nAdrian Arsenal\nGelo De La Cruz\n\t\nFrank Nielsen\nCarsten Nørgaard\n\t16 - 21\t9 - 21\t\tG\n8. D\t\nKim Dreiøe\nGray Pendrick\n\t\nMichael Lindbo\nJan Hindsbo\n\t18 - 21\t21 - 18\t21 - 18\tP\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

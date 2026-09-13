@@ -1,0 +1,21 @@
+{
+  "key": "2019:366883",
+  "season": 2019,
+  "matchId": 366883,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Gentofte Motionist BK 1",
+  "ageGroupId": "17",
+  "leagueGroupId": "12597",
+  "roundDate": "2019-11-03",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12597,1,8,,366883,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2019-366883.json",
+  "verifiedAt": "2026-09-12T19:14:43.849Z",
+  "resultSource": "playwright_persistent_browser_retry",
+  "verification": "Dynamic match page rendered with match details",
+  "reverifiedAt": "2026-09-13T05:52:07.901Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12597,1,8,,366883,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+70 2019/2020\nVis rækker\n\n\n70+ 1. Serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t366883\nRunde\t1 03-11-2019\nTid\tsø 27-10-2019 14:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 1\nKurt Mehlsen\nKurt.mehlsen@post.tele.dk\n40386493\nUdehold\tGentofte Motionist BK 1\nJørgen Benni Højager Christensen\nskjoldg@gmail.com\n20976440\nResultat\t6-0\nPoint\t2-0\n\tGladsaxe Søborg 1\tGentofte Motionist BK 1\t1\t2\t3\tVinder W.O.\n1. D\t\nMogens Jørgensen\nLeif Hansen\n\t\nChristian Voetman\nKirsten Hundborg\n\t21 - 16\t21 - 7\t\t\n2. D\t\nMarcel Yulzari\nHans Thor christensen\n\t\nSteen tabart\nRita Højland\n\t21 - 15\t21 - 16\t\t\n3. D\t\nSvend Valentin Rasmussen\nNiels Tindbæk\n\t\nHenning Jacobsen\nKarl Iver Madsen\n\t21 - 12\t21 - 18\t\t\n4. D\t\nSvend Valentin Rasmussen\nMarcel Yulzari\n\t\nKarl Iver Madsen\nRita Højland\n\t21 - 12\t23 - 21\t\t\n5. D\t\nMogens Jørgensen\nHans Thor christensen\n\t\nChristian Voetman\nHenning Jacobsen\n\t21 - 17\t19 - 21\t21 - 18\t\n6. D\t\nLeif Hansen\nNiels Tindbæk\n\t\nKirsten Hundborg\nSteen tabart\n\t21 - 17\t21 - 17\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

@@ -1,0 +1,21 @@
+{
+  "key": "2018:337425",
+  "season": 2018,
+  "matchId": 337425,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Skælskør 1",
+  "ageGroupId": "18",
+  "leagueGroupId": "11355",
+  "roundDate": "2018-11-18",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2018,11355,1,8,,337425,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2018-337425.json",
+  "verifiedAt": "2026-09-12T19:15:00.365Z",
+  "resultSource": "playwright_persistent_browser_retry",
+  "verification": "Dynamic match page rendered with match details",
+  "reverifiedAt": "2026-09-13T05:52:22.657Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2018,11355,1,8,,337425,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH,BADSJ,DGI-NSJ,DGI-STS,DGI-MVS U17/U19 2018/2019\nVis rækker\n\n\nU17/19 M 4 Spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t337425\nRunde\t3 18-11-2018\nTid\tsø 18-11-2018 16:30\nSpillested\tSkinderskovhallen\nSkinderskovvej 31\n2730 Herlev\nTelefon 44 92 01 73\nHjemmehold\tGladsaxe Søborg 1\nDitte Nyeng\nDittenyeng@gmail.com\n61691577\nUdehold\tSkælskør 1\nEmil Staack\nemilstaack@top-performance.dk\n28892252\nResultat\t0-6\nPoint\t0-3\n\tGladsaxe Søborg 1\tSkælskør 1\t1\t2\t3\tVinder W.O.\n1. S\t\nOliver Frei\n\t\nTobias Stegman Rønbøg\n\t19 - 21\t16 - 21\t\t\n2. S\t\nTobias Weinreich Hansen\n\t\nMikkel Hansen\n\t12 - 21\t18 - 21\t\t\n3. S\t\nJakob Buus Nyeng\n\t\nAnders Rasmussen\n\t16 - 21\t15 - 21\t\t\n4. S\t\nRasmus Lyhne Fiehn\n\t\nJeppe Bardenfleth-Hansen Løjborg\n\t20 - 22\t16 - 21\t\t\n1. D\t\nOliver Frei\nJakob Buus Nyeng\n\t\nTobias Stegman Rønbøg\nJeppe Bardenfleth-Hansen Løjborg\n\t20 - 22\t18 - 21\t\t\n2. D\t\nTobias Weinreich Hansen\nRasmus Lyhne Fiehn\n\t\nMikkel Hansen\nAnders Rasmussen\n\t7 - 21\t14 - 21\t\t\n\n\nReserver\nGladsaxe Søborg 1\tSkælskør 1\n\n\nRasmus Lyhne Fiehn\nfor Jonathan W. Hansen\n\n\t\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

@@ -1,0 +1,22 @@
+{
+  "key": "2025:492293",
+  "season": 2025,
+  "matchId": 492293,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Vallensbæk 2",
+  "ageGroupId": "18",
+  "leagueGroupId": "18122",
+  "roundDate": "2025-10-26",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18122,1,8,,492293,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2025-492293.json",
+  "verifiedAt": "2026-09-12T16:37:17.669Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "walkoverObserved": false,
+  "reverifiedAt": "2026-09-13T05:46:24.598Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18122,1,8,,492293,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH,BADSJ,DGI-NSJ,DGI-MVS U17/U19 2025/2026\nVis rækker\n\n\nU17/U19 D, 5200 (4 spillere) Pulje 3\nStilling\nVis alle kampe\n\nKampnr\t492293\nRunde\t3 26-10-2025\nTid\tsø 26-10-2025 11:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tVallensbæk 2\nMagnus Kvalheim\nmagnus@kvalheim.dk\n61665679\nUdehold\tGladsaxe Søborg 2\nJacob Hinge Carlsson\njaccarl@hotmail.com\n21943796\nResultat\t4-2\nPoint\t3-1\n\tVallensbæk 2\tGladsaxe Søborg 2\t1\t2\t3\tVinder W.O.\n1. S\t\nSara Cecilie Kvalheim\n\t\nCarsten Yan\n\t22 - 20\t11 - 21\t19 - 21\t\n2. S\t\nMikkel Hojman\n\t\nLudvig Maunuksela Voss\n\t21 - 6\t21 - 10\t\t\n3. S\t\nJulie Frendrup Skovborg\n\t\nPeter Holger Bjørndal Axelsen\n\t21 - 12\t21 - 6\t\t\n4. S\t\nSiddhi Khanal\n\t\nConrad Lind\n\t14 - 21\t15 - 21\t\t\n1. D\t\nSara Cecilie Kvalheim\nMikkel Hojman\n\t\nCarsten Yan\nPeter Holger Bjørndal Axelsen\n\t22 - 20\t21 - 8\t\t\n2. D\t\nJulie Frendrup Skovborg\nSiddhi Khanal\n\t\nConrad Lind\nLudvig Maunuksela Voss\n\t21 - 10\t21 - 9\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

@@ -1,0 +1,1 @@
+for(const u of ['https://badmintonplayer.dk/DBF/Ranglister/','https://badmintonplayer.dk/DBF/Ranglister/#288']){const s=await (await fetch(u)).text(); console.log('\nURL',u,'len',s.length); for(const term of ['GetRankingListPlayers','rankinglistversiondate','RankingList']){let i=s.indexOf(term); if(i>=0) console.log(s.slice(Math.max(0,i-500),i+1200));}}

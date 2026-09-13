@@ -1,0 +1,21 @@
+{
+  "key": "2016:239114",
+  "season": 2016,
+  "matchId": 239114,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Charlottenlund",
+  "ageGroupId": "6",
+  "leagueGroupId": "7685",
+  "roundDate": "2016-09-25",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7685,1,8,,239114,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2016-239114.json",
+  "verifiedAt": "2026-09-12T17:09:27.401Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "reverifiedAt": "2026-09-13T05:52:52.219Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7685,1,8,,239114,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U17 2016/2017\nVis rækker\n\n\nU17/U19 B (4) P2 Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t239114\nRunde\t1 25-09-2016\nTid\tsø 25-09-2016 13:00\nSpillested\tCBK-Hallen\nMaltegaardsvej 18\n2820 Gentofte\nTelefon 39 65 24 66\nHjemmehold\tCharlottenlund\nAnnemarie Varming\namvarming@gmail.com\n24779023\nUdehold\tGladsaxe Søborg\nMartin Roed\nroed.martin@gmail.com\n28982093\nResultat\t2-4\nPoint\t0-3\n\tCharlottenlund\tGladsaxe Søborg\t1\t2\t3\tVinder W.O.\n1. S\t\nShawn Jerrico Carlsen\n\t\nAndreas Lyhne Fiehn\n\t21 - 14\t21 - 9\t\t\n2. S\t\nJan Mao Zeeberg\n\t\nAlexander Bonde Skov\n\t21 - 9\t21 - 17\t\t\n3. S\t\nIda Sofie Smidt\n\t\nDaniel Søberg Roed\n\t11 - 21\t11 - 21\t\t\n4. S\t\nSiwi Putu Puspa Eisner\n\t\nErik Juul\n\t15 - 21\t13 - 21\t\t\n1. D\t\nShawn Jerrico Carlsen\nJan Mao Zeeberg\n\t\nAndreas Lyhne Fiehn\nErik Juul\n\t16 - 21\t21 - 23\t\t\n2. D\t\nIda Sofie Smidt\nSiwi Putu Puspa Eisner\n\t\nDaniel Søberg Roed\nAlexander Bonde Skov\n\t9 - 21\t7 - 21\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

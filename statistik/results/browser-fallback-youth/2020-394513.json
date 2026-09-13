@@ -1,0 +1,19 @@
+{
+  "key": "2020:394513",
+  "season": 2020,
+  "matchId": 394513,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "SAIF Kbh. 3",
+  "ageGroupId": "5",
+  "leagueGroupId": "13473",
+  "roundDate": "2020-10-25",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13473,1,8,,394513,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2020-394513.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:23:32.329Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13473,1,8,,394513,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2020/2021\nVis rækker\n\n\nU15 4200 4 Spillere P2 Pulje 2\nStilling\nVis alle kampe\n\nKampnr\t394513\nRunde\t1 25-10-2020\nTid\tlø 24-10-2020 10:15\nSpillested\tHallen ved Skolen på Islands Brygge\nArtillerivej 57\n2300 København S\nHjemmehold\tGladsaxe Søborg 2\nAnn-Louise Bergström\nannlouberg@gmail.com\n51609532\nUdehold\tSAIF Kbh. 3\nJoakim Dyhr Bach\ndyhrbach@live.dk\n20862934\nResultat\t6-0\nPoint\t3-0\n\tGladsaxe Søborg 2\tSAIF Kbh. 3\t1\t2\t3\tVinder W.O.\n1. S\t\nTobias Holm-Hansen\n\t\nAlbert Ehlers Vejlby\n\t21 - 9\t21 - 9\t\t\n2. S\t\nLinus Bergstrøm Hesselballe\n\t\nWilliam Hansen\n\t21 - 10\t21 - 15\t\t\n3. S\t\nNikolaj Thorslund Hindsbo\n\t\nEmil Eg Rahbek\n\t21 - 4\t21 - 3\t\t\n4. S\t\nTore Kristian Krogh\n\t\nSilas Ringsholt Harder\n\t21 - 4\t21 - 4\t\t\n1. D\t\nLinus Bergstrøm Hesselballe\nNikolaj Thorslund Hindsbo\n\t\nAlbert Ehlers Vejlby\nWilliam Hansen\n\t21 - 12\t21 - 12\t\t\n2. D\t\nTobias Holm-Hansen\nTore Kristian Krogh\n\t\nEmil Eg Rahbek\nSilas Ringsholt Harder\n\t21 - 14\t21 - 3\t\t\n\n\nReserver\nGladsaxe Søborg 2\tSAIF Kbh. 3\n\n\nTobias Holm-Hansen\nfor Konrad Juul Wurlitzer\n\n\t\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

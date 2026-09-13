@@ -1,0 +1,19 @@
+{
+  "key": "2011:2553",
+  "season": 2011,
+  "matchId": 2553,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "Dragør 2",
+  "ageGroupId": "5",
+  "leagueGroupId": "108",
+  "roundDate": "2012-01-15",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,108,1,8,,2553,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2011-2553.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:32:55.147Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,108,1,8,,2553,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2011/2012\nVis rækker\n\n\nU15 Serie X2 U15 Serie X2\nStilling\nVis alle kampe\n\nKampnr\t2553\nRunde\t5 15-01-2012\nTid\tsø 15-01-2012 15:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 3\nUdehold\tDragør 2\nResultat\t5-1\nPoint\t2-0\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

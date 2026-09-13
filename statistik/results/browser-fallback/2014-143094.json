@@ -1,0 +1,21 @@
+{
+  "key": "2014:143094",
+  "season": 2014,
+  "matchId": 143094,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "KFUM Badminton Kbh.",
+  "ageGroupId": "6",
+  "leagueGroupId": "4266",
+  "roundDate": "2014-09-21",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2014,4266,1,8,,143094,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2014-143094.json",
+  "verifiedAt": "2026-09-12T17:10:06.217Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "reverifiedAt": "2026-09-13T05:53:59.461Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2014,4266,1,8,,143094,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U17 2014/2015\nVis rækker\n\n\nU17 2.serie (4+2 M) Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t143094\nRunde\t2 21-09-2014\nTid\tsø 21-09-2014 12:00\nSpillested\tEmdruphallen\nNøkkerosevej 23\n2400 København NV\nHjemmehold\tKFUM Badminton Kbh.\nikke angivet\ny@y.dk\n?\nUdehold\tGladsaxe Søborg\nChristian Thrysøe\nchristian.fam.thrysoe@gmail.com\n29482620\nResultat\t0-8\nPoint\t0-2\nAfgjort uden kamp (afbud/udeblivelse)\n\nIndberetningen er ikke endelig og kan ændres\n\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

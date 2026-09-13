@@ -1,0 +1,21 @@
+{
+  "key": "2021:407493",
+  "season": 2021,
+  "matchId": 407493,
+  "teamName": "Gladsaxe Søborg 4",
+  "opponent": "PI København 1",
+  "ageGroupId": "9",
+  "leagueGroupId": "13961",
+  "roundDate": "2022-01-30",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2021,13961,1,8,,407493,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2021-407493.json",
+  "verifiedAt": "2026-09-12T16:58:08.668Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:49:22.317Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2021,13961,1,8,,407493,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+40 2021/2022\nVis rækker\n\n\nSEN+40 20. Serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t407493\nRunde\t6 30-01-2022\nTid\tlø 19-03-2022 16:00\nSpillested\tKatrinedalshallen\nKatrinedalsvej 6\n2720 Vanløse\nTelefon 38 71 88 48\nHjemmehold\tPI København 1\nNikolaj Kjærsgaard\nkongenafamager@yahoo.dk\n22752539\nUdehold\tGladsaxe Søborg 4\nFrank Nielsen\nfrank.nielsen@post.tele.dk\n41951100\nBemærkning\tGSB 4 meldte afbud 16.03.2022\nResultat\t8-0\nPoint\t2-0\nAfgjort uden kamp (afbud/udeblivelse)\n\nIndberetningen er ikke endelig og kan ændres\n\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

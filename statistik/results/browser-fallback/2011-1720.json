@@ -1,0 +1,21 @@
+{
+  "key": "2011:1720",
+  "season": 2011,
+  "matchId": 1720,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "Frederiksberg 4",
+  "ageGroupId": "1",
+  "leagueGroupId": "60",
+  "roundDate": "2011-10-16",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,60,1,8,,1720,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2011-1720.json",
+  "verifiedAt": "2026-09-12T17:10:58.796Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "reverifiedAt": "2026-09-13T05:55:29.643Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,60,1,8,,1720,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN 2011/2012\nVis rækker\n\n\n2. Serie Pulje 1 2. Serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t1720\nRunde\t2 16-10-2011\nTid\tlø 15-10-2011 13:30\nSpillested\tFBK-Hallen\nRolighedsvej 31\n1958 Frederiksberg C\nTelefon 35 39 18 87\nHjemmehold\tFrederiksberg 4\nUdehold\tGladsaxe Søborg 3\nResultat\t10-3\nPoint\t3-0\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

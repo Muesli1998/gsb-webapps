@@ -1,0 +1,19 @@
+{
+  "key": "2025:493222",
+  "season": 2025,
+  "matchId": 493222,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Skovshoved 2",
+  "ageGroupId": "2",
+  "leagueGroupId": "18127",
+  "roundDate": "2025-10-26",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18127,1,8,,493222,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2025-493222.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:04:55.732Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18127,1,8,,493222,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U09 2025/2026\nVis rækker\n\n\nU09 D 3300 (3 spillere) BD Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t493222\nRunde\t3 26-10-2025\nTid\tsø 26-10-2025 10:00\nSpillested\tCBK-Hallen\nMaltegaardsvej 18\n2820 Gentofte\nTelefon 39 65 24 66\nHjemmehold\tGladsaxe Søborg 2\nAnders Køhler\nanders_koehler@hotmail.com\n26256328\nUdehold\tSkovshoved 2\nLars Pedersen\nlp@larspedersen.com\n60750099\nResultat\t0-5\nPoint\t0-3\n\tGladsaxe Søborg 2\tSkovshoved 2\t1\t2\t3\tVinder W.O.\n1. S\t\nJens Antonio Manfredi Willumsen\n\t\nFreya Pedersen\n\t10 - 15\t10 - 15\t\t\n2. S\t\nJonathan Nielsen\n\t\nTheodor Rahbek\n\t10 - 15\t7 - 15\t\t\n3. S\t\nIna Bagge Køhler\n\t\nFrederik Linde\n\t12 - 15\t3 - 15\t\t\n4. S\t\nJonathan Nielsen\n\t\nFrederik Linde\n\t12 - 15\t9 - 15\t\t\n1. D\t\nIna Bagge Køhler\nJosephine Geil Christophersen\n\t\nFreya Pedersen\nTheodor Rahbek\n\t6 - 15\t7 - 15\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

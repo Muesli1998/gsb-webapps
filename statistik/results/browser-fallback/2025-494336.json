@@ -1,0 +1,22 @@
+{
+  "key": "2025:494336",
+  "season": 2025,
+  "matchId": 494336,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "KBK Kbh. 3",
+  "ageGroupId": "18",
+  "leagueGroupId": "18154",
+  "roundDate": "2025-10-26",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18154,1,8,,494336,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2025-494336.json",
+  "verifiedAt": "2026-09-12T16:37:17.669Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "walkoverObserved": false,
+  "reverifiedAt": "2026-09-13T05:46:16.417Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18154,1,8,,494336,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U17/U19 2025/2026\nVis rækker\n\n\nC-D 5600 (4 spillere) BD Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t494336\nRunde\t3 26-10-2025\nTid\tsø 26-10-2025 13:00\nSpillested\tFBK-Hallen\nRolighedsvej 31\n1958 Frederiksberg C\nTelefon 35 39 18 87\nHjemmehold\tKBK Kbh. 3\nHemant Bhatia\nhe@sag.dk\n60157393\nUdehold\tGladsaxe Søborg 1\nPia Lebeck Frederiksen\npia@lebeckfrederiksen.dk\n29938604\nResultat\t0-6\nPoint\t0-4\n\tKBK Kbh. 3\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. S\t\nNikolas Raae Teisen\n\t\nIan Park\n\t6 - 21\t12 - 21\t\t\n2. S\t\nSimon Boa\n\t\nJakob Lebeck Frederiksen\n\t14 - 21\t12 - 21\t\t\n3. S\t\nGeo Stub Barter\n\t\nWilliam Romm Egi\n\t12 - 21\t17 - 21\t\t\n4. S\t\nFrederik Lynbech Carlsson\n\t\nOliver Rafah Peddinini Joe\n\t17 - 21\t17 - 21\t\t\n1. D\t\nNikolas Raae Teisen\nFrederik Lynbech Carlsson\n\t\nWilliam Romm Egi\nJakob Lebeck Frederiksen\n\t11 - 21\t16 - 21\t\t\n2. D\t\nSimon Boa\nGeo Stub Barter\n\t\nIan Park\nOliver Rafah Peddinini Joe\n\t11 - 21\t18 - 21\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

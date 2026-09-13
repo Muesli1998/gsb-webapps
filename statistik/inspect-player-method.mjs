@@ -1,0 +1,1 @@
+const s=await (await fetch('https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/js')).text(); for(const term of ['GetPlayerProfile','SearchPlayer:function','SearchTournamentResults:function']){const i=s.indexOf(term); console.log(s.slice(Math.max(0,i-200),i+700));}

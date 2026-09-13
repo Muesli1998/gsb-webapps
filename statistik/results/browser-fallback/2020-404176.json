@@ -1,0 +1,21 @@
+{
+  "key": "2020:404176",
+  "season": 2020,
+  "matchId": 404176,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Tingbjerg 1",
+  "ageGroupId": "9",
+  "leagueGroupId": "13299",
+  "roundDate": "2021-04-25",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13299,1,8,,404176,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2020-404176.json",
+  "verifiedAt": "2026-09-12T16:59:39.253Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:50:16.403Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13299,1,8,,404176,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+40 2020/2021\nVis rækker\n\n\n40+ 2. Serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t404176\nRunde\t9 25-04-2021\nTid\tsø 25-04-2021 13:30\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 2\nMerete Jacobsen\nmeretejaco@hotmail.com\n23261369\nUdehold\tTingbjerg 1\nGlenn Schytte\nglenn.schytte@godmail.dk\n93880530\nResultat\t-\nPoint\t-\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

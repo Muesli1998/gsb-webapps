@@ -1,0 +1,2 @@
+https://badmintonplayer.dk/DBF/Spiller/VisSpiller/#84737 200 29488 false
+https://badmintonplayer.dk/DBF/Turnering/VisResultater/#115342,490920 200 23289 false

@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-09-13T04:54:01.106Z",
+  "out": [
+    {
+      "matchId": 506407,
+      "season": 2025,
+      "gate": false,
+      "chars": 292,
+      "hasMatchId": false,
+      "hasResult": false,
+      "hasDetail": false,
+      "hasWalkover": false
+    },
+    {
+      "matchId": 506413,
+      "season": 2025,
+      "gate": false,
+      "chars": 292,
+      "hasMatchId": false,
+      "hasResult": false,
+      "hasDetail": false,
+      "hasWalkover": false
+    },
+    {
+      "matchId": 506441,
+      "season": 2025,
+      "gate": false,
+      "chars": 292,
+      "hasMatchId": false,
+      "hasResult": false,
+      "hasDetail": false,
+      "hasWalkover": false
+    },
+    {
+      "matchId": 506838,
+      "season": 2025,
+      "gate": false,
+      "chars": 292,
+      "hasMatchId": false,
+      "hasResult": false,
+      "hasDetail": false,
+      "hasWalkover": false
+    },
+    {
+      "matchId": 506844,
+      "season": 2025,
+      "gate": false,
+      "chars": 292,
+      "hasMatchId": false,
+      "hasResult": false,
+      "hasDetail": false,
+      "hasWalkover": false
+    }
+  ]
+}

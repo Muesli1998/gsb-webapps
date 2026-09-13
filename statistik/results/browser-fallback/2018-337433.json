@@ -1,0 +1,21 @@
+{
+  "key": "2018:337433",
+  "season": 2018,
+  "matchId": 337433,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Lillerød 1",
+  "ageGroupId": "18",
+  "leagueGroupId": "11355",
+  "roundDate": "2019-01-27",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2018,11355,1,8,,337433,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2018-337433.json",
+  "verifiedAt": "2026-09-12T17:09:13.249Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "reverifiedAt": "2026-09-13T05:52:27.599Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2018,11355,1,8,,337433,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH,BADSJ,DGI-NSJ,DGI-STS,DGI-MVS U17/U19 2018/2019\nVis rækker\n\n\nU17/19 M 4 Spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t337433\nRunde\t6 27-01-2019\nTid\tsø 27-01-2019 16:30\nSpillested\tKBK-Hallen\nKrausesvej 12\n2100 København Ø\nTelefon 35 38 72 92\nHjemmehold\tLillerød 1\nSofie Jæger\nsaj@atp.dk\n30238018\nUdehold\tGladsaxe Søborg 1\nDitte Nyeng\nDittenyeng@gmail.com\n61691577\nResultat\t0-6\nPoint\t0-3\nAfgjort uden kamp (afbud/udeblivelse)\n\n\n\tLillerød 1\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. S\t\n\t\nJonathan W. Hansen\n\t\t\t\t\n2. S\t\n\t\nOliver Frei\n\t\t\t\t\n3. S\t\n\t\nTobias Weinreich Hansen\n\t\t\t\t\n4. S\t\n\t\nJakob Buus Nyeng\n\t\t\t\t\n1. D\t\n\t\nJonathan W. Hansen\nOliver Frei\n\t\t\t\t\n2. D\t\n\t\nTobias Weinreich Hansen\nJakob Buus Nyeng\n\t\t\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

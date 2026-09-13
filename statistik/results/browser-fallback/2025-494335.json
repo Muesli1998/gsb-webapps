@@ -1,0 +1,22 @@
+{
+  "key": "2025:494335",
+  "season": 2025,
+  "matchId": 494335,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Vanløse 2",
+  "ageGroupId": "18",
+  "leagueGroupId": "18154",
+  "roundDate": "2025-10-05",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18154,1,8,,494335,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2025-494335.json",
+  "verifiedAt": "2026-09-12T16:37:17.669Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "walkoverObserved": false,
+  "reverifiedAt": "2026-09-13T05:46:14.789Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18154,1,8,,494335,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U17/U19 2025/2026\nVis rækker\n\n\nC-D 5600 (4 spillere) BD Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t494335\nRunde\t2 05-10-2025\nTid\tlø 04-10-2025 11:30\nSpillested\tHollænderhallen\nHalvejen\n2791 Dragør\nTelefon 32 53 07 46\nHjemmehold\tGladsaxe Søborg 1\nPia Lebeck Frederiksen\npia@lebeckfrederiksen.dk\n29938604\nUdehold\tVanløse 2\nSiv Jønsson\nSiv.joensson@gmail.com\n30934585\nResultat\t2-4\nPoint\t1-3\n\tGladsaxe Søborg 1\tVanløse 2\t1\t2\t3\tVinder W.O.\n1. S\t\nJakob Lebeck Frederiksen\n\t\nAndrea Klint Holm\n\t21 - 12\t21 - 17\t\t\n2. S\t\nWilliam Romm Egi\n\t\nEsmeralda Ansel-Henry\n\t21 - 13\t18 - 21\t21 - 18\t\n3. S\t\nMohammed Aarshil Azad\n\t\nVictoria Rubek Bonde\n\t12 - 21\t9 - 21\t\t\n4. S\t\nRumle Pedersen\n\t\nLuna Lahti\n\t15 - 21\t10 - 21\t\t\n1. D\t\nWilliam Romm Egi\nJakob Lebeck Frederiksen\n\t\nAndrea Klint Holm\nEsmeralda Ansel-Henry\n\t8 - 21\t15 - 21\t\t\n2. D\t\nMohammed Aarshil Azad\nRumle Pedersen\n\t\nVictoria Rubek Bonde\nAsta Gerda Meyer-Dissing\n\t9 - 21\t17 - 21\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

@@ -1,0 +1,21 @@
+{
+  "key": "2020:387757",
+  "season": 2020,
+  "matchId": 387757,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "KBK Kbh. 1",
+  "ageGroupId": "17",
+  "leagueGroupId": "13302",
+  "roundDate": "2020-10-11",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13302,1,8,,387757,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2020-387757.json",
+  "verifiedAt": "2026-09-12T19:14:06.831Z",
+  "resultSource": "playwright_persistent_browser_retry",
+  "verification": "Dynamic match page rendered with match details",
+  "reverifiedAt": "2026-09-13T05:51:35.178Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "no_dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13302,1,8,,387757,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+70 2020/2021\nVis rækker\n\n\n70+ 1. Serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t387755\nRunde\t1 13-09-2020\nTid\tfr 18-09-2020 12:00\nSpillested\tFBK-Hallen\nRolighedsvej 31\n1958 Frederiksberg C\nTelefon 35 39 18 87\nHjemmehold\tFrederiksberg 1\nDan Mogensen\ndanborberg@gmail.com\n31361601\nUdehold\tGladsaxe Søborg 1\nKurt Mehlsen\nkurt.mehlsen@post.tele.dk\n40386493\nResultat\t3-3\nPoint\t1-1\n\tFrederiksberg 1\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. D\t\nNiels Jørgen Madsen\nKåre Michelsen\n\t\nLeif Hansen\nIrene Sterlie\n\t21 - 16\t21 - 11\t\t\n2. D\t\nSøren Berggreen\nDan Mogensen\n\t\nSvend Valentin Rasmussen\nMarcel Yulzari\n\t16 - 21\t15 - 21\t\t\n3. D\t\nHjørdis Hansen\nGuido Mattioni\n\t\nHans Thor christensen\nKurt Mehlsen\n\t21 - 16\t21 - 17\t\t\n4. D\t\nSøren Berggreen\nKåre Michelsen\n\t\nSvend Valentin Rasmussen\nIrene Sterlie\n\t16 - 21\t20 - 22\t\t\n5. D\t\nGuido Mattioni\nDan Mogensen\n\t\nLeif Hansen\nHans Thor christensen\n\t17 - 21\t21 - 10\t19 - 21\t\n6. D\t\nHjørdis Hansen\nNiels Jørgen Madsen\n\t\nMarcel Yulzari\nKurt Mehlsen\n\t21 - 16\t21 - 18\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

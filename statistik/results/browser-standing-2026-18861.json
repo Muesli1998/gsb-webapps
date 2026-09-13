@@ -1,0 +1,22 @@
+{
+  "source": "BadmintonPlayer browser",
+  "season": 2026,
+  "competition": "Danmarksserien Pulje 8",
+  "region": "Badminton Danmark",
+  "ageGroup": "SEN",
+  "groupId": 18861,
+  "clubId": 1093,
+  "columns": ["position", "team", "matches", "wins", "score", "sets", "points", "setPoints"],
+  "rows": [
+    [1, "Greve 4 (N)", 1, 1, "12-1", "25-3", 15, 8],
+    [2, "Køge", 1, 1, "8-5", "20-13", 11, 6],
+    [3, "Holbæk 2", 1, 1, "7-6", "17-15", 9, 5],
+    [4, "Solrød Strand 5", 1, 1, "7-6", "15-14", 9, 5],
+    [5, "Jernløse (O)", 1, 0, "6-7", "14-15", 7, 4],
+    [6, "KSI Badmintonklub Kbh.", 1, 0, "6-7", "15-17", 7, 4],
+    [7, "Gladsaxe Søborg", 1, 0, "5-8", "13-20", 5, 3],
+    [8, "Drive 4 (O)", 1, 0, "1-12", "3-25", 1, 1]
+  ],
+  "urlHash": "#2,2026,18861,1,,,,1093,",
+  "verifiedAt": "2026-09-12"
+}

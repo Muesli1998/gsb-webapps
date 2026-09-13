@@ -1,0 +1,19 @@
+{
+  "key": "2018:340302",
+  "season": 2018,
+  "matchId": 340302,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Skovshoved 3",
+  "ageGroupId": "3",
+  "leagueGroupId": "11279",
+  "roundDate": "2018-11-18",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2018,11279,1,8,,340302,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2018-340302.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:24:27.395Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2018,11279,1,8,,340302,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U11 2018/2019\nVis rækker\n\n\nU11 C 4 Spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t340302\nRunde\t3 18-11-2018\nTid\tsø 18-11-2018 11:00\nSpillested\tKrøyersvej\nKrøyersvej 5A\n2930 Klampenborg\nTelefon 39 64 23 83\nHjemmehold\tSkovshoved 3\nRikke Bech Larsen\nrikkebech@hotmail.com\n51 57 81 79\nUdehold\tGladsaxe Søborg 1\nTine Undén\nunden@privat.dk\n20705811\nResultat\t5-1\nPoint\t3-0\n\tSkovshoved 3\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. S\t\nWilmer Forup Helmich\n\t\nNikolaj Thorslund Hindsbo\n\t21 - 17\t22 - 20\t\t\n2. S\t\nFilip Bech Larsen\n\t\nAsk Unden\n\t21 - 18\t21 - 17\t\t\n3. S\t\nOscar Jacob Thorup\n\t\nLykke Unden\n\t21 - 15\t22 - 20\t\t\n4. S\t\nAndreas Garde\n\t\nMaude Marie Stewart\n\t9 - 21\t13 - 21\t\t\n1. D\t\nWilmer Forup Helmich\nFilip Bech Larsen\n\t\nLykke Unden\nAsk Unden\n\t21 - 11\t21 - 14\t\t\n2. D\t\nOscar Jacob Thorup\nAndreas Garde\n\t\nNikolaj Thorslund Hindsbo\nMaude Marie Stewart\n\t21 - 12\t15 - 21\t21 - 16\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

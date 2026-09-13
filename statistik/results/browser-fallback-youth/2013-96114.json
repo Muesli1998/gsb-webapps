@@ -1,0 +1,19 @@
+{
+  "key": "2013:96114",
+  "season": 2013,
+  "matchId": 96114,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Charlottenlund",
+  "ageGroupId": "5",
+  "leagueGroupId": "2686",
+  "roundDate": "2013-10-06",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2013,2686,1,8,,96114,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2013-96114.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:29:03.497Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2013,2686,1,8,,96114,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2013/2014\nVis rækker\n\n\nU15 2. serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t96114\nRunde\t3 06-10-2013\nTid\tsø 06-10-2013 13:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg\nStefan Larson\nstl@dahl-as.dk\n31745407\nUdehold\tCharlottenlund\nNatascha Schmidt-Svejstrup\nnatascha@dyrlaege.dk\n24820615\nResultat\t4-4\nPoint\t1-1\n\tGladsaxe Søborg\tCharlottenlund\t1\t2\t3\tVinder W.O.\n1. MD\t\nEmil Wilhardt Jensen\nNaija Dam\n\t\nWilliam Jæger Holm\nIda Sofie Smidt\n\t4 - 21\t12 - 21\t\t\n1. S\t\nRaphael Kongsvig\n\t\nJacob Rasmussen\n\t11 - 21\t16 - 21\t\t\n2. S\t\nJonathan W. Hansen\n\t\nAnton Schmidt-Svejstrup\n\t21 - 9\t21 - 9\t\t\n3. S\t\nKristian Larson\n\t\nJan Mao Zeeberg\n\t21 - 13\t21 - 8\t\t\n4. S\t\nHelene Poulsen\n\t\nMette Marie Laigaard\n\t7 - 21\t3 - 21\t\t\n1. D\t\nJonathan W. Hansen\nRaphael Kongsvig\n\t\nJacob Rasmussen\nWilliam Jæger Holm\n\t24 - 22\t18 - 21\t21 - 17\t\n2. D\t\nKristian Larson\nEmil Wilhardt Jensen\n\t\nAnton Schmidt-Svejstrup\nJan Mao Zeeberg\n\t21 - 19\t21 - 9\t\t\n3. D\t\nHelene Poulsen\nNaija Dam\n\t\nMette Marie Laigaard\nIda Sofie Smidt\n\t9 - 21\t2 - 21\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

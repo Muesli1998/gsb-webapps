@@ -1,0 +1,21 @@
+{
+  "key": "2021:427804",
+  "season": 2021,
+  "matchId": 427804,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Hvidovre 1",
+  "ageGroupId": "13",
+  "leagueGroupId": "13966",
+  "roundDate": "2022-01-09",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2021,13966,1,8,,427804,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2021-427804.json",
+  "verifiedAt": "2026-09-12T16:58:08.668Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:49:30.542Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2021,13966,1,8,,427804,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+60 2021/2022\nVis rækker\n\n\nSEN+60 1. Serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t427804\nRunde\t6 09-01-2022\nTid\t\nSpillested\t\nHjemmehold\tGladsaxe Søborg 1\nHelle Larsen\nhelle.larsen.hl@gmail.com\n51521909\nUdehold\tHvidovre 1\nHelle Guldborg\nhelleguldborg@hotmail.com\n36493505\nResultat\t8-0\nPoint\t2-0\n\tGladsaxe Søborg 1\tHvidovre 1\t1\t2\t3\tVinder W.O.\n1. MD\t\nBent Horn Andersen\nIrene Sterlie\n\t\nBo Johansen\nIlse Langhorn\n\t21 - 9\t21 - 9\t\t\n2. MD\t\nSvend Videbæk\nHelle Larsen\n\t\nLars Agerholm Jacobsen\nLajla Sørensen\n\t21 - 16\t21 - 12\t\t\n4. HD\t\nNils Ole Andersen\nSteffen Wad\n\t\nHenrik Westborg\nKurt Wolf\n\t17 - 21\t21 - 13\t22 - 20\t\n5. HD\t\nMichael Bjergsted\nTue Abelskov\n\t\nEric Rozario\nJørgen Jensen\n\t21 - 18\t21 - 16\t\t\n1. DD\t\nIrene Sterlie\nHelle Larsen\n\t\nLajla Sørensen\nIlse Langhorn\n\t21 - 8\t21 - 11\t\t\n1. HD\t\nNils Ole Andersen\nMichael Bjergsted\n\t\nHenrik Westborg\nEric Rozario\n\t21 - 15\t21 - 7\t\t\n2. HD\t\nBent Horn Andersen\nSteffen Wad\n\t\nKurt Wolf\nJørgen Jensen\n\t21 - 8\t\t\tG\n3. HD\t\nTue Abelskov\nSvend Videbæk\n\t\nLars Agerholm Jacobsen\nBo Johansen\n\t21 - 13\t21 - 11\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

@@ -1,0 +1,872 @@
+{
+  "sampleSize": 100,
+  "results": [
+    {
+      "season": 2025,
+      "matchId": 485648,
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "Valby BC",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2025,
+      "matchId": 485666,
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "Frederiksberg",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2025,
+      "matchId": 504011,
+      "status": "ok",
+      "home": "KBK Kbh. 3",
+      "guest": "Gladsaxe Søborg",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2025,
+      "matchId": 486823,
+      "status": "ok",
+      "home": "Skovshoved 5",
+      "guest": "Gladsaxe Søborg 2",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2025,
+      "matchId": 505002,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 2",
+      "guest": "KBK Kbh. 4",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2025,
+      "matchId": 487182,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 3",
+      "guest": "Sct. Jørgen Kbh.",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2025,
+      "matchId": 487136,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 4",
+      "guest": "KSI Badmintonklub Kbh. 7",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2025,
+      "matchId": 487161,
+      "status": "ok",
+      "home": "Hvidovre HB2000 3",
+      "guest": "Gladsaxe Søborg 4",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2025,
+      "matchId": 487071,
+      "status": "ok",
+      "home": "FKIF Frederiksberg 4",
+      "guest": "Gladsaxe Søborg 5",
+      "players": 32,
+      "sets": 60
+    },
+    {
+      "season": 2025,
+      "matchId": 487282,
+      "status": "ok",
+      "home": "Valby BC 4",
+      "guest": "Gladsaxe Søborg 6",
+      "players": 32,
+      "sets": 60
+    },
+    {
+      "season": 2025,
+      "matchId": 487306,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 6",
+      "guest": "Sct. Jørgen Kbh. 3",
+      "players": 32,
+      "sets": 60
+    },
+    {
+      "season": 2024,
+      "matchId": 482632,
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "KSI Badmintonklub Kbh.",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2024,
+      "matchId": 464266,
+      "status": "ok",
+      "home": "KBK Kbh. 4",
+      "guest": "Gladsaxe Søborg",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2024,
+      "matchId": 466211,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 2",
+      "guest": "KMB2010 3",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2024,
+      "matchId": 466234,
+      "status": "ok",
+      "home": "BC37 Amager 3",
+      "guest": "Gladsaxe Søborg 2",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2024,
+      "matchId": 466116,
+      "status": "ok",
+      "home": "Frederiksberg 2",
+      "guest": "Gladsaxe Søborg 3",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2024,
+      "matchId": 466136,
+      "status": "ok",
+      "home": "NBK Amager 2",
+      "guest": "Gladsaxe Søborg 3",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2024,
+      "matchId": 465834,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 5",
+      "guest": "SAIF Kbh. 8",
+      "players": 32,
+      "sets": 60
+    },
+    {
+      "season": 2023,
+      "matchId": 444585,
+      "status": "ok",
+      "home": "BC37 Amager",
+      "guest": "Gladsaxe Søborg",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2023,
+      "matchId": 444607,
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "SAIF Kbh. 2",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2023,
+      "matchId": 461844,
+      "status": "ok",
+      "home": "Drive 4",
+      "guest": "Gladsaxe Søborg",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2023,
+      "matchId": 446119,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 2",
+      "guest": "KSI Badmintonklub Kbh. 1",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2023,
+      "matchId": 446079,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 2",
+      "guest": "FKIF Frederiksberg 1",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2023,
+      "matchId": 446197,
+      "status": "ok",
+      "home": "Valby BC 2",
+      "guest": "Gladsaxe Søborg 3",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2023,
+      "matchId": 446253,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 4",
+      "guest": "Sct. Jørgen Kbh.",
+      "players": 32,
+      "sets": 60
+    },
+    {
+      "season": 2022,
+      "matchId": 425504,
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "KBK Kbh. 3",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2022,
+      "matchId": 425522,
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "Ringsted",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2022,
+      "matchId": 441275,
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "Måløv",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2022,
+      "matchId": 426390,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 2",
+      "guest": "Frederiksberg 2",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2022,
+      "matchId": 441963,
+      "status": "ok",
+      "home": "BC37 Amager 3",
+      "guest": "Gladsaxe Søborg 2",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2022,
+      "matchId": 428948,
+      "status": "ok",
+      "home": "Rødovre/KFUM KBH",
+      "guest": "Gladsaxe Søborg 3",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2021,
+      "matchId": 406110,
+      "status": "ok",
+      "home": "Vanløse",
+      "guest": "Gladsaxe Søborg",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2021,
+      "matchId": 406130,
+      "status": "ok",
+      "home": "Team GSG",
+      "guest": "Gladsaxe Søborg",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2021,
+      "matchId": 422428,
+      "status": "ok",
+      "home": "FKIF Frederiksberg",
+      "guest": "Gladsaxe Søborg",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2021,
+      "matchId": 406186,
+      "status": "ok",
+      "home": "SAIF Kbh. 2",
+      "guest": "Gladsaxe Søborg 2",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2021,
+      "matchId": 422445,
+      "status": "ok",
+      "home": "KSI Badmintonklub Kbh.",
+      "guest": "Gladsaxe Søborg 2",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2021,
+      "matchId": 407116,
+      "status": "ok",
+      "home": "KSI Badmintonklub Kbh. 2",
+      "guest": "Gladsaxe Søborg 3",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2020,
+      "matchId": 385777,
+      "status": "ok",
+      "home": "Dragør 2",
+      "guest": "Gladsaxe Søborg",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2020,
+      "matchId": 385823,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 2",
+      "guest": "Frem - Hellebæk",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2020,
+      "matchId": 405601,
+      "status": "error",
+      "error": "Could not find any players on match"
+    },
+    {
+      "season": 2020,
+      "matchId": 387385,
+      "status": "error",
+      "error": "Could not find any players on match"
+    },
+    {
+      "season": 2019,
+      "matchId": 365995,
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "Vanløse",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2019,
+      "matchId": 366014,
+      "status": "ok",
+      "home": "Karlslunde 2",
+      "guest": "Gladsaxe Søborg",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2019,
+      "matchId": 365090,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 2",
+      "guest": "Lyngby 4",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2019,
+      "matchId": 365108,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 2",
+      "guest": "Drive 4",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2019,
+      "matchId": 385098,
+      "status": "error",
+      "error": "Could not find any players on match"
+    },
+    {
+      "season": 2019,
+      "matchId": 365219,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 3",
+      "guest": "FKIF Frederiksberg 4",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2018,
+      "matchId": 322660,
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "Badminton Roskilde 2",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2018,
+      "matchId": 359129,
+      "status": "ok",
+      "home": "Gentofte 4",
+      "guest": "Gladsaxe Søborg",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2018,
+      "matchId": 359178,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 2",
+      "guest": "Dragør 2",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2018,
+      "matchId": 330569,
+      "status": "ok",
+      "home": "KSI Badmintonklub Kbh.",
+      "guest": "Gladsaxe Søborg 2",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2018,
+      "matchId": 330902,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 3",
+      "guest": "KMB2010 4",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2018,
+      "matchId": 330387,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 3",
+      "guest": "KSI Badmintonklub Kbh. 2",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2017,
+      "matchId": 288605,
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "Lyngby 2",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2017,
+      "matchId": 317665,
+      "status": "ok",
+      "home": "Holte 3",
+      "guest": "Gladsaxe Søborg",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2017,
+      "matchId": 283131,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 2",
+      "guest": "Charlottenlund 3",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2017,
+      "matchId": 318168,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 2",
+      "guest": "Drive 4",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2017,
+      "matchId": 281418,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 3",
+      "guest": "FKIF Frederiksberg 5",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2016,
+      "matchId": 237253,
+      "status": "ok",
+      "home": "KMB2010 3",
+      "guest": "Gladsaxe Søborg",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2016,
+      "matchId": 237275,
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "Frem - Hellebæk",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2016,
+      "matchId": 276873,
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "Humlebæk",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2016,
+      "matchId": 238415,
+      "status": "ok",
+      "home": "Frederiksberg 3",
+      "guest": "Gladsaxe Søborg 2",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2016,
+      "matchId": 276998,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 2",
+      "guest": "PI København",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2016,
+      "matchId": 238577,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 3",
+      "guest": "Hvidovre HB2000 3",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2016,
+      "matchId": 238662,
+      "status": "error",
+      "error": "Could not find any players on match"
+    },
+    {
+      "season": 2016,
+      "matchId": 238686,
+      "status": "error",
+      "error": "Could not find any players on match"
+    },
+    {
+      "season": 2016,
+      "matchId": 238710,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 4",
+      "guest": "Islands Brygge",
+      "players": 32,
+      "sets": 60
+    },
+    {
+      "season": 2015,
+      "matchId": 230613,
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "Herlev Badminton",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2015,
+      "matchId": 192710,
+      "status": "ok",
+      "home": "KBK Kbh. 3",
+      "guest": "Gladsaxe Søborg",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2015,
+      "matchId": 192729,
+      "status": "ok",
+      "home": "Herlufsholm",
+      "guest": "Gladsaxe Søborg",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2015,
+      "matchId": 195045,
+      "status": "ok",
+      "home": "Vanløse 2",
+      "guest": "Gladsaxe Søborg 2",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2015,
+      "matchId": 231819,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 2",
+      "guest": "Frederiksberg 2",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2015,
+      "matchId": 193645,
+      "status": "ok",
+      "home": "Drive 6",
+      "guest": "Gladsaxe Søborg 3",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2015,
+      "matchId": 193722,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 4",
+      "guest": "FKIF Frederiksberg 6",
+      "players": 40,
+      "sets": 72
+    },
+    {
+      "season": 2015,
+      "matchId": 193743,
+      "status": "error",
+      "error": "Could not find any players on match"
+    },
+    {
+      "season": 2015,
+      "matchId": 194752,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 5",
+      "guest": "Hvidovre 5",
+      "players": 32,
+      "sets": 60
+    },
+    {
+      "season": 2015,
+      "matchId": 204917,
+      "status": "ok",
+      "home": "Valby BC 2",
+      "guest": "Gladsaxe Søborg 5",
+      "players": 40,
+      "sets": 72
+    },
+    {
+      "season": 2015,
+      "matchId": 204934,
+      "status": "error",
+      "error": "Could not find any players on match"
+    },
+    {
+      "season": 2014,
+      "matchId": 144409,
+      "status": "ok",
+      "home": "SAIF Kbh. 3",
+      "guest": "Gladsaxe Søborg",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2014,
+      "matchId": 144426,
+      "status": "ok",
+      "home": "Hvidovre 3",
+      "guest": "Gladsaxe Søborg",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2014,
+      "matchId": 141351,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 2",
+      "guest": "FKIF Frederiksberg",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2014,
+      "matchId": 188760,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 2",
+      "guest": "Frederiksberg 2",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2014,
+      "matchId": 141458,
+      "status": "ok",
+      "home": "Sct. Jørgen Kbh.",
+      "guest": "Gladsaxe Søborg 3",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2013,
+      "matchId": 135908,
+      "status": "ok",
+      "home": "Køge-Strøby",
+      "guest": "Gladsaxe Søborg",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2013,
+      "matchId": 100936,
+      "status": "ok",
+      "home": "Værløse 4",
+      "guest": "Gladsaxe Søborg",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2013,
+      "matchId": 96496,
+      "status": "ok",
+      "home": "Frederiksberg 3",
+      "guest": "Gladsaxe Søborg 2",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2013,
+      "matchId": 96518,
+      "status": "ok",
+      "home": "NBK Amager 2",
+      "guest": "Gladsaxe Søborg 2",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2013,
+      "matchId": 96713,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 3",
+      "guest": "Gentofte 7",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2012,
+      "matchId": 89979,
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "Drive 2",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2012,
+      "matchId": 51875,
+      "status": "ok",
+      "home": "Herlev/Hjorten",
+      "guest": "Gladsaxe Søborg",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2012,
+      "matchId": 51894,
+      "status": "ok",
+      "home": "Gladsaxe Søborg",
+      "guest": "Taastrup Elite",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2012,
+      "matchId": 49410,
+      "status": "ok",
+      "home": "Amager ABC 2",
+      "guest": "Gladsaxe Søborg 2",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2012,
+      "matchId": 49459,
+      "status": "ok",
+      "home": "Gladsaxe Søborg 3",
+      "guest": "ØBK/BK Kbh.",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2011,
+      "matchId": 46330,
+      "status": "ok",
+      "home": "Slagelse",
+      "guest": "Gladsaxe Søborg",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2011,
+      "matchId": 1888,
+      "status": "ok",
+      "home": "KBK Kbh. 4",
+      "guest": "Gladsaxe Søborg",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2011,
+      "matchId": 1907,
+      "status": "ok",
+      "home": "Greve 3",
+      "guest": "Gladsaxe Søborg",
+      "players": 40,
+      "sets": 78
+    },
+    {
+      "season": 2011,
+      "matchId": 1648,
+      "status": "error",
+      "error": "Could not find any players on match"
+    },
+    {
+      "season": 2011,
+      "matchId": 1724,
+      "status": "error",
+      "error": "Could not find any players on match"
+    },
+    {
+      "season": 2010,
+      "matchId": 23219,
+      "status": "error",
+      "error": "Internal server error"
+    },
+    {
+      "season": 2010,
+      "matchId": 23526,
+      "status": "error",
+      "error": "Internal server error"
+    }
+  ]
+}

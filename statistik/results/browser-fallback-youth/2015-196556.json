@@ -1,0 +1,19 @@
+{
+  "key": "2015:196556",
+  "season": 2015,
+  "matchId": 196556,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Islands Brygge",
+  "ageGroupId": "3",
+  "leagueGroupId": "6085",
+  "roundDate": "2015-10-25",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6085,1,8,,196556,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2015-196556.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:27:09.030Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6085,1,8,,196556,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U11 2015/2016\nVis rækker\n\n\nU11 D Række 4 Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t196556\nRunde\t3 25-10-2015\nTid\tlø 24-10-2015 10:15\nSpillested\tHallen ved Skolen på Islands Brygge\nArtillerivej 57\n2300 København S\nHjemmehold\tIslands Brygge\nJesper Spang\njesper@spangmedia.dk\n53801000\nUdehold\tGladsaxe Søborg\nLene Sørensen\nsorensenlene@ymail.com\n29392379\nResultat\t4-2\nPoint\t2-0\n\tIslands Brygge\tGladsaxe Søborg\t1\t2\t3\tVinder W.O.\n1. D\t\nPeter Øland Rasmussen\nChristian Kirkelund Andersen\n\t\nKasper Gorm\nAlexander Riege Klausen\n\t20 - 22\t21 - 23\t\t\n2. D\t\nJonathan Friis Paulsen\nVigga Elise Kierkegaard\n\t\nLasse Bjerregaard Kirt\nWilliam Staal-Christensen\n\t\t\t\tI\n1. S\t\nChristian Kirkelund Andersen\n\t\nKasper Gorm\n\t21 - 10\t21 - 9\t\t\n2. S\t\nJonathan Friis Paulsen\n\t\nAlexander Riege Klausen\n\t10 - 21\t9 - 21\t\t\n3. S\t\nVigga Elise Kierkegaard\n\t\nLasse Bjerregaard Kirt\n\t21 - 15\t21 - 10\t\t\n4. S\t\nPeter Øland Rasmussen\n\t\nWilliam Staal-Christensen\n\t\t\t\tI\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

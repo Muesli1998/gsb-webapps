@@ -1,0 +1,264 @@
+{
+  "generatedAt": "2026-09-13T06:39:22.042Z",
+  "rows": [
+    {
+      "season_id": 2010,
+      "status": "browser_verified",
+      "total": 11,
+      "missing_result": 0,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2011,
+      "status": "browser_verified",
+      "total": 159,
+      "missing_result": 0,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2011,
+      "status": "complete",
+      "total": 10,
+      "missing_result": 10,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2012,
+      "status": "browser_verified",
+      "total": 52,
+      "missing_result": 0,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2012,
+      "status": "complete",
+      "total": 79,
+      "missing_result": 79,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2013,
+      "status": "browser_verified",
+      "total": 43,
+      "missing_result": 0,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2013,
+      "status": "complete",
+      "total": 91,
+      "missing_result": 91,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2014,
+      "status": "browser_verified",
+      "total": 51,
+      "missing_result": 0,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2014,
+      "status": "browser_verified_no_result",
+      "total": 2,
+      "missing_result": 0,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2014,
+      "status": "complete",
+      "total": 91,
+      "missing_result": 91,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2015,
+      "status": "browser_verified",
+      "total": 48,
+      "missing_result": 0,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2015,
+      "status": "complete",
+      "total": 108,
+      "missing_result": 108,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2016,
+      "status": "browser_verified",
+      "total": 54,
+      "missing_result": 0,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2016,
+      "status": "complete",
+      "total": 93,
+      "missing_result": 93,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2017,
+      "status": "browser_verified",
+      "total": 45,
+      "missing_result": 0,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2017,
+      "status": "complete",
+      "total": 88,
+      "missing_result": 88,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2018,
+      "status": "browser_verified",
+      "total": 39,
+      "missing_result": 0,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2018,
+      "status": "complete",
+      "total": 104,
+      "missing_result": 104,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2019,
+      "status": "browser_verified",
+      "total": 25,
+      "missing_result": 0,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2019,
+      "status": "complete",
+      "total": 82,
+      "missing_result": 82,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2019,
+      "status": "corona_suspended",
+      "total": 18,
+      "missing_result": 0,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2020,
+      "status": "browser_verified",
+      "total": 20,
+      "missing_result": 0,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2020,
+      "status": "browser_verified_no_result",
+      "total": 82,
+      "missing_result": 0,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2020,
+      "status": "complete",
+      "total": 31,
+      "missing_result": 31,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2020,
+      "status": "corona_suspended",
+      "total": 29,
+      "missing_result": 2,
+      "missing_sides": 2
+    },
+    {
+      "season_id": 2021,
+      "status": "browser_verified",
+      "total": 100,
+      "missing_result": 0,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2021,
+      "status": "complete",
+      "total": 86,
+      "missing_result": 86,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2022,
+      "status": "browser_verified",
+      "total": 132,
+      "missing_result": 0,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2022,
+      "status": "complete",
+      "total": 95,
+      "missing_result": 95,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2023,
+      "status": "browser_verified",
+      "total": 127,
+      "missing_result": 0,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2023,
+      "status": "complete",
+      "total": 128,
+      "missing_result": 128,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2024,
+      "status": "browser_verified",
+      "total": 164,
+      "missing_result": 0,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2024,
+      "status": "browser_verified_no_result",
+      "total": 1,
+      "missing_result": 0,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2024,
+      "status": "complete",
+      "total": 130,
+      "missing_result": 130,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2025,
+      "status": "api_error",
+      "total": 4,
+      "missing_result": 4,
+      "missing_sides": 4
+    },
+    {
+      "season_id": 2025,
+      "status": "browser_verified",
+      "total": 238,
+      "missing_result": 0,
+      "missing_sides": 0
+    },
+    {
+      "season_id": 2025,
+      "status": "complete",
+      "total": 158,
+      "missing_result": 158,
+      "missing_sides": 0
+    }
+  ]
+}

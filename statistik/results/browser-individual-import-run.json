@@ -1,0 +1,12 @@
+{
+  "generatedAt": "2026-09-13T07:37:50.275Z",
+  "apply": true,
+  "existingIndividualRows": 14216,
+  "candidates": 6103,
+  "conflicts": 0,
+  "insertedMatches": 6103,
+  "insertedPlayers": 2556,
+  "insertedLinks": 17210,
+  "goldenSetCandidates": 133,
+  "conflictsDetail": []
+}

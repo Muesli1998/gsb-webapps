@@ -1,0 +1,173 @@
+{
+  "generatedAt": "2026-09-13T06:40:14.796Z",
+  "bySeason": [
+    {
+      "season_id": 2010,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 0,
+      "total": 11
+    },
+    {
+      "season_id": 2011,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 2,
+      "total": 169
+    },
+    {
+      "season_id": 2012,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 0,
+      "total": 131
+    },
+    {
+      "season_id": 2013,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 0,
+      "total": 134
+    },
+    {
+      "season_id": 2014,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 0,
+      "total": 144
+    },
+    {
+      "season_id": 2015,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 0,
+      "total": 156
+    },
+    {
+      "season_id": 2016,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 0,
+      "total": 147
+    },
+    {
+      "season_id": 2017,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 0,
+      "total": 133
+    },
+    {
+      "season_id": 2018,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 0,
+      "total": 143
+    },
+    {
+      "season_id": 2019,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 0,
+      "total": 125
+    },
+    {
+      "season_id": 2020,
+      "missing_home": 2,
+      "missing_away": 2,
+      "missing_result": 2,
+      "total": 162
+    },
+    {
+      "season_id": 2021,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 0,
+      "total": 186
+    },
+    {
+      "season_id": 2022,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 0,
+      "total": 227
+    },
+    {
+      "season_id": 2023,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 0,
+      "total": 255
+    },
+    {
+      "season_id": 2024,
+      "missing_home": 0,
+      "missing_away": 0,
+      "missing_result": 0,
+      "total": 295
+    },
+    {
+      "season_id": 2025,
+      "missing_home": 4,
+      "missing_away": 4,
+      "missing_result": 4,
+      "total": 400
+    }
+  ],
+  "examples": [
+    {
+      "external_match_id": "506407",
+      "season_id": 2025,
+      "gsb_team_id": 7,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "506413",
+      "season_id": 2025,
+      "gsb_team_id": 7,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505217",
+      "season_id": 2025,
+      "gsb_team_id": 2,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "505219",
+      "season_id": 2025,
+      "gsb_team_id": 2,
+      "status": "api_error",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "387862",
+      "season_id": 2020,
+      "gsb_team_id": 267,
+      "status": "corona_suspended",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    },
+    {
+      "external_match_id": "387864",
+      "season_id": 2020,
+      "gsb_team_id": 267,
+      "status": "corona_suspended",
+      "home_name_raw": "",
+      "away_name_raw": "",
+      "result_raw": null
+    }
+  ]
+}

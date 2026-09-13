@@ -1,0 +1,99 @@
+{
+  "season": 2021,
+  "groupId": "13959",
+  "status": "verified",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2021,13959,1,,,,1093,",
+  "retrievedAt": "2026-09-12T18:33:38.451Z",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADDAN SEN 2021/2022\nVis rækker\n\n\nDanmarksserien Nedrykning fra Danmarksserien pulje C\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVUNDNE\tSCORE\tSÆT\tPOINT\n1\tBC37 Amager\t4\t4\t32-20\t69-46\t76\n2\tLyngby 3\t4\t3\t35-17\t76-42\t70\n3\tGladsaxe Søborg\t4\t2\t34-18\t74-44\t64\n4\tTeam GSG\t4\t2\t31-21\t66-48\t63\n5\tNæstved-Herlufsholm\t4\t2\t25-27\t57-60\t53\n6\tFKIF Frederiksberg\t4\t2\t26-26\t58-64\t48\n7\tDragør 2 (O)\t4\t1\t25-27\t58-50\t43\n8\tNordbyens Badmintonklub *trukket*\t4\t0\t0-52\t0-104\t0\n\nUdskriv | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+  "tables": [
+    [
+      [
+        "",
+        "FAQ Opret brugerkonto Log ind"
+      ]
+    ],
+    [
+      [
+        "#",
+        "HOLD",
+        "KAMPE",
+        "VUNDNE",
+        "SCORE",
+        "SÆT",
+        "POINT"
+      ],
+      [
+        "1",
+        "BC37 Amager",
+        "4",
+        "4",
+        "32-20",
+        "69-46",
+        "76"
+      ],
+      [
+        "2",
+        "Lyngby 3",
+        "4",
+        "3",
+        "35-17",
+        "76-42",
+        "70"
+      ],
+      [
+        "3",
+        "Gladsaxe Søborg",
+        "4",
+        "2",
+        "34-18",
+        "74-44",
+        "64"
+      ],
+      [
+        "4",
+        "Team GSG",
+        "4",
+        "2",
+        "31-21",
+        "66-48",
+        "63"
+      ],
+      [
+        "5",
+        "Næstved-Herlufsholm",
+        "4",
+        "2",
+        "25-27",
+        "57-60",
+        "53"
+      ],
+      [
+        "6",
+        "FKIF Frederiksberg",
+        "4",
+        "2",
+        "26-26",
+        "58-64",
+        "48"
+      ],
+      [
+        "7",
+        "Dragør 2 (O)",
+        "4",
+        "1",
+        "25-27",
+        "58-50",
+        "43"
+      ],
+      [
+        "8",
+        "Nordbyens Badmintonklub *trukket*",
+        "4",
+        "0",
+        "0-52",
+        "0-104",
+        "0"
+      ]
+    ]
+  ]
+}

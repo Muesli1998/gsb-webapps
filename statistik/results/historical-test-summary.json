@@ -1,0 +1,18 @@
+{
+  "updatedAt": "2026-09-12T10:34:15.808Z",
+  "gsb": {
+    "seasons": 26,
+    "seasonsWithTeams": 16,
+    "totalGroups": 462,
+    "totalUniqueMatches": 2818,
+    "errors": 10
+  },
+  "badmintonligaen": {
+    "seasons": 26,
+    "seasonsWithTeams": 16,
+    "totalLigaTeams": 423,
+    "totalGroups": 423,
+    "totalUniqueMatches": 855,
+    "errors": 130
+  }
+}

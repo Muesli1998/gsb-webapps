@@ -1,0 +1,99 @@
+{
+  "season": 2019,
+  "groupId": "13102",
+  "status": "verified",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2019,13102,1,,,,1093,",
+  "retrievedAt": "2026-09-12T18:34:01.800Z",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADDAN SEN 2019/2020\nVis rækker\n\n\nDanmarksserien Kvalifikation til 3. division pulje D\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVUNDNE\tSCORE\tSÆT\tPOINT\n1\tSkovshoved 4\t3\t3\t29-10\t63-26\t81\n2\tVærløse 4\t3\t3\t30-9\t64-25\t79\n3\tHvidovre 3\t3\t2\t23-16\t51-39\t68\n4\tVordingborg\t3\t3\t25-14\t52-34\t64\n5\tFrederiksberg\t3\t1\t18-21\t43-45\t62\n6\tVanløse\t3\t0\t14-25\t33-53\t48\n7\tSolrød Strand 5 (O)\t3\t0\t7-32\t20-66\t43\n8\tGladsaxe Søborg\t3\t0\t10-29\t28-66\t38\n\nUdskriv | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+  "tables": [
+    [
+      [
+        "",
+        "FAQ Opret brugerkonto Log ind"
+      ]
+    ],
+    [
+      [
+        "#",
+        "HOLD",
+        "KAMPE",
+        "VUNDNE",
+        "SCORE",
+        "SÆT",
+        "POINT"
+      ],
+      [
+        "1",
+        "Skovshoved 4",
+        "3",
+        "3",
+        "29-10",
+        "63-26",
+        "81"
+      ],
+      [
+        "2",
+        "Værløse 4",
+        "3",
+        "3",
+        "30-9",
+        "64-25",
+        "79"
+      ],
+      [
+        "3",
+        "Hvidovre 3",
+        "3",
+        "2",
+        "23-16",
+        "51-39",
+        "68"
+      ],
+      [
+        "4",
+        "Vordingborg",
+        "3",
+        "3",
+        "25-14",
+        "52-34",
+        "64"
+      ],
+      [
+        "5",
+        "Frederiksberg",
+        "3",
+        "1",
+        "18-21",
+        "43-45",
+        "62"
+      ],
+      [
+        "6",
+        "Vanløse",
+        "3",
+        "0",
+        "14-25",
+        "33-53",
+        "48"
+      ],
+      [
+        "7",
+        "Solrød Strand 5 (O)",
+        "3",
+        "0",
+        "7-32",
+        "20-66",
+        "43"
+      ],
+      [
+        "8",
+        "Gladsaxe Søborg",
+        "3",
+        "0",
+        "10-29",
+        "28-66",
+        "38"
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "season": 2019,
+  "groupId": "12589",
+  "status": "verified",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2019,12589,1,,,,1093,",
+  "retrievedAt": "2026-09-12T18:34:12.165Z",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+50 2019/2020\nVis rækker\n\n\n50+ 2. Serie Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVUNDNE\tSCORE\tSÆT\tPOINT\n1\tGladsaxe Søborg 1\t6\t5\t35-13\t75-37\t11\n2\tCharlottenlund 2\t6\t4\t31-17\t66-44\t8\n3\tØBK/BK Kbh. 1\t6\t2\t24-24\t54-51\t7\n4\tGentofte 2\t6\t2\t24-24\t53-53\t6\n5\tLyngby 2\t6\t2\t20-28\t49-62\t5\n6\tTingbjerg 1\t6\t1\t21-27\t50-58\t5\n7\tSkovshoved 1\t6\t1\t20-28\t48-64\t3\n8\tHvidovre HB2000 1\t6\t1\t17-31\t44-70\t3\n\nUdskriv | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+  "tables": [
+    [
+      [
+        "",
+        "FAQ Opret brugerkonto Log ind"
+      ]
+    ],
+    [
+      [
+        "#",
+        "HOLD",
+        "KAMPE",
+        "VUNDNE",
+        "SCORE",
+        "SÆT",
+        "POINT"
+      ],
+      [
+        "1",
+        "Gladsaxe Søborg 1",
+        "6",
+        "5",
+        "35-13",
+        "75-37",
+        "11"
+      ],
+      [
+        "2",
+        "Charlottenlund 2",
+        "6",
+        "4",
+        "31-17",
+        "66-44",
+        "8"
+      ],
+      [
+        "3",
+        "ØBK/BK Kbh. 1",
+        "6",
+        "2",
+        "24-24",
+        "54-51",
+        "7"
+      ],
+      [
+        "4",
+        "Gentofte 2",
+        "6",
+        "2",
+        "24-24",
+        "53-53",
+        "6"
+      ],
+      [
+        "5",
+        "Lyngby 2",
+        "6",
+        "2",
+        "20-28",
+        "49-62",
+        "5"
+      ],
+      [
+        "6",
+        "Tingbjerg 1",
+        "6",
+        "1",
+        "21-27",
+        "50-58",
+        "5"
+      ],
+      [
+        "7",
+        "Skovshoved 1",
+        "6",
+        "1",
+        "20-28",
+        "48-64",
+        "3"
+      ],
+      [
+        "8",
+        "Hvidovre HB2000 1",
+        "6",
+        "1",
+        "17-31",
+        "44-70",
+        "3"
+      ]
+    ]
+  ]
+}

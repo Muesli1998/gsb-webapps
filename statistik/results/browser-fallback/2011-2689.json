@@ -1,0 +1,21 @@
+{
+  "key": "2011:2689",
+  "season": 2011,
+  "matchId": 2689,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Frederiksberg",
+  "ageGroupId": "9",
+  "leagueGroupId": "77",
+  "roundDate": "2011-09-25",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,77,1,8,,2689,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2011-2689.json",
+  "verifiedAt": "2026-09-12T17:11:11.205Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "reverifiedAt": "2026-09-13T05:55:50.878Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,77,1,8,,2689,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+40 2011/2012\nVis rækker\n\n\n3. Serie Veteran 3. Serie Veteran\nStilling\nVis alle kampe\n\nKampnr\t2689\nRunde\t1 25-09-2011\nTid\tsø 25-09-2011 12:30\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 2\nUdehold\tFrederiksberg\nResultat\t7-5\nPoint\t2-0\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

@@ -1,0 +1,19 @@
+{
+  "key": "2022:431285",
+  "season": 2022,
+  "matchId": 431285,
+  "teamName": "Gladsaxe Søborg 5",
+  "opponent": "Skovshoved 9",
+  "ageGroupId": "5",
+  "leagueGroupId": "14997",
+  "roundDate": "2022-10-09",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14997,1,8,,431285,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2022-431285.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:19:30.718Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14997,1,8,,431285,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2022/2023\nVis rækker\n\n\nU15 3400 4 Piger Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t431285\nRunde\t1 09-10-2022\nTid\tsø 09-10-2022 11:30\nSpillested\tKrøyersvej\nKrøyersvej 5A\n2930 Klampenborg\nTelefon 39 64 23 83\nHjemmehold\tGladsaxe Søborg 5\nStinne Høgh\nstinne.hogh@gmail.com\n22973556\nUdehold\tSkovshoved 9\nTrine Andersson\ntrine@li-ning.dk\n20670869\nResultat\t4-2\nPoint\t3-1\n\tGladsaxe Søborg 5\tSkovshoved 9\t1\t2\t3\tVinder W.O.\n1. S\t\nCecilia Suhr-Virranniemi\n\t\nYue-Nu Weng Lindblad\n\t7 - 21\t3 - 21\t\t\n2. S\t\nSofie Granau Holm\n\t\nAnna Hummelshøj\n\t7 - 21\t5 - 21\t\t\n3. S\t\nEmilie Høgh Haugaard\n\t\nAlma Alstrup\n\t21 - 8\t21 - 12\t\t\n4. S\t\nAsta Skovgaard Andersen\n\t\nFrederikke Wesley\n\t21 - 7\t21 - 17\t\t\n1. D\t\nElena Shojaei\nCecilia Suhr-Virranniemi\n\t\nYue-Nu Weng Lindblad\nAnna Hummelshøj\n\t23 - 21\t10 - 21\t21 - 13\t\n2. D\t\nSofie Granau Holm\nAsta Skovgaard Andersen\n\t\nFrederikke Wesley\nAlma Alstrup\n\t21 - 17\t21 - 14\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

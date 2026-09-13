@@ -1,0 +1,1 @@
+const s=await (await fetch('https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/js')).text(); console.log(s.match(/\b[A-Za-z_$][\w$]*(?=:function)/g).filter(n=>/ournament|esult|rogram|atch|raw|roup|chedule/i.test(n)).join('\n'));

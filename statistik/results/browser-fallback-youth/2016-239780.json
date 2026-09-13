@@ -1,0 +1,19 @@
+{
+  "key": "2016:239780",
+  "season": 2016,
+  "matchId": 239780,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Amager ABC 2",
+  "ageGroupId": "5",
+  "leagueGroupId": "7679",
+  "roundDate": "2017-03-26",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7679,1,8,,239780,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2016-239780.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:26:49.488Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7679,1,8,,239780,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2016/2017\nVis rækker\n\n\nU15 B (4) Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t239780\nRunde\t7 26-03-2017\nTid\tsø 26-03-2017 13:30\nSpillested\tABC-Hallen\nMarkmandsgade 8 (gården)\n2300 København S\nTelefon 32 95 50 02\nHjemmehold\tAmager ABC 2\nNicklas Jensen\nJensen.Nicklas@ymail.com\n22991848\nUdehold\tGladsaxe Søborg 2\nMads Riebergaard\nmhribergaard@yahoo.dk\n61261897\nResultat\t1-5\nPoint\t0-3\n\tAmager ABC 2\tGladsaxe Søborg 2\t1\t2\t3\tVinder W.O.\n1. S\t\nAnton Abildstrøm\n\t\nViggo Kongslev Hilbert\n\t21 - 13\t21 - 13\t\t\n2. S\t\nSvend Ubbesen\n\t\nMalte Hvid Ribergaard\n\t11 - 21\t11 - 21\t\t\n3. S\t\nAxel Birk\n\t\nFabian Aagren\n\t21 - 14\t19 - 21\t10 - 21\t\n4. S\t\nElliot Charrier\n\t\nFrederik Fabricius Dahl\n\t\t\t\tG\n1. D\t\nAnton Abildstrøm\nSvend Ubbesen\n\t\nViggo Kongslev Hilbert\nMalte Hvid Ribergaard\n\t12 - 21\t18 - 21\t\t\n2. D\t\nAxel Birk\nElliot Charrier\n\t\nFabian Aagren\nFrederik Fabricius Dahl\n\t\t\t\tG\n\n\nReserver\nAmager ABC 2\tGladsaxe Søborg 2\n\n\t\n\nViggo Kongslev Hilbert\nfor Bertram Wilhardt Jensen\n\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

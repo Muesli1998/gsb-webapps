@@ -1,0 +1,588 @@
+{
+  "generatedAt": "2026-09-13T06:20:35.039Z",
+  "total": 56,
+  "withCategories": 11,
+  "rows": [
+    {
+      "season": 2018,
+      "matchId": 337416,
+      "result": "4-3",
+      "categories": [
+        "1. S",
+        "2. S",
+        "3. S",
+        "4. S",
+        "1. D",
+        "2. D"
+      ],
+      "categoryCount": 6,
+      "scoreTokens": 20,
+      "hasPlayers": true
+    },
+    {
+      "season": 2018,
+      "matchId": 337417,
+      "result": "4-3",
+      "categories": [
+        "1. S",
+        "2. S",
+        "3. S",
+        "4. S",
+        "1. D",
+        "2. D"
+      ],
+      "categoryCount": 6,
+      "scoreTokens": 17,
+      "hasPlayers": true
+    },
+    {
+      "season": 2018,
+      "matchId": 337423,
+      "result": "6-0",
+      "categories": [
+        "1. S",
+        "2. S",
+        "3. S",
+        "4. S",
+        "1. D",
+        "2. D"
+      ],
+      "categoryCount": 6,
+      "scoreTokens": 18,
+      "hasPlayers": true
+    },
+    {
+      "season": 2018,
+      "matchId": 337425,
+      "result": "0-6",
+      "categories": [
+        "1. S",
+        "2. S",
+        "3. S",
+        "4. S",
+        "1. D",
+        "2. D"
+      ],
+      "categoryCount": 6,
+      "scoreTokens": 16,
+      "hasPlayers": true
+    },
+    {
+      "season": 2019,
+      "matchId": 365220,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2019,
+      "matchId": 365224,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2019,
+      "matchId": 365416,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2019,
+      "matchId": 365483,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2019,
+      "matchId": 365512,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2019,
+      "matchId": 365545,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2019,
+      "matchId": 365548,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2019,
+      "matchId": 365718,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2019,
+      "matchId": 365749,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2019,
+      "matchId": 365774,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2019,
+      "matchId": 365803,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2019,
+      "matchId": 366883,
+      "result": "6-0",
+      "categories": [
+        "1. D",
+        "2. D",
+        "3. D",
+        "4. D",
+        "5. D",
+        "6. D"
+      ],
+      "categoryCount": 6,
+      "scoreTokens": 17,
+      "hasPlayers": true
+    },
+    {
+      "season": 2019,
+      "matchId": 366885,
+      "result": "5-1",
+      "categories": [
+        "1. D",
+        "2. D",
+        "3. D",
+        "4. D",
+        "5. D",
+        "6. D"
+      ],
+      "categoryCount": 6,
+      "scoreTokens": 19,
+      "hasPlayers": true
+    },
+    {
+      "season": 2019,
+      "matchId": 366887,
+      "result": "6-0",
+      "categories": [
+        "1. D",
+        "2. D",
+        "3. D",
+        "4. D",
+        "5. D",
+        "6. D"
+      ],
+      "categoryCount": 6,
+      "scoreTokens": 16,
+      "hasPlayers": true
+    },
+    {
+      "season": 2019,
+      "matchId": 366889,
+      "result": "0-6",
+      "categories": [
+        "1. D",
+        "2. D",
+        "3. D",
+        "4. D",
+        "5. D",
+        "6. D"
+      ],
+      "categoryCount": 6,
+      "scoreTokens": 18,
+      "hasPlayers": true
+    },
+    {
+      "season": 2019,
+      "matchId": 366891,
+      "result": "6-0",
+      "categories": [
+        "1. D",
+        "2. D",
+        "3. D",
+        "4. D",
+        "5. D",
+        "6. D"
+      ],
+      "categoryCount": 6,
+      "scoreTokens": 16,
+      "hasPlayers": true
+    },
+    {
+      "season": 2019,
+      "matchId": 366893,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2019,
+      "matchId": 366944,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2019,
+      "matchId": 366948,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 3,
+      "hasPlayers": false
+    },
+    {
+      "season": 2019,
+      "matchId": 366979,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2019,
+      "matchId": 366986,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2019,
+      "matchId": 384292,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2019,
+      "matchId": 385098,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 387755,
+      "result": "3-3",
+      "categories": [
+        "1. D",
+        "2. D",
+        "3. D",
+        "4. D",
+        "5. D",
+        "6. D"
+      ],
+      "categoryCount": 6,
+      "scoreTokens": 17,
+      "hasPlayers": true
+    },
+    {
+      "season": 2020,
+      "matchId": 387757,
+      "result": "5-1",
+      "categories": [
+        "1. D",
+        "2. D",
+        "3. D",
+        "4. D",
+        "5. D",
+        "6. D"
+      ],
+      "categoryCount": 6,
+      "scoreTokens": 17,
+      "hasPlayers": true
+    },
+    {
+      "season": 2020,
+      "matchId": 387878,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 387879,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 387884,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 387887,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 387902,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 387907,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 387909,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 387915,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 388014,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 388019,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 388020,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 388024,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 1,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 388044,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 388049,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 388054,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 388063,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 403986,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 1,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 403990,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 403996,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 403998,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 404003,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 404142,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 404143,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 404147,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 404672,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 1,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 404710,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    },
+    {
+      "season": 2020,
+      "matchId": 404714,
+      "result": "-",
+      "categories": [],
+      "categoryCount": 0,
+      "scoreTokens": 2,
+      "hasPlayers": false
+    }
+  ]
+}

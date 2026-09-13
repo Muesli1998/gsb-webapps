@@ -1,0 +1,19 @@
+{
+  "key": "2016:278413",
+  "season": 2016,
+  "matchId": 278413,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Ørslevkloster 1",
+  "ageGroupId": "3",
+  "leagueGroupId": "8987",
+  "roundDate": null,
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,8987,1,8,,278413,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2016-278413.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:26:15.234Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,8987,1,8,,278413,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADDAN,DGI U11 2016/2017\nVis rækker\n\n\nDMU-Hold U11 D 4 Spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t278413\nRunde\t1 08-04-2017\nTid\tlø 08-04-2017 11:15\nSpillested\tMagion Vestjysk Bank Arena\nTinghusgade 15\n7200 Grindsted\nHjemmehold\tØrslevkloster 1\nAnne Mette Rasmussen\nAer@vesthimmerland.dk\n23671466\nUdehold\tGladsaxe Søborg 1\nChristian Thrysøe\nchristian.fam.thrysoe@gmail.com\n+4529482620\nResultat\t1-5\nPoint\t0-3\n\tØrslevkloster 1\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. S\t\nThomas Skovgård\n\t\nKasper Gorm\n\t17 - 21\t7 - 21\t\t\n2. S\t\nVilliam Eskildsen\n\t\nMalthe Baltzer\n\t13 - 21\t18 - 21\t\t\n3. S\t\nCasper Nygaard\n\t\nLasse Bjerregaard Kirt\n\t13 - 21\t27 - 25\t8 - 21\t\n4. S\t\nJakob Skovgård\n\t\nAnton Berner\n\t9 - 21\t8 - 21\t\t\n1. D\t\nThomas Skovgård\nVilliam Eskildsen\n\t\nKasper Gorm\nAnton Berner\n\t21 - 19\t18 - 21\t21 - 16\t\n2. D\t\nMikkel Østergaard\nCasper Nygaard\n\t\nMalthe Baltzer\nLasse Bjerregaard Kirt\n\t18 - 21\t11 - 21\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

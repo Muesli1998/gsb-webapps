@@ -1,0 +1,814 @@
+{
+  "generatedAt": "2026-09-13T07:53:47.306Z",
+  "updated": 80,
+  "rowsWithRemarks": 80,
+  "keywordCounts": {
+    "protest": 20,
+    "kendelse": 5,
+    "ændret": 22,
+    "afbud": 6,
+    "corona": 1
+  },
+  "rows": [
+    {
+      "external_match_id": "1636",
+      "season_id": 2011,
+      "round_date": "2011-10-16",
+      "home_name_raw": "Gladsaxe Søborg 2",
+      "away_name_raw": "SMASH 2",
+      "result_raw": "13-0",
+      "points_raw": "3-0",
+      "remark_raw": "resultat rettet grundet at smash 2 har brugt ulovlig spiller."
+    },
+    {
+      "external_match_id": "49395",
+      "season_id": 2012,
+      "round_date": "2012-09-30",
+      "home_name_raw": "Pan Kbh.",
+      "away_name_raw": "Gladsaxe Søborg 2",
+      "result_raw": "8-5",
+      "points_raw": "3-0",
+      "remark_raw": "Signe Vestergaard er ulovligt brugt, da hun har spilet 1. sen. 8-09-12.Man skal stille med rene hold i den første kamp."
+    },
+    {
+      "external_match_id": "50296",
+      "season_id": 2012,
+      "round_date": "2012-10-07",
+      "home_name_raw": "Gladsaxe Søborg 2",
+      "away_name_raw": "Amager ABC",
+      "result_raw": "6-0",
+      "points_raw": "2-0",
+      "remark_raw": "Resultat rettet da Philip Tu Dong ikke var spilleberettiget - Siv Jønsson"
+    },
+    {
+      "external_match_id": "49718",
+      "season_id": 2012,
+      "round_date": "2012-12-02",
+      "home_name_raw": "Gladsaxe Søborg 3",
+      "away_name_raw": "Lyngby 4",
+      "result_raw": "9-3",
+      "points_raw": "2-0",
+      "remark_raw": "Jan Nielsen kan ikke være reserve da han ikke kommer fra et avere hold./CE"
+    },
+    {
+      "external_match_id": "49750",
+      "season_id": 2012,
+      "round_date": "2013-01-06",
+      "home_name_raw": "Søværnet Kbh.",
+      "away_name_raw": "Gladsaxe Søborg 4",
+      "result_raw": "9-3",
+      "points_raw": "2-0",
+      "remark_raw": "Hans Thor er god nok. Det var en anden Hans der havde spilet. Resultatet rettes derfor tilbage til 9-3 til SB. /CE"
+    },
+    {
+      "external_match_id": "97680",
+      "season_id": 2013,
+      "round_date": "2013-11-17",
+      "home_name_raw": "Skovshoved 2",
+      "away_name_raw": "Gladsaxe Søborg 3",
+      "result_raw": "4-4",
+      "points_raw": "1-1",
+      "remark_raw": "Resultaterne menes at være indtastet - men er ikke i systemet - og er ikke gemt. Derfor er kampene tastet som w.o., jf. info fra Warny, SIF / SJ"
+    },
+    {
+      "external_match_id": "96518",
+      "season_id": 2013,
+      "round_date": "2014-02-02",
+      "home_name_raw": "NBK Amager 2",
+      "away_name_raw": "Gladsaxe Søborg 2",
+      "result_raw": "4-9",
+      "points_raw": "0-3",
+      "remark_raw": "Som følge af protest vinder GSB 1., 2. og 3. hs samt 1. hd. Kampens resultat ændres fra 8-5 til 4-9 til GSB. Sidste sæt er nedskrevet med 1 point for at give mulighed for at GSB vinder på WO./HU"
+    },
+    {
+      "external_match_id": "169020",
+      "season_id": 2014,
+      "round_date": "2015-01-11",
+      "home_name_raw": "Hvidovre",
+      "away_name_raw": "Gladsaxe Søborg 2",
+      "result_raw": "0-6",
+      "points_raw": "0-2",
+      "remark_raw": "020102-12 Michael Leisner og 020408-13 Magnus Warming Petersen er begge ulovligt benyttet af HBC i U15 rækken. Lars Holmberg"
+    },
+    {
+      "external_match_id": "141473",
+      "season_id": 2014,
+      "round_date": "2015-03-15",
+      "home_name_raw": "Gladsaxe Søborg 3",
+      "away_name_raw": "Skovshoved 5",
+      "result_raw": "8-5",
+      "points_raw": "3-0",
+      "remark_raw": "Der er nedlagt protest. Behandles af HU./MBR Kampen rettet jævnfør protestkendelsen. Hanne"
+    },
+    {
+      "external_match_id": "193645",
+      "season_id": 2015,
+      "round_date": "2015-12-13",
+      "home_name_raw": "Drive 6",
+      "away_name_raw": "Gladsaxe Søborg 3",
+      "result_raw": "7-6",
+      "points_raw": "2-1",
+      "remark_raw": "Resultat rettet grundet protest behandlet af Holdturneringsudvalget. HN"
+    },
+    {
+      "external_match_id": "193276",
+      "season_id": 2015,
+      "round_date": "2016-03-13",
+      "home_name_raw": "Lyngby 2",
+      "away_name_raw": "Gladsaxe Søborg",
+      "result_raw": "6-6",
+      "points_raw": "1-1",
+      "remark_raw": "Resultatet ændret grundet protest behandlet i Holdturneringsudvalget.HN"
+    },
+    {
+      "external_match_id": "239116",
+      "season_id": 2016,
+      "round_date": "2016-10-09",
+      "home_name_raw": "Gladsaxe Søborg",
+      "away_name_raw": "Amager ABC 2",
+      "result_raw": "2-4",
+      "points_raw": "0-3",
+      "remark_raw": "Resultat ændret grundet Holdturneringsudvalgets administrative afgørelse.HN."
+    },
+    {
+      "external_match_id": "238838",
+      "season_id": 2016,
+      "round_date": "2017-02-05",
+      "home_name_raw": "Gladsaxe Søborg 2",
+      "away_name_raw": "Hvidovre 2",
+      "result_raw": "2-10",
+      "points_raw": "0-2",
+      "remark_raw": "Resultater ændret fra 3-9 til 2-10 grundet forkert opstilling i HD 4.5.6. HN"
+    },
+    {
+      "external_match_id": "290427",
+      "season_id": 2017,
+      "round_date": "2018-01-14",
+      "home_name_raw": "KBK Kbh. 4",
+      "away_name_raw": "Gladsaxe Søborg 2",
+      "result_raw": "2-4",
+      "points_raw": "0-3",
+      "remark_raw": "Reserver indsat hos GSB. BP overførte ikke reserver fra indledende holdopstilling. Kurt Mehlsen, 15.01.2018"
+    },
+    {
+      "external_match_id": "329928",
+      "season_id": 2018,
+      "round_date": "2018-09-23",
+      "home_name_raw": "Gladsaxe Søborg 3",
+      "away_name_raw": "Dragør",
+      "result_raw": "7-1",
+      "points_raw": "2-0",
+      "remark_raw": "Resultater indtastet af Kurt Mehlsen, BADKBH på grund af fejl i holdleders rettigheder."
+    },
+    {
+      "external_match_id": "340490",
+      "season_id": 2018,
+      "round_date": "2018-10-07",
+      "home_name_raw": "Skovshoved 3",
+      "away_name_raw": "Gladsaxe Søborg 1",
+      "result_raw": "2-4",
+      "points_raw": "0-3",
+      "remark_raw": "Spiller indsat hos SIF 3 i 3.S og 1.D. Kurt Mehlsen 09.10.2018 Spiller rettet hos SIF 3 i 3.S og 1.D. Kurt Mehlsen 10.10.2018"
+    },
+    {
+      "external_match_id": "340495",
+      "season_id": 2018,
+      "round_date": "2018-10-28",
+      "home_name_raw": "Charlottenlund 1",
+      "away_name_raw": "Gladsaxe Søborg 1",
+      "result_raw": "0-6",
+      "points_raw": "0-3",
+      "remark_raw": "Resultatet ændret jf. kendelse i protest. Kurt Mehlsen 10.03.2019"
+    },
+    {
+      "external_match_id": "330217",
+      "season_id": 2018,
+      "round_date": "2018-11-04",
+      "home_name_raw": "Gladsaxe Søborg 4",
+      "away_name_raw": "BC37 Amager 2",
+      "result_raw": "4-8",
+      "points_raw": "0-2",
+      "remark_raw": "Resultatet er ændret fra 6-6 til 4-8 (0-3 i point) efter administrativ afgørelse i forbindelse med en klubskifte sag på spiller i 1. HD. Kurt Mehlsen 16.03.2019"
+    },
+    {
+      "external_match_id": "330902",
+      "season_id": 2018,
+      "round_date": "2018-11-04",
+      "home_name_raw": "Gladsaxe Søborg 3",
+      "away_name_raw": "KMB2010 4",
+      "result_raw": "5-8",
+      "points_raw": "0-3",
+      "remark_raw": "Dorthe Høst indsat på holdsedlen efterfølgende. Kurt Mehlsen 28.10.2018 kl. 20.01 Resultatet ændret til 5-8, idet W.O kampene 2.DS og 2.DD deles af klubberne jf. administrativ afgørelse. Kurt Mehlsen, 16.03.2019"
+    },
+    {
+      "external_match_id": "359177",
+      "season_id": 2018,
+      "round_date": "2019-01-27",
+      "home_name_raw": "Charlottenlund 3",
+      "away_name_raw": "Gladsaxe Søborg 2",
+      "result_raw": "8-5",
+      "points_raw": "3-0",
+      "remark_raw": "Reserve indsat for CBK efter administrativ fejl. Kurt Mehlsen, 01.02.2019"
+    },
+    {
+      "external_match_id": "339146",
+      "season_id": 2018,
+      "round_date": "2019-03-10",
+      "home_name_raw": "Skovshoved 6",
+      "away_name_raw": "Gladsaxe Søborg 2",
+      "result_raw": "6-0",
+      "points_raw": "3-0",
+      "remark_raw": "Resultatet er indtastet af Kurt Mehlsen 13.03.2019. Arrangørfejl."
+    },
+    {
+      "external_match_id": "339148",
+      "season_id": 2018,
+      "round_date": "2019-03-10",
+      "home_name_raw": "Gladsaxe Søborg 2",
+      "away_name_raw": "FKIF Frederiksberg 2",
+      "result_raw": "0-6",
+      "points_raw": "0-3",
+      "remark_raw": "Resultatet indberettet af Kurt Mehlsen 13.03.2019. Arrangør fejl."
+    },
+    {
+      "external_match_id": "330079",
+      "season_id": 2018,
+      "round_date": "2019-04-07",
+      "home_name_raw": "KMB2010 2",
+      "away_name_raw": "Gladsaxe Søborg",
+      "result_raw": "6-6",
+      "points_raw": "1-1",
+      "remark_raw": "Resultatet er ændret efter protest fra Gladsaxe Søborg. HU LH"
+    },
+    {
+      "external_match_id": "365094",
+      "season_id": 2019,
+      "round_date": "2019-09-21",
+      "home_name_raw": "SAIF Kbh. 4",
+      "away_name_raw": "Gladsaxe Søborg 2",
+      "result_raw": "9-4",
+      "points_raw": "3-0",
+      "remark_raw": "Resultatet ændret efter kendelse i protest udsendt 02.10.2019"
+    },
+    {
+      "external_match_id": "365995",
+      "season_id": 2019,
+      "round_date": "2019-09-21",
+      "home_name_raw": "Gladsaxe Søborg",
+      "away_name_raw": "Vanløse",
+      "result_raw": "5-8",
+      "points_raw": "5-11",
+      "remark_raw": "4. oktober: Stillingen ændret fra 6-7 til 5-8 efter protestafgørelse."
+    },
+    {
+      "external_match_id": "365757",
+      "season_id": 2019,
+      "round_date": "2019-11-03",
+      "home_name_raw": "Gladsaxe Søborg 3",
+      "away_name_raw": "FKIF Frederiksberg 3",
+      "result_raw": "8-0",
+      "points_raw": "2-0",
+      "remark_raw": "4.HD og 5.HD ombyttet hos FKIF efter administrativ fejl (afbud). Resultat uændret. Kurt Mehlsen 29.10.2019"
+    },
+    {
+      "external_match_id": "365787",
+      "season_id": 2019,
+      "round_date": "2019-11-24",
+      "home_name_raw": "BC37 Amager 2",
+      "away_name_raw": "Gladsaxe Søborg 4",
+      "result_raw": "3-5",
+      "points_raw": "0-2",
+      "remark_raw": "Manglende spiller indsat på GSB 4 efter administrativ fejl. Kurt Mehlsen 31.01.2020"
+    },
+    {
+      "external_match_id": "373816",
+      "season_id": 2019,
+      "round_date": "2019-12-08",
+      "home_name_raw": "Gladsaxe Søborg 1",
+      "away_name_raw": "Islands Brygge 1",
+      "result_raw": "3-4",
+      "points_raw": "1-2",
+      "remark_raw": "Resultatet ændret fra 6-0 til 3-4 efter kendelse i protest. 09.01.2020 Kurt Mehlsen"
+    },
+    {
+      "external_match_id": "385086",
+      "season_id": 2019,
+      "round_date": "2020-01-26",
+      "home_name_raw": "Gladsaxe Søborg 2",
+      "away_name_raw": "BC37 Amager 2",
+      "result_raw": "10-3",
+      "points_raw": "3-0",
+      "remark_raw": "Reserve Frederik Weibøl, BC37 rettet efter administrativ fejl. Kurt Mehlsen 31.01.2020"
+    },
+    {
+      "external_match_id": "365743",
+      "season_id": 2019,
+      "round_date": "2020-02-02",
+      "home_name_raw": "Vanløse 1",
+      "away_name_raw": "Gladsaxe Søborg 2",
+      "result_raw": "0-8",
+      "points_raw": "0-2",
+      "remark_raw": "Reserve slette hos GSB 2 på grund af administrativ fejl. Kurt Mehlsen. 20.02.2020 Reserve skal komme fra et lavere rangeret hold."
+    },
+    {
+      "external_match_id": "414809",
+      "season_id": 2021,
+      "round_date": "2021-10-10",
+      "home_name_raw": "Hvidovre 1",
+      "away_name_raw": "Gladsaxe Søborg 1",
+      "result_raw": "4-2",
+      "points_raw": "3-0",
+      "remark_raw": "Resultat ændret fra 3-4 til 4-2 på grund af GSB opstillede forkert i 2. Double. Angivet reserve hos GSB er slettet. Reserve skal kun angives, når spilleren spiller på 2 forskellige hold i samme runde. Kurt Mehlsen 14.10.2021"
+    },
+    {
+      "external_match_id": "413895",
+      "season_id": 2021,
+      "round_date": "2021-10-31",
+      "home_name_raw": "BC37 Amager 2",
+      "away_name_raw": "Gladsaxe Søborg 2",
+      "result_raw": "2-4",
+      "points_raw": "0-3",
+      "remark_raw": "BC37 4.S og 2.D er Dante Juul Lex udskiftet med Dante Friis Bentzen efter administrativ fejl. 06.11.2022 Kurt Mehlsen"
+    },
+    {
+      "external_match_id": "413899",
+      "season_id": 2021,
+      "round_date": "2021-11-21",
+      "home_name_raw": "Gladsaxe Søborg 2",
+      "away_name_raw": "FKIF Frederiksberg 2",
+      "result_raw": "4-3",
+      "points_raw": "2-1",
+      "remark_raw": "Spiller indsat hos GSB 2 i 3.S og 1.D efter administrativ fejl. Kurt Mehlsen 22.11.2021"
+    },
+    {
+      "external_match_id": "413941",
+      "season_id": 2021,
+      "round_date": "2021-12-12",
+      "home_name_raw": "Valby BC 2",
+      "away_name_raw": "Gladsaxe Søborg 3",
+      "result_raw": "1-5",
+      "points_raw": "0-3",
+      "remark_raw": "Valby 2 ændret i 4.S og 2.D efter administrativ fejl. GSB 3 ændret i 4.S efter administrativ fejl. Golden Set annulleret. Skulle ikke i brug. 14.12.2021 Kurt Mehlsen"
+    },
+    {
+      "external_match_id": "414560",
+      "season_id": 2021,
+      "round_date": "2021-12-12",
+      "home_name_raw": "Gladsaxe Søborg 3",
+      "away_name_raw": "NBK Amager 2",
+      "result_raw": "3-4",
+      "points_raw": "1-2",
+      "remark_raw": "Resultaterne er rettet efter kendelse i protest 23.12.2021. Kurt Mehlsen"
+    },
+    {
+      "external_match_id": "407105",
+      "season_id": 2021,
+      "round_date": "2022-01-09",
+      "home_name_raw": "Gladsaxe Søborg 3",
+      "away_name_raw": "Hvidovre HB2000 2",
+      "result_raw": "7-6",
+      "points_raw": "2-1",
+      "remark_raw": "Holdkamp 407105 er ikke spillet den 15.01.2022. Den blev udsat på grund af Corona. Holdkampen blev spillet den 10.02.2022 hvor resultaterne også er indberettet. Kurt Mehlsen 08.03.2022"
+    },
+    {
+      "external_match_id": "413586",
+      "season_id": 2021,
+      "round_date": "2022-01-16",
+      "home_name_raw": "Vanløse 4",
+      "away_name_raw": "Gladsaxe Søborg 4",
+      "result_raw": "4-2",
+      "points_raw": "3-0",
+      "remark_raw": "1.DS og 1.DD indsat hos Gladsaxe efter administrativ fejl. Kurt Mehlsen 18.01.2022"
+    },
+    {
+      "external_match_id": "407493",
+      "season_id": 2021,
+      "round_date": "2022-01-30",
+      "home_name_raw": "PI København 1",
+      "away_name_raw": "Gladsaxe Søborg 4",
+      "result_raw": "8-0",
+      "points_raw": "2-0",
+      "remark_raw": "GSB 4 meldte afbud 16.03.2022"
+    },
+    {
+      "external_match_id": "407717",
+      "season_id": 2021,
+      "round_date": "2022-01-30",
+      "home_name_raw": "Charlottenlund 2",
+      "away_name_raw": "Gladsaxe Søborg 2",
+      "result_raw": "8-0",
+      "points_raw": "2-0",
+      "remark_raw": "\"Reserver for\" hos Charlottenlund slettet efter administrativ fejl. 19.02.2022 Kurt Mehlsen"
+    },
+    {
+      "external_match_id": "407764",
+      "season_id": 2021,
+      "round_date": "2022-01-30",
+      "home_name_raw": "Gladsaxe Søborg 3",
+      "away_name_raw": "Lyngby 3",
+      "result_raw": "4-4",
+      "points_raw": "1-1",
+      "remark_raw": "Resultat indtastet af BADKBH efter fejl i holdsedlerne ved offentliggørelse i BadmintonPlayer. Kurt Mehlsen 06.02.2022"
+    },
+    {
+      "external_match_id": "407884",
+      "season_id": 2021,
+      "round_date": "2022-01-30",
+      "home_name_raw": "Charlottenlund 3",
+      "away_name_raw": "Gladsaxe Søborg 2",
+      "result_raw": "10-2",
+      "points_raw": "2-0",
+      "remark_raw": "3.HD og 6.HD er rettet hos CBK efter administrativ fejl (Jakob Ingerslev indsat). 31.01.2022 Kurt Mehlsen"
+    },
+    {
+      "external_match_id": "413617",
+      "season_id": 2021,
+      "round_date": "2022-02-27",
+      "home_name_raw": "Gladsaxe Søborg 1",
+      "away_name_raw": "Ringsted 1",
+      "result_raw": "1-5",
+      "points_raw": "0-3",
+      "remark_raw": "2.S rettet i 3. set fra 21-16 til 21-6 efter administrativ fejl. Kurt Mehlsen 01.03.2022"
+    },
+    {
+      "external_match_id": "407116",
+      "season_id": 2021,
+      "round_date": "2022-03-20",
+      "home_name_raw": "KSI Badmintonklub Kbh. 2",
+      "away_name_raw": "Gladsaxe Søborg 3",
+      "result_raw": "13-0",
+      "points_raw": "3-0",
+      "remark_raw": "Holdseddel/GSB 3 er tilrettet jf. tilsendt mail. BADKBH har fået oplyst navnene på de \"Ikke fremmødte\". Kurt Mehlsen 31.03.2022"
+    },
+    {
+      "external_match_id": "413804",
+      "season_id": 2021,
+      "round_date": "2022-03-27",
+      "home_name_raw": "Gladsaxe Søborg 1",
+      "away_name_raw": "KBK Kbh. 1",
+      "result_raw": "1-5",
+      "points_raw": "0-3",
+      "remark_raw": "2.D ændret efter administrativ fejl. KBK vand kampen. Kurt Mehlsen 27.03.2022"
+    },
+    {
+      "external_match_id": "407766",
+      "season_id": 2021,
+      "round_date": "2022-04-03",
+      "home_name_raw": "Gladsaxe Søborg 3",
+      "away_name_raw": "Drive 2",
+      "result_raw": "2-6",
+      "points_raw": "0-2",
+      "remark_raw": "Resultater indtastet af BADKBH pga. tekniske fejl i holdsedlen. Kurt Mehlsen 28.03.2022"
+    },
+    {
+      "external_match_id": "426788",
+      "season_id": 2022,
+      "round_date": "2022-10-02",
+      "home_name_raw": "Vanløse 1",
+      "away_name_raw": "Gladsaxe Søborg 3",
+      "result_raw": "4-4",
+      "points_raw": "1-1",
+      "remark_raw": "4.HD hos GSB er rettet efter administrativ fejl. 28.11.2022 Kurt Mehlsen 1.HD og 1.MD rettet hos GSB (Carsten Nørgaard) efter administrativ fejl. Forkert Badminton ID indlagt. 08.01.2023 Kurt Mehlsen"
+    },
+    {
+      "external_match_id": "429774",
+      "season_id": 2022,
+      "round_date": "2022-10-09",
+      "home_name_raw": "Gladsaxe Søborg 3",
+      "away_name_raw": "NBK Amager 1",
+      "result_raw": "4-2",
+      "points_raw": "3-1",
+      "remark_raw": "Holdopstilling og resultat indberettet efter administrativ fejl. 12.10.2022 Kurt Mehlsen"
+    },
+    {
+      "external_match_id": "430119",
+      "season_id": 2022,
+      "round_date": "2022-10-09",
+      "home_name_raw": "Valby BC 1",
+      "away_name_raw": "Gladsaxe Søborg 2",
+      "result_raw": "2-4",
+      "points_raw": "1-3",
+      "remark_raw": "1.S og 2.S hos Gladsaxe Søborg 2: Maria og Lykke byttet om efter administrativ fejl. Kurt Mehlsen 10.10.2022"
+    },
+    {
+      "external_match_id": "430515",
+      "season_id": 2022,
+      "round_date": "2022-10-09",
+      "home_name_raw": "Dragør 1",
+      "away_name_raw": "Gladsaxe Søborg 4",
+      "result_raw": "3-3",
+      "points_raw": "2-2",
+      "remark_raw": "Holdkampen rapporteres med 3-3 da man glemte at afvikle Golden Set. 11.10.2022 Kurt Mehlsen"
+    },
+    {
+      "external_match_id": "426523",
+      "season_id": 2022,
+      "round_date": "2022-11-06",
+      "home_name_raw": "Gladsaxe Søborg 1",
+      "away_name_raw": "Vanløse 1",
+      "result_raw": "8-4",
+      "points_raw": "2-0",
+      "remark_raw": "1.HD og 6.HD hos Vanløse rettet efter administrativ fejl. 15.11.2022 Kurt Mehlsen"
+    },
+    {
+      "external_match_id": "429571",
+      "season_id": 2022,
+      "round_date": "2022-12-11",
+      "home_name_raw": "Gladsaxe Søborg 3",
+      "away_name_raw": "Dragør 1",
+      "result_raw": "6-0",
+      "points_raw": "4-0",
+      "remark_raw": "Dragør mødte ikke op til kampen. De havde ikke givet besked i forvejen. Det var ikke muligt at få kontakt til holdlederen. Deres formand vidste ikke noget."
+    },
+    {
+      "external_match_id": "429790",
+      "season_id": 2022,
+      "round_date": "2022-12-11",
+      "home_name_raw": "Gladsaxe Søborg 3",
+      "away_name_raw": "Dragør 1",
+      "result_raw": "6-0",
+      "points_raw": "4-0",
+      "remark_raw": "Spiller indsat hos GSB i 4.S og 2.D efter registrering. Kurt Mehlsen 31.12.2022"
+    },
+    {
+      "external_match_id": "429792",
+      "season_id": 2022,
+      "round_date": "2022-12-11",
+      "home_name_raw": "BK36 Kbh. 2",
+      "away_name_raw": "Gladsaxe Søborg 3",
+      "result_raw": "0-6",
+      "points_raw": "0-4",
+      "remark_raw": "Spiller indsat hos GSB i 3.S efter registrering. Kurt Mehlsen 31.12.2022"
+    },
+    {
+      "external_match_id": "426797",
+      "season_id": 2022,
+      "round_date": "2022-12-18",
+      "home_name_raw": "KBK Kbh. 1",
+      "away_name_raw": "Gladsaxe Søborg 3",
+      "result_raw": "5-3",
+      "points_raw": "2-0",
+      "remark_raw": "2.HD og 4.HD rettet hos GSB (Carsten Nørgaard) efter administrativ fejl. Forkert Badminton ID indlagt. 08.01.2023 Kurt Mehlsen"
+    },
+    {
+      "external_match_id": "426534",
+      "season_id": 2022,
+      "round_date": "2023-01-08",
+      "home_name_raw": "Charlottenlund 2",
+      "away_name_raw": "Gladsaxe Søborg 1",
+      "result_raw": "5-7",
+      "points_raw": "0-2",
+      "remark_raw": "Reserve rettet hos Gladsaxe Søborg efter administrativ fejl. 17.01.2023 Kurt Mehlsen"
+    },
+    {
+      "external_match_id": "426803",
+      "season_id": 2022,
+      "round_date": "2023-01-08",
+      "home_name_raw": "Drive 3",
+      "away_name_raw": "Gladsaxe Søborg 3",
+      "result_raw": "2-6",
+      "points_raw": "0-2",
+      "remark_raw": "1.HD og 4.HD rettet hos GSB (Carsten Nørgaard) efter administrativ fejl. Forkert Badminton ID indlagt. 08.01.2023 Kurt Mehlsen"
+    },
+    {
+      "external_match_id": "428961",
+      "season_id": 2022,
+      "round_date": "2023-01-29",
+      "home_name_raw": "Gladsaxe Søborg 3",
+      "away_name_raw": "Lyngby 5",
+      "result_raw": "2-11",
+      "points_raw": "0-3",
+      "remark_raw": "Holdopstilling er rettet hos Lyngby 5 efter administrativ fejl. Det drejer sig om 1.MX, 1.DS, 2.DS, 1.DD, 2.DD. Kurt Mehlsen 24.01.2023"
+    },
+    {
+      "external_match_id": "429584",
+      "season_id": 2022,
+      "round_date": "2023-03-12",
+      "home_name_raw": "Gladsaxe Søborg 3",
+      "away_name_raw": "Skovshoved 3",
+      "result_raw": "1-5",
+      "points_raw": "0-4",
+      "remark_raw": "Carl-Emil Ring Norup spillede 2. double i stedet for Jonas Hededam Frøhlich, som ikke spillede pga. en skade"
+    },
+    {
+      "external_match_id": "446325",
+      "season_id": 2023,
+      "round_date": "2023-09-17",
+      "home_name_raw": "Gladsaxe Søborg 3",
+      "away_name_raw": "BKPOINT Kbh. 1",
+      "result_raw": "8-0",
+      "points_raw": "2-0",
+      "remark_raw": "Afbud indgivet 08.09.2023 (KM)"
+    },
+    {
+      "external_match_id": "453000",
+      "season_id": 2023,
+      "round_date": "2024-01-14",
+      "home_name_raw": "Valby BC 1",
+      "away_name_raw": "Gladsaxe Søborg 1",
+      "result_raw": "4-3",
+      "points_raw": "3-2",
+      "remark_raw": "2. single for Valby var Vilfred Ebling Wille og ikke Louis Vestergaard Trier I 2.double spillede Victor Damsgaard i stedet for Vilfred som blev skadet."
+    },
+    {
+      "external_match_id": "445619",
+      "season_id": 2023,
+      "round_date": "2024-01-28",
+      "home_name_raw": "Gladsaxe Søborg 3",
+      "away_name_raw": "Frederiksberg 1",
+      "result_raw": "3-5",
+      "points_raw": "0-2",
+      "remark_raw": "Jf. protest fra FBK ændres resultatet fra 4-4 til 35-5 da GSB taber 3. HD. Lars Michelsen 14/3-2024."
+    },
+    {
+      "external_match_id": "452894",
+      "season_id": 2023,
+      "round_date": "2024-02-04",
+      "home_name_raw": "Hvidovre 4",
+      "away_name_raw": "Gladsaxe Søborg 4",
+      "result_raw": "4-3",
+      "points_raw": "3-2",
+      "remark_raw": "Efterindberettet med tilføjelse af spillere fra Golden Set"
+    },
+    {
+      "external_match_id": "445563",
+      "season_id": 2023,
+      "round_date": "2024-03-17",
+      "home_name_raw": "Gladsaxe Søborg 1",
+      "away_name_raw": "Lyngby 2",
+      "result_raw": "8-0",
+      "points_raw": "2-0",
+      "remark_raw": "god kamp"
+    },
+    {
+      "external_match_id": "446204",
+      "season_id": 2023,
+      "round_date": "2024-03-17",
+      "home_name_raw": "Gladsaxe Søborg 3",
+      "away_name_raw": "Charlottenlund 4",
+      "result_raw": "13-0",
+      "points_raw": "3-0",
+      "remark_raw": "Charlottenlund meldte afbud, da de ikke kunne stille hold."
+    },
+    {
+      "external_match_id": "452221",
+      "season_id": 2023,
+      "round_date": "2024-03-24",
+      "home_name_raw": "FKIF Frederiksberg 4",
+      "away_name_raw": "Gladsaxe Søborg 2",
+      "result_raw": "2-4",
+      "points_raw": "1-3",
+      "remark_raw": "Gladsaxe Søborg stillede kun op 3 mand. Der blev byttet lidt om på opstillingstrækkefølgerne for at give alle FKIF'ere muligheder for at få en kamp. Ingen protester."
+    },
+    {
+      "external_match_id": "465711",
+      "season_id": 2024,
+      "round_date": "2024-09-29",
+      "home_name_raw": "Charlottenlund 2",
+      "away_name_raw": "Gladsaxe Søborg",
+      "result_raw": "0-8",
+      "points_raw": "0-2",
+      "remark_raw": "25/10-2024: Resultatet ændret fra 6-2 til 0-8 efter protestafgørelse."
+    },
+    {
+      "external_match_id": "465827",
+      "season_id": 2024,
+      "round_date": "2024-11-03",
+      "home_name_raw": "Ryparken 1",
+      "away_name_raw": "Gladsaxe Søborg 5",
+      "result_raw": "6-4",
+      "points_raw": "2-0",
+      "remark_raw": "Ryparken: Afbud fra Thomas W. Stefan M. rykkes op og spillede 3 HS og 2 HD. Gladsaxe vinder 4 HS og 3 HD ved W.O."
+    },
+    {
+      "external_match_id": "469196",
+      "season_id": 2024,
+      "round_date": "2024-11-17",
+      "home_name_raw": "Gladsaxe Søborg 8",
+      "away_name_raw": "Frederiksberg 4",
+      "result_raw": "5-1",
+      "points_raw": "4-0",
+      "remark_raw": "Resultat korrigeret i forlængelse af protest - 22.11.24 LL"
+    },
+    {
+      "external_match_id": "464268",
+      "season_id": 2024,
+      "round_date": "2024-12-07",
+      "home_name_raw": "Gladsaxe Søborg",
+      "away_name_raw": "Charlottenlund 2",
+      "result_raw": "6-7",
+      "points_raw": "7-9",
+      "remark_raw": "18/12-2024: Resultatet ændret fra 7-6 til 6-7 efter protestafgørelse."
+    },
+    {
+      "external_match_id": "466134",
+      "season_id": 2024,
+      "round_date": "2025-01-05",
+      "home_name_raw": "SAIF Kbh. 4",
+      "away_name_raw": "Gladsaxe Søborg 3",
+      "result_raw": "4-9",
+      "points_raw": "0-3",
+      "remark_raw": "17/1-25: Resultatet ændret fra 9-4 til 4-9 efter protestafgørelse."
+    },
+    {
+      "external_match_id": "467598",
+      "season_id": 2024,
+      "round_date": "2025-01-12",
+      "home_name_raw": "Lyngby 2",
+      "away_name_raw": "Gladsaxe Søborg 1",
+      "result_raw": "0-8",
+      "points_raw": "0-4",
+      "remark_raw": "Lyngby havde desværre flere skader og kan derfor ikke stille hold."
+    },
+    {
+      "external_match_id": "466136",
+      "season_id": 2024,
+      "round_date": "2025-01-26",
+      "home_name_raw": "NBK Amager 2",
+      "away_name_raw": "Gladsaxe Søborg 3",
+      "result_raw": "1-12",
+      "points_raw": "0-3",
+      "remark_raw": "7. februar 2025: Resultatet ændret fra 9-4 til 1-12 efter protestafgørelse."
+    },
+    {
+      "external_match_id": "465742",
+      "season_id": 2024,
+      "round_date": "2025-03-30",
+      "home_name_raw": "Gladsaxe Søborg",
+      "away_name_raw": "KMB2010",
+      "result_raw": "8-0",
+      "points_raw": "2-0",
+      "remark_raw": "KMB har meldt afbud grundet manglende spillere"
+    },
+    {
+      "external_match_id": "486774",
+      "season_id": 2025,
+      "round_date": "2025-10-05",
+      "home_name_raw": "KMB2010 1",
+      "away_name_raw": "Gladsaxe Søborg 2",
+      "result_raw": "6-2",
+      "points_raw": "2-0",
+      "remark_raw": "4.D og 5.D hos Gladsaxe Søborg ændret spillere efter administrativ fejl. KMB2010 er orienteret. Kurt Mehlsen 06.10.2025"
+    },
+    {
+      "external_match_id": "493364",
+      "season_id": 2025,
+      "round_date": "2025-11-16",
+      "home_name_raw": "KMB2010 2",
+      "away_name_raw": "Gladsaxe Søborg 2",
+      "result_raw": "6-0",
+      "points_raw": "4-0",
+      "remark_raw": "12/2-2026: Resultatet ændret fra 4-2 til 6-0 efter protestafgørelse."
+    },
+    {
+      "external_match_id": "487435",
+      "season_id": 2025,
+      "round_date": "2025-12-14",
+      "home_name_raw": "Gladsaxe Søborg 2",
+      "away_name_raw": "Vanløse 1",
+      "result_raw": "8-0",
+      "points_raw": "2-0",
+      "remark_raw": "Holdopstilling GSB og resultater indberettet af Kurt Mehlsen efter fejl i BadmintonPlayer hos Holdleder/GSB. Kurt Mehlsen, 14.12.2025."
+    },
+    {
+      "external_match_id": "487186",
+      "season_id": 2025,
+      "round_date": "2026-01-04",
+      "home_name_raw": "Gladsaxe Søborg 3",
+      "away_name_raw": "FKIF Frederiksberg 3",
+      "result_raw": "4-9",
+      "points_raw": "0-3",
+      "remark_raw": "22/1-2026: Resultatet ændret fra 8-5 til 4-9 efter protestafgørelse."
+    },
+    {
+      "external_match_id": "487363",
+      "season_id": 2025,
+      "round_date": "2026-01-11",
+      "home_name_raw": "Gladsaxe Søborg 1",
+      "away_name_raw": "Skovshoved 1",
+      "result_raw": "8-0",
+      "points_raw": "2-0",
+      "remark_raw": "Kampen er afgjort uden kamp da Skovshoved ikke kunne stille hold. Mvh Martin Ridorf-Hansen, GSB."
+    },
+    {
+      "external_match_id": "487585",
+      "season_id": 2025,
+      "round_date": "2026-01-11",
+      "home_name_raw": "Hvidovre 1",
+      "away_name_raw": "Gladsaxe Søborg 1",
+      "result_raw": "3-10",
+      "points_raw": "0-3",
+      "remark_raw": "26/3-26: Resultatet ændret fra 6-7 til 3-10 efter protestafgørelse."
+    },
+    {
+      "external_match_id": "490163",
+      "season_id": 2025,
+      "round_date": "2026-02-22",
+      "home_name_raw": "Skovshoved 2",
+      "away_name_raw": "Gladsaxe Søborg 2",
+      "result_raw": "0-8",
+      "points_raw": "0-4",
+      "remark_raw": "Josephine Reinbeck er reserver for Cassandra Jelle"
+    }
+  ]
+}

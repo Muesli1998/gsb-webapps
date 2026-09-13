@@ -1,0 +1,29 @@
+{
+  "key": "2024:465002",
+  "season": 2024,
+  "matchId": 465002,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "BK36 Kbh. 1",
+  "ageGroupId": "17",
+  "leagueGroupId": "16929",
+  "roundDate": "2024-09-29",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2024,16929,1,8,,465002,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2024-465002.json",
+  "verifiedAt": "2026-09-12T16:51:18.397Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2024,16929,1,8,,465002,1093,",
+  "individual": {
+    "text": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+    "players": [
+      {
+        "name": "Vis spillerprofil",
+        "href": "https://www.badmintonplayer.dk/DBF/Spiller/VisSpiller/",
+        "id": null
+      }
+    ],
+    "categories": [],
+    "scores": []
+  }
+}

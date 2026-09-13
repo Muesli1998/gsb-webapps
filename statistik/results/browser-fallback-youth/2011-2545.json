@@ -1,0 +1,19 @@
+{
+  "key": "2011:2545",
+  "season": 2011,
+  "matchId": 2545,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "KFUM Badminton Kbh. 2",
+  "ageGroupId": "5",
+  "leagueGroupId": "108",
+  "roundDate": "2011-11-20",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,108,1,8,,2545,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2011-2545.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:32:51.839Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,108,1,8,,2545,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2011/2012\nVis rækker\n\n\nU15 Serie X2 U15 Serie X2\nStilling\nVis alle kampe\n\nKampnr\t2545\nRunde\t3 20-11-2011\nTid\tlø 19-11-2011 14:00\nSpillested\tEmdruphallen\nNøkkerosevej 23\n2400 København NV\nHjemmehold\tKFUM Badminton Kbh. 2\nUdehold\tGladsaxe Søborg 3\nResultat\t0-6\nPoint\t0-2\nAfgjort uden kamp (afbud/udeblivelse)\n\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

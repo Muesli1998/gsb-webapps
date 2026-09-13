@@ -1,0 +1,21 @@
+{
+  "key": "2024:469721",
+  "season": 2024,
+  "matchId": 469721,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Team Vejleå 3",
+  "ageGroupId": "18",
+  "leagueGroupId": "17100",
+  "roundDate": "2025-02-02",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2024,17100,1,8,,469721,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2024-469721.json",
+  "verifiedAt": "2026-09-12T16:49:35.017Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:47:24.043Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2024,17100,1,8,,469721,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH,BADSJ,DGI-NSJ,DGI-MVS U17/U19 2024/2025\nVis rækker\n\n\nU17/U19 D, 4600 (4 spillere) Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t469721\nRunde\t7 02-02-2025\nTid\tsø 02-02-2025 14:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tTeam Vejleå 3\nCarsten Gundlach\ncarsten.gundlach@gmail.com\n22384241\nUdehold\tGladsaxe Søborg 1\nPia Lebeck Frederiksen\npia@lebeckfrederiksen.dk\n29938604\nResultat\t2-4\nPoint\t1-3\n\tTeam Vejleå 3\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. S\t\nWilliam Kold\n\t\nHjalte Palmqvist\n\t16 - 21\t16 - 21\t\t\n2. S\t\nNicolai Ubaghs\n\t\nJakob Lebeck Frederiksen\n\t21 - 19\t10 - 21\t21 - 8\t\n3. S\t\nTuana Uslu\n\t\nJonas Felk Øster\n\t15 - 21\t15 - 21\t\t\n4. S\t\n(Ikke fremmødt)\n\t\nManya Bhardwaj\n\t\t\t\tG\n1. D\t\nWilliam Kold\nNicolai Ubaghs\n\t\nJakob Lebeck Frederiksen\nManya Bhardwaj\n\t16 - 21\t21 - 5\t21 - 13\t\n2. D\t\nTuana Uslu\n(Ikke fremmødt)\n\t\nRuhani Ahana Mukherjee\nJonas Felk Øster\n\t\t\t\tG\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "gsb-statistik-test",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fallback:run": "node scripts/run-browser-fallback.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.55.0"
+  }
+}

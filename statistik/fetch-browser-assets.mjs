@@ -1,0 +1,2 @@
+const urls=['https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/js','https://badmintonplayer.dk/sportsresults/components/tournamentcomponents/selecttournament.js?v=16'];
+for(const u of urls){const r=await fetch(u); const s=await r.text(); console.log('\nURL',u,'HTTP',r.status,'LEN',s.length); console.log((s.match(/\b[A-Za-z_$][\w$]*\s*:\s*function|[A-Za-z_$][\w$]*\s*\(/g)||[]).slice(0,80).join('\n')); console.log(s.slice(0,500));}

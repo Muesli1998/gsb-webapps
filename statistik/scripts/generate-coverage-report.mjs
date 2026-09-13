@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+import path from 'node:path';
+const root=process.cwd();
+const readJson=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
+const queue=readJson('results/browser-fallback-queue.json');
+const rows=queue.results??[];
+const by=new Map();
+for(const r of rows){const s=String(r.season);if(!by.has(s))by.set(s,{season:Number(s),total:0,verified:0,noMatch:0,pending:0,deferred:0,walkovers:0,withWinner:0,teams:new Set(),groups:new Set(),opponents:new Set()});const x=by.get(s);x.total++;x[r.status==='verified'||r.status==='youth_verified'?'verified':r.status==='browser_no_match_id'||r.status==='youth_no_match_detail'?'noMatch':r.status==='pending'?'pending':r.status==='deferred_youth_u15'?'deferred':'other']++;if(r.walkoverObserved)x.walkovers++;if(r.walkoverWinner)x.withWinner++;if(r.teamName)x.teams.add(r.teamName);if(r.leagueGroupId)x.groups.add(String(r.leagueGroupId));if(r.opponent)x.opponents.add(r.opponent)}
+const out=[...by.values()].sort((a,b)=>a.season-b.season).map(x=>({...x,teams:x.teams.size,groups:x.groups.size,opponents:x.opponents.size}));
+const totals={};for(const x of out)for(const k of ['total','verified','noMatch','pending','deferred','walkovers','withWinner','teams','groups','opponents'])totals[k]=(totals[k]||0)+x[k];
+const report={generatedAt:new Date().toISOString(),source:'results/browser-fallback-queue.json',definition:{verified:'browser page rendered and match ID found (including youth_verified)',noMatch:'browser page did not expose requested match detail',deferred:'U15 or younger awaiting browser extraction',walkovers:'explicitly marked during existing extraction'},totals,seasons:out,limitations:['Queue is a fallback/error subset, not a guaranteed census of all GSB matches.','The queue does not contain complete individual-match coverage or final standings for every group.','A verified browser match file stores the raw dynamic page text separately; it still requires field-level parsing and validation.']};
+fs.writeFileSync(path.join(root,'results/coverage-report.json'),JSON.stringify(report,null,2));
+let md=`# Dækningsrapport for grunddata\n\nGenereret: ${report.generatedAt}\n\n## Samlet status\n\n| Felt | Antal |\n|---|---:|\n`;for(const k of ['total','verified','noMatch','pending','deferred','walkovers','withWinner','teams','groups','opponents'])md+=`| ${k} | ${totals[k]} |\n`;md+=`\n## Pr. sæson\n\n| Sæson | Alle kø-rækker | Verificeret | Ingen match-ID | Pending | U15 eller yngre | Walkover | Hold | Puljer | Modstandere |\n|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|\n`;for(const x of out)md+=`| ${x.season} | ${x.total} | ${x.verified} | ${x.noMatch} | ${x.pending} | ${x.deferred} | ${x.walkovers} | ${x.teams} | ${x.groups} | ${x.opponents} |\n`;md+=`\n## Fortolkning og begrænsninger\n\n- “Verificeret” betyder, at browseren fandt det forventede kamp-ID på den dynamiske BadmintonPlayer-side.\n- “Ingen match-ID” er et hul, der kræver ny fallback eller manuel kontrol.\n- Ungdomskørslen er nu gennemført; youth_verified tælles som verificeret, mens youth_no_match_detail tælles som et separat hul.\n- Rapporten beskriver køens dækning; den beviser ikke, at køen indeholder alle GSB-kampe.\n- Individuelle spillerkampe og komplette slutstillinger skal måles i særskilte rapporter.\n\n## Næste kontrol\n\n1. Sammenlign antal kampe pr. hold/pulje med kampantal i de officielle stillinger.\n2. Hent manglende slutstillinger for alle unikke sæson/pulje-kombinationer.\n3. Mål individuel-kamp-dækning pr. verificeret holdkamp.\n4. Gennemgå de resterende rækker uden matchdetalje.\n`;
+fs.writeFileSync(path.join(root,'results/coverage-report.md'),md);
+console.log(JSON.stringify({totals,seasons:out.length},null,2));
+
+
+

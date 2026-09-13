@@ -1,0 +1,19 @@
+{
+  "key": "2021:413911",
+  "season": 2021,
+  "matchId": 413911,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Charlottenlund 1",
+  "ageGroupId": "3",
+  "leagueGroupId": "14139",
+  "roundDate": "2021-12-12",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2021,14139,1,8,,413911,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2021-413911.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:20:29.131Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2021,14139,1,8,,413911,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U11 2021/2022\nVis rækker\n\n\nU11 3100 4 Spillere Pulje 2\nStilling\nVis alle kampe\n\nKampnr\t413911\nRunde\t4 12-12-2021\nTid\tsø 12-12-2021 10:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 2\nJean Hammarkvist\njeanhammarkvist@live.dk\n53536855\nUdehold\tCharlottenlund 1\nLars\nlarslangebjerg@hotmail.com\n23257876\nResultat\t1-5\nPoint\t0-3\n\tGladsaxe Søborg 2\tCharlottenlund 1\t1\t2\t3\tVinder W.O.\n1. S\t\nMarius Steenstrup Leth-Espensen\n\t\nGustav Richter\n\t21 - 16\t22 - 20\t\t\n2. S\t\nSilas Buron\n\t\nTheodor Lumby Jessen\n\t16 - 21\t12 - 21\t\t\n3. S\t\nVillads Markersen\n\t\nConrad Lercke\n\t9 - 21\t10 - 21\t\t\n4. S\t\nJoshua Pasgaard-Westerman\n\t\nGustav Bruun\n\t13 - 21\t19 - 21\t\t\n1. D\t\nSilas Buron\nVillads Markersen\n\t\nGustav Richter\nTheodor Lumby Jessen\n\t13 - 21\t14 - 21\t\t\n2. D\t\nMarius Steenstrup Leth-Espensen\nJoshua Pasgaard-Westerman\n\t\nGustav Bruun\nConrad Lercke\n\t21 - 17\t8 - 21\t15 - 21\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

@@ -1,0 +1,86 @@
+{
+  "season": 2021,
+  "groupId": "13966",
+  "status": "verified",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2021,13966,1,,,,1093,",
+  "retrievedAt": "2026-09-12T18:33:40.901Z",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+40 2021/2022\nVis rækker\n\n\nSEN+40 20. Serie Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVUNDNE\tSCORE\tSÆT\tPOINT\n1\tPI København 1\t5\t5\t35-5\t54-12\t10\n2\tHvidovre HB2000 3\t5\t4\t26-14\t55-34\t8\n3\tVanløse 3\t5\t3\t21-19\t45-41\t6\n4\tFrederiksberg 2\t5\t2\t19-21\t44-43\t4\n5\tGladsaxe Søborg 4\t5\t1\t15-25\t33-40\t2\n6\tRyparken 2\t5\t0\t4-36\t13-74\t0\n\tPosten Kbh. 2\tHoldet trukket\n\nUdskriv | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+  "tables": [
+    [
+      [
+        "",
+        "FAQ Opret brugerkonto Log ind"
+      ]
+    ],
+    [
+      [
+        "#",
+        "HOLD",
+        "KAMPE",
+        "VUNDNE",
+        "SCORE",
+        "SÆT",
+        "POINT"
+      ],
+      [
+        "1",
+        "PI København 1",
+        "5",
+        "5",
+        "35-5",
+        "54-12",
+        "10"
+      ],
+      [
+        "2",
+        "Hvidovre HB2000 3",
+        "5",
+        "4",
+        "26-14",
+        "55-34",
+        "8"
+      ],
+      [
+        "3",
+        "Vanløse 3",
+        "5",
+        "3",
+        "21-19",
+        "45-41",
+        "6"
+      ],
+      [
+        "4",
+        "Frederiksberg 2",
+        "5",
+        "2",
+        "19-21",
+        "44-43",
+        "4"
+      ],
+      [
+        "5",
+        "Gladsaxe Søborg 4",
+        "5",
+        "1",
+        "15-25",
+        "33-40",
+        "2"
+      ],
+      [
+        "6",
+        "Ryparken 2",
+        "5",
+        "0",
+        "4-36",
+        "13-74",
+        "0"
+      ],
+      [
+        "",
+        "Posten Kbh. 2",
+        "Holdet trukket"
+      ]
+    ]
+  ]
+}

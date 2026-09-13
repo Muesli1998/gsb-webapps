@@ -1,0 +1,19 @@
+{
+  "key": "2017:283065",
+  "season": 2017,
+  "matchId": 283065,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Skovshoved 4",
+  "ageGroupId": "3",
+  "leagueGroupId": "9302",
+  "roundDate": "2017-12-10",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2017,9302,1,8,,283065,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2017-283065.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:25:08.231Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2017,9302,1,8,,283065,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U11 2017/2018\nVis rækker\n\n\nU11 D (4) P2 Pulje 2\nStilling\nVis alle kampe\n\nKampnr\t283065\nRunde\t4 10-12-2017\nTid\tsø 10-12-2017 12:30\nSpillested\tKrøyersvej\nKrøyersvej 5A\n2930 Klampenborg\nTelefon 39 64 23 83\nHjemmehold\tSkovshoved 4\nCasper Claudius Gregersen\ncaspercgregersen@gmail.com\n26300057\nUdehold\tGladsaxe Søborg\nTine Undén\nunden@privat.dk\n20705811\nResultat\t5-1\nPoint\t3-0\n\tSkovshoved 4\tGladsaxe Søborg\t1\t2\t3\tVinder W.O.\n1. S\t\nMartin Rants\n\t\nMaria Søberg Roed\n\t21 - 14\t21 - 18\t\t\n2. S\t\nGustav Hertz\n\t\nLykke Unden\n\t21 - 11\t21 - 10\t\t\n3. S\t\nOscar Jacob Thorup\n\t\nAsk Unden\n\t21 - 10\t21 - 17\t\t\n4. S\t\nHans Christian Zwicky-Brostrøm\n\t\nNikolaj Thorslund Hindsbo\n\t23 - 25\t21 - 18\t15 - 21\t\n1. D\t\nMartin Rants\nGustav Hertz\n\t\nMaria Søberg Roed\nFreja Bygsø\n\t21 - 19\t21 - 11\t\t\n2. D\t\nOscar Jacob Thorup\nHans Christian Zwicky-Brostrøm\n\t\nLykke Unden\nLinus Bergstrøm Hesselballe\n\t23 - 21\t24 - 22\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

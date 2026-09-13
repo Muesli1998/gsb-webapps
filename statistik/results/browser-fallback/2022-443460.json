@@ -1,0 +1,21 @@
+{
+  "key": "2022:443460",
+  "season": 2022,
+  "matchId": 443460,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Lystrup 1",
+  "ageGroupId": "18",
+  "leagueGroupId": "15662",
+  "roundDate": "2023-04-29",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,15662,1,8,,443460,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2022-443460.json",
+  "verifiedAt": "2026-09-12T16:54:07.512Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:48:46.195Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,15662,1,8,,443460,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADDAN,DGI U17/U19 2022/2023\nVis rækker\n\n\nDMU H - U17/U19 5200 4 spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t443460\nRunde\t1 29-04-2023\nTid\tlø 29-04-2023 15:00\nSpillested\tHammel Idrætscenter Hal 2 - 6 baner\nThorsvej 4\n8450 Hammel\nTelefon 86 96 18 85\nHjemmehold\tGladsaxe Søborg 1\nMartin Roed\nroed.martin@gmail.com\n20457741\nUdehold\tLystrup 1\nJens Erik Lindgaard\nkramsomajo@youmail.dk\n50562517\nResultat\t4-2\nPoint\t3-1\n\tGladsaxe Søborg 1\tLystrup 1\t1\t2\t3\tVinder W.O.\n1. S\t\nBertram Aavang Arvidson\n\t\nSummer Clara Hobolth\n\t21 - 3\t21 - 5\t\t\n2. S\t\nLinus Bergstrøm Hesselballe\n\t\nMathias Aggerholm Jønsson\n\t21 - 10\t21 - 8\t\t\n3. S\t\nAnton Krog Søbygaard\n\t\nMagnus Crone vinther\n\t21 - 16\t13 - 21\t21 - 19\t\n4. S\t\nTobias Lerche\n\t\nOtto Læssøe Bisgaard\n\t7 - 21\t10 - 21\t\t\n1. D\t\nBertram Aavang Arvidson\nAnton Krog Søbygaard\n\t\nSummer Clara Hobolth\nMathias Aggerholm Jønsson\n\t21 - 8\t21 - 17\t\t\n2. D\t\nLinus Bergstrøm Hesselballe\nTobias Lerche\n\t\nMagnus Crone vinther\nOtto Læssøe Bisgaard\n\t19 - 21\t13 - 21\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

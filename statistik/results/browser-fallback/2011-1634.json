@@ -1,0 +1,21 @@
+{
+  "key": "2011:1634",
+  "season": 2011,
+  "matchId": 1634,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Gentofte 5",
+  "ageGroupId": "1",
+  "leagueGroupId": "58",
+  "roundDate": "2011-10-02",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,58,1,8,,1634,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2011-1634.json",
+  "verifiedAt": "2026-09-12T17:10:51.073Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "reverifiedAt": "2026-09-13T05:55:16.504Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,58,1,8,,1634,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN 2011/2012\nVis rækker\n\n\n1. Serie Pulje 1 1. Serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t1634\nRunde\t1 02-10-2011\nTid\tsø 25-09-2011 14:00\nSpillested\tGBK Hallen\nVed Stadion 4\n2820 Gentofte\nTelefon 39 68 01 59\nHjemmehold\tGentofte 5\nUdehold\tGladsaxe Søborg 2\nResultat\t9-4\nPoint\t3-0\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

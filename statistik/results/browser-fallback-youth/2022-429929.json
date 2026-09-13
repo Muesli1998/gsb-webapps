@@ -1,0 +1,19 @@
+{
+  "key": "2022:429929",
+  "season": 2022,
+  "matchId": 429929,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Drive 1",
+  "ageGroupId": "4",
+  "leagueGroupId": "14996",
+  "roundDate": "2023-03-12",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14996,1,8,,429929,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2022-429929.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:18:00.966Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14996,1,8,,429929,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U13 2022/2023\nVis rækker\n\n\nU13 4400 4 Spillere Pulje 2\nStilling\nVis alle kampe\n\nKampnr\t429929\nRunde\t8 12-03-2023\nTid\tsø 12-03-2023 10:00\nSpillested\tMariendalshallen Hal A\nMariendalsvej 21 C\n2000 Frederiksberg\nTelefon 38 86 07 08\nHjemmehold\tDrive 1\nSune Levy Thomsen\nhit_me_sonnie@hotmail.com\n+4527293054\nUdehold\tGladsaxe Søborg 1\nLean Fuglsang\nlean@omnia.dk\n60709458\nResultat\t5-1\nPoint\t4-0\n\tDrive 1\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. S\t\nEmil Pravda Brøndum Nielsen\n\t\nFreja Fan Fuglsang\n\t21 - 15\t21 - 19\t\t\n2. S\t\nJohan Becker-Christensen\n\t\nMina Lorin Özden\n\t21 - 9\t21 - 10\t\t\n3. S\t\nAndreas Laubjerg Daugaard\n\t\nEhan Shadat\n\t21 - 15\t11 - 21\t21 - 11\t\n4. S\t\nLeonardo Mouritsen\n\t\nFrederik Tuegaard Birk\n\t21 - 23\t21 - 9\t21 - 8\t\n1. D\t\nEmil Pravda Brøndum Nielsen\nAndreas Laubjerg Daugaard\n\t\nFreja Fan Fuglsang\nMina Lorin Özden\n\t23 - 21\t18 - 21\t10 - 21\t\n2. D\t\nLeonardo Mouritsen\nJohan Becker-Christensen\n\t\nEhan Shadat\nFrederik Tuegaard Birk\n\t21 - 10\t21 - 19\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

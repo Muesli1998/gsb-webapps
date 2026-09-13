@@ -1,0 +1,21 @@
+{
+  "key": "2022:443482",
+  "season": 2022,
+  "matchId": 443482,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Rødovre 1",
+  "ageGroupId": "18",
+  "leagueGroupId": "15670",
+  "roundDate": "2023-04-30",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,15670,1,8,,443482,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2022-443482.json",
+  "verifiedAt": "2026-09-12T16:54:07.512Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:48:49.463Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,15670,1,8,,443482,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADDAN,DGI U17/U19 2022/2023\nVis rækker\n\n\nDMU H - U17/U19 5200 4 spillere Finale slutspil (1. - 4. plads)\nStilling\nVis alle kampe\n\nKampnr\t443482\nRunde\t2 30-04-2023\nTid\tsø 30-04-2023 11:00\nSpillested\tHammel Idrætscenter Hal 2 - 6 baner\nThorsvej 4\n8450 Hammel\nTelefon 86 96 18 85\nHjemmehold\tGladsaxe Søborg 1\nMartin Roed\nroed.martin@gmail.com\n20457741\nUdehold\tRødovre 1\nKate Schwensen\nkate@jks.nu\n20120753\nResultat\t4-2\n\tGladsaxe Søborg 1\tRødovre 1\t1\t2\t3\tVinder W.O.\n1. S\t\nBertram Aavang Arvidson\n\t\nCasper Ungermann\n\t21 - 13\t21 - 13\t\t\n2. S\t\nLinus Bergstrøm Hesselballe\n\t\nAnton T Christensen\n\t21 - 14\t21 - 15\t\t\n3. S\t\nAnton Krog Søbygaard\n\t\nKarl Rudebeck Goos\n\t21 - 23\t16 - 21\t\t\n4. S\t\nTobias Lerche\n\t\nWilliam Møldrup\n\t8 - 21\t16 - 21\t\t\n1. D\t\nBertram Aavang Arvidson\nAnton Krog Søbygaard\n\t\nCasper Ungermann\nKarl Rudebeck Goos\n\t21 - 7\t21 - 14\t\t\n2. D\t\nLinus Bergstrøm Hesselballe\nTobias Lerche\n\t\nWilliam Møldrup\nAnton T Christensen\n\t21 - 23\t21 - 12\t21 - 19\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

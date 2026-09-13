@@ -1,0 +1,90 @@
+{
+  "season": 2015,
+  "groupId": "6022",
+  "status": "verified",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2015,6022,1,,,,1093,",
+  "retrievedAt": "2026-09-12T18:34:42.176Z",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN 2015/2016\nVis rækker\n\n\n5. serie P1 Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVUNDNE\tSCORE\tSÆT\tPOINT\n1\tCBS Sport Badminton\t5\t5\t54-6\t110-18\t10\n2\tKSI Badmintonklub Kbh. 4\t5\t3\t34-26\t77-58\t6\n3\tBC37 Amager 4\t5\t3\t28-32\t59-73\t6\n4\tValby BC 2\t5\t1\t26-34\t60-77\t3\n5\tBC KVIK Kbh. 2\t5\t1\t22-38\t51-80\t3\n6\tRødovre/KFUM KBH 2\t5\t0\t16-44\t39-90\t2\n7\tGladsaxe Søborg 5 udgået\t0\t0\t0-0\t0-0\t0\n\nUdskriv | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+  "tables": [
+    [
+      [
+        "",
+        "FAQ Opret brugerkonto Log ind"
+      ]
+    ],
+    [
+      [
+        "#",
+        "HOLD",
+        "KAMPE",
+        "VUNDNE",
+        "SCORE",
+        "SÆT",
+        "POINT"
+      ],
+      [
+        "1",
+        "CBS Sport Badminton",
+        "5",
+        "5",
+        "54-6",
+        "110-18",
+        "10"
+      ],
+      [
+        "2",
+        "KSI Badmintonklub Kbh. 4",
+        "5",
+        "3",
+        "34-26",
+        "77-58",
+        "6"
+      ],
+      [
+        "3",
+        "BC37 Amager 4",
+        "5",
+        "3",
+        "28-32",
+        "59-73",
+        "6"
+      ],
+      [
+        "4",
+        "Valby BC 2",
+        "5",
+        "1",
+        "26-34",
+        "60-77",
+        "3"
+      ],
+      [
+        "5",
+        "BC KVIK Kbh. 2",
+        "5",
+        "1",
+        "22-38",
+        "51-80",
+        "3"
+      ],
+      [
+        "6",
+        "Rødovre/KFUM KBH 2",
+        "5",
+        "0",
+        "16-44",
+        "39-90",
+        "2"
+      ],
+      [
+        "7",
+        "Gladsaxe Søborg 5 udgået",
+        "0",
+        "0",
+        "0-0",
+        "0-0",
+        "0"
+      ]
+    ]
+  ]
+}

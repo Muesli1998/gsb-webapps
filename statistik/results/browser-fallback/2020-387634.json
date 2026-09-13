@@ -1,0 +1,21 @@
+{
+  "key": "2020:387634",
+  "season": 2020,
+  "matchId": 387634,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Hvidovre 2",
+  "ageGroupId": "9",
+  "leagueGroupId": "13297",
+  "roundDate": "2021-02-14",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13297,1,8,,387634,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2020-387634.json",
+  "verifiedAt": "2026-09-12T16:59:39.253Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:50:01.668Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13297,1,8,,387634,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+40 2020/2021\nVis rækker\n\n\n40+ 1. Serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t387634\nRunde\t8 14-02-2021\nTid\tsø 28-02-2021 14:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 1\nKent Meiling Sørensen\nmeiling@mail.tele.dk\n30550018\nUdehold\tHvidovre 2\nKasper Larsen\nkasper.hbc@vedela.net\n30794165\nResultat\t-\nPoint\t-\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

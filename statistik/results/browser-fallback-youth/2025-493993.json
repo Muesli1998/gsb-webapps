@@ -1,0 +1,19 @@
+{
+  "key": "2025:493993",
+  "season": 2025,
+  "matchId": 493993,
+  "teamName": "Gladsaxe Søborg 5",
+  "opponent": "Dragør 3",
+  "ageGroupId": "5",
+  "leagueGroupId": "18149",
+  "roundDate": "2026-01-11",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18149,1,8,,493993,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2025-493993.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:09:27.879Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18149,1,8,,493993,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2025/2026\nVis rækker\n\n\nU15 D 5000 (4 spillere) BD Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t493993\nRunde\t6 11-01-2026\nTid\tsø 11-01-2026 11:40\nSpillested\tMariendalshallen Hal A\nMariendalsvej 21 C\n2000 Frederiksberg\nTelefon 38 86 07 08\nHjemmehold\tGladsaxe Søborg 5\nJacob Hinge Carlsson\njaccarl@hotmail.com\n21943796\nUdehold\tDragør 3\nNina Lange Forsberg\nNinalangeforsberg@hotmail.com\n51913979\nResultat\t6-0\nPoint\t4-0\n\tGladsaxe Søborg 5\tDragør 3\t1\t2\t3\tVinder W.O.\n1. S\t\nRasmus Hammershaimb Pedersen\n\t\nTheodor Carl Scanlon\n\t21 - 18\t21 - 14\t\t\n2. S\t\nSebastian Larsen Lund\n\t\nThor Søderman\n\t21 - 11\t21 - 12\t\t\n3. S\t\nBenjamin Damgaard Hantsøe\n\t\nWilliam Pape\n\t21 - 10\t21 - 11\t\t\n4. S\t\nGeorg Engedal Nielsen\n\t\nEmilie Bak Syberg\n\t21 - 6\t21 - 2\t\t\n1. D\t\nRasmus Hammershaimb Pedersen\nSebastian Larsen Lund\n\t\nTheodor Carl Scanlon\nThor Søderman\n\t21 - 11\t18 - 21\t21 - 8\t\n2. D\t\nGeorg Engedal Nielsen\nBenjamin Damgaard Hantsøe\n\t\nWilliam Pape\nEmilie Bak Syberg\n\t21 - 13\t21 - 9\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

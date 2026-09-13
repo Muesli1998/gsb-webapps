@@ -1,0 +1,1 @@
+const s=await (await fetch('https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/js')).text(); for(const n of ['GetRankingListVersions','GetRankingListPlayers','GetRankingListPlayersSenior']){let i=s.indexOf(n+':function'); console.log(s.slice(i,i+1100));}

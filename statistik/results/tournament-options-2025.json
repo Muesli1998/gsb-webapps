@@ -1,0 +1,89 @@
+{
+  "data": {
+    "tournamentGroups": []
+  },
+  "extensions": {
+    "lighthouse_subscriptions": {
+      "channel": null
+    }
+  }
+}
+{
+  "data": {
+    "tournamentTiers": [
+      {
+        "id": "1",
+        "tierName": "Badmintonligaen"
+      },
+      {
+        "id": "2",
+        "tierName": "1. division"
+      },
+      {
+        "id": "3",
+        "tierName": "2. division"
+      },
+      {
+        "id": "4",
+        "tierName": "3. division"
+      },
+      {
+        "id": "5",
+        "tierName": "Danmarksserien"
+      },
+      {
+        "id": "6",
+        "tierName": "Københavnsserien"
+      },
+      {
+        "id": "7",
+        "tierName": "LF-serien"
+      },
+      {
+        "id": "8",
+        "tierName": "Sjællandsserien"
+      },
+      {
+        "id": "9",
+        "tierName": "Kredsserien Vest"
+      },
+      {
+        "id": "10",
+        "tierName": "Serie 1"
+      },
+      {
+        "id": "11",
+        "tierName": "Serie 2"
+      },
+      {
+        "id": "12",
+        "tierName": "Serie 3"
+      },
+      {
+        "id": "13",
+        "tierName": "Serie 4"
+      },
+      {
+        "id": "14",
+        "tierName": "Serie A"
+      },
+      {
+        "id": "15",
+        "tierName": "Serie B"
+      },
+      {
+        "id": "16",
+        "tierName": "Serie C"
+      },
+      {
+        "id": "17",
+        "tierName": "Serie D"
+      }
+    ]
+  },
+  "extensions": {
+    "lighthouse_subscriptions": {
+      "channel": null
+    }
+  }
+}

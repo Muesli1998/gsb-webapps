@@ -1,0 +1,19 @@
+{
+  "key": "2023:452229",
+  "season": 2023,
+  "matchId": 452229,
+  "teamName": "Gladsaxe Søborg 4",
+  "opponent": "Frederiksberg 3",
+  "ageGroupId": "5",
+  "leagueGroupId": "16094",
+  "roundDate": "2023-10-29",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,16094,1,8,,452229,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2023-452229.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:16:15.220Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,16094,1,8,,452229,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2023/2024\nVis rækker\n\n\nU15 - 3800 4 spillere Pulje 2\nStilling\nVis alle kampe\n\nKampnr\t452229\nRunde\t3 29-10-2023\nTid\tsø 29-10-2023 14:30\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 4\nPia Lebeck Frederiksen\npia@lebeckfrederiksen.dk\n29938604\nUdehold\tFrederiksberg 3\nKristine Kabel\nkristinekabel@gmail.com\n61407646\nResultat\t0-6\nPoint\t0-4\n\tGladsaxe Søborg 4\tFrederiksberg 3\t1\t2\t3\tVinder W.O.\n1. S\t\nMarkus Kruse\n\t\nRichard Damgaard Andersen\n\t15 - 21\t13 - 21\t\t\n2. S\t\nJakob Lebeck Frederiksen\n\t\nAlfred Hiul Suppli\n\t9 - 21\t6 - 21\t\t\n3. S\t\nMohammed Aarshil Azad\n\t\nAske Kabel Rasmussen\n\t11 - 21\t7 - 21\t\t\n4. S\t\nLaurits Lindegaard Hebeltoft\n\t\nHilmer Kabel Rasmussen\n\t5 - 21\t6 - 21\t\t\n1. D\t\nLaurits Lindegaard Hebeltoft\nValdemar Styner Rostock\n\t\nRichard Damgaard Andersen\nAlfred Hiul Suppli\n\t13 - 21\t13 - 21\t\t\n2. D\t\nJakob Lebeck Frederiksen\nMohammed Aarshil Azad\n\t\nAske Kabel Rasmussen\nHilmer Kabel Rasmussen\n\t13 - 21\t9 - 21\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

@@ -1,0 +1,19 @@
+{
+  "key": "2025:493941",
+  "season": 2025,
+  "matchId": 493941,
+  "teamName": "Gladsaxe Søborg 4",
+  "opponent": "Hvidovre 3",
+  "ageGroupId": "5",
+  "leagueGroupId": "18148",
+  "roundDate": "2026-02-01",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18148,1,8,,493941,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2025-493941.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:09:09.833Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18148,1,8,,493941,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2025/2026\nVis rækker\n\n\nU15 C-D 5200 (4 spillere) BD Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t493941\nRunde\t7 01-02-2026\nTid\tlø 31-01-2026 11:00\nSpillested\tBC37-Hallen\nStrandlodsvej 69\n2300 København S\nTelefon 32 97 08 96\nHjemmehold\tHvidovre 3\nJens Krogstrup\njenskrogstrup@gmail.com\n28923497\nUdehold\tGladsaxe Søborg 4\nAndreas Vad Chawes\nandreas@chawes.dk\n30704749\nResultat\t1-5\nPoint\t0-4\n\tHvidovre 3\tGladsaxe Søborg 4\t1\t2\t3\tVinder W.O.\n1. S\t\nMads Krogstrup\n\t\nLasse Friberg Andersen\n\t13 - 21\t11 - 21\t\t\n2. S\t\nSamuel Cartey Andreasen\n\t\nCarsten Yan\n\t14 - 21\t10 - 21\t\t\n3. S\t\nSigurd Ravn Johansen\n\t\nOliver Rafah Peddinini Joe\n\t12 - 21\t15 - 21\t\t\n4. S\t\nMikkel hedegaard straube\n\t\nSebastian Larsen Lund\n\t21 - 12\t21 - 12\t\t\n1. D\t\nMads Krogstrup\nSigurd Ravn Johansen\n\t\nCarsten Yan\nOliver Rafah Peddinini Joe\n\t18 - 21\t8 - 21\t\t\n2. D\t\nSamuel Cartey Andreasen\nMikkel hedegaard straube\n\t\nLasse Friberg Andersen\nSebastian Larsen Lund\n\t10 - 21\t16 - 21\t\t\n\n\nReserver\nHvidovre 3\tGladsaxe Søborg 4\n\n\t\n\nLasse Friberg Andersen\nfor David Vad Chawes\n\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

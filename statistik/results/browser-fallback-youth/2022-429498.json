@@ -1,0 +1,19 @@
+{
+  "key": "2022:429498",
+  "season": 2022,
+  "matchId": 429498,
+  "teamName": "Gladsaxe Søborg 4",
+  "opponent": "Hvidovre 3",
+  "ageGroupId": "3",
+  "leagueGroupId": "14985",
+  "roundDate": "2022-12-11",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14985,1,8,,429498,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2022-429498.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:17:27.620Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14985,1,8,,429498,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U11 2022/2023\nVis rækker\n\n\nU11 3000 4 Spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t429498\nRunde\t4 11-12-2022\nTid\tsø 11-12-2022 11:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tHvidovre 3\nChristian Janfeldt\ncja@farma.ku.dk\n25366834\nUdehold\tGladsaxe Søborg 4\nAnders Uhrbrand\nanders.uhrbrand@gmail.com\n31230788\nResultat\t6-0\nPoint\t4-0\n\tHvidovre 3\tGladsaxe Søborg 4\t1\t2\t3\tVinder W.O.\n1. S\t\nTheodor Lentz Justesen\n\t\nKasper Mason\n\t21 - 17\t21 - 9\t\t\n2. S\t\nWaldemar Kolding Lensbøl\n\t\nMagne Gjervan Majborn\n\t21 - 14\t21 - 15\t\t\n3. S\t\nHenry John Christensen\n\t\nSvend Anders Hansen Uhrbrand\n\t21 - 18\t21 - 13\t\t\n4. S\t\nJosefine Filippa Janfelt\n\t\n(Ikke fremmødt)\n\t\t\t\tH\n1. D\t\nTheodor Lentz Justesen\nWaldemar Kolding Lensbøl\n\t\nMagne Gjervan Majborn\nSvend Anders Hansen Uhrbrand\n\t21 - 16\t21 - 14\t\t\n2. D\t\nHenry John Christensen\nJosefine Filippa Janfelt\n\t\nKasper Mason\n(Ikke fremmødt)\n\t\t\t\tH\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

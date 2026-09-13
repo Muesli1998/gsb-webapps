@@ -1,0 +1,19 @@
+{
+  "key": "2017:282905",
+  "season": 2017,
+  "matchId": 282905,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "NBK Amager",
+  "ageGroupId": "4",
+  "leagueGroupId": "9296",
+  "roundDate": "2018-01-14",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2017,9296,1,8,,282905,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2017-282905.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:25:29.498Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2017,9296,1,8,,282905,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U13 2017/2018\nVis rækker\n\n\nU13 C (4) Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t282905\nRunde\t5 14-01-2018\nTid\tsø 14-01-2018 11:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 2\nMartin Yulzari\nMayu@lundbeck.com\n30835474\nUdehold\tNBK Amager\nTove Petersen\nusu@nbk-amager.dk\n22125625\nResultat\t0-6\nPoint\t0-3\n\tGladsaxe Søborg 2\tNBK Amager\t1\t2\t3\tVinder W.O.\n1. S\t\nMalthe Baltzer\n\t\nAmalie Brødbæk\n\t19 - 21\t18 - 21\t\t\n2. S\t\nAnton Berner\n\t\nAndreas Lindgreen\n\t17 - 21\t5 - 21\t\t\n3. S\t\nTobias Holm-Hansen\n\t\nMathias Wellejus\n\t5 - 21\t16 - 21\t\t\n4. S\t\nNichlas Morecat\n\t\nMarcus Bertram Bruun\n\t\t\t\tN\n1. D\t\nMalthe Baltzer\nAnton Berner\n\t\nAmalie Brødbæk\nAndreas Lindgreen\n\t11 - 21\t9 - 21\t\t\n2. D\t\nTobias Holm-Hansen\nNichlas Morecat\n\t\nMathias Wellejus\nMarcus Bertram Bruun\n\t\t\t\tN\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

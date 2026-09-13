@@ -1,0 +1,21 @@
+{
+  "key": "2012:50343",
+  "season": 2012,
+  "matchId": 50343,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Hvidovre",
+  "ageGroupId": "6",
+  "leagueGroupId": "1329",
+  "roundDate": "2012-11-11",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2012,1329,1,8,,50343,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2012-50343.json",
+  "verifiedAt": "2026-09-12T17:10:34.802Z",
+  "resultSource": "playwright_persistent_browser",
+  "verification": "Dynamic BadmintonPlayer page rendered successfully",
+  "reverifiedAt": "2026-09-13T05:54:48.543Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2012,1329,1,8,,50343,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U17 2012/2013\nVis rækker\n\n\nU17 2. Serie U17 2. Serie\nStilling\nVis alle kampe\n\nKampnr\t50343\nRunde\t3 11-11-2012\nTid\tsø 28-10-2012 14:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg\nUdehold\tHvidovre\nResultat\t8-0\nPoint\t2-0\nAfgjort uden kamp (afbud/udeblivelse)\n\n\n\tGladsaxe Søborg\tHvidovre\t1\t2\t3\tVinder W.O.\n1. MD\t\nOliver Theill Jensen\nEmilie With\n\t\n\t\t\t\t\n1. S\t\nMia Bækgaard Sørensen\n\t\n\t\t\t\t\n2. S\t\nAske Andreas Pihl\n\t\n\t\t\t\t\n3. S\t\nNicolai Mehlsen\n\t\n\t\t\t\t\n4. S\t\nBenjamin Rasmussen Paranna\n\t\n\t\t\t\t\n1. D\t\nMia Bækgaard Sørensen\nEmilie With\n\t\n\t\t\t\t\n2. D\t\nAske Andreas Pihl\nNicolai Mehlsen\n\t\n\t\t\t\t\n3. D\t\nBenjamin Rasmussen Paranna\nOliver Theill Jensen\n\t\n\t\t\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

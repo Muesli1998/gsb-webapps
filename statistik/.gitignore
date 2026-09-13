@@ -1,0 +1,17 @@
+node_modules/
+.browser-state/
+data/backups/
+*.db
+*.db-journal
+results/browser-fallback/
+results/browser-fallback-complete/
+results/browser-fallback-youth/
+results/browser-standings/
+results/individual-browser/
+results/individual-browser-all/
+results/complete-result-sample/
+results/legacy-route-probe/
+results/*.jsonl
+results/browser-individual-parse-report.json
+results/team-vs-individual-result-audit.json
+sql/normalized-import.sql

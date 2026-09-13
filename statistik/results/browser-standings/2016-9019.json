@@ -1,0 +1,38 @@
+{
+  "season": 2016,
+  "groupId": "9019",
+  "status": "verified",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2016,9019,1,,,,1093,",
+  "retrievedAt": "2026-09-12T18:34:27.326Z",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADDAN,DGI U17/U19 2016/2017\nVis rækker\n\n\nDMU-Hold U17/19 B 4 Spillere Finale 1. - 4. plads\nVis alle kampe\n\n#\tHOLD\n1\tSolrød Strand 2\n2\tGladsaxe Søborg 1\n3\tHørning IF 2\n4\tViborg 2\n\nUdskriv | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+  "tables": [
+    [
+      [
+        "",
+        "FAQ Opret brugerkonto Log ind"
+      ]
+    ],
+    [
+      [
+        "#",
+        "HOLD"
+      ],
+      [
+        "1",
+        "Solrød Strand 2"
+      ],
+      [
+        "2",
+        "Gladsaxe Søborg 1"
+      ],
+      [
+        "3",
+        "Hørning IF 2"
+      ],
+      [
+        "4",
+        "Viborg 2"
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "key": "2022:427006",
+  "season": 2022,
+  "matchId": 427006,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "BK36 Kbh. 1",
+  "ageGroupId": "17",
+  "leagueGroupId": "14882",
+  "roundDate": "2022-09-18",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14882,1,8,,427006,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2022-427006.json",
+  "verifiedAt": "2026-09-12T16:58:08.668Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:49:02.563Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14882,1,8,,427006,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+70 2022/2023\nVis rækker\n\n\nSEN+70 1.serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t427006\nRunde\t1 18-09-2022\nTid\tlø 18-02-2023 12:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 1\nLeif Hansen\n3xl@webspeed.dk\n20949568\nUdehold\tBK36 Kbh. 1\nGert Højer\nveteran@bk36.one\n20115007\nResultat\t6-0\nPoint\t2-0\n\tGladsaxe Søborg 1\tBK36 Kbh. 1\t1\t2\t3\tVinder W.O.\n1. D\t\nLeif Hansen\nMogens Jørgensen\n\t\nGert Højer\nTeddy Søegaard\n\t15 - 21\t21 - 15\t21 - 10\t\n2. D\t\nIrene Sterlie\nHelle Larsen\n\t\nRene Petersen\nPoul Egeberg Carlsen\n\t21 - 15\t21 - 11\t\t\n3. D\t\nSvend Valentin Rasmussen\nBirgitte Jakobsen\n\t\nErik Tommy Due\nKurt Mehlsen\n\t21 - 14\t21 - 17\t\t\n4. D\t\nLeif Hansen\nHelle Larsen\n\t\nTeddy Søegaard\nRene Petersen\n\t21 - 15\t21 - 10\t\t\n5. D\t\nMogens Jørgensen\nBirgitte Jakobsen\n\t\nGert Højer\nErik Tommy Due\n\t14 - 21\t21 - 15\t21 - 17\t\n6. D\t\nIrene Sterlie\nSvend Valentin Rasmussen\n\t\nKurt Mehlsen\nPoul Egeberg Carlsen\n\t21 - 16\t21 - 13\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

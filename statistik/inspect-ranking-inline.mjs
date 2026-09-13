@@ -1,0 +1,1 @@
+const s=await (await fetch('https://badmintonplayer.dk/DBF/Ranglister/')).text(); for(const term of ['GetRankingList','RankingListVersions','RankingList']){let i=0;while((i=s.indexOf(term,i))>=0){console.log(s.slice(Math.max(0,i-400),i+900));i+=term.length;}}

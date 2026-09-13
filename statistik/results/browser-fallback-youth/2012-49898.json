@@ -1,0 +1,19 @@
+{
+  "key": "2012:49898",
+  "season": 2012,
+  "matchId": 49898,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Lyngby 2",
+  "ageGroupId": "3",
+  "leagueGroupId": "1311",
+  "roundDate": "2013-03-10",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2012,1311,1,8,,49898,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2012-49898.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:29:42.813Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2012,1311,1,8,,49898,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U11 2012/2013\nVis rækker\n\n\nU11 3. Serie U11 3. Serie\nStilling\nVis alle kampe\n\nKampnr\t49898\nRunde\t7 10-03-2013\nTid\tsø 10-03-2013 10:00\nSpillested\tEngelsborg Hallen\nEngelsborgvej 93\n2800 Lyngby\nTelefon 45 87 19 48\nHjemmehold\tLyngby 2\nUdehold\tGladsaxe Søborg\nResultat\t5-4\nPoint\t1-0\n\tLyngby 2\tGladsaxe Søborg\t1\t2\t3\tVinder W.O.\n1. D\t\nSimon Brændholt Olsen\nAsbjørn Hede\n\t\nTobias Weinreich Hansen\nBertram Wilhardt Jensen\n\t11 - 21\t21 - 19\t21 - 14\t\n2. D\t\nMathias Friis\nEskild Sander Garsdal\n\t\nMarius Laage Andersen\nAnton Jørgensen\n\t18 - 21\t21 - 7\t23 - 21\t\n3. D\t\nFilippa Rossi\nEmilie Duhn Kruse\n\t\nSilje Buus Nyeng\nJosefine Guldbæk\n\t21 - 8\t15 - 21\t12 - 21\t\n1. S\t\nSimon Brændholt Olsen\n\t\nTobias Weinreich Hansen\n\t15 - 21\t3 - 21\t\t\n2. S\t\nAsbjørn Hede\n\t\nBertram Wilhardt Jensen\n\t21 - 14\t21 - 19\t\t\n3. S\t\nMathias Friis\n\t\nMarius Laage Andersen\n\t21 - 15\t21 - 7\t\t\n4. S\t\nEskild Sander Garsdal\n\t\nAnton Jørgensen\n\t15 - 21\t12 - 21\t\t\n5. S\t\nFilippa Rossi\n\t\nSilje Buus Nyeng\n\t16 - 21\t15 - 21\t\t\n6. S\t\nEmilie Duhn Kruse\n\t\nJosefine Guldbæk\n\t21 - 11\t21 - 7\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

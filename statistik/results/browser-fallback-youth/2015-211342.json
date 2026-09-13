@@ -1,0 +1,19 @@
+{
+  "key": "2015:211342",
+  "season": 2015,
+  "matchId": 211342,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "BC37 Amager",
+  "ageGroupId": "4",
+  "leagueGroupId": "6089",
+  "roundDate": "2015-11-15",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6089,1,8,,211342,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2015-211342.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:27:23.789Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6089,1,8,,211342,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U13 2015/2016\nVis rækker\n\n\nU13 B Række 4 Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t211342\nRunde\t4 15-11-2015\nTid\tsø 15-11-2015 12:00\nSpillested\tBC37-Hallen\nStrandlodsvej 69\n2300 København S\nTelefon 32 97 08 96\nHjemmehold\tBC37 Amager\nUdehold\tGladsaxe Søborg\nMads Hvid Ribergaard\nmhribergaard@yahoo.dk\n61261897\nResultat\t0-6\nPoint\t0-2\nAfgjort uden kamp (afbud/udeblivelse)\n\n\n\tBC37 Amager\tGladsaxe Søborg\t1\t2\t3\tVinder W.O.\n1. D\t\nMatias Olsen\nLoui Kristensen\n\t\nBertram Wilhardt Jensen\nJens Undén\n\t\t\t\t\n2. D\t\nGustav Højsted\nMikkel Gantriis\n\t\nViggo Kongslev Hilbert\nMalte Hvid Ribergaard\n\t\t\t\t\n1. S\t\nMatias Olsen\n\t\nBertram Wilhardt Jensen\n\t\t\t\t\n2. S\t\nLoui Kristensen\n\t\nJens Undén\n\t\t\t\t\n3. S\t\nGustav Højsted\n\t\nViggo Kongslev Hilbert\n\t\t\t\t\n4. S\t\nMikkel Gantriis\n\t\nMalte Hvid Ribergaard\n\t\t\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

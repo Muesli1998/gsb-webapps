@@ -1,0 +1,21 @@
+{
+  "key": "2022:427014",
+  "season": 2022,
+  "matchId": 427014,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Hvidovre 1",
+  "ageGroupId": "17",
+  "leagueGroupId": "14882",
+  "roundDate": "2022-11-27",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14882,1,8,,427014,1093,",
+  "status": "verified",
+  "resultFile": "results/browser-fallback/2022-427014.json",
+  "verifiedAt": "2026-09-12T16:58:08.668Z",
+  "verification": "BadmintonPlayer dynamic match page rendered successfully in authenticated browser",
+  "resultSource": "browser_accessibility_tree",
+  "reverifiedAt": "2026-09-13T05:49:05.856Z",
+  "reverifySource": "playwright_persistent_browser",
+  "reverifyStatus": "dynamic_detail",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14882,1,8,,427014,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH SEN+70 2022/2023\nVis rækker\n\n\nSEN+70 1.serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t427014\nRunde\t5 27-11-2022\nTid\ton 30-11-2022 18:45\nSpillested\tHBC-Hallen\nBibliotekvej 62\n2650 Hvidovre\nTelefon 36 49 10 05\nHjemmehold\tHvidovre 1\nLajla Sørensen\nxlys2650@gmail.com\n60521911\nUdehold\tGladsaxe Søborg 1\nLeif Hansen\n3xl@webspeed.dk\n20949568\nResultat\t4-2\nPoint\t2-0\n\tHvidovre 1\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. D\t\nErling Bo Sørensen\nLars Agerholm Jacobsen\n\t\nMogens Jørgensen\nLeif Hansen\n\t21 - 10\t21 - 19\t\t\n2. D\t\nKaj Broch\nOle Christensen\n\t\nHelle Larsen\nSvend Valentin Rasmussen\n\t16 - 21\t16 - 21\t\t\n3. D\t\nIlse Langhorn\nJohn Larsen\n\t\nSøs Stadil\nMarcel Yulzari\n\t21 - 17\t21 - 16\t\t\n4. D\t\nErling Bo Sørensen\nOle Christensen\n\t\nLeif Hansen\nHelle Larsen\n\t16 - 21\t21 - 12\t17 - 21\t\n5. D\t\nLars Agerholm Jacobsen\nIlse Langhorn\n\t\nSvend Valentin Rasmussen\nMarcel Yulzari\n\t17 - 21\t21 - 16\t21 - 19\t\n6. D\t\nKaj Broch\nJohn Larsen\n\t\nMogens Jørgensen\nSøs Stadil\n\t21 - 16\t21 - 13\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

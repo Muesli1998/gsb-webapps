@@ -1,0 +1,19 @@
+{
+  "key": "2017:319531",
+  "season": 2017,
+  "matchId": 319531,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Viby J 3",
+  "ageGroupId": "5",
+  "leagueGroupId": "10543",
+  "roundDate": null,
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2017,10543,1,8,,319531,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2017-319531.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:25:34.411Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2017,10543,1,8,,319531,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADDAN,DGI U15 2017/2018\nVis rækker\n\n\nDMU-Hold U15 M 4 Spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t319531\nRunde\t1 14-04-2018\nTid\tlø 14-04-2018 11:00\nSpillested\tLillebælts hallerne\nFærøvej 74-76\n5500 Middelfart\nHjemmehold\tViby J 3\nBo Horsted Poulsen\nbopoulsens@gmail.com\n50415240\nUdehold\tGladsaxe Søborg 1\nDitte Nyeng\ndittenyeng@gmail.com\n+4561691577\nResultat\t4-3\nPoint\t2-1\n\tViby J 3\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. S\t\nJacob Pausgaard\n\t\nTobias Weinreich Hansen\n\t14 - 21\t21 - 17\t18 - 21\t\n2. S\t\nMads Langbak\n\t\nJakob Buus Nyeng\n\t14 - 21\t17 - 21\t\t\n3. S\t\nChristian Rohde Jørgensen\n\t\nJens Undén\n\t19 - 21\t5 - 21\t\t\n4. S\t\nGustav Koch Brauer\n\t\nMalte Hvid Ribergaard\n\t21 - 10\t21 - 9\t\t\n1. D\t\nJacob Pausgaard\nValdemar Rohde de Thurah\n\t\nTobias Weinreich Hansen\nJakob Buus Nyeng\n\t21 - 19\t21 - 17\t\t\n2. D\t\nAnton Lindgaard\nGustav Koch Brauer\n\t\nJens Undén\nMalte Hvid Ribergaard\n\t21 - 19\t21 - 14\t\t\n\nGolden Set\nHD\t\nJacob Pausgaard\nGustav Koch Brauer\n\t\nJakob Buus Nyeng\nJens Undén\n\t\n21 - 13\n\t\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}
