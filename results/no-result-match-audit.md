@@ -1,9 +1,9 @@
 # Audit af holdkampe uden spillet resultat
 
-Genereret: 2026-09-13T06:59:52.936Z
+Genereret: 2026-09-13T07:08:20.428Z
 
 - Rækker med NULL, tomt, '-' eller 0-0-resultat: **137**
-- Sider med eksplicit '(Ikke fremmødt)': **0**
+- Sider med eksplicit '(Ikke fremmødt)': **1**
 - Sider med individuel tekst/score, men uden holdresultat: **1**
 - Sider uden individuel evidens: **135**
 
