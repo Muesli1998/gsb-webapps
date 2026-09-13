@@ -2,11 +2,11 @@
 
 Alt om ELO-rating + automatisk rundefordeling til træning (B4). Udskilt fra hoved-idébanken
 2026-09-04 fordi dette afsnit fik hyppige runde-for-runde opdateringer og gjorde hoved-filen
-langsom at redigere. Se `claude/gsb-feature-idebank.md` for resten af idébanken og
-`claude/gsb-driftlog.md` for det kronologiske shippet/testet-log.
+langsom at redigere. Se `docs/idebank-feature.md` for resten af idébanken og
+`docs/historik/driftlog.md` for det kronologiske shippet/testet-log.
 
 **Ældre, lukket/superseret historik (2026-08-31 til og med 2026-09-05's "40/10-baner"-bug, som
-Chris afviste løsningen på) er arkiveret 2026-09-06 i `claude/gsb-kampsystem-idebank-historik.md`
+Chris afviste løsningen på) er arkiveret 2026-09-06 i `docs/historik/idebank-kampsystem-historik.md`
 for at holde denne fil under kontrol — filen var vokset til ca. 68.000 tegn. Se den fil for den
 oprindelige B4-scoping, SUT/Ungsenior/Motionist-grupperne, kønsseeding, banekapacitets-forsøg m.m.
 Nedenfor fortsætter den aktive tråd fra Chris' afvisning ("uha nej") og den nye
@@ -101,7 +101,7 @@ kunne læses fra API'et i stedet for at kræve manuel indtastning. Undersøgt: N
 resten af Kampsystem bruger) giver kun POINT pr. disciplin, ikke antal kampe. Antal kampe pr.
 disciplin findes kun på badmintonplayer.dk's gamle ranglisteside (offentlig, men kræver
 skrøbelig browser-automatisering af en gammel ASP.NET-side — allerede noteret som delvist ustabil
-i tidligere research, se `NEMBADMINTON_API_NOTES.md`s afsnit om version-dato-vælgeren). Selv hvis
+i tidligere research, se `docs/nembadminton-api.md`s afsnit om version-dato-vælgeren). Selv hvis
 det virkede pålideligt, er "flest kampe i denne disciplin i sæsonen" ikke nødvendigvis det samme
 som "den rolle træneren har besluttet spilleren har" (en skade eller en enkelt ad hoc-kamp kan
 forvride tallet). **Chris' beslutning: manuelt felt, ikke API-automatisering.**
@@ -168,7 +168,7 @@ den samlede, opdaterede `kampsystem_source.html` — alle bestået, ingen regres
 
 **Leveret:** opdateret `kampsystem_source.html` og en ny `kampsystem_preview_standalone.html`
 sendt til Chris, samt `kampsystem_source.html` skrevet tilbage til
-`D:\Dropbox\gsb-claude-preview-kilde\` via enhedsbroen (ingen drift fundet — mtime matchede sidste
+`kampsystem/` via enhedsbroen (ingen drift fundet — mtime matchede sidste
 commit). Ingen produktionsfiler rørt.
 
 **Bevidst IKKE gjort denne omgang:**
@@ -246,7 +246,7 @@ runde-fanen, og omvendt). Hele den eksisterende regressionssuite
 samlede, opdaterede `kampsystem_source.html` — alle bestået, ingen regressioner.
 
 **Leveret:** opdateret `kampsystem_source.html` og en ny `kampsystem_preview_standalone.html` sendt
-til Chris, samt `kampsystem_source.html` skrevet tilbage til `D:\Dropbox\gsb-claude-preview-kilde\`
+til Chris, samt `kampsystem_source.html` skrevet tilbage til `kampsystem/`
 via enhedsbroen (ingen drift fundet). Ingen produktionsfiler rørt.
 
 **Bevidst IKKE gjort denne omgang:**
@@ -298,7 +298,7 @@ slet ikke. Hele den eksisterende regressionssuite (`test.js` inkl. Test 3b, `tes
 `test_bane_kapacitet.js`, `test_bane_kapacitet_36.js`) kørt igen — alle bestået, ingen regressioner.
 
 **Leveret:** opdateret `kampsystem_source.html` og en ny `kampsystem_preview_standalone.html` sendt
-til Chris, samt `kampsystem_source.html` skrevet tilbage til `D:\Dropbox\gsb-claude-preview-kilde\`
+til Chris, samt `kampsystem_source.html` skrevet tilbage til `kampsystem/`
 via enhedsbroen (ingen drift fundet). Ingen produktionsfiler rørt.
 
 Status: **bygget og testet i preview-kilden — afventer Chris' fornyede test.**
@@ -357,7 +357,7 @@ testfiler + den nye) kørt og bestået uden fejl.
 
 **Leveret:** opdateret `kampsystem_source.html` + genbygget `kampsystem_preview_standalone.html`
 sendt til Chris, og `kampsystem_source.html` synkroniseret til
-`D:\Dropbox\gsb-claude-preview-kilde\kampsystem_source.html` via device bridge (ingen drift
+`kampsystem/kampsystem_source.html` via device bridge (ingen drift
 konstateret før commit).
 
 **Status:** rettet og verificeret. Afventer stadig Chris' svar på det åbne spørgsmål om
@@ -386,7 +386,7 @@ lag):**
   tidligere præciseret at det er en ren per-træning-indstilling ("Der er en ting der skifter per
   træning"), så den forbliver session-only, som allerede rettet i syvende runde.
 
-**Kandidat-funktionsfiler til Netlify (IKKE deployet, IKKE lagt i `netlify-tool-prod` endnu — kræver
+**Kandidat-funktionsfiler til Netlify (IKKE deployet, IKKE lagt i `apps/netlify-prod/` endnu — kræver
 Chris' eksplicitte "byg det" for netop dette produktions-skridt, jf. den stående regel):**
 - `elo-hent_v2-kandidat-2026-09-05.js`: udvider den deployede `elo-hent.js`'s Sheets-range fra
   `ELO_Spillere!A2:F1000` til `A2:H1000`, og returnerer nu også `normalSingle`/`normalMixed`
@@ -402,10 +402,10 @@ Chris' eksplicitte "byg det" for netop dette produktions-skridt, jf. den ståend
 1. Chris tilføjer to nye kolonner til `ELO_Spillere` i det rigtige Google Sheet: G ("NormalSingle")
    og H ("NormalMixed") — overskriftstekst er valgfri, funktionerne bruger kun kolonnebogstaverne.
 2. Chris kopierer `elo-hent_v2-kandidat-2026-09-05.js` ind i
-   `netlify-tool-prod/netlify/functions/elo-hent.js` (erstatter den nuværende), og
+   `apps/netlify-prod/netlify/functions/elo-hent.js` (erstatter den nuværende), og
    `normalroller-gem.js` ind som en helt ny fil i samme mappe.
-3. Chris' sædvanlige manuelle mappe-overførsel af `netlify-tool-prod` til Netlify.
-4. Kampsystem-siden i produktion (`netlify-tool-prod/public/kampsystem.html`) skal desuden
+3. Chris' sædvanlige manuelle mappe-overførsel af `apps/netlify-prod/` til Netlify.
+4. Kampsystem-siden i produktion (`apps/netlify-prod/public/kampsystem.html`) skal desuden
    OPDATERES med hele denne sessions øvrige `kampsystem_source.html`-arbejde (tab-opdeling,
    normalKategorier-UI, "Opdater standarder"-knap, Christoffer Müller-fixet, og nu denne
    Sheets-gem) — den er stadig IKKE kopieret til produktion, kun til preview-kilden. Kræver
@@ -418,13 +418,13 @@ mens en ANDEN spillers ikke-rørte "Normal rolle" korrekt overtages fra den simu
 Fuld regressionssuite (10 testfiler i alt nu) kørt og bestået uden fejl.
 
 **Leveret:** opdateret `kampsystem_source.html` + genbygget `kampsystem_preview_standalone.html`
-sendt, `kampsystem_source.html` synkroniseret til `D:\Dropbox\gsb-claude-preview-kilde\` (ingen
+sendt, `kampsystem_source.html` synkroniseret til `kampsystem/` (ingen
 drift konstateret før commit), og de to kandidat-Netlify-funktionsfiler sendt som download (ikke
-lagt i `netlify-tool-prod`).
+lagt i `apps/netlify-prod/`).
 
 **Status:** frontend + kandidatfunktioner bygget og testet. Afventer Chris' "byg det" for selve
 produktionsudrulningen (Sheet-kolonner + funktionsfiler + kampsystem.html-opdatering i
-`netlify-tool-prod`).
+`apps/netlify-prod/`).
 
 ## Bug rapporteret 2026-09-05 (samme dag): "10 baner til 40 mennesker gav kun 7 baners kampe" — FUNDET OG RETTET
 
@@ -464,7 +464,7 @@ hård Mixed-kønsparring, tvungenSpil, osv.) er påvirket.
 
 **Leveret:** opdateret `kampsystem_source.html` + genbygget `kampsystem_preview_standalone.html`
 sendt til Chris, og `kampsystem_source.html` synkroniseret til
-`D:\Dropbox\gsb-claude-preview-kilde\kampsystem_source.html` via device bridge (ingen drift
+`kampsystem/kampsystem_source.html` via device bridge (ingen drift
 konstateret før commit). Ingen produktionsfiler rørt.
 
 **Status:** rettet og verificeret — afventer Chris' fornyede test med sit rigtige, kønsskæve
@@ -509,7 +509,7 @@ Fuld regressionssuite (12 testfiler i alt nu) kørt og bestået uden fejl.
 
 **Leveret:** opdateret `kampsystem_source.html` + genbygget `kampsystem_preview_standalone.html`
 sendt til Chris, og `kampsystem_source.html` synkroniseret til
-`D:\Dropbox\gsb-claude-preview-kilde\` (ingen drift konstateret før commit).
+`kampsystem/` (ingen drift konstateret før commit).
 Ingen produktionsfiler rørt.
 
 **Status:** bane-nummer-bugget er rettet og verificeret. "Eksportér testdata"-knappen er klar til
@@ -534,7 +534,7 @@ et rigtigt banenummer (efter banenummer-fixet ovenfor). Fuld regressionssuite (1
 og bestået.
 
 **Leveret:** opdateret `kampsystem_source.html` + genbygget `kampsystem_preview_standalone.html`
-sendt, og `kampsystem_source.html` synkroniseret til `D:\Dropbox\gsb-claude-preview-kilde\` (ingen
+sendt, og `kampsystem_source.html` synkroniseret til `kampsystem/` (ingen
 drift). Ingen produktionsfiler rørt.
 
 **Status:** "Eksportér testdata" dækker nu både input og output — afventer Chris' dump af det
@@ -574,7 +574,7 @@ tilnærmelse). Fuld regressionssuite (13 testfiler i alt nu, inkl. den tidligere
 regressioner.
 
 **Leveret:** opdateret `kampsystem_source.html` + genbygget `kampsystem_preview_standalone.html`
-sendt, og `kampsystem_source.html` synkroniseret til `D:\Dropbox\gsb-claude-preview-kilde\` (ingen
+sendt, og `kampsystem_source.html` synkroniseret til `kampsystem/` (ingen
 drift). Ingen produktionsfiler rørt.
 
 **Status:** rettet og verificeret mod Chris' egne, faktiske data — afventer hans fornyede test.
@@ -646,7 +646,7 @@ hardcoded roster-data (kun `__ROSTER_JSON__`-pladsholderen) og krævede derfor i
 **Verifikation:** hele regressionssuiten (14 testfiler) kørt igen efter opdateringen — alle
 bestået uændret, som forventet (ren data-ændring, ingen kodelogik rørt).
 
-**Leveret:** opdateret `build3.py` synkroniseret til `D:\Dropbox\gsb-claude-preview-kilde\` via
+**Leveret:** opdateret `build3.py` synkroniseret til `kampsystem/` via
 enhedsbroen (ingen drift konstateret før commit), samt en genbygget
 `kampsystem_preview_standalone.html` sendt til Chris. Ingen produktionsfiler rørt.
 
@@ -662,7 +662,7 @@ felter der stadig mangler for disse to spillere er selve BD-ratings for Andreas 
 og en Mixed-specifik rating for August (bruger double-fallback, se niende runde).
 
 Regressionssuiten (14 testfiler) kørt igen — alle bestået uændret. `build3.py` synkroniseret til
-`D:\Dropbox\gsb-claude-preview-kilde\` (ingen drift), opdateret `kampsystem_preview_standalone.html`
+`kampsystem/` (ingen drift), opdateret `kampsystem_preview_standalone.html`
 sendt til Chris. Ingen produktionsfiler rørt.
 
 ## Tre nye punkter fra Chris' 1. holds-test 2026-09-05, KUN LOGGET — INGEN KODE ÆNDRET (sessionens tidsgrænse nået)
@@ -850,7 +850,7 @@ en konkret ændring til selve makker-parrings-heuristikken, bør det logges som 
 
 **Leveret:** opdateret `kampsystem_source.html` + genbygget `kampsystem_preview_standalone.html`
 sendt til Chris, og `kampsystem_source.html` synkroniseret til
-`D:\Dropbox\gsb-claude-preview-kilde\` (ingen drift konstateret før commit). Ingen produktionsfiler
+`kampsystem/` (ingen drift konstateret før commit). Ingen produktionsfiler
 rørt. Samlet regressionssuite nu 17 testfiler, alle bestået.
 
 **Status: punkt 2 og 3 er rettet og testet i preview-kilden — afventer Chris' fornyede test.**
@@ -898,7 +898,7 @@ oversiddere at parre dem med. Endnu et skridt tættere på Chris' mål om "ingen
 
 **Leveret:** opdateret `kampsystem_source.html` + genbygget `kampsystem_preview_standalone.html`
 sendt til Chris, og `kampsystem_source.html` synkroniseret til
-`D:\Dropbox\gsb-claude-preview-kilde\` (ingen drift konstateret før commit). Ingen produktionsfiler
+`kampsystem/` (ingen drift konstateret før commit). Ingen produktionsfiler
 rørt.
 
 **Status: bygget og testet i preview-kilden — afventer Chris' fornyede test.**
@@ -1016,7 +1016,7 @@ ingen regressioner. To eksisterende tests (`test_mixed_koen_force.js`,
 begge tests er ellers uændrede og stadig bestået i deres oprindelige betydning.
 
 **Leveret:** opdateret `kampsystem_source.html` sendt til Chris og synkroniseret til
-`D:\Dropbox\gsb-claude-preview-kilde\kampsystem_source.html` via enhedsbroen (ingen drift
+`kampsystem/kampsystem_source.html` via enhedsbroen (ingen drift
 konstateret før commit), samt en genbygget `kampsystem_preview_standalone.html` (med jeres rigtige
 61-spiller-trup indlejret) sendt til direkte test. Ingen produktionsfiler rørt.
 
@@ -1026,7 +1026,7 @@ tilbagemelding på den flaggede teknik-loft-forenkling ovenfor.**
 
 ## OPDATERING 2026-09-07 — kampsystem_source.html GENOPBYGGET 100% FRA DOKUMENTATION efter regression (tabt Dropbox-kilde, ingen versionshistorik)
 
-**Baggrund:** `kampsystem_source.html` i `D:\Dropbox\gsb-claude-preview-kilde\` viste sig ved
+**Baggrund:** `kampsystem_source.html` i `kampsystem/` viste sig ved
 diagnose (mtime-tjek: 2026-09-01 22:40) at være en meget tidlig version, fra FØR næsten hele
 feature-historien ovenfor (fjerde til trettende runde: 3-faneopdeling, banekapacitets-planlægger,
 oversidder-rotation, udskiftningssingle/-double, tving-til-teknik, gentagelses-undgåelse, Normal
@@ -1035,7 +1035,7 @@ byggerunders resultater tilbage til Dropbox — og Dropbox' egen versionshistori
 version at gendanne fra. Opdaget da Chris testede en (dengang) genopbygget standalone-fil og
 savnede den kendte 3-faneopdeling ("Der burde være en med 3 faner i standalonen").
 
-**Metode:** hele `claude/gsb-kampsystem-idebank-historik.md` (ældre, arkiveret del: B4-prototypen
+**Metode:** hele `docs/historik/idebank-kampsystem-historik.md` (ældre, arkiveret del: B4-prototypen
 2026-08-31 til og med den 40/10-baners-bug Chris eksplicit AFVISTE løsningen på) og den aktive del
 af denne fil (fra "OPDATERING 2026-09-05 (fjerde runde)" til og med "trettende runde" ovenfor) blev
 brugt som ENESTE kilde til at bygge en kronologisk feature-tjekliste, og derefter en fuld
@@ -1054,7 +1054,7 @@ c) **"Normal rolle":** kun den forenklede, endelige single/mix-version (double a
 d) **"Skal spille":** placeret på Kør runde-fanen (sjette rundes endelige placering), ikke Spillere-
    fanen.
 
-`netlify-tool-prod/public/kampsystem.html` blev brugt kun som ekstra, IKKE-autoritativ reference
+`apps/netlify-prod/public/kampsystem.html` blev brugt kun som ekstra, IKKE-autoritativ reference
 for grundstruktur (bekræftet via grep kun opdateret til og med syvende runde — nul forekomster af
 `skiftFane`, `oversidderTaeller`, `normalKategorier`, `bekraeftRunde`, `tvungenSpil`,
 `formTeamsMixed`, `tvingTilTeknik`, `oversidderHistorik` m.fl.) — IKKE rørt eller ændret på noget
@@ -1132,7 +1132,7 @@ original, som ikke fandtes at diffe mod):**
    byte-for-byte-verificeret læst tilbage.
 3. Ny `kampsystem_source.html` (48.758 bytes, `__ROSTER_JSON__`/`__ALLE_SPILLERE_JSON__`-
    pladsholdere bevaret til build3.py's substitution) og ny `kampsystem_preview_standalone.html`
-   skrevet til `D:\Dropbox\gsb-claude-preview-kilde\` (overskriver den gamle, efter backup).
+   skrevet til `kampsystem/` (overskriver den gamle, efter backup).
    `build3.py`s `KAMPSYSTEM_ROSTER` opdateret (Ungsenior-gruppe + `koen`-felt) og skrevet samme sted.
 4. **Read-back-verifikation udført og bestået for ALLE tre skrevne filer** — hver fil læst tilbage
    fra Dropbox umiddelbart efter skrivning og SHA-256-hashet mod den lokale kopi der blev sendt:
@@ -1140,7 +1140,7 @@ original, som ikke fandtes at diffe mod):**
    `build3.py` (9cf7ace2…) — alle tre byte-identiske, størrelser og tidsstempler matcher. Dette var
    det eksplicit krævede trin for at undgå en gentagelse af den oprindelige "skrivning logget som
    gennemført, men filen forblev den gamle"-fejl, der er årsagen til hele denne genopbygning.
-5. **Rørt IKKE:** `netlify-tool-prod` eller nogen produktionsfiler. **Bygget IKKE og deployet
+5. **Rørt IKKE:** `apps/netlify-prod/` eller nogen produktionsfiler. **Bygget IKKE og deployet
    IKKE:** Sheets-persistens-kandidatfunktionerne fra ottende runde ovenfor (de findes slet ikke i
    denne genopbygning).
 
@@ -1297,7 +1297,7 @@ osv.).
    `kampsystem_source_BACKUP_2026-09-07-v2.html` (48.758 bytes),
    `kampsystem_preview_standalone_BACKUP_2026-09-07-v2.html` (94.492 bytes),
    `build3_BACKUP_2026-09-07-v2.py` (35.830 bytes) — alle tre skrevet til
-   `D:\Dropbox\gsb-claude-preview-kilde\` og størrelsesbekræftet ved read-back FØR de rettede filer
+   `kampsystem/` og størrelsesbekræftet ved read-back FØR de rettede filer
    blev skrevet.
 3. Rettede filer skrevet til samme mappe: `kampsystem_source.html` (54.145 bytes),
    `kampsystem_preview_standalone.html` (99.879 bytes), `build3.py` (35.830 bytes, kun
@@ -1311,7 +1311,7 @@ osv.).
    forrige genopbygningsrunde) — opdaget PRÆCIS fordi read-back-trinnet blev fulgt uden undtagelse,
    rettet med et fornyet commit-forsøg (`force:true`), og derefter bekræftet byte-identisk ved en
    ny read-back. Endnu et konkret eksempel på hvorfor dette trin er ufravigeligt.
-5. **Rørt IKKE:** `netlify-tool-prod` eller nogen produktionsfiler. **Bygget/deployet IKKE:**
+5. **Rørt IKKE:** `apps/netlify-prod/` eller nogen produktionsfiler. **Bygget/deployet IKKE:**
    Sheets-persistens eller andre features ud over de seks fund ovenfor.
 
 **Status:** alle seks fund fra Chris' test er adresseret (fem rettet i kode og testet, UI-punktet

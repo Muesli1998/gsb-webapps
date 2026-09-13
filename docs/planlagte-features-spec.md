@@ -1,6 +1,6 @@
 # GSB – Aftalte features, klar til byggekø (endnu IKKE bygget)
 
-Denne fil er forskellig fra `gsb-feature-idebank.md`: idébanken er rå brainstorm og
+Denne fil er forskellig fra `docs/idebank-feature.md`: idébanken er rå brainstorm og
 diskussion (skal vi overhovedet bygge det?), denne fil er de idéer der er blevet konkret
 AFTALT i detalje med Chris (scope, arkitektur og tekniske valg lagt fast — spørgsmålet er nu
 kun "hvordan/hvornår bygger vi det", ikke "skal vi").
@@ -21,21 +21,21 @@ punkt. At noget står her betyder "vi er færdige med at diskutere designet", IK
   ikke læses igen for at følge med i hvad der stadig mangler.
 
 **OPDATERING 2026-09-04 — vedligeholdelsesregel for denne fil, og en kendt rettelse:**
-Denne fil opdateres IKKE altid lige så flittigt som `gsb-feature-idebank.md`/
-`gsb-kampsystem-idebank.md`/`gsb-driftlog.md`, fordi opdateringer her kun sker når noget
+Denne fil opdateres IKKE altid lige så flittigt som `docs/idebank-feature.md`/
+`docs/idebank-kampsystem.md`/`docs/historik/driftlog.md`, fordi opdateringer her kun sker når noget
 flytter status mellem DEL A/B/C/0 — ikke ved hver lille fremdrift. Det betyder den kan blive
 LOKALT forældet på enkelte punkter, selvom hoved-idébankerne er opdateret. Et konkret eksempel
 fundet og rettet 2026-09-04: B4's Fase-plan nedenfor antog stadig at Chris bruger git
 (commit/push) til at deploye — men Chris afklarede allerede 2026-09-03 (ottende runde, se
-`gsb-driftlog.md`) at han overfører hele `netlify-tool-prod`-mappen manuelt til Netlify, uden
+`docs/historik/driftlog.md`) at han overfører hele `apps/netlify-prod/`-mappen manuelt til Netlify, uden
 git. Rettet nedenfor. **Fremadrettet tjek:** når et B-punkts deploy-status ændrer sig i
-driftloggen (fx "nu kopieret til netlify-tool-prod", "nu shippet", "nu testet live"), skal den
+driftloggen (fx "nu kopieret til apps/netlify-prod/", "nu shippet", "nu testet live"), skal den
 tilsvarende status-sætning her i spec-filen opdateres i SAMME session — ikke kun i driftloggen.
 
-**OPDATERING 2026-09-04 (samme dag, senere) — dokument-omorganisering:** `gsb-feature-idebank.md`
+**OPDATERING 2026-09-04 (samme dag, senere) — dokument-omorganisering:** `docs/idebank-feature.md`
 er splittet yderligere, og statistik-/spilleranalyse-relateret indhold (herunder A4's baggrund) er
-flyttet til den nye `claude/gsb-statistik-idebank.md`. Ren API-teknik er flyttet/flettet ind i
-`NEMBADMINTON_API_NOTES.md`. Henvisningerne nedenfor er opdateret til at pege på de rigtige filer.
+flyttet til den nye `docs/idebank-statistik.md`. Ren API-teknik er flyttet/flettet ind i
+`docs/nembadminton-api.md`. Henvisningerne nedenfor er opdateret til at pege på de rigtige filer.
 
 ---
 
@@ -82,11 +82,11 @@ når Chris får adgang til den rigtige holdliste — intet at vente på fra chef
 
 ## A4. Automatiseret opslag af dato-præcise ranglistepoint for VILKÅRLIGE spillere (badmintonplayer.dk)
 
-**Hvorfor det skal testes:** relevant for `claude/gsb-statistik-idebank.md`s "Trænerværktøj:
+**Hvorfor det skal testes:** relevant for `docs/idebank-statistik.md`s "Trænerværktøj:
 performance vs. ranglistepoint"-idé (rejst af Chris 2026-08-31) — en stat der viser om en
 spillers kampresultater står mål med deres rangliste-niveau PÅ KAMPTIDSPUNKTET, også for
 modstandere fra andre klubber. Nembadmintons GraphQL-API er en bekræftet blindgyde til dette
-(ingen no-login vej til en anden klubs `clubhouseId`, se `NEMBADMINTON_API_NOTES.md`).
+(ingen no-login vej til en anden klubs `clubhouseId`, se `docs/nembadminton-api.md`).
 
 **Det der ER bekræftet, live testet 2026-08-31:** badmintonplayer.dk's egen offentlige
 "Ranglister"-side (`/DBF/Ranglister/`, intet login) understøtter både klub-filtrering (samme
@@ -121,7 +121,7 @@ IKKE automatisk forsvinder fra/nulstilles til "– auto –" i de andre dropdown
 lige er blevet valgt i én af dem.
 
 **REPRODUCERET ved kodelæsning 2026-09-04 (identisk kode i `kampsystem_source.html` og
-`netlify-tool-prod/public/kampsystem.html` — begge har buggen):**
+`apps/netlify-prod/public/kampsystem.html` — begge har buggen):**
 - `opdaterLaasDropdowns()` bygger de fire dropdowns ud fra `lockedMatches` (kampe der ER
   bekræftet med "Tilføj kamp") — IKKE ud fra hvad der er valgt i de andre tre dropdowns lige nu.
   Der er heller ingen `change`-listener på selve a1/a2/b1/b2, så de fire felter opdaterer aldrig
@@ -144,7 +144,7 @@ lavrisiko ændring — ingen ny logik, kun en manglende reset-linje. Fjerner sam
 `current`-særreglen i `opdaterLaasDropdowns()`s filter (kan forenkles bagefter, valgfrit).
 
 **BYGGET 2026-09-04 (samme byggerunde som Kampsystem-designpunkterne 1/2/3/5/6, se
-`gsb-kampsystem-idebank.md`):** fixet præcis som anbefalet, i `kampsystem_source.html`
+`docs/idebank-kampsystem.md`):** fixet præcis som anbefalet, i `kampsystem_source.html`
 (preview-kilden). Verificeret med jsdom. **Kun i preview-kilden — IKKE kopieret til
 produktionens `kampsystem.html` endnu**, afventer Chris' test af den leverede
 standalone-testfil før noget går videre til produktion.
@@ -152,7 +152,7 @@ standalone-testfil før noget går videre til produktion.
 Status: **bygget og testet i preview-kilden, afventer Chris' godkendelse før kopiering til
 produktion.**
 
-## A6. Kampsystem: er `netlify-tool-prod/public/kampsystem.html` reelt identisk med den nuværende preview-kildekode? — DIFFET OG RETTET 2026-09-04
+## A6. Kampsystem: er `apps/netlify-prod/public/kampsystem.html` reelt identisk med den nuværende preview-kildekode? — DIFFET OG RETTET 2026-09-04
 
 **Baggrund:** `kampsystem.html` blev kopieret til produktion i syvende runde (2026-09-03), ud
 fra `kampsystem_source.html` som den så ud PÅ DET TIDSPUNKT.
@@ -170,13 +170,13 @@ preview-kilden på det tidspunkt:
 - Produktion havde desuden en `MOTIONIST_GRUPPE = 'Motionist'`-konstant (fast tilgængelig
   mål-gruppe i "Tilføj til gruppe"-vælgeren) som slet ikke fandtes i preview-kilden.
 
-**Årsagen blev fundet ved at krydstjekke `gsb-kampsystem-idebank.md`s egen historik:**
+**Årsagen blev fundet ved at krydstjekke `docs/idebank-kampsystem.md`s egen historik:**
 multi-gruppe-checkboks-filteret og "Ungsenior"-gruppen blev bygget i PREVIEW i fjerde runde
 2026-09-03, "Motionist" tilføjet i femte runde samme dag — og PRÆCIS denne version af
 `kampsystem_source.html` blev kopieret til produktion i syvende runde. `kampsystem_source.html`
-i `gsb-claude-preview-kilde` var altså på et tidspunkt EFTER syvende runde blevet
+i `kampsystem/` var altså på et tidspunkt EFTER syvende runde blevet
 regredieret/overskrevet med en ældre version — samme klasse fejl som 2026-08-31-lærestykket i
-`gsb-dropbox-filstruktur.md` (forkert kilde antaget/brugt ved en genbygning), bare opdaget nu i
+`docs/historik/dropbox-filstruktur.md` (forkert kilde antaget/brugt ved en genbygning), bare opdaget nu i
 stedet for med det samme. Tidspunkt/årsag for selve regressionen er ikke undersøgt yderligere.
 
 **RETTET 2026-09-04, samme session, på Chris' anmodning ("gotta fix A6 immediately"):**
@@ -188,7 +188,7 @@ stedet for med det samme. Tidspunkt/årsag for selve regressionen er ikke unders
 `genererRunde`, samt reset i `nulstilEksempeldata`). Verificeret med `node --check` på den
 udtrukne JS (syntaksfejlfri) og en grep-gennemgang der bekræfter INGEN resterende referencer til
 det gamle `aktivGruppe`/`gruppe-select`. Skrevet tilbage til
-`D:\Dropbox\gsb-claude-preview-kilde\kampsystem_source.html` via enhedsbroen (kun denne fil i
+`kampsystem/kampsystem_source.html` via enhedsbroen (kun denne fil i
 preview-kilde-mappen — INGEN produktionsfiler rørt, det var allerede kun produktion der havde den
 rigtige version). A5-buggen findes fortsat identisk i begge filer (se A5) — ikke rørt af denne
 rettelse.
@@ -255,7 +255,7 @@ vedligehold. Løsning: automatisér både visningen i webappen og selve Google C
 - **Alle øvrige hold (ungdom, øvrige veteranrækker) til web-visningen:** samme
   `badmintonPlayerTeams` → `badmintonPlayerTeamFights`-mønster, ét kald pr. hold/pulje (~31
   kombinationer i den nuværende sæson) — ingen `teamMatch`-kald nødvendige for kommende kampe
-  (kun relevant for AFSLUTTEDE kampes resultater, jf. `claude/gsb-statistik-idebank.md`s
+  (kun relevant for AFSLUTTEDE kampes resultater, jf. `docs/idebank-statistik.md`s
   ugentlige sync-forslag).
 - **Nøglefelt til at opdage flytninger:** `gameTime` fra `teamFights`.
 
@@ -344,20 +344,20 @@ delay, skriver intet rigtigt sted), mens GET-kald går uændret igennem til det 
 Ikke aftalt eksplicit med Chris — flag det hvis write-siden også skal gå live.
 
 Status: **bygget i Claude-previewet 2026-08-31**, læsning er live/rigtig, skrivning er fortsat
-mocket. Intet rørt i de rigtige Dropbox/Netlify-filer (var allerede korrekt konfigureret der).
+mocket. Intet rørt i de rigtige produktionsfiler (var allerede korrekt konfigureret der).
 
 ## B3. Klubstatistik — ny top-level side med al klubbens data (ungdom + senior + veteran), adskilt fra Dream Team — AFTALT 2026-08-31
 
 **Baggrund:** trænerne (og evt. bestyrelsen) vil gerne kunne se statistik for HELE klubben,
 ikke kun de fire Dream Team-hold (GSB 1-4) — særligt ungdom, som slet ikke er dækket i dag.
 Uddyber og lander det tidligere forslag "Adskil Dream Team-statistik fra generel
-GSB-klubstatistik", se `claude/gsb-statistik-idebank.md`.
+GSB-klubstatistik", se `docs/idebank-statistik.md`.
 
 **Grundprincip — to lag holdes fysisk adskilt, ikke bare visuelt filtreret:**
 Dream Team-røret (Tilmeldinger → Holdoversigt → Resultater → Spillerpoint → Beregning →
 Stilling) røres IKKE og fodres fortsat kun manuelt med GSB 1-4's kampe, præcis som i dag.
 Klubstatistikken får sin egen, parallelle datakilde og pipeline — lærdommen fra
-win%-dedup-bugget (se `claude/gsb-statistik-idebank.md`) er netop at koble et nyt formål oveni
+win%-dedup-bugget (se `docs/idebank-statistik.md`) er netop at koble et nyt formål oveni
 det eksisterende Resultater-flow er det der skaber den slags fejl.
 
 **Placering — AFTALT:** en helt ny, selvstændig top-level side i nav'ens øverste lag, ved siden
@@ -377,7 +377,7 @@ skal udvides ved bygning, men det er en ligetil opslags-udvidelse, ikke en åben
   ALLE hold (ingen begrænsning til GSB 1-4), plus en `Afdeling`-kolonne udledt af `ageGroupId`.
 - Ny Netlify **scheduled function** der bruger klub-ID-kæden (`badmintonPlayerTeams` →
   `badmintonPlayerTeamFights` → `badmintonPlayerTeamMatch`, alle bekræftet login-frie og
-  fungerende for ungdom i 0.1/0.2, se `NEMBADMINTON_API_NOTES.md`) til automatisk at finde og
+  fungerende for ungdom i 0.1/0.2, se `docs/nembadminton-api.md`) til automatisk at finde og
   hente ALLE klubbens spillede kampe — ingen manuel matchId-indtastning, i modsætning til Dream
   Team-siden.
 - **Sync-tidspunkt — AFTALT 2026-08-31, generel regel:** kører ugentligt, mandag morgen, fordi
@@ -385,7 +385,7 @@ skal udvides ved bygning, men det er en ligetil opslags-udvidelse, ikke en åben
   hele den forgangne uges kampe med opdaterede tal med det samme. Denne regel gælder generelt
   for alle fremtidige ugentlige sync-mekanismer i projektet, ikke kun denne feature.
 - Bør fra dag ét håndtere `"Ikke fremmødt"`-walkovers korrekt (se
-  `claude/gsb-statistik-idebank.md`s fund om at den eksisterende `hent-resultater.js` IKKE gør
+  `docs/idebank-statistik.md`s fund om at den eksisterende `hent-resultater.js` IKKE gør
   dette) — ny kode, ingen grund til at arve den bug.
 
 **Statistik-siden selv:**
@@ -437,7 +437,7 @@ Forside/GSB Dream Team/Ungdomssparring/Søndagstræning.
 - Standard Elo: `E_A = 1 / (1 + 10^((R_B - R_A)/400))`, `R_ny = R_gammel + K * (resultat - E_A)`.
 - K-faktor: 32 som startværdi. **[Se opdatering nedenfor — genkalibreret til divisor 850/K=70
   2026-09-02, samt Chris' spørgsmål 2026-09-03 om at gøre K erfarings-afhængig som BD's eget
-  system, se `gsb-kampsystem-idebank.md`.]**
+  system, se `docs/idebank-kampsystem.md`.]**
 - Rating opdateres LØBENDE gennem sæsonen: træneren markerer vinder pr. bane umiddelbart efter
   hver kamp, hvorefter ratingen for de involverede spillere opdateres med det samme. Træneren
   kan altid overskrive/rette et indtastet resultat bagefter.
@@ -460,7 +460,7 @@ Forside/GSB Dream Team/Ungdomssparring/Søndagstræning.
 Double-parringen i trin 4 bruger den filosofi (balanceret vs. jævnbyrdig par), træneren har
 valgt for aftenen — begge understøttes, ikke hardkodet til én tilgang.
 
-**[OPDATERING 2026-09-03, se `gsb-kampsystem-idebank.md`:** Chris har rejst tre nye punkter der
+**[OPDATERING 2026-09-03, se `docs/idebank-kampsystem.md`:** Chris har rejst tre nye punkter der
 ændrer trin 5 og double-parringen ovenfor, alle kun undersøgt/logget, IKKE bygget endnu: (a)
 banetal skal begrænse hvor mange kampe der GENERERES fra start, ikke kun style visningen
 bagefter (ingen "venter på bane"); (b) undgå så vidt muligt rene kønsopdelte double-hold (H/H
@@ -523,7 +523,7 @@ ikke-trænings-medlemskaberne Passive og GSB's Venner. Dette er kun en afgrænsn
 VÆRKTØJET bruges — ikke en begrænsning af hvem der kan indgå i det fælles rating-system.
 **[Bemærk: i selve Kampsystem-prototypen har Chris allerede 2026-09-03 tilføjet Motionist og
 Veteran som frit tilgængelige, tomme grupper spillere kan tilføjes til (se
-`gsb-kampsystem-idebank.md`) — det er en anden ting end skabelon-scopet her, som handler om
+  `docs/idebank-kampsystem.md`) — det er en anden ting end skabelon-scopet her, som handler om
 FASTE, tilbagevendende trænings-hold. Skaber ikke en modsigelse: en spiller kan sagtens tilføjes
 manuelt til Kampsystemets Motionist-gruppe uden at der findes en fast ELO_Traeningsskabelon for
 "Motionist" som helhed.]**
@@ -540,7 +540,7 @@ ikke autohentes.
   det underforstået at man spiller begge dele på skift inden for aftenen? Rejst af Chris,
   teknisk muligt men gør rundefordelings-algoritmen mere kompleks (to adskilte puljer pr.
   runde) — **AFKLARET 2026-09-02: løst pr. runde i stedet for pr. aften, se
-  `gsb-kampsystem-idebank.md`.**
+  `docs/idebank-kampsystem.md`.**
 
 Status: **rammer, ratingsystem, Elo-formel, rundefordelings-algoritme, datamodel, placering,
 seeding-kilde (`memberStats`s `single`/`double`/`mix`-felter, se 0.5) og minimumsscope for
@@ -568,22 +568,22 @@ bekræftet oprettet af Chris 2026-09-02 med rigtige headers og delt med service-
 `ELO_Spillere` (Navn, Gruppe, Single, Double, Mix, SidstOpdateret) og `ELO_Kampe` (Tidsstempel,
 Runde, Type, A1, A2, B1, B2, Vinder, RatingÆndring, Sæt1, Sæt2, Sæt3). To Netlify-funktioner,
 `elo-hent.js` (GET) og `elo-gem.js` (POST), er skrevet direkte ind i
-`netlify-tool-prod/netlify/functions/` via Dropbox-adgangen.
+`apps/netlify-prod/netlify/functions/` via repoet.
 
-**RETTET STATUS (2026-09-04, jf. `gsb-driftlog.md`s ottende/syvende runde) — denne fils
+**RETTET STATUS (2026-09-04, jf. `docs/historik/driftlog.md`s ottende/syvende runde) — denne fils
 oprindelige afsnit her nævnte at "Chris skal selv committe og pushe disse to nye filer til git,
 så Netlify bygger og deployer dem". Det var baseret på en forkert antagelse: Chris bruger IKKE
-git — han overfører hele `netlify-tool-prod`-mappen manuelt til Netlify (hans eget udtryk:
+git — han overfører hele `apps/netlify-prod/`-mappen manuelt til Netlify (hans eget udtryk:
 "lidt primitiv versionskontrol"). Det reelle forløb siden da:**
 - `elo-hent.js`/`elo-gem.js` blev bekræftet 2026-09-03 (syvende runde) at ligge byte-for-byte
-  identisk i den rigtige `netlify-tool-prod`-mappe (ingen genupload nødvendig).
+  identisk i den rigtige `apps/netlify-prod/`-mappe (ingen genupload nødvendig).
 - `kampsystem.html` (den produktionsklare version, uden preview-nav-script/banner) blev samme
-  runde skrevet direkte ind i `netlify-tool-prod/public/kampsystem.html`.
+  runde skrevet direkte ind i `apps/netlify-prod/public/kampsystem.html`.
 - Ottende runde: Kampsystem blev integreret i den fælles produktions-nav (`gsb-nav.js`) med sin
   egen kode-gate (`kamp2026`), som en del af den bredere nav/IA-omlægning.
 - Ellevte runde: Kampsystem blev testet LIVE på `gsbmore.netlify.app/kampsystem.html` — nav,
   gate, live Sheets-hentning og en rigtig ELO-ratingopdatering (±26 point, matcher K=70/divisor
-  850) blev alle bekræftet at virke i produktion. Se `gsb-driftlog.md` for detaljerne.
+  850) blev alle bekræftet at virke i produktion. Se `docs/historik/driftlog.md` for detaljerne.
 - **Konsekvens: Fase 1 er dermed reelt FÆRDIG og LIVE**, ikke længere "afventer commit/push" —
   den eneste tilbageværende usikkerhed er om `ELO_Spillere`/`ELO_Kampe`-fanebladenes struktur i
   det rigtige Google Sheet er 100% som forventet (kan ikke tjekkes af Claude uden Sheets-adgang,
@@ -608,7 +608,7 @@ Staal, Kenneth Hasselby, Lene Sørensen, Line Nielsen, Signe Aarøe Jørgensen �
 single). `kampsystem_source.html` håndterer nu disse null-felter: viser "–" i rating-tabellen, og advarer
 hvis en fremmødt spiller mangler rating til den valgte disciplin — de kan dog STADIG vælges og
 spille (se den nye "spillere uden rating må spille"-regel nedenfor). Se
-`GSB_NAVNE_ALIAS_OG_ANOMALIER.json` for den fulde liste.
+`data/navne-alias.json` for den fulde liste.
 
 **Trup-scope endeligt fastlagt 2026-09-03 (Chris: "Vi holder os til SuperUng Teen samt Senior (og
 Veteran)"):** Kampsystemets roster dækker Senior og SuperUng Teen som faste, forudfyldte grupper
@@ -621,7 +621,7 @@ hardkodet veteran-spillerliste i koden; gruppen findes kun i det omfang Chris se
 spillere til den i sin aktive preview-session.
 
 **[OPDATERING 2026-09-04 — trup-scope er reelt udvidet siden ovenstående blev skrevet, se
-`gsb-kampsystem-idebank.md` for detaljerne:** 2026-09-03 (fjerde runde) blev en ny gruppe
+`docs/idebank-kampsystem.md` for detaljerne:** 2026-09-03 (fjerde runde) blev en ny gruppe
 "Ungsenior" tilføjet (3 spillere med bekræftet overlap mellem SuperUng Teen og Senior flyttet
 hertil), og gruppe-filteret blev lavet om fra enkelt-valgs-dropdown til checkbokse så flere
 grupper kan kombineres frit. Samme dag (femte runde) blev "Motionist" tilføjet som endnu en
@@ -659,7 +659,7 @@ ratingændring)" — sidstnævnte parrer de oversiddende sammen i ekstra single-
 giver ratingændring for nogen deltager, uanset om de har en rigtig BD-rating (nyt `udskiftning`-
 flag på kampen, tjekket allerførst i `opdaterRating()`). Disse kampe logges stadig i kamplog/
 historik, tydeligt markeret som udskiftningskamp. **[Chris har 2026-09-03 (ellevte runde) bedt om
-at denne mekanisme gøres mere fremtrædende/eksplicit — se `gsb-kampsystem-idebank.md`, kun logget,
+at denne mekanisme gøres mere fremtrædende/eksplicit — se `docs/idebank-kampsystem.md`, kun logget,
 ikke bygget endnu.]**
 
 **Manuel oprettelse af ny spiller + søg/tilføj spiller fra hele klubben — BYGGET 2026-09-02/03,
@@ -684,7 +684,7 @@ til gruppe"-vælger:
   veterangruppen op løbende, se trup-scope-afsnittet ovenfor. En egentlig sondring mellem
   "permanent tilføjelse til den faste trup" og "kun denne træning" samt en "midlertidig
   gæst"-variant med automatisk rating-tilbagerulning er stadig ikke bygget — se
-  `gsb-kampsystem-idebank.md`.
+  `docs/idebank-kampsystem.md`.
 
 **Punkt 3 (lås/fastsæt kampe manuelt) — dropdown-adfærd bekræftet korrekt 2026-09-03.** Chris
 rejste kortvarigt en bekymring om at spiller-dropdown'ene i punkt 3 kun tilbød "– auto –", men
@@ -710,7 +710,7 @@ de gamle eksempeltal (~900) — cirka 2,13× større. Løsning: skalerede BÅDE 
 en given rating-forskel er uændret på den nye skala — ren mekanisk oversættelse. **[Chris har
 2026-09-03 (ellevte runde) spurgt om K-faktoren bør gøres erfarings-afhængig, inspireret af BD's
 eget pointsystem (aftagende udslag jo flere kampe en spiller har spillet) — undersøgt og
-sammenlignet, men IKKE besluttet/ændret endnu, se `gsb-kampsystem-idebank.md`.]**
+sammenlignet, men IKKE besluttet/ændret endnu, se `docs/idebank-kampsystem.md`.]**
 
 **Fase 3 — adgangsstyring — AFKLARET OG BYGGET 2026-09-02.** Kampsystem-appen er nu password-gated
 med koden `kamp2026` (samme gate-mekanisme som Admin/Søndagstræning i preview-shell'en, og — siden
@@ -722,11 +722,11 @@ til at vente med at gå live med selve rundefordelingen.
 
 Status: **Fase 1-3 er alle bygget OG (siden 2026-09-03, syvende/ottende/ellevte runde) reelt
 LIVE i produktion, verificeret ved en live test på `gsbmore.netlify.app` (nav, kode-gate,
-Sheets-hentning og en rigtig ELO-opdatering virkede alle korrekt) — se `gsb-driftlog.md` for den
+Sheets-hentning og en rigtig ELO-opdatering virkede alle korrekt) — se `docs/historik/driftlog.md` for den
 fulde verifikation.** Kun Fase 4 (trænings-skabeloner) mangler, blokeret af A3.
 
 **OPDATERING 2026-09-04 (byggerunde):** Chris' opfølgende ønsker fra live-testen er nu delvist
-bygget — se A5 ovenfor og `gsb-kampsystem-idebank.md`s "BYGGERUNDE 2026-09-04"-afsnit for det
+bygget — se A5 ovenfor og `docs/idebank-kampsystem.md`s "BYGGERUNDE 2026-09-04"-afsnit for det
 fulde billede. Kort: bane-begrænset generering (venter-på-bane fjernet), oversidder-tæller +
 rotation, kønsbevidst double-parring (kode klar, kræver en separat kønsseedings-kørsel før den
 har effekt), "Nulstil runde" og den udvidede manuel-redigering (mulighed 3 + "Bekræft
@@ -746,7 +746,7 @@ hvem der faktisk har sendt en MobilePay-betaling) — en deltager der vælger "b
 betale, kan rettes til "gratis" inden podiet gøres op for sæsonen.
 
 **UI — BYGGET I PREVIEW (2026-08-31), OG NU OGSÅ SHIPPET TIL PRODUKTION (niende runde,
-2026-09-03, se `gsb-driftlog.md`):** en "Betaling"-sektion mellem spillervalget og selve
+2026-09-03, se `docs/historik/driftlog.md`):** en "Betaling"-sektion mellem spillervalget og selve
 tilmeld-knappen: to klikbare valgmuligheder ("Jeg betaler kontingent" / "Jeg deltager gratis"),
 MobilePay-boksen (`1572BU`) står altid synligt lige under, og "Tilmeld hold"-knappen er
 deaktiveret indtil et valg er truffet.
@@ -762,7 +762,7 @@ deaktiveret indtil et valg er truffet.
   betalingsstatus.
 - **`stilling.js`/`stilling.html`** slår Betaling op pr. deltager og bruger det til
   podie-markering (guld/sølv/bronze) samt "Honorable mentions"-sektionen — **shippet tiende
-  runde (2026-09-03), se `gsb-driftlog.md` for det fulde forløb og jsdom-verifikationen.**
+  runde (2026-09-03), se `docs/historik/driftlog.md` for det fulde forløb og jsdom-verifikationen.**
   Beregning-, Spillerpoint- og pointberegningskæden er urørt — kun en visningsændring i Stilling.
 - **Fortolkning af celleværdien:** case-insensitivt — "Ja"/"Betalt" (og BLANK) tæller som
   podie-berettiget; alt andet ("Gratis", "Nej", eller enhver anden note) udelukker fra podiet,
@@ -781,7 +781,7 @@ Tilmeldinger/Resultater/Spillerpoint — der er ingen automatisk sammenhæng mel
 standardreglen ("blank = podie-berettiget") ikke stemmer overens med disse 7 kendte
 Gratis-deltagere, viser 25/26-sæsonens podie dem indtil videre som berettigede.
 
-> ⏰ **PÅMINDELSE TIL CHRIS (stadig ikke gjort pr. 2026-09-03, jf. `gsb-driftlog.md`s tiende
+> ⏰ **PÅMINDELSE TIL CHRIS (stadig ikke gjort pr. 2026-09-03, jf. `docs/historik/driftlog.md`s tiende
 > runde):** dobbelttjek tidligere sæsoners betalingsstatus (24/25 og 25/26) mod din egen
 > MobilePay-transaktionshistorik på boks `1572BU`, og ret/udfyld "Betaling"-kolonnen i de
 > respektive sæsoners Tilmeldinger-fane derefter. Dette er en opgave for DIG i sheetet, ikke
@@ -791,17 +791,17 @@ Gratis-deltagere, viser 25/26-sæsonens podie dem indtil videre som berettigede.
 faktiske pointtotal (samme beregning, uændret, som resten af Stilling) ville placere dem i
 sæsonens **samlede top 5** vises i en "🌟 Honorable mentions"-sektion på Stilling-siden, med
 deres ville-have-været-placering vist eksplicit. Vises kun når der reelt er en kvalificeret
-gratis-deltager for sæsonen (afgjort spørgsmål, se `gsb-driftlog.md`s tiende runde).
+gratis-deltager for sæsonen (afgjort spørgsmål, se `docs/historik/driftlog.md`s tiende runde).
 
 **Stadig ikke besluttet (mindre visningsdetaljer, allerede afgjort ved bygning — se
-`gsb-driftlog.md`s tiende runde for de faktiske valg):**
+`docs/historik/driftlog.md`s tiende runde for de faktiske valg):**
 - Skal 25/26's Pivot-fane-data (Chris' eget ansvar, se påmindelsen ovenfor) også bruges til at
   regne "Honorable mentions" korrekt for 25/26 med det samme, eller er det kun fremadrettet fra
   26/27? Stadig uafklaret — afhænger af hvornår Chris udfylder kolonnen.
 - Præcis hvad tæller som "for sent" for tilmeldings-tidsstemplet — stadig kun visuelt/til Chris'
   eget skøn, ingen automatisk deadline-regel.
 
-Status: **B5 er nu FULDT SHIPPET til de rigtige `netlify-tool-prod`-filer (niende og tiende
+Status: **B5 er nu FULDT SHIPPET til de rigtige `apps/netlify-prod/`-filer (niende og tiende
 runde, 2026-09-03) — ikke længere kun "klar til byg det".** Eneste tilbageværende, ikke-
 blokerende opgave er Chris' egen gennemgang af tidligere sæsoners betalingsstatus (se
 påmindelsen ovenfor). Afventer stadig Chris' sædvanlige manuelle mappe-overførsel til Netlify
@@ -864,7 +864,7 @@ forskellige "live"-ønsker fra denne samtale:
   var, ville det ikke løse hemmeligholdelses-problemet — enhver værdi der bliver en del af den
   offentlige sides kode, kan læses af enhver besøgende.
 - **Hvor `.env`-mønsteret RENT FAKTISK hører hjemme:** for evt. fremtidige Netlify-baserede
-  hemmeligheder (fx den ugentlige resultat-sync i `claude/gsb-statistik-idebank.md`s
+  hemmeligheder (fx den ugentlige resultat-sync i `docs/idebank-statistik.md`s
   `AlleResultater`-forslag) — ikke en lokal fil Chris sender til Claude, men en miljøvariabel
   Chris selv indtaster direkte i Netlifys eget dashboard ("Environment variables") ved deploy.
 

@@ -3,12 +3,12 @@
 Al statistik-, spilleranalyse- og rankings-relateret idéarbejde på tværs af sitet — Dream Teams
 Statistik-side (`analyse.html`), den fremtidige klub-brede statistik (B3), og alle
 spilleranalyse-/rankings-metoder der undervejs har vist sig genbrugelige på tværs af flere features.
-Udskilt fra `claude/gsb-feature-idebank.md` 2026-09-04, fordi det reelt er samme type arbejde
+Udskilt fra `docs/idebank-feature.md` 2026-09-04, fordi det reelt er samme type arbejde
 (pointberegning, sammenligning, ranking-metoder) der bliver relevant igen og igen for forskellige
 features — det gav mere mening at samle det ét sted end at lade det ligge spredt i feature-specifikke
-afsnit. Se `claude/gsb-feature-idebank.md` for selve feature-idéerne (Tilmelding, nav/IA, Søndagstræning
-osv.), `claude/gsb-kampsystem-idebank.md` for ELO/Kampsystem, `claude/gsb-driftlog.md` for hvad der
-faktisk er shippet, og `NEMBADMINTON_API_NOTES.md` for ren teknisk API-reference (flyttet dertil samme
+afsnit. Se `docs/idebank-feature.md` for selve feature-idéerne (Tilmelding, nav/IA, Søndagstræning
+osv.), `docs/idebank-kampsystem.md` for ELO/Kampsystem, `docs/historik/driftlog.md` for hvad der
+faktisk er shippet, og `docs/nembadminton-api.md` for ren teknisk API-reference (flyttet dertil samme
 dag, af samme grund).
 
 ## Trænerværktøj: "performance vs. ranglistepoint" — er sejren "forventet"? (rejst + testet 2026-08-31)
@@ -31,7 +31,7 @@ skak-inspireret "performance rating" (hvilket pointniveau ville gøre den faktis
 holdkamp hver gang — altså et dato-nært snapshot pr. kamp, ikke et enkelt fast tal for hele sæsonen.
 
 **Feasibility testet live 2026-08-31 — delvist løst, én begrænsning tilbage:** se
-`NEMBADMINTON_API_NOTES.md`, afsnittet "Modstanderes rangliste-point (ANDRE klubber end GSB)" for det
+`docs/nembadminton-api.md`, afsnittet "Modstanderes rangliste-point (ANDRE klubber end GSB)" for det
 fulde tekniske forløb. Kort opsummeret:
 - Nembadmintons GraphQL-API kan IKKE bruges til at finde en vilkårlig modstanders point uden login (alle
   relevante queries kræver en `clubhouseId`, som ikke er opslåelig for andre klubber end GSB uden login).
@@ -56,8 +56,8 @@ badmintonplayer.dk's `/DBF/Ranglister/`-side har rent faktisk en dato-præcis "V
 for historiske sæsoner (fx 19-09-2025, dagen før GSB-kampen, er en valgbar dato). Kun selve
 automatiseringen af at slå en SPECIFIK dato op (i modsætning til sæsonens seneste version) mangler at
 blive løst. Det fulde tekniske forløb — hash-URL-format, klub-/kategori-/version-parametre, hvad der
-virkede og hvad der ikke gjorde — er flyttet til `claude/gsb-planlagte-features-spec.md` DEL A som **A4**,
-per proces-reglen i `claude/START-HER.md` (blokerende åbent spørgsmål får sit eget nummererede punkt).
+virkede og hvad der ikke gjorde — er flyttet til `docs/planlagte-features-spec.md` DEL A som **A4**,
+per proces-reglen i `docs/START-HER.md` (blokerende åbent spørgsmål får sit eget nummererede punkt).
 
 Status: **teknisk gennembrud — se A4 i spec-filen for den fulde, opdaterede status.** Ikke bygget som
 feature, og ikke bestemt om det bliver en Dream Team-stat, et separat trænerværktøj, eller begge dele.
@@ -99,7 +99,7 @@ ikke er rod i win% og statistik! for alt", blev dette undersøgt grundigt. Konkl
   uafhængigt (`vinder`-feltet er altid korrekt udfyldt på hver enkelt række) — det er kun
   hold-/kategori-NIVEAU-optællingen i `runAnalyse` der havde problemet, beskrevet nedenfor.
 - **Dream Teams RIGTIGE pointberegning har ALDRIG været berørt.** Bekræftet ved at genlæse
-  `GSB_DREAM_TEAM_PROJECT_BRIEF.md`'s arkitektur: Spillerpoint-arket beregnes med SUMIFS der matcher på
+  `docs/dream-team-brief.md`'s arkitektur: Spillerpoint-arket beregnes med SUMIFS der matcher på
   spillernavn i Resultater' `Hjemme`/`Ude`-kolonner og summerer `Point (Hjemme)`/`Point (Ude)`
   (0/1-sejrsmarkører) — denne mekanisme læser IKKE sæt-score-kolonnerne (`Sæt 1-3`) overhovedet, og er
   derfor fuldstændig immun over for at nogle rækker har tomme sæt-felter. Dream Teams stilling/point har
@@ -129,7 +129,7 @@ ikke er rod i win% og statistik! for alt", blev dette undersøgt grundigt. Konkl
   korrekt-parrede rækker med IDENTISKE score/matchKey for begge doubleparter. Mønstret med tomme
   sæt-felter er altså et levn fra hvordan 25/26-arket oprindeligt blev udfyldt/konverteret historisk — det
   vil ikke gentage sig for data der importeres fremover med det nuværende script.
-- **RETTET I DEN RIGTIGE, SHIPPEDE `netlify/functions/analyse.js` (2026-08-29):** Chris bad eksplicit om
+- **RETTET I DEN RIGTIGE, SHIPPEDE `apps/netlify-prod/netlify/functions/analyse.js` (2026-08-29):** Chris bad eksplicit om
   at få bekræftet og rettet det samme i produktionskoden ("Du må rigtig gerne kigge på det shippede kode
   for at se om det passer" → "Fix det gerne tak :)"). Læste den rigtige fil linje for linje: linje 76
   havde PRÆCIS samme sæt-score-baserede `matchKey` som previewets gamle, buggede version. Bekræftede også
@@ -139,8 +139,8 @@ ikke er rod i win% og statistik! for alt", blev dette undersøgt grundigt. Konkl
   featuren) i stedet for sæt-score-tekst. Valideret ved at køre den FAKTISKE patchede handler-kode (ikke
   en reimplementering) mod de rigtige `resultater_2526.csv`/`spillerpoint_2526.csv`-filer via Node.js —
   output matcher tal-for-tal previewets validerede tal.
-  **[Denne bug-fix er nu bekræftet reelt shippet til den rigtige, deployede `netlify-tool-prod`-mappe —
-  se `claude/gsb-driftlog.md`, "Niende runde", punkt 6, for den autoritative status. Den oprindelige
+  **[Denne bug-fix er nu bekræftet reelt shippet til den rigtige, deployede `apps/netlify-prod/`-mappe —
+  se `docs/historik/driftlog.md`, "Niende runde", punkt 6, for den autoritative status. Den oprindelige
   "rigtig, shippede fil"-formulering her var i første omgang fejlagtig (fixet lå kun i en uploadet
   arbejdskopi, ikke i selve produktionsmappen) — se "RETTELSE 2026-09-03 (niende runde)" i driftloggen
   for hele historikken bag den forveksling.]**
@@ -159,8 +159,8 @@ hele sæsonen, uanset preset.
   fra runde-filtreringen (altid inkluderet, uanset rundeMin/rundeMax). Feltet stod tomt for 2025/26 —
   udfyldt nu med `ikkeSlutspilHold: ['GSB 3', 'GSB 4']`. Rettelsen sker på RÆKKE-niveau (før spiller-,
   hold- og kategori-aggregering), så alle tre niveauer er automatisk konsistente.
-- **I den rigtige, shippede `netlify/functions/analyse.js`** findes denne per-sæson-konfigurerbare
-  mekanisme nu OGSÅ (se `claude/gsb-driftlog.md`, "Niende runde", punkt 6 — den rigtige `analyse.js` bruger
+- **I den rigtige, shippede `apps/netlify-prod/netlify/functions/analyse.js`** findes denne per-sæson-konfigurerbare
+  mekanisme nu OGSÅ (se `docs/historik/driftlog.md`, "Niende runde", punkt 6 — den rigtige `analyse.js` bruger
   siden niende runde samme `ikkeSlutspilHold`-query-parameter-mønster som previewet, sammen med en ny
   multi-sæson `analyse.html`). Tidligere var der her en simplere, hardkodet
   `ROUND_FILTER_EXEMPT_HOLD = new Set(['GSB 3', 'GSB 4'])`-løsning i selve funktionen — den er siden
@@ -169,7 +169,7 @@ hele sæsonen, uanset preset.
   og GSB 2 (som HAR en reel opdeling) ændrer sig korrekt mellem grundspil/slutspil/hele sæsonen, mens
   GSB 3 (53S/37T) og GSB 4 (68S/36T) nu står fuldstændig fast på hele-sæson-tallene uanset preset.
 
-Status: **rettet i previewet OG i den rigtige, shippede `netlify/functions/analyse.js` (bekræftet live i
+Status: **rettet i previewet OG i den rigtige, shippede `apps/netlify-prod/netlify/functions/analyse.js` (bekræftet live i
 produktion, se driftloggen).**
 
 ## Relateret idé: sammenligning på tværs af sæsoner i Statistik
@@ -207,7 +207,7 @@ praksis kun GSB 1-4 seniorholdenes kampe, fordi det er dem der er relevante for 
 statistik" i dag er derfor reelt "de kampe Chris gad taste ind af hensyn til fantasyligaen" — ikke et
 fuldt billede af klubben, og slet ikke ungdom.
 
-**AFKLARET OG LANDET 2026-08-31, se `claude/gsb-planlagte-features-spec.md` B3** for det fulde,
+**AFKLARET OG LANDET 2026-08-31, se `docs/planlagte-features-spec.md` B3** for det fulde,
 konkret aftalte design (placering i nav, Alle/Ung/Sen/Vet-filtrering, `AlleResultater`-fane,
 scheduled sync mandag morgen). Afsnittet her er bevaret som baggrund/historik for selve idé-diskussionen.
 
@@ -223,7 +223,7 @@ noget Dream Team-scoringen er afhængig af. I stedet:
   ALDRIG fra denne fane, og omvendt.
 
 **Ungdom kommer ind via allerede valideret groundwork:** klub-ID-kæden (`badmintonPlayerTeams` →
-`badmintonPlayerTeamFights` → `badmintonPlayerTeamMatch`, se `NEMBADMINTON_API_NOTES.md`) beviste live at
+`badmintonPlayerTeamFights` → `badmintonPlayerTeamMatch`, se `docs/nembadminton-api.md`) beviste live at
 ALLE klubbens holdkampe — inkl. en lang række U9-U19-ungdomshold — kan findes uden login. Det betyder det
 nye generelle lag ikke behøver samme manuelle matchId-indtastning som Dream Team-siden — det kan i praksis
 auto-importeres for hele klubben, ungdom inklusive, med en ny (separat) Netlify-funktion.
@@ -236,11 +236,11 @@ auto-importeres for hele klubben, ungdom inklusive, med en ny (separat) Netlify-
    Spillerpoint/Dream Team.
 4. Resultater-fanen og hele Dream Team-pipelinen røres slet ikke i denne proces.
 
-**Direkte relateret til kampkalender-idéen (se `claude/gsb-feature-idebank.md`, Kampkalender-widget/B1):**
+**Direkte relateret til kampkalender-idéen (se `docs/idebank-feature.md`, Kampkalender-widget/B1):**
 den nye `AlleResultater`-fane kan meget vel være den SAMME datakilde som kalender-widgettens ugentlige
 past-match-sync — én ugentlig sync-mekanisme, to formål: generel klubstatistik + kalendervisning.
 
-Status: **AFKLARET og lagt fast som B3 i `gsb-planlagte-features-spec.md` (2026-08-31)** — se den fil
+Status: **AFKLARET og lagt fast som B3 i `docs/planlagte-features-spec.md` (2026-08-31)** — se den fil
 for det aktuelle, konkrete design. Intet bygget endnu, afventer "byg det".
 
 ## 24/25-sæsonens Dream Team-data: rekonstrueret via API + krydstjekket mod det gamle ark — GENNEMFØRT (2026-08-29)
@@ -298,7 +298,7 @@ udeladt af totalerne (derfor 310/312 og 232/234 i stedet for præcis 312/234) og
 leverede CSV.
 
 **Konsekvens — samme walkover-gab findes formentlig i den RIGTIGE, live `hent-resultater.js`:** koden
-(`netlify/functions/hent-resultater.js`, linje 148-154) beregner vinder udelukkende ud fra sætoptælling
+(`apps/netlify-prod/netlify/functions/hent-resultater.js`, linje 148-154) beregner vinder udelukkende ud fra sætoptælling
 (`homeSetWins > guestSetWins ? 'Hjemme' : guestSetWins > homeSetWins ? 'Ude' : '?'`) — ingen særlig
 håndtering af `"Ikke fremmødt"`. Ved en walkover ville denne kode altså producere `Vinder: '?'`, hvilket
 hverken matcher `"Hjemme"` eller `"Ude"` i noget efterfølgende logik (Point-kolonner, SUMIFS, dedup).
@@ -318,13 +318,13 @@ samme kolonneformat som Resultater-fanen, med en ekstra Note-kolonne der markere
 2 uafgjorte kampe) sendt til Chris som CSV (`resultater_2425_gsb1-3_rekonstrueret.csv`).
 
 **Ikke gjort endnu:**
-- `alias_2425`-navnelisten fra `GSB_NAVNE_ALIAS_OG_ANOMALIER.json` er IKKE anvendt på datasættet endnu —
+- `alias_2425`-navnelisten fra `data/navne-alias.json` er IKKE anvendt på datasættet endnu —
   spillernavnene i CSV'en er de rå Nembadminton-navne, ikke matchet mod Tilmeldinger-formatet.
 - Intet rigtigt 2024/25 Google Sheet er oprettet, og `seasons.js`'s 24/25-placeholder er urørt.
 - Walkover-gabet i den rigtige `hent-resultater.js` er ikke rettet.
 
 Status: **research gennemført og valideret, resultat leveret som fil.** Intet rørt i de rigtige
-Dropbox/Netlify-filer under selve rekonstruktionsarbejdet (kun undersøgt/læst `hent-resultater.js` for at
+produktionsfiler under selve rekonstruktionsarbejdet (kun undersøgt/læst `hent-resultater.js` for at
 sammenligne dens logik — ingen ændring foretaget).
 
 ## Brainstorm: spilleranalyse-/rankings-idéer og statistik-apps (uprioriteret, ikke besluttet)
@@ -352,7 +352,7 @@ de ikke går tabt.
     single-digit til lave 20'ere pr. sæson) — det gør sæsonerne sammenlignelige og en samlet
     flersæsons-rangering meningsfuld.
   - **RETTELSE 2026-08-31 — manglede 1,5x-pointreglen for GSB 3./4. hold i 24/25-genberegningen.**
-    `GSB_DREAM_TEAM_PROJECT_BRIEF.md` fastslår Dream Teams officielle regel: "1 point pr. sejr ... 1,5
+    `docs/dream-team-brief.md` fastslår Dream Teams officielle regel: "1 point pr. sejr ... 1,5
     point hvis spilleren er på GSB 3./4. hold". 25/26-tallene har altid været korrekte (de kommer fra det
     rigtige Spillerpoint-ark, som allerede regner med 1,5x — bekræftet direkte i `resultater_2526.csv`s
     `Point (Hjemme/Ude)`-kolonner: GSB 1/2 giver `1`, GSB 3/4 giver `1,5`). Men den manuelle
@@ -414,7 +414,7 @@ de ikke går tabt.
     men rækkefølge og hvem der lige akkurat kommer med varierer. Minimumsgrænse er simplest at forklare
     men kasserer data og skaber en hård "klippe" ved grænsen; Wilson er stort set lige så simpel som
     Bayesiansk i en Sheets-formel og har ingen vilkårlig K-parameter at vælge. **Langsigtet, mest
-    robuste svar: B4's ELO-ratingsystem** (se `claude/gsb-kampsystem-idebank.md`) — en ELO-rating
+    robuste svar: B4's ELO-ratingsystem** (se `docs/idebank-kampsystem.md`) — en ELO-rating
     håndterer i forvejen både kampantal (K-faktor-opdatering regner naturligt mod middelværdien ved få
     kampe) OG modstanderstyrke (i modsætning til alle tre ovenstående, som kun ser på sejr/tab, ikke hvor
     svær modstanderen var) — når/hvis B4 bygges, kunne den samme ELO-rating potentielt genbruges direkte
@@ -441,21 +441,21 @@ de ikke går tabt.
 - Klub-niveau stats uafhængigt af Dream Team: samlet vindprocent for klubben på tværs af alle hold i en
   sæson — kan være relevant specifikt for bestyrelsen, adskilt fra fantasy-ligaen. **Landet som B3, se
   planlagte-features-spec.md.**
-- Automatisk afbudsregistrering via `cancellationCollectorPublic` (se `NEMBADMINTON_API_NOTES.md`) — hvis
+- Automatisk afbudsregistrering via `cancellationCollectorPublic` (se `docs/nembadminton-api.md`) — hvis
   GSB opretter/allerede har en CancellationCollector i Nembadminton, kunne "manglende spillere pr. runde"
   potentielt trækkes automatisk i stedet for at blive vurderet manuelt.
 
-**Andre potentielle statistik-apps (jf. app-vælger-idéen i `claude/gsb-feature-idebank.md`):**
+**Andre potentielle statistik-apps (jf. app-vælger-idéen i `docs/idebank-feature.md`):**
 - Ungdomsstatistik-app: nu hvor ungdomskampe kan hentes samme vej som seniorkampe (se
-  `NEMBADMINTON_API_NOTES.md`), kunne en helt ny, separat app vise ungdomsspilleres resultater/udvikling
+  `docs/nembadminton-api.md`), kunne en helt ny, separat app vise ungdomsspilleres resultater/udvikling
   på tværs af alle U9-U19-rækker — potentielt meget nyttigt for trænerne specifikt. **Landet som en del
   af B3 (Klubstatistik dækker nu ungdom, senior og veteran samlet).**
-- Ranglistepoint-udvikling: `memberStats`/`highestPointGain` (se `NEMBADMINTON_API_NOTES.md`) kunne
+- Ranglistepoint-udvikling: `memberStats`/`highestPointGain` (se `docs/nembadminton-api.md`) kunne
   bruges til en simpel app der viser en spillers ranglistepoint over tid — uafhængig af Dream Team,
   relevant for både senior og ungdom. Bemærk: samme begrænsning som Tilmeldingsniveau (se
-  `claude/generel-idebank.md`) kan gælde her — bør tjekkes om HS/HD/MxH-historikken også stopper for
+  `docs/idebank-generel.md`) kan gælde her — bør tjekkes om HS/HD/MxH-historikken også stopper for
   tidligt til at være retvisende som "aktuel" graf, eller om kun Tilmeldingsniveau-snapshottet er ramt.
-- Kampkalender/-oversigt: **landet som B1**, se `claude/gsb-planlagte-features-spec.md`.
+- Kampkalender/-oversigt: **landet som B1**, se `docs/planlagte-features-spec.md`.
 
 Status: rå brainstorm, ikke prioriteret, intet kodet.
 

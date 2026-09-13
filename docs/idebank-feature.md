@@ -5,16 +5,16 @@ Features vi har diskuteret men bevidst udskudt. Læs denne før næste feature-r
 **STANDING REGEL:** Intet i denne fil må implementeres/kodes før Chris eksplicit siger til.
 
 **OPDATERET 2026-09-04 — filen er nu splittet i fem for at gøre løbende opdateringer hurtigere:**
-- **`claude/gsb-feature-idebank.md`** (denne fil) — features der ikke er statistik/spilleranalyse og
+- **`docs/idebank-feature.md`** (denne fil) — features der ikke er statistik/spilleranalyse og
   ikke Kampsystem: Tilmelding, nav/IA, Søndagstræning, Kampkalender, Betaling.
-- **`claude/gsb-statistik-idebank.md`** (NY, udskilt 2026-09-04) — al statistik-/spilleranalyse-/
+- **`docs/idebank-statistik.md`** (NY, udskilt 2026-09-04) — al statistik-/spilleranalyse-/
   rankings-relateret idéarbejde (Board-position, win%-dedup, "værdi"/"effektivitet"-ranking, 24/25-data-
   rekonstruktion, B3-baggrund m.m.) — samme type arbejde går igen på tværs af flere features, så det gav
   mere mening at samle det ét sted end at holde det spredt.
-- **`claude/gsb-kampsystem-idebank.md`** — alt om ELO-rating/Kampsystem-appen (B4).
-- **`claude/gsb-driftlog.md`** — kronologisk log over hvad der er shippet/testet/rettet i de rigtige
-  `netlify-tool-prod`-filer, runde for runde.
-- **`NEMBADMINTON_API_NOTES.md`** (opdateret 2026-09-04) — al ren Nembadminton-API-teknisk-reference,
+- **`docs/idebank-kampsystem.md`** — alt om ELO-rating/Kampsystem-appen (B4).
+- **`docs/historik/driftlog.md`** — kronologisk log over hvad der er shippet/testet/rettet i
+  produktionens `apps/netlify-prod/`-filer, runde for runde.
+- **`docs/nembadminton-api.md`** (opdateret 2026-09-04) — al ren Nembadminton-API-teknisk-reference,
   inkl. den tidligere "Automatisk kamp-opdagelse" og "Fuld API-gennemgang" fra denne fil, flyttet dertil
   fordi det er reference-materiale der bruges på tværs af features, ikke en feature-idé i sig selv.
 
@@ -22,11 +22,11 @@ Indholdet der er tilbage her er uændret i selve teksten (kun de udskilte afsnit
 
 ## Sæson 26/27: Tilmelding sat op i preview med den rigtige seniortrup — BYGGET I PREVIEW (2026-08-31)
 
-**Baggrund:** Chris fik klubbens spillerliste for 26/27 (Zakobo-eksport, `GSB Dream Team/26-27/Zakobo  1150 Senior Turnering (1).xlsx`, 43 spillere) og bad om at få tilmeldingen sat op nu. Problemet: 26/27's `Spillerpoint`-ark i det rigtige Google Sheet er stadig tomt (ingen kampe spillet endnu), og `spillere.js` henter udelukkende navne derfra (`Spillerpoint!A2:A200`) — så de rigtige dropdown-menuer på `tilmelding.html` ville i dag vise 0 spillere.
+**Baggrund:** Chris fik klubbens spillerliste for 26/27 fra en Zakobo-eksport i det eksterne dataarkiv (43 spillere) og bad om at få tilmeldingen sat op nu. Problemet: 26/27's `Spillerpoint`-ark i det rigtige Google Sheet er stadig tomt (ingen kampe spillet endnu), og `spillere.js` henter udelukkende navne derfra (`Spillerpoint!A2:A200`) — så de rigtige dropdown-menuer på `tilmelding.html` ville i dag vise 0 spillere.
 
 **Afklaret med Chris (AskUserQuestion):** arket er allerede live i Google Sheets, men vi skal *kun* forberede i previewet indtil videre — ikke bygge/deploye til den rigtige side.
 
-**Hvad blev lavet (kun i `gsb-claude-preview-kilde/build3.py` + `tilmelding_source.html`, ikke i `netlify-tool-prod`):**
+**Hvad blev lavet (kun i `kampsystem/build3.py` + `kampsystem/tilmelding_source.html`, ikke i `apps/netlify-prod/`):**
 - Tilføjede en ny konstant `PLAYERS_2627` i `build3.py` med de 43 navne fra Zakobo-filen (kun navne — mail/tlf/adresse fra eksporten er bevidst IKKE taget med).
 - Preview-mock'en for `tilmelding.html` (som opsnapper `fetch`-kaldet til `/.netlify/functions/spillere`) bruger nu `PLAYERS_2627` i stedet for den gamle 25/26-spillerliste (`KNOWN_PLAYERS_JSON`, som stadig bruges uændret til `analyse.html`s kamp-matching — det er en helt separat brug).
 - Ny dedikeret preview-banner på tilmeldingssiden: "spillerlisten er den rigtige 26/27-seniortrup (Zakobo-eksport)" i stedet for den gamle "rigtige data fra 2025/26-arket"-tekst, så det er tydeligt for Chris hvilken sæsons data der vises.
@@ -44,17 +44,17 @@ i previewet:
   alle 43 navne mod 24/25+25/26 Resultater — HS/DS/HD/DD-kategorierne fortæller entydigt hvilket køn en
   spiller er, og MD (mixed double)-parringer er løst ved iterativ udelukkelse ift. allerede kendte køn.
   36 af 43 er bekræftet på denne måde. Undervejs krydstjekket mod
-  `GSB_NAVNE_ALIAS_OG_ANOMALIER.json` (Zakobo bruger fulde navne, Resultater ofte kortere/andre
+  `data/navne-alias.json` (Zakobo bruger fulde navne, Resultater ofte kortere/andre
   stavemåder) — fandt en hidtil udokumenteret variant af samme mønster: "Rasmus Holmlykke Andersen"
   (Zakobo) = "Rasmus Holmslykke Andersen" (Resultater), nu tilføjet til alias-filen.
 - **7 spillere havde INGEN kamphistorik** (nye for 26/27) og blev derfor gættet ud fra dansk/skandinavisk
   navnekonvention: Andreas Drasbek (M), Camilla Bagge (K), Louis Toftlund (M), Michelle Liljengren (K,
   kendt fra tidligere sæsoner uden kampe), Sverre Stütz (M), Sylvester Østberg (M), Theodor Lumby (M).
   **Chris har 2026-08-31 bekræftet at alle 7 gæt er korrekte** — opdateret i `koen_2627_udledt` i
-  `GSB_NAVNE_ALIAS_OG_ANOMALIER.json`. Alle 43 spilleres køn er dermed nu bekræftet, ingen usikre gæt tilbage.
+  `data/navne-alias.json`. Alle 43 spilleres køn er dermed nu bekræftet, ingen usikre gæt tilbage.
 - Rebuildet og genpubliceret previewet igen.
 
-**Ikke rørt:** den rigtige `tilmelding.html`/`spillere.js` i `netlify-tool-prod`, det rigtige 26/27 Google
+**Ikke rørt:** den rigtige `tilmelding.html`/`spillere.js` i `apps/netlify-prod/`, det rigtige 26/27 Google
 Sheet, ingen Netlify-deploy. **Bemærk:** den rigtige produktionsside har samme underliggende svaghed
 (ingen kønsopdeling) som blev fundet i previewet — den er blot ikke synlig endnu fordi 26/27's
 `Spillerpoint`-ark er tomt. Skal rettes i den rigtige `spillere.js`/`tilmelding.html` før 26/27-sæsonen
@@ -62,7 +62,7 @@ går live, men kræver en beslutning om hvor kønsdata skal ligge permanent (Zak
 og fremtidige nye spillere uden kamphistorik kan ikke udledes automatisk — kræver enten en manuel
 kønskolonne et sted, eller at trænerne/tilmeldingsansvarlig bekræfter manuelt ved import af en ny sæson).
 
-**OPDATERING 2026-09-04 — dette er nu faktisk shippet til produktion:** se `claude/gsb-driftlog.md`,
+**OPDATERING 2026-09-04 — dette er nu faktisk shippet til produktion:** se `docs/historik/driftlog.md`,
 "Niende runde", punkt 4/5 — den rigtige `spillere.js`/`tilmelding.html`/`tilmeld.js` har nu kønsopdelte
 dropdowns (med den hardkodede 26/27-seniortrup som bundliste, sammenflettet med `Spillerpoint`) og
 betalt/gratis-valg. Verificeret direkte mod de rigtige produktionsfiler 2026-09-04, se driftloggens
@@ -73,8 +73,8 @@ betalt/gratis-valg. Verificeret direkte mod de rigtige produktionsfiler 2026-09-
 ## Navigations-/informationsarkitektur: tre lag + app-landing — SHIPPET TIL PRODUKTION
 
 Bygget først i Claude-previewet (tre-lags nav: app-vælger → sider inden for app → faner inden for side,
-plus en ny landing-side), derefter shippet til de rigtige `netlify-tool-prod`-filer 2026-09-03 som ét
-fælles `gsb-nav.js`-script (samme mønster som `seasons.js`) — se `claude/gsb-driftlog.md`, afsnittet
+plus en ny landing-side), derefter shippet til de rigtige `apps/netlify-prod/`-filer 2026-09-03 som ét
+fælles `gsb-nav.js`-script (samme mønster som `seasons.js`) — se `docs/historik/driftlog.md`, afsnittet
 "Nav/IA-omlægning shippet til produktion", for den fulde byggehistorik og teknisk begrundelse.
 
 Status: **shippet og verificeret live.** Ingen åben del af denne feature-idé tilbage — kun mindre,
@@ -134,20 +134,20 @@ tilføjes til `gsb-nav.js`s `APPS`-liste den dag den rigtige backend/side bygges
 (2026-09-03) at han på et tidspunkt vil have den færdiggjort med en rigtig spillerliste og backend — ikke
 et "byg det"-signal, kun en fremtidig prioritet.
 
-Status: **bygget og publiceret i Claude-previewet**, ren eksempeldata. Intet rørt i de rigtige
-Dropbox/Netlify-filer.
+Status: **bygget og publiceret i Claude-previewet**, ren eksempeldata. Intet rørt i
+produktionens Netlify-filer.
 
 ## Kampkalender-widget: kommende + afsluttede kampe, forskelligt hold-scope til Dream Team vs. Statistik — LANDET SOM B1
 
 Idé rejst af Chris: en kalendervisning der viser både kommende og allerede spillede holdkampe, med
 resultat på de spillede. Scope, datakilder (`calendarEvents` til kommende, klub-ID-kæden til afsluttede
-— se `NEMBADMINTON_API_NOTES.md`) og ydelsesdesign (ugentlig scheduled-function-sync frem for on-demand)
-er fuldt afklaret og flyttet til **B1** i `claude/gsb-planlagte-features-spec.md`. Aflysningshåndtering
+— se `docs/nembadminton-api.md`) og ydelsesdesign (ugentlig scheduled-function-sync frem for on-demand)
+er fuldt afklaret og flyttet til **B1** i `docs/planlagte-features-spec.md`. Aflysningshåndtering
 (tidligere blokerende A1) er afklaret 2026-09-03: Chris besluttede at ignorere aflyste kampe helt, ikke
 bygge særskilt detektions-/sletningslogik — B1 er dermed teknisk klar til byg-signal, men intet er
 kodet endnu.
 
-Direkte relateret til `claude/gsb-statistik-idebank.md`s B3-afsnit — den foreslåede `AlleResultater`-fane
+Direkte relateret til `docs/idebank-statistik.md`s B3-afsnit — den foreslåede `AlleResultater`-fane
 kan meget vel blive samme datakilde som denne kalenders ugentlige past-match-sync.
 
 Status: **AFKLARET, landet som B1** — se spec-filen for det aktuelle design. Intet bygget/deployet.
@@ -155,15 +155,15 @@ Status: **AFKLARET, landet som B1** — se spec-filen for det aktuelle design. I
 ## GSB Dream Team — Betalt vs. Gratis-tilmelding + MobilePay-betaling — LANDET SOM B5, SHIPPET
 
 UI'et blev først bygget i previewet, det fulde tekniske design blev aftalt som B5 i
-`claude/gsb-planlagte-features-spec.md`, og hele B5 er nu shippet til produktion (niende og tiende
-runde, se `claude/gsb-driftlog.md`) — verificeret direkte mod de rigtige filer 2026-09-04
+`docs/planlagte-features-spec.md`, og hele B5 er nu shippet til produktion (niende og tiende
+runde, se `docs/historik/driftlog.md`) — verificeret direkte mod de rigtige filer 2026-09-04
 ("Tolvte runde" i driftloggen). Kort status her for at undgå duplikering.
 
 ## GSB Dream Team — "Honorable mentions" for høj-scorende gratis-deltagere — LANDET SOM DEL AF B5, SHIPPET
 
 Inklusionsreglen (alle gratis-deltagere hvis pointtotal ville placere dem i sæsonens samlede top 5 vises
 i en "Honorable mentions"-sektion) er bygget og shippet sammen med resten af B5 — se
-`claude/gsb-driftlog.md`, "Tiende runde", for byggedetaljerne.
+`docs/historik/driftlog.md`, "Tiende runde", for byggedetaljerne.
 
 ## GSB Dream Team forside — rækkefølge/prioritering af sider (opdatering 2026-08-31)
 
@@ -174,8 +174,8 @@ dag, men runde 1 starter allerede torsdag, så tilmeldingsperioden bliver kort o
 formentlig med selve runde 1's spilleperiode, hvilket gør det mindre oplagt at have Tilmelding
 som det første man ser lige nu.
 
-**Afgrænsning bekræftet:** ændringen skal KUN laves i Claude-previewet for nu, ikke i de rigtige
-Dropbox/Netlify-filer — Chris flytter evt. selv den rigtige side, når han er klar.
+**Afgrænsning bekræftet:** ændringen skal KUN laves i Claude-previewet for nu, ikke i
+produktionens Netlify-filer — Chris flytter evt. selv den rigtige side, når han er klar.
 
 Foreslået ny rækkefølge (Claude-forslag, umiddelbart godkendt af Chris som "en god rækkefølge"):
 Historisk stilling → Statistik → Tilmelding → Admin.
