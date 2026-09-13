@@ -1,0 +1,19 @@
+{
+  "key": "2018:340511",
+  "season": 2018,
+  "matchId": 340511,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "FKIF Frederiksberg 2",
+  "ageGroupId": "4",
+  "leagueGroupId": "11418",
+  "roundDate": "2019-01-27",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2018,11418,1,8,,340511,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2018-340511.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:25:00.053Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2018,11418,1,8,,340511,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U13 2018/2019\nVis rækker\n\n\nU13 CD 4 Spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t340511\nRunde\t6 27-01-2019\nTid\tsø 27-01-2019 10:00\nSpillested\tFrederiksberghal 3\nFrederiksberghallerne, Jens Jessensvej 20\n2000 Frederiksberg\nHjemmehold\tFKIF Frederiksberg 2\nLotte Holten\nlhm@regioner.dk\n27 84 11 41\nUdehold\tGladsaxe Søborg 1\nMartin Roed\nRoed.martin@gmail.com\n20457741\nResultat\t4-2\nPoint\t3-0\n\tFKIF Frederiksberg 2\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. S\t\nJonas Holten-Nielsen\n\t\nMaria Søberg Roed\n\t21 - 9\t21 - 7\t\t\n2. S\t\nAlexander Bork Stensgaard\n\t\nTobias Holm-Hansen\n\t7 - 21\t14 - 21\t\t\n3. S\t\nMayssane Benali\n\t\nLinus Bergstrøm Hesselballe\n\t21 - 6\t21 - 5\t\t\n4. S\t\nElliot Schytt\n\t\nFreja Bygsø\n\t21 - 16\t9 - 21\t21 - 11\t\n1. D\t\nJonas Holten-Nielsen\nAlexander Bork Stensgaard\n\t\nTobias Holm-Hansen\nLinus Bergstrøm Hesselballe\n\t21 - 16\t21 - 13\t\t\n2. D\t\nMayssane Benali\nElliot Schytt\n\t\nFreja Bygsø\nMaria Søberg Roed\n\t13 - 21\t12 - 21\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

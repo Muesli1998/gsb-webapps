@@ -1,0 +1,19 @@
+{
+  "key": "2017:302443",
+  "season": 2017,
+  "matchId": 302443,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Hillerød 4",
+  "ageGroupId": "5",
+  "leagueGroupId": "9595",
+  "roundDate": "2017-11-19",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2017,9595,1,8,,302443,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2017-302443.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:25:44.203Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2017,9595,1,8,,302443,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH,BADSJ,DGI-NSJ,DGI-STS,DGI-MVS U15 2017/2018\nVis rækker\n\n\nU15 M 4 spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t302443\nRunde\t4 19-11-2017\nTid\tsø 19-11-2017 13:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 1\nDitte Nyeng\ndittenyeng@gmail.com\n61691577\nUdehold\tHillerød 4\nLouise Storgaard Nielsen\nLouismus78@hotmail.com\n22544189\nResultat\t3-4\nPoint\t1-2\n\tGladsaxe Søborg 1\tHillerød 4\t1\t2\t3\tVinder W.O.\n1. S\t\nJakob Buus Nyeng\n\t\nAndreas Lang-Hansen\n\t21 - 19\t23 - 21\t\t\n2. S\t\nJens Undén\n\t\nCarl Claesson (EU)\n\t21 - 12\t21 - 18\t\t\n3. S\t\nMalte Hvid Ribergaard\n\t\nDavid Rasmussen\n\t14 - 21\t21 - 18\t24 - 26\t\n4. S\t\nViggo Kongslev Hilbert\n\t\nJasmin Nielsen\n\t21 - 16\t15 - 21\t13 - 21\t\n1. D\t\nJakob Buus Nyeng\nJens Undén\n\t\nAndreas Lang-Hansen\nDavid Rasmussen\n\t18 - 21\t23 - 21\t21 - 18\t\n2. D\t\nViggo Kongslev Hilbert\nMalte Hvid Ribergaard\n\t\nCarl Claesson (EU)\nJasmin Nielsen\n\t19 - 21\t15 - 21\t\t\n\nGolden Set\nHD\t\nJakob Buus Nyeng\nMalte Hvid Ribergaard\n\t\nCarl Claesson (EU)\nAndreas Lang-Hansen\n\t\n15 - 21\n\t\t\t\n\n\nReserver\nGladsaxe Søborg 1\tHillerød 4\n\n\nViggo Kongslev Hilbert\nfor Tobias Weinreich Hansen\n\n\t\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

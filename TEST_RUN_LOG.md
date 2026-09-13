@@ -221,3 +221,15 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 - En særskilt read-only audit (`scripts/audit-browser-recovery-candidates.mjs`) sammenholder de gemte payloads med `team_matches` og måler, hvilke manglende hjemme/ude-, resultat- og pointfelter der kan dokumenteres direkte.
 - Ved første måling var 726 dynamiske kampdetaljer tilgængelige; 670 havde udfyldelige hjemme/ude-felter og 640 havde udfyldelige resultater/point. Tallene skal regenereres, når ungdomskørslen er færdig.
 - API-/felt-auditten i `results/api-gap-audit.md` viser fortsat, at status `complete` ikke i sig selv dokumenterer udfyldte felter. Feltdækning skal derfor valideres særskilt.
+
+## 2026-09-13 – ungdomskørsel afsluttet og feltsynkronisering
+- `scripts/run-youth-browser-fallback.mjs` gennemførte 1.022 køposter. 1.020 blev dynamisk verificeret; 2 (505217 og 505219, begge 2025 U09/U15-spor) viste ingen kampdetalje og står som dokumenterede huller.
+- `scripts/sync-youth-browser-matches.mjs` synkroniserede 1.020/1.020 verificerede ungdomspayloads til `team_matches`. Ingen kamp-ID'er manglede i databasen.
+- De tidligere 56 browserpayloads blev gen-synkroniseret: 56/56 opdateret.
+- Efter synkronisering: 998 `browser_verified`, 39 `browser_verified_no_result` (resultatfeltet er eksplicit `-`), 186 `api_error`, 174 `missing_players`, 1.374 `complete`, 47 `corona_suspended`.
+- Faktisk felt-dækning: 1.737 mangler stadig resultatfelt, 366 mangler hjemme/ude; de verificerede browserpayloads har reduceret manglende hjemme/ude fra 1.386 til 366.
+- `results/browser-recovery-candidates.md` er regenereret og viser 0 yderligere dokumenterbare felter i de payloads, der allerede er synkroniseret.
+- Coverage-rapporten tæller nu både almindeligt `verified` og `youth_verified`: 1.440/1.444 køposter verificeret, 2 uden matchdetalje, 2 corona-suspenderede.
+- Walkoverkontrol: ungdomspayloads indeholder 863 eksplicitte W.O.-markeringer; den samlede normaliserede tabel har fortsat kun 3 walkoverfelter, fordi individuelle kampdata endnu ikke er fuldt parseret ind.
+- Walkovermarkering blev efterkontrolleret: teksten `Vinder W.O.` alene er en tabeloverskrift og tælles ikke som walkover. Kun den eksplicitte tekst `(Ikke fremmødt)` tælles. Det gav 58 dokumenterede ungdoms-walkovers; 57 havde en entydig vinder ud fra den viste holdscore. Samlet er 64 kø-walkovers og 57 med vinder; SQLite har nu 61 rækker med walkoverfelt.
+- Coverage-rapporten er opdateret efter ungdoms- og walkover-synkronisering.

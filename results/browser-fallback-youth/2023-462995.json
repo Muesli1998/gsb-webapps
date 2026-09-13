@@ -1,0 +1,19 @@
+{
+  "key": "2023:462995",
+  "season": 2023,
+  "matchId": 462995,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Gørlev 1",
+  "ageGroupId": "3",
+  "leagueGroupId": "16534",
+  "roundDate": null,
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,16534,1,8,,462995,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2023-462995.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:14:06.209Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,16534,1,8,,462995,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADDAN,DGI U11 2023/2024\nVis rækker\n\n\nDMU H - U11 3200 (4 spillere) Pulje 3\nStilling\nVis alle kampe\n\nKampnr\t462995\nRunde\t1 20-04-2024\nTid\tlø 20-04-2024 09:00\nSpillested\tBrande Hallerne\nÅgade\n7330 Brande\nHjemmehold\tGørlev 1\nJacob Crone Rasmussen\ngorlev.badm1nton.klub@gmail.com\n51359180\nUdehold\tGladsaxe Søborg 2\nRasmus Majborn\nrasmus.majborn@gmail.com\n41271614\nResultat\t1-5\nPoint\t0-4\n\tGørlev 1\tGladsaxe Søborg 2\t1\t2\t3\tVinder W.O.\n1. S\t\nEmil Rosenkilde Ladefoged\n\t\nMads Broholm\n\t16 - 21\t16 - 21\t\t\n2. S\t\nEmma Lundqvist\n\t\nMagne Gjervan Majborn\n\t20 - 22\t12 - 21\t\t\n3. S\t\nStorm Thers\n\t\nLaurits Schjerning Andersen\n\t19 - 21\t21 - 16\t16 - 21\t\n4. S\t\nSiri Dalsgaard\n\t\nAugust Toftager-Larsen\n\t5 - 21\t14 - 21\t\t\n1. D\t\nEmil Rosenkilde Ladefoged\nSebastian Bundgaard Keinicke\n\t\nMads Broholm\nAugust Toftager-Larsen\n\t18 - 21\t24 - 22\t16 - 21\t\n2. D\t\nEmma Lundqvist\nSiri Dalsgaard\n\t\nMagne Gjervan Majborn\nLuc Nørmark Jespersen\n\t21 - 14\t21 - 15\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

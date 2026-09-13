@@ -1,0 +1,19 @@
+{
+  "key": "2025:505240",
+  "season": 2025,
+  "matchId": 505240,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "Lyngby 1",
+  "ageGroupId": "2",
+  "leagueGroupId": "18506",
+  "roundDate": "2026-03-22",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18506,1,8,,505240,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2025-505240.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:05:08.798Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18506,1,8,,505240,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH,BADSJ U09 2025/2026\nVis rækker\n\n\nU09 D 3300 (3 spillere) BD (2. halvår) Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t505240\nRunde\t10 22-03-2026\nTid\tlø 21-03-2026 15:30\nSpillested\tBC37-Hallen\nStrandlodsvej 69\n2300 København S\nTelefon 32 97 08 96\nHjemmehold\tGladsaxe Søborg 3\nAnders Amelung\naamelung@gmail.com\n22837649\nUdehold\tLyngby 1\nAditi Goyal\nAditigoyal2086@gmail.com\n00000000\nResultat\t3-2\nPoint\t2-1\n\tGladsaxe Søborg 3\tLyngby 1\t1\t2\t3\tVinder W.O.\n1. S\t\nOscar Flyger\n\t\nAdam Plaza\n\t18 - 16\t15 - 12\t\t\n2. S\t\nOscar Flyger\n\t\nReyansh Goyal\n\t15 - 4\t15 - 11\t\t\n3. S\t\nWille Sangild\n\t\nNohr Friis Bach\n\t9 - 15\t13 - 15\t\t\n4. S\t\nSamuel Lynge\n\t\nMarius Kaptain Young\n\t15 - 6\t15 - 8\t\t\n1. D\t\nWille Sangild\nSamuel Lynge\n\t\nReyansh Goyal\nMarius Kaptain Young\n\t14 - 16\t5 - 15\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

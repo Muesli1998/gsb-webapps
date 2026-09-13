@@ -1,0 +1,19 @@
+{
+  "key": "2025:493430",
+  "season": 2025,
+  "matchId": 493430,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "Islands Brygge 2",
+  "ageGroupId": "4",
+  "leagueGroupId": "18139",
+  "roundDate": "2026-03-08",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18139,1,8,,493430,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2025-493430.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:07:23.506Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18139,1,8,,493430,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U13 2025/2026\nVis rækker\n\n\nU13 C 5300 (4 spillere) BD Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t493430\nRunde\t9 08-03-2026\nTid\tlø 07-03-2026 13:00\nSpillested\tGladsaxe ny Badmintonhal\nGladsaxevej 200\n2860 Søborg\nHjemmehold\tGladsaxe Søborg 3\nJesper Stensbo Knudsen\njesperstensbo@gmail.com\n23810023\nUdehold\tIslands Brygge 2\nSusanne Spang Jørgensen\nsannespj@gmail.com\n21637852\nResultat\t3-4\nPoint\t2-3\n\tGladsaxe Søborg 3\tIslands Brygge 2\t1\t2\t3\tVinder W.O.\n1. S\t\nLaurits Schjerning Andersen\n\t\nEvan Li\n\t17 - 21\t21 - 12\t21 - 13\t\n2. S\t\nKristian Almeida Møller\n\t\nWilliam Dose Kristensen\n\t18 - 21\t18 - 21\t\t\n3. S\t\nAnton Stensbo Knudsen\n\t\nLykke Ganesalingam\n\t20 - 22\t21 - 12\t21 - 12\t\n4. S\t\nLuc Nørmark Jespersen\n\t\nQinqin Yang\n\t17 - 21\t21 - 14\t21 - 6\t\n1. D\t\nLaurits Schjerning Andersen\nKristian Almeida Møller\n\t\nSebastian Cheng\nQinqin Yang\n\t15 - 21\t25 - 23\t19 - 21\t\n2. D\t\nPontus Einar Anker Mikkelsen\nAnton Stensbo Knudsen\n\t\nWilliam Dose Kristensen\nLykke Ganesalingam\n\t13 - 21\t17 - 21\t\t\n\nGolden Set\nHD\t\nLaurits Schjerning Andersen\nAnton Stensbo Knudsen\n\t\nSebastian Cheng\nWilliam Dose Kristensen\n\t\n18 - 21\n\t\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

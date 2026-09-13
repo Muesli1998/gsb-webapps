@@ -1,0 +1,19 @@
+{
+  "key": "2017:319545",
+  "season": 2017,
+  "matchId": 319545,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Holstebro 1",
+  "ageGroupId": "5",
+  "leagueGroupId": "10548",
+  "roundDate": null,
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2017,10548,1,8,,319545,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2017-319545.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:25:39.325Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2017,10548,1,8,,319545,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADDAN,DGI U15 2017/2018\nVis rækker\n\n\nDMU-Hold U15 M 4 Spillere 7. - 8. plads\nStilling\nVis alle kampe\n\nKampnr\t319545\nRunde\t2 15-04-2018\nTid\tsø 15-04-2018 11:30\nSpillested\tLillebælts hallerne\nFærøvej 74-76\n5500 Middelfart\nHjemmehold\tGladsaxe Søborg 1\nDitte Nyeng\ndittenyeng@gmail.com\n+4561691577\nUdehold\tHolstebro 1\nJesper Bunch Christensen\njbc@holstebro.dk\n22617888\nResultat\t2-4\n\tGladsaxe Søborg 1\tHolstebro 1\t1\t2\t3\tVinder W.O.\n1. S\t\nTobias Weinreich Hansen\n\t\nEmil Bunch Christensen\n\t26 - 24\t9 - 21\t21 - 23\t\n2. S\t\nJakob Buus Nyeng\n\t\nTobias Broberg Jensen\n\t16 - 21\t16 - 21\t\t\n3. S\t\nJens Undén\n\t\nAlexander Kvistgaard Fihl\n\t26 - 24\t21 - 11\t\t\n4. S\t\nMalte Hvid Ribergaard\n\t\nLasse Korsgaard\n\t16 - 21\t17 - 21\t\t\n1. D\t\nTobias Weinreich Hansen\nJakob Buus Nyeng\n\t\nTobias Broberg Jensen\nAlexander Kvistgaard Fihl\n\t21 - 18\t21 - 18\t\t\n2. D\t\nJens Undén\nMalte Hvid Ribergaard\n\t\nEmil Bunch Christensen\nLasse Korsgaard\n\t12 - 21\t16 - 21\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

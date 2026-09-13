@@ -1,0 +1,19 @@
+{
+  "key": "2019:373818",
+  "season": 2019,
+  "matchId": 373818,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Rødovre 1",
+  "ageGroupId": "3",
+  "leagueGroupId": "12798",
+  "roundDate": "2020-01-12",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12798,1,8,,373818,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2019-373818.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:23:51.374Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2019,12798,1,8,,373818,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U11 2019/2020\nVis rækker\n\n\nU11 - 3400 - 4 spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t373818\nRunde\t4 12-01-2020\nTid\tlø 11-01-2020 15:30\nSpillested\tRødovre Stadionhal\nElstedvej 40\n2610 Rødovre\nTelefon 36704515\nHjemmehold\tRødovre 1\nClaus Møldrup\nclaus@moeldrup.com\n31450388\nUdehold\tGladsaxe Søborg 1\nKlaus Hestehave\nklaus@hestehave.com\n30762930\nResultat\t0-6\nPoint\t0-3\n\tRødovre 1\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. S\t\nAndré Tornslev\n\t\nElias Hestehave\n\t11 - 21\t21 - 15\t19 - 21\t\n2. S\t\nWilliam Møldrup\n\t\nBertram Aavang Arvidson\n\t11 - 21\t14 - 21\t\t\n3. S\t\nAyden Chelik Yin Mam\n\t\nFreja Fan Fuglsang\n\t11 - 21\t13 - 21\t\t\n4. S\t\nEmil Ejstrup Pedersen\n\t\nAksel Egedal Kristensen\n\t18 - 21\t11 - 21\t\t\n1. D\t\nAndré Tornslev\nWilliam Møldrup\n\t\nElias Hestehave\nBertram Aavang Arvidson\n\t10 - 21\t8 - 21\t\t\n2. D\t\nEmil Ejstrup Pedersen\nAyden Chelik Yin Mam\n\t\nAksel Egedal Kristensen\nFreja Fan Fuglsang\n\t15 - 21\t11 - 21\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

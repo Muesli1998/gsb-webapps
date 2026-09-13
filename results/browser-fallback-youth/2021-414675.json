@@ -1,0 +1,19 @@
+{
+  "key": "2021:414675",
+  "season": 2021,
+  "matchId": 414675,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "FKIF Frederiksberg 1",
+  "ageGroupId": "5",
+  "leagueGroupId": "14157",
+  "roundDate": "2022-02-27",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2021,14157,1,8,,414675,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2021-414675.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:21:58.164Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2021,14157,1,8,,414675,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2021/2022\nVis rækker\n\n\nU15 4800 4 Spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t414675\nRunde\t7 27-02-2022\nTid\tsø 27-02-2022 15:00\nSpillested\tBC37-Hallen\nStrandlodsvej 69\n2300 København S\nTelefon 32 97 08 96\nHjemmehold\tGladsaxe Søborg 2\nMartin Roed\nroed.martin@gmail.com\n20457741\nUdehold\tFKIF Frederiksberg 1\nMichael Andersen\nma@group-solution.com\n20838377\nResultat\t6-0\nPoint\t3-0\n\tGladsaxe Søborg 2\tFKIF Frederiksberg 1\t1\t2\t3\tVinder W.O.\n1. S\t\nLinus Bergstrøm Hesselballe\n\t\nElliot Schytt\n\t21 - 12\t21 - 10\t\t\n2. S\t\nAnton Krog Søbygaard\n\t\nTheo Kjær\n\t21 - 18\t21 - 17\t\t\n3. S\t\nAksel Egedal Kristensen\n\t\nVincent Sakstrup Møller\n\t21 - 6\t21 - 4\t\t\n4. S\t\nFreja Bygsø\n\t\nNiels Moll Harboe\n\t21 - 17\t18 - 21\t21 - 18\t\n1. D\t\nFreja Bygsø\nMaria Søberg Roed\n\t\nElliot Schytt\nTheo Kjær\n\t21 - 10\t21 - 7\t\t\n2. D\t\nAksel Egedal Kristensen\nAnton Krog Søbygaard\n\t\nVincent Sakstrup Møller\nNiels Moll Harboe\n\t21 - 14\t21 - 11\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

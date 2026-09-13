@@ -1,0 +1,19 @@
+{
+  "key": "2014:143886",
+  "season": 2014,
+  "matchId": 143886,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Rødovre",
+  "ageGroupId": "5",
+  "leagueGroupId": "4264",
+  "roundDate": "2015-03-08",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2014,4264,1,8,,143886,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2014-143886.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:28:38.971Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2014,4264,1,8,,143886,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2014/2015\nVis rækker\n\n\nU15 serie X1 (4 spillere C) Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t143886\nRunde\t7 08-03-2015\nTid\tlø 07-03-2015 10:00\nSpillested\tRødovre Stadionhal\nElstedvej 40\n2610 Rødovre\nTelefon 36704515\nHjemmehold\tRødovre\nTom Laugesen\ntom.laugesen@gmail.com\n20635228\nUdehold\tGladsaxe Søborg 2\nChristian Thrysøe\nchristian.fam.thrysoe@gmail.com\n29482620\nResultat\t3-3\nPoint\t1-1\n\tRødovre\tGladsaxe Søborg 2\t1\t2\t3\tVinder W.O.\n1. S\t\nJonathan Kiel Jensen\n\t\nLaurits Roland Nielsen\n\t11 - 21\t18 - 21\t\t\n2. S\t\nCarl Kamstrup Laugesen\n\t\nTobias Soldath Detlefsen\n\t21 - 7\t21 - 15\t\t\n3. S\t\nVictor Piper Hansen\n\t\nNaija Dam\n\t21 - 17\t21 - 11\t\t\n4. S\t\nIda Andrea Grønbæk\n\t\nHelene Poulsen\n\t\t\t\tG\n1. D\t\nJonathan Kiel Jensen\nCarl Kamstrup Laugesen\n\t\nLaurits Roland Nielsen\nTobias Soldath Detlefsen\n\t21 - 19\t22 - 20\t\t\n2. D\t\nVictor Piper Hansen\nIda Andrea Grønbæk\n\t\nNaija Dam\nHelene Poulsen\n\t\t\t\tG\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

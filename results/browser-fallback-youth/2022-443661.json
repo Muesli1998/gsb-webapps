@@ -1,0 +1,19 @@
+{
+  "key": "2022:443661",
+  "season": 2022,
+  "matchId": 443661,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Nykøbing F 1",
+  "ageGroupId": "4",
+  "leagueGroupId": "15721",
+  "roundDate": "2023-04-30",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,15721,1,8,,443661,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2022-443661.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:18:23.549Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,15721,1,8,,443661,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADDAN,DGI U13 2022/2023\nVis rækker\n\n\nDMU H - U13 3400 4 spillere Placeringskamp (13. - 16. plads)\nStilling\nVis alle kampe\n\nKampnr\t443661\nRunde\t2 30-04-2023\nTid\tsø 30-04-2023 13:00\nSpillested\tSlangerup Idræts- og Kulturcenter\nIdrætsvej 5\n3550 Slangerup\nHjemmehold\tGladsaxe Søborg 2\nMartin Roed\nroed.martin@gmail.com\n20457741\nUdehold\tNykøbing F 1\nClaus Rosenby Mortensen\nclaus@rosenbymortensen.dk\n20449291\nResultat\t4-3\n\tGladsaxe Søborg 2\tNykøbing F 1\t1\t2\t3\tVinder W.O.\n1. S\t\nSylvester Østberg\n\t\nSylvester Risbjerg Lejre\n\t21 - 10\t21 - 9\t\t\n2. S\t\nLouis Valdemar Hedegaard Toftlund\n\t\nMille Rask Hansen\n\t21 - 14\t21 - 18\t\t\n3. S\t\nCarsten Yan\n\t\nNicoline Rosenby Mortensen\n\t17 - 21\t9 - 21\t\t\n4. S\t\nMads Kaarsberg Andersen\n\t\nCarl Jønck\n\t8 - 21\t8 - 21\t\t\n1. D\t\nSylvester Østberg\nMads Kaarsberg Andersen\n\t\nCarl Jønck\nNicoline Rosenby Mortensen\n\t21 - 18\t21 - 19\t\t\n2. D\t\nBertram Hammarkvist\nLouis Valdemar Hedegaard Toftlund\n\t\nSylvester Risbjerg Lejre\nMille Rask Hansen\n\t16 - 21\t21 - 16\t11 - 21\t\n\nGolden Set\nD\t\nBertram Hammarkvist\nSylvester Østberg\n\t\nNicoline Rosenby Mortensen\nMille Rask Hansen\n\t\n21 - 15\n\t\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

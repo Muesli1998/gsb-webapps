@@ -1,0 +1,19 @@
+{
+  "key": "2023:452188",
+  "season": 2023,
+  "matchId": 452188,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Frederiksberg 2",
+  "ageGroupId": "5",
+  "leagueGroupId": "16091",
+  "roundDate": "2023-10-29",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,16091,1,8,,452188,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2023-452188.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:15:42.807Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,16091,1,8,,452188,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2023/2024\nVis rækker\n\n\nU15 - 4200 4 spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t452188\nRunde\t3 29-10-2023\nTid\tlø 28-10-2023 09:15\nSpillested\tBC37-Hallen\nStrandlodsvej 69\n2300 København S\nTelefon 32 97 08 96\nHjemmehold\tGladsaxe Søborg 2\nPer Martin Palmqvist\npermartin76@gmail.com\n20663335\nUdehold\tFrederiksberg 2\nBettina Breitowicz\nBettinabreitowicz@hotmail.com\n60550333\nResultat\t1-5\nPoint\t0-4\n\tGladsaxe Søborg 2\tFrederiksberg 2\t1\t2\t3\tVinder W.O.\n1. S\t\nHjalte Palmqvist\n\t\nMax William Breitowicz Frederiksen\n\t13 - 21\t21 - 19\t26 - 28\t\n2. S\t\nEhan Shadat\n\t\nEik Gerhard Norn\n\t11 - 21\t11 - 21\t\t\n3. S\t\nKonrad Kunckel\n\t\nMattis Sjølin-Morpain\n\t23 - 21\t18 - 21\t18 - 21\t\n4. S\t\nRasmus Kimer Fogtmann\n\t\nVilhelm Sandal Helk\n\t21 - 14\t15 - 21\t14 - 21\t\n1. D\t\nEhan Shadat\nHjalte Palmqvist\n\t\nEik Gerhard Norn\nMattis Sjølin-Morpain\n\t19 - 21\t16 - 21\t\t\n2. D\t\nKonrad Kunckel\nRasmus Kimer Fogtmann\n\t\nMax William Breitowicz Frederiksen\nVilhelm Sandal Helk\n\t21 - 18\t21 - 9\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

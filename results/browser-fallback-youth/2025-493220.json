@@ -1,0 +1,19 @@
+{
+  "key": "2025:493220",
+  "season": 2025,
+  "matchId": 493220,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Hvidovre 1",
+  "ageGroupId": "2",
+  "leagueGroupId": "18127",
+  "roundDate": "2025-10-26",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18127,1,8,,493220,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2025-493220.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:04:54.107Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18127,1,8,,493220,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U09 2025/2026\nVis rækker\n\n\nU09 D 3300 (3 spillere) BD Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t493220\nRunde\t3 26-10-2025\nTid\tsø 26-10-2025 09:00\nSpillested\tCBK-Hallen\nMaltegaardsvej 18\n2820 Gentofte\nTelefon 39 65 24 66\nHjemmehold\tGladsaxe Søborg 2\nAnders Køhler\nanders_koehler@hotmail.com\n26256328\nUdehold\tHvidovre 1\nSebastian Bugtrup\nsebastianbugtrup@gmail.com\n22262179\nResultat\t2-3\nPoint\t1-2\n\tGladsaxe Søborg 2\tHvidovre 1\t1\t2\t3\tVinder W.O.\n1. S\t\nJens Antonio Manfredi Willumsen\n\t\nMikkel Dunfeldt Heckmann\n\t13 - 15\t15 - 11\t10 - 15\t\n2. S\t\nJosephine Geil Christophersen\n\t\nEmil Irving Hulst\n\t6 - 15\t10 - 15\t\t\n3. S\t\nJonathan Nielsen\n\t\n(Ikke fremmødt)\n\t\t\t\tG\n4. S\t\nJens Antonio Manfredi Willumsen\n\t\n(Ikke fremmødt)\n\t\t\t\tG\n1. D\t\nIna Bagge Køhler\nJosephine Geil Christophersen\n\t\nEmil Irving Hulst\nMikkel Dunfeldt Heckmann\n\t5 - 15\t7 - 15\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

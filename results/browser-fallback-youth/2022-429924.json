@@ -1,0 +1,19 @@
+{
+  "key": "2022:429924",
+  "season": 2022,
+  "matchId": 429924,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Lyngby 3",
+  "ageGroupId": "4",
+  "leagueGroupId": "14996",
+  "roundDate": "2023-01-15",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14996,1,8,,429924,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2022-429924.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:17:59.234Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14996,1,8,,429924,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U13 2022/2023\nVis rækker\n\n\nU13 4400 4 Spillere Pulje 2\nStilling\nVis alle kampe\n\nKampnr\t429924\nRunde\t5 15-01-2023\nTid\tsø 15-01-2023 15:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tLyngby 3\nMalene Jermiin-Hovedskou\nmalenehj@gmail.com\n30321107\nUdehold\tGladsaxe Søborg 1\nLean Fuglsang\nlean@omnia.dk\n60709458\nResultat\t4-3\nPoint\t3-2\n\tLyngby 3\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. S\t\nMads Jermiin-Hovedskou\n\t\nMina Lorin Özden\n\t\t\t\tG\n2. S\t\nVictor Roland Nielsen\n\t\nEhan Shadat\n\t20 - 22\t20 - 22\t\t\n3. S\t\nKristian de Dios Huang\n\t\nPeter Holger Bjørndal Axelsen\n\t21 - 12\t21 - 12\t\t\n4. S\t\nUlrik Christian Vedel\n\t\nFrederik Tuegaard Birk\n\t21 - 9\t21 - 15\t\t\n1. D\t\nMads Jermiin-Hovedskou\nVictor Roland Nielsen\n\t\nMina Lorin Özden\nEhan Shadat\n\t12 - 21\t15 - 21\t\t\n2. D\t\nKristian de Dios Huang\nUlrik Christian Vedel\n\t\nPeter Holger Bjørndal Axelsen\nFrederik Tuegaard Birk\n\t17 - 21\t21 - 9\t21 - 14\t\n\nGolden Set\nHD\t\nVictor Roland Nielsen\nUlrik Christian Vedel\n\t\nMina Lorin Özden\nPeter Holger Bjørndal Axelsen\n\t\n21 - 17\n\t\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

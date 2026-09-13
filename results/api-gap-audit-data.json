@@ -1,367 +1,171 @@
 {
-  "generatedAt": "2026-09-13T05:19:33.827Z",
+  "generatedAt": "2026-09-13T05:43:02.396Z",
+  "totals": {
+    "total": 2818,
+    "missing_result": 1737,
+    "missing_sides": 366,
+    "api_errors": 186,
+    "missing_players": 174
+  },
   "status": [
+    {
+      "status": "api_error",
+      "n": 186
+    },
+    {
+      "status": "browser_verified",
+      "n": 998
+    },
+    {
+      "status": "browser_verified_no_result",
+      "n": 39
+    },
     {
       "status": "complete",
       "n": 1374
-    },
-    {
-      "status": "api_error",
-      "n": 1066
-    },
-    {
-      "status": "missing_players",
-      "n": 314
     },
     {
       "status": "corona_suspended",
       "n": 47
     },
     {
-      "status": "browser_verified",
-      "n": 17
+      "status": "missing_players",
+      "n": 174
     }
   ],
-  "season": [
+  "bySeason": [
     {
       "season_id": 2010,
       "total": 11,
-      "no_result": 11,
-      "no_home": 11,
-      "no_away": 11
+      "missing_result": 11,
+      "missing_home": 11,
+      "missing_away": 11,
+      "api_errors": 11
     },
     {
       "season_id": 2011,
       "total": 169,
-      "no_result": 169,
-      "no_home": 159,
-      "no_away": 159
+      "missing_result": 87,
+      "missing_home": 77,
+      "missing_away": 77,
+      "api_errors": 1
     },
     {
       "season_id": 2012,
       "total": 131,
-      "no_result": 131,
-      "no_home": 52,
-      "no_away": 52
+      "missing_result": 89,
+      "missing_home": 10,
+      "missing_away": 10,
+      "api_errors": 6
     },
     {
       "season_id": 2013,
       "total": 134,
-      "no_result": 134,
-      "no_home": 43,
-      "no_away": 43
+      "missing_result": 101,
+      "missing_home": 10,
+      "missing_away": 10,
+      "api_errors": 10
     },
     {
       "season_id": 2014,
       "total": 144,
-      "no_result": 144,
-      "no_home": 53,
-      "no_away": 53
+      "missing_result": 110,
+      "missing_home": 19,
+      "missing_away": 19,
+      "api_errors": 1
     },
     {
       "season_id": 2015,
       "total": 156,
-      "no_result": 156,
-      "no_home": 48,
-      "no_away": 48
+      "missing_result": 123,
+      "missing_home": 15,
+      "missing_away": 15,
+      "api_errors": 0
     },
     {
       "season_id": 2016,
       "total": 147,
-      "no_result": 145,
-      "no_home": 52,
-      "no_away": 52
+      "missing_result": 116,
+      "missing_home": 23,
+      "missing_away": 23,
+      "api_errors": 6
     },
     {
       "season_id": 2017,
       "total": 133,
-      "no_result": 133,
-      "no_home": 45,
-      "no_away": 45
+      "missing_result": 96,
+      "missing_home": 8,
+      "missing_away": 8,
+      "api_errors": 2
     },
     {
       "season_id": 2018,
       "total": 143,
-      "no_result": 139,
-      "no_home": 35,
-      "no_away": 35
+      "missing_result": 113,
+      "missing_home": 9,
+      "missing_away": 9,
+      "api_errors": 9
     },
     {
       "season_id": 2019,
       "total": 125,
-      "no_result": 102,
-      "no_home": 20,
-      "no_away": 20
+      "missing_result": 82,
+      "missing_home": 0,
+      "missing_away": 0,
+      "api_errors": 0
     },
     {
       "season_id": 2020,
       "total": 162,
-      "no_result": 133,
-      "no_home": 102,
-      "no_away": 102
+      "missing_result": 77,
+      "missing_home": 46,
+      "missing_away": 46,
+      "api_errors": 9
     },
     {
       "season_id": 2021,
       "total": 186,
-      "no_result": 186,
-      "no_home": 100,
-      "no_away": 100
+      "missing_result": 103,
+      "missing_home": 17,
+      "missing_away": 17,
+      "api_errors": 15
     },
     {
       "season_id": 2022,
       "total": 227,
-      "no_result": 227,
-      "no_home": 132,
-      "no_away": 132
+      "missing_result": 111,
+      "missing_home": 16,
+      "missing_away": 16,
+      "api_errors": 16
     },
     {
       "season_id": 2023,
       "total": 255,
-      "no_result": 255,
-      "no_home": 127,
-      "no_away": 127
+      "missing_result": 160,
+      "missing_home": 32,
+      "missing_away": 32,
+      "api_errors": 32
     },
     {
       "season_id": 2024,
       "total": 295,
-      "no_result": 295,
-      "no_home": 165,
-      "no_away": 165
+      "missing_result": 156,
+      "missing_home": 26,
+      "missing_away": 26,
+      "api_errors": 26
     },
     {
       "season_id": 2025,
       "total": 400,
-      "no_result": 397,
-      "no_home": 242,
-      "no_away": 242
+      "missing_result": 202,
+      "missing_home": 47,
+      "missing_away": 47,
+      "api_errors": 42
     }
   ],
-  "apiErrorBySeason": [
-    {
-      "season_id": 2025,
-      "n": 237
-    },
-    {
-      "season_id": 2024,
-      "n": 164
-    },
-    {
-      "season_id": 2022,
-      "n": 131
-    },
-    {
-      "season_id": 2023,
-      "n": 124
-    },
-    {
-      "season_id": 2021,
-      "n": 96
-    },
-    {
-      "season_id": 2012,
-      "n": 41
-    },
-    {
-      "season_id": 2020,
-      "n": 41
-    },
-    {
-      "season_id": 2013,
-      "n": 40
-    },
-    {
-      "season_id": 2017,
-      "n": 39
-    },
-    {
-      "season_id": 2016,
-      "n": 33
-    },
-    {
-      "season_id": 2014,
-      "n": 32
-    },
-    {
-      "season_id": 2018,
-      "n": 32
-    },
-    {
-      "season_id": 2015,
-      "n": 25
-    },
-    {
-      "season_id": 2019,
-      "n": 19
-    },
-    {
-      "season_id": 2010,
-      "n": 11
-    },
-    {
-      "season_id": 2011,
-      "n": 1
-    }
-  ],
-  "samples": [
-    {
-      "external_match_id": "506407",
-      "season_id": 2025,
-      "status": "api_error",
-      "result_raw": null,
-      "home_name_raw": "",
-      "away_name_raw": ""
-    },
-    {
-      "external_match_id": "506413",
-      "season_id": 2025,
-      "status": "api_error",
-      "result_raw": null,
-      "home_name_raw": "",
-      "away_name_raw": ""
-    },
-    {
-      "external_match_id": "506441",
-      "season_id": 2025,
-      "status": "api_error",
-      "result_raw": null,
-      "home_name_raw": "",
-      "away_name_raw": ""
-    },
-    {
-      "external_match_id": "506838",
-      "season_id": 2025,
-      "status": "api_error",
-      "result_raw": null,
-      "home_name_raw": "",
-      "away_name_raw": ""
-    },
-    {
-      "external_match_id": "506844",
-      "season_id": 2025,
-      "status": "api_error",
-      "result_raw": null,
-      "home_name_raw": "",
-      "away_name_raw": ""
-    },
-    {
-      "external_match_id": "506845",
-      "season_id": 2025,
-      "status": "api_error",
-      "result_raw": null,
-      "home_name_raw": "",
-      "away_name_raw": ""
-    },
-    {
-      "external_match_id": "505211",
-      "season_id": 2025,
-      "status": "api_error",
-      "result_raw": null,
-      "home_name_raw": "",
-      "away_name_raw": ""
-    },
-    {
-      "external_match_id": "505213",
-      "season_id": 2025,
-      "status": "api_error",
-      "result_raw": null,
-      "home_name_raw": "",
-      "away_name_raw": ""
-    },
-    {
-      "external_match_id": "505215",
-      "season_id": 2025,
-      "status": "api_error",
-      "result_raw": null,
-      "home_name_raw": "",
-      "away_name_raw": ""
-    },
-    {
-      "external_match_id": "505217",
-      "season_id": 2025,
-      "status": "api_error",
-      "result_raw": null,
-      "home_name_raw": "",
-      "away_name_raw": ""
-    },
-    {
-      "external_match_id": "505219",
-      "season_id": 2025,
-      "status": "api_error",
-      "result_raw": null,
-      "home_name_raw": "",
-      "away_name_raw": ""
-    },
-    {
-      "external_match_id": "494475",
-      "season_id": 2025,
-      "status": "api_error",
-      "result_raw": null,
-      "home_name_raw": "",
-      "away_name_raw": ""
-    },
-    {
-      "external_match_id": "494477",
-      "season_id": 2025,
-      "status": "api_error",
-      "result_raw": null,
-      "home_name_raw": "",
-      "away_name_raw": ""
-    },
-    {
-      "external_match_id": "494479",
-      "season_id": 2025,
-      "status": "api_error",
-      "result_raw": null,
-      "home_name_raw": "",
-      "away_name_raw": ""
-    },
-    {
-      "external_match_id": "494480",
-      "season_id": 2025,
-      "status": "api_error",
-      "result_raw": null,
-      "home_name_raw": "",
-      "away_name_raw": ""
-    },
-    {
-      "external_match_id": "505242",
-      "season_id": 2025,
-      "status": "api_error",
-      "result_raw": null,
-      "home_name_raw": "",
-      "away_name_raw": ""
-    },
-    {
-      "external_match_id": "505244",
-      "season_id": 2025,
-      "status": "api_error",
-      "result_raw": null,
-      "home_name_raw": "",
-      "away_name_raw": ""
-    },
-    {
-      "external_match_id": "505246",
-      "season_id": 2025,
-      "status": "api_error",
-      "result_raw": null,
-      "home_name_raw": "",
-      "away_name_raw": ""
-    },
-    {
-      "external_match_id": "505248",
-      "season_id": 2025,
-      "status": "api_error",
-      "result_raw": null,
-      "home_name_raw": "",
-      "away_name_raw": ""
-    },
-    {
-      "external_match_id": "505250",
-      "season_id": 2025,
-      "status": "api_error",
-      "result_raw": null,
-      "home_name_raw": "",
-      "away_name_raw": ""
-    }
+  "interpretation": [
+    "Status og faktisk felt-dækning rapporteres separat.",
+    "En række med status complete kan stadig mangle resultatfelter; status er derfor ikke et bevis på komplet række.",
+    "Manglende felter betyder ikke, at data ikke findes online; gemte dynamiske browserpayloads er den dokumenterede fallback."
   ]
 }

@@ -1,0 +1,19 @@
+{
+  "key": "2021:414676",
+  "season": 2021,
+  "matchId": 414676,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Dragør 2",
+  "ageGroupId": "5",
+  "leagueGroupId": "14157",
+  "roundDate": "2022-02-27",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2021,14157,1,8,,414676,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2021-414676.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:21:59.790Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2021,14157,1,8,,414676,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2021/2022\nVis rækker\n\n\nU15 4800 4 Spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t414676\nRunde\t7 27-02-2022\nTid\tsø 27-02-2022 16:30\nSpillested\tBC37-Hallen\nStrandlodsvej 69\n2300 København S\nTelefon 32 97 08 96\nHjemmehold\tDragør 2\nJesper Stjernholm\njesper.klit@godmail.dk\n24602053\nUdehold\tGladsaxe Søborg 2\nMartin Roed\nroed.martin@gmail.com\n20457741\nResultat\t3-4\nPoint\t1-2\n\tDragør 2\tGladsaxe Søborg 2\t1\t2\t3\tVinder W.O.\n1. S\t\nMikkel Quass\n\t\nLinus Bergstrøm Hesselballe\n\t21 - 13\t21 - 11\t\t\n2. S\t\nNikolai Møller\n\t\nMaria Søberg Roed\n\t15 - 21\t18 - 21\t\t\n3. S\t\nMikkel Edske Deleuran\n\t\nAnton Krog Søbygaard\n\t21 - 13\t18 - 21\t21 - 7\t\n4. S\t\nVillads Diego Jørgensen\n\t\nAksel Egedal Kristensen\n\t21 - 19\t15 - 21\t7 - 21\t\n1. D\t\nMikkel Quass\nNikolai Møller\n\t\nLinus Bergstrøm Hesselballe\nAnton Krog Søbygaard\n\t21 - 14\t21 - 14\t\t\n2. D\t\nMikkel Edske Deleuran\nVillads Diego Jørgensen\n\t\nMaria Søberg Roed\nFreja Bygsø\n\t21 - 19\t16 - 21\t29 - 30\t\n\nGolden Set\nD\t\nNikolai Møller\nMikkel Edske Deleuran\n\t\nLinus Bergstrøm Hesselballe\nMaria Søberg Roed\n\t\n14 - 21\n\t\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

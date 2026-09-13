@@ -1,0 +1,19 @@
+{
+  "key": "2022:429654",
+  "season": 2022,
+  "matchId": 429654,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Lyngby 1",
+  "ageGroupId": "3",
+  "leagueGroupId": "14989",
+  "roundDate": "2023-03-12",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14989,1,8,,429654,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2022-429654.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:16:57.204Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14989,1,8,,429654,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U11 2022/2023\nVis rækker\n\n\nU11 3600 4 Spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t429654\nRunde\t8 12-03-2023\nTid\tsø 12-03-2023 11:30\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 2\nJakob Buron\njakob@buron.eu\n61303703\nUdehold\tLyngby 1\nKristoffer Fonseca Kvesel\nfonseca_kvesel@hotmail.com\n31420294\nResultat\t6-0\nPoint\t4-0\n\tGladsaxe Søborg 2\tLyngby 1\t1\t2\t3\tVinder W.O.\n1. S\t\nLudvig Alexander Rosager Pedas\n\t\nMax Emil Aarøe\n\t20 - 22\t21 - 12\t25 - 23\t\n2. S\t\nAnton Aavang Arvidson\n\t\nElias Thien Phi Nguyen\n\t16 - 21\t21 - 19\t21 - 9\t\n3. S\t\nSilas Buron\n\t\nMalthe Torp Johansen\n\t21 - 8\t21 - 11\t\t\n4. S\t\nErik Kragh Winther\n\t\nKonrad Kvesel\n\t21 - 12\t15 - 21\t21 - 10\t\n1. D\t\nLudvig Alexander Rosager Pedas\nAnton Aavang Arvidson\n\t\nMax Emil Aarøe\nElias Thien Phi Nguyen\n\t21 - 12\t21 - 11\t\t\n2. D\t\nSilas Buron\nOliver Soon Nielsen\n\t\nMalthe Torp Johansen\nKonrad Kvesel\n\t21 - 16\t21 - 14\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

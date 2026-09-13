@@ -1,0 +1,19 @@
+{
+  "key": "2012:50273",
+  "season": 2012,
+  "matchId": 50273,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Drive",
+  "ageGroupId": "5",
+  "leagueGroupId": "1326",
+  "roundDate": "2012-10-28",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2012,1326,1,8,,50273,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2012-50273.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:30:12.392Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2012,1326,1,8,,50273,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2012/2013\nVis rækker\n\n\nU15 3. Serie U15 3. Serie\nStilling\nVis alle kampe\n\nKampnr\t50273\nRunde\t2 28-10-2012\nTid\tsø 28-10-2012 11:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg\nUdehold\tDrive\nResultat\t5-3\nPoint\t2-0\n\tGladsaxe Søborg\tDrive\t1\t2\t3\tVinder W.O.\n1. MD\t\nAndreas Lyhne Fiehn\nAgnete Grauslund\n\t\nLudvig Stampe D. Christensen\nKirse Simone Aagard Larsen\n\t13 - 21\t21 - 11\t15 - 21\t\n1. S\t\nCecilie Noer\n\t\nLise Ninna Bynck\n\t14 - 21\t5 - 21\t\t\n2. S\t\nJonas Trusell-Jensen\n\t\nViktor Emil Klausen\n\t21 - 17\t16 - 21\t21 - 17\t\n3. S\t\nMads Lyhne Bischoff\n\t\nOskar Ellehammer Andersen\n\t21 - 15\t21 - 8\t\t\n4. S\t\nEmil Wilhardt Jensen\n\t\nMarcus Parum\n\t21 - 14\t21 - 3\t\t\n1. D\t\nCecilie Noer\nAgnete Grauslund\n\t\nLise Ninna Bynck\nKirse Simone Aagard Larsen\n\t21 - 23\t16 - 21\t\t\n2. D\t\nJonas Trusell-Jensen\nMads Lyhne Bischoff\n\t\nViktor Emil Klausen\nLudvig Stampe D. Christensen\n\t21 - 15\t21 - 11\t\t\n3. D\t\nEmil Wilhardt Jensen\nAndreas Lyhne Fiehn\n\t\nOskar Ellehammer Andersen\nMarcus Parum\n\t21 - 9\t21 - 8\t\t\n\n\nReserver\nGladsaxe Søborg\tDrive\n\n\nAgnete Grauslund\nfor Katharina Rahbek\n\nAndreas Lyhne Fiehn\nfor Kristian Larson\n\n\t\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

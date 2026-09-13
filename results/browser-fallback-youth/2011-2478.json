@@ -1,0 +1,19 @@
+{
+  "key": "2011:2478",
+  "season": 2011,
+  "matchId": 2478,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Drive",
+  "ageGroupId": "5",
+  "leagueGroupId": "106",
+  "roundDate": "2011-10-09",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,106,1,8,,2478,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2011-2478.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:32:23.565Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,106,1,8,,2478,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2011/2012\nVis rækker\n\n\nU15 3. Serie U15 3. Serie\nStilling\nVis alle kampe\n\nKampnr\t2478\nRunde\t2 09-10-2011\nTid\tsø 09-10-2011 13:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg\nUdehold\tDrive\nResultat\t6-2\nPoint\t2-0\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

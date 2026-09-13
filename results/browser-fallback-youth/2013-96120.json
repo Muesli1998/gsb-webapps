@@ -1,0 +1,19 @@
+{
+  "key": "2013:96120",
+  "season": 2013,
+  "matchId": 96120,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Skovshoved 2",
+  "ageGroupId": "5",
+  "leagueGroupId": "2686",
+  "roundDate": "2013-10-27",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2013,2686,1,8,,96120,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2013-96120.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:29:05.130Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2013,2686,1,8,,96120,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2013/2014\nVis rækker\n\n\nU15 2. serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t96120\nRunde\t4 27-10-2013\nTid\tsø 27-10-2013 14:30\nSpillested\tKrøyersvej\nKrøyersvej 5A\n2930 Klampenborg\nTelefon 39 64 23 83\nHjemmehold\tSkovshoved 2\nUdehold\tGladsaxe Søborg\nStefan Larson\nstl@dahl-as.dk\n31745407\nResultat\t1-7\nPoint\t0-2\n\tSkovshoved 2\tGladsaxe Søborg\t1\t2\t3\tVinder W.O.\n1. MD\t\n(Ikke fremmødt)\n(Ikke fremmødt)\n\t\nOliver Dahl Christiansen\nHelene Poulsen\n\t\t\t\tG\n1. S\t\nShawn Jerrico Carlsen\n\t\nJonathan W. Hansen\n\t18 - 21\t13 - 21\t\t\n2. S\t\nMagnus Emil Jakobsen\n\t\nRaphael Kongsvig\n\t10 - 21\t19 - 21\t\t\n3. S\t\nNicolaj Hagemann Snabe\n\t\nKristian Larson\n\t6 - 21\t5 - 21\t\t\n4. S\t\n(Ikke fremmødt)\n\t\nNaija Dam\n\t\t\t\tG\n1. D\t\nMagnus Emil Jakobsen\nShawn Jerrico Carlsen\n\t\nJonathan W. Hansen\nRaphael Kongsvig\n\t21 - 14\t21 - 16\t\t\n2. D\t\nNicolaj Hagemann Snabe\nPhillip Brincker\n\t\nKristian Larson\nOliver Dahl Christiansen\n\t8 - 21\t12 - 21\t\t\n3. D\t\n(Ikke fremmødt)\n(Ikke fremmødt)\n\t\nNaija Dam\nHelene Poulsen\n\t\t\t\tG\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

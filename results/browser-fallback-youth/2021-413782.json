@@ -1,0 +1,19 @@
+{
+  "key": "2021:413782",
+  "season": 2021,
+  "matchId": 413782,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Rødovre 1",
+  "ageGroupId": "2",
+  "leagueGroupId": "14136",
+  "roundDate": "2021-10-10",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2021,14136,1,8,,413782,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2021-413782.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:19:53.768Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2021,14136,1,8,,413782,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U09 2021/2022\nVis rækker\n\n\nU09 2700 4 Spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t413782\nRunde\t1 10-10-2021\nTid\tlø 09-10-2021 10:30\nSpillested\tRødovre Stadionhal\nElstedvej 40\n2610 Rødovre\nTelefon 36704515\nHjemmehold\tRødovre 1\nKate Schwensen\njks@tdcadsl.dk\n20120753\nUdehold\tGladsaxe Søborg 1\nJens Hornsgaard\nhornsgaard@gmail.com\n41779399\nResultat\t0-6\nPoint\t0-3\n\tRødovre 1\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. S\t\nErik Harvey\n\t\nBenjamin Hinge Carlsson\n\t8 - 21\t9 - 21\t\t\n2. S\t\nSiddharthreddy Muchanthula\n\t\nLauge Juul Hornsgaard\n\t12 - 21\t15 - 21\t\t\n3. S\t\nBenjamin Ellekær\n\t\nSaxo Ghotbi\n\t19 - 21\t17 - 21\t\t\n4. S\t\nJacob Harvey\n\t\nKasper Mason\n\t10 - 21\t16 - 21\t\t\n1. D\t\nErik Harvey\nSiddharthreddy Muchanthula\n\t\nLauge Juul Hornsgaard\nSaxo Ghotbi\n\t14 - 21\t14 - 21\t\t\n2. D\t\nBenjamin Ellekær\nJacob Harvey\n\t\nKasper Mason\nBenjamin Hinge Carlsson\n\t14 - 21\t9 - 21\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

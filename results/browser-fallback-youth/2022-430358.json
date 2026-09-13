@@ -1,0 +1,19 @@
+{
+  "key": "2022:430358",
+  "season": 2022,
+  "matchId": 430358,
+  "teamName": "Gladsaxe Søborg 5",
+  "opponent": "Gentofte 3",
+  "ageGroupId": "3",
+  "leagueGroupId": "14986",
+  "roundDate": "2023-02-26",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14986,1,8,,430358,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2022-430358.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:17:44.012Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14986,1,8,,430358,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U11 2022/2023\nVis rækker\n\n\nU11 3000 4 Spillere Pulje 2\nStilling\nVis alle kampe\n\nKampnr\t430358\nRunde\t7 26-02-2023\nTid\tsø 26-02-2023 10:00\nSpillested\tEngelsborg Hallen\nEngelsborgvej 93\n2800 Lyngby\nTelefon 45 87 19 48\nHjemmehold\tGentofte 3\nLene Eipe\ngbk@gbk.dk\n39650400\nUdehold\tGladsaxe Søborg 5\nMorten Vajse\nmvajse@gmail.com\n24471640\nResultat\t0-6\nPoint\t0-4\nAfgjort uden kamp (afbud/udeblivelse)\n\n\n\tGentofte 3\tGladsaxe Søborg 5\t1\t2\t3\tVinder W.O.\n1. S\t\n\t\nAanya Sarma\n\t\t\t\t\n2. S\t\n\t\nMads Kaarsberg Andersen\n\t\t\t\t\n3. S\t\n\t\nFelix Langvad Vajse\n\t\t\t\t\n4. S\t\n\t\nAhana Mondal\n\t\t\t\t\n1. D\t\n\t\nFelix Langvad Vajse\nAanya Sarma\n\t\t\t\t\n2. D\t\n\t\nAhana Mondal\nMads Kaarsberg Andersen\n\t\t\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

@@ -1,0 +1,19 @@
+{
+  "key": "2022:429906",
+  "season": 2022,
+  "matchId": 429906,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Lyngby 3",
+  "ageGroupId": "4",
+  "leagueGroupId": "14996",
+  "roundDate": "2022-10-09",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14996,1,8,,429906,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2022-429906.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:17:46.049Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14996,1,8,,429906,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U13 2022/2023\nVis rækker\n\n\nU13 4400 4 Spillere Pulje 2\nStilling\nVis alle kampe\n\nKampnr\t429906\nRunde\t1 09-10-2022\nTid\tlø 08-10-2022 12:00\nSpillested\tGladsaxe ny Badmintonhal\nGladsaxevej 200\n2860 Søborg\nHjemmehold\tGladsaxe Søborg 1\nLean Fuglsang\nlean@omnia.dk\n60709458\nUdehold\tLyngby 3\nMalene Jermiin-Hovedskou\nmalenehj@gmail.com\n30321107\nResultat\t2-4\nPoint\t1-3\n\tGladsaxe Søborg 1\tLyngby 3\t1\t2\t3\tVinder W.O.\n1. S\t\nMina Lorin Özden\n\t\nMads Jermiin-Hovedskou\n\t21 - 19\t15 - 21\t21 - 16\t\n2. S\t\nEhan Shadat\n\t\nVictor Roland Nielsen\n\t21 - 16\t21 - 8\t\t\n3. S\t\nPeter Holger Bjørndal Axelsen\n\t\nAtshey Ramesh\n\t8 - 21\t13 - 21\t\t\n4. S\t\nAarav Jha\n\t\nVictor Ploug Mattsson\n\t9 - 21\t18 - 21\t\t\n1. D\t\nMina Lorin Özden\nAarav Jha\n\t\nMads Jermiin-Hovedskou\nAtshey Ramesh\n\t19 - 21\t12 - 21\t\t\n2. D\t\nEhan Shadat\nFrederik Tuegaard Birk\n\t\nVictor Ploug Mattsson\nVictor Roland Nielsen\n\t20 - 22\t13 - 21\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

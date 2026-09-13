@@ -1,0 +1,19 @@
+{
+  "key": "2018:340290",
+  "season": 2018,
+  "matchId": 340290,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Dragør 1",
+  "ageGroupId": "3",
+  "leagueGroupId": "11279",
+  "roundDate": "2018-10-07",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2018,11279,1,8,,340290,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2018-340290.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:24:20.858Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2018,11279,1,8,,340290,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U11 2018/2019\nVis rækker\n\n\nU11 C 4 Spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t340290\nRunde\t1 07-10-2018\nTid\tlø 06-10-2018 14:30\nSpillested\tHollænderhallen\nHalvejen\n2791 Dragør\nTelefon 32 53 07 46\nHjemmehold\tDragør 1\nHelle Olsen Beyer\nHellehavblik@sol.dk\n22453090\nUdehold\tGladsaxe Søborg 1\nTine Undén\nunden@privat.dk\n20705811\nResultat\t3-4\nPoint\t1-2\n\tDragør 1\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. S\t\nJanus Olsen Beyer\n\t\nAsk Unden\n\t22 - 24\t21 - 17\t21 - 17\t\n2. S\t\nLaurits Houen Schmidt\n\t\nLykke Unden\n\t21 - 15\t10 - 21\t21 - 18\t\n3. S\t\nGustav Johan Langseth Nilsson\n\t\nNikolaj Thorslund Hindsbo\n\t16 - 21\t10 - 21\t\t\n4. S\t\nSamuel Høj Stjernholm\n\t\nMaude Marie Stewart\n\t13 - 21\t10 - 21\t\t\n1. D\t\nJanus Olsen Beyer\nLaurits Houen Schmidt\n\t\nAsk Unden\nNikolaj Thorslund Hindsbo\n\t19 - 21\t21 - 17\t21 - 12\t\n2. D\t\nGustav Johan Langseth Nilsson\nSamuel Høj Stjernholm\n\t\nLykke Unden\nMaude Marie Stewart\n\t17 - 21\t14 - 21\t\t\n\nGolden Set\nHD\t\nJanus Olsen Beyer\nSamuel Høj Stjernholm\n\t\nAsk Unden\nLykke Unden\n\t\n11 - 21\n\t\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

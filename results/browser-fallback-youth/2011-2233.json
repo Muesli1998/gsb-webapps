@@ -1,0 +1,19 @@
+{
+  "key": "2011:2233",
+  "season": 2011,
+  "matchId": 2233,
+  "teamName": "Gladsaxe Søborg 4",
+  "opponent": "Valby BC",
+  "ageGroupId": "3",
+  "leagueGroupId": "100",
+  "roundDate": "2011-10-09",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,100,1,8,,2233,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2011-2233.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:31:19.972Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,100,1,8,,2233,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U11 2011/2012\nVis rækker\n\n\nU11 Serie X2 U11 Serie X2\nStilling\nVis alle kampe\n\nKampnr\t2233\nRunde\t2 09-10-2011\nTid\tsø 09-10-2011 10:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 4\nUdehold\tValby BC\nResultat\t0-6\nPoint\t0-2\nAfgjort uden kamp (afbud/udeblivelse)\n\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

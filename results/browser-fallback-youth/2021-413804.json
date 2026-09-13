@@ -1,0 +1,19 @@
+{
+  "key": "2021:413804",
+  "season": 2021,
+  "matchId": 413804,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "KBK Kbh. 1",
+  "ageGroupId": "2",
+  "leagueGroupId": "14136",
+  "roundDate": "2022-03-27",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2021,14136,1,8,,413804,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2021-413804.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:20:08.218Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2021,14136,1,8,,413804,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U09 2021/2022\nVis rækker\n\n\nU09 2700 4 Spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t413804\nRunde\t9 27-03-2022\nTid\tsø 27-03-2022 13:15\nSpillested\tBC37-Hallen\nStrandlodsvej 69\n2300 København S\nTelefon 32 97 08 96\nHjemmehold\tGladsaxe Søborg 1\nJens Hornsgaard\nhornsgaard@gmail.com\n41779399\nUdehold\tKBK Kbh. 1\nThomas Lysgaard\nthomas.lysgaard@gmail.com\n29425651\nBemærkning\t2.D ændret efter administrativ fejl. KBK vand kampen. Kurt Mehlsen 27.03.2022\nResultat\t1-5\nPoint\t0-3\n\tGladsaxe Søborg 1\tKBK Kbh. 1\t1\t2\t3\tVinder W.O.\n1. S\t\nLauge Juul Hornsgaard\n\t\nGeorg Stensen Bhatia\n\t21 - 19\t21 - 15\t\t\n2. S\t\nSaxo Ghotbi\n\t\nMagne Engel Lysgaard\n\t14 - 21\t8 - 21\t\t\n3. S\t\nKasper Mason\n\t\nWilliam Jenus Hjorth\n\t16 - 21\t21 - 13\t15 - 21\t\n4. S\t\nLaurits Schjerning Andersen\n\t\nAlma Ortmann-Ibsen\n\t12 - 21\t15 - 21\t\t\n1. D\t\nBenjamin Hinge Carlsson\nOliver Soon Nielsen\n\t\nGeorg Stensen Bhatia\nMagne Engel Lysgaard\n\t17 - 21\t17 - 21\t\t\n2. D\t\nKasper Mason\nLaurits Schjerning Andersen\n\t\nAlma Ortmann-Ibsen\nWilliam Jenus Hjorth\n\t10 - 21\t8 - 21\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

@@ -1,0 +1,19 @@
+{
+  "key": "2011:2323",
+  "season": 2011,
+  "matchId": 2323,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Frederiksberg",
+  "ageGroupId": "4",
+  "leagueGroupId": "101",
+  "roundDate": "2012-03-11",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,101,1,8,,2323,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2011-2323.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:31:41.616Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2011,101,1,8,,2323,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U13 2011/2012\nVis rækker\n\n\nU13 2. Serie U13 2. erie\nStilling\nVis alle kampe\n\nKampnr\t2323\nRunde\t8 11-03-2012\nTid\tsø 18-03-2012 13:00\nSpillested\tFBK-Hallen\nRolighedsvej 31\n1958 Frederiksberg C\nTelefon 35 39 18 87\nHjemmehold\tGladsaxe Søborg\nUdehold\tFrederiksberg\nResultat\t5-3\nPoint\t2-0\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

@@ -1,0 +1,19 @@
+{
+  "key": "2016:239700",
+  "season": 2016,
+  "matchId": 239700,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Tono Kbh.",
+  "ageGroupId": "4",
+  "leagueGroupId": "7692",
+  "roundDate": "2016-11-20",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7692,1,8,,239700,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2016-239700.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:26:26.631Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7692,1,8,,239700,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U13 2016/2017\nVis rækker\n\n\nU13 C (4) P2 Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t239700\nRunde\t3 20-11-2016\nTid\tsø 20-11-2016 10:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg\nJeppe Dam Sørensen\njeppe@damsorensen.dk\n61988668\nUdehold\tTono Kbh.\nResultat\t6-0\nPoint\t3-0\n\tGladsaxe Søborg\tTono Kbh.\t1\t2\t3\tVinder W.O.\n1. S\t\nAsbjørn Dam Sørensen\n\t\nAlexander Durafour\n\t21 - 14\t22 - 24\t21 - 19\t\n2. S\t\nWilliam Staal-Christensen\n\t\nTimothe Lubowa\n\t21 - 7\t21 - 4\t\t\n3. S\t\nAlexander Riege Klausen\n\t\nWilliam Okorafor\n\t21 - 19\t21 - 17\t\t\n4. S\t\nYasmin Kjær Thøgersen\n\t\nOlga Randløv-Decitre\n\t21 - 11\t21 - 10\t\t\n1. D\t\nAnna Berg Siemsen\nFreja Louise Volf\n\t\nAlexander Durafour\nOlga Randløv-Decitre\n\t17 - 21\t21 - 10\t21 - 12\t\n2. D\t\nFrederik Kampen Lønborg\nYasmin Kjær Thøgersen\n\t\nTimothe Lubowa\nWilliam Okorafor\n\t21 - 9\t21 - 6\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

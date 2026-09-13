@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-13T05:12:48.207Z",
-  "files": 300,
+  "generatedAt": "2026-09-13T05:42:19.887Z",
+  "files": 1022,
   "statuses": {
-    "youth_verified": 298,
+    "youth_verified": 1020,
     "youth_no_match_detail": 2
   },
-  "withResult": 297,
-  "withPlayers": 297,
-  "walkover": 297
+  "withResult": 981,
+  "withPlayers": 904,
+  "walkover": 58
 }

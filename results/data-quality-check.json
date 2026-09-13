@@ -1,13 +1,17 @@
 {
-  "generatedAt": "2026-09-13T05:00:56.412Z",
+  "generatedAt": "2026-09-13T05:42:20.050Z",
   "teamMatchesByStatus": [
     {
       "status": "api_error",
-      "n": 1066
+      "n": 186
     },
     {
       "status": "browser_verified",
-      "n": 17
+      "n": 998
+    },
+    {
+      "status": "browser_verified_no_result",
+      "n": 39
     },
     {
       "status": "complete",
@@ -19,20 +23,20 @@
     },
     {
       "status": "missing_players",
-      "n": 314
+      "n": 174
     }
   ],
   "missingResult": [
     {
-      "n": 2757
+      "n": 1737
     }
   ],
   "missingSides": [
     {
-      "n": 1386
+      "n": 366
     }
   ],
   "standingsRows": 736,
-  "walkovers": 3,
+  "walkovers": 61,
   "corona": 47
 }

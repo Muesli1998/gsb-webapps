@@ -1,0 +1,19 @@
+{
+  "key": "2022:430524",
+  "season": 2022,
+  "matchId": 430524,
+  "teamName": "Gladsaxe Søborg 4",
+  "opponent": "Vanløse 3",
+  "ageGroupId": "5",
+  "leagueGroupId": "14999",
+  "roundDate": "2022-11-20",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14999,1,8,,430524,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2022-430524.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:19:24.099Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14999,1,8,,430524,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2022/2023\nVis rækker\n\n\nU15 4000 4 Spillere Pulje 2\nStilling\nVis alle kampe\n\nKampnr\t430524\nRunde\t3 20-11-2022\nTid\tlø 19-11-2022 16:00\nSpillested\tGladsaxe ny Badmintonhal\nGladsaxevej 200\n2860 Søborg\nHjemmehold\tGladsaxe Søborg 4\nOle Fogtmann\nolefogtmann@hotmail.com\n53614602\nUdehold\tVanløse 3\nAnita Otte Clausen\nanitaotte@msn.com\n31147252\nResultat\t4-2\nPoint\t3-1\n\tGladsaxe Søborg 4\tVanløse 3\t1\t2\t3\tVinder W.O.\n1. S\t\nArthur Esgerd Rohde\n\t\nBenjamin Hall\n\t16 - 21\t21 - 16\t16 - 21\t\n2. S\t\nRasmus Kimer Fogtmann\n\t\nErik Kanstrup Clausen\n\t21 - 14\t14 - 21\t22 - 20\t\n3. S\t\nHans Schmidt Berthelsen\n\t\nLuna Lahti\n\t11 - 21\t17 - 21\t\t\n4. S\t\nValdemar Hougaard Poulsen\n\t\nVictoria Roy\n\t21 - 12\t21 - 14\t\t\n1. D\t\nArthur Esgerd Rohde\nRasmus Kimer Fogtmann\n\t\nErik Kanstrup Clausen\nBenjamin Hall\n\t21 - 14\t19 - 21\t21 - 11\t\n2. D\t\nHans Schmidt Berthelsen\nValdemar Hougaard Poulsen\n\t\nVictoria Roy\nLuna Lahti\n\t21 - 19\t21 - 11\t\t\n\n\nReserver\nGladsaxe Søborg 4\tVanløse 3\n\n\t\n\nJosephine Vestergaard\nfor Benjamin Hall\n\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

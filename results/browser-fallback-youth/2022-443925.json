@@ -1,0 +1,19 @@
+{
+  "key": "2022:443925",
+  "season": 2022,
+  "matchId": 443925,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "abc Aalborg 1",
+  "ageGroupId": "5",
+  "leagueGroupId": "15791",
+  "roundDate": "2023-04-30",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,15791,1,8,,443925,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2022-443925.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:18:40.356Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,15791,1,8,,443925,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADDAN,DGI U15 2022/2023\nVis rækker\n\n\nDMU H - U15 6400 4 spillere Finale slutspil (1. - 4. plads)\nStilling\nVis alle kampe\n\nKampnr\t443925\nRunde\t2 30-04-2023\nTid\tsø 30-04-2023 10:00\nSpillested\tStrib FA Center hal 1\nNy Billeshavevej 1-3, Strib\n5500 Middelfart\nHjemmehold\tGladsaxe Søborg 1\nJan Hindsbo\nJan.hindsbo@mail.dk\n60162038\nUdehold\tabc Aalborg 1\nMartin Jensen\nmje@pwtbrands.com\n30138498\nResultat\t5-1\n\tGladsaxe Søborg 1\tabc Aalborg 1\t1\t2\t3\tVinder W.O.\n1. S\t\nMalthe Baltzer\n\t\nMagnus Nielsen\n\t21 - 13\t15 - 21\t1 - 6\tG\n2. S\t\nNikolaj Thorslund Hindsbo\n\t\nBertram Noah Madsen\n\t21 - 14\t21 - 17\t\t\n3. S\t\nAsk Unden\n\t\nBalder Lauge Grønkjær Pedersen\n\t21 - 16\t19 - 21\t14 - 21\t\n4. S\t\nMads Baltzer\n\t\nMagnus Jensen\n\t12 - 21\t21 - 17\t21 - 19\t\n1. D\t\nAsk Unden\nMalthe Baltzer\n\t\nMagnus Nielsen\nBertram Noah Madsen\n\t21 - 19\t21 - 18\t\t\n2. D\t\nSebastian Almeida Møller\nNikolaj Thorslund Hindsbo\n\t\nBalder Lauge Grønkjær Pedersen\nMagnus Jensen\n\t21 - 18\t21 - 16\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

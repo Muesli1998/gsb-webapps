@@ -1,0 +1,19 @@
+{
+  "key": "2023:451172",
+  "season": 2023,
+  "matchId": 451172,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Islands Brygge 1",
+  "ageGroupId": "4",
+  "leagueGroupId": "15993",
+  "roundDate": "2023-11-19",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,15993,1,8,,451172,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2023-451172.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:15:16.569Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,15993,1,8,,451172,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH,BADSJ,DGI-NSJ,DGI-MVS U13 2023/2024\nVis rækker\n\n\nU13 - 4400 (4 spillere) Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t451172\nRunde\t4 19-11-2023\nTid\tsø 19-11-2023 13:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 1\nLau Østberg\nlauogsara@gmail.com\n20709092\nUdehold\tIslands Brygge 1\nSusanne Spang Jørgensen\nsannespj@gmail.com\n21637852\nResultat\t2-4\nPoint\t1-3\n\tGladsaxe Søborg 1\tIslands Brygge 1\t1\t2\t3\tVinder W.O.\n1. S\t\nLouis Valdemar Hedegaard Toftlund\n\t\nNelas de Montgomery Nørgård\n\t20 - 22\t14 - 21\t\t\n2. S\t\nRishi Mandapati\n\t\nMalthe Vinsløv Pedersen Struer\n\t17 - 21\t11 - 21\t\t\n3. S\t\nCarsten Yan\n\t\nChristian Hansen-Hersnap\n\t14 - 21\t23 - 21\t21 - 16\t\n4. S\t\nMads Kaarsberg Andersen\n\t\nFrederik Hjort Hansen\n\t19 - 21\t15 - 21\t\t\n1. D\t\nSylvester Østberg\nLouis Valdemar Hedegaard Toftlund\n\t\nChristian Hansen-Hersnap\nTristan Garron\n\t21 - 15\t21 - 12\t\t\n2. D\t\nVillads Markersen\nErik Kragh Winther\n\t\nMalthe Vinsløv Pedersen Struer\nNelas de Montgomery Nørgård\n\t16 - 21\t17 - 21\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

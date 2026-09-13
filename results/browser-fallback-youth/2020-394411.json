@@ -1,0 +1,19 @@
+{
+  "key": "2020:394411",
+  "season": 2020,
+  "matchId": 394411,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "NBK Amager 1",
+  "ageGroupId": "5",
+  "leagueGroupId": "13470",
+  "roundDate": "2021-03-14",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13470,1,8,,394411,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2020-394411.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:23:25.677Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13470,1,8,,394411,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2020/2021\nVis rækker\n\n\nU15 6400 4 Spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t394411\nRunde\t7 14-03-2021\nTid\tsø 14-03-2021 10:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 1\nMartin Yulzari\nMAYU@lundbeck.com\n30835474\nUdehold\tNBK Amager 1\nPer Lindgreen\nper.lindgreen@mail.dk\n28935207\nResultat\t-\nPoint\t-\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

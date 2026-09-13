@@ -1,0 +1,19 @@
+{
+  "key": "2021:414577",
+  "season": 2021,
+  "matchId": 414577,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "Hvidovre 3",
+  "ageGroupId": "5",
+  "leagueGroupId": "14155",
+  "roundDate": "2022-03-27",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2021,14155,1,8,,414577,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2021-414577.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:22:09.830Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2021,14155,1,8,,414577,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2021/2022\nVis rækker\n\n\nU15 4300 4 Spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t414577\nRunde\t9 27-03-2022\nTid\tsø 27-03-2022 15:00\nSpillested\tHBC-Hallen\nBibliotekvej 62\n2650 Hvidovre\nTelefon 36 49 10 05\nHjemmehold\tGladsaxe Søborg 3\nKim Kristiansen\nkimk.kbh@gmail.com\n23235465\nUdehold\tHvidovre 3\nKim Lilleskov\nlilleskov@gmail.com\n24428895\nResultat\t6-0\nPoint\t3-0\n\tGladsaxe Søborg 3\tHvidovre 3\t1\t2\t3\tVinder W.O.\n1. S\t\nSimon Vils Pedersen\n\t\nWilliam Ljungbeck Kallehauge\n\t21 - 17\t21 - 13\t\t\n2. S\t\nThøger Eusebius Jakobsen\n\t\nFrederik Rosager Sennenvald\n\t21 - 12\t21 - 13\t\t\n3. S\t\nLoke Kristiansen\n\t\nPernille Kyed Østerlind\n\t21 - 14\t21 - 18\t\t\n4. S\t\nPelle Emil Jessing Schjøtt\n\t\nAmalie Olsen\n\t21 - 14\t21 - 11\t\t\n1. D\t\nSimon Vils Pedersen\nThøger Eusebius Jakobsen\n\t\nWilliam Ljungbeck Kallehauge\nFrederik Rosager Sennenvald\n\t21 - 7\t21 - 16\t\t\n2. D\t\nLoke Kristiansen\nPelle Emil Jessing Schjøtt\n\t\nPernille Kyed Østerlind\nAmalie Olsen\n\t21 - 19\t21 - 9\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

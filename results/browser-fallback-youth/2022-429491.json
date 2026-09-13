@@ -1,0 +1,19 @@
+{
+  "key": "2022:429491",
+  "season": 2022,
+  "matchId": 429491,
+  "teamName": "Gladsaxe Søborg 4",
+  "opponent": "NBK Amager 1",
+  "ageGroupId": "3",
+  "leagueGroupId": "14985",
+  "roundDate": "2022-10-30",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14985,1,8,,429491,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2022-429491.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:17:24.215Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,14985,1,8,,429491,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U11 2022/2023\nVis rækker\n\n\nU11 3000 4 Spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t429491\nRunde\t2 30-10-2022\nTid\tsø 30-10-2022 13:30\nSpillested\tGBK Hallen\nVed Stadion 4\n2820 Gentofte\nTelefon 39 68 01 59\nHjemmehold\tNBK Amager 1\nLine Berthelsen\nlineob@protonmail.com\n24482147\nUdehold\tGladsaxe Søborg 4\nAnders Uhrbrand\nanders.uhrbrand@gmail.com\n31230788\nResultat\t2-4\nPoint\t1-3\n\tNBK Amager 1\tGladsaxe Søborg 4\t1\t2\t3\tVinder W.O.\n1. S\t\nAlbert Bertelsen\n\t\nSylvester Østberg\n\t0 - 2\t\t\tG\n2. S\t\nIrma Valskov Weichardt\n\t\nSiddharth Puthran\n\t21 - 11\t21 - 14\t\t\n3. S\t\nMads Jespersen\n\t\nKasper Mason\n\t8 - 21\t4 - 21\t\t\n4. S\t\nMaj Frederiksen\n\t\nSvend Anders Hansen Uhrbrand\n\t21 - 19\t21 - 19\t\t\n1. D\t\nAlbert Bertelsen\nIrma Valskov Weichardt\n\t\nSylvester Østberg\nKasper Mason\n\t\t\t\tG\n2. D\t\nMads Jespersen\nMaj Frederiksen\n\t\nSiddharth Puthran\nSvend Anders Hansen Uhrbrand\n\t21 - 17\t11 - 21\t11 - 21\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

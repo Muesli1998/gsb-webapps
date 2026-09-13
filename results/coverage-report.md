@@ -1,18 +1,18 @@
 # Dækningsrapport for grunddata
 
-Genereret: 2026-09-13T04:43:25.127Z
+Genereret: 2026-09-13T05:42:49.658Z
 
 ## Samlet status
 
 | Felt | Antal |
 |---|---:|
 | total | 1444 |
-| verified | 420 |
-| noMatch | 0 |
+| verified | 1440 |
+| noMatch | 2 |
 | pending | 0 |
-| deferred | 1022 |
-| walkovers | 6 |
-| withWinner | 3 |
+| deferred | 0 |
+| walkovers | 64 |
+| withWinner | 57 |
 | teams | 73 |
 | groups | 281 |
 | opponents | 828 |
@@ -22,27 +22,27 @@ Genereret: 2026-09-13T04:43:25.127Z
 | Sæson | Alle kø-rækker | Verificeret | Ingen match-ID | Pending | U15 eller yngre | Walkover | Hold | Puljer | Modstandere |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2010 | 11 | 11 | 0 | 0 | 0 | 0 | 1 | 2 | 11 |
-| 2011 | 159 | 77 | 0 | 0 | 82 | 0 | 4 | 23 | 75 |
-| 2012 | 52 | 10 | 0 | 0 | 42 | 0 | 3 | 9 | 31 |
-| 2013 | 43 | 10 | 0 | 0 | 33 | 0 | 3 | 7 | 28 |
-| 2014 | 53 | 19 | 0 | 0 | 34 | 0 | 4 | 9 | 30 |
-| 2015 | 48 | 15 | 0 | 0 | 33 | 0 | 5 | 9 | 34 |
-| 2016 | 54 | 25 | 0 | 0 | 29 | 0 | 5 | 19 | 49 |
-| 2017 | 45 | 8 | 0 | 0 | 37 | 0 | 3 | 9 | 36 |
-| 2018 | 39 | 13 | 0 | 0 | 26 | 0 | 2 | 5 | 22 |
-| 2019 | 43 | 23 | 0 | 0 | 20 | 0 | 5 | 17 | 33 |
-| 2020 | 131 | 73 | 0 | 0 | 56 | 0 | 5 | 23 | 76 |
-| 2021 | 100 | 17 | 0 | 0 | 83 | 0 | 5 | 20 | 67 |
-| 2022 | 132 | 16 | 0 | 0 | 116 | 0 | 5 | 25 | 73 |
-| 2023 | 127 | 32 | 0 | 0 | 95 | 0 | 5 | 24 | 64 |
-| 2024 | 165 | 26 | 0 | 0 | 139 | 0 | 9 | 29 | 93 |
-| 2025 | 242 | 45 | 0 | 0 | 197 | 6 | 9 | 51 | 106 |
+| 2011 | 159 | 159 | 0 | 0 | 0 | 0 | 4 | 23 | 75 |
+| 2012 | 52 | 52 | 0 | 0 | 0 | 7 | 3 | 9 | 31 |
+| 2013 | 43 | 43 | 0 | 0 | 0 | 6 | 3 | 7 | 28 |
+| 2014 | 53 | 53 | 0 | 0 | 0 | 0 | 4 | 9 | 30 |
+| 2015 | 48 | 48 | 0 | 0 | 0 | 0 | 5 | 9 | 34 |
+| 2016 | 54 | 54 | 0 | 0 | 0 | 1 | 5 | 19 | 49 |
+| 2017 | 45 | 45 | 0 | 0 | 0 | 1 | 3 | 9 | 36 |
+| 2018 | 39 | 39 | 0 | 0 | 0 | 0 | 2 | 5 | 22 |
+| 2019 | 43 | 43 | 0 | 0 | 0 | 1 | 5 | 17 | 33 |
+| 2020 | 131 | 129 | 0 | 0 | 0 | 0 | 5 | 23 | 76 |
+| 2021 | 100 | 100 | 0 | 0 | 0 | 5 | 5 | 20 | 67 |
+| 2022 | 132 | 132 | 0 | 0 | 0 | 5 | 5 | 25 | 73 |
+| 2023 | 127 | 127 | 0 | 0 | 0 | 14 | 5 | 24 | 64 |
+| 2024 | 165 | 165 | 0 | 0 | 0 | 7 | 9 | 29 | 93 |
+| 2025 | 242 | 240 | 2 | 0 | 0 | 17 | 9 | 51 | 106 |
 
 ## Fortolkning og begrænsninger
 
 - “Verificeret” betyder, at browseren fandt det forventede kamp-ID på den dynamiske BadmintonPlayer-side.
 - “Ingen match-ID” er et hul, der kræver ny fallback eller manuel kontrol.
-- U15 og yngre er bevidst udskudt.
+- Ungdomskørslen er nu gennemført; youth_verified tælles som verificeret, mens youth_no_match_detail tælles som et separat hul.
 - Rapporten beskriver køens dækning; den beviser ikke, at køen indeholder alle GSB-kampe.
 - Individuelle spillerkampe og komplette slutstillinger skal måles i særskilte rapporter.
 

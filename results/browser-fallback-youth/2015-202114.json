@@ -1,0 +1,19 @@
+{
+  "key": "2015:202114",
+  "season": 2015,
+  "matchId": 202114,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "FKIF Frederiksberg 2",
+  "ageGroupId": "4",
+  "leagueGroupId": "6091",
+  "roundDate": "2015-10-04",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6091,1,8,,202114,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2015-202114.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:27:33.595Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6091,1,8,,202114,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U13 2015/2016\nVis rækker\n\n\nU13 D Række 4 Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t202114\nRunde\t2 04-10-2015\nTid\tsø 04-10-2015 11:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 2\nJesper-Max Larsen\njesper.max.larsen@gmail.com\n26278246\nUdehold\tFKIF Frederiksberg 2\nThomas Fjeldberg\nungdomsformand@fkif.dk\n29487708\nResultat\t0-6\nPoint\t0-2\nAfgjort uden kamp (afbud/udeblivelse)\n\n\n\tGladsaxe Søborg 2\tFKIF Frederiksberg 2\t1\t2\t3\tVinder W.O.\n1. D\t\nAnna Berg Siemsen\nAsbjørn Dam Sørensen\n\t\nHugo Ernst W. Andersen\nChristian Bjerre Bang\n\t\t\t\t\n2. D\t\nAugust Max Larsen\nFrederik Fabricius Dahl\n\t\nCecilie Hansen\nEmmarose Josefine Hansen\n\t\t\t\t\n1. S\t\nAsbjørn Dam Sørensen\n\t\nHugo Ernst W. Andersen\n\t\t\t\t\n2. S\t\nFrederik Fabricius Dahl\n\t\nChristian Bjerre Bang\n\t\t\t\t\n3. S\t\nAugust Max Larsen\n\t\nCecilie Hansen\n\t\t\t\t\n4. S\t\nAnna Berg Siemsen\n\t\nEmmarose Josefine Hansen\n\t\t\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

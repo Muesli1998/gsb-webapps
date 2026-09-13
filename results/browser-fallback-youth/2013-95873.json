@@ -1,0 +1,19 @@
+{
+  "key": "2013:95873",
+  "season": 2013,
+  "matchId": 95873,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Lyngby 3",
+  "ageGroupId": "3",
+  "leagueGroupId": "2645",
+  "roundDate": "2013-10-27",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2013,2645,1,8,,95873,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2013-95873.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:28:55.319Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2013,2645,1,8,,95873,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U11 2013/2014\nVis rækker\n\n\nU11 Serie X1 Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t95873\nRunde\t4 27-10-2013\nTid\tsø 27-10-2013 10:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 2\nMads Hvid Ribergaard\nmhribergaard@yahoo.dk\n61261897\nUdehold\tLyngby 3\nSusanne Henner\nSusanne.henner@post.tele.dk\n22163966\nResultat\t3-3\nPoint\t1-1\n\tGladsaxe Søborg 2\tLyngby 3\t1\t2\t3\tVinder W.O.\n1. S\t\nMalte Hvid Ribergaard\n\t\nMartin Boe Polley\n\t21 - 7\t21 - 14\t\t\n2. S\t\nViggo Kongslev Hilbert\n\t\nWilliam Bramsen Ravn\n\t21 - 15\t21 - 16\t\t\n3. S\t\nFrederik Fabricius Dahl\n\t\nJens Christian Skøtt Dinesen\n\t16 - 21\t9 - 21\t\t\n4. S\t\nPeter Greve Amdi\n\t\nAdam Henner Nielsen\n\t26 - 24\t18 - 21\t21 - 18\t\n1. D\t\nMalte Hvid Ribergaard\nViggo Kongslev Hilbert\n\t\nWilliam Bramsen Ravn\nJens Christian Skøtt Dinesen\n\t15 - 21\t22 - 20\t19 - 21\t\n2. D\t\nFrederik Fabricius Dahl\nPeter Greve Amdi\n\t\nMartin Boe Polley\nAdam Henner Nielsen\n\t12 - 21\t16 - 21\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

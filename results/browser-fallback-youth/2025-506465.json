@@ -1,0 +1,19 @@
+{
+  "key": "2025:506465",
+  "season": 2025,
+  "matchId": 506465,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "Lystrup 1",
+  "ageGroupId": "4",
+  "leagueGroupId": "18610",
+  "roundDate": "2026-04-11",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18610,1,8,,506465,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2025-506465.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:06:50.897Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18610,1,8,,506465,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADDAN,DGI U13 2025/2026\nVis rækker\n\n\nDMU Hold U13D (4800) - 4 Spillere Pulje 4\nStilling\nVis alle kampe\n\nKampnr\t506465\nRunde\t1 11-04-2026\nTid\tlø 11-04-2026 14:00\nSpillested\tMagion Vestjysk Bank Arena\nTinghusgade 15\n7200 Grindsted\nHjemmehold\tGladsaxe Søborg 2\nKiran Vaddin\nkiranvaddin@gmail.com\n52658510\nUdehold\tLystrup 1\nJens Erik Lindgaard\nkramsomajo@youmail.dk\n50562517\nResultat\t5-1\nPoint\t4-0\n\tGladsaxe Søborg 2\tLystrup 1\t1\t2\t3\tVinder W.O.\n1. S\t\nLukas Glaring\n\t\nElias Ørum Cueto\n\t21 - 14\t21 - 19\t\t\n2. S\t\nJesper Yan\n\t\nAksel Rosenkilde Jacobsen\n\t21 - 10\t21 - 15\t\t\n3. S\t\nSmayan Kiran Vaddin\n\t\nKristian Lillelund Jørgensen\n\t21 - 16\t21 - 16\t\t\n4. S\t\nAanya Jha\n\t\nVillads Alstrup-Markussen\n\t21 - 17\t12 - 21\t21 - 13\t\n1. D\t\nLukas Glaring\nSvea Lisbeth Bergström Hesselballe\n\t\nElias Ørum Cueto\nAksel Rosenkilde Jacobsen\n\t22 - 20\t16 - 21\t15 - 21\t\n2. D\t\nSmayan Kiran Vaddin\nJesper Yan\n\t\nKristian Lillelund Jørgensen\nVillads Alstrup-Markussen\n\t21 - 13\t21 - 15\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

@@ -1,0 +1,19 @@
+{
+  "key": "2022:442947",
+  "season": 2022,
+  "matchId": 442947,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "Humlebæk 1",
+  "ageGroupId": "3",
+  "leagueGroupId": "15528",
+  "roundDate": "2023-04-30",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,15528,1,8,,442947,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2022-442947.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:16:42.516Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2022,15528,1,8,,442947,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADDAN,DGI U11 2022/2023\nVis rækker\n\n\nDMU H - U11 3600 4 spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t442947\nRunde\t2 30-04-2023\nTid\tsø 30-04-2023 11:30\nSpillested\tViadukthallen\nBlåhøjvej 10\n7200 Grindsted\nHjemmehold\tHumlebæk 1\nLene Palling\nlene@palling.dk\n21828305\nUdehold\tGladsaxe Søborg 1\nJakob Buron\njakob@buron.eu\n61303703\nResultat\t6-0\nPoint\t4-0\n\tHumlebæk 1\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. S\t\nTheodor Fals\n\t\nAnton Aavang Arvidson\n\t21 - 16\t21 - 9\t\t\n2. S\t\nWaldemar Beer Hansen\n\t\nSilas Buron\n\t21 - 16\t21 - 19\t\t\n3. S\t\nLaurits Bøje Kløcker\n\t\nOliver Soon Nielsen\n\t21 - 10\t21 - 14\t\t\n4. S\t\nAksel Emil Saabøll\n\t\nErik Kragh Winther\n\t21 - 11\t21 - 12\t\t\n1. D\t\nTheodor Fals\nWaldemar Beer Hansen\n\t\nSilas Buron\nAnton Aavang Arvidson\n\t21 - 7\t21 - 15\t\t\n2. D\t\nLaurits Bøje Kløcker\nValdemar Lervang Skov\n\t\nOliver Soon Nielsen\nErik Kragh Winther\n\t21 - 14\t21 - 16\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

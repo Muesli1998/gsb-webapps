@@ -1,0 +1,19 @@
+{
+  "key": "2012:50316",
+  "season": 2012,
+  "matchId": 50316,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "NBK Amager",
+  "ageGroupId": "5",
+  "leagueGroupId": "1327",
+  "roundDate": "2013-02-03",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2012,1327,1,8,,50316,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2012-50316.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:30:30.598Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2012,1327,1,8,,50316,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2012/2013\nVis rækker\n\n\nU15 Serie X1 U15 Serie X1\nStilling\nVis alle kampe\n\nKampnr\t50316\nRunde\t6 03-02-2013\nTid\tsø 03-02-2013 13:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg 2\nUdehold\tNBK Amager\nResultat\t6-0\nPoint\t2-0\n\tGladsaxe Søborg 2\tNBK Amager\t1\t2\t3\tVinder W.O.\n1. S\t\nJens Perregaard\n\t\nMikkel Goth Jensen\n\t21 - 10\t21 - 8\t\t\n2. S\t\nErik Juul\n\t\nJonas Steen Jensen\n\t21 - 11\t19 - 21\t21 - 6\t\n3. S\t\nOliver Dahl Christiansen\n\t\nChantal Anna Violet Machalet\n\t21 - 7\t21 - 4\t\t\n4. S\t\nPhilip Agerlyng\n\t\nMads Kreuger\n\t21 - 10\t21 - 16\t\t\n1. D\t\nJens Perregaard\nErik Juul\n\t\nMikkel Goth Jensen\nJonas Steen Jensen\n\t21 - 7\t21 - 10\t\t\n2. D\t\nOliver Dahl Christiansen\nPhilip Agerlyng\n\t\nChantal Anna Violet Machalet\nMads Kreuger\n\t21 - 14\t21 - 10\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

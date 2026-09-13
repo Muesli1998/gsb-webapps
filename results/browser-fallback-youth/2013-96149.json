@@ -1,0 +1,19 @@
+{
+  "key": "2013:96149",
+  "season": 2013,
+  "matchId": 96149,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "KBK Kbh. 2",
+  "ageGroupId": "5",
+  "leagueGroupId": "2686",
+  "roundDate": "2014-03-09",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2013,2686,1,8,,96149,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2013-96149.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:29:14.993Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2013,2686,1,8,,96149,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U15 2013/2014\nVis rækker\n\n\nU15 2. serie Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t96149\nRunde\t10 09-03-2014\nTid\tsø 09-03-2014 14:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg\nStefan Larson\nstl@dahl-as.dk\n31745407\nUdehold\tKBK Kbh. 2\nElisabeth Holbæk\nelisabeth.holbaek@mail.dk\n23353931\nResultat\t5-3\nPoint\t2-0\n\tGladsaxe Søborg\tKBK Kbh. 2\t1\t2\t3\tVinder W.O.\n1. MD\t\nAndreas Lyhne Fiehn\nNaija Dam\n\t\nVictor Munck Nørbo\nAmanda Hartmann\n\t8 - 21\t12 - 21\t\t\n1. S\t\nJonathan W. Hansen\n\t\nMikkel Holbæk\n\t21 - 10\t21 - 3\t\t\n2. S\t\nEmil Wilhardt Jensen\n\t\nSamuel Bruun Gullach\n\t21 - 5\t21 - 6\t\t\n3. S\t\nOliver Guldbæk\n\t\n(Ikke fremmødt)\n\t\t\t\tG\n4. S\t\nHelene Poulsen\n\t\nStella Kræmmer Mørk\n\t0 - 21\t4 - 21\t\t\n1. D\t\nJonathan W. Hansen\nEmil Wilhardt Jensen\n\t\nVictor Munck Nørbo\nMikkel Holbæk\n\t21 - 8\t21 - 8\t\t\n2. D\t\nAndreas Lyhne Fiehn\nOliver Guldbæk\n\t\n(Ikke fremmødt)\n(Ikke fremmødt)\n\t\t\t\tG\n3. D\t\nNaija Dam\nHelene Poulsen\n\t\nStella Kræmmer Mørk\nAmanda Hartmann\n\t3 - 21\t1 - 21\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

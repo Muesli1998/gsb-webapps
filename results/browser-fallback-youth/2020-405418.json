@@ -1,0 +1,19 @@
+{
+  "key": "2020:405418",
+  "season": 2020,
+  "matchId": 405418,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "FKIF Frederiksberg 1",
+  "ageGroupId": "2",
+  "leagueGroupId": "13487",
+  "roundDate": "2021-04-25",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13487,1,8,,405418,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2020-405418.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:22:18.762Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13487,1,8,,405418,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U09 2020/2021\nVis rækker\n\n\nU09 2500 4 Spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t405418\nRunde\t11 25-04-2021\nTid\t\nSpillested\t\nHjemmehold\tFKIF Frederiksberg 1\nKatinka Gro Kragh Slaatorn\nkatinkakragh@gmail.com\n26171910\nUdehold\tGladsaxe Søborg 2\nAnders Leth-Epsensen\nandersle27@hotmail.com\n22397778\nResultat\t-\nPoint\t-\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

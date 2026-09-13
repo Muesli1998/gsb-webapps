@@ -1,0 +1,19 @@
+{
+  "key": "2016:239567",
+  "season": 2016,
+  "matchId": 239567,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "KFUM Badminton Kbh.",
+  "ageGroupId": "3",
+  "leagueGroupId": "7668",
+  "roundDate": "2016-10-09",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7668,1,8,,239567,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2016-239567.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:26:07.036Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2016,7668,1,8,,239567,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U11 2016/2017\nVis rækker\n\n\nU11 D (4) P1 Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t239567\nRunde\t2 09-10-2016\nTid\tlø 08-10-2016 13:00\nSpillested\tEmdruphallen\nNøkkerosevej 23\n2400 København NV\nHjemmehold\tKFUM Badminton Kbh.\nMichael Petersen\nalmindingen@yahoo.dk\n30778847\nUdehold\tGladsaxe Søborg\nGregers Gorm\ngregersgorm@icloud.com\n22539966\nResultat\t2-4\nPoint\t0-3\n\tKFUM Badminton Kbh.\tGladsaxe Søborg\t1\t2\t3\tVinder W.O.\n1. S\t\nOtto Bjarnø\n\t\nKasper Gorm\n\t17 - 21\t13 - 21\t\t\n2. S\t\nPeter Bjerre Olsen\n\t\nLasse Bjerregaard Kirt\n\t18 - 21\t20 - 22\t\t\n3. S\t\nInnanna Hassan Sultan Hajem\n\t\nAnton Berner\n\t10 - 21\t7 - 21\t\t\n4. S\t\nElla Østergård Petersen\n\t\nMalthe Baltzer\n\t\t\t\tK\n1. D\t\nOtto Bjarnø\nPeter Bjerre Olsen\n\t\nKasper Gorm\nLasse Bjerregaard Kirt\n\t17 - 21\t16 - 21\t\t\n2. D\t\nElla Østergård Petersen\nInnanna Hassan Sultan Hajem\n\t\nMalthe Baltzer\nAnton Berner\n\t\t\t\tK\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

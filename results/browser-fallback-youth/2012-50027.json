@@ -1,0 +1,19 @@
+{
+  "key": "2012:50027",
+  "season": 2012,
+  "matchId": 50027,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Lyngby 2",
+  "ageGroupId": "4",
+  "leagueGroupId": "1318",
+  "roundDate": "2012-11-18",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2012,1318,1,8,,50027,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2012-50027.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:29:47.711Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2012,1318,1,8,,50027,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U13 2012/2013\nVis rækker\n\n\nU13 3. Serie U13 3. Serie\nStilling\nVis alle kampe\n\nKampnr\t50027\nRunde\t3 18-11-2012\nTid\tsø 18-11-2012 12:00\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tGladsaxe Søborg\nUdehold\tLyngby 2\nResultat\t4-4\nPoint\t1-1\n\tGladsaxe Søborg\tLyngby 2\t1\t2\t3\tVinder W.O.\n1. MD\t\nRasmus Lyhne Fiehn\n(Ikke fremmødt)\n\t\nOliver Hey Mathiasen\nCaja Wibe Brændholt Olsen\n\t\t\t\tL\n1. S\t\nSofie Sophia Lyhne\n\t\nAlma Pedersen\n\t16 - 21\t22 - 20\t21 - 19\t\n2. S\t\nJonathan W. Hansen\n\t\nChristian Svarrer\n\t21 - 11\t21 - 8\t\t\n3. S\t\nRaphael Kongsvig\n\t\nTobias Sehested Bonde\n\t21 - 14\t21 - 16\t\t\n4. S\t\nRasmus Herskind\n\t\nAndreas Konradsen\n\t12 - 21\t8 - 21\t\t\n1. D\t\nSofie Sophia Lyhne\n(Ikke fremmødt)\n\t\nAlma Pedersen\nCaja Wibe Brændholt Olsen\n\t\t\t\tL\n2. D\t\nJonathan W. Hansen\nRaphael Kongsvig\n\t\nChristian Svarrer\nTobias Sehested Bonde\n\t21 - 14\t21 - 8\t\t\n3. D\t\nRasmus Herskind\nRasmus Lyhne Fiehn\n\t\nAndreas Konradsen\nOliver Hey Mathiasen\n\t12 - 21\t13 - 21\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

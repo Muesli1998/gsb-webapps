@@ -1,0 +1,19 @@
+{
+  "key": "2014:142158",
+  "season": 2014,
+  "matchId": 142158,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Tono Kbh.",
+  "ageGroupId": "3",
+  "leagueGroupId": "4253",
+  "roundDate": "2015-02-01",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2014,4253,1,8,,142158,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2014-142158.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:27:53.220Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2014,4253,1,8,,142158,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U11 2014/2015\nVis rækker\n\n\nU11 serie X1 (4 spillere C) Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t142158\nRunde\t6 01-02-2015\nTid\tsø 01-02-2015 09:30\nSpillested\tGrøndal Centret Hal J\nHvidkildevej 64\n2400 København NV\nHjemmehold\tTono Kbh.\nUdehold\tGladsaxe Søborg\nChristian Thrysøe\nchristian.fam.thrysoe@gmail.com\n29482620\nResultat\t5-1\nPoint\t2-0\n\tTono Kbh.\tGladsaxe Søborg\t1\t2\t3\tVinder W.O.\n1. S\t\nAlexander Durafour\n\t\nAugust Max Larsen\n\t21 - 6\t21 - 13\t\t\n2. S\t\nSofus Kold Navntoft\n\t\nJohannes Wolff\n\t21 - 9\t21 - 8\t\t\n3. S\t\nAlexander Laursen\n\t\nJonas Abildgaard\n\t25 - 23\t21 - 16\t\t\n4. S\t\nThøger Bjerg\n\t\nAnna Berg Siemsen\n\t8 - 21\t12 - 21\t\t\n1. D\t\nAlexander Laursen\nAlexander Durafour\n\t\nAugust Max Larsen\nJonas Abildgaard\n\t21 - 14\t21 - 18\t\t\n2. D\t\nSofus Kold Navntoft\nThøger Bjerg\n\t\nJohannes Wolff\nAnna Berg Siemsen\n\t21 - 15\t21 - 18\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

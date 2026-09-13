@@ -1,0 +1,19 @@
+{
+  "key": "2021:413844",
+  "season": 2021,
+  "matchId": 413844,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "KMB2010 2",
+  "ageGroupId": "3",
+  "leagueGroupId": "14138",
+  "roundDate": "2021-10-10",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2021,14138,1,8,,413844,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2021-413844.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:20:11.684Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2021,14138,1,8,,413844,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U11 2021/2022\nVis rækker\n\n\nU11 3100 4 Spillere Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t413844\nRunde\t1 10-10-2021\nTid\tsø 10-10-2021 13:30\nSpillested\tGladsaxe Gl. Badmintonhal\nGladsaxevej 200\n2860 Søborg\nTelefon 39 69 95 49\nHjemmehold\tKMB2010 2\nKasper Thaarup\nkasperthaarup@gmail.com\n20451925\nUdehold\tGladsaxe Søborg 1\nCarsten Hjort Laursen\nc_laursen_dk@yahoo.dk\n61303770\nResultat\t5-1\nPoint\t3-0\n\tKMB2010 2\tGladsaxe Søborg 1\t1\t2\t3\tVinder W.O.\n1. S\t\nSamuel Dalsby Kønigsberg\n\t\nAnton Aavang Arvidson\n\t21 - 10\t21 - 4\t\t\n2. S\t\nMathias Toft Tørresdal\n\t\nLudvig Alexander Rosager Pedas\n\t13 - 21\t22 - 20\t17 - 21\t\n3. S\t\nSolveig Troelsgaard Werling\n\t\nCornelius Maagaard Isager-Sally\n\t21 - 7\t21 - 7\t\t\n4. S\t\nFilippa Steffensen\n\t\nErik Kragh Winther\n\t21 - 17\t21 - 14\t\t\n1. D\t\nMathias Toft Tørresdal\nSamuel Dalsby Kønigsberg\n\t\nLudvig Alexander Rosager Pedas\nAnton Aavang Arvidson\n\t21 - 17\t21 - 6\t\t\n2. D\t\nSolveig Troelsgaard Werling\nFilippa Steffensen\n\t\nCornelius Maagaard Isager-Sally\nErik Kragh Winther\n\t22 - 20\t21 - 10\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

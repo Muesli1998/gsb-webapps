@@ -1,0 +1,19 @@
+{
+  "key": "2015:196574",
+  "season": 2015,
+  "matchId": 196574,
+  "teamName": "Gladsaxe Søborg",
+  "opponent": "Hvidovre 2",
+  "ageGroupId": "3",
+  "leagueGroupId": "6085",
+  "roundDate": "2016-03-13",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6085,1,8,,196574,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2015-196574.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:27:17.247Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2015,6085,1,8,,196574,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U11 2015/2016\nVis rækker\n\n\nU11 D Række 4 Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t196574\nRunde\t8 13-03-2016\nTid\tsø 13-03-2016 10:00\nSpillested\tHBC-Hallen\nBibliotekvej 62\n2650 Hvidovre\nTelefon 36 49 10 05\nHjemmehold\tHvidovre 2\nGitte Andersen\ngithan99@hotmail.com\n24491512\nUdehold\tGladsaxe Søborg\nLene Sørensen\nsorensenlene@ymail.com\n29392379\nResultat\t2-4\nPoint\t0-2\n\tHvidovre 2\tGladsaxe Søborg\t1\t2\t3\tVinder W.O.\n1. D\t\nEmil Venås\nJesper Prip Høgstedt\n\t\nWilliam Staal-Christensen\nKasper Gorm\n\t14 - 21\t14 - 21\t\t\n2. D\t\nTobias Hvid\nHector Damborg Randeris\n\t\nLasse Bjerregaard Kirt\nAlexander Riege Klausen\n\t19 - 21\t21 - 17\t17 - 21\t\n1. S\t\nEmil Venås\n\t\nWilliam Staal-Christensen\n\t21 - 14\t21 - 19\t\t\n2. S\t\nJesper Prip Høgstedt\n\t\nKasper Gorm\n\t19 - 21\t20 - 22\t\t\n3. S\t\nTobias Hvid\n\t\nLasse Bjerregaard Kirt\n\t21 - 14\t21 - 7\t\t\n4. S\t\nHector Damborg Randeris\n\t\nAlexander Riege Klausen\n\t9 - 21\t21 - 17\t21 - 23\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

@@ -1,0 +1,19 @@
+{
+  "key": "2014:142316",
+  "season": 2014,
+  "matchId": 142316,
+  "teamName": "Gladsaxe Søborg 2",
+  "opponent": "BC37 Amager",
+  "ageGroupId": "4",
+  "leagueGroupId": "4260",
+  "roundDate": "2014-12-07",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2014,4260,1,8,,142316,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2014-142316.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:28:11.200Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2014,4260,1,8,,142316,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U13 2014/2015\nVis rækker\n\n\nU13 serie X2 (4 spillere C) Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t142316\nRunde\t4 07-12-2014\nTid\tsø 07-12-2014 13:00\nSpillested\tBC37-Hallen\nStrandlodsvej 69\n2300 København S\nTelefon 32 97 08 96\nHjemmehold\tBC37 Amager\nPeter Johnsen\npcjohnsen@gmail.com\n41144493\nUdehold\tGladsaxe Søborg 2\nMads Hvid Ribergaard\nmhri@dmi.dk\n61261897\nResultat\t1-5\nPoint\t0-2\n\tBC37 Amager\tGladsaxe Søborg 2\t1\t2\t3\tVinder W.O.\n1. S\t\nLinus Grøn\n\t\nMalte Hvid Ribergaard\n\t21 - 14\t9 - 21\t10 - 21\t\n2. S\t\nLukas Koreska\n\t\nFrederik Fabricius Dahl\n\t23 - 21\t8 - 21\t19 - 21\t\n3. S\t\nLoui Kristensen\n\t\nPeter Greve Amdi\n\t15 - 21\t21 - 19\t21 - 19\t\n4. S\t\nCasper Riis\n\t\nAmalie Bredholm\n\t\t\t\tG\n1. D\t\nLinus Grøn\nLoui Kristensen\n\t\nMalte Hvid Ribergaard\nFrederik Fabricius Dahl\n\t11 - 21\t16 - 21\t\t\n2. D\t\nLukas Koreska\nCasper Riis\n\t\nPeter Greve Amdi\nAmalie Bredholm\n\t\t\t\tG\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

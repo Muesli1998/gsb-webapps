@@ -1,0 +1,19 @@
+{
+  "key": "2025:492931",
+  "season": 2025,
+  "matchId": 492931,
+  "teamName": "Gladsaxe Søborg 7",
+  "opponent": "NBK Amager 1",
+  "ageGroupId": "4",
+  "leagueGroupId": "18142",
+  "roundDate": "2026-02-01",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18142,1,8,,492931,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2025-492931.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:07:36.576Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18142,1,8,,492931,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH U13 2025/2026\nVis rækker\n\n\nU13 D 4800 (4 spillere) BD Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t492931\nRunde\t7 01-02-2026\nTid\tlø 31-01-2026 14:00\nSpillested\tMariendalshallen Hal B\nMariendalsvej 21 C\n2000 Frederiksberg\nHjemmehold\tNBK Amager 1\nGitte Frederiksen\ngih@di.dk\n20850809\nUdehold\tGladsaxe Søborg 7\nPeter Kortegaard\nbadminton@kortegaard.org\n26365172\nResultat\t5-1\nPoint\t4-0\n\tNBK Amager 1\tGladsaxe Søborg 7\t1\t2\t3\tVinder W.O.\n1. S\t\nMaj Frederiksen\n\t\nSmayan Kiran Vaddin\n\t21 - 16\t21 - 13\t\t\n2. S\t\nMikkel Bertram Bruun\n\t\nAlexander Lindholm Boysen\n\t21 - 8\t21 - 19\t\t\n3. S\t\nBuster Kastoft Madsen\n\t\nCarl Winning Laursen\n\t21 - 19\t12 - 21\t13 - 21\t\n4. S\t\nMads Jespersen\n\t\nSofus Goodley Kortegaard\n\t21 - 8\t21 - 3\t\t\n1. D\t\nMaj Frederiksen\nMikkel Bertram Bruun\n\t\nSmayan Kiran Vaddin\nOscar Goodley Kortegaard\n\t21 - 5\t21 - 9\t\t\n2. D\t\nMads Jespersen\nBuster Kastoft Madsen\n\t\nSofus Goodley Kortegaard\nCarl Winning Laursen\n\t21 - 19\t21 - 16\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

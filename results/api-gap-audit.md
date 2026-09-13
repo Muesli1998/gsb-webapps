@@ -1,62 +1,49 @@
-# API- og felt-dækning: read-only audit
+# API- og felt-dækning: aktuel audit
 
-Dato: 2026-09-13
+Dato: 2026-09-13T05:43:02.396Z
 
-## Omfang
+## Samlet
 
-Auditten læser `data/gsb-statistik-normalized.db` uden at ændre kø eller database. Den gennemgår `team_matches` efter status, sæson og faktisk udfyldte felter i den normaliserede tabel.
+- Teamkampe: **2818**
+- API-fejl: **186**
+- Manglende spillerdata-status: **174**
+- Manglende resultatfelt: **1737**
+- Manglende hjemme/ude: **366**
 
-## Statusfordeling
+## Status
 
 | Status | Antal |
 |---|---:|
-| complete | 1.374 |
-| api_error | 1.066 |
-| missing_players | 314 |
+| api_error | 186 |
+| browser_verified | 998 |
+| browser_verified_no_result | 39 |
+| complete | 1374 |
 | corona_suspended | 47 |
-| browser_verified | 17 |
-| **I alt** | **2.818** |
+| missing_players | 174 |
 
-## Vigtige fund
+## Pr. sæson
 
-- `result_raw` er tomt eller NULL for **2.757/2.818** rækker.
-- `home_name_raw` mangler for **1.386/2.818** rækker.
-- `away_name_raw` mangler for **1.386/2.818** rækker.
-- Manglende hjemme- og udehold optræder altid sammen i den nuværende tabel. Det tyder på, at problemet ligger i samme ekstraktions-/synkroniseringsfelt, ikke at kun den ene side mangler.
-- API-fejlene er koncentreret i nyere sæsoner: 2025 (237), 2024 (164), 2022 (131), 2023 (124), 2021 (96). Der findes også fejl i alle ældre sæsoner, ned til 2010 (11).
-- 2020 har 41 `api_error`-rækker samt 29 `corona_suspended`-rækker; corona-status bør derfor holdes adskilt fra tekniske API-fejl.
-- `complete` er ikke lig med komplet normaliseret række: alle 1.374 `complete`-rækker står stadig uden `result_raw` i den aktuelle tabel. Statusfeltet må derfor ikke bruges som bevis for feltdækning.
-
-## Sæsonoversigt
-
-| Sæson | I alt | Uden resultat | Uden hjemmehold | Uden udehold |
+| Sæson | Kampe | API-fejl | Mangler resultat | Mangler hjemme/ude |
 |---:|---:|---:|---:|---:|
-| 2010 | 11 | 11 | 11 | 11 |
-| 2011 | 169 | 169 | 159 | 159 |
-| 2012 | 131 | 131 | 52 | 52 |
-| 2013 | 134 | 134 | 43 | 43 |
-| 2014 | 144 | 144 | 53 | 53 |
-| 2015 | 156 | 156 | 48 | 48 |
-| 2016 | 147 | 145 | 52 | 52 |
-| 2017 | 133 | 133 | 45 | 45 |
-| 2018 | 143 | 139 | 35 | 35 |
-| 2019 | 125 | 102 | 20 | 20 |
-| 2020 | 162 | 133 | 102 | 102 |
-| 2021 | 186 | 186 | 100 | 100 |
-| 2022 | 227 | 227 | 132 | 132 |
-| 2023 | 255 | 255 | 127 | 127 |
-| 2024 | 295 | 295 | 165 | 165 |
-| 2025 | 400 | 397 | 242 | 242 |
+| 2010 | 11 | 11 | 11 | 22 |
+| 2011 | 169 | 1 | 87 | 154 |
+| 2012 | 131 | 6 | 89 | 20 |
+| 2013 | 134 | 10 | 101 | 20 |
+| 2014 | 144 | 1 | 110 | 38 |
+| 2015 | 156 | 0 | 123 | 30 |
+| 2016 | 147 | 6 | 116 | 46 |
+| 2017 | 133 | 2 | 96 | 16 |
+| 2018 | 143 | 9 | 113 | 18 |
+| 2019 | 125 | 0 | 82 | 0 |
+| 2020 | 162 | 9 | 77 | 92 |
+| 2021 | 186 | 15 | 103 | 34 |
+| 2022 | 227 | 16 | 111 | 32 |
+| 2023 | 255 | 32 | 160 | 64 |
+| 2024 | 295 | 26 | 156 | 52 |
+| 2025 | 400 | 42 | 202 | 94 |
 
-## Fortolkning og næste tests
+## Fortolkning
 
-1. Brug de bevarede rå browserpayloads til at udfylde `home_name_raw`, `away_name_raw` og `result_raw` uden at ændre statuslogikken.
-2. Lav en felt-dækningsrapport efter synkroniseringen; `complete`, `api_error` og `missing_players` skal rapporteres separat fra faktiske udfyldte felter.
-3. Prioritér 2025→2021, fordi de har flest API-fejl og manglende sider.
-4. Kontrollér særskilt 2010–2015, hvor ældre formatforskelle kan være en anden årsag end moderne API-fejl.
-5. Sammenlign kampantal mod de importerede stillinger pr. `season_id` og `league_group_id`.
-6. Bevar corona-suspenderede poster som en dokumenteret status og bland dem ikke sammen med manglende tekniske data.
-
-## Begrænsning
-
-Denne audit viser den aktuelle normaliserede database. Den beviser ikke, at en kamp ikke findes på BadmintonPlayer, når et felt mangler; den viser kun, at feltet endnu ikke er synkroniseret ind i tabellen. Råpayloads og browserkilder skal bruges til at afgøre, om et manglende felt kan udfyldes.
+- Browserverificerede rækker er synkroniseret med de felter, der faktisk stod på den dynamiske side.
+- To ungdomskampe mangler stadig dynamisk kampdetalje og står som særskilte huller i køen.
+- De resterende mangler prioriteres efter sæson og felt: først hjemme/ude og resultat, derefter individuelle spillere og detaljer.

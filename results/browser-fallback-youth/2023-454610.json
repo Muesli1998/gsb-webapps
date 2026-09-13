@@ -1,0 +1,19 @@
+{
+  "key": "2023:454610",
+  "season": 2023,
+  "matchId": 454610,
+  "teamName": "Gladsaxe Søborg 1",
+  "opponent": "KBK Kbh. 1",
+  "ageGroupId": "4",
+  "leagueGroupId": "15993",
+  "roundDate": "2024-02-25",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,15993,1,8,,454610,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2023-454610.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:15:28.132Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2023,15993,1,8,,454610,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH,BADSJ,DGI-NSJ,DGI-MVS U13 2023/2024\nVis rækker\n\n\nU13 - 4400 (4 spillere) Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t454610\nRunde\t8 25-02-2024\nTid\tsø 25-02-2024 15:45\nSpillested\tKBK-Hallen\nKrausesvej 12\n2100 København Ø\nTelefon 35 38 72 92\nHjemmehold\tGladsaxe Søborg 1\nLau Østberg\nlauogsara@gmail.com\n20709092\nUdehold\tKBK Kbh. 1\nMikaela v. Freiesleben\nm_freiesleben@hotmail.com\n26277501\nResultat\t4-2\nPoint\t3-1\n\tGladsaxe Søborg 1\tKBK Kbh. 1\t1\t2\t3\tVinder W.O.\n1. S\t\nSylvester Østberg\n\t\nSebastian Ortiz Jensen\n\t21 - 15\t21 - 4\t\t\n2. S\t\nLouis Valdemar Hedegaard Toftlund\n\t\nOtto Mathias Karskov\n\t21 - 14\t21 - 19\t\t\n3. S\t\nRishi Mandapati\n\t\nBror Theodor v. Freiesleben\n\t22 - 20\t21 - 19\t\t\n4. S\t\nMads Kaarsberg Andersen\n\t\nVildfred Empacher\n\t20 - 22\t16 - 21\t\t\n1. D\t\nLouis Valdemar Hedegaard Toftlund\nRishi Mandapati\n\t\nOtto Mathias Karskov\nSebastian Ortiz Jensen\n\t21 - 23\t19 - 21\t\t\n2. D\t\nErik Kragh Winther\nMads Kaarsberg Andersen\n\t\nLaurits Rattleff\nVildfred Empacher\n\t21 - 19\t19 - 21\t21 - 18\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}

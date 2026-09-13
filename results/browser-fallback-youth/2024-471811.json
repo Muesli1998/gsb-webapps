@@ -1,0 +1,19 @@
+{
+  "key": "2024:471811",
+  "season": 2024,
+  "matchId": 471811,
+  "teamName": "Gladsaxe Søborg 3",
+  "opponent": "Badminton Roskilde 4",
+  "ageGroupId": "4",
+  "leagueGroupId": "17094",
+  "roundDate": "2025-02-02",
+  "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2024,17094,1,8,,471811,1093,",
+  "status": "youth_verified",
+  "resultFile": "results/browser-fallback/2024-471811.json",
+  "deferredReason": "U15 og yngre udskudt efter prioriteringsbeslutning",
+  "resultSource": "playwright_youth_browser",
+  "verifiedAt": "2026-09-13T05:12:34.732Z",
+  "verification": "Youth dynamic match page rendered",
+  "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2024,17094,1,8,,471811,1093,",
+  "rawText": "\t\nFAQ Opret brugerkonto Log ind \nSæsonplan Rank-/Rækkelister Holdturnering Turnering Spillere Klubber Kurser Livescore\nHoldturnering\n\n\nSøg andre rækker\nVis alle rækker for Gladsaxe Søborg\n\n\nBADKBH,BADLF,BADSJ,DGI-NSJ,DGI-STS,DGI-MVS U13 2024/2025\nVis rækker\n\n\nU13 C, 4200 (4 spillere) Pulje 1\nStilling\nVis alle kampe\n\nKampnr\t471811\nRunde\t7 02-02-2025\nTid\tlø 01-02-2025 11:30\nSpillested\tKrøyersvej\nKrøyersvej 5A\n2930 Klampenborg\nTelefon 39 64 23 83\nHjemmehold\tBadminton Roskilde 4\nStefano Odorico\nos@faodorico.dk\n28767499\nUdehold\tGladsaxe Søborg 3\nRasmus Majborn\nrasmus.majborn@gmail.com\n41271614\nResultat\t1-5\nPoint\t0-4\n\tBadminton Roskilde 4\tGladsaxe Søborg 3\t1\t2\t3\tVinder W.O.\n1. S\t\nCaspian Odorico\n\t\nMagne Gjervan Majborn\n\t10 - 21\t9 - 21\t\t\n2. S\t\nBertram Moestrup\n\t\nLauge Juul Hornsgaard\n\t10 - 21\t12 - 21\t\t\n3. S\t\nAlfred Holm Rasmussen\n\t\nLuc Nørmark Jespersen\n\t20 - 22\t20 - 22\t\t\n4. S\t\nAksel Greve\n\t\nPontus Einar Anker Mikkelsen\n\t12 - 21\t8 - 21\t\t\n1. D\t\nCaspian Odorico\nAlfred Holm Rasmussen\n\t\nMagne Gjervan Majborn\nLuc Nørmark Jespersen\n\t21 - 17\t21 - 15\t\t\n2. D\t\nAksel Greve\nBertram Moestrup\n\t\nLaurits Schjerning Andersen\nPontus Einar Anker Mikkelsen\n\t5 - 21\t12 - 21\t\t\n\n\nReserver\nIngen\n\nUdskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore\n\n\n\n\n\n\n\n\n\nBadmintonPlayer.dk - +4570605076 - faq@badminton.dk -  Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger"
+}
