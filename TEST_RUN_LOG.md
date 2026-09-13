@@ -298,3 +298,8 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 - Gap-auditen fandt fire holdkampe med Bemærkning, men uden individuelle scores: 340495 (resultat ændret efter protest), 429571 (modstander mødte ikke op), 429790 (spiller indsat efter registrering) og 446325 (afbud).
 - Kamp 340495 er dermed dokumenteret som en administrativ afgørelse, ikke som en skjult scoremangel.
 - Rapporten ligger i results/team-match-remarks-audit.json/.md og results/individual-coverage-gap-audit.json/.md.
+
+## 2026-09-13 – alternativ ruteprøve for 315 gaps
+- scripts/probe-individual-gap-routes.mjs udvalgte 16 repræsentative kampe og fem kendte fragmentvarianter.
+- Browserkonteksten kunne ikke startes i denne runtime (Playwright spawn EPERM). Scriptet afsluttede kontrolleret, gemte fejlen og ændrede ikke databasen.
+- De eksisterende gemte payloads er fortsat den autoritative evidens for gap-auditen. Ruteprøven skal genkøres, når browser-runtime er tilgængelig.

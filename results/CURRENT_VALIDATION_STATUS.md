@@ -61,3 +61,9 @@ Metodedetaljer til en senere skill står i `COMPLETE_RESULT_FALLBACK_METHOD.md`;
 - 80 holdkampe har nu ordret Bemærkning gemt i team_matches.remark_raw.
 - De fire individuelle gaps med Bemærkning er 340495, 429571, 429790 og 446325; de er dokumenteret i gap-auditen.
 - 340495 er en protestafgørelse: resultatet er ændret jf. kendelse i protest.
+
+## Alternativ ruteprøve
+
+- 16 repræsentative gap-kampe er klar til fem fragmentvarianter.
+- Denne runtime kunne ikke starte Playwright (spawn EPERM); forsøget er gemt og ændrede ikke databasen.
+- De gemte browserpayloads bruges derfor fortsat som evidens, indtil browserkørslen kan gentages.
