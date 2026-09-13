@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T18:27:53.612Z",
+  "generatedAt": "2026-09-13T04:43:25.127Z",
   "source": "results/browser-fallback-queue.json",
   "definition": {
     "verified": "browser page rendered and match ID found",
@@ -9,8 +9,8 @@
   },
   "totals": {
     "total": 1444,
-    "verified": 364,
-    "noMatch": 58,
+    "verified": 420,
+    "noMatch": 0,
     "pending": 0,
     "deferred": 1022,
     "walkovers": 6,
@@ -127,8 +127,8 @@
     {
       "season": 2018,
       "total": 39,
-      "verified": 9,
-      "noMatch": 4,
+      "verified": 13,
+      "noMatch": 0,
       "pending": 0,
       "deferred": 26,
       "walkovers": 0,
@@ -140,8 +140,8 @@
     {
       "season": 2019,
       "total": 43,
-      "verified": 0,
-      "noMatch": 23,
+      "verified": 23,
+      "noMatch": 0,
       "pending": 0,
       "deferred": 20,
       "walkovers": 0,
@@ -153,15 +153,16 @@
     {
       "season": 2020,
       "total": 131,
-      "verified": 44,
-      "noMatch": 31,
+      "verified": 73,
+      "noMatch": 0,
       "pending": 0,
       "deferred": 56,
       "walkovers": 0,
       "withWinner": 0,
       "teams": 5,
       "groups": 23,
-      "opponents": 76
+      "opponents": 76,
+      "other": null
     },
     {
       "season": 2021,

@@ -12512,13 +12512,16 @@
       "leagueGroupId": "13305",
       "roundDate": "2021-02-14",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13305,1,8,,387862,1093,",
-      "status": "browser_no_match_id",
+      "status": "corona_suspended",
       "resultFile": "results/browser-fallback/2020-387862.json",
       "verifiedAt": "2026-09-12T17:08:15.190Z",
       "resultSource": "playwright_persistent_browser",
       "verification": "Page loaded but match id was not visible",
       "retryStatus": "still_no_match_detail",
-      "retryCheckedAt": "2026-09-12T19:13:14.086Z"
+      "retryCheckedAt": "2026-09-12T19:13:14.086Z",
+      "classification": "corona_suspended",
+      "classificationReason": "User-confirmed corona-closed match; result page has no played result",
+      "classifiedAt": "2026-09-13T04:43:24.732Z"
     },
     {
       "key": "2020:387864",
@@ -12530,13 +12533,16 @@
       "leagueGroupId": "13305",
       "roundDate": "2021-03-21",
       "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2020,13305,1,8,,387864,1093,",
-      "status": "browser_no_match_id",
+      "status": "corona_suspended",
       "resultFile": "results/browser-fallback/2020-387864.json",
       "verifiedAt": "2026-09-12T17:08:16.921Z",
       "resultSource": "playwright_persistent_browser",
       "verification": "Page loaded but match id was not visible",
       "retryStatus": "still_no_match_detail",
-      "retryCheckedAt": "2026-09-12T19:13:16.163Z"
+      "retryCheckedAt": "2026-09-12T19:13:16.163Z",
+      "classification": "corona_suspended",
+      "classificationReason": "User-confirmed corona-closed match; result page has no played result",
+      "classifiedAt": "2026-09-13T04:43:24.740Z"
     },
     {
       "key": "2020:404142",
