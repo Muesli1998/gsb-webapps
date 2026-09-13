@@ -1,6 +1,6 @@
 # Dækningsrapport for grunddata
 
-Genereret: 2026-09-13T05:58:19.359Z
+Genereret: 2026-09-13T06:46:22.491Z
 
 ## Samlet status
 
@@ -51,4 +51,4 @@ Genereret: 2026-09-13T05:58:19.359Z
 1. Sammenlign antal kampe pr. hold/pulje med kampantal i de officielle stillinger.
 2. Hent manglende slutstillinger for alle unikke sæson/pulje-kombinationer.
 3. Mål individuel-kamp-dækning pr. verificeret holdkamp.
-4. Gennemgå de 58 rækker uden match-ID.
+4. Gennemgå de resterende rækker uden matchdetalje.
