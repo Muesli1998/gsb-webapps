@@ -1,0 +1,4 @@
+0 0 500 {"Message":"There was an error processing the request.","StackTrace":"","ExceptionType":""}
+0 1 500 {"Message":"There was an error processing the request.","StackTrace":"","ExceptionType":""}
+1 0 500 {"Message":"There was an error processing the request.","StackTrace":"","ExceptionType":""}
+1 1 500 {"Message":"There was an error processing the request.","StackTrace":"","ExceptionType":""}

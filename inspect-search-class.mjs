@@ -1,0 +1,1 @@
+const s=await (await fetch('https://badmintonplayer.dk/sportsresults/components/tournamentcomponents/selecttournament.js?v=16')).text(); for(const term of ['SearchTournamentClass','SearchTournamentResults']){let i=0; while((i=s.indexOf(term,i))>=0){console.log(s.slice(Math.max(0,i-800),i+1000)); i+=term.length;}}
