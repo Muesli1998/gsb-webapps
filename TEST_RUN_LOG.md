@@ -250,3 +250,13 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 - Fallbackresultatet er opsummeret i `results/complete-result-fallback-report.md`; metodebeskrivelsen står i `results/COMPLETE_RESULT_FALLBACK_METHOD.md`.
 - De to standardrute-huller 1884 og 1888 blev undersøgt med fem fragmentvarianter. `#5,...,1,1,,{matchId},1093,` gav fuld dynamisk detalje, selv om `#5,...,1,8,,...` ikke gjorde. Begge blev importeret med resultaterne 10-3 og 7-6 via `scripts/sync-legacy-route-probe.mjs`.
 - Efter legacy-fallback er effektiv resultatdækning 2.818/2.818 for alle rækker, der ikke er eksplicit corona-suspenderede eller U09-sider uden kampdetalje.
+
+## 2026-09-13 – audit af no-result og mulig corona-lukning
+- En separat audit (`scripts/audit-no-result-matches.mjs`) gennemgår alle 2.818 `team_matches` og udvælger rækker med `result_raw` lig med `NULL`, tomt, `-` eller `0-0`.
+- Auditten korrigerer for en vigtig fejlkilde: datoer som `22-03` må ikke tælles som sætscores. Scores søges derfor kun efter `Resultat`-feltet i den dynamiske kamptekst.
+- Der blev fundet 137 no-result-rækker i alt. 133 har ingen individuelle kategorier eller scores i den gemte side, 1 har eksplicit teksten `Afgjort uden kamp (afbud/udeblivelse)`, 1 har navngivne ungdomsspillere men ingen scores, og 2 har ingen browserpayload.
+- I et udvidet observationsvindue for de to coronaramte sæsoner (sæson 2019: 2020-03-15–2020-06-30; sæson 2020: 2020-11-01–2021-06-30) ligger 129 rækker: 18 fra sæson 2019 og 111 fra sæson 2020. 126 af de 129 har ingen individuel evidens på siden, 1 har spilleropstilling uden scores, og 2 mangler payload.
+- Det er stærk evidens for at disse sider ikke indeholder registrerede delkampe, men `-` alene beviser ikke om årsagen var corona-suspension, afbud, manglende indtastning eller anden administrativ status. Ingen database-status blev ændret af auditen.
+- Kamp 452835 er et separat, direkte dokumenteret eksempel uden for coronavinduet: `0-0`, `Point 0-0` og teksten `Afgjort uden kamp (afbud/udeblivelse)`.
+- Kamp 395200 har ungdomsopstilling uden scores og uden holdresultat; den skal behandles som `no_result`/uafklaret, ikke som spillet kamp.
+- Maskinlæsbar og læsbar rapport: `results/corona-no-result-audit.json` og `results/corona-no-result-audit.md`.
