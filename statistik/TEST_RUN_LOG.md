@@ -344,3 +344,14 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 - Den dokumenterer syv unikke kamp/kategori-nøgler: fem `0-0`, én `2-2` og én `3-3`. De fem `0-0` overlapper fem af de otte nuværende `browser_zero_score`-rækker; opgavekortets påstand om ingen overlap matcher ikke den bevarede rådata.
 - Alle syv står som uafklarede: rå markører (`G`, `R`, `L`, `D`) bevares og `Vinder W.O.` fortolkes ikke som walkover uden eksplicit `(Ikke fremmødt)`-tekst.
 - Efterkontrol viste fortsat 20.319 individuelle rækker og 936 identiske hjemme/ude-scoretekster. SQLite blev ikke ændret.
+
+# 004 — udtræksvej, 2026-09-14
+
+- Baseline: `check-normalized-db.mjs` gav ingen FK-fejl eller dubletter.
+- A: Playwright/Chromium startede lokalt; den tidligere EPERM var miljøspecifik.
+- B: Kamp 337416 gav kun cookie-/standardskal i frisk Playwright-kontekst og
+  fejlede render-gaten (ingen kamp-ID, intet `Resultat`).
+- C: Frisk callback gav HTTP 200 for turneringswebservices, men proxyen
+  eksponerede ingen holdkampmetode.
+- Konklusion: ingen automatiseret masseudtræksvej er valideret; se
+  `results/004-udtraeksvej.md`.

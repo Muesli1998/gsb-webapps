@@ -136,16 +136,33 @@ committes, jf. `RESEARCH_BACKLOG.md`.
 **Kontroloutput — før og efter:**
 
 ```
+Baseline: fk [] og dupes [].
+Se statistik/results/004-udtraeksvej.md for rå målinger og ruteafgørelse.
 ```
 
 **Svar på A (EPERM):**
 
+Miljøspecifik. Playwright Chromium startede lokalt efter installation uden
+ændring af projektmanifest eller lockfil.
+
 **Svar på B (Playwright-render):**
+
+Fejler render-gaten: en frisk kontekst viste kun cookie-/standardskallen,
+uden kamp-ID 337416 og uden `Resultat`.
 
 **Svar på C (webservicelaget):**
 
+Turneringskald virker med frisk callback, men ingen holdkampmetode blev
+fundet i klientproxyen.
+
 **Anbefalet udtræksvej og begrundelse:**
 
+Byg ingen masseextractor endnu. Brug in-app-browseren som manuel fallback,
+indtil holdkamp-webservice eller reproducerbar Playwright-render findes.
+
 **Hvad blev fravalgt og hvorfor:**
+
+Masseudtræk blev ikke bygget, fordi ingen automatisk rute passerede den
+krævede evidensgate.
 
 **Commits:**
