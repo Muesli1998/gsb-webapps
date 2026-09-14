@@ -132,4 +132,4 @@ Nej, ikke som fuld validering endnu. Kontrollen er udført, men kun 24/98
 rækker matcher eksakt; 74 kræver bedre pulje-/holdkobling eller yderligere
 evidens. Planens kriterium er markeret som ikke bestået med denne begrundelse.
 
-**Commits:** 3b4773b (audit og rapport); resultatnotens arkivering følger i næste commit.
+**Commits:** 3b4773b (audit og rapport), 3fbcedf (resultatnote arkiveret).
