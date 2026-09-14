@@ -135,3 +135,4 @@ daterede, kanoniske sti; den præciserende historiknote er bevaret.
 
 **Commits:**
 `f93aff6` — erstattet ved amend med resultatnoten udfyldt.
+`d633470` — deduplikeringscommit med resultatnote.
