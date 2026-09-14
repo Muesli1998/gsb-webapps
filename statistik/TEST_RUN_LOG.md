@@ -373,3 +373,7 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
   eksponerede ingen holdkampmetode.
 - Konklusion: ingen automatiseret masseudtræksvej er valideret; se
   `results/004-udtraeksvej.md`.
+## 2026-09-14 – opgave 018: afklar no-linked standings
+
+- `scripts/audit-no-linked-standings.mjs` prøvede for hver af de 24 rækker først samme pulje, derefter samme sæson + normaliseret holdnavn og til sidst bred sæsonbaseret GSB-søgning.
+- Alle 24 havde alternativ kamp-evidens i samme sæson; 24 klassificeres derfor som koblings-fejl i 015's snævre konkurrence-/labelnøgle og 0 som reelt hul. Ingen kobling blev rettet, og SQLite var read-only.
