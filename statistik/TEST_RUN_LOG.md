@@ -325,3 +325,15 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 - Playoff placering afledes af kampresultater, fordi semifinaler/finale/
   bronze ikke udgør en almindelig puljestilling.
 - Se `results/005-stillingskilde.md`.
+
+## 2026-09-14 – 006 reklassifikation af tidligere manglende kategori
+
+- De 222 tidligere `manglende kategori`-rækker blev reklassificeret ud fra de allerede gemte kategoriobjekter og rå scorefelter.
+- Ny fordeling: `category_present_no_score` 1, `complete_match_all_categories_without_score` 34 og `partial_match_missing_category_result` 187.
+- De fire øvrige kategorier er uændrede: administrativ bemærkning/protest 39, Golden Set 12, rå resultatmarkør 90 og reel uoverensstemmelse 95.
+- Summen er fortsat 458; databasen blev ikke ændret.
+# 006 — afvigelsesklassifikation, 2026-09-14
+
+- 458 afvigelser klassificeret uden databaseændring: 39 administrative,
+  12 Golden Set, 222 manglende kategori, 90 rå resultatmarkør og 95 reelle.
+- Se `results/006-afvigelse-klassifikation.md` og JSON-evidensen.
