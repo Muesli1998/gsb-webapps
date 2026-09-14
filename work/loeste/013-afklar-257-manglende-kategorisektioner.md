@@ -108,17 +108,6 @@ separate opgave — udvid ikke denne opgaves omfang selv til at dække alle
 
 ## Resultat
 
-**Kontroloutput — før og efter:**
-
-```
-```
-
-**Stikprøve (kamp-ID, kildeindhold, konklusion):**
-
-**Anbefaling skrevet ind i docs/statistik-plan.md:**
-
-**Commits:**
-
 **Stikprøve (kamp-ID, kildeindhold, konklusion):**
 
 20 sæsonstratificerede kampe er dokumenteret i
@@ -133,4 +122,4 @@ De 257 behandles som et dokumenteret kildehul i det nuværende materiale,
 ikke som en importfejl. Ny manuel indhentning er ikke testet i denne opgave
 og kræver en særskilt opgave.
 
-**Commits:** afventer commit på denne gren.
+**Commits:** d48c47f
