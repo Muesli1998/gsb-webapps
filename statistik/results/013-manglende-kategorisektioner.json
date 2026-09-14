@@ -1,0 +1,211 @@
+{
+  "totalPayloadsWithoutCategories": 257,
+  "explicitNoPlay": 148,
+  "noExplicitNoPlay": 109,
+  "sampleRows": 20,
+  "sampleByConclusion": {
+    "blivende — den gemte, renderede browsertekst har ingen kategorisektion.": 20
+  },
+  "rows": [
+    {
+      "matchId": "2202",
+      "season": 2011,
+      "resultRaw": "6-0",
+      "explicitNoPlay": true,
+      "source": "results\\browser-fallback-youth\\2011-2202.json",
+      "sourceExcerpt": "Resultat 6-0 Point 2-0 Afgjort uden kamp (afbud/udeblivelse) Udskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore BadmintonPlayer.dk - +4570605076 - faq@badminton.dk - Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+      "categoryPresent": false,
+      "conclusion": "blivende — den gemte, renderede browsertekst har ingen kategorisektion."
+    },
+    {
+      "matchId": "50170",
+      "season": 2012,
+      "resultRaw": "0-6",
+      "explicitNoPlay": true,
+      "source": "results\\browser-fallback-youth\\2012-50170.json",
+      "sourceExcerpt": "Resultat 0-6 Point 0-2 Afgjort uden kamp (afbud/udeblivelse) Indberetningen er ikke endelig og kan ændres Udskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore BadmintonPlayer.dk - +4570605076 - faq@badminton.dk - Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+      "categoryPresent": false,
+      "conclusion": "blivende — den gemte, renderede browsertekst har ingen kategorisektion."
+    },
+    {
+      "matchId": "118590",
+      "season": 2013,
+      "resultRaw": "6-0",
+      "explicitNoPlay": true,
+      "source": "results\\browser-fallback-youth\\2013-118590.json",
+      "sourceExcerpt": "Resultat 6-0 Point 2-0 Afgjort uden kamp (afbud/udeblivelse) Indberetningen er ikke endelig og kan ændres Udskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore BadmintonPlayer.dk - +4570605076 - faq@badminton.dk - Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+      "categoryPresent": false,
+      "conclusion": "blivende — den gemte, renderede browsertekst har ingen kategorisektion."
+    },
+    {
+      "matchId": "142471",
+      "season": 2014,
+      "resultRaw": "0-6",
+      "explicitNoPlay": true,
+      "source": "results\\browser-fallback\\2014-142471.json",
+      "sourceExcerpt": "Resultat 0-6 Point 0-2 Afgjort uden kamp (afbud/udeblivelse) Indberetningen er ikke endelig og kan ændres Udskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore BadmintonPlayer.dk - +4570605076 - faq@badminton.dk - Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+      "categoryPresent": false,
+      "conclusion": "blivende — den gemte, renderede browsertekst har ingen kategorisektion."
+    },
+    {
+      "matchId": "195962",
+      "season": 2015,
+      "resultRaw": "0-8",
+      "explicitNoPlay": true,
+      "source": "results\\browser-fallback\\2015-195962.json",
+      "sourceExcerpt": "Resultat 0-8 Point 0-2 Afgjort uden kamp (afbud/udeblivelse) Indberetningen er ikke endelig og kan ændres Udskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore BadmintonPlayer.dk - +4570605076 - faq@badminton.dk - Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+      "categoryPresent": false,
+      "conclusion": "blivende — den gemte, renderede browsertekst har ingen kategorisektion."
+    },
+    {
+      "matchId": "238657",
+      "season": 2016,
+      "resultRaw": "12-0",
+      "explicitNoPlay": true,
+      "source": "results\\browser-fallback\\2016-238657.json",
+      "sourceExcerpt": "Resultat 12-0 Point 2-0 Afgjort uden kamp (afbud/udeblivelse) Indberetningen er ikke endelig og kan ændres Udskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore BadmintonPlayer.dk - +4570605076 - faq@badminton.dk - Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+      "categoryPresent": false,
+      "conclusion": "blivende — den gemte, renderede browsertekst har ingen kategorisektion."
+    },
+    {
+      "matchId": "282735",
+      "season": 2017,
+      "resultRaw": "6-0",
+      "explicitNoPlay": true,
+      "source": "results\\browser-fallback\\2017-282735.json",
+      "sourceExcerpt": "Resultat 6-0 Point 3-0 Afgjort uden kamp (afbud/udeblivelse) Indberetningen er ikke endelig og kan ændres Udskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore BadmintonPlayer.dk - +4570605076 - faq@badminton.dk - Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+      "categoryPresent": false,
+      "conclusion": "blivende — den gemte, renderede browsertekst har ingen kategorisektion."
+    },
+    {
+      "matchId": "340500",
+      "season": 2018,
+      "resultRaw": "0-6",
+      "explicitNoPlay": true,
+      "source": "results\\browser-fallback-youth\\2018-340500.json",
+      "sourceExcerpt": "Resultat 0-6 Point 0-3 Afgjort uden kamp (afbud/udeblivelse) Indberetningen er ikke endelig og kan ændres Udskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore BadmintonPlayer.dk - +4570605076 - faq@badminton.dk - Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+      "categoryPresent": false,
+      "conclusion": "blivende — den gemte, renderede browsertekst har ingen kategorisektion."
+    },
+    {
+      "matchId": "373813",
+      "season": 2019,
+      "resultRaw": "6-0",
+      "explicitNoPlay": true,
+      "source": "results\\browser-fallback-youth\\2019-373813.json",
+      "sourceExcerpt": "Resultat 6-0 Point 3-0 Afgjort uden kamp (afbud/udeblivelse) Indberetningen er ikke endelig og kan ændres Udskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore BadmintonPlayer.dk - +4570605076 - faq@badminton.dk - Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+      "categoryPresent": false,
+      "conclusion": "blivende — den gemte, renderede browsertekst har ingen kategorisektion."
+    },
+    {
+      "matchId": "421915",
+      "season": 2021,
+      "resultRaw": "0-6",
+      "explicitNoPlay": true,
+      "source": "results\\browser-fallback-youth\\2021-421915.json",
+      "sourceExcerpt": "Resultat 0-6 Point 0-3 Afgjort uden kamp (afbud/udeblivelse) Indberetningen er ikke endelig og kan ændres Udskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore BadmintonPlayer.dk - +4570605076 - faq@badminton.dk - Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+      "categoryPresent": false,
+      "conclusion": "blivende — den gemte, renderede browsertekst har ingen kategorisektion."
+    },
+    {
+      "matchId": "429509",
+      "season": 2022,
+      "resultRaw": "0-6",
+      "explicitNoPlay": true,
+      "source": "results\\browser-fallback-youth\\2022-429509.json",
+      "sourceExcerpt": "Resultat 0-6 Point 0-4 Afgjort uden kamp (afbud/udeblivelse) Indberetningen er ikke endelig og kan ændres Udskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore BadmintonPlayer.dk - +4570605076 - faq@badminton.dk - Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+      "categoryPresent": false,
+      "conclusion": "blivende — den gemte, renderede browsertekst har ingen kategorisektion."
+    },
+    {
+      "matchId": "452898",
+      "season": 2023,
+      "resultRaw": "6-0",
+      "explicitNoPlay": true,
+      "source": "results\\browser-fallback-youth\\2023-452898.json",
+      "sourceExcerpt": "Resultat 6-0 Point 4-0 Afgjort uden kamp (afbud/udeblivelse) Indberetningen er ikke endelig og kan ændres Udskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore BadmintonPlayer.dk - +4570605076 - faq@badminton.dk - Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+      "categoryPresent": false,
+      "conclusion": "blivende — den gemte, renderede browsertekst har ingen kategorisektion."
+    },
+    {
+      "matchId": "486396",
+      "season": 2025,
+      "resultRaw": "12-0",
+      "explicitNoPlay": true,
+      "source": "results\\browser-fallback\\2025-486396.json",
+      "sourceExcerpt": "Resultat 12-0 Point 2-0 Afgjort uden kamp (afbud/udeblivelse) Indberetningen er ikke endelig og kan ændres Udskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore BadmintonPlayer.dk - +4570605076 - faq@badminton.dk - Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+      "categoryPresent": false,
+      "conclusion": "blivende — den gemte, renderede browsertekst har ingen kategorisektion."
+    },
+    {
+      "matchId": "2286",
+      "season": 2011,
+      "resultRaw": "3-5",
+      "explicitNoPlay": false,
+      "source": "results\\browser-fallback-youth\\2011-2286.json",
+      "sourceExcerpt": "Resultat 3-5 Point 0-2 Udskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore BadmintonPlayer.dk - +4570605076 - faq@badminton.dk - Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+      "categoryPresent": false,
+      "conclusion": "blivende — den gemte, renderede browsertekst har ingen kategorisektion."
+    },
+    {
+      "matchId": "96231",
+      "season": 2013,
+      "resultRaw": "3-3",
+      "explicitNoPlay": false,
+      "source": "results\\browser-fallback-youth\\2013-96231.json",
+      "sourceExcerpt": "Resultat 3-3 Point 1-1 Indberetningen er ikke endelig og kan ændres Udskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore BadmintonPlayer.dk - +4570605076 - faq@badminton.dk - Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+      "categoryPresent": false,
+      "conclusion": "blivende — den gemte, renderede browsertekst har ingen kategorisektion."
+    },
+    {
+      "matchId": "142978",
+      "season": 2014,
+      "resultRaw": "6-0",
+      "explicitNoPlay": false,
+      "source": "results\\browser-fallback\\2014-142978.json",
+      "sourceExcerpt": "Resultat 6-0 Point 2-0 Indberetningen er ikke endelig og kan ændres Udskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore BadmintonPlayer.dk - +4570605076 - faq@badminton.dk - Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+      "categoryPresent": false,
+      "conclusion": "blivende — den gemte, renderede browsertekst har ingen kategorisektion."
+    },
+    {
+      "matchId": "2365",
+      "season": 2011,
+      "resultRaw": "2-4",
+      "explicitNoPlay": false,
+      "source": "results\\browser-fallback-youth\\2011-2365.json",
+      "sourceExcerpt": "Resultat 2-4 Point 0-2 Udskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore BadmintonPlayer.dk - +4570605076 - faq@badminton.dk - Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+      "categoryPresent": false,
+      "conclusion": "blivende — den gemte, renderede browsertekst har ingen kategorisektion."
+    },
+    {
+      "matchId": "2396",
+      "season": 2011,
+      "resultRaw": "3-3",
+      "explicitNoPlay": false,
+      "source": "results\\browser-fallback-youth\\2011-2396.json",
+      "sourceExcerpt": "Resultat 3-3 Point 1-1 Udskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore BadmintonPlayer.dk - +4570605076 - faq@badminton.dk - Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+      "categoryPresent": false,
+      "conclusion": "blivende — den gemte, renderede browsertekst har ingen kategorisektion."
+    },
+    {
+      "matchId": "2509",
+      "season": 2011,
+      "resultRaw": "3-3",
+      "explicitNoPlay": false,
+      "source": "results\\browser-fallback-youth\\2011-2509.json",
+      "sourceExcerpt": "Resultat 3-3 Point 1-1 Udskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore BadmintonPlayer.dk - +4570605076 - faq@badminton.dk - Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+      "categoryPresent": false,
+      "conclusion": "blivende — den gemte, renderede browsertekst har ingen kategorisektion."
+    },
+    {
+      "matchId": "2664",
+      "season": 2011,
+      "resultRaw": "2-10",
+      "explicitNoPlay": false,
+      "source": "results\\browser-fallback\\2011-2664.json",
+      "sourceExcerpt": "Resultat 2-10 Point 0-2 Udskriv holdseddel | Udskriv tællersedler | Udskriv dommersedler | Sådan anvender du livescore BadmintonPlayer.dk - +4570605076 - faq@badminton.dk - Privatlivspolitik i BD - Privatlivspolitik i DGI - FAQ - Handelsbetingelser Cookieindstillinger",
+      "categoryPresent": false,
+      "conclusion": "blivende — den gemte, renderede browsertekst har ingen kategorisektion."
+    }
+  ]
+}

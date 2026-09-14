@@ -322,6 +322,12 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 - `scripts/analyze-corona-seasons.mjs` sammenholder registrerede holdkampe, `corona_suspended`, de 315 individuelle dækningshuller og de 458 hold/individ-afvigelser pr. sæson uden at ændre SQLite.
 - Sæson 2019 (2019/20) har 125 registrerede kampe, 18 corona-suspenderede, ét dækningshul og 18 afvigelser; sæson 2020 (2020/21) har 162, 29, nul og 10.
 - Alle 47 allerede markerede corona-suspenderede kampe ligger dermed i de to corona-sæsoner. En lokal, officiel kampplan mangler, så et ukendt antal aldrig-registrerede aflysninger kan ikke kvantificeres.
+
+## 2026-09-14 – opgave 013: 257 payloads uden kategorisektioner
+
+- En sæsonstratificeret stikprøve på 20 af de 257 bruger kun gemte browserpayloads og henter ikke nye kampe.
+- Alle 20 renderede kilder viste ingen kategorisektion; prøven indeholder både 148-sættets eksplicitte afbud og kampe med holdresultat uden afbudstekst.
+- De 257 behandles som et dokumenteret kildehul i det bevarede materiale. En ny manuel indhentning er ikke påbegyndt og kræver en særskilt opgave.
 # 005 — stillingskilde, 2026-09-14
 
 - Nembadminton-discovery indeholder kampe og gruppe-ID'er, ikke dokumenteret
