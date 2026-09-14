@@ -121,4 +121,4 @@ Nej. 018 viser, at de 24 nulrækker skyldes den snævre sammenligningsnøgle,
 men de øvrige 74 afvigelser fra 015 består fortsat. Selve koblingen skal
 rettes i en separat byggeopgave.
 
-**Commits:** 424d5f9 (audit og rapport); resultatnotens arkivering følger i næste commit.
+**Commits:** 424d5f9 (audit og rapport), 071fbee (resultatnote arkiveret).
