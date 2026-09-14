@@ -113,8 +113,26 @@ i historik-mappen.
 **Kontroloutput — før og efter:**
 
 ```
+Før: begge stier fandtes; indholdet afveg kun ved den daterede fils
+syvlinjers FORÆLDET / HISTORISK-note.
+Efter: kun docs/historik/dropbox-filstruktur-2026-09-12.md findes.
 ```
 
 **Fandtes der aktive referencer til den gamle fil? Hvad blev gjort:**
 
+Ja. `docs/planlagte-features-spec.md` pegede på den udaterede sti og er
+opdateret til den daterede historikfil.
+
+**Sammenlignede stier:**
+
+- `docs/historik/dropbox-filstruktur.md`
+- `docs/historik/dropbox-filstruktur-2026-09-12.md`
+
+**Afgørelse:**
+
+Dedupliceret. Den oprindelige historikfil er flyttet med Git til den
+daterede, kanoniske sti; den præciserende historiknote er bevaret.
+
 **Commits:**
+`f93aff6` — erstattet ved amend med resultatnoten udfyldt.
+`d633470` — deduplikeringscommit med resultatnote.

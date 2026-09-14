@@ -176,7 +176,7 @@ multi-gruppe-checkboks-filteret og "Ungsenior"-gruppen blev bygget i PREVIEW i f
 `kampsystem_source.html` blev kopieret til produktion i syvende runde. `kampsystem_source.html`
 i `kampsystem/` var altså på et tidspunkt EFTER syvende runde blevet
 regredieret/overskrevet med en ældre version — samme klasse fejl som 2026-08-31-lærestykket i
-`docs/historik/dropbox-filstruktur.md` (forkert kilde antaget/brugt ved en genbygning), bare opdaget nu i
+`docs/historik/dropbox-filstruktur-2026-09-12.md` (forkert kilde antaget/brugt ved en genbygning), bare opdaget nu i
 stedet for med det samme. Tidspunkt/årsag for selve regressionen er ikke undersøgt yderligere.
 
 **RETTET 2026-09-04, samme session, på Chris' anmodning ("gotta fix A6 immediately"):**
