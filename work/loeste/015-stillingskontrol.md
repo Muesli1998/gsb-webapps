@@ -112,15 +112,24 @@ stillingsdata.
 
 ## Resultat
 
-**Kontroloutput — før og efter:**
-
-```
-```
+**Kontroloutput — før og efter:** `node scripts/check-standing-match-counts.mjs`
+skrev rapporten uden SQLite-ændringer; `git status --short statistik/data/`
+var tom; `node scripts/check-normalized-db.mjs` viste fortsat `fk []` og
+`dupes []`.
 
 **Sammenligning pr. sæson/pulje (kort opsummeret; fuld tabel i rapportfilen):**
+98 GSB-stillingsrækker blev sammenlignet. 24 havde eksakt kampantal og 74
+afveg. 28 af rækkerne ligger i corona-sæsonerne 2019/20 og 2020/21.
 
-**Uforklarede afvigelser, hvis nogen:**
+**Uforklarede afvigelser, hvis nogen:** Rapporten viser alle rækker og
+skelner mellem `difference_with_corona_suspended_rows`,
+`no_linked_team_matches_in_current_database` og
+`unexplained_from_current_material`. De sidste to er ikke tvunget ind i en
+årsagskategori.
 
 **Konklusion — er "Kampantal er holdt op mod stillingerne" bestået:**
+Nej, ikke som fuld validering endnu. Kontrollen er udført, men kun 24/98
+rækker matcher eksakt; 74 kræver bedre pulje-/holdkobling eller yderligere
+evidens. Planens kriterium er markeret som ikke bestået med denne begrundelse.
 
-**Commits:**
+**Commits:** 3b4773b (audit og rapport), 3fbcedf (resultatnote arkiveret).

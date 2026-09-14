@@ -77,12 +77,16 @@ evidensen er gemt ordret — ikke at årsagen er gættet.
 BadmintonPlayer-links (`/DBF/Spiller/VisSpiller/#<playerId>`).
 Navnematch alene er ikke en sikker identitet, jf. `terra-action-items.md`.
 
-**Kampantal er holdt op mod stillingerne.** For hver sæson og pulje
-sammenlignes antallet af kampe i databasen med kampantallet i den
-officielle stilling. BadmintonPlayers `Stilling`-side er den anbefalede
-kilde til almindelige puljer; Nembadminton bruges kun til discovery.
-Playoffplacering afledes af semifinaler/finale/bronzekamp, ikke af en
-opfunden puljestilling. Se `statistik/results/005-stillingskilde.md`.
+**Kampantal er holdt op mod stillingerne.** Den første kontrol er kørt i
+opgave 015 mod de 98 gemte GSB-stillingsrækker: 24 har eksakt kampantal,
+mens 74 afviger, heraf 28 i corona-sæsonerne. Kontrollen er derfor ikke
+bestået som fuld datavalidering endnu; rapporten skelner mellem
+corona-rækker, ingen linkede kampe i den aktuelle database og øvrige
+uforklarede afvigelser. BadmintonPlayers `Stilling`-side er den
+anbefalede kilde til almindelige puljer; Nembadminton bruges kun til
+discovery. Playoffplacering afledes af semifinaler/finale/bronzekamp, ikke
+af en opfunden puljestilling. Se `statistik/results/005-stillingskilde.md`
+og `statistik/results/015-stillingskontrol.md`.
 
 **De blivende undtagelser står dokumenteret:** fire U09-kampe (505217,
 505219, 506407, 506413) hvor API'et giver Internal Server Error og siden
