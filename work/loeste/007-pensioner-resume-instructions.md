@@ -116,19 +116,6 @@ stop og skriv det under "Spørgsmål" — gæt ikke indholdet af den.
 
 **Kontroloutput — før og efter:**
 
-```
-```
-
-**Fandtes der referencer til filen andre steder? Hvad blev gjort ved dem:**
-
-**Blev noget flyttet fra RESUME_INSTRUCTIONS.txt til statistik/AGENTS.md, og hvad:**
-
-**Commits:**
-
-## Resultat
-
-**Kontroloutput — før og efter:**
-
 - Før: 116 linjer med en forældet Dropbox-sti og et statisk status-snapshot.
 - Efter: 9 linjer; peger på `statistik/AGENTS.md` og `docs/statistik-plan.md`; ingen Dropbox-sti.
 - `statistik/data/` er uændret.
@@ -141,4 +128,4 @@ Ja: `docs/BESLUTNINGER.md`, `docs/statistik-plan.md`, `statistik/GIT_CONTEXT_FOR
 
 Nej. Regler, kontroller, undtagelser, evidensprincip, walkoverregel og dokumentationskrav findes allerede i `statistik/AGENTS.md`. Statussnapshotet er med vilje ikke flyttet; dets levende kilder er testloggen og `results/`.
 
-**Commits:** afventer commit på denne gren.
+**Commits:** 78e5f71
