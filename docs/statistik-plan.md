@@ -61,8 +61,11 @@ Trinnet er passeret når alt nedenstående er sandt.
 individuelle rækker eller en dokumenteret grund til ikke at have det. De
 315 nuværende huller er allerede klassificeret som 257 payloads uden
 kategorisektioner og 58 med kategorier uden scores, hvoraf 57 har
-eksplicit no-play-tekst. Det der mangler, er at afgøre om de 257 kan
-hentes ad en anden rute, eller om de er blivende huller.
+eksplicit no-play-tekst. En sæsonstratificeret stikprøve på 20 af de 257
+payloads med manglende kategorisektioner viser ingen kategorisektion i den gemte, renderede browsertekst — også
+for kampe med holdresultat uden eksplicit afbud. De behandles derfor som
+et dokumenteret kildehul i det nuværende materiale, ikke som en
+importfejl. En ny manuel indhentning kræver en særskilt opgave.
 
 **De 458 afvigelser er klassificeret efter evidens** i de fem kategorier
 der allerede er navngivet i genoptagelsesinstruktionen: administrativ

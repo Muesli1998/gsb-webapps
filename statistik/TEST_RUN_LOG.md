@@ -316,6 +316,12 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 - `check-normalized-db.mjs`, `audit-individual-db.mjs`, `audit-individual-coverage-gaps.mjs`, `audit-team-vs-individual-results.mjs` og `run-data-quality-check.mjs` blev kørt igen mod den aktuelle SQLite-fil.
 - Resultaterne er konsistente med den gemte status: ingen foreign-key-fejl eller ID-dubletter; 2.818 holdkampe; 20.319 individuelle rækker; 315 dækningshuller; 458 hold/individ-afvigelser; 47 corona-suspenderede; 6 rækker med manglende resultat/sider.
 - Audit-JSON/Markdown-filerne er regenereret med ny kørselstid og gemmes sammen med dokumentationen.
+
+## 2026-09-14 – opgave 013: 257 payloads uden kategorisektioner
+
+- En sæsonstratificeret stikprøve på 20 af de 257 bruger kun gemte browserpayloads og henter ikke nye kampe.
+- Alle 20 renderede kilder viste ingen kategorisektion; prøven indeholder både 148-sættets eksplicitte afbud og kampe med holdresultat uden afbudstekst.
+- De 257 behandles som et dokumenteret kildehul i det bevarede materiale. En ny manuel indhentning er ikke påbegyndt og kræver en særskilt opgave.
 # 005 — stillingskilde, 2026-09-14
 
 - Nembadminton-discovery indeholder kampe og gruppe-ID'er, ikke dokumenteret
