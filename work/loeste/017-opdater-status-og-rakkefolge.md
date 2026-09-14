@@ -136,4 +136,4 @@ afklaret; og backloggen indeholder fortsat 013 samt manuel indhentning.
 ikke-fulde status. `RESEARCH_BACKLOG.md` fik stillingskilde-testen afklaret
 via 005 og den ikke-besluttede manuelle 013-mulighed bevaret.
 
-**Commits:** 31a5129 (status, rækkefølge og backlog); resultatnotens arkivering følger i næste commit.
+**Commits:** 31a5129 (status, rækkefølge og backlog), 035958d (resultatnote arkiveret).
