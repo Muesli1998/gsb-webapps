@@ -96,11 +96,18 @@ gæt ikke hvilken af de to der er korrekt.
 
 ## Resultat
 
-**Kontroloutput — før og efter:**
-
-```
-```
+**Kontroloutput — før og efter:** `CURRENT_VALIDATION_STATUS.md` siger nu
+entydigt, at kampens holdresultat er afklaret som en protestafgørelse,
+mens de seks individuelle kategoriscores fortsat er et særskilt
+dækningshul. `git status --short statistik/data/` var tom.
 
 **Hvad viste den rå kilde, og hvordan blev de to udsagn forenet:**
+Den gemte række har resultat `0-6`, point `0-3`, status
+`browser_verified` og den ordrette Bemærkning "Resultatet ændret jf.
+kendelse i protest. Kurt Mehlsen 10.03.2019". Den gemte coverage-audit
+viser seks kategorier og 22 spillere, men ingen scores og ingen eksplicit
+no-playtekst. Protesten afklarer altså holdresultatet; den manglende
+individuelle score er fortsat et afgrænset dækningshul.
 
-**Commits:**
+**Commits:** 5fc8045 (evidens og statusafklaring); resultatnotens arkivering
+følger i næste commit.
