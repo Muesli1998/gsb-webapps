@@ -121,12 +121,38 @@ Results-rapporten, så en ekstra kategori her skal godkendes først.
 **Kontroloutput — før og efter:**
 
 ```
+node scripts/classify-team-individual-discrepancies.mjs
+total: 458
+sum: 458
+administrativ bemærkning eller protest: 39
+Golden Set: 12
+rå resultatmarkør: 90
+reel uoverensstemmelse: 95
+category_present_no_score: 1
+complete_match_all_categories_without_score: 34
+partial_match_missing_category_result: 187
+
+node scripts/audit-team-vs-individual-results.mjs
+matchesCompared: 2367
+discrepancies: 458
+
+node scripts/check-normalized-db.mjs
+fk: []
+dupes: []
 ```
 
-**Fordeling på de fem kategorier (sum = 458):**
+**Fordeling på de syv kategorier (sum = 458):**
 
-39 administrativ bemærkning/protest; 12 Golden Set; 222 manglende kategori;
-90 rå resultatmarkør; 95 reel uoverensstemmelse. Sum: 458.
+39 administrativ bemærkning/protest; 12 Golden Set; 90 rå resultatmarkør;
+95 reel uoverensstemmelse; 1 `category_present_no_score`; 34
+`complete_match_all_categories_without_score`; 187
+`partial_match_missing_category_result`. Sum: 458.
+
+De tidligere 222 `manglende kategori`-rækker er nu delt efter rå score- og
+vinderfelter. Den ene fallback-række passer ikke entydigt i de to præcise
+scoregrupper. De 34 komplette rækker mangler score på alle kategorier; de
+187 delvise rækker har både kategorier med klar vinder og kategorier med
+`- - -/- - -`.
 
 **Hvad blev gjort:**
 
