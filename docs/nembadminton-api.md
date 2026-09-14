@@ -90,6 +90,23 @@ ungdomsstatistik-gren, fordi ungdomsholdenes kampe er lige så tilgængelige som
 - `memberSearchPoints`, `memberSearchTeamFight`, `membersCancellationSearch` — fundet, ikke testet for login-krav eller nyttelast.
 - Om der findes en tilsvarende query til individuelle turneringsresultater (Senior A, KSI, Farum osv.) — ikke fundet noget hidtil, kun holdkampe og ranglister.
 
+### Manglende `external_player_id` er ikke bevis på manglende spillerprofil
+
+Bekræftet 2026-09-14 ved manuelt visuelt dobbelttjek: spilleren Albert
+Ørnskov (kamp 506363, Gladsaxe Søborg 1 – Hørning IF 1, 12-04-2026,
+sæson 2025/26, pulje 18702) mangler `external_player_id` i vores
+database, men har en fuld, offentlig spillerprofil på badmintonplayer.dk
+med BadmintonID 130606-08. Han spiller for Hørning IF (modstanderholdet i
+den kamp), ikke GSB.
+
+Det bekræfter, at manglende `external_player_id` ikke betyder, at
+spilleren ikke findes eller ikke har et ID. Det er en begrænsning i selve
+`badmintonPlayerTeamMatch`-scrapingen, som ikke konsekvent får spiller-ID
+eller `refId` med, særligt tilsyneladende for modstanderholdets spillere.
+Det stemmer overens med den tidligere note om, at `refId` på
+spillerobjektet i samme query i nogle tilfælde fejler med "Internal server
+error".
+
 ## Modstanderes rangliste-point (ANDRE klubber end GSB) — TESTET 2026-08-31
 
 **Problemet:** `memberStats`/`highestPointGain`/`memberSearchPoints` kræver alle en Nembadminton
