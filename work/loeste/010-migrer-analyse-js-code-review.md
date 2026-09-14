@@ -120,3 +120,4 @@ henvisninger er omdirigeret til den beholdte sti.
 
 **Commits:**
 `fffcce4`, `e6cbdf4` — erstattet ved amend med resultatnoten udfyldt.
+`fffcce4`, `e2631b8` — deduplikering og afsluttende referenceopdatering.
