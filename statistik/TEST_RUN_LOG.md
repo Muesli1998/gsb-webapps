@@ -316,6 +316,12 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 - `check-normalized-db.mjs`, `audit-individual-db.mjs`, `audit-individual-coverage-gaps.mjs`, `audit-team-vs-individual-results.mjs` og `run-data-quality-check.mjs` blev kørt igen mod den aktuelle SQLite-fil.
 - Resultaterne er konsistente med den gemte status: ingen foreign-key-fejl eller ID-dubletter; 2.818 holdkampe; 20.319 individuelle rækker; 315 dækningshuller; 458 hold/individ-afvigelser; 47 corona-suspenderede; 6 rækker med manglende resultat/sider.
 - Audit-JSON/Markdown-filerne er regenereret med ny kørselstid og gemmes sammen med dokumentationen.
+
+## 2026-09-14 – opgave 012: corona-sæsontælling
+
+- `scripts/analyze-corona-seasons.mjs` sammenholder registrerede holdkampe, `corona_suspended`, de 315 individuelle dækningshuller og de 458 hold/individ-afvigelser pr. sæson uden at ændre SQLite.
+- Sæson 2019 (2019/20) har 125 registrerede kampe, 18 corona-suspenderede, ét dækningshul og 18 afvigelser; sæson 2020 (2020/21) har 162, 29, nul og 10.
+- Alle 47 allerede markerede corona-suspenderede kampe ligger dermed i de to corona-sæsoner. En lokal, officiel kampplan mangler, så et ukendt antal aldrig-registrerede aflysninger kan ikke kvantificeres.
 # 005 — stillingskilde, 2026-09-14
 
 - Nembadminton-discovery indeholder kampe og gruppe-ID'er, ikke dokumenteret
