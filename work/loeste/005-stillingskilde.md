@@ -138,18 +138,34 @@ eller.
 **Kontroloutput — før og efter:**
 
 ```
+Standingskilde dokumenteret i statistik/results/005-stillingskilde.md.
 ```
 
 **Svar på A (Nembadminton-felt):**
 
+Kun discovery af kampe og gruppe-ID'er; ingen dokumenteret stilling.
+
 **Svar på B (BadmintonPlayer-webservice):**
+
+Ingen dokumenteret holdstillingsmetode i proxyen. Den virkende kilde er
+den dynamiske `Stilling`-side.
 
 **Svar på C (de 736/96 eksisterende rækker):**
 
+De stammer fra browser-snapshots af BadmintonPlayers `Stilling`.
+
 **Svar på D (playoff-aggregering):**
+
+Afledes af semifinaler, finale og eventuel bronzekamp; ikke en puljetabel.
 
 **Anbefalet stillingskilde og begrundelse:**
 
+BadmintonPlayer til puljestillinger, Nembadminton til discovery og separat
+afledning af playoffplaceringer.
+
 **Hvad blev fravalgt og hvorfor:**
+
+Ingen Nembadminton-stillingsimport, da et stillingsfelt ikke er evidens-
+baseret dokumenteret.
 
 **Commits:**
