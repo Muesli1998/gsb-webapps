@@ -112,3 +112,30 @@ de tretten var de rigtige. Havde nogen troet på noten, kunne de have "rettet"
 noget der var i orden. Tal kan efterprøves på et sekund; vurderinger kan ikke.
 
 **Fravalgt:** at stole på opsummeringer. De er påstande, ikke beviser.
+
+---
+
+## 2026-09-14 — Én AGENTS.md pr. mappe-niveau, ingen resume-snapshot-filer
+
+**Besluttet:** når en delmappe (som `statistik/`) får sine egne regler, får
+den sin egen `AGENTS.md`. Der skrives ikke en separat "sådan genoptager du
+arbejdet"-fil ved siden af — det er `AGENTS.md` selv, plus den levende
+statusfil (fx `CURRENT_VALIDATION_STATUS.md`), der er indgangen.
+
+**Hvorfor:** `statistik/RESUME_INSTRUCTIONS.txt` var netop sådan en
+sidefil. Den duplikerede principper der allerede stod i den nye
+`statistik/AGENTS.md`, og den havde en hardkodet sikkerhedssti til den
+gamle Dropbox-placering, som ingen opdagede var forældet før nu. To
+steder med samme formål glider fra hinanden — det er den samme lektie som
+`AGENTS.md`-vs-`README`-beslutningen ovenfor, bare på mappeniveau i
+stedet for repo-niveau.
+
+Mønsteret skal bruges igen, når `kampsystem/` eller Dream Team-delen får
+brug for egne regler: en lille `AGENTS.md` i den mappe, ikke en ny slags
+dokument. Det er det der skalerer til flere og mere komplicerede
+delprojekter, uden at hvert ét opfinder sin egen struktur.
+
+**Fravalgt:** at rette `RESUME_INSTRUCTIONS.txt`s forældede sti og
+beholde filen som den er. Ville have løst symptomet, ikke at der er to
+kilder til det samme. Se opgave 007 i `work/aabne/`, som pensionerer
+filen til en kort pegepind.
