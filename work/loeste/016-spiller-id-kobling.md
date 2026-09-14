@@ -103,13 +103,16 @@ undersøgelse.
 
 ## Resultat
 
-**Kontroloutput — før og efter:**
+**Kontroloutput — før og efter:** `node scripts/audit-player-id-coverage.mjs`
+skrev rapporten read-only; `git status --short statistik/data/` var tom.
 
-```
-```
-
-**Dækningsgrad (samlet og pr. sæson hvis muligt):**
+**Dækningsgrad (samlet og pr. sæson hvis muligt):** 57.270 af 67.196
+relationer (85,2 %) har eksternt ID; 9.926 (14,8 %) har ikke. Der er
+5.043 af 7.599 spillere med ID og 2.556 uden. Fuld fordeling pr. sæson
+ligger i rapportens Markdown-tabel.
 
 **Var kriteriet i docs/statistik-plan.md korrekt formuleret? Hvad blev rettet:**
+Det var for optimistisk i nutid. Det er nu markeret som delvist opfyldt
+med de målte tal; den resterende kobling er foreslået som separat opgave.
 
-**Commits:**
+**Commits:** 545319f (audit og rapport); resultatnotens arkivering følger i næste commit.
