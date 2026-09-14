@@ -98,8 +98,26 @@ og skriv hvilket i resultatnoten.
 **Kontroloutput — før og efter:**
 
 ```
+Før: begge stier fandtes; indholdet afveg kun i to roadmap-henvisninger.
+Efter: kun docs/analyse-js-code-review-2026-09-06.md findes.
 ```
 
 **Placering valgt:**
 
+`docs/analyse-js-code-review-2026-09-06.md`.
+
+**Sammenlignede stier:**
+
+- `docs/historik/analyse-js-code-review-2026-09-06.md`
+- `docs/analyse-js-code-review-2026-09-06.md`
+
+**Afgørelse:**
+
+Dedupliceret. Den oprindelige fil er flyttet med Git til den aktive
+placering, og de to opdaterede roadmap-henvisninger er bevaret: F1 peger
+på roadmap-punkt 2, “Walkover-håndtering”, i stedet for punkt 1. Aktive
+henvisninger er omdirigeret til den beholdte sti.
+
 **Commits:**
+`fffcce4`, `e6cbdf4` — erstattet ved amend med resultatnoten udfyldt.
+`fffcce4`, `e2631b8` — deduplikering og afsluttende referenceopdatering.
