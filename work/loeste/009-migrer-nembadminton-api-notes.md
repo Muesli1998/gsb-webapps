@@ -93,8 +93,27 @@ fint, men vælg kun ét sted og skriv hvilket i resultatnoten.
 **Kontroloutput — før og efter:**
 
 ```
+Før: begge stier fandtes; SHA-256 var ens:
+0FF721BC23851CBA947A42B50CB1EBF93F6482E8D46BC5A80BF72939B74D4E62
+Efter: kun docs/nembadminton-api.md findes.
 ```
 
 **Placering valgt:**
 
+`docs/nembadminton-api.md`.
+
+**Sammenlignede stier:**
+
+- `docs/nembadminton-api.md`
+- `docs/NEMBADMINTON_API_NOTES.md`
+
+**Afgørelse:**
+
+Dedupliceret. Filerne var byte-identiske (22.357 bytes, samme SHA-256).
+Den lille bogstav-variant beholdes, fordi den allerede er den kanoniske sti
+i `AGENTS.md`, `docs/START-HER.md` og de levende dokumenter.
+
 **Commits:**
+
+**Commits:**
+`de949fc` — erstattet ved amend med resultatnoten udfyldt.
