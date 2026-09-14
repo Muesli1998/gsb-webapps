@@ -93,10 +93,18 @@ står som de gør, fx hvis de citerer et historisk dokument.
 **Kontroloutput — før og efter:**
 
 ```
+Før: gsb-roadmap = 1, roadmap = 1, linjer = 1320.
+Efter: gsb-roadmap = 0, roadmap = 1, linjer = 1320.
 ```
 
 **Hvad blev gjort:**
 
+Den ene aktive reference i `docs/idebank-kampsystem.md` er rettet fra
+`gsb-roadmap.md` til `roadmap.md`.
+
 **Hvad blev fravalgt og hvorfor:**
+
+Ingen andre forekomster er rørt; opgaven afgrænser rettelsen til denne
+ene linje.
 
 **Commits:**

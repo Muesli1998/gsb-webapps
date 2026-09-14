@@ -757,7 +757,7 @@ denne logning.
 
 **RETTELSE (roadmap-oprydning, 2026-09-07): denne status er forældet.** Punkt 2 og 3 blev rettet og
 testet allerede i den umiddelbart følgende "OPDATERING 2026-09-05 (ellevte runde)" nedenfor, og
-punkt 1 blev besvaret uden kodeændring i samme runde. `gsb-roadmap.md` havde flagget denne linje som
+punkt 1 blev besvaret uden kodeændring i samme runde. `roadmap.md` havde flagget denne linje som
 faktuelt forkert ("KUN LOGGET, INGEN KODE ÆNDRET" stod stadig som gældende status, selvom punkterne
 var rettet i senere runder) — linjen ovenfor er bevaret uændret som historisk øjebliksbillede af
 selve logge-tidspunktet, men skal IKKE læses som aktuel status. Se ellevte runde for facit.
