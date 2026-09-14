@@ -76,7 +76,10 @@ Navnematch alene er ikke en sikker identitet, jf. `terra-action-items.md`.
 
 **Kampantal er holdt op mod stillingerne.** For hver sæson og pulje
 sammenlignes antallet af kampe i databasen med kampantallet i den
-officielle stilling. Afvigelser er forklarede eller dokumenterede.
+officielle stilling. BadmintonPlayers `Stilling`-side er den anbefalede
+kilde til almindelige puljer; Nembadminton bruges kun til discovery.
+Playoffplacering afledes af semifinaler/finale/bronzekamp, ikke af en
+opfunden puljestilling. Se `statistik/results/005-stillingskilde.md`.
 
 **De blivende undtagelser står dokumenteret:** fire U09-kampe (505217,
 505219, 506407, 506413) hvor API'et giver Internal Server Error og siden

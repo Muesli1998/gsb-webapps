@@ -316,3 +316,12 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 - `check-normalized-db.mjs`, `audit-individual-db.mjs`, `audit-individual-coverage-gaps.mjs`, `audit-team-vs-individual-results.mjs` og `run-data-quality-check.mjs` blev kørt igen mod den aktuelle SQLite-fil.
 - Resultaterne er konsistente med den gemte status: ingen foreign-key-fejl eller ID-dubletter; 2.818 holdkampe; 20.319 individuelle rækker; 315 dækningshuller; 458 hold/individ-afvigelser; 47 corona-suspenderede; 6 rækker med manglende resultat/sider.
 - Audit-JSON/Markdown-filerne er regenereret med ny kørselstid og gemmes sammen med dokumentationen.
+# 005 — stillingskilde, 2026-09-14
+
+- Nembadminton-discovery indeholder kampe og gruppe-ID'er, ikke dokumenteret
+  slutstilling.
+- De eksisterende 736 standingsrækker kommer fra BadmintonPlayer `Stilling`
+  via browser-snapshots; 96 rækker er GSB.
+- Playoff placering afledes af kampresultater, fordi semifinaler/finale/
+  bronze ikke udgør en almindelig puljestilling.
+- Se `results/005-stillingskilde.md`.
