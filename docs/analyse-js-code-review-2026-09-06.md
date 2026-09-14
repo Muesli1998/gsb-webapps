@@ -38,7 +38,7 @@ De eksisterende, manuelt rettede 25/26-walkoverrækker håndteres korrekt. Probl
 fremadrettet — hver ny rundeimport i 26/27.
 
 **Alvor: høj. Sandsynlighed: høj** (så snart en walkover importeres uden manuel rettelse). Hænger
-sammen med roadmap-punkt 2 — Walkover-håndtering (walkover-fix i `hent-resultater.js`) — bør rettes samtidig, ellers
+sammen med roadmap-punkt 1 (walkover-fix i `hent-resultater.js`) — bør rettes samtidig, ellers
 retter man kun halvdelen af kæden.
 
 ---
@@ -255,7 +255,7 @@ effekt på Dream Team-point.
 
 ## Prioritering
 
-1. **F1** — rettes samtidig med det planlagte `hent-resultater.js`-walkover-fix (roadmap punkt 2 — Walkover-håndtering).
+1. **F1** — rettes samtidig med det planlagte `hent-resultater.js`-walkover-fix (roadmap punkt 1).
 2. **F2** — én linjes flytning, fjerner en hel kategori af stille bortfald.
 3. **F5** — tjek først om `hent-resultater.js` deduper på skrivning.
 4. **F3/F4** — to billige sanity-checks (rækkeantal deleligt med `rowsPerBoard`; parrede rækker
