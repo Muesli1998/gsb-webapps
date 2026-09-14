@@ -1,0 +1,113 @@
+{
+  "generatedAt": "2026-09-14T19:41:58.808Z",
+  "method": "Read-only aggregation of players.external_player_id through individual_match_players; no name matching or new ID resolution performed.",
+  "players": {
+    "total": 7599,
+    "withId": 5043,
+    "withoutId": 2556
+  },
+  "relations": {
+    "total": 67196,
+    "distinctPlayers": 7599,
+    "withId": 57270,
+    "withoutId": 9926
+  },
+  "bySeason": [
+    {
+      "season": 2010,
+      "relations": 436,
+      "withId": 315,
+      "withoutId": 121
+    },
+    {
+      "season": 2011,
+      "relations": 400,
+      "withId": 400,
+      "withoutId": 0
+    },
+    {
+      "season": 2012,
+      "relations": 3804,
+      "withId": 3450,
+      "withoutId": 354
+    },
+    {
+      "season": 2013,
+      "relations": 4126,
+      "withId": 3787,
+      "withoutId": 339
+    },
+    {
+      "season": 2014,
+      "relations": 4023,
+      "withId": 3690,
+      "withoutId": 333
+    },
+    {
+      "season": 2015,
+      "relations": 4392,
+      "withId": 4212,
+      "withoutId": 180
+    },
+    {
+      "season": 2016,
+      "relations": 4128,
+      "withId": 3795,
+      "withoutId": 333
+    },
+    {
+      "season": 2017,
+      "relations": 4060,
+      "withId": 3740,
+      "withoutId": 320
+    },
+    {
+      "season": 2018,
+      "relations": 4586,
+      "withId": 4300,
+      "withoutId": 286
+    },
+    {
+      "season": 2019,
+      "relations": 3590,
+      "withId": 3368,
+      "withoutId": 222
+    },
+    {
+      "season": 2020,
+      "relations": 1341,
+      "withId": 1127,
+      "withoutId": 214
+    },
+    {
+      "season": 2021,
+      "relations": 4822,
+      "withId": 3988,
+      "withoutId": 834
+    },
+    {
+      "season": 2022,
+      "relations": 5572,
+      "withId": 4321,
+      "withoutId": 1251
+    },
+    {
+      "season": 2023,
+      "relations": 5829,
+      "withId": 4837,
+      "withoutId": 992
+    },
+    {
+      "season": 2024,
+      "relations": 7018,
+      "withId": 5437,
+      "withoutId": 1581
+    },
+    {
+      "season": 2025,
+      "relations": 9069,
+      "withId": 6503,
+      "withoutId": 2566
+    }
+  ]
+}

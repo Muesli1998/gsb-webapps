@@ -378,3 +378,9 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 - `scripts/check-standing-match-counts.mjs` sammenlignede de 98 gemte GSB-stillingsrækker med holdkampe i samme sæson/pulje i SQLite, uden at åbne databasen til skrivning.
 - 24 rækker havde samme kampantal; 74 afveg. Af de 74 ligger 28 i sæson 2019/20 eller 2020/21; corona-status forklarer kun de rækker hvor den rå statusfordeling viser `corona_suspended`.
 - Rapporten skelner eksplicit mellem ingen linkede kampe i den aktuelle database og øvrige uforklarede afvigelser. Databasen var urørt.
+
+## 2026-09-14 – opgave 016: audit af spiller-ID-kobling
+
+- `scripts/audit-player-id-coverage.mjs` læste spillerrelationerne read-only og ændrede ikke SQLite.
+- 67.196 relationer: 57.270 med eksternt BadmintonPlayer-ID (85,2 %) og 9.926 uden (14,8 %). 7.599 spillere: 5.043 med ID og 2.556 uden.
+- Manglende ID'er blev ikke gættet eller koblet i denne opgave; rapporten markerer det som en separat byggeopgave.
