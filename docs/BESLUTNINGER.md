@@ -139,3 +139,35 @@ delprojekter, uden at hvert ét opfinder sin egen struktur.
 beholde filen som den er. Ville have løst symptomet, ikke at der er to
 kilder til det samme. Se opgave 007 i `work/aabne/`, som pensionerer
 filen til en kort pegepind.
+
+---
+
+## 2026-09-14 — Søg bredt før du antager at en fil ikke findes
+
+**Besluttet:** før indhold migreres fra claude.ai-projektet (eller
+andetsteds) ind i repoet som en "ny" fil, skal der søges bredt efter en
+eksisterende, beslægtet fil — flere navnevarianter, andre mapper, ikke
+kun det først gættede sted — før man konkluderer at den ikke findes.
+
+**Hvorfor:** under migreringen af opgave 009-011 blev det opdaget at to
+"nye" filer allerede havde en tvilling i repoet: `NEMBADMINTON_API_NOTES.md`
+duplikerede `docs/nembadminton-api.md`, og
+`docs/historik/dropbox-filstruktur-2026-09-12.md` duplikerede
+`docs/historik/dropbox-filstruktur.md`. Begge dubletter blev skabt af
+Claude selv, som kun prøvede nogle få gættede stier og konkluderede at
+filerne manglede, uden at ramme de rigtige. Fejlen blev fanget af Codex
+under dens egen `/plan`-gennemgang, ikke ved kontrol før commit — og
+rettet med `git mv` for at bevare historikken på den fil der blev
+beholdt.
+
+Dette er en variant af den samme lektie som ovenstående poster: to
+steder med samme formål glider fra hinanden, uanset om det er en
+sidefil, en `README`, eller en dublet skabt ved en ufuldstændig søgning.
+Forskellen her er at fejlen opstod hos den der migrerede, ikke i
+strukturen selv — så rettelsen er en arbejdsvane, ikke en ny fil-regel:
+`git grep`/bredere stisøgning før en migrering markeres som "ny fil".
+
+**Fravalgt:** at stole på at én eller to gættede stier er nok til at
+konkludere at noget mangler i repoet. Et gæt der ikke rammer, ser
+identisk ud som et bekræftet fravær, medmindre søgningen faktisk var
+bred nok.
