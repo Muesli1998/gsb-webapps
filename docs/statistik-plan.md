@@ -73,16 +73,15 @@ bemærkning eller protest, Golden Set, manglende kategori, rå
 resultatmarkør, og reel uoverensstemmelse. Klassifikation betyder at
 evidensen er gemt ordret — ikke at årsagen er gættet.
 
-**Spilleridentitet hviler på ID, ikke navn.** Spillere kobles via
-BadmintonPlayer-links (`/DBF/Spiller/VisSpiller/#<playerId>`).
-Navnematch alene er ikke en sikker identitet, jf. `terra-action-items.md`.
+**Spilleridentitet hviler på ID, ikke navn.** Audit 016 viser 57.270 af
+67.196 spillerrelationer (85,2 %) med eksternt ID; 9.926 relationer og
+2.556 spillere mangler ID. Den resterende kobling er en separat
+byggeopgave, ikke et afsluttet kriterium.
 
-**Kampantal er holdt op mod stillingerne.** For hver sæson og pulje
-sammenlignes antallet af kampe i databasen med kampantallet i den
-officielle stilling. BadmintonPlayers `Stilling`-side er den anbefalede
-kilde til almindelige puljer; Nembadminton bruges kun til discovery.
-Playoffplacering afledes af semifinaler/finale/bronzekamp, ikke af en
-opfunden puljestilling. Se `statistik/results/005-stillingskilde.md`.
+**Kampantal er holdt op mod stillingerne.** Audit 015 er udført mod de 98
+gemte GSB-stillingsrækker: 24 matcher eksakt og 74 afviger, så kriteriet
+er ikke fuldt bestået. Afvigelserne er opdelt efter rå status/evidens i
+`statistik/results/015-stillingskontrol.md`.
 
 **De blivende undtagelser står dokumenteret:** fire U09-kampe (505217,
 505219, 506407, 506413) hvor API'et giver Internal Server Error og siden
@@ -144,16 +143,18 @@ princippet om at rå data gemmes før fortolkning.
 
 ## Rækkefølge
 
-1. **004 — afklar udtræksvejen.** Virker Playwright uden for sandkassen,
-   og kan webservicelaget levere individuelle kampdata? Svaret bestemmer
-   hvordan extractoren bygges.
+1. **[Afsluttet — 004] Afklar udtræksvejen.** Webservicelaget er
+   dokumenteret for turneringer, men ingen holdkampmetode er fundet; den
+   validerede in-app-browsermetode er fortsat fallback.
 2. **Byg den individuelle extractor** med render-gate, valideret mod fem
    til ti referencekampe manuelt før masseudtræk.
-3. **Klassificér de 458 afvigelser.** Analysearbejde, ikke udtræk — kan
-   køre parallelt med punkt 2.
-4. **Kobl spiller-ID'er.**
-5. **Stillingskontrol:** kampantal per sæson og pulje mod officielle
-   stillinger.
+3. **[Afsluttet — 006/008] Klassificér de 458 afvigelser** efter evidens
+   og afklar de syv tvetydige lavscorer.
+4. **[Audit afsluttet — 016] Kobl spiller-ID'er.** 85,2 % af
+   relationerne har ID; de resterende 9.926 relationer kræver en separat
+   byggeopgave.
+5. **[Audit udført, ikke bestået — 005/015] Stillingskontrol:** kampantal
+   per sæson og pulje mod officielle stillinger; 24/98 matcher eksakt.
 6. **Results-rapporten.**
 7. **Skillen.**
 8. Preview, derefter Prod Push.
