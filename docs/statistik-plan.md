@@ -73,9 +73,13 @@ bemærkning eller protest, Golden Set, manglende kategori, rå
 resultatmarkør, og reel uoverensstemmelse. Klassifikation betyder at
 evidensen er gemt ordret — ikke at årsagen er gættet.
 
-**Spilleridentitet hviler på ID, ikke navn.** Spillere kobles via
-BadmintonPlayer-links (`/DBF/Spiller/VisSpiller/#<playerId>`).
-Navnematch alene er ikke en sikker identitet, jf. `terra-action-items.md`.
+**Spilleridentitet hviler på ID, ikke navn.** Audit i opgave 016 viser
+57.270 af 67.196 spillerrelationer (85,2 %) med gemt eksternt
+BadmintonPlayer-ID; 9.926 relationer og 2.556 spillere mangler et sådant
+ID. Spillere kobles via BadmintonPlayer-links
+(`/DBF/Spiller/VisSpiller/#<playerId>`), men navnematch alene er ikke en
+sikker identitet. Den resterende kobling er en separat byggeopgave, ikke
+en del af denne audit; se `statistik/results/016-spiller-id-audit.md`.
 
 **Kampantal er holdt op mod stillingerne.** For hver sæson og pulje
 sammenlignes antallet af kampe i databasen med kampantallet i den

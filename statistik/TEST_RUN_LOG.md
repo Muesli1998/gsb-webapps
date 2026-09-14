@@ -373,3 +373,8 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
   eksponerede ingen holdkampmetode.
 - Konklusion: ingen automatiseret masseudtræksvej er valideret; se
   `results/004-udtraeksvej.md`.
+## 2026-09-14 – opgave 016: audit af spiller-ID-kobling
+
+- `scripts/audit-player-id-coverage.mjs` læste spillerrelationerne read-only og ændrede ikke SQLite.
+- 67.196 relationer: 57.270 med eksternt BadmintonPlayer-ID (85,2 %) og 9.926 uden (14,8 %). 7.599 spillere: 5.043 med ID og 2.556 uden.
+- Manglende ID'er blev ikke gættet eller koblet i denne opgave; rapporten markerer det som en separat byggeopgave.
