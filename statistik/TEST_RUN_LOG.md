@@ -316,3 +316,13 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 - `check-normalized-db.mjs`, `audit-individual-db.mjs`, `audit-individual-coverage-gaps.mjs`, `audit-team-vs-individual-results.mjs` og `run-data-quality-check.mjs` blev kørt igen mod den aktuelle SQLite-fil.
 - Resultaterne er konsistente med den gemte status: ingen foreign-key-fejl eller ID-dubletter; 2.818 holdkampe; 20.319 individuelle rækker; 315 dækningshuller; 458 hold/individ-afvigelser; 47 corona-suspenderede; 6 rækker med manglende resultat/sider.
 - Audit-JSON/Markdown-filerne er regenereret med ny kørselstid og gemmes sammen med dokumentationen.
+# 004 — udtræksvej, 2026-09-14
+
+- Baseline: `check-normalized-db.mjs` gav ingen FK-fejl eller dubletter.
+- A: Playwright/Chromium startede lokalt; den tidligere EPERM var miljøspecifik.
+- B: Kamp 337416 gav kun cookie-/standardskal i frisk Playwright-kontekst og
+  fejlede render-gaten (ingen kamp-ID, intet `Resultat`).
+- C: Frisk callback gav HTTP 200 for turneringswebservices, men proxyen
+  eksponerede ingen holdkampmetode.
+- Konklusion: ingen automatiseret masseudtræksvej er valideret; se
+  `results/004-udtraeksvej.md`.

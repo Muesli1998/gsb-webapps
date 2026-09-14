@@ -44,12 +44,12 @@ ASP.NET-webservicelag, hvor `SearchTournamentMatches` returnerer kamp- og
 resultat-HTML direkte, når en frisk `SR_CallbackContext` først er hentet
 fra sidens HTML. Det er hidtil kun afprøvet på turneringer.
 
-**Hypotese:** kan det samme lag levere individuelle kampdata for
-holdkampe, er der slet ikke brug for en browser til masseudtrækket. Det
-ville løse begge problemer på én gang og være væsentligt hurtigere.
-
-Hypotesen er billig at afprøve og bør afprøves **før** nogen bygger en
-extractor. Det er opgave 004.
+**Anbefalet udtræksvej:** Opgave 004 har bekræftet turnerings-
+webservicelaget, men ikke fundet en holdkampmetode. Playwright kan starte
+lokalt, men passerer ikke render-gaten for referencekampen i en frisk
+kontekst. Byg derfor ikke masseextractoren endnu; behold den validerede
+in-app-browsermetode som manuel fallback, indtil én af de to automatiske
+ruter er reproduceret. Se `statistik/results/004-udtraeksvej.md`.
 
 ---
 
