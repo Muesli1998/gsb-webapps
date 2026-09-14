@@ -1,0 +1,2207 @@
+{
+  "generatedAt": "2026-09-14T19:39:27.084Z",
+  "method": "Exact normalized comparison of the stored GSB standing-team label against home/away labels in team_matches within the same competition. “udgået”, “trukket” and “(O)” are removed only for this comparison; raw labels remain in each row.",
+  "totals": {
+    "officialStandingRows": 98,
+    "exactMatches": 24,
+    "differences": 74,
+    "coronaSeasons": 28
+  },
+  "rows": [
+    {
+      "season": 2010,
+      "leagueGroupId": "417",
+      "league": "Kvalifikation til 3.division B Øst",
+      "ageGroupId": 1,
+      "teamInStanding": "Gladsaxe Søborg *udgået*",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 0,
+      "difference": -6,
+      "databaseStatusCounts": {},
+      "position": 7,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2010,417,1,,,,1093,",
+      "matchIds": [],
+      "explanation": "no_linked_team_matches_in_current_database"
+    },
+    {
+      "season": 2010,
+      "leagueGroupId": "431",
+      "league": "Danmarksserien Øst pulje 4",
+      "ageGroupId": 1,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 4,
+      "matchesInDatabase": 7,
+      "difference": 3,
+      "databaseStatusCounts": {
+        "browser_verified": 7
+      },
+      "position": 4,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2010,431,1,,,,1093,",
+      "matchIds": [
+        "23522",
+        "23526",
+        "23531",
+        "23535",
+        "23539",
+        "23543",
+        "23546"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2011,
+      "leagueGroupId": "110",
+      "league": "U17 2. Serie U17 2. Serie",
+      "ageGroupId": 6,
+      "teamInStanding": "Gladsaxe Søborg 3",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 0,
+      "difference": -6,
+      "databaseStatusCounts": {},
+      "position": 7,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2011,110,1,,,,1093,",
+      "matchIds": [],
+      "explanation": "no_linked_team_matches_in_current_database"
+    },
+    {
+      "season": 2011,
+      "leagueGroupId": "58",
+      "league": "1. Serie Pulje 1 1. Serie Pulje 1",
+      "ageGroupId": 1,
+      "teamInStanding": "Gladsaxe Søborg",
+      "matchesInOfficialStanding": 7,
+      "matchesInDatabase": 0,
+      "difference": -7,
+      "databaseStatusCounts": {},
+      "position": 6,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2011,58,1,,,,1093,",
+      "matchIds": [],
+      "explanation": "no_linked_team_matches_in_current_database"
+    },
+    {
+      "season": 2011,
+      "leagueGroupId": "60",
+      "league": "2. Serie Pulje 1 2. Serie Pulje 1",
+      "ageGroupId": 1,
+      "teamInStanding": "Gladsaxe Søborg 2",
+      "matchesInOfficialStanding": 7,
+      "matchesInDatabase": 0,
+      "difference": -7,
+      "databaseStatusCounts": {},
+      "position": 4,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2011,60,1,,,,1093,",
+      "matchIds": [],
+      "explanation": "no_linked_team_matches_in_current_database"
+    },
+    {
+      "season": 2011,
+      "leagueGroupId": "71",
+      "league": "Danmarksserien Øst pulje 2",
+      "ageGroupId": 1,
+      "teamInStanding": "Gladsaxe Søborg *udgået*",
+      "matchesInOfficialStanding": 8,
+      "matchesInDatabase": 7,
+      "difference": -1,
+      "databaseStatusCounts": {
+        "browser_verified": 7
+      },
+      "position": 9,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2011,71,1,,,,1093,",
+      "matchIds": [
+        "1884",
+        "1888",
+        "1893",
+        "1896",
+        "1902",
+        "1903",
+        "1907"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2011,
+      "leagueGroupId": "74",
+      "league": "2. Serie Veteran 2. Serie Veteran",
+      "ageGroupId": 9,
+      "teamInStanding": "Gladsaxe Søborg 3",
+      "matchesInOfficialStanding": 7,
+      "matchesInDatabase": 0,
+      "difference": -7,
+      "databaseStatusCounts": {},
+      "position": 7,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2011,74,1,,,,1093,",
+      "matchIds": [],
+      "explanation": "no_linked_team_matches_in_current_database"
+    },
+    {
+      "season": 2011,
+      "leagueGroupId": "77",
+      "league": "3. Serie Veteran 3. Serie Veteran",
+      "ageGroupId": 9,
+      "teamInStanding": "Gladsaxe Søborg",
+      "matchesInOfficialStanding": 7,
+      "matchesInDatabase": 0,
+      "difference": -7,
+      "databaseStatusCounts": {},
+      "position": 1,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2011,77,1,,,,1093,",
+      "matchIds": [],
+      "explanation": "no_linked_team_matches_in_current_database"
+    },
+    {
+      "season": 2011,
+      "leagueGroupId": "79",
+      "league": "5. Serie Veteran 5. Serie Veteran",
+      "ageGroupId": 9,
+      "teamInStanding": "Gladsaxe Søborg 2",
+      "matchesInOfficialStanding": 7,
+      "matchesInDatabase": 0,
+      "difference": -7,
+      "databaseStatusCounts": {},
+      "position": 1,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2011,79,1,,,,1093,",
+      "matchIds": [],
+      "explanation": "no_linked_team_matches_in_current_database"
+    },
+    {
+      "season": 2011,
+      "leagueGroupId": "82",
+      "league": "8. Serie Veteran 8. Serie Veteran",
+      "ageGroupId": 9,
+      "teamInStanding": "Gladsaxe Søborg 3",
+      "matchesInOfficialStanding": 7,
+      "matchesInDatabase": 0,
+      "difference": -7,
+      "databaseStatusCounts": {},
+      "position": 3,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2011,82,1,,,,1093,",
+      "matchIds": [],
+      "explanation": "no_linked_team_matches_in_current_database"
+    },
+    {
+      "season": 2011,
+      "leagueGroupId": "86",
+      "league": "60+ 2. Serie 60+ 2. Serie",
+      "ageGroupId": 13,
+      "teamInStanding": "Gladsaxe Søborg 3",
+      "matchesInOfficialStanding": 7,
+      "matchesInDatabase": 0,
+      "difference": -7,
+      "databaseStatusCounts": {},
+      "position": 1,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2011,86,1,,,,1093,",
+      "matchIds": [],
+      "explanation": "no_linked_team_matches_in_current_database"
+    },
+    {
+      "season": 2011,
+      "leagueGroupId": "87",
+      "league": "50+ 1. Serie 50+ 1. Serie",
+      "ageGroupId": 11,
+      "teamInStanding": "Gladsaxe Søborg 4",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 0,
+      "difference": -6,
+      "databaseStatusCounts": {},
+      "position": 2,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2011,87,1,,,,1093,",
+      "matchIds": [],
+      "explanation": "no_linked_team_matches_in_current_database"
+    },
+    {
+      "season": 2011,
+      "leagueGroupId": "88",
+      "league": "50+ 2. Serie 50+ 2. Serie",
+      "ageGroupId": 11,
+      "teamInStanding": "Gladsaxe Søborg",
+      "matchesInOfficialStanding": 7,
+      "matchesInDatabase": 0,
+      "difference": -7,
+      "databaseStatusCounts": {},
+      "position": 3,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2011,88,1,,,,1093,",
+      "matchIds": [],
+      "explanation": "no_linked_team_matches_in_current_database"
+    },
+    {
+      "season": 2011,
+      "leagueGroupId": "91",
+      "league": "50+ 5. Serie 50+ 5. Serie",
+      "ageGroupId": 11,
+      "teamInStanding": "Gladsaxe Søborg 2",
+      "matchesInOfficialStanding": 7,
+      "matchesInDatabase": 0,
+      "difference": -7,
+      "databaseStatusCounts": {},
+      "position": 4,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2011,91,1,,,,1093,",
+      "matchIds": [],
+      "explanation": "no_linked_team_matches_in_current_database"
+    },
+    {
+      "season": 2012,
+      "leagueGroupId": "1285",
+      "league": "2.Serie P2 2.Serie P2",
+      "ageGroupId": 1,
+      "teamInStanding": "Gladsaxe Søborg",
+      "matchesInOfficialStanding": 4,
+      "matchesInDatabase": 0,
+      "difference": -4,
+      "databaseStatusCounts": {},
+      "position": 4,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2012,1285,1,,,,1093,",
+      "matchIds": [],
+      "explanation": "no_linked_team_matches_in_current_database"
+    },
+    {
+      "season": 2012,
+      "leagueGroupId": "1301",
+      "league": "40+ 2.Serie 40+ 2. Serie",
+      "ageGroupId": 9,
+      "teamInStanding": "Gladsaxe Søborg 3",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 0,
+      "difference": -6,
+      "databaseStatusCounts": {},
+      "position": 7,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2012,1301,1,,,,1093,",
+      "matchIds": [],
+      "explanation": "no_linked_team_matches_in_current_database"
+    },
+    {
+      "season": 2012,
+      "leagueGroupId": "1329",
+      "league": "U17 2. Serie U17 2. Serie",
+      "ageGroupId": 6,
+      "teamInStanding": "Gladsaxe Søborg",
+      "matchesInOfficialStanding": 4,
+      "matchesInDatabase": 8,
+      "difference": 4,
+      "databaseStatusCounts": {
+        "browser_verified": 8
+      },
+      "position": 4,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2012,1329,1,,,,1093,",
+      "matchIds": [
+        "50335",
+        "50339",
+        "50343",
+        "50348",
+        "50354",
+        "50359",
+        "50364",
+        "50368"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2013,
+      "leagueGroupId": "2692",
+      "league": "U17 2. serie Pulje 1",
+      "ageGroupId": 6,
+      "teamInStanding": "Gladsaxe Søborg",
+      "matchesInOfficialStanding": 4,
+      "matchesInDatabase": 4,
+      "difference": 0,
+      "databaseStatusCounts": {
+        "browser_verified": 4
+      },
+      "position": 3,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2013,2692,1,,,,1093,",
+      "matchIds": [
+        "96250",
+        "100355",
+        "100357",
+        "100358"
+      ],
+      "explanation": "exact_match"
+    },
+    {
+      "season": 2013,
+      "leagueGroupId": "2693",
+      "league": "U17 Serie X1 Pulje 1",
+      "ageGroupId": 6,
+      "teamInStanding": "Gladsaxe Søborg",
+      "matchesInOfficialStanding": 5,
+      "matchesInDatabase": 6,
+      "difference": 1,
+      "databaseStatusCounts": {
+        "browser_verified": 6
+      },
+      "position": 1,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2013,2693,1,,,,1093,",
+      "matchIds": [
+        "96265",
+        "96272",
+        "96274",
+        "96279",
+        "96282",
+        "96286"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2014,
+      "leagueGroupId": "4245",
+      "league": "40+ 5.serie Pulje 1",
+      "ageGroupId": 9,
+      "teamInStanding": "Gladsaxe Søborg 3",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 7,
+      "difference": 1,
+      "databaseStatusCounts": {
+        "browser_verified": 7
+      },
+      "position": 1,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2014,4245,1,,,,1093,",
+      "matchIds": [
+        "141990",
+        "141993",
+        "141997",
+        "143113",
+        "142007",
+        "143115",
+        "142655"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2014,
+      "leagueGroupId": "4247",
+      "league": "40+ 7.serie Pulje 1",
+      "ageGroupId": 9,
+      "teamInStanding": "Gladsaxe Søborg 3",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 0,
+      "difference": -6,
+      "databaseStatusCounts": {},
+      "position": 1,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2014,4247,1,,,,1093,",
+      "matchIds": [],
+      "explanation": "no_linked_team_matches_in_current_database"
+    },
+    {
+      "season": 2014,
+      "leagueGroupId": "4266",
+      "league": "U17 2.serie (4+2 M) Pulje 1",
+      "ageGroupId": 6,
+      "teamInStanding": "Gladsaxe Søborg udgået",
+      "matchesInOfficialStanding": 0,
+      "matchesInDatabase": 10,
+      "difference": 10,
+      "databaseStatusCounts": {
+        "browser_verified": 8,
+        "browser_verified_no_result": 2
+      },
+      "position": 9,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2014,4266,1,,,,1093,",
+      "matchIds": [
+        "142501",
+        "143094",
+        "143096",
+        "142513",
+        "142521",
+        "142523",
+        "142531",
+        "142541",
+        "142545",
+        "142550"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2014,
+      "leagueGroupId": "4267",
+      "league": "U17 serie X1 (4 spillere C) Pulje 1",
+      "ageGroupId": 6,
+      "teamInStanding": "Gladsaxe Søborg 2 udgået",
+      "matchesInOfficialStanding": 0,
+      "matchesInDatabase": 7,
+      "difference": 7,
+      "databaseStatusCounts": {
+        "browser_verified": 7
+      },
+      "position": 5,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2014,4267,1,,,,1093,",
+      "matchIds": [
+        "142471",
+        "142978",
+        "142478",
+        "142484",
+        "159975",
+        "142492",
+        "142495"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2015,
+      "leagueGroupId": "5984",
+      "league": "50+ 2.serie Pulje 1",
+      "ageGroupId": 11,
+      "teamInStanding": "Gladsaxe Søborg 2",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 7,
+      "difference": 1,
+      "databaseStatusCounts": {
+        "browser_verified": 7
+      },
+      "position": 4,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2015,5984,1,,,,1093,",
+      "matchIds": [
+        "193083",
+        "193086",
+        "193090",
+        "193095",
+        "193097",
+        "193103",
+        "193106"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2015,
+      "leagueGroupId": "6013",
+      "league": "2. serie P2  Pulje 1",
+      "ageGroupId": 1,
+      "teamInStanding": "Gladsaxe Søborg 3",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 7,
+      "difference": 1,
+      "databaseStatusCounts": {
+        "browser_verified": 7
+      },
+      "position": 7,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2015,6013,1,,,,1093,",
+      "matchIds": [
+        "193636",
+        "193640",
+        "193644",
+        "193645",
+        "193652",
+        "193655",
+        "193660"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2015,
+      "leagueGroupId": "6019",
+      "league": "4. serie P1  Pulje 1",
+      "ageGroupId": 1,
+      "teamInStanding": "Gladsaxe Søborg 4",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 7,
+      "difference": 1,
+      "databaseStatusCounts": {
+        "browser_verified": 7
+      },
+      "position": 5,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2015,6019,1,,,,1093,",
+      "matchIds": [
+        "193719",
+        "193722",
+        "193725",
+        "193731",
+        "193735",
+        "193739",
+        "193743"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2015,
+      "leagueGroupId": "6022",
+      "league": "5. serie P1  Pulje 1",
+      "ageGroupId": 1,
+      "teamInStanding": "Gladsaxe Søborg 5 udgået",
+      "matchesInOfficialStanding": 0,
+      "matchesInDatabase": 6,
+      "difference": 6,
+      "databaseStatusCounts": {
+        "browser_verified": 6
+      },
+      "position": 7,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2015,6022,1,,,,1093,",
+      "matchIds": [
+        "204917",
+        "204920",
+        "204925",
+        "204928",
+        "204931",
+        "204934"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2015,
+      "leagueGroupId": "6099",
+      "league": "U17 A Række 4+2 Pulje 1",
+      "ageGroupId": 6,
+      "teamInStanding": "Gladsaxe Søborg udgået",
+      "matchesInOfficialStanding": 0,
+      "matchesInDatabase": 9,
+      "difference": 9,
+      "databaseStatusCounts": {
+        "browser_verified": 9
+      },
+      "position": 8,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2015,6099,1,,,,1093,",
+      "matchIds": [
+        "195962",
+        "195964",
+        "195972",
+        "195977",
+        "195979",
+        "195984",
+        "195992",
+        "195997",
+        "196002"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2016,
+      "leagueGroupId": "7631",
+      "league": "40+ 1.serie Pulje 1",
+      "ageGroupId": 9,
+      "teamInStanding": "Gladsaxe Søborg",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 7,
+      "difference": 1,
+      "databaseStatusCounts": {
+        "browser_verified": 7
+      },
+      "position": 5,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2016,7631,1,,,,1093,",
+      "matchIds": [
+        "238769",
+        "238773",
+        "238777",
+        "238780",
+        "238782",
+        "238787",
+        "238792"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2016,
+      "leagueGroupId": "7640",
+      "league": "3. Serie P1 Pulje 1",
+      "ageGroupId": 1,
+      "teamInStanding": "Gladsaxe Søborg 3",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 7,
+      "difference": 1,
+      "databaseStatusCounts": {
+        "browser_verified": 7
+      },
+      "position": 1,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2016,7640,1,,,,1093,",
+      "matchIds": [
+        "238565",
+        "238569",
+        "238573",
+        "238577",
+        "238581",
+        "238585",
+        "238589"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2016,
+      "leagueGroupId": "7643",
+      "league": "4. Serie P2 Pulje 1",
+      "ageGroupId": 1,
+      "teamInStanding": "Gladsaxe Søborg 4 udgået",
+      "matchesInOfficialStanding": 0,
+      "matchesInDatabase": 8,
+      "difference": 8,
+      "databaseStatusCounts": {
+        "browser_verified": 8
+      },
+      "position": 8,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2016,7643,1,,,,1093,",
+      "matchIds": [
+        "238657",
+        "238662",
+        "238671",
+        "238674",
+        "238680",
+        "238682",
+        "238686",
+        "238690"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2016,
+      "leagueGroupId": "7644",
+      "league": "30. Serie P1 Pulje 1",
+      "ageGroupId": 1,
+      "teamInStanding": "Gladsaxe Søborg 4 trukket",
+      "matchesInOfficialStanding": 0,
+      "matchesInDatabase": 9,
+      "difference": 9,
+      "databaseStatusCounts": {
+        "browser_verified": 9
+      },
+      "position": 9,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2016,7644,1,,,,1093,",
+      "matchIds": [
+        "238695",
+        "238698",
+        "238705",
+        "238710",
+        "238716",
+        "238721",
+        "238725",
+        "238731",
+        "238737"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2016,
+      "leagueGroupId": "7647",
+      "league": "40+ 4.serie Pulje 1",
+      "ageGroupId": 9,
+      "teamInStanding": "Gladsaxe Søborg 3",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 7,
+      "difference": 1,
+      "databaseStatusCounts": {
+        "browser_verified": 7
+      },
+      "position": 3,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2016,7647,1,,,,1093,",
+      "matchIds": [
+        "238852",
+        "238856",
+        "238861",
+        "238865",
+        "238869",
+        "238870",
+        "238875"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2016,
+      "leagueGroupId": "7652",
+      "league": "50+ 1.serie Pulje 1",
+      "ageGroupId": 11,
+      "teamInStanding": "Gladsaxe Søborg",
+      "matchesInOfficialStanding": 7,
+      "matchesInDatabase": 8,
+      "difference": 1,
+      "databaseStatusCounts": {
+        "browser_verified": 8
+      },
+      "position": 8,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2016,7652,1,,,,1093,",
+      "matchIds": [
+        "239786",
+        "239790",
+        "239793",
+        "239795",
+        "239801",
+        "239806",
+        "239810",
+        "239811"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2016,
+      "leagueGroupId": "7654",
+      "league": "50+ 3.serie Pulje 1",
+      "ageGroupId": 11,
+      "teamInStanding": "Gladsaxe Søborg 3",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 7,
+      "difference": 1,
+      "databaseStatusCounts": {
+        "browser_verified": 7
+      },
+      "position": 7,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2016,7654,1,,,,1093,",
+      "matchIds": [
+        "239871",
+        "239874",
+        "239878",
+        "239880",
+        "239885",
+        "239890",
+        "240054"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2016,
+      "leagueGroupId": "7660",
+      "league": "60+ 1.serie Pulje 1",
+      "ageGroupId": 13,
+      "teamInStanding": "Gladsaxe Søborg",
+      "matchesInOfficialStanding": 7,
+      "matchesInDatabase": 8,
+      "difference": 1,
+      "databaseStatusCounts": {
+        "browser_verified": 8
+      },
+      "position": 5,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2016,7660,1,,,,1093,",
+      "matchIds": [
+        "238968",
+        "238973",
+        "238982",
+        "238985",
+        "238991",
+        "238993",
+        "238997",
+        "239001"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2016,
+      "leagueGroupId": "7685",
+      "league": "U17/U19 B (4) P2 Pulje 1",
+      "ageGroupId": 6,
+      "teamInStanding": "Gladsaxe Søborg 2 udgået",
+      "matchesInOfficialStanding": 0,
+      "matchesInDatabase": 0,
+      "difference": 0,
+      "databaseStatusCounts": {},
+      "position": 7,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2016,7685,1,,,,1093,",
+      "matchIds": [],
+      "explanation": "exact_match"
+    },
+    {
+      "season": 2016,
+      "leagueGroupId": "8918",
+      "league": "DMU-Hold U17/19 B 4 Spillere Pulje 4",
+      "ageGroupId": 18,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 2,
+      "matchesInDatabase": 2,
+      "difference": 0,
+      "databaseStatusCounts": {
+        "browser_verified": 2
+      },
+      "position": 1,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2016,8918,1,,,,1093,",
+      "matchIds": [
+        "278702",
+        "278703"
+      ],
+      "explanation": "exact_match"
+    },
+    {
+      "season": 2017,
+      "leagueGroupId": "9288",
+      "league": "U17/19 B (4) Pulje 1",
+      "ageGroupId": 18,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 8,
+      "matchesInDatabase": 0,
+      "difference": -8,
+      "databaseStatusCounts": {},
+      "position": 6,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2017,9288,1,,,,1093,",
+      "matchIds": [],
+      "explanation": "no_linked_team_matches_in_current_database"
+    },
+    {
+      "season": 2017,
+      "leagueGroupId": "9592",
+      "league": "U17/U19 M/A 4+2 Pulje 1",
+      "ageGroupId": 18,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 8,
+      "matchesInDatabase": 8,
+      "difference": 0,
+      "databaseStatusCounts": {
+        "browser_verified": 8
+      },
+      "position": 6,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2017,9592,1,,,,1093,",
+      "matchIds": [
+        "296175",
+        "296177",
+        "296179",
+        "296181",
+        "296208",
+        "296191",
+        "296195",
+        "296196"
+      ],
+      "explanation": "exact_match"
+    },
+    {
+      "season": 2018,
+      "leagueGroupId": "11355",
+      "league": "U17/19 M 4 Spillere Pulje 1",
+      "ageGroupId": 18,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 7,
+      "matchesInDatabase": 7,
+      "difference": 0,
+      "databaseStatusCounts": {
+        "browser_verified": 7
+      },
+      "position": 5,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2018,11355,1,,,,1093,",
+      "matchIds": [
+        "337416",
+        "337417",
+        "337423",
+        "337425",
+        "337430",
+        "337432",
+        "337433"
+      ],
+      "explanation": "exact_match"
+    },
+    {
+      "season": 2018,
+      "leagueGroupId": "11771",
+      "league": "U17/U19 A 4 spillere Pulje 1",
+      "ageGroupId": 18,
+      "teamInStanding": "Gladsaxe Søborg 2",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 6,
+      "difference": 0,
+      "databaseStatusCounts": {
+        "browser_verified": 6
+      },
+      "position": 3,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2018,11771,1,,,,1093,",
+      "matchIds": [
+        "353930",
+        "353932",
+        "353934",
+        "353935",
+        "353938",
+        "353941"
+      ],
+      "explanation": "exact_match"
+    },
+    {
+      "season": 2019,
+      "leagueGroupId": "12570",
+      "league": "SEN 2. Serie P1 Pulje 1",
+      "ageGroupId": 1,
+      "teamInStanding": "Gladsaxe Søborg 3",
+      "matchesInOfficialStanding": 5,
+      "matchesInDatabase": 7,
+      "difference": 2,
+      "databaseStatusCounts": {
+        "browser_verified": 5,
+        "corona_suspended": 2
+      },
+      "position": 2,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2019,12570,1,,,,1093,",
+      "matchIds": [
+        "365200",
+        "365204",
+        "365208",
+        "365215",
+        "365219",
+        "365220",
+        "365224"
+      ],
+      "explanation": "difference_with_corona_suspended_rows"
+    },
+    {
+      "season": 2019,
+      "leagueGroupId": "12580",
+      "league": "40+ 1. Serie Pulje 1",
+      "ageGroupId": 9,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 7,
+      "difference": 1,
+      "databaseStatusCounts": {
+        "browser_verified": 6,
+        "corona_suspended": 1
+      },
+      "position": 3,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2019,12580,1,,,,1093,",
+      "matchIds": [
+        "365394",
+        "374192",
+        "365401",
+        "365405",
+        "365410",
+        "365412",
+        "365416"
+      ],
+      "explanation": "difference_with_corona_suspended_rows"
+    },
+    {
+      "season": 2019,
+      "leagueGroupId": "12583",
+      "league": "40+ 3. Serie Pulje 1",
+      "ageGroupId": 9,
+      "teamInStanding": "Gladsaxe Søborg 2",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 7,
+      "difference": 1,
+      "databaseStatusCounts": {
+        "browser_verified": 6,
+        "corona_suspended": 1
+      },
+      "position": 1,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2019,12583,1,,,,1093,",
+      "matchIds": [
+        "365459",
+        "365463",
+        "365467",
+        "365471",
+        "365475",
+        "365479",
+        "365483"
+      ],
+      "explanation": "difference_with_corona_suspended_rows"
+    },
+    {
+      "season": 2019,
+      "leagueGroupId": "12584",
+      "league": "40+ 6. Serie Pulje 1",
+      "ageGroupId": 9,
+      "teamInStanding": "Gladsaxe Søborg 4",
+      "matchesInOfficialStanding": 4,
+      "matchesInDatabase": 5,
+      "difference": 1,
+      "databaseStatusCounts": {
+        "browser_verified": 4,
+        "corona_suspended": 1
+      },
+      "position": 3,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2019,12584,1,,,,1093,",
+      "matchIds": [
+        "365494",
+        "365498",
+        "365505",
+        "365508",
+        "365512"
+      ],
+      "explanation": "difference_with_corona_suspended_rows"
+    },
+    {
+      "season": 2019,
+      "leagueGroupId": "12585",
+      "league": "40+ 4. Serie Pulje 1",
+      "ageGroupId": 9,
+      "teamInStanding": "Gladsaxe Søborg 3",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 8,
+      "difference": 2,
+      "databaseStatusCounts": {
+        "browser_verified": 6,
+        "corona_suspended": 2
+      },
+      "position": 6,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2019,12585,1,,,,1093,",
+      "matchIds": [
+        "365516",
+        "365521",
+        "365524",
+        "365529",
+        "365532",
+        "365536",
+        "365545",
+        "365548"
+      ],
+      "explanation": "difference_with_corona_suspended_rows"
+    },
+    {
+      "season": 2019,
+      "leagueGroupId": "12588",
+      "league": "50+ 2. Serie Pulje 1",
+      "ageGroupId": 11,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 7,
+      "difference": 1,
+      "databaseStatusCounts": {
+        "browser_verified": 6,
+        "corona_suspended": 1
+      },
+      "position": 1,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2019,12588,1,,,,1093,",
+      "matchIds": [
+        "365694",
+        "365698",
+        "365702",
+        "365709",
+        "365713",
+        "365714",
+        "365718"
+      ],
+      "explanation": "difference_with_corona_suspended_rows"
+    },
+    {
+      "season": 2019,
+      "leagueGroupId": "12589",
+      "league": "50+ 3. Serie Pulje 1",
+      "ageGroupId": 11,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 0,
+      "difference": -6,
+      "databaseStatusCounts": {},
+      "position": 1,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2019,12589,1,,,,1093,",
+      "matchIds": [],
+      "explanation": "no_linked_team_matches_in_current_database"
+    },
+    {
+      "season": 2019,
+      "leagueGroupId": "12590",
+      "league": "50+ 4. Serie Pulje 1",
+      "ageGroupId": 11,
+      "teamInStanding": "Gladsaxe Søborg 3",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 7,
+      "difference": 1,
+      "databaseStatusCounts": {
+        "browser_verified": 6,
+        "corona_suspended": 1
+      },
+      "position": 1,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2019,12590,1,,,,1093,",
+      "matchIds": [
+        "373972",
+        "365757",
+        "365759",
+        "365763",
+        "365767",
+        "365773",
+        "365774"
+      ],
+      "explanation": "difference_with_corona_suspended_rows"
+    },
+    {
+      "season": 2019,
+      "leagueGroupId": "12591",
+      "league": "50+ 5. Serie Pulje 1",
+      "ageGroupId": 11,
+      "teamInStanding": "Gladsaxe Søborg 4",
+      "matchesInOfficialStanding": 5,
+      "matchesInDatabase": 6,
+      "difference": 1,
+      "databaseStatusCounts": {
+        "browser_verified": 5,
+        "corona_suspended": 1
+      },
+      "position": 1,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2019,12591,1,,,,1093,",
+      "matchIds": [
+        "365778",
+        "365784",
+        "365787",
+        "365794",
+        "365800",
+        "365803"
+      ],
+      "explanation": "difference_with_corona_suspended_rows"
+    },
+    {
+      "season": 2019,
+      "leagueGroupId": "12594",
+      "league": "60+ 1. Serie Pulje 1",
+      "ageGroupId": 13,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 8,
+      "difference": 2,
+      "databaseStatusCounts": {
+        "browser_verified": 6,
+        "corona_suspended": 2
+      },
+      "position": 3,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2019,12594,1,,,,1093,",
+      "matchIds": [
+        "366951",
+        "366960",
+        "366964",
+        "366967",
+        "366972",
+        "366975",
+        "366979",
+        "366986"
+      ],
+      "explanation": "difference_with_corona_suspended_rows"
+    },
+    {
+      "season": 2019,
+      "leagueGroupId": "12595",
+      "league": "60+ 2. Serie Pulje 1",
+      "ageGroupId": 13,
+      "teamInStanding": "Gladsaxe Søborg 2",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 8,
+      "difference": 2,
+      "databaseStatusCounts": {
+        "browser_verified": 6,
+        "corona_suspended": 2
+      },
+      "position": 1,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2019,12595,1,,,,1093,",
+      "matchIds": [
+        "366915",
+        "366920",
+        "367013",
+        "367016",
+        "366938",
+        "366940",
+        "366944",
+        "366948"
+      ],
+      "explanation": "difference_with_corona_suspended_rows"
+    },
+    {
+      "season": 2019,
+      "leagueGroupId": "12597",
+      "league": "70+ 1. Serie Pulje 1",
+      "ageGroupId": 17,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 5,
+      "matchesInDatabase": 6,
+      "difference": 1,
+      "databaseStatusCounts": {
+        "browser_verified": 5,
+        "corona_suspended": 1
+      },
+      "position": 1,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2019,12597,1,,,,1093,",
+      "matchIds": [
+        "366883",
+        "366885",
+        "366887",
+        "366889",
+        "366891",
+        "366893"
+      ],
+      "explanation": "difference_with_corona_suspended_rows"
+    },
+    {
+      "season": 2019,
+      "leagueGroupId": "13102",
+      "league": "Danmarksserien Kvalifikation til 3. division pulje D",
+      "ageGroupId": 1,
+      "teamInStanding": "Gladsaxe Søborg",
+      "matchesInOfficialStanding": 3,
+      "matchesInDatabase": 4,
+      "difference": 1,
+      "databaseStatusCounts": {
+        "browser_verified": 3,
+        "corona_suspended": 1
+      },
+      "position": 8,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2019,13102,1,,,,1093,",
+      "matchIds": [
+        "384277",
+        "384284",
+        "384287",
+        "384292"
+      ],
+      "explanation": "difference_with_corona_suspended_rows"
+    },
+    {
+      "season": 2019,
+      "leagueGroupId": "13144",
+      "league": "KS-Oprykning KS-Oprykning",
+      "ageGroupId": 1,
+      "teamInStanding": "Gladsaxe Søborg 2",
+      "matchesInOfficialStanding": 3,
+      "matchesInDatabase": 4,
+      "difference": 1,
+      "databaseStatusCounts": {
+        "browser_verified": 3,
+        "corona_suspended": 1
+      },
+      "position": 2,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2019,13144,1,,,,1093,",
+      "matchIds": [
+        "385086",
+        "385092",
+        "385094",
+        "385098"
+      ],
+      "explanation": "difference_with_corona_suspended_rows"
+    },
+    {
+      "season": 2020,
+      "leagueGroupId": "13228",
+      "league": "Danmarksserien Pulje 5",
+      "ageGroupId": 1,
+      "teamInStanding": "Gladsaxe Søborg",
+      "matchesInOfficialStanding": 4,
+      "matchesInDatabase": 7,
+      "difference": 3,
+      "databaseStatusCounts": {
+        "browser_verified": 4,
+        "browser_verified_no_result": 3
+      },
+      "position": 5,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2020,13228,1,,,,1093,",
+      "matchIds": [
+        "385765",
+        "385767",
+        "385773",
+        "385777",
+        "405615",
+        "405622",
+        "405625"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2020,
+      "leagueGroupId": "13230",
+      "league": "Danmarksserien Pulje 7",
+      "ageGroupId": 1,
+      "teamInStanding": "Gladsaxe Søborg 2 (O)",
+      "matchesInOfficialStanding": 4,
+      "matchesInDatabase": 7,
+      "difference": 3,
+      "databaseStatusCounts": {
+        "browser_verified": 4,
+        "browser_verified_no_result": 3
+      },
+      "position": 7,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2020,13230,1,,,,1093,",
+      "matchIds": [
+        "385821",
+        "385823",
+        "385829",
+        "385833",
+        "405591",
+        "405598",
+        "405601"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2020,
+      "leagueGroupId": "13285",
+      "league": "SEN 2. Serie P1 Pulje 1",
+      "ageGroupId": 1,
+      "teamInStanding": "Gladsaxe Søborg 3",
+      "matchesInOfficialStanding": 3,
+      "matchesInDatabase": 8,
+      "difference": 5,
+      "databaseStatusCounts": {
+        "browser_verified": 3,
+        "browser_verified_no_result": 5
+      },
+      "position": 1,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2020,13285,1,,,,1093,",
+      "matchIds": [
+        "387364",
+        "387368",
+        "387372",
+        "387380",
+        "387385",
+        "387390",
+        "387399",
+        "404111"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2020,
+      "leagueGroupId": "13293",
+      "league": "40+ 20. Serie Pulje 1",
+      "ageGroupId": 9,
+      "teamInStanding": "Gladsaxe Søborg 4",
+      "matchesInOfficialStanding": 0,
+      "matchesInDatabase": 5,
+      "difference": 5,
+      "databaseStatusCounts": {
+        "browser_verified_no_result": 5
+      },
+      "position": 1,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2020,13293,1,,,,1093,",
+      "matchIds": [
+        "387568",
+        "404201",
+        "404203",
+        "404761",
+        "404764"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2020,
+      "leagueGroupId": "13297",
+      "league": "40+ 1. Serie Pulje 1",
+      "ageGroupId": 9,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 2,
+      "matchesInDatabase": 8,
+      "difference": 6,
+      "databaseStatusCounts": {
+        "browser_verified": 2,
+        "browser_verified_no_result": 6
+      },
+      "position": 4,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2020,13297,1,,,,1093,",
+      "matchIds": [
+        "387608",
+        "387611",
+        "387628",
+        "387633",
+        "387634",
+        "387638",
+        "404165",
+        "404171"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2020,
+      "leagueGroupId": "13299",
+      "league": "40+ 2. Serie Pulje 1",
+      "ageGroupId": 9,
+      "teamInStanding": "Gladsaxe Søborg 2",
+      "matchesInOfficialStanding": 0,
+      "matchesInDatabase": 6,
+      "difference": 6,
+      "databaseStatusCounts": {
+        "browser_verified_no_result": 6
+      },
+      "position": 4,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2020,13299,1,,,,1093,",
+      "matchIds": [
+        "387689",
+        "387692",
+        "387694",
+        "387697",
+        "404174",
+        "404176"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2020,
+      "leagueGroupId": "13300",
+      "league": "40+ 4. Serie Pulje 1",
+      "ageGroupId": 9,
+      "teamInStanding": "Gladsaxe Søborg 3",
+      "matchesInOfficialStanding": 1,
+      "matchesInDatabase": 7,
+      "difference": 6,
+      "databaseStatusCounts": {
+        "browser_verified": 1,
+        "browser_verified_no_result": 6
+      },
+      "position": 2,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2020,13300,1,,,,1093,",
+      "matchIds": [
+        "387701",
+        "387712",
+        "387717",
+        "387719",
+        "387725",
+        "404185",
+        "404189"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2020,
+      "leagueGroupId": "13302",
+      "league": "70+ 1. Serie Pulje 1",
+      "ageGroupId": 17,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 2,
+      "matchesInDatabase": 4,
+      "difference": 2,
+      "databaseStatusCounts": {
+        "browser_verified": 2,
+        "corona_suspended": 2
+      },
+      "position": 1,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2020,13302,1,,,,1093,",
+      "matchIds": [
+        "387755",
+        "387757",
+        "404672",
+        "403986"
+      ],
+      "explanation": "difference_with_corona_suspended_rows"
+    },
+    {
+      "season": 2020,
+      "leagueGroupId": "13304",
+      "league": "50+ 1. Serie Pulje 1",
+      "ageGroupId": 11,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 1,
+      "matchesInDatabase": 8,
+      "difference": 7,
+      "databaseStatusCounts": {
+        "browser_verified": 1,
+        "browser_verified_no_result": 7
+      },
+      "position": 7,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2020,13304,1,,,,1093,",
+      "matchIds": [
+        "387800",
+        "387814",
+        "387815",
+        "387821",
+        "387825",
+        "387829",
+        "404137",
+        "404138"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2020,
+      "leagueGroupId": "13305",
+      "league": "50+ 2. Serie Pulje 1",
+      "ageGroupId": 11,
+      "teamInStanding": "Gladsaxe Søborg 2",
+      "matchesInOfficialStanding": 1,
+      "matchesInDatabase": 6,
+      "difference": 5,
+      "databaseStatusCounts": {
+        "browser_verified": 1,
+        "browser_verified_no_result": 3,
+        "corona_suspended": 2
+      },
+      "position": 3,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2020,13305,1,,,,1093,",
+      "matchIds": [
+        "387834",
+        "387849",
+        "387854",
+        "387858",
+        "404142",
+        "404710"
+      ],
+      "explanation": "difference_with_corona_suspended_rows"
+    },
+    {
+      "season": 2020,
+      "leagueGroupId": "13306",
+      "league": "50+ 3. Serie Pulje 1",
+      "ageGroupId": 11,
+      "teamInStanding": "Gladsaxe Søborg 3",
+      "matchesInOfficialStanding": 1,
+      "matchesInDatabase": 6,
+      "difference": 5,
+      "databaseStatusCounts": {
+        "browser_verified": 1,
+        "corona_suspended": 5
+      },
+      "position": 2,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2020,13306,1,,,,1093,",
+      "matchIds": [
+        "387869",
+        "387878",
+        "387879",
+        "387884",
+        "387887",
+        "404143"
+      ],
+      "explanation": "difference_with_corona_suspended_rows"
+    },
+    {
+      "season": 2020,
+      "leagueGroupId": "13307",
+      "league": "50+ 4. Serie Pulje 1",
+      "ageGroupId": 11,
+      "teamInStanding": "Gladsaxe Søborg 4",
+      "matchesInOfficialStanding": 1,
+      "matchesInDatabase": 7,
+      "difference": 6,
+      "databaseStatusCounts": {
+        "browser_verified": 1,
+        "corona_suspended": 6
+      },
+      "position": 7,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2020,13307,1,,,,1093,",
+      "matchIds": [
+        "387889",
+        "387902",
+        "387907",
+        "387909",
+        "387915",
+        "404147",
+        "404714"
+      ],
+      "explanation": "difference_with_corona_suspended_rows"
+    },
+    {
+      "season": 2020,
+      "leagueGroupId": "13311",
+      "league": "60+ 1. Serie Pulje 1",
+      "ageGroupId": 13,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 2,
+      "matchesInDatabase": 8,
+      "difference": 6,
+      "databaseStatusCounts": {
+        "browser_verified": 2,
+        "corona_suspended": 6
+      },
+      "position": 1,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2020,13311,1,,,,1093,",
+      "matchIds": [
+        "387994",
+        "387997",
+        "388014",
+        "388019",
+        "388020",
+        "388024",
+        "403990",
+        "403996"
+      ],
+      "explanation": "difference_with_corona_suspended_rows"
+    },
+    {
+      "season": 2020,
+      "leagueGroupId": "13312",
+      "league": "60+ 2. Serie Pulje 1",
+      "ageGroupId": 13,
+      "teamInStanding": "Gladsaxe Søborg 2",
+      "matchesInOfficialStanding": 2,
+      "matchesInDatabase": 8,
+      "difference": 6,
+      "databaseStatusCounts": {
+        "browser_verified": 2,
+        "corona_suspended": 6
+      },
+      "position": 1,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2020,13312,1,,,,1093,",
+      "matchIds": [
+        "388028",
+        "388032",
+        "388044",
+        "388049",
+        "388054",
+        "388063",
+        "403998",
+        "404003"
+      ],
+      "explanation": "difference_with_corona_suspended_rows"
+    },
+    {
+      "season": 2021,
+      "leagueGroupId": "13790",
+      "league": "Danmarksserien Nedrykning fra Danmarksserien pulje C",
+      "ageGroupId": 1,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 0,
+      "difference": -6,
+      "databaseStatusCounts": {},
+      "position": 3,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2021,13790,1,,,,1093,",
+      "matchIds": [],
+      "explanation": "no_linked_team_matches_in_current_database"
+    },
+    {
+      "season": 2021,
+      "leagueGroupId": "13959",
+      "league": "SEN+40 4. Serie Pulje 1",
+      "ageGroupId": 9,
+      "teamInStanding": "Gladsaxe Søborg",
+      "matchesInOfficialStanding": 4,
+      "matchesInDatabase": 0,
+      "difference": -4,
+      "databaseStatusCounts": {},
+      "position": 3,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2021,13959,1,,,,1093,",
+      "matchIds": [],
+      "explanation": "no_linked_team_matches_in_current_database"
+    },
+    {
+      "season": 2021,
+      "leagueGroupId": "13961",
+      "league": "SEN+40 20. Serie Pulje 1",
+      "ageGroupId": 9,
+      "teamInStanding": "Gladsaxe Søborg 3",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 0,
+      "difference": -6,
+      "databaseStatusCounts": {},
+      "position": 3,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2021,13961,1,,,,1093,",
+      "matchIds": [],
+      "explanation": "no_linked_team_matches_in_current_database"
+    },
+    {
+      "season": 2021,
+      "leagueGroupId": "13965",
+      "league": "SEN+70 1. Serie P1 Pulje 1",
+      "ageGroupId": 17,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 4,
+      "difference": -2,
+      "databaseStatusCounts": {
+        "browser_verified": 4
+      },
+      "position": 2,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2021,13965,1,,,,1093,",
+      "matchIds": [
+        "407565",
+        "407556",
+        "407568",
+        "407572"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2021,
+      "leagueGroupId": "13966",
+      "league": "SEN+60 1. Serie Pulje 1",
+      "ageGroupId": 13,
+      "teamInStanding": "Gladsaxe Søborg 4",
+      "matchesInOfficialStanding": 5,
+      "matchesInDatabase": 0,
+      "difference": -5,
+      "databaseStatusCounts": {},
+      "position": 5,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2021,13966,1,,,,1093,",
+      "matchIds": [],
+      "explanation": "no_linked_team_matches_in_current_database"
+    },
+    {
+      "season": 2022,
+      "leagueGroupId": "14882",
+      "league": "SEN+70 1.serie Pulje 1",
+      "ageGroupId": 17,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 6,
+      "difference": 0,
+      "databaseStatusCounts": {
+        "browser_verified": 6
+      },
+      "position": 3,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2022,14882,1,,,,1093,",
+      "matchIds": [
+        "427006",
+        "427011",
+        "427014",
+        "427018",
+        "427021",
+        "427025"
+      ],
+      "explanation": "exact_match"
+    },
+    {
+      "season": 2022,
+      "leagueGroupId": "15334",
+      "league": "U17/U19 5200 4 Spillere pulje 1 - Ny Pulje 1",
+      "ageGroupId": 18,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 6,
+      "difference": 0,
+      "databaseStatusCounts": {
+        "browser_verified": 6
+      },
+      "position": 3,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2022,15334,1,,,,1093,",
+      "matchIds": [
+        "440820",
+        "440830",
+        "440845",
+        "440875",
+        "440871",
+        "440873"
+      ],
+      "explanation": "exact_match"
+    },
+    {
+      "season": 2022,
+      "leagueGroupId": "15662",
+      "league": "DMU H - U17/U19 5200 4 spillere Pulje 1",
+      "ageGroupId": 18,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 2,
+      "matchesInDatabase": 2,
+      "difference": 0,
+      "databaseStatusCounts": {
+        "browser_verified": 2
+      },
+      "position": 1,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2022,15662,1,,,,1093,",
+      "matchIds": [
+        "443460",
+        "443461"
+      ],
+      "explanation": "exact_match"
+    },
+    {
+      "season": 2023,
+      "leagueGroupId": "15888",
+      "league": "20. serie Pulje 1",
+      "ageGroupId": 9,
+      "teamInStanding": "Gladsaxe Søborg 3",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 6,
+      "difference": 0,
+      "databaseStatusCounts": {
+        "browser_verified": 6
+      },
+      "position": 1,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2023,15888,1,,,,1093,",
+      "matchIds": [
+        "446325",
+        "446328",
+        "446330",
+        "446332",
+        "446338",
+        "446341"
+      ],
+      "explanation": "exact_match"
+    },
+    {
+      "season": 2023,
+      "leagueGroupId": "15897",
+      "league": "1. Serie Pulje 1",
+      "ageGroupId": 17,
+      "teamInStanding": "Gladsaxe Søborg 3",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 0,
+      "difference": -6,
+      "databaseStatusCounts": {},
+      "position": 1,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2023,15897,1,,,,1093,",
+      "matchIds": [],
+      "explanation": "no_linked_team_matches_in_current_database"
+    },
+    {
+      "season": 2023,
+      "leagueGroupId": "16087",
+      "league": "U17/U19 - 6600 4 spillere Pulje 1",
+      "ageGroupId": 18,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 6,
+      "difference": 0,
+      "databaseStatusCounts": {
+        "browser_verified": 6
+      },
+      "position": 2,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2023,16087,1,,,,1093,",
+      "matchIds": [
+        "452566",
+        "452567",
+        "452570",
+        "452571",
+        "452572",
+        "452573"
+      ],
+      "explanation": "exact_match"
+    },
+    {
+      "season": 2023,
+      "leagueGroupId": "16088",
+      "league": "U17/U19 - 4800 4 spillere Pulje 1",
+      "ageGroupId": 18,
+      "teamInStanding": "Gladsaxe Søborg 2",
+      "matchesInOfficialStanding": 8,
+      "matchesInDatabase": 8,
+      "difference": 0,
+      "databaseStatusCounts": {
+        "browser_verified": 8
+      },
+      "position": 5,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2023,16088,1,,,,1093,",
+      "matchIds": [
+        "454632",
+        "454634",
+        "452096",
+        "452099",
+        "452105",
+        "452106",
+        "452109",
+        "452111"
+      ],
+      "explanation": "exact_match"
+    },
+    {
+      "season": 2023,
+      "leagueGroupId": "16610",
+      "league": "DMU H - U17/U19 6600 (4 spillere) Pulje 4",
+      "ageGroupId": 18,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 3,
+      "matchesInDatabase": 3,
+      "difference": 0,
+      "databaseStatusCounts": {
+        "browser_verified": 3
+      },
+      "position": 2,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2023,16610,1,,,,1093,",
+      "matchIds": [
+        "462821",
+        "462823",
+        "462825"
+      ],
+      "explanation": "exact_match"
+    },
+    {
+      "season": 2023,
+      "leagueGroupId": "16654",
+      "league": "DMU H - U17/U19 6600 (4 spillere) Slutspil 5.-8. plads",
+      "ageGroupId": 18,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 1,
+      "matchesInDatabase": 1,
+      "difference": 0,
+      "databaseStatusCounts": {
+        "browser_verified": 1
+      },
+      "position": 2,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2023,16654,1,,,,1093,",
+      "matchIds": [
+        "463488"
+      ],
+      "explanation": "exact_match"
+    },
+    {
+      "season": 2024,
+      "leagueGroupId": "16929",
+      "league": "70+ Eliteserien Pulje 1",
+      "ageGroupId": 17,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 7,
+      "matchesInDatabase": 7,
+      "difference": 0,
+      "databaseStatusCounts": {
+        "browser_verified": 7
+      },
+      "position": 1,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2024,16929,1,,,,1093,",
+      "matchIds": [
+        "465002",
+        "465006",
+        "465010",
+        "465014",
+        "465018",
+        "465025",
+        "465026"
+      ],
+      "explanation": "exact_match"
+    },
+    {
+      "season": 2024,
+      "leagueGroupId": "16931",
+      "league": "60+ 1. Serie Pulje 1",
+      "ageGroupId": 13,
+      "teamInStanding": "Gladsaxe Søborg 2",
+      "matchesInOfficialStanding": 7,
+      "matchesInDatabase": 7,
+      "difference": 0,
+      "databaseStatusCounts": {
+        "browser_verified": 7
+      },
+      "position": 5,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2024,16931,1,,,,1093,",
+      "matchIds": [
+        "465529",
+        "465532",
+        "465537",
+        "465541",
+        "465545",
+        "465549",
+        "465553"
+      ],
+      "explanation": "exact_match"
+    },
+    {
+      "season": 2024,
+      "leagueGroupId": "17100",
+      "league": "U17/U19 D, 4600 (4 spillere) Pulje 1",
+      "ageGroupId": 18,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 12,
+      "matchesInDatabase": 12,
+      "difference": 0,
+      "databaseStatusCounts": {
+        "browser_verified": 12
+      },
+      "position": 3,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2024,17100,1,,,,1093,",
+      "matchIds": [
+        "469693",
+        "469694",
+        "469703",
+        "469706",
+        "469711",
+        "469713",
+        "469718",
+        "469720",
+        "469721",
+        "469723",
+        "469732",
+        "469733"
+      ],
+      "explanation": "exact_match"
+    },
+    {
+      "season": 2025,
+      "leagueGroupId": "17922",
+      "league": "Danmarksserien Pulje 7",
+      "ageGroupId": 1,
+      "teamInStanding": "Gladsaxe Søborg",
+      "matchesInOfficialStanding": 7,
+      "matchesInDatabase": 7,
+      "difference": 0,
+      "databaseStatusCounts": {
+        "browser_verified": 7
+      },
+      "position": 2,
+      "sourceUrl": "https://badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2025,17922,1,,,,1093,",
+      "matchIds": [
+        "485648",
+        "485652",
+        "485655",
+        "485659",
+        "485664",
+        "485666",
+        "485670"
+      ],
+      "explanation": "exact_match"
+    },
+    {
+      "season": 2025,
+      "leagueGroupId": "17955",
+      "league": "4. Serie Pulje 1",
+      "ageGroupId": 9,
+      "teamInStanding": "Gladsaxe Søborg 4",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 6,
+      "difference": 0,
+      "databaseStatusCounts": {
+        "browser_verified": 6
+      },
+      "position": 4,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2025,17955,1,,,,1093,",
+      "matchIds": [
+        "486391",
+        "486393",
+        "486396",
+        "486398",
+        "486400",
+        "486401"
+      ],
+      "explanation": "exact_match"
+    },
+    {
+      "season": 2025,
+      "leagueGroupId": "17963",
+      "league": "1. Serie Pulje 1",
+      "ageGroupId": 13,
+      "teamInStanding": "Gladsaxe Søborg 2",
+      "matchesInOfficialStanding": 8,
+      "matchesInDatabase": 8,
+      "difference": 0,
+      "databaseStatusCounts": {
+        "browser_verified": 8
+      },
+      "position": 5,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2025,17963,1,,,,1093,",
+      "matchIds": [
+        "487423",
+        "486774",
+        "486778",
+        "486783",
+        "487435",
+        "487440",
+        "487443",
+        "486803"
+      ],
+      "explanation": "exact_match"
+    },
+    {
+      "season": 2025,
+      "leagueGroupId": "17965",
+      "league": "70+ Eliteserien Pulje 1",
+      "ageGroupId": 17,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 7,
+      "matchesInDatabase": 7,
+      "difference": 0,
+      "databaseStatusCounts": {
+        "browser_verified": 7
+      },
+      "position": 2,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2025,17965,1,,,,1093,",
+      "matchIds": [
+        "487451",
+        "487456",
+        "487458",
+        "487464",
+        "487465",
+        "487472",
+        "487478"
+      ],
+      "explanation": "exact_match"
+    },
+    {
+      "season": 2025,
+      "leagueGroupId": "17999",
+      "league": "Uge 38 - U17/U19 D, 5000 (2+2) Pulje 1",
+      "ageGroupId": 18,
+      "teamInStanding": "Gladsaxe Søborg 3",
+      "matchesInOfficialStanding": 2,
+      "matchesInDatabase": 2,
+      "difference": 0,
+      "databaseStatusCounts": {
+        "browser_verified": 2
+      },
+      "position": 3,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2025,17999,1,,,,1093,",
+      "matchIds": [
+        "487734",
+        "487735"
+      ],
+      "explanation": "exact_match"
+    },
+    {
+      "season": 2025,
+      "leagueGroupId": "18122",
+      "league": "U17/U19 D, 5200 (4 spillere) Pulje 3",
+      "ageGroupId": 18,
+      "teamInStanding": "Gladsaxe Søborg 2",
+      "matchesInOfficialStanding": 12,
+      "matchesInDatabase": 12,
+      "difference": 0,
+      "databaseStatusCounts": {
+        "browser_verified": 12
+      },
+      "position": 5,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2025,18122,1,,,,1093,",
+      "matchIds": [
+        "492129",
+        "492293",
+        "492136",
+        "492138",
+        "492297",
+        "492298",
+        "492141",
+        "492142",
+        "492154",
+        "492155",
+        "492161",
+        "492163"
+      ],
+      "explanation": "exact_match"
+    },
+    {
+      "season": 2025,
+      "leagueGroupId": "18154",
+      "league": "C-D 5600 (4 spillere) BD Pulje 1",
+      "ageGroupId": 18,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 6,
+      "difference": 0,
+      "databaseStatusCounts": {
+        "browser_verified": 6
+      },
+      "position": 6,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2025,18154,1,,,,1093,",
+      "matchIds": [
+        "494334",
+        "494335",
+        "494336",
+        "494337",
+        "494347",
+        "494348"
+      ],
+      "explanation": "exact_match"
+    },
+    {
+      "season": 2025,
+      "leagueGroupId": "18504",
+      "league": "U09 C 3600 (3 spillere) BD (2. halvår) Pulje 2",
+      "ageGroupId": 2,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 3,
+      "matchesInDatabase": 4,
+      "difference": 1,
+      "databaseStatusCounts": {
+        "browser_verified": 4
+      },
+      "position": 1,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2025,18504,1,,,,1093,",
+      "matchIds": [
+        "505211",
+        "505213",
+        "505215",
+        "505216"
+      ],
+      "explanation": "unexplained_from_current_material"
+    },
+    {
+      "season": 2025,
+      "leagueGroupId": "18733",
+      "league": "DMU Holdtræf U9 - 3 Spillere U9 DMU holdtræf",
+      "ageGroupId": 2,
+      "teamInStanding": "Gladsaxe Søborg 1",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 0,
+      "difference": -6,
+      "databaseStatusCounts": {},
+      "position": 1,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2025,18733,1,,,,1093,",
+      "matchIds": [],
+      "explanation": "no_linked_team_matches_in_current_database"
+    },
+    {
+      "season": 2025,
+      "leagueGroupId": "18733",
+      "league": "DMU Holdtræf U9 - 3 Spillere U9 DMU holdtræf",
+      "ageGroupId": 2,
+      "teamInStanding": "Gladsaxe Søborg 2",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 0,
+      "difference": -6,
+      "databaseStatusCounts": {},
+      "position": 10,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2025,18733,1,,,,1093,",
+      "matchIds": [],
+      "explanation": "no_linked_team_matches_in_current_database"
+    },
+    {
+      "season": 2025,
+      "leagueGroupId": "18733",
+      "league": "DMU Holdtræf U9 - 3 Spillere U9 DMU holdtræf",
+      "ageGroupId": 2,
+      "teamInStanding": "Gladsaxe Søborg 3",
+      "matchesInOfficialStanding": 6,
+      "matchesInDatabase": 4,
+      "difference": -2,
+      "databaseStatusCounts": {
+        "browser_verified": 4
+      },
+      "position": 18,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2025,18733,1,,,,1093,",
+      "matchIds": [
+        "506441",
+        "506838",
+        "506844",
+        "506845"
+      ],
+      "explanation": "unexplained_from_current_material"
+    }
+  ]
+}

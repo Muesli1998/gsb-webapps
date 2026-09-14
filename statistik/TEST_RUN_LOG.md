@@ -373,3 +373,8 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
   eksponerede ingen holdkampmetode.
 - Konklusion: ingen automatiseret masseudtræksvej er valideret; se
   `results/004-udtraeksvej.md`.
+## 2026-09-14 – opgave 015: stillingskontrol
+
+- `scripts/check-standing-match-counts.mjs` sammenlignede de 98 gemte GSB-stillingsrækker med holdkampe i samme sæson/pulje i SQLite, uden at åbne databasen til skrivning.
+- 24 rækker havde samme kampantal; 74 afveg. Af de 74 ligger 28 i sæson 2019/20 eller 2020/21; corona-status forklarer kun de rækker hvor den rå statusfordeling viser `corona_suspended`.
+- Rapporten skelner eksplicit mellem ingen linkede kampe i den aktuelle database og øvrige uforklarede afvigelser. Databasen var urørt.
