@@ -117,3 +117,4 @@ i `AGENTS.md`, `docs/START-HER.md` og de levende dokumenter.
 
 **Commits:**
 `de949fc` — erstattet ved amend med resultatnoten udfyldt.
+`49e9d34` — deduplikeringscommit med resultatnote.
