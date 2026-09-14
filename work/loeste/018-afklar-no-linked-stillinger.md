@@ -107,13 +107,18 @@ hverken i databasen eller de gemte payloads), så stop og skriv den under
 
 ## Resultat
 
-**Kontroloutput — før og efter:**
+**Kontroloutput — før og efter:** `node scripts/audit-no-linked-standings.mjs`
+skrev JSON- og Markdown-rapporten; `git status --short statistik/data/` var
+tom.
 
-```
-```
-
-**De 24 rækker (pulje-ID, sæson, konklusion):**
+**De 24 rækker (pulje-ID, sæson, konklusion):** Alle 24 er gennemgået med
+tre alternative søgninger. Alle har kamp-evidens i samme sæson; rapporten
+viser den konkrete optælling og kamp-ID-prøve pr. række. Konklusionen er
+`kobling-fejl` for alle 24 og `reelt hul` for 0.
 
 **Ændrer dette "Kampantal er holdt op mod stillingerne"s status i docs/statistik-plan.md:**
+Nej. 018 viser, at de 24 nulrækker skyldes den snævre sammenligningsnøgle,
+men de øvrige 74 afvigelser fra 015 består fortsat. Selve koblingen skal
+rettes i en separat byggeopgave.
 
-**Commits:**
+**Commits:** 424d5f9 (audit og rapport), 071fbee (resultatnote arkiveret).
