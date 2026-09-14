@@ -130,3 +130,13 @@ opgavens omfang selv.
 **Hvad blev fravalgt og hvorfor:**
 
 **Commits:**
+
+## Resultat
+
+- Rapport: `statistik/results/008-identiske-scoretekster.md`.
+- Den bevarede API-payload viser præcis syv kamp/kategori-nøgler: 96518/3. HD, 98375/1. HD, 98375/5. HD, 242764/1. HD, 385773/1. DD, 387834/4. HD og 466228/2. DD.
+- De fem 0-0-rækker overlapper fem af de otte nuværende `browser_zero_score`-rækker. Dette afviger fra opgavekortets antagelse; rapporten dokumenterer overlap i stedet for at oprette fiktive ekstra rækker.
+- Alle syv er `uafklaret`: rå score, markør og browserudsnit bevares, men der er ikke eksplicit `(Ikke fremmødt)`-tekst og markørerne er ikke fortolket.
+- Kontrol: `audit-individual-db.mjs` returnerede fortsat 20.319 individuelle rækker og 936 identiske scoretekster. `statistik/data/` er uændret.
+
+**Commits:** afventer commit på denne gren.

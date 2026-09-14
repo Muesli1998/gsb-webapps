@@ -316,3 +316,10 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 - `check-normalized-db.mjs`, `audit-individual-db.mjs`, `audit-individual-coverage-gaps.mjs`, `audit-team-vs-individual-results.mjs` og `run-data-quality-check.mjs` blev kørt igen mod den aktuelle SQLite-fil.
 - Resultaterne er konsistente med den gemte status: ingen foreign-key-fejl eller ID-dubletter; 2.818 holdkampe; 20.319 individuelle rækker; 315 dækningshuller; 458 hold/individ-afvigelser; 47 corona-suspenderede; 6 rækker med manglende resultat/sider.
 - Audit-JSON/Markdown-filerne er regenereret med ny kørselstid og gemmes sammen med dokumentationen.
+
+## 2026-09-14 – opgave 008: syv historiske, identiske lavscores
+
+- `scripts/analyze-ambiguous-identical-scores.mjs` læser den bevarede Nembadminton-payload, den aktuelle SQLite-fil read-only og de lokale BadmintonPlayer-payloads; den ændrer ikke databasen.
+- Den dokumenterer syv unikke kamp/kategori-nøgler: fem `0-0`, én `2-2` og én `3-3`. De fem `0-0` overlapper fem af de otte nuværende `browser_zero_score`-rækker; opgavekortets påstand om ingen overlap matcher ikke den bevarede rådata.
+- Alle syv står som uafklarede: rå markører (`G`, `R`, `L`, `D`) bevares og `Vinder W.O.` fortolkes ikke som walkover uden eksplicit `(Ikke fremmødt)`-tekst.
+- Efterkontrol viste fortsat 20.319 individuelle rækker og 936 identiske hjemme/ude-scoretekster. SQLite blev ikke ændret.
