@@ -316,3 +316,8 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 - `check-normalized-db.mjs`, `audit-individual-db.mjs`, `audit-individual-coverage-gaps.mjs`, `audit-team-vs-individual-results.mjs` og `run-data-quality-check.mjs` blev kørt igen mod den aktuelle SQLite-fil.
 - Resultaterne er konsistente med den gemte status: ingen foreign-key-fejl eller ID-dubletter; 2.818 holdkampe; 20.319 individuelle rækker; 315 dækningshuller; 458 hold/individ-afvigelser; 47 corona-suspenderede; 6 rækker med manglende resultat/sider.
 - Audit-JSON/Markdown-filerne er regenereret med ny kørselstid og gemmes sammen med dokumentationen.
+# 006 — afvigelsesklassifikation, 2026-09-14
+
+- 458 afvigelser klassificeret uden databaseændring: 39 administrative,
+  12 Golden Set, 222 manglende kategori, 90 rå resultatmarkør og 95 reelle.
+- Se `results/006-afvigelse-klassifikation.md` og JSON-evidensen.

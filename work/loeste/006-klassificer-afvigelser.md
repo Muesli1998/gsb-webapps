@@ -125,8 +125,16 @@ Results-rapporten, så en ekstra kategori her skal godkendes først.
 
 **Fordeling på de fem kategorier (sum = 458):**
 
+39 administrativ bemærkning/protest; 12 Golden Set; 222 manglende kategori;
+90 rå resultatmarkør; 95 reel uoverensstemmelse. Sum: 458.
+
 **Hvad blev gjort:**
 
+Et reproducerbart, læsende script klassificerer hver audit-række og gemmer
+rå kategori-/markørevidens i JSON-rapporten.
+
 **Hvad blev fravalgt og hvorfor:**
+
+Ingen rå markør er fortolket, og databasen er ikke ændret.
 
 **Commits:**
