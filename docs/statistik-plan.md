@@ -152,16 +152,15 @@ princippet om at rå data gemmes før fortolkning.
 
 ## Rækkefølge
 
-1. **004 — afklar udtræksvejen.** Virker Playwright uden for sandkassen,
-   og kan webservicelaget levere individuelle kampdata? Svaret bestemmer
-   hvordan extractoren bygges.
+1. **[Afsluttet — 004] Afklar udtræksvejen.** Resultat: se
+   `statistik/results/004-udtraeksvej.md`.
 2. **Byg den individuelle extractor** med render-gate, valideret mod fem
    til ti referencekampe manuelt før masseudtræk.
-3. **Klassificér de 458 afvigelser.** Analysearbejde, ikke udtræk — kan
-   køre parallelt med punkt 2.
-4. **Kobl spiller-ID'er.**
-5. **Stillingskontrol:** kampantal per sæson og pulje mod officielle
-   stillinger.
+3. **[Afsluttet — 006] Klassificér de 458 afvigelser.**
+4. **[Delvist afsluttet — 016] Kobl spiller-ID'er.** 85,2 % af relationerne
+   har ID; den resterende kobling er stadig en separat byggeopgave.
+5. **[Udført, ikke bestået — 015] Stillingskontrol:** kampantal per sæson
+   og pulje mod officielle stillinger; 24/98 eksakte matches.
 6. **Results-rapporten.**
 7. **Skillen.**
 8. Preview, derefter Prod Push.
