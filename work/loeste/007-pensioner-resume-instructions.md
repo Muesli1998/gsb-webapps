@@ -116,11 +116,16 @@ stop og skriv det under "Spørgsmål" — gæt ikke indholdet af den.
 
 **Kontroloutput — før og efter:**
 
-```
-```
+- Før: 116 linjer med en forældet Dropbox-sti og et statisk status-snapshot.
+- Efter: 9 linjer; peger på `statistik/AGENTS.md` og `docs/statistik-plan.md`; ingen Dropbox-sti.
+- `statistik/data/` er uændret.
 
 **Fandtes der referencer til filen andre steder? Hvad blev gjort ved dem:**
 
+Ja: `docs/BESLUTNINGER.md`, `docs/statistik-plan.md`, `statistik/GIT_CONTEXT_FOR_CLAUDE.md` og opgavekort. De beskriver den historiske fil eller dens oprindelse; de ændres ikke her, fordi opgavens afgrænsning kun tillader `RESUME_INSTRUCTIONS.txt` og eventuelt `AGENTS.md`.
+
 **Blev noget flyttet fra RESUME_INSTRUCTIONS.txt til statistik/AGENTS.md, og hvad:**
 
-**Commits:**
+Nej. Regler, kontroller, undtagelser, evidensprincip, walkoverregel og dokumentationskrav findes allerede i `statistik/AGENTS.md`. Statussnapshotet er med vilje ikke flyttet; dets levende kilder er testloggen og `results/`.
+
+**Commits:** 78e5f71
