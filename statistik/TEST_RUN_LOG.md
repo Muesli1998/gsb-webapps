@@ -337,3 +337,10 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 - 458 afvigelser klassificeret uden databaseændring: 39 administrative,
   12 Golden Set, 222 manglende kategori, 90 rå resultatmarkør og 95 reelle.
 - Se `results/006-afvigelse-klassifikation.md` og JSON-evidensen.
+
+## 2026-09-14 – opgave 008: syv historiske, identiske lavscores
+
+- `scripts/analyze-ambiguous-identical-scores.mjs` læser den bevarede Nembadminton-payload, den aktuelle SQLite-fil read-only og de lokale BadmintonPlayer-payloads; den ændrer ikke databasen.
+- Den dokumenterer syv unikke kamp/kategori-nøgler: fem `0-0`, én `2-2` og én `3-3`. De fem `0-0` overlapper fem af de otte nuværende `browser_zero_score`-rækker; opgavekortets påstand om ingen overlap matcher ikke den bevarede rådata.
+- Alle syv står som uafklarede: rå markører (`G`, `R`, `L`, `D`) bevares og `Vinder W.O.` fortolkes ikke som walkover uden eksplicit `(Ikke fremmødt)`-tekst.
+- Efterkontrol viste fortsat 20.319 individuelle rækker og 936 identiske hjemme/ude-scoretekster. SQLite blev ikke ændret.
