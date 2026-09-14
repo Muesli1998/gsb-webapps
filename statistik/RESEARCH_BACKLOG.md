@@ -46,13 +46,17 @@ Turnerings-/spillerresearch er et side-/idéspor. Det aktive hovedmål er igen
 en komplet, evidensbaseret GSB-holdkampdatabase med rådata, fejlstatus,
 walkovers, aldersgruppe-ID’er og dokumenterede fallback-links.
 
-## Næste holdkamp-test
+## Næste holdkamp-test — afklaret i opgave 005
 
-Undersøg særskilt, om slutstillinger og gruppeplaceringer kan hentes fra et
-login-frit Nembadminton-felt eller skal suppleres fra BadmintonPlayer. Kamp-
-discovery-kæden indeholder kampe og gruppe-ID’er, men en slutstilling er endnu
-ikke dokumenteret i dens svar. Testen skal bevare rå gruppe-/række-tekst og
-skelne mellem almindelig pulje, kvalifikation og slutspil.
+Opgave 005 afklarede kilden: Nembadminton-discovery indeholder kampe og
+gruppe-ID’er, men ingen dokumenteret slutstilling. Almindelige puljer skal
+suppleres fra BadmintonPlayers `Stilling`-side; playoffplaceringer afledes
+separat af gemte kampe. Den efterfølgende kontrol i opgave 015 viste, at
+den nuværende kobling stadig har 74 afvigende af 98 GSB-stillingsrækker.
+
+Opgave 013 dokumenterede desuden 257 gemte payloads uden kategorisektion.
+Manuel indhentning af disse payloads er en mulig, men endnu ikke besluttet,
+opfølgende undersøgelse.
 
 ## Potentielt punkt ved fuld klubimport
 

@@ -1,6 +1,6 @@
 # Aktuel valideringsstatus
 
-Dato: 2026-09-13
+Dato: 2026-09-14
 
 ## Datagrundlag
 
@@ -10,6 +10,8 @@ Dato: 2026-09-13
 - 1.440/1.444 fallback-køposter er verificeret; 2 er corona-suspenderede og 2 er U09 uden dynamisk detalje.
 - 126 rækker har walkovertekst i SQLite; 57 køposter har dokumenteret walkovervinder. `Vinder W.O.` alene tælles ikke.
 - 736 standingsrækker er gemt; 96 GSB-stillingsrækker er fundet i den aktuelle stillingssamling.
+- Opgave 015 kontrollerede 98 GSB-stillingsrækker: 24 har eksakt kampantal og 74 afviger. 28 af rækkerne ligger i corona-sæsonerne; de øvrige afvigelser er dokumenteret i `results/015-stillingskontrol.md` og betyder, at stillingskontrollen ikke er fuldt bestået endnu.
+- Opgave 016 målte spiller-ID-dækningen: 57.270 af 67.196 relationer (85,2 %) har eksternt BadmintonPlayer-ID; 9.926 mangler. 2.556 af 7.599 spillere mangler ID. Den resterende kobling er ikke udført.
 
 ## Resterende dokumenterede huller
 
@@ -55,6 +57,12 @@ Metodedetaljer til en senere skill står i `COMPLETE_RESULT_FALLBACK_METHOD.md`;
 - 58 payloads har kategorier uden scores; 57 har eksplicit no-play-/walkovertekst.
 - Kamp 340495 er den eneste række i denne gruppe uden eksplicit no-play-/walkovertekst. Dens **individuelle** kategoriscores er derfor fortsat et dokumenteret dækningshul, men kampens **holdresultat** er ikke uafklaret: den ordrette Bemærkning siger, at resultatet blev ændret efter en protestkendelse.
 - Ingen af de 315 gaps indeholder scorede kategorier, som importøren har undladt at importere.
+
+## Afsluttede audits siden 2026-09-13
+
+- 012: Alle 47 eksisterende `corona_suspended`-rækker ligger i sæson 2019/20 eller 2020/21. Ukendte aldrig-registrerede aflysninger kan ikke kvantificeres uden officiel kampplan.
+- 013: 257 gemte browserpayloads mangler kategorisektion; en 20-rækkers sæsonstratificeret stikprøve bekræfter det i den gemte renderede tekst. Manuel genindhentning er en mulighed, ikke en besluttet handling.
+- 014: Kamp 340495 har holdresultat 0-6/0-3 ændret efter protestkendelse; de seks individuelle kategoriscores er fortsat et særskilt dækningshul.
 
 ## Bemærkninger og afgørelser
 

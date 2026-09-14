@@ -384,3 +384,10 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 - `scripts/audit-player-id-coverage.mjs` læste spillerrelationerne read-only og ændrede ikke SQLite.
 - 67.196 relationer: 57.270 med eksternt BadmintonPlayer-ID (85,2 %) og 9.926 uden (14,8 %). 7.599 spillere: 5.043 med ID og 2.556 uden.
 - Manglende ID'er blev ikke gættet eller koblet i denne opgave; rapporten markerer det som en separat byggeopgave.
+
+## 2026-09-14 – opgave 017: ajourfør valideringsstatus og rækkefølge
+
+- Statusdatoen og de dokumenterede resultater fra opgave 012–016 er samlet i `results/CURRENT_VALIDATION_STATUS.md`.
+- `docs/statistik-plan.md` markerer 004, 006/008, 016 og 015 med deres faktiske status; stillingskontrollen står som udført, men ikke bestået (24/98 eksakte).
+- `RESEARCH_BACKLOG.md` markerer den gamle stillingskilde-test som afklaret af 005 og bevarer manuel indhentning af de 257 payloads fra 013 som en ikke-besluttet mulighed.
+- Ingen databasefelter eller databasefiler blev ændret.
