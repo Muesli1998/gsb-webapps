@@ -1,0 +1,286 @@
+{
+  "generatedAt": "2026-09-14T18:09:27.806Z",
+  "definition": "Sæson 2019 er 2019/20; sæson 2020 er 2020/21. Tallene måler kun allerede registrerede holdkampe.",
+  "expectedMatchCountLimitation": "Der findes ingen lokal officiel kampplan eller stillingskilde, som kan tælle planlagte kampe der aldrig kom ind i team_matches. En skjult yderligere coronaaflysning kan derfor ikke kvantificeres.",
+  "categoryOrder": [
+    "administrativ bemærkning eller protest",
+    "Golden Set",
+    "rå resultatmarkør",
+    "reel uoverensstemmelse",
+    "category_present_no_score",
+    "complete_match_all_categories_without_score",
+    "partial_match_missing_category_result"
+  ],
+  "seasons": [
+    {
+      "season": 2010,
+      "teamMatches": 11,
+      "coronaSuspended": 0,
+      "gaps": 0,
+      "discrepancies": 1,
+      "discrepancyCategories": {
+        "administrativ bemærkning eller protest": 0,
+        "Golden Set": 0,
+        "rå resultatmarkør": 0,
+        "reel uoverensstemmelse": 1,
+        "category_present_no_score": 0,
+        "complete_match_all_categories_without_score": 0,
+        "partial_match_missing_category_result": 0
+      }
+    },
+    {
+      "season": 2011,
+      "teamMatches": 169,
+      "coronaSuspended": 0,
+      "gaps": 159,
+      "discrepancies": 3,
+      "discrepancyCategories": {
+        "administrativ bemærkning eller protest": 0,
+        "Golden Set": 0,
+        "rå resultatmarkør": 0,
+        "reel uoverensstemmelse": 0,
+        "category_present_no_score": 1,
+        "complete_match_all_categories_without_score": 0,
+        "partial_match_missing_category_result": 2
+      }
+    },
+    {
+      "season": 2012,
+      "teamMatches": 131,
+      "coronaSuspended": 0,
+      "gaps": 19,
+      "discrepancies": 23,
+      "discrepancyCategories": {
+        "administrativ bemærkning eller protest": 2,
+        "Golden Set": 0,
+        "rå resultatmarkør": 4,
+        "reel uoverensstemmelse": 8,
+        "category_present_no_score": 0,
+        "complete_match_all_categories_without_score": 0,
+        "partial_match_missing_category_result": 9
+      }
+    },
+    {
+      "season": 2013,
+      "teamMatches": 134,
+      "coronaSuspended": 0,
+      "gaps": 6,
+      "discrepancies": 39,
+      "discrepancyCategories": {
+        "administrativ bemærkning eller protest": 2,
+        "Golden Set": 0,
+        "rå resultatmarkør": 5,
+        "reel uoverensstemmelse": 15,
+        "category_present_no_score": 0,
+        "complete_match_all_categories_without_score": 1,
+        "partial_match_missing_category_result": 16
+      }
+    },
+    {
+      "season": 2014,
+      "teamMatches": 144,
+      "coronaSuspended": 0,
+      "gaps": 20,
+      "discrepancies": 23,
+      "discrepancyCategories": {
+        "administrativ bemærkning eller protest": 2,
+        "Golden Set": 0,
+        "rå resultatmarkør": 5,
+        "reel uoverensstemmelse": 5,
+        "category_present_no_score": 0,
+        "complete_match_all_categories_without_score": 3,
+        "partial_match_missing_category_result": 8
+      }
+    },
+    {
+      "season": 2015,
+      "teamMatches": 156,
+      "coronaSuspended": 0,
+      "gaps": 29,
+      "discrepancies": 38,
+      "discrepancyCategories": {
+        "administrativ bemærkning eller protest": 2,
+        "Golden Set": 0,
+        "rå resultatmarkør": 5,
+        "reel uoverensstemmelse": 5,
+        "category_present_no_score": 0,
+        "complete_match_all_categories_without_score": 8,
+        "partial_match_missing_category_result": 18
+      }
+    },
+    {
+      "season": 2016,
+      "teamMatches": 147,
+      "coronaSuspended": 0,
+      "gaps": 20,
+      "discrepancies": 32,
+      "discrepancyCategories": {
+        "administrativ bemærkning eller protest": 2,
+        "Golden Set": 1,
+        "rå resultatmarkør": 6,
+        "reel uoverensstemmelse": 4,
+        "category_present_no_score": 0,
+        "complete_match_all_categories_without_score": 4,
+        "partial_match_missing_category_result": 15
+      }
+    },
+    {
+      "season": 2017,
+      "teamMatches": 133,
+      "coronaSuspended": 0,
+      "gaps": 6,
+      "discrepancies": 19,
+      "discrepancyCategories": {
+        "administrativ bemærkning eller protest": 0,
+        "Golden Set": 1,
+        "rå resultatmarkør": 5,
+        "reel uoverensstemmelse": 1,
+        "category_present_no_score": 0,
+        "complete_match_all_categories_without_score": 4,
+        "partial_match_missing_category_result": 8
+      }
+    },
+    {
+      "season": 2018,
+      "teamMatches": 143,
+      "coronaSuspended": 0,
+      "gaps": 5,
+      "discrepancies": 23,
+      "discrepancyCategories": {
+        "administrativ bemærkning eller protest": 3,
+        "Golden Set": 1,
+        "rå resultatmarkør": 3,
+        "reel uoverensstemmelse": 3,
+        "category_present_no_score": 0,
+        "complete_match_all_categories_without_score": 0,
+        "partial_match_missing_category_result": 13
+      }
+    },
+    {
+      "season": 2019,
+      "teamMatches": 125,
+      "coronaSuspended": 18,
+      "gaps": 1,
+      "discrepancies": 18,
+      "discrepancyCategories": {
+        "administrativ bemærkning eller protest": 5,
+        "Golden Set": 0,
+        "rå resultatmarkør": 4,
+        "reel uoverensstemmelse": 1,
+        "category_present_no_score": 0,
+        "complete_match_all_categories_without_score": 0,
+        "partial_match_missing_category_result": 8
+      }
+    },
+    {
+      "season": 2020,
+      "teamMatches": 162,
+      "coronaSuspended": 29,
+      "gaps": 0,
+      "discrepancies": 10,
+      "discrepancyCategories": {
+        "administrativ bemærkning eller protest": 0,
+        "Golden Set": 0,
+        "rå resultatmarkør": 4,
+        "reel uoverensstemmelse": 1,
+        "category_present_no_score": 0,
+        "complete_match_all_categories_without_score": 0,
+        "partial_match_missing_category_result": 5
+      }
+    },
+    {
+      "season": 2021,
+      "teamMatches": 186,
+      "coronaSuspended": 0,
+      "gaps": 6,
+      "discrepancies": 40,
+      "discrepancyCategories": {
+        "administrativ bemærkning eller protest": 5,
+        "Golden Set": 3,
+        "rå resultatmarkør": 8,
+        "reel uoverensstemmelse": 5,
+        "category_present_no_score": 0,
+        "complete_match_all_categories_without_score": 4,
+        "partial_match_missing_category_result": 15
+      }
+    },
+    {
+      "season": 2022,
+      "teamMatches": 227,
+      "coronaSuspended": 0,
+      "gaps": 6,
+      "discrepancies": 40,
+      "discrepancyCategories": {
+        "administrativ bemærkning eller protest": 2,
+        "Golden Set": 2,
+        "rå resultatmarkør": 13,
+        "reel uoverensstemmelse": 8,
+        "category_present_no_score": 0,
+        "complete_match_all_categories_without_score": 0,
+        "partial_match_missing_category_result": 15
+      }
+    },
+    {
+      "season": 2023,
+      "teamMatches": 255,
+      "coronaSuspended": 0,
+      "gaps": 16,
+      "discrepancies": 47,
+      "discrepancyCategories": {
+        "administrativ bemærkning eller protest": 3,
+        "Golden Set": 3,
+        "rå resultatmarkør": 4,
+        "reel uoverensstemmelse": 14,
+        "category_present_no_score": 0,
+        "complete_match_all_categories_without_score": 4,
+        "partial_match_missing_category_result": 19
+      }
+    },
+    {
+      "season": 2024,
+      "teamMatches": 295,
+      "coronaSuspended": 0,
+      "gaps": 8,
+      "discrepancies": 41,
+      "discrepancyCategories": {
+        "administrativ bemærkning eller protest": 7,
+        "Golden Set": 0,
+        "rå resultatmarkør": 11,
+        "reel uoverensstemmelse": 11,
+        "category_present_no_score": 0,
+        "complete_match_all_categories_without_score": 0,
+        "partial_match_missing_category_result": 12
+      }
+    },
+    {
+      "season": 2025,
+      "teamMatches": 400,
+      "coronaSuspended": 0,
+      "gaps": 14,
+      "discrepancies": 61,
+      "discrepancyCategories": {
+        "administrativ bemærkning eller protest": 4,
+        "Golden Set": 1,
+        "rå resultatmarkør": 13,
+        "reel uoverensstemmelse": 13,
+        "category_present_no_score": 0,
+        "complete_match_all_categories_without_score": 6,
+        "partial_match_missing_category_result": 24
+      }
+    }
+  ],
+  "comparison": {
+    "coronaSeasons": {
+      "teamMatches": 287,
+      "coronaSuspended": 47,
+      "gaps": 1,
+      "discrepancies": 28
+    },
+    "otherSeasons": {
+      "teamMatches": 2531,
+      "coronaSuspended": 0,
+      "gaps": 314,
+      "discrepancies": 430
+    }
+  }
+}
