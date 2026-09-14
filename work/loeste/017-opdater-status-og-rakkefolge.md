@@ -124,11 +124,16 @@ den ene kilde uden begrundelse.
 
 ## Resultat
 
-**Kontroloutput — før og efter:**
-
-```
-```
+**Kontroloutput — før og efter:** Statusdatoen er ændret fra 2026-09-13
+til 2026-09-14. `grep`-kontrollerne viser referencer til 004, 005, 006,
+008, 012, 013, 014, 015 og 016; `Næste holdkamp-test` er markeret
+afklaret; og backloggen indeholder fortsat 013 samt manuel indhentning.
+`git status --short statistik/data/` var tom.
 
 **Hvad blev opdateret i hver af de tre filer:**
+`CURRENT_VALIDATION_STATUS.md` fik de målte 012–016-resultater og ny dato.
+`docs/statistik-plan.md` fik afsluttede audits markeret og 015/016's faktiske
+ikke-fulde status. `RESEARCH_BACKLOG.md` fik stillingskilde-testen afklaret
+via 005 og den ikke-besluttede manuelle 013-mulighed bevaret.
 
-**Commits:**
+**Commits:** 31a5129 (status, rækkefølge og backlog); resultatnotens arkivering følger i næste commit.
