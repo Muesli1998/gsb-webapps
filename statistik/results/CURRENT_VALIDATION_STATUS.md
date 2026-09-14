@@ -53,14 +53,14 @@ Metodedetaljer til en senere skill står i `COMPLETE_RESULT_FALLBACK_METHOD.md`;
 - 315 holdkampe har registreret holdresultat, men ingen individuelle SQLite-rækker.
 - 257 gemte payloads har ingen kategorisektioner.
 - 58 payloads har kategorier uden scores; 57 har eksplicit no-play-/walkovertekst.
-- Kamp 340495 er den eneste uafklarede række i denne gruppe.
+- Kamp 340495 er den eneste række i denne gruppe uden eksplicit no-play-/walkovertekst. Dens **individuelle** kategoriscores er derfor fortsat et dokumenteret dækningshul, men kampens **holdresultat** er ikke uafklaret: den ordrette Bemærkning siger, at resultatet blev ændret efter en protestkendelse.
 - Ingen af de 315 gaps indeholder scorede kategorier, som importøren har undladt at importere.
 
 ## Bemærkninger og afgørelser
 
 - 80 holdkampe har nu ordret Bemærkning gemt i team_matches.remark_raw.
 - De fire individuelle gaps med Bemærkning er 340495, 429571, 429790 og 446325; de er dokumenteret i gap-auditen.
-- 340495 er en protestafgørelse: resultatet er ændret jf. kendelse i protest.
+- 340495 er en protestafgørelse: Bemærkningen er ordret "Resultatet ændret jf. kendelse i protest. Kurt Mehlsen 10.03.2019". Det forener de to fund: afgørelsen forklarer holdresultatet 0-6 (0-3 point), mens de seks individuelle kategorier stadig mangler scores i den gemte browserpayload.
 
 ## Alternativ ruteprøve
 

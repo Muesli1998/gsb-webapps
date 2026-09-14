@@ -299,6 +299,12 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 - Kamp 340495 er dermed dokumenteret som en administrativ afgørelse, ikke som en skjult scoremangel.
 - Rapporten ligger i results/team-match-remarks-audit.json/.md og results/individual-coverage-gap-audit.json/.md.
 
+## 2026-09-14 – opgave 014: afklaring af kamp 340495
+
+- Rå databaseevidens: kamp 340495 er `browser_verified`, med holdresultat `0-6`, point `0-3` og den ordrette Bemærkning "Resultatet ændret jf. kendelse i protest. Kurt Mehlsen 10.03.2019".
+- Coverage-auditens gemte browserudtræk har seks kategorier og 22 spillere, men ingen kategoriscores og ingen eksplicit no-playtekst.
+- Statusnotens to tidligere udsagn er forenet: protestafgørelsen afklarer holdresultatet, mens manglende individuelle scores fortsat er et afgrænset dækningshul. Databasen blev ikke ændret.
+
 ## 2026-09-13 – alternativ ruteprøve for 315 gaps
 - scripts/probe-individual-gap-routes.mjs udvalgte 16 repræsentative kampe og fem kendte fragmentvarianter.
 - Browserkonteksten kunne ikke startes i denne runtime (Playwright spawn EPERM). Scriptet afsluttede kontrolleret, gemte fejlen og ændrede ikke databasen.
