@@ -108,17 +108,6 @@ og skriv præcis hvad der mangler, fremfor at gætte et baseline-tal.
 
 ## Resultat
 
-**Kontroloutput — før og efter:**
-
-```
-```
-
-**Fordeling pr. sæson (2019/20 og 2020/21 specifikt):**
-
-**Konklusion — er corona underrapporteret, og i givet fald hvor meget:**
-
-**Commits:**
-
 **Fordeling pr. sæson (2019/20 og 2020/21 specifikt):**
 
 2019/20: 125 registrerede holdkampe, 18 `corona_suspended`, 1 dækningshul og 18 afvigelser.
@@ -133,4 +122,4 @@ dækningshuller, da kun ét ligger i sæson 2019 og ingen i sæson 2020. En
 kvantificering af aldrig-registrerede aflysninger kan ikke laves uden en lokal
 officiel kampplan eller stillingskilde med forventede kampantal.
 
-**Commits:** afventer commit på denne gren.
+**Commits:** 874bb40
