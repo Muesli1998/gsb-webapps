@@ -115,4 +115,4 @@ ligger i rapportens Markdown-tabel.
 Det var for optimistisk i nutid. Det er nu markeret som delvist opfyldt
 med de målte tal; den resterende kobling er foreslået som separat opgave.
 
-**Commits:** 545319f (audit og rapport); resultatnotens arkivering følger i næste commit.
+**Commits:** 545319f (audit og rapport), 7f57456 (resultatnote arkiveret).
