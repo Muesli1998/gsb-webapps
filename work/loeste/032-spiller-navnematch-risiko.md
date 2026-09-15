@@ -135,3 +135,5 @@ kampe, sæsoner og hold for alle 25.
 nødvendig før per-spiller Results-tal kan kaldes identitetsmæssigt sikre.
 
 **Commits:**
+
+fdd8397
