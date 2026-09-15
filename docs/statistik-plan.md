@@ -69,6 +69,13 @@ for kampe med holdresultat uden eksplicit afbud. De behandles derfor som
 et dokumenteret kildehul i det nuværende materiale, ikke som en
 importfejl. En ny manuel indhentning kræver en særskilt opgave.
 
+De resterende 130 af de 451 uden individuelle rækker (ikke en del af de
+315) er bekræftet ved SQL i opgave 031: 85 `browser_verified_no_result`
+og 45 øvrige `corona_suspended`-kampe — begge statusser der i sig selv
+forklarer fraværet af individuelle rækker (intet spillet). 100 % match,
+ingen kampe uden for de to statusgrupper. Se
+`statistik/results/031-komplet-individuel-daekning.md`.
+
 **De 458 afvigelser er klassificeret efter evidens** i de fem kategorier
 der allerede er navngivet i genoptagelsesinstruktionen: administrativ
 bemærkning eller protest, Golden Set, manglende kategori, rå
