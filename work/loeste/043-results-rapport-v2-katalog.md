@@ -90,4 +90,4 @@ Kørt read-only mod normalized DB. Resultatet dækker alle ti katalogpunkter:
 
 Rapportfiler: `statistik/results/043-results-rapport-v2.md` og `.json`.
 
-**Commits:** TEMP_HASH
+**Commits:** 77a5690c0ede6324de2734565b3172ada781ab16
