@@ -465,3 +465,9 @@ Spillerrelationer: 17.114 i alt, 8.255 med external ID og 8.859 uden.
 Der findes ingen uafhængig, gemt Nembadminton-discovery-total, så manglende
 ungdomskampe kan ikke estimeres uden nyt eksternt kald. Databasen var
 read-only; senior-dokumentation urørt.
+# 2026-09-15 — Opgave 038 senior-tal klubbrede
+
+Read-only optælling uden age_group-filter bekræftede hypotese (A):
+team_matches 2.818/2.818, individual_matches 20.319/20.319 og
+individual_match_players 67.196/67.196. U09-U15 (age_group_id 2–5) er
+1.207 holdkampe og er dermed allerede indeholdt i klubtotalen.

@@ -92,4 +92,11 @@ individuelle kategorier og spillerrelationer.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+**Konklusion: (A) klubbrede totaler.** Optælling uden aldersfilter gav
+`team_matches` 2.818, `individual_matches` 20.319 og
+`individual_match_players` 67.196 — alle tre matcher planens tal præcist.
+U09-U15 (`age_group_id` 2–5) udgør 1.207 holdkampe og er derfor allerede
+inkluderet i 2.818-totalen. De øvrige 1.611 kampe er andre aldersgrupper.
+Fuld aldersfordeling står i `statistik/results/038-afklar-om-senior-tal-er-klubbrede.md`.
+
+**Commits:** afventer commit på denne gren.

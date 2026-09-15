@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import { DatabaseSync } from 'node:sqlite';
+const db=new DatabaseSync('data/gsb-statistik-normalized.db');
+const one=(sql,p=[])=>db.prepare(sql).get(...p); const all=(sql,p=[])=>db.prepare(sql).all(...p);
+const teamTotal=one('SELECT COUNT(*) n FROM team_matches');
+const byAge=all('SELECT c.age_group_id,COUNT(*) n FROM team_matches tm JOIN competitions c ON c.competition_id=tm.competition_id GROUP BY c.age_group_id ORDER BY c.age_group_id');
+const individualTotal=one('SELECT COUNT(*) n FROM individual_matches');
+const individualByAge=all('SELECT c.age_group_id,COUNT(*) n FROM individual_matches im JOIN team_matches tm ON tm.team_match_id=im.team_match_id JOIN competitions c ON c.competition_id=tm.competition_id GROUP BY c.age_group_id ORDER BY c.age_group_id');
+const relationTotal=one('SELECT COUNT(*) n FROM individual_match_players');
+const relationByAge=all('SELECT c.age_group_id,COUNT(*) n FROM individual_match_players imp JOIN individual_matches im ON im.individual_match_id=imp.individual_match_id JOIN team_matches tm ON tm.team_match_id=im.team_match_id JOIN competitions c ON c.competition_id=tm.competition_id GROUP BY c.age_group_id ORDER BY c.age_group_id');
+const youthTotal=one('SELECT COUNT(*) n FROM team_matches tm JOIN competitions c ON c.competition_id=tm.competition_id WHERE c.age_group_id IN (2,3,4,5)');
+const youthIds=one('SELECT COUNT(*) n FROM team_matches tm JOIN competitions c ON c.competition_id=tm.competition_id WHERE c.age_group_id IN (2,3,4,5) AND tm.external_match_id IN (SELECT external_match_id FROM team_matches)');
+const out={generatedAt:new Date().toISOString(),teamTotal,byAge,individualTotal,individualByAge,relationTotal,relationByAge,youthTotal,youthIds,comparisons:{teamExpected2818:teamTotal.n===2818,individualExpected20319:individualTotal.n===20319,relationExpected67196:relationTotal.n===67196}};
+fs.writeFileSync('results/038-afklar-om-senior-tal-er-klubbrede.json',JSON.stringify(out,null,2)); console.log(JSON.stringify(out,null,2)); db.close();

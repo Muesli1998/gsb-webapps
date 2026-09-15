@@ -1,0 +1,173 @@
+{
+  "generatedAt": "2026-09-15T12:44:01.707Z",
+  "teamTotal": {
+    "n": 2818
+  },
+  "byAge": [
+    {
+      "age_group_id": 1,
+      "n": 506
+    },
+    {
+      "age_group_id": 2,
+      "n": 105
+    },
+    {
+      "age_group_id": 3,
+      "n": 348
+    },
+    {
+      "age_group_id": 4,
+      "n": 388
+    },
+    {
+      "age_group_id": 5,
+      "n": 366
+    },
+    {
+      "age_group_id": 6,
+      "n": 56
+    },
+    {
+      "age_group_id": 9,
+      "n": 382
+    },
+    {
+      "age_group_id": 11,
+      "n": 369
+    },
+    {
+      "age_group_id": 12,
+      "n": 2
+    },
+    {
+      "age_group_id": 13,
+      "n": 163
+    },
+    {
+      "age_group_id": 17,
+      "n": 42
+    },
+    {
+      "age_group_id": 18,
+      "n": 91
+    }
+  ],
+  "individualTotal": {
+    "n": 20319
+  },
+  "individualByAge": [
+    {
+      "age_group_id": 1,
+      "n": 5793
+    },
+    {
+      "age_group_id": 2,
+      "n": 486
+    },
+    {
+      "age_group_id": 3,
+      "n": 1683
+    },
+    {
+      "age_group_id": 4,
+      "n": 2043
+    },
+    {
+      "age_group_id": 5,
+      "n": 2029
+    },
+    {
+      "age_group_id": 6,
+      "n": 119
+    },
+    {
+      "age_group_id": 9,
+      "n": 3815
+    },
+    {
+      "age_group_id": 11,
+      "n": 2528
+    },
+    {
+      "age_group_id": 12,
+      "n": 12
+    },
+    {
+      "age_group_id": 13,
+      "n": 1120
+    },
+    {
+      "age_group_id": 17,
+      "n": 232
+    },
+    {
+      "age_group_id": 18,
+      "n": 459
+    }
+  ],
+  "relationTotal": {
+    "n": 67196
+  },
+  "relationByAge": [
+    {
+      "age_group_id": 1,
+      "n": 17849
+    },
+    {
+      "age_group_id": 2,
+      "n": 1248
+    },
+    {
+      "age_group_id": 3,
+      "n": 4584
+    },
+    {
+      "age_group_id": 4,
+      "n": 5654
+    },
+    {
+      "age_group_id": 5,
+      "n": 5628
+    },
+    {
+      "age_group_id": 6,
+      "n": 338
+    },
+    {
+      "age_group_id": 9,
+      "n": 15111
+    },
+    {
+      "age_group_id": 11,
+      "n": 10080
+    },
+    {
+      "age_group_id": 12,
+      "n": 44
+    },
+    {
+      "age_group_id": 13,
+      "n": 4480
+    },
+    {
+      "age_group_id": 17,
+      "n": 928
+    },
+    {
+      "age_group_id": 18,
+      "n": 1252
+    }
+  ],
+  "youthTotal": {
+    "n": 1207
+  },
+  "youthIds": {
+    "n": 1207
+  },
+  "comparisons": {
+    "teamExpected2818": true,
+    "individualExpected20319": true,
+    "relationExpected67196": true
+  }
+}
