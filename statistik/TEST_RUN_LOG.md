@@ -6,6 +6,13 @@ Dette er den samlede log over de read-only undersøgelser, der er kørt for GSB-
 statistikprojektet. API-fejl er ikke fortolket som bevis på, at data mangler.
 Uverificerede fortolkninger er markeret som ukendte.
 
+## 2026-09-15 — Opgave 043 Results-rapport v2
+
+Genererede fuldt stat-katalog read-only: 2.818 holdkampe, 16 sæsoner, 11 hold,
+7.599 spillere, 67.196 spillerrelationer og 389 modstanderhold. Dækker winrate
+og kamptal på de ti besluttede dimensioner samt karriereoversigt. Kendte huller
+videreført (18, 21, 205/46). Databasen og v1-filerne blev ikke ændret.
+
 ## 2026-09-15 — Opgave 042 Results-rapport v1
 
 Kørte `scripts/042-results-rapport.mjs` read-only mod normalized DB. Genererede
