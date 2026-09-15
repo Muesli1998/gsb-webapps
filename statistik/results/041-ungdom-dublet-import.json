@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-09-15T15:15:05.712Z",
+  "populationRelations": 9691,
+  "groups": 0,
+  "counts": {
+    "a_real_duplicate_import": 0,
+    "b_distinct_matches_same_competition": 0,
+    "c_normal_multi_registration_different_competitions": 0
+  },
+  "findings": []
+}

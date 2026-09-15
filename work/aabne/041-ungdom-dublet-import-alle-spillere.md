@@ -75,4 +75,16 @@ konkret liste hvis (a) > 0.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+Kørt 2026-09-15 på `opgave-041-ungdom-dublet-import`.
+
+| Kategori | Grupper |
+|---|---:|
+| (a) Reel dublet-import | 0 |
+| (b) Forskellige kampe samme dag, samme konkurrence | 0 |
+| (c) Normal multi-registrering | 0 |
+| **I alt** | **0** |
+
+9.691 ungdomsrelationer blev undersøgt inkl. ID'ede og ID-løse spillere
+og U17/U19. Ingen grupper eller external_match_id-par blev fundet.
+
+**Commits:** afventer commit på denne gren.

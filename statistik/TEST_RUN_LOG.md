@@ -487,3 +487,8 @@ U17/U19 16 og veteran 158. 98 stillingsrækker fordeler sig på senior 20,
 ungdom 27 og veteran 51. De 21 genuint uforklarede stillingsrækker rummer
 6 ungdomsrækker (4 U17, 2 U09). Ingen eksisterende status eller målefil blev
 ændret.
+# 2026-09-15 — Opgave 041 fuld ungdoms-dubletimport-audit
+
+Read-only audit af 9.691 ungdomsrelationer (`age_group_id` 2,3,4,5,6,18),
+inkl. både ID'ede og ID-løse spillere. 0 grupper med samme dato og samme
+league_raw/name_raw på flere GSB-hold; dermed (a) 0, (b) 0, (c) 0.
