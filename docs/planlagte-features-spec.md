@@ -348,6 +348,18 @@ mocket. Intet rørt i de rigtige produktionsfiler (var allerede korrekt konfigur
 
 ## B3. Klubstatistik — ny top-level side med al klubbens data (ungdom + senior + veteran), adskilt fra Dream Team — AFTALT 2026-08-31
 
+**OPDATERET 2026-09-15 — backend erstattet, design bevaret:** `statistik/`
+(det separate SQLite-baserede projekt, startet 12.-13. september) er
+besluttet som den ENESTE backend til denne feature. Afsnittets
+`AlleResultater`-Google-Sheet og Netlify scheduled function nedenfor
+bygges IKKE — de er forældede som teknisk plan. Placering, scope,
+filtrering (Alle/Ung/Sen/Vet) og kravet om at siden skal ligne resten af
+sitet er derimod stadig gældende og skal genbruges, når `statistik/` når
+sit Preview-trin — se `docs/statistik-plan.md`s Preview-afsnit og
+`docs/BESLUTNINGER.md` for begrundelsen. Resten af dette afsnit
+beskriver derfor kun det oprindelige, nu forladte backend-design —
+læs det som designreference for frontend, ikke som byggeplan.
+
 **Baggrund:** trænerne (og evt. bestyrelsen) vil gerne kunne se statistik for HELE klubben,
 ikke kun de fire Dream Team-hold (GSB 1-4) — særligt ungdom, som slet ikke er dækket i dag.
 Uddyber og lander det tidligere forslag "Adskil Dream Team-statistik fra generel

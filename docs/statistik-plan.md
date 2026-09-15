@@ -126,6 +126,14 @@ allerede i `terra-action-items.md` og fastholdes. Grunden er at en
 brugerflade bygget på ufuldstændige tal skaber tillid til noget der ikke
 er færdigt.
 
+**Design genbruges fra B3 (2026-09-15):** denne side dækker samme formål
+som `docs/planlagte-features-spec.md`s B3 "Klubstatistik" — men med
+DENNE database som backend, ikke B3's planlagte Google Sheets/
+`AlleResultater`. Nav-placering (ny top-level side, ikke en filtrering
+inde i en eksisterende side), Alle/Ung/Sen/Vet-faneskiftet, og kravet om
+at den skal ligne resten af sitet visuelt, gælder stadig og skal genbruges
+her. Se `docs/BESLUTNINGER.md` for begrundelsen.
+
 ---
 
 ## Prod Push

@@ -200,3 +200,38 @@ fravalgt: at lade fremtidigt arbejde blive stående som ren
 idébank-tekst uden konkret Mål/Afgrænsning/Kontrol — Chris ville have
 dem klar til at blive kørt med det samme, ikke skrevet færdigt først når
 turen kommer.
+
+---
+
+## 2026-09-15 — statistik/ (SQLite) afløser B3 Klubstatistiks backend, ikke dens design
+
+**Besluttet:** `statistik/`-projektets SQLite-backend er den ENESTE
+datakilde og arkitektur for klubbens holdkampstatistik fremadrettet.
+`docs/planlagte-features-spec.md`s B3-afsnit ("Klubstatistik — ny
+top-level side...", AFTALT 2026-08-31) er backend-mæssigt forældet —
+dets Google Sheets-faneblad `AlleResultater`, Netlify scheduled function
+og separate synk-pipeline bygges IKKE. Til gengæld genbruges B3's
+FRONTEND-design når `statistik/` når Results/Preview-trinnet: placeringen
+som ny top-level side i nav'en (ved siden af Forside, GSB Dream Team,
+Ungdomssparring, Søndagstræning), Alle/Ung/Sen/Vet-faneskiftet, og
+princippet om at den skal ligne resten af sitet visuelt — ikke fremstå
+som et løsrevet værktøj.
+
+**Hvorfor:** B3 og `statistik/` viste sig ved nærmere eftersyn at
+forfølge samme mål (statistik for hele klubben, ikke kun Dream Teams
+GSB 1-4) via samme underliggende Nembadminton-API-kæde
+(`badmintonPlayerTeams`→`badmintonPlayerTeamFights`→
+`badmintonPlayerTeamMatch`, clubId 1093) — men blev specificeret hhv.
+bygget uafhængigt af hinanden, uden nogen krydshenvisning i nogen af de
+to sæt dokumenter. `statistik/` er allerede langt inde i Test &
+Validation med en solid, verificeret database; at genstarte med B3's
+Sheets-arkitektur ville kassere det arbejde for intet. B3's designtanker
+(nav-placering, filtre, at det skal se ud som resten af sitet) er
+derimod stadig gyldige og værd at genbruge, uafhængigt af hvilken
+backend der leverer tallene.
+
+**Fravalgt:** at bygge B3 som specificeret (Sheets + scheduled function)
+ved siden af eller i stedet for `statistik/`. Også fravalgt: at lade
+`statistik/`s kommende Preview-side opfinde sit eget, uafhængige design
+fra bunden, når B3 allerede har et aftalt, klub-testet forslag til
+placering og filtrering.
