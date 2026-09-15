@@ -409,3 +409,9 @@ Read-only gennemgang af alle 31 rækker med `unexplained_from_current_material`
 fra 015. 10 havde konkret gemt evidens (9 `browser_verified_no_result` med
 rå `-`/`-`, 1 protestbemærkning); 21 forblev uforklarede. Databasen var
 urørt. Rapport: `statistik/results/020-unexplained-standings.md`.
+# 2026-09-15 — Opgave 021: stoppet efter første CUA-stikprøve
+
+Forsøgte kamp 2286 samt seks yderligere tilgængelige ikke-afbuds-rækker med
+den validerede browser/CUA-metode. Alle syv viste standardskallen; 0 godkendt,
+0 nye kategorisektioner. Ingen databaseændringer. Rapport:
+`statistik/results/021-genindhentning.md`.

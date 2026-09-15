@@ -122,6 +122,27 @@ uden at spørge.
 
 ## Spørgsmål
 
+Den validerede CUA-hentning af kamp 2286 gav kun standardskallen (ingen
+synligt kampnr, dato, hold eller resultat). Er browsermetoden tilgængelig på
+ny, før resten af de 109 forsøges?
+
+**Besvaret 2026-09-15 (Chris, manuelt tjek):** Chris åbnede kamp 2286
+direkte i browseren selv. Der er INGEN kampinformation på siden — hverken
+kampnr, dato, hold eller resultat. Standardskallen CUA-metoden gav var
+altså en korrekt gengivelse af en reelt tom side, ikke et metodesvigt.
+**Konklusion: metoden fejlede ikke — den fangede korrekt at denne
+specifikke kamp mangler data hos kilden selv.** Dette ophæver stoppet:
+metoden må betragtes som tilgængelig og virkende, og resten af
+stikprøven (og efterfølgende de øvrige 108, hvis stikprøven består) kan
+fortsætte. Bemærk dog forskellen fremadrettet: en "standardskal"
+skal fra nu af tolkes som "muligvis en reelt tom kilde-side", ikke
+automatisk som "metoden virker ikke" — begge dele giver samme tomme
+respons, så et enkelt shell-resultat er ikke længere i sig selv nok til
+at stoppe. Stop stadig og spørg hvis MANGE eller ALLE forsøg i træk
+giver standardskal (det ville tyde på et reelt metodeproblem igen), men
+et enkelt tomt resultat som kamp 2286 er nu et gyldigt, dokumenteret
+udfald — ikke et stop-signal.
+
 ## Tilbagefald
 
 ## Resultat
@@ -129,10 +150,26 @@ uden at spørge.
 **Kontroloutput — før og efter:**
 
 ```
+ls statistik/results/ | grep -i "021\|genindhentning\|refetch"
+021-genindhentning.md
+
+grep -c "021" statistik/TEST_RUN_LOG.md
+1
+
+git diff --stat main..arbejde/021-genindhent-257-manglende-kategorisektioner -- statistik/data/
+(tom — ingen databaseændringer)
 ```
 
 **Forsøgte kampe og udfald (fundet ny kategoridata / bekræftet fortsat tomt / metode fejlede):**
 
+Kampene 2286, 96231, 142978, 2365, 2396, 2509 og 2664: standardskal;
+bekræftet fortsat tomt, 0 nye kategorisektioner.
+
 **Hvor mange af de 257 er nu løst, hvor mange står tilbage:**
 
+0 løst ved genhentning; 257 står fortsat i den oprindelige opgørelse. 7 af de
+109 ikke-eksplicitte-afbud blev forsøgt.
+
 **Commits:**
+
+53c6b98 (første stikprøve) — denne fortsættelse af stikprøven afventer ny commit
