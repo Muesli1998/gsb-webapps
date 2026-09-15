@@ -2,29 +2,40 @@
 
 **Trin:** Test & Validation
 
-**Skal køres efter opgave 019 er afsluttet, mergeet til main og
-`statistik/results/015-stillingskontrol.md/.json` dermed er opdateret med
-den rettede matching-nøgle.** Er 019 ikke færdig endnu (heller ikke på
-egen umerget gren), så stop og spørg i stedet for at arbejde videre på de
-gamle, kendt-forkerte tal.
+**OPDATERET 2026-09-15: 019 er lukket UDEN at ændre 015's tal** (se
+`work/loeste/019-ret-matching-noegle-stillingskontrol.md` — den planlagte
+rettelse virkede ikke, og årsagen viste sig at være dybere end en
+matching-key-bug). Der findes derfor ingen "opdateret efter 019"-version
+af `results/015-stillingskontrol.json` at vente på — brug de
+EKSISTERENDE, oprindelige tal fra opgave 015 direkte. Den oprindelige
+spærring nedenfor er ophævet; denne opgave kan køres nu.
 
 ---
 
 ## Mål
 
-For hver række der efter 019's rettelse stadig er klassificeret
-`unexplained_from_current_material` i `results/015-stillingskontrol.json`:
-find en konkret forklaring i allerede gemt data, eller dokumentér den
-som reelt uforklaret.
+For hver række der i det nuværende `results/015-stillingskontrol.json`
+er klassificeret `unexplained_from_current_material`: find en konkret
+forklaring i allerede gemt data, eller dokumentér den som reelt
+uforklaret.
 
 ## Kontekst
 
-Opgave 015 fandt oprindeligt 31 rækker i denne kategori (afvigelse mellem
-stillingens kampantal og databasens, uden corona-status og uden manglende
-kobling). Opgave 018 og 019 handlede om en anden delmængde (de 24
-"no_linked"-rækker, som var en koblingsfejl) — de 31 er ikke undersøgt af
-nogen af dem, og tallet kan være ændret af 019's rettede matching, så
-brug det NYE tal fra 019's kørsel, ikke 31 som et fast facit.
+Opgave 015 fandt 31 rækker i denne kategori (afvigelse mellem
+stillingens kampantal og databasens, uden corona-status og uden
+manglende kobling). Opgave 018 og 019 handlede om en helt anden
+delmængde (de 24 "no_linked"-rækker) — de 31 er ikke undersøgt af nogen
+af dem, og tallet er UÆNDRET (019 rettede intet, se ovenfor). Brug 31
+som det aktuelle facit for hvor mange rækker denne opgave skal gennemgå,
+ikke som et tal der først skal genberegnes.
+
+**Ikke denne opgaves ansvar:** den nye, dybere spørgsmålsstilling om
+holdnummer-stabilitet på tværs af datakilder, som 019 rejste. Det er et
+separat, uafklaret spørgsmål (se `statistik/RESEARCH_BACKLOG.md`) — bland
+det ikke ind i denne undersøgelse af de 31 uforklarede rækker, medmindre
+en konkret af de 31 rækker viser sig at have samme symptom (i så fald:
+dokumentér det som endnu et eksempel i backloggen, ikke som en løsning
+her).
 
 For hver tilbageværende uforklaret række: undersøg om de linkede
 holdkampes gemte felter (`status`, `result_raw`, walkovertekst,

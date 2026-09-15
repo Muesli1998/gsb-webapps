@@ -396,3 +396,10 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 
 - `scripts/audit-no-linked-standings.mjs` prøvede for hver af de 24 rækker først samme pulje, derefter samme sæson + normaliseret holdnavn og til sidst bred sæsonbaseret GSB-søgning.
 - Alle 24 havde alternativ kamp-evidens i samme sæson; 24 klassificeres derfor som koblings-fejl i 015's snævre konkurrence-/labelnøgle og 0 som reelt hul. Ingen kobling blev rettet, og SQLite var read-only.
+
+## 2026-09-15 – opgave 019: forsøgt rettelse af matching-nøgle, lukket uden løsning
+
+- Matching-nøglen i `check-standing-match-counts.mjs` blev forsøgt rettet til `season_id + league_group_id + normaliseret holdnavn`, jf. opgavekortets instruks. Genkørsel gav samme resultat som før: Eksakt 24, Afvigende 74, no_linked 24 — ingen ændring.
+- Diagnoserapport `results/019-diagnose-raa-navne.md` viser rå, unormaliserede hjemme-/udeholdnavne i `team_matches` for alle 24 "no_linked"-puljer. Mønster: stillingens holdnummer matcher stort set aldrig noget rå holdnavn i samme pulje, hverken før eller efter normalisering.
+- To eksempler verificeret manuelt: 2011/pulje 60 (stilling "Gladsaxe Søborg 2" vs. team_matches udelukkende "Gladsaxe Søborg 3", kamp 1717) og 2025/pulje 18733 (stilling "Gladsaxe Søborg 1"/"2" vs. team_matches udelukkende "Gladsaxe Søborg 3", kamp 506441 — et aktivt 2025/26-hold).
+- Konklusion: årsagen er ikke en matching-key-bug, men et uafklaret spørgsmål om GSB's holdnummerering er en stabil identitet på tværs af BadmintonPlayers-stillinger og Nembadminton-holdkampe. Ingen databaseændring foretaget. Opgaven lukkes som dokumenteret nej; opfølgning logget i `RESEARCH_BACKLOG.md`.
