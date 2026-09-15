@@ -86,4 +86,19 @@ fordelingen) ændres — kun aldersopdeles.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+Kørt 2026-09-15 på `opgave-040-bekraeft-458-og-stillinger`.
+
+**Del A — 458 afvigelser:** senior 129, U09–U15 155, U17/U19 16,
+veteran 158 (i alt 458). De 171 ungdomsrækker er allerede en del af
+opgave 006's eksisterende fem kategorier.
+
+**Del B — 98 stillingsrækker:** senior 20, ungdom 27 (U09 4 og U17/U19
+23), veteran 51 (i alt 98). Af de 21 genuint uforklarede er 6 ungdoms-
+rækker: 4 U17 og 2 U09; de øvrige 15 er senior/veteran.
+
+Konklusionen for begge dele er: ungdom fundet, allerede dækket af
+eksisterende klassifikation/status; ingen selvstændig omvurdering blev
+foretaget. Rå aldersfordeling ligger i
+`statistik/results/040-afklar-aldersfordeling.json`.
+
+**Commits:** afventer commit på denne gren.

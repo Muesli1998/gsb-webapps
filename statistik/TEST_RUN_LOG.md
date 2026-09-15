@@ -480,3 +480,10 @@ Ny SQL uden aldersfilter fandt 451 holdkampe uden individuelle rækker:
 035's 162 `browser_verified` plus 39 `browser_verified_no_result` og 4
 `api_error`. Dette er den aktuelle datamængde, ikke en rekonstruktion af
 013's tabte 257-ID-liste.
+# 2026-09-15 — Opgave 040 aldersfordeling
+
+Read-only kontrol: 458 afvigelser fordeler sig på senior 129, U09–U15 155,
+U17/U19 16 og veteran 158. 98 stillingsrækker fordeler sig på senior 20,
+ungdom 27 og veteran 51. De 21 genuint uforklarede stillingsrækker rummer
+6 ungdomsrækker (4 U17, 2 U09). Ingen eksisterende status eller målefil blev
+ændret.
