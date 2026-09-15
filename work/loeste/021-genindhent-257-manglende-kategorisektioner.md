@@ -2,6 +2,20 @@
 
 **Trin:** Test & Validation
 
+**LUKKET 2026-09-15 — de 257 forbliver dokumenteret som kildehul, ingen
+yderligere genhentning.** De 7 rækker der faktisk kunne forsøges (se
+"Spørgsmål" — kun 20 af 257 blev nogensinde gemt som konkrete kandidater
+i opgave 013, ikke alle 109/257) gav alle bekræftet tom kilde-side, 0
+nye kategorisektioner. Beslutning om at stoppe her, fremfor at bygge den
+fulde 257-kandidatliste og fortsætte, er begrundet i
+`docs/BESLUTNINGER.md`s post "257 manglende kategorisektioner lukkes;
+fremtidig klubudvidelse ændrer prioritet": manuel CUA-genhentning
+skalerer ikke til en fremtidig alle-klubber-udvidelse, og 7/7 negative
+resultater peger på at dette er en generel kildebegrænsning, ikke en
+GSB-specifik fejl. Opgave 030 (holdnummer-stabilitet) prioriteres højere
+i stedet, fordi den rammer noget der bliver mere kritisk, ikke mindre,
+ved skalering.
+
 **Beslutning taget 2026-09-15 (Chris):** forsøg genindhentning, i stedet
 for at lade de 257 stå som dokumenteret permanent hul. Denne opgave er
 selve forsøget — ikke en garanti for at det lykkes.
@@ -122,6 +136,38 @@ uden at spørge.
 
 ## Spørgsmål
 
+### Afklaring af 013-tallet (2026-09-15)
+
+013's JSON indeholder kun 20 konkrete `rows`; de 109 er et metadata-tal
+(`noExplicitNoPlay: 109`), ikke en gemt komplet kandidatliste. De cirka 102
+resterende kan derfor ikke erklæres ikke-eksisterende eller allerede løste.
+Deres kamp-ID og URL-felter findes ikke i det bevarede 013-materiale, så de
+kunne ikke forsøges i denne omgang. De syv forsøgte ID'er er 2286, 96231,
+142978, 2365, 2396, 2509 og 2664; de udgør alle 7 ikke-afbuds-rækker i den
+faktiske 20-rækkers sample. En komplet 109-rækkers liste skal fremskaffes,
+før stikprøven kan udvides til 15-20.
+
+Den validerede CUA-hentning af kamp 2286 gav kun standardskallen (ingen
+synligt kampnr, dato, hold eller resultat). Er browsermetoden tilgængelig på
+ny, før resten af de 109 forsøges?
+
+**Besvaret 2026-09-15 (Chris, manuelt tjek):** Chris åbnede kamp 2286
+direkte i browseren selv. Der er INGEN kampinformation på siden — hverken
+kampnr, dato, hold eller resultat. Standardskallen CUA-metoden gav var
+altså en korrekt gengivelse af en reelt tom side, ikke et metodesvigt.
+**Konklusion: metoden fejlede ikke — den fangede korrekt at denne
+specifikke kamp mangler data hos kilden selv.** Dette ophæver stoppet:
+metoden må betragtes som tilgængelig og virkende, og resten af
+stikprøven (og efterfølgende de øvrige 108, hvis stikprøven består) kan
+fortsætte. Bemærk dog forskellen fremadrettet: en "standardskal"
+skal fra nu af tolkes som "muligvis en reelt tom kilde-side", ikke
+automatisk som "metoden virker ikke" — begge dele giver samme tomme
+respons, så et enkelt shell-resultat er ikke længere i sig selv nok til
+at stoppe. Stop stadig og spørg hvis MANGE eller ALLE forsøg i træk
+giver standardskal (det ville tyde på et reelt metodeproblem igen), men
+et enkelt tomt resultat som kamp 2286 er nu et gyldigt, dokumenteret
+udfald — ikke et stop-signal.
+
 ## Tilbagefald
 
 ## Resultat
@@ -129,10 +175,32 @@ uden at spørge.
 **Kontroloutput — før og efter:**
 
 ```
+ls statistik/results/ | grep -i "021\|genindhentning\|refetch"
+021-genindhentning.md
+
+grep -c "021" statistik/TEST_RUN_LOG.md
+1
+
+git diff --stat main..arbejde/021-genindhent-257-manglende-kategorisektioner -- statistik/data/
+(tom — ingen databaseændringer)
 ```
 
 **Forsøgte kampe og udfald (fundet ny kategoridata / bekræftet fortsat tomt / metode fejlede):**
 
+Kampene 2286, 96231, 142978, 2365, 2396, 2509 og 2664: standardskal;
+bekræftet fortsat tomt, 0 nye kategorisektioner.
+
 **Hvor mange af de 257 er nu løst, hvor mange står tilbage:**
 
+0 løst ved genhentning; 257 står fortsat i den oprindelige opgørelse. 7
+af de 109 ikke-eksplicitte-afbud (den fulde tilgængelige
+kandidatpopulation, se "Spørgsmål") blev forsøgt, alle 7 bekræftet
+fortsat tomme. Opgaven lukkes hermed — se banner øverst og
+`docs/BESLUTNINGER.md`. Ingen yderligere kandidatudtrækning eller
+genhentning planlægges, medmindre en fremtidig klubudvidelse gør
+mønsteret ("mangler kategorisektion") relevant at undersøge systematisk
+som en del af importpipelinen — se `statistik/RESEARCH_BACKLOG.md`.
+
 **Commits:**
+
+53c6b98 (første stikprøve), 1be0d1d (fortsat stikprøve + diskrepansafklaring)
