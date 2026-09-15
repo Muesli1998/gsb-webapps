@@ -44,7 +44,7 @@ kampsystem/      kilder og byggescript til kampsystem-previewet
 statistik/       Nembadminton-dataprojektet, eget delrepo med egen historik
 data/            små tekstdata: navne-alias, CSV, enkelte scripts
 tools/           hjælpescripts
-work/            opgavefiler (se "Arbejdsform")
+work/            opgavefiler (se "Arbejdsform" og "Opgavekøen")
 ```
 
 Ligger i Dropbox under `Projects\GSB-Webapps\`:
@@ -175,9 +175,25 @@ først.
 `work/loeste/` er arkivet. En opgave flyttes dertil når den er løst, med
 resultatnoten udfyldt.
 
-Idébankerne i `docs/` er noget andet: dér ligger det der er *fundet*, ikke
-det der er *besluttet*. At skrive en idé ned skal koste ingenting og må
-ikke skabe forpligtelse.
+`work/future/` er et tredje sted, besluttet 2026-09-15: færdigt
+specificerede opgavekort for alt der IKKE er statistik — Kampsystem,
+Dream Team/Tilmelding, Kampkalender, Søndagstræning, generelt. De følger
+nøjagtig samme kortformat som `work/aabne/`, men er bevidst IKKE i køen —
+de køres ikke, uanset hvor færdige de ser ud, før Chris selv flytter
+(eller beder om at få flyttet) et konkret kort til `work/aabne/`. At et
+kort ligger i `work/future/` er IKKE et "byg det"-signal i sig selv, og
+det ophæver ikke prioritetsreglen ovenfor.
+
+Kort i `work/future/` navngives `NNN-kategori-navn.md` (fx
+`023-kampsystem-...md`), så Chris kan vælge en hel kategori ad gangen.
+Nummerserien er fælles med `work/aabne/` og `work/loeste/` — et kort
+beholder sit nummer når det flyttes.
+
+Idébankerne i `docs/` er noget andet igen: dér ligger det der er
+*fundet*, ikke det der er *besluttet*. At skrive en idé ned skal koste
+ingenting og må ikke skabe forpligtelse. Et `work/future/`-kort er et
+skridt mere konkret end en idébank-linje — det har mål, afgrænsning og
+kontrol, ligesom et rigtigt opgavekort — men er stadig ikke i køen.
 
 ---
 
