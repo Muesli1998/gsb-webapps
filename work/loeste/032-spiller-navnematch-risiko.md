@@ -279,6 +279,8 @@ det gemte materiale. Navnesplittelse kræver fortsat ekstern kilde.
 
 **Commits:**
 
+75e4b1c
+
 **Kontroloutput:** Rapportfilen findes; `TEST_RUN_LOG.md` indeholder mindst
 to 032-poster; `git status --short statistik/data/` var tom. Diffen rammer kun
 `statistik/` og kortets tilladte dokumentation.
