@@ -81,16 +81,33 @@ ID. Spillere kobles via BadmintonPlayer-links
 sikker identitet. Den resterende kobling er en separat byggeopgave, ikke
 en del af denne audit; se `statistik/results/016-spiller-id-audit.md`.
 
-**Kampantal er holdt op mod stillingerne.** Den første kontrol er kørt i
-opgave 015 mod de 98 gemte GSB-stillingsrækker: 24 har eksakt kampantal,
-mens 74 afviger, heraf 28 i corona-sæsonerne. Kontrollen er derfor ikke
-bestået som fuld datavalidering endnu; rapporten skelner mellem
-corona-rækker, ingen linkede kampe i den aktuelle database og øvrige
-uforklarede afvigelser. BadmintonPlayers `Stilling`-side er den
-anbefalede kilde til almindelige puljer; Nembadminton bruges kun til
-discovery. Playoffplacering afledes af semifinaler/finale/bronzekamp, ikke
-af en opfunden puljestilling. Se `statistik/results/005-stillingskilde.md`
-og `statistik/results/015-stillingskontrol.md`.
+**Kampantal er holdt op mod stillingerne — OPDATERET 2026-09-15, alle
+98 rækker har nu en dokumenteret status:**
+
+| Kategori | Antal | Status |
+|---|---:|---|
+| Eksakt match | 24 | Bestået |
+| `difference_with_corona_suspended_rows` | 19 | Forklaret (corona-administrativt, kendt mønster) |
+| `no_linked_team_matches_in_current_database` | 24 | Rodårsag BEKRÆFTET i opgave 019/030: GSB's holdnummer er ikke en stabil identitet på tværs af `standings`- og `team_matches`-kilderne (usystematisk forskydning, ingen bedre nøgle fundet). Kan ikke rettes med nuværende data — dokumenteret som kendt begrænsning, ikke en bug. |
+| `unexplained_from_current_material` | 31 | Undersøgt i opgave 020: 10 fik konkret forklaring (9 `browser_verified_no_result`, 1 protestbemærkning). 21 forbliver genuint uforklarede efter undersøgelse — dokumenteret pr. række, ikke gættet væk. |
+
+**Alle 98 rækker falder nu i en af tre kasser: eksakt match (24), en
+forklaret/kendt afvigelse (19 corona + 24 holdnummer-ustabilitet + 10 fra
+020 = 53), eller en dokumenteret, genuint uforklaret afvigelse (21).**
+Ingen rækker mangler status. Det opfylder ordlyden af kriteriet
+("afvigelser er enten forklarede eller dokumenteret som kendte") — de 21
+er ikke forklarede, men de ER dokumenterede, hvilket kriteriet
+eksplicit tillader.
+
+BadmintonPlayers `Stilling`-side er den anbefalede kilde til almindelige
+puljer; Nembadminton bruges kun til discovery. Playoffplacering afledes
+af semifinaler/finale/bronzekamp, ikke af en opfunden puljestilling. Se
+`statistik/results/005-stillingskilde.md`,
+`statistik/results/015-stillingskontrol.md`,
+`statistik/results/018-no-linked-standings.md`,
+`work/loeste/019-ret-matching-noegle-stillingskontrol.md`,
+`statistik/results/020-unexplained-standings.md` og
+`statistik/results/030-holdnummer-stabilitet.md`.
 
 **De blivende undtagelser står dokumenteret:** fire U09-kampe (505217,
 505219, 506407, 506413) hvor API'et giver Internal Server Error og siden
@@ -100,6 +117,20 @@ De skal ikke løses. De skal stå med URL, status og rå kilde.
 **Ikke en del af dette trin:** U15 og yngre, turnerings- og
 spillerprofil-sporet, historiske ranglistepoint. Alt det er
 Videreudvikling.
+
+**Status på Test & Validation som helhed (vurdering, ikke en afgørelse —
+Chris beslutter om trinnet lukkes):** fire af de fem kriterier ovenfor er
+nu opfyldt eller opfylder deres egen ordlyd (individuel dækning,
+458-klassifikation, spilleridentitet, stillingskontrol). Én
+uoverensstemmelse er IKKE undersøgt eller rettet i denne runde og bør
+afklares før trinnet erklæres lukket: "Rækkefølge"s punkt 2 ("Byg den
+individuelle extractor") står stadig uden `[Afsluttet]`-mærke, mens
+kriteriet "Individuel dækning er lukket" ovenfor beskriver arbejdet som
+færdigt via klassifikation snarere end via en bygget extractor. Det kan
+enten betyde at punkt 2 er blevet overflødigt (klassifikationen viste at
+resten er kildehuller, ikke noget en extractor kunne hente), eller at det
+stadig mangler — det er ikke afklaret her. Se efter før du beslutter om
+Test & Validation som helhed er passeret.
 
 ---
 
@@ -167,8 +198,13 @@ princippet om at rå data gemmes før fortolkning.
 3. **[Afsluttet — 006] Klassificér de 458 afvigelser.**
 4. **[Delvist afsluttet — 016] Kobl spiller-ID'er.** 85,2 % af relationerne
    har ID; den resterende kobling er stadig en separat byggeopgave.
-5. **[Udført, ikke bestået — 015] Stillingskontrol:** kampantal per sæson
-   og pulje mod officielle stillinger; 24/98 eksakte matches.
+5. **[Opdateret 2026-09-15 — 015/018/019/020/030] Stillingskontrol:**
+   kampantal per sæson og pulje mod officielle stillinger. 24/98 eksakte
+   matches, men alle 98 rækker har nu en dokumenteret status (se
+   "Kampantal er holdt op mod stillingerne" ovenfor) — 77 forklarede/kendte,
+   21 dokumenteret genuint uforklarede. Opfylder kriteriets egen ordlyd.
+   Se "Status på Test & Validation som helhed" nedenfor for om trinnet
+   dermed kan lukkes.
 6. **Results-rapporten.**
 7. **Skillen.**
 8. Preview, derefter Prod Push.
