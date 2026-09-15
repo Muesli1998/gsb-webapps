@@ -88,4 +88,4 @@ Kørt på hele databasen med `statistik/scripts/042-results-rapport.mjs`.
 
 Rapporten indeholder sæsonvis holdopgørelse, spilleropgørelse pr. kategori og kendte begrænsninger i `statistik/results/042-results-rapport.md` og `.json`.
 
-**Commits:** afventer commit på denne gren
+**Commits:** f010700
