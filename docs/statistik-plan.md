@@ -221,6 +221,16 @@ pålidelighed kan vurderes af den der læser dem.
 Formatet er sekundært. Kravet er at et menneske kan se hvad data siger,
 og hvor sikkert det er.
 
+**Note (2026-09-15): 18 uafklarede audit-kandidater fra opgave 006.**
+Af de 39 hold-/individafvigelser med en gemt, ordret Bemærkning er 18
+uden uafklarede kategorier — de er klassificeret som "administrativ
+bemærkning eller protest" (det opfylder Test & Validations kriterium),
+men `results/CURRENT_VALIDATION_STATUS.md` markerer dem eksplicit som
+"audit-kandidater" der "ikke må automatisk omskrives", og de er så
+vidt vides aldrig gennemgået enkeltvis. De 18 konkrete kampe kan dukke
+op som mærkelige tal i en hold- eller spillerrapport — værd at have i
+baghovedet ved bygning af Results, ikke en blokering for at starte.
+
 ---
 
 ## Preview
