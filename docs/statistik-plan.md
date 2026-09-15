@@ -145,9 +145,29 @@ af semifinaler/finale/bronzekamp, ikke af en opfunden puljestilling. Se
 ikke viser dynamisk detalje, og to corona-suspenderede (387862, 387864).
 De skal ikke løses. De skal stå med URL, status og rå kilde.
 
-**Ikke en del af dette trin:** U15 og yngre, turnerings- og
-spillerprofil-sporet, historiske ranglistepoint. Alt det er
-Videreudvikling.
+**Ungdomsscope (besluttet 2026-09-15):** U09/U11/U13/U15 er nu en del af
+Test & Validation parallelt med senior Results. Opgave 033 målte 1.207
+ungdomsholdkampe: 1.002 med individuelle rækker (83,02 %) og 205 uden.
+Opgave 035 klassificerede de 205 tidligere uklassificerede `browser_verified`
+kampe: 115 med eksplicit afbud/udeblivelse, 46 uden kategorisektion eller
+eksplicit afbud og 1 med kategorisektion uden importerede rækker. De 46 er
+et dokumenteret kandidatmateriale til en senere CUA-genindhentning; ingen
+massegenindhentning sker som del af denne beslutning.
+
+Opgave 036 auditerede alle 8.859 ungdomsrelationer uden external ID
+(2.256 spillere): 0 dubletter på `name_normalized` og 0 samme-dato-fund på
+flere GSB-hold når `league_raw`/`name_raw` indgår. Sæsonraten var 0 % for
+alle sæsoner med relationer (2012–2025); 2011 havde ingen navnematch-
+relationer i databasen. Discovery-dækning mod Nembadminton kan ikke
+kvantificeres uden et uafhængigt discovery-snapshot og er accepteret som
+en dokumenteret begrænsning.
+
+De 39 `browser_verified_no_result`-kampe og 4 `api_error`-kampe fra opgave
+033 forbliver statusdokumenterede. Stillingskontrol for ungdom kan kun
+beregnes for 2 konkurrencer i 2025 med det nuværende materiale. Den
+ungdomsdel der har data, går derfor ind i planen nu; de 46 kandidatkampe,
+den manglende discovery-total og den begrænsede stillingsdækning er åbne
+datakvalitetsbegrænsninger, der skal vises i Results.
 
 **Status på Test & Validation som helhed (opdateret 2026-09-15):** alle
 fem kriterier ovenfor opfylder nu deres egen ordlyd (individuel dækning,

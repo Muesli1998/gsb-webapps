@@ -94,4 +94,19 @@ en vurdering af om beslutningen er "rigtig".
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+Beslutningen er skrevet 2026-09-15 på grenen
+`opgave-034-ungdom-scope-beslutning` i `docs/statistik-plan.md` og
+`docs/BESLUTNINGER.md`.
+
+- U09/U11/U13/U15 går ind i Test & Validation parallelt med senior Results.
+- Opgave 033: 1.207 ungdomsholdkampe, 1.002 med individuelle rækker
+  (83,02 %), 205 uden.
+- Opgave 035: 115 eksplicitte afbud/udeblivelser, 46 uden kategorisektion
+  eller afbud, 1 kategorisektion uden importerede rækker.
+- Opgave 036: 8.859 navnematch-relationer, 0 normaliserede navnedubletter,
+  0 samme-dato-fund med samme `league_raw`/`name_raw`; 0 % i alle
+  sæsoner 2012–2025.
+- Discovery-dækning og fuld ungdoms-stillingskontrol er dokumenterede
+  begrænsninger, ikke antaget løst.
+
+**Commits:** afventer commit på denne gren.

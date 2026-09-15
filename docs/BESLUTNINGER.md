@@ -307,3 +307,24 @@ det i en rapport nogen stoler på.
 udelukkende på stillingskontrol-punktet. Det punkt er udtømt for nu og
 adskiller sig reelt fra spiller-ID-risikoen, som er den eneste
 resterende reelle blokering for at lukke trinnet.
+
+---
+
+## 2026-09-15 — Ungdom ind i Test & Validation
+
+**Besluttet:** U09/U11/U13/U15 indgår nu i statistikprojektets
+Test & Validation parallelt med senior Results. Beslutningen bygger på
+opgave 033's 1.207 ungdomsholdkampe (1.002 med individuelle rækker,
+83,02 %), opgave 035's klassifikation af de resterende 162 og opgave
+036's fulde audit af 8.859 ungdomsrelationer uden external ID.
+
+Opgave 035 fandt 115 eksplicitte afbud/udeblivelser, 46 kampe uden
+kategorisektion eller afbud (kandidater til senere CUA-genindhentning) og
+1 kamp med kategorisektion uden importerede rækker. Opgave 036 fandt 0
+normaliserede navnedubletter og 0 samme-dato-fund på flere GSB-hold når
+`league_raw`/`name_raw` indgår; sæsonraten var 0 % for 2012–2025.
+
+Discovery-totalen mod Nembadminton kan ikke måles uden et uafhængigt
+snapshot og accepteres som dokumenteret begrænsning. Ungdoms-
+stillingskontrol er kun tilgængelig for 2 konkurrencer i 2025. Disse
+begrænsninger skal fremgå af Results og er ikke skjult i scopebeslutningen.
