@@ -147,3 +147,5 @@ Nej. Kontrollen er fortsat ikke bestået; undersøgelsen reducerer ikke de
 oprindelige afvigelser til en godkendt datakvalitet.
 
 **Commits:**
+
+3672706 (undersøgelse og rapport)
