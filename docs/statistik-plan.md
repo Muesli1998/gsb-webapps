@@ -20,8 +20,10 @@ Ingen foreign-key-fejl eller ID-dubletter.
 
 De dokumenterede huller er kendte og afgrænsede: 315 holdkampe med
 holdresultat mangler individuelle rækker, 458 holdkampe afviger mellem
-holdresultat og individuelle resultater, fire U09-kampe og to
-corona-suspenderede kampe er blivende undtagelser.
+holdresultat og individuelle resultater, samt fire U09-kampe og to
+corona-suspenderede kampe som blivende undtagelser. De øvrige 130 kampe
+uden individuelle rækker er dokumenteret som 85 `browser_verified_no_result`
+og 45 øvrige `corona_suspended`.
 
 Grundlaget er altså solidt. Det der mangler, er individuel dækning og
 klassifikation — ikke at hente forfra.

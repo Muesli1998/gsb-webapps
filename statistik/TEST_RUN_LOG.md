@@ -434,3 +434,8 @@ uden. Aritmetisk opdeling med dokumenterede audit-tal: 2.367 + 257 + 58 +
 6 + 130 = 2.818. De 130 er en ærligt navngivet rest, fordi 013 ikke gemmer
 komplette ID-lister til overlapkontrol. Database urørt. Rapport:
 `statistik/results/031-komplet-individuel-daekning.md`.
+# 2026-09-15 — kontrol af 130-resten
+
+Read-only SQL bekræftede 100 %: de 130 består af 85
+`browser_verified_no_result` plus 45 `corona_suspended` efter ID 387862 og
+387864 er undtaget. Ingen øvrige statusgrupper indgår i de 130.

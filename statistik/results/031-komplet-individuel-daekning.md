@@ -10,8 +10,9 @@ mindst én række for kampen.
 | Mangler individuelle rækker — 013: uden kategorisektion | 257 | `results/013-manglende-kategorisektioner.json` metadata-tal |
 | Mangler individuelle rækker — 013: kategorier uden scores | 58 | `results/CURRENT_VALIDATION_STATUS.md` |
 | Kendte undtagelser: 4 U09 + 2 corona-suspenderede | 6 | `CURRENT_VALIDATION_STATUS.md` (U09: 505217, 505219, 506407, 506413; corona: 387862, 387864) |
-| Resterende uden individuelle rækker, ikke dækket af ovenstående klassifikation | 130 | Aritmetisk rest; SQL viser 451 uden rækker, 451 − 257 − 58 − 6 |
-| **I alt** | **2.818** | 2.367 + 257 + 58 + 6 + 130 |
+| `browser_verified_no_result` uden individuelle rækker | 85 | SQL status-felt |
+| `corona_suspended` uden individuelle rækker, bortset fra 387862/387864 | 45 | SQL status-felt |
+| **I alt** | **2.818** | 2.367 + 257 + 58 + 6 + 85 + 45 |
 
 SQL-kontrol af de rå rækkegrupper:
 
@@ -26,10 +27,7 @@ uden individuelle rækker pr. status:
   api_error = 4
 ```
 
-De 257 og 58 er dokumenterede tællinger fra tidligere audits, men de
-bevarede 013-filer indeholder ikke en komplet ID-liste (JSON har kun 20
-sample-rækker). Derfor kan overlap mellem 257/58 og de seks undtagelser
-ikke bevises på ID-niveau i dette materiale. Tallet 130 er således den
-ærligste resterende kategori i den ønskede, udtømmende aritmetiske opdeling;
-den må ikke fortolkes som en forklaring på hvorfor de 130 mangler.
-
+De 130 tidligere kaldte “resterende” er præcist 85
+`browser_verified_no_result` plus 45 øvrige `corona_suspended` efter de to
+navngivne undtagelser er taget ud (100 % match). De resterende 321 kampe
+uden individuelle rækker er dermed de dokumenterede 257+58+6-grupper.
