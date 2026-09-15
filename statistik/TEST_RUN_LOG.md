@@ -403,3 +403,9 @@ De tidligere 56 retry-filer, hvor kampdetaljer blev verificeret i den fungerende
 - Diagnoserapport `results/019-diagnose-raa-navne.md` viser rå, unormaliserede hjemme-/udeholdnavne i `team_matches` for alle 24 "no_linked"-puljer. Mønster: stillingens holdnummer matcher stort set aldrig noget rå holdnavn i samme pulje, hverken før eller efter normalisering.
 - To eksempler verificeret manuelt: 2011/pulje 60 (stilling "Gladsaxe Søborg 2" vs. team_matches udelukkende "Gladsaxe Søborg 3", kamp 1717) og 2025/pulje 18733 (stilling "Gladsaxe Søborg 1"/"2" vs. team_matches udelukkende "Gladsaxe Søborg 3", kamp 506441 — et aktivt 2025/26-hold).
 - Konklusion: årsagen er ikke en matching-key-bug, men et uafklaret spørgsmål om GSB's holdnummerering er en stabil identitet på tværs af BadmintonPlayers-stillinger og Nembadminton-holdkampe. Ingen databaseændring foretaget. Opgaven lukkes som dokumenteret nej; opfølgning logget i `RESEARCH_BACKLOG.md`.
+# 2026-09-15 — Opgave 020: undersøg uforklarede stillingsafvigelser
+
+Read-only gennemgang af alle 31 rækker med `unexplained_from_current_material`
+fra 015. 10 havde konkret gemt evidens (9 `browser_verified_no_result` med
+rå `-`/`-`, 1 protestbemærkning); 21 forblev uforklarede. Databasen var
+urørt. Rapport: `statistik/results/020-unexplained-standings.md`.
