@@ -6,6 +6,14 @@ Dette er den samlede log over de read-only undersøgelser, der er kørt for GSB-
 statistikprojektet. API-fejl er ikke fortolket som bevis på, at data mangler.
 Uverificerede fortolkninger er markeret som ukendte.
 
+## 2026-09-15 — Opgave 042 Results-rapport v1
+
+Kørte `scripts/042-results-rapport.mjs` read-only mod normalized DB. Genererede
+rapport i markdown/JSON med 16 sæsoner, 11 GSB-hold, 7.599 unikke spillere og
+67.196 spillerrelationer. Kendte huller: 18 audit-kandidater, 21 uforklarede
+stillingsrækker, 205 ungdomsholdkampe uden individuelle rækker (46 uden
+kategorisektion/afbud). Databasen blev ikke ændret.
+
 ## Nembadminton GraphQL
 
 Endpoint testet: `POST https://app.nembadminton.dk/graphql`.

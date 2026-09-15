@@ -78,4 +78,14 @@ dækket, antal hold, antal spillere, antal kendte huller nævnt.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+Kørt på hele databasen med `statistik/scripts/042-results-rapport.mjs`.
+
+- Sæsoner: 16
+- GSB-hold: 11
+- Unikke spillere: 7.599
+- Spillerrelationer: 67.196
+- Kendte huller rapporteret: 18 audit-kandidater, 21 uforklarede stillingsrækker, 205 ungdomsholdkampe uden individuelle rækker (heraf 46 uden kategorisektion/afbud).
+
+Rapporten indeholder sæsonvis holdopgørelse, spilleropgørelse pr. kategori og kendte begrænsninger i `statistik/results/042-results-rapport.md` og `.json`.
+
+**Commits:** afventer commit på denne gren
