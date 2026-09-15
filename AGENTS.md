@@ -117,6 +117,43 @@ Filerne ligger stadig på disken; de versionsstyres bare ikke.
 
 ---
 
+## Roller: manager og worker
+
+Chris arbejder sammen med to forskellige AI'er, med forskellige roller —
+ikke fordi den ene er bedre, men fordi de har forskellig adgang:
+
+**Claude (manager)** læser repoet, undersøger, vurderer prioritet op mod
+denne fil, og skriver opgavekort i `work/` — samme format som altid
+(mål, kontekst, afgrænsning, kontrol). Claude har typisk ikke selv
+git-adgang til at pushe (afhænger af opsætningen den kører i) og kører
+ikke selv de faktiske undersøgelser, scripts eller commits.
+
+**Codex (worker, pt. ChatGPT Codex CLI)** har git- og filadgang på Chris'
+maskine og udfører selve arbejdet: `git pull`, branch, scripts, tests,
+commit, `git push`. Codex arbejder ud fra opgavekortet i `work/aabne/` —
+kortet er facit for hvad der skal laves, ikke en genfortælling af det.
+
+**Praktisk konsekvens for hvordan Claude leverer:**
+- Opgavekortet lægges i `work/aabne/`, i nøjagtig samme form som filerne i
+  `work/loeste/` — intet separat promptdokument i repoet.
+- Selve Codex-prompten (den tekst Chris limer ind i Codex) gives i chatten
+  med Chris, ikke som fil. Den henviser til opgavekortet ved sti og
+  nummer i stedet for at gentage indholdet.
+- Når Claude selv har skrevet noget direkte i repoet (fx rettet en
+  dokumentfil via filadgang) og det er klar til at blive versionsstyret,
+  giver Claude de nødvendige git-kommandoer i chatten, så Chris kan sætte
+  dem ind i Codex frem for at Claude selv forsøger at committe.
+
+Chris beslutter selv hvornår og om en opgave køres — et opgavekort i
+`work/aabne/` er stadig kun "klar", ikke "kør nu af dig selv", jf.
+Opgavekøen nedenfor.
+
+Hvilket værktøj der er "worker" kan skifte — det er rollen, ikke
+værktøjsnavnet, der er pointen. Skift derfor kun navnet Codex herover hvis
+Chris rent faktisk skifter værktøj.
+
+---
+
 ## Prioritet
 
 **Statistik har førsteprioritet indtil den har nået Prod Push.** Alt andet
