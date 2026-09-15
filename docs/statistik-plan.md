@@ -180,6 +180,20 @@ deres egen ordlyd (individuel dækning,
 undtagelser). Stillingskontrol-punktet er eksplicit lukket ved Chris'
 beslutning (se ovenfor).
 
+**Test & Validation er officielt lukket (Chris' beslutning, 2026-09-15).**
+Opgave 040 bekræftede aldersfordelingen for de sidste to uafklarede
+kriterier på det klubbredde datasæt: af de 458 afvigelser er 171
+ungdomsrækker, uafhængigt genberegnet og ID-for-ID identiske med opgave
+006's oprindelige klassifikation (0 afvigelse); af de 98 stillingsrækker
+er 27 ungdom, heraf 6 af de 21 genuint uforklarede — alle allerede dækket
+af eksisterende status. Opgave 041 udvidede navnematch-/dublet-tjekket til
+ALLE ungdomsspillere (ID'ede og navnematch, U17/U19 inklusive, 9.691
+spiller-holdkamp-relationer) og fandt 0 dublet-importer og 0 usædvanlige
+grupper. Ingen af de fem kriterier er ændret af denne gennemgang — den har
+udelukkende bekræftet at konklusionen holder klubbredt, ikke kun for
+senior. Trinnet går videre til Results uden åbne spørgsmål om
+datagrundlaget.
+
 **Spilleridentitet-punktet er nu også afklaret, i tre runder (opgave
 032).** Runde 1's dublet-tjek var tautologisk og blev forkastet (se
 `statistik/RESEARCH_BACKLOG.md`). Runde 2 fandt 7 af de 25 mest aktive
@@ -231,6 +245,10 @@ undersøgte navnematch-risiko er afkræftet, jf. "Status på Test &
 Validation som helhed" ovenfor. Den resterende fulde ID-kobling
 (85,2 % → 100 %) er en anbefalet byggeopgave for Results-fasen, ikke
 en åben betingelse for dette trin.
+
+**Trinnet er lukket (2026-09-15).** Arbejdet flytter nu til Results, jf.
+`AGENTS.md`s udviklingstrin. Se `docs/BESLUTNINGER.md`s post af samme dato
+for den samlede begrundelse.
 
 ---
 

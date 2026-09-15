@@ -323,3 +323,41 @@ individuelle rækker, hvor 205 er U09–U15. En direkte fuld sammenligning med
 013's oprindelige 257+58 er ikke mulig, fordi den fulde historiske ID-liste
 ikke er bevaret; fem overlap er dokumenteret i 013's 20-rækkers stikprøve.
 Dette ændrer ikke måletallene eller Test & Validation-statussen.
+
+---
+
+## 2026-09-15 — Test & Validation officielt lukket (hele datasættet)
+
+**Besluttet af Chris:** Test & Validation-trinnet for statistikprojektet er
+officielt afsluttet, og arbejdet går videre til Results.
+
+**Baggrund:** opgave 038 viste at databasens grundtal altid har været
+klubbrede (2.818 holdkampe, 20.319 individuelle kategorier, 67.196
+spillerrelationer — ikke kun senior). Opgave 033–041 gennemgik derfor alle
+fem oprindelige Test & Validation-kriterier med aldersopdeling, for at
+bekræfte at den tidligere lukning (2026-09-15, før denne gennemgang) reelt
+holder klubbredt:
+
+- **Individuel dækning:** 162 ungdomsrækker klassificeret (opgave 035),
+  bekræftet som præcis delmængde af det eksisterende 451-tal (opgave 039).
+- **458-afvigelser:** 171 ungdomsrækker identificeret, uafhængigt
+  genberegnet og 100 % identisk (ID for ID) med opgave 006's oprindelige
+  klassifikation (opgave 040).
+- **Spilleridentitet:** alle 8.859 ungdoms-navnematch-relationer uden
+  external ID auditeret (ikke stikprøve) — 0 kollisioner (opgave 036).
+  Efterfølgende udvidet til alle 9.691 ungdoms-spiller-holdkamp-relationer
+  uanset ID-status for at udelukke dublet-import — 0 fund (opgave 041).
+- **Stillingskontrol:** 27 af de 98 rækker er ungdom, heraf 6 af de 21
+  genuint uforklarede — alle allerede dækket af eksisterende status
+  (opgave 040).
+- **Blivende undtagelser:** uændret, allerede eksplicit ungdomsmærket
+  (4 U09-kampe) fra før denne gennemgang.
+
+Ingen af de fem kriterier ændrede status under gennemgangen. Formålet var
+udelukkende at bekræfte at "klubbredt" ikke skjulte noget der ville have
+ændret konklusionen for "senior" — hvilket det ikke gjorde.
+
+**Konsekvens:** Results-rapporten bygges nu på et fuldt eftervist,
+klubbredt datasæt (senior, U09-U19, veteran), ikke kun senior. Se
+`docs/statistik-plan.md`s "Results"-afsnit og det tilhørende opgavekort
+for hvad rapporten skal indeholde.
