@@ -146,10 +146,28 @@ rette planen selv — det er en beslutning for Chris.
 **Kontroloutput — før og efter:**
 
 ```
+ls statistik/results/ | grep -i "030\|holdnummer\|team-number"
+030-holdnummer-stabilitet.md
+
+grep -c "030" statistik/TEST_RUN_LOG.md
+1
+
+git status --short statistik/data/
+(tom)
 ```
 
 **Svar på spørgsmål 1 (bedre tværkilde-nøgle?) og 2 (systematisk eller usystematisk forskydning?):**
 
+`league_raw` har intet holdnummer. På 24 no-linked-rækker matchede råt nummer
+0/13; forskydninger: +1=9, +2=1, -1=1, -2=1, -3=1. Kontroludsnit: 7/7
+numeriske match. Forskydningen er usystematisk.
+
 **Kortlægning af andre steder der antager stabilt holdnummer (hvis nået):**
 
+Se rapportens liste: `check-standing-match-counts.mjs`,
+`audit-no-linked-standings.mjs`, `generate-normalized-import.mjs` og
+`analyze-gsb-standings.mjs`.
+
 **Commits:**
+
+cc1bef5
