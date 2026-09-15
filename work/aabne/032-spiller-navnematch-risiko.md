@@ -113,3 +113,25 @@ vurderingen stå som "usikker, kræver ekstern kilde" og skriv det under
 ## Tilbagefald
 
 ## Resultat
+
+**Kontroloutput:**
+
+```text
+ls statistik/results/ | grep -i "032\|spiller-navnematch\|player-name-collision"
+032-spiller-navnematch-risiko.md
+grep -c "032" statistik/TEST_RUN_LOG.md
+1
+git status --short statistik/data/
+(tom)
+```
+
+Stikprøve: 25 spillere med flest gemte kampe blandt 2.556 uden ID.
+`players.name_normalized` havde 0 dubletter. Ingen konkret kollision blev
+fundet i stikprøven. Navnesplittelse mellem næsten-identiske stavemåder kan
+ikke afgøres uden ekstern kilde og er derfor usikker. Rapporten viser navn,
+kampe, sæsoner og hold for alle 25.
+
+**Ændrer dette statistik-planens konklusion:** Nej. Fuld ID-kobling er stadig
+nødvendig før per-spiller Results-tal kan kaldes identitetsmæssigt sikre.
+
+**Commits:**
