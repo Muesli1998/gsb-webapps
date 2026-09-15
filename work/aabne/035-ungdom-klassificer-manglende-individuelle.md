@@ -74,4 +74,18 @@ antal i hver kategori.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+Alle 162 rækker er klassificeret 2026-09-15 på grenen
+`opgave-035-ungdom-klassificer-manglende`:
+
+| Klassifikation | Antal |
+|---|---:|
+| `explicit_forfeit_or_no_show` | 115 |
+| `no_category_section_no_explicit_forfeit` | 46 |
+| `category_section_present_without_imported_rows` | 1 |
+| **I alt** | **162** |
+
+De 46 uden kategori/afbud er dokumenteret som kandidater til Del B; ingen
+frisk masseindhentning blev udført. Den fulde ID-liste og rå evidens ligger
+i `statistik/results/035-ungdom-klassificer-manglende.json`.
+
+**Commits:** afventer commit på denne gren.

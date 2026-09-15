@@ -465,3 +465,10 @@ Spillerrelationer: 17.114 i alt, 8.255 med external ID og 8.859 uden.
 Der findes ingen uafhængig, gemt Nembadminton-discovery-total, så manglende
 ungdomskampe kan ikke estimeres uden nyt eksternt kald. Databasen var
 read-only; senior-dokumentation urørt.
+# 2026-09-15 — Opgave 035 ungdomsklassifikation
+
+Read-only klassifikation af alle 162 `browser_verified` ungdomsholdkampe
+uden individuelle rækker: 115 med eksplicit afbud/udeblivelse, 46 uden
+kategorisektion og uden eksplicit afbud (Del B-kandidater), 1 med
+kategorisektion men uden importerede rækker. Sum 162/162. Ingen frisk
+Playwright- eller CUA-masseindhentning udført.
