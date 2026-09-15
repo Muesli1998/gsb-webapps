@@ -264,6 +264,30 @@ pålidelighed kan vurderes af den der læser dem.
 Formatet er sekundært. Kravet er at et menneske kan se hvad data siger,
 og hvor sikkert det er.
 
+**Stat-katalog v2 (besluttet med Chris 2026-09-15).** Samme to grundmetrikker
+(vinderprocent og antal kampe) krydset på de dimensioner der allerede findes
+i databasen:
+
+1. Winrate pr. hold.
+2. Winrate pr. spiller.
+3. Winrate pr. sæson.
+4. Winrate pr. årgang (senior/ungdom/veteran, `age_group_id`-grupperingen fra
+   opgave 038).
+5. Winrate pr. kategori (single/double/mixed).
+6. Winrate hjemme vs. ude.
+7. Winrate mod modstanderhold (hvem klubben typisk vinder/taber mod).
+8. Antal kampe (aktivitetsmål, uafhængigt af vind/tab) pr. spiller, hold,
+   sæson og årgang — samme fire dimensioner som 1-4, men på kamptal i
+   stedet for vinderprocent.
+9. Mest aktive spillere, rangeret på antal kampe.
+10. Klub-karriere-oversigt: spillere med flest kampe totalt for klubben,
+    samt hvor mange sæsoner/år de har spillet — en langtidsopgørelse, ikke
+    kun en enkelt sæsons tal.
+
+Opgave 042's v1-rapport dækker allerede en delmængde (2, 3, 5 delvist via
+spiller-pr.-kategori, samt sæsonoversigten under 1/3). Resten (4, 6-10) er
+ikke bygget endnu — se opgave 043.
+
 **Note (2026-09-15): 18 uafklarede audit-kandidater fra opgave 006.**
 Af de 39 hold-/individafvigelser med en gemt, ordret Bemærkning er 18
 uden uafklarede kategorier — de er klassificeret som "administrativ
