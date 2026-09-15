@@ -118,19 +118,27 @@ De skal ikke løses. De skal stå med URL, status og rå kilde.
 spillerprofil-sporet, historiske ranglistepoint. Alt det er
 Videreudvikling.
 
-**Status på Test & Validation som helhed (vurdering, ikke en afgørelse —
-Chris beslutter om trinnet lukkes):** fire af de fem kriterier ovenfor er
-nu opfyldt eller opfylder deres egen ordlyd (individuel dækning,
-458-klassifikation, spilleridentitet, stillingskontrol). Én
-uoverensstemmelse er IKKE undersøgt eller rettet i denne runde og bør
-afklares før trinnet erklæres lukket: "Rækkefølge"s punkt 2 ("Byg den
-individuelle extractor") står stadig uden `[Afsluttet]`-mærke, mens
-kriteriet "Individuel dækning er lukket" ovenfor beskriver arbejdet som
-færdigt via klassifikation snarere end via en bygget extractor. Det kan
-enten betyde at punkt 2 er blevet overflødigt (klassifikationen viste at
-resten er kildehuller, ikke noget en extractor kunne hente), eller at det
-stadig mangler — det er ikke afklaret her. Se efter før du beslutter om
-Test & Validation som helhed er passeret.
+**Status på Test & Validation som helhed (opdateret 2026-09-15, vurdering
+— Chris beslutter om trinnet lukkes):** alle fem kriterier ovenfor
+opfylder nu deres egen ordlyd (individuel dækning, 458-klassifikation,
+spilleridentitet, stillingskontrol, blivende undtagelser).
+
+Den tidligere uoverensstemmelse med "Rækkefølge"s punkt 2 ("Byg den
+individuelle extractor") er afklaret ved at læse
+`statistik/results/CURRENT_VALIDATION_STATUS.md`: arbejdet er reelt gjort
+— 20.319 individuelle kategorier er gemt for 2.367 af de 2.818
+holdkampe, udført gennem en række specialiserede scripts
+(`run-youth-browser-fallback.mjs`, `run-complete-result-fallback.mjs`,
+`sync-browser-field-gaps.mjs` m.fl., se scriptlisten dér), ikke ét
+samlet værktøj kaldet "extractoren". Punkt 2 var derfor blevet
+overflødiggjort af klassifikationsarbejdet, ikke glemt eller mangelfuldt
+udført. Rettet i "Rækkefølge" nedenfor.
+
+**Med det er alle fem kriterier og "Rækkefølge"s punkter 1-5 opfyldt.
+Test & Validation-trinnet fremstår som klar til at lukkes — det kræver
+kun Chris' eksplicitte bekræftelse, jf. AGENTS.md's regel om at trin ikke
+overhaler hinanden stiltiende.** Næste skridt ville i så fald være
+Results-rapporten (punkt 6).
 
 ---
 
@@ -193,8 +201,11 @@ princippet om at rå data gemmes før fortolkning.
 
 1. **[Afsluttet — 004] Afklar udtræksvejen.** Resultat: se
    `statistik/results/004-udtraeksvej.md`.
-2. **Byg den individuelle extractor** med render-gate, valideret mod fem
-   til ti referencekampe manuelt før masseudtræk.
+2. **[Afsluttet, opdaget 2026-09-15] Byg den individuelle extractor.**
+   Gjort som flere specialiserede scripts snarere end ét samlet værktøj —
+   se `statistik/results/CURRENT_VALIDATION_STATUS.md`s scriptliste.
+   20.319 individuelle kategorier er gemt for 2.367 af de 2.818
+   holdkampe; de resterende 315 er klassificeret, ikke uudforskede.
 3. **[Afsluttet — 006] Klassificér de 458 afvigelser.**
 4. **[Delvist afsluttet — 016] Kobl spiller-ID'er.** 85,2 % af relationerne
    har ID; den resterende kobling er stadig en separat byggeopgave.
