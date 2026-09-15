@@ -108,6 +108,16 @@ Ingen rækker mangler status. Det opfylder ordlyden af kriteriet
 er ikke forklarede, men de ER dokumenterede, hvilket kriteriet
 eksplicit tillader.
 
+**Lukket ved Chris' beslutning 2026-09-15.** De 21 genuint uforklarede
+rækker undersøges ikke yderligere nu — fire undersøgelsesrunder (015,
+018, 019/030, 020) er kørt, og marginalnytten af endnu en runde vurderes
+lav uden nyt kildemateriale at gå efter. **Flagget til genoptagelse hvis
+statistikprojektet udvides til en national database:** både
+holdnummer-ustabiliteten (opgave 030) og de 21 uforklarede
+stillingsafvigelser bliver en større risiko ved flere klubber, fordi
+flere puljer giver flere steder mønsteret kan opstå ubemærket — se
+`statistik/RESEARCH_BACKLOG.md`.
+
 BadmintonPlayers `Stilling`-side er den anbefalede kilde til almindelige
 puljer; Nembadminton bruges kun til discovery. Playoffplacering afledes
 af semifinaler/finale/bronzekamp, ikke af en opfunden puljestilling. Se
@@ -127,10 +137,16 @@ De skal ikke løses. De skal stå med URL, status og rå kilde.
 spillerprofil-sporet, historiske ranglistepoint. Alt det er
 Videreudvikling.
 
-**Status på Test & Validation som helhed (opdateret 2026-09-15, vurdering
-— Chris beslutter om trinnet lukkes):** alle fem kriterier ovenfor
-opfylder nu deres egen ordlyd (individuel dækning, 458-klassifikation,
-spilleridentitet, stillingskontrol, blivende undtagelser).
+**Status på Test & Validation som helhed (opdateret 2026-09-15):** alle
+fem kriterier ovenfor opfylder nu deres egen ordlyd (individuel dækning,
+458-klassifikation, spilleridentitet, stillingskontrol, blivende
+undtagelser). Stillingskontrol-punktet er eksplicit lukket ved Chris'
+beslutning (se ovenfor). Spilleridentitet-punktet er derimod IKKE
+færdigbehandlet: 85,2 % dækning hviler på et gemt ID, men de
+resterende 14,8 % (9.926 relationer, 2.556 spillere) hviler på
+navnematch alene, og opgave 032 undersøger nu om det udgør en reel
+risiko for Results-rapportens per-spiller-tal før trinnet som helhed
+kan lukkes.
 
 Den tidligere uoverensstemmelse med "Rækkefølge"s punkt 2 ("Byg den
 individuelle extractor") er afklaret ved at læse
@@ -143,11 +159,13 @@ samlet værktøj kaldet "extractoren". Punkt 2 var derfor blevet
 overflødiggjort af klassifikationsarbejdet, ikke glemt eller mangelfuldt
 udført. Rettet i "Rækkefølge" nedenfor.
 
-**Med det er alle fem kriterier og "Rækkefølge"s punkter 1-5 opfyldt.
-Test & Validation-trinnet fremstår som klar til at lukkes — det kræver
-kun Chris' eksplicitte bekræftelse, jf. AGENTS.md's regel om at trin ikke
-overhaler hinanden stiltiende.** Næste skridt ville i så fald være
-Results-rapporten (punkt 6).
+**"Rækkefølge"s punkter 1, 2, 3 og 5 er opfyldt. Punkt 4
+(spiller-ID-kobling) er delvist opfyldt og afventer opgave 032's
+stikprøve af navnematch-risikoen, før Test & Validation som helhed kan
+lukkes**, jf. AGENTS.md's regel om at trin ikke overhaler hinanden
+stiltiende. Viser opgave 032 at risikoen er lav, er trinnet reelt klar
+til at lukkes; viser den konkrete kollisioner eller splittelser, bør
+fuld ID-kobling (foreslået i opgave 016) gøres først.
 
 ---
 
@@ -218,13 +236,17 @@ princippet om at rå data gemmes før fortolkning.
 3. **[Afsluttet — 006] Klassificér de 458 afvigelser.**
 4. **[Delvist afsluttet — 016] Kobl spiller-ID'er.** 85,2 % af relationerne
    har ID; den resterende kobling er stadig en separat byggeopgave.
-5. **[Opdateret 2026-09-15 — 015/018/019/020/030] Stillingskontrol:**
-   kampantal per sæson og pulje mod officielle stillinger. 24/98 eksakte
-   matches, men alle 98 rækker har nu en dokumenteret status (se
-   "Kampantal er holdt op mod stillingerne" ovenfor) — 77 forklarede/kendte,
-   21 dokumenteret genuint uforklarede. Opfylder kriteriets egen ordlyd.
-   Se "Status på Test & Validation som helhed" nedenfor for om trinnet
-   dermed kan lukkes.
+5. **[Lukket ved Chris' beslutning 2026-09-15 — 015/018/019/020/030]
+   Stillingskontrol:** kampantal per sæson og pulje mod officielle
+   stillinger. 24/98 eksakte matches, men alle 98 rækker har nu en
+   dokumenteret status (se "Kampantal er holdt op mod stillingerne"
+   ovenfor) — 77 forklarede/kendte, 21 dokumenteret genuint uforklarede.
+   Opfylder kriteriets egen ordlyd. Genoptages kun hvis statistikprojektet
+   udvides til en national database (se flag ovenfor).
+5b. **[Åben — 032] Spiller-navnematch-risiko:** stikprøve af om de 2.556
+   spillere uden BadmintonPlayer-ID dækker over navnekollisioner eller
+   -splittelser, før Results-rapporten bygges på dem. Se opgavekortet i
+   `work/aabne/032-spiller-navnematch-risiko.md`.
 6. **Results-rapporten.**
 7. **Skillen.**
 8. Preview, derefter Prod Push.

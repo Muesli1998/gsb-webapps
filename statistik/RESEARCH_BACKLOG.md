@@ -155,3 +155,19 @@ en del af importpipeline-designet, ikke som en isoleret opfølgningsopgave.
 
 Status: lukket som dokumenteret kildehul for GSB. Genoptages kun hvis
 klubudvidelse bliver konkret, og da som en del af pipeline-designet.
+
+## Lukket, flagget til national database: stillingskontrollens 21 uforklarede rækker (2026-09-15)
+
+Opgave 015/018/019/030/020 tilsammen gav alle 98 GSB-stillingsrækker en
+dokumenteret status: 24 eksakt match, 19 corona, 24
+holdnummer-ustabilitet (se ovenfor), 10 forklaret i opgave 020, og 21
+der forbliver genuint uforklarede efter fire undersøgelsesrunder uden
+nyt kildemateriale at gå efter.
+
+Chris har besluttet at lukke punktet uden yderligere undersøgelse nu
+(se `docs/BESLUTNINGER.md`, 2026-09-15). Flagget eksplicit til
+genoptagelse hvis statistikprojektet udvides til en national database:
+samme mekanisme som holdnummer-ustabiliteten ovenfor — flere klubber
+giver flere puljer hvor både holdnummer-forskydningen og uforklarede
+stillingsafvigelser kan opstå, og en national skala gør det væsentligt
+dyrere at opdage bagefter end at undersøge nu.

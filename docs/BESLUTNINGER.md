@@ -276,3 +276,34 @@ stikprøve nu. Vurderet som uforholdsmæssigt arbejde for en metode der
 alligevel skal designes om, hvis/når projektet skalerer til flere
 klubber. Noteret som fremtidigt undersøgelsespunkt i
 `statistik/RESEARCH_BACKLOG.md` i stedet for en aktiv opgave.
+
+---
+
+## 2026-09-15 — Stillingskontrol lukkes; spiller-ID-risiko åbnes som næste opgave
+
+**Besluttet:** "Kampantal er holdt op mod stillingerne"-kriteriet i
+`docs/statistik-plan.md` lukkes. De 21 rækker der efter opgave 020
+forbliver genuint uforklarede, undersøges ikke yderligere nu. Punktet
+flages eksplicit til genoptagelse, hvis statistikprojektet en dag
+udvides til en national database — se `statistik/RESEARCH_BACKLOG.md`.
+
+Samtidig åbnes opgave 032: en stikprøve af de 2.556 spillere der kun
+er koblet via navnematch (ingen BadmintonPlayer-ID, jf. opgave 016), for
+at afgøre om der er konkrete tegn på navnekollisioner eller
+-splittelser, før Results-rapporten bygges på dem.
+
+**Hvorfor:** de to punkter har meget forskellig konsekvens. Stillingskontrol
+er en krydskontrol af kampantal — går den galt, er det en ukendt fejlkilde
+i optællingen, ikke i selve holdkamp- eller individueldata, og fire
+undersøgelsesrunder (015, 018, 019/030, 020) har allerede udtømt de
+oplagte spor. Spiller-ID-koblingen fødrer derimod direkte ind i
+Results-rapportens kernefunktion (per-spiller kampantal og
+vinderprocent) — en unavngiven navnekollision eller -splittelse ville
+give synligt forkerte spillertal uden at være synlig i selve
+dækningsprocenten. Det er billigere at stikprøvetjekke nu end at opdage
+det i en rapport nogen stoler på.
+
+**Fravalgt:** at lade Test & Validation som helhed forblive åben
+udelukkende på stillingskontrol-punktet. Det punkt er udtømt for nu og
+adskiller sig reelt fra spiller-ID-risikoen, som er den eneste
+resterende reelle blokering for at lukke trinnet.
