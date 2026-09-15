@@ -451,3 +451,8 @@ Read-only script `audit-player-name-behavior.mjs` kørte på 25 højvolumen-navn
 7 spillere havde registreringer på to GSB-hold samme dato (22 kampforekomster),
 og 25/25 havde mere end ét age_group_id. Fundene er mistænkte kollisioner,
 ikke bekræftede uden ekstern kilde. Database urørt.
+# 2026-09-15 — Opgave 032 runde 3: række-/kamptypekontrol
+
+De seks resterende samme-dato-fund blev genkørt med league_raw og name_raw.
+0/6 lå i samme række/kamptype; alle var forskellige ungdomsrækker. Dermed
+er ingen af runde 2's syv fund fortsat kollisionsbevis i gemte data.

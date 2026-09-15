@@ -268,6 +268,17 @@ reelle kollisionsrisiko er stadig helt uafklaret, ikke "lav og målt").
 
 ## Resultat — runde 2 (udfyldes ved genkørsel)
 
+## Resultat — runde 3
+
+Kontrol: rapportfil og testlog er opdateret; database urørt. Scriptet
+inkluderer `c.league_raw` og `c.name_raw`. For de seks resterende spillere
+var **0/6** samme-dato-fund i samme række/kamptype; alle seks havde kun
+forskellige U13/U15/U09-rækker (detaljer i rapporten). Sammen med Konrads
+manuelle afkræftelse er runde 2's 7 mistænkte kollisionsfund nu afkræftet i
+det gemte materiale. Navnesplittelse kræver fortsat ekstern kilde.
+
+**Commits:**
+
 **Kontroloutput:** Rapportfilen findes; `TEST_RUN_LOG.md` indeholder mindst
 to 032-poster; `git status --short statistik/data/` var tom. Diffen rammer kun
 `statistik/` og kortets tilladte dokumentation.
