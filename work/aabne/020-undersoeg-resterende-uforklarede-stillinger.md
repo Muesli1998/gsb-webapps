@@ -115,6 +115,9 @@ kildehentning), så lad rækken stå som uforklaret og skriv det under
 
 ## Spørgsmål
 
+Årsagerne bag `browser_verified_no_result` og de to 2025-`api_error`-kampe
+kan ikke afgøres uden ekstern hentning; de er derfor ikke omklassificeret.
+
 ## Tilbagefald
 
 ## Resultat
@@ -122,10 +125,25 @@ kildehentning), så lad rækken stå som uforklaret og skriv det under
 **Kontroloutput — før og efter:**
 
 ```
+ls statistik/results/ | grep -i "020\|unexplained-standings"
+020-unexplained-standings.md
+
+grep -c "020" statistik/TEST_RUN_LOG.md
+1
+
+git status --short statistik/data/
+(tom)
+
+Klassifikation: 31 undersøgt; 10 med konkret gemt evidens; 21 fortsat uforklarede.
 ```
 
 **De undersøgte rækker og deres konklusion:**
 
+Se den fulde række-for-række tabel i `statistik/results/020-unexplained-standings.md`.
+
 **Ændrer dette "Kampantal er holdt op mod stillingerne"s status i docs/statistik-plan.md:**
+
+Nej. Kontrollen er fortsat ikke bestået; undersøgelsen reducerer ikke de
+oprindelige afvigelser til en godkendt datakvalitet.
 
 **Commits:**
