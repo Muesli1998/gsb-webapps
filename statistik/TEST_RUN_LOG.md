@@ -456,3 +456,12 @@ ikke bekræftede uden ekstern kilde. Database urørt.
 De seks resterende samme-dato-fund blev genkørt med league_raw og name_raw.
 0/6 lå i samme række/kamptype; alle var forskellige ungdomsrækker. Dermed
 er ingen af runde 2's syv fund fortsat kollisionsbevis i gemte data.
+# 2026-09-15 — Opgave 033 ungdomsscope
+
+Read-only måling med `scripts/033-ungdom-scope.mjs`: 1.207 ungdomsholdkampe
+(age_group_id 2–5), 1.002 med individuelle rækker og 205 uden. De 205 er
+162 `browser_verified`, 39 `browser_verified_no_result` og 4 `api_error`.
+Spillerrelationer: 17.114 i alt, 8.255 med external ID og 8.859 uden.
+Der findes ingen uafhængig, gemt Nembadminton-discovery-total, så manglende
+ungdomskampe kan ikke estimeres uden nyt eksternt kald. Databasen var
+read-only; senior-dokumentation urørt.

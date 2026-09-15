@@ -1,0 +1,396 @@
+{
+  "generatedAt": "2026-09-15T11:35:06.385Z",
+  "youthAgeGroupIds": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "totals": {
+    "matches": 1207,
+    "with_individuals": 1002,
+    "without_individuals": 205
+  },
+  "bySeasonAge": [
+    {
+      "season_id": 2011,
+      "age_group_id": 3,
+      "matches": 28,
+      "with_individuals": 0,
+      "without_individuals": 28
+    },
+    {
+      "season_id": 2011,
+      "age_group_id": 4,
+      "matches": 32,
+      "with_individuals": 0,
+      "without_individuals": 32
+    },
+    {
+      "season_id": 2011,
+      "age_group_id": 5,
+      "matches": 22,
+      "with_individuals": 0,
+      "without_individuals": 22
+    },
+    {
+      "season_id": 2012,
+      "age_group_id": 3,
+      "matches": 6,
+      "with_individuals": 6,
+      "without_individuals": 0
+    },
+    {
+      "season_id": 2012,
+      "age_group_id": 4,
+      "matches": 16,
+      "with_individuals": 7,
+      "without_individuals": 9
+    },
+    {
+      "season_id": 2012,
+      "age_group_id": 5,
+      "matches": 20,
+      "with_individuals": 16,
+      "without_individuals": 4
+    },
+    {
+      "season_id": 2013,
+      "age_group_id": 3,
+      "matches": 13,
+      "with_individuals": 13,
+      "without_individuals": 0
+    },
+    {
+      "season_id": 2013,
+      "age_group_id": 4,
+      "matches": 7,
+      "with_individuals": 7,
+      "without_individuals": 0
+    },
+    {
+      "season_id": 2013,
+      "age_group_id": 5,
+      "matches": 20,
+      "with_individuals": 14,
+      "without_individuals": 6
+    },
+    {
+      "season_id": 2014,
+      "age_group_id": 3,
+      "matches": 13,
+      "with_individuals": 9,
+      "without_individuals": 4
+    },
+    {
+      "season_id": 2014,
+      "age_group_id": 4,
+      "matches": 14,
+      "with_individuals": 14,
+      "without_individuals": 0
+    },
+    {
+      "season_id": 2014,
+      "age_group_id": 5,
+      "matches": 14,
+      "with_individuals": 14,
+      "without_individuals": 0
+    },
+    {
+      "season_id": 2015,
+      "age_group_id": 3,
+      "matches": 17,
+      "with_individuals": 7,
+      "without_individuals": 10
+    },
+    {
+      "season_id": 2015,
+      "age_group_id": 4,
+      "matches": 16,
+      "with_individuals": 12,
+      "without_individuals": 4
+    },
+    {
+      "season_id": 2015,
+      "age_group_id": 5,
+      "matches": 6,
+      "with_individuals": 6,
+      "without_individuals": 0
+    },
+    {
+      "season_id": 2016,
+      "age_group_id": 3,
+      "matches": 12,
+      "with_individuals": 11,
+      "without_individuals": 1
+    },
+    {
+      "season_id": 2016,
+      "age_group_id": 4,
+      "matches": 7,
+      "with_individuals": 6,
+      "without_individuals": 1
+    },
+    {
+      "season_id": 2016,
+      "age_group_id": 5,
+      "matches": 17,
+      "with_individuals": 16,
+      "without_individuals": 1
+    },
+    {
+      "season_id": 2017,
+      "age_group_id": 3,
+      "matches": 7,
+      "with_individuals": 7,
+      "without_individuals": 0
+    },
+    {
+      "season_id": 2017,
+      "age_group_id": 4,
+      "matches": 12,
+      "with_individuals": 12,
+      "without_individuals": 0
+    },
+    {
+      "season_id": 2017,
+      "age_group_id": 5,
+      "matches": 18,
+      "with_individuals": 18,
+      "without_individuals": 0
+    },
+    {
+      "season_id": 2018,
+      "age_group_id": 3,
+      "matches": 16,
+      "with_individuals": 14,
+      "without_individuals": 2
+    },
+    {
+      "season_id": 2018,
+      "age_group_id": 4,
+      "matches": 10,
+      "with_individuals": 8,
+      "without_individuals": 2
+    },
+    {
+      "season_id": 2019,
+      "age_group_id": 3,
+      "matches": 5,
+      "with_individuals": 4,
+      "without_individuals": 1
+    },
+    {
+      "season_id": 2019,
+      "age_group_id": 4,
+      "matches": 5,
+      "with_individuals": 5,
+      "without_individuals": 0
+    },
+    {
+      "season_id": 2019,
+      "age_group_id": 5,
+      "matches": 10,
+      "with_individuals": 10,
+      "without_individuals": 0
+    },
+    {
+      "season_id": 2020,
+      "age_group_id": 2,
+      "matches": 6,
+      "with_individuals": 1,
+      "without_individuals": 5
+    },
+    {
+      "season_id": 2020,
+      "age_group_id": 3,
+      "matches": 22,
+      "with_individuals": 8,
+      "without_individuals": 14
+    },
+    {
+      "season_id": 2020,
+      "age_group_id": 4,
+      "matches": 16,
+      "with_individuals": 6,
+      "without_individuals": 10
+    },
+    {
+      "season_id": 2020,
+      "age_group_id": 5,
+      "matches": 21,
+      "with_individuals": 12,
+      "without_individuals": 9
+    },
+    {
+      "season_id": 2021,
+      "age_group_id": 2,
+      "matches": 12,
+      "with_individuals": 12,
+      "without_individuals": 0
+    },
+    {
+      "season_id": 2021,
+      "age_group_id": 3,
+      "matches": 24,
+      "with_individuals": 23,
+      "without_individuals": 1
+    },
+    {
+      "season_id": 2021,
+      "age_group_id": 4,
+      "matches": 29,
+      "with_individuals": 28,
+      "without_individuals": 1
+    },
+    {
+      "season_id": 2021,
+      "age_group_id": 5,
+      "matches": 25,
+      "with_individuals": 24,
+      "without_individuals": 1
+    },
+    {
+      "season_id": 2022,
+      "age_group_id": 2,
+      "matches": 6,
+      "with_individuals": 6,
+      "without_individuals": 0
+    },
+    {
+      "season_id": 2022,
+      "age_group_id": 3,
+      "matches": 48,
+      "with_individuals": 45,
+      "without_individuals": 3
+    },
+    {
+      "season_id": 2022,
+      "age_group_id": 4,
+      "matches": 29,
+      "with_individuals": 28,
+      "without_individuals": 1
+    },
+    {
+      "season_id": 2022,
+      "age_group_id": 5,
+      "matches": 41,
+      "with_individuals": 39,
+      "without_individuals": 2
+    },
+    {
+      "season_id": 2023,
+      "age_group_id": 2,
+      "matches": 8,
+      "with_individuals": 6,
+      "without_individuals": 2
+    },
+    {
+      "season_id": 2023,
+      "age_group_id": 3,
+      "matches": 51,
+      "with_individuals": 48,
+      "without_individuals": 3
+    },
+    {
+      "season_id": 2023,
+      "age_group_id": 4,
+      "matches": 36,
+      "with_individuals": 34,
+      "without_individuals": 2
+    },
+    {
+      "season_id": 2023,
+      "age_group_id": 5,
+      "matches": 44,
+      "with_individuals": 42,
+      "without_individuals": 2
+    },
+    {
+      "season_id": 2024,
+      "age_group_id": 2,
+      "matches": 25,
+      "with_individuals": 24,
+      "without_individuals": 1
+    },
+    {
+      "season_id": 2024,
+      "age_group_id": 3,
+      "matches": 50,
+      "with_individuals": 45,
+      "without_individuals": 5
+    },
+    {
+      "season_id": 2024,
+      "age_group_id": 4,
+      "matches": 71,
+      "with_individuals": 69,
+      "without_individuals": 2
+    },
+    {
+      "season_id": 2024,
+      "age_group_id": 5,
+      "matches": 29,
+      "with_individuals": 29,
+      "without_individuals": 0
+    },
+    {
+      "season_id": 2025,
+      "age_group_id": 2,
+      "matches": 48,
+      "with_individuals": 43,
+      "without_individuals": 5
+    },
+    {
+      "season_id": 2025,
+      "age_group_id": 3,
+      "matches": 36,
+      "with_individuals": 32,
+      "without_individuals": 4
+    },
+    {
+      "season_id": 2025,
+      "age_group_id": 4,
+      "matches": 88,
+      "with_individuals": 84,
+      "without_individuals": 4
+    },
+    {
+      "season_id": 2025,
+      "age_group_id": 5,
+      "matches": 79,
+      "with_individuals": 78,
+      "without_individuals": 1
+    }
+  ],
+  "statuses": [
+    {
+      "status": "api_error",
+      "matches": 4
+    },
+    {
+      "status": "browser_verified",
+      "matches": 1164
+    },
+    {
+      "status": "browser_verified_no_result",
+      "matches": 39
+    }
+  ],
+  "playerIds": {
+    "relations": 17114,
+    "with_external_id": 8255,
+    "without_external_id": 8859
+  },
+  "standing": [
+    {
+      "season_id": 2025,
+      "age_group_id": 2,
+      "competitions": 2,
+      "rows": 28
+    }
+  ],
+  "payloadYouth": {
+    "payloads": 1207
+  }
+}
