@@ -90,6 +90,14 @@ ID. Spillere kobles via BadmintonPlayer-links
 sikker identitet. Den resterende kobling er en separat byggeopgave, ikke
 en del af denne audit; se `statistik/results/016-spiller-id-audit.md`.
 
+Opgave 032 undersøgte om de 2.556 navnematch-koblede spillere reelt
+udgør en identitetsrisiko. **7 mistænkte navnekollisioner** blev fundet
+(kampe på to GSB-hold samme dato) blandt de 25 mest aktive — se
+"Status på Test & Validation som helhed" nedenfor og
+`statistik/results/032-spiller-navnematch-risiko.md`. Risikoen er
+bekræftet reel, ikke længere hypotetisk, men uafklaret uden fuld
+ID-kobling eller en manuel gennemgang af de 7 navne.
+
 **Kampantal er holdt op mod stillingerne — OPDATERET 2026-09-15, alle
 98 rækker har nu en dokumenteret status:**
 
@@ -144,9 +152,18 @@ undtagelser). Stillingskontrol-punktet er eksplicit lukket ved Chris'
 beslutning (se ovenfor). Spilleridentitet-punktet er derimod IKKE
 færdigbehandlet: 85,2 % dækning hviler på et gemt ID, men de
 resterende 14,8 % (9.926 relationer, 2.556 spillere) hviler på
-navnematch alene, og opgave 032 undersøger nu om det udgør en reel
-risiko for Results-rapportens per-spiller-tal før trinnet som helhed
-kan lukkes.
+navnematch alene. Opgave 032 (to runder — runde 1's dublet-tjek var
+tautologisk og blev forkastet, se `statistik/RESEARCH_BACKLOG.md`)
+fandt i runde 2 konkret adfærdsmæssig evidens: **7 af de 25 mest
+aktive navnematch-spillere har kampe registreret for to GSB-hold samme
+dato (22 kampforekomster)** — Lasse Bjerregaard Kirt, Konrad Kunckel,
+Norr Bagge Køhler, Pelle Emil Jessing Schjøtt, Kasper Gorm, Lasse
+Friberg Andersen og Sebastian Larsen Lund. Det er ikke bekræftet om
+det er reelle navnekollisioner (to fysiske personer) eller
+registreringsfejl — begge kræver stadig fuld ID-kobling for at
+afklares endeligt, se `statistik/results/032-spiller-navnematch-
+risiko.md`. Trinnet som helhed kan derfor ikke lukkes på dette
+kriterium endnu.
 
 Den tidligere uoverensstemmelse med "Rækkefølge"s punkt 2 ("Byg den
 individuelle extractor") er afklaret ved at læse
@@ -243,10 +260,13 @@ princippet om at rå data gemmes før fortolkning.
    ovenfor) — 77 forklarede/kendte, 21 dokumenteret genuint uforklarede.
    Opfylder kriteriets egen ordlyd. Genoptages kun hvis statistikprojektet
    udvides til en national database (se flag ovenfor).
-5b. **[Åben — 032] Spiller-navnematch-risiko:** stikprøve af om de 2.556
-   spillere uden BadmintonPlayer-ID dækker over navnekollisioner eller
-   -splittelser, før Results-rapporten bygges på dem. Se opgavekortet i
-   `work/aabne/032-spiller-navnematch-risiko.md`.
+5b. **[Afsluttet, to runder — 032] Spiller-navnematch-risiko:** stikprøve
+   af om de 2.556 spillere uden BadmintonPlayer-ID dækker over
+   navnekollisioner eller -splittelser. Runde 1's dublet-tjek var
+   tautologisk og blev forkastet; runde 2 fandt 7 mistænkte kollisioner
+   (kampe på to GSB-hold samme dato) i de 25 mest aktive. Risikoen er
+   bekræftet, men ikke endeligt afklaret — se
+   `statistik/results/032-spiller-navnematch-risiko.md`.
 6. **Results-rapporten.**
 7. **Skillen.**
 8. Preview, derefter Prod Push.
