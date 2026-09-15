@@ -445,3 +445,9 @@ Read-only SQL-stikprøve af 25 højvolumen-spillere uden external_player_id.
 0 dubletter på players.name_normalized. Ingen konkret navnekollision påvist;
 navnesplittelse mellem forskellige stavemåder kræver ekstern kilde. Rapport:
 `statistik/results/032-spiller-navnematch-risiko.md`.
+# 2026-09-15 — Opgave 032 runde 2: adfærdsmæssig navnematch-audit
+
+Read-only script `audit-player-name-behavior.mjs` kørte på 25 højvolumen-navne.
+7 spillere havde registreringer på to GSB-hold samme dato (22 kampforekomster),
+og 25/25 havde mere end ét age_group_id. Fundene er mistænkte kollisioner,
+ikke bekræftede uden ekstern kilde. Database urørt.

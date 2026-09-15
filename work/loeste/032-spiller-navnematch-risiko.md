@@ -157,6 +157,10 @@ Runde 2: `arbejde/032-spiller-navnematch-risiko-runde2`.
 
 ## Spørgsmål
 
+De syv samme-dato/to-hold-fund kræver ekstern spillerprofil eller holdsedler
+for at afgøre om de er reelle navnekollisioner eller registreringsfejl.
+Ingen ekstern hentning er foretaget i denne opgave.
+
 ## Tilbagefald
 
 ## Resultat — runde 1 (2026-09-15, GENÅBNET — hovedbevis ugyldigt)
@@ -194,3 +198,16 @@ reelle kollisionsrisiko er stadig helt uafklaret, ikke "lav og målt").
 (arkivering).
 
 ## Resultat — runde 2 (udfyldes ved genkørsel)
+
+**Kontroloutput:** Rapportfilen findes; `TEST_RUN_LOG.md` indeholder mindst
+to 032-poster; `git status --short statistik/data/` var tom. Diffen rammer kun
+`statistik/` og kortets tilladte dokumentation.
+
+**Resultat:** 25 spillere undersøgt. 7 havde kampe på to GSB-hold samme dato
+(22 kampforekomster), 25/25 havde flere `age_group_id`; ingen navnesplittelse
+kunne bekræftes fra gemte felter. De 7 er mistænkte kollisioner og kræver
+ekstern kilde. Fuld ID-kobling er fortsat nødvendig.
+
+**Commits:**
+
+71a997b
