@@ -143,3 +143,9 @@ en del af importpipeline-designet, ikke som en isoleret opfølgningsopgave.
 
 Status: lukket som dokumenteret kildehul for GSB. Genoptages kun hvis
 klubudvidelse bliver konkret, og da som en del af pipeline-designet.
+# Opgave 030 — holdnummer-stabilitet (afsluttet undersøgelse)
+
+Undersøgelsen fandt ingen stabil tværkilde-forskydning: 13 numeriske
+no-linked-par gav fem forskellige deltaer (+1:9, +2:1, -1:1, -2:1, -3:1),
+og `league_raw` indeholder ikke holdnummer. Rå holdnummer matchede 0/13;
+kontroludsnit 7/7. Se `results/030-holdnummer-stabilitet.md`.
