@@ -64,4 +64,20 @@ skyldes fejlagtig spillerkobling eller dobbeltregistrering. Uden eksterne
 spillerprofiler klassificeres de derfor som **mistænkte kollisioner, kræver
 ekstern kilde**, ikke som bekræftede fysiske personer.
 
+## Manuel opfølgning (Chris, 2026-09-15): Konrad Kunckel afkræftet
+
+Kamp 467888/471218 (begge U15, 27-10-2024, samme runde) er tjekket manuelt
+mod badmintonplayer.dk. Det er **ikke** en kollision: kampene ligger i to
+forskellige rækker/kamptyper (U15 B 5400 blandet hold vs. U15 C 4800
+drengehold), og det er ifølge Chris normal praksis i ungdomsrækkerne at
+spille flere holdkampe samme dag på tværs af kamptyper for at samle
+holdkampweekender.
+
+Det svækker "samme dato, to hold" som kollisionssignal specifikt for U15
+og yngre — hvilket i øvrigt ligger uden for dette tekniske trins scope
+(se `docs/statistik-plan.md`). De øvrige 6 fund (Lasse Bjerregaard Kirt,
+Norr Bagge Køhler, Pelle Emil Jessing Schjøtt, Kasper Gorm, Lasse Friberg
+Andersen, Sebastian Larsen Lund) er endnu ikke tjekket for samme mønster
+eller for om de også ligger i U15-rækker.
+
 

@@ -161,6 +161,25 @@ De syv samme-dato/to-hold-fund kræver ekstern spillerprofil eller holdsedler
 for at afgøre om de er reelle navnekollisioner eller registreringsfejl.
 Ingen ekstern hentning er foretaget i denne opgave.
 
+**Besvaret 2026-09-15 (Chris, manuelt tjek af Konrad Kunckel,
+kamp 467888/471218):** Ikke en kollision. Begge kampe er U15,
+27-10-2024, samme runde, men to forskellige rækker/kamptyper (467888:
+U15 B 5400, blandet hold; 471218: U15 C 4800, rent drengehold). Chris
+bekræfter at det er normal praksis i ungdomsrækkerne at spille flere
+holdkampe samme dag på tværs af kamptyper, for at reducere antallet af
+weekender med holdkampe. Screenshots fra badmintonplayer.dk af begge
+kampe bekræfter dette.
+
+**Metodisk konsekvens:** dette rejser tvivl om værdien af "samme dato,
+to hold"-signalet som kollisionsindikator specifikt for U15 og yngre,
+hvor det tilsyneladende er almindelig, legitim praksis snarere end en
+undtagelse. De øvrige 6 fund (Lasse Bjerregaard Kirt, Norr Bagge
+Køhler, Pelle Emil Jessing Schjøtt, Kasper Gorm, Lasse Friberg
+Andersen, Sebastian Larsen Lund) er ikke tjekket for samme mønster
+endnu. Bemærk desuden at Konrad Kunckels kamppar begge er U15 — og
+U15 og yngre er eksplicit uden for dette tekniske trins scope (se
+`docs/statistik-plan.md`, "Ikke en del af dette trin").
+
 ## Tilbagefald
 
 ## Resultat — runde 1 (2026-09-15, GENÅBNET — hovedbevis ugyldigt)

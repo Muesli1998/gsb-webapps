@@ -154,16 +154,22 @@ færdigbehandlet: 85,2 % dækning hviler på et gemt ID, men de
 resterende 14,8 % (9.926 relationer, 2.556 spillere) hviler på
 navnematch alene. Opgave 032 (to runder — runde 1's dublet-tjek var
 tautologisk og blev forkastet, se `statistik/RESEARCH_BACKLOG.md`)
-fandt i runde 2 konkret adfærdsmæssig evidens: **7 af de 25 mest
-aktive navnematch-spillere har kampe registreret for to GSB-hold samme
-dato (22 kampforekomster)** — Lasse Bjerregaard Kirt, Konrad Kunckel,
-Norr Bagge Køhler, Pelle Emil Jessing Schjøtt, Kasper Gorm, Lasse
-Friberg Andersen og Sebastian Larsen Lund. Det er ikke bekræftet om
-det er reelle navnekollisioner (to fysiske personer) eller
-registreringsfejl — begge kræver stadig fuld ID-kobling for at
-afklares endeligt, se `statistik/results/032-spiller-navnematch-
-risiko.md`. Trinnet som helhed kan derfor ikke lukkes på dette
-kriterium endnu.
+fandt i runde 2 syv af de 25 mest aktive navnematch-spillere med kampe
+registreret for to GSB-hold samme dato (22 kampforekomster) — Lasse
+Bjerregaard Kirt, Konrad Kunckel, Norr Bagge Køhler, Pelle Emil Jessing
+Schjøtt, Kasper Gorm, Lasse Friberg Andersen og Sebastian Larsen Lund.
+
+**Ét af de syv er siden afkræftet ved manuelt tjek (Chris, 2026-09-15):**
+Konrad Kunckels kamppar (467888/471218) er begge U15, samme dato og
+runde, men to forskellige rækker/kamptyper — normal praksis at samle
+flere ungdoms-holdkampe på én dag, ikke en kollision. De øvrige 6 er
+endnu ikke tjekket for samme mønster. "Samme dato, to hold" ser dermed
+svagere ud som kollisionssignal for U15 og yngre specifikt, hvilket i
+øvrigt ligger uden for dette trins scope (se "Ikke en del af dette
+trin" nedenfor) — det er ikke afklaret om det samme gælder for de
+resterende fund i seniorrækkerne. Se
+`statistik/results/032-spiller-navnematch-risiko.md`. Trinnet som
+helhed kan derfor ikke lukkes på dette kriterium endnu.
 
 Den tidligere uoverensstemmelse med "Rækkefølge"s punkt 2 ("Byg den
 individuelle extractor") er afklaret ved at læse
