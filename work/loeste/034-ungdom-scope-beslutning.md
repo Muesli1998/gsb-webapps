@@ -109,4 +109,4 @@ Beslutningen er skrevet 2026-09-15 på grenen
 - Discovery-dækning og fuld ungdoms-stillingskontrol er dokumenterede
   begrænsninger, ikke antaget løst.
 
-**Commits:** afventer commit på denne gren.
+**Commits:** 0b15347
