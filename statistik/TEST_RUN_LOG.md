@@ -465,3 +465,9 @@ Spillerrelationer: 17.114 i alt, 8.255 med external ID og 8.859 uden.
 Der findes ingen uafhængig, gemt Nembadminton-discovery-total, så manglende
 ungdomskampe kan ikke estimeres uden nyt eksternt kald. Databasen var
 read-only; senior-dokumentation urørt.
+# 2026-09-15 — Opgave 037 Fase A ID-overlap
+
+Read-only opslag af age_group_id og de fem overlap-ID'er. Age group 6/18
+indeholder U17/U19, men 0/5 overlap-ID'er ligger dér: 2286, 2365 og 2396 er
+U13 (age_group_id 4), 2509 og 96231 er U15 (age_group_id 5). Fase B blev
+ikke kørt; overlap-forklaringen U17/U19 er ikke bekræftet.

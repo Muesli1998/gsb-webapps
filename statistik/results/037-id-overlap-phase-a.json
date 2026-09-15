@@ -1,0 +1,134 @@
+{
+  "generatedAt": "2026-09-15T12:37:04.371Z",
+  "ageGroups": [
+    {
+      "age_group_id": 1,
+      "competitions": 85,
+      "league_examples": "Kvalifikation til 3.division B Øst,Danmarksserien Øst pulje 4,1. Serie Pulje 1 1. Serie Pulje 1,2. Serie Pulje 1 2. Serie Pulje 1,Danmarksserien Øst pulje 2,Nedrykning fra Danmarksserien Pulje 3,1. Serie P2 1.Serie P2,2.Serie P2 2.Serie P2,Danmarksserien Øst pulje 3,Kvalifikation til 3. division Pulje B øst,1. Serie P1 Pulje 1,3. Serie P1 Pulje 1,KS-Pulje 2 Pulje 2,3.serie P2 Pulje 2,Danmarksserien Øst pulje 1,Kvalifikation til 3. division Pulje A øst,KS-Oprykning Pulje 1,KS serie P1  Pulje 1,2. serie P2  Pulje 1,4. serie P1  Pulje 1,30. serie  Pulje 1,5. serie P1  Pulje 1,Kvalifikation til 3. division Pulje B Øst,KS-NEDRYKNING Pulje 1,KS Serie P1 Pulje 1,4. Serie P2 Pulje 1,30. Serie P1 Pulje 1,Danmarksserien Kvalifikation til 3. division pulje A Øst,KS-NEDRYKNING KS-NEDRYKNING,KS-Oprykning KS-Oprykning,Kvalifikation til 3. division (runde 12) Kvalifikationsevent kamp 5,KS-P1 Pulje 1,2. Serie P2 Pulje 2,SEN 1. Serie P1 Pulje 1,KBH Serien P2 Pulje 2,Danmarksserien Nedrykning fra Danmarksserien, B Øst,KS-Nedrykning KS-Nedrykning,KBH Serien P1 Pulje 1,SEN 2. Serie P1 Pulje 1,Danmarksserien Pulje 8,Danmarksserien Kvalifikation til 3. division pulje D,Danmarksserien Pulje 5,Danmarksserien Pulje 7,Danmarksserien Nedrykning fra Danmarksserien pulje C,Danmarksserien Nedrykning fra Danmarksserien pulje D,Danmarksserien Pulje 6,Serie 1 Pulje 1,Københavnsserien  Pulje 2,Danmarksserien Kvalifikation til 3. division, pulje C,Københavnsserien  Nedrykning fra Københavnsserien,Serie 2 Pulje 2,Serie 31 Pulje 1,Københavnsserien  Oprykning til Danmarksserien,Københavnsserien Pulje 2,Københavnsserien Oprykning til Danmarksserien,1. Serie Pulje 1,Danmarksserien Kvalkampe: Oprykning til 3. division,32. Serie Pulje 1,Københavnsserien\t Pulje 1,2. Serie Pulje 1,3. Serie Pulje 2,31. Serie\t Pulje 1,Københavnsserien\t Oprykning til Danmarksserien",
+      "team_examples": "Gladsaxe Søborg 1,Gladsaxe Søborg 2,Gladsaxe Søborg 3,Gladsaxe Søborg,Gladsaxe Søborg 4,Gladsaxe Søborg 5,Gladsaxe Søborg 6"
+    },
+    {
+      "age_group_id": 2,
+      "competitions": 23,
+      "league_examples": "U09 2500 4 Spillere Pulje 1,U09 2700 4 Spillere Pulje 1,DMU H - U9 2700 - 4 spillere Pulje 1,DMU H - U9 2700 - 4 spillere Finale,U09 2800 4 Spillere Pulje 1,U09 2400 4 Spillere Pulje 1,U9 D 2800 (4 spillere). Pulje 1,U9 D 2800 (4 spillere). Pulje 2,DMU Hold U9D (2800) 4 Spillere Pulje 3,DMU Hold U9D (2800) 4 Spillere Placeringskampe (9. - 14. plads),U09 D 3300 (3 spillere) BD Pulje 1,U09 D 3300 (3 spillere) BD Pulje 2,U09 C 3600 (3 spillere) BD Pulje 1,U09 C 3600 (3 spillere) BD (2. halvår) Pulje 2,U09 D 3300 (3 spillere) BD  (2. halvår) Pulje 1,U09 D 3300 (3 spillere) BD  (2. halvår) Pulje 2,U09 D 3300 (3 spillere) BD  (2. halvår) Pulje 3,U09 D 3300 (3 spillere) BD  (2. halvår) Pulje 4,DMU Holdtræf U9 - 3 Spillere U9 DMU holdtræf",
+      "team_examples": "Gladsaxe Søborg 1,Gladsaxe Søborg 2,Gladsaxe Søborg 3,Gladsaxe Søborg 4,Gladsaxe Søborg 5"
+    },
+    {
+      "age_group_id": 3,
+      "competitions": 60,
+      "league_examples": "U11 Serie X2 U11 Serie X2,U11 2. Serie U11 2. Serie,U11 3. Serie U11 3. Serie,U11 Serie X1 U11 Serie X1,U11 3. Serie Pulje 1,U11 Serie X1 Pulje 1,U11 serie X1 (4 spillere C) Pulje 1,U11 serie X2 (4 spillere C) Pulje 1,U11 B Række 4 Pulje 1,U11 D Række 4 Pulje 1,U11 D (4) P1 Pulje 1,DMU-Hold U11 D 4 Spillere Pulje 1,DMU-Hold U11 D 4 Spillere Finale 1. - 4. plads,Slutspil U11 D (4) Pulje 1,U11 D (4) P2 Pulje 2,U11 C 4 Spillere Pulje 1,U11 D 4 Spillere P2 Pulje 2,U11 - 3400 - 4 spillere Pulje 1,U11 4+2 Pulje 1,U11 3000 4 Spillere Pulje 1,U11 3000 4 Spillere Pulje 2,U11 3100 4 Spillere Pulje 1,U11 3100 4 Spillere Pulje 2,U11 3100 4 Spillere Pulje 3,U11 - 2+2 Pulje 1,U11 2800 4 Piger Pulje 1,U11 3200 4 Spillere Pulje 1,U11 3600 4 Spillere Pulje 1,DMU H - U11 3600 4 spillere Pulje 1,DMU H - U11 3000 4 spillere Pulje 1,DMU H - U11 3000 4 spillere Placeringskampe (9. - 12. plads),U11 - 2900 4 spillere Pulje 2,U11 - 3200 4 spillere Pulje 1,U11 - 3200 4 spillere Pulje 2,U11 - 2800 (4 piger) Pulje 1,DMU H U11 (2+2) Pulje 1,DMU H - U11 3200 (4 spillere) Pulje 3,DMU H - U11 2800 (4 piger) Pulje 1,DMU H - U11 3200 (4 spillere) Kvartfinale 2 (nr. 1 pulje 3 og 4),DMU H - U11 3200 (4 spillere) Finale slutspil (1. - 4. plads),U11 C 4000 (4 spillere). Pulje 1,U11 D 2800 (4 piger). Pulje 2,U11 D 3200 (4 spillere). Pulje 1,U11 D 3200 (4 spillere). Pulje 2,U11 D 3200 (4 spillere). Pulje 3,DMU Hold - U11D (2800) 4 Piger Pulje 1,DMU Hold U11C (4000) 4 Spillere Pulje 3,DMU Hold U11C (4000) 4 Spillere Kvartfinale 3 (nr. 1 pulje 2 og nr. 2 pulje 2),DMU Hold U11C (4000) 4 Spillere Placeringskampe (5. - 8. plads) NY,U11 4200 (4 piger) BD Pulje 2,U11 C-D 4800 (4 spillere) BD Pulje 1,U11 D 4600 (4 spillere) BD Pulje 1,U11 D 4600 (4 spillere) BD Pulje 4,DMU Hold U11C-D (4800) - 4 Spillere Pulje 2,DMU Hold U11C-D (4800) - 4 Spillere Finaleslutspil (1. - 4. plads)",
+      "team_examples": "Gladsaxe Søborg 4,Gladsaxe Søborg,Gladsaxe Søborg 2,Gladsaxe Søborg 3,Gladsaxe Søborg 1,Gladsaxe Søborg 6,Gladsaxe Søborg 5"
+    },
+    {
+      "age_group_id": 4,
+      "competitions": 73,
+      "league_examples": "U13 2. Serie U13 2. erie,U13 3. Serie U13 3. Serie,U13 Serie X1 U13 Serie X1,U13 Serie X2 U13 Serie X2,U13 3. serie Pulje 1,U13 Serie X1 Pulje 1,U13 3.serie (4+2 M) Pulje 1,U13 serie X2 (4 spillere C) Pulje 1,U13 B Række 4 Pulje 1,U13 D Række 4 Pulje 1,U13 C (4) P2 Pulje 1,U13 B (4) Pulje 1,U13 C (4) Pulje 1,U13 CD 4 Spillere Pulje 1,U13 - 3800 - 4 spillere Pulje 1,U13 - 3400 - 4 spillere Pulje 1,U13 3800 4 Spillere Pulje 1,U13 3400 4 Spillere Pulje 2,U13 - 3500 (4 piger) Pulje 1,U13 3500 4 Spillere Pulje 2,U13 3500 4 Spillere Pulje 3,U13 5200 4 Spillere Pulje 1,DMU H - U13 5200 - 4 spillere Pulje 3,DMU H - U13 5200 - 4 spillere Kvartfinale 3,DMU H - U13 5200 - 4 spillere Finale slutspil 1. - 4. plads,U13 3400 4 Spillere Pulje 1,U13 4400 4 Spillere Pulje 2,DMU H - U13 3400 4 spillere Pulje 1,DMU H - U13 3400 4 spillere Kvartfinale 5 (nr. 2 pulje 1 og 2),DMU H - U13 3400 4 spillere Placeringskamp (13. - 16. plads),U13 - 4400 (4 spillere) Pulje 1,U13 - 3600 4 piger Pulje 1,U13 - 5000 4 spillere Pulje 1,U13 - 3500 4 spillere Pulje 1,U13 A, 5600 (2+2) Pulje 1,UGE 38 - U13 D, 3600 (2+2) Pulje 1,U13 D, 3200 (4 piger) Pulje 1,U13 C, 4200 (4 spillere) Pulje 1,U13 B, 5000 (4 spillere) Pulje 2,U13 D 3600 (4 spillere). Pulje 1,U13 D 3600 (4 spillere). Pulje 2,U13 D 3600 (4 spillere). Pulje 3,DMU Hold U13A 2+2 (5600) Pulje 1,DMU Hold U13B (5000) 4 Spillere Pulje 2,DMU Hold U13C (4200) 4 Spillere Pulje 1,DMU Hold U13B (5000) 4 Spillere Placeringskamp (5. - 6. plads),DMU Hold U13C (4200) 4 Spillere Finale slutspil (1. - 4. plads),Uge 38 - U13 A, 6000 (2+2) Pulje 1,Uge 38 - U13 B, 5400 (2+2) Pulje 1,U13 A, 6000 (2+2) Pulje 1,Uge 38 - U13 C, 5000 (2+2) Pulje 1,Uge 38 - U13 D, 4800 (2+2) Pulje 1,U13 B, 5400 (2+2) Pulje 1,U13 C 5300 (4 spillere) BD Pulje 1,U13 D 4400 (4 piger) BD Pulje 1,U13 D 4800 (4 spillere) BD Pulje 1,U13 D 4800 (4 spillere) BD Pulje 2,U13 D 4800 (4 spillere) BD Pulje 3,DMU Hold U13A 2+2 (6000) Pulje 1,DMU Hold U13A 2+2 (6000) Pulje 2,DMU Hold U13C-D (5000) - 4 Spillere Pulje 2,DMU Hold U13D (4800) - 4 Spillere Pulje 4,DMU Hold U13D (4800) - 4 Spillere Pulje 5,DMU Hold U13C-D (5000) - 4 Spillere Placeringskampe 9. - 12. plads (3'ere),DMU Hold U13D (4800) - 4 Spillere Kvartfinale 2 (nr. 1 fra pulje 3 og 4),DMU Hold U13D (4800) - 4 Spillere 5. - 8. plads,DMU Hold U13D (4800) - 4 Spillere Placeringskampe 9. - 16. plads (2'ere i puljen),DMU Hold U13A 2+2 (6000) 3. - 4. plads (2'ere)",
+      "team_examples": "Gladsaxe Søborg,Gladsaxe Søborg 2,Gladsaxe Søborg 3,Gladsaxe Søborg 4,Gladsaxe Søborg 1,Gladsaxe Søborg 9,Gladsaxe Søborg 8,Gladsaxe Søborg 6,Gladsaxe Søborg 7,Gladsaxe Søborg 5,Gladsaxe Søborg 10"
+    },
+    {
+      "age_group_id": 5,
+      "competitions": 64,
+      "league_examples": "U15 3. Serie U15 3. Serie,U15 Serie X1 U15 Serie X1,U15 Serie X2 U15 Serie X2,U15 2. serie Pulje 1,U15 Serie X1 Pulje 1,U15 Serie X3 Pulje 1,U15 2.serie (4+2 M) Pulje 1,U15 serie X1 (4 spillere C) Pulje 1,U15 M Række 4+2 Pulje 1,U15 A (4+2) Pulje 1,U15 B (4) Pulje 1,DMU-Hold U15 A 4+2 Pulje 1,DMU-Hold U15 M 4 Spillere Pulje 1,DMU-Hold U15 M 4 Spillere 7. - 8. plads,U15 M 4 spillere Pulje 1,U15 D 4 Spillere P2 Pulje 2,U15 - 6200 - 4 spillere Pulje 1,U15 6400 4 Spillere Pulje 1,U15 4200 4 Spillere P2 Pulje 2,U15 3800 4 Piger Pulje 1,U15 - 3500 (4 piger) Pulje 1,U15 4300 4 Piger Pulje 1,U15 7600 4 Spillere Pulje 1,U15 4300 4 Spillere Pulje 1,U15 4800 4 Spillere Pulje 1,U15 3400 4 Piger Pulje 1,U15 4000 4 Spillere Pulje 2,U15 4800 4 Spillere Pulje 2,U15 5600 4 Spillere Pulje 1,DMU H - U15 6400 4 spillere Pulje 1,DMU H - U15 5600 4 spillere Pulje 2,DMU H - U15 6400 4 spillere Finale slutspil (1. - 4. plads),U15 - 6600 (2+2) Pulje 1,U15 - 4200 4 spillere Pulje 1,U15 - 3800 4 spillere Pulje 1,U15 - 3800 4 spillere Pulje 2,U15 - 4000 4 piger Pulje 1,UGE 38 - U15 D, 4000 (2+2) Pulje 1,U15 B, 5400 (2+2) Pulje 1,UGE 38 - U15 C, 4600 (2+2) Pulje 1,U15 C 4800 (4 spillere). Pulje 1,U15 D 4000 (4 spillere). Pulje 1,U15 C, 5400 (2+2) Pulje 1,Uge 38 - U15 A, 6800 (2+2) Pulje 1,Uge 38 - U15 C, 5400 (2+2) Pulje 1,U15 A, 6800 (2+2) Pulje 1,U15 D, 4600 (4 piger) Pulje 1,U15 B 6400 (4 spillere) BD Pulje 1,U15 C-D 5200 (4 spillere) BD Pulje 1,U15 D 5000 (4 spillere) BD Pulje 1,U15 D 5000 (4 spillere) BD Pulje 2,DMU Hold U15C-D (5200) - 4 Spillere Pulje 1,DMU Hold U15B (6400) - 4 Spillere Pulje 4,DMU Hold U15B (6400) - 4 Spillere Finaleslutspil (1. - 4. plads),DMU Hold U15C-D (5200) - 4 Spillere Finaleslutspil (1. - 4. plads),DMU Hold U15C 2+2 (5400) Pulje 2,DMU Hold U15C 2+2 (5400) Finaleslutspil (1. - 4. plads)",
+      "team_examples": "Gladsaxe Søborg,Gladsaxe Søborg 2,Gladsaxe Søborg 3,Gladsaxe Søborg 1,Gladsaxe Søborg 5,Gladsaxe Søborg 4,Gladsaxe Søborg 7,Gladsaxe Søborg 6,Gladsaxe Søborg 8"
+    },
+    {
+      "age_group_id": 6,
+      "competitions": 8,
+      "league_examples": "U17 2. Serie U17 2. Serie,U17 2. serie Pulje 1,U17 Serie X1 Pulje 1,U17 2.serie (4+2 M) Pulje 1,U17 serie X1 (4 spillere C) Pulje 1,U17 A Række 4+2 Pulje 1,U17/U19 B (4) P2 Pulje 1",
+      "team_examples": "Gladsaxe Søborg,Gladsaxe Søborg 2"
+    },
+    {
+      "age_group_id": 9,
+      "competitions": 58,
+      "league_examples": "2. Serie Veteran 2. Serie Veteran,3. Serie Veteran 3. Serie Veteran,5. Serie Veteran 5. Serie Veteran,8. Serie Veteran 8. Serie Veteran,40+ 1. Serie 40+1.Serie,40+ 2.Serie 40+ 2. Serie,40+ 5. Serie 40+ 5.serie,40+ 7. Serie 40+ 7. Serie,40+ 1. Serie 1. Serie,40+ 2. Serie 2. Serie,40+ 5. Serie 5. Serie,40+ 6. Serie 6. Serie,40+ elite Pulje 1,40+ 3.serie Pulje 1,40+ 5.serie Pulje 1,40+ 7.serie Pulje 1,40+ 1.serie Pulje 1,40+ 2. serie Pulje 1,40+ 4.serie Pulje 1,40+ 6.serie Pulje 1,40+ 2.serie Pulje 1,40+ 1. Serie Pulje 1,40+ 3. Serie Pulje 1,40+ 4. Serie Pulje 1,40+ 7. Serie Pulje 1,40+ 2. Serie Pulje 1,40+ 6. Serie Pulje 1,40+ 20. Serie Pulje 1,SEN+40 1. Serie  Pulje 1,SEN+40 4. Serie Pulje 1,SEN+40 20. Serie Pulje 1,SEN+40 2. Serie Pulje 1,SEN+40 3. Serie Pulje 1,SEN+40 1. Serie Pulje 1,Eliteserien Pulje 1,2. Serie Pulje 1,20. serie Pulje 1,Eliteserien Elite Nedrykningsslutspil,40+ Eliteserien Pulje 1,1. Serie Pulje 1,3. Serie Pulje 1,4. Serie Pulje 1",
+      "team_examples": "Gladsaxe Søborg,Gladsaxe Søborg 2,Gladsaxe Søborg 3,Gladsaxe Søborg 4,Gladsaxe Søborg 1"
+    },
+    {
+      "age_group_id": 11,
+      "competitions": 53,
+      "league_examples": "50+ 1. Serie 50+ 1. Serie,50+ 2. Serie 50+ 2. Serie,50+ 5. Serie 50+ 5. Serie,50+ 4. Serie 50+ 4. Serie,50+ 2. Serie 50+ 2.Serie,50+ 1. Serie 1. Serie,50+ 2. Serie 2. Serie,50+ 3. Serie 3. serie,50+ 1.serie Pulje 1,50+ 2.serie Pulje 1,50+ 3.serie Pulje 1,50+ 2. Serie Pulje 1,50+ 3. Serie Pulje 1,50+ 4. Serie Pulje 1,50+ 1. Serie Pulje 1,50+ 5. Serie Pulje 1,SEN+50 1. Serie Pulje 1,SEN+50 2. Serie Pulje 1,SEN+50 3. Serie Pulje 1,SEN+50 4. Serie Pulje 1,SEN+50 2.serie\t Pulje 1,SEN+50 3.serie Pulje 1,SEN+50 4.serie Pulje 1,SEN+50 5.serie Pulje 1,2. Serie Pulje 1,3. Serie Pulje 1,4. Serie Pulje 1,5. Serie Pulje 1,50+ Eliteserien Pulje 1,Eliteserien Pulje 1,1. Serie Pulje 1",
+      "team_examples": "Gladsaxe Søborg,Gladsaxe Søborg 2,Gladsaxe Søborg 3,Gladsaxe Søborg 4,Gladsaxe Søborg 1"
+    },
+    {
+      "age_group_id": 12,
+      "competitions": 1,
+      "league_examples": "DM for hold 55+ 55+",
+      "team_examples": "Gladsaxe Søborg"
+    },
+    {
+      "age_group_id": 13,
+      "competitions": 23,
+      "league_examples": "60+ 2. Serie 60+ 2. Serie,60+ 1. Serie 60+ 1. Serie,60+ 1. Serie 1. Serie,60+ 1.serie Pulje 1,60+ 1.Serie Pulje 1,60+ 2. Serie Pulje 1,60+ 1. Serie Pulje 1,SEN+60 1. Serie Pulje 1,SEN+60 2. Serie Pulje 1,SEN+60 2.serie Pulje 1,SEN+60 1.serie Pulje 1,1. Serie Pulje 1,2. Serie Pulje 1,60+ Eliteserien Pulje 1,Eliteserien Pulje 1",
+      "team_examples": "Gladsaxe Søborg,Gladsaxe Søborg 2,Gladsaxe Søborg 1"
+    },
+    {
+      "age_group_id": 17,
+      "competitions": 7,
+      "league_examples": "70+ 1. Serie Pulje 1,SEN+70 1. Serie P1 Pulje 1,SEN+70 1.serie Pulje 1,1. Serie Pulje 1,70+ Eliteserien Pulje 1",
+      "team_examples": "Gladsaxe Søborg 1"
+    },
+    {
+      "age_group_id": 18,
+      "competitions": 17,
+      "league_examples": "DMU-Hold U17/19 B 4 Spillere Pulje 4,DMU-Hold U17/19 B 4 Spillere Finale 1. - 4. plads,U17/19 B (4) Pulje 1,U17/U19 M/A 4+2 Pulje 1,U17/19 M 4 Spillere Pulje 1,U17/U19 A 4 spillere Pulje 1,U17/U19 5200 4 Spillere pulje 1 - Ny Pulje 1,DMU H - U17/U19 5200 4 spillere Pulje 1,DMU H - U17/U19 5200 4 spillere Finale slutspil (1. - 4. plads),U17/U19 - 6600 4 spillere Pulje 1,U17/U19 - 4800 4 spillere Pulje 1,DMU H - U17/U19 6600 (4 spillere) Pulje 4,DMU H - U17/U19 6600 (4 spillere) Slutspil 5.-8. plads,U17/U19 D, 4600 (4 spillere) Pulje 1,Uge 38 - U17/U19 D, 5000 (2+2) Pulje 1,U17/U19 D, 5200 (4 spillere) Pulje 3,C-D 5600 (4 spillere) BD Pulje 1",
+      "team_examples": "Gladsaxe Søborg 1,Gladsaxe Søborg 2,Gladsaxe Søborg 3"
+    }
+  ],
+  "overlaps": [
+    {
+      "external_match_id": "2286",
+      "season_id": 2011,
+      "round_date": "2011-09-25",
+      "age_group_id": 4,
+      "league_group_id": "101",
+      "league_raw": "U13 2. Serie U13 2. erie",
+      "name_raw": "Gladsaxe Søborg",
+      "home_name_raw": "Gladsaxe Søborg",
+      "away_name_raw": "Hvidovre"
+    },
+    {
+      "external_match_id": "2365",
+      "season_id": 2011,
+      "round_date": "2011-09-25",
+      "age_group_id": 4,
+      "league_group_id": "103",
+      "league_raw": "U13 Serie X1 U13 Serie X1",
+      "name_raw": "Gladsaxe Søborg 3",
+      "home_name_raw": "Gladsaxe Søborg 3",
+      "away_name_raw": "Hvidovre HB2000"
+    },
+    {
+      "external_match_id": "2396",
+      "season_id": 2011,
+      "round_date": "2011-09-25",
+      "age_group_id": 4,
+      "league_group_id": "104",
+      "league_raw": "U13 Serie X2 U13 Serie X2",
+      "name_raw": "Gladsaxe Søborg 4",
+      "home_name_raw": "Drive 3",
+      "away_name_raw": "Gladsaxe Søborg 4"
+    },
+    {
+      "external_match_id": "2509",
+      "season_id": 2011,
+      "round_date": "2011-09-25",
+      "age_group_id": 5,
+      "league_group_id": "107",
+      "league_raw": "U15 Serie X1 U15 Serie X1",
+      "name_raw": "Gladsaxe Søborg 2",
+      "home_name_raw": "KFUM Badminton Kbh.",
+      "away_name_raw": "Gladsaxe Søborg 2"
+    },
+    {
+      "external_match_id": "96231",
+      "season_id": 2013,
+      "round_date": "2013-11-17",
+      "age_group_id": 5,
+      "league_group_id": "2690",
+      "league_raw": "U15 Serie X3 Pulje 1",
+      "name_raw": "Gladsaxe Søborg 3",
+      "home_name_raw": "Gladsaxe Søborg 3",
+      "away_name_raw": "Frederiksberg 3"
+    }
+  ]
+}

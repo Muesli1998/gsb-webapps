@@ -85,4 +85,17 @@ ungdomsholdkampe inkl. U17/U19, og en tydelig markering af at
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+## Fase A — resultat
+
+`age_group_id` 6 og 18 indeholder U17/U19. De fem overlap-ID'er har derimod
+følgende værdier: 2286, 2365 og 2396 er U13 (`age_group_id` 4); 2509 og
+96231 er U15 (`age_group_id` 5). Det er **0/5** U17/U19 og **5/5** allerede
+inden for U09-U15-filteret. Fase B blev derfor ikke udført.
+
+## Spørgsmål
+
+Hvorfor optræder de fem ID'er i opgave 013's senior-klassifikation, når
+databaseopslag viser U13/U15? Det kan ikke afgøres ud fra Fase A alene, og
+der er ikke foretaget nogen scope-udvidelse.
+
+**Commits:** afventer commit på denne gren.
