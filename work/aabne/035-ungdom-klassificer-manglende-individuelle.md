@@ -88,13 +88,5 @@ De 46 uden kategori/afbud er dokumenteret som kandidater til Del B; ingen
 frisk masseindhentning blev udført. Den fulde ID-liste og rå evidens ligger
 i `statistik/results/035-ungdom-klassificer-manglende.json`.
 
-**Commits:** afventer commit på denne gren.
+**Commits:** 4180ace, ae451bd
 
-## Spørgsmål
-
-Kontrolstop 2026-09-15: arbejdsgrenen `opgave-035-ungdom-klassificer-manglende`
-blev ikke oprettet før ændringerne. Klassifikationsændringerne blev derfor
-committet lokalt på `main` som `4180ace`; push af den forventede gren fejlede,
-fordi grenen ikke findes. Ingen push af `4180ace` er udført, og opgave 036/034
-er ikke startet. Der skal træffes beslutning om at flytte/beholde den lokale
-commit på korrekt gren, før arbejdet fortsætter.
