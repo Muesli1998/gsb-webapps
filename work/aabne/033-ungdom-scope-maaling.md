@@ -105,5 +105,29 @@ før.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/` med tal, jf.
-AGENTS.md's krav om resultatnoter som kommandoer/tal, ikke påstande.)*
+Kørt på grenen `opgave-033-ungdom-scope` med `scripts/033-ungdom-scope.mjs`
+2026-09-15. `age_group_id` 2–5 er de ungdomsårgange der kan identificeres i
+de gemte competition-navne (U09/U11/U13/U15).
+
+| Måling | Antal |
+|---|---:|
+| Ungdomsholdkampe | 1.207 |
+| Med individuelle rækker | 1.002 |
+| Uden individuelle rækker | 205 |
+| Individuel dækning | 83,02 % |
+| Uden indiv.: `browser_verified` | 162 |
+| Uden indiv.: `browser_verified_no_result` | 39 |
+| Uden indiv.: `api_error` | 4 |
+| Spillerrelationer | 17.114 |
+| Relationer med external ID | 8.255 |
+| Relationer uden external ID | 8.859 |
+
+Pr. årgang/sæson og den fulde rå tabel står i
+`statistik/results/033-ungdom-scope-maaling.md` og `.json`. Der findes ingen
+uafhængig, gemt Nembadminton-discovery-total, så et manglende-kampestimat
+kan ikke beregnes uden et nyt eksternt discovery-kald. Ungdoms-standings er
+kun gemt for 2 konkurrencer i 2025 (28 rækker); fuld stillingskontrol er
+derfor ikke mulig med det aktuelle materiale. Ingen databasefiler blev
+ændret, og senior-tallene er uændrede.
+
+**Commits:** afventer commit på denne gren.
