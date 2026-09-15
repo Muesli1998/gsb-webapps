@@ -9,6 +9,13 @@ rejst af opgave 019 (lukket uden løsning, se
 er ikke afgrænset til de samme 24 rækker — spørgsmålet er om problemet
 er bredere.
 
+**Prioritet opdateret 2026-09-15** (samtidig med at opgave 021 blev
+lukket, se `docs/BESLUTNINGER.md`): denne undersøgelse rammer selve
+matching-kernelogikken og bliver mere kritisk, ikke mindre, hvis
+`statistik/` en dag udvides til flere klubber — flere klubber giver
+flere puljer hvor mønsteret kan opstå. Prioritér den derfor før andre
+statistik-opfølgninger, hvis flere sættes i kø samtidig.
+
 ---
 
 ## Mål

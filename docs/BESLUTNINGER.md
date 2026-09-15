@@ -235,3 +235,44 @@ ved siden af eller i stedet for `statistik/`. Også fravalgt: at lade
 `statistik/`s kommende Preview-side opfinde sit eget, uafhængige design
 fra bunden, når B3 allerede har et aftalt, klub-testet forslag til
 placering og filtrering.
+
+---
+
+## 2026-09-15 — 257 manglende kategorisektioner lukkes; fremtidig klubudvidelse ændrer prioritet
+
+**Besluttet:** opgave 021 (manuel genindhentning af de 257 payloads uden
+kategorisektion) lukkes uden yderligere forsøg. De 7 rækker der faktisk
+kunne forsøges (den eneste konkrete kandidatliste vi har — se
+"Spørgsmål" i `work/loeste/021-genindhent-257-manglende-
+kategorisektioner.md`) gav alle en bekræftet tom kilde-side, 0 nye
+kategorisektioner. De 257 forbliver dokumenteret som et kildehul, ikke
+en importfejl.
+
+Samtidig prioriteres opgave 030 (undersøgelse af om GSB's holdnummer er
+en stabil identitet på tværs af `standings`- og `team_matches`-kilderne,
+se `statistik/RESEARCH_BACKLOG.md`) højere end tidligere antaget.
+
+**Hvorfor:** spørgsmålet blev rejst eksplicit: hvis `statistik/` en dag
+udvides til alle klubber og hold, hvad betyder det for prioriteringen?
+To ting følger af det:
+
+1. Manuel CUA-genhentning (én kamp ad gangen, med indbygget
+   "vær sparsom"-regel) er ikke en metode der kan skaleres til
+   titusindvis af kampe på tværs af alle klubber. At bruge mere tid på
+   at perfektionere den for GSB's 257 rækker giver ikke en genbrugelig
+   løsning. Er "mangler kategorisektion" en generel BD-kildebegrænsning
+   (7/7 negative resultater peger i den retning), er den værd at
+   dokumentere ÉN gang og designe importpipelinen til at forvente,
+   fremfor at genopdage og genhente den klub for klub.
+2. Holdnummer-ustabiliteten (opgave 019/030) er derimod en fejl i selve
+   matching-kernelogikken. Den bliver ikke mindre ved flere klubber —
+   den bliver potentielt hyppigere, fordi flere klubber giver flere
+   puljer hvor mønsteret kan opstå. Den bør derfor afklares FØR en
+   eventuel udvidelse, ikke efter.
+
+**Fravalgt:** at bygge den fulde 257/109-kandidatliste (kamp-ID, sæson,
+pulje, leagueMatchId for alle rækker) for at kunne køre en større
+stikprøve nu. Vurderet som uforholdsmæssigt arbejde for en metode der
+alligevel skal designes om, hvis/når projektet skalerer til flere
+klubber. Noteret som fremtidigt undersøgelsespunkt i
+`statistik/RESEARCH_BACKLOG.md` i stedet for en aktiv opgave.
