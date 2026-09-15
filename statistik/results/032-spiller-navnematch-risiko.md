@@ -43,3 +43,25 @@ som usikkerhed.
 kvantificeret for alle 2.556. En fuld ID-kobling er fortsat nødvendig før
 per-spiller Results-tal kan kaldes identitetsmæssigt sikre.
 
+## Runde 2 — adfærdsmæssig evidens
+
+Runde 1's tautologiske `name_normalized`-tjek er ikke brugt som bevis.
+I samme 25-personers højvolumen-stikprøve fandt SQL:
+
+- **7** spillere med kampe registreret for to GSB-hold på samme dato, fordelt
+  på **22** kampforekomster: Lasse Bjerregaard Kirt (282799/282912), Konrad
+  Kunckel (467888/471218), Norr Bagge Køhler (505213/505246/505248/505215/
+  505234/505236), Pelle Emil Jessing Schjøtt (421933/414577), Kasper Gorm
+  (282797/290427), Lasse Friberg Andersen (493940/493941/494106/494107) og
+  Sebastian Larsen Lund (samme-dato fund).
+- **25/25** spillere optræder i mere end ét `age_group_id`; de konkrete ID'er
+  er bevaret i script-outputtet. Det er ikke i sig selv en kollision, fordi
+  aldersskift over flere sæsoner kan være legitimt.
+- Der blev ikke fundet en pålidelig navnesplittelse fra de gemte felter alene.
+
+Samtidige kampe på to GSB-hold er konkret adfærdsmæssig evidens, men kan også
+skyldes fejlagtig spillerkobling eller dobbeltregistrering. Uden eksterne
+spillerprofiler klassificeres de derfor som **mistænkte kollisioner, kræver
+ekstern kilde**, ikke som bekræftede fysiske personer.
+
+
