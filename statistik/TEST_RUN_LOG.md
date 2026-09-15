@@ -427,3 +427,10 @@ Read-only analyse: 24 no-linked-rækker, 13 numeriske nummerpar og 12
 kontrolrækker. No-linked-forskydninger: +1=9, +2=1, -1=1, -2=1, -3=1;
 rå nummer matchede 0/13. Kontroludsnittet matchede 7/7. `league_raw` havde
 ingen holdnummerfelt. Database og validerede scripts var urørte.
+# 2026-09-15 — komplet individuel dækningsoptælling
+
+Read-only SQL: 2.818 team_matches; 2.367 med individuelle rækker og 451
+uden. Aritmetisk opdeling med dokumenterede audit-tal: 2.367 + 257 + 58 +
+6 + 130 = 2.818. De 130 er en ærligt navngivet rest, fordi 013 ikke gemmer
+komplette ID-lister til overlapkontrol. Database urørt. Rapport:
+`statistik/results/031-komplet-individuel-daekning.md`.
