@@ -122,6 +122,17 @@ uden at spørge.
 
 ## Spørgsmål
 
+### Afklaring af 013-tallet (2026-09-15)
+
+013's JSON indeholder kun 20 konkrete `rows`; de 109 er et metadata-tal
+(`noExplicitNoPlay: 109`), ikke en gemt komplet kandidatliste. De cirka 102
+resterende kan derfor ikke erklæres ikke-eksisterende eller allerede løste.
+Deres kamp-ID og URL-felter findes ikke i det bevarede 013-materiale, så de
+kunne ikke forsøges i denne omgang. De syv forsøgte ID'er er 2286, 96231,
+142978, 2365, 2396, 2509 og 2664; de udgør alle 7 ikke-afbuds-rækker i den
+faktiske 20-rækkers sample. En komplet 109-rækkers liste skal fremskaffes,
+før stikprøven kan udvides til 15-20.
+
 Den validerede CUA-hentning af kamp 2286 gav kun standardskallen (ingen
 synligt kampnr, dato, hold eller resultat). Er browsermetoden tilgængelig på
 ny, før resten af de 109 forsøges?
