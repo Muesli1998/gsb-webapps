@@ -82,4 +82,18 @@ væk.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+Kørt 2026-09-15 på `opgave-036-ungdom-navnematch-fuld-audit`.
+
+| Måling | Antal |
+|---|---:|
+| Navnematch-relationer | 8.859 |
+| Distinkte spillere | 2.256 |
+| Dubletter på `name_normalized` | 0 |
+| Samme dato + samme `league_raw`/`name_raw` på flere GSB-hold | 0 grupper |
+| Spillere med signalet | 0 |
+
+Sæsonraten er 0 % for alle sæsoner med relationer (2012–2025). Sæson 2011
+har ingen ungdoms-navnematch-relationer. Fuld tabel og rå evidens ligger i
+`statistik/results/036-ungdom-navnematch-fuld-audit.md` og `.json`.
+
+**Commits:** afventer commit på denne gren.

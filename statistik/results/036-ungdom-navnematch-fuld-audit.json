@@ -1,0 +1,109 @@
+{
+  "generatedAt": "2026-09-15T12:21:35.798Z",
+  "relationCount": 8859,
+  "playerCount": 2256,
+  "duplicateNormalizedNames": [],
+  "sameDateSameTypeGroupCount": 0,
+  "suspiciousPlayerCount": 0,
+  "seasonTable": [
+    {
+      "season": 2012,
+      "relations": 306,
+      "players": 124,
+      "sameDateSameTypePlayers": 0,
+      "ratePercent": 0
+    },
+    {
+      "season": 2013,
+      "relations": 258,
+      "players": 100,
+      "sameDateSameTypePlayers": 0,
+      "ratePercent": 0
+    },
+    {
+      "season": 2014,
+      "relations": 326,
+      "players": 114,
+      "sameDateSameTypePlayers": 0,
+      "ratePercent": 0
+    },
+    {
+      "season": 2015,
+      "relations": 180,
+      "players": 63,
+      "sameDateSameTypePlayers": 0,
+      "ratePercent": 0
+    },
+    {
+      "season": 2016,
+      "relations": 279,
+      "players": 101,
+      "sameDateSameTypePlayers": 0,
+      "ratePercent": 0
+    },
+    {
+      "season": 2017,
+      "relations": 303,
+      "players": 125,
+      "sameDateSameTypePlayers": 0,
+      "ratePercent": 0
+    },
+    {
+      "season": 2018,
+      "relations": 233,
+      "players": 63,
+      "sameDateSameTypePlayers": 0,
+      "ratePercent": 0
+    },
+    {
+      "season": 2019,
+      "relations": 192,
+      "players": 77,
+      "sameDateSameTypePlayers": 0,
+      "ratePercent": 0
+    },
+    {
+      "season": 2020,
+      "relations": 198,
+      "players": 84,
+      "sameDateSameTypePlayers": 0,
+      "ratePercent": 0
+    },
+    {
+      "season": 2021,
+      "relations": 792,
+      "players": 285,
+      "sameDateSameTypePlayers": 0,
+      "ratePercent": 0
+    },
+    {
+      "season": 2022,
+      "relations": 1121,
+      "players": 355,
+      "sameDateSameTypePlayers": 0,
+      "ratePercent": 0
+    },
+    {
+      "season": 2023,
+      "relations": 871,
+      "players": 287,
+      "sameDateSameTypePlayers": 0,
+      "ratePercent": 0
+    },
+    {
+      "season": 2024,
+      "relations": 1425,
+      "players": 472,
+      "sameDateSameTypePlayers": 0,
+      "ratePercent": 0
+    },
+    {
+      "season": 2025,
+      "relations": 2375,
+      "players": 648,
+      "sameDateSameTypePlayers": 0,
+      "ratePercent": 0
+    }
+  ],
+  "sameDateSameType": []
+}

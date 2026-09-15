@@ -465,3 +465,10 @@ Spillerrelationer: 17.114 i alt, 8.255 med external ID og 8.859 uden.
 Der findes ingen uafhængig, gemt Nembadminton-discovery-total, så manglende
 ungdomskampe kan ikke estimeres uden nyt eksternt kald. Databasen var
 read-only; senior-dokumentation urørt.
+# 2026-09-15 — Opgave 036 fuld ungdoms-navnematch-audit
+
+Read-only audit af 8.859 ungdomsrelationer uden external_player_id fordelt
+på 2.256 spillere. 0 dubletter på name_normalized, 0 samme-dato-grupper
+med samme league_raw/name_raw på flere GSB-hold og 0 mistænkte spillere.
+Sæsonstratificeret rate er 0 % i alle sæsoner 2012–2025; 2011 har ingen
+navnematch-relationer i materialet. Senior-data og databasen var urørte.
