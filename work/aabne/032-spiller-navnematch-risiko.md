@@ -9,6 +9,41 @@ rapport bygges.
 
 ---
 
+## GENÅBNET 2026-09-15, runde 3 — samme-dato-tjekket manglede konkurrencetype
+
+Runde 2's script (`scripts/audit-player-name-behavior.mjs`) fandt 7
+spillere med kampe på to GSB-hold samme dato og klassificerede dem som
+"mistænkte kollisioner". Chris tjekkede manuelt den ene (Konrad
+Kunckel, kamp 467888/471218, se "Spørgsmål" nedenfor) og fandt at det
+IKKE var en kollision: de to kampe lå i to forskellige rækker/kamptyper
+(U15 B 5400 vs. U15 C 4800), og det er normal praksis at spille flere
+ungdoms-holdkampe samme dag på tværs af kamptyper.
+
+**Hvorfor det skete:** `competitions`-tabellen har allerede feltet
+`league_raw`/`name_raw` (og `age_group_id`), men runde 2's SQL hentede
+kun `age_group_id`, ikke `league_raw`/`name_raw`, i sin
+samme-dato-gruppering. Havde den taget rækketypen med, ville Konrad
+Kunckels "kollision" have vist sig som to forskellige rækker med det
+samme.
+
+**Afgrænsning af rettelsen:** de øvrige tjek i projektet der
+sammenligner på tværs af kilder (`check-standing-match-counts.mjs`,
+`audit-no-linked-standings.mjs`) joiner allerede på `competition_id`
+og har derfor ikke samme svaghed — det er isoleret til dette ene
+script. Se `statistik/RESEARCH_BACKLOG.md` for den fulde gennemgang.
+
+**Opgave for runde 3:** tilføj `c.league_raw` og `c.name_raw` til
+samme-dato-tjekket og genkør det for de resterende 6 spillere (Lasse
+Bjerregaard Kirt, Norr Bagge Køhler, Pelle Emil Jessing Schjøtt, Kasper
+Gorm, Lasse Friberg Andersen, Sebastian Larsen Lund) — vis for hvert
+samme-dato-fund om de to kampe ligger i samme eller forskellig
+række/kamptype. Konklusionen "mistænkt kollision" må kun stå, hvis
+kampene rent faktisk er i samme række/kamptype (så to-hold-samme-dato
+ikke kan forklares af rækkeforskellen alene, sådan som Konrad Kunckels
+tilfælde kunne).
+
+---
+
 ## GENÅBNET 2026-09-15 — runde 1's hovedbevis var ugyldigt
 
 Runde 1 (arkiveret nedenfor under "Resultat — runde 1") konkluderede
@@ -151,7 +186,22 @@ vurderingen stå som "usikker, kræver ekstern kilde" og skriv det under
 ## Gren
 
 Runde 1: `arbejde/032-spiller-navnematch-risiko` (allerede merget).
-Runde 2: `arbejde/032-spiller-navnematch-risiko-runde2`.
+Runde 2: `arbejde/032-spiller-navnematch-risiko-runde2` (allerede merget).
+Runde 3: `arbejde/032-spiller-navnematch-risiko-runde3`.
+
+## Kontrol — runde 3 (tilføjelse)
+
+Samme værn som runde 2 (`git status --short statistik/data/` tom;
+diff kun i `statistik/` og evt. `docs/statistik-plan.md`), plus:
+
+- Scriptet skal for hvert af de 6 resterende samme-dato-fund vise
+  `league_raw`/`name_raw` (eller tilsvarende rækkenavn) for begge
+  kampe i parret.
+- Rapporten skal eksplicit angive, for hvert fund, om det er samme
+  række/kamptype (potentiel reel kollision) eller forskellig
+  række/kamptype (forklaret af multi-kamp-praksis, som Konrad
+  Kunckel).
+- `grep -c "032" statistik/TEST_RUN_LOG.md` skal være mindst 3.
 
 ---
 
@@ -230,3 +280,5 @@ ekstern kilde. Fuld ID-kobling er fortsat nødvendig.
 **Commits:**
 
 71a997b
+
+## Resultat — runde 3 (udfyldes ved genkørsel)
