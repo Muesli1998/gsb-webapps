@@ -90,13 +90,17 @@ ID. Spillere kobles via BadmintonPlayer-links
 sikker identitet. Den resterende kobling er en separat byggeopgave, ikke
 en del af denne audit; se `statistik/results/016-spiller-id-audit.md`.
 
-Opgave 032 undersøgte om de 2.556 navnematch-koblede spillere reelt
-udgør en identitetsrisiko. **7 mistænkte navnekollisioner** blev fundet
-(kampe på to GSB-hold samme dato) blandt de 25 mest aktive — se
-"Status på Test & Validation som helhed" nedenfor og
-`statistik/results/032-spiller-navnematch-risiko.md`. Risikoen er
-bekræftet reel, ikke længere hypotetisk, men uafklaret uden fuld
-ID-kobling eller en manuel gennemgang af de 7 navne.
+Opgave 032 (tre runder) undersøgte om de 2.556 navnematch-koblede
+spillere reelt udgør en identitetsrisiko, blandt de 25 mest aktive.
+**7 mistænkte navnekollisioner** blev fundet i runde 2 (kampe på to
+GSB-hold samme dato) — men alle 7 er siden afkræftet: Konrad Kunckel
+ved Chris' manuelle tjek, de øvrige 6 ved at tilføje rækketype
+(`league_raw`/`name_raw`) til tjekket i runde 3, som viste at samtlige
+samme-dato-fund lå i forskellige rækker (typisk flere ungdoms-kamptyper
+samme dag — normal praksis, ikke en fejl). Se
+`statistik/results/032-spiller-navnematch-risiko.md`. Ingen bekræftet
+kollision i den undersøgte stikprøve — men stikprøven dækker kun de 25
+mest aktive af 2.556, så risikoen for resten er ikke kvantificeret.
 
 **Kampantal er holdt op mod stillingerne — OPDATERET 2026-09-15, alle
 98 rækker har nu en dokumenteret status:**
@@ -149,27 +153,40 @@ Videreudvikling.
 fem kriterier ovenfor opfylder nu deres egen ordlyd (individuel dækning,
 458-klassifikation, spilleridentitet, stillingskontrol, blivende
 undtagelser). Stillingskontrol-punktet er eksplicit lukket ved Chris'
-beslutning (se ovenfor). Spilleridentitet-punktet er derimod IKKE
-færdigbehandlet: 85,2 % dækning hviler på et gemt ID, men de
-resterende 14,8 % (9.926 relationer, 2.556 spillere) hviler på
-navnematch alene. Opgave 032 (to runder — runde 1's dublet-tjek var
-tautologisk og blev forkastet, se `statistik/RESEARCH_BACKLOG.md`)
-fandt i runde 2 syv af de 25 mest aktive navnematch-spillere med kampe
-registreret for to GSB-hold samme dato (22 kampforekomster) — Lasse
-Bjerregaard Kirt, Konrad Kunckel, Norr Bagge Køhler, Pelle Emil Jessing
-Schjøtt, Kasper Gorm, Lasse Friberg Andersen og Sebastian Larsen Lund.
+beslutning (se ovenfor).
 
-**Ét af de syv er siden afkræftet ved manuelt tjek (Chris, 2026-09-15):**
-Konrad Kunckels kamppar (467888/471218) er begge U15, samme dato og
-runde, men to forskellige rækker/kamptyper — normal praksis at samle
-flere ungdoms-holdkampe på én dag, ikke en kollision. De øvrige 6 er
-endnu ikke tjekket for samme mønster. "Samme dato, to hold" ser dermed
-svagere ud som kollisionssignal for U15 og yngre specifikt, hvilket i
-øvrigt ligger uden for dette trins scope (se "Ikke en del af dette
-trin" nedenfor) — det er ikke afklaret om det samme gælder for de
-resterende fund i seniorrækkerne. Se
-`statistik/results/032-spiller-navnematch-risiko.md`. Trinnet som
-helhed kan derfor ikke lukkes på dette kriterium endnu.
+**Spilleridentitet-punktet er nu også afklaret, i tre runder (opgave
+032).** Runde 1's dublet-tjek var tautologisk og blev forkastet (se
+`statistik/RESEARCH_BACKLOG.md`). Runde 2 fandt 7 af de 25 mest aktive
+navnematch-spillere med kampe registreret for to GSB-hold samme dato
+(22 kampforekomster) — Lasse Bjerregaard Kirt, Konrad Kunckel, Norr
+Bagge Køhler, Pelle Emil Jessing Schjøtt, Kasper Gorm, Lasse Friberg
+Andersen og Sebastian Larsen Lund — og klassificerede dem som
+mistænkte kollisioner. Runde 3 afkræftede alle 7: Konrad Kunckel ved
+Chris' manuelle tjek (to forskellige U15-rækker samme dag, normal
+praksis), og de øvrige 6 ved at tilføje rækketype
+(`league_raw`/`name_raw`) til samme-dato-tjekket — samtlige 6 viste sig
+også at ligge i forskellige rækker/kamptyper, typisk flere
+ungdomskampe samlet på én dag. **0/25 undersøgte navnematch-spillere
+har bekræftet kollisionsevidens.**
+
+Bemærk: alle 7 oprindeligt mistænkte tilfælde lå i ungdomsrækker
+(U09/U13/U15), som allerede er uden for dette trins scope (se "Ikke en
+del af dette trin" nedenfor) — mønsteret "samme dato, to hold" ser ud
+til at være en ungdomsspecifik praksis, ikke en generel datafejl.
+Stikprøven dækker kun de 25 mest aktive af 2.556 navnematch-spillere,
+så risikoen for resten er stadig ikke kvantificeret — men den ene
+konkrete metode der hidtil har fundet mistænkelige tilfælde, har nu
+0 bekræftede fund tilbage efter at rækketype blev taget med. Se
+`statistik/results/032-spiller-navnematch-risiko.md`.
+
+**Vurdering (ikke en afgørelse — Chris beslutter om trinnet lukkes):**
+med dette er alle fem kriterier opfyldt efter deres egen ordlyd, og den
+konkrete, undersøgte kollisionsrisiko er afkræftet. Fuld ID-kobling for
+resten af de 2.556 er stadig en god idé som separat byggeopgave før
+Results bygges for alvor, men det er ikke længere en blokering for at
+lukke Test & Validation — det er forebyggende arbejde for Results, ikke
+et uafklaret spørgsmål i dette trin.
 
 Den tidligere uoverensstemmelse med "Rækkefølge"s punkt 2 ("Byg den
 individuelle extractor") er afklaret ved at læse
@@ -182,13 +199,13 @@ samlet værktøj kaldet "extractoren". Punkt 2 var derfor blevet
 overflødiggjort af klassifikationsarbejdet, ikke glemt eller mangelfuldt
 udført. Rettet i "Rækkefølge" nedenfor.
 
-**"Rækkefølge"s punkter 1, 2, 3 og 5 er opfyldt. Punkt 4
-(spiller-ID-kobling) er delvist opfyldt og afventer opgave 032's
-stikprøve af navnematch-risikoen, før Test & Validation som helhed kan
-lukkes**, jf. AGENTS.md's regel om at trin ikke overhaler hinanden
-stiltiende. Viser opgave 032 at risikoen er lav, er trinnet reelt klar
-til at lukkes; viser den konkrete kollisioner eller splittelser, bør
-fuld ID-kobling (foreslået i opgave 016) gøres først.
+**"Rækkefølge"s punkter 1, 2, 3, 5 og 5b er opfyldt. Punkt 4
+(spiller-ID-kobling) er delvist opfyldt, men blokerer ikke længere
+lukningen af Test & Validation** — opgave 032 har afklaret at den
+undersøgte navnematch-risiko er afkræftet, jf. "Status på Test &
+Validation som helhed" ovenfor. Den resterende fulde ID-kobling
+(85,2 % → 100 %) er en anbefalet byggeopgave for Results-fasen, ikke
+en åben betingelse for dette trin.
 
 ---
 
@@ -257,8 +274,10 @@ princippet om at rå data gemmes før fortolkning.
    20.319 individuelle kategorier er gemt for 2.367 af de 2.818
    holdkampe; de resterende 315 er klassificeret, ikke uudforskede.
 3. **[Afsluttet — 006] Klassificér de 458 afvigelser.**
-4. **[Delvist afsluttet — 016] Kobl spiller-ID'er.** 85,2 % af relationerne
-   har ID; den resterende kobling er stadig en separat byggeopgave.
+4. **[Delvist afsluttet — 016, ikke blokerende] Kobl spiller-ID'er.**
+   85,2 % af relationerne har ID; den resterende kobling er stadig en
+   separat byggeopgave, men opgave 032 har afklaret at den blokerer
+   ikke Test & Validation — se punkt 5b.
 5. **[Lukket ved Chris' beslutning 2026-09-15 — 015/018/019/020/030]
    Stillingskontrol:** kampantal per sæson og pulje mod officielle
    stillinger. 24/98 eksakte matches, men alle 98 rækker har nu en
@@ -266,12 +285,13 @@ princippet om at rå data gemmes før fortolkning.
    ovenfor) — 77 forklarede/kendte, 21 dokumenteret genuint uforklarede.
    Opfylder kriteriets egen ordlyd. Genoptages kun hvis statistikprojektet
    udvides til en national database (se flag ovenfor).
-5b. **[Afsluttet, to runder — 032] Spiller-navnematch-risiko:** stikprøve
+5b. **[Afsluttet, tre runder — 032] Spiller-navnematch-risiko:** stikprøve
    af om de 2.556 spillere uden BadmintonPlayer-ID dækker over
    navnekollisioner eller -splittelser. Runde 1's dublet-tjek var
    tautologisk og blev forkastet; runde 2 fandt 7 mistænkte kollisioner
-   (kampe på to GSB-hold samme dato) i de 25 mest aktive. Risikoen er
-   bekræftet, men ikke endeligt afklaret — se
+   (kampe på to GSB-hold samme dato) i de 25 mest aktive; runde 3
+   afkræftede alle 7 (forskellige rækker/kamptyper, typisk flere
+   ungdomskampe samlet samme dag). 0/25 bekræftede kollisioner — se
    `statistik/results/032-spiller-navnematch-risiko.md`.
 6. **Results-rapporten.**
 7. **Skillen.**
