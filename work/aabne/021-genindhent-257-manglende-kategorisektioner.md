@@ -2,6 +2,20 @@
 
 **Trin:** Test & Validation
 
+**LUKKET 2026-09-15 — de 257 forbliver dokumenteret som kildehul, ingen
+yderligere genhentning.** De 7 rækker der faktisk kunne forsøges (se
+"Spørgsmål" — kun 20 af 257 blev nogensinde gemt som konkrete kandidater
+i opgave 013, ikke alle 109/257) gav alle bekræftet tom kilde-side, 0
+nye kategorisektioner. Beslutning om at stoppe her, fremfor at bygge den
+fulde 257-kandidatliste og fortsætte, er begrundet i
+`docs/BESLUTNINGER.md`s post "257 manglende kategorisektioner lukkes;
+fremtidig klubudvidelse ændrer prioritet": manuel CUA-genhentning
+skalerer ikke til en fremtidig alle-klubber-udvidelse, og 7/7 negative
+resultater peger på at dette er en generel kildebegrænsning, ikke en
+GSB-specifik fejl. Opgave 030 (holdnummer-stabilitet) prioriteres højere
+i stedet, fordi den rammer noget der bliver mere kritisk, ikke mindre,
+ved skalering.
+
 **Beslutning taget 2026-09-15 (Chris):** forsøg genindhentning, i stedet
 for at lade de 257 stå som dokumenteret permanent hul. Denne opgave er
 selve forsøget — ikke en garanti for at det lykkes.
@@ -178,9 +192,15 @@ bekræftet fortsat tomt, 0 nye kategorisektioner.
 
 **Hvor mange af de 257 er nu løst, hvor mange står tilbage:**
 
-0 løst ved genhentning; 257 står fortsat i den oprindelige opgørelse. 7 af de
-109 ikke-eksplicitte-afbud blev forsøgt.
+0 løst ved genhentning; 257 står fortsat i den oprindelige opgørelse. 7
+af de 109 ikke-eksplicitte-afbud (den fulde tilgængelige
+kandidatpopulation, se "Spørgsmål") blev forsøgt, alle 7 bekræftet
+fortsat tomme. Opgaven lukkes hermed — se banner øverst og
+`docs/BESLUTNINGER.md`. Ingen yderligere kandidatudtrækning eller
+genhentning planlægges, medmindre en fremtidig klubudvidelse gør
+mønsteret ("mangler kategorisektion") relevant at undersøge systematisk
+som en del af importpipelinen — se `statistik/RESEARCH_BACKLOG.md`.
 
 **Commits:**
 
-53c6b98 (første stikprøve) — denne fortsættelse af stikprøven afventer ny commit
+53c6b98 (første stikprøve), 1be0d1d (fortsat stikprøve + diskrepansafklaring)

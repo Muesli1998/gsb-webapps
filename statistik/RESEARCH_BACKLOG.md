@@ -107,3 +107,39 @@ Status: uafklaret, ikke påbegyndt. Blokerer ikke i sig selv statistikkens
 Prod Push (de 24 rækker er allerede dokumenteret som en kendt begrænsning),
 men er en risiko der bør vurderes før projektet udvides til flere klubber
 eller flere afhængige funktioner bygges oven på holdnummer-antagelsen.
+
+**Prioritet opdateret 2026-09-15:** denne undersøgelse rangerer højere end
+det efterfølgende punkt (kategorisektioner), fordi den rammer selve
+matching-kernelogikken — noget der bliver mere kritisk, ikke mindre, ved
+en fremtidig klubudvidelse (flere klubber = flere puljer hvor mønsteret
+kan opstå). Se `docs/BESLUTNINGER.md`s post fra samme dato.
+
+## Åbent, lavere prioritet: mangler "mangler kategorisektion" en generel BD-kildeforklaring? (opgave 013/021, lukket 2026-09-15)
+
+257 gemte browserpayloads mangler en kategorisektion (fx "Herresingle
+U15"); 109 af dem uden eksplicit "Afgjort uden kamp"-tekst. Opgave 021
+forsøgte manuel genhentning af den delmængde der faktisk kunne forsøges
+(kun 7 af 109 — se nedenfor) og fik 7/7 bekræftet tomme kilde-sider. De
+257 forbliver et dokumenteret kildehul, ikke en importfejl.
+
+**Vigtig detalje for enhver der genoptager dette:** opgave 013's "257" og
+"109" er metadata-tal fra en scanning. Den konkrete kandidatliste
+(kamp-ID, sæson, pulje, leagueMatchId — nødvendig for at bygge en
+genhentnings-URL) blev kun gemt for en stratificeret stikprøve på 20
+rækker, IKKE for alle 257. Skal resten (~237 af 257, ~102 af 109)
+nogensinde forsøges, skal kandidatlisten først genudtrækkes fra den
+database/det script der oprindeligt talte dem — den findes ikke i det
+nuværende materiale.
+
+**Hvorfor det er nedprioriteret, ikke bare glemt:** manuel
+CUA-genhentning (én kamp ad gangen, "vær sparsom"-regel) skalerer ikke
+til en fremtidig alle-klubber-udvidelse. Er "mangler kategorisektion" en
+generel begrænsning i BD's kilde (7/7 negative resultater for GSB peger
+på det), er det mere værd at dokumentere ÉN gang og designe
+importpipelinen til at forvente og håndtere det korrekt for alle
+klubber fra starten, end at blive ved med at genhente manuelt klub for
+klub. Bliver klubudvidelsen aktuel, hører denne undersøgelse hjemme som
+en del af importpipeline-designet, ikke som en isoleret opfølgningsopgave.
+
+Status: lukket som dokumenteret kildehul for GSB. Genoptages kun hvis
+klubudvidelse bliver konkret, og da som en del af pipeline-designet.

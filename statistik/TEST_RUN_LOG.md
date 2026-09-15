@@ -415,3 +415,9 @@ Forsøgte kamp 2286 samt seks yderligere tilgængelige ikke-afbuds-rækker med
 den validerede browser/CUA-metode. Alle syv viste standardskallen; 0 godkendt,
 0 nye kategorisektioner. Ingen databaseændringer. Rapport:
 `statistik/results/021-genindhentning.md`.
+
+## 2026-09-15 – opgave 021: lukket — de 257 forbliver dokumenteret kildehul
+
+- De 7 forsøgte rækker var den FULDE tilgængelige kandidatpopulation — opgave 013 gemte kun konkrete kamp-ID/URL-felter for en stikprøve på 20, ikke for alle 109/257. De øvrige ~102 kan ikke forsøges uden en ny udtrækning fra kilden.
+- Alle 7 forsøg gav bekræftet tom kilde-side (bekræftet manuelt af Chris for kamp 2286). Peger på en generel kildebegrænsning hos BD, ikke en GSB- eller metodespecifik fejl.
+- Besluttet at lukke opgaven her fremfor at bygge den fulde kandidatliste: manuel CUA-genhentning skalerer ikke til en fremtidig alle-klubber-udvidelse. Se `docs/BESLUTNINGER.md` (2026-09-15) og `RESEARCH_BACKLOG.md`. Opgave 030 (holdnummer-stabilitet) prioriteres i stedet højere, fordi den bliver mere kritisk, ikke mindre, ved skalering.
