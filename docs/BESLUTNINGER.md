@@ -171,3 +171,32 @@ strukturen selv — så rettelsen er en arbejdsvane, ikke en ny fil-regel:
 konkludere at noget mangler i repoet. Et gæt der ikke rammer, ser
 identisk ud som et bekræftet fravær, medmindre søgningen faktisk var
 bred nok.
+
+---
+
+## 2026-09-15 — work/future/ for opgavekort uden for statistik
+
+**Besluttet:** oprette `work/future/` som et tredje sted for
+opgavekort, ved siden af `work/aabne/` (den aktive kø) og `work/loeste/`
+(arkivet). Kort her har samme fulde format som et rigtigt opgavekort
+(Mål/Kontekst/Afgrænsning/Kontrol/Ved tvivl), for Kampsystem, Dream
+Team/Tilmelding, Kampkalender, Søndagstræning og generelt — men er IKKE i
+køen og køres ikke, før Chris selv flytter et konkret kort til
+`work/aabne/`. Navngives `NNN-kategori-navn.md` med fælles nummerserie,
+så Chris kan vælge en hel kategori ad gangen.
+
+**Hvorfor:** `AGENTS.md`s prioritetsregel ("statistik har førsteprioritet
+... alt andet venter ... det gælder også gode idéer der dukker op
+undervejs — de hører i idébankerne, ikke i opgavekøen") skal stå ved
+magt. Men Chris ønskede en måde at have fremtidigt arbejde klart som
+rigtige, køreklare opgavekort — ikke kun som løse idébank-linjer — uden
+at det reelt springer statistik-køen over. `work/future/` løser det: et
+kort der er FÆRDIGT SPECIFICERET er ikke det samme som et kort der er
+AKTIVT.
+
+**Fravalgt:** at ændre selve prioritetsreglen og åbne `work/aabne/` for
+alle kategorier (ville reelt ophæve statistik-førsteprioriteten). Også
+fravalgt: at lade fremtidigt arbejde blive stående som ren
+idébank-tekst uden konkret Mål/Afgrænsning/Kontrol — Chris ville have
+dem klar til at blive kørt med det samme, ikke skrevet færdigt først når
+turen kommer.
