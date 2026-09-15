@@ -88,4 +88,19 @@ til hvilke afsnit** — ikke en vurdering af om det nu er "rigtigt nok".
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+Fase 1–3 er ikke gennemført, fordi punkt 4 ramte et dokumenteret
+datagrundlags-stop. 013's versionsstyrede JSON/Markdown indeholder kun 20
+stikprøverækker, ikke den fulde liste over 257 payload-ID'er. Af 035's 162
+ID'er overlapper 5 med den bevarede 013-stikprøve (2286, 96231, 2365, 2396,
+2509), mens 0 overlapper med 006's 458-rækkers klassifikation. Det er ikke
+tilstrækkeligt til at afgøre hele 162-mod-257+58-overlappet uden at gætte.
+Derfor er `docs/statistik-plan.md`, `docs/BESLUTNINGER.md` og 034-noten
+urørte.
+
+## Spørgsmål
+
+Skal den manglende fulde 013-kandidatliste rekonstrueres fra eksterne,
+ikke-versionsstyrede browserfiler, eller accepteres punkt 4 som uafklaret?
+Jeg har ikke ændret 034-narrativet på baggrund af stikprøven alene.
+
+**Commits:** afventer commit på denne gren.

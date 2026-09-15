@@ -465,3 +465,10 @@ Spillerrelationer: 17.114 i alt, 8.255 med external ID og 8.859 uden.
 Der findes ingen uafhængig, gemt Nembadminton-discovery-total, så manglende
 ungdomskampe kan ikke estimeres uden nyt eksternt kald. Databasen var
 read-only; senior-dokumentation urørt.
+# 2026-09-15 — Opgave 039 overlapkontrol
+
+035's 162 ID'er blev sammenholdt med de bevarede klassifikationsartefakter.
+013 har kun 20 gemte stikprøverækker, hvoraf 5 overlapper (2286, 96231,
+2365, 2396, 2509); 006's 458-rækkers JSON har 0 overlap. Den fulde 257-ID-
+liste er ikke bevaret, så komplet 162-mod-257+58-overlap kan ikke afgøres
+uden at gætte. Opgave 039 stoppede derfor før plan-/beslutningsrettelser.
