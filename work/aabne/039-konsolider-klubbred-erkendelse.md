@@ -88,4 +88,14 @@ til hvilke afsnit** — ikke en vurdering af om det nu er "rigtigt nok".
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+Fase 1–5 er udført 2026-09-15 på denne gren. En frisk aldersfri SQL-
+optælling fandt 451 holdkampe uden individuelle rækker: 205 U09–U15 og
+246 øvrige aldersgrupper. De 205 ungdomsrækker er 035's 162
+`browser_verified` plus 39 `browser_verified_no_result` og 4 `api_error`.
+Den fulde historiske 013-liste er ikke bevaret; 5 overlap med de 20 gemte
+013-stikprøverækker er dokumenteret, men komplet 162-mod-257+58 kan ikke
+rekonstrueres. Planen og beslutningsloggen er derfor rettet til at beskrive
+databasen som altid klubbred med aldersfordelingen fra 038. 034-noten har
+fået en pointer-note, og ingen måleresultater er ændret.
+
+**Commits:** afventer commit på denne gren.

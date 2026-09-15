@@ -472,3 +472,11 @@ read-only; senior-dokumentation urørt.
 2365, 2396, 2509); 006's 458-rækkers JSON har 0 overlap. Den fulde 257-ID-
 liste er ikke bevaret, så komplet 162-mod-257+58-overlap kan ikke afgøres
 uden at gætte. Opgave 039 stoppede derfor før plan-/beslutningsrettelser.
+
+# 2026-09-15 — Opgave 039 frisk aldersfri optælling
+
+Ny SQL uden aldersfilter fandt 451 holdkampe uden individuelle rækker:
+205 U09–U15 og 246 øvrige aldersgrupper. De 205 ungdomsrækker består af
+035's 162 `browser_verified` plus 39 `browser_verified_no_result` og 4
+`api_error`. Dette er den aktuelle datamængde, ikke en rekonstruktion af
+013's tabte 257-ID-liste.

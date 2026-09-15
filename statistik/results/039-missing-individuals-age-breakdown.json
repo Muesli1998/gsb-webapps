@@ -1,0 +1,95 @@
+{
+  "generatedAt": "2026-09-15T14:19:27.250Z",
+  "total": {
+    "missing_matches": 451
+  },
+  "byAge": [
+    {
+      "age_group_id": 1,
+      "missing_matches": 49,
+      "browser_verified": 34,
+      "no_result": 11,
+      "api_error": 0
+    },
+    {
+      "age_group_id": 2,
+      "missing_matches": 13,
+      "browser_verified": 4,
+      "no_result": 5,
+      "api_error": 4
+    },
+    {
+      "age_group_id": 3,
+      "missing_matches": 76,
+      "browser_verified": 61,
+      "no_result": 15,
+      "api_error": 0
+    },
+    {
+      "age_group_id": 4,
+      "missing_matches": 68,
+      "browser_verified": 58,
+      "no_result": 10,
+      "api_error": 0
+    },
+    {
+      "age_group_id": 5,
+      "missing_matches": 48,
+      "browser_verified": 39,
+      "no_result": 9,
+      "api_error": 0
+    },
+    {
+      "age_group_id": 6,
+      "missing_matches": 37,
+      "browser_verified": 35,
+      "no_result": 2,
+      "api_error": 0
+    },
+    {
+      "age_group_id": 9,
+      "missing_matches": 64,
+      "browser_verified": 36,
+      "no_result": 23,
+      "api_error": 0
+    },
+    {
+      "age_group_id": 11,
+      "missing_matches": 53,
+      "browser_verified": 24,
+      "no_result": 10,
+      "api_error": 0
+    },
+    {
+      "age_group_id": 13,
+      "missing_matches": 23,
+      "browser_verified": 7,
+      "no_result": 0,
+      "api_error": 0
+    },
+    {
+      "age_group_id": 17,
+      "missing_matches": 3,
+      "browser_verified": 0,
+      "no_result": 0,
+      "api_error": 0
+    },
+    {
+      "age_group_id": 18,
+      "missing_matches": 17,
+      "browser_verified": 17,
+      "no_result": 0,
+      "api_error": 0
+    }
+  ],
+  "youth": {
+    "missing_matches": 205,
+    "browser_verified": 162
+  },
+  "comparison": {
+    "op035BrowserVerified": 162,
+    "op033YouthMissing": 205,
+    "op035WithinCurrentYouthMissing": 162,
+    "remainingYouthMissing": 43
+  }
+}

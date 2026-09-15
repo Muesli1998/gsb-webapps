@@ -307,3 +307,19 @@ det i en rapport nogen stoler på.
 udelukkende på stillingskontrol-punktet. Det punkt er udtømt for nu og
 adskiller sig reelt fra spiller-ID-risikoen, som er den eneste
 resterende reelle blokering for at lukke trinnet.
+
+---
+
+## 2026-09-15 — Præcisering af ungdomsstatus (opgave 039)
+
+Opgave 038 viste, at statistikdatabasen fra begyndelsen var klubbred:
+2.818 holdkampe, 20.319 individuelle kategorier og 67.196 spillerrelationer
+er optalt uden aldersfilter. Opgave 033–038 var derfor en nedbrydning og
+validering af ungdomsandelen, ikke en scopeudvidelse. U09–U15 udgør 1.207
+af de 2.818 holdkampe; U17/U19 udgør 147, og veteran-grupperne 958.
+
+Opgave 035's 162 rækker er den aktuelle delmængde af de 451 holdkampe uden
+individuelle rækker, hvor 205 er U09–U15. En direkte fuld sammenligning med
+013's oprindelige 257+58 er ikke mulig, fordi den fulde historiske ID-liste
+ikke er bevaret; fem overlap er dokumenteret i 013's 20-rækkers stikprøve.
+Dette ændrer ikke måletallene eller Test & Validation-statussen.

@@ -18,6 +18,22 @@ hjemmehold, udehold og holdresultat. 20.319 individuelle kategorier fordelt
 på 2.367 af holdkampene. 67.196 spillerrelationer, 7.599 unikke spillere.
 Ingen foreign-key-fejl eller ID-dubletter.
 
+Tallene er klubbredt optalt uden `age_group_id`-filter. Holdkampene fordeler
+sig sådan:
+
+| Gruppe | `age_group_id` | Holdkampe |
+|---|---:|---:|
+| Senior | 1 | 506 |
+| U09–U15 | 2–5 | 1.207 |
+| U17/U19 | 6, 18 | 147 |
+| Veteran | 9, 11, 12, 13, 17 | 958 |
+| **I alt** |  | **2.818** |
+
+Opgave 038 bekræftede, at også 20.319 individuelle kategorier og 67.196
+spillerrelationer er klubbredde totaler. Opgave 033–037 var derfor en
+aldersopdelt måling og fejlkontrol af et allerede eksisterende datasæt —
+ikke en udvidelse af databasens scope.
+
 De dokumenterede huller er kendte og afgrænsede: 315 holdkampe med
 holdresultat mangler individuelle rækker, 458 holdkampe afviger mellem
 holdresultat og individuelle resultater, samt fire U09-kampe og to
@@ -145,12 +161,21 @@ af semifinaler/finale/bronzekamp, ikke af en opfunden puljestilling. Se
 ikke viser dynamisk detalje, og to corona-suspenderede (387862, 387864).
 De skal ikke løses. De skal stå med URL, status og rå kilde.
 
-**Ikke en del af dette trin:** U15 og yngre, turnerings- og
-spillerprofil-sporet, historiske ranglistepoint. Alt det er
-Videreudvikling.
+**Ungdomsstatus:** U09–U15 var hele tiden med i datasættet, men blev først
+aldersopdelt og særskilt undersøgt i opgave 033–038. De 1.207 kampe indgår
+allerede i klubbens 2.818 total. Opgave 035 fandt 115 eksplicitte
+afbud/udeblivelser, 46 uden kategorisektion eller afbud og 1 kategori-
+sektion uden importerede rækker. Opgave 036 fandt 0 navnedubletter og 0
+same-date-fund med samme `league_raw`/`name_raw`. De 46 kandidater,
+begrænset discovery og manglende ungdomsstillinger er kendte Results-
+begrænsninger, ikke et nyt scope.
+
+Turnerings- og spillerprofil-sporet samt historiske ranglistepoint er
+fortsat Videreudvikling.
 
 **Status på Test & Validation som helhed (opdateret 2026-09-15):** alle
-fem kriterier ovenfor opfylder nu deres egen ordlyd (individuel dækning,
+fem kriterier ovenfor er vurderet på det klubbredde datasæt og opfylder
+deres egen ordlyd (individuel dækning,
 458-klassifikation, spilleridentitet, stillingskontrol, blivende
 undtagelser). Stillingskontrol-punktet er eksplicit lukket ved Chris'
 beslutning (se ovenfor).
