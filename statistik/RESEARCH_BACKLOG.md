@@ -62,7 +62,7 @@ opfølgende undersøgelse.
 
 Ved import af andre klubbers hold skal kampe i de dokumenterede corona-perioder klassificeres særskilt. Et resultatfelt med `-` i disse perioder bør gemmes som mulig suspenderet/ikke gennemført kamp, ikke som almindelig kampfejl. Kamp-ID, dato, pulje og rå kilde skal stadig bevares, så klassifikationen kan efterprøves.
 
-## Åbent, uafklaret: er GSB's holdnummerering en stabil identitet på tværs af kilderne? (fundet i opgave 019, 2026-09-15)
+## BEKRÆFTET (opgave 030, 2026-09-15): GSB's holdnummerering er IKKE en stabil identitet på tværs af kilderne
 
 Opgave 019 forsøgte at rette matching-nøglen i `check-standing-match-counts.mjs`
 (stillinger vs. holdkampe) og fandt at rettelsen ikke ændrede noget. Diagnosen
@@ -88,31 +88,43 @@ hypotesen holder, kan ethvert sted i projektet der bruger holdnummer som
 nøgle på tværs af kilder eller sæsoner (ikke kun denne ene kontrol) give
 stille forkerte koblinger — ikke kun de 24 allerede kendte rækker.
 
-**Forslag til hvordan det kan tjekkes senere** (ingen af disse er startet):
+**Undersøgt og bekræftet i opgave 030 (2026-09-15)** — se
+`statistik/results/030-holdnummer-stabilitet.md` for det fulde datagrundlag:
 
-1. Undersøg om `league_raw` eller et andet gemt felt er en mere pålidelig
-   tværkilde-nøgle end holdnummer — sammenlign for de 24 kendte rækker om
-   et andet felt END holdnummeret faktisk matcher konsekvent.
-2. Kortlæg hvor i `statistik/`-koden (scripts, matching, rapporter) et
-   holdnummer i dag antages at være en stabil identitet, og vurdér
-   konsekvensen for hvert sted.
-3. Test om mønsteret er en konsekvent forskydning (fx "stillingens N er
-   altid team_matches' N+1 i samme pulje") eller om det varierer usystematisk
-   fra pulje til pulje — det første kunne kompenseres for, det andet ikke.
-4. Spørg Christoffer om han (som spiller/hjælpetræner i klubben) kender den
-   administrative praksis for hvordan BD tildeler holdnumre — det kan være
-   hurtigere at få svaret fra en person end at udlede det af data.
+1. **Ingen bedre nøgle fundet.** `league_raw` indeholder liga-/
+   aldersbetegnelse, ikke holdnummer. Intet andet allerede gemt felt gav
+   en mere pålidelig tværkilde-nøgle end holdnummer selv.
+2. **Fire steder i koden antager i dag at holdnummer/holdnavn er en
+   stabil nøgle:** `scripts/check-standing-match-counts.mjs`,
+   `scripts/audit-no-linked-standings.mjs`,
+   `scripts/generate-normalized-import.mjs` og
+   `scripts/analyze-gsb-standings.mjs`. Ingen af dem er ændret — dette er
+   en kortlægning, ikke en rettelse.
+3. **Forskydningen er IKKE systematisk.** 13 no-linked-par med numerisk
+   holdnummer på begge sider gav fem forskellige deltaer (+1 ni gange,
+   +2/-1/-2/-3 én gang hver) — rå holdnummer matchede 0/13. Til
+   sammenligning matchede et kontroludsnit af 7 allerede-koblede rækker
+   7/7. Der er altså ingen konstant forskydning man kan kompensere for
+   automatisk.
+4. Spørgsmålet til Christoffer om BD's administrative praksis (forslag 4,
+   oprindeligt) er ikke stillet — givet at mønsteret viste sig
+   usystematisk, ville et administrativt svar sandsynligvis forklare
+   HVORFOR, men ikke ændre KONKLUSIONEN (holdnummer kan ikke bruges som
+   stabil nøgle). Kan stilles alligevel hvis det bliver relevant af andre
+   grunde.
 
-Status: uafklaret, ikke påbegyndt. Blokerer ikke i sig selv statistikkens
-Prod Push (de 24 rækker er allerede dokumenteret som en kendt begrænsning),
-men er en risiko der bør vurderes før projektet udvides til flere klubber
-eller flere afhængige funktioner bygges oven på holdnummer-antagelsen.
-
-**Prioritet opdateret 2026-09-15:** denne undersøgelse rangerer højere end
-det efterfølgende punkt (kategorisektioner), fordi den rammer selve
-matching-kernelogikken — noget der bliver mere kritisk, ikke mindre, ved
-en fremtidig klubudvidelse (flere klubber = flere puljer hvor mønsteret
-kan opstå). Se `docs/BESLUTNINGER.md`s post fra samme dato.
+**Konklusion: holdnummer må ikke bruges som stabil identitet på tværs af
+kilder eller sæsoner noget sted i projektet.** Blokerer ikke statistikkens
+Prod Push (de 24 kendte rækker er allerede dokumenteret som en accepteret
+begrænsning, og status er uændret), men er nu en BEKRÆFTET, ikke længere
+hypotetisk, risiko at have for øje: hvert nyt script eller ny funktion der
+joiner på tværs af `standings` og `team_matches` skal bruge en anden nøgle
+end rå holdnummer (fx sæson + pulje + spillere, hvis det bliver
+nødvendigt), og risikoen vokser ved en fremtidig klubudvidelse (flere
+klubber = flere puljer hvor mønsteret kan opstå). Ingen aktiv
+opfølgningsopgave er oprettet — de fire kortlagte scripts fungerer inden
+for deres kendte begrænsning, og en rettelse er kun relevant hvis/når
+flere afhængige funktioner skal bygges oven på dem.
 
 ## Åbent, lavere prioritet: mangler "mangler kategorisektion" en generel BD-kildeforklaring? (opgave 013/021, lukket 2026-09-15)
 
@@ -143,9 +155,3 @@ en del af importpipeline-designet, ikke som en isoleret opfølgningsopgave.
 
 Status: lukket som dokumenteret kildehul for GSB. Genoptages kun hvis
 klubudvidelse bliver konkret, og da som en del af pipeline-designet.
-# Opgave 030 — holdnummer-stabilitet (afsluttet undersøgelse)
-
-Undersøgelsen fandt ingen stabil tværkilde-forskydning: 13 numeriske
-no-linked-par gav fem forskellige deltaer (+1:9, +2:1, -1:1, -2:1, -3:1),
-og `league_raw` indeholder ikke holdnummer. Rå holdnummer matchede 0/13;
-kontroludsnit 7/7. Se `results/030-holdnummer-stabilitet.md`.
