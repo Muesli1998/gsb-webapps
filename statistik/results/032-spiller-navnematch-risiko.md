@@ -80,4 +80,24 @@ Norr Bagge Køhler, Pelle Emil Jessing Schjøtt, Kasper Gorm, Lasse Friberg
 Andersen, Sebastian Larsen Lund) er endnu ikke tjekket for samme mønster
 eller for om de også ligger i U15-rækker.
 
+## Runde 3 — række-/kamptypekontrol
+
+Scriptet med `c.league_raw` og `c.name_raw` blev kørt for de seks resterende
+spillere. Alle samme-dato-fund lå i forskellige rækketyper:
+
+| Spiller | Samme-dato-kampe | Rækketype | Konklusion |
+|---|---|---|---|
+| Lasse Bjerregaard Kirt | 282799 / 282912 | U13 B (4) / U13 C (4) | Forskellig række; ikke kollisionsbevis |
+| Norr Bagge Køhler | 505213 / 505246 / 505248; 505215 / 505234 / 505236 | U09 C 3600 / U09 D 3300 (forskellige puljer) | Forskellig række; ikke kollisionsbevis |
+| Pelle Emil Jessing Schjøtt | 421933 / 414577 | U13 3500 / U15 4300 | Forskellig række; ikke kollisionsbevis |
+| Kasper Gorm | 282797 / 290427 | U13 B (4) / U15 B (4) | Forskellig række; ikke kollisionsbevis |
+| Lasse Friberg Andersen | 493940 / 493941; 494106 / 494107 | U15 C-D 5200 / U15 D 5000 | Forskellig række; ikke kollisionsbevis |
+| Sebastian Larsen Lund | 493945 / 493947; 494003 / 494004 | U15 C-D 5200 / U15 D 5000 | Forskellig række; ikke kollisionsbevis |
+
+Der er dermed **0/6** resterende spillere med samme-dato-kampe i samme
+række/kamptype. Runde 2's syv mistænkte fund er samlet afkræftet som
+kollisionsbevis i det gemte materiale (Konrad manuelt, de øvrige seks via
+`league_raw`/`name_raw`). Navnesplittelse kan fortsat ikke afgøres uden
+ekstern kilde.
+
 
