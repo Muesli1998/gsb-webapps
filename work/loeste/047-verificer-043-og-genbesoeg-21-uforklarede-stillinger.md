@@ -105,6 +105,6 @@ resultatfiler/planer.
 
 Del A: 043 indeholder 980 modstanderidentiteter efter 046-fixet. De spillerbaserede opgørelser er uændrede: 7.599 karrierespillere, 67.196 relationer og top-25 mest aktive spillere. Hold- og kamptalsgrupperingen bruger 180 identiteter konsistent i 042/043.
 
-Del B: Den præcise population på 21 stillingsrækker blev genfundet. 0 af 21 kan forklares af en ungdoms-holdtype/niveau-kollision; ingen af rækkerne havde både ungdomsstatus og flere relevante kombinationer i samme sæson, pulje og holdnavn. Konklusionen om de 21 fortsat uforklarede rækker står derfor uændret.
+Del B: Den præcise population på 21 stillingsrækker blev genfundet. Første kørsel havde en stille typefejl: league_group_id kom som tekst fra SQLite, mens targets var tal, så alle opslag stod tomme. Efter eksplicit numerisk CAST rammer opslagene data (fx 2025/pulje 18504: age_group_id 2, 3 spillere C 3600). 0 af 21 kan forklares af en ungdoms-holdtype/niveau-kollision; ingen har mere end én relevant kombination. Konklusionen står derfor uændret, nu på et valideret opslag.
 
 **Commits:** afventer commit på denne gren
