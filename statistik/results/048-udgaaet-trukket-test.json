@@ -1,7 +1,7 @@
 {
   "hypothesis1": 5,
-  "hypothesis2": 0,
-  "unexplained": 16,
+  "hypothesis2": 3,
+  "unexplained": 13,
   "rows": [
     {
       "season": 2010,
@@ -9,7 +9,9 @@
       "team": "Gladsaxe Søborg 1",
       "standing_matches": 4,
       "db_match_count": 7,
-      "hypothesis1": false
+      "hypothesis1": false,
+      "opponent_marked_matches": [],
+      "hypothesis2": false
     },
     {
       "season": 2011,
@@ -17,7 +19,9 @@
       "team": "Gladsaxe Søborg udgået",
       "standing_matches": null,
       "db_match_count": 7,
-      "hypothesis1": false
+      "hypothesis1": false,
+      "opponent_marked_matches": [],
+      "hypothesis2": true
     },
     {
       "season": 2012,
@@ -25,7 +29,9 @@
       "team": "Gladsaxe Søborg",
       "standing_matches": 4,
       "db_match_count": 8,
-      "hypothesis1": false
+      "hypothesis1": false,
+      "opponent_marked_matches": [],
+      "hypothesis2": false
     },
     {
       "season": 2013,
@@ -33,7 +39,9 @@
       "team": "Gladsaxe Søborg",
       "standing_matches": 5,
       "db_match_count": 6,
-      "hypothesis1": false
+      "hypothesis1": false,
+      "opponent_marked_matches": [],
+      "hypothesis2": false
     },
     {
       "season": 2014,
@@ -41,7 +49,9 @@
       "team": "Gladsaxe Søborg 3",
       "standing_matches": 6,
       "db_match_count": 7,
-      "hypothesis1": false
+      "hypothesis1": false,
+      "opponent_marked_matches": [],
+      "hypothesis2": false
     },
     {
       "season": 2014,
@@ -49,7 +59,9 @@
       "team": "Gladsaxe Søborg 2 udgået",
       "standing_matches": 0,
       "db_match_count": 7,
-      "hypothesis1": true
+      "hypothesis1": true,
+      "opponent_marked_matches": [],
+      "hypothesis2": false
     },
     {
       "season": 2015,
@@ -57,7 +69,9 @@
       "team": "Gladsaxe Søborg 2",
       "standing_matches": 6,
       "db_match_count": 7,
-      "hypothesis1": false
+      "hypothesis1": false,
+      "opponent_marked_matches": [],
+      "hypothesis2": false
     },
     {
       "season": 2015,
@@ -65,7 +79,9 @@
       "team": "Gladsaxe Søborg 4",
       "standing_matches": 6,
       "db_match_count": 7,
-      "hypothesis1": false
+      "hypothesis1": false,
+      "opponent_marked_matches": [],
+      "hypothesis2": false
     },
     {
       "season": 2015,
@@ -73,7 +89,9 @@
       "team": "Gladsaxe Søborg 5 udgået",
       "standing_matches": 0,
       "db_match_count": 6,
-      "hypothesis1": true
+      "hypothesis1": true,
+      "opponent_marked_matches": [],
+      "hypothesis2": false
     },
     {
       "season": 2015,
@@ -81,7 +99,9 @@
       "team": "Gladsaxe Søborg udgået",
       "standing_matches": 0,
       "db_match_count": 9,
-      "hypothesis1": true
+      "hypothesis1": true,
+      "opponent_marked_matches": [],
+      "hypothesis2": false
     },
     {
       "season": 2016,
@@ -89,7 +109,9 @@
       "team": "Gladsaxe Søborg",
       "standing_matches": 6,
       "db_match_count": 7,
-      "hypothesis1": false
+      "hypothesis1": false,
+      "opponent_marked_matches": [],
+      "hypothesis2": false
     },
     {
       "season": 2016,
@@ -97,7 +119,9 @@
       "team": "Gladsaxe Søborg 3",
       "standing_matches": 6,
       "db_match_count": 7,
-      "hypothesis1": false
+      "hypothesis1": false,
+      "opponent_marked_matches": [],
+      "hypothesis2": false
     },
     {
       "season": 2016,
@@ -105,7 +129,9 @@
       "team": "Gladsaxe Søborg 4 udgået",
       "standing_matches": 0,
       "db_match_count": 8,
-      "hypothesis1": true
+      "hypothesis1": true,
+      "opponent_marked_matches": [],
+      "hypothesis2": false
     },
     {
       "season": 2016,
@@ -113,7 +139,9 @@
       "team": "Gladsaxe Søborg 4 trukket",
       "standing_matches": 0,
       "db_match_count": 9,
-      "hypothesis1": true
+      "hypothesis1": true,
+      "opponent_marked_matches": [],
+      "hypothesis2": false
     },
     {
       "season": 2016,
@@ -121,7 +149,9 @@
       "team": "Gladsaxe Søborg 3",
       "standing_matches": 6,
       "db_match_count": 7,
-      "hypothesis1": false
+      "hypothesis1": false,
+      "opponent_marked_matches": [],
+      "hypothesis2": false
     },
     {
       "season": 2016,
@@ -129,7 +159,9 @@
       "team": "Gladsaxe Søborg",
       "standing_matches": 7,
       "db_match_count": 8,
-      "hypothesis1": false
+      "hypothesis1": false,
+      "opponent_marked_matches": [],
+      "hypothesis2": false
     },
     {
       "season": 2016,
@@ -137,7 +169,9 @@
       "team": "Gladsaxe Søborg 3",
       "standing_matches": 6,
       "db_match_count": 7,
-      "hypothesis1": false
+      "hypothesis1": false,
+      "opponent_marked_matches": [],
+      "hypothesis2": false
     },
     {
       "season": 2016,
@@ -145,7 +179,9 @@
       "team": "Gladsaxe Søborg",
       "standing_matches": 7,
       "db_match_count": 8,
-      "hypothesis1": false
+      "hypothesis1": false,
+      "opponent_marked_matches": [],
+      "hypothesis2": false
     },
     {
       "season": 2021,
@@ -153,7 +189,9 @@
       "team": "Gladsaxe Søborg 1",
       "standing_matches": 6,
       "db_match_count": 4,
-      "hypothesis1": false
+      "hypothesis1": false,
+      "opponent_marked_matches": [],
+      "hypothesis2": true
     },
     {
       "season": 2025,
@@ -161,7 +199,9 @@
       "team": "Gladsaxe Søborg 1",
       "standing_matches": 3,
       "db_match_count": 4,
-      "hypothesis1": false
+      "hypothesis1": false,
+      "opponent_marked_matches": [],
+      "hypothesis2": false
     },
     {
       "season": 2025,
@@ -169,7 +209,9 @@
       "team": "Gladsaxe Søborg 3",
       "standing_matches": 6,
       "db_match_count": 4,
-      "hypothesis1": false
+      "hypothesis1": false,
+      "opponent_marked_matches": [],
+      "hypothesis2": true
     }
   ]
 }
