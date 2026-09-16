@@ -103,4 +103,15 @@ af at grundspil/slutspil- og DMU/BD-liga-varianter korrekt kollapser
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+Databasekontrol bekræftede 12 distinkte `age_group_id`-værdier og 59
+distinkte `name_raw + age_group_id`-identiteter i `teams`. 70 identitetsgrupper
+har flere competitions, hvilket dokumenterer at grundspil/slutspil-varianter
+med samme sæson, navn og årgang kollapser korrekt; mappingen viser samme
+age_group_id på tværs af de undersøgte DMU/BD-varianter.
+
+042 og 043 er genkørt med specifik numerisk `age_group_id` i holdidentiteten.
+De nye rapporter viser 58 identiteter i de registrerede holdkampe (043 har
+980 modstanderidentiteter efter samme rettelse). Den brede fire-buckets
+`age()` bruges fortsat uændret til årgangsstatistikken.
+
+**Commits:** afventer commit på denne gren

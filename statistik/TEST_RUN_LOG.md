@@ -6,6 +6,13 @@ Dette er den samlede log over de read-only undersøgelser, der er kørt for GSB-
 statistikprojektet. API-fejl er ikke fortolket som bevis på, at data mangler.
 Uverificerede fortolkninger er markeret som ukendte.
 
+## 2026-09-16 — Opgave 045 finmasket holdidentitet
+
+SQL bekræftede 12 age_group_id-værdier, 59 navn+årgang-identiteter og 70
+multi-competition-grupper. Rapporter 042/043 genkørt med specifik numerisk
+age_group_id: 58 registrerede holdidentiteter og 980 modstanderidentiteter.
+Databasen og den brede fire-buckets age()-brug blev ikke ændret.
+
 ## 2026-09-15 — Opgave 042 Results-rapport v1
 
 Kørte `scripts/042-results-rapport.mjs` read-only mod normalized DB. Genererede
