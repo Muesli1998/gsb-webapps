@@ -1,0 +1,175 @@
+{
+  "hypothesis1": 5,
+  "hypothesis2": 0,
+  "unexplained": 16,
+  "rows": [
+    {
+      "season": 2010,
+      "group": 431,
+      "team": "Gladsaxe Søborg 1",
+      "standing_matches": 4,
+      "db_match_count": 7,
+      "hypothesis1": false
+    },
+    {
+      "season": 2011,
+      "group": 71,
+      "team": "Gladsaxe Søborg udgået",
+      "standing_matches": null,
+      "db_match_count": 7,
+      "hypothesis1": false
+    },
+    {
+      "season": 2012,
+      "group": 1329,
+      "team": "Gladsaxe Søborg",
+      "standing_matches": 4,
+      "db_match_count": 8,
+      "hypothesis1": false
+    },
+    {
+      "season": 2013,
+      "group": 2693,
+      "team": "Gladsaxe Søborg",
+      "standing_matches": 5,
+      "db_match_count": 6,
+      "hypothesis1": false
+    },
+    {
+      "season": 2014,
+      "group": 4245,
+      "team": "Gladsaxe Søborg 3",
+      "standing_matches": 6,
+      "db_match_count": 7,
+      "hypothesis1": false
+    },
+    {
+      "season": 2014,
+      "group": 4267,
+      "team": "Gladsaxe Søborg 2 udgået",
+      "standing_matches": 0,
+      "db_match_count": 7,
+      "hypothesis1": true
+    },
+    {
+      "season": 2015,
+      "group": 5984,
+      "team": "Gladsaxe Søborg 2",
+      "standing_matches": 6,
+      "db_match_count": 7,
+      "hypothesis1": false
+    },
+    {
+      "season": 2015,
+      "group": 6019,
+      "team": "Gladsaxe Søborg 4",
+      "standing_matches": 6,
+      "db_match_count": 7,
+      "hypothesis1": false
+    },
+    {
+      "season": 2015,
+      "group": 6022,
+      "team": "Gladsaxe Søborg 5 udgået",
+      "standing_matches": 0,
+      "db_match_count": 6,
+      "hypothesis1": true
+    },
+    {
+      "season": 2015,
+      "group": 6099,
+      "team": "Gladsaxe Søborg udgået",
+      "standing_matches": 0,
+      "db_match_count": 9,
+      "hypothesis1": true
+    },
+    {
+      "season": 2016,
+      "group": 7631,
+      "team": "Gladsaxe Søborg",
+      "standing_matches": 6,
+      "db_match_count": 7,
+      "hypothesis1": false
+    },
+    {
+      "season": 2016,
+      "group": 7640,
+      "team": "Gladsaxe Søborg 3",
+      "standing_matches": 6,
+      "db_match_count": 7,
+      "hypothesis1": false
+    },
+    {
+      "season": 2016,
+      "group": 7643,
+      "team": "Gladsaxe Søborg 4 udgået",
+      "standing_matches": 0,
+      "db_match_count": 8,
+      "hypothesis1": true
+    },
+    {
+      "season": 2016,
+      "group": 7644,
+      "team": "Gladsaxe Søborg 4 trukket",
+      "standing_matches": 0,
+      "db_match_count": 9,
+      "hypothesis1": true
+    },
+    {
+      "season": 2016,
+      "group": 7647,
+      "team": "Gladsaxe Søborg 3",
+      "standing_matches": 6,
+      "db_match_count": 7,
+      "hypothesis1": false
+    },
+    {
+      "season": 2016,
+      "group": 7652,
+      "team": "Gladsaxe Søborg",
+      "standing_matches": 7,
+      "db_match_count": 8,
+      "hypothesis1": false
+    },
+    {
+      "season": 2016,
+      "group": 7654,
+      "team": "Gladsaxe Søborg 3",
+      "standing_matches": 6,
+      "db_match_count": 7,
+      "hypothesis1": false
+    },
+    {
+      "season": 2016,
+      "group": 7660,
+      "team": "Gladsaxe Søborg",
+      "standing_matches": 7,
+      "db_match_count": 8,
+      "hypothesis1": false
+    },
+    {
+      "season": 2021,
+      "group": 13965,
+      "team": "Gladsaxe Søborg 1",
+      "standing_matches": 6,
+      "db_match_count": 4,
+      "hypothesis1": false
+    },
+    {
+      "season": 2025,
+      "group": 18504,
+      "team": "Gladsaxe Søborg 1",
+      "standing_matches": 3,
+      "db_match_count": 4,
+      "hypothesis1": false
+    },
+    {
+      "season": 2025,
+      "group": 18733,
+      "team": "Gladsaxe Søborg 3",
+      "standing_matches": 6,
+      "db_match_count": 4,
+      "hypothesis1": false
+    }
+  ]
+}

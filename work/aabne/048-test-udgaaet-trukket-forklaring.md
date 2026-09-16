@@ -99,3 +99,6 @@ resultatfiler/planer.
 ## Resultatnote
 
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+
+## Resultat
+Hypotese 1: 5 af 21 forklaret (0 stillingskampe, 6-9 DB-kampe). Hypotese 2: 0. Fortsat uforklarede: 16. Ingen markerede modstandernavne blev fundet i GSB-kampe.
