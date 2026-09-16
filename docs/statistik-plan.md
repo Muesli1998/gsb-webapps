@@ -288,6 +288,53 @@ Opgave 042's v1-rapport dækker allerede en delmængde (2, 3, 5 delvist via
 spiller-pr.-kategori, samt sæsonoversigten under 1/3). Resten (4, 6-10) er
 ikke bygget endnu — se opgave 043.
 
+**Holdidentitets-standard (besluttet med Chris 2026-09-16, efter opgave
+044/045 og en grundig chat-gennemgang).** "Winrate/kamptal pr. hold" må
+ALDRIG gruppere på `name_raw` alene (opgave 044 viste at det kollapser
+472 reelle `team_id`-rækker til 11 rånavne) — og heller ikke på
+`name_raw + age_group_id` alene for ungdom (opgave 045's fix var stadig
+for grov: samme klubnummer kan legitimt bruges til to reelt forskellige
+tilmeldinger i samme årgang og sæson, fx en 4-spiller-tilmelding og en
+2+2-tilmelding, med forskellig pointgrænse). Research i badmintondanmark.dk/
+DGI's ungdomsreglement (se opgave 046) afklarede hvorfor, og giver denne
+regel:
+
+- **Senior og veteran (`age_group_id` 1, 9, 11, 12, 13, 17):** identitet
+  er `name_raw + age_group_id`, uændret fra opgave 045. Klubbens
+  holdnumre er fortløbende og unikke uanset hvilken kategori/pulje
+  holdet spiller i (en klub kan have to hold i samme række, men i
+  forskellige puljer — de har altid forskelligt nummer, aldrig samme
+  navn). Grundspil/slutspil og oprykningsspil er blot faser af samme
+  hold (flere `competition_id` under samme `name_raw`+`age_group_id`) og
+  skal fortsat kollapse. Rækkenavnet i selve konkurrenceteksten (fx
+  "Oprykning til Danmarksserien") skal IKKE parses eller bruges til
+  identitet her — det kan fejlagtigt nævne målrækken i stedet for
+  nutidsrækken, og er slet ikke nødvendigt, fordi holdnummeret allerede
+  er entydigt.
+- **Ungdom (`age_group_id` 2, 3, 4, 5, 6, 18):** identitet er `name_raw +
+  age_group_id + holdtype + niveau/pointgrænse`, hvor holdtype og
+  niveau/pointgrænse udtrækkes af `league_raw`/konkurrencenavnet (fx
+  "4 spillere" vs. "2+2" som holdtype, og bogstav/pointgrænse som
+  niveau — se opgave 046 for den konkrete parsing). DMU-faser
+  (Pulje/Kvartfinale/Placeringskampe) af SAMME lokale holdtilmelding
+  skal fortsat kollapse med deres lokale forløb — det er bekræftet i
+  Badminton Danmarks eget reglement at DMU for hold er den afsluttende
+  nationale fase af den samme lokale ungdomsholdturnering, ikke en ny,
+  uafhængig tilmelding. Men to entries med samme klubnummer og samme
+  årgang, der har FORSKELLIG holdtype eller pointgrænse, er som
+  udgangspunkt to forskellige fysiske tilmeldinger, ikke automatisk
+  samme hold.
+- **Tvetydige tilfælde** (fx hvor en formodet DMU-fase har en anden
+  pointgrænse end sit lokale modstykke): kryds-tjek med
+  spilleroverlap for de sæsoner hvor individuelle spillerdata findes.
+  For ældre sæsoner uden spillerdata: dokumentér eksplicit at
+  afgørelsen kun hviler på tekstparsing, ikke krydstjek — påstå ikke
+  samme sikkerhedsniveau som for de nyere sæsoner.
+
+Denne standard gælder for al fremtidig rapportering af "hold" i
+Results-rapporten og enhver senere Preview-side — den er ikke kun en
+engangsrettelse til 042/043.
+
 **Note (2026-09-15): 18 uafklarede audit-kandidater fra opgave 006.**
 Af de 39 hold-/individafvigelser med en gemt, ordret Bemærkning er 18
 uden uafklarede kategorier — de er klassificeret som "administrativ
