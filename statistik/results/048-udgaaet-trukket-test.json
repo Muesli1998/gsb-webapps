@@ -1,7 +1,7 @@
 {
   "hypothesis1": 5,
-  "hypothesis2": 3,
-  "unexplained": 13,
+  "hypothesis2": 13,
+  "unexplained": 3,
   "rows": [
     {
       "season": 2010,
@@ -30,8 +30,29 @@
       "standing_matches": 4,
       "db_match_count": 8,
       "hypothesis1": false,
-      "opponent_marked_matches": [],
-      "hypothesis2": false
+      "opponent_marked_matches": [
+        {
+          "external_match_id": "50335",
+          "home_name_raw": "FKIF Frederiksberg",
+          "away_name_raw": "Gladsaxe Søborg"
+        },
+        {
+          "external_match_id": "50343",
+          "home_name_raw": "Gladsaxe Søborg",
+          "away_name_raw": "Hvidovre"
+        },
+        {
+          "external_match_id": "50359",
+          "home_name_raw": "Gladsaxe Søborg",
+          "away_name_raw": "BC37 Amager"
+        },
+        {
+          "external_match_id": "50368",
+          "home_name_raw": "Frederiksberg",
+          "away_name_raw": "Gladsaxe Søborg"
+        }
+      ],
+      "hypothesis2": true
     },
     {
       "season": 2013,
@@ -50,8 +71,14 @@
       "standing_matches": 6,
       "db_match_count": 7,
       "hypothesis1": false,
-      "opponent_marked_matches": [],
-      "hypothesis2": false
+      "opponent_marked_matches": [
+        {
+          "external_match_id": "141993",
+          "home_name_raw": "Sundby KFUM",
+          "away_name_raw": "Gladsaxe Søborg 3"
+        }
+      ],
+      "hypothesis2": true
     },
     {
       "season": 2014,
@@ -70,8 +97,14 @@
       "standing_matches": 6,
       "db_match_count": 7,
       "hypothesis1": false,
-      "opponent_marked_matches": [],
-      "hypothesis2": false
+      "opponent_marked_matches": [
+        {
+          "external_match_id": "193095",
+          "home_name_raw": "Gladsaxe Søborg 2",
+          "away_name_raw": "Amager ABC"
+        }
+      ],
+      "hypothesis2": true
     },
     {
       "season": 2015,
@@ -80,8 +113,14 @@
       "standing_matches": 6,
       "db_match_count": 7,
       "hypothesis1": false,
-      "opponent_marked_matches": [],
-      "hypothesis2": false
+      "opponent_marked_matches": [
+        {
+          "external_match_id": "193743",
+          "home_name_raw": "Gladsaxe Søborg 4",
+          "away_name_raw": "Frederiksberg 6"
+        }
+      ],
+      "hypothesis2": true
     },
     {
       "season": 2015,
@@ -110,8 +149,14 @@
       "standing_matches": 6,
       "db_match_count": 7,
       "hypothesis1": false,
-      "opponent_marked_matches": [],
-      "hypothesis2": false
+      "opponent_marked_matches": [
+        {
+          "external_match_id": "238777",
+          "home_name_raw": "Gladsaxe Søborg",
+          "away_name_raw": "KBK Kbh."
+        }
+      ],
+      "hypothesis2": true
     },
     {
       "season": 2016,
@@ -120,8 +165,14 @@
       "standing_matches": 6,
       "db_match_count": 7,
       "hypothesis1": false,
-      "opponent_marked_matches": [],
-      "hypothesis2": false
+      "opponent_marked_matches": [
+        {
+          "external_match_id": "238585",
+          "home_name_raw": "Gladsaxe Søborg 3",
+          "away_name_raw": "Charlottenlund 5"
+        }
+      ],
+      "hypothesis2": true
     },
     {
       "season": 2016,
@@ -150,8 +201,14 @@
       "standing_matches": 6,
       "db_match_count": 7,
       "hypothesis1": false,
-      "opponent_marked_matches": [],
-      "hypothesis2": false
+      "opponent_marked_matches": [
+        {
+          "external_match_id": "238869",
+          "home_name_raw": "Gladsaxe Søborg 3",
+          "away_name_raw": "NBK Amager"
+        }
+      ],
+      "hypothesis2": true
     },
     {
       "season": 2016,
@@ -160,8 +217,14 @@
       "standing_matches": 7,
       "db_match_count": 8,
       "hypothesis1": false,
-      "opponent_marked_matches": [],
-      "hypothesis2": false
+      "opponent_marked_matches": [
+        {
+          "external_match_id": "239810",
+          "home_name_raw": "KBK Kbh.",
+          "away_name_raw": "Gladsaxe Søborg"
+        }
+      ],
+      "hypothesis2": true
     },
     {
       "season": 2016,
@@ -170,8 +233,14 @@
       "standing_matches": 6,
       "db_match_count": 7,
       "hypothesis1": false,
-      "opponent_marked_matches": [],
-      "hypothesis2": false
+      "opponent_marked_matches": [
+        {
+          "external_match_id": "240054",
+          "home_name_raw": "Rødovre 2",
+          "away_name_raw": "Gladsaxe Søborg 3"
+        }
+      ],
+      "hypothesis2": true
     },
     {
       "season": 2016,
@@ -180,8 +249,14 @@
       "standing_matches": 7,
       "db_match_count": 8,
       "hypothesis1": false,
-      "opponent_marked_matches": [],
-      "hypothesis2": false
+      "opponent_marked_matches": [
+        {
+          "external_match_id": "238985",
+          "home_name_raw": "Gentofte",
+          "away_name_raw": "Gladsaxe Søborg"
+        }
+      ],
+      "hypothesis2": true
     },
     {
       "season": 2021,
