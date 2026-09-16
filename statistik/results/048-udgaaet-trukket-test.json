@@ -1,7 +1,7 @@
 {
   "hypothesis1": 5,
-  "hypothesis2": 13,
-  "unexplained": 3,
+  "hypothesis2": 10,
+  "unexplained": 6,
   "rows": [
     {
       "season": 2010,
@@ -21,7 +21,7 @@
       "db_match_count": 7,
       "hypothesis1": false,
       "opponent_marked_matches": [],
-      "hypothesis2": true
+      "hypothesis2": false
     },
     {
       "season": 2012,
@@ -266,7 +266,7 @@
       "db_match_count": 4,
       "hypothesis1": false,
       "opponent_marked_matches": [],
-      "hypothesis2": true
+      "hypothesis2": false
     },
     {
       "season": 2025,
@@ -286,7 +286,7 @@
       "db_match_count": 4,
       "hypothesis1": false,
       "opponent_marked_matches": [],
-      "hypothesis2": true
+      "hypothesis2": false
     }
   ]
 }
