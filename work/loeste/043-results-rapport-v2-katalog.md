@@ -78,4 +78,28 @@ osv.) — ikke en vurdering af om rapporten er "god nok".
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+Kørt read-only mod normalized DB. Resultatet dækker alle ti katalogpunkter:
+
+- 2.818 holdkampe fordelt på 16 sæsoner og 11 GSB-hold.
+- 7.599 spillere og 67.196 spillerrelationer.
+- Winrate pr. hold, spiller, sæson, årgang, kategori og hjemme/ude genereret.
+- 389 distinkte modstanderhold identificeret.
+- Kamptal genereret pr. spiller, hold, sæson og årgang.
+- Top-25 mest aktive spillere samt karriereoversigt for alle 7.599 spillere, med distinkte sæsoner og første/sidste sæson.
+- Kendte huller videreført: 18 audit-kandidater, 21 uforklarede stillingsrækker, 205 ungdomsholdkampe uden individuelle rækker (46 uden kategorisektion/afbud).
+
+Rapportfiler: `statistik/results/043-results-rapport-v2.md` og `.json`.
+
+**Commits:** `77a5690` (på grenen `opgave-043-results-rapport-v2-katalog`, aldrig merget separat).
+
+**Pointer-note (2026-09-16, tilføjet af Claude ved arkivering):** "11
+GSB-hold" ovenfor viste sig at være en navnekollision på tværs af
+årgange (samme holdnavn genbruges i fx senior, ungdom og veteran) —
+opdaget af Chris umiddelbart efter denne opgave blev afsluttet. Rettet i
+opgave 045, som genkørte 043 med korrekt holdidentitet (specifik
+`age_group_id`, ikke kun rånavn). De øvrige ni katalogpunkters tal
+(spillere, relationer, kategori, hjemme/ude, karriereoversigt osv.) er
+upåvirkede af rettelsen. Den faktiske `043-results-rapport-v2.md`/`.json`
+der ligger i repoet efter opgave 045's merge, er den rettede version —
+ikke denne opgaves oprindelige (branchen med de oprindelige,
+navnekolliderede filer blev aldrig selvstændigt merget til `main`).

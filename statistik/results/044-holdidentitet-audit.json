@@ -1,0 +1,152 @@
+{
+  "summary": {
+    "team_ids": 472,
+    "names": 11,
+    "rows": 472
+  },
+  "linked": {
+    "matches": 2818,
+    "linked_team_ids": 455
+  },
+  "affected_name_count": 10,
+  "by_name": [
+    {
+      "name_raw": "Gladsaxe Søborg 2",
+      "team_ids": 125,
+      "seasons": "2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025"
+    },
+    {
+      "name_raw": "Gladsaxe Søborg 1",
+      "team_ids": 101,
+      "seasons": "2010,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025"
+    },
+    {
+      "name_raw": "Gladsaxe Søborg",
+      "team_ids": 89,
+      "seasons": "2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025"
+    },
+    {
+      "name_raw": "Gladsaxe Søborg 3",
+      "team_ids": 77,
+      "seasons": "2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025"
+    },
+    {
+      "name_raw": "Gladsaxe Søborg 4",
+      "team_ids": 44,
+      "seasons": "2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025"
+    },
+    {
+      "name_raw": "Gladsaxe Søborg 5",
+      "team_ids": 17,
+      "seasons": "2015,2021,2022,2023,2024,2025"
+    },
+    {
+      "name_raw": "Gladsaxe Søborg 6",
+      "team_ids": 7,
+      "seasons": "2022,2024,2025"
+    },
+    {
+      "name_raw": "Gladsaxe Søborg 7",
+      "team_ids": 5,
+      "seasons": "2024,2025"
+    },
+    {
+      "name_raw": "Gladsaxe Søborg 8",
+      "team_ids": 4,
+      "seasons": "2024,2025"
+    },
+    {
+      "name_raw": "Gladsaxe Søborg 9",
+      "team_ids": 2,
+      "seasons": "2024,2025"
+    },
+    {
+      "name_raw": "Gladsaxe Søborg 10",
+      "team_ids": 1,
+      "seasons": "2025"
+    }
+  ],
+  "by_season": [
+    {
+      "season_id": 2010,
+      "team_ids": 2,
+      "names": 1
+    },
+    {
+      "season_id": 2011,
+      "team_ids": 24,
+      "names": 4
+    },
+    {
+      "season_id": 2012,
+      "team_ids": 19,
+      "names": 4
+    },
+    {
+      "season_id": 2013,
+      "team_ids": 22,
+      "names": 4
+    },
+    {
+      "season_id": 2014,
+      "team_ids": 21,
+      "names": 4
+    },
+    {
+      "season_id": 2015,
+      "team_ids": 22,
+      "names": 5
+    },
+    {
+      "season_id": 2016,
+      "team_ids": 26,
+      "names": 5
+    },
+    {
+      "season_id": 2017,
+      "team_ids": 23,
+      "names": 5
+    },
+    {
+      "season_id": 2018,
+      "team_ids": 21,
+      "names": 5
+    },
+    {
+      "season_id": 2019,
+      "team_ids": 20,
+      "names": 5
+    },
+    {
+      "season_id": 2020,
+      "team_ids": 24,
+      "names": 5
+    },
+    {
+      "season_id": 2021,
+      "team_ids": 34,
+      "names": 6
+    },
+    {
+      "season_id": 2022,
+      "team_ids": 42,
+      "names": 7
+    },
+    {
+      "season_id": 2023,
+      "team_ids": 42,
+      "names": 6
+    },
+    {
+      "season_id": 2024,
+      "team_ids": 53,
+      "names": 10
+    },
+    {
+      "season_id": 2025,
+      "team_ids": 77,
+      "names": 11
+    }
+  ],
+  "conclusion": "11 hold i 042/043 var navnekollision: rapporterne grupperede på name_raw. teams indeholder 472 unikke team_id; 2025 har 77. Holdidentiteten er derfor rettet til rånavn + aldersgruppe."
+}
