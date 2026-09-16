@@ -6,6 +6,13 @@ Dette er den samlede log over de read-only undersøgelser, der er kørt for GSB-
 statistikprojektet. API-fejl er ikke fortolket som bevis på, at data mangler.
 Uverificerede fortolkninger er markeret som ukendte.
 
+## 2026-09-16 — Opgave 047 kvalitetstjek
+
+Verificerede 043 efter 046: 980 modstanderidentiteter, 7.599 spillere,
+67.196 relationer og top-25-karriereudvalg. Genbesøgte alle 21 uforklarede
+stillingsrækker; 0/21 skyldtes ungdoms-holdtypekollision. Ingen tidligere
+resultat- eller plandokumenter blev ændret.
+
 ## 2026-09-16 — Opgave 046 ungdom holdtype/niveau
 
 Parserede ungdomscompetitions med 12 age_group_id-værdier og 85

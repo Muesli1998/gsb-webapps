@@ -1,0 +1,219 @@
+{
+  "population": 21,
+  "explained_by_youth_holdtype_collision": 0,
+  "detail": [
+    {
+      "season": 2010,
+      "league_group_id": 431,
+      "team_name_raw": "Gladsaxe Søborg 1",
+      "standings_rows": [],
+      "age_group_ids": [],
+      "holdtype_niveau_combinations": [],
+      "youth": false,
+      "multiple_combinations": false
+    },
+    {
+      "season": 2011,
+      "league_group_id": 71,
+      "team_name_raw": "Gladsaxe Søborg udgået",
+      "standings_rows": [],
+      "age_group_ids": [],
+      "holdtype_niveau_combinations": [],
+      "youth": false,
+      "multiple_combinations": false
+    },
+    {
+      "season": 2012,
+      "league_group_id": 1329,
+      "team_name_raw": "Gladsaxe Søborg",
+      "standings_rows": [],
+      "age_group_ids": [],
+      "holdtype_niveau_combinations": [],
+      "youth": false,
+      "multiple_combinations": false
+    },
+    {
+      "season": 2013,
+      "league_group_id": 2693,
+      "team_name_raw": "Gladsaxe Søborg",
+      "standings_rows": [],
+      "age_group_ids": [],
+      "holdtype_niveau_combinations": [],
+      "youth": false,
+      "multiple_combinations": false
+    },
+    {
+      "season": 2014,
+      "league_group_id": 4245,
+      "team_name_raw": "Gladsaxe Søborg 3",
+      "standings_rows": [],
+      "age_group_ids": [],
+      "holdtype_niveau_combinations": [],
+      "youth": false,
+      "multiple_combinations": false
+    },
+    {
+      "season": 2014,
+      "league_group_id": 4267,
+      "team_name_raw": "Gladsaxe Søborg 2 udgået",
+      "standings_rows": [],
+      "age_group_ids": [],
+      "holdtype_niveau_combinations": [],
+      "youth": false,
+      "multiple_combinations": false
+    },
+    {
+      "season": 2015,
+      "league_group_id": 5984,
+      "team_name_raw": "Gladsaxe Søborg 2",
+      "standings_rows": [],
+      "age_group_ids": [],
+      "holdtype_niveau_combinations": [],
+      "youth": false,
+      "multiple_combinations": false
+    },
+    {
+      "season": 2015,
+      "league_group_id": 6019,
+      "team_name_raw": "Gladsaxe Søborg 4",
+      "standings_rows": [],
+      "age_group_ids": [],
+      "holdtype_niveau_combinations": [],
+      "youth": false,
+      "multiple_combinations": false
+    },
+    {
+      "season": 2015,
+      "league_group_id": 6022,
+      "team_name_raw": "Gladsaxe Søborg 5 udgået",
+      "standings_rows": [],
+      "age_group_ids": [],
+      "holdtype_niveau_combinations": [],
+      "youth": false,
+      "multiple_combinations": false
+    },
+    {
+      "season": 2015,
+      "league_group_id": 6099,
+      "team_name_raw": "Gladsaxe Søborg udgået",
+      "standings_rows": [],
+      "age_group_ids": [],
+      "holdtype_niveau_combinations": [],
+      "youth": false,
+      "multiple_combinations": false
+    },
+    {
+      "season": 2016,
+      "league_group_id": 7631,
+      "team_name_raw": "Gladsaxe Søborg",
+      "standings_rows": [],
+      "age_group_ids": [],
+      "holdtype_niveau_combinations": [],
+      "youth": false,
+      "multiple_combinations": false
+    },
+    {
+      "season": 2016,
+      "league_group_id": 7640,
+      "team_name_raw": "Gladsaxe Søborg 3",
+      "standings_rows": [],
+      "age_group_ids": [],
+      "holdtype_niveau_combinations": [],
+      "youth": false,
+      "multiple_combinations": false
+    },
+    {
+      "season": 2016,
+      "league_group_id": 7643,
+      "team_name_raw": "Gladsaxe Søborg 4 udgået",
+      "standings_rows": [],
+      "age_group_ids": [],
+      "holdtype_niveau_combinations": [],
+      "youth": false,
+      "multiple_combinations": false
+    },
+    {
+      "season": 2016,
+      "league_group_id": 7644,
+      "team_name_raw": "Gladsaxe Søborg 4 trukket",
+      "standings_rows": [],
+      "age_group_ids": [],
+      "holdtype_niveau_combinations": [],
+      "youth": false,
+      "multiple_combinations": false
+    },
+    {
+      "season": 2016,
+      "league_group_id": 7647,
+      "team_name_raw": "Gladsaxe Søborg 3",
+      "standings_rows": [],
+      "age_group_ids": [],
+      "holdtype_niveau_combinations": [],
+      "youth": false,
+      "multiple_combinations": false
+    },
+    {
+      "season": 2016,
+      "league_group_id": 7652,
+      "team_name_raw": "Gladsaxe Søborg",
+      "standings_rows": [],
+      "age_group_ids": [],
+      "holdtype_niveau_combinations": [],
+      "youth": false,
+      "multiple_combinations": false
+    },
+    {
+      "season": 2016,
+      "league_group_id": 7654,
+      "team_name_raw": "Gladsaxe Søborg 3",
+      "standings_rows": [],
+      "age_group_ids": [],
+      "holdtype_niveau_combinations": [],
+      "youth": false,
+      "multiple_combinations": false
+    },
+    {
+      "season": 2016,
+      "league_group_id": 7660,
+      "team_name_raw": "Gladsaxe Søborg",
+      "standings_rows": [],
+      "age_group_ids": [],
+      "holdtype_niveau_combinations": [],
+      "youth": false,
+      "multiple_combinations": false
+    },
+    {
+      "season": 2021,
+      "league_group_id": 13965,
+      "team_name_raw": "Gladsaxe Søborg 1",
+      "standings_rows": [],
+      "age_group_ids": [],
+      "holdtype_niveau_combinations": [],
+      "youth": false,
+      "multiple_combinations": false
+    },
+    {
+      "season": 2025,
+      "league_group_id": 18504,
+      "team_name_raw": "Gladsaxe Søborg 1",
+      "standings_rows": [],
+      "age_group_ids": [],
+      "holdtype_niveau_combinations": [],
+      "youth": false,
+      "multiple_combinations": false
+    },
+    {
+      "season": 2025,
+      "league_group_id": 18733,
+      "team_name_raw": "Gladsaxe Søborg 3",
+      "standings_rows": [],
+      "age_group_ids": [],
+      "holdtype_niveau_combinations": [],
+      "youth": false,
+      "multiple_combinations": false
+    }
+  ],
+  "opponent_identities_043": 980,
+  "most_active_players_count": 25,
+  "career_players": 7599
+}
