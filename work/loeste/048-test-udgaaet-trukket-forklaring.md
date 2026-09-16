@@ -101,4 +101,4 @@ resultatfiler/planer.
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
 
 ## Resultat
-Hypotese 1: 5 af 21 forklaret (0 stillingskampe, 6-9 DB-kampe). Hypotese 2: 0. Fortsat uforklarede: 16. Ingen markerede modstandernavne blev fundet i GSB-kampe.
+Hypotese 1: 5 af 21 forklaret (0 stillingskampe, 6-9 DB-kampe). Hypotese 2: 13 af 16 resterende rækker forklaret; 3 fortsat uforklarede. Modstanderstatus blev matchet ved at fjerne suffixet udgået/trukket fra standings-navnet og sammenligne med kampnavnet. Eksempel: 2016/pulje 7640, kamp 238585 mod Charlottenlund 5; standings har Charlottenlund 5 udgået. Samlet: 18 forklaret af 21, 3 uforklarede.`r`n
