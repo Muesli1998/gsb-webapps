@@ -1,218 +1,218 @@
 {
-  "generatedAt": "2026-09-16T06:04:56.492Z",
+  "generatedAt": "2026-09-16T18:20:03.900Z",
   "team_winrate": [
     {
-      "key": "Gladsaxe Søborg 3 (age_group_id=2)",
+      "key": "Gladsaxe Søborg 3 (age_group_id=2, unknown unknown unknown)",
       "matches": 16,
       "wins": 4,
       "losses": 10,
       "win_percent": 25
     },
     {
-      "key": "Gladsaxe Søborg 1 (age_group_id=2)",
+      "key": "Gladsaxe Søborg 1 (age_group_id=2, unknown unknown unknown)",
       "matches": 43,
       "wins": 26,
       "losses": 15,
       "win_percent": 60.47
     },
     {
-      "key": "Gladsaxe Søborg 2 (age_group_id=2)",
+      "key": "Gladsaxe Søborg 2 (age_group_id=2, unknown unknown unknown)",
       "matches": 34,
       "wins": 10,
       "losses": 17,
       "win_percent": 29.41
     },
     {
-      "key": "Gladsaxe Søborg 4 (age_group_id=2)",
+      "key": "Gladsaxe Søborg 4 (age_group_id=2, unknown unknown unknown)",
       "matches": 6,
       "wins": 1,
       "losses": 5,
       "win_percent": 16.67
     },
     {
-      "key": "Gladsaxe Søborg 5 (age_group_id=2)",
+      "key": "Gladsaxe Søborg 5 (age_group_id=2, unknown unknown unknown)",
       "matches": 6,
       "wins": 1,
       "losses": 5,
       "win_percent": 16.67
     },
     {
-      "key": "Gladsaxe Søborg 1 (age_group_id=3)",
+      "key": "Gladsaxe Søborg 1 (age_group_id=3, unknown unknown unknown)",
       "matches": 82,
       "wins": 47,
       "losses": 24,
       "win_percent": 57.32
     },
     {
-      "key": "Gladsaxe Søborg 2 (age_group_id=3)",
+      "key": "Gladsaxe Søborg 2 (age_group_id=3, unknown unknown unknown)",
       "matches": 85,
       "wins": 44,
       "losses": 33,
       "win_percent": 51.76
     },
     {
-      "key": "Gladsaxe Søborg 3 (age_group_id=3)",
+      "key": "Gladsaxe Søborg 3 (age_group_id=3, unknown unknown unknown)",
       "matches": 48,
       "wins": 21,
       "losses": 27,
       "win_percent": 43.75
     },
     {
-      "key": "Gladsaxe Søborg 4 (age_group_id=3)",
+      "key": "Gladsaxe Søborg 4 (age_group_id=3, unknown unknown unknown)",
       "matches": 39,
       "wins": 15,
       "losses": 22,
       "win_percent": 38.46
     },
     {
-      "key": "Gladsaxe Søborg 5 (age_group_id=3)",
+      "key": "Gladsaxe Søborg 5 (age_group_id=3, unknown unknown unknown)",
       "matches": 30,
       "wins": 19,
       "losses": 11,
       "win_percent": 63.33
     },
     {
-      "key": "Gladsaxe Søborg 1 (age_group_id=4)",
+      "key": "Gladsaxe Søborg 1 (age_group_id=4, unknown unknown unknown)",
       "matches": 88,
       "wins": 41,
       "losses": 42,
       "win_percent": 46.59
     },
     {
-      "key": "Gladsaxe Søborg 2 (age_group_id=4)",
+      "key": "Gladsaxe Søborg 2 (age_group_id=4, unknown unknown unknown)",
       "matches": 96,
       "wins": 44,
       "losses": 45,
       "win_percent": 45.83
     },
     {
-      "key": "Gladsaxe Søborg 3 (age_group_id=4)",
+      "key": "Gladsaxe Søborg 3 (age_group_id=4, unknown unknown unknown)",
       "matches": 57,
       "wins": 31,
       "losses": 26,
       "win_percent": 54.39
     },
     {
-      "key": "Gladsaxe Søborg 4 (age_group_id=4)",
+      "key": "Gladsaxe Søborg 4 (age_group_id=4, unknown unknown unknown)",
       "matches": 19,
       "wins": 3,
       "losses": 14,
       "win_percent": 15.79
     },
     {
-      "key": "Gladsaxe Søborg 7 (age_group_id=4)",
+      "key": "Gladsaxe Søborg 7 (age_group_id=4, unknown unknown unknown)",
       "matches": 20,
       "wins": 3,
       "losses": 17,
       "win_percent": 15
     },
     {
-      "key": "Gladsaxe Søborg 5 (age_group_id=4)",
+      "key": "Gladsaxe Søborg 5 (age_group_id=4, unknown unknown unknown)",
       "matches": 19,
       "wins": 5,
       "losses": 14,
       "win_percent": 26.32
     },
     {
-      "key": "Gladsaxe Søborg 6 (age_group_id=4)",
+      "key": "Gladsaxe Søborg 6 (age_group_id=4, unknown unknown unknown)",
       "matches": 13,
       "wins": 9,
       "losses": 4,
       "win_percent": 69.23
     },
     {
-      "key": "Gladsaxe Søborg 8 (age_group_id=4)",
+      "key": "Gladsaxe Søborg 8 (age_group_id=4, unknown unknown unknown)",
       "matches": 20,
       "wins": 4,
       "losses": 16,
       "win_percent": 20
     },
     {
-      "key": "Gladsaxe Søborg 9 (age_group_id=4)",
+      "key": "Gladsaxe Søborg 9 (age_group_id=4, unknown unknown unknown)",
       "matches": 4,
       "wins": 4,
       "losses": 0,
       "win_percent": 100
     },
     {
-      "key": "Gladsaxe Søborg 10 (age_group_id=4)",
+      "key": "Gladsaxe Søborg 10 (age_group_id=4, unknown unknown unknown)",
       "matches": 2,
       "wins": 1,
       "losses": 1,
       "win_percent": 50
     },
     {
-      "key": "Gladsaxe Søborg 1 (age_group_id=5)",
+      "key": "Gladsaxe Søborg 1 (age_group_id=5, unknown unknown unknown)",
       "matches": 77,
       "wins": 32,
       "losses": 41,
       "win_percent": 41.56
     },
     {
-      "key": "Gladsaxe Søborg 2 (age_group_id=5)",
+      "key": "Gladsaxe Søborg 2 (age_group_id=5, unknown unknown unknown)",
       "matches": 91,
       "wins": 64,
       "losses": 20,
       "win_percent": 70.33
     },
     {
-      "key": "Gladsaxe Søborg 3 (age_group_id=5)",
+      "key": "Gladsaxe Søborg 3 (age_group_id=5, unknown unknown unknown)",
       "matches": 60,
       "wins": 37,
       "losses": 20,
       "win_percent": 61.67
     },
     {
-      "key": "Gladsaxe Søborg 4 (age_group_id=5)",
+      "key": "Gladsaxe Søborg 4 (age_group_id=5, unknown unknown unknown)",
       "matches": 25,
       "wins": 12,
       "losses": 12,
       "win_percent": 48
     },
     {
-      "key": "Gladsaxe Søborg 5 (age_group_id=5)",
+      "key": "Gladsaxe Søborg 5 (age_group_id=5, unknown unknown unknown)",
       "matches": 41,
       "wins": 10,
       "losses": 31,
       "win_percent": 24.39
     },
     {
-      "key": "Gladsaxe Søborg 6 (age_group_id=5)",
+      "key": "Gladsaxe Søborg 6 (age_group_id=5, unknown unknown unknown)",
       "matches": 16,
       "wins": 3,
       "losses": 13,
       "win_percent": 18.75
     },
     {
-      "key": "Gladsaxe Søborg 7 (age_group_id=5)",
+      "key": "Gladsaxe Søborg 7 (age_group_id=5, unknown unknown unknown)",
       "matches": 10,
       "wins": 2,
       "losses": 8,
       "win_percent": 20
     },
     {
-      "key": "Gladsaxe Søborg 8 (age_group_id=5)",
+      "key": "Gladsaxe Søborg 8 (age_group_id=5, unknown unknown unknown)",
       "matches": 2,
       "wins": 1,
       "losses": 1,
       "win_percent": 50
     },
     {
-      "key": "Gladsaxe Søborg 1 (age_group_id=18)",
+      "key": "Gladsaxe Søborg 1 (age_group_id=18, unknown unknown unknown)",
       "matches": 57,
       "wins": 35,
       "losses": 22,
       "win_percent": 61.4
     },
     {
-      "key": "Gladsaxe Søborg 2 (age_group_id=18)",
+      "key": "Gladsaxe Søborg 2 (age_group_id=18, unknown unknown unknown)",
       "matches": 32,
       "wins": 5,
       "losses": 27,
       "win_percent": 15.63
     },
     {
-      "key": "Gladsaxe Søborg 3 (age_group_id=18)",
+      "key": "Gladsaxe Søborg 3 (age_group_id=18, unknown unknown unknown)",
       "matches": 2,
       "wins": 0,
       "losses": 2,
@@ -338,7 +338,7 @@
       "win_percent": 76.19
     },
     {
-      "key": "Gladsaxe Søborg (age_group_id=3)",
+      "key": "Gladsaxe Søborg (age_group_id=3, unknown unknown unknown)",
       "matches": 64,
       "wins": 31,
       "losses": 30,
@@ -366,28 +366,28 @@
       "win_percent": 40
     },
     {
-      "key": "Gladsaxe Søborg (age_group_id=4)",
+      "key": "Gladsaxe Søborg (age_group_id=4, unknown unknown unknown)",
       "matches": 50,
       "wins": 33,
       "losses": 11,
       "win_percent": 66
     },
     {
-      "key": "Gladsaxe Søborg (age_group_id=5)",
+      "key": "Gladsaxe Søborg (age_group_id=5, unknown unknown unknown)",
       "matches": 44,
       "wins": 28,
       "losses": 8,
       "win_percent": 63.64
     },
     {
-      "key": "Gladsaxe Søborg (age_group_id=6)",
+      "key": "Gladsaxe Søborg (age_group_id=6, unknown unknown unknown)",
       "matches": 49,
       "wins": 17,
       "losses": 26,
       "win_percent": 34.69
     },
     {
-      "key": "Gladsaxe Søborg 2 (age_group_id=6)",
+      "key": "Gladsaxe Søborg 2 (age_group_id=6, unknown unknown unknown)",
       "matches": 7,
       "wins": 2,
       "losses": 5,
@@ -144249,217 +144249,217 @@
     ],
     "team": [
       {
-        "key": "Gladsaxe Søborg 3 (age_group_id=2)",
+        "key": "Gladsaxe Søborg 3 (age_group_id=2, unknown unknown unknown)",
         "matches": 16,
         "wins": 4,
         "losses": 10,
         "win_percent": 25
       },
       {
-        "key": "Gladsaxe Søborg 1 (age_group_id=2)",
+        "key": "Gladsaxe Søborg 1 (age_group_id=2, unknown unknown unknown)",
         "matches": 43,
         "wins": 26,
         "losses": 15,
         "win_percent": 60.47
       },
       {
-        "key": "Gladsaxe Søborg 2 (age_group_id=2)",
+        "key": "Gladsaxe Søborg 2 (age_group_id=2, unknown unknown unknown)",
         "matches": 34,
         "wins": 10,
         "losses": 17,
         "win_percent": 29.41
       },
       {
-        "key": "Gladsaxe Søborg 4 (age_group_id=2)",
+        "key": "Gladsaxe Søborg 4 (age_group_id=2, unknown unknown unknown)",
         "matches": 6,
         "wins": 1,
         "losses": 5,
         "win_percent": 16.67
       },
       {
-        "key": "Gladsaxe Søborg 5 (age_group_id=2)",
+        "key": "Gladsaxe Søborg 5 (age_group_id=2, unknown unknown unknown)",
         "matches": 6,
         "wins": 1,
         "losses": 5,
         "win_percent": 16.67
       },
       {
-        "key": "Gladsaxe Søborg 1 (age_group_id=3)",
+        "key": "Gladsaxe Søborg 1 (age_group_id=3, unknown unknown unknown)",
         "matches": 82,
         "wins": 47,
         "losses": 24,
         "win_percent": 57.32
       },
       {
-        "key": "Gladsaxe Søborg 2 (age_group_id=3)",
+        "key": "Gladsaxe Søborg 2 (age_group_id=3, unknown unknown unknown)",
         "matches": 85,
         "wins": 44,
         "losses": 33,
         "win_percent": 51.76
       },
       {
-        "key": "Gladsaxe Søborg 3 (age_group_id=3)",
+        "key": "Gladsaxe Søborg 3 (age_group_id=3, unknown unknown unknown)",
         "matches": 48,
         "wins": 21,
         "losses": 27,
         "win_percent": 43.75
       },
       {
-        "key": "Gladsaxe Søborg 4 (age_group_id=3)",
+        "key": "Gladsaxe Søborg 4 (age_group_id=3, unknown unknown unknown)",
         "matches": 39,
         "wins": 15,
         "losses": 22,
         "win_percent": 38.46
       },
       {
-        "key": "Gladsaxe Søborg 5 (age_group_id=3)",
+        "key": "Gladsaxe Søborg 5 (age_group_id=3, unknown unknown unknown)",
         "matches": 30,
         "wins": 19,
         "losses": 11,
         "win_percent": 63.33
       },
       {
-        "key": "Gladsaxe Søborg 1 (age_group_id=4)",
+        "key": "Gladsaxe Søborg 1 (age_group_id=4, unknown unknown unknown)",
         "matches": 88,
         "wins": 41,
         "losses": 42,
         "win_percent": 46.59
       },
       {
-        "key": "Gladsaxe Søborg 2 (age_group_id=4)",
+        "key": "Gladsaxe Søborg 2 (age_group_id=4, unknown unknown unknown)",
         "matches": 96,
         "wins": 44,
         "losses": 45,
         "win_percent": 45.83
       },
       {
-        "key": "Gladsaxe Søborg 3 (age_group_id=4)",
+        "key": "Gladsaxe Søborg 3 (age_group_id=4, unknown unknown unknown)",
         "matches": 57,
         "wins": 31,
         "losses": 26,
         "win_percent": 54.39
       },
       {
-        "key": "Gladsaxe Søborg 4 (age_group_id=4)",
+        "key": "Gladsaxe Søborg 4 (age_group_id=4, unknown unknown unknown)",
         "matches": 19,
         "wins": 3,
         "losses": 14,
         "win_percent": 15.79
       },
       {
-        "key": "Gladsaxe Søborg 7 (age_group_id=4)",
+        "key": "Gladsaxe Søborg 7 (age_group_id=4, unknown unknown unknown)",
         "matches": 20,
         "wins": 3,
         "losses": 17,
         "win_percent": 15
       },
       {
-        "key": "Gladsaxe Søborg 5 (age_group_id=4)",
+        "key": "Gladsaxe Søborg 5 (age_group_id=4, unknown unknown unknown)",
         "matches": 19,
         "wins": 5,
         "losses": 14,
         "win_percent": 26.32
       },
       {
-        "key": "Gladsaxe Søborg 6 (age_group_id=4)",
+        "key": "Gladsaxe Søborg 6 (age_group_id=4, unknown unknown unknown)",
         "matches": 13,
         "wins": 9,
         "losses": 4,
         "win_percent": 69.23
       },
       {
-        "key": "Gladsaxe Søborg 8 (age_group_id=4)",
+        "key": "Gladsaxe Søborg 8 (age_group_id=4, unknown unknown unknown)",
         "matches": 20,
         "wins": 4,
         "losses": 16,
         "win_percent": 20
       },
       {
-        "key": "Gladsaxe Søborg 9 (age_group_id=4)",
+        "key": "Gladsaxe Søborg 9 (age_group_id=4, unknown unknown unknown)",
         "matches": 4,
         "wins": 4,
         "losses": 0,
         "win_percent": 100
       },
       {
-        "key": "Gladsaxe Søborg 10 (age_group_id=4)",
+        "key": "Gladsaxe Søborg 10 (age_group_id=4, unknown unknown unknown)",
         "matches": 2,
         "wins": 1,
         "losses": 1,
         "win_percent": 50
       },
       {
-        "key": "Gladsaxe Søborg 1 (age_group_id=5)",
+        "key": "Gladsaxe Søborg 1 (age_group_id=5, unknown unknown unknown)",
         "matches": 77,
         "wins": 32,
         "losses": 41,
         "win_percent": 41.56
       },
       {
-        "key": "Gladsaxe Søborg 2 (age_group_id=5)",
+        "key": "Gladsaxe Søborg 2 (age_group_id=5, unknown unknown unknown)",
         "matches": 91,
         "wins": 64,
         "losses": 20,
         "win_percent": 70.33
       },
       {
-        "key": "Gladsaxe Søborg 3 (age_group_id=5)",
+        "key": "Gladsaxe Søborg 3 (age_group_id=5, unknown unknown unknown)",
         "matches": 60,
         "wins": 37,
         "losses": 20,
         "win_percent": 61.67
       },
       {
-        "key": "Gladsaxe Søborg 4 (age_group_id=5)",
+        "key": "Gladsaxe Søborg 4 (age_group_id=5, unknown unknown unknown)",
         "matches": 25,
         "wins": 12,
         "losses": 12,
         "win_percent": 48
       },
       {
-        "key": "Gladsaxe Søborg 5 (age_group_id=5)",
+        "key": "Gladsaxe Søborg 5 (age_group_id=5, unknown unknown unknown)",
         "matches": 41,
         "wins": 10,
         "losses": 31,
         "win_percent": 24.39
       },
       {
-        "key": "Gladsaxe Søborg 6 (age_group_id=5)",
+        "key": "Gladsaxe Søborg 6 (age_group_id=5, unknown unknown unknown)",
         "matches": 16,
         "wins": 3,
         "losses": 13,
         "win_percent": 18.75
       },
       {
-        "key": "Gladsaxe Søborg 7 (age_group_id=5)",
+        "key": "Gladsaxe Søborg 7 (age_group_id=5, unknown unknown unknown)",
         "matches": 10,
         "wins": 2,
         "losses": 8,
         "win_percent": 20
       },
       {
-        "key": "Gladsaxe Søborg 8 (age_group_id=5)",
+        "key": "Gladsaxe Søborg 8 (age_group_id=5, unknown unknown unknown)",
         "matches": 2,
         "wins": 1,
         "losses": 1,
         "win_percent": 50
       },
       {
-        "key": "Gladsaxe Søborg 1 (age_group_id=18)",
+        "key": "Gladsaxe Søborg 1 (age_group_id=18, unknown unknown unknown)",
         "matches": 57,
         "wins": 35,
         "losses": 22,
         "win_percent": 61.4
       },
       {
-        "key": "Gladsaxe Søborg 2 (age_group_id=18)",
+        "key": "Gladsaxe Søborg 2 (age_group_id=18, unknown unknown unknown)",
         "matches": 32,
         "wins": 5,
         "losses": 27,
         "win_percent": 15.63
       },
       {
-        "key": "Gladsaxe Søborg 3 (age_group_id=18)",
+        "key": "Gladsaxe Søborg 3 (age_group_id=18, unknown unknown unknown)",
         "matches": 2,
         "wins": 0,
         "losses": 2,
@@ -144585,7 +144585,7 @@
         "win_percent": 76.19
       },
       {
-        "key": "Gladsaxe Søborg (age_group_id=3)",
+        "key": "Gladsaxe Søborg (age_group_id=3, unknown unknown unknown)",
         "matches": 64,
         "wins": 31,
         "losses": 30,
@@ -144613,28 +144613,28 @@
         "win_percent": 40
       },
       {
-        "key": "Gladsaxe Søborg (age_group_id=4)",
+        "key": "Gladsaxe Søborg (age_group_id=4, unknown unknown unknown)",
         "matches": 50,
         "wins": 33,
         "losses": 11,
         "win_percent": 66
       },
       {
-        "key": "Gladsaxe Søborg (age_group_id=5)",
+        "key": "Gladsaxe Søborg (age_group_id=5, unknown unknown unknown)",
         "matches": 44,
         "wins": 28,
         "losses": 8,
         "win_percent": 63.64
       },
       {
-        "key": "Gladsaxe Søborg (age_group_id=6)",
+        "key": "Gladsaxe Søborg (age_group_id=6, unknown unknown unknown)",
         "matches": 49,
         "wins": 17,
         "losses": 26,
         "win_percent": 34.69
       },
       {
-        "key": "Gladsaxe Søborg 2 (age_group_id=6)",
+        "key": "Gladsaxe Søborg 2 (age_group_id=6, unknown unknown unknown)",
         "matches": 7,
         "wins": 2,
         "losses": 5,

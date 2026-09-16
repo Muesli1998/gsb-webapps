@@ -6,6 +6,14 @@ Dette er den samlede log over de read-only undersøgelser, der er kørt for GSB-
 statistikprojektet. API-fejl er ikke fortolket som bevis på, at data mangler.
 Uverificerede fortolkninger er markeret som ukendte.
 
+## 2026-09-16 — Opgave 046 ungdom holdtype/niveau
+
+Parserede ungdomscompetitions med 12 age_group_id-værdier og 85
+holdtype/niveau/point-kombinationer. 34 DMU-fasegrupper kollapser med lokal
+identitet; 19 tvetydige pointafvigelser blev fundet (18 med spillerdata, 1
+tekstparsing alene). Rapporter 042/043 genkørt med finkornet ungdomsidentitet;
+senior/veteran-logik urørt.
+
 ## 2026-09-16 — Opgave 045 finmasket holdidentitet
 
 SQL bekræftede 12 age_group_id-værdier, 59 navn+årgang-identiteter og 70

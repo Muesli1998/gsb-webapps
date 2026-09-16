@@ -127,4 +127,16 @@ dem der blev afgjort med spillerdata vs. tekst alene.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+Parseren fandt 12 specifikke age_group_id-værdier og 85 kombinationer af
+holdtype/niveau/pointgrænse på tværs af ungdomscompetitions. 34 DMU-fasegrupper
+kan identificeres som samme navn, årgang, holdtype og pointgrænse og kollapser
+derfor korrekt med lokale faser. Der blev fundet 19 tvetydige DMU/lokal-par med
+forskellig pointgrænse; 18 havde individuelle spillerdata til krydstjek, mens 1
+kun kunne afgøres ud fra tekstparsing. Rapporten angiver spillergrundlaget uden
+at gætte en fysisk holdidentitet.
+
+042/043 er genkørt. Ungdomsidentiteten indeholder nu specifik årgang, holdtype
+og niveau/pointgrænse; senior/veteran bruger fortsat kun navn + age_group_id.
+Det samlede registrerede holdantal er 58 i 042/043-outputtet.
+
+**Commits:** afventer commit på denne gren
