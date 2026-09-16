@@ -139,4 +139,4 @@ at gætte en fysisk holdidentitet.
 og niveau/pointgrænse; senior/veteran bruger fortsat kun navn + age_group_id.
 Det samlede registrerede holdantal er 58 i 042/043-outputtet.
 
-**Commits:** afventer commit på denne gren
+**Commits:** opdateret på denne gren
