@@ -102,3 +102,4 @@ resultatfiler/planer.
 
 ## Resultat
 Hypotese 1: 5 af 21 forklaret (0 stillingskampe, 6-9 DB-kampe). Hypotese 2: 10 af 16 resterende rækker forklaret; 6 fortsat uforklarede. H2 kræver kendt stilling, positiv DB-stilling-afvigelse og mindst ét faktisk markeret modstanderhold. Eksempel: 2016/pulje 7640, kamp 238585 mod Charlottenlund 5; standings har Charlottenlund 5 udgået. Samlet: 15 forklaret af 21, 6 uforklarede.`r`n
+
