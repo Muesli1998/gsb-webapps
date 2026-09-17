@@ -1,1 +1,8 @@
-# Opgave 050 Del A\n\n- Gemte filer gennemgået: **97**\n- Sammenlignelige titler: **97**\n- Mismatches efter aldersgruppeheuristik: **67**\n- Ikke afgørbare uden sidetitel: **0**\n\nMismatches og uafgørbare filer fremgår af JSON. Ingen competitions-rækker er ændret.
+# Opgave 050 Del A — titelkontrol
+
+- Gemte filer gennemgået: **97**
+- Sammenlignelige sidetitler: **97**
+- Mismatches efter alders-/rækketoken: **3**
+- Ikke afgørbare uden entydig sidetitel: **0**
+
+Sammenligningen bruger den fulde linje med BAD-prefiks og sæsoninterval fra rawText. Mismatches og ikke-afgørbare filer er fuldt listet i JSON. Ingen competitions- eller standings-rækker er ændret.

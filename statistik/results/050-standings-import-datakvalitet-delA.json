@@ -1,12 +1,15 @@
 {
   "files": 97,
   "compared": 97,
-  "mismatches": 67,
+  "mismatches": 3,
   "undetermined": 0,
   "rows": [
     {
       "file": "2010-417.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+60 2011/2012",
+      "league": "60+ 2. Serie 60+ 2. Serie",
+      "season": 2010,
+      "league_group_id": "417",
       "db": [
         {
           "league_raw": "Kvalifikation til 3.division B Øst",
@@ -20,7 +23,10 @@
     },
     {
       "file": "2010-431.json",
-      "title": "BADDA",
+      "title": "BADDAN SEN 2010/2011",
+      "league": "Kvalifikation til 3.division B Øst",
+      "season": 2010,
+      "league_group_id": "431",
       "db": [
         {
           "league_raw": "Danmarksserien Øst pulje 4",
@@ -34,7 +40,10 @@
     },
     {
       "file": "2011-110.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN 2012/2013",
+      "league": "2.Serie P2 2.Serie P2",
+      "season": 2011,
+      "league_group_id": "110",
       "db": [
         {
           "league_raw": "U17 2. Serie U17 2. Serie",
@@ -43,12 +52,15 @@
           "league_group_id": "110"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2011-58.json",
-      "title": "BADDA",
+      "title": "BADDAN SEN 2011/2012",
+      "league": "Danmarksserien Øst pulje 2",
+      "season": 2011,
+      "league_group_id": "58",
       "db": [
         {
           "league_raw": "1. Serie Pulje 1 1. Serie Pulje 1",
@@ -62,7 +74,10 @@
     },
     {
       "file": "2011-60.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN 2011/2012",
+      "league": "1. Serie Pulje 1 1. Serie Pulje 1",
+      "season": 2011,
+      "league_group_id": "60",
       "db": [
         {
           "league_raw": "2. Serie Pulje 1 2. Serie Pulje 1",
@@ -76,7 +91,10 @@
     },
     {
       "file": "2011-71.json",
-      "title": "BADKBH U17 2011/2012\nVis rækker\n\n\nU17 2. Serie U17 2. Serie\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVU",
+      "title": "BADKBH U17 2011/2012",
+      "league": "U17 2. Serie U17 2. Serie",
+      "season": 2011,
+      "league_group_id": "71",
       "db": [
         {
           "league_raw": "Danmarksserien Øst pulje 2",
@@ -85,12 +103,15 @@
           "league_group_id": "71"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2011-74.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN 2011/2012",
+      "league": "2. Serie Pulje 1 2. Serie Pulje 1",
+      "season": 2011,
+      "league_group_id": "74",
       "db": [
         {
           "league_raw": "2. Serie Veteran 2. Serie Veteran",
@@ -99,12 +120,15 @@
           "league_group_id": "74"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2011-77.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+40 2011/2012",
+      "league": "2. Serie Veteran 2. Serie Veteran",
+      "season": 2011,
+      "league_group_id": "77",
       "db": [
         {
           "league_raw": "3. Serie Veteran 3. Serie Veteran",
@@ -113,12 +137,15 @@
           "league_group_id": "77"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2011-79.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+40 2011/2012",
+      "league": "3. Serie Veteran 3. Serie Veteran",
+      "season": 2011,
+      "league_group_id": "79",
       "db": [
         {
           "league_raw": "5. Serie Veteran 5. Serie Veteran",
@@ -127,12 +154,15 @@
           "league_group_id": "79"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2011-82.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+40 2011/2012",
+      "league": "5. Serie Veteran 5. Serie Veteran",
+      "season": 2011,
+      "league_group_id": "82",
       "db": [
         {
           "league_raw": "8. Serie Veteran 8. Serie Veteran",
@@ -141,12 +171,15 @@
           "league_group_id": "82"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2011-86.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+50 2011/2012",
+      "league": "50+ 5. Serie 50+ 5. Serie",
+      "season": 2011,
+      "league_group_id": "86",
       "db": [
         {
           "league_raw": "60+ 2. Serie 60+ 2. Serie",
@@ -155,12 +188,15 @@
           "league_group_id": "86"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2011-87.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+40 2011/2012",
+      "league": "8. Serie Veteran 8. Serie Veteran",
+      "season": 2011,
+      "league_group_id": "87",
       "db": [
         {
           "league_raw": "50+ 1. Serie 50+ 1. Serie",
@@ -169,12 +205,15 @@
           "league_group_id": "87"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2011-88.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+50 2011/2012",
+      "league": "50+ 1. Serie 50+ 1. Serie",
+      "season": 2011,
+      "league_group_id": "88",
       "db": [
         {
           "league_raw": "50+ 2. Serie 50+ 2. Serie",
@@ -183,12 +222,15 @@
           "league_group_id": "88"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2011-91.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+50 2011/2012",
+      "league": "50+ 2. Serie 50+ 2. Serie",
+      "season": 2011,
+      "league_group_id": "91",
       "db": [
         {
           "league_raw": "50+ 5. Serie 50+ 5. Serie",
@@ -197,12 +239,15 @@
           "league_group_id": "91"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2012-1285.json",
-      "title": "BADKBH U17 2012/2013\nVis rækker\n\n\nU17 2. Serie U17 2. Serie\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVU",
+      "title": "BADKBH U17 2012/2013",
+      "league": "U17 2. Serie U17 2. Serie",
+      "season": 2012,
+      "league_group_id": "1285",
       "db": [
         {
           "league_raw": "2.Serie P2 2.Serie P2",
@@ -211,12 +256,15 @@
           "league_group_id": "1285"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2012-1301.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN 2012/2013",
+      "league": "2.Serie P2 2.Serie P2",
+      "season": 2012,
+      "league_group_id": "1301",
       "db": [
         {
           "league_raw": "40+ 2.Serie 40+ 2. Serie",
@@ -225,12 +273,15 @@
           "league_group_id": "1301"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2012-1329.json",
-      "title": "BADKBH U17 2012/2013\nVis rækker\n\n\nU17 2. Serie U17 2. Serie\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVU",
+      "title": "BADKBH U17 2012/2013",
+      "league": "U17 2. Serie U17 2. Serie",
+      "season": 2012,
+      "league_group_id": "1329",
       "db": [
         {
           "league_raw": "U17 2. Serie U17 2. Serie",
@@ -244,7 +295,10 @@
     },
     {
       "file": "2013-2692.json",
-      "title": "BADKBH U17 2013/2014\nVis rækker\n\n\nU17 2. serie Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVU",
+      "title": "BADKBH U17 2013/2014",
+      "league": "U17 2. serie Pulje 1",
+      "season": 2013,
+      "league_group_id": "2692",
       "db": [
         {
           "league_raw": "U17 2. serie Pulje 1",
@@ -258,7 +312,10 @@
     },
     {
       "file": "2013-2693.json",
-      "title": "BADKBH U17 2013/2014\nVis rækker\n\n\nU17 Serie X1 Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVU",
+      "title": "BADKBH U17 2013/2014",
+      "league": "U17 Serie X1 Pulje 1",
+      "season": 2013,
+      "league_group_id": "2693",
       "db": [
         {
           "league_raw": "U17 Serie X1 Pulje 1",
@@ -272,7 +329,10 @@
     },
     {
       "file": "2014-4245.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+40 2014/2015",
+      "league": "40+ 5.serie Pulje 1",
+      "season": 2014,
+      "league_group_id": "4245",
       "db": [
         {
           "league_raw": "40+ 5.serie Pulje 1",
@@ -281,12 +341,15 @@
           "league_group_id": "4245"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2014-4247.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+40 2014/2015",
+      "league": "40+ 5.serie Pulje 1",
+      "season": 2014,
+      "league_group_id": "4247",
       "db": [
         {
           "league_raw": "40+ 7.serie Pulje 1",
@@ -295,12 +358,15 @@
           "league_group_id": "4247"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2014-4266.json",
-      "title": "BADKBH U17 2014/2015\nVis rækker\n\n\nU17 2.serie (4+2 M) Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVU",
+      "title": "BADKBH U17 2014/2015",
+      "league": "U17 2.serie (4+2 M) Pulje 1",
+      "season": 2014,
+      "league_group_id": "4266",
       "db": [
         {
           "league_raw": "U17 2.serie (4+2 M) Pulje 1",
@@ -314,7 +380,10 @@
     },
     {
       "file": "2014-4267.json",
-      "title": "BADKBH U17 2014/2015\nVis rækker\n\n\nU17 serie X1 (4 spillere C) Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVU",
+      "title": "BADKBH U17 2014/2015",
+      "league": "U17 serie X1 (4 spillere C) Pulje 1",
+      "season": 2014,
+      "league_group_id": "4267",
       "db": [
         {
           "league_raw": "U17 serie X1 (4 spillere C) Pulje 1",
@@ -328,7 +397,10 @@
     },
     {
       "file": "2015-5984.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+50 2015/2016",
+      "league": "50+ 2.serie Pulje 1",
+      "season": 2015,
+      "league_group_id": "5984",
       "db": [
         {
           "league_raw": "50+ 2.serie Pulje 1",
@@ -337,12 +409,15 @@
           "league_group_id": "5984"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2015-6013.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN 2015/2016",
+      "league": "2. serie P2 Pulje 1",
+      "season": 2015,
+      "league_group_id": "6013",
       "db": [
         {
           "league_raw": "2. serie P2  Pulje 1",
@@ -356,7 +431,10 @@
     },
     {
       "file": "2015-6019.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN 2015/2016",
+      "league": "4. serie P1 Pulje 1",
+      "season": 2015,
+      "league_group_id": "6019",
       "db": [
         {
           "league_raw": "4. serie P1  Pulje 1",
@@ -370,7 +448,10 @@
     },
     {
       "file": "2015-6022.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN 2015/2016",
+      "league": "5. serie P1 Pulje 1",
+      "season": 2015,
+      "league_group_id": "6022",
       "db": [
         {
           "league_raw": "5. serie P1  Pulje 1",
@@ -384,7 +465,10 @@
     },
     {
       "file": "2015-6099.json",
-      "title": "BADKBH U17 2015/2016\nVis rækker\n\n\nU17 A Række 4+2 Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVU",
+      "title": "BADKBH U17 2015/2016",
+      "league": "U17 A Række 4+2 Pulje 1",
+      "season": 2015,
+      "league_group_id": "6099",
       "db": [
         {
           "league_raw": "U17 A Række 4+2 Pulje 1",
@@ -398,7 +482,10 @@
     },
     {
       "file": "2016-7631.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+40 2016/2017",
+      "league": "40+ 1.serie Pulje 1",
+      "season": 2016,
+      "league_group_id": "7631",
       "db": [
         {
           "league_raw": "40+ 1.serie Pulje 1",
@@ -407,12 +494,15 @@
           "league_group_id": "7631"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2016-7640.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN 2016/2017",
+      "league": "3. Serie P1 Pulje 1",
+      "season": 2016,
+      "league_group_id": "7640",
       "db": [
         {
           "league_raw": "3. Serie P1 Pulje 1",
@@ -426,7 +516,10 @@
     },
     {
       "file": "2016-7643.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN 2016/2017",
+      "league": "4. Serie P2 Pulje 1",
+      "season": 2016,
+      "league_group_id": "7643",
       "db": [
         {
           "league_raw": "4. Serie P2 Pulje 1",
@@ -440,7 +533,10 @@
     },
     {
       "file": "2016-7644.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN 2016/2017",
+      "league": "30. Serie P1 Pulje 1",
+      "season": 2016,
+      "league_group_id": "7644",
       "db": [
         {
           "league_raw": "30. Serie P1 Pulje 1",
@@ -454,7 +550,10 @@
     },
     {
       "file": "2016-7647.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+40 2016/2017",
+      "league": "40+ 4.serie Pulje 1",
+      "season": 2016,
+      "league_group_id": "7647",
       "db": [
         {
           "league_raw": "40+ 4.serie Pulje 1",
@@ -463,12 +562,15 @@
           "league_group_id": "7647"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2016-7652.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+50 2016/2017",
+      "league": "50+ 1.serie Pulje 1",
+      "season": 2016,
+      "league_group_id": "7652",
       "db": [
         {
           "league_raw": "50+ 1.serie Pulje 1",
@@ -477,12 +579,15 @@
           "league_group_id": "7652"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2016-7654.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+50 2016/2017",
+      "league": "50+ 3.serie Pulje 1",
+      "season": 2016,
+      "league_group_id": "7654",
       "db": [
         {
           "league_raw": "50+ 3.serie Pulje 1",
@@ -491,12 +596,15 @@
           "league_group_id": "7654"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2016-7660.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+60 2016/2017",
+      "league": "60+ 1.serie Pulje 1",
+      "season": 2016,
+      "league_group_id": "7660",
       "db": [
         {
           "league_raw": "60+ 1.serie Pulje 1",
@@ -505,12 +613,15 @@
           "league_group_id": "7660"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2016-7685.json",
-      "title": "BADKBH U17/U19 2017/2018\nVis rækker\n\n\nU17/19 B (4) Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVU",
+      "title": "BADKBH U17/U19 2017/2018",
+      "league": "U17/19 B (4) Pulje 1",
+      "season": 2016,
+      "league_group_id": "7685",
       "db": [
         {
           "league_raw": "U17/U19 B (4) P2 Pulje 1",
@@ -524,7 +635,10 @@
     },
     {
       "file": "2016-8918.json",
-      "title": "BADDA",
+      "title": "BADDAN,DGI U17/U19 2016/2017",
+      "league": "DMU-Hold U17/19 B 4 Spillere Pulje 4",
+      "season": 2016,
+      "league_group_id": "8918",
       "db": [
         {
           "league_raw": "DMU-Hold U17/19 B 4 Spillere Pulje 4",
@@ -533,12 +647,15 @@
           "league_group_id": "8918"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2016-9019.json",
-      "title": "BADDA",
+      "title": "BADDAN,DGI U17/U19 2016/2017",
+      "league": "DMU-Hold U17/19 B 4 Spillere Finale 1. - 4. plads",
+      "season": 2016,
+      "league_group_id": "9019",
       "db": [
         {
           "league_raw": "DMU-Hold U17/19 B 4 Spillere Finale 1. - 4. plads",
@@ -547,12 +664,15 @@
           "league_group_id": "9019"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2017-9288.json",
-      "title": "BADKBH,BADSJ,DGI-",
+      "title": "BADKBH,BADSJ,DGI-NSJ,DGI-STS,DGI-MVS U17/U19 2017/2018",
+      "league": "U17/U19 M/A 4+2 Pulje 1",
+      "season": 2017,
+      "league_group_id": "9288",
       "db": [
         {
           "league_raw": "U17/19 B (4) Pulje 1",
@@ -561,12 +681,15 @@
           "league_group_id": "9288"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2017-9592.json",
-      "title": "BADKBH,BADSJ,DGI-",
+      "title": "BADKBH,BADSJ,DGI-NSJ,DGI-STS,DGI-MVS U17/U19 2017/2018",
+      "league": "U17/U19 M/A 4+2 Pulje 1",
+      "season": 2017,
+      "league_group_id": "9592",
       "db": [
         {
           "league_raw": "U17/U19 M/A 4+2 Pulje 1",
@@ -575,12 +698,15 @@
           "league_group_id": "9592"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2018-11355.json",
-      "title": "BADKBH,BADSJ,DGI-",
+      "title": "BADKBH,BADSJ,DGI-NSJ,DGI-STS,DGI-MVS U17/U19 2018/2019",
+      "league": "U17/19 M 4 Spillere Pulje 1",
+      "season": 2018,
+      "league_group_id": "11355",
       "db": [
         {
           "league_raw": "U17/19 M 4 Spillere Pulje 1",
@@ -589,12 +715,15 @@
           "league_group_id": "11355"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2018-11771.json",
-      "title": "BADKBH U17/U19 2018/2019\nVis rækker\n\n\nU17/U19 A 4 spillere Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVU",
+      "title": "BADKBH U17/U19 2018/2019",
+      "league": "U17/U19 A 4 spillere Pulje 1",
+      "season": 2018,
+      "league_group_id": "11771",
       "db": [
         {
           "league_raw": "U17/U19 A 4 spillere Pulje 1",
@@ -608,7 +737,10 @@
     },
     {
       "file": "2019-12570.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN 2019/2020",
+      "league": "SEN 2. Serie P1 Pulje 1",
+      "season": 2019,
+      "league_group_id": "12570",
       "db": [
         {
           "league_raw": "SEN 2. Serie P1 Pulje 1",
@@ -622,7 +754,10 @@
     },
     {
       "file": "2019-12580.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+40 2019/2020",
+      "league": "40+ 1. Serie Pulje 1",
+      "season": 2019,
+      "league_group_id": "12580",
       "db": [
         {
           "league_raw": "40+ 1. Serie Pulje 1",
@@ -631,12 +766,15 @@
           "league_group_id": "12580"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2019-12583.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+40 2019/2020",
+      "league": "40+ 3. Serie Pulje 1",
+      "season": 2019,
+      "league_group_id": "12583",
       "db": [
         {
           "league_raw": "40+ 3. Serie Pulje 1",
@@ -645,12 +783,15 @@
           "league_group_id": "12583"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2019-12584.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+40 2019/2020",
+      "league": "40+ 6. Serie Pulje 1",
+      "season": 2019,
+      "league_group_id": "12584",
       "db": [
         {
           "league_raw": "40+ 6. Serie Pulje 1",
@@ -659,12 +800,15 @@
           "league_group_id": "12584"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2019-12585.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+40 2019/2020",
+      "league": "40+ 4. Serie Pulje 1",
+      "season": 2019,
+      "league_group_id": "12585",
       "db": [
         {
           "league_raw": "40+ 4. Serie Pulje 1",
@@ -673,12 +817,15 @@
           "league_group_id": "12585"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2019-12588.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+50 2019/2020",
+      "league": "50+ 2. Serie Pulje 1",
+      "season": 2019,
+      "league_group_id": "12588",
       "db": [
         {
           "league_raw": "50+ 2. Serie Pulje 1",
@@ -687,12 +834,15 @@
           "league_group_id": "12588"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2019-12589.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+50 2019/2020",
+      "league": "50+ 2. Serie Pulje 1",
+      "season": 2019,
+      "league_group_id": "12589",
       "db": [
         {
           "league_raw": "50+ 3. Serie Pulje 1",
@@ -701,12 +851,15 @@
           "league_group_id": "12589"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2019-12590.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+50 2019/2020",
+      "league": "50+ 4. Serie Pulje 1",
+      "season": 2019,
+      "league_group_id": "12590",
       "db": [
         {
           "league_raw": "50+ 4. Serie Pulje 1",
@@ -715,12 +868,15 @@
           "league_group_id": "12590"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2019-12591.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+50 2019/2020",
+      "league": "50+ 5. Serie Pulje 1",
+      "season": 2019,
+      "league_group_id": "12591",
       "db": [
         {
           "league_raw": "50+ 5. Serie Pulje 1",
@@ -729,12 +885,15 @@
           "league_group_id": "12591"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2019-12594.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+60 2019/2020",
+      "league": "60+ 1. Serie Pulje 1",
+      "season": 2019,
+      "league_group_id": "12594",
       "db": [
         {
           "league_raw": "60+ 1. Serie Pulje 1",
@@ -743,12 +902,15 @@
           "league_group_id": "12594"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2019-12595.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+60 2019/2020",
+      "league": "60+ 2. Serie Pulje 1",
+      "season": 2019,
+      "league_group_id": "12595",
       "db": [
         {
           "league_raw": "60+ 2. Serie Pulje 1",
@@ -757,12 +919,15 @@
           "league_group_id": "12595"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2019-12597.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+70 2019/2020",
+      "league": "70+ 1. Serie Pulje 1",
+      "season": 2019,
+      "league_group_id": "12597",
       "db": [
         {
           "league_raw": "70+ 1. Serie Pulje 1",
@@ -771,12 +936,15 @@
           "league_group_id": "12597"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2019-13102.json",
-      "title": "BADDA",
+      "title": "BADDAN SEN 2019/2020",
+      "league": "Danmarksserien Kvalifikation til 3. division pulje D",
+      "season": 2019,
+      "league_group_id": "13102",
       "db": [
         {
           "league_raw": "Danmarksserien Kvalifikation til 3. division pulje D",
@@ -790,7 +958,10 @@
     },
     {
       "file": "2019-13144.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN 2019/2020",
+      "league": "KS-Oprykning KS-Oprykning",
+      "season": 2019,
+      "league_group_id": "13144",
       "db": [
         {
           "league_raw": "KS-Oprykning KS-Oprykning",
@@ -804,7 +975,10 @@
     },
     {
       "file": "2020-13228.json",
-      "title": "BADDA",
+      "title": "BADDAN SEN 2020/2021",
+      "league": "Danmarksserien Pulje 5",
+      "season": 2020,
+      "league_group_id": "13228",
       "db": [
         {
           "league_raw": "Danmarksserien Pulje 5",
@@ -818,7 +992,10 @@
     },
     {
       "file": "2020-13230.json",
-      "title": "BADDA",
+      "title": "BADDAN SEN 2020/2021",
+      "league": "Danmarksserien Pulje 7",
+      "season": 2020,
+      "league_group_id": "13230",
       "db": [
         {
           "league_raw": "Danmarksserien Pulje 7",
@@ -832,7 +1009,10 @@
     },
     {
       "file": "2020-13285.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN 2020/2021",
+      "league": "SEN 2. Serie P1 Pulje 1",
+      "season": 2020,
+      "league_group_id": "13285",
       "db": [
         {
           "league_raw": "SEN 2. Serie P1 Pulje 1",
@@ -846,7 +1026,10 @@
     },
     {
       "file": "2020-13293.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+40 2020/2021",
+      "league": "40+ 20. Serie Pulje 1",
+      "season": 2020,
+      "league_group_id": "13293",
       "db": [
         {
           "league_raw": "40+ 20. Serie Pulje 1",
@@ -855,12 +1038,15 @@
           "league_group_id": "13293"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2020-13297.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+40 2020/2021",
+      "league": "40+ 1. Serie Pulje 1",
+      "season": 2020,
+      "league_group_id": "13297",
       "db": [
         {
           "league_raw": "40+ 1. Serie Pulje 1",
@@ -869,12 +1055,15 @@
           "league_group_id": "13297"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2020-13299.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+40 2020/2021",
+      "league": "40+ 2. Serie Pulje 1",
+      "season": 2020,
+      "league_group_id": "13299",
       "db": [
         {
           "league_raw": "40+ 2. Serie Pulje 1",
@@ -883,12 +1072,15 @@
           "league_group_id": "13299"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2020-13300.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+40 2020/2021",
+      "league": "40+ 4. Serie Pulje 1",
+      "season": 2020,
+      "league_group_id": "13300",
       "db": [
         {
           "league_raw": "40+ 4. Serie Pulje 1",
@@ -897,12 +1089,15 @@
           "league_group_id": "13300"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2020-13302.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+70 2020/2021",
+      "league": "70+ 1. Serie Pulje 1",
+      "season": 2020,
+      "league_group_id": "13302",
       "db": [
         {
           "league_raw": "70+ 1. Serie Pulje 1",
@@ -911,12 +1106,15 @@
           "league_group_id": "13302"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2020-13304.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+50 2020/2021",
+      "league": "50+ 1. Serie Pulje 1",
+      "season": 2020,
+      "league_group_id": "13304",
       "db": [
         {
           "league_raw": "50+ 1. Serie Pulje 1",
@@ -925,12 +1123,15 @@
           "league_group_id": "13304"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2020-13305.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+50 2020/2021",
+      "league": "50+ 2. Serie Pulje 1",
+      "season": 2020,
+      "league_group_id": "13305",
       "db": [
         {
           "league_raw": "50+ 2. Serie Pulje 1",
@@ -939,12 +1140,15 @@
           "league_group_id": "13305"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2020-13306.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+50 2020/2021",
+      "league": "50+ 3. Serie Pulje 1",
+      "season": 2020,
+      "league_group_id": "13306",
       "db": [
         {
           "league_raw": "50+ 3. Serie Pulje 1",
@@ -953,12 +1157,15 @@
           "league_group_id": "13306"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2020-13307.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+50 2020/2021",
+      "league": "50+ 4. Serie Pulje 1",
+      "season": 2020,
+      "league_group_id": "13307",
       "db": [
         {
           "league_raw": "50+ 4. Serie Pulje 1",
@@ -967,12 +1174,15 @@
           "league_group_id": "13307"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2020-13311.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+60 2020/2021",
+      "league": "60+ 1. Serie Pulje 1",
+      "season": 2020,
+      "league_group_id": "13311",
       "db": [
         {
           "league_raw": "60+ 1. Serie Pulje 1",
@@ -981,12 +1191,15 @@
           "league_group_id": "13311"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2020-13312.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+60 2020/2021",
+      "league": "60+ 2. Serie Pulje 1",
+      "season": 2020,
+      "league_group_id": "13312",
       "db": [
         {
           "league_raw": "60+ 2. Serie Pulje 1",
@@ -995,12 +1208,15 @@
           "league_group_id": "13312"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2021-13790.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+70 2022/2023",
+      "league": "SEN+70 1.serie Pulje 1",
+      "season": 2021,
+      "league_group_id": "13790",
       "db": [
         {
           "league_raw": "Danmarksserien Nedrykning fra Danmarksserien pulje C",
@@ -1014,7 +1230,10 @@
     },
     {
       "file": "2021-13959.json",
-      "title": "BADDA",
+      "title": "BADDAN SEN 2021/2022",
+      "league": "Danmarksserien Nedrykning fra Danmarksserien pulje C",
+      "season": 2021,
+      "league_group_id": "13959",
       "db": [
         {
           "league_raw": "SEN+40 4. Serie Pulje 1",
@@ -1023,12 +1242,15 @@
           "league_group_id": "13959"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2021-13961.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+40 2021/2022",
+      "league": "SEN+40 4. Serie Pulje 1",
+      "season": 2021,
+      "league_group_id": "13961",
       "db": [
         {
           "league_raw": "SEN+40 20. Serie Pulje 1",
@@ -1037,12 +1259,15 @@
           "league_group_id": "13961"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2021-13965.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+60 2021/2022",
+      "league": "SEN+60 1. Serie Pulje 1",
+      "season": 2021,
+      "league_group_id": "13965",
       "db": [
         {
           "league_raw": "SEN+70 1. Serie P1 Pulje 1",
@@ -1056,7 +1281,10 @@
     },
     {
       "file": "2021-13966.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+40 2021/2022",
+      "league": "SEN+40 20. Serie Pulje 1",
+      "season": 2021,
+      "league_group_id": "13966",
       "db": [
         {
           "league_raw": "SEN+60 1. Serie Pulje 1",
@@ -1070,7 +1298,10 @@
     },
     {
       "file": "2022-14882.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+70 2022/2023",
+      "league": "SEN+70 1.serie Pulje 1",
+      "season": 2022,
+      "league_group_id": "14882",
       "db": [
         {
           "league_raw": "SEN+70 1.serie Pulje 1",
@@ -1079,12 +1310,15 @@
           "league_group_id": "14882"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2022-15334.json",
-      "title": "BADKBH U17/U19 2022/2023\nVis rækker\n\n\nU17/U19 5200 4 Spillere pulje 1 - ",
+      "title": "BADKBH U17/U19 2022/2023",
+      "league": "U17/U19 5200 4 Spillere pulje 1 - Ny Pulje 1",
+      "season": 2022,
+      "league_group_id": "15334",
       "db": [
         {
           "league_raw": "U17/U19 5200 4 Spillere pulje 1 - Ny Pulje 1",
@@ -1098,7 +1332,10 @@
     },
     {
       "file": "2022-15662.json",
-      "title": "BADDA",
+      "title": "BADDAN,DGI U17/U19 2022/2023",
+      "league": "DMU H - U17/U19 5200 4 spillere Pulje 1",
+      "season": 2022,
+      "league_group_id": "15662",
       "db": [
         {
           "league_raw": "DMU H - U17/U19 5200 4 spillere Pulje 1",
@@ -1107,12 +1344,15 @@
           "league_group_id": "15662"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2022-15670.json",
-      "title": "BADDA",
+      "title": "BADDAN,DGI U17/U19 2022/2023",
+      "league": "DMU H - U17/U19 5200 4 spillere Finale slutspil (1. - 4. plads)",
+      "season": 2022,
+      "league_group_id": "15670",
       "db": [
         {
           "league_raw": "DMU H - U17/U19 5200 4 spillere Finale slutspil (1. - 4. plads)",
@@ -1121,12 +1361,15 @@
           "league_group_id": "15670"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2023-15888.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+40 2023/2024",
+      "league": "20. serie Pulje 1",
+      "season": 2023,
+      "league_group_id": "15888",
       "db": [
         {
           "league_raw": "20. serie Pulje 1",
@@ -1135,12 +1378,15 @@
           "league_group_id": "15888"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2023-15897.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+40 2023/2024",
+      "league": "20. serie Pulje 1",
+      "season": 2023,
+      "league_group_id": "15897",
       "db": [
         {
           "league_raw": "1. Serie Pulje 1",
@@ -1149,12 +1395,15 @@
           "league_group_id": "15897"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2023-16087.json",
-      "title": "BADKBH U17/U19 2023/2024\nVis rækker\n\n\nU17/U19 - 6600 4 spillere Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVU",
+      "title": "BADKBH U17/U19 2023/2024",
+      "league": "U17/U19 - 6600 4 spillere Pulje 1",
+      "season": 2023,
+      "league_group_id": "16087",
       "db": [
         {
           "league_raw": "U17/U19 - 6600 4 spillere Pulje 1",
@@ -1168,7 +1417,10 @@
     },
     {
       "file": "2023-16088.json",
-      "title": "BADKBH U17/U19 2023/2024\nVis rækker\n\n\nU17/U19 - 4800 4 spillere Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVU",
+      "title": "BADKBH U17/U19 2023/2024",
+      "league": "U17/U19 - 4800 4 spillere Pulje 1",
+      "season": 2023,
+      "league_group_id": "16088",
       "db": [
         {
           "league_raw": "U17/U19 - 4800 4 spillere Pulje 1",
@@ -1182,7 +1434,10 @@
     },
     {
       "file": "2023-16610.json",
-      "title": "BADDA",
+      "title": "BADDAN,DGI U17/U19 2023/2024",
+      "league": "DMU H - U17/U19 6600 (4 spillere) Pulje 4",
+      "season": 2023,
+      "league_group_id": "16610",
       "db": [
         {
           "league_raw": "DMU H - U17/U19 6600 (4 spillere) Pulje 4",
@@ -1191,12 +1446,15 @@
           "league_group_id": "16610"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2023-16654.json",
-      "title": "BADDA",
+      "title": "BADDAN,DGI U17/U19 2023/2024",
+      "league": "DMU H - U17/U19 6600 (4 spillere) Slutspil 5.-8. plads",
+      "season": 2023,
+      "league_group_id": "16654",
       "db": [
         {
           "league_raw": "DMU H - U17/U19 6600 (4 spillere) Slutspil 5.-8. plads",
@@ -1205,12 +1463,15 @@
           "league_group_id": "16654"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2024-16929.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+70 2024/2025",
+      "league": "70+ Eliteserien Pulje 1",
+      "season": 2024,
+      "league_group_id": "16929",
       "db": [
         {
           "league_raw": "70+ Eliteserien Pulje 1",
@@ -1219,12 +1480,15 @@
           "league_group_id": "16929"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2024-16931.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+60 2024/2025",
+      "league": "60+ 1. Serie Pulje 1",
+      "season": 2024,
+      "league_group_id": "16931",
       "db": [
         {
           "league_raw": "60+ 1. Serie Pulje 1",
@@ -1233,12 +1497,15 @@
           "league_group_id": "16931"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2024-17100.json",
-      "title": "BADKBH,BADSJ,DGI-",
+      "title": "BADKBH,BADSJ,DGI-NSJ,DGI-MVS U17/U19 2024/2025",
+      "league": "U17/U19 D, 4600 (4 spillere) Pulje 1",
+      "season": 2024,
+      "league_group_id": "17100",
       "db": [
         {
           "league_raw": "U17/U19 D, 4600 (4 spillere) Pulje 1",
@@ -1247,12 +1514,15 @@
           "league_group_id": "17100"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2025-17955.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+40 2025/2026",
+      "league": "4. Serie Pulje 1",
+      "season": 2025,
+      "league_group_id": "17955",
       "db": [
         {
           "league_raw": "4. Serie Pulje 1",
@@ -1261,12 +1531,15 @@
           "league_group_id": "17955"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2025-17963.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+60 2025/2026",
+      "league": "1. Serie Pulje 1",
+      "season": 2025,
+      "league_group_id": "17963",
       "db": [
         {
           "league_raw": "1. Serie Pulje 1",
@@ -1275,12 +1548,15 @@
           "league_group_id": "17963"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2025-17965.json",
-      "title": "BADKBH SE",
+      "title": "BADKBH SEN+70 2025/2026",
+      "league": "70+ Eliteserien Pulje 1",
+      "season": 2025,
+      "league_group_id": "17965",
       "db": [
         {
           "league_raw": "70+ Eliteserien Pulje 1",
@@ -1289,12 +1565,15 @@
           "league_group_id": "17965"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2025-17999.json",
-      "title": "BADKBH,BADSJ,DGI-",
+      "title": "BADKBH,BADSJ,DGI-NSJ,DGI-MVS U17/U19 2025/2026",
+      "league": "Uge 38 - U17/U19 D, 5000 (2+2) Pulje 1",
+      "season": 2025,
+      "league_group_id": "17999",
       "db": [
         {
           "league_raw": "Uge 38 - U17/U19 D, 5000 (2+2) Pulje 1",
@@ -1303,12 +1582,15 @@
           "league_group_id": "17999"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2025-18122.json",
-      "title": "BADKBH,BADSJ,DGI-",
+      "title": "BADKBH,BADSJ,DGI-NSJ,DGI-MVS U17/U19 2025/2026",
+      "league": "U17/U19 D, 5200 (4 spillere) Pulje 3",
+      "season": 2025,
+      "league_group_id": "18122",
       "db": [
         {
           "league_raw": "U17/U19 D, 5200 (4 spillere) Pulje 3",
@@ -1317,12 +1599,15 @@
           "league_group_id": "18122"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     },
     {
       "file": "2025-18154.json",
-      "title": "BADKBH U17/U19 2025/2026\nVis rækker\n\n\nC-D 5600 (4 spillere) BD Pulje 1\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVU",
+      "title": "BADKBH U17/U19 2025/2026",
+      "league": "C-D 5600 (4 spillere) BD Pulje 1",
+      "season": 2025,
+      "league_group_id": "18154",
       "db": [
         {
           "league_raw": "C-D 5600 (4 spillere) BD Pulje 1",
@@ -1336,7 +1621,10 @@
     },
     {
       "file": "2025-18504.json",
-      "title": "BADKBH,BADSJ U09 2025/2026\nVis rækker\n\n\nU09 C 3600 (3 spillere) BD (2. halvår) Pulje 2\nVis alle kampe\n\n#\tHOLD\tKAMPE\tVU",
+      "title": "BADKBH,BADSJ U09 2025/2026",
+      "league": "U09 C 3600 (3 spillere) BD (2. halvår) Pulje 2",
+      "season": 2025,
+      "league_group_id": "18504",
       "db": [
         {
           "league_raw": "U09 C 3600 (3 spillere) BD (2. halvår) Pulje 2",
@@ -1350,7 +1638,10 @@
     },
     {
       "file": "2025-18733.json",
-      "title": "BADDA",
+      "title": "BADDAN,DGI U09 2025/2026",
+      "league": "DMU Holdtræf U9 - 3 Spillere U9 DMU holdtræf",
+      "season": 2025,
+      "league_group_id": "18733",
       "db": [
         {
           "league_raw": "DMU Holdtræf U9 - 3 Spillere U9 DMU holdtræf",
