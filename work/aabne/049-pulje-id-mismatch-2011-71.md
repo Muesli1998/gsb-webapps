@@ -119,3 +119,7 @@ vurdering.**
 ## Spørgsmål
 Den gemte browserfil statistik/results/browser-standings/2011-71.json (source_url #2,2011,71,...) indeholder samme 9-holds pulje som databasen, ikke Chris' aktuelle skærmbillede med 8 hold. Den reproducerbare sammenligning finder holdlisteafvigelse for 2 af 6 rækker (2013/2693 og 2021/13965), mens 2011/71 ikke afviger i den gemte snapshot-fil. Kan den aktuelle badmintonplayer-visning for 2011/71 genhentes manuelt, så vi kan skelne mellem historisk ændring i kilden og importfejl? 049 lukkes ikke før dette er afklaret.
 
+
+## Resultat
+Read-only sammenligning mod de seks gemte browser-standingsfiler: **2 af 6** har holdliste-mismatch (2013/2693 og 2021/13965); 2010/431, 2011/71, 2025/18504 og 2025/18733 matcher i disse snapshots. 2011/71 kan ikke verificeres mod Chris' aktuelle 8-holds visning, fordi den gemte fil selv indeholder DB'ens 9-holds pulje. Importkoden (import-browser-standings.mjs) vælger competition_id med sæson + league_group_id alene og LIMIT 1; det dokumenterer en systemisk risiko, men ikke alene den historiske årsag til 2011-mismatchet. Opgaven er derfor stoppet af kilde-diskrepansen og kræver et nyt manuelt snapshot.
+
