@@ -1,6 +1,6 @@
 # Results-rapport v2 — fuldt stat-katalog
 
-Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 67196 spillerrelationer.
+Genereret 2026-09-17T15:32:28.532Z. Datasæt: 2818 holdkampe, 7599 spillere, 67196 spillerrelationer.
 
 ## 1. Winrate pr. hold
 
@@ -49,14 +49,14 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
     "win_percent": 16.67
   },
   {
-    "key": "Gladsaxe Søborg 1 (age_group_id=3, 4 spillere D 4800)",
+    "key": "Gladsaxe Søborg 1 (age_group_id=3, 4 spillere C 4800)",
     "matches": 5,
     "wins": 4,
     "losses": 1,
     "win_percent": 80
   },
   {
-    "key": "Gladsaxe Søborg 2 (age_group_id=3, 4 spillere C-D 4800)",
+    "key": "Gladsaxe Søborg 2 (age_group_id=3, 4 spillere C 4800)",
     "matches": 7,
     "wins": 3,
     "losses": 4,
@@ -84,7 +84,7 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
     "win_percent": 0
   },
   {
-    "key": "Gladsaxe Søborg 1 (age_group_id=4, 4 spillere D 5000)",
+    "key": "Gladsaxe Søborg 1 (age_group_id=4, 4 spillere C 5000)",
     "matches": 5,
     "wins": 3,
     "losses": 2,
@@ -98,7 +98,7 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
     "win_percent": 50
   },
   {
-    "key": "Gladsaxe Søborg 2 (age_group_id=4, 4 spillere unknown 4800)",
+    "key": "Gladsaxe Søborg 2 (age_group_id=4, 4 spillere D 4800)",
     "matches": 6,
     "wins": 5,
     "losses": 1,
@@ -112,7 +112,7 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
     "win_percent": 75
   },
   {
-    "key": "Gladsaxe Søborg 3 (age_group_id=4, 4 spillere unknown 4800)",
+    "key": "Gladsaxe Søborg 3 (age_group_id=4, 4 spillere D 4800)",
     "matches": 5,
     "wins": 4,
     "losses": 1,
@@ -126,7 +126,7 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
     "win_percent": 50
   },
   {
-    "key": "Gladsaxe Søborg 4 (age_group_id=4, 2+2 unknown 6000)",
+    "key": "Gladsaxe Søborg 4 (age_group_id=4, 2+2 A 6000)",
     "matches": 3,
     "wins": 1,
     "losses": 2,
@@ -140,7 +140,7 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
     "win_percent": 20
   },
   {
-    "key": "Gladsaxe Søborg 5 (age_group_id=4, 2+2 unknown 6000)",
+    "key": "Gladsaxe Søborg 5 (age_group_id=4, 2+2 A 6000)",
     "matches": 3,
     "wins": 1,
     "losses": 2,
@@ -196,11 +196,11 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
     "win_percent": 50
   },
   {
-    "key": "Gladsaxe Søborg 1 (age_group_id=5, 4 spillere unknown 6400)",
-    "matches": 21,
-    "wins": 13,
-    "losses": 4,
-    "win_percent": 61.9
+    "key": "Gladsaxe Søborg 1 (age_group_id=5, 4 spillere B 6400)",
+    "matches": 5,
+    "wins": 4,
+    "losses": 1,
+    "win_percent": 80
   },
   {
     "key": "Gladsaxe Søborg 1 (age_group_id=5, 2+2 A 6800)",
@@ -210,7 +210,7 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
     "win_percent": 50
   },
   {
-    "key": "Gladsaxe Søborg 2 (age_group_id=5, 4 spillere D 5200)",
+    "key": "Gladsaxe Søborg 2 (age_group_id=5, 4 spillere C 5200)",
     "matches": 4,
     "wins": 4,
     "losses": 0,
@@ -224,21 +224,14 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
     "win_percent": 77.78
   },
   {
-    "key": "Gladsaxe Søborg 3 (age_group_id=5, 2+2 unknown 5400)",
-    "matches": 4,
-    "wins": 1,
-    "losses": 3,
-    "win_percent": 25
-  },
-  {
     "key": "Gladsaxe Søborg 3 (age_group_id=5, 2+2 C 5400)",
-    "matches": 7,
-    "wins": 4,
-    "losses": 3,
-    "win_percent": 57.14
+    "matches": 11,
+    "wins": 5,
+    "losses": 6,
+    "win_percent": 45.45
   },
   {
-    "key": "Gladsaxe Søborg 4 (age_group_id=5, 4 spillere C-D 5200)",
+    "key": "Gladsaxe Søborg 4 (age_group_id=5, 4 spillere C 5200)",
     "matches": 8,
     "wins": 6,
     "losses": 2,
@@ -420,18 +413,11 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
     "win_percent": 76.19
   },
   {
-    "key": "Gladsaxe Søborg 1 (age_group_id=2, 4 spillere unknown 2800)",
-    "matches": 11,
-    "wins": 3,
-    "losses": 8,
-    "win_percent": 27.27
-  },
-  {
     "key": "Gladsaxe Søborg 1 (age_group_id=2, 4 spillere D 2800)",
-    "matches": 10,
-    "wins": 8,
-    "losses": 2,
-    "win_percent": 80
+    "matches": 15,
+    "wins": 10,
+    "losses": 5,
+    "win_percent": 66.67
   },
   {
     "key": "Gladsaxe Søborg 2 (age_group_id=2, 4 spillere D 2800)",
@@ -441,28 +427,21 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
     "win_percent": 40
   },
   {
-    "key": "Gladsaxe Søborg (age_group_id=3, 4 spillere unknown 4000)",
+    "key": "Gladsaxe Søborg (age_group_id=3, 4 spillere C 4000)",
     "matches": 4,
     "wins": 2,
     "losses": 1,
     "win_percent": 50
   },
   {
-    "key": "Gladsaxe Søborg 1 (age_group_id=3, 4 spillere unknown 4000)",
-    "matches": 2,
-    "wins": 2,
-    "losses": 0,
-    "win_percent": 100
-  },
-  {
     "key": "Gladsaxe Søborg 1 (age_group_id=3, 4 spillere C 4000)",
-    "matches": 10,
-    "wins": 9,
+    "matches": 12,
+    "wins": 11,
     "losses": 1,
-    "win_percent": 90
+    "win_percent": 91.67
   },
   {
-    "key": "Gladsaxe Søborg 2 (age_group_id=3, 4 piger unknown 2800)",
+    "key": "Gladsaxe Søborg 2 (age_group_id=3, 4 piger D 2800)",
     "matches": 5,
     "wins": 5,
     "losses": 0,
@@ -497,46 +476,25 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
     "win_percent": 90
   },
   {
-    "key": "Gladsaxe Søborg 1 (age_group_id=4, 2+2 unknown 5600)",
-    "matches": 3,
-    "wins": 1,
-    "losses": 2,
-    "win_percent": 33.33
-  },
-  {
     "key": "Gladsaxe Søborg 1 (age_group_id=4, 2+2 A 5600)",
-    "matches": 8,
-    "wins": 6,
-    "losses": 2,
-    "win_percent": 75
-  },
-  {
-    "key": "Gladsaxe Søborg 2 (age_group_id=4, 4 spillere unknown 5000)",
-    "matches": 5,
-    "wins": 2,
-    "losses": 3,
-    "win_percent": 40
+    "matches": 11,
+    "wins": 7,
+    "losses": 4,
+    "win_percent": 63.64
   },
   {
     "key": "Gladsaxe Søborg 2 (age_group_id=4, 4 spillere B 5000)",
-    "matches": 10,
-    "wins": 9,
-    "losses": 1,
-    "win_percent": 90
-  },
-  {
-    "key": "Gladsaxe Søborg 3 (age_group_id=4, 4 spillere unknown 4200)",
-    "matches": 5,
-    "wins": 2,
-    "losses": 3,
-    "win_percent": 40
+    "matches": 15,
+    "wins": 11,
+    "losses": 4,
+    "win_percent": 73.33
   },
   {
     "key": "Gladsaxe Søborg 3 (age_group_id=4, 4 spillere C 4200)",
-    "matches": 7,
-    "wins": 5,
-    "losses": 2,
-    "win_percent": 71.43
+    "matches": 12,
+    "wins": 7,
+    "losses": 5,
+    "win_percent": 58.33
   },
   {
     "key": "Gladsaxe Søborg 7 (age_group_id=4, 4 spillere D 3600)",
@@ -756,6 +714,13 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
     "win_percent": 0
   },
   {
+    "key": "Gladsaxe Søborg 1 (age_group_id=2, 4 spillere unknown 2800)",
+    "matches": 6,
+    "wins": 1,
+    "losses": 5,
+    "win_percent": 16.67
+  },
+  {
     "key": "Gladsaxe Søborg 1 (age_group_id=3, 4 spillere unknown 3600)",
     "matches": 5,
     "wins": 3,
@@ -803,6 +768,13 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
     "wins": 6,
     "losses": 1,
     "win_percent": 85.71
+  },
+  {
+    "key": "Gladsaxe Søborg 1 (age_group_id=5, 4 spillere unknown 6400)",
+    "matches": 16,
+    "wins": 9,
+    "losses": 3,
+    "win_percent": 56.25
   },
   {
     "key": "Gladsaxe Søborg 2 (age_group_id=5, 4 spillere unknown 5600)",
@@ -145185,14 +145157,14 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
       "win_percent": 16.67
     },
     {
-      "key": "Gladsaxe Søborg 1 (age_group_id=3, 4 spillere D 4800)",
+      "key": "Gladsaxe Søborg 1 (age_group_id=3, 4 spillere C 4800)",
       "matches": 5,
       "wins": 4,
       "losses": 1,
       "win_percent": 80
     },
     {
-      "key": "Gladsaxe Søborg 2 (age_group_id=3, 4 spillere C-D 4800)",
+      "key": "Gladsaxe Søborg 2 (age_group_id=3, 4 spillere C 4800)",
       "matches": 7,
       "wins": 3,
       "losses": 4,
@@ -145220,7 +145192,7 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
       "win_percent": 0
     },
     {
-      "key": "Gladsaxe Søborg 1 (age_group_id=4, 4 spillere D 5000)",
+      "key": "Gladsaxe Søborg 1 (age_group_id=4, 4 spillere C 5000)",
       "matches": 5,
       "wins": 3,
       "losses": 2,
@@ -145234,7 +145206,7 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
       "win_percent": 50
     },
     {
-      "key": "Gladsaxe Søborg 2 (age_group_id=4, 4 spillere unknown 4800)",
+      "key": "Gladsaxe Søborg 2 (age_group_id=4, 4 spillere D 4800)",
       "matches": 6,
       "wins": 5,
       "losses": 1,
@@ -145248,7 +145220,7 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
       "win_percent": 75
     },
     {
-      "key": "Gladsaxe Søborg 3 (age_group_id=4, 4 spillere unknown 4800)",
+      "key": "Gladsaxe Søborg 3 (age_group_id=4, 4 spillere D 4800)",
       "matches": 5,
       "wins": 4,
       "losses": 1,
@@ -145262,7 +145234,7 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
       "win_percent": 50
     },
     {
-      "key": "Gladsaxe Søborg 4 (age_group_id=4, 2+2 unknown 6000)",
+      "key": "Gladsaxe Søborg 4 (age_group_id=4, 2+2 A 6000)",
       "matches": 3,
       "wins": 1,
       "losses": 2,
@@ -145276,7 +145248,7 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
       "win_percent": 20
     },
     {
-      "key": "Gladsaxe Søborg 5 (age_group_id=4, 2+2 unknown 6000)",
+      "key": "Gladsaxe Søborg 5 (age_group_id=4, 2+2 A 6000)",
       "matches": 3,
       "wins": 1,
       "losses": 2,
@@ -145332,11 +145304,11 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
       "win_percent": 50
     },
     {
-      "key": "Gladsaxe Søborg 1 (age_group_id=5, 4 spillere unknown 6400)",
-      "matches": 21,
-      "wins": 13,
-      "losses": 4,
-      "win_percent": 61.9
+      "key": "Gladsaxe Søborg 1 (age_group_id=5, 4 spillere B 6400)",
+      "matches": 5,
+      "wins": 4,
+      "losses": 1,
+      "win_percent": 80
     },
     {
       "key": "Gladsaxe Søborg 1 (age_group_id=5, 2+2 A 6800)",
@@ -145346,7 +145318,7 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
       "win_percent": 50
     },
     {
-      "key": "Gladsaxe Søborg 2 (age_group_id=5, 4 spillere D 5200)",
+      "key": "Gladsaxe Søborg 2 (age_group_id=5, 4 spillere C 5200)",
       "matches": 4,
       "wins": 4,
       "losses": 0,
@@ -145360,21 +145332,14 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
       "win_percent": 77.78
     },
     {
-      "key": "Gladsaxe Søborg 3 (age_group_id=5, 2+2 unknown 5400)",
-      "matches": 4,
-      "wins": 1,
-      "losses": 3,
-      "win_percent": 25
-    },
-    {
       "key": "Gladsaxe Søborg 3 (age_group_id=5, 2+2 C 5400)",
-      "matches": 7,
-      "wins": 4,
-      "losses": 3,
-      "win_percent": 57.14
+      "matches": 11,
+      "wins": 5,
+      "losses": 6,
+      "win_percent": 45.45
     },
     {
-      "key": "Gladsaxe Søborg 4 (age_group_id=5, 4 spillere C-D 5200)",
+      "key": "Gladsaxe Søborg 4 (age_group_id=5, 4 spillere C 5200)",
       "matches": 8,
       "wins": 6,
       "losses": 2,
@@ -145556,18 +145521,11 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
       "win_percent": 76.19
     },
     {
-      "key": "Gladsaxe Søborg 1 (age_group_id=2, 4 spillere unknown 2800)",
-      "matches": 11,
-      "wins": 3,
-      "losses": 8,
-      "win_percent": 27.27
-    },
-    {
       "key": "Gladsaxe Søborg 1 (age_group_id=2, 4 spillere D 2800)",
-      "matches": 10,
-      "wins": 8,
-      "losses": 2,
-      "win_percent": 80
+      "matches": 15,
+      "wins": 10,
+      "losses": 5,
+      "win_percent": 66.67
     },
     {
       "key": "Gladsaxe Søborg 2 (age_group_id=2, 4 spillere D 2800)",
@@ -145577,28 +145535,21 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
       "win_percent": 40
     },
     {
-      "key": "Gladsaxe Søborg (age_group_id=3, 4 spillere unknown 4000)",
+      "key": "Gladsaxe Søborg (age_group_id=3, 4 spillere C 4000)",
       "matches": 4,
       "wins": 2,
       "losses": 1,
       "win_percent": 50
     },
     {
-      "key": "Gladsaxe Søborg 1 (age_group_id=3, 4 spillere unknown 4000)",
-      "matches": 2,
-      "wins": 2,
-      "losses": 0,
-      "win_percent": 100
-    },
-    {
       "key": "Gladsaxe Søborg 1 (age_group_id=3, 4 spillere C 4000)",
-      "matches": 10,
-      "wins": 9,
+      "matches": 12,
+      "wins": 11,
       "losses": 1,
-      "win_percent": 90
+      "win_percent": 91.67
     },
     {
-      "key": "Gladsaxe Søborg 2 (age_group_id=3, 4 piger unknown 2800)",
+      "key": "Gladsaxe Søborg 2 (age_group_id=3, 4 piger D 2800)",
       "matches": 5,
       "wins": 5,
       "losses": 0,
@@ -145633,46 +145584,25 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
       "win_percent": 90
     },
     {
-      "key": "Gladsaxe Søborg 1 (age_group_id=4, 2+2 unknown 5600)",
-      "matches": 3,
-      "wins": 1,
-      "losses": 2,
-      "win_percent": 33.33
-    },
-    {
       "key": "Gladsaxe Søborg 1 (age_group_id=4, 2+2 A 5600)",
-      "matches": 8,
-      "wins": 6,
-      "losses": 2,
-      "win_percent": 75
-    },
-    {
-      "key": "Gladsaxe Søborg 2 (age_group_id=4, 4 spillere unknown 5000)",
-      "matches": 5,
-      "wins": 2,
-      "losses": 3,
-      "win_percent": 40
+      "matches": 11,
+      "wins": 7,
+      "losses": 4,
+      "win_percent": 63.64
     },
     {
       "key": "Gladsaxe Søborg 2 (age_group_id=4, 4 spillere B 5000)",
-      "matches": 10,
-      "wins": 9,
-      "losses": 1,
-      "win_percent": 90
-    },
-    {
-      "key": "Gladsaxe Søborg 3 (age_group_id=4, 4 spillere unknown 4200)",
-      "matches": 5,
-      "wins": 2,
-      "losses": 3,
-      "win_percent": 40
+      "matches": 15,
+      "wins": 11,
+      "losses": 4,
+      "win_percent": 73.33
     },
     {
       "key": "Gladsaxe Søborg 3 (age_group_id=4, 4 spillere C 4200)",
-      "matches": 7,
-      "wins": 5,
-      "losses": 2,
-      "win_percent": 71.43
+      "matches": 12,
+      "wins": 7,
+      "losses": 5,
+      "win_percent": 58.33
     },
     {
       "key": "Gladsaxe Søborg 7 (age_group_id=4, 4 spillere D 3600)",
@@ -145892,6 +145822,13 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
       "win_percent": 0
     },
     {
+      "key": "Gladsaxe Søborg 1 (age_group_id=2, 4 spillere unknown 2800)",
+      "matches": 6,
+      "wins": 1,
+      "losses": 5,
+      "win_percent": 16.67
+    },
+    {
       "key": "Gladsaxe Søborg 1 (age_group_id=3, 4 spillere unknown 3600)",
       "matches": 5,
       "wins": 3,
@@ -145939,6 +145876,13 @@ Genereret 2026-09-16T18:28:55.279Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
       "wins": 6,
       "losses": 1,
       "win_percent": 85.71
+    },
+    {
+      "key": "Gladsaxe Søborg 1 (age_group_id=5, 4 spillere unknown 6400)",
+      "matches": 16,
+      "wins": 9,
+      "losses": 3,
+      "win_percent": 56.25
     },
     {
       "key": "Gladsaxe Søborg 2 (age_group_id=5, 4 spillere unknown 5600)",

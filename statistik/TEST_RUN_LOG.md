@@ -543,3 +543,9 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
 ### 2026-09-17 — Opgave 052 korrektion
 - Fjernet name_raw fra restberegningen; 462 competitions gav 141 unikke reststrenge (tidligere 211 var klubnavne-støj). 0 rester indeholder Gladsaxe/Søborg.
 
+
+### 2026-09-17 — Opgave 053
+- X1/X2, komprimerede alders+niveautokens, P1/P2 og BD behandlet i parsing/efterkontrol.
+- 043: 180 -> 176 holdidentiteter; unknown 103 -> 92.
+- 052 efterkontrol: 141 reststrenge; ingen databaseændringer.
+

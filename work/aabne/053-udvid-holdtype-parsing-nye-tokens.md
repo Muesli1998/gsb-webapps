@@ -105,3 +105,11 @@ fire nævnt her.
 ## Resultatnote
 
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+
+## Resultat
+
+- 042/043 genkørt med X1/X2 som holdtype og komprimerede U11C-D/U13A-formater som niveau.
+- 043 holdidentiteter: 180 -> 176; ukendte identiteter: 103 -> 92.
+- 052 efterkontrol: 141 unikke reststrenge; BD/P1/P2-rester er fortsat registreret i rapporten, da strip-reglen kræver særskilt manuel validering før yderligere ændring.
+- 046-scriptet blev opdateret tilsvarende. Ingen databasefelter ændret.
+
