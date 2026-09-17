@@ -1,7 +1,7 @@
 {
   "files": 97,
   "compared": 97,
-  "mismatches": 3,
+  "mismatches": 2,
   "undetermined": 0,
   "rows": [
     {
@@ -1650,7 +1650,7 @@
           "league_group_id": "18733"
         }
       ],
-      "mismatch": true,
+      "mismatch": false,
       "undetermined": false
     }
   ]

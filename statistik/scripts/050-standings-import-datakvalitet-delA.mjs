@@ -5,7 +5,7 @@ const q = db.prepare('select distinct league_raw, age_group_id, season_id, leagu
 const dir='statistik/results/browser-standings';
 const files=fs.readdirSync(dir).filter(f=>f.endsWith('.json')).sort();
 const norm=s=>String(s??'').replace(/\s+/g,' ').trim().toUpperCase();
-const ageToken=s=>(norm(s).match(/U\d+|SEN\+?\d+/)||[])[0]||'';
+const ageToken=s=>{ const m=norm(s).match(/U\d+|SEN\+?\d+/); if(!m) return ''; return m[0].replace(/^U0+(\d+)/,'U$1'); };
 const out=[];
 for(const file of files){
   const [season,group]=file.replace('.json','').split('-').map(Number);
@@ -25,5 +25,6 @@ fs.writeFileSync('statistik/results/050-standings-import-datakvalitet-delA.json'
 const lines=['# Opgave 050 Del A — titelkontrol','',`- Gemte filer gennemgået: **${result.files}**`,`- Sammenlignelige sidetitler: **${result.compared}**`,`- Mismatches efter alders-/rækketoken: **${result.mismatches}**`,`- Ikke afgørbare uden entydig sidetitel: **${result.undetermined}**`,'','Sammenligningen bruger den fulde linje med BAD-prefiks og sæsoninterval fra rawText. Mismatches og ikke-afgørbare filer er fuldt listet i JSON. Ingen competitions- eller standings-rækker er ændret.'];
 fs.writeFileSync('statistik/results/050-standings-import-datakvalitet-delA.md',lines.join('\n')+'\n');
 db.close();
+
 
 
