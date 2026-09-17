@@ -534,3 +534,8 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
 - Del B parserrettelse: 15 nye ikke-numeriske trukket-rækker tilføjet til 13 competitions; standings 736 -> 751.
 - Backup før skrivning: lokal statistik/results/050-standings-standings-backup.sql (ikke versioneret).
 
+
+### 2026-09-17 — Opgave 052
+- Read-only scan af 462 competitions: 211 unikke reststrenge efter stripping af kendte alders-, fase-, holdtype-, niveau- og pointtokens.
+- 20 hyppigste med eksempler står i 052-ukendte-regelsaet-tokens.md; fuld liste i JSON.
+

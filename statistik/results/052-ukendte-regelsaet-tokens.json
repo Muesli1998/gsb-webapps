@@ -1,0 +1,2816 @@
+{
+  "competitions": 462,
+  "unique_rest_tokens": 211,
+  "tokens": [
+    {
+      "rest": "Gladsaxe Søborg 1",
+      "count": 27,
+      "example": "U13 A, 6000 (2+2) Pulje 1 | Gladsaxe Søborg 1",
+      "seasons": [
+        2017,
+        2025
+      ],
+      "age_groups": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Gladsaxe Søborg 2",
+      "count": 16,
+      "example": "U13 B, 5400 (2+2) Pulje 1 | Gladsaxe Søborg 2",
+      "seasons": [
+        2016,
+        2025
+      ],
+      "age_groups": [
+        3,
+        4,
+        5
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Gladsaxe Søborg 3",
+      "count": 12,
+      "example": "U15 C, 5400 (2+2) Pulje 1 | Gladsaxe Søborg 3",
+      "seasons": [
+        2020,
+        2025
+      ],
+      "age_groups": [
+        3,
+        4,
+        5
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "DMU H Gladsaxe Søborg 1",
+      "count": 9,
+      "example": "DMU H U11 (2+2) Pulje 1 | Gladsaxe Søborg 1",
+      "seasons": [
+        2021,
+        2023
+      ],
+      "age_groups": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "1. Gladsaxe Søborg 1",
+      "count": 8,
+      "example": "1. Serie Pulje 1 | Gladsaxe Søborg 1",
+      "seasons": [
+        2021,
+        2023
+      ],
+      "age_groups": [
+        9,
+        11,
+        13,
+        17
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Danmarksserien Øst Gladsaxe Søborg",
+      "count": 8,
+      "example": "Danmarksserien Øst pulje 4 | Gladsaxe Søborg",
+      "seasons": [
+        2011,
+        2018
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "d"
+    },
+    {
+      "rest": "Danmarksserien Gladsaxe Søborg",
+      "count": 7,
+      "example": "Danmarksserien Pulje 7 | Gladsaxe Søborg",
+      "seasons": [
+        2019,
+        2025
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "d"
+    },
+    {
+      "rest": "40+ 4. Gladsaxe Søborg 3",
+      "count": 7,
+      "example": "40+ 4. Serie Pulje 1 | Gladsaxe Søborg 3",
+      "seasons": [
+        2015,
+        2024
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "50+ 3. Gladsaxe Søborg 3",
+      "count": 7,
+      "example": "50+ 3. Serie Pulje 1 | Gladsaxe Søborg 3",
+      "seasons": [
+        2014,
+        2024
+      ],
+      "age_groups": [
+        11
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "DMU H Gladsaxe Søborg 2",
+      "count": 7,
+      "example": "DMU H - U11 3200 (4 spillere) Pulje 3 | Gladsaxe Søborg 2",
+      "seasons": [
+        2022,
+        2023
+      ],
+      "age_groups": [
+        3,
+        4
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Gladsaxe Søborg 4",
+      "count": 7,
+      "example": "U11 - 2900 4 spillere Pulje 2 | Gladsaxe Søborg 4",
+      "seasons": [
+        2021,
+        2023
+      ],
+      "age_groups": [
+        3,
+        4,
+        5
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "2. Gladsaxe Søborg 2",
+      "count": 7,
+      "example": "2. Serie Pulje 1 | Gladsaxe Søborg 2",
+      "seasons": [
+        2021,
+        2023
+      ],
+      "age_groups": [
+        9,
+        11,
+        13
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "50+ 2. Gladsaxe Søborg 2",
+      "count": 6,
+      "example": "50+ 2. Serie Pulje 1 | Gladsaxe Søborg 2",
+      "seasons": [
+        2014,
+        2020
+      ],
+      "age_groups": [
+        11
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Danmarksserien Kvalifikation til 3. division Gladsaxe Søborg",
+      "count": 5,
+      "example": "Danmarksserien Kvalifikation til 3. division pulje D | Gladsaxe Søborg",
+      "seasons": [
+        2019,
+        2025
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Gladsaxe Søborg 5",
+      "count": 5,
+      "example": "U11 - 2800 (4 piger) Pulje 1 | Gladsaxe Søborg 5",
+      "seasons": [
+        2021,
+        2023
+      ],
+      "age_groups": [
+        3,
+        5
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "50+ 1. Gladsaxe Søborg",
+      "count": 5,
+      "example": "50+ 1. Serie Pulje 1 | Gladsaxe Søborg",
+      "seasons": [
+        2014,
+        2018
+      ],
+      "age_groups": [
+        11
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "60+ 1. Gladsaxe Søborg",
+      "count": 5,
+      "example": "60+ 1. Serie Pulje 1 | Gladsaxe Søborg",
+      "seasons": [
+        2014,
+        2018
+      ],
+      "age_groups": [
+        13
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Gladsaxe Søborg",
+      "count": 5,
+      "example": "U13 B (4) Pulje 1 | Gladsaxe Søborg",
+      "seasons": [
+        2015,
+        2017
+      ],
+      "age_groups": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "category": "d"
+    },
+    {
+      "rest": "X1 Gladsaxe Søborg 2",
+      "count": 5,
+      "example": "U15 serie X1 (4 spillere C) Pulje 1 | Gladsaxe Søborg 2",
+      "seasons": [
+        2013,
+        2014
+      ],
+      "age_groups": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "BD Gladsaxe Søborg 1",
+      "count": 4,
+      "example": "U09 C 3600 (3 spillere) BD (2. halvår) Pulje 2 | Gladsaxe Søborg 1",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        2,
+        3,
+        18
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "BD Gladsaxe Søborg 3",
+      "count": 4,
+      "example": "U09 D 3300 (3 spillere) BD  (2. halvår) Pulje 1 | Gladsaxe Søborg 3",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        2,
+        3,
+        4
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "BD Gladsaxe Søborg 4",
+      "count": 4,
+      "example": "U09 D 3300 (3 spillere) BD  (2. halvår) Pulje 3 | Gladsaxe Søborg 4",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "BD Gladsaxe Søborg 5",
+      "count": 4,
+      "example": "U09 D 3300 (3 spillere) BD  (2. halvår) Pulje 4 | Gladsaxe Søborg 5",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Københavnsserien Gladsaxe Søborg 2",
+      "count": 4,
+      "example": "Københavnsserien\t Pulje 1 | Gladsaxe Søborg 2",
+      "seasons": [
+        2022,
+        2025
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Eliteserien Gladsaxe Søborg 1",
+      "count": 4,
+      "example": "Eliteserien Pulje 1 | Gladsaxe Søborg 1",
+      "seasons": [
+        2023,
+        2025
+      ],
+      "age_groups": [
+        9,
+        11,
+        13
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "40+ 2. Gladsaxe Søborg 2",
+      "count": 4,
+      "example": "40+ 2. Serie Pulje 1 | Gladsaxe Søborg 2",
+      "seasons": [
+        2015,
+        2020
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "KS KS Gladsaxe Søborg 2",
+      "count": 4,
+      "example": "KS-Oprykning KS-Oprykning | Gladsaxe Søborg 2",
+      "seasons": [
+        2016,
+        2019
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "40+ 6. Gladsaxe Søborg 4",
+      "count": 4,
+      "example": "40+ 6. Serie Pulje 1 | Gladsaxe Søborg 4",
+      "seasons": [
+        2015,
+        2019
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "40+ 1. Gladsaxe Søborg",
+      "count": 4,
+      "example": "40+ 1. Serie Pulje 1 | Gladsaxe Søborg",
+      "seasons": [
+        2015,
+        2018
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "2. Gladsaxe Søborg",
+      "count": 4,
+      "example": "U15 2.serie (4+2 M) Pulje 1 | Gladsaxe Søborg",
+      "seasons": [
+        2013,
+        2014
+      ],
+      "age_groups": [
+        5,
+        6
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "3. 3. Gladsaxe Søborg",
+      "count": 4,
+      "example": "U11 3. Serie U11 3. Serie | Gladsaxe Søborg",
+      "seasons": [
+        2011,
+        2012
+      ],
+      "age_groups": [
+        3,
+        4,
+        5
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "BD Gladsaxe Søborg 2",
+      "count": 3,
+      "example": "U09 D 3300 (3 spillere) BD  (2. halvår) Pulje 2 | Gladsaxe Søborg 2",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        2,
+        5
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "/ Gladsaxe Søborg 2",
+      "count": 3,
+      "example": "U17/U19 D, 5200 (4 spillere) Pulje 3 | Gladsaxe Søborg 2",
+      "seasons": [
+        2018,
+        2025
+      ],
+      "age_groups": [
+        18
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Københavnsserien til Danmarksserien Gladsaxe Søborg 2",
+      "count": 3,
+      "example": "Københavnsserien\t Oprykning til Danmarksserien | Gladsaxe Søborg 2",
+      "seasons": [
+        2023,
+        2025
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "1. Gladsaxe Søborg 2",
+      "count": 3,
+      "example": "1. Serie Pulje 1 | Gladsaxe Søborg 2",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        9,
+        11,
+        13
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "3. Gladsaxe Søborg 3",
+      "count": 3,
+      "example": "3. Serie Pulje 1 | Gladsaxe Søborg 3",
+      "seasons": [
+        2021,
+        2025
+      ],
+      "age_groups": [
+        9,
+        11
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "4. Gladsaxe Søborg 4",
+      "count": 3,
+      "example": "4. Serie Pulje 1 | Gladsaxe Søborg 4",
+      "seasons": [
+        2021,
+        2025
+      ],
+      "age_groups": [
+        9,
+        11
+      ],
+      "category": "b"
+    },
+    {
+      "rest": ". Gladsaxe Søborg 2",
+      "count": 3,
+      "example": "U9 D 2800 (4 spillere). Pulje 2 | Gladsaxe Søborg 2",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        2,
+        3,
+        5
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "50+ 4. Gladsaxe Søborg 4",
+      "count": 3,
+      "example": "50+ 4. Serie Pulje 1 | Gladsaxe Søborg 4",
+      "seasons": [
+        2018,
+        2024
+      ],
+      "age_groups": [
+        11
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "DMU H / Gladsaxe Søborg 1",
+      "count": 3,
+      "example": "DMU H - U17/U19 6600 (4 spillere) Pulje 4 | Gladsaxe Søborg 1",
+      "seasons": [
+        2022,
+        2023
+      ],
+      "age_groups": [
+        18
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "4. Gladsaxe Søborg 3",
+      "count": 3,
+      "example": "4. Serie Pulje 1 | Gladsaxe Søborg 3",
+      "seasons": [
+        2021,
+        2023
+      ],
+      "age_groups": [
+        9,
+        11
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "60+ 2. Gladsaxe Søborg 2",
+      "count": 3,
+      "example": "60+ 2. Serie Pulje 1 | Gladsaxe Søborg 2",
+      "seasons": [
+        2018,
+        2020
+      ],
+      "age_groups": [
+        13
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "40+ 3. Gladsaxe Søborg 2",
+      "count": 3,
+      "example": "40+ 3. Serie Pulje 1 | Gladsaxe Søborg 2",
+      "seasons": [
+        2014,
+        2019
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "DMU Hold Gladsaxe Søborg 1",
+      "count": 3,
+      "example": "DMU-Hold U15 M 4 Spillere Pulje 1 | Gladsaxe Søborg 1",
+      "seasons": [
+        2016,
+        2017
+      ],
+      "age_groups": [
+        3,
+        5
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "KS P1 Gladsaxe Søborg 2",
+      "count": 3,
+      "example": "KS-P1 Pulje 1 | Gladsaxe Søborg 2",
+      "seasons": [
+        2015,
+        2017
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "4 Gladsaxe Søborg",
+      "count": 3,
+      "example": "U11 B Række 4 Pulje 1 | Gladsaxe Søborg",
+      "seasons": [
+        2015,
+        2015
+      ],
+      "age_groups": [
+        3,
+        4
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "KS Gladsaxe Søborg 2",
+      "count": 3,
+      "example": "KS-NEDRYKNING Pulje 1 | Gladsaxe Søborg 2",
+      "seasons": [
+        2014,
+        2015
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "3. Gladsaxe Søborg",
+      "count": 3,
+      "example": "U13 3.serie (4+2 M) Pulje 1 | Gladsaxe Søborg",
+      "seasons": [
+        2013,
+        2014
+      ],
+      "age_groups": [
+        3,
+        4
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Kvalifikation til 3. division øst Gladsaxe Søborg",
+      "count": 3,
+      "example": "Kvalifikation til 3. division Pulje A øst | Gladsaxe Søborg",
+      "seasons": [
+        2012,
+        2014
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "X1 X1 Gladsaxe Søborg 2",
+      "count": 3,
+      "example": "U13 Serie X1 U13 Serie X1 | Gladsaxe Søborg 2",
+      "seasons": [
+        2011,
+        2012
+      ],
+      "age_groups": [
+        4,
+        5
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "2. 2. Gladsaxe Søborg",
+      "count": 3,
+      "example": "U17 2. Serie U17 2. Serie | Gladsaxe Søborg",
+      "seasons": [
+        2011,
+        2012
+      ],
+      "age_groups": [
+        3,
+        6
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "DMU Hold U11C Gladsaxe Søborg 1",
+      "count": 2,
+      "example": "DMU Hold U11C-D (4800) - 4 Spillere Pulje 2 | Gladsaxe Søborg 1",
+      "seasons": [
+        2024,
+        2025
+      ],
+      "age_groups": [
+        3
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "DMU Hold U13D Gladsaxe Søborg 2",
+      "count": 2,
+      "example": "DMU Hold U13D (4800) - 4 Spillere Pulje 4 | Gladsaxe Søborg 2",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        4
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "BD Gladsaxe Søborg 6",
+      "count": 2,
+      "example": "U13 D 4800 (4 spillere) BD Pulje 3 | Gladsaxe Søborg 6",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        4,
+        5
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Uge 38 Gladsaxe Søborg 8",
+      "count": 2,
+      "example": "Uge 38 - U13 B, 5400 (2+2) Pulje 1 | Gladsaxe Søborg 8",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        4,
+        5
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "2. Gladsaxe Søborg 3",
+      "count": 2,
+      "example": "2. Serie Pulje 1 | Gladsaxe Søborg 3",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        1,
+        11
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "70+ Eliteserien Gladsaxe Søborg 1",
+      "count": 2,
+      "example": "70+ Eliteserien Pulje 1 | Gladsaxe Søborg 1",
+      "seasons": [
+        2024,
+        2025
+      ],
+      "age_groups": [
+        17
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "DMU Hold U9D Gladsaxe Søborg 1",
+      "count": 2,
+      "example": "DMU Hold U9D (2800) 4 Spillere Pulje 3 | Gladsaxe Søborg 1",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        2
+      ],
+      "category": "a"
+    },
+    {
+      "rest": ". Gladsaxe Søborg 1",
+      "count": 2,
+      "example": "U9 D 2800 (4 spillere). Pulje 1 | Gladsaxe Søborg 1",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        2,
+        3
+      ],
+      "category": "b"
+    },
+    {
+      "rest": ". Gladsaxe Søborg 3",
+      "count": 2,
+      "example": "U11 D 3200 (4 spillere). Pulje 2 | Gladsaxe Søborg 3",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        3,
+        5
+      ],
+      "category": "b"
+    },
+    {
+      "rest": ". Gladsaxe Søborg 4",
+      "count": 2,
+      "example": "U11 D 3200 (4 spillere). Pulje 3 | Gladsaxe Søborg 4",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        3,
+        4
+      ],
+      "category": "b"
+    },
+    {
+      "rest": ". Gladsaxe Søborg 5",
+      "count": 2,
+      "example": "U11 D 2800 (4 piger). Pulje 2 | Gladsaxe Søborg 5",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        3,
+        4
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "DMU Hold U13C Gladsaxe Søborg 3",
+      "count": 2,
+      "example": "DMU Hold U13C (4200) 4 Spillere Pulje 1 | Gladsaxe Søborg 3",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        4
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "/ Gladsaxe Søborg 1",
+      "count": 2,
+      "example": "U17/U19 D, 4600 (4 spillere) Pulje 1 | Gladsaxe Søborg 1",
+      "seasons": [
+        2023,
+        2024
+      ],
+      "age_groups": [
+        18
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "2. Gladsaxe Søborg 1",
+      "count": 2,
+      "example": "2. Serie Pulje 1 | Gladsaxe Søborg 1",
+      "seasons": [
+        2022,
+        2023
+      ],
+      "age_groups": [
+        11
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "3. Gladsaxe Søborg 2",
+      "count": 2,
+      "example": "3. Serie Pulje 1 | Gladsaxe Søborg 2",
+      "seasons": [
+        2022,
+        2023
+      ],
+      "age_groups": [
+        11
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "5. Gladsaxe Søborg 4",
+      "count": 2,
+      "example": "5. Serie Pulje 1 | Gladsaxe Søborg 4",
+      "seasons": [
+        2022,
+        2023
+      ],
+      "age_groups": [
+        11
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Danmarksserien Gladsaxe Søborg 2",
+      "count": 2,
+      "example": "Danmarksserien Pulje 7 | Gladsaxe Søborg 2",
+      "seasons": [
+        2020,
+        2021
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "1. P1 Gladsaxe Søborg 3",
+      "count": 2,
+      "example": "SEN 1. Serie P1 Pulje 1 | Gladsaxe Søborg 3",
+      "seasons": [
+        2018,
+        2021
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "P2 Gladsaxe Søborg 2",
+      "count": 2,
+      "example": "U15 4200 4 Spillere P2 Pulje 2 | Gladsaxe Søborg 2",
+      "seasons": [
+        2018,
+        2020
+      ],
+      "age_groups": [
+        3,
+        5
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "2. P1 Gladsaxe Søborg 3",
+      "count": 2,
+      "example": "SEN 2. Serie P1 Pulje 1 | Gladsaxe Søborg 3",
+      "seasons": [
+        2019,
+        2020
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "40+ 1. Gladsaxe Søborg 1",
+      "count": 2,
+      "example": "40+ 1. Serie Pulje 1 | Gladsaxe Søborg 1",
+      "seasons": [
+        2019,
+        2020
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "60+ 1. Gladsaxe Søborg 1",
+      "count": 2,
+      "example": "60+ 1. Serie Pulje 1 | Gladsaxe Søborg 1",
+      "seasons": [
+        2019,
+        2020
+      ],
+      "age_groups": [
+        13
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "70+ 1. Gladsaxe Søborg 1",
+      "count": 2,
+      "example": "70+ 1. Serie Pulje 1 | Gladsaxe Søborg 1",
+      "seasons": [
+        2019,
+        2020
+      ],
+      "age_groups": [
+        17
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "P2 Gladsaxe Søborg",
+      "count": 2,
+      "example": "U11 D (4) P2 Pulje 2 | Gladsaxe Søborg",
+      "seasons": [
+        2016,
+        2017
+      ],
+      "age_groups": [
+        3,
+        4
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Danmarksserien Kvalifikation til 3. division Øst Gladsaxe Søborg",
+      "count": 2,
+      "example": "Danmarksserien Kvalifikation til 3. division pulje A Øst | Gladsaxe Søborg",
+      "seasons": [
+        2016,
+        2017
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "2. P2 Gladsaxe Søborg 3",
+      "count": 2,
+      "example": "2. Serie P2 Pulje 2 | Gladsaxe Søborg 3",
+      "seasons": [
+        2015,
+        2017
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "40+ 7. Gladsaxe Søborg 4",
+      "count": 2,
+      "example": "40+ 7. Serie Pulje 1 | Gladsaxe Søborg 4",
+      "seasons": [
+        2014,
+        2017
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "3. P1 Gladsaxe Søborg 3",
+      "count": 2,
+      "example": "3. Serie P1 Pulje 1 | Gladsaxe Søborg 3",
+      "seasons": [
+        2013,
+        2016
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "X1 Gladsaxe Søborg",
+      "count": 2,
+      "example": "U11 serie X1 (4 spillere C) Pulje 1 | Gladsaxe Søborg",
+      "seasons": [
+        2013,
+        2014
+      ],
+      "age_groups": [
+        3,
+        6
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "X2 Gladsaxe Søborg 2",
+      "count": 2,
+      "example": "U11 serie X2 (4 spillere C) Pulje 1 | Gladsaxe Søborg 2",
+      "seasons": [
+        2014,
+        2014
+      ],
+      "age_groups": [
+        3,
+        4
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "X2 X2 Gladsaxe Søborg 3",
+      "count": 2,
+      "example": "U15 Serie X2 U15 Serie X2 | Gladsaxe Søborg 3",
+      "seasons": [
+        2011,
+        2012
+      ],
+      "age_groups": [
+        5
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "50+ 1. 50+ 1. Gladsaxe Søborg",
+      "count": 2,
+      "example": "50+ 1. Serie 50+ 1. Serie | Gladsaxe Søborg",
+      "seasons": [
+        2011,
+        2012
+      ],
+      "age_groups": [
+        11
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "50+ 2. 50+ 2. Gladsaxe Søborg 2",
+      "count": 2,
+      "example": "50+ 2. Serie 50+ 2.Serie | Gladsaxe Søborg 2",
+      "seasons": [
+        2011,
+        2012
+      ],
+      "age_groups": [
+        11
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "3. 3. Gladsaxe Søborg 2",
+      "count": 2,
+      "example": "U11 3. Serie U11 3. Serie | Gladsaxe Søborg 2",
+      "seasons": [
+        2011,
+        2011
+      ],
+      "age_groups": [
+        3,
+        4
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "X1 X1 Gladsaxe Søborg 3",
+      "count": 2,
+      "example": "U11 Serie X1 U11 Serie X1 | Gladsaxe Søborg 3",
+      "seasons": [
+        2011,
+        2011
+      ],
+      "age_groups": [
+        3,
+        4
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "X2 X2 Gladsaxe Søborg 4",
+      "count": 2,
+      "example": "U11 Serie X2 U11 Serie X2 | Gladsaxe Søborg 4",
+      "seasons": [
+        2011,
+        2011
+      ],
+      "age_groups": [
+        3,
+        4
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "DMU Holdtræf DMU holdtræf Gladsaxe Søborg 1",
+      "count": 1,
+      "example": "DMU Holdtræf U9 - 3 Spillere U9 DMU holdtræf | Gladsaxe Søborg 1",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        2
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "DMU Hold U11C slutspil Gladsaxe Søborg 1",
+      "count": 1,
+      "example": "DMU Hold U11C-D (4800) - 4 Spillere Finaleslutspil (1. - 4. plads) | Gladsaxe Søborg 1",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        3
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "DMU Hold U13C Gladsaxe Søborg 1",
+      "count": 1,
+      "example": "DMU Hold U13C-D (5000) - 4 Spillere Pulje 2 | Gladsaxe Søborg 1",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        4
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "DMU Hold U13C . 12. plads Gladsaxe Søborg 1",
+      "count": 1,
+      "example": "DMU Hold U13C-D (5000) - 4 Spillere Placeringskampe 9. - 12. plads (3'ere) | Gladsaxe Søborg 1",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        4
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "DMU Hold U13D 5. 8. plads Gladsaxe Søborg 2",
+      "count": 1,
+      "example": "DMU Hold U13D (4800) - 4 Spillere 5. - 8. plads | Gladsaxe Søborg 2",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        4
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "DMU Hold U13D Gladsaxe Søborg 3",
+      "count": 1,
+      "example": "DMU Hold U13D (4800) - 4 Spillere Pulje 5 | Gladsaxe Søborg 3",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        4
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "DMU Hold U13D . 16. plads Gladsaxe Søborg 3",
+      "count": 1,
+      "example": "DMU Hold U13D (4800) - 4 Spillere Placeringskampe 9. - 16. plads (2'ere i puljen) | Gladsaxe Søborg 3",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        4
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "DMU Hold U13A Gladsaxe Søborg 4",
+      "count": 1,
+      "example": "DMU Hold U13A 2+2 (6000) Pulje 1 | Gladsaxe Søborg 4",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        4
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "DMU Hold U13A 3. 4. plads Gladsaxe Søborg 4",
+      "count": 1,
+      "example": "DMU Hold U13A 2+2 (6000) 3. - 4. plads (2'ere) | Gladsaxe Søborg 4",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        4
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "DMU Hold U13A Gladsaxe Søborg 5",
+      "count": 1,
+      "example": "DMU Hold U13A 2+2 (6000) Pulje 2 | Gladsaxe Søborg 5",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        4
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "Uge 38 Gladsaxe Søborg 7",
+      "count": 1,
+      "example": "Uge 38 - U13 A, 6000 (2+2) Pulje 1 | Gladsaxe Søborg 7",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        4
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "BD Gladsaxe Søborg 8",
+      "count": 1,
+      "example": "U13 D 4400 (4 piger) BD Pulje 1 | Gladsaxe Søborg 8",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        4
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Uge 38 Gladsaxe Søborg 9",
+      "count": 1,
+      "example": "Uge 38 - U13 C, 5000 (2+2) Pulje 1 | Gladsaxe Søborg 9",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        4
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Uge 38 Gladsaxe Søborg 10",
+      "count": 1,
+      "example": "Uge 38 - U13 D, 4800 (2+2) Pulje 1 | Gladsaxe Søborg 10",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        4
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "DMU Hold U15B Gladsaxe Søborg 1",
+      "count": 1,
+      "example": "DMU Hold U15B (6400) - 4 Spillere Pulje 4 | Gladsaxe Søborg 1",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        5
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "DMU Hold U15B slutspil Gladsaxe Søborg 1",
+      "count": 1,
+      "example": "DMU Hold U15B (6400) - 4 Spillere Finaleslutspil (1. - 4. plads) | Gladsaxe Søborg 1",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        5
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "DMU Hold U15C Gladsaxe Søborg 2",
+      "count": 1,
+      "example": "DMU Hold U15C-D (5200) - 4 Spillere Pulje 1 | Gladsaxe Søborg 2",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        5
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "DMU Hold U15C slutspil Gladsaxe Søborg 2",
+      "count": 1,
+      "example": "DMU Hold U15C-D (5200) - 4 Spillere Finaleslutspil (1. - 4. plads) | Gladsaxe Søborg 2",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        5
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "DMU Hold U15C Gladsaxe Søborg 3",
+      "count": 1,
+      "example": "DMU Hold U15C 2+2 (5400) Pulje 2 | Gladsaxe Søborg 3",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        5
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "DMU Hold U15C slutspil Gladsaxe Søborg 3",
+      "count": 1,
+      "example": "DMU Hold U15C 2+2 (5400) Finaleslutspil (1. - 4. plads) | Gladsaxe Søborg 3",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        5
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "Uge 38 Gladsaxe Søborg 6",
+      "count": 1,
+      "example": "Uge 38 - U15 A, 6800 (2+2) Pulje 1 | Gladsaxe Søborg 6",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        5
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Gladsaxe Søborg 7",
+      "count": 1,
+      "example": "U15 D, 4600 (4 piger) Pulje 1 | Gladsaxe Søborg 7",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        5
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Uge 38 / Gladsaxe Søborg 3",
+      "count": 1,
+      "example": "Uge 38 - U17/U19 D, 5000 (2+2) Pulje 1 | Gladsaxe Søborg 3",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        18
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "3. Gladsaxe Søborg 4",
+      "count": 1,
+      "example": "3. Serie Pulje 2 | Gladsaxe Søborg 4",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "31. Gladsaxe Søborg 5",
+      "count": 1,
+      "example": "31. Serie\t Pulje 1 | Gladsaxe Søborg 5",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "32. Gladsaxe Søborg 6",
+      "count": 1,
+      "example": "32. Serie Pulje 1 | Gladsaxe Søborg 6",
+      "seasons": [
+        2025,
+        2025
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "DMU Hold U11C Gladsaxe Søborg",
+      "count": 1,
+      "example": "DMU Hold U11C (4000) 4 Spillere Kvartfinale 3 (nr. 1 pulje 2 og nr. 2 pulje 2) | Gladsaxe Søborg",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        3
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "DMU Hold U11C NY Gladsaxe Søborg",
+      "count": 1,
+      "example": "DMU Hold U11C (4000) 4 Spillere Placeringskampe (5. - 8. plads) NY | Gladsaxe Søborg",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        3
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "DMU Hold U11D Gladsaxe Søborg 2",
+      "count": 1,
+      "example": "DMU Hold - U11D (2800) 4 Piger Pulje 1 | Gladsaxe Søborg 2",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        3
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "DMU Hold U13A Gladsaxe Søborg 1",
+      "count": 1,
+      "example": "DMU Hold U13A 2+2 (5600) Pulje 1 | Gladsaxe Søborg 1",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        4
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "DMU Hold U13B Gladsaxe Søborg 2",
+      "count": 1,
+      "example": "DMU Hold U13B (5000) 4 Spillere Pulje 2 | Gladsaxe Søborg 2",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        4
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "DMU Hold U13B Placeringskamp Gladsaxe Søborg 2",
+      "count": 1,
+      "example": "DMU Hold U13B (5000) 4 Spillere Placeringskamp (5. - 6. plads) | Gladsaxe Søborg 2",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        4
+      ],
+      "category": "a"
+    },
+    {
+      "rest": ". Gladsaxe Søborg 6",
+      "count": 1,
+      "example": "U13 D 3600 (4 spillere). Pulje 1 | Gladsaxe Søborg 6",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        4
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Gladsaxe Søborg 8",
+      "count": 1,
+      "example": "U13 D, 3200 (4 piger) Pulje 1 | Gladsaxe Søborg 8",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        4
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "UGE 38 Gladsaxe Søborg 9",
+      "count": 1,
+      "example": "UGE 38 - U13 D, 3600 (2+2) Pulje 1 | Gladsaxe Søborg 9",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        4
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "UGE 38 Gladsaxe Søborg 6",
+      "count": 1,
+      "example": "UGE 38 - U15 C, 4600 (2+2) Pulje 1 | Gladsaxe Søborg 6",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        5
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "UGE 38 Gladsaxe Søborg 7",
+      "count": 1,
+      "example": "UGE 38 - U15 D, 4000 (2+2) Pulje 1 | Gladsaxe Søborg 7",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        5
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Danmarksserien Kvalkampe til 3. division Gladsaxe Søborg",
+      "count": 1,
+      "example": "Danmarksserien Kvalkampe: Oprykning til 3. division | Gladsaxe Søborg",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "1. Gladsaxe Søborg 3",
+      "count": 1,
+      "example": "1. Serie Pulje 1 | Gladsaxe Søborg 3",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "32. Gladsaxe Søborg 4",
+      "count": 1,
+      "example": "32. Serie Pulje 1 | Gladsaxe Søborg 4",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "40+ Eliteserien Gladsaxe Søborg 1",
+      "count": 1,
+      "example": "40+ Eliteserien Pulje 1 | Gladsaxe Søborg 1",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "40+ 1. Gladsaxe Søborg 2",
+      "count": 1,
+      "example": "40+ 1. Serie Pulje 1 | Gladsaxe Søborg 2",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "50+ Eliteserien Gladsaxe Søborg",
+      "count": 1,
+      "example": "50+ Eliteserien Pulje 1 | Gladsaxe Søborg",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        11
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "50+ 1. Gladsaxe Søborg 2",
+      "count": 1,
+      "example": "50+ 1. Serie Pulje 1 | Gladsaxe Søborg 2",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        11
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "60+ Eliteserien Gladsaxe Søborg",
+      "count": 1,
+      "example": "60+ Eliteserien Pulje 1 | Gladsaxe Søborg",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        13
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "60+ 1. Gladsaxe Søborg 2",
+      "count": 1,
+      "example": "60+ 1. Serie Pulje 1 | Gladsaxe Søborg 2",
+      "seasons": [
+        2024,
+        2024
+      ],
+      "age_groups": [
+        13
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "DMU H Gladsaxe Søborg 3",
+      "count": 1,
+      "example": "DMU H - U11 2800 (4 piger) Pulje 1 | Gladsaxe Søborg 3",
+      "seasons": [
+        2023,
+        2023
+      ],
+      "age_groups": [
+        3
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "DMU H / . 8. plads Gladsaxe Søborg 1",
+      "count": 1,
+      "example": "DMU H - U17/U19 6600 (4 spillere) Slutspil 5.-8. plads | Gladsaxe Søborg 1",
+      "seasons": [
+        2023,
+        2023
+      ],
+      "age_groups": [
+        18
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "2 Gladsaxe Søborg 3",
+      "count": 1,
+      "example": "Serie 2 Pulje 2 | Gladsaxe Søborg 3",
+      "seasons": [
+        2023,
+        2023
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "31 Gladsaxe Søborg 4",
+      "count": 1,
+      "example": "Serie 31 Pulje 1 | Gladsaxe Søborg 4",
+      "seasons": [
+        2023,
+        2023
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Eliteserien Elite sslutspil Gladsaxe Søborg 1",
+      "count": 1,
+      "example": "Eliteserien Elite Nedrykningsslutspil | Gladsaxe Søborg 1",
+      "seasons": [
+        2023,
+        2023
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "20. Gladsaxe Søborg 3",
+      "count": 1,
+      "example": "20. serie Pulje 1 | Gladsaxe Søborg 3",
+      "seasons": [
+        2023,
+        2023
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Gladsaxe Søborg 6",
+      "count": 1,
+      "example": "U11 2800 4 Piger Pulje 1 | Gladsaxe Søborg 6",
+      "seasons": [
+        2022,
+        2022
+      ],
+      "age_groups": [
+        3
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "DMU H Placeringskamp Gladsaxe Søborg 2",
+      "count": 1,
+      "example": "DMU H - U13 3400 4 spillere Placeringskamp (13. - 16. plads) | Gladsaxe Søborg 2",
+      "seasons": [
+        2022,
+        2022
+      ],
+      "age_groups": [
+        4
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "/ Ny Gladsaxe Søborg 1",
+      "count": 1,
+      "example": "U17/U19 5200 4 Spillere pulje 1 - Ny Pulje 1 | Gladsaxe Søborg 1",
+      "seasons": [
+        2022,
+        2022
+      ],
+      "age_groups": [
+        18
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Københavnsserien fra Københavnsserien Gladsaxe Søborg 2",
+      "count": 1,
+      "example": "Københavnsserien  Nedrykning fra Københavnsserien | Gladsaxe Søborg 2",
+      "seasons": [
+        2022,
+        2022
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "1 Gladsaxe Søborg 3",
+      "count": 1,
+      "example": "Serie 1 Pulje 1 | Gladsaxe Søborg 3",
+      "seasons": [
+        2022,
+        2022
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "DMU H . 4. plads Gladsaxe Søborg 1",
+      "count": 1,
+      "example": "DMU H - U13 5200 - 4 spillere Finale slutspil 1. - 4. plads | Gladsaxe Søborg 1",
+      "seasons": [
+        2021,
+        2021
+      ],
+      "age_groups": [
+        4
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Danmarksserien fra Danmarksserien Gladsaxe Søborg",
+      "count": 1,
+      "example": "Danmarksserien Nedrykning fra Danmarksserien pulje C | Gladsaxe Søborg",
+      "seasons": [
+        2021,
+        2021
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "d"
+    },
+    {
+      "rest": "Danmarksserien fra Danmarksserien Gladsaxe Søborg 2",
+      "count": 1,
+      "example": "Danmarksserien Nedrykning fra Danmarksserien pulje D | Gladsaxe Søborg 2",
+      "seasons": [
+        2021,
+        2021
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "20. Gladsaxe Søborg 4",
+      "count": 1,
+      "example": "SEN+40 20. Serie Pulje 1 | Gladsaxe Søborg 4",
+      "seasons": [
+        2021,
+        2021
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "1. P1 Gladsaxe Søborg 1",
+      "count": 1,
+      "example": "SEN+70 1. Serie P1 Pulje 1 | Gladsaxe Søborg 1",
+      "seasons": [
+        2021,
+        2021
+      ],
+      "age_groups": [
+        17
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "40+ 20. Gladsaxe Søborg 4",
+      "count": 1,
+      "example": "40+ 20. Serie Pulje 1 | Gladsaxe Søborg 4",
+      "seasons": [
+        2020,
+        2020
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "50+ 1. Gladsaxe Søborg 1",
+      "count": 1,
+      "example": "50+ 1. Serie Pulje 1 | Gladsaxe Søborg 1",
+      "seasons": [
+        2020,
+        2020
+      ],
+      "age_groups": [
+        11
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "KBH Serien P1 Gladsaxe Søborg 2",
+      "count": 1,
+      "example": "KBH Serien P1 Pulje 1 | Gladsaxe Søborg 2",
+      "seasons": [
+        2019,
+        2019
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "50+ 2. Gladsaxe Søborg 1",
+      "count": 1,
+      "example": "50+ 2. Serie Pulje 1 | Gladsaxe Søborg 1",
+      "seasons": [
+        2019,
+        2019
+      ],
+      "age_groups": [
+        11
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "50+ 3. Gladsaxe Søborg 2",
+      "count": 1,
+      "example": "50+ 3. Serie Pulje 1 | Gladsaxe Søborg 2",
+      "seasons": [
+        2019,
+        2019
+      ],
+      "age_groups": [
+        11
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "50+ 4. Gladsaxe Søborg 3",
+      "count": 1,
+      "example": "50+ 4. Serie Pulje 1 | Gladsaxe Søborg 3",
+      "seasons": [
+        2019,
+        2019
+      ],
+      "age_groups": [
+        11
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "50+ 5. Gladsaxe Søborg 4",
+      "count": 1,
+      "example": "50+ 5. Serie Pulje 1 | Gladsaxe Søborg 4",
+      "seasons": [
+        2019,
+        2019
+      ],
+      "age_groups": [
+        11
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "CD Gladsaxe Søborg 1",
+      "count": 1,
+      "example": "U13 CD 4 Spillere Pulje 1 | Gladsaxe Søborg 1",
+      "seasons": [
+        2018,
+        2018
+      ],
+      "age_groups": [
+        4
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "P2 Gladsaxe Søborg 1",
+      "count": 1,
+      "example": "U15 D 4 Spillere P2 Pulje 2 | Gladsaxe Søborg 1",
+      "seasons": [
+        2018,
+        2018
+      ],
+      "age_groups": [
+        5
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "/19 Gladsaxe Søborg 1",
+      "count": 1,
+      "example": "U17/19 M 4 Spillere Pulje 1 | Gladsaxe Søborg 1",
+      "seasons": [
+        2018,
+        2018
+      ],
+      "age_groups": [
+        18
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Danmarksserien fra Danmarksserien Øst Gladsaxe Søborg",
+      "count": 1,
+      "example": "Danmarksserien Nedrykning fra Danmarksserien, B Øst | Gladsaxe Søborg",
+      "seasons": [
+        2018,
+        2018
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "d"
+    },
+    {
+      "rest": "KBH Serien P2 Gladsaxe Søborg 2",
+      "count": 1,
+      "example": "KBH Serien P2 Pulje 2 | Gladsaxe Søborg 2",
+      "seasons": [
+        2018,
+        2018
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "DMU Hold 7. 8. plads Gladsaxe Søborg 1",
+      "count": 1,
+      "example": "DMU-Hold U15 M 4 Spillere 7. - 8. plads | Gladsaxe Søborg 1",
+      "seasons": [
+        2017,
+        2017
+      ],
+      "age_groups": [
+        5
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "/ / Gladsaxe Søborg 1",
+      "count": 1,
+      "example": "U17/U19 M/A 4+2 Pulje 1 | Gladsaxe Søborg 1",
+      "seasons": [
+        2017,
+        2017
+      ],
+      "age_groups": [
+        18
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "/19 Gladsaxe Søborg 2",
+      "count": 1,
+      "example": "U17/19 B (4) Pulje 1 | Gladsaxe Søborg 2",
+      "seasons": [
+        2017,
+        2017
+      ],
+      "age_groups": [
+        18
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Kvalifikation til 3. division Kvalifikationsevent kamp 5 Gladsaxe Søborg",
+      "count": 1,
+      "example": "Kvalifikation til 3. division (runde 12) Kvalifikationsevent kamp 5 | Gladsaxe Søborg",
+      "seasons": [
+        2017,
+        2017
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "P1 Gladsaxe Søborg",
+      "count": 1,
+      "example": "U11 D (4) P1 Pulje 1 | Gladsaxe Søborg",
+      "seasons": [
+        2016,
+        2016
+      ],
+      "age_groups": [
+        3
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "DMU Hold . 4. plads Gladsaxe Søborg 1",
+      "count": 1,
+      "example": "DMU-Hold U11 D 4 Spillere Finale 1. - 4. plads | Gladsaxe Søborg 1",
+      "seasons": [
+        2016,
+        2016
+      ],
+      "age_groups": [
+        3
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "/ P2 Gladsaxe Søborg",
+      "count": 1,
+      "example": "U17/U19 B (4) P2 Pulje 1 | Gladsaxe Søborg",
+      "seasons": [
+        2016,
+        2016
+      ],
+      "age_groups": [
+        6
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "DMU Hold /19 Gladsaxe Søborg 1",
+      "count": 1,
+      "example": "DMU-Hold U17/19 B 4 Spillere Pulje 4 | Gladsaxe Søborg 1",
+      "seasons": [
+        2016,
+        2016
+      ],
+      "age_groups": [
+        18
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "DMU Hold /19 . 4. plads Gladsaxe Søborg 1",
+      "count": 1,
+      "example": "DMU-Hold U17/19 B 4 Spillere Finale 1. - 4. plads | Gladsaxe Søborg 1",
+      "seasons": [
+        2016,
+        2016
+      ],
+      "age_groups": [
+        18
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "4. P2 Gladsaxe Søborg 4",
+      "count": 1,
+      "example": "4. Serie P2 Pulje 1 | Gladsaxe Søborg 4",
+      "seasons": [
+        2016,
+        2016
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "30. P1 Gladsaxe Søborg 4",
+      "count": 1,
+      "example": "30. Serie P1 Pulje 1 | Gladsaxe Søborg 4",
+      "seasons": [
+        2016,
+        2016
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "4 Gladsaxe Søborg 2",
+      "count": 1,
+      "example": "U13 D Række 4 Pulje 1 | Gladsaxe Søborg 2",
+      "seasons": [
+        2015,
+        2015
+      ],
+      "age_groups": [
+        4
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Kvalifikation til 3. division Øst Gladsaxe Søborg",
+      "count": 1,
+      "example": "Kvalifikation til 3. division Pulje B Øst | Gladsaxe Søborg",
+      "seasons": [
+        2015,
+        2015
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "4. P1 Gladsaxe Søborg 4",
+      "count": 1,
+      "example": "4. serie P1  Pulje 1 | Gladsaxe Søborg 4",
+      "seasons": [
+        2015,
+        2015
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "30. Gladsaxe Søborg 5",
+      "count": 1,
+      "example": "30. serie  Pulje 1 | Gladsaxe Søborg 5",
+      "seasons": [
+        2015,
+        2015
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "5. P1 Gladsaxe Søborg 5",
+      "count": 1,
+      "example": "5. serie P1  Pulje 1 | Gladsaxe Søborg 5",
+      "seasons": [
+        2015,
+        2015
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "3. P2 Gladsaxe Søborg 3",
+      "count": 1,
+      "example": "3.serie P2 Pulje 2 | Gladsaxe Søborg 3",
+      "seasons": [
+        2014,
+        2014
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "40+ elite Gladsaxe Søborg",
+      "count": 1,
+      "example": "40+ elite Pulje 1 | Gladsaxe Søborg",
+      "seasons": [
+        2014,
+        2014
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "40+ 5. Gladsaxe Søborg 3",
+      "count": 1,
+      "example": "40+ 5.serie Pulje 1 | Gladsaxe Søborg 3",
+      "seasons": [
+        2014,
+        2014
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "X3 Gladsaxe Søborg 3",
+      "count": 1,
+      "example": "U15 Serie X3 Pulje 1 | Gladsaxe Søborg 3",
+      "seasons": [
+        2013,
+        2013
+      ],
+      "age_groups": [
+        5
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "1. P1 Gladsaxe Søborg 2",
+      "count": 1,
+      "example": "1. Serie P1 Pulje 1 | Gladsaxe Søborg 2",
+      "seasons": [
+        2013,
+        2013
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "40+ 1. 1. Gladsaxe Søborg",
+      "count": 1,
+      "example": "40+ 1. Serie 1. Serie | Gladsaxe Søborg",
+      "seasons": [
+        2013,
+        2013
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "40+ 2. 2. Gladsaxe Søborg 2",
+      "count": 1,
+      "example": "40+ 2. Serie 2. Serie | Gladsaxe Søborg 2",
+      "seasons": [
+        2013,
+        2013
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "40+ 5. 5. Gladsaxe Søborg 3",
+      "count": 1,
+      "example": "40+ 5. Serie 5. Serie | Gladsaxe Søborg 3",
+      "seasons": [
+        2013,
+        2013
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "40+ 6. 6. Gladsaxe Søborg 4",
+      "count": 1,
+      "example": "40+ 6. Serie 6. Serie | Gladsaxe Søborg 4",
+      "seasons": [
+        2013,
+        2013
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "50+ 1. 1. Gladsaxe Søborg",
+      "count": 1,
+      "example": "50+ 1. Serie 1. Serie | Gladsaxe Søborg",
+      "seasons": [
+        2013,
+        2013
+      ],
+      "age_groups": [
+        11
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "50+ 2. 2. Gladsaxe Søborg 2",
+      "count": 1,
+      "example": "50+ 2. Serie 2. Serie | Gladsaxe Søborg 2",
+      "seasons": [
+        2013,
+        2013
+      ],
+      "age_groups": [
+        11
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "50+ 3. 3. Gladsaxe Søborg 3",
+      "count": 1,
+      "example": "50+ 3. Serie 3. serie | Gladsaxe Søborg 3",
+      "seasons": [
+        2013,
+        2013
+      ],
+      "age_groups": [
+        11
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "DM for hold 55+ 55+ Gladsaxe Søborg",
+      "count": 1,
+      "example": "DM for hold 55+ 55+ | Gladsaxe Søborg",
+      "seasons": [
+        2013,
+        2013
+      ],
+      "age_groups": [
+        12
+      ],
+      "category": "a"
+    },
+    {
+      "rest": "60+ 1. 1. Gladsaxe Søborg",
+      "count": 1,
+      "example": "60+ 1. Serie 1. Serie | Gladsaxe Søborg",
+      "seasons": [
+        2013,
+        2013
+      ],
+      "age_groups": [
+        13
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "1. P2 1. P2 Gladsaxe Søborg 2",
+      "count": 1,
+      "example": "1. Serie P2 1.Serie P2 | Gladsaxe Søborg 2",
+      "seasons": [
+        2012,
+        2012
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "2. P2 2. P2 Gladsaxe Søborg 3",
+      "count": 1,
+      "example": "2.Serie P2 2.Serie P2 | Gladsaxe Søborg 3",
+      "seasons": [
+        2012,
+        2012
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "40+ 1. 40+1. Gladsaxe Søborg",
+      "count": 1,
+      "example": "40+ 1. Serie 40+1.Serie | Gladsaxe Søborg",
+      "seasons": [
+        2012,
+        2012
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "40+ 2. 40+ 2. Gladsaxe Søborg 2",
+      "count": 1,
+      "example": "40+ 2.Serie 40+ 2. Serie | Gladsaxe Søborg 2",
+      "seasons": [
+        2012,
+        2012
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "40+ 5. 40+ 5. Gladsaxe Søborg 3",
+      "count": 1,
+      "example": "40+ 5. Serie 40+ 5.serie | Gladsaxe Søborg 3",
+      "seasons": [
+        2012,
+        2012
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "40+ 7. 40+ 7. Gladsaxe Søborg 4",
+      "count": 1,
+      "example": "40+ 7. Serie 40+ 7. Serie | Gladsaxe Søborg 4",
+      "seasons": [
+        2012,
+        2012
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "50+ 4. 50+ 4. Gladsaxe Søborg 3",
+      "count": 1,
+      "example": "50+ 4. Serie 50+ 4. Serie | Gladsaxe Søborg 3",
+      "seasons": [
+        2012,
+        2012
+      ],
+      "age_groups": [
+        11
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "60+ 1. 60+ 1. Gladsaxe Søborg",
+      "count": 1,
+      "example": "60+ 1. Serie 60+ 1. Serie | Gladsaxe Søborg",
+      "seasons": [
+        2012,
+        2012
+      ],
+      "age_groups": [
+        13
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "2. 2. erie Gladsaxe Søborg",
+      "count": 1,
+      "example": "U13 2. Serie U13 2. erie | Gladsaxe Søborg",
+      "seasons": [
+        2011,
+        2011
+      ],
+      "age_groups": [
+        4
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "fra Danmarksserien Gladsaxe Søborg",
+      "count": 1,
+      "example": "Nedrykning fra Danmarksserien Pulje 3 | Gladsaxe Søborg",
+      "seasons": [
+        2011,
+        2011
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "d"
+    },
+    {
+      "rest": "1. 1. Gladsaxe Søborg 2",
+      "count": 1,
+      "example": "1. Serie Pulje 1 1. Serie Pulje 1 | Gladsaxe Søborg 2",
+      "seasons": [
+        2011,
+        2011
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "2. 2. Gladsaxe Søborg 3",
+      "count": 1,
+      "example": "2. Serie Pulje 1 2. Serie Pulje 1 | Gladsaxe Søborg 3",
+      "seasons": [
+        2011,
+        2011
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "2. Veteran 2. Veteran Gladsaxe Søborg",
+      "count": 1,
+      "example": "2. Serie Veteran 2. Serie Veteran | Gladsaxe Søborg",
+      "seasons": [
+        2011,
+        2011
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "3. Veteran 3. Veteran Gladsaxe Søborg 2",
+      "count": 1,
+      "example": "3. Serie Veteran 3. Serie Veteran | Gladsaxe Søborg 2",
+      "seasons": [
+        2011,
+        2011
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "5. Veteran 5. Veteran Gladsaxe Søborg 3",
+      "count": 1,
+      "example": "5. Serie Veteran 5. Serie Veteran | Gladsaxe Søborg 3",
+      "seasons": [
+        2011,
+        2011
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "8. Veteran 8. Veteran Gladsaxe Søborg 4",
+      "count": 1,
+      "example": "8. Serie Veteran 8. Serie Veteran | Gladsaxe Søborg 4",
+      "seasons": [
+        2011,
+        2011
+      ],
+      "age_groups": [
+        9
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "50+ 5. 50+ 5. Gladsaxe Søborg 3",
+      "count": 1,
+      "example": "50+ 5. Serie 50+ 5. Serie | Gladsaxe Søborg 3",
+      "seasons": [
+        2011,
+        2011
+      ],
+      "age_groups": [
+        11
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "60+ 2. 60+ 2. Gladsaxe Søborg",
+      "count": 1,
+      "example": "60+ 2. Serie 60+ 2. Serie | Gladsaxe Søborg",
+      "seasons": [
+        2011,
+        2011
+      ],
+      "age_groups": [
+        13
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Kvalifikation til 3.division Øst Gladsaxe Søborg 1",
+      "count": 1,
+      "example": "Kvalifikation til 3.division B Øst | Gladsaxe Søborg 1",
+      "seasons": [
+        2010,
+        2010
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    },
+    {
+      "rest": "Danmarksserien Øst Gladsaxe Søborg 1",
+      "count": 1,
+      "example": "Danmarksserien Øst pulje 4 | Gladsaxe Søborg 1",
+      "seasons": [
+        2010,
+        2010
+      ],
+      "age_groups": [
+        1
+      ],
+      "category": "b"
+    }
+  ]
+}
