@@ -539,3 +539,7 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
 - 043/042 kendte huller opdateret til 5 genuint uforklarede stillingsrækker.
 - Niveau-parser udvidet til komprimerede U13D/U15B-formater: 59 af 103 unknown-identiteter løst; 44 fortsat unknown. Databasen urørt.
 
+
+### 2026-09-17 — Opgave 051 korrektion
+- Første audit koblede rå tekst for løst. Streng klubnummer/holdtype/point-match genkørt: 14 af 103 entydigt løst, 89 fortsat ukendte.
+

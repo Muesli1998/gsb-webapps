@@ -121,6 +121,7 @@ før/efter-rettelsen, ikke en vurdering.**
 ## Resultat
 
 - Del 1: 042/043 opdateret fra 21 til 5 genuint uforklarede stillingsrækker; 1 med supplerende uafklaret aldersgruppe-mærkning. 18 audit-kandidater og 205 ungdomsholdkampe uden individuelle rækker bevaret.
-- Del 2: 103 tidligere unknown-identiteter gennemgået; parserrettelsen løste 59 (103 -> 44 unknown). Kategorier: (a) 0, (b) 59 formatfejl løst, (c) 0, (d) 44 kilde-/kombinationsmangler. Fulde rå tekster og udtræk står i statistik/results/051-niveau-parsing-audit.json.
+- Del 2: 103 tidligere unknown-identiteter gennemgået med streng identitetskobling; 14 entydigt løst (103 -> 89 fortsat unknown). Kategorier: (a) 0, (b) 14 formatfejl løst, (c) 0, (d) 89 ingen entydig match/kildebegrænsning. Fulde rå tekster og udtræk står i statistik/results/051-niveau-parsing-audit.json; den tidligere løse kobling blev afvist.
 - Regression: 77 allerede korrekte identiteter ændret 0 gange.
+
 

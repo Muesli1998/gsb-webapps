@@ -1,14 +1,14 @@
 # Opgave 051 — niveau/pointgrænse-audit
 
-- Identiteter før: **103**
-- Løst efter parserrettelse: **103**
-- Fortsat unknown: **0**
+- Population: **103** tidligere unknown-identiteter
+- Løst efter streng identitetskobling: **14**
+- Fortsat unknown: **89**
 
 | Kategori | Antal |
 |---|---:|
-| (a) Niveau mangler | 0 |
-| (b) Formatfejl løst | 103 |
+| (a) Niveau mangler i matchet kildetekst | 0 |
+| (b) Niveauformat rettet med entydig klub/type/point-match | 14 |
 | (c) Pointgrænse mangler | 0 |
-| (d) Andet | 0 |
+| (d) Ingen entydig identitetsmatch / andet | 89 |
 
-Fuld rå tekst og udtræk findes i JSON. Regressionskontrol: 77 allerede korrekte identiteter er uændrede.
+Hver række viser identitetens klubnummer/holdtype/kendte pointgrænse og alle matchende rå tekster i JSON. Regression: 77 allerede korrekte identiteter kontrolleret separat; ingen ændringer forventes.
