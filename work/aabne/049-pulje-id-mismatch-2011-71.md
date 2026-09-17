@@ -115,3 +115,7 @@ vurdering.**
 ## Resultatnote
 
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+
+## Spørgsmål
+Den gemte browserfil statistik/results/browser-standings/2011-71.json (source_url #2,2011,71,...) indeholder samme 9-holds pulje som databasen, ikke Chris' aktuelle skærmbillede med 8 hold. Den reproducerbare sammenligning finder holdlisteafvigelse for 2 af 6 rækker (2013/2693 og 2021/13965), mens 2011/71 ikke afviger i den gemte snapshot-fil. Kan den aktuelle badmintonplayer-visning for 2011/71 genhentes manuelt, så vi kan skelne mellem historisk ændring i kilden og importfejl? 049 lukkes ikke før dette er afklaret.
+
