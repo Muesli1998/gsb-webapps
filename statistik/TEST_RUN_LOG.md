@@ -534,3 +534,8 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
 - Del B parserrettelse: 15 nye ikke-numeriske trukket-rækker tilføjet til 13 competitions; standings 736 -> 751.
 - Backup før skrivning: lokal statistik/results/050-standings-standings-backup.sql (ikke versioneret).
 
+
+### 2026-09-17 — Opgave 051
+- 043/042 kendte huller opdateret til 5 genuint uforklarede stillingsrækker.
+- Niveau-parser udvidet til komprimerede U13D/U15B-formater: 59 af 103 unknown-identiteter løst; 44 fortsat unknown. Databasen urørt.
+

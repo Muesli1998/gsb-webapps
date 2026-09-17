@@ -1,0 +1,938 @@
+{
+  "total": 103,
+  "counts": {
+    "a": 0,
+    "b": 103,
+    "c": 0,
+    "d": 0
+  },
+  "rows": [
+    {
+      "identity": "Gladsaxe Søborg 3 (age_group_id=2, 3 spillere unknown unknown)",
+      "raw": "DMU Holdtræf U9 - 3 Spillere U9 DMU holdtræf Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "UNKNOWN",
+        "points": "unknown"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 5 (age_group_id=3, 4 piger unknown 4200)",
+      "raw": "U11 4200 (4 piger) BD Pulje 2 Gladsaxe Søborg 5",
+      "extracted": {
+        "level": "UNKNOWN",
+        "points": "4200"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=4, 4 spillere unknown 4800)",
+      "raw": "DMU Hold U13D (4800) - 4 Spillere Pulje 4 Gladsaxe Søborg 2",
+      "extracted": {
+        "level": "D",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 3 (age_group_id=4, 4 spillere unknown 4800)",
+      "raw": "DMU Hold U13D (4800) - 4 Spillere Pulje 5 Gladsaxe Søborg 3",
+      "extracted": {
+        "level": "D",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 4 (age_group_id=4, 2+2 unknown 6000)",
+      "raw": "DMU Hold U13A 2+2 (6000) Pulje 1 Gladsaxe Søborg 4",
+      "extracted": {
+        "level": "A",
+        "points": "6000"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 5 (age_group_id=4, 2+2 unknown 6000)",
+      "raw": "DMU Hold U13A 2+2 (6000) Pulje 2 Gladsaxe Søborg 5",
+      "extracted": {
+        "level": "A",
+        "points": "6000"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=5, 4 spillere unknown 6400)",
+      "raw": "DMU Hold U15B (6400) - 4 Spillere Pulje 4 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "B",
+        "points": "6400"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 3 (age_group_id=5, 2+2 unknown 5400)",
+      "raw": "DMU Hold U15C 2+2 (5400) Pulje 2 Gladsaxe Søborg 3",
+      "extracted": {
+        "level": "C",
+        "points": "5400"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=2, 4 spillere unknown 2800)",
+      "raw": "U09 C 3600 (3 spillere) BD (2. halvår) Pulje 2 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C",
+        "points": "3600"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg (age_group_id=3, 4 spillere unknown 4000)",
+      "raw": "DMU Hold U11C (4000) 4 Spillere Kvartfinale 3 (nr. 1 pulje 2 og nr. 2 pulje 2) Gladsaxe Søborg",
+      "extracted": {
+        "level": "C",
+        "points": "4000"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=3, 4 spillere unknown 4000)",
+      "raw": "DMU Hold U11C-D (4800) - 4 Spillere Pulje 2 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=3, 4 piger unknown 2800)",
+      "raw": "U11 C-D 4800 (4 spillere) BD Pulje 1 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=4, 2+2 unknown 5600)",
+      "raw": "DMU Hold U13C-D (5000) - 4 Spillere Pulje 2 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C",
+        "points": "5000"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=4, 4 spillere unknown 5000)",
+      "raw": "DMU Hold U13D (4800) - 4 Spillere Pulje 4 Gladsaxe Søborg 2",
+      "extracted": {
+        "level": "D",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 3 (age_group_id=4, 4 spillere unknown 4200)",
+      "raw": "DMU Hold U13D (4800) - 4 Spillere Pulje 5 Gladsaxe Søborg 3",
+      "extracted": {
+        "level": "D",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=2, 4 spillere unknown 2400)",
+      "raw": "U09 D 3300 (3 spillere) BD  (2. halvår) Pulje 2 Gladsaxe Søborg 2",
+      "extracted": {
+        "level": "D",
+        "points": "3300"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=3, 2+2 unknown unknown)",
+      "raw": "DMU Hold U11C-D (4800) - 4 Spillere Pulje 2 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=3, 4 spillere unknown 3200)",
+      "raw": "U11 C-D 4800 (4 spillere) BD Pulje 1 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 3 (age_group_id=3, 4 piger unknown 2800)",
+      "raw": "U11 D 4600 (4 spillere) BD Pulje 1 Gladsaxe Søborg 3",
+      "extracted": {
+        "level": "D",
+        "points": "4600"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 3 (age_group_id=3, 4 spillere unknown 3200)",
+      "raw": "U11 D 4600 (4 spillere) BD Pulje 1 Gladsaxe Søborg 3",
+      "extracted": {
+        "level": "D",
+        "points": "4600"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 4 (age_group_id=3, 4 spillere unknown 2900)",
+      "raw": "U11 D 4600 (4 spillere) BD Pulje 4 Gladsaxe Søborg 4",
+      "extracted": {
+        "level": "D",
+        "points": "4600"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 5 (age_group_id=3, 4 piger unknown 2800)",
+      "raw": "U11 4200 (4 piger) BD Pulje 2 Gladsaxe Søborg 5",
+      "extracted": {
+        "level": "UNKNOWN",
+        "points": "4200"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=4, 4 spillere unknown 5000)",
+      "raw": "DMU Hold U13C-D (5000) - 4 Spillere Pulje 2 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C",
+        "points": "5000"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=4, 4 spillere unknown 4400)",
+      "raw": "DMU Hold U13C-D (5000) - 4 Spillere Pulje 2 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C",
+        "points": "5000"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 3 (age_group_id=4, 4 spillere unknown 3500)",
+      "raw": "DMU Hold U13D (4800) - 4 Spillere Pulje 5 Gladsaxe Søborg 3",
+      "extracted": {
+        "level": "D",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 4 (age_group_id=4, 4 piger unknown 3600)",
+      "raw": "DMU Hold U13A 2+2 (6000) Pulje 1 Gladsaxe Søborg 4",
+      "extracted": {
+        "level": "A",
+        "points": "6000"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=5, 2+2 unknown 6600)",
+      "raw": "DMU Hold U15B (6400) - 4 Spillere Pulje 4 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "B",
+        "points": "6400"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=5, 4 spillere unknown 4200)",
+      "raw": "DMU Hold U15C-D (5200) - 4 Spillere Pulje 1 Gladsaxe Søborg 2",
+      "extracted": {
+        "level": "C",
+        "points": "5200"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 3 (age_group_id=5, 4 spillere unknown 3800)",
+      "raw": "DMU Hold U15C 2+2 (5400) Pulje 2 Gladsaxe Søborg 3",
+      "extracted": {
+        "level": "C",
+        "points": "5400"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 4 (age_group_id=5, 4 spillere unknown 3800)",
+      "raw": "U15 C-D 5200 (4 spillere) BD Pulje 1 Gladsaxe Søborg 4",
+      "extracted": {
+        "level": "C",
+        "points": "5200"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 5 (age_group_id=5, 4 piger unknown 4000)",
+      "raw": "U15 D 5000 (4 spillere) BD Pulje 1 Gladsaxe Søborg 5",
+      "extracted": {
+        "level": "D",
+        "points": "5000"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=18, 4 spillere unknown 6600)",
+      "raw": "C-D 5600 (4 spillere) BD Pulje 1 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C-D",
+        "points": "5600"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=18, 4 spillere unknown 4800)",
+      "raw": "U17/U19 D, 5200 (4 spillere) Pulje 3 Gladsaxe Søborg 2",
+      "extracted": {
+        "level": "D",
+        "points": "5200"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=3, 4 spillere unknown 3600)",
+      "raw": "DMU Hold U11C-D (4800) - 4 Spillere Pulje 2 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=3, 4 spillere unknown 3600)",
+      "raw": "U11 C-D 4800 (4 spillere) BD Pulje 1 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=3, 4 spillere unknown 3000)",
+      "raw": "U11 C-D 4800 (4 spillere) BD Pulje 1 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 4 (age_group_id=3, 4 spillere unknown 3000)",
+      "raw": "U11 D 4600 (4 spillere) BD Pulje 4 Gladsaxe Søborg 4",
+      "extracted": {
+        "level": "D",
+        "points": "4600"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 5 (age_group_id=3, 4 spillere unknown 3000)",
+      "raw": "U11 4200 (4 piger) BD Pulje 2 Gladsaxe Søborg 5",
+      "extracted": {
+        "level": "UNKNOWN",
+        "points": "4200"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=4, 4 spillere unknown 3400)",
+      "raw": "DMU Hold U13D (4800) - 4 Spillere Pulje 4 Gladsaxe Søborg 2",
+      "extracted": {
+        "level": "D",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 3 (age_group_id=4, 4 spillere unknown 3400)",
+      "raw": "DMU Hold U13D (4800) - 4 Spillere Pulje 5 Gladsaxe Søborg 3",
+      "extracted": {
+        "level": "D",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=5, 4 spillere unknown 5600)",
+      "raw": "DMU Hold U15C-D (5200) - 4 Spillere Pulje 1 Gladsaxe Søborg 2",
+      "extracted": {
+        "level": "C",
+        "points": "5200"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 3 (age_group_id=5, 4 spillere unknown 4800)",
+      "raw": "DMU Hold U15C 2+2 (5400) Pulje 2 Gladsaxe Søborg 3",
+      "extracted": {
+        "level": "C",
+        "points": "5400"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 4 (age_group_id=5, 4 spillere unknown 4000)",
+      "raw": "U15 C-D 5200 (4 spillere) BD Pulje 1 Gladsaxe Søborg 4",
+      "extracted": {
+        "level": "C",
+        "points": "5200"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 5 (age_group_id=5, 4 piger unknown 3400)",
+      "raw": "U15 D 5000 (4 spillere) BD Pulje 1 Gladsaxe Søborg 5",
+      "extracted": {
+        "level": "D",
+        "points": "5000"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=18, 4 spillere unknown 5200)",
+      "raw": "C-D 5600 (4 spillere) BD Pulje 1 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C-D",
+        "points": "5600"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=2, 4 spillere unknown 2700)",
+      "raw": "U09 C 3600 (3 spillere) BD (2. halvår) Pulje 2 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C",
+        "points": "3600"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=3, 4 spillere unknown 3100)",
+      "raw": "DMU Hold U11C-D (4800) - 4 Spillere Pulje 2 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=3, 4 spillere unknown 3100)",
+      "raw": "U11 C-D 4800 (4 spillere) BD Pulje 1 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 3 (age_group_id=3, 4 spillere unknown 3100)",
+      "raw": "U11 D 4600 (4 spillere) BD Pulje 1 Gladsaxe Søborg 3",
+      "extracted": {
+        "level": "D",
+        "points": "4600"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=4, 4 spillere unknown 5200)",
+      "raw": "DMU Hold U13C-D (5000) - 4 Spillere Pulje 2 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C",
+        "points": "5000"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=4, 4 spillere unknown 3500)",
+      "raw": "DMU Hold U13D (4800) - 4 Spillere Pulje 4 Gladsaxe Søborg 2",
+      "extracted": {
+        "level": "D",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=5, 4 spillere unknown 7600)",
+      "raw": "DMU Hold U15B (6400) - 4 Spillere Pulje 4 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "B",
+        "points": "6400"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=5, 4 spillere unknown 4800)",
+      "raw": "DMU Hold U15C-D (5200) - 4 Spillere Pulje 1 Gladsaxe Søborg 2",
+      "extracted": {
+        "level": "C",
+        "points": "5200"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 3 (age_group_id=5, 4 spillere unknown 4300)",
+      "raw": "DMU Hold U15C 2+2 (5400) Pulje 2 Gladsaxe Søborg 3",
+      "extracted": {
+        "level": "C",
+        "points": "5400"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 4 (age_group_id=5, 4 piger unknown 4300)",
+      "raw": "U15 C-D 5200 (4 spillere) BD Pulje 1 Gladsaxe Søborg 4",
+      "extracted": {
+        "level": "C",
+        "points": "5200"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=2, 4 spillere unknown 2500)",
+      "raw": "U09 D 3300 (3 spillere) BD  (2. halvår) Pulje 2 Gladsaxe Søborg 2",
+      "extracted": {
+        "level": "D",
+        "points": "3300"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=3, 4 spillere unknown 3000)",
+      "raw": "DMU Hold U11C-D (4800) - 4 Spillere Pulje 2 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=3, 4+2 unknown unknown)",
+      "raw": "DMU Hold U11C-D (4800) - 4 Spillere Pulje 2 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=4, 4 spillere unknown 3800)",
+      "raw": "DMU Hold U13C-D (5000) - 4 Spillere Pulje 2 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C",
+        "points": "5000"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 3 (age_group_id=5, 4 piger unknown 3800)",
+      "raw": "DMU Hold U15C 2+2 (5400) Pulje 2 Gladsaxe Søborg 3",
+      "extracted": {
+        "level": "C",
+        "points": "5400"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=3, 4 spillere unknown 3400)",
+      "raw": "DMU Hold U11C-D (4800) - 4 Spillere Pulje 2 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=5, 4 spillere unknown 6200)",
+      "raw": "DMU Hold U15B (6400) - 4 Spillere Pulje 4 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "B",
+        "points": "6400"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=3, 4 spillere C unknown)",
+      "raw": "DMU Hold U11C-D (4800) - 4 Spillere Pulje 2 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=3, 4 spillere D unknown)",
+      "raw": "U11 C-D 4800 (4 spillere) BD Pulje 1 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=4, 4 spillere unknown unknown)",
+      "raw": "DMU Hold U13C-D (5000) - 4 Spillere Pulje 2 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C",
+        "points": "5000"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=18, 4 spillere M unknown)",
+      "raw": "C-D 5600 (4 spillere) BD Pulje 1 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C-D",
+        "points": "5600"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=18, 4 spillere A unknown)",
+      "raw": "U17/U19 D, 5200 (4 spillere) Pulje 3 Gladsaxe Søborg 2",
+      "extracted": {
+        "level": "D",
+        "points": "5200"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg (age_group_id=3, unknown D unknown)",
+      "raw": "DMU Hold U11C (4000) 4 Spillere Kvartfinale 3 (nr. 1 pulje 2 og nr. 2 pulje 2) Gladsaxe Søborg",
+      "extracted": {
+        "level": "C",
+        "points": "4000"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg (age_group_id=4, unknown B unknown)",
+      "raw": "U13 B (4) Pulje 1 Gladsaxe Søborg",
+      "extracted": {
+        "level": "B",
+        "points": "unknown"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=4, unknown C unknown)",
+      "raw": "DMU Hold U13D (4800) - 4 Spillere Pulje 4 Gladsaxe Søborg 2",
+      "extracted": {
+        "level": "D",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=5, 4 spillere M unknown)",
+      "raw": "DMU Hold U15B (6400) - 4 Spillere Pulje 4 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "B",
+        "points": "6400"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=5, unknown B unknown)",
+      "raw": "DMU Hold U15C-D (5200) - 4 Spillere Pulje 1 Gladsaxe Søborg 2",
+      "extracted": {
+        "level": "C",
+        "points": "5200"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=18, 4+2 M unknown)",
+      "raw": "C-D 5600 (4 spillere) BD Pulje 1 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C-D",
+        "points": "5600"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=18, unknown B unknown)",
+      "raw": "U17/U19 D, 5200 (4 spillere) Pulje 3 Gladsaxe Søborg 2",
+      "extracted": {
+        "level": "D",
+        "points": "5200"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=3, 4 spillere D unknown)",
+      "raw": "DMU Hold U11C-D (4800) - 4 Spillere Pulje 2 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg (age_group_id=4, unknown C unknown)",
+      "raw": "U13 B (4) Pulje 1 Gladsaxe Søborg",
+      "extracted": {
+        "level": "B",
+        "points": "unknown"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg (age_group_id=5, 4+2 A unknown)",
+      "raw": "U15 A (4+2) Pulje 1 Gladsaxe Søborg",
+      "extracted": {
+        "level": "A",
+        "points": "unknown"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=5, 4+2 A unknown)",
+      "raw": "DMU Hold U15B (6400) - 4 Spillere Pulje 4 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "B",
+        "points": "6400"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg (age_group_id=6, unknown B unknown)",
+      "raw": "U17/U19 B (4) P2 Pulje 1 Gladsaxe Søborg",
+      "extracted": {
+        "level": "B",
+        "points": "unknown"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 1 (age_group_id=18, 4 spillere B unknown)",
+      "raw": "C-D 5600 (4 spillere) BD Pulje 1 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C-D",
+        "points": "5600"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg (age_group_id=3, unknown B unknown)",
+      "raw": "DMU Hold U11C (4000) 4 Spillere Kvartfinale 3 (nr. 1 pulje 2 og nr. 2 pulje 2) Gladsaxe Søborg",
+      "extracted": {
+        "level": "C",
+        "points": "4000"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=4, unknown D unknown)",
+      "raw": "DMU Hold U13D (4800) - 4 Spillere Pulje 4 Gladsaxe Søborg 2",
+      "extracted": {
+        "level": "D",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg (age_group_id=5, 4+2 M unknown)",
+      "raw": "U15 A (4+2) Pulje 1 Gladsaxe Søborg",
+      "extracted": {
+        "level": "A",
+        "points": "unknown"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg (age_group_id=6, 4+2 A unknown)",
+      "raw": "U17/U19 B (4) P2 Pulje 1 Gladsaxe Søborg",
+      "extracted": {
+        "level": "B",
+        "points": "unknown"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg (age_group_id=3, 4 spillere C unknown)",
+      "raw": "DMU Hold U11C (4000) 4 Spillere Kvartfinale 3 (nr. 1 pulje 2 og nr. 2 pulje 2) Gladsaxe Søborg",
+      "extracted": {
+        "level": "C",
+        "points": "4000"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=3, 4 spillere C unknown)",
+      "raw": "U11 C-D 4800 (4 spillere) BD Pulje 1 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg (age_group_id=4, 4+2 M unknown)",
+      "raw": "U13 B (4) Pulje 1 Gladsaxe Søborg",
+      "extracted": {
+        "level": "B",
+        "points": "unknown"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=4, 4 spillere C unknown)",
+      "raw": "DMU Hold U13D (4800) - 4 Spillere Pulje 4 Gladsaxe Søborg 2",
+      "extracted": {
+        "level": "D",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=5, 4 spillere C unknown)",
+      "raw": "DMU Hold U15C-D (5200) - 4 Spillere Pulje 1 Gladsaxe Søborg 2",
+      "extracted": {
+        "level": "C",
+        "points": "5200"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg (age_group_id=6, 4+2 M unknown)",
+      "raw": "U17/U19 B (4) P2 Pulje 1 Gladsaxe Søborg",
+      "extracted": {
+        "level": "B",
+        "points": "unknown"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=6, 4 spillere C unknown)",
+      "raw": "U17 serie X1 (4 spillere C) Pulje 1 Gladsaxe Søborg 2",
+      "extracted": {
+        "level": "C",
+        "points": "unknown"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg (age_group_id=3, unknown unknown unknown)",
+      "raw": "DMU Hold U11C (4000) 4 Spillere Kvartfinale 3 (nr. 1 pulje 2 og nr. 2 pulje 2) Gladsaxe Søborg",
+      "extracted": {
+        "level": "C",
+        "points": "4000"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=3, unknown unknown unknown)",
+      "raw": "U11 C-D 4800 (4 spillere) BD Pulje 1 Gladsaxe Søborg 1",
+      "extracted": {
+        "level": "C",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg (age_group_id=4, unknown unknown unknown)",
+      "raw": "U13 B (4) Pulje 1 Gladsaxe Søborg",
+      "extracted": {
+        "level": "B",
+        "points": "unknown"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg (age_group_id=5, unknown unknown unknown)",
+      "raw": "U15 A (4+2) Pulje 1 Gladsaxe Søborg",
+      "extracted": {
+        "level": "A",
+        "points": "unknown"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=5, unknown unknown unknown)",
+      "raw": "DMU Hold U15C-D (5200) - 4 Spillere Pulje 1 Gladsaxe Søborg 2",
+      "extracted": {
+        "level": "C",
+        "points": "5200"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 3 (age_group_id=5, unknown unknown unknown)",
+      "raw": "DMU Hold U15C 2+2 (5400) Pulje 2 Gladsaxe Søborg 3",
+      "extracted": {
+        "level": "C",
+        "points": "5400"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg (age_group_id=6, unknown unknown unknown)",
+      "raw": "U17/U19 B (4) P2 Pulje 1 Gladsaxe Søborg",
+      "extracted": {
+        "level": "B",
+        "points": "unknown"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 2 (age_group_id=4, unknown unknown unknown)",
+      "raw": "DMU Hold U13D (4800) - 4 Spillere Pulje 4 Gladsaxe Søborg 2",
+      "extracted": {
+        "level": "D",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 3 (age_group_id=3, unknown unknown unknown)",
+      "raw": "U11 D 4600 (4 spillere) BD Pulje 1 Gladsaxe Søborg 3",
+      "extracted": {
+        "level": "D",
+        "points": "4600"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 4 (age_group_id=3, unknown unknown unknown)",
+      "raw": "U11 D 4600 (4 spillere) BD Pulje 4 Gladsaxe Søborg 4",
+      "extracted": {
+        "level": "D",
+        "points": "4600"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 3 (age_group_id=4, unknown unknown unknown)",
+      "raw": "DMU Hold U13D (4800) - 4 Spillere Pulje 5 Gladsaxe Søborg 3",
+      "extracted": {
+        "level": "D",
+        "points": "4800"
+      },
+      "category": "b"
+    },
+    {
+      "identity": "Gladsaxe Søborg 4 (age_group_id=4, unknown unknown unknown)",
+      "raw": "DMU Hold U13A 2+2 (6000) Pulje 1 Gladsaxe Søborg 4",
+      "extracted": {
+        "level": "A",
+        "points": "6000"
+      },
+      "category": "b"
+    }
+  ]
+}

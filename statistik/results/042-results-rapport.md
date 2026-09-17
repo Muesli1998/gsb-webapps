@@ -1,6 +1,6 @@
 # Results-rapport v1
 
-Genereret 2026-09-16T18:29:28.310Z. Rapporten dækker hele det klubbredde datasæt uden aldersfilter.
+Genereret 2026-09-17T12:11:24.270Z. Rapporten dækker hele det klubbredde datasæt uden aldersfilter.
 
 ## Sæsoner og holdkampe
 
@@ -14793,9 +14793,10 @@ Genereret 2026-09-16T18:29:28.310Z. Rapporten dækker hele det klubbredde datas�
 ## Hvad mangler / kendte huller
 
 - **18** audit-kandidater fra opgave 006 med administrativ bemærkning/protest står fortsat som kandidater til manuel gennemgang.
-- **21** genuint uforklarede stillingsrækker fra opgave 020/040 er dokumenteret, men ikke forklaret.
+- **5** genuint uforklarede stillingsrækker (var 21); 1 har desuden en supplerende uafklaret aldersgruppe-mærkning, jf. docs/statistik-plan.md.
 - **205** ungdomsholdkampe mangler individuelle rækker; heraf **46** uden kategorisektion eller eksplicit afbud (opgave 035-kandidater).
 - **43** øvrige ungdomsrækker uden individuelle rækker er statusmarkerede som 39 browser_verified_no_result og 4 api_error.
 - Spillerrelationer uden external ID og den manglende, uafhængige Nembadminton-discovery-total er fortsat kendte begrænsninger.
 
 Kamp med ikke-numerisk eller manglende holdresultat tælles som uafklaret på holdniveau; rå status bevares i databasen.
+
