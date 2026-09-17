@@ -539,3 +539,7 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
 - Read-only scan af 462 competitions: 211 unikke reststrenge efter stripping af kendte alders-, fase-, holdtype-, niveau- og pointtokens.
 - 20 hyppigste med eksempler står i 052-ukendte-regelsaet-tokens.md; fuld liste i JSON.
 
+
+### 2026-09-17 — Opgave 052 korrektion
+- Fjernet name_raw fra restberegningen; 462 competitions gav 141 unikke reststrenge (tidligere 211 var klubnavne-støj). 0 rester indeholder Gladsaxe/Søborg.
+

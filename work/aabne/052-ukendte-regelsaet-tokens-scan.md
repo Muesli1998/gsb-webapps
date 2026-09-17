@@ -96,3 +96,13 @@ vurdering af hvor "færdig" parsing-dækningen er.**
 - De 20 hyppigste er vist i rapporten; fuld liste med originaltekst, sæsonspænd og age_group_id findes i JSON.
 - Kategorisering er bevidst grov og ikke en fortolkning: mulige regelsæt/holdtype-tokens, mulige niveauvarianter eller andet/uklart. Ingen parsingregler eller databasefelter blev ændret.
 
+
+## Resultat — korrektion
+
+- Restberegningen bruger nu kun league_raw; 
+ame_raw bevares kun i eksempler.
+- 462 competitions gennemgået; **141** unikke ikke-tomme reststrenge.
+- De 20 hyppigste står i rapporten, fuld liste i JSON.
+- Efterprøvning: **0** af 141 reststrenge indeholder Gladsaxe eller Søborg (eller holdnavn fra 
+ame_raw).
+
