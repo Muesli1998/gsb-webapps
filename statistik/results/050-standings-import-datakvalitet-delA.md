@@ -1,0 +1,1 @@
+# Opgave 050 Del A\n\n- Gemte filer gennemgået: **97**\n- Sammenlignelige titler: **97**\n- Mismatches efter aldersgruppeheuristik: **67**\n- Ikke afgørbare uden sidetitel: **0**\n\nMismatches og uafgørbare filer fremgår af JSON. Ingen competitions-rækker er ændret.
