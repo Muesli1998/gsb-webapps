@@ -113,3 +113,11 @@ fire nævnt her.
 - 052 efterkontrol: 141 unikke reststrenge; BD/P1/P2-rester er fortsat registreret i rapporten, da strip-reglen kræver særskilt manuel validering før yderligere ændring.
 - 046-scriptet blev opdateret tilsvarende. Ingen databasefelter ændret.
 
+
+## Resultat — efterkontrolrettelse
+
+- 052-scriptet er gjort kørbart fra repo-roden (entydige statistik/data og statistik/results-stier).
+- Efter korrekt kørsel: 462 competitions, 140 unikke reststrenge; 0 indeholder BD, P1 eller P2.
+- 043 efter parserudvidelse: 176 holdidentiteter, 92 med mindst ét unknown-felt (før 180/103).
+- Ingen databaseændringer; senior/veteran-identitet uberørt.
+

@@ -549,3 +549,7 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
 - 043: 180 -> 176 holdidentiteter; unknown 103 -> 92.
 - 052 efterkontrol: 141 reststrenge; ingen databaseændringer.
 
+
+### 2026-09-17 — Opgave 053 efterkontrolrettelse
+- 052 efterkontrol kørbar fra repo-roden: 140 reststrenge, 0 BD/P1/P2-rester.
+

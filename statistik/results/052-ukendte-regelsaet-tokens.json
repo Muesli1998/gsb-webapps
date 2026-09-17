@@ -1,24 +1,7 @@
 {
   "competitions": 462,
-  "unique_rest_tokens": 141,
+  "unique_rest_tokens": 140,
   "tokens": [
-    {
-      "rest": "BD",
-      "count": 22,
-      "example": "U09 C 3600 (3 spillere) BD (2. halvår) Pulje 2 | Gladsaxe Søborg 1",
-      "seasons": [
-        2025,
-        2025
-      ],
-      "age_groups": [
-        2,
-        3,
-        4,
-        5,
-        18
-      ],
-      "category": "d"
-    },
     {
       "rest": "DMU H",
       "count": 17,
