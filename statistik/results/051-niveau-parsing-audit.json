@@ -1,10 +1,10 @@
 {
   "total": 103,
   "counts": {
-    "a": 0,
-    "b": 14,
+    "a": 10,
+    "b": 6,
     "c": 0,
-    "d": 89
+    "d": 87
   },
   "rows": [
     {
@@ -293,8 +293,8 @@
           }
         }
       ],
-      "category": "b",
-      "solvedLevel": "UNKNOWN"
+      "category": "a",
+      "solvedLevel": "unknown"
     },
     {
       "identity": "Gladsaxe Søborg 2 (age_group_id=3, 4 spillere unknown 3200)",
@@ -422,8 +422,8 @@
           }
         }
       ],
-      "category": "b",
-      "solvedLevel": "UNKNOWN"
+      "category": "a",
+      "solvedLevel": "unknown"
     },
     {
       "identity": "Gladsaxe Søborg 2 (age_group_id=5, 4 spillere unknown 4200)",
@@ -803,8 +803,8 @@
           }
         }
       ],
-      "category": "b",
-      "solvedLevel": "UNKNOWN"
+      "category": "a",
+      "solvedLevel": "unknown"
     },
     {
       "identity": "Gladsaxe Søborg 1 (age_group_id=4, 4 spillere unknown 3800)",
@@ -1777,8 +1777,8 @@
           }
         }
       ],
-      "category": "b",
-      "solvedLevel": "UNKNOWN"
+      "category": "a",
+      "solvedLevel": "unknown"
     },
     {
       "identity": "Gladsaxe Søborg (age_group_id=4, unknown unknown unknown)",
@@ -1867,8 +1867,8 @@
           }
         }
       ],
-      "category": "b",
-      "solvedLevel": "UNKNOWN"
+      "category": "a",
+      "solvedLevel": "unknown"
     },
     {
       "identity": "Gladsaxe Søborg 2 (age_group_id=5, unknown unknown unknown)",
@@ -1904,8 +1904,8 @@
           }
         }
       ],
-      "category": "d",
-      "solvedLevel": "unknown"
+      "category": "b",
+      "solvedLevel": "B"
     },
     {
       "identity": "Gladsaxe Søborg 3 (age_group_id=5, unknown unknown unknown)",
@@ -1933,8 +1933,8 @@
           }
         }
       ],
-      "category": "b",
-      "solvedLevel": "UNKNOWN"
+      "category": "a",
+      "solvedLevel": "unknown"
     },
     {
       "identity": "Gladsaxe Søborg (age_group_id=6, unknown unknown unknown)",
@@ -1978,8 +1978,8 @@
           }
         }
       ],
-      "category": "d",
-      "solvedLevel": "unknown"
+      "category": "b",
+      "solvedLevel": "B"
     },
     {
       "identity": "Gladsaxe Søborg 2 (age_group_id=4, unknown unknown unknown)",
@@ -2044,8 +2044,8 @@
           }
         }
       ],
-      "category": "b",
-      "solvedLevel": "UNKNOWN"
+      "category": "a",
+      "solvedLevel": "unknown"
     },
     {
       "identity": "Gladsaxe Søborg 4 (age_group_id=3, unknown unknown unknown)",
@@ -2065,8 +2065,8 @@
           }
         }
       ],
-      "category": "b",
-      "solvedLevel": "UNKNOWN"
+      "category": "a",
+      "solvedLevel": "unknown"
     },
     {
       "identity": "Gladsaxe Søborg 3 (age_group_id=4, unknown unknown unknown)",
@@ -2086,8 +2086,8 @@
           }
         }
       ],
-      "category": "b",
-      "solvedLevel": "UNKNOWN"
+      "category": "a",
+      "solvedLevel": "unknown"
     },
     {
       "identity": "Gladsaxe Søborg 4 (age_group_id=4, unknown unknown unknown)",
@@ -2107,8 +2107,8 @@
           }
         }
       ],
-      "category": "b",
-      "solvedLevel": "UNKNOWN"
+      "category": "a",
+      "solvedLevel": "unknown"
     }
   ]
 }
