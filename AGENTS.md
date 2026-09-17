@@ -258,6 +258,37 @@ er en mening.
 
 Kontroller der er værd at beholde permanent, flyttes til `tools/tjek/`.
 
+### Efterprøv dit eget resultat, før du rapporterer det
+
+Tilføjet 2026-09-17 efter at samme mønster gik galt tre gange i træk
+(opgave 047, 048, 050, 051): et rapporteret tal der ikke stemte med det
+der rent faktisk stod i den committede fil. Før du skriver en statusbesked
+med et tal i ("X løst", "Y mismatch", "Z uforklaret"), gør dette FØR du
+sender den, ikke som en rettelse bagefter når nogen spørger ind til det:
+
+1. **Genåbn den fil du lige skrev, og læs den.** Sammenlign de tal du ser
+   i filen med de tal du er ved at skrive i beskeden. Stemmer de ikke
+   overens, kørte noget i en anden rækkefølge end du tror — det er ikke
+   noget der kan forklares væk, det skal findes og rettes.
+2. **En post talt med i "løst"/"forklaret" skal selv indeholde en brugbar
+   værdi.** Hvis feltet der skulle udfyldes stadig er tomt/`UNKNOWN`/`null`
+   i selve outputtet, hører posten IKKE til "løst"-kategorien, uanset hvor
+   sikkert selve kildematchet var.
+3. **Et match mellem en identitet og en kildetekst skal bekræftes på ALLE
+   identificerende felter, ikke kun ét.** Hvis en identitet har klubnummer,
+   holdtype og pointgrænse, skal den matchede kildetekst stemme på alle
+   tre — et delvist match (fx samme holdtype, men forskelligt klubnummer
+   eller pointgrænse) er ikke et match, og skal ikke bruges til at udfylde
+   noget.
+4. **Er en optælling markant større eller mindre end forventet ud fra
+   opgavens egen kontekst** (fx "alt blev løst" i en opgave der eksplicit
+   forventede at noget ville forblive uafklaret), er det et signal om at
+   efterprøve metoden igen, ikke et tegn på at arbejdet gik usædvanligt
+   let.
+
+Det er billigere at fange selv end at få det samme fund tilbage en tredje
+gang.
+
 ---
 
 ## Beslutninger
