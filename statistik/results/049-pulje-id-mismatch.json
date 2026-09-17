@@ -1,0 +1,239 @@
+{
+  "rows": [
+    {
+      "season": 2010,
+      "group": 431,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2010,431,1,,,,1093,",
+      "sourceTeams": [
+        "Karlslunde 1",
+        "Rødovre 1",
+        "SAIF Kbh. 1",
+        "Gladsaxe Søborg 1",
+        "Taastrup Elite 1",
+        "Charlottenlund 1",
+        "KBK Kbh. 3",
+        "Vordingborg 1"
+      ],
+      "dbTeams": [
+        "Karlslunde 1",
+        "Rødovre 1",
+        "SAIF Kbh. 1",
+        "Gladsaxe Søborg 1",
+        "Taastrup Elite 1",
+        "Charlottenlund 1",
+        "KBK Kbh. 3",
+        "Vordingborg 1"
+      ],
+      "sourceGsb": {
+        "name": "Gladsaxe Søborg 1",
+        "matches": 4
+      },
+      "dbGsb": {
+        "name": "Gladsaxe Søborg 1",
+        "matches": 4
+      },
+      "sameTeamSet": true,
+      "matchCountSame": true
+    },
+    {
+      "season": 2011,
+      "group": 71,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2011,71,1,,,,1093,",
+      "sourceTeams": [
+        "Charlottenlund",
+        "Sundby KFUM",
+        "KBK Kbh. 2",
+        "BC37 Amager",
+        "Hvidovre HB2000",
+        "Drive",
+        "FKIF Frederiksberg",
+        "Lyngby *udgået*",
+        "Gladsaxe Søborg *udgået*"
+      ],
+      "dbTeams": [
+        "Charlottenlund",
+        "Sundby KFUM",
+        "KBK Kbh. 2",
+        "BC37 Amager",
+        "Hvidovre HB2000",
+        "Drive",
+        "FKIF Frederiksberg",
+        "Lyngby *udgået*",
+        "Gladsaxe Søborg *udgået*"
+      ],
+      "sourceGsb": {
+        "name": "Gladsaxe Søborg *udgået*",
+        "matches": 8
+      },
+      "dbGsb": {
+        "name": "Gladsaxe Søborg *udgået*",
+        "matches": 8
+      },
+      "sameTeamSet": true,
+      "matchCountSame": true
+    },
+    {
+      "season": 2013,
+      "group": 2693,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2013,2693,1,,,,1093,",
+      "sourceTeams": [
+        "Gladsaxe Søborg",
+        "Valby BC",
+        "Sundby KFUM",
+        "BC37 Amager",
+        "Amager ABC",
+        "Tono Kbh.",
+        "KFUM Badminton Kbh. *Trukket",
+        "SMASH"
+      ],
+      "dbTeams": [
+        "Gladsaxe Søborg",
+        "Valby BC",
+        "Sundby KFUM",
+        "BC37 Amager",
+        "Amager ABC",
+        "Tono Kbh.",
+        "SMASH"
+      ],
+      "sourceGsb": {
+        "name": "Gladsaxe Søborg",
+        "matches": 5
+      },
+      "dbGsb": {
+        "name": "Gladsaxe Søborg",
+        "matches": 5
+      },
+      "sameTeamSet": false,
+      "matchCountSame": true
+    },
+    {
+      "season": 2021,
+      "group": 13965,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2021,13965,1,,,,1093,",
+      "sourceTeams": [
+        "KBK Kbh. 1",
+        "Gladsaxe Søborg 1",
+        "Lyngby 1",
+        "FKIF Frederiksberg 1",
+        "Hvidovre 1",
+        "Hvidovre HB2000 1",
+        "Dragør 1",
+        "Drive 1"
+      ],
+      "dbTeams": [
+        "KBK Kbh. 1",
+        "Gladsaxe Søborg 1",
+        "Lyngby 1",
+        "FKIF Frederiksberg 1",
+        "Hvidovre 1",
+        "Hvidovre HB2000 1",
+        "Dragør 1"
+      ],
+      "sourceGsb": {
+        "name": "Gladsaxe Søborg 1",
+        "matches": 6
+      },
+      "dbGsb": {
+        "name": "Gladsaxe Søborg 1",
+        "matches": 6
+      },
+      "sameTeamSet": false,
+      "matchCountSame": true
+    },
+    {
+      "season": 2025,
+      "group": 18504,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2025,18504,1,,,,1093,",
+      "sourceTeams": [
+        "Gladsaxe Søborg 1",
+        "Hillerød 1",
+        "KBK Kbh. 1"
+      ],
+      "dbTeams": [
+        "Gladsaxe Søborg 1",
+        "Hillerød 1",
+        "KBK Kbh. 1"
+      ],
+      "sourceGsb": {
+        "name": "Gladsaxe Søborg 1",
+        "matches": 3
+      },
+      "dbGsb": {
+        "name": "Gladsaxe Søborg 1",
+        "matches": 3
+      },
+      "sameTeamSet": true,
+      "matchCountSame": true
+    },
+    {
+      "season": 2025,
+      "group": 18733,
+      "sourceUrl": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#2,2025,18733,1,,,,1093,",
+      "sourceTeams": [
+        "Gladsaxe Søborg 1",
+        "Tranbjerg AIA 1",
+        "Hillerød 1",
+        "Solrød Strand 1",
+        "Vinding SF 2",
+        "Skovshoved 1",
+        "Badminton Esbjerg 1",
+        "Vinding SF 1",
+        "Gistrup LKB 1",
+        "Gladsaxe Søborg 2",
+        "Viby J 2",
+        "Tarup-Pårup 1",
+        "Hjørring 1",
+        "Stavtrup 2",
+        "Støvring 1",
+        "Lund 1",
+        "Farum 1",
+        "Gladsaxe Søborg 3",
+        "Aarhus AB 2",
+        "Sorring 1",
+        "Aarhus AB 1",
+        "Lyngby 1",
+        "Stavtrup 1",
+        "Kolding BK 1",
+        "Viby J 1"
+      ],
+      "dbTeams": [
+        "Gladsaxe Søborg 1",
+        "Tranbjerg AIA 1",
+        "Hillerød 1",
+        "Solrød Strand 1",
+        "Vinding SF 2",
+        "Skovshoved 1",
+        "Badminton Esbjerg 1",
+        "Vinding SF 1",
+        "Gistrup LKB 1",
+        "Gladsaxe Søborg 2",
+        "Viby J 2",
+        "Tarup-Pårup 1",
+        "Hjørring 1",
+        "Stavtrup 2",
+        "Støvring 1",
+        "Lund 1",
+        "Farum 1",
+        "Gladsaxe Søborg 3",
+        "Aarhus AB 2",
+        "Sorring 1",
+        "Aarhus AB 1",
+        "Lyngby 1",
+        "Stavtrup 1",
+        "Kolding BK 1",
+        "Viby J 1"
+      ],
+      "sourceGsb": {
+        "name": "Gladsaxe Søborg 3",
+        "matches": 6
+      },
+      "dbGsb": {
+        "name": "Gladsaxe Søborg 3",
+        "matches": 6
+      },
+      "sameTeamSet": true,
+      "matchCountSame": true
+    }
+  ],
+  "mismatchCount": 2
+}
