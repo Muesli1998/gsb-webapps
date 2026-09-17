@@ -1,6 +1,6 @@
 # Results-rapport v2 — fuldt stat-katalog
 
-Genereret 2026-09-17T15:32:28.532Z. Datasæt: 2818 holdkampe, 7599 spillere, 67196 spillerrelationer.
+Genereret 2026-09-17T20:18:09.890Z. Datasæt: 2818 holdkampe, 7599 spillere, 67196 spillerrelationer.
 
 ## 1. Winrate pr. hold
 
@@ -207503,5 +207503,5 @@ Genereret 2026-09-17T15:32:28.532Z. Datasæt: 2818 holdkampe, 7599 spillere, 671
 ## Hvad mangler / kendte huller
 
 - 18 audit-kandidater fra opgave 006.
-- 21 uforklarede stillingsrækker.
+- 5 genuint uforklarede stillingsrækker (var 21, se docs/statistik-plan.md for detaljer), heraf 1 med en supplerende uafklaret aldersgruppe-mærkning (opgave 050).
 - 205 ungdomsholdkampe uden individuelle rækker, heraf 46 uden kategorisektion/afbud.
