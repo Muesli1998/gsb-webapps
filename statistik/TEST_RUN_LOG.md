@@ -525,3 +525,6 @@ league_raw/name_raw på flere GSB-hold; dermed (a) 0, (b) 0, (c) 0.
 
 ## 2026-09-16 — Opgave 048
 Read-only test af udgået/trukket-hypoteser: Hypotese 1 forklarede 5/21, hypotese 2 0/21, 16 fortsat uforklarede.
+
+## 2026-09-17 — Opgave 049
+Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mismatch-omfang beregnet reproducerbart.
