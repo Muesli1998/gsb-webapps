@@ -528,3 +528,9 @@ Read-only test af udgået/trukket-hypoteser: Hypotese 1 forklarede 5/21, hypotes
 
 ## 2026-09-17 — Opgave 049
 Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mismatch-omfang beregnet reproducerbart.
+
+### 2026-09-17 — Opgave 050 Del B
+- Del A genkørt efter U09/U9-normalisering: 97/97 sammenlignelige, 2 mismatches, 0 uafgørbare.
+- Del B parserrettelse: 15 nye ikke-numeriske trukket-rækker tilføjet til 13 competitions; standings 736 -> 751.
+- Backup før skrivning: lokal statistik/results/050-standings-standings-backup.sql (ikke versioneret).
+

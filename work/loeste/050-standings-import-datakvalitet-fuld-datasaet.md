@@ -128,3 +128,12 @@ bare.**
 ## Resultatnote
 
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+
+## Resultat
+
+- Del A: 97 snapshots gennemgået, 97 sammenlignelige sidetitler, 2 mismatches (2021-13965 og 2021-13966), 0 ikke afgørbare. 2025-18733 blev korrigeret til match efter U09/U9-normalisering.
+- Del B: parseren importerede 15 tidligere droppede ikke-numeriske Holdet trukket-rækker fra 95 processerede snapshots. 15 nye standings-rækker blev tilføjet på tværs af 13 competitions.
+- Sikkerhedskopi: statistik/results/050-standings-standings-backup.sql (736 rækker) blev taget før skrivning; standings har nu 751 rækker. Backupen holdes lokalt og pushes ikke.
+- 042/043/047/048 er uændrede og bygger fortsat på team_matches; deres rapportfiler blev ikke ændret.
+- competitions-identitetsfelter og eksisterende 042/043/047/048-resultatfiler er urørte.
+
