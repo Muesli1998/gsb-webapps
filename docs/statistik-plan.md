@@ -335,6 +335,39 @@ Denne standard gælder for al fremtidig rapportering af "hold" i
 Results-rapporten og enhver senere Preview-side — den er ikke kun en
 engangsrettelse til 042/043.
 
+**Note (2026-09-17): regelsæt-koder er holdtype, ikke niveau — og et
+manglende niveau-bogstav er ikke automatisk en fejl.** Ved Chris'
+visuelle gennemgang af to konkrete opgave 051-identiteter (Gladsaxe
+Søborg 2 U15 og Gladsaxe Søborg U17, begge med ukendt holdtype) blev
+begge B-niveauer for 2016 bekræftet korrekte — men gennemgangen afklarede
+også en generel regel som opgave 046/051's parsing endnu ikke kender
+til:
+
+- Koder som **"X1"**, "4+3", "4+2", "2+2" og "4 spillere" er
+  **regelsæt/holdtype**, ikke et niveau — på linje med hinanden, ikke
+  et alternativ til A/B/C/D. Fx betyder "Serie X1" i U17 2013 at holdet
+  har 4 spillere af blandet køn, som et selvstændigt regelsæt ved
+  siden af "4+3"-rækkerne (Serie 1/Serie 2). "X1" skal derfor
+  klassificeres som holdtype på linje med "4+3"/"4+2"/"2+2", ALDRIG
+  forsøges parset som niveau-bogstav.
+- Et manglende A/B/C/D i kildeteksten er **ikke nødvendigvis en
+  parsing-fejl eller mangel** — nogle lokalunioner (fx København)
+  opdeler i stedet i navngivne serier/regelsæt uden bogstavniveau. Et
+  "unknown" niveau kan derfor være et ærligt, korrekt resultat, ikke
+  kun "kilden mangler data" (kategori a) eller "ingen entydig match"
+  (kategori d) — det kan også betyde "denne række har reelt ikke noget
+  niveau at udtrække, fordi lokalunionen ikke bruger den inddeling".
+  Dette svækker ikke opgave 051's kategori (b)-fund (6 identiteter fik
+  et ægte niveau ud af flere indbyrdes konsistente kildetekster), men
+  betyder at et højt antal i kategori (a)/(d) ikke i sig selv er et
+  problem der skal "løses" videre — det kan være den korrekte,
+  endelige tilstand for en del af de resterende ~97 identiteter.
+
+Konsekvens for fremtidig parsing (endnu ikke implementeret): "X1" bør
+tilføjes til holdtype-regexen i `042-results-rapport.mjs`/
+`043-results-rapport-v2.mjs` (og `046`/`051`'s scripts) som en
+holdtype-værdi, ikke forsøgt matchet af niveau-regexen.
+
 **Note (2026-09-15): 18 uafklarede audit-kandidater fra opgave 006.**
 Af de 39 hold-/individafvigelser med en gemt, ordret Bemærkning er 18
 uden uafklarede kategorier — de er klassificeret som "administrativ
