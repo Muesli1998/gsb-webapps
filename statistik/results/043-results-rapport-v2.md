@@ -1,6 +1,6 @@
 # Results-rapport v2 — fuldt stat-katalog
 
-Genereret 2026-09-17T20:18:46.148Z. Datasæt: 2818 holdkampe, 7599 spillere, 67196 spillerrelationer.
+Genereret 2026-09-17T20:20:34.961Z. Datasæt: 2818 holdkampe, 7599 spillere, 67196 spillerrelationer.
 
 ## 1. Winrate pr. hold
 

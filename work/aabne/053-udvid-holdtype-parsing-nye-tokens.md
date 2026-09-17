@@ -121,3 +121,8 @@ fire nævnt her.
 - 043 efter parserudvidelse: 176 holdidentiteter, 92 med mindst ét unknown-felt (før 180/103).
 - Ingen databaseændringer; senior/veteran-identitet uberørt.
 
+
+## Resultat — korrigeret efterkontrol
+- Opgave 052 genkørt efter generisk P-fasealias: 126 rest tokens; 0 indeholder et P\d+-token. 
+- Opgave 043 genkørt: team-identiteter 180 → 176; unknown 103 → 92 (uændret). Den skrevne rapport indeholder den korrigerede formulering med 5 genuint uforklarede stillingsrækker; den gamle 21-formulering er fraværende.
+

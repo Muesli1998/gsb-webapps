@@ -553,3 +553,6 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
 ### 2026-09-17 — Opgave 053 efterkontrolrettelse
 - 052 efterkontrol kørbar fra repo-roden: 140 reststrenge, 0 BD/P1/P2-rester.
 
+
+- 2026-09-17 — Opgave 053 efterkontrol: 052 P-fasealias gav 126 rest tokens, 0 P\d+; 043 generatorens kendte-hul tekst korrigeret til 5 uforklarede. Identitetstal fastholdt 180→176, unknown 103→92.
+
