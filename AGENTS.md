@@ -84,6 +84,14 @@ Tunge og langvarige kørsler (Playwright-scraping, databasebygning) hører
 hjemme på den stationære, som står tændt. Den bærbare er til redigering
 og lettere arbejde. Det er en vejledning, ikke en spærring.
 
+**Et repo skabes altid med `git clone` fra GitHub, aldrig ved at kopiere en .git-mappe mellem maskiner eller fra et arkiv/zip.** Fejler
+`git pull` med en rettighedsfejl (`Permission denied`) på noget inde i
+`.git/`, er den rigtige reaktion at klone repoet på ny i en frisk mappe —
+ikke at rette rettigheder på den eksisterende `.git`-mappe med `icacls`
+eller lignende. Tjek altid `pwd`/`git rev-parse --show-toplevel` mod den
+forventede sti for den aktuelle maskine, før du antager noget mangler fra
+repoet.
+
 ---
 
 ## Arbejdsform
@@ -92,15 +100,33 @@ og lettere arbejde. Det er en vejledning, ikke en spærring.
 `git push` når du er færdig. Dropbox synkroniserede af sig selv; det gør
 git ikke. Glemmer du at pushe, er arbejdet usynligt for den anden maskine.
 
-**Opgaver der uddelegeres får en fil i `work/`** med mål, afgrænsning
-(hvilke mapper må røres, hvilke ikke), den nødvendige kontekst,
-accept­kriterier, og besked om at stoppe og skrive spørgsmålet ind i filen
-frem for at gætte ved tvivl. Små rettelser laver man bare — ceremonien er
-til det der gives videre til en anden.
+**Opgaver der uddelegeres får en fil i `work/`**, altid med disse
+sektioner, i denne rækkefølge: Trin, Gren, Baggrund, Mål, Afgrænsning
+(Må røres/Må ikke røres), Kontrol (Målet/Værnet), Ved tvivl (med en tom
+`## Spørgsmål`-sektion Codex skriver i ved behov), Resultatnote. Dette er
+den ENESTE definition af formatet i repoet — gentag den ikke andre
+steder (heller ikke i "## Roller: manager og worker" nedenfor, som i
+stedet skal henvise hertil). Ældre kort i `work/loeste/` fra før
+2026-09-19 kan afvige fra denne liste; de rettes ikke med tilbagevirkende
+kraft. Små rettelser laver man bare — ceremonien er til det der gives
+videre til en anden.
 
 **Arbejde udført af en agent kører på sin egen gren**, så ændringen kan
 læses samlet før den flettes ind. Rettelser man selv laver, committes
 direkte på `main`.
+
+**Databaser er read-only som udgangspunkt.** Enhver `.db`-fil i repoet
+må kun læses, medmindre et opgavekorts Mål-afsnit eksplicit navngiver
+skriveadgang som en del af opgaven. Fravær af en eksplicit
+skrivetilladelse betyder ingen skrivning — det er ikke nok at et kort
+undlader at nævne databasen.
+
+**Fletning til `main` sker kun som fast-forward** (`git merge --ff-only`),
+aldrig en almindelig merge-commit og aldrig `--force`. Før en gren
+godkendes til fletning, tjekkes at `main` reelt er en forfader til grenen
+(`git merge-base --is-ancestor origin/main origin/<gren>`), så en
+forældet lokal `main` ikke overskriver arbejde lavet på den anden
+computer i mellemtiden.
 
 **Ingen absolutte stier i repoet.** Alt inde i repoet er relativt til
 repo-roden; alt der peger ud af det går gennem `config.local.json`.
@@ -123,8 +149,8 @@ Chris arbejder sammen med to forskellige AI'er, med forskellige roller —
 ikke fordi den ene er bedre, men fordi de har forskellig adgang:
 
 **Claude (manager)** læser repoet, undersøger, vurderer prioritet op mod
-denne fil, og skriver opgavekort i `work/` — samme format som altid
-(mål, kontekst, afgrænsning, kontrol). Claude har typisk ikke selv
+denne fil, og skriver opgavekort i `work/` — formatet er defineret én gang
+under "Arbejdsform" ovenfor. Claude har typisk ikke selv
 git-adgang til at pushe (afhænger af opsætningen den kører i) og kører
 ikke selv de faktiske undersøgelser, scripts eller commits.
 

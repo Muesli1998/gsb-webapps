@@ -121,5 +121,15 @@ Den gemte browserfil statistik/results/browser-standings/2011-71.json (source_ur
 
 
 ## Resultat
-Read-only sammenligning mod de seks gemte browser-standingsfiler: **2 af 6** har holdliste-mismatch (2013/2693 og 2021/13965); 2010/431, 2011/71, 2025/18504 og 2025/18733 matcher i disse snapshots. 2011/71 kan ikke verificeres mod Chris' aktuelle 8-holds visning, fordi den gemte fil selv indeholder DB'ens 9-holds pulje. Importkoden (import-browser-standings.mjs) vælger competition_id med sæson + league_group_id alene og LIMIT 1; det dokumenterer en systemisk risiko, men ikke alene den historiske årsag til 2011-mismatchet. Opgaven er derfor stoppet af kilde-diskrepansen og kræver et nyt manuelt snapshot.
+
+**Resultat:** 2011/71 er bekræftet en kildefejl, ikke en reel
+GSB-afvigelse — den gemte "verificerede" stilling er fejlagtigt
+`competition_id=450` (Danmarksserien Øst pulje 2, senior), mens Chris'
+kilde (badmintonplayer.dk) viser at 2011/71 reelt er en BADKBH U17-række.
+Roddiagnose: `league_group_id` er ikke globalt unikt på tværs af
+aldersgrupper/rækketyper. Fuldt dokumenteret i
+`docs/statistik-plan.md`s "Opfølgning efter lukning"-afsnit under Test &
+Validation, og indarbejdet i den opdaterede status for de oprindelige 21
+uforklarede stillingsrækker (opgave 048-050). Ingen yderligere handling
+krævet nu.
 

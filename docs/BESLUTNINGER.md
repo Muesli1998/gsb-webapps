@@ -361,3 +361,19 @@ udelukkende at bekræfte at "klubbredt" ikke skjulte noget der ville have
 klubbredt datasæt (senior, U09-U19, veteran), ikke kun senior. Se
 `docs/statistik-plan.md`s "Results"-afsnit og det tilhørende opgavekort
 for hvad rapporten skal indeholde.
+
+## 2026-09-19 — `apps/netlify-prod/` røres kun ved ny feature og med eksplicit godkendelse
+
+**Besluttet:** ingen ændringer i `apps/netlify-prod/` som en del af nogen
+opgave, medmindre formålet er at introducere en ny, besluttet feature i
+produktion — og selv da kun efter Chris' eksplicitte godkendelse af den
+konkrete ændring, ikke en generel tilladelse givet én gang. Fejl fundet
+under test af eksisterende funktionalitet dokumenteres (fil, linje,
+input, forventet/faktisk), rettes ikke som en del af testopgaven.
+
+**Hvorfor:** Kampsystemet bruges live af trænerne. En fejl her rammer
+nogen midt i en træning, ikke en rapport ingen læser med det samme.
+
+**Fravalgt:** at lade "oplagte" rettelser passere som en del af en
+testopgave, eller at lade én tidligere godkendelse gælde for fremtidige
+ændringer.
