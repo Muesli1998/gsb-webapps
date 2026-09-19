@@ -1318,3 +1318,59 @@ osv.).
 forbedret visuelt) — afventer Chris' fornyede test af den opdaterede standalone-fil, samt hans
 bekræftelse/rettelse af de to yderligere flaggede, usikre kønsdata-navne (Qingyi Marie Han, Mina
 Lorin Özden).
+
+
+---
+
+## Fremtidige idéer til Kampsystemet — fundet ved research 2026-09-19, IKKE bygget
+
+Rejst i forbindelse med planlægningen af Kampsystemets testsuite (se
+`docs/kampsystem-testplan.md`). Chris bad om research på hvad lignende
+badminton-klub-/rundefordelingsværktøjer typisk understøtter. Researchen
+fandt ingen universel badminton-regel for kønssammensætning af double-par
+(det er en klub-/trænerpræference, ikke en BWF-regel) — men afdækkede seks
+konkrete funktionsgab i forhold til hvad andre værktøjer typisk har. Ingen
+af de seks er besluttet bygget — de står her som fund, ikke som opgaver.
+
+**1. Makkerpar-/modstanderpar-historik på firemands-kombinations-niveau.**
+Den nuværende gentagelses-undgåelse tjekker (så vidt kortlagt) om en KAMP
+er identisk med sidste runde — ikke om netop DEN kombination af 4 spillere
+(uanset side/rækkefølge) har optrådt tidligere i sæsonen. En spiller kan
+derfor have haft samme makker mange gange, uden at systemet reagerer,
+hvis selve kamp-parringen varierer nok fra gang til gang.
+
+**2. Separat balance for ventetid/på-hinanden-følgende-pauser.**
+"Alle har lige mange kampe totalt" er ikke det samme som "ingen sidder
+over tre runder i træk". Andre klubværktøjer sporer typisk begge dele
+separat.
+
+**3. Spiller der kommer sent eller går tidligt midt i en træningsaften.**
+Ingen mekanisme fundet for at markere en spiller "aktiv fra runde X,
+utilgængelig fra runde Y" uden at det påvirker allerede genererede/spillede
+runder.
+
+**4. "Må ikke møde hinanden"-begrænsning.**
+I modsætning til "kun bestemte discipliner" (allerede bygget, per-spiller
+kategorivalg 1-3), findes der ingen mekanisme til at udelukke to specifikke
+spillere fra at blive parret mod/med hinanden.
+
+**5. Forklarbarhed i UI.**
+Når en spiller sidder over, eller et ønsket mixed-par ikke kunne dannes,
+viser UI'et (så vidt kortlagt) ikke hvorfor — fx "ulige antal damer denne
+runde" eller "ingen gyldig modstander uden en tredje pause i træk".
+
+**6. Delvis regenerering ved afbud efter lodtrækning.**
+Den eksisterende "Nulstil runde"-knap nulstiller (så vidt kortlagt) hele
+runden. Ingen mekanisme fundet til at regenerere KUN de kampe en afbudt
+spiller indgik i, uden at røre resten af rundens allerede fordelte kampe.
+
+**Kønssammensætning — konklusion fra researchen, til reference ved
+fremtidig bygning:** ingen BWF- eller round-robin-standard kræver at undgå
+rene kønsopdelte par, eller at undgå et mixed-par mod et rent par. Begge
+bør derfor forblive lokale, konfigurerbare GSB-regler — og modelleres som
+en BLØD præference (foretræk når det ikke koster meget på rating/fairness),
+ikke en hård begrænsning der kan tvinge dårlige matches eller ekstra
+oversiddere. Kilder: BWF General Competition Regulations (definerer kun
+selve mixed double-disciplinen, siger intet om klubtræning), samt en
+gennemgang af QourtX, Courtside Manager, CourtsCaptain, Playpass og
+lignende klubværktøjer.
