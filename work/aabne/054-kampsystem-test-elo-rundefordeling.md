@@ -142,7 +142,30 @@ kodekvalitet.**
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+- Kortlægning: ELO- og rundefordelingslogikken ligger i
+  `apps/netlify-prod/public/kampsystem.html`: `expectedScore` (linje 585),
+  `pairSingles` (591), `formTeams` (598), `matchTeams` (613),
+  `fallbackRating` (632), `genererRunde` (644), `lavUdskiftningskampe`
+  (813) og `opdaterRating` (869). Sheets-I/O ligger i
+  `apps/netlify-prod/netlify/functions/elo-hent.js` og `elo-gem.js`.
+- Automatiserede tests: **13 kørt, 13 bestået, 0 fejlet** med
+  `node tools/tests/kampsystem/elo-runde.test.cjs`. Testen importerer den
+  ægte inline-scripttekst fra prod-filen read-only via Node `vm`.
+- Formeltest: `ELO_DIVISOR=850`, `K=70`; samme rating giver 0,5 forventet
+  score, og ratingændringen testes som `round(K * (result - expected))`.
+- `node --test tools/tests/kampsystem/elo-runde.test.cjs` kunne ikke starte
+  testfilen i denne Windows-runtime: **0 tests kørt af runneren**, fejl
+  `Error: spawn EPERM`. Den assert-baserede direkte Node-kørsel ovenfor er
+  den gennemførte kontrol.
+- Manuel gennemgang: **1 konkret reproducerbar fejl**. I
+  `apps/netlify-prod/netlify/functions/elo-hent.js:73` mapper
+  `ratingAendring: row[8] || ''`; input `row[8] = 0` giver faktisk `''`,
+  mens forventet output er tallet `0`. Det skjuler en legitim ratingændring
+  på nul i det hentede kamplog-output.
+- Værn: **0 ændrede filer** under `apps/netlify-prod/`, `kampsystem/`,
+  `statistik/`, `docs/statistik-plan.md` og `docs/BESLUTNINGER.md`.
+- Preview-sanity blev ikke kørt; den er valgfri, og `kampsystem/build3.py`
+  er dokumenteret ukørbar.
 
 ## Resultat
 
