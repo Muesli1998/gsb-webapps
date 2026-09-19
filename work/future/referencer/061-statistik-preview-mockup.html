@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Klubstatistik Preview — mockup</title>
+<style>
+  :root {
+    --court-green: #1f5c3f; --court-green-dark: #123a28; --line-white: #f7f5ef;
+    --shuttle: #e8a33d; --ink: #1c2420; --muted: #5c6b62; --border: #d7ddd4;
+    --error: #b3432f; --ok: #1f5c3f; --kamp-accent: #2f5fa8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding-inline: 16px; background: var(--line-white); color: var(--ink);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; line-height: 1.45;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; }
+
+  /* fake gsb-nav, so the mockup shows this page sitting inside the real site */
+  .gsb-nav-apps { background: #123a28; display: flex; align-items: center; gap: 2px; padding: 8px 16px; flex-wrap: wrap; margin-inline: -16px; }
+  .gsb-nav-tab { color: rgba(247,245,239,0.78); text-decoration: none; font-size: 0.85rem; font-weight: 600; padding: 7px 13px; border-radius: 7px; white-space: nowrap; }
+  .gsb-nav-tab.active { background: #e8a33d; color: #2b1c05; }
+
+  header.page-header {
+    background: var(--court-green); color: var(--line-white); padding: 28px 24px 24px;
+    position: relative; overflow: hidden; margin-inline: -16px; margin-top: 0;
+  }
+  header.page-header::after {
+    content: ""; position: absolute; right: -40px; top: -40px; width: 180px; height: 180px;
+    border: 3px solid rgba(255,255,255,0.12); border-radius: 50%;
+  }
+  header.page-header h1 { margin: 0 0 4px; font-size: 1.5rem; font-weight: 700; }
+  header.page-header p { margin: 0; color: rgba(247,245,239,0.75); font-size: 0.92rem; max-width: 640px; }
+
+  main { padding: 24px 0 60px; }
+
+  .card { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 20px; }
+  .card h2 { margin: 0 0 4px; font-size: 1.05rem; }
+  .card .desc { margin: 0 0 16px; color: var(--muted); font-size: 0.86rem; }
+
+  /* filterbar: age group pills + season select, sticky, same family as season-pill */
+  .filterbar-card { position: sticky; top: 0; z-index: 5; }
+  .filterbar-row { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+  .agegroup-pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .agegroup-pill {
+    display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--border);
+    border-radius: 20px; padding: 7px 14px; font-size: 0.86rem; cursor: pointer; user-select: none;
+    background: #fff; font-weight: 600; color: var(--muted);
+  }
+  .agegroup-pill.active { border-color: var(--court-green); background: #eaf3ee; color: var(--court-green-dark); }
+
+  /* sub-filter row: only relevant when Ungdom or Veteran is the active age group */
+  .subfilter-row { display: none; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--border); }
+  .subfilter-row.show { display: flex; }
+  .subfilter-row .subfilter-label { font-size: 0.74rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.03em; margin-right: 2px; }
+  .subfilter-pill {
+    border: 1px solid var(--border); border-radius: 16px; padding: 5px 12px; font-size: 0.8rem;
+    cursor: pointer; user-select: none; background: #fafaf7; color: var(--muted); font-weight: 600;
+  }
+  .subfilter-pill.active { border-color: var(--shuttle); background: #fff3d6; color: #7a5b16; }
+  .selector-field { display: flex; flex-direction: column; gap: 4px; margin-left: auto; }
+  .selector-field label { font-size: 0.72rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.03em; }
+  .selector-field select { padding: 7px 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.88rem; font-family: inherit; }
+
+  /* internal stat tab row */
+  .stat-tabs { display: flex; gap: 2px; flex-wrap: wrap; background: #eef0ec; border-radius: 9px; padding: 4px; margin-bottom: 20px; }
+  .stat-tab {
+    border: none; background: none; padding: 9px 16px; border-radius: 7px; font-size: 0.86rem;
+    font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit;
+  }
+  .stat-tab:hover { color: var(--court-green-dark); }
+  .stat-tab.active { background: #fff; color: var(--court-green-dark); box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+
+  .pane { display: none; }
+  .pane.active { display: block; }
+
+  /* overblik: team cards */
+  .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 14px; margin-bottom: 20px; }
+  .kpi-tile { background: #f7fbf8; border: 1px solid var(--border); border-radius: 8px; padding: 16px; text-align: center; }
+  .kpi-tile .kpi-num { font-size: 1.9rem; font-weight: 800; color: var(--court-green); font-variant-numeric: tabular-nums; }
+  .kpi-tile .kpi-label { font-size: 0.76rem; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; margin-top: 2px; }
+
+  .team-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+  .team-card { background: #f7fbf8; border: 1px solid var(--border); border-radius: 8px; padding: 14px; text-align: center; }
+  .team-card .hold { font-size: 0.78rem; color: var(--muted); font-weight: 600; }
+  .team-card .sub { font-size: 0.68rem; color: var(--muted); margin-top: -2px; }
+  .team-card .pct-big { font-size: 1.7rem; font-weight: 800; color: var(--court-green); margin: 4px 0; }
+  .team-card .record { font-size: 0.76rem; color: var(--muted); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  th { background: #f2f1eb; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.03em; color: var(--muted); cursor: pointer; white-space: nowrap; }
+  th.sorted { color: var(--court-green); }
+  th .sort-arrow { font-size: 0.65rem; margin-left: 2px; }
+  tr:hover td { background: #f7fbf8; }
+  .num-cell { text-align: right; font-variant-numeric: tabular-nums; }
+
+  .bar-cell { display: flex; align-items: center; gap: 8px; min-width: 140px; }
+  .bar-track { flex: 1; height: 8px; background: #eee; border-radius: 4px; overflow: hidden; }
+  .bar-fill { height: 100%; background: var(--court-green); }
+  .pct { font-weight: 700; font-variant-numeric: tabular-nums; min-width: 42px; text-align: right; }
+
+  .table-wrap { overflow-x: auto; }
+
+  .search-row { display: flex; gap: 10px; align-items: center; margin-bottom: 14px; flex-wrap: wrap; }
+  .search-row input[type="text"] {
+    padding: 8px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.88rem;
+    flex: 1; min-width: 180px; font-family: inherit;
+  }
+  .min-games-toggle {
+    display: inline-flex; align-items: center; gap: 6px; font-size: 0.8rem; color: var(--muted);
+    border: 1px solid var(--border); border-radius: 20px; padding: 6px 12px; white-space: nowrap; cursor: pointer;
+  }
+  .min-games-toggle input { accent-color: var(--court-green); margin: 0; }
+  .min-games-toggle select { border: none; background: none; font-family: inherit; font-size: 0.8rem; color: var(--court-green-dark); font-weight: 600; }
+
+  tr.player-row { cursor: pointer; }
+  tr.player-row.expanded td { background: #f7fbf8; }
+  tr.player-row .expand-caret { display: inline-block; margin-right: 6px; color: var(--muted); font-size: 0.7rem; transition: transform .12s ease; }
+  tr.player-row.expanded .expand-caret { transform: rotate(90deg); color: var(--court-green); }
+  tr.player-detail-row { display: none; }
+  tr.player-detail-row.show { display: table-row; }
+  tr.player-detail-row td { background: #f7fbf8; padding: 0; border-bottom: 2px solid var(--court-green); }
+
+  /* spillerprofil — den udvidede visning når man klikker en spiller */
+  .player-profile { padding: 18px 20px 22px; }
+  .pp-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+  .pp-head .pp-name { font-size: 1.15rem; font-weight: 800; color: var(--court-green-dark); }
+  .pp-head .pp-sub { font-size: 0.82rem; color: var(--muted); }
+
+  .pp-kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin-bottom: 18px; }
+  .pp-kpi { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; text-align: center; }
+  .pp-kpi .n { font-size: 1.25rem; font-weight: 800; color: var(--court-green); font-variant-numeric: tabular-nums; }
+  .pp-kpi .l { font-size: 0.68rem; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; }
+
+  .pp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .pp-section { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+  .pp-section h3 { margin: 0 0 10px; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.03em; color: var(--muted); }
+  .pp-section.wide { grid-column: 1 / -1; }
+
+  .pp-catrow { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; font-size: 0.84rem; }
+  .pp-catrow .cat-name { width: 90px; flex-shrink: 0; color: var(--ink); }
+  .pp-catrow:last-child { margin-bottom: 0; }
+
+  .pp-teams { display: flex; flex-direction: column; gap: 6px; }
+  .pp-team-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 0.83rem; padding: 6px 0; border-bottom: 1px solid var(--border); }
+  .pp-team-row:last-child { border-bottom: none; }
+  .pp-team-row .t-name { font-weight: 600; }
+  .pp-team-row .t-sub { color: var(--muted); font-size: 0.74rem; }
+  .pp-team-row .t-rec { font-variant-numeric: tabular-nums; color: var(--muted); white-space: nowrap; }
+
+  .pp-opponents { display: flex; flex-direction: column; gap: 6px; font-size: 0.83rem; }
+  .pp-opp-row { display: flex; justify-content: space-between; gap: 10px; padding: 5px 0; border-bottom: 1px dashed var(--border); }
+  .pp-opp-row:last-child { border-bottom: none; }
+  .pp-opp-row .o-rec.win { color: var(--court-green); font-weight: 700; }
+  .pp-opp-row .o-rec.loss { color: var(--error); font-weight: 700; }
+
+  .pp-seasons-table { width: 100%; font-size: 0.83rem; border-collapse: collapse; }
+  .pp-seasons-table th, .pp-seasons-table td { padding: 5px 8px; text-align: left; border-bottom: 1px solid var(--border); }
+  .pp-seasons-table td.num-cell, .pp-seasons-table th.num-cell { text-align: right; font-variant-numeric: tabular-nums; }
+
+  .pp-board { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; font-size: 0.9rem; font-weight: 700; color: var(--shuttle); }
+  .pp-board .arrow { color: var(--muted); font-weight: 400; }
+
+  .career-line { margin-top: 4px; font-size: 0.86rem; color: var(--court-green-dark); }
+  .career-line strong { font-variant-numeric: tabular-nums; }
+
+  .pct-big-pair { display: flex; gap: 16px; flex-wrap: wrap; }
+  .pct-big-tile { flex: 1; min-width: 180px; background: #f7fbf8; border: 1px solid var(--border); border-radius: 10px; padding: 20px; text-align: center; }
+  .pct-big-tile .lbl { font-size: 0.78rem; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; }
+  .pct-big-tile .val { font-size: 2.4rem; font-weight: 800; color: var(--court-green); margin: 6px 0; font-variant-numeric: tabular-nums; }
+  .pct-big-tile .rec { font-size: 0.8rem; color: var(--muted); }
+
+  /* hall of fame / career card */
+  .hof-list { display: flex; flex-direction: column; gap: 8px; }
+  .hof-row { display: flex; align-items: center; gap: 12px; padding: 9px 12px; background: #fafaf7; border: 1px solid var(--border); border-radius: 8px; }
+  .hof-rank { width: 22px; text-align: center; font-weight: 800; color: var(--court-green); font-size: 0.85rem; }
+  .hof-name { font-weight: 700; font-size: 0.86rem; flex: 1; min-width: 120px; }
+  .hof-meta { font-size: 0.78rem; color: var(--muted); white-space: nowrap; }
+
+  footer.page-footer { text-align: center; color: var(--muted); font-size: 0.78rem; padding: 8px 0 30px; }
+  footer.page-footer a { color: var(--court-green); text-decoration: none; font-weight: 600; }
+
+  .example-flag {
+    display: inline-block; margin-bottom: 14px; background: #fff3d6; border: 1px solid #f0dfae;
+    color: #7a5b16; font-size: 0.78rem; font-weight: 600; padding: 6px 12px; border-radius: 8px;
+  }
+
+  @media (max-width: 640px) {
+    .filterbar-row { flex-direction: column; align-items: stretch; }
+    .selector-field { margin-left: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="gsb-nav-apps">
+    <a class="gsb-nav-tab" href="#">🏠 Forside</a>
+    <a class="gsb-nav-tab" href="#">🏆 GSB Dream Team</a>
+    <a class="gsb-nav-tab" href="#">🎾 Ungdomssparring</a>
+    <a class="gsb-nav-tab active" href="#">📈 Klubstatistik</a>
+    <a class="gsb-nav-tab" href="#">⚡ Kampsystem</a>
+  </nav>
+
+  <header class="page-header">
+    <h1>📈 Klubstatistik</h1>
+    <p>Vind/tab og aktivitet for hele klubben — ungdom, senior og veteran. Data fra Nembadminton/BadmintonPlayer.</p>
+  </header>
+
+  <main>
+    <div class="example-flag">Mockup — designforslag med eksempeldata. Ingen af tallene herunder er rigtige klubtal.</div>
+
+    <div class="card filterbar-card">
+      <div class="filterbar-row">
+        <div class="agegroup-pills" role="tablist" aria-label="Aldersgruppe">
+          <button class="agegroup-pill active" data-group="alle" type="button">Alle</button>
+          <button class="agegroup-pill" data-group="ungdom" type="button">Ungdom</button>
+          <button class="agegroup-pill" data-group="senior" type="button">Senior</button>
+          <button class="agegroup-pill" data-group="veteran" type="button">Veteran</button>
+        </div>
+        <div class="selector-field">
+          <label for="mock-season">Sæson</label>
+          <select id="mock-season">
+            <option>2025/26</option>
+            <option>2024/25</option>
+            <option>Alle sæsoner</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Under-filter: årgang, vises kun når "Ungdom" er valgt -->
+      <div class="subfilter-row" id="subfilter-ungdom">
+        <span class="subfilter-label">Årgang</span>
+        <button class="subfilter-pill active" type="button">Alle årgange</button>
+        <button class="subfilter-pill" type="button">U9</button>
+        <button class="subfilter-pill" type="button">U11</button>
+        <button class="subfilter-pill" type="button">U13</button>
+        <button class="subfilter-pill" type="button">U15</button>
+        <button class="subfilter-pill" type="button">U17</button>
+        <button class="subfilter-pill" type="button">U17/U19</button>
+      </div>
+
+      <!-- Under-filter: veteranklasse, vises kun når "Veteran" er valgt -->
+      <div class="subfilter-row" id="subfilter-veteran">
+        <span class="subfilter-label">Klasse</span>
+        <button class="subfilter-pill active" type="button">Alle klasser</button>
+        <button class="subfilter-pill" type="button">40+</button>
+        <button class="subfilter-pill" type="button">50+</button>
+        <button class="subfilter-pill" type="button">55+</button>
+        <button class="subfilter-pill" type="button">60+</button>
+        <button class="subfilter-pill" type="button">70+</button>
+        <button class="subfilter-pill" type="button">Motionist</button>
+      </div>
+    </div>
+
+    <div class="stat-tabs" role="tablist" aria-label="Statistiktype">
+      <button class="stat-tab active" data-pane="overblik" type="button">Overblik</button>
+      <button class="stat-tab" data-pane="hold" type="button">Hold</button>
+      <button class="stat-tab" data-pane="spillere" type="button">Spillere</button>
+      <button class="stat-tab" data-pane="kategori" type="button">Kategori</button>
+      <button class="stat-tab" data-pane="hjemmeude" type="button">Hjemme/Ude</button>
+      <button class="stat-tab" data-pane="modstander" type="button">Modstanderhold</button>
+      <button class="stat-tab" data-pane="saeson" type="button">Sæson</button>
+      <button class="stat-tab" data-pane="karriere" type="button">🏅 Klub-karriere</button>
+    </div>
+
+    <!-- OVERBLIK -->
+    <div class="pane active" id="pane-overblik">
+      <div class="card">
+        <h2>Klub-overblik — Alle</h2>
+        <p class="desc">Samlet billede for de valgte filtre. Skift aldersgruppe eller sæson ovenfor for at zoome ind.</p>
+        <div class="kpi-row">
+          <div class="kpi-tile"><div class="kpi-num">58,4%</div><div class="kpi-label">Klub-winrate</div></div>
+          <div class="kpi-tile"><div class="kpi-num">2.818</div><div class="kpi-label">Holdkampe i alt</div></div>
+          <div class="kpi-tile"><div class="kpi-num">7.599</div><div class="kpi-label">Spillere</div></div>
+          <div class="kpi-tile"><div class="kpi-num">31</div><div class="kpi-label">Hold i sæsonen</div></div>
+        </div>
+        <h2 style="margin-top:22px;">Hold i valgt gruppe</h2>
+        <div class="team-cards">
+          <div class="team-card"><div class="hold">Gladsaxe Søborg 1</div><div class="sub">Senior</div><div class="pct-big">64%</div><div class="record">79S–44T · 123 kampe</div></div>
+          <div class="team-card"><div class="hold">Gladsaxe Søborg 2</div><div class="sub">Senior</div><div class="pct-big">55%</div><div class="record">80S–63T · 143 kampe</div></div>
+          <div class="team-card"><div class="hold">Gladsaxe Søborg 3</div><div class="sub">Senior</div><div class="pct-big">59%</div><div class="record">53S–37T · 90 kampe</div></div>
+          <div class="team-card"><div class="hold">Gladsaxe Søborg U15 · 4 spillere</div><div class="sub">Ungdom</div><div class="pct-big">61%</div><div class="record">28S–18T · 46 kampe</div></div>
+          <div class="team-card"><div class="hold">Gladsaxe Søborg 1</div><div class="sub">Veteran 40+</div><div class="pct-big">71%</div><div class="record">15S–6T · 21 kampe</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOLD -->
+    <div class="pane" id="pane-hold">
+      <div class="card">
+        <h2>Winrate pr. hold</h2>
+        <p class="desc">Hold identificeres på holdnummer + aldersgruppe (ungdom: også holdtype/niveau) — aldrig kun navn, jf. Results-standarden. Niveau-kolonnen viser "ukendt" ærligt, når kildeteksten ikke angiver et bogstavniveau (se note nederst).</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th class="sorted">Hold ▾</th><th>Aldersgruppe</th><th>Holdtype/niveau</th><th>Kampe</th><th>Winrate</th></tr></thead>
+            <tbody>
+              <tr><td>Gladsaxe Søborg 1</td><td>Senior</td><td>—</td><td class="num-cell">123</td><td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:64%"></div></div><span class="pct">64%</span></div></td></tr>
+              <tr><td>Gladsaxe Søborg 2</td><td>Senior</td><td>—</td><td class="num-cell">143</td><td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:55%"></div></div><span class="pct">55%</span></div></td></tr>
+              <tr><td>Gladsaxe Søborg 3</td><td>Senior</td><td>—</td><td class="num-cell">90</td><td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:59%"></div></div><span class="pct">59%</span></div></td></tr>
+              <tr><td>Gladsaxe Søborg U15</td><td>Ungdom · U15</td><td>4 spillere · D</td><td class="num-cell">46</td><td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:61%"></div></div><span class="pct">61%</span></div></td></tr>
+              <tr><td>Gladsaxe Søborg U15</td><td>Ungdom · U15</td><td>2+2 · ukendt</td><td class="num-cell">22</td><td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:48%"></div></div><span class="pct">48%</span></div></td></tr>
+              <tr><td>Gladsaxe Søborg U13</td><td>Ungdom · U13</td><td>ukendt · ukendt</td><td class="num-cell">19</td><td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:53%"></div></div><span class="pct">53%</span></div></td></tr>
+              <tr><td>Gladsaxe Søborg 1</td><td>Veteran · 40+</td><td>—</td><td class="num-cell">21</td><td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:71%"></div></div><span class="pct">71%</span></div></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="desc" style="margin:12px 0 0;"><strong>Åbent punkt, ikke løst af dette design:</strong> for en del ungdomshold viser kildeteksten intet bogstavniveau (A/B/C/D) — det kan være en reel begrænsning i kildens egen inddeling (nogle lokalunioner bruger navngivne serier uden bogstav) og ikke nødvendigvis en mangel. UI'et skal derfor vise "ukendt" som et ærligt resultat, ikke gætte et niveau eller skjule rækken.</p>
+      </div>
+    </div>
+
+    <!-- SPILLERE -->
+    <div class="pane" id="pane-spillere">
+      <div class="card">
+        <h2>Winrate og kamptal pr. spiller</h2>
+        <p class="desc">Standard: alle spillere vises, ingen minimumsgrænse. Grænsen herunder er en kontrol — ikke en fast regel — så en spiller med 1 kamp og 100% ikke skjules, men heller ikke topper listen uigenkendeligt.</p>
+        <div class="search-row">
+          <input type="text" placeholder="Søg spiller...">
+          <label class="min-games-toggle">
+            <input type="checkbox">
+            Min.
+            <select><option>3</option><option>5</option><option>10</option></select>
+            kampe
+          </label>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Spiller</th><th>Kampe</th><th>Sejre</th><th class="sorted">Winrate ▾</th></tr></thead>
+            <tbody>
+              <tr class="player-row expanded" data-target="pd-1">
+                <td><span class="expand-caret">▶</span>Jonas Trusell-Jensen</td><td class="num-cell">46</td><td class="num-cell">32</td>
+                <td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:70%"></div></div><span class="pct">70%</span></div></td>
+              </tr>
+              <tr class="player-detail-row show" id="pd-1"><td colspan="4">
+                <div class="player-profile">
+                  <div class="pp-head">
+                    <span class="pp-name">Jonas Trusell-Jensen</span>
+                    <span class="pp-sub">Senior · Gladsaxe Søborg 1</span>
+                  </div>
+
+                  <div class="pp-kpis">
+                    <div class="pp-kpi"><div class="n">46</div><div class="l">Kampe (valgt filter)</div></div>
+                    <div class="pp-kpi"><div class="n">70%</div><div class="l">Winrate</div></div>
+                    <div class="pp-kpi"><div class="n">2</div><div class="l">Hold spillet på</div></div>
+                    <div class="pp-kpi"><div class="n">5</div><div class="l">Sæsoner i klubben</div></div>
+                  </div>
+
+                  <div class="pp-grid">
+                    <div class="pp-section">
+                      <h3>Kategorier spillet</h3>
+                      <div class="pp-catrow"><span class="cat-name">Herresingle</span><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:68%"></div></div><span class="pct">68%</span></div></div>
+                      <div class="pp-catrow"><span class="cat-name">Herredouble</span><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:72%"></div></div><span class="pct">72%</span></div></div>
+                      <div class="pp-catrow"><span class="cat-name">Mixeddouble</span><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:0%"></div></div><span class="pct">—</span></div></div>
+                    </div>
+
+                    <div class="pp-section">
+                      <h3>Hold spillet for</h3>
+                      <div class="pp-teams">
+                        <div class="pp-team-row"><div><div class="t-name">Gladsaxe Søborg 1</div><div class="t-sub">Senior · denne sæson</div></div><div class="t-rec">32S–10T</div></div>
+                        <div class="pp-team-row"><div><div class="t-name">Gladsaxe Søborg 2</div><div class="t-sub">Senior · 2023/24–2024/25</div></div><div class="t-rec">28S–19T</div></div>
+                      </div>
+                    </div>
+
+                    <div class="pp-section">
+                      <h3>Board-tendens (kronologisk, denne sæson)</h3>
+                      <div class="pp-board">1 <span class="arrow">→</span> 1 <span class="arrow">→</span> 1 <span class="arrow">→</span> 2 <span class="arrow">→</span> 1</div>
+                      <p class="career-line" style="margin-top:10px; color: var(--muted); font-size:0.78rem;">Board 1 hele sæsonen, med en enkelt runde på board 2.</p>
+                    </div>
+
+                    <div class="pp-section">
+                      <h3>Hyppigste modstandere</h3>
+                      <div class="pp-opponents">
+                        <div class="pp-opp-row"><span>Køge 1</span><span class="o-rec win">4S–1T</span></div>
+                        <div class="pp-opp-row"><span>Værløse 2</span><span class="o-rec loss">1S–3T</span></div>
+                        <div class="pp-opp-row"><span>Drive 4</span><span class="o-rec win">2S–1T</span></div>
+                      </div>
+                    </div>
+
+                    <div class="pp-section wide">
+                      <h3>Sæson for sæson</h3>
+                      <table class="pp-seasons-table">
+                        <thead><tr><th>Sæson</th><th>Hold</th><th class="num-cell">Kampe</th><th class="num-cell">Winrate</th></tr></thead>
+                        <tbody>
+                          <tr><td>2025/26</td><td>Gladsaxe Søborg 1</td><td class="num-cell">18</td><td class="num-cell">72%</td></tr>
+                          <tr><td>2024/25</td><td>Gladsaxe Søborg 1</td><td class="num-cell">16</td><td class="num-cell">69%</td></tr>
+                          <tr><td>2023/24</td><td>Gladsaxe Søborg 2</td><td class="num-cell">14</td><td class="num-cell">64%</td></tr>
+                        </tbody>
+                      </table>
+                      <div class="career-line" style="margin-top:12px; padding-top:10px; border-top:1px dashed var(--border);">
+                        Klub-karriere: <strong>5 sæsoner</strong>, <strong>142 kampe</strong> totalt for klubben (se også 🏅 Klub-karriere-fanen).
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td></tr>
+              <tr class="player-row" data-target="pd-2"><td><span class="expand-caret">▶</span>Line Nielsen</td><td class="num-cell">38</td><td class="num-cell">24</td>
+                <td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:63%"></div></div><span class="pct">63%</span></div></td></tr>
+              <tr class="player-detail-row" id="pd-2"><td colspan="4"><div class="player-profile"><p class="desc" style="margin:0;">Samme opbygning som ovenfor — udfyldes med Line Nielsens egne tal.</p></div></td></tr>
+              <tr class="player-row" data-target="pd-3"><td><span class="expand-caret">▶</span>Anna Rudolph</td><td class="num-cell">19</td><td class="num-cell">14</td>
+                <td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:74%"></div></div><span class="pct">74%</span></div></td></tr>
+              <tr class="player-detail-row" id="pd-3"><td colspan="4"><div class="player-profile"><p class="desc" style="margin:0;">Samme opbygning som ovenfor — udfyldes med Anna Rudolphs egne tal.</p></div></td></tr>
+              <tr class="player-row" data-target="pd-4"><td><span class="expand-caret">▶</span>Oliver Kirk</td><td class="num-cell">2</td><td class="num-cell">2</td>
+                <td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span class="pct">100%</span></div></td></tr>
+              <tr class="player-detail-row" id="pd-4"><td colspan="4"><div class="player-profile"><p class="desc" style="margin:0;">Samme opbygning som ovenfor — udfyldes med Oliver Kirks egne tal.</p></div></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- KATEGORI -->
+    <div class="pane" id="pane-kategori">
+      <div class="card">
+        <h2>Winrate pr. kategori</h2>
+        <p class="desc">Single, double og mixed — samlet for den valgte aldersgruppe og sæson.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Kategori</th><th>Kampe</th><th>Winrate</th></tr></thead>
+            <tbody>
+              <tr><td>Herresingle</td><td class="num-cell">149</td><td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:62%"></div></div><span class="pct">62%</span></div></td></tr>
+              <tr><td>Damesingle</td><td class="num-cell">74</td><td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:51%"></div></div><span class="pct">51%</span></div></td></tr>
+              <tr><td>Herredouble</td><td class="num-cell">110</td><td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:58%"></div></div><span class="pct">58%</span></div></td></tr>
+              <tr><td>Damedouble</td><td class="num-cell">75</td><td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:53%"></div></div><span class="pct">53%</span></div></td></tr>
+              <tr><td>Mixeddouble</td><td class="num-cell">72</td><td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:64%"></div></div><span class="pct">64%</span></div></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- HJEMME/UDE -->
+    <div class="pane" id="pane-hjemmeude">
+      <div class="card">
+        <h2>Hjemme vs. ude</h2>
+        <p class="desc">Er klubben stærkere på hjemmebane? Samme filtre som resten af siden.</p>
+        <div class="pct-big-pair">
+          <div class="pct-big-tile"><div class="lbl">Hjemme</div><div class="val">61%</div><div class="rec">312 sejre af 512 kampe</div></div>
+          <div class="pct-big-tile"><div class="lbl">Ude</div><div class="val">55%</div><div class="rec">284 sejre af 517 kampe</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODSTANDERHOLD -->
+    <div class="pane" id="pane-modstander">
+      <div class="card">
+        <h2>Winrate mod modstanderhold</h2>
+        <p class="desc">Hvem klubben typisk vinder og taber mod — sorteret efter antal indbyrdes kampe.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Modstanderhold</th><th>Kampe</th><th>Winrate mod dem</th></tr></thead>
+            <tbody>
+              <tr><td>Værløse 2</td><td class="num-cell">18</td><td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:72%"></div></div><span class="pct">72%</span></div></td></tr>
+              <tr><td>Drive 4</td><td class="num-cell">14</td><td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:50%"></div></div><span class="pct">50%</span></div></td></tr>
+              <tr><td>Køge 1</td><td class="num-cell">11</td><td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:36%"></div></div><span class="pct">36%</span></div></td></tr>
+              <tr><td>Valby BC</td><td class="num-cell">9</td><td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:78%"></div></div><span class="pct">78%</span></div></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- SÆSON -->
+    <div class="pane" id="pane-saeson">
+      <div class="card">
+        <h2>Winrate og kamptal pr. sæson</h2>
+        <p class="desc">Udvikling over tid for den valgte aldersgruppe.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Sæson</th><th>Kampe</th><th>Winrate</th></tr></thead>
+            <tbody>
+              <tr><td>2025/26</td><td class="num-cell">480</td><td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:58%"></div></div><span class="pct">58%</span></div></td></tr>
+              <tr><td>2024/25</td><td class="num-cell">452</td><td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:54%"></div></div><span class="pct">54%</span></div></td></tr>
+              <tr><td>2023/24</td><td class="num-cell">411</td><td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:61%"></div></div><span class="pct">61%</span></div></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- KLUB-KARRIERE -->
+    <div class="pane" id="pane-karriere">
+      <div class="card">
+        <h2>🏅 Klub-karriere — flest kampe for klubben</h2>
+        <p class="desc">Klubbens mest trofaste spillere — rangeret på antal kampe totalt, uafhængigt af den valgte aldersgruppe/sæson ovenfor (dette er en langtidsopgørelse, ikke et sæsonfilter).</p>
+        <div class="hof-list">
+          <div class="hof-row"><div class="hof-rank">1</div><div class="hof-name">Jonas Trusell-Jensen</div><div class="hof-meta">142 kampe · 5 sæsoner</div></div>
+          <div class="hof-row"><div class="hof-rank">2</div><div class="hof-name">Kenn Blæsbjerg Christensen</div><div class="hof-meta">138 kampe · 6 sæsoner</div></div>
+          <div class="hof-row"><div class="hof-rank">3</div><div class="hof-name">Line Nielsen</div><div class="hof-meta">121 kampe · 4 sæsoner</div></div>
+          <div class="hof-row"><div class="hof-rank">4</div><div class="hof-name">Malthe Baltzer</div><div class="hof-meta">109 kampe · 3 sæsoner</div></div>
+          <div class="hof-row"><div class="hof-rank">5</div><div class="hof-name">Marie Gotfred Johansen</div><div class="hof-meta">98 kampe · 3 sæsoner</div></div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer">
+      Data fra Nembadminton/BadmintonPlayer. Kendte huller i datagrundlaget er dokumenteret —
+      <a href="#">se detaljer</a>.
+    </footer>
+  </main>
+</div>
+
+<script>
+  document.querySelectorAll('.agegroup-pill').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('.agegroup-pill').forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      document.getElementById('subfilter-ungdom').classList.toggle('show', btn.dataset.group === 'ungdom');
+      document.getElementById('subfilter-veteran').classList.toggle('show', btn.dataset.group === 'veteran');
+    });
+  });
+
+  document.querySelectorAll('.subfilter-row').forEach(function (row) {
+    row.querySelectorAll('.subfilter-pill').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        row.querySelectorAll('.subfilter-pill').forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+      });
+    });
+  });
+
+  document.querySelectorAll('.stat-tab').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('.stat-tab').forEach(function (b) { b.classList.remove('active'); });
+      document.querySelectorAll('.pane').forEach(function (p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      document.getElementById('pane-' + btn.dataset.pane).classList.add('active');
+    });
+  });
+
+  document.querySelectorAll('.player-row').forEach(function (row) {
+    row.addEventListener('click', function () {
+      var target = document.getElementById(row.dataset.target);
+      if (target) {
+        target.classList.toggle('show');
+        row.classList.toggle('expanded', target.classList.contains('show'));
+      }
+    });
+  });
+</script>
+</body>
+</html>
