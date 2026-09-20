@@ -6,6 +6,7 @@
     ['hjemmeude', 'Hjemme/Ude'], ['modstander', 'Modstanderhold'], ['saeson', 'Sæson'], ['karriere', '🏅 Klub-karriere']
   ];
   var AGE_GROUPS = { all: null, youth: [2, 3, 4, 5, 6, 18], senior: [1], veteran: [9, 11, 12, 13, 17] };
+  var EXCLUDED_PLAYER_IDS = new Set([176]);
   var state = { data: null, age: 'all', subAge: null, season: 'all', tab: 'overblik', holdSort: { key: 'name', direction: 1 }, opponentSort: { key: 'name', direction: 1 } };
   var $ = function (selector) { return document.querySelector(selector); };
 
@@ -39,7 +40,7 @@
 
   function playerCount(result) {
     var matchIds = new Set(result.matches.map(function (row) { return row.teamMatchId; }));
-    var ids = new Set(state.data.playerLinks.filter(function (row) { return matchIds.has(row.teamMatchId); }).map(function (row) { return row.playerId; }));
+    var ids = new Set(state.data.playerLinks.filter(function (row) { return matchIds.has(row.teamMatchId) && !EXCLUDED_PLAYER_IDS.has(row.playerId); }).map(function (row) { return row.playerId; }));
     return ids.size;
   }
 
@@ -319,6 +320,7 @@
     var individualById = new Map(individual.map(function (row) { return [row.id, row]; }));
     var linksByIndividual = new Map();
     state.data.playerLinks.forEach(function (link) {
+      if (EXCLUDED_PLAYER_IDS.has(link.playerId)) return;
       if (!individualById.has(link.individualMatchId)) return;
       if (!linksByIndividual.has(link.individualMatchId)) linksByIndividual.set(link.individualMatchId, []);
       linksByIndividual.get(link.individualMatchId).push(link);
@@ -333,6 +335,7 @@
       return stats.get(playerId);
     }
     state.data.playerLinks.forEach(function (link) {
+      if (EXCLUDED_PLAYER_IDS.has(link.playerId)) return;
       var im = individualById.get(link.individualMatchId);
       if (!im) return;
       var match = matchById.get(im.teamMatchId);

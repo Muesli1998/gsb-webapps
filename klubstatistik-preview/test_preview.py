@@ -16,6 +16,7 @@ with sync_playwright() as playwright:
     assert len(api_requests) == 1, api_requests
     initial_kpis = page.locator("[data-pane='overblik'] .kpi-num").all_inner_texts()
     assert len(initial_kpis) == 4, initial_kpis
+    assert initial_kpis[2] == "7.598", initial_kpis
     initial_cards = page.locator("[data-pane='overblik'] .team-card").all_inner_texts()
     assert initial_cards, "Ingen holdkort i Alle-udsnit"
     page.get_by_role("button", name="Hjemme/Ude", exact=True).click()
@@ -32,6 +33,15 @@ with sync_playwright() as playwright:
     category_counts = category_rows.locator("td:nth-child(2)").evaluate_all("cells => cells.map(cell => Number(cell.textContent.trim()))")
     assert sum(category_counts) == 20313, category_counts
     assert category_counts[-2:] == [3410, 2105], category_counts
+
+    page.get_by_role("button", name="Spillere", exact=True).click()
+    assert "Ikke fremmødt" not in page.locator('[data-pane="spillere"]').inner_text()
+
+    page.get_by_role("button", name="🏅 Klub-karriere", exact=True).click()
+    assert "Ikke fremmødt" not in page.locator('[data-pane="karriere"]').inner_text()
+
+    page.get_by_role("button", name="Modstanderhold", exact=True).click()
+    assert "Ikke fremmødt" not in page.locator('[data-pane="modstander"]').inner_text()
 
     page.get_by_role("button", name="🏅 Klub-karriere", exact=True).click()
     career_rows = page.locator('[data-pane="karriere"] tbody tr')

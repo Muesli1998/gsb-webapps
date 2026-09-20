@@ -71,4 +71,24 @@ der skal ekskluderes — kun "Ikke fremmødt" er bekræftet af Chris som ikke-en
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+- **Databasekontrol:** Frisk Dropbox-læsning bekræftede `player_id=176`,
+  `name_raw='Ikke fremmødt'`, `external_player_id='name:ikke fremmødt'`.
+  ID'et har 326 relationer fordelt på 307 individuelle kampe. Der blev ikke
+  skrevet til databasen.
+- **Preview:** `player_id=176` filtreres i beregningslaget med stabilt ID fra
+  `playerCount` og begge player-link-gennemløb i `profileStats`; dermed er
+  Spillere, Klub-karriere, spillerprofilens hyppigste modstandere og alle
+  afledte spillertal fri for placeholderen. Før/efter-spiller-KPI for Alle:
+  7.599 → 7.598, præcis 1 mindre. Ungdoms-KPI: 3.364 → 3.363.
+- **Browserkontrol:** Den udvidede `test_preview.py` fandt ikke
+  "Ikke fremmødt" i Spillere-, Klub-karriere- eller Modstanderhold-fanen.
+  Regressionstal: `homeAwayCounts=[1442,1375]`, 7 kategori-rækker,
+  40 modstander-rækker, 15 sæson-rækker og 1 API-kald.
+- **analyse.html:** Der blev ikke fundet samme bekræftede fejl i
+  `apps/netlify-prod/`. `analyse.js` bygger `knownPlayers` fra
+  `Spillerpoint!A2:A200` og tæller kun rækker hvis hjemme-/udenavnet findes
+  dér; koden indeholder ingen placeholder-navn. `hent-resultater.js`
+  genkender allerede "Ikke fremmødt" som walkovertekst. Ingen prod-fil blev
+  ændret.
+- Kontroller bestået: `python -m py_compile server.py`,
+  `node --check klubstatistik.js` og `python test_preview.py`.
