@@ -558,3 +558,5 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
 
 - 2026-09-20 — Opgave 074: Codex-skill til kildeudtræk, normaliseret SQLite-overdragelse og referencevalidering skrevet, så kendte browser-/importbegrænsninger og sæsonprofil styres samlet. Ingen live udtræk eller DB-import i denne dokumentationsopgave.
 
+- 2026-09-20 — Opgave 075 pilot: 5/5 friske Playwright-kald returnerede 875-tegn standardskal; render-gate 0/5. Pilotten stoppede efter kortets stopregel; ingen fixture-import eller databaseændring.
+

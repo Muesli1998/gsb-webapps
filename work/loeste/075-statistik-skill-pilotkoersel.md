@@ -109,6 +109,18 @@ ikke en syntetisk fixture der ikke afspejler en reel kilde.
 
 ## Spørgsmål
 
+2026-09-20: Alle 5 afprøvede kendte `browser_verified`-kampe fejlede den friske Playwright-render-gate. De returnerede hver 875 tegn standardskal uden forventet kamp-ID og uden linje der starter med `Resultat`; 0/5 blev godkendt. Ifølge kortets "Ved tvivl" stopper pilotten her. Masseudtræk kræver fortsat den manuelle in-app-browserfallback; der forsøges ikke at omgå eller rette render-gaten i denne opgave.
+
+2026-09-20: §10.4-fixturekørslen blev ikke startet, fordi stopbetingelsen ovenfor indtrådte. Derfor er ingen af de 8 scenarier rapporteret som bestået, og gentagelse 2 er ikke relevant. En read-only audit fandt desuden kun 4/8 scenarier med direkte eksisterende rå evidens i checkoutet; de øvrige ville kræve manglende eller opfundne fixtures. Ingen testdatabase eller import blev derfor oprettet.
+
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+2026-09-20: Pilotten blev kørt fra frisk `main` på grenen `arbejde/075-statistik-skill-pilotkoersel`. Referenceudvalget var 5 kendte `browser_verified`-kampe: 337416 (forventet 4-3), 494475 (2-3), 494477 (2-3), 505211 (0-5) og 506441 (0-5). En ny headless Playwright Chromium-kontekst åbnede hver dokumenterede BadmintonPlayer-URL, ventede 5.000 ms og kontrollerede render-gaten på renderet bodytekst.
+
+Faktiske tal fra den genåbnede rapport `statistik/results/075-render-gate.json`: 5 forsøg, 0 med forventet kamp-ID, 0 med `Resultat`-linje, 0/5 render-gate-godkendt; alle 5 havde `textLength=875`, ingen browserfejl. Rapporten blev genåbnet efter generering og tallene stemmer med denne note.
+
+§10.4 blev ikke kørt efter den eksplicitte stopregel: kørsel 1 = 0/8 udførte scenarier, kørsel 2 = ikke udført, identitetskontrol = ikke relevant. Der blev ikke oprettet testkopi og ikke kørt import. Den uafhængige read-only audit vurderede 4/8 scenarier som direkte understøttet af eksisterende rå evidens, mens 4/8 var tvetydige eller manglede rå fixture; ingen eksisterende importer blev vurderet sikre at køre uændret mod en kopi.
+
+Reference-DB'en blev kun læst. SHA-256 før og efter var identisk: `49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E`. Ingen ændring i `statistik/data/`, `apps/netlify-prod/` eller `docs/statistik-plan.md`. Pilot-scriptet og JSON-rapporten er nye og indeholder ingen credentials eller callback-context.
+
+Skøn: Pilotten bekræfter, at den friske automatiserede Playwright-rute fortsat ikke passerer render-gaten; den beviser ikke, at den manuelle in-app-browserfallback er fejlet. Skillens §2, §3, §6 og §10 blev ikke ændret, fordi observationen stemmer med deres dokumenterede begrænsning. Opgaven afsluttes med et bekræftet negativt rutesvar, ikke med en fungerende automatiseret masseudtræksrute.

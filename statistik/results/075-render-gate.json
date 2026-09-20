@@ -1,0 +1,80 @@
+{
+  "generatedAt": "2026-09-20T13:21:40.540188+00:00",
+  "route": "fresh Playwright headless Chromium",
+  "waitMs": 5000,
+  "gate": "expected match ID in rendered body text and a line starting with Resultat",
+  "observations": [
+    {
+      "matchId": "337416",
+      "season": 2018,
+      "leagueGroupId": "11355",
+      "expectedResult": "4-3",
+      "referenceStatus": "browser_verified",
+      "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2018,11355,1,8,,337416,1093,",
+      "checkedAt": "2026-09-20T13:21:12.950384+00:00",
+      "textLength": 875,
+      "hasExpectedMatchId": false,
+      "resultLines": [],
+      "renderGate": false,
+      "error": null
+    },
+    {
+      "matchId": "494475",
+      "season": 2025,
+      "leagueGroupId": "18129",
+      "expectedResult": "2-3",
+      "referenceStatus": "browser_verified",
+      "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18129,1,8,,494475,1093,",
+      "checkedAt": "2026-09-20T13:21:20.436006+00:00",
+      "textLength": 875,
+      "hasExpectedMatchId": false,
+      "resultLines": [],
+      "renderGate": false,
+      "error": null
+    },
+    {
+      "matchId": "494477",
+      "season": 2025,
+      "leagueGroupId": "18129",
+      "expectedResult": "2-3",
+      "referenceStatus": "browser_verified",
+      "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18129,1,8,,494477,1093,",
+      "checkedAt": "2026-09-20T13:21:25.442870+00:00",
+      "textLength": 875,
+      "hasExpectedMatchId": false,
+      "resultLines": [],
+      "renderGate": false,
+      "error": null
+    },
+    {
+      "matchId": "505211",
+      "season": 2025,
+      "leagueGroupId": "18504",
+      "expectedResult": "0-5",
+      "referenceStatus": "browser_verified",
+      "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18504,1,8,,505211,1093,",
+      "checkedAt": "2026-09-20T13:21:30.450709+00:00",
+      "textLength": 875,
+      "hasExpectedMatchId": false,
+      "resultLines": [],
+      "renderGate": false,
+      "error": null
+    },
+    {
+      "matchId": "506441",
+      "season": 2025,
+      "leagueGroupId": "18733",
+      "expectedResult": "0-5",
+      "referenceStatus": "browser_verified",
+      "url": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,2025,18733,1,8,,506441,1093,",
+      "checkedAt": "2026-09-20T13:21:35.457639+00:00",
+      "textLength": 875,
+      "hasExpectedMatchId": false,
+      "resultLines": [],
+      "renderGate": false,
+      "error": null
+    }
+  ],
+  "passed": 0,
+  "attempted": 5
+}
