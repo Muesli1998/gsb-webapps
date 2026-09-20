@@ -469,3 +469,87 @@ højeste pointoptag) eller pr. spiller (vindprocent-stigning over de seneste run
 senere.
 
 Status: ren idé, ikke besluttet, intet bygget.
+
+## Klubstatistik Preview — brugerfeedback runde 1 (2026-09-20)
+
+**Kontekst:** efter opgave 061-069/074-076 var flettet til `main`, fik Chris vist et statisk
+snapshot af `klubstatistik-preview/` (genereret som en artifact til gennemsyn, ikke en del af selve
+appen). Denne feedbackrunde er rå input fra den gennemgang — INGEN af punkterne er endnu formaliseret
+som opgavekort. Skriv formelle kort ud fra denne liste når arbejdet skal sættes i gang; indtil da er
+dette bare den samlede facitliste over hvad der er sagt.
+
+### Bekræftede datafejl (ikke gæt — verificeret direkte i databasen)
+
+- **"Ikke fremmødt" er en spillerrække i `players`-tabellen** (`player_id=176`,
+  `name_raw='Ikke fremmødt'`). Den tælles i dag med som en rigtig spiller i Spillere-fanen,
+  Klub-karriere-fanen, modstander-optællinger osv. Skal ekskluderes fra ALLE steder hvor spillere
+  aggregeres, klubbred — ikke kun i Klubstatistik-preview'en, men overalt spillerlister/optællinger
+  bruges (tjek også Dream Team/analyse.html for samme problem).
+
+### Generelt, på tværs af faner
+
+- Filtre (sæson, ungdoms-underfilter) skal understøtte multi-select — vælge flere sæsoner/underfiltre
+  ad gangen, ikke kun ét.
+- Et sammenligningsværktøj: sammenlign 2 hold, 2 sæsoner eller 2 spillere side om side. Stor, ny
+  funktion — ikke en del af de oprindelige 061-069-kort.
+
+### Overblik-fanen
+
+- Chris' reaktion: "lidt uoverskuelig" i nuværende form. Ingen konkret ændring besluttet endnu —
+  skal tænkes over før noget bygges.
+
+### Hold-fanen
+
+- Mangler en "rang"-kolonne (GSB 1, 2, 3 osv.).
+- **Holdsammenlægning på tværs af sæsoner:** senior-hold med fast rang (GSB 1/2/3/...) er reelt
+  samme hold år efter år og skal lægges sammen 100% sikkert. Ungdomshold skifter mere — der skal
+  undersøges om de kan grupperes efter "type" i stedet for automatisk at lægges sammen.
+  - Chris' forslag til metode: træk en FULD oversigt over alle ligaer/turneringer (med
+    kampkategorier og regelsæt) fra databasen, så hold kan kædes sammen på tværs af sæsoner selv når
+    GSB mangler et hold i et givent år. Dette er reelt et større dataprojekt, ikke en UI-opgave.
+  - **Vigtigt: dette er IKKE nyt territorium.** Der findes allerede løste kort om præcis
+    holdidentitet/regelsæt-parsing: `work/loeste/044-hold-identitet-navnekollision.md`,
+    `045-holdidentitet-finkornet-aargang.md`, `046-holdidentitet-ungdom-holdtype-niveau.md`,
+    `052-ukendte-regelsaet-tokens-scan.md`, `053-udvid-holdtype-parsing-nye-tokens.md`. Genlæs disse
+    FØR et nyt kort skrives til selve holdsammenlægningen — brug dem som grundlag, ikke fra bunden.
+  - Klik på et hold skal give en detaljevisning, samme mønster som spillerprofilerne i 064.
+  - Ligalisten skal også bruges til at vurdere hvilke ungdomshold der spiller i de "gode"/stærke
+    ligaer (Chris: "lidt lettere at tjekke for Senior/Veteran, men de skal stadig tjekkes").
+
+### Spillere-fanen
+
+- Kategori-visningen i spillerprofilen bruger i dag `category_raw` med board-præfiks ("1. HS",
+  "2. HS", "1. D" osv. — tolv rækker). Skal i stedet aggregeres på `discipline_raw` (fem rækker:
+  HS/HD/MD/S/D for herrer, DS/DD/MD/S/D for damer).
+  - **Ny idé fra Chris, ikke besluttet endnu:** evt. opdel kategorierne i Ungdom/Senior/Veteran
+    inden for spillerprofilen, og gør det muligt at klikke på fx "HS" under Ungdom for at se
+    winrate pr. årgang. Markeret som en mulighed at overveje, ikke et krav.
+  - Vis faktiske sejre/kampe-tal ved siden af winrate-procenten, ikke kun bar+procent.
+- "Hold spillet for"-listen i profilen skal bruge samme holdsammenlægning som Hold-fanen (se
+  ovenfor) — afhænger af at den logik er bygget først.
+
+### Kategori-fanen
+
+- Kunne være interessant at se fordelingen pr. sæson eller pr. hold. Udskudt til senere, ingen
+  beslutning.
+
+### Hjemme/Ude-fanen
+
+- Chris ønsker mere data end de to store pct-tal der er der i dag. Ikke specificeret hvad endnu.
+
+### Modstanderhold-fanen
+
+- Ønsker lagdelt sortering: Gruppe (Ungdom/Senior/Veteran), Årgang (U-tal eller +-tal), Rang
+  (1, 2, ...), og andre af klubbens egne sorteringsmetoder — ikke kun sortering på de nuværende
+  kolonner enkeltvis.
+
+### Sæson-fanen
+
+- Klik på en sæson skal give en detaljevisning/mere data, samme mønster som spillerprofiler/hold.
+
+### Næste konkrete skridt (Chris' prioritering, 2026-09-20)
+
+Før noget af ovenstående bygges, er næste skridt at hente en fuld oversigt over alle ligaer/
+turneringer (med deres kampkategorier/regelsæt) fra databasen — grundlaget for holdsammenlægning og
+for at vurdere hvilke ungdomshold der spiller i de stærke ligaer. Dette er reelt forarbejde til
+Hold-fanens holdsammenlægning, og bør give input til flere af punkterne ovenfor samtidig.
