@@ -83,6 +83,16 @@ overskrives af tom API-data. Corona-status skal genoprettes efter
 generiske browser-synkroniseringer, så den ikke utilsigtet bliver til
 `browser_verified`.
 
+`data/`-mappen (databasen, backupper) er `.gitignore`'et og findes derfor
+kun lokalt på den maskine der skrev den — den rejser ikke med git. **Efter
+enhver opgave der ændrer databasen, skal den opdaterede
+`gsb-statistik-normalized.db` kopieres til `gsbData`-stien fra
+`config.local.json` (Dropbox), inden opgaven markeres løst.** Uden det trin
+er ændringen kun synlig på den maskine der lavede den, og forsvinder hvis
+den lokale `data/`-mappe senere ryddes eller repoet klones friskt (set med
+opgave 050: 751-rækkers versionen af `standings` findes i dag ingen steder
+— hverken lokalt eller i Dropbox — fordi kopieringen blev sprunget over).
+
 ---
 
 ## Blivende undtagelser
