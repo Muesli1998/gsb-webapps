@@ -115,7 +115,11 @@ løsningstidspunktet — repoet kan have ændret sig siden dette kort blev skrev
 
 ### Spørgsmål
 
-(Udfyldes af den der løser opgaven. Christoffer svarer her i filen.)
+2026-09-20: Den overordnede arbejdsinstruks for denne sekvens siger eksplicit
+"Rør ikke `apps/netlify-prod/`", mens dette korts Mål og Afgrænsning kræver
+ændringer i `apps/netlify-prod/public/` og eventuelt
+`apps/netlify-prod/netlify/functions/`. Hvilken instruktion gælder for
+Preview-kortene? Ingen filer under `apps/netlify-prod/` er ændret.
 
 ## Resultatnote
 
