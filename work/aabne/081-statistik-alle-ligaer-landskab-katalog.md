@@ -166,6 +166,31 @@ modstander-ID’er opdager traversal 0 nye klubber, mens eventuelle isolerede
 klubber uden for de 1.159 seeds er ukendte. Den fulde blinde iteration er
 derfor stoppet og kræver en ny beslutning.
 
+**Christoffers nye spor (2026-09-20):** Før den dyre blinde iteration
+godkendes, skal to yderligere ruter afprøves — ingen af dem er faktisk
+afprøvet endnu, kun konstateret som "ikke bevist" eller ikke undersøgt:
+
+1. **`SearchTournamentClass`** i webservice-proxyen er set i schemaet, men
+   aldrig faktisk kaldt med reelle parametre. Afprøv det med et par kendte
+   sæson-/kreds-værdier og se om det returnerer en liste af turneringsklasser
+   uden klubfilter. "Ikke bevist" er ikke det samme som "afprøvet og fejlet".
+2. **Den offentlige hjemmeside.** Christoffer har fundet at
+   `https://badmintonplayer.dk/DBF/HoldTurnering/Stilling/#1,2026,,1,1,,,,`
+   viser ALLE Badminton Danmarks seniorrækker for sæson 26/27, og
+   `#1,2026,,1,8,,,,` viser Badminton Københavns seniorrækker — dvs. et
+   hash-parameter-baseret filter på (mindst) sæson og kreds/union, uden at
+   kræve et klub-ID. Siden er sandsynligvis en klient-side app der henter sit
+   indhold via et bagvedliggende API-kald. Undersøg det ved at åbne siden i en
+   browser og læse netværkstrafikken (fx med Playwright eller
+   read_network_requests) for at finde det faktiske endpoint, parameterrækken
+   (positionerne i hash'en — hvad er `1`, `2026`, tomt, `1`, `1`/`8` osv.?) og
+   om svaret giver en fuld liste af puljer/rækker for en sæson/kreds uden
+   klub-iteration. Hvis dette virker, er det sandsynligvis langt billigere end
+   både graf-genvejen og den blinde iteration.
+
+Rapportér resultatet af begge spor under et nyt "Spørgsmål"-svar, med
+konkret evidens (URL, kald, svar), før noget besluttes om den dyre iteration.
+
 ## Resultatnote
 
 **Trin 1 — afklaring (færdig; trin 2 ikke startet):** Ingen brugbar,
