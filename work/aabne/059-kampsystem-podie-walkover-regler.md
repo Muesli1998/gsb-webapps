@@ -90,6 +90,54 @@ Tilmeldinger-eksport med betalingskolonnen, eller skal kortet ændres til at
 teste de dokumenterede regelværdier i `docs/planlagte-features-spec.md`
 i stedet?
 
+Afklaret 2026-09-20: Der kan ikke fremskaffes en historisk
+Tilmeldinger-eksport med verificerbare MobilePay-kilder. Testen bruger
+derfor de dokumenterede betalingsværdier fra B5-specifikationen, mens
+walkover-teksterne stadig udtrækkes direkte fra de rå kampdata.
+
 ## Resultatnote
 
-*(udfyldes når opgaven er løst)*
+Metode: Der er tilføjet `tools/tests/kampsystem/podie-walkover.test.cjs`.
+Testen læser `erPodieBerettiget` fra `apps/netlify-prod/netlify/functions/stilling.js`
+og `erWalkover` fra `apps/netlify-prod/netlify/functions/hent-resultater.js`
+read-only via VM-udtræk. Ingen produktionsfil er ændret.
+
+Der findes ingen separat preview-udgave af disse Dream Team/Stilling-
+funktioner: `kampsystem/stilling_source.html` er en historisk stillingsside,
+men indeholder ikke funktionerne. Derfor er produktionskilden den relevante
+testkilde for dette kort.
+
+Betaling: Da der ikke findes betalingsfelter i
+`kampsystem/resultater_2526.csv` eller `kampsystem/resultater_2425.json`,
+bruges B5-specifikationens dokumenterede værdier som testcases — ikke som
+påståede historiske MobilePay-forekomster. De 9 cases var blank, whitespace,
+`Ja`/`ja`, `Betalt`/`BETALT`, `Gratis`, `Nej` og `Afventer`.
+
+Walkover: Testen udtrak 4 unikke faktiske tekstvarianter fra de rå data:
+`(Ikke fremmødt)`, `Ikke fremmødt`, `Ikke fremmødt / Ida Steen Mahler` og
+`Ikke fremmødt / Ikke fremmødt`. Den kontrollerede også 5 faktiske almindelige
+navnetekster som negative cases.
+
+Direkte kommando:
+
+```text
+node tools/tests/kampsystem/podie-walkover.test.cjs
+```
+
+Resultat:
+`Podie: 9/9 bestået, 0 fejlet`
+`Walkover: 9/9 bestået, 0 fejlet`
+
+Den foreskrevne katalogkontrol blev kørt:
+
+```text
+node --test tools/tests/kampsystem/
+```
+
+Resultat: Node test runner fejlede før testkørsel med Windows-fejlen
+`Error: spawn EPERM` (`tests 1, pass 0, fail 1`). Den direkte Node-kørsel
+ovenfor er derfor den anvendte kontrol.
+
+Værn:
+`git status --short apps/netlify-prod/` var tom. Der er ikke skrevet til
+databaser eller ændret i `kampsystem/`.
