@@ -47,9 +47,9 @@ vm.createContext(context);
 
 const exportNames = [
   'forventetVind', 'eloAendring', 'pairSingles', 'formTeams', 'formTeamsMixed',
-  'dannHold', 'holdRating', 'effektivRating',
+  'dannHold', 'holdRating', 'effektivRating', 'registerVinder', 'holdRatingSafe',
 ];
-const exportStatement = `globalThis.__tested = { ${exportNames.map((name) => `${name}: ${name}`).join(', ')} };`;
+const exportStatement = `globalThis.__tested = { ${exportNames.map((name) => `${name}: ${name}`).join(', ')}, setState: (matches) => { rundeAlleMatches = matches; rundeErBekraeftet = true; rundeTaeller = 1; } };`;
 const iifeEnd = script.lastIndexOf('})();');
 assert.notEqual(iifeEnd, -1, 'preview-kilden skal have en afsluttende IIFE');
 const executable = `${script.slice(0, iifeEnd)}\n${exportStatement}\n${script.slice(iifeEnd)}`;
@@ -102,3 +102,111 @@ assert.equal(new Set(teams.flat()).size, 4, 'dannHold må ikke udelade eller gen
 
 console.log(`ELO_DIVISOR=${constants.divisor}, K=${constants.k}`);
 console.log('13 tests passed, 0 failed');
+
+const categoryFailures = [];
+function categoryScenario(name, fn) {
+  try { fn(); } catch (error) { categoryFailures.push(`${name}: ${error.message}`); }
+}
+function rated(name, value, mixValue = value) {
+  return { navn: name, single: value, double: value, mix: mixValue };
+}
+function runRegistered(type, a, b, side = 'a', extra = {}) {
+  const match = { type, a, b, ...extra };
+  tested.setState([match]);
+  tested.registerVinder(0, side);
+  return match;
+}
+
+categoryScenario('1 lige ratings', () => {
+  const a = [rated('C1A', 1500), rated('C1B', 1500)];
+  const b = [rated('C1C', 1500), rated('C1D', 1500)];
+  runRegistered('mixed', a, b);
+  assert.equal(a[0].mix, 1535);
+  assert.equal(b[0].mix, 1465);
+});
+
+categoryScenario('2 klar favorit vinder', () => {
+  const a = [rated('C2A', 1700), rated('C2B', 1700)];
+  const b = [rated('C2C', 1500), rated('C2D', 1500)];
+  runRegistered('double', a, b);
+  assert.ok(a[0].double > 1700 && a[0].double < 1770);
+});
+
+categoryScenario('3 underdog vinder', () => {
+  const a = [rated('C3A', 1700), rated('C3B', 1700)];
+  const b = [rated('C3C', 1500), rated('C3D', 1500)];
+  runRegistered('double', a, b, 'b');
+  assert.ok(b[0].double > 1500);
+});
+
+categoryScenario('4 ekstreme ratings', () => {
+  const delta = tested.eloAendring(1000, 2500, true);
+  assert.ok(Number.isFinite(delta));
+  assert.ok(delta >= 0 && delta <= constants.k);
+});
+
+categoryScenario('5 udskiftningskamp ingen ændring', () => {
+  const a = [rated('C5A', 1500)];
+  const b = [rated('C5B', 1500)];
+  runRegistered('single', a, b, 'a', { udskiftning: true });
+  assert.equal(a[0].single, 1500);
+  assert.equal(b[0].single, 1500);
+});
+
+categoryScenario('6 manglende rating ingen ændring', () => {
+  const a = [rated('C6A', 1500, null), rated('C6B', 1500, 1500)];
+  const b = [rated('C6C', 1500), rated('C6D', 1500)];
+  runRegistered('mixed', a, b);
+  assert.equal(a[0].mix, null);
+  assert.equal(b[0].mix, 1500);
+});
+
+categoryScenario('7 nulsum for alle ratingKeys', () => {
+  for (const type of ['single', 'double', 'mixed']) {
+    const key = type === 'mixed' ? 'mix' : type;
+    const a = [rated(`C7A-${type}`, 1600)];
+    const b = [rated(`C7B-${type}`, 1400)];
+    const beforeA = a[0][key];
+    const beforeB = b[0][key];
+    runRegistered(type, a, b);
+    assert.equal((a[0][key] - beforeA) + (b[0][key] - beforeB), 0);
+  }
+});
+
+categoryScenario('8 mixed ændrer kun mix', () => {
+  const a = [rated('C8A', 1600, 1800), rated('C8B', 1600, 1800)];
+  const b = [rated('C8C', 1400, 1400), rated('C8D', 1400, 1400)];
+  runRegistered('mixed', a, b);
+  assert.equal(a[0].double, 1600);
+  assert.equal(b[0].double, 1400);
+  assert.notEqual(a[0].mix, 1800);
+});
+
+categoryScenario('9 double ændrer kun double', () => {
+  const a = [rated('C9A', 1800, 1600), rated('C9B', 1800, 1600)];
+  const b = [rated('C9C', 1400, 1400), rated('C9D', 1400, 1400)];
+  runRegistered('double', a, b);
+  assert.notEqual(a[0].double, 1800);
+  assert.equal(a[0].mix, 1600);
+  assert.equal(b[0].mix, 1400);
+});
+
+categoryScenario('10 fallback lækker ikke double til mix', () => {
+  const a = [rated('C10A', 98765, null), rated('C10B', 1500, 1500)];
+  const b = [rated('C10C', 1500, 1500), rated('C10D', 1500, 1500)];
+  runRegistered('mixed', a, b);
+  assert.equal(a[0].mix, null);
+  assert.notEqual(a[0].mix, 98765);
+  assert.equal(a[0].double, 98765);
+});
+
+categoryScenario('11 ratingKey-opslag', () => {
+  assert.ok(source.includes("k.type === 'single' ? 'single' : (k.type === 'double' ? 'double' : 'mix')"));
+  assert.ok(source.includes("k.type === 'single' || k.type === 'double' || k.type === 'mixed'"));
+});
+
+console.log(`Kategoriintegritet: ${11 - categoryFailures.length} bestået, ${categoryFailures.length} fejlet`);
+if (categoryFailures.length) {
+  console.error(categoryFailures.join('\n'));
+  process.exitCode = 1;
+}

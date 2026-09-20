@@ -101,4 +101,26 @@ Chris' beslutning hvornår og hvordan.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst)*
+- Testene er udvidet i den eksisterende
+  `tools/tests/kampsystem/elo-runde.test.cjs`, fordi den allerede evaluerer
+  preview-kilden og deler samme state-harness. `opdaterRating`/
+  `expectedScore` findes ikke som separate funktioner i preview-kilden;
+  de tilsvarende faktiske funktioner er `registerVinder`,
+  `forventetVind` og `eloAendring`.
+- Direkte assert-kørsel: **24 scenarier/tests**, heraf de 13 eksisterende
+  beregningstests **13 bestået, 0 fejlet** og kategoriintegritetens 11
+  scenarier **10 bestået, 1 fejlet**.
+- Fuld fejlbesked for det ene fejlede scenarie: `5 udskiftningskamp ingen
+  ændring: Expected values to be strictly equal: 1535 !== 1500`.
+  Input: en `single`-kamp med `m.udskiftning=true`, begge spillere med
+  rating 1500, side A vinder. Forventet: ingen ratingændring. Faktisk:
+  `registerVinder` ændrer A til 1535 og B til 1465. Fejlen er i preview-
+  kildens `registerVinder` (omkring linje 646); den er ikke rettet.
+- Kategoriintegritet: mixed ændrede kun `mix`, double ændrede kun
+  `double`, og fallback-scenariet med `double=98765`, `mix=null` skrev
+  ikke double-værdien til mix. RatingKey-sanitytesten bestod.
+- Kortets præcise `node --test tools/tests/kampsystem/`-kommando kunne ikke
+  starte i Windows-runtime’en på grund af test-runnerens `spawn EPERM`;
+  den direkte Node-kørsel gav tallene ovenfor.
+- Værn: `git status --short kampsystem/ apps/netlify-prod/` var tom;
+  **0 ændrede filer** i begge beskyttede områder.
