@@ -37,6 +37,56 @@
     };
   }
 
+  function playerCount(result) {
+    var matchIds = new Set(result.matches.map(function (row) { return row.teamMatchId; }));
+    var ids = new Set(state.data.playerLinks.filter(function (row) { return matchIds.has(row.teamMatchId); }).map(function (row) { return row.playerId; }));
+    return ids.size;
+  }
+
+  function score(result) {
+    var match = /^\s*(\d+)\s*-\s*(\d+)\s*$/.exec(result || '');
+    return match ? [Number(match[1]), Number(match[2])] : null;
+  }
+
+  function overblik(result) {
+    var teams = new Map();
+    result.teams.forEach(function (team) {
+      var key = String(team.id);
+      if (!teams.has(key)) teams.set(key, { team: team, wins: 0, losses: 0, matches: 0 });
+    });
+    result.matches.forEach(function (match) {
+      var entry = teams.get(String(match.teamId));
+      if (!entry) return;
+      var pair = score(match.result);
+      if (!pair) return;
+      entry.matches += 1;
+      var teamName = entry.team.name || '';
+      var home = teamName === (match.home || '');
+      var away = teamName === (match.away || '');
+      if (!home && !away) return;
+      var won = home ? pair[0] > pair[1] : pair[1] > pair[0];
+      if (pair[0] === pair[1]) return;
+      if (won) entry.wins += 1; else entry.losses += 1;
+    });
+    var cards = Array.from(teams.values()).filter(function (entry) { return entry.matches > 0; }).map(function (entry) {
+      var age = state.data.ageGroups[String(entry.team.ageGroupId)] || 'ukendt';
+      var youth = AGE_GROUPS.youth.indexOf(entry.team.ageGroupId) !== -1;
+      var decided = entry.wins + entry.losses;
+      return { name: entry.team.name, age: age, detail: youth ? 'ukendt · ukendt' : '—', matches: entry.matches, wins: entry.wins, losses: entry.losses, rate: decided ? Math.round(entry.wins / decided * 100) : null };
+    });
+    var decided = cards.reduce(function (sum, card) { return sum + card.wins + card.losses; }, 0);
+    var wins = cards.reduce(function (sum, card) { return sum + card.wins; }, 0);
+    var html = '<div class="kpi-row"><div class="kpi-tile"><div class="kpi-num">' + (decided ? Math.round(wins / decided * 100) + '%' : '—') + '</div><div class="kpi-label">Samlet winrate</div></div>' +
+      '<div class="kpi-tile"><div class="kpi-num">' + result.matches.length.toLocaleString('da-DK') + '</div><div class="kpi-label">Holdkampe</div></div>' +
+      '<div class="kpi-tile"><div class="kpi-num">' + playerCount(result).toLocaleString('da-DK') + '</div><div class="kpi-label">Spillere</div></div>' +
+      '<div class="kpi-tile"><div class="kpi-num">' + cards.length.toLocaleString('da-DK') + '</div><div class="kpi-label">Hold</div></div></div>';
+    html += '<h2>Hold i valgt gruppe</h2><div class="team-cards">' + cards.map(function (card) {
+      var rate = card.rate === null ? '—' : card.rate + '%';
+      return '<div class="team-card"><div class="hold">' + card.name + '</div><div class="sub">' + card.age + ' · ' + card.detail + '</div><div class="pct-big">' + rate + '</div><div class="record">' + card.wins + 'S–' + card.losses + 'T · ' + card.matches + ' kampe</div></div>';
+    }).join('') + '</div>';
+    return html;
+  }
+
   function renderFilters() {
     $('#age-filters').innerHTML = Object.keys(AGE_GROUPS).map(function (key) {
       return '<button class="agegroup-pill' + (state.age === key ? ' active' : '') + '" data-age="' + key + '">' + ageLabel(key) + '</button>';
@@ -67,6 +117,8 @@
   function renderStatus() {
     var result = filtered();
     $('#dataset-status').textContent = result.matches.length.toLocaleString('da-DK') + ' holdkampe, ' + result.teams.length.toLocaleString('da-DK') + ' hold og ' + result.competitions.length.toLocaleString('da-DK') + ' puljer i valgt udsnit (' + ageLabel(state.age) + '). Data blev hentet én gang; filtre kører lokalt.';
+    var pane = document.querySelector('[data-pane="overblik"]');
+    if (pane) pane.innerHTML = overblik(result);
   }
 
   fetch('/api/data').then(function (response) { if (!response.ok) throw new Error('Datalaget svarede med HTTP ' + response.status); return response.json(); }).then(function (data) {

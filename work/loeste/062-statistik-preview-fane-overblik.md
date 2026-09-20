@@ -60,4 +60,24 @@ Stop og skriv under "Spørgsmål" nedenfor.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+2026-09-20: Byggede Overblik-panelet i den eksisterende lokale
+`klubstatistik-preview`-side. Datalaget blev udvidet med spillerrelationer
+fra samme `/api/data`-respons; ingen parallel datakilde eller ekstra kald
+blev indført. KPI’er og holdkort beregnes klient-side for det filtrerede
+udsnit. Ungdomsrækker uden separate holdtype-/niveaufelter vises som
+`ukendt · ukendt`; der er ikke gættet eller skjult data.
+
+Faktiske browserkontroltal fra den read-only lokale DB:
+
+- Alle: **50%** samlet winrate, **2.818** holdkampe, **7.599** spillere,
+  **453** holdkort med kampe.
+- Ungdom: **51%**, **1.354** holdkampe, **3.364** spillere, **229** holdkort.
+- Ungdom + U9: **45%**, **105** holdkampe, **312** spillere, **19** holdkort.
+
+Kontrollen viste, at holdkortsamlingen ændrede sig mellem Alle, Ungdom og
+U9, faneklik viste Hold-panelet og skjulte Overblik-panelet, og der blev kun
+registreret **1** `/api/data`-request efter alle filter- og faneklik.
+`python -m py_compile server.py test_preview.py` og Node `--check`
+bestod. `git status --short apps/netlify-prod/ kampsystem/` var tom; ingen
+ændringer blev skrevet til databasen eller andre apps. Den visuelle lighed
+med mockuppen er en vurdering.

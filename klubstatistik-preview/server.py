@@ -55,12 +55,22 @@ def load_data(config_path: Path):
         matches = rows(
             db,
             """
-            SELECT external_match_id AS id, season_id AS seasonId,
+            SELECT team_match_id AS teamMatchId, external_match_id AS id, season_id AS seasonId,
                    competition_id AS competitionId, gsb_team_id AS teamId,
                    round_number AS round, round_date AS roundDate,
                    home_name_raw AS home, away_name_raw AS away,
                    result_raw AS result, points_raw AS points, status
             FROM team_matches ORDER BY season_id DESC, round_date, team_match_id
+            """,
+        )
+        players = rows(db, "SELECT player_id AS id, name_raw AS name FROM players ORDER BY player_id")
+        player_links = rows(
+            db,
+            """
+            SELECT im.team_match_id AS teamMatchId, imp.player_id AS playerId
+            FROM individual_matches im
+            JOIN individual_match_players imp ON imp.individual_match_id=im.individual_match_id
+            ORDER BY im.team_match_id, imp.player_id
             """,
         )
     labels = json.loads((ROOT / "statistik" / "agegroup-labels.json").read_text(encoding="utf-8"))
@@ -70,6 +80,8 @@ def load_data(config_path: Path):
         "competitions": competitions,
         "teams": teams,
         "matches": matches,
+        "players": players,
+        "playerLinks": player_links,
     }
 
 
