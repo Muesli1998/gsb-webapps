@@ -67,7 +67,7 @@ Stop og skriv under "Spørgsmål" nedenfor.
 ### Spørgsmål
 
 Den read-only database indeholder 20.319 individuelle rækker. De rå discipliner kan
-direkte grupperes i HS (2.222), DS (1.331), HD (5.627), DD (2.231) og MD (3.387); 
+direkte grupperes i HS (2.222), DS (1.331), HD (5.627), DD (2.231) og MD (3.387);
 men der findes også 3.414 rækker med rå disciplin `S` og 2.107 med rå disciplin
 `D`, altså 5.521 rækker uden køn. Desuden skal MD-tallet bekræftes, fordi rå
 `MD`-rækkerne alene summerer til 3.387 og dermed de fem kønnede discipliner til
