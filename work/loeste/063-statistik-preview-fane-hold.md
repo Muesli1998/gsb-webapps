@@ -54,4 +54,25 @@ dække to reelt forskellige tilmeldinger). Gæt ikke — dokumentér som uafklar
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+2026-09-20: Byggede Hold-panelet i den eksisterende lokale
+`klubstatistik-preview`-side. Tabellen beregnes af det allerede hentede
+in-memory-datasæt og sorterer klient-side; der er ikke tilføjet et nyt
+database- eller API-kald. Ungdomsrækker uden separate holdtype-/niveaufelter
+viser `ukendt · ukendt` ærligt.
+
+Browserkontrol med Alle-filteret gav disse faktiske rækkefølger (forkortet
+til de to første rækker):
+
+- Før sortering: `Gladsaxe Søborg 1 / U9 / ukendt · ukendt / 4 kampe / 100%`,
+  derefter samme hold med `4 kampe / 50%`.
+- Efter sortering på Kampe: `Gladsaxe Søborg 1 / 1 kamp / 0%`, derefter
+  `Gladsaxe Søborg 2 / 1 kamp / 0%`.
+- Efter sortering på Winrate: `Gladsaxe Søborg 3 / 4 kampe / 0%`, derefter
+  endnu en `Gladsaxe Søborg 3 / 4 kampe / 0%`.
+
+Kontrollen verificerede også, at teksten `ukendt` findes i tabellen og at
+`apiRequests=1` efter alle filtre, faner og sorteringer. `python -m
+py_compile server.py test_preview.py` og Node `--check` bestod. Værnet
+`git status --short apps/netlify-prod/ kampsystem/` var tom; øvrige faner,
+andre apps og databasen blev ikke ændret. Den visuelle sammenligning med
+mockuppen er en vurdering.
