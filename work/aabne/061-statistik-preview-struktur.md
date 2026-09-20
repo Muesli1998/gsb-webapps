@@ -28,36 +28,45 @@ afhænger af dette korts resultat.
 
 ## Mål
 
-En ny side i `apps/netlify-prod/public/` (foreslået filnavn: `klubstatistik.html` — vælg selv hvis
-et bedre navn giver mening, men hold det konsistent med de øvrige sidenavne) der:
+**Afklaret 2026-09-20 (se Spørgsmål nedenfor): dette bygges IKKE i `apps/netlify-prod/`.**
+Det bygges i en ny, selvstændig mappe `klubstatistik-preview/` i repo-roden — samme princip som
+`kampsystem/` allerede bruger for kampsystem-previewet: kilder der køres/testes lokalt, og som
+først "pastes" ind i `apps/netlify-prod/` som et separat, senere opgavekort, når siden er godkendt
+til at gå live. Databasen læses lokalt (via `config.local.json`, read-only) — ingen ekstern SQL-host
+endnu; det er et separat, senere skridt Chris selv tager stilling til.
 
-1. Er tilføjet som et nyt top-level punkt i `gsb-nav.js`s `APPS`-array (`📈 Klubstatistik`, ingen
-   `locked`-kode-gate, ingen `pages`-underliste), sideordnet med de eksisterende fire.
-2. Har et femte kort i `forside.html`s `app-grid`, samme mønster som de tre eksisterende
-   (`.app-card`, badge "Åben for alle").
-3. Har en filterbar med fire pills (Alle/Ungdom/Senior/Veteran), der klient-side filtrerer ét
+En ny side i `klubstatistik-preview/` (foreslået filnavn: `klubstatistik.html` — vælg selv hvis et
+bedre navn giver mening, men hold det konsistent med de øvrige sidenavne i `apps/netlify-prod/public/`,
+så den senere kan "pastes" ind uden omdøbning) der:
+
+1. Er en selvstændig, lokalt-kørbar side — ingen integration i `apps/netlify-prod/public/gsb-nav.js`
+   eller `forside.html` i denne opgave. Nav- og forside-integrationen hører til det senere
+   "paste ind i prod"-kort, ikke dette.
+2. Har en filterbar med fire pills (Alle/Ungdom/Senior/Veteran), der klient-side filtrerer ét
    allerede hentet datasæt på `age_group_id` (se mockuppens JS for den tilsigtede interaktion):
    - Senior: 1
    - Ungdom: 2, 3, 4, 5, 6, 18
    - Veteran: 9, 11, 12, 13, 17
    - Alle: ingen filtrering
-4. Har to underfilter-rækker (kun én synlig ad gangen, styret af hvilken af de fire hovedpills der
+3. Har to underfilter-rækker (kun én synlig ad gangen, styret af hvilken af de fire hovedpills der
    er valgt — se mockuppen):
    - Under "Ungdom": årgangs-pills. Brug `statistik/agegroup-labels.json` som facit for label/ID:
      U9 (2), U11 (3), U13 (4), U15 (5), U17 (6), U17/U19 (18).
    - Under "Veteran": klasse-pills. Samme kilde: VETERAN A/SEN40+ (9), SEN50+ (11), SEN55+ (12),
      SEN60+ (13), SEN70+ (17), samt MOT/Motionist (16) hvis der findes data for den i den valgte
      sæson.
-5. Har en tom, klikbar fanerække (Overblik, Hold, Spillere, Kategori, Hjemme/Ude, Modstanderhold,
+4. Har en tom, klikbar fanerække (Overblik, Hold, Spillere, Kategori, Hjemme/Ude, Modstanderhold,
    Sæson, 🏅 Klub-karriere) der viser/skjuler `.pane`-elementer — selve panernes indhold bygges i
    opgave 062–069, men fanemekanikken og de tomme paner (med en tydelig "under opbygning"-placeholder)
    hører til dette kort.
-6. Har ét datalag: én (eller et lille, dokumenteret antal) forespørgsel(er) mod SQLite-databasen
-   der henter det nødvendige rådata for den valgte sæson/alle sæsoner, eksponeret som en
-   in-memory-struktur klientkoden filtrerer videre på — IKKE et separat databasekald pr.
-   fane/filterkombination. Vælg selv om dette bedst løses som en Netlify-funktion (`netlify/functions/`)
-   der læser SQLite'en og returnerer JSON, eller som et build-time-genereret datafil — dokumentér
-   valget og hvorfor i resultatnoten.
+5. Har ét datalag der læser lokalt fra `statistik/data/gsb-statistik-normalized.db` (sti via
+   `config.local.json`, read-only) og henter det nødvendige rådata for den valgte sæson/alle sæsoner,
+   eksponeret som en in-memory-struktur klientkoden filtrerer videre på — IKKE et separat
+   databasekald pr. fane/filterkombination. Vælg selv den enkleste lokale løsning der virker uden
+   Netlify (fx et lille Node/Python-script der læser SQLite'en og skriver en statisk JSON-fil i
+   `klubstatistik-preview/`, eller en minimal lokal server) — dokumentér valget og hvorfor i
+   resultatnoten, og navngiv tydeligt hvad der skal ændres når dette senere kobles til en rigtig
+   SQL-host/Netlify-funktion i stedet.
 
 ## Kontekst
 
@@ -66,44 +75,43 @@ et bedre navn giver mening, men hold det konsistent med de øvrige sidenavne) de
   `.season-pill`-familien osv.) — ingen nye farver eller komponenttyper. Mockuppen
   (`referencer/061-statistik-preview-mockup.html`) er bygget efter nøjagtig denne regel; brug den
   som facit for udseendet, ikke som kode der kan kopieres direkte (den har ingen rigtig databinding).
+  Læs, kopiér ikke omdøb, de nødvendige CSS-klasser ind i `klubstatistik-preview/`, så "paste"-trinet
+  senere er en filflytning, ikke en omskrivning.
 - Holdidentitets-reglen fra `docs/statistik-plan.md` (2026-09-16) gælder for alt datalaget leverer:
   senior/veteran identificeres på `name_raw + age_group_id`; ungdom kræver desuden holdtype og
   niveau/pointgrænse (se `statistik/results/046-ungdom-holdtype-niveau-audit.md` for hvor ofte
   niveau er "ukendt" — det skal vises som "ukendt", ikke gættes eller skjules).
-- `docs/BESLUTNINGER.md` (2026-09-19): `apps/netlify-prod/` må kun ændres til en godkendt, ny
-  feature, og kun efter Chris' eksplicitte godkendelse af den konkrete ændring — dette kort ER den
-  godkendte feature (designet er godkendt), men vent alligevel på Chris' eksplicitte "byg det", jf.
-  Trin-note ovenfor.
+- `docs/BESLUTNINGER.md` (2026-09-19)s krav om Chris' eksplicitte godkendelse gælder kun
+  `apps/netlify-prod/` — og er derfor IKKE relevant for dette kort, da intet i `apps/netlify-prod/`
+  røres. Det bliver relevant igen ved det senere "paste ind i prod"-kort.
 - Databasen er read-only for dette kort. Ingen skrivning til `statistik/data/gsb-statistik-normalized.db`.
 
 ## Afgrænsning
 
-**Må røres:** ny side under `apps/netlify-prod/public/`, `apps/netlify-prod/public/gsb-nav.js`,
-`apps/netlify-prod/public/forside.html`, evt. en ny Netlify-funktion under
-`apps/netlify-prod/netlify/functions/` til datalaget.
+**Må røres:** ny mappe `klubstatistik-preview/` (repo-roden), inklusive et lille lokalt
+script/serverfil til at læse databasen og eksponere data til siden.
 
-**Må ikke røres:** `statistik/data/gsb-statistik-normalized.db` (kun læses), `analyse.html`,
-`stilling.html`, `tilmelding.html`, `kampsystem.html`, `senior-ungdom-tilmelding.html` og deres
-funktioner (Dream Team/Kampsystem/Ungdomssparring-flowene skal være fuldstændig urørte),
-`docs/historik/`, Dropbox' `_arkiv\`.
+**Må ikke røres:** ALT i `apps/netlify-prod/` (inklusive `gsb-nav.js`, `forside.html`,
+`netlify/functions/`) — ingen undtagelser i dette kort. `statistik/data/gsb-statistik-normalized.db`
+(kun læses), `kampsystem/` og dets byggescript, `docs/historik/`, Dropbox' `_arkiv\`.
 
 ## Kontrol
 
 **Målet:**
 ```
-grep -c "klubstatistik" apps/netlify-prod/public/gsb-nav.js     forventet: ≥1 (nyt APPS-punkt)
-grep -c "app-card" apps/netlify-prod/public/forside.html        forventet: 4 (var 3 før)
+test -d klubstatistik-preview                                  forventet: mappen findes
+git status --short apps/netlify-prod/                           forventet: tom (0 ændrede filer)
 ```
-Ny sides fanerække viser og skjuler paner ved klik (manuel/jsdom-verificeret, se resultatnote).
-Filterbar-pills filtrerer det hentede datasæt uden nyt netværkskald pr. klik (dokumentér i
-resultatnoten hvordan det er verificeret, fx et network-log fra en manuel test).
+Siden kan åbnes lokalt (fx via en lokal server eller direkte som fil) og viser reelt hentet data fra
+`statistik/data/gsb-statistik-normalized.db`, ikke mockuppens eksempeldata. Ny sides fanerække viser
+og skjuler paner ved klik (manuel/jsdom-verificeret, se resultatnote). Filterbar-pills filtrerer det
+hentede datasæt uden nyt hentekald pr. klik (dokumentér i resultatnoten hvordan det er verificeret).
 
 **Værnet:**
 ```
-grep -c "GSB Dream Team" apps/netlify-prod/public/*.html        skal være uændret fra før
+git status --short apps/netlify-prod/ kampsystem/                skal være tom
+grep -c "GSB Dream Team" apps/netlify-prod/public/*.html          skal være uændret fra før
 ```
-`analyse.js`, `stilling.js`, `hent-resultater.js`, `elo-*.js`, `spillere.js`, `tilmeld.js`: 0 ændrede
-linjer.
 
 **Skøn:** siden ligner resten af sitet visuelt (sammenlign mod mockuppen og mod `analyse.html`).
 
@@ -135,6 +143,15 @@ afklaret.** Chris skal beslutte hvordan et reelt "ikke-live" preview
 teknisk realiseres — fx en separat Netlify preview-deploy pr. gren, en
 lokal HTML-fil uden nav-integration, eller et andet mønster. Kortets
 Mål-afsnit skal formentlig omskrives, ikke bare besvares.
+
+**Chris' svar (2026-09-20):** Byg det for sig selv, i en ny mappe
+`klubstatistik-preview/` — samme princip som `kampsystem/`. Det skal
+kunne testes rent lokalt, og skal senere kunne "pastes" ind i
+`apps/netlify-prod/` som et separat kort. Databasen læses lokalt via
+`config.local.json` for nu — en gratis ekstern SQL-host til Netlify er
+et senere, separat skridt, som ikke er en del af dette kort. Mål,
+Kontekst, Afgrænsning og Kontrol er rettet til herefter. `apps/netlify-prod/`
+røres ikke i dette kort.
 
 ## Resultatnote
 
