@@ -412,16 +412,22 @@ Siden er live på gsbmore.netlify.app sammen med resten af appen.
 ## Skillen
 
 `CURRENT_VALIDATION_STATUS.md` nævner allerede en senere skill, og
-`COMPLETE_RESULT_FALLBACK_METHOD.md` er råmaterialet til den.
+`COMPLETE_RESULT_FALLBACK_METHOD.md` var råmaterialet til den.
 
-**Den skrives når Test & Validation lukker, ikke før.** Metoden har lige
-nu et uløst kerneproblem — hvilken rute der overhovedet virker til
-masseudtræk. Skrives skillen nu, indkodes problemet. Skrives den bagefter,
-indkodes løsningen, og så er den præcis det der gør næste sæson billig.
+**Skrevet (opgave 074, 2026-09-20):** `statistik/CODEX_EXTRACTION_SKILL.md`
+og `.agents/skills/gsb-match-extraction/SKILL.md` findes nu i repoet og
+indeholder render-gaten, idempotens-mønstret med én fil per kamp, reglen
+om at walkover kræver eksplicit `(Ikke fremmødt)`-tekst, princippet om at
+rå data gemmes før fortolkning, og en verificeret liste over alle 18
+scripts skillen henviser til.
 
-Den skal indeholde render-gaten, idempotens-mønstret med én fil per kamp,
-reglen om at walkover kræver eksplicit `(Ikke fremmødt)`-tekst, og
-princippet om at rå data gemmes før fortolkning.
+**Ikke fuldt afsluttet.** Kontrollerne i opgave 074 var strukturelle:
+`quick_validate.py` bestod, `git diff --check` gav 0 fejl, alle 18
+scripts blev bekræftet at findes, og en skrivefri scenarietest bestod
+2/2. Selve udtræksproceduren — et faktisk browserudtræk og en
+ende-til-ende-import — er **ikke** testet, og kræver en særskilt,
+autoriseret pilotkørsel, før skillen kan regnes for bevist, ikke kun
+struktureret korrekt.
 
 ---
 
@@ -457,9 +463,11 @@ princippet om at rå data gemmes før fortolkning.
 6. **[Afsluttet — 042/043, korrigeret i 045] Results-rapporten.** Alle ti
    katalogpunkter er bygget og talgrundlaget er korrigeret for
    holdidentitet — se "## Results" ovenfor.
-7. **Skillen.** Endnu ikke startet — intet skill-/runbook-dokument findes
-   i repoet. Råmaterialet er `statistik/results/COMPLETE_RESULT_FALLBACK_METHOD.md`
-   og `statistik/results/CURRENT_VALIDATION_STATUS.md`.
+7. **[Skrevet, ikke pilot-testet — 074] Skillen.** Dokumentet findes og er
+   struktureret korrekt verificeret, men selve udtræksproceduren (browser-
+   udtræk, ende-til-ende-import) er ikke afprøvet i praksis — se
+   "## Skillen" ovenfor. Kræver en autoriseret pilotkørsel før den kan
+   regnes for fuldt afsluttet.
 8. Preview, derefter Prod Push.
 
 ---
