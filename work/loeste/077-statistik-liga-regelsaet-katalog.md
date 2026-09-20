@@ -98,4 +98,23 @@ gæt ikke en rangordning ud fra fx antagelser om liga-navnets klang.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+- **Datagrundlag:** Read-only SHA-256 før og efter katalogkørslen var
+  `e6c5046a4b93a8518254badf5d8f4529fb0b918ae4a31af63919b5f70d620062`.
+  Databasen blev ikke skrevet til. Den aktuelle `seasons`-tabel har 16
+  sæsoner, 2010–2025 (2026 har ingen række i databasen); alle 16 er dækket,
+  og ingen sæson i tabellen mangler en GSB-entry.
+- **Katalog:** 455 entries fra 455 distinkte competitions, grupperet pr.
+  sæson og GSB-hold i `statistik/results/077-liga-regelsaet-katalog.md` og
+  `.json`. GSB-klubben blev identificeret som `club_id=1093`, og kataloget
+  indeholder 472 distinkte API-teamrækker på tværs af discovery-svarene.
+- **Discovery:** Den dokumenterede kæde blev kørt for alle 16 sæsoner:
+  `badmintonPlayerTeams` og derefter `badmintonPlayerTeamFights` for 472
+  grupper. 0 API-fejl, 0 manglende DB-entry-matches og 0 league-mismatches.
+  Rå svar, queries og tidspunkter ligger i
+  `statistik/results/077-discovery.jsonl`; kilden er
+  `https://app.nembadminton.dk/graphql`.
+- **Metadata og niveau:** `league_raw` er udfyldt for alle 455 entries;
+  `phase_raw` er tomt for alle 455, og discovery-kæden returnerer ikke et
+  separat fasefelt. Fase står derfor som ikke tilgængelig, ikke gættet.
+  112 entries er markeret "niveau uafklaret ud fra kildetekst alene"; de
+  øvrige 343 har en direkte tekstindikator som Serie/division/pointgrænse.

@@ -583,3 +583,11 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
   `results/browser-individual-parse-report.json` mangler; øvrige faste
   kontroller gennemførte.
 
+- 2026-09-20 — Opgave 077: read-only liga-/regelsætkatalog for 2010–2025.
+  455 DB-entries/455 competitions og 472 API-teamrækker blev sammenholdt via
+  `badmintonPlayerTeams` → `badmintonPlayerTeamFights`; 16/16 sæsoner dækket,
+  0 API-fejl, 0 manglende matches og 0 league-mismatches. 112 entries har
+  niveau uafklaret ud fra kildetekst alene; `phase_raw` mangler i alle 455 DB-
+  entries og returneres ikke som separat felt i discovery-svaret. DB-SHA var
+  uændret: `e6c5046a4b93a8518254badf5d8f4529fb0b918ae4a31af63919b5f70d620062`.
+
