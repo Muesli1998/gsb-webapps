@@ -169,6 +169,13 @@ kodekvalitet.**
 
 ## Resultat
 
+**Opfølgning efter opgave 055:** Testharnesset peger nu på
+`kampsystem/kampsystem_source.html`, som er den fremtidige preview-kilde.
+De 13 tests er kørt med preview-kildens faktiske API: `forventetVind`/
+`eloAendring`, `formTeams(spillere, filosofi, blandKoen)` og
+`formTeamsMixed`; de tidligere prod-specifikke funktioner `expectedScore`,
+`opdaterRating` og `matchTeams` bruges ikke længere.
+
 - Kortlægning: ELO/parring i pps/netlify-prod/public/kampsystem.html; Sheets I/O i lo-hent.js og lo-gem.js.
 - Automatiserede tests: 6 kørt, 6 bestået, 0 fejlet (	ools/tests/kampsystem/elo-runde.test.cjs).
 - Manuelle, sikkert reproducerede fejl: 0; 3 konkrete testbegrænsninger dokumenteret.

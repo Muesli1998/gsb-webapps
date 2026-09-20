@@ -77,4 +77,19 @@ ikke på hvilket facit der er "det rigtige" nu.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst)*
+- Testfilens kilde er ændret fra `apps/netlify-prod/public/kampsystem.html`
+  til `kampsystem/kampsystem_source.html`; `grep -c "netlify-prod"`
+  giver **0**.
+- De 13 assert-baserede tests er gennemgået mod preview-kildens faktiske
+  API og kørt med `node tools/tests/kampsystem/elo-runde.test.cjs`:
+  **13 kørt, 13 bestået, 0 fejlet**. Seks oprindelige testintentioner er
+  bevaret eller tilpasset sådan: ELO-forventning (tilpasset til
+  `forventetVind`), ELO-ændring (tilpasset til `eloAendring`),
+  urated fallback, single-bye (`pairSingles`), køns-/filosofiparring
+  (`formTeams` og `formTeamsMixed`) samt holdintegritet (`dannHold`).
+- `git status --short apps/netlify-prod/ kampsystem/kampsystem_source.html`
+  gav **tom output**; ingen prod- eller preview-kildefiler er ændret.
+- Den tidligere prod-specifikke forventning om `ELO_DIVISOR=850, K=70`
+  blev bekræftet uændret i preview-kilden. Ingen `## Spørgsmål` blev
+  tilføjet, fordi ændringerne var signatur-/API-tilpasninger, ikke ændret
+  facitopførsel.
