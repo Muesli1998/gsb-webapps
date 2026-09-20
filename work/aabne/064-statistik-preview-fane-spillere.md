@@ -87,7 +87,27 @@ navnematch-koblet spillers modstander-/holddata er usikker nok til at flage synl
 
 ### Spørgsmål
 
-(Udfyldes af den der løser opgaven. Christoffer svarer her i filen.)
+1. Skal kategori-winrates grupperes efter de rå `category_raw`-værdier (fx `1. HS`,
+   `1. HD`, `1. MD`, Golden Set-varianter), eller skal de normaliseres til familierne
+   single/double/mixed? Hvis de normaliseres: hvilke præcise regler gælder for HS/S,
+   HD/D, DD, MD og Golden Set?
+2. Board-trenden kræver `Math.floor(rowIndexInGroup / rowsPerBoard) + 1` og dedup efter
+   `runde|hold|kategori|boardPosition`, men den normaliserede database har ikke et
+   dokumenteret source-row/order-felt. Må `individual_match_id` bruges som rækkefølge,
+   eller findes der en anden autoritativ rækkefølge/kilde, som skal anvendes?
+3. Skal navnematch-koblede spillere (uden `external_player_id`) markeres synligt i
+   spillerlisten/profilen, og skal deres hold-/modstanderdata vises med en usikkerheds-
+   markering? Auditten viser 2.556 spillere uden ekstern ID og 9.926 sådanne relationer.
+4. Skal “modstandere” tælles som individuelle kampe mod spillere eller som holdmøder
+   mod modstanderhold? Den nuværende prototype viser modstående spillere og tæller
+   individuelle kampe.
+
+**Chris' svar (2026-09-20):**
+
+1. **Kategori-normalisering:** Brug de rå `category_raw`-værdier direkte, samme princip som opgave 065 fik besked på. Ingen normalisering til single/double/mixed i denne opgave.
+2. **Board-rækkefølge:** Gæt ikke en ny rækkefølge ud fra `individual_match_id`. Genbrug den faktiske forespørgsel/rækkefølge `analyse.html`s `runAnalyse` selv bruger (samme datakilde/SQL), i stedet for at opfinde en ny ordning. Er den eksisterende rækkefølge i `analyse.html` selv udokumenteret/uverificeret, dokumentér det som en kendt usikkerhed i resultatnoten i stedet for at antage `individual_match_id` er ækvivalent.
+3. **Navnematch-usikkerhed:** Ja, flag det synligt (en rolig markør, ikke en advarsel) i profilen når spilleren ikke har `external_player_id`.
+4. **Modstandertælling:** Individuelle modstandere/kampe, ikke modstanderhold. Holdniveau er allerede dækket af opgave 067.
 
 ## Resultatnote
 
