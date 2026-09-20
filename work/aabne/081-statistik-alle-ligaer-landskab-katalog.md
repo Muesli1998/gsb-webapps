@@ -310,6 +310,13 @@ klub-/holdliste pr. pulje (i stedet for at parse HTML), en sæson-/regionliste (
 metodelisten og hvilke der er relevante, med begrundelse — gæt ikke hvad en metode gør ud fra dens
 navn alene, afprøv den med et testkald og se det faktiske svar.
 
+**Findes der flere webservices end `WebService1.asmx`?** Ukendt — "WebService1.asmx" er
+standardnavnet Visual Studio giver en ny ASMX-service, hvis den ikke omdøbes, så det kan tyde på at
+det er den eneste, men det skal IKKE antages. Undersøg: gennemgå den allerede indfangede
+netværkstrafik/JS fra badmintonplayer.dk (fra denne opgaves egne probes og evt. tidligere
+probe-filer i `statistik/results/`) for referencer til andre `.asmx`-filer eller andre webservice-
+endpoints, og rapportér hvad der faktisk findes — ikke kun `WebService1.asmx`.
+
 Yderligere åbne spørgsmål der skal afklares med evidens, ikke antagelse:
 - Hvad er den fulde liste af gyldige `regionID`-værdier (kredse) og deres navne? Kendte indtil nu:
   1=national, 4=Midtjylland, 8=København, 10=Sjælland.
