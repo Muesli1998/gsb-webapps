@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Klubstatistik Preview</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="page-header">
+      <h1>📈 Klubstatistik</h1>
+      <p>Preview af klubbens holdkampdata — filtrér ét samlet datasæt på aldersgruppe og sæson.</p>
+    </header>
+    <main>
+      <section class="card filterbar-card" aria-label="Filtre">
+        <div class="filterbar-row">
+          <div id="age-filters" class="agegroup-pills" role="group" aria-label="Aldersgruppe"></div>
+          <label class="selector-field">Sæson
+            <select id="season-filter"><option value="all">Alle sæsoner</option></select>
+          </label>
+        </div>
+        <div id="youth-filters" class="subfilter-row" hidden></div>
+        <div id="veteran-filters" class="subfilter-row" hidden></div>
+      </section>
+
+      <section class="card">
+        <nav id="stat-tabs" class="stat-tabs" aria-label="Statistikfaner"></nav>
+        <div id="dataset-status" class="dataset-status" role="status">Henter data…</div>
+        <div id="panes"></div>
+      </section>
+    </main>
+  </div>
+  <script src="klubstatistik.js"></script>
+</body>
+</html>

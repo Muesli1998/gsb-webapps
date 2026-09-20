@@ -1,0 +1,27 @@
+:root { --court-green:#1f5c3f; --court-green-dark:#123a28; --line-white:#f7f5ef; --shuttle:#e8a33d; --ink:#1c2420; --muted:#5c6b62; --border:#d7ddd4; }
+* { box-sizing:border-box; }
+body { margin:0; padding-inline:16px; background:var(--line-white); color:var(--ink); font-family:'Segoe UI',system-ui,sans-serif; line-height:1.45; }
+.wrap { max-width:1080px; margin:0 auto; }
+.page-header { background:var(--court-green); color:var(--line-white); padding:28px 24px 24px; margin-inline:-16px; }
+.page-header h1 { margin:0 0 4px; font-size:1.5rem; }
+.page-header p { margin:0; color:rgba(247,245,239,.75); font-size:.92rem; }
+main { padding:24px 0 60px; }
+.card { background:#fff; border:1px solid var(--border); border-radius:10px; padding:20px; margin-bottom:20px; }
+.filterbar-card { position:sticky; top:0; z-index:2; }
+.filterbar-row,.agegroup-pills,.subfilter-row { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+.subfilter-row { margin-top:10px; padding-top:10px; border-top:1px dashed var(--border); }
+.agegroup-pill,.subfilter-pill { border:1px solid var(--border); border-radius:20px; padding:7px 14px; background:#fff; color:var(--muted); font-weight:600; cursor:pointer; }
+.agegroup-pill.active { border-color:var(--court-green); background:#eaf3ee; color:var(--court-green-dark); }
+.subfilter-pill { border-radius:16px; padding:5px 12px; font-size:.8rem; }
+.subfilter-pill.active { border-color:var(--shuttle); background:#fff3d6; color:#7a5b16; }
+.subfilter-label { color:var(--muted); font-size:.74rem; font-weight:600; text-transform:uppercase; }
+.selector-field { display:flex; flex-direction:column; gap:4px; margin-left:auto; color:var(--muted); font-size:.74rem; font-weight:600; text-transform:uppercase; }
+select { padding:7px 10px; border:1px solid var(--border); border-radius:6px; font:inherit; color:var(--ink); text-transform:none; }
+.stat-tabs { display:flex; gap:2px; flex-wrap:wrap; background:#eef0ec; border-radius:9px; padding:4px; margin-bottom:16px; }
+.stat-tab { border:0; background:none; padding:9px 16px; border-radius:7px; color:var(--muted); font-weight:600; cursor:pointer; }
+.stat-tab.active { background:#fff; color:var(--court-green-dark); box-shadow:0 1px 3px rgba(0,0,0,.08); }
+.dataset-status { margin-bottom:16px; color:var(--muted); font-size:.86rem; }
+.pane { display:none; }
+.pane.active { display:block; }
+.placeholder { border:1px dashed var(--border); border-radius:8px; padding:32px; color:var(--muted); text-align:center; }
+@media (max-width:640px) { .selector-field { margin-left:0; width:100%; } select { width:100%; } .stat-tab { flex:1 1 42%; } }

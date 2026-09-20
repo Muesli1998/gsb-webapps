@@ -155,4 +155,35 @@ røres ikke i dette kort.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+2026-09-20: Byggede `klubstatistik-preview/` som en selvstændig lokal
+Preview med `klubstatistik.html`, `klubstatistik.js`, `styles.css`,
+`server.py`, `test_preview.py` og README. Serveren læser `gsbData` fra
+`config.local.json`, åbner SQLite med `mode=ro` og `PRAGMA query_only=ON`
+og leverer ét samlet `/api/data`-datasæt. Browseren filtrerer derefter
+in-memory; ingen filter- eller fanehandling laver et nyt kald.
+
+Read-only datagrundlag fra den lokale reference-DB: 26 sæsoner, 462 puljer,
+472 klubhold og 2.818 holdkampe. Der var data for 12 aldersgrupper; der var
+ingen data for ID 16, så MOT/Motionist blev ikke vist som veteran-underfilter.
+De 8 faner og 4 hovedfiltre blev implementeret; ungdomsunderfiltrene har 6
+knapper, og veteran-underfiltrene har 5 knapper.
+
+Kontrolresultater: `Test-Path klubstatistik-preview` = `True`.
+`python -m py_compile server.py test_preview.py` bestod, og Node `--check`
+af `klubstatistik.js` bestod. Browserkontrollen med lokal server bestod:
+initialt udsnit = 2.818 holdkampe / 472 hold / 462 puljer, Ungdom = 1.354
+holdkampe, U9 = 105 holdkampe, og `apiRequests=1` efter filter- og faneklik.
+Faneklik viste Hold-panelet og skjulte Overblik-panelet. Der blev ikke
+skrevet til reference-DB'en.
+
+Værn: `git status --short apps/netlify-prod/ kampsystem/` var tom; der blev
+ikke ændret filer i disse mapper. Optællingen af `GSB Dream Team` i de
+eksisterende HTML-filer var 8 efter arbejdet. Den nye mappe er den eneste
+arbejdsændring. Den visuelle lighed med mockuppen er en vurdering, ikke en
+automatisk måling.
+
+Datalaget er bevidst en lokal Python-server og ikke en Netlify-funktion.
+Når Preview senere skal kobles til hosting, skal `/api/data` erstattes af
+en godkendt host-/SQL-funktion i et separat kort; ingen ekstern SQL-host blev
+oprettet her. Den midlertidige testkonfiguration blev fjernet og er ikke
+versionsstyret.
