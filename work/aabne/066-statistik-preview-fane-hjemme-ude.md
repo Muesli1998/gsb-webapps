@@ -44,7 +44,14 @@ Stop og skriv under "Spørgsmål" nedenfor.
 
 ### Spørgsmål
 
-(Udfyldes af den der løser opgaven. Christoffer svarer her i filen.)
+Den read-only database har 2.818 holdkampe, men 13 kan ikke entydigt bestemmes
+med den angivne eksakte sammenligning af `teams.name_raw` med hjemme-/udenavnet:
+4 rækker har begge navne tomme, 1 række (`team_match_id=428`) har
+`Badminton Esbjerg` mod `Kolding BK` selv om `gsb_team_id` peger på GSB, og 8
+rækker bruger sammensatte navne som `BC37/Gladsaxe Søborg 1`. Må hjemme/ude for
+de 8 sammensatte navne afgøres med en dokumenteret substring-/klubnavnsmatch,
+og hvordan skal de 5 øvrige rækker håndteres? Kontrolkravet kan ikke opfyldes
+uden en beslutning om disse 13 rækker.
 
 ## Resultatnote
 
