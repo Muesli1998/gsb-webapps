@@ -284,9 +284,13 @@ i databasen:
     samt hvor mange sæsoner/år de har spillet — en langtidsopgørelse, ikke
     kun en enkelt sæsons tal.
 
-Opgave 042's v1-rapport dækker allerede en delmængde (2, 3, 5 delvist via
-spiller-pr.-kategori, samt sæsonoversigten under 1/3). Resten (4, 6-10) er
-ikke bygget endnu — se opgave 043.
+**Alle ti punkter er nu bygget (opdateret 2026-09-20).** Opgave 042 byggede
+v1 (punkt 1-3, delvist 5). Opgave 043 udvidede til alle ti punkter — se
+`statistik/results/043-results-rapport-v2.md`/`.json`. Opgave 045 rettede
+efterfølgende en holdidentitets-fejl i 043's talgrundlag (holdnavne var
+kollideret på tværs af årgange; rettet til `name_raw + age_group_id`, jf.
+"Holdidentitets-standard" nedenfor) — de øvrige ni katalogpunkters tal var
+upåvirkede. Den version der ligger i repoet i dag, er den rettede.
 
 **Holdidentitets-standard (besluttet med Chris 2026-09-16, efter opgave
 044/045 og en grundig chat-gennemgang).** "Winrate/kamptal pr. hold" må
@@ -450,8 +454,12 @@ princippet om at rå data gemmes før fortolkning.
    afkræftede alle 7 (forskellige rækker/kamptyper, typisk flere
    ungdomskampe samlet samme dag). 0/25 bekræftede kollisioner — se
    `statistik/results/032-spiller-navnematch-risiko.md`.
-6. **Results-rapporten.**
-7. **Skillen.**
+6. **[Afsluttet — 042/043, korrigeret i 045] Results-rapporten.** Alle ti
+   katalogpunkter er bygget og talgrundlaget er korrigeret for
+   holdidentitet — se "## Results" ovenfor.
+7. **Skillen.** Endnu ikke startet — intet skill-/runbook-dokument findes
+   i repoet. Råmaterialet er `statistik/results/COMPLETE_RESULT_FALLBACK_METHOD.md`
+   og `statistik/results/CURRENT_VALIDATION_STATUS.md`.
 8. Preview, derefter Prod Push.
 
 ---
