@@ -8,7 +8,7 @@
   var AGE_GROUPS = { all: null, youth: [2, 3, 4, 5, 6, 18], senior: [1], veteran: [9, 11, 12, 13, 17] };
   var DISCIPLINE_LABELS = { HS: 'HS', DS: 'DS', HD: 'HD', DD: 'DD', MD: 'MD', S: 'Fri single', D: 'Fri double' };
   var EXCLUDED_PLAYER_IDS = new Set([176]);
-  var state = { data: null, age: 'all', subAge: null, season: 'all', tab: 'overblik', holdSort: { key: 'name', direction: 1 }, opponentSort: { key: 'name', direction: 1 } };
+  var state = { data: null, age: 'all', subAge: [], season: [], tab: 'overblik', holdSort: { key: 'name', direction: 1 }, opponentSort: { key: 'name', direction: 1 } };
   var $ = function (selector) { return document.querySelector(selector); };
 
   function renderTabs() {
@@ -27,9 +27,9 @@
   function ageIds() { return AGE_GROUPS[state.age] || null; }
   function filtered() {
     var ids = ageIds();
-    if (state.subAge !== null) ids = [state.subAge];
+    if (state.subAge.length) ids = state.subAge;
     var competitions = state.data.competitions.filter(function (row) {
-      return (!ids || ids.indexOf(row.ageGroupId) !== -1) && (state.season === 'all' || String(row.seasonId) === state.season);
+      return (!ids || ids.indexOf(row.ageGroupId) !== -1) && (!state.season.length || state.season.indexOf(String(row.seasonId)) !== -1);
     });
     var competitionIds = new Set(competitions.map(function (row) { return row.id; }));
     return {
@@ -205,16 +205,12 @@
     });
   }
 
-  function seasonTable() {
-    var ids = ageIds();
-    var competitions = state.data.competitions.filter(function (row) {
-      return !ids || ids.indexOf(row.ageGroupId) !== -1;
-    });
-    var competitionIds = new Set(competitions.map(function (row) { return row.id; }));
+  function seasonTable(result) {
+    var competitionIds = new Set(result.competitions.map(function (row) { return row.id; }));
     var seasons = new Map();
     state.data.seasons.forEach(function (season) { seasons.set(String(season.id), { id: season.id, label: season.label, matches: 0, wins: 0, losses: 0 }); });
     var teams = new Map(state.data.teams.map(function (team) { return [String(team.id), team]; }));
-    state.data.matches.forEach(function (match) {
+    result.matches.forEach(function (match) {
       if (!competitionIds.has(match.competitionId)) return;
       var entry = seasons.get(String(match.seasonId));
       if (!entry) return;
@@ -234,14 +230,14 @@
     });
   }
 
-  function renderSeasonsPane() {
-    var rows = seasonTable();
+  function renderSeasonsPane(result) {
+    var rows = seasonTable(result);
     var html = '<div class="table-wrap"><table class="season-table"><thead><tr><th>Sæson</th><th>Kampe</th><th>Winrate</th></tr></thead><tbody>';
     html += rows.map(function (row) {
       var rate = row.rate === null ? '—' : row.rate + '%';
       return '<tr><td>' + row.label + '</td><td>' + row.matches + '</td><td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:' + (row.rate || 0) + '%"></div></div><span class="pct">' + rate + '</span></div></td></tr>';
     }).join('') + '</tbody></table></div>';
-    html += '<p class="muted season-note">Sæson-dropdownen ovenfor påvirker ikke denne historik; alders- og underfilter gør.</p>';
+    html += '<p class="muted season-note">Viser de valgte sæsoner; alders- og underfilter gør også.</p>';
     document.querySelector('[data-pane="saeson"]').innerHTML = html;
   }
 
@@ -406,19 +402,8 @@
     draw();
   }
 
-  function careerResult() {
-    var ids = ageIds();
-    if (state.subAge !== null) ids = [state.subAge];
-    var competitions = state.data.competitions.filter(function (row) { return !ids || ids.indexOf(row.ageGroupId) !== -1; });
-    var competitionIds = new Set(competitions.map(function (row) { return row.id; }));
-    return {
-      teams: state.data.teams.filter(function (row) { return competitionIds.has(row.competitionId); }),
-      matches: state.data.matches.filter(function (row) { return competitionIds.has(row.competitionId); })
-    };
-  }
-
   function renderCareer() {
-    var stats = Array.from(profileStats(careerResult()).values());
+    var stats = Array.from(profileStats(filtered()).values());
     var names = new Map(state.data.players.map(function (player) { return [player.id, player.name]; }));
     stats.sort(function (a, b) { var difference = b.matchIds.size - a.matchIds.size; return difference || (names.get(a.id) || '').localeCompare(names.get(b.id) || '', 'da'); });
     var html = '<div class="table-wrap"><table class="career-table"><thead><tr><th>Spiller</th><th>Ungdom</th><th>Senior</th><th>Veteran</th><th>Total</th></tr></thead><tbody>';
@@ -438,20 +423,20 @@
     });
     function subfilter(target, title, ids) {
       $(target).innerHTML = '<span class="subfilter-label">' + title + '</span>' + ids.map(function (id) {
-        return '<button class="subfilter-pill' + (state.subAge === id ? ' active' : '') + '" data-sub-age="' + id + '">' + (labels[String(id)] || id) + '</button>';
+        return '<button class="subfilter-pill' + (state.subAge.indexOf(id) !== -1 ? ' active' : '') + '" data-sub-age="' + id + '">' + (labels[String(id)] || id) + '</button>';
       }).join('');
       $(target).hidden = state.age !== (target === '#youth-filters' ? 'youth' : 'veteran');
     }
     subfilter('#youth-filters', 'Årgang', youthIds);
     subfilter('#veteran-filters', 'Klasse', veteranIds);
-    document.querySelectorAll('[data-age]').forEach(function (button) { button.addEventListener('click', function () { state.age = button.dataset.age; state.subAge = null; renderFilters(); renderStatus(); }); });
-    document.querySelectorAll('[data-sub-age]').forEach(function (button) { button.addEventListener('click', function () { state.subAge = Number(button.dataset.subAge); renderFilters(); renderStatus(); }); });
+    document.querySelectorAll('[data-age]').forEach(function (button) { button.addEventListener('click', function () { state.age = button.dataset.age; state.subAge = []; renderFilters(); renderStatus(); }); });
+    document.querySelectorAll('[data-sub-age]').forEach(function (button) { button.addEventListener('click', function () { var id = Number(button.dataset.subAge); var index = state.subAge.indexOf(id); if (index === -1) state.subAge.push(id); else state.subAge.splice(index, 1); renderFilters(); renderStatus(); }); });
   }
 
   function renderSeasons() {
-    $('#season-filter').innerHTML = '<option value="all">Alle sæsoner</option>' + state.data.seasons.map(function (row) { return '<option value="' + row.id + '">' + row.label + '</option>'; }).join('');
-    $('#season-filter').value = state.season;
-    $('#season-filter').addEventListener('change', function (event) { state.season = event.target.value; renderStatus(); });
+    $('#season-filter').innerHTML = '<summary>Sæson: <span class="season-selection">Alle</span></summary><div class="season-options">' + state.data.seasons.map(function (row) { return '<label><input type="checkbox" value="' + row.id + '"> ' + row.label + '</label>'; }).join('') + '</div>';
+    $('#season-filter').querySelectorAll('input[type="checkbox"]').forEach(function (input) { input.checked = state.season.indexOf(input.value) !== -1; input.addEventListener('change', function () { state.season = Array.from($('#season-filter').querySelectorAll('input:checked')).map(function (checkbox) { return checkbox.value; }); renderSeasons(); renderStatus(); }); });
+    $('#season-filter').querySelector('.season-selection').textContent = state.season.length ? state.season.length + ' valgt' : 'Alle';
   }
 
   function renderStatus() {
@@ -463,7 +448,7 @@
     if (document.querySelector('[data-pane="hjemmeude"]')) renderHomeAway(result);
     if (document.querySelector('[data-pane="kategori"]')) renderCategory(result);
     if (document.querySelector('[data-pane="modstander"]')) renderOpponents(result);
-    if (document.querySelector('[data-pane="saeson"]')) renderSeasonsPane();
+    if (document.querySelector('[data-pane="saeson"]')) renderSeasonsPane(result);
     if (document.querySelector('[data-pane="spillere"]')) renderPlayers(result);
     if (document.querySelector('[data-pane="karriere"]')) renderCareer();
   }

@@ -76,6 +76,33 @@ with sync_playwright() as playwright:
     assert u9_cards and u9_cards != youth_cards
     assert len(api_requests) == 1, api_requests
 
+    # Empty youth selection means all youth; two active pills form their union.
+    page.get_by_role("button", name="Ungdom", exact=True).click()
+    page.get_by_role("button", name="Hold", exact=True).click()
+    youth_hold_matches = page.locator('[data-pane="hold"] tbody tr').evaluate_all("rows => rows.reduce((sum, row) => sum + Number(row.cells[3].textContent.trim()), 0)")
+    youth_pills = page.locator('#youth-filters [data-sub-age]')
+    assert youth_pills.count() >= 2
+    youth_pills.nth(0).click()
+    youth_pills = page.locator('#youth-filters [data-sub-age]')
+    youth_pills.nth(1).click()
+    multi_youth_hold_matches = page.locator('[data-pane="hold"] tbody tr').evaluate_all("rows => rows.reduce((sum, row) => sum + Number(row.cells[3].textContent.trim()), 0)")
+    assert multi_youth_hold_matches > 0, multi_youth_hold_matches
+    assert multi_youth_hold_matches <= youth_hold_matches, (youth_hold_matches, multi_youth_hold_matches)
+    youth_pills = page.locator('#youth-filters [data-sub-age]')
+    youth_pills.nth(1).click()
+    first_youth_hold_matches = page.locator('[data-pane="hold"] tbody tr').evaluate_all("rows => rows.reduce((sum, row) => sum + Number(row.cells[3].textContent.trim()), 0)")
+    youth_pills = page.locator('#youth-filters [data-sub-age]')
+    youth_pills.nth(0).click()
+    youth_pills = page.locator('#youth-filters [data-sub-age]')
+    youth_pills.nth(1).click()
+    second_youth_hold_matches = page.locator('[data-pane="hold"] tbody tr').evaluate_all("rows => rows.reduce((sum, row) => sum + Number(row.cells[3].textContent.trim()), 0)")
+    youth_pills = page.locator('#youth-filters [data-sub-age]')
+    youth_pills.nth(1).click()
+    assert multi_youth_hold_matches == first_youth_hold_matches + second_youth_hold_matches, (multi_youth_hold_matches, first_youth_hold_matches, second_youth_hold_matches)
+    assert len(api_requests) == 1, api_requests
+    page.get_by_role("button", name="Ungdom", exact=True).click()
+    page.get_by_role("button", name="U9", exact=True).click()
+
     page.get_by_role("button", name="Hold", exact=True).click()
     assert page.locator('[data-pane="hold"]').is_visible()
     assert not page.locator('[data-pane="overblik"]').is_visible()
@@ -145,10 +172,36 @@ with sync_playwright() as playwright:
     season_rows = page.locator('[data-pane="saeson"] tbody tr')
     assert season_rows.count() > 0
     assert page.locator('[data-pane="saeson"] .season-note').count() == 1
-    season_count_without_dropdown = season_rows.count()
-    season_value = page.locator('#season-filter option').nth(1).get_attribute('value')
-    page.locator('#season-filter').select_option(season_value)
-    assert page.locator('[data-pane="saeson"] tbody tr').count() == season_count_without_dropdown
+    season_count_without_filter = season_rows.count()
+    page.locator('#season-filter summary').click()
+    season_inputs = page.locator('#season-filter input[type="checkbox"]')
+    assert season_inputs.count() >= 2
+    first_season_index = season_inputs.count() - 2
+    second_season_index = season_inputs.count() - 1
+    season_inputs.nth(first_season_index).check()
+    season_inputs = page.locator('#season-filter input[type="checkbox"]')
+    season_inputs.nth(second_season_index).check()
+    two_season_kpis = page.locator("[data-pane='overblik'] .kpi-num").all_inner_texts()
+    two_season_matches = int(two_season_kpis[1].replace('.', ''))
+    season_inputs = page.locator('#season-filter input[type="checkbox"]')
+    season_inputs.nth(second_season_index).uncheck()
+    first_season_matches = int(page.locator("[data-pane='overblik'] .kpi-num").nth(1).inner_text().replace('.', ''))
+    season_inputs = page.locator('#season-filter input[type="checkbox"]')
+    season_inputs.nth(first_season_index).uncheck()
+    season_inputs = page.locator('#season-filter input[type="checkbox"]')
+    season_inputs.nth(second_season_index).check()
+    second_season_matches = int(page.locator("[data-pane='overblik'] .kpi-num").nth(1).inner_text().replace('.', ''))
+    season_inputs = page.locator('#season-filter input[type="checkbox"]')
+    season_inputs.nth(second_season_index).uncheck()
+    assert two_season_matches == first_season_matches + second_season_matches, (two_season_matches, first_season_matches, second_season_matches)
+    assert page.locator('[data-pane="saeson"] tbody tr').count() > 0
+    assert season_count_without_filter > 0
+    # Zero selected is the all-seasons view again; selecting every season is equivalent.
+    assert page.locator("[data-pane='overblik'] .kpi-num").nth(1).inner_text() == u9_kpis[1]
+    for index in range(season_inputs.count()):
+        page.locator('#season-filter input[type="checkbox"]').nth(index).check()
+    all_seasons_after_reset = page.locator("[data-pane='overblik'] .kpi-num").nth(1).inner_text()
+    assert all_seasons_after_reset == u9_kpis[1]
     assert len(api_requests) == 1, api_requests
-    print({"initial": initial, "initialKpis": initial_kpis, "initialFirstCard": initial_cards[0], "youth": youth, "youthKpis": youth_kpis, "youthFirstCard": youth_cards[0], "u9": u9, "u9Kpis": u9_kpis, "u9FirstCard": u9_cards[0], "homeAwayCounts": home_away_counts, "holdBeforeSort": before_sort[:2], "holdAfterMatches": after_matches[:2], "holdAfterRate": after_rate[:2], "players": player_names, "profiles": profiles, "opponentRows": opponent_row_count, "opponentBeforeSort": opponents_before_sort[:3], "opponentAfterMatches": opponents_after_matches[:3], "opponentAfterRate": opponents_after_rate[:3], "categoryRows": category_rows.count(), "categoryCounts": category_counts, "seasonRows": season_count_without_dropdown, "seasonFirstRows": season_rows.all_inner_texts()[:3], "seasonDropdownIgnored": True, "apiRequests": len(api_requests)})
+    print({"initial": initial, "initialKpis": initial_kpis, "initialFirstCard": initial_cards[0], "youth": youth, "youthKpis": youth_kpis, "youthFirstCard": youth_cards[0], "u9": u9, "u9Kpis": u9_kpis, "u9FirstCard": u9_cards[0], "youthHoldMatches": youth_hold_matches, "multiYouthHoldMatches": multi_youth_hold_matches, "firstYouthHoldMatches": first_youth_hold_matches, "secondYouthHoldMatches": second_youth_hold_matches, "homeAwayCounts": home_away_counts, "holdBeforeSort": before_sort[:2], "holdAfterMatches": after_matches[:2], "holdAfterRate": after_rate[:2], "players": player_names, "profiles": profiles, "opponentRows": opponent_row_count, "opponentBeforeSort": opponents_before_sort[:3], "opponentAfterMatches": opponents_after_matches[:3], "opponentAfterRate": opponents_after_rate[:3], "categoryRows": category_rows.count(), "categoryCounts": category_counts, "seasonRows": season_count_without_filter, "twoSeasonMatches": two_season_matches, "firstSeasonMatches": first_season_matches, "secondSeasonMatches": second_season_matches, "allSeasonsAfterReset": all_seasons_after_reset, "apiRequests": len(api_requests)})
     browser.close()

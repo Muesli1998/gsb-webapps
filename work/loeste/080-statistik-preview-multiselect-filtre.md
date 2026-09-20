@@ -67,4 +67,32 @@ separate, endnu ikke skrevne sammenligningsværktøj, ikke denne opgave).
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+Implementeret på klient-siden i `klubstatistik.js` uden ændring af `/api/data`-
+hentningen. Sæsonfilteret er en foldbar menu med checkboxer; tomt valg betyder
+alle sæsoner, og flere valgte checkboxer filtrerer som UNION. Ungdoms- og
+veteran-pillerne toggler uafhængigt; tomt underfilter betyder alle årgange/
+klasser i den valgte hovedgruppe. Sæsonfilteret gælder nu også Sæson- og
+Klub-karriere-fanen, så alle faner bruger samme filtrerede udsnit.
+
+Browserkontrol på data fra den lokale Dropbox-konfiguration:
+
+- Alle: `2.817` holdkampe, `472` hold, `462` puljer; KPI'er `50%`, `2.817`,
+  `7.598`, `453`.
+- Ungdom uden valgt underfilter: `1.353` holdkampe; Hold-fanen havde `1.277`
+  samlede kampe i de viste holdrækker.
+- To valgte ungdomsårgange: `425` kampe i Hold-fanen, svarende til `98` og
+  `327` hver for sig (`425 = 98 + 327`), >0 rækker, og samme
+  filtreringsmodel blev brugt på alle faner.
+- De to seneste databelagte sæsoner gav samlet `73` holdkampe; hver for sig
+  gav de `25` og `48`, og testen bekræftede `73 = 25 + 48`.
+- 0 valgte sæsoner gav igen U9-baselinen `105` holdkampe. Alle sæsoner valgt
+  gav også `105`; begge tilfælde var ikke-tomme.
+- Regressioner bestod: hjemme/ude `[1442, 1375]`, kategori `7` rækker med
+  `[2222, 1331, 5627, 2231, 3387, 3410, 2105]`, 40 modstander-rækker,
+  6 sæsonrækker i U9-udsnittet og spillerprofil-/karriere-assertions.
+- `apiRequests` for hele testforløbet var `1`.
+
+Kørt og bestået: `python -m py_compile server.py test_preview.py`,
+`node --check klubstatistik.js` og `python test_preview.py` med den allerede
+eksisterende lokale Playwright-runtime (exit code 0). Databasen og
+`server.py` blev ikke ændret.

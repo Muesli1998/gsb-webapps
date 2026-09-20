@@ -15,7 +15,11 @@ main { padding:24px 0 60px; }
 .subfilter-pill { border-radius:16px; padding:5px 12px; font-size:.8rem; }
 .subfilter-pill.active { border-color:var(--shuttle); background:#fff3d6; color:#7a5b16; }
 .subfilter-label { color:var(--muted); font-size:.74rem; font-weight:600; text-transform:uppercase; }
-.selector-field { display:flex; flex-direction:column; gap:4px; margin-left:auto; color:var(--muted); font-size:.74rem; font-weight:600; text-transform:uppercase; }
+.season-selector { position:relative; margin-left:auto; color:var(--muted); font-size:.74rem; font-weight:600; text-transform:uppercase; }
+.season-selector summary { padding:7px 10px; border:1px solid var(--border); border-radius:6px; cursor:pointer; list-style:none; }
+.season-selector summary::-webkit-details-marker { display:none; }
+.season-options { position:absolute; right:0; top:calc(100% + 4px); z-index:3; display:grid; gap:6px; min-width:170px; max-height:260px; overflow:auto; padding:10px; background:#fff; border:1px solid var(--border); border-radius:6px; box-shadow:0 3px 10px rgba(0,0,0,.12); text-transform:none; font-weight:400; }
+.season-options label { white-space:nowrap; }
 select { padding:7px 10px; border:1px solid var(--border); border-radius:6px; font:inherit; color:var(--ink); text-transform:none; }
 .stat-tabs { display:flex; gap:2px; flex-wrap:wrap; background:#eef0ec; border-radius:9px; padding:4px; margin-bottom:16px; }
 .stat-tab { border:0; background:none; padding:9px 16px; border-radius:7px; color:var(--muted); font-weight:600; cursor:pointer; }
@@ -90,4 +94,4 @@ select { padding:7px 10px; border:1px solid var(--border); border-radius:6px; fo
 .pane { display:none; }
 .pane.active { display:block; }
 .placeholder { border:1px dashed var(--border); border-radius:8px; padding:32px; color:var(--muted); text-align:center; }
-@media (max-width:640px) { .selector-field { margin-left:0; width:100%; } select { width:100%; } .stat-tab { flex:1 1 42%; } }
+@media (max-width:640px) { .season-selector { margin-left:0; width:100%; } .season-selector summary { width:100%; } .season-options { left:0; right:auto; width:100%; } select { width:100%; } .stat-tab { flex:1 1 42%; } }

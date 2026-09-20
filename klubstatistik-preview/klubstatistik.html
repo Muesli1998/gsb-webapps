@@ -16,9 +16,10 @@
       <section class="card filterbar-card" aria-label="Filtre">
         <div class="filterbar-row">
           <div id="age-filters" class="agegroup-pills" role="group" aria-label="Aldersgruppe"></div>
-          <label class="selector-field">Sæson
-            <select id="season-filter"><option value="all">Alle sæsoner</option></select>
-          </label>
+          <details id="season-filter" class="season-selector">
+            <summary>Sæson: <span class="season-selection">Alle</span></summary>
+            <div class="season-options"></div>
+          </details>
         </div>
         <div id="youth-filters" class="subfilter-row" hidden></div>
         <div id="veteran-filters" class="subfilter-row" hidden></div>
