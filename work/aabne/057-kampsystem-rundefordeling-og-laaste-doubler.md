@@ -93,4 +93,53 @@ tilgang på egen hånd.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst)*
+Metode: Der er tilføjet `tools/tests/kampsystem/rundefordeling-laaste-doubler.test.cjs`.
+Testen indlæser og evaluerer den inline JavaScript-kilde fra
+`kampsystem/kampsystem_source.html` read-only i en VM. Kortlægningen viste, at
+preview-kilden bruger `pairSingles`, `formTeams`, `formTeamsMixed`,
+`reducerGentagelse`, `kaonsbevidstFordeling`, `fordelTilDoubleOgMixed`,
+`effektivRating`, `tilfoejLaastKamp`, `reserverLaasteKampe` og `genererRunde`.
+De i kortets baggrund nævnte navne `matchKey`, `fallbackRating` og
+`wrapForRound` findes ikke i denne kilde; fallback-logikken ligger i
+`effektivRating`.
+
+Direkte kommando:
+
+```text
+node tools/tests/kampsystem/rundefordeling-laaste-doubler.test.cjs
+```
+
+Resultat: `Rundefordeling/låste doubler: 8 bestået, 2 fejlet`.
+
+De to fejl er:
+
+1. Scenarie 8, input: fire navngivne spillere i en låst double, hvor `B2`
+   har `tilstede=false`. Forventet: `B2` afvises og er ikke i den genererede
+   runde. Faktisk: `B2` er med i den låste kamp (`true !== false`).
+2. Scenarie 9, input: først låses `A1+A2` mod `B1+B2`, derefter
+   `B1+C1` mod `C2+D1`. Forventet: anden lås afvises på overlap. Faktisk:
+   begge låse accepteres (`2 !== 1`).
+
+Scenarie 5 målte gentagelsesomkostningen før/efter og bekræftede, at den
+konkrete swap reducerede omkostningen og bevarede fire unikke spillere.
+Scenarie 10 bekræftede, at et tyndt felt omkring én låst double ikke giver
+exception. Låsen blev bevaret i den genererede runde.
+
+Det åbne spørgsmål er afklaret i koden: `lockedMatches` lever på modulniveau
+og ændres kun af `tilfoejLaastKamp` og `fjernLaastKamp`; en lås er derfor
+bindende på efterfølgende genereringer, indtil den fjernes manuelt.
+
+Den foreskrevne katalogkontrol blev også kørt:
+
+```text
+node --test tools/tests/kampsystem/
+```
+
+Resultat: kontrolrunneren fejlede før testkørsel med Windows-fejlen
+`Error: spawn EPERM` fra Node test runner (`tests 1, pass 0, fail 1`). Den
+direkte Node-kørsel ovenfor er den anvendte testkørsel og gav de konkrete
+8/10- og 2/10-tal.
+
+Værn:
+`git status --short kampsystem/ apps/netlify-prod/` var tom; ingen filer i
+de beskyttede områder er ændret. Der er heller ikke skrevet til databaser.
