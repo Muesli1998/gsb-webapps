@@ -66,4 +66,54 @@ noget der skal opfindes for at få en test til at bestå.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst)*
+Metode: Der er tilføjet `tools/tests/kampsystem/navnehaandtering.test.cjs`.
+Testen evaluerer den faktiske inline søge-/opslagskode fra
+`kampsystem/kampsystem_source.html` read-only i en VM. Den læser de tre
+konkrete aliaspar direkte fra `data/navne-alias.json`, fordi den i kortet
+nævnte `GSB_NAVNE_ALIAS_OG_ANOMALIER.json` ikke findes i repoet.
+
+Kortlægning: preview-kilden har `renderSoegning` og eksakt `byNavn`, men
+ingen `normaliserNoegle`, `officieltNavn`, `matchKey` eller tilsvarende
+aliasopslag. Produktionsfilen `apps/netlify-prod/netlify/lib/navne.js` har
+derimod `normaliserNoegle`/`officieltNavn`; den blev kun læst til denne
+sammenligning og er ikke ændret.
+
+Direkte kommando:
+
+```text
+node tools/tests/kampsystem/navnehaandtering.test.cjs
+```
+
+Resultat: `Navnehåndtering: 3 bestået, 2 fejlet`.
+
+Fejlene er:
+
+1. Scenarie 3, inputtet ` Anna ` og `Anna  Hansen` mod roster-navnet
+   `Anna Hansen`. Forventet: samme søgeresultat som `Anna`. Faktisk: tomt
+   resultat (`''`), fordi preview-søgningen kun lowercaser og ikke trimmer
+   eller komprimerer whitespace.
+2. Scenarie 4, aliasdata fra `data/navne-alias.json`: `Anja Gunna Thomsen`
+   → `Anja Thomsen`, `Jonathan Hansen` → `Jonathan W. Hansen` og
+   `Louise Korsby Kofoed` → `Louise Kofoed`. Forventet: opslag på hvert
+   alias finder det officielle navn. Faktisk: tomt resultat på første
+   alias (`''`); preview-kilden bruger ikke aliasdata.
+
+Scenarie 1 bestod med `Søren Østergaard` og `Mette Åkær`; scenarie 2 bestod
+med uppercase-søgning `CHRISTOFFER` og viste samtidig, at `byNavn` er
+eksakt (`christoffer müller` giver `undefined`). Scenarie 5 bestod:
+ukendt navn gav tomt resultat og `byNavn` gav `undefined` uden exception.
+
+Den foreskrevne katalogkontrol blev kørt:
+
+```text
+node --test tools/tests/kampsystem/
+```
+
+Resultat: Node test runner fejlede før testkørsel med Windows-fejlen
+`Error: spawn EPERM` (`tests 1, pass 0, fail 1`). Den direkte Node-kørsel
+ovenfor er derfor den anvendte kontrol og gav 3/5 og 2/5.
+
+Værn:
+`git status --short kampsystem/ apps/netlify-prod/ GSB_NAVNE_ALIAS_OG_ANOMALIER.json`
+var tom; ingen beskyttede filer eller aliasdata er ændret. Der er ikke
+skrevet til databaser.
