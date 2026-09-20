@@ -591,3 +591,12 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
   entries og returneres ikke som separat felt i discovery-svaret. DB-SHA var
   uændret: `e6c5046a4b93a8518254badf5d8f4529fb0b918ae4a31af63919b5f70d620062`.
 
+- 2026-09-20 — Opgave 081 trin 1–3: 2 `badmintonPlayerTeamFights`-kald og
+  3 `badmintonPlayerTeamMatch`-kald blev prøvet med råsvar gemt i
+  `results/081-opponent-identity-probe.json`. Fights returnerede kun
+  modstander-navne; det ene succesfulde match-svar returnerede kun
+  `home.name`/`guest.name`, og 2 matchkald fejlede med `Internal server error`.
+  Schemaet har ingen modstander-klub-/hold-ID i de relevante typer.
+  Graf-genvejen er derfor ikke brugbar. Blind 16-sæson-proxy er 95.952 kald
+  før kampdetaljer; fuld iteration og permanent datasæt blev ikke startet.
+

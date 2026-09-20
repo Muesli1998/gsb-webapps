@@ -139,6 +139,33 @@ dyre iteration, som kortet siger skal godkendes særskilt.
 gang, eller skal opgave 081 afsluttes som "ingen brugbar rute uden dyr
 iteration"?
 
+**Trin 1-testresultat (2026-09-20):** Graf-genvejen virker ikke på de
+afprøvede svar. To `badmintonPlayerTeamFights`-kald (2010/pulje 417 og
+2025/pulje 17963) returnerede `teams` som navnestrenge; ingen klub-/hold-ID.
+Tre `badmintonPlayerTeamMatch`-kald blev prøvet; det ene succesfulde svar
+(2020/kamp 388606) havde kun `home.name` og `guest.name`, mens to returnerede
+`Internal server error`. Schema-introspection bekræfter:
+
+- `BadmintonPlayerTeamFight`: `teams`, `matchId`, `gameTime`, `round`,
+  `roundDate`.
+- `ImportTeamMatch`: `home`, `guest`, `playingPlace`, `playingAddress`,
+  `playingZipCode`, `playingCity`.
+- `ImportTeam`: `name`, `leagueMatchId`, `side`, `squad`.
+- `BadmintonPlayerTeam` har `clubId`, men kun i det allerede klubscopede
+  `badmintonPlayerTeams`-svar; det giver ikke et ID for modstanderen.
+
+Derfor er der ingen verificeret graf-traversal. Uden genvejen er det konkrete
+2025-baserede overslag for 16 sæsoner mindst `1.159 × 16 = 18.544`
+`badmintonPlayerTeams`-kald plus `4.838 × 16 = 77.408`
+`badmintonPlayerTeamFights`-kald, altså `95.952` kald **før** ét
+`badmintonPlayerTeamMatch`-kald pr. unik kamp. Det faktiske match-detailtal
+kan ikke estimeres ærligt fra de eksisterende 2025-klubscan-tal alene.
+
+Grafens forventede restdækning kan heller ikke beregnes meningsfuldt: uden
+modstander-ID’er opdager traversal 0 nye klubber, mens eventuelle isolerede
+klubber uden for de 1.159 seeds er ukendte. Den fulde blinde iteration er
+derfor stoppet og kræver en ny beslutning.
+
 ## Resultatnote
 
 **Trin 1 — afklaring (færdig; trin 2 ikke startet):** Ingen brugbar,
@@ -161,10 +188,17 @@ evidens. Konklusionen gælder både Nembadminton GraphQL og BadmintonPlayer.
   2 fejl og 4.838 teamrækker. Det er kun sæson 2025; fuld historisk dækning
   ville kræve yderligere klub-/sæsoniteration.
 
-Der er derfor ikke bygget katalog eller kørt nye API-kald. Trin 2 afventer
+Der er derfor ikke bygget katalog eller kørt fuld iteration. Trin 2 afventer
 Christoffers beslutning i afsnittet **Spørgsmål**.
 
 Read-only databasekontrol: SHA-256 før og efter var identisk,
 `E6C5046A4B93A8518254BADF5D8F4529FB0B918AE4A31AF63919B5F70D620062`.
 Beskyttede mapper `statistik/data/`, `apps/netlify-prod/`, `kampsystem/` og
 `klubstatistik-preview/` havde ingen git-ændringer.
+
+Efter den nye probe er konklusionen opdateret: Trin 1–3 er udført, men trin 4
+er ikke startet. Den fulde iteration og det permanente landskabsdatasæt
+afventer beslutning om mindst 95.952 kald plus et ukendt antal
+kampdetailkald. Rå probeevidens ligger i
+`statistik/results/081-opponent-identity-probe.json`, og den reproducerbare
+probe i `statistik/scripts/081-opponent-identity-probe.mjs`.

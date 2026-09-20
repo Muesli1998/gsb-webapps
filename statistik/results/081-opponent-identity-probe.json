@@ -1,0 +1,1063 @@
+{
+  "generatedAt": "2026-09-20T20:47:40.201Z",
+  "endpoint": "https://app.nembadminton.dk/graphql",
+  "calls": [
+    {
+      "label": "teamFights-2010-417",
+      "retrievedAt": "2026-09-20T20:47:39.297Z",
+      "httpStatus": 200,
+      "query": "query { badmintonPlayerTeamFights(input:{clubId:1093,season:2010,ageGroupId:1,leagueGroupId:417,clubName:\"Gladsaxe Søborg 1\"}){matchId round roundDate gameTime teams} }",
+      "body": {
+        "data": {
+          "badmintonPlayerTeamFights": [
+            {
+              "matchId": 23219,
+              "round": 1,
+              "roundDate": "2010-09-26",
+              "gameTime": "2011-02-13 00:00:00",
+              "teams": [
+                "Taastrup Elite 1",
+                "Gladsaxe Søborg 1",
+                ""
+              ]
+            },
+            {
+              "matchId": 23222,
+              "round": 2,
+              "roundDate": "2010-10-10",
+              "gameTime": "2011-02-26 00:00:00",
+              "teams": [
+                "Gladsaxe Søborg 1",
+                "Rødovre 1",
+                ""
+              ]
+            },
+            {
+              "matchId": 23227,
+              "round": 3,
+              "roundDate": "2010-11-07",
+              "gameTime": "2011-03-12 00:00:00",
+              "teams": [
+                "Vordingborg 1",
+                "Gladsaxe Søborg 1",
+                ""
+              ]
+            },
+            {
+              "matchId": 23230,
+              "round": 4,
+              "roundDate": "2010-11-21",
+              "gameTime": "2011-03-26 00:00:00",
+              "teams": [
+                "Gladsaxe Søborg 1",
+                "KBK Kbh. 3",
+                ""
+              ]
+            }
+          ]
+        },
+        "extensions": {
+          "lighthouse_subscriptions": {
+            "channel": null
+          }
+        }
+      }
+    },
+    {
+      "label": "teamFights-2025-17963",
+      "retrievedAt": "2026-09-20T20:47:39.469Z",
+      "httpStatus": 200,
+      "query": "query { badmintonPlayerTeamFights(input:{clubId:1093,season:2025,ageGroupId:2,leagueGroupId:17963,clubName:\"Gladsaxe Søborg 2\"}){matchId round roundDate gameTime teams} }",
+      "body": {
+        "data": {
+          "badmintonPlayerTeamFights": [
+            {
+              "matchId": 487423,
+              "round": 1,
+              "roundDate": "2025-09-21",
+              "gameTime": "2025-09-21 10:00:00",
+              "teams": [
+                "Gladsaxe Søborg 2",
+                "BK36 Kbh. 1",
+                "Gladsaxe Søborg"
+              ]
+            },
+            {
+              "matchId": 486774,
+              "round": 2,
+              "roundDate": "2025-10-05",
+              "gameTime": "2025-10-05 13:00:00",
+              "teams": [
+                "KMB2010 1",
+                "Gladsaxe Søborg 2",
+                "KMB2010"
+              ]
+            },
+            {
+              "matchId": 486778,
+              "round": 3,
+              "roundDate": "2025-10-26",
+              "gameTime": "2025-11-01 14:00:00",
+              "teams": [
+                "Lyngby 2",
+                "Gladsaxe Søborg 2",
+                "Lyngby"
+              ]
+            },
+            {
+              "matchId": 486783,
+              "round": 4,
+              "roundDate": "2025-11-23",
+              "gameTime": "2025-11-23 10:00:00",
+              "teams": [
+                "Gladsaxe Søborg 2",
+                "Hvidovre HB2000 1",
+                "Gladsaxe Søborg"
+              ]
+            },
+            {
+              "matchId": 487435,
+              "round": 5,
+              "roundDate": "2025-12-14",
+              "gameTime": "2025-12-13 10:30:00",
+              "teams": [
+                "Gladsaxe Søborg 2",
+                "Vanløse 1",
+                "Gladsaxe Søborg"
+              ]
+            },
+            {
+              "matchId": 487440,
+              "round": 6,
+              "roundDate": "2026-01-11",
+              "gameTime": "2026-01-11 10:00:00",
+              "teams": [
+                "Gladsaxe Søborg 2",
+                "Frederiksberg 2",
+                "Gladsaxe Søborg"
+              ]
+            },
+            {
+              "matchId": 487443,
+              "round": 7,
+              "roundDate": "2026-02-01",
+              "gameTime": "2026-01-31 14:00:00",
+              "teams": [
+                "FKIF Frederiksberg 2",
+                "Gladsaxe Søborg 2",
+                "FKIF Frederiksberg"
+              ]
+            },
+            {
+              "matchId": 486803,
+              "round": 9,
+              "roundDate": "2026-03-29",
+              "gameTime": "2026-03-29 11:00:00",
+              "teams": [
+                "Frederiksberg 1",
+                "Gladsaxe Søborg 2",
+                "Frederiksberg"
+              ]
+            }
+          ]
+        },
+        "extensions": {
+          "lighthouse_subscriptions": {
+            "channel": null
+          }
+        }
+      }
+    },
+    {
+      "label": "teamMatch-2010-23219",
+      "retrievedAt": "2026-09-20T20:47:39.561Z",
+      "httpStatus": 200,
+      "query": "query { badmintonPlayerTeamMatch(input:{leagueMatchId:23219,season:2010}){home{name} guest{name}} }",
+      "body": {
+        "errors": [
+          {
+            "message": "Internal server error",
+            "locations": [
+              {
+                "line": 1,
+                "column": 9
+              }
+            ],
+            "path": [
+              "badmintonPlayerTeamMatch"
+            ]
+          }
+        ],
+        "data": {
+          "badmintonPlayerTeamMatch": null
+        },
+        "extensions": {
+          "lighthouse_subscriptions": {
+            "channel": null
+          }
+        }
+      }
+    },
+    {
+      "label": "teamMatch-2020-388606",
+      "retrievedAt": "2026-09-20T20:47:39.772Z",
+      "httpStatus": 200,
+      "query": "query { badmintonPlayerTeamMatch(input:{leagueMatchId:388606,season:2020}){home{name} guest{name}} }",
+      "body": {
+        "data": {
+          "badmintonPlayerTeamMatch": {
+            "home": {
+              "name": "Solrød Strand 1"
+            },
+            "guest": {
+              "name": "BC37/Gladsaxe Søborg 1"
+            }
+          }
+        },
+        "extensions": {
+          "lighthouse_subscriptions": {
+            "channel": null
+          }
+        }
+      }
+    },
+    {
+      "label": "teamMatch-2025-487423",
+      "retrievedAt": "2026-09-20T20:47:39.857Z",
+      "httpStatus": 200,
+      "query": "query { badmintonPlayerTeamMatch(input:{leagueMatchId:487423,season:2025}){home{name} guest{name}} }",
+      "body": {
+        "errors": [
+          {
+            "message": "Internal server error",
+            "locations": [
+              {
+                "line": 1,
+                "column": 9
+              }
+            ],
+            "path": [
+              "badmintonPlayerTeamMatch"
+            ]
+          }
+        ],
+        "data": {
+          "badmintonPlayerTeamMatch": null
+        },
+        "extensions": {
+          "lighthouse_subscriptions": {
+            "channel": null
+          }
+        }
+      }
+    },
+    {
+      "label": "schema-query-fields",
+      "retrievedAt": "2026-09-20T20:47:40.065Z",
+      "httpStatus": 200,
+      "query": "query { __schema { queryType { fields { name type { kind name ofType { kind name ofType { kind name } } } } } } importTeamMatch: __type(name:\"ImportTeamMatch\") { name fields { name type { kind name ofType { kind name ofType { kind name } } } } } importTeam: __type(name:\"ImportTeam\") { name fields { name type { kind name ofType { kind name ofType { kind name } } } } } teamFight: __type(name:\"BadmintonPlayerTeamFight\") { name fields { name type { kind name ofType { kind name ofType { kind name } } } } } playerTeam: __type(name:\"BadmintonPlayerTeam\") { name fields { name type { kind name ofType { kind name ofType { kind name } } } } } }",
+      "body": {
+        "data": {
+          "__schema": {
+            "queryType": {
+              "fields": [
+                {
+                  "name": "me",
+                  "type": {
+                    "kind": "OBJECT",
+                    "name": "User",
+                    "ofType": null
+                  }
+                },
+                {
+                  "name": "rankingVersions",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "LIST",
+                      "name": null,
+                      "ofType": {
+                        "kind": "NON_NULL",
+                        "name": null
+                      }
+                    }
+                  }
+                },
+                {
+                  "name": "latestRankingVersion",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "Date",
+                      "ofType": null
+                    }
+                  }
+                },
+                {
+                  "name": "clubs",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "LIST",
+                      "name": null,
+                      "ofType": {
+                        "kind": "NON_NULL",
+                        "name": null
+                      }
+                    }
+                  }
+                },
+                {
+                  "name": "teamRound",
+                  "type": {
+                    "kind": "OBJECT",
+                    "name": "TeamRound",
+                    "ofType": null
+                  }
+                },
+                {
+                  "name": "export",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "String",
+                      "ofType": null
+                    }
+                  }
+                },
+                {
+                  "name": "squadMember",
+                  "type": {
+                    "kind": "OBJECT",
+                    "name": "SquadMember",
+                    "ofType": null
+                  }
+                },
+                {
+                  "name": "teamNotificationActivity",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "LIST",
+                      "name": null,
+                      "ofType": {
+                        "kind": "NON_NULL",
+                        "name": null
+                      }
+                    }
+                  }
+                },
+                {
+                  "name": "teamRoundReceiver",
+                  "type": {
+                    "kind": "OBJECT",
+                    "name": "TeamReceivers",
+                    "ofType": null
+                  }
+                },
+                {
+                  "name": "tournamentGroups",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "LIST",
+                      "name": null,
+                      "ofType": {
+                        "kind": "NON_NULL",
+                        "name": null
+                      }
+                    }
+                  }
+                },
+                {
+                  "name": "tournamentTiers",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "LIST",
+                      "name": null,
+                      "ofType": {
+                        "kind": "NON_NULL",
+                        "name": null
+                      }
+                    }
+                  }
+                },
+                {
+                  "name": "team",
+                  "type": {
+                    "kind": "OBJECT",
+                    "name": "Team",
+                    "ofType": null
+                  }
+                },
+                {
+                  "name": "seasons",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "LIST",
+                      "name": null,
+                      "ofType": {
+                        "kind": "NON_NULL",
+                        "name": null
+                      }
+                    }
+                  }
+                },
+                {
+                  "name": "notifications",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "LIST",
+                      "name": null,
+                      "ofType": {
+                        "kind": "NON_NULL",
+                        "name": null
+                      }
+                    }
+                  }
+                },
+                {
+                  "name": "notificationReceivers",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "LIST",
+                      "name": null,
+                      "ofType": {
+                        "kind": "NON_NULL",
+                        "name": null
+                      }
+                    }
+                  }
+                },
+                {
+                  "name": "memberStats",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "MemberStats",
+                      "ofType": null
+                    }
+                  }
+                },
+                {
+                  "name": "membersStats",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "LIST",
+                      "name": null,
+                      "ofType": {
+                        "kind": "NON_NULL",
+                        "name": null
+                      }
+                    }
+                  }
+                },
+                {
+                  "name": "highestPointGain",
+                  "type": {
+                    "kind": "LIST",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "BarPoint",
+                      "ofType": null
+                    }
+                  }
+                },
+                {
+                  "name": "clubhouseStats",
+                  "type": {
+                    "kind": "OBJECT",
+                    "name": "ClubhouseInfo",
+                    "ofType": null
+                  }
+                },
+                {
+                  "name": "stats",
+                  "type": {
+                    "kind": "LIST",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "DataPoint",
+                      "ofType": null
+                    }
+                  }
+                },
+                {
+                  "name": "badmintonPlayerClubs",
+                  "type": {
+                    "kind": "LIST",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "OptionClub",
+                      "ofType": null
+                    }
+                  }
+                },
+                {
+                  "name": "badmintonPlayerTeams",
+                  "type": {
+                    "kind": "LIST",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "BadmintonPlayerTeam",
+                      "ofType": null
+                    }
+                  }
+                },
+                {
+                  "name": "badmintonPlayerTeamsBulk",
+                  "type": {
+                    "kind": "LIST",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "BadmintonPlayerTeam",
+                      "ofType": null
+                    }
+                  }
+                },
+                {
+                  "name": "badmintonPlayerTeamFights",
+                  "type": {
+                    "kind": "LIST",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "BadmintonPlayerTeamFight",
+                      "ofType": null
+                    }
+                  }
+                },
+                {
+                  "name": "badmintonPlayerTeamFightsBulk",
+                  "type": {
+                    "kind": "LIST",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "BadmintonPlayerTeamFight",
+                      "ofType": null
+                    }
+                  }
+                },
+                {
+                  "name": "badmintonPlayerTeamMatch",
+                  "type": {
+                    "kind": "OBJECT",
+                    "name": "ImportTeamMatch",
+                    "ofType": null
+                  }
+                },
+                {
+                  "name": "badmintonPlayerTeamMatches",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "LIST",
+                      "name": null,
+                      "ofType": {
+                        "kind": "NON_NULL",
+                        "name": null
+                      }
+                    }
+                  }
+                },
+                {
+                  "name": "rankingVersionsBP",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "LIST",
+                      "name": null,
+                      "ofType": {
+                        "kind": "NON_NULL",
+                        "name": null
+                      }
+                    }
+                  }
+                },
+                {
+                  "name": "badmintonPlayerApiTeamMatches",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "LIST",
+                      "name": null,
+                      "ofType": {
+                        "kind": "NON_NULL",
+                        "name": null
+                      }
+                    }
+                  }
+                },
+                {
+                  "name": "teamMatchesFormattedForValidation",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "LIST",
+                      "name": null,
+                      "ofType": {
+                        "kind": "NON_NULL",
+                        "name": null
+                      }
+                    }
+                  }
+                },
+                {
+                  "name": "rankingVersionsApi",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "LIST",
+                      "name": null,
+                      "ofType": {
+                        "kind": "NON_NULL",
+                        "name": null
+                      }
+                    }
+                  }
+                },
+                {
+                  "name": "calendarEvents",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "LIST",
+                      "name": null,
+                      "ofType": {
+                        "kind": "NON_NULL",
+                        "name": null
+                      }
+                    }
+                  }
+                },
+                {
+                  "name": "calendarGenerator",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "CalendarGenerator",
+                      "ofType": null
+                    }
+                  }
+                },
+                {
+                  "name": "cancellationCollector",
+                  "type": {
+                    "kind": "OBJECT",
+                    "name": "CancellationCollector",
+                    "ofType": null
+                  }
+                },
+                {
+                  "name": "cancellationCollectorPublic",
+                  "type": {
+                    "kind": "OBJECT",
+                    "name": "CancellationCollector",
+                    "ofType": null
+                  }
+                },
+                {
+                  "name": "cancellationEvents",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "LIST",
+                      "name": null,
+                      "ofType": {
+                        "kind": "NON_NULL",
+                        "name": null
+                      }
+                    }
+                  }
+                },
+                {
+                  "name": "clubhouse",
+                  "type": {
+                    "kind": "OBJECT",
+                    "name": "Clubhouse",
+                    "ofType": null
+                  }
+                },
+                {
+                  "name": "invitation",
+                  "type": {
+                    "kind": "OBJECT",
+                    "name": "Invitation",
+                    "ofType": null
+                  }
+                },
+                {
+                  "name": "membersSearch",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "MemberPaginator",
+                      "ofType": null
+                    }
+                  }
+                },
+                {
+                  "name": "memberSearchPoints",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "MemberPaginator",
+                      "ofType": null
+                    }
+                  }
+                },
+                {
+                  "name": "memberSearchTeamFight",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "SquadMemberPaginator",
+                      "ofType": null
+                    }
+                  }
+                },
+                {
+                  "name": "clubsSearch",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "ClubPaginator",
+                      "ofType": null
+                    }
+                  }
+                },
+                {
+                  "name": "logs",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "LogPaginator",
+                      "ofType": null
+                    }
+                  }
+                },
+                {
+                  "name": "teamRounds",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "TeamRoundPaginator",
+                      "ofType": null
+                    }
+                  }
+                },
+                {
+                  "name": "teams",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "TeamPaginator",
+                      "ofType": null
+                    }
+                  }
+                },
+                {
+                  "name": "membersCancellationSearch",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "MemberPaginator",
+                      "ofType": null
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "importTeamMatch": {
+            "name": "ImportTeamMatch",
+            "fields": [
+              {
+                "name": "home",
+                "type": {
+                  "kind": "OBJECT",
+                  "name": "ImportTeam",
+                  "ofType": null
+                }
+              },
+              {
+                "name": "guest",
+                "type": {
+                  "kind": "OBJECT",
+                  "name": "ImportTeam",
+                  "ofType": null
+                }
+              },
+              {
+                "name": "playingPlace",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              {
+                "name": "playingAddress",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              {
+                "name": "playingZipCode",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              {
+                "name": "playingCity",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              }
+            ]
+          },
+          "importTeam": {
+            "name": "ImportTeam",
+            "fields": [
+              {
+                "name": "name",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "String",
+                    "ofType": null
+                  }
+                }
+              },
+              {
+                "name": "leagueMatchId",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "String",
+                    "ofType": null
+                  }
+                }
+              },
+              {
+                "name": "side",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "ENUM",
+                    "name": "Side",
+                    "ofType": null
+                  }
+                }
+              },
+              {
+                "name": "squad",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "ImportSquad",
+                    "ofType": null
+                  }
+                }
+              }
+            ]
+          },
+          "teamFight": {
+            "name": "BadmintonPlayerTeamFight",
+            "fields": [
+              {
+                "name": "teams",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "LIST",
+                    "name": null,
+                    "ofType": {
+                      "kind": "NON_NULL",
+                      "name": null
+                    }
+                  }
+                }
+              },
+              {
+                "name": "matchId",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Int",
+                    "ofType": null
+                  }
+                }
+              },
+              {
+                "name": "gameTime",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "DateTime",
+                    "ofType": null
+                  }
+                }
+              },
+              {
+                "name": "round",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                }
+              },
+              {
+                "name": "roundDate",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Date",
+                  "ofType": null
+                }
+              }
+            ]
+          },
+          "playerTeam": {
+            "name": "BadmintonPlayerTeam",
+            "fields": [
+              {
+                "name": "leagueGroupId",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "String",
+                    "ofType": null
+                  }
+                }
+              },
+              {
+                "name": "ageGroupId",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "String",
+                    "ofType": null
+                  }
+                }
+              },
+              {
+                "name": "name",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "String",
+                    "ofType": null
+                  }
+                }
+              },
+              {
+                "name": "league",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "String",
+                    "ofType": null
+                  }
+                }
+              },
+              {
+                "name": "clubId",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Int",
+                    "ofType": null
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "extensions": {
+          "lighthouse_subscriptions": {
+            "channel": null
+          }
+        }
+      }
+    }
+  ]
+}
