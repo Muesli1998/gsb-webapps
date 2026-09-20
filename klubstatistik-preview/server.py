@@ -63,11 +63,24 @@ def load_data(config_path: Path):
             FROM team_matches ORDER BY season_id DESC, round_date, team_match_id
             """,
         )
-        players = rows(db, "SELECT player_id AS id, name_raw AS name FROM players ORDER BY player_id")
+        players = rows(db, "SELECT player_id AS id, name_raw AS name, external_player_id AS externalPlayerId FROM players ORDER BY player_id")
+        individual_matches = rows(
+            db,
+            """
+            SELECT individual_match_id AS id, team_match_id AS teamMatchId,
+                   discipline_raw AS discipline, game_number_raw AS gameNumber,
+                   category_raw AS category, home_score_raw AS homeScore,
+                   away_score_raw AS awayScore, winner_side AS winnerSide,
+                   status
+            FROM individual_matches ORDER BY team_match_id, individual_match_id
+            """,
+        )
         player_links = rows(
             db,
             """
-            SELECT im.team_match_id AS teamMatchId, imp.player_id AS playerId
+            SELECT imp.individual_match_id AS individualMatchId,
+                   im.team_match_id AS teamMatchId, imp.player_id AS playerId,
+                   imp.side, imp.role
             FROM individual_matches im
             JOIN individual_match_players imp ON imp.individual_match_id=im.individual_match_id
             ORDER BY im.team_match_id, imp.player_id
@@ -81,6 +94,7 @@ def load_data(config_path: Path):
         "teams": teams,
         "matches": matches,
         "players": players,
+        "individualMatches": individual_matches,
         "playerLinks": player_links,
     }
 

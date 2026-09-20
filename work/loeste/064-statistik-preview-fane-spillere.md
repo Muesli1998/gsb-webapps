@@ -79,6 +79,11 @@ databasekald.
 **Værnet:** `analyse.html`s eksisterende board-position-beregning/dedup-nøgle er uændret (0 ændrede
 linjer i `analyse.html`, hvis logikken genbruges via deling i stedet for kopi).
 
+**Kontrol udført:** browserkontrollen åbnede 3 forskellige profiler i Ungdom → U9,
+filtrerede spillerlisten klient-side og registrerede 1 API-kald i hele forløbet.
+Min.-kampe-filteret ændrede ikke API-kaldstællingen. Rå `category_raw`-tekster blev
+vist direkte, og navnematch-markøren blev vist for 2 af de 3 stikprøveprofiler.
+
 ## Ved tvivl
 
 Stop og skriv under "Spørgsmål" nedenfor — særligt om hvor grænsen går for hvor meget der bør
@@ -111,4 +116,35 @@ navnematch-koblet spillers modstander-/holddata er usikker nok til at flage synl
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+Implementeret i `klubstatistik-preview/`. `/api/data` leverer spillerrelationer,
+rå `category_raw`-værdier og `external_player_id`; resten af beregningen sker
+klient-side efter samme valgte hold-/sæsonudsnit som de øvrige faner.
+
+De tre konkrete profiler i browserkontrollen var:
+
+- Norr Bagge Köhler: 40 kampe, 22S–18T, 55% winrate, 7 hold og 2 sæsoner.
+  Rå kategorier omfattede bl.a. `1. D`, `1. S`, `2. D` og `2. S`. Navnematch-
+  markør vist (`external_player_id` mangler).
+- Akhila Sureddy: 40 kampe, 26S–14T, 65% winrate, 5 hold og 2 sæsoner.
+  Rå kategorier omfattede bl.a. `1. D`, `1. S`, `Golden Set D` og
+  `Golden Set DD`. Ingen navnematch-markør (`external_player_id` findes).
+- Tobias Geil Christophersen: 33 kampe, 19S–14T, 58% winrate, 5 hold og 2
+  sæsoner. Rå kategorier omfattede bl.a. `1. D`, `1. S`, `2. D` og `2. S`.
+  Navnematch-markør vist (`external_player_id` mangler).
+
+Sæsonvisningen bruger sæsonlabels fra `seasons` (fx `2025/2026`) og viser
+hold, kampe og winrate pr. sæson/hold. Modstandere tælles som individuelle
+modstående spillerrelationer i samme individuelle kamp, ikke som holdmøder.
+
+Board-tendensen vises som ikke beregnet: `analyse.html`/`runAnalyse` bruger
+rækkefølgen i Google Sheets `Resultater!A2:K`, mens den normaliserede read-only
+database ikke eksponerer et verificeret source-row/order-felt. Der er derfor
+ikke brugt `individual_match_id` som antaget rækkefølge. Dette er den kendte
+usikkerhed, som Chris bad om at dokumentere.
+
+Kontrolkommandoer: `python -m py_compile server.py`, `node --check
+klubstatistik.js` og `python test_preview.py` bestod. Previewtesten bevarede de
+tidligere Overblik-/Hold-kontroller, åbnede de tre profiler, bekræftede deres
+tal ovenfor, bekræftede rå kategoritekster og ID-markører, og sluttede med 1
+API-kald. `analyse.html` har 0 ændrede linjer; `apps/netlify-prod/`,
+`kampsystem/` og databasen blev ikke ændret.

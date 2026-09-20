@@ -236,6 +236,97 @@
     html += '<p class="muted season-note">Sæson-dropdownen ovenfor påvirker ikke denne historik; alders- og underfilter gør.</p>';
     document.querySelector('[data-pane="saeson"]').innerHTML = html;
   }
+  function escapeHtml(value) {
+    return String(value == null ? '' : value).replace(/[&<>"']/g, function (char) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]; });
+  }
+
+  function profileStats(result) {
+    var teamById = new Map(state.data.teams.map(function (team) { return [team.id, team]; }));
+    var matchById = new Map(result.matches.map(function (match) { return [match.teamMatchId, match]; }));
+    var individual = state.data.individualMatches.filter(function (row) { return matchById.has(row.teamMatchId); });
+    var individualById = new Map(individual.map(function (row) { return [row.id, row]; }));
+    var linksByIndividual = new Map();
+    state.data.playerLinks.forEach(function (link) {
+      if (!individualById.has(link.individualMatchId)) return;
+      if (!linksByIndividual.has(link.individualMatchId)) linksByIndividual.set(link.individualMatchId, []);
+      linksByIndividual.get(link.individualMatchId).push(link);
+    });
+    var playersById = new Map(state.data.players.map(function (player) { return [player.id, player]; }));
+    var stats = new Map();
+    function get(playerId) {
+      if (!stats.has(playerId)) {
+        var player = playersById.get(playerId) || {};
+        stats.set(playerId, { id: playerId, hasExternalId: Boolean(player.externalPlayerId), matchIds: new Set(), wins: 0, losses: 0, categories: new Map(), teams: new Map(), seasons: new Map(), opponents: new Map() });
+      }
+      return stats.get(playerId);
+    }
+    state.data.playerLinks.forEach(function (link) {
+      var im = individualById.get(link.individualMatchId);
+      if (!im) return;
+      var match = matchById.get(im.teamMatchId);
+      var player = get(link.playerId);
+      player.matchIds.add(im.id);
+      var category = im.category || 'ukendt';
+      if (!player.categories.has(category)) player.categories.set(category, { wins: 0, losses: 0, matches: 0 });
+      var cat = player.categories.get(category);
+      cat.matches += 1;
+      if (im.winnerSide === link.side) { player.wins += 1; cat.wins += 1; }
+      else if (im.winnerSide) { player.losses += 1; cat.losses += 1; }
+      var team = teamById.get(match.teamId);
+      var teamKey = String(match.teamId);
+      if (!player.teams.has(teamKey)) player.teams.set(teamKey, { name: team ? team.name : 'ukendt', wins: 0, losses: 0, seasons: new Set() });
+      var teamStat = player.teams.get(teamKey);
+      teamStat.seasons.add(match.seasonId);
+      if (im.winnerSide === link.side) teamStat.wins += 1; else if (im.winnerSide) teamStat.losses += 1;
+      var seasonKey = String(match.seasonId) + '|' + teamKey;
+      if (!player.seasons.has(seasonKey)) player.seasons.set(seasonKey, { seasonId: match.seasonId, team: team ? team.name : 'ukendt', wins: 0, losses: 0 });
+      var seasonStat = player.seasons.get(seasonKey);
+      if (im.winnerSide === link.side) seasonStat.wins += 1; else if (im.winnerSide) seasonStat.losses += 1;
+      (linksByIndividual.get(im.id) || []).forEach(function (opponent) {
+        if (opponent.playerId === link.playerId || opponent.side === link.side) return;
+        if (!player.opponents.has(opponent.playerId)) player.opponents.set(opponent.playerId, { matches: 0, wins: 0, losses: 0 });
+        var opponentStat = player.opponents.get(opponent.playerId);
+        opponentStat.matches += 1;
+        if (im.winnerSide === link.side) opponentStat.wins += 1; else if (im.winnerSide) opponentStat.losses += 1;
+      });
+    });
+    return stats;
+  }
+
+  function profileHtml(stat, result) {
+    var playerName = (state.data.players.find(function (player) { return player.id === stat.id; }) || {}).name || 'ukendt';
+    var seasonLabels = new Map(state.data.seasons.map(function (season) { return [String(season.id), season.label]; }));
+    var seasons = Array.from(stat.seasons.values()).sort(function (a, b) { return b.seasonId - a.seasonId; });
+    var latest = seasons[0] ? seasons[0].team : 'ukendt';
+    var decided = stat.wins + stat.losses;
+    var rate = decided ? Math.round(stat.wins / decided * 100) : null;
+    var categoryHtml = Array.from(stat.categories.entries()).sort().map(function (entry) { var value = entry[1]; var pct = value.wins + value.losses ? Math.round(value.wins / (value.wins + value.losses) * 100) : 0; return '<div class="profile-line"><span>' + escapeHtml(entry[0]) + '</span><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:' + pct + '%"></div></div><span class="pct">' + (value.wins + value.losses ? pct + '%' : '—') + '</span></div></div>'; }).join('');
+    var teamHtml = Array.from(stat.teams.values()).map(function (team) { return '<div class="profile-list-row"><span>' + escapeHtml(team.name) + '</span><span>' + team.wins + 'S–' + team.losses + 'T</span></div>'; }).join('') || '<span class="muted">Ingen holddata</span>';
+    var opponentHtml = Array.from(stat.opponents.entries()).sort(function (a, b) { return b[1].matches - a[1].matches; }).map(function (entry) { var opponent = (state.data.players.find(function (player) { return player.id === entry[0]; }) || {}).name || 'ukendt'; return '<div class="profile-list-row"><span>' + escapeHtml(opponent) + '</span><span>' + entry[1].matches + ' kampe · ' + entry[1].wins + 'S–' + entry[1].losses + 'T</span></div>'; }).slice(0, 5).join('') || '<span class="muted">Ingen modstanderdata</span>';
+    var seasonHtml = seasons.map(function (season) { var total = season.wins + season.losses; return '<tr><td>' + escapeHtml(seasonLabels.get(String(season.seasonId)) || String(season.seasonId)) + '</td><td>' + escapeHtml(season.team) + '</td><td>' + total + '</td><td>' + (total ? Math.round(season.wins / total * 100) + '%' : '—') + '</td></tr>'; }).join('');
+    var identityNote = stat.hasExternalId ? '' : '<span class="identity-note">Navnematch · ID ikke verificeret</span>';
+    return '<div class="player-profile"><div class="profile-head"><div><strong>' + escapeHtml(playerName) + '</strong>' + identityNote + '</div><span>' + escapeHtml(latest) + '</span></div><div class="profile-kpis"><div><strong>' + stat.matchIds.size + '</strong><span>Kampe</span></div><div><strong>' + (rate === null ? '—' : rate + '%') + '</strong><span>Winrate</span></div><div><strong>' + stat.teams.size + '</strong><span>Hold</span></div><div><strong>' + new Set(seasons.map(function (season) { return season.seasonId; })).size + '</strong><span>Sæsoner</span></div></div><div class="profile-grid"><div><h3>Kategorier spillet</h3>' + categoryHtml + '</div><div><h3>Hold spillet for</h3>' + teamHtml + '</div><div><h3>Board-tendens</h3><p class="board-trend">Ikke beregnet: den normaliserede database indeholder ikke `runAnalyse`-rækkefølgen.</p></div><div><h3>Hyppigste modstandere</h3>' + opponentHtml + '</div><div class="profile-wide"><h3>Sæson for sæson</h3><table class="profile-season-table"><thead><tr><th>Sæson</th><th>Hold</th><th>Kampe</th><th>Winrate</th></tr></thead><tbody>' + seasonHtml + '</tbody></table><p class="career-line">Klub-karriere: <strong>' + new Set(seasons.map(function (season) { return season.seasonId; })).size + ' sæsoner</strong>, <strong>' + stat.matchIds.size + ' kampe</strong> totalt for klubben.</p></div></div></div>';
+  }
+
+  function renderPlayers(result) {
+    var stats = profileStats(result);
+    var all = Array.from(stats.values());
+    var names = new Map(state.data.players.map(function (player) { return [player.id, player.name]; }));
+    var view = { search: '', minEnabled: false, min: 3, sort: 'matches', direction: -1 };
+    var pane = document.querySelector('[data-pane="spillere"]');
+    pane.innerHTML = '<div class="player-controls"><input id="player-search" placeholder="Søg spiller…"><label><input id="min-games" type="checkbox"> Min. <select id="min-games-value"><option>3</option><option>5</option><option>10</option></select> kampe</label></div><div class="table-wrap"><table class="player-table"><thead><tr><th><button class="sort-button" data-player-sort="name">Spiller</button></th><th><button class="sort-button" data-player-sort="matches">Kampe</button></th><th><button class="sort-button" data-player-sort="wins">Sejre</button></th><th><button class="sort-button" data-player-sort="rate">Winrate</button></th></tr></thead><tbody></tbody></table></div>';
+    function draw() {
+      var rows = all.filter(function (stat) { var name = names.get(stat.id) || 'ukendt'; return name.toLowerCase().indexOf(view.search.toLowerCase()) !== -1 && (!view.minEnabled || stat.matchIds.size >= view.min); });
+      rows.sort(function (a, b) { var an = names.get(a.id) || ''; var bn = names.get(b.id) || ''; var av = view.sort === 'name' ? an : view.sort === 'matches' ? a.matchIds.size : view.sort === 'wins' ? a.wins : (a.wins + a.losses ? a.wins / (a.wins + a.losses) : -1); var bv = view.sort === 'name' ? bn : view.sort === 'matches' ? b.matchIds.size : view.sort === 'wins' ? b.wins : (b.wins + b.losses ? b.wins / (b.wins + b.losses) : -1); return (typeof av === 'string' ? av.localeCompare(bv, 'da') : av - bv) * view.direction; });
+      pane.querySelector('tbody').innerHTML = rows.map(function (stat) { var name = names.get(stat.id) || 'ukendt'; var total = stat.wins + stat.losses; var pct = total ? Math.round(stat.wins / total * 100) : null; return '<tr class="player-row"><td>' + escapeHtml(name) + '</td><td>' + stat.matchIds.size + '</td><td>' + stat.wins + '</td><td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:' + (pct || 0) + '%"></div></div><span class="pct">' + (pct === null ? '—' : pct + '%') + '</span></div></td></tr><tr class="player-detail-row"><td colspan="4">' + profileHtml(stat, result) + '</td></tr>'; }).join('');
+      pane.querySelectorAll('.player-row').forEach(function (row) { row.addEventListener('click', function () { row.nextElementSibling.classList.toggle('show'); }); });
+    }
+    pane.querySelector('#player-search').addEventListener('input', function (event) { view.search = event.target.value; draw(); });
+    pane.querySelector('#min-games').addEventListener('change', function (event) { view.minEnabled = event.target.checked; draw(); });
+    pane.querySelector('#min-games-value').addEventListener('change', function (event) { view.min = Number(event.target.value); if (view.minEnabled) draw(); });
+    pane.querySelectorAll('[data-player-sort]').forEach(function (button) { button.addEventListener('click', function () { var key = button.dataset.playerSort; view.direction = view.sort === key ? -view.direction : (key === 'name' ? 1 : -1); view.sort = key; draw(); }); });
+    draw();
+  }
 
   function renderFilters() {
     $('#age-filters').innerHTML = Object.keys(AGE_GROUPS).map(function (key) {
@@ -272,6 +363,7 @@
     if (document.querySelector('[data-pane="hold"]')) renderHold(result);
     if (document.querySelector('[data-pane="modstander"]')) renderOpponents(result);
     if (document.querySelector('[data-pane="saeson"]')) renderSeasonsPane();
+    if (document.querySelector('[data-pane="spillere"]')) renderPlayers(result);
   }
 
   fetch('/api/data').then(function (response) { if (!response.ok) throw new Error('Datalaget svarede med HTTP ' + response.status); return response.json(); }).then(function (data) {

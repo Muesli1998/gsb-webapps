@@ -48,6 +48,38 @@ with sync_playwright() as playwright:
     after_rate = page.locator('[data-pane="hold"] tbody tr').all_inner_texts()
     assert after_rate != after_matches, (after_matches, after_rate)
     assert "ukendt" in page.locator('[data-pane="hold"]').inner_text().lower()
+    page.get_by_role("button", name="Spillere", exact=True).click()
+    player_rows = page.locator('[data-pane="spillere"] .player-row')
+    assert player_rows.count() >= 3
+    player_names = []
+    profiles = []
+    for index in range(3):
+        row = player_rows.nth(index)
+        player_names.append(row.locator("td").first.inner_text())
+        row.click()
+        detail = row.locator("xpath=following-sibling::tr[1]")
+        assert detail.is_visible()
+        assert "Kategorier spillet" in detail.inner_text()
+        assert "Sæson for sæson" in detail.inner_text()
+        profiles.append({
+            "name": player_names[-1],
+            "kpis": detail.locator(".profile-kpis > div").all_inner_texts(),
+            "categories": detail.locator(".profile-grid > div").nth(0).inner_text(),
+            "seasons": detail.locator(".profile-season-table tbody tr").all_inner_texts()[:3],
+            "identityNote": detail.locator(".identity-note").count() == 1,
+        })
+    assert [profile["kpis"] for profile in profiles] == [
+        ["40\nKAMPE", "55%\nWINRATE", "7\nHOLD", "2\nSÆSONER"],
+        ["40\nKAMPE", "65%\nWINRATE", "5\nHOLD", "2\nSÆSONER"],
+        ["33\nKAMPE", "58%\nWINRATE", "5\nHOLD", "2\nSÆSONER"],
+    ], profiles
+    assert all("1. D" in profile["categories"] and "1. S" in profile["categories"] for profile in profiles), profiles
+    assert [profile["identityNote"] for profile in profiles] == [True, False, True], profiles
+    requests_before_player_filter = len(api_requests)
+    page.locator("#player-search").fill(player_names[0])
+    assert page.locator('[data-pane="spillere"] .player-row').count() == 1
+    page.locator("#min-games").check()
+    assert len(api_requests) == requests_before_player_filter
     assert len(api_requests) == 1, api_requests
     print({"initial": initial, "initialKpis": initial_kpis, "initialFirstCard": initial_cards[0], "youth": youth, "youthKpis": youth_kpis, "youthFirstCard": youth_cards[0], "u9": u9, "u9Kpis": u9_kpis, "u9FirstCard": u9_cards[0], "holdBeforeSort": before_sort[:2], "holdAfterMatches": after_matches[:2], "holdAfterRate": after_rate[:2], "apiRequests": len(api_requests)})
 
@@ -75,4 +107,5 @@ with sync_playwright() as playwright:
     assert page.locator('[data-pane="saeson"] tbody tr').count() == season_count_without_dropdown
     assert len(api_requests) == 1, api_requests
     print({"seasonRows": season_count_without_dropdown, "seasonFirstRows": season_rows.all_inner_texts()[:3], "seasonDropdownIgnored": True, "apiRequestsAfterSeasons": len(api_requests)})
+    print({"initial": initial, "initialKpis": initial_kpis, "initialFirstCard": initial_cards[0], "youth": youth, "youthKpis": youth_kpis, "youthFirstCard": youth_cards[0], "u9": u9, "u9Kpis": u9_kpis, "u9FirstCard": u9_cards[0], "holdBeforeSort": before_sort[:2], "holdAfterMatches": after_matches[:2], "holdAfterRate": after_rate[:2], "players": player_names, "profiles": profiles, "apiRequests": len(api_requests)})
     browser.close()
