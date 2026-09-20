@@ -87,6 +87,30 @@ at gætte.
 
 ### Spørgsmål
 
+**Christoffers svar (2026-09-20):** Kør den dyre iteration, men gør det smartere og gem resultatet
+permanent, så vi ikke skal hente det igen:
+
+1. Da hver holdkamp involverer 2 hold og en pulje typisk ~8 hold, kan et opslag på ét kendt klub-ID
+   sandsynligvis afsløre modstander-hold/-klub-ID'er i samme pulje "gratis". Før den fulde iteration
+   sættes i gang: **bekræft med et lille antal testkald** om `badmintonPlayerTeamFights`/
+   `badmintonPlayerTeamMatch`-svarene rent faktisk indeholder modstanderens klub-/hold-ID (ikke kun
+   navn). Hvis ja: byg en graf-baseret ("smitte") traversal der starter fra alle allerede kendte
+   klub-ID'er (GSB + de 1.159 fra `club-scan-2025.csv`) og opdager nye klub-ID'er via modstandere, i
+   stedet for blindt at iterere alle mulige klub-ID'er for alle 16 sæsoner.
+2. Rapportér et konkret estimeret antal API-kald for den fulde 2010-2026-kørsel MED denne genvej,
+   sammenlignet med uden, FØR den fulde kørsel sættes i gang — skriv estimatet under et nyt
+   "Spørgsmål"-svar og vent på godkendelse, hvis det stadig er i tusinde-kald-størrelsen.
+3. Graf-traversal fra kendte klubber dækker ikke nødvendigvis alle klubber i landet (isolerede
+   kredse/klubber GSB og de kendte klubber aldrig møder). Rapportér et estimat af hvor stor
+   restdækning (klubber ikke fundet via traversal) forventes at være, og lad Christoffer beslutte om
+   restdækningen skal findes via blind iteration eller accepteres som et hul.
+4. Gem RESULTATET permanent i et NYT, separat datasæt under `statistik/` (fx
+   `statistik/data/liga-landskab.db` eller en JSON/CSV-samling under `statistik/results/`) — IKKE i
+   `statistik/data/gsb-statistik-normalized.db`, som er forbeholdt de faktiske GSB-kampdata. Formålet
+   er at kunne genindlæse hele landskabet uden nye API-kald i fremtiden.
+
+Oprindeligt spørgsmål (nu besvaret ovenfor):
+
 Trin 1 er afklaret, men trin 2 er ikke startet: Der er ikke fundet en
 brugbar, dokumenteret rute til at liste alle ligaer/turneringer pr. sæson
 uden klubfilter.
