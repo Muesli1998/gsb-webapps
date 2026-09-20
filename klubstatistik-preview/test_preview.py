@@ -64,4 +64,15 @@ with sync_playwright() as playwright:
     assert opponents_after_rate != opponents_after_matches, (opponents_after_matches, opponents_after_rate)
     assert len(api_requests) == 1, api_requests
     print({"opponentRows": opponent_rows.count(), "opponentBeforeSort": opponents_before_sort[:3], "opponentAfterMatches": opponents_after_matches[:3], "opponentAfterRate": opponents_after_rate[:3], "apiRequestsAfterOpponents": len(api_requests)})
+
+    page.get_by_role("button", name="Sæson", exact=True).click()
+    season_rows = page.locator('[data-pane="saeson"] tbody tr')
+    assert season_rows.count() > 0
+    assert page.locator('[data-pane="saeson"] .season-note').count() == 1
+    season_count_without_dropdown = season_rows.count()
+    season_value = page.locator('#season-filter option').nth(1).get_attribute('value')
+    page.locator('#season-filter').select_option(season_value)
+    assert page.locator('[data-pane="saeson"] tbody tr').count() == season_count_without_dropdown
+    assert len(api_requests) == 1, api_requests
+    print({"seasonRows": season_count_without_dropdown, "seasonFirstRows": season_rows.all_inner_texts()[:3], "seasonDropdownIgnored": True, "apiRequestsAfterSeasons": len(api_requests)})
     browser.close()

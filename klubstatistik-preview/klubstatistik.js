@@ -197,6 +197,46 @@
     });
   }
 
+  function seasonTable() {
+    var ids = ageIds();
+    var competitions = state.data.competitions.filter(function (row) {
+      return !ids || ids.indexOf(row.ageGroupId) !== -1;
+    });
+    var competitionIds = new Set(competitions.map(function (row) { return row.id; }));
+    var seasons = new Map();
+    state.data.seasons.forEach(function (season) { seasons.set(String(season.id), { id: season.id, label: season.label, matches: 0, wins: 0, losses: 0 }); });
+    var teams = new Map(state.data.teams.map(function (team) { return [String(team.id), team]; }));
+    state.data.matches.forEach(function (match) {
+      if (!competitionIds.has(match.competitionId)) return;
+      var entry = seasons.get(String(match.seasonId));
+      if (!entry) return;
+      entry.matches += 1;
+      var team = teams.get(String(match.teamId));
+      var pair = score(match.result);
+      if (!team || !pair || pair[0] === pair[1]) return;
+      var home = team.name === (match.home || '');
+      var away = team.name === (match.away || '');
+      if (!home && !away) return;
+      var won = home ? pair[0] > pair[1] : pair[1] > pair[0];
+      if (won) entry.wins += 1; else entry.losses += 1;
+    });
+    return Array.from(seasons.values()).filter(function (row) { return row.matches > 0; }).sort(function (a, b) { return a.id - b.id; }).map(function (row) {
+      var decided = row.wins + row.losses;
+      return { label: row.label, matches: row.matches, wins: row.wins, losses: row.losses, rate: decided ? Math.round(row.wins / decided * 100) : null };
+    });
+  }
+
+  function renderSeasonsPane() {
+    var rows = seasonTable();
+    var html = '<div class="table-wrap"><table class="season-table"><thead><tr><th>Sæson</th><th>Kampe</th><th>Winrate</th></tr></thead><tbody>';
+    html += rows.map(function (row) {
+      var rate = row.rate === null ? '—' : row.rate + '%';
+      return '<tr><td>' + row.label + '</td><td>' + row.matches + '</td><td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:' + (row.rate || 0) + '%"></div></div><span class="pct">' + rate + '</span></div></td></tr>';
+    }).join('') + '</tbody></table></div>';
+    html += '<p class="muted season-note">Sæson-dropdownen ovenfor påvirker ikke denne historik; alders- og underfilter gør.</p>';
+    document.querySelector('[data-pane="saeson"]').innerHTML = html;
+  }
+
   function renderFilters() {
     $('#age-filters').innerHTML = Object.keys(AGE_GROUPS).map(function (key) {
       return '<button class="agegroup-pill' + (state.age === key ? ' active' : '') + '" data-age="' + key + '">' + ageLabel(key) + '</button>';
@@ -231,6 +271,7 @@
     if (pane) pane.innerHTML = overblik(result);
     if (document.querySelector('[data-pane="hold"]')) renderHold(result);
     if (document.querySelector('[data-pane="modstander"]')) renderOpponents(result);
+    if (document.querySelector('[data-pane="saeson"]')) renderSeasonsPane();
   }
 
   fetch('/api/data').then(function (response) { if (!response.ok) throw new Error('Datalaget svarede med HTTP ' + response.status); return response.json(); }).then(function (data) {

@@ -44,4 +44,19 @@ Stop og skriv under "Spørgsmål" nedenfor.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+Implementeret i `klubstatistik-preview/` med en separat aldersfiltreret
+sæsonaggregering over hele datasættet. Sæson-dropdownen bruges ikke af denne
+aggregering; aldersgruppe og underfilter gør. Der blev ikke lavet et ekstra
+API-kald.
+
+Browserkontrol med Ungdom → U9:
+
+- Tabellen viste 15 distinkte sæsoner.
+- Første rækker var `2011/2012 — 90 kampe — 35%`, `2012/2013 — 50 — 65%`
+  og `2013/2014 — 50 — 79%`.
+- Sæson-dropdownen blev ændret til en konkret sæson; tabellen viste stadig de
+  samme 15 rækker (`seasonDropdownIgnored=True`).
+- Den samlede previewtest beholdt 1 API-kald og de eksisterende Overblik-,
+  Hold- og Modstanderhold-kontroller bestod.
+
+Resultatnoten er baseret på genåbning af den skrevne fil efter testen.
