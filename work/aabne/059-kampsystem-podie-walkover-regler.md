@@ -80,6 +80,16 @@ røre filen.
 
 ## Spørgsmål
 
+`kampsystem/resultater_2526.csv` har kolonnerne Runde, Hold, Kategori,
+Hjemme, Ude, Sæt 1–3, Vinder og point — ingen Betaling-kolonne.
+`kampsystem/resultater_2425.json` er tilsvarende rå kampdata uden
+betalingsfelter. Jeg kan derfor ikke hente de krævede faktiske forekomster
+af `Ja`, `Betalt`, blank, `Gratis` og `Nej` fra de to angivne kilder uden at
+opfinde eksempler eller bruge en anden datakilde. Hvor ligger den faktiske
+Tilmeldinger-eksport med betalingskolonnen, eller skal kortet ændres til at
+teste de dokumenterede regelværdier i `docs/planlagte-features-spec.md`
+i stedet?
+
 ## Resultatnote
 
 *(udfyldes når opgaven er løst)*
