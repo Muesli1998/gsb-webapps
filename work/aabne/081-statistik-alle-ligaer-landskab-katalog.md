@@ -1,0 +1,94 @@
+# Opgave 081 — katalog over ALLE ligaer/turneringer i Nembadminton, 2010-2026 (ikke kun GSB)
+
+**Trin:** Udvidelse af opgave 077 (liga-katalog), på Christoffers eksplicitte ønske efter at have set
+077's resultat — se `statistik/results/077-liga-regelsaet-katalog.md`.
+
+**Gren:** `arbejde/081-statistik-alle-ligaer-landskab-katalog`, jf. `AGENTS.md`.
+
+**Baggrund:** Opgave 077 kortlagde kun de ligaer GSB selv har spillet i, fordi discovery-kæden i
+`statistik/CODEX_EXTRACTION_SKILL.md` §1 er bygget klub-scoped (`clubId=1093`,
+`badmintonPlayerTeams` → `badmintonPlayerTeamFights` → `badmintonPlayerTeamMatch`). Christoffer vil
+nu have et bredere billede: alle ligaer/turneringer for alle sæsoner 2010-2026, uanset om GSB har
+spillet i dem, for at kunne se landskabet af kreds-ligaer (distrikts-niveau) og nationale ligaer og
+dermed bedre vurdere hvor GSB's egne hold ligger niveaumæssigt.
+
+**Vigtigt:** dette er sandsynligvis IKKE bare "kør 077's metode uden klub-filter" — discovery-kæden er
+bygget til at starte fra en klubs spillere/hold, ikke til at liste alle competitions i systemet.
+Der findes muligvis allerede relevante undersøgelser af dette i `statistik/results/`:
+`club-scan-2025.csv`, `club-scan-2025-summary.json`, `tournament-query-surface.json`,
+`tournament-options-2025.json`, `tournament-clientcalls.txt`. Læs disse FØRST — de kan enten løse
+problemet direkte eller vise hvorfor det ikke er ligetil.
+
+## Mål
+
+Todelt: først afklaring, så udtræk. Byg IKKE i stor skala før trin 1 er afklaret.
+
+1. **Afklar ruten.** Undersøg om der findes en dokumenteret eller findbar GraphQL-forespørgsel (eller
+   anden endpoint) i Nembadminton-API'et der lister alle competitions/turneringer for en given sæson
+   uden at kræve et `clubId`-filter — evt. et kreds-/distrikts-niveau og et nationalt niveau hver for
+   sig. Genbrug det der allerede er fundet i de nævnte `statistik/results/`-filer og i
+   `CODEX_EXTRACTION_SKILL.md` før noget nyt probes. Hvis ingen sådan rute findes, og eneste
+   mulighed er at iterere gennem alle kendte klub-ID'er (dyrt, langsomt, mange API-kald): STOP og
+   rapportér under "Spørgsmål" i stedet for at sætte det i gang — det er en beslutning Christoffer
+   skal tage, ikke noget der skal gættes sig frem til.
+2. **Byg kataloget — kun hvis trin 1 finder en brugbar rute.** Samme struktur som 077's katalog, men
+   uden GSB-filter: alle ligaer/turneringer pr. sæson 2010-2026, med navn (rå tekst), aldersgruppe
+   hvis den kan udledes, kreds/distrikt hvis det kan udledes af kilden, og niveau-indikation KUN hvor
+   det direkte kan læses af kildeteksten (samme regel som 077 — "niveau uafklaret ud fra kildetekst
+   alene" er en gyldig værdi, gæt aldrig en rangordning). Marker eksplicit hvilke af disse ligaer GSB
+   selv har hold i (krydsreference til 077's katalog), så det ene dokument kan bruges til at se GSB's
+   hold i kontekst af det fulde landskab.
+3. Noter at "KS" i rå liga-tekster betyder "Københavnsserien" (bekræftet af Christoffer) — dette er en
+   navneforklaring, ikke en niveau-afgørelse; brug det til at gøre kataloget mere læsbart hvor
+   forkortelsen forekommer, men det ændrer ikke om noget er "uafklaret" niveaumæssigt.
+
+## Kontekst
+
+Se `statistik/CODEX_EXTRACTION_SKILL.md` (særligt §1 og §9), `work/loeste/077-statistik-liga-regelsaet-katalog.md`
+og dens resultatnote, og de eksisterende probe-filer nævnt ovenfor. GSB's `clubId` er 1093, men denne
+opgave handler netop om at komme UDENFOR det scope.
+
+## Afgrænsning
+
+**Må røres:** nyt katalogdokument (`statistik/results/081-alle-ligaer-landskab-katalog.md` + evt.
+`.json`), nye scripts under `statistik/` hvis nødvendige for probes/udtræk, `statistik/TEST_RUN_LOG.md`.
+
+**Må ikke røres:** `statistik/data/gsb-statistik-normalized.db` (kun læses, ALDRIG skrives til),
+`apps/netlify-prod/`, `kampsystem/`, `klubstatistik-preview/`, `docs/historik/`.
+
+## Kontrol
+
+**Målet:**
+```
+Trin 1's konklusion er eksplicit dokumenteret: enten "fundet rute: <beskrivelse + evidens>" eller
+  "ingen brugbar rute fundet uden dyr iteration — se Spørgsmål".
+Hvis trin 2 udføres: kataloget dækker eksplicit angivne sæsoner/kredse — list dækning og huller.
+Hver liga-entry har kilde (URL/tidspunkt) og ingen har fået et gættet niveau.
+Antal ligaer der er fundet men IKKE er i 077's GSB-katalog er talt op og rapporteret — det er selve
+  pointen med opgaven (at se det bredere landskab).
+```
+
+**Værnet:**
+```
+sha256sum statistik/data/gsb-statistik-normalized.db (før og efter)   skal være uændret
+git status --short statistik/data/ apps/netlify-prod/ kampsystem/ klubstatistik-preview/   tom
+```
+
+**Skøn:** ingen på niveau-vurderinger. Skøn er tilladt på HVORDAN ruten i trin 1 findes (hvilke
+probes der afprøves), men ikke på OM den findes — det skal være dokumenteret, ikke antaget.
+
+## Ved tvivl
+
+Kræver en fungerende rute at iterere gennem et stort antal ukendte klub-ID'er eller på anden måde
+sende et stort antal API-kald (fx flere hundrede+): stop og rapportér omfanget under "Spørgsmål" —
+lad Christoffer beslutte om det er værd at køre, i stedet for selv at vurdere det. Er det uklart om
+en liga hører til en kreds/distrikt eller er national: marker "kreds/national uafklaret" i stedet for
+at gætte.
+
+### Spørgsmål
+
+(Udfyldes af den der løser opgaven. Christoffer svarer her i filen.)
+
+## Resultatnote
+
+*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
