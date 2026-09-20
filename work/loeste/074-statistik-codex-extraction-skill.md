@@ -184,6 +184,18 @@ stopper arbejdet før commit, indtil fejlen er afklaret.
 
 ## Spørgsmål
 
+2026-09-20: Den forventede `statistik/data/gsb-statistik-normalized.db` findes ikke på denne maskine (`Test-Path` gav `False`), så den faktiske tabelstruktur og referenceposter kan ikke kontrolleres mod slutdatasættet. Hvor kan den faktiske normaliserede SQLite-database læses read-only til punkt 9–10? Hvis den ikke er tilgængelig, skal du afgøre om referencevalideringen skal udskydes; skemafilen alene er ikke et verificeret slutdatasæt.
+
+2026-09-20 opfølgning: Chris angav den uversionerede database under Dropbox, og den kunne læses read-only uden kopi, symlink eller `config.local.json`. Den har 736 `standings`-rækker, mens `statistik/TEST_RUN_LOG.md` dokumenterer 751 efter opgave 050 den 17. september; Dropbox-filens ændringstid er 13. september. Er dette en ældre kopi, og hvor findes i så fald den opdaterede normaliserede database? Referencevalidering mod "det endelige datasæt" er sat på pause, indtil dette er afklaret.
+
+2026-09-20 afklaring: Chris oplyste, at Dropbox-filen nu har 751 `standings`-rækker. En ny read-only kontrol af samme fil viste 751 rækker og ændringstid 20. september; ovenstående versionsspørgsmål er dermed afklaret. Filen blev ikke kopieret eller ændret.
+
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+2026-09-20: Skrev installerbar repo-skill og kanonisk udtræksprocedure. Metode: gennemlæste de henviste kilder og scriptkode, verificerede scriptstier, sammenholdt skemafil med den faktiske Dropbox-database read-only og lod en uafhængig sub-agent afprøve to isolerede beslutningsscenarier. Ingen live browserkørsel, genereret rapport, prøveimport eller skrivning til databasen.
+
+Rå kontroller: Proceduren har 10 nummererede `##`-afsnit svarende til de 10 målpunkter. 18 unikke `.mjs`-scriptnavne blev kontrolleret med `Test-Path`: 18 fandtes, 0 manglede/var omdøbt; alle 7 navne fra den ældre statusliste findes. Den aktuelle reference-DB havde 11 brugertabeller; kolonnenavne stemte med skemafilen i alle 11, mens `team_matches` havde ændret fysisk kolonnerækkefølge. Read-only tællinger: 2.818 `team_matches`, 20.319 `individual_matches`, 67.196 `individual_match_players`, 7.599 `players`, 751 `standings`; 0 foreign-key-fejl og 0 dublerede eksterne kamp-ID'er. Kendte U09-, corona- og protest-ID'er blev kontrolleret uden ændring.
+
+Testresultater: `quick_validate.py` → `Skill is valid!`; `git diff --check` → 0 fejl; værnekommandoens `git status --short` for data, scripts, resultater, prod og plan → tom. Uafhængig, skrivefri scenarietest → 2/2 bestået: inkrementel sæsonprofil/genoptagelse, afvist standardshell/forkert ID og W.O.-overskrift, samt ny sæsons kilde-/regelkontrol og stop før ikke-autoriseret import. En uklarhed om retry-evidens blev præciseret efter testen.
+
+Begrænsning: Dette beviser skillens dokumenterede beslutningsregler og referenceformat, ikke en fungerende automatiseret browserrute eller ende-til-ende-import. De historiske scripts har kendte genoptagelses-/importbegrænsninger; en separat autoriseret pilot med isoleret testdatabase kræves før reel massebrug. Ingen åbne spørgsmål efter den opdaterede 751-rækkers referencekontrol.

@@ -556,3 +556,5 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
 
 - 2026-09-17 — Opgave 053 efterkontrol: 052 P-fasealias gav 126 rest tokens, 0 P\d+; 043 generatorens kendte-hul tekst korrigeret til 5 uforklarede. Identitetstal fastholdt 180→176, unknown 103→92.
 
+- 2026-09-20 — Opgave 074: Codex-skill til kildeudtræk, normaliseret SQLite-overdragelse og referencevalidering skrevet, så kendte browser-/importbegrænsninger og sæsonprofil styres samlet. Ingen live udtræk eller DB-import i denne dokumentationsopgave.
+
