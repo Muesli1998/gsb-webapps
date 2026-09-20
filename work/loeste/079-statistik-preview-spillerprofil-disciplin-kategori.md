@@ -65,4 +65,28 @@ Stop og skriv under "Spørgsmål" nedenfor.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+Implementeret i `klubstatistik-preview/klubstatistik.js` med disciplin som
+aggregeringsnøgle og fælles navngivning (`Fri single`/`Fri double`). Profilen
+viser kun discipliner med kampe og viser sejre-tab pr. disciplin. Den nye
+record-styling ligger i `styles.css`; browserkontrollen er udvidet i
+`test_preview.py`.
+
+Kontrol mod direkte SQL for U9-filteret (`age_group_id=2`) gav:
+
+- Norr Bagge Køhler (`player_id=5425`): Fri double 18 kampe = 7S–11T;
+  Fri single 22 kampe = 15S–7T. Preview: 2 disciplinrækker.
+- Akhila Sureddy (`player_id=67`): Fri double 19 kampe = 12S–7T;
+  DD 1 kamp = 0S–1T; Fri single 20 kampe = 14S–6T. Preview: 3
+  disciplinrækker.
+- Tobias Geil Christophersen (`player_id=5419`): Fri double 14 kampe =
+  9S–5T; Fri single 19 kampe = 10S–9T. Preview: 2 disciplinrækker.
+
+Alle viste rækker har dermed >0 kampe, og sejre+tab matcher SQL-tallene.
+Værnet bestod: Kategori-fanen havde 7 rækker med kamptal
+`[2222, 1331, 5627, 2231, 3387, 3410, 2105]`; Klub-karriere-assertions
+bestod. Den samlede regression gav hjemme/ude `1442/1375`, 40
+modstander-rækker, 15 sæsonrækker og 1 API-request.
+
+Kørt og bestået: `python -m py_compile server.py`, `node --check
+klubstatistik.js` og `python test_preview.py` (exit code 0). Databasen var
+read-only; ingen andre apps eller data blev ændret.

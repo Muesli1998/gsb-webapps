@@ -112,7 +112,15 @@ with sync_playwright() as playwright:
         ["40\nKAMPE", "65%\nWINRATE", "5\nHOLD", "2\nSÆSONER"],
         ["33\nKAMPE", "58%\nWINRATE", "5\nHOLD", "2\nSÆSONER"],
     ], profiles
-    assert all("1. D" in profile["categories"] and "1. S" in profile["categories"] for profile in profiles), profiles
+    expected_profile_categories = [
+        (2, ["7S–11T", "15S–7T"]),
+        (3, ["12S–7T", "0S–1T", "14S–6T"]),
+        (2, ["9S–5T", "10S–9T"]),
+    ]
+    for profile, (row_count, records) in zip(profiles, expected_profile_categories):
+        assert sum(1 for record in records if record in profile["categories"]) == row_count, profile
+        assert "1. " not in profile["categories"], profile
+        assert "Fri double" in profile["categories"] and "Fri single" in profile["categories"], profile
     assert [profile["identityNote"] for profile in profiles] == [True, False, True], profiles
     requests_before_player_filter = len(api_requests)
     page.locator("#player-search").fill(player_names[0])

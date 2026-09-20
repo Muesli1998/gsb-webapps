@@ -6,6 +6,7 @@
     ['hjemmeude', 'Hjemme/Ude'], ['modstander', 'Modstanderhold'], ['saeson', 'Sæson'], ['karriere', '🏅 Klub-karriere']
   ];
   var AGE_GROUPS = { all: null, youth: [2, 3, 4, 5, 6, 18], senior: [1], veteran: [9, 11, 12, 13, 17] };
+  var DISCIPLINE_LABELS = { HS: 'HS', DS: 'DS', HD: 'HD', DD: 'DD', MD: 'MD', S: 'Fri single', D: 'Fri double' };
   var EXCLUDED_PLAYER_IDS = new Set([176]);
   var state = { data: null, age: 'all', subAge: null, season: 'all', tab: 'overblik', holdSort: { key: 'name', direction: 1 }, opponentSort: { key: 'name', direction: 1 } };
   var $ = function (selector) { return document.querySelector(selector); };
@@ -341,7 +342,7 @@
       var match = matchById.get(im.teamMatchId);
       var player = get(link.playerId);
       player.matchIds.add(im.id);
-      var category = im.category || 'ukendt';
+      var category = im.discipline || 'ukendt';
       if (!player.categories.has(category)) player.categories.set(category, { wins: 0, losses: 0, matches: 0 });
       var cat = player.categories.get(category);
       cat.matches += 1;
@@ -377,7 +378,7 @@
     var latest = seasons[0] ? seasons[0].team : 'ukendt';
     var decided = stat.wins + stat.losses;
     var rate = decided ? Math.round(stat.wins / decided * 100) : null;
-    var categoryHtml = Array.from(stat.categories.entries()).sort().map(function (entry) { var value = entry[1]; var pct = value.wins + value.losses ? Math.round(value.wins / (value.wins + value.losses) * 100) : 0; return '<div class="profile-line"><span>' + escapeHtml(entry[0]) + '</span><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:' + pct + '%"></div></div><span class="pct">' + (value.wins + value.losses ? pct + '%' : '—') + '</span></div></div>'; }).join('');
+    var categoryHtml = Array.from(stat.categories.entries()).sort().map(function (entry) { var value = entry[1]; var pct = value.wins + value.losses ? Math.round(value.wins / (value.wins + value.losses) * 100) : 0; var label = DISCIPLINE_LABELS[entry[0]] || entry[0]; return '<div class="profile-line"><span>' + escapeHtml(label) + '</span><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:' + pct + '%"></div></div><span class="pct">' + (value.wins + value.losses ? pct + '%' : '—') + '</span><span class="profile-record">' + value.wins + 'S–' + value.losses + 'T</span></div></div>'; }).join('');
     var teamHtml = Array.from(stat.teams.values()).map(function (team) { return '<div class="profile-list-row"><span>' + escapeHtml(team.name) + '</span><span>' + team.wins + 'S–' + team.losses + 'T</span></div>'; }).join('') || '<span class="muted">Ingen holddata</span>';
     var opponentHtml = Array.from(stat.opponents.entries()).sort(function (a, b) { return b[1].matches - a[1].matches; }).map(function (entry) { var opponent = (state.data.players.find(function (player) { return player.id === entry[0]; }) || {}).name || 'ukendt'; return '<div class="profile-list-row"><span>' + escapeHtml(opponent) + '</span><span>' + entry[1].matches + ' kampe · ' + entry[1].wins + 'S–' + entry[1].losses + 'T</span></div>'; }).slice(0, 5).join('') || '<span class="muted">Ingen modstanderdata</span>';
     var seasonHtml = seasons.map(function (season) { var total = season.wins + season.losses; return '<tr><td>' + escapeHtml(seasonLabels.get(String(season.seasonId)) || String(season.seasonId)) + '</td><td>' + escapeHtml(season.team) + '</td><td>' + total + '</td><td>' + (total ? Math.round(season.wins / total * 100) + '%' : '—') + '</td></tr>'; }).join('');
