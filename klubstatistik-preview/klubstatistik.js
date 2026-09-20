@@ -48,6 +48,12 @@
     return match ? [Number(match[1]), Number(match[2])] : null;
   }
 
+  function isGsbTeamName(teamName, sourceName) {
+    var team = String(teamName || '').trim();
+    var source = String(sourceName || '').trim();
+    return Boolean(team && source) && (team === source || source === 'BC37/' + team);
+  }
+
   function overblik(result) {
     var teams = new Map();
     result.teams.forEach(function (team) {
@@ -61,8 +67,8 @@
       if (!pair) return;
       entry.matches += 1;
       var teamName = entry.team.name || '';
-      var home = teamName === (match.home || '');
-      var away = teamName === (match.away || '');
+      var home = isGsbTeamName(teamName, match.home);
+      var away = isGsbTeamName(teamName, match.away);
       if (!home && !away) return;
       var won = home ? pair[0] > pair[1] : pair[1] > pair[0];
       if (pair[0] === pair[1]) return;
@@ -96,8 +102,8 @@
       var entry = entries.get(String(match.teamId));
       var pair = score(match.result);
       if (!entry || !pair || pair[0] === pair[1]) return;
-      var home = entry.team.name === (match.home || '');
-      var away = entry.team.name === (match.away || '');
+      var home = isGsbTeamName(entry.team.name, match.home);
+      var away = isGsbTeamName(entry.team.name, match.away);
       if (!home && !away) return;
       entry.matches += 1;
       var won = home ? pair[0] > pair[1] : pair[1] > pair[0];
@@ -151,8 +157,8 @@
     result.matches.forEach(function (match) {
       var team = result.teams.find(function (row) { return String(row.id) === String(match.teamId); });
       if (!team) return;
-      var home = team.name === (match.home || '');
-      var away = team.name === (match.away || '');
+      var home = isGsbTeamName(team.name, match.home);
+      var away = isGsbTeamName(team.name, match.away);
       if (home === away) return;
       var opponent = home ? match.away : match.home;
       if (!opponent) return;
@@ -214,8 +220,8 @@
       var team = teams.get(String(match.teamId));
       var pair = score(match.result);
       if (!team || !pair || pair[0] === pair[1]) return;
-      var home = team.name === (match.home || '');
-      var away = team.name === (match.away || '');
+      var home = isGsbTeamName(team.name, match.home);
+      var away = isGsbTeamName(team.name, match.away);
       if (!home && !away) return;
       var won = home ? pair[0] > pair[1] : pair[1] > pair[0];
       if (won) entry.wins += 1; else entry.losses += 1;

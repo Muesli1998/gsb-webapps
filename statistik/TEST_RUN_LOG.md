@@ -560,3 +560,16 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
 
 - 2026-09-20 — Opgave 075 pilot: 5/5 friske Playwright-kald returnerede 875-tegn standardskal; render-gate 0/5. Pilotten stoppede efter kortets stopregel; ingen fixture-import eller databaseændring.
 
+- 2026-09-20 — Opgave 076: `isGsbTeamName` genkender både det normale holdnavn og
+  `BC37/`-varianten i `klubstatistik-preview/klubstatistik.js`; reglen bruges af
+  overblik, hold, modstanderhold og sæson. De seks Gruppe A-rækker gik fra 0/6
+  entydige match til 6/6 (388606 ude, 388609 hjemme, 402365 hjemme, 402367 hjemme,
+  388870 ude, 388873 hjemme). Read-only undersøgelse af 7 placeringspuljer med 14
+  kampe fandt 1 ikke-GSB-række: team_match_id 428.
+- Opgave 076 databasekontrol: SHA-256 før skrivning
+  `49bc62ac3aa8b5a003a4b4d1a8112a8f986d12c8667b22342027d42a1d01b41e`;
+  team_match_id 1489 blev `Gladsaxe Søborg 2` hjemme mod `Hvidovre HB2000 1`,
+  og 1490 blev `Lyngby 2` hjemme mod `Gladsaxe Søborg 2`. 428 blev fjernet med
+  6 tilhørende `individual_matches` og 16 `individual_match_players` efter FK-kontrol.
+  Backup: Dropbox `statistik/results/076-team-matches-before.sql`.
+

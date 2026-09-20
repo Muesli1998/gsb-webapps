@@ -115,4 +115,32 @@ opgavens karakter.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+- **Gren:** `arbejde/076-statistik-hjemme-ude-datarettelser`.
+- **Gruppe A:** Implementeret i `klubstatistik-preview/klubstatistik.js` som
+  `isGsbTeamName(teamName, sourceName)`, der accepterer normalt navn og præcis
+  `BC37/`-variant. Reglen bruges i `overblik`, `holdTable`, `opponentTable` og
+  `seasonTable`. Før ændringen klassificerede den gamle eksakte regel 0/6
+  entydigt; efter ændringen klassificeres alle 6/6: 388606 ude, 388609 hjemme,
+  402365 hjemme, 402367 hjemme, 388870 ude, 388873 hjemme.
+- **Gruppe B:** Gemte fallbackfiler gav de præcise navne `Hvidovre HB2000 1`
+  (387862) og `Lyngby 2` (387864). Kun `home_name_raw`/`away_name_raw` blev
+  ændret for team_match_id 1489 og 1490. Resultat: 1489 = `Gladsaxe Søborg 2`
+  hjemme mod `Hvidovre HB2000 1`; 1490 = `Lyngby 2` hjemme mod `Gladsaxe Søborg 2`.
+- **Gruppe C:** 7 placeringspuljer med i alt 14 `team_matches` blev undersøgt.
+  Kun 1 række var uden GSB på begge sider: team_match_id 428 / external
+  484777. De øvrige 13 rækker var ikke yderligere ramte. Før sletning fandtes
+  6 `individual_matches` og 16 `individual_match_players` som FK-afhængige
+  rækker; de blev slettet sammen med 428.
+- **Backup og SHA-256:** Før skrivning var SHA-256
+  `49bc62ac3aa8b5a003a4b4d1a8112a8f986d12c8667b22342027d42a1d01b41e`.
+  SQL-backupen ligger som `D:\Dropbox\Projects\GSB-Webapps\statistik\results\076-team-matches-before.sql`.
+  Databasen lå allerede på den kanoniske Dropbox-sti og blev ændret dér, så den
+  opdaterede kopi stod i Dropbox efter skrivningen.
+- **Ændrede/fjernede team_match_id'er:** 1489 ændret, 1490 ændret, 428 fjernet;
+  ingen andre team_match_id'er ændret. `team_matches` gik fra 2.818 til 2.817.
+- **Kontrol:** `home_name_raw` og `away_name_raw` er udfyldt for både 1489 og
+  1490; `COUNT(*) WHERE external_match_id='484777'` er 0; faktisk antal
+  `team_matches` bagefter er 2.817.
+- **Test:** `node --check klubstatistik-preview/klubstatistik.js` bestod.
+  En Node-harness mod den faktiske helper gav de seks ovenstående hjemme/ude-
+  resultater og afviste `BC37/Gladsaxe Søborg 2` som falsk match til hold 1.
