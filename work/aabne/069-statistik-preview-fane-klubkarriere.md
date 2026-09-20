@@ -52,7 +52,12 @@ Klub-karriere-fanen bevidst uafhængig af hele filterbaren, kun sæson-uafhængi
 
 ### Spørgsmål
 
-(Udfyldes af den der løser opgaven. Christoffer svarer her i filen.)
+Skal Klub-karriere-fanen være en klubomfattende langtidsopgørelse uafhængigt
+af hele filterbaren, eller skal den respektere det valgte alders-/underfilter
+(fx vise ungdomsspillere når Ungdom/U9 er valgt)? Sæson-dropdownen er ifølge
+Målet uafhængig, men kortet fastlægger ikke tilsvarende entydigt aldersfilterets
+omfang. Jeg bygger ikke fanen, før dette er besluttet, fordi det ændrer både
+ranglisten og kontroltallene.
 
 ## Resultatnote
 
