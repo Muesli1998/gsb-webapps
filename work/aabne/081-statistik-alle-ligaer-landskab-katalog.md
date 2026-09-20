@@ -87,8 +87,60 @@ at gætte.
 
 ### Spørgsmål
 
-(Udfyldes af den der løser opgaven. Christoffer svarer her i filen.)
+Trin 1 er afklaret, men trin 2 er ikke startet: Der er ikke fundet en
+brugbar, dokumenteret rute til at liste alle ligaer/turneringer pr. sæson
+uden klubfilter.
+
+Nembadminton GraphQLs eksisterende evidens viser kun `tournamentGroups` og
+`tournamentTiers` som turneringsrelaterede felter. `tournamentGroups`-svaret
+for 2025 er tomt; `tournamentTiers` returnerer 17 generelle tier-navne.
+
+BadmintonPlayer-sporet er også gennemgået i den eksisterende evidens:
+`GetTournamentEvents` er verificeret for den allerede kendte
+`tournamentclassid=115342` og returnerer fem events; `SearchTournamentMatches`
+er verificeret for den allerede kendte event `490920`. De er derfor opslag
+fra et kendt turnerings-ID, ikke en sæsonliste. WebService-proxyen nævner
+`SearchTournamentClass`, men der ligger ingen gemt, succesfuld kørsel,
+parameterbeskrivelse eller sæson-enumeration for det kald, så det kan ikke
+bruges som bevist rute uden at gætte.
+
+Den eneste dokumenterede fallback er at iterere klubscoped
+`badmintonPlayerTeams`. Den eksisterende 2025-scanning indeholder 1.159
+klub-ID'er og 4.838 holdrækker (1.157 succesfulde klubkald og 2 fejl). En
+fuld 2010–2026-scanning vil derfor kræve mindst mange hundrede og i praksis
+flere tusinde API-kald, før overlap og sæsoner er dækket. Det er netop den
+dyre iteration, som kortet siger skal godkendes særskilt.
+
+**Beslutning kræves:** Skal jeg sætte den dyre klub-ID-/sæson-iteration i
+gang, eller skal opgave 081 afsluttes som "ingen brugbar rute uden dyr
+iteration"?
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+**Trin 1 — afklaring (færdig; trin 2 ikke startet):** Ingen brugbar,
+dokumenteret klub-uafhængig sæsonliste blev fundet i den eksisterende
+evidens. Konklusionen gælder både Nembadminton GraphQL og BadmintonPlayer.
+
+- Nembadminton: `tournament-query-surface.json` viser kun
+  `tournamentGroups(seasonId, phaseType, order)` og
+  `tournamentTiers(order)` som relevante generelle felter.
+  `tournament-options-2025.json` har `tournamentGroups: []` og 17
+  `tournamentTiers`; tier-listen indeholder bl.a. `Københavnsserien`.
+- BadmintonPlayer: `GetTournamentEvents` er succesfuldt dokumenteret for
+  kendt `tournamentclassid=115342` med events `490920`–`490924`.
+  `SearchTournamentMatches` er succesfuldt dokumenteret for kendt event
+  `490920`. Ingen af de gemte kald enumererer turneringsklasser pr. sæson.
+  `SearchTournamentClass` forekommer i den hentede WebService-proxy, men
+  uden gemt succesfuldt kald eller verificeret input/uddata for en sådan
+  enumeration.
+- Dyr fallback: `club-scan-2025.csv` har 1.159 klub-ID'er, 1.157 succeser,
+  2 fejl og 4.838 teamrækker. Det er kun sæson 2025; fuld historisk dækning
+  ville kræve yderligere klub-/sæsoniteration.
+
+Der er derfor ikke bygget katalog eller kørt nye API-kald. Trin 2 afventer
+Christoffers beslutning i afsnittet **Spørgsmål**.
+
+Read-only databasekontrol: SHA-256 før og efter var identisk,
+`E6C5046A4B93A8518254BADF5D8F4529FB0B918AE4A31AF63919B5F70D620062`.
+Beskyttede mapper `statistik/data/`, `apps/netlify-prod/`, `kampsystem/` og
+`klubstatistik-preview/` havde ingen git-ændringer.
