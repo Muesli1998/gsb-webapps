@@ -243,6 +243,37 @@
     document.querySelector('[data-pane="saeson"]').innerHTML = html;
   }
 
+  function homeAwayTable(result) {
+    var rows = { home: { label: 'Hjemme', matches: 0, wins: 0, losses: 0 }, away: { label: 'Ude', matches: 0, wins: 0, losses: 0 } };
+    var teams = new Map(result.teams.map(function (team) { return [String(team.id), team]; }));
+    var unclassified = [];
+    result.matches.forEach(function (match) {
+      var team = teams.get(String(match.teamId));
+      if (!team) return;
+      var home = isGsbTeamName(team.name, match.home);
+      var away = isGsbTeamName(team.name, match.away);
+      if (home === away) { unclassified.push(match.id); return; }
+      var row = rows[home ? 'home' : 'away'];
+      row.matches += 1;
+      var pair = score(match.result);
+      if (!pair || pair[0] === pair[1]) return;
+      if ((home && pair[0] > pair[1]) || (away && pair[1] > pair[0])) row.wins += 1;
+      else row.losses += 1;
+    });
+    return { rows: [rows.home, rows.away], unclassified: unclassified };
+  }
+
+  function renderHomeAway(result) {
+    var stats = homeAwayTable(result);
+    var html = '<div class="team-cards home-away-cards">' + stats.rows.map(function (row) {
+      var decided = row.wins + row.losses;
+      var rate = decided ? Math.round(row.wins / decided * 100) : null;
+      return '<div class="team-card home-away-card" data-home-away="' + row.label.toLowerCase() + '" data-match-count="' + row.matches + '"><div class="hold">' + row.label + '</div><div class="pct-big">' + (rate === null ? '—' : rate + '%') + '</div><div class="record">' + row.wins + 'S–' + row.losses + 'T · ' + row.matches + ' kampe</div></div>';
+    }).join('') + '</div>';
+    if (stats.unclassified.length) html += '<p class="muted home-away-note">' + stats.unclassified.length + ' kamp(e) uden entydig hjemme/ude-side er udeladt: ' + stats.unclassified.join(', ') + '.</p>';
+    document.querySelector('[data-pane="hjemmeude"]').innerHTML = html;
+  }
+
   function categoryTable(result) {
     var labels = { HS: 'Herresingle', DS: 'Damesingle', HD: 'Herredouble', DD: 'Damedouble', MD: 'Mixeddouble', S: 'Fri single', D: 'Fri double' };
     var categories = Object.keys(labels).map(function (key) { return { key: key, name: labels[key], matches: 0, wins: 0, losses: 0 }; });
@@ -425,6 +456,7 @@
     var pane = document.querySelector('[data-pane="overblik"]');
     if (pane) pane.innerHTML = overblik(result);
     if (document.querySelector('[data-pane="hold"]')) renderHold(result);
+    if (document.querySelector('[data-pane="hjemmeude"]')) renderHomeAway(result);
     if (document.querySelector('[data-pane="kategori"]')) renderCategory(result);
     if (document.querySelector('[data-pane="modstander"]')) renderOpponents(result);
     if (document.querySelector('[data-pane="saeson"]')) renderSeasonsPane();

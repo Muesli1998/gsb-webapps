@@ -48,6 +48,8 @@ select { padding:7px 10px; border:1px solid var(--border); border-radius:6px; fo
 .career-table { width:100%; border-collapse:collapse; font-size:.85rem; }
 .career-table th,.career-table td { padding:8px 10px; border-bottom:1px solid var(--border); text-align:left; }
 .career-table th { background:#f2f1eb; color:var(--muted); font-size:.72rem; text-transform:uppercase; }
+.home-away-cards { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.home-away-note { margin-top:12px; color:var(--muted); font-size:.82rem; }
 .season-note { margin-top:12px; color:var(--muted); font-size:.82rem; }
 .sort-button { border:0; background:none; color:inherit; cursor:pointer; font:inherit; font-weight:700; padding:0; text-align:left; }
 .bar-cell { display:flex; align-items:center; gap:8px; min-width:140px; }

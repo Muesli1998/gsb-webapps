@@ -18,6 +18,12 @@ with sync_playwright() as playwright:
     assert len(initial_kpis) == 4, initial_kpis
     initial_cards = page.locator("[data-pane='overblik'] .team-card").all_inner_texts()
     assert initial_cards, "Ingen holdkort i Alle-udsnit"
+    page.get_by_role("button", name="Hjemme/Ude", exact=True).click()
+    home_away_cards = page.locator('[data-pane="hjemmeude"] .home-away-card')
+    assert home_away_cards.count() == 2
+    home_away_counts = home_away_cards.evaluate_all("cards => cards.map(card => Number(card.dataset.matchCount))")
+    assert sum(home_away_counts) == 2817, home_away_counts
+    assert page.locator('[data-pane="hjemmeude"] .home-away-note').count() == 0
     page.get_by_role("button", name="Kategori", exact=True).click()
     category_rows = page.locator('[data-pane="kategori"] tbody tr')
     assert category_rows.count() == 7
@@ -126,5 +132,5 @@ with sync_playwright() as playwright:
     page.locator('#season-filter').select_option(season_value)
     assert page.locator('[data-pane="saeson"] tbody tr').count() == season_count_without_dropdown
     assert len(api_requests) == 1, api_requests
-    print({"initial": initial, "initialKpis": initial_kpis, "initialFirstCard": initial_cards[0], "youth": youth, "youthKpis": youth_kpis, "youthFirstCard": youth_cards[0], "u9": u9, "u9Kpis": u9_kpis, "u9FirstCard": u9_cards[0], "holdBeforeSort": before_sort[:2], "holdAfterMatches": after_matches[:2], "holdAfterRate": after_rate[:2], "players": player_names, "profiles": profiles, "opponentRows": opponent_row_count, "opponentBeforeSort": opponents_before_sort[:3], "opponentAfterMatches": opponents_after_matches[:3], "opponentAfterRate": opponents_after_rate[:3], "categoryRows": category_rows.count(), "categoryCounts": category_counts, "seasonRows": season_count_without_dropdown, "seasonFirstRows": season_rows.all_inner_texts()[:3], "seasonDropdownIgnored": True, "apiRequests": len(api_requests)})
+    print({"initial": initial, "initialKpis": initial_kpis, "initialFirstCard": initial_cards[0], "youth": youth, "youthKpis": youth_kpis, "youthFirstCard": youth_cards[0], "u9": u9, "u9Kpis": u9_kpis, "u9FirstCard": u9_cards[0], "homeAwayCounts": home_away_counts, "holdBeforeSort": before_sort[:2], "holdAfterMatches": after_matches[:2], "holdAfterRate": after_rate[:2], "players": player_names, "profiles": profiles, "opponentRows": opponent_row_count, "opponentBeforeSort": opponents_before_sort[:3], "opponentAfterMatches": opponents_after_matches[:3], "opponentAfterRate": opponents_after_rate[:3], "categoryRows": category_rows.count(), "categoryCounts": category_counts, "seasonRows": season_count_without_dropdown, "seasonFirstRows": season_rows.all_inner_texts()[:3], "seasonDropdownIgnored": True, "apiRequests": len(api_requests)})
     browser.close()

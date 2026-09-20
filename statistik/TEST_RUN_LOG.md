@@ -573,3 +573,13 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
   6 tilhørende `individual_matches` og 16 `individual_match_players` efter FK-kontrol.
   Backup: Dropbox `statistik/results/076-team-matches-before.sql`.
 
+- 2026-09-20 — Opgave 066: 4/4 BadmintonPlayer-genudtræk bestod render-gaten.
+  Database-SHA før skrivning `8630ec05fe769cd261dda2e8cac91cfb2e1fd5090ee8b287ce88a1da971ecd64`;
+  ændrede team_match_id'er 1, 2, 11, 12 med raw_payload_id 2875, 2876, 2877, 2878.
+  Efterkontrol: 2.817 team_matches, 0 FK-fejl, 0 eksterne dubletter. Hjemme/Ude:
+  1.442 hjemme + 1.375 ude = 2.817; records 720S-658T og 558S-749T; 0 udeladte.
+  Preview-test: 7 kategorirækker, 1 API-kald, 0 udeladte Hjemme/Ude-rækker.
+  `audit-individual-coverage-gaps.mjs` var ikke kørbar, fordi
+  `results/browser-individual-parse-report.json` mangler; øvrige faste
+  kontroller gennemførte.
+
