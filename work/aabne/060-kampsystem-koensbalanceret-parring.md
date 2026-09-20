@@ -101,4 +101,46 @@ opgave.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst)*
+Metode: Der er tilføjet `tools/tests/kampsystem/koensbalanceret-parring.test.cjs`.
+Testen evaluerer preview-kildens inline JavaScript fra
+`kampsystem/kampsystem_source.html` read-only i en VM. Kortlægningen viste,
+at den relevante vej går gennem `kaonsbevidstFordeling`,
+`fordelTilDoubleOgMixed`, `formTeams` og `formTeamsMixed`.
+
+Direkte kommando:
+
+```text
+node tools/tests/kampsystem/koensbalanceret-parring.test.cjs
+```
+
+Resultat: `Kønsbalanceret parring: 4 bestået, 0 fejlet`.
+
+Scenarierne gav disse konkrete resultater:
+
+1. Med H1/H2 på 1500/1490 og D1/D2 på 1500/1490, alle med begge
+   kategorier, valgte fordelingen `t=2`, en mixed-kamp og ingen double-pulje.
+2. Med fire herrer på 1500/1490/1480/1470 valgte den `t=0`, én ren
+   double-kamp og inkluderede alle fire spillere. Kaldet returnerede uden
+   hang.
+3. Med herrer på 3000/2990 og damer på 1000/990 valgte algoritmen stadig
+   mixed. Makker-ratinggabene blev 2000 og 2000, mens den rene double-
+   løsning ville have gab på 10 og 10. Det dokumenterer, at kønspræferencen
+   i denne case reelt er hård og ikke rating-blød.
+4. Kodesøgningen fandt ingen niveau-tærskel/pointgrænse og ingen
+   `1 dame/3 herrer`-mekanisme på tværs af nettet. Der findes kun den
+   generelle fordeling af mixed kontra rene kønsopdelte hold samt en
+   kommentar om ulige restgrupper.
+
+Den foreskrevne katalogkontrol blev kørt:
+
+```text
+node --test tools/tests/kampsystem/
+```
+
+Resultat: Node test runner fejlede før testkørsel med Windows-fejlen
+`Error: spawn EPERM` (`tests 1, pass 0, fail 1`). Den direkte Node-kørsel
+ovenfor er derfor den anvendte kontrol og gav 4/4 og 0 fejl.
+
+Værn:
+`git status --short kampsystem/ apps/netlify-prod/` var tom; preview-kilden
+og produktionsmappen er ikke ændret. Der er ikke skrevet til databaser.
