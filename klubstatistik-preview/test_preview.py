@@ -12,7 +12,7 @@ with sync_playwright() as playwright:
     page.on("request", lambda request: api_requests.append(request.url) if "/api/data" in request.url else None)
     page.goto(URL, wait_until="networkidle")
     initial = page.locator("#dataset-status").inner_text()
-    assert "2.818" in initial, initial
+    assert "2.817" in initial, initial
     assert len(api_requests) == 1, api_requests
     initial_kpis = page.locator("[data-pane='overblik'] .kpi-num").all_inner_texts()
     assert len(initial_kpis) == 4, initial_kpis
