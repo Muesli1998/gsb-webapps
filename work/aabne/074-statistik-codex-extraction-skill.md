@@ -9,11 +9,17 @@ førsteprioritet, jf. `AGENTS.md`.
 **Baggrund:** `docs/statistik-plan.md`s "## Skillen"-afsnit beskriver et
 dokument der "skrives når Test & Validation lukker" (den er lukket
 2026-09-15) og skal bruges næste gang masseudtræk af kampdata skal køres —
-typisk ved sæsonstart. Det skal IKKE være en Claude-skill (SKILL.md i
-Anthropics forstand, indlæst via et Skill-værktøj) — Chris har eksplicit
-bedt om KUN en Codex-skill: en almindelig markdown-fil i repoet, som Codex
-(eller en fremtidig session) læser som kontekst, ligesom `AGENTS.md`, ikke
-en formel Claude-skill.
+typisk ved sæsonstart. Chris har efterfølgende præciseret, at leverancen
+skal være en **installerbar Codex-skill**, ikke kun en markdownfil til
+manuel indlæsning. Den versionsstyres i repoet med `SKILL.md` og en
+detaljeret procedure i `statistik/CODEX_EXTRACTION_SKILL.md`; ingen
+Claude-specifik skill eller global kopi er den kanoniske kilde.
+
+Skillens formål er kildeudtræk fra Nembadminton/BadmintonPlayer med fokus
+på faktiske kildefejl og eventuelle sæsonændringer. Den skal også føre
+data frem til det **normaliserede SQLite-format, projektet endte med**,
+og kunne validere resultatet mod det eksisterende datasæt. Den er ikke
+en generel statistik-, rapport- eller databasevedligeholdelsesskill.
 
 Råmaterialet findes allerede, men er spredt over flere dokumenter:
 
@@ -27,6 +33,10 @@ Råmaterialet findes allerede, men er spredt over flere dokumenter:
 - `statistik/AGENTS.md` og `statistik/RESUME_INSTRUCTIONS.txt` —
   arbejdsprincipperne (evidens før fortolkning, aldrig gæt, en fejl
   stopper ikke serien).
+- `statistik/sql/schema-normalized.sql`, den faktiske normaliserede
+  database og de eksisterende import-/audit-scripts — målformat og
+  kontroller. Skemafilen alene er ikke nødvendigvis identisk med den
+  aktuelle database efter senere migrationer.
 
 **Vigtigt:** disse dokumenter er skrevet på forskellige tidspunkter og kan
 være forældede på detaljer (fx præcise scriptnavne eller filstier). Denne
@@ -37,11 +47,12 @@ gæt"-regel).
 
 ## Mål
 
-Byg `statistik/CODEX_EXTRACTION_SKILL.md` — en konkret, udførbar
-procedure (imperativ tjekliste, ikke fortællende prosa) som en fremtidig
-Codex-session kan følge trin for trin, næste gang et masseudtræk af
-kampdata fra Nembadminton/BadmintonPlayer skal køres (fx ved en ny sæsons
-opstart). Dokumentet skal som minimum indeholde:
+Byg en formel Codex-skill i `.agents/skills/gsb-match-extraction/SKILL.md`,
+der aktiveres ved relevante GSB-udtræk og henviser til
+`statistik/CODEX_EXTRACTION_SKILL.md`. Skriv sidstnævnte som en konkret,
+udførbar procedure (imperativ tjekliste, ikke fortællende prosa) for
+kildeudtræk, normalisering og validering ved fx sæsonstart eller et
+inkrementelt udtræk. Den skal som minimum indeholde:
 
 1. **Hvornår denne skill bruges** — kort, konkret trigger-beskrivelse (ny
    sæson, et kendt hul der skal genudtrækkes, e.l.).
@@ -69,6 +80,36 @@ opstart). Dokumentet skal som minimum indeholde:
    detalje beviser ikke at alle historiske formater er ens; de kendte
    U09-/corona-undtagelser; individuelle opstillinger kræver separat
    parser).
+9. **Normaliseret slutformat og importgrænse** — beskriv den verificerede
+   vej fra rå, kildebelagte JSON-/browserpayloads til projektets
+   eksisterende normaliserede SQLite-struktur, ikke et nyt format eller
+   blot en løs SQL-eksport. Kortlæg de relevante felter og nøgler mod
+   den faktiske database og `statistik/sql/schema-normalized.sql`, herunder
+   sæson/pulje/hold, holdkamp, individuelle kategorier/spillere,
+   stillinger, rå payloads og udtræksfejl. Verificér migrationsforskelle
+   og import-scripts mod aktuel kode; markér en manglende eller uprøvet
+   importvej som sådan. Bevar rå kilde, status og ukendte værdier;
+   deduplikér på verificerede identiteter, overskriv ikke kendte værdier
+   med tomme, og bevar bl.a. corona-status. Skillen må **ikke** selv give
+   tilladelse til at skrive i databasen.
+10. **Validering mod det endelige datasæt** — angiv en reproducerbar,
+    read-only referencekontrol af den faktiske SQLite-databases aktuelle
+    tabeller/kolonner, nøgler og kendte poster. Beskriv, hvordan et
+    fremtidigt autoriseret prøveudtræk/import afprøves i en isoleret
+    testdatabase eller kopi og sammenholdes felt for felt med rå kilde
+    og referenceposter, inklusive status, resultat, individuelle data og
+    proveniens. Kontrollér tællinger pr. sæson/pulje, dubletter,
+    foreign keys, feltdækning og officielle stillinger; dokumentér kendte
+    undtagelser og stop ved uforklarede afvigelser. Historiske totaler er
+    ikke et facit for en ny sæson.
+
+Skeln tydeligt mellem sæsonstart (verificér mulige regel-, felt- og
+ID-ændringer og gem kildebelagt sæsonprofil) og udtræk midt i en allerede
+verificeret sæson (genbrug profilen, lav kun en lille kildesundhedskontrol,
+og genåbn fuld undersøgelse ved ændring eller manglende profil). En
+automatisk masseudtræksrute må ikke kaldes fungerende, før den passerer
+render-gaten på en kendt kamp; `statistik/results/004-udtraeksvej.md`
+dokumenterer den hidtidige begrænsning.
 
 Opdater desuden `statistik/TEST_RUN_LOG.md` med en linje der noterer at
 skillen er skrevet (dato, kort begrundelse), jf. `AGENTS.md`s krav om at
@@ -76,34 +117,48 @@ statusændringer skal kunne spores.
 
 ## Kontekst
 
-Dette er en dokumentationsopgave, ikke en kodeopgave — der skal ikke
-skrives eller ændres noget udtræksscript, og intet masseudtræk skal
-faktisk køres som del af denne opgave. Formålet er at samle den allerede
-eksisterende, spredte viden i én operationel fil, verificeret mod den
-nuværende kode.
+Dette er en skill- og dokumentationsopgave, ikke en opgave om at bygge
+en ny extractor eller importør. Der skal ikke skrives eller ændres
+udtræks-/importscripts, og hverken masseudtræk eller import i den rigtige
+database køres som del af opgaven. Beskriv kun en ende-til-ende-rute,
+hvor hvert led er verificeret mod kode og målformat eller tydeligt
+markeret som endnu ikke bevist. En live pilot hører til en særskilt,
+godkendt testopgave.
 
 ## Afgrænsning
 
-**Må røres:** `statistik/CODEX_EXTRACTION_SKILL.md` (ny fil),
+**Må røres:** `.agents/skills/gsb-match-extraction/SKILL.md` (ny fil),
+`statistik/CODEX_EXTRACTION_SKILL.md` (ny fil),
 `statistik/TEST_RUN_LOG.md` (kun en ny logline, ikke ret i eksisterende
-linjer).
+linjer) og dette opgavekort til spørgsmål/resultatnote.
 
-**Må ikke røres:** `statistik/data/*.db` (kun læses, hvis du overhovedet
-har brug for at bekræfte noget mod databasen — ingen skrivning under
-nogen omstændigheder), ingen eksisterende scripts i `statistik/`
+**Må ikke røres:** `statistik/data/*.db` (må kun åbnes read-only for at
+bekræfte målformat og referenceposter — ingen skrivning under nogen
+omstændigheder), ingen eksisterende scripts i `statistik/`
 (hverken `.mjs`-filer eller andet), ingen eksisterende resultatfiler i
 `statistik/results/`, `docs/statistik-plan.md` (allerede opdateret i en
 tidligere opgave — ikke en del af denne), `apps/netlify-prod/`.
 
 ## Kontrol
 
-**Målet:** `statistik/CODEX_EXTRACTION_SKILL.md` findes og indeholder
-alle otte punkter fra Mål-afsnittet ovenfor — bekræft med en simpel
-optælling (fx antal `##`-overskrifter der matcher punkterne) i
-resultatnoten. Hvert scriptnavn nævnt i dokumentet er bekræftet at findes
-på den angivne sti — angiv i resultatnoten hvor mange der blev
-verificeret, og hvor mange (om nogen) der ikke længere fandtes/var
-omdøbt.
+**Målet:** `.agents/skills/gsb-match-extraction/SKILL.md` kan valideres
+som Codex-skill og peger på den kanoniske procedure.
+`statistik/CODEX_EXTRACTION_SKILL.md` findes og dækker alle ti punkter
+fra Mål-afsnittet ovenfor — bekræft med en simpel optælling (fx antal
+`##`-overskrifter der matcher punkterne) i resultatnoten. Hvert
+scriptnavn nævnt i proceduren er bekræftet at findes på den angivne sti —
+angiv hvor mange der blev verificeret, og hvor mange (om nogen) der ikke
+længere fandtes/var omdøbt. Angiv også antal kontrollerede mål-tabeller
+og eventuelle konstaterede forskelle mellem skemafil og faktisk database.
+
+**Proceskontrol uden live udtræk:** Afprøv med eksisterende rå eksempler
+eller isolerede fixtures, at skillen skelner sæsonstart fra inkrementel
+kørsel, afviser standardshell/forkert kamp-ID og walkover uden eksplicit
+tekst, genoptager kun uverificerede kampe og kræver særskilt autorisation
+før databaseimport. Kontrollér feltmapping mod read-only reference og
+isolér eventuelle prøveskrivninger til en testdatabase. Notér konkrete
+bestået/fejlet-resultater; en statisk skill-validator alene beviser ikke
+at udtræksruten virker.
 
 **Værnet:**
 
@@ -111,21 +166,21 @@ omdøbt.
 git status --short statistik/data/ statistik/scripts/ statistik/results/ apps/netlify-prod/ docs/statistik-plan.md
 ```
 
-Skal være tom (kun `statistik/CODEX_EXTRACTION_SKILL.md` og
-`statistik/TEST_RUN_LOG.md` må stå som ændret/nye filer i den samlede
-`git status`).
+Skal være tom. I samlet `git status` må kun de tre tilladte leverancefiler
+og dette opgavekort være ændret/nye. Ændringer i den rigtige database,
+eksisterende scripts eller genererede resultater er ikke tilladt.
 
 ## Ved tvivl
 
 Findes et scriptnavn fra `CURRENT_VALIDATION_STATUS.md`s liste ikke
-længere, eller er strukturen i `statistik/` ændret markant siden disse
-dokumenter blev skrevet (fx en anden mappeopdeling) — stop og skriv det
-under Spørgsmål i stedet for at gætte det nuværende navn eller opfinde en
-ny struktur. Er det uklart om et konkret script stadig gør det
-`CURRENT_VALIDATION_STATUS.md` siger det gør (uden at du kan bekræfte det
-uden selv at køre det, hvilket denne opgave ikke ber om) — dokumentér det
-som uverificeret i skillen selv (fx "ikke kørt siden 2026-09-14, verificér
-før brug"), fremfor at præsentere det som testet nu.
+længere, er strukturen ændret markant, eller kan det normaliserede
+slutformat ikke identificeres sikkert mod den aktuelle database — stop og
+skriv det under Spørgsmål i stedet for at gætte eller opfinde en ny
+struktur. Er det uklart om et script stadig gør det kilden siger, eller
+om en importvej fungerer uden at køre den på rigtige data, så markér den
+som uverificeret i skillen (fx "ikke kørt siden 2026-09-14, verificér før
+brug") frem for at præsentere den som testet nu. En fejlet kontrol
+stopper arbejdet før commit, indtil fejlen er afklaret.
 
 ## Spørgsmål
 
