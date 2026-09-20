@@ -242,6 +242,41 @@
     html += '<p class="muted season-note">Sæson-dropdownen ovenfor påvirker ikke denne historik; alders- og underfilter gør.</p>';
     document.querySelector('[data-pane="saeson"]').innerHTML = html;
   }
+
+  function categoryTable(result) {
+    var labels = { HS: 'Herresingle', DS: 'Damesingle', HD: 'Herredouble', DD: 'Damedouble', MD: 'Mixeddouble', S: 'Fri single', D: 'Fri double' };
+    var categories = Object.keys(labels).map(function (key) { return { key: key, name: labels[key], matches: 0, wins: 0, losses: 0 }; });
+    var byKey = new Map(categories.map(function (row) { return [row.key, row]; }));
+    var teams = new Map(result.teams.map(function (team) { return [String(team.id), team]; }));
+    var matches = new Map(result.matches.map(function (match) { return [String(match.teamMatchId), match]; }));
+    state.data.individualMatches.forEach(function (individual) {
+      var match = matches.get(String(individual.teamMatchId));
+      var category = byKey.get(individual.discipline);
+      var team = match && teams.get(String(match.teamId));
+      if (!match || !category || !team) return;
+      var home = isGsbTeamName(team.name, match.home);
+      var away = isGsbTeamName(team.name, match.away);
+      var side = home === away ? null : (home ? 'home' : 'away');
+      category.matches += 1;
+      if (side && individual.winnerSide === side) category.wins += 1;
+      else if (side && individual.winnerSide) category.losses += 1;
+    });
+    return categories.map(function (category) {
+      var decided = category.wins + category.losses;
+      return { name: category.name, matches: category.matches, wins: category.wins, losses: category.losses, rate: decided ? Math.round(category.wins / decided * 100) : null };
+    });
+  }
+
+  function renderCategory(result) {
+    var rows = categoryTable(result);
+    var html = '<div class="table-wrap"><table class="category-table"><thead><tr><th>Kategori</th><th>Kampe</th><th>Winrate</th></tr></thead><tbody>';
+    html += rows.map(function (row) {
+      var rate = row.rate === null ? '—' : row.rate + '%';
+      return '<tr><td>' + row.name + '</td><td>' + row.matches + '</td><td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:' + (row.rate || 0) + '%"></div></div><span class="pct">' + rate + '</span></div></td></tr>';
+    }).join('') + '</tbody></table></div>';
+    document.querySelector('[data-pane="kategori"]').innerHTML = html;
+  }
+
   function escapeHtml(value) {
     return String(value == null ? '' : value).replace(/[&<>"']/g, function (char) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]; });
   }
@@ -367,6 +402,7 @@
     var pane = document.querySelector('[data-pane="overblik"]');
     if (pane) pane.innerHTML = overblik(result);
     if (document.querySelector('[data-pane="hold"]')) renderHold(result);
+    if (document.querySelector('[data-pane="kategori"]')) renderCategory(result);
     if (document.querySelector('[data-pane="modstander"]')) renderOpponents(result);
     if (document.querySelector('[data-pane="saeson"]')) renderSeasonsPane();
     if (document.querySelector('[data-pane="spillere"]')) renderPlayers(result);

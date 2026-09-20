@@ -66,16 +66,18 @@ Stop og skriv under "Spørgsmål" nedenfor.
 
 ### Spørgsmål
 
-Den read-only database indeholder 20.319 individuelle rækker. De rå discipliner kan
-direkte grupperes i HS (2.222), DS (1.331), HD (5.627), DD (2.231) og MD (3.387);
-men der findes også 3.414 rækker med rå disciplin `S` og 2.107 med rå disciplin
-`D`, altså 5.521 rækker uden køn. Desuden skal MD-tallet bekræftes, fordi rå
-`MD`-rækkerne alene summerer til 3.387 og dermed de fem kønnede discipliner til
-14.756. Hvordan skal de rå `S`/`D`-rækker behandles, så de fem kategoriers tal
-kan opfylde kontrolkravet om at summere til alle 20.319 individuelle kampe?
-Skal de vises som en separat uafklaret kategori, eller findes der en autoritativ
-kønsmapping fra en anden tabel/kilde? Der må ikke gættes en mapping.
-
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+- Implementeret i `klubstatistik-preview/klubstatistik.js` som en Kategori-pane-
+  renderer med de syv rå disciplinværdier: HS 2.222, DS 1.331, HD 5.627,
+  DD 2.231, MD 3.387, S/Fri single 3.410 og D/Fri double 2.105.
+- Uafhængig read-only SQL-optælling af `individual_matches` koblet til
+  `team_matches` gav 20.313 i alt, S 3.410 og D 2.105. Rendererens syv tal
+  summerer til 20.313; Fri single og Fri double matcher dermed hver sin
+  rå SQL-optælling.
+- Kategori-tabellen bruger samme `.bar-fill`/`.bar-cell`-stil som de øvrige
+  preview-tabeller. Ingen kønsmapning af S/D er lavet.
+- Kontroller: `python -m py_compile klubstatistik-preview/server.py`,
+  `node --check klubstatistik-preview/klubstatistik.js` og den udvidede
+  `python test_preview.py` bestod. Playwright-testen rapporterede 7 rækker,
+  `[2222, 1331, 5627, 2231, 3387, 3410, 2105]` og ét API-kald.

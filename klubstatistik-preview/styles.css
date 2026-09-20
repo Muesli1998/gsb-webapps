@@ -42,6 +42,9 @@ select { padding:7px 10px; border:1px solid var(--border); border-radius:6px; fo
 .season-table { width:100%; border-collapse:collapse; font-size:.85rem; }
 .season-table th,.season-table td { padding:8px 10px; border-bottom:1px solid var(--border); text-align:left; }
 .season-table th { background:#f2f1eb; color:var(--muted); font-size:.72rem; text-transform:uppercase; }
+.category-table { width:100%; border-collapse:collapse; font-size:.85rem; }
+.category-table th,.category-table td { padding:8px 10px; border-bottom:1px solid var(--border); text-align:left; }
+.category-table th { background:#f2f1eb; color:var(--muted); font-size:.72rem; text-transform:uppercase; }
 .season-note { margin-top:12px; color:var(--muted); font-size:.82rem; }
 .sort-button { border:0; background:none; color:inherit; cursor:pointer; font:inherit; font-weight:700; padding:0; text-align:left; }
 .bar-cell { display:flex; align-items:center; gap:8px; min-width:140px; }
