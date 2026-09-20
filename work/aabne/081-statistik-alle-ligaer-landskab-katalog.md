@@ -267,3 +267,43 @@ afventer beslutning om mindst 95.952 kald plus et ukendt antal
 kampdetailkald. Rå probeevidens ligger i
 `statistik/results/081-opponent-identity-probe.json`, og den reproducerbare
 probe i `statistik/scripts/081-opponent-identity-probe.mjs`.
+
+**Christoffers yderligere mapping (2026-09-20), fundet manuelt på**
+`https://badmintonplayer.dk/DBF/HoldTurnering/Stilling/#<subPage>,<seasonID>,,<ageGroupID>,<regionID>,,,,`:
+
+| ageGroupID | regionID | Bekræftet indhold |
+|---:|---:|---|
+| 1 | 1 | Nationalt Senior |
+| 1 | 4 | Midtjylland Senior — **NB: "snyder"**, andre vest-kredse gav samme puljer |
+| 1 | 8 | København Senior |
+| 3 | 8 | København U11 |
+| 9 | 8 | København Sen+40 |
+| 21 | 8 | København Ungdom |
+| 21 | 10 | Sjælland Ungdom |
+
+**Afklaret af Christoffer (2026-09-20):** "vest-ungdom er tom"-anomalien er IKKE en kode- eller
+fallback-fejl. `#1,2025,,21,4,,,,` (Badminton Midtjylland Ungdom, sæson 2025/2026) viser faktiske
+puljer — de findes for tidligere, afsluttede sæsoner. Grunden til at `#1,2026,,21,4,,,,` var tom er
+at 2026/2027-ungdomspuljerne i Midtjylland (og sandsynligvis andre vestkredse) endnu ikke er sat op
+på tidspunktet for denne undersøgelse — et sæson-tilblivelses-tidspunkt, ikke et datastrukturproblem.
+**Konsekvens for opgaven:** når hele 2010-2026-perioden skal indsamles, er alle disse sæsoner
+allerede afsluttede, så dette problem burde ikke opstå i praksis — men Codex skal stadig holde øje
+med og rapportere hvis en (region, aldersgruppe, sæson)-kombination er reelt tom for en HISTORISK,
+afsluttet sæson, fordi det ville være en ægte datamangel, ikke bare "ikke sat op endnu".
+
+**Stadig uafklaret, skal undersøges — IKKE gættes:** Midtjylland-"snyderiet" for SENIOR
+(`ageGroupID=1`) er ikke forklaret af sæson-tidspunktet (senior-sæson 26/27 er jo sat op og har data).
+Flere vest-kredse gav angiveligt identiske puljer for senior. Bekræft ved at sammenligne den RÅ
+respons (ikke kun den viste side) for mindst 3 forskellige vest-`regionID`'er med samme `ageGroupID=1`
+— er de byte-for-byte identiske, er det en ægte fallback/deling af puljer (fx fordi Vestdanmark er
+organiseret som én samlet kreds for senior, i modsætning til Øst der er delt op), ikke en fejl i
+undersøgelsen. Afklar hvilken af de to det er.
+
+Yderligere åbne spørgsmål der skal afklares med evidens, ikke antagelse:
+- Hvad er den fulde liste af gyldige `regionID`-værdier (kredse) og deres navne? Kendte indtil nu:
+  1=national, 4=Midtjylland, 8=København, 10=Sjælland.
+- Hvad er den fulde liste af gyldige `ageGroupID`-værdier og deres navne? Kendte indtil nu:
+  1=Senior, 3=U11, 9=Sen40+, 21=Ungdom(samlet?).
+- Giver `GetLeagueStanding`, når man følger et konkret `leagueGroupID` (fx `18894`/`18895` fra
+  eksemplet), en liste af HOLD i puljen (klubnavne) — eller kun puljenavnet? Det er afgørende for om
+  denne rute reelt kan erstatte klub-iterationen. Bekræft med et faktisk kald og vis svaret.
