@@ -115,11 +115,26 @@ løsningstidspunktet — repoet kan have ændret sig siden dette kort blev skrev
 
 ### Spørgsmål
 
-2026-09-20: Den overordnede arbejdsinstruks for denne sekvens siger eksplicit
-"Rør ikke `apps/netlify-prod/`", mens dette korts Mål og Afgrænsning kræver
-ændringer i `apps/netlify-prod/public/` og eventuelt
-`apps/netlify-prod/netlify/functions/`. Hvilken instruktion gælder for
-Preview-kortene? Ingen filer under `apps/netlify-prod/` er ændret.
+**Codex' spørgsmål (2026-09-20):** Kortets egen Kontekst-note siger dette
+kort ER den godkendte feature og kun venter på Chris' eksplicitte "byg
+det" — men den overordnede arbejdsinstruktion for denne runde sagde
+generelt "rør ikke `apps/netlify-prod/`", uden at nævne denne undtagelse.
+Hvilket gælder?
+
+**Rettelse (2026-09-20, samme dag):** Claudes forrige svar her var
+FORKERT og skal ignoreres. `AGENTS.md`s egen trin-definition siger
+"Preview — brugerflade og funktion er afprøvet, men ikke live." Men
+`apps/netlify-prod/` ER den faktisk deployede, live side
+(gsbmore.netlify.app) — enhver ændring der committes og pushes dertil
+bliver live med det samme. Kortets Mål-afsnit (sætte siden direkte i
+`apps/netlify-prod/public/`) er derfor i konflikt med sit eget Trin, og
+det er IKKE afklaret endnu hvordan denne modsigelse løses.
+
+**Stop. Byg ikke i `apps/netlify-prod/` for dette kort, før dette er
+afklaret.** Chris skal beslutte hvordan et reelt "ikke-live" preview
+teknisk realiseres — fx en separat Netlify preview-deploy pr. gren, en
+lokal HTML-fil uden nav-integration, eller et andet mønster. Kortets
+Mål-afsnit skal formentlig omskrives, ikke bare besvares.
 
 ## Resultatnote
 
