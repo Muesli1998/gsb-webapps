@@ -610,3 +610,14 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
   `results/081-route-probe.json`. Fuld historisk indsamling blev ikke
   startet.
 
+- 2026-09-20 — Opgave 081: `WebService1.asmx?WSDL` returnerede HTTP 500;
+  den offentlige `/js`-proxy returnerede 43 metoder. Relevante faktiske
+  kald: `SearchClub` 200 (Gladsaxe Søborg/1093), `SearchClubInfo` 200 (én
+  klubrække), `GetLeagueStanding` på gruppe 18894 200 (8 hold med hold-ID),
+  `GetSeasonPlan` 500, `SearchTournamentClass` 500,
+  `GetTournamentClassInfo` 200, `GetTournamentEvents` 200,
+  `SearchTournamentResults` 200 og `SearchTournamentMatches` 200 (61
+  HTML-rækker). Fire sider og deres scripts refererede kun til
+  `WebService1.asmx`; ingen anden `.asmx`-service blev fundet. Rå evidens
+  ligger i `results/081-webservice-catalog-probe.json`.
+

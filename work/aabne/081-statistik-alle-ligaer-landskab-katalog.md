@@ -268,6 +268,13 @@ kampdetailkald. Rå probeevidens ligger i
 `statistik/results/081-opponent-identity-probe.json`, og den reproducerbare
 probe i `statistik/scripts/081-opponent-identity-probe.mjs`.
 
+WebService1/WSDL-undersøgelsen er nu også udført: WSDL gav HTTP 500, mens
+JS-proxyen dokumenterede 43 metoder. `GetLeagueStanding` på et konkret
+`leagueGroupID` returnerede 8 hold med hold-ID'er, og fire undersøgte sider
+refererede kun til WebService1.asmx. Rå evidens ligger i
+`statistik/results/081-webservice-catalog-probe.json`; fuld indsamling er
+stadig ikke startet.
+
 **Christoffers yderligere mapping (2026-09-20), fundet manuelt på**
 `https://badmintonplayer.dk/DBF/HoldTurnering/Stilling/#<subPage>,<seasonID>,,<ageGroupID>,<regionID>,,,,`:
 
@@ -325,3 +332,73 @@ Yderligere åbne spørgsmål der skal afklares med evidens, ikke antagelse:
 - Giver `GetLeagueStanding`, når man følger et konkret `leagueGroupID` (fx `18894`/`18895` fra
   eksemplet), en liste af HOLD i puljen (klubnavne) — eller kun puljenavnet? Det er afgørende for om
   denne rute reelt kan erstatte klub-iterationen. Bekræft med et faktisk kald og vis svaret.
+
+**Svar: fuld WebService1-metodeliste og endpoint-prober (2026-09-20):**
+`https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx?WSDL`
+blev hentet direkte og returnerede HTTP 500, `Content-Type: text/html`,
+1208 bytes og en generisk `500 - Internal server error`-side. WSDL kunne
+derfor ikke bruges som metodeliste. Den tilhørende offentlige klientproxy
+`https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/js`
+returnerede HTTP 200 og 49.586 bytes. Den indeholder 43 offentlige metoder
+(`_get_path` er ikke medregnet):
+
+```text
+CheckLicense, AddLicense, ChangePaymentMethod, AddRegistration,
+AddRegistrationOptions, GetRegistrationPlayerOptionsRequired,
+AddRegistrationFromList, DeleteRegistrationFromList,
+GetOrderRegistrationList, RemoveOrderItem, CompleteOrder, CancelOrder,
+SearchPlayer, SearchPlayerDuplicate, SearchClub, SearchClubInfo, CreatePlayer,
+AssignPlayer, GetPlayerProfile, GetPlayerRankingListPoints, UnassignPlayer,
+UnassignPlayerMulti, MoveAssignPlayerMulti, CheckAssignPlayer,
+SearchTournamentClass, GetTournamentClassInfo, GetTournamentEvents,
+SearchRegistrations, DeleteRegistration, DeleteRegistrationClub,
+ChangeRegistrationPartner, ConfirmRegistrationClub, SearchRegistrationsByClass,
+SearchTournamentResults, SearchTournamentMatches, SearchTournamentInvitation,
+GetLeagueStanding, GetRankingListPlayers, GetRankingListPlayersSenior,
+GetRankingListPlayersHide, GetRankingListVersions, GetSeasonPlan, GetWeekNo
+```
+
+Relevante metoder blev afprøvet med friske callback-kontekster og faktiske
+POST-svar. `SearchClub` med `name=Gladsaxe`, `includeteams=true` returnerede
+HTTP 200 og én række: `Gladsaxe Søborg`, `clubId=1093`. `SearchClubInfo` med
+`clubid=1093` returnerede HTTP 200 og én klub: `Gladsaxe Søborg
+Badmintonklub`, postnummer 2860, Søborg. Begge er søge-/klubopslag, ikke en
+landsdækkende sæsonliste.
+
+`GetLeagueStanding` med `subPage=2`, `seasonID=2026`, `leagueGroupID=18894`,
+`ageGroupID=1`, `regionID=8` returnerede HTTP 200 med puljen
+`Københavnsserien Pulje 1` og 8 holdrækker. Svaret indeholder både holdnavne
+og hold-ID'er i links, bl.a. `Dragør 2`/`122266`, `Gentofte 5`/`122267`,
+`KMB2010 3`/`122264`, `Skovshoved 5`/`122268`, `KBK Kbh. 6`/`122265`,
+`Charlottenlund 3`/`122263`, `NBK Amager`/`122261` og `SAIF Kbh. 2`/`122262`.
+Det er en direkte klub-/holdliste pr. pulje og gør, at den fundne
+region×aldersgruppe→pulje→hold-rute kan erstatte den dyre klub-ID-iteration
+for katalogets formål.
+
+`GetSeasonPlan` blev afprøvet med `seasonid=2026`, region 1,
+aldersgruppe 1 og tomme øvrige filtre; det returnerede HTTP 500 med
+`There was an error processing the request.` Ingen sæson-/regionsliste kan
+derfor dokumenteres fra dette kald. `SearchTournamentClass` blev også
+afprøvet med 2026/region 1 og returnerede HTTP 500 som i den tidligere probe.
+
+De kendte turneringsmetoder blev afprøvet med `tournamentclassid=115342`:
+`GetTournamentClassInfo` returnerede HTTP 200 med turneringen `29-08-2026
+Jernløse`, `GetTournamentEvents` returnerede HTTP 200 med events 490920–490924,
+`SearchTournamentResults` returnerede HTTP 200 med links til Herresingle,
+Herredouble, Damedouble og Mixdouble, og `SearchTournamentMatches` returnerede
+HTTP 200 med 30.686 bytes HTML og 61 rækker. De er alle opslag fra et kendt
+turnerings-ID og reducerer ikke søgningen efter alle ligaer.
+
+Der blev gennemgået fire relevante BadmintonPlayer-sider og alle deres
+indlæste script-tekster: Holdturnering/Stilling, Turnering/VisResultater,
+Spiller/VisSpiller og Ranglister. De eneste `.asmx`-referencer var
+`WebService1.asmx` og dens `/js`-proxy (relative variationer af samme sti).
+Den allerede indfangede repo-evidens (`*.html`, `*.json`, `*.txt` under
+`statistik/results/`) indeholder heller ingen anden `.asmx`-service.
+Der er således ingen evidens for flere webservices end `WebService1.asmx`
+i det undersøgte materiale.
+
+Rå, callback-redigeret evidens og den reproducerbare probe ligger i
+`statistik/results/081-webservice-catalog-probe.json` og
+`statistik/scripts/081-webservice-catalog-probe.mjs`. Der er ikke startet
+fuld 2010–2026-indsamling eller skrevet til den normaliserede database.

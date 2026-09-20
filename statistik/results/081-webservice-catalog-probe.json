@@ -1,0 +1,499 @@
+{
+  "service": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/",
+  "wsdl": {
+    "http": 500,
+    "contentType": "text/html",
+    "bodyPrefix": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>\r\n<title>500 - Internal server error.</title>\r\n<style type=\"text/css\">\r\n<!--\r\nbody{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}\r\nfieldset{padding:0 15px 10px 15px;} \r\nh1{font-size:2.4em;margin:0;color:#FFF;}\r\nh2{f"
+  },
+  "proxy": {
+    "http": 200,
+    "length": 49586,
+    "methods": [
+      {
+        "name": "CheckLicense",
+        "signature": "callbackcontextkey,playerID,clubID,licensegroupID,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "AddLicense",
+        "signature": "callbackcontextkey,playerID,clubID,licensegroupID,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "ChangePaymentMethod",
+        "signature": "callbackcontextkey,paymentmethod,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "AddRegistration",
+        "signature": "callbackcontextkey,tournamenteventid,playerIds,clubIds,paynow,fieldvalues,userConfirmationResponse,clubid,adminclubid,playerfieldvalues,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "AddRegistrationOptions",
+        "signature": "callbackcontextkey,tournamentid,formid,playerId,clubId,fieldvalues,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "GetRegistrationPlayerOptionsRequired",
+        "signature": "callbackcontextkey,tournamentid,playerId,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "AddRegistrationFromList",
+        "signature": "callbackcontextkey,index,playerindex,userConfirmationResponse,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "DeleteRegistrationFromList",
+        "signature": "callbackcontextkey,index,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "GetOrderRegistrationList",
+        "signature": "callbackcontextkey,userid,playerid,clubid,fromdatestring,todatestring,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "RemoveOrderItem",
+        "signature": "callbackcontextkey,index,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "CompleteOrder",
+        "signature": "callbackcontextkey,relatedClubID,bankregno,accountno,lastConfirmationID,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "CancelOrder",
+        "signature": "callbackcontextkey,orderid,addbasket,administratormode,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "SearchPlayer",
+        "signature": "callbackcontextkey,selectfunction,name,clubid,playernumber,gender,agegroupid,searchteam,licenseonly,agegroupcontext,tournamentdate,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "SearchPlayerDuplicate",
+        "signature": "callbackcontextkey,selectfunction,gender,name,birthdatestring,alloweditplayernumber,allowselect,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "SearchClub",
+        "signature": "callbackcontextkey,name,selectfunction,includeteams,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "SearchClubInfo",
+        "signature": "callbackcontextkey,clubid,regionid,postalcode1,postalcode2,city,bodyonly,clubtype,categorylist,pageno,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "CreatePlayer",
+        "signature": "callbackcontextkey,playernumberedit,name,birthdatestring,gender,email,clubid,assignToProfile,startranking,validated,createasperson,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "AssignPlayer",
+        "signature": "callbackcontextkey,playerid,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "GetPlayerProfile",
+        "signature": "callbackcontextkey,seasonid,playerid,getplayerdata,showUserProfile,showheader,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "GetPlayerRankingListPoints",
+        "signature": "callbackcontextkey,seasonid,playerid,rankinglistid,rankinglistplayerid,getplayerdata,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "UnassignPlayer",
+        "signature": "callbackcontextkey,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "UnassignPlayerMulti",
+        "signature": "callbackcontextkey,playerid,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "MoveAssignPlayerMulti",
+        "signature": "callbackcontextkey,playerid,direction,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "CheckAssignPlayer",
+        "signature": "callbackcontextkey,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "SearchTournamentClass",
+        "signature": "callbackcontextkey,selectfunction,seasonid,agegroupid,classid,clubid,fromdatestring,todatestring,selectopenonly,regionids,adminclubid,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "GetTournamentClassInfo",
+        "signature": "callbackcontextkey,instance,tournamentclassid,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "GetTournamentEvents",
+        "signature": "callbackcontextkey,selecteventfunction,instance,tournamentclassid,playerlistselectfunction,selectclassfunction,selectopenonly,clubid,adminclubid,selecteddisciplinecode,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "SearchRegistrations",
+        "signature": "callbackcontextkey,userid,playerid,clubid,fromdatestring,todatestring,completed,adminclubid,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "DeleteRegistration",
+        "signature": "callbackcontextkey,tournamentregistrationid,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "DeleteRegistrationClub",
+        "signature": "callbackcontextkey,tournamentregistrationid,clubid,adminclubid,refreshregistrations,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "ChangeRegistrationPartner",
+        "signature": "callbackcontextkey,tournamentregistrationid,orderitemregistrationid,oldplayerid,playerid,clubid,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "ConfirmRegistrationClub",
+        "signature": "callbackcontextkey,tournamentregistrationid,confirmed,clubid,adminclubid,refreshregistrations,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "SearchRegistrationsByClass",
+        "signature": "callbackcontextkey,tournamentclassid,clientselectfunction,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "SearchTournamentResults",
+        "signature": "callbackcontextkey,tournamentclassid,clientselectfunction,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "SearchTournamentMatches",
+        "signature": "callbackcontextkey,tournamentclassid,tournamenteventid,clubid,playerid,tabnumber,groupnumber,locationnumber,clientselectfunction,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "SearchTournamentInvitation",
+        "signature": "callbackcontextkey,tournamentclassid,tournamenteventid,clubid,playerid,tabnumber,groupnumber,locationnumber,clientselectfunction,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "GetLeagueStanding",
+        "signature": "callbackcontextkey,subPage,seasonID,leagueGroupID,ageGroupID,regionID,leagueGroupTeamID,leagueMatchID,clubID,playerID,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "GetRankingListPlayers",
+        "signature": "callbackcontextkey,rankinglistagegroupid,rankinglistid,seasonid,rankinglistversiondate,agegroupid,classid,gender,clubid,searchall,regionid,pointsfrom,pointsto,rankingfrom,rankingto,birthdatefromstring,birthdatetostring,agefrom,ageto,playerid,param,pageindex,sortfield,getversions,getplayer,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "GetRankingListPlayersSenior",
+        "signature": "callbackcontextkey,rankinglistagegroupid,rankinglistid,seasonid,rankinglistversiondate,agegroupid,classid,gender,clubid,searchall,regionid,pointsfrom,pointsto,rankingfrom,rankingto,birthdatefromstring,birthdatetostring,agefrom,ageto,playerid,param,pageindex,sortfield,getversions,getplayer,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "GetRankingListPlayersHide",
+        "signature": "callbackcontextkey,rankinglistagegroupid,rankinglistid,seasonid,rankinglistversiondate,agegroupid,classid,gender,clubid,searchall,regionid,pointsfrom,pointsto,rankingfrom,rankingto,birthdatefromstring,birthdatetostring,agefrom,ageto,playerid,param,pageindex,sortfield,getversions,getplayer,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "GetRankingListVersions",
+        "signature": "callbackcontextkey,rankinglistagegroupid,rankinglistid,seasonid,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "GetSeasonPlan",
+        "signature": "callbackcontextkey,seasonid,regionids,agegroupids,classids,strfrom,strto,strweekno,strweekno2,georegionids,clubid,disciplines,playerid,birthdate,age,points,gender,publicseasonplan,showleague,selectclientfunction,page,succeededCallback, failedCallback, userContext"
+      },
+      {
+        "name": "GetWeekNo",
+        "signature": "callbackcontextkey,date,succeededCallback, failedCallback, userContext"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "url": "https://badmintonplayer.dk/DBF/HoldTurnering/Stilling/#1,2026,,1,1,,,,",
+      "http": 200,
+      "htmlLength": 18188,
+      "callbackContextLength": 96,
+      "scriptCount": 12
+    },
+    {
+      "url": "https://badmintonplayer.dk/DBF/Turnering/VisResultater/#115342",
+      "http": 200,
+      "htmlLength": 23289,
+      "callbackContextLength": 96,
+      "scriptCount": 19
+    },
+    {
+      "url": "https://badmintonplayer.dk/DBF/Spiller/VisSpiller/#84737,2026",
+      "http": 200,
+      "htmlLength": 29488,
+      "callbackContextLength": 96,
+      "scriptCount": 16
+    },
+    {
+      "url": "https://badmintonplayer.dk/DBF/Ranglister/#288",
+      "http": 200,
+      "htmlLength": 21842,
+      "callbackContextLength": 96,
+      "scriptCount": 16
+    }
+  ],
+  "asmxRefs": [
+    "../../../SportsResults/Components/WebService1.asmx/js",
+    "../../SportsResults/Components/WebService1.asmx/js",
+    "/SportsResults/Components/WebService1.asmx"
+  ],
+  "probes": [
+    {
+      "method": "SearchClub",
+      "http": 200,
+      "request": {
+        "callbackcontextkey": "<redacted>",
+        "name": "Gladsaxe",
+        "selectfunction": "SelectClub",
+        "includeteams": true
+      },
+      "response": {
+        "d": {
+          "__type": "SportsResults_WebApp.SportsResults.Components.SearchPlayerResult",
+          "ListTruncated": false,
+          "Html": "<table class=\"resulttable\" cellpadding=\"0\" cellspacing=\"0\" >\r\n<tr onmouseover=\"this.className='cur';\" onmouseout=\"this.className='';\"  onclick=\"return SelectClub('1093', 'Gladsaxe Søborg');\" ><td><a href='#'>V&#230;lg</a></td><td>Gladsaxe S&#248;borg</td></tr>\r\n</table>\r\n",
+          "Count": 1
+        }
+      }
+    },
+    {
+      "method": "SearchClubInfo",
+      "http": 200,
+      "request": {
+        "callbackcontextkey": "<redacted>",
+        "clubid": 1093,
+        "regionid": 0,
+        "postalcode1": "",
+        "postalcode2": "",
+        "city": "",
+        "bodyonly": false,
+        "clubtype": 0,
+        "categorylist": "",
+        "pageno": 0
+      },
+      "response": {
+        "d": {
+          "__type": "SportsResults_WebApp.SportsResults.Components.SearchClubInfoResult",
+          "html": "<table class=\"GridView\" cellpadding=\"0\" cellspacing=\"0\" >\r\n<tr><th>Navn</th><th>Postnummer</th><th>By</th></tr><tr ><td><a href='/DBF/Klub/Info/?clubid=1093'>Gladsaxe S&#248;borg Badmintonklub</a></td><td>2860</td><td>S&#248;borg</td></tr>\r\n</table>\r\n<br />\r\nAntal fundet i alt: 1",
+          "map": []
+        }
+      }
+    },
+    {
+      "method": "GetLeagueStanding",
+      "http": 200,
+      "request": {
+        "callbackcontextkey": "<redacted>",
+        "subPage": 2,
+        "seasonID": 2026,
+        "leagueGroupID": 18894,
+        "ageGroupID": 1,
+        "regionID": 8,
+        "leagueGroupTeamID": null,
+        "leagueMatchID": null,
+        "clubID": null,
+        "playerID": null
+      },
+      "response": {
+        "d": {
+          "__type": "SportsResults_WebApp.SportsResults.Components.WebMethodResult",
+          "html": "<a href=\"#\" onclick=\"return ShowStanding('0', '', '', '', '', '', '', '', '');\" class='team'>S&#248;g andre r&#230;kker</a><br />\r\n<br />\r\n<h2>BADKBH SEN 2026/2027</h2><a href=\"#\" onclick=\"return ShowStanding('1', '2026', '', '1', '8', '', '', '', '');\" class='team'>Vis r&#230;kker</a><br />\r\n<br />\r\n<h3>K&#248;benhavnsserien Pulje 1</h3><a href=\"#\" onclick=\"return ShowStanding('4', '2026', '18894', '1', '8', '', '', '', '');\" class='team'>Vis alle kampe</a><br />\r\n<div class='table-container'><table class='groupstandings' >\r\n<thead><tr><th>#</th><th class='team'>Hold</th><th class='score'><span class='short-header'>K.</span><span class='long-header'>Kampe</span></th><th class='score'><span class='short-header'>V.</span><span class='long-header'>Vundne</span></th><th class='score'>Score</th><th class='score'>S&#230;t</th><th class='score'><span class='short-header'>P.</span><span class='long-header'>Point</span></th><th  class='score'>S.Point</th></tr></thead><tr><td class='standing'>1</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18894', '1', '8', '122266', '', '', '');\" class='team'>Drag&#248;r 2</a></td><td class='score'>2</td><td class='score'>2</td><td class='score'>19-7</td><td class='score'>39-18</td><td class='score'>24</td><td class='score'>12</td></tr><tr><td class='standing'>2</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18894', '1', '8', '122267', '', '', '');\" class='team'>Gentofte 5</a></td><td class='score'>2</td><td class='score'>2</td><td class='score'>18-8</td><td class='score'>38-24</td><td class='score'>24</td><td class='score'>18</td></tr><tr><td class='standing'>3</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18894', '1', '8', '122264', '', '', '');\" class='team'>KMB2010 3</a></td><td class='score'>2</td><td class='score'>1</td><td class='score'>15-11</td><td class='score'>33-28</td><td class='score'>19</td><td class='score'>10</td></tr><tr><td class='standing'>4</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18894', '1', '8', '122268', '', '', '');\" class='team'>Skovshoved 5</a></td><td class='score'>2</td><td class='score'>1</td><td class='score'>15-11</td><td class='score'>35-24</td><td class='score'>18</td><td class='score'>9</td></tr><tr><td class='standing'>5</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18894', '1', '8', '122265', '', '', '');\" class='team'>KBK Kbh. 6</a></td><td class='score'>2</td><td class='score'>1</td><td class='score'>13-13</td><td class='score'>32-30</td><td class='score'>16</td><td class='score'>10</td></tr><tr><td class='standing'>6</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18894', '1', '8', '122263', '', '', '');\" class='team'>Charlottenlund 3</a></td><td class='score'>1</td><td class='score'>0</td><td class='score'>4-9</td><td class='score'>12-20</td><td class='score'>4</td><td class='score'>2</td></tr><tr><td class='standing'>6</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18894', '1', '8', '122261', '', '', '');\" class='team'>NBK Amager</a></td><td class='score'>1</td><td class='score'>0</td><td class='score'>4-9</td><td class='score'>12-20</td><td class='score'>4</td><td class='score'>2</td></tr><tr><td class='standing'>8</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18894', '1', '8', '122262', '', '', '');\" class='team'>SAIF Kbh. 2</a></td><td class='score'>2</td><td class='score'>0</td><td class='score'>3-23</td><td class='score'>9-46</td><td class='score'>3</td><td class='score'>2</td></tr></table></div>\r\n<br /><a href='/DBF/HoldTurnering/UdskrivStilling/?page=2&season=2026&region=8&agegroup=1&group=18894&team=&match=&club=&player=' target='_blank'>Udskriv</a>&nbsp;|&nbsp;<a href='https://badminton.freshdesk.com/support/solutions/articles/22000246428-anvend-livescore' target='_blank'>Sådan anvender du livescore</a>"
+        }
+      }
+    },
+    {
+      "method": "GetSeasonPlan",
+      "http": 500,
+      "request": {
+        "callbackcontextkey": "<redacted>",
+        "seasonid": 2026,
+        "regionids": "1",
+        "agegroupids": "1",
+        "classids": "",
+        "strfrom": "",
+        "strto": "",
+        "strweekno": "",
+        "strweekno2": "",
+        "georegionids": "",
+        "clubid": 0,
+        "disciplines": "",
+        "playerid": 0,
+        "birthdate": "",
+        "age": 0,
+        "points": 0,
+        "gender": 0,
+        "publicseasonplan": true,
+        "showleague": true,
+        "selectclientfunction": "",
+        "page": 1
+      },
+      "response": {
+        "Message": "There was an error processing the request.",
+        "StackTrace": "",
+        "ExceptionType": ""
+      }
+    },
+    {
+      "method": "SearchTournamentClass",
+      "http": 500,
+      "request": {
+        "callbackcontextkey": "<redacted>",
+        "selectfunction": "SelectTournamentClass",
+        "seasonid": 2026,
+        "agegroupid": 1,
+        "classid": 0,
+        "clubid": 0,
+        "fromdatestring": "",
+        "todatestring": "",
+        "selectopenonly": false,
+        "regionids": "1",
+        "adminclubid": 0
+      },
+      "response": {
+        "Message": "There was an error processing the request.",
+        "StackTrace": "",
+        "ExceptionType": ""
+      }
+    },
+    {
+      "method": "GetTournamentClassInfo",
+      "http": 200,
+      "request": {
+        "callbackcontextkey": "<redacted>",
+        "instance": "1",
+        "tournamentclassid": 115342
+      },
+      "response": {
+        "d": {
+          "__type": "SportsResults_WebApp.SportsResults.Components.GetTournamentEventsResult",
+          "Info": "<div class='selectedtournamentspan'>\r\n<h2>29-08-2026 Jernl&#248;se </h2><table>\r\n<tr><td class='label'>Turneringsnummer:&nbsp;</td><td>S017558</td></tr><tr><td class='label'>Dato:&nbsp;</td><td>l&#248; 29-08-2026 til s&#248; 30-08-2026</td></tr><tr><td class='label'>Tilmeldingsfrist:&nbsp;</td><td>to 13-08-2026</td></tr><tr><td class='label' style='vertical-align:top;'>Spilledage:&nbsp;</td><td><table><tr><td style='vertical-align:top;' class='classdate' >lø 29&#8209;sø 30</td><td>&nbsp;</td><td class='classnames'>SEN&nbsp;A,B,C,D</td></tr></table></ td ></ tr ><tr><td class='label'>Kontakt:&nbsp;</td><td>Patrick, 12345678, <a href='mailto:jbkturnering@gmail.com' >jbkturnering@gmail.com</a></td></tr><tr><td class='label'>Senest opdateret:&nbsp;</td><td>30-08-2026 16:12:17</td></tr></table>\r\n<br /><a href='/DBF/Turnering/VisInvitation/#115342'>Turneringsinvitation</a>&nbsp;|&nbsp;<a href='/DBF/Turnering/DeltagerListe/115342'>Deltagerliste</a>\r\n</div>\r\n",
+          "Html": null,
+          "SelectedEventIndex": -1,
+          "Events": null,
+          "Players": null,
+          "DefaultPlayer": null,
+          "ClubName": null,
+          "ClubId": null,
+          "AgeGroupID": null,
+          "TournamentDate": null,
+          "LicenseOnly": false,
+          "registrations": null,
+          "playerfields": null
+        }
+      }
+    },
+    {
+      "method": "GetTournamentEvents",
+      "http": 200,
+      "request": {
+        "callbackcontextkey": "<redacted>",
+        "selecteventfunction": "",
+        "instance": "1",
+        "tournamentclassid": 115342,
+        "playerlistselectfunction": "",
+        "selectclassfunction": "",
+        "selectopenonly": false,
+        "clubid": 0,
+        "adminclubid": 0,
+        "selecteddisciplinecode": ""
+      },
+      "response": {
+        "d": {
+          "__type": "SportsResults_WebApp.SportsResults.Components.GetTournamentEventsResult",
+          "Info": "<div class='selectedtournamentspan'>\r\n<h2>29-08-2026 Jernl&#248;se </h2><table>\r\n<tr><td class='label'>Turneringsnummer:&nbsp;</td><td>S017558</td></tr><tr><td class='label'>Dato:&nbsp;</td><td>l&#248; 29-08-2026 til s&#248; 30-08-2026</td></tr><tr><td class='label'>Tilmeldingsfrist:&nbsp;</td><td>to 13-08-2026</td></tr><tr><td class='label' style='vertical-align:top;'>Spilledage:&nbsp;</td><td><table><tr><td style='vertical-align:top;' class='classdate' >lø 29&#8209;sø 30</td><td>&nbsp;</td><td class='classnames'>SEN&nbsp;A,B,C,D</td></tr></table></ td ></ tr ><tr><td class='label'>Kontakt:&nbsp;</td><td>Patrick, 12345678, <a href='mailto:jbkturnering@gmail.com' >jbkturnering@gmail.com</a></td></tr><tr><td class='label'>Senest opdateret:&nbsp;</td><td>30-08-2026 16:12:17</td></tr></table>\r\n<br /><a href='/DBF/Turnering/VisInvitation/#115342'>Turneringsinvitation</a>&nbsp;|&nbsp;<a href='/DBF/Turnering/DeltagerListe/115342'>Deltagerliste</a>\r\n</div>\r\n",
+          "Html": "<select onchange=\"return (this.value);\" class=\"selectbox\" >\r\n<option value=\"115342\" selected='selected'><h2>SEN A</h2></option>\r\n<option value=\"115343\" ><h2>SEN B</h2></option>\r\n<option value=\"115344\" ><h2>SEN C</h2></option>\r\n<option value=\"115345\" ><h2>SEN D</h2></option>\r\n</select>\r\n&nbsp;<select onchange=\"(this.selectedIndex);\" class=\"selectbox\">\r\n<option value=\"490920\"  >Herresingle  DKK 250,00</option>\r\n<option value=\"490921\"  >Damesingle  DKK 250,00</option>\r\n<option value=\"490922\"  >Herredouble  DKK 280,00</option>\r\n<option value=\"490923\"  >Damedouble  DKK 280,00</option>\r\n<option value=\"490924\"  >Mixdouble  DKK 280,00</option>\r\n</select>\r\n",
+          "SelectedEventIndex": 0,
+          "Events": [
+            {
+              "tournamentID": 17558,
+              "tournamentClassID": 115342,
+              "tournamentEventID": 490920,
+              "playerCount": 1,
+              "formID": 0,
+              "discipline": "MensSingles",
+              "allowDummyPartner": true,
+              "allowPayLater": true,
+              "fields": null
+            },
+            {
+              "tournamentID": 17558,
+              "tournamentClassID": 115342,
+              "tournamentEventID": 490921,
+              "playerCount": 1,
+              "formID": 0,
+              "discipline": "WomensSingles",
+              "allowDummyPartner": true,
+              "allowPayLater": true,
+              "fields": null
+            },
+            {
+              "tournamentID": 17558,
+              "tournamentClassID": 115342,
+              "tournamentEventID": 490922,
+              "playerCount": 2,
+              "formID": 0,
+              "discipline": "MensDoubles",
+              "allowDummyPartner": true,
+              "allowPayLater": true,
+              "fields": null
+            },
+            {
+              "tournamentID": 17558,
+              "tournamentClassID": 115342,
+              "tournamentEventID": 490923,
+              "playerCount": 2,
+              "formID": 0,
+              "discipline": "WomensDoubles",
+              "allowDummyPartner": true,
+              "allowPayLater": true,
+              "fields": null
+            },
+            {
+              "tournamentID": 17558,
+              "tournamentClassID": 115342,
+              "tournamentEventID": 490924,
+              "playerCount": 2,
+              "formID": 0,
+              "discipline": "MixedDoubles",
+              "allowDummyPartner": true,
+              "allowPayLater": true,
+              "fields": null
+            }
+          ],
+          "Players": null,
+          "DefaultPlayer": null,
+          "ClubName": null,
+          "ClubId": null,
+          "AgeGroupID": null,
+          "TournamentDate": "29-08-2026",
+          "LicenseOnly": false,
+          "registrations": "<h2>Tilmeldinger</h2><br />Der blev ikke fundet nogen tilmeldinger",
+          "playerfields": null
+        }
+      }
+    },
+    {
+      "method": "SearchTournamentResults",
+      "http": 200,
+      "request": {
+        "callbackcontextkey": "<redacted>",
+        "tournamentclassid": 115342,
+        "clientselectfunction": ""
+      },
+      "response": {
+        "d": {
+          "__type": "SportsResults_WebApp.SportsResults.Components.SearchRegistrationsResult",
+          "ListTruncated": false,
+          "Html": "<div class='tournamentrankings'>\r\n<h2>Herresingle</h2>\r\n<a href='#' onclick=\"return TournamentResults.SelectEvent('115342','490920',0);\">Vis alle kampe</a><h2>Herredouble</h2>\r\n<a href='#' onclick=\"return TournamentResults.SelectEvent('115342','490922',0);\">Vis alle kampe</a><h2>Damedouble</h2>\r\n<a href='#' onclick=\"return TournamentResults.SelectEvent('115342','490923',0);\">Vis alle kampe</a><h2>Mixdouble</h2>\r\n<a href='#' onclick=\"return TournamentResults.SelectEvent('115342','490924',0);\">Vis alle kampe</a></div>\r\n",
+          "Count": 0,
+          "ClassInfo": "<div class='selectedtournamentspan'>\r\n<h2>29-08-2026 Jernl&#248;se </h2><table>\r\n<tr><td class='label'>Turneringsnummer:&nbsp;</td><td>S017558</td></tr><tr><td class='label'>Dato:&nbsp;</td><td>l&#248; 29-08-2026 til s&#248; 30-08-2026</td></tr><tr><td class='label'>Tilmeldingsfrist:&nbsp;</td><td>to 13-08-2026</td></tr><tr><td class='label' style='vertical-align:top;'>Spilledage:&nbsp;</td><td><table><tr><td style='vertical-align:top;' class='classdate' >lø 29&#8209;sø 30</td><td>&nbsp;</td><td class='classnames'>SEN&nbsp;A,B,C,D</td></tr></table></ td ></ tr ><tr><td class='label'>Kontakt:&nbsp;</td><td>Patrick, 12345678, <a href='mailto:jbkturnering@gmail.com' >jbkturnering@gmail.com</a></td></tr><tr><td class='label'>Senest opdateret:&nbsp;</td><td>30-08-2026 16:12:17</td></tr></table>\r\n<br /><a href='/DBF/Turnering/VisInvitation/#115342'>Turneringsinvitation</a>&nbsp;|&nbsp;<a href='/DBF/Turnering/DeltagerListe/115342'>Deltagerliste</a>\r\n</div>\r\n<br />\r\n<select onchange=\"return (this.value);\" class=\"selectbox\" >\r\n<option value=\"115342\" selected='selected'><h2>SEN A</h2></option>\r\n<option value=\"115343\" ><h2>SEN B</h2></option>\r\n<option value=\"115344\" ><h2>SEN C</h2></option>\r\n<option value=\"115345\" ><h2>SEN D</h2></option>\r\n</select>\r\n"
+        }
+      }
+    },
+    {
+      "method": "SearchTournamentMatches",
+      "http": 200,
+      "request": {
+        "callbackcontextkey": "<redacted>",
+        "tournamentclassid": 115342,
+        "tournamenteventid": 490920,
+        "clubid": 0,
+        "playerid": 0,
+        "tabnumber": 0,
+        "groupnumber": 0,
+        "locationnumber": 0,
+        "clientselectfunction": ""
+      },
+      "response": {
+        "d": {
+          "__type": "SportsResults_WebApp.SportsResults.Components.SearchRegistrationsResult",
+          "ListTruncated": false,
+          "Html": "<div class='tournamentmatches'>\r\n<select onchange=\"return TournamentResults.SelectEvent('115342','490920',this.value,'0','0','0','0');\" class=\"selectbox\" >\r\n<option value=\"0\" selected=\"selected\"\">(Vælg klub)</option><option value=\"1087\"><h2>BC37 Amager</h2></option>\r\n<option value=\"1090\"><h2>Dragør</h2></option>\r\n<option value=\"1112\"><h2>Frederiksberg</h2></option>\r\n<option value=\"1183\"><h2>Ganløse</h2></option>\r\n<option value=\"1092\"><h2>Gentofte</h2></option>\r\n<option value=\"1093\"><h2>Gladsaxe Søborg</h2></option>\r\n<option value=\"18\"><h2>Greve</h2></option>\r\n<option value=\"23\"><h2>Holbæk</h2></option>\r\n<option value=\"1149\"><h2>Holte</h2></option>\r\n<option value=\"1094\"><h2>Hvidovre</h2></option>\r\n<option value=\"1120\"><h2>Hvidovre HB2000</h2></option>\r\n<option value=\"1819\"><h2>Ikast</h2></option>\r\n<option value=\"1216\"><h2>Jernløse</h2></option>\r\n<option value=\"28\"><h2>KBK Kbh.</h2></option>\r\n<option value=\"27\"><h2>KMB2010</h2></option>\r\n<option value=\"1631\"><h2>Kolding BK</h2></option>\r\n<option value=\"22\"><h2>Lillerød</h2></option>\r\n<option value=\"1095\"><h2>Lyngby</h2></option>\r\n<option value=\"39\"><h2>Solrød Strand</h2></option>\r\n<option value=\"41\"><h2>Viby J</h2></option>\r\n<option value=\"1314\"><h2>Vindinge</h2></option>\r\n<option value=\"42\"><h2>Værløse</h2></option>\r\n</select>\r\n<br /><br /><select onchange=\"return TournamentResults.SelectEvent('115342','490920','0',this.value,'0','0', '0');\" class=\"selectbox\" >\r\n<option value=\"0\" selected=\"selected\"\">(Vælg spiller)</option><option value=\"292045\"><h2>Adam Jørgensen (Holbæk)</h2></option>\r\n<option value=\"355953\"><h2>Alexandre Gimenez (EU) (Hvidovre)</h2></option>\r\n<option value=\"305698\"><h2>Anders Rolsted (KBK Kbh.)</h2></option>\r\n<option value=\"284833\"><h2>Anna Hamborg (Kolding BK)</h2></option>\r\n<option value=\"12865\"><h2>Annika Hammeken (Jernløse)</h2></option>\r\n<option value=\"340185\"><h2>Benjamin Andreasen (Holbæk)</h2></option>\r\n<option value=\"291541\"><h2>Bertram Brændsgaard (Greve)</h2></option>\r\n<option value=\"310370\"><h2>Bertram Aavang Arvidson (Gentofte)</h2></option>\r\n<option value=\"2700\"><h2>Caroline Borup Jeppesen (Holte)</h2></option>\r\n<option value=\"86920\"><h2>Cathrine Rosengren (Greve)</h2></option>\r\n<option value=\"319537\"><h2>Christian Steffensen (Ganløse)</h2></option>\r\n<option value=\"84737\"><h2>Christoffer Müller (Gladsaxe Søborg)</h2></option>\r\n<option value=\"196234\"><h2>Daniel Beltoft (Jernløse)</h2></option>\r\n<option value=\"317438\"><h2>Emil Reuss Tranberg (Gentofte)</h2></option>\r\n<option value=\"361891\"><h2>Florian Knuppertz (Hvidovre HB2000)</h2></option>\r\n<option value=\"309539\"><h2>Jacob Grenaa Nielsen (Lyngby)</h2></option>\r\n<option value=\"283536\"><h2>Jannick John Galan Mogensen (Jernløse)</h2></option>\r\n<option value=\"292101\"><h2>Janus Olsen Beyer (Dragør)</h2></option>\r\n<option value=\"326400\"><h2>Jens Frederik Yung Bomholt (Dragør)</h2></option>\r\n<option value=\"303142\"><h2>Julius dejan savovic (Lillerød)</h2></option>\r\n<option value=\"319759\"><h2>Karl Baltzersen (KBK Kbh.)</h2></option>\r\n<option value=\"242720\"><h2>Kaspar Grundtmann (Jernløse)</h2></option>\r\n<option value=\"265641\"><h2>Kasper Holt Larsen (Jernløse)</h2></option>\r\n<option value=\"21280\"><h2>Katja Elm Sandal (Holbæk)</h2></option>\r\n<option value=\"158021\"><h2>Kristian Hansen (Jernløse)</h2></option>\r\n<option value=\"132273\"><h2>Kristine Thorsen (Holte)</h2></option>\r\n<option value=\"78988\"><h2>Lau Viskum Nielsen (BC37 Amager)</h2></option>\r\n<option value=\"294113\"><h2>Lauge Almlund Højgaard (BC37 Amager)</h2></option>\r\n<option value=\"269610\"><h2>Lukas Sung Thomsen (KBK Kbh.)</h2></option>\r\n<option value=\"302465\"><h2>Magnus Dam Pedersen (Hvidovre)</h2></option>\r\n<option value=\"1481\"><h2>Magnus Toftegaard (Jernløse)</h2></option>\r\n<option value=\"300617\"><h2>Maja Louise Søgaard (Viby J)</h2></option>\r\n<option value=\"224671\"><h2>Maria Holt (Jernløse)</h2></option>\r\n<option value=\"311093\"><h2>Mikkel Bjerg Nøhr (KMB2010)</h2></option>\r\n<option value=\"234901\"><h2>Mikkel Højgaard (Viby J)</h2></option>\r\n<option value=\"306882\"><h2>Mikkel Normann Rosenring Buch (Viby J)</h2></option>\r\n<option value=\"310184\"><h2>Mikkel Quass (BC37 Amager)</h2></option>\r\n<option value=\"273450\"><h2>Mikkel Sørensen (Holbæk)</h2></option>\r\n<option value=\"13499\"><h2>Morten Næslev (Jernløse)</h2></option>\r\n<option value=\"207144\"><h2>Oliver Kirk (Hvidovre HB2000)</h2></option>\r\n<option value=\"270950\"><h2>Oskar Emil Funch Bengtson (Værløse)</h2></option>\r\n<option value=\"235313\"><h2>Phillip Krøyer Petersen (Holte)</h2></option>\r\n<option value=\"178658\"><h2>Rasmus Adamsen Van Tran (Holbæk)</h2></option>\r\n<option value=\"50606\"><h2>Rasmus Kjeldsen (Ganløse)</h2></option>\r\n<option value=\"336202\"><h2>Sabrina Ekstrøm (Frederiksberg)</h2></option>\r\n<option value=\"301167\"><h2>Schenna Wetke Fogtmann Hallgren (Vindinge)</h2></option>\r\n<option value=\"321870\"><h2>Sebastian Bøhme Bjørn (Solrød Strand)</h2></option>\r\n<option value=\"156741\"><h2>Simone Witzansky (Jernløse)</h2></option>\r\n<option value=\"85360\"><h2>Thor Pedersen (Gladsaxe Søborg)</h2></option>\r\n<option value=\"284904\"><h2>Thor Svanekjær Jensen (Ikast)</h2></option>\r\n<option value=\"310000\"><h2>Tobias Hansen (Holbæk)</h2></option>\r\n<option value=\"229531\"><h2>Victor Nymand Wittrock (Greve)</h2></option>\r\n<option value=\"264718\"><h2>Victoria Francker (Solrød Strand)</h2></option>\r\n</select>\r\n<br /><br /><div class='tabscontainer'>\r\n<div class='smallTab'><a href='#' onclick=\"return TournamentResults.SelectEvent('115342','490920','0','0','4','0','0');\">Programinfo</a></div></div'>\r\n<div class='tabscontainer'>\r\n<div class='smallTabSelected'><a href='#' onclick=\"return TournamentResults.SelectEvent('115342','490920','0','0','0','0','0');\">Herresingle</a></div><div class='smallTab'><a href='#' onclick=\"return TournamentResults.SelectEvent('115342','490921','0','0','0','0','0');\">Damesingle</a></div><div class='smallTab'><a href='#' onclick=\"return TournamentResults.SelectEvent('115342','490922','0','0','0','0','0');\">Herredouble</a></div><div class='smallTab'><a href='#' onclick=\"return TournamentResults.SelectEvent('115342','490923','0','0','0','0','0');\">Damedouble</a></div><div class='smallTab'><a href='#' onclick=\"return TournamentResults.SelectEvent('115342','490924','0','0','0','0','0');\">Mixdouble</a></div><div class='smallTab'><a href='#' onclick=\"return TournamentResults.SelectEvent('115342','-1','0','0','1','0','0');\">N&#230;ste kampe</a></div><div class='smallTab'><a href='#' onclick=\"return TournamentResults.SelectEvent('115342','-2','0','0','2','0','0');\">Seneste kampe</a></div><div class='break'></div>\r\n</div>\r\n<br /><table class='matchlist'>\r\n<tr class='headrow'><td colspan='6'>Finale - <a href='#' onclick=\"return TournamentResults.SelectEvent('115342','490920','0','0','108','0','0');\">Se spilletr&#230;</a></td></tr>\r\n<tr><td class='matchtime'>294</td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#283536' title='Vis spiller'  >(1) Jannick John Galan Mogensen</a>, Jernl&#248;se<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#355953' title='Vis spiller'  >(3/4) Alexandre Gimenez (EU)</a>, Hvidovre<br /></td><td class='result'>15/5,15/7</td><td class='matchtime'></td></tr>\r\n<tr class='headrow'><td colspan='6'>Semifinaler - <a href='#' onclick=\"return TournamentResults.SelectEvent('115342','490920','0','0','108','0','0');\">Se spilletr&#230;</a></td></tr>\r\n<tr><td class='matchtime'>295</td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#283536' title='Vis spiller'  >(1) Jannick John Galan Mogensen</a>, Jernl&#248;se<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#269610' title='Vis spiller'  >Lukas Sung Thomsen</a>, KBK Kbh.<br /></td><td class='result'>15/6,15/11</td><td class='matchtime'></td></tr>\r\n<tr class='alt'><td class='matchtime'>296</td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#355953' title='Vis spiller'  >(3/4) Alexandre Gimenez (EU)</a>, Hvidovre<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#292045' title='Vis spiller'  >(2) Adam J&#248;rgensen</a>, Holb&#230;k<br /></td><td class='result'>12/15,15/7,15/11</td><td class='matchtime'></td></tr>\r\n<tr class='headrow'><td colspan='6'>Kvartfinaler - <a href='#' onclick=\"return TournamentResults.SelectEvent('115342','490920','0','0','108','0','0');\">Se spilletr&#230;</a></td></tr>\r\n<tr><td class='matchtime'>297</td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#283536' title='Vis spiller'  >(1) Jannick John Galan Mogensen</a>, Jernl&#248;se<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#340185' title='Vis spiller'  >Benjamin Andreasen</a>, Holb&#230;k<br /></td><td class='result'>15/13,15/8</td><td class='matchtime'></td></tr>\r\n<tr class='alt'><td class='matchtime'>298</td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#269610' title='Vis spiller'  >Lukas Sung Thomsen</a>, KBK Kbh.<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#242720' title='Vis spiller'  >Kaspar Grundtmann</a>, Jernl&#248;se<br /></td><td class='result'>17/15,15/11</td><td class='matchtime'></td></tr>\r\n<tr><td class='matchtime'>299</td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#355953' title='Vis spiller'  >(3/4) Alexandre Gimenez (EU)</a>, Hvidovre<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#207144' title='Vis spiller'  >Oliver Kirk</a>, Hvidovre HB2000<br /></td><td class='result'>13/15,15/6,15/12</td><td class='matchtime'></td></tr>\r\n<tr class='alt'><td class='matchtime'>300</td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#292045' title='Vis spiller'  >(2) Adam J&#248;rgensen</a>, Holb&#230;k<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#317438' title='Vis spiller'  >Emil Reuss Tranberg</a>, Gentofte<br /></td><td class='result'>15/8,15/10</td><td class='matchtime'></td></tr>\r\n<tr class='headrow'><td colspan='6'>Pulje 1 - <a href='#' onclick=\"return TournamentResults.SelectEvent('115342','490920','0','0','5','1','0');\">Se Puljestilling</a></td></tr>\r\n<tr><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#302465' title='Vis spiller'  >Magnus Dam Pedersen</a>, Hvidovre<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#361891' title='Vis spiller'  >Florian Knuppertz</a>, Hvidovre HB2000<br /></td><td class='result'>12/15,15/5,15/3</td><td class='matchtime'></td></tr>\r\n<tr class='alt'><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#283536' title='Vis spiller'  >(1) Jannick John Galan Mogensen</a>, Jernl&#248;se<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#302465' title='Vis spiller'  >Magnus Dam Pedersen</a>, Hvidovre<br /></td><td class='result'>21/19,15/10</td><td class='matchtime'></td></tr>\r\n<tr><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#283536' title='Vis spiller'  >(1) Jannick John Galan Mogensen</a>, Jernl&#248;se<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#361891' title='Vis spiller'  >Florian Knuppertz</a>, Hvidovre HB2000<br /></td><td class='result'>15/12,15/11</td><td class='matchtime'></td></tr>\r\n<tr class='headrow'><td colspan='6'>Pulje 2 - <a href='#' onclick=\"return TournamentResults.SelectEvent('115342','490920','0','0','5','2','0');\">Se Puljestilling</a></td></tr>\r\n<tr><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#291541' title='Vis spiller'  >Bertram Br&#230;ndsgaard</a>, Greve<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#85360' title='Vis spiller'  >Thor Pedersen</a>, Gladsaxe S&#248;borg<br /></td><td class='result'>15/13,15/8</td><td class='matchtime'></td></tr>\r\n<tr class='alt'><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#292045' title='Vis spiller'  >(2) Adam J&#248;rgensen</a>, Holb&#230;k<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#291541' title='Vis spiller'  >Bertram Br&#230;ndsgaard</a>, Greve<br /></td><td class='result'>15/3,12/15,15/7</td><td class='matchtime'></td></tr>\r\n<tr><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#292045' title='Vis spiller'  >(2) Adam J&#248;rgensen</a>, Holb&#230;k<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#85360' title='Vis spiller'  >Thor Pedersen</a>, Gladsaxe S&#248;borg<br /></td><td class='result'>15/2,15/12</td><td class='matchtime'></td></tr>\r\n<tr class='headrow'><td colspan='6'>Pulje 3 - <a href='#' onclick=\"return TournamentResults.SelectEvent('115342','490920','0','0','5','3','0');\">Se Puljestilling</a></td></tr>\r\n<tr><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#319759' title='Vis spiller'  >Karl Baltzersen</a>, KBK Kbh.<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#78988' title='Vis spiller'  >Lau Viskum Nielsen</a>, BC37 Amager<br /></td><td class='result'>15/12,15/12</td><td class='matchtime'></td></tr>\r\n<tr class='alt'><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#355953' title='Vis spiller'  >(3/4) Alexandre Gimenez (EU)</a>, Hvidovre<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#309539' title='Vis spiller'  >Jacob Grenaa Nielsen (SUB)</a>, Lyngby<br /></td><td class='result'>15/11,15/9</td><td class='matchtime'></td></tr>\r\n<tr><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#355953' title='Vis spiller'  >(3/4) Alexandre Gimenez (EU)</a>, Hvidovre<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#78988' title='Vis spiller'  >Lau Viskum Nielsen</a>, BC37 Amager<br /></td><td class='result'>16/14,12/15,15/7</td><td class='matchtime'></td></tr>\r\n<tr class='alt'><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#319759' title='Vis spiller'  >Karl Baltzersen</a>, KBK Kbh.<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#309539' title='Vis spiller'  >Jacob Grenaa Nielsen (SUB)</a>, Lyngby<br /></td><td class='result'>15/13,17/15</td><td class='matchtime'></td></tr>\r\n<tr><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#355953' title='Vis spiller'  >(3/4) Alexandre Gimenez (EU)</a>, Hvidovre<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#319759' title='Vis spiller'  >Karl Baltzersen</a>, KBK Kbh.<br /></td><td class='result'>15/7,15/10</td><td class='matchtime'></td></tr>\r\n<tr class='alt'><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#309539' title='Vis spiller'  >Jacob Grenaa Nielsen (SUB)</a>, Lyngby<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#78988' title='Vis spiller'  >Lau Viskum Nielsen</a>, BC37 Amager<br /></td><td class='result'>10/15,15/10,15/11</td><td class='matchtime'></td></tr>\r\n<tr class='headrow'><td colspan='6'>Pulje 4 - <a href='#' onclick=\"return TournamentResults.SelectEvent('115342','490920','0','0','5','4','0');\">Se Puljestilling</a></td></tr>\r\n<tr><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#326400' title='Vis spiller'  >Jens Frederik Yung Bomholt</a>, Drag&#248;r<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#311093' title='Vis spiller'  >Mikkel Bjerg N&#248;hr</a>, KMB2010<br /></td><td class='result'>15/6,15/11</td><td class='matchtime'></td></tr>\r\n<tr class='alt'><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#242720' title='Vis spiller'  >Kaspar Grundtmann</a>, Jernl&#248;se<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#235313' title='Vis spiller'  >(3/4) Phillip Kr&#248;yer Petersen</a>, Holte<br /></td><td class='result'>15/13,10/15,15/13</td><td class='matchtime'></td></tr>\r\n<tr><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#235313' title='Vis spiller'  >(3/4) Phillip Kr&#248;yer Petersen</a>, Holte<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#326400' title='Vis spiller'  >Jens Frederik Yung Bomholt</a>, Drag&#248;r<br /></td><td class='result'>15/13,15/8</td><td class='matchtime'></td></tr>\r\n<tr class='alt'><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#242720' title='Vis spiller'  >Kaspar Grundtmann</a>, Jernl&#248;se<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#311093' title='Vis spiller'  >Mikkel Bjerg N&#248;hr</a>, KMB2010<br /></td><td class='result'>15/11,15/4</td><td class='matchtime'></td></tr>\r\n<tr><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#235313' title='Vis spiller'  >(3/4) Phillip Kr&#248;yer Petersen</a>, Holte<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#311093' title='Vis spiller'  >Mikkel Bjerg N&#248;hr</a>, KMB2010<br /></td><td class='result'>15/12,15/7</td><td class='matchtime'></td></tr>\r\n<tr class='alt'><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#242720' title='Vis spiller'  >Kaspar Grundtmann</a>, Jernl&#248;se<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#326400' title='Vis spiller'  >Jens Frederik Yung Bomholt</a>, Drag&#248;r<br /></td><td class='result'>15/7,15/13</td><td class='matchtime'></td></tr>\r\n<tr class='headrow'><td colspan='6'>Pulje 5 - <a href='#' onclick=\"return TournamentResults.SelectEvent('115342','490920','0','0','5','5','0');\">Se Puljestilling</a></td></tr>\r\n<tr><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#292101' title='Vis spiller'  >Janus Olsen Beyer</a>, Drag&#248;r<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#13499' title='Vis spiller'  >Morten N&#230;slev</a>, Jernl&#248;se<br /></td><td class='result'>15/8,15/10</td><td class='matchtime'></td></tr>\r\n<tr class='alt'><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#207144' title='Vis spiller'  >Oliver Kirk</a>, Hvidovre HB2000<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#284904' title='Vis spiller'  >Thor Svanekj&#230;r Jensen</a>, Ikast<br /></td><td class='result'>6/15,16/14,15/9</td><td class='matchtime'></td></tr>\r\n<tr><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#207144' title='Vis spiller'  >Oliver Kirk</a>, Hvidovre HB2000<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#13499' title='Vis spiller'  >Morten N&#230;slev</a>, Jernl&#248;se<br /></td><td class='result'>15/9,15/4</td><td class='matchtime'></td></tr>\r\n<tr class='alt'><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#292101' title='Vis spiller'  >Janus Olsen Beyer</a>, Drag&#248;r<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#284904' title='Vis spiller'  >Thor Svanekj&#230;r Jensen</a>, Ikast<br /></td><td class='result'>15/12,15/12</td><td class='matchtime'></td></tr>\r\n<tr><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#207144' title='Vis spiller'  >Oliver Kirk</a>, Hvidovre HB2000<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#292101' title='Vis spiller'  >Janus Olsen Beyer</a>, Drag&#248;r<br /></td><td class='result'>7/15,15/5,15/11</td><td class='matchtime'></td></tr>\r\n<tr class='alt'><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#284904' title='Vis spiller'  >Thor Svanekj&#230;r Jensen</a>, Ikast<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#13499' title='Vis spiller'  >Morten N&#230;slev</a>, Jernl&#248;se<br /></td><td class='result'>15/7,15/12</td><td class='matchtime'></td></tr>\r\n<tr class='headrow'><td colspan='6'>Pulje 6 - <a href='#' onclick=\"return TournamentResults.SelectEvent('115342','490920','0','0','5','6','0');\">Se Puljestilling</a></td></tr>\r\n<tr><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#269610' title='Vis spiller'  >Lukas Sung Thomsen</a>, KBK Kbh.<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#303142' title='Vis spiller'  >Julius dejan savovic</a>, Liller&#248;d<br /></td><td class='result'>15/9,15/13</td><td class='matchtime'></td></tr>\r\n<tr class='alt'><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#294113' title='Vis spiller'  >Lauge Almlund H&#248;jgaard</a>, BC37 Amager<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#178658' title='Vis spiller'  >Rasmus Adamsen Van Tran</a>, Holb&#230;k<br /></td><td class='result'>15/3,15/12</td><td class='matchtime'></td></tr>\r\n<tr><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#269610' title='Vis spiller'  >Lukas Sung Thomsen</a>, KBK Kbh.<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#178658' title='Vis spiller'  >Rasmus Adamsen Van Tran</a>, Holb&#230;k<br /></td><td class='result'>W.O.</td><td class='matchtime'></td></tr>\r\n<tr class='alt'><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#294113' title='Vis spiller'  >Lauge Almlund H&#248;jgaard</a>, BC37 Amager<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#303142' title='Vis spiller'  >Julius dejan savovic</a>, Liller&#248;d<br /></td><td class='result'>15/10,15/6</td><td class='matchtime'></td></tr>\r\n<tr><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#303142' title='Vis spiller'  >Julius dejan savovic</a>, Liller&#248;d<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#178658' title='Vis spiller'  >Rasmus Adamsen Van Tran</a>, Holb&#230;k<br /></td><td class='result'>W.O.</td><td class='matchtime'></td></tr>\r\n<tr class='alt'><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#269610' title='Vis spiller'  >Lukas Sung Thomsen</a>, KBK Kbh.<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#294113' title='Vis spiller'  >Lauge Almlund H&#248;jgaard</a>, BC37 Amager<br /></td><td class='result'>13/15,15/10,15/9</td><td class='matchtime'></td></tr>\r\n<tr class='headrow'><td colspan='6'>Pulje 7 - <a href='#' onclick=\"return TournamentResults.SelectEvent('115342','490920','0','0','5','7','0');\">Se Puljestilling</a></td></tr>\r\n<tr><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#317438' title='Vis spiller'  >Emil Reuss Tranberg</a>, Gentofte<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#321870' title='Vis spiller'  >Sebastian B&#248;hme Bj&#248;rn</a>, Solr&#248;d Strand<br /></td><td class='result'>15/13,15/10</td><td class='matchtime'></td></tr>\r\n<tr class='alt'><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#305698' title='Vis spiller'  >Anders Rolsted</a>, KBK Kbh.<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#234901' title='Vis spiller'  >Mikkel H&#248;jgaard</a>, Viby J<br /></td><td class='result'>13/15,15/11,15/9</td><td class='matchtime'></td></tr>\r\n<tr><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#321870' title='Vis spiller'  >Sebastian B&#248;hme Bj&#248;rn</a>, Solr&#248;d Strand<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#305698' title='Vis spiller'  >Anders Rolsted</a>, KBK Kbh.<br /></td><td class='result'>15/11,15/11</td><td class='matchtime'></td></tr>\r\n<tr class='alt'><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#317438' title='Vis spiller'  >Emil Reuss Tranberg</a>, Gentofte<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#234901' title='Vis spiller'  >Mikkel H&#248;jgaard</a>, Viby J<br /></td><td class='result'>15/13,16/14</td><td class='matchtime'></td></tr>\r\n<tr><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#317438' title='Vis spiller'  >Emil Reuss Tranberg</a>, Gentofte<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#305698' title='Vis spiller'  >Anders Rolsted</a>, KBK Kbh.<br /></td><td class='result'>15/10,15/9</td><td class='matchtime'></td></tr>\r\n<tr class='alt'><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#321870' title='Vis spiller'  >Sebastian B&#248;hme Bj&#248;rn</a>, Solr&#248;d Strand<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#234901' title='Vis spiller'  >Mikkel H&#248;jgaard</a>, Viby J<br /></td><td class='result'>15/10,15/9</td><td class='matchtime'></td></tr>\r\n<tr class='headrow'><td colspan='6'>Pulje 8 - <a href='#' onclick=\"return TournamentResults.SelectEvent('115342','490920','0','0','5','8','0');\">Se Puljestilling</a></td></tr>\r\n<tr><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#84737' title='Vis spiller'  >Christoffer M&#252;ller</a>, Gladsaxe S&#248;borg<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#310184' title='Vis spiller'  >Mikkel Quass</a>, BC37 Amager<br /></td><td class='result'>15/6,16/14</td><td class='matchtime'></td></tr>\r\n<tr class='alt'><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#340185' title='Vis spiller'  >Benjamin Andreasen</a>, Holb&#230;k<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#158021' title='Vis spiller'  >Kristian Hansen</a>, Jernl&#248;se<br /></td><td class='result'>12/15,15/9,15/2</td><td class='matchtime'></td></tr>\r\n<tr><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#340185' title='Vis spiller'  >Benjamin Andreasen</a>, Holb&#230;k<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#310184' title='Vis spiller'  >Mikkel Quass</a>, BC37 Amager<br /></td><td class='result'>15/13,9/15,15/7</td><td class='matchtime'></td></tr>\r\n<tr class='alt'><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#84737' title='Vis spiller'  >Christoffer M&#252;ller</a>, Gladsaxe S&#248;borg<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#158021' title='Vis spiller'  >Kristian Hansen</a>, Jernl&#248;se<br /></td><td class='result'>15/10,15/9</td><td class='matchtime'></td></tr>\r\n<tr><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#340185' title='Vis spiller'  >Benjamin Andreasen</a>, Holb&#230;k<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#84737' title='Vis spiller'  >Christoffer M&#252;ller</a>, Gladsaxe S&#248;borg<br /></td><td class='result'>20/18,17/15</td><td class='matchtime'></td></tr>\r\n<tr class='alt'><td class='matchtime'></td><td class='player winner'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#310184' title='Vis spiller'  >Mikkel Quass</a>, BC37 Amager<br /></td><td class='sep'>-</td><td class='player'><a href='http://badmintonplayer.dk/DBF/Spiller/VisSpiller/#158021' title='Vis spiller'  >Kristian Hansen</a>, Jernl&#248;se<br /></td><td class='result'>15/6,15/10</td><td class='matchtime'></td></tr>\r\n<tr><td colspan='6'><br/>BP resultat/program visning - Version: 9.1 - 26-14-2024</td></tr>\r\n</table>\r\n</div><br/>\r\n",
+          "Count": 0,
+          "ClassInfo": "<div class='selectedtournamentspan'>\r\n<h2>29-08-2026 Jernl&#248;se </h2><table>\r\n<tr><td class='label'>Turneringsnummer:&nbsp;</td><td>S017558</td></tr><tr><td class='label'>Dato:&nbsp;</td><td>l&#248; 29-08-2026 til s&#248; 30-08-2026</td></tr><tr><td class='label'>Tilmeldingsfrist:&nbsp;</td><td>to 13-08-2026</td></tr><tr><td class='label' style='vertical-align:top;'>Spilledage:&nbsp;</td><td><table><tr><td style='vertical-align:top;' class='classdate' >lø 29&#8209;sø 30</td><td>&nbsp;</td><td class='classnames'>SEN&nbsp;A,B,C,D</td></tr></table></ td ></ tr ><tr><td class='label'>Kontakt:&nbsp;</td><td>Patrick, 12345678, <a href='mailto:jbkturnering@gmail.com' >jbkturnering@gmail.com</a></td></tr><tr><td class='label'>Senest opdateret:&nbsp;</td><td>30-08-2026 16:12:17</td></tr></table>\r\n<br /><a href='/DBF/Turnering/VisInvitation/#115342'>Turneringsinvitation</a>&nbsp;|&nbsp;<a href='/DBF/Turnering/DeltagerListe/115342'>Deltagerliste</a>\r\n</div>\r\n<br />\r\n<select onchange=\"return (this.value);\" class=\"selectbox\" >\r\n<option value=\"115342\" selected='selected'><h2>SEN A</h2></option>\r\n<option value=\"115343\" ><h2>SEN B</h2></option>\r\n<option value=\"115344\" ><h2>SEN C</h2></option>\r\n<option value=\"115345\" ><h2>SEN D</h2></option>\r\n</select>\r\n"
+        }
+      }
+    }
+  ]
+}
