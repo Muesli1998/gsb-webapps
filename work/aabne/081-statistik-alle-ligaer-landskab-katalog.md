@@ -191,6 +191,46 @@ afprøvet endnu, kun konstateret som "ikke bevist" eller ikke undersøgt:
 Rapportér resultatet af begge spor under et nyt "Spørgsmål"-svar, med
 konkret evidens (URL, kald, svar), før noget besluttes om den dyre iteration.
 
+**Svar på Christoffers nye spor (2026-09-20):** Begge ruter er nu faktisk
+afprøvet. `SearchTournamentClass` blev kaldt via
+`POST https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/SearchTournamentClass`
+med frisk `SR_CallbackContext` fra
+`https://badmintonplayer.dk/DBF/HoldTurnering/Stilling/#1,2026,,1,1,,,,`.
+Proxy-signaturen er verificeret som
+`(callbackcontextkey, selectfunction, seasonid, agegroupid, classid, clubid,
+fromdatestring, todatestring, selectopenonly, regionids, adminclubid)`.
+Tre kombinationer blev prøvet: 2026/region 1, 2026/region 8 og 2025/region
+1, med `agegroupid=1`, `classid=0`, `clubid=0`, tomme datofiltre,
+`selectopenonly=false` og `selectfunction=SelectTournamentClass`. Alle tre
+returnerede HTTP 500 med JSON-beskeden `There was an error processing the
+request.` — ingen turneringsliste. Det er derfor en afprøvet, men ikke
+brugbar rute med disse dokumenterede parametre; callback-tokenet er ikke
+gemt i evidensfilen.
+
+Hjemmesideruten virker. Sidens inline JavaScript kalder
+`GetLeagueStanding` på samme WebService1-endpoint med hash-positionerne:
+`subPage, seasonID, leagueGroupID, ageGroupID, regionID,
+leagueGroupTeamID, leagueMatchID, clubID, playerID`. Friske POST-kald med
+`subPage=1`, `ageGroupID=1` og alle øvrige ikke-relevante ID'er `null`
+returnerede HTTP 200 og HTML-lister uden klubfilter:
+
+- URL-hash `#1,2026,,1,1,,,,`: `BADDAN SEN 2026/2027`, 27 pulje-/gruppe-links
+  under 7 overskrifter.
+- URL-hash `#1,2026,,1,8,,,,`: `BADKBH SEN 2026/2027`, 13 pulje-/gruppe-links
+  under 8 overskrifter.
+- URL-hash `#1,2025,,1,1,,,,`: `BADDAN SEN 2025/2026`, 56 pulje-/gruppe-links
+  under 14 overskrifter.
+
+Eksempel på faktisk svar fra region 8 er `BADKBH SEN 2026/2027` med
+`Københavnsserien`, `1. Serie`, `2. Serie`, `3. Serie`, `31. Serie`,
+`32. Serie` og `33. Serie`; svarenes links indeholder de næste
+`leagueGroupID`-værdier, fx `18894` og `18895`. Den brugbare rute er derfor
+fundet: hent `GetLeagueStanding` pr. sæson, aldersgruppe og region, parse
+HTML-svaret for liga-/puljenavne og `leagueGroupID`, og følg derefter de
+konkrete gruppe-ID'er. Den fulde 2010–2026-indsamling er ikke startet endnu;
+resultatet og eventuelle huller afventer separat planlægning af sæson- og
+regiondækningen.
+
 ## Resultatnote
 
 **Trin 1 — afklaring (færdig; trin 2 ikke startet):** Ingen brugbar,

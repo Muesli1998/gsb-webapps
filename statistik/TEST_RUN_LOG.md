@@ -600,3 +600,13 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
   Graf-genvejen er derfor ikke brugbar. Blind 16-sæson-proxy er 95.952 kald
   før kampdetaljer; fuld iteration og permanent datasæt blev ikke startet.
 
+- 2026-09-20 — Opgave 081: `SearchTournamentClass` blev kaldt 3 gange med
+  frisk callback-kontekst (2026/region 1, 2026/region 8, 2025/region 1);
+  alle returnerede HTTP 500 og ingen liste. Den offentlige
+  `GetLeagueStanding`-rute blev kaldt 3 gange via
+  `POST .../WebService1.asmx/GetLeagueStanding`: 2026/region 1 returnerede
+  27 gruppe-links, 2026/region 8 returnerede 13, og 2025/region 1
+  returnerede 56. Rå, callback-redigeret evidens ligger i
+  `results/081-route-probe.json`. Fuld historisk indsamling blev ikke
+  startet.
+

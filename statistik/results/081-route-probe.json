@@ -1,0 +1,168 @@
+{
+  "pageUrl": "https://badmintonplayer.dk/DBF/HoldTurnering/Stilling/#1,2026,,1,1,,,,",
+  "pageHttp": 200,
+  "callbackContextLength": 96,
+  "searchTournamentClass": [
+    {
+      "name": "2026-region-1",
+      "seasonid": 2026,
+      "regionids": "1",
+      "method": "SearchTournamentClass",
+      "http": 500,
+      "request": {
+        "callbackcontextkey": "<redacted>",
+        "selectfunction": "SelectTournamentClass",
+        "seasonid": 2026,
+        "agegroupid": 1,
+        "classid": 0,
+        "clubid": 0,
+        "fromdatestring": "",
+        "todatestring": "",
+        "selectopenonly": false,
+        "regionids": "1",
+        "adminclubid": 0
+      },
+      "response": {
+        "Message": "There was an error processing the request.",
+        "StackTrace": "",
+        "ExceptionType": ""
+      }
+    },
+    {
+      "name": "2026-region-8",
+      "seasonid": 2026,
+      "regionids": "8",
+      "method": "SearchTournamentClass",
+      "http": 500,
+      "request": {
+        "callbackcontextkey": "<redacted>",
+        "selectfunction": "SelectTournamentClass",
+        "seasonid": 2026,
+        "agegroupid": 1,
+        "classid": 0,
+        "clubid": 0,
+        "fromdatestring": "",
+        "todatestring": "",
+        "selectopenonly": false,
+        "regionids": "8",
+        "adminclubid": 0
+      },
+      "response": {
+        "Message": "There was an error processing the request.",
+        "StackTrace": "",
+        "ExceptionType": ""
+      }
+    },
+    {
+      "name": "2025-region-1",
+      "seasonid": 2025,
+      "regionids": "1",
+      "method": "SearchTournamentClass",
+      "http": 500,
+      "request": {
+        "callbackcontextkey": "<redacted>",
+        "selectfunction": "SelectTournamentClass",
+        "seasonid": 2025,
+        "agegroupid": 1,
+        "classid": 0,
+        "clubid": 0,
+        "fromdatestring": "",
+        "todatestring": "",
+        "selectopenonly": false,
+        "regionids": "1",
+        "adminclubid": 0
+      },
+      "response": {
+        "Message": "There was an error processing the request.",
+        "StackTrace": "",
+        "ExceptionType": ""
+      }
+    }
+  ],
+  "getLeagueStanding": [
+    {
+      "name": "2026-region-1",
+      "subPage": 1,
+      "seasonID": 2026,
+      "leagueGroupID": null,
+      "ageGroupID": 1,
+      "regionID": 1,
+      "method": "GetLeagueStanding",
+      "http": 200,
+      "request": {
+        "callbackcontextkey": "<redacted>",
+        "subPage": 1,
+        "seasonID": 2026,
+        "leagueGroupID": null,
+        "ageGroupID": 1,
+        "regionID": 1,
+        "leagueGroupTeamID": null,
+        "leagueMatchID": null,
+        "clubID": null,
+        "playerID": null
+      },
+      "response": {
+        "d": {
+          "__type": "SportsResults_WebApp.SportsResults.Components.WebMethodResult",
+          "html": "<a href=\"#\" onclick=\"return ShowStanding('0', '', '', '', '', '', '', '', '');\" class='team'>S&#248;g andre r&#230;kker</a><br />\r\n<br />\r\n<h2>BADDAN SEN 2026/2027</h2><table class='selectgroup' >\r\n<tr class='divisionrow'><td><h3>Badmintonligaen</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18872', '1', '1', '', '', '', '');\" class='team'>Grundspil</a></td></tr>\r\n<tr class='divisionrow'><td><h3>1. division</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18833', '1', '1', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18834', '1', '1', '', '', '', '');\" class='team'>Pulje 2</a></td></tr>\r\n<tr class='divisionrow'><td><h3>2. division</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18838', '1', '1', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18839', '1', '1', '', '', '', '');\" class='team'>Pulje 2</a></td></tr>\r\n<tr class='divisionrow'><td><h3>3. division</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18842', '1', '1', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18843', '1', '1', '', '', '', '');\" class='team'>Pulje 2</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18844', '1', '1', '', '', '', '');\" class='team'>Pulje 3</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18845', '1', '1', '', '', '', '');\" class='team'>Pulje 4</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Danmarksserien</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18854', '1', '1', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18855', '1', '1', '', '', '', '');\" class='team'>Pulje 2</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18856', '1', '1', '', '', '', '');\" class='team'>Pulje 3</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18857', '1', '1', '', '', '', '');\" class='team'>Pulje 4</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18858', '1', '1', '', '', '', '');\" class='team'>Pulje 5</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18859', '1', '1', '', '', '', '');\" class='team'>Pulje 6</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18860', '1', '1', '', '', '', '');\" class='team'>Pulje 7</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18861', '1', '1', '', '', '', '');\" class='team'>Pulje 8</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Indberettede spilletider for runde 8 og 10</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18878', '1', '1', '', '', '', '');\" class='team'>1. division pulje 1</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18879', '1', '1', '', '', '', '');\" class='team'>2. division pulje 1</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18880', '1', '1', '', '', '', '');\" class='team'>3. division, pulje 1/3</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18881', '1', '1', '', '', '', '');\" class='team'>DS pulje 1/3</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18882', '1', '1', '', '', '', '');\" class='team'>DS pulje 5/7</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Indberettede spilletider for runde 9 og 11</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18883', '1', '1', '', '', '', '');\" class='team'>1. division pulje 2</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18884', '1', '1', '', '', '', '');\" class='team'>2. division pulje 2</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18885', '1', '1', '', '', '', '');\" class='team'>3. division, pulje 2/4</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18886', '1', '1', '', '', '', '');\" class='team'>DS pulje 2/4</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18887', '1', '1', '', '', '', '');\" class='team'>DS pulje 6/8</a></td></tr>\r\n</table>\r\n"
+        }
+      }
+    },
+    {
+      "name": "2026-region-8",
+      "subPage": 1,
+      "seasonID": 2026,
+      "leagueGroupID": null,
+      "ageGroupID": 1,
+      "regionID": 8,
+      "method": "GetLeagueStanding",
+      "http": 200,
+      "request": {
+        "callbackcontextkey": "<redacted>",
+        "subPage": 1,
+        "seasonID": 2026,
+        "leagueGroupID": null,
+        "ageGroupID": 1,
+        "regionID": 8,
+        "leagueGroupTeamID": null,
+        "leagueMatchID": null,
+        "clubID": null,
+        "playerID": null
+      },
+      "response": {
+        "d": {
+          "__type": "SportsResults_WebApp.SportsResults.Components.WebMethodResult",
+          "html": "<a href=\"#\" onclick=\"return ShowStanding('0', '', '', '', '', '', '', '', '');\" class='team'>S&#248;g andre r&#230;kker</a><br />\r\n<br />\r\n<h2>BADKBH SEN 2026/2027</h2><table class='selectgroup' >\r\n<tr class='divisionrow'><td><h3>K&#248;benhavnsserien</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18894', '1', '8', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18895', '1', '8', '', '', '', '');\" class='team'>Pulje 2</a></td></tr>\r\n<tr class='divisionrow'><td><h3>K&#248;benhavnsserien - spilletider i slutspillet</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18902', '1', '8', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18903', '1', '8', '', '', '', '');\" class='team'>Pulje 2</a></td></tr>\r\n<tr class='divisionrow'><td><h3>1. Serie</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18898', '1', '8', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18899', '1', '8', '', '', '', '');\" class='team'>Pulje 2</a></td></tr>\r\n<tr class='divisionrow'><td><h3>2. Serie</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18900', '1', '8', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18901', '1', '8', '', '', '', '');\" class='team'>Pulje 2</a></td></tr>\r\n<tr class='divisionrow'><td><h3>3. Serie</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18904', '1', '8', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18905', '1', '8', '', '', '', '');\" class='team'>Pulje 2</a></td></tr>\r\n<tr class='divisionrow'><td><h3>31. Serie</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18906', '1', '8', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='divisionrow'><td><h3>32. Serie</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18907', '1', '8', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='divisionrow'><td><h3>33. Serie</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18908', '1', '8', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n</table>\r\n"
+        }
+      }
+    },
+    {
+      "name": "2025-region-1",
+      "subPage": 1,
+      "seasonID": 2025,
+      "leagueGroupID": null,
+      "ageGroupID": 1,
+      "regionID": 1,
+      "method": "GetLeagueStanding",
+      "http": 200,
+      "request": {
+        "callbackcontextkey": "<redacted>",
+        "subPage": 1,
+        "seasonID": 2025,
+        "leagueGroupID": null,
+        "ageGroupID": 1,
+        "regionID": 1,
+        "leagueGroupTeamID": null,
+        "leagueMatchID": null,
+        "clubID": null,
+        "playerID": null
+      },
+      "response": {
+        "d": {
+          "__type": "SportsResults_WebApp.SportsResults.Components.WebMethodResult",
+          "html": "<a href=\"#\" onclick=\"return ShowStanding('0', '', '', '', '', '', '', '', '');\" class='team'>S&#248;g andre r&#230;kker</a><br />\r\n<br />\r\n<h2>BADDAN SEN 2025/2026</h2><table class='selectgroup' >\r\n<tr class='divisionrow'><td><h3>Badmintonligaen\t</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17882', '1', '1', '', '', '', '');\" class='team'>Bronzekamp</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17880', '1', '1', '', '', '', '');\" class='team'>Grundspil</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17881', '1', '1', '', '', '', '');\" class='team'>Guldkamp</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17886', '1', '1', '', '', '', '');\" class='team'>Kvalifikationskamp liga/1. division</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17884', '1', '1', '', '', '', '');\" class='team'>Kvartfinaler</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17883', '1', '1', '', '', '', '');\" class='team'>Semifinaler</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Badmintonligaen (oversidder-runder)</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '18801', '1', '1', '', '', '', '');\" class='team'>Oversidder-runder/papirhold</a></td></tr>\r\n<tr class='divisionrow'><td><h3>1. division</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17889', '1', '1', '', '', '', '');\" class='team'>Kvalifikation til Badmintonligaen</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17891', '1', '1', '', '', '', '');\" class='team'>Kvalifikationskampe til 1. division</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17890', '1', '1', '', '', '', '');\" class='team'>Nedrykning fra 1. division</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17887', '1', '1', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17888', '1', '1', '', '', '', '');\" class='team'>Pulje 2</a></td></tr>\r\n<tr class='divisionrow'><td><h3>1. division (oversidder-runder)</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '18802', '1', '1', '', '', '', '');\" class='team'>Oversidder-runder/papirhold</a></td></tr>\r\n<tr class='divisionrow'><td><h3>2. division</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17894', '1', '1', '', '', '', '');\" class='team'>Kvalifikation til 1. division</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17895', '1', '1', '', '', '', '');\" class='team'>Nedrykning fra 2. division</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17892', '1', '1', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17893', '1', '1', '', '', '', '');\" class='team'>Pulje 2</a></td></tr>\r\n<tr class='divisionrow'><td><h3>2. division (oversidder-runder)</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '18803', '1', '1', '', '', '', '');\" class='team'>Oversidder-runder/papirhold</a></td></tr>\r\n<tr class='divisionrow'><td><h3>3. division</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17910', '1', '1', '', '', '', '');\" class='team'>Kvalifikation til 2.division pulje A</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17911', '1', '1', '', '', '', '');\" class='team'>Kvalifikation til 2.division pulje B</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17915', '1', '1', '', '', '', '');\" class='team'>Kvalkampe: Nedrykning til DS</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17914', '1', '1', '', '', '', '');\" class='team'>Kvalkampe: Oprykning til 2. division</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17912', '1', '1', '', '', '', '');\" class='team'>Nedrykning fra 3. division pulje A</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17913', '1', '1', '', '', '', '');\" class='team'>Nedrykning fra 3. division pulje B</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17906', '1', '1', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17907', '1', '1', '', '', '', '');\" class='team'>Pulje 2</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17908', '1', '1', '', '', '', '');\" class='team'>Pulje 3</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17909', '1', '1', '', '', '', '');\" class='team'>Pulje 4</a></td></tr>\r\n<tr class='divisionrow'><td><h3>3. division (oversidder-runde)</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '18804', '1', '1', '', '', '', '');\" class='team'>Oversidder-runder/papirhold</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Danmarksserien</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17924', '1', '1', '', '', '', '');\" class='team'>Kvalifikation til 3. division pulje A</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17925', '1', '1', '', '', '', '');\" class='team'>Kvalifikation til 3. division pulje B</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17926', '1', '1', '', '', '', '');\" class='team'>Kvalifikation til 3. division pulje C</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17927', '1', '1', '', '', '', '');\" class='team'>Kvalifikation til 3. division pulje D</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17933', '1', '1', '', '', '', '');\" class='team'>Kvalkampe: Nedrykning til KS</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17932', '1', '1', '', '', '', '');\" class='team'>Kvalkampe: Oprykning til 3. division</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17928', '1', '1', '', '', '', '');\" class='team'>Nedrykning fra Danmarksserien pulje A</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17929', '1', '1', '', '', '', '');\" class='team'>Nedrykning fra Danmarksserien pulje B</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17930', '1', '1', '', '', '', '');\" class='team'>Nedrykning fra Danmarksserien pulje C</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17931', '1', '1', '', '', '', '');\" class='team'>Nedrykning fra Danmarksserien pulje D</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17916', '1', '1', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17917', '1', '1', '', '', '', '');\" class='team'>Pulje 2</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17918', '1', '1', '', '', '', '');\" class='team'>Pulje 3</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17919', '1', '1', '', '', '', '');\" class='team'>Pulje 4</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17920', '1', '1', '', '', '', '');\" class='team'>Pulje 5</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17921', '1', '1', '', '', '', '');\" class='team'>Pulje 6</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17922', '1', '1', '', '', '', '');\" class='team'>Pulje 7</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '17923', '1', '1', '', '', '', '');\" class='team'>Pulje 8</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Danmarksserien (oversidder-runde)</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '18805', '1', '1', '', '', '', '');\" class='team'>Oversidder-runder/papirhold</a></td></tr>\r\n<tr class='divisionrow'><td><h3>DM I HYGGEFJER (4+2 DOUBLE-6 kampe)</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '18825', '1', '1', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='divisionrow'><td><h3>DM I HYGGEFJER (4 Sp. DOUBLE-4 kampe)/SEN+ (2+2)</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '18826', '1', '1', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='divisionrow'><td><h3>DM I HYGGEFJER (4 spillere SINGLE/DOUBLE-5 kampe)</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '18827', '1', '1', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='divisionrow'><td><h3>DM I HYGGEFJER (4+2 m/SINGLE-8 kampe)</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '18797', '1', '1', '', '', '', '');\" class='team'>SEN 1 (4+2) Finaleslutspil (1. - 4. plads)</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '18795', '1', '1', '', '', '', '');\" class='team'>SEN 1 (4+2) Pulje 1</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '18796', '1', '1', '', '', '', '');\" class='team'>SEN 1 (4+2) Pulje 2</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '18799', '1', '1', '', '', '', '');\" class='team'>SEN 2 (4+2 single/double/mix)</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2025', '18800', '1', '1', '', '', '', '');\" class='team'>SEN 3 (4+2 single/double/mix)</a></td></tr>\r\n</table>\r\n"
+        }
+      }
+    }
+  ]
+}
