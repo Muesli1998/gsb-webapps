@@ -6,7 +6,7 @@
     ['hjemmeude', 'Hjemme/Ude'], ['modstander', 'Modstanderhold'], ['saeson', 'Sæson'], ['karriere', '🏅 Klub-karriere']
   ];
   var AGE_GROUPS = { all: null, youth: [2, 3, 4, 5, 6, 18], senior: [1], veteran: [9, 11, 12, 13, 17] };
-  var state = { data: null, age: 'all', subAge: null, season: 'all', tab: 'overblik', holdSort: { key: 'name', direction: 1 } };
+  var state = { data: null, age: 'all', subAge: null, season: 'all', tab: 'overblik', holdSort: { key: 'name', direction: 1 }, opponentSort: { key: 'name', direction: 1 } };
   var $ = function (selector) { return document.querySelector(selector); };
 
   function renderTabs() {
@@ -146,6 +146,57 @@
     });
   }
 
+  function opponentTable(result) {
+    var entries = new Map();
+    result.matches.forEach(function (match) {
+      var team = result.teams.find(function (row) { return String(row.id) === String(match.teamId); });
+      if (!team) return;
+      var home = team.name === (match.home || '');
+      var away = team.name === (match.away || '');
+      if (home === away) return;
+      var opponent = home ? match.away : match.home;
+      if (!opponent) return;
+      var pair = score(match.result);
+      if (!pair) return;
+      var key = opponent.trim();
+      if (!entries.has(key)) entries.set(key, { name: key, matches: 0, wins: 0 });
+      var entry = entries.get(key);
+      entry.matches += 1;
+      if ((home && pair[0] > pair[1]) || (away && pair[1] > pair[0])) entry.wins += 1;
+    });
+    return Array.from(entries.values()).map(function (entry) {
+      return { name: entry.name, matches: entry.matches, wins: entry.wins, rate: entry.matches ? Math.round(entry.wins / entry.matches * 100) : null };
+    });
+  }
+
+  function renderOpponents(result) {
+    var rows = opponentTable(result);
+    var key = state.opponentSort.key;
+    rows.sort(function (a, b) {
+      var left = a[key];
+      var right = b[key];
+      return (typeof left === 'string' ? left.localeCompare(right, 'da') : left - right) * state.opponentSort.direction;
+    });
+    var headers = [['name', 'Modstanderhold'], ['matches', 'Kampe'], ['rate', 'Winrate mod dem']];
+    var html = '<div class="table-wrap"><table class="opponent-table"><thead><tr>' + headers.map(function (header) {
+      var marker = key === header[0] ? (state.opponentSort.direction === 1 ? ' ▲' : ' ▼') : '';
+      return '<th><button class="sort-button" data-opponent-sort="' + header[0] + '">' + header[1] + marker + '</button></th>';
+    }).join('') + '</tr></thead><tbody>';
+    html += rows.map(function (row) {
+      return '<tr><td>' + row.name + '</td><td>' + row.matches + '</td><td><div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:' + row.rate + '%"></div></div><span class="pct">' + row.rate + '%</span></div></td></tr>';
+    }).join('') + '</tbody></table></div>';
+    html += '<p class="muted opponent-note">Rækker uden entydig GSB-side eller resultat er ikke medregnet.</p>';
+    var pane = document.querySelector('[data-pane="modstander"]');
+    pane.innerHTML = html;
+    pane.querySelectorAll('[data-opponent-sort]').forEach(function (button) {
+      button.addEventListener('click', function () {
+        var next = button.dataset.opponentSort;
+        state.opponentSort = { key: next, direction: state.opponentSort.key === next ? -state.opponentSort.direction : 1 };
+        renderOpponents(filtered());
+      });
+    });
+  }
+
   function renderFilters() {
     $('#age-filters').innerHTML = Object.keys(AGE_GROUPS).map(function (key) {
       return '<button class="agegroup-pill' + (state.age === key ? ' active' : '') + '" data-age="' + key + '">' + ageLabel(key) + '</button>';
@@ -179,6 +230,7 @@
     var pane = document.querySelector('[data-pane="overblik"]');
     if (pane) pane.innerHTML = overblik(result);
     if (document.querySelector('[data-pane="hold"]')) renderHold(result);
+    if (document.querySelector('[data-pane="modstander"]')) renderOpponents(result);
   }
 
   fetch('/api/data').then(function (response) { if (!response.ok) throw new Error('Datalaget svarede med HTTP ' + response.status); return response.json(); }).then(function (data) {

@@ -44,4 +44,22 @@ Stop og skriv under "Spørgsmål" nedenfor.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+Implementeret i `klubstatistik-preview/` med rå modstandernavne fra den side af
+`team_matches` der ikke matcher GSB-holdets rå navn. Tabellen kan sorteres på
+Modstanderhold, Kampe og Winrate mod dem. Filtre og sortering arbejder på det
+allerede hentede datasæt; browserkontrollen registrerede 1 API-kald.
+
+Browserkontrol på det valgte U9-udsnit:
+
+- 39 modstanderhold blev vist.
+- Før sortering: `Badminton Esbjerg 1 — 2 kampe — 50%`, `Badminton i indre By 1 — 1 — 0%`, `BC37 Amager 1 — 6 — 50%`.
+- Efter sortering på Kampe: `Tranbjerg AIA 1 — 1 — 0%`, `Vinding SF 2 — 1 — 0%`, `Tarup-Paarup 1 — 1 — 0%`.
+- Efter sortering på Winrate: `Gentofte 2 — 2 — 0%`, `Valby BC 1 — 3 — 0%`, `Skovshoved 3 — 3 — 0%`.
+
+Read-only datakontrol på hele databasen: 2.818 holdkampe; 2.805 har en
+entydig eksakt GSB-side og 2.678 af disse har et parsebart resultat. 13 rækker
+har uafklaret hjemme/ude-side, og 127 af de entydige rækker har ikke et
+numerisk resultat; de vises derfor ikke i modstandertabellen i stedet for at
+blive klassificeret ved gæt. De øvrige faner bestod den eksisterende
+regressionstest, og `apps/netlify-prod/`, `kampsystem/` og databasen blev ikke
+ændret.

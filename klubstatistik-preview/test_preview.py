@@ -50,4 +50,18 @@ with sync_playwright() as playwright:
     assert "ukendt" in page.locator('[data-pane="hold"]').inner_text().lower()
     assert len(api_requests) == 1, api_requests
     print({"initial": initial, "initialKpis": initial_kpis, "initialFirstCard": initial_cards[0], "youth": youth, "youthKpis": youth_kpis, "youthFirstCard": youth_cards[0], "u9": u9, "u9Kpis": u9_kpis, "u9FirstCard": u9_cards[0], "holdBeforeSort": before_sort[:2], "holdAfterMatches": after_matches[:2], "holdAfterRate": after_rate[:2], "apiRequests": len(api_requests)})
+
+    page.get_by_role("button", name="Modstanderhold", exact=True).click()
+    opponent_rows = page.locator('[data-pane="modstander"] tbody tr')
+    assert opponent_rows.count() > 0
+    assert page.locator('[data-pane="modstander"] .opponent-note').count() == 1
+    opponents_before_sort = opponent_rows.all_inner_texts()
+    page.get_by_role("button", name="Kampe", exact=True).click()
+    opponents_after_matches = opponent_rows.all_inner_texts()
+    assert opponents_after_matches != opponents_before_sort, (opponents_before_sort, opponents_after_matches)
+    page.get_by_role("button", name="Winrate mod dem", exact=True).click()
+    opponents_after_rate = opponent_rows.all_inner_texts()
+    assert opponents_after_rate != opponents_after_matches, (opponents_after_matches, opponents_after_rate)
+    assert len(api_requests) == 1, api_requests
+    print({"opponentRows": opponent_rows.count(), "opponentBeforeSort": opponents_before_sort[:3], "opponentAfterMatches": opponents_after_matches[:3], "opponentAfterRate": opponents_after_rate[:3], "apiRequestsAfterOpponents": len(api_requests)})
     browser.close()
