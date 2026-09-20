@@ -1,5 +1,38 @@
 # Opgave 081 — katalog over ALLE ligaer/turneringer i Nembadminton, 2010-2026 (ikke kun GSB)
 
+> **STATUS VED PAUSE (2026-09-20, sen aften) — læs dette først ved genoptagelse.**
+> Opgaven er sat på pause af Christoffer for i aften, ikke afsluttet. Alt er committet og pushet
+> (seneste commit `fab86375d541d82c2074478e084e37ae019dbd83` på `arbejde/081-statistik-alle-ligaer-landskab-katalog`).
+>
+> **Hvor vi er:** Den dyre klub-iterationsrute (~96.000+ kald) er IKKE valgt. I stedet er en langt
+> billigere rute fundet og bekræftet: `WebService1.asmx`-metoden `GetLeagueStanding` giver BÅDE
+> puljenavne OG hold-ID'er direkte for en (sæson, aldersgruppe, region)-kombination, uden
+> klub-filter. Der findes ingen anden webservice end `WebService1.asmx` (43 eksponerede metoder,
+> undersøgt via `/WebService1.asmx/js`). `SearchTournamentClass` og `GetSeasonPlan` fejler (HTTP
+> 500) og er ikke brugbare ruter.
+>
+> **Kendt parameter-mapping indtil videre** (hash-format
+> `#<subPage>,<seasonID>,,<ageGroupID>,<regionID>,,,,` på
+> `badmintonplayer.dk/DBF/HoldTurnering/Stilling/`):
+> - `regionID`: 1=national, 4=Midtjylland, 8=København, 10=Sjælland — resten ukendt.
+> - `ageGroupID`: 1=Senior, 3=U11, 9=Sen40+, 21=Ungdom — resten ukendt.
+> - Disse er IKKE fuldt kortlagt endnu — det er næste skridt.
+>
+> **Stadig åbent, ikke afklaret:**
+> 1. Den fulde liste af gyldige `regionID`- og `ageGroupID`-værdier mangler stadig.
+> 2. Midtjylland-senior-"snyderiet" (flere vestkredse viste angiveligt identiske puljer for
+>    `ageGroupID=1`) er IKKE forklaret eller bekræftet — det er ikke samme fænomen som
+>    vest-ungdom-sagen (den er afklaret: 2026/27-ungdomspuljer i vest er bare ikke sat op endnu).
+> 3. Intet konkret kald-estimat for det fulde 2010-2026-udtræk med `GetLeagueStanding`-ruten er
+>    lavet endnu — det bliver sandsynligvis lavt (region × aldersgruppe × sæson, ingen
+>    klub-iteration), men skal beregnes, ikke antages.
+> 4. Intet er gemt permanent endnu — det nye, separate datasæt (uden for
+>    `gsb-statistik-normalized.db`) er ikke oprettet.
+>
+> **Næste skridt ved genoptagelse (ikke startet endnu):** kortlæg det fulde parameter-rum, afklar
+> Midtjylland-mysteriet, giv et konkret kald-estimat, og få Christoffers godkendelse, før den fulde
+> historiske indsamling og permanent lagring sættes i gang.
+
 **Trin:** Udvidelse af opgave 077 (liga-katalog), på Christoffers eksplicitte ønske efter at have set
 077's resultat — se `statistik/results/077-liga-regelsaet-katalog.md`.
 
