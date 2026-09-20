@@ -437,6 +437,12 @@ Skillens øvrige indhold (render-gate-regel, idempotens, walkover-regel,
 scriptliste) er stadig gyldigt og ubrugt af denne konklusion — det er
 kun antagelsen om en automatiseret rute, der er afkræftet.
 
+**Flagget til senere:** selve den automatiserede rute er ikke fixet —
+kun bekræftet ikke-virkende. At finde/bygge en faktisk fungerende
+automatiseret rute (fx debugge hvorfor Playwright kun ser standardshellen,
+eller undersøge webservicelaget nærmere for holdkampe) er udskudt til en
+separat opgave, ikke en del af Skillens nuværende afslutning.
+
 ---
 
 ## Rækkefølge
