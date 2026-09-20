@@ -421,13 +421,21 @@ om at walkover kræver eksplicit `(Ikke fremmødt)`-tekst, princippet om at
 rå data gemmes før fortolkning, og en verificeret liste over alle 18
 scripts skillen henviser til.
 
-**Ikke fuldt afsluttet.** Kontrollerne i opgave 074 var strukturelle:
-`quick_validate.py` bestod, `git diff --check` gav 0 fejl, alle 18
-scripts blev bekræftet at findes, og en skrivefri scenarietest bestod
-2/2. Selve udtræksproceduren — et faktisk browserudtræk og en
-ende-til-ende-import — er **ikke** testet, og kræver en særskilt,
-autoriseret pilotkørsel, før skillen kan regnes for bevist, ikke kun
-struktureret korrekt.
+**Pilotkørt og afklaret (opgave 075, 2026-09-20).** Den automatiserede
+Playwright-rute blev afprøvet på 5 allerede kendte, `browser_verified`-
+kampe: **0/5 passerede render-gaten** — alle fem forsøg gav kun en
+standardshell på 875 tegn, ingen kamp-ID eller `Resultat`-linje. Da
+render-gaten faldt totalt, blev §10.4-testplanens 8 scenarier og
+gentagelseskørslen ikke udført — der var intet at teste videre på.
+Referencedatabasens SHA-256 var identisk før og efter (ingen skrivning).
+
+**Konklusion: der findes ikke en automatiseret masseudtræksrute i dag.**
+Dette bekræfter (ikke gentager) opgave 004's oprindelige fund. Næste
+udtræk — ny sæson eller genudtræk af et hul — skal bruge den validerede
+manuelle in-app-browserfallback, som skillen selv beskriver i §1 og §8.
+Skillens øvrige indhold (render-gate-regel, idempotens, walkover-regel,
+scriptliste) er stadig gyldigt og ubrugt af denne konklusion — det er
+kun antagelsen om en automatiseret rute, der er afkræftet.
 
 ---
 
@@ -463,11 +471,13 @@ struktureret korrekt.
 6. **[Afsluttet — 042/043, korrigeret i 045] Results-rapporten.** Alle ti
    katalogpunkter er bygget og talgrundlaget er korrigeret for
    holdidentitet — se "## Results" ovenfor.
-7. **[Skrevet, ikke pilot-testet — 074] Skillen.** Dokumentet findes og er
-   struktureret korrekt verificeret, men selve udtræksproceduren (browser-
-   udtræk, ende-til-ende-import) er ikke afprøvet i praksis — se
-   "## Skillen" ovenfor. Kræver en autoriseret pilotkørsel før den kan
-   regnes for fuldt afsluttet.
+7. **[Afsluttet — 074/075] Skillen.** Dokumentet findes og er både
+   struktureret og pilot-verificeret — se "## Skillen" ovenfor. Pilotten
+   afklarede at ingen automatiseret rute virker i dag (0/5 render-gate);
+   masseudtræk sker derfor med den manuelle in-app-browserfallback, som
+   skillen dokumenterer. Punktet er afsluttet i den forstand at
+   spørgsmålet er endeligt besvaret, ikke i den forstand at et
+   automatiseret udtræk er klar til brug.
 8. Preview, derefter Prod Push.
 
 ---
