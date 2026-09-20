@@ -299,6 +299,17 @@ respons (ikke kun den viste side) for mindst 3 forskellige vest-`regionID`'er me
 organiseret som én samlet kreds for senior, i modsætning til Øst der er delt op), ikke en fejl i
 undersøgelsen. Afklar hvilken af de to det er.
 
+**Ny undersøgelse ønsket (Christoffer, 2026-09-20):** ASMX-webservices eksponerer typisk deres fulde
+metodeliste via `<endpoint>?WSDL` eller `?op=<MetodeNavn>` for enkelt-metode-beskrivelser. Hent
+`WebService1.asmx?WSDL` (og evt. tilsvarende for andre allerede kendte ASMX-endpoints i
+`CODEX_EXTRACTION_SKILL.md`/tidligere probes) og list ALLE tilgængelige metoder — ikke kun
+`GetLeagueStanding` og `SearchTournamentClass` som allerede er kendt. Undersøg om nogen af de øvrige
+metoder kan give os noget af det vi mangler billigere end nuværende plan, fx: en direkte
+klub-/holdliste pr. pulje (i stedet for at parse HTML), en sæson-/regionliste (så vi ikke skal gætte
+`regionID`/`ageGroupID`-rummet ved brute force), eller andet der reducerer antal kald. Rapportér hele
+metodelisten og hvilke der er relevante, med begrundelse — gæt ikke hvad en metode gør ud fra dens
+navn alene, afprøv den med et testkald og se det faktiske svar.
+
 Yderligere åbne spørgsmål der skal afklares med evidens, ikke antagelse:
 - Hvad er den fulde liste af gyldige `regionID`-værdier (kredse) og deres navne? Kendte indtil nu:
   1=national, 4=Midtjylland, 8=København, 10=Sjælland.
