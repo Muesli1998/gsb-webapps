@@ -11,12 +11,13 @@ synlig hele tiden) — se `work/future/referencer/061-statistik-preview-design.m
 
 ## Mål
 
-En rangeret liste (samme visuelle familie som `stilling.html`s `.hof-list`/`.hof-season`) over
-klubbens mest trofaste spillere: navn, antal kampe totalt, antal sæsoner — rangeret på antal kampe.
+En sorterbar tabel med kolonnerne `Spiller | Ungdom | Senior | Veteran | Total`, hvor
+de tre alderskolonner summerer til Total. Tabellen rangeres som standard efter Total
+faldende.
 
 **Vigtigt:** dette er en langtidsopgørelse, IKKE filtreret af filterbarens sæson-valg (den kan
-stadig respektere aldersgruppe-filteret, hvis det giver mening — afklar med Chris hvis det er
-uklart, se "Ved tvivl"). Se mockuppens "🏅 Klub-karriere"-fane for det visuelle facit.
+aldersgruppe-filteret gælder på tværs af fanerne som beskrevet i designreferencens afsnit 4;
+sæson-filteret ignoreres. Se mockuppens "🏅 Klub-karriere"-fane for det visuelle facit.
 
 Denne fanes tal skal stemme med den klub-karriere-linje der vises i den enkelte spillers profil i
 opgave 064 ("X sæsoner, Y kampe totalt for klubben") — samme beregning, to steder.
@@ -52,13 +53,20 @@ Klub-karriere-fanen bevidst uafhængig af hele filterbaren, kun sæson-uafhængi
 
 ### Spørgsmål
 
-Skal Klub-karriere-fanen være en klubomfattende langtidsopgørelse uafhængigt
-af hele filterbaren, eller skal den respektere det valgte alders-/underfilter
-(fx vise ungdomsspillere når Ungdom/U9 er valgt)? Sæson-dropdownen er ifølge
-Målet uafhængig, men kortet fastlægger ikke tilsvarende entydigt aldersfilterets
-omfang. Jeg bygger ikke fanen, før dette er besluttet, fordi det ændrer både
-ranglisten og kontroltallene.
-
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+- Implementeret som en sorterbar Karriere-tabel med `Spiller | Ungdom |
+  Senior | Veteran | Total`. Aldersfilteret respekteres på tværs af fanerne;
+  sæsonfilteret ignoreres, så opgørelsen er på tværs af alle sæsoner.
+- Beregningen deles med opgave 064's `profileStats`: samme `matchIds`-sæt
+  bruges til Total og samme aldersgruppering bruges til de tre kolonner.
+  Profilens linje og Karriere-tabellen bruger derfor samme underliggende tal.
+- Uafhængig SQL-kontrol af top 5 gav: Kenneth Hasselby 0/326/100 = 426,
+  Morten Aarøe 0/314/68 = 382, Leif Hansen 0/0/378 = 378, Noomi Mortensen
+  0/4/360 = 364 og Svend Videbæk 0/6/343 = 349 (Ungdom/Senior/Veteran/Total).
+- Browserkontrollen viste de samme fem rækker. For de tre første stemte hver
+  af de tre alderskolonner med Total, og Kenneth Hasselbys Total 426 stemte
+  med spillerprofilens `426 kampe totalt for klubben`.
+- Kontroller: `python -m py_compile klubstatistik-preview/server.py`,
+  `node --check klubstatistik-preview/klubstatistik.js` og den udvidede
+  `python test_preview.py` bestod. Testen beholdt ét API-kald.

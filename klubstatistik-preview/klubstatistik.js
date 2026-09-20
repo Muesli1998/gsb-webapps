@@ -297,7 +297,7 @@
     function get(playerId) {
       if (!stats.has(playerId)) {
         var player = playersById.get(playerId) || {};
-        stats.set(playerId, { id: playerId, hasExternalId: Boolean(player.externalPlayerId), matchIds: new Set(), wins: 0, losses: 0, categories: new Map(), teams: new Map(), seasons: new Map(), opponents: new Map() });
+        stats.set(playerId, { id: playerId, hasExternalId: Boolean(player.externalPlayerId), matchIds: new Set(), ageBuckets: { youth: new Set(), senior: new Set(), veteran: new Set() }, wins: 0, losses: 0, categories: new Map(), teams: new Map(), seasons: new Map(), opponents: new Map() });
       }
       return stats.get(playerId);
     }
@@ -314,6 +314,8 @@
       if (im.winnerSide === link.side) { player.wins += 1; cat.wins += 1; }
       else if (im.winnerSide) { player.losses += 1; cat.losses += 1; }
       var team = teamById.get(match.teamId);
+      var ageBucket = AGE_GROUPS.youth.indexOf(team && team.ageGroupId) !== -1 ? 'youth' : AGE_GROUPS.senior.indexOf(team && team.ageGroupId) !== -1 ? 'senior' : AGE_GROUPS.veteran.indexOf(team && team.ageGroupId) !== -1 ? 'veteran' : null;
+      if (ageBucket) player.ageBuckets[ageBucket].add(im.id);
       var teamKey = String(match.teamId);
       if (!player.teams.has(teamKey)) player.teams.set(teamKey, { name: team ? team.name : 'ukendt', wins: 0, losses: 0, seasons: new Set() });
       var teamStat = player.teams.get(teamKey);
@@ -369,6 +371,27 @@
     draw();
   }
 
+  function careerResult() {
+    var ids = ageIds();
+    if (state.subAge !== null) ids = [state.subAge];
+    var competitions = state.data.competitions.filter(function (row) { return !ids || ids.indexOf(row.ageGroupId) !== -1; });
+    var competitionIds = new Set(competitions.map(function (row) { return row.id; }));
+    return {
+      teams: state.data.teams.filter(function (row) { return competitionIds.has(row.competitionId); }),
+      matches: state.data.matches.filter(function (row) { return competitionIds.has(row.competitionId); })
+    };
+  }
+
+  function renderCareer() {
+    var stats = Array.from(profileStats(careerResult()).values());
+    var names = new Map(state.data.players.map(function (player) { return [player.id, player.name]; }));
+    stats.sort(function (a, b) { var difference = b.matchIds.size - a.matchIds.size; return difference || (names.get(a.id) || '').localeCompare(names.get(b.id) || '', 'da'); });
+    var html = '<div class="table-wrap"><table class="career-table"><thead><tr><th>Spiller</th><th>Ungdom</th><th>Senior</th><th>Veteran</th><th>Total</th></tr></thead><tbody>';
+    html += stats.map(function (stat) { return '<tr><td>' + escapeHtml(names.get(stat.id) || 'ukendt') + '</td><td>' + stat.ageBuckets.youth.size + '</td><td>' + stat.ageBuckets.senior.size + '</td><td>' + stat.ageBuckets.veteran.size + '</td><td>' + stat.matchIds.size + '</td></tr>'; }).join('');
+    html += '</tbody></table></div>';
+    document.querySelector('[data-pane="karriere"]').innerHTML = html;
+  }
+
   function renderFilters() {
     $('#age-filters').innerHTML = Object.keys(AGE_GROUPS).map(function (key) {
       return '<button class="agegroup-pill' + (state.age === key ? ' active' : '') + '" data-age="' + key + '">' + ageLabel(key) + '</button>';
@@ -406,6 +429,7 @@
     if (document.querySelector('[data-pane="modstander"]')) renderOpponents(result);
     if (document.querySelector('[data-pane="saeson"]')) renderSeasonsPane();
     if (document.querySelector('[data-pane="spillere"]')) renderPlayers(result);
+    if (document.querySelector('[data-pane="karriere"]')) renderCareer();
   }
 
   fetch('/api/data').then(function (response) { if (!response.ok) throw new Error('Datalaget svarede med HTTP ' + response.status); return response.json(); }).then(function (data) {

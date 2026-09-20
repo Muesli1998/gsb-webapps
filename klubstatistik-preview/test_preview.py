@@ -27,6 +27,21 @@ with sync_playwright() as playwright:
     assert sum(category_counts) == 20313, category_counts
     assert category_counts[-2:] == [3410, 2105], category_counts
 
+    page.get_by_role("button", name="🏅 Klub-karriere", exact=True).click()
+    career_rows = page.locator('[data-pane="karriere"] tbody tr')
+    assert career_rows.count() >= 3
+    career_values = career_rows.locator("td").evaluate_all("cells => { const rows = []; for (let i = 0; i < cells.length; i += 5) rows.push(Array.from(cells).slice(i, i + 5).map(cell => cell.textContent.trim())); return rows; }")
+    assert all(int(row[1]) + int(row[2]) + int(row[3]) == int(row[4]) for row in career_values[:3]), career_values[:3]
+    career_name = career_values[0][0]
+    career_total = career_values[0][4]
+    page.get_by_role("button", name="Spillere", exact=True).click()
+    page.locator("#player-search").fill(career_name)
+    career_profile = page.locator('[data-pane="spillere"] .player-detail-row').first
+    assert career_profile.is_visible() is False
+    page.locator('[data-pane="spillere"] .player-row').first.click()
+    assert career_profile.is_visible()
+    assert career_total + " kampe totalt for klubben" in career_profile.inner_text()
+
     page.get_by_role("button", name="Ungdom", exact=True).click()
     assert page.locator("#youth-filters").is_visible()
     youth = page.locator("#dataset-status").inner_text()
