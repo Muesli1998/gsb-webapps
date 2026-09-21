@@ -566,4 +566,30 @@ kald brugt, antal `ok`/`empty`/`error`, og antal unikke `leagueGroupID` fundet
 til detaljefasen — så det konkrete detaljekald-antal kan bekræftes før det
 sættes i gang, i stedet for at blive antaget ud fra indeksfasens tal alene.
 
+**Sideordnet, lille undersøgelse (ikke en del af den store indsamling, må
+IKKE forsinke eller udvide indeks-/detaljefasen):** Christoffer vil vide om
+regelsæt-typen (fx 9-kamp, 13-kamp) for en pulje kan udledes billigt, ved kun
+at hente ÉT kampresultat pr. pulje (alle hold i en pulje spiller samme
+regelsæt, så ét eksempel er nok — ikke alle kampe, det ville være dyrt).
+
+Test konkret, på 2-3 allerede kendte puljer (fx `leagueGroupID=18888` eller
+andre fra de allerede hentede probe-filer), om der findes en billig vej til
+"ét kampresultat fra denne pulje":
+
+1. Findes der i `GetLeagueStanding`s `subPage=2`-svar (puljesiden) allerede et
+   link eller en reference til mindst ét `leagueMatchID` i puljen — uden et
+   ekstra kald? Hvis ja: hent det ene kamp-svar og se om score-teksten kan
+   klassificeres med samme metode som opgave 077 brugte.
+2. Hvis nej: findes der en billig "liste kampe i denne pulje"-rute (ét kald
+   pr. pulje) man kan bruge til at finde ét `leagueMatchID`, som derefter kan
+   slås op? Test det faktiske kald og svar — gæt ikke ud fra endpoint-navnet.
+3. Rapportér et konkret pris-estimat for at tilføje regelsæt-klassifikation
+   til ALLE puljer i 081's datasæt: hvor mange ekstra kald (ca. 1-2 pr. unik
+   `leagueGroupID`, hvis det virker som antaget), og om det med fordel kan
+   bygges ind i den igangværende 081-kørsel, eller bør være et selvstændigt
+   opfølgende kort.
+
+Dette er en afklaring, ikke en godkendelse til at bygge det ind i den store
+kørsel endnu — vent på Christoffers beslutning efter svaret er rapporteret.
+
 ### Spørgsmål
