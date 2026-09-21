@@ -601,3 +601,11 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
   og de historiske probe-filer gav ingen fungerende ældre enumeration. Ingen
   database blev skrevet; rå testmetadata ligger i
   `results/082-api-overflade-probe.json`.
+
+- 2026-09-21 — Opgave 082 autentificeret session: ranglistesiden viste 34
+  versionsvalg og gav en historisk version `01-09-2026` med perioden
+  `01-07-2026 til 30-08-2026`. Sæsonplanen kunne med login søges og viste
+  23 august-, 48 september- og 29 oktoberturneringer for 2026/2027 med
+  konkrete turnerings-ID'er i links. Historisk sæsonvalg er ikke bevist;
+  ingen database blev ændret. Observationerne ligger i
+  `results/082-auth-session-probe.json`.

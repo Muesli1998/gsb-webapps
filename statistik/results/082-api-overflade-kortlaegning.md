@@ -119,3 +119,26 @@ ranglister er versionsdatoer tilgængelige via den eksisterende ASMX-rute for
 en kendt sæson, men historisk pointenumeration er fortsat uafklaret.
 
 Der blev ikke udført masseindsamling, og ingen database blev skrevet til.
+
+## Autentificeret browser-session
+
+Med Christoffers aktive login viste `/DBF/Ranglister/` en versionsvælger med
+34 muligheder: `Seneste` plus 33 datoversioner. En historisk version blev
+valgt i UI'et (`01-09-2026`), hvorefter siden viste perioden `01-07-2026 til
+30-08-2026` og opdateringstidspunkt `18-09-2026 09:44:20`. Det beviser, at
+den autentificerede ranglisteside kan navigere dato-for-dato i den tilgængelige
+sæson. Den direkte REST-rute `/api/RangkingListVersion?seasonId=2026` kunne
+ikke åbnes som selvstændig JSON-navigation i browserklienten, så den konkrete
+liste er dokumenteret som den autentificerede UI-respons (den underliggende
+side er fortsat den eksisterende ASMX-baserede ranglisteside).
+
+Den autentificerede `/DBF/Turnering/SaesonPlan/` kunne søge og vise aktuelle
+turneringer. For 2026/2027 viste de tre udvidede måneder 23 turneringer i
+august, 48 i september og 29 i oktober. Resultat-, deltager- og
+programinfo-links indeholdt konkrete turnerings-ID'er, fx 118392, 115649,
+115477, 117972 og 119128. Det er dermed en brugbar turneringsenumerator for
+den valgte sæson via UI'et. Sæsonfilteret viste kun 2026/2027 i denne
+session, så historisk enumeration via samme UI er ikke bevist.
+
+De autentificerede observationer ligger også struktureret i
+`statistik/results/082-auth-session-probe.json`.

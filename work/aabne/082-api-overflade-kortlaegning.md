@@ -121,6 +121,34 @@ tværgående turneringsliste og historiske ranglistepoint ikke er bevist via de
 offentlige REST-kald. Der blev ikke udført masseindsamling og ingen database
 blev ændret.
 
+### Svar — autentificeret session (2026-09-21)
+
+Med Christoffers aktive login viste ranglistesiden 34 versionsvalg (`Seneste`
+plus 33 datoer), herunder 21-09, 18-09, 16-09, 15-09 og 14-09-2026. Et valg
+på `01-09-2026` gav dette faktiske UI-svar:
+
+```text
+Version: 01-09-2026
+Periode: 01-07-2026 til 30-08-2026
+Opdateret: 18-09-2026 09:44:20
+```
+
+Det bekræfter dato-for-dato navigation i ranglistehistorikken for den
+tilgængelige sæson. Den direkte REST-URL
+`/api/RangkingListVersion?seasonId=2026` kunne ikke åbnes som selvstændig
+JSON-navigation i browserklienten, så den nye evidens er den autentificerede
+ranglistesides faktiske UI-respons via den eksisterende ASMX-side.
+
+Sæsonplanen blev også søgt med login. For 2026/2027 viste den 23 turneringer i
+august, 48 i september og 29 i oktober. Resultat-, deltager- og programlinks
+indeholdt konkrete turnerings-ID'er, fx `118392`, `115649`, `115477`, `117972`
+og `119128`. Login åbner derfor en praktisk turneringsenumerator for den
+valgte sæson. Sæsonfilteret viste kun 2026/2027 i denne session, så historisk
+turneringsenumeration er ikke bevist.
+
+Observationerne er gemt i `statistik/results/082-auth-session-probe.json`.
+Ingen masseindsamling eller databaseændring er foretaget.
+
 ## Resultatnote
 
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*

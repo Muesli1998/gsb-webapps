@@ -1,0 +1,23 @@
+{
+  "session": "authenticated browser session",
+  "ranking": {
+    "page": "https://badmintonplayer.dk/DBF/Ranglister/",
+    "versionOptionCount": 34,
+    "firstOptions": ["Seneste", "21-09-2026", "18-09-2026", "16-09-2026", "15-09-2026", "14-09-2026"],
+    "lastOptions": ["03-08-2026", "01-08-2026 August-ranglisten", "31-07-2026", "29-07-2026", "01-07-2026"],
+    "selectedHistoricalVersion": "01-09-2026",
+    "selectedHistoricalPeriod": "01-07-2026 til 30-08-2026",
+    "selectedHistoricalUpdated": "18-09-2026 09:44:20"
+  },
+  "seasonPlan": {
+    "page": "https://badmintonplayer.dk/DBF/Turnering/SaesonPlan/",
+    "selectedSeason": "2026/2027",
+    "expandedMonthCounts": {
+      "august 2026": 23,
+      "september 2026": 48,
+      "oktober 2026": 29
+    },
+    "observedTournamentLinks": ["118392", "115649", "115477", "117972", "119128"]
+  },
+  "note": "Observed in the authenticated UI; no database or bulk extraction."
+}
