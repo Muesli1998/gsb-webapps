@@ -613,3 +613,38 @@ kræve ca. 18.546 matchlistekald plus op til 18.546 kampdetailkald (37.092 i
 alt), og er ikke bygget ind i denne kørsel. Se
 `statistik/results/081-liga-landskab-indsamling.md` og `.json` for fuld
 rå optælling.
+
+**Ny opgave: find det faktiske pris-estimat for at trække ALLE kampe i ALLE
+puljer (2026-09-21).** Christoffer vil have en rangeret hold-liste bygget på
+faktiske kampresultater, ikke kun de færdige stillinger fra `subPage=2`.
+Katalog-delen af 081 er derfor ikke helt færdig, selvom indeks-/detaljefasen
+er landet i `liga-landskab.db`. Før den fulde kamp-for-kamp-indsamling
+igangsættes, skal det faktiske omfang tælles — ikke skønnes.
+
+Danske holdturneringspuljer spiller normalt IKKE dobbelt alle-mod-alle;
+enkeltrundet er normen, og kun nogle 3-holds-puljer spiller dobbelt (så
+regelmæssighed må ikke antages på tværs af puljer — tæl den faktiske
+kampliste pr. pulje).
+
+**Gør dette (kun optælling, byg IKKE selve kamp-indsamlingen ind endnu):**
+
+1. Kør `subPage=4`-matchlistningen (samme rute som blev brugt i
+   regelsæt-testen ovenfor) for ALLE 18.546 unikke puljer, og gem for hver
+   pulje det faktiske antal kampe fundet (ikke et gennemsnit eller en
+   antagelse). Dette er i forvejen nødvendigt for regelsæt-sporet, så det kan
+   genbruges — men her er formålet optælling, ikke klassifikation.
+2. Rapportér: det samlede antal kampe fundet på tværs af alle puljer, samt en
+   fordeling (fx: hvor mange puljer har 3 hold og spiller dobbelt vs.
+   enkelt, min/max/median antal kampe pr. pulje) — så det er tydeligt om
+   gennemsnittet dækker over stor spredning.
+3. Ud fra det faktiske kamptal: giv et konkret pris-estimat for den fulde
+   kamp-for-kamp-indsamling (matchlistekald + ét detailkald pr. faktisk
+   fundet kamp, `subPage=5`-mønsteret set i testen) — det reelle tal, ikke et
+   groft skøn baseret på gennemsnit.
+4. Skriv IKKE nogen kamp-detaljer til `liga-landskab.db` i dette trin — kun
+   selve optællingen (matchlisten pr. pulje er nok til at tælle, den enkelte
+   kamps score kræver et ekstra kald pr. kamp, som ikke skal udføres endnu).
+
+Rapportér resultatet i næste "Spørgsmål"-svar og STOP der — vent på
+Christoffers beslutning om den fulde kamp-indsamling skal sættes i gang,
+før noget bygges.
