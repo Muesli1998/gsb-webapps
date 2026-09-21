@@ -1,0 +1,50 @@
+{
+  "date": "2026-09-21",
+  "purpose": "Read-only probe of Nembadminton public GraphQL ranking progression",
+  "endpoint": "https://app.nembadminton.dk/graphql",
+  "login": "none",
+  "profileRoute": {
+    "url": "https://app.nembadminton.dk/app/player/16214/stats",
+    "httpStatus": 200,
+    "note": "The unauthenticated HTTP response is the SPA shell; the bundled route metadata marks player/:playerID/stats as requiresAuth=true."
+  },
+  "frontendEvidence": {
+    "bundle": "https://app.nembadminton.dk/build/assets/Stats-D8rhXkEc.js",
+    "route": "/app/player/:playerID/stats",
+    "titleText": "Ranging progression for {member.name}",
+    "charts": ["Mix", "Single", "Double"],
+    "query": "query memberStats($id: ID!){ memberStats(id: $id){ member { id name } mix { version points } single { version points } double { version points } } }"
+  },
+  "schemaEvidence": {
+    "queryField": "memberStats",
+    "argument": "id: ID!",
+    "returnType": "MemberStats",
+    "fields": ["member", "mix", "single", "double"],
+    "dataPointFields": ["points", "version"]
+  },
+  "sample": {
+    "memberId": "16214",
+    "name": "Adnan Bacic",
+    "sourceOfId": "public highestPointGain(clubhouseId: 331, category: HS, limit: 5, orderBy: DESC, vintages: [SEN,U17,U19,U15,U13,U11,U9])",
+    "memberStatsHttpStatus": 200,
+    "singleCount": 14,
+    "singleFirst": {"points": 1545, "version": "2025-08-02"},
+    "singleLast": {"points": 1912, "version": "2026-09-02"},
+    "doubleCount": 14,
+    "doubleFirst": {"points": 1424, "version": "2025-08-02"},
+    "doubleLast": {"points": 1468, "version": "2026-09-02"},
+    "mixCount": 11,
+    "mixFirst": {"points": 1624, "version": "2025-11-02"},
+    "mixLast": {"points": 1660, "version": "2026-09-02"},
+    "memberPointsHistoryCount": 105,
+    "memberPointsHistoryEarliest": "2023-02-01",
+    "memberPointsHistoryLatest": "2026-09-02"
+  },
+  "enumeration": {
+    "memberStats": "Requires a known member ID; no date argument and no list argument.",
+    "highestPointGain": "Publicly enumerates members for a known clubhouse/category/vintage combination and exposes member IDs, so GSB's roster can be seeded without login.",
+    "dates": "memberStats returns the dates stored for that member; there is no separate public all-dates endpoint in the inspected schema.",
+    "arbitraryPlayers": "Not proven enumerable across all players/clubs without a known clubhouse or member ID."
+  },
+  "databaseChanged": false
+}

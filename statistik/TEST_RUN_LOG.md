@@ -615,3 +615,11 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
   `01-09-2026`-visning. Browserens isolerede DOM-evaluering eksponerede ikke
   `fetch`/`XMLHttpRequest`, så den specifikke REST-URL blev ikke markeret som
   direkte bevist via devtools; ingen database blev ændret.
+
+- 2026-09-21 — Opgave 082 Nembadminton GraphQL-probe: uden login blev
+  `memberStats(id: 16214)` kaldt på `https://app.nembadminton.dk/graphql`.
+  HTTP 200 returnerede daterede `single`/`double`/`mix`-snapshots (14/14/11)
+  og rå `member.points` fra 2023-02-01 til 2026-09-02. Frontendens
+  `Stats-D8rhXkEc.js` bekræfter spillerstatistik-ruten og de tre diagrammer.
+  `highestPointGain` kan finde kendte GSB-medlems-ID'er uden login; en generel
+  spiller-/dato-enumerator blev ikke fundet. Ingen database blev ændret.

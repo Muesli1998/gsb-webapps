@@ -172,6 +172,52 @@ eksisterende UI/ASMX-rute. Der blev ikke udført et direkte JavaScript-
 `fetch`-kald mod `/api/RangkingListVersion?seasonId=2026`, og der blev derfor
 heller ikke forsøgt historisk enumeration via denne specifikke REST-rute.
 
+### Svar — Nembadminton GraphQL ranglistepoint over tid (2026-09-21)
+
+Undersøgelsen brugte det allerede dokumenterede GraphQL-endpoint
+`POST https://app.nembadminton.dk/graphql` uden login. Nembadmintons frontend
+indeholder en spillerstatistik-rute `/app/player/:playerID/stats`; dens bundle
+`Stats-D8rhXkEc.js` kalder:
+
+```graphql
+query memberStats($id: ID!) {
+  memberStats(id: $id) {
+    member { id name }
+    mix { version points }
+    single { version points }
+    double { version points }
+  }
+}
+```
+
+Frontendteksten er `Ranging progression for` med tre diagrammer: `Mix`,
+`Single` og `Double`. Route-metadata markerer siden `requiresAuth: true`, og
+en direkte HTTP-hentning uden login returnerer kun SPA-shell'en. Selve
+GraphQL-kaldet er dog offentligt: med medlems-ID `16214` (Adnan Bacic, fundet
+via den allerede dokumenterede login-frie `highestPointGain` for GSB
+`clubhouseId=331`) svarede kaldet HTTP 200 uden login.
+
+Det faktiske svar indeholdt:
+
+| Serie | Datapunkter | Første snapshot | Seneste snapshot |
+|---|---:|---|---|
+| Single | 14 | 1545 @ 2025-08-02 | 1912 @ 2026-09-02 |
+| Double | 14 | 1424 @ 2025-08-02 | 1468 @ 2026-09-02 |
+| Mix | 11 | 1624 @ 2025-11-02 | 1660 @ 2026-09-02 |
+
+`member.points` indeholdt desuden 105 rå poster fra 2023-02-01 til 2026-09-02.
+Schema-introspektionen bekræfter `memberStats(id: ID!): MemberStats` og
+datapunktfelterne `points` og `version`.
+
+`memberStats` kræver et kendt medlems-ID og har ingen parameter til at
+enumerere datoer. `highestPointGain` kan login-frit finde medlems-ID'er for et
+kendt clubhouse, så GSB's roster kan seedes uden login. Der er ikke fundet en
+generel offentlig enumerator for alle spillere eller alle datoer på tværs af
+klubber. Der blev ikke kørt masseindsamling og ingen database blev ændret.
+
+Den fulde query-, schema- og svar-evidens ligger i
+`statistik/results/082-nembadminton-ranking-probe.md` og `.json`.
+
 ## Resultatnote
 
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
