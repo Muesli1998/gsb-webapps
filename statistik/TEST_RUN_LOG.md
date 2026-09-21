@@ -662,3 +662,7 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
 - Skema foreslået: league_matches, match_categories, match_games.
 - Målt fra fetched_at: indeks 11m27,925s/16.269 (1.418,96/min), puljedetaljer 7m12,242s/18.546 (2.574,39/min), matchlisteoptælling 1m11,357s/18.546 (15.594,27/min).
 - Kampindsamling estimeret til 121,7 minutter fasebaseret eller 122,3 minutter ved samlet rate for 328.683 kald. Rapport: `statistik/results/081-subpage-schema-tidsestimat.md`/.json.
+## 2026-09-21 — opgave 081 fuld kampindsamling
+- Matchlistefase: 18.546 kald; 18.543 ok, 3 empty, 0 fejl; 310.137 pulje-kamp-tilknytninger og 203.012 deduplikerede external_match_id'er.
+- Detailfase: 203.012 kald; 203.011 ok, 1 empty (kamp 433782), 0 fejl; 1.300.474 kategorier og 2.636.258 sæt-score-rækker.
+- Rå svar: 869 batchede JSONL-filer under statistik/data/liga-landskab-raw/; normaliseret DB urørt. Rapport: statistik/results/081-kampindsamling.md/.json.

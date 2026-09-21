@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-09-21T21:53:31.6550408Z",
+  "database": "statistik/data/liga-landskab.db",
+  "normalizedDatabase": "statistik/data/gsb-statistik-normalized.db",
+  "listPhase": {
+    "requests": 18546,
+    "ok": 18543,
+    "empty": 3,
+    "error": 0,
+    "puljeMatchLinks": 310137,
+    "uniqueMatchIds": 203012,
+    "emptyRequests": [
+      "2013:4:2780",
+      "2013:21:2780",
+      "2022:1:15442"
+    ]
+  },
+  "detailPhase": {
+    "requests": 203012,
+    "ok": 203011,
+    "empty": 1,
+    "error": 0,
+    "emptyMatches": [
+      {
+        "external_match_id": "433782",
+        "season_id": 2022,
+        "age_group_id": 9,
+        "league_group_id": "15023"
+      }
+    ],
+    "categories": 1300474,
+    "games": 2636258
+  },
+  "rawStorage": {
+    "directory": "statistik/data/liga-landskab-raw/",
+    "files": 869,
+    "bytes": 3782810830
+  },
+  "integrity": {
+    "normalizedDbSha256": "49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E",
+    "groupLinkCountMatchesExpected": true,
+    "actualDeduplicatedDetailCalls": 203012
+  }
+}

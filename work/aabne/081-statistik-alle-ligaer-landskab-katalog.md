@@ -694,3 +694,6 @@ det målte estimat). Kør i faser med statusrapportering undervejs, som
 resten af 081. Rapportér undervejs (mindst ved afslutning): faktisk antal
 kald brugt, `ok`/`empty`/`error`-fordeling, og eventuelle afvigelser fra det
 forventede kamptal (310.137).
+
+**Svar: fuld kamp-for-kamp-indsamling (2026-09-21):**
+Matchlistefasen kørte 18.546 kald: 18.543 `ok`, 3 `empty`, 0 `error`; den bevarede 310.137 pulje-kamp-tilknytninger og 203.012 deduplikerede kamp-ID’er. Detailfasen kørte ét kald pr. deduplikeret kamp-ID: 203.011 `ok`, 1 `empty`, 0 `error`. Den tomme kamp er 433782 (sæson 2022, ageGroupID 9, pulje 15023). Der blev gemt 1.300.474 kategorier og 2.636.258 sæt-score-rækker i `liga-landskab.db`. Rå svar ligger i 869 batchede JSONL-filer under `statistik/data/liga-landskab-raw/`; den normaliserede GSB-database blev ikke skrevet. Den fulde rapport er `statistik/results/081-kampindsamling.md`/.json.
