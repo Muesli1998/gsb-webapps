@@ -476,3 +476,68 @@ pr. sæson/region, CSV-tabeller osv.) — begrund valget. Skriv forslaget under
 et nyt "Spørgsmål"-svar i dette kort og STOP der. Byg IKKE den fulde
 indsamling før skemaforslaget er godkendt — det er dyrt at rette bagefter,
 når 16.269+ kald er brugt.
+
+**Svar: forslag til permanent datastruktur før indsamlingen (2026-09-21):**
+Forslaget bygger på de gemte `GetLeagueStanding`-svar. `subPage=1`
+returnerer callback-JSON med HTML, sæson-/alder-/regionsoverskrift,
+divisionsnavne og links med `leagueGroupID`. `subPage=2` returnerer en
+konkret pulje med puljeoverskrift og holdrækker. Holdrækkens link indeholder
+`leagueGroupTeamID`, og den synlige række indeholder mindst holdnavn,
+placering, kampe, vundne, score, sæt, point og sætpunkter.
+
+Jeg anbefaler en separat SQLite-fil, fx `statistik/data/liga-landskab.db`,
+adskilt fra `gsb-statistik-normalized.db`. Det er et katalog-/provenance-
+datasæt med mange gentagne opslag, ikke en udvidelse af de normaliserede
+GSB-kampdata. SQLite gør region → aldersgruppe → sæson → pulje → hold til
+enkle indeksopslag, giver idempotente upserts og kan senere bruges af
+Hold-fanen uden at blande kildens landskab med kampdatabasens semantik.
+
+Foreslået skema:
+
+```sql
+regions(region_id PK, name, short_name, parent_id, source_endpoint,
+        first_seen_at, last_seen_at)
+age_groups(age_group_id PK, name, years_from, years_to,
+           years_from_tournament, years_to_tournament, source_endpoint,
+           first_seen_at, last_seen_at)
+standing_indexes(standing_index_id PK, season_id, age_group_id, region_id,
+                 requested_url, fetched_at, http_status, raw_sha256,
+                 raw_response, parse_status, parser_version,
+                 UNIQUE(season_id, age_group_id, region_id))
+league_groups(season_id, age_group_id, league_group_id, division_name_raw,
+              group_name_raw, page_title_raw, first_seen_index_id, fetched_at,
+              PRIMARY KEY(season_id, age_group_id, league_group_id))
+league_group_regions(season_id, age_group_id, league_group_id, region_id,
+                     PRIMARY KEY(season_id, age_group_id, league_group_id,
+                                 region_id))
+league_group_teams(season_id, age_group_id, league_group_id,
+                   league_group_team_id, team_name_raw, standing_position,
+                   matches, wins, score_raw, sets_raw, points, set_points,
+                   source_url, fetched_at,
+                   PRIMARY KEY(season_id, age_group_id, league_group_id,
+                               league_group_team_id, team_name_raw))
+fetch_errors(request_key PK, season_id, age_group_id, region_id,
+             league_group_id, requested_url, http_status, error_kind,
+             response_sha256, response_text, first_seen_at, last_seen_at,
+             attempts)
+```
+
+`league_group_regions` er nødvendig, fordi gruppe 18888 i de faktiske svar
+optræder under region 4, 5, 6 og 7 med samme puljetitel og holdliste. Et
+region-ID må derfor ikke indbygges som eneste identitet for en pulje.
+Råsvaret gemmes i `standing_indexes`/`fetch_errors`, så parseren kan
+genkøres, og historiske mismatches kan efterprøves uden et nyt API-kald.
+
+For at gøre indsamlingen genoptagelig bør hver request have en deterministisk
+nøgle, status (`pending`, `ok`, `empty`, `error`), forsøgstæller, HTTP-status,
+SHA-256 og parser-version. Indeksfasen skal først upserte `standing_indexes`,
+derefter lægge unikke pulje-ID'er i en kø, og til sidst hente hver pulje én
+gang pr. sæson/alder/pulje. Ratebegrænsning, backoff, checkpointing og en
+særskilt fejlrapport gør det muligt at fortsætte efter afbrydelser uden
+dubletter. De rå snapshots kan senere genbruges til Hold-fanens
+holdsammenlægning og til at opdage ændringer i kildens holdnummer/navne over
+tid.
+
+Dette er kun et skemaforslag. Den fulde 33-regioners indsamling er ikke
+startet, og `gsb-statistik-normalized.db` er ikke ændret. Der afventes
+godkendelse af skemaet før de 16.269+ detaljekald sættes i gang.
