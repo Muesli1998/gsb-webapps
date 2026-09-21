@@ -149,6 +149,29 @@ turneringsenumeration er ikke bevist.
 Observationerne er gemt i `statistik/results/082-auth-session-probe.json`.
 Ingen masseindsamling eller databaseændring er foretaget.
 
+### Svar — JS-kald inde fra autentificeret side (2026-09-21)
+
+Den aktive login-session blev kontrolleret på selve BadmintonPlayer-siden.
+Browserautomationen giver dog kun en isoleret, read-only DOM-kontekst, hvor
+`window.fetch` og `window.XMLHttpRequest` ikke er tilgængelige. Den kunne
+derfor ikke afvikle den ønskede devtools-kommando direkte eller udlevere
+session-cookien til et separat kald. Jeg markerer derfor ikke den direkte
+REST-rute som bevist fungerende med login.
+
+Som session-kontrol blev den autentificerede ranglisteside brugt til samme
+funktion: den viste 34 versionsvalg, og søgning på `01-09-2026` gav:
+
+```text
+Version: 01-09-2026
+Periode: 01-07-2026 til 30-08-2026
+Opdateret: 18-09-2026 09:44:20
+```
+
+Det viser, at login giver adgang til dato-for-dato ranglistehistorik i den
+eksisterende UI/ASMX-rute. Der blev ikke udført et direkte JavaScript-
+`fetch`-kald mod `/api/RangkingListVersion?seasonId=2026`, og der blev derfor
+heller ikke forsøgt historisk enumeration via denne specifikke REST-rute.
+
 ## Resultatnote
 
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*

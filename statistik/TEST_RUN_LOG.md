@@ -609,3 +609,9 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
   konkrete turnerings-ID'er i links. Historisk sæsonvalg er ikke bevist;
   ingen database blev ændret. Observationerne ligger i
   `results/082-auth-session-probe.json`.
+
+- 2026-09-21 — Opgave 082 direkte JS-loginforsøg: den autentificerede
+  ranglisteside viste fortsat 34 versionsvalg og leverede historisk
+  `01-09-2026`-visning. Browserens isolerede DOM-evaluering eksponerede ikke
+  `fetch`/`XMLHttpRequest`, så den specifikke REST-URL blev ikke markeret som
+  direkte bevist via devtools; ingen database blev ændret.

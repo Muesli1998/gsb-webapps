@@ -142,3 +142,18 @@ session, så historisk enumeration via samme UI er ikke bevist.
 
 De autentificerede observationer ligger også struktureret i
 `statistik/results/082-auth-session-probe.json`.
+
+## Direkte JavaScript-test med login
+
+Den aktive login-session blev kontrolleret på BadmintonPlayer-siden, men
+browserens DOM-evaluering er isoleret og eksponerer hverken `window.fetch` eller
+`window.XMLHttpRequest`. Det var derfor ikke muligt at afvikle den ønskede
+devtools-kommando direkte fra denne automation eller at udlevere session-
+cookien til et separat kald. Den direkte REST-rute er derfor ikke markeret
+som bevist fungerende med login.
+
+Den autentificerede UI-respons bekræftede dog 34 versionsvalg og et historisk
+valg med `Version: 01-09-2026`, perioden `01-07-2026 til 30-08-2026` og
+opdatering `18-09-2026 09:44:20`. Det beviser login-adgang til historikken via
+den eksisterende ranglisteside/ASMX-rute, men ikke direkte REST-enumeration på
+tværs af sæsoner.
