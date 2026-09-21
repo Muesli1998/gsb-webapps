@@ -1,0 +1,10 @@
+{
+  "subPages": {"0":"empty","1":"index","2":"standing","3":"team_match_list_with_team_id","4":"group_match_list","5":"match_detail","6":"empty","7":"navigation_shell","8":"empty","9":"navigation_shell","10":"navigation_shell","11":"navigation_shell","12":"navigation_shell","13":"navigation_shell","14":"navigation_shell","15":"navigation_shell","16":"navigation_shell"},
+  "timings": {
+    "index": {"calls":16269,"first":"2026-09-21T17:51:44.900Z","last":"2026-09-21T18:03:12.825Z","durationSeconds":687.925,"callsPerMinute":1418.9628229821565},
+    "detail": {"calls":18546,"first":"2026-09-21T18:04:59.622Z","last":"2026-09-21T18:12:11.864Z","durationSeconds":432.242,"callsPerMinute":2574.3911975236097},
+    "matchList": {"calls":18546,"first":"2026-09-21T18:30:46.838Z","last":"2026-09-21T18:31:58.195Z","durationSeconds":71.357,"callsPerMinute":15594.265453984894}
+  },
+  "fullExtraction": {"matchListCalls":18546,"matchDetailCalls":310137,"totalCalls":328683,"phaseRateEstimateSeconds":7300.7,"phaseRateEstimateMinutes":121.678},
+  "schema": {"leagueMatches":true,"matchCategories":true,"matchGames":true}
+}

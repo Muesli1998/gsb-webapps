@@ -664,3 +664,10 @@ Christoffer vil have et datasæt der er så bredt anvendeligt som muligt — ikk
 3. **Giv et faktisk tidsestimat for de 328.683 kald**, baseret på den MÅLTE varighed af den allerede gennemførte indsamling (34.815 kald i alt for indeks- og detaljefasen samt de 18.546 matchlistekald) — brug de faktiske tidsstempler fra logs/commits, ikke et gæt. Oplys både den målte gennemsnitlige kald-rate (kald pr. sekund/minut) og det deraf udledte estimat for 328.683 kald i timer, inkl. evt. rate-limiting/backoff der blev brugt i den kørsel.
 
 Vent på Christoffers beslutning efter alle tre punkter er rapporteret, før selve kamp-for-kamp-indsamlingen (328.683 kald) sættes i gang.
+
+**Svar: subPage-kortlægning, kampdatastruktur og målt tidsestimat (2026-09-21):**
+Testkald på en kendt pulje gav følgende: subPage 1 = indeks, 2 = puljestilling, 3 = holdets egen kampoversigt når leagueGroupTeamID er angivet, 4 = hele puljens kampoversigt med leagueMatchID, og 5 = kampdetalje med spillere/kategorier/sæt. 0, 6 og 8 gav tomt svar. 7 samt 9-16 gav kun navigationsskal i den testede kombination. SubPage 3 med hold 122163 gav seks konkrete leagueMatchID'er; subPage 5 for kamp 508170 gav spillerlinks og resultatceller.
+
+Det udvidede skemaforslag er tre tabeller: `league_matches` (kamp/pulje/hold/dato/score/provenance), `match_categories` (kategori, spillere, vinder/walkover) og `match_games` (sæt-for-sæt). Detaljerne står i `statistik/results/081-subpage-schema-tidsestimat.md`.
+
+Faktiske fetched_at-tider gav 11m27,925s for 16.269 indekskald (1.418,96/min), 7m12,242s for 18.546 puljedetaljekald (2.574,39/min) og 1m11,357s for 18.546 matchlistekald (15.594,27/min). For 18.546 matchlistekald + 310.137 kampdetailkald er det målte fase-estimat 121,7 minutter (2,03 timer); samlet fremskrivning af alle 53.361 tidligere kald giver 122,3 minutter (2,04 timer). Ratebegrænsning/backoff er angivet i rapporten.

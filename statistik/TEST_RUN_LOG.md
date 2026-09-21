@@ -656,3 +656,9 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
 - 3-holds-puljer: 1.431 med 3 kampe, 108 med 6 kampe; øvrige 3-holdsformater blev bevaret som egne faktiske antal.
 - Pris-estimat for fuld kampindsamling: 18.546 matchlistekald + 310.137 detailkald = 328.683 kald.
 - Kun optællingstabellen league_group_match_counts blev skrevet; ingen kampdetaljer blev gemt. Rapport: `statistik/results/081-kampantal-optælling.md`/.json.
+
+## 2026-09-21 — opgave 081 subPage/skema/tidsestimat
+- SubPage 1-5 dokumenteret: indeks, stilling, holdkamp-liste, pulje-kamp-liste og kampdetalje. 0/6/8 tomme; 7 og 9-16 navigationsskal i testkombinationen.
+- Skema foreslået: league_matches, match_categories, match_games.
+- Målt fra fetched_at: indeks 11m27,925s/16.269 (1.418,96/min), puljedetaljer 7m12,242s/18.546 (2.574,39/min), matchlisteoptælling 1m11,357s/18.546 (15.594,27/min).
+- Kampindsamling estimeret til 121,7 minutter fasebaseret eller 122,3 minutter ved samlet rate for 328.683 kald. Rapport: `statistik/results/081-subpage-schema-tidsestimat.md`/.json.
