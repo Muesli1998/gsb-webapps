@@ -655,3 +655,12 @@ Den korrigerede optælling af `subPage=4` fandt 310.137 distinkte kamp-ID’er p
 For 3-holds-puljer var 1.431 puljer på 3 kampe (enkeltrunde) og 108 på 6 kampe (dobbeltrunde). De øvrige 3-holds-puljer havde andre faktiske antal og blev ikke tvunget ind i en standardkategori. Den fulde fordeling står i `statistik/results/081-kampantal-optælling.md` og `.json`.
 
 Et fuldt kamp-for-kamp-udtræk vil derfor kræve 18.546 matchlistekald plus 310.137 `subPage=5`-detailkald, i alt 328.683 kald. Dette trin gemte kun optællingen i `league_group_match_counts`; ingen kampdetaljer blev hentet eller gemt.
+
+**Ny opgave, tre dele, før selve kamp-indsamlingen sættes i gang (2026-09-21):**
+Christoffer vil have et datasæt der er så bredt anvendeligt som muligt — ikke kun det strengt nødvendige til en rangeret hold-liste. Derfor skal informationsfladen kortlægges fuldt, ikke kun `subPage=5`.
+
+1. **Kortlæg alle subPages.** `GetLeagueStanding` er set brugt med `subPage=1` (indeks/puljeliste), `2` (puljestilling), `4` (matchliste) og `5` (kampresultat). Test systematisk om der findes flere gyldige `subPage`-værdier (prøv fx 0, 3, 6, 7, 8, evt. højere) på et par allerede kendte, gyldige parameterkombinationer (samme `leagueGroupID`/`leagueMatchID`-eksempler som tidligere brugt). For hver værdi der giver et gyldigt (ikke-fejl) svar: dokumentér kort hvad den indeholder — ikke kun at den svarer, men hvilke faktiske felter/data den giver adgang til, som `subPage=1/2/4/5` ikke allerede dækker. Gæt ikke ud fra tal-mønstre; test og rapportér det faktiske svar for hver.
+2. **Foreslå et udvidet skema** til `liga-landskab.db` der dækker de faktiske kampdata fra `subPage=5` (og evt. andre nyttige subPages fundet i punkt 1) — fx kamp-ID, pulje-reference, hold (hjemme/ude), dato, sæt-for-sæt score, evt. disciplin/rækketype hvis det findes i svaret. Skriv forslaget under et nyt "Spørgsmål"-svar og STOP der, ligesom sidste gang — byg ikke skemaet endnu.
+3. **Giv et faktisk tidsestimat for de 328.683 kald**, baseret på den MÅLTE varighed af den allerede gennemførte indsamling (34.815 kald i alt for indeks- og detaljefasen samt de 18.546 matchlistekald) — brug de faktiske tidsstempler fra logs/commits, ikke et gæt. Oplys både den målte gennemsnitlige kald-rate (kald pr. sekund/minut) og det deraf udledte estimat for 328.683 kald i timer, inkl. evt. rate-limiting/backoff der blev brugt i den kørsel.
+
+Vent på Christoffers beslutning efter alle tre punkter er rapporteret, før selve kamp-for-kamp-indsamlingen (328.683 kald) sættes i gang.
