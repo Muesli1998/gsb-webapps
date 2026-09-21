@@ -435,3 +435,24 @@ Rå, callback-redigeret evidens og den reproducerbare probe ligger i
 `statistik/results/081-webservice-catalog-probe.json` og
 `statistik/scripts/081-webservice-catalog-probe.mjs`. Der er ikke startet
 fuld 2010–2026-indsamling eller skrevet til den normaliserede database.
+
+**Svar på den yderligere parameterkortlægning (2026-09-21):** De direkte
+katalogkald `GET /api/AgeGroup/Get` og `GET /api/Region` gav henholdsvis 29
+aldersgrupper og 33 regioner med ID, navn, kort navn og parent-ID. Den fulde
+liste står i `statistik/results/081-parameter-map-probe.md`, mens de rå HTTP-
+svar og SHA-256-værdier ligger i den tilhørende `.json`.
+
+Senior-anomalien blev testet med rå `GetLeagueStanding`-svar for region 4, 5,
+6 og 7, både indekskald og samme pulje (`leagueGroupID=18888`). Svarene var
+ikke byte-for-byte identiske (fire forskellige SHA-256-værdier), men det
+konkrete puljesvar havde samme afkodede titel,
+`BADMIDJ,BADNDRJ,BADSDRJ,BADFYN SEN 2026/2027`, og samme otte hold i alle fire
+svar. Det er evidens for en reel delt vestlig seniorpulje, ikke en generisk
+fallback eller en fejl i opslaget.
+
+Det konkrete kaldestimat for indeksfasen er 16.269 kald for alle 33
+katalogregioner (17 sæsoner × 29 aldersgrupper × 33 regioner), 4.437 for BD
+plus de otte BD-kredse (9 regioner i alt), eller 13.311 for BD og alle DGI-
+regioner (27 regioner). Hertil kommer ét puljekald pr. unik
+`leagueGroupID`; det antal kan først tælles efter indeksfasen. Den historiske
+indsamling er ikke startet, og databasen er urørt.

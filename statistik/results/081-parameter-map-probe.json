@@ -1,0 +1,624 @@
+{
+  "generatedAt": "2026-09-21T08:33:26.810Z",
+  "sources": {
+    "ageGroups": {
+      "url": "https://badmintonplayer.dk/api/AgeGroup/Get",
+      "http": 200,
+      "contentType": "application/json; charset=utf-8",
+      "body": [
+        {
+          "ageGroupId": 2,
+          "ageGroupName": "U09",
+          "yearsFrom": 0,
+          "yearsTo": 8,
+          "yearsFromTournament": 0,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 3,
+          "ageGroupName": "U11",
+          "yearsFrom": 9,
+          "yearsTo": 10,
+          "yearsFromTournament": 0,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 4,
+          "ageGroupName": "U13",
+          "yearsFrom": 11,
+          "yearsTo": 12,
+          "yearsFromTournament": 0,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 5,
+          "ageGroupName": "U15",
+          "yearsFrom": 13,
+          "yearsTo": 14,
+          "yearsFromTournament": 0,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 6,
+          "ageGroupName": "U17",
+          "yearsFrom": 15,
+          "yearsTo": 16,
+          "yearsFromTournament": 0,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 7,
+          "ageGroupName": "U19",
+          "yearsFrom": 17,
+          "yearsTo": 18,
+          "yearsFromTournament": 0,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 20,
+          "ageGroupName": "U23",
+          "yearsFrom": 17,
+          "yearsTo": 22,
+          "yearsFromTournament": 17,
+          "yearsToTournament": 22
+        },
+        {
+          "ageGroupId": 18,
+          "ageGroupName": "U17/U19",
+          "yearsFrom": 15,
+          "yearsTo": 18,
+          "yearsFromTournament": 0,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 21,
+          "ageGroupName": "UNG",
+          "yearsFrom": 0,
+          "yearsTo": 18,
+          "yearsFromTournament": 0,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 1,
+          "ageGroupName": "SEN",
+          "yearsFrom": 15,
+          "yearsTo": 120,
+          "yearsFromTournament": 17,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 19,
+          "ageGroupName": "SEN+30",
+          "yearsFrom": 30,
+          "yearsTo": null,
+          "yearsFromTournament": 30,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 8,
+          "ageGroupName": "SEN+35",
+          "yearsFrom": 35,
+          "yearsTo": null,
+          "yearsFromTournament": 35,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 9,
+          "ageGroupName": "SEN+40",
+          "yearsFrom": 40,
+          "yearsTo": null,
+          "yearsFromTournament": 40,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 10,
+          "ageGroupName": "SEN+45",
+          "yearsFrom": 45,
+          "yearsTo": null,
+          "yearsFromTournament": 45,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 11,
+          "ageGroupName": "SEN+50",
+          "yearsFrom": 50,
+          "yearsTo": null,
+          "yearsFromTournament": 50,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 12,
+          "ageGroupName": "SEN+55",
+          "yearsFrom": 55,
+          "yearsTo": null,
+          "yearsFromTournament": 55,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 13,
+          "ageGroupName": "SEN+60",
+          "yearsFrom": 60,
+          "yearsTo": null,
+          "yearsFromTournament": 60,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 14,
+          "ageGroupName": "SEN+65",
+          "yearsFrom": 65,
+          "yearsTo": null,
+          "yearsFromTournament": 65,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 17,
+          "ageGroupName": "SEN+70",
+          "yearsFrom": 70,
+          "yearsTo": null,
+          "yearsFromTournament": 70,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 22,
+          "ageGroupName": "SEN+75",
+          "yearsFrom": 75,
+          "yearsTo": null,
+          "yearsFromTournament": 75,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 28,
+          "ageGroupName": "SEN+80",
+          "yearsFrom": 80,
+          "yearsTo": null,
+          "yearsFromTournament": 80,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 16,
+          "ageGroupName": "MOT",
+          "yearsFrom": 15,
+          "yearsTo": null,
+          "yearsFromTournament": 0,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 15,
+          "ageGroupName": "Andet",
+          "yearsFrom": 0,
+          "yearsTo": null,
+          "yearsFromTournament": 0,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 23,
+          "ageGroupName": "U10",
+          "yearsFrom": 8,
+          "yearsTo": 9,
+          "yearsFromTournament": 0,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 29,
+          "ageGroupName": "U08",
+          "yearsFrom": 0,
+          "yearsTo": 7,
+          "yearsFromTournament": 0,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 24,
+          "ageGroupName": "U12",
+          "yearsFrom": 10,
+          "yearsTo": 11,
+          "yearsFromTournament": 0,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 25,
+          "ageGroupName": "U14",
+          "yearsFrom": 12,
+          "yearsTo": 13,
+          "yearsFromTournament": 0,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 26,
+          "ageGroupName": "U16",
+          "yearsFrom": 14,
+          "yearsTo": 15,
+          "yearsFromTournament": 0,
+          "yearsToTournament": null
+        },
+        {
+          "ageGroupId": 27,
+          "ageGroupName": "U18",
+          "yearsFrom": 16,
+          "yearsTo": 17,
+          "yearsFromTournament": 0,
+          "yearsToTournament": null
+        }
+      ]
+    },
+    "regions": {
+      "url": "https://badmintonplayer.dk/api/Region",
+      "http": 200,
+      "contentType": "application/json; charset=utf-8",
+      "body": [
+        {
+          "regionId": 1,
+          "name": "Badminton Danmark",
+          "shortName": "BADDAN",
+          "parentId": null
+        },
+        {
+          "regionId": 2,
+          "name": "DGI",
+          "shortName": "DGI",
+          "parentId": null
+        },
+        {
+          "regionId": 3,
+          "name": "Badminton Bornholm",
+          "shortName": "BADBORN",
+          "parentId": 1
+        },
+        {
+          "regionId": 4,
+          "name": "Badminton Midtjylland",
+          "shortName": "BADMIDJ",
+          "parentId": 1
+        },
+        {
+          "regionId": 5,
+          "name": "Badminton Nordjylland",
+          "shortName": "BADNDRJ",
+          "parentId": 1
+        },
+        {
+          "regionId": 6,
+          "name": "Badminton Sønderjylland",
+          "shortName": "BADSDRJ",
+          "parentId": 1
+        },
+        {
+          "regionId": 7,
+          "name": "Badminton Fyn",
+          "shortName": "BADFYN",
+          "parentId": 1
+        },
+        {
+          "regionId": 8,
+          "name": "Badminton København",
+          "shortName": "BADKBH",
+          "parentId": 1
+        },
+        {
+          "regionId": 9,
+          "name": "Badminton Lolland-Falster",
+          "shortName": "BADLF",
+          "parentId": 1
+        },
+        {
+          "regionId": 10,
+          "name": "Badminton Sjælland",
+          "shortName": "BADSJ",
+          "parentId": 1
+        },
+        {
+          "regionId": 11,
+          "name": "EBU",
+          "shortName": null,
+          "parentId": null
+        },
+        {
+          "regionId": 12,
+          "name": "IBF",
+          "shortName": null,
+          "parentId": null
+        },
+        {
+          "regionId": 13,
+          "name": "INT",
+          "shortName": null,
+          "parentId": null
+        },
+        {
+          "regionId": 14,
+          "name": "DGI Bornholm",
+          "shortName": "DGI-BOR",
+          "parentId": 2
+        },
+        {
+          "regionId": 16,
+          "name": "DGI Fyn",
+          "shortName": "DGI-FYN",
+          "parentId": 2
+        },
+        {
+          "regionId": 17,
+          "name": "DGI Midtjylland",
+          "shortName": "DGI-MID",
+          "parentId": 2
+        },
+        {
+          "regionId": 18,
+          "name": "DGI Nordjylland",
+          "shortName": "DGI-NOR",
+          "parentId": 2
+        },
+        {
+          "regionId": 19,
+          "name": "DGI Nordsjælland",
+          "shortName": "DGI-NSJ",
+          "parentId": 2
+        },
+        {
+          "regionId": 20,
+          "name": "DGI Nordvest",
+          "shortName": "DGI-NV",
+          "parentId": 2
+        },
+        {
+          "regionId": 22,
+          "name": "DGI Roskilde",
+          "shortName": null,
+          "parentId": 2
+        },
+        {
+          "regionId": 23,
+          "name": "DGI SdU",
+          "shortName": "DGI-SDU",
+          "parentId": 2
+        },
+        {
+          "regionId": 24,
+          "name": "DGI Storkøbenhavn",
+          "shortName": "DGI-STK",
+          "parentId": 2
+        },
+        {
+          "regionId": 25,
+          "name": "DGI Storstrømmen",
+          "shortName": "DGI-STS",
+          "parentId": 2
+        },
+        {
+          "regionId": 26,
+          "name": "DGI Sydhavsøerne",
+          "shortName": null,
+          "parentId": 2
+        },
+        {
+          "regionId": 27,
+          "name": "DGI Sydvest",
+          "shortName": "DGI-SYV",
+          "parentId": 2
+        },
+        {
+          "regionId": 28,
+          "name": "DGI Sydøstjylland",
+          "shortName": "DGI-SYØ",
+          "parentId": 2
+        },
+        {
+          "regionId": 29,
+          "name": "DGI Sønderjylland",
+          "shortName": "DGI-SØN",
+          "parentId": 2
+        },
+        {
+          "regionId": 30,
+          "name": "DGI Vestjylland",
+          "shortName": "DGI-VES",
+          "parentId": 2
+        },
+        {
+          "regionId": 31,
+          "name": "DGI Midt- og Vestsjælland",
+          "shortName": "DGI-MVS",
+          "parentId": 2
+        },
+        {
+          "regionId": 32,
+          "name": "DGI Østjylland",
+          "shortName": "DGI-ØST",
+          "parentId": 2
+        },
+        {
+          "regionId": 33,
+          "name": "Badminton World Federation",
+          "shortName": "BWF",
+          "parentId": 1
+        },
+        {
+          "regionId": 34,
+          "name": "Badminton Europe",
+          "shortName": "BE",
+          "parentId": 1
+        },
+        {
+          "regionId": 35,
+          "name": "Fælles BD/DGI",
+          "shortName": "BD-DGI",
+          "parentId": null
+        }
+      ]
+    }
+  },
+  "seniorIndex": [
+    {
+      "request": {
+        "subPage": 1,
+        "seasonID": 2026,
+        "leagueGroupID": null,
+        "ageGroupID": 1,
+        "regionID": 4,
+        "leagueGroupTeamID": null,
+        "leagueMatchID": null,
+        "clubID": null,
+        "playerID": null
+      },
+      "http": 200,
+      "rawLength": 4887,
+      "rawSha256": "ff2adf536a77ee746f6bc65aac3ee264de4b5bd64c321e530abcb0584138ed02",
+      "rawResponse": "{\"d\":{\"__type\":\"SportsResults_WebApp.SportsResults.Components.WebMethodResult\",\"html\":\"\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00270\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eS\\u0026#248;g andre r\\u0026#230;kker\\u003c/a\\u003e\\u003cbr /\\u003e\\r\\n\\u003cbr /\\u003e\\r\\n\\u003ch2\\u003eBADMIDJ SEN 2026/2027\\u003c/h2\\u003e\\u003ctable class=\\u0027selectgroup\\u0027 \\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eKredsserien Vest\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00274\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 1\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002718889\\u0027, \\u00271\\u0027, \\u00274\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 2\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002718890\\u0027, \\u00271\\u0027, \\u00274\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 3\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002718891\\u0027, \\u00271\\u0027, \\u00274\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 4\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eSerie 1 Vest (5+3)\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719015\\u0027, \\u00271\\u0027, \\u00274\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 1\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719016\\u0027, \\u00271\\u0027, \\u00274\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 2\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719017\\u0027, \\u00271\\u0027, \\u00274\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 3\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719018\\u0027, \\u00271\\u0027, \\u00274\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 4\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719019\\u0027, \\u00271\\u0027, \\u00274\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 5\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719020\\u0027, \\u00271\\u0027, \\u00274\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 6\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eKredsserien Vest - slutspilstider\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002718892\\u0027, \\u00271\\u0027, \\u00274\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 1 og pulje 3\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002718893\\u0027, \\u00271\\u0027, \\u00274\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 2 og pulje 4\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003c/table\\u003e\\r\\n\"}}",
+      "decodedTitle": "BADMIDJ SEN 2026/2027",
+      "decodedHtml": "<a href=\"#\" onclick=\"return ShowStanding('0', '', '', '', '', '', '', '', '');\" class='team'>S&#248;g andre r&#230;kker</a><br />\r\n<br />\r\n<h2>BADMIDJ SEN 2026/2027</h2><table class='selectgroup' >\r\n<tr class='divisionrow'><td><h3>Kredsserien Vest</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18888', '1', '4', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18889', '1', '4', '', '', '', '');\" class='team'>Pulje 2</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18890', '1', '4', '', '', '', '');\" class='team'>Pulje 3</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18891', '1', '4', '', '', '', '');\" class='team'>Pulje 4</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Serie 1 Vest (5+3)</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19015', '1', '4', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19016', '1', '4', '', '', '', '');\" class='team'>Pulje 2</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19017', '1', '4', '', '', '', '');\" class='team'>Pulje 3</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19018', '1', '4', '', '', '', '');\" class='team'>Pulje 4</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19019', '1', '4', '', '', '', '');\" class='team'>Pulje 5</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19020', '1', '4', '', '', '', '');\" class='team'>Pulje 6</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Kredsserien Vest - slutspilstider</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18892', '1', '4', '', '', '', '');\" class='team'>Pulje 1 og pulje 3</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18893', '1', '4', '', '', '', '');\" class='team'>Pulje 2 og pulje 4</a></td></tr>\r\n</table>\r\n"
+    },
+    {
+      "request": {
+        "subPage": 1,
+        "seasonID": 2026,
+        "leagueGroupID": null,
+        "ageGroupID": 1,
+        "regionID": 5,
+        "leagueGroupTeamID": null,
+        "leagueMatchID": null,
+        "clubID": null,
+        "playerID": null
+      },
+      "http": 200,
+      "rawLength": 11184,
+      "rawSha256": "a543fc513d38200fbab5cc90970b09051c8a25e978c98ee39ce76c0cd602b9f9",
+      "rawResponse": "{\"d\":{\"__type\":\"SportsResults_WebApp.SportsResults.Components.WebMethodResult\",\"html\":\"\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00270\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eS\\u0026#248;g andre r\\u0026#230;kker\\u003c/a\\u003e\\u003cbr /\\u003e\\r\\n\\u003cbr /\\u003e\\r\\n\\u003ch2\\u003eBADNDRJ SEN 2026/2027\\u003c/h2\\u003e\\u003ctable class=\\u0027selectgroup\\u0027 \\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eVoksenFjer\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719198\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 1\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eSerie C - Single + Double\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719201\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 1\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eSerie B - Double\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719202\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 1\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eSerie D - Double\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719203\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 1\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eSerie C - Double\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719194\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 1\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eSerie 2\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719205\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 1\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eSerie 3\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719207\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 1\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eSerie A - Double\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719217\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 1\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eSerie B - Double\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719208\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 2\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eSerie 2\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719206\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 2\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eSerie C - Double\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719195\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 2\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eSerie D - Double\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719204\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 2\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eSerie C - Double\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719196\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 3\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719209\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 4\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eKredsserien Vest\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 1\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002718889\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 2\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002718890\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 3\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002718891\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 4\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eSerie 1 Vest (5+3)\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719015\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 1\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719016\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 2\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719017\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 3\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719018\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 4\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719019\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 5\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719020\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 6\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eKredsserien Vest - slutspilstider\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002718892\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 1 og pulje 3\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002718893\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 2 og pulje 4\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003c/table\\u003e\\r\\n\"}}",
+      "decodedTitle": "BADNDRJ SEN 2026/2027",
+      "decodedHtml": "<a href=\"#\" onclick=\"return ShowStanding('0', '', '', '', '', '', '', '', '');\" class='team'>S&#248;g andre r&#230;kker</a><br />\r\n<br />\r\n<h2>BADNDRJ SEN 2026/2027</h2><table class='selectgroup' >\r\n<tr class='divisionrow'><td><h3>VoksenFjer</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19198', '1', '5', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Serie C - Single + Double</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19201', '1', '5', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Serie B - Double</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19202', '1', '5', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Serie D - Double</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19203', '1', '5', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Serie C - Double</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19194', '1', '5', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Serie 2</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19205', '1', '5', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Serie 3</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19207', '1', '5', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Serie A - Double</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19217', '1', '5', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Serie B - Double</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19208', '1', '5', '', '', '', '');\" class='team'>Pulje 2</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Serie 2</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19206', '1', '5', '', '', '', '');\" class='team'>Pulje 2</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Serie C - Double</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19195', '1', '5', '', '', '', '');\" class='team'>Pulje 2</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Serie D - Double</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19204', '1', '5', '', '', '', '');\" class='team'>Pulje 2</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Serie C - Double</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19196', '1', '5', '', '', '', '');\" class='team'>Pulje 3</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19209', '1', '5', '', '', '', '');\" class='team'>Pulje 4</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Kredsserien Vest</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18888', '1', '5', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18889', '1', '5', '', '', '', '');\" class='team'>Pulje 2</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18890', '1', '5', '', '', '', '');\" class='team'>Pulje 3</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18891', '1', '5', '', '', '', '');\" class='team'>Pulje 4</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Serie 1 Vest (5+3)</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19015', '1', '5', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19016', '1', '5', '', '', '', '');\" class='team'>Pulje 2</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19017', '1', '5', '', '', '', '');\" class='team'>Pulje 3</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19018', '1', '5', '', '', '', '');\" class='team'>Pulje 4</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19019', '1', '5', '', '', '', '');\" class='team'>Pulje 5</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19020', '1', '5', '', '', '', '');\" class='team'>Pulje 6</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Kredsserien Vest - slutspilstider</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18892', '1', '5', '', '', '', '');\" class='team'>Pulje 1 og pulje 3</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18893', '1', '5', '', '', '', '');\" class='team'>Pulje 2 og pulje 4</a></td></tr>\r\n</table>\r\n"
+    },
+    {
+      "request": {
+        "subPage": 1,
+        "seasonID": 2026,
+        "leagueGroupID": null,
+        "ageGroupID": 1,
+        "regionID": 6,
+        "leagueGroupTeamID": null,
+        "leagueMatchID": null,
+        "clubID": null,
+        "playerID": null
+      },
+      "http": 200,
+      "rawLength": 4887,
+      "rawSha256": "a818c857f519d29c58dadcd1aecad5f6f02ef35032a26c4edca88de6a52651fe",
+      "rawResponse": "{\"d\":{\"__type\":\"SportsResults_WebApp.SportsResults.Components.WebMethodResult\",\"html\":\"\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00270\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eS\\u0026#248;g andre r\\u0026#230;kker\\u003c/a\\u003e\\u003cbr /\\u003e\\r\\n\\u003cbr /\\u003e\\r\\n\\u003ch2\\u003eBADSDRJ SEN 2026/2027\\u003c/h2\\u003e\\u003ctable class=\\u0027selectgroup\\u0027 \\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eKredsserien Vest\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00276\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 1\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002718889\\u0027, \\u00271\\u0027, \\u00276\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 2\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002718890\\u0027, \\u00271\\u0027, \\u00276\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 3\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002718891\\u0027, \\u00271\\u0027, \\u00276\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 4\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eSerie 1 Vest (5+3)\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719015\\u0027, \\u00271\\u0027, \\u00276\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 1\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719016\\u0027, \\u00271\\u0027, \\u00276\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 2\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719017\\u0027, \\u00271\\u0027, \\u00276\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 3\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719018\\u0027, \\u00271\\u0027, \\u00276\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 4\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719019\\u0027, \\u00271\\u0027, \\u00276\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 5\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719020\\u0027, \\u00271\\u0027, \\u00276\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 6\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eKredsserien Vest - slutspilstider\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002718892\\u0027, \\u00271\\u0027, \\u00276\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 1 og pulje 3\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002718893\\u0027, \\u00271\\u0027, \\u00276\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 2 og pulje 4\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003c/table\\u003e\\r\\n\"}}",
+      "decodedTitle": "BADSDRJ SEN 2026/2027",
+      "decodedHtml": "<a href=\"#\" onclick=\"return ShowStanding('0', '', '', '', '', '', '', '', '');\" class='team'>S&#248;g andre r&#230;kker</a><br />\r\n<br />\r\n<h2>BADSDRJ SEN 2026/2027</h2><table class='selectgroup' >\r\n<tr class='divisionrow'><td><h3>Kredsserien Vest</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18888', '1', '6', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18889', '1', '6', '', '', '', '');\" class='team'>Pulje 2</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18890', '1', '6', '', '', '', '');\" class='team'>Pulje 3</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18891', '1', '6', '', '', '', '');\" class='team'>Pulje 4</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Serie 1 Vest (5+3)</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19015', '1', '6', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19016', '1', '6', '', '', '', '');\" class='team'>Pulje 2</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19017', '1', '6', '', '', '', '');\" class='team'>Pulje 3</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19018', '1', '6', '', '', '', '');\" class='team'>Pulje 4</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19019', '1', '6', '', '', '', '');\" class='team'>Pulje 5</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19020', '1', '6', '', '', '', '');\" class='team'>Pulje 6</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Kredsserien Vest - slutspilstider</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18892', '1', '6', '', '', '', '');\" class='team'>Pulje 1 og pulje 3</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18893', '1', '6', '', '', '', '');\" class='team'>Pulje 2 og pulje 4</a></td></tr>\r\n</table>\r\n"
+    },
+    {
+      "request": {
+        "subPage": 1,
+        "seasonID": 2026,
+        "leagueGroupID": null,
+        "ageGroupID": 1,
+        "regionID": 7,
+        "leagueGroupTeamID": null,
+        "leagueMatchID": null,
+        "clubID": null,
+        "playerID": null
+      },
+      "http": 200,
+      "rawLength": 7166,
+      "rawSha256": "982226701f5309efaa65000467b27c6da92311f274509f198c754492d973ef0a",
+      "rawResponse": "{\"d\":{\"__type\":\"SportsResults_WebApp.SportsResults.Components.WebMethodResult\",\"html\":\"\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00270\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eS\\u0026#248;g andre r\\u0026#230;kker\\u003c/a\\u003e\\u003cbr /\\u003e\\r\\n\\u003cbr /\\u003e\\r\\n\\u003ch2\\u003eBADFYN SEN 2026/2027\\u003c/h2\\u003e\\u003ctable class=\\u0027selectgroup\\u0027 \\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eKredsserien Vest\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 1\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002718889\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 2\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002718890\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 3\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002718891\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 4\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eSerie 1 Vest (5+3)\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719015\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 1\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719016\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 2\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719017\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 3\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719018\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 4\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719019\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 5\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719020\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 6\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eKredsserien Vest - slutspilstider\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002718892\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 1 og pulje 3\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002718893\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 2 og pulje 4\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eSen 4 + 2 A\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719150\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 1\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eSen 4 + 2 B\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719151\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 1\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eSen Hr. - A\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719152\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 1\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eSen Hr. - B\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719153\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 1\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003ctr class=\\u0027divisionrow\\u0027\\u003e\\u003ctd\\u003e\\u003ch3\\u003eSen Hr. - C\\u003c/h3\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027grouprow\\u0027\\u003e\\u003ctd\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00272\\u0027, \\u00272026\\u0027, \\u002719154\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003ePulje 1\\u003c/a\\u003e\\u003c/td\\u003e\\u003c/tr\\u003e\\r\\n\\u003c/table\\u003e\\r\\n\"}}",
+      "decodedTitle": "BADFYN SEN 2026/2027",
+      "decodedHtml": "<a href=\"#\" onclick=\"return ShowStanding('0', '', '', '', '', '', '', '', '');\" class='team'>S&#248;g andre r&#230;kker</a><br />\r\n<br />\r\n<h2>BADFYN SEN 2026/2027</h2><table class='selectgroup' >\r\n<tr class='divisionrow'><td><h3>Kredsserien Vest</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18888', '1', '7', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18889', '1', '7', '', '', '', '');\" class='team'>Pulje 2</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18890', '1', '7', '', '', '', '');\" class='team'>Pulje 3</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18891', '1', '7', '', '', '', '');\" class='team'>Pulje 4</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Serie 1 Vest (5+3)</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19015', '1', '7', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19016', '1', '7', '', '', '', '');\" class='team'>Pulje 2</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19017', '1', '7', '', '', '', '');\" class='team'>Pulje 3</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19018', '1', '7', '', '', '', '');\" class='team'>Pulje 4</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19019', '1', '7', '', '', '', '');\" class='team'>Pulje 5</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19020', '1', '7', '', '', '', '');\" class='team'>Pulje 6</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Kredsserien Vest - slutspilstider</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18892', '1', '7', '', '', '', '');\" class='team'>Pulje 1 og pulje 3</a></td></tr>\r\n<tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '18893', '1', '7', '', '', '', '');\" class='team'>Pulje 2 og pulje 4</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Sen 4 + 2 A</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19150', '1', '7', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Sen 4 + 2 B</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19151', '1', '7', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Sen Hr. - A</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19152', '1', '7', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Sen Hr. - B</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19153', '1', '7', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n<tr class='divisionrow'><td><h3>Sen Hr. - C</h3></td></tr><tr class='grouprow'><td><a href=\"#\" onclick=\"return ShowStanding('2', '2026', '19154', '1', '7', '', '', '', '');\" class='team'>Pulje 1</a></td></tr>\r\n</table>\r\n"
+    }
+  ],
+  "seniorGroup": [
+    {
+      "request": {
+        "subPage": 2,
+        "seasonID": 2026,
+        "leagueGroupID": 18888,
+        "ageGroupID": 1,
+        "regionID": 4,
+        "leagueGroupTeamID": null,
+        "leagueMatchID": null,
+        "clubID": null,
+        "playerID": null
+      },
+      "http": 200,
+      "rawLength": 8268,
+      "rawSha256": "954d278dbd036e951ac6eee5e0b276f48caf6ea56c8e5b71a756ed5fe87f0acc",
+      "rawResponse": "{\"d\":{\"__type\":\"SportsResults_WebApp.SportsResults.Components.WebMethodResult\",\"html\":\"\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00270\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eS\\u0026#248;g andre r\\u0026#230;kker\\u003c/a\\u003e\\u003cbr /\\u003e\\r\\n\\u003cbr /\\u003e\\r\\n\\u003ch2\\u003eBADMIDJ,BADNDRJ,BADSDRJ,BADFYN SEN 2026/2027\\u003c/h2\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00271\\u0027, \\u00272026\\u0027, \\u0027\\u0027, \\u00271\\u0027, \\u00274\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eVis r\\u0026#230;kker\\u003c/a\\u003e\\u003cbr /\\u003e\\r\\n\\u003cbr /\\u003e\\r\\n\\u003ch3\\u003eKredsserien Vest Pulje 1\\u003c/h3\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00274\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00274\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eVis alle kampe\\u003c/a\\u003e\\u003cbr /\\u003e\\r\\n\\u003cdiv class=\\u0027table-container\\u0027\\u003e\\u003ctable class=\\u0027groupstandings\\u0027 \\u003e\\r\\n\\u003cthead\\u003e\\u003ctr\\u003e\\u003cth\\u003e#\\u003c/th\\u003e\\u003cth class=\\u0027team\\u0027\\u003eHold\\u003c/th\\u003e\\u003cth class=\\u0027score\\u0027\\u003e\\u003cspan class=\\u0027short-header\\u0027\\u003eK.\\u003c/span\\u003e\\u003cspan class=\\u0027long-header\\u0027\\u003eKampe\\u003c/span\\u003e\\u003c/th\\u003e\\u003cth class=\\u0027score\\u0027\\u003e\\u003cspan class=\\u0027short-header\\u0027\\u003eV.\\u003c/span\\u003e\\u003cspan class=\\u0027long-header\\u0027\\u003eVundne\\u003c/span\\u003e\\u003c/th\\u003e\\u003cth class=\\u0027score\\u0027\\u003eScore\\u003c/th\\u003e\\u003cth class=\\u0027score\\u0027\\u003eS\\u0026#230;t\\u003c/th\\u003e\\u003cth class=\\u0027score\\u0027\\u003e\\u003cspan class=\\u0027short-header\\u0027\\u003eP.\\u003c/span\\u003e\\u003cspan class=\\u0027long-header\\u0027\\u003ePoint\\u003c/span\\u003e\\u003c/th\\u003e\\u003cth  class=\\u0027score\\u0027\\u003eS.Point\\u003c/th\\u003e\\u003c/tr\\u003e\\u003c/thead\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00274\\u0027, \\u0027122163\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eH\\u0026#248;jbjerg 5 (N)\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e2\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e2\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e17-9\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e39-20\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e23\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e25\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e2\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00274\\u0027, \\u0027122167\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eSkovbakken 4\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e2\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e13-13\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e30-29\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e16\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e19\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e3\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00274\\u0027, \\u0027122168\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eSilkeborg BK 2\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e2\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e12-14\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e28-33\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e14\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e18\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027solid-line\\u0027\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e4\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00274\\u0027, \\u0027122170\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eTeam Favrskov 2\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e8-5\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e17-12\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e11\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e19\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e5\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00274\\u0027, \\u0027122169\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eBrabrand\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e0\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e6-7\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e13-16\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e7\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e20\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e6\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00274\\u0027, \\u0027122164\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eabc Aalborg 3\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e0\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e5-8\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e12-18\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e5\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e19\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e7\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00274\\u0027, \\u0027122165\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eHadsund (O)\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e0\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e4-9\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e8-19\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e4\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e18\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00274\\u0027, \\u0027122166\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eHorsens 2 (N)\\u003c/a\\u003e\\u003cimg src=\\u0027/SportsResults/Images/Info.gif\\u0027 title=\\u0027Holdet trukket den 3/9-2026\\u0027 /\\u003e\\u003c/td\\u003e\\u003ctd colspan=\\u00275\\u0027\\u003eHoldet trukket\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e0\\u003c/td\\u003e\\u003c/tr\\u003e\\u003c/table\\u003e\\u003c/div\\u003e\\r\\n\\u003cbr /\\u003e\\u003ca href=\\u0027/DBF/HoldTurnering/UdskrivStilling/?page=2\\u0026season=2026\\u0026region=4\\u0026agegroup=1\\u0026group=18888\\u0026team=\\u0026match=\\u0026club=\\u0026player=\\u0027 target=\\u0027_blank\\u0027\\u003eUdskriv\\u003c/a\\u003e\\u0026nbsp;|\\u0026nbsp;\\u003ca href=\\u0027https://badminton.freshdesk.com/support/solutions/articles/22000246428-anvend-livescore\\u0027 target=\\u0027_blank\\u0027\\u003eSådan anvender du livescore\\u003c/a\\u003e\"}}",
+      "decodedTitle": "BADMIDJ,BADNDRJ,BADSDRJ,BADFYN SEN 2026/2027",
+      "decodedHtml": "<a href=\"#\" onclick=\"return ShowStanding('0', '', '', '', '', '', '', '', '');\" class='team'>S&#248;g andre r&#230;kker</a><br />\r\n<br />\r\n<h2>BADMIDJ,BADNDRJ,BADSDRJ,BADFYN SEN 2026/2027</h2><a href=\"#\" onclick=\"return ShowStanding('1', '2026', '', '1', '4', '', '', '', '');\" class='team'>Vis r&#230;kker</a><br />\r\n<br />\r\n<h3>Kredsserien Vest Pulje 1</h3><a href=\"#\" onclick=\"return ShowStanding('4', '2026', '18888', '1', '4', '', '', '', '');\" class='team'>Vis alle kampe</a><br />\r\n<div class='table-container'><table class='groupstandings' >\r\n<thead><tr><th>#</th><th class='team'>Hold</th><th class='score'><span class='short-header'>K.</span><span class='long-header'>Kampe</span></th><th class='score'><span class='short-header'>V.</span><span class='long-header'>Vundne</span></th><th class='score'>Score</th><th class='score'>S&#230;t</th><th class='score'><span class='short-header'>P.</span><span class='long-header'>Point</span></th><th  class='score'>S.Point</th></tr></thead><tr><td class='standing'>1</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '4', '122163', '', '', '');\" class='team'>H&#248;jbjerg 5 (N)</a></td><td class='score'>2</td><td class='score'>2</td><td class='score'>17-9</td><td class='score'>39-20</td><td class='score'>23</td><td class='score'>25</td></tr><tr><td class='standing'>2</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '4', '122167', '', '', '');\" class='team'>Skovbakken 4</a></td><td class='score'>2</td><td class='score'>1</td><td class='score'>13-13</td><td class='score'>30-29</td><td class='score'>16</td><td class='score'>19</td></tr><tr><td class='standing'>3</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '4', '122168', '', '', '');\" class='team'>Silkeborg BK 2</a></td><td class='score'>2</td><td class='score'>1</td><td class='score'>12-14</td><td class='score'>28-33</td><td class='score'>14</td><td class='score'>18</td></tr><tr class='solid-line'><td class='standing'>4</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '4', '122170', '', '', '');\" class='team'>Team Favrskov 2</a></td><td class='score'>1</td><td class='score'>1</td><td class='score'>8-5</td><td class='score'>17-12</td><td class='score'>11</td><td class='score'>19</td></tr><tr><td class='standing'>5</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '4', '122169', '', '', '');\" class='team'>Brabrand</a></td><td class='score'>1</td><td class='score'>0</td><td class='score'>6-7</td><td class='score'>13-16</td><td class='score'>7</td><td class='score'>20</td></tr><tr><td class='standing'>6</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '4', '122164', '', '', '');\" class='team'>abc Aalborg 3</a></td><td class='score'>1</td><td class='score'>0</td><td class='score'>5-8</td><td class='score'>12-18</td><td class='score'>5</td><td class='score'>19</td></tr><tr><td class='standing'>7</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '4', '122165', '', '', '');\" class='team'>Hadsund (O)</a></td><td class='score'>1</td><td class='score'>0</td><td class='score'>4-9</td><td class='score'>8-19</td><td class='score'>4</td><td class='score'>18</td></tr><tr><td class='standing'></td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '4', '122166', '', '', '');\" class='team'>Horsens 2 (N)</a><img src='/SportsResults/Images/Info.gif' title='Holdet trukket den 3/9-2026' /></td><td colspan='5'>Holdet trukket</td><td class='score'>0</td></tr></table></div>\r\n<br /><a href='/DBF/HoldTurnering/UdskrivStilling/?page=2&season=2026&region=4&agegroup=1&group=18888&team=&match=&club=&player=' target='_blank'>Udskriv</a>&nbsp;|&nbsp;<a href='https://badminton.freshdesk.com/support/solutions/articles/22000246428-anvend-livescore' target='_blank'>Sådan anvender du livescore</a>"
+    },
+    {
+      "request": {
+        "subPage": 2,
+        "seasonID": 2026,
+        "leagueGroupID": 18888,
+        "ageGroupID": 1,
+        "regionID": 5,
+        "leagueGroupTeamID": null,
+        "leagueMatchID": null,
+        "clubID": null,
+        "playerID": null
+      },
+      "http": 200,
+      "rawLength": 8268,
+      "rawSha256": "48905967574866b382aeadf4439b0358e5853fad2c0326d18423beef8bf52857",
+      "rawResponse": "{\"d\":{\"__type\":\"SportsResults_WebApp.SportsResults.Components.WebMethodResult\",\"html\":\"\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00270\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eS\\u0026#248;g andre r\\u0026#230;kker\\u003c/a\\u003e\\u003cbr /\\u003e\\r\\n\\u003cbr /\\u003e\\r\\n\\u003ch2\\u003eBADMIDJ,BADNDRJ,BADSDRJ,BADFYN SEN 2026/2027\\u003c/h2\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00271\\u0027, \\u00272026\\u0027, \\u0027\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eVis r\\u0026#230;kker\\u003c/a\\u003e\\u003cbr /\\u003e\\r\\n\\u003cbr /\\u003e\\r\\n\\u003ch3\\u003eKredsserien Vest Pulje 1\\u003c/h3\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00274\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eVis alle kampe\\u003c/a\\u003e\\u003cbr /\\u003e\\r\\n\\u003cdiv class=\\u0027table-container\\u0027\\u003e\\u003ctable class=\\u0027groupstandings\\u0027 \\u003e\\r\\n\\u003cthead\\u003e\\u003ctr\\u003e\\u003cth\\u003e#\\u003c/th\\u003e\\u003cth class=\\u0027team\\u0027\\u003eHold\\u003c/th\\u003e\\u003cth class=\\u0027score\\u0027\\u003e\\u003cspan class=\\u0027short-header\\u0027\\u003eK.\\u003c/span\\u003e\\u003cspan class=\\u0027long-header\\u0027\\u003eKampe\\u003c/span\\u003e\\u003c/th\\u003e\\u003cth class=\\u0027score\\u0027\\u003e\\u003cspan class=\\u0027short-header\\u0027\\u003eV.\\u003c/span\\u003e\\u003cspan class=\\u0027long-header\\u0027\\u003eVundne\\u003c/span\\u003e\\u003c/th\\u003e\\u003cth class=\\u0027score\\u0027\\u003eScore\\u003c/th\\u003e\\u003cth class=\\u0027score\\u0027\\u003eS\\u0026#230;t\\u003c/th\\u003e\\u003cth class=\\u0027score\\u0027\\u003e\\u003cspan class=\\u0027short-header\\u0027\\u003eP.\\u003c/span\\u003e\\u003cspan class=\\u0027long-header\\u0027\\u003ePoint\\u003c/span\\u003e\\u003c/th\\u003e\\u003cth  class=\\u0027score\\u0027\\u003eS.Point\\u003c/th\\u003e\\u003c/tr\\u003e\\u003c/thead\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027122163\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eH\\u0026#248;jbjerg 5 (N)\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e2\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e2\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e17-9\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e39-20\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e23\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e25\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e2\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027122167\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eSkovbakken 4\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e2\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e13-13\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e30-29\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e16\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e19\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e3\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027122168\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eSilkeborg BK 2\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e2\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e12-14\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e28-33\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e14\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e18\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027solid-line\\u0027\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e4\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027122170\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eTeam Favrskov 2\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e8-5\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e17-12\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e11\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e19\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e5\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027122169\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eBrabrand\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e0\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e6-7\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e13-16\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e7\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e20\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e6\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027122164\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eabc Aalborg 3\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e0\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e5-8\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e12-18\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e5\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e19\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e7\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027122165\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eHadsund (O)\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e0\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e4-9\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e8-19\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e4\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e18\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00275\\u0027, \\u0027122166\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eHorsens 2 (N)\\u003c/a\\u003e\\u003cimg src=\\u0027/SportsResults/Images/Info.gif\\u0027 title=\\u0027Holdet trukket den 3/9-2026\\u0027 /\\u003e\\u003c/td\\u003e\\u003ctd colspan=\\u00275\\u0027\\u003eHoldet trukket\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e0\\u003c/td\\u003e\\u003c/tr\\u003e\\u003c/table\\u003e\\u003c/div\\u003e\\r\\n\\u003cbr /\\u003e\\u003ca href=\\u0027/DBF/HoldTurnering/UdskrivStilling/?page=2\\u0026season=2026\\u0026region=5\\u0026agegroup=1\\u0026group=18888\\u0026team=\\u0026match=\\u0026club=\\u0026player=\\u0027 target=\\u0027_blank\\u0027\\u003eUdskriv\\u003c/a\\u003e\\u0026nbsp;|\\u0026nbsp;\\u003ca href=\\u0027https://badminton.freshdesk.com/support/solutions/articles/22000246428-anvend-livescore\\u0027 target=\\u0027_blank\\u0027\\u003eSådan anvender du livescore\\u003c/a\\u003e\"}}",
+      "decodedTitle": "BADMIDJ,BADNDRJ,BADSDRJ,BADFYN SEN 2026/2027",
+      "decodedHtml": "<a href=\"#\" onclick=\"return ShowStanding('0', '', '', '', '', '', '', '', '');\" class='team'>S&#248;g andre r&#230;kker</a><br />\r\n<br />\r\n<h2>BADMIDJ,BADNDRJ,BADSDRJ,BADFYN SEN 2026/2027</h2><a href=\"#\" onclick=\"return ShowStanding('1', '2026', '', '1', '5', '', '', '', '');\" class='team'>Vis r&#230;kker</a><br />\r\n<br />\r\n<h3>Kredsserien Vest Pulje 1</h3><a href=\"#\" onclick=\"return ShowStanding('4', '2026', '18888', '1', '5', '', '', '', '');\" class='team'>Vis alle kampe</a><br />\r\n<div class='table-container'><table class='groupstandings' >\r\n<thead><tr><th>#</th><th class='team'>Hold</th><th class='score'><span class='short-header'>K.</span><span class='long-header'>Kampe</span></th><th class='score'><span class='short-header'>V.</span><span class='long-header'>Vundne</span></th><th class='score'>Score</th><th class='score'>S&#230;t</th><th class='score'><span class='short-header'>P.</span><span class='long-header'>Point</span></th><th  class='score'>S.Point</th></tr></thead><tr><td class='standing'>1</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '5', '122163', '', '', '');\" class='team'>H&#248;jbjerg 5 (N)</a></td><td class='score'>2</td><td class='score'>2</td><td class='score'>17-9</td><td class='score'>39-20</td><td class='score'>23</td><td class='score'>25</td></tr><tr><td class='standing'>2</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '5', '122167', '', '', '');\" class='team'>Skovbakken 4</a></td><td class='score'>2</td><td class='score'>1</td><td class='score'>13-13</td><td class='score'>30-29</td><td class='score'>16</td><td class='score'>19</td></tr><tr><td class='standing'>3</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '5', '122168', '', '', '');\" class='team'>Silkeborg BK 2</a></td><td class='score'>2</td><td class='score'>1</td><td class='score'>12-14</td><td class='score'>28-33</td><td class='score'>14</td><td class='score'>18</td></tr><tr class='solid-line'><td class='standing'>4</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '5', '122170', '', '', '');\" class='team'>Team Favrskov 2</a></td><td class='score'>1</td><td class='score'>1</td><td class='score'>8-5</td><td class='score'>17-12</td><td class='score'>11</td><td class='score'>19</td></tr><tr><td class='standing'>5</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '5', '122169', '', '', '');\" class='team'>Brabrand</a></td><td class='score'>1</td><td class='score'>0</td><td class='score'>6-7</td><td class='score'>13-16</td><td class='score'>7</td><td class='score'>20</td></tr><tr><td class='standing'>6</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '5', '122164', '', '', '');\" class='team'>abc Aalborg 3</a></td><td class='score'>1</td><td class='score'>0</td><td class='score'>5-8</td><td class='score'>12-18</td><td class='score'>5</td><td class='score'>19</td></tr><tr><td class='standing'>7</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '5', '122165', '', '', '');\" class='team'>Hadsund (O)</a></td><td class='score'>1</td><td class='score'>0</td><td class='score'>4-9</td><td class='score'>8-19</td><td class='score'>4</td><td class='score'>18</td></tr><tr><td class='standing'></td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '5', '122166', '', '', '');\" class='team'>Horsens 2 (N)</a><img src='/SportsResults/Images/Info.gif' title='Holdet trukket den 3/9-2026' /></td><td colspan='5'>Holdet trukket</td><td class='score'>0</td></tr></table></div>\r\n<br /><a href='/DBF/HoldTurnering/UdskrivStilling/?page=2&season=2026&region=5&agegroup=1&group=18888&team=&match=&club=&player=' target='_blank'>Udskriv</a>&nbsp;|&nbsp;<a href='https://badminton.freshdesk.com/support/solutions/articles/22000246428-anvend-livescore' target='_blank'>Sådan anvender du livescore</a>"
+    },
+    {
+      "request": {
+        "subPage": 2,
+        "seasonID": 2026,
+        "leagueGroupID": 18888,
+        "ageGroupID": 1,
+        "regionID": 6,
+        "leagueGroupTeamID": null,
+        "leagueMatchID": null,
+        "clubID": null,
+        "playerID": null
+      },
+      "http": 200,
+      "rawLength": 8268,
+      "rawSha256": "cc68e706a51ade3ebe1930329375049baae3df452b728ee061434d4bd1370216",
+      "rawResponse": "{\"d\":{\"__type\":\"SportsResults_WebApp.SportsResults.Components.WebMethodResult\",\"html\":\"\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00270\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eS\\u0026#248;g andre r\\u0026#230;kker\\u003c/a\\u003e\\u003cbr /\\u003e\\r\\n\\u003cbr /\\u003e\\r\\n\\u003ch2\\u003eBADMIDJ,BADNDRJ,BADSDRJ,BADFYN SEN 2026/2027\\u003c/h2\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00271\\u0027, \\u00272026\\u0027, \\u0027\\u0027, \\u00271\\u0027, \\u00276\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eVis r\\u0026#230;kker\\u003c/a\\u003e\\u003cbr /\\u003e\\r\\n\\u003cbr /\\u003e\\r\\n\\u003ch3\\u003eKredsserien Vest Pulje 1\\u003c/h3\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00274\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00276\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eVis alle kampe\\u003c/a\\u003e\\u003cbr /\\u003e\\r\\n\\u003cdiv class=\\u0027table-container\\u0027\\u003e\\u003ctable class=\\u0027groupstandings\\u0027 \\u003e\\r\\n\\u003cthead\\u003e\\u003ctr\\u003e\\u003cth\\u003e#\\u003c/th\\u003e\\u003cth class=\\u0027team\\u0027\\u003eHold\\u003c/th\\u003e\\u003cth class=\\u0027score\\u0027\\u003e\\u003cspan class=\\u0027short-header\\u0027\\u003eK.\\u003c/span\\u003e\\u003cspan class=\\u0027long-header\\u0027\\u003eKampe\\u003c/span\\u003e\\u003c/th\\u003e\\u003cth class=\\u0027score\\u0027\\u003e\\u003cspan class=\\u0027short-header\\u0027\\u003eV.\\u003c/span\\u003e\\u003cspan class=\\u0027long-header\\u0027\\u003eVundne\\u003c/span\\u003e\\u003c/th\\u003e\\u003cth class=\\u0027score\\u0027\\u003eScore\\u003c/th\\u003e\\u003cth class=\\u0027score\\u0027\\u003eS\\u0026#230;t\\u003c/th\\u003e\\u003cth class=\\u0027score\\u0027\\u003e\\u003cspan class=\\u0027short-header\\u0027\\u003eP.\\u003c/span\\u003e\\u003cspan class=\\u0027long-header\\u0027\\u003ePoint\\u003c/span\\u003e\\u003c/th\\u003e\\u003cth  class=\\u0027score\\u0027\\u003eS.Point\\u003c/th\\u003e\\u003c/tr\\u003e\\u003c/thead\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00276\\u0027, \\u0027122163\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eH\\u0026#248;jbjerg 5 (N)\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e2\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e2\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e17-9\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e39-20\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e23\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e25\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e2\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00276\\u0027, \\u0027122167\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eSkovbakken 4\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e2\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e13-13\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e30-29\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e16\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e19\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e3\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00276\\u0027, \\u0027122168\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eSilkeborg BK 2\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e2\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e12-14\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e28-33\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e14\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e18\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027solid-line\\u0027\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e4\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00276\\u0027, \\u0027122170\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eTeam Favrskov 2\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e8-5\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e17-12\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e11\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e19\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e5\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00276\\u0027, \\u0027122169\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eBrabrand\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e0\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e6-7\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e13-16\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e7\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e20\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e6\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00276\\u0027, \\u0027122164\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eabc Aalborg 3\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e0\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e5-8\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e12-18\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e5\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e19\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e7\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00276\\u0027, \\u0027122165\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eHadsund (O)\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e0\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e4-9\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e8-19\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e4\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e18\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00276\\u0027, \\u0027122166\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eHorsens 2 (N)\\u003c/a\\u003e\\u003cimg src=\\u0027/SportsResults/Images/Info.gif\\u0027 title=\\u0027Holdet trukket den 3/9-2026\\u0027 /\\u003e\\u003c/td\\u003e\\u003ctd colspan=\\u00275\\u0027\\u003eHoldet trukket\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e0\\u003c/td\\u003e\\u003c/tr\\u003e\\u003c/table\\u003e\\u003c/div\\u003e\\r\\n\\u003cbr /\\u003e\\u003ca href=\\u0027/DBF/HoldTurnering/UdskrivStilling/?page=2\\u0026season=2026\\u0026region=6\\u0026agegroup=1\\u0026group=18888\\u0026team=\\u0026match=\\u0026club=\\u0026player=\\u0027 target=\\u0027_blank\\u0027\\u003eUdskriv\\u003c/a\\u003e\\u0026nbsp;|\\u0026nbsp;\\u003ca href=\\u0027https://badminton.freshdesk.com/support/solutions/articles/22000246428-anvend-livescore\\u0027 target=\\u0027_blank\\u0027\\u003eSådan anvender du livescore\\u003c/a\\u003e\"}}",
+      "decodedTitle": "BADMIDJ,BADNDRJ,BADSDRJ,BADFYN SEN 2026/2027",
+      "decodedHtml": "<a href=\"#\" onclick=\"return ShowStanding('0', '', '', '', '', '', '', '', '');\" class='team'>S&#248;g andre r&#230;kker</a><br />\r\n<br />\r\n<h2>BADMIDJ,BADNDRJ,BADSDRJ,BADFYN SEN 2026/2027</h2><a href=\"#\" onclick=\"return ShowStanding('1', '2026', '', '1', '6', '', '', '', '');\" class='team'>Vis r&#230;kker</a><br />\r\n<br />\r\n<h3>Kredsserien Vest Pulje 1</h3><a href=\"#\" onclick=\"return ShowStanding('4', '2026', '18888', '1', '6', '', '', '', '');\" class='team'>Vis alle kampe</a><br />\r\n<div class='table-container'><table class='groupstandings' >\r\n<thead><tr><th>#</th><th class='team'>Hold</th><th class='score'><span class='short-header'>K.</span><span class='long-header'>Kampe</span></th><th class='score'><span class='short-header'>V.</span><span class='long-header'>Vundne</span></th><th class='score'>Score</th><th class='score'>S&#230;t</th><th class='score'><span class='short-header'>P.</span><span class='long-header'>Point</span></th><th  class='score'>S.Point</th></tr></thead><tr><td class='standing'>1</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '6', '122163', '', '', '');\" class='team'>H&#248;jbjerg 5 (N)</a></td><td class='score'>2</td><td class='score'>2</td><td class='score'>17-9</td><td class='score'>39-20</td><td class='score'>23</td><td class='score'>25</td></tr><tr><td class='standing'>2</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '6', '122167', '', '', '');\" class='team'>Skovbakken 4</a></td><td class='score'>2</td><td class='score'>1</td><td class='score'>13-13</td><td class='score'>30-29</td><td class='score'>16</td><td class='score'>19</td></tr><tr><td class='standing'>3</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '6', '122168', '', '', '');\" class='team'>Silkeborg BK 2</a></td><td class='score'>2</td><td class='score'>1</td><td class='score'>12-14</td><td class='score'>28-33</td><td class='score'>14</td><td class='score'>18</td></tr><tr class='solid-line'><td class='standing'>4</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '6', '122170', '', '', '');\" class='team'>Team Favrskov 2</a></td><td class='score'>1</td><td class='score'>1</td><td class='score'>8-5</td><td class='score'>17-12</td><td class='score'>11</td><td class='score'>19</td></tr><tr><td class='standing'>5</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '6', '122169', '', '', '');\" class='team'>Brabrand</a></td><td class='score'>1</td><td class='score'>0</td><td class='score'>6-7</td><td class='score'>13-16</td><td class='score'>7</td><td class='score'>20</td></tr><tr><td class='standing'>6</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '6', '122164', '', '', '');\" class='team'>abc Aalborg 3</a></td><td class='score'>1</td><td class='score'>0</td><td class='score'>5-8</td><td class='score'>12-18</td><td class='score'>5</td><td class='score'>19</td></tr><tr><td class='standing'>7</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '6', '122165', '', '', '');\" class='team'>Hadsund (O)</a></td><td class='score'>1</td><td class='score'>0</td><td class='score'>4-9</td><td class='score'>8-19</td><td class='score'>4</td><td class='score'>18</td></tr><tr><td class='standing'></td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '6', '122166', '', '', '');\" class='team'>Horsens 2 (N)</a><img src='/SportsResults/Images/Info.gif' title='Holdet trukket den 3/9-2026' /></td><td colspan='5'>Holdet trukket</td><td class='score'>0</td></tr></table></div>\r\n<br /><a href='/DBF/HoldTurnering/UdskrivStilling/?page=2&season=2026&region=6&agegroup=1&group=18888&team=&match=&club=&player=' target='_blank'>Udskriv</a>&nbsp;|&nbsp;<a href='https://badminton.freshdesk.com/support/solutions/articles/22000246428-anvend-livescore' target='_blank'>Sådan anvender du livescore</a>"
+    },
+    {
+      "request": {
+        "subPage": 2,
+        "seasonID": 2026,
+        "leagueGroupID": 18888,
+        "ageGroupID": 1,
+        "regionID": 7,
+        "leagueGroupTeamID": null,
+        "leagueMatchID": null,
+        "clubID": null,
+        "playerID": null
+      },
+      "http": 200,
+      "rawLength": 8268,
+      "rawSha256": "a6365741caaf0a6b50109a2d9b29b0f9c01f495254676e60bea985299148c28d",
+      "rawResponse": "{\"d\":{\"__type\":\"SportsResults_WebApp.SportsResults.Components.WebMethodResult\",\"html\":\"\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00270\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eS\\u0026#248;g andre r\\u0026#230;kker\\u003c/a\\u003e\\u003cbr /\\u003e\\r\\n\\u003cbr /\\u003e\\r\\n\\u003ch2\\u003eBADMIDJ,BADNDRJ,BADSDRJ,BADFYN SEN 2026/2027\\u003c/h2\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00271\\u0027, \\u00272026\\u0027, \\u0027\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eVis r\\u0026#230;kker\\u003c/a\\u003e\\u003cbr /\\u003e\\r\\n\\u003cbr /\\u003e\\r\\n\\u003ch3\\u003eKredsserien Vest Pulje 1\\u003c/h3\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00274\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eVis alle kampe\\u003c/a\\u003e\\u003cbr /\\u003e\\r\\n\\u003cdiv class=\\u0027table-container\\u0027\\u003e\\u003ctable class=\\u0027groupstandings\\u0027 \\u003e\\r\\n\\u003cthead\\u003e\\u003ctr\\u003e\\u003cth\\u003e#\\u003c/th\\u003e\\u003cth class=\\u0027team\\u0027\\u003eHold\\u003c/th\\u003e\\u003cth class=\\u0027score\\u0027\\u003e\\u003cspan class=\\u0027short-header\\u0027\\u003eK.\\u003c/span\\u003e\\u003cspan class=\\u0027long-header\\u0027\\u003eKampe\\u003c/span\\u003e\\u003c/th\\u003e\\u003cth class=\\u0027score\\u0027\\u003e\\u003cspan class=\\u0027short-header\\u0027\\u003eV.\\u003c/span\\u003e\\u003cspan class=\\u0027long-header\\u0027\\u003eVundne\\u003c/span\\u003e\\u003c/th\\u003e\\u003cth class=\\u0027score\\u0027\\u003eScore\\u003c/th\\u003e\\u003cth class=\\u0027score\\u0027\\u003eS\\u0026#230;t\\u003c/th\\u003e\\u003cth class=\\u0027score\\u0027\\u003e\\u003cspan class=\\u0027short-header\\u0027\\u003eP.\\u003c/span\\u003e\\u003cspan class=\\u0027long-header\\u0027\\u003ePoint\\u003c/span\\u003e\\u003c/th\\u003e\\u003cth  class=\\u0027score\\u0027\\u003eS.Point\\u003c/th\\u003e\\u003c/tr\\u003e\\u003c/thead\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027122163\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eH\\u0026#248;jbjerg 5 (N)\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e2\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e2\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e17-9\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e39-20\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e23\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e25\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e2\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027122167\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eSkovbakken 4\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e2\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e13-13\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e30-29\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e16\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e19\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e3\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027122168\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eSilkeborg BK 2\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e2\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e12-14\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e28-33\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e14\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e18\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr class=\\u0027solid-line\\u0027\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e4\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027122170\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eTeam Favrskov 2\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e8-5\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e17-12\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e11\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e19\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e5\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027122169\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eBrabrand\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e0\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e6-7\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e13-16\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e7\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e20\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e6\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027122164\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eabc Aalborg 3\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e0\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e5-8\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e12-18\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e5\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e19\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e7\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027122165\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eHadsund (O)\\u003c/a\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e1\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e0\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e4-9\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e8-19\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e4\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e18\\u003c/td\\u003e\\u003c/tr\\u003e\\u003ctr\\u003e\\u003ctd class=\\u0027standing\\u0027\\u003e\\u003c/td\\u003e\\u003ctd class=\\u0027team1\\u0027\\u003e\\u003ca href=\\\"#\\\" onclick=\\\"return ShowStanding(\\u00273\\u0027, \\u00272026\\u0027, \\u002718888\\u0027, \\u00271\\u0027, \\u00277\\u0027, \\u0027122166\\u0027, \\u0027\\u0027, \\u0027\\u0027, \\u0027\\u0027);\\\" class=\\u0027team\\u0027\\u003eHorsens 2 (N)\\u003c/a\\u003e\\u003cimg src=\\u0027/SportsResults/Images/Info.gif\\u0027 title=\\u0027Holdet trukket den 3/9-2026\\u0027 /\\u003e\\u003c/td\\u003e\\u003ctd colspan=\\u00275\\u0027\\u003eHoldet trukket\\u003c/td\\u003e\\u003ctd class=\\u0027score\\u0027\\u003e0\\u003c/td\\u003e\\u003c/tr\\u003e\\u003c/table\\u003e\\u003c/div\\u003e\\r\\n\\u003cbr /\\u003e\\u003ca href=\\u0027/DBF/HoldTurnering/UdskrivStilling/?page=2\\u0026season=2026\\u0026region=7\\u0026agegroup=1\\u0026group=18888\\u0026team=\\u0026match=\\u0026club=\\u0026player=\\u0027 target=\\u0027_blank\\u0027\\u003eUdskriv\\u003c/a\\u003e\\u0026nbsp;|\\u0026nbsp;\\u003ca href=\\u0027https://badminton.freshdesk.com/support/solutions/articles/22000246428-anvend-livescore\\u0027 target=\\u0027_blank\\u0027\\u003eSådan anvender du livescore\\u003c/a\\u003e\"}}",
+      "decodedTitle": "BADMIDJ,BADNDRJ,BADSDRJ,BADFYN SEN 2026/2027",
+      "decodedHtml": "<a href=\"#\" onclick=\"return ShowStanding('0', '', '', '', '', '', '', '', '');\" class='team'>S&#248;g andre r&#230;kker</a><br />\r\n<br />\r\n<h2>BADMIDJ,BADNDRJ,BADSDRJ,BADFYN SEN 2026/2027</h2><a href=\"#\" onclick=\"return ShowStanding('1', '2026', '', '1', '7', '', '', '', '');\" class='team'>Vis r&#230;kker</a><br />\r\n<br />\r\n<h3>Kredsserien Vest Pulje 1</h3><a href=\"#\" onclick=\"return ShowStanding('4', '2026', '18888', '1', '7', '', '', '', '');\" class='team'>Vis alle kampe</a><br />\r\n<div class='table-container'><table class='groupstandings' >\r\n<thead><tr><th>#</th><th class='team'>Hold</th><th class='score'><span class='short-header'>K.</span><span class='long-header'>Kampe</span></th><th class='score'><span class='short-header'>V.</span><span class='long-header'>Vundne</span></th><th class='score'>Score</th><th class='score'>S&#230;t</th><th class='score'><span class='short-header'>P.</span><span class='long-header'>Point</span></th><th  class='score'>S.Point</th></tr></thead><tr><td class='standing'>1</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '7', '122163', '', '', '');\" class='team'>H&#248;jbjerg 5 (N)</a></td><td class='score'>2</td><td class='score'>2</td><td class='score'>17-9</td><td class='score'>39-20</td><td class='score'>23</td><td class='score'>25</td></tr><tr><td class='standing'>2</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '7', '122167', '', '', '');\" class='team'>Skovbakken 4</a></td><td class='score'>2</td><td class='score'>1</td><td class='score'>13-13</td><td class='score'>30-29</td><td class='score'>16</td><td class='score'>19</td></tr><tr><td class='standing'>3</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '7', '122168', '', '', '');\" class='team'>Silkeborg BK 2</a></td><td class='score'>2</td><td class='score'>1</td><td class='score'>12-14</td><td class='score'>28-33</td><td class='score'>14</td><td class='score'>18</td></tr><tr class='solid-line'><td class='standing'>4</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '7', '122170', '', '', '');\" class='team'>Team Favrskov 2</a></td><td class='score'>1</td><td class='score'>1</td><td class='score'>8-5</td><td class='score'>17-12</td><td class='score'>11</td><td class='score'>19</td></tr><tr><td class='standing'>5</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '7', '122169', '', '', '');\" class='team'>Brabrand</a></td><td class='score'>1</td><td class='score'>0</td><td class='score'>6-7</td><td class='score'>13-16</td><td class='score'>7</td><td class='score'>20</td></tr><tr><td class='standing'>6</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '7', '122164', '', '', '');\" class='team'>abc Aalborg 3</a></td><td class='score'>1</td><td class='score'>0</td><td class='score'>5-8</td><td class='score'>12-18</td><td class='score'>5</td><td class='score'>19</td></tr><tr><td class='standing'>7</td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '7', '122165', '', '', '');\" class='team'>Hadsund (O)</a></td><td class='score'>1</td><td class='score'>0</td><td class='score'>4-9</td><td class='score'>8-19</td><td class='score'>4</td><td class='score'>18</td></tr><tr><td class='standing'></td><td class='team1'><a href=\"#\" onclick=\"return ShowStanding('3', '2026', '18888', '1', '7', '122166', '', '', '');\" class='team'>Horsens 2 (N)</a><img src='/SportsResults/Images/Info.gif' title='Holdet trukket den 3/9-2026' /></td><td colspan='5'>Holdet trukket</td><td class='score'>0</td></tr></table></div>\r\n<br /><a href='/DBF/HoldTurnering/UdskrivStilling/?page=2&season=2026&region=7&agegroup=1&group=18888&team=&match=&club=&player=' target='_blank'>Udskriv</a>&nbsp;|&nbsp;<a href='https://badminton.freshdesk.com/support/solutions/articles/22000246428-anvend-livescore' target='_blank'>Sådan anvender du livescore</a>"
+    }
+  ],
+  "estimate": {
+    "seasonsInclusive": 17,
+    "ageGroupIds": 29,
+    "regionIdsAll": 33,
+    "allApiRegionIndexCalls": 16269,
+    "bdRegionIds": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "bdRegionIndexCalls": 4437,
+    "followUpGroupCalls": "unknown until index responses are traversed"
+  }
+}

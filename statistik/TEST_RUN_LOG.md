@@ -621,3 +621,15 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
   `WebService1.asmx`; ingen anden `.asmx`-service blev fundet. Rå evidens
   ligger i `results/081-webservice-catalog-probe.json`.
 
+- 2026-09-21 — Opgave 081 parameterkortlægning: de direkte endpoints
+  `/api/AgeGroup/Get` og `/api/Region` returnerede hhv. 29 aldersgrupper og
+  33 regioner. `GetLeagueStanding` blev sammenlignet råt for senior,
+  regionID 4/5/6/7; svarene var ikke byte-identiske, men samme konkrete
+  pulje havde fælles titel `BADMIDJ,BADNDRJ,BADSDRJ,BADFYN SEN 2026/2027` og
+  samme otte hold. Det dokumenterer en delt vestlig seniorpulje, ikke
+  fallback. Indeksestimat for 2010–2026 er 16.269 kald for alle regioner,
+  4.437 for BD-regionerne og 13.311 for BD+DGI, plus ét detaljekald pr.
+  unikt pulje-ID. Rå svar ligger i `results/081-parameter-map-probe.json`,
+  rapporten i `results/081-parameter-map-probe.md`; databasen blev ikke
+  ændret.
+
