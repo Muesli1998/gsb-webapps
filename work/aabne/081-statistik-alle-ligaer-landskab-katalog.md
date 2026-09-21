@@ -648,3 +648,10 @@ kampliste pr. pulje).
 Rapportér resultatet i næste "Spørgsmål"-svar og STOP der — vent på
 Christoffers beslutning om den fulde kamp-indsamling skal sættes i gang,
 før noget bygges.
+
+**Svar: faktisk kampoptælling pr. pulje (2026-09-21):**
+Den korrigerede optælling af `subPage=4` fandt 310.137 distinkte kamp-ID’er på tværs af 18.546 puljer. Alle 18.546 kald var `ok`; der var 0 `empty` og 0 fejl. Kampantallet pr. pulje var min. 0, median 15 og maks. 91. Tre puljer havde 0 kamp-ID’er.
+
+For 3-holds-puljer var 1.431 puljer på 3 kampe (enkeltrunde) og 108 på 6 kampe (dobbeltrunde). De øvrige 3-holds-puljer havde andre faktiske antal og blev ikke tvunget ind i en standardkategori. Den fulde fordeling står i `statistik/results/081-kampantal-optælling.md` og `.json`.
+
+Et fuldt kamp-for-kamp-udtræk vil derfor kræve 18.546 matchlistekald plus 310.137 `subPage=5`-detailkald, i alt 328.683 kald. Dette trin gemte kun optællingen i `league_group_match_counts`; ingen kampdetaljer blev hentet eller gemt.

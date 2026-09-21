@@ -648,3 +648,11 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
 - Detaljefase: 18.546/18.546 ok, 96.823 holdrækker, 90.480 med numeriske stillingsfelter, 6.343 med kildetekst uden numeriske felter, 0 tomme team-ID'er og 0 fejl.
 - Sideordnet test: subPage=2 indeholder ikke leagueMatchID; subPage=4 fandt match-ID'er for 18888/18872/18833, og subPage=5 returnerede faktiske sætresultater. Estimat for alle puljer: op til 37.092 ekstra kald.
 - Ny separat database: `statistik/data/liga-landskab.db`; den normaliserede database var urørt. Rapport: `statistik/results/081-liga-landskab-indsamling.md`/.json.
+
+## 2026-09-21 — opgave 081 kampoptælling pr. pulje
+- Korrigeret parser tæller det faktiske 7. argument i ShowStanding('5', ...), ikke sæson-ID'et.
+- 18.546/18.546 subPage=4-kald: 310.137 distinkte kamp-ID'er, 0 empty, 0 fejl.
+- Min/median/maks pr. pulje: 0/15/91; tre puljer havde 0 kampe.
+- 3-holds-puljer: 1.431 med 3 kampe, 108 med 6 kampe; øvrige 3-holdsformater blev bevaret som egne faktiske antal.
+- Pris-estimat for fuld kampindsamling: 18.546 matchlistekald + 310.137 detailkald = 328.683 kald.
+- Kun optællingstabellen league_group_match_counts blev skrevet; ingen kampdetaljer blev gemt. Rapport: `statistik/results/081-kampantal-optælling.md`/.json.

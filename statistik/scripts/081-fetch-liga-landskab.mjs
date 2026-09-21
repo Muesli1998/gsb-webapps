@@ -27,6 +27,7 @@ CREATE TABLE IF NOT EXISTS league_group_regions (season_id INTEGER NOT NULL, age
 CREATE TABLE IF NOT EXISTS league_group_teams (season_id INTEGER NOT NULL, age_group_id INTEGER NOT NULL, league_group_id TEXT NOT NULL, league_group_team_id TEXT NOT NULL DEFAULT '', team_name_raw TEXT NOT NULL, standing_position INTEGER, matches INTEGER, wins INTEGER, score_raw TEXT, sets_raw TEXT, points INTEGER, set_points INTEGER, source_url TEXT, fetched_at TEXT, PRIMARY KEY (season_id, age_group_id, league_group_id, league_group_team_id));
 CREATE TABLE IF NOT EXISTS fetch_errors (request_key TEXT PRIMARY KEY, season_id INTEGER, age_group_id INTEGER, region_id INTEGER, league_group_id TEXT, requested_url TEXT, http_status INTEGER, error_kind TEXT, response_sha256 TEXT, response_text TEXT, first_seen_at TEXT, last_seen_at TEXT, attempts INTEGER);
 CREATE TABLE IF NOT EXISTS league_group_details (season_id INTEGER NOT NULL, age_group_id INTEGER NOT NULL, league_group_id TEXT NOT NULL, requested_url TEXT NOT NULL, fetched_at TEXT NOT NULL, http_status INTEGER, raw_sha256 TEXT, raw_response TEXT, parse_status TEXT NOT NULL, parser_version TEXT NOT NULL, PRIMARY KEY (season_id, age_group_id, league_group_id));
+CREATE TABLE IF NOT EXISTS league_group_match_counts (season_id INTEGER NOT NULL, age_group_id INTEGER NOT NULL, league_group_id TEXT NOT NULL, region_id INTEGER NOT NULL, requested_url TEXT NOT NULL, fetched_at TEXT NOT NULL, http_status INTEGER, match_count INTEGER, parse_status TEXT NOT NULL, PRIMARY KEY (season_id, age_group_id, league_group_id));
 CREATE INDEX IF NOT EXISTS idx_standing_lookup ON standing_indexes(season_id, age_group_id, region_id);
 CREATE INDEX IF NOT EXISTS idx_groups_id ON league_groups(league_group_id);`);
 
@@ -178,4 +179,25 @@ if (MODE === 'parse') {
     }
   }
   console.log(`PARSE_DONE details=${rows.length} rows_updated=${updated}`);
+}
+
+if (MODE === 'count-matches') {
+  const groups = db.prepare('SELECT g.season_id,g.age_group_id,g.league_group_id,COALESCE(MIN(r.region_id),1) AS region_id FROM league_groups g LEFT JOIN league_group_regions r USING(season_id,age_group_id,league_group_id) GROUP BY g.season_id,g.age_group_id,g.league_group_id ORDER BY g.season_id,g.age_group_id,g.league_group_id').all();
+  const pending = groups.filter(g => !db.prepare('SELECT 1 FROM league_group_match_counts WHERE season_id=? AND age_group_id=? AND league_group_id=?').get(g.season_id,g.age_group_id,g.league_group_id));
+  console.log(`MATCH_COUNT_START pending=${pending.length} total_groups=${groups.length}`);
+  let done=0, ok=0, empty=0, error=0, total=0;
+  await worker(pending, async g => {
+    const url = requestUrl(g.season_id,g.age_group_id,g.region_id,g.league_group_id).replace('#1,','#4,');
+    try {
+      const result = await call({subPage:4,seasonID:g.season_id,leagueGroupID:g.league_group_id,ageGroupID:g.age_group_id,regionID:g.region_id,leagueGroupTeamID:null,leagueMatchID:null,clubID:null,playerID:null});
+      const ids = new Set([...result.html.matchAll(/ShowStanding\(\s*['"]5['"]\s*,\s*['"]\d+['"]\s*,\s*['"]\d+['"]\s*,\s*['"]\d+['"]\s*,\s*['"]\d+['"]\s*,\s*['"]['"]\s*,\s*['"](\d+)['"]/gi)].map(m=>m[1]));
+      const status = result.http>=200 && result.http<300 ? (result.html.trim() ? 'ok' : 'empty') : 'error';
+      db.prepare(`INSERT INTO league_group_match_counts VALUES(?,?,?,?,?,?,?,?,?) ON CONFLICT(season_id,age_group_id,league_group_id) DO UPDATE SET fetched_at=excluded.fetched_at,http_status=excluded.http_status,match_count=excluded.match_count,parse_status=excluded.parse_status`).run(g.season_id,g.age_group_id,g.league_group_id,g.region_id,url,now(),result.http,ids.size,status);
+      if(status==='ok'){ok++;total+=ids.size;} else if(status==='empty') empty++; else error++;
+    } catch(e){error++; db.prepare(`INSERT INTO fetch_errors(request_key,season_id,age_group_id,region_id,league_group_id,requested_url,error_kind,response_text,first_seen_at,last_seen_at,attempts) VALUES(?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(request_key) DO UPDATE SET last_seen_at=excluded.last_seen_at,attempts=excluded.attempts`).run(`match-count:${g.season_id}:${g.age_group_id}:${g.league_group_id}`,g.season_id,g.age_group_id,g.region_id,g.league_group_id,url,'exception',e.message,now(),now(),1);}
+    done++; if(done%250===0) console.log(`MATCH_COUNT_PROGRESS done=${done}/${pending.length} ok=${ok} empty=${empty} error=${error} total_matches=${total}`);
+  });
+  const dist=db.prepare('SELECT match_count,count(*) AS groups FROM league_group_match_counts GROUP BY match_count ORDER BY match_count').all();
+  console.log(`MATCH_COUNT_DONE requested=${pending.length} ok=${ok} empty=${empty} error=${error} total_matches=${db.prepare('SELECT COALESCE(SUM(match_count),0) AS n FROM league_group_match_counts').get().n}`);
+  console.log(JSON.stringify(dist));
 }

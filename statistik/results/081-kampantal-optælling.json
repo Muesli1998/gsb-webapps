@@ -1,0 +1,281 @@
+{
+  "generatedAt": "2026-09-21T18:34:24.588Z",
+  "groups": 18546,
+  "totalMatches": 310137,
+  "min": 0,
+  "max": 91,
+  "median": 15,
+  "zeroGroups": 3,
+  "indexCalls": 18546,
+  "matchListCalls": 18546,
+  "matchDetailCalls": 310137,
+  "fullExtractionCalls": 328683,
+  "distribution": [
+    {
+      "match_count": 0,
+      "groups": 3
+    },
+    {
+      "match_count": 1,
+      "groups": 2516
+    },
+    {
+      "match_count": 2,
+      "groups": 404
+    },
+    {
+      "match_count": 3,
+      "groups": 1602
+    },
+    {
+      "match_count": 4,
+      "groups": 756
+    },
+    {
+      "match_count": 5,
+      "groups": 62
+    },
+    {
+      "match_count": 6,
+      "groups": 1713
+    },
+    {
+      "match_count": 7,
+      "groups": 55
+    },
+    {
+      "match_count": 8,
+      "groups": 75
+    },
+    {
+      "match_count": 9,
+      "groups": 269
+    },
+    {
+      "match_count": 10,
+      "groups": 593
+    },
+    {
+      "match_count": 11,
+      "groups": 9
+    },
+    {
+      "match_count": 12,
+      "groups": 1018
+    },
+    {
+      "match_count": 13,
+      "groups": 12
+    },
+    {
+      "match_count": 14,
+      "groups": 6
+    },
+    {
+      "match_count": 15,
+      "groups": 418
+    },
+    {
+      "match_count": 16,
+      "groups": 542
+    },
+    {
+      "match_count": 17,
+      "groups": 3
+    },
+    {
+      "match_count": 18,
+      "groups": 258
+    },
+    {
+      "match_count": 19,
+      "groups": 4
+    },
+    {
+      "match_count": 20,
+      "groups": 1901
+    },
+    {
+      "match_count": 21,
+      "groups": 606
+    },
+    {
+      "match_count": 23,
+      "groups": 6
+    },
+    {
+      "match_count": 24,
+      "groups": 41
+    },
+    {
+      "match_count": 25,
+      "groups": 3
+    },
+    {
+      "match_count": 27,
+      "groups": 2
+    },
+    {
+      "match_count": 28,
+      "groups": 1436
+    },
+    {
+      "match_count": 30,
+      "groups": 2125
+    },
+    {
+      "match_count": 31,
+      "groups": 9
+    },
+    {
+      "match_count": 32,
+      "groups": 18
+    },
+    {
+      "match_count": 33,
+      "groups": 5
+    },
+    {
+      "match_count": 34,
+      "groups": 8
+    },
+    {
+      "match_count": 35,
+      "groups": 1
+    },
+    {
+      "match_count": 36,
+      "groups": 544
+    },
+    {
+      "match_count": 38,
+      "groups": 4
+    },
+    {
+      "match_count": 40,
+      "groups": 1
+    },
+    {
+      "match_count": 42,
+      "groups": 906
+    },
+    {
+      "match_count": 43,
+      "groups": 2
+    },
+    {
+      "match_count": 44,
+      "groups": 4
+    },
+    {
+      "match_count": 45,
+      "groups": 270
+    },
+    {
+      "match_count": 46,
+      "groups": 2
+    },
+    {
+      "match_count": 47,
+      "groups": 2
+    },
+    {
+      "match_count": 48,
+      "groups": 2
+    },
+    {
+      "match_count": 49,
+      "groups": 4
+    },
+    {
+      "match_count": 53,
+      "groups": 2
+    },
+    {
+      "match_count": 55,
+      "groups": 115
+    },
+    {
+      "match_count": 56,
+      "groups": 163
+    },
+    {
+      "match_count": 57,
+      "groups": 2
+    },
+    {
+      "match_count": 59,
+      "groups": 2
+    },
+    {
+      "match_count": 60,
+      "groups": 2
+    },
+    {
+      "match_count": 66,
+      "groups": 20
+    },
+    {
+      "match_count": 72,
+      "groups": 10
+    },
+    {
+      "match_count": 78,
+      "groups": 2
+    },
+    {
+      "match_count": 80,
+      "groups": 2
+    },
+    {
+      "match_count": 85,
+      "groups": 2
+    },
+    {
+      "match_count": 86,
+      "groups": 2
+    },
+    {
+      "match_count": 91,
+      "groups": 2
+    }
+  ],
+  "threeTeamDistribution": [
+    {
+      "match_count": 1,
+      "groups": 17
+    },
+    {
+      "match_count": 2,
+      "groups": 156
+    },
+    {
+      "match_count": 3,
+      "groups": 1431
+    },
+    {
+      "match_count": 4,
+      "groups": 2
+    },
+    {
+      "match_count": 6,
+      "groups": 108
+    },
+    {
+      "match_count": 9,
+      "groups": 197
+    },
+    {
+      "match_count": 12,
+      "groups": 30
+    },
+    {
+      "match_count": 15,
+      "groups": 1
+    },
+    {
+      "match_count": 18,
+      "groups": 13
+    }
+  ]
+}
