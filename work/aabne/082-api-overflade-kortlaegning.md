@@ -218,6 +218,76 @@ klubber. Der blev ikke kørt masseindsamling og ingen database blev ændret.
 Den fulde query-, schema- og svar-evidens ligger i
 `statistik/results/082-nembadminton-ranking-probe.md` og `.json`.
 
+### Spørgsmål — kan `memberStats` give data tilbage til 2010? (2026-09-21)
+
+Christoffer spørger om det 2023-02-01-til-2026-09-02-vindue der blev fundet for
+spiller 16214 kan udvides tilbage til 2010, og om der er en måde at "hijacke"
+kaldet til at hente ældre data.
+
+Det skal IKKE antages i nogen retning. To konkurrerende forklaringer er lige
+sandsynlige ud fra det vi har set indtil nu:
+
+1. `memberStats` returnerer altid HELE historikken for et medlems-ID, uden
+   parameter for dato-interval — og 2023-02-01 er bare enten (a) nembadmintons
+   eget system-/datatracking-starttidspunkt for alle spillere, eller (b) denne
+   specifikke spillers egen historik-start (fx indmeldelse, første aktive
+   sæson, eller en anden spillerspecifik grænse).
+2. `memberStats` har et internt rullende vindue eller en implicit grænse vi
+   ikke har set parametrene for endnu.
+
+**Undersøg konkret, ikke antag:**
+
+1. Kør samme `memberStats`-kald for mindst 2-3 andre kendte GSB-spillere med
+   forskellig anciennitet — særligt en spiller der vides at have spillet
+   turneringsbadminton længe før 2023 (brug allerede kendte GSB-spiller-ID'er
+   fra `gsb-statistik-normalized.db`s `players`-tabel, læses read-only). Er
+   `first snapshot`-datoen ens for alle (~2023-02-01), eller varierer den?
+   - Ens dato for alle → understøtter "systemets tracking starter 2023",
+     dvs. ældre data findes formentlig slet ikke i nembadminton.
+   - Varierende dato → understøtter "det er spillerens egen historik", og der
+     er måske slet ingen grænse — bare ingen ældre punkter for spiller 16214.
+2. Gennemgå GraphQL-schemaets fulde introspektion for `MemberStats`,
+   `member`, og de tre serie-typer (`mix`/`single`/`double`) for evt.
+   argumenter der IKKE blev afprøvet endnu (fx `from`/`to`/`before`/`after`/
+   `limit`/`cursor`/`seasonId` på selve `memberStats`-feltet eller dets
+   underfelter) — ikke kun de felter der allerede er dokumenteret.
+3. Hvis der findes sådanne argumenter: test dem faktisk med en ældre dato
+   (fx 2015 eller 2010) og rapportér det faktiske svar (data, tom liste, eller
+   fejl) — gæt ikke ud fra om feltet findes.
+4. Hvis INGEN dato-argumenter findes i schemaet: konkludér at der ikke er en
+   kendt måde at hente ældre data end det systemet selv returnerer, og
+   rapportér det som den bedste tilgængelige konklusion (ikke som et forsøg
+   der fejlede).
+
+**Afgrænsning uændret:** samme "Må røres"/"Må ikke røres" som resten af
+opgave 082 — kun læsning af `gsb-statistik-normalized.db` for at finde
+spiller-ID'er til testen, ingen skrivning, ingen masseindsamling.
+
+**Ved tvivl:** hvis det ikke er muligt at afgøre om 2023-02-01 er en
+system-grænse eller en spillergrænse ud fra 2-3 testspillere, så sig det
+ligeud som usikkert i stedet for at gætte en konklusion.
+
+### Svar — historikgrænse og datoargumenter i `memberStats` (2026-09-21)
+
+Samme kald blev kørt for fem GSB-medlemmer uden login. Første rå
+`member.points.version` var: Adnan Bacic 2023-02-01, Morten Høyrup
+2024-10-02, Sebastian Almeida Møller (U19) 2022-09-01, Konrad Bybeck Tosev
+(U15) 2026-07-02 og Oliver Guldbæk 2022-09-01. Datoerne varierer derfor, så
+2023-02-01 er ikke en universel systemgrænse. Den ældste observerede dato var
+2022-09-01; dette er ikke bevis på data tilbage til 2010.
+
+Fuld introspektion viste, at `memberStats` kun har `id: ID!`, og at
+`mix`/`single`/`double` ikke har argumenter. `Member.points` har kun
+`version: Date` og `where`. Et faktisk kald med `version=2010-01-01` og
+`version=2015-01-01` svarede HTTP 200 med **0 poster**; `2023-02-01` og
+`2026-09-02` gav hver 3 poster for testspilleren. Ingen `from`/`to`/`before`/
+`after`/`limit`/`cursor`/`seasonId`-argumenter blev fundet på tidsserierne.
+
+Konklusionen er derfor: historikvinduet er spillerspecifikt i startdato, men
+der er ingen kendt offentlig vej til ældre point end de snapshots API'et selv
+returnerer. Den fulde fler-spiller- og argumenttest ligger i
+`statistik/results/082-nembadminton-ranking-history-followup.md` og `.json`.
+
 ## Resultatnote
 
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*

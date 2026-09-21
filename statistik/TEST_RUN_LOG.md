@@ -623,3 +623,10 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
   `Stats-D8rhXkEc.js` bekræfter spillerstatistik-ruten og de tre diagrammer.
   `highestPointGain` kan finde kendte GSB-medlems-ID'er uden login; en generel
   spiller-/dato-enumerator blev ikke fundet. Ingen database blev ændret.
+
+- 2026-09-21 — Opgave 082 opfølgning: `membersStats` blev testet for fem GSB-
+  medlemmer. Første rå snapshot varierede fra 2022-09-01 til 2026-07-02.
+  Schemaet havde ingen interval-/cursor-/sæsonargumenter; `member.points`
+  accepterede kun `version`, hvor 2010 og 2015 gav HTTP 200 med 0 poster.
+  Konklusion: ingen kendt offentlig vej til ældre point end API'ets egne
+  snapshots. Ingen database blev ændret.
