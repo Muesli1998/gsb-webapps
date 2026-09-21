@@ -1,6 +1,7 @@
 node_modules/
 .browser-state/
 data/backups/
+data/liga-landskab-raw/
 *.db
 *.db-journal
 results/browser-fallback/
