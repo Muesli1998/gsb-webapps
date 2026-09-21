@@ -671,3 +671,26 @@ Testkald på en kendt pulje gav følgende: subPage 1 = indeks, 2 = puljestilling
 Det udvidede skemaforslag er tre tabeller: `league_matches` (kamp/pulje/hold/dato/score/provenance), `match_categories` (kategori, spillere, vinder/walkover) og `match_games` (sæt-for-sæt). Detaljerne står i `statistik/results/081-subpage-schema-tidsestimat.md`.
 
 Faktiske fetched_at-tider gav 11m27,925s for 16.269 indekskald (1.418,96/min), 7m12,242s for 18.546 puljedetaljekald (2.574,39/min) og 1m11,357s for 18.546 matchlistekald (15.594,27/min). For 18.546 matchlistekald + 310.137 kampdetailkald er det målte fase-estimat 121,7 minutter (2,03 timer); samlet fremskrivning af alle 53.361 tidligere kald giver 122,3 minutter (2,04 timer). Ratebegrænsning/backoff er angivet i rapporten.
+
+**Christoffers beslutning (2026-09-21): godkendt med to afklaringer, sæt derefter
+kamp-for-kamp-indsamlingen i gang.**
+
+1. **Rå-svar skal IKKE gemmes inline i SQLite ved denne skala.** Ved 310.137
+   kampe er det for meget at proppe fulde rå HTML-svar direkte i databasen
+   (det var overkommeligt for de færre indeks-/puljekald, men er det ikke
+   her). Gem i stedet rå-svarene som separate JSON-filer, samme mønster som
+   opgave 083's `-raw.json`-tilgang (fx battede/grupperede JSON-filer under
+   `statistik/results/`, ikke én fil pr. kamp), og gem kun `raw_sha256` (og
+   evt. en filreference) i `league_matches`. Udvid gerne SQL-skemaet med et
+   `raw_source_file`-felt hvis det gør opslag lettere.
+2. **Tilføj en `fetch_errors`-lignende tabel** for kamp-indsamlingen, med
+   samme formål som resten af 081: deterministisk request-nøgle, status,
+   forsøgstæller, HTTP-status, fejltype — så en afbrudt kørsel kan genoptages
+   uden dubletter, konsistent med indeks-/detaljefasernes mønster.
+
+**Sæt derefter selve kamp-for-kamp-indsamlingen i gang** (18.546
+matchlistekald + 310.137 kampdetailkald, ca. 2 timers aktiv kaldetid ud fra
+det målte estimat). Kør i faser med statusrapportering undervejs, som
+resten af 081. Rapportér undervejs (mindst ved afslutning): faktisk antal
+kald brugt, `ok`/`empty`/`error`-fordeling, og eventuelle afvigelser fra det
+forventede kamptal (310.137).
