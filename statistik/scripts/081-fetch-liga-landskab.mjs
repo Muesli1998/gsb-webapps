@@ -11,7 +11,7 @@ const CONCURRENCY = Number(process.env.LIGA_CONCURRENCY ?? 4);
 const MAX_RETRIES = 3;
 
 const hash = value => crypto.createHash('sha256').update(value).digest('hex');
-const esc = value => String(value ?? '').replaceAll('&amp;', '&').replaceAll('&lt;', '<').replaceAll('&gt;', '>').replaceAll('&#39;', "'").replaceAll('&#248;', 'ø').replaceAll('&#230;', 'æ').replaceAll('&#229;', 'å').replaceAll('&quot;', '"');
+const esc = value => String(value ?? '').replaceAll('&amp;', '&').replaceAll('&lt;', '<').replaceAll('&gt;', '>').replaceAll('&#39;', "'").replaceAll('&nbsp;', ' ').replaceAll('&#248;', 'ø').replaceAll('&#230;', 'æ').replaceAll('&#229;', 'å').replaceAll('&quot;', '"');
 const text = value => esc(String(value ?? '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim());
 const integer = value => /^\d+$/.test(String(value ?? '').trim()) ? Number(value) : null;
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
