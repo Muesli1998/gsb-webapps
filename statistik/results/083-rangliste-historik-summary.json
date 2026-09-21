@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-09-21T16:46:41.592Z",
+  "gsbPlayers": 677,
+  "nembadmintonRosterRows": 964,
+  "nembadmintonUniqueMembers": 386,
+  "exactNameMatches": 345,
+  "ambiguousNameMatches": 4,
+  "unmatchedGsbPlayers": 330,
+  "nembadmintonMembersWithoutGsbNameMatch": 37,
+  "memberStatsBatches": 7,
+  "rawResponseFile": "statistik/results/083-nembadminton-raw.json",
+  "historyDb": "statistik/data/rangliste-historik.db"
+}

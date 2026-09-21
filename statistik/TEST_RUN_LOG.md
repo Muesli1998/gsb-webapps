@@ -591,3 +591,12 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
   entries og returneres ikke som separat felt i discovery-svaret. DB-SHA var
   uændret: `e6c5046a4b93a8518254badf5d8f4529fb0b918ae4a31af63919b5f70d620062`.
 
+- 2026-09-21 — Opgave 083 Nembadminton ranglistehistorik: GSB-siden af den
+  lokale database gav 677 spillere. `highestPointGain(clubhouseId=331,
+  limit=1000)` på seks kategorier gav 964 rækker/386 unikke medlemmer.
+  Navnematch gav 345 entydige links, 4 tvetydige links og 330 GSB-spillere
+  uden entydigt aktuelt roster-match. 349 medlems-ID'er blev hentet i 7
+  `membersStats`-bulk-kald: 40.364 snapshots og 0 fetch-fejl. Ny separat
+  `rangliste-historik.db` blev skrevet; `gsb-statistik-normalized.db` blev
+  kun læst og hash-kontrolleret uændret.
+

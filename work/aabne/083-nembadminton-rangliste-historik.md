@@ -115,4 +115,14 @@ bedre at mangle data for en spiller end at gemme den forkerte historik under GSB
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+Første kontrol viste 964 rå `highestPointGain`-rækker og 386 unikke
+Nembadminton-medlemmer ved `limit=1000`; loftet blev ikke ramt. Mod 677 GSB-
+spillere i den lokale kampdatabase gav normaliseret navnematch 345 entydige
+links, 4 tvetydige links (to navnekollisioner) og 330 GSB-spillere uden
+entydigt roster-match. De 349 entydige medlems-ID'er blev hentet i 7
+`membersStats`-bulk-kald uden login: 40.364 snapshots, 0 fetch-fejl.
+
+Resultatet er gemt i den separate `statistik/data/rangliste-historik.db` med
+SHA-256 på de rå bulk-svar i `statistik/results/083-nembadminton-raw.json`.
+Den normaliserede database var read-only og uændret. Match- og dækningsrapport:
+`statistik/results/083-rangliste-historik.md`.
