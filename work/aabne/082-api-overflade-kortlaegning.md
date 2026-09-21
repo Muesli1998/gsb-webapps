@@ -80,6 +80,47 @@ teknisk afklaring.
 
 (Udfyldes af den der løser opgaven. Christoffer svarer her i filen.)
 
+### Svar — API-overflade og rangliste-/turneringsenumeration (2026-09-21)
+
+De fem sidetyper blev hentet og deres scriptreferencer registreret. Alle fem
+indlæser både `WebService1.asmx/js` og `v2-app.js`. Den eksisterende ASMX-
+proxy har 43 metoder. Den nye REST-klient i `v2-app.js` indeholder 141 unikke
+route-mønstre; den fulde maskinlæsbare liste og alle enkeltstående testkald er
+gemt i `statistik/results/082-api-overflade-probe.json`, med en læsbar rapport
+i `statistik/results/082-api-overflade-kortlaegning.md`.
+
+De faktiske offentlige katalogruter er:
+
+- `/api/Seasons`: HTTP 200, 18 sæsoner fra 2010 til 2027.
+- `/api/AgeGroup/Get`: HTTP 200, 29 aldersgrupper.
+- `/api/Region`: HTTP 200, 33 regioner.
+- `/api/GeoRegion/Get`: HTTP 200, fire georegioner (NORD, SYD, ØST,
+  UDLAND).
+
+De relevante turneringsruter blev kaldt med den kendte turnering 115342 og
+event 490920. `TournamentClass`, `Tournament/id`, `Tournament/info` og
+`Tournament` med klasse/event returnerede data, men kun for allerede kendte
+IDs. `/api/Tournament` uden parametre returnerede `[]`, og
+`TournamentEventMatch` returnerede en tom matchliste. Der er derfor ikke
+fundet en offentlig, billig enumeration af alle turnerings-ID'er pr. sæson.
+`TournamentLinks` returnerede 401 uden login.
+
+For ranglister returnerede `/api/versionDate` én ranking-version for en kendt
+dato (både 2026-09-01 og 2025-09-01), og `/api/RangkingListVersion/id` kunne
+slå en kendt version-ID op. `/api/RangkingListVersion?seasonId=2026`
+returnerede 401. Den eksisterende ASMX-probe
+`ranking-versions-2026.json` viser 29 versionsdatoer for 2026, mens
+`historical-ranking-call.txt` er HTTP 500 og
+`historical-ranking-ids.txt` indeholder ingen historiske ranking calls for de
+testede ældre sæsoner. De syv ubearbejdede filer er gennemgået i rapporten;
+`historical-test-summary.json` er en hold-/kamp-test og ikke en
+ranglisteresultatfil.
+
+Konklusionen er, at parameterkatalogerne kan enumereres billigt, mens en
+tværgående turneringsliste og historiske ranglistepoint ikke er bevist via de
+offentlige REST-kald. Der blev ikke udført masseindsamling og ingen database
+blev ændret.
+
 ## Resultatnote
 
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*

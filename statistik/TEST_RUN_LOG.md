@@ -591,3 +591,13 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
   entries og returneres ikke som separat felt i discovery-svaret. DB-SHA var
   uændret: `e6c5046a4b93a8518254badf5d8f4529fb0b918ae4a31af63919b5f70d620062`.
 
+- 2026-09-21 — Opgave 082 API-overflade: fem sidetyper blev hentet og
+  `WebService1.asmx/js` samt `v2-app.js` blev registreret på alle fem.
+  `v2-app.js` indeholder 141 unikke REST-route-mønstre. Enkeltstående GET-
+  kald bekræftede 18 sæsoner, 29 aldersgrupper, 33 regioner og fire
+  georegioner; kendte turnerings-ID'er gav detaljesvar, men ingen billig
+  tværgående turneringsenumeration. Rangliste-versioner er fortsat kun
+  delvist offentlige: kendt dato → én version virker, sæsonlisten gav 401,
+  og de historiske probe-filer gav ingen fungerende ældre enumeration. Ingen
+  database blev skrevet; rå testmetadata ligger i
+  `results/082-api-overflade-probe.json`.

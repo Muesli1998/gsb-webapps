@@ -1,0 +1,1125 @@
+{
+  "generatedAt": "2026-09-21T10:43:01.016Z",
+  "pages": {
+    "holdturnering": {
+      "url": "https://badmintonplayer.dk/DBF/HoldTurnering/Stilling/",
+      "length": 18188,
+      "scripts": [
+        "/sportsresults/standalone/scripts/treeview.js?v=3",
+        "../../../sportsresults/sportsresults.js?v=14",
+        "../../../sportsresults/components/clubcomponents/clublistclientscript.aspx?unionid=1&version=639255413873070000",
+        "../../../sportsresults/components/general/textboxselectcontroller.js?v=4",
+        "/DBF/DBFMaster.js?v=7",
+        "https://www.googletagmanager.com/gtag/js?id=UA-154233451-1",
+        "https://consent.cookiebot.com/uc.js",
+        "/SportsResults/Classes/WebControls.js?v=6",
+        "/ScriptResource.axd?d=rNJl-2P05icAvdVDr4JYkS9ZCeMr3mVkTihEUlmrdVBzEQIzAHRlm_szvIpgDI6FGi9BrrKNFdKPRbBaOEe2q2HTGPeaoAgY4CjGSnJcdXm4PwoDC7lTn2VOUq0asYIPiMrp3Q2&amp;t=ffffffffec54f2d7",
+        "../../../SportsResults/Components/WebService1.asmx/js",
+        "/DBF/v2-vendors.js",
+        "/DBF/v2-app.js"
+      ]
+    },
+    "turnering": {
+      "url": "https://badmintonplayer.dk/DBF/Turnering/VisResultater/#115342,",
+      "length": 23289,
+      "scripts": [
+        "/sportsresults/standalone/scripts/treeview.js?v=3",
+        "../../../sportsresults/sportsresults.js?v=14",
+        "../../../sportsresults/components/tournamentcomponents/selecttournament.js?v=16",
+        "../../../sportsresults/components/tournamentcomponents/showseasonplanuser.js?v=1",
+        "../../../sportsresults/components/clubcomponents/clublistclientscript.aspx?unionid=1&version=639255413873070000",
+        "../../../sportsresults/components/general/textboxselectcontroller.js?v=4",
+        "../../../sportsresults/components/playercomponents/selectplayer.js?v=16",
+        "../../../sportsresults/components/playercomponents/createplayer.js?v=8",
+        "../../../sportsresults/components/playercomponents/searchplayer.js?v=3",
+        "../../../sportsresults/components/clubcomponents/searchclub.js",
+        "/DBF/DBFMaster.js?v=7",
+        "https://www.googletagmanager.com/gtag/js?id=UA-154233451-1",
+        "https://consent.cookiebot.com/uc.js",
+        "/SportsResults/Classes/WebControls.js?v=6",
+        "/SportsResults/Classes/WebControls.js?v=6",
+        "/ScriptResource.axd?d=rNJl-2P05icAvdVDr4JYkS9ZCeMr3mVkTihEUlmrdVBzEQIzAHRlm_szvIpgDI6FGi9BrrKNFdKPRbBaOEe2q2HTGPeaoAgY4CjGSnJcdXm4PwoDC7lTn2VOUq0asYIPiMrp3Q2&amp;t=ffffffffec54f2d7",
+        "../../../SportsResults/Components/WebService1.asmx/js",
+        "/DBF/v2-vendors.js",
+        "/DBF/v2-app.js"
+      ]
+    },
+    "spiller": {
+      "url": "https://badmintonplayer.dk/DBF/Spiller/VisSpiller/#84737,2026",
+      "length": 29488,
+      "scripts": [
+        "/sportsresults/standalone/scripts/treeview.js?v=3",
+        "../../../sportsresults/sportsresults.js?v=14",
+        "../../../sportsresults/components/playercomponents/selectplayer.js?v=16",
+        "../../../sportsresults/components/playercomponents/createplayer.js?v=8",
+        "../../../sportsresults/components/playercomponents/searchplayer.js?v=3",
+        "../../../sportsresults/components/clubcomponents/searchclub.js",
+        "../../../sportsresults/components/clubcomponents/clublistclientscript.aspx?unionid=1&version=639255413873070000",
+        "../../../sportsresults/components/general/textboxselectcontroller.js?v=4",
+        "/DBF/DBFMaster.js?v=7",
+        "https://www.googletagmanager.com/gtag/js?id=UA-154233451-1",
+        "https://consent.cookiebot.com/uc.js",
+        "/SportsResults/Classes/WebControls.js?v=6",
+        "/ScriptResource.axd?d=rNJl-2P05icAvdVDr4JYkS9ZCeMr3mVkTihEUlmrdVBzEQIzAHRlm_szvIpgDI6FGi9BrrKNFdKPRbBaOEe2q2HTGPeaoAgY4CjGSnJcdXm4PwoDC7lTn2VOUq0asYIPiMrp3Q2&amp;t=ffffffffec54f2d7",
+        "../../../SportsResults/Components/WebService1.asmx/js",
+        "/DBF/v2-vendors.js",
+        "/DBF/v2-app.js"
+      ]
+    },
+    "ranglister": {
+      "url": "https://badmintonplayer.dk/DBF/Ranglister/",
+      "length": 21842,
+      "scripts": [
+        "/sportsresults/standalone/scripts/treeview.js?v=3",
+        "../../sportsresults/sportsresults.js?v=14",
+        "../../sportsresults/components/clubcomponents/clublistclientscript.aspx?unionid=1&version=639255413873070000",
+        "../../sportsresults/components/general/textboxselectcontroller.js?v=4",
+        "../../sportsresults/components/playercomponents/selectplayer.js?v=16",
+        "../../sportsresults/components/playercomponents/createplayer.js?v=8",
+        "../../sportsresults/components/playercomponents/searchplayer.js?v=3",
+        "../../sportsresults/components/clubcomponents/searchclub.js",
+        "/DBF/DBFMaster.js?v=7",
+        "https://www.googletagmanager.com/gtag/js?id=UA-154233451-1",
+        "https://consent.cookiebot.com/uc.js",
+        "/SportsResults/Classes/WebControls.js?v=6",
+        "/ScriptResource.axd?d=rNJl-2P05icAvdVDr4JYkS9ZCeMr3mVkTihEUlmrdVBzEQIzAHRlm_szvIpgDI6FGi9BrrKNFdKPRbBaOEe2q2HTGPeaoAgY4CjGSnJcdXm4PwoDC7lTn2VOUq0asYIPiMrp3Q2&amp;t=ffffffffec54f2d7",
+        "../../SportsResults/Components/WebService1.asmx/js",
+        "/DBF/v2-vendors.js",
+        "/DBF/v2-app.js"
+      ]
+    },
+    "saesonplan": {
+      "url": "https://badmintonplayer.dk/DBF/Turnering/SaesonPlan/",
+      "length": 19547,
+      "scripts": [
+        "/sportsresults/standalone/scripts/treeview.js?v=3",
+        "../../../sportsresults/sportsresults.js?v=14",
+        "/DBF/DBFMaster.js?v=7",
+        "https://www.googletagmanager.com/gtag/js?id=UA-154233451-1",
+        "https://consent.cookiebot.com/uc.js",
+        "/SportsResults/Classes/WebControls.js?v=6",
+        "/ScriptResource.axd?d=rNJl-2P05icAvdVDr4JYkS9ZCeMr3mVkTihEUlmrdVBzEQIzAHRlm_szvIpgDI6FGi9BrrKNFdKPRbBaOEe2q2HTGPeaoAgY4CjGSnJcdXm4PwoDC7lTn2VOUq0asYIPiMrp3Q2&amp;t=ffffffffec54f2d7",
+        "../../../SportsResults/Components/WebService1.asmx/js",
+        "/DBF/v2-vendors.js",
+        "/DBF/v2-app.js"
+      ]
+    }
+  },
+  "v2App": {
+    "url": "https://badmintonplayer.dk/DBF/v2-app.js",
+    "length": 16799688,
+    "routeCount": 141,
+    "routes": [
+      {
+        "route": "/AgeGroup/Get",
+        "methods": [
+          "getAll/getAll"
+        ]
+      },
+      {
+        "route": "/AgeGroup/Get/{id}",
+        "methods": [
+          "get/get"
+        ]
+      },
+      {
+        "route": "/AgeGroupClass/Get",
+        "methods": [
+          "getAll/getAll"
+        ]
+      },
+      {
+        "route": "/AgeGroupClass/Get/{id}",
+        "methods": [
+          "get/get"
+        ]
+      },
+      {
+        "route": "/Assets",
+        "methods": [
+          "getAll/getAll"
+        ]
+      },
+      {
+        "route": "/BlockMatch/create",
+        "methods": [
+          "create/create"
+        ]
+      },
+      {
+        "route": "/BlockMatch/delete",
+        "methods": [
+          "delete/_delete"
+        ]
+      },
+      {
+        "route": "/BlockMatch/getAll",
+        "methods": [
+          "getAll/getAll"
+        ]
+      },
+      {
+        "route": "/BotToken?",
+        "methods": [
+          "getOrCreate/getOrCreate",
+          "get/get",
+          "setAsCatchaValidated/setAsCatchaValidated"
+        ]
+      },
+      {
+        "route": "/CalendarEvent?",
+        "methods": [
+          "insertBulk/insertBulk"
+        ]
+      },
+      {
+        "route": "/CalendarEvent/{eventId}?",
+        "methods": [
+          "deleteBulk/deleteBulk"
+        ]
+      },
+      {
+        "route": "/CalendarEvent/{eventId}/{playerId}?",
+        "methods": [
+          "delete/_delete"
+        ]
+      },
+      {
+        "route": "/CalendarEvent/assigments?",
+        "methods": [
+          "getByUserIdAssigments/getByUserIdAssigments"
+        ]
+      },
+      {
+        "route": "/CalendarEvent/lastRegistration?",
+        "methods": [
+          "getByUserIdAndLastRegistration/getByUserIdAndLastRegistration"
+        ]
+      },
+      {
+        "route": "/CalendarEvent/userIds?",
+        "methods": [
+          "getByUserId/getByUserId"
+        ]
+      },
+      {
+        "route": "/ClassGroup/Get",
+        "methods": [
+          "get/get"
+        ]
+      },
+      {
+        "route": "/Club?",
+        "methods": [
+          "getClub/getClub"
+        ]
+      },
+      {
+        "route": "/Club/all",
+        "methods": [
+          "getAll/getAll"
+        ]
+      },
+      {
+        "route": "/Club/all/sportresults",
+        "methods": [
+          "getAllSportResults/getAllSportResults"
+        ]
+      },
+      {
+        "route": "/CoachGroup",
+        "methods": [
+          "getCoachGroups/getCoachGroups"
+        ]
+      },
+      {
+        "route": "/CompleteOrderSuccess?",
+        "methods": [
+          "completeOrderSuccess/completeOrderSuccess"
+        ]
+      },
+      {
+        "route": "/Course",
+        "methods": [
+          "getCourses/getCourses",
+          "createCourse/createCourse"
+        ]
+      },
+      {
+        "route": "/Course/{courseId}",
+        "methods": [
+          "getCourse/getCourse",
+          "updateCourse/updateCourse",
+          "deleteCourse/deleteCourse"
+        ]
+      },
+      {
+        "route": "/Course/club/search?",
+        "methods": [
+          "searchClubs/searchClubs"
+        ]
+      },
+      {
+        "route": "/Course/players?",
+        "methods": [
+          "getPlayerCoaches/getPlayerCoaches"
+        ]
+      },
+      {
+        "route": "/Course/players/{playerId}/{isCoach}",
+        "methods": [
+          "updatePlayerCoachInformation/updatePlayerCoachInformation"
+        ]
+      },
+      {
+        "route": "/Course/players/search/{searchTerm}",
+        "methods": [
+          "searchPlayersForClientFrontend/searchPlayersForClientFrontend"
+        ]
+      },
+      {
+        "route": "/Course/players/trainerSearch?",
+        "methods": [
+          "searchPlayersForCoaches/searchPlayersForCoaches"
+        ]
+      },
+      {
+        "route": "/Course/search?",
+        "methods": [
+          "searchCourse/searchCourse"
+        ]
+      },
+      {
+        "route": "/CourseCustomFields",
+        "methods": [
+          "getCustomFieldTypes/getCustomFieldTypes"
+        ]
+      },
+      {
+        "route": "/CourseEnrollment/admin/enroll?",
+        "methods": [
+          "enrollPlayerByAdmin/enrollPlayerByAdmin"
+        ]
+      },
+      {
+        "route": "/CourseEnrollment/basket/add",
+        "methods": [
+          "addCourseItemToBasket/addCourseItemToBasket"
+        ]
+      },
+      {
+        "route": "/CourseEnrollment/basket/checkout",
+        "methods": [
+          "checkoutCoursesFromBasket/checkoutCoursesFromBasket"
+        ]
+      },
+      {
+        "route": "/CourseEnrollment/order/{orderId}",
+        "methods": [
+          "getOrderSumUp/getOrderSumUp"
+        ]
+      },
+      {
+        "route": "/CourseEnrollment/player",
+        "methods": [
+          "createPlayerFromCourseDetails/createPlayerFromCourseDetails"
+        ]
+      },
+      {
+        "route": "/CourseEnrollment/refund/{courseEnrollmentId}",
+        "methods": [
+          "setAsRefund/setAsRefund"
+        ]
+      },
+      {
+        "route": "/CourseEnrollment/toggle/{courseEnrollmentId}",
+        "methods": [
+          "toggleHassPassed/toggleHassPassed"
+        ]
+      },
+      {
+        "route": "/CourseEnrollment/verify/{playerId}/{courseId}",
+        "methods": [
+          "verifyPlayerIsAllowedToSignUpForCourse/verifyPlayerIsAllowedToSignUpForCourse"
+        ]
+      },
+      {
+        "route": "/CourseInvitation/get/invitationplayers",
+        "methods": [
+          "getsendInvitationsPlayers/getsendInvitationsPlayers"
+        ]
+      },
+      {
+        "route": "/CourseInvitation/send",
+        "methods": [
+          "sendInvitations/sendInvitations"
+        ]
+      },
+      {
+        "route": "/CourseOrder/{courseOrderId}/{enrollmentId}",
+        "methods": [
+          "deleteCourseOrder/deleteCourseOrder"
+        ]
+      },
+      {
+        "route": "/CourseOrder/registrations/basic?",
+        "methods": [
+          "getRegistrations/getRegistrations"
+        ]
+      },
+      {
+        "route": "/CourseOrder/registrations/basic/user?",
+        "methods": [
+          "getRegistrationsByUserId/getRegistrationsByUserId"
+        ]
+      },
+      {
+        "route": "/CourseOrder/registrations/download/csv?",
+        "methods": [
+          "uploadRegistrationsExtendedCsv/uploadRegistrationsExtendedCsv"
+        ]
+      },
+      {
+        "route": "/CourseOrder/registrations/download/mimer/csv?",
+        "methods": [
+          "uploadRegistrationsMimerCsv/uploadRegistrationsMimerCsv"
+        ]
+      },
+      {
+        "route": "/CourseOrder/user",
+        "methods": [
+          "getUserCourses/getUserCourses"
+        ]
+      },
+      {
+        "route": "/CourseParticipants/participant/courseTypes",
+        "methods": [
+          "updateCourseTypeParticipant/updateCourseTypeParticipant"
+        ]
+      },
+      {
+        "route": "/CourseParticipants/participant/courseTypes?",
+        "methods": [
+          "getParticipantsCourseTypes/getParticipantsCourseTypes"
+        ]
+      },
+      {
+        "route": "/CourseParticipants/search?",
+        "methods": [
+          "searchParticipants/searchParticipants"
+        ]
+      },
+      {
+        "route": "/CoursePrivileges/user/{userId}",
+        "methods": [
+          "getUserPrivileges/getUserPrivileges"
+        ]
+      },
+      {
+        "route": "/CourseTemplate",
+        "methods": [
+          "getCourseTemplates/getCourseTemplates",
+          "createCourseTemplate/createCourseTemplate"
+        ]
+      },
+      {
+        "route": "/CourseTemplate/{courseTemplateId}",
+        "methods": [
+          "getCourseTemplate/getCourseTemplate",
+          "updateCourseTemplate/updateCourseTemplate",
+          "deleteCourseTemplate/deleteCourseTemplate"
+        ]
+      },
+      {
+        "route": "/CourseType",
+        "methods": [
+          "getCourseTypes/getCourseTypes",
+          "createCourseType/createCourseType"
+        ]
+      },
+      {
+        "route": "/CourseType/{courseTypeId}",
+        "methods": [
+          "getCourseType/getCourseType",
+          "updateCourseType/updateCourseType",
+          "deleteCourseType/deleteCourseType"
+        ]
+      },
+      {
+        "route": "/Court?",
+        "methods": [
+          "getCourtsByIndividualMatchId/getCourtsByIndividualMatchId",
+          "assignLeagueMatchIndividualMatchToCourt/assignLeagueMatchIndividualMatchToCourt",
+          "removeAssigment/removeAssigment"
+        ]
+      },
+      {
+        "route": "/Court/club?",
+        "methods": [
+          "getCourtsByClubId/getCourtsByClubId"
+        ]
+      },
+      {
+        "route": "/Court/court/tournament?",
+        "methods": [
+          "getCourtTournamentsAssigmentsByClubId/getCourtTournamentsAssigmentsByClubId"
+        ]
+      },
+      {
+        "route": "/Court/current?",
+        "methods": [
+          "getCurrentCourt/getCurrentCourt"
+        ]
+      },
+      {
+        "route": "/Court/current/tournament?",
+        "methods": [
+          "getCurrentCourtTournament/getCurrentCourtTournament"
+        ]
+      },
+      {
+        "route": "/Court/matches?",
+        "methods": [
+          "getMatchesForCourtByLeagueMatchId/getMatchesForCourtByLeagueMatchId"
+        ]
+      },
+      {
+        "route": "/Court/tournament?",
+        "methods": [
+          "assignTournamentEventMatchToCourt/assignTournamentEventMatchToCourt",
+          "removeTournamentAssigment/removeTournamentAssigment"
+        ]
+      },
+      {
+        "route": "/Court/venue?",
+        "methods": [
+          "getByVenueIdAndCourtNumber/getByVenueIdAndCourtNumber"
+        ]
+      },
+      {
+        "route": "/Disciplines/Get",
+        "methods": [
+          "get/get"
+        ]
+      },
+      {
+        "route": "/GeoRegion/Get",
+        "methods": [
+          "get/get"
+        ]
+      },
+      {
+        "route": "/identity",
+        "methods": [
+          "get/get"
+        ]
+      },
+      {
+        "route": "/latest/metadata?",
+        "methods": [
+          "getLatestMatchesMetadata/getLatestMatchesMetadata"
+        ]
+      },
+      {
+        "route": "/LeagueMatch?",
+        "methods": [
+          "getList/getList"
+        ]
+      },
+      {
+        "route": "/LeagueMatch/{leagueMatchId}?",
+        "methods": [
+          "getLeagueMatch/getLeagueMatch"
+        ]
+      },
+      {
+        "route": "/LeagueMatch/{leagueMatchId}/{password}?",
+        "methods": [
+          "updateLeagueMatch/updateLeagueMatch"
+        ]
+      },
+      {
+        "route": "/LeagueMatch/clubid/{leagueMatchId}",
+        "methods": [
+          "getHomeClubIdByLeagueMatch/getHomeClubIdByLeagueMatch"
+        ]
+      },
+      {
+        "route": "/LeagueMatch/search?",
+        "methods": [
+          "searchLeagueMatch/searchLeagueMatch"
+        ]
+      },
+      {
+        "route": "/LeagueMatch/TeamControl",
+        "methods": [
+          "getLeageMatchTeamControl/getLeageMatchTeamControl"
+        ]
+      },
+      {
+        "route": "/LeagueMatchLog?",
+        "methods": [
+          "getList/getList"
+        ]
+      },
+      {
+        "route": "/Localization/GetTranslations?",
+        "methods": [
+          "getTranslations/getTranslations"
+        ]
+      },
+      {
+        "route": "/MatchiiClub",
+        "methods": [
+          "syncClubs/syncClubs"
+        ]
+      },
+      {
+        "route": "/MatchiiCourt",
+        "methods": [
+          "syncCourts/syncCourts"
+        ]
+      },
+      {
+        "route": "/MatchiiTestImage?",
+        "methods": [
+          "getImage/getImage"
+        ]
+      },
+      {
+        "route": "/Menu/administration?",
+        "methods": [
+          "getAdministrationMenu/getAdministrationMenu"
+        ]
+      },
+      {
+        "route": "/Menu/user?",
+        "methods": [
+          "getUsernMenu/getUsernMenu"
+        ]
+      },
+      {
+        "route": "/PaymentGateway/callback/{orderId}",
+        "methods": [
+          "callbackPost/callbackPost",
+          "callbackGet/callbackGet"
+        ]
+      },
+      {
+        "route": "/PaymentGateway/cancel/{orderId}",
+        "methods": [
+          "cancel/cancel"
+        ]
+      },
+      {
+        "route": "/PaymentGateway/continue/{orderId}",
+        "methods": [
+          "continue/_continue"
+        ]
+      },
+      {
+        "route": "/PaymentGateway/refund/{courseOrderItem}/{courseEnrollmentId}",
+        "methods": [
+          "refund/refund"
+        ]
+      },
+      {
+        "route": "/PaymentGateway/status/{orderId}",
+        "methods": [
+          "orderStatus/orderStatus"
+        ]
+      },
+      {
+        "route": "/Players",
+        "methods": [
+          "get/get"
+        ]
+      },
+      {
+        "route": "/Players/{playerId}",
+        "methods": [
+          "getPlayerById/getPlayerById"
+        ]
+      },
+      {
+        "route": "/Players/eventAssigment/{eventId}/type?",
+        "methods": [
+          "getByEventAssigment/getByEventAssigment"
+        ]
+      },
+      {
+        "route": "/Players/Search?",
+        "methods": [
+          "search/search"
+        ]
+      },
+      {
+        "route": "/Players/user",
+        "methods": [
+          "getDefaultPlayerByUserId/getDefaultPlayerByUserId"
+        ]
+      },
+      {
+        "route": "/Players/user/list",
+        "methods": [
+          "getPlayersByUserId/getPlayersByUserId"
+        ]
+      },
+      {
+        "route": "/PoolPosition?",
+        "methods": [
+          "getPoolPosition/getPoolPosition"
+        ]
+      },
+      {
+        "route": "/PublicApiUser",
+        "methods": [
+          "create/create"
+        ]
+      },
+      {
+        "route": "/RangkingListVersion?",
+        "methods": [
+          "getBySeason/getBySeason"
+        ]
+      },
+      {
+        "route": "/RangkingListVersion/id?",
+        "methods": [
+          "getById/getById"
+        ]
+      },
+      {
+        "route": "/RankingReplacementClub/GetDisciplineCategory?",
+        "methods": [
+          "getDisciplineCategoryDocumentedResult/getDisciplineCategoryDocumentedResult"
+        ]
+      },
+      {
+        "route": "/RankingReplacementClub/RankingReplacementClubCheckPlayerLicence?",
+        "methods": [
+          "getPlayerLicence/getPlayerLicence"
+        ]
+      },
+      {
+        "route": "/RankingReplacementClub/RankingReplacementClubCheckRule",
+        "methods": [
+          "postRankingReplacementClubCheckRule/postRankingReplacementClubCheckRule"
+        ]
+      },
+      {
+        "route": "/RankingReplacementClub/RankingReplacementClubData?",
+        "methods": [
+          "getRankingReplacementClubData/getRankingReplacementClubData"
+        ]
+      },
+      {
+        "route": "/RankingReplacementClub/RankingReplacementClubGetPlayedMatches?",
+        "methods": [
+          "getPlayedMatchesWinOrLose/getPlayedMatchesWinOrLose"
+        ]
+      },
+      {
+        "route": "/RankingReplacementClub/SearchRankingReplacementClub?",
+        "methods": [
+          "getRankingReplacementClub/getRankingReplacementClub"
+        ]
+      },
+      {
+        "route": "/Region",
+        "methods": [
+          "getAll/getAll"
+        ]
+      },
+      {
+        "route": "/Region/regions/invitationer",
+        "methods": [
+          "getAllForCoursesInvitationer/getAllForCoursesInvitationer"
+        ]
+      },
+      {
+        "route": "/reset/{leagueMatchId}?",
+        "methods": [
+          "resetLeagueMatch/resetLeagueMatch"
+        ]
+      },
+      {
+        "route": "/Routing",
+        "methods": [
+          "get/get"
+        ]
+      },
+      {
+        "route": "/Seasons",
+        "methods": [
+          "getAll/getAll"
+        ]
+      },
+      {
+        "route": "/Seasons/current",
+        "methods": [
+          "getCurrent/getCurrent"
+        ]
+      },
+      {
+        "route": "/Share",
+        "methods": [
+          "saveLink/saveLink"
+        ]
+      },
+      {
+        "route": "/Share?",
+        "methods": [
+          "getLink/getLink"
+        ]
+      },
+      {
+        "route": "/SharedEventUserPlayer",
+        "methods": [
+          "get/get",
+          "insertBulk/insertBulk"
+        ]
+      },
+      {
+        "route": "/SharedEventUserPlayer?",
+        "methods": [
+          "delete/_delete"
+        ]
+      },
+      {
+        "route": "/Tournament",
+        "methods": [
+          "getList/getList"
+        ]
+      },
+      {
+        "route": "/Tournament?",
+        "methods": [
+          "getWithLineUp/getWithLineUp",
+          "getWithLineUpMultipleTe/getWithLineUpMultipleTe"
+        ]
+      },
+      {
+        "route": "/Tournament/AddRegistration?",
+        "methods": [
+          "postAddRegistration/postAddRegistration"
+        ]
+      },
+      {
+        "route": "/Tournament/agegroup?",
+        "methods": [
+          "updateAgeGroup/updateAgeGroup"
+        ]
+      },
+      {
+        "route": "/Tournament/CompleteOrder?",
+        "methods": [
+          "completeOrder/completeOrder"
+        ]
+      },
+      {
+        "route": "/Tournament/id?",
+        "methods": [
+          "getByTournamentClassId/getByTournamentClassId"
+        ]
+      },
+      {
+        "route": "/Tournament/info?",
+        "methods": [
+          "getTournamentInfo/getTournamentInfo"
+        ]
+      },
+      {
+        "route": "/Tournament/options/{tournamentClassId}/{selectedOptionId}/{culture}",
+        "methods": [
+          "getAdditionalOptions/getAdditionalOptions"
+        ]
+      },
+      {
+        "route": "/Tournament/promgraminfo?",
+        "methods": [
+          "getTournamentProgramInfo/getTournamentProgramInfo"
+        ]
+      },
+      {
+        "route": "/Tournament/registrations/download/csv?",
+        "methods": [
+          "uploadTournamentRegistrationsExtendedCsv/uploadTournamentRegistrationsExtendedCsv"
+        ]
+      },
+      {
+        "route": "/Tournament/registrations/export/registrationoptions?",
+        "methods": [
+          "downloadRegistrationOptions/downloadRegistrationOptions"
+        ]
+      },
+      {
+        "route": "/Tournament/RemoveOrderItem?",
+        "methods": [
+          "putRemoveOrderItem/putRemoveOrderItem"
+        ]
+      },
+      {
+        "route": "/Tournament/SearchPlayerDuplicate",
+        "methods": [
+          "postSearchPlayerDuplicate/postSearchPlayerDuplicate"
+        ]
+      },
+      {
+        "route": "/Tournament/SelectTournamentEvent?",
+        "methods": [
+          "getSelectTournamentEvents/getSelectTournamentEvents"
+        ]
+      },
+      {
+        "route": "/Tournament/tournamentclassId?",
+        "methods": [
+          "getClubIdByTournamentClassId/getClubIdByTournamentClassId"
+        ]
+      },
+      {
+        "route": "/Tournament/tournamentregistrations?",
+        "methods": [
+          "getTournamentRegistrations/getTournamentRegistrations"
+        ]
+      },
+      {
+        "route": "/Tournament/tournamentregistrationsbyclass?",
+        "methods": [
+          "getTournamentRegistrationsByClass/getTournamentRegistrationsByClass"
+        ]
+      },
+      {
+        "route": "/TournamentClass?",
+        "methods": [
+          "getRealtedWithTournament/getRealtedWithTournament"
+        ]
+      },
+      {
+        "route": "/TournamentEventMatch",
+        "methods": [
+          "update/update"
+        ]
+      },
+      {
+        "route": "/TournamentEventMatch?",
+        "methods": [
+          "getNextLatestMatches/getNextLatestMatches",
+          "getByPlayerId/getByPlayerId"
+        ]
+      },
+      {
+        "route": "/TournamentEventMatch/metadata?",
+        "methods": [
+          "getNextMatchesMetadata/getNextMatchesMetadata"
+        ]
+      },
+      {
+        "route": "/TournamentLinks?",
+        "methods": [
+          "getByTournamentClassId/getByTournamentClassId"
+        ]
+      },
+      {
+        "route": "/TournamentTreeMatch?",
+        "methods": [
+          "getTreeMatchTournament/getTreeMatchTournament"
+        ]
+      },
+      {
+        "route": "/Users/AuthUser",
+        "methods": [
+          "authUser/authUser"
+        ]
+      },
+      {
+        "route": "/Users/AuthUserAdmin?",
+        "methods": [
+          "authUserAdmin/authUserAdmin"
+        ]
+      },
+      {
+        "route": "/Users/CreateUser?",
+        "methods": [
+          "createUser/createUser"
+        ]
+      },
+      {
+        "route": "/Users/GetIdentityServerRoles?",
+        "methods": [
+          "getIdentityServerRoles/getIdentityServerRoles"
+        ]
+      },
+      {
+        "route": "/Users/GetUserById?",
+        "methods": [
+          "getUserById/getUserById"
+        ]
+      },
+      {
+        "route": "/Users/GetUserRoles?",
+        "methods": [
+          "getUserRoles/getUserRoles"
+        ]
+      },
+      {
+        "route": "/Users/SearchUser?",
+        "methods": [
+          "searchUser/searchUser"
+        ]
+      },
+      {
+        "route": "/versionDate?",
+        "methods": [
+          "getByVersionDate/getByVersionDate"
+        ]
+      }
+    ]
+  },
+  "tests": [
+    {
+      "url": "https://badmintonplayer.dk/api/Seasons",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "length": 1586,
+      "sha256": "8cb816435bfe1510071817a8560b409950d4d971d8d970ffb331999ee6290b01",
+      "bodyPrefix": "[{\"seasonId\":2010,\"name\":\"2010/2011\",\"dateFrom\":\"2010-07-01T00:00:00\",\"seasonPlan\":true},{\"seasonId\":2011,\"name\":\"2011/2012\",\"dateFrom\":\"2011-07-01T00:00:00\",\"seasonPlan\":true},{\"seasonId\":2012,\"name\":\"2012/2013\",\"dateFrom\":\"2012-07-01T00:00:00\",\"seasonPlan\":true},{\"seasonId\":2013,\"name\":\"2013/2014\",\"dateFrom\":\"2013-07-01T00:00:00\",\"seasonPlan\":true},{\"seasonId\":2014,\"name\":\"2014/2015\",\"dateFrom\":\"2014-07-01T00:00:00\",\"seasonPlan\":true},{\"seasonId\":2015,\"name\":\"2015/2016\",\"dateFrom\":\"2015-07-01T00:00:00\",\"seasonPlan\":true},{\"seasonId\":2016,\"name\":\"2016/2017\",\"dateFrom\":\"2016-07-01T00:00:00\",\"s"
+    },
+    {
+      "url": "https://badmintonplayer.dk/api/Seasons/current",
+      "status": 401,
+      "contentType": null,
+      "length": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bodyPrefix": ""
+    },
+    {
+      "url": "https://badmintonplayer.dk/api/AgeGroup/Get",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "length": 3424,
+      "sha256": "c05bdbac6e9be7ec3a2478486a4fe352e70c73822115c9e0b57c36767cf9e596",
+      "bodyPrefix": "[{\"ageGroupId\":2,\"ageGroupName\":\"U09\",\"yearsFrom\":0,\"yearsTo\":8,\"yearsFromTournament\":0,\"yearsToTournament\":null},{\"ageGroupId\":3,\"ageGroupName\":\"U11\",\"yearsFrom\":9,\"yearsTo\":10,\"yearsFromTournament\":0,\"yearsToTournament\":null},{\"ageGroupId\":4,\"ageGroupName\":\"U13\",\"yearsFrom\":11,\"yearsTo\":12,\"yearsFromTournament\":0,\"yearsToTournament\":null},{\"ageGroupId\":5,\"ageGroupName\":\"U15\",\"yearsFrom\":13,\"yearsTo\":14,\"yearsFromTournament\":0,\"yearsToTournament\":null},{\"ageGroupId\":6,\"ageGroupName\":\"U17\",\"yearsFrom\":15,\"yearsTo\":16,\"yearsFromTournament\":0,\"yearsToTournament\":null},{\"ageGroupId\":7,\"ageGroupNa"
+    },
+    {
+      "url": "https://badmintonplayer.dk/api/Region",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "length": 2462,
+      "sha256": "80d608747ff24291ab1167d18222504c067b36320275f30a05a429f3fcc9c332",
+      "bodyPrefix": "[{\"regionId\":1,\"name\":\"Badminton Danmark\",\"shortName\":\"BADDAN\",\"parentId\":null},{\"regionId\":2,\"name\":\"DGI\",\"shortName\":\"DGI\",\"parentId\":null},{\"regionId\":3,\"name\":\"Badminton Bornholm\",\"shortName\":\"BADBORN\",\"parentId\":1},{\"regionId\":4,\"name\":\"Badminton Midtjylland\",\"shortName\":\"BADMIDJ\",\"parentId\":1},{\"regionId\":5,\"name\":\"Badminton Nordjylland\",\"shortName\":\"BADNDRJ\",\"parentId\":1},{\"regionId\":6,\"name\":\"Badminton Sønderjylland\",\"shortName\":\"BADSDRJ\",\"parentId\":1},{\"regionId\":7,\"name\":\"Badminton Fyn\",\"shortName\":\"BADFYN\",\"parentId\":1},{\"regionId\":8,\"name\":\"Badminton København\",\"shortName\":\"BADKBH\""
+    },
+    {
+      "url": "https://badmintonplayer.dk/api/GeoRegion/Get",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "length": 189,
+      "sha256": "1eaf563ddde0d51574d43e5c03a97a92d771718288408839145918356eeac9c5",
+      "bodyPrefix": "[{\"geoRegionID\":1001,\"unionID\":1,\"name\":\"NORD\"},{\"geoRegionID\":1002,\"unionID\":1,\"name\":\"SYD\"},{\"geoRegionID\":1003,\"unionID\":1,\"name\":\"ØST\"},{\"geoRegionID\":1004,\"unionID\":1,\"name\":\"UDLAND\"}]"
+    },
+    {
+      "url": "https://badmintonplayer.dk/api/RangkingListVersion?seasonId=2026",
+      "status": 401,
+      "contentType": null,
+      "length": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bodyPrefix": ""
+    },
+    {
+      "url": "https://badmintonplayer.dk/api/RangkingListVersion/id?rankingListVersionId=264866",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "length": 161,
+      "sha256": "576899227558568ac17b7a2cd97a7c6f484ea2b7336413abfecd77c36296d1d4",
+      "bodyPrefix": "{\"rankingListVersionId\":264866,\"dateFrom\":\"2026-07-01T00:00:00\",\"dateTo\":\"2026-08-30T00:00:00\",\"versionDate\":\"2026-09-01T00:00:00\",\"text\":\"September-ranglisten\"}"
+    },
+    {
+      "url": "https://badmintonplayer.dk/api/versionDate?date=2026-09-01T00:00:00.000Z",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "length": 161,
+      "sha256": "576899227558568ac17b7a2cd97a7c6f484ea2b7336413abfecd77c36296d1d4",
+      "bodyPrefix": "{\"rankingListVersionId\":264866,\"dateFrom\":\"2026-07-01T00:00:00\",\"dateTo\":\"2026-08-30T00:00:00\",\"versionDate\":\"2026-09-01T00:00:00\",\"text\":\"September-ranglisten\"}"
+    },
+    {
+      "url": "https://badmintonplayer.dk/api/versionDate?date=2025-09-01T00:00:00.000Z",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "length": 161,
+      "sha256": "8815bf261f42f6c74cd9d11e9c8b71a0491faa08eb16037d9f7a1e320f3ce60c",
+      "bodyPrefix": "{\"rankingListVersionId\":263306,\"dateFrom\":\"2025-07-01T00:00:00\",\"dateTo\":\"2025-08-31T00:00:00\",\"versionDate\":\"2025-09-01T00:00:00\",\"text\":\"September-ranglisten\"}"
+    },
+    {
+      "url": "https://badmintonplayer.dk/api/Tournament",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "length": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bodyPrefix": "[]"
+    },
+    {
+      "url": "https://badmintonplayer.dk/api/TournamentClass?tournamentClassId=115342",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "length": 33118,
+      "sha256": "b04e2421274d5b0f9a783b86cc8360a95f1a725e467b09b58341e017c87cf359",
+      "bodyPrefix": "{\"tournamentId\":17558,\"tI_ACTIV\":1,\"tournamentClasses\":[{\"tournamentClassID\":115342,\"tournamentID\":17558,\"ageGroupID\":1,\"classID\":3,\"tournamentNumber\":null,\"ageGroupCode\":null,\"ageGroupName\":\"SEN\",\"classCode\":null,\"className\":\"A\",\"tournamentState\":2,\"maxEvents\":null,\"noValidateAgeGroup\":false,\"noValidateClass\":false,\"tournamentClassTitle\":null,\"bornFrom\":null,\"bornTo\":\"2009-12-31T00:00:00\",\"tournamentClassInfo\":\"\",\"classDateFrom\":\"2026-08-29T00:00:00\",\"classDateTo\":\"2026-08-30T00:00:00\",\"rankingPointsFromMale\":null,\"rankingPointsToMale\":null,\"rankingPointsFromFemale\":null,\"rankingPointsToFemal"
+    },
+    {
+      "url": "https://badmintonplayer.dk/api/Tournament/id?tournamentClassId=115342",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "length": 1017,
+      "sha256": "870b6cf7bcc78575b216d3cac32e9ae6e5b1bdba047f1f2df3558b4bd2bb8226",
+      "bodyPrefix": "{\"tournamentId\":17558,\"seasonId\":2026,\"clubId\":1216,\"clubName\":\"Jernløse\",\"dateFrom\":\"2026-08-29T00:00:00\",\"dateTo\":\"2026-08-30T00:00:00\",\"tournamentNumber\":\"S017558\",\"title\":null,\"lastRegistration\":\"2026-08-13T00:00:00\",\"tournamentState\":9,\"exportUnionName\":null,\"tournamentType\":0,\"contactName\":\"Patrick\",\"contactAddress\":\"\",\"contactCity\":\"\",\"contactPostalCode\":\"\",\"contactCountryCode\":null,\"contactEmail\":\"jbkturnering@gmail.com\",\"contactPhone\":\"12345678\",\"urlinvitation\":\"\",\"urlprogram\":null,\"registrationOpen\":true,\"updatedByUserId\":361703,\"updatedTime\":\"2026-09-01T08:51:53.55\",\"maxEvents\":2,\"r"
+    },
+    {
+      "url": "https://badmintonplayer.dk/api/Tournament/info?tournamentClassId=115342",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "length": 1249,
+      "sha256": "b98ee57d56a34752bdb67a5f8f2d6ef952e61adc98f8a1a8735fc3cfe035e639",
+      "bodyPrefix": "{\"tourtnamentId\":17558,\"tournamentClassId\":115342,\"locationCodeName\":\"Jernløse Hallen\",\"tournamentNumber\":\"S017558\",\"tournamentTitle\":null,\"dateFrom\":\"2026-08-29T00:00:00\",\"dateTo\":\"2026-08-30T00:00:00\",\"lastRegistrationDate\":\"2026-08-13T00:00:00\",\"contactPersonName\":\"Patrick\",\"contactPersonEmail\":\"jbkturnering@gmail.com\",\"contactPersonPhone\":\"12345678\",\"lastUpdate\":\"2026-09-01T08:51:53.55\",\"tournamentLinks\":[{\"link\":\"/DBF/Turnering/VisInvitation/#115342\",\"isAllow\":false,\"tournamentLinkType\":1},{\"link\":\"/DBF/Turnering/VisResultater/#115342,-8\",\"isAllow\":true,\"tournamentLinkType\":5},{\"link\":\"/D"
+    },
+    {
+      "url": "https://badmintonplayer.dk/api/Tournament?tournamentClass=115342&tournamentEventId=490920",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "length": 75801,
+      "sha256": "b8e8e9d1ed53e7c0b20a0108b6459f59c414cc1e9b6cde3baa0a1e6f106fd544",
+      "bodyPrefix": "[{\"tournamentEventId\":490920,\"tournamentClassId\":115342,\"disciplineCode\":\"MensSingles\",\"sortIndex\":0,\"price\":250.00,\"maxRegistrations\":null,\"tournamentClass\":{\"tournamentClassID\":115342,\"tournamentID\":17558,\"ageGroupID\":1,\"classID\":3,\"tournamentNumber\":null,\"ageGroupCode\":null,\"ageGroupName\":\"SEN\",\"classCode\":null,\"className\":\"A\",\"tournamentState\":2,\"maxEvents\":null,\"noValidateAgeGroup\":false,\"noValidateClass\":false,\"tournamentClassTitle\":null,\"bornFrom\":null,\"bornTo\":\"2009-12-31T00:00:00\",\"tournamentClassInfo\":\"\",\"classDateFrom\":\"2026-08-29T00:00:00\",\"classDateTo\":\"2026-08-30T00:00:00\",\"ranki"
+    },
+    {
+      "url": "https://badmintonplayer.dk/api/TournamentEventMatch/metadata",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "length": 63,
+      "sha256": "006e6e456dc84e2cce39cc3bedd0949b19351865bb9ca0a0ef68a65b7f96c88f",
+      "bodyPrefix": "{\"locationCodes\":null,\"dates\":null,\"players\":null,\"pageType\":0}"
+    },
+    {
+      "url": "https://badmintonplayer.dk/api/TournamentEventMatch?tournamentId=17558&start=0&take=10&pageType=0",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "length": 31,
+      "sha256": "fd264e2e0692409524f210ee95142702610e80192580b674529e2482c5e9d821",
+      "bodyPrefix": "{\"unifiedTournamentMatches\":[]}"
+    },
+    {
+      "url": "https://badmintonplayer.dk/api/TournamentLinks?tournamentClassId=115342",
+      "status": 401,
+      "contentType": null,
+      "length": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bodyPrefix": ""
+    },
+    {
+      "url": "https://badmintonplayer.dk/api/Players/84737",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "length": 181,
+      "sha256": "d9c847eebd129a023deb8d9ece37846ad7d2b183db9001da3913d1dda7bf8c10",
+      "bodyPrefix": "{\"playerId\":84737,\"playerNumber\":\"980701-01\",\"name\":\"Christoffer Müller\",\"birthDate\":\"1998-07-01T00:00:00\",\"createTime\":null,\"gender\":\"M\",\"clubName\":\"Gladsaxe Søborg\",\"clubId\":1093}"
+    }
+  ]
+}
