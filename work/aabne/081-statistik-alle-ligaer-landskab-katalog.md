@@ -541,3 +541,29 @@ tid.
 Dette er kun et skemaforslag. Den fulde 33-regioners indsamling er ikke
 startet, og `gsb-statistik-normalized.db` er ikke ændret. Der afventes
 godkendelse af skemaet før de 16.269+ detaljekald sættes i gang.
+
+**Skemaet er godkendt (2026-09-21). Sæt indsamlingen i gang.** Ét åbent
+spørgsmål fra godkendelsen: hvorfor `league_group_teams`s primærnøgle
+indeholder både `league_group_team_id` OG `team_name_raw`, ikke kun
+`league_group_team_id`. Svar det kort i næste "Spørgsmål"-afsnit — hvis
+årsagen er at `league_group_team_id` kan mangle/være tom i nogle svar (så
+`team_name_raw` er et nødvendigt fallback-element i nøglen), så er det fint
+som det står; hvis det ikke er årsagen, så ret skemaet inden indsamlingen
+starter, ikke bagefter.
+
+**Sæt indeksfasen i gang for alle 33 regioner** (16.269 indekskald: 17
+sæsoner × 29 aldersgrupper × 33 regioner), efterfulgt af ét detaljekald pr.
+unik `leagueGroupID` fundet i indekset. Følg det idempotente, genoptagelige
+design fra skemaforslaget ovenfor (deterministisk request-nøgle, status pr.
+request, checkpointing, rate-limiting/backoff, separat fejlrapport). Kør
+gerne i faser (fx indeksfasen helt færdig og rapporteret, før detaljefasen
+startes) frem for ét langt kørsel uden statusrapportering undervejs — det er
+en stor mængde kald, og det skal være muligt at afbryde og se fremdrift
+undervejs, ikke kun ved slutrapporten.
+
+Rapportér undervejs (eller mindst når indeksfasen er færdig): faktisk antal
+kald brugt, antal `ok`/`empty`/`error`, og antal unikke `leagueGroupID` fundet
+til detaljefasen — så det konkrete detaljekald-antal kan bekræftes før det
+sættes i gang, i stedet for at blive antaget ud fra indeksfasens tal alene.
+
+### Spørgsmål
