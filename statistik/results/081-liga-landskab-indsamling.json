@@ -1,0 +1,11 @@
+{
+  "index": {"expected": 16269, "requested": 16269, "ok": 16269, "empty": 0, "error": 0, "groupReferences": 59127, "uniqueGroups": 18546, "regionLinks": 59127},
+  "detail": {"requested": 18546, "ok": 18546, "empty": 0, "error": 0, "teams": 96823, "teamsWithNumericStandingFields": 90480, "teamsWithoutNumericStandingFields": 6343, "blankLeagueGroupTeamId": 0, "fetchErrors": 0},
+  "schema": {"teamPrimaryKey": ["season_id", "age_group_id", "league_group_id", "league_group_team_id"], "normalizedDatabaseChanged": false},
+  "rulesetProbe": [
+    {"leagueGroupId": 18888, "leagueMatchId": 508170, "standingScore": "7-6", "gameScores": ["15-10", "15-8"]},
+    {"leagueGroupId": 18872, "leagueMatchId": 507745, "standingScore": "3-6", "gameScores": ["13-15", "15-12", "15-11"]},
+    {"leagueGroupId": 18833, "leagueMatchId": 507270, "standingScore": "7-2", "gameScores": ["15-7", "10-15", "11-15"]}
+  ],
+  "rulesetEstimate": {"uniqueGroups": 18546, "matchListCalls": 18546, "matchDetailCalls": 18546, "totalAdditionalCalls": 37092}
+}

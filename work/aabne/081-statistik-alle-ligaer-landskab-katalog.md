@@ -120,6 +120,7 @@ at gætte.
 
 ### Spørgsmål
 
+
 **Christoffers svar (2026-09-20):** Kør den dyre iteration, men gør det smartere og gem resultatet
 permanent, så vi ikke skal hente det igen:
 
@@ -593,3 +594,22 @@ Dette er en afklaring, ikke en godkendelse til at bygge det ind i den store
 kørsel endnu — vent på Christoffers beslutning efter svaret er rapporteret.
 
 ### Spørgsmål
+
+**Svar: fuld indsamling og sideordnet regelsæt-test (2026-09-21):**
+Indeksfasen udførte 16.269/16.269 kald: 16.269 `ok`, 0 `empty`, 0 `error`.
+Den fandt 59.127 puljereferencer og 18.546 unikke puljer. Detaljefasen udførte
+18.546/18.546 kald: 18.546 `ok`, 0 `empty`, 0 `error`, med 96.823 holdrækker;
+90.480 havde numeriske stillingsfelter, mens 6.343 var kildetekst som fx
+`Holdet trukket`. Ingen af 96.823 rækkerne manglede `leagueGroupTeamID`, og
+ingen pulje havde samme ID med flere holdnavne. Derfor er den dokumenterede
+primærnøgle `(season_id, age_group_id, league_group_id, league_group_team_id)`;
+`team_name_raw` er bevaret som datafelt, men er ikke identitetsfallback.
+
+Den sideordnede test viste at `subPage=2` ikke indeholder match-ID, mens
+`subPage=4` gør. Tre faktiske eksempler er 18888→508170, 18872→507745 og
+18833→507270; `subPage=5` gav henholdsvis kampscorer 15-10/15-8,
+13-15/15-12/15-11 og 15-7/10-15/11-15. En fuld regelsæt-udledning vil derfor
+kræve ca. 18.546 matchlistekald plus op til 18.546 kampdetailkald (37.092 i
+alt), og er ikke bygget ind i denne kørsel. Se
+`statistik/results/081-liga-landskab-indsamling.md` og `.json` for fuld
+rå optælling.

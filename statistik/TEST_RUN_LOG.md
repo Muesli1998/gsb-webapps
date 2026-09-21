@@ -641,3 +641,10 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
   `rangliste-historik.db` blev skrevet; `gsb-statistik-normalized.db` blev
   kun læst og hash-kontrolleret uændret.
 
+
+## 2026-09-21 — opgave 081 fuld liga-landskab
+- Indeksfase: 16.269/16.269 `GetLeagueStanding`-kald, 16.269 ok, 0 empty, 0 fejl.
+- Fandt 59.127 puljereferencer og 18.546 unikke puljer.
+- Detaljefase: 18.546/18.546 ok, 96.823 holdrækker, 90.480 med numeriske stillingsfelter, 6.343 med kildetekst uden numeriske felter, 0 tomme team-ID'er og 0 fejl.
+- Sideordnet test: subPage=2 indeholder ikke leagueMatchID; subPage=4 fandt match-ID'er for 18888/18872/18833, og subPage=5 returnerede faktiske sætresultater. Estimat for alle puljer: op til 37.092 ekstra kald.
+- Ny separat database: `statistik/data/liga-landskab.db`; den normaliserede database var urørt. Rapport: `statistik/results/081-liga-landskab-indsamling.md`/.json.
