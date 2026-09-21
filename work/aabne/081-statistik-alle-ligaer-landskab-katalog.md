@@ -456,3 +456,23 @@ plus de otte BD-kredse (9 regioner i alt), eller 13.311 for BD og alle DGI-
 regioner (27 regioner). Hertil kommer ét puljekald pr. unik
 `leagueGroupID`; det antal kan først tælles efter indeksfasen. Den historiske
 indsamling er ikke startet, og databasen er urørt.
+
+**Christoffers beslutning (2026-09-21):** Kør for ALLE 33 regioner (16.269
+indekskald + detaljekald). Formålet er ikke kun et markdown-katalog — dataen
+skal gemmes struktureret, så den senere kan bruges til at strukturere resten
+af klubbens data (bl.a. Hold-fanens holdsammenlægning). Det skal derfor
+gemmes så det er let at slå op på tværs af region, aldersgruppe, sæson,
+liga/pulje, og hold/klubnavne — ikke bare som fritekst.
+
+**Ny handling FØR den fulde indsamling sættes i gang:** Codex skal foreslå en
+konkret datastruktur (skema) til det nye, permanente datasæt, baseret på hvad
+`GetLeagueStanding` FAKTISK returnerer (ikke en antaget generisk struktur).
+Mindst følgende skal kunne slås op efter hinanden: region → aldersgruppe →
+sæson → liga/pulje (`leagueGroupID`, navn) → hold i puljen (klub-/holdnavn,
+og `leagueGroupTeamID` hvis det findes i svaret). Foreslå om det skal være en
+ny SQLite-fil (fx `statistik/data/liga-landskab.db`, adskilt fra
+`gsb-statistik-normalized.db`) eller en anden struktureret form (JSON-filer
+pr. sæson/region, CSV-tabeller osv.) — begrund valget. Skriv forslaget under
+et nyt "Spørgsmål"-svar i dette kort og STOP der. Byg IKKE den fulde
+indsamling før skemaforslaget er godkendt — det er dyrt at rette bagefter,
+når 16.269+ kald er brugt.
