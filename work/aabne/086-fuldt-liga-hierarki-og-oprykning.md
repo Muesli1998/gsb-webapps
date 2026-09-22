@@ -82,6 +82,33 @@ familie, en tynd/stiplet lodret linje for formodet niveau-rækkefølge inden for
 pil kun for bekræftet oprykning. Foreslå selv en konkret farve-/linjekode i "Spørgsmål"-afsnittet — det
 skal ikke bare "besluttes" undervejs uden at det fremgår hvorfor.
 
+**Officielle regler er nu en selvstændig kildetype, ikke kun empiri.** Christoffer har spurgt om vi
+også skal søge regler online — ja. Badminton Danmarks gældende holdturneringsreglement (fx
+`Holdturneringsreglement-for-badminton-i-Danmark-DH-reglementet-2026-07-01...pdf` på badminton.dk) er
+allerede blevet slået op i denne samtale og bekræfter den konkrete mekanik for Danmarksserien ↔
+3. division: § 24 stk. 3 giver 4 direkte oprykninger (nr. 1 i hver af de 8 puljer, organiseret i 4
+kvalifikationsgrupper A-D), § 24 stk. 4 og § 28 beskriver kvalifikationseventen (nr. 2 og 3 fra hver
+kvalifikationsgruppe mødes på tværs af grupperne, sammen med nedrykningskandidater nr. 4-5 fra 3.
+divisions nedrykningspuljer), og § 23 stk. 5 giver direkte nedrykning for nr. 6-8 i hver 3. divisions-
+pulje. Dette er et konkret eksempel på hvordan officiel regeltekst kan bruges som en TREDJE kildetype
+ved siden af (1) siderækkefølge og (2) empirisk fundet holdbevægelse — brug det som skabelon: for hver
+"bekræftet oprykning"-forbindelse i kortet, angiv om belægget kommer fra regeltekst, fra faktisk fundne
+hold i data, eller begge dele. Regeltekst alene (uden empirisk bekræftelse i vores egne data) bør
+markeres tydeligt anderledes end en forbindelse der også er set ske i praksis — reglen fortæller hvad
+der SKAL ske, ikke nødvendigvis hvad der historisk er sket i vores datasæt (fx ved regelændringer,
+COVID-aflysninger, eller hold der trækker sig).
+
+**Nedrykning, oprykning og kvalifikation er ikke ét lineært spor — de er retninger fra samme node.**
+Christoffer har præciseret: nedrykning fra en pulje går til "den ene side", oprykning til "den anden
+side", og kvalifikation er et separat mødepunkt der samler hold fra flere puljer (fx 8 hold fra 4
+kvalifikationsgrupper i Danmarksserien-eksemplet ovenfor). Kortets nodemodel skal derfor være: hver
+pulje-node kan have (a) en opadgående forbindelse (oprykning — til den pulje/det niveau holdet rykker
+op til), (b) en nedadgående forbindelse (nedrykning), og (c) en sideværts forbindelse til en delt
+kvalifikations-/slutspils-node som flere puljer peger ind i og ud af. Placér disse visuelt som forgreninger
+fra puljen, ikke som ekstra trin i selve rækkefølge-kæden — samme princip som at "Finale"/"Bronzekamp"
+ikke skal stå som deres eget niveau-trin (allerede besluttet ovenfor), men nu udvidet til at vise
+RETNINGEN eksplicit.
+
 ## Mål
 
 1. Udvid genparsingen af siderækkefølge (fra opgave 085's metode) til alle 33 regioner, alle
@@ -96,6 +123,28 @@ skal ikke bare "besluttes" undervejs uden at det fremgår hvorfor.
    familier ud fra denne signatur — ikke ud fra det rå navnemønster. Rapportér hvor konsistent
    signaturen er inden for en pulje (samme signatur i alle kampe, eller varierer det?), og brug det som
    det yderste lag i klassificeringen, jf. Baggrund ovenfor.
+2b. **Slå officielle op-/nedrykningsregler op for HELE hierarkiet, ikke kun Danmarksserien.**
+   Danmarksserien ↔ 3. division (§ 23-24, § 28 i det gældende BD-holdturneringsreglement) er kun ÉT
+   niveauovergang ud af mange der skal dækkes. Byg en udtømmende liste over de overgange der findes i
+   vores data og slå regler op for hver af dem, mindst:
+   - Hele BD-seniorstigen: Badmintonligaen ↔ 1. division ↔ 2. division ↔ 3. division ↔ Danmarksserien
+     (samme reglement som Danmarksserien-eksemplet dækker formentlig hele stigen — bekræft det, antag
+     det ikke).
+   - Hver regions egen lokale seriestige under Danmarksserien (Københavnsserien/1.-33. Serie i BADKBH,
+     Sjællandsserien/Serie 1-4 i BADSJ, Kredsserien Vest/Serie 1 Vest i BADFYN m.fl., samt de
+     tilsvarende DGI-rækker som "Serie A/B/C/D - Double" i DGI-Nordjylland) — disse har med stor
+     sandsynlighed HVER SIN region- eller kredsspecifikke reglement/vedtægt, ikke nødvendigvis det
+     samme BD-reglement. Søg efter hver regions/kreds' eget reglement (fx på regionens egen hjemmeside,
+     jf. mønsteret fra `badmintoninordjylland.dk`'s eget reglement-PDF som allerede er fundet i denne
+     samtale) — antag IKKE at BD's regler gælder 1:1 for DGI eller for en lokal kreds.
+   - Ungdomsrækkernes egne op-/nedrykningsregler, som med stor sandsynlighed er anderledes end senior
+     (og som hænger sammen med spørgsmål A om hvornår pointbaseret pooling blev indført — reglerne kan
+     selv have ændret sig over de 17 sæsoner).
+   For hver overgang: dokumentér enten den fundne regel (med kilde/paragraf) eller at ingen offentlig
+   regeltekst blev fundet — et "ikke fundet" er et gyldigt og vigtigt resultat, ikke en mangel der skal
+   gættes udenom. Byg en oversigtstabel (niveau A ↔ niveau B, kilde, hvor mange der rykker direkte,
+   hvor mange via kvalifikation) som en konkret leverance under `statistik/results/086-*`, ikke kun
+   løst prosa. Brug det som kildetype nummer tre i kortets forbindelser, jf. ovenstående.
 3. Test det samme for ungdom, afgrænset og forsigtigt — forvent og accepter et "nej" eller "for tyndt
    grundlag" som gyldigt svar.
 4. Besvar spørgsmål A (rangliste-indførelsestidspunkt i ungdom) fra allerede gemt data.
