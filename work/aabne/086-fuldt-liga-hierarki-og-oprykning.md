@@ -50,6 +50,38 @@ spillet den mellemliggende aldersgruppe. Dette er et sidespor i forhold til nive
 direkte efterspurgt — hold det afgrænset til et konkret, dokumenteret udsnit (fx GSB), ikke en
 generalisering over hele landskabet.
 
+
+**Ny, konkret undersøgt detalje (allerede bekræftet under kortlægningen af denne opgave):**
+"Spilleform" er ikke skrevet ned som et felt nogen steder, men er empirisk aflæselig fra
+`match_categories.category_raw` pr. kamp. Eksempel fra BADKBH SEN 2026/2027: Københavnsserien og
+3. Serie har 13 kategorier pr. kamp (inkl. `DS` — damesingle), mens 31./32./33. Serie kun har 10
+kategorier (ingen `DS`, kun én `MD`/`DD`). Det bekræfter at 31.-33. Serie er en anden spilleform end
+1.-3. Serie/Københavnsserien, selvom de står i samme rækkefølge-liste på siden. Dette skal bruges som et
+selvstændigt lag i klassificeringen (se nyt Mål 2a og det udvidede Mål 6 nedenfor) — IKKE antages ud fra
+navnet alene (fx at "Serie 31" bare er "en lavere Serie 3").
+
+**Hvordan forbindelser mellem puljer skal besluttes — tre uafhængige lag, ikke ét:**
+Christoffer har peget på at der er flere ting der kan "hænge sammen" på samme tid: spilleform (4+3 vs.
+4+2 vs. 2+2 vs. motionist-format), niveau inden for samme spilleform (A/B/C/D eller pointgrænser), og
+faktisk oprykning/nedrykning mellem konkrete puljer. Disse skal holdes adskilt som tre separate,
+uafhængigt dokumenterede lag i stedet for én sammenblandet "forbindelse":
+
+1. **Spilleform (familie).** Afledt af `match_categories`-signaturen (sæt af `category_raw`-værdier pr.
+   kamp) for hver pulje, jf. ovenstående. To puljer er kun i samme familie hvis deres kategori-signatur
+   er (tilnærmelsesvis) ens. Dette er den yderste, grovkornede gruppering — puljer i forskellige
+   familier vises IKKE forbundet på nogen måde, uanset navnelighed.
+2. **Niveau inden for samme spilleform.** Kun inden for samme familie: siderækkefølgen (opgave 085) eller
+   et bogstav/pointgrænse-mønster i navnet bruges til at ordne puljer lodret. Dette er en formodet
+   rækkefølge, ikke en bekræftet sammenlignelighed.
+3. **Bekræftet oprykning/nedrykning.** Kun tegnes som en decideret pil/forbindelse i det visuelle kort når
+   der er fundet konkrete hold i kildedataen der er flyttet mellem to specifikke puljer fra én sæson til
+   den næste (jf. Mål 2-3). Dette er det stærkeste og sjældneste lag.
+
+Det visuelle kort skal adskille disse tre lag visuelt (se udvidet Mål 6): fx farve/form for spilleform-
+familie, en tynd/stiplet lodret linje for formodet niveau-rækkefølge inden for familien, og en tyk/farvet
+pil kun for bekræftet oprykning. Foreslå selv en konkret farve-/linjekode i "Spørgsmål"-afsnittet — det
+skal ikke bare "besluttes" undervejs uden at det fremgår hvorfor.
+
 ## Mål
 
 1. Udvid genparsingen af siderækkefølge (fra opgave 085's metode) til alle 33 regioner, alle
@@ -59,16 +91,29 @@ generalisering over hele landskabet.
 2. Test empirisk om regionale seniortopkredse "fødrer" Danmarksserien via faktiske
    oprykningshændelser i data (ikke antaget). Rapportér konkrete fundne eksempler eller dokumentér
    fraværet af tilstrækkeligt bevis.
+2a. **Afled en "spilleform-signatur" for hver pulje** fra `match_categories.category_raw`-sammensætningen
+   pr. kamp (mængden af distinkte kategorikoder, evt. suppleret med antal af hver). Grupper puljer i
+   familier ud fra denne signatur — ikke ud fra det rå navnemønster. Rapportér hvor konsistent
+   signaturen er inden for en pulje (samme signatur i alle kampe, eller varierer det?), og brug det som
+   det yderste lag i klassificeringen, jf. Baggrund ovenfor.
 3. Test det samme for ungdom, afgrænset og forsigtigt — forvent og accepter et "nej" eller "for tyndt
    grundlag" som gyldigt svar.
 4. Besvar spørgsmål A (rangliste-indførelsestidspunkt i ungdom) fra allerede gemt data.
 5. Besvar spørgsmål B (spillerdrevet holdforskydning) afgrænset til et konkret, kendt udsnit (GSB),
    med samme forsigtighed som opgave 083's spillerkobling.
 6. Udvid det eksisterende visuelle kort (artifact fra opgave 085, se Kontekst) til at dække alle 33
-   regioner, med: (a) forbindelser/pile KUN hvor Mål 2/3 fandt konkret oprykningsbevis, (b) ungdomspuljer
-   grupperet visuelt uden automatiske forbindelser medmindre Mål 3 fandt bevis, (c) et separat afsnit der
-   viser fundet fra spørgsmål A og B. Byg selve den udvidede visualisering (HTML), da opgave 085 allerede
-   etablerede at dette er et konkret, brugt værktøj — ikke kun et forslag.
+   regioner, med tre visuelt adskilte lag (jf. Baggrund):
+   (a) **spilleform-familie** (Mål 2a) vist som farve/gruppe-adskillelse — puljer i forskellige familier
+       tegnes ikke i samme kæde eller nær hinanden på en måde der antyder sammenlignelighed;
+   (b) **formodet niveau inden for samme familie** (siderækkefølge/navnemønster) vist som en tynd/stiplet
+       lodret forbindelse — tydeligt visuelt svagere end (c);
+   (c) **bekræftet oprykning/nedrykning** (Mål 2-3) vist som en tydelig, farvet pil — KUN når der er
+       fundet konkrete hold-til-hold-bevis, aldrig som en antagelse;
+   samt (d) ungdomspuljer grupperet side om side uden automatiske forbindelser medmindre Mål 3 fandt
+   bevis, og (e) et separat afsnit der viser fundet fra spørgsmål A og B. Foreslå den konkrete farve-/
+   linjekode for (a)-(c) i "Spørgsmål"-afsnittet FØR kortet bygges, så Christoffer kan godkende kodningen
+   — byg derefter selve den udvidede visualisering (HTML), da opgave 085 allerede etablerede at dette er
+   et konkret, brugt værktøj, ikke kun et forslag.
 
 ## Kontekst
 
