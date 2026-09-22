@@ -697,3 +697,41 @@ forventede kamptal (310.137).
 
 **Svar: fuld kamp-for-kamp-indsamling (2026-09-21):**
 Matchlistefasen kørte 18.546 kald: 18.543 `ok`, 3 `empty`, 0 `error`; den bevarede 310.137 pulje-kamp-tilknytninger og 203.012 deduplikerede kamp-ID’er. Detailfasen kørte ét kald pr. deduplikeret kamp-ID: 203.011 `ok`, 1 `empty`, 0 `error`. Den tomme kamp er 433782 (sæson 2022, ageGroupID 9, pulje 15023). Der blev gemt 1.300.474 kategorier og 2.636.258 sæt-score-rækker i `liga-landskab.db`. Rå svar ligger i 869 batchede JSONL-filer under `statistik/data/liga-landskab-raw/`; den normaliserede GSB-database blev ikke skrevet. Den fulde rapport er `statistik/results/081-kampindsamling.md`/.json.
+
+## Resultatnote (endelig, 2026-09-22)
+
+Opgaven er afsluttet. Det oprindelige mål — et katalog over ALLE
+ligaer/turneringer i Nembadminton-systemet 2010-2026, ikke kun GSB's egne —
+er nået, og udvidet undervejs til også at dække fulde kampresultater, ikke
+kun stillinger.
+
+**Samlet dataomfang i den separate `statistik/data/liga-landskab.db`:**
+- Katalog: 33 regioner, 29 aldersgrupper, 17 sæsoner.
+- 16.269 indekskald → 18.546 unikke puljer, 96.823 holdrækker (stillinger).
+- 18.546 matchlistekald → 310.137 pulje-kamp-tilknytninger, 203.012
+  deduplikerede kampe (samme kamp kan optræde i flere regioners puljer,
+  bevaret via `league_match_groups`).
+- 203.012 kampdetailkald → 1.300.474 kategorirækker (med spiller-ID/navn),
+  2.636.258 sæt-score-rækker.
+- Samlet: 256.373 API-kald, reelt 0 fejl (kun 4 tomme svar: 3 tomme
+  matchlister, 1 tom kampdetalje — dokumenteret, ikke undersøgt yderligere
+  da omfanget er marginalt).
+- Rå svar er gemt separat som 869 batchede JSONL-filer under
+  `statistik/data/liga-landskab-raw/` (ca. 3,78 GB), ikke i git.
+
+**To anomalier blev undersøgt og forklaret undervejs, ikke antaget:**
+Vest-ungdom-"hullet" for 2026/27 skyldtes at puljerne endnu ikke var
+oprettet i kilden (sæson-timing, ikke en fejl). Midtjylland-senior-mønsteret
+på tværs af regioner 4-7 blev bekræftet som en reel delt vestlig seniorpulje
+(samme pulje-titel og holdliste, forskellige rå HTTP-svar), ikke en fejl
+eller fallback.
+
+**`gsb-statistik-normalized.db` er urørt gennem hele opgaven** (bekræftet
+med uændret SHA-256 ved hver aflevering).
+
+**Ikke en del af denne opgave, men mulig ved den nye data:** en rangeret
+hold-liste på tværs af puljer/regioner (bruger match- og sætresultaterne, ikke
+kun stillingerne), individuel spillerstatistik på tværs af landskabet (via
+`match_categories`s spiller-ID'er), og evt. sammenkobling med
+`rangliste-historik.db` fra opgave 083. Disse er efterfølgende
+analyse-/featurearbejde, ikke en del af selve dataudtrækket — se opgave 084.
