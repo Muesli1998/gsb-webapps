@@ -666,3 +666,10 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
 - Matchlistefase: 18.546 kald; 18.543 ok, 3 empty, 0 fejl; 310.137 pulje-kamp-tilknytninger og 203.012 deduplikerede external_match_id'er.
 - Detailfase: 203.012 kald; 203.011 ok, 1 empty (kamp 433782), 0 fejl; 1.300.474 kategorier og 2.636.258 sæt-score-rækker.
 - Rå svar: 869 batchede JSONL-filer under statistik/data/liga-landskab-raw/; normaliseret DB urørt. Rapport: statistik/results/081-kampindsamling.md/.json.
+
+## 2026-09-22 — opgave 084 liga-landskab/rangering (read-only)
+- `084-analyse-liga-landskab.mjs` læste `liga-landskab.db` og den normaliserede database uden SQL-skrivning.
+- Kortlægning: 18.546 puljer; 3.393 distinkte `division_name_raw`, 3.438 distinkte `group_name_raw` og 1.337 distinkte `page_title_raw`; JSON indeholder forekomster pr. sæson, region og sæson/region.
+- GSB-udsigt: 455 holdrækker med kampe; 142 senior/veteran; 16 med oprykning/nedrykning-token og 13 med kvalifikation-token.
+- Officielle reglementer bekræfter overordnet seniorhierarki og bevægelsesregler, men ikke en komplet historisk tokenmapping. Foreslået afledt model er dokumenteret, ikke bygget.
+- Kontrol: puljetallet blev efterprøvet efter join-korrektion (18.546; tidligere 59.127 var et join-multipliceret mellemresultat). `gsb-statistik-normalized.db` SHA-256 efter kørsel: `49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E`.

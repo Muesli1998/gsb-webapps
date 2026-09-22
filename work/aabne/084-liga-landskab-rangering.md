@@ -98,8 +98,24 @@ uafklaret i stedet for at gætte — præcis samme princip som opgave 077's 112 
 
 ### Spørgsmål
 
-(Udfyldes af den der løser opgaven. Christoffer svarer her i filen.)
+#### Svar — analyse udført 2026-09-22
+
+**1. Faktisk navnekatalog.** Den read-only analyse i `statistik/scripts/084-analyse-liga-landskab.mjs` læser én række pr. pulje fra `liga_groups` og aggregerer regionerne fra `league_group_regions`. Datasættet indeholder 18.546 puljer, 3.393 distinkte `division_name_raw`-værdier, 3.438 distinkte `group_name_raw`-værdier og 1.337 distinkte `page_title_raw`-værdier. Den fulde liste med forekomster pr. sæson, region og sæson/region-krydstab ligger i `statistik/results/084-liga-landskab-rangering.json`; Markdown-rapporten viser de hyppigste værdier for alle tre felter. Eksempler på rå variation er `Danmarksserien`, `3. division`, `Serie 1 Vest`, alders-/pointformater som `U15 - 4800 (4 spillere)` og playoffnavne som `Finale`, `Bronzekamp` og `5. - 8. plads`. Der findes ikke et regionsnavn i dette skema, kun numeriske `region_id`-værdier.
+
+**2. Officiel hierarkikilde.** Badminton Danmarks holdturneringsreglement dokumenterer den overordnede seniorstruktur, geografiske grupper og oprykning/nedrykning ([reglement 2023](https://badminton.dk/wp-content/uploads/2023/10/Holdturneringsreglement-for-badminton-i-Danmark-051023.pdf), [DH-reglement 2026](https://badminton.dk/wp-content/uploads/2026/02/Holdturneringsreglement-for-badminton-i-Danmark-DH-reglementet-2026-02-25.pdf)). Kilderne bekræfter reglerne, men indeholder ikke en maskinlæsbar historisk mapping fra alle rå `division_name_raw`/`page_title_raw`-tokens til ét niveau. En komplet mapping skal derfor være afledt og evidensmærket, ikke antaget.
+
+**3. Empirisk op-/nedrykningstest.** Der er 455 GSB-koblede holdrækker med mindst én kamp; 142 er senior/veteran (`age_group_id` 1 eller 9). I de 142 rå rækker indeholder 16 eksplicit oprykning/nedrykning og 13 kvalifikation. Et manuelt læsbart udsnit af GSB's førstehold viser Danmarksserien-rækker i 2010–2015, men også flere rækker i samme sæson (fx hovedpulje plus nedrykning/kvalifikation) og skiftende/unnumererede holdnavne. Det viser at bevægelsesmarkører kan bruges som evidens, men ikke at et råt holdnavn alene er en stabil tværsæson-identitet. Ingen usikker kobling er automatisk godkendt.
+
+**4. Foreslået model (ikke bygget).** Behold rådata uændret. Tilføj senere en afledt `league_level_assignments` med sæson, alder, region, pulje, normaliseret niveau/holdtype, confidence, evidencetype og kildehenvisning; en separat `team_identity_links` med metode/confidence/konfliktflag; og en afledt rangvisning der sorterer på dokumenteret niveau, derefter pulje/region og derefter kampresultat/sætdifference. Vis altid datadækning og usikkerhed. Kampdata og fortolkning holdes adskilt, så regler kan forbedres uden ny indsamling.
+
+Konklusionen er et dokumenteret heterogent rålandskab med en bekræftet, men ikke fuldt maskinlæsbar officiel seniorstruktur. Opgave 084 stopper her som aftalt; der er ikke bygget en rangeringsalgoritme eller skrevet til nogen database.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+Analyse gennemført read-only på `liga-landskab.db`, `gsb-statistik-normalized.db` og `rangliste-historik.db` (sidstnævnte blev kun kontrolleret for tilgængelighed). Resultaterne ligger i `statistik/results/084-liga-landskab-rangering.md` og `.json`; scriptet er `statistik/scripts/084-analyse-liga-landskab.mjs`.
+
+- 18.546 puljer; 3.393 distinkte division-navne; 3.438 distinkte gruppe-navne; 1.337 distinkte sidetitler.
+- 455 GSB-holdrækker med kampe; 142 senior/veteran-rækker; 16 med oprykning/nedrykning-token; 13 med kvalifikation-token.
+- Officielle kilder bekræfter overordnet seniorhierarki og bevægelsesregler, men ikke en komplet historisk tokenmapping.
+- Databasekontrol: `gsb-statistik-normalized.db` SHA-256 før/efter analyse `49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E` / samme hash efter; ingen SQL-skrivning eller nye tabeller. Den eksisterende untracked backup `statistik/results/050-standings-standings-backup.sql` er ikke rørt.
+- Kontrol: outputtet er efterprøvet med samme script efter rettelse af pulje/regions-joinet; puljetallet er 18.546, ikke det tidligere join-multiplicerede mellemresultat 59.127.
