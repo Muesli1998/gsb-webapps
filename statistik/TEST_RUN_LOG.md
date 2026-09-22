@@ -673,3 +673,9 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
 - GSB-udsigt: 455 holdrækker med kampe; 142 senior/veteran; 16 med oprykning/nedrykning-token og 13 med kvalifikation-token.
 - Officielle reglementer bekræfter overordnet seniorhierarki og bevægelsesregler, men ikke en komplet historisk tokenmapping. Foreslået afledt model er dokumenteret, ikke bygget.
 - Kontrol: puljetallet blev efterprøvet efter join-korrektion (18.546; tidligere 59.127 var et join-multipliceret mellemresultat). `gsb-statistik-normalized.db` SHA-256 efter kørsel: `49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E`.
+
+## 2026-09-22 — opgave 085 display-order fra gemte indeks-svar
+- Read-only parser af 16.269 gemte `standing_indexes.raw_response`: 59.127 puljehenvisninger, 18.546 unikke puljer, 18.546/18.546 match til `league_groups`, 0 mangler.
+- HTML-dokumentordenen kan genparses, men 7.161 puljer har flere observerede ordrer, fordi `league_groups`-nøglen mangler `region_id`; ingen `display_order`-kolonne blev derfor skrevet.
+- 077-sammenligning: 343/343 råtekst-match; 320/343 entydig order, 23 tvetydige.
+- Ingen API-kald og ingen databaseændringer. Hash af `gsb-statistik-normalized.db` var identisk før/efter.

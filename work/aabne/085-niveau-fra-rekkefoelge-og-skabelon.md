@@ -105,8 +105,28 @@ usikkert/uafklaret i stedet for at antage et konsistent mønster — samme princ
 
 ### Spørgsmål
 
-(Udfyldes af den der løser opgaven. Christoffer svarer her i filen.)
+#### Svar — analyse udført 2026-09-22
+
+**1. Genparsing af gemte svar.** `standing_indexes.raw_response` indeholder den oprindelige HTML-struktur med `divisionrow`/`grouprow`, `h3`-tekster og `ShowStanding('2', season, leagueGroupID, ...)`-links i dokumentorden. Scriptet `statistik/scripts/085-analyse-display-order.mjs` genparsede alle 16.269 gemte indeks-svar uden netværkskald: 59.127 puljehenvisninger blev fundet, 18.546 unikke puljer matchede `league_groups`, og 0 puljer manglede i hver retning.
+
+Der blev **ikke** tilføjet en `display_order`-kolonne til `league_groups`. 7.161 af de 18.546 puljer har mere end én observeret rækkefølge, fordi samme `(season_id, age_group_id, league_group_id)` genbruges i flere indeks-svar med forskellig region-/listekontekst, mens `league_groups` ikke har `region_id` i sin nøgle. En enkelt kolonne ville derfor kassere dokumenteret kontekst. Rækkefølgen kan udledes pålideligt pr. konkret indeks-svar, men ikke lagres entydigt i den nuværende tabel.
+
+**2. Konkrete eksempler.** De gemte 2026-svar viser:
+
+- BADDAN SEN (region 1): Badmintonligaen → 1. division → 2. division → 3. division → Danmarksserien, ordre 1–5.
+- BADKBH SEN (region 8): Københavnsserien først, derefter playoff/spilletidssektioner, 1.–3. Serie og 31.–33. Serie i den faktiske HTML-orden.
+- BADKBH U15 (region 8): U15 (4+3) øverst, derefter 2+2, 4-spiller-rækker, pigerækker og UGE38-blokke. Det er en stabil dokumentorden i dette svar, men ikke en global numerisk skala.
+
+**3. Sammenligning med opgave 077.** 077's 343 rækker med `direkte tekstindikator til stede` er alle genfundet i indeks-svarene (**343/343 = 100 %**), og den normaliserede rå rækketekst stemmer konservativt med indeksdivisionen for **343/343 = 100 %**. Display-order er entydig for **320/343 = 93,3 %**; 23 rækker er tvetydige af samme manglende-region-årsag. Det er en reproducerbarhed/raw-text-match-rate, ikke et bevis for en universel ungdomsrangskala.
+
+**4. Joinbart forslag (ikke bygget).** Opret senere `league_level_signals` med primærnøgle `(season_id, age_group_id, region_id, league_group_id)` og felterne `display_order`, `derived_level`, `confidence`, `evidence_type` og `source_ref`. `display_order` gemmes fra den konkrete indekskontekst; `derived_level` udfyldes kun ved dokumenteret template-/reglement-match. Det bevarer regionale forskelle og kan JOINES direkte til `league_groups`, `league_group_teams` og `league_matches`.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+Opgaven er gennemført som read-only analyse. Rapportfiler: `statistik/results/085-display-order-analysis.md` og `.json`; script: `statistik/scripts/085-analyse-display-order.mjs`.
+
+- 16.269 indeks-svar; 59.127 parsede puljehenvisninger; 18.546 unikke puljer; 18.546/18.546 matchet til `league_groups`; 0 mangler.
+- 7.161/18.546 puljer havde konfliktende display_order-værdier. Derfor ingen databaseændring og ingen `display_order`-kolonne i denne opgave.
+- 077-match: 343/343 indekseret, 343/343 råtekst-match, 320/343 entydig display_order, 23 tvetydige.
+- `gsb-statistik-normalized.db` SHA-256 før/efter: `49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E` / samme hash efter.
+- Ingen nye API-kald; ingen skrivning til nogen database. Den konkrete joinbare tabel er kun foreslået, ikke bygget.
