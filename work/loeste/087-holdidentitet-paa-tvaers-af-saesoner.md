@@ -169,6 +169,59 @@ projektet.
 - Ingen nye API-kald; beskyttede mapper og databaser er urørte.
 - Begrænsning: Metode A er en empirisk top-down-kontinuitetsmodel og bruger ikke et hårdt reglementstal. Metode B opfinder ingen aliaser; Metode C er kun et signal, ikke automatisk identitetsbevis.
 
+## Opfølgning — eksplicit algoritme for en RIGTIG Metode A-kaskade (runde 3)
+
+Den kørte Metode A fandt kun enkelt-hop-spor (43, med overlap, ikke tolkbare som unikke kæder) — den
+oprindelige, prosa-beskrevne idé om en fuld, tvunget kaskade top-down er reelt ALDRIG blevet implementeret
+endnu. Det er sandsynligvis her den største resterende gevinst ligger. Her er den skrevet som en
+eksplicit, trin-for-trin algoritme i stedet for prosa, for at undgå fortolkningsrum:
+
+```
+for hvert par af på-hinanden-følgende sæsoner (S, S+1), øverste niveau (Ligaen) og nedad:
+
+  niveau = Ligaen
+  kendte_identiteter[niveau][S] = { alle hold i niveau, sæson S }  # fuld liste, ikke kun kandidater
+
+  while niveau har et niveau nedenunder:
+    naeste_niveau = niveau + 1  # fx 1. division, begge puljer under ét
+
+    # 1. Find hvem der IKKE er i "niveau" i sæson S+1, blandt dem der VAR der i sæson S
+    forsvundne = kendte_identiteter[niveau][S] - alle_hold[niveau][S+1]
+
+    # 2. For hvert forsvundet hold: søg det i naeste_niveau, sæson S+1 (canonicaliseret navn,
+    #    hele naeste_niveau, ikke en bestemt pulje)
+    for hold in forsvundne:
+      kandidater = find(hold.klub_canonical, naeste_niveau, S+1)
+      if len(kandidater) == 1:
+        match(hold -> kandidater[0], sikkerhed="høj", metode="A-kaskade", niveau_par=(niveau,naeste_niveau))
+      elif len(kandidater) > 1:
+        # flertydigt — hvilket af klubbens X hold i naeste_niveau er DET rigtige?
+        # brug holdnummer-heuristik (Metode C) som tie-breaker, ellers marker uafklaret+flertydig
+        ...
+
+    # 3. Nu er naeste_niveau, sæson S+1's identiteter delvist kendt (dem der kom fra niveau ovenover).
+    #    Resten af naeste_niveau, sæson S+1 er enten (a) hold der var der i forvejen i sæson S
+    #    (identificeres direkte, samme niveau, canonicaliseret navn) eller (b) hold der er nye/kom
+    #    nedefra (løses når kaskaden når HERTIL i næste iteration, fra niveauet under).
+    kendte_identiteter[naeste_niveau][S] = alle_hold[naeste_niveau][S]
+    niveau = naeste_niveau
+
+  # gentag heltal nedad indtil Danmarksserien ↔ regionale lokalserier
+```
+
+**Krav til rapporteringen af denne kørsel:**
+1. Rapportér ANTAL UNIKKE KÆDER (ikke enkelt-hop-spor) — en kæde er en fuld, sammenhængende sti for ét
+   hold gennem så mange niveauer/sæsoner som den kan følges, ikke ét tal pr. niveau-par.
+2. Rapportér niveau-for-niveau hvor kaskaden reelt lykkes vs. hvor den løber tør (fx "successrate 80% fra
+   Ligaen→1.div, men kun 20% fra 3.div→Danmarksserien fordi der er langt flere klubber/mere navnestøj på
+   det niveau").
+3. Rapportér antal flertydige tilfælde (>1 kandidat i næste_niveau) og hvordan de blev håndteret.
+4. Sammenlign SLUTRESULTATET (efter fuld kaskade) med Metode B/C og det udvidede søgeresultat fra runde 2
+   (68 nye spor, 1.285 stadig uafklarede) — hvor mange af de 1.285 løser den fulde kaskade?
+
+Hvis den fulde kaskade STADIG kun finder få hundrede eller færre, er det et ærligt, endeligt resultat —
+ikke noget der skal presses. Men algoritmen skal være afprøvet i sin fulde, tiltænkte form først.
+
 ## Resultatnote
 
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
