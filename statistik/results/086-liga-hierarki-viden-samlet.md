@@ -112,3 +112,7 @@ Tre uafhængige metoder blev kørt på 1.353 `new_or_returning`-rækker fra 086e
 `work/loeste/085-niveau-fra-rekkefoelge-og-skabelon.md`, `086a-fundament-rekkefoelge-spilleform-klubregister.md`,
 `086b-oprykning-vestoest-regler-hypoteser.md`, `086d-oprykning-og-regler-genbesoeg.md`,
 `086e-regler-dybde-og-fuld-revision.md` (+ tilhørende `.json`-rapporter i `statistik/results/`).
+
+### Metodekontrol efter 087-gennemgang (2026-09-23)
+
+Den første 087-kørsel var ikke en fuld tvungen kaskade: Metode A lavede kun direkte lavere-niveau-opslag. De 1.310 "ingen spor" var derfor defineret relativt til niveauerne under kandidatens aktuelle niveau, ikke hele hierarkiet. En efterfølgende canonicaliseret søgning i hele foregående sæsons seniorhierarki fandt 68 ekstra spor. 087-resultatet skal derfor læses som et dokumenteret begrænset matchforsøg, ikke som en endelig forklaring på 97 % af populationen. Fredningsreglen i 2026 §26 stk. 3 er dokumenteret, men er specifik og blev ikke brugt til automatisk identifikation.

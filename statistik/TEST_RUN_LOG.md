@@ -690,3 +690,8 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
 - Tre read-only holdidentitetsmetoder kørt på 1.353 unresolved-rækker: A=43, B=6, C=8; 1.310 uden metodefund.
 - Kombinationsresultat: 37 A-only, 6 A+B, 0 alle tre. 086e's 1.022 kandidater genkørt og gemt rækkevis i 087-JSON.
 - Ingen databaseændringer eller API-kald; normalized DB-hash uændret.
+
+## 2026-09-23 — opgave 087 metodekontrol
+- Afklaret: første Metode A var direkte lavere-niveau-opslag, ikke fuld unik kaskade; 43 spor fordelt i JSON efter niveau.
+- Oprindelige 1.310 "ingen spor" var scope-begrænsede. Hele foregående seniorhierarki + canonical navn fandt 68 ekstra spor; tallet skal ikke læses som 97 % globalt uforklaret.
+- Fredningsregel fundet i DH-reglement 2026 §26 stk. 3; specifik, ikke anvendt automatisk.

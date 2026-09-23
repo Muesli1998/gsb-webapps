@@ -173,3 +173,11 @@ projektet.
 
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
 
+
+## Opfølgende spørgsmål — metodekontrol (2026-09-23)
+
+1. **Metode A:** Første version kørte ikke en fuld tvungen unik kaskade. Den lavede kun direkte lavere-niveau-opslag. De 43 fund er derfor ikke dokumentation for at Liga→1. division→2. division→3. division→Danmarksserien blev gennemløbet som en sikker kaskade; `cascadeByLevel` i JSON viser præcis hvilke direkte spor der blev fundet.
+2. **"Intet spor":** De 1.310 blev først søgt i niveauerne under den aktuelle kandidat. En udvidet søgning i hele foregående sæsons seniorhierarki med canonicaliserede navne fandt 68 yderligere spor. Den oprindelige 97 %-formulering var derfor for bred; 1.285 har stadig intet canonical match i hele hierarkiet, med overlap til de øvrige metodefund.
+3. **Fredning:** Ja, 2026 §26 stk. 3 siger: "Hvis klubbens oprindelige hold i en række skulle være oprykningsberettiget fra den netop afviklede turnering, annulleres en eventuel nedrykning for klubbens højere liggende hold, og begge hold fortsætter således i deres respektive rækker i den følgende turnering." Det er en specifik klub-/oprykningssituation, ikke en generel tilbagetrækningsregel, og den blev ikke brugt som automatisk identitetsbevis.
+
+Resultatrapporten og det levende liga-hierarki-dokument er opdateret med denne afgrænsning.
