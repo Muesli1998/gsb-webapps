@@ -136,6 +136,48 @@ præcis hvad der er kendt for hvilket år/niveau.
 
 (Udfyldes af den der løser opgaven. Christoffer svarer her i filen.)
 
+
+## Spørgsmål — udført analyse (2026-09-23)
+
+### Mål 1 — regelkilder og år
+
+Der blev ikke foretaget nye API-kald. De gemte PDF-kilder blev gennemgået med direkte tekstudtræk. De centrale, ordrette fund er:
+
+- **2022-reglementet, §26:** teksten angiver, at der fra 2023/24 kan være to hold fra samme klub i 3. division og Danmarksserien, mens der højst kan være fem hold fra samme klub i DH-stigen; hold fra samme klub skal så vidt muligt fordeles i forskellige puljer, og hvis de alligevel havner sammen, mødes de i første runde. Samme paragraf beskriver tvangsnedrykning, hvis klubbegrænsningen ellers overskrides.
+- **2024-reglementet, §26:** gentager undtagelsen for to hold i 3. division/Danmarksserien, maksimum fem DH-hold, puljeseparation/første-runde-opgør, overgang af oprykningsplads til bedst placerede kvalificerede hold når klubben allerede er repræsenteret, samt tvangsnedrykning.
+- **2026-reglementet, §26:** den ordrette regeltekst indeholder maksimum fem DH-hold, puljeseparation, første-runde-opgør og tvangsnedrykning. §28 angiver, at hvis et hold ikke kan/vil deltage og programmet ikke er udsendt, går pladsen til bedst placerede ikke-kvalificerede hold fra samme pulje; efter programudsendelse håndteres det som w.o. §5 siger eksplicit, at regionerne selv fastsætter regler for deres lokale rækker.
+
+Kilder: 2022 <https://badminton.dk/wp-content/uploads/2022/12/Holdturneringsreglement-for-badminton-i-Danmark-opdateret-120822.pdf>, 2024 <https://badminton.dk/wp-content/uploads/2024/08/2024-08-14-Holdturneringsreglement-for-badminton-i-Danmark-010724-Marked.pdf>, 2025 <https://badminton.dk/wp-content/uploads/2025/03/2025-03-03-Holdturneringsreglement-for-badminton-i-Danmark.pdf>, 2026 <https://badminton.dk/wp-content/uploads/2026/07/Holdturneringsreglement-for-badminton-i-Danmark-DH-reglementet-2026-07-01-endeligt-med-bilag-3-1.pdf>. Regionale kilder: København <https://www.badmintonkoebenhavn.dk/uploads/file/97/Turneringsreglement_for_Badminton_K%C3%B8benhavns_holdturnering_2023-2024__version_2023-1_.pdf>, Sjælland <https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=97855>, Fyn <https://www.holdturneringfyn.dk/regler>.
+
+2025-PDF'en er registreret som kilde for året, men §26-teksten blev ikke særudtrukket i denne kørsel; derfor er år-for-år-tabellen i rapporten eksplicit markeret med denne begrænsning. De regionale kilder dokumenterer, at lokalserieregler skal behandles separat; der er ikke antaget én fælles regional regel.
+
+### Mål 2 — empirisk oprykning/nedrykning
+
+Scriptet `statistik/scripts/086d-oprykning-og-regler-genbesoeg.mjs` byggede 691 senior-puljestillinger fra gemte `league_matches.team_score_raw`-resultater (sejre, nederlag, score difference). Det fandt 601 top-plads kandidater og 421 bund-plads kandidater. Ved opslag i hele næste niveau (aldrig fast puljenummer) fandtes klubben i næste sæson i hhv. 122/601 oprykningskandidat-tilfælde og 100/421 nedrykningskandidat-tilfælde. Dette er kontinuitetsevidens, ikke et bevis på officiel oprykning/nedrykning, fordi kvalifikation, klublofter og eventuelle slutspil ikke er modelleret fuldt.
+
+### Mål 3 — Vest/Øst
+
+Primær nøgle var klubbens historiske lokalserie-region fra gemte `league_groups`/`standing_indexes`; `club_registry.region_id` blev ikke brugt. De 691 seniorgrupper fordelte sig således:
+
+| Niveau | Puljer | Overvejende øst | Overvejende vest | Blandede | Ukendte |
+|---|---:|---:|---:|---:|---:|
+| Badmintonligaen | 90 | 44 | 8 | 25 | 13 |
+| 1. division | 58 | 38 | 11 | 9 | 0 |
+| 2. division | 89 | 46 | 24 | 19 | 0 |
+| 3. division | 184 | 83 | 82 | 18 | 1 |
+| Danmarksserien | 270 | 129 | 133 | 7 | 1 |
+
+I alt: 340 overvejende østlige, 258 overvejende vestlige, 78 blandede og 15 ukendte grupper. `BADFYN`, `BADMIDJ`, `BADNDRJ` og `BADSDRJ` blev behandlet som vestlige etiketter, fordi de er de gemte officielle region-short-names; denne analyse fandt ikke et særskilt modbevis for Fyn/Vestjylland. Blandede og ukendte grupper er rapporteret som undtagelser og bruges ikke som binært bevis.
+
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+- Script: `statistik/scripts/086d-oprykning-og-regler-genbesoeg.mjs`.
+- Rapporter: `statistik/results/086d-oprykning-og-regler-genbesoeg.md` og `.json`.
+- `gsb-statistik-normalized.db` SHA-256 før/efter: `49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E` (uændret).
+- `rangliste-historik.db`, `apps/netlify-prod/`, `kampsystem/` og `klubstatistik-preview/` blev ikke ændret; ingen nye API-kald blev foretaget.
+- Begrænsning: 2025-reglementet er fundet og registreret, men dets §26 blev ikke særudtrukket ordret i denne kørsel; 086d bør derfor ikke bruges som endelig år-for-år-verifikation af netop 2025 uden et særskilt teksttjek.
+
+Direkte ordret citat fra 2026-PDF'en, §26 stk. 1 (side 11-12):
+> "Der kan kun deltage ét hold fra hver klub i hver division, kvalifikations- og nedrykningsspil, dog med undtagelse af 3. division, Danmarksserien, kvalifikation til 2. division, nedrykningsspillet fra 3. division, kvalifikation til 3. division og nedrykningsspillet fra Danmarksserien, hvor hver klub kan deltage med to hold. En klub kan maksimalt deltage med 5 hold i DH-turneringen."
+> "Hold fra samme klub skal så vidt muligt ikke placeres i samme pulje. Skulle 2 hold fra samme klub komme i samme pulje/slutspilspulje, skal disse 2 hold mødes i første runde af grundspillet/slutspillet ..."
+> "Har en klub kvalificeret mere end det maksimalt fastsatte antal hold ... nedrykkes det af klubbens hold, der er lavest placeret i slutspillet ..."

@@ -679,3 +679,8 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
 - HTML-dokumentordenen kan genparses, men 7.161 puljer har flere observerede ordrer, fordi `league_groups`-nøglen mangler `region_id`; ingen `display_order`-kolonne blev derfor skrevet.
 - 077-sammenligning: 343/343 råtekst-match; 320/343 entydig order, 23 tvetydige.
 - Ingen API-kald og ingen databaseændringer. Hash af `gsb-statistik-normalized.db` var identisk før/efter.
+
+## 2026-09-23 — opgave 086d
+- Read-only analyse af 691 seniorpuljer i liga-landskab.db: 601 topkandidater (122 fund i næste niveau) og 421 bundkandidater (100 fund i næste lavere niveau), søgt på tværs af hele næste niveau.
+- Vest/Øst via lokalseriehistorik: 340 østlige, 258 vestlige, 78 blandede og 15 ukendte puljer. Ingen databaser blev ændret og ingen nye API-kald blev foretaget.
+- Reglementsfund dokumenteret med PDF-kilder 2022, 2024, 2025 og 2026; 2025 §26 er markeret som ikke særudtrukket i denne kørsel.
