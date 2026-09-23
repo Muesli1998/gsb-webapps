@@ -116,3 +116,7 @@ Tre uafhængige metoder blev kørt på 1.353 `new_or_returning`-rækker fra 086e
 ### Metodekontrol efter 087-gennemgang (2026-09-23)
 
 Den første 087-kørsel var ikke en fuld tvungen kaskade: Metode A lavede kun direkte lavere-niveau-opslag. De 1.310 "ingen spor" var derfor defineret relativt til niveauerne under kandidatens aktuelle niveau, ikke hele hierarkiet. En efterfølgende canonicaliseret søgning i hele foregående sæsons seniorhierarki fandt 68 ekstra spor. 087-resultatet skal derfor læses som et dokumenteret begrænset matchforsøg, ikke som en endelig forklaring på 97 % af populationen. Fredningsreglen i 2026 §26 stk. 3 er dokumenteret, men er specifik og blev ikke brugt til automatisk identifikation.
+
+### Runde 3: faktisk kaskadekørsel i opgave 087 (2026-09-23)
+
+Den fulde top-down-model blev nu kørt på deduplikerede seniorholdnoder. Der var 206 Liga-startpunkter, 34 unikke kæder med mindst én tvungen nedadgående overgang og 0 kæder, der nåede entydigt til Danmarksserien eller regional lokalserie. Tvungen nedadgående succes pr. niveaupar var: Liga→1. division 11/206, 1.→2. division 17/241, 2.→3. division 30/387, 3.→Danmarksserien 50/763 og Danmarksserien→regional lokalserie 68/1.091. Kaskaden ramte 4 af de 1.285 runde-2-rækker uden hele-hierarki-canonical match; resultatet er et overlapstal, ikke fuld identitetsverifikation. Ingen database blev ændret.

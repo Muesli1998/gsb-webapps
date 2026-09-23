@@ -695,3 +695,9 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
 - Afklaret: første Metode A var direkte lavere-niveau-opslag, ikke fuld unik kaskade; 43 spor fordelt i JSON efter niveau.
 - Oprindelige 1.310 "ingen spor" var scope-begrænsede. Hele foregående seniorhierarki + canonical navn fandt 68 ekstra spor; tallet skal ikke læses som 97 % globalt uforklaret.
 - Fredningsregel fundet i DH-reglement 2026 §26 stk. 3; specifik, ikke anvendt automatisk.
+
+## 2026-09-23 — opgave 087 runde 3
+- Fuld top-down Metode A-kaskade kørt read-only på deduplikerede seniorholdnoder.
+- Niveaupar: Liga→1. div 11 tvungne/206 forsøg; 1.→2. div 17/241; 2.→3. div 30/387; 3. div→Danmarksserien 50/763; Danmarksserien→regional lokalserie 68/1.091.
+- 206 Liga-startpunkter, 34 unikke kæder med mindst én tvungen nedadgående overgang, 0 kæder helt til Danmarksserien/lokalserie, 0 flertydige efter deduplikering. 4 af runde-2's 1.285 rækker blev ramt på samme sæson/niveau/canonical klub.
+- Ingen databaseændringer og ingen nye API-kald.

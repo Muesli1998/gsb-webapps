@@ -52,3 +52,19 @@ De 1.310 blev oprindeligt klassificeret efter manglende spor i niveauerne under 
 ### 3. Fredningsregel
 
 **Ja, der findes en beslægtet eksplicit fredningsregel.** I 2026-DH-reglementets §26 stk. 3 står: "Hvis klubbens oprindelige hold i en række skulle være oprykningsberettiget fra den netop afviklede turnering, annulleres en eventuel nedrykning for klubbens højere liggende hold, og begge hold fortsætter således i deres respektive rækker i den følgende turnering." Den er derfor reel, men den er ikke det samme som en generel regel om at alle nedrykningskandidater fredes ved et andet holds tilbagetrækning. Den er ikke brugt til at tvinge nogen identifikation i denne analyse.
+
+## Runde 3 — fuld Metode A-kaskade
+
+Runde 3 byggede den eksplicitte top-down-følgealgoritme på de gemte seniorhold. Teamnoder blev deduplikeret på sæson + niveau + canonical klubnavn + holdnummer, så samme hold via flere puljesider ikke blev talt flere gange. Der blev først søgt entydigt på samme niveau i næste sæson; kun hvis det ikke gav et match, blev der søgt entydigt ét niveau ned. Flertydige kandidater blev ikke tvunget.
+
+| Niveaupar | Forsøg | Samme niveau | Tvang nedad | Flertydige | Intet entydigt match |
+|---|---:|---:|---:|---:|---:|
+| Ligaen → 1. division | 206 | 138 | 11 | 0 | 57 |
+| 1. division → 2. division | 241 | 121 | 17 | 0 | 103 |
+| 2. division → 3. division | 387 | 156 | 30 | 0 | 201 |
+| 3. division → Danmarksserien | 763 | 285 | 50 | 0 | 428 |
+| Danmarksserien → regional lokalserie | 1.091 | 483 | 68 | 0 | 540 |
+
+Kørslens 206 Liga-startpunkter gav **34 unikke kæder med mindst én tvungen nedadgående overgang**. Ingen kæde nåede entydigt helt til Danmarksserien eller regional lokalserie. Der var 0 flertydige overgange efter deduplikering af teamnoderne. Sammenholdt med de 1.285 runde-2-rækker uden hele-hierarki-canonical match ramte kaskaden **4** rækker på samme sæson, niveau og canonicaliserede klub. Det er et overlapstal, ikke et bevis for fuld identitet.
+
+Den fulde kørsel bekræfter derfor, at Metode A kan bygges og køres gennem alle niveaupar, men at den gemte navne-/holdstruktur kun giver få sammenhængende kæder. De fulde kæder og overgangstællinger ligger i `statistik/results/087-round3-cascade.json` og den reproducerbare kode i `statistik/scripts/087-round3-cascade.mjs`.

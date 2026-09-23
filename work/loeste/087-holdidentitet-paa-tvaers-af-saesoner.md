@@ -234,3 +234,24 @@ ikke noget der skal presses. Men algoritmen skal være afprøvet i sin fulde, ti
 3. **Fredning:** Ja, 2026 §26 stk. 3 siger: "Hvis klubbens oprindelige hold i en række skulle være oprykningsberettiget fra den netop afviklede turnering, annulleres en eventuel nedrykning for klubbens højere liggende hold, og begge hold fortsætter således i deres respektive rækker i den følgende turnering." Det er en specifik klub-/oprykningssituation, ikke en generel tilbagetrækningsregel, og den blev ikke brugt som automatisk identitetsbevis.
 
 Resultatrapporten og det levende liga-hierarki-dokument er opdateret med denne afgrænsning.
+
+## Spørgsmål — udført analyse runde 3 (2026-09-23)
+
+Den eksplicitte Metode A-kaskade er nu faktisk kørt. Teamnoder blev deduplikeret på sæson, niveau, canonical klubnavn og holdnummer. Der blev først brugt entydigt samme-niveau-match i næste sæson; ved intet samme-niveau-match blev ét niveau ned forsøgt. Flertydige kandidater blev ikke tvunget.
+
+| Niveaupar | Forsøg | Samme niveau | Tvang nedad | Flertydige | Intet entydigt match |
+|---|---:|---:|---:|---:|---:|
+| Ligaen → 1. division | 206 | 138 | 11 | 0 | 57 |
+| 1. division → 2. division | 241 | 121 | 17 | 0 | 103 |
+| 2. division → 3. division | 387 | 156 | 30 | 0 | 201 |
+| 3. division → Danmarksserien | 763 | 285 | 50 | 0 | 428 |
+| Danmarksserien → regional lokalserie | 1.091 | 483 | 68 | 0 | 540 |
+
+Der blev fundet 206 Liga-startpunkter, 34 unikke kæder med mindst én tvungen nedadgående overgang, 0 kæder der nåede entydigt til Danmarksserien/regional lokalserie og 0 flertydige overgange efter deduplikering. Kaskaden ramte 4 af runde 2's 1.285 rækker uden hele-hierarki-canonical match på samme sæson, niveau og canonicaliserede klub. Resultatet er et dokumenteret lavt matchtal, ikke en tvungen identitet.
+
+## Resultatnote — runde 3
+
+- Script: `statistik/scripts/087-round3-cascade.mjs`.
+- Rapporter: `statistik/results/087-round3-cascade.md` og `.json`.
+- Database/API: kun read-only database, 0 nye API-kald, 0 databaseændringer.
+- Konklusion: den fulde kaskade er afprøvet; 34 unikke tvungne kæder og 4 overlap med runde-2-populationen, men ingen fulde kæder til Danmarksserien/lokalserie.
