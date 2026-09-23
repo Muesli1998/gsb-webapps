@@ -26,33 +26,72 @@ Sandsynlige årsager, alle utestede indtil videre:
 - Reelt nye hold (klubben starter et hold op der ikke fandtes før) — disse SKAL forblive uafklarede, det
   er ikke en fejl, men en ægte "nyt hold"-hændelse.
 
+**Christoffers konkrete metodeforslag — "tvunget nedad fra toppen":** Badmintonligaen (topniveauet) har
+ingen Øst/Vest-splittelse og et lille, lukket hold-antal pr. sæson. Det gør den til et markant nemmere
+udgangspunkt end at forsøge at matche alle 1.022 kandidater på én gang: for Ligaen er søgerummet lille
+nok til at man kan lave en FULD liste af samtlige hold i Ligaen én sæson, se hvilke af dem der IKKE er i
+Ligaen næste sæson (kun ganske få nedrykkere pr. år, jf. reglementet), og dermed "tvinge" en sikker
+identifikation af hvor de er landet i 1. division (begge puljer). Når 1. divisions hold-identiteter
+dermed er kendte med høj sikkerhed, gentages samme øvelse ét niveau nedad (1. division → 2. division),
+og så videre nedad gennem hele stigen, til man til sidst når Danmarksserien ↔ regionernes lokalserier.
+Pointen: brug de SMÅ, lukkede niveauer øverst som en "anker" der forplanter sikkerhed nedad, i stedet for
+at forsøge at løse hele identitetsproblemet fladt på én gang. Dette skal testes som en selvstændig metode
+(Metode A nedenfor), ikke antages at virke — men er en lovende, konkret tilgang værd at prioritere højt.
+
+**Test flere metoder parallelt og sammenlign bagefter — eksplicit godkendt at bruge ekstra usage på
+dette.** I stedet for at vælge én metode på forhånd: byg 2-3 uafhængige metoder, kør dem hver for sig,
+og sammenlign resultaterne. Hvor metoderne er enige, er det stærkt bevis for korrekt identifikation.
+Hvor de er uenige eller kun én metode finder et match, marker det som lavere sikkerhed og vis det.
+
 ## Mål
 
-1. **Kvantificér årsagsfordelingen bag de 1.353 uafklarede identiteter.** Byg et udtræk (fra
-   `086e-regler-dybde-og-fuld-revision.json` og `liga-landskab.db`) der kategoriserer hver af de 1.353 i
-   grupper: (a) sandsynlig navnevariation af en kendt klub (samme klub, stavet forskelligt), (b) sandsynlig
+**Byg og kør mindst tre uafhængige identifikationsmetoder, sammenlign dem, brug enighed som signal om
+sikkerhed. Det er eksplicit godkendt at bruge god tid/usage på dette.**
+
+1. **Kvantificér årsagsfordelingen bag de 1.353 uafklarede identiteter (baseline, før metoderne bygges).**
+   Byg et udtræk (fra `086e-regler-dybde-og-fuld-revision.json` og `liga-landskab.db`) der kategoriserer
+   hver af de 1.353 i grupper: (a) sandsynlig navnevariation af en kendt klub, (b) sandsynlig
    holdnummer-forskydning inden for samme klub, (c) ingen spor af klubben i niveauet nedenunder overhovedet
    (reelt nyt hold, eller klubben findes slet ikke i forvejen i datasættet), (d) andet/uafklaret. Rapportér
    fordelingen med konkrete eksempler pr. kategori — ikke kun et samlet tal.
-2. **Byg en klubnavne-normaliserings-/alias-mekanisme for liga-data**, efter samme princip som
-   `netlify/lib/navne.js` (Unicode NFC, whitespace-collapse, case-fold, ingen diakritik-stripning, ukendt
-   navn → pass-through) — men anvendt på klubnavne i `league_matches`/`league_groups`, ikke spillernavne.
-   Byg den som en ny, klart afgrænset tabel/kolonne (fx `club_name_canonical` eller en alias-mappingtabel)
-   i `liga-landskab.db` — ikke en ændring af `club_registry`s rå data. Test den konkret mod GSB's egen
-   kendte historik (Chris kender GSB's faktiske holdhistorik i detaljer — brug det som facit/ground truth
-   før metoden generaliseres til hele datasættet).
-3. **Test en udvidet holdnummer-forskydningsregel** for senior: hvis klub X's "n. hold" ikke findes i en
-   sæson, men X's "(n+1). hold" fandtes sidste sæson og X's "n. hold" ikke findes i nogen pulje i indeværende
-   sæson — undersøg om det er et konkret, gentagne gange forekommende mønster (ikke kun en enkeltstående
-   antagelse) før det bruges til at "forbinde" hold på tværs af sæsoner. Rapportér hvor mange af de 1.353
+2. **Metode A — "tvunget nedad fra toppen" (Christoffers forslag, prioriteres højt).** Start ved
+   Badmintonligaen (lille, lukket hold-antal, ingen Øst/Vest-splittelse). For hver sæsonovergang: lav en
+   fuld liste af ALLE hold i Ligaen, identificér hvilke der IKKE er i Ligaen næste sæson, og "tving" en
+   sikker identifikation af hvor de lander i 1. division (begge puljer under ét, ikke pr. puljenummer —
+   reshuffling gælder stadig). Brug den nu kendte 1. divisions-identitet som anker og gentag øvelsen ét
+   niveau nedad ad gangen (1. div → 2. div → 3. div → Danmarksserien → regionale lokalserier).
+
+   **Vigtig korrektion (Christoffer):** reglementets kendte op-/nedrykningsantal pr. niveau er IKKE en
+   hård grænse — hold kan trække sig, hvilket ændrer det faktiske antal der reelt flytter niveau en given
+   sæson. Brug det forventede antal som en vejledende forventning, ikke en hård constraint der udelukker
+   matches. Undersøg desuden EMPIRISK (ikke antaget) om reglementet har en "fredningsregel": hvis et hold
+   trækker sig fra det niveau det skulle være rykket TIL, bliver en ellers-nedrykket kandidat fra niveauet
+   ovenover så "fredet" (dvs. forbliver på niveauet i stedet for at rykke ned), for at niveauet stadig
+   fyldes op korrekt? Led efter dette i reglement-citaterne fra 086e (og evt. flere paragraffer/år hvis
+   det ikke allerede er dækket) — dokumentér om reglen findes, og i så fald præcis hvordan den virker, før
+   den bruges som forklaring på et konkret, observeret tilfælde i data.
+3. **Metode B — klubnavne-normaliserings-/alias-mekanisme**, efter samme princip som `netlify/lib/navne.js`
+   (Unicode NFC, whitespace-collapse, case-fold, ingen diakritik-stripning, ukendt navn → pass-through) —
+   men anvendt på klubnavne i `league_matches`/`league_groups`, ikke spillernavne. Byg den som en ny, klart
+   afgrænset tabel/kolonne (fx `club_name_canonical` eller en alias-mappingtabel) i `liga-landskab.db` —
+   ikke en ændring af `club_registry`s rå data. Test den konkret mod GSB's egen kendte historik (Chris
+   kender GSB's faktiske holdhistorik i detaljer — brug det som facit/ground truth først).
+4. **Metode C — holdnummer-forskydningsregel.** Test om det er et konkret, gentagne gange forekommende
+   mønster (ikke en enkeltstående antagelse) at klub X's "n. hold" forsvinder mens "(n+1). hold" fandtes
+   sidste sæson og "n. hold" ikke findes nogen steder i indeværende sæson. Rapportér hvor mange af de 1.353
    dette forklarer, med konkrete eksempler.
-4. **Genkør 086e's op-/nedrykningsrevision med den forbedrede identitetsmodel** og rapportér den nye
-   match-rate (var 131/92 præcise/samme-klub-fund af 1.022 — hvor meget stiger det med bedre matching?).
-   Hvis det STADIG er lavt efter dette, er det et ægte, dokumenteret resultat — ikke noget der skal
-   presses højere kunstigt.
-5. **Dokumentér metoden og facit-status i `statistik/results/086-liga-hierarki-viden-samlet.md`** (det
-   levende referencedokument oprettet efter 086e) — opdater afsnit 6 med det faktiske resultat, ikke kun en
-   henvisning til denne opgave.
+5. **Sammenlign metode A, B og C direkte mod hinanden.** For hver af de 1.353 (og gerne også de allerede
+   "løste" 131+92 fra 086e, som en sanity check): hvilke metoder finder et match, og er de ENIGE om samme
+   match? Byg en oversigt: enige (alle/flere metoder finder samme match — høj sikkerhed), uenige (metoderne
+   finder forskellige matches — flag til manuel/Christoffer-vurdering), kun én metode finder noget (middel
+   sikkerhed), ingen metode finder noget (reelt uafklaret, eller reelt nyt hold).
+6. **Genkør 086e's op-/nedrykningsrevision med den kombinerede, sammenlignede identitetsmodel** og
+   rapportér den nye match-rate (var 131/92 præcise/samme-klub-fund af 1.022 — hvor meget stiger det?).
+   Hvis det STADIG er lavt efter dette, er det et ægte, dokumenteret resultat — ikke noget der skal presses
+   højere kunstigt.
+7. **Dokumentér metoden, sammenligningen og facit-status i `statistik/results/086-liga-hierarki-viden-samlet.md`**
+   (det levende referencedokument) — opdater afsnit 6 med det faktiske resultat, inkl. hvilken metode der
+   viste sig mest pålidelig og hvorfor.
 
 ## Kontekst
 
