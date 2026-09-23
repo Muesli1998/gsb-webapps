@@ -259,8 +259,13 @@ ikke hold_id → hold_id), adskilt fra Metode B's tekst-normalisering.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+Opgave 087 er afsluttet i fire runder. Baseline var 1.353 nye/tilbagevendende hold uden match i nabo-niveauet. De første tre uafhængige metoder — A (tvunget nedad), B (tekstlig klub-normalisering/alias) og C (holdnummerforskydning) — gav lave, men indbyrdes konsistente fund; de løste ikke den centrale identitetsflaskehals.
 
+Runde 3 byggede den fulde topstyrede Metode A-kaskade. Den fandt 34 unikke kæder med mindst én tvungen nedadgående overgang. Succesraten var kun 5–8 % på hvert niveaupar, og ingen kæde nåede entydigt til Danmarksserien/lokalserie. Det er et dokumenteret begrænset signal, ikke grundlag for at tvinge flere identiteter.
+
+Runde 4 viste, at navnerelationer skal være tids- og strukturafgrænsede. Vendsyssel Elite Badminton og Team Skælskør-Slagelse er holdfællesskaber/elitekonstruktioner, ikke globale aliaser for moderklubberne; Vendsyssel, Frederikshavn og Skagen forekommer desuden som adskilte, samtidige hold i data. Team Fyn er ifølge Christoffer dannet ved fusion af Nr. Broby og Langeskov, men også den relation kræver periode- og holdspecifik modellering frem for global aliasering af alle historiske moderklubhold.
+
+Det oprindelige næste skridt — at bygge en alias-tabel — er erstattet af den bredere undersøgelse i opgave 088a/088b/088c. Den skal først udnytte eksplicitte gruppenavne og rådata samt afklare klub-cap-reglers effekt på, hvilke placeringer der er relevante i kvalifikationskampe. Først derefter kan en relations-/aliasmodel bygges på et forsvarligt grundlag.
 
 ## Opfølgende spørgsmål — metodekontrol (2026-09-23)
 
