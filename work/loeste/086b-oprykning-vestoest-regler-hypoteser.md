@@ -161,3 +161,44 @@ samme person: dokumentér som uafklaret i stedet for at antage.
 ## Resultatnote
 
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+
+## Spørgsmål — udført analyse
+
+### Metode og værn
+
+Analysen brugte kun allerede gemte data i `statistik/data/liga-landskab.db`, `gsb-statistik-normalized.db` og `rangliste-historik.db` (ingen nye API-kald). `gsb-statistik-normalized.db` havde SHA-256 før/efter `49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E`; beskyttede stier var rene. Scriptet er `statistik/scripts/086b-oprykning-vestoest-regler-hypoteser.mjs`; tal og eksempler ligger i `statistik/results/086b-oprykning-vestoest-regler-hypoteser.md/.json`.
+
+### Mål 1 — regional seniortopkreds og Danmarksserien
+
+Der er 94 GSB-seniorrækker. En bred kandidat-søgning på samme normaliserede klub/holdnavn i på hinanden følgende sæsoner fandt 312 mulige overgange, bl.a. mellem lokale serier, kvalifikationsrækker, Danmarksserien og nedrykningsrækker. Populationen er for bred til at være et oprykningsbevis, fordi samme navn forekommer i flere samtidige puljer og holdnummeret ikke er en stabil nøgle. Ingen overgang er derfor markeret som bekræftet. 4-kvalifikationsmodellen er kompatibel med den citerede DH-regeltekst, men den gemte empiri alene dokumenterer ikke hvilke regionale topkredse der føder hvilken kvalifikationsgruppe.
+
+### Mål 2 — officielle regler
+
+Kildetabellen i resultatrapporten har en kilde eller et eksplicit “ikke fundet” pr. område. Badminton Danmarks reglementsindeks bekræfter en fælles DH-kilde for seniorstigen og en separat ungdomskilde. Den konkrete 3. division–Danmarksserien-overgang er allerede dokumenteret i repoets 084/086-kildegrundlag (§23 stk. 5, §24 stk. 3–4 og §28). Badminton København §§8–12, Badminton Sjælland §5/§8/Appendix 1 og Holdturnering Fyn §§12–13 giver regionale eksempler. De nævnte lofter på maks. 5 DH-hold og maks. 2 Danmarksseriehold blev ikke eksplicit fundet i de undersøgte offentlige tekster og står derfor som “ikke fundet”.
+
+### Mål 3 — Vest/Øst
+
+`club_registry.region_id` er NULL. Den afprøvede er en eksplicit postal heuristik (`<5000` øst, `>=5000` vest) efter eksakt normaliseret klubnavn. Den gav ingen helt øst-/vestklassificerede puljer: 3. division 44 blandede/142 ukendte, Danmarksserien 61/210, Badmintonligaen 0/93, 1. division 5/57 og 2. division 23/67 (blandet/ukendt). Resultatet er derfor “ikke bekræftet”; der bygges ingen Vest/Øst-forbindelse. Pulje 1–4/5–8-resultaterne og rå eksempler findes i JSON, men ukendte/mixede grupper bruges ikke som bevis.
+
+### Mål 4 — ungdom
+
+Ingen identisk normaliseret `division_name_raw`-tekst forekom på tværs af regioner i den afgrænsede søgning (0 kandidater). Det er ikke et bevis for, at ungdomsrækker ikke hænger sammen; det betyder kun, at der ikke er et sikkert råtekstsignal. Ungdomspuljer forbindes ikke automatisk.
+
+### Mål 5 — bogstav/pointnavngivning
+
+Rådata viser pointformat tidligst i sæson 2019 for age_group_id 2–5 og 18/21, mens bogstavformat fortsætter til senere sæsoner. Senior (1) har pointformat fra 2023. For øvrige aldersgrupper er pointformat ikke fundet. Der er altså ikke én global skiftedato; skiftet er aldersgruppe- og rækkeafhængigt.
+
+### Mål 6 — GSB-spillerforskydning
+
+Der er 80.928 kategori-spillerrækker fra GSB-kampe, 9.676 distinkte spiller-ID’er og 1.405 ID’er, der optræder i mere end én aldersgruppe i samme sæson. Det er et konkret ID-baseret signal om mulig aldersgruppe-overlap/forskydning, ikke årsagsbevis; navn-only links er ikke brugt. Eksempler og sæson/age-lister ligger i JSON.
+
+### Foreløbig konklusion
+
+Mål 1, 3 og 4 giver ikke tilstrækkeligt databevis til automatiske forbindelser. Mål 2 giver kildesteder og flere dokumenterede regionale regler, men ikke alle historiske overgangsparagraffer i én maskinlæsbar tabel. Mål 5 viser et gradvist/inkonsistent skifte. Mål 6 viser et målbart spiller-ID-signal, som kan bruges til en senere manuel/regelbaseret analyse.
+
+## Resultatnote
+
+- Script: `statistik/scripts/086b-oprykning-vestoest-regler-hypoteser.mjs`
+- Rapport: `statistik/results/086b-oprykning-vestoest-regler-hypoteser.md/.json`
+- Værn: normaliseret DB uændret; ingen nye API-kald; ingen skrivning til `liga-landskab.db`.
+- Kontroltal: 94 GSB-seniorrækker, 312 overgangskandidater, 0 ungdoms-råtekst-kandidater, 80.928 spillerrelationer, 9.676 spiller-ID’er, 1.405 multi-age/sæson-ID’er.

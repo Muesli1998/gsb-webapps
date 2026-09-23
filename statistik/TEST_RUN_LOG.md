@@ -686,3 +686,10 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
 - Klubregister: 51 SearchClubInfo-kald (33 regionfiltre/pagination), alle HTTP 200; 796 unikke klubrækker skrevet til separat `club_registry`. Endpointet leverer ikke home-region; `region_id` er derfor NULL.
 - Ingen GetLeagueStanding- eller Nembadminton-kald. Normalized-db hash var identisk før/efter.
 - Afklaring efterfølgende: 085's 59.127 var link-forekomster uden per-side nul-link-tæller; 086a's 2.896/13.373 er en side-dækningsmåling. De 13.373 er tomme indeks-skalder, ikke en anden HTML-regexvariant.
+
+### 2026-09-23 — opgave 086b
+- Read-only empirisk analyse gennemført på gemt liga-landskab, normaliseret statistik-DB og ranglistehistorik.
+- 94 GSB-seniorrækker og 312 brede overgangskandidater; ingen automatisk oprykningsbekræftelse.
+- Postal Vest/Øst-heuristik gav kun blandede/ukendte puljer; ingen forbindelser bygget.
+- 0 ungdomsråtekst-kandidater på tværs af regioner; ungdom forbindes ikke automatisk.
+- Pointformat tidligst 2019 for flere ungdomsaldre, senior 2023; 80.928 GSB-kategori-spillerrækker, 9.676 ID’er, 1.405 multi-age/sæson-ID’er.
