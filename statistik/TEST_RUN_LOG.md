@@ -679,3 +679,9 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
 - HTML-dokumentordenen kan genparses, men 7.161 puljer har flere observerede ordrer, fordi `league_groups`-nøglen mangler `region_id`; ingen `display_order`-kolonne blev derfor skrevet.
 - 077-sammenligning: 343/343 råtekst-match; 320/343 entydig order, 23 tvetydige.
 - Ingen API-kald og ingen databaseændringer. Hash af `gsb-statistik-normalized.db` var identisk før/efter.
+
+## 2026-09-23 — opgave 086a fundament
+- Siderækkefølge: 2.896/16.269 gemte indeks-sider rekonstrueret, 59.127 puljehenvisninger, 18.546 unikke puljer; 13.373 sider uden division-/puljelinks. Dækning: 25/33 region-id'er, 17 sæsoner og 17 aldersgrupper.
+- Spilleform-signatur: 17.293 puljer med kategoridata; 17.291 konsistente og 2 varierende; 263.053 kampe og 1.890.589 kategorirækker.
+- Klubregister: 51 SearchClubInfo-kald (33 regionfiltre/pagination), alle HTTP 200; 796 unikke klubrækker skrevet til separat `club_registry`. Endpointet leverer ikke home-region; `region_id` er derfor NULL.
+- Ingen GetLeagueStanding- eller Nembadminton-kald. Normalized-db hash var identisk før/efter.

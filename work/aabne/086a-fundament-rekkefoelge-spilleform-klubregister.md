@@ -86,8 +86,20 @@ inkonsistent inden for en pulje: dokumentér det som et fund, ikke en fejl der s
 
 ### Spørgsmål
 
-(Udfyldes af den der løser opgaven. Christoffer svarer her i filen.)
+#### Svar — analyse udført 2026-09-23
+
+**Mål 1 — siderækkefølge.** De gemte `standing_indexes.raw_response`-felter blev genparset uden `GetLeagueStanding`-kald. 2.896 af 16.269 indeks-sider havde parsebare divisions-/puljelinks; 13.373 havde ingen sådanne links (`no_division_or_group_links`). Der blev rekonstrueret 59.127 puljehenvisninger og 18.546 unikke puljer, alle 18.546 matchet til `league_groups`. Der var data med puljelinks for 25 af 33 region-id'er og alle 17 sæsoner/17 aldersgruppe-id'er i de rekonstruerede sider. 7.161 puljer havde flere observerede display-order-værdier, fordi samme pulje-nøgle forekommer i flere indekskontekster. Der blev derfor ikke skrevet en display_order-kolonne; den joinbare løsning skal have mindst region_id i nøglen.
+
+**Mål 2 — spilleform-signatur.** For 17.293 puljer med kategoridata blev 263.053 kampe og 1.890.589 kategorirækker analyseret. 17.291 puljer havde identisk multiset-signatur i alle kampe; 2 varierede. Variationerne er konkret dokumenteret for `2013|3|3128` og `2013|21|3128`: 20 kampe, hvor én signatur mangler 4. S/4. D sammenlignet med de øvrige kampe. Det er rapporteret som datavariation, ikke fortolket som en ny spilleform.
+
+**Mål 3 — klubregister.** `SearchClubInfo` blev kaldt 51 gange (33 regionfiltre med pagination), alle HTTP 200, 0 fejl. Svarene gav 796 unikke klubber med navn og postnummer. Endpointet returnerer ikke et home-region-felt, og samme klub (fx GSB) kom tilbage i flere regionfiltre (1, 2, 8, 24). Derfor er `region_id` gemt som NULL; lookup-filteret er ikke fejlagtigt behandlet som hjemmeregion. Tabellen `club_registry` er selvstændig og kan udvides i 086b, når en dokumenteret regionskilde findes.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+Opgave 086a er gennemført og dokumenteret i `statistik/results/086a-fundament.md`/.json; scriptet er `statistik/scripts/086a-fundament.mjs`.
+
+- Mål 1: 2.896/16.269 sider rekonstrueret; 25/33 regioner med puljelinks; 18.546/18.546 puljer matchet; 13.373 sider uden links.
+- Mål 2: 17.291 konsistente puljer, 2 varierende, 263.053 kampe og 1.890.589 kategorirækker.
+- Mål 3: 51 SearchClubInfo-kald, 51 HTTP 200, 796 klubrækker i `club_registry`, 0 home-region-værdier (endpointet leverer dem ikke).
+- `gsb-statistik-normalized.db` SHA-256 før/efter: `49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E` / samme hash efter.
+- Ingen GetLeagueStanding- eller Nembadminton-kald; eneste nye endpoint var SearchClubInfo. Ingen beskyttede stier ændret.
