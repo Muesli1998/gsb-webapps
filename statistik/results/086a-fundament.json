@@ -498,5 +498,31 @@
     "registry_rows_in_db": 796,
     "home_region_values": 0
   },
-  "note": "Mål 1 og 2 bruger kun allerede gemte rådata. Mål 3 bruger udelukkende SearchClubInfo; ingen GetLeagueStanding- eller Nembadminton-kald er foretaget. SearchClubInfo-svaret har ikke et home-region-felt; region_id gemmes derfor som NULL i stedet for at fejlmærke lookup-konteksten som hjemmeregion."
+  "note": "Mål 1 og 2 bruger kun allerede gemte rådata. Mål 3 bruger udelukkende SearchClubInfo; ingen GetLeagueStanding- eller Nembadminton-kald er foretaget. SearchClubInfo-svaret har ikke et home-region-felt; region_id gemmes derfor som NULL i stedet for at fejlmærke lookup-konteksten som hjemmeregion.",
+  "reconciliation": {
+    "reason": "085 counted all 16269 input rows and only reported extracted link occurrences; it did not count rows with zero links as failed pages. 086a explicitly counts per-page links. The 13373 rows are valid empty index shells (title plus ShowStanding(0) search link), not an HTML regex variant.",
+    "sample_empty_pages": [
+      {
+        "standing_index_id": 1,
+        "season_id": 2010,
+        "age_group_id": 2,
+        "region_id": 1,
+        "page_title": "BADDAN U09 2010/2011"
+      },
+      {
+        "standing_index_id": 2,
+        "season_id": 2010,
+        "age_group_id": 2,
+        "region_id": 4,
+        "page_title": "BADMIDJ U09 2010/2011"
+      },
+      {
+        "standing_index_id": 3,
+        "season_id": 2010,
+        "age_group_id": 2,
+        "region_id": 2,
+        "page_title": "DGI U09 2010/2011"
+      }
+    ]
+  }
 }

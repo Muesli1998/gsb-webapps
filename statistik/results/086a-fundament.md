@@ -9,6 +9,10 @@ Genereret: 2026-09-23T17:35:06.362Z
 - 59127 puljehenvisninger og 18546 unikke puljer; 7161 har konfliktende ordre, fordi samme pulje forekommer i flere indekskontekster.
 - Ikke-rekonstruerede årsager: {"no_division_or_group_links":13373}.
 
+### Afklaring af forskellen til opgave 085
+
+085 og 086a bruger samme rådata og samme grundidé for linkudtræk. Forskellen er optællingen: 085 talte alle 16.269 inputrækker og rapporterede kun de 59.127 udtrukne puljehenvisninger; det havde ingen tæller for inputrækker med nul links og kaldte derfor ikke 13.373 sider "ikke rekonstrueret". 086a tæller eksplicit links pr. side. De 13.373 er gyldige, tomme indeks-skalder med sidetitel og `ShowStanding('0', ...)`/"Søg andre rækker", men ingen divisionrow/grouprow. Eksempler er indeks 1 (BADDAN U09 2010/2011), 2 (BADMIDJ U09 2010/2011) og 3 (DGI U09 2010/2011). Det er altså ikke en regex-variant, og 085's 59.127 puljehenvisninger samt 18.546 unikke puljer er stadig de samme korrekte fund; 086a tilføjer den manglende side-dækningsmåling.
+
 ## Mål 2 — spilleform-signatur
 
 - 17293 puljer med kategoridata; 263053 kampe og 1890589 kategorirækker.

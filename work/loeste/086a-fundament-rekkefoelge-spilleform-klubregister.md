@@ -103,3 +103,7 @@ Opgave 086a er gennemført og dokumenteret i `statistik/results/086a-fundament.m
 - Mål 3: 51 SearchClubInfo-kald, 51 HTTP 200, 796 klubrækker i `club_registry`, 0 home-region-værdier (endpointet leverer dem ikke).
 - `gsb-statistik-normalized.db` SHA-256 før/efter: `49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E` / samme hash efter.
 - Ingen GetLeagueStanding- eller Nembadminton-kald; eneste nye endpoint var SearchClubInfo. Ingen beskyttede stier ændret.
+
+### Efterfølgende afklaring af 085/086a-tallene
+
+085's `indexRows: 16269` var inputmængden, mens `parsedIndexGroupOccurrences: 59127` kun var antallet af fundne links; 085 havde ingen per-side tæller for nul links. 086a tæller eksplicit sider med links og fandt derfor 2.896 med puljelinks og 13.373 tomme indeks-skalder. De tomme svar indeholder kun sidetitel og `ShowStanding('0', ...)`/"Søg andre rækker" (fx indeks 1 BADDAN U09 2010/2011, 2 BADMIDJ U09 og 3 DGI U09), ikke en alternativ HTML-struktur. Begge scripts finder de samme 59.127 links og 18.546 puljer; forskellen var en måledefinition, ikke en parserfejl.

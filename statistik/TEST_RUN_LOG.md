@@ -685,3 +685,4 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
 - Spilleform-signatur: 17.293 puljer med kategoridata; 17.291 konsistente og 2 varierende; 263.053 kampe og 1.890.589 kategorirækker.
 - Klubregister: 51 SearchClubInfo-kald (33 regionfiltre/pagination), alle HTTP 200; 796 unikke klubrækker skrevet til separat `club_registry`. Endpointet leverer ikke home-region; `region_id` er derfor NULL.
 - Ingen GetLeagueStanding- eller Nembadminton-kald. Normalized-db hash var identisk før/efter.
+- Afklaring efterfølgende: 085's 59.127 var link-forekomster uden per-side nul-link-tæller; 086a's 2.896/13.373 er en side-dækningsmåling. De 13.373 er tomme indeks-skalder, ikke en anden HTML-regexvariant.
