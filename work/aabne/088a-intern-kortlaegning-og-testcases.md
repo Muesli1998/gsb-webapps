@@ -128,8 +128,16 @@ Samme princip som resten af projektet.
 ### Spørgsmål
 
 (Udfyldes af den der løser opgaven. Christoffer svarer her i filen.)
+**Arbejdsnotat før afledt tabel bygges (2026-09-23):** Foreslået tabel er `group_type_katalog` med primærnøgle `(division_name_raw, group_name_raw)`, felterne `group_type`, `classification_basis` (regel/navneord eller `uklar`), `occurrence_count`, `first_season_id`, `last_season_id`, `distinct_region_count` og `generated_at`. Den indeholder kun afledt, genopbyggelig klassifikation; den ændrer ingen importerede råtabeller. Dækningsmatrix, rå-markeringer og cap-testcase skrives først til resultatrapport/JSON, fordi de er analyseresultater frem for stabile grundentiteter.
 
 ## Resultatnote
 
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`. Opdater desuden
 `statistik/results/086-liga-hierarki-viden-samlet.md` med det nye facit om gruppetyper og cap-filteret.)*
+
+### Arbejdsresultat — første interne gennemkørsel (2026-09-23)
+
+- **ID-jagt:** Et jævnt fordelt udsnit på 500 gemte indeks-/puljesider gav 1.409 `ShowStanding('3', ...)`-forekomster. De er `leagueGroupTeamID`, allerede lagret i `league_group_teams`, og er pulje-/sæsonlokale. Der var 0 `clubId`, `data-club-id`, `teamId` eller `data-team-id`-markører. Der er derfor endnu ikke fundet et stabilt tværsæson-klub- eller hold-ID i rå HTML.
+- **Gruppetype-katalog:** `group_type_katalog` er oprettet som dokumenteret ovenfor og indeholder 8.928 distinkte `(division_name_raw, group_name_raw)`-kombinationer for 18.546 puljer. 1.757 puljeforekomster (939 distinkte navnekombinationer) er `andet/ukendt`; de er ikke automatisk fortolket.
+- **Rå markeringer:** Scan af alle gemte indeks- og puljesider fandt 2.407 træf for `trukket`, `udgået`, `tvangsnedrykket`, `walkover` eller `W/O` på 1.729 sider; kontekstprøver ligger i resultatets JSON.
+- **Behov for konkret testcase-reference:** Kortet angiver hverken sæson eller pulje for Roskilde-sagen eller Gentofte-sagen. Den brede tekstsøgning giver mange kandidater, men kan ikke reproducere det kendte udfald uden at gætte. Christoffer bedes derfor angive sæson og mindst én pulje-/gruppenøgle eller den konkrete kamp/placering for hver testcase.

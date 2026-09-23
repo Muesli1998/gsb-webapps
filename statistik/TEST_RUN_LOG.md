@@ -701,3 +701,11 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
 - Niveaupar: Liga→1. div 11 tvungne/206 forsøg; 1.→2. div 17/241; 2.→3. div 30/387; 3. div→Danmarksserien 50/763; Danmarksserien→regional lokalserie 68/1.091.
 - 206 Liga-startpunkter, 34 unikke kæder med mindst én tvungen nedadgående overgang, 0 kæder helt til Danmarksserien/lokalserie, 0 flertydige efter deduplikering. 4 af runde-2's 1.285 rækker blev ramt på samme sæson/niveau/canonical klub.
 - Ingen databaseændringer og ingen nye API-kald.
+
+## 2026-09-23 — Opgave 088a, første interne gennemkørsel (ikke afsluttet)
+
+- Byggede og kørte `statistik/scripts/088a-intern-kortlaegning.mjs` mod allerede gemt data; ingen API-kald eller ekstern søgning.
+- Oprettede den genopbyggelige afledte tabel `group_type_katalog` i `liga-landskab.db`: 8.928 navnekombinationer / 18.546 puljeforekomster. 939 kombinationer er bevidst `andet/ukendt`.
+- ID-scan: ingen stabil klub-/hold-ID-markør fundet; kun allerede udtrukket, puljelokalt `leagueGroupTeamID`.
+- Rå HTML-scan: 2.407 fodnote-/statusmarkørtræf på 1.729 sider.
+- Stoppet ved Roskilde- og Gentofte-testcases, fordi kortet mangler konkrete sæson-/puljehenvisninger; spørgsmålet er indsat i kortet.
