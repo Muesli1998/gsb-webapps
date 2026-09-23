@@ -222,6 +222,41 @@ for hvert par af på-hinanden-følgende sæsoner (S, S+1), øverste niveau (Liga
 Hvis den fulde kaskade STADIG kun finder få hundrede eller færre, er det et ærligt, endeligt resultat —
 ikke noget der skal presses. Men algoritmen skal være afprøvet i sin fulde, tiltænkte form først.
 
+## Runde 4 — klub-navneskift/-fusioner (Christoffers hypotese, konkret eksempel: Vendsyssel)
+
+Runde 3's fulde kaskade gav et konsistent lavt resultat (5-8%) på tværs af ALLE niveaupar — for stabilt
+til at være en scope-/søgefejl, men det forklarer ikke HVORFOR raten er lav. Christoffer peger på en
+konkret, sandsynlig forklaring: rene klub-NAVNESKIFT og -FUSIONER, som canonical-normalisering (Metode B)
+aldrig kan fange, fordi de nye og gamle navne ikke minder om hinanden tekstligt (fx "Vendsyssel" som en
+fusion af Frederikshavn/Skagen/en tredje klub — ikke en stavevariant af noget).
+
+**Vigtigt designprincip for denne runde:** en bekræftet klub-omdøbning/fusion er en egenskab ved
+KLUBBEN, ikke ved det enkelte hold. Når "Vendsyssel = Frederikshavn (+ evt. flere)" er bekræftet, gælder
+det automatisk for ALLE den klubs hold på ALLE niveauer og i ALLE sæsoner — ikke kun det hold der
+oprindeligt udløste fundet. Byg alias-tabellen sådan (klub_id/klub_canonical → liste af historiske navne,
+ikke hold_id → hold_id), adskilt fra Metode B's tekst-normalisering.
+
+### Mål (runde 4)
+
+1. **Byg en kompakt, menneskeligt læsbar oversigt over Badmintonligaen, år for år, alle 17 sæsoner** —
+   kun klubnavne/holdnavne, ingen anden data. Skal kunne læses og vurderes af Christoffer på et par
+   minutter.
+2. **List de ~195 uafklarede Ligaen→1.division-overgange fra runde 3 eksplicit** (Ligaen havde 206
+   forsøg, kun 11 blev tvunget ned). For hver: vis hvilke hold der REELT var i 1. division den
+   efterfølgende sæson (ikke kun dem der matcher canonical-tærsklen — også "nær-kandidater" der blev
+   afvist), så Christoffer kan genkende en fusion/omdøbning ud fra egen viden.
+3. **Websøg efter kendte klub-sammenlægninger/navneskift i dansk badminton** (fx "Vendsyssel Badminton
+   historie Frederikshavn Skagen", og generelt efter regionale klubfusioner) som et forspring, inden
+   Christoffer gennemgår listen manuelt. Dette er research på åbne kilder, IKKE et kald til
+   badmintonplayer.dk/nembadminton.dk, og er derfor inden for afgrænsningen.
+4. **Byg en klub-niveau alias-/fusionstabel** i `liga-landskab.db`, klart adskilt fra Metode B's
+   tekst-canonicalisering — kun bekræftede koblinger (fra Christoffer eller en citerbar kilde), ingen
+   gættede. Anvend den på ALLE den pågældende klubs hold, alle niveauer, alle sæsoner.
+5. **Genkør runde 3's kaskade med alias-tabellen anvendt**, start ved Ligaen og arbejd nedad ét niveau ad
+   gangen (som Christoffer foreslog), og rapportér den nye succesrate pr. niveaupar sammenlignet med
+   runde 3's tal. Forvent at dette primært løfter de øverste niveauer markant (Ligaen er lille og
+   Christoffer kender den bedst) og propagerer nedad i mindre grad efterhånden.
+
 ## Resultatnote
 
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
