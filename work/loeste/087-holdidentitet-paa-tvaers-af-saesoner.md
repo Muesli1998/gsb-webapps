@@ -290,3 +290,13 @@ Der blev fundet 206 Liga-startpunkter, 34 unikke kæder med mindst én tvungen n
 - Rapporter: `statistik/results/087-round3-cascade.md` og `.json`.
 - Database/API: kun read-only database, 0 nye API-kald, 0 databaseændringer.
 - Konklusion: den fulde kaskade er afprøvet; 34 unikke tvungne kæder og 4 overlap med runde-2-populationen, men ingen fulde kæder til Danmarksserien/lokalserie.
+
+## Spørgsmål — runde 4: alias-afklaring afventes (2026-09-23)
+
+Punkt 1-3 er gennemført, uden at oprette aliaser eller ændre databasen:
+
+- `statistik/results/087-round4-liga-navne.md` giver en kompakt Liga-oversigt for 17 sæsoner og alle rekonstruerede Liga→1. divisionsovergange, grupperet sæsonvist. Den rå, maskinlæsbare version er `.json`-filen ved siden af.
+- Udtrækket har 204 visningsnoder: 138 fortsætter tekstligt i Ligaen, 11 har entydigt tekstmatch i 1. division og 55 har ingen tekstlig efterfølger. Runde 3 rapporterede 206 forsøg/11 tvungne/57 intet match; forskellen på to visningsnoder er dokumenteret og skal ikke udlægges som aliasfund. Den konkrete kandidatpopulation for navneskift er de 55 `ingen_tekstlig_efterfølger`-rækker, ikke alle 195 ikke-nedadgående overgange.
+- Åben research er samlet i `statistik/results/087-round4-webresearch.md` med direkte kilder. Den bekræfter blandt andet, at Vendsyssel Elite Badminton er et holdfællesskab mellem moderklubber, og at Team Skælskør-Slagelse er et elitesamarbejde. Begge er derfor **ikke** automatisk sikre globale klubaliaser for alle moderklubbernes hold. Højbjerg/Via Biler og RSL ODENSE OBK fremstår derimod som dokumenterede sponsor-/eliteholdsnavne, som kræver tidsafgrænset bekræftelse før brug.
+
+**Christoffers beslutning behøves før punkt 4-5:** Bekræft for hver konkret relation, om den skal modelleres som (a) global klubalias, (b) afgrænset eliteholds-/holdfællesskabsrelation med sæsoninterval eller (c) ingen kobling. Alias-tabellen og den genkørte kaskade er bevidst ikke bygget endnu.

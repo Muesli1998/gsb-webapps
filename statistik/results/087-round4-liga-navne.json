@@ -1,0 +1,7001 @@
+{
+  "generatedAt": "2026-09-23T19:43:56.516Z",
+  "scope": {
+    "ageGroupId": 1,
+    "seasons": [
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "databaseWrite": false
+  },
+  "overview": [
+    {
+      "season": 2010,
+      "teams": [
+        "Gentofte 1",
+        "Greve 1",
+        "Ikast 1",
+        "Lillerød 1",
+        "Odense OBK 1",
+        "Skovshoved 1",
+        "Solrød Strand 1",
+        "Team Skælskør-Slagelse 1",
+        "Team Aarhus 1",
+        "Vendsyssel 1",
+        "Værløse 1",
+        "Aarhus AB 1"
+      ]
+    },
+    {
+      "season": 2011,
+      "teams": [
+        "Gentofte",
+        "Greve",
+        "Ikast (N)",
+        "Lillerød",
+        "Odense OBK (N)",
+        "Skovshoved",
+        "Solrød Strand (O)",
+        "Team Skælskør-Slagelse",
+        "Team Aarhus",
+        "Vendsyssel",
+        "Værløse",
+        "Aarhus AB",
+        "Aarhus AB (O)"
+      ]
+    },
+    {
+      "season": 2012,
+      "teams": [
+        "Gentofte",
+        "Greve",
+        "Højbjerg",
+        "Ikast",
+        "Lillerød",
+        "Odense OBK",
+        "Odense OBK (O)",
+        "Skovshoved",
+        "Solrød Strand",
+        "Team Skælskør-Slagelse",
+        "Vendsyssel",
+        "Værløse",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "season": 2013,
+      "teams": [
+        "Gentofte",
+        "Greve",
+        "Højbjerg (O)",
+        "Ikast",
+        "Odense OBK",
+        "Skovshoved",
+        "Solrød Strand",
+        "Team Skælskør-Slagelse",
+        "Vendsyssel",
+        "Værløse",
+        "Aalborg Triton",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "season": 2014,
+      "teams": [
+        "Gentofte",
+        "Greve",
+        "Højbjerg",
+        "Ikast",
+        "KMB2010",
+        "Odense OBK",
+        "Skovshoved",
+        "Solrød Strand",
+        "Team Skælskør-Slagelse",
+        "Vendsyssel",
+        "Værløse",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "season": 2015,
+      "teams": [
+        "Gentofte",
+        "Greve",
+        "Højbjerg",
+        "Ikast",
+        "KMB2010",
+        "Odense OBK",
+        "Skovshoved",
+        "Solrød Strand",
+        "Team Skælskør-Slagelse",
+        "Vendsyssel",
+        "Værløse",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "season": 2016,
+      "teams": [
+        "Gentofte (N)",
+        "Greve",
+        "Højbjerg",
+        "Ikast (O)",
+        "Odense OBK",
+        "Skovshoved",
+        "Solrød Strand",
+        "Team Skælskør-Slagelse",
+        "Vendsyssel",
+        "Værløse",
+        "Aalborg Triton",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "season": 2017,
+      "teams": [
+        "Gentofte (O)",
+        "Greve",
+        "Højbjerg",
+        "Langhøj (O)",
+        "Lillerød (O)",
+        "Odense OBK",
+        "Skovshoved",
+        "Solrød Strand",
+        "Team Skælskør-Slagelse",
+        "Vendsyssel",
+        "Værløse",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "season": 2018,
+      "teams": [
+        "Gentofte",
+        "Greve",
+        "Højbjerg",
+        "Langhøj",
+        "Lillerød",
+        "Odense OBK",
+        "Skovshoved",
+        "Solrød Strand",
+        "Team Skælskør-Slagelse",
+        "Vendsyssel",
+        "Værløse",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "season": 2019,
+      "teams": [
+        "Greve",
+        "Højbjerg/Via Biler",
+        "Skovshoved",
+        "Solrød Strand",
+        "Team Skælskør-Slagelse",
+        "Vendsyssel",
+        "Værløse",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "season": 2020,
+      "teams": [
+        "Gentofte (O)",
+        "Greve",
+        "Højbjerg/Via Biler",
+        "RSL ODENSE OBK (O)",
+        "Skovshoved",
+        "Solrød Strand",
+        "Taber semifinale 1 og 2",
+        "Team Skælskør-Slagelse",
+        "Vendsyssel",
+        "Vinder semifinale 1 og 2",
+        "Værløse",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "season": 2021,
+      "teams": [
+        "Gentofte",
+        "Greve",
+        "Hvidovre",
+        "Højbjerg/Via Biler",
+        "RSL ODENSE OBK",
+        "Skovshoved",
+        "Solrød Strand",
+        "Taber af semifinale 1",
+        "Taber af semifinale 2",
+        "Team Skælskør-Slagelse",
+        "Vendsyssel",
+        "Vinder af semifinale 1",
+        "Vinder af semifinale 2",
+        "Værløse",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "season": 2022,
+      "teams": [
+        "Gentofte",
+        "Højbjerg/Via Biler",
+        "KMB2010",
+        "KMB2010 (O)",
+        "Kolding BK",
+        "RSL ODENSE OBK",
+        "Skovshoved",
+        "Solrød Strand",
+        "Taber af semifinale 1",
+        "Taber af semifinale 2",
+        "Team Skælskør-Slagelse",
+        "Ukendt modstander",
+        "Vendsyssel",
+        "Vendsyssel (M)",
+        "Vinder af semifinale 1",
+        "Vinder af semifinale 2",
+        "Værløse",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "season": 2023,
+      "teams": [
+        "Gentofte",
+        "Greve",
+        "Hvidovre",
+        "Hvidovre (O)",
+        "Højbjerg/Via Biler",
+        "RSL ODENSE OBK",
+        "Skovshoved",
+        "Solrød Strand",
+        "Team Skælskør-Slagelse",
+        "Ukendt modstander",
+        "Vendsyssel",
+        "Vendsyssel (M)",
+        "Værløse",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "season": 2024,
+      "teams": [
+        "Gentofte",
+        "Hvidovre",
+        "Højbjerg/Via Biler",
+        "Højbjerg/Via Biler (M)",
+        "Langhøj",
+        "RSL ODENSE OBK",
+        "Skovshoved",
+        "Solrød Strand",
+        "Team Skælskør-Slagelse",
+        "Ukendt modstander",
+        "Vendsyssel",
+        "Værløse",
+        "Aalborg Triton",
+        "Aalborg Triton (O)"
+      ]
+    },
+    {
+      "season": 2025,
+      "teams": [
+        "Gentofte",
+        "Greve",
+        "Greve (O)",
+        "Hvidovre",
+        "Højbjerg",
+        "Lillerød",
+        "Odense OBK",
+        "Skovshoved",
+        "Solrød Strand",
+        "Team Skælskør-Slagelse",
+        "Ukendt modstander",
+        "Vendsyssel (M)",
+        "Værløse"
+      ]
+    },
+    {
+      "season": 2026,
+      "teams": [
+        "Gentofte",
+        "Greve",
+        "Hvidovre (M)",
+        "Højbjerg",
+        "KBK Kbh. (O)",
+        "Odense OBK",
+        "Skovshoved",
+        "Solrød Strand",
+        "Vendsyssel",
+        "Værløse"
+      ]
+    }
+  ],
+  "transitionCounts": {
+    "ingen_tekstlig_efterfølger": 55,
+    "fortsætter_i_Ligaen": 138,
+    "entydig_1_division": 11
+  },
+  "transitions": [
+    {
+      "seasonFrom": 2010,
+      "seasonTo": 2011,
+      "ligaTeam": "Team Skælskør-Slagelse 1",
+      "runde3TextualKey": "team skælskør-slagelse 1",
+      "clubCanonical": "team skælskør-slagelse",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Team Fredericia",
+          "score": 0.25
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve 2",
+        "Holbæk (O)",
+        "Hvidovre",
+        "Ikast (N)",
+        "KBK Kbh.",
+        "Odense OBK (N)",
+        "Odense OBK 2",
+        "Randers BK",
+        "Skovbakken",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2 (O)",
+        "Team Fredericia",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2 (O)"
+      ]
+    },
+    {
+      "seasonFrom": 2010,
+      "seasonTo": 2011,
+      "ligaTeam": "Greve 1",
+      "runde3TextualKey": "greve 1",
+      "clubCanonical": "greve",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Greve 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve 2",
+        "Holbæk (O)",
+        "Hvidovre",
+        "Ikast (N)",
+        "KBK Kbh.",
+        "Odense OBK (N)",
+        "Odense OBK 2",
+        "Randers BK",
+        "Skovbakken",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2 (O)",
+        "Team Fredericia",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2 (O)"
+      ]
+    },
+    {
+      "seasonFrom": 2010,
+      "seasonTo": 2011,
+      "ligaTeam": "Værløse 1",
+      "runde3TextualKey": "værløse 1",
+      "clubCanonical": "værløse",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Værløse 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve 2",
+        "Holbæk (O)",
+        "Hvidovre",
+        "Ikast (N)",
+        "KBK Kbh.",
+        "Odense OBK (N)",
+        "Odense OBK 2",
+        "Randers BK",
+        "Skovbakken",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2 (O)",
+        "Team Fredericia",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2 (O)"
+      ]
+    },
+    {
+      "seasonFrom": 2010,
+      "seasonTo": 2011,
+      "ligaTeam": "Team Aarhus 1",
+      "runde3TextualKey": "team aarhus 1",
+      "clubCanonical": "team aarhus",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Team Fredericia",
+          "score": 0.33
+        },
+        {
+          "name": "Aarhus AB 2 (O)",
+          "score": 0.33
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve 2",
+        "Holbæk (O)",
+        "Hvidovre",
+        "Ikast (N)",
+        "KBK Kbh.",
+        "Odense OBK (N)",
+        "Odense OBK 2",
+        "Randers BK",
+        "Skovbakken",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2 (O)",
+        "Team Fredericia",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2 (O)"
+      ]
+    },
+    {
+      "seasonFrom": 2010,
+      "seasonTo": 2011,
+      "ligaTeam": "Lillerød 1",
+      "runde3TextualKey": "lillerød 1",
+      "clubCanonical": "lillerød",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve 2",
+        "Holbæk (O)",
+        "Hvidovre",
+        "Ikast (N)",
+        "KBK Kbh.",
+        "Odense OBK (N)",
+        "Odense OBK 2",
+        "Randers BK",
+        "Skovbakken",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2 (O)",
+        "Team Fredericia",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2 (O)"
+      ]
+    },
+    {
+      "seasonFrom": 2010,
+      "seasonTo": 2011,
+      "ligaTeam": "Vendsyssel 1",
+      "runde3TextualKey": "vendsyssel 1",
+      "clubCanonical": "vendsyssel",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve 2",
+        "Holbæk (O)",
+        "Hvidovre",
+        "Ikast (N)",
+        "KBK Kbh.",
+        "Odense OBK (N)",
+        "Odense OBK 2",
+        "Randers BK",
+        "Skovbakken",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2 (O)",
+        "Team Fredericia",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2 (O)"
+      ]
+    },
+    {
+      "seasonFrom": 2010,
+      "seasonTo": 2011,
+      "ligaTeam": "Skovshoved 1",
+      "runde3TextualKey": "skovshoved 1",
+      "clubCanonical": "skovshoved",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Skovshoved 2 (O)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve 2",
+        "Holbæk (O)",
+        "Hvidovre",
+        "Ikast (N)",
+        "KBK Kbh.",
+        "Odense OBK (N)",
+        "Odense OBK 2",
+        "Randers BK",
+        "Skovbakken",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2 (O)",
+        "Team Fredericia",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2 (O)"
+      ]
+    },
+    {
+      "seasonFrom": 2010,
+      "seasonTo": 2011,
+      "ligaTeam": "Gentofte 1",
+      "runde3TextualKey": "gentofte 1",
+      "clubCanonical": "gentofte",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Gentofte 2 (O)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve 2",
+        "Holbæk (O)",
+        "Hvidovre",
+        "Ikast (N)",
+        "KBK Kbh.",
+        "Odense OBK (N)",
+        "Odense OBK 2",
+        "Randers BK",
+        "Skovbakken",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2 (O)",
+        "Team Fredericia",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2 (O)"
+      ]
+    },
+    {
+      "seasonFrom": 2010,
+      "seasonTo": 2011,
+      "ligaTeam": "Odense OBK 1",
+      "runde3TextualKey": "odense obk 1",
+      "clubCanonical": "odense obk",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Odense OBK (N)",
+          "score": 1
+        },
+        {
+          "name": "Odense OBK 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve 2",
+        "Holbæk (O)",
+        "Hvidovre",
+        "Ikast (N)",
+        "KBK Kbh.",
+        "Odense OBK (N)",
+        "Odense OBK 2",
+        "Randers BK",
+        "Skovbakken",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2 (O)",
+        "Team Fredericia",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2 (O)"
+      ]
+    },
+    {
+      "seasonFrom": 2010,
+      "seasonTo": 2011,
+      "ligaTeam": "Ikast 1",
+      "runde3TextualKey": "ikast 1",
+      "clubCanonical": "ikast",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Ikast (N)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve 2",
+        "Holbæk (O)",
+        "Hvidovre",
+        "Ikast (N)",
+        "KBK Kbh.",
+        "Odense OBK (N)",
+        "Odense OBK 2",
+        "Randers BK",
+        "Skovbakken",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2 (O)",
+        "Team Fredericia",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2 (O)"
+      ]
+    },
+    {
+      "seasonFrom": 2010,
+      "seasonTo": 2011,
+      "ligaTeam": "Aarhus AB 1",
+      "runde3TextualKey": "aarhus ab 1",
+      "clubCanonical": "aarhus ab",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Aarhus AB 2 (O)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve 2",
+        "Holbæk (O)",
+        "Hvidovre",
+        "Ikast (N)",
+        "KBK Kbh.",
+        "Odense OBK (N)",
+        "Odense OBK 2",
+        "Randers BK",
+        "Skovbakken",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2 (O)",
+        "Team Fredericia",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2 (O)"
+      ]
+    },
+    {
+      "seasonFrom": 2010,
+      "seasonTo": 2011,
+      "ligaTeam": "Solrød Strand 1",
+      "runde3TextualKey": "solrød strand 1",
+      "clubCanonical": "solrød strand",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Solrød Strand 2 (O)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve 2",
+        "Holbæk (O)",
+        "Hvidovre",
+        "Ikast (N)",
+        "KBK Kbh.",
+        "Odense OBK (N)",
+        "Odense OBK 2",
+        "Randers BK",
+        "Skovbakken",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2 (O)",
+        "Team Fredericia",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2 (O)"
+      ]
+    },
+    {
+      "seasonFrom": 2011,
+      "seasonTo": 2012,
+      "ligaTeam": "Team Skælskør-Slagelse",
+      "runde3TextualKey": "team skælskør-slagelse",
+      "clubCanonical": "team skælskør-slagelse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Team Skælskør-Slagelse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Hvidovre",
+        "Højbjerg (N)",
+        "Ikast",
+        "KBK Kbh.",
+        "Randers BK",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2011,
+      "seasonTo": 2012,
+      "ligaTeam": "Greve",
+      "runde3TextualKey": "greve",
+      "clubCanonical": "greve",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Greve"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Hvidovre",
+        "Højbjerg (N)",
+        "Ikast",
+        "KBK Kbh.",
+        "Randers BK",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2011,
+      "seasonTo": 2012,
+      "ligaTeam": "Værløse",
+      "runde3TextualKey": "værløse",
+      "clubCanonical": "værløse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Værløse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Værløse 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Hvidovre",
+        "Højbjerg (N)",
+        "Ikast",
+        "KBK Kbh.",
+        "Randers BK",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2011,
+      "seasonTo": 2012,
+      "ligaTeam": "Vendsyssel",
+      "runde3TextualKey": "vendsyssel",
+      "clubCanonical": "vendsyssel",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Vendsyssel"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Hvidovre",
+        "Højbjerg (N)",
+        "Ikast",
+        "KBK Kbh.",
+        "Randers BK",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2011,
+      "seasonTo": 2012,
+      "ligaTeam": "Skovshoved",
+      "runde3TextualKey": "skovshoved",
+      "clubCanonical": "skovshoved",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Skovshoved"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Hvidovre",
+        "Højbjerg (N)",
+        "Ikast",
+        "KBK Kbh.",
+        "Randers BK",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2011,
+      "seasonTo": 2012,
+      "ligaTeam": "Aarhus AB (O)",
+      "runde3TextualKey": "aarhus ab (o)",
+      "clubCanonical": "aarhus ab",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Hvidovre",
+        "Højbjerg (N)",
+        "Ikast",
+        "KBK Kbh.",
+        "Randers BK",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2011,
+      "seasonTo": 2012,
+      "ligaTeam": "Gentofte",
+      "runde3TextualKey": "gentofte",
+      "clubCanonical": "gentofte",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Gentofte"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Gentofte 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Hvidovre",
+        "Højbjerg (N)",
+        "Ikast",
+        "KBK Kbh.",
+        "Randers BK",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2011,
+      "seasonTo": 2012,
+      "ligaTeam": "Solrød Strand (O)",
+      "runde3TextualKey": "solrød strand (o)",
+      "clubCanonical": "solrød strand",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Hvidovre",
+        "Højbjerg (N)",
+        "Ikast",
+        "KBK Kbh.",
+        "Randers BK",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2011,
+      "seasonTo": 2012,
+      "ligaTeam": "Odense OBK (N)",
+      "runde3TextualKey": "odense obk (n)",
+      "clubCanonical": "odense obk",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Hvidovre",
+        "Højbjerg (N)",
+        "Ikast",
+        "KBK Kbh.",
+        "Randers BK",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2011,
+      "seasonTo": 2012,
+      "ligaTeam": "Lillerød",
+      "runde3TextualKey": "lillerød",
+      "clubCanonical": "lillerød",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Lillerød"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Hvidovre",
+        "Højbjerg (N)",
+        "Ikast",
+        "KBK Kbh.",
+        "Randers BK",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2011,
+      "seasonTo": 2012,
+      "ligaTeam": "Team Aarhus",
+      "runde3TextualKey": "team aarhus",
+      "clubCanonical": "team aarhus",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Hvidovre",
+        "Højbjerg (N)",
+        "Ikast",
+        "KBK Kbh.",
+        "Randers BK",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2011,
+      "seasonTo": 2012,
+      "ligaTeam": "Ikast (N)",
+      "runde3TextualKey": "ikast (n)",
+      "clubCanonical": "ikast",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Ikast",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Hvidovre",
+        "Højbjerg (N)",
+        "Ikast",
+        "KBK Kbh.",
+        "Randers BK",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2011,
+      "seasonTo": 2012,
+      "ligaTeam": "Aarhus AB",
+      "runde3TextualKey": "aarhus ab",
+      "clubCanonical": "aarhus ab",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Aarhus AB"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Hvidovre",
+        "Højbjerg (N)",
+        "Ikast",
+        "KBK Kbh.",
+        "Randers BK",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2012,
+      "seasonTo": 2013,
+      "ligaTeam": "Skovshoved",
+      "runde3TextualKey": "skovshoved",
+      "clubCanonical": "skovshoved",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Skovshoved"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Hvidovre",
+        "Ikast",
+        "KMB2010 (O)",
+        "Lillerød (N)",
+        "Solrød Strand 2 (O)",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2012,
+      "seasonTo": 2013,
+      "ligaTeam": "Team Skælskør-Slagelse",
+      "runde3TextualKey": "team skælskør-slagelse",
+      "clubCanonical": "team skælskør-slagelse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Team Skælskør-Slagelse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Hvidovre",
+        "Ikast",
+        "KMB2010 (O)",
+        "Lillerød (N)",
+        "Solrød Strand 2 (O)",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2012,
+      "seasonTo": 2013,
+      "ligaTeam": "Odense OBK (O)",
+      "runde3TextualKey": "odense obk (o)",
+      "clubCanonical": "odense obk",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Hvidovre",
+        "Ikast",
+        "KMB2010 (O)",
+        "Lillerød (N)",
+        "Solrød Strand 2 (O)",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2012,
+      "seasonTo": 2013,
+      "ligaTeam": "Værløse",
+      "runde3TextualKey": "værløse",
+      "clubCanonical": "værløse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Værløse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Værløse 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Hvidovre",
+        "Ikast",
+        "KMB2010 (O)",
+        "Lillerød (N)",
+        "Solrød Strand 2 (O)",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2012,
+      "seasonTo": 2013,
+      "ligaTeam": "Solrød Strand",
+      "runde3TextualKey": "solrød strand",
+      "clubCanonical": "solrød strand",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Solrød Strand"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Solrød Strand 2 (O)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Hvidovre",
+        "Ikast",
+        "KMB2010 (O)",
+        "Lillerød (N)",
+        "Solrød Strand 2 (O)",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2012,
+      "seasonTo": 2013,
+      "ligaTeam": "Greve",
+      "runde3TextualKey": "greve",
+      "clubCanonical": "greve",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Greve"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Hvidovre",
+        "Ikast",
+        "KMB2010 (O)",
+        "Lillerød (N)",
+        "Solrød Strand 2 (O)",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2012,
+      "seasonTo": 2013,
+      "ligaTeam": "Vendsyssel",
+      "runde3TextualKey": "vendsyssel",
+      "clubCanonical": "vendsyssel",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Vendsyssel"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Hvidovre",
+        "Ikast",
+        "KMB2010 (O)",
+        "Lillerød (N)",
+        "Solrød Strand 2 (O)",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2012,
+      "seasonTo": 2013,
+      "ligaTeam": "Aarhus AB",
+      "runde3TextualKey": "aarhus ab",
+      "clubCanonical": "aarhus ab",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Aarhus AB"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Hvidovre",
+        "Ikast",
+        "KMB2010 (O)",
+        "Lillerød (N)",
+        "Solrød Strand 2 (O)",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2012,
+      "seasonTo": 2013,
+      "ligaTeam": "Gentofte",
+      "runde3TextualKey": "gentofte",
+      "clubCanonical": "gentofte",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Gentofte"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Gentofte 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Hvidovre",
+        "Ikast",
+        "KMB2010 (O)",
+        "Lillerød (N)",
+        "Solrød Strand 2 (O)",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2012,
+      "seasonTo": 2013,
+      "ligaTeam": "Lillerød",
+      "runde3TextualKey": "lillerød",
+      "clubCanonical": "lillerød",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Lillerød (N)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Hvidovre",
+        "Ikast",
+        "KMB2010 (O)",
+        "Lillerød (N)",
+        "Solrød Strand 2 (O)",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2012,
+      "seasonTo": 2013,
+      "ligaTeam": "Højbjerg",
+      "runde3TextualKey": "højbjerg",
+      "clubCanonical": "højbjerg",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Hvidovre",
+        "Ikast",
+        "KMB2010 (O)",
+        "Lillerød (N)",
+        "Solrød Strand 2 (O)",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2012,
+      "seasonTo": 2013,
+      "ligaTeam": "Ikast",
+      "runde3TextualKey": "ikast",
+      "clubCanonical": "ikast",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Ikast"
+      ],
+      "firstDivisionMatches": [
+        "Ikast"
+      ],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Hvidovre",
+        "Ikast",
+        "KMB2010 (O)",
+        "Lillerød (N)",
+        "Solrød Strand 2 (O)",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2012,
+      "seasonTo": 2013,
+      "ligaTeam": "Odense OBK",
+      "runde3TextualKey": "odense obk",
+      "clubCanonical": "odense obk",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Odense OBK"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Hvidovre",
+        "Ikast",
+        "KMB2010 (O)",
+        "Lillerød (N)",
+        "Solrød Strand 2 (O)",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2013,
+      "seasonTo": 2014,
+      "ligaTeam": "Team Skælskør-Slagelse",
+      "runde3TextualKey": "team skælskør-slagelse",
+      "clubCanonical": "team skælskør-slagelse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Team Skælskør-Slagelse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (N)",
+        "Greve 2",
+        "Hillerød (O)",
+        "Hvidovre (N)",
+        "Højbjerg 2",
+        "Ikast",
+        "KMB2010",
+        "Lillerød",
+        "Odense OBK 2 (O)",
+        "Skovbakken (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Værløse 3 (O)",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2013,
+      "seasonTo": 2014,
+      "ligaTeam": "Skovshoved",
+      "runde3TextualKey": "skovshoved",
+      "clubCanonical": "skovshoved",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Skovshoved"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Skovshoved 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (N)",
+        "Greve 2",
+        "Hillerød (O)",
+        "Hvidovre (N)",
+        "Højbjerg 2",
+        "Ikast",
+        "KMB2010",
+        "Lillerød",
+        "Odense OBK 2 (O)",
+        "Skovbakken (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Værløse 3 (O)",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2013,
+      "seasonTo": 2014,
+      "ligaTeam": "Greve",
+      "runde3TextualKey": "greve",
+      "clubCanonical": "greve",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Greve"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Greve 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (N)",
+        "Greve 2",
+        "Hillerød (O)",
+        "Hvidovre (N)",
+        "Højbjerg 2",
+        "Ikast",
+        "KMB2010",
+        "Lillerød",
+        "Odense OBK 2 (O)",
+        "Skovbakken (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Værløse 3 (O)",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2013,
+      "seasonTo": 2014,
+      "ligaTeam": "Odense OBK",
+      "runde3TextualKey": "odense obk",
+      "clubCanonical": "odense obk",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Odense OBK"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Odense OBK 2 (O)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (N)",
+        "Greve 2",
+        "Hillerød (O)",
+        "Hvidovre (N)",
+        "Højbjerg 2",
+        "Ikast",
+        "KMB2010",
+        "Lillerød",
+        "Odense OBK 2 (O)",
+        "Skovbakken (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Værløse 3 (O)",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2013,
+      "seasonTo": 2014,
+      "ligaTeam": "Aarhus AB",
+      "runde3TextualKey": "aarhus ab",
+      "clubCanonical": "aarhus ab",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Aarhus AB"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Aarhus AB 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (N)",
+        "Greve 2",
+        "Hillerød (O)",
+        "Hvidovre (N)",
+        "Højbjerg 2",
+        "Ikast",
+        "KMB2010",
+        "Lillerød",
+        "Odense OBK 2 (O)",
+        "Skovbakken (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Værløse 3 (O)",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2013,
+      "seasonTo": 2014,
+      "ligaTeam": "Gentofte",
+      "runde3TextualKey": "gentofte",
+      "clubCanonical": "gentofte",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Gentofte"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Gentofte 2 (N)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (N)",
+        "Greve 2",
+        "Hillerød (O)",
+        "Hvidovre (N)",
+        "Højbjerg 2",
+        "Ikast",
+        "KMB2010",
+        "Lillerød",
+        "Odense OBK 2 (O)",
+        "Skovbakken (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Værløse 3 (O)",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2013,
+      "seasonTo": 2014,
+      "ligaTeam": "Vendsyssel",
+      "runde3TextualKey": "vendsyssel",
+      "clubCanonical": "vendsyssel",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Vendsyssel"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (N)",
+        "Greve 2",
+        "Hillerød (O)",
+        "Hvidovre (N)",
+        "Højbjerg 2",
+        "Ikast",
+        "KMB2010",
+        "Lillerød",
+        "Odense OBK 2 (O)",
+        "Skovbakken (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Værløse 3 (O)",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2013,
+      "seasonTo": 2014,
+      "ligaTeam": "Solrød Strand",
+      "runde3TextualKey": "solrød strand",
+      "clubCanonical": "solrød strand",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Solrød Strand"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Solrød Strand 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (N)",
+        "Greve 2",
+        "Hillerød (O)",
+        "Hvidovre (N)",
+        "Højbjerg 2",
+        "Ikast",
+        "KMB2010",
+        "Lillerød",
+        "Odense OBK 2 (O)",
+        "Skovbakken (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Værløse 3 (O)",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2013,
+      "seasonTo": 2014,
+      "ligaTeam": "Værløse",
+      "runde3TextualKey": "værløse",
+      "clubCanonical": "værløse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Værløse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Værløse 2",
+          "score": 1
+        },
+        {
+          "name": "Værløse 3 (O)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (N)",
+        "Greve 2",
+        "Hillerød (O)",
+        "Hvidovre (N)",
+        "Højbjerg 2",
+        "Ikast",
+        "KMB2010",
+        "Lillerød",
+        "Odense OBK 2 (O)",
+        "Skovbakken (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Værløse 3 (O)",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2013,
+      "seasonTo": 2014,
+      "ligaTeam": "Højbjerg (O)",
+      "runde3TextualKey": "højbjerg (o)",
+      "clubCanonical": "højbjerg",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Højbjerg 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (N)",
+        "Greve 2",
+        "Hillerød (O)",
+        "Hvidovre (N)",
+        "Højbjerg 2",
+        "Ikast",
+        "KMB2010",
+        "Lillerød",
+        "Odense OBK 2 (O)",
+        "Skovbakken (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Værløse 3 (O)",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2013,
+      "seasonTo": 2014,
+      "ligaTeam": "Ikast",
+      "runde3TextualKey": "ikast",
+      "clubCanonical": "ikast",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Ikast"
+      ],
+      "firstDivisionMatches": [
+        "Ikast"
+      ],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (N)",
+        "Greve 2",
+        "Hillerød (O)",
+        "Hvidovre (N)",
+        "Højbjerg 2",
+        "Ikast",
+        "KMB2010",
+        "Lillerød",
+        "Odense OBK 2 (O)",
+        "Skovbakken (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Værløse 3 (O)",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2013,
+      "seasonTo": 2014,
+      "ligaTeam": "Aalborg Triton",
+      "runde3TextualKey": "aalborg triton",
+      "clubCanonical": "aalborg triton",
+      "classification": "entydig_1_division",
+      "sameLevel": [],
+      "firstDivisionMatches": [
+        "Aalborg Triton"
+      ],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (N)",
+        "Greve 2",
+        "Hillerød (O)",
+        "Hvidovre (N)",
+        "Højbjerg 2",
+        "Ikast",
+        "KMB2010",
+        "Lillerød",
+        "Odense OBK 2 (O)",
+        "Skovbakken (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Værløse 3 (O)",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2014,
+      "seasonTo": 2015,
+      "ligaTeam": "Team Skælskør-Slagelse",
+      "runde3TextualKey": "team skælskør-slagelse",
+      "clubCanonical": "team skælskør-slagelse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Team Skælskør-Slagelse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Greve 2 (O)",
+        "Ikast",
+        "KMB2010",
+        "Lillerød",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2014,
+      "seasonTo": 2015,
+      "ligaTeam": "Aarhus AB",
+      "runde3TextualKey": "aarhus ab",
+      "clubCanonical": "aarhus ab",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Aarhus AB"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Greve 2 (O)",
+        "Ikast",
+        "KMB2010",
+        "Lillerød",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2014,
+      "seasonTo": 2015,
+      "ligaTeam": "Skovshoved",
+      "runde3TextualKey": "skovshoved",
+      "clubCanonical": "skovshoved",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Skovshoved"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Skovshoved 2 (O)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Greve 2 (O)",
+        "Ikast",
+        "KMB2010",
+        "Lillerød",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2014,
+      "seasonTo": 2015,
+      "ligaTeam": "Greve",
+      "runde3TextualKey": "greve",
+      "clubCanonical": "greve",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Greve"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Greve 2 (O)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Greve 2 (O)",
+        "Ikast",
+        "KMB2010",
+        "Lillerød",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2014,
+      "seasonTo": 2015,
+      "ligaTeam": "Værløse",
+      "runde3TextualKey": "værløse",
+      "clubCanonical": "værløse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Værløse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Værløse 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Greve 2 (O)",
+        "Ikast",
+        "KMB2010",
+        "Lillerød",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2014,
+      "seasonTo": 2015,
+      "ligaTeam": "Odense OBK",
+      "runde3TextualKey": "odense obk",
+      "clubCanonical": "odense obk",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Odense OBK"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Greve 2 (O)",
+        "Ikast",
+        "KMB2010",
+        "Lillerød",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2014,
+      "seasonTo": 2015,
+      "ligaTeam": "Solrød Strand",
+      "runde3TextualKey": "solrød strand",
+      "clubCanonical": "solrød strand",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Solrød Strand"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Solrød Strand 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Greve 2 (O)",
+        "Ikast",
+        "KMB2010",
+        "Lillerød",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2014,
+      "seasonTo": 2015,
+      "ligaTeam": "Gentofte",
+      "runde3TextualKey": "gentofte",
+      "clubCanonical": "gentofte",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Gentofte"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Greve 2 (O)",
+        "Ikast",
+        "KMB2010",
+        "Lillerød",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2014,
+      "seasonTo": 2015,
+      "ligaTeam": "Vendsyssel",
+      "runde3TextualKey": "vendsyssel",
+      "clubCanonical": "vendsyssel",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Vendsyssel"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Greve 2 (O)",
+        "Ikast",
+        "KMB2010",
+        "Lillerød",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2014,
+      "seasonTo": 2015,
+      "ligaTeam": "Højbjerg",
+      "runde3TextualKey": "højbjerg",
+      "clubCanonical": "højbjerg",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Højbjerg"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Greve 2 (O)",
+        "Ikast",
+        "KMB2010",
+        "Lillerød",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2014,
+      "seasonTo": 2015,
+      "ligaTeam": "Ikast",
+      "runde3TextualKey": "ikast",
+      "clubCanonical": "ikast",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Ikast"
+      ],
+      "firstDivisionMatches": [
+        "Ikast"
+      ],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Greve 2 (O)",
+        "Ikast",
+        "KMB2010",
+        "Lillerød",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2014,
+      "seasonTo": 2015,
+      "ligaTeam": "KMB2010",
+      "runde3TextualKey": "kmb2010",
+      "clubCanonical": "kmb2010",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "KMB2010"
+      ],
+      "firstDivisionMatches": [
+        "KMB2010"
+      ],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Greve 2 (O)",
+        "Ikast",
+        "KMB2010",
+        "Lillerød",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2015,
+      "seasonTo": 2016,
+      "ligaTeam": "Skovshoved",
+      "runde3TextualKey": "skovshoved",
+      "clubCanonical": "skovshoved",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Skovshoved"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Skovshoved 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte (N)",
+        "Hvidovre (O)",
+        "Højbjerg 2 (O)",
+        "KMB2010",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2015,
+      "seasonTo": 2016,
+      "ligaTeam": "Værløse",
+      "runde3TextualKey": "værløse",
+      "clubCanonical": "værløse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Værløse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Værløse 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte (N)",
+        "Hvidovre (O)",
+        "Højbjerg 2 (O)",
+        "KMB2010",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2015,
+      "seasonTo": 2016,
+      "ligaTeam": "Team Skælskør-Slagelse",
+      "runde3TextualKey": "team skælskør-slagelse",
+      "clubCanonical": "team skælskør-slagelse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Team Skælskør-Slagelse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte (N)",
+        "Hvidovre (O)",
+        "Højbjerg 2 (O)",
+        "KMB2010",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2015,
+      "seasonTo": 2016,
+      "ligaTeam": "Solrød Strand",
+      "runde3TextualKey": "solrød strand",
+      "clubCanonical": "solrød strand",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Solrød Strand"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Solrød Strand 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte (N)",
+        "Hvidovre (O)",
+        "Højbjerg 2 (O)",
+        "KMB2010",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2015,
+      "seasonTo": 2016,
+      "ligaTeam": "Greve",
+      "runde3TextualKey": "greve",
+      "clubCanonical": "greve",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Greve"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte (N)",
+        "Hvidovre (O)",
+        "Højbjerg 2 (O)",
+        "KMB2010",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2015,
+      "seasonTo": 2016,
+      "ligaTeam": "Vendsyssel",
+      "runde3TextualKey": "vendsyssel",
+      "clubCanonical": "vendsyssel",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Vendsyssel"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte (N)",
+        "Hvidovre (O)",
+        "Højbjerg 2 (O)",
+        "KMB2010",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2015,
+      "seasonTo": 2016,
+      "ligaTeam": "Højbjerg",
+      "runde3TextualKey": "højbjerg",
+      "clubCanonical": "højbjerg",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Højbjerg"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Højbjerg 2 (O)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte (N)",
+        "Hvidovre (O)",
+        "Højbjerg 2 (O)",
+        "KMB2010",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2015,
+      "seasonTo": 2016,
+      "ligaTeam": "Odense OBK",
+      "runde3TextualKey": "odense obk",
+      "clubCanonical": "odense obk",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Odense OBK"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte (N)",
+        "Hvidovre (O)",
+        "Højbjerg 2 (O)",
+        "KMB2010",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2015,
+      "seasonTo": 2016,
+      "ligaTeam": "Aarhus AB",
+      "runde3TextualKey": "aarhus ab",
+      "clubCanonical": "aarhus ab",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Aarhus AB"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte (N)",
+        "Hvidovre (O)",
+        "Højbjerg 2 (O)",
+        "KMB2010",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2015,
+      "seasonTo": 2016,
+      "ligaTeam": "Gentofte",
+      "runde3TextualKey": "gentofte",
+      "clubCanonical": "gentofte",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Gentofte (N)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte (N)",
+        "Hvidovre (O)",
+        "Højbjerg 2 (O)",
+        "KMB2010",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2015,
+      "seasonTo": 2016,
+      "ligaTeam": "Ikast",
+      "runde3TextualKey": "ikast",
+      "clubCanonical": "ikast",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte (N)",
+        "Hvidovre (O)",
+        "Højbjerg 2 (O)",
+        "KMB2010",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2015,
+      "seasonTo": 2016,
+      "ligaTeam": "KMB2010",
+      "runde3TextualKey": "kmb2010",
+      "clubCanonical": "kmb2010",
+      "classification": "entydig_1_division",
+      "sameLevel": [],
+      "firstDivisionMatches": [
+        "KMB2010"
+      ],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte (N)",
+        "Hvidovre (O)",
+        "Højbjerg 2 (O)",
+        "KMB2010",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2016,
+      "seasonTo": 2017,
+      "ligaTeam": "Skovshoved",
+      "runde3TextualKey": "skovshoved",
+      "clubCanonical": "skovshoved",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Skovshoved"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Skovshoved 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Ikast (N)",
+        "KMB2010",
+        "Langhøj (O)",
+        "Lillerød (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2016,
+      "seasonTo": 2017,
+      "ligaTeam": "Vendsyssel",
+      "runde3TextualKey": "vendsyssel",
+      "clubCanonical": "vendsyssel",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Vendsyssel"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Ikast (N)",
+        "KMB2010",
+        "Langhøj (O)",
+        "Lillerød (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2016,
+      "seasonTo": 2017,
+      "ligaTeam": "Værløse",
+      "runde3TextualKey": "værløse",
+      "clubCanonical": "værløse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Værløse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Værløse 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Ikast (N)",
+        "KMB2010",
+        "Langhøj (O)",
+        "Lillerød (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2016,
+      "seasonTo": 2017,
+      "ligaTeam": "Team Skælskør-Slagelse",
+      "runde3TextualKey": "team skælskør-slagelse",
+      "clubCanonical": "team skælskør-slagelse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Team Skælskør-Slagelse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Ikast (N)",
+        "KMB2010",
+        "Langhøj (O)",
+        "Lillerød (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2016,
+      "seasonTo": 2017,
+      "ligaTeam": "Greve",
+      "runde3TextualKey": "greve",
+      "clubCanonical": "greve",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Greve"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Ikast (N)",
+        "KMB2010",
+        "Langhøj (O)",
+        "Lillerød (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2016,
+      "seasonTo": 2017,
+      "ligaTeam": "Odense OBK",
+      "runde3TextualKey": "odense obk",
+      "clubCanonical": "odense obk",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Odense OBK"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Ikast (N)",
+        "KMB2010",
+        "Langhøj (O)",
+        "Lillerød (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2016,
+      "seasonTo": 2017,
+      "ligaTeam": "Solrød Strand",
+      "runde3TextualKey": "solrød strand",
+      "clubCanonical": "solrød strand",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Solrød Strand"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Solrød Strand 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Ikast (N)",
+        "KMB2010",
+        "Langhøj (O)",
+        "Lillerød (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2016,
+      "seasonTo": 2017,
+      "ligaTeam": "Højbjerg",
+      "runde3TextualKey": "højbjerg",
+      "clubCanonical": "højbjerg",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Højbjerg"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Ikast (N)",
+        "KMB2010",
+        "Langhøj (O)",
+        "Lillerød (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2016,
+      "seasonTo": 2017,
+      "ligaTeam": "Aarhus AB",
+      "runde3TextualKey": "aarhus ab",
+      "clubCanonical": "aarhus ab",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Aarhus AB"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Ikast (N)",
+        "KMB2010",
+        "Langhøj (O)",
+        "Lillerød (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2016,
+      "seasonTo": 2017,
+      "ligaTeam": "Ikast (O)",
+      "runde3TextualKey": "ikast (o)",
+      "clubCanonical": "ikast",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Ikast (N)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Ikast (N)",
+        "KMB2010",
+        "Langhøj (O)",
+        "Lillerød (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2016,
+      "seasonTo": 2017,
+      "ligaTeam": "Gentofte (N)",
+      "runde3TextualKey": "gentofte (n)",
+      "clubCanonical": "gentofte",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Ikast (N)",
+        "KMB2010",
+        "Langhøj (O)",
+        "Lillerød (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2016,
+      "seasonTo": 2017,
+      "ligaTeam": "Aalborg Triton",
+      "runde3TextualKey": "aalborg triton",
+      "clubCanonical": "aalborg triton",
+      "classification": "entydig_1_division",
+      "sameLevel": [],
+      "firstDivisionMatches": [
+        "Aalborg Triton"
+      ],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Ikast (N)",
+        "KMB2010",
+        "Langhøj (O)",
+        "Lillerød (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2017,
+      "seasonTo": 2018,
+      "ligaTeam": "Skovshoved",
+      "runde3TextualKey": "skovshoved",
+      "clubCanonical": "skovshoved",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Skovshoved"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Skovshoved 2 (N)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2 (O)",
+        "Holbæk",
+        "Holte",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast (N)",
+        "KMB2010",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Skovshoved 2 (N)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aabenraa",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2017,
+      "seasonTo": 2018,
+      "ligaTeam": "Højbjerg",
+      "runde3TextualKey": "højbjerg",
+      "clubCanonical": "højbjerg",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Højbjerg"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Højbjerg 2 (O)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2 (O)",
+        "Holbæk",
+        "Holte",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast (N)",
+        "KMB2010",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Skovshoved 2 (N)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aabenraa",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2017,
+      "seasonTo": 2018,
+      "ligaTeam": "Vendsyssel",
+      "runde3TextualKey": "vendsyssel",
+      "clubCanonical": "vendsyssel",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Vendsyssel"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2 (O)",
+        "Holbæk",
+        "Holte",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast (N)",
+        "KMB2010",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Skovshoved 2 (N)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aabenraa",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2017,
+      "seasonTo": 2018,
+      "ligaTeam": "Team Skælskør-Slagelse",
+      "runde3TextualKey": "team skælskør-slagelse",
+      "clubCanonical": "team skælskør-slagelse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Team Skælskør-Slagelse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2 (O)",
+        "Holbæk",
+        "Holte",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast (N)",
+        "KMB2010",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Skovshoved 2 (N)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aabenraa",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2017,
+      "seasonTo": 2018,
+      "ligaTeam": "Aarhus AB",
+      "runde3TextualKey": "aarhus ab",
+      "clubCanonical": "aarhus ab",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Aarhus AB"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Aarhus AB 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2 (O)",
+        "Holbæk",
+        "Holte",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast (N)",
+        "KMB2010",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Skovshoved 2 (N)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aabenraa",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2017,
+      "seasonTo": 2018,
+      "ligaTeam": "Greve",
+      "runde3TextualKey": "greve",
+      "clubCanonical": "greve",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Greve"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Greve 2 (O)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2 (O)",
+        "Holbæk",
+        "Holte",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast (N)",
+        "KMB2010",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Skovshoved 2 (N)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aabenraa",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2017,
+      "seasonTo": 2018,
+      "ligaTeam": "Solrød Strand",
+      "runde3TextualKey": "solrød strand",
+      "clubCanonical": "solrød strand",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Solrød Strand"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Solrød Strand 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2 (O)",
+        "Holbæk",
+        "Holte",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast (N)",
+        "KMB2010",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Skovshoved 2 (N)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aabenraa",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2017,
+      "seasonTo": 2018,
+      "ligaTeam": "Gentofte (O)",
+      "runde3TextualKey": "gentofte (o)",
+      "clubCanonical": "gentofte",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2 (O)",
+        "Holbæk",
+        "Holte",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast (N)",
+        "KMB2010",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Skovshoved 2 (N)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aabenraa",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2017,
+      "seasonTo": 2018,
+      "ligaTeam": "Odense OBK",
+      "runde3TextualKey": "odense obk",
+      "clubCanonical": "odense obk",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Odense OBK"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2 (O)",
+        "Holbæk",
+        "Holte",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast (N)",
+        "KMB2010",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Skovshoved 2 (N)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aabenraa",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2017,
+      "seasonTo": 2018,
+      "ligaTeam": "Værløse",
+      "runde3TextualKey": "værløse",
+      "clubCanonical": "værløse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Værløse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Værløse 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2 (O)",
+        "Holbæk",
+        "Holte",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast (N)",
+        "KMB2010",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Skovshoved 2 (N)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aabenraa",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2017,
+      "seasonTo": 2018,
+      "ligaTeam": "Langhøj (O)",
+      "runde3TextualKey": "langhøj (o)",
+      "clubCanonical": "langhøj",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Langhøj",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2 (O)",
+        "Holbæk",
+        "Holte",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast (N)",
+        "KMB2010",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Skovshoved 2 (N)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aabenraa",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2017,
+      "seasonTo": 2018,
+      "ligaTeam": "Lillerød (O)",
+      "runde3TextualKey": "lillerød (o)",
+      "clubCanonical": "lillerød",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Lillerød",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2 (O)",
+        "Holbæk",
+        "Holte",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast (N)",
+        "KMB2010",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Skovshoved 2 (N)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aabenraa",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2018,
+      "seasonTo": 2019,
+      "ligaTeam": "Greve",
+      "runde3TextualKey": "greve",
+      "clubCanonical": "greve",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Greve"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Greve 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg (O)",
+        "Gentofte (N)",
+        "Greve 2",
+        "Holbæk (O)",
+        "Holte (O)",
+        "Hvidovre (O)",
+        "Ikast (O)",
+        "KMB2010",
+        "Kolding BK (O)",
+        "Lillerød",
+        "Odense OBK (N)",
+        "Oversidder",
+        "Oversidder 2",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aabenraa (O)",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2018,
+      "seasonTo": 2019,
+      "ligaTeam": "Solrød Strand",
+      "runde3TextualKey": "solrød strand",
+      "clubCanonical": "solrød strand",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Solrød Strand"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Solrød Strand 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg (O)",
+        "Gentofte (N)",
+        "Greve 2",
+        "Holbæk (O)",
+        "Holte (O)",
+        "Hvidovre (O)",
+        "Ikast (O)",
+        "KMB2010",
+        "Kolding BK (O)",
+        "Lillerød",
+        "Odense OBK (N)",
+        "Oversidder",
+        "Oversidder 2",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aabenraa (O)",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2018,
+      "seasonTo": 2019,
+      "ligaTeam": "Vendsyssel",
+      "runde3TextualKey": "vendsyssel",
+      "clubCanonical": "vendsyssel",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Vendsyssel"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "abc Aalborg (O)",
+        "Gentofte (N)",
+        "Greve 2",
+        "Holbæk (O)",
+        "Holte (O)",
+        "Hvidovre (O)",
+        "Ikast (O)",
+        "KMB2010",
+        "Kolding BK (O)",
+        "Lillerød",
+        "Odense OBK (N)",
+        "Oversidder",
+        "Oversidder 2",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aabenraa (O)",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2018,
+      "seasonTo": 2019,
+      "ligaTeam": "Team Skælskør-Slagelse",
+      "runde3TextualKey": "team skælskør-slagelse",
+      "clubCanonical": "team skælskør-slagelse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Team Skælskør-Slagelse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "abc Aalborg (O)",
+        "Gentofte (N)",
+        "Greve 2",
+        "Holbæk (O)",
+        "Holte (O)",
+        "Hvidovre (O)",
+        "Ikast (O)",
+        "KMB2010",
+        "Kolding BK (O)",
+        "Lillerød",
+        "Odense OBK (N)",
+        "Oversidder",
+        "Oversidder 2",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aabenraa (O)",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2018,
+      "seasonTo": 2019,
+      "ligaTeam": "Aarhus AB",
+      "runde3TextualKey": "aarhus ab",
+      "clubCanonical": "aarhus ab",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Aarhus AB"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "abc Aalborg (O)",
+        "Gentofte (N)",
+        "Greve 2",
+        "Holbæk (O)",
+        "Holte (O)",
+        "Hvidovre (O)",
+        "Ikast (O)",
+        "KMB2010",
+        "Kolding BK (O)",
+        "Lillerød",
+        "Odense OBK (N)",
+        "Oversidder",
+        "Oversidder 2",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aabenraa (O)",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2018,
+      "seasonTo": 2019,
+      "ligaTeam": "Skovshoved",
+      "runde3TextualKey": "skovshoved",
+      "clubCanonical": "skovshoved",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Skovshoved"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Skovshoved 2 (O)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg (O)",
+        "Gentofte (N)",
+        "Greve 2",
+        "Holbæk (O)",
+        "Holte (O)",
+        "Hvidovre (O)",
+        "Ikast (O)",
+        "KMB2010",
+        "Kolding BK (O)",
+        "Lillerød",
+        "Odense OBK (N)",
+        "Oversidder",
+        "Oversidder 2",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aabenraa (O)",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2018,
+      "seasonTo": 2019,
+      "ligaTeam": "Højbjerg",
+      "runde3TextualKey": "højbjerg",
+      "clubCanonical": "højbjerg",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "abc Aalborg (O)",
+        "Gentofte (N)",
+        "Greve 2",
+        "Holbæk (O)",
+        "Holte (O)",
+        "Hvidovre (O)",
+        "Ikast (O)",
+        "KMB2010",
+        "Kolding BK (O)",
+        "Lillerød",
+        "Odense OBK (N)",
+        "Oversidder",
+        "Oversidder 2",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aabenraa (O)",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2018,
+      "seasonTo": 2019,
+      "ligaTeam": "Værløse",
+      "runde3TextualKey": "værløse",
+      "clubCanonical": "værløse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Værløse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Værløse 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg (O)",
+        "Gentofte (N)",
+        "Greve 2",
+        "Holbæk (O)",
+        "Holte (O)",
+        "Hvidovre (O)",
+        "Ikast (O)",
+        "KMB2010",
+        "Kolding BK (O)",
+        "Lillerød",
+        "Odense OBK (N)",
+        "Oversidder",
+        "Oversidder 2",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aabenraa (O)",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2018,
+      "seasonTo": 2019,
+      "ligaTeam": "Gentofte",
+      "runde3TextualKey": "gentofte",
+      "clubCanonical": "gentofte",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Gentofte (N)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg (O)",
+        "Gentofte (N)",
+        "Greve 2",
+        "Holbæk (O)",
+        "Holte (O)",
+        "Hvidovre (O)",
+        "Ikast (O)",
+        "KMB2010",
+        "Kolding BK (O)",
+        "Lillerød",
+        "Odense OBK (N)",
+        "Oversidder",
+        "Oversidder 2",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aabenraa (O)",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2018,
+      "seasonTo": 2019,
+      "ligaTeam": "Odense OBK",
+      "runde3TextualKey": "odense obk",
+      "clubCanonical": "odense obk",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Odense OBK (N)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg (O)",
+        "Gentofte (N)",
+        "Greve 2",
+        "Holbæk (O)",
+        "Holte (O)",
+        "Hvidovre (O)",
+        "Ikast (O)",
+        "KMB2010",
+        "Kolding BK (O)",
+        "Lillerød",
+        "Odense OBK (N)",
+        "Oversidder",
+        "Oversidder 2",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aabenraa (O)",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2018,
+      "seasonTo": 2019,
+      "ligaTeam": "Lillerød",
+      "runde3TextualKey": "lillerød",
+      "clubCanonical": "lillerød",
+      "classification": "entydig_1_division",
+      "sameLevel": [],
+      "firstDivisionMatches": [
+        "Lillerød"
+      ],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "abc Aalborg (O)",
+        "Gentofte (N)",
+        "Greve 2",
+        "Holbæk (O)",
+        "Holte (O)",
+        "Hvidovre (O)",
+        "Ikast (O)",
+        "KMB2010",
+        "Kolding BK (O)",
+        "Lillerød",
+        "Odense OBK (N)",
+        "Oversidder",
+        "Oversidder 2",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aabenraa (O)",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2018,
+      "seasonTo": 2019,
+      "ligaTeam": "Langhøj",
+      "runde3TextualKey": "langhøj",
+      "clubCanonical": "langhøj",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "abc Aalborg (O)",
+        "Gentofte (N)",
+        "Greve 2",
+        "Holbæk (O)",
+        "Holte (O)",
+        "Hvidovre (O)",
+        "Ikast (O)",
+        "KMB2010",
+        "Kolding BK (O)",
+        "Lillerød",
+        "Odense OBK (N)",
+        "Oversidder",
+        "Oversidder 2",
+        "Skovshoved 2 (O)",
+        "Solrød Strand 2",
+        "Værløse 2",
+        "Aabenraa (O)",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2019,
+      "seasonTo": 2020,
+      "ligaTeam": "Greve",
+      "runde3TextualKey": "greve",
+      "clubCanonical": "greve",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Greve"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Greve 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2",
+        "Hillerød (O)",
+        "Holte",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast",
+        "KMB2010",
+        "Kolding BK",
+        "Lillerød",
+        "Lyngby (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2019,
+      "seasonTo": 2020,
+      "ligaTeam": "Vendsyssel",
+      "runde3TextualKey": "vendsyssel",
+      "clubCanonical": "vendsyssel",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Vendsyssel"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2",
+        "Hillerød (O)",
+        "Holte",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast",
+        "KMB2010",
+        "Kolding BK",
+        "Lillerød",
+        "Lyngby (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2019,
+      "seasonTo": 2020,
+      "ligaTeam": "Højbjerg/Via Biler",
+      "runde3TextualKey": "højbjerg/via biler",
+      "clubCanonical": "højbjerg/via biler",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Højbjerg/Via Biler"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Højbjerg 2 (O)",
+          "score": 0.33
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2",
+        "Hillerød (O)",
+        "Holte",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast",
+        "KMB2010",
+        "Kolding BK",
+        "Lillerød",
+        "Lyngby (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2019,
+      "seasonTo": 2020,
+      "ligaTeam": "Solrød Strand",
+      "runde3TextualKey": "solrød strand",
+      "clubCanonical": "solrød strand",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Solrød Strand"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Solrød Strand 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2",
+        "Hillerød (O)",
+        "Holte",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast",
+        "KMB2010",
+        "Kolding BK",
+        "Lillerød",
+        "Lyngby (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2019,
+      "seasonTo": 2020,
+      "ligaTeam": "Skovshoved",
+      "runde3TextualKey": "skovshoved",
+      "clubCanonical": "skovshoved",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Skovshoved"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Skovshoved 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2",
+        "Hillerød (O)",
+        "Holte",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast",
+        "KMB2010",
+        "Kolding BK",
+        "Lillerød",
+        "Lyngby (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2019,
+      "seasonTo": 2020,
+      "ligaTeam": "Værløse",
+      "runde3TextualKey": "værløse",
+      "clubCanonical": "værløse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Værløse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Værløse 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2",
+        "Hillerød (O)",
+        "Holte",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast",
+        "KMB2010",
+        "Kolding BK",
+        "Lillerød",
+        "Lyngby (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2019,
+      "seasonTo": 2020,
+      "ligaTeam": "Team Skælskør-Slagelse",
+      "runde3TextualKey": "team skælskør-slagelse",
+      "clubCanonical": "team skælskør-slagelse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Team Skælskør-Slagelse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2",
+        "Hillerød (O)",
+        "Holte",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast",
+        "KMB2010",
+        "Kolding BK",
+        "Lillerød",
+        "Lyngby (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2019,
+      "seasonTo": 2020,
+      "ligaTeam": "Aarhus AB",
+      "runde3TextualKey": "aarhus ab",
+      "clubCanonical": "aarhus ab",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Aarhus AB"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2",
+        "Hillerød (O)",
+        "Holte",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast",
+        "KMB2010",
+        "Kolding BK",
+        "Lillerød",
+        "Lyngby (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aalborg Triton"
+      ]
+    },
+    {
+      "seasonFrom": 2020,
+      "seasonTo": 2021,
+      "ligaTeam": "Skovshoved",
+      "runde3TextualKey": "skovshoved",
+      "clubCanonical": "skovshoved",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Skovshoved"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Skovshoved 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2",
+        "Hillerød (O)",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh. (O)",
+        "KMB2010",
+        "Kolding BK",
+        "Lillerød",
+        "Lyngby (O)",
+        "Nr. 2 fra kvalifikation til 1. division",
+        "Nr. 3 fra kvalifikation til 1. division",
+        "Nr. 6 i nedrykning fra 1. division",
+        "Nr. 7 i nedrykning fra 1. division",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2020,
+      "seasonTo": 2021,
+      "ligaTeam": "Værløse",
+      "runde3TextualKey": "værløse",
+      "clubCanonical": "værløse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Værløse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Værløse 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2",
+        "Hillerød (O)",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh. (O)",
+        "KMB2010",
+        "Kolding BK",
+        "Lillerød",
+        "Lyngby (O)",
+        "Nr. 2 fra kvalifikation til 1. division",
+        "Nr. 3 fra kvalifikation til 1. division",
+        "Nr. 6 i nedrykning fra 1. division",
+        "Nr. 7 i nedrykning fra 1. division",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2020,
+      "seasonTo": 2021,
+      "ligaTeam": "Team Skælskør-Slagelse",
+      "runde3TextualKey": "team skælskør-slagelse",
+      "clubCanonical": "team skælskør-slagelse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Team Skælskør-Slagelse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2",
+        "Hillerød (O)",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh. (O)",
+        "KMB2010",
+        "Kolding BK",
+        "Lillerød",
+        "Lyngby (O)",
+        "Nr. 2 fra kvalifikation til 1. division",
+        "Nr. 3 fra kvalifikation til 1. division",
+        "Nr. 6 i nedrykning fra 1. division",
+        "Nr. 7 i nedrykning fra 1. division",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2020,
+      "seasonTo": 2021,
+      "ligaTeam": "Vendsyssel",
+      "runde3TextualKey": "vendsyssel",
+      "clubCanonical": "vendsyssel",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Vendsyssel"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2",
+        "Hillerød (O)",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh. (O)",
+        "KMB2010",
+        "Kolding BK",
+        "Lillerød",
+        "Lyngby (O)",
+        "Nr. 2 fra kvalifikation til 1. division",
+        "Nr. 3 fra kvalifikation til 1. division",
+        "Nr. 6 i nedrykning fra 1. division",
+        "Nr. 7 i nedrykning fra 1. division",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2020,
+      "seasonTo": 2021,
+      "ligaTeam": "Taber semifinale 1 og 2",
+      "runde3TextualKey": "taber semifinale 1 og 2",
+      "clubCanonical": "taber semifinale 1 og",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Nr. 2 fra kvalifikation til 1. division",
+          "score": 0.1
+        },
+        {
+          "name": "Nr. 3 fra kvalifikation til 1. division",
+          "score": 0.1
+        },
+        {
+          "name": "Nr. 6 i nedrykning fra 1. division",
+          "score": 0.1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2",
+        "Hillerød (O)",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh. (O)",
+        "KMB2010",
+        "Kolding BK",
+        "Lillerød",
+        "Lyngby (O)",
+        "Nr. 2 fra kvalifikation til 1. division",
+        "Nr. 3 fra kvalifikation til 1. division",
+        "Nr. 6 i nedrykning fra 1. division",
+        "Nr. 7 i nedrykning fra 1. division",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2020,
+      "seasonTo": 2021,
+      "ligaTeam": "Vinder semifinale 1 og 2",
+      "runde3TextualKey": "vinder semifinale 1 og 2",
+      "clubCanonical": "vinder semifinale 1 og",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Nr. 2 fra kvalifikation til 1. division",
+          "score": 0.1
+        },
+        {
+          "name": "Nr. 3 fra kvalifikation til 1. division",
+          "score": 0.1
+        },
+        {
+          "name": "Nr. 6 i nedrykning fra 1. division",
+          "score": 0.1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2",
+        "Hillerød (O)",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh. (O)",
+        "KMB2010",
+        "Kolding BK",
+        "Lillerød",
+        "Lyngby (O)",
+        "Nr. 2 fra kvalifikation til 1. division",
+        "Nr. 3 fra kvalifikation til 1. division",
+        "Nr. 6 i nedrykning fra 1. division",
+        "Nr. 7 i nedrykning fra 1. division",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2020,
+      "seasonTo": 2021,
+      "ligaTeam": "Højbjerg/Via Biler",
+      "runde3TextualKey": "højbjerg/via biler",
+      "clubCanonical": "højbjerg/via biler",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Højbjerg/Via Biler"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Højbjerg 2 (O)",
+          "score": 0.33
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2",
+        "Hillerød (O)",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh. (O)",
+        "KMB2010",
+        "Kolding BK",
+        "Lillerød",
+        "Lyngby (O)",
+        "Nr. 2 fra kvalifikation til 1. division",
+        "Nr. 3 fra kvalifikation til 1. division",
+        "Nr. 6 i nedrykning fra 1. division",
+        "Nr. 7 i nedrykning fra 1. division",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2020,
+      "seasonTo": 2021,
+      "ligaTeam": "Solrød Strand",
+      "runde3TextualKey": "solrød strand",
+      "clubCanonical": "solrød strand",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Solrød Strand"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Solrød Strand 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2",
+        "Hillerød (O)",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh. (O)",
+        "KMB2010",
+        "Kolding BK",
+        "Lillerød",
+        "Lyngby (O)",
+        "Nr. 2 fra kvalifikation til 1. division",
+        "Nr. 3 fra kvalifikation til 1. division",
+        "Nr. 6 i nedrykning fra 1. division",
+        "Nr. 7 i nedrykning fra 1. division",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2020,
+      "seasonTo": 2021,
+      "ligaTeam": "Gentofte (O)",
+      "runde3TextualKey": "gentofte (o)",
+      "clubCanonical": "gentofte",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2",
+        "Hillerød (O)",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh. (O)",
+        "KMB2010",
+        "Kolding BK",
+        "Lillerød",
+        "Lyngby (O)",
+        "Nr. 2 fra kvalifikation til 1. division",
+        "Nr. 3 fra kvalifikation til 1. division",
+        "Nr. 6 i nedrykning fra 1. division",
+        "Nr. 7 i nedrykning fra 1. division",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2020,
+      "seasonTo": 2021,
+      "ligaTeam": "Greve",
+      "runde3TextualKey": "greve",
+      "clubCanonical": "greve",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Greve"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Greve 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2",
+        "Hillerød (O)",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh. (O)",
+        "KMB2010",
+        "Kolding BK",
+        "Lillerød",
+        "Lyngby (O)",
+        "Nr. 2 fra kvalifikation til 1. division",
+        "Nr. 3 fra kvalifikation til 1. division",
+        "Nr. 6 i nedrykning fra 1. division",
+        "Nr. 7 i nedrykning fra 1. division",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2020,
+      "seasonTo": 2021,
+      "ligaTeam": "RSL ODENSE OBK (O)",
+      "runde3TextualKey": "rsl odense obk (o)",
+      "clubCanonical": "rsl odense obk",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2",
+        "Hillerød (O)",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh. (O)",
+        "KMB2010",
+        "Kolding BK",
+        "Lillerød",
+        "Lyngby (O)",
+        "Nr. 2 fra kvalifikation til 1. division",
+        "Nr. 3 fra kvalifikation til 1. division",
+        "Nr. 6 i nedrykning fra 1. division",
+        "Nr. 7 i nedrykning fra 1. division",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2020,
+      "seasonTo": 2021,
+      "ligaTeam": "Aarhus AB",
+      "runde3TextualKey": "aarhus ab",
+      "clubCanonical": "aarhus ab",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Aarhus AB"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Aarhus AB 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "abc Aalborg",
+        "Greve 2",
+        "Hillerød (O)",
+        "Hvidovre",
+        "Højbjerg 2 (O)",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh. (O)",
+        "KMB2010",
+        "Kolding BK",
+        "Lillerød",
+        "Lyngby (O)",
+        "Nr. 2 fra kvalifikation til 1. division",
+        "Nr. 3 fra kvalifikation til 1. division",
+        "Nr. 6 i nedrykning fra 1. division",
+        "Nr. 7 i nedrykning fra 1. division",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2021,
+      "seasonTo": 2022,
+      "ligaTeam": "Aarhus AB",
+      "runde3TextualKey": "aarhus ab",
+      "clubCanonical": "aarhus ab",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Aarhus AB"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Aarhus AB 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve",
+        "Greve (N)",
+        "Hillerød",
+        "Hvidovre",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Kolding BK 2",
+        "Lillerød",
+        "Lyngby",
+        "Oversidder",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2021,
+      "seasonTo": 2022,
+      "ligaTeam": "Hvidovre",
+      "runde3TextualKey": "hvidovre",
+      "clubCanonical": "hvidovre",
+      "classification": "entydig_1_division",
+      "sameLevel": [],
+      "firstDivisionMatches": [
+        "Hvidovre"
+      ],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve",
+        "Greve (N)",
+        "Hillerød",
+        "Hvidovre",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Kolding BK 2",
+        "Lillerød",
+        "Lyngby",
+        "Oversidder",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2021,
+      "seasonTo": 2022,
+      "ligaTeam": "Vendsyssel",
+      "runde3TextualKey": "vendsyssel",
+      "clubCanonical": "vendsyssel",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Vendsyssel"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve",
+        "Greve (N)",
+        "Hillerød",
+        "Hvidovre",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Kolding BK 2",
+        "Lillerød",
+        "Lyngby",
+        "Oversidder",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2021,
+      "seasonTo": 2022,
+      "ligaTeam": "Skovshoved",
+      "runde3TextualKey": "skovshoved",
+      "clubCanonical": "skovshoved",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Skovshoved"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Skovshoved 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve",
+        "Greve (N)",
+        "Hillerød",
+        "Hvidovre",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Kolding BK 2",
+        "Lillerød",
+        "Lyngby",
+        "Oversidder",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2021,
+      "seasonTo": 2022,
+      "ligaTeam": "Højbjerg/Via Biler",
+      "runde3TextualKey": "højbjerg/via biler",
+      "clubCanonical": "højbjerg/via biler",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Højbjerg/Via Biler"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Højbjerg 2",
+          "score": 0.33
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve",
+        "Greve (N)",
+        "Hillerød",
+        "Hvidovre",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Kolding BK 2",
+        "Lillerød",
+        "Lyngby",
+        "Oversidder",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2021,
+      "seasonTo": 2022,
+      "ligaTeam": "Værløse",
+      "runde3TextualKey": "værløse",
+      "clubCanonical": "værløse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Værløse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Værløse 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve",
+        "Greve (N)",
+        "Hillerød",
+        "Hvidovre",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Kolding BK 2",
+        "Lillerød",
+        "Lyngby",
+        "Oversidder",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2021,
+      "seasonTo": 2022,
+      "ligaTeam": "Taber af semifinale 1",
+      "runde3TextualKey": "taber af semifinale 1",
+      "clubCanonical": "taber af semifinale",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Taber af semifinale 1"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve",
+        "Greve (N)",
+        "Hillerød",
+        "Hvidovre",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Kolding BK 2",
+        "Lillerød",
+        "Lyngby",
+        "Oversidder",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2021,
+      "seasonTo": 2022,
+      "ligaTeam": "Taber af semifinale 2",
+      "runde3TextualKey": "taber af semifinale 2",
+      "clubCanonical": "taber af semifinale",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Taber af semifinale 2"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve",
+        "Greve (N)",
+        "Hillerød",
+        "Hvidovre",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Kolding BK 2",
+        "Lillerød",
+        "Lyngby",
+        "Oversidder",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2021,
+      "seasonTo": 2022,
+      "ligaTeam": "Vinder af semifinale 1",
+      "runde3TextualKey": "vinder af semifinale 1",
+      "clubCanonical": "vinder af semifinale",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Vinder af semifinale 1"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve",
+        "Greve (N)",
+        "Hillerød",
+        "Hvidovre",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Kolding BK 2",
+        "Lillerød",
+        "Lyngby",
+        "Oversidder",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2021,
+      "seasonTo": 2022,
+      "ligaTeam": "Vinder af semifinale 2",
+      "runde3TextualKey": "vinder af semifinale 2",
+      "clubCanonical": "vinder af semifinale",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Vinder af semifinale 2"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve",
+        "Greve (N)",
+        "Hillerød",
+        "Hvidovre",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Kolding BK 2",
+        "Lillerød",
+        "Lyngby",
+        "Oversidder",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2021,
+      "seasonTo": 2022,
+      "ligaTeam": "Gentofte",
+      "runde3TextualKey": "gentofte",
+      "clubCanonical": "gentofte",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Gentofte"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Gentofte 2 (O)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve",
+        "Greve (N)",
+        "Hillerød",
+        "Hvidovre",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Kolding BK 2",
+        "Lillerød",
+        "Lyngby",
+        "Oversidder",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2021,
+      "seasonTo": 2022,
+      "ligaTeam": "Team Skælskør-Slagelse",
+      "runde3TextualKey": "team skælskør-slagelse",
+      "clubCanonical": "team skælskør-slagelse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Team Skælskør-Slagelse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve",
+        "Greve (N)",
+        "Hillerød",
+        "Hvidovre",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Kolding BK 2",
+        "Lillerød",
+        "Lyngby",
+        "Oversidder",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2021,
+      "seasonTo": 2022,
+      "ligaTeam": "RSL ODENSE OBK",
+      "runde3TextualKey": "rsl odense obk",
+      "clubCanonical": "rsl odense obk",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "RSL ODENSE OBK"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve",
+        "Greve (N)",
+        "Hillerød",
+        "Hvidovre",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Kolding BK 2",
+        "Lillerød",
+        "Lyngby",
+        "Oversidder",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2021,
+      "seasonTo": 2022,
+      "ligaTeam": "Solrød Strand",
+      "runde3TextualKey": "solrød strand",
+      "clubCanonical": "solrød strand",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Solrød Strand"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Solrød Strand 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve",
+        "Greve (N)",
+        "Hillerød",
+        "Hvidovre",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Kolding BK 2",
+        "Lillerød",
+        "Lyngby",
+        "Oversidder",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2021,
+      "seasonTo": 2022,
+      "ligaTeam": "Greve",
+      "runde3TextualKey": "greve",
+      "clubCanonical": "greve",
+      "classification": "entydig_1_division",
+      "sameLevel": [],
+      "firstDivisionMatches": [
+        "Greve"
+      ],
+      "nearCandidates": [
+        {
+          "name": "Greve (N)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2 (O)",
+        "Greve",
+        "Greve (N)",
+        "Hillerød",
+        "Hvidovre",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde (O)",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Kolding BK 2",
+        "Lillerød",
+        "Lyngby",
+        "Oversidder",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2022,
+      "seasonTo": 2023,
+      "ligaTeam": "Kolding BK",
+      "runde3TextualKey": "kolding bk",
+      "clubCanonical": "kolding bk",
+      "classification": "entydig_1_division",
+      "sameLevel": [],
+      "firstDivisionMatches": [
+        "Kolding BK"
+      ],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde",
+        "KBK Kbh.",
+        "KMB2010 (N)",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lyngby",
+        "RSL ODENSE OBK 2 (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2022,
+      "seasonTo": 2023,
+      "ligaTeam": "Aarhus AB",
+      "runde3TextualKey": "aarhus ab",
+      "clubCanonical": "aarhus ab",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Aarhus AB"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Aarhus AB 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde",
+        "KBK Kbh.",
+        "KMB2010 (N)",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lyngby",
+        "RSL ODENSE OBK 2 (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2022,
+      "seasonTo": 2023,
+      "ligaTeam": "Højbjerg/Via Biler",
+      "runde3TextualKey": "højbjerg/via biler",
+      "clubCanonical": "højbjerg/via biler",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Højbjerg/Via Biler"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Højbjerg 2",
+          "score": 0.33
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde",
+        "KBK Kbh.",
+        "KMB2010 (N)",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lyngby",
+        "RSL ODENSE OBK 2 (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2022,
+      "seasonTo": 2023,
+      "ligaTeam": "Vendsyssel (M)",
+      "runde3TextualKey": "vendsyssel (m)",
+      "clubCanonical": "vendsyssel",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Vendsyssel (M)"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde",
+        "KBK Kbh.",
+        "KMB2010 (N)",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lyngby",
+        "RSL ODENSE OBK 2 (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2022,
+      "seasonTo": 2023,
+      "ligaTeam": "Skovshoved",
+      "runde3TextualKey": "skovshoved",
+      "clubCanonical": "skovshoved",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Skovshoved"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Skovshoved 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde",
+        "KBK Kbh.",
+        "KMB2010 (N)",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lyngby",
+        "RSL ODENSE OBK 2 (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2022,
+      "seasonTo": 2023,
+      "ligaTeam": "Team Skælskør-Slagelse",
+      "runde3TextualKey": "team skælskør-slagelse",
+      "clubCanonical": "team skælskør-slagelse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Team Skælskør-Slagelse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde",
+        "KBK Kbh.",
+        "KMB2010 (N)",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lyngby",
+        "RSL ODENSE OBK 2 (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2022,
+      "seasonTo": 2023,
+      "ligaTeam": "Solrød Strand",
+      "runde3TextualKey": "solrød strand",
+      "clubCanonical": "solrød strand",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Solrød Strand"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Solrød Strand 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde",
+        "KBK Kbh.",
+        "KMB2010 (N)",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lyngby",
+        "RSL ODENSE OBK 2 (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2022,
+      "seasonTo": 2023,
+      "ligaTeam": "RSL ODENSE OBK",
+      "runde3TextualKey": "rsl odense obk",
+      "clubCanonical": "rsl odense obk",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "RSL ODENSE OBK"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "RSL ODENSE OBK 2 (O)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde",
+        "KBK Kbh.",
+        "KMB2010 (N)",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lyngby",
+        "RSL ODENSE OBK 2 (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2022,
+      "seasonTo": 2023,
+      "ligaTeam": "Gentofte",
+      "runde3TextualKey": "gentofte",
+      "clubCanonical": "gentofte",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Gentofte"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Gentofte 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde",
+        "KBK Kbh.",
+        "KMB2010 (N)",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lyngby",
+        "RSL ODENSE OBK 2 (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2022,
+      "seasonTo": 2023,
+      "ligaTeam": "Værløse",
+      "runde3TextualKey": "værløse",
+      "clubCanonical": "værløse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Værløse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Værløse 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde",
+        "KBK Kbh.",
+        "KMB2010 (N)",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lyngby",
+        "RSL ODENSE OBK 2 (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2022,
+      "seasonTo": 2023,
+      "ligaTeam": "KMB2010 (O)",
+      "runde3TextualKey": "kmb2010 (o)",
+      "clubCanonical": "kmb2010",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "KMB2010 (N)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde",
+        "KBK Kbh.",
+        "KMB2010 (N)",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lyngby",
+        "RSL ODENSE OBK 2 (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2022,
+      "seasonTo": 2023,
+      "ligaTeam": "Vendsyssel",
+      "runde3TextualKey": "vendsyssel",
+      "clubCanonical": "vendsyssel",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Vendsyssel"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde",
+        "KBK Kbh.",
+        "KMB2010 (N)",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lyngby",
+        "RSL ODENSE OBK 2 (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2022,
+      "seasonTo": 2023,
+      "ligaTeam": "Taber af semifinale 1",
+      "runde3TextualKey": "taber af semifinale 1",
+      "clubCanonical": "taber af semifinale",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde",
+        "KBK Kbh.",
+        "KMB2010 (N)",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lyngby",
+        "RSL ODENSE OBK 2 (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2022,
+      "seasonTo": 2023,
+      "ligaTeam": "Taber af semifinale 2",
+      "runde3TextualKey": "taber af semifinale 2",
+      "clubCanonical": "taber af semifinale",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde",
+        "KBK Kbh.",
+        "KMB2010 (N)",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lyngby",
+        "RSL ODENSE OBK 2 (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2022,
+      "seasonTo": 2023,
+      "ligaTeam": "Vinder af semifinale 1",
+      "runde3TextualKey": "vinder af semifinale 1",
+      "clubCanonical": "vinder af semifinale",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde",
+        "KBK Kbh.",
+        "KMB2010 (N)",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lyngby",
+        "RSL ODENSE OBK 2 (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2022,
+      "seasonTo": 2023,
+      "ligaTeam": "Vinder af semifinale 2",
+      "runde3TextualKey": "vinder af semifinale 2",
+      "clubCanonical": "vinder af semifinale",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde",
+        "KBK Kbh.",
+        "KMB2010 (N)",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lyngby",
+        "RSL ODENSE OBK 2 (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2022,
+      "seasonTo": 2023,
+      "ligaTeam": "KMB2010",
+      "runde3TextualKey": "kmb2010",
+      "clubCanonical": "kmb2010",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "KMB2010 (N)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde",
+        "KBK Kbh.",
+        "KMB2010 (N)",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lyngby",
+        "RSL ODENSE OBK 2 (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2022,
+      "seasonTo": 2023,
+      "ligaTeam": "Ukendt modstander",
+      "runde3TextualKey": "ukendt modstander",
+      "clubCanonical": "ukendt modstander",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Ukendt modstander"
+      ],
+      "firstDivisionMatches": [
+        "Ukendt modstander"
+      ],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Ikast",
+        "Karlslunde",
+        "KBK Kbh.",
+        "KMB2010 (N)",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lyngby",
+        "RSL ODENSE OBK 2 (O)",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB 2"
+      ]
+    },
+    {
+      "seasonFrom": 2023,
+      "seasonTo": 2024,
+      "ligaTeam": "Højbjerg/Via Biler",
+      "runde3TextualKey": "højbjerg/via biler",
+      "clubCanonical": "højbjerg/via biler",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Højbjerg/Via Biler"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Højbjerg 2",
+          "score": 0.33
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Greve 2",
+        "Hillerød",
+        "Hvidovre 2 (O)",
+        "Højbjerg 2",
+        "Ikast",
+        "KBK Kbh.",
+        "KMB2010",
+        "Kolding BK",
+        "Langhøj (O)",
+        "Lillerød",
+        "RSL ODENSE OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aarhus AB",
+        "Aarhus AB (N)"
+      ]
+    },
+    {
+      "seasonFrom": 2023,
+      "seasonTo": 2024,
+      "ligaTeam": "Skovshoved",
+      "runde3TextualKey": "skovshoved",
+      "clubCanonical": "skovshoved",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Skovshoved"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Skovshoved 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Greve 2",
+        "Hillerød",
+        "Hvidovre 2 (O)",
+        "Højbjerg 2",
+        "Ikast",
+        "KBK Kbh.",
+        "KMB2010",
+        "Kolding BK",
+        "Langhøj (O)",
+        "Lillerød",
+        "RSL ODENSE OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aarhus AB",
+        "Aarhus AB (N)"
+      ]
+    },
+    {
+      "seasonFrom": 2023,
+      "seasonTo": 2024,
+      "ligaTeam": "Vendsyssel (M)",
+      "runde3TextualKey": "vendsyssel (m)",
+      "clubCanonical": "vendsyssel",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Greve 2",
+        "Hillerød",
+        "Hvidovre 2 (O)",
+        "Højbjerg 2",
+        "Ikast",
+        "KBK Kbh.",
+        "KMB2010",
+        "Kolding BK",
+        "Langhøj (O)",
+        "Lillerød",
+        "RSL ODENSE OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aarhus AB",
+        "Aarhus AB (N)"
+      ]
+    },
+    {
+      "seasonFrom": 2023,
+      "seasonTo": 2024,
+      "ligaTeam": "Team Skælskør-Slagelse",
+      "runde3TextualKey": "team skælskør-slagelse",
+      "clubCanonical": "team skælskør-slagelse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Team Skælskør-Slagelse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Greve 2",
+        "Hillerød",
+        "Hvidovre 2 (O)",
+        "Højbjerg 2",
+        "Ikast",
+        "KBK Kbh.",
+        "KMB2010",
+        "Kolding BK",
+        "Langhøj (O)",
+        "Lillerød",
+        "RSL ODENSE OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aarhus AB",
+        "Aarhus AB (N)"
+      ]
+    },
+    {
+      "seasonFrom": 2023,
+      "seasonTo": 2024,
+      "ligaTeam": "RSL ODENSE OBK",
+      "runde3TextualKey": "rsl odense obk",
+      "clubCanonical": "rsl odense obk",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "RSL ODENSE OBK"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "RSL ODENSE OBK 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Greve 2",
+        "Hillerød",
+        "Hvidovre 2 (O)",
+        "Højbjerg 2",
+        "Ikast",
+        "KBK Kbh.",
+        "KMB2010",
+        "Kolding BK",
+        "Langhøj (O)",
+        "Lillerød",
+        "RSL ODENSE OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aarhus AB",
+        "Aarhus AB (N)"
+      ]
+    },
+    {
+      "seasonFrom": 2023,
+      "seasonTo": 2024,
+      "ligaTeam": "Hvidovre (O)",
+      "runde3TextualKey": "hvidovre (o)",
+      "clubCanonical": "hvidovre",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Hvidovre 2 (O)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Greve 2",
+        "Hillerød",
+        "Hvidovre 2 (O)",
+        "Højbjerg 2",
+        "Ikast",
+        "KBK Kbh.",
+        "KMB2010",
+        "Kolding BK",
+        "Langhøj (O)",
+        "Lillerød",
+        "RSL ODENSE OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aarhus AB",
+        "Aarhus AB (N)"
+      ]
+    },
+    {
+      "seasonFrom": 2023,
+      "seasonTo": 2024,
+      "ligaTeam": "Solrød Strand",
+      "runde3TextualKey": "solrød strand",
+      "clubCanonical": "solrød strand",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Solrød Strand"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Solrød Strand 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Greve 2",
+        "Hillerød",
+        "Hvidovre 2 (O)",
+        "Højbjerg 2",
+        "Ikast",
+        "KBK Kbh.",
+        "KMB2010",
+        "Kolding BK",
+        "Langhøj (O)",
+        "Lillerød",
+        "RSL ODENSE OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aarhus AB",
+        "Aarhus AB (N)"
+      ]
+    },
+    {
+      "seasonFrom": 2023,
+      "seasonTo": 2024,
+      "ligaTeam": "Værløse",
+      "runde3TextualKey": "værløse",
+      "clubCanonical": "værløse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Værløse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Værløse 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Greve 2",
+        "Hillerød",
+        "Hvidovre 2 (O)",
+        "Højbjerg 2",
+        "Ikast",
+        "KBK Kbh.",
+        "KMB2010",
+        "Kolding BK",
+        "Langhøj (O)",
+        "Lillerød",
+        "RSL ODENSE OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aarhus AB",
+        "Aarhus AB (N)"
+      ]
+    },
+    {
+      "seasonFrom": 2023,
+      "seasonTo": 2024,
+      "ligaTeam": "Gentofte",
+      "runde3TextualKey": "gentofte",
+      "clubCanonical": "gentofte",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Gentofte"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Gentofte 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Greve 2",
+        "Hillerød",
+        "Hvidovre 2 (O)",
+        "Højbjerg 2",
+        "Ikast",
+        "KBK Kbh.",
+        "KMB2010",
+        "Kolding BK",
+        "Langhøj (O)",
+        "Lillerød",
+        "RSL ODENSE OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aarhus AB",
+        "Aarhus AB (N)"
+      ]
+    },
+    {
+      "seasonFrom": 2023,
+      "seasonTo": 2024,
+      "ligaTeam": "Aarhus AB",
+      "runde3TextualKey": "aarhus ab",
+      "clubCanonical": "aarhus ab",
+      "classification": "entydig_1_division",
+      "sameLevel": [],
+      "firstDivisionMatches": [
+        "Aarhus AB"
+      ],
+      "nearCandidates": [
+        {
+          "name": "Aarhus AB (N)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Greve 2",
+        "Hillerød",
+        "Hvidovre 2 (O)",
+        "Højbjerg 2",
+        "Ikast",
+        "KBK Kbh.",
+        "KMB2010",
+        "Kolding BK",
+        "Langhøj (O)",
+        "Lillerød",
+        "RSL ODENSE OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aarhus AB",
+        "Aarhus AB (N)"
+      ]
+    },
+    {
+      "seasonFrom": 2023,
+      "seasonTo": 2024,
+      "ligaTeam": "Hvidovre",
+      "runde3TextualKey": "hvidovre",
+      "clubCanonical": "hvidovre",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Hvidovre"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Hvidovre 2 (O)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Greve 2",
+        "Hillerød",
+        "Hvidovre 2 (O)",
+        "Højbjerg 2",
+        "Ikast",
+        "KBK Kbh.",
+        "KMB2010",
+        "Kolding BK",
+        "Langhøj (O)",
+        "Lillerød",
+        "RSL ODENSE OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aarhus AB",
+        "Aarhus AB (N)"
+      ]
+    },
+    {
+      "seasonFrom": 2023,
+      "seasonTo": 2024,
+      "ligaTeam": "Ukendt modstander",
+      "runde3TextualKey": "ukendt modstander",
+      "clubCanonical": "ukendt modstander",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Ukendt modstander"
+      ],
+      "firstDivisionMatches": [
+        "Ukendt modstander"
+      ],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Greve 2",
+        "Hillerød",
+        "Hvidovre 2 (O)",
+        "Højbjerg 2",
+        "Ikast",
+        "KBK Kbh.",
+        "KMB2010",
+        "Kolding BK",
+        "Langhøj (O)",
+        "Lillerød",
+        "RSL ODENSE OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aarhus AB",
+        "Aarhus AB (N)"
+      ]
+    },
+    {
+      "seasonFrom": 2023,
+      "seasonTo": 2024,
+      "ligaTeam": "Vendsyssel",
+      "runde3TextualKey": "vendsyssel",
+      "clubCanonical": "vendsyssel",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Vendsyssel"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Greve 2",
+        "Hillerød",
+        "Hvidovre 2 (O)",
+        "Højbjerg 2",
+        "Ikast",
+        "KBK Kbh.",
+        "KMB2010",
+        "Kolding BK",
+        "Langhøj (O)",
+        "Lillerød",
+        "RSL ODENSE OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aarhus AB",
+        "Aarhus AB (N)"
+      ]
+    },
+    {
+      "seasonFrom": 2023,
+      "seasonTo": 2024,
+      "ligaTeam": "Greve",
+      "runde3TextualKey": "greve",
+      "clubCanonical": "greve",
+      "classification": "entydig_1_division",
+      "sameLevel": [],
+      "firstDivisionMatches": [
+        "Greve"
+      ],
+      "nearCandidates": [
+        {
+          "name": "Greve 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Gentofte 2",
+        "Greve",
+        "Greve 2",
+        "Hillerød",
+        "Hvidovre 2 (O)",
+        "Højbjerg 2",
+        "Ikast",
+        "KBK Kbh.",
+        "KMB2010",
+        "Kolding BK",
+        "Langhøj (O)",
+        "Lillerød",
+        "RSL ODENSE OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J (O)",
+        "Værløse 2",
+        "Aarhus AB",
+        "Aarhus AB (N)"
+      ]
+    },
+    {
+      "seasonFrom": 2024,
+      "seasonTo": 2025,
+      "ligaTeam": "RSL ODENSE OBK",
+      "runde3TextualKey": "rsl odense obk",
+      "clubCanonical": "rsl odense obk",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Odense OBK 2",
+          "score": 0.67
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Badminton Esbjerg (O)",
+        "Gentofte 2",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lillerød 2",
+        "Lyngby",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton (N)",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "seasonFrom": 2024,
+      "seasonTo": 2025,
+      "ligaTeam": "Solrød Strand",
+      "runde3TextualKey": "solrød strand",
+      "clubCanonical": "solrød strand",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Solrød Strand"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Solrød Strand 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Badminton Esbjerg (O)",
+        "Gentofte 2",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lillerød 2",
+        "Lyngby",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton (N)",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "seasonFrom": 2024,
+      "seasonTo": 2025,
+      "ligaTeam": "Vendsyssel",
+      "runde3TextualKey": "vendsyssel",
+      "clubCanonical": "vendsyssel",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Badminton Esbjerg (O)",
+        "Gentofte 2",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lillerød 2",
+        "Lyngby",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton (N)",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "seasonFrom": 2024,
+      "seasonTo": 2025,
+      "ligaTeam": "Højbjerg/Via Biler (M)",
+      "runde3TextualKey": "højbjerg/via biler (m)",
+      "clubCanonical": "højbjerg/via biler",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Højbjerg 2",
+          "score": 0.33
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Badminton Esbjerg (O)",
+        "Gentofte 2",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lillerød 2",
+        "Lyngby",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton (N)",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "seasonFrom": 2024,
+      "seasonTo": 2025,
+      "ligaTeam": "Skovshoved",
+      "runde3TextualKey": "skovshoved",
+      "clubCanonical": "skovshoved",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Skovshoved"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Skovshoved 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Badminton Esbjerg (O)",
+        "Gentofte 2",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lillerød 2",
+        "Lyngby",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton (N)",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "seasonFrom": 2024,
+      "seasonTo": 2025,
+      "ligaTeam": "Hvidovre",
+      "runde3TextualKey": "hvidovre",
+      "clubCanonical": "hvidovre",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Hvidovre"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Hvidovre 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Badminton Esbjerg (O)",
+        "Gentofte 2",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lillerød 2",
+        "Lyngby",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton (N)",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "seasonFrom": 2024,
+      "seasonTo": 2025,
+      "ligaTeam": "Team Skælskør-Slagelse",
+      "runde3TextualKey": "team skælskør-slagelse",
+      "clubCanonical": "team skælskør-slagelse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Team Skælskør-Slagelse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Badminton Esbjerg (O)",
+        "Gentofte 2",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lillerød 2",
+        "Lyngby",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton (N)",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "seasonFrom": 2024,
+      "seasonTo": 2025,
+      "ligaTeam": "Værløse",
+      "runde3TextualKey": "værløse",
+      "clubCanonical": "værløse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Værløse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Værløse 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Badminton Esbjerg (O)",
+        "Gentofte 2",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lillerød 2",
+        "Lyngby",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton (N)",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "seasonFrom": 2024,
+      "seasonTo": 2025,
+      "ligaTeam": "Gentofte",
+      "runde3TextualKey": "gentofte",
+      "clubCanonical": "gentofte",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Gentofte"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Gentofte 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Badminton Esbjerg (O)",
+        "Gentofte 2",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lillerød 2",
+        "Lyngby",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton (N)",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "seasonFrom": 2024,
+      "seasonTo": 2025,
+      "ligaTeam": "Aalborg Triton (O)",
+      "runde3TextualKey": "aalborg triton (o)",
+      "clubCanonical": "aalborg triton",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Aalborg Triton (N)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Badminton Esbjerg (O)",
+        "Gentofte 2",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lillerød 2",
+        "Lyngby",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton (N)",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "seasonFrom": 2024,
+      "seasonTo": 2025,
+      "ligaTeam": "Aalborg Triton",
+      "runde3TextualKey": "aalborg triton",
+      "clubCanonical": "aalborg triton",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Aalborg Triton (N)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Badminton Esbjerg (O)",
+        "Gentofte 2",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lillerød 2",
+        "Lyngby",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton (N)",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "seasonFrom": 2024,
+      "seasonTo": 2025,
+      "ligaTeam": "Højbjerg/Via Biler",
+      "runde3TextualKey": "højbjerg/via biler",
+      "clubCanonical": "højbjerg/via biler",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Højbjerg 2",
+          "score": 0.33
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Badminton Esbjerg (O)",
+        "Gentofte 2",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lillerød 2",
+        "Lyngby",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton (N)",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "seasonFrom": 2024,
+      "seasonTo": 2025,
+      "ligaTeam": "Ukendt modstander",
+      "runde3TextualKey": "ukendt modstander",
+      "clubCanonical": "ukendt modstander",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Ukendt modstander"
+      ],
+      "firstDivisionMatches": [
+        "Ukendt modstander"
+      ],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Badminton Esbjerg (O)",
+        "Gentofte 2",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lillerød 2",
+        "Lyngby",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton (N)",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "seasonFrom": 2024,
+      "seasonTo": 2025,
+      "ligaTeam": "Langhøj",
+      "runde3TextualKey": "langhøj",
+      "clubCanonical": "langhøj",
+      "classification": "entydig_1_division",
+      "sameLevel": [],
+      "firstDivisionMatches": [
+        "Langhøj"
+      ],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Badminton Esbjerg (O)",
+        "Gentofte 2",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "KBK Kbh.",
+        "Kolding BK",
+        "Langhøj",
+        "Lillerød",
+        "Lillerød 2",
+        "Lyngby",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Ukendt modstander",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton (N)",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "seasonFrom": 2025,
+      "seasonTo": 2026,
+      "ligaTeam": "Vendsyssel (M)",
+      "runde3TextualKey": "vendsyssel (m)",
+      "clubCanonical": "vendsyssel",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Gentofte 2",
+        "Greve 2 (O)",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Kolding BK",
+        "Lillerød",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Team Skælskør-Slagelse (N)",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "seasonFrom": 2025,
+      "seasonTo": 2026,
+      "ligaTeam": "Skovshoved",
+      "runde3TextualKey": "skovshoved",
+      "clubCanonical": "skovshoved",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Skovshoved"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Skovshoved 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Gentofte 2",
+        "Greve 2 (O)",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Kolding BK",
+        "Lillerød",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Team Skælskør-Slagelse (N)",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "seasonFrom": 2025,
+      "seasonTo": 2026,
+      "ligaTeam": "Hvidovre",
+      "runde3TextualKey": "hvidovre",
+      "clubCanonical": "hvidovre",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Hvidovre 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Gentofte 2",
+        "Greve 2 (O)",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Kolding BK",
+        "Lillerød",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Team Skælskør-Slagelse (N)",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "seasonFrom": 2025,
+      "seasonTo": 2026,
+      "ligaTeam": "Højbjerg",
+      "runde3TextualKey": "højbjerg",
+      "clubCanonical": "højbjerg",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Højbjerg"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Højbjerg 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Gentofte 2",
+        "Greve 2 (O)",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Kolding BK",
+        "Lillerød",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Team Skælskør-Slagelse (N)",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "seasonFrom": 2025,
+      "seasonTo": 2026,
+      "ligaTeam": "Gentofte",
+      "runde3TextualKey": "gentofte",
+      "clubCanonical": "gentofte",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Gentofte"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Gentofte 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Gentofte 2",
+        "Greve 2 (O)",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Kolding BK",
+        "Lillerød",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Team Skælskør-Slagelse (N)",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "seasonFrom": 2025,
+      "seasonTo": 2026,
+      "ligaTeam": "Værløse",
+      "runde3TextualKey": "værløse",
+      "clubCanonical": "værløse",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Værløse"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Værløse 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Gentofte 2",
+        "Greve 2 (O)",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Kolding BK",
+        "Lillerød",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Team Skælskør-Slagelse (N)",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "seasonFrom": 2025,
+      "seasonTo": 2026,
+      "ligaTeam": "Greve (O)",
+      "runde3TextualKey": "greve (o)",
+      "clubCanonical": "greve",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Greve 2 (O)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Gentofte 2",
+        "Greve 2 (O)",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Kolding BK",
+        "Lillerød",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Team Skælskør-Slagelse (N)",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "seasonFrom": 2025,
+      "seasonTo": 2026,
+      "ligaTeam": "Solrød Strand",
+      "runde3TextualKey": "solrød strand",
+      "clubCanonical": "solrød strand",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Solrød Strand"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Solrød Strand 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Gentofte 2",
+        "Greve 2 (O)",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Kolding BK",
+        "Lillerød",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Team Skælskør-Slagelse (N)",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "seasonFrom": 2025,
+      "seasonTo": 2026,
+      "ligaTeam": "Odense OBK",
+      "runde3TextualKey": "odense obk",
+      "clubCanonical": "odense obk",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Odense OBK"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Odense OBK 2",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Gentofte 2",
+        "Greve 2 (O)",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Kolding BK",
+        "Lillerød",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Team Skælskør-Slagelse (N)",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "seasonFrom": 2025,
+      "seasonTo": 2026,
+      "ligaTeam": "Team Skælskør-Slagelse",
+      "runde3TextualKey": "team skælskør-slagelse",
+      "clubCanonical": "team skælskør-slagelse",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Team Skælskør-Slagelse (N)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Gentofte 2",
+        "Greve 2 (O)",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Kolding BK",
+        "Lillerød",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Team Skælskør-Slagelse (N)",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "seasonFrom": 2025,
+      "seasonTo": 2026,
+      "ligaTeam": "Lillerød",
+      "runde3TextualKey": "lillerød",
+      "clubCanonical": "lillerød",
+      "classification": "entydig_1_division",
+      "sameLevel": [],
+      "firstDivisionMatches": [
+        "Lillerød"
+      ],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Gentofte 2",
+        "Greve 2 (O)",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Kolding BK",
+        "Lillerød",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Team Skælskør-Slagelse (N)",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "seasonFrom": 2025,
+      "seasonTo": 2026,
+      "ligaTeam": "Greve",
+      "runde3TextualKey": "greve",
+      "clubCanonical": "greve",
+      "classification": "fortsætter_i_Ligaen",
+      "sameLevel": [
+        "Greve"
+      ],
+      "firstDivisionMatches": [],
+      "nearCandidates": [
+        {
+          "name": "Greve 2 (O)",
+          "score": 1
+        }
+      ],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Gentofte 2",
+        "Greve 2 (O)",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Kolding BK",
+        "Lillerød",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Team Skælskør-Slagelse (N)",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB"
+      ]
+    },
+    {
+      "seasonFrom": 2025,
+      "seasonTo": 2026,
+      "ligaTeam": "Ukendt modstander",
+      "runde3TextualKey": "ukendt modstander",
+      "clubCanonical": "ukendt modstander",
+      "classification": "ingen_tekstlig_efterfølger",
+      "sameLevel": [],
+      "firstDivisionMatches": [],
+      "nearCandidates": [],
+      "allFirstDivisionTeams": [
+        "Badminton Esbjerg",
+        "Gentofte 2",
+        "Greve 2 (O)",
+        "Hillerød",
+        "Hvidovre 2",
+        "Højbjerg 2",
+        "Kolding BK",
+        "Lillerød",
+        "Odense OBK 2",
+        "Skovshoved 2",
+        "Solrød Strand 2",
+        "Team Skælskør-Slagelse (N)",
+        "Viby J",
+        "Værløse 2",
+        "Aalborg Triton",
+        "Aarhus AB"
+      ]
+    }
+  ]
+}
