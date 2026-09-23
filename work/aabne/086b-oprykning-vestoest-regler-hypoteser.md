@@ -9,7 +9,19 @@ mangel. Del 2 af 3 i opsplitningen af det oprindelige 086-kort.
 086a er merget til `main` (eller ranker denne gren ovenpå 086a's gren, hvis 086a stadig er åben —
 afklar rækkefølgen med Christoffer før du starter hvis det er uklart).
 
-**Baggrund:** Efter at have set det visuelle kort fra opgave 085 har Christoffer rejst en række konkrete,
+**Baggrund (opdateret efter 086a's afslutning):** Opgave 086a hentede et klub → hjemmeregion-register
+via `SearchClubInfo`, men endpointet leverer kun klubnavn og postnummer — IKKE hjemmeregion.
+`club_registry.region_id` er derfor `NULL` for alle 796 klubber, korrekt uden gæt. Det betyder Mål 3's
+Vest/Øst-sporing (og Mål 1's "hvilke lokale hold rykkede op")  IKKE kan slå region op direkte i
+`club_registry` — brug i stedet en af disse to metoder (eller begge, og sammenlign): (a) postnummer-
+mønstre fra `club_registry.postal_code` sammenholdt med `regions`-tabellens kendte geografi, eller
+(b) hvilke regionale ligaer/puljer klubbens hold historisk har spillet i (dvs. udled klubbens
+"hjemmeregion" empirisk fra hvor de allerede findes i `league_matches`/`league_groups`, i stedet for fra
+et eksternt opslag). Metode (b) er formentlig den mest robuste, da den bygger på faktisk spilleaktivitet
+snarere end en administrativ adresse, som ikke nødvendigvis følger den sportslige regionsinddeling. Marker
+tydeligt i resultatdokumentet hvilken metode der blev brugt for hvert fund.
+
+Efter at have set det visuelle kort fra opgave 085 har Christoffer rejst en række konkrete,
 empirisk testbare spørgsmål om hvordan puljer reelt hænger sammen. Ingen af dem skal besvares ved at
 "det giver mening" — kun ved faktisk fundet databelæg, regeltekst, eller en dokumenteret konklusion om
 at beviset er for tyndt.
