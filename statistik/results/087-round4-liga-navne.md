@@ -1,6 +1,6 @@
 # Opgave 087 — runde 4: Liga-navne og alias-forberedelse
 
-Genereret: 2026-09-23T19:43:56.516Z
+Genereret: 2026-09-23T19:48:50.927Z
 
 Dette er kun forberedelse til manuel alias-bekræftelse. Ingen aliaser er oprettet, og ingen database er ændret. `tekstligt nærmeste` er kun token-overlap og er **ikke** en identitetsvurdering.
 
@@ -34,7 +34,7 @@ Dette er kun forberedelse til manuel alias-bekræftelse. Ingen aliaser er oprett
 | fortsætter_i_Ligaen | 138 |
 | entydig_1_division | 11 |
 
-De 57 `ingen_tekstlig_efterfølger` er de relevante mulige navneskift/fusioner. De resterende ikke-nedadgående overgange er vist for fuld sporbarhed, men omfatter hold der fortsætter i Ligaen.
+De 55 `ingen_tekstlig_efterfølger` er de relevante mulige navneskift/fusioner. Runde 3's rå 57-tal indeholdt to ekstra 2020-noder, fordi en afsluttende punktumvariant af semifinalefelterne blev behandlet som et særskilt hold. Denne visningsrapport samler hver sådan placeholder. De resterende ikke-nedadgående overgange er vist for fuld sporbarhed, men omfatter hold der fortsætter i Ligaen.
 
 ### 2010/11
 
