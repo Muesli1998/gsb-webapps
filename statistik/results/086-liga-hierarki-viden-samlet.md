@@ -101,6 +101,12 @@ bør genbruges — men for KLUBNAVNE, ikke spillernavne, og formentlig med et pa
 Se opgave 087 (`work/aabne/087-holdidentitet-paa-tvaers-af-saesoner.md`) for den planlagte, dedikerede
 undersøgelse af dette.
 
+
+### Opgave 087-resultat (2026-09-23)
+
+Tre uafhængige metoder blev kørt på 1.353 `new_or_returning`-rækker fra 086e. Metode A (top-down-anker) fandt 43, metode B (forsigtig Unicode/NFC/case/whitespace-canonicalisering uden opfundne aliaser) fandt 6, og metode C (verificerbart n→n+1-holdnummermønster) fandt 8. 1.310 rækker havde ingen metodefund; 29 havde kun et separat/uafklaret spor. Metoderne var aldrig alle enige; 6 havde A+B-enighed. GSB havde ingen rækker i netop denne 1.353-population, så GSB-facitkalibrering skal ske på en separat, eksplicit population.
+
+086e's 1.022 kandidat-rækker blev genkørt med den kombinerede model; den fulde rækkevise fordeling og konkrete eksempler ligger i `statistik/results/087-holdidentitet-paa-tvaers-af-saesoner.json`. Resultatet dokumenterer, at de fleste resterende identiteter ikke kan løses sikkert fra de gemte kilder alene. Ingen database blev ændret.
 ## Kilder / relaterede opgaver
 
 `work/loeste/085-niveau-fra-rekkefoelge-og-skabelon.md`, `086a-fundament-rekkefoelge-spilleform-klubregister.md`,

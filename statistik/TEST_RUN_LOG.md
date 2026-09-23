@@ -685,3 +685,8 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
 - Kandidater: exact 131, samme klub andet hold 92, ikke fundet i næste niveau 378, fundet i lavere niveau 188, ikke fundet i lavere niveau 233.
 - Puljerenhed: 418 helt rene, 67 på 80-99 %, 194 på 50-79 %, 12 under 50 %. 158 ukendte hold er listet individuelt med årsag i JSON.
 - Ingen nye API-kald; databaser read-only; SHA-256 for normalized DB uændret.
+
+## 2026-09-23 — opgave 087
+- Tre read-only holdidentitetsmetoder kørt på 1.353 unresolved-rækker: A=43, B=6, C=8; 1.310 uden metodefund.
+- Kombinationsresultat: 37 A-only, 6 A+B, 0 alle tre. 086e's 1.022 kandidater genkørt og gemt rækkevis i 087-JSON.
+- Ingen databaseændringer eller API-kald; normalized DB-hash uændret.

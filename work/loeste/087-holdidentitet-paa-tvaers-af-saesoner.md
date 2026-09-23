@@ -155,6 +155,21 @@ projektet.
 
 (Udfyldes af den der løser opgaven. Christoffer svarer her i filen.)
 
+## Spørgsmål — udført analyse (2026-09-23)
+
+- Baseline: 1.353 `new_or_returning`-rækker fra 086e.
+- Metode A fandt 43, metode B 6 og metode C 8. Kombinationer: 1.310 uden fund, 37 A-only, 6 A+B. Ingen A+B+C-enighed.
+- Årsagsfordeling: 6 `likely_name_variation_or_exact_canonical`, 8 `likely_holdnummer_shift`, 1.310 `no_trace_of_club_in_lower_levels`, 29 `other_or_unresolved`. Konkrete eksempler ligger i JSON.
+- 086e's kandidatpopulation på 1.022 blev genkørt med den kombinerede model og gemt række for række i `revisedCandidateSummary`.
+- GSB-facitkalibrering gav 0 rækker i netop 1.353-populationen; der blev derfor ikke opfundet en GSB-konklusion ud fra en tom stikprøve.
+- Der blev ikke skrevet til `liga-landskab.db`; canonicalisering er implementeret som en read-only afledt metode i scriptet, ikke som en stiltiende databasekolonne.
+
+- `statistik/results/086-liga-hierarki-viden-samlet.md` er opdateret i afsnit 6.
+- `gsb-statistik-normalized.db` SHA-256 før/efter: `49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E` (uændret).
+- Ingen nye API-kald; beskyttede mapper og databaser er urørte.
+- Begrænsning: Metode A er en empirisk top-down-kontinuitetsmodel og bruger ikke et hårdt reglementstal. Metode B opfinder ingen aliaser; Metode C er kun et signal, ikke automatisk identitetsbevis.
+
 ## Resultatnote
 
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+
