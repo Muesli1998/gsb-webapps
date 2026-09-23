@@ -679,3 +679,9 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
 - HTML-dokumentordenen kan genparses, men 7.161 puljer har flere observerede ordrer, fordi `league_groups`-nøglen mangler `region_id`; ingen `display_order`-kolonne blev derfor skrevet.
 - 077-sammenligning: 343/343 råtekst-match; 320/343 entydig order, 23 tvetydige.
 - Ingen API-kald og ingen databaseændringer. Hash af `gsb-statistik-normalized.db` var identisk før/efter.
+
+## 2026-09-23 — opgave 086e
+- Read-only fuld revisionsanalyse: 691 seniorpuljer, 1.022 kandidat-rækker og 1.584 sæson/niveau-overgange.
+- Kandidater: exact 131, samme klub andet hold 92, ikke fundet i næste niveau 378, fundet i lavere niveau 188, ikke fundet i lavere niveau 233.
+- Puljerenhed: 418 helt rene, 67 på 80-99 %, 194 på 50-79 %, 12 under 50 %. 158 ukendte hold er listet individuelt med årsag i JSON.
+- Ingen nye API-kald; databaser read-only; SHA-256 for normalized DB uændret.

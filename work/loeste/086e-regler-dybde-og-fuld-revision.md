@@ -116,6 +116,27 @@ begge dele og lad det stå åbent, i stedet for at antage. Samme forsigtighedspr
 
 (Udfyldes af den der løser opgaven. Christoffer svarer her i filen.)
 
+## Spørgsmål — udført analyse (2026-09-23)
+
+### Mål 1
+
+Fundne offentlige DH-udgaver: 2020, 2022, 2023-juli, 2023-november, 2024, 2025 og 2026. 2019, 2021 og 2027 blev ikke fundet som særskilte offentlige DH-PDF'er i denne søgning. Den fulde URL-/årsliste og ordrette citater ligger i `statistik/results/086e-regler-dybde-og-fuld-revision.json` og `.md`. 2026 §26 citerer direkte fem-holdsloftet, to-holdsundtagelserne, adskillelse af samme klub, første-runde-opgøret og tvangsnedrykning; §28-citatet dækker afslag-kaskaden. Regionale kilder for København, Sjælland og Fyn er registreret separat, fordi 2023-2026 §5 udtrykkeligt overlader lokale op-/nedrykningsregler til kredsene.
+
+### Mål 2
+
+Der blev rekonstrueret 691 puljestillinger og 1.584 sæson/niveau-overgange. Kandidatklassifikationerne blev: `exact_candidate_found` 131, `same_club_other_team` 92, `not_found_next_level` 378, `candidate_found_lower_level` 188 og `not_found_lower_level` 233. De to retninger giver 1.022 kandidat-rækker (601 top + 421 bund). Alle rå rækker med sæson, niveau, pulje, hold og klassifikation ligger i JSON. Nye hold i næste niveau blev vendt om og klassificeret som `new_from_lower_level` 231 eller `new_or_returning` 1.353; den sidste kategori kræver yderligere kilde-/regeldata for at skelne oprykning fra tilbagekomst eller identitetsændring.
+
+### Mål 3
+
+Renhed pr. pulje: 418 puljer var 100 %, 67 var 80-99 %, 194 var 50-79 %, og 12 var under 50 %. Individuelle holdklassifikationer: 2.413 øst, 2.175 vest, 11 med blandet lokalseriehistorik og 158 ukendte. Alle 158 ukendte har individuel årsag i JSON (`no-local-history-and-no-postcode`, `no-postcode-after-local-history` eller `postcode-outside-classified-range`) med sæson/niveau/pulje/hold.
+
+`BADFYN`, `BADMIDJ`, `BADNDRJ` og `BADSDRJ` forekommer som faktisk gemt lokalseriehistorik og er derfor behandlet som vestlig evidens. Det er ikke en ren navneantagelse; puljer med blanding eller manglende evidens er bevaret som undtagelser.
+
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+- Script: `statistik/scripts/086e-regler-dybde-og-fuld-revision.mjs`.
+- Rapporter: `statistik/results/086e-regler-dybde-og-fuld-revision.md` og `.json`.
+- Databaserne blev kun læst. `gsb-statistik-normalized.db` SHA-256 før/efter: `49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E`.
+- Ingen nye API-kald. Beskyttede mapper blev ikke ændret.
+- Begrænsning: klassifikationen af nye/ændrede hold er empirisk identitetskontinuitet, ikke et officielt afgørelsesregister; klublofter, kvalifikationskampe, afslag og navneskift kan ikke altid skelnes med de gemte data alene.
+
