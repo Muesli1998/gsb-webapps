@@ -19,16 +19,19 @@ den til at finde den rette gruppe pr. sæson, gæt ikke ud fra navnemønster ale
 
 ## Mål
 
-1. **For hver sæson (så mange af de 17 som dataen dækker for netop disse to niveauer):** rekonstruér
-   Ligaens grundspilsstilling (placering 1-10) og 1. divisions stilling for BÅDE dens
-   "oprykningsspil"/kvalifikationsgruppe og dens nedrykningsspil-gruppe, ud fra de faktiske kampresultater
-   i `league_matches`/`match_categories` (samme metode som opgave 086d's standings-rekonstruktion — genbrug
-   det script hvis det stadig findes og passer).
+1. **For hver sæson (så mange af de 17 som dataen dækker for netop disse niveauer):** rekonstruér
+   Ligaens grundspilsstilling (placering 1-10), 1. divisions stilling for BÅDE dens
+   "oprykningsspil"/kvalifikationsgruppe (mod Ligaen) og dens nedrykningsspil-gruppe (mod 2. division), OG
+   **2. divisions oprykningsspil/kvalifikationsgruppe** (dem der spiller sig op mod/i konkurrence med 1.
+   divisions nedrykningskandidater) — ud fra de faktiske kampresultater i `league_matches`/
+   `match_categories` (samme metode som opgave 086d's standings-rekonstruktion — genbrug det script hvis
+   det stadig findes og passer). Formålet er at kunne verificere BÅDE at de rigtige hold rykker ned fra 1.
+   division OG at de rigtige hold rykker op fra 2. division til 1. division — ikke kun den ene retning.
 2. **Byg én samlet, menneskeligt læsbar tabel** (CSV eller lignende, én række pr. sæson pr. hold-hændelse)
    med disse kolonner:
    - `sæson`
    - `hold` (rå navn som det står i kilden)
-   - `niveau_denne_sæson` (Ligaen / 1. division)
+   - `niveau_denne_sæson` (Ligaen / 1. division / 2. division — kun 2. divisions oprykningsspil/kvalifikationshold er med, ikke hele 2. division)
    - `placering` (i grundspil/nedrykningsspil, som relevant)
    - `hændelse` (fx "automatisk nedrykning", "kvalifikationskamp mod 1.divisions nr. 2",
      "automatisk oprykning", "kvalifikationskamp mod Ligaens nr. 9", "forbliver i Ligaen (nr. 7-8)")
@@ -40,9 +43,12 @@ den til at finde den rette gruppe pr. sæson, gæt ikke ud fra navnemønster ale
    - `christoffer_bekræftet` (TOM kolonne — Christoffer udfylder selv: ja/nej/kommentar)
 3. **Udfyld IKKE `christoffer_bekræftet`-kolonnen** — den er til hans egen brug. Gæt heller ikke i
    `niveau_næste_sæson_faktisk` hvis det ikke entydigt kan findes — skriv "ikke fundet" frem for at gætte.
-4. **Lever tabellen som en fil Christoffer nemt kan åbne og redigere** — enten CSV i
-   `statistik/results/089-liga-1div-revisionstabel.csv`, eller hvis det giver bedre mening, foreslå selv
-   et format (fx et regneark) i "Spørgsmål" og vent på hans valg, hvis du er i tvivl.
+4. **Lever tabellen som RÅ DATA (CSV + JSON), ikke som det endelige review-værktøj.** Denne opgave
+   bygger og leverer datasættet i `statistik/results/089-liga-1div-revisionstabel.csv` (samme indhold også
+   som `.json`, samme rækker/kolonner, til nemmere viderebehandling). **Det interaktive review-værktøj
+   Christoffer faktisk skal bruge, bygges IKKE i denne opgave** — det bygges af manager-Claude ovenpå dette
+   datasæt (et redigerbart regneark/interaktiv side han kan klikke, sortere og markere i direkte). Denne
+   opgaves eneste leverance er et korrekt, komplet, let-forståeligt råt datasæt — ikke UI.
 
 ## Kontekst
 
