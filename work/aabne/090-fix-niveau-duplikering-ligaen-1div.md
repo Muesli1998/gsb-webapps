@@ -142,7 +142,15 @@ der reelt indeholder et tal der ligner et telefonnummer).
 
 ### Spørgsmål
 
-(Udfyldes af den der løser opgaven. Christoffer svarer her i filen.)
+089-generatoren og de CSV/JSON-filer, dette kort udtrykkeligt skal rette,
+er ikke på `main`: de findes kun på den umergede gren
+`arbejde/089-manuel-revisionstabel-liga-1div` (commits `0685e30` og
+`bdfb223`). 090 er oprettet fra `main` som angivet, men kan derfor ikke
+regenerere eller rette 089-datasættet uden at få disse filer ind først.
+
+**Afklaring nødvendig:** Skal 089 først fast-forward-merges til `main`, eller
+skal 090 bevidst baseres på/cherry-picke 089-commitsene, før rettelsen laves?
+Jeg kopierer ikke den umergede leverance ind manuelt uden denne afklaring.
 
 ## Resultatnote
 
