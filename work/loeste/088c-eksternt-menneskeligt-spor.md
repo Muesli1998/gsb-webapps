@@ -76,5 +76,17 @@ resten af projektet.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`. Opdater desuden
-`statistik/results/086-liga-hierarki-viden-samlet.md` med resultatet af BD-kontakten, hvis relevant.)*
+**Afsluttet 2026-09-24.** Spørgeoplægget er skrevet i
+`statistik/results/088c-eksternt-menneskeligt-spor.md`; ingen henvendelse er
+sendt. Den målrettede Roskilde-søgning fandt BD's offentlige
+Holdturneringsudvalgsoversigt, herunder en specifik kendelsespost for kamp
+`505717`, og gav dermed både et konkret dokumentlink og bevis for, at en
+offentlig afgørelsesoversigt findes. 088b dokumenterede derefter, at
+2025-reglementets §23 lader nr. 4 og 5 i 3.-divisions-nedrykningspuljer gå til
+kvalifikation; Roskilde er dermed forklaret af normal struktur, ikke cap eller
+§28-afslag. Kendelsen er ikke behandlet som yderligere forklaring på
+kvalifikationsudvælgelsen. Der blev ikke lavet bred presse- eller
+referatsøgning: 088b leverede ingen dokumenteret regelændring, som kunne
+afgrænse et repræsentantskabsmøde. `statistik/data/` findes ikke i det
+isolerede worktree; der er ikke skrevet databasefiler og ikke kaldt
+badmintonplayer.dk/nembadminton.dk.

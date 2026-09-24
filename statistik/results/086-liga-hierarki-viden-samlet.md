@@ -136,3 +136,17 @@ Den fulde top-down-model blev nu kørt på deduplikerede seniorholdnoder. Der va
 - **Testcases:** Roskilde nr. 4 i 3.-divisions-nedrykningsspillet spillede og vandt kvalkampen (`505717`), men de gemte HTML-svar indeholder ingen statusmarkør, der forklarer reglen. Gentofte 3 blev forbigået fra 2.-divisions-kvalifikationen, mens nr. 4 Lyngby deltog i 1.-divisions-kvalkampene, samtidig med at Gentofte 1 og 2 var placeret over G3. Det validerer cap-filterets observerede udfald, men den fulde regelmodellering hører til 088b.
 
 088a flytter dermed den næste analyse fra navneheuristik til eksplicitte gruppetyper, rå statusmarkører og regelgrundlag.
+
+### Opgave 088c — offentligt kendelses- og kontaktspor (2026-09-24)
+
+BD's offentlige oversigt over Holdturneringsudvalgets afgørelser har en post
+for den præcise Roskilde-kamp `505717` (*Kendelse i kamp 505717 Badminton
+Roskilde – Dalum Hjallese*) under 3. division, sæson 2025/26. Det dokumenterer
+et offentligt kendelsesarkiv og et specifikt spor for sagen, men ikke i sig
+selv grundlaget for, at Roskilde som nr. 4 i nedrykningsspillet deltog i
+kvalkampen. 088b har siden dokumenteret den normale struktur i
+DH-reglementet 2025 §23: nr. 4 og 5 går til kvalifikation, nr. 6-8 rykker
+direkte ned. Roskilde kræver derfor ingen cap- eller afslag-forklaring.
+Det resterende, valgfrie spørgeoplæg gælder kampkendelsens indhold og
+kendelsesarkivets dækningsgrad og ligger i
+`statistik/results/088c-eksternt-menneskeligt-spor.md`.
