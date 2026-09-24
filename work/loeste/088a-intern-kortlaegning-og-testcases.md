@@ -132,8 +132,7 @@ Samme princip som resten af projektet.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`. Opdater desuden
-`statistik/results/086-liga-hierarki-viden-samlet.md` med det nye facit om gruppetyper og cap-filteret.)*
+**Afsluttet 2026-09-24.** 088a fandt intet stabilt tværsæson-klub-/hold-ID i et repræsentativt rå-HTML-udsnit; `leagueGroupTeamID` er allerede udtrukket og pulje-/sæsonlokalt. Den afledte, genopbyggelige tabel `group_type_katalog` rummer 8.928 navnekombinationer for 18.546 puljer; 939 kombinationer er eksplicit `andet/ukendt`. Dækningsmatrixen har 332 region-sæson-rækker og 77 brudkandidater, som ikke automatisk er tolket som datahuller. Rå HTML gav 2.407 statusmarkørtræf på 1.729 sider. Roskildes kvalforløb er bekræftet, men regelårsagen er ikke forklaret i gemt data og sendes til 088b/088c. Gentofte-testcasen reproducerer det observerede cap-udfald: G3 blev forbigået, mens nr. 4 Lyngby deltog i kvalkampen, efter at G1 og G2 var placeret over G3. `gsb-statistik-normalized.db` havde uændret SHA-256 `49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E`; ingen API-kald eller ekstern søgning blev udført.
 
 ### Arbejdsresultat — første interne gennemkørsel (2026-09-23)
 

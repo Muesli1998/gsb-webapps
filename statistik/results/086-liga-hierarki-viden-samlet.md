@@ -120,3 +120,11 @@ Den første 087-kørsel var ikke en fuld tvungen kaskade: Metode A lavede kun di
 ### Runde 3: faktisk kaskadekørsel i opgave 087 (2026-09-23)
 
 Den fulde top-down-model blev nu kørt på deduplikerede seniorholdnoder. Der var 206 Liga-startpunkter, 34 unikke kæder med mindst én tvungen nedadgående overgang og 0 kæder, der nåede entydigt til Danmarksserien eller regional lokalserie. Tvungen nedadgående succes pr. niveaupar var: Liga→1. division 11/206, 1.→2. division 17/241, 2.→3. division 30/387, 3.→Danmarksserien 50/763 og Danmarksserien→regional lokalserie 68/1.091. Kaskaden ramte 4 af de 1.285 runde-2-rækker uden hele-hierarki-canonical match; resultatet er et overlapstal, ikke fuld identitetsverifikation. Ingen database blev ændret.
+
+### Opgave 088a — intern eksplicit-data-kortlægning (2026-09-24)
+
+- **Identitetssignal:** Et jævnt fordelt 500-siders rå-HTML-udsnit fandt kun allerede udtrukket, pulje-/sæsonlokalt `leagueGroupTeamID`; intet stabilt tværsæson-klub-ID blev fundet.
+- **Gruppetyper:** Den afledte `group_type_katalog` indeholder 8.928 rå navnekombinationer for alle 18.546 puljer. 939 kombinationer er bevidst `andet/ukendt`; de må ikke bruges som automatisk strukturbevis. Den regionale dækningsmatrix har 332 region-sæson-rækker og 77 springkandidater, som kræver særskilt tolkning.
+- **Testcases:** Roskilde nr. 4 i 3.-divisions-nedrykningsspillet spillede og vandt kvalkampen (`505717`), men de gemte HTML-svar indeholder ingen statusmarkør, der forklarer reglen. Gentofte 3 blev forbigået fra 2.-divisions-kvalifikationen, mens nr. 4 Lyngby deltog i 1.-divisions-kvalkampene, samtidig med at Gentofte 1 og 2 var placeret over G3. Det validerer cap-filterets observerede udfald, men den fulde regelmodellering hører til 088b.
+
+088a flytter dermed den næste analyse fra navneheuristik til eksplicitte gruppetyper, rå statusmarkører og regelgrundlag.
