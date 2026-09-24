@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T16:09:33.063Z",
+  "generated_at": "2026-09-24T20:35:51.295Z",
   "columns": [
     "sæson",
     "hold",
@@ -150,7 +150,7 @@
       "hold": "Odense OBK 1",
       "niveau_denne_sæson": "Ligaen",
       "placering": 9,
-      "hændelse": "kvalifikationskamp mod 1.divisions nr. 2",
+      "hændelse": "Ligakvalifikationspulje (ikke direkte 2-holds kamp)",
       "kval_modstander": "",
       "kval_resultat": "",
       "niveau_næste_sæson_algoritme": "ikke fundet",
@@ -198,38 +198,6 @@
       "hold": "Solrød Strand 1",
       "niveau_denne_sæson": "1. division",
       "placering": 2,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "ikke fundet",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "420",
-      "source_group_name_raw": "Kvalifikation til Badmintonligaen",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2010/2011",
-      "hold": "Odense OBK 1",
-      "niveau_denne_sæson": "1. division",
-      "placering": 3,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "ikke fundet",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "420",
-      "source_group_name_raw": "Kvalifikation til Badmintonligaen",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2010/2011",
-      "hold": "Ikast 1",
-      "niveau_denne_sæson": "1. division",
-      "placering": 4,
       "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
       "kval_modstander": "",
       "kval_resultat": "",
@@ -335,134 +303,6 @@
       "source_league_group_id": "406",
       "source_group_name_raw": "Nedrykningsspil fra 1. division",
       "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2010/2011",
-      "hold": "Gentofte 2",
-      "niveau_denne_sæson": "2. division",
-      "placering": 1,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "413",
-      "source_group_name_raw": "Kvalifikation til 1.division",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2010/2011",
-      "hold": "Solrød Strand 2",
-      "niveau_denne_sæson": "2. division",
-      "placering": 2,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "413",
-      "source_group_name_raw": "Kvalifikation til 1.division",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2010/2011",
-      "hold": "Odense OBK 2",
-      "niveau_denne_sæson": "2. division",
-      "placering": 3,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "ikke fundet",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "413",
-      "source_group_name_raw": "Kvalifikation til 1.division",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2010/2011",
-      "hold": "Hvidovre 1",
-      "niveau_denne_sæson": "2. division",
-      "placering": 4,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "ikke fundet",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "413",
-      "source_group_name_raw": "Kvalifikation til 1.division",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2010/2011",
-      "hold": "Badminton Esbjerg 1",
-      "niveau_denne_sæson": "2. division",
-      "placering": 5,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "ikke fundet",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "413",
-      "source_group_name_raw": "Kvalifikation til 1.division",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2010/2011",
-      "hold": "Skovbakken 1",
-      "niveau_denne_sæson": "2. division",
-      "placering": 6,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "ikke fundet",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "413",
-      "source_group_name_raw": "Kvalifikation til 1.division",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2010/2011",
-      "hold": "Greve 2",
-      "niveau_denne_sæson": "2. division",
-      "placering": 7,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "ikke fundet",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "413",
-      "source_group_name_raw": "Kvalifikation til 1.division",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2010/2011",
-      "hold": "BK Aalborg 1",
-      "niveau_denne_sæson": "2. division",
-      "placering": 8,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "ikke fundet",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "413",
-      "source_group_name_raw": "Kvalifikation til 1.division",
-      "source_group_type": "andet/ukendt",
       "source_match_id": ""
     },
     {
@@ -598,7 +438,7 @@
       "hold": "Team Aarhus",
       "niveau_denne_sæson": "Ligaen",
       "placering": 9,
-      "hændelse": "kvalifikationskamp mod 1.divisions nr. 2",
+      "hændelse": "Ligakvalifikationspulje (ikke direkte 2-holds kamp)",
       "kval_modstander": "",
       "kval_resultat": "",
       "niveau_næste_sæson_algoritme": "ikke fundet",
@@ -623,70 +463,6 @@
       "source_league_group_id": "3",
       "source_group_name_raw": "Grundspil",
       "source_group_type": "grundspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2011/2012",
-      "hold": "Odense OBK (N)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 1,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "Ligaen",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "1078",
-      "source_group_name_raw": "Ligakvalifikationsspil",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2011/2012",
-      "hold": "Lillerød",
-      "niveau_denne_sæson": "1. division",
-      "placering": 2,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "Ligaen",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "1078",
-      "source_group_name_raw": "Ligakvalifikationsspil",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2011/2012",
-      "hold": "Team Aarhus",
-      "niveau_denne_sæson": "1. division",
-      "placering": 3,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "ikke fundet",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "1078",
-      "source_group_name_raw": "Ligakvalifikationsspil",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2011/2012",
-      "hold": "Ikast (N)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 4,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "ikke fundet",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "1078",
-      "source_group_name_raw": "Ligakvalifikationsspil",
-      "source_group_type": "andet/ukendt",
       "source_match_id": ""
     },
     {
@@ -723,22 +499,6 @@
     },
     {
       "sæson": "2011/2012",
-      "hold": "Gentofte 2 (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 3,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "1079",
-      "source_group_name_raw": "Nedrykning",
-      "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2011/2012",
       "hold": "Aalborg Triton",
       "niveau_denne_sæson": "1. division",
       "placering": 4,
@@ -747,22 +507,6 @@
       "kval_resultat": "",
       "niveau_næste_sæson_algoritme": "ikke fundet",
       "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "1079",
-      "source_group_name_raw": "Nedrykning",
-      "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2011/2012",
-      "hold": "Solrød Strand 2 (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 5,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
       "christoffer_bekræftet": "",
       "source_league_group_id": "1079",
       "source_group_name_raw": "Nedrykning",
@@ -819,22 +563,6 @@
     },
     {
       "sæson": "2011/2012",
-      "hold": "Holbæk (O)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 3,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "1074",
-      "source_group_name_raw": "Slutspil",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2011/2012",
       "hold": "Greve 2",
       "niveau_denne_sæson": "2. division",
       "placering": 4,
@@ -851,41 +579,9 @@
     },
     {
       "sæson": "2011/2012",
-      "hold": "Skovshoved 2 (O)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 5,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "1074",
-      "source_group_name_raw": "Slutspil",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2011/2012",
       "hold": "Odense OBK 2",
       "niveau_denne_sæson": "2. division",
       "placering": 6,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "1074",
-      "source_group_name_raw": "Slutspil",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2011/2012",
-      "hold": "Aarhus AB 2 (O)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 7,
       "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
       "kval_modstander": "",
       "kval_resultat": "",
@@ -1046,16 +742,16 @@
       "hold": "Gentofte",
       "niveau_denne_sæson": "Ligaen",
       "placering": 9,
-      "hændelse": "kvalifikationskamp mod 1.divisions nr. 2",
-      "kval_modstander": "Lillerød",
-      "kval_resultat": "4-3",
+      "hændelse": "Ligakvalifikationspulje (ikke direkte 2-holds kamp)",
+      "kval_modstander": "",
+      "kval_resultat": "",
       "niveau_næste_sæson_algoritme": "ikke fundet",
       "niveau_næste_sæson_faktisk": "Ligaen",
       "christoffer_bekræftet": "",
       "source_league_group_id": "1637",
       "source_group_name_raw": "Grundspil",
       "source_group_type": "grundspil",
-      "source_match_id": "90769"
+      "source_match_id": ""
     },
     {
       "sæson": "2012/2013",
@@ -1075,22 +771,6 @@
     },
     {
       "sæson": "2012/2013",
-      "hold": "Gentofte",
-      "niveau_denne_sæson": "1. division",
-      "placering": 1,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "Ligaen",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "2181",
-      "source_group_name_raw": "Ligakvalifikationsspillet",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2012/2013",
       "hold": "Højbjerg",
       "niveau_denne_sæson": "1. division",
       "placering": 2,
@@ -1099,22 +779,6 @@
       "kval_resultat": "",
       "niveau_næste_sæson_algoritme": "ikke fundet",
       "niveau_næste_sæson_faktisk": "Ligaen",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "2181",
-      "source_group_name_raw": "Ligakvalifikationsspillet",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2012/2013",
-      "hold": "Lillerød",
-      "niveau_denne_sæson": "1. division",
-      "placering": 3,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
       "christoffer_bekræftet": "",
       "source_league_group_id": "2181",
       "source_group_name_raw": "Ligakvalifikationsspillet",
@@ -1142,22 +806,6 @@
       "hold": "KMB2010",
       "niveau_denne_sæson": "2. division",
       "placering": 1,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "2164",
-      "source_group_name_raw": "Kval. til 1. div.",
-      "source_group_type": "grundspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2012/2013",
-      "hold": "Solrød Strand 2 (N)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 2,
       "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
       "kval_modstander": "",
       "kval_resultat": "",
@@ -1222,22 +870,6 @@
       "hold": "Holbæk",
       "niveau_denne_sæson": "2. division",
       "placering": 6,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "2164",
-      "source_group_name_raw": "Kval. til 1. div.",
-      "source_group_type": "grundspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2012/2013",
-      "hold": "Ikast 2 (O)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 7,
       "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
       "kval_modstander": "",
       "kval_resultat": "",
@@ -1398,16 +1030,16 @@
       "hold": "Værløse",
       "niveau_denne_sæson": "Ligaen",
       "placering": 9,
-      "hændelse": "kvalifikationskamp mod 1.divisions nr. 2",
-      "kval_modstander": "Ikast",
-      "kval_resultat": "4-2",
+      "hændelse": "Ligakvalifikationspulje (ikke direkte 2-holds kamp)",
+      "kval_modstander": "",
+      "kval_resultat": "",
       "niveau_næste_sæson_algoritme": "ikke fundet",
       "niveau_næste_sæson_faktisk": "Ligaen",
       "christoffer_bekræftet": "",
       "source_league_group_id": "2792",
       "source_group_name_raw": "Grundspil",
       "source_group_type": "grundspil",
-      "source_match_id": "136461"
+      "source_match_id": ""
     },
     {
       "sæson": "2013/2014",
@@ -1423,38 +1055,6 @@
       "source_league_group_id": "2792",
       "source_group_name_raw": "Grundspil",
       "source_group_type": "grundspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2013/2014",
-      "hold": "Værløse",
-      "niveau_denne_sæson": "1. division",
-      "placering": 1,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "Ligaen",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "3596",
-      "source_group_name_raw": "Ligakvalifikationsspillet",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2013/2014",
-      "hold": "Højbjerg (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 2,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "Ligaen",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "3596",
-      "source_group_name_raw": "Ligakvalifikationsspillet",
-      "source_group_type": "andet/ukendt",
       "source_match_id": ""
     },
     {
@@ -1487,54 +1087,6 @@
       "source_league_group_id": "3596",
       "source_group_name_raw": "Ligakvalifikationsspillet",
       "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2013/2014",
-      "hold": "Solrød Strand 2 (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 1,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "3595",
-      "source_group_name_raw": "Nedrykning",
-      "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2013/2014",
-      "hold": "Lillerød (N)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 2,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "3595",
-      "source_group_name_raw": "Nedrykning",
-      "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2013/2014",
-      "hold": "KMB2010 (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 3,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "ikke fundet",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "3595",
-      "source_group_name_raw": "Nedrykning",
-      "source_group_type": "nedrykningsspil",
       "source_match_id": ""
     },
     {
@@ -1698,22 +1250,6 @@
       "source_match_id": ""
     },
     {
-      "sæson": "2013/2014",
-      "hold": "Horsens (O)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 8,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "3581",
-      "source_group_name_raw": "Kval. til 1. div.",
-      "source_group_type": "grundspil",
-      "source_match_id": ""
-    },
-    {
       "sæson": "2014/2015",
       "hold": "Team Skælskør-Slagelse",
       "niveau_denne_sæson": "Ligaen",
@@ -1846,16 +1382,16 @@
       "hold": "Vendsyssel",
       "niveau_denne_sæson": "Ligaen",
       "placering": 9,
-      "hændelse": "kvalifikationskamp mod 1.divisions nr. 2",
-      "kval_modstander": "Højbjerg",
-      "kval_resultat": "5-1",
+      "hændelse": "Ligakvalifikationspulje (ikke direkte 2-holds kamp)",
+      "kval_modstander": "",
+      "kval_resultat": "",
       "niveau_næste_sæson_algoritme": "ikke fundet",
       "niveau_næste_sæson_faktisk": "Ligaen",
       "christoffer_bekræftet": "",
       "source_league_group_id": "4278",
       "source_group_name_raw": "Grundspil",
       "source_group_type": "grundspil",
-      "source_match_id": "189039"
+      "source_match_id": ""
     },
     {
       "sæson": "2014/2015",
@@ -1871,38 +1407,6 @@
       "source_league_group_id": "4278",
       "source_group_name_raw": "Grundspil",
       "source_group_type": "grundspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2014/2015",
-      "hold": "Vendsyssel",
-      "niveau_denne_sæson": "1. division",
-      "placering": 1,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "Ligaen",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "5232",
-      "source_group_name_raw": "Ligakvalifikation",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2014/2015",
-      "hold": "Højbjerg",
-      "niveau_denne_sæson": "1. division",
-      "placering": 2,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "Ligaen",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "5232",
-      "source_group_name_raw": "Ligakvalifikation",
-      "source_group_type": "andet/ukendt",
       "source_match_id": ""
     },
     {
@@ -2002,166 +1506,6 @@
       "source_match_id": ""
     },
     {
-      "sæson": "2014/2015",
-      "hold": "Odense OBK 2 (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 5,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "5227",
-      "source_group_name_raw": "Nedrykning",
-      "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2014/2015",
-      "hold": "Hillerød (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 6,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "5227",
-      "source_group_name_raw": "Nedrykning",
-      "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2014/2015",
-      "hold": "Skovshoved 2",
-      "niveau_denne_sæson": "2. division",
-      "placering": 1,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "5179",
-      "source_group_name_raw": "Kval. til 1. div.",
-      "source_group_type": "grundspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2014/2015",
-      "hold": "Greve 2",
-      "niveau_denne_sæson": "2. division",
-      "placering": 2,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "5179",
-      "source_group_name_raw": "Kval. til 1. div.",
-      "source_group_type": "grundspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2014/2015",
-      "hold": "Gentofte 2 (N)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 3,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "5179",
-      "source_group_name_raw": "Kval. til 1. div.",
-      "source_group_type": "grundspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2014/2015",
-      "hold": "Hvidovre (N)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 4,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "5179",
-      "source_group_name_raw": "Kval. til 1. div.",
-      "source_group_type": "grundspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2014/2015",
-      "hold": "Aarhus AB 2",
-      "niveau_denne_sæson": "2. division",
-      "placering": 5,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "5179",
-      "source_group_name_raw": "Kval. til 1. div.",
-      "source_group_type": "grundspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2014/2015",
-      "hold": "Højbjerg 2",
-      "niveau_denne_sæson": "2. division",
-      "placering": 6,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "5179",
-      "source_group_name_raw": "Kval. til 1. div.",
-      "source_group_type": "grundspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2014/2015",
-      "hold": "Skovbakken (O)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 7,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "5179",
-      "source_group_name_raw": "Kval. til 1. div.",
-      "source_group_type": "grundspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2014/2015",
-      "hold": "Værløse 3 (O)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 8,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "5179",
-      "source_group_name_raw": "Kval. til 1. div.",
-      "source_group_type": "grundspil",
-      "source_match_id": ""
-    },
-    {
       "sæson": "2015/2016",
       "hold": "Skovshoved",
       "niveau_denne_sæson": "Ligaen",
@@ -2294,16 +1638,16 @@
       "hold": "Aarhus AB",
       "niveau_denne_sæson": "Ligaen",
       "placering": 9,
-      "hændelse": "kvalifikationskamp mod 1.divisions nr. 2",
-      "kval_modstander": "Ikast",
-      "kval_resultat": "3-4",
+      "hændelse": "Ligakvalifikationspulje (ikke direkte 2-holds kamp)",
+      "kval_modstander": "",
+      "kval_resultat": "",
       "niveau_næste_sæson_algoritme": "ikke fundet",
       "niveau_næste_sæson_faktisk": "Ligaen",
       "christoffer_bekræftet": "",
       "source_league_group_id": "6072",
       "source_group_name_raw": "Grundspil",
       "source_group_type": "grundspil",
-      "source_match_id": "233080"
+      "source_match_id": ""
     },
     {
       "sæson": "2015/2016",
@@ -2323,22 +1667,6 @@
     },
     {
       "sæson": "2015/2016",
-      "hold": "Aarhus AB",
-      "niveau_denne_sæson": "1. division",
-      "placering": 1,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "Ligaen",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "6890",
-      "source_group_name_raw": "Ligakvalifikation",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2015/2016",
       "hold": "Ikast",
       "niveau_denne_sæson": "1. division",
       "placering": 2,
@@ -2347,22 +1675,6 @@
       "kval_resultat": "",
       "niveau_næste_sæson_algoritme": "ikke fundet",
       "niveau_næste_sæson_faktisk": "Ligaen",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "6890",
-      "source_group_name_raw": "Ligakvalifikation",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2015/2016",
-      "hold": "Gentofte",
-      "niveau_denne_sæson": "1. division",
-      "placering": 3,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "ikke fundet",
       "christoffer_bekræftet": "",
       "source_league_group_id": "6890",
       "source_group_name_raw": "Ligakvalifikation",
@@ -2419,22 +1731,6 @@
     },
     {
       "sæson": "2015/2016",
-      "hold": "Skovshoved 2 (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 3,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "6883",
-      "source_group_name_raw": "Nedrykning",
-      "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2015/2016",
       "hold": "Aalborg Triton",
       "niveau_denne_sæson": "1. division",
       "placering": 4,
@@ -2443,22 +1739,6 @@
       "kval_resultat": "",
       "niveau_næste_sæson_algoritme": "ikke fundet",
       "niveau_næste_sæson_faktisk": "ikke fundet",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "6883",
-      "source_group_name_raw": "Nedrykning",
-      "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2015/2016",
-      "hold": "Greve 2 (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 5,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
       "christoffer_bekræftet": "",
       "source_league_group_id": "6883",
       "source_group_name_raw": "Nedrykning",
@@ -2486,22 +1766,6 @@
       "hold": "Gentofte 2",
       "niveau_denne_sæson": "2. division",
       "placering": 1,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "6855",
-      "source_group_name_raw": "Kval. til 1. division",
-      "source_group_type": "grundspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2015/2016",
-      "hold": "Solrød Strand 3 (O)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 2,
       "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
       "kval_modstander": "",
       "kval_resultat": "",
@@ -2579,22 +1843,6 @@
     },
     {
       "sæson": "2015/2016",
-      "hold": "Viby J (O)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 7,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "6855",
-      "source_group_name_raw": "Kval. til 1. division",
-      "source_group_type": "grundspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2015/2016",
       "hold": "Aarhus AB 2",
       "niveau_denne_sæson": "2. division",
       "placering": 8,
@@ -2742,16 +1990,16 @@
       "hold": "Aarhus AB",
       "niveau_denne_sæson": "Ligaen",
       "placering": 9,
-      "hændelse": "kvalifikationskamp mod 1.divisions nr. 2",
-      "kval_modstander": "Gentofte (N)",
-      "kval_resultat": "4-3",
+      "hændelse": "Ligakvalifikationspulje (ikke direkte 2-holds kamp)",
+      "kval_modstander": "",
+      "kval_resultat": "",
       "niveau_næste_sæson_algoritme": "ikke fundet",
       "niveau_næste_sæson_faktisk": "Ligaen",
       "christoffer_bekræftet": "",
       "source_league_group_id": "7826",
       "source_group_name_raw": "Grundspil",
       "source_group_type": "grundspil",
-      "source_match_id": "277095"
+      "source_match_id": ""
     },
     {
       "sæson": "2016/2017",
@@ -2771,57 +2019,9 @@
     },
     {
       "sæson": "2016/2017",
-      "hold": "Gentofte (N)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 1,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "Ligaen",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "8750",
-      "source_group_name_raw": "Ligakvalifikation",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2016/2017",
-      "hold": "Aarhus AB",
-      "niveau_denne_sæson": "1. division",
-      "placering": 2,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "Ligaen",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "8750",
-      "source_group_name_raw": "Ligakvalifikation",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2016/2017",
       "hold": "Aalborg Triton",
       "niveau_denne_sæson": "1. division",
       "placering": 3,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "8750",
-      "source_group_name_raw": "Ligakvalifikation",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2016/2017",
-      "hold": "Ikast (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 4,
       "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
       "kval_modstander": "",
       "kval_resultat": "",
@@ -2895,86 +2095,6 @@
       "source_league_group_id": "8751",
       "source_group_name_raw": "Nedrykning",
       "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2016/2017",
-      "hold": "Højbjerg 2 (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 5,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "8751",
-      "source_group_name_raw": "Nedrykning",
-      "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2016/2017",
-      "hold": "Hvidovre (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 6,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "8751",
-      "source_group_name_raw": "Nedrykning",
-      "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2016/2017",
-      "hold": "Langhøj (O)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 1,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "ikke fundet",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "8713",
-      "source_group_name_raw": "Kvalifikation til 1. division",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2016/2017",
-      "hold": "Lillerød (N)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 2,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "ikke fundet",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "8713",
-      "source_group_name_raw": "Kvalifikation til 1. division",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2016/2017",
-      "hold": "Greve 2 (N)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 3,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "8713",
-      "source_group_name_raw": "Kvalifikation til 1. division",
-      "source_group_type": "andet/ukendt",
       "source_match_id": ""
     },
     {
@@ -3190,16 +2310,16 @@
       "hold": "Odense OBK",
       "niveau_denne_sæson": "Ligaen",
       "placering": 9,
-      "hændelse": "kvalifikationskamp mod 1.divisions nr. 2",
-      "kval_modstander": "Langhøj (O)",
-      "kval_resultat": "5-1",
+      "hændelse": "Ligakvalifikationspulje (ikke direkte 2-holds kamp)",
+      "kval_modstander": "",
+      "kval_resultat": "",
       "niveau_næste_sæson_algoritme": "ikke fundet",
       "niveau_næste_sæson_faktisk": "Ligaen",
       "christoffer_bekræftet": "",
       "source_league_group_id": "9241",
       "source_group_name_raw": "Grundspil",
       "source_group_type": "grundspil",
-      "source_match_id": "318227"
+      "source_match_id": ""
     },
     {
       "sæson": "2017/2018",
@@ -3215,70 +2335,6 @@
       "source_league_group_id": "9241",
       "source_group_name_raw": "Grundspil",
       "source_group_type": "grundspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2017/2018",
-      "hold": "Værløse",
-      "niveau_denne_sæson": "1. division",
-      "placering": 1,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "Ligaen",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "10369",
-      "source_group_name_raw": "Ligakvalifikation",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2017/2018",
-      "hold": "Odense OBK",
-      "niveau_denne_sæson": "1. division",
-      "placering": 2,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "Ligaen",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "10369",
-      "source_group_name_raw": "Ligakvalifikation",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2017/2018",
-      "hold": "Langhøj (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 3,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "ikke fundet",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "10369",
-      "source_group_name_raw": "Ligakvalifikation",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2017/2018",
-      "hold": "Lillerød (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 4,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "ikke fundet",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "10369",
-      "source_group_name_raw": "Ligakvalifikation",
-      "source_group_type": "andet/ukendt",
       "source_match_id": ""
     },
     {
@@ -3347,22 +2403,6 @@
     },
     {
       "sæson": "2017/2018",
-      "hold": "Ikast (N)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 5,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "ikke fundet",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "10362",
-      "source_group_name_raw": "Nedrykning fra 1. division",
-      "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2017/2018",
       "hold": "Skovshoved 2",
       "niveau_denne_sæson": "1. division",
       "placering": 6,
@@ -3375,22 +2415,6 @@
       "source_league_group_id": "10362",
       "source_group_name_raw": "Nedrykning fra 1. division",
       "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2017/2018",
-      "hold": "Højbjerg 2 (N)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 1,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "10334",
-      "source_group_name_raw": "Kvalifikation til 1. division",
-      "source_group_type": "andet/ukendt",
       "source_match_id": ""
     },
     {
@@ -3638,16 +2662,16 @@
       "hold": "Gentofte",
       "niveau_denne_sæson": "Ligaen",
       "placering": 9,
-      "hændelse": "kvalifikationskamp mod 1.divisions nr. 2",
-      "kval_modstander": "Højbjerg",
-      "kval_resultat": "2-4",
+      "hændelse": "Ligakvalifikationspulje (ikke direkte 2-holds kamp)",
+      "kval_modstander": "",
+      "kval_resultat": "",
       "niveau_næste_sæson_algoritme": "ikke fundet",
       "niveau_næste_sæson_faktisk": "1. division",
       "christoffer_bekræftet": "",
       "source_league_group_id": "10955",
       "source_group_name_raw": "Grundspil",
       "source_group_type": "grundspil",
-      "source_match_id": "359896"
+      "source_match_id": ""
     },
     {
       "sæson": "2018/2019",
@@ -3663,54 +2687,6 @@
       "source_league_group_id": "10955",
       "source_group_name_raw": "Grundspil",
       "source_group_type": "grundspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2018/2019",
-      "hold": "Højbjerg",
-      "niveau_denne_sæson": "1. division",
-      "placering": 1,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "ikke fundet",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "12046",
-      "source_group_name_raw": "Ligakvalifikation",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2018/2019",
-      "hold": "Værløse",
-      "niveau_denne_sæson": "1. division",
-      "placering": 2,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "Ligaen",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "12046",
-      "source_group_name_raw": "Ligakvalifikation",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2018/2019",
-      "hold": "Gentofte",
-      "niveau_denne_sæson": "1. division",
-      "placering": 3,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "12046",
-      "source_group_name_raw": "Ligakvalifikation",
-      "source_group_type": "andet/ukendt",
       "source_match_id": ""
     },
     {
@@ -3739,22 +2715,6 @@
       "kval_resultat": "",
       "niveau_næste_sæson_algoritme": "ikke fundet",
       "niveau_næste_sæson_faktisk": "ikke fundet",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "12046",
-      "source_group_name_raw": "Ligakvalifikation",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2018/2019",
-      "hold": "Odense OBK",
-      "niveau_denne_sæson": "1. division",
-      "placering": 6,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
       "christoffer_bekræftet": "",
       "source_league_group_id": "12046",
       "source_group_name_raw": "Ligakvalifikation",
@@ -3891,57 +2851,9 @@
     },
     {
       "sæson": "2019/2020",
-      "hold": "Odense OBK (N)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 1,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "ikke fundet",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "13119",
-      "source_group_name_raw": "Kvalifikation til Badmintonligaen",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2019/2020",
       "hold": "Greve 2",
       "niveau_denne_sæson": "1. division",
       "placering": 2,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "13119",
-      "source_group_name_raw": "Kvalifikation til Badmintonligaen",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2019/2020",
-      "hold": "Gentofte (N)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 3,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "Ligaen",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "13119",
-      "source_group_name_raw": "Kvalifikation til Badmintonligaen",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2019/2020",
-      "hold": "Skovshoved 2 (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 4,
       "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
       "kval_modstander": "",
       "kval_resultat": "",
@@ -4003,41 +2915,9 @@
     },
     {
       "sæson": "2019/2020",
-      "hold": "Ikast (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 8,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "13119",
-      "source_group_name_raw": "Kvalifikation til Badmintonligaen",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2019/2020",
       "hold": "Lillerød",
       "niveau_denne_sæson": "1. division",
       "placering": 1,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "13120",
-      "source_group_name_raw": "Nedrykning fra 1. division",
-      "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2019/2020",
-      "hold": "Kolding BK (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 2,
       "hændelse": "1. divisions nedrykningsspil mod 2. division",
       "kval_modstander": "",
       "kval_resultat": "",
@@ -4067,169 +2947,9 @@
     },
     {
       "sæson": "2019/2020",
-      "hold": "Hvidovre (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 4,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "13120",
-      "source_group_name_raw": "Nedrykning fra 1. division",
-      "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2019/2020",
-      "hold": "Holte (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 5,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "13120",
-      "source_group_name_raw": "Nedrykning fra 1. division",
-      "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2019/2020",
-      "hold": "Holbæk (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 6,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "13120",
-      "source_group_name_raw": "Nedrykning fra 1. division",
-      "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2019/2020",
-      "hold": "abc Aalborg (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 7,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "13120",
-      "source_group_name_raw": "Nedrykning fra 1. division",
-      "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2019/2020",
-      "hold": "Aabenraa (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 8,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "13120",
-      "source_group_name_raw": "Nedrykning fra 1. division",
-      "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2019/2020",
-      "hold": "Højbjerg 2 (N)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 1,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "13117",
-      "source_group_name_raw": "Kvalifikation til 1. division",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2019/2020",
       "hold": "Solrød Strand 3",
       "niveau_denne_sæson": "2. division",
       "placering": 2,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "13117",
-      "source_group_name_raw": "Kvalifikation til 1. division",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2019/2020",
-      "hold": "Viby J (O)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 3,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "13117",
-      "source_group_name_raw": "Kvalifikation til 1. division",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2019/2020",
-      "hold": "Hillerød (O)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 4,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "13117",
-      "source_group_name_raw": "Kvalifikation til 1. division",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2019/2020",
-      "hold": "Lyngby (O)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 5,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "13117",
-      "source_group_name_raw": "Kvalifikation til 1. division",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2019/2020",
-      "hold": "Skovshoved 3 (O)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 6,
       "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
       "kval_modstander": "",
       "kval_resultat": "",
@@ -4406,7 +3126,7 @@
       "hold": "RSL ODENSE OBK (O)",
       "niveau_denne_sæson": "Ligaen",
       "placering": 9,
-      "hændelse": "kvalifikationskamp mod 1.divisions nr. 2",
+      "hændelse": "Ligakvalifikationspulje (ikke direkte 2-holds kamp)",
       "kval_modstander": "",
       "kval_resultat": "",
       "niveau_næste_sæson_algoritme": "ikke fundet",
@@ -4627,22 +3347,6 @@
     },
     {
       "sæson": "2021/2022",
-      "hold": "KBK Kbh. (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 3,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "14461",
-      "source_group_name_raw": "Kvalifikation til Badmintonligaen",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2021/2022",
       "hold": "Kolding BK",
       "niveau_denne_sæson": "1. division",
       "placering": 4,
@@ -4691,22 +3395,6 @@
     },
     {
       "sæson": "2021/2022",
-      "hold": "Viby J (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 7,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "14461",
-      "source_group_name_raw": "Kvalifikation til Badmintonligaen",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2021/2022",
       "hold": "Ikast",
       "niveau_denne_sæson": "1. division",
       "placering": 8,
@@ -4719,22 +3407,6 @@
       "source_league_group_id": "14461",
       "source_group_name_raw": "Kvalifikation til Badmintonligaen",
       "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2021/2022",
-      "hold": "Højbjerg 2 (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 1,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "14462",
-      "source_group_name_raw": "Nedrykning fra 1. division",
-      "source_group_type": "nedrykningsspil",
       "source_match_id": ""
     },
     {
@@ -4774,38 +3446,6 @@
       "hold": "Værløse 2",
       "niveau_denne_sæson": "1. division",
       "placering": 4,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "14462",
-      "source_group_name_raw": "Nedrykning fra 1. division",
-      "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2021/2022",
-      "hold": "Hillerød (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 5,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "14462",
-      "source_group_name_raw": "Nedrykning fra 1. division",
-      "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2021/2022",
-      "hold": "Lyngby (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 6,
       "hændelse": "1. divisions nedrykningsspil mod 2. division",
       "kval_modstander": "",
       "kval_resultat": "",
@@ -4867,22 +3507,6 @@
     },
     {
       "sæson": "2021/2022",
-      "hold": "Karlslunde (O)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 2,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "13766",
-      "source_group_name_raw": "Kvalifikation til 1. division",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2021/2022",
       "hold": "Aarhus AB 2",
       "niveau_denne_sæson": "2. division",
       "placering": 3,
@@ -4899,57 +3523,9 @@
     },
     {
       "sæson": "2021/2022",
-      "hold": "Højbjerg 3 (O)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 4,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "13766",
-      "source_group_name_raw": "Kvalifikation til 1. division",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2021/2022",
       "hold": "Lillerød 2",
       "niveau_denne_sæson": "2. division",
       "placering": 5,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "13766",
-      "source_group_name_raw": "Kvalifikation til 1. division",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2021/2022",
-      "hold": "KMB2010 2 (O)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 6,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "13766",
-      "source_group_name_raw": "Kvalifikation til 1. division",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2021/2022",
-      "hold": "Aalborg Triton 2 (O)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 7,
       "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
       "kval_modstander": "",
       "kval_resultat": "",
@@ -5235,38 +3811,6 @@
     },
     {
       "sæson": "2022/2023",
-      "hold": "Greve (N)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 7,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "ikke fundet",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "15339",
-      "source_group_name_raw": "Kvalifikation til Badmintonligaen",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2022/2023",
-      "hold": "Gentofte 2 (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 8,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "15339",
-      "source_group_name_raw": "Kvalifikation til Badmintonligaen",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2022/2023",
       "hold": "Aalborg Triton",
       "niveau_denne_sæson": "1. division",
       "placering": 1,
@@ -5334,22 +3878,6 @@
       "hold": "Værløse 2",
       "niveau_denne_sæson": "1. division",
       "placering": 5,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "15340",
-      "source_group_name_raw": "Nedrykning fra 1. division",
-      "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2022/2023",
-      "hold": "Karlslunde (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 6,
       "hændelse": "1. divisions nedrykningsspil mod 2. division",
       "kval_modstander": "",
       "kval_resultat": "",
@@ -5506,22 +4034,6 @@
       "source_match_id": ""
     },
     {
-      "sæson": "2022/2023",
-      "hold": "Gentofte 3 (O)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 8,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "14812",
-      "source_group_name_raw": "Kvalifikation til 1. division",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
       "sæson": "2023/2024",
       "hold": "Højbjerg/Via Biler",
       "niveau_denne_sæson": "Ligaen",
@@ -5562,7 +4074,7 @@
       "kval_modstander": "",
       "kval_resultat": "",
       "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "Ligaen",
+      "niveau_næste_sæson_faktisk": "ikke fundet",
       "christoffer_bekræftet": "",
       "source_league_group_id": "15789",
       "source_group_name_raw": "Grundspil",
@@ -5859,22 +4371,6 @@
     },
     {
       "sæson": "2023/2024",
-      "hold": "RSL ODENSE OBK 2 (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 4,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "16379",
-      "source_group_name_raw": "Nedrykning fra 1. division",
-      "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2023/2024",
       "hold": "Ikast",
       "niveau_denne_sæson": "1. division",
       "placering": 5,
@@ -5907,22 +4403,6 @@
     },
     {
       "sæson": "2023/2024",
-      "hold": "KMB2010 (N)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 7,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "A-only: methodA",
-      "niveau_næste_sæson_faktisk": "ikke fundet",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "16379",
-      "source_group_name_raw": "Nedrykning fra 1. division",
-      "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2023/2024",
       "hold": "Aarhus AB 2",
       "niveau_denne_sæson": "1. division",
       "placering": 8,
@@ -5935,38 +4415,6 @@
       "source_league_group_id": "16379",
       "source_group_name_raw": "Nedrykning fra 1. division",
       "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2023/2024",
-      "hold": "Viby J (N)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 1,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "16380",
-      "source_group_name_raw": "Kvalifikation til 1. division",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2023/2024",
-      "hold": "Langhøj (O)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 2,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "ikke fundet",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "16380",
-      "source_group_name_raw": "Kvalifikation til 1. division",
-      "source_group_type": "andet/ukendt",
       "source_match_id": ""
     },
     {
@@ -6050,22 +4498,6 @@
       "source_match_id": ""
     },
     {
-      "sæson": "2023/2024",
-      "hold": "Lyngby (N)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 8,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "16380",
-      "source_group_name_raw": "Kvalifikation til 1. division",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
       "sæson": "2024/2025",
       "hold": "Højbjerg/Via Biler (M)",
       "niveau_denne_sæson": "Ligaen",
@@ -6090,7 +4522,7 @@
       "kval_modstander": "",
       "kval_resultat": "",
       "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "Ligaen",
+      "niveau_næste_sæson_faktisk": "ikke fundet",
       "christoffer_bekræftet": "",
       "source_league_group_id": "16857",
       "source_group_name_raw": "Grundspil",
@@ -6243,22 +4675,6 @@
     },
     {
       "sæson": "2024/2025",
-      "hold": "Langhøj (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 2,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "16862",
-      "source_group_name_raw": "Kvalifikation til Badmintonligaen",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2024/2025",
       "hold": "Lillerød",
       "niveau_denne_sæson": "1. division",
       "placering": 3,
@@ -6310,22 +4726,6 @@
       "hold": "KBK Kbh.",
       "niveau_denne_sæson": "1. division",
       "placering": 6,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "16862",
-      "source_group_name_raw": "Kvalifikation til Badmintonligaen",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2024/2025",
-      "hold": "Aarhus AB (N)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 7,
       "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
       "kval_modstander": "",
       "kval_resultat": "",
@@ -6419,38 +4819,6 @@
     },
     {
       "sæson": "2024/2025",
-      "hold": "Hvidovre 2 (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 5,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "A-only: methodA+methodC",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "16863",
-      "source_group_name_raw": "Nedrykning fra 1. division",
-      "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2024/2025",
-      "hold": "Viby J (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 6,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "16863",
-      "source_group_name_raw": "Nedrykning fra 1. division",
-      "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2024/2025",
       "hold": "Gentofte 2",
       "niveau_denne_sæson": "1. division",
       "placering": 7,
@@ -6515,38 +4883,6 @@
     },
     {
       "sæson": "2024/2025",
-      "hold": "Aarhus AB 2 (N)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 3,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "16867",
-      "source_group_name_raw": "Kvalifikation til 1. division",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2024/2025",
-      "hold": "KMB2010 (N)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 4,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "16867",
-      "source_group_name_raw": "Kvalifikation til 1. division",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2024/2025",
       "hold": "Lillerød 2",
       "niveau_denne_sæson": "2. division",
       "placering": 5,
@@ -6555,38 +4891,6 @@
       "kval_resultat": "",
       "niveau_næste_sæson_algoritme": "ikke fundet",
       "niveau_næste_sæson_faktisk": "ikke fundet",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "16867",
-      "source_group_name_raw": "Kvalifikation til 1. division",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2024/2025",
-      "hold": "Greve 2 (O)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 6,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "A-only: methodA+methodC",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "16867",
-      "source_group_name_raw": "Kvalifikation til 1. division",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2024/2025",
-      "hold": "Odense OBK 3 (O)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 7,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
       "christoffer_bekræftet": "",
       "source_league_group_id": "16867",
       "source_group_name_raw": "Kvalifikation til 1. division",
@@ -6618,7 +4922,7 @@
       "kval_modstander": "",
       "kval_resultat": "",
       "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "Ligaen",
+      "niveau_næste_sæson_faktisk": "ikke fundet",
       "christoffer_bekræftet": "",
       "source_league_group_id": "17880",
       "source_group_name_raw": "Grundspil",
@@ -6650,7 +4954,7 @@
       "kval_modstander": "",
       "kval_resultat": "",
       "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "Ligaen",
+      "niveau_næste_sæson_faktisk": "ikke fundet",
       "christoffer_bekræftet": "",
       "source_league_group_id": "17880",
       "source_group_name_raw": "Grundspil",
@@ -6867,22 +5171,6 @@
     },
     {
       "sæson": "2025/2026",
-      "hold": "Aalborg Triton (N)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 7,
-      "hændelse": "1. divisions kvalifikationsgruppe mod Ligaen",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "17889",
-      "source_group_name_raw": "Kvalifikation til Badmintonligaen",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2025/2026",
       "hold": "Værløse 2",
       "niveau_denne_sæson": "1. division",
       "placering": 8,
@@ -6950,22 +5238,6 @@
       "hold": "Viby J",
       "niveau_denne_sæson": "1. division",
       "placering": 4,
-      "hændelse": "1. divisions nedrykningsspil mod 2. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "1. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "17890",
-      "source_group_name_raw": "Nedrykning fra 1. division",
-      "source_group_type": "nedrykningsspil",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2025/2026",
-      "hold": "Badminton Esbjerg (O)",
-      "niveau_denne_sæson": "1. division",
-      "placering": 5,
       "hændelse": "1. divisions nedrykningsspil mod 2. division",
       "kval_modstander": "",
       "kval_resultat": "",
@@ -7110,22 +5382,6 @@
       "hold": "Skovshoved 3",
       "niveau_denne_sæson": "2. division",
       "placering": 6,
-      "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
-      "kval_modstander": "",
-      "kval_resultat": "",
-      "niveau_næste_sæson_algoritme": "ikke fundet",
-      "niveau_næste_sæson_faktisk": "2. division",
-      "christoffer_bekræftet": "",
-      "source_league_group_id": "17894",
-      "source_group_name_raw": "Kvalifikation til 1. division",
-      "source_group_type": "andet/ukendt",
-      "source_match_id": ""
-    },
-    {
-      "sæson": "2025/2026",
-      "hold": "Slagelse (O)",
-      "niveau_denne_sæson": "2. division",
-      "placering": 7,
       "hændelse": "2. divisions oprykningsspil/kvalifikation mod 1. division",
       "kval_modstander": "",
       "kval_resultat": "",
@@ -7286,7 +5542,7 @@
       "hold": "Skovshoved",
       "niveau_denne_sæson": "Ligaen",
       "placering": 9,
-      "hændelse": "kvalifikationskamp mod 1.divisions nr. 2",
+      "hændelse": "Ligakvalifikationspulje (ikke direkte 2-holds kamp)",
       "kval_modstander": "",
       "kval_resultat": "",
       "niveau_næste_sæson_algoritme": "ikke fundet",
@@ -7370,5 +5626,1188 @@
       "groups": []
     }
   ],
-  "selection_method": "Groups are selected from group_type_katalog plus explicit level/structure labels documented in 086b; ambiguous or absent structures are omitted rather than inferred."
+  "liga_one_division_boundary_structures": [
+    {
+      "season": 2010,
+      "classification": "én samlet blandet pulje",
+      "groups": [
+        {
+          "league_group_id": "420",
+          "division_name_raw": "Kvalifikation til Badmintonligaen",
+          "group_name_raw": "Kvalifikation til Badmintonligaen",
+          "participant_count": 4,
+          "participant_levels": [
+            "1. division",
+            "Ligaen"
+          ],
+          "match_count": 12
+        }
+      ]
+    },
+    {
+      "season": 2011,
+      "classification": "én samlet blandet pulje",
+      "groups": [
+        {
+          "league_group_id": "1078",
+          "division_name_raw": "Badmintonligaen, slutspil",
+          "group_name_raw": "Ligakvalifikationsspil",
+          "participant_count": 4,
+          "participant_levels": [
+            "1. division",
+            "Ligaen"
+          ],
+          "match_count": 12
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "classification": "én samlet blandet pulje",
+      "groups": [
+        {
+          "league_group_id": "2181",
+          "division_name_raw": "Badmintonligaen",
+          "group_name_raw": "Ligakvalifikationsspillet",
+          "participant_count": 4,
+          "participant_levels": [
+            "1. division",
+            "Ligaen"
+          ],
+          "match_count": 12
+        }
+      ]
+    },
+    {
+      "season": 2013,
+      "classification": "én samlet blandet pulje",
+      "groups": [
+        {
+          "league_group_id": "3596",
+          "division_name_raw": "Badmintonligaen",
+          "group_name_raw": "Ligakvalifikationsspillet",
+          "participant_count": 4,
+          "participant_levels": [
+            "1. division",
+            "Ligaen"
+          ],
+          "match_count": 12
+        }
+      ]
+    },
+    {
+      "season": 2014,
+      "classification": "én samlet blandet pulje",
+      "groups": [
+        {
+          "league_group_id": "5232",
+          "division_name_raw": "Badmintonligaen",
+          "group_name_raw": "Ligakvalifikation",
+          "participant_count": 4,
+          "participant_levels": [
+            "1. division",
+            "Ligaen"
+          ],
+          "match_count": 12
+        }
+      ]
+    },
+    {
+      "season": 2015,
+      "classification": "én samlet blandet pulje",
+      "groups": [
+        {
+          "league_group_id": "6890",
+          "division_name_raw": "Badmintonligaen",
+          "group_name_raw": "Ligakvalifikation",
+          "participant_count": 4,
+          "participant_levels": [
+            "1. division",
+            "Ligaen"
+          ],
+          "match_count": 12
+        }
+      ]
+    },
+    {
+      "season": 2016,
+      "classification": "én samlet blandet pulje",
+      "groups": [
+        {
+          "league_group_id": "8750",
+          "division_name_raw": "Badmintonligaen",
+          "group_name_raw": "Ligakvalifikation",
+          "participant_count": 4,
+          "participant_levels": [
+            "1. division",
+            "Ligaen"
+          ],
+          "match_count": 12
+        }
+      ]
+    },
+    {
+      "season": 2017,
+      "classification": "én samlet blandet pulje",
+      "groups": [
+        {
+          "league_group_id": "10369",
+          "division_name_raw": "Badmintonligaen",
+          "group_name_raw": "Ligakvalifikation",
+          "participant_count": 4,
+          "participant_levels": [
+            "1. division",
+            "Ligaen"
+          ],
+          "match_count": 12
+        }
+      ]
+    },
+    {
+      "season": 2018,
+      "classification": "én samlet blandet pulje",
+      "groups": [
+        {
+          "league_group_id": "12046",
+          "division_name_raw": "Badmintonligaen",
+          "group_name_raw": "Ligakvalifikation",
+          "participant_count": 6,
+          "participant_levels": [
+            "1. division",
+            "Ligaen"
+          ],
+          "match_count": 15
+        }
+      ]
+    },
+    {
+      "season": 2019,
+      "classification": "anden/uklar struktur",
+      "groups": [
+        {
+          "league_group_id": "13119",
+          "division_name_raw": "1. division",
+          "group_name_raw": "Kvalifikation til Badmintonligaen",
+          "participant_count": 8,
+          "participant_levels": [
+            "1. division"
+          ],
+          "match_count": 16
+        },
+        {
+          "league_group_id": "13161",
+          "division_name_raw": "Badmintonligaen",
+          "group_name_raw": "Nedrykning fra Badmintonligaen",
+          "participant_count": 4,
+          "participant_levels": [
+            "Ligaen"
+          ],
+          "match_count": 3
+        }
+      ]
+    },
+    {
+      "season": 2020,
+      "classification": "ingen identificerbar Liga/1.divisions-kvalifikationsgruppe",
+      "groups": []
+    },
+    {
+      "season": 2021,
+      "classification": "ren 2-holds kvalkamp",
+      "groups": [
+        {
+          "league_group_id": "14461",
+          "division_name_raw": "1. division (slutspil)",
+          "group_name_raw": "Kvalifikation til Badmintonligaen",
+          "participant_count": 8,
+          "participant_levels": [
+            "1. division"
+          ],
+          "match_count": 16
+        },
+        {
+          "league_group_id": "13947",
+          "division_name_raw": "Badmintonligaen",
+          "group_name_raw": "Kvalifikationskamp mod 1. division",
+          "participant_count": 2,
+          "participant_levels": [
+            "1. division",
+            "Ligaen"
+          ],
+          "match_count": 1
+        }
+      ]
+    },
+    {
+      "season": 2022,
+      "classification": "ren 2-holds kvalkamp",
+      "groups": [
+        {
+          "league_group_id": "15339",
+          "division_name_raw": "1. division",
+          "group_name_raw": "Kvalifikation til Badmintonligaen",
+          "participant_count": 8,
+          "participant_levels": [
+            "1. division"
+          ],
+          "match_count": 16
+        },
+        {
+          "league_group_id": "14807",
+          "division_name_raw": "Badmintonligaen",
+          "group_name_raw": "Kvalifikationskamp mod 1. division",
+          "participant_count": 2,
+          "participant_levels": [
+            "1. division",
+            "Ligaen"
+          ],
+          "match_count": 1
+        }
+      ]
+    },
+    {
+      "season": 2023,
+      "classification": "ren 2-holds kvalkamp",
+      "groups": [
+        {
+          "league_group_id": "16444",
+          "division_name_raw": "Badmintonligaen",
+          "group_name_raw": "Kvalifikationskamp til Ligaen",
+          "participant_count": 2,
+          "participant_levels": [
+            "1. division",
+            "Ligaen"
+          ],
+          "match_count": 1
+        },
+        {
+          "league_group_id": "16378",
+          "division_name_raw": "1. division",
+          "group_name_raw": "Kvalifikation til Badmintonligaen",
+          "participant_count": 8,
+          "participant_levels": [
+            "1. division"
+          ],
+          "match_count": 16
+        }
+      ]
+    },
+    {
+      "season": 2024,
+      "classification": "ren 2-holds kvalkamp",
+      "groups": [
+        {
+          "league_group_id": "16862",
+          "division_name_raw": "1. division",
+          "group_name_raw": "Kvalifikation til Badmintonligaen",
+          "participant_count": 8,
+          "participant_levels": [
+            "1. division"
+          ],
+          "match_count": 16
+        },
+        {
+          "league_group_id": "17488",
+          "division_name_raw": "Badmintonligaen",
+          "group_name_raw": "Kvalifikationskamp liga/1. division",
+          "participant_count": 2,
+          "participant_levels": [
+            "1. division",
+            "Ligaen"
+          ],
+          "match_count": 1
+        },
+        {
+          "league_group_id": "17487",
+          "division_name_raw": "Badmintonligaen",
+          "group_name_raw": "Kvalifikationskamp nr. 8-9",
+          "participant_count": 2,
+          "participant_levels": [
+            "Ligaen"
+          ],
+          "match_count": 1
+        }
+      ]
+    },
+    {
+      "season": 2025,
+      "classification": "ren 2-holds kvalkamp",
+      "groups": [
+        {
+          "league_group_id": "17889",
+          "division_name_raw": "1. division",
+          "group_name_raw": "Kvalifikation til Badmintonligaen",
+          "participant_count": 8,
+          "participant_levels": [
+            "1. division"
+          ],
+          "match_count": 16
+        },
+        {
+          "league_group_id": "17886",
+          "division_name_raw": "Badmintonligaen",
+          "group_name_raw": "Kvalifikationskamp liga/1. division",
+          "participant_count": 2,
+          "participant_levels": [
+            "1. division",
+            "Ligaen"
+          ],
+          "match_count": 1
+        }
+      ]
+    },
+    {
+      "season": 2026,
+      "classification": "ingen identificerbar Liga/1.divisions-kvalifikationsgruppe",
+      "groups": []
+    }
+  ],
+  "contact_info_contamination": {
+    "occurrences": 79763,
+    "distinct_matches": 42702,
+    "by_season": [
+      {
+        "season": 2013,
+        "occurrences": 4834,
+        "distinct_matches": 2837,
+        "affected_groups": 161
+      },
+      {
+        "season": 2014,
+        "occurrences": 6749,
+        "distinct_matches": 3617,
+        "affected_groups": 166
+      },
+      {
+        "season": 2015,
+        "occurrences": 5782,
+        "distinct_matches": 3071,
+        "affected_groups": 147
+      },
+      {
+        "season": 2016,
+        "occurrences": 4898,
+        "distinct_matches": 2636,
+        "affected_groups": 123
+      },
+      {
+        "season": 2017,
+        "occurrences": 4535,
+        "distinct_matches": 2401,
+        "affected_groups": 122
+      },
+      {
+        "season": 2018,
+        "occurrences": 5771,
+        "distinct_matches": 3132,
+        "affected_groups": 168
+      },
+      {
+        "season": 2019,
+        "occurrences": 5274,
+        "distinct_matches": 2797,
+        "affected_groups": 131
+      },
+      {
+        "season": 2020,
+        "occurrences": 5775,
+        "distinct_matches": 3032,
+        "affected_groups": 121
+      },
+      {
+        "season": 2021,
+        "occurrences": 5970,
+        "distinct_matches": 3153,
+        "affected_groups": 175
+      },
+      {
+        "season": 2022,
+        "occurrences": 6092,
+        "distinct_matches": 3244,
+        "affected_groups": 223
+      },
+      {
+        "season": 2023,
+        "occurrences": 6633,
+        "distinct_matches": 3474,
+        "affected_groups": 224
+      },
+      {
+        "season": 2024,
+        "occurrences": 6821,
+        "distinct_matches": 3533,
+        "affected_groups": 198
+      },
+      {
+        "season": 2025,
+        "occurrences": 6843,
+        "distinct_matches": 3581,
+        "affected_groups": 212
+      },
+      {
+        "season": 2026,
+        "occurrences": 3786,
+        "distinct_matches": 2194,
+        "affected_groups": 91
+      }
+    ],
+    "examples": [
+      {
+        "season": 2013,
+        "league_group_id": "2609",
+        "external_match_id": "93900",
+        "side": "away"
+      },
+      {
+        "season": 2013,
+        "league_group_id": "2609",
+        "external_match_id": "93904",
+        "side": "home"
+      },
+      {
+        "season": 2013,
+        "league_group_id": "2609",
+        "external_match_id": "93909",
+        "side": "away"
+      },
+      {
+        "season": 2013,
+        "league_group_id": "2609",
+        "external_match_id": "93913",
+        "side": "home"
+      },
+      {
+        "season": 2013,
+        "league_group_id": "2609",
+        "external_match_id": "93916",
+        "side": "home"
+      },
+      {
+        "season": 2013,
+        "league_group_id": "2609",
+        "external_match_id": "93918",
+        "side": "away"
+      },
+      {
+        "season": 2013,
+        "league_group_id": "2609",
+        "external_match_id": "93922",
+        "side": "away"
+      },
+      {
+        "season": 2013,
+        "league_group_id": "2488",
+        "external_match_id": "103116",
+        "side": "away"
+      },
+      {
+        "season": 2013,
+        "league_group_id": "2488",
+        "external_match_id": "94819",
+        "side": "home"
+      },
+      {
+        "season": 2013,
+        "league_group_id": "2488",
+        "external_match_id": "94823",
+        "side": "home"
+      },
+      {
+        "season": 2013,
+        "league_group_id": "2488",
+        "external_match_id": "97776",
+        "side": "away"
+      },
+      {
+        "season": 2013,
+        "league_group_id": "2488",
+        "external_match_id": "94831",
+        "side": "home"
+      },
+      {
+        "season": 2013,
+        "league_group_id": "2488",
+        "external_match_id": "94833",
+        "side": "away"
+      },
+      {
+        "season": 2013,
+        "league_group_id": "2488",
+        "external_match_id": "94839",
+        "side": "home"
+      },
+      {
+        "season": 2013,
+        "league_group_id": "2487",
+        "external_match_id": "97766",
+        "side": "away"
+      },
+      {
+        "season": 2013,
+        "league_group_id": "2487",
+        "external_match_id": "97767",
+        "side": "home"
+      },
+      {
+        "season": 2013,
+        "league_group_id": "2487",
+        "external_match_id": "97768",
+        "side": "away"
+      },
+      {
+        "season": 2013,
+        "league_group_id": "2487",
+        "external_match_id": "97769",
+        "side": "home"
+      },
+      {
+        "season": 2013,
+        "league_group_id": "2487",
+        "external_match_id": "97770",
+        "side": "away"
+      },
+      {
+        "season": 2013,
+        "league_group_id": "2487",
+        "external_match_id": "97771",
+        "side": "home"
+      }
+    ]
+  },
+  "bd_marker_decisions": [
+    {
+      "season": 2011,
+      "league_group_id": "1078",
+      "team_name_raw": "Odense OBK (N)",
+      "marker": "N",
+      "assigned_home_level": "Ligaen",
+      "emitted": false
+    },
+    {
+      "season": 2011,
+      "league_group_id": "1078",
+      "team_name_raw": "Ikast (N)",
+      "marker": "N",
+      "assigned_home_level": "Ligaen",
+      "emitted": false
+    },
+    {
+      "season": 2011,
+      "league_group_id": "1079",
+      "team_name_raw": "Gentofte 2 (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2011,
+      "league_group_id": "1079",
+      "team_name_raw": "Solrød Strand 2 (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2011,
+      "league_group_id": "1074",
+      "team_name_raw": "Holbæk (O)",
+      "marker": "O",
+      "assigned_home_level": "uden for tabel",
+      "emitted": false
+    },
+    {
+      "season": 2011,
+      "league_group_id": "1074",
+      "team_name_raw": "Skovshoved 2 (O)",
+      "marker": "O",
+      "assigned_home_level": "uden for tabel",
+      "emitted": false
+    },
+    {
+      "season": 2011,
+      "league_group_id": "1074",
+      "team_name_raw": "Aarhus AB 2 (O)",
+      "marker": "O",
+      "assigned_home_level": "uden for tabel",
+      "emitted": false
+    },
+    {
+      "season": 2012,
+      "league_group_id": "2164",
+      "team_name_raw": "Solrød Strand 2 (N)",
+      "marker": "N",
+      "assigned_home_level": "1. division",
+      "emitted": false
+    },
+    {
+      "season": 2012,
+      "league_group_id": "2164",
+      "team_name_raw": "Ikast 2 (O)",
+      "marker": "O",
+      "assigned_home_level": "uden for tabel",
+      "emitted": false
+    },
+    {
+      "season": 2013,
+      "league_group_id": "3596",
+      "team_name_raw": "Højbjerg (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2013,
+      "league_group_id": "3595",
+      "team_name_raw": "Solrød Strand 2 (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2013,
+      "league_group_id": "3595",
+      "team_name_raw": "Lillerød (N)",
+      "marker": "N",
+      "assigned_home_level": "Ligaen",
+      "emitted": false
+    },
+    {
+      "season": 2013,
+      "league_group_id": "3595",
+      "team_name_raw": "KMB2010 (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2013,
+      "league_group_id": "3581",
+      "team_name_raw": "Horsens (O)",
+      "marker": "O",
+      "assigned_home_level": "uden for tabel",
+      "emitted": false
+    },
+    {
+      "season": 2014,
+      "league_group_id": "5227",
+      "team_name_raw": "Odense OBK 2 (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2014,
+      "league_group_id": "5227",
+      "team_name_raw": "Hillerød (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2014,
+      "league_group_id": "5179",
+      "team_name_raw": "Gentofte 2 (N)",
+      "marker": "N",
+      "assigned_home_level": "1. division",
+      "emitted": false
+    },
+    {
+      "season": 2014,
+      "league_group_id": "5179",
+      "team_name_raw": "Hvidovre (N)",
+      "marker": "N",
+      "assigned_home_level": "1. division",
+      "emitted": false
+    },
+    {
+      "season": 2014,
+      "league_group_id": "5179",
+      "team_name_raw": "Skovbakken (O)",
+      "marker": "O",
+      "assigned_home_level": "uden for tabel",
+      "emitted": false
+    },
+    {
+      "season": 2014,
+      "league_group_id": "5179",
+      "team_name_raw": "Værløse 3 (O)",
+      "marker": "O",
+      "assigned_home_level": "uden for tabel",
+      "emitted": false
+    },
+    {
+      "season": 2015,
+      "league_group_id": "6883",
+      "team_name_raw": "Skovshoved 2 (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2015,
+      "league_group_id": "6883",
+      "team_name_raw": "Greve 2 (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2015,
+      "league_group_id": "6855",
+      "team_name_raw": "Solrød Strand 3 (O)",
+      "marker": "O",
+      "assigned_home_level": "uden for tabel",
+      "emitted": false
+    },
+    {
+      "season": 2015,
+      "league_group_id": "6855",
+      "team_name_raw": "Viby J (O)",
+      "marker": "O",
+      "assigned_home_level": "uden for tabel",
+      "emitted": false
+    },
+    {
+      "season": 2016,
+      "league_group_id": "8750",
+      "team_name_raw": "Gentofte (N)",
+      "marker": "N",
+      "assigned_home_level": "Ligaen",
+      "emitted": false
+    },
+    {
+      "season": 2016,
+      "league_group_id": "8750",
+      "team_name_raw": "Ikast (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2016,
+      "league_group_id": "8751",
+      "team_name_raw": "Højbjerg 2 (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2016,
+      "league_group_id": "8751",
+      "team_name_raw": "Hvidovre (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2016,
+      "league_group_id": "8713",
+      "team_name_raw": "Langhøj (O)",
+      "marker": "O",
+      "assigned_home_level": "uden for tabel",
+      "emitted": false
+    },
+    {
+      "season": 2016,
+      "league_group_id": "8713",
+      "team_name_raw": "Lillerød (N)",
+      "marker": "N",
+      "assigned_home_level": "1. division",
+      "emitted": false
+    },
+    {
+      "season": 2016,
+      "league_group_id": "8713",
+      "team_name_raw": "Greve 2 (N)",
+      "marker": "N",
+      "assigned_home_level": "1. division",
+      "emitted": false
+    },
+    {
+      "season": 2017,
+      "league_group_id": "10369",
+      "team_name_raw": "Langhøj (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2017,
+      "league_group_id": "10369",
+      "team_name_raw": "Lillerød (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2017,
+      "league_group_id": "10362",
+      "team_name_raw": "Ikast (N)",
+      "marker": "N",
+      "assigned_home_level": "Ligaen",
+      "emitted": false
+    },
+    {
+      "season": 2017,
+      "league_group_id": "10334",
+      "team_name_raw": "Højbjerg 2 (N)",
+      "marker": "N",
+      "assigned_home_level": "1. division",
+      "emitted": false
+    },
+    {
+      "season": 2019,
+      "league_group_id": "13119",
+      "team_name_raw": "Odense OBK (N)",
+      "marker": "N",
+      "assigned_home_level": "Ligaen",
+      "emitted": false
+    },
+    {
+      "season": 2019,
+      "league_group_id": "13119",
+      "team_name_raw": "Gentofte (N)",
+      "marker": "N",
+      "assigned_home_level": "Ligaen",
+      "emitted": false
+    },
+    {
+      "season": 2019,
+      "league_group_id": "13119",
+      "team_name_raw": "Skovshoved 2 (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2019,
+      "league_group_id": "13119",
+      "team_name_raw": "Ikast (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2019,
+      "league_group_id": "13120",
+      "team_name_raw": "Kolding BK (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2019,
+      "league_group_id": "13120",
+      "team_name_raw": "Hvidovre (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2019,
+      "league_group_id": "13120",
+      "team_name_raw": "Holte (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2019,
+      "league_group_id": "13120",
+      "team_name_raw": "Holbæk (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2019,
+      "league_group_id": "13120",
+      "team_name_raw": "abc Aalborg (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2019,
+      "league_group_id": "13120",
+      "team_name_raw": "Aabenraa (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2019,
+      "league_group_id": "13117",
+      "team_name_raw": "Højbjerg 2 (N)",
+      "marker": "N",
+      "assigned_home_level": "1. division",
+      "emitted": false
+    },
+    {
+      "season": 2019,
+      "league_group_id": "13117",
+      "team_name_raw": "Viby J (O)",
+      "marker": "O",
+      "assigned_home_level": "uden for tabel",
+      "emitted": false
+    },
+    {
+      "season": 2019,
+      "league_group_id": "13117",
+      "team_name_raw": "Hillerød (O)",
+      "marker": "O",
+      "assigned_home_level": "uden for tabel",
+      "emitted": false
+    },
+    {
+      "season": 2019,
+      "league_group_id": "13117",
+      "team_name_raw": "Lyngby (O)",
+      "marker": "O",
+      "assigned_home_level": "uden for tabel",
+      "emitted": false
+    },
+    {
+      "season": 2019,
+      "league_group_id": "13117",
+      "team_name_raw": "Skovshoved 3 (O)",
+      "marker": "O",
+      "assigned_home_level": "uden for tabel",
+      "emitted": false
+    },
+    {
+      "season": 2021,
+      "league_group_id": "14461",
+      "team_name_raw": "KBK Kbh. (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2021,
+      "league_group_id": "14461",
+      "team_name_raw": "Viby J (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2021,
+      "league_group_id": "14462",
+      "team_name_raw": "Højbjerg 2 (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2021,
+      "league_group_id": "14462",
+      "team_name_raw": "Hillerød (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2021,
+      "league_group_id": "14462",
+      "team_name_raw": "Lyngby (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2021,
+      "league_group_id": "13766",
+      "team_name_raw": "Karlslunde (O)",
+      "marker": "O",
+      "assigned_home_level": "uden for tabel",
+      "emitted": false
+    },
+    {
+      "season": 2021,
+      "league_group_id": "13766",
+      "team_name_raw": "Højbjerg 3 (O)",
+      "marker": "O",
+      "assigned_home_level": "uden for tabel",
+      "emitted": false
+    },
+    {
+      "season": 2021,
+      "league_group_id": "13766",
+      "team_name_raw": "KMB2010 2 (O)",
+      "marker": "O",
+      "assigned_home_level": "uden for tabel",
+      "emitted": false
+    },
+    {
+      "season": 2021,
+      "league_group_id": "13766",
+      "team_name_raw": "Aalborg Triton 2 (O)",
+      "marker": "O",
+      "assigned_home_level": "uden for tabel",
+      "emitted": false
+    },
+    {
+      "season": 2022,
+      "league_group_id": "15339",
+      "team_name_raw": "Greve (N)",
+      "marker": "N",
+      "assigned_home_level": "Ligaen",
+      "emitted": false
+    },
+    {
+      "season": 2022,
+      "league_group_id": "15339",
+      "team_name_raw": "Gentofte 2 (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2022,
+      "league_group_id": "15340",
+      "team_name_raw": "Karlslunde (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2022,
+      "league_group_id": "14812",
+      "team_name_raw": "Gentofte 3 (O)",
+      "marker": "O",
+      "assigned_home_level": "uden for tabel",
+      "emitted": false
+    },
+    {
+      "season": 2023,
+      "league_group_id": "16379",
+      "team_name_raw": "RSL ODENSE OBK 2 (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2023,
+      "league_group_id": "16379",
+      "team_name_raw": "KMB2010 (N)",
+      "marker": "N",
+      "assigned_home_level": "Ligaen",
+      "emitted": false
+    },
+    {
+      "season": 2023,
+      "league_group_id": "16380",
+      "team_name_raw": "Viby J (N)",
+      "marker": "N",
+      "assigned_home_level": "1. division",
+      "emitted": false
+    },
+    {
+      "season": 2023,
+      "league_group_id": "16380",
+      "team_name_raw": "Langhøj (O)",
+      "marker": "O",
+      "assigned_home_level": "uden for tabel",
+      "emitted": false
+    },
+    {
+      "season": 2023,
+      "league_group_id": "16380",
+      "team_name_raw": "Lyngby (N)",
+      "marker": "N",
+      "assigned_home_level": "1. division",
+      "emitted": false
+    },
+    {
+      "season": 2024,
+      "league_group_id": "16862",
+      "team_name_raw": "Langhøj (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2024,
+      "league_group_id": "16862",
+      "team_name_raw": "Aarhus AB (N)",
+      "marker": "N",
+      "assigned_home_level": "Ligaen",
+      "emitted": false
+    },
+    {
+      "season": 2024,
+      "league_group_id": "16863",
+      "team_name_raw": "Hvidovre 2 (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2024,
+      "league_group_id": "16863",
+      "team_name_raw": "Viby J (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2024,
+      "league_group_id": "16867",
+      "team_name_raw": "Aarhus AB 2 (N)",
+      "marker": "N",
+      "assigned_home_level": "1. division",
+      "emitted": false
+    },
+    {
+      "season": 2024,
+      "league_group_id": "16867",
+      "team_name_raw": "KMB2010 (N)",
+      "marker": "N",
+      "assigned_home_level": "1. division",
+      "emitted": false
+    },
+    {
+      "season": 2024,
+      "league_group_id": "16867",
+      "team_name_raw": "Greve 2 (O)",
+      "marker": "O",
+      "assigned_home_level": "uden for tabel",
+      "emitted": false
+    },
+    {
+      "season": 2024,
+      "league_group_id": "16867",
+      "team_name_raw": "Odense OBK 3 (O)",
+      "marker": "O",
+      "assigned_home_level": "uden for tabel",
+      "emitted": false
+    },
+    {
+      "season": 2025,
+      "league_group_id": "17889",
+      "team_name_raw": "Aalborg Triton (N)",
+      "marker": "N",
+      "assigned_home_level": "Ligaen",
+      "emitted": false
+    },
+    {
+      "season": 2025,
+      "league_group_id": "17890",
+      "team_name_raw": "Badminton Esbjerg (O)",
+      "marker": "O",
+      "assigned_home_level": "2. division",
+      "emitted": false
+    },
+    {
+      "season": 2025,
+      "league_group_id": "17894",
+      "team_name_raw": "Slagelse (O)",
+      "marker": "O",
+      "assigned_home_level": "uden for tabel",
+      "emitted": false
+    }
+  ],
+  "cross_level_duplicates": [],
+  "selection_method": "Kvalifikationsgrupper vælges med group_type_katalog og dokumenterede strukturbetegnelser. Hjemmeniveau afgøres først af (O)/(N) fra league_group_teams, ellers af samme sæsons egen grundspilspulje. league_matches bruges kun efter rensning/mapping af kontaktinfo."
 }

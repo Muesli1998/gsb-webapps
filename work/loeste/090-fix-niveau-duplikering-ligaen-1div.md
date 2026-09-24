@@ -152,6 +152,56 @@ regenerere eller rette 089-datasættet uden at få disse filer ind først.
 skal 090 bevidst baseres på/cherry-picke 089-commitsene, før rettelsen laves?
 Jeg kopierer ikke den umergede leverance ind manuelt uden denne afklaring.
 
+**Svar 2026-09-24:** 089 blev fast-forward-merget til `main` (`bdfb223`), og
+090 blev derefter ombaseret ovenpå `main`. Rettelsen er derfor kørt mod den
+versionsstyrede 089-generator og dens CSV/JSON, ikke mod en manuel kopi.
+
 ## Resultatnote
 
-(Udfyldes ved lukning.)
+**Leverance:** `089-generate-liga-1div-revisionstabel.mjs` er rettet, og
+CSV/JSON er regenereret. Tabellen faldt fra 456 til 347 rækker: 109 rækker
+var krydsniveau-dubletter eller deltagere, hvis hjemmeniveau ikke kunne
+bevises fra deres egen grundspilspulje. Der er nu 0 `(sæson, hold)`-nøgler
+med mere end ét `niveau_denne_sæson`.
+
+**Stikprøve 2010/2011:** Odense OBK 1 og Ikast 1 forekommer kun som
+`Ligaen` (henholdsvis nr. 9 og 10); Aarhus AB 1 og Solrød Strand 1 kun som
+`1. division` i pulje 420. Ligaens nr. 9 er nu mærket som
+`Ligakvalifikationspulje (ikke direkte 2-holds kamp)`, fordi pulje 420 har
+fire deltagere; den fremstilles ikke længere fejlagtigt som én kamp mod
+1. divisions nr. 2.
+
+**Liga/1. divisions-grænse, faktisk deltagerstruktur:**
+
+| Sæsoner | Struktur | Gruppe-ID'er |
+|---|---|---|
+| 2010–2018 | Én samlet blandet Liga/1.-divisions-pulje | 420, 1078, 2181, 3596, 5232, 6890, 8750, 10369, 12046 |
+| 2019 | Anden/uklar struktur; ikke behandlet som duplikerede kampe | 13119, 13161 |
+| 2020 | Ingen identificerbar kvalifikationsgruppe i data | — |
+| 2021–2025 | Ren 2-holds Liga/1.-divisions-kvalkamp, ved siden af 1.-divisionens egen kvalifikationsgruppe | 13947/14461, 14807/15339, 16444/16378, 17487+17488/16862, 17886/17889 |
+| 2026 | Ingen identificerbar kvalifikationsgruppe endnu | — |
+
+Der blev ikke fundet nogen gruppepar, som indeholder præcis de samme
+kamp-ID'er og derfor kan dokumenteres som duplikerede pr. division.
+
+**(O)/(N)-signal:** Suffikserne fra `league_group_teams` bevares i
+`hold`-kolonnen. 79 markeringer i blandede kvalifikationsgrupper blev brugt
+aktivt til at afgøre, at deltageren hørte hjemme over eller under puljens
+niveau; alle 79 blev derfor udeladt fra den forkerte niveaurække. Eksempel:
+Højbjerg 2 (N) i 2019, pulje 13117, blev klassificeret som 1. division
+(niveauet over 2.-divisions-puljen), ikke som 2. division.
+
+**Kontaktinfo-rensning:** `league_matches` renses nu før navnmatching ved at
+matche begyndelsen af den rå værdi mod det pågældende års kendte
+`league_group_teams`-navne. E-mail/8-cifret telefon i resten registreres som
+kontaktinfo og kommer ikke ind i revisionstabellen. Mønstret forekommer i
+14 sæsoner (2013–2026), 2.262 sæson/pulje-kombinationer, 42.702 kamp-ID'er
+og 79.763 hjemme-/ude-felter. Det er altså ikke begrænset til 2021.
+
+**Værn:** Ingen API-kald eller databaseskrivninger.
+`gsb-statistik-normalized.db` havde fortsat SHA-256
+`49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E`.
+`christoffer_bekræftet` er fortsat tom i alle 347 rækker. Trådtavlens
+lokal-lagrede bekræftelser er ikke ændret, men dens nøgle indeholder niveau
+og placering; de 109 fjernede rækker kan derfor betyde, at berørte tråde
+skal genbekræftes i review-værktøjet.

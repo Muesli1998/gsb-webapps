@@ -3,84 +3,61 @@ import fs from 'node:fs';
 
 const db = new DatabaseSync('file:C:/Users/chril/Code/gsb-webapps/statistik/data/liga-landskab.db?immutable=1', { readOnly: true });
 const all=(sql,...params)=>db.prepare(sql).all(...params);
-const norm=s=>String(s??'').toLowerCase().replace(/\s+/g,' ').replace(/\s*\([^)]*\)\s*$/,'').trim();
+const norm=s=>String(s??'').toLowerCase().replace(/\s*\([on]\)\s*$/i,'').replace(/\s+/g,' ').trim();
+const bdMarker=s=>(String(s??'').match(/\(([ON])\)\s*$/i)?.[1]??'').toUpperCase();
 const seasons=all(`SELECT DISTINCT season_id FROM league_groups WHERE age_group_id=1 ORDER BY season_id`).map(r=>r.season_id);
-const groups=all(`SELECT g.season_id,g.age_group_id,g.league_group_id,g.division_name_raw,g.group_name_raw, COALESCE(k.group_type,'andet/ukendt') group_type
- FROM league_groups g LEFT JOIN group_type_katalog k ON k.division_name_raw=COALESCE(g.division_name_raw,'') AND k.group_name_raw=COALESCE(g.group_name_raw,'')
- WHERE g.age_group_id=1`);
+const groups=all(`SELECT g.season_id,g.age_group_id,g.league_group_id,g.division_name_raw,g.group_name_raw,COALESCE(k.group_type,'andet/ukendt') group_type FROM league_groups g LEFT JOIN group_type_katalog k ON k.division_name_raw=COALESCE(g.division_name_raw,'') AND k.group_name_raw=COALESCE(g.group_name_raw,'') WHERE g.age_group_id=1`);
 const teams=all(`SELECT season_id,age_group_id,league_group_id,team_name_raw,standing_position,matches,wins,score_raw,sets_raw,points FROM league_group_teams WHERE age_group_id=1`);
 const matches=all(`SELECT external_match_id,season_id,age_group_id,league_group_id,match_date,home_name_raw,away_name_raw,team_score_raw FROM league_matches WHERE age_group_id=1`);
 const alg=JSON.parse(fs.readFileSync('statistik/results/087-holdidentitet-paa-tvaers-af-saesoner.json','utf8')).rows;
-
-const gBySeason=new Map(); for(const g of groups){if(!gBySeason.has(g.season_id))gBySeason.set(g.season_id,[]);gBySeason.get(g.season_id).push(g)};
-const tByGroup=new Map(); for(const t of teams){const k=`${t.season_id}|${t.league_group_id}`;if(!tByGroup.has(k))tByGroup.set(k,[]);tByGroup.get(k).push(t)};
-const mByGroup=new Map(); for(const m of matches){const k=`${m.season_id}|${m.league_group_id}`;if(!mByGroup.has(k))mByGroup.set(k,[]);mByGroup.get(k).push(m)};
-const knownTeamNamesBySeason=new Map();
-for(const t of teams){
- if(!knownTeamNamesBySeason.has(t.season_id)) knownTeamNamesBySeason.set(t.season_id,new Set());
- knownTeamNamesBySeason.get(t.season_id).add(t.team_name_raw);
-}
-const sourceTypes=(g)=>`${g.division_name_raw} ${g.group_name_raw}`.toLowerCase();
+const gBySeason=new Map(),tByGroup=new Map(),mByGroup=new Map(),knownTeamNamesBySeason=new Map();
+for(const g of groups){if(!gBySeason.has(g.season_id))gBySeason.set(g.season_id,[]);gBySeason.get(g.season_id).push(g)}
+for(const t of teams){const k=`${t.season_id}|${t.league_group_id}`;if(!tByGroup.has(k))tByGroup.set(k,[]);tByGroup.get(k).push(t);if(!knownTeamNamesBySeason.has(t.season_id))knownTeamNamesBySeason.set(t.season_id,new Set());knownTeamNamesBySeason.get(t.season_id).add(t.team_name_raw)}
+for(const m of matches){const k=`${m.season_id}|${m.league_group_id}`;if(!mByGroup.has(k))mByGroup.set(k,[]);mByGroup.get(k).push(m)}
+const sourceTypes=g=>`${g.division_name_raw} ${g.group_name_raw}`.toLowerCase();
+const levelFromDivision=division=>{const d=norm(division);if(d.includes('badmintonligaen'))return 'Ligaen';if(d.includes('1. division'))return '1. division';if(d.includes('2. division'))return '2. division';return null;};
+const levelIndex=level=>['Ligaen','1. division','2. division'].indexOf(level);
+function mainGroups(season){return (gBySeason.get(season)??[]).filter(g=>g.group_type==='grundspil'&&!/oversidder|papirhold|slutspil|final|bronze|guld|kvart|semi/.test(sourceTypes(g))&&levelFromDivision(g.division_name_raw));}
+function homeLevels(season){const map=new Map();for(const g of mainGroups(season)){const level=levelFromDivision(g.division_name_raw);for(const t of tByGroup.get(`${season}|${g.league_group_id}`)??[]){const key=norm(t.team_name_raw);if(!map.has(key))map.set(key,new Set());map.get(key).add(level);}}return map;}
 function pickGroups(season){
  const s=gBySeason.get(season)??[];
- const liga=s.filter(g=>norm(g.division_name_raw)==='badmintonligaen' && (norm(g.group_name_raw)==='grundspil' || norm(g.group_name_raw)==='badmintonligaen'));
- const oneQual=s.filter(g=>/ligakvalifikation|kvalifikation.*badmintonliga|kvalifikation.*ligaen/.test(sourceTypes(g)) && !(/kvalifikationskamp/.test(sourceTypes(g)) && /badmintonligaen/.test(norm(g.division_name_raw))));
- const oneDown=s.filter(g=>/1\. division/.test(norm(g.division_name_raw)) && (g.group_type==='nedrykningsspil' || /nedrykning/.test(sourceTypes(g))));
- const twoUp=s.filter(g=>{
-  const division=norm(g.division_name_raw), type=sourceTypes(g), group=norm(g.group_name_raw);
-  const isTwoDivisionQualification=/2\. division/.test(division) && /kvalifikation.*1\. div|kval\.\s*til 1\. div/.test(type);
-  const isDedicatedQualification=/kval(?:ifikation|\.)\s*til\s*1\.\s*division/.test(division) && /slutspil|kval(?:ifikation|\.)/.test(group);
-  return (isTwoDivisionQualification||isDedicatedQualification) && !/kvalifikationsevent kamp/.test(type);
- });
- const ligaQual=s.filter(g=>norm(g.division_name_raw)==='badmintonligaen' && /kvalifikation/.test(sourceTypes(g)));
+ const liga=s.filter(g=>levelFromDivision(g.division_name_raw)==='Ligaen'&&g.group_type==='grundspil'&&!/oversidder|papirhold/.test(sourceTypes(g))&&(norm(g.group_name_raw)==='grundspil'||norm(g.group_name_raw)==='badmintonligaen'));
+ const oneQual=s.filter(g=>/ligakvalifikation|kvalifikation.*badmintonliga|kvalifikation.*ligaen/.test(sourceTypes(g))&&!(/kvalifikationskamp/.test(sourceTypes(g))&&levelFromDivision(g.division_name_raw)==='Ligaen'));
+ const oneDown=s.filter(g=>/1\. division/.test(norm(g.division_name_raw))&&(g.group_type==='nedrykningsspil'||/nedrykning/.test(sourceTypes(g))));
+ const twoUp=s.filter(g=>{const d=norm(g.division_name_raw),t=sourceTypes(g),n=norm(g.group_name_raw);return ((/2\. division/.test(d)&&/kvalifikation.*1\. div|kval\.\s*til 1\. div/.test(t))||(/kval(?:ifikation|\.)\s*til\s*1\.\s*division/.test(d)&&/slutspil|kval(?:ifikation|\.)/.test(n)))&&!/kvalifikationsevent kamp/.test(t);});
+ const ligaQual=s.filter(g=>/ligakvalifikation|kvalifikation.*badmintonliga|kvalifikation.*ligaen/.test(sourceTypes(g)));
  return {liga,oneQual,oneDown,twoUp,ligaQual};
 }
-function nextLevel(season,name){
- const n=norm(name), next=gBySeason.get(season+1)??[];
- const matches=next.filter(g=>(tByGroup.get(`${g.season_id}|${g.league_group_id}`)??[]).some(t=>norm(t.team_name_raw)===n));
- const levels=new Set(matches.map(g=>{
-  const d=norm(g.division_name_raw); if(d.includes('badmintonligaen'))return 'Ligaen'; if(d.includes('1. division'))return '1. division'; if(d.includes('2. division'))return '2. division'; return null;
- }).filter(Boolean));
- return levels.size===1?[...levels][0]:'ikke fundet';
+function sourceTeamName(season,raw){const rawNorm=norm(raw),candidates=[...(knownTeamNamesBySeason.get(season)??[])].sort((a,b)=>b.length-a.length);return candidates.find(c=>rawNorm.startsWith(norm(c)))??'';}
+function hasEmbeddedContactInfo(season,raw){const candidate=sourceTeamName(season,raw);if(!candidate)return false;const tail=String(raw).slice(String(raw).toLowerCase().indexOf(candidate.toLowerCase())+candidate.length);return /@|\b\d{8}\b/.test(tail);}
+function homeLevelFor(season,kind,teamName,homes){const expected=kind==='liga'?'Ligaen':kind.startsWith('one')?'1. division':'2. division', marker=bdMarker(teamName);/* (O)/(N) describes origin only in a mixed qualification group; a main-group row is already the home level. */if(kind!=='liga'&&marker){const level=['Ligaen','1. division','2. division'][levelIndex(expected)+(marker==='N'?-1:1)]??'uden for tabel';return {level,basis:`BD (${marker})`};}const known=homes.get(norm(teamName))??new Set();return known.size===1?{level:[...known][0],basis:marker?`egen grundspilspulje; BD (${marker}) bevaret`:'egen grundspilspulje'}:{level:'ikke fundet',basis:known.size?'flere grundspilsniveauer':'ingen grundspilskobling'};}
+function nextLevel(season,name){const n=norm(name),found=(gBySeason.get(season+1)??[]).filter(g=>(tByGroup.get(`${g.season_id}|${g.league_group_id}`)??[]).some(t=>norm(t.team_name_raw)===n));const levels=new Set(found.map(g=>levelFromDivision(g.division_name_raw)).filter(Boolean));return levels.size===1?[...levels][0]:'ikke fundet';}
+function algorithmLevel(season,level,name){const r=alg.find(x=>x.seasonFrom===season&&x.level===level&&norm(x.rawCurrent)===norm(name));if(!r)return 'ikke fundet';const found=['methodA','methodB','methodC'].filter(k=>r[k]?.found);return found.length?`${r.confidence}: ${found.join('+')}`:'ikke fundet';}
+function qualificationGroups(season){return (gBySeason.get(season)??[]).filter(g=>levelFromDivision(g.division_name_raw)==='Ligaen'&&/kvalifikation|nedrykning/.test(sourceTypes(g)));}
+function eventFor(season,kind,pos,basis){const suffix=basis.startsWith('BD')?`; hjemmeniveau fra ${basis}`:'';if(kind==='liga'){if(pos===10)return `automatisk nedrykning${suffix}`;if(pos===9){const direct=qualificationGroups(season).some(g=>(tByGroup.get(`${season}|${g.league_group_id}`)??[]).length===2);return `${direct?'kvalifikationskamp mod 1.divisions nr. 2':'Ligakvalifikationspulje (ikke direkte 2-holds kamp)'}${suffix}`;}return (pos===7||pos===8?`forbliver i Ligaen (nr. 7-8)${suffix}`:`Liga-grundspil${suffix}`);}if(kind==='oneQual')return `1. divisions kvalifikationsgruppe mod Ligaen${suffix}`;if(kind==='oneDown')return `1. divisions nedrykningsspil mod 2. division${suffix}`;return `2. divisions oprykningsspil/kvalifikation mod 1. division${suffix}`;}
+function qualFor(season,name){for(const g of qualificationGroups(season)){const participants=tByGroup.get(`${season}|${g.league_group_id}`)??[];if(participants.length!==2)continue;for(const m of mByGroup.get(`${season}|${g.league_group_id}`)??[]){const home=sourceTeamName(season,m.home_name_raw),away=sourceTeamName(season,m.away_name_raw);if(norm(home)===norm(name)||norm(away)===norm(name))return {opponent:norm(home)===norm(name)?away:home,result:m.team_score_raw||'',match_id:m.external_match_id};}}return {opponent:'',result:'',match_id:''};}
+function structureFor(season){
+ const candidates=[...new Map([...pickGroups(season).ligaQual,...qualificationGroups(season)].map(g=>[g.league_group_id,g])).values()];if(!candidates.length)return {season,classification:'ingen identificerbar Liga/1.divisions-kvalifikationsgruppe',groups:[]};const homes=homeLevels(season);
+ const detail=candidates.map(g=>{const list=tByGroup.get(`${season}|${g.league_group_id}`)??[],fromMatches=[...new Set((mByGroup.get(`${season}|${g.league_group_id}`)??[]).flatMap(m=>[sourceTeamName(season,m.home_name_raw),sourceTeamName(season,m.away_name_raw)]).filter(Boolean))],participants=fromMatches.length?fromMatches:list.map(t=>t.team_name_raw),levels=[...new Set(participants.flatMap(t=>[...(homes.get(norm(t))??new Set())]))].sort();return {league_group_id:g.league_group_id,division_name_raw:g.division_name_raw,group_name_raw:g.group_name_raw,participant_count:participants.length,participant_levels:levels,match_count:(mByGroup.get(`${season}|${g.league_group_id}`)??[]).length};});
+ const shared=detail.length>1&&detail.some((g,i)=>detail.slice(i+1).some(other=>{const ids=new Set((mByGroup.get(`${season}|${g.league_group_id}`)??[]).map(m=>m.external_match_id));return (mByGroup.get(`${season}|${other.league_group_id}`)??[]).some(m=>ids.has(m.external_match_id));}));
+ const mixed=detail.some(g=>g.participant_levels.includes('Ligaen')&&g.participant_levels.includes('1. division')), participantCount=detail.reduce((n,g)=>n+g.participant_count,0);
+ const direct=detail.some(g=>g.participant_count===2&&g.participant_levels.includes('Ligaen')&&g.participant_levels.includes('1. division'));
+ return {season,classification:shared?'to adskilte grupper med dublerede kampe':direct?'ren 2-holds kvalkamp':mixed?'én samlet blandet pulje':'anden/uklar struktur',groups:detail};
 }
-function algorithmLevel(season,level,name){
- const r=alg.find(x=>x.seasonFrom===season && x.level===level && norm(x.rawCurrent)===norm(name));
- if(!r) return 'ikke fundet';
- const found=['methodA','methodB','methodC'].filter(k=>r[k]?.found);
- return found.length?`${r.confidence}: ${found.join('+')}`:'ikke fundet';
-}
-function eventFor(kind,pos){
- if(kind==='liga') return pos===10?'automatisk nedrykning':pos===9?'kvalifikationskamp mod 1.divisions nr. 2':(pos===7||pos===8?'forbliver i Ligaen (nr. 7-8)':'Liga-grundspil');
- if(kind==='oneQual') return '1. divisions kvalifikationsgruppe mod Ligaen';
- if(kind==='oneDown') return '1. divisions nedrykningsspil mod 2. division';
- return '2. divisions oprykningsspil/kvalifikation mod 1. division';
-}
-function sourceTeamName(season,raw){
- const rawNorm=norm(raw);
- const candidates=[...(knownTeamNamesBySeason.get(season)??[])].sort((a,b)=>b.length-a.length);
- return candidates.find(candidate=>rawNorm.startsWith(norm(candidate)))??'';
-}
-function qualFor(season,name,kind){
- const s=gBySeason.get(season)??[];
- const candidateGroups=kind==='liga'?s.filter(g=>norm(g.division_name_raw)==='badmintonligaen'&&/kvalifikation/.test(sourceTypes(g))):[];
- for(const g of candidateGroups){ const ms=mByGroup.get(`${season}|${g.league_group_id}`)??[]; for(const m of ms){ const h=sourceTeamName(season,m.home_name_raw),a=sourceTeamName(season,m.away_name_raw);if(norm(h)===norm(name)||norm(a)===norm(name)) return {opponent:norm(h)===norm(name)?a:h,result:m.team_score_raw||'',match_id:m.external_match_id}; }}
- return {opponent:'',result:'',match_id:''};
-}
-const rows=[]; const omitted=[];
+const rows=[],omitted=[],structures=[],contacts=[],markerDecisions=[];
 for(const season of seasons){
- const selected=pickGroups(season);
+ const selected=pickGroups(season),homes=homeLevels(season);structures.push(structureFor(season));
  for(const [kind,gs] of Object.entries(selected)){
-  if(kind==='ligaQual') continue;
-  if(gs.length!==1){ omitted.push({season,kind,count:gs.length,groups:gs.map(g=>({id:g.league_group_id,division:g.division_name_raw,group:g.group_name_raw,type:g.group_type}))}); continue; }
-  const g=gs[0]; const level=kind==='liga'?'Ligaen':kind.startsWith('one')?'1. division':'2. division';
-  for(const t of (tByGroup.get(`${season}|${g.league_group_id}`)??[]).sort((a,b)=>(a.standing_position??99)-(b.standing_position??99))){
-   const q=kind==='liga'&&t.standing_position===9?qualFor(season,t.team_name_raw,kind):{opponent:'',result:'',match_id:''};
-   rows.push({'sæson':`${season}/${season+1}`,'hold':t.team_name_raw,'niveau_denne_sæson':level,'placering':t.standing_position??'ikke fundet','hændelse':eventFor(kind,t.standing_position),'kval_modstander':q.opponent,'kval_resultat':q.result,'niveau_næste_sæson_algoritme':algorithmLevel(season,level,t.team_name_raw),'niveau_næste_sæson_faktisk':nextLevel(season,t.team_name_raw),'christoffer_bekræftet':'','source_league_group_id':g.league_group_id,'source_group_name_raw':g.group_name_raw,'source_group_type':g.group_type,'source_match_id':q.match_id});
-  }
+  if(kind==='ligaQual')continue;if(gs.length!==1){omitted.push({season,kind,count:gs.length,groups:gs.map(g=>({id:g.league_group_id,division:g.division_name_raw,group:g.group_name_raw,type:g.group_type}))});continue;}
+  const g=gs[0],expected=kind==='liga'?'Ligaen':kind.startsWith('one')?'1. division':'2. division';
+  for(const t of (tByGroup.get(`${season}|${g.league_group_id}`)??[]).sort((a,b)=>(a.standing_position??99)-(b.standing_position??99))){const home=homeLevelFor(season,kind,t.team_name_raw,homes);if(home.basis.startsWith('BD')&&kind!=='liga')markerDecisions.push({season,league_group_id:g.league_group_id,team_name_raw:t.team_name_raw,marker:bdMarker(t.team_name_raw),assigned_home_level:home.level,emitted:home.level===expected});if(home.level!==expected)continue;const q=kind==='liga'&&t.standing_position===9?qualFor(season,t.team_name_raw):{opponent:'',result:'',match_id:''};rows.push({'sæson':`${season}/${season+1}`,'hold':t.team_name_raw,'niveau_denne_sæson':expected,'placering':t.standing_position??'ikke fundet','hændelse':eventFor(season,kind,t.standing_position,home.basis),'kval_modstander':q.opponent,'kval_resultat':q.result,'niveau_næste_sæson_algoritme':algorithmLevel(season,expected,t.team_name_raw),'niveau_næste_sæson_faktisk':nextLevel(season,t.team_name_raw),'christoffer_bekræftet':'','source_league_group_id':g.league_group_id,'source_group_name_raw':g.group_name_raw,'source_group_type':g.group_type,'source_match_id':q.match_id});}
  }
+ for(const m of matches.filter(m=>m.season_id===season))for(const [side,raw] of [['home',m.home_name_raw],['away',m.away_name_raw]])if(hasEmbeddedContactInfo(season,raw))contacts.push({season,league_group_id:m.league_group_id,external_match_id:m.external_match_id,side});
 }
-const cols=['sæson','hold','niveau_denne_sæson','placering','hændelse','kval_modstander','kval_resultat','niveau_næste_sæson_algoritme','niveau_næste_sæson_faktisk','christoffer_bekræftet','source_league_group_id','source_group_name_raw','source_group_type','source_match_id'];
-const csvValue=v=>`"${String(v??'').replaceAll('"','""')}"`;
+const cols=['sæson','hold','niveau_denne_sæson','placering','hændelse','kval_modstander','kval_resultat','niveau_næste_sæson_algoritme','niveau_næste_sæson_faktisk','christoffer_bekræftet','source_league_group_id','source_group_name_raw','source_group_type','source_match_id'], csvValue=v=>`"${String(v??'').replaceAll('"','""')}"`;
+const levelsByKey=new Map();for(const r of rows){const key=`${r.sæson}|${norm(r.hold)}`;if(!levelsByKey.has(key))levelsByKey.set(key,new Set());levelsByKey.get(key).add(r.niveau_denne_sæson);}const crossLevelDuplicates=[...levelsByKey.entries()].filter(([,levels])=>levels.size>1).map(([key,levels])=>({key,levels:[...levels]}));
+const contactBySeason=Object.values(contacts.reduce((out,row)=>{const k=row.season;out[k]??={season:k,occurrences:0,match_ids:new Set(),groups:new Set()};out[k].occurrences++;out[k].match_ids.add(row.external_match_id);out[k].groups.add(row.league_group_id);return out;},{})).map(r=>({season:r.season,occurrences:r.occurrences,distinct_matches:r.match_ids.size,affected_groups:r.groups.size}));
+const contactSummary={occurrences:contacts.length,distinct_matches:new Set(contacts.map(x=>x.external_match_id)).size,by_season:contactBySeason,examples:contacts.slice(0,20)};
 fs.writeFileSync('statistik/results/089-liga-1div-revisionstabel.csv',[cols.map(csvValue).join(','),...rows.map(r=>cols.map(c=>csvValue(r[c])).join(','))].join('\n')+'\n');
-fs.writeFileSync('statistik/results/089-liga-1div-revisionstabel.json',JSON.stringify({generated_at:new Date().toISOString(),columns:cols,rows,omitted_season_structures:omitted,selection_method:'Groups are selected from group_type_katalog plus explicit level/structure labels documented in 086b; ambiguous or absent structures are omitted rather than inferred.'},null,2));
-console.log(JSON.stringify({seasons,rows:rows.length,omitted,byLevel:Object.fromEntries(['Ligaen','1. division','2. division'].map(l=>[l,rows.filter(r=>r.niveau_denne_sæson===l).length]))},null,2));
+fs.writeFileSync('statistik/results/089-liga-1div-revisionstabel.json',JSON.stringify({generated_at:new Date().toISOString(),columns:cols,rows,omitted_season_structures:omitted,liga_one_division_boundary_structures:structures,contact_info_contamination:contactSummary,bd_marker_decisions:markerDecisions,cross_level_duplicates:crossLevelDuplicates,selection_method:'Kvalifikationsgrupper vælges med group_type_katalog og dokumenterede strukturbetegnelser. Hjemmeniveau afgøres først af (O)/(N) fra league_group_teams, ellers af samme sæsons egen grundspilspulje. league_matches bruges kun efter rensning/mapping af kontaktinfo.'},null,2));
+console.log(JSON.stringify({rows:rows.length,byLevel:Object.fromEntries(['Ligaen','1. division','2. division'].map(l=>[l,rows.filter(r=>r.niveau_denne_sæson===l).length])),crossLevelDuplicates,contacts:contactSummary,markerDecisions,structures,omitted},null,2));
