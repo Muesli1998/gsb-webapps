@@ -100,4 +100,33 @@ manglende sæson, i stedet for at gætte.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+**Leverance:** `statistik/results/089-liga-1div-revisionstabel.csv` og
+`statistik/results/089-liga-1div-revisionstabel.json`, genereret af
+`statistik/scripts/089-generate-liga-1div-revisionstabel.mjs`. CSV og JSON
+har de samme 456 rækker og samme hovedkolonner; fire ekstra
+sporbarhedskolonner angiver kilde-pulje og, hvor relevant, kamp-ID.
+
+**Dækning:** 2010/2011–2026/2027 (17 sæsoner), fordelt på 168 Liga-rækker,
+176 rækker fra 1. divisions kvalifikations-/nedrykningsstruktur og 112
+rækker fra 2. divisions opryknings-/kvalifikationsstruktur. Alle 456 rækker
+har `source_league_group_id`; 12 Liga-kvalifikationsrækker har også et
+konkret `source_match_id`, modstander og resultat.
+
+**Næste sæson:** Det direkte, datadrevne opslag fandt et entydigt niveau i
+378 rækker (155 Ligaen, 139 1. division, 84 2. division). De resterende 78
+står ærligt som `ikke fundet`. 087-algoritmens gemte output gav en
+konklusion for 7 af de 456 rækker; de øvrige står som `ikke fundet` frem for
+at blive udfyldt ved gæt.
+
+**Bevidst udeladt struktur:** 2012/2013 mangler en entydig 1. divisions
+nedrykningsgruppe; 2018/2019 mangler både en entydig 1. divisions
+nedrykningsgruppe og en entydig 2. divisions oprykningsgruppe; 2020/2021
+har ingen af de tre nødvendige 1./2.-divisions strukturer i data; 2026/2027
+har endnu ingen af dem. De er registreret som
+`omitted_season_structures` i JSON i stedet for at blive gættet.
+
+**Værn:** Ingen API-kald. `gsb-statistik-normalized.db` havde før og efter
+SHA-256 `49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E`.
+`statistik/data/` var allerede en utracket, ignoreret mappe og er ikke
+stageet eller ændret af opgaven. `christoffer_bekræftet` er tom på alle 456
+rækker.
