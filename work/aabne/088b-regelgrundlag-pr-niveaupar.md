@@ -87,6 +87,10 @@ Er en reglement-udgave ikke tilgængelig (heller ikke via Wayback Machine), elle
 tvetydig mellem to kilder: dokumentér begge dele og lad det stå åbent. Samme princip som resten af
 projektet.
 
+
+### Roskilde-mål tilføjet efter 088a (2026-09-24)
+
+Undersøg specifikt 2025/26-sagen: Badminton Roskilde blev nr. 4 i `league_group_id=17913` (*3. division — Nedrykning fra 3. division pulje B*) og vandt derefter kvalkamp `505717` 7-6 i `league_group_id=17915` (*Kvalkampe: Nedrykning til DS*). 088a fandt ingen `trukket`/`udgået`/W/O-markør i gemt HTML. Find den konkrete paragraf eller regel, som fastlægger hvem der går i dette nedrykningskval-spil. Test særligt klub-cap-effekt, afslag-kaskade efter §28 og andre relevante regler. Kan reglementet ikke forklare den, skal 088c få den som et konkret BD-spørgsmål.
 ### Spørgsmål
 
 (Udfyldes af den der løser opgaven. Christoffer svarer her i filen.)
