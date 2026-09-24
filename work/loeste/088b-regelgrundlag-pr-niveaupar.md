@@ -97,6 +97,15 @@ Undersøg specifikt 2025/26-sagen: Badminton Roskilde blev nr. 4 i `league_group
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`. Opdater desuden
-`statistik/results/086-liga-hierarki-viden-samlet.md` afsnit 3 med den udvidede, niveaupar-specifikke
-regeldækning.)*
+- Rapport: `statistik/results/088b-regelgrundlag-pr-niveaupar.md`.
+- Roskilde-sagen er forklaret direkte: 2025 §23 stk. 4 gør nr. 4 og 5 i hvert
+  3.-divisions-nedrykningsspil kvalifikationsberettigede. Kamp 505717 kræver derfor ikke en
+  cap-/afslagsforklaring.
+- BD-stigens fem niveaupar er dokumenteret med 2025 som fuld ordret baseline og med fundne
+  2020/2022/2023-juli/2023-november/2024/2026-udgaver samt eksplicitte 2019/2021/2027-huller.
+  Ligaens dokumenterede ændringer er 2020 → 2025 → 2026; 3.divisions 4-5/event og DS 5-6/event er
+  bekræftet i 2020, 2022, 2025 og 2026.
+- 2026-bilag 1-3, holdfællesskabstillæg og holdsætningsvejledninger er kontrolleret; ingen ændrer
+  §§17-29. Regional op-/nedrykning er kredsbestemt efter §5 stk. 2 og er eksplicit udskudt.
+- `statistik/results/086-liga-hierarki-viden-samlet.md` afsnit 3 er opdateret. Ingen database blev
+  skrevet, og ingen badmintonplayer.dk/nembadminton.dk-kald blev foretaget.

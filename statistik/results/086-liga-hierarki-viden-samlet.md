@@ -7,7 +7,7 @@ liga-hierarki (regioner, niveauer, op-/nedrykning, spilleform) reelt hænger sam
 FACIT, som det ser ud lige nu, og opdateres når ny viden kommer til. Ret det direkte når noget ændrer sig
 — det er ikke en historik, det er den aktuelle status.
 
-Sidst opdateret: 2026-09-23 (efter opgave 086e).
+Sidst opdateret: 2026-09-24 (efter opgave 088b).
 
 ## 1. Tre-lags forbindelsesmodel (godkendt princip)
 
@@ -52,6 +52,14 @@ Bekræftede regler (§26/§28, variation mellem år endnu ikke fuldt kortlagt pr
 - Tvangsnedrykning ved for mange hold fra samme klub på ét niveau.
 - Afslag-på-oprykning kan IKKE bare kaskade til næste hold i rækken, hvis det hold selv ikke ville have
   vundet oprykningen (§28).
+
+**Niveaupar-specifik dækning (088b):** `088b-regelgrundlag-pr-niveaupar.md` dokumenterer §§17-29 for
+Ligaen↔1. division, 1.↔2., 2.↔3., 3.↔Danmarksserien og Danmarksserien↔kreds. 2025/26 har direkte
+op-/nedrykning plus kvalifikationsevent: særligt er nr. 4-5 i hvert 3.-divisions-nedrykningsspil
+kvalifikationsberettiget (§23 stk. 4). Det forklarer Badminton Roskilde som nr. 4 i pulje 17913 og
+kamp 505717 uden at antage klub-cap eller afslag. Dokumenterede strukturændringer: Ligaens 2020-model
+(nr. 9 mod 1.div.-nr. 2) er ændret i 2025 og igen i 2026, mens 3.divisions 4-5/event og DS 5-6/event
+er direkte bekræftet i 2020, 2022, 2025 og 2026. 2019, 2021 og 2027 mangler fortsat verificerbar PDF.
 
 ## 4. Op-/nedrykning — empirisk test (opgave 086d + 086e)
 
