@@ -709,3 +709,9 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
 - ID-scan: ingen stabil klub-/hold-ID-markør fundet; kun allerede udtrukket, puljelokalt `leagueGroupTeamID`.
 - Rå HTML-scan: 2.407 fodnote-/statusmarkørtræf på 1.729 sider.
 - Stoppet ved Roskilde- og Gentofte-testcases, fordi kortet mangler konkrete sæson-/puljehenvisninger; spørgsmålet er indsat i kortet.
+
+## 2026-09-24 — Opgave 088a, Roskilde/Gentofte-testcases
+
+- Christoffer identificerede Roskilde-puljerne `17913`/`17915` og Gentofte-puljerne `17880`/`17890`/`17894`/`17891`.
+- Roskilde: nr. 4 i 17913 og derefter 7-6-sejr i kvalkamp `505717`; ingen rå HTML-statusmarkør forklarer kvalifikationen.
+- Gentofte: G1 og G2 var fortsat over G3; G3 var nr. 3 i 17894, men deltog ikke i 17891, mens nr. 4 Lyngby deltog. Det matcher den oplyste cap-forskydning. Regelgrundlaget afgrænses til 088b.

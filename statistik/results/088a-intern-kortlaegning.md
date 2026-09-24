@@ -1,6 +1,6 @@
 # Opgave 088a — intern kortlægning
 
-Genereret 2026-09-23T20:37:01.061Z. Kun læsning af allerede hentet data; ingen API-kald eller websøgning.
+Genereret 2026-09-24T13:50:26.566Z. Kun læsning af allerede hentet data; ingen API-kald eller websøgning.
 
 ## 1. ID-jagt
 
@@ -22,11 +22,11 @@ Kun ShowStanding-side-3’s leagueGroupTeamID ses systematisk i det repræsentat
 |---|---:|
 | grundspil | 13341 |
 | andet/ukendt | 1757 |
-| nedrykningsspil | 312 |
+| nedrykningsspil | 306 |
 | slutspil | 2920 |
-| oprykningsspil | 167 |
-| kvalifikation_ned | 41 |
-| kvalifikation_op | 8 |
+| oprykningsspil | 160 |
+| kvalifikation_ned | 47 |
+| kvalifikation_op | 15 |
 
 | Division | Gruppe | Type | Forekomster | Sæsoner | Regioner | Grundlag |
 |---|---|---|---:|---|---:|---|
@@ -831,11 +831,11 @@ Kun ShowStanding-side-3’s leagueGroupTeamID ses systematisk i det repræsentat
 | 2. division (oversidder-runder) | Oversidder-runder/papirhold | grundspil | 3 | 2023–2025 | 1 | navneord: grundspil/pulje |
 | 3. division | Kvalifikation til 2.division pulje A | andet/ukendt | 3 | 2023–2025 | 1 | kvalifikation uden retning |
 | 3. division | Kvalifikation til 2.division pulje B | andet/ukendt | 3 | 2023–2025 | 1 | kvalifikation uden retning |
-| 3. division | Kvalkampe: Nedrykning til DS | nedrykningsspil | 3 | 2023–2025 | 1 | navneord: nedrykning |
-| 3. division | Kvalkampe: Oprykning til 2. division | oprykningsspil | 3 | 2023–2025 | 1 | navneord: oprykning |
+| 3. division | Kvalkampe: Nedrykning til DS | kvalifikation_ned | 3 | 2023–2025 | 1 | navneord: kvalifikation + ned |
+| 3. division | Kvalkampe: Oprykning til 2. division | kvalifikation_op | 3 | 2023–2025 | 1 | navneord: kvalifikation + op |
 | 3. division (oversidder-runde) | Oversidder-runder/papirhold | grundspil | 3 | 2023–2025 | 1 | navneord: grundspil/pulje |
-| Danmarksserien | Kvalkampe: Nedrykning til KS | nedrykningsspil | 3 | 2023–2025 | 1 | navneord: nedrykning |
-| Danmarksserien | Kvalkampe: Oprykning til 3. division | oprykningsspil | 3 | 2023–2025 | 1 | navneord: oprykning |
+| Danmarksserien | Kvalkampe: Nedrykning til KS | kvalifikation_ned | 3 | 2023–2025 | 1 | navneord: kvalifikation + ned |
+| Danmarksserien | Kvalkampe: Oprykning til 3. division | kvalifikation_op | 3 | 2023–2025 | 1 | navneord: kvalifikation + op |
 | Motion 2+2 uden singler | Pulje 1 | grundspil | 3 | 2023–2025 | 2 | navneord: grundspil/pulje |
 | Mot 4 herrer uden singler | Pulje 1 | grundspil | 3 | 2023–2025 | 2 | navneord: grundspil/pulje |
 | MOT 4 Spillere Serie 3 | Pulje 2 | grundspil | 3 | 2023–2025 | 1 | navneord: grundspil/pulje |
@@ -8522,7 +8522,7 @@ Kun ShowStanding-side-3’s leagueGroupTeamID ses systematisk i det repræsentat
 | Serie 2, 1. halvår 2024 | Pulje 1 | grundspil | 1 | 2023–2023 | 2 | navneord: grundspil/pulje |
 | Serie 3, 1. halvår 2024 | Pulje 1 | grundspil | 1 | 2023–2023 | 2 | navneord: grundspil/pulje |
 | Serie 2 - for spillere fra U17 | Pulje 1 | grundspil | 1 | 2023–2023 | 2 | navneord: grundspil/pulje |
-| Kredsserien Vest | Kvalkampe: Oprykning til DS | oprykningsspil | 1 | 2023–2023 | 4 | navneord: oprykning |
+| Kredsserien Vest | Kvalkampe: Oprykning til DS | kvalifikation_op | 1 | 2023–2023 | 4 | navneord: kvalifikation + op |
 | Kredsserien Vest - slutspilstider | Pulje 2 og 4 | slutspil | 1 | 2023–2023 | 4 | navneord: slutspil |
 | Senior B/C (4+2) | Pulje 121 (AT) | grundspil | 1 | 2023–2023 | 9 | navneord: grundspil/pulje |
 | Senior B/C (4+2) | Pulje 121 B slutspil B | slutspil | 1 | 2023–2023 | 9 | navneord: slutspil |
@@ -9272,3 +9272,25 @@ Den interne tekstafgrænsning fandt nedenstående kandidater. Kortet angiver ikk
 - Stabilt, tværsæson-klub-ID: **nej fundet i dette udsnit**.
 - Gruppetyper: kataloget er komplet for `league_groups`; uklare navne er bevaret som `andet/ukendt`.
 - Roskilde/Gentofte: kræver de konkrete sæson-/puljehenvisninger for en ikke-gættet testcase.
+
+## Tilføjelse: konkrete Roskilde- og Gentofte-testcases (2026-09-24)
+
+### Roskilde — dokumenteret forløb, men ikke regelårsag
+
+| Led | Pulje | Fund |
+|---|---|---|
+| Nedrykningsspil | `17913` | Badminton Roskilde nr. 4: 4 kampe, 2 sejre, score 31-21, sæt 70-48, 79 point. |
+| Kvalkamp | `17915` | Roskilde slog Dalum Hjallese 7-6, kamp `505717`, 18-04-2026. |
+
+Ingen statusmarkør (`trukket`, `udgået`, `W/O`) blev fundet i de to gemte HTML-svar. Data dokumenterer dermed forløbet, men ikke den regel der sendte nr. 4 i kvalkamp. Det går til 088b/088c som et åbent, dokumenteret spørgsmål.
+
+### Gentofte — cap-filterets observerbare udfald
+
+| Niveau | Pulje | Hold og placering | Observeret betydning |
+|---|---|---|---|
+| Liga | `17880` | Gentofte nr. 5 | G1 forblev over G3. |
+| 1. division, nedrykning | `17890` | Gentofte 2 nr. 3 | G2 forblev over G3. |
+| 2. division, kvalifikation | `17894` | Gentofte 3 nr. 3 | G3 blev ikke ført videre. |
+| 1. division, kvalkampe | `17891` | Lyngby nr. 4 i 17894 deltog; Gentofte 3 gjorde ikke | Matcher Christoffers cap-forklaring. |
+
+Dette er adfærdsmæssig validering af filterets konkrete udfald, ikke et selvstændigt bevis for alle regelparametre. Kvalkampene blev ifølge Christoffers procesoplysning afgjort efter de ordinære slutspil; i denne testcase sluttede de viste puljespil 21.-23. marts og kvalkampene blev spillet 18. april 2026.

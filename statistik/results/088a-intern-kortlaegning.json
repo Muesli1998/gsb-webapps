@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T20:37:01.061Z",
+  "generated_at": "2026-09-24T13:50:26.566Z",
   "groups": 18546,
   "catalog": [
     {
@@ -8816,8 +8816,8 @@
     {
       "division_name_raw": "3. division",
       "group_name_raw": "Kvalkampe: Nedrykning til DS",
-      "group_type": "nedrykningsspil",
-      "classification_basis": "navneord: nedrykning",
+      "group_type": "kvalifikation_ned",
+      "classification_basis": "navneord: kvalifikation + ned",
       "occurrence_count": 3,
       "first_season_id": 2023,
       "last_season_id": 2025,
@@ -8827,8 +8827,8 @@
     {
       "division_name_raw": "3. division",
       "group_name_raw": "Kvalkampe: Oprykning til 2. division",
-      "group_type": "oprykningsspil",
-      "classification_basis": "navneord: oprykning",
+      "group_type": "kvalifikation_op",
+      "classification_basis": "navneord: kvalifikation + op",
       "occurrence_count": 3,
       "first_season_id": 2023,
       "last_season_id": 2025,
@@ -8849,8 +8849,8 @@
     {
       "division_name_raw": "Danmarksserien",
       "group_name_raw": "Kvalkampe: Nedrykning til KS",
-      "group_type": "nedrykningsspil",
-      "classification_basis": "navneord: nedrykning",
+      "group_type": "kvalifikation_ned",
+      "classification_basis": "navneord: kvalifikation + ned",
       "occurrence_count": 3,
       "first_season_id": 2023,
       "last_season_id": 2025,
@@ -8860,8 +8860,8 @@
     {
       "division_name_raw": "Danmarksserien",
       "group_name_raw": "Kvalkampe: Oprykning til 3. division",
-      "group_type": "oprykningsspil",
-      "classification_basis": "navneord: oprykning",
+      "group_type": "kvalifikation_op",
+      "classification_basis": "navneord: kvalifikation + op",
       "occurrence_count": 3,
       "first_season_id": 2023,
       "last_season_id": 2025,
@@ -93417,8 +93417,8 @@
     {
       "division_name_raw": "Kredsserien Vest",
       "group_name_raw": "Kvalkampe: Oprykning til DS",
-      "group_type": "oprykningsspil",
-      "classification_basis": "navneord: oprykning",
+      "group_type": "kvalifikation_op",
+      "classification_basis": "navneord: kvalifikation + op",
       "occurrence_count": 1,
       "first_season_id": 2023,
       "last_season_id": 2023,
@@ -98214,11 +98214,11 @@
   "type_counts": {
     "grundspil": 13341,
     "andet/ukendt": 1757,
-    "nedrykningsspil": 312,
+    "nedrykningsspil": 306,
     "slutspil": 2920,
-    "oprykningsspil": 167,
-    "kvalifikation_ned": 41,
-    "kvalifikation_op": 8
+    "oprykningsspil": 160,
+    "kvalifikation_ned": 47,
+    "kvalifikation_op": 15
   },
   "unclear": [
     {

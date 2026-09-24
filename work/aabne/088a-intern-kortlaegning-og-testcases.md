@@ -141,3 +141,13 @@ Samme princip som resten af projektet.
 - **Gruppetype-katalog:** `group_type_katalog` er oprettet som dokumenteret ovenfor og indeholder 8.928 distinkte `(division_name_raw, group_name_raw)`-kombinationer for 18.546 puljer. 1.757 puljeforekomster (939 distinkte navnekombinationer) er `andet/ukendt`; de er ikke automatisk fortolket.
 - **Rå markeringer:** Scan af alle gemte indeks- og puljesider fandt 2.407 træf for `trukket`, `udgået`, `tvangsnedrykket`, `walkover` eller `W/O` på 1.729 sider; kontekstprøver ligger i resultatets JSON.
 - **Behov for konkret testcase-reference:** Kortet angiver hverken sæson eller pulje for Roskilde-sagen eller Gentofte-sagen. Den brede tekstsøgning giver mange kandidater, men kan ikke reproducere det kendte udfald uden at gætte. Christoffer bedes derfor angive sæson og mindst én pulje-/gruppenøgle eller den konkrete kamp/placering for hver testcase.
+
+### Testcase-præcisering fra Christoffer (2026-09-24)
+
+- **Roskilde:** sæson 2025/26, `league_group_id=17913`, *3. division — Nedrykning fra 3. division pulje B*, efterfulgt af `league_group_id=17915`, *3. division — Kvalkampe: Nedrykning til DS*. Kampene er `505716` og `505717`.
+- **Gentofte:** sæson 2025/26: `17894` (*2. division — Kvalifikation til 1. division*), `17891` (*1. division — Kvalifikationskampe til 1. division*), `17890` (*1. division — Nedrykning fra 1. division*) og `17880` (*Badmintonligaen — Grundspil*). Gentofte 2 havde sikret overlevelse i 1. division og Gentofte 1 i Ligaen. Christoffer oplyser, at kvalkampe først afgøres, når det ordinære slutspil er færdigt.
+
+### Testcase-resultat (2026-09-24)
+
+- **Roskilde:** 17913 har Badminton Roskilde som nr. 4 (4 kampe, 2 vundne, 31-21 i score, 70-48 i sæt, 79 point). I 17915 slog Roskilde Dalum Hjallese 7-6 den 18-04-2026 (`external_match_id=505717`). Der er ingen `trukket`/`udgået`/W/O-markering i den gemte rå HTML for hverken 17913 eller 17915. Datasættet dokumenterer derfor kvalforløbet, men forklarer ikke regelgrundlaget for at nr. 4 skulle i kvalkamp; det sendes til 088b/088c uden gæt.
+- **Gentofte:** G1 er nr. 5 i Liga-grundspillet (17880), G2 nr. 3 i 1.-divisions-nedrykningsspillet (17890), og G3 nr. 3 i 2.-divisions-kvalifikationen (17894). G3 er ikke med i 1.-divisions-kvalkampene (17891), mens nr. 4 Lyngby er med. Det stemmer med Christoffers cap-forklaring: G1 og G2 er allerede placeret over G3, og næste berettigede placering træder ind. Datamønstret reproducerer udfaldet, men den præcise juridiske cap-regel og alle grænsetilfælde er 088b's opgave.
