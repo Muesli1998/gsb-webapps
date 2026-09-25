@@ -1,0 +1,1244 @@
+{
+  "genereret": "2026-09-25T14:57:21.797Z",
+  "antal_traade": 171,
+  "kaeder": [
+    [
+      {
+        "saeson": "2010/2011",
+        "hold": "Team Skælskør-Slagelse 1",
+        "niveau": "Ligaen",
+        "placering": "1"
+      },
+      {
+        "saeson": "2011/2012",
+        "hold": "Team Skælskør-Slagelse",
+        "niveau": "Ligaen",
+        "placering": "1"
+      },
+      {
+        "saeson": "2012/2013",
+        "hold": "Team Skælskør-Slagelse",
+        "niveau": "Ligaen",
+        "placering": "2"
+      },
+      {
+        "saeson": "2013/2014",
+        "hold": "Team Skælskør-Slagelse",
+        "niveau": "Ligaen",
+        "placering": "1"
+      },
+      {
+        "saeson": "2014/2015",
+        "hold": "Team Skælskør-Slagelse",
+        "niveau": "Ligaen",
+        "placering": "1"
+      },
+      {
+        "saeson": "2015/2016",
+        "hold": "Team Skælskør-Slagelse",
+        "niveau": "Ligaen",
+        "placering": "3"
+      },
+      {
+        "saeson": "2016/2017",
+        "hold": "Team Skælskør-Slagelse",
+        "niveau": "Ligaen",
+        "placering": "4"
+      },
+      {
+        "saeson": "2017/2018",
+        "hold": "Team Skælskør-Slagelse",
+        "niveau": "Ligaen",
+        "placering": "5"
+      },
+      {
+        "saeson": "2018/2019",
+        "hold": "Team Skælskør-Slagelse",
+        "niveau": "Ligaen",
+        "placering": "4"
+      },
+      {
+        "saeson": "2019/2020",
+        "hold": "Team Skælskør-Slagelse",
+        "niveau": "Ligaen",
+        "placering": "7"
+      },
+      {
+        "saeson": "2020/2021",
+        "hold": "Team Skælskør-Slagelse",
+        "niveau": "Ligaen",
+        "placering": "2"
+      },
+      {
+        "saeson": "2021/2022",
+        "hold": "Team Skælskør-Slagelse",
+        "niveau": "Ligaen",
+        "placering": "6"
+      },
+      {
+        "saeson": "2022/2023",
+        "hold": "Team Skælskør-Slagelse",
+        "niveau": "Ligaen",
+        "placering": "4"
+      },
+      {
+        "saeson": "2023/2024",
+        "hold": "Team Skælskør-Slagelse",
+        "niveau": "Ligaen",
+        "placering": "4"
+      },
+      {
+        "saeson": "2024/2025",
+        "hold": "Team Skælskør-Slagelse",
+        "niveau": "Ligaen",
+        "placering": "7"
+      },
+      {
+        "saeson": "2025/2026",
+        "hold": "Team Skælskør-Slagelse",
+        "niveau": "Ligaen",
+        "placering": "10"
+      },
+      {
+        "saeson": "2026/2027",
+        "hold": "Team Skælskør-Slagelse (N)",
+        "niveau": "1. division",
+        "placering": "5"
+      }
+    ],
+    [
+      {
+        "saeson": "2010/2011",
+        "hold": "Greve 1",
+        "niveau": "Ligaen",
+        "placering": "2"
+      },
+      {
+        "saeson": "2011/2012",
+        "hold": "Greve",
+        "niveau": "Ligaen",
+        "placering": "2"
+      },
+      {
+        "saeson": "2012/2013",
+        "hold": "Greve",
+        "niveau": "Ligaen",
+        "placering": "6"
+      },
+      {
+        "saeson": "2013/2014",
+        "hold": "Greve",
+        "niveau": "Ligaen",
+        "placering": "3"
+      },
+      {
+        "saeson": "2014/2015",
+        "hold": "Greve",
+        "niveau": "Ligaen",
+        "placering": "4"
+      },
+      {
+        "saeson": "2015/2016",
+        "hold": "Greve",
+        "niveau": "Ligaen",
+        "placering": "5"
+      },
+      {
+        "saeson": "2016/2017",
+        "hold": "Greve",
+        "niveau": "Ligaen",
+        "placering": "5"
+      },
+      {
+        "saeson": "2017/2018",
+        "hold": "Greve",
+        "niveau": "Ligaen",
+        "placering": "6"
+      },
+      {
+        "saeson": "2018/2019",
+        "hold": "Greve",
+        "niveau": "Ligaen",
+        "placering": "1"
+      },
+      {
+        "saeson": "2019/2020",
+        "hold": "Greve",
+        "niveau": "Ligaen",
+        "placering": "1"
+      },
+      {
+        "saeson": "2020/2021",
+        "hold": "Greve",
+        "niveau": "Ligaen",
+        "placering": "8"
+      },
+      {
+        "saeson": "2021/2022",
+        "hold": "Greve",
+        "niveau": "Ligaen",
+        "placering": "10"
+      },
+      {
+        "saeson": "2022/2023",
+        "hold": "Greve (N)",
+        "niveau": "1. division",
+        "placering": "3"
+      }
+    ],
+    [
+      {
+        "saeson": "2010/2011",
+        "hold": "Værløse 1",
+        "niveau": "Ligaen",
+        "placering": "3"
+      },
+      {
+        "saeson": "2011/2012",
+        "hold": "Værløse",
+        "niveau": "Ligaen",
+        "placering": "4"
+      },
+      {
+        "saeson": "2012/2013",
+        "hold": "Værløse",
+        "niveau": "Ligaen",
+        "placering": "4"
+      },
+      {
+        "saeson": "2013/2014",
+        "hold": "Værløse",
+        "niveau": "Ligaen",
+        "placering": "9"
+      },
+      {
+        "saeson": "2014/2015",
+        "hold": "Værløse",
+        "niveau": "Ligaen",
+        "placering": "5"
+      },
+      {
+        "saeson": "2015/2016",
+        "hold": "Værløse",
+        "niveau": "Ligaen",
+        "placering": "2"
+      },
+      {
+        "saeson": "2016/2017",
+        "hold": "Værløse",
+        "niveau": "Ligaen",
+        "placering": "3"
+      },
+      {
+        "saeson": "2017/2018",
+        "hold": "Værløse",
+        "niveau": "Ligaen",
+        "placering": "10"
+      },
+      {
+        "saeson": "2018/2019",
+        "hold": "Værløse",
+        "niveau": "Ligaen",
+        "placering": "8"
+      },
+      {
+        "saeson": "2019/2020",
+        "hold": "Værløse",
+        "niveau": "Ligaen",
+        "placering": "6"
+      },
+      {
+        "saeson": "2020/2021",
+        "hold": "Værløse",
+        "niveau": "Ligaen",
+        "placering": "3"
+      },
+      {
+        "saeson": "2021/2022",
+        "hold": "Værløse",
+        "niveau": "Ligaen",
+        "placering": "4"
+      },
+      {
+        "saeson": "2022/2023",
+        "hold": "Værløse",
+        "niveau": "Ligaen",
+        "placering": "8"
+      },
+      {
+        "saeson": "2023/2024",
+        "hold": "Værløse",
+        "niveau": "Ligaen",
+        "placering": "8"
+      },
+      {
+        "saeson": "2024/2025",
+        "hold": "Værløse",
+        "niveau": "Ligaen",
+        "placering": "8"
+      },
+      {
+        "saeson": "2025/2026",
+        "hold": "Værløse",
+        "niveau": "Ligaen",
+        "placering": "6"
+      },
+      {
+        "saeson": "2026/2027",
+        "hold": "Værløse",
+        "niveau": "Ligaen",
+        "placering": "5"
+      }
+    ],
+    [
+      {
+        "saeson": "2010/2011",
+        "hold": "Team Aarhus 1",
+        "niveau": "Ligaen",
+        "placering": "4"
+      },
+      {
+        "saeson": "2011/2012",
+        "hold": "Team Aarhus",
+        "niveau": "Ligaen",
+        "placering": "9"
+      }
+    ],
+    [
+      {
+        "saeson": "2010/2011",
+        "hold": "Lillerød 1",
+        "niveau": "Ligaen",
+        "placering": "5"
+      },
+      {
+        "saeson": "2011/2012",
+        "hold": "Lillerød",
+        "niveau": "Ligaen",
+        "placering": "10"
+      }
+    ],
+    [
+      {
+        "saeson": "2010/2011",
+        "hold": "Vendsyssel 1",
+        "niveau": "Ligaen",
+        "placering": "6"
+      },
+      {
+        "saeson": "2011/2012",
+        "hold": "Vendsyssel",
+        "niveau": "Ligaen",
+        "placering": "3"
+      },
+      {
+        "saeson": "2012/2013",
+        "hold": "Vendsyssel",
+        "niveau": "Ligaen",
+        "placering": "7"
+      },
+      {
+        "saeson": "2013/2014",
+        "hold": "Vendsyssel",
+        "niveau": "Ligaen",
+        "placering": "7"
+      },
+      {
+        "saeson": "2014/2015",
+        "hold": "Vendsyssel",
+        "niveau": "Ligaen",
+        "placering": "9"
+      },
+      {
+        "saeson": "2015/2016",
+        "hold": "Vendsyssel",
+        "niveau": "Ligaen",
+        "placering": "6"
+      },
+      {
+        "saeson": "2016/2017",
+        "hold": "Vendsyssel",
+        "niveau": "Ligaen",
+        "placering": "2"
+      },
+      {
+        "saeson": "2017/2018",
+        "hold": "Vendsyssel",
+        "niveau": "Ligaen",
+        "placering": "3"
+      },
+      {
+        "saeson": "2018/2019",
+        "hold": "Vendsyssel",
+        "niveau": "Ligaen",
+        "placering": "3"
+      },
+      {
+        "saeson": "2019/2020",
+        "hold": "Vendsyssel",
+        "niveau": "Ligaen",
+        "placering": "2"
+      },
+      {
+        "saeson": "2020/2021",
+        "hold": "Vendsyssel",
+        "niveau": "Ligaen",
+        "placering": "1"
+      },
+      {
+        "saeson": "2021/2022",
+        "hold": "Vendsyssel",
+        "niveau": "Ligaen",
+        "placering": "1"
+      },
+      {
+        "saeson": "2022/2023",
+        "hold": "Vendsyssel (M)",
+        "niveau": "Ligaen",
+        "placering": "2"
+      },
+      {
+        "saeson": "2023/2024",
+        "hold": "Vendsyssel (M)",
+        "niveau": "Ligaen",
+        "placering": "3"
+      },
+      {
+        "saeson": "2024/2025",
+        "hold": "Vendsyssel",
+        "niveau": "Ligaen",
+        "placering": "2"
+      },
+      {
+        "saeson": "2025/2026",
+        "hold": "Vendsyssel (M)",
+        "niveau": "Ligaen",
+        "placering": "1"
+      },
+      {
+        "saeson": "2026/2027",
+        "hold": "Vendsyssel",
+        "niveau": "Ligaen",
+        "placering": "1"
+      }
+    ],
+    [
+      {
+        "saeson": "2010/2011",
+        "hold": "Skovshoved 1",
+        "niveau": "Ligaen",
+        "placering": "7"
+      },
+      {
+        "saeson": "2011/2012",
+        "hold": "Skovshoved",
+        "niveau": "Ligaen",
+        "placering": "6"
+      },
+      {
+        "saeson": "2012/2013",
+        "hold": "Skovshoved",
+        "niveau": "Ligaen",
+        "placering": "1"
+      },
+      {
+        "saeson": "2013/2014",
+        "hold": "Skovshoved",
+        "niveau": "Ligaen",
+        "placering": "2"
+      },
+      {
+        "saeson": "2014/2015",
+        "hold": "Skovshoved",
+        "niveau": "Ligaen",
+        "placering": "3"
+      },
+      {
+        "saeson": "2015/2016",
+        "hold": "Skovshoved",
+        "niveau": "Ligaen",
+        "placering": "1"
+      },
+      {
+        "saeson": "2016/2017",
+        "hold": "Skovshoved",
+        "niveau": "Ligaen",
+        "placering": "1"
+      },
+      {
+        "saeson": "2017/2018",
+        "hold": "Skovshoved",
+        "niveau": "Ligaen",
+        "placering": "1"
+      },
+      {
+        "saeson": "2018/2019",
+        "hold": "Skovshoved",
+        "niveau": "Ligaen",
+        "placering": "6"
+      },
+      {
+        "saeson": "2019/2020",
+        "hold": "Skovshoved",
+        "niveau": "Ligaen",
+        "placering": "5"
+      },
+      {
+        "saeson": "2020/2021",
+        "hold": "Skovshoved",
+        "niveau": "Ligaen",
+        "placering": "4"
+      },
+      {
+        "saeson": "2021/2022",
+        "hold": "Skovshoved",
+        "niveau": "Ligaen",
+        "placering": "2"
+      },
+      {
+        "saeson": "2022/2023",
+        "hold": "Skovshoved",
+        "niveau": "Ligaen",
+        "placering": "3"
+      },
+      {
+        "saeson": "2023/2024",
+        "hold": "Skovshoved",
+        "niveau": "Ligaen",
+        "placering": "2"
+      },
+      {
+        "saeson": "2024/2025",
+        "hold": "Skovshoved",
+        "niveau": "Ligaen",
+        "placering": "3"
+      },
+      {
+        "saeson": "2025/2026",
+        "hold": "Skovshoved",
+        "niveau": "Ligaen",
+        "placering": "2"
+      },
+      {
+        "saeson": "2026/2027",
+        "hold": "Skovshoved",
+        "niveau": "Ligaen",
+        "placering": "9"
+      }
+    ],
+    [
+      {
+        "saeson": "2010/2011",
+        "hold": "Gentofte 1",
+        "niveau": "Ligaen",
+        "placering": "8"
+      },
+      {
+        "saeson": "2011/2012",
+        "hold": "Gentofte",
+        "niveau": "Ligaen",
+        "placering": "8"
+      }
+    ],
+    [
+      {
+        "saeson": "2010/2011",
+        "hold": "Aarhus AB 1",
+        "niveau": "1. division",
+        "placering": "1"
+      },
+      {
+        "saeson": "2011/2012",
+        "hold": "Aarhus AB (O)",
+        "niveau": "Ligaen",
+        "placering": "5"
+      },
+      {
+        "saeson": "2012/2013",
+        "hold": "Aarhus AB",
+        "niveau": "Ligaen",
+        "placering": "8"
+      },
+      {
+        "saeson": "2013/2014",
+        "hold": "Aarhus AB",
+        "niveau": "Ligaen",
+        "placering": "5"
+      },
+      {
+        "saeson": "2014/2015",
+        "hold": "Aarhus AB",
+        "niveau": "Ligaen",
+        "placering": "2"
+      },
+      {
+        "saeson": "2015/2016",
+        "hold": "Aarhus AB",
+        "niveau": "Ligaen",
+        "placering": "9"
+      },
+      {
+        "saeson": "2016/2017",
+        "hold": "Aarhus AB",
+        "niveau": "Ligaen",
+        "placering": "9"
+      },
+      {
+        "saeson": "2017/2018",
+        "hold": "Aarhus AB",
+        "niveau": "Ligaen",
+        "placering": "4"
+      },
+      {
+        "saeson": "2018/2019",
+        "hold": "Aarhus AB",
+        "niveau": "Ligaen",
+        "placering": "5"
+      },
+      {
+        "saeson": "2019/2020",
+        "hold": "Aarhus AB",
+        "niveau": "Ligaen",
+        "placering": "8"
+      },
+      {
+        "saeson": "2020/2021",
+        "hold": "Aarhus AB",
+        "niveau": "Ligaen",
+        "placering": "10"
+      },
+      {
+        "saeson": "2021/2022",
+        "hold": "Aarhus AB",
+        "niveau": "Ligaen",
+        "placering": "9"
+      },
+      {
+        "saeson": "2022/2023",
+        "hold": "Aarhus AB",
+        "niveau": "Ligaen",
+        "placering": "9"
+      },
+      {
+        "saeson": "2023/2024",
+        "hold": "Aarhus AB",
+        "niveau": "Ligaen",
+        "placering": "10"
+      },
+      {
+        "saeson": "2024/2025",
+        "hold": "Aarhus AB (N)",
+        "niveau": "1. division",
+        "placering": "2"
+      }
+    ],
+    [
+      {
+        "saeson": "2010/2011",
+        "hold": "Solrød Strand 1",
+        "niveau": "1. division",
+        "placering": "2"
+      },
+      {
+        "saeson": "2011/2012",
+        "hold": "Solrød Strand (O)",
+        "niveau": "Ligaen",
+        "placering": "7"
+      },
+      {
+        "saeson": "2012/2013",
+        "hold": "Solrød Strand",
+        "niveau": "Ligaen",
+        "placering": "5"
+      },
+      {
+        "saeson": "2013/2014",
+        "hold": "Solrød Strand",
+        "niveau": "Ligaen",
+        "placering": "8"
+      },
+      {
+        "saeson": "2014/2015",
+        "hold": "Solrød Strand",
+        "niveau": "Ligaen",
+        "placering": "7"
+      },
+      {
+        "saeson": "2015/2016",
+        "hold": "Solrød Strand",
+        "niveau": "Ligaen",
+        "placering": "4"
+      },
+      {
+        "saeson": "2016/2017",
+        "hold": "Solrød Strand",
+        "niveau": "Ligaen",
+        "placering": "7"
+      },
+      {
+        "saeson": "2017/2018",
+        "hold": "Solrød Strand",
+        "niveau": "Ligaen",
+        "placering": "2"
+      },
+      {
+        "saeson": "2018/2019",
+        "hold": "Solrød Strand",
+        "niveau": "Ligaen",
+        "placering": "2"
+      },
+      {
+        "saeson": "2019/2020",
+        "hold": "Solrød Strand",
+        "niveau": "Ligaen",
+        "placering": "4"
+      },
+      {
+        "saeson": "2020/2021",
+        "hold": "Solrød Strand",
+        "niveau": "Ligaen",
+        "placering": "6"
+      },
+      {
+        "saeson": "2021/2022",
+        "hold": "Solrød Strand",
+        "niveau": "Ligaen",
+        "placering": "8"
+      },
+      {
+        "saeson": "2022/2023",
+        "hold": "Solrød Strand",
+        "niveau": "Ligaen",
+        "placering": "5"
+      },
+      {
+        "saeson": "2023/2024",
+        "hold": "Solrød Strand",
+        "niveau": "Ligaen",
+        "placering": "7"
+      },
+      {
+        "saeson": "2024/2025",
+        "hold": "Solrød Strand",
+        "niveau": "Ligaen",
+        "placering": "4"
+      },
+      {
+        "saeson": "2025/2026",
+        "hold": "Solrød Strand",
+        "niveau": "Ligaen",
+        "placering": "8"
+      },
+      {
+        "saeson": "2026/2027",
+        "hold": "Solrød Strand",
+        "niveau": "Ligaen",
+        "placering": "3"
+      }
+    ],
+    [
+      {
+        "saeson": "2012/2013",
+        "hold": "Odense OBK (O)",
+        "niveau": "Ligaen",
+        "placering": "3"
+      },
+      {
+        "saeson": "2013/2014",
+        "hold": "Odense OBK",
+        "niveau": "Ligaen",
+        "placering": "4"
+      },
+      {
+        "saeson": "2014/2015",
+        "hold": "Odense OBK",
+        "niveau": "Ligaen",
+        "placering": "6"
+      },
+      {
+        "saeson": "2015/2016",
+        "hold": "Odense OBK",
+        "niveau": "Ligaen",
+        "placering": "8"
+      },
+      {
+        "saeson": "2016/2017",
+        "hold": "Odense OBK",
+        "niveau": "Ligaen",
+        "placering": "6"
+      },
+      {
+        "saeson": "2017/2018",
+        "hold": "Odense OBK",
+        "niveau": "Ligaen",
+        "placering": "9"
+      },
+      {
+        "saeson": "2018/2019",
+        "hold": "Odense OBK",
+        "niveau": "Ligaen",
+        "placering": "10"
+      },
+      {
+        "saeson": "2019/2020",
+        "hold": "Odense OBK (N)",
+        "niveau": "1. division",
+        "placering": "1"
+      },
+      {
+        "saeson": "2020/2021",
+        "hold": "RSL ODENSE OBK (O)",
+        "niveau": "Ligaen",
+        "placering": "9"
+      },
+      {
+        "saeson": "2021/2022",
+        "hold": "RSL ODENSE OBK",
+        "niveau": "Ligaen",
+        "placering": "7"
+      },
+      {
+        "saeson": "2022/2023",
+        "hold": "RSL ODENSE OBK",
+        "niveau": "Ligaen",
+        "placering": "6"
+      },
+      {
+        "saeson": "2023/2024",
+        "hold": "RSL ODENSE OBK",
+        "niveau": "Ligaen",
+        "placering": "5"
+      },
+      {
+        "saeson": "2024/2025",
+        "hold": "RSL ODENSE OBK",
+        "niveau": "Ligaen",
+        "placering": "6"
+      },
+      {
+        "saeson": "2025/2026",
+        "hold": "Odense OBK",
+        "niveau": "Ligaen",
+        "placering": "9"
+      },
+      {
+        "saeson": "2026/2027",
+        "hold": "Odense OBK",
+        "niveau": "Ligaen",
+        "placering": "8"
+      }
+    ],
+    [
+      {
+        "saeson": "2012/2013",
+        "hold": "Gentofte",
+        "niveau": "Ligaen",
+        "placering": "9"
+      },
+      {
+        "saeson": "2013/2014",
+        "hold": "Gentofte",
+        "niveau": "Ligaen",
+        "placering": "6"
+      },
+      {
+        "saeson": "2014/2015",
+        "hold": "Gentofte",
+        "niveau": "Ligaen",
+        "placering": "8"
+      },
+      {
+        "saeson": "2015/2016",
+        "hold": "Gentofte",
+        "niveau": "Ligaen",
+        "placering": "10"
+      },
+      {
+        "saeson": "2016/2017",
+        "hold": "Gentofte (N)",
+        "niveau": "1. division",
+        "placering": "1"
+      },
+      {
+        "saeson": "2017/2018",
+        "hold": "Gentofte (O)",
+        "niveau": "Ligaen",
+        "placering": "7"
+      },
+      {
+        "saeson": "2018/2019",
+        "hold": "Gentofte",
+        "niveau": "Ligaen",
+        "placering": "9"
+      },
+      {
+        "saeson": "2019/2020",
+        "hold": "Gentofte (N)",
+        "niveau": "1. division",
+        "placering": "1"
+      },
+      {
+        "saeson": "2020/2021",
+        "hold": "Gentofte (O)",
+        "niveau": "Ligaen",
+        "placering": "7"
+      },
+      {
+        "saeson": "2021/2022",
+        "hold": "Gentofte",
+        "niveau": "Ligaen",
+        "placering": "5"
+      },
+      {
+        "saeson": "2022/2023",
+        "hold": "Gentofte",
+        "niveau": "Ligaen",
+        "placering": "7"
+      },
+      {
+        "saeson": "2023/2024",
+        "hold": "Gentofte",
+        "niveau": "Ligaen",
+        "placering": "9"
+      },
+      {
+        "saeson": "2024/2025",
+        "hold": "Gentofte",
+        "niveau": "Ligaen",
+        "placering": "9"
+      },
+      {
+        "saeson": "2025/2026",
+        "hold": "Gentofte",
+        "niveau": "Ligaen",
+        "placering": "5"
+      },
+      {
+        "saeson": "2026/2027",
+        "hold": "Gentofte",
+        "niveau": "Ligaen",
+        "placering": "2"
+      }
+    ],
+    [
+      {
+        "saeson": "2012/2013",
+        "hold": "Højbjerg (N)",
+        "niveau": "1. division",
+        "placering": "1"
+      },
+      {
+        "saeson": "2013/2014",
+        "hold": "Højbjerg (O)",
+        "niveau": "Ligaen",
+        "placering": "10"
+      },
+      {
+        "saeson": "2014/2015",
+        "hold": "Højbjerg",
+        "niveau": "Ligaen",
+        "placering": "10"
+      },
+      {
+        "saeson": "2015/2016",
+        "hold": "Højbjerg",
+        "niveau": "Ligaen",
+        "placering": "7"
+      },
+      {
+        "saeson": "2016/2017",
+        "hold": "Højbjerg",
+        "niveau": "Ligaen",
+        "placering": "8"
+      },
+      {
+        "saeson": "2017/2018",
+        "hold": "Højbjerg",
+        "niveau": "Ligaen",
+        "placering": "8"
+      },
+      {
+        "saeson": "2018/2019",
+        "hold": "Højbjerg",
+        "niveau": "Ligaen",
+        "placering": "7"
+      },
+      {
+        "saeson": "2019/2020",
+        "hold": "Højbjerg/Via Biler",
+        "niveau": "Ligaen",
+        "placering": "3"
+      },
+      {
+        "saeson": "2020/2021",
+        "hold": "Højbjerg/Via Biler",
+        "niveau": "Ligaen",
+        "placering": "5"
+      },
+      {
+        "saeson": "2021/2022",
+        "hold": "Højbjerg/Via Biler",
+        "niveau": "Ligaen",
+        "placering": "3"
+      },
+      {
+        "saeson": "2022/2023",
+        "hold": "Højbjerg/Via Biler",
+        "niveau": "Ligaen",
+        "placering": "1"
+      },
+      {
+        "saeson": "2023/2024",
+        "hold": "Højbjerg/Via Biler",
+        "niveau": "Ligaen",
+        "placering": "1"
+      },
+      {
+        "saeson": "2024/2025",
+        "hold": "Højbjerg/Via Biler (M)",
+        "niveau": "Ligaen",
+        "placering": "1"
+      },
+      {
+        "saeson": "2025/2026",
+        "hold": "Højbjerg",
+        "niveau": "Ligaen",
+        "placering": "4"
+      },
+      {
+        "saeson": "2026/2027",
+        "hold": "Højbjerg",
+        "niveau": "Ligaen",
+        "placering": "10"
+      }
+    ],
+    [
+      {
+        "saeson": "2012/2013",
+        "hold": "Lillerød",
+        "niveau": "Ligaen",
+        "placering": "10"
+      },
+      {
+        "saeson": "2013/2014",
+        "hold": "Lillerød (N)",
+        "niveau": "1. division",
+        "placering": "4"
+      }
+    ],
+    [
+      {
+        "saeson": "2013/2014",
+        "hold": "Værløse 2",
+        "niveau": "1. division",
+        "placering": "7"
+      },
+      {
+        "saeson": "2014/2015",
+        "hold": "Værløse 2",
+        "niveau": "1. division",
+        "placering": "1"
+      }
+    ],
+    [
+      {
+        "saeson": "2010/2011",
+        "hold": "Odense OBK 1",
+        "niveau": "Ligaen",
+        "placering": "9"
+      },
+      {
+        "saeson": "2011/2012",
+        "hold": "Odense OBK (N)",
+        "niveau": "1. division",
+        "placering": "1"
+      }
+    ],
+    [
+      {
+        "saeson": "2010/2011",
+        "hold": "Ikast 1",
+        "niveau": "Ligaen",
+        "placering": "10"
+      },
+      {
+        "saeson": "2011/2012",
+        "hold": "Ikast (N)",
+        "niveau": "1. division",
+        "placering": "2"
+      }
+    ],
+    [
+      {
+        "saeson": "2015/2016",
+        "hold": "Ikast",
+        "niveau": "1. division",
+        "placering": "2"
+      },
+      {
+        "saeson": "2016/2017",
+        "hold": "Ikast (O)",
+        "niveau": "Ligaen",
+        "placering": "10"
+      },
+      {
+        "saeson": "2017/2018",
+        "hold": "Ikast (N)",
+        "niveau": "1. division",
+        "placering": "5"
+      }
+    ],
+    [
+      {
+        "saeson": "2020/2021",
+        "hold": "Højbjerg 2 (O)",
+        "niveau": "1. division",
+        "placering": "2"
+      },
+      {
+        "saeson": "2021/2022",
+        "hold": "Højbjerg 2 (O)",
+        "niveau": "1. division",
+        "placering": "2"
+      }
+    ],
+    [
+      {
+        "saeson": "2021/2022",
+        "hold": "KMB2010",
+        "niveau": "1. division",
+        "placering": "1"
+      },
+      {
+        "saeson": "2022/2023",
+        "hold": "KMB2010 (O)",
+        "niveau": "Ligaen",
+        "placering": "10"
+      }
+    ],
+    [
+      {
+        "saeson": "2021/2022",
+        "hold": "Skovshoved 2",
+        "niveau": "1. division",
+        "placering": "1"
+      },
+      {
+        "saeson": "2022/2023",
+        "hold": "Skovshoved 2",
+        "niveau": "1. division",
+        "placering": "4"
+      }
+    ],
+    [
+      {
+        "saeson": "2022/2023",
+        "hold": "Hvidovre",
+        "niveau": "1. division",
+        "placering": "1"
+      },
+      {
+        "saeson": "2023/2024",
+        "hold": "Hvidovre (O)",
+        "niveau": "Ligaen",
+        "placering": "6"
+      },
+      {
+        "saeson": "2024/2025",
+        "hold": "Hvidovre",
+        "niveau": "Ligaen",
+        "placering": "5"
+      },
+      {
+        "saeson": "2025/2026",
+        "hold": "Hvidovre",
+        "niveau": "Ligaen",
+        "placering": "3"
+      },
+      {
+        "saeson": "2026/2027",
+        "hold": "Hvidovre (M)",
+        "niveau": "Ligaen",
+        "placering": "5"
+      }
+    ],
+    [
+      {
+        "saeson": "2023/2024",
+        "hold": "Aalborg Triton",
+        "niveau": "1. division",
+        "placering": "1"
+      },
+      {
+        "saeson": "2024/2025",
+        "hold": "Aalborg Triton (O)",
+        "niveau": "Ligaen",
+        "placering": "10"
+      },
+      {
+        "saeson": "2025/2026",
+        "hold": "Aalborg Triton (N)",
+        "niveau": "1. division",
+        "placering": "3"
+      }
+    ],
+    [
+      {
+        "saeson": "2023/2024",
+        "hold": "Greve",
+        "niveau": "1. division",
+        "placering": "2"
+      },
+      {
+        "saeson": "2024/2025",
+        "hold": "Greve",
+        "niveau": "1. division",
+        "placering": "1"
+      }
+    ],
+    [
+      {
+        "saeson": "2025/2026",
+        "hold": "Greve (O)",
+        "niveau": "Ligaen",
+        "placering": "7"
+      },
+      {
+        "saeson": "2026/2027",
+        "hold": "Greve",
+        "niveau": "Ligaen",
+        "placering": "7"
+      }
+    ],
+    [
+      {
+        "saeson": "2025/2026",
+        "hold": "KBK Kbh.",
+        "niveau": "1. division",
+        "placering": "1"
+      },
+      {
+        "saeson": "2026/2027",
+        "hold": "KBK Kbh. (O)",
+        "niveau": "Ligaen",
+        "placering": "4"
+      }
+    ],
+    [
+      {
+        "saeson": "2010/2011",
+        "hold": "Randers BK 1",
+        "niveau": "1. division",
+        "placering": "3"
+      },
+      {
+        "saeson": "2011/2012",
+        "hold": "Randers BK",
+        "niveau": "1. division",
+        "placering": "4"
+      }
+    ]
+  ],
+  "kilde": "Christoffers manuelle Trådtavle (browser-lagret), leveret 2026-09-25 til opgave 092",
+  "note": "197 hold-forekomster / 170 sæson-til-sæson-kanter fordelt på 27 kæder. Bruges KUN som facitliste til validering, ikke som datakilde der indlæses i produktionsoutput."
+}
