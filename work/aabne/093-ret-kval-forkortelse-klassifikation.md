@@ -115,11 +115,57 @@ entydig ud fra navnet alene.
 **Kontroloutput — før og efter:**
 
 ```
-(indsæt det faktiske output, ikke en beskrivelse af det)
+Katalog før genkørsel: 8.928 rækker
+`Kval`-kombinationer fejlklassificeret som `grundspil`: 19
+
+Kørsel: node statistik/scripts/088a-intern-kortlaegning.mjs --write-db
+Katalog efter genkørsel: 8.928 rækker
+
+Typeforskel mod den tidligere classifier: 19
+  fra `grundspil`: 19
+  til `andet/ukendt`: 19
+  uventede ikke-`Kval`-ændringer: 0
+
+De 19 rækker har nu `classification_basis`:
+  `kvalifikation uden retning`
+
+Kontrolrækker efter genkørsel:
+  Badmintonligaen / Kvartfinaler: slutspil
+  Badmintonligaen / Semifinaler: slutspil
+  Badmintonligaen / Guldkamp: slutspil
+  Badmintonligaen / Bronzekamp: slutspil
+
+Tabeltællinger før/efter (andre tabeller): uændrede
+  league_groups: 18.546
+  league_group_teams: 96.823
+  league_matches: 203.012
+  match_categories: 1.300.474
+  match_games: 2.636.258
+  standing_indexes: 16.269
+  group_type_katalog: 8.928
+
+SHA-256 før/efter:
+  gsb-statistik-normalized.db:
+  49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E
+  089-liga-1div-revisionstabel.json:
+  DDF63BE29D6B886CB6814C76C28D462C87B5F7EF76E56DCB116DD261A2316DC1
+  089-liga-1div-revisionstabel.csv:
+  3FE906E116B3E5500ED97715D973392B40E3A3592A41D4C830FFC15ACCB568EA
+  liga-landskab.db før: 4E5E5FD734BDAF574CDD86D991ADB8B1341931250F14B0788EDE982646A9C3BC
+  liga-landskab.db efter: 9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C
+  (forventet ændring: kun genopbygget group_type_katalog)
 ```
 
-**Hvad blev gjort:**
+**Hvad blev gjort:** Udvidede kvalifikationsgrenen i `classify()` med
+`Kval.`, `Kvalpulje`, `Kvalkamp` og `Kval-rækken` før den brede
+grundspils-fallback. Den eksisterende retningslogik blev bevaret, så alle
+19 navne uden utvetydig op-/nedrykningsretning lander som `andet/ukendt`
+frem for at blive gættet som op eller ned. Scriptet genopbyggede derefter
+kun `group_type_katalog` og regenererede 088a-rapporten i begge formater.
 
-**Hvad blev fravalgt og hvorfor:**
+**Hvad blev fravalgt og hvorfor:** Guldmatchen/Bronzematchen-fejlen er ikke
+ændret. Den er en selvstændig navneklassifikationsfejl og var udtrykkeligt
+uden for opgaven. Ingen rå importtabel, 089-resultat eller ekstern kilde er
+rørt.
 
 **Commits:**
