@@ -168,4 +168,4 @@ kun `group_type_katalog` og regenererede 088a-rapporten i begge formater.
 uden for opgaven. Ingen rå importtabel, 089-resultat eller ekstern kilde er
 rørt.
 
-**Commits:**
+**Commits:** 26a1969 (regex, regenererede 088a-rapporter og resultatnote)
