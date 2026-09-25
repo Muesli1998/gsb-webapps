@@ -38,9 +38,12 @@ genbekræftelsen i sin egen Trådtavle i stedet for at starte helt forfra på de
 **Må røres:** ny fil `statistik/scripts/092-hold-identitet-traadmatching.mjs` (eller tilsvarende navn),
 ny outputfil `statistik/results/092-traadmatching-forslag.json`.
 
-**Må ikke røres:** `statistik/data/*.db`, `statistik/results/089-liga-1div-revisionstabel.*` (kun læses),
-`apps/netlify-prod/`, `kampsystem/`, `klubstatistik-preview/`. Ingen nye API-kald. Christoffers egen
-browser-lagrede Trådtavle røres ikke af scriptet — det er hans, ikke repoets.
+**Må ikke røres:** `statistik/data/*.db` (kun læses — `group_type_katalog` i `liga-landskab.db` må
+læses fra Opfølgning 1, men INGEN skrivning, heller ikke en rettelse af Guldmatchen/Bronzematchen-fejlen
+nævnt i Opfølgning 1, det hører til en separat, selvstændig opgave mod 088a's katalog),
+`statistik/results/089-liga-1div-revisionstabel.*` (kun læses), `apps/netlify-prod/`, `kampsystem/`,
+`klubstatistik-preview/`. Ingen nye API-kald. Christoffers egen browser-lagrede Trådtavle røres ikke af
+scriptet — det er hans, ikke repoets.
 
 ## Kontekst
 
@@ -77,6 +80,62 @@ Ingen kald til badmintonplayer.dk/nembadminton.dk.
 - De resterende sponsornavne-skift der ikke fanges automatisk, skal være håndterbare at liste manuelt (en
   lille alias-liste), ikke et nyt stort uløst problem.
 
+## Opfølgning 1 (efter gennemgang af de 42 `ambiguity_reviews` i 9e54c31's output)
+
+Christoffer gennemgik de 42 tvetydige opslag fra første kørsel. Alle 42 klumper sig i tre sæsoner
+(2011/2012–2013/2014) i 2. division, og skyldes IKKE en fejl i normaliseringsreglen. Stikprøve mod
+badmintonplayer.dk (BADDAN SEN 2012/2013, "Vis rækker") og opslag i `liga-landskab.db` bekræftede:
+samme hold (fx "Aarhus AB 2") har to rigtige rækker i samme sæson — én fra sin grundspilspulje
+("2. division Pulje 1" eller "Pulje 2"), én fra kvalifikationsgruppen mod 1. division ("2. division Kval.
+til 1. div."), som består af top 4 fra hver af de to grundspilspuljer. Det er ét hold, ikke to — analogt med
+091/046's regel om at DMU-faser af samme lokale ungdomsholdtilmelding skal kollapse.
+
+Christoffer påpegede at dette IKKE er unikt for 2. divisions kvalifikationsgruppe: Danmarksserien har
+tilsvarende kval-kampe mellem 2./3.-pladser og op-/nedrykkere, og Badmintonligaen har et helt slutspil
+(kvartfinaler, semifinaler, bronzekamp, guldkamp) — samme hold kan altså optræde med flere rækker i samme
+sæson på flere niveauer/turneringsformer, ikke kun i 2. division.
+
+**Godt at vide:** Denne klassifikation findes allerede. Tabellen `group_type_katalog` i
+`statistik/data/liga-landskab.db` (bygget i opgave 088a) klassificerer hver liga-gruppe i `grundspil`,
+`slutspil`, `oprykningsspil`, `nedrykningsspil`, `kvalifikation_op`, `kvalifikation_ned` eller
+`andet/ukendt` — stikprøve bekræftede at Badmintonligaens Kvartfinaler/Semifinaler/Finale/Guldkamp/
+Bronzekamp korrekt ligger under `slutspil`.
+
+**Kendt fejl i kataloget, IKKE til rettelse i denne opgave:** "Guldmatchen" og "Bronzematchen"
+(Badmintonligaen) er fejlklassificeret som `grundspil` i `group_type_katalog`, mens "Guldkamp"/"Bronzekamp"
+(samme betydning, andet kildeord) korrekt står som `slutspil`. Nævnes her så det ikke gemmer sig, men hører
+til en selvstændig, lille opgave mod 088a's katalog — ikke noget 092 skal rette.
+
+### Mål (tilføjelse)
+
+Udvid scriptet til, FØR sæson-til-sæson-matching, at kollapse flere kilderækker for samme normaliserede
+identitet i SAMME sæson til én sæson-knude, ved at slå hver rækkes `source_group_id` op i
+`group_type_katalog` (join på `division_name_raw`/`group_name_raw` — se `liga-landskab.db`s
+`league_groups`-tabel for hvordan `league_group_id` kobler til `division_name_raw`/`group_name_raw`) og
+foretrække raden hvis gruppe er klassificeret `grundspil` som den kanoniske for den sæson. Rækker klassificeret
+`slutspil`/`oprykningsspil`/`nedrykningsspil`/`kvalifikation_op`/`kvalifikation_ned`/`andet/ukendt` skal
+IKKE skabe en ekstra sæson-knude — de bidrager i stedet til `hændelse`/kontekst på den kanoniske rækkes
+node i outputtet (fx "spillede desuden kval. til 1. division, placering X").
+
+Er der INGEN `grundspil`-klassificeret række for et hold i en given sæson (fx hvis holdet kun optræder i en
+kvalifikationsgruppe den sæson), så brug den eneste tilgængelige række som kanonisk, men marker det tydeligt
+i outputtet (fx et `canonical_source: 'ikke_grundspil'`-felt), så Christoffer kan se hvor formodningen er
+svagere.
+
+### Kontrol (tilføjelse)
+
+```
+Kør scriptet igen efter kollaps-trinnet.
+Forventet: markant færre end 42 ambiguity_reviews (rapportér det faktiske tal og hvor mange der stammer
+fra reelt tvetydige identiteter vs. tidligere same-season-duplikater).
+Facitliste-match må ikke falde under de 166/170 (97,6%) fra første kørsel.
+```
+
+**Skøn** (kan ikke måles):
+
+- Er der `ambiguity_reviews` tilbage efter kollaps-trinnet, skal de være ægte tvetydigheder (to forskellige
+  fysiske hold med samme normaliserede navn), ikke rester af samme-sæson-duplikering.
+
 ## Ved tvivl
 
 Stop, og skriv spørgsmålet ind under "Spørgsmål" nedenfor. **Gæt ikke** — særligt ved tvetydige
@@ -98,7 +157,9 @@ sæson-til-sæson-spring hvor flere hold i samme niveau/sæson har næsten ens n
 
 ## Resultat
 
-**Kontroloutput — før og efter:**
+_Resultatnoten herunder er fra første kørsel (9e54c31). Opfølgning 1's resultat tilføjes som et separat afsnit nedenfor — den oprindelige note overskrives ikke._
+
+**Kontroloutput — før og efter (første kørsel):**
 
 ```
 Kørsel: node statistik/scripts/092-hold-identitet-traadmatching.mjs
