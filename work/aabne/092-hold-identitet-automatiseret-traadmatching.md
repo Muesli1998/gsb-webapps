@@ -151,4 +151,4 @@ automatisk; de står eksplicit i `ambiguity_reviews`, så Trådtavlen ikke får
 en gættet kobling. Facitlisten anvendes kun til optællingsvalidering og
 indlæses ikke som identitetsdata i forslagene.
 
-**Commits:**
+**Commits:** 9e54c31 (generator, forslag og resultatnote)
