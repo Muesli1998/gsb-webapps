@@ -149,7 +149,30 @@ sæson-til-sæson-spring hvor flere hold i samme niveau/sæson har næsten ens n
 
 ## Spørgsmål
 
-(Udfyldes af den der løser opgaven. Christoffer svarer her i filen.)
+### Opfølgning 1 — katalogblokering ved 2. divisions kvalifikationsgrupper
+
+Kollaps-trinnet blev afprøvet læsende mod `group_type_katalog`. Det kan ikke
+afgøre de 16 samme-sæson-klumper, fordi både kvalifikationsgruppen og den
+reelle grundspilspulje i kataloget er mærket `grundspil`.
+
+Konkrete eksempler:
+
+- 2012/2013, Aarhus AB 2: gruppe 2164, `2. division` / `Kval. til 1. div.`,
+  katalogtype `grundspil`; gruppe 1338, `2. division` / `Pulje 1`, også
+  `grundspil`.
+- 2013/2014, Højbjerg 2: gruppe 3581, `2. division` / `Kval. til 1. div.`,
+  katalogtype `grundspil`; gruppe 2603, `2. division` / `Pulje 2`, også
+  `grundspil`.
+
+Alle 16 klumper følger dette mønster. Resultatet er 600 kanoniske kandidater
+plus 16 uafklarede same-season-klumper; derfor bliver de oprindelige 42
+ambiguity-reviews ikke reduceret som forudsat. Dette er en anden konkret
+katalogfejl end de nævnte Guldmatchen/Bronzematchen-fejl.
+
+Skal 092 ved næste runde have en snæver, læsende lokal regel om at
+`Kval. til 1. div.` ikke kan være kanonisk grundspil, eller skal
+`group_type_katalog` først rettes i en særskilt opgave? Jeg har ikke valgt
+mellem de to muligheder.
 
 ## Tilbagefald
 
@@ -213,3 +236,12 @@ en gættet kobling. Facitlisten anvendes kun til optællingsvalidering og
 indlæses ikke som identitetsdata i forslagene.
 
 **Commits:** 9e54c31 (generator, forslag og resultatnote)
+
+### Resultat — Opfølgning 1 (stoppet ved katalogblokering)
+
+Katalogopslaget blev gennemført læsende. Det fandt 16 same-season-klumper,
+men 0 kunne kollapses efter katalogets nuværende `grundspil`-præference,
+fordi hver klump har to `grundspil`-mærkede grupper. Facitdækningen var
+fortsat 166/170, og både 089-kilden og `liga-landskab.db` havde uændret
+SHA-256 før/efter forsøget. Ingen ufærdig generator- eller outputændring er
+bevaret; afventer svar under Spørgsmål.
