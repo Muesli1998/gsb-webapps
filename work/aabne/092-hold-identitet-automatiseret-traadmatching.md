@@ -101,11 +101,54 @@ sæson-til-sæson-spring hvor flere hold i samme niveau/sæson har næsten ens n
 **Kontroloutput — før og efter:**
 
 ```
-(indsæt det faktiske output, ikke en beskrivelse af det)
+Kørsel: node statistik/scripts/092-hold-identitet-traadmatching.mjs
+
+source_rows: 632
+automatic_edges: 481
+threads: 151
+multi_member_threads: 75
+standalone_rows: 76
+ambiguity_reviews: 42
+
+validation:
+  reference_thread_count: 171
+  reference_edge_count: 170
+  normalized_rule_matches: 166
+  proposed_automatically: 166
+  unmatched_reference_edges: 4
+
+Efterprøvning af output:
+  sourceRows: 632
+  memberships: 632
+  uniqueMemberships: 632
+  invalidEdges: 0
+  sourceShaMatches: true
+
+089-liga-1div-revisionstabel.json SHA-256 før:
+DDF63BE29D6B886CB6814C76C28D462C87B5F7EF76E56DCB116DD261A2316DC1
+089-liga-1div-revisionstabel.json SHA-256 efter:
+DDF63BE29D6B886CB6814C76C28D462C87B5F7EF76E56DCB116DD261A2316DC1
+
+git status --short statistik/data/:
+?? statistik/data/
+(var allerede utracket før opgaven; der er ikke skrevet til databaser)
 ```
 
-**Hvad blev gjort:**
+**Hvad blev gjort:** Byggede `092-hold-identitet-traadmatching.mjs`, som
+normaliserer `hold` til klub + holdnummer, med holdnummer 1 som standard,
+og fjerner kun `(O)`, `(N)` og `(M)`. En kant foreslås kun ved én entydig
+identitet i den direkte efterfølgende sæson. Outputtet indeholder 151
+foreslåede tråde, alle 632 kilderækker, 481 automatiske kanter og 42
+tvetydige opslag til manuel revision. Kildens SHA-256 gemmes i outputtet.
+Detekterede dublerede kilderepræsentationer (samme sæson/hold/niveau, men
+forskellig puljekilde) får egne, stabile output-id'er og kollapser derfor
+ikke rækker.
 
-**Hvad blev fravalgt og hvorfor:**
+**Hvad blev fravalgt og hvorfor:** Ingen sponsor-/navnealiaser blev anvendt.
+De fire facitkanter, som ikke blev foreslået automatisk, er dermed præcis de
+kendte sponsor-navneskift. Tvetydige identiteter samles heller ikke
+automatisk; de står eksplicit i `ambiguity_reviews`, så Trådtavlen ikke får
+en gættet kobling. Facitlisten anvendes kun til optællingsvalidering og
+indlæses ikke som identitetsdata i forslagene.
 
 **Commits:**
