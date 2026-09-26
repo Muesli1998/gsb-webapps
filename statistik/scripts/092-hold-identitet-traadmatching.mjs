@@ -54,7 +54,7 @@ for (const row of sourceRows) {
 const contextFrom = row => ({ source_row_index: row.source_row_index, source_key: row.source_key,
   source_group_id: row.source_group_id, source_group_type: row.source_group_type,
   source_division_name_raw: row.source_division_name_raw, source_group_name_raw: row.source_group_name_raw,
-  position: row.position, event: row.event });
+  level: row.level, position: row.position, event: row.event });
 
 const canonicalNodes = [];
 const sameSeasonReviews = [];
@@ -121,6 +121,52 @@ const validation = referenceEdges.map(edge => {
   return { normalized_match: normalizedIdentity(edge.from.team) === normalizedIdentity(edge.to.team), proposed_automatically: automaticEdgeSourceKeys.has(`${from}=>${to}`) };
 });
 const collapsedGroups = canonicalNodes.filter(node => node.source_context.length > 1);
+const nationalLevels = ['Ligaen', '1. division', '2. division', '3. division', 'Danmarksserien'];
+const higherTierLevels = new Set(['Ligaen', '1. division', '2. division', '3. division']);
+const ambiguityReviewsByLevel = Object.fromEntries(nationalLevels.map(level => [level, 0]));
+for (const review of ambiguityReviews) {
+  for (const level of new Set((review.source_rows ?? []).map(row => row.level).filter(Boolean))) {
+    if (Object.hasOwn(ambiguityReviewsByLevel, level)) ambiguityReviewsByLevel[level] += 1;
+  }
+}
+
+// A break is deliberately measured on the exact normalized identity, without
+// alias inference: this makes one missing season auditable rather than guessed.
+const nodesByIdentity = new Map();
+for (const node of canonicalNodes) {
+  if (!nodesByIdentity.has(node.normalized_identity)) nodesByIdentity.set(node.normalized_identity, []);
+  nodesByIdentity.get(node.normalized_identity).push(node);
+}
+const allDhTableBreaks = [];
+const higherTierGaps = [];
+for (const [identity, nodes] of nodesByIdentity) {
+  nodes.sort((a, b) => a.season_start - b.season_start);
+  if (!nodes.some(node => higherTierLevels.has(node.level))) continue;
+  for (let index = 0; index < nodes.length - 1; index += 1) {
+    const from = nodes[index], to = nodes[index + 1];
+    const missingSeasons = to.season_start - from.season_start - 1;
+    if (missingSeasons > 0) allDhTableBreaks.push({ normalized_identity: identity,
+      from: { season: from.season, team: from.team, level: from.level },
+      to: { season: to.season, team: to.team, level: to.level }, missing_seasons: missingSeasons,
+      gap_type: missingSeasons === 1 ? 'et_saeson_hul' : 'laengere_hul' });
+  }
+  const higherNodes = nodes.filter(node => higherTierLevels.has(node.level));
+  for (let index = 0; index < higherNodes.length - 1; index += 1) {
+    const from = higherNodes[index], to = higherNodes[index + 1];
+    const missingHigherSeasons = to.season_start - from.season_start - 1;
+    if (missingHigherSeasons <= 0) continue;
+    const intervening = nodes.filter(node => node.season_start > from.season_start && node.season_start < to.season_start);
+    const onlyDanmarksserien = intervening.length === missingHigherSeasons && intervening.every(node => node.level === 'Danmarksserien');
+    higherTierGaps.push({ normalized_identity: identity,
+      from: { season: from.season, team: from.team, level: from.level },
+      to: { season: to.season, team: to.team, level: to.level }, missing_higher_seasons: missingHigherSeasons,
+      explanation_from_expanded_table: onlyDanmarksserien ? 'danmarksserien_udflugt' : 'ikke_synlig_i_nationalt_dh_datasæt',
+      intervening_nodes: intervening.map(node => ({ season: node.season, team: node.team, level: node.level })) });
+  }
+}
+const breakSummary = breaks => ({ total: breaks.length,
+  one_season_gap: breaks.filter(item => (item.missing_seasons ?? item.missing_higher_seasons) === 1).length,
+  longer_gap: breaks.filter(item => (item.missing_seasons ?? item.missing_higher_seasons) > 1).length });
 const output = {
   generated_at: new Date().toISOString(),
   source: { path: sourcePath, sha256: crypto.createHash('sha256').update(sourceText).digest('hex'), row_count: sourceRows.length, season_range: ['2010/2011', '2026/2027'] },
@@ -132,13 +178,21 @@ const output = {
   summary: { source_rows: sourceRows.length, canonical_season_nodes: canonicalNodes.length,
     same_season_duplicate_collapses: collapsedGroups.length, collapsed_source_rows: collapsedGroups.reduce((count, node) => count + node.additional_context.length, 0),
     same_season_ambiguity_count: sameSeasonReviews.length, cross_season_ambiguity_count: ambiguityReviews.length - sameSeasonReviews.length,
+    ambiguity_reviews_by_level: ambiguityReviewsByLevel,
     automatic_edge_count: automaticEdges.length, thread_count: threads.length,
     multi_member_thread_count: threads.filter(thread => thread.members.length > 1).length,
-    standalone_node_count: threads.filter(thread => thread.members.length === 1).length },
+    standalone_node_count: threads.filter(thread => thread.members.length === 1).length,
+    exact_identity_breaks_for_teams_seen_in_3div_or_higher: breakSummary(allDhTableBreaks),
+    higher_tier_only_gaps_for_teams_seen_in_3div_or_higher: breakSummary(higherTierGaps) },
   threads, automatic_edges: automaticEdges, ambiguity_reviews: ambiguityReviews,
+  exact_identity_breaks_for_teams_seen_in_3div_or_higher: allDhTableBreaks,
+  higher_tier_only_gaps_for_teams_seen_in_3div_or_higher: higherTierGaps,
 };
 fs.writeFileSync(outputPath, `${JSON.stringify(output, null, 2)}\n`);
 console.log(JSON.stringify({ source_rows: output.summary.source_rows, canonical_season_nodes: output.summary.canonical_season_nodes,
   same_season_duplicate_collapses: output.summary.same_season_duplicate_collapses, collapsed_source_rows: output.summary.collapsed_source_rows,
   same_season_ambiguities: output.summary.same_season_ambiguity_count, cross_season_ambiguities: output.summary.cross_season_ambiguity_count,
+  ambiguity_reviews_by_level: output.summary.ambiguity_reviews_by_level,
+  exact_identity_breaks: output.summary.exact_identity_breaks_for_teams_seen_in_3div_or_higher,
+  higher_tier_only_gaps: output.summary.higher_tier_only_gaps_for_teams_seen_in_3div_or_higher,
   automatic_edges: output.summary.automatic_edge_count, threads: output.summary.thread_count, validation: output.validation_against_confirmed_threads }, null, 2));

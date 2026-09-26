@@ -122,6 +122,18 @@ som Liga/1./2. divisions-grænserne var det i opgave 089-091.
    — er stikprøve mod badmintonplayer.dk nødvendig her, ligesom Christoffer gjorde visuelt for 2.
    divisions kvalifikationsgruppe under 092's Opfølgning 1?
 
+**Svar 2026-09-26:**
+
+1. Den eksisterende 089-generator og dens filnavn er beholdt. Det følger 091's etablerede mønster,
+   og 092 læser allerede præcist dette output; en efterfølger ville kun have flyttet den samme
+   nationale revisionskæde uden ny datagrænse.
+2. En ny visuel stikprøve var ikke nødvendig for denne afgrænsede rapportering. De gemte rå
+   `division_name_raw`/`group_name_raw`-værdier angiver selv retningen, fx "Kvalifikation til 2.
+   division", "Kvalifikation til 3. division" og "Kvalkampe: Nedrykning til DS". Disse bruges
+   kun som hændelsesmedlemskab på begge sider af niveaugrænsen. En kvalifikationsgruppe fastlægger
+   aldrig holdets hjemmeniveau: kun `group_type_katalog=grundspil` kan tilføje en række til 089.
+   Derfor bliver bl.a. "Danmarksserien, Kvalifikationskampe" ikke en Danmarksserie-hjemmerække,
+   selv om `levelFromDivision()` genkender dens nationale kontekst.
 ## Tilbagefald
 
 (Én linje hver gang opgaven falder tilbage til et tidligere trin, med hvorfor.)
@@ -131,11 +143,62 @@ som Liga/1./2. divisions-grænserne var det i opgave 089-091.
 **Kontroloutput — før og efter:**
 
 ```
-(indsæt det faktiske output, ikke en beskrivelse af det)
+089-rækker: 2.206
+  Ligaen: 168
+  1. division: 200
+  2. division: 240
+  3. division: 511
+  Danmarksserien: 1.087
+  cross_level_duplicates: 0
+  regionale række-navne i output: 0
+
+092:
+  kanoniske sæsonknuder: 2.206
+  same-season-kollaps: 0 (0 ekstra kilder)
+  ambiguity_reviews: Ligaen 0, 1. division 0, 2. division 0,
+                     3. division 0, Danmarksserien 0
+  automatiske kanter: 1.813
+  facitliste: 166/170 automatisk foreslået (uændret)
+
+Eksakt-normaliserede identiteter, mindst én sæson i 3. division eller højere:
+  brud i den udvidede DH-tabel: 54
+  ét sæson-hul: 30
+  længere hul: 24
+
+Kontrol af hypotese om Danmarksserien-udflugt, målt kun mellem 3. division+
+og med Danmarksserien som mellemliggende niveau:
+  huller: 84 (50 ét sæson, 34 længere)
+  alene forklaret af synlige Danmarksserie-sæsoner: 62
+  ikke synlige i det nationale DH-datasæt imellem: 22
+
+gsb-statistik-normalized.db SHA-256 før/efter:
+49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E
+49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E
+
+liga-landskab.db SHA-256 før/efter:
+9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C
+9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C
 ```
 
 **Hvad blev gjort:**
 
+- Udvidede 089 til de fem nationale seniorniveauer og holdt alle regionale rækker ude.
+- Kvalifikations- og nedrykningsgrupper genkendes nu også når deres `division_name_raw` selv
+  hedder "Kvalifikation til ..." eller "Nedrykning fra ...". Deltagelse markeres symmetrisk på
+  begge hjemmeniveauer ved 2./3.- og 3./Danmarksserie-grænserne.
+- Genkørte 092 mod den udvidede tabel og tilføjede niveauvis ambiguity-optælling samt to adskilte
+  brudmål: bogstavelig fraværsperiode fra hele DH-tabellen og et højere-niveau-mål, som viser om
+  en periode faktisk er dækket af Danmarksserien.
+- Hypotesen om højst ét sæson-hul holder ikke bogstaveligt: 24 af 54 fraværsperioder er længere.
+  Konkrete modeksempler er Odense OBK (1. division 2019/20 til Ligaen 2025/26, fem manglende
+  sæsoner) og Højbjerg (Ligaen 2018/19 til Ligaen 2025/26, seks). Samtidig forklarer den synlige
+  Danmarksserie 62 af 84 perioder, når man kun ser på 3. division eller højere; fx Silkeborg BK
+  går fra 3. division 2011/12 via Danmarksserien 2012/13 til 3. division 2013/14.
+
 **Hvad blev fravalgt og hvorfor:**
 
-**Commits:**
+- Ingen regionale puljer, nye API-kald eller ændringer til `group_type_katalog`.
+- Ingen påstand om faktisk oprykning eller nedrykning ud fra kvalifikationsdeltagelse alene;
+  tabellen registrerer den direkte, gemte gruppetilknytning.
+
+**Commits:** afventer commit på denne gren.

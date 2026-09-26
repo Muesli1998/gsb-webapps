@@ -15,9 +15,9 @@ for(const g of groups){if(!gBySeason.has(g.season_id))gBySeason.set(g.season_id,
 for(const t of teams){const k=`${t.season_id}|${t.league_group_id}`;if(!tByGroup.has(k))tByGroup.set(k,[]);tByGroup.get(k).push(t);if(!knownTeamNamesBySeason.has(t.season_id))knownTeamNamesBySeason.set(t.season_id,new Set());knownTeamNamesBySeason.get(t.season_id).add(t.team_name_raw)}
 for(const m of matches){const k=`${m.season_id}|${m.league_group_id}`;if(!mByGroup.has(k))mByGroup.set(k,[]);mByGroup.get(k).push(m)}
 const sourceTypes=g=>`${g.division_name_raw} ${g.group_name_raw}`.toLowerCase();
-/* Exact source-level labels only. "Kval. til 1. division" is a 2.-division
-   qualification event, not evidence that its teams belong to 1. division. */
-const levelFromDivision=division=>{const d=norm(division);if(/^badmintonligaen(?:\b|,)/.test(d))return 'Ligaen';if(/^1\. division(?:\b|\s*\()/.test(d))return '1. division';if(/^2\. division(?:\b|\s*\()/.test(d))return '2. division';return null;};
+/* Exact source-level labels only. Qualification names never establish a
+   team's home level; the extra prefixes are the national DH levels only. */
+const levelFromDivision=division=>{const d=norm(division);if(/^badmintonligaen(?:\b|,)/.test(d))return 'Ligaen';if(/^1\. division(?:\b|\s*\()/.test(d))return '1. division';if(/^2\. division(?:\b|\s*\()/.test(d))return '2. division';if(/^3\. division(?:\b|\s*\()/.test(d))return '3. division';if(/^danmarksserien(?:\b|,|\s*\()/.test(d))return 'Danmarksserien';return null;};
 function mainGroups(season){return (gBySeason.get(season)??[]).filter(g=>g.group_type==='grundspil'&&!/oversidder|papirhold|slutspil|final|bronze|guld|kvart|semi/.test(sourceTypes(g))&&levelFromDivision(g.division_name_raw));}
 function homeLevels(season){const map=new Map();for(const g of mainGroups(season)){const level=levelFromDivision(g.division_name_raw);for(const t of tByGroup.get(`${season}|${g.league_group_id}`)??[]){const key=norm(t.team_name_raw);if(!map.has(key))map.set(key,new Set());map.get(key).add(level);}}return map;}
 function pickGroups(season){
@@ -26,8 +26,13 @@ function pickGroups(season){
  const oneQual=s.filter(g=>/ligakvalifikation|kvalifikation.*badmintonliga|kvalifikation.*ligaen/.test(sourceTypes(g))&&!(/kvalifikationskamp/.test(sourceTypes(g))&&levelFromDivision(g.division_name_raw)==='Ligaen'));
  const oneDown=s.filter(g=>/1\. division/.test(norm(g.division_name_raw))&&(g.group_type==='nedrykningsspil'||/nedrykning/.test(sourceTypes(g))));
  const twoUp=s.filter(g=>{const d=norm(g.division_name_raw),t=sourceTypes(g),n=norm(g.group_name_raw);return ((/2\. division/.test(d)&&/kvalifikation.*1\. div|kval\.\s*til 1\. div/.test(t))||(/kval(?:ifikation|\.)\s*til\s*1\.\s*division/.test(d)&&/slutspil|kval(?:ifikation|\.)/.test(n)))&&!/kvalifikationsevent kamp/.test(t);});
+ const twoDown=s.filter(g=>{const d=norm(g.division_name_raw),t=sourceTypes(g);return ((/^2\. division\b/.test(d)&&/nedrykning/.test(t))||/^nedrykning fra 2\. division/.test(d))&&!/kvalifikationsevent kamp/.test(t);});
+ const threeUp=s.filter(g=>{const d=norm(g.division_name_raw),t=sourceTypes(g);return ((/^3\. division\b/.test(d)&&/(kvalifikation.*2\.\s*division|kvalkampe.*oprykning.*2\.\s*division)/.test(t))||/^kvalifikation til 2\. division/.test(d))&&!/kvalifikationsevent kamp/.test(t);});
+ const threeDown=s.filter(g=>{const d=norm(g.division_name_raw),t=sourceTypes(g);return ((/^3\. division\b/.test(d)&&/(nedrykning.*(?:danmarksserien|\bds\b)|kvalkampe.*nedrykning.*(?:danmarksserien|\bds\b))/.test(t))||/^nedrykning fra 3\. division/.test(d))&&!/kvalifikationsevent kamp/.test(t);});
+ const dsUp=s.filter(g=>{const d=norm(g.division_name_raw),t=sourceTypes(g);return ((/^danmarksserien\b/.test(d)&&/(kvalifikation.*3\.\s*division|kvalkampe.*oprykning.*3\.\s*division)/.test(t))||/^kvalifikation til 3\. division/.test(d))&&!/kvalifikationsevent kamp/.test(t);});
+ const dsDown=s.filter(g=>{const d=norm(g.division_name_raw),t=sourceTypes(g);return ((/^danmarksserien\b/.test(d)&&/(nedrykning.*(?:kreds|\bks\b)|kvalkampe.*nedrykning.*(?:kreds|\bks\b))/.test(t))||/^nedrykning fra danmarksserien/.test(d))&&!/kvalifikationsevent kamp/.test(t);});
  const ligaQual=s.filter(g=>/ligakvalifikation|kvalifikation.*badmintonliga|kvalifikation.*ligaen/.test(sourceTypes(g)));
- return {liga,oneQual,oneDown,twoUp,ligaQual};
+ return {liga,oneQual,oneDown,twoUp,twoDown,threeUp,threeDown,dsUp,dsDown,ligaQual};
 }
 function sourceTeamName(season,raw){const rawNorm=norm(raw),candidates=[...(knownTeamNamesBySeason.get(season)??[])].sort((a,b)=>b.length-a.length);return candidates.find(c=>rawNorm.startsWith(norm(c)))??'';}
 function hasEmbeddedContactInfo(season,raw){const candidate=sourceTeamName(season,raw);if(!candidate)return false;const tail=String(raw).slice(String(raw).toLowerCase().indexOf(candidate.toLowerCase())+candidate.length);return /@|\b\d{8}\b/.test(tail);}
@@ -62,9 +67,19 @@ function baseEvent(season,level,position,teamName,basis){
   if(kinds.has('oneDown'))return `1. divisions nedrykningsspil mod 2. division${suffix}`;
   return `forbliver i 1. division (midterfelt)${suffix}`;
  }
- if(kinds.has('twoUp'))return `2. divisions oprykningsspil/kvalifikation mod 1. division${suffix}`;
- if(kinds.has('oneDown'))return `1. divisions nedrykningsspil mod 2. division${suffix}`;
- return `forbliver i 2. division (midterfelt)${suffix}`;
+ if(level==='2. division'){
+  if(kinds.has('twoUp'))return `2. divisions oprykningsspil/kvalifikation mod 1. division${suffix}`;
+  if(kinds.has('twoDown')||kinds.has('threeUp'))return `2. divisions nedrykningsspil/kvalifikation mod 3. division${suffix}`;
+  return `forbliver i 2. division (midterfelt)${suffix}`;
+ }
+ if(level==='3. division'){
+  if(kinds.has('twoDown')||kinds.has('threeUp'))return `3. divisions kvalifikationsgruppe mod 2. division${suffix}`;
+  if(kinds.has('threeDown')||kinds.has('dsUp'))return `3. divisions nedrykningsspil/kvalifikation mod Danmarksserien${suffix}`;
+  return `forbliver i 3. division (midterfelt)${suffix}`;
+ }
+ if(kinds.has('threeDown')||kinds.has('dsUp'))return `Danmarksseriens kvalifikationsgruppe mod 3. division${suffix}`;
+ if(kinds.has('dsDown'))return `Danmarksseriens nedrykningsspil mod regional række${suffix}`;
+ return `forbliver i Danmarksserien (midterfelt)${suffix}`;
 }
 const rows=[],omitted=[],structures=[],contacts=[],markerDecisions=[],unmatchedQualificationParticipants=[];
 for(const season of seasons){
@@ -87,5 +102,5 @@ const levelsByKey=new Map();for(const r of rows){const key=`${r.sæson}|${norm(r
 const contactBySeason=Object.values(contacts.reduce((out,row)=>{const k=row.season;out[k]??={season:k,occurrences:0,match_ids:new Set(),groups:new Set()};out[k].occurrences++;out[k].match_ids.add(row.external_match_id);out[k].groups.add(row.league_group_id);return out;},{})).map(r=>({season:r.season,occurrences:r.occurrences,distinct_matches:r.match_ids.size,affected_groups:r.groups.size}));
 const contactSummary={occurrences:contacts.length,distinct_matches:new Set(contacts.map(x=>x.external_match_id)).size,by_season:contactBySeason,examples:contacts.slice(0,20)};
 fs.writeFileSync('statistik/results/089-liga-1div-revisionstabel.csv',[cols.map(csvValue).join(','),...rows.map(r=>cols.map(c=>csvValue(r[c])).join(','))].join('\n')+'\n');
-fs.writeFileSync('statistik/results/089-liga-1div-revisionstabel.json',JSON.stringify({generated_at:new Date().toISOString(),columns:cols,rows,omitted_season_structures:omitted,liga_one_division_boundary_structures:structures,contact_info_contamination:contactSummary,bd_marker_decisions:markerDecisions,qualification_participants_without_main_group:unmatchedQualificationParticipants,cross_level_duplicates:crossLevelDuplicates,selection_method:'Alle Liga-, 1.- og 2.-divisionsrækker kommer fra deres egen grundspilspulje. (O)/(N) bevares som historisk bevægelsesmarkør, men ændrer ikke hjemmeniveauet i den aktuelle sæson. Kvalifikationsgrupper bruges kun til hændelse og sporbarhed. league_matches bruges kun efter rensning/mapping af kontaktinfo.'},null,2));
-console.log(JSON.stringify({rows:rows.length,byLevel:Object.fromEntries(['Ligaen','1. division','2. division'].map(l=>[l,rows.filter(r=>r.niveau_denne_sæson===l).length])),crossLevelDuplicates,contacts:contactSummary,markerDecisions,unmatchedQualificationParticipants,structures,omitted},null,2));
+fs.writeFileSync('statistik/results/089-liga-1div-revisionstabel.json',JSON.stringify({generated_at:new Date().toISOString(),columns:cols,rows,omitted_season_structures:omitted,liga_one_division_boundary_structures:structures,contact_info_contamination:contactSummary,bd_marker_decisions:markerDecisions,qualification_participants_without_main_group:unmatchedQualificationParticipants,cross_level_duplicates:crossLevelDuplicates,selection_method:'Alle Liga-, 1.-, 2.- og 3.-divisionsrækker samt Danmarksserien kommer fra deres egen grundspilspulje. (O)/(N) bevares som historisk bevægelsesmarkør, men ændrer ikke hjemmeniveauet i den aktuelle sæson. Kvalifikationsgrupper bruges kun til hændelse og sporbarhed. league_matches bruges kun efter rensning/mapping af kontaktinfo.'},null,2));
+console.log(JSON.stringify({rows:rows.length,byLevel:Object.fromEntries(['Ligaen','1. division','2. division','3. division','Danmarksserien'].map(l=>[l,rows.filter(r=>r.niveau_denne_sæson===l).length])),crossLevelDuplicates,contacts:contactSummary,markerDecisions,unmatchedQualificationParticipants,structures,omitted},null,2));
