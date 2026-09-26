@@ -201,4 +201,4 @@ liga-landskab.db SHA-256 før/efter:
 - Ingen påstand om faktisk oprykning eller nedrykning ud fra kvalifikationsdeltagelse alene;
   tabellen registrerer den direkte, gemte gruppetilknytning.
 
-**Commits:** afventer commit på denne gren.
+**Commits:** cdf9500 (implementering og genererede resultater).
