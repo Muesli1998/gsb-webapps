@@ -113,6 +113,8 @@ faktisk er korrekt hvis kilden er tvetydig.
 
 `arbejde/097-pointsystem-historik-og-videns-udtraekning`, fra `main`.
 
+**Bemærk til Codex:** denne opgave må gerne løses med subagenter (fx én der graver i pointsystem-historikken, én der bredt scanner kreds-/forbundsdokumenter for guldkorn) — der er ingen afhængighed mellem pkt. 1 og pkt. 2 der kræver sekventielt arbejde. Saml alt i den ene rapport og citér kilder uanset hvilken subagent der fandt dem.
+
 ---
 
 ## Spørgsmål
