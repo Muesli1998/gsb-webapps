@@ -112,7 +112,23 @@ lagt sammen med et andet hold osv.) uden at kunne pege på konkret evidens.
 
 ## Spørgsmål
 
-(Ingen ved oprettelse.)
+**Besvaret af Chris (via Claude), 2026-09-26 — GSB hold 4:** bekræftet fra egen klubviden: GSB havde
+i lang tid kun 3 "rigtige" faste seniorhold. Hold 4 var reelt væk i 2016/17-2022/23, ikke en
+fortsættelse under et andet nummer/navn. Databasens egne markører understøtter dette direkte: 2015
+har en `Gladsaxe Søborg 5 udgået`-række, og 2016 har både `Gladsaxe Søborg 4 udgået` og
+`Gladsaxe Søborg 4 trukket` — dvs. et konkret, dokumenteret forsøg på et 4./5. hold i 2015-16 der blev
+meldt ud/trukket samme eller næste sæson, efterfulgt af en reelt NY hold 4-tilmelding fra 2023/24.
+
+**Konsekvens for matchingen:** brug IKKE en antagelse om kontinuitet for GSB hold 4 hen over
+2016/17-2022/23 — bevar bruddet som det det er (holdet eksisterede ikke i den periode), og markér det
+i rapporten som "bekræftet ægte pause, ikke en matchingfejl", med denne besvarelse som kilde i stedet
+for en gættet sammenkobling.
+
+De to øvrige same-season-uklarheder (GSB hold 5 i 2015/16, GSB hold 4 i 2016/17: `udgået`/`trukket`-
+par) er IKKE eksplicit bekræftet af Chris ud over det ovenstående — de to rækker for hold 4 i 2016/17
+(`udgået` og `trukket`) er sandsynligvis to sider af samme afmeldingshændelse snarere end to
+forskellige hold, men fortsæt med at dokumentere dem som en uklarhed hvis kilden ikke giver et
+utvetydigt facit, i stedet for at gætte at de er identiske.
 
 ## Tilbagefald
 
