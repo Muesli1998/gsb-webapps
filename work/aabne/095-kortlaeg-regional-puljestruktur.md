@@ -137,6 +137,20 @@ korrigeret mig én gang undervejs i denne opgaves forarbejde).
 
 ## Spørgsmål
 
+### Uafklaret — vestlig overgang 2014/15–2015/16
+
+Den rå regionsafgrænsede data kan ikke afgøre topniveauet i fem tilfælde:
+
+- Fyn 2014/15: `Kredsserie Fyn` (to grupper) og `Kredsserie 5 (Fyn)` samt Serie 1–3. Navnet giver en kandidat, men data indeholder ingen direkte etikette for forbindelse opad til Danmarksserien.
+- Fyn 2015/16: kun `Kvalifikations-række`, Senior B/C og Fynsmesterskab-/Senior Hr.-varianter; ingen `Fynsserien` eller `Kredsserie`.
+- Midtjylland 2014/15–2015/16: kun Serie 2/3-varianter.
+- Sønderjylland 2014/15–2015/16: Serie-/senior-/motionsvarianter, men ingen navngivet topserie.
+
+Skal disse fem perioder afklares med Christoffers visuelle kildekontrol eller en separat regel-/historikundersøgelse, før en generator forsøger at inkludere dem?
+
+### Uafklaret — Bornholm efter 2015/16
+
+`Bornholmsserien` findes som grundspil i 2011/12–2015/16, men derefter kun Serie 2–5-varianter eller ingen regionstilknyttede seniorgrupper (2017/18–2019/20 og 2026/27). Lokale data afgør ikke, om topserien blev nedlagt, flyttet eller om kildeindekset er ufuldstændigt. Skal dette afklares visuelt/historisk før Bornholm udvides?
 ## Tilbagefald
 
 (Én linje hver gang opgaven falder tilbage til et tidligere trin, med hvorfor.)
@@ -146,11 +160,36 @@ korrigeret mig én gang undervejs i denne opgaves forarbejde).
 **Kontroloutput — før og efter:**
 
 ```
-(indsæt det faktiske output, ikke en beskrivelse af det)
+Read-only kildedækning:
+  region_id: 3, 4, 5, 6, 7, 8, 9, 10
+  regioner: 8
+  sæsoner: 2010/11–2026/27 (17)
+  region×sæson-celler: 136
+  regionstilknyttede senior-grupper: 2.990
+  rå navngivne topserie-kandidater: 104
+  identificerede topserier: 103
+  uafklarede struktur-/kildeceller: 25
+  celler uden regionstilknyttet seniorgruppe: 12`r`n  (8 i 2010/11 samt Bornholm 2017/18–2019/20 og 2026/27; de 4 Bornholm-celler er indeholdt i de 25 åbne)
+
+liga-landskab.db SHA-256 før/efter:
+9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C
+9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C
+
+Katalogstikprøve:
+  distinkte top-orienterede ander/ukendt-kombinationer: 17
+  database-/API-skrivninger: 0
 ```
 
 **Hvad blev gjort:**
 
+- Kortlagde alle otte Badminton Danmark-regioner ved `region_id`, ikke via en global navnesøgning.
+- Skrev en læsbar kortlægning og et komplet JSON-bilag med de rå `division_name_raw`- og `group_name_raw`-værdier pr. region/sæson.
+- Dokumenterede de eksplicitte vestlige forbindelser Kredsserie Vest → Danmarksserien og Kredsserie Vest → Serie 1 Vest, og påviste at øvrige regioner ikke kan få samme faste kobling uden mere evidens.
+- Stikprøvede `group_type_katalog`; klassiske grund-/slut-/op-/nedrykningsnavne er klassificeret, men 17 regionale kvalifikationsvarianter står fortsat som `andet/ukendt`.
+
 **Hvad blev fravalgt og hvorfor:**
 
-**Commits:**
+- Ingen ændring af 089/092, `group_type_katalog` eller databasen: opgaven er en researchfase.
+- Ingen forklaring blev opfundet for vest-overgangen eller Bornholms manglende topserie efter 2015/16; de står som eksplicitte spørgsmål.
+
+**Commits:** afventer commit på denne gren.
