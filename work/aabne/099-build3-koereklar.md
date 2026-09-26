@@ -113,4 +113,4 @@ build3.py kørt: nej — Mål 1's krævede SRC findes ikke på den konfigurerede
 - Ingen kodeændring og ingen buildkørsel: at skifte SRC til repoet ville afvige fra kortets eksplicitte `gsbData`-krav uden beslutning.
 - Ingen oprettelse eller kopiering af en Dropbox-kilde: det ville genindføre en uklar, separat kilde ved siden af det kanoniske repo.
 
-**Commits:**
+**Commits:** f97a8f7 (`Opgave 099: dokumentér blokerende SRC-stikonflikt`)
