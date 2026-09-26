@@ -129,8 +129,11 @@ kun i runtime. Den må aldrig hardkodes, gemmes i en fil eller committes.
 
 ## Uden for dette projekt
 
-U15 og yngre er udskudt. Turnerings- og spillerprofilsporet er
-researchspor, ikke hovedmålet. Historiske ranglistepoint er ikke afklaret.
+U09-U15 er IKKE udskudt — de har været en del af datasættet siden opgave
+033-038 (se `docs/statistik-plan.md`, "Ungdomsstatus"). Det der fortsat er
+Videreudvikling (ikke hovedmålet, men heller ikke afvist) er specifikt
+turnerings- og spillerprofilsporet samt historiske ranglistepoint — se
+`docs/statistik-plan.md` og opgave 097 for første skridt i det spor.
 
 Alt dette hører i `../docs/idebank-statistik.md`, ikke i opgavekøen — jf.
 prioriteten i `../AGENTS.md`.

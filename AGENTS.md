@@ -361,22 +361,35 @@ hvilket bragte repoet fra 93 MB til 8 MB uden at miste historik.
 
 ---
 
-## Næste skridt, i rækkefølge
+## Status på oprydningen efter 13. september 2026 (opdateret 2026-09-26)
 
-1. Skriv `docs/START-HER.md` om til den nye struktur. Behold reglerne om
-   arbejdsmetode; erstat alt om filplacering. Backup-ritualet for store
-   dokumenter kan pensioneres — git overtager den rolle.
-2. Ret stier og mappenavne i `docs/roadmap.md`, idébankerne og
-   spec-filen. Bemærk at "GSB Dream Team" de fleste steder er
-   *produktnavnet i brugerfladen*, ikke en mappe — det skal blive stående.
-3. Lav `kampsystem/build3.py` køreklar med `config.local.json` i stedet
-   for sandkasse-stier.
-4. Installér node på den stationære og python på den bærbare.
-5. Skriv strukturguiden: hvor nye projekter hører hjemme, og hvordan en
-   ny maskine sættes op.
-6. Ryd op i claude.ai-projektets dokumenter, så de bliver et slankt spejl
-   af `docs/` frem for en konkurrerende kilde. Ti af de tredive er
-   backup-kopier som git nu gør overflødige.
+Listen herunder var oprindeligt seks fremadrettede skridt. De er nu tjekket
+mod repoet i stedet for antaget — dette er hvad der faktisk står, ikke en ny
+liste af opgaver:
+
+1. **Gjort.** `docs/START-HER.md` er skrevet om til den nye struktur (bekræftet:
+   dokumentet selv siger "skrevet om 13. september 2026" og henviser til
+   `AGENTS.md` som gældende reference).
+2. **Delvist gjort.** De fleste stier er rettet, men `docs/opus-strategisk-
+   review-prompt.md` og `docs/preview-vs-live-status.md` indeholder stadig
+   `D:\Dropbox`-referencer — uklart om de er forældede stier eller bevidst
+   historisk/eksempel-tekst; ikke rettet her, **gæt ikke** på hvilket uden at
+   læse dem i kontekst.
+3. **Ikke gjort.** `kampsystem/build3.py` har stadig hårdkodede
+   Claude-sandkasse-stier (`/mnt/user-data/uploads/...`, `/home/claude/...`) —
+   samme status som beskrevet i "Hvad du ikke kan stole på" ovenfor.
+4. **Ukendt, gæt ikke.** Node/python er installeret på i hvert fald én af
+   maskinerne pt. — status for begge maskiner er ikke tjekket herfra og skal
+   bekræftes af Chris, ikke antaget.
+5. **Ikke gjort.** Der findes ingen strukturguide i `docs/` (hvor nye
+   projekter hører hjemme, hvordan en ny maskine sættes op).
+6. **Ikke tjekket herfra.** Om claude.ai-projektets dokumenter nu er et slankt
+   spejl af `docs/` kan ikke afgøres fra selve git-repoet.
+
+Punkt 3 og 5 er reelle, ubesluttede åbne opgaver — de ligger ikke i
+`work/aabne/` endnu, fordi Chris ikke har besluttet dem ind i køen (jf.
+"Opgavekøen" og Prioritetsreglen: Statistik har førsteprioritet). De står her
+som kendt, ikke som "gør det nu".
 
 ---
 
