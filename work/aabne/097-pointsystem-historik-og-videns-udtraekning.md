@@ -155,4 +155,4 @@ git status --short --untracked-files=no apps/netlify-prod kampsystem klubstatist
 - Ingen implementation, databaseændring eller ændring af eksisterende walkoverprincipper; opgaven er kun research.
 - Ikke-fundne historiske forklaringer er angivet eksplicit i stedet for antaget.
 
-**Commits:**
+**Commits:** f3d96dd (`Opgave 097: dokumentér ungdomspointsystem og regelviden`)
