@@ -169,7 +169,8 @@ Read-only kildedækning:
   rå navngivne topserie-kandidater: 104
   identificerede topserier: 103
   uafklarede struktur-/kildeceller: 25
-  celler uden regionstilknyttet seniorgruppe: 12`r`n  (8 i 2010/11 samt Bornholm 2017/18–2019/20 og 2026/27; de 4 Bornholm-celler er indeholdt i de 25 åbne)
+  celler uden regionstilknyttet seniorgruppe: 12
+  (8 i 2010/11 samt Bornholm 2017/18–2019/20 og 2026/27; de 4 Bornholm-celler er indeholdt i de 25 åbne)
 
 liga-landskab.db SHA-256 før/efter:
 9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C
