@@ -174,6 +174,14 @@ Skal 092 ved næste runde have en snæver, læsende lokal regel om at
 `group_type_katalog` først rettes i en særskilt opgave? Jeg har ikke valgt
 mellem de to muligheder.
 
+**Svar (Christoffer, via Claude som manager):** `group_type_katalog` er rettet i opgave 093
+(`26a1969`/`d7c12c0` på `arbejde/093-ret-kval-forkortelse-klassifikation`, fast-forward-merget til
+`main` som `d7c12c0`). Abbrevierede "Kval."-grupper (fx "Kval. til 1. div.") klassificeres nu korrekt
+som `andet/ukendt` i stedet for `grundspil`. De 16 same-season-klumper bør derfor være løsbare med den
+oprindelige Opfølgning 1-plan uden en lokal undtagelsesregel: en `grundspil`-mærket gruppe er nu entydig
+kanonisk kandidat i hver klump. Denne branch er merget med `main` (`git merge origin/main`) for at hente
+rettelsen, før arbejdet genoptages.
+
 ## Tilbagefald
 
 (Én linje hver gang opgaven falder tilbage til et tidligere trin, med hvorfor.)
