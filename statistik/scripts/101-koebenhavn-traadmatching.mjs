@@ -134,6 +134,12 @@ for (const node of canonicalNodes.filter(node => /^gladsaxe søborg(?:\s|$)/iu.t
   if (!gsbIdentities.has(node.normalized_identity)) gsbIdentities.set(node.normalized_identity, []);
   gsbIdentities.get(node.normalized_identity).push(node);
 }
+const confirmedGsbPauses = new Map([
+  ['gladsaxe søborg | 4|2015|2023', {
+    status: 'bekræftet_ægte_pause_ikke_matchingfejl',
+    source: 'Chris via Claude, 2026-09-26: hold 4 eksisterede ikke i 2016/17–2022/23',
+  }],
+]);
 const gsbThreads = [];
 for (const [identity, nodes] of gsbIdentities) {
   nodes.sort((left, right) => left.season_start - right.season_start);
@@ -141,14 +147,19 @@ for (const [identity, nodes] of gsbIdentities) {
   for (let index = 0; index < nodes.length - 1; index += 1) {
     const from = nodes[index], to = nodes[index + 1];
     const missing = to.season_start - from.season_start - 1;
-    if (missing > 0) gaps.push({ from: { season: from.season, team: from.team, level: from.level, scope: from.source_scope },
+    if (missing > 0) {
+      const confirmation = confirmedGsbPauses.get(`${identity}|${from.season_start}|${to.season_start}`);
+      gaps.push({ from: { season: from.season, team: from.team, level: from.level, scope: from.source_scope },
       to: { season: to.season, team: to.team, level: to.level, scope: to.source_scope }, missing_seasons: missing,
-      status: 'kræver_Christoffers_gennemgang_ingen_kildeevidens_for_årsag' });
+      status: confirmation?.status ?? 'kræver_Christoffers_gennemgang_ingen_kildeevidens_for_årsag',
+      source: confirmation?.source ?? 'ingen kildeevidens for årsag' });
+    }
   }
   gsbThreads.push({ normalized_identity: identity, observed_team_names: [...new Set(nodes.map(node => node.team))],
     season_count: nodes.length, first_season: nodes[0].season, last_season: nodes.at(-1).season,
     nodes: nodes.map(node => ({ season: node.season, team: node.team, level: node.level, scope: node.source_scope })),
-    gaps, status: gaps.length ? 'brud_flagget_uden_gæt' : 'sammenhængende_mellem_observerede_sæsoner' });
+    gaps, status: gaps.length ? (gaps.every(gap => gap.status === 'bekræftet_ægte_pause_ikke_matchingfejl')
+      ? 'sammenhængende_med_bekræftet_ægte_pause' : 'brud_flagget_uden_gæt') : 'sammenhængende_mellem_observerede_sæsoner' });
 }
 gsbThreads.sort((left, right) => left.normalized_identity.localeCompare(right.normalized_identity, 'da'));
 
@@ -169,6 +180,8 @@ const output = {
   gsb_senior_control: { name: 'GSB seniorhold: DH + København, kontinuitet mellem observerede sæsoner',
     total_threads: gsbThreads.length, continuous_threads: gsbThreads.filter(thread => thread.gaps.length === 0).length,
     threads_with_breaks: gsbThreads.filter(thread => thread.gaps.length > 0).length,
+    confirmed_true_pauses: gsbThreads.flatMap(thread => thread.gaps).filter(gap => gap.status === 'bekræftet_ægte_pause_ikke_matchingfejl').length,
+    unexplained_breaks: gsbThreads.flatMap(thread => thread.gaps).filter(gap => gap.status !== 'bekræftet_ægte_pause_ikke_matchingfejl').length,
     flagged_breaks: gsbThreads.flatMap(thread => thread.gaps.map(gap => ({ normalized_identity: thread.normalized_identity, ...gap }))),
     same_season_ambiguities: gsbAmbiguities, dh_københavn_transitions: gsbTransitions, threads: gsbThreads },
   nodes: canonicalNodes, automatic_edges: automaticEdges, ambiguity_reviews: ambiguityReviews,
@@ -195,20 +208,21 @@ const report = [
   '## Navngiven accepttest — GSB seniorhold: DH + København', '',
   line(['Kontrol', 'Antal']), line(['---', '---:']),
   line(['GSB-holdtråde', gsb.total_threads]), line(['Sammenhængende mellem observerede sæsoner', gsb.continuous_threads]),
-  line(['Tråde med internt sæsonbrud', gsb.threads_with_breaks]), line(['Flaggede brud uden årsagsgæt', gsb.flagged_breaks.length]),
+  line(['Tråde med internt sæsonbrud', gsb.threads_with_breaks]), line(['Bekræftede ægte pauser', gsb.confirmed_true_pauses]),
+  line(['Uforklarede brud', gsb.unexplained_breaks]),
   line(['GSB same-season ambiguity reviews', gsb.same_season_ambiguities.length]), line(['Automatiske DH↔København-overgange', gsb.dh_københavn_transitions.length]), '',
   gsb.flagged_breaks.length === 0
     ? 'Alle GSB-tråde er sammenhængende mellem deres første og sidste observerede sæson i den kombinerede DH- og København-population. Endepunkter vurderes ikke som brud, fordi datakilden alene ikke viser, om et hold ophørte eller blot endnu ikke var oprettet.'
-    : 'Hvert internt GSB-brud står i JSON-outputtet som `kræver_Christoffers_gennemgang_ingen_kildeevidens_for_årsag`. Opgaven klassificerer ikke disse som hverken datamangel eller matchingfejl uden yderligere evidens.', '',
+    : 'GSB hold 4s eneste interne brud er bekræftet som en ægte pause, ikke en matchingfejl, af Chris via Claude 2026-09-26. Endepunkter vurderes ikke som brud, fordi datakilden alene ikke viser, om et hold ophørte eller blot endnu ikke var oprettet.', '',
   '## GSB-tråde', '',
   line(['Normaliseret identitet', 'Observerede sæsoner', 'Første–sidste', 'Status']), line(['---', '---:', '---', '---']),
   ...gsb.threads.map(thread => line([thread.normalized_identity.replace(' | ', ' hold '), thread.season_count, `${thread.first_season}–${thread.last_season}`, thread.status])), '',
   '## GSB-flaggede brud', '',
-  line(['Hold', 'Fra', 'Til', 'Manglende sæsoner', 'Klassifikation']), line(['---', '---', '---', '---:', '---']),
+  line(['Hold', 'Fra', 'Til', 'Manglende sæsoner', 'Klassifikation', 'Kilde']), line(['---', '---', '---', '---:', '---', '---']),
   ...(gsb.flagged_breaks.length ? gsb.flagged_breaks.map(gap => line([
     gap.normalized_identity.replace(' | ', ' hold '), `${gap.from.season} (${gap.from.level})`, `${gap.to.season} (${gap.to.level})`, gap.missing_seasons,
-    'kræver Christoffers gennemgang; ingen årsag udledt',
-  ])) : [line(['Ingen', '', '', '0', ''])]), '',
+    gap.status, gap.source,
+  ])) : [line(['Ingen', '', '', '0', '', ''])]), '',
   '## GSB same-season-uklarheder', '',
   line(['Sæson', 'Hold', 'Gemte grundspilskilder']), line(['---', '---', '---']),
   ...(gsb.same_season_ambiguities.length ? gsb.same_season_ambiguities.map(review => line([
@@ -223,6 +237,7 @@ const report = [
 fs.writeFileSync(reportPath, `${report}\n`);
 console.log(JSON.stringify({ summary: output.summary, gsb_senior_control: {
   total_threads: gsb.total_threads, continuous_threads: gsb.continuous_threads,
-  threads_with_breaks: gsb.threads_with_breaks, flagged_breaks: gsb.flagged_breaks.length,
+  threads_with_breaks: gsb.threads_with_breaks, confirmed_true_pauses: gsb.confirmed_true_pauses,
+  unexplained_breaks: gsb.unexplained_breaks, flagged_breaks: gsb.flagged_breaks.length,
   same_season_ambiguities: gsb.same_season_ambiguities, dh_københavn_transitions: gsb.dh_københavn_transitions.length,
 } }, null, 2));

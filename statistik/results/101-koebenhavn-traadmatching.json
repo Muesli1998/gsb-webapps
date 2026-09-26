@@ -62,6 +62,8 @@
     "total_threads": 7,
     "continuous_threads": 6,
     "threads_with_breaks": 1,
+    "confirmed_true_pauses": 1,
+    "unexplained_breaks": 0,
     "flagged_breaks": [
       {
         "normalized_identity": "gladsaxe søborg | 4",
@@ -78,7 +80,8 @@
           "scope": "København"
         },
         "missing_seasons": 7,
-        "status": "kræver_Christoffers_gennemgang_ingen_kildeevidens_for_årsag"
+        "status": "bekræftet_ægte_pause_ikke_matchingfejl",
+        "source": "Chris via Claude, 2026-09-26: hold 4 eksisterede ikke i 2016/17–2022/23"
       }
     ],
     "same_season_ambiguities": [
@@ -560,10 +563,11 @@
               "scope": "København"
             },
             "missing_seasons": 7,
-            "status": "kræver_Christoffers_gennemgang_ingen_kildeevidens_for_årsag"
+            "status": "bekræftet_ægte_pause_ikke_matchingfejl",
+            "source": "Chris via Claude, 2026-09-26: hold 4 eksisterede ikke i 2016/17–2022/23"
           }
         ],
-        "status": "brud_flagget_uden_gæt"
+        "status": "sammenhængende_med_bekræftet_ægte_pause"
       },
       {
         "normalized_identity": "gladsaxe søborg | 5",

@@ -33,11 +33,12 @@ Nummererede `Serie`-navne beholdes som deres rå nummer (fx `København Serie 30
 | GSB-holdtråde | 7 |
 | Sammenhængende mellem observerede sæsoner | 6 |
 | Tråde med internt sæsonbrud | 1 |
-| Flaggede brud uden årsagsgæt | 1 |
+| Bekræftede ægte pauser | 1 |
+| Uforklarede brud | 0 |
 | GSB same-season ambiguity reviews | 2 |
 | Automatiske DH↔København-overgange | 2 |
 
-Hvert internt GSB-brud står i JSON-outputtet som `kræver_Christoffers_gennemgang_ingen_kildeevidens_for_årsag`. Opgaven klassificerer ikke disse som hverken datamangel eller matchingfejl uden yderligere evidens.
+GSB hold 4s eneste interne brud er bekræftet som en ægte pause, ikke en matchingfejl, af Chris via Claude 2026-09-26. Endepunkter vurderes ikke som brud, fordi datakilden alene ikke viser, om et hold ophørte eller blot endnu ikke var oprettet.
 
 ## GSB-tråde
 
@@ -46,16 +47,16 @@ Hvert internt GSB-brud står i JSON-outputtet som `kræver_Christoffers_gennemga
 | gladsaxe søborg hold 1 | 17 | 2010/2011–2026/2027 | sammenhængende_mellem_observerede_sæsoner |
 | gladsaxe søborg hold 2 | 15 | 2012/2013–2026/2027 | sammenhængende_mellem_observerede_sæsoner |
 | gladsaxe søborg hold 3 | 15 | 2012/2013–2026/2027 | sammenhængende_mellem_observerede_sæsoner |
-| gladsaxe søborg hold 4 | 5 | 2015/2016–2026/2027 | brud_flagget_uden_gæt |
+| gladsaxe søborg hold 4 | 5 | 2015/2016–2026/2027 | sammenhængende_med_bekræftet_ægte_pause |
 | gladsaxe søborg hold 5 | 3 | 2024/2025–2026/2027 | sammenhængende_mellem_observerede_sæsoner |
 | gladsaxe søborg hold 6 | 2 | 2025/2026–2026/2027 | sammenhængende_mellem_observerede_sæsoner |
 | gladsaxe søborg hold 7 | 1 | 2026/2027–2026/2027 | sammenhængende_mellem_observerede_sæsoner |
 
 ## GSB-flaggede brud
 
-| Hold | Fra | Til | Manglende sæsoner | Klassifikation |
-| --- | --- | --- | ---: | --- |
-| gladsaxe søborg hold 4 | 2015/2016 (København Serie 4) | 2023/2024 (København Serie 31) | 7 | kræver Christoffers gennemgang; ingen årsag udledt |
+| Hold | Fra | Til | Manglende sæsoner | Klassifikation | Kilde |
+| --- | --- | --- | ---: | --- | --- |
+| gladsaxe søborg hold 4 | 2015/2016 (København Serie 4) | 2023/2024 (København Serie 31) | 7 | bekræftet_ægte_pause_ikke_matchingfejl | Chris via Claude, 2026-09-26: hold 4 eksisterede ikke i 2016/17–2022/23 |
 
 ## GSB same-season-uklarheder
 

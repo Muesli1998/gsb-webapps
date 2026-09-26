@@ -112,20 +112,23 @@ lagt sammen med et andet hold osv.) uden at kunne pege på konkret evidens.
 
 ## Spørgsmål
 
-**Stop 2026-09-26 — GSB hold 4:** Efter en konkret parserrettelse for
-`KS-Pulje 2`/`KS Serie P1` og `Serie 1`-formatet er der ét tilbageværende
-internt brud: GSB hold 4 ses i 2015/16 (`4. Serie P1`) og igen fra 2023/24
-(`Serie 31`) til 2026/27, men ikke i de syv mellemliggende sæsoner i den
-kombinerede DH- og København-population. Den rå, region-8-afgrænsede
-forespørgsel gav heller ingen GSB hold 4-række i 2016/17–2022/23. Er det en
-ægte periode uden et GSB hold 4, eller skal holdet knyttes til et andet
-holdnummer/navn? Kilden giver ikke evidens for hvilken, så matchingen er ikke
-udvidet med en antagelse.
+**Besvaret af Chris (via Claude), 2026-09-26 — GSB hold 4:** bekræftet fra egen klubviden: GSB havde
+i lang tid kun 3 "rigtige" faste seniorhold. Hold 4 var reelt væk i 2016/17-2022/23, ikke en
+fortsættelse under et andet nummer/navn. Databasens egne markører understøtter dette direkte: 2015
+har en `Gladsaxe Søborg 5 udgået`-række, og 2016 har både `Gladsaxe Søborg 4 udgået` og
+`Gladsaxe Søborg 4 trukket` — dvs. et konkret, dokumenteret forsøg på et 4./5. hold i 2015-16 der blev
+meldt ud/trukket samme eller næste sæson, efterfulgt af en reelt NY hold 4-tilmelding fra 2023/24.
 
-To same-season tilfælde er også bevaret som uklarheder i rapporten: GSB hold
-5 i 2015/16 (`30. serie` vs. `5. serie P1`, hvor den ene er `udgået`) og GSB
-hold 4 i 2016/17 (`4. Serie P2` vs. `30. Serie P1`, `udgået`/`trukket`). De
-vælges ikke automatisk som kanoniske kilder.
+**Konsekvens for matchingen:** brug IKKE en antagelse om kontinuitet for GSB hold 4 hen over
+2016/17-2022/23 — bevar bruddet som det det er (holdet eksisterede ikke i den periode), og markér det
+i rapporten som "bekræftet ægte pause, ikke en matchingfejl", med denne besvarelse som kilde i stedet
+for en gættet sammenkobling.
+
+De to øvrige same-season-uklarheder (GSB hold 5 i 2015/16, GSB hold 4 i 2016/17: `udgået`/`trukket`-
+par) er IKKE eksplicit bekræftet af Chris ud over det ovenstående — de to rækker for hold 4 i 2016/17
+(`udgået` og `trukket`) er sandsynligvis to sider af samme afmeldingshændelse snarere end to
+forskellige hold, men fortsæt med at dokumentere dem som en uklarhed hvis kilden ikke giver et
+utvetydigt facit, i stedet for at gætte at de er identiske.
 
 ## Tilbagefald
 
@@ -147,7 +150,8 @@ GSB seniorhold: DH + København
   tråde: 7
   sammenhængende mellem observerede sæsoner: 6
   tråde med internt brud: 1
-  flaggede brud uden årsagsgæt: 1
+  bekræftede ægte pauser: 1
+  uforklarede brud: 0
   same-season-uklarheder: 2
   automatiske DH↔København-overgange: 2
 
@@ -175,13 +179,17 @@ liga-landskab.db SHA-256 før/efter:
   `KS-Pulje 2`/`KS Serie P1` og `Serie 1`-formen. Den rettede kørsel fjerner
   to kunstige GSB-brud.
 - Dokumenterede de to direkte, automatiske GSB-overgange mellem København og
-  Danmarksserien, og det ene resterende brud med rå kildekontekst.
+  Danmarksserien. GSB hold 4's pause 2016/17–2022/23 er nu eksplicit
+  markeret som bekræftet ægte pause, ikke en matchingfejl, med Chris via
+  Claude som kilde.
 
 **Hvad blev fravalgt og hvorfor:**
 
 - Ingen ændring til `group_type_katalog`, databaser, Kredsserien Vest,
   Bornholmsserien eller andre regioner.
-- Ingen automatisk løsning af GSB hold 4's syv sæsoners fravær eller de to
-  same-season-uklarheder: deres årsag kan ikke afgøres af den gemte evidens.
+- Ingen kunstig kontinuitetskant over GSB hold 4's bekræftede pause.
+- Ingen automatisk identifikation af de to same-season-uklarheder; den gemte
+  evidens afgør ikke entydigt hvilken kilde der er kanonisk.
 
-**Commits:** 079e063 (`Opgave 101: kortlaeg Kobenhavn traadmatching og GSB-brud`).
+**Commits:** 079e063 (`Opgave 101: kortlaeg Kobenhavn traadmatching og GSB-brud`);
+opfølgningen committes på denne gren efter opdateringen.
