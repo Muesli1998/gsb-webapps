@@ -83,7 +83,7 @@ Chris bekræfte.
 
 ## Spørgsmål
 
-(Ingen ved oprettelse.)
+Ingen åbne spørgsmål. `claude/gsb_preview.html` og `claude/START-HER.md` omtales som eksterne Claude-previewreferencer; de er ikke ændret, fordi deres aktuelle placering/status ikke kan bekræftes fra repoet.
 
 ## Tilbagefald
 
@@ -94,11 +94,22 @@ Chris bekræfte.
 **Kontroloutput — før og efter:**
 
 ```
-(indsæt det faktiske output, ikke en beskrivelse af det)
+D:\Dropbox-forekomster før: 1
+D:\Dropbox-forekomster efter: 0
+Statusmarkører før: 57
+Statusmarkører efter: 57
+Ændrede filer: docs/preview-vs-live-status.md og dette opgavekort
+apps/netlify-prod/: 0 ændrede filer
 ```
 
 **Hvad blev gjort:**
 
+- Rettede alle fem verificerbare henvisninger fra den tidligere Dropbox-produktionsmappe til `apps/netlify-prod/`.
+- Bevarede den manuelle Netlify-upload og alle feature-statusmarkeringer uændret.
+
 **Hvad blev fravalgt og hvorfor:**
+
+- Claude-previewreferencer blev ikke ændret: de ligger uden for repoets verificerbare struktur.
+- Ingen feature-status blev ændret, fordi opgaven kun verificerer filplaceringer.
 
 **Commits:**
