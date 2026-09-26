@@ -121,6 +121,7 @@ fastslået historie.
 
 ## Spørgsmål
 
+Ingen åbne spørgsmål. Kildesøgningen fandt ikke en officiel etableringsdato eller organisatorisk begrundelse; dette er dokumenteret som et negativt fund i resultatrapporten.
 ## Tilbagefald
 
 (Én linje hver gang opgaven falder tilbage til et tidligere trin, med hvorfor.)
@@ -130,11 +131,30 @@ fastslået historie.
 **Kontroloutput — før og efter:**
 
 ```
-(indsæt det faktiske output, ikke en beskrivelse af det)
+liga-landskab.db SHA-256 før:  9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C
+liga-landskab.db SHA-256 efter: 9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C
+match: true
+
+git status --short --untracked-files=no statistik/data/
+(ingen output)
+
+git status --short statistik/data/
+?? statistik/data/
 ```
+
+`statistik/data/` er et allerede eksisterende, ikke versionsstyret datasæt; den sidste linje er derfor ikke skabt af opgaven. SHA-256-kontrollen bekræfter, at databasen er byte-identisk.
 
 **Hvad blev gjort:**
 
+- Læste og sporede alle 161 markerede Kredsserie Vest-forekomster; de svarer til 118 distinkte hold-sæsoner, fordi efterspil kan gentage samme hold. Den komplette verificerbare liste er gemt i `statistik/results/096-kredsserien-vest-oprindelse.json`.
+- Sporede alle 11 markerede teams i 2016/17: 5 national nedrykning, 5 Serie 1 Vest-forfremmelser og 1 ukendt.
+- Bekræftede at alle fire første grundspilspuljer har regionerne 4, 5, 6 og 7.
+- Søgte officielle kilder; dokumenterede fund og negativt fund er i resultatrapporten.
+- Opdaterede 095 med Kredsserie Vest-konklusionen og Bornholm som afklaret.
+
 **Hvad blev fravalgt og hvorfor:**
+
+- Ingen organisatorisk startdato eller forklaring er angivet som fakta, fordi ingen fundet officiel kilde dokumenterer den.
+- Ingen database-, kode- eller API-ændringer; opgaven er research.
 
 **Commits:**

@@ -37,9 +37,9 @@ Den delte vestlige struktur er synlig som samme Kredsserie Vest-/Kredsserien Ves
 
 Det bekræfter en overgang i de gemte data, men **hverken dens organisatoriske årsag eller topniveauet i de uafklarede år kan bestemmes herfra**.
 
-### Bornholm efter 2015/16
+### Bornholm efter 2015/16 — afklaret
 
-`Bornholmsserien` ophører som rå navn efter 2015/16. De efterfølgende fund er Serie 2/3 i 2016/17, ingen regionstilknyttede seniorgrupper i 2017/18–2019/20, Serie 4/5 i 2020/21 og Serie 2–4-varianter 2021/22–2025/26. Der findes ingen gemt label, der dokumenterer en sammenlægning, nedlæggelse eller fortsættelse under et andet topserienavn. Det er derfor et åbent data-/strukturspørgsmål, ikke en konstateret nedlæggelse.
+Dette punkt er afklaret efter opgave 096. Christoffers domænekendskab og holdsporing peger samme vej: Rønne, Knudsker, Aakirkeby/Nyvest m.fl. fortsætter under `Serie 2` fra 2016/17, og ingen Bornholm-klub forekommer i Kredsserie Vest eller Danmarksserien. `Bornholmsserien` blev dermed ikke lagt ind i en national eller vestlig topserie; det selvstændige serienavn blev udfaset. Dataene viser fortsat Serie 2/3 i 2016/17, ingen regionstilknyttede seniorgrupper i 2017/18–2019/20 og Serie 2–5-varianter derefter. Dette er afklaret som regionalt scope, ikke som en dokumenteret organisatorisk beslutningsdato.
 
 ## 3. Forbindelser opad og nedad
 
@@ -68,3 +68,8 @@ Det er samme type variant-/forkortelseshul som 093 fandt, men denne opgave ændr
 ## Konsekvens for en senere 089/092-udvidelse
 
 En senere generator skal være regions- og periodebevidst: den må ikke forsøge én global `levelFromDivision()` for alle rækker under Danmarksserien. Et muligt næste trin er en eksplicit, versioneret mapping fra `(region_id, season interval, division_name_raw family)` til regionalt niveau, hvor de 25 åbne celler forbliver ekskluderet, indtil de er afklaret.
+## Opfølgning fra opgave 096 — Kredsserie Vest
+
+Opgave 096 har gennemgået samtlige markerede `(O)`/`(N)`-hold i de vestlige Kredsserie-data 2016/17–2026/27. I den første komplette datasætsæson, 2016/17, er alle fire grundspilspuljer koblet til **samme** fire regioner: Midtjylland (4), Nordjylland (5), Sønderjylland (6) og Fyn (7). De 11 markerede startteams fordeler sig på 5 dokumenterede nedrykninger fra Danmarksserien/3. division, 5 dokumenterede Serie 1 Vest-forfremmelser og 1 ukendt (Lystrup). Det dokumenterer startfeltets blandede tilgang, men ikke oprettelsesdatoen.
+
+Ekstern kildekontrol fandt et Midtjylland-dokument fra 2015, som allerede omtaler `Kredsserien Vest`, og fælles vestlige reglementer for de fire regioner. Der er **ikke fundet** en officiel kilde, som fastslår en organisatorisk sammenlægning i 2016/17 eller dens begrundelse. Derfor er 2016/17 første komplette observation i dette datasæt, ikke en bekræftet oprettelsesdato. Den fulde metode, sæsontabel, holdspor og links ligger i [096-kredsserien-vest-oprindelse.md](096-kredsserien-vest-oprindelse.md).
