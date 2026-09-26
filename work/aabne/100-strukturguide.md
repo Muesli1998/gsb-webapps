@@ -109,4 +109,4 @@ AGENTS.md: 0 ændrede linjer
 - AGENTS.md er ikke ændret; guiden kan findes direkte under `docs/` uden at udvide den centrale instruks.
 - Det gamle setup-script beskrives ikke som aktiv metode, fordi det indeholder historiske stier og repoer.
 
-**Commits:**
+**Commits:** deff548 (Opgave 100: tilføj strukturguide)
