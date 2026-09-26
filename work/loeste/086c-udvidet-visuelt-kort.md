@@ -149,4 +149,36 @@ Tre forbindelseslag (streger/zoner):
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+**Status:** afsluttet på `arbejde/086c-udvidet-visuelt-kort`.
+
+**Hvad blev gjort:** Byggede et selvstændigt, filtrerbart HTML-kort i
+`statistik/results/086c-udvidet-visuelt-kort.html` og en kort metode-/dækningsrapport
+i `statistik/results/086c-udvidet-visuelt-kort.md`. Kortet dækker alle 33 regioner fra
+kataloget, med filter på region, sæson og aldersgruppe. Det indeholder 59.127
+pulje-region-forekomster og 18.546 unikke puljer. Regioner uden puljer for et bestemt
+filter vises eksplicit som tomme; 25 af de 33 regioner har mindst én gemt pulje.
+
+**Evidens og visualisering:** Den godkendte kode er anvendt uændret. Grå stiplede pile
+er kun dokumentorden inden for samme spilleform-familie; de er ikke oprykningspåstande.
+Lilla/orange/blå nodekoder skelner kvalifikation/slutspil, ikke-niveau/spilletidssider og
+delte puljer. Den dokumenterede 3. division/Danmarksserien-forgrening samt regel-,
+empiri- og kombinationsbelæg er vist særskilt med henvisninger til 086e/088b. 087 er
+afsluttet, men dens entydige kaskadefund er 5–8 % pr. niveaupar; de vises kun som en
+empirisk underkant, ikke som komplet historik. Ungdomspuljer forbindes ikke automatisk.
+
+**Læsbarhed:** Region-, sæson- og aldersfilter blev valgt frem for ét samlet diagram for
+at bevare de tre evidenslag og gøre hver pulje direkte klikbar til den gemte kilderute.
+
+**Fremtidsvision:** Den afgrænsede note om en senere interaktiv liga-udforsker er tilføjet
+til `docs/idebank-statistik.md`; der er ikke bygget produktfunktionalitet.
+
+**Kontrol/værn:** Indlejret datasæt genlæst: 33 regioner, 25 med puljer, 59.127
+forekomster, 18.546 unikke puljer og 27 puljer i standardfilteret (region 1, sæson 2026,
+aldersgruppe 1). `gsb-statistik-normalized.db` SHA-256 før/efter:
+`49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E`.
+`liga-landskab.db` SHA-256 før/efter:
+`9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C`.
+`git status --short statistik/data/` indeholder kun den allerede ignorerede, untracked
+`statistik/data/`-mappe; ingen databasefil blev ændret. Ingen API-kald.
+
+**Commits:** afventer commit på denne gren.

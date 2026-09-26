@@ -553,3 +553,8 @@ Før noget af ovenstående bygges, er næste skridt at hente en fuld oversigt ov
 turneringer (med deres kampkategorier/regelsæt) fra databasen — grundlaget for holdsammenlægning og
 for at vurdere hvilke ungdomshold der spiller i de stærke ligaer. Dette er reelt forarbejde til
 Hold-fanens holdsammenlægning, og bør give input til flere af punkterne ovenfor samtidig.
+
+
+## Fremtidig liga-udforsker oven på liga-landskabet (noteret 2026-09-26)
+
+Senere: interaktiv udforsker oven på `liga-landskab.db` med klub-/turneringsfilter, stigevisning, puljestilling, holdets kampe/spillere/resultater og kampdetaljer. 086c er kun et statisk QA-kort; udforskeren kræver en selvstændig produktopgave.
