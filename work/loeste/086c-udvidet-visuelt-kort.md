@@ -182,3 +182,21 @@ aldersgruppe 1). `gsb-statistik-normalized.db` SHA-256 før/efter:
 `statistik/data/`-mappe; ingen databasefil blev ændret. Ingen API-kald.
 
 **Commits:** afventer commit på denne gren.
+
+### Rettelse efter Chris' visuelle kontrol
+
+Den første HTML-version havde en klassifikationsfejl: alle puljer uden gemte
+`match_categories` blev samlet som én spilleform-familie. Manglende kategorier er
+ikke i sig selv et formatsignal.
+
+Kortet bruger nu kun to dokumenterede fallback-regler:
+
+- En slutspils-/spilletidsside arver kun format fra en entydig grundspilsrække med
+  samme normaliserede rækkenavn i samme region, sæson og aldersgruppe.
+- Et eksplicit formatsignal i rækkenavnet (`4+3`, `2+2`, `4 spillere`, `4 piger`)
+  danner sin egen tekstbaserede familie.
+
+Ved genklassifikationen arvede 686 rækker en entydig grundspilssignatur, 839 fik
+tekstsignal, og 856 står fortsat som ukendte og sammenlignes ikke. BADKBH's
+Københavnsserie-slutspil arver dermed den samme 13-kategorisignatur som grundspillet;
+U15 `4+3` og `2+2` vises i adskilte familier.
