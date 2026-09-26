@@ -82,10 +82,9 @@ hvor `OUT` skal pege hen hvis det er uklart, eller på hvad et nyt
 
 ## Spørgsmål
 
-**Stop — afventer Chris:** `config.local.json` angiver `gsbData` som `C:\Users\chril\Dropbox\Projects\GSB-Webapps`, men `Test-Path "$gsbData\netlify-tool-prod\public"` giver `False`. Den kilde, som faktisk findes og er kanonisk ifølge `AGENTS.md`, er `apps/netlify-prod/public/` i repoet; den indeholder `index.html` og `senior-ungdom-tilmelding.html`, som `build3.py` læser fra `SRC`.
+**Afgjort 2026-09-26:** Chris bekræftede, at `SRC` skal være repoets kanoniske `apps/netlify-prod/public/`, ikke `gsbData`. Den tidligere SRC-uklarhed er dermed lukket.
 
-Kortets Mål kræver eksplicit, at `SRC` peger under `gsbData`, mens repoets nuværende struktur siger, at produktionskoden ligger i `apps/netlify-prod/`. Skal `build3.py` bruge den kanoniske repo-kilde (`apps/netlify-prod/public/`), eller skal Chris først genskabe en særskilt `gsbData\netlify-tool-prod\public`-kopi? Jeg kan ikke vælge mellem de to uden at gætte, og scriptet kan derfor ikke køres ærligt endnu.
-
+**Nyt stop — afventer Chris:** Den aktuelle maskine har ingen brugbar Python-installation. Faktisk output: `python --version` og `python3 --version` åbner Windows Store-aliasen, `py --version` er ikke genkendt, og `where.exe python` finder kun `C:\Users\chril\AppData\Local\Microsoft\WindowsApps\python.exe`. Kortet kræver, at `build3.py` faktisk køres uden fejl; det kan ikke dokumenteres før Python installeres eller opgaven flyttes til den stationære maskine med Python. Ingen kodeændring er lavet, fordi den ikke kan afprøves som kortet kræver.
 ## Tilbagefald
 
 (Én linje hver gang opgaven falder tilbage til et tidligere trin, med hvorfor.)
@@ -95,22 +94,22 @@ Kortets Mål kræver eksplicit, at `SRC` peger under `gsbData`, mens repoets nuv
 **Kontroloutput — før og efter:**
 
 ```
-config.local.json gsbData: C:\Users\chril\Dropbox\Projects\GSB-Webapps
-Test-Path $gsbData\netlify-tool-prod\public: False
+SRC-beslutning: apps/netlify-prod/public/ (bekræftet af Chris)
 Test-Path apps\netlify-prod\public: True
 apps\netlify-prod\public\index.html: True
 apps\netlify-prod\public\senior-ungdom-tilmelding.html: True
-build3.py kørt: nej — Mål 1's krævede SRC findes ikke på den konfigurerede sti.
+python --version: Windows Store-alias, ingen Python-installation
+py --version: kommando ikke fundet
+python3 --version: Windows Store-alias, ingen Python-installation
+build3.py kørt: nej — ingen Python-interpreter på den aktuelle maskine.
 ```
-
 **Hvad blev gjort:**
 
-- Læste build3.py, `config.local.json` og den kanoniske app-kilde for at verificere den påkrævede SRC-sti.
-- Dokumenterede den konkrete konflikt i Spørgsmål med begge verificerede stier.
-
+- Hentede og flettede Chris' beslutning om den kanoniske repo-SRC ind i grenen.
+- Verificerede at begge kildefiler, som build3.py læser fra `SRC`, findes i `apps/netlify-prod/public/`.
+- Testede `python`, `py` og `python3` på den aktuelle maskine.
 **Hvad blev fravalgt og hvorfor:**
 
-- Ingen kodeændring og ingen buildkørsel: at skifte SRC til repoet ville afvige fra kortets eksplicitte `gsbData`-krav uden beslutning.
-- Ingen oprettelse eller kopiering af en Dropbox-kilde: det ville genindføre en uklar, separat kilde ved siden af det kanoniske repo.
-
+- Ingen kodeændring: Mål 2 kræver en faktisk fejlfri build, men ingen interpreter findes på maskinen.
+- Ingen Python-installation: det er maskinopsætning uden for kortets tilladte filer og er ikke antaget autoriseret.
 **Commits:** f97a8f7 (`Opgave 099: dokumentér blokerende SRC-stikonflikt`)
