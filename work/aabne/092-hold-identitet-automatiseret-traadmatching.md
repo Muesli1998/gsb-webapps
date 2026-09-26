@@ -253,3 +253,47 @@ fordi hver klump har to `grundspil`-mærkede grupper. Facitdækningen var
 fortsat 166/170, og både 089-kilden og `liga-landskab.db` havde uændret
 SHA-256 før/efter forsøget. Ingen ufærdig generator- eller outputændring er
 bevaret; afventer svar under Spørgsmål.
+
+### Resultat — Opfølgning 1 (færdig efter opgave 093)
+
+**Kontroloutput:**
+
+```
+Kørsel: node statistik/scripts/092-hold-identitet-traadmatching.mjs
+
+Kilderækker: 632
+Kanoniske sæsonknuder: 616
+Same-season-duplikatklumper kollapset: 16
+Kilderækker bevaret som ekstra kontekst: 16
+Same-season ambiguity_reviews: 0
+Cross-season ambiguity_reviews: 0
+Automatiske sæsonkanter: 507
+Tråde: 109
+
+Efterprøvning:
+  source_context-rækker: 632
+  unikke source_context-rækker: 632
+  ugyldige ikke-nabo-kanter: 0
+  089-kildehash matcher output: true
+
+Facitliste:
+  foreslået automatisk: 166/170
+  ikke foreslået: 4 (de kendte sponsornavnsskift)
+
+SHA-256 før/efter:
+  089-liga-1div-revisionstabel.json:
+  DDF63BE29D6B886CB6814C76C28D462C87B5F7EF76E56DCB116DD261A2316DC1
+  liga-landskab.db:
+  9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C
+```
+
+**Hvad blev gjort:** Efter opgave 093 slår generatoren hver kilderækkes
+`source_group_id` op læsende i `group_type_katalog`. Ved samme
+normaliserede holdidentitet og sæson bliver den ene `grundspil`-række den
+kanoniske sæsonknude. Alle ikke-grundspilsrækker bevares som
+`additional_context` med pulje, type, placering og hændelse. De 16 tidligere
+klumper er nu alle kollapset, og ingen tvetydige identiteter er tilbage.
+
+**Fravalgt:** Kataloget læses kun. Guldmatchen/Bronzematchen-fejlen og andre
+katalogrettelser er ikke berørt. Ingen sponsoraliaser er tilføjet; de fire
+kendte sponsor-navneskift forbliver manuelle.

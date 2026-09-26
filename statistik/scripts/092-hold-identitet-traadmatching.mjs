@@ -1,174 +1,144 @@
 import crypto from 'node:crypto';
 import fs from 'node:fs';
+import path from 'node:path';
+import { DatabaseSync } from 'node:sqlite';
 
 const sourcePath = 'statistik/results/089-liga-1div-revisionstabel.json';
 const referencePath = 'work/aabne/referencer/092-bekraeftede-traade.json';
 const outputPath = 'statistik/results/092-traadmatching-forslag.json';
-
 const sourceText = fs.readFileSync(sourcePath, 'utf8');
 const source = JSON.parse(sourceText);
 const reference = JSON.parse(fs.readFileSync(referencePath, 'utf8'));
+const db = new DatabaseSync(path.resolve('statistik/data/liga-landskab.db'), { readOnly: true });
 
 const seasonStart = season => Number(String(season).slice(0, 4));
 const sourceKey = row => `${row['sæson']}|${row.hold}|${row.niveau_denne_sæson}`;
-// The 089 table can contain the same team/level twice when a qualification
-// group is represented beside its source group.  Keep every source row in the
-// review output rather than silently overwriting one of them.
-const nodeId = (row, index) => `${sourceKey(row)}|${row.source_league_group_id}|${index}`;
+const nodeId = (season, identity) => `${season}|${identity}`;
 
-/**
- * The validated rule: only historical suffixes are removed.  A missing
- * numeric suffix means first team; all other final numeric suffixes remain
- * significant.  Sponsor/name changes are deliberately not aliased here.
- */
 function normalizedIdentity(teamName) {
-  const withoutMarker = String(teamName ?? '')
-    .trim()
-    .replace(/\s*\([ONM]\)\s*$/iu, '')
-    .replace(/\s+/gu, ' ')
-    .trim();
-  const match = withoutMarker.match(/^(.*?)(?:\s+(\d+))?$/u);
-  const club = match[1].trim().toLocaleLowerCase('da-DK');
-  const teamNumber = match[2] ?? '1';
-  return `${club} | ${teamNumber}`;
+  const name = String(teamName ?? '').trim().replace(/\s*\([ONM]\)\s*$/iu, '').replace(/\s+/gu, ' ').trim();
+  const match = name.match(/^(.*?)(?:\s+(\d+))?$/u);
+  return `${match[1].trim().toLocaleLowerCase('da-DK')} | ${match[2] ?? '1'}`;
 }
 
-const rows = source.rows.map((row, index) => ({
-  id: nodeId(row, index),
-  source_key: sourceKey(row),
-  source_group_id: row.source_league_group_id,
-  season: row['sæson'],
-  season_start: seasonStart(row['sæson']),
-  team: row.hold,
-  level: row.niveau_denne_sæson,
-  position: row.placering,
-  normalized_identity: normalizedIdentity(row.hold),
-}));
+// 089 is senior-only, but season remains part of the key so reused group IDs
+// cannot cross-contaminate data from another season.
+const groupTypes = new Map(db.prepare(`
+  SELECT g.season_id, g.league_group_id, g.division_name_raw, g.group_name_raw,
+         COALESCE(k.group_type, 'andet/ukendt') AS group_type
+  FROM league_groups g
+  LEFT JOIN group_type_katalog k
+    ON k.division_name_raw = COALESCE(g.division_name_raw, '')
+   AND k.group_name_raw = COALESCE(g.group_name_raw, '')
+  WHERE g.age_group_id = 1
+`).all().map(row => [`${row.season_id}|${row.league_group_id}`, row]));
+db.close();
 
+const sourceRows = source.rows.map((row, sourceRowIndex) => {
+  const start = seasonStart(row['sæson']);
+  const group = groupTypes.get(`${start}|${row.source_league_group_id}`);
+  return {
+    source_row_index: sourceRowIndex, source_key: sourceKey(row), source_group_id: row.source_league_group_id,
+    source_group_type: group?.group_type ?? 'andet/ukendt', source_division_name_raw: group?.division_name_raw ?? null,
+    source_group_name_raw: group?.group_name_raw ?? null, season: row['sæson'], season_start: start,
+    team: row.hold, level: row.niveau_denne_sæson, position: row.placering, event: row.hændelse,
+    normalized_identity: normalizedIdentity(row.hold),
+  };
+});
 const bySeasonAndIdentity = new Map();
-for (const row of rows) {
+for (const row of sourceRows) {
   const key = `${row.season_start}|${row.normalized_identity}`;
   if (!bySeasonAndIdentity.has(key)) bySeasonAndIdentity.set(key, []);
   bySeasonAndIdentity.get(key).push(row);
 }
+const contextFrom = row => ({ source_row_index: row.source_row_index, source_key: row.source_key,
+  source_group_id: row.source_group_id, source_group_type: row.source_group_type,
+  source_division_name_raw: row.source_division_name_raw, source_group_name_raw: row.source_group_name_raw,
+  position: row.position, event: row.event });
 
+const canonicalNodes = [];
+const sameSeasonReviews = [];
+for (const candidates of bySeasonAndIdentity.values()) {
+  const ground = candidates.filter(row => row.source_group_type === 'grundspil');
+  const seed = ground.length === 1 ? ground[0] : candidates.length === 1 ? candidates[0] : null;
+  const reviewReason = ground.length > 1 ? 'flere_grundspilskilder'
+    : ground.length === 0 && candidates.length > 1 ? 'flere_ikke_grundspilskilder' : null;
+  if (!seed) {
+    sameSeasonReviews.push({ season: candidates[0].season, season_start: candidates[0].season_start,
+      normalized_identity: candidates[0].normalized_identity, reason: reviewReason, source_rows: candidates.map(contextFrom) });
+    continue;
+  }
+  canonicalNodes.push({
+    id: nodeId(seed.season, seed.normalized_identity), season: seed.season, season_start: seed.season_start,
+    team: seed.team, level: seed.level, position: seed.position, normalized_identity: seed.normalized_identity,
+    canonical_source: ground.length === 1 ? 'grundspil' : 'ikke_grundspil', canonical_source_row_index: seed.source_row_index,
+    source_keys: candidates.map(row => row.source_key), source_context: candidates.map(contextFrom),
+    additional_context: candidates.filter(row => row !== seed).map(contextFrom),
+  });
+}
+
+const canonicalBySeasonAndIdentity = new Map(canonicalNodes.map(node => [`${node.season_start}|${node.normalized_identity}`, node]));
+const unresolvedKeys = new Set(sameSeasonReviews.map(review => `${review.season_start}|${review.normalized_identity}`));
 const automaticEdges = [];
-const ambiguityReviews = [];
-for (const row of rows) {
-  const next = bySeasonAndIdentity.get(`${row.season_start + 1}|${row.normalized_identity}`) ?? [];
-  const current = bySeasonAndIdentity.get(`${row.season_start}|${row.normalized_identity}`) ?? [];
-  if (next.length === 1 && current.length === 1) {
-    automaticEdges.push({
-      from_id: row.id,
-      to_id: next[0].id,
-      from_source_key: row.source_key,
-      to_source_key: next[0].source_key,
-      normalized_identity: row.normalized_identity,
-      method: 'exact_normalized_club_and_team_number',
-    });
-  } else if (next.length || current.length > 1) {
-    ambiguityReviews.push({
-      from_id: row.id,
-      season: row.season,
-      team: row.team,
-      normalized_identity: row.normalized_identity,
-      current_candidates: current.map(candidate => candidate.id),
-      next_season_candidates: next.map(candidate => candidate.id),
-      reason: next.length > 1 || current.length > 1
-        ? 'normaliseret identitet er ikke entydig i mindst én sæson'
-        : 'ingen kandidat i næste sæson',
-    });
+const ambiguityReviews = [...sameSeasonReviews];
+for (const node of canonicalNodes) {
+  const currentKey = `${node.season_start}|${node.normalized_identity}`;
+  const nextKey = `${node.season_start + 1}|${node.normalized_identity}`;
+  const next = canonicalBySeasonAndIdentity.get(nextKey);
+  if (next && !unresolvedKeys.has(currentKey) && !unresolvedKeys.has(nextKey)) {
+    automaticEdges.push({ from_id: node.id, to_id: next.id, from_source_keys: node.source_keys, to_source_keys: next.source_keys,
+      normalized_identity: node.normalized_identity, method: 'exact_normalized_club_and_team_number_after_same_season_collapse' });
+  } else if (unresolvedKeys.has(nextKey)) {
+    ambiguityReviews.push({ season: node.season, normalized_identity: node.normalized_identity,
+      reason: 'næste_sæson_har_ikke_entydig_kanonisk_kilde', source_rows: node.source_context });
   }
 }
 
 const outgoing = new Map(automaticEdges.map(edge => [edge.from_id, edge.to_id]));
 const incoming = new Set(automaticEdges.map(edge => edge.to_id));
-const rowById = new Map(rows.map(row => [row.id, row]));
+const nodeById = new Map(canonicalNodes.map(node => [node.id, node]));
 const threads = [];
 const visited = new Set();
-for (const row of rows) {
-  if (incoming.has(row.id) || visited.has(row.id)) continue;
-  const members = [];
-  let current = row;
-  while (current && !visited.has(current.id)) {
-    visited.add(current.id);
-    members.push(current);
-    current = rowById.get(outgoing.get(current.id));
-  }
-  threads.push({
-    thread_id: `auto-${String(threads.length + 1).padStart(4, '0')}`,
-    match_method: members.length > 1 ? 'exact_normalized_club_and_team_number' : 'ingen_entydig_nabo_match',
-    members,
-  });
+for (const node of canonicalNodes) {
+  if (incoming.has(node.id) || visited.has(node.id)) continue;
+  const members = []; let current = node;
+  while (current && !visited.has(current.id)) { visited.add(current.id); members.push(current); current = nodeById.get(outgoing.get(current.id)); }
+  threads.push({ thread_id: `auto-${String(threads.length + 1).padStart(4, '0')}`,
+    match_method: members.length > 1 ? 'exact_normalized_club_and_team_number_after_same_season_collapse' : 'ingen_entydig_nabo_match', members });
 }
-// This should only occur if malformed cycles somehow entered the input.
-for (const row of rows) if (!visited.has(row.id)) threads.push({
-  thread_id: `auto-${String(threads.length + 1).padStart(4, '0')}`,
-  match_method: 'cycle_or_unexpected_input_review',
-  members: [row],
-});
+for (const node of canonicalNodes) if (!visited.has(node.id)) threads.push({ thread_id: `auto-${String(threads.length + 1).padStart(4, '0')}`,
+  match_method: 'cycle_or_unexpected_input_review', members: [node] });
 
 const referenceEdges = [];
-for (const chain of reference.kaeder ?? []) {
-  for (let i = 0; i < chain.length - 1; i += 1) {
-    const from = chain[i];
-    const to = chain[i + 1];
-    referenceEdges.push({
-      from: { season: from.saeson, team: from.hold, level: from.niveau },
-      to: { season: to.saeson, team: to.hold, level: to.niveau },
-    });
-  }
+for (const chain of reference.kaeder ?? []) for (let i = 0; i < chain.length - 1; i += 1) {
+  const from = chain[i], to = chain[i + 1];
+  referenceEdges.push({ from: { season: from.saeson, team: from.hold, level: from.niveau }, to: { season: to.saeson, team: to.hold, level: to.niveau } });
 }
-const automaticEdgeSourceKeys = new Set(automaticEdges.map(edge => `${edge.from_source_key}=>${edge.to_source_key}`));
+const automaticEdgeSourceKeys = new Set(automaticEdges.flatMap(edge => edge.from_source_keys.flatMap(from => edge.to_source_keys.map(to => `${from}=>${to}`))));
 const validation = referenceEdges.map(edge => {
-  const fromId = `${edge.from.season}|${edge.from.team}|${edge.from.level}`;
-  const toId = `${edge.to.season}|${edge.to.team}|${edge.to.level}`;
-  return {
-    normalized_match: normalizedIdentity(edge.from.team) === normalizedIdentity(edge.to.team),
-    proposed_automatically: automaticEdgeSourceKeys.has(`${fromId}=>${toId}`),
-  };
+  const from = `${edge.from.season}|${edge.from.team}|${edge.from.level}`;
+  const to = `${edge.to.season}|${edge.to.team}|${edge.to.level}`;
+  return { normalized_match: normalizedIdentity(edge.from.team) === normalizedIdentity(edge.to.team), proposed_automatically: automaticEdgeSourceKeys.has(`${from}=>${to}`) };
 });
-
+const collapsedGroups = canonicalNodes.filter(node => node.source_context.length > 1);
 const output = {
   generated_at: new Date().toISOString(),
-  source: {
-    path: sourcePath,
-    sha256: crypto.createHash('sha256').update(sourceText).digest('hex'),
-    row_count: rows.length,
-    season_range: ['2010/2011', '2026/2027'],
-  },
-  matching_rule: {
-    description: 'Normalisér til klub + holdnummer; intet tal betyder 1. Fjern kun (O)/(N)/(M)-suffix. Forbind kun entydige identiteter i direkte efterfølgende sæsoner.',
-    sponsor_aliases_applied: false,
-    ambiguous_matches_are_automatic: false,
-  },
-  validation_against_confirmed_threads: {
-    reference_thread_count: reference.antal_traade,
-    reference_edge_count: referenceEdges.length,
+  source: { path: sourcePath, sha256: crypto.createHash('sha256').update(sourceText).digest('hex'), row_count: sourceRows.length, season_range: ['2010/2011', '2026/2027'] },
+  matching_rule: { description: 'Normalisér til klub + holdnummer; intet tal betyder 1. Fjern kun (O)/(N)/(M)-suffix. Kollapsér kilder i samme sæson til én knude ved at foretrække group_type_katalog=grundspil. Forbind derefter kun entydige identiteter i direkte efterfølgende sæsoner.', sponsor_aliases_applied: false, ambiguous_matches_are_automatic: false },
+  validation_against_confirmed_threads: { reference_thread_count: reference.antal_traade, reference_edge_count: referenceEdges.length,
     normalized_rule_matches: validation.filter(result => result.normalized_match).length,
     proposed_automatically: validation.filter(result => result.proposed_automatically).length,
-    unmatched_reference_edges: validation.filter(result => !result.proposed_automatically).length,
-  },
-  summary: {
-    source_rows: rows.length,
-    automatic_edge_count: automaticEdges.length,
-    thread_count: threads.length,
+    unmatched_reference_edges: validation.filter(result => !result.proposed_automatically).length },
+  summary: { source_rows: sourceRows.length, canonical_season_nodes: canonicalNodes.length,
+    same_season_duplicate_collapses: collapsedGroups.length, collapsed_source_rows: collapsedGroups.reduce((count, node) => count + node.additional_context.length, 0),
+    same_season_ambiguity_count: sameSeasonReviews.length, cross_season_ambiguity_count: ambiguityReviews.length - sameSeasonReviews.length,
+    automatic_edge_count: automaticEdges.length, thread_count: threads.length,
     multi_member_thread_count: threads.filter(thread => thread.members.length > 1).length,
-    standalone_row_count: threads.filter(thread => thread.members.length === 1).length,
-    ambiguity_review_count: ambiguityReviews.length,
-  },
-  threads,
-  automatic_edges: automaticEdges,
-  ambiguity_reviews: ambiguityReviews,
+    standalone_node_count: threads.filter(thread => thread.members.length === 1).length },
+  threads, automatic_edges: automaticEdges, ambiguity_reviews: ambiguityReviews,
 };
-
 fs.writeFileSync(outputPath, `${JSON.stringify(output, null, 2)}\n`);
-console.log(JSON.stringify({
-  source_rows: output.summary.source_rows,
-  automatic_edges: output.summary.automatic_edge_count,
-  threads: output.summary.thread_count,
-  multi_member_threads: output.summary.multi_member_thread_count,
-  standalone_rows: output.summary.standalone_row_count,
-  ambiguity_reviews: output.summary.ambiguity_review_count,
-  validation: output.validation_against_confirmed_threads,
-}, null, 2));
+console.log(JSON.stringify({ source_rows: output.summary.source_rows, canonical_season_nodes: output.summary.canonical_season_nodes,
+  same_season_duplicate_collapses: output.summary.same_season_duplicate_collapses, collapsed_source_rows: output.summary.collapsed_source_rows,
+  same_season_ambiguities: output.summary.same_season_ambiguity_count, cross_season_ambiguities: output.summary.cross_season_ambiguity_count,
+  automatic_edges: output.summary.automatic_edge_count, threads: output.summary.thread_count, validation: output.validation_against_confirmed_threads }, null, 2));
