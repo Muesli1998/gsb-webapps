@@ -112,7 +112,20 @@ lagt sammen med et andet hold osv.) uden at kunne pege på konkret evidens.
 
 ## Spørgsmål
 
-(Ingen ved oprettelse.)
+**Stop 2026-09-26 — GSB hold 4:** Efter en konkret parserrettelse for
+`KS-Pulje 2`/`KS Serie P1` og `Serie 1`-formatet er der ét tilbageværende
+internt brud: GSB hold 4 ses i 2015/16 (`4. Serie P1`) og igen fra 2023/24
+(`Serie 31`) til 2026/27, men ikke i de syv mellemliggende sæsoner i den
+kombinerede DH- og København-population. Den rå, region-8-afgrænsede
+forespørgsel gav heller ingen GSB hold 4-række i 2016/17–2022/23. Er det en
+ægte periode uden et GSB hold 4, eller skal holdet knyttes til et andet
+holdnummer/navn? Kilden giver ikke evidens for hvilken, så matchingen er ikke
+udvidet med en antagelse.
+
+To same-season tilfælde er også bevaret som uklarheder i rapporten: GSB hold
+5 i 2015/16 (`30. serie` vs. `5. serie P1`, hvor den ene er `udgået`) og GSB
+hold 4 i 2016/17 (`4. Serie P2` vs. `30. Serie P1`, `udgået`/`trukket`). De
+vælges ikke automatisk som kanoniske kilder.
 
 ## Tilbagefald
 
@@ -123,11 +136,52 @@ lagt sammen med et andet hold osv.) uden at kunne pege på konkret evidens.
 **Kontroloutput — før og efter:**
 
 ```
-(indsæt det faktiske output, ikke en beskrivelse af det)
+København-mapping: region_id=8, age_group_id=1, kun grundspil.
+København-kilder efter mapping: 1.301
+DH-kilder fra uændret 089-output: 2.206
+Kanoniske sæsonknuder: 3.475
+Automatiske nabosæson-kanter: 2.920
+Samme-sæson ambiguity reviews: 16
+
+GSB seniorhold: DH + København
+  tråde: 7
+  sammenhængende mellem observerede sæsoner: 6
+  tråde med internt brud: 1
+  flaggede brud uden årsagsgæt: 1
+  same-season-uklarheder: 2
+  automatiske DH↔København-overgange: 2
+
+092 DH-baseline læst, ikke ændret: 166/170 automatiske facitkanter,
+2.206 kilder.
+Kredsserien Vest/Bornholmsserien i mapping: 0/0
+
+gsb-statistik-normalized.db SHA-256 før/efter:
+49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E
+49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E
+liga-landskab.db SHA-256 før/efter:
+9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C
+9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C
 ```
 
 **Hvad blev gjort:**
 
+- Tilføjede en selvstændig, versioneret København-parser i
+  `101-koebenhavn-traadmatching.mjs` og beholdt 089/092's DH-output som
+  uændret input.
+- Kortlagde KS-familien (2011/12–2017/18), KBH Serien (2018/19–2021/22),
+  Københavnsserien (2022/23–2026/27) og nummererede Serie-rækker uden at
+  antage deres indbyrdes styrke.
+- Rettede under kørslen en konkret parserfejl, der først udelukkede
+  `KS-Pulje 2`/`KS Serie P1` og `Serie 1`-formen. Den rettede kørsel fjerner
+  to kunstige GSB-brud.
+- Dokumenterede de to direkte, automatiske GSB-overgange mellem København og
+  Danmarksserien, og det ene resterende brud med rå kildekontekst.
+
 **Hvad blev fravalgt og hvorfor:**
 
-**Commits:**
+- Ingen ændring til `group_type_katalog`, databaser, Kredsserien Vest,
+  Bornholmsserien eller andre regioner.
+- Ingen automatisk løsning af GSB hold 4's syv sæsoners fravær eller de to
+  same-season-uklarheder: deres årsag kan ikke afgøres af den gemte evidens.
+
+**Commits:** afventer stop-commit på `arbejde/101-koebenhavn-traadmatching-gsb-facit`.
