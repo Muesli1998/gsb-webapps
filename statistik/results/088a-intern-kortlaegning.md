@@ -1,6 +1,6 @@
 # Opgave 088a — intern kortlægning
 
-Genereret 2026-09-24T13:50:26.566Z. Kun læsning af allerede hentet data; ingen API-kald eller websøgning.
+Genereret 2026-09-25T17:01:06.010Z. Kun læsning af allerede hentet data; ingen API-kald eller websøgning.
 
 ## 1. ID-jagt
 
@@ -20,8 +20,8 @@ Kun ShowStanding-side-3’s leagueGroupTeamID ses systematisk i det repræsentat
 
 | Type | Puljeforekomster |
 |---|---:|
-| grundspil | 13341 |
-| andet/ukendt | 1757 |
+| grundspil | 13305 |
+| andet/ukendt | 1793 |
 | nedrykningsspil | 306 |
 | slutspil | 2920 |
 | oprykningsspil | 160 |
@@ -564,7 +564,7 @@ Kun ShowStanding-side-3’s leagueGroupTeamID ses systematisk i det repræsentat
 | DMU Hold U17 4+3 | Pulje 2 | grundspil | 4 | 2017–2018 | 2 | navneord: grundspil/pulje |
 | Kredsmatch BADKBH-BADSJ&#198; U17 | Pulje 1 | grundspil | 4 | 2017–2018 | 2 | navneord: grundspil/pulje |
 | DM EFTERSKOLER 4 Spillere B | Finale | slutspil | 4 | 2017–2018 | 2 | navneord: slutspil |
-| Kval - 5+3 | Pulje 1 | grundspil | 4 | 2017–2020 | 2 | navneord: grundspil/pulje |
+| Kval - 5+3 | Pulje 1 | andet/ukendt | 4 | 2017–2020 | 2 | kvalifikation uden retning |
 | 40+ 5. Serie | Pulje 1 | grundspil | 4 | 2017–2020 | 1 | navneord: grundspil/pulje |
 | 50+ 6. Serie | Pulje 1 | grundspil | 4 | 2017–2020 | 1 | navneord: grundspil/pulje |
 | 50+ 5. Serie | Pulje 1 | grundspil | 4 | 2017–2020 | 1 | navneord: grundspil/pulje |
@@ -1116,7 +1116,7 @@ Kun ShowStanding-side-3’s leagueGroupTeamID ses systematisk i det repræsentat
 | Badmintonligaen | Medaljeslutspil A | slutspil | 2 | 2012–2013 | 1 | navneord: slutspil |
 | Badmintonligaen | Medaljeslutspil B | slutspil | 2 | 2012–2013 | 1 | navneord: slutspil |
 | Badmintonligaen | Ligakvalifikationsspillet | andet/ukendt | 2 | 2012–2013 | 1 | kvalifikation uden retning |
-| 2. division | Kval. til 1. div. | grundspil | 2 | 2012–2013 | 1 | navneord: grundspil/pulje |
+| 2. division | Kval. til 1. div. | andet/ukendt | 2 | 2012–2013 | 1 | kvalifikation uden retning |
 | Jyllandsserien | Pulje 1 | grundspil | 2 | 2012–2013 | 1 | navneord: grundspil/pulje |
 | Jyllandsserien | Pulje 2 | grundspil | 2 | 2012–2013 | 1 | navneord: grundspil/pulje |
 | Jyllandsserien | Pulje 3 | grundspil | 2 | 2012–2013 | 1 | navneord: grundspil/pulje |
@@ -3709,23 +3709,23 @@ Kun ShowStanding-side-3’s leagueGroupTeamID ses systematisk i det repræsentat
 | U11 - 3000 - 4 spillere | Pulje 5 | grundspil | 2 | 2020–2020 | 4 | navneord: grundspil/pulje |
 | DMU H 6000 - 4 spillere | Bronzekamp | slutspil | 2 | 2020–2020 | 2 | navneord: slutspil |
 | DMU H 6000 - 4 spillere | Finale | slutspil | 2 | 2020–2020 | 2 | navneord: slutspil |
-| DMU H 6000 - 4 spillere | Kvalpulje A | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
-| DMU H 6000 - 4 spillere | Kvalpulje B | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
+| DMU H 6000 - 4 spillere | Kvalpulje A | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
+| DMU H 6000 - 4 spillere | Kvalpulje B | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
 | DMU H 6000 - 4 spillere | Pulje 2 | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
-| DMU H 5200 - 4 spillere | Kvalpulje A | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
-| DMU H 5200 - 4 spillere | Kvalpulje B | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
-| DMU H 5200 - 4 spillere | Kvalpulje C | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
+| DMU H 5200 - 4 spillere | Kvalpulje A | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
+| DMU H 5200 - 4 spillere | Kvalpulje B | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
+| DMU H 5200 - 4 spillere | Kvalpulje C | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
 | DMU H 4400 - 4 spillere | Bronzekamp | slutspil | 2 | 2020–2020 | 2 | navneord: slutspil |
 | DMU H 4400 - 4 spillere | Finale | slutspil | 2 | 2020–2020 | 2 | navneord: slutspil |
-| DMU H 4400 - 4 spillere | Kvalkamp A | andet/ukendt | 2 | 2020–2020 | 2 | ingen sikker nøgle |
-| DMU H 4400 - 4 spillere | Kvalkamp B | andet/ukendt | 2 | 2020–2020 | 2 | ingen sikker nøgle |
+| DMU H 4400 - 4 spillere | Kvalkamp A | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
+| DMU H 4400 - 4 spillere | Kvalkamp B | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
 | DMU H 4400 - 4 spillere | Pulje 2 | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
-| DMU H 3800 - 4 spillere | Kvalkamp A | andet/ukendt | 2 | 2020–2020 | 2 | ingen sikker nøgle |
-| DMU H 3800 - 4 spillere | Kvalkamp B | andet/ukendt | 2 | 2020–2020 | 2 | ingen sikker nøgle |
-| DMU H 3800 - 4 spillere | Kvalkamp C | andet/ukendt | 2 | 2020–2020 | 2 | ingen sikker nøgle |
-| DMU H 3800 - 4 spillere | Kvalkamp D | andet/ukendt | 2 | 2020–2020 | 2 | ingen sikker nøgle |
-| DMU H 3800 - 4 spillere | Kvalkamp E | andet/ukendt | 2 | 2020–2020 | 2 | ingen sikker nøgle |
-| DMU H 3400 - 4 spillere | Kvalkamp A | andet/ukendt | 2 | 2020–2020 | 2 | ingen sikker nøgle |
+| DMU H 3800 - 4 spillere | Kvalkamp A | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
+| DMU H 3800 - 4 spillere | Kvalkamp B | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
+| DMU H 3800 - 4 spillere | Kvalkamp C | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
+| DMU H 3800 - 4 spillere | Kvalkamp D | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
+| DMU H 3800 - 4 spillere | Kvalkamp E | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
+| DMU H 3400 - 4 spillere | Kvalkamp A | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
 | DMU H 3200 - 4 piger | Pulje 1 | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
 | U13 - 3200 (4 piger) | Pulje 1301 - CE | grundspil | 2 | 2020–2020 | 11 | navneord: grundspil/pulje |
 | U13 - 3200 (4 piger) | Pulje 1302 - CV | grundspil | 2 | 2020–2020 | 11 | navneord: grundspil/pulje |
@@ -3779,40 +3779,40 @@ Kun ShowStanding-side-3’s leagueGroupTeamID ses systematisk i det repræsentat
 | DMU H 4+2 12t | Pulje 1 | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
 | DMU H 7600 - 4 spillere | Bronzekamp | slutspil | 2 | 2020–2020 | 2 | navneord: slutspil |
 | DMU H 7600 - 4 spillere | Finale | slutspil | 2 | 2020–2020 | 2 | navneord: slutspil |
-| DMU H 7600 - 4 spillere | Kvalpulje A | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
+| DMU H 7600 - 4 spillere | Kvalpulje A | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
 | DMU H 7600 - 4 spillere | Pulje 1 | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
 | DMU H 7600 - 4 spillere | Pulje 2 | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
 | DMU H 6400 - 4 spillere | Bronzekamp | slutspil | 2 | 2020–2020 | 2 | navneord: slutspil |
 | DMU H 6400 - 4 spillere | Finale | slutspil | 2 | 2020–2020 | 2 | navneord: slutspil |
-| DMU H 6400 - 4 spillere | Kvalpulje A | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
-| DMU H 6400 - 4 spillere | Kvalpulje B | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
+| DMU H 6400 - 4 spillere | Kvalpulje A | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
+| DMU H 6400 - 4 spillere | Kvalpulje B | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
 | DMU H 6400 - 4 spillere | Pulje 1 | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
 | DMU H 6400 - 4 spillere | Pulje 2 | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
 | DMU H 5600 - 4 spillere | Bronzekamp | slutspil | 2 | 2020–2020 | 2 | navneord: slutspil |
 | DMU H 5600 - 4 spillere | Finale | slutspil | 2 | 2020–2020 | 2 | navneord: slutspil |
-| DMU H 5600 - 4 spillere | Kvalkamp B | andet/ukendt | 2 | 2020–2020 | 2 | ingen sikker nøgle |
-| DMU H 5600 - 4 spillere | Kvalkamp C | andet/ukendt | 2 | 2020–2020 | 2 | ingen sikker nøgle |
-| DMU H 5600 - 4 spillere | Kvalkamp D | andet/ukendt | 2 | 2020–2020 | 2 | ingen sikker nøgle |
-| DMU H 5600 - 4 spillere | Kvalkamp E | andet/ukendt | 2 | 2020–2020 | 2 | ingen sikker nøgle |
-| DMU H 5600 - 4 spillere | Kvalpulje A | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
+| DMU H 5600 - 4 spillere | Kvalkamp B | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
+| DMU H 5600 - 4 spillere | Kvalkamp C | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
+| DMU H 5600 - 4 spillere | Kvalkamp D | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
+| DMU H 5600 - 4 spillere | Kvalkamp E | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
+| DMU H 5600 - 4 spillere | Kvalpulje A | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
 | DMU H 5600 - 4 spillere | Pulje 1 | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
 | DMU H 5600 - 4 spillere | Pulje 2 | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
 | DMU H 4800 - 4 spillere | Bronzekamp | slutspil | 2 | 2020–2020 | 2 | navneord: slutspil |
 | DMU H 4800 - 4 spillere | Finale | slutspil | 2 | 2020–2020 | 2 | navneord: slutspil |
-| DMU H 4800 - 4 spillere | Kvalkamp C | andet/ukendt | 2 | 2020–2020 | 2 | ingen sikker nøgle |
-| DMU H 4800 - 4 spillere | Kvalkamp D | andet/ukendt | 2 | 2020–2020 | 2 | ingen sikker nøgle |
-| DMU H 4800 - 4 spillere | Kvalkamp E | andet/ukendt | 2 | 2020–2020 | 2 | ingen sikker nøgle |
-| DMU H 4800 - 4 spillere | Kvalkamp F | andet/ukendt | 2 | 2020–2020 | 2 | ingen sikker nøgle |
-| DMU H 4800 - 4 spillere | Kvalpulje A | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
-| DMU H 4800 - 4 spillere | Kvalpulje G | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
+| DMU H 4800 - 4 spillere | Kvalkamp C | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
+| DMU H 4800 - 4 spillere | Kvalkamp D | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
+| DMU H 4800 - 4 spillere | Kvalkamp E | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
+| DMU H 4800 - 4 spillere | Kvalkamp F | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
+| DMU H 4800 - 4 spillere | Kvalpulje A | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
+| DMU H 4800 - 4 spillere | Kvalpulje G | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
 | DMU H 4800 - 4 spillere | Pulje 1 | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
 | DMU H 4800 - 4 spillere | Pulje 2 | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
 | DMU H 4200 - 4 spillere | Bronzekamp | slutspil | 2 | 2020–2020 | 2 | navneord: slutspil |
 | DMU H 4200 - 4 spillere | Finale | slutspil | 2 | 2020–2020 | 2 | navneord: slutspil |
-| DMU H 4200 - 4 spillere | Kvalkamp A | andet/ukendt | 2 | 2020–2020 | 2 | ingen sikker nøgle |
-| DMU H 4200 - 4 spillere | Kvalkamp B | andet/ukendt | 2 | 2020–2020 | 2 | ingen sikker nøgle |
-| DMU H 4200 - 4 spillere | Kvalkamp C | andet/ukendt | 2 | 2020–2020 | 2 | ingen sikker nøgle |
-| DMU H 4200 - 4 spillere | Kvalpulje D | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
+| DMU H 4200 - 4 spillere | Kvalkamp A | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
+| DMU H 4200 - 4 spillere | Kvalkamp B | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
+| DMU H 4200 - 4 spillere | Kvalkamp C | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
+| DMU H 4200 - 4 spillere | Kvalpulje D | andet/ukendt | 2 | 2020–2020 | 2 | kvalifikation uden retning |
 | DMU H 4200 - 4 spillere | Pulje 1 | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
 | DMU H 4200 - 4 spillere | Pulje 2 | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
 | DMU H 4200 - 4 piger | Pulje 1 | grundspil | 2 | 2020–2020 | 2 | navneord: grundspil/pulje |
@@ -4373,7 +4373,7 @@ Kun ShowStanding-side-3’s leagueGroupTeamID ses systematisk i det repræsentat
 | Senior motion A doubler (4 spillere) | Pulje 601 (S&#216;N - BL) | grundspil | 2 | 2021–2022 | 9 | navneord: grundspil/pulje |
 | Senior motion B doubler (4 spillere) | Pulje 602 (S&#216;N - BL) | grundspil | 2 | 2021–2022 | 9 | navneord: grundspil/pulje |
 | Senior motion D doubler (4 spillere) | Pulje 604 (S&#216;N - BL) | grundspil | 2 | 2021–2022 | 9 | navneord: grundspil/pulje |
-| Kval-rækken 5+3 | Pulje 1 | grundspil | 2 | 2021–2025 | 2 | navneord: grundspil/pulje |
+| Kval-rækken 5+3 | Pulje 1 | andet/ukendt | 2 | 2021–2025 | 2 | kvalifikation uden retning |
 | SEN+40 1. Serie | Pulje 1 | grundspil | 2 | 2021–2022 | 1 | navneord: grundspil/pulje |
 | SEN+40 4. Serie | Pulje 1 | grundspil | 2 | 2021–2022 | 1 | navneord: grundspil/pulje |
 | SEN+40 20. Serie | Pulje 1 | grundspil | 2 | 2021–2022 | 1 | navneord: grundspil/pulje |
@@ -6957,7 +6957,7 @@ Kun ShowStanding-side-3’s leagueGroupTeamID ses systematisk i det repræsentat
 | LM 4H B | Mot 4H B1 | andet/ukendt | 1 | 2013–2013 | 15 | ingen sikker nøgle |
 | LM 4H B | Mot 4H B2 | andet/ukendt | 1 | 2013–2013 | 15 | ingen sikker nøgle |
 | LM 4H C | Mot 4H C | andet/ukendt | 1 | 2013–2013 | 14 | ingen sikker nøgle |
-| Kval. til 1. division | Kval. til 1. div. | grundspil | 1 | 2014–2014 | 1 | navneord: grundspil/pulje |
+| Kval. til 1. division | Kval. til 1. div. | andet/ukendt | 1 | 2014–2014 | 1 | kvalifikation uden retning |
 | 2. division nedrykning | Nedrykning | nedrykningsspil | 1 | 2014–2014 | 1 | navneord: nedrykning |
 | Kredsserien Vest kvalifikation til DS (runde 12) | Kvalifikationskamp 13 | andet/ukendt | 1 | 2014–2014 | 1 | kvalifikation uden retning |
 | Kredsserien Vest kvalifikation til DS (runde 12) | Kvalifikationskamp 14 | andet/ukendt | 1 | 2014–2014 | 1 | kvalifikation uden retning |
@@ -7134,7 +7134,7 @@ Kun ShowStanding-side-3’s leagueGroupTeamID ses systematisk i det repræsentat
 | &#216;st-Mot(x-mot) 4 Herrer C-række | Pulje 126 | grundspil | 1 | 2014–2014 | 2 | navneord: grundspil/pulje |
 | &#216;st-Mot(x-mot) 4 Damer M-A række | Pulje 127 | grundspil | 1 | 2014–2014 | 2 | navneord: grundspil/pulje |
 | &#216;st-Mot(x-mot) 4 Damer B-C række | Pulje 128 | grundspil | 1 | 2014–2014 | 2 | navneord: grundspil/pulje |
-| 2. division | Kval. til 1. division | grundspil | 1 | 2015–2015 | 1 | navneord: grundspil/pulje |
+| 2. division | Kval. til 1. division | andet/ukendt | 1 | 2015–2015 | 1 | kvalifikation uden retning |
 | 2. division | 2. division nedrykning | nedrykningsspil | 1 | 2015–2015 | 1 | navneord: nedrykning |
 | 2.division | Pulje 1 | grundspil | 1 | 2015–2015 | 1 | navneord: grundspil/pulje |
 | 2.division | Pulje 2 | grundspil | 1 | 2015–2015 | 1 | navneord: grundspil/pulje |
@@ -8333,7 +8333,7 @@ Kun ShowStanding-side-3’s leagueGroupTeamID ses systematisk i det repræsentat
 | DM HOLD (MOT) 4+2 | Pulje 1 | grundspil | 1 | 2022–2022 | 2 | navneord: grundspil/pulje |
 | DM HOLD (MOT) 4+2 | Pulje 2 | grundspil | 1 | 2022–2022 | 2 | navneord: grundspil/pulje |
 | DM HOLD (MOT) 2+2 | Pulje 1 | grundspil | 1 | 2022–2022 | 2 | navneord: grundspil/pulje |
-| Kredsserien Vest | Kvalkamp | grundspil | 1 | 2022–2022 | 4 | navneord: grundspil/pulje |
+| Kredsserien Vest | Kvalkamp | andet/ukendt | 1 | 2022–2022 | 4 | kvalifikation uden retning |
 | Kredsserien Vest | Nedrykning til serie 1, pulje 1 | nedrykningsspil | 1 | 2022–2022 | 4 | navneord: nedrykning |
 | Kredsserien Vest | Nedrykning til serie 1, pulje 2 | nedrykningsspil | 1 | 2022–2022 | 4 | navneord: nedrykning |
 | Kredsserien Vest | Oprykning til Danmarksserien, pulje 1 | oprykningsspil | 1 | 2022–2022 | 4 | navneord: oprykning |
@@ -8406,7 +8406,7 @@ Kun ShowStanding-side-3’s leagueGroupTeamID ses systematisk i det repræsentat
 | Holdturneringsdag - Voksne let øvet | Pulje 1 | grundspil | 1 | 2022–2022 | 1 | navneord: grundspil/pulje |
 | Serie A & B - Single + Double | Pulje 1 | grundspil | 1 | 2022–2022 | 1 | navneord: grundspil/pulje |
 | Holdturneringsdag - Voksne let øvet | Pulje 2 | grundspil | 1 | 2022–2022 | 1 | navneord: grundspil/pulje |
-| Kval-rækken 5 + 3 | Pulje 1 | grundspil | 1 | 2022–2022 | 2 | navneord: grundspil/pulje |
+| Kval-rækken 5 + 3 | Pulje 1 | andet/ukendt | 1 | 2022–2022 | 2 | kvalifikation uden retning |
 | SEN 4 + 2 B | Slutspil-nedre | slutspil | 1 | 2022–2022 | 2 | navneord: slutspil |
 | SEN 4 + 2 B | Slutspil-øvre | slutspil | 1 | 2022–2022 | 2 | navneord: slutspil |
 | SEN Hr - B | Vinder finale | slutspil | 1 | 2022–2022 | 2 | navneord: slutspil |
@@ -8991,6 +8991,7 @@ Kun ShowStanding-side-3’s leagueGroupTeamID ses systematisk i det repræsentat
 | DMU Hold B 4 Spillere | 9. - 12. plads | 4 | ingen sikker nøgle |
 | DMU Hold U17 4+3 | 5. - 6. plads | 4 | ingen sikker nøgle |
 | DMU Hold U17 4+3 | 7. - 8. plads | 4 | ingen sikker nøgle |
+| Kval - 5+3 | Pulje 1 | 4 | kvalifikation uden retning |
 | DMU Hold U11 4+2 | 5. - 6. plads | 4 | ingen sikker nøgle |
 | Veteran A | Veteran A | 3 | ingen sikker nøgle |
 | Kvalifikation til 3. division | Pulje A vest | 3 | kvalifikation uden retning |
@@ -9043,6 +9044,7 @@ Kun ShowStanding-side-3’s leagueGroupTeamID ses systematisk i det repræsentat
 | U15H | U15 H | 2 | ingen sikker nøgle |
 | U17B | U17B | 2 | ingen sikker nøgle |
 | Badmintonligaen | Ligakvalifikationsspillet | 2 | kvalifikation uden retning |
+| 2. division | Kval. til 1. div. | 2 | kvalifikation uden retning |
 | LM U11 4 SPILLERE | U 11 A | 2 | ingen sikker nøgle |
 | LM U11 4 SPILLERE | U 11 B 1 | 2 | ingen sikker nøgle |
 | LM U11 4 SPILLERE | U 11 B 2 | 2 | ingen sikker nøgle |
@@ -9061,8 +9063,6 @@ Kun ShowStanding-side-3’s leagueGroupTeamID ses systematisk i det repræsentat
 | LM U13 4 SPILLERE | C2 | 2 | ingen sikker nøgle |
 | LM U13 4 SPILLERE | C3 | 2 | ingen sikker nøgle |
 | LM U13 4 SPILLERE | D1 | 2 | ingen sikker nøgle |
-| LM U13 4 SPILLERE | D2 | 2 | ingen sikker nøgle |
-| LM U13 4 SPILLERE | M | 2 | ingen sikker nøgle |
 
 ## 3. Dækningsmatrix og brud
 
@@ -9272,25 +9272,3 @@ Den interne tekstafgrænsning fandt nedenstående kandidater. Kortet angiver ikk
 - Stabilt, tværsæson-klub-ID: **nej fundet i dette udsnit**.
 - Gruppetyper: kataloget er komplet for `league_groups`; uklare navne er bevaret som `andet/ukendt`.
 - Roskilde/Gentofte: kræver de konkrete sæson-/puljehenvisninger for en ikke-gættet testcase.
-
-## Tilføjelse: konkrete Roskilde- og Gentofte-testcases (2026-09-24)
-
-### Roskilde — dokumenteret forløb, men ikke regelårsag
-
-| Led | Pulje | Fund |
-|---|---|---|
-| Nedrykningsspil | `17913` | Badminton Roskilde nr. 4: 4 kampe, 2 sejre, score 31-21, sæt 70-48, 79 point. |
-| Kvalkamp | `17915` | Roskilde slog Dalum Hjallese 7-6, kamp `505717`, 18-04-2026. |
-
-Ingen statusmarkør (`trukket`, `udgået`, `W/O`) blev fundet i de to gemte HTML-svar. Data dokumenterer dermed forløbet, men ikke den regel der sendte nr. 4 i kvalkamp. Det går til 088b/088c som et åbent, dokumenteret spørgsmål.
-
-### Gentofte — cap-filterets observerbare udfald
-
-| Niveau | Pulje | Hold og placering | Observeret betydning |
-|---|---|---|---|
-| Liga | `17880` | Gentofte nr. 5 | G1 forblev over G3. |
-| 1. division, nedrykning | `17890` | Gentofte 2 nr. 3 | G2 forblev over G3. |
-| 2. division, kvalifikation | `17894` | Gentofte 3 nr. 3 | G3 blev ikke ført videre. |
-| 1. division, kvalkampe | `17891` | Lyngby nr. 4 i 17894 deltog; Gentofte 3 gjorde ikke | Matcher Christoffers cap-forklaring. |
-
-Dette er adfærdsmæssig validering af filterets konkrete udfald, ikke et selvstændigt bevis for alle regelparametre. Kvalkampene blev ifølge Christoffers procesoplysning afgjort efter de ordinære slutspil; i denne testcase sluttede de viste puljespil 21.-23. marts og kvalkampene blev spillet 18. april 2026.

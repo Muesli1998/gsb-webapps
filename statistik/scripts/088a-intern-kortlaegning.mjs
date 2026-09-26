@@ -12,7 +12,10 @@ const norm = (s) => String(s ?? '').toLowerCase().replace(/\s+/g, ' ').trim();
 function classify(division, group) {
   const s = norm(`${division ?? ''} ${group ?? ''}`);
   if (!s) return ['andet/ukendt', 'tomt navn'];
-  if (/(kvalifikation|kvalkampe)/.test(s)) {
+  // Accept the source's abbreviated qualifier forms before the broad
+  // pulje/division fallback. A bare "kval" without an unambiguous direction
+  // deliberately remains andet/ukendt in the existing branch below.
+  if (/(kvalifikation|kvalkampe|\bkval(?:\.|pulje|kamp|-rækken|\b))/.test(s)) {
     if (/(ned|nr\.?\s*8\s*[-–]\s*9|bevare)/.test(s)) return ['kvalifikation_ned', 'navneord: kvalifikation + ned'];
     if (/(op|liga\/1\.\s*division|til ligaen|opr)/.test(s)) return ['kvalifikation_op', 'navneord: kvalifikation + op'];
     return ['andet/ukendt', 'kvalifikation uden retning'];
