@@ -81,7 +81,7 @@ regler der ikke allerede fremgår af hvordan repoet faktisk er organiseret.
 
 ## Spørgsmål
 
-(Ingen ved oprettelse.)
+Ingen åbne spørgsmål. Den gamle `tools/setup-git-gsb.ps1` indeholder historiske Dropbox-repoer og bruges derfor ikke som aktuel opsætningsvej i guiden.
 
 ## Tilbagefald
 
@@ -92,11 +92,21 @@ regler der ikke allerede fremgår af hvordan repoet faktisk er organiseret.
 **Kontroloutput — før og efter:**
 
 ```
-(indsæt det faktiske output, ikke en beskrivelse af det)
+docs/struktur-guide.md: findes
+Guideafsnit: 3 (placering, maskinopsætning, daglig arbejdsgang)
+Ændrede filer: docs/struktur-guide.md og dette opgavekort
+AGENTS.md: 0 ændrede linjer
+Øvrige eksisterende dokumenter: 0 ændrede filer
 ```
 
 **Hvad blev gjort:**
 
+- Skrev en guide med eksisterende mapper som konkrete eksempler og et beslutningskriterium for selvstændige delprojekter.
+- Tilføjede en afprøvelig maskintjekliste for klon, lokal konfiguration, Node/Python, statistikafhængigheder og syntakstjek.
+
 **Hvad blev fravalgt og hvorfor:**
+
+- AGENTS.md er ikke ændret; guiden kan findes direkte under `docs/` uden at udvide den centrale instruks.
+- Det gamle setup-script beskrives ikke som aktiv metode, fordi det indeholder historiske stier og repoer.
 
 **Commits:**
