@@ -377,3 +377,22 @@ nogen midt i en træning, ikke en rapport ingen læser med det samme.
 **Fravalgt:** at lade "oplagte" rettelser passere som en del af en
 testopgave, eller at lade én tidligere godkendelse gælde for fremtidige
 ændringer.
+
+
+## 2026-09-26 — Prioritetsreglen for Statistik blødgjort til en status, ikke en spærre
+
+**Besluttet:** "Statistik har førsteprioritet, alt andet venter" erstattes af
+"Statistik er det Chris pt. arbejder på". Andre opgaver (Kampsystem,
+Dream Team, dokumentoprydning m.m.) må oprettes og løses sideløbende når
+Chris beslutter det — et kort i `work/aabne/` er i sig selv beslutningen,
+uanset hvilket projekt det hører til.
+
+**Hvorfor:** Den oprindelige regel var tænkt som midlertidig fokusering
+mens statistikprojektet var i gang, ikke en permanent begrænsning. Den
+blev opdaget som friktion da tre reelle, uafklarede punkter (fejl i
+`docs/preview-vs-live-status.md`, `kampsystem/build3.py`s hårdkodede
+stier, manglende strukturguide) blev fundet under en dokumentoprydning og
+ikke kunne oprettes som opgaver uden først at ændre reglen.
+
+**Fravalgt:** at fjerne linjen helt uden erstatning — det er stadig
+nyttigt at kunne se hvad hovedfokus er, bare uden at det blokerer andet.

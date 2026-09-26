@@ -180,15 +180,18 @@ Chris rent faktisk skifter værktøj.
 
 ---
 
-## Prioritet
+## Arbejder pt. på (besluttet 2026-09-26, erstatter tidligere hård prioritetsregel)
 
-**Statistik har førsteprioritet indtil den har nået Prod Push.** Alt andet
-venter. Det gælder også gode idéer der dukker op undervejs — de hører i
-idébankerne, ikke i opgavekøen.
+**Statistik er det Chris aktivt arbejder på lige nu.** Det er en status,
+ikke en spærre — andre opgaver må godt oprettes og løses sideløbende, hvis
+Chris beslutter det (se "Opgavekøen": et kort i `work/aabne/` er allerede
+per definition besluttet). Formålet med denne linje er at gøre det
+gennemsigtigt hvad hovedfokus er lige nu, ikke at forhindre andet arbejde.
 
-Undtagelsen er snæver med vilje: kun noget der taber data, noget der er
-i stykker i produktion, eller noget der direkte blokerer statistik, må
-springe køen. Alt andet venter, uanset hvor rigtigt det lyder i øjeblikket.
+Gode idéer der dukker op undervejs hører stadig som udgangspunkt i
+idébankerne eller `work/future/`, ikke automatisk i `work/aabne/` — men det
+er fordi de endnu ikke er besluttet, ikke fordi de er nedprioriteret på
+forhånd.
 
 ---
 
