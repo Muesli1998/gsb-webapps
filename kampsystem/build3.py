@@ -1,31 +1,77 @@
-import re, base64, json, os
+import re, base64, csv, io, json, os
+from pathlib import Path
 
-SRC = "/mnt/user-data/uploads/Dropbox/netlify-tool-prod/public"
-OUT = "/home/claude/gsb-preview"
+SCRIPT_DIR = Path(__file__).resolve().parent
+REPO_ROOT = SCRIPT_DIR.parent
+SRC = REPO_ROOT / "apps" / "netlify-prod" / "public"
+OUT = SCRIPT_DIR / "dist" / "preview"
+OUT.mkdir(parents=True, exist_ok=True)
 
 def read(name):
-    with open(os.path.join(SRC, name), encoding="utf-8") as f:
+    with open(SRC / name, encoding="utf-8") as f:
         return f.read()
 
 def read_out(name):
-    with open(os.path.join(OUT, name), encoding="utf-8") as f:
+    with open(SCRIPT_DIR / name, encoding="utf-8") as f:
         return f.read()
 
-with open(os.path.join(OUT, "real_data.json"), encoding="utf-8") as f:
-    REAL = json.load(f)
+def read_csv_rows(name):
+    return list(csv.reader(io.StringIO(read_out(name))))
 
-with open(os.path.join(OUT, "resultater_2425.json"), encoding="utf-8") as f:
-    RESULTATER_2425 = json.load(f)
+def da_num(value):
+    value = (value or "").strip().replace(",", ".")
+    if value.endswith("."):
+        value = value[:-1]
+    try:
+        return float(value) if value else 0
+    except ValueError:
+        return 0
 
-with open(os.path.join(OUT, "stilling_2425_addendum.json"), encoding="utf-8") as f:
-    ADDENDUM_2425 = json.load(f)
+def build_real_data():
+    result_rows = read_csv_rows("resultater_2526.csv")[1:]
+    resultater = [
+        [row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8],
+         row[9] if len(row) > 9 else "", row[10] if len(row) > 10 else ""]
+        for row in result_rows if row and row[0]
+    ]
+
+    player_rows = read_csv_rows("spillerpoint_2526.csv")[1:]
+    known_players = sorted(
+        [row[0].strip() for row in player_rows if row and row[0].strip()],
+        key=str.lower,
+    )
+
+    hold_map = {}
+    for row in read_csv_rows("holdoversigt_2526.csv")[1:]:
+        if row and row[0].strip():
+            hold_map[row[0].strip()] = [pick.strip() for pick in row[1:11] if pick and pick.strip()]
+
+    stilling = []
+    for row in read_csv_rows("stilling_2526.csv")[1:]:
+        if len(row) > 1 and row[1].strip():
+            stilling.append({
+                "navn": row[1].strip(),
+                "roundVals": [da_num(row[2 + index]) if 2 + index < len(row) else 0 for index in range(11)],
+            })
+
+    return {
+        "resultater": resultater,
+        "knownPlayers": known_players,
+        "holdMap": hold_map,
+        "stilling": stilling,
+    }
+
+REAL = build_real_data()
+
+RESULTATER_2425 = json.loads(read_out("resultater_2425.json"))
+
+ADDENDUM_2425 = json.loads(read_out("stilling_2425_addendum.json"))
 
 # Alle 382 GSB-medlemmer med BD-rating (single/double/mix, kan være null), hentet 2026-09-02
 # via samme union-af-highestPointGain + batch-membersStats-metode som KAMPSYSTEM_ROSTER — bruges
 # af Kampsystemets søg/tilføj-system (søg en spiller der ikke er i den faste trup, træk dem ind
 # for denne runde). Ikke begrænset til Kampsystemets nuværende grupper.
-with open(os.path.join(OUT, "gsb_alle_spillere.json"), encoding="utf-8") as f:
-    GSB_ALLE_SPILLERE = json.load(f)
+GSB_ALLE_SPILLERE = json.loads(read_out("gsb_alle_spillere.json"))
 GSB_ALLE_SPILLERE_JSON = json.dumps(GSB_ALLE_SPILLERE, ensure_ascii=False)
 
 RESULTATER_JSON = json.dumps(REAL["resultater"], ensure_ascii=False)
