@@ -12,11 +12,11 @@ maskinspecifikke stier op — dette script gør det ikke endnu.
 
 ## Mål
 
-1. Erstat de hårdkodede `SRC`/`OUT`-stier i `build3.py` med opslag i
-   `config.local.json` (samme mønster som resten af repoet — se
-   `config.example.json`s `dropboxRod`/`gsbData`-felter for det forventede
-   format). `SRC` skal pege på `netlify-tool-prod/public` under den
-   konfigurerede `gsbData`-sti; `OUT` skal være en sti inde i selve repoet
+1. Erstat de hårdkodede `SRC`/`OUT`-stier i `build3.py`. **Rettet 2026-09-26,
+   efter Codex' spørgsmål:** `SRC` skal pege på repoets egen kanoniske kilde,
+   `apps/netlify-prod/public/` (relativt til repo-roden, IKKE `config.local.json`
+   — der findes ingen separat Dropbox-kopi af produktionskoden mere, det var
+   netop det 13. september-omlægningen fjernede). `OUT` skal være en sti inde i selve repoet
    (fx `kampsystem/output/` eller tilsvarende — vælg noget der giver mening,
    men spørg hvis der er tvivl om hvor output bør ligge, se Spørgsmål).
 2. Kør scriptet igennem på den maskine du sidder på (Chris' stationære,
