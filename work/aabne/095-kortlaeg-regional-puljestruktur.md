@@ -193,4 +193,4 @@ Katalogstikprøve:
 - Ingen ændring af 089/092, `group_type_katalog` eller databasen: opgaven er en researchfase.
 - Ingen forklaring blev opfundet for vest-overgangen eller Bornholms manglende topserie efter 2015/16; de står som eksplicitte spørgsmål.
 
-**Commits:** afventer commit på denne gren.
+**Commits:** 9998b21 (researchresultat), d2e46ac (resultatnoteformat).
