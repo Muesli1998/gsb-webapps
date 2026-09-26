@@ -1,0 +1,61 @@
+{
+  "title": "Opgave 097 — pointsystem-historik og bred viden",
+  "not_found": [
+    "Officiel dokumentation for fuld afskaffelse af bogstavbaseret holdsætning efter 2019.",
+    "En generel officiel walkoverregel, der kan oversættes direkte til statistik på tværs af alle sæsoner."
+  ],
+  "highlights": [
+    {
+      "topic": "Ranglisteversionering",
+      "source": "https://badminton.dk/wp-content/uploads/2024/08/2024-08-02-Reglement-for-Rangliste_.pdf"
+    },
+    {
+      "topic": "Kvartalsvise ungdomsintervaller og aldersoprykning",
+      "source": "https://badminton.dk/wp-content/uploads/2024/02/Reglement-for-Rangliste-2023-2024-070224.pdf"
+    },
+    {
+      "topic": "Corona som strukturbrud",
+      "source": "https://badminton.dk/2021/04/06/dh-turneringen-annulleres/"
+    },
+    {
+      "topic": "Protester kan ændre resultat",
+      "source": "https://badminton.dk/wp-content/uploads/2023/09/Holdturneringsreglement-for-badminton-i-Danmark-310823.pdf"
+    },
+    {
+      "topic": "Trækning og udeblivelse",
+      "source": "https://badminton.dk/wp-content/uploads/2024/01/Holdturneringsreglement-for-badminton-i-Danmark-300124-2.pdf"
+    },
+    {
+      "topic": "U17/U19 holdsætningsændring",
+      "source": "https://badminton.dk/2023/05/11/har-du-input-til-reglementsaendringer-i-dh-turneringen/"
+    },
+    {
+      "topic": "Holdturneringsafgørelser og konkrete kendelser",
+      "source": "https://badminton.dk/kontakt/"
+    }
+  ],
+  "youth_point_system": {
+    "before": {
+      "structure": "klassifikation pr. 1/7 omsat til holdpoint; fire bedste eller fire drenge plus to piger; særskilte skemaer efter spilleform",
+      "source": "https://badmintonpeople.dk/Messages/Inbox/GetFile.aspx?id=7903"
+    },
+    "after": {
+      "structure": "niveauklassifikationspoint pr. 1/7 summeres og placeres i pointintervaller med hold- og individuelle lofter",
+      "source": "https://badminton.dk/wp-content/uploads/2020/01/F%C3%A6lles-reglement-for-ungdomsholdturneringen-2019-2020.pdf"
+    },
+    "documented_change": {
+      "effective": "2019-07-01",
+      "source": "https://badminton.dk/2019/07/08/6-opdateringer-i-konkurrencereglementerne-der-er-gode-at-kende-til-den-nye-saeson/",
+      "reason": [
+        "mere ligeværdige puljer",
+        "mulighed for puljesammenlægning",
+        "mere niveaumæssigt jævnbyrdig turnering"
+      ],
+      "season": "2019/20"
+    },
+    "caveats": [
+      "Bogstavbaseret holdsætning var ikke dokumenteret fuldstændigt afskaffet.",
+      "Ingen officiel forklaring på det ældre systems oprindelige indførelse fundet."
+    ]
+  }
+}

@@ -119,7 +119,7 @@ faktisk er korrekt hvis kilden er tvetydig.
 
 ## Spørgsmål
 
-(Ingen ved oprettelse — udfyldes hvis Codex støder på noget uklart undervejs.)
+Ingen åbne spørgsmål. Manglende historisk dokumentation er angivet som “ikke fundet” i resultatrapporten i stedet for at blive udfyldt med antagelser.
 
 ## Tilbagefald
 
@@ -130,11 +130,29 @@ faktisk er korrekt hvis kilden er tvetydig.
 **Kontroloutput — før og efter:**
 
 ```
-(indsæt det faktiske output, ikke en beskrivelse af det)
+gsb-statistik-normalized.db SHA-256 før:  49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E
+liga-landskab.db SHA-256 før:              9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C
+
+Efter (bekræftet før commit): samme to SHA-256-værdier.
+git status --short --untracked-files=no statistik/data/
+(ingen output)
+
+git status --short --untracked-files=no apps/netlify-prod kampsystem klubstatistik-preview/
+(ingen output)
 ```
+
+`statistik/data/` er et eksisterende, ikke versionsstyret datasæt. Hashkontrollen bekræfter, at begge databaser er byte-identiske.
 
 **Hvad blev gjort:**
 
+- Dokumenterede med officielle kilder pointsystemskiftet for ungdomsholdturneringen til 2019/20, dets begrundelse og den konkrete forskel mellem klassifikationsholdpoint og niveaupointintervaller.
+- Registrerede de dokumenterede nuancer og senere regelændringer uden at udlede en stærkere konklusion end kilderne bærer.
+- Samlede 7 separate, kildebelagte guldkorn om ranglisteversionering, ungdomsintervaller, corona, protester, trækning/udeblivelse, U17/U19 og afgørelsesarkiv.
+
 **Hvad blev fravalgt og hvorfor:**
+
+- Ingen kamp- eller resultatopslag mod badmintonplayer.dk eller nembadminton.dk; de var uden for undtagelsen.
+- Ingen implementation, databaseændring eller ændring af eksisterende walkoverprincipper; opgaven er kun research.
+- Ikke-fundne historiske forklaringer er angivet eksplicit i stedet for antaget.
 
 **Commits:**
