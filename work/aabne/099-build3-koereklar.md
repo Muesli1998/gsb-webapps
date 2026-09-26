@@ -82,7 +82,9 @@ hvor `OUT` skal pege hen hvis det er uklart, eller på hvad et nyt
 
 ## Spørgsmål
 
-(Ingen ved oprettelse.)
+**Stop — afventer Chris:** `config.local.json` angiver `gsbData` som `C:\Users\chril\Dropbox\Projects\GSB-Webapps`, men `Test-Path "$gsbData\netlify-tool-prod\public"` giver `False`. Den kilde, som faktisk findes og er kanonisk ifølge `AGENTS.md`, er `apps/netlify-prod/public/` i repoet; den indeholder `index.html` og `senior-ungdom-tilmelding.html`, som `build3.py` læser fra `SRC`.
+
+Kortets Mål kræver eksplicit, at `SRC` peger under `gsbData`, mens repoets nuværende struktur siger, at produktionskoden ligger i `apps/netlify-prod/`. Skal `build3.py` bruge den kanoniske repo-kilde (`apps/netlify-prod/public/`), eller skal Chris først genskabe en særskilt `gsbData\netlify-tool-prod\public`-kopi? Jeg kan ikke vælge mellem de to uden at gætte, og scriptet kan derfor ikke køres ærligt endnu.
 
 ## Tilbagefald
 
@@ -93,11 +95,22 @@ hvor `OUT` skal pege hen hvis det er uklart, eller på hvad et nyt
 **Kontroloutput — før og efter:**
 
 ```
-(indsæt det faktiske output, ikke en beskrivelse af det)
+config.local.json gsbData: C:\Users\chril\Dropbox\Projects\GSB-Webapps
+Test-Path $gsbData\netlify-tool-prod\public: False
+Test-Path apps\netlify-prod\public: True
+apps\netlify-prod\public\index.html: True
+apps\netlify-prod\public\senior-ungdom-tilmelding.html: True
+build3.py kørt: nej — Mål 1's krævede SRC findes ikke på den konfigurerede sti.
 ```
 
 **Hvad blev gjort:**
 
+- Læste build3.py, `config.local.json` og den kanoniske app-kilde for at verificere den påkrævede SRC-sti.
+- Dokumenterede den konkrete konflikt i Spørgsmål med begge verificerede stier.
+
 **Hvad blev fravalgt og hvorfor:**
+
+- Ingen kodeændring og ingen buildkørsel: at skifte SRC til repoet ville afvige fra kortets eksplicitte `gsbData`-krav uden beslutning.
+- Ingen oprettelse eller kopiering af en Dropbox-kilde: det ville genindføre en uklar, separat kilde ved siden af det kanoniske repo.
 
 **Commits:**
