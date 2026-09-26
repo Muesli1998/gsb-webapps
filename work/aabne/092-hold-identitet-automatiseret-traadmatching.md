@@ -297,3 +297,5 @@ klumper er nu alle kollapset, og ingen tvetydige identiteter er tilbage.
 **Fravalgt:** Kataloget læses kun. Guldmatchen/Bronzematchen-fejlen og andre
 katalogrettelser er ikke berørt. Ingen sponsoraliaser er tilføjet; de fire
 kendte sponsor-navneskift forbliver manuelle.
+
+**Opfølgning 1-commit:** 05142b0
