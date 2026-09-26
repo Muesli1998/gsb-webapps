@@ -127,6 +127,26 @@ tyndt/blandet: vis det som usikkert (fx en tredje, svagere visuel stil), spørg 
 
 (Udfyldes af den der løser opgaven. Christoffer svarer her i filen.)
 
+**Forslag til farve-/linjekode (Claude, 2026-09-26), afventer Christoffers godkendelse:**
+
+Fire nodetyper (kassens stil):
+- Reelt niveau: almindelig hvid/lys node, som 085 i dag.
+- Ikke-niveau/spilletidsside: orange stiplet kant (uændret fra 085).
+- Slutspil/kvalifikation (Finale/Bronzekamp/5.-8. plads m.fl.): lilla/violet kant, tegnet som en
+  gren ud fra sin pulje, ikke som eget trin i rækkefølgekæden.
+- Delt pulje på tværs af regioner: blå badge (uændret fra 085).
+
+Tre forbindelseslag (streger/zoner):
+- Spilleform-familie: ingen linje mellem noder — en farvet baggrundszone/gruppering pr. familie,
+  så familier aldrig visuelt fremstår forbundne eller sammenlignelige.
+- Formodet niveau inden for samme familie: tynd, grå, stiplet linje.
+- Bekræftet oprykning/nedrykning: tyk, farvet, helt optrukket pil, med belægstypen kodet i
+  farven — grøn = bekræftet af regeltekst, blå = bekræftet af empiri (data), grøn/blå stribet =
+  begge. Aldrig tegnet uden et af de to belæg.
+
+**Svar:** Godkendt af Chris (via Claude), 2026-09-26 — koden bruges som foreslået.
+
+
 ## Resultatnote
 
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
