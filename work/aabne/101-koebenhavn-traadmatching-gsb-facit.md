@@ -192,4 +192,4 @@ liga-landskab.db SHA-256 før/efter:
   evidens afgør ikke entydigt hvilken kilde der er kanonisk.
 
 **Commits:** 079e063 (`Opgave 101: kortlaeg Kobenhavn traadmatching og GSB-brud`);
-opfølgningen committes på denne gren efter opdateringen.
+e995c57 (Chris' bekræftede GSB hold 4-pause og opdaterede output).
