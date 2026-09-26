@@ -112,4 +112,4 @@ apps/netlify-prod/: 0 ændrede filer
 - Claude-previewreferencer blev ikke ændret: de ligger uden for repoets verificerbare struktur.
 - Ingen feature-status blev ændret, fordi opgaven kun verificerer filplaceringer.
 
-**Commits:**
+**Commits:** 718f372 (Opgave 098: ret preview-status til repo-strukturen)
