@@ -184,4 +184,4 @@ liga-landskab.db SHA-256 før/efter:
 - Ingen automatisk løsning af GSB hold 4's syv sæsoners fravær eller de to
   same-season-uklarheder: deres årsag kan ikke afgøres af den gemte evidens.
 
-**Commits:** afventer stop-commit på `arbejde/101-koebenhavn-traadmatching-gsb-facit`.
+**Commits:** 079e063 (`Opgave 101: kortlaeg Kobenhavn traadmatching og GSB-brud`).
