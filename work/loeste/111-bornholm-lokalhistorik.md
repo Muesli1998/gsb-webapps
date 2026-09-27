@@ -94,6 +94,6 @@ andet hold), markér som ubekræftet i stedet for at gætte. Se Metode A/B/C's e
 - Alle fem regioner er opgjort sæson for sæson i `111-bornholm-lokalhistorik.json`; kun konkrete 107-metode A-spor tælles som entydige.
 - **Kontroloutput:** `node statistik/scripts/111-bornholm-lokalhistorik.mjs`; database åbnet read-only; `git status --short statistik/data/` tom.
 - **Hvad blev fravalgt:** ingen nye API-kald, ingen databaseskrivning, ingen alias-gæt.
-- **Commits:** udfyldes ved commit.
+- **Commits:** `c1c2382`.
 
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
