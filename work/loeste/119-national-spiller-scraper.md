@@ -103,4 +103,22 @@ spillerlinks som kamp 3757).
 
 ## Resultatnote
 
-(udfyldes ved aflevering)
+### Kontroloutput
+
+- 12 kampe forsøgt, 12 render-gate-bestået, 0 fetch/render-fejl.
+- 106 unikke spillere og 173 spiller-kamp-rækker i den separate `national-spillere.db`.
+- Kønsstatus: 8 mand, 6 kvinde, 92 ikke afklaret, 0 aldrig spillet.
+- 0 felter med point/rank i `players`; ingen ranglistepoint blev hentet.
+- De eksisterende `gsb-statistik-normalized.db` og `liga-landskab.db` blev kun læst.
+
+### Hvad blev gjort
+
+Bygget og kørt `statistik/scripts/119-national-spiller-scraper.mjs` på en kontrolleret prøve af 12 kamp-ID’er. Skemaet er adskilt i `statistik/data/national-spillere.db` med `matches`, `players`, `player_matches` og `scrape_errors`. Render-gaten og disciplinbaseret kønsafledning følger opgave 118 og `statistik/AGENTS.md`. Resultaterne ligger i `statistik/results/119-national-spiller-scraper/` og `statistik/results/119-national-spiller-scraper.md`.
+
+### Hvad blev fravalgt og hvorfor
+
+Ingen fuld national kørsel, ingen ændring af eksisterende databaser, ingen ranglistepoint og ingen navnebaseret kønsafledning. `aldrig spillet` optrådte ikke i prøven, fordi kilden kun eksponerer ID’er via faktiske kampsider; statusværdien er dog understøttet i skemaet. En udvidelse ud over de 12 kampe afventer særskilt beslutning.
+
+### Commits
+
+Commit: scraper, rapport og kort arkiveret på `arbejde/119-national-spiller-scraper`.

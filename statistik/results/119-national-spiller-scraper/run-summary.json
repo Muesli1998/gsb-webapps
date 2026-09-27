@@ -1,0 +1,228 @@
+{
+  "generatedAt": "2026-09-27T18:45:06.767Z",
+  "sampleIds": [
+    "22818",
+    "337416",
+    "3757",
+    "499797",
+    "503838",
+    "505128",
+    "471218",
+    "505211",
+    "512925",
+    "499805",
+    "506363",
+    "506441"
+  ],
+  "counts": {
+    "attempted": 12,
+    "render_gate_passed": 12,
+    "failed": 0,
+    "players_found": 106,
+    "player_match_rows": 173
+  },
+  "genderCounts": [
+    {
+      "gender_status": "ikke afklaret",
+      "n": 92
+    },
+    {
+      "gender_status": "kvinde",
+      "n": 6
+    },
+    {
+      "gender_status": "mand",
+      "n": 8
+    }
+  ],
+  "rankPointColumnsInPlayers": 0,
+  "perMatch": [
+    {
+      "id": "22818",
+      "ok": true,
+      "renderGate": true,
+      "linkCount": 18,
+      "uniquePlayerCount": 18,
+      "categories": [
+        "MD",
+        "DS",
+        "HS",
+        "HS",
+        "DD",
+        "HD"
+      ],
+      "result": "Resultat\t5-1"
+    },
+    {
+      "id": "337416",
+      "ok": true,
+      "renderGate": true,
+      "linkCount": 8,
+      "uniquePlayerCount": 8,
+      "categories": [
+        "S",
+        "S",
+        "S",
+        "S",
+        "D",
+        "D"
+      ],
+      "result": "Resultat\t4-3"
+    },
+    {
+      "id": "3757",
+      "ok": true,
+      "renderGate": true,
+      "linkCount": 0,
+      "uniquePlayerCount": 0,
+      "categories": [],
+      "result": "Resultat\t5-1"
+    },
+    {
+      "id": "471218",
+      "ok": true,
+      "renderGate": true,
+      "linkCount": 8,
+      "uniquePlayerCount": 8,
+      "categories": [
+        "S",
+        "S",
+        "S",
+        "S",
+        "D",
+        "D"
+      ],
+      "result": "Resultat\t5-1"
+    },
+    {
+      "id": "499797",
+      "ok": true,
+      "renderGate": true,
+      "linkCount": 10,
+      "uniquePlayerCount": 10,
+      "categories": [
+        "D",
+        "D",
+        "S",
+        "S",
+        "S",
+        "S",
+        "D"
+      ],
+      "result": "Resultat\t2-5"
+    },
+    {
+      "id": "499805",
+      "ok": true,
+      "renderGate": true,
+      "linkCount": 11,
+      "uniquePlayerCount": 11,
+      "categories": [
+        "S",
+        "S",
+        "S",
+        "S",
+        "D",
+        "D"
+      ],
+      "result": "Resultat\t0-6"
+    },
+    {
+      "id": "503838",
+      "ok": true,
+      "renderGate": true,
+      "linkCount": 10,
+      "uniquePlayerCount": 10,
+      "categories": [
+        "D",
+        "D",
+        "S",
+        "S",
+        "S",
+        "S",
+        "D"
+      ],
+      "result": "Resultat\t3-4"
+    },
+    {
+      "id": "505128",
+      "ok": true,
+      "renderGate": true,
+      "linkCount": 9,
+      "uniquePlayerCount": 9,
+      "categories": [
+        "S",
+        "S",
+        "S",
+        "S",
+        "D",
+        "D"
+      ],
+      "result": "Resultat\t2-4"
+    },
+    {
+      "id": "505211",
+      "ok": true,
+      "renderGate": true,
+      "linkCount": 5,
+      "uniquePlayerCount": 5,
+      "categories": [
+        "S",
+        "S",
+        "S",
+        "S",
+        "D"
+      ],
+      "result": "Resultat\t0-5"
+    },
+    {
+      "id": "506363",
+      "ok": true,
+      "renderGate": true,
+      "linkCount": 9,
+      "uniquePlayerCount": 9,
+      "categories": [
+        "S",
+        "S",
+        "S",
+        "S",
+        "D",
+        "D"
+      ],
+      "result": "Resultat\t4-2"
+    },
+    {
+      "id": "506441",
+      "ok": true,
+      "renderGate": true,
+      "linkCount": 8,
+      "uniquePlayerCount": 8,
+      "categories": [
+        "S",
+        "S",
+        "S",
+        "S",
+        "D"
+      ],
+      "result": "Resultat\t0-5"
+    },
+    {
+      "id": "512925",
+      "ok": true,
+      "renderGate": true,
+      "linkCount": 10,
+      "uniquePlayerCount": 10,
+      "categories": [
+        "D",
+        "D",
+        "D",
+        "D",
+        "S",
+        "S",
+        "S",
+        "S"
+      ],
+      "result": "Resultat\t2-6"
+    }
+  ]
+}
