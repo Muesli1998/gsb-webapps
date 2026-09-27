@@ -363,6 +363,15 @@ implementering og række-for-række-kontrol ligger i
 `statistik/scripts/103-086c-klassifikation.mjs`; opgave 104's nationale
 styrke-DAG bruger samme klassifikation.
 
+**Opstillingskrav-rangering (opgave 113, 2026-09-27).** Som et separat lag
+kan formater rangeres numerisk efter hvor krævende det generelt er at stille
+holdet (flere spillerposter og flere pige-/dameposter højere). Rangeringen er
+ikke en sportslig styrkeorden og må aldrig bruges til at sammenligne puljer på
+tværs af spilleform-familier. Officielle kilder bruges kun hvor de faktisk
+viser formatfamilier eller kampsekvenser; øvrige placeringer mærkes
+`Christoffers klubkendskab, ikke reglements-bekræftet`. Se
+`statistik/results/113-spilleformats-rangering.md` og `.json`.
+
 **Note (2026-09-17): regelsæt-koder er holdtype, ikke niveau — og et
 manglende niveau-bogstav er ikke automatisk en fejl.** Ved Chris'
 visuelle gennemgang af to konkrete opgave 051-identiteter (Gladsaxe

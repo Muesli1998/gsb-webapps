@@ -1,0 +1,6533 @@
+{
+  "generated_at": "2026-09-27T15:27:32.838Z",
+  "limitation": "Rangeringen måler krav til opstillingsformat. Den må ikke bruges som sportslig sammenligning mellem spilleform-familier.",
+  "source_citations": [
+    {
+      "source": "Badminton Danmark, Reglement-DMU HOLD tillæg 2025-05-30",
+      "url": "https://badminton.dk/wp-content/uploads/2025/08/Reglement-DMU-HOLD-tillaeg-2025-05-30.pdf",
+      "accessed": "2026-09-27",
+      "evidence": "Formålet nævner U11/U13/U15/U17 og holdtyperne 4+3, 4+2, 2+2, 4 spillere/4 piger; dokumenterer formatfamilier, ikke en samlet numerisk styrkeorden."
+    },
+    {
+      "source": "Badminton Danmark, Praktisk info DMU Hold U15 2023",
+      "url": "https://badminton.dk/wp-content/uploads/2023/04/Praktisk-info-2023-U15.pdf",
+      "accessed": "2026-09-27",
+      "evidence": "Viser kampsekvenser for 4 spillere, 4+2 og 4+3; bruges som format-/visningsbelæg, ikke som sportslig rangering."
+    }
+  ],
+  "heuristic": "Flere spillerposter og flere pige/dameposter giver højere placering; ties er alfabetiske. Dette er Christoffers klubkendskab, ikke reglements-bekræftet.",
+  "rows": [
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "4+2",
+      "occurrences": 844,
+      "seasons": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        14,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        23,
+        24,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "levels": [
+        "A",
+        "A-B",
+        "A/B",
+        "B",
+        "B/C",
+        "C",
+        "C-D",
+        "D",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 42,
+      "rank": 1
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "4 spillere",
+      "occurrences": 2635,
+      "seasons": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        17,
+        18,
+        2,
+        23,
+        27,
+        28,
+        29,
+        30,
+        32,
+        4,
+        5,
+        6
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C",
+        "C-D",
+        "C/D",
+        "D"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 30,
+      "rank": 2
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "2+2",
+      "occurrences": 197,
+      "seasons": [
+        2013,
+        2014,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "regions": [
+        1,
+        16,
+        17,
+        2,
+        23,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        6
+      ],
+      "levels": [
+        "A",
+        "B",
+        "B/C",
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 22,
+      "rank": 3
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. D · 1. DD · 1. DS · 1. MD · 1. S · 2. D · 2. S · 3. S",
+      "occurrences": 4,
+      "seasons": [
+        2014,
+        2015
+      ],
+      "regions": [
+        29,
+        32,
+        6
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 4
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. D · 1. S · 2. D · 2. S · 3. D · 3. S · 4. D · 4. S",
+      "occurrences": 191,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "regions": [
+        10,
+        16,
+        17,
+        18,
+        19,
+        24,
+        25,
+        31,
+        32,
+        7,
+        8
+      ],
+      "levels": [
+        "A",
+        "A-B",
+        "A/B",
+        "B",
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 5
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. D · 1. S · 2. D · 2. S · 3. S · 4. S",
+      "occurrences": 93,
+      "seasons": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "regions": [
+        14,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        24,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        5,
+        7
+      ],
+      "levels": [
+        "A",
+        "A/B",
+        "B",
+        "B/C",
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 6
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. D · 2. D · 3. D · 4. D",
+      "occurrences": 18,
+      "seasons": [
+        2013,
+        2014,
+        2015,
+        2022,
+        2023,
+        2025
+      ],
+      "regions": [
+        29,
+        6,
+        9
+      ],
+      "levels": [
+        "A",
+        "A-B",
+        "B",
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 7
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. D · 2. D · 3. D · 4. D · 5. D · 6. D",
+      "occurrences": 107,
+      "seasons": [
+        2013,
+        2014,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "regions": [
+        18,
+        25,
+        5,
+        9
+      ],
+      "levels": [
+        "A",
+        "A/B",
+        "B",
+        "B/C",
+        "C",
+        "D"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 8
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 1. S · 2. HD · 2. HS · 2. S · 3. HS",
+      "occurrences": 8,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "regions": [
+        6
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 9
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DD · 2. DS · 2. HD · 2. HS · 2. MD · 3. HD · 3. HS · 4. HS",
+      "occurrences": 1480,
+      "seasons": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 10
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DD · 2. HD · 2. HS · 2. MD · 3. HD · 3. HS · 3. MD",
+      "occurrences": 15,
+      "seasons": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 11
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DD · 2. HD · 2. HS · 3. HD · 3. HS",
+      "occurrences": 68,
+      "seasons": [
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 12
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DS · 2. HD · 2. HS · 2. MD",
+      "occurrences": 69,
+      "seasons": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 13
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DS · 2. HD · 2. HS · 2. MD · 3. HS · 4. HS",
+      "occurrences": 498,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2025
+      ],
+      "regions": [
+        1,
+        10,
+        16,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 14
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. HD · 2. HS · 2. MD · 3. HD · 3. HS · 3. MD",
+      "occurrences": 10,
+      "seasons": [
+        2013,
+        2014,
+        2015,
+        2016
+      ],
+      "regions": [
+        16,
+        7
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 15
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. HD · 2. HS · 2. MD · 3. HS · 3. MD",
+      "occurrences": 1,
+      "seasons": [
+        2013
+      ],
+      "regions": [
+        3
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 16
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. HD · 2. HS · 3. HS",
+      "occurrences": 343,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "regions": [
+        17,
+        18,
+        19,
+        24,
+        27,
+        28,
+        29,
+        3,
+        30,
+        32,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "levels": [
+        "A",
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 17
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. HS",
+      "occurrences": 68,
+      "seasons": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "regions": [
+        1,
+        10
+      ],
+      "levels": [
+        "A",
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 18
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. MD · 3. MD",
+      "occurrences": 16,
+      "seasons": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "regions": [
+        18,
+        5
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 19
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. HS · 1. MD · 2. HD · 2. HS · 2. MD",
+      "occurrences": 29,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "regions": [
+        10,
+        14,
+        29,
+        3,
+        6,
+        9
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 20
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. HS · 1. MD · 2. HD · 2. HS · 2. MD · 3. HD · 3. HS · 4. HS",
+      "occurrences": 28,
+      "seasons": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        8,
+        9
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 21
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. HS · 1. MD · 2. HD · 2. HS · 2. MD · 3. HS · 4. HS",
+      "occurrences": 1,
+      "seasons": [
+        2020
+      ],
+      "regions": [
+        9
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 22
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. MD · 2. HD · 2. MD · 3. HD",
+      "occurrences": 97,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "regions": [
+        14,
+        29,
+        3,
+        4,
+        5
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 23
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. MD · 2. HD · 2. MD · 3. HD · 3. MD · 4. HD · 4. MD",
+      "occurrences": 3,
+      "seasons": [
+        2015
+      ],
+      "regions": [
+        17
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 24
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. MD · 2. HD · 2. MD · 3. HD · 4. HD · 5. HD",
+      "occurrences": 1,
+      "seasons": [
+        2012
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 25
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. DD · 2. DD · 3. DD · 4. DD · 5. DD · 6. DD",
+      "occurrences": 9,
+      "seasons": [
+        2020
+      ],
+      "regions": [
+        17,
+        23,
+        27,
+        28,
+        29,
+        30,
+        32,
+        4,
+        6
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 26
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. HD · 1. HS · 2. HD · 2. HS · 3. HS · 4. HS",
+      "occurrences": 16,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2022
+      ],
+      "regions": [
+        16,
+        29,
+        5,
+        6,
+        7,
+        9
+      ],
+      "levels": [
+        "A",
+        "A-B",
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 27
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. HD · 2. HD · 3. HD · 4. HD",
+      "occurrences": 4,
+      "seasons": [
+        2013,
+        2014,
+        2015,
+        2021
+      ],
+      "regions": [
+        30,
+        9
+      ],
+      "levels": [
+        "A"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 28
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. HD · 2. HD · 3. HD · 4. HD · 5. HD · 6. HD",
+      "occurrences": 5,
+      "seasons": [
+        2013,
+        2015
+      ],
+      "regions": [
+        16,
+        17,
+        28
+      ],
+      "levels": [
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 29
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "kategorisignatur:1. HD · 2. HD · 3. HD · 4. HD · 5. HD · 6. HD · 7. HD · 8. HD",
+      "occurrences": 2,
+      "seasons": [
+        2012,
+        2013
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 30
+    },
+    {
+      "age_group_id": 1,
+      "age_group_name": "SEN",
+      "format": "Ukendt format",
+      "occurrences": 381,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        16,
+        17,
+        18,
+        19,
+        28,
+        3,
+        30,
+        31,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 0,
+      "rank": 31
+    },
+    {
+      "age_group_id": 2,
+      "age_group_name": "U09",
+      "format": "4 spillere",
+      "occurrences": 557,
+      "seasons": [
+        2011,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "regions": [
+        1,
+        10,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        23,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 30,
+      "rank": 1
+    },
+    {
+      "age_group_id": 2,
+      "age_group_name": "U09",
+      "format": "3 spillere",
+      "occurrences": 113,
+      "seasons": [
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        16,
+        17,
+        18,
+        19,
+        2,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "levels": [
+        "C",
+        "D"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 23,
+      "rank": 2
+    },
+    {
+      "age_group_id": 2,
+      "age_group_name": "U09",
+      "format": "kategorisignatur:1. D · 1. S · 2. D · 2. S · 3. S · 4. S",
+      "occurrences": 57,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "regions": [
+        1,
+        10,
+        18,
+        19,
+        2,
+        24,
+        25,
+        27,
+        31,
+        5,
+        8
+      ],
+      "levels": [
+        "B",
+        "D",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 3
+    },
+    {
+      "age_group_id": 2,
+      "age_group_name": "U09",
+      "format": "kategorisignatur:1. D · 1. S · 2. S · 3. S · 4. S",
+      "occurrences": 14,
+      "seasons": [
+        2025,
+        2026
+      ],
+      "regions": [
+        18,
+        5
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 4
+    },
+    {
+      "age_group_id": 2,
+      "age_group_name": "U09",
+      "format": "kategorisignatur:1. S · 2. S · 3. S · 4. S · 5. S · 6. S · 7. S · 8. S",
+      "occurrences": 9,
+      "seasons": [
+        2011,
+        2012,
+        2014,
+        2016,
+        2018
+      ],
+      "regions": [
+        10,
+        16,
+        7
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 5
+    },
+    {
+      "age_group_id": 2,
+      "age_group_name": "U09",
+      "format": "Ukendt format",
+      "occurrences": 4,
+      "seasons": [
+        2012,
+        2018
+      ],
+      "regions": [
+        23,
+        29,
+        5,
+        6
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 0,
+      "rank": 6
+    },
+    {
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "format": "4+3",
+      "occurrences": 38,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016
+      ],
+      "regions": [
+        1,
+        10,
+        16,
+        17,
+        19,
+        2,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        6,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "A"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 43,
+      "rank": 1
+    },
+    {
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "format": "4+2",
+      "occurrences": 133,
+      "seasons": [
+        2012,
+        2013,
+        2014,
+        2017,
+        2018,
+        2019,
+        2020,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        23,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "levels": [
+        "A",
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 42,
+      "rank": 2
+    },
+    {
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "format": "4 piger",
+      "occurrences": 158,
+      "seasons": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        16,
+        17,
+        18,
+        19,
+        2,
+        23,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "levels": [
+        "D"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 34,
+      "rank": 3
+    },
+    {
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "format": "4 spillere",
+      "occurrences": 3120,
+      "seasons": [
+        2011,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        14,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        23,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 30,
+      "rank": 4
+    },
+    {
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "format": "3 spillere",
+      "occurrences": 21,
+      "seasons": [
+        2025
+      ],
+      "regions": [
+        16,
+        17,
+        27,
+        28,
+        29,
+        30,
+        32
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 23,
+      "rank": 5
+    },
+    {
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "format": "2+2",
+      "occurrences": 38,
+      "seasons": [
+        2013,
+        2021,
+        2022,
+        2023
+      ],
+      "regions": [
+        1,
+        10,
+        16,
+        17,
+        18,
+        19,
+        2,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "levels": [
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 22,
+      "rank": 6
+    },
+    {
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "format": "X1",
+      "occurrences": 4,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 22,
+      "rank": 7
+    },
+    {
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "format": "X2",
+      "occurrences": 4,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 21,
+      "rank": 8
+    },
+    {
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "format": "kategorisignatur:1. D · 1. MD · 1. S · 2. D · 2. S · 3. D · 3. S · 4. S",
+      "occurrences": 2,
+      "seasons": [
+        2013
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 9
+    },
+    {
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "format": "kategorisignatur:1. D · 1. S · 2. D · 2. S · 3. D · 3. S · 4. S · 5. S · 6. S",
+      "occurrences": 2,
+      "seasons": [
+        2012
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 10
+    },
+    {
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "format": "kategorisignatur:1. D · 1. S · 2. D · 2. S · 3. S · 4. S",
+      "occurrences": 242,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "regions": [
+        1,
+        10,
+        16,
+        17,
+        18,
+        19,
+        2,
+        24,
+        25,
+        27,
+        28,
+        3,
+        30,
+        31,
+        32,
+        4,
+        5,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 11
+    },
+    {
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DD · 2. DS · 2. HD · 2. HS · 2. MD · 3. HD · 3. HS · 4. HS",
+      "occurrences": 13,
+      "seasons": [
+        2017,
+        2018
+      ],
+      "regions": [
+        10,
+        16,
+        17,
+        27,
+        28,
+        29,
+        30,
+        32,
+        4,
+        6,
+        8
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 12
+    },
+    {
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DS · 2. HD · 2. HS · 2. MD",
+      "occurrences": 104,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "regions": [
+        1,
+        10,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "levels": [
+        "A"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 13
+    },
+    {
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. HD · 2. HS · 3. HS",
+      "occurrences": 2,
+      "seasons": [
+        2011,
+        2013
+      ],
+      "regions": [
+        5,
+        8
+      ],
+      "levels": [
+        "A"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 14
+    },
+    {
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 2. DS · 2. HD · 2. HS · 3. HS · 4. HS",
+      "occurrences": 1,
+      "seasons": [
+        2012
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 15
+    },
+    {
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "format": "kategorisignatur:1. DD · 1. DS · 2. DD · 2. DS · 3. DS · 4. DS",
+      "occurrences": 2,
+      "seasons": [
+        2014,
+        2021
+      ],
+      "regions": [
+        10,
+        16
+      ],
+      "levels": [
+        "D"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 16
+    },
+    {
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "format": "kategorisignatur:1. S · 2. S · 3. S",
+      "occurrences": 2,
+      "seasons": [
+        2017
+      ],
+      "regions": [
+        29,
+        6
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 17
+    },
+    {
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "format": "kategorisignatur:1. S · 2. S · 3. S · 4. S · 5. S · 6. S · 7. S · 8. S",
+      "occurrences": 18,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2021
+      ],
+      "regions": [
+        16,
+        7
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 18
+    },
+    {
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "format": "Ukendt format",
+      "occurrences": 45,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2016,
+        2017,
+        2018,
+        2019,
+        2026
+      ],
+      "regions": [
+        10,
+        16,
+        17,
+        23,
+        25,
+        27,
+        28,
+        29,
+        3,
+        30,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "B",
+        "C",
+        "D"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 0,
+      "rank": 19
+    },
+    {
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "format": "4+3",
+      "occurrences": 367,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        23,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "A",
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 43,
+      "rank": 1
+    },
+    {
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "format": "4+2",
+      "occurrences": 45,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "regions": [
+        1,
+        10,
+        17,
+        19,
+        2,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        6,
+        8,
+        9
+      ],
+      "levels": [
+        "A",
+        "B",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 42,
+      "rank": 2
+    },
+    {
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "format": "4 piger",
+      "occurrences": 427,
+      "seasons": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        14,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        23,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "C",
+        "D"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 34,
+      "rank": 3
+    },
+    {
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "format": "4 spillere",
+      "occurrences": 5022,
+      "seasons": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        14,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        23,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 30,
+      "rank": 4
+    },
+    {
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "format": "3 spillere",
+      "occurrences": 21,
+      "seasons": [
+        2025
+      ],
+      "regions": [
+        16,
+        17,
+        27,
+        28,
+        29,
+        30,
+        32
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 23,
+      "rank": 5
+    },
+    {
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "format": "2+2",
+      "occurrences": 165,
+      "seasons": [
+        2013,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        16,
+        17,
+        18,
+        19,
+        2,
+        23,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 22,
+      "rank": 6
+    },
+    {
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "format": "X1",
+      "occurrences": 4,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 22,
+      "rank": 7
+    },
+    {
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "format": "X2",
+      "occurrences": 4,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 21,
+      "rank": 8
+    },
+    {
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "format": "kategorisignatur:1. D · 1. MD · 1. S · 2. D · 2. S · 3. D · 3. S · 4. S",
+      "occurrences": 3,
+      "seasons": [
+        2012,
+        2013
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 9
+    },
+    {
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "format": "kategorisignatur:1. D · 1. S · 2. D · 2. S · 3. D · 3. S · 4. D · 4. S",
+      "occurrences": 2,
+      "seasons": [
+        2026
+      ],
+      "regions": [
+        18,
+        5
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 10
+    },
+    {
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "format": "kategorisignatur:1. D · 1. S · 2. D · 2. S · 3. S · 4. S",
+      "occurrences": 384,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "regions": [
+        1,
+        10,
+        16,
+        17,
+        18,
+        19,
+        2,
+        23,
+        24,
+        25,
+        27,
+        28,
+        29,
+        3,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 11
+    },
+    {
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD",
+      "occurrences": 2,
+      "seasons": [
+        2011,
+        2012
+      ],
+      "regions": [
+        7
+      ],
+      "levels": [
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 12
+    },
+    {
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DD · 2. DS · 2. HD · 2. HS · 2. MD · 3. HD · 3. HS · 4. HS",
+      "occurrences": 6,
+      "seasons": [
+        2017,
+        2018,
+        2019
+      ],
+      "regions": [
+        10,
+        8
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 13
+    },
+    {
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DS · 2. HD · 2. HS · 2. MD",
+      "occurrences": 80,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "regions": [
+        1,
+        10,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "levels": [
+        "A",
+        "B",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 14
+    },
+    {
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. HD · 2. HS · 3. HS",
+      "occurrences": 8,
+      "seasons": [
+        2011,
+        2012,
+        2013
+      ],
+      "regions": [
+        4,
+        5,
+        8
+      ],
+      "levels": [
+        "A"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 15
+    },
+    {
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "format": "kategorisignatur:1. DD · 1. DS · 2. DD · 2. DS · 3. DS · 4. DS",
+      "occurrences": 2,
+      "seasons": [
+        2012,
+        2014
+      ],
+      "regions": [
+        16,
+        7
+      ],
+      "levels": [
+        "D"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 16
+    },
+    {
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "format": "kategorisignatur:1. HD · 1. HS · 2. HD · 2. HS · 3. HS · 4. HS",
+      "occurrences": 5,
+      "seasons": [
+        2011
+      ],
+      "regions": [
+        10
+      ],
+      "levels": [
+        "B",
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 17
+    },
+    {
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "format": "kategorisignatur:1. S · 2. S · 3. S",
+      "occurrences": 2,
+      "seasons": [
+        2017
+      ],
+      "regions": [
+        29,
+        6
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 18
+    },
+    {
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "format": "kategorisignatur:1. S · 2. S · 3. S · 4. S · 5. S · 6. S · 7. S · 8. S",
+      "occurrences": 12,
+      "seasons": [
+        2011,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "regions": [
+        16,
+        7
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 19
+    },
+    {
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "format": "Ukendt format",
+      "occurrences": 35,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2015,
+        2016,
+        2018,
+        2019
+      ],
+      "regions": [
+        16,
+        17,
+        23,
+        27,
+        28,
+        29,
+        3,
+        30,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "B",
+        "C",
+        "D"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 0,
+      "rank": 20
+    },
+    {
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "format": "4+3",
+      "occurrences": 401,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        23,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "A",
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 43,
+      "rank": 1
+    },
+    {
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "format": "4+2",
+      "occurrences": 248,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "regions": [
+        1,
+        10,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        23,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "A",
+        "B",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 42,
+      "rank": 2
+    },
+    {
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "format": "4 piger",
+      "occurrences": 465,
+      "seasons": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        14,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        23,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "levels": [
+        "B",
+        "C",
+        "D"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 34,
+      "rank": 3
+    },
+    {
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "format": "4 spillere",
+      "occurrences": 5217,
+      "seasons": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        14,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        23,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 30,
+      "rank": 4
+    },
+    {
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "format": "2+2",
+      "occurrences": 387,
+      "seasons": [
+        2013,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        14,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        25,
+        27,
+        28,
+        29,
+        3,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 22,
+      "rank": 5
+    },
+    {
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "format": "X1",
+      "occurrences": 4,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 22,
+      "rank": 6
+    },
+    {
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "format": "X2",
+      "occurrences": 4,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 21,
+      "rank": 7
+    },
+    {
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "format": "kategorisignatur:1. D · 1. DD · 1. DS · 1. MD · 1. S · 2. D · 2. S · 3. S",
+      "occurrences": 2,
+      "seasons": [
+        2012
+      ],
+      "regions": [
+        4
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 8
+    },
+    {
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "format": "kategorisignatur:1. D · 1. MD · 1. S · 2. D · 2. S · 3. D · 3. S · 4. S",
+      "occurrences": 5,
+      "seasons": [
+        2012,
+        2013
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 9
+    },
+    {
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "format": "kategorisignatur:1. D · 1. S · 2. D · 2. S · 3. S · 4. S",
+      "occurrences": 306,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2021,
+        2023
+      ],
+      "regions": [
+        1,
+        10,
+        14,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        25,
+        27,
+        28,
+        29,
+        3,
+        30,
+        31,
+        32,
+        4,
+        5,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 10
+    },
+    {
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD",
+      "occurrences": 3,
+      "seasons": [
+        2011,
+        2012
+      ],
+      "regions": [
+        7
+      ],
+      "levels": [
+        "A",
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 11
+    },
+    {
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DD · 2. DS · 2. HD · 2. HS",
+      "occurrences": 6,
+      "seasons": [
+        2013
+      ],
+      "regions": [
+        1
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 12
+    },
+    {
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DD · 2. DS · 2. HD · 2. HS · 2. MD · 3. HD · 3. HS · 4. HS",
+      "occurrences": 6,
+      "seasons": [
+        2017,
+        2018,
+        2019
+      ],
+      "regions": [
+        10,
+        8
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 13
+    },
+    {
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DS · 2. HD · 2. HS · 2. MD",
+      "occurrences": 71,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2023,
+        2024,
+        2025
+      ],
+      "regions": [
+        1,
+        10,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "levels": [
+        "A",
+        "B",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 14
+    },
+    {
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. HD · 2. HS · 3. HS",
+      "occurrences": 3,
+      "seasons": [
+        2011
+      ],
+      "regions": [
+        4,
+        5
+      ],
+      "levels": [
+        "A"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 15
+    },
+    {
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "format": "kategorisignatur:1. DD · 1. DS · 2. DD · 2. DS · 3. DS · 4. DS",
+      "occurrences": 1,
+      "seasons": [
+        2011
+      ],
+      "regions": [
+        7
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 16
+    },
+    {
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "format": "kategorisignatur:1. HD · 1. HS · 2. HD · 2. HS · 3. HS · 4. HS",
+      "occurrences": 3,
+      "seasons": [
+        2011
+      ],
+      "regions": [
+        10
+      ],
+      "levels": [
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 17
+    },
+    {
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "format": "kategorisignatur:1. S · 2. S · 3. S · 4. S · 5. S · 6. S · 7. S · 8. S",
+      "occurrences": 1,
+      "seasons": [
+        2011
+      ],
+      "regions": [
+        7
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 18
+    },
+    {
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "format": "Ukendt format",
+      "occurrences": 14,
+      "seasons": [
+        2011,
+        2012
+      ],
+      "regions": [
+        3,
+        5,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "C",
+        "D"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 0,
+      "rank": 19
+    },
+    {
+      "age_group_id": 6,
+      "age_group_name": "U17",
+      "format": "4+3",
+      "occurrences": 329,
+      "seasons": [
+        2011,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "regions": [
+        1,
+        10,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        23,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "A"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 43,
+      "rank": 1
+    },
+    {
+      "age_group_id": 6,
+      "age_group_name": "U17",
+      "format": "4+2",
+      "occurrences": 160,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016
+      ],
+      "regions": [
+        1,
+        10,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        8
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 42,
+      "rank": 2
+    },
+    {
+      "age_group_id": 6,
+      "age_group_name": "U17",
+      "format": "4 piger",
+      "occurrences": 18,
+      "seasons": [
+        2014,
+        2015,
+        2016
+      ],
+      "regions": [
+        2,
+        32
+      ],
+      "levels": [
+        "C",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 34,
+      "rank": 3
+    },
+    {
+      "age_group_id": 6,
+      "age_group_name": "U17",
+      "format": "4 spillere",
+      "occurrences": 380,
+      "seasons": [
+        2013,
+        2014,
+        2015,
+        2016
+      ],
+      "regions": [
+        1,
+        10,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 30,
+      "rank": 4
+    },
+    {
+      "age_group_id": 6,
+      "age_group_name": "U17",
+      "format": "X1",
+      "occurrences": 4,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 22,
+      "rank": 5
+    },
+    {
+      "age_group_id": 6,
+      "age_group_name": "U17",
+      "format": "kategorisignatur:1. D · 1. MD · 1. S · 2. D · 2. S · 3. D · 3. S · 4. S",
+      "occurrences": 2,
+      "seasons": [
+        2012,
+        2013
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 6
+    },
+    {
+      "age_group_id": 6,
+      "age_group_name": "U17",
+      "format": "kategorisignatur:1. D · 1. S · 2. D · 2. S · 3. S · 4. S",
+      "occurrences": 229,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016
+      ],
+      "regions": [
+        10,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        25,
+        27,
+        28,
+        29,
+        3,
+        30,
+        31,
+        32,
+        4,
+        5,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 7
+    },
+    {
+      "age_group_id": 6,
+      "age_group_name": "U17",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD",
+      "occurrences": 1,
+      "seasons": [
+        2012
+      ],
+      "regions": [
+        7
+      ],
+      "levels": [
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 8
+    },
+    {
+      "age_group_id": 6,
+      "age_group_name": "U17",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DD · 2. DS · 2. HD · 2. HS · 2. MD · 3. HD · 3. HS · 4. HS",
+      "occurrences": 6,
+      "seasons": [
+        2017,
+        2018,
+        2019
+      ],
+      "regions": [
+        10,
+        8
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 9
+    },
+    {
+      "age_group_id": 6,
+      "age_group_name": "U17",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DS · 2. HD · 2. HS · 2. MD",
+      "occurrences": 45,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "regions": [
+        1,
+        10,
+        4,
+        8
+      ],
+      "levels": [
+        "A",
+        "B",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 10
+    },
+    {
+      "age_group_id": 6,
+      "age_group_name": "U17",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. HD · 2. HS · 3. HS",
+      "occurrences": 3,
+      "seasons": [
+        2011,
+        2012
+      ],
+      "regions": [
+        4,
+        5
+      ],
+      "levels": [
+        "A"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 11
+    },
+    {
+      "age_group_id": 6,
+      "age_group_name": "U17",
+      "format": "kategorisignatur:1. HD · 1. HS · 2. HD · 2. HS · 3. HS · 4. HS",
+      "occurrences": 9,
+      "seasons": [
+        2011,
+        2012,
+        2013
+      ],
+      "regions": [
+        10
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 12
+    },
+    {
+      "age_group_id": 6,
+      "age_group_name": "U17",
+      "format": "Ukendt format",
+      "occurrences": 35,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "regions": [
+        10,
+        17,
+        18,
+        2,
+        28,
+        3,
+        30,
+        32,
+        5,
+        8,
+        9
+      ],
+      "levels": [
+        "B",
+        "C",
+        "D",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 0,
+      "rank": 13
+    },
+    {
+      "age_group_id": 8,
+      "age_group_name": "SEN+35",
+      "format": "4+2",
+      "occurrences": 15,
+      "seasons": [
+        2018,
+        2019,
+        2026
+      ],
+      "regions": [
+        1,
+        16,
+        17,
+        18,
+        2,
+        23,
+        27,
+        28,
+        29,
+        30,
+        32,
+        4,
+        5,
+        6,
+        7
+      ],
+      "levels": [
+        "A"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 42,
+      "rank": 1
+    },
+    {
+      "age_group_id": 8,
+      "age_group_name": "SEN+35",
+      "format": "4 spillere",
+      "occurrences": 62,
+      "seasons": [
+        2019,
+        2020
+      ],
+      "regions": [
+        17,
+        18,
+        23,
+        27,
+        28,
+        29,
+        30,
+        32,
+        4,
+        5,
+        6
+      ],
+      "levels": [
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 30,
+      "rank": 2
+    },
+    {
+      "age_group_id": 8,
+      "age_group_name": "SEN+35",
+      "format": "kategorisignatur:1. D · 2. D · 3. D · 4. D · 5. D · 6. D",
+      "occurrences": 9,
+      "seasons": [
+        2013,
+        2014,
+        2015
+      ],
+      "regions": [
+        27
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 3
+    },
+    {
+      "age_group_id": 8,
+      "age_group_name": "SEN+35",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. HS · 1. MD · 2. HD · 2. MD",
+      "occurrences": 1,
+      "seasons": [
+        2013
+      ],
+      "regions": [
+        1
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 4
+    },
+    {
+      "age_group_id": 8,
+      "age_group_name": "SEN+35",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. MD · 2. HD · 2. MD · 3. HD",
+      "occurrences": 19,
+      "seasons": [
+        2020,
+        2021,
+        2022
+      ],
+      "regions": [
+        5
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 5
+    },
+    {
+      "age_group_id": 8,
+      "age_group_name": "SEN+35",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. MD · 2. HD · 2. MD · 3. HD · 3. MD · 4. HD · 4. MD",
+      "occurrences": 5,
+      "seasons": [
+        2013,
+        2014,
+        2015
+      ],
+      "regions": [
+        27
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 6
+    },
+    {
+      "age_group_id": 8,
+      "age_group_name": "SEN+35",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. MD · 2. MD",
+      "occurrences": 45,
+      "seasons": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "regions": [
+        9
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 7
+    },
+    {
+      "age_group_id": 8,
+      "age_group_name": "SEN+35",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. MD · 2. MD · 3. MD · 4. MD",
+      "occurrences": 7,
+      "seasons": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "regions": [
+        9
+      ],
+      "levels": [
+        "A"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 8
+    },
+    {
+      "age_group_id": 8,
+      "age_group_name": "SEN+35",
+      "format": "kategorisignatur:1. HD · 2. HD · 3. HD · 4. HD · 5. HD · 6. HD",
+      "occurrences": 3,
+      "seasons": [
+        2013,
+        2018
+      ],
+      "regions": [
+        1,
+        2,
+        28
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 9
+    },
+    {
+      "age_group_id": 8,
+      "age_group_name": "SEN+35",
+      "format": "Ukendt format",
+      "occurrences": 25,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2022,
+        2026
+      ],
+      "regions": [
+        16,
+        28,
+        5,
+        7,
+        9
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 0,
+      "rank": 10
+    },
+    {
+      "age_group_id": 9,
+      "age_group_name": "SEN+40",
+      "format": "4+2",
+      "occurrences": 463,
+      "seasons": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        14,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        24,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        6,
+        7
+      ],
+      "levels": [
+        "A",
+        "A/B",
+        "B",
+        "B/C",
+        "C",
+        "D",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 42,
+      "rank": 1
+    },
+    {
+      "age_group_id": 9,
+      "age_group_name": "SEN+40",
+      "format": "4 spillere",
+      "occurrences": 128,
+      "seasons": [
+        2016,
+        2017,
+        2018,
+        2025,
+        2026
+      ],
+      "regions": [
+        10,
+        17,
+        27,
+        28,
+        29,
+        30,
+        32,
+        4,
+        6
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 30,
+      "rank": 2
+    },
+    {
+      "age_group_id": 9,
+      "age_group_name": "SEN+40",
+      "format": "kategorisignatur:1. D · 2. D · 3. D · 4. D",
+      "occurrences": 22,
+      "seasons": [
+        2013,
+        2014,
+        2015,
+        2016
+      ],
+      "regions": [
+        1,
+        14,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        24,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "levels": [
+        "A"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 3
+    },
+    {
+      "age_group_id": 9,
+      "age_group_name": "SEN+40",
+      "format": "kategorisignatur:1. D · 2. D · 3. D · 4. D · 5. D · 6. D",
+      "occurrences": 141,
+      "seasons": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "regions": [
+        10,
+        16,
+        19,
+        24,
+        25,
+        31,
+        7
+      ],
+      "levels": [
+        "A",
+        "A/B",
+        "B",
+        "B/C",
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 4
+    },
+    {
+      "age_group_id": 9,
+      "age_group_name": "SEN+40",
+      "format": "kategorisignatur:1. D · 2. D · 3. D · 4. D · 5. D · 6. D · 7. D · 8. D",
+      "occurrences": 5,
+      "seasons": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 5
+    },
+    {
+      "age_group_id": 9,
+      "age_group_name": "SEN+40",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. HS · 1. MD · 2. DD · 2. HD · 2. HS · 2. MD · 3. HD · 3. MD · 4. HD · 4. MD · 5. HD",
+      "occurrences": 38,
+      "seasons": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        10,
+        8
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 6
+    },
+    {
+      "age_group_id": 9,
+      "age_group_name": "SEN+40",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. HS · 1. MD · 2. DD · 2. HD · 2. HS · 2. MD · 3. HD · 3. MD · 4. MD",
+      "occurrences": 383,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "regions": [
+        10,
+        19,
+        24,
+        25,
+        31
+      ],
+      "levels": [
+        "A",
+        "B",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 7
+    },
+    {
+      "age_group_id": 9,
+      "age_group_name": "SEN+40",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. HS · 1. MD · 2. HD · 2. HS · 2. MD",
+      "occurrences": 25,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "regions": [
+        4
+      ],
+      "levels": [
+        "A",
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 8
+    },
+    {
+      "age_group_id": 9,
+      "age_group_name": "SEN+40",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. MD · 2. DD · 2. HD · 2. MD · 3. HD · 3. MD · 4. HD · 4. MD · 5. HD · 6. HD",
+      "occurrences": 88,
+      "seasons": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 9
+    },
+    {
+      "age_group_id": 9,
+      "age_group_name": "SEN+40",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. MD · 2. HD · 2. MD · 3. HD",
+      "occurrences": 14,
+      "seasons": [
+        2023,
+        2024,
+        2025
+      ],
+      "regions": [
+        18,
+        5
+      ],
+      "levels": [
+        "A",
+        "B/C",
+        "D"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 10
+    },
+    {
+      "age_group_id": 9,
+      "age_group_name": "SEN+40",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. MD · 2. HD · 2. MD · 3. HD · 3. MD · 4. HD · 4. MD",
+      "occurrences": 12,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "regions": [
+        10,
+        7
+      ],
+      "levels": [
+        "A",
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 11
+    },
+    {
+      "age_group_id": 9,
+      "age_group_name": "SEN+40",
+      "format": "kategorisignatur:1. DD · 2. DD · 3. DD · 4. DD · 5. DD · 6. DD",
+      "occurrences": 20,
+      "seasons": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "regions": [
+        16,
+        7
+      ],
+      "levels": [
+        "A"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 12
+    },
+    {
+      "age_group_id": 9,
+      "age_group_name": "SEN+40",
+      "format": "kategorisignatur:1. HD · 2. HD · 3. HD · 4. HD · 5. HD · 6. HD",
+      "occurrences": 49,
+      "seasons": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "regions": [
+        10,
+        16,
+        7
+      ],
+      "levels": [
+        "A",
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 13
+    },
+    {
+      "age_group_id": 9,
+      "age_group_name": "SEN+40",
+      "format": "kategorisignatur:1. HD · 2. HD · 3. HD · 4. HD · 5. HD · 6. HD · 7. HD · 8. HD",
+      "occurrences": 8,
+      "seasons": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 14
+    },
+    {
+      "age_group_id": 9,
+      "age_group_name": "SEN+40",
+      "format": "Ukendt format",
+      "occurrences": 55,
+      "seasons": [
+        2011,
+        2013,
+        2014,
+        2015,
+        2020,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        10,
+        17,
+        18,
+        2,
+        28,
+        31,
+        32,
+        5,
+        8,
+        9
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 0,
+      "rank": 15
+    },
+    {
+      "age_group_id": 10,
+      "age_group_name": "SEN+45",
+      "format": "4+2",
+      "occurrences": 83,
+      "seasons": [
+        2013,
+        2014,
+        2015,
+        2019,
+        2021,
+        2022
+      ],
+      "regions": [
+        14,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        23,
+        24,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6
+      ],
+      "levels": [
+        "A",
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 42,
+      "rank": 1
+    },
+    {
+      "age_group_id": 10,
+      "age_group_name": "SEN+45",
+      "format": "4 spillere",
+      "occurrences": 105,
+      "seasons": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "regions": [
+        17,
+        18,
+        23,
+        27,
+        28,
+        29,
+        30,
+        32,
+        4,
+        5,
+        6
+      ],
+      "levels": [
+        "A",
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 30,
+      "rank": 2
+    },
+    {
+      "age_group_id": 10,
+      "age_group_name": "SEN+45",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. HS · 1. MD · 2. HD · 2. MD",
+      "occurrences": 1,
+      "seasons": [
+        2013
+      ],
+      "regions": [
+        1
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 3
+    },
+    {
+      "age_group_id": 10,
+      "age_group_name": "SEN+45",
+      "format": "kategorisignatur:1. HD · 2. HD · 3. HD · 4. HD · 5. HD · 6. HD",
+      "occurrences": 1,
+      "seasons": [
+        2013
+      ],
+      "regions": [
+        28
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 4
+    },
+    {
+      "age_group_id": 10,
+      "age_group_name": "SEN+45",
+      "format": "Ukendt format",
+      "occurrences": 4,
+      "seasons": [
+        2013,
+        2014,
+        2015
+      ],
+      "regions": [
+        28,
+        31
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 0,
+      "rank": 5
+    },
+    {
+      "age_group_id": 11,
+      "age_group_name": "SEN+50",
+      "format": "4+2",
+      "occurrences": 244,
+      "seasons": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        14,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        24,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        7
+      ],
+      "levels": [
+        "A",
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 42,
+      "rank": 1
+    },
+    {
+      "age_group_id": 11,
+      "age_group_name": "SEN+50",
+      "format": "4 spillere",
+      "occurrences": 114,
+      "seasons": [
+        2016,
+        2017,
+        2018,
+        2023
+      ],
+      "regions": [
+        1,
+        17,
+        2,
+        27,
+        28,
+        29,
+        30,
+        32,
+        4,
+        6
+      ],
+      "levels": [
+        "A",
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 30,
+      "rank": 2
+    },
+    {
+      "age_group_id": 11,
+      "age_group_name": "SEN+50",
+      "format": "2+2",
+      "occurrences": 7,
+      "seasons": [
+        2013,
+        2014,
+        2015,
+        2023
+      ],
+      "regions": [
+        1,
+        2,
+        31
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 22,
+      "rank": 3
+    },
+    {
+      "age_group_id": 11,
+      "age_group_name": "SEN+50",
+      "format": "kategorisignatur:1. D · 2. D · 3. D · 4. D",
+      "occurrences": 24,
+      "seasons": [
+        2013,
+        2014,
+        2016
+      ],
+      "regions": [
+        1,
+        14,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        24,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "levels": [
+        "A",
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 4
+    },
+    {
+      "age_group_id": 11,
+      "age_group_name": "SEN+50",
+      "format": "kategorisignatur:1. D · 2. D · 3. D · 4. D · 5. D · 6. D",
+      "occurrences": 85,
+      "seasons": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "regions": [
+        10,
+        19,
+        24,
+        25,
+        31
+      ],
+      "levels": [
+        "A",
+        "A/B",
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 5
+    },
+    {
+      "age_group_id": 11,
+      "age_group_name": "SEN+50",
+      "format": "kategorisignatur:1. D · 2. D · 3. D · 4. D · 5. D · 6. D · 7. D · 8. D",
+      "occurrences": 2,
+      "seasons": [
+        2020,
+        2021
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 6
+    },
+    {
+      "age_group_id": 11,
+      "age_group_name": "SEN+50",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. HS · 1. MD · 2. DD · 2. HD · 2. HS · 2. MD · 3. HD · 3. MD · 4. MD",
+      "occurrences": 5,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "regions": [
+        10
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 7
+    },
+    {
+      "age_group_id": 11,
+      "age_group_name": "SEN+50",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. MD · 2. DD · 2. HD · 2. MD · 3. MD · 4. MD",
+      "occurrences": 6,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "regions": [
+        10
+      ],
+      "levels": [
+        "A",
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 8
+    },
+    {
+      "age_group_id": 11,
+      "age_group_name": "SEN+50",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. MD · 2. HD · 2. MD · 3. HD · 3. MD · 4. HD · 4. MD",
+      "occurrences": 17,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "regions": [
+        10
+      ],
+      "levels": [
+        "A",
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 9
+    },
+    {
+      "age_group_id": 11,
+      "age_group_name": "SEN+50",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. MD · 2. HD · 2. MD · 3. HD · 4. HD · 5. HD",
+      "occurrences": 97,
+      "seasons": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 10
+    },
+    {
+      "age_group_id": 11,
+      "age_group_name": "SEN+50",
+      "format": "kategorisignatur:1. HD · 2. HD · 3. HD · 4. HD · 5. HD · 6. HD",
+      "occurrences": 8,
+      "seasons": [
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "regions": [
+        16,
+        7
+      ],
+      "levels": [
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 11
+    },
+    {
+      "age_group_id": 11,
+      "age_group_name": "SEN+50",
+      "format": "Ukendt format",
+      "occurrences": 20,
+      "seasons": [
+        2011,
+        2013,
+        2014,
+        2015,
+        2026
+      ],
+      "regions": [
+        16,
+        17,
+        31,
+        32,
+        7,
+        8
+      ],
+      "levels": [
+        "A",
+        "B-C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 0,
+      "rank": 12
+    },
+    {
+      "age_group_id": 12,
+      "age_group_name": "SEN+55",
+      "format": "4 spillere",
+      "occurrences": 101,
+      "seasons": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "regions": [
+        17,
+        18,
+        23,
+        27,
+        28,
+        29,
+        30,
+        32,
+        4,
+        5,
+        6
+      ],
+      "levels": [
+        "A",
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 30,
+      "rank": 1
+    },
+    {
+      "age_group_id": 12,
+      "age_group_name": "SEN+55",
+      "format": "2+2",
+      "occurrences": 1,
+      "seasons": [
+        2013
+      ],
+      "regions": [
+        31
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 22,
+      "rank": 2
+    },
+    {
+      "age_group_id": 12,
+      "age_group_name": "SEN+55",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. HS · 1. MD · 2. HD · 2. MD",
+      "occurrences": 1,
+      "seasons": [
+        2013
+      ],
+      "regions": [
+        1
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 3
+    },
+    {
+      "age_group_id": 12,
+      "age_group_name": "SEN+55",
+      "format": "kategorisignatur:1. HD · 2. HD · 3. HD · 4. HD · 5. HD · 6. HD",
+      "occurrences": 1,
+      "seasons": [
+        2013
+      ],
+      "regions": [
+        28
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 4
+    },
+    {
+      "age_group_id": 12,
+      "age_group_name": "SEN+55",
+      "format": "Ukendt format",
+      "occurrences": 5,
+      "seasons": [
+        2013,
+        2014,
+        2015
+      ],
+      "regions": [
+        28,
+        31
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 0,
+      "rank": 5
+    },
+    {
+      "age_group_id": 13,
+      "age_group_name": "SEN+60",
+      "format": "4+2",
+      "occurrences": 22,
+      "seasons": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2025
+      ],
+      "regions": [
+        16,
+        7
+      ],
+      "levels": [
+        "A",
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 42,
+      "rank": 1
+    },
+    {
+      "age_group_id": 13,
+      "age_group_name": "SEN+60",
+      "format": "4 spillere",
+      "occurrences": 2,
+      "seasons": [
+        2025,
+        2026
+      ],
+      "regions": [
+        10
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 30,
+      "rank": 2
+    },
+    {
+      "age_group_id": 13,
+      "age_group_name": "SEN+60",
+      "format": "2+2",
+      "occurrences": 59,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "regions": [
+        10,
+        19,
+        24,
+        25,
+        31,
+        32
+      ],
+      "levels": [
+        "A",
+        "A-B",
+        "A/B",
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 22,
+      "rank": 3
+    },
+    {
+      "age_group_id": 13,
+      "age_group_name": "SEN+60",
+      "format": "kategorisignatur:1. D · 1. DD · 1. MD · 2. D · 2. MD · 3. D · 4. D · 5. D",
+      "occurrences": 7,
+      "seasons": [
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 4
+    },
+    {
+      "age_group_id": 13,
+      "age_group_name": "SEN+60",
+      "format": "kategorisignatur:1. D · 2. D · 3. D · 4. D",
+      "occurrences": 16,
+      "seasons": [
+        2013,
+        2015
+      ],
+      "regions": [
+        14,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        24,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 5
+    },
+    {
+      "age_group_id": 13,
+      "age_group_name": "SEN+60",
+      "format": "kategorisignatur:1. D · 2. D · 3. D · 4. D · 5. D · 6. D",
+      "occurrences": 50,
+      "seasons": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "regions": [
+        10,
+        19,
+        24,
+        25,
+        31
+      ],
+      "levels": [
+        "A/B",
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 6
+    },
+    {
+      "age_group_id": 13,
+      "age_group_name": "SEN+60",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. MD · 2. HD · 2. MD · 3. HD · 4. HD · 5. HD",
+      "occurrences": 37,
+      "seasons": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        10,
+        8
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 7
+    },
+    {
+      "age_group_id": 13,
+      "age_group_name": "SEN+60",
+      "format": "kategorisignatur:1. HD · 2. HD · 3. HD · 4. HD · 5. HD · 6. HD",
+      "occurrences": 12,
+      "seasons": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "regions": [
+        1,
+        10,
+        16,
+        19,
+        2,
+        25,
+        31,
+        7
+      ],
+      "levels": [
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 8
+    },
+    {
+      "age_group_id": 13,
+      "age_group_name": "SEN+60",
+      "format": "Ukendt format",
+      "occurrences": 50,
+      "seasons": [
+        2011,
+        2013,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        18,
+        31,
+        32,
+        5,
+        8
+      ],
+      "levels": [
+        "A",
+        "A-B",
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 0,
+      "rank": 9
+    },
+    {
+      "age_group_id": 15,
+      "age_group_name": "Andet",
+      "format": "kategorisignatur:1. D · 1. S · 2. D · 2. S · 3. S · 4. S",
+      "occurrences": 1,
+      "seasons": [
+        2023
+      ],
+      "regions": [
+        1
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 1
+    },
+    {
+      "age_group_id": 15,
+      "age_group_name": "Andet",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. HS · 1. MD · 2. HD · 2. MD",
+      "occurrences": 3,
+      "seasons": [
+        2015
+      ],
+      "regions": [
+        1
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 2
+    },
+    {
+      "age_group_id": 16,
+      "age_group_name": "MOT",
+      "format": "4+2",
+      "occurrences": 291,
+      "seasons": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        17,
+        18,
+        19,
+        2,
+        23,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6
+      ],
+      "levels": [
+        "A",
+        "B",
+        "B/C",
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 42,
+      "rank": 1
+    },
+    {
+      "age_group_id": 16,
+      "age_group_name": "MOT",
+      "format": "4 spillere",
+      "occurrences": 1547,
+      "seasons": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        17,
+        18,
+        19,
+        2,
+        23,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        8
+      ],
+      "levels": [
+        "A",
+        "B",
+        "B/C",
+        "C",
+        "D"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 30,
+      "rank": 2
+    },
+    {
+      "age_group_id": 16,
+      "age_group_name": "MOT",
+      "format": "2+2",
+      "occurrences": 224,
+      "seasons": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2023,
+        2024,
+        2025
+      ],
+      "regions": [
+        14,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        23,
+        24,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7
+      ],
+      "levels": [
+        "A",
+        "A/B",
+        "B",
+        "B/C",
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 22,
+      "rank": 3
+    },
+    {
+      "age_group_id": 16,
+      "age_group_name": "MOT",
+      "format": "kategorisignatur:1. D · 2. D · 3. D · 4. D",
+      "occurrences": 73,
+      "seasons": [
+        2013,
+        2014,
+        2015
+      ],
+      "regions": [
+        14,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        24,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 4
+    },
+    {
+      "age_group_id": 16,
+      "age_group_name": "MOT",
+      "format": "kategorisignatur:1. D · 2. D · 3. D · 4. D · 5. D · 6. D",
+      "occurrences": 110,
+      "seasons": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2023,
+        2024,
+        2025
+      ],
+      "regions": [
+        16,
+        19,
+        25,
+        31,
+        7
+      ],
+      "levels": [
+        "A",
+        "A/B",
+        "B",
+        "B/C",
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 5
+    },
+    {
+      "age_group_id": 16,
+      "age_group_name": "MOT",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. MD · 2. DD · 2. HD · 2. MD · 3. DD · 3. HD · 3. MD · 4. DD · 4. HD · 4. MD",
+      "occurrences": 96,
+      "seasons": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        19,
+        31
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 6
+    },
+    {
+      "age_group_id": 16,
+      "age_group_name": "MOT",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. MD · 2. DD · 2. HD · 2. MD · 3. MD · 4. MD",
+      "occurrences": 48,
+      "seasons": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "regions": [
+        1,
+        14,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        24,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "levels": [
+        "A",
+        "A/B",
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 7
+    },
+    {
+      "age_group_id": 16,
+      "age_group_name": "MOT",
+      "format": "kategorisignatur:1. DD · 1. HD · 1. MD · 2. HD · 2. MD · 3. HD",
+      "occurrences": 13,
+      "seasons": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "regions": [
+        9
+      ],
+      "levels": [
+        "A",
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 8
+    },
+    {
+      "age_group_id": 16,
+      "age_group_name": "MOT",
+      "format": "kategorisignatur:1. DD · 2. DD · 3. DD · 4. DD · 5. DD · 6. DD",
+      "occurrences": 28,
+      "seasons": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2019
+      ],
+      "regions": [
+        17,
+        18,
+        19,
+        27,
+        28,
+        29,
+        30,
+        32,
+        4,
+        5,
+        6
+      ],
+      "levels": [
+        "A-B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 9
+    },
+    {
+      "age_group_id": 16,
+      "age_group_name": "MOT",
+      "format": "kategorisignatur:1. HD · 10. HD · 11. HD · 12. HD · 2. HD · 3. HD · 4. HD · 5. HD · 6. HD · 7. HD · 8. HD · 9. HD",
+      "occurrences": 2,
+      "seasons": [
+        2014,
+        2015
+      ],
+      "regions": [
+        19
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 10
+    },
+    {
+      "age_group_id": 16,
+      "age_group_name": "MOT",
+      "format": "kategorisignatur:1. HD · 2. HD · 3. HD · 4. HD · 5. HD · 6. HD",
+      "occurrences": 27,
+      "seasons": [
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "regions": [
+        16,
+        19,
+        31,
+        7
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 11
+    },
+    {
+      "age_group_id": 16,
+      "age_group_name": "MOT",
+      "format": "Ukendt format",
+      "occurrences": 136,
+      "seasons": [
+        2014,
+        2015,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "regions": [
+        17,
+        18,
+        19,
+        25,
+        31,
+        32,
+        5
+      ],
+      "levels": [
+        "A",
+        "B",
+        "B-C",
+        "C",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 0,
+      "rank": 12
+    },
+    {
+      "age_group_id": 17,
+      "age_group_name": "SEN+70",
+      "format": "kategorisignatur:1. D · 2. D · 3. D · 4. D · 5. D · 6. D",
+      "occurrences": 8,
+      "seasons": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 1
+    },
+    {
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "format": "4+2",
+      "occurrences": 454,
+      "seasons": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        23,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "A",
+        "A/B",
+        "B",
+        "C",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 42,
+      "rank": 1
+    },
+    {
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "format": "4 piger",
+      "occurrences": 47,
+      "seasons": [
+        2016,
+        2017,
+        2018,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        17,
+        18,
+        19,
+        2,
+        23,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        8
+      ],
+      "levels": [
+        "C",
+        "C-D",
+        "C/D",
+        "D",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 34,
+      "rank": 2
+    },
+    {
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "format": "4 spillere",
+      "occurrences": 2599,
+      "seasons": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        23,
+        24,
+        25,
+        27,
+        28,
+        29,
+        3,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "A",
+        "A-B",
+        "B",
+        "C",
+        "C-D",
+        "D",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 30,
+      "rank": 3
+    },
+    {
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "format": "2+2",
+      "occurrences": 209,
+      "seasons": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        19,
+        2,
+        25,
+        3,
+        31,
+        8,
+        9
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 22,
+      "rank": 4
+    },
+    {
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "format": "kategorisignatur:1. D · 1. DD · 1. DS · 1. MD · 1. S · 2. D · 2. DS · 2. MD · 2. S · 3. S · 4. S",
+      "occurrences": 2,
+      "seasons": [
+        2019
+      ],
+      "regions": [
+        2,
+        32
+      ],
+      "levels": [
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 5
+    },
+    {
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "format": "kategorisignatur:1. D · 1. S · 2. D · 2. S · 3. D · 3. S · 4. D · 4. S",
+      "occurrences": 4,
+      "seasons": [
+        2024,
+        2025
+      ],
+      "regions": [
+        1,
+        2
+      ],
+      "levels": [
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 6
+    },
+    {
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "format": "kategorisignatur:1. D · 1. S · 2. D · 2. S · 3. D · 3. S · 4. S",
+      "occurrences": 7,
+      "seasons": [
+        2025
+      ],
+      "regions": [
+        1,
+        2
+      ],
+      "levels": [
+        "A",
+        "B",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 7
+    },
+    {
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "format": "kategorisignatur:1. D · 1. S · 2. D · 2. S · 3. D · 3. S · 4. S · 5. S · 6. S",
+      "occurrences": 2,
+      "seasons": [
+        2019
+      ],
+      "regions": [
+        2,
+        32
+      ],
+      "levels": [
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 8
+    },
+    {
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "format": "kategorisignatur:1. D · 1. S · 2. D · 2. S · 3. S · 4. S",
+      "occurrences": 172,
+      "seasons": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2021,
+        2024,
+        2025
+      ],
+      "regions": [
+        1,
+        10,
+        18,
+        2,
+        25,
+        32,
+        5,
+        8,
+        9
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C",
+        "C-D",
+        "D",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 9
+    },
+    {
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "format": "kategorisignatur:1. DD · 1. DS · 2. DD · 2. DS · 3. DS · 4. DS",
+      "occurrences": 7,
+      "seasons": [
+        2019,
+        2021,
+        2025
+      ],
+      "regions": [
+        1,
+        10,
+        19,
+        2,
+        31
+      ],
+      "levels": [
+        "C-D",
+        "D"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 10
+    },
+    {
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "format": "Ukendt format",
+      "occurrences": 55,
+      "seasons": [
+        2017,
+        2018,
+        2019,
+        2024,
+        2025
+      ],
+      "regions": [
+        2,
+        32
+      ],
+      "levels": [
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 0,
+      "rank": 11
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "4+3",
+      "occurrences": 1135,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        23,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "A",
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 43,
+      "rank": 1
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "4+2",
+      "occurrences": 1040,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        23,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "A",
+        "A/B",
+        "B",
+        "C",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 42,
+      "rank": 2
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "4 piger",
+      "occurrences": 1115,
+      "seasons": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        14,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        23,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "B",
+        "C",
+        "C-D",
+        "C/D",
+        "D",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 34,
+      "rank": 3
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "4 spillere",
+      "occurrences": 16895,
+      "seasons": [
+        2011,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        14,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        23,
+        24,
+        25,
+        27,
+        28,
+        29,
+        3,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "A",
+        "A-B",
+        "B",
+        "C",
+        "C-D",
+        "D",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 30,
+      "rank": 4
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "3 spillere",
+      "occurrences": 155,
+      "seasons": [
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        16,
+        17,
+        18,
+        19,
+        2,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "levels": [
+        "C",
+        "D"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 23,
+      "rank": 5
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "2+2",
+      "occurrences": 799,
+      "seasons": [
+        2013,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        10,
+        14,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        23,
+        25,
+        27,
+        28,
+        29,
+        3,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 22,
+      "rank": 6
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "X1",
+      "occurrences": 16,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 22,
+      "rank": 7
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "X2",
+      "occurrences": 12,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 21,
+      "rank": 8
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "kategorisignatur:1. D · 1. DD · 1. DS · 1. MD · 1. S · 2. D · 2. DS · 2. MD · 2. S · 3. S · 4. S",
+      "occurrences": 2,
+      "seasons": [
+        2019
+      ],
+      "regions": [
+        2,
+        32
+      ],
+      "levels": [
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 9
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "kategorisignatur:1. D · 1. DD · 1. DS · 1. MD · 1. S · 2. D · 2. S · 3. S",
+      "occurrences": 2,
+      "seasons": [
+        2012
+      ],
+      "regions": [
+        4
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 10
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "kategorisignatur:1. D · 1. MD · 1. S · 2. D · 2. S · 3. D · 3. S · 4. S",
+      "occurrences": 12,
+      "seasons": [
+        2012,
+        2013
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 11
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "kategorisignatur:1. D · 1. S · 2. D · 2. S · 3. D · 3. S · 4. D · 4. S",
+      "occurrences": 6,
+      "seasons": [
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        1,
+        18,
+        2,
+        5
+      ],
+      "levels": [
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 12
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "kategorisignatur:1. D · 1. S · 2. D · 2. S · 3. D · 3. S · 4. S",
+      "occurrences": 7,
+      "seasons": [
+        2025
+      ],
+      "regions": [
+        1,
+        2
+      ],
+      "levels": [
+        "A",
+        "B",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 13
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "kategorisignatur:1. D · 1. S · 2. D · 2. S · 3. D · 3. S · 4. S · 5. S · 6. S",
+      "occurrences": 4,
+      "seasons": [
+        2012,
+        2019
+      ],
+      "regions": [
+        2,
+        32,
+        8
+      ],
+      "levels": [
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 14
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "kategorisignatur:1. D · 1. S · 2. D · 2. S · 3. S · 4. S",
+      "occurrences": 1390,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "regions": [
+        1,
+        10,
+        14,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        23,
+        24,
+        25,
+        27,
+        28,
+        29,
+        3,
+        30,
+        31,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C",
+        "C-D",
+        "D",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 15
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "kategorisignatur:1. D · 1. S · 2. S · 3. S · 4. S",
+      "occurrences": 14,
+      "seasons": [
+        2025,
+        2026
+      ],
+      "regions": [
+        18,
+        5
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 16
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD",
+      "occurrences": 6,
+      "seasons": [
+        2011,
+        2012
+      ],
+      "regions": [
+        7
+      ],
+      "levels": [
+        "A",
+        "B"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 17
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DD · 2. DS · 2. HD · 2. HS",
+      "occurrences": 6,
+      "seasons": [
+        2013
+      ],
+      "regions": [
+        1
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 18
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DD · 2. DS · 2. HD · 2. HS · 2. MD · 3. HD · 3. HS · 4. HS",
+      "occurrences": 31,
+      "seasons": [
+        2017,
+        2018,
+        2019
+      ],
+      "regions": [
+        10,
+        16,
+        17,
+        27,
+        28,
+        29,
+        30,
+        32,
+        4,
+        6,
+        8
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 19
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DS · 2. HD · 2. HS · 2. MD",
+      "occurrences": 300,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "regions": [
+        1,
+        10,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "levels": [
+        "A",
+        "B",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 20
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. HD · 2. HS · 3. HS",
+      "occurrences": 16,
+      "seasons": [
+        2011,
+        2012,
+        2013
+      ],
+      "regions": [
+        4,
+        5,
+        8
+      ],
+      "levels": [
+        "A"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 21
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "kategorisignatur:1. DD · 1. DS · 1. HD · 1. HS · 2. DS · 2. HD · 2. HS · 3. HS · 4. HS",
+      "occurrences": 1,
+      "seasons": [
+        2012
+      ],
+      "regions": [
+        8
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 22
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "kategorisignatur:1. DD · 1. DS · 2. DD · 2. DS · 3. DS · 4. DS",
+      "occurrences": 12,
+      "seasons": [
+        2011,
+        2012,
+        2014,
+        2019,
+        2021,
+        2025
+      ],
+      "regions": [
+        1,
+        10,
+        16,
+        19,
+        2,
+        31,
+        7
+      ],
+      "levels": [
+        "C-D",
+        "D"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 23
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "kategorisignatur:1. HD · 1. HS · 2. HD · 2. HS · 3. HS · 4. HS",
+      "occurrences": 17,
+      "seasons": [
+        2011,
+        2012,
+        2013
+      ],
+      "regions": [
+        10
+      ],
+      "levels": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 24
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "kategorisignatur:1. S · 2. S · 3. S",
+      "occurrences": 4,
+      "seasons": [
+        2017
+      ],
+      "regions": [
+        29,
+        6
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 25
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "kategorisignatur:1. S · 2. S · 3. S · 4. S · 5. S · 6. S · 7. S · 8. S",
+      "occurrences": 40,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2021
+      ],
+      "regions": [
+        10,
+        16,
+        7
+      ],
+      "levels": [],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 1,
+      "rank": 26
+    },
+    {
+      "age_group_id": 21,
+      "age_group_name": "UNG",
+      "format": "Ukendt format",
+      "occurrences": 188,
+      "seasons": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2024,
+        2025,
+        2026
+      ],
+      "regions": [
+        10,
+        16,
+        17,
+        18,
+        2,
+        23,
+        25,
+        27,
+        28,
+        29,
+        3,
+        30,
+        32,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "levels": [
+        "B",
+        "C",
+        "D",
+        "M"
+      ],
+      "rank_basis": "Christoffers klubkendskab, ikke reglements-bekræftet",
+      "heuristic_score": 0,
+      "rank": 27
+    }
+  ]
+}

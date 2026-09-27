@@ -99,4 +99,12 @@ ligner noget Christoffer har nævnt), spørg i "Spørgsmål" i stedet for at gæ
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+**Kontroloutput:** Generatoren læste 18.401 kombinationer fra 112-kataloget og producerede 217 aldersgruppe-formatrækker fordelt på 17 aldersgrupper. Alle 217 rækker har numerisk plads og kilde-markering. Databasen og 103's familieklassifikation er urørt.
+
+**Hvad blev gjort:** Tilføjede `statistik/scripts/113-generate-spilleformats-rangering.mjs`, `statistik/results/113-spilleformats-rangering.md` og `.json`. Badminton Danmarks to officielle kilder dokumenterer formatfamilier og kampsekvenser. De officielle kilder dokumenterer ikke en samlet numerisk styrkeorden, så den reproducerbare numerering er mærket `Christoffers klubkendskab, ikke reglements-bekræftet`.
+
+**Fast begrænsning:** Rangeringen måler opstillingskrav og må ikke bruges som sportslig sammenligning på tværs af spilleform-familier. `docs/statistik-plan.md` har fået dette som et separat lag under Spilleforms-standard.
+
+**Værn:** Ingen `.db`, 104/105-JSON eller eksisterende familieklassifikationsscript er ændret. Ingen API-kald.
+
+**Commits:** udfyldes ved commit på `arbejde/113-spilleformats-rangering-hierarki`.
