@@ -107,4 +107,4 @@ ligner noget Christoffer har nævnt), spørg i "Spørgsmål" i stedet for at gæ
 
 **Værn:** Ingen `.db`, 104/105-JSON eller eksisterende familieklassifikationsscript er ændret. Ingen API-kald.
 
-**Commits:** udfyldes ved commit på `arbejde/113-spilleformats-rangering-hierarki`.
+**Commits:** `3d02768` (Opgave 113: rangér holdopstillingsformater separat fra familier).
