@@ -1,0 +1,43 @@
+{
+  "task": "109-kredsserien-vest-sammenlaegning-og-foer-fordeling",
+  "accessed": "2026-09-27",
+  "establishment": {
+    "earliestDocumented": "2014/15",
+    "exactEstablishmentSeason": null,
+    "evidence": [
+      {
+        "url": "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=77746",
+        "date": "2015-03-24",
+        "quote": "Harmoniseringen af holdturneringen i hele Badminton Danmark, har medført en Kredsserie Vest, der dækker de 4 kredse vest for Storebælt."
+      }
+    ],
+    "interpretation": "Dokumenteret senest i 2014/15; etableringsbeslutningens sæson er ikke angivet."
+  },
+  "preMergerDistribution": {
+    "status": "unresolved",
+    "officialSourcesFound": [],
+    "searched": [
+      "Badminton Fyn, Midtjylland, Nordjylland og Sønderjylland: reglementer/årsberetninger 2010-2016",
+      "badmintonpeople.dk og kredsenes arkiver: Kredsserie Vest, Vestserien, oprykning, pladser, 2014/15, 2015/16",
+      "Badminton Danmarks offentlige holdturneringsreglementer og PDF-/arkivspor"
+    ],
+    "relatedEvidence": [
+      {
+        "url": "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=78859",
+        "note": "Fælles vestreglement med 2018-model: Nordjylland 2, Sønderjylland/Midtjylland 4 hver, Fyn 2; ikke en før-sammenlægningstabel."
+      },
+      {
+        "url": "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=75911",
+        "note": "Fynsk reglement, revideret 1. august 2018; ingen historisk før-fordeling."
+      }
+    ],
+    "conclusion": "Christoffers erindring om Fyn 1 og 4-5 delte jyske pladser kan hverken bekræftes eller afkræftes med de fundne offentlige kilder."
+  },
+  "sources": [
+    "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=77746",
+    "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=78859",
+    "https://badmintoninordjylland.dk/wp-content/uploads/2022/08/Reglement-for-Kredsserien-Vest-og-Serie-1-Vest-2021.pdf",
+    "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=75911",
+    "https://abcdocz.com/doc/3922725/orientering-om-f%C3%A6lles-holdturnering---mimer"
+  ]
+}

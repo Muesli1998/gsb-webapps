@@ -63,3 +63,19 @@ De ufyldte år er markeret som huller. Nutidige regler er ikke projiceret bagud.
 - Ingen database er ændret, og ingen kamp-/resultat-API er kaldt.
 
 Maskinlæsbar udvidelse: [105-national-styrke-dag.json](105-national-styrke-dag.json).
+
+## Opgave 109 — dedikeret genopsamling (2026-09-27)
+
+### Kredsserie Vests tidligste dokumenterede eksistens
+
+Den hidtil tidligste konkrete kilde er **Badminton Midtjyllands årsmøde/årsberetning 24. marts 2015** ([PDF](https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=77746)). På side 6 står: “Harmoniseringen af holdturneringen i hele Badminton Danmark, har medført en Kredsserie Vest, der dækker de 4 kredse vest for Storebælt.” Det dokumenterer, at den fælles struktur eksisterede senest i sæsonen 2014/15, men teksten angiver hverken en etableringssæson eller en særskilt beslutningsdato. Derfor ændres den tidligere formulering ikke til et påstået startår: 2016/17 er fortsat første komplette landskabsobservation, mens 2014/15 er tidligste dokumenterede eksistens.
+
+En sekundær omtale af den kommende 2015/16-sæson ([Orientering om fælles holdturnering](https://abcdocz.com/doc/3922725/orientering-om-f%C3%A6lles-holdturnering---mimer)) peger i samme retning, men bruges ikke som officiel beslutningskilde.
+
+### Før-sammenlægningens fordeling
+
+Den ældre særskilte fordeling mellem Fyn, Midtjylland, Nordjylland og Sønderjylland er fortsat **uafklaret**. Der blev søgt i de fire kredses offentlige reglementer, årsberetninger og arkiver for 2010–2016 med søgeordene `Kredsserie Vest`, `Kredsserien Vest`, `Vestserien`, `oprykning`, `Danmarksserie`, `pladser`, `2014/15` og `2015/16`, samt i Badminton Danmarks offentlige holdturneringsreglementer og tilgængelige PDF-/arkivspor. Ingen fundet kilde angiver den påståede fordeling “Fyn 1, resten delt mellem jyllandskredsene”.
+
+Den fælles vestlige reglementskilde ([2018-reglement, PDF](https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=78859), §20) angiver i stedet den daværende model for oprykning til Serie 1: Nordjylland 2, Sønderjylland 4, Midtjylland 4 og Fyn 2. Det er en efter-sammenlægningstabel og må ikke bruges som rekonstruktion af den ældre fordeling. [Fyns reglement, revideret 1. august 2018](https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=75911), omtaler lokale kvalifikationsrækker og oprykning til Serie 1, men giver heller ikke den historiske før-fordeling.
+
+**109-konklusion:** sammenlægningen er dokumenteret senest 2014/15, mens den præcise etableringssæson/beslutning og før-fordelingen forbliver uafklarede. Maskinlæsbar søgelog og kildeuddrag findes i `109-kredsserien-vest-sammenlaegning-og-foer-fordeling.json`.

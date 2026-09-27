@@ -91,4 +91,14 @@ etableringsåret" i stedet for at antage det er samme ting.
 
 ## Resultatnote
 
+**Resultat — 109:**
+
+- Tidligste dokumenterede eksistens: 2014/15 (kilde dateret 24. marts 2015); præcis etableringssæson ikke fundet.
+- Før-fordeling Fyn/jyllandskredse: uafklaret efter dokumenteret søgning i 2010–2016-kilder.
+- **Kontroloutput:** `node statistik/scripts/109-kredsserien-vest-sammenlaegning.mjs`; JSON skrevet; `git status --short statistik/data/` tom.
+- **Hvad blev gjort:** 105-rapporten opdateret med kilder og grænse.
+- **Hvad blev fravalgt:** ingen interpolation, databaseændring eller API-kald.
+- **Commits:** udfyldes ved commit.
+
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+
