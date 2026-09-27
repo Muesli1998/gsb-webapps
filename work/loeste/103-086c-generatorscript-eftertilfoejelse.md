@@ -78,3 +78,19 @@ omhyggelig med at verificere at reproduktionen matcher de allerede godkendte tal
 ## Resultatnote
 
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+
+## Resultatnote
+
+**Hvad blev gjort:** Oprindelig generator blev ikke fundet i repo eller git-historik. Byggede
+`statistik/scripts/103-086c-klassifikation.mjs` som en tydeligt mærket rekonstruktion fra den
+allerede godkendte 086c-HTML og de dokumenterede fallback-regler.
+
+**Kontroloutput:** `node statistik/scripts/103-086c-klassifikation.mjs` gav 59.127 forekomster,
+18.546 unikke puljer, 686 arvede grundspilssignaturer, 839 tekstsignaler, 856 ukendte og 0
+rækkeafvigelser mod HTML'ens indlejrede datasæt. `git status --short statistik/data/` indeholder
+kun den kendte untracked data-mappe; ingen databasefil er ændret.
+
+**Fravalgt:** HTML-filen blev ikke genskrevet, fordi kontrolscriptet allerede bekræfter den
+samme klassifikation række for række og opgaven kun krævede eftertilføjelse af generatoren.
+
+**Commits:** afventer commit på denne gren.
