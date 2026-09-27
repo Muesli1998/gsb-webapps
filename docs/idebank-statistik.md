@@ -558,3 +558,11 @@ Hold-fanens holdsammenlægning, og bør give input til flere af punkterne ovenfo
 ## Fremtidig liga-udforsker oven på liga-landskabet (noteret 2026-09-26)
 
 Senere: interaktiv udforsker oven på `liga-landskab.db` med klub-/turneringsfilter, stigevisning, puljestilling, holdets kampe/spillere/resultater og kampdetaljer. 086c er kun et statisk QA-kort; udforskeren kræver en selvstændig produktopgave.
+
+## Lokalhistorik for regionale oprykningspladser (noteret 2026-09-27)
+
+Undersøg Bornholms konkrete historiske brug af Danmarksseriepladsen og de
+detaljerede, år-for-år regionale op-/nedrykningstal. Opgave 105 har bekræftet
+de nationale pladsfordelinger i udvalgte reglementsår, men denne lokale
+historik kræver særskilt kildegrundlag og må ikke udledes af de nuværende
+regler.

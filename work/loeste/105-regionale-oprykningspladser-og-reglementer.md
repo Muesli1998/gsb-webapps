@@ -161,3 +161,27 @@ af hvordan researchen blev udført, så resultatet er ét samlet, konsistent dok
 ## Resultatnote
 
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+
+### Resultat (2026-09-27)
+
+**Hvad blev gjort:**
+
+- Gennemgik den offentligt tilgængelige nationale §29-regeltekst for 2020 og 2022–2026. Den dokumenterer otte regionale DS-pladser: Vest-kredsene samlet 6; Sjælland 2; Lolland-Falster 1 med overtagelse til Sjælland; København 2; Bornholm 1 med overtagelse til København.
+- Fandt Kredsserie Vests variable 2017/18-model (4–8 pladser efter vestlige nedrykninger) og den senere seks-pladsmodel (fire direkte plus to kryds-playoffs). Den præcise Fyn/Jylland-fordeling før den fælles struktur blev ikke fundet og står derfor uafklaret.
+- Udvidede 104-DAG'en i et separat 105-output med fem regionale struktur-noder og fem `strukturel_regeltekst_regional`-kanter fra Danmarksserien. 104's 20.145 noder og 8 kanter er bevaret uændret.
+- Noterede det senere lokalhistorik-spor i `docs/idebank-statistik.md`.
+
+**Kontroloutput:**
+
+- 105-DAG: 20.150 noder og 13 kanter; 5 regionale strukturkanter; 0 kanter uden for de tilladte nationale/regional-strukturelle scopes.
+- 104-regression: 20.145 noder, 8 kanter, 33 regioner, 59.127 forekomster og 18.546 unikke puljer.
+- 103-regression: 686 arvede, 839 tekstsignaler, 856 ukendte og 0 afvigelser fra 086c.
+- SHA-256 før/efter: `gsb-statistik-normalized.db` `49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E`; `liga-landskab.db` `9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C`.
+
+**Hvad blev fravalgt og hvorfor:**
+
+- Ingen national §29-allokation er antaget for 2010/11–2019/20 eller 2021/22, hvor denne gennemgang ikke fandt en dokumenterende udgave.
+- Sammenlægningssæsonen for Kredsserie Vest og den præcise før-fordeling er ikke sat: 2015-kilden beviser kun, at strukturen allerede fandtes.
+- Bornholms konkrete pladsbrug og historiske op-/nedrykningstal er lagt i idébanken som et selvstændigt senere spor.
+
+**Commits:** udfyldes ved commit.
