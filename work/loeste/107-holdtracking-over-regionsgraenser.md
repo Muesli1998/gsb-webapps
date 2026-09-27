@@ -110,4 +110,21 @@ begrænset/tomt fund for den region i stedet for at presse et resultat frem.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+**Kontroloutput:** `node statistik/scripts/107-holdtracking-over-regionsgraenser.mjs` afsluttede med exit 0. Der er 717 unikke regionale grundspilsknuder efter deduplikering af Kredsserie Vests fælles puljer på tværs af region-id 4–7. 194 direkte nabosæson-overgange er entydige (metode A), fordelt på 81 regional→DH og 113 DH→regional. 207 rækker er flertydige eller alene metode-B/C-signaler; 429 regionale→DH-forsøg har ingen kandidat og er bevaret som ubekræftede. Regnskabet i JSON stemmer: A = 194 = `confirmed_transitions`; regionale ambiguity-tal summer til 207 = `ambiguity_reviews`.
+
+| Region | Grundspilsknuder | Entydige A-fund | B-signal | C-signal | Flertydig/signal | Ubekræftet regional→DH |
+|---|---:|---:|---:|---:|---:|---:|
+| Sjælland (region 10) | 256 | 98 | 0 | 68 | 85 | 128 |
+| Lolland-Falster (region 9) | 87 | 2 | 0 | 3 | 3 | 83 |
+| Bornholm (region 3) | 22 | 0 | 0 | 0 | 0 | 22 |
+| Kredsserie Vest (region 4, 5, 6, 7) | 352 | 94 | 0 | 93 | 119 | 196 |
+
+**Hvad blev gjort:** Tilføjede `statistik/scripts/107-holdtracking-over-regionsgraenser.mjs` og rapporterne `statistik/results/107-holdtracking-over-regionsgraenser.md`/`.json`. Scriptet bruger fire eksplicitte, versionerede mappinger: Sjællandsserien 2011/12–2026/27, LF-Serien 2011/12–2026/27, Bornholmsserien 2011/12–2015/16 og Kredsserie Vest 2016/17–2026/27. Hver mapping verificeres mod 105's regionale strukturkant før analysen. Kredsserie Vest deduplikeres på sæson, pulje og hold, fordi de samme fælles puljer ligger under alle fire vestlige region-id'er.
+
+Metode A er med vilje et strengt direkte grænseanker (samme normaliserede klubnavn og holdnummer i den næste sæson); den fulde 087-kaskade bruges ikke til at udfylde ukendte lokale led. Metode B og C er kun signaler til manuel gennemgang. Lolland-Falster og Bornholm må kun krydse spilleform-familie gennem 105's dokumenterede regionale regeltekstkant; der findes to entydige LF↔Danmarksserien-spor og ingen Bornholm-spor. Bornholms pladsbrug er ikke analyseret særskilt.
+
+**Værn:** `liga-landskab.db` SHA-256 før/efter var uændret: `9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C`. `104-national-styrke-dag.json` og `105-national-styrke-dag.json` har ingen diff. `git status --short statistik/data/` viser kun den allerede eksisterende utrackede data-mappe; ingen tracked databasefil er ændret. Ingen API-kald blev foretaget.
+
+**Hvad blev fravalgt og hvorfor:** Ingen ny identitet er postuleret for B/C-signaler eller tomme søgninger. Ingen lokalhistorik for Bornholms konkrete pladsbrug er bygget. Ingen database, DAG-kilde-JSON eller produktkode er ændret.
+
+**Commits:** udfyldes ved commit på `arbejde/107-holdtracking-over-regionsgraenser`.
