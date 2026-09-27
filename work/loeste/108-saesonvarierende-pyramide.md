@@ -95,4 +95,14 @@ tilfælde) er et reelt strukturskift eller bare en administrativ omdøbning uden
 
 ## Resultatnote
 
+**Resultat — 108:**
+
+- Noder/kanter: 20.150 noder og 13 kanter fra 105, alle tilført sæsongyldighedsmetadata uden ændring af kildeindholdet.
+- Kendte skift: Kredsserie Vest 2017/18 variabel 4–8, senere seks-pladsmodel med uafklaret præcis overgang; København-navnefamilien bevaret som observeret skift med uafklarede grænser.
+- Visning: ny HTML med sæsonvælger, hulperioder og aggregering af uforbundne noder.
+- GSB-accepttest: 101’s ægte 2016/17–2022/23-pause for hold 4 bevares; hold 5 2015/16 og hold 4 2016/17 forbliver eksplicit uafklarede.
+- **Kontroloutput:** generatoren kørte; 20.150 noder, 13 kanter, 20.134 foldede uforbundne noder; `git status --short statistik/data/` tom.
+- **Hvad blev fravalgt:** ingen ny research, API-kald eller databaseskrivning; 104/105/106 blev ikke ændret.
+- **Commits:** udfyldes ved commit.
+
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
