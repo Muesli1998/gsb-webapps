@@ -184,4 +184,4 @@ af hvordan researchen blev udført, så resultatet er ét samlet, konsistent dok
 - Sammenlægningssæsonen for Kredsserie Vest og den præcise før-fordeling er ikke sat: 2015-kilden beviser kun, at strukturen allerede fandtes.
 - Bornholms konkrete pladsbrug og historiske op-/nedrykningstal er lagt i idébanken som et selvstændigt senere spor.
 
-**Commits:** udfyldes ved commit.
+**Commits:** `8b2ecf7`.
