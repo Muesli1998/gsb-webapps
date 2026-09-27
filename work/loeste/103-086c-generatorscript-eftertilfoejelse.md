@@ -93,4 +93,5 @@ kun den kendte untracked data-mappe; ingen databasefil er ændret.
 **Fravalgt:** HTML-filen blev ikke genskrevet, fordi kontrolscriptet allerede bekræfter den
 samme klassifikation række for række og opgaven kun krævede eftertilføjelse af generatoren.
 
-**Commits:** afventer commit på denne gren.
+**Commits:** `96e7147` (generator, kontrol og resultatnote).
+
