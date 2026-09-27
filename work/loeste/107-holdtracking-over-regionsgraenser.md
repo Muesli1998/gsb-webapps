@@ -127,4 +127,4 @@ Metode A er med vilje et strengt direkte grænseanker (samme normaliserede klubn
 
 **Hvad blev fravalgt og hvorfor:** Ingen ny identitet er postuleret for B/C-signaler eller tomme søgninger. Ingen lokalhistorik for Bornholms konkrete pladsbrug er bygget. Ingen database, DAG-kilde-JSON eller produktkode er ændret.
 
-**Commits:** udfyldes ved commit på `arbejde/107-holdtracking-over-regionsgraenser`.
+**Commits:** 2e4429b.
