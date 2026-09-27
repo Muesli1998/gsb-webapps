@@ -83,4 +83,14 @@ foregive præcision der ikke findes.
 
 ## Resultatnote
 
+**Resultat — 110:**
+
+- Nye nationalt citerede §29-udgaver for de ældre huller: 0.
+- Ny regional kilde: Kredsserie Vest-reglement 2021, §16, som dokumenterer den vestlige seks-pladsmodel omkring 2021/22; øvrige regioners pladstal for 2021/22 er ikke fundet.
+- 2010/11–2019/20 forbliver et dokumenteret hul for den fulde regionale pladstabel. 2015/16-eksistensen af fælles Kredsserie Vest er videreført fra opgave 109, men er ikke en fuld §29-fordeling.
+- 2020/21 og 2022/23–2026/27 beholder 105's eksisterende direkte nationalt dokumenterede tal.
+- **Kontroloutput:** ingen databasefiler ændret; eksisterende citerede 105-fund er bevaret; der er ikke interpoleret pladstal.
+- **Søgning:** badminton.dk's holdturneringsarkiv, fire vestlige kredses egne arkiver, badmintonpeople.dk's ældre PDF-spor og målrettede søgninger på årstal, §29, Kredsserie Vest og de regionale rækkenavne.
+- **Commits:** udfyldes ved commit.
+
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*

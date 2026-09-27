@@ -79,3 +79,26 @@ Den ældre særskilte fordeling mellem Fyn, Midtjylland, Nordjylland og Sønderj
 Den fælles vestlige reglementskilde ([2018-reglement, PDF](https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=78859), §20) angiver i stedet den daværende model for oprykning til Serie 1: Nordjylland 2, Sønderjylland 4, Midtjylland 4 og Fyn 2. Det er en efter-sammenlægningstabel og må ikke bruges som rekonstruktion af den ældre fordeling. [Fyns reglement, revideret 1. august 2018](https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=75911), omtaler lokale kvalifikationsrækker og oprykning til Serie 1, men giver heller ikke den historiske før-fordeling.
 
 **109-konklusion:** sammenlægningen er dokumenteret senest 2014/15, mens den præcise etableringssæson/beslutning og før-fordelingen forbliver uafklarede. Maskinlæsbar søgelog og kildeuddrag findes i `109-kredsserien-vest-sammenlaegning-og-foer-fordeling.json`.
+
+## Opgave 110 — udvidet søgning efter reglementshuller (2026-09-27)
+
+### Nye/afgrænsede kilder
+
+Søgningen dækkede Badminton Danmarks offentlige holdturneringsreglementer, badminton.dk's holdturneringsarkiv, Badminton Fyns, Midtjyllands, Nordjyllands og Sønderjyllands reglements-/årsberetningsarkiver samt søgeordene `Holdturneringsreglement`, `§29`, `oprykning fra kredsene`, `Kredsserie Vest`, `Vestserien`, `Sjællandsserien`, `Lolland-Falster`, `Københavnsserien`, `Bornholmsserien`, `2010`–`2022`. Der blev også kontrolleret ældre PDF-spor på badmintonpeople.dk og kredsenes egne dokumentarkiver.
+
+Den direkte [fælles Vest-regeltekst fra 2021](https://badmintoninordjylland.dk/wp-content/uploads/2022/08/Reglement-for-Kredsserien-Vest-og-Serie-1-Vest-2021.pdf), §16, bekræfter Kredsserie Vest-modellen i den relevante periode: nr. 1 og 2 fra oprykningspuljerne rykker direkte op, mens nr. 3/4 spiller om de resterende pladser; §16 beskriver også seks nedrykkere til Serie 1. Kilden er derfor et regionalt belæg omkring 2021/22, men den er ikke en national §29-tekst og bruges ikke til at projicere regler bagud.
+
+Den [fælles Vest-tekst fra 2018](https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=78859), §20, viser at pladsantallet på det tidspunkt var variabelt efter antallet af vestlige nedrykkere fra 3. division og angiver den daværende lokale fordeling til Serie 1. Den bekræfter derfor ikke den senere faste seks-pladsmodel for alle tidligere sæsoner.
+
+### Sæsonstatus efter gennemgangen
+
+| Periode | Kilde-status | Pladstal | Vurdering |
+|---|---|---|---|
+| 2010/11–2019/20 | Ingen ny national/regional kilde med fuld regional §29-fordeling fundet; 2015/16-eksistensen af fælles Kredsserie Vest er dokumenteret i 109 | Ikke fastslået | Hul; intet pladstal interpoleret |
+| 2020/21 | Eksisterende national DH-kilde i 105, §29 | Vest 6; Sjælland 2; LF 1; København 2; Bornholm 1 | Direkte nationalt belæg |
+| 2021/22 | Regional Vest-kilde fra 2021, §16; ingen ny national §29-udgave fundet | Vestlig Kredsserie Vest-model med seks pladser; øvrige regionale pladstal ikke dokumenteret for denne sæson | Delvist dækket; øvrige regioner hul |
+| 2022/23–2026/27 | Eksisterende nationale udgaver i 105, §29 | Vest 6; Sjælland 2; LF 1; København 2; Bornholm 1 | Direkte nationalt belæg |
+
+### Konklusion om stabilitet
+
+Pladstallene er **ikke dokumenteret som stabile i hele 2010–2026**. De er direkte bekræftet som Vest 6, Sjælland 2, Lolland-Falster 1, København 2 og Bornholm 1 i den allerede dækkede nationale periode 2020/21 og 2022/23–2026/27. 2018-kilden viser samtidig en variabel Vest-model, og 2021-kilden dækker kun Vest-reglementet. De resterende ældre år er fortsat huller med en konkret søgelog; ingen ældre pladstal er antaget.
