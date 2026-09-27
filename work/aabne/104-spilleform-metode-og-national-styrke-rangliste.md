@@ -117,3 +117,29 @@ for at gætte en forbindelse. Det er bedre at vise "vi ved det ikke" end en fork
 ## Resultatnote
 
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+
+### Stop: DH-stigens regeltekst krydser spilleform-familier
+
+Den read-only DAG-kørsel viser, at kravene om både (a) en total orden for hele
+DH-stigen og (b) aldrig at rangere forskellige spilleform-familier ikke kan
+opfyldes samtidigt med den gemte kategoridata:
+
+| Nationalt niveau | Distinkte gemte familiesignaturer |
+|---|---:|
+| Badmintonligaen | 2 (6 og 9 kategorier) |
+| 1. division | 2 (9 og 13 kategorier) |
+| 2. division | 1 (13 kategorier) |
+| 3. division | 1 (13 kategorier) |
+| Danmarksserien | 1 (13 kategorier) |
+
+Der er derfor dokumenterede, familierene kanter for `1. division → 2. division
+→ 3. division → Danmarksserien`, men Badmintonligaen kan ikke knyttes til
+1. division uden at bruge en 9-kategori-familie, mens hovedkæden nedenunder er
+13 kategorier. Generatoren har derfor med vilje ikke tvunget én sammenhængende
+DH-rangliste.
+
+**Christoffers beslutning behøves:** Skal en eksplicit DH-regeltekst kunne give
+et separat *strukturelt niveauforhold* på tværs af spilleform-familier (tydeligt
+mærket "ikke sportsligt sammenlignelig"), eller skal DAG'en fortsat respektere
+familiegrænsen absolut og vise DH som to uforbundne komponenter? Indtil svar
+bliver der ikke tilføjet en tværfamilie-kant.

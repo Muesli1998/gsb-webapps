@@ -339,6 +339,30 @@ Denne standard gælder for al fremtidig rapportering af "hold" i
 Results-rapporten og enhver senere Preview-side — den er ikke kun en
 engangsrettelse til 042/043.
 
+**Spilleforms-standard (besluttet med Chris 2026-09-27, efter opgave
+086c/103).** En pulje må kun sammenlignes med puljer i samme
+spilleform-familie. Familien afgøres i denne faste rækkefølge:
+
+- Brug først den fulde, sorterede mængde af gemte `match_categories.category_raw`
+  fra puljens kampe. Det er den stærkeste kilde, fordi den beskriver det faktisk
+  spillede regelsæt.
+- Mangler en slutspils-, kvalifikations- eller spilletidsside selv kategorier,
+  må den kun arve familie fra en **entydig** grundspilsrække med samme
+  normaliserede rækkenavn i samme region, sæson og aldersgruppe. Flere mulige
+  familiesignaturer betyder ingen arv.
+- Mangler kategorier stadig, er et eksplicit formatsignal i rækkenavnet en
+  separat tekstbaseret familie: fx `4+3`, `4+2`, `2+2`, `4 spillere` eller
+  `4 piger`. Tekstsignal må aldrig føde endnu en arv.
+- Uden kategorisignatur, entydig arv eller eksplicit tekstsignal er familien
+  `Ukendt format — ingen kategorier eller formatsignal`. Den må ikke rangeres
+  eller sammenlignes med nogen kendt familie.
+
+Familien er et regelsæt, ikke et styrkeniveau. En niveau-/styrkerangering må
+aldrig forbinde eller sammenligne forskellige familier. Den reproducerbare
+implementering og række-for-række-kontrol ligger i
+`statistik/scripts/103-086c-klassifikation.mjs`; opgave 104's nationale
+styrke-DAG bruger samme klassifikation.
+
 **Note (2026-09-17): regelsæt-koder er holdtype, ikke niveau — og et
 manglende niveau-bogstav er ikke automatisk en fejl.** Ved Chris'
 visuelle gennemgang af to konkrete opgave 051-identiteter (Gladsaxe
