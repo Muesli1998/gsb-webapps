@@ -115,5 +115,5 @@ Ingen veteran-aldersgrænsekode forekommer i nogen kategorisignatur. Læk til Sp
 | 2022/2023 | 2 DGI | UNG | ukendt | 4 spillere | ukendt | andet/ukendt | 1. D · 1. S · 2. D · 2. S · 3. S · 4. S | 41 | 41 |
 | 2022/2023 | 1 Badminton Danmark | U13 | ukendt | 4 spillere | ukendt | slutspil | 1. D · 1. S · 2. D · 2. S · 3. S · 4. S | 40 | 40 |
 
-Det fulde, maskinlæsbare katalog indeholder alle 18401 kombinationer og alle 59127 kilderekorder, inklusive freetext_raw og rå felter: [112-spilleformats-katalog-alle-aargange.json](112-spilleformats-katalog-alle-aargange.json).
+Det maskinlæsbare katalog indeholder alle 18401 kombinationer med antal, antal unikke puljer og fritekst-eksempler. De 59127 rå kilderekorder duplikeres ikke i git-artefaktet: [112-spilleformats-katalog-alle-aargange.json](112-spilleformats-katalog-alle-aargange.json).
 
