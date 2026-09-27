@@ -1,0 +1,8 @@
+{
+  "task": "110-regionale-reglementshuller-2010-2026",
+  "generated_at": "2026-09-27",
+  "source_report": "105-regionale-oprykningspladser-og-reglementer.md",
+  "new_findings": [{"period": "2021/22", "scope": "Kredsserie Vest", "source_url": "https://badmintoninordjylland.dk/wp-content/uploads/2022/08/Reglement-for-Kredsserien-Vest-og-Serie-1-Vest-2021.pdf", "section": "§16", "status": "partial"}],
+  "gaps": [{"period": "2010/11-2019/20", "status": "unresolved", "searched": "badminton.dk, fire vestlige kredsarkiver, badmintonpeople.dk, målrettede PDF-søgninger"}, {"period": "2021/22", "status": "partial", "searched": "samme kilder; national §29 ikke fundet"}],
+  "stability": {"directly_documented_periods": ["2020/21", "2022/23-2026/27"], "regional_2021_vest": "six-place model", "older_periods": "not interpolated"}
+}
