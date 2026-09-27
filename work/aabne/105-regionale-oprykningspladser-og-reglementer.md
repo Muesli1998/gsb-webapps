@@ -24,6 +24,14 @@ regionerne — hans egen klub-/kredsviden, IKKE endnu bekræftet mod en konkret 
   er flere, og generelt fordi "vi skal virkelig kigge reglementerne igennem" som en bredere,
   fremadrettet indsats — ikke kun for denne ene regel.
 
+De reglementer der hidtil er dokumenteret i 086-familien dækker kun tre enkeltstående årgange
+(2021, 2023, 2025) — men den periode denne opgave (og statistikprojektet generelt) kigger på går
+tilbage til 2010. Reglerne for oprykningspladser kan være ændret undervejs (fx netop Kredsserie
+Vest-sammenlægningen), så en enkelt "nutids-reglement" er ikke nok til at garantere korrekthed for
+hele perioden. Målet er at finde og citere reglementer for så mange af sæsonerne 2010-2026 som muligt
+— ikke kun det seneste — og eksplicit angive hvilke sæsoner der er dækket af hvilken reglementsversion,
+og hvilke sæsoner der (endnu) ikke er bekræftet af noget fundet reglement.
+
 Yderligere mekanikker Christoffer har nævnt, som også skal findes i reglementet, ikke gættes:
 - Ekstra oprykningspladser bliver tilgængelige hvis hold trækker sig.
 - Oprykning er begrænset af hvor mange hold en klub allerede har i DH (fx kan en klub med 5 hold i DH
@@ -51,6 +59,12 @@ i idébanken når dette kort afsluttes, men byg det ikke her.
    DH-reglementets §17-25/§28. Kan en regel ikke bekræftes i en offentligt tilgængelig kilde: dokumentér
    det eksplicit som "Christoffers klubkendskab, ikke reglements-bekræftet" i stedet for at foregive et
    citat der ikke findes.
+   **Årgangsdækning:** forsøg at finde reglementsversioner for flest mulige sæsoner i perioden
+   2010-2026, ikke kun 2021/2023/2025 som allerede er dokumenteret i 086-familien. Byg en liste/tabel
+   over hvilken reglementsversion (med citeret kilde/dato) dækker hvilke sæsoner, og marker eksplicit de
+   sæsoner hvor intet reglement er fundet endnu, i stedet for at antage at den nyeste version har gældt
+   hele perioden. Det er accepteret at dette bliver ufuldstændigt — dokumentér hullerne tydeligt frem
+   for at gætte dem udfyldt.
 3. **Undersøg Kredsserie Vest's FØR-sammenlægning-fordeling** (Fyn: 1 plads, 4-5 pladser mellem
    "jyllandskredsene"): find den præcise, gamle fordeling (hvilke konkrete kredse — Midtjylland,
    Nordjylland, Sønderjylland? — og om fordelingen var fast pr. kreds eller roterende/forhandlet) i
@@ -134,6 +148,11 @@ IKKE har nævnt findes (fx en fjerde regionsgruppering), spørg i "Spørgsmål" 
 ## Gren
 
 `arbejde/105-regionale-oprykningspladser-og-reglementer`, fra `main`.
+
+**Arbejdsform:** hvis du kan parallelisere reglements-research (fx via flere sub-agenter, en pr.
+regionsgruppering eller pr. tidsperiode), er det tilladt og opfordret — det er en stor mængde
+reglementstekst at gennemgå tilbage til 2010. Saml alle fund i den samme kildeliste/tabel uafhængigt
+af hvordan researchen blev udført, så resultatet er ét samlet, konsistent dokument.
 
 ---
 
