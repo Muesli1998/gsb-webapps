@@ -1,0 +1,3168 @@
+{
+  "generated_at": "2026-09-27T15:39:53.301Z",
+  "method": "Read-only direct SQL; same conservative identity basis as 107 (canonical club + hold number, no invented aliases); counts are exact name/number traces, not proof of every promotion.",
+  "bornholm_name_scan": [
+    {
+      "season_id": 2011,
+      "division_name_raw": "Bornholmsserien",
+      "group_name_raw": "Pulje 1"
+    },
+    {
+      "season_id": 2012,
+      "division_name_raw": "Bornholmsserien",
+      "group_name_raw": "Pulje 1"
+    },
+    {
+      "season_id": 2013,
+      "division_name_raw": "Bornholmsserien",
+      "group_name_raw": "Pulje 1"
+    },
+    {
+      "season_id": 2014,
+      "division_name_raw": "Bornholmsserien",
+      "group_name_raw": "Pulje 1"
+    },
+    {
+      "season_id": 2015,
+      "division_name_raw": "Bornholmsserien",
+      "group_name_raw": "Pulje 1"
+    }
+  ],
+  "regional_summaries": {
+    "København": {
+      "region_ids": [
+        8
+      ],
+      "slots": "2 (plus Bornholm-plads ved manglende brug)",
+      "season_rows": {
+        "2022": {
+          "regional_teams": 16,
+          "regional_groups": 2,
+          "regional_to_national_exact": 3,
+          "national_to_regional_exact": 2,
+          "expected_slots": "2 (plus Bornholm-plads ved manglende brug)"
+        },
+        "2023": {
+          "regional_teams": 16,
+          "regional_groups": 2,
+          "regional_to_national_exact": 3,
+          "national_to_regional_exact": 3,
+          "expected_slots": "2 (plus Bornholm-plads ved manglende brug)"
+        },
+        "2024": {
+          "regional_teams": 16,
+          "regional_groups": 2,
+          "regional_to_national_exact": 3,
+          "national_to_regional_exact": 4,
+          "expected_slots": "2 (plus Bornholm-plads ved manglende brug)"
+        },
+        "2025": {
+          "regional_teams": 16,
+          "regional_groups": 2,
+          "regional_to_national_exact": 3,
+          "national_to_regional_exact": 4,
+          "expected_slots": "2 (plus Bornholm-plads ved manglende brug)"
+        },
+        "2026": {
+          "regional_teams": 16,
+          "regional_groups": 2,
+          "regional_to_national_exact": 0,
+          "national_to_regional_exact": 2,
+          "expected_slots": "2 (plus Bornholm-plads ved manglende brug)"
+        }
+      },
+      "total_regional_nodes": 80,
+      "total_exact_regional_to_national": 12,
+      "total_exact_national_to_regional": 15
+    },
+    "Sjælland": {
+      "region_ids": [
+        10
+      ],
+      "slots": "2",
+      "season_rows": {
+        "2011": {
+          "regional_teams": 16,
+          "regional_groups": 2,
+          "regional_to_national_exact": 5,
+          "national_to_regional_exact": 6,
+          "expected_slots": "2"
+        },
+        "2012": {
+          "regional_teams": 16,
+          "regional_groups": 2,
+          "regional_to_national_exact": 5,
+          "national_to_regional_exact": 5,
+          "expected_slots": "2"
+        },
+        "2013": {
+          "regional_teams": 16,
+          "regional_groups": 2,
+          "regional_to_national_exact": 4,
+          "national_to_regional_exact": 2,
+          "expected_slots": "2"
+        },
+        "2014": {
+          "regional_teams": 16,
+          "regional_groups": 2,
+          "regional_to_national_exact": 5,
+          "national_to_regional_exact": 5,
+          "expected_slots": "2"
+        },
+        "2015": {
+          "regional_teams": 16,
+          "regional_groups": 2,
+          "regional_to_national_exact": 5,
+          "national_to_regional_exact": 2,
+          "expected_slots": "2"
+        },
+        "2016": {
+          "regional_teams": 16,
+          "regional_groups": 2,
+          "regional_to_national_exact": 4,
+          "national_to_regional_exact": 5,
+          "expected_slots": "2"
+        },
+        "2017": {
+          "regional_teams": 16,
+          "regional_groups": 2,
+          "regional_to_national_exact": 6,
+          "national_to_regional_exact": 7,
+          "expected_slots": "2"
+        },
+        "2018": {
+          "regional_teams": 16,
+          "regional_groups": 2,
+          "regional_to_national_exact": 6,
+          "national_to_regional_exact": 6,
+          "expected_slots": "2"
+        },
+        "2019": {
+          "regional_teams": 16,
+          "regional_groups": 2,
+          "regional_to_national_exact": 3,
+          "national_to_regional_exact": 1,
+          "expected_slots": "2"
+        },
+        "2020": {
+          "regional_teams": 16,
+          "regional_groups": 2,
+          "regional_to_national_exact": 0,
+          "national_to_regional_exact": 2,
+          "expected_slots": "2"
+        },
+        "2021": {
+          "regional_teams": 16,
+          "regional_groups": 2,
+          "regional_to_national_exact": 3,
+          "national_to_regional_exact": 1,
+          "expected_slots": "2"
+        },
+        "2022": {
+          "regional_teams": 16,
+          "regional_groups": 2,
+          "regional_to_national_exact": 3,
+          "national_to_regional_exact": 2,
+          "expected_slots": "2"
+        },
+        "2023": {
+          "regional_teams": 16,
+          "regional_groups": 2,
+          "regional_to_national_exact": 3,
+          "national_to_regional_exact": 3,
+          "expected_slots": "2"
+        },
+        "2024": {
+          "regional_teams": 16,
+          "regional_groups": 2,
+          "regional_to_national_exact": 5,
+          "national_to_regional_exact": 2,
+          "expected_slots": "2"
+        },
+        "2025": {
+          "regional_teams": 16,
+          "regional_groups": 2,
+          "regional_to_national_exact": 3,
+          "national_to_regional_exact": 3,
+          "expected_slots": "2"
+        },
+        "2026": {
+          "regional_teams": 16,
+          "regional_groups": 2,
+          "regional_to_national_exact": 0,
+          "national_to_regional_exact": 3,
+          "expected_slots": "2"
+        }
+      },
+      "total_regional_nodes": 256,
+      "total_exact_regional_to_national": 60,
+      "total_exact_national_to_regional": 55
+    },
+    "Lolland-Falster": {
+      "region_ids": [
+        9
+      ],
+      "slots": "1 (til Sjælland ved manglende brug)",
+      "season_rows": {
+        "2011": {
+          "regional_teams": 8,
+          "regional_groups": 1,
+          "regional_to_national_exact": 0,
+          "national_to_regional_exact": 0,
+          "expected_slots": "1 (til Sjælland ved manglende brug)"
+        },
+        "2012": {
+          "regional_teams": 8,
+          "regional_groups": 1,
+          "regional_to_national_exact": 0,
+          "national_to_regional_exact": 0,
+          "expected_slots": "1 (til Sjælland ved manglende brug)"
+        },
+        "2013": {
+          "regional_teams": 8,
+          "regional_groups": 1,
+          "regional_to_national_exact": 0,
+          "national_to_regional_exact": 0,
+          "expected_slots": "1 (til Sjælland ved manglende brug)"
+        },
+        "2014": {
+          "regional_teams": 8,
+          "regional_groups": 1,
+          "regional_to_national_exact": 0,
+          "national_to_regional_exact": 0,
+          "expected_slots": "1 (til Sjælland ved manglende brug)"
+        },
+        "2015": {
+          "regional_teams": 7,
+          "regional_groups": 1,
+          "regional_to_national_exact": 0,
+          "national_to_regional_exact": 0,
+          "expected_slots": "1 (til Sjælland ved manglende brug)"
+        },
+        "2016": {
+          "regional_teams": 7,
+          "regional_groups": 1,
+          "regional_to_national_exact": 0,
+          "national_to_regional_exact": 0,
+          "expected_slots": "1 (til Sjælland ved manglende brug)"
+        },
+        "2018": {
+          "regional_teams": 7,
+          "regional_groups": 1,
+          "regional_to_national_exact": 0,
+          "national_to_regional_exact": 0,
+          "expected_slots": "1 (til Sjælland ved manglende brug)"
+        },
+        "2019": {
+          "regional_teams": 6,
+          "regional_groups": 1,
+          "regional_to_national_exact": 0,
+          "national_to_regional_exact": 0,
+          "expected_slots": "1 (til Sjælland ved manglende brug)"
+        },
+        "2020": {
+          "regional_teams": 4,
+          "regional_groups": 1,
+          "regional_to_national_exact": 0,
+          "national_to_regional_exact": 0,
+          "expected_slots": "1 (til Sjælland ved manglende brug)"
+        },
+        "2021": {
+          "regional_teams": 4,
+          "regional_groups": 1,
+          "regional_to_national_exact": 0,
+          "national_to_regional_exact": 0,
+          "expected_slots": "1 (til Sjælland ved manglende brug)"
+        },
+        "2022": {
+          "regional_teams": 6,
+          "regional_groups": 1,
+          "regional_to_national_exact": 1,
+          "national_to_regional_exact": 1,
+          "expected_slots": "1 (til Sjælland ved manglende brug)"
+        },
+        "2023": {
+          "regional_teams": 5,
+          "regional_groups": 1,
+          "regional_to_national_exact": 0,
+          "national_to_regional_exact": 0,
+          "expected_slots": "1 (til Sjælland ved manglende brug)"
+        },
+        "2024": {
+          "regional_teams": 4,
+          "regional_groups": 1,
+          "regional_to_national_exact": 0,
+          "national_to_regional_exact": 0,
+          "expected_slots": "1 (til Sjælland ved manglende brug)"
+        },
+        "2025": {
+          "regional_teams": 5,
+          "regional_groups": 1,
+          "regional_to_national_exact": 0,
+          "national_to_regional_exact": 0,
+          "expected_slots": "1 (til Sjælland ved manglende brug)"
+        }
+      },
+      "total_regional_nodes": 87,
+      "total_exact_regional_to_national": 1,
+      "total_exact_national_to_regional": 1
+    },
+    "Bornholm": {
+      "region_ids": [
+        3
+      ],
+      "slots": "1 (til København ved manglende brug)",
+      "season_rows": {
+        "2011": {
+          "regional_teams": 4,
+          "regional_groups": 1,
+          "regional_to_national_exact": 0,
+          "national_to_regional_exact": 0,
+          "expected_slots": "1 (til København ved manglende brug)"
+        },
+        "2012": {
+          "regional_teams": 6,
+          "regional_groups": 1,
+          "regional_to_national_exact": 0,
+          "national_to_regional_exact": 0,
+          "expected_slots": "1 (til København ved manglende brug)"
+        },
+        "2013": {
+          "regional_teams": 5,
+          "regional_groups": 1,
+          "regional_to_national_exact": 0,
+          "national_to_regional_exact": 0,
+          "expected_slots": "1 (til København ved manglende brug)"
+        },
+        "2014": {
+          "regional_teams": 4,
+          "regional_groups": 1,
+          "regional_to_national_exact": 0,
+          "national_to_regional_exact": 0,
+          "expected_slots": "1 (til København ved manglende brug)"
+        },
+        "2015": {
+          "regional_teams": 3,
+          "regional_groups": 1,
+          "regional_to_national_exact": 0,
+          "national_to_regional_exact": 0,
+          "expected_slots": "1 (til København ved manglende brug)"
+        }
+      },
+      "total_regional_nodes": 22,
+      "total_exact_regional_to_national": 0,
+      "total_exact_national_to_regional": 0
+    },
+    "Kredsserie Vest": {
+      "region_ids": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "slots": "6",
+      "season_rows": {
+        "2016": {
+          "regional_teams": 32,
+          "regional_groups": 4,
+          "regional_to_national_exact": 28,
+          "national_to_regional_exact": 6,
+          "expected_slots": "6"
+        },
+        "2017": {
+          "regional_teams": 32,
+          "regional_groups": 4,
+          "regional_to_national_exact": 20,
+          "national_to_regional_exact": 5,
+          "expected_slots": "6"
+        },
+        "2018": {
+          "regional_teams": 32,
+          "regional_groups": 4,
+          "regional_to_national_exact": 20,
+          "national_to_regional_exact": 5,
+          "expected_slots": "6"
+        },
+        "2019": {
+          "regional_teams": 32,
+          "regional_groups": 4,
+          "regional_to_national_exact": 36,
+          "national_to_regional_exact": 6,
+          "expected_slots": "6"
+        },
+        "2020": {
+          "regional_teams": 32,
+          "regional_groups": 4,
+          "regional_to_national_exact": 8,
+          "national_to_regional_exact": 6,
+          "expected_slots": "6"
+        },
+        "2021": {
+          "regional_teams": 32,
+          "regional_groups": 4,
+          "regional_to_national_exact": 28,
+          "national_to_regional_exact": 1,
+          "expected_slots": "6"
+        },
+        "2022": {
+          "regional_teams": 32,
+          "regional_groups": 4,
+          "regional_to_national_exact": 32,
+          "national_to_regional_exact": 4,
+          "expected_slots": "6"
+        },
+        "2023": {
+          "regional_teams": 32,
+          "regional_groups": 4,
+          "regional_to_national_exact": 28,
+          "national_to_regional_exact": 7,
+          "expected_slots": "6"
+        },
+        "2024": {
+          "regional_teams": 32,
+          "regional_groups": 4,
+          "regional_to_national_exact": 28,
+          "national_to_regional_exact": 6,
+          "expected_slots": "6"
+        },
+        "2025": {
+          "regional_teams": 32,
+          "regional_groups": 4,
+          "regional_to_national_exact": 24,
+          "national_to_regional_exact": 5,
+          "expected_slots": "6"
+        },
+        "2026": {
+          "regional_teams": 32,
+          "regional_groups": 4,
+          "regional_to_national_exact": 0,
+          "national_to_regional_exact": 6,
+          "expected_slots": "6"
+        }
+      },
+      "total_regional_nodes": 1408,
+      "total_exact_regional_to_national": 252,
+      "total_exact_national_to_regional": 57
+    }
+  },
+  "transitions": [
+    {
+      "region": "København",
+      "season": 2022,
+      "team": "NBK Amager",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "København",
+      "season": 2022,
+      "team": "PI København",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "København",
+      "season": 2022,
+      "team": "Drive 4",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "København",
+      "season": 2022,
+      "team": "Dragør 2 (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "København",
+      "season": 2022,
+      "team": "Gladsaxe Søborg 2 (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "København",
+      "season": 2023,
+      "team": "KSI Badmintonklub Kbh. 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "København",
+      "season": 2023,
+      "team": "KBK Kbh. 4",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "København",
+      "season": 2023,
+      "team": "Skovshoved 5",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "København",
+      "season": 2023,
+      "team": "FKIF Frederiksberg",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "København",
+      "season": 2023,
+      "team": "BC37 Amager 2 (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "København",
+      "season": 2023,
+      "team": "KSI Badmintonklub Kbh.",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "København",
+      "season": 2024,
+      "team": "FKIF Frederiksberg",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "København",
+      "season": 2024,
+      "team": "Valby BC",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "København",
+      "season": 2024,
+      "team": "BC37 Amager 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "København",
+      "season": 2024,
+      "team": "NBK Amager (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "København",
+      "season": 2024,
+      "team": "PI København (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "København",
+      "season": 2024,
+      "team": "KMB2010 3",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "København",
+      "season": 2024,
+      "team": "Lyngby 3",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "København",
+      "season": 2025,
+      "team": "Drive 4",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "København",
+      "season": 2025,
+      "team": "KBK Kbh. 4",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "København",
+      "season": 2025,
+      "team": "Hvidovre HB2000",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "København",
+      "season": 2025,
+      "team": "Drive 4",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "København",
+      "season": 2025,
+      "team": "Hvidovre HB2000",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "København",
+      "season": 2025,
+      "team": "Skovshoved 5 (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "København",
+      "season": 2025,
+      "team": "KBK Kbh. 4 (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "København",
+      "season": 2026,
+      "team": "SAIF Kbh. 2",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "København",
+      "season": 2026,
+      "team": "Valby BC (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2011,
+      "team": "Helsinge 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2011,
+      "team": "Lillerød 4",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2011,
+      "team": "Næstved 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2011,
+      "team": "Albertslund 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2011,
+      "team": "Solrød Strand 4",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2011,
+      "team": "Skovlunde 1",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2011,
+      "team": "Team Roskilde 3",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2011,
+      "team": "&#216;nslev-Eskildstrup 1",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2011,
+      "team": "Skibby 2",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2011,
+      "team": "Solrød Strand 4",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2011,
+      "team": "Herlev/Hjorten 2",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2012,
+      "team": "Blistrup",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2012,
+      "team": "&#216;nslev-Eskildstrup",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2012,
+      "team": "Slagelse",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2012,
+      "team": "Herlufsholm",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2012,
+      "team": "Ishøj SB 50",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2012,
+      "team": "Team Roskilde 2",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2012,
+      "team": "Blistrup (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2012,
+      "team": "Farum",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2012,
+      "team": "Slagelse (N)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2012,
+      "team": "Ishøj SB 50",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2013,
+      "team": "Lillerød 4",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2013,
+      "team": "Holte 3",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2013,
+      "team": "Taastrup TIK",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2013,
+      "team": "Greve 4",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2013,
+      "team": "Skibby (N)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2013,
+      "team": "Lillerød 4 (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2014,
+      "team": "Gribskov Badminton",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2014,
+      "team": "Taastrup Elite 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2014,
+      "team": "Vordingborg",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2014,
+      "team": "Solrød Strand 5",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2014,
+      "team": "Herlufsholm",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2014,
+      "team": "Albertslund",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2014,
+      "team": "Vordingborg",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2014,
+      "team": "Herlufsholm (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2014,
+      "team": "Ishøj SB 50 (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2014,
+      "team": "&#216;nslev-Eskildstrup (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2015,
+      "team": "Frem - Hellebæk",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2015,
+      "team": "Hørsholm",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2015,
+      "team": "Badminton Roskilde 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2015,
+      "team": "Sorø",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2015,
+      "team": "Køge",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2015,
+      "team": "Hørsholm",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2015,
+      "team": "Lillerød 4 (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2016,
+      "team": "&#216;lstykke",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2016,
+      "team": "Holbæk 3",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2016,
+      "team": "Mørkøv",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2016,
+      "team": "Rødby",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2016,
+      "team": "Hillerød 2 (N)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2016,
+      "team": "Taastrup Elite 2 (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2016,
+      "team": "Holbæk 3",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2016,
+      "team": "Herlufsholm (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2016,
+      "team": "Næstved",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2017,
+      "team": "Karlslunde 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2017,
+      "team": "Ringsted",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2017,
+      "team": "Team Vejleå",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2017,
+      "team": "Frem - Hellebæk",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2017,
+      "team": "Hillerød 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2017,
+      "team": "Værløse 4",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2017,
+      "team": "Hørsholm (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2017,
+      "team": "Frem - Hellebæk (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2017,
+      "team": "Værløse 4",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2017,
+      "team": "Gribskov Badminton",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2017,
+      "team": "Greve 4",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2017,
+      "team": "Køge (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2017,
+      "team": "Skælskør (N)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2018,
+      "team": "Solrød Strand 5",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2018,
+      "team": "Herlufsholm",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2018,
+      "team": "Lillerød 3",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2018,
+      "team": "Team GSG",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2018,
+      "team": "Nivå-Kokkedal",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2018,
+      "team": "Ledøje-Smørum",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2018,
+      "team": "Solrød Strand 5",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2018,
+      "team": "Lillerød 3",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2018,
+      "team": "&#216;lstykke (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2018,
+      "team": "Mørkøv (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2018,
+      "team": "Sorø",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2018,
+      "team": "Holbæk 3 (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2019,
+      "team": "Birkerød BK13",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2019,
+      "team": "Greve 4",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2019,
+      "team": "Nordbyens Badmintonklub",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2019,
+      "team": "Rødby",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2020,
+      "team": "Badminton Roskilde 2",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2020,
+      "team": "Ledøje-Smørum (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2021,
+      "team": "Hillerød 3",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2021,
+      "team": "Måløv",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2021,
+      "team": "Kirke Hyllinge-Skibby",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2021,
+      "team": "Team Vejleå (N)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2022,
+      "team": "Slagelse 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2022,
+      "team": "Hillerød 4",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2022,
+      "team": "Ledøje-Smørum",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2022,
+      "team": "Næstved-Herlufsholm",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2022,
+      "team": "Holte 2",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2023,
+      "team": "Holbæk 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2023,
+      "team": "Stenløse",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2023,
+      "team": "Hørsholm",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2023,
+      "team": "Holbæk 2 (N)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2023,
+      "team": "Team GSG",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2023,
+      "team": "Frem - Hellebæk",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2024,
+      "team": "Køge",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2024,
+      "team": "Team GSG",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2024,
+      "team": "Holte 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2024,
+      "team": "Farum",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2024,
+      "team": "Lillerød 4",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2024,
+      "team": "Slagelse 2 (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2024,
+      "team": "Hillerød 4 (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2025,
+      "team": "Jernløse",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2025,
+      "team": "Rødby",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2025,
+      "team": "Næstved-Herlufsholm",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2025,
+      "team": "Kirke Hyllinge-Skibby",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2025,
+      "team": "Karlslunde 2 (N)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2025,
+      "team": "Vordingborg",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2026,
+      "team": "Farum (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2026,
+      "team": "Lillerød 4 (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Sjælland",
+      "season": 2026,
+      "team": "Ledøje-Smørum",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Lolland-Falster",
+      "season": 2022,
+      "team": "Vordingborg",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Lolland-Falster",
+      "season": 2022,
+      "team": "Vordingborg",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Vendsyssel 3",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Vendsyssel 3",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Vendsyssel 3",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Vendsyssel 3",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Langhøj 2 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Langhøj 2 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Langhøj 2 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Langhøj 2 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Højbjerg 4 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Højbjerg 4 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Højbjerg 4 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Højbjerg 4 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Tarup-Pårup",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Tarup-Pårup",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Tarup-Pårup",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Tarup-Pårup",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Kolding BK 3",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Kolding BK 3",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Kolding BK 3",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Kolding BK 3",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Silkeborg IF (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Silkeborg IF (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Silkeborg IF (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Silkeborg IF (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Silkeborg BK",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Silkeborg BK",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Silkeborg BK",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Silkeborg BK",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Silkeborg BK",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Højbjerg 4",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Vejgaard",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Aalborg Triton 3",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Horsens 2 (N)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2016,
+      "team": "Badminton &#216;stfyn (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2017,
+      "team": "Skalborg SK",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2017,
+      "team": "Skalborg SK",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2017,
+      "team": "Skalborg SK",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2017,
+      "team": "Skalborg SK",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2017,
+      "team": "Aalborg Triton 3",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2017,
+      "team": "Aalborg Triton 3",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2017,
+      "team": "Aalborg Triton 3",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2017,
+      "team": "Aalborg Triton 3",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2017,
+      "team": "Skødstrup (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2017,
+      "team": "Skødstrup (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2017,
+      "team": "Skødstrup (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2017,
+      "team": "Skødstrup (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2017,
+      "team": "Grindsted BK (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2017,
+      "team": "Grindsted BK (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2017,
+      "team": "Grindsted BK (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2017,
+      "team": "Grindsted BK (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2017,
+      "team": "Dalum Hjallese BK 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2017,
+      "team": "Dalum Hjallese BK 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2017,
+      "team": "Dalum Hjallese BK 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2017,
+      "team": "Dalum Hjallese BK 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2017,
+      "team": "Skødstrup",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2017,
+      "team": "Christiansbjerg",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2017,
+      "team": "Gug 3 (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2017,
+      "team": "Badminton Sønderborg",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2017,
+      "team": "Grindsted BK",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2018,
+      "team": "Højbjerg 5",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2018,
+      "team": "Højbjerg 5",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2018,
+      "team": "Højbjerg 5",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2018,
+      "team": "Højbjerg 5",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2018,
+      "team": "Skovbakken 4 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2018,
+      "team": "Skovbakken 4 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2018,
+      "team": "Skovbakken 4 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2018,
+      "team": "Skovbakken 4 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2018,
+      "team": "Dybbøl (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2018,
+      "team": "Dybbøl (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2018,
+      "team": "Dybbøl (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2018,
+      "team": "Dybbøl (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2018,
+      "team": "Svendborg 1 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2018,
+      "team": "Svendborg 1 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2018,
+      "team": "Svendborg 1 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2018,
+      "team": "Svendborg 1 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2018,
+      "team": "Viby J 4 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2018,
+      "team": "Viby J 4 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2018,
+      "team": "Viby J 4 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2018,
+      "team": "Viby J 4 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2018,
+      "team": "Skovbakken 4",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2018,
+      "team": "Silkeborg IF (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2018,
+      "team": "Viby J 4",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2018,
+      "team": "Gug 2",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2018,
+      "team": "Vendsyssel 3 (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Dalum Hjallese BK 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Dalum Hjallese BK 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Dalum Hjallese BK 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Dalum Hjallese BK 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Team Fyn 3",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Team Fyn 3",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Team Fyn 3",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Team Fyn 3",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Nr. Lyndelse 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Nr. Lyndelse 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Nr. Lyndelse 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Nr. Lyndelse 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Vendsyssel 3",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Vendsyssel 3",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Vendsyssel 3",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Vendsyssel 3",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Team Favrskov 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Team Favrskov 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Team Favrskov 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Team Favrskov 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Skødstrup 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Skødstrup 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Skødstrup 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Skødstrup 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Christiansbjerg 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Christiansbjerg 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Christiansbjerg 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Christiansbjerg 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Vejle 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Vejle 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Vejle 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Vejle 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Varde 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Varde 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Varde 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Varde 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Varde (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Beder-Malling",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Skødstrup (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Nr. Lyndelse (N)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Vejle",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2019,
+      "team": "Dalum Hjallese BK 2 (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2020,
+      "team": "Gug 2 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2020,
+      "team": "Gug 2 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2020,
+      "team": "Gug 2 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2020,
+      "team": "Gug 2 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2020,
+      "team": "Ringe 1 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2020,
+      "team": "Ringe 1 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2020,
+      "team": "Ringe 1 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2020,
+      "team": "Ringe 1 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2020,
+      "team": "Varde",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2020,
+      "team": "Aarhus Akademisk",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2020,
+      "team": "Skovbakken 4 (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2020,
+      "team": "Badminton Esbjerg 2",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2020,
+      "team": "Højbjerg 5 (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2020,
+      "team": "Ringe",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Lindholm 1 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Lindholm 1 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Lindholm 1 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Lindholm 1 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Team TRIF - Rønde E 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Team TRIF - Rønde E 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Team TRIF - Rønde E 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Team TRIF - Rønde E 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Aarhus Akademisk 1 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Aarhus Akademisk 1 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Aarhus Akademisk 1 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Aarhus Akademisk 1 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Højbjerg 6 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Højbjerg 6 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Højbjerg 6 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Højbjerg 6 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Højbjerg 5 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Højbjerg 5 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Højbjerg 5 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Højbjerg 5 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Silkeborg BK 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Silkeborg BK 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Silkeborg BK 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Silkeborg BK 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Badminton Esbjerg 2 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Badminton Esbjerg 2 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Badminton Esbjerg 2 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Badminton Esbjerg 2 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2021,
+      "team": "Varde",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Gug 2 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Gug 2 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Gug 2 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Gug 2 (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Brabrand",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Brabrand",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Brabrand",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Brabrand",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Badminton Esbjerg 3 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Badminton Esbjerg 3 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Badminton Esbjerg 3 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Badminton Esbjerg 3 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Odense OBK 5 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Odense OBK 5 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Odense OBK 5 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Odense OBK 5 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Kolding BK 4 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Kolding BK 4 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Kolding BK 4 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Kolding BK 4 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Horsens 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Horsens 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Horsens 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Horsens 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Brønderslev (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Brønderslev (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Brønderslev (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Brønderslev (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Beder-Malling",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Beder-Malling",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Beder-Malling",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Beder-Malling",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Gug 2 (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Brønderslev",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Vejlby IK",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2022,
+      "team": "Team Fyn 3 (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Grenå 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Grenå 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Grenå 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Grenå 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Vinding SF 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Vinding SF 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Vinding SF 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Vinding SF 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Ribe 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Ribe 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Ribe 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Ribe 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Aalborg Triton 4",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Aalborg Triton 4",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Aalborg Triton 4",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Aalborg Triton 4",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Badminton &#216;stfyn 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Badminton &#216;stfyn 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Badminton &#216;stfyn 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Badminton &#216;stfyn 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Næsby 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Næsby 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Næsby 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Næsby 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Nr. Lyndelse 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Nr. Lyndelse 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Nr. Lyndelse 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Nr. Lyndelse 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Nr. Lyndelse",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Team Favrskov 2",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Skødstrup",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "abc Aalborg 3",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Højbjerg 6 (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Vejle (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2023,
+      "team": "Ringe",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Svenstrup 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Svenstrup 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Svenstrup 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Svenstrup 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Gug 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Gug 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Gug 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Gug 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Langhøj 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Langhøj 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Langhøj 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Langhøj 2",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Viborg 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Viborg 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Viborg 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Viborg 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Haderslev 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Haderslev 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Haderslev 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Haderslev 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Badminton Esbjerg 4",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Badminton Esbjerg 4",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Badminton Esbjerg 4",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Badminton Esbjerg 4",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Nr. Lyndelse 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Nr. Lyndelse 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Nr. Lyndelse 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Nr. Lyndelse 1",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Nr. Lyndelse",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Brønderslev (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Gug 2 (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Team Fyn 2",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Badminton Vestfyn",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2024,
+      "team": "Brabrand (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Brønderslev",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Brønderslev",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Brønderslev",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Brønderslev",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Vejle",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Vejle",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Vejle",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Vejle",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Ribe (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Ribe (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Ribe (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Ribe (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Grenå (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Grenå (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Grenå (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Grenå (N)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Viby J 5 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Viby J 5 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Viby J 5 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Viby J 5 (O)",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Svendborg",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Svendborg",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Svendborg",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Svendborg",
+      "direction": "regional_to_national_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Aalborg Triton 4 (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Silkeborg BK 2",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Grenå (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Ribe (O)",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2025,
+      "team": "Kolding BK 3",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2026,
+      "team": "Aarhus Akademisk",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2026,
+      "team": "Højbjerg 5",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2026,
+      "team": "Beder-Malling",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2026,
+      "team": "Dalum Hjallese BK 2",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2026,
+      "team": "Horsens 2",
+      "direction": "national_to_regional_exact"
+    },
+    {
+      "region": "Kredsserie Vest",
+      "season": 2026,
+      "team": "Badminton &#216;stfyn",
+      "direction": "national_to_regional_exact"
+    }
+  ]
+}

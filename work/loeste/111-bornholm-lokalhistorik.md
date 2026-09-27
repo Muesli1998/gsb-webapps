@@ -87,4 +87,13 @@ andet hold), markér som ubekræftet i stedet for at gætte. Se Metode A/B/C's e
 
 ## Resultatnote
 
+**Resultat — 111:**
+
+- Bornholm→Danmarksserien: ingen entydig konservativ tråd fundet; status er ubekræftet, ikke et bevis på ubrugt plads.
+- Bornholmsserien efter 2015/16: den udvidede navnesøgning gav intet entydigt alternativt rækkenavn med fortsættelse; skæbnen forbliver uafklaret i den gemte database.
+- Alle fem regioner er opgjort sæson for sæson i `111-bornholm-lokalhistorik.json`; kun konkrete 107-metode A-spor tælles som entydige.
+- **Kontroloutput:** `node statistik/scripts/111-bornholm-lokalhistorik.mjs`; database åbnet read-only; `git status --short statistik/data/` tom.
+- **Hvad blev fravalgt:** ingen nye API-kald, ingen databaseskrivning, ingen alias-gæt.
+- **Commits:** udfyldes ved commit.
+
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
