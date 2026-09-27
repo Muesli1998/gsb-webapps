@@ -134,4 +134,4 @@ arbejde/114-spilleformats-opstillingskrav-verificering
 - “5 spillere” er registreret som syvende navngivne ungdomsformat i rapporten; 112-scriptet er ikke ændret.
 - Filer: `statistik/results/114-spilleformats-opstillingskrav-verificering.md` og `.json`.
 - Spørgsmål: ingen nye metodiske uklarheder; den manglende GSB-dækning er rapporteret som begrænsning.
-- Commit: udfyldes ved aflevering.
+- Commit: `c3a022a` (rapport og kortarkivering).
