@@ -83,4 +83,24 @@ arbejde/116-national-spiller-id-mekanisme
 
 ## Resultatnote
 
-(udfyldes ved aflevering)
+### Kontroloutput
+
+- 9 nationale kampsider blev åbnet én ad gangen med render-gaten fra `statistik/AGENTS.md`.
+- 9/9 bestod gaten (forventet kamp-ID i body-teksten og en `Resultat`-linje).
+- 8/9 havde `a[href*="/DBF/Spiller/VisSpiller/"]`-links med numeriske ID-fragmenter, der kunne deduplikeres og udtrækkes med samme metode som GSB-scraperen.
+- 1/9 (kamp 3757, BADBORN U11, sæson 2011) havde 0 spillerlinks trods korrekt gengivet resultat.
+- `liga-landskab.db` indeholder 203.012 distinkte `external_match_id`-værdier.
+
+### Hvad blev gjort
+
+Der blev undersøgt en spredt prøve på tværs af 2010-2026, senior, U09/U11/U15/U17-U19, region 1/2/3/5/8 samt tre efterskole-/DGI-kampe fra opgave 114. Rapporten og JSON-resultatet ligger i `statistik/results/116-national-spiller-id-mekanisme.md` og `.json`.
+
+Fundet er, at mekanismen findes uden for GSB i både senior-, ungdoms-, regionale og efterskolekampe: 8 af 9 sider havde stabile spillerprofil-ID'er. Kamp 3757 dokumenterer samtidig, at ældre ungdomssider kan mangle links helt; dette er en reel, men ikke generaliseret, dækningsbegrænsning.
+
+### Hvad blev fravalgt og hvorfor
+
+Der blev ikke bygget scraper/pipeline, ikke skrevet til databaser og ikke lavet masseindsamling. 203.012 er et størrelsesestimat for fremtidig side-for-side behandling, ikke et løfte om fuld spillerlink-dækning. Den ene negative prøve kan ikke bruges til at konkludere at alle ældre ungdomskampe mangler links.
+
+### Commits
+
+`5e3e2e6` — rapport og kort arkiveret på `arbejde/116-national-spiller-id-mekanisme`.

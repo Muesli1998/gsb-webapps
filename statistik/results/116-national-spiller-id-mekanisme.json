@@ -1,0 +1,19 @@
+{
+  "task": "116-national-spiller-id-mekanisme",
+  "checkedAt": "2026-09-27",
+  "route": "https://www.badmintonplayer.dk/DBF/HoldTurnering/Stilling/#5,<season>,<league_group_id>,1,8,,<external_match_id>,1093,",
+  "renderGate": "expected external_match_id in rendered body text and at least one line beginning Resultat",
+  "totalUniqueMatchIdsInLigaLandsskabDb": 203012,
+  "samples": [
+    {"external_match_id":"22818","season_id":2010,"age_group_id":1,"league_group_id":"398","region_id":1,"label":"2010 senior national","render_gate":true,"result":"5-1","player_link_count":18,"unique_player_ids":["12057","12502","11710","91686","55556","24944","11200","13875","14903","20838","11992","13112","12730","22621","12741","13905","14737","47081"],"stable_id_extraction":true},
+    {"external_match_id":"337416","season_id":2018,"age_group_id":18,"league_group_id":"11355","region_id":8,"label":"2018 U17/U19 København","render_gate":true,"result":"4-3","player_link_count":20,"unique_player_ids":["2833","93216","3057","229287","229531","156249","213637","211704"],"stable_id_extraction":true},
+    {"external_match_id":"3757","season_id":2011,"age_group_id":3,"league_group_id":"142","region_id":3,"label":"2011 U11 Bornholm","render_gate":true,"result":"5-1","player_link_count":0,"unique_player_ids":[],"stable_id_extraction":false},
+    {"external_match_id":"499797","season_id":2025,"age_group_id":18,"league_group_id":"18173","region_id":1,"label":"2025 efterskole U17/U19 (114)","render_gate":true,"result":"2-5","player_link_count":20,"unique_player_ids":["322953","322079","331480","286168","322837","325945","328801","334132","325792","319213"],"stable_id_extraction":true},
+    {"external_match_id":"503838","season_id":2025,"age_group_id":18,"league_group_id":"18413","region_id":2,"label":"2025 ØM U17/U19 (114)","render_gate":true,"result":"3-4","player_link_count":20,"unique_player_ids":["328610","313498","343927","336814","325220","344733","319457","363585","327456","297608"],"stable_id_extraction":true},
+    {"external_match_id":"505128","season_id":2025,"age_group_id":3,"league_group_id":"18500","region_id":5,"label":"2025 U11 Nordjylland","render_gate":true,"result":"2-4","player_link_count":16,"unique_player_ids":["363057","359297","364159","364259","363157","359296","363011","364235","360517"],"stable_id_extraction":true},
+    {"external_match_id":"471218","season_id":2024,"age_group_id":5,"league_group_id":"17141","region_id":8,"label":"2024 U15 København","render_gate":true,"result":"5-1","player_link_count":16,"unique_player_ids":["330770","333438","327518","315664","314651","306698","344263","337880"],"stable_id_extraction":true},
+    {"external_match_id":"505211","season_id":2025,"age_group_id":2,"league_group_id":"18504","region_id":8,"label":"2025 U09 Sjælland","render_gate":true,"result":"0-5","player_link_count":10,"unique_player_ids":["355915","355233","362380","353224","352963"],"stable_id_extraction":true},
+    {"external_match_id":"512925","season_id":2026,"age_group_id":18,"league_group_id":"19062","region_id":1,"label":"2026 efterskole U17/U19 (114)","render_gate":true,"result":"2-6","player_link_count":24,"unique_player_ids":["328130","301831","332429","333834","328561","306766","328446","317603","328596","306544"],"stable_id_extraction":true}
+  ],
+  "summary": {"attempted":9,"render_gate_passed":9,"with_player_links":8,"without_player_links":1,"stable_id_extraction_confirmed":8,"unverified":0}
+}
