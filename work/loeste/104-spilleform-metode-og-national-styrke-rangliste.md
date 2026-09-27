@@ -197,4 +197,4 @@ fejlagtigt læses som en sportslig tværfamilie-rangering.
 - Ingen generel undtagelse for forskellige spilleform-familier: kun den
   officielt dokumenterede DH-stige er tilføjet som struktur.
 
-**Commits:** `049073b` samt efterfølgende afsluttende commit på denne gren.
+**Commits:** `049073b`, `eb2864c`.
