@@ -96,3 +96,27 @@ i 104/105's JSON), spørg i "Spørgsmål" i stedet for selv at tilføje den.
 ## Resultatnote
 
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+
+### Resultat (2026-09-27)
+
+**Hvad blev gjort:**
+
+- Tilføjede `statistik/scripts/106-generate-national-styrke-dag-visual.mjs`, som kun læser 104- og 105-JSON og genererer én selvstændig HTML-visning.
+- HTML'en viser DH-stigen centralt og de fem regionale strukturgrene under Danmarksserien: Kredsserie Vest, Sjællandsserien, LF-Serien, Københavnsserien og Bornholmsserien.
+- Tre kanttyper er adskilt med massiv blå, stiplet orange og prikket lilla linje samt legend og foldbare kilde-/dækningskort pr. kant.
+- De 20.134 uforbundne noder er bevidst foldet til en talnote, ikke tegnet enkeltvis.
+
+**Kontroloutput:**
+
+- 104-baseline: 20.145 noder og 8 kanter; alle 8 er bevaret i 105.
+- Renderet 105-model: 20.150 noder, 13 kanter og 5 regionale strukturkanter.
+- HTML-indholdskontrol: 17.819 bytes; alle fem regionalnavne, alle fem DH-niveauer, alle tre tekniske kanttyper og dækningshullerne `2010/11–2019/20` og `2021/22` findes i filen.
+- `git diff --exit-code` for begge 104/105-kilde-JSON'er gav ingen forskel.
+
+**Hvad blev fravalgt og hvorfor:**
+
+- Ingen ny kant eller faglig data: renderingen bruger udelukkende de eksisterende JSON-felter.
+- Ren HTML/CSS med SVG-lignende linjeforløb blev valgt frem for D3/bibliotek, fordi den har nul afhængigheder og er let at åbne som én fil, i samme enkelt-fils-ånd som 086c.
+- Ingen database blev åbnet eller skrevet. `git status --short statistik/data/` viser kun den allerede kendte, ustagede mappe.
+
+**Commits:** udfyldes ved commit.

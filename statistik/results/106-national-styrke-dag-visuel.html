@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>National styrke-DAG — 104 + 105</title>
+<style>
+  :root { --ink:#172338; --muted:#52647b; --paper:#f4f7fb; --card:#fff; --line:#cbd7e8; --family:#2866aa; --dh:#b36b00; --regional:#7939ad; }
+  * { box-sizing:border-box; } body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  main { max-width:1280px; margin:auto; padding:28px 22px 48px; } h1 { margin:0; font-size:clamp(1.7rem,4vw,2.55rem); } h2 { margin:30px 0 12px; font-size:1.25rem; } .lede { max-width:88ch; color:var(--muted); margin:8px 0 20px; }
+  .notice { border-left:6px solid var(--regional); background:#f6effd; padding:13px 16px; border-radius:6px; max-width:1000px; } .metrics { display:flex; flex-wrap:wrap; gap:10px; margin:20px 0; } .metric { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:10px 13px; min-width:145px; } .metric b { display:block; font-size:1.45rem; }
+  .legend { display:flex; flex-wrap:wrap; gap:12px; background:#fff; border:1px solid var(--line); border-radius:9px; padding:12px; } .legend span { display:flex; align-items:center; gap:7px; } .sample { width:38px; border-top:4px solid var(--family); } .sample.dh { border-top-color:var(--dh); border-top-style:dashed; } .sample.regional { border-top-color:var(--regional); border-top-style:dotted; }
+  .diagram { overflow-x:auto; background:#fff; border:1px solid var(--line); border-radius:12px; padding:20px; margin-top:15px; } .diagram-inner { min-width:960px; position:relative; min-height:745px; }
+  .dh-column { position:absolute; left:50%; top:18px; transform:translateX(-50%); width:270px; display:grid; gap:24px; z-index:2; } .dh-node { background:#fffaf0; border:2px dashed var(--dh); border-radius:9px; text-align:center; padding:11px; box-shadow:0 2px 6px #17233814; } .dh-node strong,.region-node strong { display:block; } .dh-node span,.region-node span { font-size:.78rem; color:var(--muted); } .dh-node.danmarksserien { background:#fff4d9; border-style:solid; }
+  .dh-arrow { position:absolute; left:50%; width:0; top:81px; height:417px; border-left:4px dashed var(--dh); transform:translateX(-50%); z-index:1; } .dh-arrow::after { content:"DH: strukturel regeltekst"; position:absolute; left:12px; top:180px; color:#895000; font-size:.77rem; white-space:nowrap; background:#fff; padding:2px 5px; }
+  .family-track { position:absolute; left:calc(50% - 164px); top:122px; height:335px; border-left:4px solid var(--family); z-index:1; } .family-track::after { content:"familieren regeltekst"; position:absolute; right:10px; top:126px; color:#174c84; font-size:.77rem; white-space:nowrap; background:#fff; padding:2px 5px; }
+  .regional-zone { position:absolute; left:0; right:0; top:526px; border-top:4px dotted var(--regional); padding-top:30px; } .regional-zone::before { content:"Regionale, strukturelle oprykningsveje — ikke sportslige tværfamilie-sammenligninger"; position:absolute; top:4px; left:50%; transform:translateX(-50%); color:#622b90; font-size:.82rem; white-space:nowrap; background:#fff; padding:0 8px; } .region-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:12px; } .region-node { border:2px dotted var(--regional); background:#fbf7ff; border-radius:9px; padding:12px; min-height:95px; } .regional-stems { position:absolute; top:-46px; left:50%; right:0; height:46px; border-top:0; } .regional-stems::before { content:""; position:absolute; height:46px; left:50%; border-left:4px dotted var(--regional); }
+  .edge-detail { background:#fff; border:1px solid var(--line); border-left:5px solid var(--family); border-radius:7px; padding:0 13px; margin:8px 0; } .edge-detail.dh-edge { border-left-color:var(--dh); } .edge-detail.regional-edge { border-left-color:var(--regional); } summary { cursor:pointer; display:flex; gap:9px; align-items:center; padding:10px 0; } summary span:last-child { color:var(--muted); font-size:.83rem; margin-left:auto; } .edge-detail .swatch { width:25px; border-top:4px solid var(--family); } .dh-edge .swatch { border-top-color:var(--dh); border-top-style:dashed; } .regional-edge .swatch { border-top-color:var(--regional); border-top-style:dotted; } .edge-detail p { margin:8px 0 12px; } a { color:#145aa0; }
+  @media (max-width:700px) { main { padding:20px 12px; } .region-grid { gap:8px; } .region-node { padding:8px; font-size:.82rem; } }
+</style>
+</head>
+<body><main>
+<h1>National styrke-DAG</h1>
+<p class="lede">En læsbar gengivelse af den dokumenterede struktur fra opgave 104 og 105. Den viser organisatoriske veje, ikke én samlet sportslig rangliste.</p>
+<div class="notice"><strong>Vigtigt:</strong> Farver og linjestil angiver belægstype. De lilla regionale og orange DH-strukturlinjer må ikke læses som sportslige sammenligninger af forskellige spilleform-familier.</div>
+<div class="metrics"><div class="metric"><b>20150</b>DAG-noder</div><div class="metric"><b>13</b>dokumenterede kanter</div><div class="metric"><b>20134</b>foldede, uforbundne noder</div><div class="metric"><b>33</b>regioner i kildedatasættet</div></div>
+<h2>Legend</h2><div class="legend"><span><i class="sample"></i>Familieren regeltekst</span><span><i class="sample dh"></i>Strukturel DH-regeltekst</span><span><i class="sample regional"></i>Regional strukturel regeltekst</span></div>
+<h2>Den dokumenterede struktur</h2>
+<section class="diagram" aria-label="National styrke-DAG"><div class="diagram-inner"><div class="family-track"></div><div class="dh-arrow"></div><div class="dh-column"><div class="dh-node " style="--row:0">
+  <strong>Badmintonligaen</strong>
+  <span>National DH-stige</span>
+</div>
+<div class="dh-node " style="--row:1">
+  <strong>1. division</strong>
+  <span>National DH-stige</span>
+</div>
+<div class="dh-node " style="--row:2">
+  <strong>2. division</strong>
+  <span>National DH-stige</span>
+</div>
+<div class="dh-node " style="--row:3">
+  <strong>3. division</strong>
+  <span>National DH-stige</span>
+</div>
+<div class="dh-node danmarksserien" style="--row:4">
+  <strong>Danmarksserien</strong>
+  <span>Fælles knudepunkt for dokumenterede regionale veje</span>
+</div></div><div class="regional-zone"><div class="regional-stems"></div><div class="region-grid"><div class="region-node"><strong>Kredsserie Vest</strong><span>2017/18–2025/26 (direkte intern regeltekst); national §29 dækker pladstallet i 2020, 2022–2026</span></div>
+<div class="region-node"><strong>Sjællandsserien</strong><span>National §29 dokumenteret 2020, 2022–2026; ingen fundet offentlig regional version for 2010–2019/2021</span></div>
+<div class="region-node"><strong>LF-Serien</strong><span>National §29 dokumenteret 2020, 2022–2026; ingen fundet offentlig regional version for 2010–2019/2021</span></div>
+<div class="region-node"><strong>Københavnsserien</strong><span>National §29 dokumenteret 2020, 2022–2026; rækkenavn ændrer sig over tid og er strukturelt samlet her</span></div>
+<div class="region-node"><strong>Bornholmsserien</strong><span>National §29 dokumenteret 2020, 2022–2026; rå Bornholmsserie forekommer kun 2011/12–2015/16</span></div></div></div></div></section>
+<h2>Kanter, kilder og sæsondækning</h2>
+<p class="lede">Åbn en kant for dens konkrete regeltekst og afgrænsning. De regionale kanter gør eksplicit opmærksom på, at 2010/11–2019/20 og 2021/22 ikke er dækket af en fundet §29-version.</p>
+<details class="edge-detail family-edge" id="edge-0">
+    <summary><span class="swatch"></span><strong>1. division → 2. division</strong><span>Familieren regeltekst (familieren_regeltekst)</span></summary>
+    <p>Samme gemte spilleform-familie. Dette er det eneste spor, der udtrykker et familierent niveauforhold.</p>
+    <p><strong>Belæg:</strong> 086e/088b: DH-reglement 2025 §17-25 og §28; 2026 §17-25</p>
+    <p><strong>Dækning:</strong> Kildeangivelsen dokumenterer selve DH-niveauforholdet; den identificerer ikke konkrete hold på tværs af sæsoner.</p>
+    
+  </details>
+<details class="edge-detail family-edge" id="edge-1">
+    <summary><span class="swatch"></span><strong>2. division → 3. division</strong><span>Familieren regeltekst (familieren_regeltekst)</span></summary>
+    <p>Samme gemte spilleform-familie. Dette er det eneste spor, der udtrykker et familierent niveauforhold.</p>
+    <p><strong>Belæg:</strong> 086e/088b: DH-reglement 2025 §17-25 og §28; 2026 §17-25</p>
+    <p><strong>Dækning:</strong> Kildeangivelsen dokumenterer selve DH-niveauforholdet; den identificerer ikke konkrete hold på tværs af sæsoner.</p>
+    
+  </details>
+<details class="edge-detail family-edge" id="edge-2">
+    <summary><span class="swatch"></span><strong>3. division → Danmarksserien</strong><span>Familieren regeltekst (familieren_regeltekst)</span></summary>
+    <p>Samme gemte spilleform-familie. Dette er det eneste spor, der udtrykker et familierent niveauforhold.</p>
+    <p><strong>Belæg:</strong> 086e/088b: DH-reglement 2025 §17-25 og §28; 2026 §17-25</p>
+    <p><strong>Dækning:</strong> Kildeangivelsen dokumenterer selve DH-niveauforholdet; den identificerer ikke konkrete hold på tværs af sæsoner.</p>
+    
+  </details>
+<details class="edge-detail family-edge" id="edge-3">
+    <summary><span class="swatch"></span><strong>Badmintonligaen → 1. division</strong><span>Familieren regeltekst (familieren_regeltekst)</span></summary>
+    <p>Samme gemte spilleform-familie. Dette er det eneste spor, der udtrykker et familierent niveauforhold.</p>
+    <p><strong>Belæg:</strong> 086e/088b: DH-reglement 2025 §17-25 og §28; 2026 §17-25</p>
+    <p><strong>Dækning:</strong> Kildeangivelsen dokumenterer selve DH-niveauforholdet; den identificerer ikke konkrete hold på tværs af sæsoner.</p>
+    
+  </details>
+<details class="edge-detail dh-edge" id="edge-4">
+    <summary><span class="swatch"></span><strong>Badmintonligaen → 1. division</strong><span>Strukturel DH-regeltekst (strukturel_regeltekst)</span></summary>
+    <p>Kun Badminton Danmarks navngivne DH-stige. Organisatorisk struktur, ikke sportslig tværfamilie-sammenligning.</p>
+    <p><strong>Belæg:</strong> Chris-bekræftet afgrænset undtagelse 2026-09-27; 086e/088b: DH-reglement 2025 §17-25 og §28; 2026 §17-25</p>
+    <p><strong>Dækning:</strong> Kildeangivelsen dokumenterer selve DH-niveauforholdet; den identificerer ikke konkrete hold på tværs af sæsoner.</p>
+    
+  </details>
+<details class="edge-detail dh-edge" id="edge-5">
+    <summary><span class="swatch"></span><strong>1. division → 2. division</strong><span>Strukturel DH-regeltekst (strukturel_regeltekst)</span></summary>
+    <p>Kun Badminton Danmarks navngivne DH-stige. Organisatorisk struktur, ikke sportslig tværfamilie-sammenligning.</p>
+    <p><strong>Belæg:</strong> Chris-bekræftet afgrænset undtagelse 2026-09-27; 086e/088b: DH-reglement 2025 §17-25 og §28; 2026 §17-25</p>
+    <p><strong>Dækning:</strong> Kildeangivelsen dokumenterer selve DH-niveauforholdet; den identificerer ikke konkrete hold på tværs af sæsoner.</p>
+    
+  </details>
+<details class="edge-detail dh-edge" id="edge-6">
+    <summary><span class="swatch"></span><strong>2. division → 3. division</strong><span>Strukturel DH-regeltekst (strukturel_regeltekst)</span></summary>
+    <p>Kun Badminton Danmarks navngivne DH-stige. Organisatorisk struktur, ikke sportslig tværfamilie-sammenligning.</p>
+    <p><strong>Belæg:</strong> Chris-bekræftet afgrænset undtagelse 2026-09-27; 086e/088b: DH-reglement 2025 §17-25 og §28; 2026 §17-25</p>
+    <p><strong>Dækning:</strong> Kildeangivelsen dokumenterer selve DH-niveauforholdet; den identificerer ikke konkrete hold på tværs af sæsoner.</p>
+    
+  </details>
+<details class="edge-detail dh-edge" id="edge-7">
+    <summary><span class="swatch"></span><strong>3. division → Danmarksserien</strong><span>Strukturel DH-regeltekst (strukturel_regeltekst)</span></summary>
+    <p>Kun Badminton Danmarks navngivne DH-stige. Organisatorisk struktur, ikke sportslig tværfamilie-sammenligning.</p>
+    <p><strong>Belæg:</strong> Chris-bekræftet afgrænset undtagelse 2026-09-27; 086e/088b: DH-reglement 2025 §17-25 og §28; 2026 §17-25</p>
+    <p><strong>Dækning:</strong> Kildeangivelsen dokumenterer selve DH-niveauforholdet; den identificerer ikke konkrete hold på tværs af sæsoner.</p>
+    
+  </details>
+<details class="edge-detail regional-edge" id="edge-8">
+    <summary><span class="swatch"></span><strong>Danmarksserien → Kredsserie Vest</strong><span>Regional strukturel regeltekst (strukturel_regeltekst_regional)</span></summary>
+    <p>Fast regional oprykningsvej til Danmarksserien. Organisatorisk struktur, ikke sportslig tværfamilie-sammenligning.</p>
+    <p><strong>Belæg:</strong> Badminton Danmarks Holdturneringsreglement 2024 §29 (s. 12): Nordjylland, Midtjylland, Sønderjylland og Fyn har samlet 6 pladser. Reglement for Kredsserien Vest og Serie 1 Vest 2021 §16: nr. 1-2 i to oprykningspuljer direkte; 3/4 krydsspiller om to yderligere pladser.</p>
+    <p><strong>Dækning:</strong> Dækningshuller: 2010/11–2019/20 og 2021/22. Se 105-kildetabellen; ingen nutidsregel er projiceret bagud.</p>
+    <p><strong>Links:</strong> <a href="https://badminton.dk/wp-content/uploads/2024/08/2024-08-14-Holdturneringsreglement-for-badminton-i-Danmark-010724-Marked.pdf" target="_blank" rel="noreferrer">kilde badminton.dk</a> · <a href="https://badmintoninordjylland.dk/wp-content/uploads/2022/08/Reglement-for-Kredsserien-Vest-og-Serie-1-Vest-2021.pdf" target="_blank" rel="noreferrer">kilde badmintoninordjylland.dk</a></p>
+  </details>
+<details class="edge-detail regional-edge" id="edge-9">
+    <summary><span class="swatch"></span><strong>Danmarksserien → Sjællandsserien</strong><span>Regional strukturel regeltekst (strukturel_regeltekst_regional)</span></summary>
+    <p>Fast regional oprykningsvej til Danmarksserien. Organisatorisk struktur, ikke sportslig tværfamilie-sammenligning.</p>
+    <p><strong>Belæg:</strong> Badminton Danmarks Holdturneringsreglement 2024 §29 (s. 12): Sjælland har 2 pladser til Danmarksserien.</p>
+    <p><strong>Dækning:</strong> Dækningshuller: 2010/11–2019/20 og 2021/22. Se 105-kildetabellen; ingen nutidsregel er projiceret bagud.</p>
+    <p><strong>Links:</strong> <a href="https://badminton.dk/wp-content/uploads/2024/08/2024-08-14-Holdturneringsreglement-for-badminton-i-Danmark-010724-Marked.pdf" target="_blank" rel="noreferrer">kilde badminton.dk</a></p>
+  </details>
+<details class="edge-detail regional-edge" id="edge-10">
+    <summary><span class="swatch"></span><strong>Danmarksserien → LF-Serien</strong><span>Regional strukturel regeltekst (strukturel_regeltekst_regional)</span></summary>
+    <p>Fast regional oprykningsvej til Danmarksserien. Organisatorisk struktur, ikke sportslig tværfamilie-sammenligning.</p>
+    <p><strong>Belæg:</strong> Badminton Danmarks Holdturneringsreglement 2024 §29 (s. 12): Lolland-Falster har 1 plads; hvis den ikke benyttes, går den til Sjælland.</p>
+    <p><strong>Dækning:</strong> Dækningshuller: 2010/11–2019/20 og 2021/22. Se 105-kildetabellen; ingen nutidsregel er projiceret bagud.</p>
+    <p><strong>Links:</strong> <a href="https://badminton.dk/wp-content/uploads/2024/08/2024-08-14-Holdturneringsreglement-for-badminton-i-Danmark-010724-Marked.pdf" target="_blank" rel="noreferrer">kilde badminton.dk</a></p>
+  </details>
+<details class="edge-detail regional-edge" id="edge-11">
+    <summary><span class="swatch"></span><strong>Danmarksserien → Københavnsserien</strong><span>Regional strukturel regeltekst (strukturel_regeltekst_regional)</span></summary>
+    <p>Fast regional oprykningsvej til Danmarksserien. Organisatorisk struktur, ikke sportslig tværfamilie-sammenligning.</p>
+    <p><strong>Belæg:</strong> Badminton Danmarks Holdturneringsreglement 2024 §29 (s. 12): København har 2 pladser til Danmarksserien.</p>
+    <p><strong>Dækning:</strong> Dækningshuller: 2010/11–2019/20 og 2021/22. Se 105-kildetabellen; ingen nutidsregel er projiceret bagud.</p>
+    <p><strong>Links:</strong> <a href="https://badminton.dk/wp-content/uploads/2024/08/2024-08-14-Holdturneringsreglement-for-badminton-i-Danmark-010724-Marked.pdf" target="_blank" rel="noreferrer">kilde badminton.dk</a></p>
+  </details>
+<details class="edge-detail regional-edge" id="edge-12">
+    <summary><span class="swatch"></span><strong>Danmarksserien → Bornholmsserien</strong><span>Regional strukturel regeltekst (strukturel_regeltekst_regional)</span></summary>
+    <p>Fast regional oprykningsvej til Danmarksserien. Organisatorisk struktur, ikke sportslig tværfamilie-sammenligning.</p>
+    <p><strong>Belæg:</strong> Badminton Danmarks Holdturneringsreglement 2024 §29 (s. 12): Bornholm har 1 plads; hvis den ikke benyttes, går den til København.</p>
+    <p><strong>Dækning:</strong> Dækningshuller: 2010/11–2019/20 og 2021/22. Se 105-kildetabellen; ingen nutidsregel er projiceret bagud.</p>
+    <p><strong>Links:</strong> <a href="https://badminton.dk/wp-content/uploads/2024/08/2024-08-14-Holdturneringsreglement-for-badminton-i-Danmark-010724-Marked.pdf" target="_blank" rel="noreferrer">kilde badminton.dk</a></p>
+  </details>
+<h2>Hvad der er foldet væk</h2><p>20134 noder har ingen dokumenteret forbindelse i 104/105 og er bevidst ikke tegnet enkeltvis. Det omfatter regionale rækker, ungdom og andre spilleform-familier, som ikke kan placeres uden nyt belæg.</p>
+<p><small>Genereret fra uændrede <code>104-national-styrke-dag.json</code> og <code>105-national-styrke-dag.json</code>. 104's 20145 noder og 8 kanter blev kontrolleret som bevaret i 105 før rendering.</small></p>
+</main></body></html>
