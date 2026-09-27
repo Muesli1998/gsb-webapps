@@ -143,3 +143,58 @@ et separat *strukturelt niveauforhold* på tværs af spilleform-familier (tydeli
 mærket "ikke sportsligt sammenlignelig"), eller skal DAG'en fortsat respektere
 familiegrænsen absolut og vise DH som to uforbundne komponenter? Indtil svar
 bliver der ikke tilføjet en tværfamilie-kant.
+
+### Christoffers svar (2026-09-27) — godkendt, snæver strukturel undtagelse
+
+Ja: DH-hovedturneringens officielt navngivne stige må få en særskilt
+strukturel regeltekst-kant på tværs af de gemte kategorisignaturer. Forskellen
+mellem Ligaen/1. division og resten af DH-stigen er her et artefakt af, hvor
+mange kampkategorier der spilles på niveauet, ikke en reelt inkompatibel
+konkurrenceform. Undtagelsen gælder **kun** Ligaen ↔ 1. division ↔ 2. division
+↔ 3. division ↔ Danmarksserien. Den er ikke en generel licens til at forbinde
+andre spilleform-familier: fx forbliver `4+3` og `2+2` absolut adskilte.
+
+Implementering: repræsentér disse som tydeligt mærkede
+`strukturel_regeltekst`-kanter mellem særskilte DH-strukturnoder, så de ikke
+fejlagtigt læses som en sportslig tværfamilie-rangering.
+
+## Resultatnote
+
+**Hvad blev gjort:**
+
+- Formaliserede spilleforms-standarden i `docs/statistik-plan.md`, placeret
+  ved siden af Holdidentitets-standarden, fordi begge er tværgående,
+  vedligeholdte fortolkningsregler for statistikarbejdet.
+- Tilføjede den reproducerbare generator
+  `statistik/scripts/104-generate-national-styrke-dag.mjs` og dens læsbare
+  Markdown- og JSON-output.
+- Modellen har 20.145 noder fra alle 33 regioner, 59.127
+  pulje-region-forekomster og 18.546 unikke puljer. Den indeholder fire
+  familierene regeltekst-kanter og fire særskilte
+  `strukturel_regeltekst`-kanter for den officielle DH-stige.
+- Den strukturelle undtagelse er repræsenteret med egne DH-strukturnoder;
+  den er ikke en rangering mellem kategorisignaturer. Alle andre
+  spilleform-familiegrænser er fortsat absolutte.
+
+**Kontroloutput:**
+
+- 103-regressionskontrol: 59.127 forekomster, 18.546 unikke puljer, 686
+  arvede familier, 839 tekstsignaler, 856 ukendte og 0 afvigelser fra 086c.
+- DAG-kontrol: 8 kanter i alt; 4 `familieren_regeltekst` og 4
+  `strukturel_regeltekst`. Alle fire strukturkanter har begge endepunkter i
+  den snævre `national_dh_structural_exception`-scope.
+- SHA-256 før/efter: `gsb-statistik-normalized.db`
+  `49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E`;
+  `liga-landskab.db`
+  `9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C`.
+  Ingen databaseskrivning og ingen nye API-kald.
+
+**Hvad blev fravalgt og hvorfor:**
+
+- Regionale niveauer, ungdom og alle ikke-dokumenterede overgange forbliver
+  uforbundne/sideordnede. 104 opfinder ikke kanter ud fra navne eller tynde
+  holdspor.
+- Ingen generel undtagelse for forskellige spilleform-familier: kun den
+  officielt dokumenterede DH-stige er tilføjet som struktur.
+
+**Commits:** `049073b` samt efterfølgende afsluttende commit på denne gren.

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T06:35:17.138Z",
+  "generated_at": "2026-09-27T06:43:16.761Z",
   "model": "directed_acyclic_graph_partial_order",
   "source": "approved_086c_embedded_classification",
   "source_coverage": {
@@ -8,7 +8,7 @@
     "unique_groups": 18546
   },
   "ordering_rule": "Only nodes joined by an edge are ordered. No edge means explicitly incomparable/sideordnet.",
-  "family_rule": "Edges are created only within one identical spilleform-family.",
+  "family_rule": "Family-pure edges are created only within one identical spilleform-family. Four separately marked structural DH edges are the sole approved exception and are not sportswise cross-family comparisons.",
   "nodes": [
     {
       "id": "række|1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DD · 2. DS · 2. HD · 2. HS · 2. MD · 3. HD · 3. HS · 4. HS|1|1|kvalifikation til 3.division|fase",
@@ -282422,6 +282422,119 @@
       "divisions": [
         "MOT 4 spillere serie 5"
       ]
+    },
+    {
+      "id": "dh_strukturel|Badmintonligaen",
+      "label": "Badmintonligaen",
+      "family": null,
+      "age_group_id": 1,
+      "region_id": 1,
+      "scope": "national_dh_structural_exception",
+      "node_type": "strukturelt_niveau",
+      "source_rows": 81,
+      "unique_groups": 81,
+      "divisions": [
+        "Badmintonligaen"
+      ],
+      "source_family_nodes": [
+        "dh|1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. HS|senior|Badmintonligaen",
+        "dh|1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DS · 2. HD · 2. HS · 2. MD|senior|Badmintonligaen"
+      ],
+      "source_families": [
+        "1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DS · 2. HD · 2. HS · 2. MD",
+        "1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. HS"
+      ],
+      "caveat": "Kun organisatorisk DH-niveau. Noden er ikke en sportslig sammenligning mellem spilleform-familier."
+    },
+    {
+      "id": "dh_strukturel|1. division",
+      "label": "1. division",
+      "family": null,
+      "age_group_id": 1,
+      "region_id": 1,
+      "scope": "national_dh_structural_exception",
+      "node_type": "strukturelt_niveau",
+      "source_rows": 46,
+      "unique_groups": 46,
+      "divisions": [
+        "1. division",
+        "1. division (grundspil)",
+        "1.division"
+      ],
+      "source_family_nodes": [
+        "dh|1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DD · 2. DS · 2. HD · 2. HS · 2. MD · 3. HD · 3. HS · 4. HS|senior|1. division",
+        "dh|1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DS · 2. HD · 2. HS · 2. MD|senior|1. division"
+      ],
+      "source_families": [
+        "1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DD · 2. DS · 2. HD · 2. HS · 2. MD · 3. HD · 3. HS · 4. HS",
+        "1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DS · 2. HD · 2. HS · 2. MD"
+      ],
+      "caveat": "Kun organisatorisk DH-niveau. Noden er ikke en sportslig sammenligning mellem spilleform-familier."
+    },
+    {
+      "id": "dh_strukturel|2. division",
+      "label": "2. division",
+      "family": null,
+      "age_group_id": 1,
+      "region_id": 1,
+      "scope": "national_dh_structural_exception",
+      "node_type": "strukturelt_niveau",
+      "source_rows": 57,
+      "unique_groups": 57,
+      "divisions": [
+        "2. division",
+        "2.division"
+      ],
+      "source_family_nodes": [
+        "dh|1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DD · 2. DS · 2. HD · 2. HS · 2. MD · 3. HD · 3. HS · 4. HS|senior|2. division"
+      ],
+      "source_families": [
+        "1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DD · 2. DS · 2. HD · 2. HS · 2. MD · 3. HD · 3. HS · 4. HS"
+      ],
+      "caveat": "Kun organisatorisk DH-niveau. Noden er ikke en sportslig sammenligning mellem spilleform-familier."
+    },
+    {
+      "id": "dh_strukturel|3. division",
+      "label": "3. division",
+      "family": null,
+      "age_group_id": 1,
+      "region_id": 1,
+      "scope": "national_dh_structural_exception",
+      "node_type": "strukturelt_niveau",
+      "source_rows": 112,
+      "unique_groups": 112,
+      "divisions": [
+        "3. division",
+        "3.division"
+      ],
+      "source_family_nodes": [
+        "dh|1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DD · 2. DS · 2. HD · 2. HS · 2. MD · 3. HD · 3. HS · 4. HS|senior|3. division"
+      ],
+      "source_families": [
+        "1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DD · 2. DS · 2. HD · 2. HS · 2. MD · 3. HD · 3. HS · 4. HS"
+      ],
+      "caveat": "Kun organisatorisk DH-niveau. Noden er ikke en sportslig sammenligning mellem spilleform-familier."
+    },
+    {
+      "id": "dh_strukturel|Danmarksserien",
+      "label": "Danmarksserien",
+      "family": null,
+      "age_group_id": 1,
+      "region_id": 1,
+      "scope": "national_dh_structural_exception",
+      "node_type": "strukturelt_niveau",
+      "source_rows": 215,
+      "unique_groups": 215,
+      "divisions": [
+        "Danmarksserien"
+      ],
+      "source_family_nodes": [
+        "dh|1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DD · 2. DS · 2. HD · 2. HS · 2. MD · 3. HD · 3. HS · 4. HS|senior|Danmarksserien"
+      ],
+      "source_families": [
+        "1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DD · 2. DS · 2. HD · 2. HS · 2. MD · 3. HD · 3. HS · 4. HS"
+      ],
+      "caveat": "Kun organisatorisk DH-niveau. Noden er ikke en sportslig sammenligning mellem spilleform-familier."
     }
   ],
   "edges": [
@@ -282430,6 +282543,7 @@
       "weaker_node_id": "dh|1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DD · 2. DS · 2. HD · 2. HS · 2. MD · 3. HD · 3. HS · 4. HS|senior|2. division",
       "family": "1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DD · 2. DS · 2. HD · 2. HS · 2. MD · 3. HD · 3. HS · 4. HS",
       "relation": "documented_dh_level_pair",
+      "edge_type": "familieren_regeltekst",
       "evidence": "regeltekst",
       "source": "086e/088b: DH-reglement 2025 §17-25 og §28; 2026 §17-25",
       "caveat": "Reglen dokumenterer niveauparret. Den identificerer ikke automatisk konkrete hold på tværs af sæsoner."
@@ -282439,6 +282553,7 @@
       "weaker_node_id": "dh|1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DD · 2. DS · 2. HD · 2. HS · 2. MD · 3. HD · 3. HS · 4. HS|senior|3. division",
       "family": "1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DD · 2. DS · 2. HD · 2. HS · 2. MD · 3. HD · 3. HS · 4. HS",
       "relation": "documented_dh_level_pair",
+      "edge_type": "familieren_regeltekst",
       "evidence": "regeltekst",
       "source": "086e/088b: DH-reglement 2025 §17-25 og §28; 2026 §17-25",
       "caveat": "Reglen dokumenterer niveauparret. Den identificerer ikke automatisk konkrete hold på tværs af sæsoner."
@@ -282448,6 +282563,7 @@
       "weaker_node_id": "dh|1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DD · 2. DS · 2. HD · 2. HS · 2. MD · 3. HD · 3. HS · 4. HS|senior|Danmarksserien",
       "family": "1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DD · 2. DS · 2. HD · 2. HS · 2. MD · 3. HD · 3. HS · 4. HS",
       "relation": "documented_dh_level_pair",
+      "edge_type": "familieren_regeltekst",
       "evidence": "regeltekst",
       "source": "086e/088b: DH-reglement 2025 §17-25 og §28; 2026 §17-25",
       "caveat": "Reglen dokumenterer niveauparret. Den identificerer ikke automatisk konkrete hold på tværs af sæsoner."
@@ -282457,9 +282573,50 @@
       "weaker_node_id": "dh|1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DS · 2. HD · 2. HS · 2. MD|senior|1. division",
       "family": "1. DD · 1. DS · 1. HD · 1. HS · 1. MD · 2. DS · 2. HD · 2. HS · 2. MD",
       "relation": "documented_dh_level_pair",
+      "edge_type": "familieren_regeltekst",
       "evidence": "regeltekst",
       "source": "086e/088b: DH-reglement 2025 §17-25 og §28; 2026 §17-25",
       "caveat": "Reglen dokumenterer niveauparret. Den identificerer ikke automatisk konkrete hold på tværs af sæsoner."
+    },
+    {
+      "stronger_node_id": "dh_strukturel|Badmintonligaen",
+      "weaker_node_id": "dh_strukturel|1. division",
+      "family": null,
+      "relation": "official_dh_ladder_structural_link",
+      "edge_type": "strukturel_regeltekst",
+      "evidence": "regeltekst",
+      "source": "Chris-bekræftet afgrænset undtagelse 2026-09-27; 086e/088b: DH-reglement 2025 §17-25 og §28; 2026 §17-25",
+      "caveat": "Kun DH-hovedturneringen. Ikke en generel tilladelse til at sammenligne eller rangere andre spilleform-familier."
+    },
+    {
+      "stronger_node_id": "dh_strukturel|1. division",
+      "weaker_node_id": "dh_strukturel|2. division",
+      "family": null,
+      "relation": "official_dh_ladder_structural_link",
+      "edge_type": "strukturel_regeltekst",
+      "evidence": "regeltekst",
+      "source": "Chris-bekræftet afgrænset undtagelse 2026-09-27; 086e/088b: DH-reglement 2025 §17-25 og §28; 2026 §17-25",
+      "caveat": "Kun DH-hovedturneringen. Ikke en generel tilladelse til at sammenligne eller rangere andre spilleform-familier."
+    },
+    {
+      "stronger_node_id": "dh_strukturel|2. division",
+      "weaker_node_id": "dh_strukturel|3. division",
+      "family": null,
+      "relation": "official_dh_ladder_structural_link",
+      "edge_type": "strukturel_regeltekst",
+      "evidence": "regeltekst",
+      "source": "Chris-bekræftet afgrænset undtagelse 2026-09-27; 086e/088b: DH-reglement 2025 §17-25 og §28; 2026 §17-25",
+      "caveat": "Kun DH-hovedturneringen. Ikke en generel tilladelse til at sammenligne eller rangere andre spilleform-familier."
+    },
+    {
+      "stronger_node_id": "dh_strukturel|3. division",
+      "weaker_node_id": "dh_strukturel|Danmarksserien",
+      "family": null,
+      "relation": "official_dh_ladder_structural_link",
+      "edge_type": "strukturel_regeltekst",
+      "evidence": "regeltekst",
+      "source": "Chris-bekræftet afgrænset undtagelse 2026-09-27; 086e/088b: DH-reglement 2025 §17-25 og §28; 2026 §17-25",
+      "caveat": "Kun DH-hovedturneringen. Ikke en generel tilladelse til at sammenligne eller rangere andre spilleform-familier."
     }
   ],
   "unconnected_nodes": [

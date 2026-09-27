@@ -79,10 +79,67 @@ for (const [family, levels] of byFamily) {
       weaker_node_id: weaker.id,
       family,
       relation: 'documented_dh_level_pair',
+      edge_type: 'familieren_regeltekst',
       evidence: 'regeltekst',
       source: '086e/088b: DH-reglement 2025 §17-25 og §28; 2026 §17-25',
       caveat: 'Reglen dokumenterer niveauparret. Den identificerer ikke automatisk konkrete hold på tværs af sæsoner.',
     });
+  }
+}
+
+// This is deliberately a separate, structural representation of Badminton
+// Denmark's named DH ladder. It does not make the category-count families
+// sportswise comparable. Chris approved this narrow exception on 2026-09-27:
+// the different category counts here are a level-specific match-format
+// artefact, while formats such as 4+3 and 2+2 remain absolutely separate.
+const structuralNodeIds = new Map();
+for (const level of dhOrder) {
+  const sourceNodes = nodes.filter((node) => node.scope === 'national_dh_senior' && node.label === level);
+  if (!sourceNodes.length) continue;
+  const id = `dh_strukturel|${level}`;
+  structuralNodeIds.set(level, id);
+  nodes.push({
+    id,
+    label: level,
+    family: null,
+    age_group_id: 1,
+    region_id: 1,
+    scope: 'national_dh_structural_exception',
+    node_type: 'strukturelt_niveau',
+    source_rows: sourceNodes.reduce((sum, node) => sum + node.source_rows, 0),
+    unique_groups: sourceNodes.reduce((sum, node) => sum + node.unique_groups, 0),
+    divisions: [...new Set(sourceNodes.flatMap((node) => node.divisions))].sort(),
+    source_family_nodes: sourceNodes.map((node) => node.id),
+    source_families: [...new Set(sourceNodes.map((node) => node.family))].sort(),
+    caveat: 'Kun organisatorisk DH-niveau. Noden er ikke en sportslig sammenligning mellem spilleform-familier.',
+  });
+}
+for (let index = 0; index < dhOrder.length - 1; index += 1) {
+  const stronger = structuralNodeIds.get(dhOrder[index]);
+  const weaker = structuralNodeIds.get(dhOrder[index + 1]);
+  if (!stronger || !weaker) continue;
+  edges.push({
+    stronger_node_id: stronger,
+    weaker_node_id: weaker,
+    family: null,
+    relation: 'official_dh_ladder_structural_link',
+    edge_type: 'strukturel_regeltekst',
+    evidence: 'regeltekst',
+    source: 'Chris-bekræftet afgrænset undtagelse 2026-09-27; 086e/088b: DH-reglement 2025 §17-25 og §28; 2026 §17-25',
+    caveat: 'Kun DH-hovedturneringen. Ikke en generel tilladelse til at sammenligne eller rangere andre spilleform-familier.',
+  });
+}
+
+const nodeById = new Map(nodes.map((node) => [node.id, node]));
+for (const edge of edges) {
+  const stronger = nodeById.get(edge.stronger_node_id);
+  const weaker = nodeById.get(edge.weaker_node_id);
+  if (edge.edge_type === 'familieren_regeltekst' && stronger.family !== weaker.family) {
+    throw new Error(`Family-pure edge crosses families: ${edge.stronger_node_id} -> ${edge.weaker_node_id}`);
+  }
+  if (edge.edge_type === 'strukturel_regeltekst'
+    && (stronger.scope !== 'national_dh_structural_exception' || weaker.scope !== 'national_dh_structural_exception')) {
+    throw new Error(`Structural exception escaped DH ladder: ${edge.stronger_node_id} -> ${edge.weaker_node_id}`);
   }
 }
 
@@ -96,14 +153,14 @@ const output = {
     unique_groups: new Set(source.x.map(key)).size,
   },
   ordering_rule: 'Only nodes joined by an edge are ordered. No edge means explicitly incomparable/sideordnet.',
-  family_rule: 'Edges are created only within one identical spilleform-family.',
+  family_rule: 'Family-pure edges are created only within one identical spilleform-family. Four separately marked structural DH edges are the sole approved exception and are not sportswise cross-family comparisons.',
   nodes,
   edges,
   unconnected_nodes: nodes.filter((node) => !edges.some((edge) => edge.stronger_node_id === node.id || edge.weaker_node_id === node.id)).map((node) => node.id),
 };
 
 fs.writeFileSync('statistik/results/104-national-styrke-dag.json', JSON.stringify(output, null, 2) + '\n');
-const rows = edges.map((edge) => `| ${nodes.find((n) => n.id === edge.stronger_node_id).label} | ${nodes.find((n) => n.id === edge.weaker_node_id).label} | ${edge.evidence} | ${edge.source} |`).join('\n') || '| Ingen | Ingen | — | — |';
-const markdown = `# Opgave 104 — national styrke-DAG\n\n## Model\n\nDette er en **delvis ordning**, ikke en samlet placeringstabel. En pil betyder kun, at dokumenteret regeltekst forbinder de to niveauer inden for samme spilleform-familie. Uden pil er noderne sideordnede/uafgjorte. Det gælder især regionale serier, ungdom og alle familier uden dokumenteret overgang.\n\n## Dækning\n\n- Regioner i kataloget: **${output.source_coverage.regions_catalogued}**.\n- Pulje-region-forekomster: **${output.source_coverage.region_group_occurrences}**.\n- Unikke puljer: **${output.source_coverage.unique_groups}**.\n- DAG-noder: **${nodes.length}**; dokumenterede kanter: **${edges.length}**; eksplicit uforbundne noder: **${output.unconnected_nodes.length}**.\n\n## Dokumenterede styrkeforhold\n\n| Stærkere niveau | Svagere niveau | Belæg | Kilde |\n|---|---|---|---|\n${rows}\n\n## Hvad DAG'en bevidst ikke gør\n\n- Den sammenligner aldrig forskellige spilleform-familier.\n- Den placerer ikke regionale serier indbyrdes eller under Danmarksserien uden en særskilt citeret overgang.\n- Den bruger ikke 087's lave hold-kæde-rate til at opfinde flere kanter; 087 er kun støtte for, at konkrete holdspor er begrænsede.\n- Fase-/spilletidssider er beholdt som noder, men er ikke styrkeniveauer.\n\nMaskinlæsbar struktur: [104-national-styrke-dag.json](104-national-styrke-dag.json).\n`;
+const rows = edges.map((edge) => `| ${nodeById.get(edge.stronger_node_id).label} | ${nodeById.get(edge.weaker_node_id).label} | ${edge.edge_type} | ${edge.evidence} | ${edge.source} |`).join('\n') || '| Ingen | Ingen | — | — | — |';
+const markdown = `# Opgave 104 — national styrke-DAG\n\n## Model\n\nDette er en **delvis ordning**, ikke en samlet placeringstabel. En pil betyder kun et dokumenteret niveauforhold. Uden pil er noderne sideordnede/uafgjorte.\n\nAlmindelige kanter er familierene: de sammenligner kun én identisk spilleform-familie. Fire kanter af typen **\`strukturel_regeltekst\`** udgør den eneste godkendte undtagelse: Badminton Danmarks officielt navngivne DH-stige. De er særskilte, strukturelle noder og er **ikke** sportslige sammenligninger mellem kategorisignaturer. Undtagelsen gælder kun Ligaen ↔ 1. division ↔ 2. division ↔ 3. division ↔ Danmarksserien; alle andre familiegrænser er fortsat absolutte.\n\n## Dækning\n\n- Regioner i kataloget: **${output.source_coverage.regions_catalogued}**.\n- Pulje-region-forekomster: **${output.source_coverage.region_group_occurrences}**.\n- Unikke puljer: **${output.source_coverage.unique_groups}**.\n- DAG-noder: **${nodes.length}**; dokumenterede kanter: **${edges.length}**; eksplicit uforbundne noder: **${output.unconnected_nodes.length}**.\n\n## Dokumenterede niveauforhold\n\n| Stærkere niveau | Svagere niveau | Kanttype | Belæg | Kilde |\n|---|---|---|---|---|\n${rows}\n\n## Hvad DAG'en bevidst ikke gør\n\n- Den sammenligner ikke spilleform-familier sportsligt. DH-undtagelsen er en separat organisatorisk struktur.\n- Den placerer ikke regionale serier indbyrdes eller under Danmarksserien uden en særskilt citeret overgang.\n- Den bruger ikke 087's lave hold-kæde-rate til at opfinde flere kanter; 087 er kun støtte for, at konkrete holdspor er begrænsede.\n- Fase-/spilletidssider er beholdt som noder, men er ikke styrkeniveauer.\n\nMaskinlæsbar struktur: [104-national-styrke-dag.json](104-national-styrke-dag.json).\n`;
 fs.writeFileSync('statistik/results/104-national-styrke-dag.md', markdown);
 console.log(JSON.stringify({ nodes: nodes.length, edges: edges.length, unconnected: output.unconnected_nodes.length, coverage: output.source_coverage }, null, 2));
