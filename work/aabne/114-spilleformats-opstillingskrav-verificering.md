@@ -68,13 +68,22 @@ konkrete fund gjort, som skal dokumenteres og delvist efterprøves:
 2. Hvis data findes: tæl faktisk distinkte spillere pr. holdkamp for disse puljer og
    sammenlign med den tekst-antagede spillerstørrelse (4 for S4D4, 5 for S4D3). Bekræft
    eller afkræft antagelsen eksplicit.
-3. Hvis data IKKE findes (sandsynligt pga. GSB-scoping): undersøg om der findes en bredere,
+3. Test SAMME metode på punkt 4's uafklarede rest (1411 forekomster, signatur S4/D2, ingen
+   af de seks kendte formatord i teksten, ren ungdom U09-U17/U19). Find konkrete
+   external_match_id'er for en stikprøve af disse puljer, slå dem op i
+   `gsb-statistik-normalized.db` på samme måde, og forsøg at afgøre om der reelt er tale om
+   et fuldt pigehold (dvs. skulle have været klassificeret som "4 piger") eller om det er
+   ægte kønsblandet "4 spillere". Der er intet kønsfelt, så dette kræver at udlede køn af
+   `name_raw`/`name_normalized` — vær eksplicit om hvor usikker den udledning er, og drag
+   ikke en skråsikker konklusion hvis navnene er tvetydige. Hvis stikprøven slet ikke findes
+   i databasen (samme GSB-scoping-problem som punkt 2), sig det klart i stedet for at gætte.
+4. Hvis data IKKE findes (sandsynligt pga. GSB-scoping): undersøg om der findes en bredere,
    ikke-GSB-scoped kilde i repoet med spillernavne/roster-data der kunne dække dette
    fremover, og rapportér hvad der findes/mangler. Byg ikke en ny scraper i denne opgave.
-4. Dokumentér hele fundet — inkl. punkt 1-5 ovenfor fra denne opgavebeskrivelse, samt de nye
+5. Dokumentér hele fundet — inkl. punkt 1-6 ovenfor fra denne opgavebeskrivelse, samt de nye
    fund fra denne opgave — som en samlet statusrapport, så det kan bruges direkte i den
    senere samlede dokumentation af spilleformats-arbejdet (112/113-komplekset).
-5. Registrér "5 spillere" som et syvende kendt navngivet ungdomsformat i den dokumentation
+6. Registrér "5 spillere" som et syvende kendt navngivet ungdomsformat i den dokumentation
    (ikke i selve 112-scriptet endnu — det er en senere opdatering).
 
 ## Afgrænsning
