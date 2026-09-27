@@ -1,97 +1,108 @@
-# Opgave 112 — fuldt katalog over alle holdkampsopstillings-formater, for hele datasættet og alle aldersgrupper
+# Opgave 112 — dump og publicér det eksisterende register over holdkampsopstillings-felter, for hele datasættet
 
-**Trin:** Ny (bygger på 086c/103's spilleforms-standard, forudsætning for 113's rangering).
+**Trin:** Ny (bygger på 046/103/086c's allerede eksisterende parsing/klassifikation; forudsætning for
+113's rangering).
 
-**Baggrund:** Christoffer har præciseret hvorfor spilleforms-familie-arbejdet (086c/103) blev startet:
-ungdomsholdene kunne ikke følges korrekt, fordi de spiller i forskellige HOLDOPSTILLINGSFORMATER
-(hvor mange spillere, hvor mange herre-/dame-/mixed-poster, fx "4 singler", "2 doubler", "2+2",
-"4 spillere", "4 piger") — ikke kun forskellige niveauer. 103's klassifikation afgør allerede hvilken
-familie en pulje hører til, men der findes IKKE noget samlet, udtømmende KATALOG over alle de formater
-der reelt findes i hele datasættet — kun de familier 086c's stikprøve tilfældigt observerede.
+**Baggrund:** Christoffer har efterspurgt et fuldt katalog over alle holdkampsopstillings-formater
+(4 singler, 2+2, 4 spillere, 4 piger osv.), for HELE datasættet og ALLE aldersgrupper — som
+forudsætning for en rangering af formaterne (opgave 113). En gennemgang før dette kort blev skrevet
+viste at de rå byggeklodser allerede findes og er langt mindre end ventet:
 
-Christoffer vil nu have et komplet overblik, FOR HELE datasættet (ikke en stikprøve) og FOR ALLE
-aldersgrupper (senior, ungdom U09-U19, veteran) — som forudsætning for at kunne bygge en rangering af
-formaterne (opgave 113).
+- Hele `liga-landskab.db` har kun **46 distinkte `category_raw`-koder** i alt (`1. HS`, `2. DD`,
+  `1. MD`, `4. S` osv. — nummererede single/double/mixed-poster). 103's klassifikationsscript bygger
+  allerede en "kategorisignatur" (den sorterede mængde af disse koder) pr. pulje internt.
+- Opgave 046 har allerede et fungerende parse-script (`046-ungdom-holdtype-niveau-audit.mjs`) der
+  udtrækker `holdtype` (4+3/4+2/2+2/4 spillere/4 piger/X1/X2), `niveau` (A/B/C/D/M) og `pointgraense`
+  fra rå tekst.
+- Christoffer har selv opremset fire felter han husker findes: **Aldersgruppe, Niveau, Spillefamilie,
+  Point**. Denne opgave bekræfter at der findes MINDST fire til: **Sæson** (`season_id`), **Region**
+  (`region_id`), **Gruppetype** (grundspil/slutspil/kvalifikation/spilletider, fra
+  `group_type_katalog`), og **Kategorisignatur** (de rå `category_raw`-koder — mere pålideligt end
+  holdtype-teksten, når de findes).
 
-**Vigtigt fund fra denne opgaves forberedelse:** en gennemgang af 086c's egne tekstsignal-fund viser at
-nogle af de eksisterende "familier" faktisk er VETERAN-ALDERSGRÆNSER (fx "50+2", "60+4", "40+45" —
-disse er alder-/pointtærskler for hvem der må spille, ikke en holdopstillingsform), forkert blandet
-sammen med reelle opstillingsformater (4+3, 2+2, 4 spillere, 4 piger) i samme tekstsignal-kategori.
-Christoffer har bekræftet at disse SKAL holdes strengt separat: aldersgrænser er en selvstændig
-dimension (hvem må spille), ikke en holdopstillingsform, og skal renses ud af formats-kataloget.
+Denne opgave er derfor IKKE en ny kortlægningsopgave — det er en DUMP/RAPPORT-opgave: kør den logik
+der allerede findes (046's parsing + 103's kategorisignatur-logik) hen over HELE datasættet, i stedet
+for kun GSB's egne kampe (046/077's tidligere scope) eller 086c's stikprøve, og publicér resultatet
+som ét samlet, læsbart katalog. Der skal IKKE opfindes ny parsing-logik fra bunden, kun genbruges og
+udvides til fuld dækning.
 
 ## Mål
 
-1. **Byg et udtømmende katalog over alle reelle holdopstillingsformater i HELE datasættet**
-   (ikke kun 086c's tekstsignal-stikprøve) — for hver unikke kombination af antal spillere/poster og
-   deres køns-/kategorisammensætning (fx "4 herresingler + 4 damesingler", "2 herredouble + 2
-   damedouble", "2+2 mixed", "4 spillere blandet"), baseret på de FAKTISK GEMTE `match_categories` for
-   hver pulje — den samme kilde 103's klassifikation allerede bruger som primær kilde, men nu brugt til
-   at ENUMERERE alle unikke kombinationer i stedet for kun at klassificere familie-tilhørsforhold.
-2. **Dæk alle aldersgrupper eksplicit** (senior `age_group_id=1`, veteran 9/11/12/13/17, ungdom
-   2/3/4/5/6/18) — rapportér kataloget PR. ALDERSGRUPPE, ikke kun samlet, fordi formaterne kan variere
-   markant mellem dem (fx ungdommens "4 spillere"/"2+2"/"4 piger" vs. veteranernes aldersgrænse-koder).
-3. **Separer aldersgrænse-koder (50+, 60+ osv.) fra reelle opstillingsformater** eksplicit i kataloget
-   — de skal fremgå som en ANDEN kolonne/dimension ("gyldig for spillere X+ år"), ikke som endnu et
-   format i selve opstillings-listen. Dette gælder specifikt de tekstsignal-fund som allerede er
-   identificeret som problematiske (`50+2`, `60+4`, `40+45`, `35+4`, `17+4` m.fl. — bekræft om `17+4`
-   er en aldersgrænse eller noget andet, det er ikke entydigt ud fra navnet alene).
-4. **For hvert katalogiseret format, angiv dækning**: hvor mange puljer/rækker/sæsoner bruger det,
-   hvilke aldersgrupper, om det er fundet via kategorisignatur (sikkert) eller kun tekstsignal
-   (svagere, jf. 103's egen fallback-hierarki) — så 113's rangeringsarbejde kan se hvor solidt hvert
-   format er belagt.
-5. **Flag eventuelle formater der IKKE kan katalogiseres tydeligt** (utilstrækkelig kategoridata OG
-   intet klart tekstsignal) som en selvstændig "ukendt format"-gruppe, med et konkret antal — dette er
-   samme "Ukendt format"-kategori 103 allerede har, men skal nu rapporteres eksplicit som en del af
-   det fulde katalog, ikke skjules.
+1. **Kør 046's holdtype/niveau/pointgrænse-parsing og 103's kategorisignatur-logik over ALLE rækker i
+   `liga-landskab.db`** — alle sæsoner, alle `age_group_id`, alle `region_id` — ikke kun GSB's egne
+   kampe (046/077's tidligere scope var GSB-only). Dette er en udvidelse af eksisterende scripts'
+   dækning, ikke en ny metode.
+2. **For hver unik række, gem de otte felter**: Sæson, Region, Aldersgruppe, Niveau, Spillefamilie
+   (holdtype), Point(grænse), Gruppetype (grundspil/slutspil/kval/spilletider), og Kategorisignatur
+   (den sorterede `category_raw`-mængde, hvor den findes for puljen).
+3. **Ethvert stykke tekst i kilden der IKKE kan forklares af de otte felter ovenfor, skal i et
+   selvstændigt FRITEKST-felt** — ikke tabes, ikke tvinges ind i et af de kendte felter. Dette dækker
+   fx uklare tokens som dem opgave 052 allerede har fundet (`X1`, `KS-P1`, "Uge 38" m.fl.) samt
+   eventuelle nye, endnu uidentificerede tekststumper i den fulde nationale dataset (som er langt
+   større end 052's GSB-only-scan).
+4. **Skil aldersgrænse-koder klart fra Spillefamilie-feltet.** Kontrollér specifikt om nogen af
+   veteran-aldersgrænserne (50+, 60+ m.fl.) optræder i selve `category_raw`-kategorisignaturen, eller
+   kun i rå rækketekst (division_name_raw/league_raw) uden om Spillefamilie-parsingen — hvis de kun
+   optræder i rå tekst, bekræft det og dokumentér at Spillefamilie-feltet allerede er rent; hvis de
+   viser sig at kunne blande sig ind i Spillefamilie-parsingen for enkelte rækker, ret det og
+   dokumentér rettelsen.
+5. **Publicér ét samlet katalog** (ikke kun rå tabel-dumps) der viser, for hver kombination af de otte
+   felter: hvor mange puljer/rækker/sæsoner den bruges i, hvilke aldersgrupper og regioner den
+   forekommer i, og om Spillefamilien er fundet via kategorisignatur (sikkert, jf. 103's fallback-
+   hierarki), tekstsignal (svagere), eller er "Ukendt format". Rapportér FRITEKST-restens omfang som
+   et konkret, synligt antal — ikke skjult i en total.
 
 ## Afgrænsning
 
-**Må røres:** nyt script under `statistik/scripts/` (kan bygge videre på `103-086c-klassifikation.mjs`
-og dens `categorySignatures`-logik, men laver en ny ENUMERINGS-rapport, ikke en ændring af 103's
-klassifikation selv), nye outputfiler under `statistik/results/`.
+**Må røres:** nyt script under `statistik/scripts/` (skal bygge videre på/genbruge
+`046-ungdom-holdtype-niveau-audit.mjs` og `103-086c-klassifikation.mjs`'s logik, ikke genopfinde
+parsing fra bunden), nye outputfiler under `statistik/results/`.
 
-**Må ikke røres:** `statistik/data/*.db` (kun læses), `103-086c-klassifikation.mjs`,
-`104-national-styrke-dag.json`, `105-national-styrke-dag.json` (alle læses evt. som reference, ændres
-ikke), `apps/netlify-prod/`, `kampsystem/`, `klubstatistik-preview/`.
+**Må ikke røres:** `statistik/data/*.db` (kun læses), `046-ungdom-holdtype-niveau-audit.mjs`,
+`103-086c-klassifikation.mjs` (begge læses/genbruges som logik-kilde, ændres ikke — denne opgave må
+gerne IMPORTERE/kopiere deres funktioner ind i det nye script, men ikke redigere de eksisterende
+filer), `104-national-styrke-dag.json`, `105-national-styrke-dag.json`, `apps/netlify-prod/`,
+`kampsystem/`, `klubstatistik-preview/`.
 
 ## Kontekst
 
-- `statistik/scripts/103-086c-klassifikation.mjs`, `docs/statistik-plan.md`s "Spilleforms-standard" —
-  den eksisterende tre-lags klassifikationsmetode (kategorisignatur → arv → tekstsignal → ukendt) som
-  denne opgave bruger, men til enumering i stedet for familie-afgørelse.
-- `statistik/results/086c-udvidet-visuelt-kort.html` — de allerede observerede tekstsignal-fund,
-  inklusive de formodede aldersgrænse-koder der skal renses ud.
-- `statistik/results/046-holdidentitet-ungdom-holdtype-niveau.md` — eksisterende research om
-  ungdommens holdtype/niveau-parsing (fx "X1" som holdtype, ikke niveau) — genbrug denne viden i
-  stedet for at genopfinde den.
+- `statistik/scripts/046-ungdom-holdtype-niveau-audit.mjs`, `statistik/results/046-...md`/`.json` —
+  den eksisterende holdtype/niveau/pointgrænse-parser (GSB-only scope, skal udvides til alle klubber).
+- `statistik/scripts/103-086c-klassifikation.mjs` — kategorisignatur-logikken (allerede dataset-bredt,
+  ikke GSB-only).
+- `statistik/results/052-ukendte-regelsaet-tokens.md`/`.json` — den eksisterende (GSB-only) liste over
+  uforklarede tekststumper, som denne opgaves fritekst-felt skal udvide til hele datasættet.
+- `docs/statistik-plan.md`s "Spilleforms-standard" — familie-klassifikationens fallback-hierarki, som
+  denne opgave rapporterer dækningen af, men ikke ændrer.
 
 ## Kontrol
 
 **Målet:**
 ```
-Der findes et katalog over alle unikke holdopstillingsformater, pr. aldersgruppe, med dækningstal.
-Aldersgrænse-koder (50+/60+ osv.) er entydigt separeret fra opstillingsformater i kataloget.
-"Ukendt format"-gruppen er rapporteret som et konkret, synligt antal, ikke skjult.
+Kataloget dækker ALLE sæsoner, ALLE aldersgrupper og ALLE regioner i liga-landskab.db — ikke kun GSB.
+Alle otte felter (Sæson, Region, Aldersgruppe, Niveau, Spillefamilie, Point, Gruppetype,
+  Kategorisignatur) er udfyldt hvor de findes belæg for det.
+Uforklaret tekst lander i et synligt fritekst-felt, med et konkret, rapporteret antal — intet tabes.
+Der er taget eksplicit stilling til om aldersgrænse-koder kan blande sig ind i Spillefamilie-feltet.
 ```
 
 **Værnet:**
 ```
 git status --short statistik/data/   tom
-103's eksisterende klassifikationsscript er ikke ændret — kun brugt/genbrugt som datakilde.
-Intet format er opfundet uden belæg i de faktisk gemte category_raw-værdier eller et tekstsignal i
-  rækkenavnet.
+046 og 103's eksisterende scripts/output er ikke ændret — kun genbrugt/importeret som logik.
+Intet felt er gættet udfyldt uden belæg — mangler belæg for et felt, er det tomt/ukendt, ikke gættet.
 ```
 
-**Skøn:** hvordan man konkret afgør om en tvetydig kode (fx "17+4") er en aldersgrænse eller et
-opstillingsformat, er Codex' eget skøn — undersøg konteksten (hvilken aldersgruppe/pulje den optræder
-i) og begrund kort i Resultatnoten; er det stadig uafklaret efter undersøgelsen, spørg i "Spørgsmål".
+**Skøn:** hvordan man teknisk bedst genbruger 046/103's parsing (import af funktioner, eller en
+bevidst duplikeret men dokumenteret kopi, hvis modulstrukturen gør import besværlig) er Codex' eget
+skøn — dokumentér valget kort i Resultatnoten.
 
 ## Ved tvivl
 
-Er det uklart om en tekstkode er en aldersgrænse eller et opstillingsformat, undersøg hvilken
-aldersgruppe den optræder i (en kode der kun ses i veteran-rækker er sandsynligvis en aldersgrænse) —
-er det stadig uklart efter det, spørg i stedet for at gætte hvilken kategori den hører til.
+Er det uklart om en tekststump hører til et af de otte kendte felter eller skal i fritekst, foretræk
+fritekst — det er billigere at rydde en fejlagtig fritekst-post op senere end at skjule den i et forkert
+felt. Er det uklart om en aldersgrænse-kode er "lækket" ind i Spillefamilie-feltet for en konkret
+række, undersøg den enkelte række konkret i stedet for at antage et mønster for hele datasættet.
 
 ## Gren
 
