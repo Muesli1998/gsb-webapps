@@ -126,4 +126,12 @@ arbejde/114-spilleformats-opstillingskrav-verificering
 
 ## Resultatnote
 
-(udfyldes ved aflevering)
+- Kontrol udført read-only mod `liga-landskab.db` og `gsb-statistik-normalized.db`.
+- Efterskole-stikprøve: puljerne 18170 (80 kamp-ID’er), 18173 (13), 18413 (3), 18415 (10) og 19062 (3) gav 109 distinkte kamp-ID-forekomster i liga-landskabet og 0 match i `gsb-statistik-normalized.db.team_matches`.
+- S4D4/“4 spillere” kan derfor ikke verificeres med spillerdata; S4D3/“5 spillere” er dokumenteret af den rå rækketekst, men ikke verificeret med spillerrelationer.
+- S4/D2-restens stikprøve: 18500 (6), 18520 (3), 18566 (3) og 19156 (1) gav 13 kamp-ID’er og 0 GSB-match; køn og spillerantal er ubekræftet.
+- Ingen bred, ikke-GSB-scoped spiller-/rosterkilde blev fundet i repoet.
+- “5 spillere” er registreret som syvende navngivne ungdomsformat i rapporten; 112-scriptet er ikke ændret.
+- Filer: `statistik/results/114-spilleformats-opstillingskrav-verificering.md` og `.json`.
+- Spørgsmål: ingen nye metodiske uklarheder; den manglende GSB-dækning er rapporteret som begrænsning.
+- Commit: udfyldes ved aflevering.

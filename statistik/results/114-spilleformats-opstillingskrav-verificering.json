@@ -1,0 +1,177 @@
+{
+  "task": "114-spilleformats-opstillingskrav-verificering",
+  "method": {
+    "source_catalog": "statistik/results/112-spilleformats-katalog-alle-aargange.json",
+    "liga_db": "statistik/data/liga-landskab.db",
+    "gsb_db": "statistik/data/gsb-statistik-normalized.db",
+    "read_only": true,
+    "join": "liga_landscape.league_match_groups.external_match_id = gsb_normalized.team_matches.external_match_id"
+  },
+  "efterskole_samples": [
+    {
+      "league_group_id": "18170",
+      "label": "EFTERSKOLETURN. U17/U19C (6.400) - 4 Spillere",
+      "season_id": 2025,
+      "age_group_id": 18,
+      "liga_match_ids": 80,
+      "sample_external_match_ids": [
+        "499805",
+        "499806",
+        "499808",
+        "499999",
+        "500000",
+        "500001"
+      ],
+      "liga_category_rows": 192,
+      "gsb_team_matches": 0,
+      "text_assumption_players": 4,
+      "conclusion": "Ingen GSB-spillerdata; antagelsen kan ikke bekræftes eller afkræftes."
+    },
+    {
+      "league_group_id": "18173",
+      "label": "EFTERSKOLETURN. U17/U19A (10.500) - 5 Spillere",
+      "season_id": 2025,
+      "age_group_id": 18,
+      "liga_match_ids": 13,
+      "sample_external_match_ids": [
+        "499797",
+        "499798",
+        "499799",
+        "503271",
+        "503272",
+        "503273"
+      ],
+      "liga_category_rows": 91,
+      "gsb_team_matches": 0,
+      "text_assumption_players": 5,
+      "conclusion": "Ingen GSB-spillerdata; teksten dokumenterer formatnavnet, men faktisk spillerantal er ikke verificeret."
+    },
+    {
+      "league_group_id": "18413",
+      "label": "ØM 5 Spillere C-række (4si., 3do.)",
+      "season_id": 2025,
+      "age_group_id": 18,
+      "liga_match_ids": 3,
+      "sample_external_match_ids": [
+        "503838",
+        "503839",
+        "503840"
+      ],
+      "liga_category_rows": 21,
+      "gsb_team_matches": 0,
+      "text_assumption_players": 5,
+      "conclusion": "Ingen GSB-spillerdata; teksten angiver fem spillere og 4 single/3 double-kategorier."
+    },
+    {
+      "league_group_id": "18415",
+      "label": "ØM 5 Spillere D-række (4si., 3do.)",
+      "season_id": 2025,
+      "age_group_id": 18,
+      "liga_match_ids": 10,
+      "sample_external_match_ids": [
+        "503842",
+        "503843",
+        "503844",
+        "503845",
+        "503846",
+        "503847"
+      ],
+      "liga_category_rows": 0,
+      "gsb_team_matches": 0,
+      "text_assumption_players": 5,
+      "conclusion": "Ingen GSB-spillerdata; kategorier mangler i denne pulje."
+    },
+    {
+      "league_group_id": "19062",
+      "label": "EFTERSKOLETURN. U17/U19A 4 Spillere",
+      "season_id": 2026,
+      "age_group_id": 18,
+      "liga_match_ids": 3,
+      "sample_external_match_ids": [
+        "512925",
+        "512996",
+        "512997"
+      ],
+      "liga_category_rows": 24,
+      "gsb_team_matches": 0,
+      "text_assumption_players": 4,
+      "conclusion": "Ingen GSB-spillerdata; antagelsen kan ikke verificeres i denne database."
+    }
+  ],
+  "unlabelled_s4d2_sample": [
+    {
+      "league_group_id": "18500",
+      "label": "U11 - Begynderholdturnering - Januar",
+      "season_id": 2025,
+      "age_group_id": 3,
+      "liga_match_ids": 6,
+      "sample_external_match_ids": [
+        "505128",
+        "505129",
+        "505130",
+        "505131",
+        "505132",
+        "505133"
+      ],
+      "liga_category_rows": 36,
+      "gsb_team_matches": 0
+    },
+    {
+      "league_group_id": "18520",
+      "label": "U13 - Begynderholdturnering - Februar",
+      "season_id": 2025,
+      "age_group_id": 4,
+      "liga_match_ids": 3,
+      "sample_external_match_ids": [
+        "505525",
+        "505526",
+        "505527"
+      ],
+      "liga_category_rows": 18,
+      "gsb_team_matches": 0
+    },
+    {
+      "league_group_id": "18566",
+      "label": "U13 - Begynderholdturnering - Marts",
+      "season_id": 2025,
+      "age_group_id": 4,
+      "liga_match_ids": 3,
+      "sample_external_match_ids": [
+        "505701",
+        "505702",
+        "505703"
+      ],
+      "liga_category_rows": 18,
+      "gsb_team_matches": 0
+    },
+    {
+      "league_group_id": "19156",
+      "label": "U13 - Begynder - Opstartsturnering - 20.sep",
+      "season_id": 2026,
+      "age_group_id": 4,
+      "liga_match_ids": 1,
+      "sample_external_match_ids": [
+        "516683"
+      ],
+      "liga_category_rows": 8,
+      "gsb_team_matches": 0
+    }
+  ],
+  "broader_source_search": {
+    "searched": "statistik/scripts, statistik/results, apps/netlify-prod og repoets øvrige filer for ikke-GSB-scoped roster/spillerdata",
+    "found": [
+      "liga-landskab.db indeholder kamp-/kategorioplysninger, men ingen spillerrelationer",
+      "gsb-statistik-normalized.db indeholder spillerrelationer, men team_matches er GSB-scoped"
+    ],
+    "not_found": "Ingen bred, komplet spiller-/rosterkilde i repoet blev fundet."
+  },
+  "format_registration": {
+    "name": "5 spillere",
+    "status": "syvende kendte navngivne ungdomsformat",
+    "evidence": [
+      "EFTERSKOLETURN. U17/U19A/B (10.500/9.000) - 5 Spillere",
+      "ØM 5 Spillere C/D-række (4si., 3do.)"
+    ],
+    "not_in_112_script": true
+  }
+}
