@@ -103,6 +103,6 @@ tilfælde) er et reelt strukturskift eller bare en administrativ omdøbning uden
 - GSB-accepttest: 101’s ægte 2016/17–2022/23-pause for hold 4 bevares; hold 5 2015/16 og hold 4 2016/17 forbliver eksplicit uafklarede.
 - **Kontroloutput:** generatoren kørte; 20.150 noder, 13 kanter, 20.134 foldede uforbundne noder; `git status --short statistik/data/` tom.
 - **Hvad blev fravalgt:** ingen ny research, API-kald eller databaseskrivning; 104/105/106 blev ikke ændret.
-- **Commits:** udfyldes ved commit.
+- **Commits:** `95bc9cf`.
 
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
