@@ -91,6 +91,6 @@ foregive præcision der ikke findes.
 - 2020/21 og 2022/23–2026/27 beholder 105's eksisterende direkte nationalt dokumenterede tal.
 - **Kontroloutput:** ingen databasefiler ændret; eksisterende citerede 105-fund er bevaret; der er ikke interpoleret pladstal.
 - **Søgning:** badminton.dk's holdturneringsarkiv, fire vestlige kredses egne arkiver, badmintonpeople.dk's ældre PDF-spor og målrettede søgninger på årstal, §29, Kredsserie Vest og de regionale rækkenavne.
-- **Commits:** udfyldes ved commit.
+- **Commits:** `bed3ed9`.
 
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
