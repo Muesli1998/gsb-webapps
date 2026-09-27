@@ -119,4 +119,4 @@ i 104/105's JSON), spørg i "Spørgsmål" i stedet for selv at tilføje den.
 - Ren HTML/CSS med SVG-lignende linjeforløb blev valgt frem for D3/bibliotek, fordi den har nul afhængigheder og er let at åbne som én fil, i samme enkelt-fils-ånd som 086c.
 - Ingen database blev åbnet eller skrevet. `git status --short statistik/data/` viser kun den allerede kendte, ustagede mappe.
 
-**Commits:** udfyldes ved commit.
+**Commits:** `c11740e`.
