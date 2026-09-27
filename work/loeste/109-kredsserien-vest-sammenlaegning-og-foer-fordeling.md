@@ -98,7 +98,7 @@ etableringsåret" i stedet for at antage det er samme ting.
 - **Kontroloutput:** `node statistik/scripts/109-kredsserien-vest-sammenlaegning.mjs`; JSON skrevet; `git status --short statistik/data/` tom.
 - **Hvad blev gjort:** 105-rapporten opdateret med kilder og grænse.
 - **Hvad blev fravalgt:** ingen interpolation, databaseændring eller API-kald.
-- **Commits:** udfyldes ved commit.
+- **Commits:** `7e6d49d`.
 
 *(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
 
