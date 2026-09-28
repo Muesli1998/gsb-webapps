@@ -33,7 +33,7 @@ function initDb() {
       result_raw TEXT, round_raw TEXT, home_team_raw TEXT, away_team_raw TEXT, context_raw TEXT,
       fetched_at TEXT NOT NULL, error_type TEXT, error_message TEXT);
     CREATE TABLE IF NOT EXISTS players (external_player_id TEXT PRIMARY KEY, name_raw TEXT NOT NULL,
-      gender_status TEXT NOT NULL CHECK(gender_status IN ('mand','kvinde','ikke afklaret','aldrig spillet')),
+      gender_status TEXT NOT NULL CHECK(gender_status IN ('mand','kvinde','ikke afklaret','aldrig spillet','modstridende data')),
       first_seen_at TEXT NOT NULL, last_seen_at TEXT NOT NULL);
     CREATE TABLE IF NOT EXISTS player_matches (external_player_id TEXT NOT NULL, external_match_id TEXT NOT NULL,
       name_raw TEXT NOT NULL, team_side TEXT, discipline_code TEXT, partner_player_id TEXT,
@@ -117,9 +117,16 @@ function checkpoint() {
   fs.writeFileSync(progressPath, JSON.stringify({ ...stats, lastCheckpointAt: stamp, totalPopulation: metas.length, selectedRange: [START_INDEX, END_INDEX_ENV ?? metas.length], remaining: metas.length - stats.attempted }, null, 2) + '\n');
 }
 const matchStmt = db.prepare(`INSERT OR REPLACE INTO matches VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`);
-const playerStmt = db.prepare(`INSERT INTO players VALUES(?,?,?,?,?) ON CONFLICT(external_player_id) DO UPDATE SET name_raw=excluded.name_raw,
-  gender_status=CASE WHEN players.gender_status='mand' OR excluded.gender_status='mand' THEN 'mand' WHEN players.gender_status='kvinde' OR excluded.gender_status='kvinde' THEN 'kvinde' ELSE 'ikke afklaret' END,
-  last_seen_at=excluded.last_seen_at`);
+const playerStmt = db.prepare(`INSERT INTO players VALUES(?,?,?,?,?) ON CONFLICT(external_player_id) DO UPDATE SET name_raw=excluded.name_raw, last_seen_at=excluded.last_seen_at`);
+function genderStatusFor(db, playerId) {
+  const r = db.prepare(`SELECT SUM(CASE WHEN discipline_code IN ('HS','HD') THEN 1 ELSE 0 END) male, SUM(CASE WHEN discipline_code IN ('DS','DD') THEN 1 ELSE 0 END) female FROM player_matches WHERE external_player_id=?`).get(playerId);
+  const male = Number(r?.male || 0), female = Number(r?.female || 0), total = male + female;
+  if (!total) return 'ikke afklaret';
+  if (male / total >= 0.8) return 'mand';
+  if (female / total >= 0.8) return 'kvinde';
+  return 'modstridende data';
+}
+const genderStmt = db.prepare('UPDATE players SET gender_status=? WHERE external_player_id=?');
 const pmStmt = db.prepare(`INSERT OR REPLACE INTO player_matches VALUES(?,?,?,?,?,?,?,?,?,?,?)`);
 const selectedMetas = metas.slice(START_INDEX, END_INDEX_ENV ?? metas.length);
 for (const meta of selectedMetas) {
@@ -142,6 +149,7 @@ for (const meta of selectedMetas) {
       for (const p of parsed.players) {
         playerStmt.run(p.id, p.name, p.gender, new Date().toISOString(), new Date().toISOString()); stats.players_found++;
         for (const code of (p.codes.length ? p.codes : [null])) pmStmt.run(p.id, id, p.name, null, code, null, null, null, null, parsed.round, parsed.raw.slice(0, 2000));
+        genderStmt.run(genderStatusFor(db, p.id), p.id);
       }
     }
   } catch (e) {

@@ -1,0 +1,154 @@
+{
+  "totalPlayers": 76169,
+  "before": {
+    "ikke afklaret": 37804,
+    "kvinde": 13941,
+    "mand": 24424
+  },
+  "automaticDistribution": {
+    "mand": 23277,
+    "kvinde": 15025,
+    "ikke afklaret": 37804,
+    "modstridende data": 63
+  },
+  "automaticChanged": 1169,
+  "overrideRows": 62,
+  "overridesApplied": 62,
+  "missingOverrideIds": [],
+  "overrideChecks": [
+    {
+      "external_player_id": "15896",
+      "name_raw": "Sofie Robdrup",
+      "gender_status": "modstridende data",
+      "requested": "kvinde"
+    },
+    {
+      "external_player_id": "17541",
+      "name_raw": "Marlene Friis",
+      "gender_status": "modstridende data",
+      "requested": "kvinde"
+    },
+    {
+      "external_player_id": "231076",
+      "name_raw": "Maya Dahan",
+      "gender_status": "modstridende data",
+      "requested": "kvinde"
+    },
+    {
+      "external_player_id": "241778",
+      "name_raw": "Olivia la Cour Hillingsø",
+      "gender_status": "modstridende data",
+      "requested": "kvinde"
+    },
+    {
+      "external_player_id": "255445",
+      "name_raw": "Lillian Enevoldsen",
+      "gender_status": "modstridende data",
+      "requested": "kvinde"
+    },
+    {
+      "external_player_id": "273590",
+      "name_raw": "Celina Rask",
+      "gender_status": "modstridende data",
+      "requested": "kvinde"
+    },
+    {
+      "external_player_id": "285886",
+      "name_raw": "Mathilde Raun",
+      "gender_status": "modstridende data",
+      "requested": "kvinde"
+    },
+    {
+      "external_player_id": "289635",
+      "name_raw": "Lukas Skov Hansen",
+      "gender_status": "modstridende data",
+      "requested": "mand"
+    },
+    {
+      "external_player_id": "311809",
+      "name_raw": "Anders Andreasen",
+      "gender_status": "modstridende data",
+      "requested": "mand"
+    },
+    {
+      "external_player_id": "345239",
+      "name_raw": "Ea Palm Heldt",
+      "gender_status": "modstridende data",
+      "requested": "kvinde"
+    }
+  ],
+  "specialPlayer234617": {
+    "external_player_id": "234617",
+    "name_raw": "Ukendt",
+    "gender_status": "modstridende data"
+  },
+  "samples": [
+    {
+      "external_player_id": "10000",
+      "male": 32,
+      "female": 0,
+      "automatic_status": "mand"
+    },
+    {
+      "external_player_id": "10001",
+      "male": 0,
+      "female": 64,
+      "automatic_status": "kvinde"
+    },
+    {
+      "external_player_id": "10003",
+      "male": 191,
+      "female": 0,
+      "automatic_status": "mand"
+    },
+    {
+      "external_player_id": "10005",
+      "male": 76,
+      "female": 0,
+      "automatic_status": "mand"
+    },
+    {
+      "external_player_id": "10014",
+      "male": 20,
+      "female": 0,
+      "automatic_status": "mand"
+    },
+    {
+      "external_player_id": "10016",
+      "male": 19,
+      "female": 0,
+      "automatic_status": "mand"
+    },
+    {
+      "external_player_id": "10019",
+      "male": 0,
+      "female": 131,
+      "automatic_status": "kvinde"
+    },
+    {
+      "external_player_id": "1002",
+      "male": 23,
+      "female": 0,
+      "automatic_status": "mand"
+    },
+    {
+      "external_player_id": "10022",
+      "male": 74,
+      "female": 0,
+      "automatic_status": "mand"
+    },
+    {
+      "external_player_id": "10024",
+      "male": 143,
+      "female": 0,
+      "automatic_status": "mand"
+    }
+  ],
+  "generatedAt": "2026-09-28T20:22:35.110Z",
+  "final": {
+    "ikke afklaret": 37804,
+    "kvinde": 15081,
+    "mand": 23283,
+    "modstridende data": 1
+  }
+}

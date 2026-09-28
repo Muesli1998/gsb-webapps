@@ -126,4 +126,21 @@ rækker).
 
 ## Resultatnote
 
-(udfyldes ved aflevering)
+- Datagrundlag: eksisterende `statistik/data/national-spillere.db`; ingen scraping og ingen ændring af `gsb-statistik-normalized.db` eller `liga-landskab.db`.
+- 76.169 spillere blev genberegnet. Automatisk 80%-fordeling: 23.277 `mand`, 15.025 `kvinde`, 37.804 `ikke afklaret`, 63 `modstridende data`, 0 `aldrig spillet`. 1.169 eksisterende statusværdier ændrede sig før manuelle overrides.
+- Efter alle 62 overrides: 23.283 `mand`, 15.081 `kvinde`, 37.804 `ikke afklaret`, 1 `modstridende data`, 0 `aldrig spillet`; summen er 76.169. Alle 62 CSV-rækker blev anvendt, ingen ID'er manglede.
+- Spiller 234617 er fortsat `Ukendt` og står eksplicit som `modstridende data`. Databasen har kun navnet `Ukendt` for spilleren (35 relationer fordelt på 17 kamp-ID'er); årsagen kan ikke afgøres uden ny scraping.
+- CHECK-constrainten i players er udvidet med `modstridende data`. 120-scriptets fremtidige upsert beregner nu status fra alle gemte HS/HD- og DS/DD-koder med 80%-regel.
+- Kontrol: 15896 Sofie Robdrup endte som `kvinde`, 289635 Lukas Skov Hansen som `mand`; de beskyttede databaser havde hash før/efter uændret.
+- Nye reproducerbare filer: `statistik/scripts/121-recalculate-gender.mjs`, `statistik/results/121-koensrettelse/recalculation.md` og `.json`.
+
+### Kontroloutput
+
+- Før: 24.424 mand / 13.941 kvinde / 37.804 ikke afklaret.
+- Efter automatisk regel: 23.277 / 15.025 / 37.804 / 63 modstridende.
+- Endelig: 23.283 / 15.081 / 37.804 / 1 / 0 aldrig spillet = 76.169.
+- 62/62 overrides verificeret; 234617 = `modstridende data`.
+
+### Commits
+
+- Branch: `arbejde/121-koensrettelse-flertal` (commit udfyldes efter aflevering).
