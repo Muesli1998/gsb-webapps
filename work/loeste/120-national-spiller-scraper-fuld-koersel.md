@@ -111,3 +111,17 @@ design.
 ## Resultatnote
 
 (udfyldes ved aflevering)
+
+### Resultatnote — driftslog før fuld natlig kørsel
+
+Beslutninger og målte pilotresultater er samlet i `statistik/results/120-national-spiller-scraper.md`. Efter afprøvning af 3, 5 og 10 parallelle processer fortsætter den faktiske kørsel med 3 processer, fordi 5 kun var ca. 10,5 % hurtigere end 3 og gav flere render-gate-fejl. Alle processer bruger disjunkte intervaller, separate browserprofiler og den separate `national-spillere.db`; de beskyttede normaliserede databaser røres ikke.
+
+### Resultatnote — første fulde kørsel
+
+Alle 203.012 kamp-ID’er er forsøgt. Slutstatus: 164.569 `ok`, 38.397 `no_player_links`, 46 `render_gate_failed`, 0 `fetch_error`; 76.169 spillere og 3.400.576 spiller-kamprelationer. Render-gate blev justeret til 15 sekunder, og teksten “kampnummer findes ikke” afslutter hurtigt uden at vente på timeout. De 46 resterende gate-ID’er er dokumenteret i `statistik/results/120-national-spiller-scraper.md` og i den separate `national-spillere.db`, så de kan genkøres senere. Tre parallelle processer blev brugt efter brugerens udtrykkelige godkendelse; fem og ti blev målt, men fravalgt fordi gevinsten var under 15 %. `gsb-statistik-normalized.db` og `liga-landskab.db` blev ikke skrevet til.
+
+### Resultatnote — render-gate-listen afsluttet
+
+De 46 tidligere render-gate-rækker blev genkørt. Alle viste “kampnummer findes ikke” og er nu klassificeret som `match_not_found`; den endelige render-gate-status er 0. Samlet slutstatus: 164.569 `ok`, 38.397 `no_player_links`, 46 `match_not_found`, 0 `fetch_error`, 76.169 spillere og 3.400.576 spiller-kamprelationer.
+
+Afsluttende værn: `gsb-statistik-normalized.db` SHA-256 `49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E`; `liga-landskab.db` SHA-256 `9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C`. Begge blev kun læst.
