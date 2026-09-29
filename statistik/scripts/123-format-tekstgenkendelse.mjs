@@ -63,11 +63,14 @@ function parseText(text) {
     [/\b2\s*\+\s*2\b/iu, '2+2', '2+2'],
     [/\b4\s*\+\s*3\b/iu, '4+3', '4+3'],
     [/\b4\s*\+\s*2\b/iu, '4+2', '4+2'],
-    [/\bx[12]\b/iu, null, 'X1/X2'],
+    [/\bx[12]\b/iu, null, null],
   ];
   for (const [pattern, format, variant] of applied) {
     const match = lower.match(pattern);
-    if (match) return { format: format ?? match[0].toUpperCase(), variant, status: 'anvendt', matched: match[0] };
+    if (match) {
+      const literal = match[0].toUpperCase();
+      return { format: format ?? literal, variant: variant ?? literal, status: 'anvendt', matched: match[0] };
+    }
   }
   const pending = [
     [/\b4\s*[-–]\s*8\s*spillere\b/iu, '4-8 spillere', 'ukendt'],
