@@ -115,4 +115,22 @@ kan afgøres).
 
 ## Resultatnote
 
-(udfyldes ved aflevering)
+- Arbejdsgren: `arbejde/122-s4d2-rest-afklaring`.
+- Analysen læser direkte `liga-landskab.db` råtabeller. Fysisk pulje-nøgle: `(season_id, age_group_id, league_group_id)`; ungdomsfilter `age_group_id IN (2,3,4,5,6,7,18)`, UNG (21) udeladt.
+- 6.765 puljer havde match_category-data. 5.093 havde præcis fire S-koder (`1.–4. S`) og to D-koder (`1.–2. D`). 4.318 af disse havde et kendt tekstsignal; 775 havde ingen kendt formatord. Det er den korrigerede deduplikerede rest. 112-katalogets 59.127 region-forekomster og 18.546 katalogpuljer bruges kun som sammenligning, ikke som facit.
+- Kontrol blev kørt først: 30 spredte kendte “4 spillere”-puljer; 30/30 havde national spillerdata. Distinkte spillerstatusser: 74 mand, 25 kvinde, 154 ikke afklaret.
+- Reststikprøve: 60 spredte puljer; 55/60 havde national spillerdata, 849 gemte spillerrelationer. Distinkte statusser: 142 mand, 69 kvinde, 253 ikke afklaret.
+- `player_matches.team_side`, `partner_player_id` og `opponent_player_id` var NULL i de undersøgte nationaldata. Derfor er spillere ikke fordelt på hjemme-/udehold; ingen holdtilhørsforhold er gættet.
+- Konklusion: S4/D2-resten kan ikke forsvarligt lægges til hverken “4 spillere” eller “4 piger” på dette datagrundlag. Den forbliver en selvstændig uafklaret kategori.
+- Alle tre databaser blev hashkontrolleret før og efter den read-only kørsel; hashene var identiske:
+  - `liga-landskab.db`: `9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C`
+  - `national-spillere.db`: `598908DA8CD1F9D468BA3CBD27FE1E2125A99D738579E8E3EA0DF3C0D6960DEF`
+  - `gsb-statistik-normalized.db`: `49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E`
+- Resultater: `statistik/results/122-s4d2-rest-afklaring.md` og `.json`; reproducerbart script: `statistik/scripts/122-s4d2-rest-afklaring.mjs`.
+
+### Kontroloutput
+
+- Puljetotaler: 6.765 med kategoridata / 5.093 S4/D2 / 4.318 kendt tekst / 775 uden kendt tekst.
+- Kontrol: 30 puljer, 30 med spillerdata, 74 mand / 25 kvinde / 154 ikke afklaret.
+- Rest: 60 puljer, 55 med spillerdata, 142 mand / 69 kvinde / 253 ikke afklaret.
+- Databaser skrevet: 0.

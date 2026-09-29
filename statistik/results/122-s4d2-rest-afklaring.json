@@ -1,0 +1,1751 @@
+{
+  "generated_at": "2026-09-29T18:48:55.022Z",
+  "summary": {
+    "source_group_count": 6765,
+    "s4d2_group_count": 5093,
+    "known_text_group_count": 4318,
+    "unknown_text_group_count": 775,
+    "control_groups_sampled": 30,
+    "rest_groups_sampled": 60,
+    "raw_catalog_summary": {
+      "occurrences": 59127,
+      "unique_groups": 18546,
+      "seasons": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "age_groups": [
+        "10|SEN+45",
+        "11|SEN+50",
+        "12|SEN+55",
+        "13|SEN+60",
+        "15|Andet",
+        "16|MOT",
+        "17|SEN+70",
+        "18|U17/U19",
+        "1|SEN",
+        "21|UNG",
+        "2|U09",
+        "3|U11",
+        "4|U13",
+        "5|U15",
+        "6|U17",
+        "8|SEN+35",
+        "9|SEN+40"
+      ],
+      "regions": [
+        "10|Badminton Sjælland",
+        "14|DGI Bornholm",
+        "16|DGI Fyn",
+        "17|DGI Midtjylland",
+        "18|DGI Nordjylland",
+        "19|DGI Nordsjælland",
+        "1|Badminton Danmark",
+        "20|DGI Nordvest",
+        "23|DGI SdU",
+        "24|DGI Storkøbenhavn",
+        "25|DGI Storstrømmen",
+        "27|DGI Sydvest",
+        "28|DGI Sydøstjylland",
+        "29|DGI Sønderjylland",
+        "2|DGI",
+        "30|DGI Vestjylland",
+        "31|DGI Midt- og Vestsjælland",
+        "32|DGI Østjylland",
+        "3|Badminton Bornholm",
+        "4|Badminton Midtjylland",
+        "5|Badminton Nordjylland",
+        "6|Badminton Sønderjylland",
+        "7|Badminton Fyn",
+        "8|Badminton København",
+        "9|Badminton Lolland-Falster"
+      ],
+      "category_codes": [
+        "1. D",
+        "1. DD",
+        "1. DS",
+        "1. HD",
+        "1. HS",
+        "1. MD",
+        "1. S",
+        "10. HD",
+        "11. HD",
+        "12. HD",
+        "2. D",
+        "2. DD",
+        "2. DS",
+        "2. HD",
+        "2. HS",
+        "2. MD",
+        "2. S",
+        "3. D",
+        "3. DD",
+        "3. DS",
+        "3. HD",
+        "3. HS",
+        "3. MD",
+        "3. S",
+        "4. D",
+        "4. DD",
+        "4. DS",
+        "4. HD",
+        "4. HS",
+        "4. MD",
+        "4. S",
+        "5. D",
+        "5. DD",
+        "5. HD",
+        "5. S",
+        "6. D",
+        "6. DD",
+        "6. HD",
+        "6. S",
+        "7. D",
+        "7. HD",
+        "7. S",
+        "8. D",
+        "8. HD",
+        "8. S",
+        "9. HD"
+      ],
+      "category_code_count": 46,
+      "family_source_counts": {
+        "kategorisignatur": 56746,
+        "tekstsignal": 1329,
+        "ukendt": 1052
+      },
+      "freetext_occurrences": 59127,
+      "freetext_distinct": 13852,
+      "veteran_age_code_check": {
+        "signatures_with_veteran_code": [],
+        "family_field_leak_count": 0
+      }
+    },
+    "unique_key": "season_id + age_group_id + league_group_id; region rows are not part of the physical-pool key",
+    "youth_age_group_ids": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      18
+    ],
+    "signature_definition": "exactly four distinct S codes and two distinct D codes across match_categories, no other code",
+    "known_text_definition": "same 046/112 text tokens: 4 spillere, 4 piger, 3 spillere, 2+2, 4+2, 4+3, X1/X2",
+    "national_player_side_note": "player_matches.team_side is inspected as stored; unknown_side is reported rather than inferred"
+  },
+  "rest_samples": [
+    {
+      "season_id": 2011,
+      "age_group_id": 2,
+      "league_group_id": "619",
+      "match_id": "35210",
+      "match_count": 21,
+      "text": "U9 | Pulje 2 | BADNDRJ U09 2011/2012",
+      "teams": {},
+      "player_rows": 0
+    },
+    {
+      "season_id": 2011,
+      "age_group_id": 4,
+      "league_group_id": "1248",
+      "match_id": "48391",
+      "match_count": 1,
+      "text": "U13C (4m/k) finale | Finale | BADSJ U13 2011/2012",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "mand": 4,
+            "kvinde": 4
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2011,
+      "age_group_id": 4,
+      "league_group_id": "479",
+      "match_id": "29487",
+      "match_count": 21,
+      "text": "U13D | Pulje 5 | BADNDRJ U13 2011/2012",
+      "teams": {},
+      "player_rows": 0
+    },
+    {
+      "season_id": 2011,
+      "age_group_id": 5,
+      "league_group_id": "203",
+      "match_id": "10524",
+      "match_count": 30,
+      "text": "C (4m/k) | Pulje 4 | BADSJ U15 2011/2012",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 4,
+          "genders": {
+            "mand": 2,
+            "ikke afklaret": 2
+          }
+        }
+      },
+      "player_rows": 8
+    },
+    {
+      "season_id": 2011,
+      "age_group_id": 5,
+      "league_group_id": "678",
+      "match_id": "37872",
+      "match_count": 12,
+      "text": "U15B/C4 | Pulje 2 | BADMIDJ U15 2011/2012",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "mand": 4,
+            "ikke afklaret": 3,
+            "kvinde": 1
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2012,
+      "age_group_id": 3,
+      "league_group_id": "1589",
+      "match_id": "61080",
+      "match_count": 30,
+      "text": "U11 B-række (4 m/k, valgfrit køn) | Pulje 1 | BADSJ U11 2012/2013",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 7,
+          "genders": {
+            "ikke afklaret": 4,
+            "mand": 2,
+            "kvinde": 1
+          }
+        }
+      },
+      "player_rows": 13
+    },
+    {
+      "season_id": 2012,
+      "age_group_id": 3,
+      "league_group_id": "2462",
+      "match_id": "91296",
+      "match_count": 1,
+      "text": "Semifinale U11B 4m/k | Semifinale | BADSJ U11 2012/2013",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "ikke afklaret": 2,
+            "mand": 6
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2012,
+      "age_group_id": 4,
+      "league_group_id": "1683",
+      "match_id": "69646",
+      "match_count": 10,
+      "text": "U13 | Pulje 1 | BADBORN U13 2012/2013",
+      "teams": {},
+      "player_rows": 0
+    },
+    {
+      "season_id": 2012,
+      "age_group_id": 4,
+      "league_group_id": "2473",
+      "match_id": "91307",
+      "match_count": 1,
+      "text": "Semi- og Finaler - 4 m/k og 4 dr hold - A, B, C, D | Finale - U13B 4m/k | BADSJ U13 2012/2013",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "kvinde": 6,
+            "mand": 2
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2012,
+      "age_group_id": 5,
+      "league_group_id": "1943",
+      "match_id": "81406",
+      "match_count": 20,
+      "text": "U15C | U15C | BADFYN U15 2012/2013",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "ikke afklaret": 4,
+            "mand": 2,
+            "kvinde": 2
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2012,
+      "age_group_id": 6,
+      "league_group_id": "1898",
+      "match_id": "80407",
+      "match_count": 12,
+      "text": "U17B | Pulje 1 | BADNDRJ U17 2012/2013",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 7,
+          "genders": {
+            "ikke afklaret": 3,
+            "mand": 3,
+            "kvinde": 1
+          }
+        }
+      },
+      "player_rows": 14
+    },
+    {
+      "season_id": 2013,
+      "age_group_id": 3,
+      "league_group_id": "3005",
+      "match_id": "114413",
+      "match_count": 30,
+      "text": "U11D 4 m/k | Pulje 2 | BADSJ U11 2013/2014",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 6,
+          "genders": {
+            "mand": 2,
+            "ikke afklaret": 3,
+            "kvinde": 1
+          }
+        }
+      },
+      "player_rows": 12
+    },
+    {
+      "season_id": 2013,
+      "age_group_id": 3,
+      "league_group_id": "3395",
+      "match_id": "128191",
+      "match_count": 30,
+      "text": "U11 D 4-8 spillere | Jammerbugt | BADNDRJ U11 2013/2014",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "ikke afklaret": 8
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2013,
+      "age_group_id": 4,
+      "league_group_id": "3143",
+      "match_id": "127595",
+      "match_count": 12,
+      "text": "U13 B 4-8 spillere | Pulje 1 | BADNDRJ U13 2013/2014",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "ikke afklaret": 5,
+            "mand": 3
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2013,
+      "age_group_id": 4,
+      "league_group_id": "3397",
+      "match_id": "128260",
+      "match_count": 20,
+      "text": "U13 D 4-8 spillere | Pulje 6 Jammerbugt | BADNDRJ U13 2013/2014",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 13,
+          "genders": {
+            "ikke afklaret": 9,
+            "kvinde": 3,
+            "mand": 1
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2013,
+      "age_group_id": 5,
+      "league_group_id": "3016",
+      "match_id": "114709",
+      "match_count": 30,
+      "text": "U15 D 4 m/k | Pulje 1 | BADSJ U15 2013/2014",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 4,
+          "genders": {
+            "ikke afklaret": 4
+          }
+        }
+      },
+      "player_rows": 8
+    },
+    {
+      "season_id": 2013,
+      "age_group_id": 5,
+      "league_group_id": "3389",
+      "match_id": "127996",
+      "match_count": 20,
+      "text": "U15 D 4-8 spillere | Pulje 1 | BADNDRJ U15 2013/2014",
+      "teams": {},
+      "player_rows": 0
+    },
+    {
+      "season_id": 2013,
+      "age_group_id": 6,
+      "league_group_id": "3189",
+      "match_id": "120247",
+      "match_count": 12,
+      "text": "U17 C 4-8 spillere | Pulje 1 | BADLF U17 2013/2014",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "mand": 6,
+            "ikke afklaret": 2
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2013,
+      "age_group_id": 6,
+      "league_group_id": "4001",
+      "match_id": "138403",
+      "match_count": 6,
+      "text": "LM U17 ELITE/MESTER 4 SP. | Pulje 1 | DGI-&#216;ST U17 2013/2014",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "mand": 8
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2013,
+      "age_group_id": 6,
+      "league_group_id": "4172",
+      "match_id": "140620",
+      "match_count": 1,
+      "text": "LM EFTSK. SLUTSPIL 4 SP. C | 3. - 4. plads 4 SP. C | DGI-&#216;ST U17 2013/2014",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 9,
+          "genders": {
+            "ikke afklaret": 8,
+            "mand": 1
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2014,
+      "age_group_id": 3,
+      "league_group_id": "4691",
+      "match_id": "167446",
+      "match_count": 30,
+      "text": "U11 D 4-8 spillere | Pulje 2 | BADSJ U11 2014/2015",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "ikke afklaret": 8
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2014,
+      "age_group_id": 3,
+      "league_group_id": "5491",
+      "match_id": "189687",
+      "match_count": 1,
+      "text": "U11D Finale Fynsmester | Pulje 1 | DGI-FYN U11 2014/2015",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 10,
+          "genders": {
+            "mand": 3,
+            "ikke afklaret": 7
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2014,
+      "age_group_id": 4,
+      "league_group_id": "4799",
+      "match_id": "171526",
+      "match_count": 30,
+      "text": "U13 C 4-8 spillere | Pulje 1 | BADLF U13 2014/2015",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "mand": 3,
+            "ikke afklaret": 5
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2014,
+      "age_group_id": 4,
+      "league_group_id": "5177",
+      "match_id": "185000",
+      "match_count": 20,
+      "text": "U13B ombrydning | Pulje 1 | DGI-SY&#216; U13 2014/2015",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "ikke afklaret": 6,
+            "mand": 1,
+            "kvinde": 1
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2014,
+      "age_group_id": 5,
+      "league_group_id": "4542",
+      "match_id": "159532",
+      "match_count": 21,
+      "text": "U15M | Pulje 1 | BADBORN U15 2014/2015",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 7,
+          "genders": {
+            "ikke afklaret": 4,
+            "mand": 3
+          }
+        }
+      },
+      "player_rows": 14
+    },
+    {
+      "season_id": 2014,
+      "age_group_id": 5,
+      "league_group_id": "4893",
+      "match_id": "173255",
+      "match_count": 30,
+      "text": "U15 C 4-8 spillere | Pulje 1 | DGI-NOR U15 2014/2015",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "ikke afklaret": 5,
+            "kvinde": 3
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2014,
+      "age_group_id": 5,
+      "league_group_id": "5811",
+      "match_id": "191090",
+      "match_count": 1,
+      "text": "U15 D 4-8 spillere | Finalekamp U15D 4-8sp | BADSJ U15 2014/2015",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "kvinde": 4,
+            "ikke afklaret": 3,
+            "mand": 1
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2014,
+      "age_group_id": 6,
+      "league_group_id": "5037",
+      "match_id": "179461",
+      "match_count": 30,
+      "text": "U17-19 B 4-8 spillere | Pulje 1 | BADMIDJ U17 2014/2015",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "mand": 6,
+            "kvinde": 2
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2014,
+      "age_group_id": 6,
+      "league_group_id": "5871",
+      "match_id": "191425",
+      "match_count": 6,
+      "text": "DM EFTERSKOLER 4 SP. A | 4 SP. A | DGI U17 2014/2015",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "kvinde": 2,
+            "mand": 5,
+            "ikke afklaret": 1
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2015,
+      "age_group_id": 3,
+      "league_group_id": "7172",
+      "match_id": "233987",
+      "match_count": 2,
+      "text": "U11D Semifinaler | Semifinaler | DGI-FYN U11 2015/2016",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 10,
+          "genders": {
+            "mand": 2,
+            "ikke afklaret": 7,
+            "kvinde": 1
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2015,
+      "age_group_id": 4,
+      "league_group_id": "6331",
+      "match_id": "211177",
+      "match_count": 12,
+      "text": "U13 | Pulje 1 | BADBORN U13 2015/2016",
+      "teams": {},
+      "player_rows": 0
+    },
+    {
+      "season_id": 2015,
+      "age_group_id": 4,
+      "league_group_id": "7221",
+      "match_id": "234491",
+      "match_count": 2,
+      "text": "Nordjysk holdmesterskab U13B | Pulje 1 | DGI-NOR U13 2015/2016",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 10,
+          "genders": {
+            "mand": 5,
+            "ikke afklaret": 4,
+            "kvinde": 1
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2015,
+      "age_group_id": 5,
+      "league_group_id": "6095",
+      "match_id": "196725",
+      "match_count": 28,
+      "text": "U15 B Række 4 | Pulje 1 | BADKBH U15 2015/2016",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "kvinde": 3,
+            "mand": 3,
+            "ikke afklaret": 2
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2015,
+      "age_group_id": 5,
+      "league_group_id": "7225",
+      "match_id": "234501",
+      "match_count": 2,
+      "text": "Nordjysk holdmesterskab U15C | Pulje 1 | DGI-NOR U15 2015/2016",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 9,
+          "genders": {
+            "kvinde": 1,
+            "mand": 2,
+            "ikke afklaret": 6
+          }
+        }
+      },
+      "player_rows": 14
+    },
+    {
+      "season_id": 2016,
+      "age_group_id": 2,
+      "league_group_id": "8781",
+      "match_id": "277805",
+      "match_count": 3,
+      "text": "Holdturneringsdage for begyndere U9-Herlev | Pulje 1 | DGI-MVS U09 2016/2017",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 9,
+          "genders": {
+            "ikke afklaret": 6,
+            "mand": 1,
+            "kvinde": 2
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2016,
+      "age_group_id": 4,
+      "league_group_id": "7690",
+      "match_id": "239620",
+      "match_count": 20,
+      "text": "U13 A (4) | Pulje 1 | BADKBH U13 2016/2017",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "mand": 6,
+            "kvinde": 1,
+            "ikke afklaret": 1
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2016,
+      "age_group_id": 5,
+      "league_group_id": "7681",
+      "match_id": "239124",
+      "match_count": 45,
+      "text": "U15 D (4) | Pulje 1 | BADKBH U15 2016/2017",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 7,
+          "genders": {
+            "mand": 1,
+            "ikke afklaret": 6
+          }
+        }
+      },
+      "player_rows": 14
+    },
+    {
+      "season_id": 2017,
+      "age_group_id": 3,
+      "league_group_id": "9292",
+      "match_id": "282801",
+      "match_count": 28,
+      "text": "U11 B (4) | Pulje 1 | BADKBH U11 2017/2018",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "ikke afklaret": 2,
+            "mand": 3,
+            "kvinde": 3
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2017,
+      "age_group_id": 5,
+      "league_group_id": "10425",
+      "match_id": "318932",
+      "match_count": 11,
+      "text": "Slutkampe SM for hold U15 | Slutkampe SM for hold | BADSJ U15 2017/2018",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 9,
+          "genders": {
+            "mand": 9
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2018,
+      "age_group_id": 2,
+      "league_group_id": "12135",
+      "match_id": "360484",
+      "match_count": 6,
+      "text": "DMU Hold U9 D 4 Sp. | Pulje 2 | DGI U09 2018/2019",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 9,
+          "genders": {
+            "kvinde": 3,
+            "mand": 2,
+            "ikke afklaret": 4
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2018,
+      "age_group_id": 3,
+      "league_group_id": "12202",
+      "match_id": "361362",
+      "match_count": 10,
+      "text": "DMU Hold U11 D 4 Sp. | Pulje 1 | DGI U11 2018/2019",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "kvinde": 2,
+            "mand": 4,
+            "ikke afklaret": 2
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2018,
+      "age_group_id": 3,
+      "league_group_id": "12282",
+      "match_id": "361157",
+      "match_count": 6,
+      "text": "DMU Hold U11 C 4 Sp. | Pulje 2 | DGI U11 2018/2019",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 9,
+          "genders": {
+            "mand": 1,
+            "ikke afklaret": 8
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2018,
+      "age_group_id": 4,
+      "league_group_id": "12154",
+      "match_id": "361079",
+      "match_count": 6,
+      "text": "DMU Hold U13 CD 4 Sp. | Pulje 1 | DGI U13 2018/2019",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 9,
+          "genders": {
+            "ikke afklaret": 6,
+            "mand": 3
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2018,
+      "age_group_id": 4,
+      "league_group_id": "12246",
+      "match_id": "361078",
+      "match_count": 1,
+      "text": "DMU Hold U13 C 4 Sp. | Bronzekamp 3. - 4. plads | DGI U13 2018/2019",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "mand": 3,
+            "ikke afklaret": 5
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2018,
+      "age_group_id": 4,
+      "league_group_id": "12315",
+      "match_id": "362633",
+      "match_count": 2,
+      "text": "DMU Hold U13 D 4 Sp. | 5. - 7. plads | DGI U13 2018/2019",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 9,
+          "genders": {
+            "kvinde": 5,
+            "ikke afklaret": 4
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2018,
+      "age_group_id": 5,
+      "league_group_id": "12266",
+      "match_id": "362290",
+      "match_count": 3,
+      "text": "DMU Hold U15 C 4 Sp. (NY PLAN) | Pulje 4 | DGI U15 2018/2019",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 9,
+          "genders": {
+            "kvinde": 3,
+            "ikke afklaret": 6
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2018,
+      "age_group_id": 5,
+      "league_group_id": "12334",
+      "match_id": "361937",
+      "match_count": 3,
+      "text": "DMU Hold U15 CD 4 Sp. | Pulje 4 | DGI U15 2018/2019",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 10,
+          "genders": {
+            "kvinde": 1,
+            "ikke afklaret": 7,
+            "mand": 2
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2018,
+      "age_group_id": 5,
+      "league_group_id": "12358",
+      "match_id": "362313",
+      "match_count": 5,
+      "text": "DMU Hold U15 C 4 Sp. (NY PLAN) | Kvartfinaler (3'ere i puljen) | DGI U15 2018/2019",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 9,
+          "genders": {
+            "ikke afklaret": 3,
+            "mand": 3,
+            "kvinde": 3
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2018,
+      "age_group_id": 18,
+      "league_group_id": "11829",
+      "match_id": "355319",
+      "match_count": 6,
+      "text": "&#216;M 4 C (4 SP.) | Pulje 1 | DGI-&#216;ST U17/U19 2018/2019",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "ikke afklaret": 8
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2018,
+      "age_group_id": 18,
+      "league_group_id": "12178",
+      "match_id": "360633",
+      "match_count": 4,
+      "text": "DMU Hold U17/19 B 4 Sp. | Finale slutspil | DGI U17/U19 2018/2019",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 10,
+          "genders": {
+            "mand": 10
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2018,
+      "age_group_id": 18,
+      "league_group_id": "12289",
+      "match_id": "361293",
+      "match_count": 10,
+      "text": "DMU Hold U17/19 CD/D 4 Sp. | Pulje 2 | DGI U17/U19 2018/2019",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 9,
+          "genders": {
+            "kvinde": 2,
+            "mand": 3,
+            "ikke afklaret": 4
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2021,
+      "age_group_id": 4,
+      "league_group_id": "14436",
+      "match_id": "422687",
+      "match_count": 8,
+      "text": "U13 - Begynderholdturnering | Pulje 1 | DGI-NOR U13 2021/2022",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 9,
+          "genders": {
+            "ikke afklaret": 7,
+            "mand": 2
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2021,
+      "age_group_id": 18,
+      "league_group_id": "14767",
+      "match_id": "424769",
+      "match_count": 3,
+      "text": "Efterskolemesterskaber 4 Sp. D (5.600) | Pulje 2 | DGI U17/U19 2021/2022",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 9,
+          "genders": {
+            "ikke afklaret": 6,
+            "mand": 3
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2022,
+      "age_group_id": 3,
+      "league_group_id": "15387",
+      "match_id": "441678",
+      "match_count": 3,
+      "text": "U11 - Begynderholdturnering (Dec) | Pulje 1 | DGI-NOR U11 2022/2023",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 10,
+          "genders": {
+            "ikke afklaret": 5,
+            "kvinde": 5
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2023,
+      "age_group_id": 3,
+      "league_group_id": "16365",
+      "match_id": "461426",
+      "match_count": 3,
+      "text": "U11 - Begynderholdturnering - December | Pulje 1 | DGI-NOR U11 2023/2024",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 9,
+          "genders": {
+            "ikke afklaret": 9
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2024,
+      "age_group_id": 3,
+      "league_group_id": "17490",
+      "match_id": "483474",
+      "match_count": 3,
+      "text": "U11 - Begynderholdturnering - 9. marts | Pulje 2 | DGI-NOR U11 2024/2025",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 10,
+          "genders": {
+            "ikke afklaret": 10
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2024,
+      "age_group_id": 18,
+      "league_group_id": "17866",
+      "match_id": "484829",
+      "match_count": 3,
+      "text": "EFTERSKOLEMESTERSKAB 4 SP.-D | Pulje 3 | DGI U17/U19 2024/2025",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 10,
+          "genders": {
+            "ikke afklaret": 10
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2025,
+      "age_group_id": 3,
+      "league_group_id": "18521",
+      "match_id": "505528",
+      "match_count": 6,
+      "text": "U11 - Begynderholdturnering - Februar | Pulje 1 | DGI-NOR U11 2025/2026",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 9,
+          "genders": {
+            "ikke afklaret": 9
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2025,
+      "age_group_id": 18,
+      "league_group_id": "18814",
+      "match_id": "507061",
+      "match_count": 3,
+      "text": "EFTERSKOLEMESTERSKAB 4C Spillere | Pulje 2 | DGI U17/U19 2025/2026",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 9,
+          "genders": {
+            "ikke afklaret": 8,
+            "kvinde": 1
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2025,
+      "age_group_id": 18,
+      "league_group_id": "18853",
+      "match_id": "507552",
+      "match_count": 4,
+      "text": "EFTERSKOLEMESTERSKAB 4B Spillere | Finaleslutspil (1. - 4. plads) | DGI U17/U19 2025/2026",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 9,
+          "genders": {
+            "kvinde": 1,
+            "mand": 6,
+            "ikke afklaret": 2
+          }
+        }
+      },
+      "player_rows": 16
+    }
+  ],
+  "control_samples": [
+    {
+      "season_id": 2011,
+      "age_group_id": 3,
+      "league_group_id": "1154",
+      "match_id": "47804",
+      "match_count": 2,
+      "text": "U11B (4 spillere) kvartfinaler | Kvartfinale | BADSJ U11 2011/2012",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "kvinde": 3,
+            "mand": 4,
+            "ikke afklaret": 1
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2013,
+      "age_group_id": 5,
+      "league_group_id": "3214",
+      "match_id": "122491",
+      "match_count": 12,
+      "text": "U15 C - 4 spillere | Pulje 2 | DGI-MVS U15 2013/2014",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "ikke afklaret": 7,
+            "mand": 1
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2014,
+      "age_group_id": 3,
+      "league_group_id": "5555",
+      "match_id": "190493",
+      "match_count": 1,
+      "text": "DBU U11 B 4 spillere Puljevinderkampe | Finale | DGI U11 2014/2015",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "mand": 6,
+            "ikke afklaret": 1,
+            "kvinde": 1
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2014,
+      "age_group_id": 5,
+      "league_group_id": "5049",
+      "match_id": "179975",
+      "match_count": 30,
+      "text": "U15 C 4 spillere | Pulje 25 | DGI-&#216;ST U15 2014/2015",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "ikke afklaret": 5,
+            "mand": 2,
+            "kvinde": 1
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2015,
+      "age_group_id": 3,
+      "league_group_id": "7330",
+      "match_id": "234769",
+      "match_count": 4,
+      "text": "DBU U11 C 4 spillere | Slutspil 5. - 8. plads | DGI U11 2015/2016",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 11,
+          "genders": {
+            "kvinde": 1,
+            "mand": 3,
+            "ikke afklaret": 7
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2015,
+      "age_group_id": 5,
+      "league_group_id": "6731",
+      "match_id": "226929",
+      "match_count": 42,
+      "text": "U15 D 4 spillere | Pulje 356 - MIDT (DGI-&#216;ST) | DGI-&#216;ST U15 2015/2016",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 7,
+          "genders": {
+            "ikke afklaret": 6,
+            "mand": 1
+          }
+        }
+      },
+      "player_rows": 14
+    },
+    {
+      "season_id": 2016,
+      "age_group_id": 3,
+      "league_group_id": "8927",
+      "match_id": "278482",
+      "match_count": 6,
+      "text": "DMU-Hold U11 C 4 Spillere | Pulje 1 | DGI U11 2016/2017",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "ikke afklaret": 4,
+            "mand": 4
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2016,
+      "age_group_id": 5,
+      "league_group_id": "8253",
+      "match_id": "267870",
+      "match_count": 42,
+      "text": "U15 D 4 spillere | Pulje 1 | DGI-NOR U15 2016/2017",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 4,
+          "genders": {
+            "ikke afklaret": 4
+          }
+        }
+      },
+      "player_rows": 8
+    },
+    {
+      "season_id": 2016,
+      "age_group_id": 18,
+      "league_group_id": "9087",
+      "match_id": "279764",
+      "match_count": 6,
+      "text": "DM EFTERSKOLER C 4 spillere | 4 spillere C pulje 1 | DGI U17/U19 2016/2017",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "ikke afklaret": 8
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2017,
+      "age_group_id": 4,
+      "league_group_id": "10648",
+      "match_id": "319931",
+      "match_count": 1,
+      "text": "DMU Hold M 4 Spillere | Finale | DGI U13 2017/2018",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "mand": 7,
+            "ikke afklaret": 1
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2017,
+      "age_group_id": 5,
+      "league_group_id": "9726",
+      "match_id": "299180",
+      "match_count": 45,
+      "text": "U15 B 4 spillere | Pulje 2 | DGI-MVS U15 2017/2018",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 9,
+          "genders": {
+            "mand": 5,
+            "ikke afklaret": 4
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2018,
+      "age_group_id": 3,
+      "league_group_id": "11721",
+      "match_id": "353053",
+      "match_count": 12,
+      "text": "U11CD -4 Spillere | Pulje 1 | DGI-FYN U11 2018/2019",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 10,
+          "genders": {
+            "mand": 4,
+            "ikke afklaret": 6
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2018,
+      "age_group_id": 18,
+      "league_group_id": "11357",
+      "match_id": "336780",
+      "match_count": 45,
+      "text": "U17/19 C 4 Spillere | Pulje 1 | DGI-MVS U17/U19 2018/2019",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "ikke afklaret": 3,
+            "kvinde": 4,
+            "mand": 1
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2019,
+      "age_group_id": 4,
+      "league_group_id": "12984",
+      "match_id": "378897",
+      "match_count": 30,
+      "text": "U13 - 4400 - 4 spillere | Pulje 1312-JT | DGI-VES U13 2019/2020",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "ikke afklaret": 7,
+            "mand": 1
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2020,
+      "age_group_id": 3,
+      "league_group_id": "13591",
+      "match_id": "397948",
+      "match_count": 30,
+      "text": "U11 - 3000 (4 spillere) | Pulje 1108 - CV | DGI-&#216;ST U11 2020/2021",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "ikke afklaret": 8
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2020,
+      "age_group_id": 5,
+      "league_group_id": "13594",
+      "match_id": "400001",
+      "match_count": 30,
+      "text": "U15 - 4200 (4 spillere) | Pulje 1509 - JT | DGI-&#216;ST U15 2020/2021",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "ikke afklaret": 6,
+            "kvinde": 1,
+            "mand": 1
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2021,
+      "age_group_id": 3,
+      "league_group_id": "14101",
+      "match_id": "411727",
+      "match_count": 36,
+      "text": "U11 - 3400 (4 spillere) | Pulje 1 | DGI-MVS U11 2021/2022",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 9,
+          "genders": {
+            "mand": 4,
+            "ikke afklaret": 5
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2021,
+      "age_group_id": 4,
+      "league_group_id": "14735",
+      "match_id": "424549",
+      "match_count": 1,
+      "text": "DMU H - U13 5200 - 4 spillere | Kvartfinale 3 | DGI U13 2021/2022",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 9,
+          "genders": {
+            "kvinde": 3,
+            "mand": 6
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2021,
+      "age_group_id": 18,
+      "league_group_id": "14348",
+      "match_id": "416790",
+      "match_count": 9,
+      "text": "U17/U19 - 6800 (4 spillere) | Pulje 1709 - JS | DGI-&#216;ST U17/U19 2021/2022",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "kvinde": 2,
+            "ikke afklaret": 4,
+            "mand": 2
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2022,
+      "age_group_id": 4,
+      "league_group_id": "15210",
+      "match_id": "436531",
+      "match_count": 20,
+      "text": "U13 - 4400 (4 spillere) | Pulje 1309 - CSV | DGI-&#216;ST U13 2022/2023",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 10,
+          "genders": {
+            "ikke afklaret": 8,
+            "kvinde": 2
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2022,
+      "age_group_id": 5,
+      "league_group_id": "15055",
+      "match_id": "432784",
+      "match_count": 28,
+      "text": "U15 - 4000 (4 spillere) | Pulje 3 | DGI-MVS U15 2022/2023",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "kvinde": 3,
+            "mand": 4,
+            "ikke afklaret": 1
+          }
+        }
+      },
+      "player_rows": 14
+    },
+    {
+      "season_id": 2022,
+      "age_group_id": 18,
+      "league_group_id": "15666",
+      "match_id": "443471",
+      "match_count": 3,
+      "text": "DMU H - U17/U19 5200 4 spillere | Pulje 5 | DGI U17/U19 2022/2023",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 9,
+          "genders": {
+            "ikke afklaret": 8,
+            "mand": 1
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2023,
+      "age_group_id": 4,
+      "league_group_id": "16211",
+      "match_id": "455036",
+      "match_count": 20,
+      "text": "U13 - 4400 (4 spillere) | Pulje 1308 - BL | DGI-&#216;ST U13 2023/2024",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 10,
+          "genders": {
+            "ikke afklaret": 4,
+            "mand": 6
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2023,
+      "age_group_id": 5,
+      "league_group_id": "16466",
+      "match_id": "462406",
+      "match_count": 1,
+      "text": "U15 - 5600 (4 spillere) | SM finale U15 - 5600 (4 spillere) | DGI-MVS U15 2023/2024",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "mand": 6,
+            "ikke afklaret": 2
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2024,
+      "age_group_id": 2,
+      "league_group_id": "17107",
+      "match_id": "469550",
+      "match_count": 45,
+      "text": "U9 D, 2800 (4 spillere) | Pulje 1 | DGI-MVS U09 2024/2025",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 10,
+          "genders": {
+            "ikke afklaret": 10
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2024,
+      "age_group_id": 4,
+      "league_group_id": "17326",
+      "match_id": "481251",
+      "match_count": 42,
+      "text": "U13 D (3600) - 4 spillere | Pulje 3 | BADNDRJ U13 2024/2025",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 10,
+          "genders": {
+            "ikke afklaret": 10
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2024,
+      "age_group_id": 5,
+      "league_group_id": "17784",
+      "match_id": "484480",
+      "match_count": 6,
+      "text": "DMU Hold - U15C-D (4200) 4 Spillere | Pulje 2 | DGI U15 2024/2025",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "ikke afklaret": 8
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2025,
+      "age_group_id": 3,
+      "league_group_id": "18525",
+      "match_id": "505627",
+      "match_count": 1,
+      "text": "U11 B 5600 (4 spillere) BD | SM-Finale | BADSJ U11 2025/2026",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "kvinde": 2,
+            "mand": 3,
+            "ikke afklaret": 3
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2025,
+      "age_group_id": 5,
+      "league_group_id": "18288",
+      "match_id": "497326",
+      "match_count": 20,
+      "text": "U15D (5000) - 4 Spillere | Pulje 1520 - (minifarmer@gmail.com) | DGI-&#216;ST U15 2025/2026",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 9,
+          "genders": {
+            "ikke afklaret": 9
+          }
+        }
+      },
+      "player_rows": 16
+    },
+    {
+      "season_id": 2026,
+      "age_group_id": 18,
+      "league_group_id": "19021",
+      "match_id": "512928",
+      "match_count": 23,
+      "text": "EFTERSKOLETURN. U17/U19B-C-D-Dx 4 Spillere | Pulje 4 Spillere B-C-D-Dx | DGI U17/U19 2026/2027",
+      "teams": {
+        "ukendt_side": {
+          "distinct_players": 8,
+          "genders": {
+            "mand": 2,
+            "ikke afklaret": 4,
+            "kvinde": 2
+          }
+        }
+      },
+      "player_rows": 16
+    }
+  ]
+}
