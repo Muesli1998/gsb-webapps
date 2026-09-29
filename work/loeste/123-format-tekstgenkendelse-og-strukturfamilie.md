@@ -109,4 +109,9 @@ genkendelse ændrer et allerede bekræftet tal (fx de 16.895 "4 spillere"-foreko
 
 ## Resultatnote
 
-(udfyldes ved aflevering)
+- Ny generator: `statistik/scripts/123-format-tekstgenkendelse.mjs`; nye artefakter ligger under `statistik/results/123-format-tekstgenkendelse/`. 112-scriptet og 112-output er urørte.
+- Fysisk pulje er deduplikeret med `(season_id, age_group_id, league_group_id)`. 18.546 puljer i alt; 5.093 ungdomspuljer har S4/D2-struktur; den tidligere rest er 775.
+- Udvidet, utvetydig tekstgenkendelse løser 11 af de 775 restpuljer (4B/4C Spillere). 247 puljer er eksplicit `afventer` i mapping-filen (131 `4-8 spillere`, 82 `4 m/k`, 34 `(4)`); 517 har intet genkendeligt formatudsagn.
+- Kataloget har adskilte felter `spillefamilie_tekst` og `strukturfamilie`. S4/D2 gives kun `4 spillere-struktur`. Der er 320 tekst/struktur-konflikter: 160 ungdom og 160 senior/andet.
+- Stikprøvekontrol: 11/11 nyanvendte 4B/4C-varianter har S4/D2, dvs. `4 spillere-struktur`; der fandtes ikke 20 forskellige nyanvendte puljer.
+- Alle tre databaser var read-only og har samme SHA-256 før/efter: gsb-statistik-normalized `49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E`; liga-landskab `9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C`; national-spillere `598908DA8CD1F9D468BA3CBD27FE1E2125A99D738579E8E3EA0DF3C0D6960DEF`.
