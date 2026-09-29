@@ -7,13 +7,13 @@ Opgave 124 har lagt `team_side` i `player_match_extras` (`national-spillere.db`)
 Christoffer har afgjort:
 
 - **`(4)`** (34 puljer) → `4 spillere`
+- **`4 m/k`** (82) → `4 spillere` (som 123's forslag)
 - **Puljer uden formattekst** (S4/D2-struktur, ingen tekstvariant) → `4 spillere`
 - **`4-8 spillere`** (131) → egen kategori `4-8 spillere`, IKKE `4 spillere`
-- **`4 m/k`** (82) → egen kategori `4 m/k`, IKKE `4 spillere` (rettelse af 123's forslag "4 spillere?")
 - **Øvrige varianter i mappingen** (fx `4 dr hold`, hvis de findes): egen kategori med variantens egen tekst; ingen sammenlægning
 - `4 piger` afgøres IKKE ud fra teksten alene, men ud fra data (se Mål 2).
 
-Stikprøve fra Claude (holdsider pr. kamp i S4/D2-puljer, kun spillere med kendt køn): `4 piger`-tekst er ca. 99 % rene pigehold; øvrige varianter er blandede.
+Stikprøve fra Claude (holdsider pr. kamp i S4/D2-puljer, kun spillere med kendt køn): `4 piger`-tekst er ca. 99 % rene pigehold; `4 m/k` og de øvrige varianter er blandede.
 
 ## Mål
 
