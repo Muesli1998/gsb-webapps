@@ -1,0 +1,450 @@
+{
+  "parser": "124-v1",
+  "nationalPath": "NATIONAL_DB (runtime path)",
+  "generatedAt": "2026-09-29T19:34:35.258Z",
+  "pendingMatchesAtStart": 0,
+  "selectedMatchIds": null,
+  "parsedMatches": 0,
+  "dryRun": false,
+  "existingTableRows": 3779792,
+  "before": {
+    "players": 76169,
+    "matches": 203012,
+    "player_matches": 3400576,
+    "scrape_progress": 203012
+  },
+  "after": {
+    "players": 76169,
+    "matches": 203012,
+    "player_matches": 3400576,
+    "scrape_progress": 203012
+  },
+  "unchangedExistingTables": true,
+  "extras": {
+    "rows": 3779792,
+    "with_team_side": 2970538,
+    "with_partner": 1896721,
+    "with_sets": 3561325,
+    "with_walkover": 45762
+  },
+  "statusDistribution": [
+    {
+      "parse_status": "kamptekst_mangler_blokke",
+      "n": 2829
+    },
+    {
+      "parse_status": "ok",
+      "n": 2970538
+    },
+    {
+      "parse_status": "uklar_navnekobling",
+      "n": 806425
+    }
+  ],
+  "gsbComparison": {
+    "compared": 51464,
+    "sideMatch": 51424,
+    "sideMismatch": 40,
+    "partnerComparable": 37945,
+    "partnerMatch": 37941,
+    "partnerMismatch": 4,
+    "deviations": [
+      {
+        "external_match_id": "296196",
+        "external_player_id": "159453",
+        "discipline_code": "MD",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": "Anne Madsen",
+        "gsb_partner": "Anne Madsen"
+      },
+      {
+        "external_match_id": "296196",
+        "external_player_id": "156374",
+        "discipline_code": "MD",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": "Andreas Søegaard",
+        "gsb_partner": "Andreas Søegaard "
+      },
+      {
+        "external_match_id": "296196",
+        "external_player_id": "225560",
+        "discipline_code": "HD",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": "Frederik Kubach",
+        "gsb_partner": "Frederik Kubach"
+      },
+      {
+        "external_match_id": "296196",
+        "external_player_id": "156705",
+        "discipline_code": "HD",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": "Mikkel Hansson",
+        "gsb_partner": "Mikkel Hansson"
+      },
+      {
+        "external_match_id": "296196",
+        "external_player_id": "159453",
+        "discipline_code": "HD",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": "Simon Kristensen",
+        "gsb_partner": "Simon Kristensen"
+      },
+      {
+        "external_match_id": "296196",
+        "external_player_id": "241869",
+        "discipline_code": "HD",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": "Andreas Søegaard",
+        "gsb_partner": "Andreas Søegaard "
+      },
+      {
+        "external_match_id": "296196",
+        "external_player_id": "156374",
+        "discipline_code": "DD",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": "Amanda Abildgaard",
+        "gsb_partner": "Amanda Abildgaard"
+      },
+      {
+        "external_match_id": "296196",
+        "external_player_id": "158752",
+        "discipline_code": "DD",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": "Anne Madsen",
+        "gsb_partner": "Anne Madsen"
+      },
+      {
+        "external_match_id": "296196",
+        "external_player_id": "158752",
+        "discipline_code": "DS",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": null,
+        "gsb_partner": null
+      },
+      {
+        "external_match_id": "296196",
+        "external_player_id": "225560",
+        "discipline_code": "HS",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": null,
+        "gsb_partner": null
+      },
+      {
+        "external_match_id": "296196",
+        "external_player_id": "156705",
+        "discipline_code": "HS",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": null,
+        "gsb_partner": null
+      },
+      {
+        "external_match_id": "296196",
+        "external_player_id": "241869",
+        "discipline_code": "HS",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": null,
+        "gsb_partner": null
+      },
+      {
+        "external_match_id": "359186",
+        "external_player_id": "25958",
+        "discipline_code": "MD",
+        "national_side": "ude",
+        "gsb_side": "away",
+        "national_partner": "Cedric Henri Kragh",
+        "gsb_partner": "Cedrich Henri Kragh"
+      },
+      {
+        "external_match_id": "359186",
+        "external_player_id": "258569",
+        "discipline_code": "HD",
+        "national_side": "ude",
+        "gsb_side": "away",
+        "national_partner": "Cedric Henri Kragh",
+        "gsb_partner": "Cedrich Henri Kragh"
+      },
+      {
+        "external_match_id": "419354",
+        "external_player_id": "327382",
+        "discipline_code": "DS",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": null,
+        "gsb_partner": null
+      },
+      {
+        "external_match_id": "419354",
+        "external_player_id": "327179",
+        "discipline_code": "DS",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": null,
+        "gsb_partner": null
+      },
+      {
+        "external_match_id": "419354",
+        "external_player_id": "332131",
+        "discipline_code": "DS",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": null,
+        "gsb_partner": null
+      },
+      {
+        "external_match_id": "419354",
+        "external_player_id": "332132",
+        "discipline_code": "DS",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": null,
+        "gsb_partner": null
+      },
+      {
+        "external_match_id": "419354",
+        "external_player_id": "327382",
+        "discipline_code": "DD",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": "Mille-marie Fischer Andersen",
+        "gsb_partner": "Mille-marie Fischer Andersen"
+      },
+      {
+        "external_match_id": "419354",
+        "external_player_id": "327179",
+        "discipline_code": "DD",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": "Caroline Palmer Haushøj",
+        "gsb_partner": "Caroline Palmer Haushøj"
+      },
+      {
+        "external_match_id": "419354",
+        "external_player_id": "332132",
+        "discipline_code": "DD",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": "Julie Storgaard Scheibel",
+        "gsb_partner": "Julie Storgaard Scheibel"
+      },
+      {
+        "external_match_id": "419354",
+        "external_player_id": "330917",
+        "discipline_code": "DD",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": "Helga Kjersgaard Olesen",
+        "gsb_partner": "Helga Kjersgaard Olesen"
+      },
+      {
+        "external_match_id": "446189",
+        "external_player_id": "57037",
+        "discipline_code": "HD",
+        "national_side": "ude",
+        "gsb_side": "away",
+        "national_partner": "Patrick Benjamin Petersen",
+        "gsb_partner": "Patrick Petersen"
+      },
+      {
+        "external_match_id": "467598",
+        "external_player_id": "330650",
+        "discipline_code": "MD",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": "Johanne Brogaard Baltzer",
+        "gsb_partner": "Johanne Brogaard Baltzer"
+      },
+      {
+        "external_match_id": "467598",
+        "external_player_id": "331377",
+        "discipline_code": "MD",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": "Benjamin Hinge Carlsson",
+        "gsb_partner": "Benjamin Hinge Carlsson"
+      },
+      {
+        "external_match_id": "467598",
+        "external_player_id": "344335",
+        "discipline_code": "MD",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": "Anna Rudolph",
+        "gsb_partner": "Anna Rudolph"
+      },
+      {
+        "external_match_id": "467598",
+        "external_player_id": "328195",
+        "discipline_code": "MD",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": "Mads Broholm",
+        "gsb_partner": "Mads Broholm"
+      },
+      {
+        "external_match_id": "467598",
+        "external_player_id": "330650",
+        "discipline_code": "HS",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": null,
+        "gsb_partner": null
+      },
+      {
+        "external_match_id": "467598",
+        "external_player_id": "327293",
+        "discipline_code": "HS",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": null,
+        "gsb_partner": null
+      },
+      {
+        "external_match_id": "467598",
+        "external_player_id": "331377",
+        "discipline_code": "DS",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": null,
+        "gsb_partner": null
+      },
+      {
+        "external_match_id": "467598",
+        "external_player_id": "337784",
+        "discipline_code": "DS",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": null,
+        "gsb_partner": null
+      },
+      {
+        "external_match_id": "467598",
+        "external_player_id": "344335",
+        "discipline_code": "HD",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": "Ludvig Alexander Rosager Pedas",
+        "gsb_partner": "Ludvig Alexander Rosager Pedas"
+      },
+      {
+        "external_match_id": "467598",
+        "external_player_id": "327293",
+        "discipline_code": "HD",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": "Mads Broholm",
+        "gsb_partner": "Mads Broholm"
+      },
+      {
+        "external_match_id": "467598",
+        "external_player_id": "328195",
+        "discipline_code": "DD",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": "Rosa Hinge Carlsson",
+        "gsb_partner": "Rosa Hinge Carlsson"
+      },
+      {
+        "external_match_id": "467598",
+        "external_player_id": "337784",
+        "discipline_code": "DD",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": "Anna Rudolph",
+        "gsb_partner": "Anna Rudolph"
+      },
+      {
+        "external_match_id": "486372",
+        "external_player_id": "252694",
+        "discipline_code": "MD",
+        "national_side": "ude",
+        "gsb_side": "away",
+        "national_partner": "Kenneth Wettendorff",
+        "gsb_partner": "Kenneth Wettendorff Petersen"
+      },
+      {
+        "external_match_id": "491850",
+        "external_player_id": "334355",
+        "discipline_code": "DS",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": null,
+        "gsb_partner": null
+      },
+      {
+        "external_match_id": "491850",
+        "external_player_id": "343421",
+        "discipline_code": "DS",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": null,
+        "gsb_partner": null
+      },
+      {
+        "external_match_id": "491850",
+        "external_player_id": "347938",
+        "discipline_code": "DS",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": null,
+        "gsb_partner": null
+      },
+      {
+        "external_match_id": "491850",
+        "external_player_id": "352607",
+        "discipline_code": "DS",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": null,
+        "gsb_partner": null
+      },
+      {
+        "external_match_id": "491850",
+        "external_player_id": "343421",
+        "discipline_code": "DD",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": "Alma Carmel",
+        "gsb_partner": "Alma Carmel"
+      },
+      {
+        "external_match_id": "491850",
+        "external_player_id": "347938",
+        "discipline_code": "DD",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": "Silje Rømer Andersen",
+        "gsb_partner": "Silje Rømer Andersen"
+      },
+      {
+        "external_match_id": "491850",
+        "external_player_id": "334355",
+        "discipline_code": "DD",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": "Karla Rifsdal Petersen",
+        "gsb_partner": "Karla Rifsdal Petersen"
+      },
+      {
+        "external_match_id": "491850",
+        "external_player_id": "352607",
+        "discipline_code": "DD",
+        "national_side": "hjemme",
+        "gsb_side": "away",
+        "national_partner": "Samvida Sri Munagala",
+        "gsb_partner": "Samvida Sri Munagala"
+      }
+    ]
+  }
+}
