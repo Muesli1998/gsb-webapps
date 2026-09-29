@@ -117,4 +117,36 @@ kampene ikke lader sig parse fra den gemte tekst.
 
 ## Resultatnote
 
-(udfyldes ved aflevering)
+## Kontroloutput
+
+- Ny tabel `player_match_extras`: 3.779.792 rækker fra 164.568 kampe med
+  spillerrelationer. Status: 2.970.538 `ok`, 806.425 `uklar_navnekobling`,
+  2.829 `kamptekst_mangler_blokke`, 0 `afkortet`.
+- 2.970.538 rækker har `team_side`; 1.896.721 har makker-ID; 3.561.325 har
+  rå sætresultat; 45.762 har eksplicit `(Ikke fremmødt)`-tekst.
+- GSB-sammenligning: holdside 51.424/51.464 = 99,922 %; makker 37.941/37.945
+  = 99,989 %. 40 sideafvigelser ligger i fire hele kampe med modsat hjemme/ude
+  i den ældre GSB-import; de fire makkerafvigelser er dokumenterede
+  navnevariationer. Se `statistik/results/124-player-match-extras.md`.
+- Eksisterende tabeltal uændret: `players` 76.169, `matches` 203.012,
+  `player_matches` 3.400.576, `scrape_progress` 203.012. SHA-256 for begge
+  beskyttede databaser matcher før/efter.
+
+## Hvad blev gjort
+
+- Tilføjet `statistik/scripts/124-recalculate-player-match-extras.mjs`, der
+  genparser gemt `context_raw`, er genoptagelig og skriver kun til den nye
+  tabel i `national-spillere.db`.
+- Læst stikprøve på 20 gemte kamptekster, spredt fra 2010 til 2026.
+- Rapport og maskinlæsbar JSON er skrevet under `statistik/results/124-*`.
+
+## Hvad blev fravalgt og hvorfor
+
+- Ingen ny scraping; kun allerede gemt kamptekst blev brugt.
+- Dobbeltmodstandere er ikke presset ind i feltet `opponent_player_id`, som
+  kun kan rumme én værdi. Tvetydige navne er beholdt som `uklar_navnekobling`.
+- Ingen beskyttede eller eksisterende tabeller er ændret.
+
+## Commits
+
+- Commit: opgave 124-aflevering (se gitlog for hash).
