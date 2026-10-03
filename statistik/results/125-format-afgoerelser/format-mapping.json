@@ -1,0 +1,44 @@
+[
+  {
+    "tekstvariant": "(4)",
+    "afgørelse": "4 spillere",
+    "kilde": "Christoffers afgørelse",
+    "antal_puljer": 34
+  },
+  {
+    "tekstvariant": "4 m/k",
+    "afgørelse": "4 spillere",
+    "kilde": "Christoffers afgørelse",
+    "antal_puljer": 82
+  },
+  {
+    "tekstvariant": "ingen formattekst",
+    "afgørelse": "4 spillere",
+    "kilde": "Christoffers afgørelse: S4/D2-struktur",
+    "antal_puljer": 517
+  },
+  {
+    "tekstvariant": "4-8 spillere",
+    "afgørelse": "4-8 spillere",
+    "kilde": "Christoffers afgørelse: egen kategori",
+    "antal_puljer": 131
+  },
+  {
+    "tekstvariant": "4 piger",
+    "afgørelse": "4 piger kun med holdsideevidens",
+    "kilde": "tekstsignal + dataregel",
+    "antal_puljer": 135
+  },
+  {
+    "tekstvariant": "anden variant",
+    "afgørelse": "egen tekstkategori",
+    "kilde": "opgavekortets regel",
+    "note": "Ingen øvrige afventende tekstvarianter forekom i S4/D2-populationen."
+  },
+  {
+    "tekstvariant": "ukendt køn",
+    "afgørelse": "ikke spilleform",
+    "kilde": "holdsideanalyse",
+    "note": "Bruges kun ved holdsideanalyse og aldrig som formatkategori."
+  }
+]
