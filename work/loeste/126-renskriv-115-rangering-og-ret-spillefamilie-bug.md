@@ -104,13 +104,12 @@ underliggende bug i 112-scriptet selv er stadig ikke rettet.
   De 25 ekstra er sporet til signaturkorrektionen: hovedsignaturen steg fra
   773 til 798, idet 16 tidligere uden familie og 9 tidligere “4 spillere”
   blev korrekt klassificeret som 4+2.
-- **Åbent spørgsmål:** 4 spillere + verificeret rest giver 115-reference
+- **Dokumenteret, ikke-sporbar rest:** 4 spillere + verificeret rest giver 115-reference
   16.895 + 1.227 = 18.122; 126 har 17.825 rangeret + 305 uplaceret =
-  18.130 (+8). De 10 piger→spillere-forekomster er bekræftet, men den
-  modgående nettobevægelse på 2 kan ikke knyttes til bestemte gamle
-  puljenøgler ud fra 115's manuelle tal. Ingen tal er ændret for at ramme
-  115. Derfor forbliver rapporterne UDKAST, og kortet flyttes ikke til
-  `work/loeste/` endnu.
+  18.130 (+8). Forklaret: +10 fra “4 piger” og −9 til 4+2 giver netto +1.
+  Resterende +7 er uforklaret og ikke sporbar til gamle puljenøgler (0,04 %).
+  115's tal er manuelt talte og kan ikke genskabes; 126 bruger 112 v2 som
+  kilde. Afvigelsen er dokumenteret uden at justere tallene.
 
 ## Kontroloutput
 
@@ -130,9 +129,10 @@ underliggende bug i 112-scriptet selv er stadig ikke rettet.
   rapportens JSON/Markdown; 125's 4-spillerafgørelser er bevaret.
 - 4+2: 1.038 + 27 = 1.065; de 25 over 115's 1.040 er forklaret ved
   signaturkorrektion (773→798; 16 ukendte + 9 tidligere 4 spillere).
-- Ikke grøn: 4-spiller-nettodifferencen er +8 efter 10 bekræftede indgående
-  pige-forekomster; de øvrige −2 kan ikke spores til historiske puljenøgler.
-  Derfor er output fortsat UDKAST.
+- Afvigelsesafstemning: 4 spillere 18.130 mod 18.122 (+8); +10 fra “4 piger”
+  og −9 til 4+2 giver netto +1 forklaret; +7 (0,04 %) er uforklaret og ikke
+  sporbar til gamle puljenøgler. 115 er manuelt talt og kan ikke genskabes;
+  126 bruger 112 v2. Afvigelsen er accepteret og dokumenteret, ikke rettet.
 - SEN: rapporten gengiver kun de fem gemte toprækker fra 115 og siger
   eksplicit, at de resterende 27 ikke findes i den gemte liste; ingen
   henvisning til samtalen 2026-09-27 i 126-rapporten.
@@ -145,9 +145,11 @@ underliggende bug i 112-scriptet selv er stadig ikke rettet.
 112's spillefamilie-bug er rettet i scriptet; nye v2-output er skrevet uden
 at overskrive 112's historiske JSON/Markdown. 126's regionale og deduplikerede
 rangeringer er genereret med fuld 112-v2→126-krydstabel og særskilt 115-
-afstemning i `statistik/results/126-rangering-final.md/.json`. Resultaterne
-er mærket UDKAST på grund af den uafklarede nettodifference på 2 for “4
-spillere”. Kortet er derfor stadig åbent og ikke flyttet til `work/loeste/`.
+afstemning i `statistik/results/126-rangering-final.md/.json`. 115's tal er
+manuelt talte og kan ikke genskabes; 126 bruger 112 v2. Afvigelsen for “4
+spillere” er +8: +10 fra “4 piger”, −9 til 4+2 (=+1), samt +7 uforklaret og
+ikke sporbar til gamle puljenøgler (0,04 %). Den rest er eksplicit
+dokumenteret, ikke justeret.
 
 De fem stikprøvepuljer for buggen er `2011|2|619`, `2011|3|664`,
 `2011|3|665`, `2011|3|667` og `2011|3|668`; hver rettet familie stemmer

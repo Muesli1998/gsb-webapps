@@ -339,14 +339,14 @@ const old115 = {
 };
 
 const finalJson = {
-  status: 'UDKAST — kontroller afventer afstemning mod opgave 115',
+  status: 'afsluttet med dokumenteret, ikke-sporbar restafvigelse mod manuelt talte 115-tal',
   generated_at: new Date().toISOString(),
   method: {
     youth_age_group_ids: youthAgeIds,
     occurrence_unit: 'En række per liga_group-region relation fra 112; regionsgentagelser tælles som separate forekomster.',
     physical_pool_unit: '(season_id, age_group_id, league_group_id), deduplikeret.',
     sort_rule: 'Tier 1/2/3, derefter typer desc, kønnede kampe desc, kampe per holdkamp desc; 115-reglen.',
-    sen_ranking: 'Ikke genberegnet; rapporten gengiver 115-afsnittet ordret.',
+    sen_ranking: 'Ikke genberegnet; de fem gemte øverste SEN-rækker fra 115 gengives, resten er ikke tilgængelig i 115-resultatfilen.',
   },
   source_baselines: {
     current_112_youth_regional_occurrences: current112YouthOccurrences,
@@ -380,7 +380,10 @@ const finalJson = {
     '115_four_plus_two_excess_explained_by_signature_correction': 798 - 773 === 25,
     '115_four_players_net_difference': (17825 + 305) - (16895 + 1227),
     '115_four_players_girls_inflow': transitionCount('4 piger', '4 spillere'),
-    '115_four_players_other_net_movement_explained': false,
+    '115_four_players_transfer_to_4_plus_2': 9,
+    '115_four_players_explained_net_change': transitionCount('4 piger', '4 spillere') - 9,
+    '115_four_players_unexplained_difference': ((17825 + 305) - (16895 + 1227)) - (transitionCount('4 piger', '4 spillere') - 9),
+    '115_four_players_unexplained_percent': (((17825 + 305) - (16895 + 1227) - (transitionCount('4 piger', '4 spillere') - 9)) / (16895 + 1227)) * 100,
     unplaced_regional_occurrences: unplacedOccurrenceRows.reduce((sum, row) => sum + row.regional_occurrences, 0),
     unplaced_physical_pools: unplacedPhysicalRows.reduce((sum, row) => sum + row.physical_pools, 0),
     girl_family_reconciliation_balances: girlReconciliation.balance_matches,
@@ -432,11 +435,11 @@ const ambiguityMarkdown = [
   '|---|---:|---|---|',
   ...ambiguousTextPools.map((pool) => `| ${pool.physical_pool_key} | ${pool.occurrences} | ${pool.raw_text.replaceAll('|', '\\|')} | ${pool.decision} (${pool.decision_source}) |`),
 ].join('\n');
-const markdown = `# UDKAST — Opgave 126 — endelig ungdomsrangering (rettet 112-katalog)
+const markdown = `# Opgave 126 — endelig ungdomsrangering (rettet 112-katalog)
 
 ## Afgrænsning og metode
 
-Ungdom er age_group_id ${youthAgeIds.join(', ')} (U09–U17/U19); UNG-aggregatet (21) er udeladt. Rangeringen bruger 115's rækkefølge: Tier 1/2/3, typer, kønnede kampe, kampe per holdkamp. Forekomster tæller hver regionrelation; fysiske puljer deduplikeres på sæson/aldersgruppe/pulje-ID. Tabellenes tal er derfor ikke sammenblandet.
+Ungdom er age_group_id ${youthAgeIds.join(', ')} (U09–U17/U19); UNG-aggregatet (21) er udeladt. Rangeringen bruger 115's rækkefølge: Tier 1/2/3, typer, kønnede kampe, kampe per holdkamp. Forekomster tæller hver regionrelation; fysiske puljer deduplikeres på sæson/aldersgruppe/pulje-ID. Tabellenes tal er derfor ikke sammenblandet. Kilde for 126-opgørelsen er det rettede 112 v2-katalog; 115's håndoptalte tal kan ikke genskabes fra nøgler/kildedata.
 
 **115's resttal 1.411 er historisk, ikke genskabt.** Den verificerede 112-kilde har ${old115.reproduced_rest_occurrences.toLocaleString('da-DK')} regionale restforekomster fra 775 puljer: ${restOccurrences['4 spillere']} for 4 spillere og ${restOccurrences['4-8 spillere']} for 4-8 spillere. Afvigelsen på 21 kan ikke genskabes. UNG-kontrol gav yderligere 1.390, samlet 2.780; hverken denne kontrol, gammel S4/D2 med ukendt format før 123 eller signaturkontrol forklarer 1.411. Regionernes kategorisignaturer er sammenholdt pr. fysisk puljenøgle; ${restPoolsWithMultipleRegionalSignatures.length} af de 775 restpuljer har flere forskellige regionssignaturer. Ingen tal er justeret for at ramme 115.
 
@@ -473,18 +476,18 @@ ${transitionMarkdown}
 | 115-format | 115-forekomster | 126-placering(er) | 126-forekomster | Afvigelse mod 115 | Afstemning |
 |---|---:|---|---:|---:|---|
 | 4 piger | 1.127 | 4 piger / 4 spillere / uplaceret | 1.068 / 10 / 49 | 0 | 1.068 + 10 + 49 = 1.127 |
-| 4 spillere + verificeret rest | 16.895 + 1.227 = 18.122 | 4 spillere / uplaceret 4 spillere | 17.825 / 305 = 18.130 | +8 | 10 kommer ind fra “4 piger”; nettoudflytning på 2 i forhold til 115 kan ikke knyttes til konkrete gamle puljenøgler. Ikke justeret. |
-| 4+2 | 1.040 | 4+2 / uplaceret 4+2 | 1.038 / 27 = 1.065 | +25 | Signaturkorrektion løfter den kanoniske signatur fra 773 til 798; 16 forekomster var tidligere uden familie og 9 stod som 4 spillere. |
+| 4 spillere + verificeret rest | 16.895 + 1.227 = 18.122 | 4 spillere / uplaceret 4 spillere | 17.825 / 305 = 18.130 | +8 | +10 fra “4 piger”, −9 til 4+2 = netto +1; resterende +7 er uforklaret og ikke sporbar til gamle puljenøgler (0,04 %). |
+| 4+2 | 1.040 | 4+2 / uplaceret 4+2 | 1.038 / 27 = 1.065 | +25 | Signaturkorrektion løfter den kanoniske signatur fra 773 til 798: 9 forekomster flyttes fra “4 spillere” og 16 fra tidligere uden familie. |
 
 Tvetydige kildetekster fra de 10 piger→spillere-forekomster (afgørelsen fra 125 er bevaret):
 
 ${ambiguityMarkdown}
 
-Den fulde krydstabel ovenfor viser også 163 forekomster flyttet fra 4 spillere til 4-8, 14 til X1/X2 og 305 uplacerede. De kan ikke bruges som dokumentation for den historiske nettodifference på 2, fordi 115's manuelle tal ikke identificerer hvilke puljenøgler der indgik.
+Den fulde krydstabel ovenfor viser også 163 forekomster flyttet fra 4 spillere til 4-8, 14 til X1/X2 og 305 uplacerede. 115's tal er manuelt talte og kan ikke genskabes eller kobles til gamle puljenøgler; 126 bygger på 112 v2. For “4 spillere” er 10 indgående minus 9 udgående = +1 forklaret, mens +7 fortsat er uforklaret (0,04 % af 18.122). Ingen tal er tilpasset.
 
 ## Spørgsmål
 
-4 spillere: 126 har 18.130 forekomster, når rangerede og tekst-uplacerede rækker lægges sammen, mod 18.122 (115's 16.895 + de 1.227 verificerede restforekomster). Krydstabellen bekræfter 10 indgående forekomster fra “4 piger”, så andre ændringer skal netto være −2. De tilgængelige 115-tal indeholder ingen puljenøgler, og den nøglebaserede 112-v2→126-tabel viser den fulde nuværende fordeling, men kan ikke isolere netop denne historiske −2-flytning. Dette er fortsat uafklaret; ingen tal er tilpasset.
+115's ungdomstal er manuelt talte og kan ikke genskabes; 126 bruger 112 v2 som kilde. For “4 spillere” er forskellen +8 (18.130 mod 18.122): +10 fra “4 piger”, −9 til 4+2, netto +1 forklaret, og +7 uforklaret/ikke sporbar til gamle puljenøgler (0,04 %). 115's rest på 1.411 er også historisk og ikke genskabt; de verificerede 1.390 afviger med 21. Begge afvigelser bevares eksplicit uden at ændre kildetallene.
 
 ## 112-spillefamilie-bug: stikprøve på fem puljer
 

@@ -1,8 +1,8 @@
-# UDKAST — Opgave 126 — endelig ungdomsrangering (rettet 112-katalog)
+# Opgave 126 — endelig ungdomsrangering (rettet 112-katalog)
 
 ## Afgrænsning og metode
 
-Ungdom er age_group_id 2, 3, 4, 5, 6, 7, 18 (U09–U17/U19); UNG-aggregatet (21) er udeladt. Rangeringen bruger 115's rækkefølge: Tier 1/2/3, typer, kønnede kampe, kampe per holdkamp. Forekomster tæller hver regionrelation; fysiske puljer deduplikeres på sæson/aldersgruppe/pulje-ID. Tabellenes tal er derfor ikke sammenblandet.
+Ungdom er age_group_id 2, 3, 4, 5, 6, 7, 18 (U09–U17/U19); UNG-aggregatet (21) er udeladt. Rangeringen bruger 115's rækkefølge: Tier 1/2/3, typer, kønnede kampe, kampe per holdkamp. Forekomster tæller hver regionrelation; fysiske puljer deduplikeres på sæson/aldersgruppe/pulje-ID. Tabellenes tal er derfor ikke sammenblandet. Kilde for 126-opgørelsen er det rettede 112 v2-katalog; 115's håndoptalte tal kan ikke genskabes fra nøgler/kildedata.
 
 **115's resttal 1.411 er historisk, ikke genskabt.** Den verificerede 112-kilde har 1.390 regionale restforekomster fra 775 puljer: 1227 for 4 spillere og 163 for 4-8 spillere. Afvigelsen på 21 kan ikke genskabes. UNG-kontrol gav yderligere 1.390, samlet 2.780; hverken denne kontrol, gammel S4/D2 med ukendt format før 123 eller signaturkontrol forklarer 1.411. Regionernes kategorisignaturer er sammenholdt pr. fysisk puljenøgle; 0 af de 775 restpuljer har flere forskellige regionssignaturer. Ingen tal er justeret for at ramme 115.
 
@@ -136,8 +136,8 @@ Tabellen viser hver kildefamilie og endelig placering (23.225 forekomster i alt)
 | 115-format | 115-forekomster | 126-placering(er) | 126-forekomster | Afvigelse mod 115 | Afstemning |
 |---|---:|---|---:|---:|---|
 | 4 piger | 1.127 | 4 piger / 4 spillere / uplaceret | 1.068 / 10 / 49 | 0 | 1.068 + 10 + 49 = 1.127 |
-| 4 spillere + verificeret rest | 16.895 + 1.227 = 18.122 | 4 spillere / uplaceret 4 spillere | 17.825 / 305 = 18.130 | +8 | 10 kommer ind fra “4 piger”; nettoudflytning på 2 i forhold til 115 kan ikke knyttes til konkrete gamle puljenøgler. Ikke justeret. |
-| 4+2 | 1.040 | 4+2 / uplaceret 4+2 | 1.038 / 27 = 1.065 | +25 | Signaturkorrektion løfter den kanoniske signatur fra 773 til 798; 16 forekomster var tidligere uden familie og 9 stod som 4 spillere. |
+| 4 spillere + verificeret rest | 16.895 + 1.227 = 18.122 | 4 spillere / uplaceret 4 spillere | 17.825 / 305 = 18.130 | +8 | +10 fra “4 piger”, −9 til 4+2 = netto +1; resterende +7 er uforklaret og ikke sporbar til gamle puljenøgler (0,04 %). |
+| 4+2 | 1.040 | 4+2 / uplaceret 4+2 | 1.038 / 27 = 1.065 | +25 | Signaturkorrektion løfter den kanoniske signatur fra 773 til 798: 9 forekomster flyttes fra “4 spillere” og 16 fra tidligere uden familie. |
 
 Tvetydige kildetekster fra de 10 piger→spillere-forekomster (afgørelsen fra 125 er bevaret):
 
@@ -146,11 +146,11 @@ Tvetydige kildetekster fra de 10 piger→spillere-forekomster (afgørelsen fra 1
 | 2015|5|7281 | 1 | Finaler SM U15 4 spillere \| Finale U15C 4 piger \| BADSJ U15 2015/2016 | 4 spillere (utvetydig tekst) |
 | 2018|4|11612 | 9 | U13 D 4 spillere \| U13D 4 spillere/U13CD 4 piger/U13C 4 piger pulje 6132 \| DGI-&#216;ST U13 2018/2019 | 4 spillere (utvetydig tekst) |
 
-Den fulde krydstabel ovenfor viser også 163 forekomster flyttet fra 4 spillere til 4-8, 14 til X1/X2 og 305 uplacerede. De kan ikke bruges som dokumentation for den historiske nettodifference på 2, fordi 115's manuelle tal ikke identificerer hvilke puljenøgler der indgik.
+Den fulde krydstabel ovenfor viser også 163 forekomster flyttet fra 4 spillere til 4-8, 14 til X1/X2 og 305 uplacerede. 115's tal er manuelt talte og kan ikke genskabes eller kobles til gamle puljenøgler; 126 bygger på 112 v2. For “4 spillere” er 10 indgående minus 9 udgående = +1 forklaret, mens +7 fortsat er uforklaret (0,04 % af 18.122). Ingen tal er tilpasset.
 
 ## Spørgsmål
 
-4 spillere: 126 har 18.130 forekomster, når rangerede og tekst-uplacerede rækker lægges sammen, mod 18.122 (115's 16.895 + de 1.227 verificerede restforekomster). Krydstabellen bekræfter 10 indgående forekomster fra “4 piger”, så andre ændringer skal netto være −2. De tilgængelige 115-tal indeholder ingen puljenøgler, og den nøglebaserede 112-v2→126-tabel viser den fulde nuværende fordeling, men kan ikke isolere netop denne historiske −2-flytning. Dette er fortsat uafklaret; ingen tal er tilpasset.
+115's ungdomstal er manuelt talte og kan ikke genskabes; 126 bruger 112 v2 som kilde. For “4 spillere” er forskellen +8 (18.130 mod 18.122): +10 fra “4 piger”, −9 til 4+2, netto +1 forklaret, og +7 uforklaret/ikke sporbar til gamle puljenøgler (0,04 %). 115's rest på 1.411 er også historisk og ikke genskabt; de verificerede 1.390 afviger med 21. Begge afvigelser bevares eksplicit uden at ændre kildetallene.
 
 ## 112-spillefamilie-bug: stikprøve på fem puljer
 

@@ -1,6 +1,6 @@
 {
-  "status": "UDKAST — kontroller afventer afstemning mod opgave 115",
-  "generated_at": "2026-10-03T21:34:09.627Z",
+  "status": "afsluttet med dokumenteret, ikke-sporbar restafvigelse mod manuelt talte 115-tal",
+  "generated_at": "2026-10-03T21:38:19.974Z",
   "method": {
     "youth_age_group_ids": [
       2,
@@ -14,7 +14,7 @@
     "occurrence_unit": "En række per liga_group-region relation fra 112; regionsgentagelser tælles som separate forekomster.",
     "physical_pool_unit": "(season_id, age_group_id, league_group_id), deduplikeret.",
     "sort_rule": "Tier 1/2/3, derefter typer desc, kønnede kampe desc, kampe per holdkamp desc; 115-reglen.",
-    "sen_ranking": "Ikke genberegnet; rapporten gengiver 115-afsnittet ordret."
+    "sen_ranking": "Ikke genberegnet; de fem gemte øverste SEN-rækker fra 115 gengives, resten er ikke tilgængelig i 115-resultatfilen."
   },
   "source_baselines": {
     "current_112_youth_regional_occurrences": 23225,
@@ -78,7 +78,10 @@
     "115_four_plus_two_excess_explained_by_signature_correction": true,
     "115_four_players_net_difference": 8,
     "115_four_players_girls_inflow": 10,
-    "115_four_players_other_net_movement_explained": false,
+    "115_four_players_transfer_to_4_plus_2": 9,
+    "115_four_players_explained_net_change": 1,
+    "115_four_players_unexplained_difference": 7,
+    "115_four_players_unexplained_percent": 0.03862708310341022,
     "unplaced_regional_occurrences": 659,
     "unplaced_physical_pools": 327,
     "girl_family_reconciliation_balances": true,
