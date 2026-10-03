@@ -103,4 +103,29 @@ spillerlinks som kamp 3757).
 
 ## Resultatnote
 
-(udfyldes ved aflevering)
+Opgave 119 byggede `statistik/scripts/119-national-spiller-scraper.mjs` og det
+separate skema til `national-spillere.db`: `matches`, `players`,
+`player_matches` og `scrape_errors`. Skemaet indeholder kampmetadata og
+render-status, spiller-ID/navn/kønsstatus samt spiller-kampfelter til
+disciplin, makker/modstander, sætresultater, walkover og kontekst. Der er
+ingen ranglistepoint-kolonner eller ranglistepoint pr. kamp.
+
+119's leveringsrapport og `run-summary.json` fra commit `fbc55df`
+(`statistik/results/119-national-spiller-scraper.md` og
+`statistik/results/119-national-spiller-scraper/run-summary.json`) bekræfter
+stikprøven: 12 kampe forsøgt, render-gate bestået for 12/12, 106 unikke
+spillere, 173 spiller-kamp-rækker og 0 fetch/render-fejl. Én gate-verificeret
+kamp (3757) havde ingen spillerlinks; den er ikke talt som fejl. Kønsstatus:
+8 mand, 6 kvinde, 92 ikke afklaret og 0 aldrig spillet. Kontrollen fandt 0
+felter med navn indeholdende `point` eller `rank` i `players`.
+
+Den fulde nationale kørsel blev ikke udført i opgave 119; den blev overladt
+til opgave 120. Opgave 120's dokumentation angiver senere fuld kørsel af
+203.012 kamp-ID'er. Ingen kode, kørsel eller database blev ændret som led i
+denne administrative lukning af kort 119.
+
+Værnekontrol: SHA-256 for `gsb-statistik-normalized.db` er
+`49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E`;
+for `liga-landskab.db` er
+`9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C`.
+Begge stemmer med de krævede kendte værdier.
