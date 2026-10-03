@@ -93,4 +93,40 @@ underliggende bug i 112-scriptet selv er stadig ikke rettet.
 
 ## Spørgsmål
 
+- Før kodeændringer er afstemningen mellem 115 og de aktuelle kilder stoppet:
+  125's katalog har 775 `was_123_rest=true` fysiske puljer (644 `4 spillere`
+  og 131 `4-8 spillere`). Alle 775 nøgler findes i `liga-landskab.db`;
+  optælling gennem `league_group_regions` giver 1.390 regionale forekomster:
+  1.227 for `4 spillere` og 163 for `4-8 spillere`. 112's eksisterende JSON
+  giver tilsvarende 1.390 forekomster med tom familie og S4/D2-signatur for
+  U09-U17/U19 (age_group_id 2,3,4,5,6,7,18; UNG udeladt). Det kan ikke
+  afstemmes med 115's 1.411 restforekomster; forskellen er 21, og kilderne
+  forklarer den ikke. Ingen tal er justeret.
+- SHA-256 for de fire databaser matchede alle de oplyste startværdier. Der er
+  endnu ikke ændret scripts, genereret nye rapporter eller skrevet til databaser.
+- **Spørgsmål til Christoffer:** Skal arbejdet fortsætte med de verificerede
+  1.390 regionale forekomster, mens afvigelsen på 21 bevares eksplicit i
+  resultatets Spørgsmål, eller skal 115's resttal afklares først?
+
 ## Resultatnote
+
+Foreløbig status (opgaven er stoppet før implementation): `git pull` på `main`
+meldte “Already up to date”; arbejdsgren oprettet som angivet. Startbaselines,
+indsamlet før filændringer:
+
+- SHA-256: `gsb-statistik-normalized.db`
+  `49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E`;
+  `liga-landskab.db`
+  `9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C`;
+  `national-spillere.db`
+  `1E27C5D81CCE8E2D656DF2C924E4BF6931EEAAF86348ADD384AB6D58F7CBAC3E`;
+  `rangliste-historik.db`
+  `6E9516DB643F88F88946A82CB76EC3B5C686C7D548ABF7084B3F60EE3DA0316F`.
+- `national-spillere.db` tabelrækketal: `matches` 203012;
+  `player_match_extras` 3779792; `player_matches` 3400576; `players` 76169;
+  `scrape_checkpoints` 8198; `scrape_errors` 0; `scrape_progress` 203012;
+  `sqlite_sequence` 1.
+- SHA-256 for urørte 112-outputfiler: JSON
+  `A361B4FB0FC5E5AF3C32699DE4025B310D717AE1DB4063ABA4C879B6D301C107`;
+  Markdown `DF0D328ABD2927EC9F88C690F93EA2F6459A150C8B4BBCA0D21C8D82DA60911F`.
+- Ingen tests kørt; implementation og nye rapporter afventer afklaring ovenfor.
