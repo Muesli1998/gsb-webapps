@@ -93,40 +93,79 @@ underliggende bug i 112-scriptet selv er stadig ikke rettet.
 
 ## Spørgsmål
 
-- Før kodeændringer er afstemningen mellem 115 og de aktuelle kilder stoppet:
-  125's katalog har 775 `was_123_rest=true` fysiske puljer (644 `4 spillere`
-  og 131 `4-8 spillere`). Alle 775 nøgler findes i `liga-landskab.db`;
-  optælling gennem `league_group_regions` giver 1.390 regionale forekomster:
-  1.227 for `4 spillere` og 163 for `4-8 spillere`. 112's eksisterende JSON
-  giver tilsvarende 1.390 forekomster med tom familie og S4/D2-signatur for
-  U09-U17/U19 (age_group_id 2,3,4,5,6,7,18; UNG udeladt). Det kan ikke
-  afstemmes med 115's 1.411 restforekomster; forskellen er 21, og kilderne
-  forklarer den ikke. Ingen tal er justeret.
-- SHA-256 for de fire databaser matchede alle de oplyste startværdier. Der er
-  endnu ikke ændret scripts, genereret nye rapporter eller skrevet til databaser.
-- **Spørgsmål til Christoffer:** Skal arbejdet fortsætte med de verificerede
-  1.390 regionale forekomster, mens afvigelsen på 21 bevares eksplicit i
-  resultatets Spørgsmål, eller skal 115's resttal afklares først?
+- 115's 1.411 restforekomster er historiske og ikke genskabt; den verificerede
+  mængde er 1.390 (1.227 “4 spillere”, 163 “4-8 spillere”), en uforklaret
+  afvigelse på 21. Afgrænset kontrol af UNG, tidligere S4/D2-filter og
+  signaturvariation fandt ingen forklaring.
+- 4 piger afstemmes: 1.127 fra 115 = 1.068 rangeret + 49 tekstforekomster
+  uden kategorisignatur + 10 flyttet til “4 spillere”. De 10 er to tvetydige
+  puljer (1 og 9 forekomster); 125-afgørelsen “4 spillere” er bevaret.
+- 4+2: 115 havde 1.040; 126 har 1.038 rangeret + 27 uplaceret = 1.065.
+  De 25 ekstra er sporet til signaturkorrektionen: hovedsignaturen steg fra
+  773 til 798, idet 16 tidligere uden familie og 9 tidligere “4 spillere”
+  blev korrekt klassificeret som 4+2.
+- **Åbent spørgsmål:** 4 spillere + verificeret rest giver 115-reference
+  16.895 + 1.227 = 18.122; 126 har 17.825 rangeret + 305 uplaceret =
+  18.130 (+8). De 10 piger→spillere-forekomster er bekræftet, men den
+  modgående nettobevægelse på 2 kan ikke knyttes til bestemte gamle
+  puljenøgler ud fra 115's manuelle tal. Ingen tal er ændret for at ramme
+  115. Derfor forbliver rapporterne UDKAST, og kortet flyttes ikke til
+  `work/loeste/` endnu.
+
+## Kontroloutput
+
+- `node --check statistik/scripts/112-generate-spilleformats-katalog.mjs`:
+  bestået.
+- `node --check statistik/scripts/126-generate-final-youth-ranking.mjs`:
+  bestået efter rettelsen.
+- Begge generatorer kørt. 112 v2: 59.127 regionale forekomster,
+  18.546 unikke puljer, 1.054 konflikter totalt. 126: 23.225 ungdoms-
+  forekomster, 6.766 fysiske puljer, 470.389 regionvægtede kamprækker,
+  107.125 unikke puljekamprækker.
+- Kontroller bestået: forekomst- og puljekategorier summerer til totalerne;
+  112-krydstjek; alle 775 afklarede nøgler fundet; 0 af 775 med flere
+  regionssignaturer; 32 overgangsrækker summerer til 23.225; fem bugstikprøver
+  matcher 112 v2; `girl_family_reconciliation_balances=true`.
+- 4 piger: 1.127 = 1.068 + 49 + 10. De to tvetydige puljer er markeret i
+  rapportens JSON/Markdown; 125's 4-spillerafgørelser er bevaret.
+- 4+2: 1.038 + 27 = 1.065; de 25 over 115's 1.040 er forklaret ved
+  signaturkorrektion (773→798; 16 ukendte + 9 tidligere 4 spillere).
+- Ikke grøn: 4-spiller-nettodifferencen er +8 efter 10 bekræftede indgående
+  pige-forekomster; de øvrige −2 kan ikke spores til historiske puljenøgler.
+  Derfor er output fortsat UDKAST.
+- SEN: rapporten gengiver kun de fem gemte toprækker fra 115 og siger
+  eksplicit, at de resterende 27 ikke findes i den gemte liste; ingen
+  henvisning til samtalen 2026-09-27 i 126-rapporten.
+- Databaser og 112's gamle outputfiler: hashes og rækketal før/efter står i
+  Resultatnote nedenfor; alle fire DB-hashes og alle gamle output-hashes er
+  uændrede. Ingen database blev skrevet.
 
 ## Resultatnote
 
-Foreløbig status (opgaven er stoppet før implementation): `git pull` på `main`
-meldte “Already up to date”; arbejdsgren oprettet som angivet. Startbaselines,
-indsamlet før filændringer:
+112's spillefamilie-bug er rettet i scriptet; nye v2-output er skrevet uden
+at overskrive 112's historiske JSON/Markdown. 126's regionale og deduplikerede
+rangeringer er genereret med fuld 112-v2→126-krydstabel og særskilt 115-
+afstemning i `statistik/results/126-rangering-final.md/.json`. Resultaterne
+er mærket UDKAST på grund af den uafklarede nettodifference på 2 for “4
+spillere”. Kortet er derfor stadig åbent og ikke flyttet til `work/loeste/`.
 
-- SHA-256: `gsb-statistik-normalized.db`
-  `49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E`;
-  `liga-landskab.db`
-  `9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C`;
-  `national-spillere.db`
-  `1E27C5D81CCE8E2D656DF2C924E4BF6931EEAAF86348ADD384AB6D58F7CBAC3E`;
-  `rangliste-historik.db`
+De fem stikprøvepuljer for buggen er `2011|2|619`, `2011|3|664`,
+`2011|3|665`, `2011|3|667` og `2011|3|668`; hver rettet familie stemmer
+med signaturen i 112 v2.
+
+Startværdier og afsluttende kontrol:
+
+- SHA-256 før/efter, `gsb-statistik-normalized.db`:
+  `49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E`.
+- SHA-256 før/efter, `liga-landskab.db`:
+  `9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C`.
+- SHA-256 før/efter, `national-spillere.db`:
+  `1E27C5D81CCE8E2D656DF2C924E4BF6931EEAAF86348ADD384AB6D58F7CBAC3E`.
+- SHA-256 før/efter, `rangliste-historik.db`:
   `6E9516DB643F88F88946A82CB76EC3B5C686C7D548ABF7084B3F60EE3DA0316F`.
-- `national-spillere.db` tabelrækketal: `matches` 203012;
-  `player_match_extras` 3779792; `player_matches` 3400576; `players` 76169;
-  `scrape_checkpoints` 8198; `scrape_errors` 0; `scrape_progress` 203012;
-  `sqlite_sequence` 1.
-- SHA-256 for urørte 112-outputfiler: JSON
+- `national-spillere.db` før/efter: `matches` 203012; `player_match_extras`
+  3779792; `player_matches` 3400576; `players` 76169; `scrape_checkpoints`
+  8198; `scrape_errors` 0; `scrape_progress` 203012; `sqlite_sequence` 1.
+- Gamle 112-outputfiler byte-identiske: JSON SHA-256
   `A361B4FB0FC5E5AF3C32699DE4025B310D717AE1DB4063ABA4C879B6D301C107`;
-  Markdown `DF0D328ABD2927EC9F88C690F93EA2F6459A150C8B4BBCA0D21C8D82DA60911F`.
-- Ingen tests kørt; implementation og nye rapporter afventer afklaring ovenfor.
+  Markdown SHA-256 `DF0D328ABD2927EC9F88C690F93EA2F6459A150C8B4BBCA0D21C8D82DA60911F`.
