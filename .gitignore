@@ -66,3 +66,5 @@ Thumbs.db
 # Byggeoutput
 dist/
 .netlify/
+*.db-shm
+*.db-wal

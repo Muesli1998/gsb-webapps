@@ -16,3 +16,5 @@ results/*.jsonl
 results/browser-individual-parse-report.json
 results/team-vs-individual-result-audit.json
 sql/normalized-import.sql
+*.db-shm
+*.db-wal
