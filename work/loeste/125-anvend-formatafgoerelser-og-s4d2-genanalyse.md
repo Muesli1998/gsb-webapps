@@ -41,3 +41,40 @@ Stikprøve fra Claude (holdsider pr. kamp i S4/D2-puljer, kun spillere med kendt
 ## Spørgsmål
 
 ## Resultatnote
+
+### Kontroloutput
+
+- Ungdoms-S4/D2-puljer: 5.093. Formatkategorierne summerer til 5.093:
+  4 spillere 4.813, 4 piger 135, 4-8 spillere 131, X1 8 og X2 6.
+- Holdsideanalyse: 175.450 holdsider; 2.964 kun kvinder, 7.516 kun mænd,
+  9.246 blandede og 155.724 ukendt køn. 19.726/175.450 holdsider (11,2 %)
+  var kønsmæssigt afgørbare; 4.939 puljer fik derfor ingen kønsbaseret
+  klassifikation.
+- `4 piger`: 9/135 tekstmarkerede puljer opfylder det foreslåede
+  data-kriterium (mindst 80 % afgørbare holdsider og mindst 95 % kun
+  kvinder); 126/135 har for lav dækning og er ikke dataunderstøttede som
+  pigeformat.
+- Oprindelig 123-rest: 775. Efter afgørelserne er 775 afgjort, heraf 131
+  som egen kategori `4-8 spillere`; 0 er fortsat uafklarede som format.
+- SHA-256 før/efter var identisk for `liga-landskab.db`
+  (`9976723e…d4b74c`) og `gsb-statistik-normalized.db`
+  (`49bc62ac…1b41e`). Nationale tabeller før/efter: players 76.169,
+  matches 203.012, player_matches 3.400.576 og player_match_extras
+  3.779.792.
+- Ti stikprøver, inklusive `(4)`, `4 m/k`, ingen formattekst,
+  `4-8 spillere`, `4 piger`, X1 og X2, ligger med `context_raw` og
+  anvendte `player_match_extras` i `katalog.json`.
+
+### Hvad blev gjort
+
+- Tilføjede en separat 125-mapping og et katalog pr. fysisk pulje uden at
+  ændre 112- eller 123-filer.
+- Brugte kun gemt holdside, spiller-ID og `gender_status`; køn blev ikke
+  udledt af navne. `4 piger` holdes som tekstsignal, indtil data opfylder
+  det dokumenterede dække-kriterium.
+
+### Hvad blev fravalgt og hvorfor
+
+- Ingen ny scraping og ingen databaseskrivning. Den lave kønsdækning gør
+  en mere vidtgående kønsbestemmelse usikker, så de 4.939 puljer står som
+  `ikke afgørbar` i stedet for at blive gættet.
