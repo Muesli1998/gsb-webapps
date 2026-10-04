@@ -326,6 +326,17 @@ function renderSingleSeason(entry) {
 
   let html = '';
 
+  // Kampe hvor ingen af spillerne kendes (hverken i Spillerpoint eller statistik-spillere.js)
+  // tælles ikke med i hold-tallene. Det skal ikke ske i stilhed.
+  const ikkeTalt = data.ikkeTalt || [];
+  if (ikkeTalt.length > 0) {
+    const esc = (t) => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;');
+    html += `<div class="card" style="border-color:#d9a400;"><h2>${ikkeTalt.length} kamp${ikkeTalt.length === 1 ? '' : 'e'} er ikke talt med</h2>
+      <p class="desc">Ingen af spillerne i disse kampe findes i spillerlisten, s&aring; hold&shy;tallene herunder er for lave. Tilf&oslash;j vores spillere i <code>statistik-spillere.js</code> (eller ret stavem&aring;den i <code>navne.js</code>).</p>
+      <ul style="margin:0;padding-left:18px;font-size:0.86rem;">${ikkeTalt.map((e) =>
+        `<li>Runde ${e.runde}, ${esc(e.hold)} ${esc(e.kategori)} (kamp ${e.board}): ${e.navne.map(esc).join(', ') || '&ndash;'}</li>`).join('')}</ul></div>`;
+  }
+
   html += `<div class="card"><h2>Hold</h2><p class="desc">Winrate pr. GSB-hold · runde ${data.rundeMin}-${data.rundeMax} (${totalRows} kamplinjer analyseret)</p><div class="team-cards">`;
   holds.forEach(t => {
     html += `<div class="team-card">

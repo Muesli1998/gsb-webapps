@@ -71,6 +71,10 @@ const ALIAS_RAA = {
   'Camilla Bagge': 'Camilla Steinmetz Bagge',
   'Theodor Lumby': 'Theodor Lumby Jessen',
   'Louis Toftlund': 'Louis Valdemar Hedegaard Toftlund',
+
+  // Fundet 2026-10-04 i runde 3 (GSB 3, HD): Nembadminton har "Andreas Ryun Drasbek".
+  // Officielt navn er Andreas Drasbek (står i HERRER_2627 og Spillerpoint).
+  'Andreas Ryun Drasbek': 'Andreas Drasbek',
 };
 
 const ALIAS_OPSLAG = new Map(

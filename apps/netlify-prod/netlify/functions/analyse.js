@@ -1,5 +1,6 @@
 const { google } = require('googleapis');
 const { officieltNavn } = require('../lib/navne');
+const { STATISTIK_SPILLERE } = require('../lib/statistik-spillere');
 
 // Opdateret 2026-09-03 for at matche den udvidede Statistik-side (sæson-sammenligning,
 // hold×kategori-matrix, spiller-drilldown m. board-historik). Indeholder tre ting der
@@ -17,6 +18,13 @@ const { officieltNavn } = require('../lib/navne');
 // navne.js's alias-opslag før sammenligning — se navne.js for baggrund. Dette retter
 // matching for BÅDE nye og allerede-eksisterende Resultater-rækker med en stave-variant
 // (fx "Hannah Clausen"), uden at selve arkets rå tekst behøver rettes.
+// RETTET 2026-10-04: hold-/kategoristatistikken tabte kampe på to måder.
+//   1. Ingen af vores spillere stod i Spillerpoint (reserver på GSB 3/4). Kampen blev ikke talt
+//      med. Rettet ved at lægge STATISTIK_SPILLERE (lib/statistik-spillere.js) oven i listen.
+//   2. Dedup-nøglen blev låst ved FØRSTE række i en double-kamp, også når den række ikke kunne
+//      tælles. Var anden række (makkeren) kendt, blev den sprunget over, og kampen forsvandt.
+//      Nu låses nøglen først når kampen faktisk er talt.
+// Kampe der stadig ikke kan tælles returneres i `ikkeTalt`, så de ikke forsvinder i stilhed.
 exports.handler = async (event) => {
   const headers = {
     'Access-Control-Allow-Origin': '*',
@@ -65,12 +73,15 @@ exports.handler = async (event) => {
     const knownPlayers = new Set(
       (playersRes.data.values || []).map((r) => officieltNavn((r[0] || '').trim())).filter(Boolean)
     );
+    STATISTIK_SPILLERE.forEach((n) => knownPlayers.add(officieltNavn(n)));
 
     const playerStats = {}; // navn -> { wins, losses, byHoldCategory: {hold|kat: {wins,losses,positions[]}} }
     const teamStats = {}; // hold -> { wins, losses }
     const categoryStats = {}; // kategori -> { wins, losses }
     const matrixStats = {}; // hold -> kategori -> { wins, losses }
-    const seenMatches = new Set(); // dedupe by board (runde|hold|kategori|boardPosition)
+    const seenMatches = new Set(); // boards vi har set (runde|hold|kategori|boardPosition)
+    const countedMatches = new Set(); // boards der er talt med — dedup sker på denne
+    const ikkeTaltMap = {}; // board -> { runde, hold, kategori, board, navne:Set } for kampe uden kendt spiller
     const groupRowIdx = {}; // (runde|hold|kategori) -> running row index, used to derive board position
 
     function ensurePlayer(name) {
@@ -128,11 +139,23 @@ exports.handler = async (event) => {
         seenMatches.add(matchKey);
         if (!teamStats[hold]) teamStats[hold] = { wins: 0, losses: 0 };
         if (!categoryStats[kategori]) categoryStats[kategori] = { wins: 0, losses: 0 };
-        const mCell = ensureMatrix(hold, kategori);
+        ensureMatrix(hold, kategori);
+      }
+      if (!countedMatches.has(matchKey)) {
         if (hjemmeIsIndividual || udeIsIndividual) {
+          countedMatches.add(matchKey);
+          delete ikkeTaltMap[matchKey];
+          const mCell = ensureMatrix(hold, kategori);
           const weWon = hjemmeIsIndividual ? hjemmeWon : !hjemmeWon;
           if (weWon) { teamStats[hold].wins++; categoryStats[kategori].wins++; mCell.wins++; }
           else { teamStats[hold].losses++; categoryStats[kategori].losses++; mCell.losses++; }
+        } else {
+          // Ingen kendt spiller på rækken. Gem enkeltnavne (ikke "A / B"-modstandertekst), så man
+          // kan se hvem der mangler. Slettes igen hvis en senere række på samme board kan tælles.
+          const e = ikkeTaltMap[matchKey] || (ikkeTaltMap[matchKey] = {
+            runde: Number(runde), hold, kategori, board: boardPosition, navne: new Set(),
+          });
+          [hjemme, ude].forEach((n) => { if (n && !n.includes(' / ')) e.navne.add(n); });
         }
       }
     });
@@ -160,12 +183,17 @@ exports.handler = async (event) => {
       Object.entries(byKat).forEach(([kategori, s]) => { matrixOut[hold][kategori] = withPct(s); });
     });
 
+    const ikkeTalt = Object.values(ikkeTaltMap)
+      .map((e) => ({ ...e, navne: Array.from(e.navne).sort() }))
+      .sort((a, b) => a.runde - b.runde || a.hold.localeCompare(b.hold) || a.kategori.localeCompare(b.kategori) || a.board - b.board);
+
     return {
       statusCode: 200,
       headers,
       body: JSON.stringify({
         players: playersOut, teams: teamsOut, categories: categoriesOut, matrix: matrixOut,
         totalRows: rows.length, rundeMin, rundeMax,
+        ikkeTaltAntal: ikkeTalt.length, ikkeTalt,
       }),
     };
   } catch (err) {
