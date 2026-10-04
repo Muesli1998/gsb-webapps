@@ -99,4 +99,4 @@ ligner noget Christoffer har nævnt), spørg i "Spørgsmål" i stedet for at gæ
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+Parkeret af Christoffer. 113's scoring (N×10+M) blev forkastet i 115, og 126 (datadrevet rangering) og 127 (GSB's placering og bredde pr. sæson) dækker behovet. Åbnes kun igen, hvis Badminton Danmarks visningsrækkefølge skal med som ekstra lag.
