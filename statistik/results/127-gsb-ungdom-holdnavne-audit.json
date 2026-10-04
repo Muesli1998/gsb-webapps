@@ -1,0 +1,501 @@
+{
+  "title": "Opgave 127 — audit af mulige GSB-ungdomsholdnavne",
+  "scope": {
+    "age_group_ids_from_126": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      18
+    ],
+    "unit": "rå league_group_teams-poster; fysisk-puljeantal vises særskilt"
+  },
+  "method": {
+    "tables": [
+      "club_registry",
+      "league_groups",
+      "league_group_teams"
+    ],
+    "club_registry_columns": [
+      "club_id",
+      "club_name_raw",
+      "region_id",
+      "postal_code",
+      "fetched_at"
+    ],
+    "league_group_teams_columns": [
+      "season_id",
+      "age_group_id",
+      "league_group_id",
+      "league_group_team_id",
+      "team_name_raw",
+      "standing_position",
+      "matches",
+      "wins",
+      "score_raw",
+      "sets_raw",
+      "points",
+      "set_points",
+      "source_url",
+      "fetched_at"
+    ],
+    "club_registry_has_club_id": true,
+    "league_group_teams_has_club_id": false,
+    "registry_has_league_group_team_id": false,
+    "team_has_registry_id": false,
+    "league_group_teams_foreign_keys": [],
+    "linkage_conclusion": "No direct club_id/club_registry_id or foreign-key link exists from league_group_teams to club_registry; raw-name matching is candidate discovery only, not verified identity.",
+    "candidate_pattern": "Case-insensitive raw-text search for Gladsaxe, Søborg/Soborg/Soeborg, or BC37 in youth team/club names."
+  },
+  "club_registry_name_variants": [
+    {
+      "club_id": 1087,
+      "club_name_raw": "Badmintonklubben af 1937 (BC 37)",
+      "region_id": null,
+      "postal_code": "2300",
+      "classification": "tvetydig-lignende-klub"
+    },
+    {
+      "club_id": 1093,
+      "club_name_raw": "Gladsaxe Søborg Badmintonklub",
+      "region_id": null,
+      "postal_code": "2860",
+      "classification": "GSB-navnekandidat"
+    },
+    {
+      "club_id": 1232,
+      "club_name_raw": "Søborg S.G.& I.F., Badmintonafd.",
+      "region_id": null,
+      "postal_code": "3230",
+      "classification": "tvetydig-lignende-klub"
+    }
+  ],
+  "likely_gsb_raw_team_name_variants": [
+    {
+      "raw_team_name": "Gladsaxe Søborg",
+      "post_count": 28,
+      "distinct_physical_pool_count": 28,
+      "season_from": 2011,
+      "season_to": 2026,
+      "classification": "GSB-navnekandidat-ikke-verificeret"
+    },
+    {
+      "raw_team_name": "Gladsaxe Søborg *udgået*",
+      "post_count": 1,
+      "distinct_physical_pool_count": 1,
+      "season_from": 2011,
+      "season_to": 2011,
+      "classification": "GSB-navnekandidat-ikke-verificeret"
+    },
+    {
+      "raw_team_name": "Gladsaxe Søborg 1",
+      "post_count": 77,
+      "distinct_physical_pool_count": 77,
+      "season_from": 2016,
+      "season_to": 2026,
+      "classification": "GSB-navnekandidat-ikke-verificeret"
+    },
+    {
+      "raw_team_name": "Gladsaxe Søborg 10",
+      "post_count": 1,
+      "distinct_physical_pool_count": 1,
+      "season_from": 2025,
+      "season_to": 2025,
+      "classification": "GSB-navnekandidat-ikke-verificeret"
+    },
+    {
+      "raw_team_name": "Gladsaxe Søborg 2",
+      "post_count": 63,
+      "distinct_physical_pool_count": 63,
+      "season_from": 2011,
+      "season_to": 2026,
+      "classification": "GSB-navnekandidat-ikke-verificeret"
+    },
+    {
+      "raw_team_name": "Gladsaxe Søborg 2 *Trukket",
+      "post_count": 1,
+      "distinct_physical_pool_count": 1,
+      "season_from": 2013,
+      "season_to": 2013,
+      "classification": "GSB-navnekandidat-ikke-verificeret"
+    },
+    {
+      "raw_team_name": "Gladsaxe Søborg 2 *udgået*",
+      "post_count": 1,
+      "distinct_physical_pool_count": 1,
+      "season_from": 2011,
+      "season_to": 2011,
+      "classification": "GSB-navnekandidat-ikke-verificeret"
+    },
+    {
+      "raw_team_name": "Gladsaxe Søborg 2 trukket",
+      "post_count": 1,
+      "distinct_physical_pool_count": 1,
+      "season_from": 2012,
+      "season_to": 2012,
+      "classification": "GSB-navnekandidat-ikke-verificeret"
+    },
+    {
+      "raw_team_name": "Gladsaxe Søborg 2 udgået",
+      "post_count": 2,
+      "distinct_physical_pool_count": 2,
+      "season_from": 2014,
+      "season_to": 2017,
+      "classification": "GSB-navnekandidat-ikke-verificeret"
+    },
+    {
+      "raw_team_name": "Gladsaxe Søborg 3",
+      "post_count": 39,
+      "distinct_physical_pool_count": 39,
+      "season_from": 2011,
+      "season_to": 2026,
+      "classification": "GSB-navnekandidat-ikke-verificeret"
+    },
+    {
+      "raw_team_name": "Gladsaxe Søborg 3 *udgået*",
+      "post_count": 1,
+      "distinct_physical_pool_count": 1,
+      "season_from": 2011,
+      "season_to": 2011,
+      "classification": "GSB-navnekandidat-ikke-verificeret"
+    },
+    {
+      "raw_team_name": "Gladsaxe Søborg 4",
+      "post_count": 22,
+      "distinct_physical_pool_count": 22,
+      "season_from": 2021,
+      "season_to": 2026,
+      "classification": "GSB-navnekandidat-ikke-verificeret"
+    },
+    {
+      "raw_team_name": "Gladsaxe Søborg 4 *trukket*",
+      "post_count": 1,
+      "distinct_physical_pool_count": 1,
+      "season_from": 2011,
+      "season_to": 2011,
+      "classification": "GSB-navnekandidat-ikke-verificeret"
+    },
+    {
+      "raw_team_name": "Gladsaxe Søborg 4 *udgået*",
+      "post_count": 1,
+      "distinct_physical_pool_count": 1,
+      "season_from": 2011,
+      "season_to": 2011,
+      "classification": "GSB-navnekandidat-ikke-verificeret"
+    },
+    {
+      "raw_team_name": "Gladsaxe Søborg 5",
+      "post_count": 16,
+      "distinct_physical_pool_count": 16,
+      "season_from": 2021,
+      "season_to": 2026,
+      "classification": "GSB-navnekandidat-ikke-verificeret"
+    },
+    {
+      "raw_team_name": "Gladsaxe Søborg 5 (2+2 B)",
+      "post_count": 1,
+      "distinct_physical_pool_count": 1,
+      "season_from": 2025,
+      "season_to": 2025,
+      "classification": "GSB-navnekandidat-ikke-verificeret"
+    },
+    {
+      "raw_team_name": "Gladsaxe Søborg 6",
+      "post_count": 8,
+      "distinct_physical_pool_count": 8,
+      "season_from": 2022,
+      "season_to": 2026,
+      "classification": "GSB-navnekandidat-ikke-verificeret"
+    },
+    {
+      "raw_team_name": "Gladsaxe Søborg 7",
+      "post_count": 6,
+      "distinct_physical_pool_count": 6,
+      "season_from": 2024,
+      "season_to": 2026,
+      "classification": "GSB-navnekandidat-ikke-verificeret"
+    },
+    {
+      "raw_team_name": "Gladsaxe Søborg 8",
+      "post_count": 4,
+      "distinct_physical_pool_count": 4,
+      "season_from": 2024,
+      "season_to": 2025,
+      "classification": "GSB-navnekandidat-ikke-verificeret"
+    },
+    {
+      "raw_team_name": "Gladsaxe Søborg 9",
+      "post_count": 2,
+      "distinct_physical_pool_count": 2,
+      "season_from": 2024,
+      "season_to": 2025,
+      "classification": "GSB-navnekandidat-ikke-verificeret"
+    },
+    {
+      "raw_team_name": "Gladsaxe Søborg udgået",
+      "post_count": 3,
+      "distinct_physical_pool_count": 3,
+      "season_from": 2014,
+      "season_to": 2015,
+      "classification": "GSB-navnekandidat-ikke-verificeret"
+    }
+  ],
+  "ambiguous_similar_team_name_variants": [
+    {
+      "raw_team_name": "BC37 Amager",
+      "post_count": 24,
+      "distinct_physical_pool_count": 24,
+      "season_from": 2011,
+      "season_to": 2021,
+      "classification": "tvetydig-lignende-holdvariant"
+    },
+    {
+      "raw_team_name": "BC37 Amager 1",
+      "post_count": 70,
+      "distinct_physical_pool_count": 70,
+      "season_from": 2017,
+      "season_to": 2026,
+      "classification": "tvetydig-lignende-holdvariant"
+    },
+    {
+      "raw_team_name": "BC37 Amager 2",
+      "post_count": 56,
+      "distinct_physical_pool_count": 56,
+      "season_from": 2017,
+      "season_to": 2026,
+      "classification": "tvetydig-lignende-holdvariant"
+    },
+    {
+      "raw_team_name": "BC37 Amager 2 trukket",
+      "post_count": 1,
+      "distinct_physical_pool_count": 1,
+      "season_from": 2015,
+      "season_to": 2015,
+      "classification": "tvetydig-lignende-holdvariant"
+    },
+    {
+      "raw_team_name": "BC37 Amager 3",
+      "post_count": 30,
+      "distinct_physical_pool_count": 30,
+      "season_from": 2018,
+      "season_to": 2026,
+      "classification": "tvetydig-lignende-holdvariant"
+    },
+    {
+      "raw_team_name": "BC37 Amager 4",
+      "post_count": 22,
+      "distinct_physical_pool_count": 22,
+      "season_from": 2018,
+      "season_to": 2026,
+      "classification": "tvetydig-lignende-holdvariant"
+    },
+    {
+      "raw_team_name": "BC37 Amager 5",
+      "post_count": 15,
+      "distinct_physical_pool_count": 15,
+      "season_from": 2018,
+      "season_to": 2026,
+      "classification": "tvetydig-lignende-holdvariant"
+    },
+    {
+      "raw_team_name": "BC37 Amager 6",
+      "post_count": 3,
+      "distinct_physical_pool_count": 3,
+      "season_from": 2019,
+      "season_to": 2021,
+      "classification": "tvetydig-lignende-holdvariant"
+    },
+    {
+      "raw_team_name": "BC37 Amager trukket",
+      "post_count": 2,
+      "distinct_physical_pool_count": 2,
+      "season_from": 2014,
+      "season_to": 2015,
+      "classification": "tvetydig-lignende-holdvariant"
+    },
+    {
+      "raw_team_name": "BC37 Amager udgået",
+      "post_count": 2,
+      "distinct_physical_pool_count": 2,
+      "season_from": 2012,
+      "season_to": 2015,
+      "classification": "tvetydig-lignende-holdvariant"
+    },
+    {
+      "raw_team_name": "BC37/Dragør 1",
+      "post_count": 2,
+      "distinct_physical_pool_count": 2,
+      "season_from": 2019,
+      "season_to": 2020,
+      "classification": "tvetydig-lignende-holdvariant"
+    },
+    {
+      "raw_team_name": "BC37/Dragør 2",
+      "post_count": 1,
+      "distinct_physical_pool_count": 1,
+      "season_from": 2019,
+      "season_to": 2019,
+      "classification": "tvetydig-lignende-holdvariant"
+    },
+    {
+      "raw_team_name": "BC37/Gladsaxe Søborg 1",
+      "post_count": 1,
+      "distinct_physical_pool_count": 1,
+      "season_from": 2020,
+      "season_to": 2020,
+      "classification": "tvetydig-flere-klubreferencer"
+    },
+    {
+      "raw_team_name": "BC37/IBB 1",
+      "post_count": 4,
+      "distinct_physical_pool_count": 4,
+      "season_from": 2025,
+      "season_to": 2026,
+      "classification": "tvetydig-lignende-holdvariant"
+    },
+    {
+      "raw_team_name": "BC37/KMB2010 Amager 1",
+      "post_count": 1,
+      "distinct_physical_pool_count": 1,
+      "season_from": 2019,
+      "season_to": 2019,
+      "classification": "tvetydig-lignende-holdvariant"
+    },
+    {
+      "raw_team_name": "BC37/NBK Amager 1",
+      "post_count": 1,
+      "distinct_physical_pool_count": 1,
+      "season_from": 2020,
+      "season_to": 2020,
+      "classification": "tvetydig-lignende-holdvariant"
+    },
+    {
+      "raw_team_name": "IBB/BC37 Amager 1",
+      "post_count": 1,
+      "distinct_physical_pool_count": 1,
+      "season_from": 2019,
+      "season_to": 2019,
+      "classification": "tvetydig-lignende-holdvariant"
+    },
+    {
+      "raw_team_name": "NBK/BC 37 Amager 1",
+      "post_count": 1,
+      "distinct_physical_pool_count": 1,
+      "season_from": 2019,
+      "season_to": 2019,
+      "classification": "tvetydig-lignende-holdvariant"
+    }
+  ],
+  "ambiguous_similar_club_registry_variants": [
+    {
+      "club_id": 1087,
+      "club_name_raw": "Badmintonklubben af 1937 (BC 37)",
+      "region_id": null,
+      "postal_code": "2300",
+      "classification": "tvetydig-lignende-klub"
+    },
+    {
+      "club_id": 1232,
+      "club_name_raw": "Søborg S.G.& I.F., Badmintonafd.",
+      "region_id": null,
+      "postal_code": "3230",
+      "classification": "tvetydig-lignende-klub"
+    }
+  ],
+  "totals": {
+    "youth_team_pool_rows_matching_candidate_pattern": 516,
+    "rows_with_gladsaxe_token": 280,
+    "rows_with_both_bc37_and_gladsaxe_tokens": 1,
+    "rows_with_bc37_but_without_gladsaxe_token": 236,
+    "likely_gsb_raw_name_variants_not_verified": 21,
+    "ambiguous_similar_or_multi_club_team_variants": 18,
+    "ambiguous_similar_registry_variants": 2,
+    "all_youth_team_pool_rows_scanned": 32837
+  },
+  "other_club_mapping_for_top_format": {
+    "same_mapping_available": false,
+    "evidence": "club_registry is not linked to league_group_teams by ID/FK. Scripts 092/101 normalize/name-match senior-only inputs (age_group_id=1); they do not provide verified youth club identity for every team in a pool."
+  },
+  "databases": {
+    "before": {
+      "liga_landscape": {
+        "sha256": "9976723eaa61e248adc7ee33348cad41eebf9f30ddfdf913b6d40ef9d0d4b74c",
+        "row_counts": {
+          "age_groups": 29,
+          "club_registry": 796,
+          "fetch_errors": 0,
+          "group_type_katalog": 8928,
+          "league_group_details": 18546,
+          "league_group_match_counts": 18546,
+          "league_group_regions": 59127,
+          "league_group_teams": 96823,
+          "league_groups": 18546,
+          "league_match_groups": 310137,
+          "league_match_requests": 221558,
+          "league_matches": 203012,
+          "match_categories": 1300474,
+          "match_games": 2636258,
+          "regions": 33,
+          "standing_indexes": 16269
+        }
+      },
+      "normalized": {
+        "sha256": "49bc62ac3aa8b5a003a4b4d1a8112a8f986d12c8667b22342027d42a1d01b41e",
+        "row_counts": {
+          "clubs": 1,
+          "competitions": 462,
+          "extraction_errors": 1444,
+          "individual_match_players": 67196,
+          "individual_matches": 20319,
+          "players": 7599,
+          "raw_payloads": 2874,
+          "seasons": 26,
+          "standings": 751,
+          "team_matches": 2818,
+          "teams": 472
+        }
+      }
+    },
+    "after": {
+      "liga_landscape": {
+        "sha256": "9976723eaa61e248adc7ee33348cad41eebf9f30ddfdf913b6d40ef9d0d4b74c",
+        "row_counts": {
+          "age_groups": 29,
+          "club_registry": 796,
+          "fetch_errors": 0,
+          "group_type_katalog": 8928,
+          "league_group_details": 18546,
+          "league_group_match_counts": 18546,
+          "league_group_regions": 59127,
+          "league_group_teams": 96823,
+          "league_groups": 18546,
+          "league_match_groups": 310137,
+          "league_match_requests": 221558,
+          "league_matches": 203012,
+          "match_categories": 1300474,
+          "match_games": 2636258,
+          "regions": 33,
+          "standing_indexes": 16269
+        }
+      },
+      "normalized": {
+        "sha256": "49bc62ac3aa8b5a003a4b4d1a8112a8f986d12c8667b22342027d42a1d01b41e",
+        "row_counts": {
+          "clubs": 1,
+          "competitions": 462,
+          "extraction_errors": 1444,
+          "individual_match_players": 67196,
+          "individual_matches": 20319,
+          "players": 7599,
+          "raw_payloads": 2874,
+          "seasons": 26,
+          "standings": 751,
+          "team_matches": 2818,
+          "teams": 472
+        }
+      }
+    }
+  }
+}

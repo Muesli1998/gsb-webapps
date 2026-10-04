@@ -62,16 +62,24 @@ et hold spiller i flere puljer samme sæson, eller hvis "højeste format" er ukl
 
 ## Spørgsmål
 
-### Afventer autoritativ GSB-ungdomsholdidentitet
+### Afventer godkendelse af navnevarianter og identitetsregel
 
-Jeg stoppede før formatplacering. De angivne identitetskilder dækker ikke ungdom:
+Del 1 fandt ingen direkte ID/FK-kobling mellem `club_registry` og `league_group_teams`. `club_registry.club_id=1093` har navnet `Gladsaxe Søborg Badmintonklub`, mens holdrækker kun giver `team_name_raw`; 101/092 er senior-only og løser ikke ungdomskoblingen. Auditten fandt 21 direkte Gladsaxe-navnevarianter (280 poster) og 18 BC37-/lignende holdvarianter (236 poster samt én hybridpost med både BC37 og Gladsaxe). De fulde optællinger og sæsonspænd står i `statistik/results/127-gsb-ungdom-holdnavne-audit.md`.
 
-- `statistik/scripts/101-koebenhavn-traadmatching.mjs` filtrerer eksplicit `age_group_id = 1`; resultatet `statistik/results/101-koebenhavn-traadmatching.json` har 7 GSB-tråde, alle fra senioranalysen.
-- `statistik/scripts/092-hold-identitet-traadmatching.mjs` filtrerer også eksplicit `age_group_id = 1` og bruger senior-only input fra 089.
-- En read-only forespørgsel i `liga-landskab.db` fandt 280 GSB-navngivne hold-puljeposter i 126's ungdomsaldersgruppe-ID'er (2, 3, 4, 5, 6, 18; ID 7 havde ingen poster). Det er kun et antal rå kandidatposter — ikke en valideret identitetsmapping eller antal placerbare GSB-hold.
+**Christoffer bedes godkende/afvise som GSB-hold hver af de 21 direkte navnevarianter:** `Gladsaxe Søborg`; `Gladsaxe Søborg *udgået*`; `Gladsaxe Søborg 1`; `Gladsaxe Søborg 10`; `Gladsaxe Søborg 2`; `Gladsaxe Søborg 2 *Trukket`; `Gladsaxe Søborg 2 *udgået*`; `Gladsaxe Søborg 2 trukket`; `Gladsaxe Søborg 2 udgået`; `Gladsaxe Søborg 3`; `Gladsaxe Søborg 3 *udgået*`; `Gladsaxe Søborg 4`; `Gladsaxe Søborg 4 *trukket*`; `Gladsaxe Søborg 4 *udgået*`; `Gladsaxe Søborg 5`; `Gladsaxe Søborg 5 (2+2 B)`; `Gladsaxe Søborg 6`; `Gladsaxe Søborg 7`; `Gladsaxe Søborg 8`; `Gladsaxe Søborg 9`; `Gladsaxe Søborg udgået`.
 
-**Spørgsmål til Christoffer:** Hvilken eksisterende, autoritativ mapping/facit skal bruges til at identificere GSB's ungdomshold på tværs af sæson og aldersgruppe? Må der anvendes en præcis klubnavne-/holdnavnematchning mod de rå GSB-navne i databasen, og i givet fald hvilket eksplicit regelsæt afgør aliaser, udgåede hold og hold med flere puljer? Indtil det er afklaret, er antal verificerede GSB-ungdomshold, placerede og uplacerede **ikke fastslået**; ingen klub- eller holdidentitet udledes her.
+**Tvetydige holdvarianter, som skal afvises eller forklares særskilt:** `BC37 Amager`; `BC37 Amager 1`; `BC37 Amager 2`; `BC37 Amager 2 trukket`; `BC37 Amager 3`; `BC37 Amager 4`; `BC37 Amager 5`; `BC37 Amager 6`; `BC37 Amager trukket`; `BC37 Amager udgået`; `BC37/Dragør 1`; `BC37/Dragør 2`; `BC37/Gladsaxe Søborg 1`; `BC37/IBB 1`; `BC37/KMB2010 Amager 1`; `BC37/NBK Amager 1`; `IBB/BC37 Amager 1`; `NBK/BC 37 Amager 1`.
+
+Registry-klubberne `club_id=1087` (`Badmintonklubben af 1937 (BC 37)`) og `club_id=1232` (`Søborg S.G.& I.F., Badmintonafd.`) er ligeledes kun navnelignende kandidater — skal hver afvises som GSB? Bekræft også, om den samme godkendte identitetsregel må bruges på de øvrige klubber i puljerne; databasen har ingen direkte club-ID-link til holdrækkerne.
 
 ## Resultatnote
 
-Opgaven er sat på pause før placering, fordi de påpegede kilder 101/092 kun indeholder senioridentitet (`age_group_id=1`). Se ovenstående spørgsmål. Begge databaser blev åbnet read-only; før/efter SHA-256 og rækketal rapporteres i afleveringen. Ingen outputrangering eller nyt script blev lavet.
+### Del 1 — ungdomsholdnavne-audit (placering ikke udført)
+
+Tilføjet `statistik/scripts/127-audit-gsb-youth-team-names.mjs` og genereret `statistik/results/127-gsb-ungdom-holdnavne-audit.md/.json`. Scriptet bruger `DatabaseSync(..., { readOnly: true })`, scanner 32.837 hold-puljeposter for aldersgruppe-ID'erne 2, 3, 4, 5, 6, 7 og 18, og finder 516 poster på et bredt søgemønster: 280 indeholder Gladsaxe, 236 BC37 uden Gladsaxe, og én af de 280 Gladsaxe-poster indeholder også BC37. Det giver 21 direkte rå GSB-navnekandidater og 18 tvetydige/lignende varianter; ingen af dem erklæres verificeret alene på navnet.
+
+`club_registry` har `club_id`/`club_name_raw`; `league_group_teams` har ikke klub-ID eller registry-ID og ingen FK. Derfor bruges tekstmatch kun til kandidatfund. Auditten fandt registry-kandidat `1093 Gladsaxe Søborg Badmintonklub` samt de tvetydige `1087 Badmintonklubben af 1937 (BC 37)` og `1232 Søborg S.G.& I.F., Badmintonafd.`. 092/101's holdidentitetslogik dækker senior, ikke ungdom. En tilsvarende verificeret mapping til at navngive alle øvrige klubber i puljerne findes heller ikke i de undersøgte tabeller.
+
+**Afventer Christoffers svar** på variantlisten og identitetsreglen ovenfor. Trin 2/formatplacering er ikke begyndt; GSB-holdantal, placerede og uplacerede er derfor ikke opgjort.
+
+Databaserne var kun læst. Før/efter SHA-256 og alle tabelrækketal er ens: `gsb-statistik-normalized.db` `49bc62ac3aa8b5a003a4b4d1a8112a8f986d12c8667b22342027d42a1d01b41e`; `liga-landskab.db` `9976723eaa61e248adc7ee33348cad41eebf9f30ddfdf913b6d40ef9d0d4b74c`. De fulde rækketal står i auditrapporten. Scriptkontrol: `node --check statistik/scripts/127-audit-gsb-youth-team-names.mjs` bestod; scriptkørslen skrev begge rapporter med de ovenstående tal.
