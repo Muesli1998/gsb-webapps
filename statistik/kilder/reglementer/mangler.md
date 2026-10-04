@@ -1,6 +1,6 @@
 # Mangler og dækningsstatus — opgave 130
 
-Hentedato for registrerede PDF'er: 2026-10-04. Efter runde 3 indeholder registeret 38 PDF'er, samlet 13.053.079 bytes (ca. 12,4 MiB, 363 sider). Det er egentlige reglementer, tillæg og tydeligt mærkede invitationer/vejledninger. Det er **ikke** en komplet samling af alle offentligt tilgængelige regelsæt 2010-nu.
+Hentedato for registrerede PDF'er: 2026-10-04. Efter runde 4 indeholder registeret 42 PDF'er, samlet 14.479.792 bytes (ca. 13,8 MiB, 439 sider). Sidetallet er runde 3's verificerede 363 sider plus de fire nye PDF'ers pdfinfo-tal (35+15+15+11). Det er egentlige reglementer, tillæg og tydeligt mærkede invitationer/vejledninger. Det er **ikke** en komplet samling af alle offentligt tilgængelige regelsæt 2010-nu.
 
 ## Dækning pr. sæson i data
 
@@ -12,17 +12,17 @@ Hentedato for registrerede PDF'er: 2026-10-04. Efter runde 3 indeholder register
 | 2011/12 | Nej | Nej | Ikke i registeret; 6-variant-søgekrav ikke opfyldt |
 | 2012/13 | Nej | Historisk SBKr-reglement fundet, men PDF'en angiver ingen sæson; Sjælland veteran-PDF har titel 2013/14 og brødtekst 2012/13 | Delvis; sæson ikke sikkert fastlagt |
 | 2013/14 | Nej; Sjælland ungdomsinvitation arkiveret, henviser til separat SBKr.-reglement | Sjælland veteran-PDF har titel 2013/14, men brødtekst omtaler 2012/13; ikke fuldt regionalt reglement | Delvis; underliggende ungdomsregel ikke fundet |
-| 2014/15 | Nej | Ingen bekræftet sæsonkilde i dette arkivudtræk | Ikke i registeret; 6-variant-søgekrav ikke opfyldt |
-| 2015/16 | Nej | Ingen bekræftet København-reglement for sæsonen; arkivfil tidligere fundet via 2015-rute viser 2018/19 på PDF-forsiden | Ikke i registeret; 6-variant-søgekrav ikke opfyldt |
+| 2014/15 | Nej | Ingen bekræftet sæsonkilde i dette arkivudtræk | National ungdoms-PDF ikke fundet efter 6 loggede varianter; lokale celler er ikke seksvariantssøgt |
+| 2015/16 | Nej | Ingen bekræftet København-reglement for sæsonen; arkivfil tidligere fundet via 2015-rute viser 2018/19 på PDF-forsiden | National ungdoms-PDF ikke fundet efter 6 loggede varianter; lokale celler er ikke seksvariantssøgt |
 | 2016/17 | Ja, nationalt BD/DGI-reglement | Lokale sæsonregler uafklarede | Delvis; national pointskala arkiveret |
-| 2017/18 | Nej | Nej | Ikke i registeret; 6-variant-søgekrav ikke opfyldt |
+| 2017/18 | Nej | Nej | National ungdoms-PDF ikke fundet efter 6 loggede varianter; lokale celler er ikke seksvariantssøgt |
 | 2018/19 | Ja, nationalt BD/DGI-reglement | Badminton København, turneringsreglement version 2018-1; Nordjylland ungdomsinvitation og senior Serie 2-4-reglement | Delvis nationalt og regionalt |
 | 2019/20 | Ja, nationalt BD/DGI fællesreglement | DH/DMU-kilder linkes fra historisk BD-side, men direkte fil-links omdirigerer til `UnknownFile.png` | Delvis |
 | 2020/21 | Ja, nationalt BD/DGI-reglement (pointskala endnu ikke indlæst) | DGI Jylland ungdomsinvitation fundet, men anonym download gav HTTP 502; øvrige lokale regler uafklarede | Delvis national ungdom |
-| 2021/22 | Nej | En Vest-reglementsfil mærket 2021 er arkiveret, men dokumentet angiver ikke entydigt, hvilken sæson det gælder | Delvis regionalt; sæsonuklar, ungdom ikke i registeret |
+| 2021/22 | Nej | En Vest-reglementsfil mærket 2021 er arkiveret, men dokumentet angiver ikke entydigt, hvilken sæson det gælder | National ungdoms-PDF ikke fundet efter 6 loggede varianter; regionale celler er ikke seksvariantssøgt |
 | 2022/23 | Ja, nationalt BD/DGI-reglement | Sjælland veteranreglement med dokumentdato 1. september 2022, men sæson ikke angivet | Delvis nationalt/regionalt |
-| 2023/24 | Ja, nationalt BD/DGI fællesreglement + DMU-tillæg | Nej | Delvis nationalt ungdom |
-| 2024/25 | Ja, nationalt BD/DGI fællesreglement; både første udgave og martsrevision | Badminton København lokalt reglement | Delvis nationalt og regionalt |
+| 2023/24 | Ja, nationalt BD/DGI fællesreglement + DMU-tillæg | Nordjylland senior/veteran (Serie 2/3, VoksenFjer, Single/Double, 3-Runder-Double, Veteran 40+) | Delvis; DH-dokument dateret 2023 er arkiveret, men sæson ikke angivet |
+| 2024/25 | Ja, nationalt BD/DGI fællesreglement; både første udgave og martsrevision | Badminton København lokalt; Nordjylland senior/veteran | Delvis nationalt og regionalt; Sjælland-senior-PDF dateret 1. september 2025 har ikke fastlagt anvendelsessæson |
 | 2025/26 | Ja, nationalt fællesreglement; original + 8. oktober revision | Nordjysk og vestligt senior/veteran; nationalt DH-årsreglement mangler | Delvis |
 | 2026/27 | Ja, nationalt fællesreglement + DMU-tillæg; DGI/BSJ invitation og holdlederfolder; særskilt UGE 38-bilag | DH-reglement + bilag 3 + holdfællesskabstillæg; København lokalt; Nordjylland senior/veteran; Sjælland veteraninvitation | Delvis; flere regioner mangler |
 
@@ -30,7 +30,7 @@ Sæsonår uden fundet kilde må ikke få regler arvet fra nabosæsonen. Tabellen
 
 ## Registerbestand efter type og udgiver/område
 
-De 38 hentede PDF'er fordeler sig sådan efter registerets type (en fil kan være vejledning/invitation, ikke et reglement):
+De 42 hentede PDF'er fordeler sig sådan efter registerets type (en fil kan være vejledning/invitation, ikke et reglement):
 
 | Type | Antal PDF'er |
 |---|---:|
@@ -41,19 +41,19 @@ De 38 hentede PDF'er fordeler sig sådan efter registerets type (en fil kan vær
 | ungdom-UGE 38 | 1 |
 | ungdom-vejledning | 1 |
 | ungdom-veteran | 1 |
-| senior | 4 |
+| senior | 6 |
 | senior-tillæg | 2 |
-| senior/veteran | 3 |
+| senior/veteran | 5 |
 | veteran | 3 |
 | veteran-invitation | 1 |
 | kontekst-veteran (årsmødemateriale, ikke reglement) | 1 |
-| **I alt** | **38** |
+| **I alt** | **42** |
 
-Område-/udgiveroptælling (PDF'er, ikke unikke regioner; fælleskilder tæller under deres fulde registerlabel): Badminton Danmark 5; fælles Badminton Danmark + DGI Badminton 11; Badminton København 4; Badminton Nordjylland 2; Badminton Nordjylland + DGI Nordjylland 3; Badminton Sjælland (tidl. SBKr.) 5; Badminton Sjælland + tre DGI-landsdele 1; Lolland-Falsters Badminton Kreds 1; vestlige kreds-/landsdelssamarbejder 2; særskilte DGI/BSJ-kilder 4. Summen er 38. Sæson-/dokumentdatoerne og type/region pr. enkeltfil fremgår af `register.json`.
+Område-/udgiveroptælling (PDF'er, ikke unikke regioner; fælleskilder tæller under deres fulde registerlabel): Badminton Danmark 6; fælles Badminton Danmark + DGI Badminton 11; Badminton Fyn/Sønderjylland/Nordjylland/Midtjylland 1; Badminton København 4; Badminton Nordjylland 2; Badminton Nordjylland + DGI Nordjylland 5; Badminton Sjælland (tidl. SBKr.) 5; Badminton Sjælland + DGI Nordsjælland/Midt- og Vestsjælland/Storstrømmen 2; vestlige kreds-/landsdelssamarbejder 1; øvrige enkeltstående DGI/BSJ-labels 4; Lolland-Falsters Badminton Kreds 1. Summen er 42. Sæson-/dokumentdatoerne og type/region pr. enkeltfil fremgår af `register.json`.
 
-## Områder uden lokal dækning
+## Områder uden verificeret lokal dækning i registeret
 
-Databasen indeholder poster knyttet til Badminton Danmark, Bornholm, Midtjylland, Nordjylland, Sønderjylland, Fyn, København, Lolland-Falster og Sjælland samt DGI Bornholm, Fyn, Midtjylland, Nordjylland, Nordsjælland, Nordvest, SdU, Storkøbenhavn, Storstrømmen, Sydvest, Sydøstjylland, Sønderjylland, Vestjylland, Midt- og Vestsjælland og Østjylland (24 region-labels inkl. Badminton Danmark; historiske navne/forbindelser kan overlappe). Lokale regelkilder er kun hentet for København (2018/19, 2025/26, 2026/27), dele af Sjælland (ungdomsinvitation 2013/14, historisk dokumentation og veteraninvitationer 2026/27), Vest (Kredsserie Vest 2021) og Nordjylland (senior 2018/19, 2025/26-2026/27 SH-reglement). For alle øvrige områder mangler komplet sæsonhistorik for ungdomsindbydelser, senior- og veteranregler.
+Databasen indeholder poster knyttet til Badminton Danmark, Bornholm, Midtjylland, Nordjylland, Sønderjylland, Fyn, København, Lolland-Falster og Sjælland samt DGI Bornholm, Fyn, Midtjylland, Nordjylland, Nordsjælland, Nordvest, SdU, Storkøbenhavn, Storstrømmen, Sydvest, Sydøstjylland, Sønderjylland, Vestjylland, Midt- og Vestsjælland og Østjylland (24 region-labels inkl. Badminton Danmark; historiske navne/forbindelser kan overlappe). Lokal regelkildedækning er kun punktvist verificeret. At en region-/sæson-/målgruppekombination ikke står i registeret er ikke bevis på fravær; bortset fra de fire nationale ungdomsår nævnt ovenfor er seks særskilte varianter pr. præcis matrixcelle ikke gennemført.
 
 ## Kunne ikke hentes — Christoffer prøver manuelt
 
@@ -67,6 +67,8 @@ Dette er de præcise fundne adresser, hvor der ikke kom et brugbart reglement ud
 | https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=75911 | Reglement for senior-/veteranholdturnering, Badminton Fyn | Dokument omtalt som revideret 1. august 2018; sæson ikke angivet; Fyn, senior/veteran | HTTP 200, `image/png`, 2.916 bytes (`UnknownFile.png`), ikke PDF |
 | https://badminton.dk/wp-content/uploads/2025/03/2025-03-03-Holdturneringsreglement-for-badminton-i-Danmark.pdf | Holdturneringsreglement for badminton i Danmark (DH-reglementet), 3. marts 2025 | Dokumentdato 2025-03-03; Badminton Danmark, senior; gældende sæson ikke fastslået | Badminton Danmarks medieindeks viser PDF-tekst, men direkte anonym HTTP GET gav 404; ikke arkiveret |
 | https://sites.dgi.dk/media/34207/indbydelse-ungdomsholdturnering-jylland-2020-21-2.pdf | Indbydelse ungdomsholdturnering Jylland | 2020/21; DGI Jylland, ungdom | Direkte anonym GET gav HTTP 502; ingen brugbar PDF blev modtaget. |
+| https://sites.dgi.dk/media/51208/reglement-faelles-ht-voksenraekker-2023-2024.pdf | Fælles reglement for voksenrækker 2023/24 | 2023/24; DGI/jyske landsdele, senior/veteran | To direkte anonyme forsøg gav HTTP 502, `text/html`, 183 bytes; ingen PDF-signatur. |
+| https://www.dgi.dk/media/51208/reglement-faelles-ht-voksenraekker-2023-2024.pdf | Fælles reglement for voksenrækker 2023/24 (alternativ offentlig værtsadresse) | 2023/24; DGI/jyske landsdele, senior/veteran | Direkte anonymt forsøg gav HTTP 502, `text/html`, 183 bytes; ingen PDF-signatur. |
 
 De tre 2026/27 SharePoint-delingslinks gav hver HTTP 401 anonymt. Filerne er siden leveret manuelt af Christoffer og læst; de står derfor ikke som uløste indhold. Originale adresser/proveniens:
 
@@ -76,11 +78,23 @@ De tre 2026/27 SharePoint-delingslinks gav hver HTTP 401 anonymt. Filerne er sid
 
 De tre URL’er er listet som en gruppe; én-til-én-koblingen mellem hvert SharePoint-token og filnavn er ikke fastslået.
 
-## Øvrige mangler og afgrænsninger
+### Øvrige mangler og afgrænsninger
 
-1. **Nationale ungdomsregler:** der er nu filer for 2016/17, 2018/19, 2019/20, 2020/21, 2022/23, 2023/24, 2024/25, begge fundne 2025/26-versioner og 2026/27. 2020/21-tabellen mangler endnu transskription. Der er ikke registreret filer for 2010/11-2015/16, 2017/18 og 2021/22; det er ikke fastslået om årlige fællesreglementer fandtes i alle disse sæsoner.
-2. **Nationale seniorregler:** DH-reglement for 2026/27 er arkiveret. Medieindekset viser desuden en DH-PDF dateret 3. marts 2025, men præcis URL returnerede HTTP 404 ved direkte GET; den er listet ovenfor, ikke registerført som hentet. En gennemgående sæsonserie 2010/11-2025/26 mangler.
-3. **Regioner og landsdele:** dækningen er punktvis. København er repræsenteret 2018/19, 2024/25, 2025/26 og 2026/27; Nordjylland 2018/19 senior, 2018/19 ungdomsinvitation, 2025/26-2026/27 senior/veteran samt historisk veteranreglement uden sæson; Sjælland har ungdomsinvitation 2013/14, veteran-dokument dateret 2022 uden sæson og en 2026/27 invitation; vestlige samarbejdsområder har 2021 senior og 2025/26 senior/veteran. De øvrige databaseområder mangler stadig sæson-for-sæson-regler.
+## Runde 4 — bred søgning og efterprøvede kandidater
+
+Syv agenter arbejdede parallelt på ungdom 2010/11–2013/14 (A), ungdom 2014/15–2017/18 og 2021/22 (B), senior/DH/serier (C), veteran (D), DGI-landsdele (E), Badmintonregioner (F) og Wayback (G). De leverede i alt **132 itemiserede forespørgselsstrenge**. En agentrapport modsagde sig selv om antallet udførte søgninger (54 angivet først, derefter 20; itemiseret liste indeholder 36); derfor er 132 summen af tilgængelige, itemiserede strenge — ikke en uafhængigt verificeret tæller for rå søgemaskinekald. Søgeværktøjet eksponerede ikke resultattal pr. forespørgsel i batch-søgninger; dette er logget som “ikke eksponeret”, ikke gættet. Forespørgsler og søgebegrænsninger står i `statistik/results/130-source-discovery.json`.
+
+Fire nye, offentlige PDF'er blev hentet og valideret (HTTP 200, `%PDF-`, sidetal, SHA-256): DH-reglementets PDF-metadata har creation date 2023-09-01 (sæson ikke angivet); Nordjysk senior/veteran 2023/24; Nordjysk senior/veteran 2024/25; Sjællandsk seniorreglement siger “Pr 1/9-2025” (anvendelsessæson ikke angivet). Registeret steg fra 38 til 42 filer, fra 13.053.079 til 14.479.792 bytes og fra 363 til 439 sider.
+
+Ingen DGI-voksen-PDF kunne hentes fra ID 51208: både `https://sites.dgi.dk/media/51208/reglement-faelles-ht-voksenraekker-2023-2024.pdf` (to forsøg) og `https://www.dgi.dk/media/51208/reglement-faelles-ht-voksenraekker-2023-2024.pdf` (ét forsøg) gav HTTP 502, `text/html`. Fyns `fileID=75911` gav HTTP 200, men `image/png`, 2.916 bytes; det er ikke en PDF. Linket `fileID=101467`, som søgeresultatet tilskrev en 2014/15-veteraninvitation, gav i virkeligheden den allerede registrerede 2026/27-invitation (SHA-identisk); ingen ny fil blev tilføjet.
+
+Kun fire nationale ungdomsår uden registreret fil opfyldte i denne runde seks loggede sæsonsspecifikke varianter: 2014/15, 2015/16, 2017/18 og 2021/22. “Ikke fundet efter seks varianter” beskriver søgningen, ikke bevis for at et dokument aldrig fandtes. For 2010/11–2013/14 var der kun fire nationale varianter pr. sæson; ingen præcis regional sæson×målgruppecelle, DGI-landsdelscelle eller Wayback-søgespor opfyldte seksvarianterskravet. De øvrige manglende felter nedenfor skal derfor læses som **uafklarede/ikke i registeret**, ikke som fastslået fravær.
+
+Nye arkivspor til manuel efterprøvning (ikke downloadet i runde 4): [BadmintonPeople holdturneringsregler](https://badmintonpeople.dk/cms/?cmsid=824&pageid=26170); [Nordjyske historiske “Love og regler”](https://web.archive.org/web/20250711172452/https://badmintonpeople.dk/cms/?cmsid=877&pageid=29571); Wayback [Badminton Danmarks reglementsoversigt, 23.06.2024](https://web.archive.org/web/20240623043057/https://badminton.dk/holdturneringsregler/).
+
+1. **Nationale ungdomsregler:** filer findes for 2016/17, 2018/19, 2019/20, 2020/21, 2022/23, 2023/24, 2024/25, begge fundne 2025/26-versioner og 2026/27. 2020/21-tabellen mangler transskription. Nationale PDF'er blev ikke fundet efter seks loggede varianter for 2014/15, 2015/16, 2017/18 og 2021/22; for 2010/11-2013/14 var der færre end seks nationale varianter pr. sæson. Det fastslår ikke, om alle disse årlige fællesreglementer fandtes.
+2. **Nationale seniorregler:** DH-reglement for 2026/27 og en ældre DH-version uden angivet anvendelsessæson er arkiveret. Medieindeksets DH-PDF dateret 3. marts 2025 gav HTTP 404 ved direkte GET; den står ovenfor. En gennemgående sæsonserie 2010/11-2025/26 mangler.
+3. **Regioner og landsdele:** dækningen er punktvis. København er repræsenteret 2018/19, 2024/25, 2025/26 og 2026/27; Nordjylland senior/veteran i 2023/24, 2024/25, 2025/26 og 2026/27, senior i 2018/19, ungdomsinvitation 2018/19 samt veteran uden sæson; Sjælland har ungdomsinvitation 2013/14, senior-PDF dateret 1. september 2025 uden fastlagt sæson, veteran-dokument dateret 2022 uden sæson og en 2026/27 invitation; vestlige samarbejdsområder har Kredsserie Vest/Serie 1 Vest-dokument fra 2021 uden entydig sæson og senior/veteran fra uge 43 2025. For øvrige labels er den år-for-år-dækning uafklaret; søgekriteriet er ikke nået for hver konkret celle.
 4. **Veteran:** der mangler især komplette sæsonreglementer 2010-2024 og regionale forskelle øst/vest. Dokumentdato eller invitation er ikke behandlet som bevis for anvendelse i en hel sæson.
 5. **DGI lokale ungdomsindbydelser:** mangler fortsat for de fleste landsdele/sæsoner. Fælles nationalt reglement fastslår ikke, hvilke lokale rækker der faktisk blev udbudt.
 6. **Historiske kredsnavne:** DBF/Badminton Danmark, SBKr., LFBKr., de vestlige kredse og senere regioner er ikke komplet kortlagt år for år.

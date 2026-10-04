@@ -34,6 +34,15 @@ I 2026/27 står U13 4 spillere A/B/C/C-D/D/Dx som **6400/5600/5100/4800/4600/440
 | Nordjylland | Et samlet regionalt Senior/Veteran-reglement har egne holdtyper og turneringsregler. | nordjylland-senior-veteran-2025-26 og 2026-27; sæsonversionerne |
 | Sjælland veteran | Ældre historik-/veterankilder dokumenterer holdtyper, men sæsonen i en historisk PDF er modstridende (titel 2013/14, brødtekst 2012/13). En 2026/27 invitation er ikke et fuldstændigt serie-reglement. | sj-veteran-2013-14-season-conflict; sjaelland-veteran-invitation-2026-27 |
 
+### Runde 4 — nye regionale og nationale seniorfund
+
+| Område | Dokumenteret indhold | Sæson/dato | Kilde |
+|---|---|---|---|
+| Badminton Danmark, DH | Reglementets forside afgrænser sig til Badmintonligaen–Danmarksserien; §5 siger, at kredsenes holdturneringer ikke er omfattet. Dokumentet angiver ikke en entydig anvendelsessæson. | PDF-metadata creation date 1. september 2023; sæson ikke angivet | bd-dh-2023-dated, s. 1 og 4 |
+| Badminton Nordjylland + DGI Nordjylland | Reglementet omfatter Serie 2/3, VoksenFjer, Single/Double, 3-Runder-Double og Veteran 40+. §5 anfører sæsonen. | 2023/24 | nordjylland-senior-veteran-2023-24, s. 1 og 3 |
+| Badminton Nordjylland + DGI Nordjylland | Samme opregnede lokale holdtyper; selvstændig sæsonversion, vedtaget juni 2024. | 2024/25 | nordjylland-senior-veteran-2024-25, s. 1 og 3 |
+| Badminton Sjælland + DGI Nordsjælland, Midt- og Vestsjælland, Storstrømmen | Seniorholdreglement; forsiden siger “Pr 1/9-2025”. Det dokumenterer dato, men ikke hvilken hel sæson regelsættet gælder. | Dokumentdato 1. september 2025; sæson ukendt | sjaelland-senior-2025-docdate, s. 1 |
+
 Der udledes ikke en fælles veteranregel af disse regionale dokumenter. For hver sæson/region uden kilde er reglerne ukendte, ikke videreført fra naboår.
 
 ## Runde 3 — bredere fritekstsøgning og historiske kilder
@@ -53,7 +62,7 @@ For U13 i 2016/17 viser skemaet 4 spillere: Dx 29/8/8, D 35/11/8, C 48/15/11, B 
 
 ## Uafklaret kildegrundlag
 
-- Ingen fuld, sammenhængende officiel samling fra 2010 til i dag blev fundet. Registeret indeholder nu 38 PDF'er fra enkelte år/versioner, i alt 13.053.079 bytes og 363 sider; det omfatter de tre manuelt leverede DGI-bilag samt de to nye manuelt leverede historiske dokumenter. Se [mangler.md](mangler.md) for huller og ikke-hentede kandidater.
+- Ingen fuld, sammenhængende officiel samling fra 2010 til i dag blev fundet. Registeret indeholder nu 42 PDF'er fra enkelte år/versioner, i alt 14.479.792 bytes og 439 sider (sidetal summeret fra den verificerede runde 3-total og de fire nye PDF'er). Se [mangler.md](mangler.md) for huller og ikke-hentede kandidater.
 - 2025/26 ungdom findes i flere revisioner. 8. oktober-versionen er seneste hentede revision i dette arkiv; marts 2025 er en revision af 2024/25-reglementet. Versionerne beholdes hver for sig.
 - UGE 38 og de to DGI/Badminton Sjælland-bilag for 2026/27 er nu registreret fra Christoffers lokale filoverdragelse. De tre oprindelige SharePoint-links gav HTTP 401 anonymt; bilagene er læst og er selvstændige kilder. UGE 38 er en separat ekstraordinær 2+2-turnering for U13-U19 i uge 38, ikke en almindelig regional række. Vinderen af hver række får tilbudt DMU-plads; ved flere puljer mødes puljevinderne i finale (Uge 38 invitation s. 1). Den regionale invitation angiver holdtyper, runder, 3×15-systemet fra 1. juli 2026 og DMU Hold 24.-25. april 2027 (s. 1-2). Holdlederfolderen er vejledende og henviser til fællesreglementet; den omtaler bl.a. §14-15 og 3×15 (s. 2).
 

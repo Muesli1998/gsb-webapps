@@ -552,6 +552,70 @@
       "type": "ungdom",
       "public_access": true
     }
+    ,{
+      "id": "bd-dh-2023-dated",
+      "title": "Holdturneringsreglement for badminton i Danmark",
+      "source_url": "https://badminton.dk/wp-content/uploads/2023/09/Holdturneringsreglement-for-badminton-i-Danmark-310823.pdf",
+      "final_url": "https://badminton.dk/wp-content/uploads/2023/09/Holdturneringsreglement-for-badminton-i-Danmark-310823.pdf",
+      "retrieved_at": "2026-10-04",
+      "sha256": "b67ccd37bed5a576ebc9639f0b2f06cdbed4bf5ead2e782f92243bd290ee2787",
+      "bytes": 273429,
+      "page_count": 35,
+      "file": "2023/badminton-danmark/bd-dh-2023-dated.pdf",
+      "season": "Sæson ikke angivet; PDF-metadata creation date 2023-09-01",
+      "area": "Badminton Danmark",
+      "type": "senior",
+      "public_access": true,
+      "document_scope_note": "Gælder Badmintonligaen til og med Danmarksserien; kredsenes holdturneringer er ikke omfattet. Forside og §5, PDF s. 1 og 4."
+    },
+    {
+      "id": "nordjylland-senior-veteran-2023-24",
+      "title": "Holdturneringsreglement — Den Nordjyske Holdturnering 2023/24",
+      "source_url": "https://badmintoninordjylland.dk/wp-content/uploads/2023/07/Nordjysk-senior-holdturnering-reglement-2023-2024.pdf",
+      "final_url": "https://badmintoninordjylland.dk/wp-content/uploads/2023/07/Nordjysk-senior-holdturnering-reglement-2023-2024.pdf",
+      "retrieved_at": "2026-10-04",
+      "sha256": "4bfac3587790276029911012b6e869430177c6e8075a65c0c7dd7a31365ebc02",
+      "bytes": 414960,
+      "page_count": 15,
+      "file": "2023/badminton-nordjylland/nordjylland-senior-veteran-2023-24.pdf",
+      "season": "2023/24 (angivet i §5, PDF s. 3)",
+      "area": "Badminton Nordjylland + DGI Nordjylland",
+      "type": "senior-veteran",
+      "public_access": true,
+      "document_scope_note": "Omfatter Serie 2 og 3, VoksenFjer, Single/Double, 3-Runder-Double og Veteran 40+ (forside)."
+    },
+    {
+      "id": "nordjylland-senior-veteran-2024-25",
+      "title": "Holdturneringsreglement — Den Nordjyske Holdturnering 2024/25",
+      "source_url": "https://badmintoninordjylland.dk/wp-content/uploads/2023/07/Nordjysk-senior-holdturnering-reglement-2024-2025.pdf",
+      "final_url": "https://badmintoninordjylland.dk/wp-content/uploads/2023/07/Nordjysk-senior-holdturnering-reglement-2024-2025.pdf",
+      "retrieved_at": "2026-10-04",
+      "sha256": "db2defc30e523da3c8f30790261a5192f404cef38f70abd744d793864a20030b",
+      "bytes": 418806,
+      "page_count": 15,
+      "file": "2024/badminton-nordjylland/nordjylland-senior-veteran-2024-25.pdf",
+      "season": "2024/25 (angivet i §5, PDF s. 3)",
+      "area": "Badminton Nordjylland + DGI Nordjylland",
+      "type": "senior-veteran",
+      "public_access": true,
+      "document_scope_note": "Omfatter Serie 2 og 3, VoksenFjer, Single/Double, 3-Runder-Double og Veteran 40+ (forside)."
+    },
+    {
+      "id": "sjaelland-senior-2025-docdate",
+      "title": "Reglement for den Sjællandske Seniorholdturnering",
+      "source_url": "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=97855",
+      "final_url": "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=97855",
+      "retrieved_at": "2026-10-04",
+      "sha256": "1647264b8c358132a701279ef82953a88133d766ebf18efd69012bcf7ea13a86",
+      "bytes": 319518,
+      "page_count": 11,
+      "file": "2025/badminton-sjaelland/sjaelland-senior-reglement-docdate-2025.pdf",
+      "season": "Dokumentdato 2025-09-01; anvendelsessæson ikke angivet",
+      "area": "Badminton Sjælland + DGI Nordsjælland, Midt- og Vestsjælland, Storstrømmen",
+      "type": "senior",
+      "public_access": true,
+      "document_scope_note": "Forsiden siger 'Pr 1/9-2025'; PDF'en angiver ikke en fuld anvendelsessæson."
+    }
   ],
   "failed_candidates": [
     {
@@ -577,6 +641,22 @@
       "area": "DGI Jylland; den præcise landsdel fremgår ikke af den eksponerede invitationstekst",
       "type": "ungdom-invitation",
       "status": "Direkte anonym GET gav HTTP 502; ikke arkiveret. WebSearch-indekset viste PDF-tekst, men det er ikke en lokalt valideret fil."
+    },
+    {
+      "source_url": "https://sites.dgi.dk/media/51208/reglement-faelles-ht-voksenraekker-2023-2024.pdf",
+      "title": "Fælles reglement for voksenrækker 2023/24",
+      "season_or_date": "2023/24; sæson fremgår af offentlig URL og titleresultat",
+      "area": "DGI-landsdele og jyske badmintonkredse",
+      "type": "senior/veteran",
+      "status": "To anonyme forsøg gav HTTP 502 med text/html; ingen PDF-signatur, ikke arkiveret."
+    },
+    {
+      "source_url": "https://www.dgi.dk/media/51208/reglement-faelles-ht-voksenraekker-2023-2024.pdf",
+      "title": "Fælles reglement for voksenrækker 2023/24",
+      "season_or_date": "2023/24; sæson fremgår af offentlig URL og titleresultat",
+      "area": "DGI-landsdele og jyske badmintonkredse",
+      "type": "senior/veteran",
+      "status": "Anonymt forsøg gav HTTP 502 med text/html; ingen PDF-signatur, ikke arkiveret."
     }
   ]
 }

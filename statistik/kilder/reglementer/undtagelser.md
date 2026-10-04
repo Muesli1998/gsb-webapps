@@ -28,7 +28,7 @@ Dette katalog beskriver forskelle i de versioner, der faktisk blev hentet. Det e
 
 ## Sæsoner med ukendt/ufuldstændigt grundlag
 
-Der er ingen dokumenteret regel i dette arkiv for hver manglende sæson/region. Manglende må ikke udfyldes ved at kopiere den nærmeste version. Se [mangler.md](mangler.md) for dækningsstatus og konkrete mangler; registeret indeholder nu 34 filer, ikke en komplet år-for-år-samling.
+Der er ingen dokumenteret regel i dette arkiv for hver manglende sæson/region. Manglende må ikke udfyldes ved at kopiere den nærmeste version. Se [mangler.md](mangler.md) for dækningsstatus og konkrete mangler; registeret indeholder nu 42 filer, ikke en komplet år-for-år-samling.
 
 ## Datamaskinel version
 
@@ -43,4 +43,15 @@ Samme poster med sæson, område, kilde-id og sidetal ligger i [undtagelser.json
 | 2013/14, Badminton Sjælland (tidl. SBKr.) | Ungdom | Invitationen henviser til særskilte SBKr.-regler; den er ikke selv regelsættet. | sj-youth-invitation-2013-14 s. 1-4 |
 | 2018/19, Badminton Nordjylland | Senior | Serie 2-4; 4 spillere single og 4 spillere double. | nordjylland-senior-2018-19-manual s. 1-6 |
 
-Registeret har 38 PDF'er efter denne runde; dette er fortsat punktvis kildedækning, ikke en komplet historisk regelsamling.
+Registeret har 42 PDF'er efter runde 4; dette er fortsat punktvis kildedækning, ikke en komplet historisk regelsamling.
+
+### Runde 4 — nye versioner og scope
+
+| Sæson/område | Emne | Dokumenteret forhold | Kilde |
+|---|---|---|---|
+| PDF-metadata creation date 2023-09-01, Badminton Danmark | DH-afgrænsning | Gælder Badmintonligaen til Danmarksserien; kredsenes holdturneringer er ikke omfattet. Sæson ikke angivet, og den er ikke udledt af filnavnet. | bd-dh-2023-dated, s. 1 og 4 |
+| 2023/24, Nordjylland + DGI Nordjylland | Senior/veteran | Serie 2/3, VoksenFjer, Single/Double, 3-Runder-Double og Veteran 40+; sæson står i §5. | nordjylland-senior-veteran-2023-24, s. 1 og 3 |
+| 2024/25, Nordjylland + DGI Nordjylland | Senior/veteran | Selvstændig årsudgave med samme opregnede holdtyper; sæson står i §5. | nordjylland-senior-veteran-2024-25, s. 1 og 3 |
+| Dokumentdato 2025-09-01, Sjælland + tre DGI-landsdele | Senior | Reglementets forside siger “Pr 1/9-2025”; hel anvendelsessæson står ikke i PDF’en. | sjaelland-senior-2025-docdate, s. 1 |
+
+Kandidatkontrol: den arkiverede BadmintonPeople-fil `fileID=101467` viste sig at være 2026/27-invitationen, SHA-identisk med den allerede registrerede fil; en forkert lokal dublet blev fjernet. Fyn `fileID=75911` svarede fortsat HTTP 200 med PNG-fejlbillede (2.916 bytes), og DGI-voksenreglementet `51208` gav HTTP 502 fra både sites.dgi.dk og www.dgi.dk; ingen af de svar blev registreret som PDF.
