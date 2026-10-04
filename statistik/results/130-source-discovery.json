@@ -3014,5 +3014,169 @@
       {"url":"https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=75911","status":200,"content_type":"image/png","signature":"?PNG","bytes":2916,"usable_pdf":false},
       {"url":"https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=101467","status":200,"content_type":"application/pdf","signature":"%PDF-","bytes":253599,"page_count":1,"sha256":"f32530c10cf662adab568dc7b15bc97a82a43ddb95748fb7bcb2896ee2d811ac","outcome":"Duplicate of already registered 2026/27 Sjælland veteran invitation; not added as new source"}
     ]
+  },
+  "round5_del1_del3": {
+    "checked_at": "2026-10-04",
+    "scope": "DEL 1 and DEL 3 only; DEL 2 was not started because DEL 3 produced no new document source or route, matching the explicit stop condition.",
+    "manual_pdf_checks": [
+      {
+        "file": "statistik/kilder/reglementer/manuelt/Sjaelland_USU_invitation_holdturnering_2013-14_ver2.pdf",
+        "sha256": "1dfd2e7759eff5ed65f55cb9bf8bba12d527d1b86fa88947f12fa69de303a4bd",
+        "expected_sha256_match": true,
+        "pages": 4,
+        "existing_register_id": "sj-youth-invitation-2013-14",
+        "existing_public_url": "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=25614",
+        "existing_registered_file": "statistik/kilder/reglementer/2013/badminton-sjaelland/youth-invitation-2013-14.pdf",
+        "outcome": "Byte-identical duplicate of an already registered invitation. No new season rules or point values; existing entry says the invitation refers to separate SBKr rules and is not itself the ruleset."
+      },
+      {
+        "file": "statistik/kilder/reglementer/manuelt/Reglement_for_ungdomsholdturnering_pdf-2018-07.pdf",
+        "sha256": "b29731f0a1b341f44a7676de7f37dea5fa28e176e705db6dbea58abb9faf1fe5",
+        "expected_sha256_match": true,
+        "pages": 10,
+        "document_stated_scope": "Samarbejdsområder sæson 2018/2019; local 4+3 supplement for Badminton Sjælland/Badminton København",
+        "existing_register_id": "bd-dgi-youth-2018-19",
+        "existing_public_url": "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=77454",
+        "existing_registered_file": "statistik/kilder/reglementer/2018/badminton-danmark-dgi-badminton/bd-dgi-youth-2018-19.pdf",
+        "outcome": "Byte-identical duplicate of the registered BD/DGI 2018/19 rules. Therefore no edition, paragraph, point-scale, or row differences exist between these two files; existing transcriptions and exception notes remain the applicable records."
+      }
+    ],
+    "graphql_introspection": {
+      "endpoint": "https://app.nembadminton.dk/graphql",
+      "attempts": 1,
+      "operation": "read-only POST __schema introspection",
+      "outcome": "Not completed: Windows denied the network socket before the request reached the endpoint; no HTTP status or schema response was received.",
+      "relevant_fields": null,
+      "follow_up": "No field-based sample queries or broad query were run because introspection returned no schema."
+    },
+    "badmintonplayer_public_pages": {
+      "sampled_groups": [
+        {"season": "2025/26", "age_group": "U13", "leagueGroupId": "17987", "row": "U13 A, 6000 (2+2)", "page_url": "https://badmintonplayer.dk/DBF/HoldTurnering/Stilling/#1,2025,17987,1,8,,,,", "source": "read-only liga-landskab.db"},
+        {"season": "2018/19", "age_group": "U13", "leagueGroupId": "11418", "row": "U13 CD 4 Spillere", "page_url": "https://badmintonplayer.dk/DBF/HoldTurnering/Stilling/#1,2018,11418,1,8,,,,", "source": "read-only liga-landskab.db"},
+        {"season": "2013/14", "age_group": "U13", "leagueGroupId": "2681", "row": "U13 3. serie", "page_url": "https://badmintonplayer.dk/DBF/HoldTurnering/Stilling/#1,2013,2681,1,8,,,,", "source": "read-only liga-landskab.db"}
+      ],
+      "page_template": "https://badmintonplayer.dk/DBF/HoldTurnering/Stilling/#1,<season_id>,<leagueGroupId>,1,8,,,,",
+      "observation": "The public pages resolve to a JavaScript shell (text/html); the rendered source exposed no rule text, invitation, attachment, PDF, or document links. No document links were followed and the <=150-row scan was not started.",
+      "season_plan_url": "https://badmintonplayer.dk/DBF/Turnering/SaesonPlanOld",
+      "season_plan_observation": "Public page exists but the browser-visible response is a shell with login controls and no historical document/archive listings. Historical reach before the sampled 2013/14 row is not established.",
+      "old_badmintonpeople_file_link": {
+        "url": "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=25614",
+        "registered_final_url_equals_source_url": true,
+        "redirect_to_badmintonplayer_confirmed": false,
+        "current_direct_open": "Web viewer returned an internal access error; no new live HTTP status was available. Existing local register records the same BadmintonPeople URL as source and final URL and the stored PDF hash matches the manually supplied copy."
+      },
+      "conclusion": "No new document source or route beyond the already registered BadmintonPeople files was found; the public BadmintonPlayer pages did not expose the requested material."
+    },
+    "search_log": {
+      "queries": [
+        "site:badmintonplayer.dk \"leagueGroup\" badmintonplayer",
+        "site:badmintonplayer.dk badmintonplayer.dk turnering tidligere sæsoner holdturnering",
+        "\"badmintonplayer.dk\" \"GetWWWFile.aspx\" reglement",
+        "site:badmintonpeople.dk/Cms/ holdturneringsregler fileID ungdom"
+      ],
+      "query_count": 4,
+      "result_counts": "The web search tool did not expose per-query result totals; no totals inferred.",
+      "direct_page_checks": 4,
+      "direct_page_checks_detail": "GraphQL GET via web viewer inaccessible; BadmintonPlayer season-plan shell; Inbox fileID 7903 returned application/pdf with 10 pages in the web viewer; direct fileID 25614 open returned an internal web-viewer error.",
+      "sampled_league_page_checks": 3,
+      "direct_page_checks_total": 7
+    },
+    "del2_status": "Skipped under the explicit instruction to stop and report when DEL 3 yields no more than already-known links. No candidate batch, full site-tree crawl, six-variant-per-season search, or neighbor-fileID probe was run in this round."
+  },
+  "round6": {
+    "checked_at": "2026-10-04",
+    "subagents": {"started": 0, "reason": "Runde 6 forbød udtrykkeligt sub-agenter; alle spor blev udført direkte."},
+    "direct_download_summary": {
+      "requested_badmintonpeople_fileids": 28,
+      "valid_pdf_responses": 22,
+      "png_error_images": 6,
+      "new_relevant_files_from_original_batch": 10,
+      "sha256_duplicates_from_original_batch": 2,
+      "irrelevant_or_out_of_period_pdf_responses": 10,
+      "png_ids": [78859, 81920, 81921, 78820, 81955, 80284],
+      "png_response": {"http_status": 200, "content_type": "image/png", "bytes": 2916, "final_url": "https://badmintonpeople.dk/Images/UnknownFile.png", "saved": false}
+    },
+    "requested_candidate_pdf_checks": [
+      {"fileID":25218,"status":200,"content_type":"application/pdf","signature":"%PDF-","bytes":102461,"pages":14,"sha256":"d243e0033184ccab38c155a3dcb6b45d61e1e54961d0be1673c875d51469dd8f","outcome":"duplicate of sj-bad-holdreglement-historisk"},
+      {"fileID":6803,"status":200,"content_type":"application/pdf","signature":"%PDF-","bytes":147992,"pages":14,"sha256":"e04235bff98f23cbc8d6fbbecf32895f54251d77977ba7646983d26ce927c33d","outcome":"new relevant SBKr common hold rules; season not stated"},
+      {"fileID":77458,"status":200,"content_type":"application/pdf","signature":"%PDF-","bytes":223560,"pages":16,"sha256":"d5f0770a30de35e469b4dd99ea9aa8b01846a5730cd960b9e17e5dcd5bb4286b","outcome":"new relevant youth-classification regulation; not the team point table"},
+      {"fileID":82613,"status":200,"content_type":"application/pdf","signature":"%PDF-","bytes":221859,"pages":13,"sha256":"7e7ba24a7bb12bf36cb999e16af9dbe816703dcb7cc0eb2818834855a45b22c3","outcome":"new relevant KBK 2019/20 regulation"},
+      {"fileID":66174,"status":200,"content_type":"application/pdf","signature":"%PDF-","bytes":435476,"pages":5,"sha256":"f8978296966aaf46b7f3b455ddcd212a5176ad23d71b740cffb65d38d54f87cc","outcome":"irrelevant meeting minutes; not archived; personal names not retained"},
+      {"fileID":56207,"status":200,"content_type":"application/pdf","signature":"%PDF-","bytes":156911,"pages":9,"sha256":"c198e8951644d82da4dbf7eec50aaf33958687ec6f3ab194b42921dc2fac5bbe","outcome":"new relevant KBK 2015/16 regulation"},
+      {"fileID":67465,"status":200,"content_type":"application/pdf","signature":"%PDF-","bytes":308891,"pages":11,"sha256":"b4bd0d7f93519a532920ae90785412096d9b5c22319d480789a4141aadd20581","outcome":"new relevant Sjælland senior regulation; date 2023-09-01, season not stated"},
+      {"fileID":77211,"status":200,"content_type":"application/pdf","signature":"%PDF-","bytes":251420,"pages":13,"sha256":"524612cd66147148d5a62ab41781aa7b13d2f57807d8129bbb177102e687581a","outcome":"new relevant West Kredsserie/Serie 1, embedded filename 1819"},
+      {"fileID":77210,"status":200,"content_type":"application/pdf","signature":"%PDF-","bytes":766068,"pages":11,"sha256":"ac3db6cda03d5da5843d1cc9c356013e6ffec553097b0c7fdebce11f3365d610","outcome":"new relevant Fyn senior/veteran/motion regulation; revised 2018-08-01, season not stated"},
+      {"fileID":57569,"status":200,"content_type":"application/pdf","signature":"%PDF-","bytes":298283,"pages":1,"sha256":"0a3ff03d17ce5ba0e43811c68d029ff89660bcf7c6f6cf7a5525a2b78dd3c519","outcome":"new relevant veteran invitation 2016/17; not BD/DGI youth regulation fileID 58918"},
+      {"fileID":75879,"status":200,"content_type":"application/pdf","signature":"%PDF-","bytes":257259,"pages":6,"sha256":"785d14908a99843dd4cee694b33b5e4993424835f203c1148e2abd9de607ada4","outcome":"duplicate of existing Nordjylland 2018/19 manual/public source"},
+      {"fileID":87130,"status":200,"content_type":"application/pdf","signature":"%PDF-","bytes":1162105,"pages":12,"sha256":"2851715f5d264d74214dca6e014ef5a9f8615e18298eb02afe24db9681abed54","outcome":"new relevant multi-region/DGI senior and Senior+ rules; effective 2020-09-10, season not stated"},
+      {"fileID":6122,"status":200,"content_type":"application/pdf","signature":"%PDF-","bytes":906069,"pages":41,"sha256":"2a9482cb9e42db710b0d752d8fb84c9b261013876d6ee34367a7388abd6eacbe","outcome":"genuine handbook for 2009/10, outside target period; not archived"},
+      {"fileID":6125,"status":200,"content_type":"application/pdf","signature":"%PDF-","bytes":1747058,"pages":50,"sha256":"3f83684e839d2717e30bf1b7552f7a0c53c750c38581339a62ea7ae0b9916eff","outcome":"genuine scanned handbook/miscellaneous for 2008/09, outside target period; not archived"},
+      {"fileID":18274,"status":200,"content_type":"application/pdf","signature":"%PDF-","bytes":1000948,"pages":18,"sha256":"c1bdcd39f89c9db548894868194063521982bee8ef76812a6b46d1d1a446ab60","outcome":"individual-tournament invitation, irrelevant to team regulations"},
+      {"fileID":77663,"status":200,"content_type":"application/pdf","signature":"%PDF-","bytes":1143568,"pages":15,"sha256":"bf8c272743bdbfe86f3b431ef631c6547277337b0a2c281dee789f7cda2f4d63","outcome":"new relevant West Kredsserie/Serie 1 PDF; last change 2017-08-01, applicability season not explicit"},
+      {"fileID":83055,"status":200,"content_type":"application/pdf","signature":"%PDF-","bytes":119576,"pages":1,"sha256":"35dc91f69b31ffb9441f80b09b93122cc1b0fb9c224a9f72d7b9773eb3a6ae62","outcome":"individual KMU invitation, irrelevant"},
+      {"fileID":18775,"status":200,"content_type":"application/pdf","signature":"%PDF-","bytes":77674,"pages":14,"sha256":"a64f9fbabe9381955a0f8da577d316c05477c4d01b3c00bff7b5cd5008c2f3f6","outcome":"individual KMU tournament, irrelevant"},
+      {"fileID":43445,"status":200,"content_type":"application/pdf","signature":"%PDF-","bytes":15122,"pages":1,"sha256":"688195b462e974ad546598c7ca534f6f7fa17bd3a4c26049f8caa31a561d837c","outcome":"open individual-tournament invitation, irrelevant"},
+      {"fileID":52029,"status":200,"content_type":"application/pdf","signature":"%PDF-","bytes":105082,"pages":1,"sha256":"45366cdfc8b6233caa6f9c09295e1de23f5df49bf540e04f33afed409f1a9fe7","outcome":"individual KMU invitation, irrelevant"},
+      {"fileID":36472,"status":200,"content_type":"application/pdf","signature":"%PDF-","bytes":897046,"pages":110,"sha256":"a21e7527380a7f8bd96abed33b6429e3d1b93bcbccbdd6cebeacd236b7c38bfe","outcome":"club handbook dated June 2002, outside period and irrelevant"},
+      {"fileID":61065,"status":200,"content_type":"application/pdf","signature":"%PDF-","bytes":92595,"pages":17,"sha256":"c13ac1aa0738c17057074036b346bed8dc8c1eb846e001518bf6deef84d54962","outcome":"individual KMU tournament, irrelevant"}
+    ],
+    "supplemental_download_checks": [
+      {"url":"https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=76460","status":200,"content_type":"application/pdf","bytes":218678,"pages":12,"sha256":"ac969a9e29622ff131ef4ddc274e57dd807ed2a38d81d8dd142738e5184e5089","outcome":"byte-identical duplicate of registered KBK 2018/19, fileID 77338"},
+      {"url":"https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=77461","status":200,"content_type":"application/pdf","bytes":257259,"pages":6,"sha256":"785d14908a99843dd4cee694b33b5e4993424835f203c1148e2abd9de607ada4","outcome":"byte-identical duplicate of registered North Jutland 2018/19 fileID 75879"},
+      {"url":"https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=86810","status":200,"content_type":"application/pdf","bytes":228350,"pages":13,"sha256":"c5d809574e2515507af54703e51fdf7a9e764a8db406f8b7a83f03af8812ea8c","outcome":"new file archived as kbh-rules-2020-21-fileid-86810"},
+      {"url":"https://badmintonpeople.dk/Messages/Inbox/GetFile.aspx?id=7903","status":200,"content_type":"application/pdf","bytes":353519,"pages":10,"sha256":"b29731f0a1b341f44a7676de7f37dea5fa28e176e705db6dbea58abb9faf1fe5","outcome":"duplicate of registered bd-dgi-youth-2016-17-manual; no login prompt"},
+      {"url":"https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=77338","status":200,"content_type":"application/pdf","bytes":218678,"pages":12,"sha256":"ac969a9e29622ff131ef4ddc274e57dd807ed2a38d81d8dd142738e5184e5089","outcome":"duplicate of registered KBK 2018/19 file"}
+    ],
+    "new_source_ids": ["sbkr-holdreglement-historic-6803","kbh-rules-2015-16-fileid-56207","sjaelland-veteran-invitation-2016-17-fileid-57569","sjaelland-senior-reglement-date-2023-fileid-67465","fyn-senior-veteran-reglement-date-2018-fileid-77210","west-series-rules-2018-19-fileid-77211","youth-classification-rules-2017-fileid-77458","west-series-rules-2017-fileid-77663","kbh-rules-2019-20-fileid-82613","west-dgi-senior-rules-date-2020-fileid-87130","kbh-rules-2020-21-fileid-86810"],
+    "web_searches": {
+      "query_count": 20,
+      "result_count_note": "Søgeværktøjet viste ikke samlede resultatantal pr. forespørgsel. Alle result_count-værdier er null; antal synlige kilder/citations er ikke gættet som engine totals.",
+      "queries": [
+        {"query":"site:badmintonpeople.dk \"Reglement for den pointgivende ungdomsholdturnering\" 2010 OR 2011 OR 2012 OR 2013 PDF","season":"2010/11-2013/14","audience":"ungdom","domain_filter":null,"result_count":null,"candidates":[]},
+        {"query":"site:badmintonpeople.dk \"Reglement for ungdomsholdturneringen\" 2014 OR 2015 OR 2016 OR 2017 badminton pdf","season":"2014/15-2017/18","audience":"ungdom","domain_filter":null,"result_count":null,"candidates":["fileID=58918"]},
+        {"query":"site:badmintonpeople.dk \"Turneringsreglement for Badminton Københavns\" hold 2015 2016 PDF","season":"2015/16","audience":"senior/veteran/ungdom","domain_filter":null,"result_count":null,"candidates":["fileID=56207"]},
+        {"query":"site:badmintonpeople.dk \"Kredsserien Vest\" \"Serie 1 Vest\" reglement 2017 OR 2018","season":"2017-2018/19","audience":"senior","domain_filter":null,"result_count":null,"candidates":["fileID=77211","fileID=77663"]},
+        {"query":"site:dgi.dk badminton ungdomsholdturnering indbydelse Sjælland 2018/19 pdf","season":"2018/19","audience":"ungdom-invitation","domain_filter":null,"result_count":null,"candidates":["https://sites.dgi.dk/media/23557/faelles-reglement-ungdomsholdturneringen-2018-2019.pdf"]},
+        {"query":"site:dgi.dk badminton ungdomsholdturnering indbydelse Sydøstjylland 2017/18 pdf","season":"2017/18","audience":"ungdom-invitation","domain_filter":null,"result_count":null,"candidates":[]},
+        {"query":"site:dgi.dk badminton ungdomsholdturnering DGI Fyn indbydelse 2017/18 pdf","season":"2017/18","audience":"ungdom-invitation","domain_filter":null,"result_count":null,"candidates":[]},
+        {"query":"site:dgi.dk badminton ungdomsholdturnering Sjælland 2020/21 pdf","season":"2020/21","audience":"ungdom-invitation","domain_filter":null,"result_count":null,"candidates":["https://sites.dgi.dk/media/34207/indbydelse-ungdomsholdturnering-jylland-2020-21-2.pdf"]},
+        {"query":"site:badmintonpeople.dk \"Holdturneringen veteran\" 2016 2017 reglement badminton","season":"2016/17","audience":"veteran","domain_filter":null,"result_count":null,"candidates":["fileID=57569"]},
+        {"query":"site:badmintonpeople.dk \"seniorhold\" reglement Nordjylland 2018 badminton serie","season":"2018/19","audience":"senior","domain_filter":null,"result_count":null,"candidates":["fileID=75879","fileID=77461"]},
+        {"query":"site:badmintonpeople.dk DH reglement badminton 2020 2021 2022 filetype:pdf","season":"2020/21-2022/23","audience":"senior","domain_filter":null,"result_count":null,"candidates":["fileID=86810"]},
+        {"query":"site:badmintonpeople.dk veteranholdturnering reglement 2020/21 Badminton København","season":"2020/21","audience":"veteran","domain_filter":null,"result_count":null,"candidates":["fileID=86810"]},
+        {"query":"\"Reglement for den pointgivende ungdomsholdturnering\" 2014/15 2015/16","season":"2014/15-2015/16","audience":"ungdom","domain_filter":["badmintonpeople.dk"],"result_count":null,"candidates":[]},
+        {"query":"\"PUH fælles reglement BD-DGI\" badminton 2016/17","season":"2016/17","audience":"ungdom/veteran","domain_filter":["badmintonpeople.dk"],"result_count":null,"candidates":["fileID=57569","fileID=58918"]},
+        {"query":"\"Kredsserie reglement\" badminton 2017/18 2018/19","season":"2017/18-2018/19","audience":"senior","domain_filter":["badmintonpeople.dk"],"result_count":null,"candidates":["fileID=77211","fileID=77663"]},
+        {"query":"\"Turneringsreglement for Badminton Københavns\" 2020/21","season":"2020/21","audience":"senior/veteran/ungdom","domain_filter":["badmintonpeople.dk"],"result_count":null,"candidates":["fileID=86810"]},
+        {"query":"badminton ungdomsholdturnering reglement 2016 2017 fælles BD DGI","season":"2016/17","audience":"ungdom","domain_filter":["dgi.dk"],"result_count":null,"candidates":["fileID=58918"]},
+        {"query":"badminton ungdomsholdturnering indbydelse Sjælland 2020/21","season":"2020/21","audience":"ungdom-invitation","domain_filter":["dgi.dk"],"result_count":null,"candidates":["https://sites.dgi.dk/media/34207/indbydelse-ungdomsholdturnering-jylland-2020-21-2.pdf"]},
+        {"query":"badminton voksenrækker fælles reglement 2023/24 DGI badminton pdf","season":"2023/24","audience":"senior/veteran","domain_filter":["dgi.dk"],"result_count":null,"candidates":["https://www.dgi.dk/media/51208/reglement-faelles-ht-voksenraekker-2023-2024.pdf"]},
+        {"query":"badminton ungdomsholdturnering DGI landsdel 2017/18 indbydelse","season":"2017/18","audience":"ungdom-invitation","domain_filter":["dgi.dk"],"result_count":null,"candidates":[]}
+      ],
+      "earlier_round6_searches": {"count_reported_in_execution_summary":16,"exact_query_strings_in_persisted_log":false,"included_in_verified_query_count":false,"note":"De 16 tidligere søgninger blev ikke rekonstrueret query-for-query i denne log; totalen på 20 omfatter kun forespørgslerne ovenfor."}
+    },
+    "event_page_checks": {
+      "urls": [
+        {"url":"https://www.dgi.dk/badminton/arrangementer/201917105000","outcome":"den gamle sti blev tidligere omdirigeret til et HTTP 404-svar"},
+        {"url":"https://www.dgi.dk/badminton/arrangementer/201810105000","outcome":"webvisning utilgængelig; HTTP-status ikke eksponeret"},
+        {"url":"https://www.dgi.dk/badminton/arrangementer/201816105002","outcome":"webvisning utilgængelig; HTTP-status ikke eksponeret"},
+        {"url":"https://www.dgi.dk/badminton/arrangementer/201805105001","outcome":"webvisning utilgængelig; HTTP-status ikke eksponeret"},
+        {"url":"https://www.dgi.dk/arrangementer/202117105000","outcome":"webvisning utilgængelig; HTTP-status ikke eksponeret"},
+        {"url":"https://www.dgi.dk/badminton/arrangementer/202117105000","outcome":"webvisning utilgængelig; HTTP-status ikke eksponeret"},
+        {"url":"https://www.dgi.dk/arrangementer/202617105000","outcome":"synlig eventtekst; ingen downloadbare vedhæftnings-URL'er eksponeret i læsbar visning"}
+      ],
+      "direct_dgi_file_downloads": [
+        {"url":"https://sites.dgi.dk/media/34207/indbydelse-ungdomsholdturnering-jylland-2020-21-2.pdf","status":502,"content_type":"text/html","bytes":183,"signature":"<html","outcome":"not a valid PDF; not saved"},
+        {"url":"https://sites.dgi.dk/media/51208/reglement-faelles-ht-voksenraekker-2023-2024.pdf","status":502,"content_type":"text/html","bytes":183,"signature":"<html","outcome":"not a valid PDF; not saved; search index separately exposes PDF text"}
+      ],
+      "anonymous_sharepoint_links_returned_401_in_prior_check": ["https://dgidk.sharepoint.com/:b:/s/SPGR-000001015/IQCHx6MbzkXGQoAuqVGR02xhARaSrJly-hwJwpuBTlGWNUg?e=oollgp","https://dgidk.sharepoint.com/:b:/s/SPGR-000001015/IQACSb4rI9bvSJBg9S8GwGbQAdNzXkkPsYg8diCGHOyFQWE?e=yUtfwx","https://dgidk.sharepoint.com/:b:/s/SPGR-000001015/IQAhfYAuXdgJQadOumEAiZdMAdh0vEEfFoGDBW9W9mZy7HY?e=NxuTZh"]
+    },
+    "site_tree": {
+      "starting_pages": ["https://www.badmintonpeople.dk/cms/?cmsid=824&pageid=26170","https://www.badmintonpeople.dk/cms/?cmsid=824&pageid=26082","https://www.badmintonpeople.dk/cms/?cmsid=824&pageid=26093","https://www.badmintonpeople.dk/cms/?cmsid=824&pageid=26530","https://www.badmintonpeople.dk/cms/?cmsid=824&pageid=26536","https://www.badmintonpeople.dk/cms/?cmsid=824&pageid=26537","https://www.badmintonpeople.dk/cms/?cmsid=877&pageid=29501","https://www.badmintonpeople.dk/cms/?cmsid=877&pageid=29570","https://www.badmintonpeople.dk/cms/?cmsid=877&pageid=29086"],
+      "outcome": "Følgning til fuld dybde 3 på alle region- og udvalgssider blev ikke gennemført. Holdturneringsregelsiden og København-kredsens holdturneringsside synliggjorde reglementer; flere nye fileID-kandidater blev verificeret separat. Dette er en delvis gennemgang, ikke et komplet sidetræ.",
+      "six_variant_matrix_complete": false
+    },
+    "scope_limitations": ["Seks forespørgselsvarianter pr. hver sæson×målgruppe×region/landsdel blev ikke gennemført.","Ingen præcis matrixcelle erklæres udtømmende søgt eller fraværende på basis af runde 6 alene.","Ingen nye nationale ungdoms-pointværdier blev tilføjet.","GraphQL og BadmintonPlayer-resultater fra runde 5 gælder uændret; runde 6 gav ingen ny dokumentrute via disse systemer."],
+    "conclusion": "11 nye relevante offentlige PDF'er blev registreret; 6 fejl-PNG'er blev ikke gemt. Registeret er nu 53 filer, 19,388,799 bytes og 567 verificerede sider. Søgedækningen er stadig punktvis og ikke fuld per season/audience/region-matrix."
   }
 }

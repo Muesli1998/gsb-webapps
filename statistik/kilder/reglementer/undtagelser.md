@@ -16,7 +16,7 @@ Dette katalog beskriver forskelle i de versioner, der faktisk blev hentet. Det e
 | 2012/13 eller 2013/14, Sjælland (kildemodstrid) | Veteran | PDF-titlen siger 2013/2014, mens brødteksten inviterer til veteranturneringen 2012/2013. Dokumentet beskriver 35+, 40+, 50+, 60+ og forskellige holdtyper; sæsonen kan ikke fastslås ud fra denne fil. | sj-veteran-2013-14-season-conflict, PDF s. 1 |
 | 2018/19, Badminton København | Lokal turneringsadministration | Arkiveret reglement identificerer sig på forsiden som version 2018-1 for holdturneringen 2018-2019. | kbk-rules-2018-19, PDF s. 1 |
 | 2026/27, Sjælland | Veteran | Invitation til Holdturneringen Veteran 2026/2027; dette er en invitation, ikke et fuldt reglement. | sjaelland-veteran-invitation-2026-27, PDF s. 1 |
-| 2018/19, fælles BD/DGI | Ungdomsskala | Skema 1 viser klassifikationspoint (bl.a. U9 D/C, U11-U17/U19 A-M), og skema 1A viser 4+2/4+3-formater. Skalaen er ikke direkte sammenlignelig med de senere pointlofter. | bd-dgi-youth-2018-19 s. 5-6 |
+| 2018/19, fælles BD/DGI | Ungdomsskala | Skema 1 viser klassifikationspoint (bl.a. U9 D/C, U11-U17/U19 A-M), og skema 1A viser 4+2/4+3-formater. Skalaen er ikke direkte sammenlignelig med de senere pointlofter. Runde 5 bekræftede, at den manuelt leverede kopi er byte-identisk med denne kilde; ikke en anden udgave. | bd-dgi-youth-2018-19 s. 5-6 |
 | 2022/23, fælles BD/DGI | Ungdomsskala | Skema 1 og 1A er nu arkiveret med alders-/holdtypeværdier. Niveaulabels indgår ikke i maskindata, hvor de ikke kunne aflæses sikkert fra skannede tabeller. | bd-youth-2022-23 s. 5-6 |
 | 2026/27, DGI/Badminton Sjælland | UGE 38 | Separat ekstraordinær 2+2-turnering for U13-U19 i uge 38. Vinder får DMU-plads; hvis flere puljer i rækken, finale mellem puljevindere. Ikke en almindelig række i Badminton København. | dgi-uge38-2026-27 s. 1 |
 | 2026/27, DGI/Badminton Sjælland | Lokalt ungdomsudbud og pointsystem | Invitationen oplister holdtyper og spillerunder, beskriver 3×15 fra 1. juli 2026, og placerer DMU Hold 24.-25. april 2027. Det dokumenterer kun denne invitation/region og sæson. | dgi-bsj-invitation-2026-27 s. 1-2 |
@@ -34,13 +34,29 @@ Der er ingen dokumenteret regel i dette arkiv for hver manglende sæson/region. 
 
 Samme poster med sæson, område, kilde-id og sidetal ligger i [undtagelser.json](undtagelser.json).
 
+### Runde 6 — lokale versioner og dokumentafgrænsning
+
+| Sæson/dato og område | Dokumenteret forhold | Kilde |
+|---|---|---|
+| 2015/16, Badminton København | Version 2015.1 dækker lokale holdturneringer. Dokumentet siger, at ungdomsreglerne er erstattet af det pointgivende nationale ungdomsreglement; det lokale dokument leverer ikke en ny ungdoms-pointskala. | kbh-rules-2015-16-fileid-56207, s. 1, 9 |
+| 2016/17, Sjælland/DGI-områder | FileID 57569 er en en-sides veteraninvitation, ikke det fælles BD/DGI-ungdomsreglement fileID 58918. PDF-hashene og titlerne er forskellige; 57569 henviser til et særskilt veteranreglement. | sjaelland-veteran-invitation-2016-17-fileid-57569, s. 1; bd-dgi-youth-2016-17-manual |
+| 2017/18, national klassifikation | Ungdomsklassifikationsreglementet er opdateret 2017-08-01 og beskriver en overgang fra 2016/17 til 2017/18; det er ikke holdturneringens pointtabel. | youth-classification-rules-2017-fileid-77458, s. 1-16 |
+| 2018/19, Fyn | Senior-, veteran- og motionsreglement revideret 2018-08-01; anvendelsessæson ikke nævnt. | fyn-senior-veteran-reglement-date-2018-fileid-77210, s. 1-11 |
+| 2017 og 2018/19, fire vestlige kredse | To separate PDF-udgaver af Kredsserien Vest/Serie 1 Vest. 2018/19-filen har indlejret Word-filnavn “1819”; 2017-filen angiver kun seneste ændring 2017-08-01, ikke en hel gældende sæson. | west-series-rules-2018-19-fileid-77211, s. 1-13; west-series-rules-2017-fileid-77663, s. 1-15 |
+| 2019/20, Badminton København | Lokal version 2019-1 af holdturneringsreglementet. | kbh-rules-2019-20-fileid-82613, s. 1-13 |
+| 2020/21, Badminton København | Lokal version 2020-0, dateret 21.08.2020; dokumentet nævner ungdom, senior og senior+ og henviser ungdom til det nationale regelsæt. | kbh-rules-2020-21-fileid-86810, s. 1-13 |
+| 2020-09-10, DGI-/vestlige kredse | Fællesreglement for Serie 2-4, Senior Motion og Senior+. Datoen er ikke omsat til en sæson. | west-dgi-senior-rules-date-2020-fileid-87130, s. 1-12 |
+| 2023-09-01, Sjælland/DGI-områder | Sjællands seniorreglementets dokumentdato er 1. september 2023; sæson er ikke angivet. | sjaelland-senior-reglement-date-2023-fileid-67465, s. 1-11 |
+
+FileID 76460 (København 2018/19) og fileID 77461 (Nordjylland 2018/19) blev kontrolleret efter søgeresultater og matchede byte-for-byte allerede registrerede filer. De opretter ingen nye regelversioner. Registerstatus efter runde 6: 53 filer; fortsat punktvis dækning, ikke en komplet historisk år-for-år-samling.
+
 ### Runde 3 — historiske tilføjelser
 
 | Sæson/område | Emne | Dokumenteret forhold | Kilde |
 |---|---|---|---|
 | 2016/17, fælles BD/DGI | Ungdomsskala | Rå historiske klassifikationspoint er transskriberet; de er ikke omregnet til senere niveaupoint. | bd-dgi-youth-2016-17-manual s. 5 |
 | 2020/21, fælles BD/DGI | Ungdom | Reglement fundet; skemaets tal mangler endnu i den maskinlæsbare transskription. | bd-dgi-youth-2020-21 s. 3-5 |
-| 2013/14, Badminton Sjælland (tidl. SBKr.) | Ungdom | Invitationen henviser til særskilte SBKr.-regler; den er ikke selv regelsættet. | sj-youth-invitation-2013-14 s. 1-4 |
+| 2013/14, Badminton Sjælland (tidl. SBKr.) | Ungdom | Invitationen henviser til særskilte SBKr.-regler; den er ikke selv regelsættet. Runde 5's manuelle kopi er byte-identisk med den allerede registrerede fil. | sj-youth-invitation-2013-14 s. 1-4 |
 | 2018/19, Badminton Nordjylland | Senior | Serie 2-4; 4 spillere single og 4 spillere double. | nordjylland-senior-2018-19-manual s. 1-6 |
 
 Registeret har 42 PDF'er efter runde 4; dette er fortsat punktvis kildedækning, ikke en komplet historisk regelsamling.

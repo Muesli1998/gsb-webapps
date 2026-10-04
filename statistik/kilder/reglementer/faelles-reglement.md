@@ -58,13 +58,27 @@ WebSearch blev kørt 100 gange: 48 nationale sæson/målgruppe-søgninger, 24 br
 
 Runden tilføjer det nationale ungdomsreglement for 2016/17 og 2020/21, Sjællands ungdomsinvitation 2013/14 og Nordjylland seniorreglement 2018/19. En DGI Jylland ungdomsinvitation for 2020/21 gav HTTP 502; Badminton Fyns senior/veteran-link gav HTTP 200 men PNG-fejlbillede, ikke PDF. Se `mangler.md`.
 
+### Runde 5 — dubletkontrol af ungdomskilder
+
+De to manuelt leverede PDF'er blev SHA-256-kontrolleret mod registeret. Sjællandsinvitationen 2013/14 er identisk med `sj-youth-invitation-2013-14`; den henviser til separate SBKr.-regler og ændrer derfor ikke fællesregler eller pointtabeller. Ungdomsreglementet med samarbejdsområder 2018/2019 og lokalt 4+3-tillæg er byte-identisk med `bd-dgi-youth-2018-19` (fileID 77454), ikke en anden udgave; skemaerne i `regler-ungdom.json` gælder fortsat uden nye værdier.
+
 For U13 i 2016/17 viser skemaet 4 spillere: Dx 29/8/8, D 35/11/8, C 48/15/11, B 60/18/15, A 72/21/18 og M 85/24/21 (holdmaksimum/bedste/næstbedste); 4 piger C 35/11/8 og D 23/8/5; 4+2 B 78/18/14, A 96/21/17 og M 114/24/21 (holdmaksimum/bedste dreng/bedste pige). Tallene er gengivet i kildens historiske klassifikationspoint. Ingen numerisk 4+3-grænse fremgår af skemaet. Kilde: bd-dgi-youth-2016-17-manual, s. 5.
 
 ## Uafklaret kildegrundlag
 
-- Ingen fuld, sammenhængende officiel samling fra 2010 til i dag blev fundet. Registeret indeholder nu 42 PDF'er fra enkelte år/versioner, i alt 14.479.792 bytes og 439 sider (sidetal summeret fra den verificerede runde 3-total og de fire nye PDF'er). Se [mangler.md](mangler.md) for huller og ikke-hentede kandidater.
+- Ingen fuld, sammenhængende officiel samling fra 2010 til i dag blev fundet. Registeret indeholder efter runde 6 53 PDF'er fra enkelte år/versioner, i alt 19.388.799 bytes og 567 sider (kontrolleret mod de lokale PDF-filer). Se [mangler.md](mangler.md) for huller og ikke-hentede kandidater.
 - 2025/26 ungdom findes i flere revisioner. 8. oktober-versionen er seneste hentede revision i dette arkiv; marts 2025 er en revision af 2024/25-reglementet. Versionerne beholdes hver for sig.
 - UGE 38 og de to DGI/Badminton Sjælland-bilag for 2026/27 er nu registreret fra Christoffers lokale filoverdragelse. De tre oprindelige SharePoint-links gav HTTP 401 anonymt; bilagene er læst og er selvstændige kilder. UGE 38 er en separat ekstraordinær 2+2-turnering for U13-U19 i uge 38, ikke en almindelig regional række. Vinderen af hver række får tilbudt DMU-plads; ved flere puljer mødes puljevinderne i finale (Uge 38 invitation s. 1). Den regionale invitation angiver holdtyper, runder, 3×15-systemet fra 1. juli 2026 og DMU Hold 24.-25. april 2027 (s. 1-2). Holdlederfolderen er vejledende og henviser til fællesreglementet; den omtaler bl.a. §14-15 og 3×15 (s. 2).
+
+### Runde 6 — BadmintonPeople-kandidater og historiske udgaver
+
+Runde 6 tilføjede 11 verificerede PDF'er. Fundene omfatter lokale København-reglementer for 2015/16, 2019/20 og 2020/21; to udgaver af Kredsserien Vest/Serie 1 Vest (2017 og 2018/19); et historisk fællesbestemmelsesreglement fra SBKr. uden angivet sæson; Fyns senior/veteran/motionsreglement revideret 2018-08-01 uden fastlagt sæson; Sjællands seniorreglement dateret 2023-09-01 uden fastlagt sæson; et flerkreds-/DGI-reglement gældende fra 2020-09-10 uden fastlagt sæson; Sjællands veteraninvitation 2016/17; og ungdomsklassifikationsreglementet opdateret 2017-08-01.
+
+BadmintonPeople fileID 57569 er efter læsning af PDF'ens første side en veteraninvitation for 2016/17, ikke det fælles BD/DGI-ungdomsreglement, selv om søgeresultat/metadata også kalder den “PUH fælles reglement BD-DGI 250216”. Den er ikke en udgave af fileID 58918: SHA-256 er forskellig, titel og målgruppe i selve dokumentet er forskellige, og 57569 er én side mod 58918's 10 sider. Der udledes ingen veteranregel fra invitationen; den henviser til et separat reglement.
+
+FileID 77458 handler om ungdomsklassifikation og beskriver overgangen 2016/17-2017/18, men er ikke holdturneringens skema 1/1A. Derfor blev ingen pointværdier tilføjet i `regler-ungdom.json`. Københavns lokale reglement 2020/21 siger, at der årligt udskrives ungdoms-, senior- og senior+-holdturnering; for ungdom henviser det til det nationale reglement. Det udvider den lokale kildedækning, men ændrer ikke den nationale pointskala.
+
+Filen fra fileID 76460 (2018/19 København) er byte-identisk med den allerede registrerede København-version (fileID 77338); fileID 77461 er byte-identisk med det allerede registrerede Nordjylland 2018/19-reglement (fileID 75879). De er logget som dubletter, ikke som nye filer. Ingen ny pointskala eller national ungdomsregel blev fundet i de 11 nye PDF'er.
 
 ## Runde 2 — nye kilder og sæsonversioner
 
