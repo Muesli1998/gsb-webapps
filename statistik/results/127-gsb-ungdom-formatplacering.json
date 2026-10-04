@@ -104,6 +104,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "aktivt GSB-hold, format uplaceret",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": null,
       "highest_format": {
         "format": "4+3",
@@ -121,12 +123,7 @@
         {
           "normalized_club_name": "Greve",
           "raw_team_names": [
-            "Greve 1"
-          ]
-        },
-        {
-          "normalized_club_name": "Greve 1 *alders disp.",
-          "raw_team_names": [
+            "Greve 1",
             "Greve 1 *alders disp."
           ]
         },
@@ -179,6 +176,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 11,
+        "changed_records": 7,
+        "distinct_raw_names": 10,
+        "distinct_raw_names_changed": 6
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -286,6 +289,8 @@
         "trukket": 1
       },
       "gsb_placement_status": "aktivt GSB-hold, format uplaceret",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": null,
       "highest_format": {
         "format": "4+3",
@@ -383,6 +388,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 23,
+        "changed_records": 9,
+        "distinct_raw_names": 14,
+        "distinct_raw_names_changed": 7
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -490,6 +501,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "aktivt GSB-hold, format uplaceret",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": null,
       "highest_format": {
         "format": "4+3",
@@ -620,6 +633,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 34,
+        "changed_records": 16,
+        "distinct_raw_names": 21,
+        "distinct_raw_names_changed": 12
+      },
       "withdrawn_teams_in_highest_format_excluded": [
         {
           "raw_team_name": "Farum 1 *trukket",
@@ -723,6 +742,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "ingen aktivt GSB-hold (kun udgået/trukket)",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": null,
       "highest_format": {
         "format": "4+3",
@@ -741,7 +762,7 @@
       ],
       "highest_format_clubs": [
         {
-          "normalized_club_name": "abc Aalborg UDG&#197;ET",
+          "normalized_club_name": "abc Aalborg",
           "raw_team_names": [
             "abc Aalborg UDG&#197;ET"
           ]
@@ -826,6 +847,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 25,
+        "changed_records": 9,
+        "distinct_raw_names": 15,
+        "distinct_raw_names_changed": 7
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -887,6 +914,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "Ikke-kanonisk signatur: S6/D3",
         "tier": 3,
@@ -907,12 +936,6 @@
         "2012|3|1831"
       ],
       "highest_format_clubs": [
-        {
-          "normalized_club_name": "&#216;lstykke",
-          "raw_team_names": [
-            "&#216;lstykke"
-          ]
-        },
         {
           "normalized_club_name": "Greve",
           "raw_team_names": [
@@ -952,12 +975,24 @@
           ]
         },
         {
+          "normalized_club_name": "Ølstykke",
+          "raw_team_names": [
+            "&#216;lstykke"
+          ]
+        },
+        {
           "normalized_club_name": "Aarhus AB",
           "raw_team_names": [
             "Aarhus AB"
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 12,
+        "changed_records": 4,
+        "distinct_raw_names": 10,
+        "distinct_raw_names_changed": 4
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -1027,6 +1062,8 @@
         "trukket": 1
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "Ikke-kanonisk signatur: MD1/S4/D3",
         "tier": 3,
@@ -1157,6 +1194,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 20,
+        "changed_records": 0,
+        "distinct_raw_names": 18,
+        "distinct_raw_names_changed": 0
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -1238,6 +1281,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "Ikke-kanonisk signatur: MD1/S4/D3",
         "tier": 3,
@@ -1425,6 +1470,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 40,
+        "changed_records": 0,
+        "distinct_raw_names": 27,
+        "distinct_raw_names_changed": 0
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -1522,6 +1573,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "Ikke-kanonisk signatur: MD1/S4/D3",
         "tier": 3,
@@ -1668,6 +1721,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 33,
+        "changed_records": 3,
+        "distinct_raw_names": 23,
+        "distinct_raw_names_changed": 3
+      },
       "withdrawn_teams_in_highest_format_excluded": [
         {
           "raw_team_name": "Aalborg Triton udgået",
@@ -1744,6 +1803,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "Ikke-kanonisk signatur: MD1/S4/D3",
         "tier": 3,
@@ -1838,6 +1899,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 30,
+        "changed_records": 1,
+        "distinct_raw_names": 12,
+        "distinct_raw_names_changed": 1
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -1923,6 +1990,8 @@
         "trukket": 1
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4+2",
         "tier": 1,
@@ -2080,6 +2149,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 69,
+        "changed_records": 10,
+        "distinct_raw_names": 24,
+        "distinct_raw_names_changed": 5
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -2163,6 +2238,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -2336,6 +2413,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 76,
+        "changed_records": 11,
+        "distinct_raw_names": 28,
+        "distinct_raw_names_changed": 7
+      },
       "withdrawn_teams_in_highest_format_excluded": [
         {
           "raw_team_name": "Hillerød *Trukket",
@@ -2442,6 +2525,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "Ikke-kanonisk signatur: MD1/S4/D3",
         "tier": 3,
@@ -2606,6 +2691,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 59,
+        "changed_records": 0,
+        "distinct_raw_names": 22,
+        "distinct_raw_names_changed": 0
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -2685,6 +2776,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -2817,6 +2910,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 53,
+        "changed_records": 7,
+        "distinct_raw_names": 22,
+        "distinct_raw_names_changed": 7
+      },
       "withdrawn_teams_in_highest_format_excluded": [
         {
           "raw_team_name": "Drive udgået",
@@ -2930,6 +3029,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4+2",
         "tier": 1,
@@ -3040,6 +3141,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 30,
+        "changed_records": 6,
+        "distinct_raw_names": 18,
+        "distinct_raw_names_changed": 6
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -3125,6 +3232,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4+2",
         "tier": 1,
@@ -3288,6 +3397,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 63,
+        "changed_records": 22,
+        "distinct_raw_names": 33,
+        "distinct_raw_names_changed": 16
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -3371,6 +3486,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "ingen aktivt GSB-hold (kun udgået/trukket)",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": null,
       "highest_format": {
         "format": "4+3",
@@ -3525,6 +3642,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 49,
+        "changed_records": 9,
+        "distinct_raw_names": 25,
+        "distinct_raw_names_changed": 7
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -3598,6 +3721,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -3745,6 +3870,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 32,
+        "changed_records": 1,
+        "distinct_raw_names": 21,
+        "distinct_raw_names_changed": 1
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -3826,6 +3957,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -3939,6 +4072,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 40,
+        "changed_records": 0,
+        "distinct_raw_names": 13,
+        "distinct_raw_names_changed": 0
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -4024,6 +4163,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4+2",
         "tier": 1,
@@ -4152,6 +4293,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 44,
+        "changed_records": 4,
+        "distinct_raw_names": 17,
+        "distinct_raw_names_changed": 4
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -4223,6 +4370,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "ingen aktivt GSB-hold (kun udgået/trukket)",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": null,
       "highest_format": {
         "format": "4+3",
@@ -4302,6 +4451,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 22,
+        "changed_records": 2,
+        "distinct_raw_names": 12,
+        "distinct_raw_names_changed": 2
+      },
       "withdrawn_teams_in_highest_format_excluded": [
         {
           "raw_team_name": "KBK Kbh. udgået",
@@ -4376,6 +4531,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -4497,6 +4654,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 25,
+        "changed_records": 15,
+        "distinct_raw_names": 23,
+        "distinct_raw_names_changed": 13
+      },
       "withdrawn_teams_in_highest_format_excluded": [
         {
           "raw_team_name": "KBK Kbh. udgået",
@@ -4619,6 +4782,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -4769,6 +4934,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 52,
+        "changed_records": 44,
+        "distinct_raw_names": 24,
+        "distinct_raw_names_changed": 16
+      },
       "withdrawn_teams_in_highest_format_excluded": [
         {
           "raw_team_name": "Frederiksberg udgået",
@@ -4850,6 +5021,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4+2",
         "tier": 1,
@@ -4880,12 +5053,6 @@
         "2016|5|8026"
       ],
       "highest_format_clubs": [
-        {
-          "normalized_club_name": "&#216;lstykke-Herlev/Hjorten",
-          "raw_team_names": [
-            "&#216;lstykke-Herlev/Hjorten 1"
-          ]
-        },
         {
           "normalized_club_name": "abc Aalborg",
           "raw_team_names": [
@@ -4993,8 +5160,20 @@
             "Værløse",
             "Værløse 1"
           ]
+        },
+        {
+          "normalized_club_name": "Ølstykke-Herlev/Hjorten",
+          "raw_team_names": [
+            "&#216;lstykke-Herlev/Hjorten 1"
+          ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 52,
+        "changed_records": 40,
+        "distinct_raw_names": 29,
+        "distinct_raw_names_changed": 17
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -5092,6 +5271,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -5246,6 +5427,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 44,
+        "changed_records": 36,
+        "distinct_raw_names": 25,
+        "distinct_raw_names_changed": 17
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -5315,6 +5502,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -5480,6 +5669,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 66,
+        "changed_records": 66,
+        "distinct_raw_names": 35,
+        "distinct_raw_names_changed": 35
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -5549,6 +5744,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -5598,6 +5795,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 5,
+        "changed_records": 0,
+        "distinct_raw_names": 5,
+        "distinct_raw_names_changed": 0
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -5676,6 +5879,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -5805,6 +6010,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 45,
+        "changed_records": 38,
+        "distinct_raw_names": 24,
+        "distinct_raw_names_changed": 17
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -5901,6 +6112,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -6027,6 +6240,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 40,
+        "changed_records": 38,
+        "distinct_raw_names": 18,
+        "distinct_raw_names_changed": 16
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -6148,6 +6367,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "i højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4+2",
         "tier": 1,
@@ -6182,13 +6403,6 @@
         "2017|18|9592"
       ],
       "highest_format_clubs": [
-        {
-          "normalized_club_name": "&#216;lstykke",
-          "raw_team_names": [
-            "&#216;lstykke",
-            "&#216;lstykke 1"
-          ]
-        },
         {
           "normalized_club_name": "Badminton Roskilde",
           "raw_team_names": [
@@ -6382,8 +6596,21 @@
           "raw_team_names": [
             "Vorup FB 1"
           ]
+        },
+        {
+          "normalized_club_name": "Ølstykke",
+          "raw_team_names": [
+            "&#216;lstykke",
+            "&#216;lstykke 1"
+          ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 71,
+        "changed_records": 70,
+        "distinct_raw_names": 46,
+        "distinct_raw_names_changed": 45
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -6466,6 +6693,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -6521,6 +6750,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 6,
+        "changed_records": 0,
+        "distinct_raw_names": 6,
+        "distinct_raw_names_changed": 0
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -6616,6 +6851,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -6709,6 +6946,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 27,
+        "changed_records": 24,
+        "distinct_raw_names": 13,
+        "distinct_raw_names_changed": 10
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -6788,6 +7031,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -6935,6 +7180,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 37,
+        "changed_records": 29,
+        "distinct_raw_names": 25,
+        "distinct_raw_names_changed": 17
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -7020,6 +7271,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -7243,6 +7496,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 59,
+        "changed_records": 49,
+        "distinct_raw_names": 46,
+        "distinct_raw_names_changed": 37
+      },
       "withdrawn_teams_in_highest_format_excluded": [
         {
           "raw_team_name": "Team Broby/Næsby trukket",
@@ -7336,6 +7595,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -7385,6 +7646,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 5,
+        "changed_records": 0,
+        "distinct_raw_names": 5,
+        "distinct_raw_names_changed": 0
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -7462,6 +7729,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -7571,6 +7840,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 19,
+        "changed_records": 19,
+        "distinct_raw_names": 19,
+        "distinct_raw_names_changed": 19
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -7665,6 +7940,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -7770,6 +8047,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 15,
+        "changed_records": 15,
+        "distinct_raw_names": 15,
+        "distinct_raw_names_changed": 15
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -7847,7 +8130,9 @@
         "udgået": 0,
         "trukket": 0
       },
-      "gsb_placement_status": "i højeste format",
+      "gsb_placement_status": "kun ét format findes",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -8047,6 +8332,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 42,
+        "changed_records": 42,
+        "distinct_raw_names": 39,
+        "distinct_raw_names_changed": 39
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -8120,6 +8411,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -8169,6 +8462,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 5,
+        "changed_records": 0,
+        "distinct_raw_names": 5,
+        "distinct_raw_names_changed": 0
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -8257,6 +8556,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -8368,6 +8669,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 30,
+        "changed_records": 30,
+        "distinct_raw_names": 17,
+        "distinct_raw_names_changed": 17
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -8460,6 +8767,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 piger",
         "tier": 1,
@@ -8575,6 +8884,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 28,
+        "changed_records": 28,
+        "distinct_raw_names": 16,
+        "distinct_raw_names_changed": 16
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -8686,7 +9001,9 @@
         "udgået": 0,
         "trukket": 0
       },
-      "gsb_placement_status": "i højeste format",
+      "gsb_placement_status": "kun ét format findes",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -9001,6 +9318,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 78,
+        "changed_records": 71,
+        "distinct_raw_names": 55,
+        "distinct_raw_names_changed": 48
+      },
       "withdrawn_teams_in_highest_format_excluded": [
         {
           "raw_team_name": "Klarup Badminton 1 *TRUKKET",
@@ -9094,6 +9417,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -9143,6 +9468,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 5,
+        "changed_records": 0,
+        "distinct_raw_names": 5,
+        "distinct_raw_names_changed": 0
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -9248,6 +9579,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 piger",
         "tier": 1,
@@ -9378,6 +9711,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 34,
+        "changed_records": 30,
+        "distinct_raw_names": 17,
+        "distinct_raw_names_changed": 13
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -9537,6 +9876,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 piger",
         "tier": 1,
@@ -9651,6 +9992,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 35,
+        "changed_records": 34,
+        "distinct_raw_names": 17,
+        "distinct_raw_names_changed": 16
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -9788,7 +10135,9 @@
         "udgået": 0,
         "trukket": 0
       },
-      "gsb_placement_status": "i højeste format",
+      "gsb_placement_status": "kun ét format findes",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -10098,6 +10447,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 87,
+        "changed_records": 85,
+        "distinct_raw_names": 62,
+        "distinct_raw_names_changed": 60
+      },
       "withdrawn_teams_in_highest_format_excluded": [
         {
           "raw_team_name": "Badminton Esbjerg 1 \"Trukket\"",
@@ -10172,6 +10527,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "2+2",
         "tier": 1,
@@ -10215,6 +10572,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 4,
+        "changed_records": 0,
+        "distinct_raw_names": 4,
+        "distinct_raw_names_changed": 0
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -10397,6 +10760,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -10514,6 +10879,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 32,
+        "changed_records": 25,
+        "distinct_raw_names": 19,
+        "distinct_raw_names_changed": 12
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -10660,6 +11031,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 piger",
         "tier": 1,
@@ -10779,6 +11152,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 39,
+        "changed_records": 14,
+        "distinct_raw_names": 25,
+        "distinct_raw_names_changed": 14
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -10959,6 +11338,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -11144,6 +11525,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 50,
+        "changed_records": 50,
+        "distinct_raw_names": 39,
+        "distinct_raw_names_changed": 39
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -11245,7 +11632,9 @@
         "udgået": 0,
         "trukket": 0
       },
-      "gsb_placement_status": "i højeste format",
+      "gsb_placement_status": "kun ét format findes",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -11285,12 +11674,6 @@
         "2023|2|16449"
       ],
       "highest_format_clubs": [
-        {
-          "normalized_club_name": "&#216;lstykke",
-          "raw_team_names": [
-            "&#216;lstykke 1"
-          ]
-        },
         {
           "normalized_club_name": "Badminton Esbjerg",
           "raw_team_names": [
@@ -11573,6 +11956,12 @@
           ]
         },
         {
+          "normalized_club_name": "Ølstykke",
+          "raw_team_names": [
+            "&#216;lstykke 1"
+          ]
+        },
+        {
           "normalized_club_name": "Aalborg Triton",
           "raw_team_names": [
             "Aalborg Triton 1",
@@ -11587,6 +11976,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 98,
+        "changed_records": 89,
+        "distinct_raw_names": 66,
+        "distinct_raw_names_changed": 57
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -11662,6 +12057,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "2+2",
         "tier": 1,
@@ -11705,6 +12102,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 4,
+        "changed_records": 0,
+        "distinct_raw_names": 4,
+        "distinct_raw_names_changed": 0
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -11896,6 +12299,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 piger",
         "tier": 1,
@@ -12038,6 +12443,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 33,
+        "changed_records": 26,
+        "distinct_raw_names": 21,
+        "distinct_raw_names_changed": 14
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -12167,6 +12578,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "2+2",
         "tier": 1,
@@ -12267,15 +12680,15 @@
           ]
         },
         {
-          "normalized_club_name": "Team Sydjylland &#216;st",
-          "raw_team_names": [
-            "Team Sydjylland &#216;st 1"
-          ]
-        },
-        {
           "normalized_club_name": "Team Sydjylland Vest",
           "raw_team_names": [
             "Team Sydjylland Vest 1"
+          ]
+        },
+        {
+          "normalized_club_name": "Team Sydjylland Øst",
+          "raw_team_names": [
+            "Team Sydjylland &#216;st 1"
           ]
         },
         {
@@ -12297,6 +12710,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 31,
+        "changed_records": 25,
+        "distinct_raw_names": 19,
+        "distinct_raw_names_changed": 13
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -12445,6 +12864,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -12657,6 +13078,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 81,
+        "changed_records": 79,
+        "distinct_raw_names": 44,
+        "distinct_raw_names_changed": 42
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -12780,7 +13207,9 @@
         "udgået": 0,
         "trukket": 0
       },
-      "gsb_placement_status": "i højeste format",
+      "gsb_placement_status": "kun ét format findes",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -13107,6 +13536,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 109,
+        "changed_records": 109,
+        "distinct_raw_names": 62,
+        "distinct_raw_names_changed": 62
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -13208,6 +13643,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 piger",
         "tier": 1,
@@ -13257,6 +13694,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 5,
+        "changed_records": 0,
+        "distinct_raw_names": 5,
+        "distinct_raw_names_changed": 0
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -13435,6 +13878,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "2+2",
         "tier": 1,
@@ -13560,6 +14005,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 34,
+        "changed_records": 29,
+        "distinct_raw_names": 17,
+        "distinct_raw_names_changed": 12
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -13827,6 +14278,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "2+2",
         "tier": 1,
@@ -13975,6 +14428,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 44,
+        "changed_records": 28,
+        "distinct_raw_names": 28,
+        "distinct_raw_names_changed": 14
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -14153,6 +14612,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 spillere",
         "tier": 1,
@@ -14377,6 +14838,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 94,
+        "changed_records": 84,
+        "distinct_raw_names": 50,
+        "distinct_raw_names_changed": 44
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -14467,7 +14934,9 @@
         "udgået": 0,
         "trukket": 0
       },
-      "gsb_placement_status": "i højeste format",
+      "gsb_placement_status": "kun ét format findes",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "3 spillere",
         "tier": 1,
@@ -14517,12 +14986,6 @@
         "2025|2|18524"
       ],
       "highest_format_clubs": [
-        {
-          "normalized_club_name": "&#216;lstykke",
-          "raw_team_names": [
-            "&#216;lstykke 1"
-          ]
-        },
         {
           "normalized_club_name": "Badminton Esbjerg",
           "raw_team_names": [
@@ -14989,6 +15452,12 @@
           ]
         },
         {
+          "normalized_club_name": "Ølstykke",
+          "raw_team_names": [
+            "&#216;lstykke 1"
+          ]
+        },
+        {
           "normalized_club_name": "Aalborg Triton",
           "raw_team_names": [
             "Aalborg Triton 1",
@@ -15010,6 +15479,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 196,
+        "changed_records": 188,
+        "distinct_raw_names": 147,
+        "distinct_raw_names_changed": 139
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -15215,6 +15690,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "4 piger",
         "tier": 1,
@@ -15264,6 +15741,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 5,
+        "changed_records": 0,
+        "distinct_raw_names": 5,
+        "distinct_raw_names_changed": 0
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -15421,6 +15904,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "2+2",
         "tier": 1,
@@ -15540,6 +16025,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 33,
+        "changed_records": 28,
+        "distinct_raw_names": 16,
+        "distinct_raw_names_changed": 11
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -15909,6 +16400,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "2+2",
         "tier": 1,
@@ -16041,6 +16534,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 34,
+        "changed_records": 29,
+        "distinct_raw_names": 19,
+        "distinct_raw_names_changed": 14
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -16334,6 +16833,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "afsluttet",
+      "placement_completeness_note": null,
       "gsb_best_format": {
         "format": "2+2",
         "tier": 1,
@@ -16396,7 +16897,7 @@
           ]
         },
         {
-          "normalized_club_name": "Greve/Skælskør/&#216;lstykke",
+          "normalized_club_name": "Greve/Skælskør/Ølstykke",
           "raw_team_names": [
             "Greve/Skælskør/&#216;lstykke 1"
           ]
@@ -16521,6 +17022,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 77,
+        "changed_records": 77,
+        "distinct_raw_names": 40,
+        "distinct_raw_names_changed": 40
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -16643,6 +17150,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "aktivt GSB-hold, format uplaceret",
+      "season_status": "i gang, ufuldstændig",
+      "placement_completeness_note": "kun de endnu spillede/kategoriserede puljer",
       "gsb_best_format": null,
       "highest_format": {
         "format": "3 spillere",
@@ -16668,6 +17177,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 2,
+        "changed_records": 2,
+        "distinct_raw_names": 2,
+        "distinct_raw_names_changed": 2
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -16771,10 +17286,18 @@
         "trukket": 0
       },
       "gsb_placement_status": "aktivt GSB-hold, format uplaceret",
+      "season_status": "i gang, ufuldstændig",
+      "placement_completeness_note": "kun de endnu spillede/kategoriserede puljer",
       "gsb_best_format": null,
       "highest_format": null,
       "highest_format_pools": [],
       "highest_format_clubs": [],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 0,
+        "changed_records": 0,
+        "distinct_raw_names": 0,
+        "distinct_raw_names_changed": 0
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -16903,6 +17426,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "i højeste format",
+      "season_status": "i gang, ufuldstændig",
+      "placement_completeness_note": "kun de endnu spillede/kategoriserede puljer",
       "gsb_best_format": {
         "format": "2+2",
         "tier": 1,
@@ -16990,6 +17515,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 17,
+        "changed_records": 17,
+        "distinct_raw_names": 13,
+        "distinct_raw_names_changed": 13
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -17204,7 +17735,9 @@
         "udgået": 0,
         "trukket": 0
       },
-      "gsb_placement_status": "i højeste format",
+      "gsb_placement_status": "kun ét format findes",
+      "season_status": "i gang, ufuldstændig",
+      "placement_completeness_note": "kun de endnu spillede/kategoriserede puljer",
       "gsb_best_format": {
         "format": "2+2",
         "tier": 1,
@@ -17337,6 +17870,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 24,
+        "changed_records": 24,
+        "distinct_raw_names": 22,
+        "distinct_raw_names_changed": 22
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -17549,6 +18088,8 @@
         "trukket": 0
       },
       "gsb_placement_status": "under højeste format",
+      "season_status": "i gang, ufuldstændig",
+      "placement_completeness_note": "kun de endnu spillede/kategoriserede puljer",
       "gsb_best_format": {
         "format": "2+2",
         "tier": 1,
@@ -17607,6 +18148,12 @@
           ]
         }
       ],
+      "highest_format_club_name_normalization": {
+        "raw_team_name_records": 9,
+        "changed_records": 9,
+        "distinct_raw_names": 9,
+        "distinct_raw_names_changed": 9
+      },
       "withdrawn_teams_in_highest_format_excluded": [],
       "gsb_team_pool_records": [
         {
@@ -17774,64 +18321,123 @@
     {
       "age_group_id": 2,
       "age_group_name": "U09",
-      "seasons": 7,
+      "seasons": 6,
+      "season_ids_included": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
       "league_rows": {
-        "gsb_in": 11,
-        "total": 16,
-        "percent": 68.75
+        "gsb_in": 9,
+        "total": 13,
+        "percent": 69.23076923076923
       },
       "physical_pools": {
-        "gsb_in": 16,
-        "total": 25,
-        "percent": 64
+        "gsb_in": 14,
+        "total": 22,
+        "percent": 63.63636363636363
       },
       "interpretation": "sum over seasons within this age group only; not compared or combined with other age groups"
     },
     {
       "age_group_id": 3,
       "age_group_name": "U11",
-      "seasons": 16,
+      "seasons": 15,
+      "season_ids_included": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
       "league_rows": {
-        "gsb_in": 35,
-        "total": 115,
-        "percent": 30.434782608695652
+        "gsb_in": 31,
+        "total": 108,
+        "percent": 28.703703703703702
       },
       "physical_pools": {
-        "gsb_in": 43,
-        "total": 158,
-        "percent": 27.21518987341772
+        "gsb_in": 39,
+        "total": 150,
+        "percent": 26
       },
       "interpretation": "sum over seasons within this age group only; not compared or combined with other age groups"
     },
     {
       "age_group_id": 4,
       "age_group_name": "U13",
-      "seasons": 16,
+      "seasons": 15,
+      "season_ids_included": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
       "league_rows": {
-        "gsb_in": 47,
-        "total": 147,
-        "percent": 31.972789115646258
+        "gsb_in": 40,
+        "total": 132,
+        "percent": 30.303030303030305
       },
       "physical_pools": {
-        "gsb_in": 55,
-        "total": 197,
-        "percent": 27.918781725888326
+        "gsb_in": 46,
+        "total": 178,
+        "percent": 25.84269662921348
       },
       "interpretation": "sum over seasons within this age group only; not compared or combined with other age groups"
     },
     {
       "age_group_id": 5,
       "age_group_name": "U15",
-      "seasons": 16,
+      "seasons": 15,
+      "season_ids_included": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
       "league_rows": {
-        "gsb_in": 56,
-        "total": 163,
-        "percent": 34.355828220858896
+        "gsb_in": 48,
+        "total": 143,
+        "percent": 33.56643356643357
       },
       "physical_pools": {
-        "gsb_in": 58,
-        "total": 217,
-        "percent": 26.72811059907834
+        "gsb_in": 50,
+        "total": 194,
+        "percent": 25.77319587628866
       },
       "interpretation": "sum over seasons within this age group only; not compared or combined with other age groups"
     },
@@ -17839,6 +18445,14 @@
       "age_group_id": 6,
       "age_group_name": "U17",
       "seasons": 6,
+      "season_ids_included": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016
+      ],
       "league_rows": {
         "gsb_in": 4,
         "total": 21,
@@ -17854,20 +18468,2102 @@
     {
       "age_group_id": 18,
       "age_group_name": "U17/U19",
-      "seasons": 8,
+      "seasons": 7,
+      "season_ids_included": [
+        2016,
+        2017,
+        2018,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
       "league_rows": {
-        "gsb_in": 15,
-        "total": 67,
-        "percent": 22.388059701492537
+        "gsb_in": 10,
+        "total": 52,
+        "percent": 19.23076923076923
       },
       "physical_pools": {
-        "gsb_in": 16,
-        "total": 109,
-        "percent": 14.678899082568808
+        "gsb_in": 10,
+        "total": 88,
+        "percent": 11.363636363636363
       },
       "interpretation": "sum over seasons within this age group only; not compared or combined with other age groups"
     }
   ],
+  "club_name_normalization_totals": {
+    "highest_format_team_records": 2732,
+    "changed_team_records": 1856,
+    "distinct_raw_name_variants_changed": 413,
+    "raw_name_variant_season_age_occurrences": 1137,
+    "changes": [
+      {
+        "raw_team_name": "&#216;lstykke",
+        "normalized_club_name": "Ølstykke",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "&#216;lstykke 1",
+        "normalized_club_name": "Ølstykke",
+        "season_age_occurrences": 3
+      },
+      {
+        "raw_team_name": "&#216;lstykke-Herlev/Hjorten 1",
+        "normalized_club_name": "Ølstykke-Herlev/Hjorten",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "AB/Horsens 1",
+        "normalized_club_name": "AB/Horsens",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "AB/Viby 1",
+        "normalized_club_name": "AB/Viby",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "ABC Aalborg / Gug 1",
+        "normalized_club_name": "ABC Aalborg / Gug",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "abc Aalborg 1",
+        "normalized_club_name": "abc Aalborg",
+        "season_age_occurrences": 8
+      },
+      {
+        "raw_team_name": "abc Aalborg 2",
+        "normalized_club_name": "abc Aalborg",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "abc Aalborg UDG&#197;ET",
+        "normalized_club_name": "abc Aalborg",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "abc Aalborg/FBK 1",
+        "normalized_club_name": "abc Aalborg/FBK",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Alminde Viuf 1",
+        "normalized_club_name": "Alminde Viuf",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Andst 1",
+        "normalized_club_name": "Andst",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Badminton Esbjerg 1",
+        "normalized_club_name": "Badminton Esbjerg",
+        "season_age_occurrences": 8
+      },
+      {
+        "raw_team_name": "Badminton Esbjerg 11",
+        "normalized_club_name": "Badminton Esbjerg",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Badminton Esbjerg 2",
+        "normalized_club_name": "Badminton Esbjerg",
+        "season_age_occurrences": 5
+      },
+      {
+        "raw_team_name": "Badminton Esbjerg 22",
+        "normalized_club_name": "Badminton Esbjerg",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Badminton Esbjerg 3",
+        "normalized_club_name": "Badminton Esbjerg",
+        "season_age_occurrences": 3
+      },
+      {
+        "raw_team_name": "Badminton Esbjerg 4",
+        "normalized_club_name": "Badminton Esbjerg",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Badminton Esbjerg 5",
+        "normalized_club_name": "Badminton Esbjerg",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Badminton i indre By 1",
+        "normalized_club_name": "Badminton i indre By",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Badminton Roskilde 1",
+        "normalized_club_name": "Badminton Roskilde",
+        "season_age_occurrences": 5
+      },
+      {
+        "raw_team_name": "Badminton Roskilde 2",
+        "normalized_club_name": "Badminton Roskilde",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Badminton Roskilde 3",
+        "normalized_club_name": "Badminton Roskilde",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "BC37 Amager 1",
+        "normalized_club_name": "BC37 Amager",
+        "season_age_occurrences": 9
+      },
+      {
+        "raw_team_name": "Bindslev-Tversted 1",
+        "normalized_club_name": "Bindslev-Tversted",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Bjergby-Mygdal 1",
+        "normalized_club_name": "Bjergby-Mygdal",
+        "season_age_occurrences": 4
+      },
+      {
+        "raw_team_name": "Blans Sundeved 1",
+        "normalized_club_name": "Blans Sundeved",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Blenstrup 1",
+        "normalized_club_name": "Blenstrup",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Blåkilde Efterskole 1",
+        "normalized_club_name": "Blåkilde Efterskole",
+        "season_age_occurrences": 3
+      },
+      {
+        "raw_team_name": "Blåkilde Efterskole 2",
+        "normalized_club_name": "Blåkilde Efterskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Brabrand 1",
+        "normalized_club_name": "Brabrand",
+        "season_age_occurrences": 3
+      },
+      {
+        "raw_team_name": "Brabrand 11",
+        "normalized_club_name": "Brabrand",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Brabrand 2",
+        "normalized_club_name": "Brabrand",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Brabrand 22",
+        "normalized_club_name": "Brabrand",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Brøndby BK 1",
+        "normalized_club_name": "Brøndby BK",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Brønderslev 1",
+        "normalized_club_name": "Brønderslev",
+        "season_age_occurrences": 6
+      },
+      {
+        "raw_team_name": "Brønderslev 2",
+        "normalized_club_name": "Brønderslev",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Brørup 1",
+        "normalized_club_name": "Brørup",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Brøruphus Efterskole 1",
+        "normalized_club_name": "Brøruphus Efterskole",
+        "season_age_occurrences": 3
+      },
+      {
+        "raw_team_name": "Brøruphus Efterskole 1 (A)",
+        "normalized_club_name": "Brøruphus Efterskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Brøruphus Efterskole 2 (xtra)",
+        "normalized_club_name": "Brøruphus Efterskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Brøruphus Efterskole 3",
+        "normalized_club_name": "Brøruphus Efterskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "CBK/GBK/KMB2010 1",
+        "normalized_club_name": "CBK/GBK/KMB2010",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Charlottenlund 1",
+        "normalized_club_name": "Charlottenlund",
+        "season_age_occurrences": 4
+      },
+      {
+        "raw_team_name": "Dall-Ferslev 1",
+        "normalized_club_name": "Dall-Ferslev",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Dall-Ferslev 2",
+        "normalized_club_name": "Dall-Ferslev",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Dalum Hjallese BK 1",
+        "normalized_club_name": "Dalum Hjallese BK",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Dalum Hjallese BK 2",
+        "normalized_club_name": "Dalum Hjallese BK",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Dalum-OBK 1",
+        "normalized_club_name": "Dalum-OBK",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Dragør 1",
+        "normalized_club_name": "Dragør",
+        "season_age_occurrences": 3
+      },
+      {
+        "raw_team_name": "Drive 1",
+        "normalized_club_name": "Drive",
+        "season_age_occurrences": 6
+      },
+      {
+        "raw_team_name": "Drive 2",
+        "normalized_club_name": "Drive",
+        "season_age_occurrences": 3
+      },
+      {
+        "raw_team_name": "Drive 6",
+        "normalized_club_name": "Drive",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Drive 7",
+        "normalized_club_name": "Drive",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Dronninglund 1",
+        "normalized_club_name": "Dronninglund",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Dybbøl 1",
+        "normalized_club_name": "Dybbøl",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Dybbøl 2",
+        "normalized_club_name": "Dybbøl",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Dybbøl/Graasten 1",
+        "normalized_club_name": "Dybbøl/Graasten",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Efterskolen Play 1",
+        "normalized_club_name": "Efterskolen Play",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Efterskolen Solgården 1",
+        "normalized_club_name": "Efterskolen Solgården",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Fanø 1",
+        "normalized_club_name": "Fanø",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Farsø 1",
+        "normalized_club_name": "Farsø",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Farsø 2",
+        "normalized_club_name": "Farsø",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Farum 1",
+        "normalized_club_name": "Farum",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Fjer Fyn 1",
+        "normalized_club_name": "Fjer Fyn",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "FKIF Frederiksberg 1",
+        "normalized_club_name": "FKIF Frederiksberg",
+        "season_age_occurrences": 4
+      },
+      {
+        "raw_team_name": "Fredensborg 1",
+        "normalized_club_name": "Fredensborg",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Frederiksberg 1",
+        "normalized_club_name": "Frederiksberg",
+        "season_age_occurrences": 4
+      },
+      {
+        "raw_team_name": "Frederikssund 1",
+        "normalized_club_name": "Frederikssund",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "FSK Furesø 1",
+        "normalized_club_name": "FSK Furesø",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Furesø 1",
+        "normalized_club_name": "Furesø",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Galten FS 1",
+        "normalized_club_name": "Galten FS",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "GBK/CBK 1",
+        "normalized_club_name": "GBK/CBK",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "GBK/KMB2010 1",
+        "normalized_club_name": "GBK/KMB2010",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Gentofte 1",
+        "normalized_club_name": "Gentofte",
+        "season_age_occurrences": 15
+      },
+      {
+        "raw_team_name": "Gentofte 2",
+        "normalized_club_name": "Gentofte",
+        "season_age_occurrences": 3
+      },
+      {
+        "raw_team_name": "Gentofte/KMB2010 1",
+        "normalized_club_name": "Gentofte/KMB2010",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Gilleleje 1",
+        "normalized_club_name": "Gilleleje",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Gistrup LKB 1",
+        "normalized_club_name": "Gistrup LKB",
+        "season_age_occurrences": 3
+      },
+      {
+        "raw_team_name": "Gladsaxe Søborg 1",
+        "normalized_club_name": "Gladsaxe Søborg",
+        "season_age_occurrences": 8
+      },
+      {
+        "raw_team_name": "Gladsaxe Søborg 2",
+        "normalized_club_name": "Gladsaxe Søborg",
+        "season_age_occurrences": 5
+      },
+      {
+        "raw_team_name": "Gladsaxe Søborg 3",
+        "normalized_club_name": "Gladsaxe Søborg",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Gladsaxe Søborg 4",
+        "normalized_club_name": "Gladsaxe Søborg",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Gladsaxe Søborg 5",
+        "normalized_club_name": "Gladsaxe Søborg",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Glamsdalen 1",
+        "normalized_club_name": "Glamsdalen",
+        "season_age_occurrences": 7
+      },
+      {
+        "raw_team_name": "Glamsdalen 1 (A)",
+        "normalized_club_name": "Glamsdalen",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Glamsdalen 2",
+        "normalized_club_name": "Glamsdalen",
+        "season_age_occurrences": 5
+      },
+      {
+        "raw_team_name": "Glamsdalen 2 (xtra)",
+        "normalized_club_name": "Glamsdalen",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Glumsø 1",
+        "normalized_club_name": "Glumsø",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Greve 1",
+        "normalized_club_name": "Greve",
+        "season_age_occurrences": 20
+      },
+      {
+        "raw_team_name": "Greve 1 *alders disp.",
+        "normalized_club_name": "Greve",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Greve 2",
+        "normalized_club_name": "Greve",
+        "season_age_occurrences": 3
+      },
+      {
+        "raw_team_name": "Greve 3",
+        "normalized_club_name": "Greve",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Greve/Skælskør/&#216;lstykke 1",
+        "normalized_club_name": "Greve/Skælskør/Ølstykke",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Grindsted BK 1",
+        "normalized_club_name": "Grindsted BK",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Grønbjerg 1",
+        "normalized_club_name": "Grønbjerg",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Grønsund 1",
+        "normalized_club_name": "Grønsund",
+        "season_age_occurrences": 5
+      },
+      {
+        "raw_team_name": "Grønsund 2",
+        "normalized_club_name": "Grønsund",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Graasten 1",
+        "normalized_club_name": "Graasten",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Gug 1",
+        "normalized_club_name": "Gug",
+        "season_age_occurrences": 3
+      },
+      {
+        "raw_team_name": "Gørlev Idrætsefterskole 1",
+        "normalized_club_name": "Gørlev Idrætsefterskole",
+        "season_age_occurrences": 7
+      },
+      {
+        "raw_team_name": "Gørlev Idrætsefterskole 1 (A)",
+        "normalized_club_name": "Gørlev Idrætsefterskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Gørlev Idrætsefterskole 2",
+        "normalized_club_name": "Gørlev Idrætsefterskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Hadsund 1",
+        "normalized_club_name": "Hadsund",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Hammel 1",
+        "normalized_club_name": "Hammel",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "HB2000/Taastrup Badminton 1",
+        "normalized_club_name": "HB2000/Taastrup Badminton",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "HBC/FKIF 1",
+        "normalized_club_name": "HBC/FKIF",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "HBC/Gentofte 1",
+        "normalized_club_name": "HBC/Gentofte",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Herlev/Hjorten 1",
+        "normalized_club_name": "Herlev/Hjorten",
+        "season_age_occurrences": 8
+      },
+      {
+        "raw_team_name": "Herlev/Hjorten 11",
+        "normalized_club_name": "Herlev/Hjorten",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Herlev/Hjorten 2",
+        "normalized_club_name": "Herlev/Hjorten",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Herlev/Hjorten 22",
+        "normalized_club_name": "Herlev/Hjorten",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Herlev/Hjorten 3",
+        "normalized_club_name": "Herlev/Hjorten",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Herlev/Hjorten 4",
+        "normalized_club_name": "Herlev/Hjorten",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Herlev/Hjorten 5",
+        "normalized_club_name": "Herlev/Hjorten",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Herlev/Hjorten 6",
+        "normalized_club_name": "Herlev/Hjorten",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Herlev/Hjorten 7",
+        "normalized_club_name": "Herlev/Hjorten",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Herlufsholm 1",
+        "normalized_club_name": "Herlufsholm",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Herning 1",
+        "normalized_club_name": "Herning",
+        "season_age_occurrences": 9
+      },
+      {
+        "raw_team_name": "Herning 2",
+        "normalized_club_name": "Herning",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Herning/Silkeborg BK 1",
+        "normalized_club_name": "Herning/Silkeborg BK",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Hillerød 1",
+        "normalized_club_name": "Hillerød",
+        "season_age_occurrences": 19
+      },
+      {
+        "raw_team_name": "Hillerød 2",
+        "normalized_club_name": "Hillerød",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Himmerlands Ungdomsskole 1",
+        "normalized_club_name": "Himmerlands Ungdomsskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Hjemly Idrætsefterskole 1",
+        "normalized_club_name": "Hjemly Idrætsefterskole",
+        "season_age_occurrences": 8
+      },
+      {
+        "raw_team_name": "Hjemly Idrætsefterskole 1 (M)",
+        "normalized_club_name": "Hjemly Idrætsefterskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Hjemly Idrætsefterskole 2",
+        "normalized_club_name": "Hjemly Idrætsefterskole",
+        "season_age_occurrences": 6
+      },
+      {
+        "raw_team_name": "Hjemly Idrætsefterskole 2 (A)",
+        "normalized_club_name": "Hjemly Idrætsefterskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Hjemly Idrætsefterskole 2 (M)",
+        "normalized_club_name": "Hjemly Idrætsefterskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Hjemly Idrætsefterskole 2 (xtra)",
+        "normalized_club_name": "Hjemly Idrætsefterskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Hjemly Idrætsefterskole 3",
+        "normalized_club_name": "Hjemly Idrætsefterskole",
+        "season_age_occurrences": 6
+      },
+      {
+        "raw_team_name": "Hjemly Idrætsefterskole 3 (xtra)",
+        "normalized_club_name": "Hjemly Idrætsefterskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Hjemly Idrætsefterskole 4",
+        "normalized_club_name": "Hjemly Idrætsefterskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Hjørring 1",
+        "normalized_club_name": "Hjørring",
+        "season_age_occurrences": 6
+      },
+      {
+        "raw_team_name": "Hjørring 2",
+        "normalized_club_name": "Hjørring",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Hjørring 3",
+        "normalized_club_name": "Hjørring",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Hjørring 4",
+        "normalized_club_name": "Hjørring",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Hobro 1",
+        "normalized_club_name": "Hobro",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "HOG Badminton, Hinnerup 1",
+        "normalized_club_name": "HOG Badminton, Hinnerup",
+        "season_age_occurrences": 8
+      },
+      {
+        "raw_team_name": "HOG Badminton, Hinnerup 11",
+        "normalized_club_name": "HOG Badminton, Hinnerup",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Holbæk 1",
+        "normalized_club_name": "Holbæk",
+        "season_age_occurrences": 6
+      },
+      {
+        "raw_team_name": "Holbæk 2",
+        "normalized_club_name": "Holbæk",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Hornslet IF 1",
+        "normalized_club_name": "Hornslet IF",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Hornslet IF 11",
+        "normalized_club_name": "Hornslet IF",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Hornslet IF 2",
+        "normalized_club_name": "Hornslet IF",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Hornslet IF 22",
+        "normalized_club_name": "Hornslet IF",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Horsens 1",
+        "normalized_club_name": "Horsens",
+        "season_age_occurrences": 3
+      },
+      {
+        "raw_team_name": "Horsens 11",
+        "normalized_club_name": "Horsens",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Horsens/Brædstrup 1",
+        "normalized_club_name": "Horsens/Brædstrup",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Horsens/Vinding Badminton 1",
+        "normalized_club_name": "Horsens/Vinding Badminton",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Humlebæk 1",
+        "normalized_club_name": "Humlebæk",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Hvidovre 1",
+        "normalized_club_name": "Hvidovre",
+        "season_age_occurrences": 12
+      },
+      {
+        "raw_team_name": "Hvidovre 2",
+        "normalized_club_name": "Hvidovre",
+        "season_age_occurrences": 3
+      },
+      {
+        "raw_team_name": "Hvidovre 4",
+        "normalized_club_name": "Hvidovre",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Højbjerg 1",
+        "normalized_club_name": "Højbjerg",
+        "season_age_occurrences": 36
+      },
+      {
+        "raw_team_name": "Højbjerg 1 (2400)",
+        "normalized_club_name": "Højbjerg",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Højbjerg 11",
+        "normalized_club_name": "Højbjerg",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Højbjerg 2",
+        "normalized_club_name": "Højbjerg",
+        "season_age_occurrences": 20
+      },
+      {
+        "raw_team_name": "Højbjerg 2 (2400)",
+        "normalized_club_name": "Højbjerg",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Højbjerg 22",
+        "normalized_club_name": "Højbjerg",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Højbjerg 3",
+        "normalized_club_name": "Højbjerg",
+        "season_age_occurrences": 7
+      },
+      {
+        "raw_team_name": "Højbjerg 3 (2400)",
+        "normalized_club_name": "Højbjerg",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Højbjerg 33",
+        "normalized_club_name": "Højbjerg",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Højbjerg 4",
+        "normalized_club_name": "Højbjerg",
+        "season_age_occurrences": 4
+      },
+      {
+        "raw_team_name": "Højbjerg 6",
+        "normalized_club_name": "Højbjerg",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Højbjerg/Horsens 1",
+        "normalized_club_name": "Højbjerg/Horsens",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Højby S&G 1",
+        "normalized_club_name": "Højby S&G",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Hørby Efterskole 1",
+        "normalized_club_name": "Hørby Efterskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Hørning IF 1",
+        "normalized_club_name": "Hørning IF",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Hørsholm 1",
+        "normalized_club_name": "Hørsholm",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Haarby Efterskole 1",
+        "normalized_club_name": "Haarby Efterskole",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Ikast 1",
+        "normalized_club_name": "Ikast",
+        "season_age_occurrences": 9
+      },
+      {
+        "raw_team_name": "Ikast 2",
+        "normalized_club_name": "Ikast",
+        "season_age_occurrences": 9
+      },
+      {
+        "raw_team_name": "Ikast 3",
+        "normalized_club_name": "Ikast",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Ishøj SB 50 1",
+        "normalized_club_name": "Ishøj SB 50",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Islands Brygge 1",
+        "normalized_club_name": "Islands Brygge",
+        "season_age_occurrences": 5
+      },
+      {
+        "raw_team_name": "Jetsmark 1",
+        "normalized_club_name": "Jetsmark",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "KBK Kbh. 1",
+        "normalized_club_name": "KBK Kbh.",
+        "season_age_occurrences": 14
+      },
+      {
+        "raw_team_name": "KBK Kbh. 2",
+        "normalized_club_name": "KBK Kbh.",
+        "season_age_occurrences": 3
+      },
+      {
+        "raw_team_name": "KBK Kbh. 6",
+        "normalized_club_name": "KBK Kbh.",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "KBK Kbh./Drive 1",
+        "normalized_club_name": "KBK Kbh./Drive",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "KBK/Drive/(Gentofte) 1",
+        "normalized_club_name": "KBK/Drive/",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Klarup Badminton 1",
+        "normalized_club_name": "Klarup Badminton",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "KMB2010 1",
+        "normalized_club_name": "KMB2010",
+        "season_age_occurrences": 5
+      },
+      {
+        "raw_team_name": "KMB2010 2",
+        "normalized_club_name": "KMB2010",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "KMB2010 3",
+        "normalized_club_name": "KMB2010",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "KMB2010 4",
+        "normalized_club_name": "KMB2010",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "KMB2010 5",
+        "normalized_club_name": "KMB2010",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "KMB2010 6",
+        "normalized_club_name": "KMB2010",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "KMB2010/Drive 1",
+        "normalized_club_name": "KMB2010/Drive",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Kolding BK 1",
+        "normalized_club_name": "Kolding BK",
+        "season_age_occurrences": 19
+      },
+      {
+        "raw_team_name": "Kolding BK 2",
+        "normalized_club_name": "Kolding BK",
+        "season_age_occurrences": 5
+      },
+      {
+        "raw_team_name": "Kolding BK 3",
+        "normalized_club_name": "Kolding BK",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Kolding-Rødekro 1",
+        "normalized_club_name": "Kolding-Rødekro",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Kolding/Fyn 1",
+        "normalized_club_name": "Kolding/Fyn",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Køge 1",
+        "normalized_club_name": "Køge",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Køge/Badminton Roskilde 1",
+        "normalized_club_name": "Køge/Badminton Roskilde",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Langhøj 1",
+        "normalized_club_name": "Langhøj",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "LBK/KMB2010 1",
+        "normalized_club_name": "LBK/KMB2010",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "LBK/SBK/SLBK 2",
+        "normalized_club_name": "LBK/SBK/SLBK",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Lejre 1",
+        "normalized_club_name": "Lejre",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Lillerød 1",
+        "normalized_club_name": "Lillerød",
+        "season_age_occurrences": 21
+      },
+      {
+        "raw_team_name": "Lillerød 2",
+        "normalized_club_name": "Lillerød",
+        "season_age_occurrences": 3
+      },
+      {
+        "raw_team_name": "Lindholm 1",
+        "normalized_club_name": "Lindholm",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Lindholm 2",
+        "normalized_club_name": "Lindholm",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Lindholm 3",
+        "normalized_club_name": "Lindholm",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Lund 1",
+        "normalized_club_name": "Lund",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Lundtofte 4",
+        "normalized_club_name": "Lundtofte",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Lyngby 1",
+        "normalized_club_name": "Lyngby",
+        "season_age_occurrences": 19
+      },
+      {
+        "raw_team_name": "Lyngby 2",
+        "normalized_club_name": "Lyngby",
+        "season_age_occurrences": 5
+      },
+      {
+        "raw_team_name": "Lyngby/KBK 1",
+        "normalized_club_name": "Lyngby/KBK",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Mejrup G og UF 1",
+        "normalized_club_name": "Mejrup G og UF",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Middelfart 1",
+        "normalized_club_name": "Middelfart",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "NBK Amager 1",
+        "normalized_club_name": "NBK Amager",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Nivå-Kokkedal 1",
+        "normalized_club_name": "Nivå-Kokkedal",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Nordbyens Badmintonklub 1",
+        "normalized_club_name": "Nordbyens Badmintonklub",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Nyborg 1",
+        "normalized_club_name": "Nyborg",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Nørager HCI 1",
+        "normalized_club_name": "Nørager HCI",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Nørre Nissum Efterskole 1",
+        "normalized_club_name": "Nørre Nissum Efterskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "OBK/Bolbro/KRIF 1",
+        "normalized_club_name": "OBK/Bolbro/KRIF",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "OBK/Langeskov 1",
+        "normalized_club_name": "OBK/Langeskov",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "OBK/Svendborg/Langeskov 1",
+        "normalized_club_name": "OBK/Svendborg/Langeskov",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "OBK/TPI/Svendborg 1",
+        "normalized_club_name": "OBK/TPI/Svendborg",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Odder 1",
+        "normalized_club_name": "Odder",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Odense OBK 1",
+        "normalized_club_name": "Odense OBK",
+        "season_age_occurrences": 16
+      },
+      {
+        "raw_team_name": "Odense OBK 1 (Disp)",
+        "normalized_club_name": "Odense OBK",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Odense OBK 2",
+        "normalized_club_name": "Odense OBK",
+        "season_age_occurrences": 6
+      },
+      {
+        "raw_team_name": "Odense OBK 3",
+        "normalized_club_name": "Odense OBK",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Odense OBK 4",
+        "normalized_club_name": "Odense OBK",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Oksbøl Badminton Klub 1",
+        "normalized_club_name": "Oksbøl Badminton Klub",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Poulstrup Vrejlev 1",
+        "normalized_club_name": "Poulstrup Vrejlev",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Randers BK 1",
+        "normalized_club_name": "Randers BK",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Rebild Efterskole 1",
+        "normalized_club_name": "Rebild Efterskole",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Ribe 1",
+        "normalized_club_name": "Ribe",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Ribe 11",
+        "normalized_club_name": "Ribe",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Ribe 2",
+        "normalized_club_name": "Ribe",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Ribe 22",
+        "normalized_club_name": "Ribe",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Ringkøbing 1",
+        "normalized_club_name": "Ringkøbing",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Ringsted 1",
+        "normalized_club_name": "Ringsted",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Ringsted/Værløse 1",
+        "normalized_club_name": "Ringsted/Værløse",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Rosendal 1",
+        "normalized_club_name": "Rosendal",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Rosendal 2",
+        "normalized_club_name": "Rosendal",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Roskilde HBK 1",
+        "normalized_club_name": "Roskilde HBK",
+        "season_age_occurrences": 4
+      },
+      {
+        "raw_team_name": "Rudehøj Efterskole 1",
+        "normalized_club_name": "Rudehøj Efterskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Rudersdal 1",
+        "normalized_club_name": "Rudersdal",
+        "season_age_occurrences": 5
+      },
+      {
+        "raw_team_name": "Ry 1",
+        "normalized_club_name": "Ry",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Ry 11",
+        "normalized_club_name": "Ry",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Rødekro 1",
+        "normalized_club_name": "Rødekro",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Rødovre 1",
+        "normalized_club_name": "Rødovre",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Rønde Efterskole 1",
+        "normalized_club_name": "Rønde Efterskole",
+        "season_age_occurrences": 7
+      },
+      {
+        "raw_team_name": "Rønde Efterskole 1 (&#216;M)",
+        "normalized_club_name": "Rønde Efterskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Rønde Efterskole 1 (M)",
+        "normalized_club_name": "Rønde Efterskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Rønde Efterskole 2",
+        "normalized_club_name": "Rønde Efterskole",
+        "season_age_occurrences": 7
+      },
+      {
+        "raw_team_name": "Rønde Efterskole 2 (&#216;M)",
+        "normalized_club_name": "Rønde Efterskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Rønde Efterskole 2 (A)",
+        "normalized_club_name": "Rønde Efterskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Rønde Efterskole 3",
+        "normalized_club_name": "Rønde Efterskole",
+        "season_age_occurrences": 6
+      },
+      {
+        "raw_team_name": "Rønde Efterskole 3 (A)",
+        "normalized_club_name": "Rønde Efterskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Rønde Efterskole 4",
+        "normalized_club_name": "Rønde Efterskole",
+        "season_age_occurrences": 5
+      },
+      {
+        "raw_team_name": "Rønde Efterskole 5",
+        "normalized_club_name": "Rønde Efterskole",
+        "season_age_occurrences": 6
+      },
+      {
+        "raw_team_name": "Rønde Efterskole 6",
+        "normalized_club_name": "Rønde Efterskole",
+        "season_age_occurrences": 5
+      },
+      {
+        "raw_team_name": "Rønde Efterskole 7",
+        "normalized_club_name": "Rønde Efterskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Sabro 1",
+        "normalized_club_name": "Sabro",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Sdr. Hygum 1",
+        "normalized_club_name": "Sdr. Hygum",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Sdr. Hygum 11",
+        "normalized_club_name": "Sdr. Hygum",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Sdr. Hygum 2 (U9C hold)",
+        "normalized_club_name": "Sdr. Hygum",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Sdr. Hygum 22 (U9C hold)",
+        "normalized_club_name": "Sdr. Hygum",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Sejs-Svejbæk 1",
+        "normalized_club_name": "Sejs-Svejbæk",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "SIF Assentoft 1",
+        "normalized_club_name": "SIF Assentoft",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Sjælsølund SES 1",
+        "normalized_club_name": "Sjælsølund SES",
+        "season_age_occurrences": 6
+      },
+      {
+        "raw_team_name": "Sjælsølund SES 2",
+        "normalized_club_name": "Sjælsølund SES",
+        "season_age_occurrences": 5
+      },
+      {
+        "raw_team_name": "Sjælsølund SES 3",
+        "normalized_club_name": "Sjælsølund SES",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Skagen 1",
+        "normalized_club_name": "Skagen",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Skalborg SK 1",
+        "normalized_club_name": "Skalborg SK",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Skalborg SK 2",
+        "normalized_club_name": "Skalborg SK",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Skanderborg Badminton 1",
+        "normalized_club_name": "Skanderborg Badminton",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Skovshoved 1",
+        "normalized_club_name": "Skovshoved",
+        "season_age_occurrences": 21
+      },
+      {
+        "raw_team_name": "Skovshoved 2",
+        "normalized_club_name": "Skovshoved",
+        "season_age_occurrences": 4
+      },
+      {
+        "raw_team_name": "Skovshoved 3",
+        "normalized_club_name": "Skovshoved",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Skovshoved 4",
+        "normalized_club_name": "Skovshoved",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Skovshoved 5",
+        "normalized_club_name": "Skovshoved",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Skovshoved 6",
+        "normalized_club_name": "Skovshoved",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Slagelse 1",
+        "normalized_club_name": "Slagelse",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Slangerup/Holte 2",
+        "normalized_club_name": "Slangerup/Holte",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Snejbjerg 1",
+        "normalized_club_name": "Snejbjerg",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Solbjerg 1",
+        "normalized_club_name": "Solbjerg",
+        "season_age_occurrences": 4
+      },
+      {
+        "raw_team_name": "Solrød Strand 1",
+        "normalized_club_name": "Solrød Strand",
+        "season_age_occurrences": 39
+      },
+      {
+        "raw_team_name": "Solrød Strand 2",
+        "normalized_club_name": "Solrød Strand",
+        "season_age_occurrences": 18
+      },
+      {
+        "raw_team_name": "Solrød Strand 3",
+        "normalized_club_name": "Solrød Strand",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Solrød Strand 5",
+        "normalized_club_name": "Solrød Strand",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Sorring 1",
+        "normalized_club_name": "Sorring",
+        "season_age_occurrences": 4
+      },
+      {
+        "raw_team_name": "Sorring 11",
+        "normalized_club_name": "Sorring",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Sportsefterskolen SINE 1",
+        "normalized_club_name": "Sportsefterskolen SINE",
+        "season_age_occurrences": 6
+      },
+      {
+        "raw_team_name": "Sportsefterskolen SINE 1 (M)",
+        "normalized_club_name": "Sportsefterskolen SINE",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Sportsefterskolen SINE 2",
+        "normalized_club_name": "Sportsefterskolen SINE",
+        "season_age_occurrences": 3
+      },
+      {
+        "raw_team_name": "Sportsefterskolen SINE 2 (A)",
+        "normalized_club_name": "Sportsefterskolen SINE",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Sportsefterskolen SINE 3",
+        "normalized_club_name": "Sportsefterskolen SINE",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "St. Restrup 1",
+        "normalized_club_name": "St. Restrup",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Stavtrup 1",
+        "normalized_club_name": "Stavtrup",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Stavtrup 11",
+        "normalized_club_name": "Stavtrup",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Stavtrup 2",
+        "normalized_club_name": "Stavtrup",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Stavtrup 22",
+        "normalized_club_name": "Stavtrup",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Stidsholt IF 1",
+        "normalized_club_name": "Stidsholt IF",
+        "season_age_occurrences": 3
+      },
+      {
+        "raw_team_name": "Stidsholt IF 2",
+        "normalized_club_name": "Stidsholt IF",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Strib Idrætsefterskole 1",
+        "normalized_club_name": "Strib Idrætsefterskole",
+        "season_age_occurrences": 7
+      },
+      {
+        "raw_team_name": "Strib Idrætsefterskole 1 (A)",
+        "normalized_club_name": "Strib Idrætsefterskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Strib Idrætsefterskole 2",
+        "normalized_club_name": "Strib Idrætsefterskole",
+        "season_age_occurrences": 5
+      },
+      {
+        "raw_team_name": "Strib Idrætsefterskole 3",
+        "normalized_club_name": "Strib Idrætsefterskole",
+        "season_age_occurrences": 4
+      },
+      {
+        "raw_team_name": "Støvring 1",
+        "normalized_club_name": "Støvring",
+        "season_age_occurrences": 3
+      },
+      {
+        "raw_team_name": "Støvring 2",
+        "normalized_club_name": "Støvring",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Støvring 3",
+        "normalized_club_name": "Støvring",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Støvring 5",
+        "normalized_club_name": "Støvring",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Støvring 6",
+        "normalized_club_name": "Støvring",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Støvring 7",
+        "normalized_club_name": "Støvring",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Sundeved Efterskole 1",
+        "normalized_club_name": "Sundeved Efterskole",
+        "season_age_occurrences": 4
+      },
+      {
+        "raw_team_name": "Svendborg 1",
+        "normalized_club_name": "Svendborg",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Svenstrup 1",
+        "normalized_club_name": "Svenstrup",
+        "season_age_occurrences": 9
+      },
+      {
+        "raw_team_name": "Svenstrup 2",
+        "normalized_club_name": "Svenstrup",
+        "season_age_occurrences": 5
+      },
+      {
+        "raw_team_name": "Svenstrup 3",
+        "normalized_club_name": "Svenstrup",
+        "season_age_occurrences": 4
+      },
+      {
+        "raw_team_name": "Svenstrup 4",
+        "normalized_club_name": "Svenstrup",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Svenstrup 5",
+        "normalized_club_name": "Svenstrup",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Svenstrup 6",
+        "normalized_club_name": "Svenstrup",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Svenstrup 7",
+        "normalized_club_name": "Svenstrup",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Sæby 1",
+        "normalized_club_name": "Sæby",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Tarup-Pårup 1",
+        "normalized_club_name": "Tarup-Pårup",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Team Badminton Esbjerg 1",
+        "normalized_club_name": "Team Badminton Esbjerg",
+        "season_age_occurrences": 8
+      },
+      {
+        "raw_team_name": "Team Badminton Esbjerg 2",
+        "normalized_club_name": "Team Badminton Esbjerg",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Team Badminton Esbjerg 3",
+        "normalized_club_name": "Team Badminton Esbjerg",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Team Badminton Esbjerg 4",
+        "normalized_club_name": "Team Badminton Esbjerg",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Team FKIF/KBK/HBC 1",
+        "normalized_club_name": "Team FKIF/KBK/HBC",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Team Fyn-Sydjylland 1",
+        "normalized_club_name": "Team Fyn-Sydjylland",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Team Gudenåen 1",
+        "normalized_club_name": "Team Gudenåen",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Team HJR Sjælland 1",
+        "normalized_club_name": "Team HJR Sjælland",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Team KBK/Drive/Jernløse 1",
+        "normalized_club_name": "Team KBK/Drive/Jernløse",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Team København 1",
+        "normalized_club_name": "Team København",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Team Køge/Holbæk 1",
+        "normalized_club_name": "Team Køge/Holbæk",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Team Køge/Skælskør 1",
+        "normalized_club_name": "Team Køge/Skælskør",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Team Metro+ 1",
+        "normalized_club_name": "Team Metro+",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Team Midtsjælland 1",
+        "normalized_club_name": "Team Midtsjælland",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Team Nordjylland 1",
+        "normalized_club_name": "Team Nordjylland",
+        "season_age_occurrences": 3
+      },
+      {
+        "raw_team_name": "Team Nordsjælland 1",
+        "normalized_club_name": "Team Nordsjælland",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Team Odense 1",
+        "normalized_club_name": "Team Odense",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Team Stor Aalborg 1",
+        "normalized_club_name": "Team Stor Aalborg",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Team Stor Aalborg 2",
+        "normalized_club_name": "Team Stor Aalborg",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Team Sydjylland &#216;st 1",
+        "normalized_club_name": "Team Sydjylland Øst",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Team Sydjylland 1",
+        "normalized_club_name": "Team Sydjylland",
+        "season_age_occurrences": 3
+      },
+      {
+        "raw_team_name": "Team Sydjylland Vest 1",
+        "normalized_club_name": "Team Sydjylland Vest",
+        "season_age_occurrences": 6
+      },
+      {
+        "raw_team_name": "Team Sønderjylland 1",
+        "normalized_club_name": "Team Sønderjylland",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Team Vejleå 1",
+        "normalized_club_name": "Team Vejleå",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Team Aarhus ungdom 1",
+        "normalized_club_name": "Team Aarhus ungdom",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Team-DFS9 1",
+        "normalized_club_name": "Team-DFS9",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Team-Work Bjergby-Mygdal/Fr.Havn 1",
+        "normalized_club_name": "Team-Work Bjergby-Mygdal/Fr.Havn",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Thorsager Rønde 1",
+        "normalized_club_name": "Thorsager Rønde",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Tirstrup Idrætsefterskole 1",
+        "normalized_club_name": "Tirstrup Idrætsefterskole",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Tranbjerg AIA 1",
+        "normalized_club_name": "Tranbjerg AIA",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Tranbjerg AIA 11",
+        "normalized_club_name": "Tranbjerg AIA",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Tranbjerg AIA 2",
+        "normalized_club_name": "Tranbjerg AIA",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Triton-RBK-RIF 1",
+        "normalized_club_name": "Triton-RBK-RIF",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Taastrup BC 1",
+        "normalized_club_name": "Taastrup BC",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Taastrup Elite 1",
+        "normalized_club_name": "Taastrup Elite",
+        "season_age_occurrences": 3
+      },
+      {
+        "raw_team_name": "Taastrup TIK 1",
+        "normalized_club_name": "Taastrup TIK",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Ukendt modstander 1",
+        "normalized_club_name": "Ukendt modstander",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Ukendt modstander 2",
+        "normalized_club_name": "Ukendt modstander",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Valby BC 1",
+        "normalized_club_name": "Valby BC",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Vanløse 1",
+        "normalized_club_name": "Vanløse",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Vanløse/FKIF 1",
+        "normalized_club_name": "Vanløse/FKIF",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Varde 1",
+        "normalized_club_name": "Varde",
+        "season_age_occurrences": 5
+      },
+      {
+        "raw_team_name": "Varde 2",
+        "normalized_club_name": "Varde",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Vedersø Idrætsefterskole 1",
+        "normalized_club_name": "Vedersø Idrætsefterskole",
+        "season_age_occurrences": 3
+      },
+      {
+        "raw_team_name": "Vedersø Idrætsefterskole 2",
+        "normalized_club_name": "Vedersø Idrætsefterskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Vejgaard 1",
+        "normalized_club_name": "Vejgaard",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Vejle 1",
+        "normalized_club_name": "Vejle",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Vejle/Kolding 1",
+        "normalized_club_name": "Vejle/Kolding",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Vester Hassing 1",
+        "normalized_club_name": "Vester Hassing",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Vesterbølle Efterskole 1",
+        "normalized_club_name": "Vesterbølle Efterskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Viby J 1",
+        "normalized_club_name": "Viby J",
+        "season_age_occurrences": 20
+      },
+      {
+        "raw_team_name": "Viby J 11",
+        "normalized_club_name": "Viby J",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Viby J 2",
+        "normalized_club_name": "Viby J",
+        "season_age_occurrences": 4
+      },
+      {
+        "raw_team_name": "Viby J 22",
+        "normalized_club_name": "Viby J",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Viby J 3",
+        "normalized_club_name": "Viby J",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Viby J 4",
+        "normalized_club_name": "Viby J",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Viby-Silkeborg 1",
+        "normalized_club_name": "Viby-Silkeborg",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Viby/Grenå 1",
+        "normalized_club_name": "Viby/Grenå",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Viby/Randers/Grenå 1",
+        "normalized_club_name": "Viby/Randers/Grenå",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Viby/Randers/Grenå 3",
+        "normalized_club_name": "Viby/Randers/Grenå",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Vinding SF 1",
+        "normalized_club_name": "Vinding SF",
+        "season_age_occurrences": 4
+      },
+      {
+        "raw_team_name": "Vinding SF 1 (2400)",
+        "normalized_club_name": "Vinding SF",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Vinding SF 11",
+        "normalized_club_name": "Vinding SF",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Vinding SF 2",
+        "normalized_club_name": "Vinding SF",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Vinding SF 4",
+        "normalized_club_name": "Vinding SF",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Vivild Idrætsefterskole 1",
+        "normalized_club_name": "Vivild Idrætsefterskole",
+        "season_age_occurrences": 4
+      },
+      {
+        "raw_team_name": "Vivild Idrætsefterskole 1 (&#216;M)",
+        "normalized_club_name": "Vivild Idrætsefterskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Vivild Idrætsefterskole 2",
+        "normalized_club_name": "Vivild Idrætsefterskole",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Vojens GI 1",
+        "normalized_club_name": "Vojens GI",
+        "season_age_occurrences": 4
+      },
+      {
+        "raw_team_name": "Vojens GI 1 (xtra)",
+        "normalized_club_name": "Vojens GI",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Vojens GI 2",
+        "normalized_club_name": "Vojens GI",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Vorup FB 1",
+        "normalized_club_name": "Vorup FB",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Værløse 1",
+        "normalized_club_name": "Værløse",
+        "season_age_occurrences": 18
+      },
+      {
+        "raw_team_name": "Værløse 2",
+        "normalized_club_name": "Værløse",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Aabybro 1",
+        "normalized_club_name": "Aabybro",
+        "season_age_occurrences": 3
+      },
+      {
+        "raw_team_name": "Aabybro 2",
+        "normalized_club_name": "Aabybro",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Aalborg Triton 1",
+        "normalized_club_name": "Aalborg Triton",
+        "season_age_occurrences": 8
+      },
+      {
+        "raw_team_name": "Aalborg Triton 2",
+        "normalized_club_name": "Aalborg Triton",
+        "season_age_occurrences": 4
+      },
+      {
+        "raw_team_name": "Aalborg Triton 3",
+        "normalized_club_name": "Aalborg Triton",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Aalborg Triton 4",
+        "normalized_club_name": "Aalborg Triton",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Aarhus AB 1",
+        "normalized_club_name": "Aarhus AB",
+        "season_age_occurrences": 12
+      },
+      {
+        "raw_team_name": "Aarhus AB 11",
+        "normalized_club_name": "Aarhus AB",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Aarhus AB 2",
+        "normalized_club_name": "Aarhus AB",
+        "season_age_occurrences": 4
+      },
+      {
+        "raw_team_name": "Aarhus AB 22",
+        "normalized_club_name": "Aarhus AB",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Aarhus AB 3",
+        "normalized_club_name": "Aarhus AB",
+        "season_age_occurrences": 2
+      },
+      {
+        "raw_team_name": "Aarhus AB 33",
+        "normalized_club_name": "Aarhus AB",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Aarhus AB 4",
+        "normalized_club_name": "Aarhus AB",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Aarhus AB/Randers BK 1",
+        "normalized_club_name": "Aarhus AB/Randers BK",
+        "season_age_occurrences": 1
+      },
+      {
+        "raw_team_name": "Aars 1",
+        "normalized_club_name": "Aars",
+        "season_age_occurrences": 1
+      }
+    ]
+  },
   "collaborations_separate": [
     {
       "raw_team_name": "BC37/Gladsaxe Søborg 1",
@@ -17941,6 +20637,8 @@
             "unplaced_reason": "Uplaceret — utilstrækkelig kategoristruktur"
           }
         ],
+        "season_status": "afsluttet",
+        "placement_completeness_note": null,
         "highest_format": {
           "format": "4+3",
           "tier": 1,
@@ -17952,12 +20650,7 @@
           {
             "normalized_club_name": "Greve",
             "raw_team_names": [
-              "Greve 1"
-            ]
-          },
-          {
-            "normalized_club_name": "Greve 1 *alders disp.",
-            "raw_team_names": [
+              "Greve 1",
               "Greve 1 *alders disp."
             ]
           },
@@ -18146,6 +20839,8 @@
             "unplaced_reason": null
           }
         ],
+        "season_status": "afsluttet",
+        "placement_completeness_note": null,
         "highest_format": {
           "format": "4+3",
           "tier": 1,
@@ -18376,6 +21071,8 @@
             "unplaced_reason": null
           }
         ],
+        "season_status": "afsluttet",
+        "placement_completeness_note": null,
         "highest_format": {
           "format": "4+3",
           "tier": 1,
@@ -18632,6 +21329,8 @@
             "unplaced_reason": null
           }
         ],
+        "season_status": "afsluttet",
+        "placement_completeness_note": null,
         "highest_format": {
           "format": "4+3",
           "tier": 1,
@@ -18927,6 +21626,8 @@
             "unplaced_reason": "Uplaceret — utilstrækkelig kategoristruktur"
           }
         ],
+        "season_status": "i gang, ufuldstændig",
+        "placement_completeness_note": "kun de endnu spillede/kategoriserede puljer",
         "highest_format": {
           "format": "2+2",
           "tier": 1,
@@ -19181,6 +21882,12 @@
     "region_id_8_exact_name": true,
     "region_8_missing_division_rows": 0,
     "all_region_8_pools_have_details": true,
+    "current_season_excluded_from_overall": true,
+    "club_normalization_examples": {
+      "asterisk_age_note": true,
+      "numericEntity": true,
+      "encodedStatus": true
+    },
     "database_hashes_and_row_counts_unchanged": true
   },
   "databases": {

@@ -104,12 +104,12 @@ Tilføjet `statistik/scripts/127-youth-format-and-kbh-width.mjs` og genereret `s
 
 | Aldersgruppe | Sæsoner | Rækker/ligaer | Fysiske puljer |
 | --- | ---: | ---: | ---: |
-| U09 | 7 | 11/16 (68,8 %) | 16/25 (64,0 %) |
-| U11 | 16 | 35/115 (30,4 %) | 43/158 (27,2 %) |
-| U13 | 16 | 47/147 (32,0 %) | 55/197 (27,9 %) |
-| U15 | 16 | 56/163 (34,4 %) | 58/217 (26,7 %) |
+| U09 | 6 | 9/13 (69,2 %) | 14/22 (63,6 %) |
+| U11 | 15 | 31/108 (28,7 %) | 39/150 (26,0 %) |
+| U13 | 15 | 40/132 (30,3 %) | 46/178 (25,8 %) |
+| U15 | 15 | 48/143 (33,6 %) | 50/194 (25,8 %) |
 | U17 | 6 | 4/21 (19,0 %) | 4/21 (19,0 %) |
-| U17/U19 | 8 | 15/67 (22,4 %) | 16/109 (14,7 %) |
+| U17/U19 | 7 | 10/52 (19,2 %) | 10/88 (11,4 %) |
 
 **Fem stikprøver mod de rå pulje-/holdlister, placering og bredde:**
 
@@ -119,7 +119,7 @@ Tilføjet `statistik/scripts/127-youth-format-and-kbh-width.mjs` og genereret `s
 | 2016/2017 U11 | 4 | 4 spillere, nr. 3/4 | 4+3 | 2/9 | 2/10 | 4/4 match |
 | 2020/2021 U15 | 3 | 4 piger, nr. 3/4 | 4+3 | 3/12 | 3/13 | 2/2 tilgængelige match |
 | 2025/2026 U11 | 7 | 4 piger, nr. 3/5 | 4+3 | 3/7 | 4/14 | 7/7 match |
-| 2026/2027 U13 | 10 | 2+2, nr. 1/2 | 2+2 | 7/15 | 9/19 | 0/0 tilgængelige i 125 |
+| 2026/2027 U13 *(i gang, ufuldstændig)* | 10 | 2+2, nr. 1/2 — kun endnu spillede/kategoriserede puljer | 2+2 | 7/15 | 9/19 | 0/0 tilgængelige i 125 |
 
 Fuld puljenøgle, holdnavn, format, normaliserede klubber i nationalt højeste format samt rækker og puljer findes i MD/JSON-resultaterne. De 5182 nationale ungdomspuljer med medlemskab i flere regioner tælles kun én gang pr. fysisk puljenøgle i København.
 
@@ -129,3 +129,16 @@ Fuld puljenøgle, holdnavn, format, normaliserede klubber i nationalt højeste f
 - `liga-landskab.db`: SHA-256 før/efter `9976723eaa61e248adc7ee33348cad41eebf9f30ddfdf913b6d40ef9d0d4b74c`; tabelrækketal før/efter er identiske (bl.a. `league_groups=18546`, `league_group_regions=59127`, `league_group_teams=96823`, `regions=33`).
 
 Fuld før/efter-rækketal for samtlige tabeller står i JSON-resultatfilen. Ingen åbne spørgsmål; begrænsningen er, at format uden brugbar signatur/formattekst står uplaceret, og at klubnormalisering følger alene den godkendte tekstregel — den er ikke en ekstern klubidentitetsmapping.
+
+### Små rettelser efter gennemgang
+
+2026/2027 er markeret **i gang, ufuldstændig** i både placeringstabellen og bredde-tabellen. Placeringen er kun for de endnu spillede/kategoriserede puljer. Sæsonen er fjernet fra “Samlet over tid”; summerne ovenfor bruger kun afsluttede sæsoner. For alle sæson/aldersgrupper med n=1 er status ændret til **kun ét format findes**.
+
+Klubnavnenormaliseringen dekoder nu numeriske og almindelige danske HTML-entiteter og fjerner også stjerne-/aldersdispensationsnoter og statusmarkører før trailing holdnummer fjernes. I højeste-format-klublisterne ændrede normaliseringen **1.856 af 2.732 holdnavneforekomster**, på tværs af **413 forskellige rå navnevarianter** (1.137 rå-navn/sæson/aldersgruppe-forekomster). Eksempler: `Greve 1 *alders disp.` → `Greve`; `&#216;lstykke 1` → `Ølstykke`; `abc Aalborg UDG&#197;ET` → `abc Aalborg`. Den fulde rå→normaliseret-liste står i rapporten.
+
+Genkørselskontroller: `node --check statistik/scripts/127-youth-format-and-kbh-width.mjs` bestod; scriptkørslen bestod; GSB-balancen er fortsat **279 = 233 placerede + 34 aktive uplacerede + 12 udgåede/trukne**. Alle fem stikprøver blev genkontrolleret; breddeparrene forbliver 2011/2012 U11 2/5, 2/5; 2016/2017 U11 2/9, 2/10; 2020/2021 U15 3/12, 3/13; 2025/2026 U11 3/7, 4/14; 2026/2027 U13 7/15, 9/19 (sidstnævnte foreløbig). `current_season_excluded_from_overall=true`; `database_hashes_and_row_counts_unchanged=true`.
+
+Databaseværn ved genkørsel (før/efter identisk):
+
+- `gsb-statistik-normalized.db` SHA-256 `49bc62ac3aa8b5a003a4b4d1a8112a8f986d12c8667b22342027d42a1d01b41e`; rækketal: `clubs=1, competitions=462, extraction_errors=1444, individual_match_players=67196, individual_matches=20319, players=7599, raw_payloads=2874, seasons=26, standings=751, team_matches=2818, teams=472`.
+- `liga-landskab.db` SHA-256 `9976723eaa61e248adc7ee33348cad41eebf9f30ddfdf913b6d40ef9d0d4b74c`; rækketal: `age_groups=29, club_registry=796, fetch_errors=0, group_type_katalog=8928, league_group_details=18546, league_group_match_counts=18546, league_group_regions=59127, league_group_teams=96823, league_groups=18546, league_match_groups=310137, league_match_requests=221558, league_matches=203012, match_categories=1300474, match_games=2636258, regions=33, standing_indexes=16269`.

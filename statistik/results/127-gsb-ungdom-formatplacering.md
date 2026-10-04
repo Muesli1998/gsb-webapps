@@ -18,7 +18,7 @@ Region 8: 784 fysiske puljer fordelt på 568 rækker; manglende rækkenavn: 0. A
 
 ## Formatplacering A pr. sæson og aldersgruppe
 
-Poolenes format følger 126's per-pool metode: 125's afgørelser for S4/D2-puljer, ellers kategorisignatur/formattekst som i 126. Tier og global placering følger rækkefølgen i `126-rangering-final.json`. “x/n” er plads blandt de forskellige placerbare formater, der findes nationalt i samme sæson og aldersgruppe; uplacerede formater indgår ikke i n.
+Poolenes format følger 126's per-pool metode: 125's afgørelser for S4/D2-puljer, ellers kategorisignatur/formattekst som i 126. Tier og global placering følger rækkefølgen i `126-rangering-final.json`. “x/n” er plads blandt de forskellige placerbare formater, der findes nationalt i samme sæson og aldersgruppe; uplacerede formater indgår ikke i n. **2026/2027 er i gang og ufuldstændig**; sæsonens viste placering gælder kun de endnu spillede/kategoriserede puljer. Når n=1, står der “kun ét format findes” frem for “i højeste format”.
 
 | Sæson | Aldersgruppe | GSB hold-puljeposter | GSB-status | Bedste GSB-format | Højeste nationalt | Aktive uplacerede | Udgået/trukket |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -58,39 +58,39 @@ Poolenes format følger 126's per-pool metode: 125's afgørelser for S4/D2-pulje
 | 2019/2020 | U11 (ID 3) | 1 | under højeste format | 4 spillere (Tier 1; 4/4; 126 #7) | 4+3 (Tier 1) | 0 | 0 |
 | 2019/2020 | U13 (ID 4) | 2 | under højeste format | 4 spillere (Tier 1; 3/5; 126 #7) | 4+3 (Tier 1) | 0 | 0 |
 | 2019/2020 | U15 (ID 5) | 1 | under højeste format | 4 spillere (Tier 1; 4/5; 126 #7) | 4+3 (Tier 1) | 0 | 0 |
-| 2020/2021 | U09 (ID 2) | 2 | i højeste format | 4 spillere (Tier 1; 1/1; 126 #7) | 4 spillere (Tier 1) | 0 | 0 |
+| 2020/2021 | U09 (ID 2) | 2 | kun ét format findes | 4 spillere (Tier 1; 1/1; 126 #7) | 4 spillere (Tier 1) | 0 | 0 |
 | 2020/2021 | U11 (ID 3) | 2 | under højeste format | 4 spillere (Tier 1; 4/4; 126 #7) | 4+3 (Tier 1) | 0 | 0 |
 | 2020/2021 | U13 (ID 4) | 2 | under højeste format | 4 spillere (Tier 1; 3/3; 126 #7) | 4+3 (Tier 1) | 0 | 0 |
 | 2020/2021 | U15 (ID 5) | 3 | under højeste format | 4 piger (Tier 1; 3/4; 126 #4) | 4+3 (Tier 1) | 0 | 0 |
-| 2021/2022 | U09 (ID 2) | 3 | i højeste format | 4 spillere (Tier 1; 1/1; 126 #7) | 4 spillere (Tier 1) | 0 | 0 |
+| 2021/2022 | U09 (ID 2) | 3 | kun ét format findes | 4 spillere (Tier 1; 1/1; 126 #7) | 4 spillere (Tier 1) | 0 | 0 |
 | 2021/2022 | U11 (ID 3) | 3 | under højeste format | 4 spillere (Tier 1; 4/5; 126 #7) | 4+3 (Tier 1) | 0 | 0 |
 | 2021/2022 | U13 (ID 4) | 7 | under højeste format | 4 piger (Tier 1; 2/3; 126 #4) | 4+3 (Tier 1) | 0 | 0 |
 | 2021/2022 | U15 (ID 5) | 5 | under højeste format | 4 piger (Tier 1; 3/4; 126 #4) | 4+3 (Tier 1) | 0 | 0 |
-| 2022/2023 | U09 (ID 2) | 1 | i højeste format | 4 spillere (Tier 1; 1/1; 126 #7) | 4 spillere (Tier 1) | 0 | 0 |
+| 2022/2023 | U09 (ID 2) | 1 | kun ét format findes | 4 spillere (Tier 1; 1/1; 126 #7) | 4 spillere (Tier 1) | 0 | 0 |
 | 2022/2023 | U11 (ID 3) | 9 | under højeste format | 2+2 (Tier 1; 2/4; 126 #3) | 4+3 (Tier 1) | 0 | 0 |
 | 2022/2023 | U13 (ID 4) | 6 | under højeste format | 4 spillere (Tier 1; 4/4; 126 #7) | 4+3 (Tier 1) | 0 | 0 |
 | 2022/2023 | U15 (ID 5) | 8 | under højeste format | 4 piger (Tier 1; 3/4; 126 #4) | 4+3 (Tier 1) | 0 | 0 |
 | 2022/2023 | U17/U19 (ID 18) | 3 | under højeste format | 4 spillere (Tier 1; 4/4; 126 #7) | 4+2 (Tier 1) | 0 | 0 |
-| 2023/2024 | U09 (ID 2) | 2 | i højeste format | 4 spillere (Tier 1; 1/1; 126 #7) | 4 spillere (Tier 1) | 0 | 0 |
+| 2023/2024 | U09 (ID 2) | 2 | kun ét format findes | 4 spillere (Tier 1; 1/1; 126 #7) | 4 spillere (Tier 1) | 0 | 0 |
 | 2023/2024 | U11 (ID 3) | 10 | under højeste format | 2+2 (Tier 1; 2/4; 126 #3) | 4+3 (Tier 1) | 0 | 0 |
 | 2023/2024 | U13 (ID 4) | 4 | under højeste format | 4 piger (Tier 1; 3/4; 126 #4) | 4+3 (Tier 1) | 0 | 0 |
 | 2023/2024 | U15 (ID 5) | 5 | under højeste format | 2+2 (Tier 1; 2/4; 126 #3) | 4+3 (Tier 1) | 0 | 0 |
 | 2023/2024 | U17/U19 (ID 18) | 4 | under højeste format | 4 spillere (Tier 1; 4/4; 126 #7) | 4+2 (Tier 1) | 0 | 0 |
-| 2024/2025 | U09 (ID 2) | 4 | i højeste format | 4 spillere (Tier 1; 1/1; 126 #7) | 4 spillere (Tier 1) | 0 | 0 |
+| 2024/2025 | U09 (ID 2) | 4 | kun ét format findes | 4 spillere (Tier 1; 1/1; 126 #7) | 4 spillere (Tier 1) | 0 | 0 |
 | 2024/2025 | U11 (ID 3) | 9 | under højeste format | 4 piger (Tier 1; 3/4; 126 #4) | 4+3 (Tier 1) | 0 | 0 |
 | 2024/2025 | U13 (ID 4) | 14 | under højeste format | 2+2 (Tier 1; 2/4; 126 #3) | 4+3 (Tier 1) | 0 | 0 |
 | 2024/2025 | U15 (ID 5) | 7 | under højeste format | 2+2 (Tier 1; 2/4; 126 #3) | 4+3 (Tier 1) | 0 | 0 |
 | 2024/2025 | U17/U19 (ID 18) | 1 | under højeste format | 4 spillere (Tier 1; 5/5; 126 #7) | 4+2 (Tier 1) | 0 | 0 |
-| 2025/2026 | U09 (ID 2) | 11 | i højeste format | 3 spillere (Tier 1; 1/1; 126 #8) | 3 spillere (Tier 1) | 0 | 0 |
+| 2025/2026 | U09 (ID 2) | 11 | kun ét format findes | 3 spillere (Tier 1; 1/1; 126 #8) | 3 spillere (Tier 1) | 0 | 0 |
 | 2025/2026 | U11 (ID 3) | 7 | under højeste format | 4 piger (Tier 1; 3/5; 126 #4) | 4+3 (Tier 1) | 0 | 0 |
 | 2025/2026 | U13 (ID 4) | 22 | under højeste format | 2+2 (Tier 1; 2/5; 126 #3) | 4+3 (Tier 1) | 0 | 0 |
 | 2025/2026 | U15 (ID 5) | 15 | under højeste format | 2+2 (Tier 1; 2/4; 126 #3) | 4+3 (Tier 1) | 0 | 0 |
 | 2025/2026 | U17/U19 (ID 18) | 3 | under højeste format | 2+2 (Tier 1; 2/6; 126 #3) | 4+2 (Tier 1) | 0 | 0 |
-| 2026/2027 | U09 (ID 2) | 4 | aktivt GSB-hold, format uplaceret | — | 3 spillere (Tier 1) | 4 | 0 |
-| 2026/2027 | U11 (ID 3) | 5 | aktivt GSB-hold, format uplaceret | — | ingen placerbart format | 5 | 0 |
-| 2026/2027 | U13 (ID 4) | 10 | i højeste format | 2+2 (Tier 1; 1/2; 126 #3) | 2+2 (Tier 1) | 6 | 0 |
-| 2026/2027 | U15 (ID 5) | 9 | i højeste format | 2+2 (Tier 1; 1/1; 126 #3) | 2+2 (Tier 1) | 7 | 0 |
-| 2026/2027 | U17/U19 (ID 18) | 7 | under højeste format | 2+2 (Tier 1; 2/3; 126 #3) | 4+2 (Tier 1) | 5 | 0 |
+| 2026/2027 (i gang, ufuldstændig) | U09 (ID 2) | 4 | aktivt GSB-hold, format uplaceret (kun de endnu spillede/kategoriserede puljer) | kun de endnu spillede/kategoriserede puljer | 3 spillere (Tier 1) | 4 | 0 |
+| 2026/2027 (i gang, ufuldstændig) | U11 (ID 3) | 5 | aktivt GSB-hold, format uplaceret (kun de endnu spillede/kategoriserede puljer) | kun de endnu spillede/kategoriserede puljer | ingen placerbart format | 5 | 0 |
+| 2026/2027 (i gang, ufuldstændig) | U13 (ID 4) | 10 | i højeste format (kun de endnu spillede/kategoriserede puljer) | 2+2 (Tier 1; 1/2; 126 #3; kun de endnu spillede/kategoriserede puljer) | 2+2 (Tier 1) | 6 | 0 |
+| 2026/2027 (i gang, ufuldstændig) | U15 (ID 5) | 9 | kun ét format findes (kun de endnu spillede/kategoriserede puljer) | 2+2 (Tier 1; 1/1; 126 #3; kun de endnu spillede/kategoriserede puljer) | 2+2 (Tier 1) | 7 | 0 |
+| 2026/2027 (i gang, ufuldstændig) | U17/U19 (ID 18) | 7 | under højeste format (kun de endnu spillede/kategoriserede puljer) | 2+2 (Tier 1; 2/3; 126 #3; kun de endnu spillede/kategoriserede puljer) | 4+2 (Tier 1) | 5 | 0 |
 
 ### Alle GSB-hold/puljer
 
@@ -340,48 +340,47 @@ Poolenes format følger 126's per-pool metode: 125's afgørelser for S4/D2-pulje
 | 2025/2026 | U17/U19 (18) | Gladsaxe Søborg 3 | 2025\|18\|17999 | Uge 38 - U17/U19 D, 5000 (2+2) | Pulje 1 | 2+2 | Tier 1; 126 #3 |  |
 | 2025/2026 | U17/U19 (18) | Gladsaxe Søborg 2 | 2025\|18\|18122 | U17/U19 D, 5200 (4 spillere) | Pulje 3 | 4 spillere | Tier 1; 126 #7 |  |
 | 2025/2026 | U17/U19 (18) | Gladsaxe Søborg 1 | 2025\|18\|18154 | C-D 5600 (4 spillere) BD | Pulje 1 | 4 spillere | Tier 1; 126 #7 |  |
-| 2026/2027 | U09 (2) | Gladsaxe Søborg 3 | 2026\|2\|19114 | U9 Dx, 3000 (3 spillere) BD | Pulje 1 | Uplaceret: 3 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
-| 2026/2027 | U09 (2) | Gladsaxe Søborg 4 | 2026\|2\|19114 | U9 Dx, 3000 (3 spillere) BD | Pulje 1 | Uplaceret: 3 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
-| 2026/2027 | U09 (2) | Gladsaxe Søborg 1 | 2026\|2\|19115 | U09 D 3300 (3 spillere) BD | Pulje 1 | Uplaceret: 3 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
-| 2026/2027 | U09 (2) | Gladsaxe Søborg 2 | 2026\|2\|19115 | U09 D 3300 (3 spillere) BD | Pulje 1 | Uplaceret: 3 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
-| 2026/2027 | U11 (3) | Gladsaxe Søborg 1 | 2026\|3\|19124 | U11 B, 5600 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
-| 2026/2027 | U11 (3) | Gladsaxe Søborg 2 | 2026\|3\|19126 | U11 C-D, 4700 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
-| 2026/2027 | U11 (3) | Gladsaxe Søborg 3 | 2026\|3\|19133 | U11 Dx, 4200 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
-| 2026/2027 | U11 (3) | Gladsaxe Søborg 4 | 2026\|3\|19133 | U11 Dx, 4200 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
-| 2026/2027 | U11 (3) | Gladsaxe Søborg 5 | 2026\|3\|19135 | U11 D, 4200 (4 piger) BD | Pulje 1 | Uplaceret: 4 piger (ingen brugbar kategorisignatur) | Uplaceret |  |
-| 2026/2027 | U13 (4) | Gladsaxe Søborg 1 | 2026\|4\|18976 | U13 B, 5200 (2+2) | Pulje 1 | Uplaceret: 2+2 (ingen brugbar kategorisignatur) | Uplaceret |  |
-| 2026/2027 | U13 (4) | Gladsaxe Søborg 5 | 2026\|4\|18977 | UGE 38 - U13 D, 4600 (2+2) | Pulje 1 | 2+2 | Tier 1; 126 #3 |  |
-| 2026/2027 | U13 (4) | Gladsaxe Søborg 4 | 2026\|4\|19007 | UGE 38 - U13 B, 5200 (2+2) | Pulje 1 | 2+2 | Tier 1; 126 #3 |  |
-| 2026/2027 | U13 (4) | Gladsaxe Søborg 3 | 2026\|4\|19008 | UGE 38 - U13 B, 5200 (2+2) | Pulje 2 | 2+2 | Tier 1; 126 #3 |  |
-| 2026/2027 | U13 (4) | Gladsaxe Søborg 3 | 2026\|4\|19009 | UGE 38 - U13 B, 5200 (2+2) | Finale | 2+2 | Tier 1; 126 #3 |  |
-| 2026/2027 | U13 (4) | Gladsaxe Søborg 2 | 2026\|4\|19140 | U13 B, 5600 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
-| 2026/2027 | U13 (4) | Gladsaxe Søborg 3 | 2026\|4\|19142 | U13 C-D, 4800 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
-| 2026/2027 | U13 (4) | Gladsaxe Søborg 4 | 2026\|4\|19144 | U13 Dx, 4400 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
-| 2026/2027 | U13 (4) | Gladsaxe Søborg 5 | 2026\|4\|19144 | U13 Dx, 4400 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
-| 2026/2027 | U13 (4) | Gladsaxe Søborg 6 | 2026\|4\|19146 | U13 D, 4400 (4 piger) BD | Pulje 1 | Uplaceret: 4 piger (ingen brugbar kategorisignatur) | Uplaceret |  |
-| 2026/2027 | U15 (5) | Gladsaxe Søborg 1 | 2026\|5\|18984 | UGE 38 - U15 A, 6800 (2+2) | Pulje 1 | 2+2 | Tier 1; 126 #3 |  |
-| 2026/2027 | U15 (5) | Gladsaxe Søborg 2 | 2026\|5\|18987 | UGE 38 - U15 B, 5800 (2+2) | Pulje 1 | 2+2 | Tier 1; 126 #3 |  |
-| 2026/2027 | U15 (5) | Gladsaxe Søborg 6 | 2026\|5\|19088 | U15 Dx, 4600 (4 spillere) | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
-| 2026/2027 | U15 (5) | Gladsaxe Søborg 7 | 2026\|5\|19100 | U15 C, 4900 (4 piger) | Pulje 1 | Uplaceret: 4 piger (ingen brugbar kategorisignatur) | Uplaceret |  |
-| 2026/2027 | U15 (5) | Gladsaxe Søborg 1 | 2026\|5\|19106 | U15 A, 7200 (4 spillere) | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
-| 2026/2027 | U15 (5) | Gladsaxe Søborg 2 | 2026\|5\|19117 | U15 B, 6200 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
-| 2026/2027 | U15 (5) | Gladsaxe Søborg 3 | 2026\|5\|19117 | U15 B, 6200 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
-| 2026/2027 | U15 (5) | Gladsaxe Søborg 4 | 2026\|5\|19118 | U15 C-D, 5100 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
-| 2026/2027 | U15 (5) | Gladsaxe Søborg 5 | 2026\|5\|19119 | U15 D, 4800 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
-| 2026/2027 | U17/U19 (18) | Gladsaxe Søborg 1 | 2026\|18\|18991 | U17/U19 B, 6800 (2+2) | Pulje 2 | Uplaceret: 2+2 (ingen brugbar kategorisignatur) | Uplaceret |  |
-| 2026/2027 | U17/U19 (18) | Gladsaxe Søborg 2 | 2026\|18\|18994 | UGE 38 - U17/U19 B, 6800 (2+2) | Pulje 2 | 2+2 | Tier 1; 126 #3 |  |
-| 2026/2027 | U17/U19 (18) | Gladsaxe Søborg | 2026\|18\|18995 | UGE 38 - U17/U19 B, 6800 (2+2) | Finale | Uplaceret: 2+2 (ingen brugbar kategorisignatur) | Uplaceret |  |
-| 2026/2027 | U17/U19 (18) | Gladsaxe Søborg 3 | 2026\|18\|18996 | UGE 38 - U17/U19 D, 5000 (2+2) | Pulje 1 | 2+2 | Tier 1; 126 #3 |  |
-| 2026/2027 | U17/U19 (18) | Gladsaxe Søborg 2 | 2026\|18\|19122 | U17/U19 C-D, 5500 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
-| 2026/2027 | U17/U19 (18) | Gladsaxe Søborg 3 | 2026\|18\|19122 | U17/U19 C-D, 5500 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
-| 2026/2027 | U17/U19 (18) | Gladsaxe Søborg 4 | 2026\|18\|19123 | U17/U19 D, 4800 (4 piger) BD | Pulje 1 | Uplaceret: 4 piger (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U09 (2) | Gladsaxe Søborg 3 | 2026\|2\|19114 | U9 Dx, 3000 (3 spillere) BD | Pulje 1 | Uplaceret: 3 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U09 (2) | Gladsaxe Søborg 4 | 2026\|2\|19114 | U9 Dx, 3000 (3 spillere) BD | Pulje 1 | Uplaceret: 3 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U09 (2) | Gladsaxe Søborg 1 | 2026\|2\|19115 | U09 D 3300 (3 spillere) BD | Pulje 1 | Uplaceret: 3 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U09 (2) | Gladsaxe Søborg 2 | 2026\|2\|19115 | U09 D 3300 (3 spillere) BD | Pulje 1 | Uplaceret: 3 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U11 (3) | Gladsaxe Søborg 1 | 2026\|3\|19124 | U11 B, 5600 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U11 (3) | Gladsaxe Søborg 2 | 2026\|3\|19126 | U11 C-D, 4700 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U11 (3) | Gladsaxe Søborg 3 | 2026\|3\|19133 | U11 Dx, 4200 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U11 (3) | Gladsaxe Søborg 4 | 2026\|3\|19133 | U11 Dx, 4200 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U11 (3) | Gladsaxe Søborg 5 | 2026\|3\|19135 | U11 D, 4200 (4 piger) BD | Pulje 1 | Uplaceret: 4 piger (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U13 (4) | Gladsaxe Søborg 1 | 2026\|4\|18976 | U13 B, 5200 (2+2) | Pulje 1 | Uplaceret: 2+2 (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U13 (4) | Gladsaxe Søborg 5 | 2026\|4\|18977 | UGE 38 - U13 D, 4600 (2+2) | Pulje 1 | 2+2 | Tier 1; 126 #3 |  |
+| 2026/2027 (i gang, ufuldstændig) | U13 (4) | Gladsaxe Søborg 4 | 2026\|4\|19007 | UGE 38 - U13 B, 5200 (2+2) | Pulje 1 | 2+2 | Tier 1; 126 #3 |  |
+| 2026/2027 (i gang, ufuldstændig) | U13 (4) | Gladsaxe Søborg 3 | 2026\|4\|19008 | UGE 38 - U13 B, 5200 (2+2) | Pulje 2 | 2+2 | Tier 1; 126 #3 |  |
+| 2026/2027 (i gang, ufuldstændig) | U13 (4) | Gladsaxe Søborg 3 | 2026\|4\|19009 | UGE 38 - U13 B, 5200 (2+2) | Finale | 2+2 | Tier 1; 126 #3 |  |
+| 2026/2027 (i gang, ufuldstændig) | U13 (4) | Gladsaxe Søborg 2 | 2026\|4\|19140 | U13 B, 5600 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U13 (4) | Gladsaxe Søborg 3 | 2026\|4\|19142 | U13 C-D, 4800 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U13 (4) | Gladsaxe Søborg 4 | 2026\|4\|19144 | U13 Dx, 4400 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U13 (4) | Gladsaxe Søborg 5 | 2026\|4\|19144 | U13 Dx, 4400 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U13 (4) | Gladsaxe Søborg 6 | 2026\|4\|19146 | U13 D, 4400 (4 piger) BD | Pulje 1 | Uplaceret: 4 piger (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | Gladsaxe Søborg 1 | 2026\|5\|18984 | UGE 38 - U15 A, 6800 (2+2) | Pulje 1 | 2+2 | Tier 1; 126 #3 |  |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | Gladsaxe Søborg 2 | 2026\|5\|18987 | UGE 38 - U15 B, 5800 (2+2) | Pulje 1 | 2+2 | Tier 1; 126 #3 |  |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | Gladsaxe Søborg 6 | 2026\|5\|19088 | U15 Dx, 4600 (4 spillere) | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | Gladsaxe Søborg 7 | 2026\|5\|19100 | U15 C, 4900 (4 piger) | Pulje 1 | Uplaceret: 4 piger (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | Gladsaxe Søborg 1 | 2026\|5\|19106 | U15 A, 7200 (4 spillere) | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | Gladsaxe Søborg 2 | 2026\|5\|19117 | U15 B, 6200 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | Gladsaxe Søborg 3 | 2026\|5\|19117 | U15 B, 6200 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | Gladsaxe Søborg 4 | 2026\|5\|19118 | U15 C-D, 5100 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | Gladsaxe Søborg 5 | 2026\|5\|19119 | U15 D, 4800 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U17/U19 (18) | Gladsaxe Søborg 1 | 2026\|18\|18991 | U17/U19 B, 6800 (2+2) | Pulje 2 | Uplaceret: 2+2 (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U17/U19 (18) | Gladsaxe Søborg 2 | 2026\|18\|18994 | UGE 38 - U17/U19 B, 6800 (2+2) | Pulje 2 | 2+2 | Tier 1; 126 #3 |  |
+| 2026/2027 (i gang, ufuldstændig) | U17/U19 (18) | Gladsaxe Søborg | 2026\|18\|18995 | UGE 38 - U17/U19 B, 6800 (2+2) | Finale | Uplaceret: 2+2 (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U17/U19 (18) | Gladsaxe Søborg 3 | 2026\|18\|18996 | UGE 38 - U17/U19 D, 5000 (2+2) | Pulje 1 | 2+2 | Tier 1; 126 #3 |  |
+| 2026/2027 (i gang, ufuldstændig) | U17/U19 (18) | Gladsaxe Søborg 2 | 2026\|18\|19122 | U17/U19 C-D, 5500 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U17/U19 (18) | Gladsaxe Søborg 3 | 2026\|18\|19122 | U17/U19 C-D, 5500 (4 spillere) BD | Pulje 1 | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
+| 2026/2027 (i gang, ufuldstændig) | U17/U19 (18) | Gladsaxe Søborg 4 | 2026\|18\|19123 | U17/U19 D, 4800 (4 piger) BD | Pulje 1 | Uplaceret: 4 piger (ingen brugbar kategorisignatur) | Uplaceret |  |
 
 ### Klubber i højeste format — normaliseret navn og rå holdnavne
 
 | Sæson | Alder | Højeste format | Normaliseret klubenhed | Rå holdnavne |
 | --- | --- | --- | --- | --- |
-| 2011/2012 | U11 (3) | 4+3 | Greve | Greve 1 |
-| 2011/2012 | U11 (3) | 4+3 | Greve 1 *alders disp. | Greve 1 *alders disp. |
+| 2011/2012 | U11 (3) | 4+3 | Greve | Greve 1; Greve 1 *alders disp. |
 | 2011/2012 | U11 (3) | 4+3 | Horsens | Horsens |
 | 2011/2012 | U11 (3) | 4+3 | Højbjerg | Højbjerg |
 | 2011/2012 | U11 (3) | 4+3 | Kolding BK | Kolding BK |
@@ -421,7 +420,7 @@ Poolenes format følger 126's per-pool metode: 125's afgørelser for S4/D2-pulje
 | 2011/2012 | U15 (5) | 4+3 | Værløse | Værløse 1 |
 | 2011/2012 | U15 (5) | 4+3 | Aalborg Triton | Aalborg Triton |
 | 2011/2012 | U15 (5) | 4+3 | Aarhus AB | Aarhus AB |
-| 2011/2012 | U17 (6) | 4+3 | abc Aalborg UDG&#197;ET | abc Aalborg UDG&#197;ET |
+| 2011/2012 | U17 (6) | 4+3 | abc Aalborg | abc Aalborg UDG&#197;ET |
 | 2011/2012 | U17 (6) | 4+3 | Greve | Greve 1 |
 | 2011/2012 | U17 (6) | 4+3 | Grindsted BK | Grindsted BK |
 | 2011/2012 | U17 (6) | 4+3 | Hjemly Idrætsefterskole | Hjemly Idrætsefterskole |
@@ -435,13 +434,13 @@ Poolenes format følger 126's per-pool metode: 125's afgørelser for S4/D2-pulje
 | 2011/2012 | U17 (6) | 4+3 | Solrød Strand | Solrød Strand 1 |
 | 2011/2012 | U17 (6) | 4+3 | Sportsefterskolen SINE | Sportsefterskolen SINE |
 | 2011/2012 | U17 (6) | 4+3 | Aarhus AB | Aarhus AB |
-| 2012/2013 | U11 (3) | 4+3 | &#216;lstykke | &#216;lstykke |
 | 2012/2013 | U11 (3) | 4+3 | Greve | Greve |
 | 2012/2013 | U11 (3) | 4+3 | Højbjerg | Højbjerg 1; Højbjerg 2 |
 | 2012/2013 | U11 (3) | 4+3 | Kolding BK | Kolding BK |
 | 2012/2013 | U11 (3) | 4+3 | Lillerød | Lillerød |
 | 2012/2013 | U11 (3) | 4+3 | Solrød Strand | Solrød Strand; Solrød Strand 2 |
 | 2012/2013 | U11 (3) | 4+3 | Værløse | Værløse |
+| 2012/2013 | U11 (3) | 4+3 | Ølstykke | &#216;lstykke |
 | 2012/2013 | U11 (3) | 4+3 | Aarhus AB | Aarhus AB |
 | 2012/2013 | U13 (4) | 4+3 | abc Aalborg | abc Aalborg |
 | 2012/2013 | U13 (4) | 4+3 | Bornholm. | Bornholm. |
@@ -742,7 +741,6 @@ Poolenes format følger 126's per-pool metode: 125's afgørelser for S4/D2-pulje
 | 2016/2017 | U13 (4) | 4+3 | Team Badminton Esbjerg | Team Badminton Esbjerg 1 |
 | 2016/2017 | U13 (4) | 4+3 | Viby J | Viby J 1 |
 | 2016/2017 | U13 (4) | 4+3 | Værløse | Værløse 1 |
-| 2016/2017 | U15 (5) | 4+3 | &#216;lstykke-Herlev/Hjorten | &#216;lstykke-Herlev/Hjorten 1 |
 | 2016/2017 | U15 (5) | 4+3 | abc Aalborg | abc Aalborg; abc Aalborg 1 |
 | 2016/2017 | U15 (5) | 4+3 | Brønderslev | Brønderslev; Brønderslev 1 |
 | 2016/2017 | U15 (5) | 4+3 | Greve | Greve 1 |
@@ -759,6 +757,7 @@ Poolenes format følger 126's per-pool metode: 125's afgørelser for S4/D2-pulje
 | 2016/2017 | U15 (5) | 4+3 | Triton-RBK-RIF | Triton-RBK-RIF; Triton-RBK-RIF 1 |
 | 2016/2017 | U15 (5) | 4+3 | Viby J | Viby J; Viby J 1 |
 | 2016/2017 | U15 (5) | 4+3 | Værløse | Værløse; Værløse 1 |
+| 2016/2017 | U15 (5) | 4+3 | Ølstykke-Herlev/Hjorten | &#216;lstykke-Herlev/Hjorten 1 |
 | 2016/2017 | U17 (6) | 4+3 | abc Aalborg | abc Aalborg 1 |
 | 2016/2017 | U17 (6) | 4+3 | Drive | Drive |
 | 2016/2017 | U17 (6) | 4+3 | Gentofte | Gentofte; Gentofte 1 |
@@ -834,7 +833,6 @@ Poolenes format følger 126's per-pool metode: 125's afgørelser for S4/D2-pulje
 | 2017/2018 | U15 (5) | 4+3 | Viby J | Viby J 1 |
 | 2017/2018 | U15 (5) | 4+3 | Værløse | Værløse 1 |
 | 2017/2018 | U15 (5) | 4+3 | Aalborg Triton | Aalborg Triton 1 |
-| 2017/2018 | U17/U19 (18) | 4+2 | &#216;lstykke | &#216;lstykke; &#216;lstykke 1 |
 | 2017/2018 | U17/U19 (18) | 4+2 | Badminton Roskilde | Badminton Roskilde 1 |
 | 2017/2018 | U17/U19 (18) | 4+2 | Blåkilde Efterskole | Blåkilde Efterskole 1 |
 | 2017/2018 | U17/U19 (18) | 4+2 | Brøruphus Efterskole | Brøruphus Efterskole 1 |
@@ -865,6 +863,7 @@ Poolenes format følger 126's per-pool metode: 125's afgørelser for S4/D2-pulje
 | 2017/2018 | U17/U19 (18) | 4+2 | Vejle | Vejle 1 |
 | 2017/2018 | U17/U19 (18) | 4+2 | Vesterbølle Efterskole | Vesterbølle Efterskole 1 |
 | 2017/2018 | U17/U19 (18) | 4+2 | Vorup FB | Vorup FB 1 |
+| 2017/2018 | U17/U19 (18) | 4+2 | Ølstykke | &#216;lstykke; &#216;lstykke 1 |
 | 2018/2019 | U11 (3) | 4+3 | Badminton Fyn | Badminton Fyn |
 | 2018/2019 | U11 (3) | 4+3 | Badminton København | Badminton København |
 | 2018/2019 | U11 (3) | 4+3 | Badminton Midtjylland | Badminton Midtjylland |
@@ -1201,7 +1200,6 @@ Poolenes format følger 126's per-pool metode: 125's afgørelser for S4/D2-pulje
 | 2022/2023 | U17/U19 (18) | 4+2 | Vivild Idrætsefterskole | Vivild Idrætsefterskole 1 |
 | 2022/2023 | U17/U19 (18) | 4+2 | Vojens GI | Vojens GI 1 |
 | 2022/2023 | U17/U19 (18) | 4+2 | Værløse | Værløse 1 |
-| 2023/2024 | U09 (2) | 4 spillere | &#216;lstykke | &#216;lstykke 1 |
 | 2023/2024 | U09 (2) | 4 spillere | Badminton Esbjerg | Badminton Esbjerg 1; Badminton Esbjerg 2 |
 | 2023/2024 | U09 (2) | 4 spillere | Badminton i indre By | Badminton i indre By 1 |
 | 2023/2024 | U09 (2) | 4 spillere | Badminton Roskilde | Badminton Roskilde 1 |
@@ -1246,6 +1244,7 @@ Poolenes format følger 126's per-pool metode: 125's afgørelser for S4/D2-pulje
 | 2023/2024 | U09 (2) | 4 spillere | Varde | Varde 1 |
 | 2023/2024 | U09 (2) | 4 spillere | Viby J | Viby J 1 |
 | 2023/2024 | U09 (2) | 4 spillere | Vinding SF | Vinding SF 1; Vinding SF 1 (2400) |
+| 2023/2024 | U09 (2) | 4 spillere | Ølstykke | &#216;lstykke 1 |
 | 2023/2024 | U09 (2) | 4 spillere | Aalborg Triton | Aalborg Triton 1; Aalborg Triton 2 |
 | 2023/2024 | U09 (2) | 4 spillere | Aarhus AB | Aarhus AB 1; Aarhus AB 2 |
 | 2023/2024 | U11 (3) | 4+3 | BADFYN/BADSDRJ | BADFYN/BADSDRJ |
@@ -1283,8 +1282,8 @@ Poolenes format følger 126's per-pool metode: 125's afgørelser for S4/D2-pulje
 | 2023/2024 | U15 (5) | 4+3 | Odense OBK | Odense OBK 1 |
 | 2023/2024 | U15 (5) | 4+3 | Solrød Strand | Solrød Strand; Solrød Strand 1 |
 | 2023/2024 | U15 (5) | 4+3 | Team Midtsjælland | Team Midtsjælland; Team Midtsjælland 1 |
-| 2023/2024 | U15 (5) | 4+3 | Team Sydjylland &#216;st | Team Sydjylland &#216;st 1 |
 | 2023/2024 | U15 (5) | 4+3 | Team Sydjylland Vest | Team Sydjylland Vest 1 |
+| 2023/2024 | U15 (5) | 4+3 | Team Sydjylland Øst | Team Sydjylland &#216;st 1 |
 | 2023/2024 | U15 (5) | 4+3 | Viby J | Viby J 1 |
 | 2023/2024 | U15 (5) | 4+3 | Værløse | Værløse 1 |
 | 2023/2024 | U15 (5) | 4+3 | Aarhus AB | Aarhus AB 1 |
@@ -1423,7 +1422,6 @@ Poolenes format følger 126's per-pool metode: 125's afgørelser for S4/D2-pulje
 | 2024/2025 | U17/U19 (18) | 4+2 | Vivild Idrætsefterskole | Vivild Idrætsefterskole 1 |
 | 2024/2025 | U17/U19 (18) | 4+2 | Vojens GI | Vojens GI 1; Vojens GI 1 (xtra) |
 | 2024/2025 | U17/U19 (18) | 4+2 | Værløse | Værløse 1 |
-| 2025/2026 | U09 (2) | 3 spillere | &#216;lstykke | &#216;lstykke 1 |
 | 2025/2026 | U09 (2) | 3 spillere | Badminton Esbjerg | Badminton Esbjerg 1; Badminton Esbjerg 11; Badminton Esbjerg 2; Badminton Esbjerg 22 |
 | 2025/2026 | U09 (2) | 3 spillere | BC37 Amager | BC37 Amager 1 |
 | 2025/2026 | U09 (2) | 3 spillere | Brabrand | Brabrand 1; Brabrand 11; Brabrand 2; Brabrand 22 |
@@ -1490,6 +1488,7 @@ Poolenes format følger 126's per-pool metode: 125's afgørelser for S4/D2-pulje
 | 2025/2026 | U09 (2) | 3 spillere | Viby J | Viby J 1; Viby J 11; Viby J 2; Viby J 22; Viby J 3 |
 | 2025/2026 | U09 (2) | 3 spillere | Vinding SF | Vinding SF 1; Vinding SF 11; Vinding SF 2 |
 | 2025/2026 | U09 (2) | 3 spillere | Vinding SF 2 Beg. | Vinding SF 2 Beg. |
+| 2025/2026 | U09 (2) | 3 spillere | Ølstykke | &#216;lstykke 1 |
 | 2025/2026 | U09 (2) | 3 spillere | Aalborg Triton | Aalborg Triton 1; Aalborg Triton 2; Aalborg Triton 3; Aalborg Triton 4 |
 | 2025/2026 | U09 (2) | 3 spillere | Aarhus AB | Aarhus AB 1; Aarhus AB 11; Aarhus AB 2; Aarhus AB 22; Aarhus AB 3; Aarhus AB 33; Aarhus AB 4 |
 | 2025/2026 | U11 (3) | 4+3 | BADFYN/BADSDRJ | BADFYN/BADSDRJ |
@@ -1533,7 +1532,7 @@ Poolenes format følger 126's per-pool metode: 125's afgørelser for S4/D2-pulje
 | 2025/2026 | U17/U19 (18) | 4+2 | BC37 Amager | BC37 Amager 1 |
 | 2025/2026 | U17/U19 (18) | 4+2 | Dybbøl/Graasten | Dybbøl/Graasten 1 |
 | 2025/2026 | U17/U19 (18) | 4+2 | Glamsdalen | Glamsdalen 1; Glamsdalen 2 |
-| 2025/2026 | U17/U19 (18) | 4+2 | Greve/Skælskør/&#216;lstykke | Greve/Skælskør/&#216;lstykke 1 |
+| 2025/2026 | U17/U19 (18) | 4+2 | Greve/Skælskør/Ølstykke | Greve/Skælskør/&#216;lstykke 1 |
 | 2025/2026 | U17/U19 (18) | 4+2 | Gørlev Idrætsefterskole | Gørlev Idrætsefterskole 1 |
 | 2025/2026 | U17/U19 (18) | 4+2 | Hjemly Idrætsefterskole | Hjemly Idrætsefterskole 1; Hjemly Idrætsefterskole 2; Hjemly Idrætsefterskole 2 (xtra); Hjemly Idrætsefterskole 3; Hjemly Idrætsefterskole 3 (xtra) |
 | 2025/2026 | U17/U19 (18) | 4+2 | Hvidovre | Hvidovre 2 |
@@ -1551,43 +1550,463 @@ Poolenes format følger 126's per-pool metode: 125's afgørelser for S4/D2-pulje
 | 2025/2026 | U17/U19 (18) | 4+2 | Sundeved Efterskole | Sundeved Efterskole 1 |
 | 2025/2026 | U17/U19 (18) | 4+2 | Vivild Idrætsefterskole | Vivild Idrætsefterskole 1 |
 | 2025/2026 | U17/U19 (18) | 4+2 | Vojens GI | Vojens GI 1; Vojens GI 2 |
-| 2026/2027 | U09 (2) | 3 spillere | Dronninglund | Dronninglund 1 |
-| 2026/2027 | U09 (2) | 3 spillere | Vejgaard | Vejgaard 1 |
-| 2026/2027 | U13 (4) | 2+2 | Drive | Drive 7 |
-| 2026/2027 | U13 (4) | 2+2 | Gladsaxe Søborg | Gladsaxe Søborg 3; Gladsaxe Søborg 4; Gladsaxe Søborg 5 |
-| 2026/2027 | U13 (4) | 2+2 | Herlev/Hjorten | Herlev/Hjorten 5; Herlev/Hjorten 6 |
-| 2026/2027 | U13 (4) | 2+2 | Holbæk | Holbæk 2 |
-| 2026/2027 | U13 (4) | 2+2 | Hvidovre | Hvidovre 4 |
-| 2026/2027 | U13 (4) | 2+2 | KBK Kbh. | KBK Kbh. 6 |
-| 2026/2027 | U13 (4) | 2+2 | KMB2010 | KMB2010 4 |
-| 2026/2027 | U13 (4) | 2+2 | Rudersdal | Rudersdal 1 |
-| 2026/2027 | U13 (4) | 2+2 | Skovshoved | Skovshoved 6 |
-| 2026/2027 | U13 (4) | 2+2 | Solrød Strand | Solrød Strand 5 |
-| 2026/2027 | U15 (5) | 2+2 | Badminton Roskilde | Badminton Roskilde 2; Badminton Roskilde 3 |
-| 2026/2027 | U15 (5) | 2+2 | Dragør | Dragør 1 |
-| 2026/2027 | U15 (5) | 2+2 | Drive | Drive 6 |
-| 2026/2027 | U15 (5) | 2+2 | FKIF Frederiksberg | FKIF Frederiksberg 1 |
-| 2026/2027 | U15 (5) | 2+2 | Gentofte | Gentofte 2 |
-| 2026/2027 | U15 (5) | 2+2 | Gladsaxe Søborg | Gladsaxe Søborg 1; Gladsaxe Søborg 2 |
-| 2026/2027 | U15 (5) | 2+2 | Greve | Greve 3 |
-| 2026/2027 | U15 (5) | 2+2 | Herlev/Hjorten | Herlev/Hjorten 6; Herlev/Hjorten 7 |
-| 2026/2027 | U15 (5) | 2+2 | Holbæk | Holbæk 2 |
-| 2026/2027 | U15 (5) | 2+2 | Hvidovre | Hvidovre 4 |
-| 2026/2027 | U15 (5) | 2+2 | KBK Kbh. | KBK Kbh. 6 |
-| 2026/2027 | U15 (5) | 2+2 | KMB2010 | KMB2010 5; KMB2010 6 |
-| 2026/2027 | U15 (5) | 2+2 | LBK/SBK/SLBK | LBK/SBK/SLBK 2 |
-| 2026/2027 | U15 (5) | 2+2 | Lundtofte | Lundtofte 4 |
-| 2026/2027 | U15 (5) | 2+2 | Rudersdal | Rudersdal 1 |
-| 2026/2027 | U15 (5) | 2+2 | Skovshoved | Skovshoved 4; Skovshoved 5 |
-| 2026/2027 | U15 (5) | 2+2 | Slangerup/Holte | Slangerup/Holte 2 |
-| 2026/2027 | U17/U19 (18) | 4+2 | Brøruphus Efterskole | Brøruphus Efterskole 1 (A) |
-| 2026/2027 | U17/U19 (18) | 4+2 | Glamsdalen | Glamsdalen 1 (A) |
-| 2026/2027 | U17/U19 (18) | 4+2 | Hjemly Idrætsefterskole | Hjemly Idrætsefterskole 1 (M); Hjemly Idrætsefterskole 2 (A) |
-| 2026/2027 | U17/U19 (18) | 4+2 | Rønde Efterskole | Rønde Efterskole 1 (M); Rønde Efterskole 2 (A) |
-| 2026/2027 | U17/U19 (18) | 4+2 | Sportsefterskolen SINE | Sportsefterskolen SINE 1 (M); Sportsefterskolen SINE 2 (A) |
-| 2026/2027 | U17/U19 (18) | 4+2 | Strib Idrætsefterskole | Strib Idrætsefterskole 1 (A) |
+| 2026/2027 (i gang, ufuldstændig) | U09 (2) | 3 spillere | Dronninglund | Dronninglund 1 |
+| 2026/2027 (i gang, ufuldstændig) | U09 (2) | 3 spillere | Vejgaard | Vejgaard 1 |
+| 2026/2027 (i gang, ufuldstændig) | U13 (4) | 2+2 | Drive | Drive 7 |
+| 2026/2027 (i gang, ufuldstændig) | U13 (4) | 2+2 | Gladsaxe Søborg | Gladsaxe Søborg 3; Gladsaxe Søborg 4; Gladsaxe Søborg 5 |
+| 2026/2027 (i gang, ufuldstændig) | U13 (4) | 2+2 | Herlev/Hjorten | Herlev/Hjorten 5; Herlev/Hjorten 6 |
+| 2026/2027 (i gang, ufuldstændig) | U13 (4) | 2+2 | Holbæk | Holbæk 2 |
+| 2026/2027 (i gang, ufuldstændig) | U13 (4) | 2+2 | Hvidovre | Hvidovre 4 |
+| 2026/2027 (i gang, ufuldstændig) | U13 (4) | 2+2 | KBK Kbh. | KBK Kbh. 6 |
+| 2026/2027 (i gang, ufuldstændig) | U13 (4) | 2+2 | KMB2010 | KMB2010 4 |
+| 2026/2027 (i gang, ufuldstændig) | U13 (4) | 2+2 | Rudersdal | Rudersdal 1 |
+| 2026/2027 (i gang, ufuldstændig) | U13 (4) | 2+2 | Skovshoved | Skovshoved 6 |
+| 2026/2027 (i gang, ufuldstændig) | U13 (4) | 2+2 | Solrød Strand | Solrød Strand 5 |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | 2+2 | Badminton Roskilde | Badminton Roskilde 2; Badminton Roskilde 3 |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | 2+2 | Dragør | Dragør 1 |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | 2+2 | Drive | Drive 6 |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | 2+2 | FKIF Frederiksberg | FKIF Frederiksberg 1 |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | 2+2 | Gentofte | Gentofte 2 |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | 2+2 | Gladsaxe Søborg | Gladsaxe Søborg 1; Gladsaxe Søborg 2 |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | 2+2 | Greve | Greve 3 |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | 2+2 | Herlev/Hjorten | Herlev/Hjorten 6; Herlev/Hjorten 7 |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | 2+2 | Holbæk | Holbæk 2 |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | 2+2 | Hvidovre | Hvidovre 4 |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | 2+2 | KBK Kbh. | KBK Kbh. 6 |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | 2+2 | KMB2010 | KMB2010 5; KMB2010 6 |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | 2+2 | LBK/SBK/SLBK | LBK/SBK/SLBK 2 |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | 2+2 | Lundtofte | Lundtofte 4 |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | 2+2 | Rudersdal | Rudersdal 1 |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | 2+2 | Skovshoved | Skovshoved 4; Skovshoved 5 |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | 2+2 | Slangerup/Holte | Slangerup/Holte 2 |
+| 2026/2027 (i gang, ufuldstændig) | U17/U19 (18) | 4+2 | Brøruphus Efterskole | Brøruphus Efterskole 1 (A) |
+| 2026/2027 (i gang, ufuldstændig) | U17/U19 (18) | 4+2 | Glamsdalen | Glamsdalen 1 (A) |
+| 2026/2027 (i gang, ufuldstændig) | U17/U19 (18) | 4+2 | Hjemly Idrætsefterskole | Hjemly Idrætsefterskole 1 (M); Hjemly Idrætsefterskole 2 (A) |
+| 2026/2027 (i gang, ufuldstændig) | U17/U19 (18) | 4+2 | Rønde Efterskole | Rønde Efterskole 1 (M); Rønde Efterskole 2 (A) |
+| 2026/2027 (i gang, ufuldstændig) | U17/U19 (18) | 4+2 | Sportsefterskolen SINE | Sportsefterskolen SINE 1 (M); Sportsefterskolen SINE 2 (A) |
+| 2026/2027 (i gang, ufuldstændig) | U17/U19 (18) | 4+2 | Strib Idrætsefterskole | Strib Idrætsefterskole 1 (A) |
 
 Samarbejder med slash bevares som én normaliseret enhed. Udgåede/trukne hold er udeladt fra klublisten og vises separat i JSON pr. sæson/aldersgruppe.
+
+### Klubnavnenormalisering — ændrede rå navne
+
+HTML-entiteter er dekodet før normalisering; parentestekst, stjernemarkerede noter, statusmarkører (fx UDGÅET/trukket) og trailing holdnummer fjernes. Normaliseringen ændrede 1856 af 2732 holdnavneforekomster i højeste-format-klublisterne, fordelt på 413 forskellige rå navne (1137 rå-navn/sæson-alder-forekomster). Tabellen viser alle ændrede rå-varianter:
+
+| Råt holdnavn | Normaliseret klubnavn | Sæson/aldersgruppe-forekomster |
+| --- | --- | --- |
+| &#216;lstykke | Ølstykke | 2 |
+| &#216;lstykke 1 | Ølstykke | 3 |
+| &#216;lstykke-Herlev/Hjorten 1 | Ølstykke-Herlev/Hjorten | 1 |
+| AB/Horsens 1 | AB/Horsens | 1 |
+| AB/Viby 1 | AB/Viby | 1 |
+| ABC Aalborg / Gug 1 | ABC Aalborg / Gug | 1 |
+| abc Aalborg 1 | abc Aalborg | 8 |
+| abc Aalborg 2 | abc Aalborg | 1 |
+| abc Aalborg UDG&#197;ET | abc Aalborg | 1 |
+| abc Aalborg/FBK 1 | abc Aalborg/FBK | 1 |
+| Alminde Viuf 1 | Alminde Viuf | 1 |
+| Andst 1 | Andst | 1 |
+| Badminton Esbjerg 1 | Badminton Esbjerg | 8 |
+| Badminton Esbjerg 11 | Badminton Esbjerg | 1 |
+| Badminton Esbjerg 2 | Badminton Esbjerg | 5 |
+| Badminton Esbjerg 22 | Badminton Esbjerg | 1 |
+| Badminton Esbjerg 3 | Badminton Esbjerg | 3 |
+| Badminton Esbjerg 4 | Badminton Esbjerg | 2 |
+| Badminton Esbjerg 5 | Badminton Esbjerg | 1 |
+| Badminton i indre By 1 | Badminton i indre By | 1 |
+| Badminton Roskilde 1 | Badminton Roskilde | 5 |
+| Badminton Roskilde 2 | Badminton Roskilde | 1 |
+| Badminton Roskilde 3 | Badminton Roskilde | 1 |
+| BC37 Amager 1 | BC37 Amager | 9 |
+| Bindslev-Tversted 1 | Bindslev-Tversted | 1 |
+| Bjergby-Mygdal 1 | Bjergby-Mygdal | 4 |
+| Blans Sundeved 1 | Blans Sundeved | 1 |
+| Blenstrup 1 | Blenstrup | 1 |
+| Blåkilde Efterskole 1 | Blåkilde Efterskole | 3 |
+| Blåkilde Efterskole 2 | Blåkilde Efterskole | 1 |
+| Brabrand 1 | Brabrand | 3 |
+| Brabrand 11 | Brabrand | 1 |
+| Brabrand 2 | Brabrand | 1 |
+| Brabrand 22 | Brabrand | 1 |
+| Brøndby BK 1 | Brøndby BK | 1 |
+| Brønderslev 1 | Brønderslev | 6 |
+| Brønderslev 2 | Brønderslev | 1 |
+| Brørup 1 | Brørup | 1 |
+| Brøruphus Efterskole 1 | Brøruphus Efterskole | 3 |
+| Brøruphus Efterskole 1 (A) | Brøruphus Efterskole | 1 |
+| Brøruphus Efterskole 2 (xtra) | Brøruphus Efterskole | 1 |
+| Brøruphus Efterskole 3 | Brøruphus Efterskole | 1 |
+| CBK/GBK/KMB2010 1 | CBK/GBK/KMB2010 | 1 |
+| Charlottenlund 1 | Charlottenlund | 4 |
+| Dall-Ferslev 1 | Dall-Ferslev | 1 |
+| Dall-Ferslev 2 | Dall-Ferslev | 1 |
+| Dalum Hjallese BK 1 | Dalum Hjallese BK | 1 |
+| Dalum Hjallese BK 2 | Dalum Hjallese BK | 1 |
+| Dalum-OBK 1 | Dalum-OBK | 1 |
+| Dragør 1 | Dragør | 3 |
+| Drive 1 | Drive | 6 |
+| Drive 2 | Drive | 3 |
+| Drive 6 | Drive | 1 |
+| Drive 7 | Drive | 1 |
+| Dronninglund 1 | Dronninglund | 1 |
+| Dybbøl 1 | Dybbøl | 2 |
+| Dybbøl 2 | Dybbøl | 1 |
+| Dybbøl/Graasten 1 | Dybbøl/Graasten | 1 |
+| Efterskolen Play 1 | Efterskolen Play | 1 |
+| Efterskolen Solgården 1 | Efterskolen Solgården | 1 |
+| Fanø 1 | Fanø | 1 |
+| Farsø 1 | Farsø | 2 |
+| Farsø 2 | Farsø | 1 |
+| Farum 1 | Farum | 1 |
+| Fjer Fyn 1 | Fjer Fyn | 1 |
+| FKIF Frederiksberg 1 | FKIF Frederiksberg | 4 |
+| Fredensborg 1 | Fredensborg | 1 |
+| Frederiksberg 1 | Frederiksberg | 4 |
+| Frederikssund 1 | Frederikssund | 1 |
+| FSK Furesø 1 | FSK Furesø | 1 |
+| Furesø 1 | Furesø | 1 |
+| Galten FS 1 | Galten FS | 1 |
+| GBK/CBK 1 | GBK/CBK | 1 |
+| GBK/KMB2010 1 | GBK/KMB2010 | 2 |
+| Gentofte 1 | Gentofte | 15 |
+| Gentofte 2 | Gentofte | 3 |
+| Gentofte/KMB2010 1 | Gentofte/KMB2010 | 1 |
+| Gilleleje 1 | Gilleleje | 1 |
+| Gistrup LKB 1 | Gistrup LKB | 3 |
+| Gladsaxe Søborg 1 | Gladsaxe Søborg | 8 |
+| Gladsaxe Søborg 2 | Gladsaxe Søborg | 5 |
+| Gladsaxe Søborg 3 | Gladsaxe Søborg | 2 |
+| Gladsaxe Søborg 4 | Gladsaxe Søborg | 2 |
+| Gladsaxe Søborg 5 | Gladsaxe Søborg | 2 |
+| Glamsdalen 1 | Glamsdalen | 7 |
+| Glamsdalen 1 (A) | Glamsdalen | 1 |
+| Glamsdalen 2 | Glamsdalen | 5 |
+| Glamsdalen 2 (xtra) | Glamsdalen | 1 |
+| Glumsø 1 | Glumsø | 1 |
+| Greve 1 | Greve | 20 |
+| Greve 1 *alders disp. | Greve | 1 |
+| Greve 2 | Greve | 3 |
+| Greve 3 | Greve | 1 |
+| Greve/Skælskør/&#216;lstykke 1 | Greve/Skælskør/Ølstykke | 1 |
+| Grindsted BK 1 | Grindsted BK | 2 |
+| Grønbjerg 1 | Grønbjerg | 1 |
+| Grønsund 1 | Grønsund | 5 |
+| Grønsund 2 | Grønsund | 1 |
+| Graasten 1 | Graasten | 2 |
+| Gug 1 | Gug | 3 |
+| Gørlev Idrætsefterskole 1 | Gørlev Idrætsefterskole | 7 |
+| Gørlev Idrætsefterskole 1 (A) | Gørlev Idrætsefterskole | 1 |
+| Gørlev Idrætsefterskole 2 | Gørlev Idrætsefterskole | 1 |
+| Hadsund 1 | Hadsund | 1 |
+| Hammel 1 | Hammel | 1 |
+| HB2000/Taastrup Badminton 1 | HB2000/Taastrup Badminton | 1 |
+| HBC/FKIF 1 | HBC/FKIF | 1 |
+| HBC/Gentofte 1 | HBC/Gentofte | 1 |
+| Herlev/Hjorten 1 | Herlev/Hjorten | 8 |
+| Herlev/Hjorten 11 | Herlev/Hjorten | 1 |
+| Herlev/Hjorten 2 | Herlev/Hjorten | 2 |
+| Herlev/Hjorten 22 | Herlev/Hjorten | 1 |
+| Herlev/Hjorten 3 | Herlev/Hjorten | 1 |
+| Herlev/Hjorten 4 | Herlev/Hjorten | 1 |
+| Herlev/Hjorten 5 | Herlev/Hjorten | 1 |
+| Herlev/Hjorten 6 | Herlev/Hjorten | 2 |
+| Herlev/Hjorten 7 | Herlev/Hjorten | 1 |
+| Herlufsholm 1 | Herlufsholm | 1 |
+| Herning 1 | Herning | 9 |
+| Herning 2 | Herning | 1 |
+| Herning/Silkeborg BK 1 | Herning/Silkeborg BK | 1 |
+| Hillerød 1 | Hillerød | 19 |
+| Hillerød 2 | Hillerød | 1 |
+| Himmerlands Ungdomsskole 1 | Himmerlands Ungdomsskole | 1 |
+| Hjemly Idrætsefterskole 1 | Hjemly Idrætsefterskole | 8 |
+| Hjemly Idrætsefterskole 1 (M) | Hjemly Idrætsefterskole | 1 |
+| Hjemly Idrætsefterskole 2 | Hjemly Idrætsefterskole | 6 |
+| Hjemly Idrætsefterskole 2 (A) | Hjemly Idrætsefterskole | 1 |
+| Hjemly Idrætsefterskole 2 (M) | Hjemly Idrætsefterskole | 1 |
+| Hjemly Idrætsefterskole 2 (xtra) | Hjemly Idrætsefterskole | 1 |
+| Hjemly Idrætsefterskole 3 | Hjemly Idrætsefterskole | 6 |
+| Hjemly Idrætsefterskole 3 (xtra) | Hjemly Idrætsefterskole | 1 |
+| Hjemly Idrætsefterskole 4 | Hjemly Idrætsefterskole | 1 |
+| Hjørring 1 | Hjørring | 6 |
+| Hjørring 2 | Hjørring | 2 |
+| Hjørring 3 | Hjørring | 1 |
+| Hjørring 4 | Hjørring | 1 |
+| Hobro 1 | Hobro | 1 |
+| HOG Badminton, Hinnerup 1 | HOG Badminton, Hinnerup | 8 |
+| HOG Badminton, Hinnerup 11 | HOG Badminton, Hinnerup | 1 |
+| Holbæk 1 | Holbæk | 6 |
+| Holbæk 2 | Holbæk | 2 |
+| Hornslet IF 1 | Hornslet IF | 1 |
+| Hornslet IF 11 | Hornslet IF | 1 |
+| Hornslet IF 2 | Hornslet IF | 1 |
+| Hornslet IF 22 | Hornslet IF | 1 |
+| Horsens 1 | Horsens | 3 |
+| Horsens 11 | Horsens | 1 |
+| Horsens/Brædstrup 1 | Horsens/Brædstrup | 1 |
+| Horsens/Vinding Badminton 1 | Horsens/Vinding Badminton | 1 |
+| Humlebæk 1 | Humlebæk | 2 |
+| Hvidovre 1 | Hvidovre | 12 |
+| Hvidovre 2 | Hvidovre | 3 |
+| Hvidovre 4 | Hvidovre | 2 |
+| Højbjerg 1 | Højbjerg | 36 |
+| Højbjerg 1 (2400) | Højbjerg | 1 |
+| Højbjerg 11 | Højbjerg | 1 |
+| Højbjerg 2 | Højbjerg | 20 |
+| Højbjerg 2 (2400) | Højbjerg | 1 |
+| Højbjerg 22 | Højbjerg | 1 |
+| Højbjerg 3 | Højbjerg | 7 |
+| Højbjerg 3 (2400) | Højbjerg | 1 |
+| Højbjerg 33 | Højbjerg | 1 |
+| Højbjerg 4 | Højbjerg | 4 |
+| Højbjerg 6 | Højbjerg | 1 |
+| Højbjerg/Horsens 1 | Højbjerg/Horsens | 2 |
+| Højby S&G 1 | Højby S&G | 1 |
+| Hørby Efterskole 1 | Hørby Efterskole | 1 |
+| Hørning IF 1 | Hørning IF | 1 |
+| Hørsholm 1 | Hørsholm | 1 |
+| Haarby Efterskole 1 | Haarby Efterskole | 2 |
+| Ikast 1 | Ikast | 9 |
+| Ikast 2 | Ikast | 9 |
+| Ikast 3 | Ikast | 1 |
+| Ishøj SB 50 1 | Ishøj SB 50 | 1 |
+| Islands Brygge 1 | Islands Brygge | 5 |
+| Jetsmark 1 | Jetsmark | 1 |
+| KBK Kbh. 1 | KBK Kbh. | 14 |
+| KBK Kbh. 2 | KBK Kbh. | 3 |
+| KBK Kbh. 6 | KBK Kbh. | 2 |
+| KBK Kbh./Drive 1 | KBK Kbh./Drive | 1 |
+| KBK/Drive/(Gentofte) 1 | KBK/Drive/ | 1 |
+| Klarup Badminton 1 | Klarup Badminton | 1 |
+| KMB2010 1 | KMB2010 | 5 |
+| KMB2010 2 | KMB2010 | 1 |
+| KMB2010 3 | KMB2010 | 1 |
+| KMB2010 4 | KMB2010 | 1 |
+| KMB2010 5 | KMB2010 | 1 |
+| KMB2010 6 | KMB2010 | 1 |
+| KMB2010/Drive 1 | KMB2010/Drive | 1 |
+| Kolding BK 1 | Kolding BK | 19 |
+| Kolding BK 2 | Kolding BK | 5 |
+| Kolding BK 3 | Kolding BK | 1 |
+| Kolding-Rødekro 1 | Kolding-Rødekro | 1 |
+| Kolding/Fyn 1 | Kolding/Fyn | 1 |
+| Køge 1 | Køge | 2 |
+| Køge/Badminton Roskilde 1 | Køge/Badminton Roskilde | 1 |
+| Langhøj 1 | Langhøj | 1 |
+| LBK/KMB2010 1 | LBK/KMB2010 | 1 |
+| LBK/SBK/SLBK 2 | LBK/SBK/SLBK | 1 |
+| Lejre 1 | Lejre | 1 |
+| Lillerød 1 | Lillerød | 21 |
+| Lillerød 2 | Lillerød | 3 |
+| Lindholm 1 | Lindholm | 2 |
+| Lindholm 2 | Lindholm | 1 |
+| Lindholm 3 | Lindholm | 2 |
+| Lund 1 | Lund | 1 |
+| Lundtofte 4 | Lundtofte | 1 |
+| Lyngby 1 | Lyngby | 19 |
+| Lyngby 2 | Lyngby | 5 |
+| Lyngby/KBK 1 | Lyngby/KBK | 2 |
+| Mejrup G og UF 1 | Mejrup G og UF | 1 |
+| Middelfart 1 | Middelfart | 1 |
+| NBK Amager 1 | NBK Amager | 1 |
+| Nivå-Kokkedal 1 | Nivå-Kokkedal | 1 |
+| Nordbyens Badmintonklub 1 | Nordbyens Badmintonklub | 1 |
+| Nyborg 1 | Nyborg | 1 |
+| Nørager HCI 1 | Nørager HCI | 1 |
+| Nørre Nissum Efterskole 1 | Nørre Nissum Efterskole | 1 |
+| OBK/Bolbro/KRIF 1 | OBK/Bolbro/KRIF | 1 |
+| OBK/Langeskov 1 | OBK/Langeskov | 1 |
+| OBK/Svendborg/Langeskov 1 | OBK/Svendborg/Langeskov | 1 |
+| OBK/TPI/Svendborg 1 | OBK/TPI/Svendborg | 1 |
+| Odder 1 | Odder | 1 |
+| Odense OBK 1 | Odense OBK | 16 |
+| Odense OBK 1 (Disp) | Odense OBK | 1 |
+| Odense OBK 2 | Odense OBK | 6 |
+| Odense OBK 3 | Odense OBK | 1 |
+| Odense OBK 4 | Odense OBK | 1 |
+| Oksbøl Badminton Klub 1 | Oksbøl Badminton Klub | 1 |
+| Poulstrup Vrejlev 1 | Poulstrup Vrejlev | 1 |
+| Randers BK 1 | Randers BK | 1 |
+| Rebild Efterskole 1 | Rebild Efterskole | 2 |
+| Ribe 1 | Ribe | 2 |
+| Ribe 11 | Ribe | 1 |
+| Ribe 2 | Ribe | 1 |
+| Ribe 22 | Ribe | 1 |
+| Ringkøbing 1 | Ringkøbing | 1 |
+| Ringsted 1 | Ringsted | 1 |
+| Ringsted/Værløse 1 | Ringsted/Værløse | 1 |
+| Rosendal 1 | Rosendal | 2 |
+| Rosendal 2 | Rosendal | 2 |
+| Roskilde HBK 1 | Roskilde HBK | 4 |
+| Rudehøj Efterskole 1 | Rudehøj Efterskole | 1 |
+| Rudersdal 1 | Rudersdal | 5 |
+| Ry 1 | Ry | 2 |
+| Ry 11 | Ry | 1 |
+| Rødekro 1 | Rødekro | 1 |
+| Rødovre 1 | Rødovre | 1 |
+| Rønde Efterskole 1 | Rønde Efterskole | 7 |
+| Rønde Efterskole 1 (&#216;M) | Rønde Efterskole | 1 |
+| Rønde Efterskole 1 (M) | Rønde Efterskole | 1 |
+| Rønde Efterskole 2 | Rønde Efterskole | 7 |
+| Rønde Efterskole 2 (&#216;M) | Rønde Efterskole | 1 |
+| Rønde Efterskole 2 (A) | Rønde Efterskole | 1 |
+| Rønde Efterskole 3 | Rønde Efterskole | 6 |
+| Rønde Efterskole 3 (A) | Rønde Efterskole | 1 |
+| Rønde Efterskole 4 | Rønde Efterskole | 5 |
+| Rønde Efterskole 5 | Rønde Efterskole | 6 |
+| Rønde Efterskole 6 | Rønde Efterskole | 5 |
+| Rønde Efterskole 7 | Rønde Efterskole | 1 |
+| Sabro 1 | Sabro | 1 |
+| Sdr. Hygum 1 | Sdr. Hygum | 1 |
+| Sdr. Hygum 11 | Sdr. Hygum | 1 |
+| Sdr. Hygum 2 (U9C hold) | Sdr. Hygum | 1 |
+| Sdr. Hygum 22 (U9C hold) | Sdr. Hygum | 1 |
+| Sejs-Svejbæk 1 | Sejs-Svejbæk | 1 |
+| SIF Assentoft 1 | SIF Assentoft | 2 |
+| Sjælsølund SES 1 | Sjælsølund SES | 6 |
+| Sjælsølund SES 2 | Sjælsølund SES | 5 |
+| Sjælsølund SES 3 | Sjælsølund SES | 2 |
+| Skagen 1 | Skagen | 1 |
+| Skalborg SK 1 | Skalborg SK | 2 |
+| Skalborg SK 2 | Skalborg SK | 1 |
+| Skanderborg Badminton 1 | Skanderborg Badminton | 2 |
+| Skovshoved 1 | Skovshoved | 21 |
+| Skovshoved 2 | Skovshoved | 4 |
+| Skovshoved 3 | Skovshoved | 2 |
+| Skovshoved 4 | Skovshoved | 1 |
+| Skovshoved 5 | Skovshoved | 1 |
+| Skovshoved 6 | Skovshoved | 1 |
+| Slagelse 1 | Slagelse | 1 |
+| Slangerup/Holte 2 | Slangerup/Holte | 1 |
+| Snejbjerg 1 | Snejbjerg | 1 |
+| Solbjerg 1 | Solbjerg | 4 |
+| Solrød Strand 1 | Solrød Strand | 39 |
+| Solrød Strand 2 | Solrød Strand | 18 |
+| Solrød Strand 3 | Solrød Strand | 1 |
+| Solrød Strand 5 | Solrød Strand | 1 |
+| Sorring 1 | Sorring | 4 |
+| Sorring 11 | Sorring | 1 |
+| Sportsefterskolen SINE 1 | Sportsefterskolen SINE | 6 |
+| Sportsefterskolen SINE 1 (M) | Sportsefterskolen SINE | 1 |
+| Sportsefterskolen SINE 2 | Sportsefterskolen SINE | 3 |
+| Sportsefterskolen SINE 2 (A) | Sportsefterskolen SINE | 1 |
+| Sportsefterskolen SINE 3 | Sportsefterskolen SINE | 2 |
+| St. Restrup 1 | St. Restrup | 1 |
+| Stavtrup 1 | Stavtrup | 2 |
+| Stavtrup 11 | Stavtrup | 1 |
+| Stavtrup 2 | Stavtrup | 1 |
+| Stavtrup 22 | Stavtrup | 1 |
+| Stidsholt IF 1 | Stidsholt IF | 3 |
+| Stidsholt IF 2 | Stidsholt IF | 1 |
+| Strib Idrætsefterskole 1 | Strib Idrætsefterskole | 7 |
+| Strib Idrætsefterskole 1 (A) | Strib Idrætsefterskole | 1 |
+| Strib Idrætsefterskole 2 | Strib Idrætsefterskole | 5 |
+| Strib Idrætsefterskole 3 | Strib Idrætsefterskole | 4 |
+| Støvring 1 | Støvring | 3 |
+| Støvring 2 | Støvring | 2 |
+| Støvring 3 | Støvring | 1 |
+| Støvring 5 | Støvring | 1 |
+| Støvring 6 | Støvring | 1 |
+| Støvring 7 | Støvring | 1 |
+| Sundeved Efterskole 1 | Sundeved Efterskole | 4 |
+| Svendborg 1 | Svendborg | 1 |
+| Svenstrup 1 | Svenstrup | 9 |
+| Svenstrup 2 | Svenstrup | 5 |
+| Svenstrup 3 | Svenstrup | 4 |
+| Svenstrup 4 | Svenstrup | 1 |
+| Svenstrup 5 | Svenstrup | 1 |
+| Svenstrup 6 | Svenstrup | 1 |
+| Svenstrup 7 | Svenstrup | 1 |
+| Sæby 1 | Sæby | 1 |
+| Tarup-Pårup 1 | Tarup-Pårup | 1 |
+| Team Badminton Esbjerg 1 | Team Badminton Esbjerg | 8 |
+| Team Badminton Esbjerg 2 | Team Badminton Esbjerg | 1 |
+| Team Badminton Esbjerg 3 | Team Badminton Esbjerg | 1 |
+| Team Badminton Esbjerg 4 | Team Badminton Esbjerg | 1 |
+| Team FKIF/KBK/HBC 1 | Team FKIF/KBK/HBC | 1 |
+| Team Fyn-Sydjylland 1 | Team Fyn-Sydjylland | 1 |
+| Team Gudenåen 1 | Team Gudenåen | 1 |
+| Team HJR Sjælland 1 | Team HJR Sjælland | 1 |
+| Team KBK/Drive/Jernløse 1 | Team KBK/Drive/Jernløse | 1 |
+| Team København 1 | Team København | 1 |
+| Team Køge/Holbæk 1 | Team Køge/Holbæk | 1 |
+| Team Køge/Skælskør 1 | Team Køge/Skælskør | 1 |
+| Team Metro+ 1 | Team Metro+ | 1 |
+| Team Midtsjælland 1 | Team Midtsjælland | 1 |
+| Team Nordjylland 1 | Team Nordjylland | 3 |
+| Team Nordsjælland 1 | Team Nordsjælland | 1 |
+| Team Odense 1 | Team Odense | 1 |
+| Team Stor Aalborg 1 | Team Stor Aalborg | 1 |
+| Team Stor Aalborg 2 | Team Stor Aalborg | 1 |
+| Team Sydjylland &#216;st 1 | Team Sydjylland Øst | 1 |
+| Team Sydjylland 1 | Team Sydjylland | 3 |
+| Team Sydjylland Vest 1 | Team Sydjylland Vest | 6 |
+| Team Sønderjylland 1 | Team Sønderjylland | 1 |
+| Team Vejleå 1 | Team Vejleå | 1 |
+| Team Aarhus ungdom 1 | Team Aarhus ungdom | 1 |
+| Team-DFS9 1 | Team-DFS9 | 1 |
+| Team-Work Bjergby-Mygdal/Fr.Havn 1 | Team-Work Bjergby-Mygdal/Fr.Havn | 1 |
+| Thorsager Rønde 1 | Thorsager Rønde | 2 |
+| Tirstrup Idrætsefterskole 1 | Tirstrup Idrætsefterskole | 2 |
+| Tranbjerg AIA 1 | Tranbjerg AIA | 1 |
+| Tranbjerg AIA 11 | Tranbjerg AIA | 1 |
+| Tranbjerg AIA 2 | Tranbjerg AIA | 1 |
+| Triton-RBK-RIF 1 | Triton-RBK-RIF | 1 |
+| Taastrup BC 1 | Taastrup BC | 2 |
+| Taastrup Elite 1 | Taastrup Elite | 3 |
+| Taastrup TIK 1 | Taastrup TIK | 1 |
+| Ukendt modstander 1 | Ukendt modstander | 1 |
+| Ukendt modstander 2 | Ukendt modstander | 1 |
+| Valby BC 1 | Valby BC | 1 |
+| Vanløse 1 | Vanløse | 2 |
+| Vanløse/FKIF 1 | Vanløse/FKIF | 1 |
+| Varde 1 | Varde | 5 |
+| Varde 2 | Varde | 1 |
+| Vedersø Idrætsefterskole 1 | Vedersø Idrætsefterskole | 3 |
+| Vedersø Idrætsefterskole 2 | Vedersø Idrætsefterskole | 1 |
+| Vejgaard 1 | Vejgaard | 1 |
+| Vejle 1 | Vejle | 2 |
+| Vejle/Kolding 1 | Vejle/Kolding | 2 |
+| Vester Hassing 1 | Vester Hassing | 1 |
+| Vesterbølle Efterskole 1 | Vesterbølle Efterskole | 1 |
+| Viby J 1 | Viby J | 20 |
+| Viby J 11 | Viby J | 1 |
+| Viby J 2 | Viby J | 4 |
+| Viby J 22 | Viby J | 1 |
+| Viby J 3 | Viby J | 2 |
+| Viby J 4 | Viby J | 1 |
+| Viby-Silkeborg 1 | Viby-Silkeborg | 1 |
+| Viby/Grenå 1 | Viby/Grenå | 1 |
+| Viby/Randers/Grenå 1 | Viby/Randers/Grenå | 1 |
+| Viby/Randers/Grenå 3 | Viby/Randers/Grenå | 1 |
+| Vinding SF 1 | Vinding SF | 4 |
+| Vinding SF 1 (2400) | Vinding SF | 1 |
+| Vinding SF 11 | Vinding SF | 1 |
+| Vinding SF 2 | Vinding SF | 2 |
+| Vinding SF 4 | Vinding SF | 1 |
+| Vivild Idrætsefterskole 1 | Vivild Idrætsefterskole | 4 |
+| Vivild Idrætsefterskole 1 (&#216;M) | Vivild Idrætsefterskole | 1 |
+| Vivild Idrætsefterskole 2 | Vivild Idrætsefterskole | 1 |
+| Vojens GI 1 | Vojens GI | 4 |
+| Vojens GI 1 (xtra) | Vojens GI | 1 |
+| Vojens GI 2 | Vojens GI | 1 |
+| Vorup FB 1 | Vorup FB | 1 |
+| Værløse 1 | Værløse | 18 |
+| Værløse 2 | Værløse | 1 |
+| Aabybro 1 | Aabybro | 3 |
+| Aabybro 2 | Aabybro | 1 |
+| Aalborg Triton 1 | Aalborg Triton | 8 |
+| Aalborg Triton 2 | Aalborg Triton | 4 |
+| Aalborg Triton 3 | Aalborg Triton | 2 |
+| Aalborg Triton 4 | Aalborg Triton | 1 |
+| Aarhus AB 1 | Aarhus AB | 12 |
+| Aarhus AB 11 | Aarhus AB | 1 |
+| Aarhus AB 2 | Aarhus AB | 4 |
+| Aarhus AB 22 | Aarhus AB | 1 |
+| Aarhus AB 3 | Aarhus AB | 2 |
+| Aarhus AB 33 | Aarhus AB | 1 |
+| Aarhus AB 4 | Aarhus AB | 1 |
+| Aarhus AB/Randers BK 1 | Aarhus AB/Randers BK | 1 |
+| Aars 1 | Aars | 1 |
 
 ### Samarbejdshold rapporteret separat (ikke GSB)
 
@@ -1597,7 +2016,7 @@ Samarbejder med slash bevares som én normaliseret enhed. Udgåede/trukne hold e
 
 ## Deltagelsesbredde B — Badminton København
 
-`GSB i x af n` viser både antal og procent. Udgåede/trukne hold tæller ikke i x; de vises særskilt. Samlet over tid summeres sæsoner kun inden for samme aldersgruppe.
+`GSB i x af n` viser både antal og procent. Udgåede/trukne hold tæller ikke i x; de vises særskilt. 2026/2027 er markeret **i gang, ufuldstændig** og indgår ikke i “Samlet over tid”. Samlet over tid summeres afsluttede sæsoner kun inden for samme aldersgruppe.
 
 | Sæson | Aldersgruppe | Rækker/ligaer | Fysiske puljer | GSB-hold udeladt |
 | --- | --- | --- | --- | --- |
@@ -1665,22 +2084,22 @@ Samarbejder med slash bevares som én normaliseret enhed. Udgåede/trukne hold e
 | 2025/2026 | U13 (ID 4) | 9 af 16 (56,3%) | 11 af 24 (45,8%) | 0 ({"udgået":0,"trukket":0}) |
 | 2025/2026 | U15 (ID 5) | 8 af 18 (44,4%) | 9 af 33 (27,3%) | 0 ({"udgået":0,"trukket":0}) |
 | 2025/2026 | U17/U19 (ID 18) | 3 af 13 (23,1%) | 3 af 22 (13,6%) | 0 ({"udgået":0,"trukket":0}) |
-| 2026/2027 | U09 (ID 2) | 2 af 3 (66,7%) | 2 af 3 (66,7%) | 0 ({"udgået":0,"trukket":0}) |
-| 2026/2027 | U11 (ID 3) | 4 af 7 (57,1%) | 4 af 8 (50%) | 0 ({"udgået":0,"trukket":0}) |
-| 2026/2027 | U13 (ID 4) | 7 af 15 (46,7%) | 9 af 19 (47,4%) | 0 ({"udgået":0,"trukket":0}) |
-| 2026/2027 | U15 (ID 5) | 8 af 20 (40%) | 8 af 23 (34,8%) | 0 ({"udgået":0,"trukket":0}) |
-| 2026/2027 | U17/U19 (ID 18) | 5 af 15 (33,3%) | 6 af 21 (28,6%) | 0 ({"udgået":0,"trukket":0}) |
+| 2026/2027 (i gang, ufuldstændig) | U09 (ID 2) | 2 af 3 (66,7%) | 2 af 3 (66,7%) | 0 ({"udgået":0,"trukket":0}) |
+| 2026/2027 (i gang, ufuldstændig) | U11 (ID 3) | 4 af 7 (57,1%) | 4 af 8 (50%) | 0 ({"udgået":0,"trukket":0}) |
+| 2026/2027 (i gang, ufuldstændig) | U13 (ID 4) | 7 af 15 (46,7%) | 9 af 19 (47,4%) | 0 ({"udgået":0,"trukket":0}) |
+| 2026/2027 (i gang, ufuldstændig) | U15 (ID 5) | 8 af 20 (40%) | 8 af 23 (34,8%) | 0 ({"udgået":0,"trukket":0}) |
+| 2026/2027 (i gang, ufuldstændig) | U17/U19 (ID 18) | 5 af 15 (33,3%) | 6 af 21 (28,6%) | 0 ({"udgået":0,"trukket":0}) |
 
 ### Samlet over tid pr. aldersgruppe (sæsonoptællinger summeret)
 
 | Aldersgruppe | Sæsoner | Rækker/ligaer | Fysiske puljer |
 | --- | --- | --- | --- |
-| U09 (ID 2) | 7 | 11 af 16 (68,8%) | 16 af 25 (64%) |
-| U11 (ID 3) | 16 | 35 af 115 (30,4%) | 43 af 158 (27,2%) |
-| U13 (ID 4) | 16 | 47 af 147 (32%) | 55 af 197 (27,9%) |
-| U15 (ID 5) | 16 | 56 af 163 (34,4%) | 58 af 217 (26,7%) |
+| U09 (ID 2) | 6 | 9 af 13 (69,2%) | 14 af 22 (63,6%) |
+| U11 (ID 3) | 15 | 31 af 108 (28,7%) | 39 af 150 (26%) |
+| U13 (ID 4) | 15 | 40 af 132 (30,3%) | 46 af 178 (25,8%) |
+| U15 (ID 5) | 15 | 48 af 143 (33,6%) | 50 af 194 (25,8%) |
 | U17 (ID 6) | 6 | 4 af 21 (19%) | 4 af 21 (19%) |
-| U17/U19 (ID 18) | 8 | 15 af 67 (22,4%) | 16 af 109 (14,7%) |
+| U17/U19 (ID 18) | 7 | 10 af 52 (19,2%) | 10 af 88 (11,4%) |
 
 ## Optælling
 
@@ -1696,7 +2115,7 @@ Samarbejder med slash bevares som én normaliseret enhed. Udgåede/trukne hold e
 | 2016/2017 | U11 (3) | 4 | 4+3 (Tier 1) | 2/9 | 2/10 | 4/4 125-format match; 0 fallback/other | 2016\|3\|7668: Gladsaxe Søborg → 4 spillere<br>2016\|3\|8987: Gladsaxe Søborg 1 → 4 spillere<br>2016\|3\|8997: Gladsaxe Søborg 1 → 4 spillere<br>2016\|3\|9137: Gladsaxe Søborg → 4 spillere |
 | 2020/2021 | U15 (5) | 3 | 4+3 (Tier 1) | 3/12 | 3/13 | 2/2 125-format match; 1 fallback/other | 2020\|5\|13470: Gladsaxe Søborg 1 → 4 spillere<br>2020\|5\|13473: Gladsaxe Søborg 2 → 4 spillere<br>2020\|5\|13474: Gladsaxe Søborg 3 → 4 piger |
 | 2025/2026 | U11 (3) | 7 | 4+3 (Tier 1) | 3/7 | 4/14 | 7/7 125-format match; 0 fallback/other | 2025\|3\|18133: Gladsaxe Søborg 5 → 4 piger<br>2025\|3\|18134: Gladsaxe Søborg 1 → 4 spillere<br>2025\|3\|18134: Gladsaxe Søborg 2 → 4 spillere<br>2025\|3\|18135: Gladsaxe Søborg 3 → 4 spillere<br>2025\|3\|18138: Gladsaxe Søborg 4 → 4 spillere<br>2025\|3\|18583: Gladsaxe Søborg 1 → 4 spillere<br>2025\|3\|18697: Gladsaxe Søborg 1 → 4 spillere |
-| 2026/2027 | U13 (4) | 10 | 2+2 (Tier 1) | 7/15 | 9/19 | 0/0 125-format match; 10 fallback/other | 2026\|4\|18976: Gladsaxe Søborg 1 → Uplaceret: 2+2 (ingen brugbar kategorisignatur)<br>2026\|4\|18977: Gladsaxe Søborg 5 → 2+2<br>2026\|4\|19007: Gladsaxe Søborg 4 → 2+2<br>2026\|4\|19008: Gladsaxe Søborg 3 → 2+2<br>2026\|4\|19009: Gladsaxe Søborg 3 → 2+2<br>2026\|4\|19140: Gladsaxe Søborg 2 → Uplaceret: 4 spillere (ingen brugbar kategorisignatur)<br>2026\|4\|19142: Gladsaxe Søborg 3 → Uplaceret: 4 spillere (ingen brugbar kategorisignatur)<br>2026\|4\|19144: Gladsaxe Søborg 4 → Uplaceret: 4 spillere (ingen brugbar kategorisignatur)<br>2026\|4\|19144: Gladsaxe Søborg 5 → Uplaceret: 4 spillere (ingen brugbar kategorisignatur)<br>2026\|4\|19146: Gladsaxe Søborg 6 → Uplaceret: 4 piger (ingen brugbar kategorisignatur) |
+| 2026/2027 (i gang, ufuldstændig) | U13 (4) | 10 | 2+2 (Tier 1) | 7/15 | 9/19 | 0/0 125-format match; 10 fallback/other | 2026\|4\|18976: Gladsaxe Søborg 1 → Uplaceret: 2+2 (ingen brugbar kategorisignatur)<br>2026\|4\|18977: Gladsaxe Søborg 5 → 2+2<br>2026\|4\|19007: Gladsaxe Søborg 4 → 2+2<br>2026\|4\|19008: Gladsaxe Søborg 3 → 2+2<br>2026\|4\|19009: Gladsaxe Søborg 3 → 2+2<br>2026\|4\|19140: Gladsaxe Søborg 2 → Uplaceret: 4 spillere (ingen brugbar kategorisignatur)<br>2026\|4\|19142: Gladsaxe Søborg 3 → Uplaceret: 4 spillere (ingen brugbar kategorisignatur)<br>2026\|4\|19144: Gladsaxe Søborg 4 → Uplaceret: 4 spillere (ingen brugbar kategorisignatur)<br>2026\|4\|19144: Gladsaxe Søborg 5 → Uplaceret: 4 spillere (ingen brugbar kategorisignatur)<br>2026\|4\|19146: Gladsaxe Søborg 6 → Uplaceret: 4 piger (ingen brugbar kategorisignatur) |
 
 Stikprøverne blev sammenholdt med de rå `league_groups`, `league_group_regions`, `league_group_teams`-rækker og 126's fysiske puljeformatkilder. Hver liste viser pool-nøgle, holdnavn, række/pulje og format; 125-formatet blev også sammenholdt direkte for alle sample-puljer der findes i 125-kataloget. Bredde kontrolleres på division- og puljenøgler.
 
