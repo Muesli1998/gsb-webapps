@@ -8,11 +8,11 @@ Scannet alle 32837 hold-puljeposter for 126's ungdomsaldersgruppe-ID'er (2, 3, 4
 
 ## Club registry-varianter
 
-| club_id | club_name_raw | region_id | postal_code | auditstatus |
-| --- | --- | --- | --- | --- |
-| 1087 | Badmintonklubben af 1937 (BC 37) |  | 2300 | tvetydig-lignende-klub |
-| 1093 | Gladsaxe Søborg Badmintonklub |  | 2860 | GSB-navnekandidat |
-| 1232 | Søborg S.G.& I.F., Badmintonafd. |  | 3230 | tvetydig-lignende-klub |
+| club_id | club_name_raw | region_id | postal_code | Registryposter | Sæsonspænd | auditstatus |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1087 | Badmintonklubben af 1937 (BC 37) |  | 2300 | 1 | club_registry er ikke sæsonopdelt | tvetydig-lignende-klub |
+| 1093 | Gladsaxe Søborg Badmintonklub |  | 2860 | 1 | club_registry er ikke sæsonopdelt | GSB-navnekandidat |
+| 1232 | Søborg S.G.& I.F., Badmintonafd. |  | 3230 | 1 | club_registry er ikke sæsonopdelt | tvetydig-lignende-klub |
 
 | Rå holdnavn | Poster | Fysiske puljer | Sæsonspænd | Auditstatus |
 | --- | --- | --- | --- | --- |
@@ -67,10 +67,10 @@ Disse forekommer i kildens navnerum, men kan ikke knyttes sikkert til GSB ud fra
 
 ### Registry-klubber
 
-| club_id | club_name_raw | region_id | postal_code | Auditstatus |
-| --- | --- | --- | --- | --- |
-| 1087 | Badmintonklubben af 1937 (BC 37) |  | 2300 | tvetydig-lignende-klub |
-| 1232 | Søborg S.G.& I.F., Badmintonafd. |  | 3230 | tvetydig-lignende-klub |
+| club_id | club_name_raw | region_id | postal_code | Registryposter | Sæsonspænd | Auditstatus |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1087 | Badmintonklubben af 1937 (BC 37) |  | 2300 | 1 | club_registry er ikke sæsonopdelt | tvetydig-lignende-klub |
+| 1232 | Søborg S.G.& I.F., Badmintonafd. |  | 3230 | 1 | club_registry er ikke sæsonopdelt | tvetydig-lignende-klub |
 
 ## Andre klubber i puljer med højeste format
 

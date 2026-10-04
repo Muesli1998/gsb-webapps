@@ -50,6 +50,10 @@ const registryVariants = registryRows
     club_name_raw: row.club_name_raw,
     region_id: row.region_id,
     postal_code: row.postal_code,
+    registry_post_count: 1,
+    season_from: null,
+    season_to: null,
+    season_span_note: 'club_registry er ikke sæsonopdelt',
     classification: /gladsaxe/iu.test(row.club_name_raw) ? 'GSB-navnekandidat' : 'tvetydig-lignende-klub',
   }));
 
@@ -149,7 +153,7 @@ const mdTable = (headers, rows) => [
   ...rows.map((row) => `| ${row.map((cell) => String(cell ?? '').replaceAll('|', '\\|')).join(' | ')} |`),
 ].join('\n');
 const teamRows = (rows) => rows.map((row) => [row.raw_team_name, row.post_count, row.distinct_physical_pool_count, `${row.season_from}–${row.season_to}`, row.classification]);
-const clubRows = (rows) => rows.map((row) => [row.club_id, row.club_name_raw, row.region_id, row.postal_code, row.classification]);
+const clubRows = (rows) => rows.map((row) => [row.club_id, row.club_name_raw, row.region_id, row.postal_code, row.registry_post_count, row.season_span_note, row.classification]);
 const dbLines = (label, value) => [
   `- ${label}: SHA-256 \`${value.before.sha256}\` → \`${value.after.sha256}\` (${value.before.sha256 === value.after.sha256 ? 'uændret' : 'ÆNDRET'})`,
   `  Rækketal før/efter: \`${JSON.stringify(value.before.row_counts)}\` / \`${JSON.stringify(value.after.row_counts)}\``,
@@ -165,7 +169,7 @@ Scannet alle ${report.totals.all_youth_team_pool_rows_scanned} hold-puljeposter 
 
 ## Club registry-varianter
 
-${mdTable(['club_id', 'club_name_raw', 'region_id', 'postal_code', 'auditstatus'], clubRows(registryVariants))}
+${mdTable(['club_id', 'club_name_raw', 'region_id', 'postal_code', 'Registryposter', 'Sæsonspænd', 'auditstatus'], clubRows(registryVariants))}
 
 ${mdTable(['Rå holdnavn', 'Poster', 'Fysiske puljer', 'Sæsonspænd', 'Auditstatus'], teamRows(likelyGsbTeamVariants))}
 
@@ -179,7 +183,7 @@ ${ambiguousTeamVariants.length ? mdTable(['Rå holdnavn', 'Poster', 'Fysiske pul
 
 ### Registry-klubber
 
-${ambiguousClubVariants.length ? mdTable(['club_id', 'club_name_raw', 'region_id', 'postal_code', 'Auditstatus'], clubRows(ambiguousClubVariants)) : 'Ingen lignende registry-klubber fundet med auditmønstret.'}
+${ambiguousClubVariants.length ? mdTable(['club_id', 'club_name_raw', 'region_id', 'postal_code', 'Registryposter', 'Sæsonspænd', 'Auditstatus'], clubRows(ambiguousClubVariants)) : 'Ingen lignende registry-klubber fundet med auditmønstret.'}
 
 ## Andre klubber i puljer med højeste format
 
