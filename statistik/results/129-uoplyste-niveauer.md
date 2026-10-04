@@ -4,9 +4,9 @@ Metode: unikke ungdomsrækkenavne hvor niveauparseren ikke fandt et fortolkeligt
 
 | Mønstergruppe | Unikke rækkenavne | Poster | Eksempler (op til 3) |
 | --- | --- | --- | --- |
-| Andre niveau-/rækkenavne uden bogstav+tal | 788 | 2326 | "4 på Stribe"; (4 spillere); &#197;rets U11 Hold - Finaler & Placeringskampe |
-| DMU-rækker | 176 | 979 | DMU H - U09 2400 (4 spillere); DMU H - U09 2400 4 spillere; DMU H - U09 2800 (4 spillere) |
-| Aldersgruppe med formatkombination | 110 | 304 | &#197;rets U11 hold 4+3; EFTERSKOLER U17/U19 4+2 A; EFTERSKOLER U17/U19 4+2 B |
+| Andre niveau-/rækkenavne uden bogstav+tal | 760 | 2268 | "4 på Stribe"; (4 spillere); &#197;rets U11 Hold - Finaler & Placeringskampe |
+| DMU-rækker | 165 | 946 | DMU H - U09 2400 (4 spillere); DMU H - U09 2400 4 spillere; DMU H - U09 2800 (4 spillere) |
+| Aldersgruppe med formatkombination | 95 | 279 | &#197;rets U11 hold 4+3; EFTERSKOLER U17/U19 4+2 A; EFTERSKOLER U17/U19 4+2 B |
 | Kredsmatch | 16 | 31 | Kredsmatch; Kredsmatch 19/20; Kredsmatch 20-21 |
 | Pulje-navne | 7 | 10 | &#197;rets U11 Hold - Indledende Puljer; U13 Pulje 1; U13 Pulje 2 |
-| UGE 38-rækker | 4 | 5 | UGE 38 - A, 7800 (2+2); UGE 38 - C, 5600 (2+2); UGE 38 - U15 M, 7800 (2+2) |
+| UGE 38-rækker | 2 | 2 | UGE 38 - A, 7800 (2+2); UGE 38 - C, 5600 (2+2) |

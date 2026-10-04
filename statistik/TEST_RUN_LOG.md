@@ -722,3 +722,10 @@ Sammenligning af seks uforklarede standings-rækker mod gemte browserkilder; mis
 - U13 2024/25 region 8: uden UGE 38/Kredsmatch 5/10; med UGE 38 uden Kredsmatch 6/12; med begge 6/13. Placering, bedste GSB-format 2+2 A 5600 og DMU (5 poster, GSB 1–3) bestod.
 - 4-8-etiket: 131/131 puljer har samme S4/D2-signatur; signaturen findes i 3.530/3.538 4-spillere-puljer. Kategorierne forbliver adskilt.
 - Databaser read-only; hash og rækketal ens før/efter, jf. 127-rapportens JSON og Markdown.
+
+## 2026-10-04 — Opgave 129 niveauudtræk: E/M og sammensatte etiketter
+
+- `node --check statistik/scripts/127-youth-format-and-kbh-width.mjs` — bestået.
+- `node statistik/scripts/127-youth-format-and-kbh-width.mjs` — exit 0; parserprøver E, M, M/A → M, C-D og D bestod.
+- Niveauoptælling: 941/1.986 distinkte ungdomsrækkenavne tolkelige; 76 sammensatte etiketter; 1.045 ikke-tolkelige (før: 885 tolkelige, 1.101 ikke-tolkelige). Grupperet liste: 1.045 navne, 3.536 poster, seks grupper.
+- GSB-balance fortsat 279; U13 2024/25 bredde fortsat 5/10, varianter 6/12 og 6/13. Databaser read-only, hash og rækketal uændrede.

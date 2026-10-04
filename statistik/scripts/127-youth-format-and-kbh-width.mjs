@@ -128,23 +128,26 @@ const dmuRow = (name) => /^\s*DMU\b/iu.test(String(name ?? ''));
 const uge38Row = (name) => /UGE\s*38/iu.test(String(name ?? ''));
 const kredsmatchRow = (name) => /\bKredsmatch\b/iu.test(String(name ?? ''));
 const fixedFormatOrder = new Map([['4+3', 1], ['4+2', 2], ['2+2', 3], ['4 spillere', 4], ['4 piger', 5]]);
+const levelOrder = { E: 0, M: 1, A: 2, B: 3, C: 4, 'C-D': 5, D: 6 };
 const parseLevel = (name) => {
   const value = String(name ?? '');
-  const match = value.match(/\bU\d+(?:\s*\/\s*(?:U)?\d+)?\s*([A-D](?:\s*[-/]\s*[A-D])?)(?=[^A-Za-z]|$)/iu);
-  if (!match) return { raw_level: null, letter: null, numeric_value: null, interpretable: false };
+  const match = value.match(/\bU\d+(?:\s*\/\s*(?:U)?\d+)?\s*([EMABCD](?:\s*[-/]\s*[EMABCD])?)(?=[^A-Za-z]|$)/iu);
+  if (!match) return { raw_level: null, letter: null, rank: null, numeric_value: null, interpretable: false };
   const rawLevel = match[1].replaceAll(' ', '').toUpperCase();
-  const singleLetter = /^[A-D]$/u.test(rawLevel);
+  const components = rawLevel.split(/[/-]/u);
+  const letter = rawLevel === 'C-D' ? null : components.sort((a, b) => levelOrder[a] - levelOrder[b])[0];
+  const rank = rawLevel === 'C-D' ? levelOrder['C-D'] : levelOrder[letter];
   const numeric = value.slice(match.index + match[0].length).match(/\b(\d{3,5})\b/u);
   return {
     raw_level: rawLevel,
-    letter: singleLetter ? rawLevel : null,
+    letter,
+    rank,
     numeric_value: numeric ? Number(numeric[1]) : null,
     interpretable: true,
   };
 };
 const levelSort = (a, b) => {
-  const order = { A: 0, B: 1, C: 2, D: 3 };
-  if (a.level.letter !== b.level.letter) return (order[a.level.letter] ?? 9) - (order[b.level.letter] ?? 9);
+  if (a.level.rank !== b.level.rank) return (a.level.rank ?? 99) - (b.level.rank ?? 99);
   return (b.level.numeric_value ?? -1) - (a.level.numeric_value ?? -1);
 };
 
@@ -728,6 +731,19 @@ const u13FormatOrderPass = formatHierarchyCheck.every((row) => row.found)
   && formatHierarchyCheck[3].hierarchy_index < formatHierarchyCheck[4].hierarchy_index
   && formatHierarchyCheck.map((row) => row.level.raw_level).join(',') === 'A,B,C,D,D'
   && formatHierarchyCheck.map((row) => row.level.numeric_value).join(',') === '5600,5000,4200,3600,3200';
+const levelParserExamples = [
+  ['U15 E 9000 (4 spillere)', 'E', 'E', 0],
+  ['U15 M 8000 (2+2)', 'M', 'M', 1],
+  ['U15 M/A 7600 (2+2)', 'M/A', 'M', 1],
+  ['U15 A 7000 (2+2)', 'A', 'A', 2],
+  ['U15 B 6000 (2+2)', 'B', 'B', 3],
+  ['U15 C 5000 (2+2)', 'C', 'C', 4],
+  ['U13 C-D 4000 (2+2)', 'C-D', null, 5],
+  ['U13 D 3600 (4 spillere)', 'D', 'D', 6],
+].map(([name, raw, letter, rank]) => ({ name, expected_raw_level: raw, expected_letter: letter, expected_rank: rank, actual: parseLevel(name) }));
+const levelParserExamplesPass = levelParserExamples.every((sample) => sample.actual.raw_level === sample.expected_raw_level
+  && sample.actual.letter === sample.expected_letter && sample.actual.rank === sample.expected_rank)
+  && levelParserExamples.filter((sample) => sample.expected_raw_level !== 'M/A').map((sample) => sample.actual.rank).join(',') === '0,1,2,3,4,5,6';
 
 const normalizedNameMap = new Map();
 for (const period of placements) {
@@ -852,12 +868,12 @@ const report = {
     provisional_formats: provisionalFormatCounts,
     local_place: 'Among the same national season and age group, x/n is computed only for the five fixed formats. All remaining formats and non-canonical signatures are Ikke placeret.',
     four_to_eight_data_check: fourToEightDataCheck,
-    level_order: 'Within same format only: A > B > C > D, then numeric value descending. C-D/range and missing level are not forced into a single letter rank. No cross-format level comparison.',
+    level_order: 'Within same format only: E > M > A > B > C > C-D > D, then numeric value descending. For multi-letter labels such as M/A, the highest-ranked letter is used. No cross-format level comparison.',
     regulation_source: 'Badminton Danmark/DGI Badminton, Fælles reglement for ungdomsholdturneringen 2025/2026, §9 and §12: https://badminton.dk/wp-content/uploads/2025/10/Faelles-reglement-for-ungdomsholdturneringen-2025-10-08.pdf',
     regulation_notes: 'Verificeret for 2025/26: §9 stk. 3a, s. 4-6 angiver tallet i rækkenavnet som holdets maksimale samlede niveauklassifikationspoint. Hierarkiet er Christoffers rangering, ikke et reglementskrav, men stemmer med §12, s. 7. Kun 2025/26 er verificeret; ældre sæsoner afventer kort 130.',
     level_parse_counts: { distinct_youth_division_names: new Set(physicalGroupRows.map((r) => r.division_name_raw ?? '(mangler)')).size,
       interpretable_level_labels: new Set(physicalGroupRows.filter((r) => parseLevel(r.division_name_raw).interpretable).map((r) => r.division_name_raw)).size,
-      range_level_names_not_ordered: new Set(physicalGroupRows.filter((r) => parseLevel(r.division_name_raw).raw_level?.includes('-')).map((r) => r.division_name_raw)).size,
+      compound_level_names: new Set(physicalGroupRows.filter((r) => /[/-]/u.test(parseLevel(r.division_name_raw).raw_level ?? '')).map((r) => r.division_name_raw)).size,
       uninterpretable_distinct_names: uninterpretableDivisionNames.length, uninterpretable_names: uninterpretableDivisionNames, grouped_patterns: uninterpretableLevelGroups },
     numeric_interpretation: 'The cited 2025/26 §9 says team composition uses season-start ranking classification by letter or point value, and its tables state max combined classification points for named formats. Extracted row numbers are retained as raw numeric values; this edition does not prove every historic row suffix was governed by the same thresholds.',
     unplaced: 'Only 4+3, 4+2, 2+2, 4 spillere and 4 piger are placed. All other formats and non-canonical signatures are Ikke placeret.',
@@ -908,6 +924,8 @@ const report = {
     all_region_8_pools_have_details: detailsCoverage.pools === detailsCoverage.detailed_pools,
     current_season_excluded_from_overall: overallWidthByAge.every((row) => !row.season_ids_included.includes(2026)),
     club_normalization_examples: normalizationExamples,
+    level_parser_examples: levelParserExamples,
+    level_parser_examples_pass: levelParserExamplesPass,
     database_hashes_and_row_counts_unchanged: before.normalized.sha256 === after.normalized.sha256
       && before.landscape.sha256 === after.landscape.sha256
       && JSON.stringify(before.normalized.row_counts) === JSON.stringify(after.normalized.row_counts)
@@ -921,6 +939,7 @@ if (report.controls.region_8_missing_division_rows !== 0) throw new Error('Canno
 if (!report.controls.all_region_8_pools_have_details) throw new Error('Region 8 physical pools lack league_group_details records');
 if (!report.controls.database_hashes_and_row_counts_unchanged) throw new Error('A read-only database baseline changed');
 if (!report.controls.database_hashes_match_known_baseline) throw new Error(`Database hashes differ from the task's known baseline: ${JSON.stringify(before)}`);
+if (!report.controls.level_parser_examples_pass) throw new Error(`E/M/compound-level parser examples failed: ${JSON.stringify(report.controls.level_parser_examples)}`);
 if (!report.controls_129.u13_2024_25_region8.expected_values_match) throw new Error(`U13 width control failed: ${JSON.stringify(report.controls_129.u13_2024_25_region8)}`);
 if (!report.controls_129.u13_format_order_pass || !report.controls_129.u13_best_format_pass || !report.controls_129.u13_fixed_format_order_pass
   || !report.controls_129.u13_dmu_5_records_teams_1_2_3_pass || !report.controls_129.u13_width_5_of_10_pass) throw new Error(`U13 format/level/width/DMU sample failed: ${JSON.stringify(report.controls_129)}`);
@@ -1044,7 +1063,7 @@ ${mdTable(['Ikke placeret format/signatur', 'Fysiske puljer', 'Hold-puljeposter'
 
 Reglementets §7 bruger “4-8 spillere” om spillerantallet pr. kamp i et format, der kaldes “4 spillere”. Her holdes 4-8 spiller-puljer adskilt fra 4 spillere. Dataafprøvningen: ${fourToEightDataCheck.four_to_eight_physical_pools} puljer med 4-8-etiket og ${fourToEightDataCheck.four_player_physical_pools} med 4-spillere-etiket; fælles eksakte kategorisignaturer: ${fourToEightDataCheck.shared_signatures.join('; ') || 'ingen'}. Signaturfordelinger står i JSON. Dette er kun sammenligning af rå klassifikationer, ikke en sammenlægning.
 
-Niveau udtrækkes fra rækkenavnet. Reglementet 2025/26 §9 stk. 3a, s. 4-6 angiver tallet i rækkenavnet som holdets maksimale samlede niveauklassifikationspoint. Hierarkiet er Christoffers rangering, ikke reglementsbestemt, men stemmer med §12, s. 7. Kun 2025/26 er verificeret; ældre sæsoner afventer kort 130. A>B>C>D og derefter numerisk værdi bruges **kun inden for samme format**. C-D intervaller og manglende etiketter får ingen opfundet enkeltplads. I ${report.rank_method.level_parse_counts.distinct_youth_division_names} forskellige ungdomsrækkenavne blev ${report.rank_method.level_parse_counts.interpretable_level_labels} etiketter udtrukket; ${report.rank_method.level_parse_counts.range_level_names_not_ordered} rækkeetiketter har intervalniveau, og ${report.rank_method.level_parse_counts.uninterpretable_distinct_names} kunne ikke tolkes. Grupperet liste: \`statistik/results/129-uoplyste-niveauer.md\`.
+Niveau udtrækkes fra rækkenavnet. Reglementet 2025/26 §9 stk. 3a, s. 4-6 angiver tallet i rækkenavnet som holdets maksimale samlede niveauklassifikationspoint. Hierarkiet er Christoffers rangering, ikke reglementsbestemt, men stemmer med §12, s. 7. Kun 2025/26 er verificeret; ældre sæsoner afventer kort 130. Bogstavrækkefølgen E > M > A > B > C > C-D > D og derefter numerisk værdi bruges **kun inden for samme format**; hvis navnet indeholder flere bogstaver, bruges det højeste (fx M/A → M). I ${report.rank_method.level_parse_counts.distinct_youth_division_names} forskellige ungdomsrækkenavne blev ${report.rank_method.level_parse_counts.interpretable_level_labels} etiketter udtrukket; ${report.rank_method.level_parse_counts.compound_level_names} indeholder sammensatte bogstavetiketter, og ${report.rank_method.level_parse_counts.uninterpretable_distinct_names} kunne ikke tolkes. Grupperet liste: \`statistik/results/129-uoplyste-niveauer.md\`.
 
 ${mdTable(['Sæson', 'Aldersgruppe', 'GSB hold-puljeposter', 'GSB-status', 'Bedste GSB-format', 'Højeste nationalt', 'Aktive uplacerede', 'Udgået/trukket'], placementRows)}
 

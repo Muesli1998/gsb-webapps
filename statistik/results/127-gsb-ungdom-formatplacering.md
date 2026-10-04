@@ -55,7 +55,7 @@ Kun **4+3 > 4+2 > 2+2 > 4 spillere > 4 piger** indgår i formatplaceringen. 3 sp
 
 Reglementets §7 bruger “4-8 spillere” om spillerantallet pr. kamp i et format, der kaldes “4 spillere”. Her holdes 4-8 spiller-puljer adskilt fra 4 spillere. Dataafprøvningen: 131 puljer med 4-8-etiket og 3538 med 4-spillere-etiket; fælles eksakte kategorisignaturer: 1. D · 1. S · 2. D · 2. S · 3. S · 4. S. Signaturfordelinger står i JSON. Dette er kun sammenligning af rå klassifikationer, ikke en sammenlægning.
 
-Niveau udtrækkes fra rækkenavnet. Reglementet 2025/26 §9 stk. 3a, s. 4-6 angiver tallet i rækkenavnet som holdets maksimale samlede niveauklassifikationspoint. Hierarkiet er Christoffers rangering, ikke reglementsbestemt, men stemmer med §12, s. 7. Kun 2025/26 er verificeret; ældre sæsoner afventer kort 130. A>B>C>D og derefter numerisk værdi bruges **kun inden for samme format**. C-D intervaller og manglende etiketter får ingen opfundet enkeltplads. I 1986 forskellige ungdomsrækkenavne blev 885 etiketter udtrukket; 57 rækkeetiketter har intervalniveau, og 1101 kunne ikke tolkes. Grupperet liste: `statistik/results/129-uoplyste-niveauer.md`.
+Niveau udtrækkes fra rækkenavnet. Reglementet 2025/26 §9 stk. 3a, s. 4-6 angiver tallet i rækkenavnet som holdets maksimale samlede niveauklassifikationspoint. Hierarkiet er Christoffers rangering, ikke reglementsbestemt, men stemmer med §12, s. 7. Kun 2025/26 er verificeret; ældre sæsoner afventer kort 130. Bogstavrækkefølgen E > M > A > B > C > C-D > D og derefter numerisk værdi bruges **kun inden for samme format**; hvis navnet indeholder flere bogstaver, bruges det højeste (fx M/A → M). I 1986 forskellige ungdomsrækkenavne blev 941 etiketter udtrukket; 76 indeholder sammensatte bogstavetiketter, og 1045 kunne ikke tolkes. Grupperet liste: `statistik/results/129-uoplyste-niveauer.md`.
 
 | Sæson | Aldersgruppe | GSB hold-puljeposter | GSB-status | Bedste GSB-format | Højeste nationalt | Aktive uplacerede | Udgået/trukket |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -77,7 +77,7 @@ Niveau udtrækkes fra rækkenavnet. Reglementet 2025/26 §9 stk. 3a, s. 4-6 angi
 | 2014/2015 | U17 (ID 6) | 2 | ingen aktivt GSB-hold (kun udgået/trukket) | — | 4+3 (fastlagt af Christoffer) | 0 | 2 |
 | 2015/2016 | U11 (ID 3) | 2 | under højeste format | 4 spillere (D; format 2/3; fastlagt af Christoffer) | 4+3 (fastlagt af Christoffer) | 0 | 1 |
 | 2015/2016 | U13 (ID 4) | 2 | under højeste format | 4 spillere (B; format 3/4; fastlagt af Christoffer) | 4+3 (fastlagt af Christoffer) | 0 | 0 |
-| 2015/2016 | U15 (ID 5) | 1 | under højeste format | 4+2 (niveau uafklaret; format 2/4; fastlagt af Christoffer) | 4+3 (fastlagt af Christoffer) | 0 | 0 |
+| 2015/2016 | U15 (ID 5) | 1 | under højeste format | 4+2 (M; format 2/4; fastlagt af Christoffer) | 4+3 (fastlagt af Christoffer) | 0 | 0 |
 | 2015/2016 | U17 (ID 6) | 1 | ingen aktivt GSB-hold (kun udgået/trukket) | — | 4+3 (fastlagt af Christoffer) | 0 | 1 |
 | 2016/2017 | U11 (ID 3) | 2 | under højeste format | 4 spillere (D; format 2/2; fastlagt af Christoffer) | 4+3 (fastlagt af Christoffer) | 0 | 0 |
 | 2016/2017 | U13 (ID 4) | 1 | under højeste format | 4 spillere (C; format 3/4; fastlagt af Christoffer) | 4+3 (fastlagt af Christoffer) | 0 | 0 |
@@ -86,12 +86,12 @@ Niveau udtrækkes fra rækkenavnet. Reglementet 2025/26 §9 stk. 3a, s. 4-6 angi
 | 2016/2017 | U17/U19 (ID 18) | 0 | ingen aktivt GSB-hold (kun udgået/trukket) | — | 4+2 (fastlagt af Christoffer) | 0 | 0 |
 | 2017/2018 | U11 (ID 3) | 1 | under højeste format | 4 spillere (D; format 3/4; fastlagt af Christoffer) | 4+3 (fastlagt af Christoffer) | 0 | 0 |
 | 2017/2018 | U13 (ID 4) | 2 | under højeste format | 4 spillere (B; format 3/4; fastlagt af Christoffer) | 4+3 (fastlagt af Christoffer) | 0 | 0 |
-| 2017/2018 | U15 (ID 5) | 2 | under højeste format | 4 spillere (B; format 3/4; fastlagt af Christoffer) | 4+3 (fastlagt af Christoffer) | 0 | 0 |
-| 2017/2018 | U17/U19 (ID 18) | 2 | i højeste format | 4+2 (niveau uafklaret; format 1/3; fastlagt af Christoffer) | 4+2 (fastlagt af Christoffer) | 0 | 1 |
+| 2017/2018 | U15 (ID 5) | 2 | under højeste format | 4 spillere (M; format 3/4; fastlagt af Christoffer) | 4+3 (fastlagt af Christoffer) | 0 | 0 |
+| 2017/2018 | U17/U19 (ID 18) | 2 | i højeste format | 4+2 (M/A; format 1/3; fastlagt af Christoffer) | 4+2 (fastlagt af Christoffer) | 0 | 1 |
 | 2018/2019 | U11 (ID 3) | 2 | under højeste format | 4 spillere (C; format 3/4; fastlagt af Christoffer) | 4+3 (fastlagt af Christoffer) | 0 | 0 |
 | 2018/2019 | U13 (ID 4) | 1 | under højeste format | 4 spillere (niveau uafklaret; format 2/3; fastlagt af Christoffer) | 4+3 (fastlagt af Christoffer) | 0 | 0 |
 | 2018/2019 | U15 (ID 5) | 1 | under højeste format | 4 spillere (D; format 3/4; fastlagt af Christoffer) | 4+3 (fastlagt af Christoffer) | 0 | 0 |
-| 2018/2019 | U17/U19 (ID 18) | 2 | under højeste format | 4 spillere (A; format 2/3; fastlagt af Christoffer) | 4+2 (fastlagt af Christoffer) | 0 | 0 |
+| 2018/2019 | U17/U19 (ID 18) | 2 | under højeste format | 4 spillere (M; format 2/3; fastlagt af Christoffer) | 4+2 (fastlagt af Christoffer) | 0 | 0 |
 | 2019/2020 | U11 (ID 3) | 1 | under højeste format | 4 spillere (niveau uafklaret; format 3/4; fastlagt af Christoffer) | 4+3 (fastlagt af Christoffer) | 0 | 0 |
 | 2019/2020 | U13 (ID 4) | 2 | under højeste format | 4 spillere (niveau uafklaret; format 2/3; fastlagt af Christoffer) | 4+3 (fastlagt af Christoffer) | 0 | 0 |
 | 2019/2020 | U15 (ID 5) | 1 | under højeste format | 4 spillere (niveau uafklaret; format 3/4; fastlagt af Christoffer) | 4+3 (fastlagt af Christoffer) | 0 | 0 |
@@ -119,7 +119,7 @@ Niveau udtrækkes fra rækkenavnet. Reglementet 2025/26 §9 stk. 3a, s. 4-6 angi
 | 2024/2025 | U15 (ID 5) | 7 | under højeste format | 2+2 (B; format 2/4; fastlagt af Christoffer) | 4+3 (fastlagt af Christoffer) | 0 | 0 |
 | 2024/2025 | U17/U19 (ID 18) | 1 | under højeste format | 4 spillere (D; format 3/4; fastlagt af Christoffer) | 4+2 (fastlagt af Christoffer) | 0 | 0 |
 | 2025/2026 | U09 (ID 2) | 8 | aktivt GSB-hold, format ikke placeret | — | ingen placerbart format | 8 | 0 |
-| 2025/2026 | U11 (ID 3) | 5 | under højeste format | 4 spillere (D; format 3/4; fastlagt af Christoffer) | 4+3 (fastlagt af Christoffer) | 0 | 0 |
+| 2025/2026 | U11 (ID 3) | 5 | under højeste format | 4 spillere (C-D; format 3/4; fastlagt af Christoffer) | 4+3 (fastlagt af Christoffer) | 0 | 0 |
 | 2025/2026 | U13 (ID 4) | 12 | under højeste format | 2+2 (A; format 2/4; fastlagt af Christoffer) | 4+3 (fastlagt af Christoffer) | 0 | 0 |
 | 2025/2026 | U15 (ID 5) | 9 | under højeste format | 2+2 (A; format 2/4; fastlagt af Christoffer) | 4+3 (fastlagt af Christoffer) | 0 | 0 |
 | 2025/2026 | U17/U19 (ID 18) | 3 | under højeste format | 4 spillere (D; format 3/4; fastlagt af Christoffer) | 4+2 (fastlagt af Christoffer) | 0 | 0 |
@@ -171,29 +171,29 @@ Niveau udtrækkes fra rækkenavnet. Reglementet 2025/26 §9 stk. 3a, s. 4-6 angi
 | 2014/2015 | U17 (6) | Gladsaxe Søborg 2 udgået | 2014\|6\|4267 | U17 serie X1 (4 spillere C) | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau ikke tolket; plads — inden for format | udgået |
 | 2015/2016 | U11 (3) | Gladsaxe Søborg udgået | 2015\|3\|6083 | U11 B Række 4 | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau B; plads 3 inden for format | udgået |
 | 2015/2016 | U11 (3) | Gladsaxe Søborg | 2015\|3\|6085 | U11 D Række 4 | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau D; plads 13 inden for format |  |
-| 2015/2016 | U13 (4) | Gladsaxe Søborg | 2015\|4\|6089 | U13 B Række 4 | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau B; plads 10 inden for format |  |
-| 2015/2016 | U13 (4) | Gladsaxe Søborg 2 | 2015\|4\|6091 | U13 D Række 4 | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau D; plads 27 inden for format |  |
-| 2015/2016 | U15 (5) | Gladsaxe Søborg | 2015\|5\|6093 | U15 M Række 4+2 | Pulje 1 | 4+2 | fastlagt af Christoffer; niveau ikke tolket; plads — inden for format |  |
+| 2015/2016 | U13 (4) | Gladsaxe Søborg | 2015\|4\|6089 | U13 B Række 4 | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau B; plads 12 inden for format |  |
+| 2015/2016 | U13 (4) | Gladsaxe Søborg 2 | 2015\|4\|6091 | U13 D Række 4 | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau D; plads 30 inden for format |  |
+| 2015/2016 | U15 (5) | Gladsaxe Søborg | 2015\|5\|6093 | U15 M Række 4+2 | Pulje 1 | 4+2 | fastlagt af Christoffer; niveau M; plads 1 inden for format |  |
 | 2015/2016 | U17 (6) | Gladsaxe Søborg udgået | 2015\|6\|6099 | U17 A Række 4+2 | Pulje 1 | 4+2 | fastlagt af Christoffer; niveau A; plads 2 inden for format | udgået |
 | 2016/2017 | U11 (3) | Gladsaxe Søborg | 2016\|3\|7668 | U11 D (4) P1 | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau D; plads 8 inden for format |  |
 | 2016/2017 | U11 (3) | Gladsaxe Søborg | 2016\|3\|9137 | Slutspil U11 D (4) | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau D; plads 7 inden for format |  |
 | 2016/2017 | U13 (4) | Gladsaxe Søborg | 2016\|4\|7692 | U13 C (4) P2 | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau C; plads 11 inden for format |  |
 | 2016/2017 | U15 (5) | Gladsaxe Søborg | 2016\|5\|7677 | U15 A (4+2) | Pulje 1 | 4+2 | fastlagt af Christoffer; niveau A; plads 1 inden for format |  |
-| 2016/2017 | U15 (5) | Gladsaxe Søborg 2 | 2016\|5\|7679 | U15 B (4) | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau B; plads 4 inden for format |  |
+| 2016/2017 | U15 (5) | Gladsaxe Søborg 2 | 2016\|5\|7679 | U15 B (4) | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau B; plads 5 inden for format |  |
 | 2016/2017 | U17 (6) | Gladsaxe Søborg | 2016\|6\|7685 | U17/U19 B (4) P2 | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau B; plads 4 inden for format |  |
 | 2017/2018 | U11 (3) | Gladsaxe Søborg | 2017\|3\|9302 | U11 D (4) P2 | Pulje 2 | 4 spillere | fastlagt af Christoffer; niveau D; plads 7 inden for format |  |
-| 2017/2018 | U13 (4) | Gladsaxe Søborg | 2017\|4\|9291 | U13 B (4) | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau B; plads 3 inden for format |  |
-| 2017/2018 | U13 (4) | Gladsaxe Søborg 2 | 2017\|4\|9296 | U13 C (4) | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau C; plads 6 inden for format |  |
-| 2017/2018 | U15 (5) | Gladsaxe Søborg 2 | 2017\|5\|9290 | U15 B (4) | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau B; plads 4 inden for format |  |
-| 2017/2018 | U15 (5) | Gladsaxe Søborg 1 | 2017\|5\|9595 | U15 M 4 spillere | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau ikke tolket; plads — inden for format |  |
-| 2017/2018 | U17/U19 (18) | Gladsaxe Søborg 2 udgået | 2017\|18\|9288 | U17/19 B (4) | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau B; plads 3 inden for format | udgået |
-| 2017/2018 | U17/U19 (18) | Gladsaxe Søborg 1 | 2017\|18\|9592 | U17/U19 M/A 4+2 | Pulje 1 | 4+2 | fastlagt af Christoffer; niveau ikke tolket; plads — inden for format |  |
+| 2017/2018 | U13 (4) | Gladsaxe Søborg | 2017\|4\|9291 | U13 B (4) | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau B; plads 4 inden for format |  |
+| 2017/2018 | U13 (4) | Gladsaxe Søborg 2 | 2017\|4\|9296 | U13 C (4) | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau C; plads 7 inden for format |  |
+| 2017/2018 | U15 (5) | Gladsaxe Søborg 2 | 2017\|5\|9290 | U15 B (4) | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau B; plads 5 inden for format |  |
+| 2017/2018 | U15 (5) | Gladsaxe Søborg 1 | 2017\|5\|9595 | U15 M 4 spillere | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau M; plads 1 inden for format |  |
+| 2017/2018 | U17/U19 (18) | Gladsaxe Søborg 2 udgået | 2017\|18\|9288 | U17/19 B (4) | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau B; plads 4 inden for format | udgået |
+| 2017/2018 | U17/U19 (18) | Gladsaxe Søborg 1 | 2017\|18\|9592 | U17/U19 M/A 4+2 | Pulje 1 | 4+2 | fastlagt af Christoffer; niveau M/A; plads 1 inden for format |  |
 | 2018/2019 | U11 (3) | Gladsaxe Søborg 1 | 2018\|3\|11279 | U11 C 4 Spillere | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau C; plads 2 inden for format |  |
 | 2018/2019 | U11 (3) | Gladsaxe Søborg 2 | 2018\|3\|11401 | U11 D 4 Spillere P2 | Pulje 2 | 4 spillere | fastlagt af Christoffer; niveau D; plads 8 inden for format |  |
 | 2018/2019 | U13 (4) | Gladsaxe Søborg 1 | 2018\|4\|11418 | U13 CD 4 Spillere | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau ikke tolket; plads — inden for format |  |
-| 2018/2019 | U15 (5) | Gladsaxe Søborg 1 | 2018\|5\|11427 | U15 D 4 Spillere P2 | Pulje 2 | 4 spillere | fastlagt af Christoffer; niveau D; plads 15 inden for format |  |
-| 2018/2019 | U17/U19 (18) | Gladsaxe Søborg 1 | 2018\|18\|11355 | U17/19 M 4 Spillere | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau ikke tolket; plads — inden for format |  |
-| 2018/2019 | U17/U19 (18) | Gladsaxe Søborg 2 | 2018\|18\|11771 | U17/U19 A 4 spillere | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau A; plads 4 inden for format |  |
+| 2018/2019 | U15 (5) | Gladsaxe Søborg 1 | 2018\|5\|11427 | U15 D 4 Spillere P2 | Pulje 2 | 4 spillere | fastlagt af Christoffer; niveau D; plads 18 inden for format |  |
+| 2018/2019 | U17/U19 (18) | Gladsaxe Søborg 1 | 2018\|18\|11355 | U17/19 M 4 Spillere | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau M; plads 1 inden for format |  |
+| 2018/2019 | U17/U19 (18) | Gladsaxe Søborg 2 | 2018\|18\|11771 | U17/U19 A 4 spillere | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau A; plads 6 inden for format |  |
 | 2019/2020 | U11 (3) | Gladsaxe Søborg 1 | 2019\|3\|12798 | U11 - 3400 - 4 spillere | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau ikke tolket; plads — inden for format |  |
 | 2019/2020 | U13 (4) | Gladsaxe Søborg 1 | 2019\|4\|12792 | U13 - 3800 - 4 spillere | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau ikke tolket; plads — inden for format |  |
 | 2019/2020 | U13 (4) | Gladsaxe Søborg 2 | 2019\|4\|12794 | U13 - 3400 - 4 spillere | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau ikke tolket; plads — inden for format |  |
@@ -277,7 +277,7 @@ Niveau udtrækkes fra rækkenavnet. Reglementet 2025/26 §9 stk. 3a, s. 4-6 angi
 | 2024/2025 | U15 (5) | Gladsaxe Søborg 5 | 2024\|5\|17143 | U15 D 4000 (4 spillere). | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau D / 4000; plads 17 inden for format |  |
 | 2024/2025 | U15 (5) | Gladsaxe Søborg 7 | 2024\|5\|16998 | UGE 38 - U15 D, 4000 (2+2) | Pulje 1 | 2+2 | fastlagt af Christoffer; niveau D / 4000; plads — inden for format |  |
 | 2024/2025 | U15 (5) | Gladsaxe Søborg 6 | 2024\|5\|17013 | UGE 38 - U15 C, 4600 (2+2) | Pulje 1 | 2+2 | fastlagt af Christoffer; niveau C / 4600; plads — inden for format |  |
-| 2024/2025 | U17/U19 (18) | Gladsaxe Søborg 1 | 2024\|18\|17100 | U17/U19 D, 4600 (4 spillere) | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau D / 4600; plads 12 inden for format |  |
+| 2024/2025 | U17/U19 (18) | Gladsaxe Søborg 1 | 2024\|18\|17100 | U17/U19 D, 4600 (4 spillere) | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau D / 4600; plads 14 inden for format |  |
 | 2025/2026 | U09 (2) | Gladsaxe Søborg 2 | 2025\|2\|18127 | U09 D 3300 (3 spillere) BD | Pulje 1 | 3 spillere | Uplaceret |  |
 | 2025/2026 | U09 (2) | Gladsaxe Søborg 3 | 2025\|2\|18128 | U09 D 3300 (3 spillere) BD | Pulje 2 | 3 spillere | Uplaceret |  |
 | 2025/2026 | U09 (2) | Gladsaxe Søborg 1 | 2025\|2\|18129 | U09 C 3600 (3 spillere) BD | Pulje 1 | 3 spillere | Uplaceret |  |
@@ -303,16 +303,16 @@ Niveau udtrækkes fra rækkenavnet. Reglementet 2025/26 §9 stk. 3a, s. 4-6 angi
 | 2025/2026 | U13 (4) | Gladsaxe Søborg 8 | 2025\|4\|17985 | Uge 38 - U13 B, 5400 (2+2) | Pulje 1 | 2+2 | fastlagt af Christoffer; niveau B / 5400; plads — inden for format |  |
 | 2025/2026 | U13 (4) | Gladsaxe Søborg 9 | 2025\|4\|17988 | Uge 38 - U13 C, 5000 (2+2) | Pulje 1 | 2+2 | fastlagt af Christoffer; niveau C / 5000; plads — inden for format |  |
 | 2025/2026 | U13 (4) | Gladsaxe Søborg 10 | 2025\|4\|17989 | Uge 38 - U13 D, 4800 (2+2) | Pulje 1 | 2+2 | fastlagt af Christoffer; niveau D / 4800; plads — inden for format |  |
-| 2025/2026 | U15 (5) | Gladsaxe Søborg 3 | 2025\|5\|17978 | U15 C, 5400 (2+2) | Pulje 1 | 2+2 | fastlagt af Christoffer; niveau C / 5400; plads 4 inden for format |  |
-| 2025/2026 | U15 (5) | Gladsaxe Søborg 1 | 2025\|5\|18002 | U15 A, 6800 (2+2) | Pulje 1 | 2+2 | fastlagt af Christoffer; niveau A / 6800; plads 1 inden for format |  |
+| 2025/2026 | U15 (5) | Gladsaxe Søborg 3 | 2025\|5\|17978 | U15 C, 5400 (2+2) | Pulje 1 | 2+2 | fastlagt af Christoffer; niveau C / 5400; plads 5 inden for format |  |
+| 2025/2026 | U15 (5) | Gladsaxe Søborg 1 | 2025\|5\|18002 | U15 A, 6800 (2+2) | Pulje 1 | 2+2 | fastlagt af Christoffer; niveau A / 6800; plads 2 inden for format |  |
 | 2025/2026 | U15 (5) | Gladsaxe Søborg 7 | 2025\|5\|18119 | U15 D, 4600 (4 piger) | Pulje 1 | 4 piger | fastlagt af Christoffer; niveau D / 4600; plads 3 inden for format |  |
-| 2025/2026 | U15 (5) | Gladsaxe Søborg 2 | 2025\|5\|18145 | U15 B 6400 (4 spillere) BD | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau B / 6400; plads 3 inden for format |  |
+| 2025/2026 | U15 (5) | Gladsaxe Søborg 2 | 2025\|5\|18145 | U15 B 6400 (4 spillere) BD | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau B / 6400; plads 4 inden for format |  |
 | 2025/2026 | U15 (5) | Gladsaxe Søborg 4 | 2025\|5\|18148 | U15 C-D 5200 (4 spillere) BD | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau C-D / 5200; plads — inden for format |  |
-| 2025/2026 | U15 (5) | Gladsaxe Søborg 5 | 2025\|5\|18149 | U15 D 5000 (4 spillere) BD | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau D / 5000; plads 12 inden for format |  |
-| 2025/2026 | U15 (5) | Gladsaxe Søborg 6 | 2025\|5\|18150 | U15 D 5000 (4 spillere) BD | Pulje 2 | 4 spillere | fastlagt af Christoffer; niveau D / 5000; plads 12 inden for format |  |
+| 2025/2026 | U15 (5) | Gladsaxe Søborg 5 | 2025\|5\|18149 | U15 D 5000 (4 spillere) BD | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau D / 5000; plads 13 inden for format |  |
+| 2025/2026 | U15 (5) | Gladsaxe Søborg 6 | 2025\|5\|18150 | U15 D 5000 (4 spillere) BD | Pulje 2 | 4 spillere | fastlagt af Christoffer; niveau D / 5000; plads 13 inden for format |  |
 | 2025/2026 | U15 (5) | Gladsaxe Søborg 6 | 2025\|5\|17991 | Uge 38 - U15 A, 6800 (2+2) | Pulje 1 | 2+2 | fastlagt af Christoffer; niveau A / 6800; plads — inden for format |  |
 | 2025/2026 | U15 (5) | Gladsaxe Søborg 8 | 2025\|5\|17996 | Uge 38 - U15 C, 5400 (2+2) | Pulje 1 | 2+2 | fastlagt af Christoffer; niveau C / 5400; plads — inden for format |  |
-| 2025/2026 | U17/U19 (18) | Gladsaxe Søborg 2 | 2025\|18\|18122 | U17/U19 D, 5200 (4 spillere) | Pulje 3 | 4 spillere | fastlagt af Christoffer; niveau D / 5200; plads 11 inden for format |  |
+| 2025/2026 | U17/U19 (18) | Gladsaxe Søborg 2 | 2025\|18\|18122 | U17/U19 D, 5200 (4 spillere) | Pulje 3 | 4 spillere | fastlagt af Christoffer; niveau D / 5200; plads 13 inden for format |  |
 | 2025/2026 | U17/U19 (18) | Gladsaxe Søborg 1 | 2025\|18\|18154 | C-D 5600 (4 spillere) BD | Pulje 1 | 4 spillere | fastlagt af Christoffer; niveau ikke tolket; plads — inden for format |  |
 | 2025/2026 | U17/U19 (18) | Gladsaxe Søborg 3 | 2025\|18\|17999 | Uge 38 - U17/U19 D, 5000 (2+2) | Pulje 1 | 2+2 | fastlagt af Christoffer; niveau D / 5000; plads — inden for format |  |
 | 2026/2027 (i gang, ufuldstændig) | U09 (2) | Gladsaxe Søborg 3 | 2026\|2\|19114 | U9 Dx, 3000 (3 spillere) BD | Pulje 1 | Uplaceret: 3 spillere (ingen brugbar kategorisignatur) | Uplaceret |  |
@@ -360,7 +360,7 @@ DMU-poster tæller ikke i lokal formatplacering eller region 8-bredde. Unikke GS
 | 2016/2017 | U11 (3) | Gladsaxe Søborg 1 | 4 spillere | D | 2 | 2016\|3\|8987; 2016\|3\|8997 | nej |
 | 2016/2017 | U15 (5) | Gladsaxe Søborg 1 | 4+2 | A | 1 | 2016\|5\|8905 | nej |
 | 2016/2017 | U17/U19 (18) | Gladsaxe Søborg 1 | 4 spillere | B | 2 | 2016\|18\|8918; 2016\|18\|9019 | nej |
-| 2017/2018 | U15 (5) | Gladsaxe Søborg 1 | 4 spillere | niveau ikke tolket | 2 | 2017\|5\|10543; 2017\|5\|10548 | ja (samme rånavn lokal række) |
+| 2017/2018 | U15 (5) | Gladsaxe Søborg 1 | 4 spillere | M | 2 | 2017\|5\|10543; 2017\|5\|10548 | ja (samme rånavn lokal række) |
 | 2021/2022 | U09 (2) | Gladsaxe Søborg 1 | 4 spillere | niveau ikke tolket | 2 | 2021\|2\|14556; 2021\|2\|14558 | ja (samme rånavn lokal række) |
 | 2021/2022 | U13 (4) | Gladsaxe Søborg 1 | 4 spillere | niveau ikke tolket | 3 | 2021\|4\|14731; 2021\|4\|14735; 2021\|4\|14737 | ja (samme rånavn lokal række) |
 | 2022/2023 | U11 (3) | Gladsaxe Søborg 1 | 4 spillere | niveau ikke tolket | 1 | 2022\|3\|15528 | ja (samme rånavn lokal række) |
@@ -2461,16 +2461,16 @@ Listen er pr. sæson og aldersgruppe; klubber er normaliseret fra holdnavnene, o
 | 2015/2016 | U11 (3) | U11 C Række 4 | 4 spillere | C | 7 | Charlottenlund; Dragør; FKIF Frederiksberg; Lyngby; Tono Kbh.; Valby BC; Vanløse |
 | 2015/2016 | U13 (4) | U13 A Række 4+2 | 4+2 | A | 8 | Charlottenlund; Dragør; Drive; Frederiksberg; Hvidovre; KBK Kbh.; Lyngby; NBK Amager |
 | 2015/2016 | U13 (4) | U13 C Række 4 | 4 spillere | C | 8 | Amager ABC; Charlottenlund; Dragør; FKIF Frederiksberg; Rødovre; Skovshoved; Tono Kbh.; Valby BC |
-| 2015/2016 | U13 (4) | U13 E Række 4+3 | 4+3 | niveau ikke tolket | 4 | Hvidovre; KBK Kbh.; Lyngby; Skovshoved |
-| 2015/2016 | U13 (4) | U13 M Række 4+2 | 4+2 | niveau ikke tolket | 7 | Charlottenlund; KBK Kbh.; KMB2010; Lyngby; Skovshoved; Valby BC; Vanløse |
+| 2015/2016 | U13 (4) | U13 E Række 4+3 | 4+3 | E | 4 | Hvidovre; KBK Kbh.; Lyngby; Skovshoved |
+| 2015/2016 | U13 (4) | U13 M Række 4+2 | 4+2 | M | 7 | Charlottenlund; KBK Kbh.; KMB2010; Lyngby; Skovshoved; Valby BC; Vanløse |
 | 2015/2016 | U15 (5) | U15 A Række 4+2 | 4+2 | A | 7 | Amager ABC; Drive; Frederiksberg; Hvidovre; KBK Kbh.; NBK Amager; Skovshoved |
 | 2015/2016 | U15 (5) | U15 B Række 4 | 4 spillere | B | 8 | BC37 Amager; Dragør; Drive; FKIF Frederiksberg; Hvidovre HB2000; KFUM Badminton Kbh.; Valby BC; Vanløse |
 | 2015/2016 | U15 (5) | U15 C Række 4 | 4 spillere | C | 10 | Amager ABC; BC37 Amager; Charlottenlund; Dragør; FKIF Frederiksberg; Hvidovre; Hvidovre HB2000; Rødovre; Skovshoved; Tono Kbh. |
 | 2015/2016 | U15 (5) | U15 D Række 4 | 4 spillere | D | 5 | Amager ABC; Charlottenlund; Islands Brygge; Skovshoved; Tono Kbh. |
-| 2015/2016 | U15 (5) | U15 E Række 4+3 | 4+3 | niveau ikke tolket | 4 | KBK Kbh.; KMB2010; Lyngby; Skovshoved |
+| 2015/2016 | U15 (5) | U15 E Række 4+3 | 4+3 | E | 4 | KBK Kbh.; KMB2010; Lyngby; Skovshoved |
 | 2015/2016 | U17 (6) | U17 A Række 4+2 | 4+2 | A | 10 | BC37 Amager; Charlottenlund; Dragør; Drive; FKIF Frederiksberg; Frederiksberg; Gladsaxe Søborg; Lyngby; Valby BC; Vanløse |
 | 2015/2016 | U17 (6) | U17 B Række 4 | 4 spillere | B | 8 | Charlottenlund; Drive; FKIF Frederiksberg; KFUM Badminton Kbh.; Rødovre; Sct. Jørgen Kbh.; Tono Kbh. |
-| 2015/2016 | U17 (6) | U17 E Række 4+3 | 4+3 | niveau ikke tolket | 4 | Gentofte; KBK Kbh.; Lyngby; Skovshoved |
+| 2015/2016 | U17 (6) | U17 E Række 4+3 | 4+3 | E | 4 | Gentofte; KBK Kbh.; Lyngby; Skovshoved |
 | 2015/2016 | U17 (6) | U17/U19 A 4 spillere | 4 spillere | A | 6 | Amager ABC; Helsingør; Herlufsholm; Humlebæk; Måløv; Viskinge |
 | 2016/2017 | U11 (3) | Holdturneringsdage for begyndere U11-Herlev | 4 spillere | niveau ikke tolket | 8 | Fredensborg; Greve; Herlev/Hjorten 0 Vært; Herlev/Hjorten Vært; Sydstevns; Såby Badminton; Viby S; Vordingborg |
 | 2016/2017 | U11 (3) | Kredsmatch | 4+3 | niveau ikke tolket | 5 | Badminton Fyn; Badminton København; Badminton Midtjylland; Badminton Sjælland; Middelfart |
@@ -2511,7 +2511,7 @@ Listen er pr. sæson og aldersgruppe; klubber er normaliseret fra holdnavnene, o
 | 2017/2018 | U13 (4) | U13 D (4) P1 | 4 spillere | D | 8 | Amager ABC; Charlottenlund; Frederiksberg; Hvidovre; KFUM Badminton Kbh.; Tono Kbh.; Valby BC |
 | 2017/2018 | U13 (4) | U13 D (4) P2 | 4 spillere | D | 8 | Amager ABC; BC37 Amager; Dragør; FKIF Frederiksberg; Islands Brygge; KBK Kbh.; Skovshoved; Valby BC |
 | 2017/2018 | U13 (4) | U13 D (4) P3 | 4 spillere | D | 8 | Amager ABC; BK36 Kbh.; Drive; Hvidovre HB2000; Islands Brygge; KMB2010; Valby BC; Vanløse |
-| 2017/2018 | U13 (4) | U13 M/A 4+2 | 4+2 | niveau ikke tolket | 6 | ABC/IBB U13 B; Dragør; Drive; GBK/FBK U13 M/A; KBK Kbh.; Solrød Strand |
+| 2017/2018 | U13 (4) | U13 M/A 4+2 | 4+2 | M/A | 6 | ABC/IBB U13 B; Dragør; Drive; GBK/FBK U13 M/A; KBK Kbh.; Solrød Strand |
 | 2017/2018 | U15 (5) | Kredsmatch BADKBH-BADSJ&#198; U15 | Ikke-kanonisk signatur: MD2/DS2/DD2/HS4/HD3 | niveau ikke tolket | 2 | Badminton København; Badminton Sjælland |
 | 2017/2018 | U15 (5) | U15 4+3 | 4+3 | niveau ikke tolket | 11 | Greve; Hillerød; Holbæk; KBK Kbh.; Lillerød; Lyngby; Skovshoved; Solrød Strand; Værløse |
 | 2017/2018 | U15 (5) | U15 A 4 spillere | 4 spillere | A | 12 | Farum; Greve; Hillerød; KBK Kbh.; Kirke Hyllinge; Lillerød; Måløv; Sorø; Valby BC; Vanløse; Værløse |
@@ -2519,11 +2519,11 @@ Listen er pr. sæson og aldersgruppe; klubber er normaliseret fra holdnavnene, o
 | 2017/2018 | U15 (5) | U15 C (4) | 4 spillere | C | 11 | Amager ABC; Charlottenlund; Drive; FKIF Frederiksberg; Frederiksberg; KFUM Badminton Kbh.; NBK Amager; Rødovre; Valby BC |
 | 2017/2018 | U15 (5) | U15 D (4 piger) | 4 piger | D | 4 | Charlottenlund; FKIF Frederiksberg; Islands Brygge; Tono Kbh. |
 | 2017/2018 | U15 (5) | U15 D (4) | 4 spillere | D | 11 | Amager ABC; BC37 Amager; BK36 Kbh.; Charlottenlund; FKIF Frederiksberg; Hvidovre; Islands Brygge; Skovshoved; Tono Kbh.; Valby BC |
-| 2017/2018 | U15 (5) | U15 M/A 4+2 | 4+2 | niveau ikke tolket | 10 | Dragør; Hillerød; Hvidovre; Hørsholm; KBK Kbh.; KMB2010; Køge; Lyngby |
+| 2017/2018 | U15 (5) | U15 M/A 4+2 | 4+2 | M/A | 10 | Dragør; Hillerød; Hvidovre; Hørsholm; KBK Kbh.; KMB2010; Køge; Lyngby |
 | 2017/2018 | U17/U19 (18) | U17/19 B (4) | 4 spillere | B | 7 | Amager ABC; Charlottenlund; Drive; Gladsaxe Søborg; Hvidovre; Hvidovre HB2000; Valby BC |
 | 2017/2018 | U17/U19 (18) | U17/19 C (4) | 4 spillere | C | 7 | Amager ABC; BC37 Amager; Charlottenlund; FKIF Frederiksberg; Hvidovre HB2000; Rødovre |
 | 2017/2018 | U17/U19 (18) | U17/U19 A 4 spillere | 4 spillere | A | 11 | Badminton Roskilde; Dragør; Greve; Græsted; Holte; Solrød Strand; Sorø; Stenløse; Team Storstrøm; Taastrup Elite; Valby BC |
-| 2017/2018 | U17/U19 (18) | U17/U19 M 4 spillere | 4 spillere | niveau ikke tolket | 9 | Farum; Herlev/Hjorten; Herlufsholm; Holbæk; Holte; KBK Kbh.; Lyngby; Skælskør; Værløse |
+| 2017/2018 | U17/U19 (18) | U17/U19 M 4 spillere | 4 spillere | M | 9 | Farum; Herlev/Hjorten; Herlufsholm; Holbæk; Holte; KBK Kbh.; Lyngby; Skælskør; Værløse |
 | 2018/2019 | U11 (3) | Kredsmatch | 4+3 | niveau ikke tolket | 6 | Badminton Fyn; Badminton København; Badminton Midtjylland; Badminton Nordjylland; Badminton Sjælland; Middelfart |
 | 2018/2019 | U11 (3) | Kredsmatch BADKBH-BADSJ U11 | Ikke-kanonisk signatur: MD2/DS2/DD2/HS4/HD3 | niveau ikke tolket | 2 | Badminton København; Badminton Sjælland |
 | 2018/2019 | U11 (3) | U11 4+2 | 4+2 | niveau ikke tolket | 5 | Gentofte; Lyngby; Skovshoved; Solrød Strand |
@@ -2549,7 +2549,7 @@ Listen er pr. sæson og aldersgruppe; klubber er normaliseret fra holdnavnene, o
 | 2018/2019 | U15 (5) | U15 C 4 Spillere | 4 spillere | C | 9 | BC37 Amager; BK36 Kbh.; FKIF Frederiksberg; Gentofte; KMB2010; Lyngby 3 LBK/VSBK; NBK Amager; Skovshoved; Valby BC |
 | 2018/2019 | U15 (5) | U15 CD 4 Spillere | 4 spillere | niveau ikke tolket | 6 | BC37 Amager; Drive; FKIF Frederiksberg; Islands Brygge; KBK Kbh.; Vanløse |
 | 2018/2019 | U15 (5) | U15 D 4 Spillere P1 | 4 spillere | D | 9 | BC37 Amager; Charlottenlund; Frederiksberg; Gentofte; Islands Brygge; KBK Kbh.; KMB2010; SAIF Kbh.; Valby BC |
-| 2018/2019 | U15 (5) | U15 M 4 Spillere | 4 spillere | niveau ikke tolket | 3 | Gentofte; Herlev/Hjorten; Vanløse |
+| 2018/2019 | U15 (5) | U15 M 4 Spillere | 4 spillere | M | 3 | Gentofte; Herlev/Hjorten; Vanløse |
 | 2018/2019 | U15 (5) | U15 MA 4+2 | 4+2 | niveau ikke tolket | 5 | Greve; Hillerød; Hvidovre; Hørsholm; Nordbyens Badmintonklub |
 | 2018/2019 | U17/U19 (18) | U17/19 B 4 Spillere | 4 spillere | B | 18 | Ballerup BC58; BC37 Amager; Borup; Charlottenlund; Glumsø; Græsted; Herlev/Hjorten; Holte; Kirke Hyllinge; Køge; Ledøje-Smørum; Lillerød; Næstved; Rudersdal; Slangerup; Sorø; Taastrup TIK |
 | 2018/2019 | U17/U19 (18) | U17/19 CD 4 Spillere | 4 spillere | niveau ikke tolket | 7 | Farum; Glostrup; Helsingør; Hillerød; Islands Brygge; Ledøje-Smørum; Stenløse |
@@ -2686,9 +2686,9 @@ Listen er pr. sæson og aldersgruppe; klubber er normaliseret fra holdnavnene, o
 | 2024/2025 | U15 (5) | U15 C-D 4200 (4 spillere). | 4 spillere | C-D | 9 | Drive; Gentofte; Hvidovre; Islands Brygge; KBK Kbh.; Lyngby; NBK Amager; Rødovre; Skovshoved |
 | 2024/2025 | U15 (5) | U15 D, 3600 (4 piger) | 4 piger | D | 15 | Birkerød BK13; FKIF Frederiksberg; Frederiksberg; Gentofte; Glostrup; Greve; Herlev/Hjorten; Karlslunde; Skovshoved; Skælskør; Vallensbæk; Værløse |
 | 2024/2025 | U15 (5) | U15 Kredsmatch | 4+3 | niveau ikke tolket | 5 | BADFYN/BADSDRJ; Badminton København; Badminton Midtjylland; Badminton Nordjylland; Badminton Sjælland |
-| 2024/2025 | U15 (5) | U15 M, 7800 (2+2) | 2+2 | niveau ikke tolket | 9 | Badminton Roskilde/Ølstykke; BC37 Amager; KMB2010/Drive; Lillerød; Skovshoved; Team NHRS; Værløse |
+| 2024/2025 | U15 (5) | U15 M, 7800 (2+2) | 2+2 | M | 9 | Badminton Roskilde/Ølstykke; BC37 Amager; KMB2010/Drive; Lillerød; Skovshoved; Team NHRS; Værløse |
 | 2024/2025 | U15 (5) | UGE 38 - U15 A, 6500 (2+2 | 2+2 | A | 3 | BC37 Amager; Gentofte; Jernløse |
-| 2024/2025 | U15 (5) | UGE 38 - U15 M, 7800 (2+2) | 2+2 | niveau ikke tolket | 3 | Gentofte; Hvidovre; KMB2010 |
+| 2024/2025 | U15 (5) | UGE 38 - U15 M, 7800 (2+2) | 2+2 | M | 3 | Gentofte; Hvidovre; KMB2010 |
 | 2024/2025 | U17/U19 (18) | 8600 (4 spillere). | 4 spillere | niveau ikke tolket | 7 | Birkerød BK13; Drive; Farum; KBK Kbh.; Sorø/Nykøbing F.; Valby BC |
 | 2024/2025 | U17/U19 (18) | A, 7800 (2+2) | 2+2 | niveau ikke tolket | 6 | FKIF Frederiksberg; Gentofte; Hvidovre; Lyngby; Skovshoved; Team Vejleå |
 | 2024/2025 | U17/U19 (18) | D, 4800 (2+2) | 2+2 | niveau ikke tolket | 7 | Badminton Roskilde; Gentofte; Holbæk; Skovshoved; Solrød Strand |
@@ -2696,7 +2696,7 @@ Listen er pr. sæson og aldersgruppe; klubber er normaliseret fra holdnavnene, o
 | 2024/2025 | U17/U19 (18) | U17/U19 B, 7200 (4 spillere) | 4 spillere | B | 10 | BC37 Amager; FKIF Frederiksberg; Holbæk; Hørsholm; KBK Kbh.; Lillerød; NBK Amager; Slangerup |
 | 2024/2025 | U17/U19 (18) | U17/U19 C, 6000 (4 spillere) | 4 spillere | C | 19 | Drive; Farum; Frederiksberg; Greve; Helsingør; Humlebæk; KMB2010; Ledøje-Smørum; Nivå-Kokkedal; Rudersdal; Skovshoved; Slagelse; Vanløse; Vindinge; Værløse; Ølstykke |
 | 2024/2025 | U17/U19 (18) | U17/U19 C-D, 5000 (4 spillere) | 4 spillere | C-D | 19 | Brøndby BK; Græsted/Gilleleje; Helsinge; Helsingør; Islands Brygge; KBK Kbh.; Køge; Lyngby; NBK Amager; Nordbyens Badmintonklub; Ringsted; Slangerup; Team Vejleå; Værløse; Ønslev-Eskildstrup |
-| 2024/2025 | U17/U19 (18) | U17/U19 M, 10000 (4 spillere) | 4 spillere | niveau ikke tolket | 3 | Holbæk; Hvidovre; Lyngby |
+| 2024/2025 | U17/U19 (18) | U17/U19 M, 10000 (4 spillere) | 4 spillere | M | 3 | Holbæk; Hvidovre; Lyngby |
 | 2024/2025 | U17/U19 (18) | UGE 38 - A, 7800 (2+2) | 2+2 | niveau ikke tolket | 3 | Gentofte; Herlev/Hjorten; Hvidovre |
 | 2024/2025 | U17/U19 (18) | UGE 38 - C, 5600 (2+2) | 2+2 | niveau ikke tolket | 3 | Drive; Herlev/Hjorten; Lyngby |
 | 2025/2026 | U11 (3) | U11 (4+2) | 4+2 | niveau ikke tolket | 4 | BC37/IBB; Gentofte; Hvidovre; Solrød Strand |
@@ -2717,9 +2717,9 @@ Listen er pr. sæson og aldersgruppe; klubber er normaliseret fra holdnavnene, o
 | 2025/2026 | U15 (5) | U15 C, 5600 (4 spillere) | 4 spillere | C | 20 | Birkerød BK13; Charlottenlund; Frederikssund; Græsted; Gørlev; Herlev/Hjorten; Holte; Karlslunde; Køge; Lillerød; NBK Amager; Ringsted; Rudersdal; Taastrup BC; Virum; Værløse; Ølstykke |
 | 2025/2026 | U15 (5) | U15 D, 5000 (2+2) | 2+2 | D | 8 | Drive; Gentofte; Skovlunde; Skælskør; Slagelse; Solrød Strand |
 | 2025/2026 | U15 (5) | U15 Kredsmatch 2025 | 4+3 | niveau ikke tolket | 5 | BADFYN/BADSDRJ; Badminton København; Badminton Midtjylland; Badminton Nordjylland; Badminton Sjælland |
-| 2025/2026 | U15 (5) | U15 M, 7800 (2+2) | 2+2 | niveau ikke tolket | 7 | BC37 Amager; Gentofte; Skovshoved; Solrød Strand; Værløse |
+| 2025/2026 | U15 (5) | U15 M, 7800 (2+2) | 2+2 | M | 7 | BC37 Amager; Gentofte; Skovshoved; Solrød Strand; Værløse |
 | 2025/2026 | U15 (5) | Uge 38 - U15 B, 6000 (2+2) | 2+2 | B | 7 | Badminton Roskilde; Hvidovre; Islands Brygge; Jernløse; KMB2010; Måløv |
-| 2025/2026 | U15 (5) | Uge 38 - U15 M, 7800 (2+2) | 2+2 | niveau ikke tolket | 4 | Hvidovre; KMB2010; Skovshoved; Solrød Strand |
+| 2025/2026 | U15 (5) | Uge 38 - U15 M, 7800 (2+2) | 2+2 | M | 4 | Hvidovre; KMB2010; Skovshoved; Solrød Strand |
 | 2025/2026 | U17/U19 (18) | A 8400 (4 spillere) BD | 4 spillere | niveau ikke tolket | 7 | Drive; Herlev/Hjorten - Valby; Holbæk; KBK Kbh.; KMB2010; Lyngby; Værløse |
 | 2025/2026 | U17/U19 (18) | C 6400 (4 spillere) BD | 4 spillere | niveau ikke tolket | 8 | Charlottenlund; Drive; Hvidovre HB2000; KBK Kbh.; KMB2010; Lyngby; Skovshoved; Vanløse |
 | 2025/2026 | U17/U19 (18) | U17/U19 A, 7800 (2+2) | 2+2 | A | 3 | Gentofte; Humlebæk; Skovshoved |
@@ -2727,8 +2727,8 @@ Listen er pr. sæson og aldersgruppe; klubber er normaliseret fra holdnavnene, o
 | 2025/2026 | U17/U19 (18) | U17/U19 B, 7200 (4 spillere) | 4 spillere | B | 9 | Frem - Hellebæk; Humlebæk; Hørsholm; Lyngby; NBK Amager; Slangerup; Værløse |
 | 2025/2026 | U17/U19 (18) | U17/U19 C, 5800 (2+2) | 2+2 | C | 9 | Badminton Roskilde; BC37 Amager; Gentofte; Greve; Holbæk; Lundtofte; Team Bornholm |
 | 2025/2026 | U17/U19 (18) | U17/U19 D, 5000 (2+2) | 2+2 | D | 6 | Gentofte; Greve; SAIF Kbh.; Team Sydkysten |
-| 2025/2026 | U17/U19 (18) | U17/U19 M, 10000 (4 spillere) | 4 spillere | niveau ikke tolket | 7 | Farum; Gentofte; Herlev/Hjorten - Birkerød; Værløse |
-| 2025/2026 | U17/U19 (18) | U17/U19 M, 15000 (4+2) | 4+2 | niveau ikke tolket | 9 | BC37 Amager; Greve/Skælskør/Ølstykke; Hvidovre; KMB2010; Lillerød; Skovshoved; Solrød Strand |
+| 2025/2026 | U17/U19 (18) | U17/U19 M, 10000 (4 spillere) | 4 spillere | M | 7 | Farum; Gentofte; Herlev/Hjorten - Birkerød; Værløse |
+| 2025/2026 | U17/U19 (18) | U17/U19 M, 15000 (4+2) | 4+2 | M | 9 | BC37 Amager; Greve/Skælskør/Ølstykke; Hvidovre; KMB2010; Lillerød; Skovshoved; Solrød Strand |
 | 2025/2026 | U17/U19 (18) | Uge 38 - U17/U19 A, 7800 (2+2) | 2+2 | A | 3 | Herlev/Hjorten; Hvidovre; Skovshoved |
 | 2026/2027 (i gang, ufuldstændig) | U09 (2) | U09 C-D 3400 (3 spillere) BD | Uplaceret: 3 spillere (ingen brugbar kategorisignatur) | C-D | 6 | BC37 Amager; Birkerød BK13; Drive; Gentofte; Holbæk; KBK Kbh. |
 | 2026/2027 (i gang, ufuldstændig) | U11 (3) | U11 (4+2) - maks. 8500 p. holdfællesskab | Uplaceret: 4+2 (ingen brugbar kategorisignatur) | niveau ikke tolket | 3 | BC37 Amager; KBK Kbh.; Skovshoved |
@@ -2750,9 +2750,9 @@ Listen er pr. sæson og aldersgruppe; klubber er normaliseret fra holdnavnene, o
 | 2026/2027 (i gang, ufuldstændig) | U15 (5) | U15 C, 5500 (4 spillere) | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | C | 15 | Frederikssund; Glostrup; Holte; Humlebæk; Islands Brygge; Lillerød; Måløv; Næstved-Herlufsholm/Sorø; Ringsted; Skovlunde; Slagelse; Slangerup/Skibby; Valby BC; Værløse; Ølstykke |
 | 2026/2027 (i gang, ufuldstændig) | U15 (5) | U15 D, 4500 (4 piger) | Uplaceret: 4 piger (ingen brugbar kategorisignatur) | D | 10 | Badminton Roskilde; Birkerød BK13; Brøndby BK; Charlottenlund; Gentofte; Hillerød; Lundtofte; Nivå-Kokkedal; Slangerup; Vallensbæk |
 | 2026/2027 (i gang, ufuldstændig) | U15 (5) | U15 D, 4800 (2+2) | Uplaceret: 2+2 (ingen brugbar kategorisignatur) | D | 5 | BC37 Amager; Greve; Holbæk; Hvidovre; Solrød Strand |
-| 2026/2027 (i gang, ufuldstændig) | U15 (5) | U15 M, 7800 (2+2) | Uplaceret: 2+2 (ingen brugbar kategorisignatur) | niveau ikke tolket | 3 | Humlebæk; Roskilde/Valby; Skovshoved |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | U15 M, 7800 (2+2) | Uplaceret: 2+2 (ingen brugbar kategorisignatur) | M | 3 | Humlebæk; Roskilde/Valby; Skovshoved |
 | 2026/2027 (i gang, ufuldstændig) | U15 (5) | UGE 38 - U15 C, 5200 (2+2) | 2+2 | C | 4 | Dragør; Herlev/Hjorten; KBK Kbh.; Skovshoved |
-| 2026/2027 (i gang, ufuldstændig) | U15 (5) | UGE 38 - U15 M, 7800 (2+2) | 2+2 | niveau ikke tolket | 3 | Gentofte; LBK/SBK/SLBK; Skovshoved |
+| 2026/2027 (i gang, ufuldstændig) | U15 (5) | UGE 38 - U15 M, 7800 (2+2) | 2+2 | M | 3 | Gentofte; LBK/SBK/SLBK; Skovshoved |
 | 2026/2027 (i gang, ufuldstændig) | U15 (5) | Uge 38 - U15 D, 4800 (2+2) | 2+2 | D | 4 | Holbæk; Hvidovre; Lundtofte; Rudersdal |
 | 2026/2027 (i gang, ufuldstændig) | U17/U19 (18) | U17/U19 A, 8200 (4 spillere) | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | A | 8 | Badminton Roskilde; Birkerød BK13; Herlev/Hjorten; KBK Kbh.; KMB2010; Skovshoved; Slangerup; Solrød Strand |
 | 2026/2027 (i gang, ufuldstændig) | U17/U19 (18) | U17/U19 B, 7200 (4 spillere) | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | B | 10 | Farum; Holbæk; Jernløse; KMB2010; Køge; Næstved-Herlufsholm; Tune; Vanløse; Værløse; Ølstykke |
@@ -2760,8 +2760,8 @@ Listen er pr. sæson og aldersgruppe; klubber er normaliseret fra holdnavnene, o
 | 2026/2027 (i gang, ufuldstændig) | U17/U19 (18) | U17/U19 C, 6200 (4 spillere) BD | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | C | 5 | Charlottenlund; Drive; Islands Brygge; NBK Amager; Skovshoved |
 | 2026/2027 (i gang, ufuldstændig) | U17/U19 (18) | U17/U19 D, 5000 (2+2) | Uplaceret: 2+2 (ingen brugbar kategorisignatur) | D | 6 | Drive; Frederiksberg; Greve; KBK Kbh.; SAIF Kbh.; Team Sydkysten |
 | 2026/2027 (i gang, ufuldstændig) | U17/U19 (18) | U17/U19 D, 5100 (4 spillere) | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | D | 18 | Ballerup BC58; Dragør; Glostrup; Græsted/Gilleleje; Helsinge; Helsingør; Holbæk; Islands Brygge; Nykøbing Sj.; Ringsted; Rudersdal; Skibby; Skovlunde; Stubbekøbing; Team Slagelse/Skælskør; Team Vejleå; Vallensbæk; Ølstykke |
-| 2026/2027 (i gang, ufuldstændig) | U17/U19 (18) | U17/U19 M, 14000 (4+2) | Uplaceret: 4+2 (ingen brugbar kategorisignatur) | niveau ikke tolket | 11 | BC37 Amager; Gentofte; Gørlev; Humlebæk; KBK Kbh.; KMB2010; Lillerød/Hørsholm; Skovshoved; Solrød Strand |
-| 2026/2027 (i gang, ufuldstændig) | U17/U19 (18) | U17/U19 M, 9600 (4 spillere) | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | niveau ikke tolket | 4 | Drive; Holbæk; Solrød Strand; Værløse |
+| 2026/2027 (i gang, ufuldstændig) | U17/U19 (18) | U17/U19 M, 14000 (4+2) | Uplaceret: 4+2 (ingen brugbar kategorisignatur) | M | 11 | BC37 Amager; Gentofte; Gørlev; Humlebæk; KBK Kbh.; KMB2010; Lillerød/Hørsholm; Skovshoved; Solrød Strand |
+| 2026/2027 (i gang, ufuldstændig) | U17/U19 (18) | U17/U19 M, 9600 (4 spillere) | Uplaceret: 4 spillere (ingen brugbar kategorisignatur) | M | 4 | Drive; Holbæk; Solrød Strand; Værløse |
 | 2026/2027 (i gang, ufuldstændig) | U17/U19 (18) | UGE 38 - U17/U19 A, 7800 (2+2) | 2+2 | A | 4 | Herlev/Hjorten; Jernløse; KMB2010; Skovshoved |
 | 2026/2027 (i gang, ufuldstændig) | U17/U19 (18) | UGE 38 - U17/U19 C, 5800 (2+2) | 2+2; Uplaceret: 2+2 (ingen brugbar kategorisignatur) | C | 10 | Drive; Greve; Herlev/Hjorten; Holbæk; Jernløse; KBK Kbh.; SAIF Kbh.; Slangerup/Skibby |
 
@@ -2789,7 +2789,7 @@ Listen er pr. sæson og aldersgruppe; klubber er normaliseret fra holdnavnene, o
 | 2011/2012 | U11 (3) | 4 | — | 4+3 (fastlagt af Christoffer) | 2/5 | 2/5 | 0/0 125-format match; 4 fallback/other | 2011\|3\|100: Gladsaxe Søborg 4 *udgået* → Uplaceret: X2 (ingen brugbar kategorisignatur) (udgået)<br>2011\|3\|97: Gladsaxe Søborg → Uplaceret: ingen formattekst (ingen brugbar kategorisignatur)<br>2011\|3\|98: Gladsaxe Søborg 2 → Uplaceret: ingen formattekst (ingen brugbar kategorisignatur)<br>2011\|3\|99: Gladsaxe Søborg 3 *udgået* → Uplaceret: X1 (ingen brugbar kategorisignatur) (udgået) |
 | 2016/2017 | U11 (3) | 2 | 4 spillere D  | 4+3 (fastlagt af Christoffer) | 2/8 | 2/9 | 2/2 125-format match; 0 fallback/other | 2016\|3\|7668: Gladsaxe Søborg → 4 spillere<br>2016\|3\|9137: Gladsaxe Søborg → 4 spillere |
 | 2020/2021 | U15 (5) | 3 | 4 spillere   | 4+3 (fastlagt af Christoffer) | 3/12 | 3/13 | 2/2 125-format match; 1 fallback/other | 2020\|5\|13470: Gladsaxe Søborg 1 → 4 spillere<br>2020\|5\|13473: Gladsaxe Søborg 2 → 4 spillere<br>2020\|5\|13474: Gladsaxe Søborg 3 → 4 piger |
-| 2025/2026 | U11 (3) | 5 | 4 spillere D 4600 | 4+3 (fastlagt af Christoffer) | 3/6 | 4/13 | 5/5 125-format match; 0 fallback/other | 2025\|3\|18133: Gladsaxe Søborg 5 → 4 piger<br>2025\|3\|18134: Gladsaxe Søborg 1 → 4 spillere<br>2025\|3\|18134: Gladsaxe Søborg 2 → 4 spillere<br>2025\|3\|18135: Gladsaxe Søborg 3 → 4 spillere<br>2025\|3\|18138: Gladsaxe Søborg 4 → 4 spillere |
+| 2025/2026 | U11 (3) | 5 | 4 spillere C-D 4800 | 4+3 (fastlagt af Christoffer) | 3/6 | 4/13 | 5/5 125-format match; 0 fallback/other | 2025\|3\|18133: Gladsaxe Søborg 5 → 4 piger<br>2025\|3\|18134: Gladsaxe Søborg 1 → 4 spillere<br>2025\|3\|18134: Gladsaxe Søborg 2 → 4 spillere<br>2025\|3\|18135: Gladsaxe Søborg 3 → 4 spillere<br>2025\|3\|18138: Gladsaxe Søborg 4 → 4 spillere |
 | 2026/2027 (i gang, ufuldstændig) | U13 (4) | 10 | — | — | 5/12 | 5/13 | 0/0 125-format match; 10 fallback/other | 2026\|4\|18976: Gladsaxe Søborg 1 → Uplaceret: 2+2 (ingen brugbar kategorisignatur)<br>2026\|4\|19140: Gladsaxe Søborg 2 → Uplaceret: 4 spillere (ingen brugbar kategorisignatur)<br>2026\|4\|19142: Gladsaxe Søborg 3 → Uplaceret: 4 spillere (ingen brugbar kategorisignatur)<br>2026\|4\|19144: Gladsaxe Søborg 4 → Uplaceret: 4 spillere (ingen brugbar kategorisignatur)<br>2026\|4\|19144: Gladsaxe Søborg 5 → Uplaceret: 4 spillere (ingen brugbar kategorisignatur)<br>2026\|4\|19146: Gladsaxe Søborg 6 → Uplaceret: 4 piger (ingen brugbar kategorisignatur)<br>2026\|4\|18977: Gladsaxe Søborg 5 → 2+2<br>2026\|4\|19007: Gladsaxe Søborg 4 → 2+2<br>2026\|4\|19008: Gladsaxe Søborg 3 → 2+2<br>2026\|4\|19009: Gladsaxe Søborg 3 → 2+2 |
 
 Stikprøverne blev sammenholdt med de rå `league_groups`, `league_group_regions`, `league_group_teams`-rækker og 126's fysiske puljeformatkilder. Hver liste viser pool-nøgle, holdnavn, række/pulje og format; 125-formatet blev også sammenholdt direkte for alle sample-puljer der findes i 125-kataloget. Bredde kontrolleres på division- og puljenøgler.
@@ -2811,7 +2811,7 @@ Christoffers afgørelse, baseret på DGI's “Uge 38 invitation 2026-2027”: UG
 | 2024/2025 | U15 (5) | 2+2 | UGE 38 - U15 A, 6500 (2+2 | A | 3 | — | — |
 | 2024/2025 | U15 (5) | 2+2 | UGE 38 - U15 C, 4600 (2+2) | C | 4 | Gladsaxe Søborg 6 | Gladsaxe Søborg 6: nej |
 | 2024/2025 | U15 (5) | 2+2 | UGE 38 - U15 D, 4000 (2+2) | D | 4 | Gladsaxe Søborg 7 | Gladsaxe Søborg 7: nej |
-| 2024/2025 | U15 (5) | 2+2 | UGE 38 - U15 M, 7800 (2+2) | niveau ikke tolket | 3 | — | — |
+| 2024/2025 | U15 (5) | 2+2 | UGE 38 - U15 M, 7800 (2+2) | M | 3 | — | — |
 | 2024/2025 | U17/U19 (18) | 2+2 | UGE 38 - A, 7800 (2+2) | niveau ikke tolket | 3 | — | — |
 | 2024/2025 | U17/U19 (18) | 2+2 | UGE 38 - C, 5600 (2+2) | niveau ikke tolket | 3 | — | — |
 | 2025/2026 | U13 (4) | 2+2 | Uge 38 - U13 A, 6000 (2+2) | A | 4 | Gladsaxe Søborg 7 | Gladsaxe Søborg 7: ja |
@@ -2821,7 +2821,7 @@ Christoffers afgørelse, baseret på DGI's “Uge 38 invitation 2026-2027”: UG
 | 2025/2026 | U15 (5) | 2+2 | Uge 38 - U15 A, 6800 (2+2) | A | 6 | Gladsaxe Søborg 6 | Gladsaxe Søborg 6: ja |
 | 2025/2026 | U15 (5) | 2+2 | Uge 38 - U15 B, 6000 (2+2) | B | 7 | — | — |
 | 2025/2026 | U15 (5) | 2+2 | Uge 38 - U15 C, 5400 (2+2) | C | 6 | Gladsaxe Søborg 8 | Gladsaxe Søborg 8: nej |
-| 2025/2026 | U15 (5) | 2+2 | Uge 38 - U15 M, 7800 (2+2) | niveau ikke tolket | 4 | — | — |
+| 2025/2026 | U15 (5) | 2+2 | Uge 38 - U15 M, 7800 (2+2) | M | 4 | — | — |
 | 2025/2026 | U17/U19 (18) | 2+2 | Uge 38 - U17/U19 A, 7800 (2+2) | A | 3 | — | — |
 | 2025/2026 | U17/U19 (18) | 2+2 | Uge 38 - U17/U19 D, 5000 (2+2) | D | 3 | Gladsaxe Søborg 3 | Gladsaxe Søborg 3: nej |
 | 2026/2027 | U13 (4) | 2+2 | UGE 38 - U13 A, 5800 (2+2) | A | 4 | — | — |
@@ -2830,14 +2830,14 @@ Christoffers afgørelse, baseret på DGI's “Uge 38 invitation 2026-2027”: UG
 | 2026/2027 | U15 (5) | 2+2 | UGE 38 - U15 A, 6800 (2+2) | A | 9 | Gladsaxe Søborg 1 | Gladsaxe Søborg 1: ja |
 | 2026/2027 | U15 (5) | 2+2 | UGE 38 - U15 B, 5800 (2+2) | B | 4 | Gladsaxe Søborg 2 | Gladsaxe Søborg 2: ja |
 | 2026/2027 | U15 (5) | 2+2 | UGE 38 - U15 C, 5200 (2+2) | C | 4 | — | — |
-| 2026/2027 | U15 (5) | 2+2 | UGE 38 - U15 M, 7800 (2+2) | niveau ikke tolket | 3 | — | — |
+| 2026/2027 | U15 (5) | 2+2 | UGE 38 - U15 M, 7800 (2+2) | M | 3 | — | — |
 | 2026/2027 | U15 (5) | 2+2 | Uge 38 - U15 D, 4800 (2+2) | D | 4 | — | — |
 | 2026/2027 | U17/U19 (18) | 2+2 | UGE 38 - U17/U19 A, 7800 (2+2) | A | 4 | — | — |
 | 2026/2027 | U17/U19 (18) | Uplaceret: 2+2 (ingen brugbar kategorisignatur); 2+2 | UGE 38 - U17/U19 B, 6800 (2+2) | B | 8 | Gladsaxe Søborg; Gladsaxe Søborg 2 | Gladsaxe Søborg: nej; Gladsaxe Søborg 2: ja |
 | 2026/2027 | U17/U19 (18) | Uplaceret: 2+2 (ingen brugbar kategorisignatur); 2+2 | UGE 38 - U17/U19 C, 5800 (2+2) | C | 10 | — | — |
 | 2026/2027 | U17/U19 (18) | 2+2 | UGE 38 - U17/U19 D, 5000 (2+2) | D | 4 | Gladsaxe Søborg 3 | Gladsaxe Søborg 3: ja |
 
-Samtidige “4 piger C” og “4 spillere D”-rækker forekommer i 11 sæson/aldersgruppe-kombinationer. Hvor de forekommer, anvendes formatrækkefølgen; bogstaver sammenlignes ikke på tværs af formater. Se JSON-feltet `format_level_crossings`.
+Samtidige “4 piger C” og “4 spillere D”-rækker forekommer i 12 sæson/aldersgruppe-kombinationer. Hvor de forekommer, anvendes formatrækkefølgen; bogstaver sammenlignes ikke på tværs af formater. Se JSON-feltet `format_level_crossings`.
 
 ## Spørgsmål
 
