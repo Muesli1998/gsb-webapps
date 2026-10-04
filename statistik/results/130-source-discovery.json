@@ -815,6 +815,423 @@
       ]
     },
     {
+      "term": "holdturnering",
+      "status": 200,
+      "reported_total": 21,
+      "reported_pages": 1,
+      "candidates": [
+        {
+          "date": "2026-07-01T20:03:00",
+          "title": "Holdturneringsreglement for badminton i Danmark (DH-reglementet) 2026-07-01 &#8211; endeligt med bilag 3",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Holdturneringsreglement-for-badminton-i-Danmark-DH-reglementet-2026-07-01-endeligt-med-bilag-3-1.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T19:52:00",
+          "title": "Fælles reglement for ungdomsholdturneringen endeligt 300626",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Faelles-reglement-for-ungdomsholdturneringen-endeligt-300626-1.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T13:25:24",
+          "title": "Fælles reglement for ungdomsholdturneringen endeligt 300626",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Faelles-reglement-for-ungdomsholdturneringen-endeligt-300626.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T13:17:15",
+          "title": "Holdturneringsreglement for badminton i Danmark (DH-reglementet) 2026-07-01 &#8211; endeligt med bilag 3",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Holdturneringsreglement-for-badminton-i-Danmark-DH-reglementet-2026-07-01-endeligt-med-bilag-3.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-06-30T14:48:44",
+          "title": "Fælles reglement for ungdomsholdturneringen endeligt 300626",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/06/Faelles-reglement-for-ungdomsholdturneringen-endeligt-300626.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-06-30T14:48:44",
+          "title": "Holdturneringsreglement for badminton i Danmark (DH-reglementet) 2026-06-24 &#8211; godkendt",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/06/Holdturneringsreglement-for-badminton-i-Danmark-DH-reglementet-2026-06-24-godkendt.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-02-25T11:09:16",
+          "title": "Holdturneringsreglement for badminton i Danmark (DH-reglementet)",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/02/Holdturneringsreglement-for-badminton-i-Danmark-DH-reglementet-2026-02-25.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-10-09T13:32:28",
+          "title": "Fælles reglement for ungdomsholdturneringen 2025-10-08",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/10/Faelles-reglement-for-ungdomsholdturneringen-2025-10-08.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-10-04T00:00:08",
+          "title": "Fælles reglement for ungdomsholdturneringen 2025-10-03",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/10/Faelles-reglement-for-ungdomsholdturneringen-2025-10-03.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-09-09T15:18:06",
+          "title": "Fælles reglement for ungdomsholdturneringen 2025-06-30",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/09/Faelles-reglement-for-ungdomsholdturneringen-2025-06-30.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-07T02:15:55",
+          "title": "Fælles reglement for ungdomsholdturneringen 2025-06-30",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Faelles-reglement-for-ungdomsholdturneringen-2025-06-30.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-02T13:52:44",
+          "title": "Fælles reglement for ungdomsholdturneringen 2025-2026",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Faelles-reglement-for-ungdomsholdturneringen-2025-2026.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-03-03T14:43:22",
+          "title": "Fælles reglement for ungdomsholdturneringen 2024-2025",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/03/2025-03-03-Faelles-reglement-for-ungdomsholdturneringen.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-10-04T13:26:25",
+          "title": "2024-10-04 Faelles-reglement-for-ungdomsholdturneringen",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/10/2024-10-04-Faelles-reglement-for-ungdomsholdturneringen.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-09-04T13:01:56",
+          "title": "Holdturneringsansvarlig",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/09/Ansvar-og-funktionsbeskrivelse-HB-Holdturneringsansvarlig-2024_2025.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-06-17T13:12:06",
+          "title": "Kristian Hedelund &#8211; Hovedbestyrelsen &#8211; Portrætfoto &#8211; Holdturneringsansvarligedelund",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/06/Kristian_Hedelund.png",
+          "mime_type": "image/png"
+        },
+        {
+          "date": "2024-03-11T12:18:50",
+          "title": "Vejledning-for-Holdturneringsdommer-i-holdturneringen-for-Badminton-Danmark",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/03/Vejledning-for-Holdturneringsdommer-i-holdturneringen-for-Badminton-Danmark.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-01-16T10:09:32",
+          "title": "Vejledning-for-Holdturneringsdommer-i-holdturneringen-for-Badminton-Danmark",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/01/Vejledning-for-Holdturneringsdommer-i-holdturneringen-for-Badminton-Danmark-1.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-01-15T12:06:17",
+          "title": "Vejledning-for-Holdturneringsdommer-i-holdturneringen-for-Badminton-Danmark",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/01/Vejledning-for-Holdturneringsdommer-i-holdturneringen-for-Badminton-Danmark.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2023-06-05T13:38:25",
+          "title": "Holdturnering &#8211; Hold &#8211; Ikon &#8211; Illustration &#8211; Hjemmeside",
+          "source_url": "https://badminton.dk/wp-content/uploads/2023/06/Group-38.png",
+          "mime_type": "image/png"
+        }
+      ]
+    },
+    {
+      "term": "ungdomshold",
+      "status": 200,
+      "reported_total": 10,
+      "reported_pages": 1,
+      "candidates": [
+        {
+          "date": "2026-07-01T19:52:00",
+          "title": "Fælles reglement for ungdomsholdturneringen endeligt 300626",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Faelles-reglement-for-ungdomsholdturneringen-endeligt-300626-1.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T13:25:24",
+          "title": "Fælles reglement for ungdomsholdturneringen endeligt 300626",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Faelles-reglement-for-ungdomsholdturneringen-endeligt-300626.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-06-30T14:48:44",
+          "title": "Fælles reglement for ungdomsholdturneringen endeligt 300626",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/06/Faelles-reglement-for-ungdomsholdturneringen-endeligt-300626.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-10-09T13:32:28",
+          "title": "Fælles reglement for ungdomsholdturneringen 2025-10-08",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/10/Faelles-reglement-for-ungdomsholdturneringen-2025-10-08.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-10-04T00:00:08",
+          "title": "Fælles reglement for ungdomsholdturneringen 2025-10-03",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/10/Faelles-reglement-for-ungdomsholdturneringen-2025-10-03.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-09-09T15:18:06",
+          "title": "Fælles reglement for ungdomsholdturneringen 2025-06-30",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/09/Faelles-reglement-for-ungdomsholdturneringen-2025-06-30.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-07T02:15:55",
+          "title": "Fælles reglement for ungdomsholdturneringen 2025-06-30",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Faelles-reglement-for-ungdomsholdturneringen-2025-06-30.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-02T13:52:44",
+          "title": "Fælles reglement for ungdomsholdturneringen 2025-2026",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Faelles-reglement-for-ungdomsholdturneringen-2025-2026.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-03-03T14:43:22",
+          "title": "Fælles reglement for ungdomsholdturneringen 2024-2025",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/03/2025-03-03-Faelles-reglement-for-ungdomsholdturneringen.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-10-04T13:26:25",
+          "title": "2024-10-04 Faelles-reglement-for-ungdomsholdturneringen",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/10/2024-10-04-Faelles-reglement-for-ungdomsholdturneringen.pdf",
+          "mime_type": "application/pdf"
+        }
+      ]
+    },
+    {
+      "term": "veteran",
+      "status": 200,
+      "reported_total": 1,
+      "reported_pages": 1,
+      "candidates": [
+        {
+          "date": "2024-03-15T11:24:16",
+          "title": "a.-og-f.-beskrivelse-veteranudvalget",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/03/a.-og-f.-beskrivelse-veteranudvalget.pdf",
+          "mime_type": "application/pdf"
+        }
+      ]
+    },
+    {
+      "term": "serie",
+      "status": 200,
+      "reported_total": 15,
+      "reported_pages": 1,
+      "candidates": []
+    },
+    {
+      "term": "kredsserie",
+      "status": 200,
+      "reported_total": 0,
+      "reported_pages": 1,
+      "candidates": []
+    },
+    {
+      "term": "DH-reglement",
+      "status": 200,
+      "reported_total": 9,
+      "reported_pages": 1,
+      "candidates": [
+        {
+          "date": "2026-07-01T20:03:42",
+          "title": "Bilag 3 til DH-reglementet 2026-06-30",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Bilag-3-til-DH-reglementet-2026-06-30.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T20:03:00",
+          "title": "Holdturneringsreglement for badminton i Danmark (DH-reglementet) 2026-07-01 &#8211; endeligt med bilag 3",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Holdturneringsreglement-for-badminton-i-Danmark-DH-reglementet-2026-07-01-endeligt-med-bilag-3-1.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T13:17:15",
+          "title": "Holdturneringsreglement for badminton i Danmark (DH-reglementet) 2026-07-01 &#8211; endeligt med bilag 3",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Holdturneringsreglement-for-badminton-i-Danmark-DH-reglementet-2026-07-01-endeligt-med-bilag-3.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-06-30T14:48:44",
+          "title": "Holdturneringsreglement for badminton i Danmark (DH-reglementet) 2026-06-24 &#8211; godkendt",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/06/Holdturneringsreglement-for-badminton-i-Danmark-DH-reglementet-2026-06-24-godkendt.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-02-25T11:09:16",
+          "title": "Holdturneringsreglement for badminton i Danmark (DH-reglementet)",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/02/Holdturneringsreglement-for-badminton-i-Danmark-DH-reglementet-2026-02-25.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-11-06T11:59:10",
+          "title": "Dispensationer i Badmintonligaen og 1. division (§ 32 i DH-reglementet)",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/11/Dispensationer-for-deltagelse-i-DH-turneringen-061125.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-01-10T10:51:31",
+          "title": "Dispensationer i Badmintonligaen og 1. division (§ 32 i DH-reglementet)",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/01/Dispensationer-for-deltagelse-i-DH-turneringen-100125.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-01-09T10:55:22",
+          "title": "Dispensationer for deltagelse i DH-turneringen 090125",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/01/Dispensationer-for-deltagelse-i-DH-turneringen-090125.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-09-11T14:12:45",
+          "title": "Dispensationer i Badmintonligaen og 1. division (§ 32 i DH-reglementet)",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/09/Dispensationer-for-deltagelse-i-DH-turneringen-110924.pdf",
+          "mime_type": "application/pdf"
+        }
+      ]
+    },
+    {
+      "term": "senior",
+      "status": 200,
+      "reported_total": 17,
+      "reported_pages": 1,
+      "candidates": [
+        {
+          "date": "2026-01-22T15:47:00",
+          "title": "Reglement for DM for seniorer",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/01/Reglement-DM-SEN-2025-07-01.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-11-03T09:04:59",
+          "title": "Reglement for DM for seniorer 2025",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/11/Reglement-DM-SEN-2025-07-01.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-10-23T10:13:45",
+          "title": "Reglement for DM for seniorer 2025",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/10/Reglement-DM-SEN-2025-06-02.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-02T14:19:17",
+          "title": "Reglement DM HOLD i HYGGEFJER (Senior Senior+) 2025-2026",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Reglement-DM-HOLD-i-HYGGEFJER-Senior-Senior-2025-2026.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-02T13:47:37",
+          "title": "Reglement for DM for seniorer 2025",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Reglement-for-DM-for-seniorer-2025.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-02-13T12:50:34",
+          "title": "Reglement VICTOR DM HOLD I HYGGEFJER (Senior senior+)",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/02/Reglement-VICTOR-DM-HOLD-I-HYGGEFJER-Senior-senior.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-05-15T07:38:01",
+          "title": "EM &#8211; Kvindelandsholdet &#8211; Guld &#8211; Vinder &#8211; 2024or",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/05/Senior.png",
+          "mime_type": "image/png"
+        },
+        {
+          "date": "2024-01-15T12:57:12",
+          "title": "Reglement-for-deltagelse-i-Badminton-Danmarks-landsholdstrup-for-seniorelite-og-ungdom-1",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/01/Reglement-for-deltagelse-i-Badminton-Danmarks-landsholdstrup-for-seniorelite-og-ungdom-1.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-01-15T12:20:25",
+          "title": "Reglement-for-DM-for-seniorer-2023-2024-01-10-2023",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/01/Reglement-for-DM-for-seniorer-2023-2024-01-10-2023.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-01-15T12:02:18",
+          "title": "Faelles-reglement-for-DM-HOLD-Senior-Senior-Motion-Bredde",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/01/Faelles-reglement-for-DM-HOLD-Senior-Senior-Motion-Bredde.pdf",
+          "mime_type": "application/pdf"
+        }
+      ]
+    },
+    {
+      "term": "indbydelse",
+      "status": 200,
+      "reported_total": 0,
+      "reported_pages": 1,
+      "candidates": []
+    },
+    {
+      "term": "tillæg",
+      "status": 200,
+      "reported_total": 8,
+      "reported_pages": 1,
+      "candidates": [
+        {
+          "date": "2026-07-01T19:58:37",
+          "title": "Tillæg om holdfællesskaber til Reglement for holdmesterskabet for Danmark i badminton 2026-06-24 &#8211; godkendt",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Tillaeg-om-holdfaellesskaber-til-Reglement-for-holdmesterskabet-for-Danmark-i-badminton-2026-06-24-godkendt.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T19:41:16",
+          "title": "Reglement DMU HOLD (tillæg) 2026-07-01",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Reglement-DMU-HOLD-tillaeg-2026-07-01.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-06-30T14:48:45",
+          "title": "Tillæg om holdfællesskaber til Reglement for holdmesterskabet for Danmark i badminton 2026-06-24 &#8211; godkendt",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/06/Tillaeg-om-holdfaellesskaber-til-Reglement-for-holdmesterskabet-for-Danmark-i-badminton-2026-06-24-godkendt.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-08-16T17:44:56",
+          "title": "Reglement for DMU HOLD (tillæg) 2025-2026",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/08/Reglement-DMU-HOLD-tillaeg-2025-05-30.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-02T14:19:18",
+          "title": "Reglement DMU HOLD (tillæg) 2025-2026",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Reglement-DMU-HOLD-tillaeg-2025-2026.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-02T13:55:31",
+          "title": "Tillæg om holdfællesskaber til Reglement for holdmesterskabet for Danmark i badminton 2025-2026",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Tillaeg-om-holdfaellesskaber-til-Reglement-for-holdmesterskabet-for-Danmark-i-badminton-2025-2026.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-07-01T12:34:58",
+          "title": "Reglement (tillæg til) DMU Hold",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/07/Reglement-tillaeg-til-DMU-Hold.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-01-15T10:52:44",
+          "title": "Tillæg-om-holdfællesskaber-til-Reglement-for-holdmesterskabet-for-Danmark-i-badminton",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/01/Tillaeg-om-holdfaellesskaber-til-Reglement-for-holdmesterskabet-for-Danmark-i-badminton.pdf",
+          "mime_type": "application/pdf"
+        }
+      ]
+    },
+    {
       "term": "ungdomsholdturnering",
       "status": 200,
       "reported_total": 10,
@@ -923,7 +1340,44 @@
     }
   ],
   "wayback_cdx_probe": {
-    "status": "request_failed_or_timed_out",
-    "error": "TimeoutError: The operation was aborted due to timeout"
-  }
+    "url": "https://web.archive.org/cdx/search/cdx?url=badminton.dk/holdturneringsregler/&output=json&filter=statuscode%3A200&collapse=urlkey",
+    "status": 200,
+    "response_excerpt": "[[\"urlkey\",\"timestamp\",\"original\",\"mimetype\",\"statuscode\",\"digest\",\"length\"],\n[\"dk,badminton)/holdturneringsregler\",\"20240623043057\",\"https://badminton.dk/holdturneringsregler/\",\"text/html\",\"200\",\"XD3DHV7IWUBJ6OIYD5QK2VPQXEV2DWWR\",\"29421\"]]\n",
+    "usable_snapshots": true
+  },
+  "wayback_direct_probes": [
+    {
+      "url": "https://web.archive.org/web/20190701000000id_/https://badminton.dk/holdturneringsregler/",
+      "status": 200,
+      "final_url": "https://web.archive.org/web/20240623043057id_/https://badminton.dk/holdturneringsregler/",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 154969,
+      "pdf_signature": false
+    },
+    {
+      "url": "https://web.archive.org/web/20200115193749id_/https://badminton.dk/wp-content/uploads/2020/01/F%C3%A6lles-reglement-for-ungdomsholdturneringen-2019-2020.pdf",
+      "status": 200,
+      "final_url": "https://web.archive.org/web/20200115193749id_/https://badminton.dk/wp-content/uploads/2020/01/F%C3%A6lles-reglement-for-ungdomsholdturneringen-2019-2020.pdf",
+      "content_type": "application/pdf",
+      "bytes": 166682,
+      "pdf_signature": true,
+      "sha256": "83799212be0c122dfa2a9eea8a63ab8c18a81847bb762e0e75a8e0810728e4d9"
+    },
+    {
+      "url": "https://web.archive.org/web/20240701000000id_/https://www.badmintonkoebenhavn.dk/holdturnering",
+      "status": 200,
+      "final_url": "https://web.archive.org/web/20240617064549id_/https://badmintonkoebenhavn.dk/holdturnering",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 6927,
+      "pdf_signature": false
+    },
+    {
+      "url": "https://web.archive.org/web/20200801000000id_/https://badminton.dk/wp-content/uploads/",
+      "status": 404,
+      "final_url": "https://web.archive.org/web/20200801000000id_/https://badminton.dk/wp-content/uploads/",
+      "content_type": "text/html",
+      "bytes": 4635,
+      "pdf_signature": false
+    }
+  ]
 }

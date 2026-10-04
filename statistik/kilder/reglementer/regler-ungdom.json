@@ -1,70 +1,72 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "generated_at": "2026-10-04",
-  "provenance": "Kun eksplicitte, aflæste skemaer. Point er fra den angivne sæsonstart; lokale udvalg vælger udbuddet. Manglende sæsoner er null, ikke interpoleret.",
+  "provenance": "Kun værdier, der er aflæst i den angivne kildes skema. Holdrækker er [alder, holdtype, niveauetiket eller null, holdets maksimum, bedste spiller/dreng/pige-maksima]. Null niveau betyder, at kilden ikke angiver eller at scanningens rækkeniveau ikke kunne aflæses sikkert. Lokale udbud udledes ikke af fælles skemaer.",
+  "units_note": "Tabeller før 2019/20 bruger enkelte steder andre klassifikationspoint/-enheder end de senere sæsoners niveaupoint. Sammenlign ikke tværs af versioner uden kildebelæg.",
   "regions_in_liga_landscape_db": ["Badminton Danmark", "Badminton Bornholm", "Badminton Midtjylland", "Badminton Nordjylland", "Badminton Sønderjylland", "Badminton Fyn", "Badminton København", "Badminton Lolland-Falster", "Badminton Sjælland", "DGI Bornholm", "DGI Fyn", "DGI Midtjylland", "DGI Nordjylland", "DGI Nordsjælland", "DGI Nordvest", "DGI SdU", "DGI Storkøbenhavn", "DGI Storstrømmen", "DGI Sydvest", "DGI Sydøstjylland", "DGI Sønderjylland", "DGI Vestjylland", "DGI Midt- og Vestsjælland", "DGI Østjylland"],
-  "season_rules": [
-    {
-      "season": "2024/25",
-      "source_id": "bd-youth-2024-25",
-      "source_pages": "4-6",
-      "scope": "Fælles BD/DGI-reglement; alle lokale udbud er ikke oplyst af dette fælles skema",
-      "regional_offer": null,
-      "holds": [
-        {"age":"U13","type":"4 spillere","range":"A","team_max_points":6000,"best_player_max_points":1800},
-        {"age":"U13","type":"4 spillere","range":"B","team_max_points":5000,"best_player_max_points":1500},
-        {"age":"U13","type":"4 spillere","range":"C","team_max_points":4200,"best_player_max_points":1250},
-        {"age":"U13","type":"4 spillere","range":"C-D","team_max_points":3800,"best_player_max_points":1050},
-        {"age":"U13","type":"4 spillere","range":"D","team_max_points":3600,"best_player_max_points":950},
-        {"age":"U13","type":"4 piger","range":"C","team_max_points":3800,"best_player_max_points":1100},
-        {"age":"U13","type":"4 piger","range":"D","team_max_points":3200,"best_player_max_points":850},
-        {"age":"U13","type":"2+2","range":"A","team_max_points":5600,"best_boy_max_points":1700,"best_girl_max_points":1500},
-        {"age":"U13","type":"2+2","range":"B","team_max_points":4700,"best_boy_max_points":1400,"best_girl_max_points":1250},
-        {"age":"U13","type":"2+2","range":"C","team_max_points":4000,"best_boy_max_points":1200,"best_girl_max_points":1100},
-        {"age":"U13","type":"2+2","range":"D","team_max_points":3600,"best_boy_max_points":1050,"best_girl_max_points":950}
-      ]
-    },
-    {
-      "season": "2025/26",
-      "source_id": "bd-youth-2025-26-rev-2025-10-08",
-      "source_pages": "5-6",
-      "scope": "Fælles BD/DGI-reglement; lokalt udbud pr. område ikke angivet",
-      "regional_offer": null,
-      "holds": [
-        {"age":"U13","type":"4 spillere","range":"A","team_max_points":6400,"best_player_max_points":2000},
-        {"age":"U13","type":"4 spillere","range":"B","team_max_points":5800,"best_player_max_points":1700},
-        {"age":"U13","type":"4 spillere","range":"C","team_max_points":5300,"best_player_max_points":1500},
-        {"age":"U13","type":"4 spillere","range":"C-D","team_max_points":5000,"best_player_max_points":1300},
-        {"age":"U13","type":"4 spillere","range":"D","team_max_points":4800,"best_player_max_points":1200},
-        {"age":"U13","type":"4 piger","range":"C","team_max_points":4800,"best_player_max_points":1300},
-        {"age":"U13","type":"4 piger","range":"D","team_max_points":4400,"best_player_max_points":1100},
-        {"age":"U13","type":"2+2","range":"A","team_max_points":6000,"best_boy_max_points":1900,"best_girl_max_points":1600},
-        {"age":"U13","type":"2+2","range":"B","team_max_points":5400,"best_boy_max_points":1700,"best_girl_max_points":1450},
-        {"age":"U13","type":"2+2","range":"C","team_max_points":5000,"best_boy_max_points":1500,"best_girl_max_points":1300},
-        {"age":"U13","type":"2+2","range":"D","team_max_points":4800,"best_boy_max_points":1300,"best_girl_max_points":1200}
-      ]
-    },
-    {
-      "season": "2026/27",
-      "source_id": "bd-youth-2026-27",
-      "source_pages": "5-7",
-      "scope": "Fælles BD/DGI-reglement; lokalt udbud pr. område ikke angivet",
-      "regional_offer": null,
-      "holds": [
-        {"age":"U13","type":"4 spillere","range":"A","team_max_points":6400,"best_player_max_points":1900},
-        {"age":"U13","type":"4 spillere","range":"B","team_max_points":5600,"best_player_max_points":1650},
-        {"age":"U13","type":"4 spillere","range":"C","team_max_points":5100,"best_player_max_points":1450},
-        {"age":"U13","type":"4 spillere","range":"C-D","team_max_points":4800,"best_player_max_points":1300},
-        {"age":"U13","type":"4 spillere","range":"D","team_max_points":4600,"best_player_max_points":1150},
-        {"age":"U13","type":"4 spillere","range":"Dx","team_max_points":4400,"best_player_max_points":1100},
-        {"age":"U13","type":"4 piger","range":"C","team_max_points":4800,"best_player_max_points":1300},
-        {"age":"U13","type":"4 piger","range":"D","team_max_points":4400,"best_player_max_points":1150},
-        {"age":"U13","type":"2+2","range":"A","team_max_points":5800,"best_boy_max_points":1800,"best_girl_max_points":1600},
-        {"age":"U13","type":"2+2","range":"B","team_max_points":5200,"best_boy_max_points":1600,"best_girl_max_points":1400},
-        {"age":"U13","type":"2+2","range":"C","team_max_points":4800,"best_boy_max_points":1400,"best_girl_max_points":1300},
-        {"age":"U13","type":"2+2","range":"D","team_max_points":4600,"best_boy_max_points":1300,"best_girl_max_points":1200}
-      ]
-    }
+  "season_versions": [
+    {"season":"2018/19","version":"fællesreglement 2018/19","source_id":"bd-dgi-youth-2018-19","source_pages":"5-6","scope":"BD/DGI fælles ungdom; historisk tabel bruger klassifikationspoint fra datidens skema, ikke nutidens niveaupoint","holds":[
+      ["U9","4 spillere","D",8,2,2],["U9","4 spillere","C",20,5,5],
+      ["U11","4 piger","C-D",14,5,5],["U11","4 spillere","D",20,5,5],["U11","4 spillere","C-D",26,8,8],["U11","4 spillere","C",35,11,8],["U11","4 spillere","B",47,14,11],["U11","4 spillere","A",59,17,14],
+      ["U13","4 piger","C-D",26,8,8],["U13","4 spillere","D",32,8,8],["U13","4 spillere","C-D",38,11,11],["U13","4 piger","C",35,11,8],["U13","4 spillere","C",47,14,11],["U13","4 spillere","B",59,17,14],["U13","4 spillere","A",71,20,17],["U13","4 spillere","M",83,23,20],
+      ["U15","4 piger","C-D",38,11,11],["U15","4 spillere","D",44,11,11],["U15","4 spillere","C-D",50,14,14],["U15","4 piger","C",47,14,11],["U15","4 spillere","C",59,17,14],["U15","4 spillere","B",71,20,17],["U15","4+2","B/A",105,20,17],["U15","4 spillere","A",83,23,20],["U15","4+2","M/A",123,23,20],["U15","4 spillere","M",95,26,23],
+      ["U17/U19","4 spillere","D",56,14,14],["U17/U19","4 spillere","C-D",62,17,17],["U17/U19","4 piger","C",59,17,14],["U17/U19","4 spillere","C",71,20,17],["U17/U19","4 spillere","B",83,23,20],["U17/U19","4+2","B/A",123,23,20],["U17/U19","4 spillere","A",95,26,23],["U17/U19","4+2","M/A",141,32,29],["U17/U19","4 spillere","M",113,32,29],
+      ["U11","4+2",null,null,null,null],["U13","4+3",null,null,null,null],["U15","4+3",null,null,null,null],["U17","4+3",null,null,null,null]
+    ],"notes":"Kildens tabel angiver klassifikationspoint og bedste/næstbedste spiller, ikke de nyere niveaupoint. 4+2/4+3 uden øvre grænse; de kombinerede holdrække-værdier er rå tabelrækker. Enhedsomregning er ikke foretaget."},
+    {"season":"2019/20","version":"fællesreglement 2019/20","source_id":"bd-youth-2019-20","source_pages":"4-5","scope":"BD/DGI fælles ungdom","holds":[
+      ["U9","4 spillere",null,2500,650,600],["U9","4 spillere",null,3000,800,750],
+      ["U11","4 spillere",null,3000,800,700],["U11","4 piger",null,3000,900,700],["U11","4 spillere",null,3400,900,800],["U11","4 spillere",null,3800,1000,900],["U11","4 spillere",null,4400,1200,1000],["U11","4 spillere",null,5200,1400,1200],
+      ["U13","4 spillere",null,3400,900,800],["U13","4 piger",null,3400,1000,800],["U13","4 spillere",null,3800,1000,900],["U13","4 piger",null,3800,1100,900],["U13","4 spillere",null,4400,1200,1000],["U13","4 spillere",null,5200,1500,1200],["U13","4 spillere",null,6200,1900,1500],
+      ["U15","4 spillere",null,4400,1200,1000],["U15","4 piger",null,4400,1100,1100],["U15","4 spillere",null,5200,1400,1200],["U15","4 piger",null,5200,1400,1200],["U15","4 spillere",null,6200,1700,1400],["U15","4 spillere",null,7200,2100,1700],["U15","4 spillere",null,8400,2400,2000],
+      ["U17/U19","4 piger",null,5200,1400,1200],["U17/U19","4 spillere",null,5200,1500,1200],["U17/U19","4 spillere",null,6200,1700,1400],["U17/U19","4 spillere",null,7200,2100,1700],["U17/U19","4 spillere",null,8400,2400,2000],["U17/U19","4 spillere",null,10000,3000,2400],["U17/U19","4 spillere",null,12000,3600,2800],
+      ["U11","4+2",null,null,null,null],["U15","4+2 10t",null,10000,"dreng 2100; pige 1700","min dreng 1400; pige 1100"],["U15","4+2 12t",null,12000,"dreng 2400; pige 2000","min dreng 1800; pige 1300"],["U17/U19","4+2 12t",null,12000,"dreng 2400; pige 2000","min dreng 1800; pige 1300"],["U17/U19","4+2 15t",null,15000,"dreng 3200; pige 2700","min dreng 2200; pige 1700"],["U13","4+3",null,null,null,null],["U15","4+3",null,null,null,null],["U17","4+3",null,null,null,null]
+    ],"notes":"Niveaubogstaver står ikke i dette skema; rækkenavne er pointbaserede. Stjerner angiver intet øvre pointtal. 4+2-tabellens 10t/12t/15t er bevaret ordret; kilden definerer ikke suffikset her."},
+    {"season":"2022/23","version":"fællesreglement udgivet 6. juli 2022","source_id":"bd-youth-2022-23","source_pages":"5-6","scope":"BD/DGI fælles ungdom; skemaet angiver point men rækkeetiketter er ikke tekstudtrukket fra PDF-tabellen","holds":[
+      ["U9","4 spillere",null,2800,800,null],["U9","4 spillere",null,2400,700,null],
+      ["U11","4 spillere",null,4400,1500,null],["U11","4 spillere",null,3600,1000,null],["U11","4 spillere",null,3200,900,null],["U11","4 spillere",null,3000,800,null],["U11","4 piger",null,2800,750,null],
+      ["U13","4 spillere",null,6000,1800,null],["U13","4 spillere",null,5200,1600,null],["U13","4 spillere",null,4400,1300,null],["U13","4 spillere",null,3800,1000,null],["U13","4 spillere",null,3400,900,null],["U13","4 piger",null,3600,1000,null],["U13","4 piger",null,3000,800,null],
+      ["U15","4 spillere",null,8000,2500,null],["U15","4 spillere",null,6400,2000,null],["U15","4 spillere",null,5600,1700,null],["U15","4 spillere",null,4800,1400,null],["U15","4 spillere",null,4000,1050,null],["U15","4 piger",null,4000,1200,null],["U15","4 piger",null,3400,900,null],
+      ["U17/U19","4 spillere",null,10000,3200,null],["U17/U19","4 spillere",null,8400,2600,null],["U17/U19","4 spillere",null,7200,2200,null],["U17/U19","4 spillere",null,6000,1800,null],["U17/U19","4 spillere",null,5200,1500,null],
+      ["U11","2+2",null,null,null,null],["U13","4+3",null,null,null,null],["U13","2+2",null,5600,1800,1500],["U15","4+3",null,null,null,null],["U15","2+2",null,8000,2500,2100],["U15","2+2",null,6800,2100,1700],["U15","2+2",null,5600,1800,1400],["U15","2+2",null,4800,1500,1200],["U15","2+2",null,4000,1200,1000],["U17","4+3",null,null,null,null],["U17/U19","4+2",null,15000,3200,2700],["U17/U19","2+2",null,8000,2500,2100],["U17/U19","2+2",null,6800,2100,1700],["U17/U19","2+2",null,5600,1800,1400],["U17/U19","2+2",null,4800,1500,1200]
+    ],"notes":"Tabellernes rækkeetiketter skal kontrolleres visuelt mod PDF, før niveauetiketter tilføjes; point er indført som rå skemaværdier, ikke koblet til A/B/C/D."},
+    {"season":"2023/24","version":"fællesreglement 2023/24","source_id":"bd-youth-2023-24","source_pages":"5-6","scope":"BD/DGI fælles ungdom; scannede skematabeller, kun sikkert aflæste format/point lagt ind","holds":[
+      ["U9","4 spillere",null,2800,800,null],["U9","4 spillere",null,2400,700,null],
+      ["U11","4 spillere",null,4400,1500,null],["U11","4 spillere",null,3600,1000,null],["U11","4 spillere",null,3200,900,null],["U11","4 spillere",null,2900,800,null],["U11","4 piger",null,2800,750,null],
+      ["U13","4 spillere",null,6000,1800,null],["U13","4 spillere",null,5000,1500,null],["U13","4 spillere",null,4400,1250,null],["U13","4 spillere",null,3800,1050,null],["U13","4 spillere",null,3500,950,null],["U13","4 spillere",null,3300,900,null],["U13","4 piger",null,3600,1000,null],["U13","4 piger",null,3000,800,null],
+      ["U15","4 spillere",null,8000,2400,null],["U15","4 spillere",null,6400,2000,null],["U15","4 spillere",null,5600,1700,null],["U15","4 spillere",null,4800,1400,null],["U15","4 spillere",null,4200,1150,null],["U15","4 spillere",null,3800,1000,null],["U15","4 piger",null,4000,1200,null],["U15","4 piger",null,3400,900,null],
+      ["U17/U19","4 spillere",null,9600,3000,null],["U17/U19","4 spillere",null,8000,2400,null],["U17/U19","4 spillere",null,6600,2000,null],["U17/U19","4 spillere",null,5600,1700,null],["U17/U19","4 spillere",null,4800,1400,null],["U17/U19","4 spillere",null,4200,1200,null],
+      ["U11","2+2",null,null,null,null],["U13","4+3",null,null,null,null],["U13","2+2",null,5600,1700,1500],["U13","2+2",null,4800,1500,1300],["U13","2+2",null,4000,1250,1100],["U15","4+3",null,null,null,null],["U15","2+2",null,7800,2350,2050],["U15","2+2",null,6600,2000,1750],["U15","2+2",null,5600,1700,1500],["U15","2+2",null,4800,1500,1300],["U15","2+2",null,4000,1250,1100],["U17","4+3",null,null,null,null],["U17/U19","4+2",null,15000,3200,2600],["U17/U19","2+2",null,7800,2350,2050],["U17/U19","2+2",null,6600,2000,1750],["U17/U19","2+2",null,5600,1700,1500],["U17/U19","2+2",null,4800,1500,1300]
+    ],"notes":"Kildetabell på billedsider; niveauetiketterne er ikke tilføjet, da de ikke er sikkert afskrevet her. U11 2+2 er bevaret som null-grænse fra skemaets stjerne."},
+    {"season":"2024/25","version":"original, niveaupoint fra 1. juli 2024","source_id":"bd-youth-2024-25","source_pages":"5-6","scope":"BD/DGI fælles ungdom","verified_identical_revision":{"source_id":"bd-youth-2024-25-rev-2025-03","source_pages":"5-6","verification":"Skema 1 og 1A rækkeetiketter og værdier blev sammenlignet; revisionen har samme tal."},"holds":[
+      ["U9","4 spillere","C-D",3200,1000,null],["U9","4 spillere","D",2800,700,null],
+      ["U11","4 spillere","C",4000,1200,null],["U11","4 spillere","C-D",3400,900,null],["U11","4 spillere","D",3200,800,null],["U11","4 piger","D",2800,750,null],
+      ["U13","4 spillere","A",6000,1800,null],["U13","4 spillere","B",5000,1500,null],["U13","4 spillere","C",4200,1250,null],["U13","4 spillere","C-D",3800,1050,null],["U13","4 spillere","D",3600,950,null],["U13","4 piger","C",3800,1100,null],["U13","4 piger","D",3200,850,null],
+      ["U15","4 spillere","M",8400,2400,null],["U15","4 spillere","A",7200,2000,null],["U15","4 spillere","B",6000,1700,null],["U15","4 spillere","C",4800,1400,null],["U15","4 spillere","C-D",4200,1150,null],["U15","4 spillere","D",4000,1050,null],["U15","4 piger","C",4200,1200,null],["U15","4 piger","D",3600,950,null],
+      ["U17/U19","4 spillere","M",10000,3000,null],["U17/U19","4 spillere","A",8600,2400,null],["U17/U19","4 spillere","B",7200,2000,null],["U17/U19","4 spillere","C",6000,1700,null],["U17/U19","4 spillere","C-D",5000,1500,null],["U17/U19","4 spillere","D",4600,1200,null],
+      ["U11","4+2",null,null,null,null],["U13","4+3",null,null,null,null],["U13","2+2","A",5600,1700,1500],["U13","2+2","B",4700,1400,1250],["U13","2+2","C",4000,1200,1100],["U13","2+2","D",3600,1050,950],["U15","4+3",null,null,null,null],["U15","2+2","M",7800,2300,1900],["U15","2+2","A",6500,2000,1650],["U15","2+2","B",5400,1700,1400],["U15","2+2","C",4600,1400,1250],["U15","2+2","D",4000,1200,1100],["U17","4+3",null,null,null,null],["U17/U19","4+2","M",15000,3000,2500],["U17/U19","2+2","A",7800,2350,2050],["U17/U19","2+2","B",6600,2000,1750],["U17/U19","2+2","C",5600,1700,1500],["U17/U19","2+2","D",4800,1500,1300]
+    ]},
+    {"season":"2025/26","version":"original, niveaupoint fra 1. juli 2025","source_id":"bd-youth-2025-26-original","source_pages":"5-6","scope":"BD/DGI fælles ungdom; denne originale version er før oktoberrevisionen","holds":[
+      ["U9","4 spillere","C-D",3200,1000,null],["U9","4 spillere","D",2800,700,null],["U11","4 spillere","C",4000,1200,null],["U11","4 spillere","C-D",3400,900,null],["U11","4 spillere","D",3200,800,null],["U11","4 piger","D",2800,750,null],
+      ["U13","4 spillere","A",6000,1800,null],["U13","4 spillere","B",5000,1500,null],["U13","4 spillere","C",4200,1250,null],["U13","4 spillere","C-D",3800,1050,null],["U13","4 spillere","D",3600,950,null],["U13","4 piger","C",3800,1100,null],["U13","4 piger","D",3200,850,null],
+      ["U15","4 spillere","M",8400,2400,null],["U15","4 spillere","A",7200,2000,null],["U15","4 spillere","B",6000,1700,null],["U15","4 spillere","C",4800,1400,null],["U15","4 spillere","C-D",4200,1150,null],["U15","4 spillere","D",4000,1050,null],["U15","4 piger","C",4200,1200,null],["U15","4 piger","D",3600,950,null],
+      ["U17/U19","4 spillere","M",10000,3000,null],["U17/U19","4 spillere","A",8600,2400,null],["U17/U19","4 spillere","B",7200,2000,null],["U17/U19","4 spillere","C",6000,1700,null],["U17/U19","4 spillere","C-D",5000,1500,null],["U17/U19","4 spillere","D",4600,1200,null],
+      ["U11","4+2",null,null,null,null],["U13","4+3",null,null,null,null],["U13","2+2","A",5600,1700,1500],["U13","2+2","B",4700,1400,1250],["U13","2+2","C",4000,1200,1100],["U13","2+2","D",3600,1050,950],["U15","4+3",null,null,null,null],["U15","2+2","M",7800,2300,1900],["U15","2+2","A",6500,2000,1650],["U15","2+2","B",5400,1700,1400],["U15","2+2","C",4600,1400,1250],["U15","2+2","D",4000,1200,1100],["U17","4+3",null,null,null,null],["U17/U19","4+2","M",15000,3000,2500],["U17/U19","2+2","A",7800,2350,2050],["U17/U19","2+2","B",6600,2000,1750],["U17/U19","2+2","C",5600,1700,1500],["U17/U19","2+2","D",4800,1500,1300]
+    ]},
+    {"season":"2025/26","version":"revision dateret 8. oktober 2025","source_id":"bd-youth-2025-26-rev-2025-10-08","source_pages":"5-6","scope":"BD/DGI fælles ungdom; særskilt revision, ikke flettet sammen med originalen","holds":[
+      ["U9","3 spillere","C",3600,1300,null],["U9","3 spillere","D",3300,1100,null],["U11","4 spillere","B",5600,1600,null],["U11","4 spillere","C",5100,1350,null],["U11","4 spillere","C-D",4800,1250,null],["U11","4 spillere","D",4600,1150,null],["U11","4 piger","D",4200,1125,null],
+      ["U13","4 spillere","A",6400,2000,null],["U13","4 spillere","B",5800,1700,null],["U13","4 spillere","C",5300,1500,null],["U13","4 spillere","C-D",5000,1300,null],["U13","4 spillere","D",4800,1200,null],["U13","4 piger","C",4800,1300,null],["U13","4 piger","D",4400,1100,null],
+      ["U15","4 spillere","M",8400,2400,null],["U15","4 spillere","A",7200,2100,null],["U15","4 spillere","B",6400,1850,null],["U15","4 spillere","C",5600,1600,null],["U15","4 spillere","C-D",5200,1400,null],["U15","4 spillere","D",5000,1250,null],["U15","4 piger","C",5000,1500,null],["U15","4 piger","D",4600,1200,null],
+      ["U17/U19","4 spillere","M",10000,3000,null],["U17/U19","4 spillere","A",8400,2400,null],["U17/U19","4 spillere","B",7200,2200,null],["U17/U19","4 spillere","C",6400,1850,null],["U17/U19","4 spillere","C-D",5600,1550,null],["U17/U19","4 spillere","D",5200,1300,null],
+      ["U11","4+2",null,null,null,null],["U13","4+3",null,null,null,null],["U13","2+2","A",6000,1900,1600],["U13","2+2","B",5400,1700,1450],["U13","2+2","C",5000,1500,1300],["U13","2+2","D",4800,1300,1200],["U15","4+3",null,null,null,null],["U15","2+2","M",7800,2300,2000],["U15","2+2","A",6800,2000,1800],["U15","2+2","B",6000,1850,1600],["U15","2+2","C",5400,1600,1450],["U15","2+2","D",5000,1400,1300],["U17","4+3",null,null,null,null],["U17/U19","4+2","M",15000,3000,2500],["U17/U19","2+2","A",7800,2500,2100],["U17/U19","2+2","B",6800,2200,1800],["U17/U19","2+2","C",5800,1850,1500],["U17/U19","2+2","D",5000,1550,1350]
+    ]},
+    {"season":"2026/27","version":"fællesreglement 2026/27","source_id":"bd-youth-2026-27","source_pages":"5-7","scope":"BD/DGI fælles ungdom","holds":[
+      ["U9","3 spillere","C-D",3400,1200,null],["U9","3 spillere","D",3300,1100,null],["U9","3 spillere","Dx",3000,1000,null],
+      ["U11","4 spillere","B",5600,1650,null],["U11","4 spillere","C",5000,1400,null],["U11","4 spillere","C-D",4700,1250,null],["U11","4 spillere","D",4400,1100,null],["U11","4 spillere","Dx",4200,1050,null],["U11","4 piger","C",4800,1300,null],["U11","4 piger","D",4200,1100,null],
+      ["U13","4 spillere","A",6400,1900,null],["U13","4 spillere","B",5600,1650,null],["U13","4 spillere","C",5100,1450,null],["U13","4 spillere","C-D",4800,1300,null],["U13","4 spillere","D",4600,1150,null],["U13","4 spillere","Dx",4400,1100,null],["U13","4 piger","C",4800,1300,null],["U13","4 piger","D",4400,1150,null],
+      ["U15","4 spillere","A",7200,2100,null],["U15","4 spillere","B",6200,1800,null],["U15","4 spillere","C",5500,1550,null],["U15","4 spillere","C-D",5100,1400,null],["U15","4 spillere","D",4800,1200,null],["U15","4 spillere","Dx",4600,1150,null],["U15","4 piger","B",5400,1450,null],["U15","4 piger","C",4900,1300,null],["U15","4 piger","D",4500,1175,null],
+      ["U17/U19","4 spillere","M",9600,2900,null],["U17/U19","4 spillere","A",8200,2400,null],["U17/U19","4 spillere","B",7200,2100,null],["U17/U19","4 spillere","C",6200,1800,null],["U17/U19","4 spillere","C-D",5500,1550,null],["U17/U19","4 spillere","D",5100,1275,null],["U17/U19","4 piger","C",5300,1400,null],["U17/U19","4 piger","D",4800,1200,null],
+      ["U11","4+2",null,8500,null,null],["U13","4+3",null,11500,null,null],["U13","2+2","A",5800,1800,1600],["U13","2+2","B",5200,1600,1400],["U13","2+2","C",4800,1400,1300],["U13","2+2","D",4600,1300,1200],["U15","4+3",null,14000,null,null],["U15","2+2","M",7800,2200,1800],["U15","2+2","A",6800,2000,1700],["U15","2+2","B",5800,1700,1500],["U15","2+2","C",5200,1400,1300],["U15","2+2","D",4800,1300,1200],["U17","4+3",null,16500,null,null],["U17/U19","4+2","M",14000,2900,2400],["U17/U19","2+2","A",7800,2200,1800],["U17/U19","2+2","B",6800,2000,1700],["U17/U19","2+2","C",5800,1700,1500],["U17/U19","2+2","D",5000,1400,1300]
+    ],"notes":"* stjernet markerer pointloft, som gælder holdfællesskaber; rene klubhold har intet øvre loft på de pågældende formater. DgI/Sjælland invitationens lokale tilbud er separat."}
   ],
-  "not_captured": "The JSON intentionally does not publish invented range mappings for 2010/11-2023/24, U09/U11/U15/U17/U19, or per-region offers. Those tables exist in some archived PDFs but full cross-season extraction and region-specific invitations remain incomplete; see mangler.md."
+  "not_captured": "Ingen nationale fælles ungdomskilder er fundet for 2010/11-2017/18, 2020/21 eller 2021/22. De registrerede fælleskilder dækker enkelte versioner, ikke hver sæson. Lokale region-/DGI-udbud er ikke udledt af nationale skemaer. 2022/23 og 2023/24 scannede tabeller har rå point med niveauetiket null, fordi etiketten ikke er sikkert afskrevet. Se mangler.md."
 }

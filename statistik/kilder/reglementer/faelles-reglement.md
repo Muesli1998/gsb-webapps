@@ -28,7 +28,7 @@ I 2026/27 står U13 4 spillere A/B/C/C-D/D/Dx som **6400/5600/5100/4800/4600/440
 |---|---|---|
 | National senior (DH) | DH-reglementet gælder Badmintonligaen til Danmarksserien. Det afgrænser særskilt kredsenes holdturneringer; regionale regler skal derfor findes separat. | bd-dh-2026-27, §5 s. 3 |
 | København | Lokalt reglement omfatter ungdom, senior og senior+. Københavnsserien følger DH-bestemmelser med lokalt angivne undtagelser; øvrige hold anvender DH-regler, hvor lokale regler ikke fraviger dem. | koebenhavn-rules-2026-27 s. 1-2; version 2025/26 også arkiveret |
-| Vestlig Kredsserie | Kredsserie Vest og Serie 1 Vest er fælles for Fyn, Sønderjylland, Nordjylland og Midtjylland; lokale serier under Serie 1 er udtrykkeligt uden for dette reglement. | vest-kredsserie-2021 s. 1-2; sæson 2021/22 |
+| Vestlig Kredsserie | Kredsserie Vest og Serie 1 Vest er fælles for Fyn, Sønderjylland, Nordjylland og Midtjylland; lokale serier under Serie 1 er udtrykkeligt uden for dette reglement. PDF'en er mærket 2021, men angiver ikke en gældende sæson. | vest-kredsserie-2021 s. 1-2; anvendelsessæson ikke angivet |
 | Nordjylland | Et samlet regionalt Senior/Veteran-reglement har egne holdtyper og turneringsregler. | nordjylland-senior-veteran-2025-26 og 2026-27; sæsonversionerne |
 | Sjælland veteran | Ældre historik-/veterankilder dokumenterer holdtyper, men sæsonen i en historisk PDF er modstridende (titel 2013/14, brødtekst 2012/13). En 2026/27 invitation er ikke et fuldstændigt serie-reglement. | sj-veteran-2013-14-season-conflict; sjaelland-veteran-invitation-2026-27 |
 
@@ -36,7 +36,19 @@ Der udledes ikke en fælles veteranregel af disse regionale dokumenter. For hver
 
 ## Uafklaret kildegrundlag
 
-- Ingen fuld, sammenhængende officiel samling fra 2010 til i dag blev fundet. Registeret indeholder 24 hentede PDF'er fra enkelte år/versioner; se [mangler.md](mangler.md).
+- Ingen fuld, sammenhængende officiel samling fra 2010 til i dag blev fundet. Registeret indeholder nu 34 PDF'er fra enkelte år/versioner, i alt 12.032.569 bytes; det omfatter tre manuelt leverede DGI-bilag. Se [mangler.md](mangler.md) for huller og ikke-hentede kandidater.
 - 2025/26 ungdom findes i flere revisioner. 8. oktober-versionen er seneste hentede revision i dette arkiv; marts 2025 er en revision af 2024/25-reglementet. Versionerne beholdes hver for sig.
-- UGE 38- og DGI/Sjælland-bilagene fra 2026/27 kunne ikke hentes anonymt fra SharePoint. Deres indhold gengives derfor ikke som en selvstændig kilde her.
+- UGE 38 og de to DGI/Badminton Sjælland-bilag for 2026/27 er nu registreret fra Christoffers lokale filoverdragelse. De tre oprindelige SharePoint-links gav HTTP 401 anonymt; bilagene er læst og er selvstændige kilder. UGE 38 er en separat ekstraordinær 2+2-turnering for U13-U19 i uge 38, ikke en almindelig regional række. Vinderen af hver række får tilbudt DMU-plads; ved flere puljer mødes puljevinderne i finale (Uge 38 invitation s. 1). Den regionale invitation angiver holdtyper, runder, 3×15-systemet fra 1. juli 2026 og DMU Hold 24.-25. april 2027 (s. 1-2). Holdlederfolderen er vejledende og henviser til fællesreglementet; den omtaler bl.a. §14-15 og 3×15 (s. 2).
+
+## Runde 2 — nye kilder og sæsonversioner
+
+| Kilde/fund | Hvad den tilføjer | Kilde |
+|---|---|---|
+| Nationalt ungdomsreglement 2018/19 | Historisk skema med U9-U17/U19 4-spiller/4-pige og 4+2/4+3. Tabellen bruger sin egen klassifikationspointskala; tallene må ikke behandles som senere niveaupoint. | bd-dgi-youth-2018-19 s. 5-6 |
+| Nationalt ungdomsreglement 2022/23 | Skema 1 og 1A for 4 spillere/4 piger og 2+2/4+2/4+3, med rå pointlofter og bedste-spillergrænser. Rækkeniveauetiketter er ikke koblet til de rå værdier i JSON, hvor sikker afskrift mangler. | bd-youth-2022-23 s. 5-6 |
+| 2018/19 Nordjylland/DGI Nordsjælland ungdomsinvitation | Lokal invitation fundet; ikke behandlet som et generelt reglement eller som dokumentation for andre landsdele. | north-jutland-youth-invitation-2018-19 s. 1-2 |
+| København 2024/25 | Lokal holdturneringsversion arkiveret; København 2018/19, 2025/26 og 2026/27 findes også. | kbk-rules-2024-25 |
+| Regionale senior/veteran-kilder | Nordjylland veteranreglement uden sæson, Sjælland veteranreglement dateret 1. september 2022 uden fastlagt gældende sæson, og et fælles vestligt senior/veteranreglement gældende fra uge 43 2025. | nordjylland-veteran-historic; sjaelland-veteran-2022-docdate; west-senior-veteran-2025-26 |
+
+Kildedækningen er fortsat punktvis: der er ikke fundet nationale ungdomsregler for alle mellemår eller et komplet sæt lokale ungdomsindbydelser, senior- og veteranreglementer for alle 24 region-/landsdelslabels. Fund pr. område/sæson og konkrete manglende URL’er står i [mangler.md](mangler.md). Nationale ungdomsskemaer for 2024/25 og begge 2025/26-versioner er repræsenteret i `regler-ungdom.json` for alle udtrukne aldre og holdtyper; manglende etiketter er null, ikke udledt.
 - Ældre navne som DBF, SBKr., LFBKr. og de fire vestlige kredse mappes ikke automatisk til nutidige regioner uden en eksplicit kilde.
