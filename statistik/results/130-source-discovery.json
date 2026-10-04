@@ -1379,5 +1379,1418 @@
       "bytes": 4635,
       "pdf_signature": false
     }
+  ],
+  "round3_web_searches": [
+  {
+    "query": "badminton ungdomsholdturnering regler 2016 filetype:pdf",
+    "season": "2016/17",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [
+      "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=58918"
+    ],
+    "outcome": "kandidat(er) i samlet svar; direkte URL/fil kontrolleres separat"
+  },
+  {
+    "query": "fælles reglement ungdomsholdturnering 2016/17 pdf",
+    "season": "2016/17",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [
+      "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=58918"
+    ],
+    "outcome": "kandidat(er) i samlet svar; direkte URL/fil kontrolleres separat"
+  },
+  {
+    "query": "Nordjylland seniorhold serie 2-4 2018/19 reglement pdf",
+    "season": "2018/19",
+    "audience": "senior",
+    "region": "Badminton Nordjylland",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=77461"
+    ],
+    "outcome": "kandidat(er) i samlet svar; direkte URL/fil kontrolleres separat"
+  },
+  {
+    "query": "badminton turneringsreglement senior veteran ungdom hold 2010..2025 region DGI filetype:pdf",
+    "season": "2010/11-2025/26",
+    "audience": "ungdom/senior/veteran",
+    "region": "alle regioner",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [],
+    "outcome": "ingen sikkert query-specifik kandidat udskilt"
+  },
+  {
+    "query": "Reglement for den pointgivende ungdomsholdturnering 2016/2017 PDF",
+    "season": "2016/17",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [
+      "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=58918"
+    ],
+    "outcome": "kandidat(er) i samlet svar; direkte URL/fil kontrolleres separat"
+  },
+  {
+    "query": "badminton ungdomsholdturnering regler 2016",
+    "season": "2016/17",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [
+      "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=58918"
+    ],
+    "outcome": "kandidat(er) i samlet svar; direkte URL/fil kontrolleres separat"
+  },
+  {
+    "query": "Badminton Nordjylland seniorhold Serie 2-4 2018/2019 pdf",
+    "season": "2018/19",
+    "audience": "senior",
+    "region": "Badminton Nordjylland",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=77461"
+    ],
+    "outcome": "kandidat(er) i samlet svar; direkte URL/fil kontrolleres separat"
+  },
+  {
+    "query": "Nordjyllands senior holdturnering reglement 2018/2019 badminton",
+    "season": "2018/19",
+    "audience": "senior",
+    "region": "Badminton Nordjylland",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [
+      "https://badmintonpeople.dk/cms/?cmsid=877&pageid=29571"
+    ],
+    "outcome": "kandidat(er) i samlet svar; direkte URL/fil kontrolleres separat"
+  },
+  {
+    "query": "badminton ungdomsholdturnering regler 2010 pdf",
+    "season": "2010/11",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [],
+    "outcome": "ingen sikkert query-specifik kandidat udskilt"
+  },
+  {
+    "query": "badminton senior holdturnering reglement 2010/11 pdf Danmark",
+    "season": "2010/11",
+    "audience": "senior",
+    "region": "nationalt BD/DH",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [],
+    "outcome": "ingen sikkert query-specifik kandidat udskilt"
+  },
+  {
+    "query": "badminton veteranholdturnering reglement 2010/11 filetype:pdf",
+    "season": "2010/11",
+    "audience": "veteran",
+    "region": "nationalt/regioner",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=6803"
+    ],
+    "outcome": "kandidat(er) i samlet svar; direkte URL/fil kontrolleres separat"
+  },
+  {
+    "query": "reglement ungdomsholdturnering badminton 2011 filetype:pdf",
+    "season": "2011/12",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [],
+    "outcome": "ingen sikkert query-specifik kandidat udskilt"
+  },
+  {
+    "query": "badminton senior holdturnering reglement 2011/12 pdf Danmark",
+    "season": "2011/12",
+    "audience": "senior",
+    "region": "nationalt BD/DH",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [],
+    "outcome": "ingen sikkert query-specifik kandidat udskilt"
+  },
+  {
+    "query": "veteran holdturnering reglement badminton 2011/12 filetype:pdf",
+    "season": "2011/12",
+    "audience": "veteran",
+    "region": "nationalt/regioner",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [
+      "https://badminton.dk/wp-content/uploads/2023/11/Holdturneringsreglement-for-badminton-i-Danmark-091123.pdf"
+    ],
+    "outcome": "kandidat(er) i samlet svar; direkte URL/fil kontrolleres separat"
+  },
+  {
+    "query": "reglement ungdomsholdturnering badminton 2012/13 filetype:pdf",
+    "season": "2012/13",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [],
+    "outcome": "ingen sikkert query-specifik kandidat udskilt"
+  },
+  {
+    "query": "turneringsreglement senior badminton 2012/13 hold filetype:pdf",
+    "season": "2012/13",
+    "audience": "senior",
+    "region": "nationalt BD/DH",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [],
+    "outcome": "ingen sikkert query-specifik kandidat udskilt"
+  },
+  {
+    "query": "badminton fælles reglement ungdomsholdturnering 2013/14 PDF",
+    "season": "2013/14",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=25614"
+    ],
+    "outcome": "kandidat(er) i samlet svar; direkte URL/fil kontrolleres separat"
+  },
+  {
+    "query": "badminton senior holdturnering reglement Danmark 2013/14 DH PDF",
+    "season": "2013/14",
+    "audience": "senior",
+    "region": "nationalt BD/DH",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [],
+    "outcome": "ingen sikkert query-specifik kandidat udskilt"
+  },
+  {
+    "query": "badminton veteranholdturnering reglement Danmark 2013/14",
+    "season": "2013/14",
+    "audience": "veteran",
+    "region": "nationalt/regioner",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=25615"
+    ],
+    "outcome": "kandidat(er) i samlet svar; direkte URL/fil kontrolleres separat"
+  },
+  {
+    "query": "badminton ungdomsholdturnering regler 2014/15 filetype:pdf",
+    "season": "2014/15",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [],
+    "outcome": "ingen sikkert query-specifik kandidat udskilt"
+  },
+  {
+    "query": "badminton fælles reglement ungdomsholdturnering 2020/21 pdf",
+    "season": "2020/21",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [
+      "https://badminton.dk/wp-content/uploads/2020/07/F%C3%A6lles-reglement-for-ungdomsholdturneringen-2020-2021-02072020-1.pdf",
+      "https://sites.dgi.dk/media/34207/indbydelse-ungdomsholdturnering-jylland-2020-21-2.pdf"
+    ],
+    "outcome": "kandidat(er) i samlet svar; direkte URL/fil kontrolleres separat"
+  },
+  {
+    "query": "seniorholdturnering reglement Badminton Fyn 2018 pdf",
+    "season": "2018/19",
+    "audience": "senior/veteran",
+    "region": "Badminton Fyn",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=75911"
+    ],
+    "outcome": "kandidat(er) i samlet svar; direkte URL/fil kontrolleres separat"
+  },
+  {
+    "query": "reglement ungdomsholdturnering 2015/16 pdf",
+    "season": "2015/16",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [],
+    "outcome": "ingen sikkert query-specifik kandidat udskilt"
+  },
+  {
+    "query": "holdturneringsreglement veteran Badminton Sjælland 2016 PDF",
+    "season": "2016/17",
+    "audience": "veteran",
+    "region": "Badminton Sjælland/DGI",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [
+      "https://badmintonpeople.dk/cms/?cmsid=186&pageid=20503"
+    ],
+    "outcome": "kandidat(er) i samlet svar; direkte URL/fil kontrolleres separat"
+  },
+  {
+    "query": "DGI Nordsjælland ungdomsholdturnering indbydelse 2015/16 badminton pdf",
+    "season": "2015/16",
+    "audience": "ungdom",
+    "region": "DGI Nordsjælland",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [
+      "https://www.badmintonpeople.dk/cms/?cmsid=186&pageid=20503"
+    ],
+    "outcome": "kandidat(er) i samlet svar; direkte URL/fil kontrolleres separat"
+  },
+  {
+    "query": "DGI Fyn ungdomsholdturnering indbydelse badminton 2015/16 pdf",
+    "season": "2015/16",
+    "audience": "ungdom",
+    "region": "DGI Fyn/Badminton Fyn",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [
+      "https://abcdocz.com/doc/3922725/orientering-om-f%C3%A6lles-holdturnering---mimer"
+    ],
+    "outcome": "kandidat(er) i samlet svar; direkte URL/fil kontrolleres separat"
+  },
+  {
+    "query": "Badminton København senior veteran holdturnering reglement 2016/17 pdf",
+    "season": "2016/17",
+    "audience": "senior/veteran",
+    "region": "Badminton København",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [
+      "https://www.badmintonkoebenhavn.dk/uploads/file/123/Turneringsreglement_for_Badminton_K%C3%B8benhavns_holdturnering_2024-2025__version_2024-2_.pdf"
+    ],
+    "outcome": "kandidat(er) i samlet svar; direkte URL/fil kontrolleres separat"
+  },
+  {
+    "query": "Badminton Nordjylland senior veteran reglement 2018/19 badminton pdf",
+    "season": "2018/19",
+    "audience": "senior/veteran",
+    "region": "Badminton Nordjylland",
+    "result_count": null,
+    "result_count_note": "Forespørgslen blev kørt i en web.run med fire søgninger; værktøjets fælles resultatudsnit kunne ikke fordeles sikkert på denne forespørgsel.",
+    "candidates": [
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=77461"
+    ],
+    "outcome": "kandidat(er) i samlet svar; direkte URL/fil kontrolleres separat"
+  },
+  {
+    "query": "badminton fælles reglement ungdomsholdturnering 2010/11 pdf",
+    "season": "2010/11",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": 23,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badmintonpeople.dk/cms/?cmsid=824&pageid=26170",
+      "https://www.gbk.dk/regler-ungdomsholdturnering",
+      "https://badminton.dk/wp-content/uploads/2020/07/F%C3%A6lles-reglement-for-ungdomsholdturneringen-2020-2021-02072020-1.pdf",
+      "https://sites.dgi.dk/media/23557/faelles-reglement-ungdomsholdturneringen-2018-2019.pdf"
+    ],
+    "outcome": "søgning gav kandidater; skal verificeres pr. fil"
+  },
+  {
+    "query": "badminton fælles reglement ungdomsholdturnering 2011/12 pdf",
+    "season": "2011/12",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": 24,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badmintonpeople.dk/cms/?cmsid=824&pageid=26170",
+      "https://www.gbk.dk/regler-ungdomsholdturnering",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://www.fichier-pdf.fr/2017/05/16/regles-officielles-2011-v2011-2012/"
+    ],
+    "outcome": "søgning gav kandidater; skal verificeres pr. fil"
+  },
+  {
+    "query": "badminton fælles reglement ungdomsholdturnering 2012/13 pdf",
+    "season": "2012/13",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": 22,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badmintonpeople.dk/cms/?cmsid=824&pageid=26170",
+      "https://www.gbk.dk/regler-ungdomsholdturnering",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://badmintonpeople.dk/Messages/Inbox/GetFile.aspx?id=7903"
+    ],
+    "outcome": "søgning gav kandidater; skal verificeres pr. fil"
+  },
+  {
+    "query": "badminton fælles reglement ungdomsholdturnering 2013/14 pdf",
+    "season": "2013/14",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": 23,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=25614",
+      "https://badmintonpeople.dk/cms/?cmsid=824&pageid=26170",
+      "https://www.gbk.dk/regler-ungdomsholdturnering",
+      "https://badminton.dk/2023/07/10/reglementsaendringer-til-2023-2024-saesonen/"
+    ],
+    "outcome": "søgning gav kandidater; skal verificeres pr. fil"
+  },
+  {
+    "query": "badminton fælles reglement ungdomsholdturnering 2014/15 pdf",
+    "season": "2014/15",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": 24,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badmintonpeople.dk/cms/?cmsid=824&pageid=26170",
+      "https://www.gbk.dk/regler-ungdomsholdturnering",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=77338"
+    ],
+    "outcome": "søgning gav kandidater; skal verificeres pr. fil"
+  },
+  {
+    "query": "badminton fælles reglement ungdomsholdturnering 2015/16 pdf",
+    "season": "2015/16",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": 24,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badmintonpeople.dk/cms/?cmsid=824&pageid=26170",
+      "https://www.gbk.dk/regler-ungdomsholdturnering",
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=77338",
+      "https://www.badmintonkoebenhavn.dk/uploads/file/136/Turneringsreglement_for_Badminton_K%C3%B8benhavns_holdturnering_2025-2026__version_2025-1_.pdf"
+    ],
+    "outcome": "søgning gav kandidater; skal verificeres pr. fil"
+  },
+  {
+    "query": "badminton fælles reglement ungdomsholdturnering 2016/17 pdf",
+    "season": "2016/17",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": 22,
+    "candidates": [
+      "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=58918",
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badmintonpeople.dk/cms/?cmsid=824&pageid=26170",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://www.gbk.dk/regler-ungdomsholdturnering"
+    ],
+    "outcome": "søgning gav kandidater; skal verificeres pr. fil"
+  },
+  {
+    "query": "badminton fælles reglement ungdomsholdturnering 2017/18 pdf",
+    "season": "2017/18",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": 20,
+    "candidates": [
+      "https://sites.dgi.dk/media/23557/faelles-reglement-ungdomsholdturneringen-2018-2019.pdf",
+      "https://badmintonpeople.dk/cms/?cmsid=824&pageid=26170",
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://www.gbk.dk/regler-ungdomsholdturnering"
+    ],
+    "outcome": "søgning gav kandidater; skal verificeres pr. fil"
+  },
+  {
+    "query": "badminton fælles reglement ungdomsholdturnering 2018/19 pdf",
+    "season": "2018/19",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": 20,
+    "candidates": [
+      "https://sites.dgi.dk/media/23557/faelles-reglement-ungdomsholdturneringen-2018-2019.pdf",
+      "https://badmintonpeople.dk/cms/?cmsid=824&pageid=26170",
+      "https://melbybadmintonclub.dk/vejledninger/badmintonregler",
+      "https://badminton.dk/wp-content/uploads/2020/01/F%C3%A6lles-reglement-for-ungdomsholdturneringen-2019-2020.pdf",
+      "https://badmintonpeople.dk/cms/?cmsid=877&pageid=29086"
+    ],
+    "outcome": "søgning gav kandidater; skal verificeres pr. fil"
+  },
+  {
+    "query": "badminton fælles reglement ungdomsholdturnering 2019/20 pdf",
+    "season": "2019/20",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": 20,
+    "candidates": [
+      "https://badminton.dk/wp-content/uploads/2020/01/F%C3%A6lles-reglement-for-ungdomsholdturneringen-2019-2020.pdf",
+      "https://badmintonpeople.dk/cms/?cmsid=824&pageid=26170",
+      "https://sites.dgi.dk/media/23557/faelles-reglement-ungdomsholdturneringen-2018-2019.pdf",
+      "https://badminton.dk/holdturneringsregler/",
+      "https://www.gbk.dk/regler-ungdomsholdturnering"
+    ],
+    "outcome": "søgning gav kandidater; skal verificeres pr. fil"
+  },
+  {
+    "query": "badminton fælles reglement ungdomsholdturnering 2020/21 pdf",
+    "season": "2020/21",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": 21,
+    "candidates": [
+      "https://badminton.dk/wp-content/uploads/2020/07/F%C3%A6lles-reglement-for-ungdomsholdturneringen-2020-2021-02072020-1.pdf",
+      "https://badminton.dk/holdturneringsregler/",
+      "https://sites.dgi.dk/media/34207/indbydelse-ungdomsholdturnering-jylland-2020-21-2.pdf",
+      "https://badminton.dk/om-badminton-danmark/love-regler/reglementer/holdturneringer/",
+      "https://www.gbk.dk/regler-ungdomsholdturnering"
+    ],
+    "outcome": "søgning gav kandidater; skal verificeres pr. fil"
+  },
+  {
+    "query": "badminton fælles reglement ungdomsholdturnering 2021/22 pdf",
+    "season": "2021/22",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": 23,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://www.gbk.dk/regler-ungdomsholdturnering",
+      "https://badminton.dk/wp-content/uploads/2020/07/F%C3%A6lles-reglement-for-ungdomsholdturneringen-2020-2021-02072020-1.pdf",
+      "https://badminton.dk/wp-content/uploads/2023/03/Faelles-reglement-for-ungdomsholdturneringen-2022-2023.pdf",
+      "https://badminton.dk/dommeruddannelse/"
+    ],
+    "outcome": "søgning gav kandidater; skal verificeres pr. fil"
+  },
+  {
+    "query": "badminton fælles reglement ungdomsholdturnering 2022/23 pdf",
+    "season": "2022/23",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": 22,
+    "candidates": [
+      "https://badminton.dk/wp-content/uploads/2023/03/Faelles-reglement-for-ungdomsholdturneringen-2022-2023.pdf",
+      "https://badmintoninordjylland.dk/wp-content/uploads/2022/06/Reglement-Ungdomsholturneringen-2022-2023.pdf",
+      "https://www.badmintonkoebenhavn.dk/uploads/file/84/Faelles-reglement-for-ungdomsholdturneringen-2022-2023-06072022-v3.pdf",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://badminton.dk/holdturneringsregler/"
+    ],
+    "outcome": "søgning gav kandidater; skal verificeres pr. fil"
+  },
+  {
+    "query": "badminton fælles reglement ungdomsholdturnering 2023/24 pdf",
+    "season": "2023/24",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": 22,
+    "candidates": [
+      "https://badminton.dk/wp-content/uploads/2023/07/Faelles-reglement-for-ungdomsholdturneringen-2023-2024.pdf",
+      "https://badminton.dk/2023/07/10/reglementsaendringer-til-2023-2024-saesonen/",
+      "https://badminton.dk/wp-content/uploads/2023/03/Faelles-reglement-for-ungdomsholdturneringen-2022-2023.pdf",
+      "https://badminton.dk/wp-content/uploads/2024/10/2024-10-04-Faelles-reglement-for-ungdomsholdturneringen.pdf",
+      "https://badmintoninordjylland.dk/wp-content/uploads/2023/07/Reglement-Ungdomsholdturneringen-2023-2024.pdf"
+    ],
+    "outcome": "søgning gav kandidater; skal verificeres pr. fil"
+  },
+  {
+    "query": "badminton fælles reglement ungdomsholdturnering 2024/25 pdf",
+    "season": "2024/25",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": 22,
+    "candidates": [
+      "https://badminton.dk/wp-content/uploads/2024/10/2024-10-04-Faelles-reglement-for-ungdomsholdturneringen.pdf",
+      "https://badminton.dk/wp-content/uploads/2025/03/2025-03-03-Faelles-reglement-for-ungdomsholdturneringen.pdf",
+      "https://badminton.dk/2024/07/01/reglementsaendringer-til-2024-2025-saesonen/",
+      "https://badmintoninordjylland.dk/wp-content/uploads/2024/08/Indbydelse-ungdomsholdturneringen-2024-2025.pdf",
+      "https://badminton.dk/holdturneringsregler/"
+    ],
+    "outcome": "søgning gav kandidater; skal verificeres pr. fil"
+  },
+  {
+    "query": "badminton fælles reglement ungdomsholdturnering 2025/26 pdf",
+    "season": "2025/26",
+    "audience": "ungdom",
+    "region": "nationalt BD/DGI",
+    "result_count": 16,
+    "candidates": [
+      "https://badminton.dk/wp-content/uploads/2025/09/Faelles-reglement-for-ungdomsholdturneringen-2025-06-30.pdf",
+      "https://badminton.dk/wp-content/uploads/2025/07/Faelles-reglement-for-ungdomsholdturneringen-2025-06-30.pdf",
+      "https://badminton.dk/wp-content/uploads/2025/10/Faelles-reglement-for-ungdomsholdturneringen-2025-10-08.pdf",
+      "https://badminton.dk/holdturneringsregler/",
+      "https://melbybadmintonclub.dk/vejledninger/badmintonregler"
+    ],
+    "outcome": "søgning gav kandidater; skal verificeres pr. fil"
+  },
+  {
+    "query": "badminton DH senior holdturneringsreglement 2010/11 pdf",
+    "season": "2010/11",
+    "audience": "senior",
+    "region": "nationalt BD/DH",
+    "result_count": 23,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://badminton.dk/wp-content/uploads/2022/12/Holdturneringsreglement-for-badminton-i-Danmark-opdateret-120822.pdf",
+      "https://nembadminton.dk/",
+      "https://badminton.dk"
+    ],
+    "outcome": "søgning gav kandidater; sæsonrelevans kontrolleres særskilt"
+  },
+  {
+    "query": "badminton DH senior holdturneringsreglement 2011/12 pdf",
+    "season": "2011/12",
+    "audience": "senior",
+    "region": "nationalt BD/DH",
+    "result_count": 23,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://badminton.dk/wp-content/uploads/2022/12/Holdturneringsreglement-for-badminton-i-Danmark-opdateret-120822.pdf",
+      "https://nembadminton.dk/",
+      "https://badminton.dk"
+    ],
+    "outcome": "søgning gav kandidater; sæsonrelevans kontrolleres særskilt"
+  },
+  {
+    "query": "badminton DH senior holdturneringsreglement 2012/13 pdf",
+    "season": "2012/13",
+    "audience": "senior",
+    "region": "nationalt BD/DH",
+    "result_count": 24,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://badminton.dk/wp-content/uploads/2022/12/Holdturneringsreglement-for-badminton-i-Danmark-opdateret-120822.pdf",
+      "https://nembadminton.dk/",
+      "https://badminton.dk"
+    ],
+    "outcome": "søgning gav kandidater; sæsonrelevans kontrolleres særskilt"
+  },
+  {
+    "query": "badminton DH senior holdturneringsreglement 2013/14 pdf",
+    "season": "2013/14",
+    "audience": "senior",
+    "region": "nationalt BD/DH",
+    "result_count": 24,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://badminton.dk/wp-content/uploads/2022/12/Holdturneringsreglement-for-badminton-i-Danmark-opdateret-120822.pdf",
+      "https://nembadminton.dk/",
+      "https://badminton.dk"
+    ],
+    "outcome": "søgning gav kandidater; sæsonrelevans kontrolleres særskilt"
+  },
+  {
+    "query": "badminton DH senior holdturneringsreglement 2014/15 pdf",
+    "season": "2014/15",
+    "audience": "senior",
+    "region": "nationalt BD/DH",
+    "result_count": 24,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://badminton.dk/wp-content/uploads/2022/12/Holdturneringsreglement-for-badminton-i-Danmark-opdateret-120822.pdf",
+      "https://nembadminton.dk/",
+      "https://badminton.dk"
+    ],
+    "outcome": "søgning gav kandidater; sæsonrelevans kontrolleres særskilt"
+  },
+  {
+    "query": "badminton DH senior holdturneringsreglement 2015/16 pdf",
+    "season": "2015/16",
+    "audience": "senior",
+    "region": "nationalt BD/DH",
+    "result_count": 22,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=77338",
+      "https://badminton.dk/wp-content/uploads/2022/12/Holdturneringsreglement-for-badminton-i-Danmark-opdateret-120822.pdf",
+      "https://badmintonpeople.dk/cms/?cmsid=824&pageid=26170"
+    ],
+    "outcome": "søgning gav kandidater; sæsonrelevans kontrolleres særskilt"
+  },
+  {
+    "query": "badminton DH senior holdturneringsreglement 2016/17 pdf",
+    "season": "2016/17",
+    "audience": "senior",
+    "region": "nationalt BD/DH",
+    "result_count": 24,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=77338",
+      "https://badminton.dk/wp-content/uploads/2022/12/Holdturneringsreglement-for-badminton-i-Danmark-opdateret-120822.pdf",
+      "https://badmintonpeople.dk/cms/?cmsid=824&pageid=26170"
+    ],
+    "outcome": "søgning gav kandidater; sæsonrelevans kontrolleres særskilt"
+  },
+  {
+    "query": "badminton DH senior holdturneringsreglement 2017/18 pdf",
+    "season": "2017/18",
+    "audience": "senior",
+    "region": "nationalt BD/DH",
+    "result_count": 21,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://badmintonpeople.dk/cms/?cmsid=877&pageid=29086",
+      "https://badmintonpeople.dk/cms/?cmsid=824&pageid=25824",
+      "https://badmintonpeople.dk/cms/?cmsid=824&pageid=26170"
+    ],
+    "outcome": "søgning gav kandidater; sæsonrelevans kontrolleres særskilt"
+  },
+  {
+    "query": "badminton DH senior holdturneringsreglement 2018/19 pdf",
+    "season": "2018/19",
+    "audience": "senior",
+    "region": "nationalt BD/DH",
+    "result_count": 18,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=77338",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://badmintonpeople.dk/cms/?cmsid=877&pageid=29086",
+      "https://badmintonpeople.dk/cms/?cmsid=824&pageid=26170"
+    ],
+    "outcome": "søgning gav kandidater; sæsonrelevans kontrolleres særskilt"
+  },
+  {
+    "query": "badminton DH senior holdturneringsreglement 2019/20 pdf",
+    "season": "2019/20",
+    "audience": "senior",
+    "region": "nationalt BD/DH",
+    "result_count": 19,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badminton.dk/wp-content/uploads/2020/11/Holdturneringsreglement-for-badminton-i-Danmark-opdateret-15082020.pdf",
+      "https://badmintonpeople.dk/cms/?cmsid=824&pageid=26170",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=82613"
+    ],
+    "outcome": "søgning gav kandidater; sæsonrelevans kontrolleres særskilt"
+  },
+  {
+    "query": "badminton DH senior holdturneringsreglement 2020/21 pdf",
+    "season": "2020/21",
+    "audience": "senior",
+    "region": "nationalt BD/DH",
+    "result_count": 20,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badminton.dk/wp-content/uploads/2020/11/Holdturneringsreglement-for-badminton-i-Danmark-opdateret-15082020.pdf",
+      "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=86810",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://badminton.dk/wp-content/uploads/2021/08/Holdturneringsreglement-for-badminton-i-Danmark-opdateret-190821.pdf"
+    ],
+    "outcome": "søgning gav kandidater; sæsonrelevans kontrolleres særskilt"
+  },
+  {
+    "query": "badminton DH senior holdturneringsreglement 2021/22 pdf",
+    "season": "2021/22",
+    "audience": "senior",
+    "region": "nationalt BD/DH",
+    "result_count": 21,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://nembadminton.dk/",
+      "https://badminton.dk",
+      "https://badminton.dk/2021/06/01/nye-serveregler-i-nationale-topturneringer-og-aendringer-i-dh-turneringen-staar-for-doeren-i-naeste-saeson/"
+    ],
+    "outcome": "søgning gav kandidater; sæsonrelevans kontrolleres særskilt"
+  },
+  {
+    "query": "badminton DH senior holdturneringsreglement 2022/23 pdf",
+    "season": "2022/23",
+    "audience": "senior",
+    "region": "nationalt BD/DH",
+    "result_count": 22,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badminton.dk/wp-content/uploads/2022/05/Holdturneringsreglement-for-badminton-i-Danmark-opdateret-080422.pdf",
+      "https://badminton.dk/wp-content/uploads/2022/12/Holdturneringsreglement-for-badminton-i-Danmark-opdateret-120822.pdf",
+      "https://www.badmintonkoebenhavn.dk/uploads/file/81/Turneringsreglement_for_Badminton_K%C3%B8benhavns_holdturnering_2022-2023__version_2022-1_.pdf",
+      "https://badminton.dk/dommeruddannelse/"
+    ],
+    "outcome": "søgning gav kandidater; sæsonrelevans kontrolleres særskilt"
+  },
+  {
+    "query": "badminton DH senior holdturneringsreglement 2023/24 pdf",
+    "season": "2023/24",
+    "audience": "senior",
+    "region": "nationalt BD/DH",
+    "result_count": 19,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badminton.dk/2023/07/10/reglementsaendringer-til-2023-2024-saesonen/",
+      "https://sites.dgi.dk/media/51208/reglement-faelles-ht-voksenraekker-2023-2024.pdf",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://badminton.dk/wp-content/uploads/2024/08/2024-08-14-Holdturneringsreglement-for-badminton-i-Danmark-010724-Marked.pdf"
+    ],
+    "outcome": "søgning gav kandidater; sæsonrelevans kontrolleres særskilt"
+  },
+  {
+    "query": "badminton DH senior holdturneringsreglement 2024/25 pdf",
+    "season": "2024/25",
+    "audience": "senior",
+    "region": "nationalt BD/DH",
+    "result_count": 21,
+    "candidates": [
+      "https://badminton.dk/2024/07/01/reglementsaendringer-til-2024-2025-saesonen/",
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://badminton.dk/wp-content/uploads/2024/08/2024-08-14-Holdturneringsreglement-for-badminton-i-Danmark-010724-Marked.pdf",
+      "https://badmintonkoebenhavn.dk/uploads/file/123/Turneringsreglement_for_Badminton_K%C3%B8benhavns_holdturnering_2024-2025__version_2024-2_.pdf"
+    ],
+    "outcome": "søgning gav kandidater; sæsonrelevans kontrolleres særskilt"
+  },
+  {
+    "query": "badminton DH senior holdturneringsreglement 2025/26 pdf",
+    "season": "2025/26",
+    "audience": "senior",
+    "region": "nationalt BD/DH",
+    "result_count": 16,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://melbybadmintonclub.dk/vejledninger/badmintonregler",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://badminton.dk/wp-content/uploads/2025/03/2025-03-03-Holdturneringsreglement-for-badminton-i-Danmark.pdf",
+      "https://www.badmintonkoebenhavn.dk/uploads/file/136/Turneringsreglement_for_Badminton_K%C3%B8benhavns_holdturnering_2025-2026__version_2025-1_.pdf"
+    ],
+    "outcome": "søgning gav kandidater; sæsonrelevans kontrolleres særskilt"
+  },
+  {
+    "query": "badminton veteran holdturneringsreglement 2010/11 pdf",
+    "season": "2010/11",
+    "audience": "veteran",
+    "region": "nationalt/regionale udgivere",
+    "result_count": 23,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=6803",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://www.badmintonpeople.dk/cms/?cmsid=877&pageid=29571",
+      "https://badminton.dk/wp-content/uploads/2023/11/Holdturneringsreglement-for-badminton-i-Danmark-091123.pdf"
+    ],
+    "outcome": "kandidater returneret; anvendelsessæson valideres pr. fil"
+  },
+  {
+    "query": "badminton veteran holdturneringsreglement 2011/12 pdf",
+    "season": "2011/12",
+    "audience": "veteran",
+    "region": "nationalt/regionale udgivere",
+    "result_count": 24,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badminton.dk/wp-content/uploads/2023/11/Holdturneringsreglement-for-badminton-i-Danmark-091123.pdf",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://badmintonpeople.dk/CMS/?cmsid=186&pageid=4480",
+      "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=6803"
+    ],
+    "outcome": "kandidater returneret; anvendelsessæson valideres pr. fil"
+  },
+  {
+    "query": "badminton veteran holdturneringsreglement 2012/13 pdf",
+    "season": "2012/13",
+    "audience": "veteran",
+    "region": "nationalt/regionale udgivere",
+    "result_count": 23,
+    "candidates": [
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=25615",
+      "https://badminton.dk/holdturneringsregler/",
+      "https://www.badmintonpeople.dk/cms/?cmsid=877&pageid=29571",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=6803"
+    ],
+    "outcome": "kandidater returneret; anvendelsessæson valideres pr. fil"
+  },
+  {
+    "query": "badminton veteran holdturneringsreglement 2013/14 pdf",
+    "season": "2013/14",
+    "audience": "veteran",
+    "region": "nationalt/regionale udgivere",
+    "result_count": 23,
+    "candidates": [
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=25615",
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://www.badmintonpeople.dk/cms/?cmsid=877&pageid=29571",
+      "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=6803"
+    ],
+    "outcome": "kandidater returneret; anvendelsessæson valideres pr. fil"
+  },
+  {
+    "query": "badminton veteran holdturneringsreglement 2014/15 pdf",
+    "season": "2014/15",
+    "audience": "veteran",
+    "region": "nationalt/regionale udgivere",
+    "result_count": 23,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=25615",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://www.badmintonpeople.dk/cms/?cmsid=877&pageid=29571",
+      "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=25218"
+    ],
+    "outcome": "kandidater returneret; anvendelsessæson valideres pr. fil"
+  },
+  {
+    "query": "badminton veteran holdturneringsreglement 2015/16 pdf",
+    "season": "2015/16",
+    "audience": "veteran",
+    "region": "nationalt/regionale udgivere",
+    "result_count": 21,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=6803",
+      "https://www.badmintonpeople.dk/cms/?cmsid=877&pageid=29571",
+      "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=25218"
+    ],
+    "outcome": "kandidater returneret; anvendelsessæson valideres pr. fil"
+  },
+  {
+    "query": "badminton veteran holdturneringsreglement 2016/17 pdf",
+    "season": "2016/17",
+    "audience": "veteran",
+    "region": "nationalt/regionale udgivere",
+    "result_count": 20,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=6803",
+      "https://doczz.net/doc/7220869/indbydelse-til-veteranr%C3%A6kker",
+      "https://www.badmintonpeople.dk/cms/?cmsid=877&pageid=29571"
+    ],
+    "outcome": "kandidater returneret; anvendelsessæson valideres pr. fil"
+  },
+  {
+    "query": "badminton veteran holdturneringsreglement 2017/18 pdf",
+    "season": "2017/18",
+    "audience": "veteran",
+    "region": "nationalt/regionale udgivere",
+    "result_count": 19,
+    "candidates": [
+      "https://badminton.dk/dommeruddannelse/",
+      "https://badmintonpeople.dk/cms/?cmsid=824&pageid=25824",
+      "https://badminton.dk/holdturneringsregler/",
+      "https://www.badmintonkoebenhavn.dk/uploads/file/31/Kendelse_Protest_KMB2010_1_365370_20191103_Drive_Kbh._1_-_VET_40__Elite.pdf",
+      "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=25218"
+    ],
+    "outcome": "kandidater returneret; anvendelsessæson valideres pr. fil"
+  },
+  {
+    "query": "badminton veteran holdturneringsreglement 2018/19 pdf",
+    "season": "2018/19",
+    "audience": "veteran",
+    "region": "nationalt/regionale udgivere",
+    "result_count": 19,
+    "candidates": [
+      "https://www.badmintonpeople.dk/cms/?cmsid=877&pageid=29959",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://badmintonpeople.dk/cms/?cmsid=824&pageid=25824",
+      "https://badmintonpeople.dk/cms/?cmsid=877&pageid=29086",
+      "https://www.badmintonkoebenhavn.dk/uploads/file/25/Bestyrelsens_beretninger.pdf"
+    ],
+    "outcome": "kandidater returneret; anvendelsessæson valideres pr. fil"
+  },
+  {
+    "query": "badminton veteran holdturneringsreglement 2019/20 pdf",
+    "season": "2019/20",
+    "audience": "veteran",
+    "region": "nationalt/regionale udgivere",
+    "result_count": 18,
+    "candidates": [
+      "https://badminton.dk/wp-content/uploads/2020/08/Holdturneringsreglement-for-badminton-i-Danmark-opdateret-15082020.pdf",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://badmintonpeople.dk/cms/?cmsid=824&pageid=26170",
+      "https://badminton.dk/holdturneringsregler/",
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=6803"
+    ],
+    "outcome": "kandidater returneret; anvendelsessæson valideres pr. fil"
+  },
+  {
+    "query": "badminton veteran holdturneringsreglement 2020/21 pdf",
+    "season": "2020/21",
+    "audience": "veteran",
+    "region": "nationalt/regionale udgivere",
+    "result_count": 19,
+    "candidates": [
+      "https://badminton.dk/wp-content/uploads/2020/08/Holdturneringsreglement-for-badminton-i-Danmark-opdateret-15082020.pdf",
+      "https://badminton.dk/holdturneringsregler/",
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=6803",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=25218"
+    ],
+    "outcome": "kandidater returneret; anvendelsessæson valideres pr. fil"
+  },
+  {
+    "query": "badminton veteran holdturneringsreglement 2021/22 pdf",
+    "season": "2021/22",
+    "audience": "veteran",
+    "region": "nationalt/regionale udgivere",
+    "result_count": 21,
+    "candidates": [
+      "https://badminton.dk/wp-content/uploads/2022/12/Holdturneringsreglement-for-badminton-i-Danmark-opdateret-120822.pdf",
+      "https://badmintoninordjylland.dk/wp-content/uploads/2022/06/Nordjysk-senior-holdturnering-reglement.pdf",
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=25218",
+      "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=6803"
+    ],
+    "outcome": "kandidater returneret; anvendelsessæson valideres pr. fil"
+  },
+  {
+    "query": "badminton veteran holdturneringsreglement 2022/23 pdf",
+    "season": "2022/23",
+    "audience": "veteran",
+    "region": "nationalt/regionale udgivere",
+    "result_count": 20,
+    "candidates": [
+      "https://www.badmintonkoebenhavn.dk/uploads/file/81/Turneringsreglement_for_Badminton_K%C3%B8benhavns_holdturnering_2022-2023__version_2022-1_.pdf",
+      "https://badminton.dk/wp-content/uploads/2023/11/Holdturneringsreglement-for-badminton-i-Danmark-091123.pdf",
+      "https://badminton.dk/wp-content/uploads/2023/07/Holdturneringsreglement-for-badminton-i-Danmark-030723.pdf",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://badmintoninordjylland.dk/wp-content/uploads/2022/06/Nordjysk-senior-holdturnering-reglement.pdf"
+    ],
+    "outcome": "kandidater returneret; anvendelsessæson valideres pr. fil"
+  },
+  {
+    "query": "badminton veteran holdturneringsreglement 2023/24 pdf",
+    "season": "2023/24",
+    "audience": "veteran",
+    "region": "nationalt/regionale udgivere",
+    "result_count": 20,
+    "candidates": [
+      "https://badminton.dk/2023/07/10/reglementsaendringer-til-2023-2024-saesonen/",
+      "https://www.dgi.dk/media/51208/reglement-faelles-ht-voksenraekker-2023-2024.pdf",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://badminton.dk/wp-content/uploads/2024/08/2024-08-14-Holdturneringsreglement-for-badminton-i-Danmark-010724-Marked.pdf",
+      "https://badminton.dk/wp-content/uploads/2024/09/2024-09-10-Holdturneringsreglement-for-badminton-i-Danmark.pdf"
+    ],
+    "outcome": "kandidater returneret; anvendelsessæson valideres pr. fil"
+  },
+  {
+    "query": "badminton veteran holdturneringsreglement 2024/25 pdf",
+    "season": "2024/25",
+    "audience": "veteran",
+    "region": "nationalt/regionale udgivere",
+    "result_count": 22,
+    "candidates": [
+      "https://badminton.dk/2024/07/01/reglementsaendringer-til-2024-2025-saesonen/",
+      "https://badmintoninordjylland.dk/wp-content/uploads/2023/07/Nordjysk-senior-holdturnering-reglement-2024-2025.pdf",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://badminton.dk/wp-content/uploads/2024/08/2024-08-14-Holdturneringsreglement-for-badminton-i-Danmark-010724-Marked.pdf",
+      "https://badmintonkoebenhavn.dk/uploads/file/123/Turneringsreglement_for_Badminton_K%C3%B8benhavns_holdturnering_2024-2025__version_2024-2_.pdf"
+    ],
+    "outcome": "kandidater returneret; anvendelsessæson valideres pr. fil"
+  },
+  {
+    "query": "badminton veteran holdturneringsreglement 2025/26 pdf",
+    "season": "2025/26",
+    "audience": "veteran",
+    "region": "nationalt/regionale udgivere",
+    "result_count": 18,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://bordtennisdanmark.dk/holdturnering/dt-bat60/",
+      "https://badmintoninordjylland.dk/wp-content/uploads/2025/06/Nordjysk-SH-reglement-2025-2026.pdf",
+      "https://badminton.dk/wp-content/uploads/2025/03/2025-03-03-Holdturneringsreglement-for-badminton-i-Danmark.pdf"
+    ],
+    "outcome": "kandidater returneret; anvendelsessæson valideres pr. fil"
+  },
+  {
+    "query": "\"Badminton Danmark\" badminton ungdom senior veteran holdturnering reglement indbydelse pdf",
+    "season": "2010/11-2025/26 (bred søgning; ikke sæsonfast)",
+    "audience": "ungdom/senior/veteran",
+    "region": "Badminton Danmark",
+    "result_count": 24,
+    "candidates": [
+      "https://badminton.dk/holdturneringsregler/",
+      "https://www.badmintonpeople.dk/cms/?cmsid=877&pageid=29571",
+      "https://badminton.dk/wp-content/uploads/2022/12/Holdturneringsreglement-for-badminton-i-Danmark-opdateret-120822.pdf",
+      "https://badmintonpeople.dk/cms/?cmsid=824&pageid=26170",
+      "https://badminton.dk/"
+    ],
+    "outcome": "kandidater fundet; hver fil og sæson kræver individuel kontrol"
+  },
+  {
+    "query": "\"Badminton Bornholm\" badminton ungdom senior veteran holdturnering reglement indbydelse pdf",
+    "season": "2010/11-2025/26 (bred søgning; ikke sæsonfast)",
+    "audience": "ungdom/senior/veteran",
+    "region": "Badminton Bornholm",
+    "result_count": 17,
+    "candidates": [
+      "https://badminton.dk/wp-content/uploads/2024/08/2024-08-29-Holdturneringsreglement-for-badminton-i-Danmark.pdf",
+      "https://badminton.dk/wp-content/uploads/2024/08/2024-08-29-Holdturneringsreglement-for-badminton-i-Danmark-2.pdf",
+      "https://www.clubpeople.com/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=16534",
+      "https://badminton.dk/wp-content/uploads/2024/08/2024-08-14-Holdturneringsreglement-for-badminton-i-Danmark-010724-Marked.pdf",
+      "https://minidraet.dgi.dk/forening/2500000?aktivitet=10"
+    ],
+    "outcome": "kandidater fundet; hver fil og sæson kræver individuel kontrol"
+  },
+  {
+    "query": "\"Badminton Midtjylland\" badminton ungdom senior veteran holdturnering reglement indbydelse pdf",
+    "season": "2010/11-2025/26 (bred søgning; ikke sæsonfast)",
+    "audience": "ungdom/senior/veteran",
+    "region": "Badminton Midtjylland",
+    "result_count": 15,
+    "candidates": [
+      "https://badmintoninordjylland.dk/wp-content/uploads/2023/07/Nordjysk-senior-holdturnering-reglement-2024-2025.pdf",
+      "https://badmintoninordjylland.dk/wp-content/uploads/2023/07/Nordjysk-senior-holdturnering-reglement-2023-2024.pdf",
+      "https://badmintoninordjylland.dk/wp-content/uploads/2025/06/Nordjysk-SH-reglement-2025-2026.pdf",
+      "https://badminton.dk/dommeruddannelse/",
+      "https://tst-tilst.dk/badminton/ungdom/"
+    ],
+    "outcome": "kandidater fundet; hver fil og sæson kræver individuel kontrol"
+  },
+  {
+    "query": "\"Badminton Nordjylland\" badminton ungdom senior veteran holdturnering reglement indbydelse pdf",
+    "season": "2010/11-2025/26 (bred søgning; ikke sæsonfast)",
+    "audience": "ungdom/senior/veteran",
+    "region": "Badminton Nordjylland",
+    "result_count": 17,
+    "candidates": [
+      "https://badmintonpeople.dk/cms/?cmsid=877&pageid=29571",
+      "https://badmintoninordjylland.dk/wp-content/uploads/2023/07/Reglement-Ungdomsholdturneringen-2023-2024.pdf",
+      "https://badmintoninordjylland.dk/wp-content/uploads/2023/07/Nordjysk-senior-holdturnering-reglement-2024-2025.pdf",
+      "https://badmintoninordjylland.dk/wp-content/uploads/2025/06/Nordjysk-SH-reglement-2025-2026.pdf",
+      "https://badmintoninordjylland.dk/wp-content/uploads/2023/07/Nordjysk-senior-holdturnering-reglement-2023-2024.pdf"
+    ],
+    "outcome": "kandidater fundet; hver fil og sæson kræver individuel kontrol"
+  },
+  {
+    "query": "\"Badminton Sønderjylland\" badminton ungdom senior veteran holdturnering reglement indbydelse pdf",
+    "season": "2010/11-2025/26 (bred søgning; ikke sæsonfast)",
+    "audience": "ungdom/senior/veteran",
+    "region": "Badminton Sønderjylland",
+    "result_count": 16,
+    "candidates": [
+      "https://badmintonsoenderjylland.dk/holdturneringsregler/",
+      "https://badmintoninordjylland.dk/wp-content/uploads/2023/07/Nordjysk-senior-holdturnering-reglement-2024-2025.pdf",
+      "https://badmintoninordjylland.dk/wp-content/uploads/2023/07/Nordjysk-senior-holdturnering-reglement-2023-2024.pdf",
+      "https://badmintonsoenderjylland.dk/holdturneringer/",
+      "https://sites.dgi.dk/media/51208/reglement-faelles-ht-voksenraekker-2023-2024.pdf"
+    ],
+    "outcome": "kandidater fundet; hver fil og sæson kræver individuel kontrol"
+  },
+  {
+    "query": "\"Badminton Fyn\" badminton ungdom senior veteran holdturnering reglement indbydelse pdf",
+    "season": "2010/11-2025/26 (bred søgning; ikke sæsonfast)",
+    "audience": "ungdom/senior/veteran",
+    "region": "Badminton Fyn",
+    "result_count": 20,
+    "candidates": [
+      "https://badminton.dk/wp-content/uploads/2025/07/Holdturneringsreglement-for-badminton-i-Danmark-DH-reglementet-inkl.-bilag-2025-2026.pdf",
+      "https://badmintoninordjylland.dk/wp-content/uploads/2022/08/Reglement-for-Kredsserien-Vest-og-Serie-1-Vest-2021.pdf",
+      "https://badminton.dk/wp-content/uploads/2019/10/Reglement-for-spilletilladelse-og-klubskifte.pdf",
+      "https://badmintonpeople.dk/Messages/Inbox/GetFile.aspx?id=7903",
+      "https://abcdocz.com/doc/3922725/orientering-om-f%C3%A6lles-holdturnering---mimer"
+    ],
+    "outcome": "kandidater fundet; hver fil og sæson kræver individuel kontrol"
+  },
+  {
+    "query": "\"Badminton København\" badminton ungdom senior veteran holdturnering reglement indbydelse pdf",
+    "season": "2010/11-2025/26 (bred søgning; ikke sæsonfast)",
+    "audience": "ungdom/senior/veteran",
+    "region": "Badminton København",
+    "result_count": 19,
+    "candidates": [
+      "https://www.badmintonkoebenhavn.dk/holdturnering",
+      "https://www.badmintonkoebenhavn.dk/uploads/file/123/Turneringsreglement_for_Badminton_K%C3%B8benhavns_holdturnering_2024-2025__version_2024-2_.pdf",
+      "https://badmintonkoebenhavn.dk/uploads/file/97/Turneringsreglement_for_Badminton_K%C3%B8benhavns_holdturnering_2023-2024__version_2023-1_.pdf",
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=75589",
+      "https://badmintonkoebenhavn.dk/uploads/file/123/Turneringsreglement_for_Badminton_K%C3%B8benhavns_holdturnering_2024-2025__version_2024-2_.pdf"
+    ],
+    "outcome": "kandidater fundet; hver fil og sæson kræver individuel kontrol"
+  },
+  {
+    "query": "\"Badminton Lolland-Falster\" badminton ungdom senior veteran holdturnering reglement indbydelse pdf",
+    "season": "2010/11-2025/26 (bred søgning; ikke sæsonfast)",
+    "audience": "ungdom/senior/veteran",
+    "region": "Badminton Lolland-Falster",
+    "result_count": 18,
+    "candidates": [
+      "https://badminton.dk/wp-content/uploads/2025/09/Holdturneringsreglement-for-badminton-i-Danmark-DH-reglementet-inkl.-bilag-2025-09-03-1.pdf",
+      "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=83101",
+      "https://badminton.dk/wp-content/uploads/2024/08/2024-08-14-Holdturneringsreglement-for-badminton-i-Danmark-010724-Marked.pdf",
+      "https://servertest2.badmintonpeople.dk/cms/?cmsid=877&pageid=29023",
+      "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=67465"
+    ],
+    "outcome": "kandidater fundet; hver fil og sæson kræver individuel kontrol"
+  },
+  {
+    "query": "\"Badminton Sjælland\" badminton ungdom senior veteran holdturnering reglement indbydelse pdf",
+    "season": "2010/11-2025/26 (bred søgning; ikke sæsonfast)",
+    "audience": "ungdom/senior/veteran",
+    "region": "Badminton Sjælland",
+    "result_count": 19,
+    "candidates": [
+      "https://badmintonpeople.dk/cms/?cmsid=186&pageid=4480",
+      "https://xn--badmintonsjlland-4ob.dk/turnering-mesterskaber/",
+      "https://www.dgi.dk/arrangementer/202717105000",
+      "https://badminton.dk/wp-content/uploads/2025/07/Holdturneringsreglement-for-badminton-i-Danmark-DH-reglementet-inkl.-bilag-2025-2026.pdf",
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=25218"
+    ],
+    "outcome": "kandidater fundet; hver fil og sæson kræver individuel kontrol"
+  },
+  {
+    "query": "\"DGI Bornholm\" badminton ungdom senior veteran holdturnering reglement indbydelse pdf",
+    "season": "2010/11-2025/26 (bred søgning; ikke sæsonfast)",
+    "audience": "ungdom/senior/veteran",
+    "region": "DGI Bornholm",
+    "result_count": 18,
+    "candidates": [
+      "https://sites.dgi.dk/media/23557/faelles-reglement-ungdomsholdturneringen-2018-2019.pdf",
+      "https://minidraet.dgi.dk/forening/2500000?aktivitet=10",
+      "https://www.dgi.dk/bornholm",
+      "https://foreningsportalen.dgi.dk/Report/MatchListCreatePDF.aspx?Club=2500000&Organizer=false&DateFrom=26-07-2026&DateTo=02-08-2026",
+      "https://www.clubpeople.com/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=16534"
+    ],
+    "outcome": "kandidater fundet; hver fil og sæson kræver individuel kontrol"
+  },
+  {
+    "query": "\"DGI Fyn\" badminton ungdom senior veteran holdturnering reglement indbydelse pdf",
+    "season": "2010/11-2025/26 (bred søgning; ikke sæsonfast)",
+    "audience": "ungdom/senior/veteran",
+    "region": "DGI Fyn",
+    "result_count": 18,
+    "candidates": [
+      "https://sites.dgi.dk/media/23557/faelles-reglement-ungdomsholdturneringen-2018-2019.pdf",
+      "https://minidraet.dgi.dk/forening/1600000?aktivitet=10",
+      "https://www.dgi.dk/fyn",
+      "https://foreningsportalen.dgi.dk/Report/MatchListCreatePDF.aspx?Club=1600000&Organizer=false&DateFrom=29-05-2026&DateTo=05-06-2026",
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=75911"
+    ],
+    "outcome": "kandidater fundet; hver fil og sæson kræver individuel kontrol"
+  },
+  {
+    "query": "\"DGI Midtjylland\" badminton ungdom senior veteran holdturnering reglement indbydelse pdf",
+    "season": "2010/11-2025/26 (bred søgning; ikke sæsonfast)",
+    "audience": "ungdom/senior/veteran",
+    "region": "DGI Midtjylland",
+    "result_count": 15,
+    "candidates": [
+      "https://www.dgi.dk/media/51208/reglement-faelles-ht-voksenraekker-2023-2024.pdf",
+      "https://sites.dgi.dk/media/51208/reglement-faelles-ht-voksenraekker-2023-2024.pdf",
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=100506",
+      "https://www.dgi.dk/idraet/idraetter-i-dgi/kampidraet/kurser-og-uddannelse/juniorinstruktoer",
+      "https://www.dgi.dk/idraet/idraetter-i-dgi/kampidraet/kurser-og-uddannelse/juniorinstruktoer/"
+    ],
+    "outcome": "kandidater fundet; hver fil og sæson kræver individuel kontrol"
+  },
+  {
+    "query": "\"DGI Nordjylland\" badminton ungdom senior veteran holdturnering reglement indbydelse pdf",
+    "season": "2010/11-2025/26 (bred søgning; ikke sæsonfast)",
+    "audience": "ungdom/senior/veteran",
+    "region": "DGI Nordjylland",
+    "result_count": 18,
+    "candidates": [
+      "https://sites.dgi.dk/media/23557/faelles-reglement-ungdomsholdturneringen-2018-2019.pdf",
+      "https://www.dgi.dk/idraet/idraetter-i-dgi/kampidraet/kurser-og-uddannelse/juniorinstruktoer",
+      "https://www.dgi.dk/idraet/idraetter-i-dgi/kampidraet/kurser-og-uddannelse/juniorinstruktoer/",
+      "https://badminton.dk/wp-content/uploads/2025/07/Holdturneringsreglement-for-badminton-i-Danmark-DH-reglementet-inkl.-bilag-2025-06-30.pdf",
+      "https://badmintoninordjylland.dk/wp-content/uploads/2021/07/Vedtaegter-Badminton-Nordjylland.pdf"
+    ],
+    "outcome": "kandidater fundet; hver fil og sæson kræver individuel kontrol"
+  },
+  {
+    "query": "\"DGI Nordsjælland\" badminton ungdom senior veteran holdturnering reglement indbydelse pdf",
+    "season": "2010/11-2025/26 (bred søgning; ikke sæsonfast)",
+    "audience": "ungdom/senior/veteran",
+    "region": "DGI Nordsjælland",
+    "result_count": 17,
+    "candidates": [
+      "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=97855",
+      "https://badmintonpeople.dk/cms/?cmsid=186&pageid=4480",
+      "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=97856",
+      "https://sites.dgi.dk/media/23557/faelles-reglement-ungdomsholdturneringen-2018-2019.pdf",
+      "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=67465"
+    ],
+    "outcome": "kandidater fundet; hver fil og sæson kræver individuel kontrol"
+  },
+  {
+    "query": "\"DGI Nordvest\" badminton ungdom senior veteran holdturnering reglement indbydelse pdf",
+    "season": "2010/11-2025/26 (bred søgning; ikke sæsonfast)",
+    "audience": "ungdom/senior/veteran",
+    "region": "DGI Nordvest",
+    "result_count": 18,
+    "candidates": [
+      "https://minidraet.dgi.dk/forening/0233100/hold/55184",
+      "https://minidraet.dgi.dk/forening/0230600/hold/55190",
+      "https://foreningsportalen.dgi.dk/Report/MatchListCreateXL.aspx?Team=55190",
+      "https://www.okif.dk/upl/9895/OKNYT2004december.pdf",
+      "https://minidraet.dgi.dk/forening/0230300/hold/55185"
+    ],
+    "outcome": "kandidater fundet; hver fil og sæson kræver individuel kontrol"
+  },
+  {
+    "query": "\"DGI SdU\" badminton ungdom senior veteran holdturnering reglement indbydelse pdf",
+    "season": "2010/11-2025/26 (bred søgning; ikke sæsonfast)",
+    "audience": "ungdom/senior/veteran",
+    "region": "DGI SdU",
+    "result_count": 18,
+    "candidates": [
+      "https://www.dgi.dk/idraet/idraetter-i-dgi/kampidraet/kurser-og-uddannelse/juniorinstruktoer",
+      "https://www.dgi.dk/idraet/idraetter-i-dgi/kampidraet/kurser-og-uddannelse/juniorinstruktoer/",
+      "https://www.dgi.dk/om-dgi/kontakt/sdu",
+      "https://www.dgi.dk/dgi-lokalt/sdu/",
+      "https://sdu.de/wp-content/uploads/2019/12/Indbydelse-DGIs-Landsmesterskaber-2020.pdf"
+    ],
+    "outcome": "kandidater fundet; hver fil og sæson kræver individuel kontrol"
+  },
+  {
+    "query": "\"DGI Storkøbenhavn\" badminton ungdom senior veteran holdturnering reglement indbydelse pdf",
+    "season": "2010/11-2025/26 (bred søgning; ikke sæsonfast)",
+    "audience": "ungdom/senior/veteran",
+    "region": "DGI Storkøbenhavn",
+    "result_count": 18,
+    "candidates": [
+      "https://skydningkbhdgi.dk/",
+      "https://www.dgi.dk/artikel/nye-sikkerhedsregler-paa-vej-for-skytteforeninger",
+      "https://minidraet.dgi.dk/spillested/2100000",
+      "https://stap.dgi.dk/Report/StadiumMatchListCreatePDF.aspx?",
+      "https://www.dgi.dk/storkoebenhavn"
+    ],
+    "outcome": "kandidater fundet; hver fil og sæson kræver individuel kontrol"
+  },
+  {
+    "query": "\"DGI Storstrømmen\" badminton ungdom senior veteran holdturnering reglement indbydelse pdf",
+    "season": "2010/11-2025/26 (bred søgning; ikke sæsonfast)",
+    "audience": "ungdom/senior/veteran",
+    "region": "DGI Storstrømmen",
+    "result_count": 17,
+    "candidates": [
+      "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=97855",
+      "https://sites.dgi.dk/media/23557/faelles-reglement-ungdomsholdturneringen-2018-2019.pdf",
+      "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=97856",
+      "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=67465",
+      "https://maalov.dk/Voksen/MSU_reglement_version_4.0.pdf"
+    ],
+    "outcome": "kandidater fundet; hver fil og sæson kræver individuel kontrol"
+  },
+  {
+    "query": "\"DGI Sydvest\" badminton ungdom senior veteran holdturnering reglement indbydelse pdf",
+    "season": "2010/11-2025/26 (bred søgning; ikke sæsonfast)",
+    "audience": "ungdom/senior/veteran",
+    "region": "DGI Sydvest",
+    "result_count": 15,
+    "candidates": [
+      "https://sites.dgi.dk/media/51208/reglement-faelles-ht-voksenraekker-2023-2024.pdf",
+      "https://www.dgi.dk/media/51208/reglement-faelles-ht-voksenraekker-2023-2024.pdf",
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=100506",
+      "https://dds-sydvest.dk/sydvest-skydning/indbydelser/",
+      "https://dds-sydvest.dk/soenderjylland-skydning/indbydelser/"
+    ],
+    "outcome": "kandidater fundet; hver fil og sæson kræver individuel kontrol"
+  },
+  {
+    "query": "\"DGI Sydøstjylland\" badminton ungdom senior veteran holdturnering reglement indbydelse pdf",
+    "season": "2010/11-2025/26 (bred søgning; ikke sæsonfast)",
+    "audience": "ungdom/senior/veteran",
+    "region": "DGI Sydøstjylland",
+    "result_count": 15,
+    "candidates": [
+      "https://sites.dgi.dk/media/51208/reglement-faelles-ht-voksenraekker-2023-2024.pdf",
+      "https://www.dgi.dk/media/51208/reglement-faelles-ht-voksenraekker-2023-2024.pdf",
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=100506",
+      "https://www.dgi.dk/idraet/idraetter-i-dgi/kampidraet/kurser-og-uddannelse/juniorinstruktoer",
+      "https://www.skydning-sydoestjylland.dk/Landsdelsturnering"
+    ],
+    "outcome": "kandidater fundet; hver fil og sæson kræver individuel kontrol"
+  },
+  {
+    "query": "\"DGI Sønderjylland\" badminton ungdom senior veteran holdturnering reglement indbydelse pdf",
+    "season": "2010/11-2025/26 (bred søgning; ikke sæsonfast)",
+    "audience": "ungdom/senior/veteran",
+    "region": "DGI Sønderjylland",
+    "result_count": 16,
+    "candidates": [
+      "https://www.dgi.dk/media/51208/reglement-faelles-ht-voksenraekker-2023-2024.pdf",
+      "https://sites.dgi.dk/media/51208/reglement-faelles-ht-voksenraekker-2023-2024.pdf",
+      "https://badmintoninordjylland.dk/wp-content/uploads/2025/06/Nordjysk-SH-reglement-2025-2026.pdf",
+      "https://sites.dgi.dk/media/23557/faelles-reglement-ungdomsholdturneringen-2018-2019.pdf",
+      "https://dds-sydvest.dk/soenderjylland-skydning/indbydelser/"
+    ],
+    "outcome": "kandidater fundet; hver fil og sæson kræver individuel kontrol"
+  },
+  {
+    "query": "\"DGI Vestjylland\" badminton ungdom senior veteran holdturnering reglement indbydelse pdf",
+    "season": "2010/11-2025/26 (bred søgning; ikke sæsonfast)",
+    "audience": "ungdom/senior/veteran",
+    "region": "DGI Vestjylland",
+    "result_count": 15,
+    "candidates": [
+      "https://www.dgi.dk/media/51208/reglement-faelles-ht-voksenraekker-2023-2024.pdf",
+      "https://sites.dgi.dk/media/51208/reglement-faelles-ht-voksenraekker-2023-2024.pdf",
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=100506",
+      "https://www.dgi.dk/idraet/idraetter-i-dgi/kampidraet/kurser-og-uddannelse/juniorinstruktoer",
+      "https://www.dgi.dk/idraet/idraetter-i-dgi/kampidraet/kurser-og-uddannelse/juniorinstruktoer/"
+    ],
+    "outcome": "kandidater fundet; hver fil og sæson kræver individuel kontrol"
+  },
+  {
+    "query": "\"DGI Midt- og Vestsjælland\" badminton ungdom senior veteran holdturnering reglement indbydelse pdf",
+    "season": "2010/11-2025/26 (bred søgning; ikke sæsonfast)",
+    "audience": "ungdom/senior/veteran",
+    "region": "DGI Midt- og Vestsjælland",
+    "result_count": 16,
+    "candidates": [
+      "https://badmintonpeople.dk/cms/?cmsid=186&pageid=4480",
+      "https://sites.dgi.dk/media/23557/faelles-reglement-ungdomsholdturneringen-2018-2019.pdf",
+      "https://www.dgi.dk/idraet/idraetter-i-dgi/kampidraet/kurser-og-uddannelse/juniorinstruktoer",
+      "https://www.dgi.dk/idraet/idraetter-i-dgi/kampidraet/kurser-og-uddannelse/juniorinstruktoer/",
+      "https://www.badmintonpeople.dk/cms/?cmsid=877&pageid=29959"
+    ],
+    "outcome": "kandidater fundet; hver fil og sæson kræver individuel kontrol"
+  },
+  {
+    "query": "\"DGI Østjylland\" badminton ungdom senior veteran holdturnering reglement indbydelse pdf",
+    "season": "2010/11-2025/26 (bred søgning; ikke sæsonfast)",
+    "audience": "ungdom/senior/veteran",
+    "region": "DGI Østjylland",
+    "result_count": 15,
+    "candidates": [
+      "https://www.dgi.dk/media/51208/reglement-faelles-ht-voksenraekker-2023-2024.pdf",
+      "https://sites.dgi.dk/media/51208/reglement-faelles-ht-voksenraekker-2023-2024.pdf",
+      "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=100506",
+      "https://www.dgi.dk/idraet/idraetter-i-dgi/kampidraet/kurser-og-uddannelse/juniorinstruktoer/",
+      "https://www.dgi.dk/idraet/idraetter-i-dgi/kampidraet/kurser-og-uddannelse/juniorinstruktoer"
+    ],
+    "outcome": "kandidater fundet; hver fil og sæson kræver individuel kontrol"
+  }
+],
+  "round3_search_summary": {
+    "search_query_count": 100,
+    "season_audience_queries": 48,
+    "region_queries": 24,
+    "preliminary_queries_in_four-query_batches": 28,
+    "result_count_basis": "For single-query calls: number of unique result citation references returned by WebSearch. For preliminary batched calls the query-specific count was not exposed; result_count is null and this limitation is recorded.",
+    "scope_limit": "De 48 sæson/målgruppe-søgninger dækker nationalt/fritekst; de 24 områdesøgninger dækker alle 24 DB-labels, men er ikke seks varianter pr. sæson, område og målgruppe. Derfor er fravær af en kilde ikke bevis for at den ikke findes, og ikke tilstrækkeligt til at mærke den præcise matrixcelle som manglende."
+  },
+  "round3_public_download_checks": [
+    {"url":"https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=58918","status":200,"content_type":"PDF signature %PDF-","bytes":450680,"sha256":"40e102231109c4040899d1b5512a80f09337ebffb3281eba8a4009d4735ac4de","local_manual_sha256_matches":true},
+    {"url":"https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=77461","status":200,"content_type":"PDF signature %PDF-","bytes":257259,"sha256":"785d14908a99843dd4cee694b33b5e4993424835f203c1148e2abd9de607ada4","local_manual_sha256_matches":true},
+    {"url":"https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=75911","status":200,"content_type":"PNG signature ?PNG, 2916 bytes","sha256":"eb0a5f4f8a9e39ae01c0cc555457e263021aa5e8209f6aa80bdbb2fdfb5a98e","usable_pdf":false},
+    {"url":"https://sites.dgi.dk/media/34207/indbydelse-ungdomsholdturnering-jylland-2020-21-2.pdf","status":502,"usable_pdf":false}
   ]
 }

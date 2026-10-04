@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-10-04",
-  "method": "Manuelt kuraterede offentlige kildelinks; direkte HTTP GET uden login/cookies; 700 ms pause mellem dokumenter.",
+  "method": "Offentlige direkte links fundet via Badminton Danmarks medieindeks, WebSearch/fritekstsøgning og regional-/DGI-sider; anonym HTTP GET uden login/cookies; 700 ms pause mellem downloads. Manuel filoverdragelse registreres særskilt og matches mod offentlig kilde når muligt.",
   "sources": [
     {
       "id": "bd-youth-2026-27",
@@ -488,6 +488,69 @@
       "acquisition_method": "Manuel filoverdragelse",
       "original_share_link_status": 401,
       "original_share_link_mapping": "not established among the three supplied share URLs"
+    },
+    {
+      "id": "bd-dgi-youth-2016-17-manual",
+      "title": "Reglement for den pointgivende ungdomsholdturnering 2016/2017",
+      "source_url": "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=58918",
+      "final_url": "https://badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=58918",
+      "retrieved_at": "2026-10-04",
+      "sha256": "40e102231109c4040899d1b5512a80f09337ebffb3281eba8a4009d4735ac4de",
+      "bytes": 450680,
+      "page_count": 10,
+      "file": "manuelt/BD-DGI_ungdomsreglement_2016-17.pdf",
+      "season": "2016/17",
+      "area": "Badminton Danmark + DGI Badminton",
+      "type": "ungdom",
+      "public_access": true,
+      "acquisition_method": "Manuelt leveret af Christoffer; anonym HTTP 200-kopi fra publiceret BadmintonPeople-URL matchede SHA-256 byte-for-byte"
+    },
+    {
+      "id": "nordjylland-senior-2018-19-manual",
+      "title": "Turneringsreglement for seniorhold i Nordjylland, serie 2-4, 4 spillere single og 4 spillere double",
+      "source_url": "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=77461",
+      "final_url": "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=77461",
+      "retrieved_at": "2026-10-04",
+      "sha256": "785d14908a99843dd4cee694b33b5e4993424835f203c1148e2abd9de607ada4",
+      "bytes": 257259,
+      "page_count": 6,
+      "file": "manuelt/Nordjylland_seniorhold_serie2-4_2018-19.pdf",
+      "season": "2018/19",
+      "area": "Badminton Nordjylland",
+      "type": "senior",
+      "public_access": true,
+      "acquisition_method": "Manuelt leveret af Christoffer; anonym HTTP 200-kopi fra publiceret BadmintonPeople-URL matchede SHA-256 byte-for-byte"
+    },
+    {
+      "id": "sj-youth-invitation-2013-14",
+      "title": "Holdturneringen 2013/2014 - Ungdom (invitation)",
+      "source_url": "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=25614",
+      "final_url": "https://www.badmintonpeople.dk/Clubs/CommonDrive/Components/GetWWWFile.aspx?fileID=25614",
+      "retrieved_at": "2026-10-04",
+      "sha256": "1dfd2e7759eff5ed65f55cb9bf8bba12d527d1b86fa88947f12fa69de303a4bd",
+      "bytes": 96101,
+      "page_count": 4,
+      "file": "2013/badminton-sjaelland/youth-invitation-2013-14.pdf",
+      "season": "2013/14",
+      "area": "Badminton Sjælland (tidl. SBKr.)",
+      "type": "ungdom-invitation",
+      "public_access": true,
+      "document_scope_note": "Invitationen henviser til SBKr.-reglementet; den er ikke selve reglementet"
+    },
+    {
+      "id": "bd-dgi-youth-2020-21",
+      "title": "Reglement for ungdomsholdturnering 2020/2021",
+      "source_url": "https://badminton.dk/wp-content/uploads/2020/07/F%C3%A6lles-reglement-for-ungdomsholdturneringen-2020-2021-02072020-1.pdf",
+      "final_url": "https://badminton.dk/wp-content/uploads/2020/07/F%C3%A6lles-reglement-for-ungdomsholdturneringen-2020-2021-02072020-1.pdf",
+      "retrieved_at": "2026-10-04",
+      "sha256": "c320a6ac2077e6d938361aa8fc2949473a4d61e19819344c12b0df9ff2d14e72",
+      "bytes": 216470,
+      "page_count": 9,
+      "file": "2020/badminton-danmark-dgi-badminton/bd-youth-2020-21.pdf",
+      "season": "2020/21",
+      "area": "Badminton Danmark + DGI Badminton",
+      "type": "ungdom",
+      "public_access": true
     }
   ],
   "failed_candidates": [
@@ -506,6 +569,14 @@
       "area": "Badminton Danmark",
       "type": "senior",
       "status": "Badminton Danmarks medieindeks viser PDF-tekst; direkte anonym HTTP GET gav 404, ikke arkiveret"
+    },
+    {
+      "source_url": "https://sites.dgi.dk/media/34207/indbydelse-ungdomsholdturnering-jylland-2020-21-2.pdf",
+      "title": "Ungdomsholdturnering Jylland 2020/21 (DGI invitation)",
+      "season_or_date": "2020/21",
+      "area": "DGI Jylland; den præcise landsdel fremgår ikke af den eksponerede invitationstekst",
+      "type": "ungdom-invitation",
+      "status": "Direkte anonym GET gav HTTP 502; ikke arkiveret. WebSearch-indekset viste PDF-tekst, men det er ikke en lokalt valideret fil."
     }
   ]
 }

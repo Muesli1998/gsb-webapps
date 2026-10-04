@@ -33,3 +33,14 @@ Der er ingen dokumenteret regel i dette arkiv for hver manglende sæson/region. 
 ## Datamaskinel version
 
 Samme poster med sæson, område, kilde-id og sidetal ligger i [undtagelser.json](undtagelser.json).
+
+### Runde 3 — historiske tilføjelser
+
+| Sæson/område | Emne | Dokumenteret forhold | Kilde |
+|---|---|---|---|
+| 2016/17, fælles BD/DGI | Ungdomsskala | Rå historiske klassifikationspoint er transskriberet; de er ikke omregnet til senere niveaupoint. | bd-dgi-youth-2016-17-manual s. 5 |
+| 2020/21, fælles BD/DGI | Ungdom | Reglement fundet; skemaets tal mangler endnu i den maskinlæsbare transskription. | bd-dgi-youth-2020-21 s. 3-5 |
+| 2013/14, Badminton Sjælland (tidl. SBKr.) | Ungdom | Invitationen henviser til særskilte SBKr.-regler; den er ikke selv regelsættet. | sj-youth-invitation-2013-14 s. 1-4 |
+| 2018/19, Badminton Nordjylland | Senior | Serie 2-4; 4 spillere single og 4 spillere double. | nordjylland-senior-2018-19-manual s. 1-6 |
+
+Registeret har 38 PDF'er efter denne runde; dette er fortsat punktvis kildedækning, ikke en komplet historisk regelsamling.

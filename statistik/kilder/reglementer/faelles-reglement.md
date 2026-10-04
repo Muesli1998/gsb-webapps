@@ -36,9 +36,24 @@ I 2026/27 står U13 4 spillere A/B/C/C-D/D/Dx som **6400/5600/5100/4800/4600/440
 
 Der udledes ikke en fælles veteranregel af disse regionale dokumenter. For hver sæson/region uden kilde er reglerne ukendte, ikke videreført fra naboår.
 
+## Runde 3 — bredere fritekstsøgning og historiske kilder
+
+WebSearch blev kørt 100 gange: 48 nationale sæson/målgruppe-søgninger, 24 brede søgninger på hver regionlabel fra databasen og 28 eksplorative forespørgsler i batches. Resultater og kandidater står i `statistik/results/130-source-discovery.json`. Dette er bredere end de tidligere site-afgrænsede søgninger, men ikke seks varianter for hver sæson×region×målgruppe; manglende registerpost må derfor ikke læses som bevis på, at et regelsæt ikke findes.
+
+| Kilde/fund | Hvad den tilføjer | Kilde |
+|---|---|---|
+| Fælles BD/DGI ungdom 2016/17 | Skemaet på s. 5 indeholder historiske klassifikationspoint for 4 spillere, 4 piger og 4+2. Tallene er afskrevet til `regler-ungdom.json` i kildens enhed; rækkeniveaupoint fra senere skemaer er ikke udledt. | bd-dgi-youth-2016-17-manual, PDF s. 5 |
+| Fælles BD/DGI ungdom 2020/21 | Et offentligt nationalt reglement er nu arkiveret. Pointskalaen er endnu ikke indlæst i JSON. | bd-dgi-youth-2020-21, PDF s. 3-5 |
+| Sjælland ungdomsinvitation 2013/14 | Invitationen siger, at turneringen spilles efter SBKr.-regler; selve regelsættet er ikke denne PDF og er fortsat uidentificeret. | sj-youth-invitation-2013-14, PDF s. 1-4 |
+| Nordjylland senior 2018/19 | Regionalt reglement for Serie 2-4 med 4-spiller single og double. Dokumentet blev leveret manuelt, men identisk offentlig BadmintonPeople-fil blev verificeret med SHA-256. | nordjylland-senior-2018-19-manual, PDF s. 1-6 |
+
+Runden tilføjer det nationale ungdomsreglement for 2016/17 og 2020/21, Sjællands ungdomsinvitation 2013/14 og Nordjylland seniorreglement 2018/19. En DGI Jylland ungdomsinvitation for 2020/21 gav HTTP 502; Badminton Fyns senior/veteran-link gav HTTP 200 men PNG-fejlbillede, ikke PDF. Se `mangler.md`.
+
+For U13 i 2016/17 viser skemaet 4 spillere: Dx 29/8/8, D 35/11/8, C 48/15/11, B 60/18/15, A 72/21/18 og M 85/24/21 (holdmaksimum/bedste/næstbedste); 4 piger C 35/11/8 og D 23/8/5; 4+2 B 78/18/14, A 96/21/17 og M 114/24/21 (holdmaksimum/bedste dreng/bedste pige). Tallene er gengivet i kildens historiske klassifikationspoint. Ingen numerisk 4+3-grænse fremgår af skemaet. Kilde: bd-dgi-youth-2016-17-manual, s. 5.
+
 ## Uafklaret kildegrundlag
 
-- Ingen fuld, sammenhængende officiel samling fra 2010 til i dag blev fundet. Registeret indeholder nu 34 PDF'er fra enkelte år/versioner, i alt 12.032.569 bytes; det omfatter tre manuelt leverede DGI-bilag. Se [mangler.md](mangler.md) for huller og ikke-hentede kandidater.
+- Ingen fuld, sammenhængende officiel samling fra 2010 til i dag blev fundet. Registeret indeholder nu 38 PDF'er fra enkelte år/versioner, i alt 13.053.079 bytes og 363 sider; det omfatter de tre manuelt leverede DGI-bilag samt de to nye manuelt leverede historiske dokumenter. Se [mangler.md](mangler.md) for huller og ikke-hentede kandidater.
 - 2025/26 ungdom findes i flere revisioner. 8. oktober-versionen er seneste hentede revision i dette arkiv; marts 2025 er en revision af 2024/25-reglementet. Versionerne beholdes hver for sig.
 - UGE 38 og de to DGI/Badminton Sjælland-bilag for 2026/27 er nu registreret fra Christoffers lokale filoverdragelse. De tre oprindelige SharePoint-links gav HTTP 401 anonymt; bilagene er læst og er selvstændige kilder. UGE 38 er en separat ekstraordinær 2+2-turnering for U13-U19 i uge 38, ikke en almindelig regional række. Vinderen af hver række får tilbudt DMU-plads; ved flere puljer mødes puljevinderne i finale (Uge 38 invitation s. 1). Den regionale invitation angiver holdtyper, runder, 3×15-systemet fra 1. juli 2026 og DMU Hold 24.-25. april 2027 (s. 1-2). Holdlederfolderen er vejledende og henviser til fællesreglementet; den omtaler bl.a. §14-15 og 3×15 (s. 2).
 
