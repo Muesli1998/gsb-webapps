@@ -1,0 +1,929 @@
+{
+  "generated_at": "2026-10-04",
+  "method": "Unauthenticated metadata query; no page scraping, cookies, login, or robot restrictions bypassed. Candidates require manual validation and do not constitute completeness.",
+  "official_wordpress_media_searches": [
+    {
+      "term": "reglement",
+      "status": 200,
+      "reported_total": 135,
+      "reported_pages": 2,
+      "candidates": [
+        {
+          "date": "2026-09-17T13:16:12",
+          "title": "Reglement for spilletilladelse og klubskifte 2026-2027",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/09/Reglement-for-spilletilladelse-og-klubskifte-2026-09-16.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-09-14T11:27:36",
+          "title": "Reglement DM SEN 2026-2027",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/09/Reglement-DM-SEN-2026-2027.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-09-14T10:38:04",
+          "title": "Reglement for Individuelle Turneringer",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/09/Reglement-for-Individuelle-Turneringer.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-09-10T11:38:27",
+          "title": "Reglement for Rangliste 2026-09-10",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/09/Reglement-for-Rangliste-2026-09-10.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-08-31T10:46:29",
+          "title": "Reglement for DM Circuit 2026-08-13",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/08/Reglement-for-DM-Circuit-2026-08-13.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-08-31T10:46:06",
+          "title": "Reglement DM SEN 2026-08-12",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/08/Reglement-DM-SEN-2026-08-12.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-08-17T16:35:41",
+          "title": "Reglement for DM Circuit 2026-2027",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/08/Reglement-for-DM-Circuit-2026-2027.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-08-17T16:35:08",
+          "title": "Reglement DM SEN 2026-2027",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/08/Reglement-DM-SEN-2026-2027.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-02T10:41:55",
+          "title": "Reglement for Rangliste 2026-06-29",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Reglement-for-Rangliste-2026-06-29-1.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T20:03:42",
+          "title": "Bilag 3 til DH-reglementet 2026-06-30",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Bilag-3-til-DH-reglementet-2026-06-30.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T20:03:00",
+          "title": "Holdturneringsreglement for badminton i Danmark (DH-reglementet) 2026-07-01 &#8211; endeligt med bilag 3",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Holdturneringsreglement-for-badminton-i-Danmark-DH-reglementet-2026-07-01-endeligt-med-bilag-3-1.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T20:01:55",
+          "title": "Reglement for overdragelse af en klubs spilletilladelse 2026-06-24 &#8211; godkendt",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Reglement-for-overdragelse-af-en-klubs-spilletilladelse-2026-06-24-godkendt.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T20:01:30",
+          "title": "Reglement for spilletilladelse og klubskifte 2026-06-24 &#8211; godkendt",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Reglement-for-spilletilladelse-og-klubskifte-2026-06-24-godkendt.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T19:58:37",
+          "title": "Tillæg om holdfællesskaber til Reglement for holdmesterskabet for Danmark i badminton 2026-06-24 &#8211; godkendt",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Tillaeg-om-holdfaellesskaber-til-Reglement-for-holdmesterskabet-for-Danmark-i-badminton-2026-06-24-godkendt.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T19:57:13",
+          "title": "&#8211; Reglement for Individuelle Turneringer",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Reglement-for-Individuelle-Turneringer.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T19:52:00",
+          "title": "Fælles reglement for ungdomsholdturneringen endeligt 300626",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Faelles-reglement-for-ungdomsholdturneringen-endeligt-300626-1.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T19:49:57",
+          "title": "Reglement-om-karantaene-suspension-eller-eksklusion-af-klubber-eller-klubmedlemmerm-Lovudvalget",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Reglement-om-karantaene-suspension-eller-eksklusion-af-klubber-eller-klubmedlemmerm-Lovudvalget.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T19:48:35",
+          "title": "Tillaeg-A-til-Reglement-for-Medlemskab-af-Badminton-Danmark-Medlemsreglementet-paragraf-3-stk.",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Tillaeg-A-til-Reglement-for-Medlemskab-af-Badminton-Danmark-Medlemsreglementet-paragraf-3-stk.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T19:45:57",
+          "title": "Amatoerreglement-for-Badminton-Danmark",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Amatoerreglement-for-Badminton-Danmark.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T19:43:29",
+          "title": "Reklamereglement for Badminton Danmark 2025-06-04",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Reklamereglement-for-Badminton-Danmark-2025-06-04.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T19:41:16",
+          "title": "Reglement DMU HOLD (tillæg) 2026-07-01",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Reglement-DMU-HOLD-tillaeg-2026-07-01.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T19:40:40",
+          "title": "Reglement DM HOLD HYGGEFJER 2026-06-16",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Reglement-DM-HOLD-HYGGEFJER-2026-06-16.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T19:38:58",
+          "title": "Reglement for fælles individuelle danske mesterskaber for spillere over 35 år",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Reglement-for-faelles-individuelle-danske-mesterskaber-for-spillere-over-35-aar.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T19:38:30",
+          "title": "Reglement for DM Circuit 2026-06-16",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Reglement-for-DM-Circuit-2026-06-16.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T19:38:06",
+          "title": "Reglement DM SEN 2026-06-16",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Reglement-DM-SEN-2026-06-16.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T19:33:22",
+          "title": "Reglement-for-Badminton-Danmarks-Dommerudvalg",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Reglement-for-Badminton-Danmarks-Dommerudvalg.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T19:32:26",
+          "title": "Reglement for Medlemskab af Badminton Danmark (Medlemsreglementet) &#8211;",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Reglement-for-Medlemskab-af-Badminton-Danmark-Medlemsreglementet-.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T19:07:00",
+          "title": "Reglement for DMU 2026-06-16",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Reglement-for-DMU-2026-06-16.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T19:06:05",
+          "title": "Reglement for UDM 2026-06-16",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Reglement-for-UDM-2026-06-16.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T18:57:39",
+          "title": "Reglement for LBS 2026-06-16",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Reglement-for-LBS-2026-06-16.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T18:52:41",
+          "title": "Reglement for LMU 2026-06-16",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Reglement-for-LMU-2026-06-16.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T13:25:24",
+          "title": "Fælles reglement for ungdomsholdturneringen endeligt 300626",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Faelles-reglement-for-ungdomsholdturneringen-endeligt-300626.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T13:17:15",
+          "title": "Holdturneringsreglement for badminton i Danmark (DH-reglementet) 2026-07-01 &#8211; endeligt med bilag 3",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Holdturneringsreglement-for-badminton-i-Danmark-DH-reglementet-2026-07-01-endeligt-med-bilag-3.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-06-30T14:48:45",
+          "title": "Tillæg om holdfællesskaber til Reglement for holdmesterskabet for Danmark i badminton 2026-06-24 &#8211; godkendt",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/06/Tillaeg-om-holdfaellesskaber-til-Reglement-for-holdmesterskabet-for-Danmark-i-badminton-2026-06-24-godkendt.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-06-30T14:48:44",
+          "title": "Fælles reglement for ungdomsholdturneringen endeligt 300626",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/06/Faelles-reglement-for-ungdomsholdturneringen-endeligt-300626.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-06-30T14:48:44",
+          "title": "Reglement for spilletilladelse og klubskifte 2026-06-24 &#8211; godkendt",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/06/Reglement-for-spilletilladelse-og-klubskifte-2026-06-24-godkendt.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-06-30T14:48:44",
+          "title": "Reglement for overdragelse af en klubs spilletilladelse 2026-06-24 &#8211; godkendt",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/06/Reglement-for-overdragelse-af-en-klubs-spilletilladelse-2026-06-24-godkendt.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-06-30T14:48:44",
+          "title": "Holdturneringsreglement for badminton i Danmark (DH-reglementet) 2026-06-24 &#8211; godkendt",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/06/Holdturneringsreglement-for-badminton-i-Danmark-DH-reglementet-2026-06-24-godkendt.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-02-25T11:09:16",
+          "title": "Holdturneringsreglement for badminton i Danmark (DH-reglementet)",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/02/Holdturneringsreglement-for-badminton-i-Danmark-DH-reglementet-2026-02-25.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-02-24T19:31:56",
+          "title": "Reglement for UDM 2026",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/02/Reglement-for-UDM-2026-02-20.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-02-23T13:26:30",
+          "title": "Reglement for UDM 2026",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/02/Reglement-for-UDM-2026-1.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-02-04T09:55:45",
+          "title": "Reglement for UDM 2026",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/02/Reglement-for-UDM-2026.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-01-22T15:47:00",
+          "title": "Reglement for DM for seniorer",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/01/Reglement-DM-SEN-2025-07-01.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-12-14T23:53:38",
+          "title": "Reglement for rangliste 2025-2026",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/12/Reglement-for-Rangliste-2025-12-12.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-11-19T12:21:56",
+          "title": "Reglement for UDM 2025-06-03",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/11/Reglement-for-UDM-2025-06-03.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-11-06T11:59:10",
+          "title": "Dispensationer i Badmintonligaen og 1. division (§ 32 i DH-reglementet)",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/11/Dispensationer-for-deltagelse-i-DH-turneringen-061125.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-11-03T12:44:56",
+          "title": "Reglement for Rangliste 2025-11-03",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/11/Reglement-for-Rangliste-2025-11-03.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-11-03T09:04:59",
+          "title": "Reglement for DM for seniorer 2025",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/11/Reglement-DM-SEN-2025-07-01.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-10-23T10:15:22",
+          "title": "Reglement for DMU 2025",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/10/Reglement-for-DMU-2025-05-24.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-10-23T10:13:45",
+          "title": "Reglement for DM for seniorer 2025",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/10/Reglement-DM-SEN-2025-06-02.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-10-23T10:01:58",
+          "title": "Reglement for Individuelle Turneringer",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/10/Reglement-for-Individuelle-Turneringer.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-10-09T13:32:28",
+          "title": "Fælles reglement for ungdomsholdturneringen 2025-10-08",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/10/Faelles-reglement-for-ungdomsholdturneringen-2025-10-08.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-10-04T00:00:08",
+          "title": "Fælles reglement for ungdomsholdturneringen 2025-10-03",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/10/Faelles-reglement-for-ungdomsholdturneringen-2025-10-03.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-09-30T14:04:10",
+          "title": "Reglement-for-Badminton-Danmarks-Dommerudvalg-280123",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/09/Reglement-for-Badminton-Danmarks-Dommerudvalg-280123-1.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-09-30T13:43:03",
+          "title": "Reglement-for-Badminton-Danmarks-Dommerudvalg-280123",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/09/Reglement-for-Badminton-Danmarks-Dommerudvalg-280123.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-09-19T10:22:13",
+          "title": "Reglement for Rangliste 2025-09-19",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/09/Reglement-for-Rangliste-2025-09-19.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-09-18T13:36:42",
+          "title": "Reglement for DM Circuit 2025-2026",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/09/Reglement-for-DM-Circuit-2025-09-17-1.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-09-18T11:52:42",
+          "title": "Reglement for DM Circuit 2025",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/09/Reglement-for-DM-Circuit-2025-09-17-2-1.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-09-18T11:52:27",
+          "title": "Reglement for DM Circuit 2025-09-17 (2)",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/09/Reglement-for-DM-Circuit-2025-09-17-2.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-09-17T13:49:34",
+          "title": "Reglement for DM Circuit",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/09/Reglement-for-DM-Circuit-2025-09-17.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-09-17T13:46:39",
+          "title": "Reglement for Individuelle Turneringer",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/09/Reglement-for-Individuelle-Turneringer-1.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-09-15T11:39:54",
+          "title": "Reglement for Individuelle Turneringer",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/09/Reglement-for-Individuelle-Turneringer.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-09-09T15:18:06",
+          "title": "Fælles reglement for ungdomsholdturneringen 2025-06-30",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/09/Faelles-reglement-for-ungdomsholdturneringen-2025-06-30.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-08-21T20:38:03",
+          "title": "Reglement for rangliste 2025-2026",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/08/Reglement-for-rangliste-2025-2026.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-08-16T17:44:56",
+          "title": "Reglement for DMU HOLD (tillæg) 2025-2026",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/08/Reglement-DMU-HOLD-tillaeg-2025-05-30.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-08-14T09:30:30",
+          "title": "&#8211; Reglement for Individuelle Turneringer",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/08/Reglement-for-Individuelle-Turneringer-1.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-08-14T09:29:14",
+          "title": "Reglement for GP Circuit 2025-05-24",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/08/Reglement-for-GP-Circuit-2025-05-24.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-08-11T10:44:31",
+          "title": "Reglement for Rangliste 2025-07-01",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/08/Reglement-for-Rangliste-2025-07-01.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-08-11T10:40:51",
+          "title": "&#8211; Reglement for Individuelle Turneringer",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/08/Reglement-for-Individuelle-Turneringer.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-08-11T10:36:53",
+          "title": "Reglement for UDM 2025-06-03",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/08/Reglement-for-UDM-2025-06-03.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-07T02:15:55",
+          "title": "Fælles reglement for ungdomsholdturneringen 2025-06-30",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Faelles-reglement-for-ungdomsholdturneringen-2025-06-30.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-03T11:20:49",
+          "title": "Reglement for Rangliste 2025-2026",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Reglement-for-Rangliste-2025-2026-1.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-02T14:19:18",
+          "title": "Reglement DMU HOLD (tillæg) 2025-2026",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Reglement-DMU-HOLD-tillaeg-2025-2026.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-02T14:19:17",
+          "title": "Reglement DM HOLD i HYGGEFJER (Senior Senior+) 2025-2026",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Reglement-DM-HOLD-i-HYGGEFJER-Senior-Senior-2025-2026.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-02T14:16:30",
+          "title": "Reglement om karantæne, suspension eller eksklusion af klubber og/eller klubmedlemmerm (Lovudvalget)",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Reglement-om-karantaene-suspension-eller-eksklusion-af-klubber-eller-klubmedlemmerm-Lovudvalget.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-02T14:13:08",
+          "title": "Reglement for Badminton Danmarks Dommerudvalg 2025-2026",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Reglement-for-Badminton-Danmarks-Dommerudvalg-2025-2026.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-02T14:09:25",
+          "title": "Amatørreglement Badminton Danmark 2025-2026",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Amatoerreglement-Badminton-Danmark-2025-2026.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-02T14:06:17",
+          "title": "Reklamereglement for Badminton Danmark 2025-2026",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Reklamereglement-for-Badminton-Danmark-2025-2026.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-02T14:00:15",
+          "title": "Reglement for Rangliste 2025-2026",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Reglement-for-Rangliste-2025-2026.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-02T13:58:26",
+          "title": "Reglement for overdragelse af en klubs spilletilladelse 2025-2026",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Reglement-for-overdragelse-af-en-klubs-spilletilladelse-2025-2026.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-02T13:58:26",
+          "title": "Reglement for spilletilladelse og klubskifte 2025-2026",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Reglement-for-spilletilladelse-og-klubskifte-2025-2026.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-02T13:55:31",
+          "title": "Tillæg om holdfællesskaber til Reglement for holdmesterskabet for Danmark i badminton 2025-2026",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Tillaeg-om-holdfaellesskaber-til-Reglement-for-holdmesterskabet-for-Danmark-i-badminton-2025-2026.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-02T13:52:44",
+          "title": "Fælles reglement for ungdomsholdturneringen 2025-2026",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Faelles-reglement-for-ungdomsholdturneringen-2025-2026.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-02T13:49:36",
+          "title": "Reglement for fælles individuelle danske mesterskaber for spillere over 35 år",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Reglement-for-faelles-individuelle-danske-mesterskaber-for-spillere-over-35-aar.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-02T13:47:45",
+          "title": "Reglement for Grand Prix Circuit 2025",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Reglement-for-Grand-Prix-Circuit-2025.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-02T13:47:37",
+          "title": "Reglement for DM for seniorer 2025",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Reglement-for-DM-for-seniorer-2025.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-02T13:44:43",
+          "title": "Reglement for LMU 2025",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Reglement-for-LMU-2025.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-02T13:44:29",
+          "title": "Reglement for UDM 2025",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Reglement-for-UDM-2025.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-02T13:44:15",
+          "title": "Reglement for DMU 2025",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Reglement-for-DMU-2025.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-02T13:44:02",
+          "title": "Reglement for LBS 2025",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Reglement-for-LBS-2025.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-02T13:39:32",
+          "title": "Reglement for Individuelle Turneringer 2025-2026",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Reglement-for-Individuelle-Turneringer-2025-2026.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-04-25T14:27:41",
+          "title": "2025-01-20 Reglement-for-Rangliste",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/04/2025-01-20-Reglement-for-Rangliste.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-03-03T14:43:22",
+          "title": "Fælles reglement for ungdomsholdturneringen 2024-2025",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/03/2025-03-03-Faelles-reglement-for-ungdomsholdturneringen.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-02-13T12:50:34",
+          "title": "Reglement VICTOR DM HOLD I HYGGEFJER (Senior senior+)",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/02/Reglement-VICTOR-DM-HOLD-I-HYGGEFJER-Senior-senior.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-01-21T15:28:57",
+          "title": "Reglement for Rangliste 2024-2025",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/01/2025-01-20-Reglement-for-Rangliste-2-2.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-01-10T10:51:31",
+          "title": "Dispensationer i Badmintonligaen og 1. division (§ 32 i DH-reglementet)",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/01/Dispensationer-for-deltagelse-i-DH-turneringen-100125.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-01-09T15:14:31",
+          "title": "Reglement for UDM",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/01/Reglement-for-UDM.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-01-09T10:55:22",
+          "title": "Dispensationer for deltagelse i DH-turneringen 090125",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/01/Dispensationer-for-deltagelse-i-DH-turneringen-090125.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-01-07T17:10:00",
+          "title": "Reglement for DM for SEN",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/01/Reglement-for-DM-for-SEN.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-11-18T11:13:33",
+          "title": "Reglement for Medlemskab af Badminton Danmark (Medlemsreglementet)",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/11/x-Reglement-for-Medlemskab-af-Badminton-Danmark-Medlemsreglementet.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-10-04T13:26:25",
+          "title": "2024-10-04 Faelles-reglement-for-ungdomsholdturneringen",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/10/2024-10-04-Faelles-reglement-for-ungdomsholdturneringen.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-09-11T14:12:45",
+          "title": "Dispensationer i Badmintonligaen og 1. division (§ 32 i DH-reglementet)",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/09/Dispensationer-for-deltagelse-i-DH-turneringen-110924.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-08-26T11:40:08",
+          "title": "Reglement for Individuelle Turneringer",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/08/Reglement-for-Individuelle-Turneringer.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-08-21T11:19:15",
+          "title": "Reglement for Individuelle Turneringer &#8211; Bilag 2 &#8211; sammenlægning af rækker",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/08/Reglement-for-Individuelle-Turneringer-Bilag-2-sammenlaegning-af-raekker.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-07-02T10:23:49",
+          "title": "Reglement for Individuelle Turneringer &#8211; Bilag 2 &#8211; sammenlægning af rækker",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/07/Reglement-for-Individuelle-Turneringer-Bilag-2-sammenlaegning-af-raekker.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-07-02T10:23:49",
+          "title": "Reglement for Individuelle Turneringer &#8211; Bilag 1 &#8211; turneringsformer",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/07/Reglement-for-Individuelle-Turneringer-Bilag-1-turneringsformer.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-07-02T09:03:59",
+          "title": "Badminton Danmark &#8211; Reglementer &#8211; Sommer &#8211; Læsning &#8211; Bog",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/07/Udgivelser_1200x800.jpg",
+          "mime_type": "image/jpeg"
+        },
+        {
+          "date": "2024-07-01T12:35:00",
+          "title": "Reglement for LBS",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/07/Reglement-for-LBS.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-07-01T12:35:00",
+          "title": "Reglement for LMU",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/07/Reglement-for-LMU.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-07-01T12:35:00",
+          "title": "Reglement for UDM",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/07/Reglement-for-UDM.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-07-01T12:34:59",
+          "title": "Reglement for DMU",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/07/Reglement-for-DMU.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-07-01T12:34:59",
+          "title": "Reglement for GP Circuit",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/07/Reglement-for-GP-Circuit.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-07-01T12:34:58",
+          "title": "Reglement (tillæg til) DMU Hold",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/07/Reglement-tillaeg-til-DMU-Hold.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-03-15T09:37:53",
+          "title": "Forslag-til-reglementsaendringer-sendt-i-horing-120224-1",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/03/Forslag-til-reglementsaendringer-sendt-i-horing-120224-1.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-01-16T09:34:04",
+          "title": "Reglement-for-Badminton-Danmarks-Dommerudvalg-280123",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/01/Reglement-for-Badminton-Danmarks-Dommerudvalg-280123-1.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-01-15T12:58:53",
+          "title": "Amatørreglement-for-Badminton-Danmark-2",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/01/Amatoerreglement-for-Badminton-Danmark-2.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-01-15T12:57:12",
+          "title": "Reglement-for-deltagelse-i-Badminton-Danmarks-landsholdstrup-for-seniorelite-og-ungdom-1",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/01/Reglement-for-deltagelse-i-Badminton-Danmarks-landsholdstrup-for-seniorelite-og-ungdom-1.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-01-15T12:54:56",
+          "title": "Reklamereglement-for-Badminton-Danmark",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/01/Reklamereglement-for-Badminton-Danmark.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-01-15T12:22:28",
+          "title": "Reglement-for-fælles-individuelle-danske-mesterskaber-for-spillere-over-35-år",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/01/Reglement-for-faelles-individuelle-danske-mesterskaber-for-spillere-over-35-aar.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-01-15T12:21:11",
+          "title": "GP-Circuit-reglement-22-23",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/01/GP-Circuit-reglement-22-23.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-01-15T12:20:25",
+          "title": "Reglement-for-DM-for-seniorer-2023-2024-01-10-2023",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/01/Reglement-for-DM-for-seniorer-2023-2024-01-10-2023.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-01-15T12:19:23",
+          "title": "Reglement-for-LBS-01-10-2023",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/01/Reglement-for-LBS-01-10-2023.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-01-15T12:18:33",
+          "title": "Reglement-for-LMU-01-10-2023",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/01/Reglement-for-LMU-01-10-2023.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-01-15T12:17:56",
+          "title": "Reglement-for-DMU-01-10-2023",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/01/Reglement-for-DMU-01-10-2023.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-01-15T12:16:01",
+          "title": "Turneringsreglement-bilag-2-sammenlaegning-af-raekker-040124",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/01/Turneringsreglement-bilag-2-sammenlaegning-af-raekker-040124.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-01-15T12:05:00",
+          "title": "Reglement-for-overdragelse-af-en-klubs-spilletilladelse",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/01/Reglement-for-overdragelse-af-en-klubs-spilletilladelse.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-01-15T12:04:15",
+          "title": "Reglement-for-spilletilladelse-og-klubskifte-tilrettet-071222",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/01/Reglement-for-spilletilladelse-og-klubskifte-tilrettet-071222.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-01-15T12:02:18",
+          "title": "Faelles-reglement-for-DM-HOLD-Senior-Senior-Motion-Bredde",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/01/Faelles-reglement-for-DM-HOLD-Senior-Senior-Motion-Bredde.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-01-15T12:01:12",
+          "title": "Tillaegsreglement-til-DMU-Hold-2023-2024-Rev",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/01/Tillaegsreglement-til-DMU-Hold-2023-2024-Rev.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-01-15T10:52:44",
+          "title": "Tillæg-om-holdfællesskaber-til-Reglement-for-holdmesterskabet-for-Danmark-i-badminton",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/01/Tillaeg-om-holdfaellesskaber-til-Reglement-for-holdmesterskabet-for-Danmark-i-badminton.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-01-15T09:50:55",
+          "title": "Reglement-for-Badminton-Danmarks-Dommerudvalg-280123",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/01/Reglement-for-Badminton-Danmarks-Dommerudvalg-280123.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-01-15T09:48:28",
+          "title": "Reglement-om-karantæne-suspension-eller-eksklusion-af-klubber-og-eller-klubmedlemmer",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/01/Reglement-om-karantaene-suspension-eller-eksklusion-af-klubber-og-eller-klubmedlemmer.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-01-15T09:47:02",
+          "title": "Tillaeg-A-til-Reglement-for-Medlemskab-af-Badminton-Danmark-Medlemsreglementet-paragraf-3-stk.-1-03.01.2023-CaBi",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/01/Tillaeg-A-til-Reglement-for-Medlemskab-af-Badminton-Danmark-Medlemsreglementet-paragraf-3-stk.-1-03.01.2023-CaBi.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-01-15T09:44:30",
+          "title": "Reglement-for-Medlemskab-af-Badminton-Danmark-Medlemsreglementet-20210202-AnHa",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/01/Reglement-for-Medlemskab-af-Badminton-Danmark-Medlemsreglementet-20210202-AnHa.pdf",
+          "mime_type": "application/pdf"
+        }
+      ]
+    },
+    {
+      "term": "ungdomsholdturnering",
+      "status": 200,
+      "reported_total": 10,
+      "reported_pages": 1,
+      "candidates": [
+        {
+          "date": "2026-07-01T19:52:00",
+          "title": "Fælles reglement for ungdomsholdturneringen endeligt 300626",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Faelles-reglement-for-ungdomsholdturneringen-endeligt-300626-1.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T13:25:24",
+          "title": "Fælles reglement for ungdomsholdturneringen endeligt 300626",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Faelles-reglement-for-ungdomsholdturneringen-endeligt-300626.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-06-30T14:48:44",
+          "title": "Fælles reglement for ungdomsholdturneringen endeligt 300626",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/06/Faelles-reglement-for-ungdomsholdturneringen-endeligt-300626.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-10-09T13:32:28",
+          "title": "Fælles reglement for ungdomsholdturneringen 2025-10-08",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/10/Faelles-reglement-for-ungdomsholdturneringen-2025-10-08.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-10-04T00:00:08",
+          "title": "Fælles reglement for ungdomsholdturneringen 2025-10-03",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/10/Faelles-reglement-for-ungdomsholdturneringen-2025-10-03.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-09-09T15:18:06",
+          "title": "Fælles reglement for ungdomsholdturneringen 2025-06-30",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/09/Faelles-reglement-for-ungdomsholdturneringen-2025-06-30.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-07T02:15:55",
+          "title": "Fælles reglement for ungdomsholdturneringen 2025-06-30",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Faelles-reglement-for-ungdomsholdturneringen-2025-06-30.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-07-02T13:52:44",
+          "title": "Fælles reglement for ungdomsholdturneringen 2025-2026",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/07/Faelles-reglement-for-ungdomsholdturneringen-2025-2026.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2025-03-03T14:43:22",
+          "title": "Fælles reglement for ungdomsholdturneringen 2024-2025",
+          "source_url": "https://badminton.dk/wp-content/uploads/2025/03/2025-03-03-Faelles-reglement-for-ungdomsholdturneringen.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2024-10-04T13:26:25",
+          "title": "2024-10-04 Faelles-reglement-for-ungdomsholdturneringen",
+          "source_url": "https://badminton.dk/wp-content/uploads/2024/10/2024-10-04-Faelles-reglement-for-ungdomsholdturneringen.pdf",
+          "mime_type": "application/pdf"
+        }
+      ]
+    },
+    {
+      "term": "holdturneringsreglement",
+      "status": 200,
+      "reported_total": 4,
+      "reported_pages": 1,
+      "candidates": [
+        {
+          "date": "2026-07-01T20:03:00",
+          "title": "Holdturneringsreglement for badminton i Danmark (DH-reglementet) 2026-07-01 &#8211; endeligt med bilag 3",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Holdturneringsreglement-for-badminton-i-Danmark-DH-reglementet-2026-07-01-endeligt-med-bilag-3-1.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-07-01T13:17:15",
+          "title": "Holdturneringsreglement for badminton i Danmark (DH-reglementet) 2026-07-01 &#8211; endeligt med bilag 3",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/07/Holdturneringsreglement-for-badminton-i-Danmark-DH-reglementet-2026-07-01-endeligt-med-bilag-3.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-06-30T14:48:44",
+          "title": "Holdturneringsreglement for badminton i Danmark (DH-reglementet) 2026-06-24 &#8211; godkendt",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/06/Holdturneringsreglement-for-badminton-i-Danmark-DH-reglementet-2026-06-24-godkendt.pdf",
+          "mime_type": "application/pdf"
+        },
+        {
+          "date": "2026-02-25T11:09:16",
+          "title": "Holdturneringsreglement for badminton i Danmark (DH-reglementet)",
+          "source_url": "https://badminton.dk/wp-content/uploads/2026/02/Holdturneringsreglement-for-badminton-i-Danmark-DH-reglementet-2026-02-25.pdf",
+          "mime_type": "application/pdf"
+        }
+      ]
+    },
+    {
+      "term": "veteranholdturnering",
+      "status": 200,
+      "reported_total": 0,
+      "reported_pages": 1,
+      "candidates": []
+    }
+  ],
+  "wayback_cdx_probe": {
+    "status": "request_failed_or_timed_out",
+    "error": "TimeoutError: The operation was aborted due to timeout"
+  }
+}

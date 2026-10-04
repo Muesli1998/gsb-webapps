@@ -1,0 +1,42 @@
+# Fælles regler og dokumenterede afgrænsninger
+
+Dette er et kildebaseret indeks, ikke en påstand om ét regelsæt, der gælder alle turneringer. Lokale ungdomsudvalg vælger holdtyper og udbud; senior- og veteranturneringer har særskilte regionale reglementer. Hver regel nedenfor gælder kun de citerede versioner.
+
+## Ungdom, fælles BD/DGI
+
+| Emne | Regel gengivet fra kilde | Dokumenteret gældende | Kilde |
+|---|---|---|---|
+| Område | Formålet er at styrke ungdomsholdturnering i Badminton Danmarks kredse og DGI Badmintons landsdele. Lokale udvalg beslutter, hvordan turneringen administreres lokalt. | 2023/24, 2024/25, 2025/26, 2026/27 (kontrollerede udgaver) | bd-youth-2023-24 s. 2; bd-youth-2024-25 s. 2; bd-youth-2025-26-rev-2025-10-08 s. 2; bd-youth-2026-27 s. 2 |
+| Holdtyper | De fælles reglementer indeholder typerne 4 spillere/4 piger, 2+2, 4+2, 4+3 og aldersspecifikke formater. Udbuddet vælges lokalt. | De citerede udgaver; de præcise typer skifter mellem sæsoner | youth s. 3-4 og skema 1/1A s. 5-7 |
+| Klassifikation | Sæsonens pointskala angiver et maksimalt samlet niveauklassifikationspointtal og et maksimum for bedste spiller (eller bedste dreng/pige). 4+3 og U11 4+2 har i 2025/26 ikke pointloft for rene klubhold; tillæg for holdfællesskaber kan sætte særskilte loft. | 2025/26 og 2026/27; se versionsforskelle nedenfor | bd-youth-2025-26-rev-2025-10-08 s. 5-6; bd-youth-2026-27 s. 5-7 |
+| Pointgrundlag | Point summeres efter holdtypens regel: fire bedste spillere, fire bedste drenge + to bedste piger eller to bedste af hvert køn. | 2025/26 og 2026/27 | youth 2025/26 s. 5; youth 2026/27 s. 5 |
+| Aldersgrupper | Spillere deltager som udgangspunkt i egen aldersgruppe og efter de udtrykkelige aldersoprykningsregler og undtagelser. | Versioner fra 2023/24 til 2026/27 undersøgt; hvert enkelt års ordlyd kan variere | bd-youth-2025-26-rev-2025-10-08 s. 4; bd-youth-2026-27 s. 4-5 |
+| Holdfællesskaber | Lokalt godkendelse gælder én sæson. Særlige holdtyper/DMU-deltagelse kan kræve yderligere godkendelse. | 2025/26 og 2026/27 | bd-youth-2025-26-rev-2025-10-08 s. 7; bd-youth-2026-27 s. 8; bd-dmu-2026-27 s. 1-3 |
+| Flere hold fra samme klub | Hold nummereres efter de angivne holdtype-prioriteter; detailreglen er versionsspecifik. | 2025/26 og 2026/27 | bd-youth-2025-26-rev-2025-10-08 s. 7; bd-youth-2026-27 s. 8 |
+| Puljevinder og DMU | De landsdækkende ungdomsregler siger, at puljevindere som minimum er garanteret udtagelse til DMU Hold, med de anførte særregler for visse holdfællesskaber. | 2023/24, 2024/25, 2025/26, 2026/27 | youth 2025/26 s. 2; bd-dmu-2026-27 s. 1-3 |
+| Kampafvikling og point | Antal kampe, stillingspoint, afbud og trækning fremgår af den konkrete sæsonversion og kan have særlige formatregler. | Versionsspecifikt; ikke udledt for manglende sæsoner | youth 2025/26 s. 3, 10-11; youth 2026/27 s. 3, 11-12 |
+
+### Versionsforskelle i U13-skalaer
+
+De her tal er ordret aflæst i officielle skemaer; det er ikke en udglattet serie. I ungdomsreglementet 2025/26 (revision 8. oktober 2025) står U13 4 spillere A/B/C/C-D/D som **6400/5800/5300/5000/4800**, bedste spiller **2000/1700/1500/1300/1200** (s. 5); 4 piger C/D **4800/4400**, bedste spiller **1300/1100** (s. 5-6); 2+2 A/B/C/D **6000/5400/5000/4800**, bedste dreng **1900/1700/1500/1300**, bedste pige **1600/1450/1300/1200** (s. 6).
+
+I 2026/27 står U13 4 spillere A/B/C/C-D/D/Dx som **6400/5600/5100/4800/4600/4400**, bedste spiller **1900/1650/1450/1300/1150/1100** (s. 6); 4 piger C/D **4800/4400**, bedste spiller **1300/1150** (s. 6); 2+2 A/B/C/D **5800/5200/4800/4600**, bedste dreng **1800/1600/1400/1300**, bedste pige **1600/1400/1300/1200** (s. 6-7). Det bekræfter ikke kontrolværdierne anført i opgavekortet (4 spillere 6000/5000/4200/3800/3600; 4 piger 3800/3200; 2+2 5600/4700/4000/3600). Afvigelsen er ført i kortets Spørgsmål; værdierne er ikke ændret for at matche kontrollen.
+
+## Senior og veteran
+
+| Område | Regel og grænse | Kilde |
+|---|---|---|
+| National senior (DH) | DH-reglementet gælder Badmintonligaen til Danmarksserien. Det afgrænser særskilt kredsenes holdturneringer; regionale regler skal derfor findes separat. | bd-dh-2026-27, §5 s. 3 |
+| København | Lokalt reglement omfatter ungdom, senior og senior+. Københavnsserien følger DH-bestemmelser med lokalt angivne undtagelser; øvrige hold anvender DH-regler, hvor lokale regler ikke fraviger dem. | koebenhavn-rules-2026-27 s. 1-2; version 2025/26 også arkiveret |
+| Vestlig Kredsserie | Kredsserie Vest og Serie 1 Vest er fælles for Fyn, Sønderjylland, Nordjylland og Midtjylland; lokale serier under Serie 1 er udtrykkeligt uden for dette reglement. | vest-kredsserie-2021 s. 1-2; sæson 2021/22 |
+| Nordjylland | Et samlet regionalt Senior/Veteran-reglement har egne holdtyper og turneringsregler. | nordjylland-senior-veteran-2025-26 og 2026-27; sæsonversionerne |
+| Sjælland veteran | Ældre historik-/veterankilder dokumenterer holdtyper, men sæsonen i en historisk PDF er modstridende (titel 2013/14, brødtekst 2012/13). En 2026/27 invitation er ikke et fuldstændigt serie-reglement. | sj-veteran-2013-14-season-conflict; sjaelland-veteran-invitation-2026-27 |
+
+Der udledes ikke en fælles veteranregel af disse regionale dokumenter. For hver sæson/region uden kilde er reglerne ukendte, ikke videreført fra naboår.
+
+## Uafklaret kildegrundlag
+
+- Ingen fuld, sammenhængende officiel samling fra 2010 til i dag blev fundet. Registeret indeholder 24 hentede PDF'er fra enkelte år/versioner; se [mangler.md](mangler.md).
+- 2025/26 ungdom findes i flere revisioner. 8. oktober-versionen er seneste hentede revision i dette arkiv; marts 2025 er en revision af 2024/25-reglementet. Versionerne beholdes hver for sig.
+- UGE 38- og DGI/Sjælland-bilagene fra 2026/27 kunne ikke hentes anonymt fra SharePoint. Deres indhold gengives derfor ikke som en selvstændig kilde her.
+- Ældre navne som DBF, SBKr., LFBKr. og de fire vestlige kredse mappes ikke automatisk til nutidige regioner uden en eksplicit kilde.

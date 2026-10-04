@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-04",
+  "provenance": "Kun eksplicitte, aflæste skemaer. Point er fra den angivne sæsonstart; lokale udvalg vælger udbuddet. Manglende sæsoner er null, ikke interpoleret.",
+  "regions_in_liga_landscape_db": ["Badminton Danmark", "Badminton Bornholm", "Badminton Midtjylland", "Badminton Nordjylland", "Badminton Sønderjylland", "Badminton Fyn", "Badminton København", "Badminton Lolland-Falster", "Badminton Sjælland", "DGI Bornholm", "DGI Fyn", "DGI Midtjylland", "DGI Nordjylland", "DGI Nordsjælland", "DGI Nordvest", "DGI SdU", "DGI Storkøbenhavn", "DGI Storstrømmen", "DGI Sydvest", "DGI Sydøstjylland", "DGI Sønderjylland", "DGI Vestjylland", "DGI Midt- og Vestsjælland", "DGI Østjylland"],
+  "season_rules": [
+    {
+      "season": "2024/25",
+      "source_id": "bd-youth-2024-25",
+      "source_pages": "4-6",
+      "scope": "Fælles BD/DGI-reglement; alle lokale udbud er ikke oplyst af dette fælles skema",
+      "regional_offer": null,
+      "holds": [
+        {"age":"U13","type":"4 spillere","range":"A","team_max_points":6000,"best_player_max_points":1800},
+        {"age":"U13","type":"4 spillere","range":"B","team_max_points":5000,"best_player_max_points":1500},
+        {"age":"U13","type":"4 spillere","range":"C","team_max_points":4200,"best_player_max_points":1250},
+        {"age":"U13","type":"4 spillere","range":"C-D","team_max_points":3800,"best_player_max_points":1050},
+        {"age":"U13","type":"4 spillere","range":"D","team_max_points":3600,"best_player_max_points":950},
+        {"age":"U13","type":"4 piger","range":"C","team_max_points":3800,"best_player_max_points":1100},
+        {"age":"U13","type":"4 piger","range":"D","team_max_points":3200,"best_player_max_points":850},
+        {"age":"U13","type":"2+2","range":"A","team_max_points":5600,"best_boy_max_points":1700,"best_girl_max_points":1500},
+        {"age":"U13","type":"2+2","range":"B","team_max_points":4700,"best_boy_max_points":1400,"best_girl_max_points":1250},
+        {"age":"U13","type":"2+2","range":"C","team_max_points":4000,"best_boy_max_points":1200,"best_girl_max_points":1100},
+        {"age":"U13","type":"2+2","range":"D","team_max_points":3600,"best_boy_max_points":1050,"best_girl_max_points":950}
+      ]
+    },
+    {
+      "season": "2025/26",
+      "source_id": "bd-youth-2025-26-rev-2025-10-08",
+      "source_pages": "5-6",
+      "scope": "Fælles BD/DGI-reglement; lokalt udbud pr. område ikke angivet",
+      "regional_offer": null,
+      "holds": [
+        {"age":"U13","type":"4 spillere","range":"A","team_max_points":6400,"best_player_max_points":2000},
+        {"age":"U13","type":"4 spillere","range":"B","team_max_points":5800,"best_player_max_points":1700},
+        {"age":"U13","type":"4 spillere","range":"C","team_max_points":5300,"best_player_max_points":1500},
+        {"age":"U13","type":"4 spillere","range":"C-D","team_max_points":5000,"best_player_max_points":1300},
+        {"age":"U13","type":"4 spillere","range":"D","team_max_points":4800,"best_player_max_points":1200},
+        {"age":"U13","type":"4 piger","range":"C","team_max_points":4800,"best_player_max_points":1300},
+        {"age":"U13","type":"4 piger","range":"D","team_max_points":4400,"best_player_max_points":1100},
+        {"age":"U13","type":"2+2","range":"A","team_max_points":6000,"best_boy_max_points":1900,"best_girl_max_points":1600},
+        {"age":"U13","type":"2+2","range":"B","team_max_points":5400,"best_boy_max_points":1700,"best_girl_max_points":1450},
+        {"age":"U13","type":"2+2","range":"C","team_max_points":5000,"best_boy_max_points":1500,"best_girl_max_points":1300},
+        {"age":"U13","type":"2+2","range":"D","team_max_points":4800,"best_boy_max_points":1300,"best_girl_max_points":1200}
+      ]
+    },
+    {
+      "season": "2026/27",
+      "source_id": "bd-youth-2026-27",
+      "source_pages": "5-7",
+      "scope": "Fælles BD/DGI-reglement; lokalt udbud pr. område ikke angivet",
+      "regional_offer": null,
+      "holds": [
+        {"age":"U13","type":"4 spillere","range":"A","team_max_points":6400,"best_player_max_points":1900},
+        {"age":"U13","type":"4 spillere","range":"B","team_max_points":5600,"best_player_max_points":1650},
+        {"age":"U13","type":"4 spillere","range":"C","team_max_points":5100,"best_player_max_points":1450},
+        {"age":"U13","type":"4 spillere","range":"C-D","team_max_points":4800,"best_player_max_points":1300},
+        {"age":"U13","type":"4 spillere","range":"D","team_max_points":4600,"best_player_max_points":1150},
+        {"age":"U13","type":"4 spillere","range":"Dx","team_max_points":4400,"best_player_max_points":1100},
+        {"age":"U13","type":"4 piger","range":"C","team_max_points":4800,"best_player_max_points":1300},
+        {"age":"U13","type":"4 piger","range":"D","team_max_points":4400,"best_player_max_points":1150},
+        {"age":"U13","type":"2+2","range":"A","team_max_points":5800,"best_boy_max_points":1800,"best_girl_max_points":1600},
+        {"age":"U13","type":"2+2","range":"B","team_max_points":5200,"best_boy_max_points":1600,"best_girl_max_points":1400},
+        {"age":"U13","type":"2+2","range":"C","team_max_points":4800,"best_boy_max_points":1400,"best_girl_max_points":1300},
+        {"age":"U13","type":"2+2","range":"D","team_max_points":4600,"best_boy_max_points":1300,"best_girl_max_points":1200}
+      ]
+    }
+  ],
+  "not_captured": "The JSON intentionally does not publish invented range mappings for 2010/11-2023/24, U09/U11/U15/U17/U19, or per-region offers. Those tables exist in some archived PDFs but full cross-season extraction and region-specific invitations remain incomplete; see mangler.md."
+}
