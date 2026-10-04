@@ -5,6 +5,7 @@ Dette katalog beskriver forskelle i de versioner, der faktisk blev hentet. Det e
 | Sæson/område | Emne | Dokumenteret regel/forskel | Kilde |
 |---|---|---|---|
 | 2024/25, fælles ungdom BD/DGI | U13-point | 4 spillere: A 6000, B 5000, C 4200, C-D 3800, D 3600; 4 piger C 3800/D 3200; 2+2 A/B/C/D 5600/4700/4000/3600. | bd-youth-2024-25 s. 5-6 |
+| 2025/26 original, fælles ungdom BD/DGI | U13-point | Samme rækkegrænser som 2024/25: 4 spillere 6000/5000/4200/3800/3600; 4 piger 3800/3200; 2+2 5600/4700/4000/3600. Oktoberrevisionen af 2025/26 ændrer dem (næste række). | bd-youth-2025-26-original s. 5-6 |
 | 2025/26, fælles ungdom BD/DGI | U13-point | 4 spillere A/B/C/C-D/D: 6400/5800/5300/5000/4800; 4 piger C/D: 4800/4400; 2+2 A/B/C/D: 6000/5400/5000/4800. | bd-youth-2025-26-rev-2025-10-08 s. 5-6 |
 | 2026/27, fælles ungdom BD/DGI | U13-point | 4 spillere A/B/C/C-D/D/Dx: 6400/5600/5100/4800/4600/4400; 4 piger C/D: 4800/4400; 2+2 A/B/C/D: 5800/5200/4800/4600. | bd-youth-2026-27 s. 6-7 |
 | 2025/26→2026/27 | Dx og begynderformat | Dx optræder i 2026/27 ungdomsskemaet og defineres dér som begynder-række for 3/4 spillere; dette kan ikke uden videre føres bagud til tidligere år. | bd-youth-2026-27 s. 6 |

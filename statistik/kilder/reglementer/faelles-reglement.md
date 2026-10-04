@@ -18,9 +18,11 @@ Dette er et kildebaseret indeks, ikke en påstand om ét regelsæt, der gælder 
 
 ### Versionsforskelle i U13-skalaer
 
-De her tal er ordret aflæst i officielle skemaer; det er ikke en udglattet serie. I ungdomsreglementet 2025/26 (revision 8. oktober 2025) står U13 4 spillere A/B/C/C-D/D som **6400/5800/5300/5000/4800**, bedste spiller **2000/1700/1500/1300/1200** (s. 5); 4 piger C/D **4800/4400**, bedste spiller **1300/1100** (s. 5-6); 2+2 A/B/C/D **6000/5400/5000/4800**, bedste dreng **1900/1700/1500/1300**, bedste pige **1600/1450/1300/1200** (s. 6).
+De her tal er ordret aflæst i officielle skemaer; det er ikke en udglattet serie. U13-værdierne i 2024/25 og den originale 2025/26-udgave er ens: 4 spillere A/B/C/C-D/D **6000/5000/4200/3800/3600**, bedste spiller **1800/1500/1250/1050/950**; 4 piger C/D **3800/3200**, bedste spiller **1100/850**; 2+2 A/B/C/D **5600/4700/4000/3600**, bedste dreng **1700/1400/1200/1050**, bedste pige **1500/1250/1100/950** (2024/25 s. 5-6; 2025/26 original s. 5-6).
 
-I 2026/27 står U13 4 spillere A/B/C/C-D/D/Dx som **6400/5600/5100/4800/4600/4400**, bedste spiller **1900/1650/1450/1300/1150/1100** (s. 6); 4 piger C/D **4800/4400**, bedste spiller **1300/1150** (s. 6); 2+2 A/B/C/D **5800/5200/4800/4600**, bedste dreng **1800/1600/1400/1300**, bedste pige **1600/1400/1300/1200** (s. 6-7). Det bekræfter ikke kontrolværdierne anført i opgavekortet (4 spillere 6000/5000/4200/3800/3600; 4 piger 3800/3200; 2+2 5600/4700/4000/3600). Afvigelsen er ført i kortets Spørgsmål; værdierne er ikke ændret for at matche kontrollen.
+Oktoberrevisionen af 2025/26 afviger: U13 4 spillere A/B/C/C-D/D **6400/5800/5300/5000/4800**, bedste spiller **2000/1700/1500/1300/1200** (s. 5); 4 piger C/D **4800/4400**, bedste spiller **1300/1100** (s. 5-6); 2+2 A/B/C/D **6000/5400/5000/4800**, bedste dreng **1900/1700/1500/1300**, bedste pige **1600/1450/1300/1200** (s. 6).
+
+I 2026/27 står U13 4 spillere A/B/C/C-D/D/Dx som **6400/5600/5100/4800/4600/4400**, bedste spiller **1900/1650/1450/1300/1150/1100** (s. 6); 4 piger C/D **4800/4400**, bedste spiller **1300/1150** (s. 6); 2+2 A/B/C/D **5800/5200/4800/4600**, bedste dreng **1800/1600/1400/1300**, bedste pige **1600/1400/1300/1200** (s. 6-7). Opgavekortets værdier stemmer altså med 2024/25 og original 2025/26, men ikke med oktoberrevisionen 2025/26 eller 2026/27.
 
 ## Senior og veteran
 
