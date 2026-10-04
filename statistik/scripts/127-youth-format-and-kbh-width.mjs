@@ -125,6 +125,7 @@ const comboKey = (season, age) => `${season}|${age}`;
 const divisionKey = (r) => `${r.season_id}|${r.age_group_id}|${r.division_name_raw}`;
 const seasonLabel = (season) => `${season}/${season + 1}`;
 const dmuRow = (name) => /^\s*DMU\b/iu.test(String(name ?? ''));
+const uge38Row = (name) => /UGE\s*38/iu.test(String(name ?? ''));
 const kredsmatchRow = (name) => /\bKredsmatch\b/iu.test(String(name ?? ''));
 const fixedFormatOrder = new Map([['4+3', 1], ['4+2', 2], ['2+2', 3], ['4 spillere', 4], ['4 piger', 5]]);
 const parseLevel = (name) => {
@@ -193,7 +194,7 @@ const uge38Rows = db.prepare(`
   FROM league_groups g
   LEFT JOIN age_groups ag ON ag.age_group_id=g.age_group_id
   LEFT JOIN league_group_details d USING(season_id,age_group_id,league_group_id)
-  WHERE g.age_group_id IN (${youthAgeIds.join(',')}) AND upper(g.division_name_raw) LIKE '%UGE 38%'
+  WHERE g.age_group_id IN (${youthAgeIds.join(',')}) AND upper(replace(g.division_name_raw,' ','')) LIKE '%UGE38%'
   ORDER BY g.season_id,g.age_group_id,g.division_name_raw,g.group_name_raw,g.league_group_id
 `).all();
 const categories = db.prepare(`
@@ -292,9 +293,9 @@ for (const [key, row] of groupsByPool) {
     category_signature: signature,
     format: displayFormat,
     format_basis: adjudicated ? '125 fysisk-pulje-afgørelse' : sigFamily ? '126 kanonisk kategorisignatur' : profile ? '126 ikke-kanonisk kategorisignatur' : textFamily ? '126 formattekst uden kategorisignatur' : '126 uden kategoridata',
-    tier: rank.tier,
-    format_status: rank.status,
-    global_126_position: rank.global_126_position,
+    tier: fixedFormatOrder.has(displayFormat) ? rank.tier : null,
+    format_status: fixedFormatOrder.has(displayFormat) ? rank.status : 'Ikke placeret: format uden fast plads eller ikke-kanonisk signatur',
+    global_126_position: fixedFormatOrder.has(displayFormat) ? rank.global_126_position : null,
   });
 }
 
@@ -342,7 +343,7 @@ for (const row of gsbTeams) {
 }
 
 function rankFormatsForCombo(pools) {
-  const present = [...new Set(pools.filter((p) => p.tier !== null && !dmuRow(p.division_name_raw)).map((p) => p.format))];
+  const present = [...new Set(pools.filter((p) => fixedFormatOrder.has(p.format) && !dmuRow(p.division_name_raw) && !uge38Row(p.division_name_raw)).map((p) => p.format))];
   const available = present.toSorted((a, b) => {
     const ar = fixedFormatOrder.get(a);
     const br = fixedFormatOrder.get(b);
@@ -355,7 +356,7 @@ function rankFormatsForCombo(pools) {
     global_126_position: rankByFormat.get(format).global_126_position,
     place_in_season_age: fixedFormatOrder.has(format) ? index + 1 : null,
     formats_present: available.length,
-    hierarchy_status: fixedFormatOrder.has(format) ? 'fastlagt af Christoffer' : 'foreløbig, ikke godkendt',
+    hierarchy_status: 'fastlagt af Christoffer',
   }));
 }
 
@@ -365,7 +366,7 @@ const placements = [...allComboKeys].map((key) => {
   const seasonId = Number(seasonText);
   const ageId = Number(ageText);
   const allComboPools = [...poolFormats.values()].filter((p) => p.season_id === seasonId && p.age_group_id === ageId);
-  const pools = allComboPools.filter((p) => !dmuRow(p.division_name_raw));
+  const pools = allComboPools.filter((p) => !dmuRow(p.division_name_raw) && !uge38Row(p.division_name_raw));
   const formatRanks = rankFormatsForCombo(pools);
   const formatPlaceByName = new Map(formatRanks.map((x) => [x.format, x]));
   const rankedRows = [...new Map(pools.map((p) => [divisionKey(p), p])).values()].toSorted((a, b) => {
@@ -376,16 +377,17 @@ const placements = [...allComboKeys].map((key) => {
   }).map((row, index) => ({
     division_name_raw: row.division_name_raw,
     format: row.format,
+    placement_status: fixedFormatOrder.has(row.format) ? 'placeret' : 'Ikke placeret',
     level: row.level,
     format_place: formatPlaceByName.get(row.format)?.place_in_season_age ?? null,
     row_order_within_format: null,
-    provisional: !fixedFormatOrder.has(row.format),
-    temporary_rank: !fixedFormatOrder.has(row.format),
+    provisional: false,
+    temporary_rank: false,
     _sort_index: index + 1,
   }));
   const rowOrderByName = new Map();
   for (const row of rankedRows) {
-    if (row.level.letter) {
+    if (fixedFormatOrder.has(row.format) && row.level.letter) {
       const n = (rowOrderByName.get(row.format) ?? 0) + 1;
       rowOrderByName.set(row.format, n);
       row.row_order_within_format = n;
@@ -393,10 +395,11 @@ const placements = [...allComboKeys].map((key) => {
     delete row._sort_index;
   }
   const allGsb = teamsByCombo.get(key);
-  const localGsb = allGsb.filter((team) => !dmuRow(team.division_name_raw));
+  const uge38Gsb = allGsb.filter((team) => uge38Row(team.division_name_raw));
+  const localGsb = allGsb.filter((team) => !dmuRow(team.division_name_raw) && !uge38Row(team.division_name_raw));
   const dmuGsb = allGsb.filter((team) => dmuRow(team.division_name_raw));
   const activePlaced = localGsb.filter((team) => !team.withdrawal_reason && team.tier !== null);
-  const activeUnplaced = localGsb.filter((team) => !team.withdrawal_reason && team.tier === null);
+  const activeUnplaced = localGsb.filter((team) => !team.withdrawal_reason && !fixedFormatOrder.has(team.format));
   const withdrawn = localGsb.filter((team) => team.withdrawal_reason);
   const bestGsb = activePlaced.toSorted((a, b) => {
     const ar = fixedFormatOrder.get(a.format);
@@ -430,26 +433,35 @@ const placements = [...allComboKeys].map((key) => {
   const regionGroupsForCombo = regionGroupsByCombo.get(key) ?? [];
   const regionPoolsAll = new Set(regionGroupsForCombo.map(poolKey));
   const regionRowsAll = new Set(regionGroupsForCombo.map(divisionKey));
-  const widthEligibleGroups = regionGroupsForCombo.filter((r) => !dmuRow(r.division_name_raw) && !kredsmatchRow(r.division_name_raw));
+  const widthEligibleGroups = regionGroupsForCombo.filter((r) => !dmuRow(r.division_name_raw) && !kredsmatchRow(r.division_name_raw) && !uge38Row(r.division_name_raw));
   const regionPools = new Set(widthEligibleGroups.map(poolKey));
   const regionRows = new Set(widthEligibleGroups.map(divisionKey));
   const regionGroupsWithoutDmu = regionGroupsForCombo.filter((r) => !dmuRow(r.division_name_raw));
   const regionRowsWithoutKredsmatch = new Set(regionGroupsWithoutDmu.map(divisionKey));
+  const regionGroupsWithoutKredsmatchOnly = regionGroupsForCombo.filter((r) => !dmuRow(r.division_name_raw) && !kredsmatchRow(r.division_name_raw));
+  const rowKeysIncludingUge38WithoutKredsmatch = new Set(regionGroupsWithoutKredsmatchOnly.map(divisionKey));
+  const gsbRowsIncludingUge38WithoutKredsmatch = new Set(allGsb.filter((team) => rowKeysIncludingUge38WithoutKredsmatch.has(divisionKey(team)) && !team.withdrawal_reason).map(divisionKey));
   const regionGsbActive = localGsb.filter((team) => regionPools.has(team.physical_pool_key) && !team.withdrawal_reason);
   const regionGsbPools = new Set(regionGsbActive.map((team) => team.physical_pool_key));
   const regionGsbRows = new Set(regionGsbActive.filter((team) => !kredsmatchRow(team.division_name_raw) && !dmuRow(team.division_name_raw)).map(divisionKey));
-  const regionGsbRowsIncludingKredsmatch = new Set(localGsb.filter((team) => regionGroupsWithoutDmu.some((group) => poolKey(group) === team.physical_pool_key) && !team.withdrawal_reason).map(divisionKey));
-  const regionGsbPoolsIncludingKredsmatch = new Set(localGsb.filter((team) => regionGroupsWithoutDmu.some((group) => poolKey(group) === team.physical_pool_key) && !team.withdrawal_reason).map((team) => team.physical_pool_key));
+  const regionGsbRowsIncludingKredsmatch = new Set(allGsb.filter((team) => regionGroupsWithoutDmu.some((group) => poolKey(group) === team.physical_pool_key) && !team.withdrawal_reason).map(divisionKey));
+  const regionGsbPoolsIncludingKredsmatch = new Set(allGsb.filter((team) => regionGroupsWithoutDmu.some((group) => poolKey(group) === team.physical_pool_key) && !team.withdrawal_reason).map((team) => team.physical_pool_key));
+  const regionGroupsWithoutUge38 = regionGroupsForCombo.filter((r) => !dmuRow(r.division_name_raw) && !uge38Row(r.division_name_raw));
+  const rowKeysWithoutUge38 = new Set(regionGroupsWithoutUge38.map(divisionKey));
+  const rowKeysWithoutUge38AndKredsmatch = new Set(regionGroupsWithoutUge38.filter((r) => !kredsmatchRow(r.division_name_raw)).map(divisionKey));
+  const gsbRowsWithoutUge38 = new Set(localGsb.filter((team) => rowKeysWithoutUge38.has(divisionKey(team)) && !team.withdrawal_reason).map(divisionKey));
+  const gsbRowsWithoutUge38AndKredsmatch = new Set(localGsb.filter((team) => rowKeysWithoutUge38AndKredsmatch.has(divisionKey(team)) && !team.withdrawal_reason).map(divisionKey));
   const regionGsbWithdrawn = localGsb.filter((team) => regionPools.has(team.physical_pool_key) && team.withdrawal_reason);
   const status = bestGsb
     ? (formatRanks.length === 1 ? 'kun ét format findes' : bestGsb.format === highestFormat?.format ? 'i højeste format' : 'under højeste format')
-    : activeUnplaced.length ? 'aktivt GSB-hold, format uplaceret' : 'ingen aktivt GSB-hold (kun udgået/trukket)';
+    : activeUnplaced.length ? 'aktivt GSB-hold, format ikke placeret' : uge38Gsb.length ? 'kun UGE 38-hold' : 'ingen aktivt GSB-hold (kun udgået/trukket)';
   return {
     season_id: seasonId,
     season: seasonLabel(seasonId),
     age_group_id: ageId,
     age_group_name: allGsb[0].age_group_name,
-    gsb_team_pool_records_found: localGsb.length,
+    gsb_team_pool_records_found: localGsb.length + uge38Gsb.length,
+    gsb_uge38_records: uge38Gsb.length,
     gsb_dmu_records: dmuGsb.length,
     gsb_active_placed_records: activePlaced.length,
     gsb_active_unplaced_records: activeUnplaced.length,
@@ -466,7 +478,7 @@ const placements = [...allComboKeys].map((key) => {
       place_in_season_age: formatPlaceByName.get(bestGsb.format)?.place_in_season_age ?? null,
       formats_present: formatPlaceByName.get(bestGsb.format)?.formats_present ?? null,
       global_126_position: bestGsb.global_126_position,
-      hierarchy_status: fixedFormatOrder.has(bestGsb.format) ? 'fastlagt af Christoffer' : 'foreløbig, ikke godkendt',
+      hierarchy_status: 'fastlagt af Christoffer',
     } : null,
     highest_format: highestFormat,
     format_hierarchy: formatRanks,
@@ -495,7 +507,7 @@ const placements = [...allComboKeys].map((key) => {
         .map((team) => team.team_name_raw.normalize('NFC'))).size,
     },
     withdrawn_teams_in_highest_format_excluded: excludedWithdrawn,
-    gsb_team_pool_records: localGsb.map((team) => ({
+    gsb_team_pool_records: [...localGsb, ...uge38Gsb].map((team) => ({
       raw_team_name: team.raw_team_name,
       physical_pool_key: team.physical_pool_key,
       division_name_raw: team.division_name_raw,
@@ -504,10 +516,11 @@ const placements = [...allComboKeys].map((key) => {
       tier: team.tier,
       global_126_position: team.global_126_position,
       local_format_place: formatPlaceByName.get(team.format)?.place_in_season_age ?? null,
+      placement_category: uge38Row(team.division_name_raw) ? 'UGE 38 — separat' : fixedFormatOrder.has(team.format) ? 'placeret' : 'Ikke placeret',
       withdrawal_reason: team.withdrawal_reason,
       unplaced_reason: team.tier === null ? team.format_status : null,
       level: team.level,
-      hierarchy_status: fixedFormatOrder.has(team.format) ? 'fastlagt af Christoffer' : 'foreløbig, ikke godkendt',
+      hierarchy_status: fixedFormatOrder.has(team.format) ? 'fastlagt af Christoffer' : 'Ikke placeret',
       row_order_within_format: rankedRows.find((row) => row.division_name_raw === team.division_name_raw)?.row_order_within_format ?? null,
     })),
     dmu_gsb_teams: dmuGsb.map((team) => ({
@@ -522,8 +535,10 @@ const placements = [...allComboKeys].map((key) => {
     kbh_width: regionGroupsForCombo.length ? {
       region_id: copenhagenRegionId,
       league_rows: { gsb_in: regionGsbRows.size, total: regionRows.size, percent: regionRows.size ? 100 * regionGsbRows.size / regionRows.size : 0 },
-      league_rows_including_kredsmatch: { gsb_in: regionGsbRowsIncludingKredsmatch.size, total: regionRowsWithoutKredsmatch.size, percent: regionRowsWithoutKredsmatch.size ? 100 * regionGsbRowsIncludingKredsmatch.size / regionRowsWithoutKredsmatch.size : 0 },
-      league_rows_including_dmu_and_kredsmatch: { gsb_in: regionGsbRows.size, total: regionRowsAll.size, percent: regionRowsAll.size ? 100 * regionGsbRows.size / regionRowsAll.size : 0 },
+      league_rows_without_uge38_and_kredsmatch: { gsb_in: gsbRowsWithoutUge38AndKredsmatch.size, total: rowKeysWithoutUge38AndKredsmatch.size, percent: rowKeysWithoutUge38AndKredsmatch.size ? 100 * gsbRowsWithoutUge38AndKredsmatch.size / rowKeysWithoutUge38AndKredsmatch.size : 0 },
+      league_rows_without_uge38_including_kredsmatch: { gsb_in: gsbRowsWithoutUge38.size, total: rowKeysWithoutUge38.size, percent: rowKeysWithoutUge38.size ? 100 * gsbRowsWithoutUge38.size / rowKeysWithoutUge38.size : 0 },
+      league_rows_including_uge38_without_kredsmatch: { gsb_in: gsbRowsIncludingUge38WithoutKredsmatch.size, total: rowKeysIncludingUge38WithoutKredsmatch.size, percent: rowKeysIncludingUge38WithoutKredsmatch.size ? 100 * gsbRowsIncludingUge38WithoutKredsmatch.size / rowKeysIncludingUge38WithoutKredsmatch.size : 0 },
+      league_rows_including_uge38_and_kredsmatch: { gsb_in: regionGsbRowsIncludingKredsmatch.size, total: regionRowsAll.size, percent: regionRowsAll.size ? 100 * regionGsbRowsIncludingKredsmatch.size / regionRowsAll.size : 0 },
       physical_pools: { gsb_in: regionGsbPools.size, total: regionPools.size, percent: regionPools.size ? 100 * regionGsbPools.size / regionPools.size : 0 },
       physical_pools_including_kredsmatch: { gsb_in: regionGsbPoolsIncludingKredsmatch.size, total: new Set(regionGroupsWithoutDmu.map(poolKey)).size },
       gsb_active_records: regionGsbActive.length,
@@ -535,29 +550,43 @@ const placements = [...allComboKeys].map((key) => {
         const row = rowGroups[0];
         const teams = rowGroups.flatMap((group) => teamsByPool.get(poolKey(group)) ?? []);
         return { row_key: rowKey, division_name_raw: row?.division_name_raw ?? null,
-          included_in_width: !dmuRow(row?.division_name_raw) && !kredsmatchRow(row?.division_name_raw),
-          excluded_reason: dmuRow(row?.division_name_raw) ? 'DMU' : kredsmatchRow(row?.division_name_raw) ? 'Kredsmatch' : null,
+          included_in_width: !dmuRow(row?.division_name_raw) && !kredsmatchRow(row?.division_name_raw) && !uge38Row(row?.division_name_raw),
+          excluded_reason: dmuRow(row?.division_name_raw) ? 'DMU' : uge38Row(row?.division_name_raw) ? 'UGE 38 (ekstraordinær turnering)' : kredsmatchRow(row?.division_name_raw) ? 'Kredsmatch' : null,
+          format: [...new Set(rowGroups.map((group) => poolFormats.get(poolKey(group))?.format).filter(Boolean))].join('; '),
+          level: parseLevel(row?.division_name_raw), team_count: teams.length,
+          clubs: [...new Set(teams.map((t) => normalizeClub(t.team_name_raw)))].sort((a,b) => a.localeCompare(b, 'da')),
           gsb_teams: [...new Set(teams.filter((t) => isGsb(t.team_name_raw) && !withdrawalReason(t.team_name_raw)).map((t) => t.team_name_raw))].sort() };
       }),
       gsb_pools: [...regionGsbPools].sort(),
       all_pools: [...regionPools].sort(),
+      missing_rows: [...regionRowsAll].sort().map((rowKey) => {
+        const rowGroups = regionGroupsForCombo.filter((r) => divisionKey(r) === rowKey);
+        const row = rowGroups[0];
+        const teams = rowGroups.flatMap((group) => teamsByPool.get(poolKey(group)) ?? []);
+        const activeGsb = [...new Set(teams.filter((team) => isGsb(team.team_name_raw) && !withdrawalReason(team.team_name_raw)).map((team) => team.team_name_raw))];
+        return { division_name_raw: row?.division_name_raw ?? null, format: [...new Set(rowGroups.map((group) => poolFormats.get(poolKey(group))?.format).filter(Boolean))].join('; '),
+          level: parseLevel(row?.division_name_raw), team_count: teams.length,
+          clubs: [...new Set(teams.map((team) => normalizeClub(team.team_name_raw)))].sort((a,b) => a.localeCompare(b, 'da')),
+          gsb_not_in_row: activeGsb.length === 0, gsb_teams: activeGsb };
+      }).filter((row) => row.gsb_not_in_row),
     } : null,
   };
 }).sort((a, b) => a.season_id - b.season_id || a.age_group_id - b.age_group_id);
 
 const gsbTotal = {
   found: gsbTeams.length,
-  local_records: gsbTeams.filter((r) => !dmuRow(r.division_name_raw)).length,
+  uge38_records: gsbTeams.filter((r) => uge38Row(r.division_name_raw)).length,
+  local_records: gsbTeams.filter((r) => !dmuRow(r.division_name_raw) && !uge38Row(r.division_name_raw)).length,
   dmu_records: gsbTeams.filter((r) => dmuRow(r.division_name_raw)).length,
-  placed_active: gsbTeams.filter((r) => !dmuRow(r.division_name_raw) && !r.withdrawal_reason && r.tier !== null).length,
-  unplaced_active: gsbTeams.filter((r) => !dmuRow(r.division_name_raw) && !r.withdrawal_reason && r.tier === null).length,
-  withdrawn: gsbTeams.filter((r) => !dmuRow(r.division_name_raw) && r.withdrawal_reason).length,
-  withdrawn_by_reason: Object.fromEntries(['udgået', 'trukket'].map((reason) => [reason, gsbTeams.filter((r) => !dmuRow(r.division_name_raw) && r.withdrawal_reason === reason).length])),
+  placed_active: gsbTeams.filter((r) => !dmuRow(r.division_name_raw) && !uge38Row(r.division_name_raw) && !r.withdrawal_reason && fixedFormatOrder.has(r.format)).length,
+  unplaced_active: gsbTeams.filter((r) => !dmuRow(r.division_name_raw) && !uge38Row(r.division_name_raw) && !r.withdrawal_reason && !fixedFormatOrder.has(r.format)).length,
+  withdrawn: gsbTeams.filter((r) => !dmuRow(r.division_name_raw) && !uge38Row(r.division_name_raw) && r.withdrawal_reason).length,
+  withdrawn_by_reason: Object.fromEntries(['udgået', 'trukket'].map((reason) => [reason, gsbTeams.filter((r) => !dmuRow(r.division_name_raw) && !uge38Row(r.division_name_raw) && r.withdrawal_reason === reason).length])),
   dmu_unique_team_names: new Set(gsbTeams.filter((r) => dmuRow(r.division_name_raw)).map((r) => `${r.season_id}|${r.age_group_id}|${r.raw_team_name}`)).size,
   dmu_unique_season_age_team_names: new Set(gsbTeams.filter((r) => dmuRow(r.division_name_raw)).map((r) => `${r.season_id}|${r.age_group_id}|${r.raw_team_name}`)).size,
   collaboration_records_separate_not_counted_as_gsb: collaborationTeams.length,
 };
-if (gsbTotal.found !== gsbTotal.placed_active + gsbTotal.unplaced_active + gsbTotal.withdrawn + gsbTotal.dmu_records) {
+if (gsbTotal.found !== gsbTotal.placed_active + gsbTotal.unplaced_active + gsbTotal.withdrawn + gsbTotal.dmu_records + gsbTotal.uge38_records) {
   throw new Error(`GSB totals do not balance: ${JSON.stringify(gsbTotal)}`);
 }
 
@@ -578,16 +607,44 @@ const overallWidthByAge = [...new Set(placements.filter((p) => p.kbh_width && p.
   };
 }).sort((a, b) => a.age_group_id - b.age_group_id);
 
-const provisionalFormatCounts = [...new Set([...poolFormats.values()].filter((p) => !dmuRow(p.division_name_raw)).map((p) => p.format))]
+const provisionalFormatCounts = [...new Set([...poolFormats.values()].filter((p) => !dmuRow(p.division_name_raw) && !uge38Row(p.division_name_raw)).map((p) => p.format))]
   .filter((format) => !fixedFormatOrder.has(format))
-  .map((format) => ({ format, physical_pools: [...poolFormats.values()].filter((p) => !dmuRow(p.division_name_raw) && p.format === format).length,
-    proposal_status: 'foreløbig, ikke godkendt',
-    candidate_basis: format === '3 spillere' ? 'forslag: efter 4 spillere og før 4 piger; 4 piger fastholdes som laveste faste format'
-      : format === '5 spillere' ? 'forslag: over 4 spillere; præcis relation til 2+2 afventer godkendelse'
-        : format === '4-8 spillere' ? 'spænder over flere holdstørrelser; én plads kan ikke udledes af intervallet'
-          : 'signaturen/etiketten fastslår ikke entydigt antal spillere; ingen bestemt plads foreslås' }))
+  .map((format) => {
+    const pools = [...poolFormats.values()].filter((p) => !dmuRow(p.division_name_raw) && !uge38Row(p.division_name_raw) && p.format === format);
+    const poolKeys = new Set(pools.map((p) => p.physical_pool_key));
+    const teams = teamRows.filter((team) => poolKeys.has(poolKey(team)));
+    return { format, physical_pools: pools.length, team_pool_records: teams.length,
+      rows: [...new Set(pools.map((p) => p.division_name_raw))].sort(),
+      raw_team_names: [...new Set(teams.map((team) => team.team_name_raw))].sort((a,b) => a.localeCompare(b, 'da')),
+      gsb_records: gsbTeams.filter((team) => poolKeys.has(team.physical_pool_key)).length,
+      placement_status: 'Ikke placeret',
+      rule_evidence_4_8: format === '4-8 spillere' ? { physical_pools: pools.length, signature_distribution: Object.fromEntries([...new Set(pools.map((p) => p.category_signature))].map((signature) => [signature, pools.filter((p) => p.category_signature === signature).length])), separate_from_4_spillere: true } : undefined };
+  })
   .sort((a, b) => a.format.localeCompare(b.format, 'da'));
+const fourToEightPools = [...poolFormats.values()].filter((pool) => pool.format === '4-8 spillere' && !dmuRow(pool.division_name_raw) && !uge38Row(pool.division_name_raw));
+const fourPlayerPools = [...poolFormats.values()].filter((pool) => pool.format === '4 spillere' && !dmuRow(pool.division_name_raw) && !uge38Row(pool.division_name_raw));
+const signatureCounts = (pools) => Object.fromEntries([...new Set(pools.map((pool) => pool.category_signature))]
+  .sort((a,b) => a.localeCompare(b, 'da')).map((signature) => [signature, pools.filter((pool) => pool.category_signature === signature).length]));
+const fourToEightDataCheck = { not_merged: true, four_to_eight_physical_pools: fourToEightPools.length,
+  four_to_eight_signatures: signatureCounts(fourToEightPools), four_player_physical_pools: fourPlayerPools.length,
+  four_player_signatures: signatureCounts(fourPlayerPools),
+  shared_signatures: [...new Set(fourToEightPools.map((pool) => pool.category_signature))].filter((signature) => fourPlayerPools.some((pool) => pool.category_signature === signature)).sort() };
 const uninterpretableDivisionNames = [...new Set(physicalGroupRows.filter((r) => !parseLevel(r.division_name_raw).interpretable).map((r) => r.division_name_raw ?? '(mangler)'))].sort((a, b) => a.localeCompare(b, 'da'));
+const levelPattern = (name) => {
+  const value = String(name ?? '');
+  if (uge38Row(value)) return 'UGE 38-rækker';
+  if (/\bDMU\b/iu.test(value)) return 'DMU-rækker';
+  if (/Kredsmatch/iu.test(value)) return 'Kredsmatch';
+  if (/\bPulje\s*\d*/iu.test(value)) return 'Pulje-navne';
+  if (/\b(?:åben|aaben)\s+række/iu.test(value)) return 'Åben række';
+  if (/\bU\d+\b.*\d+\s*\+\s*\d+/iu.test(value)) return 'Aldersgruppe med formatkombination';
+  return 'Andre niveau-/rækkenavne uden bogstav+tal';
+};
+const uninterpretableLevelGroups = [...new Set(uninterpretableDivisionNames.map(levelPattern))].map((pattern) => {
+  const names = uninterpretableDivisionNames.filter((name) => levelPattern(name) === pattern);
+  const rows = physicalGroupRows.filter((row) => names.includes(row.division_name_raw ?? '(mangler)'));
+  return { pattern, distinct_names: names.length, posts: rows.length, examples: names.slice(0, 3) };
+}).sort((a,b) => b.posts - a.posts || a.pattern.localeCompare(b.pattern, 'da'));
 const dmuRowsOutput = [];
 for (const period of placements) {
   const seen = new Set();
@@ -596,7 +653,7 @@ for (const period of placements) {
     if (seen.has(key)) continue;
     seen.add(key);
     const hasLocal = gsbTeams.some((candidate) => candidate.season_id === period.season_id && candidate.age_group_id === period.age_group_id
-      && candidate.raw_team_name === team.raw_team_name && !dmuRow(candidate.division_name_raw));
+      && candidate.raw_team_name === team.raw_team_name && !dmuRow(candidate.division_name_raw) && !uge38Row(candidate.division_name_raw));
     const sameNamePosts = period.dmu_gsb_teams.filter((candidate) => candidate.raw_team_name === team.raw_team_name);
     dmuRowsOutput.push({ season_id: period.season_id, season: period.season, age_group_id: period.age_group_id,
       age_group_name: period.age_group_name, raw_team_name: team.raw_team_name, format: team.format,
@@ -606,21 +663,34 @@ for (const period of placements) {
       also_in_local_row: hasLocal, local_unique_identity_key: `${period.season_id}|${period.age_group_id}|${team.raw_team_name}` });
   }
 }
-const uge38Report = uge38Rows.map((row) => {
-  const pool = poolFormats.get(poolKey(row));
-  const rawTeams = teamsByPool.get(poolKey(row)) ?? [];
-  const gsbNames = rawTeams.filter((t) => isGsb(t.team_name_raw)).map((t) => t.team_name_raw);
-  const responseText = String(row.raw_response ?? '').replace(/<[^>]*>/gu, ' ').replace(/\s+/gu, ' ').trim();
+const uge38GroupMap = new Map();
+for (const row of uge38Rows) {
+  const key = `${row.season_id}|${row.age_group_id}|${row.division_name_raw}`;
+  if (!uge38GroupMap.has(key)) uge38GroupMap.set(key, []);
+  uge38GroupMap.get(key).push(row);
+}
+const uge38Report = [...uge38GroupMap.values()].map((rows) => {
+  const row = rows[0];
+  const pools = rows.map((item) => poolFormats.get(poolKey(item))).filter(Boolean);
+  const rawTeams = rows.flatMap((item) => teamsByPool.get(poolKey(item)) ?? []);
+  const gsbNames = [...new Set(rawTeams.filter((t) => isGsb(t.team_name_raw)).map((t) => t.team_name_raw))];
+  const responseTexts = rows.map((item) => String(item.raw_response ?? '').replace(/<[^>]*>/gu, ' ').replace(/\s+/gu, ' ').trim());
+  const normalRowsForAge = [...new Set(physicalGroupRows.filter((candidate) => candidate.season_id === row.season_id && candidate.age_group_id === row.age_group_id
+    && !dmuRow(candidate.division_name_raw) && !uge38Row(candidate.division_name_raw)).map((candidate) => candidate.division_name_raw))];
   return { season: seasonLabel(row.season_id), season_id: row.season_id, age_group_id: row.age_group_id,
-    age_group_name: row.age_group_name, format: pool?.format ?? null, level: pool?.level ?? parseLevel(row.division_name_raw),
-    physical_pool_key: poolKey(row), division_name_raw: row.division_name_raw, group_name_raw: row.group_name_raw,
+    age_group_name: row.age_group_name, format: [...new Set(pools.map((pool) => pool.format))].join('; '), level: parseLevel(row.division_name_raw),
+    physical_pool_keys: rows.map(poolKey), division_name_raw: row.division_name_raw,
+    group_names_raw: rows.map((item) => item.group_name_raw), physical_pool_count: rows.length,
     team_count: rawTeams.length, team_names: rawTeams.map((t) => t.team_name_raw), gsb_team_names: gsbNames,
-    gsb_also_in_other_row_same_season_age: gsbNames.map((teamName) => ({ team_name: teamName,
-      also_in_other_row: gsbTeams.some((t) => t.season_id === row.season_id && t.age_group_id === row.age_group_id
-        && t.raw_team_name === teamName && t.physical_pool_key !== poolKey(row)) })),
-    detail_response_present: Boolean(row.raw_response), detail_repeats_uge38_text: /UGE\s*38/iu.test(responseText),
-    detail_text_excerpt: responseText.slice(0, 500) };
+    gsb_also_in_normal_row_same_season: gsbNames.map((teamName) => ({ team_name: teamName,
+      also_in_normal_row: gsbTeams.some((t) => t.season_id === row.season_id && t.age_group_id === row.age_group_id
+        && t.raw_team_name === teamName && !dmuRow(t.division_name_raw) && !uge38Row(t.division_name_raw)) })),
+    detail_response_present: rows.every((item) => Boolean(item.raw_response)), detail_repeats_uge38_text: responseTexts.every((text) => /UGE\s*38/iu.test(text)),
+    detail_text_excerpt: responseTexts.find(Boolean)?.slice(0, 500) ?? null,
+    source_row_level_normal_rows_in_season_age: normalRowsForAge.length };
 });
+const uge38Seasons = [...new Set(uge38Report.map((row) => row.season_id))].sort((a,b) => a-b);
+const uge38FirstSeason = uge38Seasons[0] ?? null;
 const formatLevelCrossings = placements.filter((period) => period.format_level_crossings.girls_c_and_players_d_present)
   .map((period) => ({ season: period.season, age_group_id: period.age_group_id, age_group_name: period.age_group_name,
     note: '4 piger C og 4 spillere D findes samtidig; formatrækkefølgen styrer, niveau sammenlignes ikke på tværs.' }));
@@ -628,7 +698,19 @@ const u13Control = placements.find((p) => p.season_id === 2024 && p.age_group_id
 const u13Rows = u13Control?.kbh_width?.all_rows ?? [];
 const u13GsbRows = u13Rows.filter((row) => row.gsb_teams.length > 0);
 const u13RowsWithoutKredsmatch = u13Rows.filter((row) => !kredsmatchRow(row.division_name_raw));
+const u13RowsWithoutUge38AndKredsmatch = u13Rows.filter((row) => !kredsmatchRow(row.division_name_raw) && !uge38Row(row.division_name_raw));
+const u13RowsIncludingUge38 = u13Rows.filter((row) => !kredsmatchRow(row.division_name_raw));
 const u13GsbRowsWithoutKredsmatch = u13RowsWithoutKredsmatch.filter((row) => row.gsb_teams.length > 0);
+const u13GsbRowsWithoutUge38AndKredsmatch = u13RowsWithoutUge38AndKredsmatch.filter((row) => row.gsb_teams.length > 0);
+const u13BestFormatPass = u13Control?.gsb_best_format?.format === '2+2' && u13Control?.gsb_best_format?.level?.letter === 'A'
+  && u13Control?.gsb_best_format?.level?.numeric_value === 5600;
+const u13WidthPass = u13GsbRowsWithoutUge38AndKredsmatch.length === 5 && u13RowsWithoutUge38AndKredsmatch.length === 10;
+const u13FixedFormatNames = ['4+3', '2+2', '4 spillere', '4 piger'];
+const u13FixedFormatPlaces = u13FixedFormatNames.map((format) => u13Control?.format_hierarchy.find((row) => row.format === format)?.place_in_season_age ?? null);
+const u13FixedFormatOrderPass = u13FixedFormatPlaces.every((place) => place !== null)
+  && u13FixedFormatPlaces.every((place, index) => index === 0 || u13FixedFormatPlaces[index - 1] < place);
+const u13DmuTeamNames = [...new Set((u13Control?.dmu_gsb_teams ?? []).map((team) => team.raw_team_name))].sort((a,b) => a.localeCompare(b, 'da'));
+const u13DmuPass = u13Control?.gsb_dmu_records === 5 && JSON.stringify(u13DmuTeamNames) === JSON.stringify(['Gladsaxe Søborg 1', 'Gladsaxe Søborg 2', 'Gladsaxe Søborg 3']);
 const formatHierarchyCheck = [
   ['2+2', 'U13 A, 5600 (2+2)', 'A', 5600], ['4 spillere', 'U13 B, 5000 (4 spillere)', 'B', 5000],
   ['4 spillere', 'U13 C, 4200 (4 spillere)', 'C', 4200], ['4 spillere', 'U13 D 3600 (4 spillere).', 'D', 3600],
@@ -768,37 +850,50 @@ const report = {
     fixed_hierarchy: ['4+3', '4+2', '2+2', '4 spillere', '4 piger'],
     hierarchy_caveat: 'Christoffers rangering, ikke reglementsbestemt; not a sports-strength comparison across formats.',
     provisional_formats: provisionalFormatCounts,
-    local_place: 'Position among formats present in the same age_group_id and season_id. Fixed formats use the agreed hierarchy; other formats are shown as provisional/unapproved and never silently treated as approved.',
+    local_place: 'Among the same national season and age group, x/n is computed only for the five fixed formats. All remaining formats and non-canonical signatures are Ikke placeret.',
+    four_to_eight_data_check: fourToEightDataCheck,
     level_order: 'Within same format only: A > B > C > D, then numeric value descending. C-D/range and missing level are not forced into a single letter rank. No cross-format level comparison.',
     regulation_source: 'Badminton Danmark/DGI Badminton, Fælles reglement for ungdomsholdturneringen 2025/2026, §9 and §12: https://badminton.dk/wp-content/uploads/2025/10/Faelles-reglement-for-ungdomsholdturneringen-2025-10-08.pdf',
+    regulation_notes: 'Verificeret for 2025/26: §9 stk. 3a, s. 4-6 angiver tallet i rækkenavnet som holdets maksimale samlede niveauklassifikationspoint. Hierarkiet er Christoffers rangering, ikke et reglementskrav, men stemmer med §12, s. 7. Kun 2025/26 er verificeret; ældre sæsoner afventer kort 130.',
     level_parse_counts: { distinct_youth_division_names: new Set(physicalGroupRows.map((r) => r.division_name_raw ?? '(mangler)')).size,
       interpretable_level_labels: new Set(physicalGroupRows.filter((r) => parseLevel(r.division_name_raw).interpretable).map((r) => r.division_name_raw)).size,
       range_level_names_not_ordered: new Set(physicalGroupRows.filter((r) => parseLevel(r.division_name_raw).raw_level?.includes('-')).map((r) => r.division_name_raw)).size,
-      uninterpretable_distinct_names: uninterpretableDivisionNames.length, uninterpretable_names: uninterpretableDivisionNames },
+      uninterpretable_distinct_names: uninterpretableDivisionNames.length, uninterpretable_names: uninterpretableDivisionNames, grouped_patterns: uninterpretableLevelGroups },
     numeric_interpretation: 'The cited 2025/26 §9 says team composition uses season-start ranking classification by letter or point value, and its tables state max combined classification points for named formats. Extracted row numbers are retained as raw numeric values; this edition does not prove every historic row suffix was governed by the same thresholds.',
-    unplaced: 'No usable category signature/format rank in 126; kept separate and never guessed.',
+    unplaced: 'Only 4+3, 4+2, 2+2, 4 spillere and 4 piger are placed. All other formats and non-canonical signatures are Ikke placeret.',
   },
   gsb_totals: gsbTotal,
   dmu_gsb_unique_rows: dmuRowsOutput,
   uge_38_rows: uge38Report,
+  uge_38_first_season: uge38FirstSeason === null ? null : { season_id: uge38FirstSeason, season: seasonLabel(uge38FirstSeason), all_seasons: uge38Seasons.map((id) => ({ season_id: id, season: seasonLabel(id) })) },
   format_level_crossings: formatLevelCrossings,
   controls_129: {
     u13_2024_25_region8: { total_division_rows: u13Rows.length, gsb_rows: u13GsbRows.length,
       division_rows_without_kredsmatch: u13RowsWithoutKredsmatch.length, gsb_rows_without_kredsmatch: u13GsbRowsWithoutKredsmatch.length,
-      expected_values_match: u13Rows.length === 13 && u13GsbRows.length === 6 && u13RowsWithoutKredsmatch.length === 12 && u13GsbRowsWithoutKredsmatch.length === 6,
+      without_uge38_and_kredsmatch: { total: u13RowsWithoutUge38AndKredsmatch.length, gsb_in: u13GsbRowsWithoutUge38AndKredsmatch.length },
+      with_uge38_without_kredsmatch: { total: u13RowsIncludingUge38.length, gsb_in: u13GsbRowsWithoutKredsmatch.length },
+      with_uge38_and_kredsmatch: { total: u13Rows.length, gsb_in: u13GsbRows.length },
+      expected_values_match: u13Rows.length === 13 && u13GsbRows.length === 6
+        && u13RowsWithoutKredsmatch.length === 12 && u13GsbRowsWithoutKredsmatch.length === 6
+        && u13RowsWithoutUge38AndKredsmatch.length === 10 && u13GsbRowsWithoutUge38AndKredsmatch.length === 5,
       rows: u13Rows, rows_without_kredsmatch: u13RowsWithoutKredsmatch },
     u13_format_sample: formatHierarchyCheck,
     u13_format_order_pass: u13FormatOrderPass,
+    u13_best_format_pass: u13BestFormatPass,
+    u13_fixed_format_order_pass: u13FixedFormatOrderPass,
+    u13_dmu_5_records_teams_1_2_3_pass: u13DmuPass,
+    u13_width_5_of_10_pass: u13WidthPass,
     u13_all_posts_crosscheck: (() => {
       const allAgeRecords = gsbTeams.filter((team) => team.season_id === 2024 && team.age_group_id === 4);
-      const localRecords = allAgeRecords.filter((team) => !dmuRow(team.division_name_raw));
+      const localRecords = allAgeRecords.filter((team) => !dmuRow(team.division_name_raw) && !uge38Row(team.division_name_raw));
+      const uge38Records = allAgeRecords.filter((team) => uge38Row(team.division_name_raw));
       const dmuRecords = allAgeRecords.filter((team) => dmuRow(team.division_name_raw));
-      return { total_posts: allAgeRecords.length, local_posts: localRecords.length, dmu_posts: dmuRecords.length,
+      return { total_posts: allAgeRecords.length, local_posts: localRecords.length, uge38_posts: uge38Records.length, dmu_posts: dmuRecords.length,
         unique_raw_team_names_all: new Set(allAgeRecords.map((team) => team.raw_team_name)).size,
         unique_dmu_raw_team_names: new Set(dmuRecords.map((team) => team.raw_team_name)).size,
         unique_dmu_teams_also_local: new Set(dmuRecords.filter((dmu) => localRecords.some((local) => local.raw_team_name === dmu.raw_team_name)).map((team) => team.raw_team_name)).size };
     })(),
-    gsb_balance: gsbTotal.found === gsbTotal.placed_active + gsbTotal.unplaced_active + gsbTotal.withdrawn + gsbTotal.dmu_records,
+    gsb_balance: gsbTotal.found === gsbTotal.placed_active + gsbTotal.unplaced_active + gsbTotal.withdrawn + gsbTotal.dmu_records + gsbTotal.uge38_records,
     dmu_unique_teams_deduplicated: gsbTotal.dmu_unique_season_age_team_names === dmuRowsOutput.length,
   },
   placement_by_season_age: placements,
@@ -807,7 +902,7 @@ const report = {
   collaborations_separate: collaborationOutput,
   controls: {
     manual_samples: sampleChecks,
-    gsb_balance: gsbTotal.found === gsbTotal.placed_active + gsbTotal.unplaced_active + gsbTotal.withdrawn + gsbTotal.dmu_records,
+    gsb_balance: gsbTotal.found === gsbTotal.placed_active + gsbTotal.unplaced_active + gsbTotal.withdrawn + gsbTotal.dmu_records + gsbTotal.uge38_records,
     region_id_8_exact_name: regionCopenhagen.name === 'Badminton København',
     region_8_missing_division_rows: rowStructure.missing_division_rows,
     all_region_8_pools_have_details: detailsCoverage.pools === detailsCoverage.detailed_pools,
@@ -827,10 +922,11 @@ if (!report.controls.all_region_8_pools_have_details) throw new Error('Region 8 
 if (!report.controls.database_hashes_and_row_counts_unchanged) throw new Error('A read-only database baseline changed');
 if (!report.controls.database_hashes_match_known_baseline) throw new Error(`Database hashes differ from the task's known baseline: ${JSON.stringify(before)}`);
 if (!report.controls_129.u13_2024_25_region8.expected_values_match) throw new Error(`U13 width control failed: ${JSON.stringify(report.controls_129.u13_2024_25_region8)}`);
-if (!report.controls_129.u13_format_order_pass) throw new Error(`U13 format/level sample failed: ${JSON.stringify(report.controls_129.u13_format_sample)}`);
-if (!report.controls_129.gsb_balance || !report.controls_129.dmu_unique_teams_deduplicated) throw new Error(`GSB/DMU reconciliation failed: ${JSON.stringify(report.controls_129)}`);
+if (!report.controls_129.u13_format_order_pass || !report.controls_129.u13_best_format_pass || !report.controls_129.u13_fixed_format_order_pass
+  || !report.controls_129.u13_dmu_5_records_teams_1_2_3_pass || !report.controls_129.u13_width_5_of_10_pass) throw new Error(`U13 format/level/width/DMU sample failed: ${JSON.stringify(report.controls_129)}`);
+if (!report.controls_129.gsb_balance || !report.controls_129.dmu_unique_teams_deduplicated) throw new Error(`GSB/DMU/UGE 38 reconciliation failed: ${JSON.stringify(report.controls_129)}`);
 const u13AllPosts = report.controls_129.u13_all_posts_crosscheck;
-if (u13AllPosts.total_posts !== 14 || u13AllPosts.local_posts !== 9 || u13AllPosts.dmu_posts !== 5
+if (u13AllPosts.total_posts !== 14 || u13AllPosts.local_posts !== 8 || u13AllPosts.uge38_posts !== 1 || u13AllPosts.dmu_posts !== 5
   || u13AllPosts.unique_raw_team_names_all !== 9 || u13AllPosts.unique_dmu_raw_team_names !== 3
   || u13AllPosts.unique_dmu_teams_also_local !== 3) throw new Error(`U13 local/DMU reconciliation failed: ${JSON.stringify(u13AllPosts)}`);
 
@@ -854,7 +950,9 @@ const placementRows = placements.map((r) => [
 const widthRows = placements.filter((r) => r.kbh_width).map((r) => [
   seasonReportLabel(r), `${r.age_group_name} (ID ${r.age_group_id})`,
   `${r.kbh_width.league_rows.gsb_in} af ${r.kbh_width.league_rows.total} (${pct(r.kbh_width.league_rows.percent)})`,
-  `${r.kbh_width.league_rows_including_kredsmatch.gsb_in} af ${r.kbh_width.league_rows_including_kredsmatch.total} inkl. Kredsmatch`,
+  `${r.kbh_width.league_rows_without_uge38_including_kredsmatch.gsb_in} af ${r.kbh_width.league_rows_without_uge38_including_kredsmatch.total} uden UGE 38, inkl. Kredsmatch`,
+  `${r.kbh_width.league_rows_including_uge38_without_kredsmatch.gsb_in} af ${r.kbh_width.league_rows_including_uge38_without_kredsmatch.total} inkl. UGE 38, uden Kredsmatch`,
+  `${r.kbh_width.league_rows_including_uge38_and_kredsmatch.gsb_in} af ${r.kbh_width.league_rows_including_uge38_and_kredsmatch.total} inkl. UGE 38 og Kredsmatch`,
   `${r.kbh_width.physical_pools.gsb_in} af ${r.kbh_width.physical_pools.total} (${pct(r.kbh_width.physical_pools.percent)})`,
   `${r.kbh_width.physical_pools_including_kredsmatch.gsb_in} af ${r.kbh_width.physical_pools_including_kredsmatch.total} inkl. Kredsmatch`,
   `${r.kbh_width.gsb_withdrawn_records_excluded} (${JSON.stringify(r.kbh_width.withdrawn_by_reason)})`,
@@ -901,15 +999,21 @@ const dmuMarkdownRows = dmuRowsOutput.map((row) => [row.season, `${row.age_group
   row.dmu_post_count, row.dmu_physical_pools.join('; '),
   row.also_in_local_row ? 'ja (samme rånavn lokal række)' : 'nej']);
 const uge38MarkdownRows = uge38Report.map((row) => [row.season, `${row.age_group_name} (${row.age_group_id})`, row.format,
-  row.division_name_raw, row.group_name_raw, row.team_count, row.gsb_team_names.join('; ') || '—',
-  row.gsb_also_in_other_row_same_season_age.map((x) => `${x.team_name}: ${x.also_in_other_row ? 'ja' : 'nej'}`).join('; ') || '—',
-  row.detail_repeats_uge38_text ? 'ja; HTML gentager navnet' : 'nej/ingen respons']);
+  row.division_name_raw, row.level?.raw_level ?? 'niveau ikke tolket', row.team_count, row.gsb_team_names.join('; ') || '—',
+  row.gsb_also_in_normal_row_same_season.map((x) => `${x.team_name}: ${x.also_in_normal_row ? 'ja' : 'nej'}`).join('; ') || '—']);
+const unplacedMarkdownRows = provisionalFormatCounts.map((row) => [row.format, row.physical_pools, row.team_pool_records,
+  row.rows.join('; '), row.gsb_records, row.raw_team_names.join('; ') || '—']);
+const missingRowMarkdownRows = placements.flatMap((period) => (period.kbh_width?.missing_rows ?? []).map((row) => [
+  seasonReportLabel(period), `${period.age_group_name} (${period.age_group_id})`, row.division_name_raw,
+  row.format, row.level?.raw_level ?? 'niveau ikke tolket', row.team_count, row.clubs.join('; '),
+]));
 const normalizedHashLines = [
   `- gsb-statistik-normalized.db SHA-256: \`${before.normalized.sha256}\` → \`${after.normalized.sha256}\``,
   `  Rækketal før/efter: \`${JSON.stringify(before.normalized.row_counts)}\` / \`${JSON.stringify(after.normalized.row_counts)}\``,
   `- liga-landskab.db SHA-256: \`${before.landscape.sha256}\` → \`${after.landscape.sha256}\``,
   `  Rækketal før/efter: \`${JSON.stringify(before.landscape.row_counts)}\` / \`${JSON.stringify(after.landscape.row_counts)}\``,
 ];
+const uninterpretableMarkdown = `# Opgave 129 — rækkenavne uden tolket bogstav og tal\n\nMetode: unikke ungdomsrækkenavne hvor niveauparseren ikke fandt et fortolkeligt niveau. Gruppering er mønsterbaseret, ikke en niveautolkning. Antal poster tæller fysiske league_groups-rækker.\n\n${mdTable(['Mønstergruppe', 'Unikke rækkenavne', 'Poster', 'Eksempler (op til 3)'], uninterpretableLevelGroups.map((group) => [group.pattern, group.distinct_names, group.posts, group.examples.join('; ')]))}\n`;
 const markdown = `# Opgave 127 — formatplacering og deltagelsesbredde for GSB's ungdom
 
 ## Metode og godkendte regler
@@ -934,11 +1038,13 @@ Puljenes format fortsætter med 126's per-pulje-metode (125-afgørelser for S4/D
 
 Niveaukilde: Badminton Danmark/DGI Badminton, *Fælles reglement for ungdomsholdturneringen 2025/2026*, §9 og §12 ([officiel PDF](https://badminton.dk/wp-content/uploads/2025/10/Faelles-reglement-for-ungdomsholdturneringen-2025-10-08.pdf)). §9 omtaler klassifikation ved sæsonstart (bogstav eller pointtal) og pointlofter for bestemte holdtyper; §12 beskriver holdtypen før niveau i nummereringsrækkefølgen. Kilden er 2025/26, og historiske thresholds er ikke interpoleret.
 
-Formater uden godkendt plads står som **foreløbig, ikke godkendt**. Tabellen tæller distinkte fysiske puljer nationalt; den er ikke et godkendt hierarki:
+Kun **4+3 > 4+2 > 2+2 > 4 spillere > 4 piger** indgår i formatplaceringen. 3 spillere, 5 spillere, X1, X2, 4-8 spillere og alle ikke-kanoniske signaturer står som **Ikke placeret**; de indgår hverken i hierarkiets x/n eller i formatplaceringen. Tabellen viser fysiske puljer, rækker, poster og GSB-hold:
 
-${mdTable(['Foreløbigt format', 'Fysiske puljer', 'Grundlag/forbehold'], provisionalFormatCounts.map((row) => [row.format, row.physical_pools, row.candidate_basis]))}
+${mdTable(['Ikke placeret format/signatur', 'Fysiske puljer', 'Hold-puljeposter', 'Rækker', 'GSB-poster', 'Holdnavne'], unplacedMarkdownRows)}
 
-Niveau udtrækkes fra rækkenavnet. Reglementets 2025/26 §9 siger at holdopstilling tager udgangspunkt i sæsonstartens niveauklassifikation (bogstav eller pointtal) og omtaler maksimale samlede klassifikationspoint i skemaerne; §12 beskriver klubbernes nummerering med holdtyper før niveauorden. Dette dokument bruger A>B>C>D og derefter numerisk værdi faldende **kun inden for samme format**. C-D intervaller og manglende etiketter får ingen opfundet enkeltplads. I ${report.rank_method.level_parse_counts.distinct_youth_division_names} forskellige ungdomsrækkenavne blev ${report.rank_method.level_parse_counts.interpretable_level_labels} etiketter udtrukket; ${report.rank_method.level_parse_counts.range_level_names_not_ordered} rækkeetiketter har et intervalniveau og ${report.rank_method.level_parse_counts.uninterpretable_distinct_names} kunne ikke tolkes. Den fulde liste ligger i JSON.
+Reglementets §7 bruger “4-8 spillere” om spillerantallet pr. kamp i et format, der kaldes “4 spillere”. Her holdes 4-8 spiller-puljer adskilt fra 4 spillere. Dataafprøvningen: ${fourToEightDataCheck.four_to_eight_physical_pools} puljer med 4-8-etiket og ${fourToEightDataCheck.four_player_physical_pools} med 4-spillere-etiket; fælles eksakte kategorisignaturer: ${fourToEightDataCheck.shared_signatures.join('; ') || 'ingen'}. Signaturfordelinger står i JSON. Dette er kun sammenligning af rå klassifikationer, ikke en sammenlægning.
+
+Niveau udtrækkes fra rækkenavnet. Reglementet 2025/26 §9 stk. 3a, s. 4-6 angiver tallet i rækkenavnet som holdets maksimale samlede niveauklassifikationspoint. Hierarkiet er Christoffers rangering, ikke reglementsbestemt, men stemmer med §12, s. 7. Kun 2025/26 er verificeret; ældre sæsoner afventer kort 130. A>B>C>D og derefter numerisk værdi bruges **kun inden for samme format**. C-D intervaller og manglende etiketter får ingen opfundet enkeltplads. I ${report.rank_method.level_parse_counts.distinct_youth_division_names} forskellige ungdomsrækkenavne blev ${report.rank_method.level_parse_counts.interpretable_level_labels} etiketter udtrukket; ${report.rank_method.level_parse_counts.range_level_names_not_ordered} rækkeetiketter har intervalniveau, og ${report.rank_method.level_parse_counts.uninterpretable_distinct_names} kunne ikke tolkes. Grupperet liste: \`statistik/results/129-uoplyste-niveauer.md\`.
 
 ${mdTable(['Sæson', 'Aldersgruppe', 'GSB hold-puljeposter', 'GSB-status', 'Bedste GSB-format', 'Højeste nationalt', 'Aktive uplacerede', 'Udgået/trukket'], placementRows)}
 
@@ -976,7 +1082,7 @@ ${mdTable(['Sæson', 'Alder', 'Råt holdnavn', 'Fysisk pulje', 'Format', 'Bogsta
 
 \`GSB i x af n\` viser både antal og procent. Udgåede/trukne hold tæller ikke i x; de vises særskilt. 2026/2027 er markeret **i gang, ufuldstændig** og indgår ikke i “Samlet over tid”. Samlet over tid summeres afsluttede sæsoner kun inden for samme aldersgruppe.
 
-${mdTable(['Sæson', 'Aldersgruppe', 'Rækker uden Kredsmatch', 'Rækker inkl. Kredsmatch', 'Puljer uden Kredsmatch', 'Puljer inkl. Kredsmatch', 'Udeladte GSB-hold'], widthRows)}
+${mdTable(['Sæson', 'Aldersgruppe', 'Rækker uden UGE 38/Kredsmatch', 'Uden UGE 38, inkl. Kredsmatch', 'Med UGE 38, uden Kredsmatch', 'Med UGE 38 og Kredsmatch', 'Puljer uden UGE 38/Kredsmatch', 'Puljer uden UGE 38, inkl. Kredsmatch', 'Udeladte GSB-hold'], widthRows)}
 
 ### Række-for-række bevis (region 8)
 
@@ -984,13 +1090,19 @@ Alle division-rækker vises, også rækker udeladt fra tælleren; GSB-hold er na
 
 ${mdTable(['Sæson', 'Alder', 'division_name_raw', 'Med i bredde?', 'Aktive GSB-hold'], widthEvidenceRows)}
 
+### Rækker i region 8 uden GSB
+
+Listen er pr. sæson og aldersgruppe; klubber er normaliseret fra holdnavnene, og format/niveau er kun vist som data, ikke fortolket ud over parserens resultat.
+
+${mdTable(['Sæson', 'Alder', 'Række', 'Format', 'Niveau', 'Antal hold', 'Klubber'], missingRowMarkdownRows)}
+
 ### Samlet over tid pr. aldersgruppe (sæsonoptællinger summeret)
 
 ${mdTable(['Aldersgruppe', 'Sæsoner', 'Rækker/ligaer', 'Fysiske puljer'], overallRows)}
 
 ## Optælling
 
-- GSB-hold-puljeposter fundet: **${gsbTotal.found}** = lokalt placerede **${gsbTotal.placed_active}** + lokalt uplacerede **${gsbTotal.unplaced_active}** + lokalt udgået/trukket **${gsbTotal.withdrawn}** + DMU-poster **${gsbTotal.dmu_records}**.
+- GSB-hold-puljeposter fundet: **${gsbTotal.found}** = placerede **${gsbTotal.placed_active}** + ikke placerede **${gsbTotal.unplaced_active}** + udgåede/trukne **${gsbTotal.withdrawn}** + DMU-poster **${gsbTotal.dmu_records}** + UGE 38-poster **${gsbTotal.uge38_records}**.
 - Udgået: **${gsbTotal.withdrawn_by_reason.udgået}**; trukket: **${gsbTotal.withdrawn_by_reason.trukket}**.
 - Samarbejdshold rapporteret separat, ikke GSB: **${gsbTotal.collaboration_records_separate_not_counted_as_gsb}**.
 
@@ -1002,17 +1114,21 @@ Stikprøverne blev sammenholdt med de rå \`league_groups\`, \`league_group_regi
 
 ### Særskilt kontrol: U13 2024/25
 
-Format-/niveauprøven forventes i denne rækkefølge: 2+2 A 5600 > 4 spillere B 5000 > C 4200 > D 3600 > 4 piger D 3200. Region 8 har ${report.controls_129.u13_2024_25_region8.total_division_rows} rækker og ${report.controls_129.u13_2024_25_region8.gsb_rows} GSB-rækker; uden Kredsmatch ${report.controls_129.u13_2024_25_region8.division_rows_without_kredsmatch} rækker og ${report.controls_129.u13_2024_25_region8.gsb_rows_without_kredsmatch} GSB-rækker. Alle fem format-/niveauprøver bestod: ${report.controls_129.u13_format_order_pass}.
+Format-/niveauprøven forventes: 2+2 A 5600 > 4 spillere B 5000 > C 4200 > D 3600 > 4 piger D 3200. Bedste GSB-format er 2+2 A 5600: ${u13BestFormatPass}. Formatkontrolrækkefølgen 4+3 > 2+2 > 4 spillere > 4 piger: ${u13FixedFormatOrderPass}. Bredde uden UGE 38 og Kredsmatch: ${report.controls_129.u13_2024_25_region8.without_uge38_and_kredsmatch.gsb_in} af ${report.controls_129.u13_2024_25_region8.without_uge38_and_kredsmatch.total}; med UGE 38 uden Kredsmatch: ${report.controls_129.u13_2024_25_region8.with_uge38_without_kredsmatch.gsb_in} af ${report.controls_129.u13_2024_25_region8.with_uge38_without_kredsmatch.total}; med begge: ${report.controls_129.u13_2024_25_region8.with_uge38_and_kredsmatch.gsb_in} af ${report.controls_129.u13_2024_25_region8.with_uge38_and_kredsmatch.total}. Kontrol 5/10 bestod: ${u13WidthPass}. Alle fem format-/niveauprøver bestod: ${report.controls_129.u13_format_order_pass}. DMU: 5 poster for GSB 1, 2 og 3: ${u13DmuPass}.
 
-Samlet U13-puljepostafstemning: ${u13AllPosts.total_posts} = ${u13AllPosts.local_posts} lokalrække-poster + ${u13AllPosts.dmu_posts} DMU-poster; ${u13AllPosts.unique_raw_team_names_all} unikke rå holdnavne i alt, hvor DMU omfatter ${u13AllPosts.unique_dmu_raw_team_names} hold, og alle ${u13AllPosts.unique_dmu_teams_also_local} også optræder i lokal række. Kortets tidligere “14 poster for 9 hold” var en fejl: 14 er samlet lokal+DMU-poster, ikke DMU alene.
+Samlet U13-puljepostafstemning: ${u13AllPosts.total_posts} = ${u13AllPosts.local_posts} almindelige region-8-poster + ${u13AllPosts.uge38_posts} UGE 38-poster + ${u13AllPosts.dmu_posts} DMU-poster; ${u13AllPosts.unique_raw_team_names_all} unikke rå holdnavne i alt. DMU omfatter ${u13AllPosts.unique_dmu_raw_team_names} hold, og ${u13AllPosts.unique_dmu_teams_also_local} spiller også i almindelig region-8-række. DMU-kontrollen er 5 poster for GSB 1, 2 og 3.
 
-## UGE 38 — kildedata og uafklaret betydning
+## UGE 38 — særskilt ekstraordinær turnering
 
-Databasen indeholder ${uge38Report.length} ungdoms-puljeposter med “UGE 38” i rækkenavnet; tabellen viser sæson, alder, format, række, puljenavn, holdantal, GSB-hold og om de også optræder i anden række. ${uge38Report.filter((row) => row.detail_repeats_uge38_text).length} rå detailresponser gentager “UGE 38” i den viste HTML-tekst. Det beviser rækkenavnet og at der findes pulje-/holddata; det fastslår ikke hvad “UGE 38” organisatorisk betyder eller om det giver adgang til DMU.
+Christoffers afgørelse, baseret på DGI's “Uge 38 invitation 2026-2027”: UGE 38 er en separat, ekstraordinær 2+2-turnering for U13-U19 med én plads til DMU Hold til vinderen af hver række. Det er ikke en almindelig Badminton København-række. UGE 38 udelades derfor fra formatplacering og bredde; egne rækker vises her. Første sæson i data er **${uge38FirstSeason === null ? 'ikke fundet' : seasonLabel(uge38FirstSeason)}**; samtlige sæsoner: ${uge38Seasons.map(seasonLabel).join(', ') || 'ingen'}.
 
-${mdTable(['Sæson', 'Alder', 'Format', 'Rækkenavn', 'Pulje/fase', 'Hold', 'GSB', 'GSB også anden række?', 'Detalje gentager UGE 38'], uge38MarkdownRows)}
+${mdTable(['Sæson', 'Alder', 'Format', 'Rækkenavn', 'Niveau', 'Antal hold', 'GSB-hold', 'GSB også i normal række?'], uge38MarkdownRows)}
 
 Samtidige “4 piger C” og “4 spillere D”-rækker forekommer i ${formatLevelCrossings.length} sæson/aldersgruppe-kombinationer. Hvor de forekommer, anvendes formatrækkefølgen; bogstaver sammenlignes ikke på tværs af formater. Se JSON-feltet \`format_level_crossings\`.
+
+## Spørgsmål
+
+- “4-8 spillere” er ikke slået sammen med “4 spillere”. De 131 4-8-puljer har alle signaturen \`1. D · 1. S · 2. D · 2. S · 3. S · 4. S\`; den samme signatur forekommer i 3.530 af 3.538 4-spillere-puljer. Det viser fælles kampkategorisammensætning i data, men beviser ikke at formatnavnene er synonymer. Signaturtallene og alle rå puljer er i JSON.
 
 ## Databaseværn
 
@@ -1024,6 +1140,7 @@ Alle SHA-256 og tabelrækketal er ens før/efter; databaser åbnet \`readOnly: t
 fs.mkdirSync(path.dirname(jsonPath), { recursive: true });
 fs.writeFileSync(jsonPath, `${JSON.stringify(report, null, 2)}\n`, 'utf8');
 fs.writeFileSync(mdPath, markdown, 'utf8');
+fs.writeFileSync(path.resolve('statistik/results/129-uoplyste-niveauer.md'), uninterpretableMarkdown, 'utf8');
 console.log(JSON.stringify({
   gsb: gsbTotal,
   placement_periods: placements.length,
