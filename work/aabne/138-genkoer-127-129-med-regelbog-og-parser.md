@@ -1,6 +1,6 @@
 # Opgave 138 — genkør 127 og 129 med regelbog og ny parser
 
-**Trin:** ⚠ Afhænger af 131 (merget), 136 (godkendt og merget) og 137 (besluttet). Må ikke startes før. Er forskellig fra `future/128` (genkørsel efter sæson 2026/27, ca. maj 2027); 138 er et tværgående løft nu, 128 kan køres bagefter eller slås sammen med dette.
+**Trin:** ⚠ Afhænger af 131 (merget) og 136 (merget). 137 er besluttet (valg A: ingen pointskala-arv). Må ikke startes før. Forslag 4 og 5 i 136 er ikke besluttet, så rækker af den slags står fortsat som uforklarede. Er forskellig fra `future/128` (genkørsel efter sæson 2026/27, ca. maj 2027); 138 er et tværgående løft nu, 128 kan køres bagefter eller slås sammen med dette.
 
 ## Baggrund
 127 (format- og breddeanalyse) og 129 (rækkenavnstolkning) blev kørt før regelbogen og før parserudvidelsen. Resultatet kan nu forbedres: flere rækkenavne kan tolkes, og hver tolkning kan få regelbogens status.
@@ -9,7 +9,7 @@
 1. Nyt script `statistik/scripts/138-genkoer-127-129.mjs`, der genbruger 127- og 129-logikken, men bruger 136-parseren og slår regelbog op i 131-regelbogen pr. sæson/region/aldersgruppe.
 2. Output `statistik/results/138-ungdom-i-tal.json` (samme felter som 127-JSON'en, plus `regelbog_status`, `regelbog_afstand` og `tolkning_regel`) og `138-aendringer-mod-127-129.md`: hvad flyttede sig (tolkede rækker, placeringer, bredde), og hvorfor.
 3. Medtag `missing_rows`-feltet fra 127 og forklar for hver, om rækken nu er tolket, stadig uforklaret, eller afvist.
-4. Behandl pointskala efter beslutning i 137.
+4. Pointskala: ingen arv (kort 137, valg A). Brug kun skalaer fra filer, der selv angiver dem; resten står "ukendt".
 5. Artifacten (klubbens "ungdom i tal"-side) bygges af Claude ud fra 138-JSON'en; Codex rører ikke artifacten.
 
 ## Afgrænsning
