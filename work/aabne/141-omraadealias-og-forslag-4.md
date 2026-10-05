@@ -47,10 +47,29 @@ Skriv i "Spørgsmål". Er to områdenavne ikke åbenlyst samme område, så lad 
 `arbejde/141-omraadealias-og-forslag-4`, fra `main`. Christoffer opretter branchen og committer selv. Codex kører kun læsende git, lader ændringer stå ustaged, melder filstierne, tager aldrig `git add -A`, pusher ikke, ingen Co-Authored-By.
 
 ## Spørgsmål
-(Tomt.)
+- Den oprindelige 131-kildeselektion var ikke gemt som et committet generator-script. `131-byg-regelbog.mjs` reproducerer derfor først de historiske 918 poster fra 131-resultatets immutable baseline `0d27ab7`, og validerer samtlige kilde-ID'er mod `register.json`; derefter udfører den alias-sammenlægningen. Hvis der ønskes en uafhængig genberegning af den oprindelige 131-kildeselektion direkte fra registerfelterne, kræver det særskilt fastlæggelse af de historiske type-/sæsonregler.
+- Tre mulige områdesammenlægninger står bevidst som `forslag_ikke_anvendt`: den historiske SBKr-kæde mod Badminton Sjælland, Nordjylland med/uden DGI og de Sjællandske DGI-/Badminton-kombinationer. De ændrer ikke regelbogen.
 
 ## Tilbagefald
 Gendan regelbogsfilerne og 136-resultatfilerne fra `main`. Ingen database er berørt.
 
 ## Resultat
-(Udfyldes af Codex.)
+### Del A — områdenavne
+
+Der fandtes intet tidligere generator-script. `node statistik/scripts/131-byg-regelbog.mjs --verify-baseline` bestod før aliasering: 918 felter; bekraeftet/betinget/ingen = 41/96/781; `entries` identiske med 131-baselinen; 53 kilde-ID'er kontrolleret mod registeret. Scriptet replay'er de historiske valg fra commit `0d27ab7`, fordi den oprindelige kildeudvælgelse ikke var gemt som kode, og derefter anvender den dokumenterede rene navnevarianter.
+
+Områder: 18 → 15; felter: 918 → 765; område-/målgruppekæder efter sammenlægning: 45, heraf 16 med mindst én kilde. Status efter: 41 bekræftede, 92 betingede, 632 ingen. 153 sæson/målgruppefelter indgår i tre sammenlagte kæder. 23 variantfelter skiftede status, alle fordi deres tidligere egen kæde stod som `ingen` eller betinget, mens en kilde faktisk var registreret under den anden navnevariant. Rapporten angiver for hvert skift sæson, gruppe, kilde-ID, kildeområdets registertekst og forklaring. Kontrollen af kildeområde mod den modsatte variant bestod for alle skift (0 skift uden kilde i anden variant). Ti sammenlagte felter er vist som stikprøve.
+
+De tre anvendte grupper er (1) Badminton Danmark + DGI Badminton med omvendt rækkefølge, (2) den samme fire-regioners Fyn/Sønderjylland/Nordjylland/Midtjylland-liste med og uden gentaget "Badminton", og (3) den samme vestlige DGI-/Badminton-deltagerliste i omvendt rækkefølge. Tre substantielle forslag er ikke anvendt. Opslagsscriptet accepterer både kanonisk navn og variant; fem opslag bestod. København-ungdom og national BD/DGI-ungdom er sammenlignet på alle 17 sæsoner: status, kilde, afstand og versioner uændrede. `pointskala_arv` = `ingen` i alle 765 poster.
+
+### Del B — forslag 4
+
+`136-raekkenavn-parser.mjs` afgør 4+3 og U11 4+2 pr. fysisk række og alle dens region/sæson/alder-koblinger. Rækker med genkendt niveau fortsætter med normal tolkning; niveau-løse rækker får `tolkning_regel: "forslag-4"` kun når der ikke er en anden pulje af samme format i nogen tilknyttet region. Rækker i flerrække-scopes og rækker uden regionkobling forbliver uafklarede.
+
+Optælling: 4+3 = 347 puljer (11 med niveau, 49 eneste række, 287 flere/ukendt); U11 4+2 = 33 (5 med niveau, 12 eneste række, 16 flere/ukendt). I alt 61 niveau-løse puljer fik forslag-4-status. Rapportens 15-rækkers stikprøve består af 5 med niveau, 5 eneste-række og 5 flerrækkeeksempler. `parser_tests`: 25 eksisterende + 3 nye = 28/28 bestået. Der er 245 scopes med flere niveau-løse puljer; listen og eksemplerne står i JSON. Resultatets baseline er fortsat 1.986 navne / 941 gamle parserfund / 1.045 gamle ufortolkede navne / 3.536 gamle ufortolkede puljer.
+
+### Kontrol og værn
+
+`node --check` bestod for `131-byg-regelbog.mjs`, `slaa-op-regelbog.mjs` og `136-raekkenavn-parser.mjs`. Baselinekontrol, genopbygning, parsergenerering og fem aliasopslag bestod. Begge databaser er uændrede: normalized SHA-256 `49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E`, liga-landskab SHA-256 `9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C`; `git status --short statistik/data/` er tom.
+
+Før arbejdet viste Git-status kun Chris' fire eksisterende ændringer. Efter arbejdet står de samme fire urørte, plus udelukkende filerne angivet i Del A og Del B; ingen staging eller andre Git-skrivninger. `git diff --check` bestod. Ingen spørgsmål om parserfortolkningen står åbne; generatorens historiske replay-begrænsning og uanvendte substantielle aliasforslag er anført under Spørgsmål.

@@ -85,6 +85,18 @@ function parse(name) {
   if (series) return { status: 'tolket', level_type: 'series_number', raw_level: `${series[1]}. serie`, level_letter: null, level_order: Number(series[1]), numeric_value: Number(series[1]), tolkning_regel: 'forslag-3' };
   return { status: 'uafklaret', level_type: null, raw_level: null, level_letter: null, level_order: null, numeric_value: null, tolkning_regel: null };
 }
+function proposal4Format(name, ageGroupName) {
+  const value = decodeEntities(name);
+  if (/4\s*\+\s*3/iu.test(value)) return '4+3';
+  if (/U\s*11/iu.test(value) && /4\s*\+\s*2/iu.test(value) && /^U\s*11$/iu.test(String(ageGroupName ?? '').trim())) return 'U11 4+2';
+  return null;
+}
+function resolveProposal4({ parsed, regionIds, peerCount }) {
+  if (parsed.status === 'tolket') return { status: 'har niveau', tolkning_regel: parsed.tolkning_regel ?? null };
+  const isSingletonEverywhere = regionIds.length > 0 && regionIds.every((regionId) => peerCount(regionId) === 1);
+  if (isSingletonEverywhere) return { status: 'intet niveau nødvendigt (eneste række)', tolkning_regel: 'forslag-4' };
+  return { status: 'uforklaret: flere rækker eller ingen regionkobling', tolkning_regel: null };
+}
 const distinct = new Map();
 for (const row of rows) {
   const name = row.division_name_raw ?? '';
@@ -92,6 +104,43 @@ for (const row of rows) {
   const item = distinct.get(name); item.posts += 1; item.groupRows.push(row);
 }
 const names = [...distinct.values()].map((item) => ({ ...item, parsed: parse(item.name) }));
+const regionsByPhysicalKey = new Map();
+for (const row of regionRows) {
+  const key = `${row.season_id}|${row.age_group_id}|${row.league_group_id}`;
+  if (!regionsByPhysicalKey.has(key)) regionsByPhysicalKey.set(key, new Set());
+  regionsByPhysicalKey.get(key).add(row.region_id);
+}
+const proposal4PeerCounts = new Map();
+for (const row of rows) {
+  const family = proposal4Format(row.division_name_raw, row.age_group_name);
+  if (!family) continue;
+  const physicalKey = `${row.season_id}|${row.age_group_id}|${row.league_group_id}`;
+  for (const regionId of regionsByPhysicalKey.get(physicalKey) ?? []) {
+    const scopeKey = `${row.season_id}|${row.age_group_id}|${regionId}|${family}`;
+    proposal4PeerCounts.set(scopeKey, (proposal4PeerCounts.get(scopeKey) ?? 0) + 1);
+  }
+}
+const proposal4ByPhysicalKey = new Map();
+for (const row of rows) {
+  const family = proposal4Format(row.division_name_raw, row.age_group_name);
+  if (!family) continue;
+  const physicalKey = `${row.season_id}|${row.age_group_id}|${row.league_group_id}`;
+  const regionIds = [...(regionsByPhysicalKey.get(physicalKey) ?? [])];
+  const outcome = resolveProposal4({
+    parsed: parse(row.division_name_raw),
+    regionIds,
+    peerCount: (regionId) => proposal4PeerCounts.get(`${row.season_id}|${row.age_group_id}|${regionId}|${family}`) ?? 0,
+  });
+  proposal4ByPhysicalKey.set(physicalKey, { family, outcome, region_ids: regionIds, division_name_raw: row.division_name_raw, season_id: row.season_id, age_group_id: row.age_group_id, league_group_id: row.league_group_id });
+}
+for (const item of names) {
+  const matchedRows = item.groupRows.map((row) => proposal4ByPhysicalKey.get(`${row.season_id}|${row.age_group_id}|${row.league_group_id}`)).filter(Boolean);
+  if (!matchedRows.length) continue;
+  item.proposal4 = matchedRows.map(({ outcome, ...row }) => ({ ...row, ...outcome }));
+  if (item.parsed.status !== 'tolket' && matchedRows.every((row) => row.outcome.tolkning_regel === 'forslag-4')) {
+    item.parsed = { ...item.parsed, status: 'intet niveau nødvendigt (eneste række)', tolkning_regel: 'forslag-4' };
+  }
+}
 const baselineNames = names.filter((item) => legacyParse(item.name));
 if (names.length !== 1986 || baselineNames.length !== 941 || names.filter((item) => !legacyParse(item.name)).reduce((n, x) => n + x.posts, 0) !== 3536) {
   throw new Error(`129 baseline changed: ${names.length} names, ${baselineNames.length} old-parser matches; expected 1986/941/3536`);
@@ -104,6 +153,11 @@ for (const rule of ['forslag-1', 'forslag-2', 'forslag-3', 'forslag-6']) {
 const current = names.filter((x) => x.parsed.status === 'tolket' && x.parsed.tolkning_regel === null);
 const separate = names.filter((x) => x.parsed.status === 'separat_liste');
 const unresolved = names.filter((x) => x.parsed.status === 'uafklaret');
+const unresolvedPhysicalRows = rows.filter((row) => {
+  const parsed = parse(row.division_name_raw);
+  const key = `${row.season_id}|${row.age_group_id}|${row.league_group_id}`;
+  return parsed.status !== 'tolket' && parsed.status !== 'separat_liste' && proposal4ByPhysicalKey.get(key)?.outcome.tolkning_regel !== 'forslag-4';
+}).length;
 
 const tests = [
   ...[['3800','forslag-1'],['4400','forslag-1'],['5600','forslag-1'],['6800','forslag-1']],
@@ -118,6 +172,15 @@ for (const [name, rule] of tests) {
   if (output.tolkning_regel !== rule) throw new Error(`Parser test failed for ${name}: expected ${rule}, got ${output.tolkning_regel}`);
 }
 if (tests.length !== 25) throw new Error(`Expected 25 test cases; got ${tests.length}`);
+const proposal4Tests = [
+  { name: 'en række uden niveau', parsed: parse('U13 4+3'), peerCount: 1, expected: 'intet niveau nødvendigt (eneste række)' },
+  { name: 'flere navnløse rækker', parsed: parse('U13 4+3'), peerCount: 2, expected: 'uforklaret: flere rækker eller ingen regionkobling' },
+  { name: 'række med bogstavniveau', parsed: parse('U13 A 4+3'), peerCount: 1, expected: 'har niveau' },
+];
+for (const test of proposal4Tests) {
+  const outcome = resolveProposal4({ parsed: test.parsed, regionIds: [8], peerCount: () => test.peerCount });
+  if (outcome.status !== test.expected) throw new Error(`Proposal 4 test failed (${test.name}): expected ${test.expected}, got ${outcome.status}`);
+}
 
 const patternDefs = [
   ['X1-X3', /\bX\s*[1-3]\b/iu],
@@ -141,6 +204,63 @@ const patternDetails = patternDefs.map(([pattern, regex]) => {
 
 const fourPlusThree = rows.filter((row) => /4\s*\+\s*3/iu.test(decodeEntities(row.division_name_raw)));
 const u11FourPlusTwo = rows.filter((row) => /U\s*11(?=\b|[A-Z])/iu.test(decodeEntities(row.division_name_raw)) && /4\s*\+\s*2/iu.test(decodeEntities(row.division_name_raw)));
+function proposal4Details(row) {
+  const physicalKey = `${row.season_id}|${row.age_group_id}|${row.league_group_id}`;
+  const item = proposal4ByPhysicalKey.get(physicalKey);
+  return {
+    season_id: row.season_id,
+    season: `${row.season_id}/${String(row.season_id + 1).slice(-2)}`,
+    age_group_id: row.age_group_id,
+    age_group_name: row.age_group_name,
+    league_group_id: row.league_group_id,
+    division_name_raw: row.division_name_raw,
+    regions: (item?.region_ids ?? []).map((id) => ({ region_id: id, region_name: regionRows.find((region) => region.region_id === id && region.league_group_id === row.league_group_id && region.season_id === row.season_id && region.age_group_id === row.age_group_id)?.region_name ?? `region ${id}`,
+      sibling_rows_of_format: proposal4PeerCounts.get(`${row.season_id}|${row.age_group_id}|${id}|${item?.family}`) ?? 0 })),
+    status: item?.outcome.status ?? 'formatfejl',
+    tolkning_regel: item?.outcome.tolkning_regel ?? null,
+  };
+}
+function proposal4FamilyStats(family, sourceRows) {
+  const enriched = sourceRows.map((row) => proposal4Details(row));
+  const groups = {
+    har_niveau: enriched.filter((row) => row.status === 'har niveau'),
+    eneste_raekke: enriched.filter((row) => row.status === 'intet niveau nødvendigt (eneste række)'),
+    flere_eller_ukendt: enriched.filter((row) => row.status === 'uforklaret: flere rækker eller ingen regionkobling'),
+  };
+  const distinctNames = (items) => [...new Set(items.map((row) => row.division_name_raw))].sort((a, b) => a.localeCompare(b, 'da'));
+  return {
+    format: family,
+    physical_group_rows: enriched.length,
+    distinct_raw_names: distinctNames(enriched).length,
+    by_status: Object.fromEntries(Object.entries(groups).map(([key, items]) => [key, { physical_group_rows: items.length, distinct_raw_names: distinctNames(items).length }])),
+    rows_with_explicit_letter_or_number: groups.har_niveau,
+    examples: Object.fromEntries(Object.entries(groups).map(([key, items]) => [key, items.slice(0, 20)])),
+  };
+}
+const proposal4FourThree = proposal4FamilyStats('4+3', fourPlusThree);
+const proposal4U11FourTwo = proposal4FamilyStats('U11 4+2', u11FourPlusTwo);
+const explicitProposal4Rows = [...fourPlusThree, ...u11FourPlusTwo].filter((row) => parse(row.division_name_raw).status === 'tolket').map(proposal4Details);
+const proposal4Groups = [
+  { group: '4+3', ...proposal4FourThree },
+  { group: 'U11 4+2', ...proposal4U11FourTwo },
+  { group: '4+3 og U11 4+2 med bogstav-/talniveau', physical_group_rows: explicitProposal4Rows.length, distinct_raw_names: new Set(explicitProposal4Rows.map((row) => row.division_name_raw)).size, rows: explicitProposal4Rows, examples: explicitProposal4Rows.slice(0, 20) },
+];
+const ambiguousProposal4Scopes = [];
+for (const [scopeKey, count] of proposal4PeerCounts) {
+  if (count < 2) continue;
+  const [season_id, age_group_id, region_id, family] = scopeKey.split('|');
+  const physicalRows = rows.filter((row) => row.season_id === Number(season_id) && row.age_group_id === Number(age_group_id)
+    && proposal4Format(row.division_name_raw, row.age_group_name) === family
+    && parse(row.division_name_raw).status !== 'tolket'
+    && regionsByPhysicalKey.get(`${row.season_id}|${row.age_group_id}|${row.league_group_id}`)?.has(Number(region_id)));
+  if (!physicalRows.length) continue;
+  ambiguousProposal4Scopes.push({ season_id: Number(season_id), season: `${season_id}/${String(Number(season_id) + 1).slice(-2)}`, age_group_id: Number(age_group_id), region_id: Number(region_id), family, peer_rows: count, examples: physicalRows.slice(0, 5).map((row) => ({ league_group_id: row.league_group_id, division_name_raw: row.division_name_raw })) });
+}
+const proposal4Sample15 = [
+  ...proposal4FourThree.examples.har_niveau.slice(0, 5).map((row) => ({ ...row, sample_class: 'har niveau' })),
+  ...proposal4FourThree.examples.eneste_raekke.slice(0, 5).map((row) => ({ ...row, sample_class: 'eneste række' })),
+  ...proposal4FourThree.examples.flere_eller_ukendt.slice(0, 5).map((row) => ({ ...row, sample_class: 'flere/ukendt' })),
+];
 
 const dbAfter = new DatabaseSync(dbPath, { readOnly: true });
 const after = { sha256: sha256(dbPath), row_counts: Object.fromEntries(dbAfter.prepare("SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%' ORDER BY name").all().map(({ name }) => [name, dbAfter.prepare(`SELECT COUNT(*) AS n FROM "${name.replaceAll('"', '""')}"`).get().n])) };
@@ -152,15 +272,14 @@ if (JSON.stringify(normalizedBefore) !== JSON.stringify(normalizedAfter)) throw 
 const result = {
   generated_at: new Date().toISOString(), source: 'liga-landskab.db; readOnly: true; age_group_id 2,3,4,5,6,7,18',
   baseline_129: { distinct_names: names.length, interpreted_by_legacy_parser: baselineNames.length, legacy_uninterpreted_names: names.length - baselineNames.length, legacy_uninterpreted_physical_rows: names.filter((item) => !legacyParse(item.name)).reduce((n, item) => n + item.posts, 0) },
-  totals: { physical_group_rows: rows.length, distinct_names: names.length, legacy_interpretable_physical_rows: current.reduce((n, item) => n + item.posts, 0), newly_interpreted_by_approved_rules: names.filter((x) => ['forslag-1','forslag-2','forslag-3'].includes(x.parsed.tolkning_regel)).reduce((n, x) => n + x.posts, 0), separate_list_names: separate.length, separate_list_physical_rows: separate.reduce((n, item) => n + item.posts, 0), still_uninterpreted_names: unresolved.length, still_uninterpreted_physical_rows: unresolved.reduce((n, item) => n + item.posts, 0) },
+  totals: { physical_group_rows: rows.length, distinct_names: names.length, legacy_interpretable_physical_rows: current.reduce((n, item) => n + item.posts, 0), newly_interpreted_by_approved_rules: names.filter((x) => ['forslag-1','forslag-2','forslag-3'].includes(x.parsed.tolkning_regel)).reduce((n, x) => n + x.posts, 0), newly_interpreted_by_proposal4: rows.filter((row) => proposal4ByPhysicalKey.get(`${row.season_id}|${row.age_group_id}|${row.league_group_id}`)?.outcome.tolkning_regel === 'forslag-4').length, separate_list_names: separate.length, separate_list_physical_rows: separate.reduce((n, item) => n + item.posts, 0), still_uninterpreted_names: unresolved.length, still_uninterpreted_physical_rows: unresolvedPhysicalRows },
   per_approved_proposal: proposalStats,
-  four_plus_three_investigation: { distinct_raw_names: new Set(fourPlusThree.map((r) => r.division_name_raw)).size, physical_group_rows: new Set(fourPlusThree.map((r) => `${r.season_id}|${r.age_group_id}|${r.league_group_id}`)).size, examples: fourPlusThree.slice(0, 20).map((r) => ({ season_id: r.season_id, age_group_id: r.age_group_id, age_group_name: r.age_group_name, league_group_id: r.league_group_id, division_name_raw: r.division_name_raw })) },
-  u11_four_plus_two_investigation: { distinct_raw_names: new Set(u11FourPlusTwo.map((r) => r.division_name_raw)).size, physical_group_rows: new Set(u11FourPlusTwo.map((r) => `${r.season_id}|${r.age_group_id}|${r.league_group_id}`)).size, examples: u11FourPlusTwo.slice(0, 20).map((r) => ({ season_id: r.season_id, age_group_id: r.age_group_id, age_group_name: r.age_group_name, league_group_id: r.league_group_id, division_name_raw: r.division_name_raw })) },
+  proposal4: { rule: 'Niveau læses normalt; uden niveau får rækken forslag-4 alene hvis den er eneste pulje af formatet i samtlige region/sæson/aldersgruppe-koblinger.', groups: proposal4Groups, ambiguous_scopes: ambiguousProposal4Scopes, sample_15_rows: proposal4Sample15 },
   x_dx_bd_patterns: patternDetails,
-  parser_tests: { passed: tests.length, total: tests.length, examples: tests.map(([name, expectedRule]) => ({ name, expected_rule: expectedRule, actual_rule: parse(name).tolkning_regel, actual: parse(name) })) },
-  parser_results_by_distinct_row_name: names.map((item) => ({ division_name_raw: item.name, physical_group_rows: item.posts, ...item.parsed })),
+  parser_tests: { passed: tests.length + proposal4Tests.length, total: tests.length + proposal4Tests.length, legacy_passed: tests.length, proposal4_passed: proposal4Tests.length, examples: [...tests.map(([name, expectedRule]) => ({ name, expected_rule: expectedRule, actual_rule: parse(name).tolkning_regel, actual: parse(name) })), ...proposal4Tests.map((test) => ({ name: test.name, expected_status: test.expected, actual_status: resolveProposal4({ parsed: test.parsed, regionIds: [8], peerCount: () => test.peerCount }).status }))] },
+  parser_results_by_distinct_row_name: names.map((item) => ({ division_name_raw: item.name, physical_group_rows: item.posts, ...item.parsed, proposal4_scopes: item.proposal4 ?? [] })),
   databases_before: { normalized: normalizedBefore, landscape: before }, databases_after: { normalized: normalizedAfter, landscape: after },
-  note: 'Hver gammel parsermatch har tolkning_regel=null (eksisterende parseradfærd); nyfortolkninger mærkes med forslag-1/2/3. Forslag 4 og 5 implementeres ikke. X1-X3, Dx og BD får ingen niveaufortolkning her.'
+  note: 'Hver gammel parsermatch har tolkning_regel=null (eksisterende parseradfærd); nyfortolkninger mærkes med forslag-1/2/3/4. Forslag 4 anvendes kun på niveau-løse 4+3 og U11 4+2 med entydig region/sæson/alder-kontekst. Forslag 5 implementeres ikke. X1-X3, Dx og BD får ingen niveaufortolkning her.'
 };
 fs.writeFileSync(effectJsonPath, `${JSON.stringify(result, null, 2)}\n`);
 const lines = [
@@ -169,9 +288,14 @@ const lines = [
   '## Effekt pr. godkendt forslag', '',
   '| Forslag | Distinkte rækkenavne | Fysiske rækker | Eksempler |', '|---|---:|---:|---|',
   ...Object.entries(proposalStats).map(([rule, stat]) => `| ${rule} | ${stat.distinct_names} | ${stat.physical_group_rows} | ${stat.examples.slice(0, 5).join('; ')} |`), '',
-  `Forslag 4 forbliver kun optælling: 4+3 har ${result.four_plus_three_investigation.distinct_raw_names} rå navne/${result.four_plus_three_investigation.physical_group_rows} fysiske rækker; U11 4+2 har ${result.u11_four_plus_two_investigation.distinct_raw_names} rå navne/${result.u11_four_plus_two_investigation.physical_group_rows} fysiske rækker. De to lister og op til 20 eksempler pr. format står i JSON.`, '',
-  `Samlet: ${result.totals.legacy_interpretable_physical_rows} tidligere tolkede poster; ${result.totals.newly_interpreted_by_approved_rules} fysiske rækker nyligt tolkede efter forslag 1–3; ${result.totals.separate_list_physical_rows} poster sendt til forslag 6's separate liste; ${result.totals.still_uninterpreted_names} navne/${result.totals.still_uninterpreted_physical_rows} rækker forbliver ufortolkede. Parserens 25 konkrete testeksempler bestod (${tests.length}/${tests.length}).`, '',
-  'JSON-filen indeholder parserresultat for hvert distinkt rækkenavn; alle nye fortolkninger har `tolkning_regel` = forslag-1, forslag-2 eller forslag-3. Separate poster har forslag-6; gamle parserfund har null, da de ikke er nyfortolkninger. Ingen database skrivning.', '',
+  `Forslag 4: 4+3 har ${proposal4FourThree.physical_group_rows} fysiske puljer/${proposal4FourThree.distinct_raw_names} rå navne; U11 4+2 har ${proposal4U11FourTwo.physical_group_rows}/${proposal4U11FourTwo.distinct_raw_names}. Statusfordeling pr. format står nedenfor og fuldt i JSON. Rækker med niveau står fuldt listet i JSON; hvert forslag-4-format har op til 20 konkrete eksempler pr. status.`, '',
+  '| Format | Status | Fysiske puljer | Distinkte rå navne |', '|---|---|---:|---:|',
+  ...[proposal4FourThree, proposal4U11FourTwo].flatMap((family) => Object.entries(family.by_status).map(([status, count]) => `| ${family.format} | ${status} | ${count.physical_group_rows} | ${count.distinct_raw_names} |`)), '',
+  '### Stikprøve på 15 parserrækker (4+3)', '', '| Klasse | Sæson | Alder | Regionkoblinger og antal formatrækker | Rå rækkenavn |', '|---|---|---|---|---|',
+  ...proposal4Sample15.map((row) => `| ${row.sample_class} | ${row.season} | ${row.age_group_name} | ${row.regions.map((region) => `${region.region_name}: ${region.sibling_rows_of_format}`).join('; ') || 'ingen'} | ${row.division_name_raw} |`), '',
+  `Rækker med niveau: ${[...new Set(explicitProposal4Rows.map((row) => row.division_name_raw))].sort((a, b) => a.localeCompare(b, 'da')).join('; ')}.`, '',
+  `Samlet: ${result.totals.legacy_interpretable_physical_rows} tidligere tolkede poster; ${result.totals.newly_interpreted_by_approved_rules} fysiske rækker nyligt tolkede efter forslag 1–3; ${result.totals.newly_interpreted_by_proposal4} puljer fik forslag-4-status; ${result.totals.separate_list_physical_rows} poster på forslag 6's separate liste; ${result.totals.still_uninterpreted_names} navne/${result.totals.still_uninterpreted_physical_rows} rækker forbliver ufortolkede. Parserprøver: ${tests.length}/${tests.length} tidligere + ${proposal4Tests.length}/${proposal4Tests.length} nye (${tests.length + proposal4Tests.length}/${tests.length + proposal4Tests.length}).`, '',
+  'De tre proposal-4 grupper er 4+3, U11 4+2 og den samlede liste over begge formater med bogstav-/talniveau. Flere-række scopes forbliver uafklarede; konkrete scopes står i JSON. JSON indeholder parserresultat for hvert råt rækkenavn og scopes. Ingen database skrivning.', '',
 ];
 fs.writeFileSync(effectMdPath, lines.join('\n'));
 const pattLines = ['# Opgave 136 — undersøgelse af X1–X3, Dx og BD', '', 'Mønstrene tælles hver for sig og kan overlappe; en fysisk league_group kan forekomme i mere end én mønsteroptælling. “Region-linked occurrences” tæller én gang pr. league_group_regions-kobling; “physical_group_rows” deduplikerer fysisk pulje. Eksempler er rå kildetekst, ikke fortolkning.', ''];
@@ -196,4 +320,4 @@ pattLines.push(
   'Kilderne fastlægger ikke betydningen/hierarkiet for X1–X3 eller suffixet BD. Dx er forklaret i de angivne reglementer, men parseren lader alle tre mønstre stå uden niveaufortolkning som kortet kræver. Mønsteroptællinger overlapper ikke nødvendigvis og må ikke summeres til et samlet antal.', ''
 );
 fs.writeFileSync(xReportPath, pattLines.join('\n'));
-console.log(JSON.stringify({ baseline: result.baseline_129, totals: result.totals, proposals: proposalStats, format4: [result.four_plus_three_investigation, result.u11_four_plus_two_investigation], patterns: patternDetails.map(({ pattern, distinct_names, physical_group_rows, region_linked_occurrences }) => ({ pattern, distinct_names, physical_group_rows, region_linked_occurrences })), tests: `${tests.length}/${tests.length}`, output: [effectJsonPath,effectMdPath,xReportPath] }, null, 2));
+console.log(JSON.stringify({ baseline: result.baseline_129, totals: result.totals, proposals: proposalStats, proposal4: proposal4Groups.map(({ group, physical_group_rows, distinct_raw_names, by_status }) => ({ group, physical_group_rows, distinct_raw_names, by_status })), patterns: patternDetails.map(({ pattern, distinct_names, physical_group_rows, region_linked_occurrences }) => ({ pattern, distinct_names, physical_group_rows, region_linked_occurrences })), tests: `${result.parser_tests.passed}/${result.parser_tests.total}`, output: [effectJsonPath,effectMdPath,xReportPath] }, null, 2));
