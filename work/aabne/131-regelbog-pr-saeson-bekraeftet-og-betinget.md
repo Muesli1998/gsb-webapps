@@ -61,7 +61,16 @@ Skriv i "Spørgsmål", især hvis to filer kunne være kilde for samme felt, ell
 ---
 
 ## Spørgsmål
-(Tomt.)
+- Registeret indeholder ikke et DMU-tillæg for 2023/24. Fællesreglementet for ungdom 2023/24 er verificeret, men DMU-delen kan derfor ikke sættes som separat kilde uden en ny kilde.
+- Registerposten for 2025/26-revisionen siger 8. oktober 2025, men giver ikke en særskilt gyldighedsbestemmelse for revisionens virkning. Matrixen viser dokumentdato-versionerne, men de præcise kampgyldighedsgrænser er ikke kildeverificeret.
 
 ## Resultatnote
-(Udfyldes af Codex.)
+Oprettet regelbogsmatrix med 918 felter (17 sæsoner × 3 målgrupper × 18 eksakte områdelabels): 41 bekræftede, 96 betingede og 781 uden regelbog i registeret; 51 betingede felter er svage (afstand ≥3). Fem sæsonløse kilder og én fil med modstridende sæsonudsagn står i `ikke_placeret`. De 143 kildehenvisninger i matrixen peger alle på registerposter med URL, SHA-256 og sidetal; alle 53 arkiverede PDF'er blev lokalt genkontrolleret for sideantal og SHA-256, og alle 53 stemte.
+
+Tilføjet opslagsscript uden databaseadgang, dækningsrapport og kompakt område-/målgruppeoversigt. `mangler.md` peger nu på matrixen og forklarer, at nabosæson kan bruges betinget inden for samme målgruppe og præcise område; ingen arv bagud før første kilde, ingen krydsområdes-/krydsmålgruppe-arv og ingen pointskala-arv. Ældre 130-noter er bevaret som historisk metode.
+
+Kontroller: JSON parse bestået; 918 poster; 143 kildehenvisninger, 0 manglende register-ID/URL/hash/sidetal. Opslagsscriptets fem særlige cases bestod: 2017/18 national ungdom = betinget fra 2016/17 (afstand 1); 2010/11 national ungdom = ingen; 2021/22 København ungdom = betinget fra 2020/21 (afstand 1); 2025/26 national ungdom = bekræftet med to versioner; 2023/24 national ungdom = bekræftet fællesreglement. 15-felts stikprøve er dokumenteret i `131-regelbog-daekning.md` (5 bekræftede, 7 betingede, heraf 3 svage, og 3 ingen); PDF'ernes egne sæson-/datotekster og afstande blev kontrolleret.
+
+Databasehash før/efter: `gsb-statistik-normalized.db` 49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E; `liga-landskab.db` 9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C. `git status --short statistik/data/` er tomt; `apps/netlify-prod/` viser fortsat kun de tre eksisterende lokale ændringer.
+
+Datodaterede kilder behandles som betingede selv når datoen peger på den pågældende sæson. Regelbogen peger på kilder, ikke på fortolkede regler; `pointskala_arv` er `ingen` overalt. DMU 2023/24 og revisionsgyldighedens præcise kampgrænse er fortsat uafklaret (se Spørgsmål).

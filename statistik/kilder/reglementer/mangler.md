@@ -26,7 +26,7 @@ Hentedato for registrerede PDF'er: 2026-10-04. Efter runde 6 indeholder register
 | 2025/26 | Ja, nationalt fællesreglement; original + 8. oktober revision | Nordjysk og vestligt senior/veteran; nationalt DH-årsreglement mangler | Delvis |
 | 2026/27 | Ja, nationalt fællesreglement + DMU-tillæg; DGI/BSJ invitation og holdlederfolder; særskilt UGE 38-bilag | DH-reglement + bilag 3 + holdfællesskabstillæg; København lokalt; Nordjylland senior/veteran; Sjælland veteraninvitation | Delvis; flere regioner mangler |
 
-Sæsonår uden fundet kilde må ikke få regler arvet fra nabosæsonen. Tabellen er en status på denne indsamling, ikke bevis på at kilderne ikke eksisterer andre steder.
+**Opdateret ved opgave 131:** dette afsnit er historisk status for opgave 130. Sæson uden egen kilde kan nu pege på den seneste tidligere kilde for præcis samme målgruppe og område, men kun som **betinget** regelbog; ingen arv bagud før første kilde, ingen krydsning mellem områder/målgrupper, og ingen arv af pointskalaer eller niveautal. Den aktuelle matrix er [regelbog pr. sæson](regelbog-pr-saeson.md), med fuld optælling i [dækningsrapporten](131-regelbog-daekning.md). Historiske beskrivelser nedenfor afspejler opgave 130's daværende metode og er ikke ændret retroaktivt.
 
 ## Registerbestand efter type og udgiver/område
 
