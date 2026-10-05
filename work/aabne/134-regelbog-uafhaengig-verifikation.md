@@ -34,4 +34,4 @@ Skriv i "Spørgsmål".
 Slet resultatfilen.
 
 ## Resultat
-(Udfyldes af Codex.)
+Rapport skrevet i `statistik/results/134-regelbog-verifikation.md`. Stikprøve: 14 ok, 0 afvigelser, 26 uklare; afvigelsesrate blandt afgørlige poster 0/14 = 0 %. PDF-tekst kunne ikke udtrækkes lokalt, så alle kildeposter står som uklare på PDF-verifikationen. Ingen kilde-id’er eller metadata manglede; 5/5 SHA-256 stemte. Alle 14 “ingen”-poster havde ingen tidligere post i registeret. Rapporten angiver begrænsning og særlige testresultater.
