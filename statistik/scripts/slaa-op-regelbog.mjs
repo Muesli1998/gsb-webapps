@@ -16,7 +16,9 @@ if (!season || !['ungdom', 'senior', 'veteran'].includes(group) || areaParts.len
 } else {
   const area = areaParts.join(' ');
   const book = JSON.parse(fs.readFileSync(bookPath, 'utf8'));
-  const result = book.entries.find((entry) => entry.season === season && entry.target_group === group && entry.area === area);
+  const matches = book.entries.filter((entry) => entry.season === season && entry.target_group === group
+    && (entry.area === area || (entry.omraade_varianter ?? []).includes(area)));
+  const result = matches.length === 1 ? matches[0] : null;
   if (!result) {
     console.error(`Ingen matrixpost: ${season} / ${group} / ${area}`);
     process.exitCode = 1;

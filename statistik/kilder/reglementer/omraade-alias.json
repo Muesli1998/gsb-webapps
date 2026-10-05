@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "aliases": [
+    {
+      "kanonisk": "Badminton Danmark + DGI Badminton",
+      "varianter": [
+        "Badminton Danmark + DGI Badminton",
+        "DGI Badminton + Badminton Danmark"
+      ],
+      "type": "stavning_rækkefølge",
+      "begrundelse": "Samme to navngivne organisationer, alene omvendt rækkefølge."
+    },
+    {
+      "kanonisk": "Badminton Fyn, Badminton Sønderjylland, Badminton Nordjylland og Badminton Midtjylland",
+      "varianter": [
+        "Badminton Fyn, Badminton Sønderjylland, Badminton Nordjylland og Badminton Midtjylland",
+        "Badminton Fyn, Sønderjylland, Nordjylland og Midtjylland"
+      ],
+      "type": "stavning_rækkefølge",
+      "begrundelse": "Den korte variant udelader kun gentagelsen af 'Badminton' foran de tre sidstnævnte regioner; listen over fire regioner er den samme."
+    },
+    {
+      "kanonisk": "Badminton Sønderjylland og Midtjylland + DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland",
+      "varianter": [
+        "Badminton Sønderjylland og Midtjylland + DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland",
+        "DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland samt Badminton Sønderjylland og Midtjylland"
+      ],
+      "type": "stavning_rækkefølge",
+      "begrundelse": "Samme seks DGI-landsdele og samme to badmintonregioner; kun rækkefølge og bindeord varierer."
+    }
+  ],
+  "forslag_ikke_anvendt": [
+    {
+      "kanonisk": "Badminton Sjælland (tidl. SBKr.)",
+      "varianter": [
+        "Sjællands Badminton Kreds (SBKr.; historisk forgænger til Badminton Sjælland)"
+      ],
+      "type": "substantiel",
+      "status": "forslag_ikke_anvendt",
+      "begrundelse": "Registeret beskriver den ene som historisk forgænger; der er ikke belæg for at gøre den organisatorisk/geografisk identisk med den senere kæde."
+    },
+    {
+      "kanonisk": "Badminton Nordjylland",
+      "varianter": [
+        "Badminton Nordjylland + DGI Nordjylland"
+      ],
+      "type": "substantiel",
+      "status": "forslag_ikke_anvendt",
+      "begrundelse": "Den ene områdelabel omfatter også DGI Nordjylland; deltagerkredsen er ikke den samme."
+    },
+    {
+      "kanonisk": "Badminton Sjælland (tidl. SBKr.)",
+      "varianter": [
+        "Badminton Sjælland + DGI Nordsjælland, Midt- og Vestsjælland, Storstrømmen",
+        "DGI Sjælland / Badminton Sjælland",
+        "DGI Midt- og Vestsjælland + Nordsjælland + Badminton Sjælland + København"
+      ],
+      "type": "substantiel",
+      "status": "forslag_ikke_anvendt",
+      "begrundelse": "Disse labels indeholder forskellige DGI-landsdele, regioner eller fællesarrangører; indholdet kan ikke reduceres til samme område uden en beslutning."
+    }
+  ]
+}
