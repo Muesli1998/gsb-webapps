@@ -1,0 +1,56 @@
+# Opgave 141 — saml områdenavne i regelbogen og implementér forslag 4 i parseren
+
+**Trin:** Retter to ting fra gennemgangen af 131 og 136 (2026-10-05). Forudsætter at grenen `arbejde/131-133-136-regelbog-senior-parser` er merget til main.
+
+## Baggrund
+1. **131: områdenavnene er splittet.** Regelbogen bruger registerets `area`-tekst ordret, så samme område optræder under flere navne, fx "Badminton Danmark + DGI Badminton" og "DGI Badminton + Badminton Danmark", og to varianter af Fyn/Sønderjylland/Nordjylland/Midtjylland. Hver variant er sin egen kæde, så en betinget sæson kan misse en tidligere fil, der ligger under det andet navn. Det rammer især senior, veteran og regionerne. GSB's egne kæder (København, nationalt ungdom) er ikke berørt.
+2. **136: forslag 4 er kun talt.** Christoffer har godkendt forslag 4 som datastyret regel (se `work/aabne/136-raekkenavne-niveauparser-udvidelse.md`, afsnittet "Forslag 4"), men `136-parser-effekt.md` siger "forbliver kun optælling". Reglen er ikke implementeret.
+
+## Del A: områdenavne i regelbogen
+1. **Find generatoren.** Undersøg, hvordan `statistik/kilder/reglementer/regelbog-pr-saeson.json` blev bygget. Findes der ikke et committet script, så lav `statistik/scripts/131-byg-regelbog.mjs`, der bygger JSON'en deterministisk ud fra `register.json`. **Bevis først**, at scriptet reproducerer den nuværende regelbog uden ændringer (samme 918 poster, samme tal pr. status, ingen forskel i `entries`), før du tilføjer alias.
+2. **Aliastabel.** Lav `statistik/kilder/reglementer/omraade-alias.json`, med felterne `kanonisk`, `varianter` (liste af registerets områdenavne), `type` (`stavning_rækkefølge` eller `substantiel`) og `begrundelse`.
+   - **Anvend kun** rene stavnings-, forkortelses- og rækkefølgevarianter, hvor det er åbenlyst, at der er tale om samme geografiske/organisatoriske område (fx "A + B" mod "B + A", eller "Badminton Fyn, Badminton Sønderjylland, Badminton Nordjylland og Badminton Midtjylland" mod "Badminton Fyn, Sønderjylland, Nordjylland og Midtjylland").
+   - **Anvend ikke** sammenlægninger, hvor områdets indhold er forskelligt eller det er uklart (fx "Sjællands Badminton Kreds (historisk forgænger)" mod "Badminton Sjælland", eller DGI-kombinationer). De står som `forslag_ikke_anvendt` med begrundelse, så Christoffer kan afgøre dem.
+3. **Genopbyg regelbogen** med kanoniske områder. Behold de oprindelige varianter i et felt `omraade_varianter` på hver post. Regelbogens JSON og .md opdateres; skriv `131-regelbog-daekning.md`-tallene om (antal kæder, kæder med mindst én fil, felter pr. status).
+4. **Før/efter-rapport** `statistik/results/141-omraadealias-foer-efter.md`: antal områder før og efter, hvilke kæder der blev slået sammen, og for hver sammenlagt kæde hvilke felter der skiftede status (fx fra "ingen" til "betinget") og hvorfor. Skift der er sket **uden** at en tidligere fil stod i den anden variant, er fejl og skal rettes.
+5. **Opslagsscriptet** `slaa-op-regelbog.mjs` skal kunne slå op både på kanonisk navn og på en variant. Opdatér det og vis 5 eksempler.
+6. **Oversigt for GSB:** bekræft, at København-ungdom og national ungdom (BD + DGI) er **uændrede** (samme status og kilde pr. sæson som før). Skriv det i før/efter-rapporten.
+
+## Del B: forslag 4 i parseren (`statistik/scripts/136-raekkenavn-parser.mjs`)
+Regel (fra 136-kortet, godkendt af Christoffer): 4+3 og U11 4+2 afgøres **pr. region, sæson og aldersgruppe ud fra data**:
+- har rækkenavnet et niveau (bogstav eller tal), tolkes det som normalt;
+- har det intet niveau, og der kun findes **én** række af det format i region, sæson og aldersgruppe, så er status **"intet niveau nødvendigt (eneste række)"**;
+- har det intet niveau, og der findes **flere** rækker af formatet i samme region, sæson og aldersgruppe, så forbliver de **uforklarede**.
+
+Opgaver:
+1. Implementér reglen. Hver tolkning får `tolkning_regel: "forslag-4"` og en status for de tre grupper.
+2. Genskab `statistik/results/136-parser-effekt.md/.json` (136 er ikke afsluttet, før reglen er med). Tilføj: antal poster og rækkenavne i hver af de tre grupper for 4+3 og for U11 4+2, listen over 4+3/4+2-rækker, der **har** et bogstav eller tal, og 20 eksempler fra hver gruppe.
+3. Tjek med et par udvalgte eksempler, at en region/sæson med flere navnløse rækker af formatet ikke fejlagtigt får "eneste række".
+4. Kør de eksisterende 25 parsertests igen, og tilføj mindst tre nye for forslag 4 (én række uden niveau, flere rækker uden niveau, række med bogstav).
+5. Ret **ikke** 129-parseren eller 127/129-filer.
+
+## Afgrænsning
+- Rør ikke afsluttede resultater (127, 129, 130, 133). Regelbogsfilerne (131) og 136-filerne må genopbygges, fordi de er det, opgaven retter.
+- Ingen nye downloads. Ingen databaseændringer, kun læsning (`readOnly: true`).
+- Rør ikke `apps/netlify-prod/` eller `docs/BESLUTNINGER.md`.
+- Pointskalaer arves ikke (kort 137, valg A). `pointskala_arv: "ingen"` skal bevares i alle poster.
+
+## Kontrol
+- **Målet:** Del A: det genopbyggede regelbogsscript reproducerer den gamle regelbog 1:1 før alias, og aliasændringerne er forklaret felt for felt. Del B: forslag 4 er implementeret, tallene for de tre grupper er vist, og testene består (25 gamle + mindst 3 nye).
+- **Værnet:** databasehashes uændrede (`gsb-statistik-normalized.db` 49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E, `liga-landskab.db` 9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C); `git status --short statistik/data/` tom; København-ungdom og national ungdom uændrede; `git diff --check` uden fejl.
+- **Skøn:** stikprøve på 10 sammenlagte felter og 15 parserrækker, med konkrete eksempler.
+
+## Ved tvivl
+Skriv i "Spørgsmål". Er to områdenavne ikke åbenlyst samme område, så lad dem være adskilt og list dem som forslag.
+
+## Gren
+`arbejde/141-omraadealias-og-forslag-4`, fra `main`. Christoffer opretter branchen og committer selv. Codex kører kun læsende git, lader ændringer stå ustaged, melder filstierne, tager aldrig `git add -A`, pusher ikke, ingen Co-Authored-By.
+
+## Spørgsmål
+(Tomt.)
+
+## Tilbagefald
+Gendan regelbogsfilerne og 136-resultatfilerne fra `main`. Ingen database er berørt.
+
+## Resultat
+(Udfyldes af Codex.)
