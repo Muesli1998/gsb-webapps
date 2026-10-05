@@ -80,14 +80,16 @@ Ingen kode- eller databaseændringer.
 
 ## Resultat
 
-**Kontroloutput — før og efter:**
+**Afsluttet 2026-10-05 som "undersøgt og dokumenteret, ikke bekræftet".** Kortet blev ikke kørt som eget kort, men de senere opgaver 109, 110 og 111 har udført søgningen. Beslutningen om at lukke er truffet i gennemgangen i opgave 139 (`work/gennemgang-2026-10-05.md`).
 
-```
-(indsæt det faktiske output, ikke en beskrivelse af det)
-```
+**Hvad blev gjort (i de senere kort):**
 
-**Hvad blev gjort:**
+- `work/loeste/109-kredsserien-vest-sammenlaegning-og-foer-fordeling.md` (linje 94-96): den præcise etableringssæson for Kredsserien Vest kunne ikke fastslås ud fra officielle kilder.
+- `work/loeste/110-regionale-reglementshuller-2010-2026.md` (linje 84-89): flere regionale oprykningstal og regler blev ikke fundet.
+- `work/loeste/111-bornholm-lokalhistorik.md`: Bornholmsserien er undersøgt særskilt, og der er ingen officiel forklaring på ophøret.
 
-**Hvad blev fravalgt og hvorfor:**
+**Konklusion:** Der findes ikke et officielt dokument i det materiale, vi har fundet, som bekræfter eller afkræfter en sammenlægning i 2016/17. Det er et dokumenteret ikke-fund, ikke et svar. Ingen gæt er udfyldt.
 
-**Commits:**
+**Hvad blev fravalgt og hvorfor:** Yderligere søgning blev ikke prioriteret. Hverken Kredsserien Vest eller Bornholmsserien har betydning for GSB's egne hold (afklaret 2026-09-26). Kortet kan genåbnes, hvis der dukker en ny kilde op.
+
+**Commits:** ingen under dette kort.

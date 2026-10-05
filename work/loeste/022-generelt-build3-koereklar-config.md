@@ -101,11 +101,14 @@ placering og opret ikke tomme placeholder-filer.
 
 ## Resultat
 
-**Kontroloutput — før og efter:**
+**Afsluttet 2026-10-05 som overhalet af opgave 099.** Dette kort blev aldrig selv kørt. Det parkerede mål (en køreklar `build3.py`) blev løst af `work/loeste/099-build3-koereklar.md`. Fundet ved gennemgang i opgave 139 (`work/gennemgang-2026-10-05.md`).
 
-```
-```
+**Hvad der gælder nu (kontrolleret i `kampsystem/build3.py`, linje 1-13):**
 
-**SRC og OUT's nye værdier, og hvordan de blev bekræftet (ikke gættet):**
+- `SRC` er `REPO_ROOT / "apps" / "netlify-prod" / "public"`, altså en almindelig repo-relativ sti. Kortets egen mistanke ("sandsynligvis en repo-sti, ikke en `config.local.json`-nøgle") var rigtig.
+- `OUT` er `SCRIPT_DIR / "dist" / "preview"`, og de læste datafiler hentes fra `SCRIPT_DIR` via `read_out`. Ingen sandkasse-stier er tilbage.
+- Løsningen blev derfor ikke en `config.local.json`-nøgle, som kortet foreslog.
 
-**Commits:**
+**Hvad blev fravalgt og hvorfor:** `config.local.json` til `SRC`/`OUT` blev ikke brugt, fordi relative stier fra scriptets egen placering er enklere og kræver ingen lokal konfiguration.
+
+**Commits:** ingen under dette kort. Ændringen ligger i 099's commits.

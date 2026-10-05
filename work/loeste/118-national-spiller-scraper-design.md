@@ -63,3 +63,18 @@ udgangspunkt frem for at genforhandle dem.
 ## Gren
 
 (ingen endnu — parkeret)
+
+---
+
+## Resultat
+
+**Afsluttet 2026-10-05 som gennemført af opgave 119 og 120.** Kortet var en designnote og blev aldrig selv kørt. Det blev omsat til bygning i `work/loeste/119-national-spiller-scraper.md` (skema og scraper, se linje 104-124) og kørt fuldt i `work/loeste/120-national-spiller-scraper-fuld-koersel.md` (linje 37-59). Fundet ved gennemgang i opgave 139 (`work/gennemgang-2026-10-05.md`).
+
+**Designpunkterne:**
+
+- Punkt 1-3 (spiller-ID og navn, køn fra kønnede disciplinkoder, makker/modstander/klub/sætresultater) er dækket af 119's skema og 120's kørsel.
+- Punkt 4 (ranglistepoint) og punkt 5 (navn på kamptidspunktet) blev bevidst ikke bygget. Det var det kortet selv besluttede: ranglistepoint kræver en egen forundersøgelse, og historiske navne findes ikke på siden.
+
+**Kendt begrænsning fra 120:** 46 kampe endte som "match not found". Det er dokumenteret som resultatbegrænsning, ikke som manglende design.
+
+**Commits:** ingen under dette kort. Ændringerne ligger i 119's og 120's commits.
