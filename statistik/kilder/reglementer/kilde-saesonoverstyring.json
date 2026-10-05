@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "regel": "En kilde kan kun understøtte status bekraeftet, når PDF'en selv angiver én entydig anvendelsessæson. Dato, PDF-metadata, registertitel, filnavn og mappesti er ikke sæsonbevis. Kilder uden sæson eller med modstrid kan højst give betinget og mærkes usikre; usikkerhed gør posten svag uanset afstand.",
+  "sources": [
+    {
+      "source_id": "sjaelland-veteran-2022-docdate",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "PDF s. 2 angiver dokumentdatoen 'Pr 1/9-2022', men ikke en anvendelsessæson.",
+      "regelbogskilde": true
+    },
+    {
+      "source_id": "west-senior-veteran-2025-26",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "PDF s. 1 angiver 'Gældende pr. 01-10-2025'; s. 9 angiver gældende fra uge 43 2025. Ingen af stederne angiver 2025/26 eller en sæson.",
+      "regelbogskilde": true
+    },
+    {
+      "source_id": "bd-dh-bilag3-2026-27",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "Blank aftaleformular uden sæsonangivelse i PDF'en; år i filnavn/register er ikke PDF-evidens.",
+      "regelbogskilde": false
+    },
+    {
+      "source_id": "bd-dh-holdfaellesskaber-2026-27",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "Tillægget henviser til DH-reglementets § 30, men angiver ikke selv en sæson.",
+      "regelbogskilde": false
+    },
+    {
+      "source_id": "bd-dmu-2026-27",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "DMU-tillægget angiver ikke selv en sæson; 2026/27 står alene i register/sti.",
+      "regelbogskilde": false,
+      "supplement_only": true
+    },
+    {
+      "source_id": "bd-dmu-2025-26",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "DMU-tillægget angiver ikke selv en sæson; 2025/26 står alene i register/sti.",
+      "regelbogskilde": false,
+      "supplement_only": true
+    },
+    {
+      "source_id": "vest-kredsserie-2021",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "PDF'en angiver ikke anvendelsessæson; de forekomster, der ligner årstal, er i en URL til et andet 2019-dokument.",
+      "regelbogskilde": false
+    },
+    {
+      "source_id": "sj-bad-holdreglement-historisk",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "PDF'en angiver generelle bestemmelser for Badminton Sjællands turneringer, men ingen sæson.",
+      "regelbogskilde": false
+    },
+    {
+      "source_id": "lf-regler-historisk",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "PDF'en angiver LFBKr's holdturneringsreglement, men ingen sæson.",
+      "regelbogskilde": false
+    },
+    {
+      "source_id": "dgi-uge38-2026-27",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "Den et-sidede UGE 38-invitation angiver tilbuddet og turneringsformen, men ikke en sæson i selve PDF-teksten.",
+      "regelbogskilde": false
+    },
+    {
+      "source_id": "sj-veteran-2013-14-season-conflict",
+      "dom": "modstridende_saesoner",
+      "begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013.",
+      "regelbogskilde": true
+    },
+    {
+      "source_id": "bd-dh-2023-dated",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "PDF'en beskriver DH-reglementets rækkeomfang, men angiver ingen anvendelsessæson; PDF-metadata creation date er ikke sæson.",
+      "regelbogskilde": true
+    },
+    {
+      "source_id": "sjaelland-senior-2025-docdate",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "PDF s. 1 angiver 'Pr 1/9-2025', en dato, men ingen anvendelsessæson.",
+      "regelbogskilde": true
+    },
+    {
+      "source_id": "sbkr-holdreglement-historic-6803",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "PDF'en indeholder generelle fællesbestemmelser for SBKr.-turneringer, men ingen sæson.",
+      "regelbogskilde": false
+    },
+    {
+      "source_id": "sjaelland-senior-reglement-date-2023-fileid-67465",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "PDF s. 1 angiver 'Pr 1/9-2023', en dato, men ingen anvendelsessæson.",
+      "regelbogskilde": true
+    },
+    {
+      "source_id": "fyn-senior-veteran-reglement-date-2018-fileid-77210",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson.",
+      "regelbogskilde": true
+    },
+    {
+      "source_id": "west-series-rules-2018-19-fileid-77211",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering.",
+      "regelbogskilde": true
+    },
+    {
+      "source_id": "west-series-rules-2017-fileid-77663",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt ændringer 1. august 2017, men ingen sæson.",
+      "regelbogskilde": true
+    },
+    {
+      "source_id": "west-dgi-senior-rules-date-2020-fileid-87130",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson.",
+      "regelbogskilde": true
+    }
+  ]
+}

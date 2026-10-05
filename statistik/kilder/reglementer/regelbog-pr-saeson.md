@@ -10,7 +10,7 @@ Opslag: 765 matrixposter i [JSON-regelbogen](regelbog-pr-saeson.json). Optællin
 | Badminton Danmark | senior | 1 | 3 | 13 | — |
 | Badminton Danmark | ungdom | 0 | 0 | 17 | — |
 | Badminton Danmark | veteran | 0 | 0 | 17 | — |
-| Badminton Fyn, Badminton Sønderjylland, Badminton Nordjylland og Badminton Midtjylland | senior | 1 | 9 | 7 | Badminton Fyn, Sønderjylland, Nordjylland og Midtjylland |
+| Badminton Fyn, Badminton Sønderjylland, Badminton Nordjylland og Badminton Midtjylland | senior | 0 | 10 | 7 | Badminton Fyn, Sønderjylland, Nordjylland og Midtjylland |
 | Badminton Fyn, Badminton Sønderjylland, Badminton Nordjylland og Badminton Midtjylland | ungdom | 0 | 0 | 17 | Badminton Fyn, Sønderjylland, Nordjylland og Midtjylland |
 | Badminton Fyn, Badminton Sønderjylland, Badminton Nordjylland og Badminton Midtjylland | veteran | 0 | 0 | 17 | Badminton Fyn, Sønderjylland, Nordjylland og Midtjylland |
 | Badminton Fyn | senior | 0 | 9 | 8 | — |
@@ -27,13 +27,13 @@ Opslag: 765 matrixposter i [JSON-regelbogen](regelbog-pr-saeson.json). Optællin
 | Badminton Nordjylland | veteran | 0 | 0 | 17 | — |
 | Badminton Sjælland (tidl. SBKr.) | senior | 0 | 0 | 17 | — |
 | Badminton Sjælland (tidl. SBKr.) | ungdom | 0 | 0 | 17 | — |
-| Badminton Sjælland (tidl. SBKr.) | veteran | 1 | 13 | 3 | — |
+| Badminton Sjælland (tidl. SBKr.) | veteran | 0 | 14 | 3 | — |
 | Badminton Sjælland + DGI Nordsjælland, Midt- og Vestsjælland, Storstrømmen | senior | 0 | 4 | 13 | — |
 | Badminton Sjælland + DGI Nordsjælland, Midt- og Vestsjælland, Storstrømmen | ungdom | 0 | 0 | 17 | — |
 | Badminton Sjælland + DGI Nordsjælland, Midt- og Vestsjælland, Storstrømmen | veteran | 0 | 5 | 12 | — |
-| Badminton Sønderjylland og Midtjylland + DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland | senior | 1 | 6 | 10 | DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland samt Badminton Sønderjylland og Midtjylland |
+| Badminton Sønderjylland og Midtjylland + DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland | senior | 0 | 7 | 10 | DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland samt Badminton Sønderjylland og Midtjylland |
 | Badminton Sønderjylland og Midtjylland + DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland | ungdom | 0 | 0 | 17 | DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland samt Badminton Sønderjylland og Midtjylland |
-| Badminton Sønderjylland og Midtjylland + DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland | veteran | 1 | 6 | 10 | DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland samt Badminton Sønderjylland og Midtjylland |
+| Badminton Sønderjylland og Midtjylland + DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland | veteran | 0 | 7 | 10 | DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland samt Badminton Sønderjylland og Midtjylland |
 | DGI Midt- og Vestsjælland + Nordsjælland + Badminton Sjælland + København | senior | 0 | 0 | 17 | — |
 | DGI Midt- og Vestsjælland + Nordsjælland + Badminton Sjælland + København | ungdom | 0 | 0 | 17 | — |
 | DGI Midt- og Vestsjælland + Nordsjælland + Badminton Sjælland + København | veteran | 0 | 0 | 17 | — |

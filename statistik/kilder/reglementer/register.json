@@ -172,7 +172,8 @@
       "sha256": "c23d8de411208fa4b7a83b6b7db50747219c02a62a3fb6b433f3113512bc4824",
       "bytes": 172444,
       "file": "ukendt-aar/badminton-nordjylland/nordjylland-veteran-historic.pdf",
-      "season": "ukendt (historisk; sæson ikke angivet)",
+      "season": "2018/19 (angivet som gældende sæson på PDF s. 1)",
+      "season_evidence": "PDF s. 1: 'GÆLDENDE FOR SÆSONEN 2018-2019'.",
       "area": "Badminton Nordjylland",
       "type": "veteran",
       "public_access": true

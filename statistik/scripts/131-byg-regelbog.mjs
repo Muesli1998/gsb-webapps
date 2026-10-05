@@ -9,12 +9,18 @@ const matrixPath = path.join(rulesDir, 'regelbog-pr-saeson.json');
 const coveragePath = path.join(rulesDir, '131-regelbog-daekning.md');
 const mdPath = path.join(rulesDir, 'regelbog-pr-saeson.md');
 const aliasPath = path.join(rulesDir, 'omraade-alias.json');
+const seasonOverridePath = path.join(rulesDir, 'kilde-saesonoverstyring.json');
 const reportPath = path.resolve(root, 'results', '141-omraadealias-foer-efter.md');
 const baselineRef = '0d27ab7';
 const register = JSON.parse(fs.readFileSync(path.join(rulesDir, 'register.json'), 'utf8'));
 const original = JSON.parse(execFileSync('git', ['show', `${baselineRef}:statistik/kilder/reglementer/regelbog-pr-saeson.json`], { encoding: 'utf8' }));
 
 const registerById = new Map(register.sources.map((source) => [source.id, source]));
+const seasonOverrides = JSON.parse(fs.readFileSync(seasonOverridePath, 'utf8'));
+const seasonOverrideById = new Map(seasonOverrides.sources.map((source) => [source.source_id, source]));
+for (const sourceId of seasonOverrideById.keys()) {
+  if (!registerById.has(sourceId)) throw new Error(`Season override is absent from register.json: ${sourceId}`);
+}
 for (const entry of original.entries) {
   for (const source of [entry.source, ...(entry.supplements ?? [])].filter(Boolean)) {
     const registered = registerById.get(source.id);
@@ -47,6 +53,34 @@ if (process.argv.includes('--verify-baseline')) {
   process.exit();
 }
 
+function flagUncertainSource(source) {
+  if (!source) return source;
+  const override = seasonOverrideById.get(source.id);
+  if (!override) return source;
+  return { ...source, kilde_saeson_usikker: true, kilde_saeson_usikker_begrundelse: override.begrundelse };
+}
+
+for (const entry of replayed) {
+  if (entry.source) {
+    const override = seasonOverrideById.get(entry.source.id);
+    entry.source = flagUncertainSource(entry.source);
+    entry.versioner = (entry.versioner ?? []).map(flagUncertainSource);
+    if (override?.regelbogskilde) {
+      entry.status_foer_saesonoverstyring = entry.status;
+      entry.kilde_saeson_usikker = true;
+      entry.kilde_saeson_usikker_begrundelse = override.begrundelse;
+      entry.kilde_saeson_fastlagt = false;
+      if (entry.status !== 'ingen') {
+        entry.status = 'betinget';
+        entry.svag = true;
+      }
+      entry.kilde_kommentar = [entry.kilde_kommentar, 'Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.']
+        .filter(Boolean).join(' ');
+    }
+  }
+  entry.supplements = (entry.supplements ?? []).map(flagUncertainSource);
+}
+
 const aliases = JSON.parse(fs.readFileSync(aliasPath, 'utf8'));
 const aliasMap = new Map();
 for (const alias of aliases.aliases) {
@@ -61,7 +95,7 @@ const matrixAreas = [...new Set(original.entries.map((entry) => entry.area))].so
 for (const variant of aliasMap.keys()) if (!matrixAreas.includes(variant)) throw new Error(`Alias variant is not a matrix area: ${variant}`);
 
 const grouped = new Map();
-for (const entry of original.entries) {
+for (const entry of replayed) {
   const key = `${entry.season}\u0000${entry.target_group}\u0000${canonical(entry.area)}`;
   if (!grouped.has(key)) grouped.set(key, []);
   grouped.get(key).push(entry);
@@ -72,15 +106,17 @@ for (const [key, entries] of grouped) {
   const [season, target_group, area] = key.split('\u0000');
   const variants = [...new Set(entries.map((entry) => entry.area))].sort((a, b) => a.localeCompare(b, 'da'));
   const sourced = entries.filter((entry) => entry.source);
+  const evidenceRank = (entry) => entry.status === 'bekraeftet' ? 0
+    : entry.status === 'betinget' ? (entry.kilde_saeson_usikker ? 2 : 1) : 3;
   const winner = [...sourced].sort((a, b) => {
-    const rank = { bekraeftet: 0, betinget: 1 };
-    return rank[a.status] - rank[b.status]
+    return evidenceRank(a) - evidenceRank(b)
       || (a.afstand_saesoner ?? 0) - (b.afstand_saesoner ?? 0)
       || String(a.source.id).localeCompare(String(b.source.id));
   })[0] ?? entries[0];
   if (sourced.length > 1) {
-    const topRank = { bekraeftet: 0, betinget: 1 }[winner.status];
-    const topCandidates = sourced.filter((entry) => ({ bekraeftet: 0, betinget: 1 }[entry.status] === topRank && (entry.status !== 'betinget' || entry.afstand_saesoner === winner.afstand_saesoner)));
+    const topRank = evidenceRank(winner);
+    const topCandidates = sourced.filter((entry) => evidenceRank(entry) === topRank
+      && (entry.status !== 'betinget' || entry.afstand_saesoner === winner.afstand_saesoner));
     if (new Set(topCandidates.map((entry) => entry.source.id)).size > 1) {
       throw new Error(`Unresolved equal-priority source conflict for ${season}/${target_group}/${area}: ${topCandidates.map((entry) => entry.source.id).join(', ')}`);
     }
@@ -114,7 +150,8 @@ const statusSummary = statusCounts(combined);
 const matrix = {
   ...original,
   generated_at: new Date().toISOString().slice(0, 10),
-  method: '131-kildeselektion genafspillet deterministisk fra den eksisterende, stikprøvekontrollerede matrix; alle kilde-ID’er valideres mod register.json. Rene områdenavne-alias samler kæder, vælger højeste evidensstatus og korteste afstand. Ingen krydsområdes-/krydsgruppearv. Datoafledte sæsoner er betingede. Pointskalaer arves aldrig.',
+  method: '131-kildeselektion genafspillet deterministisk fra den eksisterende matrix; kilde-sæsonoverstyringer kræver selvangivet, entydig sæson i PDF. Usikre kilder kan højst give betinget og er svage uanset afstand. Rene områdenavne-alias vælger først højeste evidensstatus, derefter korteste afstand. Ingen krydsområdes-/krydsgruppearv. Pointskalaer arves aldrig.',
+  kilde_saesonoverstyringer: seasonOverrides.sources,
   areas,
   entry_count: combined.length,
   entries: combined,
@@ -243,5 +280,5 @@ if (combined.some((entry) => entry.pointskala_arv !== 'ingen')) throw new Error(
 fs.writeFileSync(matrixPath, `${JSON.stringify(matrix, null, 2)}\n`);
 fs.writeFileSync(mdPath, renderMarkdown());
 fs.writeFileSync(coveragePath, renderCoverage());
-fs.writeFileSync(reportPath, renderAliasReport());
-console.log(JSON.stringify({ areas_before: matrixAreas.length, areas_after: areas.length, entries_before: original.entries.length, entries_after: combined.length, before: statusCounts(original.entries), after: statusCounts(combined), merged_chains: chainReport.length, status_changes: chainReport.reduce((n, row) => n + row.changedStatusVariants.length, 0), pointscale_none: combined.length }, null, 2));
+if (!process.argv.includes('--skip-alias-report')) fs.writeFileSync(reportPath, renderAliasReport());
+console.log(JSON.stringify({ areas_before: matrixAreas.length, areas_after: areas.length, entries_before: original.entries.length, entries_after: combined.length, before: statusCounts(original.entries), after: statusCounts(combined), merged_chains: chainReport.length, status_changes: chainReport.reduce((n, row) => n + row.changedStatusVariants.length, 0), uncertain_sources: seasonOverrides.sources.length, uncertain_rulebook_entries: combined.filter((entry) => entry.kilde_saeson_usikker).length, weak_conditional: combined.filter((entry) => entry.status === 'betinget' && entry.svag).length, pointscale_none: combined.filter((entry) => entry.pointskala_arv === 'ingen').length }, null, 2));

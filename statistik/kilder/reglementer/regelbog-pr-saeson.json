@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "generated_from": "statistik/kilder/reglementer/register.json",
-  "method": "131-kildeselektion genafspillet deterministisk fra den eksisterende, stikprøvekontrollerede matrix; alle kilde-ID’er valideres mod register.json. Rene områdenavne-alias samler kæder, vælger højeste evidensstatus og korteste afstand. Ingen krydsområdes-/krydsgruppearv. Datoafledte sæsoner er betingede. Pointskalaer arves aldrig.",
+  "method": "131-kildeselektion genafspillet deterministisk fra den eksisterende matrix; kilde-sæsonoverstyringer kræver selvangivet, entydig sæson i PDF. Usikre kilder kan højst give betinget og er svage uanset afstand. Rene områdenavne-alias vælger først højeste evidensstatus, derefter korteste afstand. Ingen krydsområdes-/krydsgruppearv. Pointskalaer arves aldrig.",
   "seasons": [
     "2010/11",
     "2011/12",
@@ -3008,7 +3008,7 @@
       "season": "2013/14",
       "target_group": "veteran",
       "area": "Badminton Sjælland (tidl. SBKr.)",
-      "status": "bekraeftet",
+      "status": "betinget",
       "source": {
         "id": "sj-veteran-2013-14-season-conflict",
         "title": "Holdturneringen 2013/2014 – Veteran (titel/brødtekst uenige)",
@@ -3022,11 +3022,13 @@
         "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
         "season_evidence_note": null,
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
       },
       "afstand_saesoner": 0,
-      "svag": false,
-      "kilde_saeson_fastlagt": true,
+      "svag": true,
+      "kilde_saeson_fastlagt": false,
       "versioner": [
         {
           "id": "sj-veteran-2013-14-season-conflict",
@@ -3041,12 +3043,17 @@
           "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
           "season_evidence_note": null,
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Kilden angiver selv sæsonen; versioner bevares separat.",
+      "kilde_kommentar": "Kilden angiver selv sæsonen; versioner bevares separat. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "bekraeftet",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013.",
       "omraade_varianter": [
         "Badminton Sjælland (tidl. SBKr.)"
       ]
@@ -3826,11 +3833,13 @@
         "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
         "season_evidence_note": null,
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
       },
       "afstand_saesoner": 1,
-      "svag": false,
-      "kilde_saeson_fastlagt": true,
+      "svag": true,
+      "kilde_saeson_fastlagt": false,
       "versioner": [
         {
           "id": "sj-veteran-2013-14-season-conflict",
@@ -3845,12 +3854,17 @@
           "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
           "season_evidence_note": null,
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013.",
       "omraade_varianter": [
         "Badminton Sjælland (tidl. SBKr.)"
       ]
@@ -4720,11 +4734,13 @@
         "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
         "season_evidence_note": null,
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
       },
       "afstand_saesoner": 2,
-      "svag": false,
-      "kilde_saeson_fastlagt": true,
+      "svag": true,
+      "kilde_saeson_fastlagt": false,
       "versioner": [
         {
           "id": "sj-veteran-2013-14-season-conflict",
@@ -4739,12 +4755,17 @@
           "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
           "season_evidence_note": null,
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013.",
       "omraade_varianter": [
         "Badminton Sjælland (tidl. SBKr.)"
       ]
@@ -5644,11 +5665,13 @@
         "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
         "season_evidence_note": null,
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
       },
       "afstand_saesoner": 3,
       "svag": true,
-      "kilde_saeson_fastlagt": true,
+      "kilde_saeson_fastlagt": false,
       "versioner": [
         {
           "id": "sj-veteran-2013-14-season-conflict",
@@ -5663,12 +5686,17 @@
           "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
           "season_evidence_note": null,
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013.",
       "omraade_varianter": [
         "Badminton Sjælland (tidl. SBKr.)"
       ]
@@ -5863,10 +5891,12 @@
         "season_evidence": "Seneste ændringer foretaget 2017-08-01; sæson ikke udtrykkeligt angivet",
         "season_evidence_note": "Sammenlignet med fileID 77211: beslægtet regelsæt, men ikke byte-identisk (15 mod 13 sider; seneste ændringer 2017 mod august 2018). Gemmes som separat udgave; anvendelsessæson er ikke fastsat ud fra datoen alene.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt ændringer 1. august 2017, men ingen sæson."
       },
       "afstand_saesoner": 0,
-      "svag": false,
+      "svag": true,
       "kilde_saeson_fastlagt": false,
       "versioner": [
         {
@@ -5882,12 +5912,17 @@
           "season_evidence": "Seneste ændringer foretaget 2017-08-01; sæson ikke udtrykkeligt angivet",
           "season_evidence_note": "Sammenlignet med fileID 77211: beslægtet regelsæt, men ikke byte-identisk (15 mod 13 sider; seneste ændringer 2017 mod august 2018). Gemmes som separat udgave; anvendelsessæson er ikke fastsat ud fra datoen alene.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt ændringer 1. august 2017, men ingen sæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Kilden angiver kun dokumentdato, ikke sæson; datoen placerer den betinget i denne sæson. Ingen pointskala/niveautal arves.",
+      "kilde_kommentar": "Kilden angiver kun dokumentdato, ikke sæson; datoen placerer den betinget i denne sæson. Ingen pointskala/niveautal arves. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt ændringer 1. august 2017, men ingen sæson.",
       "omraade_varianter": [
         "Badminton Fyn, Badminton Sønderjylland, Badminton Nordjylland og Badminton Midtjylland",
         "Badminton Fyn, Sønderjylland, Nordjylland og Midtjylland"
@@ -6598,11 +6633,13 @@
         "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
         "season_evidence_note": null,
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
       },
       "afstand_saesoner": 4,
       "svag": true,
-      "kilde_saeson_fastlagt": true,
+      "kilde_saeson_fastlagt": false,
       "versioner": [
         {
           "id": "sj-veteran-2013-14-season-conflict",
@@ -6617,12 +6654,17 @@
           "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
           "season_evidence_note": null,
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013.",
       "omraade_varianter": [
         "Badminton Sjælland (tidl. SBKr.)"
       ]
@@ -6800,10 +6842,12 @@
         "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
         "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
       },
       "afstand_saesoner": 0,
-      "svag": false,
+      "svag": true,
       "kilde_saeson_fastlagt": false,
       "versioner": [
         {
@@ -6819,12 +6863,17 @@
           "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
           "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Kilden angiver kun dokumentdato, ikke sæson; datoen placerer den betinget i denne sæson. Ingen pointskala/niveautal arves.",
+      "kilde_kommentar": "Kilden angiver kun dokumentdato, ikke sæson; datoen placerer den betinget i denne sæson. Ingen pointskala/niveautal arves. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Fyn"
       ]
@@ -6833,7 +6882,7 @@
       "season": "2018/19",
       "target_group": "senior",
       "area": "Badminton Fyn, Badminton Sønderjylland, Badminton Nordjylland og Badminton Midtjylland",
-      "status": "bekraeftet",
+      "status": "betinget",
       "source": {
         "id": "west-series-rules-2018-19-fileid-77211",
         "title": "Holdturneringsreglement for Kredsserien Vest og Serie 1 Vest",
@@ -6847,10 +6896,12 @@
         "season_evidence": "2018/19 (indlejret Word-filnavn '1819'; seneste ændring i PDF'en siger august 2018)",
         "season_evidence_note": "Fællesreglement for Kredsserien Vest og Serie 1 Vest. Årstal står i PDF'ens indlejrede Word-filnavn; selve brødteksten daterer seneste ændring til august 2018.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering."
       },
       "afstand_saesoner": 0,
-      "svag": false,
+      "svag": true,
       "kilde_saeson_fastlagt": false,
       "versioner": [
         {
@@ -6866,12 +6917,17 @@
           "season_evidence": "2018/19 (indlejret Word-filnavn '1819'; seneste ændring i PDF'en siger august 2018)",
           "season_evidence_note": "Fællesreglement for Kredsserien Vest og Serie 1 Vest. Årstal står i PDF'ens indlejrede Word-filnavn; selve brødteksten daterer seneste ændring til august 2018.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Kilden angiver selv sæsonen; versioner bevares separat.",
+      "kilde_kommentar": "Kilden angiver selv sæsonen; versioner bevares separat. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "bekraeftet",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering.",
       "omraade_varianter": [
         "Badminton Fyn, Badminton Sønderjylland, Badminton Nordjylland og Badminton Midtjylland",
         "Badminton Fyn, Sønderjylland, Nordjylland og Midtjylland"
@@ -7496,10 +7552,12 @@
         "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
         "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
       },
       "afstand_saesoner": 0,
-      "svag": false,
+      "svag": true,
       "kilde_saeson_fastlagt": false,
       "versioner": [
         {
@@ -7515,12 +7573,17 @@
           "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
           "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Kilden angiver kun dokumentdato, ikke sæson; datoen placerer den betinget i denne sæson. Ingen pointskala/niveautal arves.",
+      "kilde_kommentar": "Kilden angiver kun dokumentdato, ikke sæson; datoen placerer den betinget i denne sæson. Ingen pointskala/niveautal arves. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Fyn"
       ]
@@ -7642,11 +7705,13 @@
         "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
         "season_evidence_note": null,
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
       },
       "afstand_saesoner": 5,
       "svag": true,
-      "kilde_saeson_fastlagt": true,
+      "kilde_saeson_fastlagt": false,
       "versioner": [
         {
           "id": "sj-veteran-2013-14-season-conflict",
@@ -7661,12 +7726,17 @@
           "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
           "season_evidence_note": null,
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013.",
       "omraade_varianter": [
         "Badminton Sjælland (tidl. SBKr.)"
       ]
@@ -7844,10 +7914,12 @@
         "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
         "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
       },
       "afstand_saesoner": 1,
-      "svag": false,
+      "svag": true,
       "kilde_saeson_fastlagt": false,
       "versioner": [
         {
@@ -7863,12 +7935,17 @@
           "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
           "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Fyn"
       ]
@@ -7891,10 +7968,12 @@
         "season_evidence": "2018/19 (indlejret Word-filnavn '1819'; seneste ændring i PDF'en siger august 2018)",
         "season_evidence_note": "Fællesreglement for Kredsserien Vest og Serie 1 Vest. Årstal står i PDF'ens indlejrede Word-filnavn; selve brødteksten daterer seneste ændring til august 2018.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering."
       },
       "afstand_saesoner": 1,
-      "svag": false,
+      "svag": true,
       "kilde_saeson_fastlagt": false,
       "versioner": [
         {
@@ -7910,12 +7989,17 @@
           "season_evidence": "2018/19 (indlejret Word-filnavn '1819'; seneste ændring i PDF'en siger august 2018)",
           "season_evidence_note": "Fællesreglement for Kredsserien Vest og Serie 1 Vest. Årstal står i PDF'ens indlejrede Word-filnavn; selve brødteksten daterer seneste ændring til august 2018.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering.",
       "omraade_varianter": [
         "Badminton Fyn, Badminton Sønderjylland, Badminton Nordjylland og Badminton Midtjylland",
         "Badminton Fyn, Sønderjylland, Nordjylland og Midtjylland"
@@ -8540,10 +8624,12 @@
         "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
         "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
       },
       "afstand_saesoner": 1,
-      "svag": false,
+      "svag": true,
       "kilde_saeson_fastlagt": false,
       "versioner": [
         {
@@ -8559,12 +8645,17 @@
           "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
           "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Fyn"
       ]
@@ -8686,11 +8777,13 @@
         "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
         "season_evidence_note": null,
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
       },
       "afstand_saesoner": 6,
       "svag": true,
-      "kilde_saeson_fastlagt": true,
+      "kilde_saeson_fastlagt": false,
       "versioner": [
         {
           "id": "sj-veteran-2013-14-season-conflict",
@@ -8705,12 +8798,17 @@
           "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
           "season_evidence_note": null,
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013.",
       "omraade_varianter": [
         "Badminton Sjælland (tidl. SBKr.)"
       ]
@@ -8888,10 +8986,12 @@
         "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
         "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
       },
       "afstand_saesoner": 2,
-      "svag": false,
+      "svag": true,
       "kilde_saeson_fastlagt": false,
       "versioner": [
         {
@@ -8907,12 +9007,17 @@
           "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
           "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Fyn"
       ]
@@ -8935,10 +9040,12 @@
         "season_evidence": "2018/19 (indlejret Word-filnavn '1819'; seneste ændring i PDF'en siger august 2018)",
         "season_evidence_note": "Fællesreglement for Kredsserien Vest og Serie 1 Vest. Årstal står i PDF'ens indlejrede Word-filnavn; selve brødteksten daterer seneste ændring til august 2018.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering."
       },
       "afstand_saesoner": 2,
-      "svag": false,
+      "svag": true,
       "kilde_saeson_fastlagt": false,
       "versioner": [
         {
@@ -8954,12 +9061,17 @@
           "season_evidence": "2018/19 (indlejret Word-filnavn '1819'; seneste ændring i PDF'en siger august 2018)",
           "season_evidence_note": "Fællesreglement for Kredsserien Vest og Serie 1 Vest. Årstal står i PDF'ens indlejrede Word-filnavn; selve brødteksten daterer seneste ændring til august 2018.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering.",
       "omraade_varianter": [
         "Badminton Fyn, Badminton Sønderjylland, Badminton Nordjylland og Badminton Midtjylland",
         "Badminton Fyn, Sønderjylland, Nordjylland og Midtjylland"
@@ -9128,10 +9240,12 @@
         "season_evidence": "Gældende fra 2020-09-10; anvendelsessæson ikke udtrykkeligt angivet",
         "season_evidence_note": "Forsiden siger gældende pr. 10-09-2020. Dokumentet omfatter de listede serier og Senior Motion/Senior+; sæson er ikke udledt af datoen.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson."
       },
       "afstand_saesoner": 0,
-      "svag": false,
+      "svag": true,
       "kilde_saeson_fastlagt": false,
       "versioner": [
         {
@@ -9147,12 +9261,17 @@
           "season_evidence": "Gældende fra 2020-09-10; anvendelsessæson ikke udtrykkeligt angivet",
           "season_evidence_note": "Forsiden siger gældende pr. 10-09-2020. Dokumentet omfatter de listede serier og Senior Motion/Senior+; sæson er ikke udledt af datoen.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Kilden angiver kun dokumentdato, ikke sæson; datoen placerer den betinget i denne sæson. Ingen pointskala/niveautal arves.",
+      "kilde_kommentar": "Kilden angiver kun dokumentdato, ikke sæson; datoen placerer den betinget i denne sæson. Ingen pointskala/niveautal arves. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson.",
       "omraade_varianter": [
         "Badminton Sønderjylland og Midtjylland + DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland",
         "DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland samt Badminton Sønderjylland og Midtjylland"
@@ -9614,10 +9733,12 @@
         "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
         "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
       },
       "afstand_saesoner": 2,
-      "svag": false,
+      "svag": true,
       "kilde_saeson_fastlagt": false,
       "versioner": [
         {
@@ -9633,12 +9754,17 @@
           "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
           "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Fyn"
       ]
@@ -9760,11 +9886,13 @@
         "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
         "season_evidence_note": null,
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
       },
       "afstand_saesoner": 7,
       "svag": true,
-      "kilde_saeson_fastlagt": true,
+      "kilde_saeson_fastlagt": false,
       "versioner": [
         {
           "id": "sj-veteran-2013-14-season-conflict",
@@ -9779,12 +9907,17 @@
           "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
           "season_evidence_note": null,
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013.",
       "omraade_varianter": [
         "Badminton Sjælland (tidl. SBKr.)"
       ]
@@ -9824,10 +9957,12 @@
         "season_evidence": "Gældende fra 2020-09-10; anvendelsessæson ikke udtrykkeligt angivet",
         "season_evidence_note": "Forsiden siger gældende pr. 10-09-2020. Dokumentet omfatter de listede serier og Senior Motion/Senior+; sæson er ikke udledt af datoen.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson."
       },
       "afstand_saesoner": 0,
-      "svag": false,
+      "svag": true,
       "kilde_saeson_fastlagt": false,
       "versioner": [
         {
@@ -9843,12 +9978,17 @@
           "season_evidence": "Gældende fra 2020-09-10; anvendelsessæson ikke udtrykkeligt angivet",
           "season_evidence_note": "Forsiden siger gældende pr. 10-09-2020. Dokumentet omfatter de listede serier og Senior Motion/Senior+; sæson er ikke udledt af datoen.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Kilden angiver kun dokumentdato, ikke sæson; datoen placerer den betinget i denne sæson. Ingen pointskala/niveautal arves.",
+      "kilde_kommentar": "Kilden angiver kun dokumentdato, ikke sæson; datoen placerer den betinget i denne sæson. Ingen pointskala/niveautal arves. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson.",
       "omraade_varianter": [
         "Badminton Sønderjylland og Midtjylland + DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland",
         "DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland samt Badminton Sønderjylland og Midtjylland"
@@ -9992,7 +10132,9 @@
         "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
         "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
       },
       "afstand_saesoner": 3,
       "svag": true,
@@ -10011,12 +10153,17 @@
           "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
           "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Fyn"
       ]
@@ -10039,7 +10186,9 @@
         "season_evidence": "2018/19 (indlejret Word-filnavn '1819'; seneste ændring i PDF'en siger august 2018)",
         "season_evidence_note": "Fællesreglement for Kredsserien Vest og Serie 1 Vest. Årstal står i PDF'ens indlejrede Word-filnavn; selve brødteksten daterer seneste ændring til august 2018.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering."
       },
       "afstand_saesoner": 3,
       "svag": true,
@@ -10058,12 +10207,17 @@
           "season_evidence": "2018/19 (indlejret Word-filnavn '1819'; seneste ændring i PDF'en siger august 2018)",
           "season_evidence_note": "Fællesreglement for Kredsserien Vest og Serie 1 Vest. Årstal står i PDF'ens indlejrede Word-filnavn; selve brødteksten daterer seneste ændring til august 2018.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering.",
       "omraade_varianter": [
         "Badminton Fyn, Badminton Sønderjylland, Badminton Nordjylland og Badminton Midtjylland",
         "Badminton Fyn, Sønderjylland, Nordjylland og Midtjylland"
@@ -10232,10 +10386,12 @@
         "season_evidence": "Gældende fra 2020-09-10; anvendelsessæson ikke udtrykkeligt angivet",
         "season_evidence_note": "Forsiden siger gældende pr. 10-09-2020. Dokumentet omfatter de listede serier og Senior Motion/Senior+; sæson er ikke udledt af datoen.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson."
       },
       "afstand_saesoner": 1,
-      "svag": false,
+      "svag": true,
       "kilde_saeson_fastlagt": false,
       "versioner": [
         {
@@ -10251,12 +10407,17 @@
           "season_evidence": "Gældende fra 2020-09-10; anvendelsessæson ikke udtrykkeligt angivet",
           "season_evidence_note": "Forsiden siger gældende pr. 10-09-2020. Dokumentet omfatter de listede serier og Senior Motion/Senior+; sæson er ikke udledt af datoen.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson.",
       "omraade_varianter": [
         "Badminton Sønderjylland og Midtjylland + DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland",
         "DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland samt Badminton Sønderjylland og Midtjylland"
@@ -10718,7 +10879,9 @@
         "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
         "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
       },
       "afstand_saesoner": 3,
       "svag": true,
@@ -10737,12 +10900,17 @@
           "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
           "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Fyn"
       ]
@@ -10864,11 +11032,13 @@
         "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
         "season_evidence_note": null,
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
       },
       "afstand_saesoner": 8,
       "svag": true,
-      "kilde_saeson_fastlagt": true,
+      "kilde_saeson_fastlagt": false,
       "versioner": [
         {
           "id": "sj-veteran-2013-14-season-conflict",
@@ -10883,12 +11053,17 @@
           "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
           "season_evidence_note": null,
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013.",
       "omraade_varianter": [
         "Badminton Sjælland (tidl. SBKr.)"
       ]
@@ -10928,10 +11103,12 @@
         "season_evidence": "Gældende fra 2020-09-10; anvendelsessæson ikke udtrykkeligt angivet",
         "season_evidence_note": "Forsiden siger gældende pr. 10-09-2020. Dokumentet omfatter de listede serier og Senior Motion/Senior+; sæson er ikke udledt af datoen.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson."
       },
       "afstand_saesoner": 1,
-      "svag": false,
+      "svag": true,
       "kilde_saeson_fastlagt": false,
       "versioner": [
         {
@@ -10947,12 +11124,17 @@
           "season_evidence": "Gældende fra 2020-09-10; anvendelsessæson ikke udtrykkeligt angivet",
           "season_evidence_note": "Forsiden siger gældende pr. 10-09-2020. Dokumentet omfatter de listede serier og Senior Motion/Senior+; sæson er ikke udledt af datoen.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson.",
       "omraade_varianter": [
         "Badminton Sønderjylland og Midtjylland + DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland",
         "DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland samt Badminton Sønderjylland og Midtjylland"
@@ -11096,7 +11278,9 @@
         "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
         "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
       },
       "afstand_saesoner": 4,
       "svag": true,
@@ -11115,12 +11299,17 @@
           "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
           "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Fyn"
       ]
@@ -11143,7 +11332,9 @@
         "season_evidence": "2018/19 (indlejret Word-filnavn '1819'; seneste ændring i PDF'en siger august 2018)",
         "season_evidence_note": "Fællesreglement for Kredsserien Vest og Serie 1 Vest. Årstal står i PDF'ens indlejrede Word-filnavn; selve brødteksten daterer seneste ændring til august 2018.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering."
       },
       "afstand_saesoner": 4,
       "svag": true,
@@ -11162,12 +11353,17 @@
           "season_evidence": "2018/19 (indlejret Word-filnavn '1819'; seneste ændring i PDF'en siger august 2018)",
           "season_evidence_note": "Fællesreglement for Kredsserien Vest og Serie 1 Vest. Årstal står i PDF'ens indlejrede Word-filnavn; selve brødteksten daterer seneste ændring til august 2018.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering.",
       "omraade_varianter": [
         "Badminton Fyn, Badminton Sønderjylland, Badminton Nordjylland og Badminton Midtjylland",
         "Badminton Fyn, Sønderjylland, Nordjylland og Midtjylland"
@@ -11336,10 +11532,12 @@
         "season_evidence": "Gældende fra 2020-09-10; anvendelsessæson ikke udtrykkeligt angivet",
         "season_evidence_note": "Forsiden siger gældende pr. 10-09-2020. Dokumentet omfatter de listede serier og Senior Motion/Senior+; sæson er ikke udledt af datoen.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson."
       },
       "afstand_saesoner": 2,
-      "svag": false,
+      "svag": true,
       "kilde_saeson_fastlagt": false,
       "versioner": [
         {
@@ -11355,12 +11553,17 @@
           "season_evidence": "Gældende fra 2020-09-10; anvendelsessæson ikke udtrykkeligt angivet",
           "season_evidence_note": "Forsiden siger gældende pr. 10-09-2020. Dokumentet omfatter de listede serier og Senior Motion/Senior+; sæson er ikke udledt af datoen.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson.",
       "omraade_varianter": [
         "Badminton Sønderjylland og Midtjylland + DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland",
         "DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland samt Badminton Sønderjylland og Midtjylland"
@@ -11822,7 +12025,9 @@
         "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
         "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
       },
       "afstand_saesoner": 4,
       "svag": true,
@@ -11841,12 +12046,17 @@
           "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
           "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Fyn"
       ]
@@ -11968,11 +12178,13 @@
         "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
         "season_evidence_note": null,
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
       },
       "afstand_saesoner": 9,
       "svag": true,
-      "kilde_saeson_fastlagt": true,
+      "kilde_saeson_fastlagt": false,
       "versioner": [
         {
           "id": "sj-veteran-2013-14-season-conflict",
@@ -11987,12 +12199,17 @@
           "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
           "season_evidence_note": null,
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013.",
       "omraade_varianter": [
         "Badminton Sjælland (tidl. SBKr.)"
       ]
@@ -12015,10 +12232,12 @@
         "season_evidence": "Dokumentdato 1. september 2022; sæson ikke angivet",
         "season_evidence_note": null,
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 2 angiver dokumentdatoen 'Pr 1/9-2022', men ikke en anvendelsessæson."
       },
       "afstand_saesoner": 0,
-      "svag": false,
+      "svag": true,
       "kilde_saeson_fastlagt": false,
       "versioner": [
         {
@@ -12034,12 +12253,17 @@
           "season_evidence": "Dokumentdato 1. september 2022; sæson ikke angivet",
           "season_evidence_note": null,
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 2 angiver dokumentdatoen 'Pr 1/9-2022', men ikke en anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Kilden angiver kun dokumentdato, ikke sæson; datoen placerer den betinget i denne sæson. Ingen pointskala/niveautal arves.",
+      "kilde_kommentar": "Kilden angiver kun dokumentdato, ikke sæson; datoen placerer den betinget i denne sæson. Ingen pointskala/niveautal arves. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 2 angiver dokumentdatoen 'Pr 1/9-2022', men ikke en anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Sjælland + DGI Nordsjælland, Midt- og Vestsjælland, Storstrømmen"
       ]
@@ -12062,10 +12286,12 @@
         "season_evidence": "Gældende fra 2020-09-10; anvendelsessæson ikke udtrykkeligt angivet",
         "season_evidence_note": "Forsiden siger gældende pr. 10-09-2020. Dokumentet omfatter de listede serier og Senior Motion/Senior+; sæson er ikke udledt af datoen.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson."
       },
       "afstand_saesoner": 2,
-      "svag": false,
+      "svag": true,
       "kilde_saeson_fastlagt": false,
       "versioner": [
         {
@@ -12081,12 +12307,17 @@
           "season_evidence": "Gældende fra 2020-09-10; anvendelsessæson ikke udtrykkeligt angivet",
           "season_evidence_note": "Forsiden siger gældende pr. 10-09-2020. Dokumentet omfatter de listede serier og Senior Motion/Senior+; sæson er ikke udledt af datoen.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson.",
       "omraade_varianter": [
         "Badminton Sønderjylland og Midtjylland + DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland",
         "DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland samt Badminton Sønderjylland og Midtjylland"
@@ -12195,10 +12426,12 @@
         "season_evidence": "Sæson ikke angivet; PDF-metadata creation date 2023-09-01",
         "season_evidence_note": "Gælder Badmintonligaen til og med Danmarksserien; kredsenes holdturneringer er ikke omfattet. Forside og §5, PDF s. 1 og 4.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF'en beskriver DH-reglementets rækkeomfang, men angiver ingen anvendelsessæson; PDF-metadata creation date er ikke sæson."
       },
       "afstand_saesoner": 0,
-      "svag": false,
+      "svag": true,
       "kilde_saeson_fastlagt": false,
       "versioner": [
         {
@@ -12214,12 +12447,17 @@
           "season_evidence": "Sæson ikke angivet; PDF-metadata creation date 2023-09-01",
           "season_evidence_note": "Gælder Badmintonligaen til og med Danmarksserien; kredsenes holdturneringer er ikke omfattet. Forside og §5, PDF s. 1 og 4.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF'en beskriver DH-reglementets rækkeomfang, men angiver ingen anvendelsessæson; PDF-metadata creation date er ikke sæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Kilden angiver kun dokumentdato, ikke sæson; datoen placerer den betinget i denne sæson. Ingen pointskala/niveautal arves.",
+      "kilde_kommentar": "Kilden angiver kun dokumentdato, ikke sæson; datoen placerer den betinget i denne sæson. Ingen pointskala/niveautal arves. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF'en beskriver DH-reglementets rækkeomfang, men angiver ingen anvendelsessæson; PDF-metadata creation date er ikke sæson.",
       "omraade_varianter": [
         "Badminton Danmark"
       ]
@@ -12260,7 +12498,9 @@
         "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
         "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
       },
       "afstand_saesoner": 5,
       "svag": true,
@@ -12279,12 +12519,17 @@
           "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
           "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Fyn"
       ]
@@ -12307,7 +12552,9 @@
         "season_evidence": "2018/19 (indlejret Word-filnavn '1819'; seneste ændring i PDF'en siger august 2018)",
         "season_evidence_note": "Fællesreglement for Kredsserien Vest og Serie 1 Vest. Årstal står i PDF'ens indlejrede Word-filnavn; selve brødteksten daterer seneste ændring til august 2018.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering."
       },
       "afstand_saesoner": 5,
       "svag": true,
@@ -12326,12 +12573,17 @@
           "season_evidence": "2018/19 (indlejret Word-filnavn '1819'; seneste ændring i PDF'en siger august 2018)",
           "season_evidence_note": "Fællesreglement for Kredsserien Vest og Serie 1 Vest. Årstal står i PDF'ens indlejrede Word-filnavn; selve brødteksten daterer seneste ændring til august 2018.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering.",
       "omraade_varianter": [
         "Badminton Fyn, Badminton Sønderjylland, Badminton Nordjylland og Badminton Midtjylland",
         "Badminton Fyn, Sønderjylland, Nordjylland og Midtjylland"
@@ -12513,10 +12765,12 @@
         "season_evidence": "Dokumentdato 2023-09-01; sæson ikke angivet",
         "season_evidence_note": "Forsiden siger 'Pr 1/9-2023'; dette er registreret som dato, ikke som en udledt sæson.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Pr 1/9-2023', en dato, men ingen anvendelsessæson."
       },
       "afstand_saesoner": 0,
-      "svag": false,
+      "svag": true,
       "kilde_saeson_fastlagt": false,
       "versioner": [
         {
@@ -12532,12 +12786,17 @@
           "season_evidence": "Dokumentdato 2023-09-01; sæson ikke angivet",
           "season_evidence_note": "Forsiden siger 'Pr 1/9-2023'; dette er registreret som dato, ikke som en udledt sæson.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Pr 1/9-2023', en dato, men ingen anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Kilden angiver kun dokumentdato, ikke sæson; datoen placerer den betinget i denne sæson. Ingen pointskala/niveautal arves.",
+      "kilde_kommentar": "Kilden angiver kun dokumentdato, ikke sæson; datoen placerer den betinget i denne sæson. Ingen pointskala/niveautal arves. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Pr 1/9-2023', en dato, men ingen anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Sjælland + DGI Nordsjælland, Midt- og Vestsjælland, Storstrømmen"
       ]
@@ -12560,7 +12819,9 @@
         "season_evidence": "Gældende fra 2020-09-10; anvendelsessæson ikke udtrykkeligt angivet",
         "season_evidence_note": "Forsiden siger gældende pr. 10-09-2020. Dokumentet omfatter de listede serier og Senior Motion/Senior+; sæson er ikke udledt af datoen.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson."
       },
       "afstand_saesoner": 3,
       "svag": true,
@@ -12579,12 +12840,17 @@
           "season_evidence": "Gældende fra 2020-09-10; anvendelsessæson ikke udtrykkeligt angivet",
           "season_evidence_note": "Forsiden siger gældende pr. 10-09-2020. Dokumentet omfatter de listede serier og Senior Motion/Senior+; sæson er ikke udledt af datoen.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson.",
       "omraade_varianter": [
         "Badminton Sønderjylland og Midtjylland + DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland",
         "DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland samt Badminton Sønderjylland og Midtjylland"
@@ -13046,7 +13312,9 @@
         "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
         "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
       },
       "afstand_saesoner": 5,
       "svag": true,
@@ -13065,12 +13333,17 @@
           "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
           "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Fyn"
       ]
@@ -13222,11 +13495,13 @@
         "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
         "season_evidence_note": null,
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
       },
       "afstand_saesoner": 10,
       "svag": true,
-      "kilde_saeson_fastlagt": true,
+      "kilde_saeson_fastlagt": false,
       "versioner": [
         {
           "id": "sj-veteran-2013-14-season-conflict",
@@ -13241,12 +13516,17 @@
           "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
           "season_evidence_note": null,
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013.",
       "omraade_varianter": [
         "Badminton Sjælland (tidl. SBKr.)"
       ]
@@ -13269,10 +13549,12 @@
         "season_evidence": "Dokumentdato 1. september 2022; sæson ikke angivet",
         "season_evidence_note": null,
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 2 angiver dokumentdatoen 'Pr 1/9-2022', men ikke en anvendelsessæson."
       },
       "afstand_saesoner": 1,
-      "svag": false,
+      "svag": true,
       "kilde_saeson_fastlagt": false,
       "versioner": [
         {
@@ -13288,12 +13570,17 @@
           "season_evidence": "Dokumentdato 1. september 2022; sæson ikke angivet",
           "season_evidence_note": null,
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 2 angiver dokumentdatoen 'Pr 1/9-2022', men ikke en anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 2 angiver dokumentdatoen 'Pr 1/9-2022', men ikke en anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Sjælland + DGI Nordsjælland, Midt- og Vestsjælland, Storstrømmen"
       ]
@@ -13316,7 +13603,9 @@
         "season_evidence": "Gældende fra 2020-09-10; anvendelsessæson ikke udtrykkeligt angivet",
         "season_evidence_note": "Forsiden siger gældende pr. 10-09-2020. Dokumentet omfatter de listede serier og Senior Motion/Senior+; sæson er ikke udledt af datoen.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson."
       },
       "afstand_saesoner": 3,
       "svag": true,
@@ -13335,12 +13624,17 @@
           "season_evidence": "Gældende fra 2020-09-10; anvendelsessæson ikke udtrykkeligt angivet",
           "season_evidence_note": "Forsiden siger gældende pr. 10-09-2020. Dokumentet omfatter de listede serier og Senior Motion/Senior+; sæson er ikke udledt af datoen.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson.",
       "omraade_varianter": [
         "Badminton Sønderjylland og Midtjylland + DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland",
         "DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland samt Badminton Sønderjylland og Midtjylland"
@@ -13449,10 +13743,12 @@
         "season_evidence": "Sæson ikke angivet; PDF-metadata creation date 2023-09-01",
         "season_evidence_note": "Gælder Badmintonligaen til og med Danmarksserien; kredsenes holdturneringer er ikke omfattet. Forside og §5, PDF s. 1 og 4.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF'en beskriver DH-reglementets rækkeomfang, men angiver ingen anvendelsessæson; PDF-metadata creation date er ikke sæson."
       },
       "afstand_saesoner": 1,
-      "svag": false,
+      "svag": true,
       "kilde_saeson_fastlagt": false,
       "versioner": [
         {
@@ -13468,12 +13764,17 @@
           "season_evidence": "Sæson ikke angivet; PDF-metadata creation date 2023-09-01",
           "season_evidence_note": "Gælder Badmintonligaen til og med Danmarksserien; kredsenes holdturneringer er ikke omfattet. Forside og §5, PDF s. 1 og 4.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF'en beskriver DH-reglementets rækkeomfang, men angiver ingen anvendelsessæson; PDF-metadata creation date er ikke sæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF'en beskriver DH-reglementets rækkeomfang, men angiver ingen anvendelsessæson; PDF-metadata creation date er ikke sæson.",
       "omraade_varianter": [
         "Badminton Danmark"
       ]
@@ -13514,7 +13815,9 @@
         "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
         "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
       },
       "afstand_saesoner": 6,
       "svag": true,
@@ -13533,12 +13836,17 @@
           "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
           "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Fyn"
       ]
@@ -13561,7 +13869,9 @@
         "season_evidence": "2018/19 (indlejret Word-filnavn '1819'; seneste ændring i PDF'en siger august 2018)",
         "season_evidence_note": "Fællesreglement for Kredsserien Vest og Serie 1 Vest. Årstal står i PDF'ens indlejrede Word-filnavn; selve brødteksten daterer seneste ændring til august 2018.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering."
       },
       "afstand_saesoner": 6,
       "svag": true,
@@ -13580,12 +13890,17 @@
           "season_evidence": "2018/19 (indlejret Word-filnavn '1819'; seneste ændring i PDF'en siger august 2018)",
           "season_evidence_note": "Fællesreglement for Kredsserien Vest og Serie 1 Vest. Årstal står i PDF'ens indlejrede Word-filnavn; selve brødteksten daterer seneste ændring til august 2018.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering.",
       "omraade_varianter": [
         "Badminton Fyn, Badminton Sønderjylland, Badminton Nordjylland og Badminton Midtjylland",
         "Badminton Fyn, Sønderjylland, Nordjylland og Midtjylland"
@@ -13767,10 +14082,12 @@
         "season_evidence": "Dokumentdato 2023-09-01; sæson ikke angivet",
         "season_evidence_note": "Forsiden siger 'Pr 1/9-2023'; dette er registreret som dato, ikke som en udledt sæson.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Pr 1/9-2023', en dato, men ingen anvendelsessæson."
       },
       "afstand_saesoner": 1,
-      "svag": false,
+      "svag": true,
       "kilde_saeson_fastlagt": false,
       "versioner": [
         {
@@ -13786,12 +14103,17 @@
           "season_evidence": "Dokumentdato 2023-09-01; sæson ikke angivet",
           "season_evidence_note": "Forsiden siger 'Pr 1/9-2023'; dette er registreret som dato, ikke som en udledt sæson.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Pr 1/9-2023', en dato, men ingen anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Pr 1/9-2023', en dato, men ingen anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Sjælland + DGI Nordsjælland, Midt- og Vestsjælland, Storstrømmen"
       ]
@@ -13814,7 +14136,9 @@
         "season_evidence": "Gældende fra 2020-09-10; anvendelsessæson ikke udtrykkeligt angivet",
         "season_evidence_note": "Forsiden siger gældende pr. 10-09-2020. Dokumentet omfatter de listede serier og Senior Motion/Senior+; sæson er ikke udledt af datoen.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson."
       },
       "afstand_saesoner": 4,
       "svag": true,
@@ -13833,12 +14157,17 @@
           "season_evidence": "Gældende fra 2020-09-10; anvendelsessæson ikke udtrykkeligt angivet",
           "season_evidence_note": "Forsiden siger gældende pr. 10-09-2020. Dokumentet omfatter de listede serier og Senior Motion/Senior+; sæson er ikke udledt af datoen.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson.",
       "omraade_varianter": [
         "Badminton Sønderjylland og Midtjylland + DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland",
         "DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland samt Badminton Sønderjylland og Midtjylland"
@@ -14319,7 +14648,9 @@
         "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
         "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
       },
       "afstand_saesoner": 6,
       "svag": true,
@@ -14338,12 +14669,17 @@
           "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
           "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Fyn"
       ]
@@ -14495,11 +14831,13 @@
         "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
         "season_evidence_note": null,
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
       },
       "afstand_saesoner": 11,
       "svag": true,
-      "kilde_saeson_fastlagt": true,
+      "kilde_saeson_fastlagt": false,
       "versioner": [
         {
           "id": "sj-veteran-2013-14-season-conflict",
@@ -14514,12 +14852,17 @@
           "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
           "season_evidence_note": null,
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013.",
       "omraade_varianter": [
         "Badminton Sjælland (tidl. SBKr.)"
       ]
@@ -14542,10 +14885,12 @@
         "season_evidence": "Dokumentdato 1. september 2022; sæson ikke angivet",
         "season_evidence_note": null,
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 2 angiver dokumentdatoen 'Pr 1/9-2022', men ikke en anvendelsessæson."
       },
       "afstand_saesoner": 2,
-      "svag": false,
+      "svag": true,
       "kilde_saeson_fastlagt": false,
       "versioner": [
         {
@@ -14561,12 +14906,17 @@
           "season_evidence": "Dokumentdato 1. september 2022; sæson ikke angivet",
           "season_evidence_note": null,
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 2 angiver dokumentdatoen 'Pr 1/9-2022', men ikke en anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 2 angiver dokumentdatoen 'Pr 1/9-2022', men ikke en anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Sjælland + DGI Nordsjælland, Midt- og Vestsjælland, Storstrømmen"
       ]
@@ -14589,7 +14939,9 @@
         "season_evidence": "Gældende fra 2020-09-10; anvendelsessæson ikke udtrykkeligt angivet",
         "season_evidence_note": "Forsiden siger gældende pr. 10-09-2020. Dokumentet omfatter de listede serier og Senior Motion/Senior+; sæson er ikke udledt af datoen.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson."
       },
       "afstand_saesoner": 4,
       "svag": true,
@@ -14608,12 +14960,17 @@
           "season_evidence": "Gældende fra 2020-09-10; anvendelsessæson ikke udtrykkeligt angivet",
           "season_evidence_note": "Forsiden siger gældende pr. 10-09-2020. Dokumentet omfatter de listede serier og Senior Motion/Senior+; sæson er ikke udledt af datoen.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson.",
       "omraade_varianter": [
         "Badminton Sønderjylland og Midtjylland + DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland",
         "DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland samt Badminton Sønderjylland og Midtjylland"
@@ -14722,10 +15079,12 @@
         "season_evidence": "Sæson ikke angivet; PDF-metadata creation date 2023-09-01",
         "season_evidence_note": "Gælder Badmintonligaen til og med Danmarksserien; kredsenes holdturneringer er ikke omfattet. Forside og §5, PDF s. 1 og 4.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF'en beskriver DH-reglementets rækkeomfang, men angiver ingen anvendelsessæson; PDF-metadata creation date er ikke sæson."
       },
       "afstand_saesoner": 2,
-      "svag": false,
+      "svag": true,
       "kilde_saeson_fastlagt": false,
       "versioner": [
         {
@@ -14741,12 +15100,17 @@
           "season_evidence": "Sæson ikke angivet; PDF-metadata creation date 2023-09-01",
           "season_evidence_note": "Gælder Badmintonligaen til og med Danmarksserien; kredsenes holdturneringer er ikke omfattet. Forside og §5, PDF s. 1 og 4.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF'en beskriver DH-reglementets rækkeomfang, men angiver ingen anvendelsessæson; PDF-metadata creation date er ikke sæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF'en beskriver DH-reglementets rækkeomfang, men angiver ingen anvendelsessæson; PDF-metadata creation date er ikke sæson.",
       "omraade_varianter": [
         "Badminton Danmark"
       ]
@@ -14787,7 +15151,9 @@
         "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
         "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
       },
       "afstand_saesoner": 7,
       "svag": true,
@@ -14806,12 +15172,17 @@
           "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
           "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Fyn"
       ]
@@ -14834,7 +15205,9 @@
         "season_evidence": "2018/19 (indlejret Word-filnavn '1819'; seneste ændring i PDF'en siger august 2018)",
         "season_evidence_note": "Fællesreglement for Kredsserien Vest og Serie 1 Vest. Årstal står i PDF'ens indlejrede Word-filnavn; selve brødteksten daterer seneste ændring til august 2018.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering."
       },
       "afstand_saesoner": 7,
       "svag": true,
@@ -14853,12 +15226,17 @@
           "season_evidence": "2018/19 (indlejret Word-filnavn '1819'; seneste ændring i PDF'en siger august 2018)",
           "season_evidence_note": "Fællesreglement for Kredsserien Vest og Serie 1 Vest. Årstal står i PDF'ens indlejrede Word-filnavn; selve brødteksten daterer seneste ændring til august 2018.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering.",
       "omraade_varianter": [
         "Badminton Fyn, Badminton Sønderjylland, Badminton Nordjylland og Badminton Midtjylland",
         "Badminton Fyn, Sønderjylland, Nordjylland og Midtjylland"
@@ -15040,10 +15418,12 @@
         "season_evidence": "Dokumentdato 2025-09-01; anvendelsessæson ikke angivet",
         "season_evidence_note": "Forsiden siger 'Pr 1/9-2025'; PDF'en angiver ikke en fuld anvendelsessæson.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Pr 1/9-2025', en dato, men ingen anvendelsessæson."
       },
       "afstand_saesoner": 0,
-      "svag": false,
+      "svag": true,
       "kilde_saeson_fastlagt": false,
       "versioner": [
         {
@@ -15059,12 +15439,17 @@
           "season_evidence": "Dokumentdato 2025-09-01; anvendelsessæson ikke angivet",
           "season_evidence_note": "Forsiden siger 'Pr 1/9-2025'; PDF'en angiver ikke en fuld anvendelsessæson.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Pr 1/9-2025', en dato, men ingen anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Kilden angiver kun dokumentdato, ikke sæson; datoen placerer den betinget i denne sæson. Ingen pointskala/niveautal arves.",
+      "kilde_kommentar": "Kilden angiver kun dokumentdato, ikke sæson; datoen placerer den betinget i denne sæson. Ingen pointskala/niveautal arves. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Pr 1/9-2025', en dato, men ingen anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Sjælland + DGI Nordsjælland, Midt- og Vestsjælland, Storstrømmen"
       ]
@@ -15073,7 +15458,7 @@
       "season": "2025/26",
       "target_group": "senior",
       "area": "Badminton Sønderjylland og Midtjylland + DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland",
-      "status": "bekraeftet",
+      "status": "betinget",
       "source": {
         "id": "west-senior-veteran-2025-26",
         "title": "Regionalt holdturneringsreglement, senest opdateret/gældende fra uge 43 2025",
@@ -15087,11 +15472,13 @@
         "season_evidence": "2025/26 (gældende fra uge 43 2025)",
         "season_evidence_note": null,
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 01-10-2025'; s. 9 angiver gældende fra uge 43 2025. Ingen af stederne angiver 2025/26 eller en sæson."
       },
       "afstand_saesoner": 0,
-      "svag": false,
-      "kilde_saeson_fastlagt": true,
+      "svag": true,
+      "kilde_saeson_fastlagt": false,
       "versioner": [
         {
           "id": "west-senior-veteran-2025-26",
@@ -15106,12 +15493,17 @@
           "season_evidence": "2025/26 (gældende fra uge 43 2025)",
           "season_evidence_note": null,
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 01-10-2025'; s. 9 angiver gældende fra uge 43 2025. Ingen af stederne angiver 2025/26 eller en sæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Kilden angiver selv sæsonen; versioner bevares separat.",
+      "kilde_kommentar": "Kilden angiver selv sæsonen; versioner bevares separat. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "bekraeftet",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 01-10-2025'; s. 9 angiver gældende fra uge 43 2025. Ingen af stederne angiver 2025/26 eller en sæson.",
       "omraade_varianter": [
         "Badminton Sønderjylland og Midtjylland + DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland",
         "DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland samt Badminton Sønderjylland og Midtjylland"
@@ -15288,7 +15680,9 @@
           "sha256": "33bb7ca713e42c271f166cff5c779db9db66e248ee18892c4eaed62114a73fdb",
           "file": "2025/badminton-danmark/bd-dmu-2025-26.pdf",
           "pages": 3,
-          "role": "separat DMU-tillæg"
+          "role": "separat DMU-tillæg",
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "DMU-tillægget angiver ikke selv en sæson; 2025/26 står alene i register/sti."
         }
       ],
       "kilde_kommentar": "Kilden angiver selv sæsonen; versioner bevares separat.",
@@ -15603,7 +15997,9 @@
         "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
         "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
       },
       "afstand_saesoner": 7,
       "svag": true,
@@ -15622,12 +16018,17 @@
           "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
           "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Fyn"
       ]
@@ -15779,11 +16180,13 @@
         "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
         "season_evidence_note": null,
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
       },
       "afstand_saesoner": 12,
       "svag": true,
-      "kilde_saeson_fastlagt": true,
+      "kilde_saeson_fastlagt": false,
       "versioner": [
         {
           "id": "sj-veteran-2013-14-season-conflict",
@@ -15798,12 +16201,17 @@
           "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
           "season_evidence_note": null,
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013.",
       "omraade_varianter": [
         "Badminton Sjælland (tidl. SBKr.)"
       ]
@@ -15826,7 +16234,9 @@
         "season_evidence": "Dokumentdato 1. september 2022; sæson ikke angivet",
         "season_evidence_note": null,
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 2 angiver dokumentdatoen 'Pr 1/9-2022', men ikke en anvendelsessæson."
       },
       "afstand_saesoner": 3,
       "svag": true,
@@ -15845,12 +16255,17 @@
           "season_evidence": "Dokumentdato 1. september 2022; sæson ikke angivet",
           "season_evidence_note": null,
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 2 angiver dokumentdatoen 'Pr 1/9-2022', men ikke en anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 2 angiver dokumentdatoen 'Pr 1/9-2022', men ikke en anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Sjælland + DGI Nordsjælland, Midt- og Vestsjælland, Storstrømmen"
       ]
@@ -15859,7 +16274,7 @@
       "season": "2025/26",
       "target_group": "veteran",
       "area": "Badminton Sønderjylland og Midtjylland + DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland",
-      "status": "bekraeftet",
+      "status": "betinget",
       "source": {
         "id": "west-senior-veteran-2025-26",
         "title": "Regionalt holdturneringsreglement, senest opdateret/gældende fra uge 43 2025",
@@ -15873,11 +16288,13 @@
         "season_evidence": "2025/26 (gældende fra uge 43 2025)",
         "season_evidence_note": null,
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 01-10-2025'; s. 9 angiver gældende fra uge 43 2025. Ingen af stederne angiver 2025/26 eller en sæson."
       },
       "afstand_saesoner": 0,
-      "svag": false,
-      "kilde_saeson_fastlagt": true,
+      "svag": true,
+      "kilde_saeson_fastlagt": false,
       "versioner": [
         {
           "id": "west-senior-veteran-2025-26",
@@ -15892,12 +16309,17 @@
           "season_evidence": "2025/26 (gældende fra uge 43 2025)",
           "season_evidence_note": null,
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 01-10-2025'; s. 9 angiver gældende fra uge 43 2025. Ingen af stederne angiver 2025/26 eller en sæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Kilden angiver selv sæsonen; versioner bevares separat.",
+      "kilde_kommentar": "Kilden angiver selv sæsonen; versioner bevares separat. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "bekraeftet",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 01-10-2025'; s. 9 angiver gældende fra uge 43 2025. Ingen af stederne angiver 2025/26 eller en sæson.",
       "omraade_varianter": [
         "Badminton Sønderjylland og Midtjylland + DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland",
         "DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland samt Badminton Sønderjylland og Midtjylland"
@@ -16040,7 +16462,9 @@
           "season_evidence": "2026/27",
           "season_evidence_note": null,
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "Blank aftaleformular uden sæsonangivelse i PDF'en; år i filnavn/register er ikke PDF-evidens."
         },
         {
           "id": "bd-dh-holdfaellesskaber-2026-27",
@@ -16055,7 +16479,9 @@
           "season_evidence": "2026/27",
           "season_evidence_note": null,
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "Tillægget henviser til DH-reglementets § 30, men angiver ikke selv en sæson."
         }
       ],
       "pointskala_arv": "ingen",
@@ -16101,7 +16527,9 @@
         "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
         "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
       },
       "afstand_saesoner": 8,
       "svag": true,
@@ -16120,12 +16548,17 @@
           "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
           "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Fyn"
       ]
@@ -16148,7 +16581,9 @@
         "season_evidence": "2018/19 (indlejret Word-filnavn '1819'; seneste ændring i PDF'en siger august 2018)",
         "season_evidence_note": "Fællesreglement for Kredsserien Vest og Serie 1 Vest. Årstal står i PDF'ens indlejrede Word-filnavn; selve brødteksten daterer seneste ændring til august 2018.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering."
       },
       "afstand_saesoner": 8,
       "svag": true,
@@ -16167,12 +16602,17 @@
           "season_evidence": "2018/19 (indlejret Word-filnavn '1819'; seneste ændring i PDF'en siger august 2018)",
           "season_evidence_note": "Fællesreglement for Kredsserien Vest og Serie 1 Vest. Årstal står i PDF'ens indlejrede Word-filnavn; selve brødteksten daterer seneste ændring til august 2018.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering.",
       "omraade_varianter": [
         "Badminton Fyn, Badminton Sønderjylland, Badminton Nordjylland og Badminton Midtjylland",
         "Badminton Fyn, Sønderjylland, Nordjylland og Midtjylland"
@@ -16354,10 +16794,12 @@
         "season_evidence": "Dokumentdato 2025-09-01; anvendelsessæson ikke angivet",
         "season_evidence_note": "Forsiden siger 'Pr 1/9-2025'; PDF'en angiver ikke en fuld anvendelsessæson.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Pr 1/9-2025', en dato, men ingen anvendelsessæson."
       },
       "afstand_saesoner": 1,
-      "svag": false,
+      "svag": true,
       "kilde_saeson_fastlagt": false,
       "versioner": [
         {
@@ -16373,12 +16815,17 @@
           "season_evidence": "Dokumentdato 2025-09-01; anvendelsessæson ikke angivet",
           "season_evidence_note": "Forsiden siger 'Pr 1/9-2025'; PDF'en angiver ikke en fuld anvendelsessæson.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Pr 1/9-2025', en dato, men ingen anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Pr 1/9-2025', en dato, men ingen anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Sjælland + DGI Nordsjælland, Midt- og Vestsjælland, Storstrømmen"
       ]
@@ -16401,11 +16848,13 @@
         "season_evidence": "2025/26 (gældende fra uge 43 2025)",
         "season_evidence_note": null,
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 01-10-2025'; s. 9 angiver gældende fra uge 43 2025. Ingen af stederne angiver 2025/26 eller en sæson."
       },
       "afstand_saesoner": 1,
-      "svag": false,
-      "kilde_saeson_fastlagt": true,
+      "svag": true,
+      "kilde_saeson_fastlagt": false,
       "versioner": [
         {
           "id": "west-senior-veteran-2025-26",
@@ -16420,12 +16869,17 @@
           "season_evidence": "2025/26 (gældende fra uge 43 2025)",
           "season_evidence_note": null,
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 01-10-2025'; s. 9 angiver gældende fra uge 43 2025. Ingen af stederne angiver 2025/26 eller en sæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 01-10-2025'; s. 9 angiver gældende fra uge 43 2025. Ingen af stederne angiver 2025/26 eller en sæson.",
       "omraade_varianter": [
         "Badminton Sønderjylland og Midtjylland + DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland",
         "DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland samt Badminton Sønderjylland og Midtjylland"
@@ -16583,7 +17037,9 @@
           "sha256": "cad89c4ea9eae2cce0fbde0b7cee7c9b40e6a34a1e50f694f6b2dbe21c45c316",
           "file": "2026/badminton-danmark/bd-dmu-2026-27.pdf",
           "pages": 3,
-          "role": "separat DMU-tillæg"
+          "role": "separat DMU-tillæg",
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "DMU-tillægget angiver ikke selv en sæson; 2026/27 står alene i register/sti."
         }
       ],
       "kilde_kommentar": "Kilden angiver selv sæsonen; versioner bevares separat.",
@@ -16898,7 +17354,9 @@
         "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
         "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
       },
       "afstand_saesoner": 8,
       "svag": true,
@@ -16917,12 +17375,17 @@
           "season_evidence": "Revideret 2018-08-01; anvendelsessæson ikke angivet",
           "season_evidence_note": "Reglementets titel omfatter senior, veteran og motion. PDF'en gentager 'Revideret 1. august 2018', men angiver ikke en entydig sæson.",
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Fyn"
       ]
@@ -17074,11 +17537,13 @@
         "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
         "season_evidence_note": null,
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
       },
       "afstand_saesoner": 13,
       "svag": true,
-      "kilde_saeson_fastlagt": true,
+      "kilde_saeson_fastlagt": false,
       "versioner": [
         {
           "id": "sj-veteran-2013-14-season-conflict",
@@ -17093,12 +17558,17 @@
           "season_evidence": "PDF-titel 2013/14; brødtekst omtaler 2012/13",
           "season_evidence_note": null,
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013.",
       "omraade_varianter": [
         "Badminton Sjælland (tidl. SBKr.)"
       ]
@@ -17121,7 +17591,9 @@
         "season_evidence": "Dokumentdato 1. september 2022; sæson ikke angivet",
         "season_evidence_note": null,
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 2 angiver dokumentdatoen 'Pr 1/9-2022', men ikke en anvendelsessæson."
       },
       "afstand_saesoner": 4,
       "svag": true,
@@ -17140,12 +17612,17 @@
           "season_evidence": "Dokumentdato 1. september 2022; sæson ikke angivet",
           "season_evidence_note": null,
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 2 angiver dokumentdatoen 'Pr 1/9-2022', men ikke en anvendelsessæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 2 angiver dokumentdatoen 'Pr 1/9-2022', men ikke en anvendelsessæson.",
       "omraade_varianter": [
         "Badminton Sjælland + DGI Nordsjælland, Midt- og Vestsjælland, Storstrømmen"
       ]
@@ -17168,11 +17645,13 @@
         "season_evidence": "2025/26 (gældende fra uge 43 2025)",
         "season_evidence_note": null,
         "valid_from": null,
-        "valid_to": null
+        "valid_to": null,
+        "kilde_saeson_usikker": true,
+        "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 01-10-2025'; s. 9 angiver gældende fra uge 43 2025. Ingen af stederne angiver 2025/26 eller en sæson."
       },
       "afstand_saesoner": 1,
-      "svag": false,
-      "kilde_saeson_fastlagt": true,
+      "svag": true,
+      "kilde_saeson_fastlagt": false,
       "versioner": [
         {
           "id": "west-senior-veteran-2025-26",
@@ -17187,12 +17666,17 @@
           "season_evidence": "2025/26 (gældende fra uge 43 2025)",
           "season_evidence_note": null,
           "valid_from": null,
-          "valid_to": null
+          "valid_to": null,
+          "kilde_saeson_usikker": true,
+          "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 01-10-2025'; s. 9 angiver gældende fra uge 43 2025. Ingen af stederne angiver 2025/26 eller en sæson."
         }
       ],
       "pointskala_arv": "ingen",
       "supplements": [],
-      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal.",
+      "kilde_kommentar": "Seneste tidligere registerkilde i samme kæde; betinget, uden arv af pointskala/niveautal. Sæsonusikker kilde; sæsonafstand er ikke uafhængigt verificeret.",
+      "status_foer_saesonoverstyring": "betinget",
+      "kilde_saeson_usikker": true,
+      "kilde_saeson_usikker_begrundelse": "PDF s. 1 angiver 'Gældende pr. 01-10-2025'; s. 9 angiver gældende fra uge 43 2025. Ingen af stederne angiver 2025/26 eller en sæson.",
       "omraade_varianter": [
         "Badminton Sønderjylland og Midtjylland + DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland",
         "DGI Østjylland, Vestjylland, Sydvest, Midtjylland, Sønderjylland, Sydøstjylland samt Badminton Sønderjylland og Midtjylland"
@@ -17334,5 +17818,123 @@
       "reason": "PDF-titel angiver 2013/14, men brødteksten omtaler 2012/13; modstridende sæsonudsagn, derfor ikke placeret i sæsonkæde."
     }
   ],
-  "generated_at": "2026-10-05"
+  "generated_at": "2026-10-05",
+  "kilde_saesonoverstyringer": [
+    {
+      "source_id": "sjaelland-veteran-2022-docdate",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "PDF s. 2 angiver dokumentdatoen 'Pr 1/9-2022', men ikke en anvendelsessæson.",
+      "regelbogskilde": true
+    },
+    {
+      "source_id": "west-senior-veteran-2025-26",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "PDF s. 1 angiver 'Gældende pr. 01-10-2025'; s. 9 angiver gældende fra uge 43 2025. Ingen af stederne angiver 2025/26 eller en sæson.",
+      "regelbogskilde": true
+    },
+    {
+      "source_id": "bd-dh-bilag3-2026-27",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "Blank aftaleformular uden sæsonangivelse i PDF'en; år i filnavn/register er ikke PDF-evidens.",
+      "regelbogskilde": false
+    },
+    {
+      "source_id": "bd-dh-holdfaellesskaber-2026-27",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "Tillægget henviser til DH-reglementets § 30, men angiver ikke selv en sæson.",
+      "regelbogskilde": false
+    },
+    {
+      "source_id": "bd-dmu-2026-27",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "DMU-tillægget angiver ikke selv en sæson; 2026/27 står alene i register/sti.",
+      "regelbogskilde": false,
+      "supplement_only": true
+    },
+    {
+      "source_id": "bd-dmu-2025-26",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "DMU-tillægget angiver ikke selv en sæson; 2025/26 står alene i register/sti.",
+      "regelbogskilde": false,
+      "supplement_only": true
+    },
+    {
+      "source_id": "vest-kredsserie-2021",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "PDF'en angiver ikke anvendelsessæson; de forekomster, der ligner årstal, er i en URL til et andet 2019-dokument.",
+      "regelbogskilde": false
+    },
+    {
+      "source_id": "sj-bad-holdreglement-historisk",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "PDF'en angiver generelle bestemmelser for Badminton Sjællands turneringer, men ingen sæson.",
+      "regelbogskilde": false
+    },
+    {
+      "source_id": "lf-regler-historisk",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "PDF'en angiver LFBKr's holdturneringsreglement, men ingen sæson.",
+      "regelbogskilde": false
+    },
+    {
+      "source_id": "dgi-uge38-2026-27",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "Den et-sidede UGE 38-invitation angiver tilbuddet og turneringsformen, men ikke en sæson i selve PDF-teksten.",
+      "regelbogskilde": false
+    },
+    {
+      "source_id": "sj-veteran-2013-14-season-conflict",
+      "dom": "modstridende_saesoner",
+      "begrundelse": "PDF s. 1 har titlen 'Holdturneringen 2013/2014 - Veteran', mens brødteksten omtaler veteranholdturnering 2012/2013.",
+      "regelbogskilde": true
+    },
+    {
+      "source_id": "bd-dh-2023-dated",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "PDF'en beskriver DH-reglementets rækkeomfang, men angiver ingen anvendelsessæson; PDF-metadata creation date er ikke sæson.",
+      "regelbogskilde": true
+    },
+    {
+      "source_id": "sjaelland-senior-2025-docdate",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "PDF s. 1 angiver 'Pr 1/9-2025', en dato, men ingen anvendelsessæson.",
+      "regelbogskilde": true
+    },
+    {
+      "source_id": "sbkr-holdreglement-historic-6803",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "PDF'en indeholder generelle fællesbestemmelser for SBKr.-turneringer, men ingen sæson.",
+      "regelbogskilde": false
+    },
+    {
+      "source_id": "sjaelland-senior-reglement-date-2023-fileid-67465",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "PDF s. 1 angiver 'Pr 1/9-2023', en dato, men ingen anvendelsessæson.",
+      "regelbogskilde": true
+    },
+    {
+      "source_id": "fyn-senior-veteran-reglement-date-2018-fileid-77210",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "PDF s. 1 angiver 'Revideret 1. august 2018', men ingen anvendelsessæson.",
+      "regelbogskilde": true
+    },
+    {
+      "source_id": "west-series-rules-2018-19-fileid-77211",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt en ændring i august 2018; 2018/19 står kun i indlejret Word-filnavn/registrering.",
+      "regelbogskilde": true
+    },
+    {
+      "source_id": "west-series-rules-2017-fileid-77663",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "PDF'en angiver Kredsserien Vest og Serie 1 Vest samt ændringer 1. august 2017, men ingen sæson.",
+      "regelbogskilde": true
+    },
+    {
+      "source_id": "west-dgi-senior-rules-date-2020-fileid-87130",
+      "dom": "ingen_saesonangivelse",
+      "begrundelse": "PDF s. 1 angiver 'Gældende pr. 10-09-2020', men ikke en sæson.",
+      "regelbogskilde": true
+    }
+  ]
 }
