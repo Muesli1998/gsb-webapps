@@ -41,7 +41,7 @@ Skriv i "Spørgsmål". Kan et rækkenavn ikke læses sikkert, så lad rækken st
 `arbejde/144-foreloebig-placering`, fra `main`. Christoffer opretter grenen og committer selv. Codex kører kun læsende git, ustaged, ingen `git add -A`, ingen push, ingen Co-Authored-By, ingen sub-agents.
 
 ## Spørgsmål
-(Tomt.)
+143 indeholder 69 sæson/aldersgruppe-kombinationer, og seks er berørt af målgruppen. Derfor er 63 øvrige kombinationer uændrede, ikke de 64 som kortets kontrol forventer. Skal kontroltallet rettes til 63, eller mangler der en kombination i 143-grundlaget?
 
 ## Tilbagefald
 Slet de nye filer. Ingen database er berørt.
@@ -50,4 +50,13 @@ Slet de nye filer. Ingen database er berørt.
 Når de første kampe i 2026/27 er spillet, genkøres 143 med signaturen, og de foreløbige placeringer dobbelttjekkes mod den. Det sker i et nyt kort.
 
 ## Resultat
-(Udfyldes af Codex.)
+
+- Nyt script: `statistik/scripts/144-foreloebig-placering.mjs`. Det læser 143-resultatet, 136-parserens eksisterende parserresultater og `liga-landskab.db` med `readOnly: true`; 136- og 143-filerne er ikke ændret.
+- Nye rapporter: `statistik/results/144-ungdom-i-tal.json` og `statistik/results/144-aendringer-mod-143.md`.
+- 70 division-rækker blev foreløbigt placeret i seks kombinationer: 2025/26 U09 samt alle fem årgange i 2026/27. De får `placering_kilde: "raekkenavn_foreloebig"` og `foreloebig: true`. 3-spillerformatets status er `foreløbigt valg (Christoffer ikke afgjort)`. Dx er placeret separat efter D og vist som “nybegynder (uden ranglistepoint)”.
+- 2026/27 bedste GSB-række pr. årgang: U09 — 3 spillere, D 3300 (Gladsaxe Søborg 1 og 2); U11 — 4 spillere, B 5600 (GSB 1); U13 — 2+2, B 5200 (GSB 1); U15 — 4 spillere, A 7200 (GSB 1); U17/U19 — 2+2, B 6800 (GSB 1). Understøttende rå holdnavne står i rapporten.
+- Fire rækker kunne ikke læses sikkert; de er listet med grund i rapporten. Ingen af de fire har et GSB-hold knyttet i 143. UGE 38 er fortsat udeladt fra placering.
+- Kontrol: de øvrige 63 af 143’s 69 kombinationer har uændret placering; bredden er uændret i 69/69 kombinationer. Kortets forventning om 64 uændrede kombinationer kan ikke afstemmes: 69 minus de seks mål-kombinationer giver 63. Se også Spørgsmål.
+- Stikprøve mod rådata: 15/15 rækker bestod, heraf 4 U09 og 6 Dx. 136-parseren blev kørt uændret: 28/28 tests bestod; dens tre eksisterende resultatfiler var skrivebeskyttet under testen og står uændrede.
+- `node --check statistik/scripts/144-foreloebig-placering.mjs`: bestået. `git diff --check`: ingen fejl.
+- Databasekontrol før/efter: `liga-landskab.db` SHA-256 `9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C`; `gsb-statistik-normalized.db` SHA-256 `49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E`. Begge hasher og alle tabelrækketal var identiske før/efter. `git status --short statistik/data/` var tom.

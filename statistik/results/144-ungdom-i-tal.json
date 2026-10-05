@@ -1,0 +1,3952 @@
+{
+  "title": "Opgave 144 — foreløbig placering ud fra rækkenavne",
+  "source": {
+    "base_result": "statistik/results/143-ungdom-i-tal.json",
+    "level_parser": "statistik/results/136-parser-effekt.json (existing parser result)",
+    "raw_data": "statistik/data/liga-landskab.db",
+    "readOnly": true
+  },
+  "rule": {
+    "formats": [
+      "4+3",
+      "4+2",
+      "2+2",
+      "4 spillere",
+      "4 piger",
+      "3 spillere"
+    ],
+    "levels": [
+      "E",
+      "M",
+      "A",
+      "B",
+      "C",
+      "C-D",
+      "D",
+      "Dx"
+    ],
+    "dx_display": "nybegynder (uden ranglistepoint)",
+    "dx_is_distinct_from_d": true,
+    "three_player_status": "foreløbigt valg (Christoffer ikke afgjort)",
+    "name_parse": "format i parentes plus eksplicit niveau efter aldersgruppe; suffix BD ignoreres; max-holdfællesskab-point is not level"
+  },
+  "baseline_143_combinations": 69,
+  "changed_combinations": [
+    {
+      "season_id": 2025,
+      "season": "2025/2026",
+      "age_group_id": 2,
+      "age_group_name": "U09"
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 18,
+      "age_group_name": "U17/U19"
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 2,
+      "age_group_name": "U09"
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 3,
+      "age_group_name": "U11"
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 4,
+      "age_group_name": "U13"
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 5,
+      "age_group_name": "U15"
+    }
+  ],
+  "unchanged_combinations_count": 63,
+  "card_expected_unchanged_combinations": 64,
+  "card_count_reconciliation": "69 kombinationer i 143 minus 6 mål-kombinationer = 63; kortets tal 64 kan ikke afstemmes med 143's 69 kombinationer.",
+  "provisional_rows": [
+    {
+      "season_id": 2025,
+      "season": "2025/2026",
+      "age_group_id": 2,
+      "age_group_name": "U09",
+      "division_name_raw": "U09 C 3600 (3 spillere) BD",
+      "format": "3 spillere",
+      "level": {
+        "raw_level": "C",
+        "letter": "C",
+        "rank": 4,
+        "numeric_value": 3600,
+        "interpretable": true,
+        "display_name": "C"
+      },
+      "before": {
+        "format": "3 spillere",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "C",
+          "letter": "C",
+          "rank": 4,
+          "numeric_value": 3600,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": [
+        "Gladsaxe Søborg 1"
+      ]
+    },
+    {
+      "season_id": 2025,
+      "season": "2025/2026",
+      "age_group_id": 2,
+      "age_group_name": "U09",
+      "division_name_raw": "U09 C 3600 (3 spillere) BD (2. halvår)",
+      "format": "3 spillere",
+      "level": {
+        "raw_level": "C",
+        "letter": "C",
+        "rank": 4,
+        "numeric_value": 3600,
+        "interpretable": true,
+        "display_name": "C"
+      },
+      "before": {
+        "format": "3 spillere",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "C",
+          "letter": "C",
+          "rank": 4,
+          "numeric_value": 3600,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": [
+        "Gladsaxe Søborg 1"
+      ]
+    },
+    {
+      "season_id": 2025,
+      "season": "2025/2026",
+      "age_group_id": 2,
+      "age_group_name": "U09",
+      "division_name_raw": "U09 D 3300 (3 spillere) BD",
+      "format": "3 spillere",
+      "level": {
+        "raw_level": "D",
+        "letter": "D",
+        "rank": 6,
+        "numeric_value": 3300,
+        "interpretable": true,
+        "display_name": "D"
+      },
+      "before": {
+        "format": "3 spillere",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "D",
+          "letter": "D",
+          "rank": 6,
+          "numeric_value": 3300,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": [
+        "Gladsaxe Søborg 2",
+        "Gladsaxe Søborg 3"
+      ]
+    },
+    {
+      "season_id": 2025,
+      "season": "2025/2026",
+      "age_group_id": 2,
+      "age_group_name": "U09",
+      "division_name_raw": "U09 D 3300 (3 spillere) BD (2. halvår)",
+      "format": "3 spillere",
+      "level": {
+        "raw_level": "D",
+        "letter": "D",
+        "rank": 6,
+        "numeric_value": 3300,
+        "interpretable": true,
+        "display_name": "D"
+      },
+      "before": {
+        "format": "3 spillere",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "D",
+          "letter": "D",
+          "rank": 6,
+          "numeric_value": 3300,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": [
+        "Gladsaxe Søborg 3",
+        "Gladsaxe Søborg 2",
+        "Gladsaxe Søborg 4",
+        "Gladsaxe Søborg 5"
+      ]
+    },
+    {
+      "season_id": 2025,
+      "season": "2025/2026",
+      "age_group_id": 2,
+      "age_group_name": "U09",
+      "division_name_raw": "U9 D, 3300 (3 spillere)",
+      "format": "3 spillere",
+      "level": {
+        "raw_level": "D",
+        "letter": "D",
+        "rank": 6,
+        "numeric_value": 3300,
+        "interpretable": true,
+        "display_name": "D"
+      },
+      "before": {
+        "format": "3 spillere",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "D",
+          "letter": "D",
+          "rank": 6,
+          "numeric_value": 3300,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 2,
+      "age_group_name": "U09",
+      "division_name_raw": "U09 C-D 3400 (3 spillere) BD",
+      "format": "3 spillere",
+      "level": {
+        "raw_level": "C-D",
+        "letter": null,
+        "rank": 5,
+        "numeric_value": 3400,
+        "interpretable": true,
+        "display_name": "C-D"
+      },
+      "before": {
+        "format": "Uplaceret: 3 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "C-D",
+          "letter": null,
+          "rank": 5,
+          "numeric_value": 3400,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 2,
+      "age_group_name": "U09",
+      "division_name_raw": "U09 D 3300 (3 spillere) BD",
+      "format": "3 spillere",
+      "level": {
+        "raw_level": "D",
+        "letter": "D",
+        "rank": 6,
+        "numeric_value": 3300,
+        "interpretable": true,
+        "display_name": "D"
+      },
+      "before": {
+        "format": "Uplaceret: 3 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "D",
+          "letter": "D",
+          "rank": 6,
+          "numeric_value": 3300,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": [
+        "Gladsaxe Søborg 1",
+        "Gladsaxe Søborg 2"
+      ]
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 2,
+      "age_group_name": "U09",
+      "division_name_raw": "U9 D, 3300 (3 spillere)",
+      "format": "3 spillere",
+      "level": {
+        "raw_level": "D",
+        "letter": "D",
+        "rank": 6,
+        "numeric_value": 3300,
+        "interpretable": true,
+        "display_name": "D"
+      },
+      "before": {
+        "format": "Uplaceret: 3 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "D",
+          "letter": "D",
+          "rank": 6,
+          "numeric_value": 3300,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 2,
+      "age_group_name": "U09",
+      "division_name_raw": "U9 Dx, 3000 (3 spillere) BD",
+      "format": "3 spillere",
+      "level": {
+        "raw_level": "Dx",
+        "letter": null,
+        "rank": 7,
+        "numeric_value": 3000,
+        "interpretable": true,
+        "display_name": "nybegynder (uden ranglistepoint)"
+      },
+      "before": {
+        "format": "Uplaceret: 3 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": null,
+          "letter": null,
+          "rank": null,
+          "numeric_value": null,
+          "interpretable": false
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": [
+        "Gladsaxe Søborg 3",
+        "Gladsaxe Søborg 4"
+      ]
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "division_name_raw": "U11 D, 4200 (4 piger)",
+      "format": "4 piger",
+      "level": {
+        "raw_level": "D",
+        "letter": "D",
+        "rank": 6,
+        "numeric_value": 4200,
+        "interpretable": true,
+        "display_name": "D"
+      },
+      "before": {
+        "format": "Uplaceret: 4 piger (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "D",
+          "letter": "D",
+          "rank": 6,
+          "numeric_value": 4200,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "division_name_raw": "U11 D, 4200 (4 piger) BD",
+      "format": "4 piger",
+      "level": {
+        "raw_level": "D",
+        "letter": "D",
+        "rank": 6,
+        "numeric_value": 4200,
+        "interpretable": true,
+        "display_name": "D"
+      },
+      "before": {
+        "format": "Uplaceret: 4 piger (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "D",
+          "letter": "D",
+          "rank": 6,
+          "numeric_value": 4200,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": [
+        "Gladsaxe Søborg 5"
+      ]
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "division_name_raw": "U11 B, 5600 (4 spillere) BD",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "B",
+        "letter": "B",
+        "rank": 3,
+        "numeric_value": 5600,
+        "interpretable": true,
+        "display_name": "B"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "B",
+          "letter": "B",
+          "rank": 3,
+          "numeric_value": 5600,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": [
+        "Gladsaxe Søborg 1"
+      ]
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "division_name_raw": "U11 C, 5000 (4 spillere)",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "C",
+        "letter": "C",
+        "rank": 4,
+        "numeric_value": 5000,
+        "interpretable": true,
+        "display_name": "C"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "C",
+          "letter": "C",
+          "rank": 4,
+          "numeric_value": 5000,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "division_name_raw": "U11 C, 5000 (4 spillere) BD",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "C",
+        "letter": "C",
+        "rank": 4,
+        "numeric_value": 5000,
+        "interpretable": true,
+        "display_name": "C"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "C",
+          "letter": "C",
+          "rank": 4,
+          "numeric_value": 5000,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "division_name_raw": "U11 C-D, 4700 (4 spillere)",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "C-D",
+        "letter": null,
+        "rank": 5,
+        "numeric_value": 4700,
+        "interpretable": true,
+        "display_name": "C-D"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "C-D",
+          "letter": null,
+          "rank": 5,
+          "numeric_value": 4700,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "division_name_raw": "U11 C-D, 4700 (4 spillere) BD",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "C-D",
+        "letter": null,
+        "rank": 5,
+        "numeric_value": 4700,
+        "interpretable": true,
+        "display_name": "C-D"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "C-D",
+          "letter": null,
+          "rank": 5,
+          "numeric_value": 4700,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": [
+        "Gladsaxe Søborg 2"
+      ]
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "division_name_raw": "U11 D, 4400 (4 spillere)",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "D",
+        "letter": "D",
+        "rank": 6,
+        "numeric_value": 4400,
+        "interpretable": true,
+        "display_name": "D"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "D",
+          "letter": "D",
+          "rank": 6,
+          "numeric_value": 4400,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "division_name_raw": "U11 D, 4400 (4 spillere) BD",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "D",
+        "letter": "D",
+        "rank": 6,
+        "numeric_value": 4400,
+        "interpretable": true,
+        "display_name": "D"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "D",
+          "letter": "D",
+          "rank": 6,
+          "numeric_value": 4400,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "division_name_raw": "U11 Dx, 4200 (4 spillere)",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "Dx",
+        "letter": null,
+        "rank": 7,
+        "numeric_value": 4200,
+        "interpretable": true,
+        "display_name": "nybegynder (uden ranglistepoint)"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": null,
+          "letter": null,
+          "rank": null,
+          "numeric_value": null,
+          "interpretable": false
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "division_name_raw": "U11 Dx, 4200 (4 spillere) BD",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "Dx",
+        "letter": null,
+        "rank": 7,
+        "numeric_value": 4200,
+        "interpretable": true,
+        "display_name": "nybegynder (uden ranglistepoint)"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": null,
+          "letter": null,
+          "rank": null,
+          "numeric_value": null,
+          "interpretable": false
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": [
+        "Gladsaxe Søborg 3",
+        "Gladsaxe Søborg 4"
+      ]
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "division_name_raw": "U13 A, 5800 (2+2)",
+      "format": "2+2",
+      "level": {
+        "raw_level": "A",
+        "letter": "A",
+        "rank": 2,
+        "numeric_value": 5800,
+        "interpretable": true,
+        "display_name": "A"
+      },
+      "before": {
+        "format": "Uplaceret: 2+2 (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "A",
+          "letter": "A",
+          "rank": 2,
+          "numeric_value": 5800,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "division_name_raw": "U13 B, 5200 (2+2)",
+      "format": "2+2",
+      "level": {
+        "raw_level": "B",
+        "letter": "B",
+        "rank": 3,
+        "numeric_value": 5200,
+        "interpretable": true,
+        "display_name": "B"
+      },
+      "before": {
+        "format": "Uplaceret: 2+2 (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "B",
+          "letter": "B",
+          "rank": 3,
+          "numeric_value": 5200,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": [
+        "Gladsaxe Søborg 1"
+      ]
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "division_name_raw": "U13 C, 4800 (2+2)",
+      "format": "2+2",
+      "level": {
+        "raw_level": "C",
+        "letter": "C",
+        "rank": 4,
+        "numeric_value": 4800,
+        "interpretable": true,
+        "display_name": "C"
+      },
+      "before": {
+        "format": "Uplaceret: 2+2 (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "C",
+          "letter": "C",
+          "rank": 4,
+          "numeric_value": 4800,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "division_name_raw": "U13 C, 4800 (4 piger) BD",
+      "format": "4 piger",
+      "level": {
+        "raw_level": "C",
+        "letter": "C",
+        "rank": 4,
+        "numeric_value": 4800,
+        "interpretable": true,
+        "display_name": "C"
+      },
+      "before": {
+        "format": "Uplaceret: 4 piger (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "C",
+          "letter": "C",
+          "rank": 4,
+          "numeric_value": 4800,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "division_name_raw": "U13 D, 4400 (4 piger)",
+      "format": "4 piger",
+      "level": {
+        "raw_level": "D",
+        "letter": "D",
+        "rank": 6,
+        "numeric_value": 4400,
+        "interpretable": true,
+        "display_name": "D"
+      },
+      "before": {
+        "format": "Uplaceret: 4 piger (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "D",
+          "letter": "D",
+          "rank": 6,
+          "numeric_value": 4400,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "division_name_raw": "U13 D, 4400 (4 piger) BD",
+      "format": "4 piger",
+      "level": {
+        "raw_level": "D",
+        "letter": "D",
+        "rank": 6,
+        "numeric_value": 4400,
+        "interpretable": true,
+        "display_name": "D"
+      },
+      "before": {
+        "format": "Uplaceret: 4 piger (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "D",
+          "letter": "D",
+          "rank": 6,
+          "numeric_value": 4400,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": [
+        "Gladsaxe Søborg 6"
+      ]
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "division_name_raw": "U13 A, 6400 (4 spillere) BD",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "A",
+        "letter": "A",
+        "rank": 2,
+        "numeric_value": 6400,
+        "interpretable": true,
+        "display_name": "A"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "A",
+          "letter": "A",
+          "rank": 2,
+          "numeric_value": 6400,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "division_name_raw": "U13 B, 5600 (4 spillere)",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "B",
+        "letter": "B",
+        "rank": 3,
+        "numeric_value": 5600,
+        "interpretable": true,
+        "display_name": "B"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "B",
+          "letter": "B",
+          "rank": 3,
+          "numeric_value": 5600,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "division_name_raw": "U13 B, 5600 (4 spillere) BD",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "B",
+        "letter": "B",
+        "rank": 3,
+        "numeric_value": 5600,
+        "interpretable": true,
+        "display_name": "B"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "B",
+          "letter": "B",
+          "rank": 3,
+          "numeric_value": 5600,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": [
+        "Gladsaxe Søborg 2"
+      ]
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "division_name_raw": "U13 C, 5100 (4 spillere)",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "C",
+        "letter": "C",
+        "rank": 4,
+        "numeric_value": 5100,
+        "interpretable": true,
+        "display_name": "C"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "C",
+          "letter": "C",
+          "rank": 4,
+          "numeric_value": 5100,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "division_name_raw": "U13 C, 5100 (4 spillere) BD",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "C",
+        "letter": "C",
+        "rank": 4,
+        "numeric_value": 5100,
+        "interpretable": true,
+        "display_name": "C"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "C",
+          "letter": "C",
+          "rank": 4,
+          "numeric_value": 5100,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "division_name_raw": "U13 C-D, 4800 (4 spillere)",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "C-D",
+        "letter": null,
+        "rank": 5,
+        "numeric_value": 4800,
+        "interpretable": true,
+        "display_name": "C-D"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "C-D",
+          "letter": null,
+          "rank": 5,
+          "numeric_value": 4800,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "division_name_raw": "U13 C-D, 4800 (4 spillere) BD",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "C-D",
+        "letter": null,
+        "rank": 5,
+        "numeric_value": 4800,
+        "interpretable": true,
+        "display_name": "C-D"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "C-D",
+          "letter": null,
+          "rank": 5,
+          "numeric_value": 4800,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": [
+        "Gladsaxe Søborg 3"
+      ]
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "division_name_raw": "U13 D 4600 (4 spillere)",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "D",
+        "letter": "D",
+        "rank": 6,
+        "numeric_value": 4600,
+        "interpretable": true,
+        "display_name": "D"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "D",
+          "letter": "D",
+          "rank": 6,
+          "numeric_value": 4600,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "division_name_raw": "U13 D, 4600 (4 spillere)",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "D",
+        "letter": "D",
+        "rank": 6,
+        "numeric_value": 4600,
+        "interpretable": true,
+        "display_name": "D"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "D",
+          "letter": "D",
+          "rank": 6,
+          "numeric_value": 4600,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "division_name_raw": "U13 D, 4600 (4 spillere) BD",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "D",
+        "letter": "D",
+        "rank": 6,
+        "numeric_value": 4600,
+        "interpretable": true,
+        "display_name": "D"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "D",
+          "letter": "D",
+          "rank": 6,
+          "numeric_value": 4600,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "division_name_raw": "U13 Dx, 4400 (4 spillere)",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "Dx",
+        "letter": null,
+        "rank": 7,
+        "numeric_value": 4400,
+        "interpretable": true,
+        "display_name": "nybegynder (uden ranglistepoint)"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": null,
+          "letter": null,
+          "rank": null,
+          "numeric_value": null,
+          "interpretable": false
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "division_name_raw": "U13 Dx, 4400 (4 spillere) BD",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "Dx",
+        "letter": null,
+        "rank": 7,
+        "numeric_value": 4400,
+        "interpretable": true,
+        "display_name": "nybegynder (uden ranglistepoint)"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": null,
+          "letter": null,
+          "rank": null,
+          "numeric_value": null,
+          "interpretable": false
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": [
+        "Gladsaxe Søborg 4",
+        "Gladsaxe Søborg 5"
+      ]
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "division_name_raw": "U15 M, 7800 (2+2)",
+      "format": "2+2",
+      "level": {
+        "raw_level": "M",
+        "letter": "M",
+        "rank": 1,
+        "numeric_value": 7800,
+        "interpretable": true,
+        "display_name": "M"
+      },
+      "before": {
+        "format": "Uplaceret: 2+2 (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "M",
+          "letter": "M",
+          "rank": 1,
+          "numeric_value": 7800,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "division_name_raw": "U15 A, 6800 (2+2)",
+      "format": "2+2",
+      "level": {
+        "raw_level": "A",
+        "letter": "A",
+        "rank": 2,
+        "numeric_value": 6800,
+        "interpretable": true,
+        "display_name": "A"
+      },
+      "before": {
+        "format": "Uplaceret: 2+2 (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "A",
+          "letter": "A",
+          "rank": 2,
+          "numeric_value": 6800,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "division_name_raw": "U15 B, 5800 (2+2)",
+      "format": "2+2",
+      "level": {
+        "raw_level": "B",
+        "letter": "B",
+        "rank": 3,
+        "numeric_value": 5800,
+        "interpretable": true,
+        "display_name": "B"
+      },
+      "before": {
+        "format": "Uplaceret: 2+2 (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "B",
+          "letter": "B",
+          "rank": 3,
+          "numeric_value": 5800,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "division_name_raw": "U15 C, 5200 (2+2)",
+      "format": "2+2",
+      "level": {
+        "raw_level": "C",
+        "letter": "C",
+        "rank": 4,
+        "numeric_value": 5200,
+        "interpretable": true,
+        "display_name": "C"
+      },
+      "before": {
+        "format": "Uplaceret: 2+2 (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "C",
+          "letter": "C",
+          "rank": 4,
+          "numeric_value": 5200,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "division_name_raw": "U15 D, 4800 (2+2)",
+      "format": "2+2",
+      "level": {
+        "raw_level": "D",
+        "letter": "D",
+        "rank": 6,
+        "numeric_value": 4800,
+        "interpretable": true,
+        "display_name": "D"
+      },
+      "before": {
+        "format": "Uplaceret: 2+2 (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "D",
+          "letter": "D",
+          "rank": 6,
+          "numeric_value": 4800,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "division_name_raw": "U15 B, 5400 (4 piger) BD",
+      "format": "4 piger",
+      "level": {
+        "raw_level": "B",
+        "letter": "B",
+        "rank": 3,
+        "numeric_value": 5400,
+        "interpretable": true,
+        "display_name": "B"
+      },
+      "before": {
+        "format": "Uplaceret: 4 piger (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "B",
+          "letter": "B",
+          "rank": 3,
+          "numeric_value": 5400,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "division_name_raw": "U15 C, 4900 (4 piger)",
+      "format": "4 piger",
+      "level": {
+        "raw_level": "C",
+        "letter": "C",
+        "rank": 4,
+        "numeric_value": 4900,
+        "interpretable": true,
+        "display_name": "C"
+      },
+      "before": {
+        "format": "Uplaceret: 4 piger (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "C",
+          "letter": "C",
+          "rank": 4,
+          "numeric_value": 4900,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": [
+        "Gladsaxe Søborg 7"
+      ]
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "division_name_raw": "U15 D, 4500 (4 piger)",
+      "format": "4 piger",
+      "level": {
+        "raw_level": "D",
+        "letter": "D",
+        "rank": 6,
+        "numeric_value": 4500,
+        "interpretable": true,
+        "display_name": "D"
+      },
+      "before": {
+        "format": "Uplaceret: 4 piger (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "D",
+          "letter": "D",
+          "rank": 6,
+          "numeric_value": 4500,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "division_name_raw": "U15 A, 7200 (4 spillere)",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "A",
+        "letter": "A",
+        "rank": 2,
+        "numeric_value": 7200,
+        "interpretable": true,
+        "display_name": "A"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "A",
+          "letter": "A",
+          "rank": 2,
+          "numeric_value": 7200,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": [
+        "Gladsaxe Søborg 1"
+      ]
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "division_name_raw": "U15 B, 6200 (4 spillere)",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "B",
+        "letter": "B",
+        "rank": 3,
+        "numeric_value": 6200,
+        "interpretable": true,
+        "display_name": "B"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "B",
+          "letter": "B",
+          "rank": 3,
+          "numeric_value": 6200,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "division_name_raw": "U15 B, 6200 (4 spillere) BD",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "B",
+        "letter": "B",
+        "rank": 3,
+        "numeric_value": 6200,
+        "interpretable": true,
+        "display_name": "B"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "B",
+          "letter": "B",
+          "rank": 3,
+          "numeric_value": 6200,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": [
+        "Gladsaxe Søborg 2",
+        "Gladsaxe Søborg 3"
+      ]
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "division_name_raw": "U15 C, 5500 (4 spillere)",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "C",
+        "letter": "C",
+        "rank": 4,
+        "numeric_value": 5500,
+        "interpretable": true,
+        "display_name": "C"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "C",
+          "letter": "C",
+          "rank": 4,
+          "numeric_value": 5500,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "division_name_raw": "U15 C-D, 5100 (4 spillere)",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "C-D",
+        "letter": null,
+        "rank": 5,
+        "numeric_value": 5100,
+        "interpretable": true,
+        "display_name": "C-D"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "C-D",
+          "letter": null,
+          "rank": 5,
+          "numeric_value": 5100,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "division_name_raw": "U15 C-D, 5100 (4 spillere) BD",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "C-D",
+        "letter": null,
+        "rank": 5,
+        "numeric_value": 5100,
+        "interpretable": true,
+        "display_name": "C-D"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "C-D",
+          "letter": null,
+          "rank": 5,
+          "numeric_value": 5100,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": [
+        "Gladsaxe Søborg 4"
+      ]
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "division_name_raw": "U15 D 4800 (4 spillere)",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "D",
+        "letter": "D",
+        "rank": 6,
+        "numeric_value": 4800,
+        "interpretable": true,
+        "display_name": "D"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "D",
+          "letter": "D",
+          "rank": 6,
+          "numeric_value": 4800,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "division_name_raw": "U15 D, 4800 (4 spillere)",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "D",
+        "letter": "D",
+        "rank": 6,
+        "numeric_value": 4800,
+        "interpretable": true,
+        "display_name": "D"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "D",
+          "letter": "D",
+          "rank": 6,
+          "numeric_value": 4800,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "division_name_raw": "U15 D, 4800 (4 spillere) BD",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "D",
+        "letter": "D",
+        "rank": 6,
+        "numeric_value": 4800,
+        "interpretable": true,
+        "display_name": "D"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "D",
+          "letter": "D",
+          "rank": 6,
+          "numeric_value": 4800,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": [
+        "Gladsaxe Søborg 5"
+      ]
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "division_name_raw": "U15 Dx, 4600 (4 spillere)",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "Dx",
+        "letter": null,
+        "rank": 7,
+        "numeric_value": 4600,
+        "interpretable": true,
+        "display_name": "nybegynder (uden ranglistepoint)"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": null,
+          "letter": null,
+          "rank": null,
+          "numeric_value": null,
+          "interpretable": false
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": [
+        "Gladsaxe Søborg 6"
+      ]
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "division_name_raw": "U17/U19 B, 6800 (2+2)",
+      "format": "2+2",
+      "level": {
+        "raw_level": "B",
+        "letter": "B",
+        "rank": 3,
+        "numeric_value": 6800,
+        "interpretable": true,
+        "display_name": "B"
+      },
+      "before": {
+        "format": "Uplaceret: 2+2 (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "B",
+          "letter": "B",
+          "rank": 3,
+          "numeric_value": 6800,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": [
+        "Gladsaxe Søborg 1"
+      ]
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "division_name_raw": "U17/U19 C, 5800 (2+2)",
+      "format": "2+2",
+      "level": {
+        "raw_level": "C",
+        "letter": "C",
+        "rank": 4,
+        "numeric_value": 5800,
+        "interpretable": true,
+        "display_name": "C"
+      },
+      "before": {
+        "format": "Uplaceret: 2+2 (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "C",
+          "letter": "C",
+          "rank": 4,
+          "numeric_value": 5800,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "division_name_raw": "U17/U19 D, 5000 (2+2)",
+      "format": "2+2",
+      "level": {
+        "raw_level": "D",
+        "letter": "D",
+        "rank": 6,
+        "numeric_value": 5000,
+        "interpretable": true,
+        "display_name": "D"
+      },
+      "before": {
+        "format": "Uplaceret: 2+2 (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "D",
+          "letter": "D",
+          "rank": 6,
+          "numeric_value": 5000,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "division_name_raw": "U17/U19 C, 5300 (4 piger)",
+      "format": "4 piger",
+      "level": {
+        "raw_level": "C",
+        "letter": "C",
+        "rank": 4,
+        "numeric_value": 5300,
+        "interpretable": true,
+        "display_name": "C"
+      },
+      "before": {
+        "format": "Uplaceret: 4 piger (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "C",
+          "letter": "C",
+          "rank": 4,
+          "numeric_value": 5300,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "division_name_raw": "U17/U19 D, 4800 (4 piger) BD",
+      "format": "4 piger",
+      "level": {
+        "raw_level": "D",
+        "letter": "D",
+        "rank": 6,
+        "numeric_value": 4800,
+        "interpretable": true,
+        "display_name": "D"
+      },
+      "before": {
+        "format": "Uplaceret: 4 piger (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "D",
+          "letter": "D",
+          "rank": 6,
+          "numeric_value": 4800,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": [
+        "Gladsaxe Søborg 4"
+      ]
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "division_name_raw": "U17/U19 M, 9600 (4 spillere)",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "M",
+        "letter": "M",
+        "rank": 1,
+        "numeric_value": 9600,
+        "interpretable": true,
+        "display_name": "M"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "M",
+          "letter": "M",
+          "rank": 1,
+          "numeric_value": 9600,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "division_name_raw": "U17/U19 A, 8200 (4 spillere)",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "A",
+        "letter": "A",
+        "rank": 2,
+        "numeric_value": 8200,
+        "interpretable": true,
+        "display_name": "A"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "A",
+          "letter": "A",
+          "rank": 2,
+          "numeric_value": 8200,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "division_name_raw": "U17/U19 B, 7200 (4 spillere)",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "B",
+        "letter": "B",
+        "rank": 3,
+        "numeric_value": 7200,
+        "interpretable": true,
+        "display_name": "B"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "B",
+          "letter": "B",
+          "rank": 3,
+          "numeric_value": 7200,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "division_name_raw": "U17/U19 C, 6200 (4 spillere)",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "C",
+        "letter": "C",
+        "rank": 4,
+        "numeric_value": 6200,
+        "interpretable": true,
+        "display_name": "C"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "C",
+          "letter": "C",
+          "rank": 4,
+          "numeric_value": 6200,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "division_name_raw": "U17/U19 C, 6200 (4 spillere) BD",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "C",
+        "letter": "C",
+        "rank": 4,
+        "numeric_value": 6200,
+        "interpretable": true,
+        "display_name": "C"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "C",
+          "letter": "C",
+          "rank": 4,
+          "numeric_value": 6200,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "division_name_raw": "U17/U19 C-D, 5500 (4 spillere)",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "C-D",
+        "letter": null,
+        "rank": 5,
+        "numeric_value": 5500,
+        "interpretable": true,
+        "display_name": "C-D"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "C-D",
+          "letter": null,
+          "rank": 5,
+          "numeric_value": 5500,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "division_name_raw": "U17/U19 C-D, 5500 (4 spillere) BD",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "C-D",
+        "letter": null,
+        "rank": 5,
+        "numeric_value": 5500,
+        "interpretable": true,
+        "display_name": "C-D"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "C-D",
+          "letter": null,
+          "rank": 5,
+          "numeric_value": 5500,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": [
+        "Gladsaxe Søborg 2",
+        "Gladsaxe Søborg 3"
+      ]
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "division_name_raw": "U17/U19 D, 5100 (4 spillere)",
+      "format": "4 spillere",
+      "level": {
+        "raw_level": "D",
+        "letter": "D",
+        "rank": 6,
+        "numeric_value": 5100,
+        "interpretable": true,
+        "display_name": "D"
+      },
+      "before": {
+        "format": "Uplaceret: 4 spillere (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "D",
+          "letter": "D",
+          "rank": 6,
+          "numeric_value": 5100,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "division_name_raw": "U17/U19 M, 14000 (4+2)",
+      "format": "4+2",
+      "level": {
+        "raw_level": "M",
+        "letter": "M",
+        "rank": 1,
+        "numeric_value": 14000,
+        "interpretable": true,
+        "display_name": "M"
+      },
+      "before": {
+        "format": "Uplaceret: 4+2 (ingen brugbar kategorisignatur)",
+        "status": "Ikke placeret",
+        "level": {
+          "raw_level": "M",
+          "letter": "M",
+          "rank": 1,
+          "numeric_value": 14000,
+          "interpretable": true
+        }
+      },
+      "placering_kilde": "raekkenavn_foreloebig",
+      "foreloebig": true,
+      "gsb_teams": []
+    }
+  ],
+  "unreadable_rows": [
+    {
+      "season": "2026/2027",
+      "age_group_name": "U11",
+      "division_name_raw": "U11 (4+2) - maks. 8500 p. holdfællesskab",
+      "gsb_teams": [],
+      "reason": "136-parseren fortolker ikke rækken sikkert (status: intet niveau nødvendigt (eneste række))."
+    },
+    {
+      "season": "2026/2027",
+      "age_group_name": "U11",
+      "division_name_raw": "U11 D 4400 (4 spilllere)",
+      "gsb_teams": [],
+      "reason": "Intet entydigt kanonisk format i parentes."
+    },
+    {
+      "season": "2026/2027",
+      "age_group_name": "U13",
+      "division_name_raw": "U13 (4+3) - maks. 11500 p. holdfællesskab",
+      "gsb_teams": [],
+      "reason": "136-parseren fortolker ikke rækken sikkert (status: intet niveau nødvendigt (eneste række))."
+    },
+    {
+      "season": "2026/2027",
+      "age_group_name": "U15",
+      "division_name_raw": "U15 (4+3) - maks. 14000 p. holdfællesskab",
+      "gsb_teams": [],
+      "reason": "136-parseren fortolker ikke rækken sikkert (status: intet niveau nødvendigt (eneste række))."
+    }
+  ],
+  "placement_unchanged_checks": [
+    {
+      "season": "2011/2012",
+      "age_group_name": "U11",
+      "changed": false
+    },
+    {
+      "season": "2011/2012",
+      "age_group_name": "U13",
+      "changed": false
+    },
+    {
+      "season": "2011/2012",
+      "age_group_name": "U15",
+      "changed": false
+    },
+    {
+      "season": "2011/2012",
+      "age_group_name": "U17",
+      "changed": false
+    },
+    {
+      "season": "2012/2013",
+      "age_group_name": "U11",
+      "changed": false
+    },
+    {
+      "season": "2012/2013",
+      "age_group_name": "U13",
+      "changed": false
+    },
+    {
+      "season": "2012/2013",
+      "age_group_name": "U15",
+      "changed": false
+    },
+    {
+      "season": "2012/2013",
+      "age_group_name": "U17",
+      "changed": false
+    },
+    {
+      "season": "2013/2014",
+      "age_group_name": "U11",
+      "changed": false
+    },
+    {
+      "season": "2013/2014",
+      "age_group_name": "U13",
+      "changed": false
+    },
+    {
+      "season": "2013/2014",
+      "age_group_name": "U15",
+      "changed": false
+    },
+    {
+      "season": "2013/2014",
+      "age_group_name": "U17",
+      "changed": false
+    },
+    {
+      "season": "2014/2015",
+      "age_group_name": "U11",
+      "changed": false
+    },
+    {
+      "season": "2014/2015",
+      "age_group_name": "U13",
+      "changed": false
+    },
+    {
+      "season": "2014/2015",
+      "age_group_name": "U15",
+      "changed": false
+    },
+    {
+      "season": "2014/2015",
+      "age_group_name": "U17",
+      "changed": false
+    },
+    {
+      "season": "2015/2016",
+      "age_group_name": "U11",
+      "changed": false
+    },
+    {
+      "season": "2015/2016",
+      "age_group_name": "U13",
+      "changed": false
+    },
+    {
+      "season": "2015/2016",
+      "age_group_name": "U15",
+      "changed": false
+    },
+    {
+      "season": "2015/2016",
+      "age_group_name": "U17",
+      "changed": false
+    },
+    {
+      "season": "2016/2017",
+      "age_group_name": "U11",
+      "changed": false
+    },
+    {
+      "season": "2016/2017",
+      "age_group_name": "U13",
+      "changed": false
+    },
+    {
+      "season": "2016/2017",
+      "age_group_name": "U15",
+      "changed": false
+    },
+    {
+      "season": "2016/2017",
+      "age_group_name": "U17",
+      "changed": false
+    },
+    {
+      "season": "2016/2017",
+      "age_group_name": "U17/U19",
+      "changed": false
+    },
+    {
+      "season": "2017/2018",
+      "age_group_name": "U11",
+      "changed": false
+    },
+    {
+      "season": "2017/2018",
+      "age_group_name": "U13",
+      "changed": false
+    },
+    {
+      "season": "2017/2018",
+      "age_group_name": "U15",
+      "changed": false
+    },
+    {
+      "season": "2017/2018",
+      "age_group_name": "U17/U19",
+      "changed": false
+    },
+    {
+      "season": "2018/2019",
+      "age_group_name": "U11",
+      "changed": false
+    },
+    {
+      "season": "2018/2019",
+      "age_group_name": "U13",
+      "changed": false
+    },
+    {
+      "season": "2018/2019",
+      "age_group_name": "U15",
+      "changed": false
+    },
+    {
+      "season": "2018/2019",
+      "age_group_name": "U17/U19",
+      "changed": false
+    },
+    {
+      "season": "2019/2020",
+      "age_group_name": "U11",
+      "changed": false
+    },
+    {
+      "season": "2019/2020",
+      "age_group_name": "U13",
+      "changed": false
+    },
+    {
+      "season": "2019/2020",
+      "age_group_name": "U15",
+      "changed": false
+    },
+    {
+      "season": "2020/2021",
+      "age_group_name": "U09",
+      "changed": false
+    },
+    {
+      "season": "2020/2021",
+      "age_group_name": "U11",
+      "changed": false
+    },
+    {
+      "season": "2020/2021",
+      "age_group_name": "U13",
+      "changed": false
+    },
+    {
+      "season": "2020/2021",
+      "age_group_name": "U15",
+      "changed": false
+    },
+    {
+      "season": "2021/2022",
+      "age_group_name": "U09",
+      "changed": false
+    },
+    {
+      "season": "2021/2022",
+      "age_group_name": "U11",
+      "changed": false
+    },
+    {
+      "season": "2021/2022",
+      "age_group_name": "U13",
+      "changed": false
+    },
+    {
+      "season": "2021/2022",
+      "age_group_name": "U15",
+      "changed": false
+    },
+    {
+      "season": "2022/2023",
+      "age_group_name": "U09",
+      "changed": false
+    },
+    {
+      "season": "2022/2023",
+      "age_group_name": "U11",
+      "changed": false
+    },
+    {
+      "season": "2022/2023",
+      "age_group_name": "U13",
+      "changed": false
+    },
+    {
+      "season": "2022/2023",
+      "age_group_name": "U15",
+      "changed": false
+    },
+    {
+      "season": "2022/2023",
+      "age_group_name": "U17/U19",
+      "changed": false
+    },
+    {
+      "season": "2023/2024",
+      "age_group_name": "U09",
+      "changed": false
+    },
+    {
+      "season": "2023/2024",
+      "age_group_name": "U11",
+      "changed": false
+    },
+    {
+      "season": "2023/2024",
+      "age_group_name": "U13",
+      "changed": false
+    },
+    {
+      "season": "2023/2024",
+      "age_group_name": "U15",
+      "changed": false
+    },
+    {
+      "season": "2023/2024",
+      "age_group_name": "U17/U19",
+      "changed": false
+    },
+    {
+      "season": "2024/2025",
+      "age_group_name": "U09",
+      "changed": false
+    },
+    {
+      "season": "2024/2025",
+      "age_group_name": "U11",
+      "changed": false
+    },
+    {
+      "season": "2024/2025",
+      "age_group_name": "U13",
+      "changed": false
+    },
+    {
+      "season": "2024/2025",
+      "age_group_name": "U15",
+      "changed": false
+    },
+    {
+      "season": "2024/2025",
+      "age_group_name": "U17/U19",
+      "changed": false
+    },
+    {
+      "season": "2025/2026",
+      "age_group_name": "U09",
+      "changed": true
+    },
+    {
+      "season": "2025/2026",
+      "age_group_name": "U11",
+      "changed": false
+    },
+    {
+      "season": "2025/2026",
+      "age_group_name": "U13",
+      "changed": false
+    },
+    {
+      "season": "2025/2026",
+      "age_group_name": "U15",
+      "changed": false
+    },
+    {
+      "season": "2025/2026",
+      "age_group_name": "U17/U19",
+      "changed": false
+    },
+    {
+      "season": "2026/2027",
+      "age_group_name": "U09",
+      "changed": true
+    },
+    {
+      "season": "2026/2027",
+      "age_group_name": "U11",
+      "changed": true
+    },
+    {
+      "season": "2026/2027",
+      "age_group_name": "U13",
+      "changed": true
+    },
+    {
+      "season": "2026/2027",
+      "age_group_name": "U15",
+      "changed": true
+    },
+    {
+      "season": "2026/2027",
+      "age_group_name": "U17/U19",
+      "changed": true
+    }
+  ],
+  "width_unchanged_checks": [
+    {
+      "season_id": 2011,
+      "season": "2011/2012",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 2,
+        "total": 5,
+        "percent": 40
+      }
+    },
+    {
+      "season_id": 2011,
+      "season": "2011/2012",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 2,
+        "total": 5,
+        "percent": 40
+      }
+    },
+    {
+      "season_id": 2011,
+      "season": "2011/2012",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 3,
+        "total": 5,
+        "percent": 60
+      }
+    },
+    {
+      "season_id": 2011,
+      "season": "2011/2012",
+      "age_group_id": 6,
+      "age_group_name": "U17",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 0,
+        "total": 3,
+        "percent": 0
+      }
+    },
+    {
+      "season_id": 2012,
+      "season": "2012/2013",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 1,
+        "total": 5,
+        "percent": 20
+      }
+    },
+    {
+      "season_id": 2012,
+      "season": "2012/2013",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 1,
+        "total": 5,
+        "percent": 20
+      }
+    },
+    {
+      "season_id": 2012,
+      "season": "2012/2013",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 3,
+        "total": 5,
+        "percent": 60
+      }
+    },
+    {
+      "season_id": 2012,
+      "season": "2012/2013",
+      "age_group_id": 6,
+      "age_group_name": "U17",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 1,
+        "total": 3,
+        "percent": 33.333333333333336
+      }
+    },
+    {
+      "season_id": 2013,
+      "season": "2013/2014",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 2,
+        "total": 6,
+        "percent": 33.333333333333336
+      }
+    },
+    {
+      "season_id": 2013,
+      "season": "2013/2014",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 1,
+        "total": 6,
+        "percent": 16.666666666666668
+      }
+    },
+    {
+      "season_id": 2013,
+      "season": "2013/2014",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 3,
+        "total": 6,
+        "percent": 50
+      }
+    },
+    {
+      "season_id": 2013,
+      "season": "2013/2014",
+      "age_group_id": 6,
+      "age_group_name": "U17",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 2,
+        "total": 3,
+        "percent": 66.66666666666667
+      }
+    },
+    {
+      "season_id": 2014,
+      "season": "2014/2015",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 2,
+        "total": 8,
+        "percent": 25
+      }
+    },
+    {
+      "season_id": 2014,
+      "season": "2014/2015",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 2,
+        "total": 6,
+        "percent": 33.333333333333336
+      }
+    },
+    {
+      "season_id": 2014,
+      "season": "2014/2015",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 2,
+        "total": 5,
+        "percent": 40
+      }
+    },
+    {
+      "season_id": 2014,
+      "season": "2014/2015",
+      "age_group_id": 6,
+      "age_group_name": "U17",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 0,
+        "total": 3,
+        "percent": 0
+      }
+    },
+    {
+      "season_id": 2015,
+      "season": "2015/2016",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 1,
+        "total": 4,
+        "percent": 25
+      }
+    },
+    {
+      "season_id": 2015,
+      "season": "2015/2016",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 2,
+        "total": 6,
+        "percent": 33.333333333333336
+      }
+    },
+    {
+      "season_id": 2015,
+      "season": "2015/2016",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 1,
+        "total": 6,
+        "percent": 16.666666666666668
+      }
+    },
+    {
+      "season_id": 2015,
+      "season": "2015/2016",
+      "age_group_id": 6,
+      "age_group_name": "U17",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 0,
+        "total": 4,
+        "percent": 0
+      }
+    },
+    {
+      "season_id": 2016,
+      "season": "2016/2017",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 2,
+        "total": 8,
+        "percent": 25
+      }
+    },
+    {
+      "season_id": 2016,
+      "season": "2016/2017",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 1,
+        "total": 8,
+        "percent": 12.5
+      }
+    },
+    {
+      "season_id": 2016,
+      "season": "2016/2017",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 2,
+        "total": 6,
+        "percent": 33.333333333333336
+      }
+    },
+    {
+      "season_id": 2016,
+      "season": "2016/2017",
+      "age_group_id": 6,
+      "age_group_name": "U17",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 1,
+        "total": 5,
+        "percent": 20
+      }
+    },
+    {
+      "season_id": 2016,
+      "season": "2016/2017",
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 0,
+        "total": 1,
+        "percent": 0
+      }
+    },
+    {
+      "season_id": 2017,
+      "season": "2017/2018",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 1,
+        "total": 7,
+        "percent": 14.285714285714286
+      }
+    },
+    {
+      "season_id": 2017,
+      "season": "2017/2018",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 2,
+        "total": 10,
+        "percent": 20
+      }
+    },
+    {
+      "season_id": 2017,
+      "season": "2017/2018",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 2,
+        "total": 9,
+        "percent": 22.22222222222222
+      }
+    },
+    {
+      "season_id": 2017,
+      "season": "2017/2018",
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 1,
+        "total": 5,
+        "percent": 20
+      }
+    },
+    {
+      "season_id": 2018,
+      "season": "2018/2019",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 2,
+        "total": 9,
+        "percent": 22.22222222222222
+      }
+    },
+    {
+      "season_id": 2018,
+      "season": "2018/2019",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 1,
+        "total": 8,
+        "percent": 12.5
+      }
+    },
+    {
+      "season_id": 2018,
+      "season": "2018/2019",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 1,
+        "total": 10,
+        "percent": 10
+      }
+    },
+    {
+      "season_id": 2018,
+      "season": "2018/2019",
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 2,
+        "total": 6,
+        "percent": 33.333333333333336
+      }
+    },
+    {
+      "season_id": 2019,
+      "season": "2019/2020",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 1,
+        "total": 6,
+        "percent": 16.666666666666668
+      }
+    },
+    {
+      "season_id": 2019,
+      "season": "2019/2020",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 2,
+        "total": 8,
+        "percent": 25
+      }
+    },
+    {
+      "season_id": 2019,
+      "season": "2019/2020",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 1,
+        "total": 8,
+        "percent": 12.5
+      }
+    },
+    {
+      "season_id": 2020,
+      "season": "2020/2021",
+      "age_group_id": 2,
+      "age_group_name": "U09",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 1,
+        "total": 1,
+        "percent": 100
+      }
+    },
+    {
+      "season_id": 2020,
+      "season": "2020/2021",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 1,
+        "total": 6,
+        "percent": 16.666666666666668
+      }
+    },
+    {
+      "season_id": 2020,
+      "season": "2020/2021",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 2,
+        "total": 8,
+        "percent": 25
+      }
+    },
+    {
+      "season_id": 2020,
+      "season": "2020/2021",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 3,
+        "total": 12,
+        "percent": 25
+      }
+    },
+    {
+      "season_id": 2021,
+      "season": "2021/2022",
+      "age_group_id": 2,
+      "age_group_name": "U09",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 1,
+        "total": 2,
+        "percent": 50
+      }
+    },
+    {
+      "season_id": 2021,
+      "season": "2021/2022",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 1,
+        "total": 7,
+        "percent": 14.285714285714286
+      }
+    },
+    {
+      "season_id": 2021,
+      "season": "2021/2022",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 3,
+        "total": 9,
+        "percent": 33.333333333333336
+      }
+    },
+    {
+      "season_id": 2021,
+      "season": "2021/2022",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 5,
+        "total": 10,
+        "percent": 50
+      }
+    },
+    {
+      "season_id": 2022,
+      "season": "2022/2023",
+      "age_group_id": 2,
+      "age_group_name": "U09",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 1,
+        "total": 2,
+        "percent": 50
+      }
+    },
+    {
+      "season_id": 2022,
+      "season": "2022/2023",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 5,
+        "total": 6,
+        "percent": 83.33333333333333
+      }
+    },
+    {
+      "season_id": 2022,
+      "season": "2022/2023",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 2,
+        "total": 8,
+        "percent": 25
+      }
+    },
+    {
+      "season_id": 2022,
+      "season": "2022/2023",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 5,
+        "total": 11,
+        "percent": 45.45454545454545
+      }
+    },
+    {
+      "season_id": 2022,
+      "season": "2022/2023",
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 1,
+        "total": 7,
+        "percent": 14.285714285714286
+      }
+    },
+    {
+      "season_id": 2023,
+      "season": "2023/2024",
+      "age_group_id": 2,
+      "age_group_name": "U09",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 1,
+        "total": 2,
+        "percent": 50
+      }
+    },
+    {
+      "season_id": 2023,
+      "season": "2023/2024",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 4,
+        "total": 6,
+        "percent": 66.66666666666667
+      }
+    },
+    {
+      "season_id": 2023,
+      "season": "2023/2024",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 4,
+        "total": 10,
+        "percent": 40
+      }
+    },
+    {
+      "season_id": 2023,
+      "season": "2023/2024",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 4,
+        "total": 12,
+        "percent": 33.333333333333336
+      }
+    },
+    {
+      "season_id": 2023,
+      "season": "2023/2024",
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 2,
+        "total": 9,
+        "percent": 22.22222222222222
+      }
+    },
+    {
+      "season_id": 2024,
+      "season": "2024/2025",
+      "age_group_id": 2,
+      "age_group_name": "U09",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 1,
+        "total": 2,
+        "percent": 50
+      }
+    },
+    {
+      "season_id": 2024,
+      "season": "2024/2025",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 3,
+        "total": 5,
+        "percent": 60
+      }
+    },
+    {
+      "season_id": 2024,
+      "season": "2024/2025",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 5,
+        "total": 10,
+        "percent": 50
+      }
+    },
+    {
+      "season_id": 2024,
+      "season": "2024/2025",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 3,
+        "total": 11,
+        "percent": 27.272727272727273
+      }
+    },
+    {
+      "season_id": 2024,
+      "season": "2024/2025",
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 1,
+        "total": 9,
+        "percent": 11.11111111111111
+      }
+    },
+    {
+      "season_id": 2025,
+      "season": "2025/2026",
+      "age_group_id": 2,
+      "age_group_name": "U09",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 4,
+        "total": 4,
+        "percent": 100
+      }
+    },
+    {
+      "season_id": 2025,
+      "season": "2025/2026",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 3,
+        "total": 6,
+        "percent": 50
+      }
+    },
+    {
+      "season_id": 2025,
+      "season": "2025/2026",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 5,
+        "total": 11,
+        "percent": 45.45454545454545
+      }
+    },
+    {
+      "season_id": 2025,
+      "season": "2025/2026",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 6,
+        "total": 13,
+        "percent": 46.15384615384615
+      }
+    },
+    {
+      "season_id": 2025,
+      "season": "2025/2026",
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 2,
+        "total": 11,
+        "percent": 18.181818181818183
+      }
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 2,
+      "age_group_name": "U09",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 2,
+        "total": 3,
+        "percent": 66.66666666666667
+      }
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 3,
+      "age_group_name": "U11",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 4,
+        "total": 7,
+        "percent": 57.142857142857146
+      }
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 4,
+      "age_group_name": "U13",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 5,
+        "total": 12,
+        "percent": 41.666666666666664
+      }
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 5,
+      "age_group_name": "U15",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 6,
+        "total": 15,
+        "percent": 40
+      }
+    },
+    {
+      "season_id": 2026,
+      "season": "2026/2027",
+      "age_group_id": 18,
+      "age_group_name": "U17/U19",
+      "unchanged": true,
+      "width": {
+        "gsb_in": 3,
+        "total": 11,
+        "percent": 27.272727272727273
+      }
+    }
+  ],
+  "2026_2027_gsb_summary": [
+    {
+      "age_group_name": "U09",
+      "best": {
+        "format": "3 spillere",
+        "tier": null,
+        "division_name_raw": "U09 D 3300 (3 spillere) BD",
+        "level": {
+          "raw_level": "D",
+          "letter": "D",
+          "rank": 6,
+          "numeric_value": 3300,
+          "interpretable": true,
+          "display_name": "D"
+        },
+        "place_in_season_age": 1,
+        "formats_present": 1,
+        "global_126_position": null,
+        "hierarchy_status": "foreløbigt valg (Christoffer ikke afgjort)",
+        "placering_kilde": "raekkenavn_foreloebig",
+        "foreloebig": true
+      },
+      "supporting_gsb_teams": [
+        "Gladsaxe Søborg 1",
+        "Gladsaxe Søborg 2"
+      ]
+    },
+    {
+      "age_group_name": "U11",
+      "best": {
+        "format": "4 spillere",
+        "tier": null,
+        "division_name_raw": "U11 B, 5600 (4 spillere) BD",
+        "level": {
+          "raw_level": "B",
+          "letter": "B",
+          "rank": 3,
+          "numeric_value": 5600,
+          "interpretable": true,
+          "display_name": "B"
+        },
+        "place_in_season_age": 1,
+        "formats_present": 2,
+        "global_126_position": null,
+        "hierarchy_status": "Christoffers fastlagte formatrækkefølge; foreløbigt niveau fra rækkenavn",
+        "placering_kilde": "raekkenavn_foreloebig",
+        "foreloebig": true
+      },
+      "supporting_gsb_teams": [
+        "Gladsaxe Søborg 1"
+      ]
+    },
+    {
+      "age_group_name": "U13",
+      "best": {
+        "format": "2+2",
+        "tier": null,
+        "division_name_raw": "U13 B, 5200 (2+2)",
+        "level": {
+          "raw_level": "B",
+          "letter": "B",
+          "rank": 3,
+          "numeric_value": 5200,
+          "interpretable": true,
+          "display_name": "B"
+        },
+        "place_in_season_age": 1,
+        "formats_present": 3,
+        "global_126_position": null,
+        "hierarchy_status": "Christoffers fastlagte formatrækkefølge; foreløbigt niveau fra rækkenavn",
+        "placering_kilde": "raekkenavn_foreloebig",
+        "foreloebig": true
+      },
+      "supporting_gsb_teams": [
+        "Gladsaxe Søborg 1"
+      ]
+    },
+    {
+      "age_group_name": "U15",
+      "best": {
+        "format": "4 spillere",
+        "tier": null,
+        "division_name_raw": "U15 A, 7200 (4 spillere)",
+        "level": {
+          "raw_level": "A",
+          "letter": "A",
+          "rank": 2,
+          "numeric_value": 7200,
+          "interpretable": true,
+          "display_name": "A"
+        },
+        "place_in_season_age": 2,
+        "formats_present": 3,
+        "global_126_position": null,
+        "hierarchy_status": "Christoffers fastlagte formatrækkefølge; foreløbigt niveau fra rækkenavn",
+        "placering_kilde": "raekkenavn_foreloebig",
+        "foreloebig": true
+      },
+      "supporting_gsb_teams": [
+        "Gladsaxe Søborg 1"
+      ]
+    },
+    {
+      "age_group_name": "U17/U19",
+      "best": {
+        "format": "2+2",
+        "tier": null,
+        "division_name_raw": "U17/U19 B, 6800 (2+2)",
+        "level": {
+          "raw_level": "B",
+          "letter": "B",
+          "rank": 3,
+          "numeric_value": 6800,
+          "interpretable": true,
+          "display_name": "B"
+        },
+        "place_in_season_age": 2,
+        "formats_present": 4,
+        "global_126_position": null,
+        "hierarchy_status": "Christoffers fastlagte formatrækkefølge; foreløbigt niveau fra rækkenavn",
+        "placering_kilde": "raekkenavn_foreloebig",
+        "foreloebig": true
+      },
+      "supporting_gsb_teams": [
+        "Gladsaxe Søborg 1"
+      ]
+    }
+  ],
+  "raw_data_sample_15": [
+    {
+      "season": "2026/2027",
+      "age_group_name": "U09",
+      "league_group_id": "19114",
+      "team_name_raw": "Gladsaxe Søborg 3",
+      "division_name_raw": "U9 Dx, 3000 (3 spillere) BD",
+      "expected_format": "3 spillere",
+      "expected_level": {
+        "raw_level": "Dx",
+        "letter": null,
+        "rank": 7,
+        "numeric_value": 3000,
+        "interpretable": true,
+        "display_name": "nybegynder (uden ranglistepoint)"
+      },
+      "raw_row_name_matches": true,
+      "raw_team_name_matches": true,
+      "dx": true
+    },
+    {
+      "season": "2026/2027",
+      "age_group_name": "U09",
+      "league_group_id": "19114",
+      "team_name_raw": "Gladsaxe Søborg 4",
+      "division_name_raw": "U9 Dx, 3000 (3 spillere) BD",
+      "expected_format": "3 spillere",
+      "expected_level": {
+        "raw_level": "Dx",
+        "letter": null,
+        "rank": 7,
+        "numeric_value": 3000,
+        "interpretable": true,
+        "display_name": "nybegynder (uden ranglistepoint)"
+      },
+      "raw_row_name_matches": true,
+      "raw_team_name_matches": true,
+      "dx": true
+    },
+    {
+      "season": "2026/2027",
+      "age_group_name": "U09",
+      "league_group_id": "19115",
+      "team_name_raw": "Gladsaxe Søborg 1",
+      "division_name_raw": "U09 D 3300 (3 spillere) BD",
+      "expected_format": "3 spillere",
+      "expected_level": {
+        "raw_level": "D",
+        "letter": "D",
+        "rank": 6,
+        "numeric_value": 3300,
+        "interpretable": true,
+        "display_name": "D"
+      },
+      "raw_row_name_matches": true,
+      "raw_team_name_matches": true,
+      "dx": false
+    },
+    {
+      "season": "2026/2027",
+      "age_group_name": "U09",
+      "league_group_id": "19115",
+      "team_name_raw": "Gladsaxe Søborg 2",
+      "division_name_raw": "U09 D 3300 (3 spillere) BD",
+      "expected_format": "3 spillere",
+      "expected_level": {
+        "raw_level": "D",
+        "letter": "D",
+        "rank": 6,
+        "numeric_value": 3300,
+        "interpretable": true,
+        "display_name": "D"
+      },
+      "raw_row_name_matches": true,
+      "raw_team_name_matches": true,
+      "dx": false
+    },
+    {
+      "season": "2026/2027",
+      "age_group_name": "U11",
+      "league_group_id": "19133",
+      "team_name_raw": "Gladsaxe Søborg 3",
+      "division_name_raw": "U11 Dx, 4200 (4 spillere) BD",
+      "expected_format": "4 spillere",
+      "expected_level": {
+        "raw_level": "Dx",
+        "letter": null,
+        "rank": 7,
+        "numeric_value": 4200,
+        "interpretable": true,
+        "display_name": "nybegynder (uden ranglistepoint)"
+      },
+      "raw_row_name_matches": true,
+      "raw_team_name_matches": true,
+      "dx": true
+    },
+    {
+      "season": "2026/2027",
+      "age_group_name": "U11",
+      "league_group_id": "19124",
+      "team_name_raw": "Gladsaxe Søborg 1",
+      "division_name_raw": "U11 B, 5600 (4 spillere) BD",
+      "expected_format": "4 spillere",
+      "expected_level": {
+        "raw_level": "B",
+        "letter": "B",
+        "rank": 3,
+        "numeric_value": 5600,
+        "interpretable": true,
+        "display_name": "B"
+      },
+      "raw_row_name_matches": true,
+      "raw_team_name_matches": true,
+      "dx": false
+    },
+    {
+      "season": "2026/2027",
+      "age_group_name": "U11",
+      "league_group_id": "19126",
+      "team_name_raw": "Gladsaxe Søborg 2",
+      "division_name_raw": "U11 C-D, 4700 (4 spillere) BD",
+      "expected_format": "4 spillere",
+      "expected_level": {
+        "raw_level": "C-D",
+        "letter": null,
+        "rank": 5,
+        "numeric_value": 4700,
+        "interpretable": true,
+        "display_name": "C-D"
+      },
+      "raw_row_name_matches": true,
+      "raw_team_name_matches": true,
+      "dx": false
+    },
+    {
+      "season": "2026/2027",
+      "age_group_name": "U11",
+      "league_group_id": "19133",
+      "team_name_raw": "Gladsaxe Søborg 4",
+      "division_name_raw": "U11 Dx, 4200 (4 spillere) BD",
+      "expected_format": "4 spillere",
+      "expected_level": {
+        "raw_level": "Dx",
+        "letter": null,
+        "rank": 7,
+        "numeric_value": 4200,
+        "interpretable": true,
+        "display_name": "nybegynder (uden ranglistepoint)"
+      },
+      "raw_row_name_matches": true,
+      "raw_team_name_matches": true,
+      "dx": true
+    },
+    {
+      "season": "2026/2027",
+      "age_group_name": "U11",
+      "league_group_id": "19135",
+      "team_name_raw": "Gladsaxe Søborg 5",
+      "division_name_raw": "U11 D, 4200 (4 piger) BD",
+      "expected_format": "4 piger",
+      "expected_level": {
+        "raw_level": "D",
+        "letter": "D",
+        "rank": 6,
+        "numeric_value": 4200,
+        "interpretable": true,
+        "display_name": "D"
+      },
+      "raw_row_name_matches": true,
+      "raw_team_name_matches": true,
+      "dx": false
+    },
+    {
+      "season": "2026/2027",
+      "age_group_name": "U13",
+      "league_group_id": "18976",
+      "team_name_raw": "Gladsaxe Søborg 1",
+      "division_name_raw": "U13 B, 5200 (2+2)",
+      "expected_format": "2+2",
+      "expected_level": {
+        "raw_level": "B",
+        "letter": "B",
+        "rank": 3,
+        "numeric_value": 5200,
+        "interpretable": true,
+        "display_name": "B"
+      },
+      "raw_row_name_matches": true,
+      "raw_team_name_matches": true,
+      "dx": false
+    },
+    {
+      "season": "2026/2027",
+      "age_group_name": "U13",
+      "league_group_id": "19140",
+      "team_name_raw": "Gladsaxe Søborg 2",
+      "division_name_raw": "U13 B, 5600 (4 spillere) BD",
+      "expected_format": "4 spillere",
+      "expected_level": {
+        "raw_level": "B",
+        "letter": "B",
+        "rank": 3,
+        "numeric_value": 5600,
+        "interpretable": true,
+        "display_name": "B"
+      },
+      "raw_row_name_matches": true,
+      "raw_team_name_matches": true,
+      "dx": false
+    },
+    {
+      "season": "2026/2027",
+      "age_group_name": "U13",
+      "league_group_id": "19142",
+      "team_name_raw": "Gladsaxe Søborg 3",
+      "division_name_raw": "U13 C-D, 4800 (4 spillere) BD",
+      "expected_format": "4 spillere",
+      "expected_level": {
+        "raw_level": "C-D",
+        "letter": null,
+        "rank": 5,
+        "numeric_value": 4800,
+        "interpretable": true,
+        "display_name": "C-D"
+      },
+      "raw_row_name_matches": true,
+      "raw_team_name_matches": true,
+      "dx": false
+    },
+    {
+      "season": "2026/2027",
+      "age_group_name": "U13",
+      "league_group_id": "19144",
+      "team_name_raw": "Gladsaxe Søborg 4",
+      "division_name_raw": "U13 Dx, 4400 (4 spillere) BD",
+      "expected_format": "4 spillere",
+      "expected_level": {
+        "raw_level": "Dx",
+        "letter": null,
+        "rank": 7,
+        "numeric_value": 4400,
+        "interpretable": true,
+        "display_name": "nybegynder (uden ranglistepoint)"
+      },
+      "raw_row_name_matches": true,
+      "raw_team_name_matches": true,
+      "dx": true
+    },
+    {
+      "season": "2026/2027",
+      "age_group_name": "U13",
+      "league_group_id": "19144",
+      "team_name_raw": "Gladsaxe Søborg 5",
+      "division_name_raw": "U13 Dx, 4400 (4 spillere) BD",
+      "expected_format": "4 spillere",
+      "expected_level": {
+        "raw_level": "Dx",
+        "letter": null,
+        "rank": 7,
+        "numeric_value": 4400,
+        "interpretable": true,
+        "display_name": "nybegynder (uden ranglistepoint)"
+      },
+      "raw_row_name_matches": true,
+      "raw_team_name_matches": true,
+      "dx": true
+    },
+    {
+      "season": "2026/2027",
+      "age_group_name": "U13",
+      "league_group_id": "19146",
+      "team_name_raw": "Gladsaxe Søborg 6",
+      "division_name_raw": "U13 D, 4400 (4 piger) BD",
+      "expected_format": "4 piger",
+      "expected_level": {
+        "raw_level": "D",
+        "letter": "D",
+        "rank": 6,
+        "numeric_value": 4400,
+        "interpretable": true,
+        "display_name": "D"
+      },
+      "raw_row_name_matches": true,
+      "raw_team_name_matches": true,
+      "dx": false
+    }
+  ],
+  "parser_136_stored_test_record": {
+    "passed": 28,
+    "total": 28,
+    "source": "statistik/results/136-parser-effekt.json; test-suite definitions/results unchanged"
+  },
+  "dx_source_review": {
+    "conclusion": "Ingen modsigelse fundet: 136-rapporten siger, at Dx er dokumenteret som begynderniveau i de angivne reglementer, men ikke fortolket af parseren. Kort 144 fastlægger den særskilte foreløbige placering efter D."
+  },
+  "databases_before": {
+    "landscape": {
+      "sha256": "9976723eaa61e248adc7ee33348cad41eebf9f30ddfdf913b6d40ef9d0d4b74c",
+      "row_counts": {
+        "age_groups": 29,
+        "club_registry": 796,
+        "fetch_errors": 0,
+        "group_type_katalog": 8928,
+        "league_group_details": 18546,
+        "league_group_match_counts": 18546,
+        "league_group_regions": 59127,
+        "league_group_teams": 96823,
+        "league_groups": 18546,
+        "league_match_groups": 310137,
+        "league_match_requests": 221558,
+        "league_matches": 203012,
+        "match_categories": 1300474,
+        "match_games": 2636258,
+        "regions": 33,
+        "standing_indexes": 16269
+      }
+    },
+    "normalized": {
+      "sha256": "49bc62ac3aa8b5a003a4b4d1a8112a8f986d12c8667b22342027d42a1d01b41e",
+      "row_counts": {
+        "clubs": 1,
+        "competitions": 462,
+        "extraction_errors": 1444,
+        "individual_match_players": 67196,
+        "individual_matches": 20319,
+        "players": 7599,
+        "raw_payloads": 2874,
+        "seasons": 26,
+        "standings": 751,
+        "team_matches": 2818,
+        "teams": 472
+      }
+    }
+  },
+  "databases_after": {
+    "landscape": {
+      "sha256": "9976723eaa61e248adc7ee33348cad41eebf9f30ddfdf913b6d40ef9d0d4b74c",
+      "row_counts": {
+        "age_groups": 29,
+        "club_registry": 796,
+        "fetch_errors": 0,
+        "group_type_katalog": 8928,
+        "league_group_details": 18546,
+        "league_group_match_counts": 18546,
+        "league_group_regions": 59127,
+        "league_group_teams": 96823,
+        "league_groups": 18546,
+        "league_match_groups": 310137,
+        "league_match_requests": 221558,
+        "league_matches": 203012,
+        "match_categories": 1300474,
+        "match_games": 2636258,
+        "regions": 33,
+        "standing_indexes": 16269
+      }
+    },
+    "normalized": {
+      "sha256": "49bc62ac3aa8b5a003a4b4d1a8112a8f986d12c8667b22342027d42a1d01b41e",
+      "row_counts": {
+        "clubs": 1,
+        "competitions": 462,
+        "extraction_errors": 1444,
+        "individual_match_players": 67196,
+        "individual_matches": 20319,
+        "players": 7599,
+        "raw_payloads": 2874,
+        "seasons": 26,
+        "standings": 751,
+        "team_matches": 2818,
+        "teams": 472
+      }
+    }
+  },
+  "controls": {
+    "read_only": true,
+    "hashes_match_expected": true,
+    "hashes_and_row_counts_unchanged": true,
+    "unchanged_width_combinations": 69,
+    "unchanged_non_target_placement_combinations": 63,
+    "total_combinations": 69,
+    "raw_sample_passed": true
+  }
+}
