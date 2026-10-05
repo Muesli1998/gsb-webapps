@@ -28,10 +28,15 @@ Skriv i "Spørgsmål". Gæt ikke.
 `arbejde/132-raekkenavne-vs-regelbog`, fra `main`. Christoffer opretter branchen og committer selv. Codex kører kun læsende git, lader ændringer stå ustaged, melder filstier, tager aldrig `git add -A`, pusher ikke, rører ikke `apps/netlify-prod/` eller `docs/BESLUTNINGER.md`.
 
 ## Spørgsmål
-(Tomt.)
+- Kontrollen kræver PDF-ordlyd for mindst fem poster pr. status. `ingen`-posterne har ingen tilknyttet kilde/PDF i regelbogen (5 af 20-stikprøven), så den del kan ikke opfyldes uden en ny kilde. Skal fraværskontrollen accepteres som dokumenteret begrænsning, eller skal der findes/tilføjes kilder først?
+- “Forklaret” er i denne rapport operationelt: 136-parseren genkender rækkenavnet, og den konkrete sæson/områdepost er `bekraeftet` eller `betinget`. Det beviser ikke, at hvert lokalt rækkenavn står ordret i PDF'en. Er denne definition tilstrækkelig for 132?
 
 ## Tilbagefald
 Slet de nye resultatfiler. Intet andet er ændret.
 
 ## Resultat
-(Udfyldes af Codex.)
+**Udført, med de to begrænsninger under Spørgsmål.** Sammenligningen omfatter 46.450 fysiske gruppe-region-links i 1.858 sæson/region/aldersgruppe-scopes. Af 525 navn/scope-forekomster med bekræftet regelbog blev 277 operationelt forklaret og 248 ikke forklaret (770 fysiske links). Af 449 betingede blev 164 forklaret og 285 ikke forklaret (612 links); 63 af de 164 forklaringer er svage, fordi afstanden er mindst tre sæsoner. Status `ingen`: 2.653 forekomster / 7.538 links, ingen forklaret. Intet direkte områdematch: 13.513 / 37.530, ingen forklaret. I alt: 46.450 links.
+
+Stikprøven i rapporten har 20 rå rækkenavne, fem pr. statuskategori. PDF-ordlyd kunne kontrolleres for de 15 med en angivet kilde; de fem med status `ingen` er eksplicit markeret uden PDF og kan ikke bestå ordlydskontrollen. `ingen_match_i_regelbog`-stikprøven bruger den nationale ungdoms-PDF til format-/alderskontekst, men dette tælles ikke som regional dækning. Der blev ikke arvet pointskalaer eller udledt niveauer af tal.
+
+Leverancer: `statistik/results/132-raekkenavne-vs-regelbog.json` og `.md`. Scriptet 138 genererer begge 132-filer. Databasehashes før/efter: normalized `49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E`; landscape `9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C` (uændrede). `git status --short statistik/data/` tom. Kontrol af alle 441 forklaringer fandt 0 manglende eller uoverensstemmende regelbogsstatus/afstand. `git diff --check` kørt: ingen fejl (kun Git's LF→CRLF-advarsel for de redigerede Markdownfiler).
