@@ -659,7 +659,7 @@ window.__ALLE_SPILLERE_DATA__ = __ALLE_SPILLERE_JSON__;
       // aldrig effektivRating/FALLBACK_RATING — til selve dette tjek.
       var alleDeltagere = k.a.concat(k.b);
       var alleHarRigtigRating = alleDeltagere.every(function (p) { return p[ratingKey] != null; });
-      if (alleHarRigtigRating) {
+      if (alleHarRigtigRating && !k.udskiftning) {
         var ratingA = holdRatingSafe(k.a, ratingKey), ratingB = holdRatingSafe(k.b, ratingKey);
         var aVandt = side === 'a';
         var deltaA = eloAendring(ratingA / k.a.length, ratingB / k.b.length, aVandt);
@@ -718,9 +718,36 @@ window.__ALLE_SPILLERE_DATA__ = __ALLE_SPILLERE_JSON__;
     render();
   }
 
+  function validerDoubleLaas(nyeNavne) {
+    if (new Set(nyeNavne).size !== nyeNavne.length) {
+      return { gyldig: false, fejl: 'Samme spiller kan ikke optræde to gange i én kamp.' };
+    }
+    var fravaerende = nyeNavne.filter(function (navn) {
+      var spiller = roster.filter(function (p) { return p.navn === navn; })[0];
+      return !spiller || !spiller.tilstede;
+    });
+    if (fravaerende.length) {
+      return { gyldig: false, fejl: 'Kan ikke låse double: spilleren er ikke til stede (' + fravaerende.join(', ') + ').' };
+    }
+    var alleredeLaast = new Set();
+    lockedMatches.forEach(function (laas) {
+      laas.a.concat(laas.b).forEach(function (navn) { if (navn) alleredeLaast.add(navn); });
+    });
+    var overlap = nyeNavne.filter(function (navn) { return alleredeLaast.has(navn); });
+    if (overlap.length) {
+      return { gyldig: false, fejl: 'Kan ikke låse double: spiller allerede låst (' + overlap.join(', ') + ').' };
+    }
+    return { gyldig: true };
+  }
+
   function tilfoejLaastKamp(kategori, a1, a2, b1, b2) {
     var alle = [a1, a2, b1, b2].filter(function (x) { return x; });
-    if (new Set(alle).size !== alle.length) { alert('Samme spiller kan ikke optræde to gange i én kamp.'); return; }
+    if (kategori === 'double') {
+      var validering = validerDoubleLaas(alle);
+      if (!validering.gyldig) { alert(validering.fejl); return; }
+    } else if (new Set(alle).size !== alle.length) {
+      alert('Samme spiller kan ikke optræde to gange i én kamp.'); return;
+    }
     lockedMatches.push({ kategori: kategori, a: [a1 || null, a2 || null], b: [b1 || null, b2 || null] });
     render();
   }
@@ -931,12 +958,38 @@ window.__ALLE_SPILLERE_DATA__ = __ALLE_SPILLERE_JSON__;
     p.normalKategorier[felt] = val; p.normalKategorierRoert = true; render();
   }
 
+  // Selvstændig preview-kopi af strengparrene i data/navne-alias.json
+  // (alias_2526, alias_2425 og alias_2627_zakobo_vs_resultater).
+  var SOEGE_ALIASER = {
+    'Anja Gunna Thomsen': 'Anja Thomsen',
+    'Dorthe Høst Sarup': 'Dorthe Høst',
+    'Hannah Phoebe Ejada Clausen': 'Hannah Clausen',
+    'Holger Tscherning Lindholm': 'Holger Lindholm',
+    'Jonathan Hansen': 'Jonathan W. Hansen',
+    'Louise Korsby Kofoed': 'Louise Kofoed',
+    'Sebastian Møller': 'Sebastian Almeida Møller',
+    'Thøger Jakobsen': 'Thøger Eusebius Jakobsen',
+    'Thor Percy Hinge Pedersen': 'Thor Pedersen',
+    'Nadia Mortensen': 'Nadia Sawangjai Mortensen',
+    'Linus Bergström Hesselballe': 'Linus Bergstrøm Hesselballe',
+    'Rasmus Holmlykke Andersen': 'Rasmus Holmslykke Andersen',
+    'Hannah Phoebeejada Clausen': 'Hannah Clausen',
+    'Lena Bigum Vang': 'Lena Vang',
+  };
+  function normaliserSoegenavn(navn) {
+    return (navn || '').normalize('NFC').replace(/\s+/g, ' ').trim().toLocaleLowerCase('da-DK');
+  }
+  var SOEGE_ALIAS_OPSLAG = new Map(Object.keys(SOEGE_ALIASER).map(function (alias) {
+    return [normaliserSoegenavn(alias), normaliserSoegenavn(SOEGE_ALIASER[alias])];
+  }));
+
   function renderSoegning() {
     var c = $('soege-resultat'); if (!c) return;
-    var q = ($('soege-input') && $('soege-input').value || '').toLowerCase();
+    var q = normaliserSoegenavn($('soege-input') && $('soege-input').value);
     if (!q) { c.innerHTML = ''; return; }
+    q = SOEGE_ALIAS_OPSLAG.get(q) || q;
     var eksisterende = new Set(roster.map(function (p) { return p.navn; }));
-    var hits = GSB_ALLE_SPILLERE.filter(function (s) { return s.navn.toLowerCase().indexOf(q) !== -1 && !eksisterende.has(s.navn); }).slice(0, 15);
+    var hits = GSB_ALLE_SPILLERE.filter(function (s) { return normaliserSoegenavn(s.navn).indexOf(q) !== -1 && !eksisterende.has(s.navn); }).slice(0, 15);
     c.innerHTML = hits.map(function (s) { return '<div><button onclick="App.tilfoejFraSoegning(\'' + esc(s.navn) + '\')">+ ' + esc(s.navn) + '</button></div>'; }).join('');
   }
 

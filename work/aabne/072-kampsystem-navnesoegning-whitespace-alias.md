@@ -93,4 +93,9 @@ uafhængig kopi i preview-kilden er fint for nu.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+Løst som del af opgave 140 den 2026-10-05 på grenen `arbejde/140-kampsystem-fejlrettelser-070-072`.
+
+- I `kampsystem/kampsystem_source.html` tilføjet en selvstændig søgenormalisering: Unicode NFC, trim, komprimering af whitespace og dansk case-folding. `renderSoegning` normaliserer både input og spillernavne og oversætter eksakt aliasinput til officielt navn før delstrengsmatch.
+- Preview-kilden indeholder et lille selvstændigt aliasopslag kopieret fra strengparrene i `data/navne-alias.json` (`alias_2526`, `alias_2425` og `alias_2627_zakobo_vs_resultater`). JSON-filen og produktionens `navne.js` er ikke ændret. Listen er en kopi og skal opdateres sammen med datakilden ved nye aliaser.
+- Før: 3/5 (scenarie 3 whitespace og scenarie 4 alias fejlede). Efter: 5/5. Scenarie 1 (danske tegn), 2 (case-insensitivitet) og 5 (ukendt navn) består fortsat.
+- `byNavn` er uændret og fortsat eksakt, så aliasnormaliseringen påvirker kun søgefeltets liste, ikke eksisterende spilleridentifikation.

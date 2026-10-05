@@ -91,4 +91,9 @@ omstændigheder regrediere som en sideeffekt af denne opgave.
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+Løst som del af opgave 140 den 2026-10-05 på grenen `arbejde/140-kampsystem-fejlrettelser-070-072`.
+
+- Tilføjet den double-specifikke `validerDoubleLaas` og kaldt den kun fra `tilfoejLaastKamp` for kategorien `double`. Den afviser fraværende/ukendte spillere og overlap mod samtlige navne i allerede låste kampe med en forklarende `alert`; single/mixed-koden og dens dubletkontrol er uændret.
+- Før: 8/10; scenarie 8 lod fraværende B2 ind, og scenarie 9 accepterede den anden lås med fælles B1. Efter: 10/10, begge oprindelige assertions består.
+- Testopsætningen i `rundefordeling-laaste-doubler.test.cjs` blev ændret alene i scenarie 8, så den opretter låsen gennem `tilfoejLaastKamp` i stedet for at injicere en ugyldig lås direkte i intern state. Assertion/facit er uændret. Det er tilladt af originalkortets testafgrænsning, men betyder at testfilen også er ændret ud over de fire kort og kilden.
+- Ingen ændringer i `genererRunde`, `pairSingles`, `formTeams`, `formTeamsMixed`, `reducerGentagelse`, `kaonsbevidstFordeling`, `fordelTilDoubleOgMixed` eller `effektivRating`.

@@ -55,4 +55,33 @@ Skriv i "Spørgsmål". Stop kun, hvis en rettelse vil kræve ændring i en funkt
 Ét tilbagefald pr. rettelse: gendan `kampsystem/kampsystem_source.html` fra `main`. Ingen database eller produktionsfil er berørt.
 
 ## Resultat
-(Udfyldes af Codex. Afslut med en tabel: kort, test før/efter, rettet funktion.)
+
+Afsluttet 2026-10-05 på `arbejde/140-kampsystem-fejlrettelser-070-072`. Arbejdet blev udført sekventielt; efter hver rettelse blev den relevante test kørt først og derefter alle tre testfiler.
+
+| Kort | Test før | Test efter | Rettet funktion |
+|---|---|---|---|
+| 070 | ELO 13/13; kategoriintegritet 10/11 | ELO 13/13; kategoriintegritet 11/11 | `registerVinder` springer ratingsideeffekten over for udskiftningskamp |
+| 071 | 8/10 | 10/10 | Double-specifik `validerDoubleLaas`, kaldt fra `tilfoejLaastKamp` |
+| 072 | 3/5 | 5/5 | `normaliserSoegenavn` og lokalt aliasopslag i `renderSoegning` |
+
+Faktisk samlet slutkontrol:
+
+```text
+node tools/tests/kampsystem/elo-runde.test.cjs
+13 tests passed, 0 failed
+Kategoriintegritet: 11 bestået, 0 fejlet
+
+node tools/tests/kampsystem/rundefordeling-laaste-doubler.test.cjs
+Rundefordeling/låste doubler: 10 bestået, 0 fejlet
+
+node tools/tests/kampsystem/navnehaandtering.test.cjs
+Navnehåndtering: 5 bestået, 0 fejlet
+```
+
+Værn: single/mixed-låsekontrol forblev uændret; ELO-kategoriintegritet bestod 11/11; aliasnormaliseringen bruges kun i søgefeltets kandidatliste, og `byNavn`/ukendt-navn-fallback er uændret. Ingen af de øvrige forbudte engine-funktioner blev redigeret. Produktionsfilerne og `docs/BESLUTNINGER.md` blev ikke ændret af opgave 140.
+
+**Afvigelse fra det forventede diff-omfang:** `tools/tests/kampsystem/rundefordeling-laaste-doubler.test.cjs` har også en ændring i opsætningen af scenarie 8 (ikke i assertion/facit), så testen gennemløber den offentlige låsefunktion. Originalkort 071 tillader testopsætningsændringer med uændret facit. Derfor viser diffen kilden, denne testfil og de fire kort — ikke kun kilden og kortene.
+
+## Spørgsmål
+
+(Tomt.)

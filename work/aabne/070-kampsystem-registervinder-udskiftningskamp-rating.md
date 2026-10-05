@@ -86,4 +86,9 @@ opfylde Målet, men de har forskellige konsekvenser for om andre kaldere af
 
 ## Resultatnote
 
-*(udfyldes når opgaven er løst — flyt filen til `work/loeste/`.)*
+Løst som del af opgave 140 den 2026-10-05 på grenen `arbejde/140-kampsystem-fejlrettelser-070-072`.
+
+- Rettet `registerVinder` i `kampsystem/kampsystem_source.html`: ratingændringen udføres kun når alle deltagere har rigtig rating **og** kampen ikke har `udskiftning`. Kampens vinder, historik og render fortsætter som før.
+- Før: ELO-beregning 13 bestået/0 fejlet; kategoriintegritet 10/11 (scenario 5 ændrede rating 1500→1535).
+- Efter: ELO-beregning 13/13 og kategoriintegritet 11/11. Alle tre tests blev genkørt efter hver rettelse; kategoriintegritet forblev grøn efter 071 og 072.
+- Ingen testfacit ændret for denne rettelse. `forventetVind`, `eloAendring` og kategoriintegritetslogikken er uændrede.

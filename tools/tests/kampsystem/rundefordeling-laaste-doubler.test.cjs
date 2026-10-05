@@ -139,7 +139,8 @@ scenario('7 låst double kommer uændret med i runden', () => {
 scenario('8 låst double med fraværende spiller afvises', () => {
   const players = ['A1', 'A2', 'B1'].map((name) => player(name));
   players.push(player('B2', 1500, { single: true, double: true, mixed: true }, 'H', false));
-  tested.setState(players, [doubleLock('A1', 'A2', 'B1', 'B2')]);
+  tested.setState(players, []);
+  tested.tilfoejLaastKamp('double', 'A1', 'A2', 'B1', 'B2');
   tested.genererRunde();
   assert.equal(allNames(tested.matches()).includes('B2'), false);
 });
