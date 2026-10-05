@@ -46,10 +46,19 @@ Skriv i "Spørgsmål". Er en klubs hjemregion uklar, så lad den stå som "ukend
 `arbejde/146-region-kbh-sjl`, fra `main`. Christoffer opretter grenen og committer selv. Codex kører kun læsende git, ustaged, ingen `git add -A`, ingen push, ingen Co-Authored-By, ingen sub-agents.
 
 ## Spørgsmål
-(Tomt.)
+`club_registry.region_id` er `NULL` på alle 796/796 rækker. Blandt de 2.410 holdposter på fælles puljer kan 82 navne matches til klubregisteret, men uden hjemregion; 2.226 poster (441 forskellige rå navne) kan ikke matches til et klubnavn i registeret. Derfor kan denne kilde ikke fastslå, hvor mange hold faktisk kommer fra klubber uden for København. JSON-rapporten viser de umatchede navne og antal. Hvilken supplerende klubmapping/kilde skal bruges, før vi kan gøre denne del af opgørelsen?
 
 ## Tilbagefald
 Slet de nye filer. Ingen database er berørt.
 
 ## Resultat
-(Udfyldes af Codex.)
+### Resultatnote
+
+- **Regionstilknytning:** første region-8-pulje med en anden region er 2014/15, kun U11, og den anden region er Badminton Danmark (region 1) — ikke Sjælland. Første konkrete region-8 + Badminton Sjælland (region 10) forekommer i 2015/16, i U11 og U17 (2 af 7 årgangsgrupper); det optræder ikke samtidig i alle årgange. Det viser databasens regionstilknytning, ikke hvornår en organisatorisk sammenlægning blev besluttet.
+- **Omfang:** region 8 har 69 sæson/årgang-kombinationer i udtrækket. Måling A matcher 145's `inkl. holdfællesskab`-rækker og -formater i 69/69. B (kun rækker, hvis samlede regionmængde er præcis region 8) afviger fra A i 28/69 kombinationer. De største forskelle er 2024/25 U13 (A 5 rækker/3 formater, B 1/1), 2025/26 U15 (6/3 mod 3/1), 2021/22 U15 (5/2 mod 2/1), 2026/27 U15 (6/2 mod 3/1) og 2025/26 U09 (4/1 mod 1/1). Alle kombinationer og forskellene står i rapporten/JSON.
+- **Måling C:** inkluderer region-8-rækker med GSB, når række-puljernes samlede regionmængde kun er København eller København+Sjælland. Den er en særskilt afgrænsning, ikke et bevis på hvilke klubber der faktisk deltager i kampe på tværs af regioner. C-tabellen og de tilhørende rækker er i JSON og rapporten.
+- **Hjemregioner:** de 2.410 holdposter på fælles puljer fordeler sig på 102 rækker, der selv er regionnavne, 82 præcise klubregister-navnematches uden hjemregion og 2.226 poster uden navnematch. `club_registry.region_id` er NULL for alle 796/796 klubber. Derfor er 0 verificerede poster uden for København ikke lig med 0 faktiske poster; faktisk hjemregion kan ikke afgøres ud fra denne database. Umatchede rå navne er listet i JSON og kan ikke kategoriseres sikkert.
+- **Formatplacering:** 0 afvigelser på tværs af 69 kombinationer; GSB's placering bygger på GSB's egne hold og er overført uændret. Ændringen af nævner/regionafgrænsning påvirker kun breddemålingen.
+- **Stikprøver:** U15 2026/27's 20 region-8-rækker er listet med region-id'er og rå holdnavne. Fem ældre stikprøver er valgt deterministisk i hash-rækkefølge (ikke tilfældigt) fra fem sæsoner; de er kontrolleret mod puljelisten i den read-only database.
+- **Spillermateriale:** det normaliserede skema indeholder spiller-ID/navn og kampdeltagelse, men ikke spillerens køn/alder eller et sæsonvist komplet spillerregister. Derfor kan antal registrerede spillere pr. årgang/køn ikke udledes pålideligt her; kun de eksisterende kamp-/spillerposter kan tælles.
+- **Kontrol:** begge databaser var `readOnly: true`; SHA-256 før/efter uændret. 136-parserens testkørsel rapporterede 28/28. `git diff --check` kontrolleres ved afslutning. Parserens resultatfiler blev ikke tilsigtet ændret; ingen ændring i parserkilde eller 143–145.
