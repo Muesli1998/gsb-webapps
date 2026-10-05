@@ -43,10 +43,20 @@ Skriv i "Spørgsmål".
 `arbejde/136-raekkenavn-parser`, fra `main`. Christoffer opretter branchen og committer selv. Codex kører kun læsende git, ustaged, ingen `git add -A`, ingen push, rører ikke `apps/netlify-prod/` eller `docs/BESLUTNINGER.md`.
 
 ## Spørgsmål
-(Tomt.)
+- X1–X3 står i 19 rå rækkenavne/33 fysiske puljer, men forekommer ikke i de 53 registrerede PDF'ers tekst. Hvad X-numrene betyder og deres indbyrdes hierarki kan ikke afgøres fra repoet.
+- `BD` forekommer i 43 rå rækkenavne/64 fysiske puljer. Reglementet forklarer forkortelsen BD som Badminton Danmark, men ikke suffiksets betydning i rækkenavnet. Der er derfor ikke tolket niveau ud fra det.
+- `Dx` forklares i fællesreglementerne 2016/17 og 2026/27 (se rapportens sidetal), men står stadig ufortolket i parseren som krævet for forslag 5. Hvis det skal bruges i et hierarki, kræver det en senere udtrykkelig beslutning.
 
 ## Tilbagefald
 Slet de nye filer.
 
 ## Resultat
-(Udfyldes af Codex.)
+Tilføjet `statistik/scripts/136-raekkenavn-parser.mjs` og genereret `statistik/results/136-parser-effekt.md/.json` samt `136-x-dx-bd-undersoegelse.md`. Parseren åbner begge databaser `readOnly: true`; ingen 127-/129-resultater eller scripts blev ændret.
+
+Baseline fra eksisterende parser genskabt: 1.986 forskellige ungdomsrækkenavne; 941 tolkede og 1.045 ufortolkede, hvor sidstnævnte forekommer i 3.536 fysiske rækker. Nye godkendte fortolkninger: forslag 1 (rene tal) 4 navne/4 rækker; forslag 2 (CD/MA/AB) 27/77; forslag 3 (1.–3. serie) 31/44. I alt 125 fysiske rækker nytolket efter forslag 1–3. Forslag 6 flytter 71 navne/129 rækker til separat liste (begynder og Årets U11 Hold). Tilbage: 912 navne/3.282 fysiske rækker ufortolkede. JSON indeholder fortolkning og `tolkning_regel` pr. distinkt rækkenavn.
+
+Forslag 4 er kun undersøgt: 4+3 har 71 rå navne/347 fysiske puljer; U11 4+2 har 11 rå navne/33 puljer. Op til 20 puljeeksempler for hver vises i JSON; ingen af dem er erklæret uden niveau.
+
+Forslag 5: X1–X3 = 19 navne/33 puljer/33 områdekoblinger; Dx = 16/59/290; BD = 43/64/88. Opdelinger pr. sæson/region/alder og 10 eksempler pr. mønster er i JSON og undersøgelsesrapporten. Lokalt blev alle 53 registrerede PDF'er tekstudtrukket: 0 X1–X3-linjer, 8 Dx-linjer og 111 BD-linjer (BD-forekomsterne omfatter almindelig organisationsforkortelse). Dx er direkte beskrevet i ungdomsreglementerne 2016/17 og 2026/27; X1–X3 er ikke fundet forklaret; BD som Badminton Danmark er forklaret, men ikke rækkenavnssuffikset. Forslag 5 ændrer ikke parseren.
+
+Kontrol: `node --check statistik/scripts/136-raekkenavn-parser.mjs` bestod; 25/25 parserprøver bestod (mindst tre pr. forslag 1, 2, 3 og 6). Baselinekontrollen bestod med 1.986/941/1.045/3.536. Databaser før/efter uændrede: normalized SHA-256 `49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E`, landscape `9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C`; fulde tabelrækketal ligger i JSON. `git status --short statistik/data/` er tomt.
