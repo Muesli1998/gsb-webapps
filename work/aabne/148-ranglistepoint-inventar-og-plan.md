@@ -58,10 +58,22 @@ Skriv i "Spørgsmål". Gæt ikke på, hvad en kolonne eller markør betyder. Er 
 `arbejde/148-ranglistepoint-inventar`, fra `main`. Christoffer opretter grenen og committer selv. Codex kører kun læsende git, ustaged, ingen `git add -A`, ingen push, ingen Co-Authored-By, ingen sub-agents.
 
 ## Spørgsmål
-(Tomt.)
+- Hvad er den dokumenterede provenance/tidstolkning for `individual_match_players.points_at_match`? Alle 67.196 værdier er NULL, og lokal kode/kilder i denne opgave fastslår ikke kolonnens tilsigtede betydning.
+- Kan badmintonplayer.dk levere komplette historiske ranglistesider via en fungerende offentlig `GetRankingListPlayers`-request, og hvilke hashpositioner binder til request-felterne? Det lokale fuldlisteforsøg og et historisk direkte pointkald gav HTTP 500; intet netværk blev forsøgt i denne opgave.
+- Findes en verificeret tværkildekobling fra modstanderens BadmintonPlayer-ID til Nembadminton-medlems-ID? Skemaet i national-spillere.db indeholder ikke en sådan nøgle; navnelighed alene er utilstrækkelig.
+- Kan ranglistehistorik før 2022/23 hentes fra kilden? Det lokale snapshotarkiv begynder 2022-08-01, og ældre tilgængelighed er ikke dokumenteret.
 
 ## Tilbagefald
 Slet de nye filer. Ingen database er berørt.
 
 ## Resultat
-(Udfyldes af Codex.)
+Inventaret er gemt i `statistik/results/148-ranglistepoint-inventar.md` og `.json`; optællingen kan reproduceres med `statistik/scripts/148-inventar.mjs`.
+
+- `rangliste-historik.db`: 40.364 snapshots for 349 Nembadminton-medlems-ID’er, 10 rå disciplinværdier og 49 versiondatoer fra 2022-08-01 til 2026-09-02. Sæsonspændet (juli–juni) er 2022/23–2026/27. `player_link` har 679 rækker for 677 distinkte GSB-player-ID’er: 345 entydigt koblede, 2 tvetydige og 330 uden entydigt medlems-ID. Rapporten viser snapshotdækning pr. sæson/disciplin og GSB-årgang samt de entydige koblinger, der mangler snapshot.
+- `points_at_match`: 67.196 rækker; 0 ikke-blanke, 67.196 blanke/NULL og 0 ikke-blanke nulværdier. Kolonnens tilsigtede betydning/provenance kan ikke fastslås fra skemanavn alene; evidens og eksempelrækker er i rapporten/JSON.
+- `national-spillere.db`: 7 brugertabeller. Rækketal: matches 203.012; player_match_extras 3.779.792; player_matches 3.400.576; players 76.169; scrape_checkpoints 8.198; scrape_errors 0; scrape_progress 203.012. Skemaet har ikke ranglistepoint, verificeret Nembadminton-medlems-ID eller individuel klubtilknytning.
+- Modstandergrundlag: 271 GSB-ungdomsholdkampe i 2025/26 blev matchet til alle 271 national-kamprecords; 805 distinkte modstander-ID’er og 2.108 sidebestemte spiller×kampforekomster. Bekræftede koblinger til ranglistepoint: 0. Ti GSB-spillere og ti modstandere er listet som stikprøve. Navnematches er alene kandidater, ikke bekræftelser.
+- API/hash: lokalt bekræftet liste-ID’er 287/288/289/292 og versionskaldets gemte HTTP 200. Historisk punktkald og afprøvet fuldlistekald fejlede med HTTP 500 ifølge eksisterende lokale evidens. De 12 hash-eksempler er ikke fuldt mappet til request-parametre; ukendte positioner er markeret, ikke gættet.
+- Foreslået næste skridt: afgrænset browserpilot for én historisk version pr. liste 288/289/292, dokumentér hash-parameterbinding og få én succesfuld fuldliste-side før estimering/fuld hentning. Foreløbige størrelser: 15 versionsopslag og 147 første-sider-kald før pagination; pagination og adgang til ældre historik er uafklaret. Gem fremtidige data i en ny separat database, og tidskobl kun til snapshot på eller før kampdato.
+- Databaseværn: SHA-256 før/efter uændret for alle fire databaser: normalized `49BC62AC…B41E`, liga-landskab `9976723E…B74C`, rangliste-historik `6E9516DB…316F`, national-spillere `1E27C5D8…AC3E`. `readOnly: true` blev anvendt.
+- Spørgsmål/ukendt: `points_at_match`-provenance, om API’et kan give komplette historiske lister, præcis mapping for alle hashpositioner, ældre sæsoners ranglistehistorik samt direkte identitetskobling for modstandere er ikke afgjort. Evidensen og begrænsningerne står i rapporten.
