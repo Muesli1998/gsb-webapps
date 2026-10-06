@@ -44,4 +44,13 @@ Skriv i "Spørgsmål". Kan en rækkes regionmængde ikke fastslås, så markér 
 Slet de nye filer. Ingen database er berørt.
 
 ## Resultat
-(Udfyldes af Codex.)
+Resultaterne ligger i `statistik/results/147-bredde-ren-kbh.json` og `.md`; optællingen kan genkøres med `statistik/scripts/147-bredde-ren-kbh.mjs`.
+
+- Alle 69 sæson/årgang-kombinationer har hver region-8-række mærket `ren_kbh` eller `blandet`, med den samlede regionliste, `included_in_width` og `gsb_med`. Klassifikationen bruger unionen af region-id’er på tværs af række-puljerne; `ren_kbh` betyder præcis `{8}`. Ingen af de omfattede rækker havde uafklaret regionmængde.
+- B-nævnerne er opgjort pr. kombination: antal rene København-rækker og antal forskellige genkendte formater i disse rækker, efter UGE 38/Kredsmatch-eksklusioner fra 143. Hele rækkelisten og nævnernes formatnavne er i JSON.
+- A’s GSB-række-/formattællere matcher 145 inkl. holdfællesskaber i 69/69; B’s GSB-række-/formattællere matcher 146 i 69/69. B-tællere er inden for nævnerne i 69/69. Rækkeniveauets GSB-markeringer blev også summeret og afstemt mod de respektive tællere.
+- Stikprøver: U15 2026/27 har B = 3 rækker, 1 format (`4 spillere`); U13 2024/25 har B = 1 række, 1 format (`4 spillere`); U15 2012/13 har B = 5 rækker, 1 genkendt format (`4+3`).
+- Afklaring af A-nævner: 145’s JSON indeholder A-bredde som GSB-tællere, ikke totalnævnere. A-nævnerne er derfor beregnet fra 143’s `kbh_width.all_rows`; A-tællerne er kontrolleret direkte mod 145. Det står også i resultatrapporten.
+- Parserens 28/28 tests bestod. Testscriptets tre genererede 136-rapporter blev under kørslen undertrykt; de eksisterende 136-rapporter og parserkilden er uændrede. `git status` blev kontrolleret efter testen.
+- Begge databaser blev åbnet med `readOnly: true`. SHA-256 og tabelrækketal før/efter er identiske og ligger i JSON; `git status --short statistik/data/` er tom.
+- `git diff --check` bestod uden whitespace-fejl. Dets eneste output var Git-advarsler om mulig LF→CRLF-konvertering for allerede statusmarkerede 136-rapportfiler; indholdsdiff for disse filer er tom.
