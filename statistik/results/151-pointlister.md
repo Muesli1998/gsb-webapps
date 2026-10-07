@@ -1,0 +1,4576 @@
+# Opgave 151 — ranglistepoint, pointlister og filtre
+
+Status: completed_bounded_probe; offline; ingen netværkskald. Forespørgsler: 50/100.
+
+## Konklusioner (punkt 1–6)
+
+- `GetRankingListPlayers` giver pointlisterne 288, 289 og 292; 287 er ikke pointkilden ifølge den tidligere pilot. Profil-ID og point følger med de observerede rækker.
+- `param=M/K` opfører sig som herre-/kvinderangliste i de observerede GSB-rækker. Det er empirisk bekræftet for disse svar, ikke en formel skemabeskrivelse.
+- De seks aktuelle, ufiltrerede sidetal nedenfor er kun aflæst fra første svar. GSB-klubfilteret giver væsentligt færre sider, men henter ikke modstandere.
+
+| Liste | param | Ufiltreret sider | GSB sider total/hentet | GSB-rækker observeret | Rækker med point | Rækker med profil-ID |
+|---:|:---:|---:|---:|---:|---:|---:|
+| 288 | M | 99 | 2/2 | 150 | 150 | 150 |
+| 288 | K | 37 | 1/1 | 47 | 47 | 47 |
+| 289 | M | 136 | 3/1 | 100 | 100 | 100 |
+| 289 | K | 53 | 1/1 | 86 | 86 | 86 |
+| 292 | M | 41 | 1/1 | 81 | 81 | 81 |
+| 292 | K | 33 | 1/1 | 63 | 63 | 63 |
+
+- Aldersfilterprøver på 288/M: ID 4: 18 sider, 100 rækker på side 0, klasseetiket mangler; ID 5: 20 sider, 100 rækker på side 0, klasseetiket mangler; ID 2: 1 sider, 23 rækker på side 0, klasseetiket mangler; ID 3: 12 sider, 100 rækker på side 0, klasseetiket mangler; ID 6: 15 sider, 100 rækker på side 0, klasseetiket mangler; ID 21: 72 sider, 100 rækker på side 0, klasseetiket mangler. 288/M, agegroupid=4 og 288/K agegroupid=4 blev hentet fuldt: 26/26 sider, 2526 rækker.
+- Andre filterprøver: pointsto=1500 → 59 sider (kan udelukke point over 1500); agefrom=9/ageto=19 → 74 sider og viste klasseetiketter SEN A, SEN E-M, SEN M, SEN M-A, herunder senior. Intet af dette beviser komplet ungdomsdækning.
+- Modstanderprøve: 280 unikke modstandere i U13-kampene; 121 ID-match, 0 kun navn+klub, 159 ikke fundet i de hentede alderssider. Ufiltrerede stikprøvesider gav 0 ekstra fund; det beviser ikke, at de resterende spillere ikke står på hele ranglisten.
+- Kampdækning: 271 ungdomskampe, 266 med dato, 12 forskellige datoer, 11 valgte snapshotversioner; 5 uden dato.
+- Historiske versioner: 2021: 146 daterede, 07/01/2021–06/29/2022; 2020: 76 daterede, 07/01/2020–07/05/2021; 2019: 145 daterede, 07/01/2019–06/21/2020. Ældste GSB-prøve: 29 rækker, 29 med point.
+- Henteestimat: 4395 ufiltrerede side-/versionslistekald ved nuværende sidetal og 11 valgte versioner; cirka 2.44 timers minimumspause. Dette er et øvre, ufiltreret regneeksempel, ikke et komplet historisk estimat.
+
+
+## Forespørgselslog
+
+| Nr. | Kald | Felter ændret | HTTP | Bytes | SHA-256 |
+|---:|---|---|---:|---:|---|
+| 1 | GET ranglisteside — første forsøg blokeret af lokal netværkssandbox | `"—"` | intet HTTP-svar | — | — |
+| 2 | frisk GET af ranglisteside til context | `"—"` | 200 | 24149 | f5ac632d15e98d7f0952f3d18bfda7eab63b9a71d10797977e8ec16915c3e2bd |
+| 3 | baseline 288 K | `{}` | 200 | 81597 | 3dbd911e5bd6031d4aeb5d921f57702b74e6584d4897220d370d7800780ee692 |
+| 4 | baseline 289 K | `{}` | 200 | 81749 | 4044dce95aef2cb892013d3f1d0792a7b50bb6d14e5a603bc53161ff9f1dc271 |
+| 5 | baseline 292 K | `{}` | 200 | 81686 | a00917f0ee136bf9293dcc8f2ae1123a5c40ec45cae18953f55d3bc1803b0718 |
+| 6 | GSB 288 M | `{"clubid":"1093"}` | 200 | 82234 | 12c88de142690041671c57941d74bc15f8d1939b512db67ddbc9e1bbe1a4a844 |
+| 7 | GSB 288 K | `{"clubid":"1093"}` | 200 | 41251 | 49196579344d7b80a372b0796c72e160d4db7b2d007265551921bfd6512df527 |
+| 8 | GSB 289 M | `{"clubid":"1093"}` | 200 | 82415 | 0ec32557b24a9761c73ea0c1d97683cf13ec664ee9882adfe031e2630d99a2ad |
+| 9 | GSB 289 K | `{"clubid":"1093"}` | 200 | 71282 | e3f3ac7c1c94ce8312b9161da2d286164c19f23dca4db1a6a1b115b60f701d08 |
+| 10 | GSB 292 M | `{"clubid":"1093"}` | 200 | 67482 | 427a8c7f72c05ea3a8663e5714c2de79ec164d62141aff79f2ce0d7f05c39bf1 |
+| 11 | GSB 292 K | `{"clubid":"1093"}` | 200 | 53558 | cc49bd1b05f440bfa4af3064ef9235457c4b1d5cecec3bdc94ae0e4b8bdddc2a |
+| 12 | agegroupid 4 M | `{"agegroupid":"4"}` | 200 | 82089 | 955ca35625321be98197406c2cd5ec5171dd88089071bfb3a5e188c39a9e5629 |
+| 13 | agegroupid 5 M | `{"agegroupid":"5"}` | 200 | 82556 | 0c8704cf6c3b95c14d7083c3f0ebf46a6bf0127dd172053d5ee38bb539249235 |
+| 14 | agegroupid 2 M | `{"agegroupid":"2"}` | 200 | 22160 | 69d8fd2f1fa2825cf2a1b23da1dec7000661d187fc041e5969785555a635d1d4 |
+| 15 | agegroupid 3 M | `{"agegroupid":"3"}` | 200 | 81568 | 57d60ad53c91a45300ae8c4fe8bf3b8ed718a1ad8be937062d6bd4134cb313ff |
+| 16 | agegroupid 6 M | `{"agegroupid":"6"}` | 200 | 82170 | f0ea902dec087b1ad61a6411f1efdc475613589d4320718b7b9dc145bfe996e0 |
+| 17 | agegroupid 21 M | `{"agegroupid":"21"}` | 200 | 81286 | b9539007e3abcfdeb11d5fe743a4a1bcb9257e00a1c26d590d23ef25bf08915d |
+| 18 | pointsto 1500 | `{"pointsto":"1500"}` | 200 | 81611 | 14f5b037c4dc31e390c117f49e374b4c31ee05c95f2a9bc58e6070cc315959e1 |
+| 19 | agefrom 9 to 19 | `{"agefrom":"9","ageto":"19"}` | 200 | 81459 | 8a2ca193b1f93ca78a6173407b3a366f809bc2219ba11137be8d98bf589d640b |
+| 20 | versions 2021 | `{}` | 200 | 87850 | c05cc866a068fe242cdf3af56457e877607efa69709cd6901cb4d058f884c3f9 |
+| 21 | versions 2020 | `{}` | 200 | 83514 | 7e58b0e2d96e5e1aabca8760ed204fb7064e490e41bdaf59c71ad1639af251c7 |
+| 22 | versions 2019 | `{}` | 200 | 87803 | cbac832c1aa4610e14c4dce097d11f5c01b4b406a2826497d87d8c430f1cbf3b |
+| 23 | GSB oldest historical version | `{"rankinglistversiondate":"07/01/2019","clubid":"1093"}` | 200 | 33828 | ee4bfda95acd0a9c5ad1bbfd383d207381791dadede0d8e2511239eee6c4c2af |
+| 24 | GSB 288 M pageindex 1 | `{"clubid":"1093","pageindex":"1"}` | 200 | 43811 | 93192ae773815daa49379bd180367f4a00be1aa1b5a48dfa5fe3ce4cf19c25d7 |
+| 25 | agegroupid 4 M pageindex 1 | `{"agegroupid":"4","pageindex":"1"}` | 200 | 82001 | aa9def6403463cb7567eef9c53afb32b483b608aa43eef878cfa7dbde3e2becf |
+| 26 | GET frisk callbackkontekst til fortsættelse | `"—"` | 200 | 24149 | 5c2a48ecc2fe7e6bc30ad7b3aa9a243c6c7ebba16efbc6ceb4844e9506b59aeb |
+| 27 | agegroupid 4 M pageindex 2 | `{"agegroupid":"4","pageindex":"2"}` | 200 | 81964 | a3d808eefecaeecd2a166a8d8ec0e980fbf8cae583bd965ba45cd7c698a84c51 |
+| 28 | agegroupid 4 M pageindex 3 | `{"agegroupid":"4","pageindex":"3"}` | 200 | 82028 | c1e6759a6b0cc35a21cf2e301795ac391a17bbfa9bee9fde3d1d9e5afd16932b |
+| 29 | agegroupid 4 M pageindex 4 | `{"agegroupid":"4","pageindex":"4"}` | 200 | 82240 | 9cbc00a818da083b3dfc4ec545d6d08bb66ce99a6db02322a887832f30c7635a |
+| 30 | agegroupid 4 M pageindex 5 | `{"agegroupid":"4","pageindex":"5"}` | 200 | 82290 | a7efa4a0facf31d2427aff7272fe3114798c5eecf45b33105b24a8ed3565650b |
+| 31 | agegroupid 4 M pageindex 6 | `{"agegroupid":"4","pageindex":"6"}` | 200 | 82171 | cfa45994649fac7ea71a3f06c4591a855eabf83883157e95f229f8d4ff3b1a04 |
+| 32 | agegroupid 4 M pageindex 7 | `{"agegroupid":"4","pageindex":"7"}` | 200 | 82134 | ce7c25897aae9d1acc7aa5dff704e533aa4c826b8c64d3d42f523cb44ce1e74c |
+| 33 | agegroupid 4 M pageindex 8 | `{"agegroupid":"4","pageindex":"8"}` | 200 | 82174 | 92c86a9067bd9eb9c26854c42c0fba614b17dea474c784913394ea1cbaaf56e0 |
+| 34 | agegroupid 4 M pageindex 9 | `{"agegroupid":"4","pageindex":"9"}` | 200 | 82304 | 9a1f303690d44b847b91b45875199e78fb57a10bc6dcaadd467c24f37395704c |
+| 35 | agegroupid 4 M pageindex 10 | `{"agegroupid":"4","pageindex":"10"}` | 200 | 82370 | e75823052aafa515f57795d712d67192e95b1d76bfba6b88b97af40bd55faeb4 |
+| 36 | agegroupid 4 M pageindex 11 | `{"agegroupid":"4","pageindex":"11"}` | 200 | 82564 | 2709e43ddf54ab576595167abe684449914a28caaeb6a8ddca9057eee5868e1c |
+| 37 | agegroupid 4 M pageindex 12 | `{"agegroupid":"4","pageindex":"12"}` | 200 | 82325 | 165db0088525669762f0b9de6f2b0f2e4ada5a98af179dcc91eba34f1db474fd |
+| 38 | agegroupid 4 M pageindex 13 | `{"agegroupid":"4","pageindex":"13"}` | 200 | 82536 | 130dba3a2f0edf6f3e94d6fe20070ec64a2dd6e547d96c9a07cb6347d97cf58a |
+| 39 | agegroupid 4 M pageindex 14 | `{"agegroupid":"4","pageindex":"14"}` | 200 | 82704 | f93186bf565232b1ff1d7bdc6e9d2a33c0729f1f4e87b89a1589f3027535111a |
+| 40 | agegroupid 4 M pageindex 15 | `{"agegroupid":"4","pageindex":"15"}` | 200 | 82361 | 490c3c2d8098bdb27c5b06a0f4abb08bcd92da1e3f1879e84e9d3a76be32784d |
+| 41 | agegroupid 4 M pageindex 16 | `{"agegroupid":"4","pageindex":"16"}` | 200 | 82483 | 7a5fdce1facdbdd8d096c9e39f1334087c03f99dd8781b07d29225efa5b4d316 |
+| 42 | agegroupid 4 M pageindex 17 | `{"agegroupid":"4","pageindex":"17"}` | 200 | 64244 | 60f543883f5edd582fe2f04fb4b735c5a86e24d8ece7798bbec93426d6a91293 |
+| 43 | agegroupid 4 K | `{"agegroupid":"4"}` | 200 | 81072 | fc448ce0593afac7f182443425cad8880ad1262f9a68c6b7dc0fe3ae9b94088d |
+| 44 | agegroupid 4 K pageindex 1 | `{"agegroupid":"4","pageindex":"1"}` | 200 | 81057 | eaf4450bf5f2048261cf2fe1b821514dd88223810e4e909fba054b71545b5839 |
+| 45 | agegroupid 4 K pageindex 2 | `{"agegroupid":"4","pageindex":"2"}` | 200 | 81317 | 17768212847b28a8fcc7fe8733e003b5ea06d81dd12b013b10c9a4a5488eaa91 |
+| 46 | agegroupid 4 K pageindex 3 | `{"agegroupid":"4","pageindex":"3"}` | 200 | 81267 | 8ee9cce2bc353901fdcaefcba914303ffc515659127ca33c32de860aeb2c1032 |
+| 47 | agegroupid 4 K pageindex 4 | `{"agegroupid":"4","pageindex":"4"}` | 200 | 81300 | 222dfc783ecdab4b16f223c0887eed47ac966f4b9cd015749a63561c71133ddb |
+| 48 | agegroupid 4 K pageindex 5 | `{"agegroupid":"4","pageindex":"5"}` | 200 | 81584 | a84f4ba401e2b54b9c6544daa70fbdff1c78a2e1931dbbc04e98d2bae1e8459b |
+| 49 | agegroupid 4 K pageindex 6 | `{"agegroupid":"4","pageindex":"6"}` | 200 | 81283 | bb618c638d7c8b6307acfe45079d0768cff74e42c3bd05930ad4898c83cf4ab3 |
+| 50 | agegroupid 4 K pageindex 7 | `{"agegroupid":"4","pageindex":"7"}` | 200 | 43569 | 25d5b9ad60f116455a895c1af3bdd183eb3bdd29572c158faef80607e00f5112 |
+
+## Kaldsikkerhed
+
+{
+  "attempts": 50,
+  "http_responses": 49,
+  "status_counts": {
+    "200": 49,
+    "intet HTTP-svar": 1
+  },
+  "responses_with_sha256": 49,
+  "hosts": [
+    "badmintonplayer.dk"
+  ],
+  "minimum_interval_seconds": 2.099,
+  "credentials": "omit; ingen cookies",
+  "bot_or_captcha_guard_seen": false
+}
+
+## Resultater
+
+{
+  "sixListMatrix": [
+    {
+      "list_id": "288",
+      "param": "M",
+      "unfiltered_pages": 99,
+      "unfiltered_source": "Opgave 150 første response",
+      "gsb_rows_observed": 150,
+      "gsb_pages_total": 2,
+      "gsb_pages_fetched": 2,
+      "gsb_points_rows": 150,
+      "gsb_profile_id_rows": 150,
+      "gsb_clubs": [
+        "Gladsaxe Søborg",
+        "Gladsaxe Søborg (g)"
+      ],
+      "classes": [
+        "SEN A",
+        "SEN B",
+        "SEN B-C",
+        "SEN C",
+        "SEN C-D",
+        "SEN D",
+        "SEN M-A"
+      ],
+      "first_five_rows": [
+        {
+          "rank": 1,
+          "member_number": "000122‑08",
+          "name": "Jonathan W. Hansen",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN M-A",
+          "points": 3310,
+          "player_id": "93216"
+        },
+        {
+          "rank": 2,
+          "member_number": "981024‑08",
+          "name": "Jonas Trusell-Jensen",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN M-A",
+          "points": 3299,
+          "player_id": "92509"
+        },
+        {
+          "rank": 3,
+          "member_number": "811027‑01",
+          "name": "Morten Aarøe",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN M-A",
+          "points": 3244,
+          "player_id": "13216"
+        },
+        {
+          "rank": 4,
+          "member_number": "820503‑01",
+          "name": "Kenn Blæsbjerg Christensen",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN A",
+          "points": 3117,
+          "player_id": "319834"
+        },
+        {
+          "rank": 5,
+          "member_number": "000825‑11",
+          "name": "Oliver Frei",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN A",
+          "points": 3108,
+          "player_id": "229287"
+        }
+      ],
+      "status": 200,
+      "response_pages_from_first": 2
+    },
+    {
+      "list_id": "288",
+      "param": "K",
+      "unfiltered_pages": 37,
+      "unfiltered_source": "Opgave 151 første response",
+      "gsb_rows_observed": 47,
+      "gsb_pages_total": 1,
+      "gsb_pages_fetched": 1,
+      "gsb_points_rows": 47,
+      "gsb_profile_id_rows": 47,
+      "gsb_clubs": [
+        "Gladsaxe Søborg"
+      ],
+      "classes": [
+        "SEN A",
+        "SEN A-B",
+        "SEN D",
+        "SEN M-A"
+      ],
+      "first_five_rows": [
+        {
+          "rank": 1,
+          "member_number": "001021‑04",
+          "name": "Hannah Clausen",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN A",
+          "points": 2529,
+          "player_id": "1700"
+        },
+        {
+          "rank": 2,
+          "member_number": "930609‑21",
+          "name": "Michelle Christensen",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN M-A",
+          "points": 2495,
+          "player_id": "55454"
+        },
+        {
+          "rank": 3,
+          "member_number": "931208‑02",
+          "name": "Simone Møller Jensen",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN A",
+          "points": 2378,
+          "player_id": "58690"
+        },
+        {
+          "rank": 4,
+          "member_number": "790708‑03",
+          "name": "Marie Gotfred Johansen",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN A",
+          "points": 2268,
+          "player_id": "276042"
+        },
+        {
+          "rank": 5,
+          "member_number": "701117‑03",
+          "name": "Helle Mathiasen",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN A",
+          "points": 2052,
+          "player_id": "212836"
+        }
+      ],
+      "status": 200,
+      "response_pages_from_first": 1
+    },
+    {
+      "list_id": "289",
+      "param": "M",
+      "unfiltered_pages": 136,
+      "unfiltered_source": "Opgave 150 første response",
+      "gsb_rows_observed": 100,
+      "gsb_pages_total": 3,
+      "gsb_pages_fetched": 1,
+      "gsb_points_rows": 100,
+      "gsb_profile_id_rows": 100,
+      "gsb_clubs": [
+        "Gladsaxe Søborg",
+        "Gladsaxe Søborg (g)"
+      ],
+      "classes": [
+        "SEN A",
+        "SEN A-B",
+        "SEN B",
+        "SEN B-C",
+        "SEN C",
+        "SEN C-D",
+        "SEN D",
+        "SEN M-A"
+      ],
+      "first_five_rows": [
+        {
+          "rank": 1,
+          "member_number": "811027‑01",
+          "name": "Morten Aarøe",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN M-A",
+          "points": 3338,
+          "player_id": "13216"
+        },
+        {
+          "rank": 2,
+          "member_number": "981024‑08",
+          "name": "Jonas Trusell-Jensen",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN M-A",
+          "points": 3221,
+          "player_id": "92509"
+        },
+        {
+          "rank": 3,
+          "member_number": "761122‑01",
+          "name": "Kenneth Hasselby",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN M-A",
+          "points": 3204,
+          "player_id": "11171"
+        },
+        {
+          "rank": 4,
+          "member_number": "820528‑01",
+          "name": "Anders Amelung",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN A",
+          "points": 3147,
+          "player_id": "13445"
+        },
+        {
+          "rank": 5,
+          "member_number": "831222‑01",
+          "name": "Claus Christophersen",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN A",
+          "points": 3146,
+          "player_id": "13982"
+        }
+      ],
+      "status": 200,
+      "response_pages_from_first": 3
+    },
+    {
+      "list_id": "289",
+      "param": "K",
+      "unfiltered_pages": 53,
+      "unfiltered_source": "Opgave 151 første response",
+      "gsb_rows_observed": 86,
+      "gsb_pages_total": 1,
+      "gsb_pages_fetched": 1,
+      "gsb_points_rows": 86,
+      "gsb_profile_id_rows": 86,
+      "gsb_clubs": [
+        "Gladsaxe Søborg",
+        "Gladsaxe Søborg (g)"
+      ],
+      "classes": [
+        "SEN A",
+        "SEN A-B",
+        "SEN B",
+        "SEN B-C",
+        "SEN C",
+        "SEN C-D",
+        "SEN D",
+        "SEN M",
+        "SEN M-A"
+      ],
+      "first_five_rows": [
+        {
+          "rank": 1,
+          "member_number": "701024‑03",
+          "name": "Anja Thomsen",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN M",
+          "points": 2663,
+          "player_id": "325460"
+        },
+        {
+          "rank": 2,
+          "member_number": "930609‑21",
+          "name": "Michelle Christensen",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN M-A",
+          "points": 2631,
+          "player_id": "55454"
+        },
+        {
+          "rank": 3,
+          "member_number": "931208‑02",
+          "name": "Simone Møller Jensen",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN A",
+          "points": 2526,
+          "player_id": "58690"
+        },
+        {
+          "rank": 4,
+          "member_number": "701117‑03",
+          "name": "Helle Mathiasen",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN A",
+          "points": 2447,
+          "player_id": "212836"
+        },
+        {
+          "rank": 5,
+          "member_number": "781129‑02",
+          "name": "Rikke Krawcyk",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN A",
+          "points": 2443,
+          "player_id": "12061"
+        }
+      ],
+      "status": 200,
+      "response_pages_from_first": 1
+    },
+    {
+      "list_id": "292",
+      "param": "M",
+      "unfiltered_pages": 41,
+      "unfiltered_source": "Opgave 150 første response",
+      "gsb_rows_observed": 81,
+      "gsb_pages_total": 1,
+      "gsb_pages_fetched": 1,
+      "gsb_points_rows": 81,
+      "gsb_profile_id_rows": 81,
+      "gsb_clubs": [
+        "Gladsaxe Søborg",
+        "Gladsaxe Søborg (g)"
+      ],
+      "classes": [
+        "SEN A",
+        "SEN A-B",
+        "SEN B",
+        "SEN B-C",
+        "SEN C",
+        "SEN C-D",
+        "SEN D",
+        "SEN M-A"
+      ],
+      "first_five_rows": [
+        {
+          "rank": 1,
+          "member_number": "761122‑01",
+          "name": "Kenneth Hasselby",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN M-A",
+          "points": 3136,
+          "player_id": "11171"
+        },
+        {
+          "rank": 2,
+          "member_number": "811027‑01",
+          "name": "Morten Aarøe",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN M-A",
+          "points": 3064,
+          "player_id": "13216"
+        },
+        {
+          "rank": 3,
+          "member_number": "820528‑01",
+          "name": "Anders Amelung",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN A",
+          "points": 3012,
+          "player_id": "13445"
+        },
+        {
+          "rank": 4,
+          "member_number": "980701‑01",
+          "name": "Christoffer Müller",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN A",
+          "points": 2953,
+          "player_id": "84737"
+        },
+        {
+          "rank": 5,
+          "member_number": "820904‑01",
+          "name": "Jonas Niebling",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN A",
+          "points": 2921,
+          "player_id": "13532"
+        }
+      ],
+      "status": 200,
+      "response_pages_from_first": 1
+    },
+    {
+      "list_id": "292",
+      "param": "K",
+      "unfiltered_pages": 33,
+      "unfiltered_source": "Opgave 151 første response",
+      "gsb_rows_observed": 63,
+      "gsb_pages_total": 1,
+      "gsb_pages_fetched": 1,
+      "gsb_points_rows": 63,
+      "gsb_profile_id_rows": 63,
+      "gsb_clubs": [
+        "Gladsaxe Søborg",
+        "Gladsaxe Søborg (g)"
+      ],
+      "classes": [
+        "SEN A",
+        "SEN A-B",
+        "SEN B",
+        "SEN B-C",
+        "SEN C",
+        "SEN C-D",
+        "SEN D",
+        "SEN M",
+        "SEN M-A"
+      ],
+      "first_five_rows": [
+        {
+          "rank": 1,
+          "member_number": "701024‑03",
+          "name": "Anja Thomsen",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN M",
+          "points": 2931,
+          "player_id": "325460"
+        },
+        {
+          "rank": 2,
+          "member_number": "841225‑01",
+          "name": "Line Nielsen",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN M-A",
+          "points": 2717,
+          "player_id": "14375"
+        },
+        {
+          "rank": 3,
+          "member_number": "860208‑02",
+          "name": "Tina Kærgaard Wissing",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN M-A",
+          "points": 2668,
+          "player_id": "15105"
+        },
+        {
+          "rank": 4,
+          "member_number": "781129‑02",
+          "name": "Rikke Krawcyk",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN A",
+          "points": 2452,
+          "player_id": "12061"
+        },
+        {
+          "rank": 5,
+          "member_number": "730724‑02",
+          "name": "Ditte Nyeng",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN A",
+          "points": 2438,
+          "player_id": "9964"
+        }
+      ],
+      "status": 200,
+      "response_pages_from_first": 1
+    }
+  ],
+  "unfilteredK": [
+    {
+      "list_id": "288",
+      "param": "K",
+      "source": "Opgave 151 første response",
+      "request_number": 3,
+      "status": 200,
+      "rows_page0": 100,
+      "pages": 37,
+      "pages_first_response_only": true
+    },
+    {
+      "list_id": "289",
+      "param": "K",
+      "source": "Opgave 151 første response",
+      "request_number": 4,
+      "status": 200,
+      "rows_page0": 100,
+      "pages": 53,
+      "pages_first_response_only": true
+    },
+    {
+      "list_id": "292",
+      "param": "K",
+      "source": "Opgave 151 første response",
+      "request_number": 5,
+      "status": 200,
+      "rows_page0": 100,
+      "pages": 33,
+      "pages_first_response_only": true
+    }
+  ],
+  "unfilteredM": [
+    {
+      "list_id": "288",
+      "param": "M",
+      "source": "Opgave 150 første response",
+      "source_file": "statistik/results/150-raa-svar/02-q02-baseline-liste-288-param-M-version-current-side-0.txt",
+      "rows_page0": 100,
+      "pages": 99,
+      "pages_first_response_only": true
+    },
+    {
+      "list_id": "289",
+      "param": "M",
+      "source": "Opgave 150 første response",
+      "source_file": "statistik/results/150-raa-svar/12-q12-list289-param-M.txt",
+      "rows_page0": 100,
+      "pages": 136,
+      "pages_first_response_only": true
+    },
+    {
+      "list_id": "292",
+      "param": "M",
+      "source": "Opgave 150 første response",
+      "source_file": "statistik/results/150-raa-svar/13-q13-list292-param-M.txt",
+      "rows_page0": 100,
+      "pages": 41,
+      "pages_first_response_only": true
+    }
+  ],
+  "ageTests": [
+    {
+      "agegroupid": "4",
+      "gender": "M",
+      "status": 200,
+      "rows_page0": 100,
+      "pages": 18,
+      "pages_fetched": 18,
+      "classes": [],
+      "class_labelled_rows_page0": 0,
+      "points_rows_page0": 100,
+      "sample": [
+        {
+          "rank": 1,
+          "member_number": "140530‑01",
+          "name": "Conrad Lercke",
+          "club": "Gentofte",
+          "class": null,
+          "points": 2399,
+          "player_id": "327571"
+        },
+        {
+          "rank": 2,
+          "member_number": "150322‑01",
+          "name": "Ditlev Ingerslev Seistrup",
+          "club": "Kolding BK",
+          "class": null,
+          "points": 2169,
+          "player_id": "337483"
+        },
+        {
+          "rank": 3,
+          "member_number": "140423‑02",
+          "name": "Peter Høstgaard-Andersen",
+          "club": "Højbjerg",
+          "class": null,
+          "points": 2163,
+          "player_id": "332739"
+        },
+        {
+          "rank": 4,
+          "member_number": "150824‑01",
+          "name": "Magne Engel Lysgaard",
+          "club": "KBK Kbh.",
+          "class": null,
+          "points": 2092,
+          "player_id": "328454"
+        },
+        {
+          "rank": 5,
+          "member_number": "140215‑01",
+          "name": "Tobias Aagard",
+          "club": "Solrød Strand",
+          "class": null,
+          "points": 2090,
+          "player_id": "325320"
+        }
+      ]
+    },
+    {
+      "agegroupid": "5",
+      "gender": "M",
+      "status": 200,
+      "rows_page0": 100,
+      "pages": 20,
+      "pages_fetched": 1,
+      "classes": [],
+      "class_labelled_rows_page0": 0,
+      "points_rows_page0": 100,
+      "sample": [
+        {
+          "rank": 1,
+          "member_number": "120415‑02",
+          "name": "August Muurholm",
+          "club": "Værløse",
+          "class": null,
+          "points": 2772,
+          "player_id": "324912"
+        },
+        {
+          "rank": 2,
+          "member_number": "120703‑01",
+          "name": "Patrick Christensen",
+          "club": "Højbjerg",
+          "class": null,
+          "points": 2767,
+          "player_id": "314924"
+        },
+        {
+          "rank": 3,
+          "member_number": "120604‑01",
+          "name": "Max Roswall Dekkerhus",
+          "club": "Værløse",
+          "class": null,
+          "points": 2749,
+          "player_id": "318110"
+        },
+        {
+          "rank": 4,
+          "member_number": "120416‑01",
+          "name": "Holger Giehm Madsen",
+          "club": "Solrød Strand",
+          "class": null,
+          "points": 2712,
+          "player_id": "321779"
+        },
+        {
+          "rank": 5,
+          "member_number": "120414‑01",
+          "name": "Tristan Norup Benedictus",
+          "club": "Solrød Strand",
+          "class": null,
+          "points": 2603,
+          "player_id": "328359"
+        }
+      ]
+    },
+    {
+      "agegroupid": "2",
+      "gender": "M",
+      "status": 200,
+      "rows_page0": 23,
+      "pages": 1,
+      "pages_fetched": 1,
+      "classes": [],
+      "class_labelled_rows_page0": 0,
+      "points_rows_page0": 23,
+      "sample": [
+        {
+          "rank": 1,
+          "member_number": "181030‑01",
+          "name": "Winston Ryttov Damgaard",
+          "club": "Skovshoved",
+          "class": null,
+          "points": 1662,
+          "player_id": "352476"
+        },
+        {
+          "rank": 2,
+          "member_number": "180626‑01",
+          "name": "Alfred Dyrup Mejding",
+          "club": "BC37 Amager",
+          "class": null,
+          "points": 1645,
+          "player_id": "347797"
+        },
+        {
+          "rank": 3,
+          "member_number": "181015‑01",
+          "name": "William Damgård Meyer",
+          "club": "Højbjerg",
+          "class": null,
+          "points": 1493,
+          "player_id": "348022"
+        },
+        {
+          "rank": 4,
+          "member_number": "180130‑01",
+          "name": "Alexander Dahl Plougmann",
+          "club": "Hørsholm",
+          "class": null,
+          "points": 1401,
+          "player_id": "348495"
+        },
+        {
+          "rank": 5,
+          "member_number": "180218‑03",
+          "name": "Tobias Sattrup",
+          "club": "Lillerød",
+          "class": null,
+          "points": 1358,
+          "player_id": "359480"
+        }
+      ]
+    },
+    {
+      "agegroupid": "3",
+      "gender": "M",
+      "status": 200,
+      "rows_page0": 100,
+      "pages": 12,
+      "pages_fetched": 1,
+      "classes": [],
+      "class_labelled_rows_page0": 0,
+      "points_rows_page0": 100,
+      "sample": [
+        {
+          "rank": 1,
+          "member_number": "160625‑01",
+          "name": "Johan Dyrlev",
+          "club": "Gentofte",
+          "class": null,
+          "points": 1835,
+          "player_id": "339772"
+        },
+        {
+          "rank": 2,
+          "member_number": "160923‑02",
+          "name": "Bo Brandt",
+          "club": "Humlebæk",
+          "class": null,
+          "points": 1819,
+          "player_id": "352866"
+        },
+        {
+          "rank": 3,
+          "member_number": "160508‑02",
+          "name": "Victor Alexander Zhou-Mohr",
+          "club": "Aarhus AB",
+          "class": null,
+          "points": 1800,
+          "player_id": "338308"
+        },
+        {
+          "rank": 4,
+          "member_number": "160223‑02",
+          "name": "Frej Højgaard Brarup",
+          "club": "Kolding BK",
+          "class": null,
+          "points": 1746,
+          "player_id": "352037"
+        },
+        {
+          "rank": 5,
+          "member_number": "161117‑01",
+          "name": "Philip Højlund Garde",
+          "club": "Højbjerg",
+          "class": null,
+          "points": 1729,
+          "player_id": "341081"
+        }
+      ]
+    },
+    {
+      "agegroupid": "6",
+      "gender": "M",
+      "status": 200,
+      "rows_page0": 100,
+      "pages": 15,
+      "pages_fetched": 1,
+      "classes": [],
+      "class_labelled_rows_page0": 0,
+      "points_rows_page0": 100,
+      "sample": [
+        {
+          "rank": 1,
+          "member_number": "110119‑01",
+          "name": "Marvin Jakob Galan Mogensen",
+          "club": "KBK Kbh.",
+          "class": null,
+          "points": 3722,
+          "player_id": "289785"
+        },
+        {
+          "rank": 2,
+          "member_number": "100214‑01",
+          "name": "Axel Boesen",
+          "club": "Skovshoved",
+          "class": null,
+          "points": 3502,
+          "player_id": "272345"
+        },
+        {
+          "rank": 3,
+          "member_number": "101010‑16",
+          "name": "Anton Hegelund Hvidegaard",
+          "club": "Lillerød",
+          "class": null,
+          "points": 3148,
+          "player_id": "293781"
+        },
+        {
+          "rank": 4,
+          "member_number": "100922‑03",
+          "name": "Oskar Trangbæk",
+          "club": "Viby J",
+          "class": null,
+          "points": 3133,
+          "player_id": "313753"
+        },
+        {
+          "rank": 5,
+          "member_number": "101221‑01",
+          "name": "Nicholas Mikkelsen",
+          "club": "Solrød Strand",
+          "class": null,
+          "points": 3087,
+          "player_id": "295989"
+        }
+      ]
+    },
+    {
+      "agegroupid": "21",
+      "gender": "M",
+      "status": 200,
+      "rows_page0": 100,
+      "pages": 72,
+      "pages_fetched": 1,
+      "classes": [],
+      "class_labelled_rows_page0": 0,
+      "points_rows_page0": 100,
+      "sample": [
+        {
+          "rank": 1,
+          "member_number": "080407‑01",
+          "name": "Frederik Hinding",
+          "club": "Odense OBK",
+          "class": null,
+          "points": 3828,
+          "player_id": "272027"
+        },
+        {
+          "rank": 2,
+          "member_number": "110119‑01",
+          "name": "Marvin Jakob Galan Mogensen",
+          "club": "KBK Kbh.",
+          "class": null,
+          "points": 3722,
+          "player_id": "289785"
+        },
+        {
+          "rank": 3,
+          "member_number": "090323‑01",
+          "name": "Elias Martin",
+          "club": "Værløse",
+          "class": null,
+          "points": 3677,
+          "player_id": "280999"
+        },
+        {
+          "rank": 4,
+          "member_number": "090127‑01",
+          "name": "Maximilian Ørding Kauffmann",
+          "club": "Gentofte",
+          "class": null,
+          "points": 3661,
+          "player_id": "262320"
+        },
+        {
+          "rank": 5,
+          "member_number": "090428‑01",
+          "name": "Christopher Mads Kunckel",
+          "club": "Gentofte",
+          "class": null,
+          "points": 3654,
+          "player_id": "276250"
+        }
+      ]
+    }
+  ],
+  "pointLimit": {
+    "status": 200,
+    "rows": 100,
+    "pages": 59,
+    "points_rows": 100,
+    "min_point": 1480,
+    "max_point": 1500,
+    "sample": [
+      {
+        "rank": 1,
+        "member_number": "091104‑05",
+        "name": "Laust Bastholm Tvedskov",
+        "club": "Morud",
+        "class": null,
+        "points": 1500,
+        "player_id": "323089"
+      },
+      {
+        "rank": 1,
+        "member_number": "090905‑10",
+        "name": "Anders Svane Westenholz",
+        "club": "Værløse",
+        "class": null,
+        "points": 1500,
+        "player_id": "325341"
+      },
+      {
+        "rank": 1,
+        "member_number": "110112‑04",
+        "name": "Asger Stenov",
+        "club": "Birkerød BK13",
+        "class": null,
+        "points": 1500,
+        "player_id": "333835"
+      },
+      {
+        "rank": 4,
+        "member_number": "090118‑10",
+        "name": "Maksym Pshenychka",
+        "club": "Frijsenborg Efterskole",
+        "class": null,
+        "points": 1499,
+        "player_id": "359150"
+      },
+      {
+        "rank": 4,
+        "member_number": "131130‑01",
+        "name": "Vitus Højer Vigsø",
+        "club": "Nexø",
+        "class": null,
+        "points": 1499,
+        "player_id": "333567"
+      }
+    ]
+  },
+  "ageRange": {
+    "status": 200,
+    "rows": 100,
+    "pages": 74,
+    "classes": [
+      "SEN A",
+      "SEN E-M",
+      "SEN M",
+      "SEN M-A"
+    ],
+    "sample": [
+      {
+        "rank": 1,
+        "member_number": "070531‑01",
+        "name": "Phillip Kryger Boe",
+        "club": "Odense OBK",
+        "class": "SEN E-M",
+        "points": 4027,
+        "player_id": "233783"
+      },
+      {
+        "rank": 2,
+        "member_number": "070930‑01",
+        "name": "Simon Rasmussen",
+        "club": "Gentofte (g)",
+        "class": "SEN E-M",
+        "points": 3884,
+        "player_id": "250116"
+      },
+      {
+        "rank": 3,
+        "member_number": "070415‑01",
+        "name": "Salomon Adam Thomasen",
+        "club": "Solrød Strand",
+        "class": "SEN E-M",
+        "points": 3866,
+        "player_id": "243882"
+      },
+      {
+        "rank": 4,
+        "member_number": "080407‑01",
+        "name": "Frederik Hinding",
+        "club": "Odense OBK",
+        "class": null,
+        "points": 3828,
+        "player_id": "272027"
+      },
+      {
+        "rank": 5,
+        "member_number": "110119‑01",
+        "name": "Marvin Jakob Galan Mogensen",
+        "club": "KBK Kbh.",
+        "class": null,
+        "points": 3722,
+        "player_id": "289785"
+      }
+    ]
+  },
+  "allYouthOn288M": {
+    "agegroupid": "21",
+    "status": 200,
+    "rows_page0": 100,
+    "pages": 72,
+    "pages_fetched": 1,
+    "classes": [],
+    "all_classes_youth": false
+  },
+  "historicalVersions": [
+    {
+      "season_id": "2021",
+      "status": 200,
+      "total_version_items": 147,
+      "dated_versions": 146,
+      "oldest": {
+        "label": "01-07-2021",
+        "value": "07/01/2021",
+        "selected": false,
+        "iso": "2021-07-01"
+      },
+      "newest": {
+        "label": "29-06-2022",
+        "value": "06/29/2022",
+        "selected": false,
+        "iso": "2022-06-29"
+      }
+    },
+    {
+      "season_id": "2020",
+      "status": 200,
+      "total_version_items": 77,
+      "dated_versions": 76,
+      "oldest": {
+        "label": "01-07-2020",
+        "value": "07/01/2020",
+        "selected": false,
+        "iso": "2020-07-01"
+      },
+      "newest": {
+        "label": "05-07-2021",
+        "value": "07/05/2021",
+        "selected": false,
+        "iso": "2021-07-05"
+      }
+    },
+    {
+      "season_id": "2019",
+      "status": 200,
+      "total_version_items": 146,
+      "dated_versions": 145,
+      "oldest": {
+        "label": "01-07-2019",
+        "value": "07/01/2019",
+        "selected": false,
+        "iso": "2019-07-01"
+      },
+      "newest": {
+        "label": "21-06-2020",
+        "value": "06/21/2020",
+        "selected": false,
+        "iso": "2020-06-21"
+      }
+    }
+  ],
+  "oldestGsb": {
+    "status": 200,
+    "request_fields": {
+      "callbackcontextkey": "[REDACTED]",
+      "rankinglistagegroupid": "15",
+      "rankinglistid": "288",
+      "seasonid": "2019",
+      "rankinglistversiondate": "07/01/2019",
+      "agegroupid": "",
+      "classid": "",
+      "gender": "",
+      "clubid": "1093",
+      "searchall": false,
+      "regionid": "",
+      "pointsfrom": "",
+      "pointsto": "",
+      "rankingfrom": "",
+      "rankingto": "",
+      "birthdatefromstring": "",
+      "birthdatetostring": "",
+      "agefrom": "",
+      "ageto": "",
+      "playerid": "",
+      "param": "M",
+      "pageindex": "0",
+      "sortfield": "0",
+      "getversions": true,
+      "getplayer": true
+    },
+    "rows": 29,
+    "pages": 1,
+    "points_rows": 29,
+    "first_five": [
+      {
+        "rank": 1,
+        "member_number": "811027‑01",
+        "name": "Morten Aarøe",
+        "club": "Gladsaxe Søborg",
+        "class": "SEN A",
+        "points": 3182,
+        "player_id": "13216"
+      },
+      {
+        "rank": 2,
+        "member_number": "911210‑16",
+        "name": "Rasmus Holmslykke Andersen",
+        "club": "Gladsaxe Søborg",
+        "class": "SEN A",
+        "points": 3156,
+        "player_id": "45550"
+      },
+      {
+        "rank": 3,
+        "member_number": "831222‑01",
+        "name": "Claus Christophersen",
+        "club": "Gladsaxe Søborg",
+        "class": "SEN A",
+        "points": 3151,
+        "player_id": "13982"
+      },
+      {
+        "rank": 4,
+        "member_number": "981024‑08",
+        "name": "Jonas Trusell-Jensen",
+        "club": "Gladsaxe Søborg",
+        "class": "SEN A",
+        "points": 3146,
+        "player_id": "92509"
+      },
+      {
+        "rank": 5,
+        "member_number": "970425‑03",
+        "name": "Jannik Due",
+        "club": "Gladsaxe Søborg",
+        "class": "SEN A",
+        "points": 3142,
+        "player_id": "79425"
+      }
+    ]
+  },
+  "localMatchVersionCoverage": {
+    "totalYouthMatches": 271,
+    "datedMatches": 266,
+    "undatedMatches": 5,
+    "distinctDatedMatchDates": 12,
+    "dates": [
+      "2025-09-21",
+      "2025-10-05",
+      "2025-10-26",
+      "2025-11-16",
+      "2025-12-07",
+      "2026-01-11",
+      "2026-02-01",
+      "2026-02-22",
+      "2026-03-08",
+      "2026-03-22",
+      "2026-04-11",
+      "2026-04-12"
+    ],
+    "uniqueVersionsSelected": 11,
+    "selectedVersions": [
+      "2025-09-19",
+      "2025-10-03",
+      "2025-10-24",
+      "2025-11-14",
+      "2025-12-05",
+      "2026-01-09",
+      "2026-02-01",
+      "2026-02-20",
+      "2026-03-06",
+      "2026-03-20",
+      "2026-04-10"
+    ],
+    "bySeason": [
+      {
+        "season_id": 2025,
+        "matches": 271,
+        "valid_dates": [
+          "2025-09-21",
+          "2025-10-05",
+          "2025-10-26",
+          "2025-11-16",
+          "2025-12-07",
+          "2026-01-11",
+          "2026-02-01",
+          "2026-02-22",
+          "2026-03-08",
+          "2026-03-22",
+          "2026-04-11",
+          "2026-04-12"
+        ],
+        "undated_matches": 5,
+        "distinct_dates": 12
+      }
+    ],
+    "unmatchedToAnyVersion": 5,
+    "matchAssignments": [
+      {
+        "external_match_id": "493230",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2025-10-05",
+        "selected_version": "10/03/2025",
+        "selected_version_iso": "2025-10-03"
+      },
+      {
+        "external_match_id": "493232",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2025-10-05",
+        "selected_version": "10/03/2025",
+        "selected_version_iso": "2025-10-03"
+      },
+      {
+        "external_match_id": "494475",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2025-10-26",
+        "selected_version": "10/24/2025",
+        "selected_version_iso": "2025-10-24"
+      },
+      {
+        "external_match_id": "494477",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2025-10-26",
+        "selected_version": "10/24/2025",
+        "selected_version_iso": "2025-10-24"
+      },
+      {
+        "external_match_id": "493220",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2025-10-26",
+        "selected_version": "10/24/2025",
+        "selected_version_iso": "2025-10-24"
+      },
+      {
+        "external_match_id": "493222",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2025-10-26",
+        "selected_version": "10/24/2025",
+        "selected_version_iso": "2025-10-24"
+      },
+      {
+        "external_match_id": "493224",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2025-11-16",
+        "selected_version": "11/14/2025",
+        "selected_version_iso": "2025-11-14"
+      },
+      {
+        "external_match_id": "493225",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2025-11-16",
+        "selected_version": "11/14/2025",
+        "selected_version_iso": "2025-11-14"
+      },
+      {
+        "external_match_id": "493234",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2025-11-16",
+        "selected_version": "11/14/2025",
+        "selected_version_iso": "2025-11-14"
+      },
+      {
+        "external_match_id": "493235",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2025-11-16",
+        "selected_version": "11/14/2025",
+        "selected_version_iso": "2025-11-14"
+      },
+      {
+        "external_match_id": "494479",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2025-12-07",
+        "selected_version": "12/05/2025",
+        "selected_version_iso": "2025-12-05"
+      },
+      {
+        "external_match_id": "494480",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2025-12-07",
+        "selected_version": "12/05/2025",
+        "selected_version_iso": "2025-12-05"
+      },
+      {
+        "external_match_id": "505242",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-02-01",
+        "selected_version": "02/01/2026",
+        "selected_version_iso": "2026-02-01"
+      },
+      {
+        "external_match_id": "505244",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-02-01",
+        "selected_version": "02/01/2026",
+        "selected_version_iso": "2026-02-01"
+      },
+      {
+        "external_match_id": "505254",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-02-01",
+        "selected_version": "02/01/2026",
+        "selected_version_iso": "2026-02-01"
+      },
+      {
+        "external_match_id": "505256",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-02-01",
+        "selected_version": "02/01/2026",
+        "selected_version_iso": "2026-02-01"
+      },
+      {
+        "external_match_id": "505294",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-02-01",
+        "selected_version": "02/01/2026",
+        "selected_version_iso": "2026-02-01"
+      },
+      {
+        "external_match_id": "505296",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-02-01",
+        "selected_version": "02/01/2026",
+        "selected_version_iso": "2026-02-01"
+      },
+      {
+        "external_match_id": "505211",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-02-22",
+        "selected_version": "02/20/2026",
+        "selected_version_iso": "2026-02-20"
+      },
+      {
+        "external_match_id": "505213",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-02-22",
+        "selected_version": "02/20/2026",
+        "selected_version_iso": "2026-02-20"
+      },
+      {
+        "external_match_id": "505246",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-02-22",
+        "selected_version": "02/20/2026",
+        "selected_version_iso": "2026-02-20"
+      },
+      {
+        "external_match_id": "505248",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-02-22",
+        "selected_version": "02/20/2026",
+        "selected_version_iso": "2026-02-20"
+      },
+      {
+        "external_match_id": "505230",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-02-22",
+        "selected_version": "02/20/2026",
+        "selected_version_iso": "2026-02-20"
+      },
+      {
+        "external_match_id": "505232",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-02-22",
+        "selected_version": "02/20/2026",
+        "selected_version_iso": "2026-02-20"
+      },
+      {
+        "external_match_id": "505215",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "505216",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "505250",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "505252",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "505234",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "505236",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "505278",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "505280",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "505299",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "505300",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "505217",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-03-22",
+        "selected_version": "03/20/2026",
+        "selected_version_iso": "2026-03-20"
+      },
+      {
+        "external_match_id": "505219",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-03-22",
+        "selected_version": "03/20/2026",
+        "selected_version_iso": "2026-03-20"
+      },
+      {
+        "external_match_id": "505238",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-03-22",
+        "selected_version": "03/20/2026",
+        "selected_version_iso": "2026-03-20"
+      },
+      {
+        "external_match_id": "505240",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-03-22",
+        "selected_version": "03/20/2026",
+        "selected_version_iso": "2026-03-20"
+      },
+      {
+        "external_match_id": "505282",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-03-22",
+        "selected_version": "03/20/2026",
+        "selected_version_iso": "2026-03-20"
+      },
+      {
+        "external_match_id": "505284",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-03-22",
+        "selected_version": "03/20/2026",
+        "selected_version_iso": "2026-03-20"
+      },
+      {
+        "external_match_id": "505302",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-03-22",
+        "selected_version": "03/20/2026",
+        "selected_version_iso": "2026-03-20"
+      },
+      {
+        "external_match_id": "505305",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-03-22",
+        "selected_version": "03/20/2026",
+        "selected_version_iso": "2026-03-20"
+      },
+      {
+        "external_match_id": "506407",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-04-11",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506413",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-04-11",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506441",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-04-11",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506838",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-04-12",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506844",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-04-12",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506845",
+        "season_id": 2025,
+        "age_group_id": 2,
+        "match_date": "2026-04-12",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "505972",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "",
+        "selected_version": null,
+        "selected_version_iso": null
+      },
+      {
+        "external_match_id": "505974",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "",
+        "selected_version": null,
+        "selected_version_iso": null
+      },
+      {
+        "external_match_id": "505975",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "",
+        "selected_version": null,
+        "selected_version_iso": null
+      },
+      {
+        "external_match_id": "505988",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "",
+        "selected_version": null,
+        "selected_version_iso": null
+      },
+      {
+        "external_match_id": "505990",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "",
+        "selected_version": null,
+        "selected_version_iso": null
+      },
+      {
+        "external_match_id": "493359",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2025-10-05",
+        "selected_version": "10/03/2025",
+        "selected_version_iso": "2025-10-03"
+      },
+      {
+        "external_match_id": "493360",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2025-10-05",
+        "selected_version": "10/03/2025",
+        "selected_version_iso": "2025-10-03"
+      },
+      {
+        "external_match_id": "493255",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2025-10-05",
+        "selected_version": "10/03/2025",
+        "selected_version_iso": "2025-10-03"
+      },
+      {
+        "external_match_id": "493256",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2025-10-05",
+        "selected_version": "10/03/2025",
+        "selected_version_iso": "2025-10-03"
+      },
+      {
+        "external_match_id": "492852",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2025-10-05",
+        "selected_version": "10/03/2025",
+        "selected_version_iso": "2025-10-03"
+      },
+      {
+        "external_match_id": "492854",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2025-10-05",
+        "selected_version": "10/03/2025",
+        "selected_version_iso": "2025-10-03"
+      },
+      {
+        "external_match_id": "492732",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2025-10-26",
+        "selected_version": "10/24/2025",
+        "selected_version_iso": "2025-10-24"
+      },
+      {
+        "external_match_id": "492734",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2025-10-26",
+        "selected_version": "10/24/2025",
+        "selected_version_iso": "2025-10-24"
+      },
+      {
+        "external_match_id": "493363",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2025-11-16",
+        "selected_version": "11/14/2025",
+        "selected_version_iso": "2025-11-14"
+      },
+      {
+        "external_match_id": "493364",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2025-11-16",
+        "selected_version": "11/14/2025",
+        "selected_version_iso": "2025-11-14"
+      },
+      {
+        "external_match_id": "493258",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2025-11-16",
+        "selected_version": "11/14/2025",
+        "selected_version_iso": "2025-11-14"
+      },
+      {
+        "external_match_id": "493260",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2025-11-16",
+        "selected_version": "11/14/2025",
+        "selected_version_iso": "2025-11-14"
+      },
+      {
+        "external_match_id": "493266",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2025-12-07",
+        "selected_version": "12/05/2025",
+        "selected_version_iso": "2025-12-05"
+      },
+      {
+        "external_match_id": "493267",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2025-12-07",
+        "selected_version": "12/05/2025",
+        "selected_version_iso": "2025-12-05"
+      },
+      {
+        "external_match_id": "492736",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2025-12-07",
+        "selected_version": "12/05/2025",
+        "selected_version_iso": "2025-12-05"
+      },
+      {
+        "external_match_id": "492737",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2025-12-07",
+        "selected_version": "12/05/2025",
+        "selected_version_iso": "2025-12-05"
+      },
+      {
+        "external_match_id": "493375",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2026-01-11",
+        "selected_version": "01/09/2026",
+        "selected_version_iso": "2026-01-09"
+      },
+      {
+        "external_match_id": "493376",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2026-01-11",
+        "selected_version": "01/09/2026",
+        "selected_version_iso": "2026-01-09"
+      },
+      {
+        "external_match_id": "493269",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2026-01-11",
+        "selected_version": "01/09/2026",
+        "selected_version_iso": "2026-01-09"
+      },
+      {
+        "external_match_id": "493271",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2026-01-11",
+        "selected_version": "01/09/2026",
+        "selected_version_iso": "2026-01-09"
+      },
+      {
+        "external_match_id": "493198",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2026-02-01",
+        "selected_version": "02/01/2026",
+        "selected_version_iso": "2026-02-01"
+      },
+      {
+        "external_match_id": "493515",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2026-02-01",
+        "selected_version": "02/01/2026",
+        "selected_version_iso": "2026-02-01"
+      },
+      {
+        "external_match_id": "492738",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2026-02-01",
+        "selected_version": "02/01/2026",
+        "selected_version_iso": "2026-02-01"
+      },
+      {
+        "external_match_id": "492739",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2026-02-01",
+        "selected_version": "02/01/2026",
+        "selected_version_iso": "2026-02-01"
+      },
+      {
+        "external_match_id": "493379",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2026-02-22",
+        "selected_version": "02/20/2026",
+        "selected_version_iso": "2026-02-20"
+      },
+      {
+        "external_match_id": "493277",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "493278",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "493517",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "493520",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "493206",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2026-03-22",
+        "selected_version": "03/20/2026",
+        "selected_version_iso": "2026-03-20"
+      },
+      {
+        "external_match_id": "493522",
+        "season_id": 2025,
+        "age_group_id": 3,
+        "match_date": "2026-03-22",
+        "selected_version": "03/20/2026",
+        "selected_version_iso": "2026-03-20"
+      },
+      {
+        "external_match_id": "487676",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-09-21",
+        "selected_version": "09/19/2025",
+        "selected_version_iso": "2025-09-19"
+      },
+      {
+        "external_match_id": "487679",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-09-21",
+        "selected_version": "09/19/2025",
+        "selected_version_iso": "2025-09-19"
+      },
+      {
+        "external_match_id": "487689",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-09-21",
+        "selected_version": "09/19/2025",
+        "selected_version_iso": "2025-09-19"
+      },
+      {
+        "external_match_id": "487691",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-09-21",
+        "selected_version": "09/19/2025",
+        "selected_version_iso": "2025-09-19"
+      },
+      {
+        "external_match_id": "487692",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-09-21",
+        "selected_version": "09/19/2025",
+        "selected_version_iso": "2025-09-19"
+      },
+      {
+        "external_match_id": "487694",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-09-21",
+        "selected_version": "09/19/2025",
+        "selected_version_iso": "2025-09-19"
+      },
+      {
+        "external_match_id": "487695",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-09-21",
+        "selected_version": "09/19/2025",
+        "selected_version_iso": "2025-09-19"
+      },
+      {
+        "external_match_id": "487698",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-09-21",
+        "selected_version": "09/19/2025",
+        "selected_version_iso": "2025-09-19"
+      },
+      {
+        "external_match_id": "487891",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-10-05",
+        "selected_version": "10/03/2025",
+        "selected_version_iso": "2025-10-03"
+      },
+      {
+        "external_match_id": "488004",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-10-05",
+        "selected_version": "10/03/2025",
+        "selected_version_iso": "2025-10-03"
+      },
+      {
+        "external_match_id": "490145",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-10-05",
+        "selected_version": "10/03/2025",
+        "selected_version_iso": "2025-10-03"
+      },
+      {
+        "external_match_id": "492875",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-10-05",
+        "selected_version": "10/03/2025",
+        "selected_version_iso": "2025-10-03"
+      },
+      {
+        "external_match_id": "493408",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-10-05",
+        "selected_version": "10/03/2025",
+        "selected_version_iso": "2025-10-03"
+      },
+      {
+        "external_match_id": "487893",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-10-26",
+        "selected_version": "10/24/2025",
+        "selected_version_iso": "2025-10-24"
+      },
+      {
+        "external_match_id": "493590",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-10-26",
+        "selected_version": "10/24/2025",
+        "selected_version_iso": "2025-10-24"
+      },
+      {
+        "external_match_id": "493591",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-10-26",
+        "selected_version": "10/24/2025",
+        "selected_version_iso": "2025-10-24"
+      },
+      {
+        "external_match_id": "488009",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-11-16",
+        "selected_version": "11/14/2025",
+        "selected_version_iso": "2025-11-14"
+      },
+      {
+        "external_match_id": "490148",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-11-16",
+        "selected_version": "11/14/2025",
+        "selected_version_iso": "2025-11-14"
+      },
+      {
+        "external_match_id": "493415",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-11-16",
+        "selected_version": "11/14/2025",
+        "selected_version_iso": "2025-11-14"
+      },
+      {
+        "external_match_id": "493416",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-11-16",
+        "selected_version": "11/14/2025",
+        "selected_version_iso": "2025-11-14"
+      },
+      {
+        "external_match_id": "494385",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-11-16",
+        "selected_version": "11/14/2025",
+        "selected_version_iso": "2025-11-14"
+      },
+      {
+        "external_match_id": "494386",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-11-16",
+        "selected_version": "11/14/2025",
+        "selected_version_iso": "2025-11-14"
+      },
+      {
+        "external_match_id": "492918",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-12-07",
+        "selected_version": "12/05/2025",
+        "selected_version_iso": "2025-12-05"
+      },
+      {
+        "external_match_id": "492919",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-12-07",
+        "selected_version": "12/05/2025",
+        "selected_version_iso": "2025-12-05"
+      },
+      {
+        "external_match_id": "492948",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-12-07",
+        "selected_version": "12/05/2025",
+        "selected_version_iso": "2025-12-05"
+      },
+      {
+        "external_match_id": "492950",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-12-07",
+        "selected_version": "12/05/2025",
+        "selected_version_iso": "2025-12-05"
+      },
+      {
+        "external_match_id": "493610",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-12-07",
+        "selected_version": "12/05/2025",
+        "selected_version_iso": "2025-12-05"
+      },
+      {
+        "external_match_id": "493611",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2025-12-07",
+        "selected_version": "12/05/2025",
+        "selected_version_iso": "2025-12-05"
+      },
+      {
+        "external_match_id": "487902",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-01-11",
+        "selected_version": "01/09/2026",
+        "selected_version_iso": "2026-01-09"
+      },
+      {
+        "external_match_id": "493418",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-01-11",
+        "selected_version": "01/09/2026",
+        "selected_version_iso": "2026-01-09"
+      },
+      {
+        "external_match_id": "493420",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-01-11",
+        "selected_version": "01/09/2026",
+        "selected_version_iso": "2026-01-09"
+      },
+      {
+        "external_match_id": "493569",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-01-11",
+        "selected_version": "01/09/2026",
+        "selected_version_iso": "2026-01-09"
+      },
+      {
+        "external_match_id": "493572",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-01-11",
+        "selected_version": "01/09/2026",
+        "selected_version_iso": "2026-01-09"
+      },
+      {
+        "external_match_id": "492954",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-01-11",
+        "selected_version": "01/09/2026",
+        "selected_version_iso": "2026-01-09"
+      },
+      {
+        "external_match_id": "492957",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-01-11",
+        "selected_version": "01/09/2026",
+        "selected_version_iso": "2026-01-09"
+      },
+      {
+        "external_match_id": "493614",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-01-11",
+        "selected_version": "01/09/2026",
+        "selected_version_iso": "2026-01-09"
+      },
+      {
+        "external_match_id": "493615",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-01-11",
+        "selected_version": "01/09/2026",
+        "selected_version_iso": "2026-01-09"
+      },
+      {
+        "external_match_id": "494399",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-01-11",
+        "selected_version": "01/09/2026",
+        "selected_version_iso": "2026-01-09"
+      },
+      {
+        "external_match_id": "494402",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-01-11",
+        "selected_version": "01/09/2026",
+        "selected_version_iso": "2026-01-09"
+      },
+      {
+        "external_match_id": "487906",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-02-01",
+        "selected_version": "02/01/2026",
+        "selected_version_iso": "2026-02-01"
+      },
+      {
+        "external_match_id": "490160",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-02-01",
+        "selected_version": "02/01/2026",
+        "selected_version_iso": "2026-02-01"
+      },
+      {
+        "external_match_id": "492929",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-02-01",
+        "selected_version": "02/01/2026",
+        "selected_version_iso": "2026-02-01"
+      },
+      {
+        "external_match_id": "492931",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-02-01",
+        "selected_version": "02/01/2026",
+        "selected_version_iso": "2026-02-01"
+      },
+      {
+        "external_match_id": "487910",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-02-22",
+        "selected_version": "02/20/2026",
+        "selected_version_iso": "2026-02-20"
+      },
+      {
+        "external_match_id": "490161",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-02-22",
+        "selected_version": "02/20/2026",
+        "selected_version_iso": "2026-02-20"
+      },
+      {
+        "external_match_id": "490163",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-02-22",
+        "selected_version": "02/20/2026",
+        "selected_version_iso": "2026-02-20"
+      },
+      {
+        "external_match_id": "493422",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-02-22",
+        "selected_version": "02/20/2026",
+        "selected_version_iso": "2026-02-20"
+      },
+      {
+        "external_match_id": "493424",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-02-22",
+        "selected_version": "02/20/2026",
+        "selected_version_iso": "2026-02-20"
+      },
+      {
+        "external_match_id": "493596",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-02-22",
+        "selected_version": "02/20/2026",
+        "selected_version_iso": "2026-02-20"
+      },
+      {
+        "external_match_id": "493597",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-02-22",
+        "selected_version": "02/20/2026",
+        "selected_version_iso": "2026-02-20"
+      },
+      {
+        "external_match_id": "493617",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-02-22",
+        "selected_version": "02/20/2026",
+        "selected_version_iso": "2026-02-20"
+      },
+      {
+        "external_match_id": "493620",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-02-22",
+        "selected_version": "02/20/2026",
+        "selected_version_iso": "2026-02-20"
+      },
+      {
+        "external_match_id": "494407",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-02-22",
+        "selected_version": "02/20/2026",
+        "selected_version_iso": "2026-02-20"
+      },
+      {
+        "external_match_id": "494409",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-02-22",
+        "selected_version": "02/20/2026",
+        "selected_version_iso": "2026-02-20"
+      },
+      {
+        "external_match_id": "487914",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "490157",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "493428",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "493430",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "493621",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "493624",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "493579",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-03-22",
+        "selected_version": "03/20/2026",
+        "selected_version_iso": "2026-03-20"
+      },
+      {
+        "external_match_id": "493580",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-03-22",
+        "selected_version": "03/20/2026",
+        "selected_version_iso": "2026-03-20"
+      },
+      {
+        "external_match_id": "493599",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-03-22",
+        "selected_version": "03/20/2026",
+        "selected_version_iso": "2026-03-20"
+      },
+      {
+        "external_match_id": "493601",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-03-22",
+        "selected_version": "03/20/2026",
+        "selected_version_iso": "2026-03-20"
+      },
+      {
+        "external_match_id": "494411",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-03-22",
+        "selected_version": "03/20/2026",
+        "selected_version_iso": "2026-03-20"
+      },
+      {
+        "external_match_id": "494413",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-03-22",
+        "selected_version": "03/20/2026",
+        "selected_version_iso": "2026-03-20"
+      },
+      {
+        "external_match_id": "506023",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-04-11",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506025",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-04-11",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506027",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-04-11",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506461",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-04-11",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506463",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-04-11",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506465",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-04-11",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506483",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-04-11",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506467",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-04-11",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506469",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-04-11",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506471",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-04-11",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506561",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-04-11",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506563",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-04-11",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506565",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-04-11",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506566",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-04-11",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506361",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-04-12",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506363",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-04-12",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506490",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-04-12",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506492",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-04-12",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506499",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-04-12",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506503",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-04-12",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506571",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-04-12",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506569",
+        "season_id": 2025,
+        "age_group_id": 4,
+        "match_date": "2026-04-12",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "487719",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-09-21",
+        "selected_version": "09/19/2025",
+        "selected_version_iso": "2025-09-19"
+      },
+      {
+        "external_match_id": "487720",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-09-21",
+        "selected_version": "09/19/2025",
+        "selected_version_iso": "2025-09-19"
+      },
+      {
+        "external_match_id": "487724",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-09-21",
+        "selected_version": "09/19/2025",
+        "selected_version_iso": "2025-09-19"
+      },
+      {
+        "external_match_id": "487725",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-09-21",
+        "selected_version": "09/19/2025",
+        "selected_version_iso": "2025-09-19"
+      },
+      {
+        "external_match_id": "493884",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-10-05",
+        "selected_version": "10/03/2025",
+        "selected_version_iso": "2025-10-03"
+      },
+      {
+        "external_match_id": "493887",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-10-05",
+        "selected_version": "10/03/2025",
+        "selected_version_iso": "2025-10-03"
+      },
+      {
+        "external_match_id": "489556",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-10-05",
+        "selected_version": "10/03/2025",
+        "selected_version_iso": "2025-10-03"
+      },
+      {
+        "external_match_id": "493929",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-10-05",
+        "selected_version": "10/03/2025",
+        "selected_version_iso": "2025-10-03"
+      },
+      {
+        "external_match_id": "493967",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-10-05",
+        "selected_version": "10/03/2025",
+        "selected_version_iso": "2025-10-03"
+      },
+      {
+        "external_match_id": "493968",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-10-05",
+        "selected_version": "10/03/2025",
+        "selected_version_iso": "2025-10-03"
+      },
+      {
+        "external_match_id": "487794",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-10-26",
+        "selected_version": "10/24/2025",
+        "selected_version_iso": "2025-10-24"
+      },
+      {
+        "external_match_id": "489558",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-10-26",
+        "selected_version": "10/24/2025",
+        "selected_version_iso": "2025-10-24"
+      },
+      {
+        "external_match_id": "493978",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-10-26",
+        "selected_version": "10/24/2025",
+        "selected_version_iso": "2025-10-24"
+      },
+      {
+        "external_match_id": "493979",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-10-26",
+        "selected_version": "10/24/2025",
+        "selected_version_iso": "2025-10-24"
+      },
+      {
+        "external_match_id": "494085",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-10-26",
+        "selected_version": "10/24/2025",
+        "selected_version_iso": "2025-10-24"
+      },
+      {
+        "external_match_id": "494087",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-10-26",
+        "selected_version": "10/24/2025",
+        "selected_version_iso": "2025-10-24"
+      },
+      {
+        "external_match_id": "491814",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-10-26",
+        "selected_version": "10/24/2025",
+        "selected_version_iso": "2025-10-24"
+      },
+      {
+        "external_match_id": "491816",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-10-26",
+        "selected_version": "10/24/2025",
+        "selected_version_iso": "2025-10-24"
+      },
+      {
+        "external_match_id": "487796",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-11-16",
+        "selected_version": "11/14/2025",
+        "selected_version_iso": "2025-11-14"
+      },
+      {
+        "external_match_id": "489560",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-11-16",
+        "selected_version": "11/14/2025",
+        "selected_version_iso": "2025-11-14"
+      },
+      {
+        "external_match_id": "494089",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-11-16",
+        "selected_version": "11/14/2025",
+        "selected_version_iso": "2025-11-14"
+      },
+      {
+        "external_match_id": "494090",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-11-16",
+        "selected_version": "11/14/2025",
+        "selected_version_iso": "2025-11-14"
+      },
+      {
+        "external_match_id": "487798",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-12-07",
+        "selected_version": "12/05/2025",
+        "selected_version_iso": "2025-12-05"
+      },
+      {
+        "external_match_id": "493897",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-12-07",
+        "selected_version": "12/05/2025",
+        "selected_version_iso": "2025-12-05"
+      },
+      {
+        "external_match_id": "489566",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-12-07",
+        "selected_version": "12/05/2025",
+        "selected_version_iso": "2025-12-05"
+      },
+      {
+        "external_match_id": "493936",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-12-07",
+        "selected_version": "12/05/2025",
+        "selected_version_iso": "2025-12-05"
+      },
+      {
+        "external_match_id": "493937",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-12-07",
+        "selected_version": "12/05/2025",
+        "selected_version_iso": "2025-12-05"
+      },
+      {
+        "external_match_id": "493985",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-12-07",
+        "selected_version": "12/05/2025",
+        "selected_version_iso": "2025-12-05"
+      },
+      {
+        "external_match_id": "493987",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-12-07",
+        "selected_version": "12/05/2025",
+        "selected_version_iso": "2025-12-05"
+      },
+      {
+        "external_match_id": "494098",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-12-07",
+        "selected_version": "12/05/2025",
+        "selected_version_iso": "2025-12-05"
+      },
+      {
+        "external_match_id": "494100",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2025-12-07",
+        "selected_version": "12/05/2025",
+        "selected_version_iso": "2025-12-05"
+      },
+      {
+        "external_match_id": "487801",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-01-11",
+        "selected_version": "01/09/2026",
+        "selected_version_iso": "2026-01-09"
+      },
+      {
+        "external_match_id": "493905",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-01-11",
+        "selected_version": "01/09/2026",
+        "selected_version_iso": "2026-01-09"
+      },
+      {
+        "external_match_id": "493907",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-01-11",
+        "selected_version": "01/09/2026",
+        "selected_version_iso": "2026-01-09"
+      },
+      {
+        "external_match_id": "489569",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-01-11",
+        "selected_version": "01/09/2026",
+        "selected_version_iso": "2026-01-09"
+      },
+      {
+        "external_match_id": "493991",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-01-11",
+        "selected_version": "01/09/2026",
+        "selected_version_iso": "2026-01-09"
+      },
+      {
+        "external_match_id": "493993",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-01-11",
+        "selected_version": "01/09/2026",
+        "selected_version_iso": "2026-01-09"
+      },
+      {
+        "external_match_id": "492249",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-01-11",
+        "selected_version": "01/09/2026",
+        "selected_version_iso": "2026-01-09"
+      },
+      {
+        "external_match_id": "492250",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-01-11",
+        "selected_version": "01/09/2026",
+        "selected_version_iso": "2026-01-09"
+      },
+      {
+        "external_match_id": "487804",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-02-01",
+        "selected_version": "02/01/2026",
+        "selected_version_iso": "2026-02-01"
+      },
+      {
+        "external_match_id": "489573",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-02-01",
+        "selected_version": "02/01/2026",
+        "selected_version_iso": "2026-02-01"
+      },
+      {
+        "external_match_id": "489576",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-02-01",
+        "selected_version": "02/01/2026",
+        "selected_version_iso": "2026-02-01"
+      },
+      {
+        "external_match_id": "493940",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-02-01",
+        "selected_version": "02/01/2026",
+        "selected_version_iso": "2026-02-01"
+      },
+      {
+        "external_match_id": "493941",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-02-01",
+        "selected_version": "02/01/2026",
+        "selected_version_iso": "2026-02-01"
+      },
+      {
+        "external_match_id": "494106",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-02-01",
+        "selected_version": "02/01/2026",
+        "selected_version_iso": "2026-02-01"
+      },
+      {
+        "external_match_id": "494107",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-02-01",
+        "selected_version": "02/01/2026",
+        "selected_version_iso": "2026-02-01"
+      },
+      {
+        "external_match_id": "492201",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-02-01",
+        "selected_version": "02/01/2026",
+        "selected_version_iso": "2026-02-01"
+      },
+      {
+        "external_match_id": "492203",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-02-01",
+        "selected_version": "02/01/2026",
+        "selected_version_iso": "2026-02-01"
+      },
+      {
+        "external_match_id": "493915",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-02-22",
+        "selected_version": "02/20/2026",
+        "selected_version_iso": "2026-02-20"
+      },
+      {
+        "external_match_id": "493917",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-02-22",
+        "selected_version": "02/20/2026",
+        "selected_version_iso": "2026-02-20"
+      },
+      {
+        "external_match_id": "493998",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-02-22",
+        "selected_version": "02/20/2026",
+        "selected_version_iso": "2026-02-20"
+      },
+      {
+        "external_match_id": "494000",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-02-22",
+        "selected_version": "02/20/2026",
+        "selected_version_iso": "2026-02-20"
+      },
+      {
+        "external_match_id": "487807",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "493944",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "494112",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "494114",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "491849",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "491850",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "493926",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-03-22",
+        "selected_version": "03/20/2026",
+        "selected_version_iso": "2026-03-20"
+      },
+      {
+        "external_match_id": "493927",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-03-22",
+        "selected_version": "03/20/2026",
+        "selected_version_iso": "2026-03-20"
+      },
+      {
+        "external_match_id": "493945",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-03-22",
+        "selected_version": "03/20/2026",
+        "selected_version_iso": "2026-03-20"
+      },
+      {
+        "external_match_id": "493947",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-03-22",
+        "selected_version": "03/20/2026",
+        "selected_version_iso": "2026-03-20"
+      },
+      {
+        "external_match_id": "494003",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-03-22",
+        "selected_version": "03/20/2026",
+        "selected_version_iso": "2026-03-20"
+      },
+      {
+        "external_match_id": "494004",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-03-22",
+        "selected_version": "03/20/2026",
+        "selected_version_iso": "2026-03-20"
+      },
+      {
+        "external_match_id": "494116",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-03-22",
+        "selected_version": "03/20/2026",
+        "selected_version_iso": "2026-03-20"
+      },
+      {
+        "external_match_id": "494117",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-03-22",
+        "selected_version": "03/20/2026",
+        "selected_version_iso": "2026-03-20"
+      },
+      {
+        "external_match_id": "506122",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-04-11",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506124",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-04-11",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506126",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-04-11",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506201",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-04-11",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506202",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-04-11",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506719",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-04-11",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506720",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-04-11",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506729",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-04-12",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506730",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-04-12",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506659",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-04-12",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506661",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-04-12",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506721",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-04-12",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "506724",
+        "season_id": 2025,
+        "age_group_id": 5,
+        "match_date": "2026-04-12",
+        "selected_version": "04/10/2026",
+        "selected_version_iso": "2026-04-10"
+      },
+      {
+        "external_match_id": "487734",
+        "season_id": 2025,
+        "age_group_id": 18,
+        "match_date": "2025-09-21",
+        "selected_version": "09/19/2025",
+        "selected_version_iso": "2025-09-19"
+      },
+      {
+        "external_match_id": "487735",
+        "season_id": 2025,
+        "age_group_id": 18,
+        "match_date": "2025-09-21",
+        "selected_version": "09/19/2025",
+        "selected_version_iso": "2025-09-19"
+      },
+      {
+        "external_match_id": "494334",
+        "season_id": 2025,
+        "age_group_id": 18,
+        "match_date": "2025-10-05",
+        "selected_version": "10/03/2025",
+        "selected_version_iso": "2025-10-03"
+      },
+      {
+        "external_match_id": "494335",
+        "season_id": 2025,
+        "age_group_id": 18,
+        "match_date": "2025-10-05",
+        "selected_version": "10/03/2025",
+        "selected_version_iso": "2025-10-03"
+      },
+      {
+        "external_match_id": "494336",
+        "season_id": 2025,
+        "age_group_id": 18,
+        "match_date": "2025-10-26",
+        "selected_version": "10/24/2025",
+        "selected_version_iso": "2025-10-24"
+      },
+      {
+        "external_match_id": "494337",
+        "season_id": 2025,
+        "age_group_id": 18,
+        "match_date": "2025-10-26",
+        "selected_version": "10/24/2025",
+        "selected_version_iso": "2025-10-24"
+      },
+      {
+        "external_match_id": "492129",
+        "season_id": 2025,
+        "age_group_id": 18,
+        "match_date": "2025-10-26",
+        "selected_version": "10/24/2025",
+        "selected_version_iso": "2025-10-24"
+      },
+      {
+        "external_match_id": "492293",
+        "season_id": 2025,
+        "age_group_id": 18,
+        "match_date": "2025-10-26",
+        "selected_version": "10/24/2025",
+        "selected_version_iso": "2025-10-24"
+      },
+      {
+        "external_match_id": "492136",
+        "season_id": 2025,
+        "age_group_id": 18,
+        "match_date": "2025-11-16",
+        "selected_version": "11/14/2025",
+        "selected_version_iso": "2025-11-14"
+      },
+      {
+        "external_match_id": "492138",
+        "season_id": 2025,
+        "age_group_id": 18,
+        "match_date": "2025-11-16",
+        "selected_version": "11/14/2025",
+        "selected_version_iso": "2025-11-14"
+      },
+      {
+        "external_match_id": "492297",
+        "season_id": 2025,
+        "age_group_id": 18,
+        "match_date": "2025-12-07",
+        "selected_version": "12/05/2025",
+        "selected_version_iso": "2025-12-05"
+      },
+      {
+        "external_match_id": "492298",
+        "season_id": 2025,
+        "age_group_id": 18,
+        "match_date": "2025-12-07",
+        "selected_version": "12/05/2025",
+        "selected_version_iso": "2025-12-05"
+      },
+      {
+        "external_match_id": "492141",
+        "season_id": 2025,
+        "age_group_id": 18,
+        "match_date": "2026-01-11",
+        "selected_version": "01/09/2026",
+        "selected_version_iso": "2026-01-09"
+      },
+      {
+        "external_match_id": "492142",
+        "season_id": 2025,
+        "age_group_id": 18,
+        "match_date": "2026-01-11",
+        "selected_version": "01/09/2026",
+        "selected_version_iso": "2026-01-09"
+      },
+      {
+        "external_match_id": "494347",
+        "season_id": 2025,
+        "age_group_id": 18,
+        "match_date": "2026-02-22",
+        "selected_version": "02/20/2026",
+        "selected_version_iso": "2026-02-20"
+      },
+      {
+        "external_match_id": "494348",
+        "season_id": 2025,
+        "age_group_id": 18,
+        "match_date": "2026-02-22",
+        "selected_version": "02/20/2026",
+        "selected_version_iso": "2026-02-20"
+      },
+      {
+        "external_match_id": "492154",
+        "season_id": 2025,
+        "age_group_id": 18,
+        "match_date": "2026-02-22",
+        "selected_version": "02/20/2026",
+        "selected_version_iso": "2026-02-20"
+      },
+      {
+        "external_match_id": "492155",
+        "season_id": 2025,
+        "age_group_id": 18,
+        "match_date": "2026-02-22",
+        "selected_version": "02/20/2026",
+        "selected_version_iso": "2026-02-20"
+      },
+      {
+        "external_match_id": "492161",
+        "season_id": 2025,
+        "age_group_id": 18,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      },
+      {
+        "external_match_id": "492163",
+        "season_id": 2025,
+        "age_group_id": 18,
+        "match_date": "2026-03-08",
+        "selected_version": "03/06/2026",
+        "selected_version_iso": "2026-03-06"
+      }
+    ]
+  },
+  "opponentLinkage": {
+    "u13Matches": 88,
+    "distinctU13MatchDates": 12,
+    "missingMatchDates": 0,
+    "sideEvidenceMatches": 88,
+    "exactNationalSideMatches": 88,
+    "normalizedSideFallbackMatches": 0,
+    "unmatchedSideMatches": 0,
+    "participantSideCounts": {
+      "hjemme": 797,
+      "ude": 781,
+      "NULL": 25
+    },
+    "uniqueOpponentPlayers": 280,
+    "link_counts": {
+      "ikke fundet i hentede aldersfilter-sider": 159,
+      "ID": 121
+    },
+    "gender_counts": {
+      "mand": 63,
+      "kvinde": 63,
+      "ikke afklaret": 154
+    },
+    "found_unfiltered_only": [],
+    "foundFilteredButClassOutsideU13": [],
+    "sample": [
+      {
+        "external_player_id": "336397",
+        "name": "Sebastian Lundberg",
+        "club": "Solrød Strand 7",
+        "example_match_id": "487676",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "335191",
+        "name": "Clara Reinhold Pedersen",
+        "club": "Solrød Strand 7",
+        "example_match_id": "487676",
+        "gender_status": "kvinde",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ID",
+        "matched_filtered_row": {
+          "rank": 30,
+          "member_number": "140724‑02",
+          "name": "Clara Reinhold Pedersen",
+          "club": "Solrød Strand",
+          "class": null,
+          "points": 1672,
+          "player_id": "335191"
+        },
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "335022",
+        "name": "William Denning Larsen",
+        "club": "Solrød Strand 7",
+        "example_match_id": "487676",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "329159",
+        "name": "Josefine Bille-Ahmt",
+        "club": "Solrød Strand 7",
+        "example_match_id": "487676",
+        "gender_status": "kvinde",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "337756",
+        "name": "Vincent Christian Fjeldborg-Ørntoft",
+        "club": "Hvidovre 4",
+        "example_match_id": "487679",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ID",
+        "matched_filtered_row": {
+          "rank": 12,
+          "member_number": "140511‑01",
+          "name": "Vincent Christian Fjeldborg-Ørntoft",
+          "club": "Hvidovre",
+          "class": null,
+          "points": 1958,
+          "player_id": "337756"
+        },
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "337482",
+        "name": "Nora Lawaetz Nørregaard",
+        "club": "Hvidovre 4",
+        "example_match_id": "487679",
+        "gender_status": "kvinde",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ID",
+        "matched_filtered_row": {
+          "rank": 56,
+          "member_number": "140401‑05",
+          "name": "Nora Lawaetz Nørregaard",
+          "club": "Hvidovre",
+          "class": null,
+          "points": 1503,
+          "player_id": "337482"
+        },
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "328651",
+        "name": "Jonathan Nørgaard",
+        "club": "Hvidovre 4",
+        "example_match_id": "487679",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "328385",
+        "name": "Alisha Sadiq Zhang",
+        "club": "Hvidovre 4",
+        "example_match_id": "487679",
+        "gender_status": "kvinde",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ID",
+        "matched_filtered_row": {
+          "rank": 9,
+          "member_number": "140308‑01",
+          "name": "Alisha Sadiq Zhang",
+          "club": "Hvidovre",
+          "class": null,
+          "points": 1779,
+          "player_id": "328385"
+        },
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "345642",
+        "name": "Lucas Zheng",
+        "club": "Hvidovre 4",
+        "example_match_id": "487679",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ID",
+        "matched_filtered_row": {
+          "rank": 36,
+          "member_number": "141113‑06",
+          "name": "Lucas Zheng",
+          "club": "Hvidovre",
+          "class": null,
+          "points": 1797,
+          "player_id": "345642"
+        },
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "337759",
+        "name": "Miabell Plum Holm",
+        "club": "Hvidovre 4",
+        "example_match_id": "487679",
+        "gender_status": "kvinde",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ID",
+        "matched_filtered_row": {
+          "rank": 17,
+          "member_number": "140715‑03",
+          "name": "Miabell Plum Holm",
+          "club": "Hvidovre",
+          "class": null,
+          "points": 1754,
+          "player_id": "337759"
+        },
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "341493",
+        "name": "Dagmar Trolle Boding",
+        "club": "Herlev/Hjorten 1",
+        "example_match_id": "487689",
+        "gender_status": "kvinde",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ID",
+        "matched_filtered_row": {
+          "rank": 34,
+          "member_number": "140706‑01",
+          "name": "Dagmar Trolle Boding",
+          "club": "Herlev/Hjorten",
+          "class": null,
+          "points": 1639,
+          "player_id": "341493"
+        },
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "343639",
+        "name": "Karl Emil Søborg Ladefoged",
+        "club": "Herlev/Hjorten 1",
+        "example_match_id": "487689",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ID",
+        "matched_filtered_row": {
+          "rank": 155,
+          "member_number": "141128‑01",
+          "name": "Karl Emil Søborg Ladefoged",
+          "club": "Herlev/Hjorten",
+          "class": null,
+          "points": 1534,
+          "player_id": "343639"
+        },
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "335481",
+        "name": "Ira Dhonde",
+        "club": "Herlev/Hjorten 1",
+        "example_match_id": "487689",
+        "gender_status": "kvinde",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ID",
+        "matched_filtered_row": {
+          "rank": 113,
+          "member_number": "140723‑01",
+          "name": "Ira Dhonde",
+          "club": "Herlev/Hjorten",
+          "class": null,
+          "points": 1364,
+          "player_id": "335481"
+        },
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "343151",
+        "name": "Pranav Mutyala",
+        "club": "Herlev/Hjorten 1",
+        "example_match_id": "487689",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "352813",
+        "name": "Johannes Sølund",
+        "club": "Herlev/Hjorten 1",
+        "example_match_id": "487689",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ID",
+        "matched_filtered_row": {
+          "rank": 199,
+          "member_number": "140525‑05",
+          "name": "Johannes Sølund",
+          "club": "Herlev/Hjorten",
+          "class": null,
+          "points": 1441,
+          "player_id": "352813"
+        },
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "335900",
+        "name": "Holger Troelsgaard Werling",
+        "club": "KMB2010 7",
+        "example_match_id": "487691",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ID",
+        "matched_filtered_row": {
+          "rank": 67,
+          "member_number": "140527‑02",
+          "name": "Holger Troelsgaard Werling",
+          "club": "KMB2010",
+          "class": null,
+          "points": 1679,
+          "player_id": "335900"
+        },
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "336150",
+        "name": "Emma Konnerup Jørgensen",
+        "club": "KMB2010 7",
+        "example_match_id": "487691",
+        "gender_status": "kvinde",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "341443",
+        "name": "Walther Waldemar Kjær",
+        "club": "KMB2010 7",
+        "example_match_id": "487691",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ID",
+        "matched_filtered_row": {
+          "rank": 129,
+          "member_number": "140415‑06",
+          "name": "Walther Waldemar Kjær",
+          "club": "KMB2010",
+          "class": null,
+          "points": 1572,
+          "player_id": "341443"
+        },
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "341781",
+        "name": "Isabella Victoria Jensen",
+        "club": "KMB2010 7",
+        "example_match_id": "487691",
+        "gender_status": "kvinde",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "335899",
+        "name": "Ebbe Rieks-Andersen",
+        "club": "KMB2010 7",
+        "example_match_id": "487691",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ID",
+        "matched_filtered_row": {
+          "rank": 111,
+          "member_number": "140922‑01",
+          "name": "Ebbe Rieks-Andersen",
+          "club": "KMB2010",
+          "class": null,
+          "points": 1593,
+          "player_id": "335899"
+        },
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "345640",
+        "name": "Lauge Bisgaard Storm",
+        "club": "Sorø 1",
+        "example_match_id": "487692",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ID",
+        "matched_filtered_row": {
+          "rank": 57,
+          "member_number": "141122‑02",
+          "name": "Lauge Bisgaard Storm",
+          "club": "Næstved-Herlufsholm",
+          "class": null,
+          "points": 1723,
+          "player_id": "345640"
+        },
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "355438",
+        "name": "Ida Meineche",
+        "club": "Sorø 1",
+        "example_match_id": "487692",
+        "gender_status": "kvinde",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ID",
+        "matched_filtered_row": {
+          "rank": 153,
+          "member_number": "140701‑04",
+          "name": "Ida Meineche",
+          "club": "Slagelse",
+          "class": null,
+          "points": 1285,
+          "player_id": "355438"
+        },
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "352101",
+        "name": "Christoffer Holland Falkenberg",
+        "club": "Sorø 1",
+        "example_match_id": "487692",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "340547",
+        "name": "Ida Lindegaard",
+        "club": "Sorø 1",
+        "example_match_id": "487692",
+        "gender_status": "kvinde",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "328859",
+        "name": "Magnus Harboe Christiansen",
+        "club": "Solrød Strand 9",
+        "example_match_id": "487694",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ID",
+        "matched_filtered_row": {
+          "rank": 403,
+          "member_number": "140207‑01",
+          "name": "Magnus Harboe Christiansen",
+          "club": "Solrød Strand",
+          "class": null,
+          "points": 1302,
+          "player_id": "328859"
+        },
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "344074",
+        "name": "Celina Flindt",
+        "club": "Solrød Strand 9",
+        "example_match_id": "487694",
+        "gender_status": "kvinde",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ID",
+        "matched_filtered_row": {
+          "rank": 116,
+          "member_number": "141018‑03",
+          "name": "Celina Flindt",
+          "club": "Solrød Strand",
+          "class": null,
+          "points": 1362,
+          "player_id": "344074"
+        },
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "332283",
+        "name": "Thomas Rytter Nielsen",
+        "club": "Solrød Strand 9",
+        "example_match_id": "487694",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "350971",
+        "name": "Caroline Toft",
+        "club": "Solrød Strand 9",
+        "example_match_id": "487694",
+        "gender_status": "kvinde",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "335915",
+        "name": "Asger Schmidt Noer",
+        "club": "Solrød Strand 9",
+        "example_match_id": "487694",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "357284",
+        "name": "Lucas Alexander Jakobsen",
+        "club": "Herlev/Hjorten 2",
+        "example_match_id": "487695",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "331731",
+        "name": "Alina Benjaminsen Arendrup",
+        "club": "Herlev/Hjorten 2",
+        "example_match_id": "487695",
+        "gender_status": "kvinde",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "341676",
+        "name": "Daniel Kell Ejstrup",
+        "club": "Herlev/Hjorten 2",
+        "example_match_id": "487695",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "343196",
+        "name": "Liv Christiansen Denkel",
+        "club": "Herlev/Hjorten 2",
+        "example_match_id": "487695",
+        "gender_status": "kvinde",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "353008",
+        "name": "Otto Lomborg Linneke",
+        "club": "Rudersdal 1",
+        "example_match_id": "487698",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "348223",
+        "name": "Lilje Sørensen",
+        "club": "Rudersdal 1",
+        "example_match_id": "487698",
+        "gender_status": "kvinde",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "339779",
+        "name": "Felix Rose Bøeck",
+        "club": "Rudersdal 1",
+        "example_match_id": "487698",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "343884",
+        "name": "Liva Larsen",
+        "club": "Rudersdal 1",
+        "example_match_id": "487698",
+        "gender_status": "kvinde",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ID",
+        "matched_filtered_row": {
+          "rank": 447,
+          "member_number": "140825‑03",
+          "name": "Liva Larsen",
+          "club": "Rudersdal",
+          "class": null,
+          "points": 1064,
+          "player_id": "343884"
+        },
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "326708",
+        "name": "Peter Quan Zhang",
+        "club": "Skovshoved 1",
+        "example_match_id": "487891",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "330713",
+        "name": "Siv Sofie Ors Nilsson",
+        "club": "Skovshoved 1",
+        "example_match_id": "487891",
+        "gender_status": "kvinde",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "332439",
+        "name": "Samuel Roldsgård Christensen",
+        "club": "Skovshoved 1",
+        "example_match_id": "487891",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "335114",
+        "name": "Sommer Laubjerg",
+        "club": "Skovshoved 1",
+        "example_match_id": "487891",
+        "gender_status": "kvinde",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "335385",
+        "name": "Nor Worsøe",
+        "club": "Skovshoved 1",
+        "example_match_id": "487891",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "335467",
+        "name": "Matilda Fay Potalivo",
+        "club": "Skovshoved 2",
+        "example_match_id": "488004",
+        "gender_status": "kvinde",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "330136",
+        "name": "Carl-Emil Ring Norup",
+        "club": "Skovshoved 2",
+        "example_match_id": "488004",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "346336",
+        "name": "Cassandra Jelle",
+        "club": "Skovshoved 2",
+        "example_match_id": "488004",
+        "gender_status": "kvinde",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ID",
+        "matched_filtered_row": {
+          "rank": 298,
+          "member_number": "140908‑07",
+          "name": "Cassandra Jelle",
+          "club": "Skovshoved",
+          "class": null,
+          "points": 1129,
+          "player_id": "346336"
+        },
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "330127",
+        "name": "Jonas Hededam Frøhlich",
+        "club": "Skovshoved 2",
+        "example_match_id": "488004",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "343279",
+        "name": "Yvonne Yihan Li",
+        "club": "Gentofte 3",
+        "example_match_id": "490145",
+        "gender_status": "kvinde",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "336954",
+        "name": "Arnav Pundhir",
+        "club": "Gentofte 3",
+        "example_match_id": "490145",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "341892",
+        "name": "Billie-Betty Agger-McMenomy",
+        "club": "Gentofte 3",
+        "example_match_id": "490145",
+        "gender_status": "kvinde",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      },
+      {
+        "external_player_id": "355680",
+        "name": "Mads Egebart",
+        "club": "Gentofte 3",
+        "example_match_id": "490145",
+        "gender_status": "mand",
+        "side_source": "national match team-name exact",
+        "filtered_link": "ikke fundet i hentede aldersfilter-sider",
+        "matched_filtered_row": null,
+        "found_in_sampled_unfiltered_only": false,
+        "sampled_unfiltered_row": null,
+        "filtered_class": null
+      }
+    ],
+    "coverage_pages": {
+      "filter": "agegroupid=4, list=288, param M+K",
+      "fetched": 26,
+      "total": 26,
+      "by_param": {
+        "M": {
+          "fetched": 18,
+          "total": 18
+        },
+        "K": {
+          "fetched": 8,
+          "total": 8
+        }
+      }
+    },
+    "rows_in_fetched_pages": 2526
+  },
+  "historyComparison": {
+    "discipline": "raw:HS (historik-db)",
+    "comparison_rows": [
+      {
+        "ranking_player": "Jonathan W. Hansen",
+        "ranking_player_id": "93216",
+        "ranking_points": 3310,
+        "local_player_id": 226,
+        "identity_match_method": "exact normalized name",
+        "history": {
+          "discipline": "raw:HS",
+          "version_date": "2026-09-02",
+          "points": 3314,
+          "nembadminton_member_id": "16220",
+          "link_confidence": "exact_name",
+          "link_method": "normalized_exact_name"
+        },
+        "delta_vs_history": -4
+      },
+      {
+        "ranking_player": "Jonas Trusell-Jensen",
+        "ranking_player_id": "92509",
+        "ranking_points": 3299,
+        "local_player_id": 228,
+        "identity_match_method": "exact normalized name",
+        "history": {
+          "discipline": "raw:HS",
+          "version_date": "2026-09-02",
+          "points": 3271,
+          "nembadminton_member_id": "16217",
+          "link_confidence": "exact_name",
+          "link_method": "normalized_exact_name"
+        },
+        "delta_vs_history": 28
+      },
+      {
+        "ranking_player": "Morten Aarøe",
+        "ranking_player_id": "13216",
+        "ranking_points": 3244,
+        "local_player_id": 215,
+        "identity_match_method": "exact normalized name",
+        "history": {
+          "discipline": "raw:HS",
+          "version_date": "2026-09-02",
+          "points": 3240,
+          "nembadminton_member_id": "16184",
+          "link_confidence": "exact_name",
+          "link_method": "normalized_exact_name"
+        },
+        "delta_vs_history": 4
+      }
+    ],
+    "comparable_count": 3,
+    "interpretation": "Kun direkte/entydige navne-ID-kæder med rå:HS-snapshot sammenlignes. Tre stikprøver kan vise forskelle, men ikke bevise en generel/systematisk skalaforskel."
+  },
+  "localDbSummary": {
+    "matches": 271,
+    "dated": 266,
+    "distinctDates": 12,
+    "rankingHistory": {
+      "disciplineCounts": [
+        {
+          "discipline": "double",
+          "rows": 4298,
+          "versions": 14,
+          "oldest": "2025-08-02",
+          "newest": "2026-09-02"
+        },
+        {
+          "discipline": "mix",
+          "rows": 3294,
+          "versions": 14,
+          "oldest": "2025-08-02",
+          "newest": "2026-09-02"
+        },
+        {
+          "discipline": "raw:DD",
+          "rows": 3410,
+          "versions": 49,
+          "oldest": "2022-08-01",
+          "newest": "2026-09-02"
+        },
+        {
+          "discipline": "raw:DS",
+          "rows": 2356,
+          "versions": 49,
+          "oldest": "2022-08-01",
+          "newest": "2026-09-02"
+        },
+        {
+          "discipline": "raw:HD",
+          "rows": 6923,
+          "versions": 49,
+          "oldest": "2022-08-01",
+          "newest": "2026-09-02"
+        },
+        {
+          "discipline": "raw:HS",
+          "rows": 5377,
+          "versions": 49,
+          "oldest": "2022-08-01",
+          "newest": "2026-09-02"
+        },
+        {
+          "discipline": "raw:LEVEL",
+          "rows": 3585,
+          "versions": 22,
+          "oldest": "2022-08-01",
+          "newest": "2024-07-01"
+        },
+        {
+          "discipline": "raw:MxD",
+          "rows": 3089,
+          "versions": 49,
+          "oldest": "2022-08-01",
+          "newest": "2026-09-02"
+        },
+        {
+          "discipline": "raw:MxH",
+          "rows": 4992,
+          "versions": 49,
+          "oldest": "2022-08-01",
+          "newest": "2026-09-02"
+        },
+        {
+          "discipline": "single",
+          "rows": 3040,
+          "versions": 14,
+          "oldest": "2025-08-02",
+          "newest": "2026-09-02"
+        }
+      ],
+      "distinctLinkedPlayersWithSnapshots": 349
+    }
+  },
+  "filterComparison": {
+    "filteredOpponentCounts": {
+      "ikke fundet i hentede aldersfilter-sider": 159,
+      "ID": 121
+    },
+    "opponentsFoundOnlyInSampledUnfiltered": 0
+  }
+}
+
+## Fuldhentningsplan
+
+{
+  "list_count": 6,
+  "version_count_from_match_dates": 11,
+  "requests_lower_bound": 66,
+  "minimum_pause_seconds_lower_bound": 132,
+  "minimum_pause_hours_lower_bound": 0.037,
+  "observed_gsb_only_pages_sum_for_six_lists": 9,
+  "gsb_only_requests_for_each_used_version_if_all_six_GSB_page_ranges_were_complete": 99,
+  "gsb_only_pause_hours_at_2_seconds": 0.055,
+  "observed_unfiltered_pages_current_version": [
+    {
+      "list_id": "288",
+      "param": "M",
+      "pages": 99,
+      "source": "Opgave 150 første response"
+    },
+    {
+      "list_id": "288",
+      "param": "K",
+      "pages": 37,
+      "source": "Opgave 151 første response"
+    },
+    {
+      "list_id": "289",
+      "param": "M",
+      "pages": 136,
+      "source": "Opgave 150 første response"
+    },
+    {
+      "list_id": "289",
+      "param": "K",
+      "pages": 53,
+      "source": "Opgave 151 første response"
+    },
+    {
+      "list_id": "292",
+      "param": "M",
+      "pages": 41,
+      "source": "Opgave 150 første response"
+    },
+    {
+      "list_id": "292",
+      "param": "K",
+      "pages": 33,
+      "source": "Opgave 151 første response"
+    }
+  ],
+  "observed_unfiltered_pages_sum": 399,
+  "unfiltered_page_requests_for_each_used_version_at_current_page_counts": 4389,
+  "unfiltered_page_requests_plus_six_version_lists_at_current_page_counts": 4395,
+  "unfiltered_pause_hours_at_2_seconds_including_six_version_lists": 2.44,
+  "observed_all_youth_pages_288M": {
+    "filter": "agegroupid=21, param=M",
+    "pages": 72,
+    "source": "Opgave 151 response"
+  },
+  "full_expected_winner_estimate": "Ikke beregnelig endnu: agegroupid=21 blev kun målt for 288/M, og svarene viste ingen klasseetiketter. De 72 sider kan derfor ikke antages at være hele ungdommen. GSB-filteret udelader modstandere. Før fuld kørsel skal det valgte filter bekræftes og page_count måles for alle seks liste/køn-kombinationer samt relevante snapshots. Beregn derefter Σ(page_count[list,param,version]) + versionslistekald; pausetid = samlet antal kald × mindst 2 sekunder.",
+  "gsb_only_estimate_caveat": "99 sidekald (9 observerede sider × 11 brugte versioner) er kun et GSB-afgrænset regneeksempel, ikke fuld dækning. 289/M havde 3 sider, men kun side 0 blev hentet i denne prøve.",
+  "unfiltered_estimate_caveat": "4.395 kald er et aktuelt, ufiltreret regneeksempel (399 målte aktuelle sider × 11 versioner + seks versionlistekald). Sidetal kan ændre sig pr. historisk version; det er ikke et bindende totalestimat.",
+  "retrieval_logic": {
+    "modes": [
+      "--collect-probes (netværk; eksplicit opt-in)",
+      "--continue-u13-pages (netværk; eksplicit opt-in)",
+      "--reanalyze-saved (offline; ingen netværk)"
+    ],
+    "host": "badmintonplayer.dk alene",
+    "credentials": "credentials: omit; ingen cookies",
+    "pacing_ms": 2100,
+    "request_cap": 100,
+    "checkpoint": "Gem råsvar og requestfelter/hash efter hvert svar; genoptag kun manglende pageindex-nøgler.",
+    "dedupe_key": [
+      "rankinglistid",
+      "param",
+      "rankinglistversiondate",
+      "pageindex"
+    ],
+    "row_key": [
+      "rankinglistid",
+      "param",
+      "rankinglistversiondate",
+      "player_id"
+    ],
+    "row_policy": "Bevar rå klasseetiket, rang, point, profil-ID, navn og klub; valider at alle sider for et snapshot er hentet, før snapshot markeres komplet."
+  },
+  "schedule": "Først hent/valider versionslister, så side 0 for hvert liste×køn×filter for at måle page_count; derefter hent sider sekventielt med mindst 2 s mellemrum. Efter hver side: hash, råsvar og checkpoint. Stop på botværn eller tre fejl i træk; genoptag fra manglende sider uden dubletter.",
+  "separate_database": "ranking_points(list_id,param,version_date,player_id,member_number,name,club,class,rank,points,fetched_at,response_sha256)",
+  "expected_winner_rule": "For hver kamp og disciplin vælg seneste snapshot med version_date <= match_date; kræv point på begge sider. Manglende dato/ID/klub-match forbliver eksplicit uafklaret."
+}
+
+## Databaser
+
+{
+  "before": {
+    "gsb-statistik-normalized.db": "49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E",
+    "liga-landskab.db": "9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C",
+    "rangliste-historik.db": "6E9516DB643F88F88946A82CB76EC3B5C686C7D548ABF7084B3F60EE3DA0316F",
+    "national-spillere.db": "1E27C5D81CCE8E2D656DF2C924E4BF6931EEAAF86348ADD384AB6D58F7CBAC3E"
+  },
+  "after": {
+    "gsb-statistik-normalized.db": "49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E",
+    "liga-landskab.db": "9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C",
+    "rangliste-historik.db": "6E9516DB643F88F88946A82CB76EC3B5C686C7D548ABF7084B3F60EE3DA0316F",
+    "national-spillere.db": "1E27C5D81CCE8E2D656DF2C924E4BF6931EEAAF86348ADD384AB6D58F7CBAC3E"
+  },
+  "unchanged": true,
+  "read_only": [
+    {
+      "database": "gsb-statistik-normalized.db",
+      "readOnly": true,
+      "opened_and_readable": true
+    },
+    {
+      "database": "liga-landskab.db",
+      "readOnly": true,
+      "opened_and_readable": true
+    },
+    {
+      "database": "rangliste-historik.db",
+      "readOnly": true,
+      "opened_and_readable": true
+    },
+    {
+      "database": "national-spillere.db",
+      "readOnly": true,
+      "opened_and_readable": true
+    }
+  ]
+}
+
+## Spørgsmål
+
+5 af 271 kampdatoer er tomme/ugyldige og kan ikke tildeles en version.
+Ikke alle GSB-filtrerede sider for alle seks lister blev hentet; sideantal og stikprøve er skilt ad i rapporten.
+Et aldersfilter gav rækker uden synlig klasseetiket; fortolkningen af det ID er derfor uafklaret.
+agegroupid=5 og øvrige afprøvede IDs: 4→ingen klasseetiketter; 5→ingen klasseetiketter; 2→ingen klasseetiketter; 3→ingen klasseetiketter; 6→ingen klasseetiketter; 21→ingen klasseetiketter. Hvis etiketterne krydser aldersgrupper, er den interne API-semantik ikke udledt.
+Modstanderlink: 280 unikke spillere; 121 fundet på ID i de hentede U13-filterlister, 0 kun navn+klub og 159 ikke fundet. Ingen af de sidste blev fundet i de hentede, ufiltrerede første-sider; de svar er kun stikprøver og afklarer ikke fravær fra hele ranglisten.
+agegroupid=21 gav 72 sider på 288/M, men kun side 0 blev hentet, og klasseetiketterne var tomme. Det er ikke bekræftet, at filteret dækker alle ungdomsspillere.
+pointsto=1500 gav 59 sider, men udelukker spillere over grænsen; agefrom=9/ageto=19 gav 74 sider og viste også SEN-klasser. Ingen af dem kan bruges som dokumenteret komplet ungdomsfilter.
+Den særskilte prøve agegroupid=5 med gender=K på liste 287 blev ikke sendt, før prøvekørslerne blev stoppet; den kombination er uafklaret. pointsfrom og birthdatefromstring/birthdatetostring blev ikke afprøvet.
+GSB-filteret 289/M har 3 sider, men kun side 0 blev hentet.
+Ældre versionssvar blev undersøgt til seasonid=2019 (ældste daterede version 01/07/2019); sæsoner før 2019 er ikke undersøgt.
+5 af 271 ungdomskampe har ingen brugbar kampdato og kan ikke tildeles en ranglisteversion.
+Kun direkte/entydige navne-ID-kæder med rå:HS-snapshot sammenlignes. Tre stikprøver kan vise forskelle, men ikke bevise en generel/systematisk skalaforskel.
