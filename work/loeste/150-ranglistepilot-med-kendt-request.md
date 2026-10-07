@@ -67,10 +67,40 @@ Skriv i "Spørgsmål". Gæt ikke på felters betydning; skriv, at det er ukendt,
 `arbejde/150-ranglistepilot`, fra `main`. Christoffer opretter grenen og committer selv. Codex kører kun læsende git, ustaged, ingen `git add -A`, ingen push, ingen Co-Authored-By, ingen sub-agents.
 
 ## Spørgsmål
-(Tomt.)
+- Bekræftet: `rankinglistversiondate` skal sendes som `Versions[].Value` (fx `10/01/2026`, måned/dag/år). Det gav HTTP 200 og ændrede 58 af 99 fælles spilleres rang/point mod baseline; ét ID kom ind og ét ud. Den tidligere visningstekst `30-09-2026` gav tre HTTP 500-svar. Datoformatet er den stærkeste forklaring, men serverfejlens præcise årsag er ikke dokumenteret.
+- `agegroupid=5` + `gender=K` ændrede alle 100 ID'er mod liste 287's baseline-side, men klasseetiketterne omfattede også `U17 E`. Kan parameterens præcise semantik fastslås, og hvorfor kom U17 med? Gæt ikke.
+- GSB-filteret viser fire sider, men kun sideindex 0–2 blev hentet inden for 20-kaldsgrænsen. De 8 GSB-spillere, som ikke blev fundet i de hentede svar, kan være på den uhentede sideindex 3; de er derfor ikke dokumenteret fraværende fra ranglisten.
+- Liste 287 returnerede profil-ID på alle 300 hentede GSB-rækker, men ingen numeriske pointværdier i pointkolonnen. Liste 288 har point; det er ikke afklaret, hvilken liste/parametervariant der er den rigtige kilde til point for alle relevante ungdomsspillere/modstandere.
+- `seasonid=2022` returnerede daterede versioner fra 1. juli 2022 til 19. juni 2023. Ældre seasonid'er end 2022 er ikke afprøvet; hvor langt historikken går før dette, er ukendt.
+- Samlet forespørgselsbudget er brugt: 20/20. Der er ikke sendt kald for GSB-sideindex 3 eller sæsoner før 2022.
 
 ## Tilbagefald
 Slet de nye filer, inklusive `150-raa-svar/`. Ingen database er berørt.
 
 ## Resultat
-(Udfyldes af Codex.)
+### Rute og baseline
+- Frisk GET af `https://badmintonplayer.dk/DBF/Ranglister/` gav HTTP 200, HTML på 24.149 bytes. `SR_CallbackContext` blev udtrukket til requesten; værdien blev redigeret fra den gemte HTML og requestlog. Ingen cookies blev sendt.
+- Den kendte POST til `GetRankingListPlayers` (liste 288, `param=M`, sæson 2026, side 0) gav HTTP 200, JSON på 81.492 bytes og rigtig rangliste-HTML. Ruten er således bekræftet for baseline.
+- Svarobjektets felter omfatter `__type`, `Html`, `Versions`, `PlayerID`, `PlayerNumber`, `PlayerName`. Liste 288 har 100 rækker på side 0; HTML-linkene går til sidste `pageindex=98`, altså 99 sider ved nulbaseret indeksering. Det gælder kun liste 288 / `param=M` / seasonid 2026.
+- Versionslisten for seasonid 2026 havde 42 elementer: 41 daterede værdier samt “Seneste”, fra `07/01/2026` til `10/07/2026`. Fem faktiske baseline-rækker (placering, medlemsnummer, spiller, klub, klasse, point, profil-ID) findes i JSON-rapporten. Fx Anders Antonsen: nr. 1, Aarhus AB, SEN E, 4.975 point, profil-ID `79451`; medlemsnummeret er separat.
+- Fem faktiske baseline-rækker (placering, medlemsnummer, spiller, klub, klasse, point, spillerprofil-ID) står i `statistik/results/150-ranglistepilot.json` og rapporten. Fx Anders Antonsen: nr. 1, Aarhus AB, SEN E, 4.975 point, profil-ID `79451`; medlemsnummeret er et separat felt.
+
+### Stop og filtre
+- I alt 20/20 forespørgsler: 17 HTTP 200 og 3 HTTP 500. Hvert kald er logget med ændrede requestfelter, status, bytes og SHA-256 i JSON-rapporten. Ingen CAPTCHA, bottekst, cookies eller bot-token blev mødt. De tre 500-svar var samme 91-byte JSON-fejl.
+- `rankinglistversiondate=10/01/2026` på liste 288 / `param=M` gav 200 og 100 rækker. 99 ID'er var fælles med baseline; 58 af de fælles havde ændret rang og/eller point, og ét ID blev udskiftet. Datoen `12/31/2025` med `seasonid=2025` gav også 200 og ændrede 89 af 90 fælles spilleres rang/point mod sæsonens standardrespons. `30-09-2026` (visningsteksten) gav tre 500-svar; forskellen i datoformat er den stærkeste forklaring, men den præcise serverårsag er ikke bevist.
+- Paginering: `pageindex=1` gav 200 og 100 rækker; ingen spiller-ID'er overlappede side 0. Pagineringen virker, og side 2 har 100 rækker. Liste 287 ufiltreret viser 212 sider.
+- `agegroupid=5`, `gender=K`, liste 287 gav 100 rækker og ændrede alle ID'er mod ufiltreret sides første 100. Klasseetiketterne var `U15 A`, `U15 E`, `U15 E-M`, `U15 M` og `U17 E`; udvalget ændres, men ID 5's præcise semantik er ikke afklaret, og U17-resultatet er overraskende.
+- `clubid=1093`: tre hentede sider på liste 287 gav 300 unikke rækker. Alle viste klubnavne var `Gladsaxe Søborg` eller `Gladsaxe Søborg (g)`; alle 300 havde profil-ID. Ingen havde en numerisk pointværdi i pointkolonnen. Svaret viser fire sider i alt; sideindex 3 blev ikke hentet, fordi budgettet på 20 kald var nået.
+- `regionid=8` gav 100 rækker og 15 distinkte klubnavne; mod ufiltreret liste 287 var 36 ID'er fælles, 64 kom ind og 64 ud, og rang ændredes for alle 36 fælles. Det er foreneligt med at filteret virker, men region-ID'ets officielle betydning er ikke uafhængigt verificeret.
+- Liste 289 og 292 med `param=M` gav begge HTTP 200 og 100 rækker med point og profil-ID. HTML-linkene antydede hhv. 136 og 41 sider.
+- `seasonid=2025` gav 159 versionselementer (158 daterede) fra `07/01/2025` til `06/29/2026`. `seasonid=2022` gav 138 elementer (137 daterede) fra `07/01/2022` til `06/19/2023`. Ældre end 1. juli 2022 blev ikke afprøvet.
+
+### ID og fuld hentning
+- Hver række indeholder et separat `member_number` og et numerisk profil-ID fra `VisSpiller/#...`. Af 20 GSB-spillere blev 12 koblet på ID, 0 kun på navn+klub og 8 ikke fundet i de hentede GSB-svar. Af 20 modstandere blev 1 koblet på ID, 0 kun på navn+klub og 19 ikke fundet i alle hentede svar. GSB-tallet er ufuldstændigt, fordi sideindex 3 af fire ikke blev hentet; modstanderresultatet er begrænset til de 20 kampstikprøver og de hentede ranglister/sider. “Ikke fundet” betyder ikke fravær andre steder.
+- ID-kobling virker direkte for nogle poster, men det er ikke bevist at alle ID-felter er samme identitetsrum eller at alle kan kobles. Navn+klub gav ingen ekstra entydige kandidater i stikprøverne.
+- Fuldhentningens præcise requesttal er ukendt. Målte versionstal for liste 288 var 41 daterede snapshots i seasonid 2026, 158 i 2025 og 137 i 2022; observerede sidetal varierede fra 41 til 212 på prøvede kombinationer. Før et samlet estimat skal versioner og sider tælles pr. liste/sæson/filter, hvorefter summen er liste × snapshot × side plus versionskald. Hent sekventielt med mindst 2 sekunders mellemrum; gem/hash hvert svar og checkpoint pr. liste/version/side. Brug en ny separat database. “Forventet vinder” kræver point for begge sider i hver kamp pr. disciplin fra seneste snapshot på eller før kampdatoen; uløste ID-/navne-/klub-koblinger forbliver manglende.
+
+### Kontrol
+- Fire databaser blev åbnet `readOnly`; SHA-256 før/efter er identisk med de forventede værdier. `git status --short statistik/data/` var tomt.
+- `node --check statistik/scripts/150-ranglistepilot.mjs` bestod; `git diff --check` gav ingen whitespace-fejl (Git viste kun LF→CRLF-advarsler på de allerede ændrede 136-resultatfiler).
+- Rå-svar og log indeholder præcis 20 kald (17×200, 3×500), hver med status, bytes, hash og requestfelter. Ingen cookies eller redirects blev brugt; ingen andre værter blev kontaktet. Ingen kald blev sendt efter #20.
