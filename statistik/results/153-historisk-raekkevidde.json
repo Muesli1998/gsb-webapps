@@ -1,0 +1,7637 @@
+{
+  "task": 153,
+  "request_limit": 35,
+  "requests": [
+    {
+      "number": 1,
+      "phase": 1,
+      "label": "frisk kontekst",
+      "method": "GET",
+      "url": "https://badmintonplayer.dk/DBF/Ranglister/",
+      "started_at": "2026-10-07T20:29:36.119Z",
+      "request_fields": null,
+      "status": 200,
+      "bytes": 24149,
+      "response_sha256": "4b9f17316eb03d9d5604d3e24ca1c1ad9ea3f37954b5800d074cad2074c1dd2c",
+      "content_type": "text/html; charset=utf-8",
+      "location": null,
+      "saved_response": "statistik/results/153-raa-svar/001.gz",
+      "saved_response_sha256": "ac6ead42ef950d300a70fc22c8bf2ba2d517bfc42db4cc12fd1cff4c1b81cd2f",
+      "rows": null,
+      "completed_at": "2026-10-07T20:29:36.227Z",
+      "elapsed_ms": 108
+    },
+    {
+      "number": 2,
+      "phase": 1,
+      "label": "versions 2018 288 M",
+      "method": "POST",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "started_at": "2026-10-07T20:29:38.220Z",
+      "request_fields": {
+        "callbackcontextkey": "[REDACTED]",
+        "rankinglistagegroupid": "15",
+        "rankinglistid": "288",
+        "seasonid": "2018",
+        "rankinglistversiondate": "",
+        "agegroupid": "",
+        "classid": "",
+        "gender": "",
+        "clubid": "",
+        "searchall": false,
+        "regionid": "",
+        "pointsfrom": "",
+        "pointsto": "",
+        "rankingfrom": "",
+        "rankingto": "",
+        "birthdatefromstring": "",
+        "birthdatetostring": "",
+        "agefrom": "",
+        "ageto": "",
+        "playerid": "",
+        "param": "M",
+        "pageindex": "0",
+        "sortfield": "0",
+        "getversions": true,
+        "getplayer": true
+      },
+      "status": 200,
+      "bytes": 87561,
+      "response_sha256": "417b44493cfb748ac0fd36ae4d5d84c7369891bfd8a65c739e72e37549bde8de",
+      "content_type": "application/json; charset=utf-8",
+      "location": null,
+      "saved_response": "statistik/results/153-raa-svar/002.gz",
+      "saved_response_sha256": "417b44493cfb748ac0fd36ae4d5d84c7369891bfd8a65c739e72e37549bde8de",
+      "rows": 100,
+      "completed_at": "2026-10-07T20:29:38.693Z",
+      "elapsed_ms": 473
+    },
+    {
+      "number": 3,
+      "phase": 1,
+      "label": "GSB ældste 2018 07/01/2018",
+      "method": "POST",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "started_at": "2026-10-07T20:29:40.321Z",
+      "request_fields": {
+        "callbackcontextkey": "[REDACTED]",
+        "rankinglistagegroupid": "15",
+        "rankinglistid": "288",
+        "seasonid": "2018",
+        "rankinglistversiondate": "07/01/2018",
+        "agegroupid": "",
+        "classid": "",
+        "gender": "",
+        "clubid": "1093",
+        "searchall": false,
+        "regionid": "",
+        "pointsfrom": "",
+        "pointsto": "",
+        "rankingfrom": "",
+        "rankingto": "",
+        "birthdatefromstring": "",
+        "birthdatetostring": "",
+        "agefrom": "",
+        "ageto": "",
+        "playerid": "",
+        "param": "M",
+        "pageindex": "0",
+        "sortfield": "0",
+        "getversions": true,
+        "getplayer": true
+      },
+      "status": 200,
+      "bytes": 32856,
+      "response_sha256": "6e049ab82cae0c5f9cdb7b080c83103ca600d899b3569822d9ab139963a7270f",
+      "content_type": "application/json; charset=utf-8",
+      "location": null,
+      "saved_response": "statistik/results/153-raa-svar/003.gz",
+      "saved_response_sha256": "6e049ab82cae0c5f9cdb7b080c83103ca600d899b3569822d9ab139963a7270f",
+      "rows": 28,
+      "completed_at": "2026-10-07T20:29:40.464Z",
+      "elapsed_ms": 143
+    },
+    {
+      "number": 4,
+      "phase": 1,
+      "label": "versions 2017 288 M",
+      "method": "POST",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "started_at": "2026-10-07T20:29:42.422Z",
+      "request_fields": {
+        "callbackcontextkey": "[REDACTED]",
+        "rankinglistagegroupid": "15",
+        "rankinglistid": "288",
+        "seasonid": "2017",
+        "rankinglistversiondate": "",
+        "agegroupid": "",
+        "classid": "",
+        "gender": "",
+        "clubid": "",
+        "searchall": false,
+        "regionid": "",
+        "pointsfrom": "",
+        "pointsto": "",
+        "rankingfrom": "",
+        "rankingto": "",
+        "birthdatefromstring": "",
+        "birthdatetostring": "",
+        "agefrom": "",
+        "ageto": "",
+        "playerid": "",
+        "param": "M",
+        "pageindex": "0",
+        "sortfield": "0",
+        "getversions": true,
+        "getplayer": true
+      },
+      "status": 200,
+      "bytes": 2476,
+      "response_sha256": "489e54afcdfe1e27ab6cbf6798f40d854d6bf3db0f0848a006b0509207d9d6d3",
+      "content_type": "application/json; charset=utf-8",
+      "location": null,
+      "saved_response": "statistik/results/153-raa-svar/004.gz",
+      "saved_response_sha256": "489e54afcdfe1e27ab6cbf6798f40d854d6bf3db0f0848a006b0509207d9d6d3",
+      "rows": 0,
+      "completed_at": "2026-10-07T20:29:42.613Z",
+      "elapsed_ms": 191
+    },
+    {
+      "number": 5,
+      "phase": 1,
+      "label": "versions 2016 288 M",
+      "method": "POST",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "started_at": "2026-10-07T20:29:44.522Z",
+      "request_fields": {
+        "callbackcontextkey": "[REDACTED]",
+        "rankinglistagegroupid": "15",
+        "rankinglistid": "288",
+        "seasonid": "2016",
+        "rankinglistversiondate": "",
+        "agegroupid": "",
+        "classid": "",
+        "gender": "",
+        "clubid": "",
+        "searchall": false,
+        "regionid": "",
+        "pointsfrom": "",
+        "pointsto": "",
+        "rankingfrom": "",
+        "rankingto": "",
+        "birthdatefromstring": "",
+        "birthdatetostring": "",
+        "agefrom": "",
+        "ageto": "",
+        "playerid": "",
+        "param": "M",
+        "pageindex": "0",
+        "sortfield": "0",
+        "getversions": true,
+        "getplayer": true
+      },
+      "status": 200,
+      "bytes": 2476,
+      "response_sha256": "d931d3fb06cd37104dda0fc957cfbd3564b2d45680b08d9bad4ce695b18a3267",
+      "content_type": "application/json; charset=utf-8",
+      "location": null,
+      "saved_response": "statistik/results/153-raa-svar/005.gz",
+      "saved_response_sha256": "d931d3fb06cd37104dda0fc957cfbd3564b2d45680b08d9bad4ce695b18a3267",
+      "rows": 0,
+      "completed_at": "2026-10-07T20:29:44.587Z",
+      "elapsed_ms": 65
+    },
+    {
+      "number": 6,
+      "phase": 1,
+      "label": "versions 2015 288 M",
+      "method": "POST",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "started_at": "2026-10-07T20:29:46.623Z",
+      "request_fields": {
+        "callbackcontextkey": "[REDACTED]",
+        "rankinglistagegroupid": "15",
+        "rankinglistid": "288",
+        "seasonid": "2015",
+        "rankinglistversiondate": "",
+        "agegroupid": "",
+        "classid": "",
+        "gender": "",
+        "clubid": "",
+        "searchall": false,
+        "regionid": "",
+        "pointsfrom": "",
+        "pointsto": "",
+        "rankingfrom": "",
+        "rankingto": "",
+        "birthdatefromstring": "",
+        "birthdatetostring": "",
+        "agefrom": "",
+        "ageto": "",
+        "playerid": "",
+        "param": "M",
+        "pageindex": "0",
+        "sortfield": "0",
+        "getversions": true,
+        "getplayer": true
+      },
+      "status": 200,
+      "bytes": 2476,
+      "response_sha256": "cf61d1684fd3cfbb1e59b01a05fef014119633102b8d74d1179ce33e4efdc39e",
+      "content_type": "application/json; charset=utf-8",
+      "location": null,
+      "saved_response": "statistik/results/153-raa-svar/006.gz",
+      "saved_response_sha256": "cf61d1684fd3cfbb1e59b01a05fef014119633102b8d74d1179ce33e4efdc39e",
+      "rows": 0,
+      "completed_at": "2026-10-07T20:29:46.677Z",
+      "elapsed_ms": 54
+    },
+    {
+      "number": 7,
+      "phase": 1,
+      "label": "versions 2014 288 M",
+      "method": "POST",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "started_at": "2026-10-07T20:29:48.723Z",
+      "request_fields": {
+        "callbackcontextkey": "[REDACTED]",
+        "rankinglistagegroupid": "15",
+        "rankinglistid": "288",
+        "seasonid": "2014",
+        "rankinglistversiondate": "",
+        "agegroupid": "",
+        "classid": "",
+        "gender": "",
+        "clubid": "",
+        "searchall": false,
+        "regionid": "",
+        "pointsfrom": "",
+        "pointsto": "",
+        "rankingfrom": "",
+        "rankingto": "",
+        "birthdatefromstring": "",
+        "birthdatetostring": "",
+        "agefrom": "",
+        "ageto": "",
+        "playerid": "",
+        "param": "M",
+        "pageindex": "0",
+        "sortfield": "0",
+        "getversions": true,
+        "getplayer": true
+      },
+      "status": 200,
+      "bytes": 2476,
+      "response_sha256": "69000821a0a050987c541663f2b73aff189dfdf7f2499842f59e67ad90cd490b",
+      "content_type": "application/json; charset=utf-8",
+      "location": null,
+      "saved_response": "statistik/results/153-raa-svar/007.gz",
+      "saved_response_sha256": "69000821a0a050987c541663f2b73aff189dfdf7f2499842f59e67ad90cd490b",
+      "rows": 0,
+      "completed_at": "2026-10-07T20:29:48.776Z",
+      "elapsed_ms": 53
+    },
+    {
+      "number": 8,
+      "phase": 1,
+      "label": "versions 2013 288 M",
+      "method": "POST",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "started_at": "2026-10-07T20:29:50.823Z",
+      "request_fields": {
+        "callbackcontextkey": "[REDACTED]",
+        "rankinglistagegroupid": "15",
+        "rankinglistid": "288",
+        "seasonid": "2013",
+        "rankinglistversiondate": "",
+        "agegroupid": "",
+        "classid": "",
+        "gender": "",
+        "clubid": "",
+        "searchall": false,
+        "regionid": "",
+        "pointsfrom": "",
+        "pointsto": "",
+        "rankingfrom": "",
+        "rankingto": "",
+        "birthdatefromstring": "",
+        "birthdatetostring": "",
+        "agefrom": "",
+        "ageto": "",
+        "playerid": "",
+        "param": "M",
+        "pageindex": "0",
+        "sortfield": "0",
+        "getversions": true,
+        "getplayer": true
+      },
+      "status": 200,
+      "bytes": 2476,
+      "response_sha256": "a727f024fdd38e06999d8e763aaa70141926d76e2e68b152262e8d7920329087",
+      "content_type": "application/json; charset=utf-8",
+      "location": null,
+      "saved_response": "statistik/results/153-raa-svar/008.gz",
+      "saved_response_sha256": "a727f024fdd38e06999d8e763aaa70141926d76e2e68b152262e8d7920329087",
+      "rows": 0,
+      "completed_at": "2026-10-07T20:29:50.875Z",
+      "elapsed_ms": 52
+    },
+    {
+      "number": 9,
+      "phase": 1,
+      "label": "versions 2012 288 M",
+      "method": "POST",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "started_at": "2026-10-07T20:29:52.924Z",
+      "request_fields": {
+        "callbackcontextkey": "[REDACTED]",
+        "rankinglistagegroupid": "15",
+        "rankinglistid": "288",
+        "seasonid": "2012",
+        "rankinglistversiondate": "",
+        "agegroupid": "",
+        "classid": "",
+        "gender": "",
+        "clubid": "",
+        "searchall": false,
+        "regionid": "",
+        "pointsfrom": "",
+        "pointsto": "",
+        "rankingfrom": "",
+        "rankingto": "",
+        "birthdatefromstring": "",
+        "birthdatetostring": "",
+        "agefrom": "",
+        "ageto": "",
+        "playerid": "",
+        "param": "M",
+        "pageindex": "0",
+        "sortfield": "0",
+        "getversions": true,
+        "getplayer": true
+      },
+      "status": 200,
+      "bytes": 2476,
+      "response_sha256": "84e47de7de8e35756f2c10fc90e2de5a236aa3325ebcb6dcadfffb5c42842cbc",
+      "content_type": "application/json; charset=utf-8",
+      "location": null,
+      "saved_response": "statistik/results/153-raa-svar/009.gz",
+      "saved_response_sha256": "84e47de7de8e35756f2c10fc90e2de5a236aa3325ebcb6dcadfffb5c42842cbc",
+      "rows": 0,
+      "completed_at": "2026-10-07T20:29:52.944Z",
+      "elapsed_ms": 20
+    },
+    {
+      "number": 10,
+      "phase": 1,
+      "label": "versions 2023 288 M",
+      "method": "POST",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "started_at": "2026-10-07T20:29:55.024Z",
+      "request_fields": {
+        "callbackcontextkey": "[REDACTED]",
+        "rankinglistagegroupid": "15",
+        "rankinglistid": "288",
+        "seasonid": "2023",
+        "rankinglistversiondate": "",
+        "agegroupid": "",
+        "classid": "",
+        "gender": "",
+        "clubid": "",
+        "searchall": false,
+        "regionid": "",
+        "pointsfrom": "",
+        "pointsto": "",
+        "rankingfrom": "",
+        "rankingto": "",
+        "birthdatefromstring": "",
+        "birthdatetostring": "",
+        "agefrom": "",
+        "ageto": "",
+        "playerid": "",
+        "param": "M",
+        "pageindex": "0",
+        "sortfield": "0",
+        "getversions": true,
+        "getplayer": true
+      },
+      "status": 200,
+      "bytes": 86860,
+      "response_sha256": "6057396b8f16b2556231ca82ca368cc19fd4a3eb5f6fe07af31066f477eb18d7",
+      "content_type": "application/json; charset=utf-8",
+      "location": null,
+      "saved_response": "statistik/results/153-raa-svar/010.gz",
+      "saved_response_sha256": "6057396b8f16b2556231ca82ca368cc19fd4a3eb5f6fe07af31066f477eb18d7",
+      "rows": 100,
+      "completed_at": "2026-10-07T20:29:55.375Z",
+      "elapsed_ms": 351
+    },
+    {
+      "number": 11,
+      "phase": 1,
+      "label": "versions 2024 288 M",
+      "method": "POST",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "started_at": "2026-10-07T20:29:57.125Z",
+      "request_fields": {
+        "callbackcontextkey": "[REDACTED]",
+        "rankinglistagegroupid": "15",
+        "rankinglistid": "288",
+        "seasonid": "2024",
+        "rankinglistversiondate": "",
+        "agegroupid": "",
+        "classid": "",
+        "gender": "",
+        "clubid": "",
+        "searchall": false,
+        "regionid": "",
+        "pointsfrom": "",
+        "pointsto": "",
+        "rankingfrom": "",
+        "rankingto": "",
+        "birthdatefromstring": "",
+        "birthdatetostring": "",
+        "agefrom": "",
+        "ageto": "",
+        "playerid": "",
+        "param": "M",
+        "pageindex": "0",
+        "sortfield": "0",
+        "getversions": true,
+        "getplayer": true
+      },
+      "status": 200,
+      "bytes": 88759,
+      "response_sha256": "1cdebdc62accb66db9049d327de17565be2f395f4b0dc2158bf791d7083616c3",
+      "content_type": "application/json; charset=utf-8",
+      "location": null,
+      "saved_response": "statistik/results/153-raa-svar/011.gz",
+      "saved_response_sha256": "1cdebdc62accb66db9049d327de17565be2f395f4b0dc2158bf791d7083616c3",
+      "rows": 100,
+      "completed_at": "2026-10-07T20:29:57.500Z",
+      "elapsed_ms": 375
+    },
+    {
+      "number": 12,
+      "phase": 1,
+      "label": "versions 2025 289 M",
+      "method": "POST",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "started_at": "2026-10-07T20:29:59.226Z",
+      "request_fields": {
+        "callbackcontextkey": "[REDACTED]",
+        "rankinglistagegroupid": "15",
+        "rankinglistid": "289",
+        "seasonid": "2025",
+        "rankinglistversiondate": "",
+        "agegroupid": "",
+        "classid": "",
+        "gender": "",
+        "clubid": "",
+        "searchall": false,
+        "regionid": "",
+        "pointsfrom": "",
+        "pointsto": "",
+        "rankingfrom": "",
+        "rankingto": "",
+        "birthdatefromstring": "",
+        "birthdatetostring": "",
+        "agefrom": "",
+        "ageto": "",
+        "playerid": "",
+        "param": "M",
+        "pageindex": "0",
+        "sortfield": "0",
+        "getversions": true,
+        "getplayer": true
+      },
+      "status": 200,
+      "bytes": 88731,
+      "response_sha256": "3661c6ac0834cb1a9b7daa21b172ec6ba7a1ea45c644923a097ffecbb7e6a12e",
+      "content_type": "application/json; charset=utf-8",
+      "location": null,
+      "saved_response": "statistik/results/153-raa-svar/012.gz",
+      "saved_response_sha256": "3661c6ac0834cb1a9b7daa21b172ec6ba7a1ea45c644923a097ffecbb7e6a12e",
+      "rows": 100,
+      "completed_at": "2026-10-07T20:29:59.515Z",
+      "elapsed_ms": 289
+    },
+    {
+      "number": 13,
+      "phase": 1,
+      "label": "versions 2025 292 M",
+      "method": "POST",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "started_at": "2026-10-07T20:30:01.326Z",
+      "request_fields": {
+        "callbackcontextkey": "[REDACTED]",
+        "rankinglistagegroupid": "15",
+        "rankinglistid": "292",
+        "seasonid": "2025",
+        "rankinglistversiondate": "",
+        "agegroupid": "",
+        "classid": "",
+        "gender": "",
+        "clubid": "",
+        "searchall": false,
+        "regionid": "",
+        "pointsfrom": "",
+        "pointsto": "",
+        "rankingfrom": "",
+        "rankingto": "",
+        "birthdatefromstring": "",
+        "birthdatetostring": "",
+        "agefrom": "",
+        "ageto": "",
+        "playerid": "",
+        "param": "M",
+        "pageindex": "0",
+        "sortfield": "0",
+        "getversions": true,
+        "getplayer": true
+      },
+      "status": 200,
+      "bytes": 88758,
+      "response_sha256": "9b98822a8f1d67b080296f5ac8c2a3b884f35025df4302a58371775c2e29f949",
+      "content_type": "application/json; charset=utf-8",
+      "location": null,
+      "saved_response": "statistik/results/153-raa-svar/013.gz",
+      "saved_response_sha256": "9b98822a8f1d67b080296f5ac8c2a3b884f35025df4302a58371775c2e29f949",
+      "rows": 100,
+      "completed_at": "2026-10-07T20:30:01.527Z",
+      "elapsed_ms": 201
+    }
+  ],
+  "calendars": [
+    {
+      "season": 2018,
+      "list": 288,
+      "request": 2,
+      "http_status": 200,
+      "status": "versions",
+      "version_entries": 142,
+      "dated_entries": 141,
+      "unique_dates": 141,
+      "earliest": "2018-07-01",
+      "latest": "2019-07-01",
+      "versions": [
+        {
+          "label": "Seneste",
+          "value": "",
+          "selected": true
+        },
+        {
+          "label": "01-07-2019",
+          "value": "07/01/2019",
+          "selected": false
+        },
+        {
+          "label": "28-06-2019",
+          "value": "06/28/2019",
+          "selected": false
+        },
+        {
+          "label": "27-06-2019",
+          "value": "06/27/2019",
+          "selected": false
+        },
+        {
+          "label": "26-06-2019",
+          "value": "06/26/2019",
+          "selected": false
+        },
+        {
+          "label": "24-06-2019",
+          "value": "06/24/2019",
+          "selected": false
+        },
+        {
+          "label": "21-06-2019",
+          "value": "06/21/2019",
+          "selected": false
+        },
+        {
+          "label": "19-06-2019",
+          "value": "06/19/2019",
+          "selected": false
+        },
+        {
+          "label": "17-06-2019",
+          "value": "06/17/2019",
+          "selected": false
+        },
+        {
+          "label": "16-06-2019",
+          "value": "06/16/2019",
+          "selected": false
+        },
+        {
+          "label": "14-06-2019",
+          "value": "06/14/2019",
+          "selected": false
+        },
+        {
+          "label": "12-06-2019",
+          "value": "06/12/2019",
+          "selected": false
+        },
+        {
+          "label": "10-06-2019",
+          "value": "06/10/2019",
+          "selected": false
+        },
+        {
+          "label": "07-06-2019",
+          "value": "06/07/2019",
+          "selected": false
+        },
+        {
+          "label": "05-06-2019",
+          "value": "06/05/2019",
+          "selected": false
+        },
+        {
+          "label": "03-06-2019",
+          "value": "06/03/2019",
+          "selected": false
+        },
+        {
+          "label": "31-05-2019",
+          "value": "05/31/2019",
+          "selected": false
+        },
+        {
+          "label": "29-05-2019",
+          "value": "05/29/2019",
+          "selected": false
+        },
+        {
+          "label": "27-05-2019",
+          "value": "05/27/2019",
+          "selected": false
+        },
+        {
+          "label": "24-05-2019",
+          "value": "05/24/2019",
+          "selected": false
+        },
+        {
+          "label": "22-05-2019",
+          "value": "05/22/2019",
+          "selected": false
+        },
+        {
+          "label": "20-05-2019",
+          "value": "05/20/2019",
+          "selected": false
+        },
+        {
+          "label": "17-05-2019",
+          "value": "05/17/2019",
+          "selected": false
+        },
+        {
+          "label": "15-05-2019",
+          "value": "05/15/2019",
+          "selected": false
+        },
+        {
+          "label": "13-05-2019",
+          "value": "05/13/2019",
+          "selected": false
+        },
+        {
+          "label": "10-05-2019",
+          "value": "05/10/2019",
+          "selected": false
+        },
+        {
+          "label": "08-05-2019",
+          "value": "05/08/2019",
+          "selected": false
+        },
+        {
+          "label": "06-05-2019",
+          "value": "05/06/2019",
+          "selected": false
+        },
+        {
+          "label": "03-05-2019",
+          "value": "05/03/2019",
+          "selected": false
+        },
+        {
+          "label": "01-05-2019",
+          "value": "05/01/2019",
+          "selected": false
+        },
+        {
+          "label": "29-04-2019",
+          "value": "04/29/2019",
+          "selected": false
+        },
+        {
+          "label": "26-04-2019",
+          "value": "04/26/2019",
+          "selected": false
+        },
+        {
+          "label": "24-04-2019",
+          "value": "04/24/2019",
+          "selected": false
+        },
+        {
+          "label": "22-04-2019",
+          "value": "04/22/2019",
+          "selected": false
+        },
+        {
+          "label": "19-04-2019",
+          "value": "04/19/2019",
+          "selected": false
+        },
+        {
+          "label": "17-04-2019",
+          "value": "04/17/2019",
+          "selected": false
+        },
+        {
+          "label": "15-04-2019",
+          "value": "04/15/2019",
+          "selected": false
+        },
+        {
+          "label": "12-04-2019",
+          "value": "04/12/2019",
+          "selected": false
+        },
+        {
+          "label": "10-04-2019",
+          "value": "04/10/2019",
+          "selected": false
+        },
+        {
+          "label": "08-04-2019",
+          "value": "04/08/2019",
+          "selected": false
+        },
+        {
+          "label": "05-04-2019",
+          "value": "04/05/2019",
+          "selected": false
+        },
+        {
+          "label": "03-04-2019",
+          "value": "04/03/2019",
+          "selected": false
+        },
+        {
+          "label": "01-04-2019 April ranglisten (senior)",
+          "value": "04/01/2019",
+          "selected": false
+        },
+        {
+          "label": "29-03-2019",
+          "value": "03/29/2019",
+          "selected": false
+        },
+        {
+          "label": "27-03-2019",
+          "value": "03/27/2019",
+          "selected": false
+        },
+        {
+          "label": "25-03-2019",
+          "value": "03/25/2019",
+          "selected": false
+        },
+        {
+          "label": "22-03-2019",
+          "value": "03/22/2019",
+          "selected": false
+        },
+        {
+          "label": "20-03-2019",
+          "value": "03/20/2019",
+          "selected": false
+        },
+        {
+          "label": "18-03-2019",
+          "value": "03/18/2019",
+          "selected": false
+        },
+        {
+          "label": "15-03-2019",
+          "value": "03/15/2019",
+          "selected": false
+        },
+        {
+          "label": "13-03-2019",
+          "value": "03/13/2019",
+          "selected": false
+        },
+        {
+          "label": "11-03-2019",
+          "value": "03/11/2019",
+          "selected": false
+        },
+        {
+          "label": "08-03-2019",
+          "value": "03/08/2019",
+          "selected": false
+        },
+        {
+          "label": "06-03-2019",
+          "value": "03/06/2019",
+          "selected": false
+        },
+        {
+          "label": "04-03-2019",
+          "value": "03/04/2019",
+          "selected": false
+        },
+        {
+          "label": "01-03-2019 Marts ranglisten (senior)",
+          "value": "03/01/2019",
+          "selected": false
+        },
+        {
+          "label": "27-02-2019",
+          "value": "02/27/2019",
+          "selected": false
+        },
+        {
+          "label": "25-02-2019",
+          "value": "02/25/2019",
+          "selected": false
+        },
+        {
+          "label": "22-02-2019",
+          "value": "02/22/2019",
+          "selected": false
+        },
+        {
+          "label": "20-02-2019",
+          "value": "02/20/2019",
+          "selected": false
+        },
+        {
+          "label": "18-02-2019",
+          "value": "02/18/2019",
+          "selected": false
+        },
+        {
+          "label": "15-02-2019",
+          "value": "02/15/2019",
+          "selected": false
+        },
+        {
+          "label": "13-02-2019",
+          "value": "02/13/2019",
+          "selected": false
+        },
+        {
+          "label": "11-02-2019",
+          "value": "02/11/2019",
+          "selected": false
+        },
+        {
+          "label": "08-02-2019",
+          "value": "02/08/2019",
+          "selected": false
+        },
+        {
+          "label": "06-02-2019",
+          "value": "02/06/2019",
+          "selected": false
+        },
+        {
+          "label": "04-02-2019",
+          "value": "02/04/2019",
+          "selected": false
+        },
+        {
+          "label": "01-02-2019 Februar ranglisten (senior)",
+          "value": "02/01/2019",
+          "selected": false
+        },
+        {
+          "label": "30-01-2019",
+          "value": "01/30/2019",
+          "selected": false
+        },
+        {
+          "label": "28-01-2019",
+          "value": "01/28/2019",
+          "selected": false
+        },
+        {
+          "label": "25-01-2019",
+          "value": "01/25/2019",
+          "selected": false
+        },
+        {
+          "label": "23-01-2019",
+          "value": "01/23/2019",
+          "selected": false
+        },
+        {
+          "label": "21-01-2019",
+          "value": "01/21/2019",
+          "selected": false
+        },
+        {
+          "label": "18-01-2019",
+          "value": "01/18/2019",
+          "selected": false
+        },
+        {
+          "label": "16-01-2019",
+          "value": "01/16/2019",
+          "selected": false
+        },
+        {
+          "label": "14-01-2019",
+          "value": "01/14/2019",
+          "selected": false
+        },
+        {
+          "label": "11-01-2019",
+          "value": "01/11/2019",
+          "selected": false
+        },
+        {
+          "label": "09-01-2019",
+          "value": "01/09/2019",
+          "selected": false
+        },
+        {
+          "label": "07-01-2019",
+          "value": "01/07/2019",
+          "selected": false
+        },
+        {
+          "label": "04-01-2019",
+          "value": "01/04/2019",
+          "selected": false
+        },
+        {
+          "label": "02-01-2019",
+          "value": "01/02/2019",
+          "selected": false
+        },
+        {
+          "label": "01-01-2019 Januar ranglisten (senior)",
+          "value": "01/01/2019",
+          "selected": false
+        },
+        {
+          "label": "31-12-2018",
+          "value": "12/31/2018",
+          "selected": false
+        },
+        {
+          "label": "28-12-2018",
+          "value": "12/28/2018",
+          "selected": false
+        },
+        {
+          "label": "26-12-2018",
+          "value": "12/26/2018",
+          "selected": false
+        },
+        {
+          "label": "24-12-2018",
+          "value": "12/24/2018",
+          "selected": false
+        },
+        {
+          "label": "21-12-2018",
+          "value": "12/21/2018",
+          "selected": false
+        },
+        {
+          "label": "19-12-2018",
+          "value": "12/19/2018",
+          "selected": false
+        },
+        {
+          "label": "17-12-2018",
+          "value": "12/17/2018",
+          "selected": false
+        },
+        {
+          "label": "14-12-2018",
+          "value": "12/14/2018",
+          "selected": false
+        },
+        {
+          "label": "12-12-2018",
+          "value": "12/12/2018",
+          "selected": false
+        },
+        {
+          "label": "10-12-2018",
+          "value": "12/10/2018",
+          "selected": false
+        },
+        {
+          "label": "07-12-2018",
+          "value": "12/07/2018",
+          "selected": false
+        },
+        {
+          "label": "05-12-2018",
+          "value": "12/05/2018",
+          "selected": false
+        },
+        {
+          "label": "01-12-2018 December ranglisten (senior)",
+          "value": "12/01/2018",
+          "selected": false
+        },
+        {
+          "label": "30-11-2018",
+          "value": "11/30/2018",
+          "selected": false
+        },
+        {
+          "label": "28-11-2018",
+          "value": "11/28/2018",
+          "selected": false
+        },
+        {
+          "label": "26-11-2018",
+          "value": "11/26/2018",
+          "selected": false
+        },
+        {
+          "label": "23-11-2018",
+          "value": "11/23/2018",
+          "selected": false
+        },
+        {
+          "label": "21-11-2018",
+          "value": "11/21/2018",
+          "selected": false
+        },
+        {
+          "label": "19-11-2018",
+          "value": "11/19/2018",
+          "selected": false
+        },
+        {
+          "label": "16-11-2018",
+          "value": "11/16/2018",
+          "selected": false
+        },
+        {
+          "label": "14-11-2018",
+          "value": "11/14/2018",
+          "selected": false
+        },
+        {
+          "label": "12-11-2018",
+          "value": "11/12/2018",
+          "selected": false
+        },
+        {
+          "label": "09-11-2018",
+          "value": "11/09/2018",
+          "selected": false
+        },
+        {
+          "label": "07-11-2018",
+          "value": "11/07/2018",
+          "selected": false
+        },
+        {
+          "label": "05-11-2018",
+          "value": "11/05/2018",
+          "selected": false
+        },
+        {
+          "label": "02-11-2018",
+          "value": "11/02/2018",
+          "selected": false
+        },
+        {
+          "label": "01-11-2018 November ranglisten (senior)",
+          "value": "11/01/2018",
+          "selected": false
+        },
+        {
+          "label": "29-10-2018",
+          "value": "10/29/2018",
+          "selected": false
+        },
+        {
+          "label": "26-10-2018",
+          "value": "10/26/2018",
+          "selected": false
+        },
+        {
+          "label": "24-10-2018",
+          "value": "10/24/2018",
+          "selected": false
+        },
+        {
+          "label": "22-10-2018",
+          "value": "10/22/2018",
+          "selected": false
+        },
+        {
+          "label": "19-10-2018",
+          "value": "10/19/2018",
+          "selected": false
+        },
+        {
+          "label": "17-10-2018",
+          "value": "10/17/2018",
+          "selected": false
+        },
+        {
+          "label": "15-10-2018",
+          "value": "10/15/2018",
+          "selected": false
+        },
+        {
+          "label": "12-10-2018",
+          "value": "10/12/2018",
+          "selected": false
+        },
+        {
+          "label": "10-10-2018",
+          "value": "10/10/2018",
+          "selected": false
+        },
+        {
+          "label": "08-10-2018",
+          "value": "10/08/2018",
+          "selected": false
+        },
+        {
+          "label": "05-10-2018",
+          "value": "10/05/2018",
+          "selected": false
+        },
+        {
+          "label": "03-10-2018",
+          "value": "10/03/2018",
+          "selected": false
+        },
+        {
+          "label": "01-10-2018 Oktober ranglisten (senior)",
+          "value": "10/01/2018",
+          "selected": false
+        },
+        {
+          "label": "28-09-2018",
+          "value": "09/28/2018",
+          "selected": false
+        },
+        {
+          "label": "26-09-2018",
+          "value": "09/26/2018",
+          "selected": false
+        },
+        {
+          "label": "24-09-2018",
+          "value": "09/24/2018",
+          "selected": false
+        },
+        {
+          "label": "21-09-2018",
+          "value": "09/21/2018",
+          "selected": false
+        },
+        {
+          "label": "19-09-2018",
+          "value": "09/19/2018",
+          "selected": false
+        },
+        {
+          "label": "17-09-2018",
+          "value": "09/17/2018",
+          "selected": false
+        },
+        {
+          "label": "14-09-2018",
+          "value": "09/14/2018",
+          "selected": false
+        },
+        {
+          "label": "12-09-2018",
+          "value": "09/12/2018",
+          "selected": false
+        },
+        {
+          "label": "07-09-2018",
+          "value": "09/07/2018",
+          "selected": false
+        },
+        {
+          "label": "01-09-2018 September ranglisten (senior)",
+          "value": "09/01/2018",
+          "selected": false
+        },
+        {
+          "label": "31-08-2018",
+          "value": "08/31/2018",
+          "selected": false
+        },
+        {
+          "label": "28-08-2018 August ranglisten (Senior)",
+          "value": "08/28/2018",
+          "selected": false
+        },
+        {
+          "label": "24-08-2018",
+          "value": "08/24/2018",
+          "selected": false
+        },
+        {
+          "label": "17-08-2018",
+          "value": "08/17/2018",
+          "selected": false
+        },
+        {
+          "label": "10-08-2018",
+          "value": "08/10/2018",
+          "selected": false
+        },
+        {
+          "label": "30-07-2018",
+          "value": "07/30/2018",
+          "selected": false
+        },
+        {
+          "label": "23-07-2018",
+          "value": "07/23/2018",
+          "selected": false
+        },
+        {
+          "label": "16-07-2018",
+          "value": "07/16/2018",
+          "selected": false
+        },
+        {
+          "label": "09-07-2018",
+          "value": "07/09/2018",
+          "selected": false
+        },
+        {
+          "label": "01-07-2018",
+          "value": "07/01/2018",
+          "selected": false
+        }
+      ],
+      "dates": [
+        "2018-07-01",
+        "2018-07-09",
+        "2018-07-16",
+        "2018-07-23",
+        "2018-07-30",
+        "2018-08-10",
+        "2018-08-17",
+        "2018-08-24",
+        "2018-08-28",
+        "2018-08-31",
+        "2018-09-01",
+        "2018-09-07",
+        "2018-09-12",
+        "2018-09-14",
+        "2018-09-17",
+        "2018-09-19",
+        "2018-09-21",
+        "2018-09-24",
+        "2018-09-26",
+        "2018-09-28",
+        "2018-10-01",
+        "2018-10-03",
+        "2018-10-05",
+        "2018-10-08",
+        "2018-10-10",
+        "2018-10-12",
+        "2018-10-15",
+        "2018-10-17",
+        "2018-10-19",
+        "2018-10-22",
+        "2018-10-24",
+        "2018-10-26",
+        "2018-10-29",
+        "2018-11-01",
+        "2018-11-02",
+        "2018-11-05",
+        "2018-11-07",
+        "2018-11-09",
+        "2018-11-12",
+        "2018-11-14",
+        "2018-11-16",
+        "2018-11-19",
+        "2018-11-21",
+        "2018-11-23",
+        "2018-11-26",
+        "2018-11-28",
+        "2018-11-30",
+        "2018-12-01",
+        "2018-12-05",
+        "2018-12-07",
+        "2018-12-10",
+        "2018-12-12",
+        "2018-12-14",
+        "2018-12-17",
+        "2018-12-19",
+        "2018-12-21",
+        "2018-12-24",
+        "2018-12-26",
+        "2018-12-28",
+        "2018-12-31",
+        "2019-01-01",
+        "2019-01-02",
+        "2019-01-04",
+        "2019-01-07",
+        "2019-01-09",
+        "2019-01-11",
+        "2019-01-14",
+        "2019-01-16",
+        "2019-01-18",
+        "2019-01-21",
+        "2019-01-23",
+        "2019-01-25",
+        "2019-01-28",
+        "2019-01-30",
+        "2019-02-01",
+        "2019-02-04",
+        "2019-02-06",
+        "2019-02-08",
+        "2019-02-11",
+        "2019-02-13",
+        "2019-02-15",
+        "2019-02-18",
+        "2019-02-20",
+        "2019-02-22",
+        "2019-02-25",
+        "2019-02-27",
+        "2019-03-01",
+        "2019-03-04",
+        "2019-03-06",
+        "2019-03-08",
+        "2019-03-11",
+        "2019-03-13",
+        "2019-03-15",
+        "2019-03-18",
+        "2019-03-20",
+        "2019-03-22",
+        "2019-03-25",
+        "2019-03-27",
+        "2019-03-29",
+        "2019-04-01",
+        "2019-04-03",
+        "2019-04-05",
+        "2019-04-08",
+        "2019-04-10",
+        "2019-04-12",
+        "2019-04-15",
+        "2019-04-17",
+        "2019-04-19",
+        "2019-04-22",
+        "2019-04-24",
+        "2019-04-26",
+        "2019-04-29",
+        "2019-05-01",
+        "2019-05-03",
+        "2019-05-06",
+        "2019-05-08",
+        "2019-05-10",
+        "2019-05-13",
+        "2019-05-15",
+        "2019-05-17",
+        "2019-05-20",
+        "2019-05-22",
+        "2019-05-24",
+        "2019-05-27",
+        "2019-05-29",
+        "2019-05-31",
+        "2019-06-03",
+        "2019-06-05",
+        "2019-06-07",
+        "2019-06-10",
+        "2019-06-12",
+        "2019-06-14",
+        "2019-06-16",
+        "2019-06-17",
+        "2019-06-19",
+        "2019-06-21",
+        "2019-06-24",
+        "2019-06-26",
+        "2019-06-27",
+        "2019-06-28",
+        "2019-07-01"
+      ],
+      "weekdays": {
+        "søndag": 2,
+        "mandag": 45,
+        "tirsdag": 2,
+        "onsdag": 41,
+        "torsdag": 2,
+        "fredag": 47,
+        "lørdag": 2
+      },
+      "gaps": {
+        "1": 8,
+        "2": 79,
+        "3": 42,
+        "4": 2,
+        "5": 1,
+        "6": 1,
+        "7": 5,
+        "8": 1,
+        "11": 1
+      },
+      "max_gap": 11
+    },
+    {
+      "season": 2017,
+      "list": 288,
+      "request": 4,
+      "http_status": 200,
+      "status": "versions",
+      "version_entries": 1,
+      "dated_entries": 0,
+      "unique_dates": 0,
+      "earliest": null,
+      "latest": null,
+      "versions": [
+        {
+          "label": "Seneste",
+          "value": "",
+          "selected": true
+        }
+      ],
+      "dates": [],
+      "weekdays": {
+        "søndag": 0,
+        "mandag": 0,
+        "tirsdag": 0,
+        "onsdag": 0,
+        "torsdag": 0,
+        "fredag": 0,
+        "lørdag": 0
+      },
+      "gaps": {},
+      "max_gap": 0
+    },
+    {
+      "season": 2016,
+      "list": 288,
+      "request": 5,
+      "http_status": 200,
+      "status": "versions",
+      "version_entries": 1,
+      "dated_entries": 0,
+      "unique_dates": 0,
+      "earliest": null,
+      "latest": null,
+      "versions": [
+        {
+          "label": "Seneste",
+          "value": "",
+          "selected": true
+        }
+      ],
+      "dates": [],
+      "weekdays": {
+        "søndag": 0,
+        "mandag": 0,
+        "tirsdag": 0,
+        "onsdag": 0,
+        "torsdag": 0,
+        "fredag": 0,
+        "lørdag": 0
+      },
+      "gaps": {},
+      "max_gap": 0
+    },
+    {
+      "season": 2015,
+      "list": 288,
+      "request": 6,
+      "http_status": 200,
+      "status": "versions",
+      "version_entries": 1,
+      "dated_entries": 0,
+      "unique_dates": 0,
+      "earliest": null,
+      "latest": null,
+      "versions": [
+        {
+          "label": "Seneste",
+          "value": "",
+          "selected": true
+        }
+      ],
+      "dates": [],
+      "weekdays": {
+        "søndag": 0,
+        "mandag": 0,
+        "tirsdag": 0,
+        "onsdag": 0,
+        "torsdag": 0,
+        "fredag": 0,
+        "lørdag": 0
+      },
+      "gaps": {},
+      "max_gap": 0
+    },
+    {
+      "season": 2014,
+      "list": 288,
+      "request": 7,
+      "http_status": 200,
+      "status": "versions",
+      "version_entries": 1,
+      "dated_entries": 0,
+      "unique_dates": 0,
+      "earliest": null,
+      "latest": null,
+      "versions": [
+        {
+          "label": "Seneste",
+          "value": "",
+          "selected": true
+        }
+      ],
+      "dates": [],
+      "weekdays": {
+        "søndag": 0,
+        "mandag": 0,
+        "tirsdag": 0,
+        "onsdag": 0,
+        "torsdag": 0,
+        "fredag": 0,
+        "lørdag": 0
+      },
+      "gaps": {},
+      "max_gap": 0
+    },
+    {
+      "season": 2013,
+      "list": 288,
+      "request": 8,
+      "http_status": 200,
+      "status": "versions",
+      "version_entries": 1,
+      "dated_entries": 0,
+      "unique_dates": 0,
+      "earliest": null,
+      "latest": null,
+      "versions": [
+        {
+          "label": "Seneste",
+          "value": "",
+          "selected": true
+        }
+      ],
+      "dates": [],
+      "weekdays": {
+        "søndag": 0,
+        "mandag": 0,
+        "tirsdag": 0,
+        "onsdag": 0,
+        "torsdag": 0,
+        "fredag": 0,
+        "lørdag": 0
+      },
+      "gaps": {},
+      "max_gap": 0
+    },
+    {
+      "season": 2012,
+      "list": 288,
+      "request": 9,
+      "http_status": 200,
+      "status": "versions",
+      "version_entries": 1,
+      "dated_entries": 0,
+      "unique_dates": 0,
+      "earliest": null,
+      "latest": null,
+      "versions": [
+        {
+          "label": "Seneste",
+          "value": "",
+          "selected": true
+        }
+      ],
+      "dates": [],
+      "weekdays": {
+        "søndag": 0,
+        "mandag": 0,
+        "tirsdag": 0,
+        "onsdag": 0,
+        "torsdag": 0,
+        "fredag": 0,
+        "lørdag": 0
+      },
+      "gaps": {},
+      "max_gap": 0
+    },
+    {
+      "season": 2023,
+      "list": 288,
+      "request": 10,
+      "http_status": 200,
+      "status": "versions",
+      "version_entries": 130,
+      "dated_entries": 129,
+      "unique_dates": 129,
+      "earliest": "2023-07-01",
+      "latest": "2024-06-17",
+      "versions": [
+        {
+          "label": "Seneste",
+          "value": "",
+          "selected": true
+        },
+        {
+          "label": "17-06-2024",
+          "value": "06/17/2024",
+          "selected": false
+        },
+        {
+          "label": "14-06-2024",
+          "value": "06/14/2024",
+          "selected": false
+        },
+        {
+          "label": "12-06-2024",
+          "value": "06/12/2024",
+          "selected": false
+        },
+        {
+          "label": "10-06-2024",
+          "value": "06/10/2024",
+          "selected": false
+        },
+        {
+          "label": "07-06-2024",
+          "value": "06/07/2024",
+          "selected": false
+        },
+        {
+          "label": "05-06-2024",
+          "value": "06/05/2024",
+          "selected": false
+        },
+        {
+          "label": "03-06-2024",
+          "value": "06/03/2024",
+          "selected": false
+        },
+        {
+          "label": "31-05-2024",
+          "value": "05/31/2024",
+          "selected": false
+        },
+        {
+          "label": "29-05-2024",
+          "value": "05/29/2024",
+          "selected": false
+        },
+        {
+          "label": "27-05-2024",
+          "value": "05/27/2024",
+          "selected": false
+        },
+        {
+          "label": "24-05-2024",
+          "value": "05/24/2024",
+          "selected": false
+        },
+        {
+          "label": "22-05-2024",
+          "value": "05/22/2024",
+          "selected": false
+        },
+        {
+          "label": "20-05-2024",
+          "value": "05/20/2024",
+          "selected": false
+        },
+        {
+          "label": "17-05-2024",
+          "value": "05/17/2024",
+          "selected": false
+        },
+        {
+          "label": "15-05-2024",
+          "value": "05/15/2024",
+          "selected": false
+        },
+        {
+          "label": "13-05-2024",
+          "value": "05/13/2024",
+          "selected": false
+        },
+        {
+          "label": "10-05-2024",
+          "value": "05/10/2024",
+          "selected": false
+        },
+        {
+          "label": "06-05-2024",
+          "value": "05/06/2024",
+          "selected": false
+        },
+        {
+          "label": "03-05-2024",
+          "value": "05/03/2024",
+          "selected": false
+        },
+        {
+          "label": "01-05-2024",
+          "value": "05/01/2024",
+          "selected": false
+        },
+        {
+          "label": "29-04-2024",
+          "value": "04/29/2024",
+          "selected": false
+        },
+        {
+          "label": "26-04-2024",
+          "value": "04/26/2024",
+          "selected": false
+        },
+        {
+          "label": "24-04-2024",
+          "value": "04/24/2024",
+          "selected": false
+        },
+        {
+          "label": "22-04-2024",
+          "value": "04/22/2024",
+          "selected": false
+        },
+        {
+          "label": "19-04-2024",
+          "value": "04/19/2024",
+          "selected": false
+        },
+        {
+          "label": "17-04-2024",
+          "value": "04/17/2024",
+          "selected": false
+        },
+        {
+          "label": "15-04-2024",
+          "value": "04/15/2024",
+          "selected": false
+        },
+        {
+          "label": "12-04-2024",
+          "value": "04/12/2024",
+          "selected": false
+        },
+        {
+          "label": "10-04-2024",
+          "value": "04/10/2024",
+          "selected": false
+        },
+        {
+          "label": "08-04-2024",
+          "value": "04/08/2024",
+          "selected": false
+        },
+        {
+          "label": "05-04-2024",
+          "value": "04/05/2024",
+          "selected": false
+        },
+        {
+          "label": "03-04-2024",
+          "value": "04/03/2024",
+          "selected": false
+        },
+        {
+          "label": "01-04-2024",
+          "value": "04/01/2024",
+          "selected": false
+        },
+        {
+          "label": "29-03-2024",
+          "value": "03/29/2024",
+          "selected": false
+        },
+        {
+          "label": "27-03-2024",
+          "value": "03/27/2024",
+          "selected": false
+        },
+        {
+          "label": "25-03-2024",
+          "value": "03/25/2024",
+          "selected": false
+        },
+        {
+          "label": "22-03-2024",
+          "value": "03/22/2024",
+          "selected": false
+        },
+        {
+          "label": "20-03-2024",
+          "value": "03/20/2024",
+          "selected": false
+        },
+        {
+          "label": "18-03-2024",
+          "value": "03/18/2024",
+          "selected": false
+        },
+        {
+          "label": "15-03-2024",
+          "value": "03/15/2024",
+          "selected": false
+        },
+        {
+          "label": "13-03-2024",
+          "value": "03/13/2024",
+          "selected": false
+        },
+        {
+          "label": "11-03-2024",
+          "value": "03/11/2024",
+          "selected": false
+        },
+        {
+          "label": "08-03-2024",
+          "value": "03/08/2024",
+          "selected": false
+        },
+        {
+          "label": "01-03-2024 Marts-ranglisten",
+          "value": "03/01/2024",
+          "selected": false
+        },
+        {
+          "label": "28-02-2024",
+          "value": "02/28/2024",
+          "selected": false
+        },
+        {
+          "label": "26-02-2024",
+          "value": "02/26/2024",
+          "selected": false
+        },
+        {
+          "label": "23-02-2024",
+          "value": "02/23/2024",
+          "selected": false
+        },
+        {
+          "label": "21-02-2024",
+          "value": "02/21/2024",
+          "selected": false
+        },
+        {
+          "label": "19-02-2024",
+          "value": "02/19/2024",
+          "selected": false
+        },
+        {
+          "label": "16-02-2024",
+          "value": "02/16/2024",
+          "selected": false
+        },
+        {
+          "label": "14-02-2024",
+          "value": "02/14/2024",
+          "selected": false
+        },
+        {
+          "label": "12-02-2024",
+          "value": "02/12/2024",
+          "selected": false
+        },
+        {
+          "label": "09-02-2024",
+          "value": "02/09/2024",
+          "selected": false
+        },
+        {
+          "label": "07-02-2024",
+          "value": "02/07/2024",
+          "selected": false
+        },
+        {
+          "label": "05-02-2024",
+          "value": "02/05/2024",
+          "selected": false
+        },
+        {
+          "label": "02-02-2024",
+          "value": "02/02/2024",
+          "selected": false
+        },
+        {
+          "label": "01-02-2024 Februar-ranglisten",
+          "value": "02/01/2024",
+          "selected": false
+        },
+        {
+          "label": "31-01-2024",
+          "value": "01/31/2024",
+          "selected": false
+        },
+        {
+          "label": "29-01-2024",
+          "value": "01/29/2024",
+          "selected": false
+        },
+        {
+          "label": "28-01-2024",
+          "value": "01/28/2024",
+          "selected": false
+        },
+        {
+          "label": "26-01-2024",
+          "value": "01/26/2024",
+          "selected": false
+        },
+        {
+          "label": "24-01-2024",
+          "value": "01/24/2024",
+          "selected": false
+        },
+        {
+          "label": "22-01-2024",
+          "value": "01/22/2024",
+          "selected": false
+        },
+        {
+          "label": "19-01-2024",
+          "value": "01/19/2024",
+          "selected": false
+        },
+        {
+          "label": "17-01-2024",
+          "value": "01/17/2024",
+          "selected": false
+        },
+        {
+          "label": "15-01-2024",
+          "value": "01/15/2024",
+          "selected": false
+        },
+        {
+          "label": "12-01-2024",
+          "value": "01/12/2024",
+          "selected": false
+        },
+        {
+          "label": "10-01-2024",
+          "value": "01/10/2024",
+          "selected": false
+        },
+        {
+          "label": "08-01-2024",
+          "value": "01/08/2024",
+          "selected": false
+        },
+        {
+          "label": "05-01-2024",
+          "value": "01/05/2024",
+          "selected": false
+        },
+        {
+          "label": "03-01-2024",
+          "value": "01/03/2024",
+          "selected": false
+        },
+        {
+          "label": "01-01-2024 Januar-ranglisten",
+          "value": "01/01/2024",
+          "selected": false
+        },
+        {
+          "label": "29-12-2023",
+          "value": "12/29/2023",
+          "selected": false
+        },
+        {
+          "label": "27-12-2023",
+          "value": "12/27/2023",
+          "selected": false
+        },
+        {
+          "label": "25-12-2023",
+          "value": "12/25/2023",
+          "selected": false
+        },
+        {
+          "label": "22-12-2023",
+          "value": "12/22/2023",
+          "selected": false
+        },
+        {
+          "label": "20-12-2023",
+          "value": "12/20/2023",
+          "selected": false
+        },
+        {
+          "label": "18-12-2023",
+          "value": "12/18/2023",
+          "selected": false
+        },
+        {
+          "label": "15-12-2023",
+          "value": "12/15/2023",
+          "selected": false
+        },
+        {
+          "label": "13-12-2023",
+          "value": "12/13/2023",
+          "selected": false
+        },
+        {
+          "label": "11-12-2023",
+          "value": "12/11/2023",
+          "selected": false
+        },
+        {
+          "label": "08-12-2023",
+          "value": "12/08/2023",
+          "selected": false
+        },
+        {
+          "label": "06-12-2023",
+          "value": "12/06/2023",
+          "selected": false
+        },
+        {
+          "label": "04-12-2023",
+          "value": "12/04/2023",
+          "selected": false
+        },
+        {
+          "label": "01-12-2023 December-ranglisten",
+          "value": "12/01/2023",
+          "selected": false
+        },
+        {
+          "label": "29-11-2023",
+          "value": "11/29/2023",
+          "selected": false
+        },
+        {
+          "label": "27-11-2023",
+          "value": "11/27/2023",
+          "selected": false
+        },
+        {
+          "label": "24-11-2023",
+          "value": "11/24/2023",
+          "selected": false
+        },
+        {
+          "label": "22-11-2023",
+          "value": "11/22/2023",
+          "selected": false
+        },
+        {
+          "label": "20-11-2023",
+          "value": "11/20/2023",
+          "selected": false
+        },
+        {
+          "label": "17-11-2023",
+          "value": "11/17/2023",
+          "selected": false
+        },
+        {
+          "label": "15-11-2023",
+          "value": "11/15/2023",
+          "selected": false
+        },
+        {
+          "label": "13-11-2023",
+          "value": "11/13/2023",
+          "selected": false
+        },
+        {
+          "label": "10-11-2023",
+          "value": "11/10/2023",
+          "selected": false
+        },
+        {
+          "label": "08-11-2023",
+          "value": "11/08/2023",
+          "selected": false
+        },
+        {
+          "label": "06-11-2023",
+          "value": "11/06/2023",
+          "selected": false
+        },
+        {
+          "label": "03-11-2023",
+          "value": "11/03/2023",
+          "selected": false
+        },
+        {
+          "label": "01-11-2023 November-ranglisten",
+          "value": "11/01/2023",
+          "selected": false
+        },
+        {
+          "label": "30-10-2023",
+          "value": "10/30/2023",
+          "selected": false
+        },
+        {
+          "label": "27-10-2023",
+          "value": "10/27/2023",
+          "selected": false
+        },
+        {
+          "label": "25-10-2023",
+          "value": "10/25/2023",
+          "selected": false
+        },
+        {
+          "label": "23-10-2023",
+          "value": "10/23/2023",
+          "selected": false
+        },
+        {
+          "label": "20-10-2023",
+          "value": "10/20/2023",
+          "selected": false
+        },
+        {
+          "label": "18-10-2023",
+          "value": "10/18/2023",
+          "selected": false
+        },
+        {
+          "label": "16-10-2023",
+          "value": "10/16/2023",
+          "selected": false
+        },
+        {
+          "label": "13-10-2023",
+          "value": "10/13/2023",
+          "selected": false
+        },
+        {
+          "label": "11-10-2023",
+          "value": "10/11/2023",
+          "selected": false
+        },
+        {
+          "label": "09-10-2023",
+          "value": "10/09/2023",
+          "selected": false
+        },
+        {
+          "label": "06-10-2023",
+          "value": "10/06/2023",
+          "selected": false
+        },
+        {
+          "label": "04-10-2023",
+          "value": "10/04/2023",
+          "selected": false
+        },
+        {
+          "label": "02-10-2023",
+          "value": "10/02/2023",
+          "selected": false
+        },
+        {
+          "label": "01-10-2023 Oktober-ranglisten",
+          "value": "10/01/2023",
+          "selected": false
+        },
+        {
+          "label": "29-09-2023",
+          "value": "09/29/2023",
+          "selected": false
+        },
+        {
+          "label": "27-09-2023",
+          "value": "09/27/2023",
+          "selected": false
+        },
+        {
+          "label": "25-09-2023",
+          "value": "09/25/2023",
+          "selected": false
+        },
+        {
+          "label": "22-09-2023",
+          "value": "09/22/2023",
+          "selected": false
+        },
+        {
+          "label": "20-09-2023",
+          "value": "09/20/2023",
+          "selected": false
+        },
+        {
+          "label": "18-09-2023",
+          "value": "09/18/2023",
+          "selected": false
+        },
+        {
+          "label": "15-09-2023",
+          "value": "09/15/2023",
+          "selected": false
+        },
+        {
+          "label": "13-09-2023",
+          "value": "09/13/2023",
+          "selected": false
+        },
+        {
+          "label": "11-09-2023",
+          "value": "09/11/2023",
+          "selected": false
+        },
+        {
+          "label": "08-09-2023",
+          "value": "09/08/2023",
+          "selected": false
+        },
+        {
+          "label": "06-09-2023",
+          "value": "09/06/2023",
+          "selected": false
+        },
+        {
+          "label": "04-09-2023",
+          "value": "09/04/2023",
+          "selected": false
+        },
+        {
+          "label": "01-09-2023 September-ranglisten",
+          "value": "09/01/2023",
+          "selected": false
+        },
+        {
+          "label": "30-08-2023",
+          "value": "08/30/2023",
+          "selected": false
+        },
+        {
+          "label": "25-08-2023",
+          "value": "08/25/2023",
+          "selected": false
+        },
+        {
+          "label": "01-08-2023 August-ranglisten",
+          "value": "08/01/2023",
+          "selected": false
+        },
+        {
+          "label": "01-07-2023",
+          "value": "07/01/2023",
+          "selected": false
+        }
+      ],
+      "dates": [
+        "2023-07-01",
+        "2023-08-01",
+        "2023-08-25",
+        "2023-08-30",
+        "2023-09-01",
+        "2023-09-04",
+        "2023-09-06",
+        "2023-09-08",
+        "2023-09-11",
+        "2023-09-13",
+        "2023-09-15",
+        "2023-09-18",
+        "2023-09-20",
+        "2023-09-22",
+        "2023-09-25",
+        "2023-09-27",
+        "2023-09-29",
+        "2023-10-01",
+        "2023-10-02",
+        "2023-10-04",
+        "2023-10-06",
+        "2023-10-09",
+        "2023-10-11",
+        "2023-10-13",
+        "2023-10-16",
+        "2023-10-18",
+        "2023-10-20",
+        "2023-10-23",
+        "2023-10-25",
+        "2023-10-27",
+        "2023-10-30",
+        "2023-11-01",
+        "2023-11-03",
+        "2023-11-06",
+        "2023-11-08",
+        "2023-11-10",
+        "2023-11-13",
+        "2023-11-15",
+        "2023-11-17",
+        "2023-11-20",
+        "2023-11-22",
+        "2023-11-24",
+        "2023-11-27",
+        "2023-11-29",
+        "2023-12-01",
+        "2023-12-04",
+        "2023-12-06",
+        "2023-12-08",
+        "2023-12-11",
+        "2023-12-13",
+        "2023-12-15",
+        "2023-12-18",
+        "2023-12-20",
+        "2023-12-22",
+        "2023-12-25",
+        "2023-12-27",
+        "2023-12-29",
+        "2024-01-01",
+        "2024-01-03",
+        "2024-01-05",
+        "2024-01-08",
+        "2024-01-10",
+        "2024-01-12",
+        "2024-01-15",
+        "2024-01-17",
+        "2024-01-19",
+        "2024-01-22",
+        "2024-01-24",
+        "2024-01-26",
+        "2024-01-28",
+        "2024-01-29",
+        "2024-01-31",
+        "2024-02-01",
+        "2024-02-02",
+        "2024-02-05",
+        "2024-02-07",
+        "2024-02-09",
+        "2024-02-12",
+        "2024-02-14",
+        "2024-02-16",
+        "2024-02-19",
+        "2024-02-21",
+        "2024-02-23",
+        "2024-02-26",
+        "2024-02-28",
+        "2024-03-01",
+        "2024-03-08",
+        "2024-03-11",
+        "2024-03-13",
+        "2024-03-15",
+        "2024-03-18",
+        "2024-03-20",
+        "2024-03-22",
+        "2024-03-25",
+        "2024-03-27",
+        "2024-03-29",
+        "2024-04-01",
+        "2024-04-03",
+        "2024-04-05",
+        "2024-04-08",
+        "2024-04-10",
+        "2024-04-12",
+        "2024-04-15",
+        "2024-04-17",
+        "2024-04-19",
+        "2024-04-22",
+        "2024-04-24",
+        "2024-04-26",
+        "2024-04-29",
+        "2024-05-01",
+        "2024-05-03",
+        "2024-05-06",
+        "2024-05-10",
+        "2024-05-13",
+        "2024-05-15",
+        "2024-05-17",
+        "2024-05-20",
+        "2024-05-22",
+        "2024-05-24",
+        "2024-05-27",
+        "2024-05-29",
+        "2024-05-31",
+        "2024-06-03",
+        "2024-06-05",
+        "2024-06-07",
+        "2024-06-10",
+        "2024-06-12",
+        "2024-06-14",
+        "2024-06-17"
+      ],
+      "weekdays": {
+        "søndag": 2,
+        "mandag": 41,
+        "tirsdag": 1,
+        "onsdag": 40,
+        "torsdag": 1,
+        "fredag": 43,
+        "lørdag": 1
+      },
+      "gaps": {
+        "1": 4,
+        "2": 80,
+        "3": 39,
+        "4": 1,
+        "5": 1,
+        "7": 1,
+        "24": 1,
+        "31": 1
+      },
+      "max_gap": 31
+    },
+    {
+      "season": 2024,
+      "list": 288,
+      "request": 11,
+      "http_status": 200,
+      "status": "versions",
+      "version_entries": 160,
+      "dated_entries": 159,
+      "unique_dates": 159,
+      "earliest": "2024-07-01",
+      "latest": "2025-06-25",
+      "versions": [
+        {
+          "label": "Seneste",
+          "value": "",
+          "selected": true
+        },
+        {
+          "label": "25-06-2025",
+          "value": "06/25/2025",
+          "selected": false
+        },
+        {
+          "label": "23-06-2025",
+          "value": "06/23/2025",
+          "selected": false
+        },
+        {
+          "label": "20-06-2025",
+          "value": "06/20/2025",
+          "selected": false
+        },
+        {
+          "label": "18-06-2025",
+          "value": "06/18/2025",
+          "selected": false
+        },
+        {
+          "label": "16-06-2025",
+          "value": "06/16/2025",
+          "selected": false
+        },
+        {
+          "label": "13-06-2025",
+          "value": "06/13/2025",
+          "selected": false
+        },
+        {
+          "label": "11-06-2025",
+          "value": "06/11/2025",
+          "selected": false
+        },
+        {
+          "label": "09-06-2025",
+          "value": "06/09/2025",
+          "selected": false
+        },
+        {
+          "label": "06-06-2025",
+          "value": "06/06/2025",
+          "selected": false
+        },
+        {
+          "label": "04-06-2025",
+          "value": "06/04/2025",
+          "selected": false
+        },
+        {
+          "label": "02-06-2025",
+          "value": "06/02/2025",
+          "selected": false
+        },
+        {
+          "label": "30-05-2025",
+          "value": "05/30/2025",
+          "selected": false
+        },
+        {
+          "label": "28-05-2025",
+          "value": "05/28/2025",
+          "selected": false
+        },
+        {
+          "label": "26-05-2025",
+          "value": "05/26/2025",
+          "selected": false
+        },
+        {
+          "label": "23-05-2025",
+          "value": "05/23/2025",
+          "selected": false
+        },
+        {
+          "label": "21-05-2025",
+          "value": "05/21/2025",
+          "selected": false
+        },
+        {
+          "label": "19-05-2025",
+          "value": "05/19/2025",
+          "selected": false
+        },
+        {
+          "label": "16-05-2025",
+          "value": "05/16/2025",
+          "selected": false
+        },
+        {
+          "label": "14-05-2025",
+          "value": "05/14/2025",
+          "selected": false
+        },
+        {
+          "label": "12-05-2025",
+          "value": "05/12/2025",
+          "selected": false
+        },
+        {
+          "label": "09-05-2025",
+          "value": "05/09/2025",
+          "selected": false
+        },
+        {
+          "label": "07-05-2025",
+          "value": "05/07/2025",
+          "selected": false
+        },
+        {
+          "label": "05-05-2025",
+          "value": "05/05/2025",
+          "selected": false
+        },
+        {
+          "label": "02-05-2025",
+          "value": "05/02/2025",
+          "selected": false
+        },
+        {
+          "label": "01-05-2025 Maj-ranglisten",
+          "value": "05/01/2025",
+          "selected": false
+        },
+        {
+          "label": "30-04-2025",
+          "value": "04/30/2025",
+          "selected": false
+        },
+        {
+          "label": "28-04-2025",
+          "value": "04/28/2025",
+          "selected": false
+        },
+        {
+          "label": "25-04-2025",
+          "value": "04/25/2025",
+          "selected": false
+        },
+        {
+          "label": "23-04-2025",
+          "value": "04/23/2025",
+          "selected": false
+        },
+        {
+          "label": "21-04-2025",
+          "value": "04/21/2025",
+          "selected": false
+        },
+        {
+          "label": "18-04-2025",
+          "value": "04/18/2025",
+          "selected": false
+        },
+        {
+          "label": "16-04-2025",
+          "value": "04/16/2025",
+          "selected": false
+        },
+        {
+          "label": "14-04-2025",
+          "value": "04/14/2025",
+          "selected": false
+        },
+        {
+          "label": "11-04-2025",
+          "value": "04/11/2025",
+          "selected": false
+        },
+        {
+          "label": "09-04-2025",
+          "value": "04/09/2025",
+          "selected": false
+        },
+        {
+          "label": "07-04-2025",
+          "value": "04/07/2025",
+          "selected": false
+        },
+        {
+          "label": "04-04-2025",
+          "value": "04/04/2025",
+          "selected": false
+        },
+        {
+          "label": "02-04-2025",
+          "value": "04/02/2025",
+          "selected": false
+        },
+        {
+          "label": "01-04-2025 April-ranglisten",
+          "value": "04/01/2025",
+          "selected": false
+        },
+        {
+          "label": "31-03-2025",
+          "value": "03/31/2025",
+          "selected": false
+        },
+        {
+          "label": "28-03-2025",
+          "value": "03/28/2025",
+          "selected": false
+        },
+        {
+          "label": "26-03-2025",
+          "value": "03/26/2025",
+          "selected": false
+        },
+        {
+          "label": "24-03-2025",
+          "value": "03/24/2025",
+          "selected": false
+        },
+        {
+          "label": "21-03-2025",
+          "value": "03/21/2025",
+          "selected": false
+        },
+        {
+          "label": "19-03-2025",
+          "value": "03/19/2025",
+          "selected": false
+        },
+        {
+          "label": "17-03-2025",
+          "value": "03/17/2025",
+          "selected": false
+        },
+        {
+          "label": "14-03-2025",
+          "value": "03/14/2025",
+          "selected": false
+        },
+        {
+          "label": "12-03-2025",
+          "value": "03/12/2025",
+          "selected": false
+        },
+        {
+          "label": "07-03-2025",
+          "value": "03/07/2025",
+          "selected": false
+        },
+        {
+          "label": "05-03-2025",
+          "value": "03/05/2025",
+          "selected": false
+        },
+        {
+          "label": "03-03-2025",
+          "value": "03/03/2025",
+          "selected": false
+        },
+        {
+          "label": "01-03-2025 Marts-ranglisten",
+          "value": "03/01/2025",
+          "selected": false
+        },
+        {
+          "label": "28-02-2025",
+          "value": "02/28/2025",
+          "selected": false
+        },
+        {
+          "label": "26-02-2025",
+          "value": "02/26/2025",
+          "selected": false
+        },
+        {
+          "label": "24-02-2025",
+          "value": "02/24/2025",
+          "selected": false
+        },
+        {
+          "label": "21-02-2025",
+          "value": "02/21/2025",
+          "selected": false
+        },
+        {
+          "label": "19-02-2025",
+          "value": "02/19/2025",
+          "selected": false
+        },
+        {
+          "label": "17-02-2025",
+          "value": "02/17/2025",
+          "selected": false
+        },
+        {
+          "label": "14-02-2025",
+          "value": "02/14/2025",
+          "selected": false
+        },
+        {
+          "label": "12-02-2025",
+          "value": "02/12/2025",
+          "selected": false
+        },
+        {
+          "label": "10-02-2025",
+          "value": "02/10/2025",
+          "selected": false
+        },
+        {
+          "label": "07-02-2025",
+          "value": "02/07/2025",
+          "selected": false
+        },
+        {
+          "label": "05-02-2025",
+          "value": "02/05/2025",
+          "selected": false
+        },
+        {
+          "label": "03-02-2025",
+          "value": "02/03/2025",
+          "selected": false
+        },
+        {
+          "label": "01-02-2025 Februar-ranglisten",
+          "value": "02/01/2025",
+          "selected": false
+        },
+        {
+          "label": "31-01-2025",
+          "value": "01/31/2025",
+          "selected": false
+        },
+        {
+          "label": "29-01-2025",
+          "value": "01/29/2025",
+          "selected": false
+        },
+        {
+          "label": "27-01-2025",
+          "value": "01/27/2025",
+          "selected": false
+        },
+        {
+          "label": "24-01-2025",
+          "value": "01/24/2025",
+          "selected": false
+        },
+        {
+          "label": "22-01-2025",
+          "value": "01/22/2025",
+          "selected": false
+        },
+        {
+          "label": "20-01-2025",
+          "value": "01/20/2025",
+          "selected": false
+        },
+        {
+          "label": "17-01-2025",
+          "value": "01/17/2025",
+          "selected": false
+        },
+        {
+          "label": "15-01-2025",
+          "value": "01/15/2025",
+          "selected": false
+        },
+        {
+          "label": "13-01-2025",
+          "value": "01/13/2025",
+          "selected": false
+        },
+        {
+          "label": "10-01-2025",
+          "value": "01/10/2025",
+          "selected": false
+        },
+        {
+          "label": "08-01-2025",
+          "value": "01/08/2025",
+          "selected": false
+        },
+        {
+          "label": "06-01-2025",
+          "value": "01/06/2025",
+          "selected": false
+        },
+        {
+          "label": "03-01-2025",
+          "value": "01/03/2025",
+          "selected": false
+        },
+        {
+          "label": "01-01-2025 Januar-ranglisten",
+          "value": "01/01/2025",
+          "selected": false
+        },
+        {
+          "label": "30-12-2024",
+          "value": "12/30/2024",
+          "selected": false
+        },
+        {
+          "label": "27-12-2024",
+          "value": "12/27/2024",
+          "selected": false
+        },
+        {
+          "label": "25-12-2024",
+          "value": "12/25/2024",
+          "selected": false
+        },
+        {
+          "label": "23-12-2024",
+          "value": "12/23/2024",
+          "selected": false
+        },
+        {
+          "label": "20-12-2024",
+          "value": "12/20/2024",
+          "selected": false
+        },
+        {
+          "label": "18-12-2024",
+          "value": "12/18/2024",
+          "selected": false
+        },
+        {
+          "label": "16-12-2024",
+          "value": "12/16/2024",
+          "selected": false
+        },
+        {
+          "label": "13-12-2024",
+          "value": "12/13/2024",
+          "selected": false
+        },
+        {
+          "label": "11-12-2024",
+          "value": "12/11/2024",
+          "selected": false
+        },
+        {
+          "label": "09-12-2024",
+          "value": "12/09/2024",
+          "selected": false
+        },
+        {
+          "label": "06-12-2024",
+          "value": "12/06/2024",
+          "selected": false
+        },
+        {
+          "label": "04-12-2024",
+          "value": "12/04/2024",
+          "selected": false
+        },
+        {
+          "label": "02-12-2024",
+          "value": "12/02/2024",
+          "selected": false
+        },
+        {
+          "label": "01-12-2024 December-ranglisten",
+          "value": "12/01/2024",
+          "selected": false
+        },
+        {
+          "label": "29-11-2024",
+          "value": "11/29/2024",
+          "selected": false
+        },
+        {
+          "label": "27-11-2024",
+          "value": "11/27/2024",
+          "selected": false
+        },
+        {
+          "label": "25-11-2024",
+          "value": "11/25/2024",
+          "selected": false
+        },
+        {
+          "label": "22-11-2024",
+          "value": "11/22/2024",
+          "selected": false
+        },
+        {
+          "label": "20-11-2024",
+          "value": "11/20/2024",
+          "selected": false
+        },
+        {
+          "label": "18-11-2024",
+          "value": "11/18/2024",
+          "selected": false
+        },
+        {
+          "label": "15-11-2024",
+          "value": "11/15/2024",
+          "selected": false
+        },
+        {
+          "label": "13-11-2024",
+          "value": "11/13/2024",
+          "selected": false
+        },
+        {
+          "label": "11-11-2024",
+          "value": "11/11/2024",
+          "selected": false
+        },
+        {
+          "label": "08-11-2024",
+          "value": "11/08/2024",
+          "selected": false
+        },
+        {
+          "label": "06-11-2024",
+          "value": "11/06/2024",
+          "selected": false
+        },
+        {
+          "label": "04-11-2024",
+          "value": "11/04/2024",
+          "selected": false
+        },
+        {
+          "label": "01-11-2024 November-ranglisten",
+          "value": "11/01/2024",
+          "selected": false
+        },
+        {
+          "label": "30-10-2024",
+          "value": "10/30/2024",
+          "selected": false
+        },
+        {
+          "label": "28-10-2024",
+          "value": "10/28/2024",
+          "selected": false
+        },
+        {
+          "label": "25-10-2024",
+          "value": "10/25/2024",
+          "selected": false
+        },
+        {
+          "label": "23-10-2024",
+          "value": "10/23/2024",
+          "selected": false
+        },
+        {
+          "label": "21-10-2024",
+          "value": "10/21/2024",
+          "selected": false
+        },
+        {
+          "label": "18-10-2024",
+          "value": "10/18/2024",
+          "selected": false
+        },
+        {
+          "label": "16-10-2024",
+          "value": "10/16/2024",
+          "selected": false
+        },
+        {
+          "label": "14-10-2024",
+          "value": "10/14/2024",
+          "selected": false
+        },
+        {
+          "label": "11-10-2024",
+          "value": "10/11/2024",
+          "selected": false
+        },
+        {
+          "label": "09-10-2024",
+          "value": "10/09/2024",
+          "selected": false
+        },
+        {
+          "label": "07-10-2024",
+          "value": "10/07/2024",
+          "selected": false
+        },
+        {
+          "label": "04-10-2024",
+          "value": "10/04/2024",
+          "selected": false
+        },
+        {
+          "label": "02-10-2024",
+          "value": "10/02/2024",
+          "selected": false
+        },
+        {
+          "label": "01-10-2024 Oktober-ranglisten",
+          "value": "10/01/2024",
+          "selected": false
+        },
+        {
+          "label": "30-09-2024",
+          "value": "09/30/2024",
+          "selected": false
+        },
+        {
+          "label": "27-09-2024",
+          "value": "09/27/2024",
+          "selected": false
+        },
+        {
+          "label": "25-09-2024",
+          "value": "09/25/2024",
+          "selected": false
+        },
+        {
+          "label": "23-09-2024",
+          "value": "09/23/2024",
+          "selected": false
+        },
+        {
+          "label": "20-09-2024",
+          "value": "09/20/2024",
+          "selected": false
+        },
+        {
+          "label": "18-09-2024",
+          "value": "09/18/2024",
+          "selected": false
+        },
+        {
+          "label": "16-09-2024",
+          "value": "09/16/2024",
+          "selected": false
+        },
+        {
+          "label": "13-09-2024",
+          "value": "09/13/2024",
+          "selected": false
+        },
+        {
+          "label": "11-09-2024",
+          "value": "09/11/2024",
+          "selected": false
+        },
+        {
+          "label": "09-09-2024",
+          "value": "09/09/2024",
+          "selected": false
+        },
+        {
+          "label": "06-09-2024",
+          "value": "09/06/2024",
+          "selected": false
+        },
+        {
+          "label": "04-09-2024",
+          "value": "09/04/2024",
+          "selected": false
+        },
+        {
+          "label": "02-09-2024",
+          "value": "09/02/2024",
+          "selected": false
+        },
+        {
+          "label": "01-09-2024 September-ranglisten",
+          "value": "09/01/2024",
+          "selected": false
+        },
+        {
+          "label": "30-08-2024",
+          "value": "08/30/2024",
+          "selected": false
+        },
+        {
+          "label": "28-08-2024",
+          "value": "08/28/2024",
+          "selected": false
+        },
+        {
+          "label": "26-08-2024",
+          "value": "08/26/2024",
+          "selected": false
+        },
+        {
+          "label": "23-08-2024",
+          "value": "08/23/2024",
+          "selected": false
+        },
+        {
+          "label": "21-08-2024",
+          "value": "08/21/2024",
+          "selected": false
+        },
+        {
+          "label": "19-08-2024",
+          "value": "08/19/2024",
+          "selected": false
+        },
+        {
+          "label": "16-08-2024",
+          "value": "08/16/2024",
+          "selected": false
+        },
+        {
+          "label": "14-08-2024",
+          "value": "08/14/2024",
+          "selected": false
+        },
+        {
+          "label": "12-08-2024",
+          "value": "08/12/2024",
+          "selected": false
+        },
+        {
+          "label": "09-08-2024",
+          "value": "08/09/2024",
+          "selected": false
+        },
+        {
+          "label": "07-08-2024",
+          "value": "08/07/2024",
+          "selected": false
+        },
+        {
+          "label": "05-08-2024",
+          "value": "08/05/2024",
+          "selected": false
+        },
+        {
+          "label": "02-08-2024",
+          "value": "08/02/2024",
+          "selected": false
+        },
+        {
+          "label": "01-08-2024 August-ranglisten",
+          "value": "08/01/2024",
+          "selected": false
+        },
+        {
+          "label": "31-07-2024",
+          "value": "07/31/2024",
+          "selected": false
+        },
+        {
+          "label": "29-07-2024",
+          "value": "07/29/2024",
+          "selected": false
+        },
+        {
+          "label": "17-07-2024",
+          "value": "07/17/2024",
+          "selected": false
+        },
+        {
+          "label": "15-07-2024",
+          "value": "07/15/2024",
+          "selected": false
+        },
+        {
+          "label": "12-07-2024",
+          "value": "07/12/2024",
+          "selected": false
+        },
+        {
+          "label": "10-07-2024",
+          "value": "07/10/2024",
+          "selected": false
+        },
+        {
+          "label": "08-07-2024",
+          "value": "07/08/2024",
+          "selected": false
+        },
+        {
+          "label": "05-07-2024",
+          "value": "07/05/2024",
+          "selected": false
+        },
+        {
+          "label": "03-07-2024",
+          "value": "07/03/2024",
+          "selected": false
+        },
+        {
+          "label": "02-07-2024",
+          "value": "07/02/2024",
+          "selected": false
+        },
+        {
+          "label": "01-07-2024",
+          "value": "07/01/2024",
+          "selected": false
+        }
+      ],
+      "dates": [
+        "2024-07-01",
+        "2024-07-02",
+        "2024-07-03",
+        "2024-07-05",
+        "2024-07-08",
+        "2024-07-10",
+        "2024-07-12",
+        "2024-07-15",
+        "2024-07-17",
+        "2024-07-29",
+        "2024-07-31",
+        "2024-08-01",
+        "2024-08-02",
+        "2024-08-05",
+        "2024-08-07",
+        "2024-08-09",
+        "2024-08-12",
+        "2024-08-14",
+        "2024-08-16",
+        "2024-08-19",
+        "2024-08-21",
+        "2024-08-23",
+        "2024-08-26",
+        "2024-08-28",
+        "2024-08-30",
+        "2024-09-01",
+        "2024-09-02",
+        "2024-09-04",
+        "2024-09-06",
+        "2024-09-09",
+        "2024-09-11",
+        "2024-09-13",
+        "2024-09-16",
+        "2024-09-18",
+        "2024-09-20",
+        "2024-09-23",
+        "2024-09-25",
+        "2024-09-27",
+        "2024-09-30",
+        "2024-10-01",
+        "2024-10-02",
+        "2024-10-04",
+        "2024-10-07",
+        "2024-10-09",
+        "2024-10-11",
+        "2024-10-14",
+        "2024-10-16",
+        "2024-10-18",
+        "2024-10-21",
+        "2024-10-23",
+        "2024-10-25",
+        "2024-10-28",
+        "2024-10-30",
+        "2024-11-01",
+        "2024-11-04",
+        "2024-11-06",
+        "2024-11-08",
+        "2024-11-11",
+        "2024-11-13",
+        "2024-11-15",
+        "2024-11-18",
+        "2024-11-20",
+        "2024-11-22",
+        "2024-11-25",
+        "2024-11-27",
+        "2024-11-29",
+        "2024-12-01",
+        "2024-12-02",
+        "2024-12-04",
+        "2024-12-06",
+        "2024-12-09",
+        "2024-12-11",
+        "2024-12-13",
+        "2024-12-16",
+        "2024-12-18",
+        "2024-12-20",
+        "2024-12-23",
+        "2024-12-25",
+        "2024-12-27",
+        "2024-12-30",
+        "2025-01-01",
+        "2025-01-03",
+        "2025-01-06",
+        "2025-01-08",
+        "2025-01-10",
+        "2025-01-13",
+        "2025-01-15",
+        "2025-01-17",
+        "2025-01-20",
+        "2025-01-22",
+        "2025-01-24",
+        "2025-01-27",
+        "2025-01-29",
+        "2025-01-31",
+        "2025-02-01",
+        "2025-02-03",
+        "2025-02-05",
+        "2025-02-07",
+        "2025-02-10",
+        "2025-02-12",
+        "2025-02-14",
+        "2025-02-17",
+        "2025-02-19",
+        "2025-02-21",
+        "2025-02-24",
+        "2025-02-26",
+        "2025-02-28",
+        "2025-03-01",
+        "2025-03-03",
+        "2025-03-05",
+        "2025-03-07",
+        "2025-03-12",
+        "2025-03-14",
+        "2025-03-17",
+        "2025-03-19",
+        "2025-03-21",
+        "2025-03-24",
+        "2025-03-26",
+        "2025-03-28",
+        "2025-03-31",
+        "2025-04-01",
+        "2025-04-02",
+        "2025-04-04",
+        "2025-04-07",
+        "2025-04-09",
+        "2025-04-11",
+        "2025-04-14",
+        "2025-04-16",
+        "2025-04-18",
+        "2025-04-21",
+        "2025-04-23",
+        "2025-04-25",
+        "2025-04-28",
+        "2025-04-30",
+        "2025-05-01",
+        "2025-05-02",
+        "2025-05-05",
+        "2025-05-07",
+        "2025-05-09",
+        "2025-05-12",
+        "2025-05-14",
+        "2025-05-16",
+        "2025-05-19",
+        "2025-05-21",
+        "2025-05-23",
+        "2025-05-26",
+        "2025-05-28",
+        "2025-05-30",
+        "2025-06-02",
+        "2025-06-04",
+        "2025-06-06",
+        "2025-06-09",
+        "2025-06-11",
+        "2025-06-13",
+        "2025-06-16",
+        "2025-06-18",
+        "2025-06-20",
+        "2025-06-23",
+        "2025-06-25"
+      ],
+      "weekdays": {
+        "søndag": 2,
+        "mandag": 50,
+        "tirsdag": 3,
+        "onsdag": 51,
+        "torsdag": 2,
+        "fredag": 49,
+        "lørdag": 2
+      },
+      "gaps": {
+        "1": 14,
+        "2": 98,
+        "3": 44,
+        "5": 1,
+        "12": 1
+      },
+      "max_gap": 12
+    },
+    {
+      "season": 2025,
+      "list": 289,
+      "request": 12,
+      "http_status": 200,
+      "status": "versions",
+      "version_entries": 159,
+      "dated_entries": 158,
+      "unique_dates": 158,
+      "earliest": "2025-07-01",
+      "latest": "2026-06-29",
+      "versions": [
+        {
+          "label": "Seneste",
+          "value": "",
+          "selected": true
+        },
+        {
+          "label": "29-06-2026",
+          "value": "06/29/2026",
+          "selected": false
+        },
+        {
+          "label": "16-06-2026",
+          "value": "06/16/2026",
+          "selected": false
+        },
+        {
+          "label": "15-06-2026",
+          "value": "06/15/2026",
+          "selected": false
+        },
+        {
+          "label": "10-06-2026",
+          "value": "06/10/2026",
+          "selected": false
+        },
+        {
+          "label": "09-06-2026",
+          "value": "06/09/2026",
+          "selected": false
+        },
+        {
+          "label": "08-06-2026",
+          "value": "06/08/2026",
+          "selected": false
+        },
+        {
+          "label": "05-06-2026",
+          "value": "06/05/2026",
+          "selected": false
+        },
+        {
+          "label": "03-06-2026",
+          "value": "06/03/2026",
+          "selected": false
+        },
+        {
+          "label": "02-06-2026",
+          "value": "06/02/2026",
+          "selected": false
+        },
+        {
+          "label": "01-06-2026",
+          "value": "06/01/2026",
+          "selected": false
+        },
+        {
+          "label": "29-05-2026",
+          "value": "05/29/2026",
+          "selected": false
+        },
+        {
+          "label": "27-05-2026",
+          "value": "05/27/2026",
+          "selected": false
+        },
+        {
+          "label": "25-05-2026",
+          "value": "05/25/2026",
+          "selected": false
+        },
+        {
+          "label": "22-05-2026",
+          "value": "05/22/2026",
+          "selected": false
+        },
+        {
+          "label": "21-05-2026",
+          "value": "05/21/2026",
+          "selected": false
+        },
+        {
+          "label": "20-05-2026",
+          "value": "05/20/2026",
+          "selected": false
+        },
+        {
+          "label": "19-05-2026",
+          "value": "05/19/2026",
+          "selected": false
+        },
+        {
+          "label": "18-05-2026",
+          "value": "05/18/2026",
+          "selected": false
+        },
+        {
+          "label": "15-05-2026",
+          "value": "05/15/2026",
+          "selected": false
+        },
+        {
+          "label": "13-05-2026",
+          "value": "05/13/2026",
+          "selected": false
+        },
+        {
+          "label": "11-05-2026",
+          "value": "05/11/2026",
+          "selected": false
+        },
+        {
+          "label": "08-05-2026",
+          "value": "05/08/2026",
+          "selected": false
+        },
+        {
+          "label": "06-05-2026",
+          "value": "05/06/2026",
+          "selected": false
+        },
+        {
+          "label": "04-05-2026",
+          "value": "05/04/2026",
+          "selected": false
+        },
+        {
+          "label": "01-05-2026",
+          "value": "05/01/2026",
+          "selected": false
+        },
+        {
+          "label": "29-04-2026",
+          "value": "04/29/2026",
+          "selected": false
+        },
+        {
+          "label": "28-04-2026",
+          "value": "04/28/2026",
+          "selected": false
+        },
+        {
+          "label": "27-04-2026",
+          "value": "04/27/2026",
+          "selected": false
+        },
+        {
+          "label": "24-04-2026",
+          "value": "04/24/2026",
+          "selected": false
+        },
+        {
+          "label": "22-04-2026",
+          "value": "04/22/2026",
+          "selected": false
+        },
+        {
+          "label": "20-04-2026",
+          "value": "04/20/2026",
+          "selected": false
+        },
+        {
+          "label": "17-04-2026",
+          "value": "04/17/2026",
+          "selected": false
+        },
+        {
+          "label": "15-04-2026",
+          "value": "04/15/2026",
+          "selected": false
+        },
+        {
+          "label": "13-04-2026",
+          "value": "04/13/2026",
+          "selected": false
+        },
+        {
+          "label": "10-04-2026",
+          "value": "04/10/2026",
+          "selected": false
+        },
+        {
+          "label": "08-04-2026",
+          "value": "04/08/2026",
+          "selected": false
+        },
+        {
+          "label": "06-04-2026",
+          "value": "04/06/2026",
+          "selected": false
+        },
+        {
+          "label": "03-04-2026",
+          "value": "04/03/2026",
+          "selected": false
+        },
+        {
+          "label": "01-04-2026 April-ranglisten",
+          "value": "04/01/2026",
+          "selected": false
+        },
+        {
+          "label": "31-03-2026",
+          "value": "03/31/2026",
+          "selected": false
+        },
+        {
+          "label": "30-03-2026",
+          "value": "03/30/2026",
+          "selected": false
+        },
+        {
+          "label": "27-03-2026",
+          "value": "03/27/2026",
+          "selected": false
+        },
+        {
+          "label": "26-03-2026",
+          "value": "03/26/2026",
+          "selected": false
+        },
+        {
+          "label": "25-03-2026",
+          "value": "03/25/2026",
+          "selected": false
+        },
+        {
+          "label": "23-03-2026",
+          "value": "03/23/2026",
+          "selected": false
+        },
+        {
+          "label": "20-03-2026",
+          "value": "03/20/2026",
+          "selected": false
+        },
+        {
+          "label": "18-03-2026",
+          "value": "03/18/2026",
+          "selected": false
+        },
+        {
+          "label": "17-03-2026",
+          "value": "03/17/2026",
+          "selected": false
+        },
+        {
+          "label": "16-03-2026",
+          "value": "03/16/2026",
+          "selected": false
+        },
+        {
+          "label": "13-03-2026",
+          "value": "03/13/2026",
+          "selected": false
+        },
+        {
+          "label": "12-03-2026",
+          "value": "03/12/2026",
+          "selected": false
+        },
+        {
+          "label": "11-03-2026",
+          "value": "03/11/2026",
+          "selected": false
+        },
+        {
+          "label": "09-03-2026",
+          "value": "03/09/2026",
+          "selected": false
+        },
+        {
+          "label": "06-03-2026",
+          "value": "03/06/2026",
+          "selected": false
+        },
+        {
+          "label": "04-03-2026",
+          "value": "03/04/2026",
+          "selected": false
+        },
+        {
+          "label": "02-03-2026",
+          "value": "03/02/2026",
+          "selected": false
+        },
+        {
+          "label": "01-03-2026 Marts-ranglisten",
+          "value": "03/01/2026",
+          "selected": false
+        },
+        {
+          "label": "27-02-2026",
+          "value": "02/27/2026",
+          "selected": false
+        },
+        {
+          "label": "25-02-2026",
+          "value": "02/25/2026",
+          "selected": false
+        },
+        {
+          "label": "23-02-2026",
+          "value": "02/23/2026",
+          "selected": false
+        },
+        {
+          "label": "20-02-2026",
+          "value": "02/20/2026",
+          "selected": false
+        },
+        {
+          "label": "18-02-2026",
+          "value": "02/18/2026",
+          "selected": false
+        },
+        {
+          "label": "16-02-2026",
+          "value": "02/16/2026",
+          "selected": false
+        },
+        {
+          "label": "13-02-2026",
+          "value": "02/13/2026",
+          "selected": false
+        },
+        {
+          "label": "12-02-2026",
+          "value": "02/12/2026",
+          "selected": false
+        },
+        {
+          "label": "11-02-2026",
+          "value": "02/11/2026",
+          "selected": false
+        },
+        {
+          "label": "09-02-2026",
+          "value": "02/09/2026",
+          "selected": false
+        },
+        {
+          "label": "06-02-2026",
+          "value": "02/06/2026",
+          "selected": false
+        },
+        {
+          "label": "04-02-2026",
+          "value": "02/04/2026",
+          "selected": false
+        },
+        {
+          "label": "02-02-2026",
+          "value": "02/02/2026",
+          "selected": false
+        },
+        {
+          "label": "01-02-2026 Februar-ranglisten",
+          "value": "02/01/2026",
+          "selected": false
+        },
+        {
+          "label": "30-01-2026",
+          "value": "01/30/2026",
+          "selected": false
+        },
+        {
+          "label": "28-01-2026",
+          "value": "01/28/2026",
+          "selected": false
+        },
+        {
+          "label": "26-01-2026",
+          "value": "01/26/2026",
+          "selected": false
+        },
+        {
+          "label": "23-01-2026",
+          "value": "01/23/2026",
+          "selected": false
+        },
+        {
+          "label": "21-01-2026",
+          "value": "01/21/2026",
+          "selected": false
+        },
+        {
+          "label": "19-01-2026",
+          "value": "01/19/2026",
+          "selected": false
+        },
+        {
+          "label": "16-01-2026",
+          "value": "01/16/2026",
+          "selected": false
+        },
+        {
+          "label": "14-01-2026",
+          "value": "01/14/2026",
+          "selected": false
+        },
+        {
+          "label": "12-01-2026",
+          "value": "01/12/2026",
+          "selected": false
+        },
+        {
+          "label": "09-01-2026",
+          "value": "01/09/2026",
+          "selected": false
+        },
+        {
+          "label": "07-01-2026",
+          "value": "01/07/2026",
+          "selected": false
+        },
+        {
+          "label": "05-01-2026",
+          "value": "01/05/2026",
+          "selected": false
+        },
+        {
+          "label": "02-01-2026",
+          "value": "01/02/2026",
+          "selected": false
+        },
+        {
+          "label": "01-01-2026 Januar-ranglisten",
+          "value": "01/01/2026",
+          "selected": false
+        },
+        {
+          "label": "31-12-2025",
+          "value": "12/31/2025",
+          "selected": false
+        },
+        {
+          "label": "29-12-2025",
+          "value": "12/29/2025",
+          "selected": false
+        },
+        {
+          "label": "26-12-2025",
+          "value": "12/26/2025",
+          "selected": false
+        },
+        {
+          "label": "24-12-2025",
+          "value": "12/24/2025",
+          "selected": false
+        },
+        {
+          "label": "22-12-2025",
+          "value": "12/22/2025",
+          "selected": false
+        },
+        {
+          "label": "19-12-2025",
+          "value": "12/19/2025",
+          "selected": false
+        },
+        {
+          "label": "17-12-2025",
+          "value": "12/17/2025",
+          "selected": false
+        },
+        {
+          "label": "15-12-2025",
+          "value": "12/15/2025",
+          "selected": false
+        },
+        {
+          "label": "12-12-2025",
+          "value": "12/12/2025",
+          "selected": false
+        },
+        {
+          "label": "10-12-2025",
+          "value": "12/10/2025",
+          "selected": false
+        },
+        {
+          "label": "08-12-2025",
+          "value": "12/08/2025",
+          "selected": false
+        },
+        {
+          "label": "05-12-2025",
+          "value": "12/05/2025",
+          "selected": false
+        },
+        {
+          "label": "03-12-2025",
+          "value": "12/03/2025",
+          "selected": false
+        },
+        {
+          "label": "01-12-2025 December-ranglisten",
+          "value": "12/01/2025",
+          "selected": false
+        },
+        {
+          "label": "28-11-2025",
+          "value": "11/28/2025",
+          "selected": false
+        },
+        {
+          "label": "26-11-2025",
+          "value": "11/26/2025",
+          "selected": false
+        },
+        {
+          "label": "24-11-2025",
+          "value": "11/24/2025",
+          "selected": false
+        },
+        {
+          "label": "21-11-2025",
+          "value": "11/21/2025",
+          "selected": false
+        },
+        {
+          "label": "17-11-2025",
+          "value": "11/17/2025",
+          "selected": false
+        },
+        {
+          "label": "14-11-2025",
+          "value": "11/14/2025",
+          "selected": false
+        },
+        {
+          "label": "12-11-2025",
+          "value": "11/12/2025",
+          "selected": false
+        },
+        {
+          "label": "10-11-2025",
+          "value": "11/10/2025",
+          "selected": false
+        },
+        {
+          "label": "07-11-2025",
+          "value": "11/07/2025",
+          "selected": false
+        },
+        {
+          "label": "05-11-2025",
+          "value": "11/05/2025",
+          "selected": false
+        },
+        {
+          "label": "03-11-2025",
+          "value": "11/03/2025",
+          "selected": false
+        },
+        {
+          "label": "01-11-2025 November-ranglisten",
+          "value": "11/01/2025",
+          "selected": false
+        },
+        {
+          "label": "31-10-2025",
+          "value": "10/31/2025",
+          "selected": false
+        },
+        {
+          "label": "29-10-2025",
+          "value": "10/29/2025",
+          "selected": false
+        },
+        {
+          "label": "27-10-2025",
+          "value": "10/27/2025",
+          "selected": false
+        },
+        {
+          "label": "24-10-2025",
+          "value": "10/24/2025",
+          "selected": false
+        },
+        {
+          "label": "22-10-2025",
+          "value": "10/22/2025",
+          "selected": false
+        },
+        {
+          "label": "20-10-2025",
+          "value": "10/20/2025",
+          "selected": false
+        },
+        {
+          "label": "17-10-2025",
+          "value": "10/17/2025",
+          "selected": false
+        },
+        {
+          "label": "15-10-2025",
+          "value": "10/15/2025",
+          "selected": false
+        },
+        {
+          "label": "13-10-2025",
+          "value": "10/13/2025",
+          "selected": false
+        },
+        {
+          "label": "10-10-2025",
+          "value": "10/10/2025",
+          "selected": false
+        },
+        {
+          "label": "08-10-2025",
+          "value": "10/08/2025",
+          "selected": false
+        },
+        {
+          "label": "06-10-2025",
+          "value": "10/06/2025",
+          "selected": false
+        },
+        {
+          "label": "03-10-2025",
+          "value": "10/03/2025",
+          "selected": false
+        },
+        {
+          "label": "01-10-2025 Oktober-ranglisten",
+          "value": "10/01/2025",
+          "selected": false
+        },
+        {
+          "label": "29-09-2025",
+          "value": "09/29/2025",
+          "selected": false
+        },
+        {
+          "label": "26-09-2025",
+          "value": "09/26/2025",
+          "selected": false
+        },
+        {
+          "label": "24-09-2025",
+          "value": "09/24/2025",
+          "selected": false
+        },
+        {
+          "label": "22-09-2025",
+          "value": "09/22/2025",
+          "selected": false
+        },
+        {
+          "label": "19-09-2025",
+          "value": "09/19/2025",
+          "selected": false
+        },
+        {
+          "label": "17-09-2025",
+          "value": "09/17/2025",
+          "selected": false
+        },
+        {
+          "label": "15-09-2025",
+          "value": "09/15/2025",
+          "selected": false
+        },
+        {
+          "label": "12-09-2025",
+          "value": "09/12/2025",
+          "selected": false
+        },
+        {
+          "label": "10-09-2025",
+          "value": "09/10/2025",
+          "selected": false
+        },
+        {
+          "label": "08-09-2025",
+          "value": "09/08/2025",
+          "selected": false
+        },
+        {
+          "label": "05-09-2025",
+          "value": "09/05/2025",
+          "selected": false
+        },
+        {
+          "label": "03-09-2025",
+          "value": "09/03/2025",
+          "selected": false
+        },
+        {
+          "label": "01-09-2025 September-ranglisten",
+          "value": "09/01/2025",
+          "selected": false
+        },
+        {
+          "label": "29-08-2025",
+          "value": "08/29/2025",
+          "selected": false
+        },
+        {
+          "label": "27-08-2025",
+          "value": "08/27/2025",
+          "selected": false
+        },
+        {
+          "label": "25-08-2025",
+          "value": "08/25/2025",
+          "selected": false
+        },
+        {
+          "label": "22-08-2025",
+          "value": "08/22/2025",
+          "selected": false
+        },
+        {
+          "label": "20-08-2025",
+          "value": "08/20/2025",
+          "selected": false
+        },
+        {
+          "label": "18-08-2025",
+          "value": "08/18/2025",
+          "selected": false
+        },
+        {
+          "label": "15-08-2025",
+          "value": "08/15/2025",
+          "selected": false
+        },
+        {
+          "label": "13-08-2025",
+          "value": "08/13/2025",
+          "selected": false
+        },
+        {
+          "label": "11-08-2025",
+          "value": "08/11/2025",
+          "selected": false
+        },
+        {
+          "label": "08-08-2025",
+          "value": "08/08/2025",
+          "selected": false
+        },
+        {
+          "label": "06-08-2025",
+          "value": "08/06/2025",
+          "selected": false
+        },
+        {
+          "label": "04-08-2025",
+          "value": "08/04/2025",
+          "selected": false
+        },
+        {
+          "label": "01-08-2025 August-ranglisten",
+          "value": "08/01/2025",
+          "selected": false
+        },
+        {
+          "label": "30-07-2025",
+          "value": "07/30/2025",
+          "selected": false
+        },
+        {
+          "label": "28-07-2025",
+          "value": "07/28/2025",
+          "selected": false
+        },
+        {
+          "label": "25-07-2025",
+          "value": "07/25/2025",
+          "selected": false
+        },
+        {
+          "label": "23-07-2025",
+          "value": "07/23/2025",
+          "selected": false
+        },
+        {
+          "label": "21-07-2025",
+          "value": "07/21/2025",
+          "selected": false
+        },
+        {
+          "label": "02-07-2025",
+          "value": "07/02/2025",
+          "selected": false
+        },
+        {
+          "label": "01-07-2025 Juli Ranglisten",
+          "value": "07/01/2025",
+          "selected": false
+        }
+      ],
+      "dates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-21",
+        "2025-07-23",
+        "2025-07-25",
+        "2025-07-28",
+        "2025-07-30",
+        "2025-08-01",
+        "2025-08-04",
+        "2025-08-06",
+        "2025-08-08",
+        "2025-08-11",
+        "2025-08-13",
+        "2025-08-15",
+        "2025-08-18",
+        "2025-08-20",
+        "2025-08-22",
+        "2025-08-25",
+        "2025-08-27",
+        "2025-08-29",
+        "2025-09-01",
+        "2025-09-03",
+        "2025-09-05",
+        "2025-09-08",
+        "2025-09-10",
+        "2025-09-12",
+        "2025-09-15",
+        "2025-09-17",
+        "2025-09-19",
+        "2025-09-22",
+        "2025-09-24",
+        "2025-09-26",
+        "2025-09-29",
+        "2025-10-01",
+        "2025-10-03",
+        "2025-10-06",
+        "2025-10-08",
+        "2025-10-10",
+        "2025-10-13",
+        "2025-10-15",
+        "2025-10-17",
+        "2025-10-20",
+        "2025-10-22",
+        "2025-10-24",
+        "2025-10-27",
+        "2025-10-29",
+        "2025-10-31",
+        "2025-11-01",
+        "2025-11-03",
+        "2025-11-05",
+        "2025-11-07",
+        "2025-11-10",
+        "2025-11-12",
+        "2025-11-14",
+        "2025-11-17",
+        "2025-11-21",
+        "2025-11-24",
+        "2025-11-26",
+        "2025-11-28",
+        "2025-12-01",
+        "2025-12-03",
+        "2025-12-05",
+        "2025-12-08",
+        "2025-12-10",
+        "2025-12-12",
+        "2025-12-15",
+        "2025-12-17",
+        "2025-12-19",
+        "2025-12-22",
+        "2025-12-24",
+        "2025-12-26",
+        "2025-12-29",
+        "2025-12-31",
+        "2026-01-01",
+        "2026-01-02",
+        "2026-01-05",
+        "2026-01-07",
+        "2026-01-09",
+        "2026-01-12",
+        "2026-01-14",
+        "2026-01-16",
+        "2026-01-19",
+        "2026-01-21",
+        "2026-01-23",
+        "2026-01-26",
+        "2026-01-28",
+        "2026-01-30",
+        "2026-02-01",
+        "2026-02-02",
+        "2026-02-04",
+        "2026-02-06",
+        "2026-02-09",
+        "2026-02-11",
+        "2026-02-12",
+        "2026-02-13",
+        "2026-02-16",
+        "2026-02-18",
+        "2026-02-20",
+        "2026-02-23",
+        "2026-02-25",
+        "2026-02-27",
+        "2026-03-01",
+        "2026-03-02",
+        "2026-03-04",
+        "2026-03-06",
+        "2026-03-09",
+        "2026-03-11",
+        "2026-03-12",
+        "2026-03-13",
+        "2026-03-16",
+        "2026-03-17",
+        "2026-03-18",
+        "2026-03-20",
+        "2026-03-23",
+        "2026-03-25",
+        "2026-03-26",
+        "2026-03-27",
+        "2026-03-30",
+        "2026-03-31",
+        "2026-04-01",
+        "2026-04-03",
+        "2026-04-06",
+        "2026-04-08",
+        "2026-04-10",
+        "2026-04-13",
+        "2026-04-15",
+        "2026-04-17",
+        "2026-04-20",
+        "2026-04-22",
+        "2026-04-24",
+        "2026-04-27",
+        "2026-04-28",
+        "2026-04-29",
+        "2026-05-01",
+        "2026-05-04",
+        "2026-05-06",
+        "2026-05-08",
+        "2026-05-11",
+        "2026-05-13",
+        "2026-05-15",
+        "2026-05-18",
+        "2026-05-19",
+        "2026-05-20",
+        "2026-05-21",
+        "2026-05-22",
+        "2026-05-25",
+        "2026-05-27",
+        "2026-05-29",
+        "2026-06-01",
+        "2026-06-02",
+        "2026-06-03",
+        "2026-06-05",
+        "2026-06-08",
+        "2026-06-09",
+        "2026-06-10",
+        "2026-06-15",
+        "2026-06-16",
+        "2026-06-29"
+      ],
+      "weekdays": {
+        "søndag": 2,
+        "mandag": 49,
+        "tirsdag": 8,
+        "onsdag": 47,
+        "torsdag": 5,
+        "fredag": 46,
+        "lørdag": 1
+      },
+      "gaps": {
+        "1": 27,
+        "2": 83,
+        "3": 43,
+        "4": 1,
+        "5": 1,
+        "13": 1,
+        "19": 1
+      },
+      "max_gap": 19
+    },
+    {
+      "season": 2025,
+      "list": 292,
+      "request": 13,
+      "http_status": 200,
+      "status": "versions",
+      "version_entries": 159,
+      "dated_entries": 158,
+      "unique_dates": 158,
+      "earliest": "2025-07-01",
+      "latest": "2026-06-29",
+      "versions": [
+        {
+          "label": "Seneste",
+          "value": "",
+          "selected": true
+        },
+        {
+          "label": "29-06-2026",
+          "value": "06/29/2026",
+          "selected": false
+        },
+        {
+          "label": "16-06-2026",
+          "value": "06/16/2026",
+          "selected": false
+        },
+        {
+          "label": "15-06-2026",
+          "value": "06/15/2026",
+          "selected": false
+        },
+        {
+          "label": "10-06-2026",
+          "value": "06/10/2026",
+          "selected": false
+        },
+        {
+          "label": "09-06-2026",
+          "value": "06/09/2026",
+          "selected": false
+        },
+        {
+          "label": "08-06-2026",
+          "value": "06/08/2026",
+          "selected": false
+        },
+        {
+          "label": "05-06-2026",
+          "value": "06/05/2026",
+          "selected": false
+        },
+        {
+          "label": "03-06-2026",
+          "value": "06/03/2026",
+          "selected": false
+        },
+        {
+          "label": "02-06-2026",
+          "value": "06/02/2026",
+          "selected": false
+        },
+        {
+          "label": "01-06-2026",
+          "value": "06/01/2026",
+          "selected": false
+        },
+        {
+          "label": "29-05-2026",
+          "value": "05/29/2026",
+          "selected": false
+        },
+        {
+          "label": "27-05-2026",
+          "value": "05/27/2026",
+          "selected": false
+        },
+        {
+          "label": "25-05-2026",
+          "value": "05/25/2026",
+          "selected": false
+        },
+        {
+          "label": "22-05-2026",
+          "value": "05/22/2026",
+          "selected": false
+        },
+        {
+          "label": "21-05-2026",
+          "value": "05/21/2026",
+          "selected": false
+        },
+        {
+          "label": "20-05-2026",
+          "value": "05/20/2026",
+          "selected": false
+        },
+        {
+          "label": "19-05-2026",
+          "value": "05/19/2026",
+          "selected": false
+        },
+        {
+          "label": "18-05-2026",
+          "value": "05/18/2026",
+          "selected": false
+        },
+        {
+          "label": "15-05-2026",
+          "value": "05/15/2026",
+          "selected": false
+        },
+        {
+          "label": "13-05-2026",
+          "value": "05/13/2026",
+          "selected": false
+        },
+        {
+          "label": "11-05-2026",
+          "value": "05/11/2026",
+          "selected": false
+        },
+        {
+          "label": "08-05-2026",
+          "value": "05/08/2026",
+          "selected": false
+        },
+        {
+          "label": "06-05-2026",
+          "value": "05/06/2026",
+          "selected": false
+        },
+        {
+          "label": "04-05-2026",
+          "value": "05/04/2026",
+          "selected": false
+        },
+        {
+          "label": "01-05-2026",
+          "value": "05/01/2026",
+          "selected": false
+        },
+        {
+          "label": "29-04-2026",
+          "value": "04/29/2026",
+          "selected": false
+        },
+        {
+          "label": "28-04-2026",
+          "value": "04/28/2026",
+          "selected": false
+        },
+        {
+          "label": "27-04-2026",
+          "value": "04/27/2026",
+          "selected": false
+        },
+        {
+          "label": "24-04-2026",
+          "value": "04/24/2026",
+          "selected": false
+        },
+        {
+          "label": "22-04-2026",
+          "value": "04/22/2026",
+          "selected": false
+        },
+        {
+          "label": "20-04-2026",
+          "value": "04/20/2026",
+          "selected": false
+        },
+        {
+          "label": "17-04-2026",
+          "value": "04/17/2026",
+          "selected": false
+        },
+        {
+          "label": "15-04-2026",
+          "value": "04/15/2026",
+          "selected": false
+        },
+        {
+          "label": "13-04-2026",
+          "value": "04/13/2026",
+          "selected": false
+        },
+        {
+          "label": "10-04-2026",
+          "value": "04/10/2026",
+          "selected": false
+        },
+        {
+          "label": "08-04-2026",
+          "value": "04/08/2026",
+          "selected": false
+        },
+        {
+          "label": "06-04-2026",
+          "value": "04/06/2026",
+          "selected": false
+        },
+        {
+          "label": "03-04-2026",
+          "value": "04/03/2026",
+          "selected": false
+        },
+        {
+          "label": "01-04-2026 April-ranglisten",
+          "value": "04/01/2026",
+          "selected": false
+        },
+        {
+          "label": "31-03-2026",
+          "value": "03/31/2026",
+          "selected": false
+        },
+        {
+          "label": "30-03-2026",
+          "value": "03/30/2026",
+          "selected": false
+        },
+        {
+          "label": "27-03-2026",
+          "value": "03/27/2026",
+          "selected": false
+        },
+        {
+          "label": "26-03-2026",
+          "value": "03/26/2026",
+          "selected": false
+        },
+        {
+          "label": "25-03-2026",
+          "value": "03/25/2026",
+          "selected": false
+        },
+        {
+          "label": "23-03-2026",
+          "value": "03/23/2026",
+          "selected": false
+        },
+        {
+          "label": "20-03-2026",
+          "value": "03/20/2026",
+          "selected": false
+        },
+        {
+          "label": "18-03-2026",
+          "value": "03/18/2026",
+          "selected": false
+        },
+        {
+          "label": "17-03-2026",
+          "value": "03/17/2026",
+          "selected": false
+        },
+        {
+          "label": "16-03-2026",
+          "value": "03/16/2026",
+          "selected": false
+        },
+        {
+          "label": "13-03-2026",
+          "value": "03/13/2026",
+          "selected": false
+        },
+        {
+          "label": "12-03-2026",
+          "value": "03/12/2026",
+          "selected": false
+        },
+        {
+          "label": "11-03-2026",
+          "value": "03/11/2026",
+          "selected": false
+        },
+        {
+          "label": "09-03-2026",
+          "value": "03/09/2026",
+          "selected": false
+        },
+        {
+          "label": "06-03-2026",
+          "value": "03/06/2026",
+          "selected": false
+        },
+        {
+          "label": "04-03-2026",
+          "value": "03/04/2026",
+          "selected": false
+        },
+        {
+          "label": "02-03-2026",
+          "value": "03/02/2026",
+          "selected": false
+        },
+        {
+          "label": "01-03-2026 Marts-ranglisten",
+          "value": "03/01/2026",
+          "selected": false
+        },
+        {
+          "label": "27-02-2026",
+          "value": "02/27/2026",
+          "selected": false
+        },
+        {
+          "label": "25-02-2026",
+          "value": "02/25/2026",
+          "selected": false
+        },
+        {
+          "label": "23-02-2026",
+          "value": "02/23/2026",
+          "selected": false
+        },
+        {
+          "label": "20-02-2026",
+          "value": "02/20/2026",
+          "selected": false
+        },
+        {
+          "label": "18-02-2026",
+          "value": "02/18/2026",
+          "selected": false
+        },
+        {
+          "label": "16-02-2026",
+          "value": "02/16/2026",
+          "selected": false
+        },
+        {
+          "label": "13-02-2026",
+          "value": "02/13/2026",
+          "selected": false
+        },
+        {
+          "label": "12-02-2026",
+          "value": "02/12/2026",
+          "selected": false
+        },
+        {
+          "label": "11-02-2026",
+          "value": "02/11/2026",
+          "selected": false
+        },
+        {
+          "label": "09-02-2026",
+          "value": "02/09/2026",
+          "selected": false
+        },
+        {
+          "label": "06-02-2026",
+          "value": "02/06/2026",
+          "selected": false
+        },
+        {
+          "label": "04-02-2026",
+          "value": "02/04/2026",
+          "selected": false
+        },
+        {
+          "label": "02-02-2026",
+          "value": "02/02/2026",
+          "selected": false
+        },
+        {
+          "label": "01-02-2026 Februar-ranglisten",
+          "value": "02/01/2026",
+          "selected": false
+        },
+        {
+          "label": "30-01-2026",
+          "value": "01/30/2026",
+          "selected": false
+        },
+        {
+          "label": "28-01-2026",
+          "value": "01/28/2026",
+          "selected": false
+        },
+        {
+          "label": "26-01-2026",
+          "value": "01/26/2026",
+          "selected": false
+        },
+        {
+          "label": "23-01-2026",
+          "value": "01/23/2026",
+          "selected": false
+        },
+        {
+          "label": "21-01-2026",
+          "value": "01/21/2026",
+          "selected": false
+        },
+        {
+          "label": "19-01-2026",
+          "value": "01/19/2026",
+          "selected": false
+        },
+        {
+          "label": "16-01-2026",
+          "value": "01/16/2026",
+          "selected": false
+        },
+        {
+          "label": "14-01-2026",
+          "value": "01/14/2026",
+          "selected": false
+        },
+        {
+          "label": "12-01-2026",
+          "value": "01/12/2026",
+          "selected": false
+        },
+        {
+          "label": "09-01-2026",
+          "value": "01/09/2026",
+          "selected": false
+        },
+        {
+          "label": "07-01-2026",
+          "value": "01/07/2026",
+          "selected": false
+        },
+        {
+          "label": "05-01-2026",
+          "value": "01/05/2026",
+          "selected": false
+        },
+        {
+          "label": "02-01-2026",
+          "value": "01/02/2026",
+          "selected": false
+        },
+        {
+          "label": "01-01-2026 Januar-ranglisten",
+          "value": "01/01/2026",
+          "selected": false
+        },
+        {
+          "label": "31-12-2025",
+          "value": "12/31/2025",
+          "selected": false
+        },
+        {
+          "label": "29-12-2025",
+          "value": "12/29/2025",
+          "selected": false
+        },
+        {
+          "label": "26-12-2025",
+          "value": "12/26/2025",
+          "selected": false
+        },
+        {
+          "label": "24-12-2025",
+          "value": "12/24/2025",
+          "selected": false
+        },
+        {
+          "label": "22-12-2025",
+          "value": "12/22/2025",
+          "selected": false
+        },
+        {
+          "label": "19-12-2025",
+          "value": "12/19/2025",
+          "selected": false
+        },
+        {
+          "label": "17-12-2025",
+          "value": "12/17/2025",
+          "selected": false
+        },
+        {
+          "label": "15-12-2025",
+          "value": "12/15/2025",
+          "selected": false
+        },
+        {
+          "label": "12-12-2025",
+          "value": "12/12/2025",
+          "selected": false
+        },
+        {
+          "label": "10-12-2025",
+          "value": "12/10/2025",
+          "selected": false
+        },
+        {
+          "label": "08-12-2025",
+          "value": "12/08/2025",
+          "selected": false
+        },
+        {
+          "label": "05-12-2025",
+          "value": "12/05/2025",
+          "selected": false
+        },
+        {
+          "label": "03-12-2025",
+          "value": "12/03/2025",
+          "selected": false
+        },
+        {
+          "label": "01-12-2025 December-ranglisten",
+          "value": "12/01/2025",
+          "selected": false
+        },
+        {
+          "label": "28-11-2025",
+          "value": "11/28/2025",
+          "selected": false
+        },
+        {
+          "label": "26-11-2025",
+          "value": "11/26/2025",
+          "selected": false
+        },
+        {
+          "label": "24-11-2025",
+          "value": "11/24/2025",
+          "selected": false
+        },
+        {
+          "label": "21-11-2025",
+          "value": "11/21/2025",
+          "selected": false
+        },
+        {
+          "label": "17-11-2025",
+          "value": "11/17/2025",
+          "selected": false
+        },
+        {
+          "label": "14-11-2025",
+          "value": "11/14/2025",
+          "selected": false
+        },
+        {
+          "label": "12-11-2025",
+          "value": "11/12/2025",
+          "selected": false
+        },
+        {
+          "label": "10-11-2025",
+          "value": "11/10/2025",
+          "selected": false
+        },
+        {
+          "label": "07-11-2025",
+          "value": "11/07/2025",
+          "selected": false
+        },
+        {
+          "label": "05-11-2025",
+          "value": "11/05/2025",
+          "selected": false
+        },
+        {
+          "label": "03-11-2025",
+          "value": "11/03/2025",
+          "selected": false
+        },
+        {
+          "label": "01-11-2025 November-ranglisten",
+          "value": "11/01/2025",
+          "selected": false
+        },
+        {
+          "label": "31-10-2025",
+          "value": "10/31/2025",
+          "selected": false
+        },
+        {
+          "label": "29-10-2025",
+          "value": "10/29/2025",
+          "selected": false
+        },
+        {
+          "label": "27-10-2025",
+          "value": "10/27/2025",
+          "selected": false
+        },
+        {
+          "label": "24-10-2025",
+          "value": "10/24/2025",
+          "selected": false
+        },
+        {
+          "label": "22-10-2025",
+          "value": "10/22/2025",
+          "selected": false
+        },
+        {
+          "label": "20-10-2025",
+          "value": "10/20/2025",
+          "selected": false
+        },
+        {
+          "label": "17-10-2025",
+          "value": "10/17/2025",
+          "selected": false
+        },
+        {
+          "label": "15-10-2025",
+          "value": "10/15/2025",
+          "selected": false
+        },
+        {
+          "label": "13-10-2025",
+          "value": "10/13/2025",
+          "selected": false
+        },
+        {
+          "label": "10-10-2025",
+          "value": "10/10/2025",
+          "selected": false
+        },
+        {
+          "label": "08-10-2025",
+          "value": "10/08/2025",
+          "selected": false
+        },
+        {
+          "label": "06-10-2025",
+          "value": "10/06/2025",
+          "selected": false
+        },
+        {
+          "label": "03-10-2025",
+          "value": "10/03/2025",
+          "selected": false
+        },
+        {
+          "label": "01-10-2025 Oktober-ranglisten",
+          "value": "10/01/2025",
+          "selected": false
+        },
+        {
+          "label": "29-09-2025",
+          "value": "09/29/2025",
+          "selected": false
+        },
+        {
+          "label": "26-09-2025",
+          "value": "09/26/2025",
+          "selected": false
+        },
+        {
+          "label": "24-09-2025",
+          "value": "09/24/2025",
+          "selected": false
+        },
+        {
+          "label": "22-09-2025",
+          "value": "09/22/2025",
+          "selected": false
+        },
+        {
+          "label": "19-09-2025",
+          "value": "09/19/2025",
+          "selected": false
+        },
+        {
+          "label": "17-09-2025",
+          "value": "09/17/2025",
+          "selected": false
+        },
+        {
+          "label": "15-09-2025",
+          "value": "09/15/2025",
+          "selected": false
+        },
+        {
+          "label": "12-09-2025",
+          "value": "09/12/2025",
+          "selected": false
+        },
+        {
+          "label": "10-09-2025",
+          "value": "09/10/2025",
+          "selected": false
+        },
+        {
+          "label": "08-09-2025",
+          "value": "09/08/2025",
+          "selected": false
+        },
+        {
+          "label": "05-09-2025",
+          "value": "09/05/2025",
+          "selected": false
+        },
+        {
+          "label": "03-09-2025",
+          "value": "09/03/2025",
+          "selected": false
+        },
+        {
+          "label": "01-09-2025 September-ranglisten",
+          "value": "09/01/2025",
+          "selected": false
+        },
+        {
+          "label": "29-08-2025",
+          "value": "08/29/2025",
+          "selected": false
+        },
+        {
+          "label": "27-08-2025",
+          "value": "08/27/2025",
+          "selected": false
+        },
+        {
+          "label": "25-08-2025",
+          "value": "08/25/2025",
+          "selected": false
+        },
+        {
+          "label": "22-08-2025",
+          "value": "08/22/2025",
+          "selected": false
+        },
+        {
+          "label": "20-08-2025",
+          "value": "08/20/2025",
+          "selected": false
+        },
+        {
+          "label": "18-08-2025",
+          "value": "08/18/2025",
+          "selected": false
+        },
+        {
+          "label": "15-08-2025",
+          "value": "08/15/2025",
+          "selected": false
+        },
+        {
+          "label": "13-08-2025",
+          "value": "08/13/2025",
+          "selected": false
+        },
+        {
+          "label": "11-08-2025",
+          "value": "08/11/2025",
+          "selected": false
+        },
+        {
+          "label": "08-08-2025",
+          "value": "08/08/2025",
+          "selected": false
+        },
+        {
+          "label": "06-08-2025",
+          "value": "08/06/2025",
+          "selected": false
+        },
+        {
+          "label": "04-08-2025",
+          "value": "08/04/2025",
+          "selected": false
+        },
+        {
+          "label": "01-08-2025 August-ranglisten",
+          "value": "08/01/2025",
+          "selected": false
+        },
+        {
+          "label": "30-07-2025",
+          "value": "07/30/2025",
+          "selected": false
+        },
+        {
+          "label": "28-07-2025",
+          "value": "07/28/2025",
+          "selected": false
+        },
+        {
+          "label": "25-07-2025",
+          "value": "07/25/2025",
+          "selected": false
+        },
+        {
+          "label": "23-07-2025",
+          "value": "07/23/2025",
+          "selected": false
+        },
+        {
+          "label": "21-07-2025",
+          "value": "07/21/2025",
+          "selected": false
+        },
+        {
+          "label": "02-07-2025",
+          "value": "07/02/2025",
+          "selected": false
+        },
+        {
+          "label": "01-07-2025 Juli Ranglisten",
+          "value": "07/01/2025",
+          "selected": false
+        }
+      ],
+      "dates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-21",
+        "2025-07-23",
+        "2025-07-25",
+        "2025-07-28",
+        "2025-07-30",
+        "2025-08-01",
+        "2025-08-04",
+        "2025-08-06",
+        "2025-08-08",
+        "2025-08-11",
+        "2025-08-13",
+        "2025-08-15",
+        "2025-08-18",
+        "2025-08-20",
+        "2025-08-22",
+        "2025-08-25",
+        "2025-08-27",
+        "2025-08-29",
+        "2025-09-01",
+        "2025-09-03",
+        "2025-09-05",
+        "2025-09-08",
+        "2025-09-10",
+        "2025-09-12",
+        "2025-09-15",
+        "2025-09-17",
+        "2025-09-19",
+        "2025-09-22",
+        "2025-09-24",
+        "2025-09-26",
+        "2025-09-29",
+        "2025-10-01",
+        "2025-10-03",
+        "2025-10-06",
+        "2025-10-08",
+        "2025-10-10",
+        "2025-10-13",
+        "2025-10-15",
+        "2025-10-17",
+        "2025-10-20",
+        "2025-10-22",
+        "2025-10-24",
+        "2025-10-27",
+        "2025-10-29",
+        "2025-10-31",
+        "2025-11-01",
+        "2025-11-03",
+        "2025-11-05",
+        "2025-11-07",
+        "2025-11-10",
+        "2025-11-12",
+        "2025-11-14",
+        "2025-11-17",
+        "2025-11-21",
+        "2025-11-24",
+        "2025-11-26",
+        "2025-11-28",
+        "2025-12-01",
+        "2025-12-03",
+        "2025-12-05",
+        "2025-12-08",
+        "2025-12-10",
+        "2025-12-12",
+        "2025-12-15",
+        "2025-12-17",
+        "2025-12-19",
+        "2025-12-22",
+        "2025-12-24",
+        "2025-12-26",
+        "2025-12-29",
+        "2025-12-31",
+        "2026-01-01",
+        "2026-01-02",
+        "2026-01-05",
+        "2026-01-07",
+        "2026-01-09",
+        "2026-01-12",
+        "2026-01-14",
+        "2026-01-16",
+        "2026-01-19",
+        "2026-01-21",
+        "2026-01-23",
+        "2026-01-26",
+        "2026-01-28",
+        "2026-01-30",
+        "2026-02-01",
+        "2026-02-02",
+        "2026-02-04",
+        "2026-02-06",
+        "2026-02-09",
+        "2026-02-11",
+        "2026-02-12",
+        "2026-02-13",
+        "2026-02-16",
+        "2026-02-18",
+        "2026-02-20",
+        "2026-02-23",
+        "2026-02-25",
+        "2026-02-27",
+        "2026-03-01",
+        "2026-03-02",
+        "2026-03-04",
+        "2026-03-06",
+        "2026-03-09",
+        "2026-03-11",
+        "2026-03-12",
+        "2026-03-13",
+        "2026-03-16",
+        "2026-03-17",
+        "2026-03-18",
+        "2026-03-20",
+        "2026-03-23",
+        "2026-03-25",
+        "2026-03-26",
+        "2026-03-27",
+        "2026-03-30",
+        "2026-03-31",
+        "2026-04-01",
+        "2026-04-03",
+        "2026-04-06",
+        "2026-04-08",
+        "2026-04-10",
+        "2026-04-13",
+        "2026-04-15",
+        "2026-04-17",
+        "2026-04-20",
+        "2026-04-22",
+        "2026-04-24",
+        "2026-04-27",
+        "2026-04-28",
+        "2026-04-29",
+        "2026-05-01",
+        "2026-05-04",
+        "2026-05-06",
+        "2026-05-08",
+        "2026-05-11",
+        "2026-05-13",
+        "2026-05-15",
+        "2026-05-18",
+        "2026-05-19",
+        "2026-05-20",
+        "2026-05-21",
+        "2026-05-22",
+        "2026-05-25",
+        "2026-05-27",
+        "2026-05-29",
+        "2026-06-01",
+        "2026-06-02",
+        "2026-06-03",
+        "2026-06-05",
+        "2026-06-08",
+        "2026-06-09",
+        "2026-06-10",
+        "2026-06-15",
+        "2026-06-16",
+        "2026-06-29"
+      ],
+      "weekdays": {
+        "søndag": 2,
+        "mandag": 49,
+        "tirsdag": 8,
+        "onsdag": 47,
+        "torsdag": 5,
+        "fredag": 46,
+        "lørdag": 1
+      },
+      "gaps": {
+        "1": 27,
+        "2": 83,
+        "3": 43,
+        "4": 1,
+        "5": 1,
+        "13": 1,
+        "19": 1
+      },
+      "max_gap": 19
+    }
+  ],
+  "oldest_points": [
+    {
+      "season": 2018,
+      "value": "07/01/2018",
+      "date": "2018-07-01",
+      "request": 3,
+      "http_status": 200,
+      "error": null,
+      "rows": 28,
+      "with_points": 28,
+      "with_ID": 28,
+      "classes": {
+        "SEN M-A": 1,
+        "SEN A": 5,
+        "SEN A-B": 3,
+        "tom": 14,
+        "SEN B": 3,
+        "SEN B-C": 2
+      },
+      "selected_versions": [
+        {
+          "label": "01-07-2018",
+          "value": "07/01/2018",
+          "selected": true
+        }
+      ],
+      "version_binding_confirmed": true,
+      "players": [
+        {
+          "rank": 1,
+          "member_number": "860206‑03",
+          "name": "Ulrik Nielsen",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN M-A",
+          "points": 3219,
+          "player_id": "15082"
+        },
+        {
+          "rank": 2,
+          "member_number": "831222‑01",
+          "name": "Claus Christophersen",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN A",
+          "points": 3139,
+          "player_id": "13982"
+        },
+        {
+          "rank": 3,
+          "member_number": "811027‑01",
+          "name": "Morten Aarøe",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN A",
+          "points": 3132,
+          "player_id": "13216"
+        },
+        {
+          "rank": 4,
+          "member_number": "911210‑16",
+          "name": "Rasmus Holmslykke Andersen",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN A",
+          "points": 3121,
+          "player_id": "45550"
+        },
+        {
+          "rank": 5,
+          "member_number": "810217‑01",
+          "name": "Luke O´Connor Chen",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN A",
+          "points": 3116,
+          "player_id": "12967"
+        },
+        {
+          "rank": 6,
+          "member_number": "981024‑08",
+          "name": "Jonas Trusell-Jensen",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN A-B",
+          "points": 3098,
+          "player_id": "92509"
+        },
+        {
+          "rank": 6,
+          "member_number": "901102‑22",
+          "name": "Steffen Bo Madsen",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN A",
+          "points": 3098,
+          "player_id": "210944"
+        },
+        {
+          "rank": 8,
+          "member_number": "000122‑08",
+          "name": "Jonathan W. Hansen",
+          "club": "Gladsaxe Søborg",
+          "class": null,
+          "points": 3095,
+          "player_id": "93216"
+        },
+        {
+          "rank": 9,
+          "member_number": "940320‑01",
+          "name": "Jonas Møller",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN A-B",
+          "points": 3093,
+          "player_id": "60460"
+        },
+        {
+          "rank": 10,
+          "member_number": "740228‑01",
+          "name": "Michael Villiam Nielsen",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN A-B",
+          "points": 3073,
+          "player_id": "212028"
+        },
+        {
+          "rank": 11,
+          "member_number": "000825‑11",
+          "name": "Oliver Frei",
+          "club": "Gladsaxe Søborg",
+          "class": null,
+          "points": 3072,
+          "player_id": "229287"
+        },
+        {
+          "rank": 12,
+          "member_number": "860325‑15",
+          "name": "Brian Oddershede",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN B",
+          "points": 2886,
+          "player_id": "15489"
+        },
+        {
+          "rank": 13,
+          "member_number": "971015‑08",
+          "name": "Aske Andreas Pihl",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN B",
+          "points": 2860,
+          "player_id": "81902"
+        },
+        {
+          "rank": 14,
+          "member_number": "941107‑16",
+          "name": "Rasmus Hemmingsen",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN B",
+          "points": 2800,
+          "player_id": "64837"
+        },
+        {
+          "rank": 15,
+          "member_number": "040415‑04",
+          "name": "Jakob Buus Nyeng",
+          "club": "Gladsaxe Søborg",
+          "class": null,
+          "points": 2516,
+          "player_id": "211704"
+        },
+        {
+          "rank": 16,
+          "member_number": "990902‑07",
+          "name": "Oliver Guldbæk",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN B-C",
+          "points": 2463,
+          "player_id": "155870"
+        },
+        {
+          "rank": 17,
+          "member_number": "990519‑20",
+          "name": "Andreas Lyhne Fiehn",
+          "club": "Gladsaxe Søborg",
+          "class": "SEN B-C",
+          "points": 2411,
+          "player_id": "93118"
+        },
+        {
+          "rank": 18,
+          "member_number": "030318‑07",
+          "name": "Frederik Gjøl",
+          "club": "Gladsaxe Søborg",
+          "class": null,
+          "points": 2301,
+          "player_id": "223750"
+        },
+        {
+          "rank": 19,
+          "member_number": "031003‑07",
+          "name": "Oskar Fabricius Karlsson",
+          "club": "Gladsaxe Søborg",
+          "class": null,
+          "points": 2037,
+          "player_id": "251042"
+        },
+        {
+          "rank": 20,
+          "member_number": "031204‑01",
+          "name": "Malte Hvid Ribergaard",
+          "club": "Gladsaxe Søborg",
+          "class": null,
+          "points": 2015,
+          "player_id": "223451"
+        },
+        {
+          "rank": 21,
+          "member_number": "031214‑04",
+          "name": "Viggo Kongslev Hilbert",
+          "club": "Gladsaxe Søborg",
+          "class": null,
+          "points": 2005,
+          "player_id": "236517"
+        },
+        {
+          "rank": 22,
+          "member_number": "070723‑03",
+          "name": "Malthe Baltzer",
+          "club": "Gladsaxe Søborg",
+          "class": null,
+          "points": 1615,
+          "player_id": "277770"
+        },
+        {
+          "rank": 23,
+          "member_number": "030514‑13",
+          "name": "Fabian Aagren",
+          "club": "Gladsaxe Søborg",
+          "class": null,
+          "points": 1373,
+          "player_id": "251809"
+        },
+        {
+          "rank": 24,
+          "member_number": "060221‑05",
+          "name": "Lasse Bjerregaard Kirt",
+          "club": "Gladsaxe Søborg",
+          "class": null,
+          "points": 1301,
+          "player_id": "265307"
+        },
+        {
+          "rank": 25,
+          "member_number": "080919‑04",
+          "name": "Nikolaj Thorslund Hindsbo",
+          "club": "Gladsaxe Søborg",
+          "class": null,
+          "points": 701,
+          "player_id": "293765"
+        },
+        {
+          "rank": 26,
+          "member_number": "061005‑10",
+          "name": "Tobias Holm-Hansen",
+          "club": "Gladsaxe Søborg",
+          "class": null,
+          "points": 624,
+          "player_id": "297597"
+        },
+        {
+          "rank": 27,
+          "member_number": "060107‑06",
+          "name": "Raz Matteo Palima",
+          "club": "Gladsaxe Søborg",
+          "class": null,
+          "points": 508,
+          "player_id": "283869"
+        },
+        {
+          "rank": 28,
+          "member_number": "070903‑07",
+          "name": "Linus Bergstrøm Hesselballe",
+          "club": "Gladsaxe Søborg",
+          "class": null,
+          "points": 240,
+          "player_id": "293768"
+        }
+      ],
+      "youth_ID_evidence": [
+        {
+          "ranking": {
+            "rank": 8,
+            "member_number": "000122‑08",
+            "name": "Jonathan W. Hansen",
+            "club": "Gladsaxe Søborg",
+            "class": null,
+            "points": 3095,
+            "player_id": "93216"
+          },
+          "matches": [
+            {
+              "external_player_id": "93216",
+              "name_raw": "Jonathan W. Hansen",
+              "external_match_id": "337416",
+              "age_group_id": 18,
+              "home_team_raw": "Team Storstrøm 1",
+              "away_team_raw": "Gladsaxe Søborg 1",
+              "team_side": "ude"
+            },
+            {
+              "external_player_id": "93216",
+              "name_raw": "Jonathan W. Hansen",
+              "external_match_id": "337417",
+              "age_group_id": 18,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "Herlufsholm 1",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "93216",
+              "name_raw": "Jonathan W. Hansen",
+              "external_match_id": "337430",
+              "age_group_id": 18,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "KBK Kbh. 1",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "93216",
+              "name_raw": "Jonathan W. Hansen",
+              "external_match_id": "337432",
+              "age_group_id": 18,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "Holbæk 1",
+              "team_side": "hjemme"
+            }
+          ]
+        },
+        {
+          "ranking": {
+            "rank": 11,
+            "member_number": "000825‑11",
+            "name": "Oliver Frei",
+            "club": "Gladsaxe Søborg",
+            "class": null,
+            "points": 3072,
+            "player_id": "229287"
+          },
+          "matches": [
+            {
+              "external_player_id": "229287",
+              "name_raw": "Oliver Frei",
+              "external_match_id": "337416",
+              "age_group_id": 18,
+              "home_team_raw": "Team Storstrøm 1",
+              "away_team_raw": "Gladsaxe Søborg 1",
+              "team_side": "ude"
+            },
+            {
+              "external_player_id": "229287",
+              "name_raw": "Oliver Frei",
+              "external_match_id": "337417",
+              "age_group_id": 18,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "Herlufsholm 1",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "229287",
+              "name_raw": "Oliver Frei",
+              "external_match_id": "337423",
+              "age_group_id": 18,
+              "home_team_raw": "Herlev/Hjorten 1",
+              "away_team_raw": "Gladsaxe Søborg 1",
+              "team_side": "ude"
+            },
+            {
+              "external_player_id": "229287",
+              "name_raw": "Oliver Frei",
+              "external_match_id": "337425",
+              "age_group_id": 18,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "Skælskør 1",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "229287",
+              "name_raw": "Oliver Frei",
+              "external_match_id": "337430",
+              "age_group_id": 18,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "KBK Kbh. 1",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "229287",
+              "name_raw": "Oliver Frei",
+              "external_match_id": "337432",
+              "age_group_id": 18,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "Holbæk 1",
+              "team_side": "hjemme"
+            }
+          ]
+        },
+        {
+          "ranking": {
+            "rank": 15,
+            "member_number": "040415‑04",
+            "name": "Jakob Buus Nyeng",
+            "club": "Gladsaxe Søborg",
+            "class": null,
+            "points": 2516,
+            "player_id": "211704"
+          },
+          "matches": [
+            {
+              "external_player_id": "211704",
+              "name_raw": "Jakob Buus Nyeng",
+              "external_match_id": "337416",
+              "age_group_id": 18,
+              "home_team_raw": "Team Storstrøm 1",
+              "away_team_raw": "Gladsaxe Søborg 1",
+              "team_side": "ude"
+            },
+            {
+              "external_player_id": "211704",
+              "name_raw": "Jakob Buus Nyeng",
+              "external_match_id": "337417",
+              "age_group_id": 18,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "Herlufsholm 1",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "211704",
+              "name_raw": "Jakob Buus Nyeng",
+              "external_match_id": "337423",
+              "age_group_id": 18,
+              "home_team_raw": "Herlev/Hjorten 1",
+              "away_team_raw": "Gladsaxe Søborg 1",
+              "team_side": "ude"
+            },
+            {
+              "external_player_id": "211704",
+              "name_raw": "Jakob Buus Nyeng",
+              "external_match_id": "337425",
+              "age_group_id": 18,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "Skælskør 1",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "211704",
+              "name_raw": "Jakob Buus Nyeng",
+              "external_match_id": "337430",
+              "age_group_id": 18,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "KBK Kbh. 1",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "211704",
+              "name_raw": "Jakob Buus Nyeng",
+              "external_match_id": "337432",
+              "age_group_id": 18,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "Holbæk 1",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "211704",
+              "name_raw": "Jakob Buus Nyeng",
+              "external_match_id": "353934",
+              "age_group_id": 18,
+              "home_team_raw": "Gladsaxe Søborg 2",
+              "away_team_raw": "Valby BC 1",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "211704",
+              "name_raw": "Jakob Buus Nyeng",
+              "external_match_id": "353935",
+              "age_group_id": 18,
+              "home_team_raw": "Charlottenlund 1",
+              "away_team_raw": "Gladsaxe Søborg 2",
+              "team_side": "ude"
+            }
+          ]
+        },
+        {
+          "ranking": {
+            "rank": 19,
+            "member_number": "031003‑07",
+            "name": "Oskar Fabricius Karlsson",
+            "club": "Gladsaxe Søborg",
+            "class": null,
+            "points": 2037,
+            "player_id": "251042"
+          },
+          "matches": [
+            {
+              "external_player_id": "251042",
+              "name_raw": "Oskar Fabricius Karlsson",
+              "external_match_id": "353934",
+              "age_group_id": 18,
+              "home_team_raw": "Gladsaxe Søborg 2",
+              "away_team_raw": "Valby BC 1",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "251042",
+              "name_raw": "Oskar Fabricius Karlsson",
+              "external_match_id": "353935",
+              "age_group_id": 18,
+              "home_team_raw": "Charlottenlund 1",
+              "away_team_raw": "Gladsaxe Søborg 2",
+              "team_side": "ude"
+            },
+            {
+              "external_player_id": "251042",
+              "name_raw": "Oskar Fabricius Karlsson",
+              "external_match_id": "353938",
+              "age_group_id": 18,
+              "home_team_raw": "Gladsaxe Søborg 2",
+              "away_team_raw": "Charlottenlund 1",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "251042",
+              "name_raw": "Oskar Fabricius Karlsson",
+              "external_match_id": "353941",
+              "age_group_id": 18,
+              "home_team_raw": "Gladsaxe Søborg 2",
+              "away_team_raw": "Gentofte 1",
+              "team_side": "hjemme"
+            }
+          ]
+        },
+        {
+          "ranking": {
+            "rank": 20,
+            "member_number": "031204‑01",
+            "name": "Malte Hvid Ribergaard",
+            "club": "Gladsaxe Søborg",
+            "class": null,
+            "points": 2015,
+            "player_id": "223451"
+          },
+          "matches": [
+            {
+              "external_player_id": "223451",
+              "name_raw": "Malte Hvid Ribergaard",
+              "external_match_id": "353930",
+              "age_group_id": 18,
+              "home_team_raw": "Gentofte 1",
+              "away_team_raw": "Gladsaxe Søborg 2",
+              "team_side": "ude"
+            },
+            {
+              "external_player_id": "223451",
+              "name_raw": "Malte Hvid Ribergaard",
+              "external_match_id": "353932",
+              "age_group_id": 18,
+              "home_team_raw": "Valby BC 1",
+              "away_team_raw": "Gladsaxe Søborg 2",
+              "team_side": "ude"
+            },
+            {
+              "external_player_id": "223451",
+              "name_raw": "Malte Hvid Ribergaard",
+              "external_match_id": "353934",
+              "age_group_id": 18,
+              "home_team_raw": "Gladsaxe Søborg 2",
+              "away_team_raw": "Valby BC 1",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "223451",
+              "name_raw": "Malte Hvid Ribergaard",
+              "external_match_id": "353935",
+              "age_group_id": 18,
+              "home_team_raw": "Charlottenlund 1",
+              "away_team_raw": "Gladsaxe Søborg 2",
+              "team_side": "ude"
+            },
+            {
+              "external_player_id": "223451",
+              "name_raw": "Malte Hvid Ribergaard",
+              "external_match_id": "353938",
+              "age_group_id": 18,
+              "home_team_raw": "Gladsaxe Søborg 2",
+              "away_team_raw": "Charlottenlund 1",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "223451",
+              "name_raw": "Malte Hvid Ribergaard",
+              "external_match_id": "353941",
+              "age_group_id": 18,
+              "home_team_raw": "Gladsaxe Søborg 2",
+              "away_team_raw": "Gentofte 1",
+              "team_side": "hjemme"
+            }
+          ]
+        },
+        {
+          "ranking": {
+            "rank": 23,
+            "member_number": "030514‑13",
+            "name": "Fabian Aagren",
+            "club": "Gladsaxe Søborg",
+            "class": null,
+            "points": 1373,
+            "player_id": "251809"
+          },
+          "matches": [
+            {
+              "external_player_id": "251809",
+              "name_raw": "Fabian Aagren",
+              "external_match_id": "353930",
+              "age_group_id": 18,
+              "home_team_raw": "Gentofte 1",
+              "away_team_raw": "Gladsaxe Søborg 2",
+              "team_side": "ude"
+            },
+            {
+              "external_player_id": "251809",
+              "name_raw": "Fabian Aagren",
+              "external_match_id": "353932",
+              "age_group_id": 18,
+              "home_team_raw": "Valby BC 1",
+              "away_team_raw": "Gladsaxe Søborg 2",
+              "team_side": "ude"
+            },
+            {
+              "external_player_id": "251809",
+              "name_raw": "Fabian Aagren",
+              "external_match_id": "353938",
+              "age_group_id": 18,
+              "home_team_raw": "Gladsaxe Søborg 2",
+              "away_team_raw": "Charlottenlund 1",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "251809",
+              "name_raw": "Fabian Aagren",
+              "external_match_id": "353941",
+              "age_group_id": 18,
+              "home_team_raw": "Gladsaxe Søborg 2",
+              "away_team_raw": "Gentofte 1",
+              "team_side": "hjemme"
+            }
+          ]
+        },
+        {
+          "ranking": {
+            "rank": 25,
+            "member_number": "080919‑04",
+            "name": "Nikolaj Thorslund Hindsbo",
+            "club": "Gladsaxe Søborg",
+            "class": null,
+            "points": 701,
+            "player_id": "293765"
+          },
+          "matches": [
+            {
+              "external_player_id": "293765",
+              "name_raw": "Nikolaj Thorslund Hindsbo",
+              "external_match_id": "340290",
+              "age_group_id": 3,
+              "home_team_raw": "Dragør 1",
+              "away_team_raw": "Gladsaxe Søborg 1",
+              "team_side": "ude"
+            },
+            {
+              "external_player_id": "293765",
+              "name_raw": "Nikolaj Thorslund Hindsbo",
+              "external_match_id": "340291",
+              "age_group_id": 3,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "Hvidovre 1",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "293765",
+              "name_raw": "Nikolaj Thorslund Hindsbo",
+              "external_match_id": "340296",
+              "age_group_id": 3,
+              "home_team_raw": "Hvidovre 1",
+              "away_team_raw": "Gladsaxe Søborg 1",
+              "team_side": "ude"
+            },
+            {
+              "external_player_id": "293765",
+              "name_raw": "Nikolaj Thorslund Hindsbo",
+              "external_match_id": "340297",
+              "age_group_id": 3,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "Skovshoved 3",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "293765",
+              "name_raw": "Nikolaj Thorslund Hindsbo",
+              "external_match_id": "340302",
+              "age_group_id": 3,
+              "home_team_raw": "Skovshoved 3",
+              "away_team_raw": "Gladsaxe Søborg 1",
+              "team_side": "ude"
+            },
+            {
+              "external_player_id": "293765",
+              "name_raw": "Nikolaj Thorslund Hindsbo",
+              "external_match_id": "340305",
+              "age_group_id": 3,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "KMB2010 1",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "293765",
+              "name_raw": "Nikolaj Thorslund Hindsbo",
+              "external_match_id": "340306",
+              "age_group_id": 3,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "Dragør 1",
+              "team_side": "hjemme"
+            }
+          ]
+        },
+        {
+          "ranking": {
+            "rank": 26,
+            "member_number": "061005‑10",
+            "name": "Tobias Holm-Hansen",
+            "club": "Gladsaxe Søborg",
+            "class": null,
+            "points": 624,
+            "player_id": "297597"
+          },
+          "matches": [
+            {
+              "external_player_id": "297597",
+              "name_raw": "Tobias Holm-Hansen",
+              "external_match_id": "340488",
+              "age_group_id": 4,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "KBK Kbh. 3",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "297597",
+              "name_raw": "Tobias Holm-Hansen",
+              "external_match_id": "340490",
+              "age_group_id": 4,
+              "home_team_raw": "Skovshoved 3",
+              "away_team_raw": "Gladsaxe Søborg 1",
+              "team_side": "ude"
+            },
+            {
+              "external_player_id": "297597",
+              "name_raw": "Tobias Holm-Hansen",
+              "external_match_id": "340496",
+              "age_group_id": 4,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "Skovshoved 3",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "297597",
+              "name_raw": "Tobias Holm-Hansen",
+              "external_match_id": "340498",
+              "age_group_id": 4,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "Charlottenlund 1",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "297597",
+              "name_raw": "Tobias Holm-Hansen",
+              "external_match_id": "340511",
+              "age_group_id": 4,
+              "home_team_raw": "FKIF Frederiksberg 2",
+              "away_team_raw": "Gladsaxe Søborg 1",
+              "team_side": "ude"
+            },
+            {
+              "external_player_id": "297597",
+              "name_raw": "Tobias Holm-Hansen",
+              "external_match_id": "340514",
+              "age_group_id": 4,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "Drive 1",
+              "team_side": "hjemme"
+            }
+          ]
+        },
+        {
+          "ranking": {
+            "rank": 27,
+            "member_number": "060107‑06",
+            "name": "Raz Matteo Palima",
+            "club": "Gladsaxe Søborg",
+            "class": null,
+            "points": 508,
+            "player_id": "283869"
+          },
+          "matches": [
+            {
+              "external_player_id": "283869",
+              "name_raw": "Raz Matteo Palima",
+              "external_match_id": "340488",
+              "age_group_id": 4,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "KBK Kbh. 3",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "283869",
+              "name_raw": "Raz Matteo Palima",
+              "external_match_id": "340490",
+              "age_group_id": 4,
+              "home_team_raw": "Skovshoved 3",
+              "away_team_raw": "Gladsaxe Søborg 1",
+              "team_side": "ude"
+            },
+            {
+              "external_player_id": "283869",
+              "name_raw": "Raz Matteo Palima",
+              "external_match_id": "340498",
+              "age_group_id": 4,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "Charlottenlund 1",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "283869",
+              "name_raw": "Raz Matteo Palima",
+              "external_match_id": "340504",
+              "age_group_id": 4,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "FKIF Frederiksberg 2",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "283869",
+              "name_raw": "Raz Matteo Palima",
+              "external_match_id": "340506",
+              "age_group_id": 4,
+              "home_team_raw": "KBK Kbh. 3",
+              "away_team_raw": "Gladsaxe Søborg 1",
+              "team_side": "ude"
+            }
+          ]
+        },
+        {
+          "ranking": {
+            "rank": 28,
+            "member_number": "070903‑07",
+            "name": "Linus Bergstrøm Hesselballe",
+            "club": "Gladsaxe Søborg",
+            "class": null,
+            "points": 240,
+            "player_id": "293768"
+          },
+          "matches": [
+            {
+              "external_player_id": "293768",
+              "name_raw": "Linus Bergstrøm Hesselballe",
+              "external_match_id": "340306",
+              "age_group_id": 3,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "Dragør 1",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "293768",
+              "name_raw": "Linus Bergstrøm Hesselballe",
+              "external_match_id": "340307",
+              "age_group_id": 3,
+              "home_team_raw": "Lyngby 3",
+              "away_team_raw": "Gladsaxe Søborg 1",
+              "team_side": "ude"
+            },
+            {
+              "external_player_id": "293768",
+              "name_raw": "Linus Bergstrøm Hesselballe",
+              "external_match_id": "340317",
+              "age_group_id": 3,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "Lyngby 3",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "293768",
+              "name_raw": "Linus Bergstrøm Hesselballe",
+              "external_match_id": "340319",
+              "age_group_id": 3,
+              "home_team_raw": "KMB2010 1",
+              "away_team_raw": "Gladsaxe Søborg 1",
+              "team_side": "ude"
+            },
+            {
+              "external_player_id": "293768",
+              "name_raw": "Linus Bergstrøm Hesselballe",
+              "external_match_id": "340488",
+              "age_group_id": 4,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "KBK Kbh. 3",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "293768",
+              "name_raw": "Linus Bergstrøm Hesselballe",
+              "external_match_id": "340490",
+              "age_group_id": 4,
+              "home_team_raw": "Skovshoved 3",
+              "away_team_raw": "Gladsaxe Søborg 1",
+              "team_side": "ude"
+            },
+            {
+              "external_player_id": "293768",
+              "name_raw": "Linus Bergstrøm Hesselballe",
+              "external_match_id": "340496",
+              "age_group_id": 4,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "Skovshoved 3",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "293768",
+              "name_raw": "Linus Bergstrøm Hesselballe",
+              "external_match_id": "340498",
+              "age_group_id": 4,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "Charlottenlund 1",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "293768",
+              "name_raw": "Linus Bergstrøm Hesselballe",
+              "external_match_id": "340504",
+              "age_group_id": 4,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "FKIF Frederiksberg 2",
+              "team_side": "hjemme"
+            },
+            {
+              "external_player_id": "293768",
+              "name_raw": "Linus Bergstrøm Hesselballe",
+              "external_match_id": "340506",
+              "age_group_id": 4,
+              "home_team_raw": "KBK Kbh. 3",
+              "away_team_raw": "Gladsaxe Søborg 1",
+              "team_side": "ude"
+            },
+            {
+              "external_player_id": "293768",
+              "name_raw": "Linus Bergstrøm Hesselballe",
+              "external_match_id": "340511",
+              "age_group_id": 4,
+              "home_team_raw": "FKIF Frederiksberg 2",
+              "away_team_raw": "Gladsaxe Søborg 1",
+              "team_side": "ude"
+            },
+            {
+              "external_player_id": "293768",
+              "name_raw": "Linus Bergstrøm Hesselballe",
+              "external_match_id": "340514",
+              "age_group_id": 4,
+              "home_team_raw": "Gladsaxe Søborg 1",
+              "away_team_raw": "Drive 1",
+              "team_side": "hjemme"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    "Ingen dateret kalender er ikke bevis for, at ungdom historisk aldrig havde point. Før 2012 er ikke undersøgt. 2012–2017 mærkes ikke som bevist \"ingen rangliste\".",
+    "2012–2017 har hver én udateret \"Seneste\"-post og nul ranglisterækker. Derfor er stopreglen med to helt tomme versionslister ikke udløst: alle syv sæsoner blev prøvet. Brug \"ingen dateret rangliste fundet via denne rute\", ikke historisk bevist fravær.",
+    "Klasseetiketterne i 2018-prøven er SEN eller tomme. Ungdomsbeviset bruger derfor eksisterende kampdata på ID, navn, sæson og GSB-klubside, ikke navne-/aldersgæt."
+  ],
+  "status": "complete",
+  "hashes_before": {
+    "gsb-statistik-normalized.db": "49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E",
+    "liga-landskab.db": "9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C",
+    "national-spillere.db": "1E27C5D81CCE8E2D656DF2C924E4BF6931EEAAF86348ADD384AB6D58F7CBAC3E",
+    "rangliste-historik.db": "6E9516DB643F88F88946A82CB76EC3B5C686C7D548ABF7084B3F60EE3DA0316F",
+    "rangliste-point.db": "54F2FE25C82C188D5E6412A131081BF341A37AFF17DFF51B5F68A884B6591BC9"
+  },
+  "hashes_after": {
+    "gsb-statistik-normalized.db": "49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E",
+    "liga-landskab.db": "9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C",
+    "national-spillere.db": "1E27C5D81CCE8E2D656DF2C924E4BF6931EEAAF86348ADD384AB6D58F7CBAC3E",
+    "rangliste-historik.db": "6E9516DB643F88F88946A82CB76EC3B5C686C7D548ABF7084B3F60EE3DA0316F",
+    "rangliste-point.db": "54F2FE25C82C188D5E6412A131081BF341A37AFF17DFF51B5F68A884B6591BC9"
+  },
+  "hashes_unchanged": true,
+  "reference_2025": {
+    "season": 2025,
+    "list": 288,
+    "request": null,
+    "http_status": null,
+    "status": "versions",
+    "version_entries": 159,
+    "dated_entries": 158,
+    "unique_dates": 158,
+    "earliest": "2025-07-01",
+    "latest": "2026-06-29",
+    "versions": [
+      {
+        "label": "Seneste",
+        "value": "",
+        "selected": true
+      },
+      {
+        "label": "29-06-2026",
+        "value": "06/29/2026",
+        "selected": false
+      },
+      {
+        "label": "16-06-2026",
+        "value": "06/16/2026",
+        "selected": false
+      },
+      {
+        "label": "15-06-2026",
+        "value": "06/15/2026",
+        "selected": false
+      },
+      {
+        "label": "10-06-2026",
+        "value": "06/10/2026",
+        "selected": false
+      },
+      {
+        "label": "09-06-2026",
+        "value": "06/09/2026",
+        "selected": false
+      },
+      {
+        "label": "08-06-2026",
+        "value": "06/08/2026",
+        "selected": false
+      },
+      {
+        "label": "05-06-2026",
+        "value": "06/05/2026",
+        "selected": false
+      },
+      {
+        "label": "03-06-2026",
+        "value": "06/03/2026",
+        "selected": false
+      },
+      {
+        "label": "02-06-2026",
+        "value": "06/02/2026",
+        "selected": false
+      },
+      {
+        "label": "01-06-2026",
+        "value": "06/01/2026",
+        "selected": false
+      },
+      {
+        "label": "29-05-2026",
+        "value": "05/29/2026",
+        "selected": false
+      },
+      {
+        "label": "27-05-2026",
+        "value": "05/27/2026",
+        "selected": false
+      },
+      {
+        "label": "25-05-2026",
+        "value": "05/25/2026",
+        "selected": false
+      },
+      {
+        "label": "22-05-2026",
+        "value": "05/22/2026",
+        "selected": false
+      },
+      {
+        "label": "21-05-2026",
+        "value": "05/21/2026",
+        "selected": false
+      },
+      {
+        "label": "20-05-2026",
+        "value": "05/20/2026",
+        "selected": false
+      },
+      {
+        "label": "19-05-2026",
+        "value": "05/19/2026",
+        "selected": false
+      },
+      {
+        "label": "18-05-2026",
+        "value": "05/18/2026",
+        "selected": false
+      },
+      {
+        "label": "15-05-2026",
+        "value": "05/15/2026",
+        "selected": false
+      },
+      {
+        "label": "13-05-2026",
+        "value": "05/13/2026",
+        "selected": false
+      },
+      {
+        "label": "11-05-2026",
+        "value": "05/11/2026",
+        "selected": false
+      },
+      {
+        "label": "08-05-2026",
+        "value": "05/08/2026",
+        "selected": false
+      },
+      {
+        "label": "06-05-2026",
+        "value": "05/06/2026",
+        "selected": false
+      },
+      {
+        "label": "04-05-2026",
+        "value": "05/04/2026",
+        "selected": false
+      },
+      {
+        "label": "01-05-2026",
+        "value": "05/01/2026",
+        "selected": false
+      },
+      {
+        "label": "29-04-2026",
+        "value": "04/29/2026",
+        "selected": false
+      },
+      {
+        "label": "28-04-2026",
+        "value": "04/28/2026",
+        "selected": false
+      },
+      {
+        "label": "27-04-2026",
+        "value": "04/27/2026",
+        "selected": false
+      },
+      {
+        "label": "24-04-2026",
+        "value": "04/24/2026",
+        "selected": false
+      },
+      {
+        "label": "22-04-2026",
+        "value": "04/22/2026",
+        "selected": false
+      },
+      {
+        "label": "20-04-2026",
+        "value": "04/20/2026",
+        "selected": false
+      },
+      {
+        "label": "17-04-2026",
+        "value": "04/17/2026",
+        "selected": false
+      },
+      {
+        "label": "15-04-2026",
+        "value": "04/15/2026",
+        "selected": false
+      },
+      {
+        "label": "13-04-2026",
+        "value": "04/13/2026",
+        "selected": false
+      },
+      {
+        "label": "10-04-2026",
+        "value": "04/10/2026",
+        "selected": false
+      },
+      {
+        "label": "08-04-2026",
+        "value": "04/08/2026",
+        "selected": false
+      },
+      {
+        "label": "06-04-2026",
+        "value": "04/06/2026",
+        "selected": false
+      },
+      {
+        "label": "03-04-2026",
+        "value": "04/03/2026",
+        "selected": false
+      },
+      {
+        "label": "01-04-2026 April-ranglisten",
+        "value": "04/01/2026",
+        "selected": false
+      },
+      {
+        "label": "31-03-2026",
+        "value": "03/31/2026",
+        "selected": false
+      },
+      {
+        "label": "30-03-2026",
+        "value": "03/30/2026",
+        "selected": false
+      },
+      {
+        "label": "27-03-2026",
+        "value": "03/27/2026",
+        "selected": false
+      },
+      {
+        "label": "26-03-2026",
+        "value": "03/26/2026",
+        "selected": false
+      },
+      {
+        "label": "25-03-2026",
+        "value": "03/25/2026",
+        "selected": false
+      },
+      {
+        "label": "23-03-2026",
+        "value": "03/23/2026",
+        "selected": false
+      },
+      {
+        "label": "20-03-2026",
+        "value": "03/20/2026",
+        "selected": false
+      },
+      {
+        "label": "18-03-2026",
+        "value": "03/18/2026",
+        "selected": false
+      },
+      {
+        "label": "17-03-2026",
+        "value": "03/17/2026",
+        "selected": false
+      },
+      {
+        "label": "16-03-2026",
+        "value": "03/16/2026",
+        "selected": false
+      },
+      {
+        "label": "13-03-2026",
+        "value": "03/13/2026",
+        "selected": false
+      },
+      {
+        "label": "12-03-2026",
+        "value": "03/12/2026",
+        "selected": false
+      },
+      {
+        "label": "11-03-2026",
+        "value": "03/11/2026",
+        "selected": false
+      },
+      {
+        "label": "09-03-2026",
+        "value": "03/09/2026",
+        "selected": false
+      },
+      {
+        "label": "06-03-2026",
+        "value": "03/06/2026",
+        "selected": false
+      },
+      {
+        "label": "04-03-2026",
+        "value": "03/04/2026",
+        "selected": false
+      },
+      {
+        "label": "02-03-2026",
+        "value": "03/02/2026",
+        "selected": false
+      },
+      {
+        "label": "01-03-2026 Marts-ranglisten",
+        "value": "03/01/2026",
+        "selected": false
+      },
+      {
+        "label": "27-02-2026",
+        "value": "02/27/2026",
+        "selected": false
+      },
+      {
+        "label": "25-02-2026",
+        "value": "02/25/2026",
+        "selected": false
+      },
+      {
+        "label": "23-02-2026",
+        "value": "02/23/2026",
+        "selected": false
+      },
+      {
+        "label": "20-02-2026",
+        "value": "02/20/2026",
+        "selected": false
+      },
+      {
+        "label": "18-02-2026",
+        "value": "02/18/2026",
+        "selected": false
+      },
+      {
+        "label": "16-02-2026",
+        "value": "02/16/2026",
+        "selected": false
+      },
+      {
+        "label": "13-02-2026",
+        "value": "02/13/2026",
+        "selected": false
+      },
+      {
+        "label": "12-02-2026",
+        "value": "02/12/2026",
+        "selected": false
+      },
+      {
+        "label": "11-02-2026",
+        "value": "02/11/2026",
+        "selected": false
+      },
+      {
+        "label": "09-02-2026",
+        "value": "02/09/2026",
+        "selected": false
+      },
+      {
+        "label": "06-02-2026",
+        "value": "02/06/2026",
+        "selected": false
+      },
+      {
+        "label": "04-02-2026",
+        "value": "02/04/2026",
+        "selected": false
+      },
+      {
+        "label": "02-02-2026",
+        "value": "02/02/2026",
+        "selected": false
+      },
+      {
+        "label": "01-02-2026 Februar-ranglisten",
+        "value": "02/01/2026",
+        "selected": false
+      },
+      {
+        "label": "30-01-2026",
+        "value": "01/30/2026",
+        "selected": false
+      },
+      {
+        "label": "28-01-2026",
+        "value": "01/28/2026",
+        "selected": false
+      },
+      {
+        "label": "26-01-2026",
+        "value": "01/26/2026",
+        "selected": false
+      },
+      {
+        "label": "23-01-2026",
+        "value": "01/23/2026",
+        "selected": false
+      },
+      {
+        "label": "21-01-2026",
+        "value": "01/21/2026",
+        "selected": false
+      },
+      {
+        "label": "19-01-2026",
+        "value": "01/19/2026",
+        "selected": false
+      },
+      {
+        "label": "16-01-2026",
+        "value": "01/16/2026",
+        "selected": false
+      },
+      {
+        "label": "14-01-2026",
+        "value": "01/14/2026",
+        "selected": false
+      },
+      {
+        "label": "12-01-2026",
+        "value": "01/12/2026",
+        "selected": false
+      },
+      {
+        "label": "09-01-2026",
+        "value": "01/09/2026",
+        "selected": false
+      },
+      {
+        "label": "07-01-2026",
+        "value": "01/07/2026",
+        "selected": false
+      },
+      {
+        "label": "05-01-2026",
+        "value": "01/05/2026",
+        "selected": false
+      },
+      {
+        "label": "02-01-2026",
+        "value": "01/02/2026",
+        "selected": false
+      },
+      {
+        "label": "01-01-2026 Januar-ranglisten",
+        "value": "01/01/2026",
+        "selected": false
+      },
+      {
+        "label": "31-12-2025",
+        "value": "12/31/2025",
+        "selected": false
+      },
+      {
+        "label": "29-12-2025",
+        "value": "12/29/2025",
+        "selected": false
+      },
+      {
+        "label": "26-12-2025",
+        "value": "12/26/2025",
+        "selected": false
+      },
+      {
+        "label": "24-12-2025",
+        "value": "12/24/2025",
+        "selected": false
+      },
+      {
+        "label": "22-12-2025",
+        "value": "12/22/2025",
+        "selected": false
+      },
+      {
+        "label": "19-12-2025",
+        "value": "12/19/2025",
+        "selected": false
+      },
+      {
+        "label": "17-12-2025",
+        "value": "12/17/2025",
+        "selected": false
+      },
+      {
+        "label": "15-12-2025",
+        "value": "12/15/2025",
+        "selected": false
+      },
+      {
+        "label": "12-12-2025",
+        "value": "12/12/2025",
+        "selected": false
+      },
+      {
+        "label": "10-12-2025",
+        "value": "12/10/2025",
+        "selected": false
+      },
+      {
+        "label": "08-12-2025",
+        "value": "12/08/2025",
+        "selected": false
+      },
+      {
+        "label": "05-12-2025",
+        "value": "12/05/2025",
+        "selected": false
+      },
+      {
+        "label": "03-12-2025",
+        "value": "12/03/2025",
+        "selected": false
+      },
+      {
+        "label": "01-12-2025 December-ranglisten",
+        "value": "12/01/2025",
+        "selected": false
+      },
+      {
+        "label": "28-11-2025",
+        "value": "11/28/2025",
+        "selected": false
+      },
+      {
+        "label": "26-11-2025",
+        "value": "11/26/2025",
+        "selected": false
+      },
+      {
+        "label": "24-11-2025",
+        "value": "11/24/2025",
+        "selected": false
+      },
+      {
+        "label": "21-11-2025",
+        "value": "11/21/2025",
+        "selected": false
+      },
+      {
+        "label": "17-11-2025",
+        "value": "11/17/2025",
+        "selected": false
+      },
+      {
+        "label": "14-11-2025",
+        "value": "11/14/2025",
+        "selected": false
+      },
+      {
+        "label": "12-11-2025",
+        "value": "11/12/2025",
+        "selected": false
+      },
+      {
+        "label": "10-11-2025",
+        "value": "11/10/2025",
+        "selected": false
+      },
+      {
+        "label": "07-11-2025",
+        "value": "11/07/2025",
+        "selected": false
+      },
+      {
+        "label": "05-11-2025",
+        "value": "11/05/2025",
+        "selected": false
+      },
+      {
+        "label": "03-11-2025",
+        "value": "11/03/2025",
+        "selected": false
+      },
+      {
+        "label": "01-11-2025 November-ranglisten",
+        "value": "11/01/2025",
+        "selected": false
+      },
+      {
+        "label": "31-10-2025",
+        "value": "10/31/2025",
+        "selected": false
+      },
+      {
+        "label": "29-10-2025",
+        "value": "10/29/2025",
+        "selected": false
+      },
+      {
+        "label": "27-10-2025",
+        "value": "10/27/2025",
+        "selected": false
+      },
+      {
+        "label": "24-10-2025",
+        "value": "10/24/2025",
+        "selected": false
+      },
+      {
+        "label": "22-10-2025",
+        "value": "10/22/2025",
+        "selected": false
+      },
+      {
+        "label": "20-10-2025",
+        "value": "10/20/2025",
+        "selected": false
+      },
+      {
+        "label": "17-10-2025",
+        "value": "10/17/2025",
+        "selected": false
+      },
+      {
+        "label": "15-10-2025",
+        "value": "10/15/2025",
+        "selected": false
+      },
+      {
+        "label": "13-10-2025",
+        "value": "10/13/2025",
+        "selected": false
+      },
+      {
+        "label": "10-10-2025",
+        "value": "10/10/2025",
+        "selected": false
+      },
+      {
+        "label": "08-10-2025",
+        "value": "10/08/2025",
+        "selected": false
+      },
+      {
+        "label": "06-10-2025",
+        "value": "10/06/2025",
+        "selected": false
+      },
+      {
+        "label": "03-10-2025",
+        "value": "10/03/2025",
+        "selected": false
+      },
+      {
+        "label": "01-10-2025 Oktober-ranglisten",
+        "value": "10/01/2025",
+        "selected": false
+      },
+      {
+        "label": "29-09-2025",
+        "value": "09/29/2025",
+        "selected": false
+      },
+      {
+        "label": "26-09-2025",
+        "value": "09/26/2025",
+        "selected": false
+      },
+      {
+        "label": "24-09-2025",
+        "value": "09/24/2025",
+        "selected": false
+      },
+      {
+        "label": "22-09-2025",
+        "value": "09/22/2025",
+        "selected": false
+      },
+      {
+        "label": "19-09-2025",
+        "value": "09/19/2025",
+        "selected": false
+      },
+      {
+        "label": "17-09-2025",
+        "value": "09/17/2025",
+        "selected": false
+      },
+      {
+        "label": "15-09-2025",
+        "value": "09/15/2025",
+        "selected": false
+      },
+      {
+        "label": "12-09-2025",
+        "value": "09/12/2025",
+        "selected": false
+      },
+      {
+        "label": "10-09-2025",
+        "value": "09/10/2025",
+        "selected": false
+      },
+      {
+        "label": "08-09-2025",
+        "value": "09/08/2025",
+        "selected": false
+      },
+      {
+        "label": "05-09-2025",
+        "value": "09/05/2025",
+        "selected": false
+      },
+      {
+        "label": "03-09-2025",
+        "value": "09/03/2025",
+        "selected": false
+      },
+      {
+        "label": "01-09-2025 September-ranglisten",
+        "value": "09/01/2025",
+        "selected": false
+      },
+      {
+        "label": "29-08-2025",
+        "value": "08/29/2025",
+        "selected": false
+      },
+      {
+        "label": "27-08-2025",
+        "value": "08/27/2025",
+        "selected": false
+      },
+      {
+        "label": "25-08-2025",
+        "value": "08/25/2025",
+        "selected": false
+      },
+      {
+        "label": "22-08-2025",
+        "value": "08/22/2025",
+        "selected": false
+      },
+      {
+        "label": "20-08-2025",
+        "value": "08/20/2025",
+        "selected": false
+      },
+      {
+        "label": "18-08-2025",
+        "value": "08/18/2025",
+        "selected": false
+      },
+      {
+        "label": "15-08-2025",
+        "value": "08/15/2025",
+        "selected": false
+      },
+      {
+        "label": "13-08-2025",
+        "value": "08/13/2025",
+        "selected": false
+      },
+      {
+        "label": "11-08-2025",
+        "value": "08/11/2025",
+        "selected": false
+      },
+      {
+        "label": "08-08-2025",
+        "value": "08/08/2025",
+        "selected": false
+      },
+      {
+        "label": "06-08-2025",
+        "value": "08/06/2025",
+        "selected": false
+      },
+      {
+        "label": "04-08-2025",
+        "value": "08/04/2025",
+        "selected": false
+      },
+      {
+        "label": "01-08-2025 August-ranglisten",
+        "value": "08/01/2025",
+        "selected": false
+      },
+      {
+        "label": "30-07-2025",
+        "value": "07/30/2025",
+        "selected": false
+      },
+      {
+        "label": "28-07-2025",
+        "value": "07/28/2025",
+        "selected": false
+      },
+      {
+        "label": "25-07-2025",
+        "value": "07/25/2025",
+        "selected": false
+      },
+      {
+        "label": "23-07-2025",
+        "value": "07/23/2025",
+        "selected": false
+      },
+      {
+        "label": "21-07-2025",
+        "value": "07/21/2025",
+        "selected": false
+      },
+      {
+        "label": "02-07-2025",
+        "value": "07/02/2025",
+        "selected": false
+      },
+      {
+        "label": "01-07-2025 Juli Ranglisten",
+        "value": "07/01/2025",
+        "selected": false
+      }
+    ],
+    "dates": [
+      "2025-07-01",
+      "2025-07-02",
+      "2025-07-21",
+      "2025-07-23",
+      "2025-07-25",
+      "2025-07-28",
+      "2025-07-30",
+      "2025-08-01",
+      "2025-08-04",
+      "2025-08-06",
+      "2025-08-08",
+      "2025-08-11",
+      "2025-08-13",
+      "2025-08-15",
+      "2025-08-18",
+      "2025-08-20",
+      "2025-08-22",
+      "2025-08-25",
+      "2025-08-27",
+      "2025-08-29",
+      "2025-09-01",
+      "2025-09-03",
+      "2025-09-05",
+      "2025-09-08",
+      "2025-09-10",
+      "2025-09-12",
+      "2025-09-15",
+      "2025-09-17",
+      "2025-09-19",
+      "2025-09-22",
+      "2025-09-24",
+      "2025-09-26",
+      "2025-09-29",
+      "2025-10-01",
+      "2025-10-03",
+      "2025-10-06",
+      "2025-10-08",
+      "2025-10-10",
+      "2025-10-13",
+      "2025-10-15",
+      "2025-10-17",
+      "2025-10-20",
+      "2025-10-22",
+      "2025-10-24",
+      "2025-10-27",
+      "2025-10-29",
+      "2025-10-31",
+      "2025-11-01",
+      "2025-11-03",
+      "2025-11-05",
+      "2025-11-07",
+      "2025-11-10",
+      "2025-11-12",
+      "2025-11-14",
+      "2025-11-17",
+      "2025-11-21",
+      "2025-11-24",
+      "2025-11-26",
+      "2025-11-28",
+      "2025-12-01",
+      "2025-12-03",
+      "2025-12-05",
+      "2025-12-08",
+      "2025-12-10",
+      "2025-12-12",
+      "2025-12-15",
+      "2025-12-17",
+      "2025-12-19",
+      "2025-12-22",
+      "2025-12-24",
+      "2025-12-26",
+      "2025-12-29",
+      "2025-12-31",
+      "2026-01-01",
+      "2026-01-02",
+      "2026-01-05",
+      "2026-01-07",
+      "2026-01-09",
+      "2026-01-12",
+      "2026-01-14",
+      "2026-01-16",
+      "2026-01-19",
+      "2026-01-21",
+      "2026-01-23",
+      "2026-01-26",
+      "2026-01-28",
+      "2026-01-30",
+      "2026-02-01",
+      "2026-02-02",
+      "2026-02-04",
+      "2026-02-06",
+      "2026-02-09",
+      "2026-02-11",
+      "2026-02-12",
+      "2026-02-13",
+      "2026-02-16",
+      "2026-02-18",
+      "2026-02-20",
+      "2026-02-23",
+      "2026-02-25",
+      "2026-02-27",
+      "2026-03-01",
+      "2026-03-02",
+      "2026-03-04",
+      "2026-03-06",
+      "2026-03-09",
+      "2026-03-11",
+      "2026-03-12",
+      "2026-03-13",
+      "2026-03-16",
+      "2026-03-17",
+      "2026-03-18",
+      "2026-03-20",
+      "2026-03-23",
+      "2026-03-25",
+      "2026-03-26",
+      "2026-03-27",
+      "2026-03-30",
+      "2026-03-31",
+      "2026-04-01",
+      "2026-04-03",
+      "2026-04-06",
+      "2026-04-08",
+      "2026-04-10",
+      "2026-04-13",
+      "2026-04-15",
+      "2026-04-17",
+      "2026-04-20",
+      "2026-04-22",
+      "2026-04-24",
+      "2026-04-27",
+      "2026-04-28",
+      "2026-04-29",
+      "2026-05-01",
+      "2026-05-04",
+      "2026-05-06",
+      "2026-05-08",
+      "2026-05-11",
+      "2026-05-13",
+      "2026-05-15",
+      "2026-05-18",
+      "2026-05-19",
+      "2026-05-20",
+      "2026-05-21",
+      "2026-05-22",
+      "2026-05-25",
+      "2026-05-27",
+      "2026-05-29",
+      "2026-06-01",
+      "2026-06-02",
+      "2026-06-03",
+      "2026-06-05",
+      "2026-06-08",
+      "2026-06-09",
+      "2026-06-10",
+      "2026-06-15",
+      "2026-06-16",
+      "2026-06-29"
+    ],
+    "weekdays": {
+      "søndag": 2,
+      "mandag": 49,
+      "tirsdag": 8,
+      "onsdag": 47,
+      "torsdag": 5,
+      "fredag": 46,
+      "lørdag": 1
+    },
+    "gaps": {
+      "1": 27,
+      "2": 83,
+      "3": 43,
+      "4": 1,
+      "5": 1,
+      "13": 1,
+      "19": 1
+    },
+    "max_gap": 19
+  },
+  "calendar_comparison": [
+    {
+      "list": 289,
+      "common": 158,
+      "only_288": [],
+      "only_this_list": [],
+      "identical": true
+    },
+    {
+      "list": 292,
+      "common": 158,
+      "only_288": [],
+      "only_this_list": [],
+      "identical": true
+    }
+  ],
+  "oldest_proven_youth": {
+    "season": 2018,
+    "date": "2018-07-01",
+    "evidence": "ID, identisk navn og GSB-side i samme sæsons nationale ungdomskampe; klassefeltet alene viser ikke ungdom",
+    "matched_IDs": 10,
+    "examples": [
+      {
+        "ranking": {
+          "rank": 8,
+          "member_number": "000122‑08",
+          "name": "Jonathan W. Hansen",
+          "club": "Gladsaxe Søborg",
+          "class": null,
+          "points": 3095,
+          "player_id": "93216"
+        },
+        "matches": [
+          {
+            "external_player_id": "93216",
+            "name_raw": "Jonathan W. Hansen",
+            "external_match_id": "337416",
+            "age_group_id": 18,
+            "home_team_raw": "Team Storstrøm 1",
+            "away_team_raw": "Gladsaxe Søborg 1",
+            "team_side": "ude"
+          },
+          {
+            "external_player_id": "93216",
+            "name_raw": "Jonathan W. Hansen",
+            "external_match_id": "337417",
+            "age_group_id": 18,
+            "home_team_raw": "Gladsaxe Søborg 1",
+            "away_team_raw": "Herlufsholm 1",
+            "team_side": "hjemme"
+          },
+          {
+            "external_player_id": "93216",
+            "name_raw": "Jonathan W. Hansen",
+            "external_match_id": "337430",
+            "age_group_id": 18,
+            "home_team_raw": "Gladsaxe Søborg 1",
+            "away_team_raw": "KBK Kbh. 1",
+            "team_side": "hjemme"
+          },
+          {
+            "external_player_id": "93216",
+            "name_raw": "Jonathan W. Hansen",
+            "external_match_id": "337432",
+            "age_group_id": 18,
+            "home_team_raw": "Gladsaxe Søborg 1",
+            "away_team_raw": "Holbæk 1",
+            "team_side": "hjemme"
+          }
+        ]
+      },
+      {
+        "ranking": {
+          "rank": 11,
+          "member_number": "000825‑11",
+          "name": "Oliver Frei",
+          "club": "Gladsaxe Søborg",
+          "class": null,
+          "points": 3072,
+          "player_id": "229287"
+        },
+        "matches": [
+          {
+            "external_player_id": "229287",
+            "name_raw": "Oliver Frei",
+            "external_match_id": "337416",
+            "age_group_id": 18,
+            "home_team_raw": "Team Storstrøm 1",
+            "away_team_raw": "Gladsaxe Søborg 1",
+            "team_side": "ude"
+          },
+          {
+            "external_player_id": "229287",
+            "name_raw": "Oliver Frei",
+            "external_match_id": "337417",
+            "age_group_id": 18,
+            "home_team_raw": "Gladsaxe Søborg 1",
+            "away_team_raw": "Herlufsholm 1",
+            "team_side": "hjemme"
+          },
+          {
+            "external_player_id": "229287",
+            "name_raw": "Oliver Frei",
+            "external_match_id": "337423",
+            "age_group_id": 18,
+            "home_team_raw": "Herlev/Hjorten 1",
+            "away_team_raw": "Gladsaxe Søborg 1",
+            "team_side": "ude"
+          },
+          {
+            "external_player_id": "229287",
+            "name_raw": "Oliver Frei",
+            "external_match_id": "337425",
+            "age_group_id": 18,
+            "home_team_raw": "Gladsaxe Søborg 1",
+            "away_team_raw": "Skælskør 1",
+            "team_side": "hjemme"
+          },
+          {
+            "external_player_id": "229287",
+            "name_raw": "Oliver Frei",
+            "external_match_id": "337430",
+            "age_group_id": 18,
+            "home_team_raw": "Gladsaxe Søborg 1",
+            "away_team_raw": "KBK Kbh. 1",
+            "team_side": "hjemme"
+          },
+          {
+            "external_player_id": "229287",
+            "name_raw": "Oliver Frei",
+            "external_match_id": "337432",
+            "age_group_id": 18,
+            "home_team_raw": "Gladsaxe Søborg 1",
+            "away_team_raw": "Holbæk 1",
+            "team_side": "hjemme"
+          }
+        ]
+      },
+      {
+        "ranking": {
+          "rank": 15,
+          "member_number": "040415‑04",
+          "name": "Jakob Buus Nyeng",
+          "club": "Gladsaxe Søborg",
+          "class": null,
+          "points": 2516,
+          "player_id": "211704"
+        },
+        "matches": [
+          {
+            "external_player_id": "211704",
+            "name_raw": "Jakob Buus Nyeng",
+            "external_match_id": "337416",
+            "age_group_id": 18,
+            "home_team_raw": "Team Storstrøm 1",
+            "away_team_raw": "Gladsaxe Søborg 1",
+            "team_side": "ude"
+          },
+          {
+            "external_player_id": "211704",
+            "name_raw": "Jakob Buus Nyeng",
+            "external_match_id": "337417",
+            "age_group_id": 18,
+            "home_team_raw": "Gladsaxe Søborg 1",
+            "away_team_raw": "Herlufsholm 1",
+            "team_side": "hjemme"
+          },
+          {
+            "external_player_id": "211704",
+            "name_raw": "Jakob Buus Nyeng",
+            "external_match_id": "337423",
+            "age_group_id": 18,
+            "home_team_raw": "Herlev/Hjorten 1",
+            "away_team_raw": "Gladsaxe Søborg 1",
+            "team_side": "ude"
+          },
+          {
+            "external_player_id": "211704",
+            "name_raw": "Jakob Buus Nyeng",
+            "external_match_id": "337425",
+            "age_group_id": 18,
+            "home_team_raw": "Gladsaxe Søborg 1",
+            "away_team_raw": "Skælskør 1",
+            "team_side": "hjemme"
+          },
+          {
+            "external_player_id": "211704",
+            "name_raw": "Jakob Buus Nyeng",
+            "external_match_id": "337430",
+            "age_group_id": 18,
+            "home_team_raw": "Gladsaxe Søborg 1",
+            "away_team_raw": "KBK Kbh. 1",
+            "team_side": "hjemme"
+          },
+          {
+            "external_player_id": "211704",
+            "name_raw": "Jakob Buus Nyeng",
+            "external_match_id": "337432",
+            "age_group_id": 18,
+            "home_team_raw": "Gladsaxe Søborg 1",
+            "away_team_raw": "Holbæk 1",
+            "team_side": "hjemme"
+          },
+          {
+            "external_player_id": "211704",
+            "name_raw": "Jakob Buus Nyeng",
+            "external_match_id": "353934",
+            "age_group_id": 18,
+            "home_team_raw": "Gladsaxe Søborg 2",
+            "away_team_raw": "Valby BC 1",
+            "team_side": "hjemme"
+          },
+          {
+            "external_player_id": "211704",
+            "name_raw": "Jakob Buus Nyeng",
+            "external_match_id": "353935",
+            "age_group_id": 18,
+            "home_team_raw": "Charlottenlund 1",
+            "away_team_raw": "Gladsaxe Søborg 2",
+            "team_side": "ude"
+          }
+        ]
+      }
+    ]
+  },
+  "minimum_interval_ms": 2100,
+  "verification": {
+    "raw_hashes_checked": 13,
+    "failures": [],
+    "passed": true
+  }
+}

@@ -43,10 +43,33 @@ Skriv i "Spørgsmål". Gæt ikke på, hvornår ungdom kom på ranglisten; skriv 
 `arbejde/153-historisk-raekkevidde`, fra `main`. Christoffer opretter grenen og committer selv. Codex kører kun læsende git, ustaged, ingen `git add -A`, ingen push, ingen Co-Authored-By, ingen sub-agents.
 
 ## Spørgsmål
-(Tomt.)
+- 2012–2017 returnerer HTTP 200, nul ranglisterækker og én udateret versionspost, "Seneste". Listen er derfor ikke bogstaveligt tom: stopreglen med to helt tomme versionslister blev ikke udløst, og alle syv sæsoner blev prøvet. Ingen dateret kalender fundet er ikke et bevis for, at ungdom aldrig havde point. Anbefalet status i senere pointskema: "ingen dateret rangliste fundet via denne rute", med ukendt årsag. Skal en anden historisk kilde undersøges senere?
+- 2018-prøvens klassefelt er SEN eller tomt, ikke U13 mv. Ungdomsdeltagelse er i stedet verificeret på profil-ID, identisk navn, samme sæson og GSB-holdside i national-spillere.db. Ingen alder eller køn er gættet fra navnet.
+- 2018-kalenderen indeholder også 2019-07-01. Det er kildens faktiske svar og bevares; der gættes ikke på sæsonoverlap eller årsag.
+- Ens kalendere er kun bevist for 2025/26, M, liste 288/289/292. Det beviser ikke kalenderfællesskab for alle sæsoner eller K.
+- Promptens budget er 35 mod kortets oprindelige 25; de 13 faktisk brugte kald overholder begge. Ingen ekstra kald var nødvendige.
 
 ## Tilbagefald
 Slet de nye filer, inklusive `153-raa-svar/`. Ingen database er berørt.
 
 ## Resultat
-(Udfyldes af Codex.)
+Afsluttet på arbejde/153-historisk-raekkevidde, uden staging, commit eller push. 13 sekventielle kald, alle HTTP 200; mindste interval 2.100 ms. Transport, bot-værn, redaktion og parser/requestkontrakt fra 152/151 er genbrugt uden at ændre de eksisterende scripts. Ingen cookies, login, CAPTCHA-omgåelse eller bulkhentning.
+
+| Sæson-ID / liste M | Versionsposter | Daterede | Ældste | Nyeste |
+|---|---:|---:|---|---|
+| 2018 / 288 | 142 | 141 | 2018-07-01 | 2019-07-01 |
+| 2017–2012 / 288, hver sæson | 1 | 0 | ingen | ingen |
+| 2023 / 288 | 130 | 129 | 2023-07-01 | 2024-06-17 |
+| 2024 / 288 | 160 | 159 | 2024-07-01 | 2025-06-25 |
+| 2025 / 289 | 159 | 158 | 2025-07-01 | 2026-06-29 |
+| 2025 / 292 | 159 | 158 | 2025-07-01 | 2026-06-29 |
+
+GSB-filteret på 2018-07-01 gav 28 rækker, alle 28 med point og profil-ID. Det valgte versions-Value `07/01/2018` var bekræftet i svaret. 10 af spillerne matcher eksisterende ungdomskampe i samme sæson på ID, navn og GSB-holdside. Tre offentligt kontrollerbare stikprøver (klassefeltet er tomt): Jonathan W. Hansen, ID 93216, 3.095 point; Oliver Frei, ID 229287, 3.072; Jakob Buus Nyeng, ID 211704, 2.516. Kamp-ID'er og rå klasseetiketter er i rapport/JSON.
+
+Ældste positive ungdomsprøve: 2018/19, 1. juli 2018. Det er ikke et bevist historisk starttidspunkt. 2012–2017 får ingen opdigtede point og mærkes efter anbefalingen i Spørgsmål, ikke som definitivt "ingen rangliste".
+
+Kalenderfællesskab: 289 og 292 har hver præcis 158 fælles datoer med 288's gemte 2025-svar; 0 datoer kun i den ene liste, identiske datosæt. Ugedage og alle afstandshistogrammer står i rapporten. Mandag/onsdag/fredag dominerer, men andre ugedage forekommer. Typiske afstande er 2–3 dage; største hul er 11 dage i 2018, 31 i 2023, 12 i 2024 og 19 i 2025.
+
+Kontrol: `node --check statistik/scripts/153-historisk-raekkevidde.mjs` og offline `node statistik/scripts/153-historisk-raekkevidde.mjs --analyze`. Alle 13 gemte råsvarshashes kontrolleret. Alle fem databaser blev åbnet readOnly; SHA-256 før/efter er identiske. De fire kendte hashes matcher kortet; rangliste-point.db har før = efter `54F2FE25C82C188D5E6412A131081BF341A37AFF17DFF51B5F68A884B6591BC9`. Alle fulde hashes står i rapporten. `git status --short statistik/data/` er tom; `git diff --check` har ingen fejl. Chris' eksisterende ændringer er urørte.
+
+Leverancer: `statistik/scripts/153-historisk-raekkevidde.mjs`, `statistik/results/153-historisk-raekkevidde.md`, `statistik/results/153-historisk-raekkevidde.json`, `statistik/results/153-raa-svar/`. Kortet forbliver i work/aabne/, alt ustaged.
