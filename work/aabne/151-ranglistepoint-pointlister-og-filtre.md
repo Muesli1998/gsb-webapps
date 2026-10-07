@@ -22,6 +22,11 @@
 5. **Kobling for modstandere.** Når punkt 1 har givet en filtreret ungdomsliste (fx U13 herrer 288), så tæl: hvor mange af de modstandere i GSB's U13-kampe 2025/26, der kan findes på ID på den liste, hvor mange kun på navn og klub (markér som uafklarede), og hvor mange slet ikke. Brug de sider, der er hentet; skriv hvor mange sider det er ud af hvor mange.
 6. **Plan for fuld hentning** med tal: antal lister (6) × versioner (fra punkt 4) × sider pr. liste efter filtrering (fra punkt 1), ny separat database (forslag til skema: `ranking_points(list_id, param, version_date, player_id, member_number, name, club, class, rank, points, fetched_at, response_sha256)`), takt, checkpoint, og hvor mange timer det tager ved 2 sekunders pause.
 
+## Tilføjelse (Christoffer, 2026-10-07)
+- Uden filtre indeholder en liste **alle** spillere på ranglisten, uanset alder og klub. U17 E-spillere må spille seniorturneringer, så ungdomsmodstandere kan have seniorpoint og ligge uden for aldersfiltrene.
+- I punkt 1 og 6: opgiv for hver af de seks lister både antal sider **ufiltreret** (kun sidetallet fra første svar, ingen ekstra sider hentes) og antal sider med det bedste filter. Vurder, om filtrene taber modstandere: tjek for de modstandere, der blev fundet i punkt 5, om de ligger inden for filteret, og list dem, der kun findes ufiltreret (fx U17 E eller seniorer).
+- Klasseetiketten i rækken (`U15 …`, `U17 E`, `SEN …`) skal gemmes i rapporten. U17 E regnes som ungdom, men markeres, fordi de må spille senior.
+
 ## Netværksregler
 - Maks. **25 forespørgsler i alt**, sekventielt, mindst 2 sekunders pause, backoff ved 429/5xx, stop ved 3 fejl i træk.
 - Kun `badmintonplayer.dk`: ét GET af `/DBF/Ranglister/` for kontekstnøglen (genbrug nøglen, hent ny ved fejl) og POST til `GetRankingListPlayers`. Brug 150-scriptet som udgangspunkt.
