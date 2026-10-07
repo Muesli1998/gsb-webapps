@@ -1,4 +1,4 @@
-# Opgave 154 — version/dato-regel og hentning af ranglistepoint for sæson 2025/26
+# Opgave 154 — version/dato-regel og hentning af ranglistepoint for sæson 2025/26 (og aktuelt snapshot for 2026/27)
 
 **Trin:** Bygger på 152 (kontrolsnapshot 2026-04-10), 152a (metodeforslag) og 153 (historisk rækkevidde). Første rigtige hentning ud over ét snapshot. Gør det i to faser, og afrapportér fase 0, før fase 1 starter.
 
@@ -27,8 +27,14 @@ Den historiske event-/kamptabel (se `statistik/API_RESEARCH.md` og 152 punkt "ev
 6. **Kobling og kontrol.** For alle kampe: antal spillere pr. status, pr. disciplin og pr. version. Tæl navn-/klubafvigelser (som 152's samarbejdsklubber) som `identity_review`, ikke fejl, hvis ID og personnavn er ens. Sammenlign 15 tilfældige GSB-spillere mod `rangliste-historik.db` for samme eller nærmeste version, og skriv forskellene.
 7. **Rapport.** Antal kald brugt, pr. fase og pr. version; antal kampe med fuld dækning, delvis og ingen; de mest almindelige årsager til `incomplete_search` og `confirmed_absent`; og et forslag til, hvordan 2024/25 og ældre sæsoner skal hentes (kalender fra 153, forventet kaldtal).
 
+## Fase 2 — sæson 2026/27: aktuelt snapshot og evt. kampbehov
+Kør først efter fase 1 er færdig, eller når fase 1 har brugt sit budget og det er afrapporteret, hvorfor.
+1. **Kampbehov 2026/27.** Hvis `gsb-statistik-normalized.db` eller `national-spillere.db` indeholder daterede ungdomskampe i 2026/27, byg `ranking_needs` for dem på samme måde som i fase 1 (version strengt før kampdagen). Findes ingen, så skriv det i rapporten.
+2. **Aktuelt snapshot.** Hent den nyeste version i `seasonid` 2026 helt og ufiltreret for alle seks lister (288/289/292 × M/K), på samme måde som 152 (alle sider, sidetal fra første svar, resumé, `harvest_pages`). Det er nuværende point for alle spillere, også de modstandere GSB skal møde. Gem hentetid og versionsdato. Hent ikke de øvrige 40 versioner siden 1. juli; det er et senere kort.
+3. Rapportér kald brugt, antal rækker og unikke spillere, og hvor mange af de aktive GSB-ungdomsspillere (fra kampdata og tidligere sæsoner) der findes i snapshottet.
+
 ## Netværksregler
-- Maks. **5.200 forespørgsler i alt** (20 i fase 0, resten fase 1). Kør i så mange omgange, det tager. Stop og rapportér, hvis budgettet nås, før alle behov er dækket.
+- Maks. **6.000 forespørgsler i alt** (20 i fase 0, op til ca. 5.200 i fase 1, ca. 400–600 i fase 2). Kør i så mange omgange, det tager. Stop og rapportér, hvis budgettet nås, før alle behov er dækket.
 - Sekventielt, mindst 2 sekunder mellem kald, ingen parallelle kald. Kun `badmintonplayer.dk`: GET af `/DBF/Ranglister/` for kontekstnøglen og POST til `GetRankingListPlayers`. Hent ny nøgle, når den udløber.
 - Ingen login, ingen cookies, ingen CAPTCHA, ingen samtykkeklik. Ved botværn: stop og skriv det i "Spørgsmål".
 - Rå svar må gemmes komprimeret i `statistik/results/154-raa-svar/` (kontekstnøgle redigeret ud), men hold mappen under ca. 100 MB; ellers gem kun hash og de første tre sider pr. liste og version.
@@ -41,11 +47,11 @@ Den historiske event-/kamptabel (se `statistik/API_RESEARCH.md` og 152 punkt "ev
 
 ## Kontrol
 - **Målet:** Fase 0 er afrapporteret, og for alle daterede 2025/26-ungdomskampe har hver deltager en status. Alle valgte opslag er hentet, eller budgettet er nået, og rapporten siger hvilke versioner der mangler.
-- **Værnet:** Højst 5.200 forespørgsler (tallet står i loggen, hver med hash). De fire eksisterende databasers hashes uændrede (`gsb-statistik-normalized.db` 49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E, `liga-landskab.db` 9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C, `rangliste-historik.db` 6E9516DB643F88F88946A82CB76EC3B5C686C7D548ABF7084B3F60EE3DA0316F, `national-spillere.db` 1E27C5D81CCE8E2D656DF2C924E4BF6931EEAAF86348ADD384AB6D58F7CBAC3E), alle åbnet readOnly; kun `rangliste-point.db` skrives til, og dens `integrity_check` skal være `ok`. `git status --short statistik/data/` tom (databasen er ignoreret). `git diff --check` uden fejl.
+- **Værnet:** Højst 6.000 forespørgsler (tallet står i loggen, hver med hash). De fire eksisterende databasers hashes uændrede (`gsb-statistik-normalized.db` 49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E, `liga-landskab.db` 9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C, `rangliste-historik.db` 6E9516DB643F88F88946A82CB76EC3B5C686C7D548ABF7084B3F60EE3DA0316F, `national-spillere.db` 1E27C5D81CCE8E2D656DF2C924E4BF6931EEAAF86348ADD384AB6D58F7CBAC3E), alle åbnet readOnly; kun `rangliste-point.db` skrives til, og dens `integrity_check` skal være `ok`. `git status --short statistik/data/` tom (databasen er ignoreret). `git diff --check` uden fejl.
 - **Skøn:** 5 GSB-spillere og 5 modstandere med point for en konkret kamp fra sæsonen (navn, version, point), som Christoffer kan slå op på den offentlige side for samme dato.
 
 ## Afgrænsning
-- Kun sæson 2025/26. Ingen forventet-vinder-beregning, ingen artifact.
+- Sæson 2025/26 (fase 0–1) og ét aktuelt snapshot for 2026/27 (fase 2). Ingen andre sæsoner, ingen forventet-vinder-beregning, ingen artifact.
 - Ret ikke 136-parseren, 143–153-filerne eller regelbogen.
 - Rør ikke `apps/netlify-prod/` eller `docs/BESLUTNINGER.md`.
 
