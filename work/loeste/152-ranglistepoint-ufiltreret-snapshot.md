@@ -54,10 +54,41 @@ Skriv i "Spørgsmål". Gæt ikke. Spillere uden point markeres som "ikke på lis
 `arbejde/152-snapshot`, fra `main`. Christoffer opretter grenen og committer selv. Codex kører kun læsende git, ustaged, ingen `git add -A`, ingen push, ingen Co-Authored-By, ingen sub-agents.
 
 ## Spørgsmål
-(Tomt.)
+- Prompten godkendte fase 0 (højst 10 kald) og højst 470 kald samlet. Kortets oprindelige grænse er 450; de faktisk brugte 404 overholder begge grænser. Den ekstra versionsprøve i fase 0 er kun rå evidens og er ikke importeret som snapshotpoint.
+- 10 ID-fund har navn-/klubafvigelse: 9 modstandere og 1 deltager med ukendt side. De er listet i rapporten og JSON, ikke automatisk godkendt. Skal klubskift/navnevarianter senere afklares manuelt?
+- To kampe (506407 og 506413) mangler nationale deltagere/brugbar sideevidens. To øvrige deltagere har ukendt side og tælles separat. Dækningen er derfor ikke fuldstændig for alle kampdeltagere.
+- 37 dubletforekomster har samme ID og værdier. Alle annoncerede sider er hentet, men stabil paginering ved ties er ikke bevist. "Ikke fundet" betyder ikke fundet på de hentede sider; det beviser ikke absolut fravær i kildens bagvedliggende data.
+- Fase 0: K-listens rang 1 blev 83 ved playerid-opslag, selvom ID/navn/klub/point var uændrede. Rangsemantikken er ukendt; fase 1 importerede kun ufiltrerede svar.
+- Skøn-stikprøverne omfatter fem spillere på hver side, men kun U13/U15 på GSB-siden og U09/U13/U15 hos modstanderne. Der var ikke fem forskellige aldersgrupper blandt de entydigt koblede deltagere i dette snapshots kampe.
+- Historikstikprøverne er navnekoblede til Nembadminton og ligger 8 dage før snapshot. Fire pointtal er ens, ét afviger med 49. Dette beviser ikke en systematisk skalaforskel.
 
 ## Tilbagefald
 Slet de nye filer, inklusive `rangliste-point.db` og `152-raa-svar/`. Ingen eksisterende database er berørt.
 
 ## Resultat
-(Udfyldes af Codex.)
+Hentningen er afsluttet for snapshot 2026-04-10 (requestværdi `04/10/2026`, sæson 2025/26), som bruges af 41 af sæsonens 266 daterede ungdomsholdkampe. Parser og requestkontrakt er genbrugt fra 151 uden ændring i 151-filerne.
+
+Fase 0: 10 kald. Fem positive playerid-svar gav én isoleret række; fire direkte pointkontroller mod kontrolsvar bestod. Et double-opslag gav nul rækker, og fraværet blev efterprøvet i den fulde doubleliste. Et faktisk historisk ranglistepost-ID åbnede GetPlayerRankingListPoints med 20 eventrækker, ikke en samlet liste over alle versioner. K-rangafvigelsen står under Spørgsmål.
+
+Fase 1: alle 393 annoncerede sider hentet, 404 kald samlet, alle HTTP 200, mindste interval 2.100 ms. Ingen cookies eller bot-omgåelse. To ufiltrerede fase 0-sider blev genbrugt; andre fase 0-svar blev ikke importeret.
+
+| Liste | M/K | Sider | Kildeforekomster | Unikke liste/ID-rækker | Sidste side |
+|---|---|---:|---:|---:|---:|
+| 288 | M | 97 | 9.632 | 9.628 | 32 |
+| 288 | K | 37 | 3.620 | 3.616 | 20 |
+| 289 | M | 134 | 13.366 | 13.337 | 66 |
+| 289 | K | 52 | 5.196 | 5.196 | 96 |
+| 292 | M | 41 | 4.003 | 4.003 | 3 |
+| 292 | K | 32 | 3.167 | 3.167 | 67 |
+
+38.984 kildeforekomster = 38.947 gemte ranglisterækker + 37 dubletforekomster. 20.043 forskellige profil-ID'er på tværs af lister. Ingen gemte rækker har null-point. Klasseetiketterne er optalt i JSON og rapport; blandt de koblede modstandere fandtes 0 U17 E og 0 SEN.
+
+Kobling: 215 forskellige deltager-ID'er. GSB: 47, heraf 43 ID/navn/klub godkendt og 4 ikke fundet. Modstandere: 166, heraf 144 godkendt, 9 med navn-/klubafvigelse og 13 ikke fundet. Ukendt side: 2, heraf 1 afvigelse og 1 ikke fundet. Ingen kun-navn/klub-koblinger. Alle disciplinoptællinger står i rapporten: enheden er distinkte spiller–disciplin-kombinationer, ikke antal kampe. Et pointtal på et afvigende ID er ikke en godkendt identitetskobling.
+
+Genoptagelse: kunstigt stop efter 30 nye sider; 36 sider var da gemt, og snapshot var ikke komplet. Genoptagelsen sprang gemte sider over. Ved kald 212 stoppede en lokal EPERM-fejl atomisk udskiftning af JSON-checkpointet; SQLite havde allerede gemt siden, integritetskontrollen bestod, og næste kørsel fortsatte på næste manglende side. Ingen rettigheder/ACL'er ændret, ingen færdige sider genhentet. Slutkontrol: `PRAGMA integrity_check` = `ok`.
+
+Kontroller: `node --check statistik/scripts/152-snapshot-hentning.mjs`; offline `node statistik/scripts/152-snapshot-hentning.mjs --analyze`; alle 404 råsvarshashes og alle seks identitets-/pointfelter for de 37 dubletforekomster efterprøvet. Fem GSB- og fem modstanderstikprøver samt fem historikstikprøver er i rapporten. Komprimerede råsvar: 2.865.543 bytes, under 30 MB.
+
+Alle fire eksisterende databasehashes er uændrede før/efter og svarer til kortets kendte værdier. Eksisterende databaser blev kun åbnet readOnly. Kun den nye `rangliste-point.db` blev skrevet; den er gitignored, så `git status --short statistik/data/` er tom. Ingen git-skrivning, staging eller commit. Chris' eksisterende ændringer samt andre trådes filer er urørte. `git diff --check` bestod (kun eksisterende CRLF-advarsler for 136-filerne).
+
+Leverancer: `statistik/scripts/152-snapshot-hentning.mjs`, `statistik/data/rangliste-point.db`, `statistik/results/152-snapshot.md`, `statistik/results/152-snapshot.json` og `statistik/results/152-raa-svar/`. Kortet bliver i `work/aabne/` med ændringerne ustaged.
