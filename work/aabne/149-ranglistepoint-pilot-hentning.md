@@ -49,10 +49,17 @@ Skriv i "Spørgsmål". Gæt ikke på, hvad et felt eller en parameter betyder; s
 `arbejde/149-ranglistepilot`, fra `main`. Christoffer opretter grenen og committer selv. Codex kører kun læsende git, ustaged, ingen `git add -A`, ingen push, ingen Co-Authored-By, ingen sub-agents.
 
 ## Spørgsmål
-(Tomt.)
+- Den offentlige Ranglister-side returnerede HTTP 200, men HTML’en indeholder Cookiebot `data-blockingmode="auto"` og reCAPTCHA-konfiguration. Er denne samtykke-/adgangsopsætning et værn, der kræver, at Chris selv åbner siden og afklarer samtykke, før piloten fortsættes? Jeg stoppede før ethvert ASMX-kald; intet blev accepteret eller omgået.
+- Som følge af stoppet er route/pagination, spillerfelter og ID-type, 20+20-koblingstal samt før-2022-tilgængelighed ukendt i denne kørsel.
 
 ## Tilbagefald
 Slet de nye filer, inklusive `149-raa-svar/`. Ingen database er berørt.
 
 ## Resultat
-(Udfyldes af Codex.)
+Piloten stoppede før API-kald efter 2 GET-forespørgsler til samme offentlige badmintonplayer.dk-ranglisteside (HTTP 200, 21.846 bytes hver). Sideindholdet viser Cookiebot med `data-blockingmode="auto"` samt reCAPTCHA-konfiguration. Kortets stopregel blev fulgt: ingen samtykkehandling, CAPTCHA-løsning eller værnomgåelse; nul ASMX-kald. Det betyder, at opgavens tekniske hovedspørgsmål ikke er afgjort.
+
+Det andet side-svar er gemt under `statistik/results/149-raa-svar/01-rangliste-page-redacted.html`; den kortlivede `SR_CallbackContext` er redigeret. Svarhash: `175d065b8343161bab39f5a0def199108ead2fe8022a2da71aa1de7c0a451cd0`. Første eksplorative svar blev ikke gemt eller hashberegnet; denne logmangel står åbent i JSON. Netværksforbrug: 2/30, kun `badmintonplayer.dk`, sekventielt med over 1,5 sekunders afstand.
+
+Lokale scripts, API-noter og gemt parameter-grid blev gennemgået: tidligere `GetRankingListVersions`-kørsel havde HTTP 200, mens de afprøvede generiske `GetRankingListPlayers`-kald gav HTTP 500. Ingen af disse blev genkørt i denne pilot. Derfor er komplet ranglisteudtræk, pagination, felttyper/ID’er, matchning af 20 modstandere + 20 GSB-spillere og historik før august 2022 fortsat ukendt. Ingen ranglisterækker blev hentet.
+
+Databaserne blev verificeret før forsøget mod kortets SHA-256: normalized `49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E`, liga-landskab `9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C`, rangliste-historik `6E9516DB643F88F88946A82CB76EC3B5C686C7D548ABF7084B3F60EE3DA0316F`, national-spillere `1E27C5D81CCE8E2D656DF2C924E4BF6931EEAAF86348ADD384AB6D58F7CBAC3E`. Ingen database blev åbnet til skrivning. En opfølgende hashkontrol og afsluttende Git-kontroller mangler.

@@ -1,0 +1,64 @@
+{
+  "title": "Opgave 149 — ranglistepilot",
+  "status": "stoppet ved cookie-/adgangsværn før rangliste-API-kald",
+  "network_requests_total": 2,
+  "network_requests_limit": 30,
+  "hosts_used": ["badmintonplayer.dk"],
+  "requests": [
+    {
+      "number": 1,
+      "method": "GET",
+      "url": "https://badmintonplayer.dk/DBF/Ranglister/#288",
+      "status": 200,
+      "response_bytes": 21846,
+      "response_sha256": null,
+      "response_saved": false,
+      "callback_context_found": true,
+      "captured_at": null,
+      "note": "Exploratory first request. The command only printed status/size and did not calculate or retain the response hash. This is explicitly an incomplete log entry; the response was not saved."
+    },
+    {
+      "number": 2,
+      "method": "GET",
+      "url": "https://badmintonplayer.dk/DBF/Ranglister/#288",
+      "status": 200,
+      "response_bytes": 21846,
+      "response_sha256": "175d065b8343161bab39f5a0def199108ead2fe8022a2da71aa1de7c0a451cd0",
+      "response_saved": "statistik/results/149-raa-svar/01-rangliste-page-redacted.html",
+      "callback_context_found": true,
+      "callback_context_persisted": false,
+      "captured_at_utc": "2026-10-06 16:13:13 UTC (observation time; exact request-start time not recorded)",
+      "guard_evidence": [
+        "Cookiebot script is present with data-blockingmode=auto.",
+        "The page publishes RECAPTCHA_SITE_KEY and RECAPTCHA_SECURITY configuration."
+      ],
+      "note": "The ephemeral SR_CallbackContext was redacted in the saved page. The public page shell loaded; no CAPTCHA challenge was solved and no consent/access gate was interacted with. Work stopped here per the task-card rule."
+    }
+  ],
+  "queries": {
+    "versions": 0,
+    "ranking_list_players": 0,
+    "ranking_points": 0
+  },
+  "local_evidence": {
+    "existing_scripts": [
+      "statistik/call-ranking-versions.mjs",
+      "statistik/call-ranking-players.mjs",
+      "statistik/call-ranking-points.mjs",
+      "statistik/call-ranking-mix.mjs"
+    ],
+    "prior_findings": "API_RESEARCH.md and the saved parameter-grid output describe HTTP 500 for previous generic GetRankingListPlayers requests; GetRankingListVersions had a prior HTTP 200, but it was not re-tested in this pilot."
+  },
+  "unresolved": [
+    "The public page's Cookiebot auto-blocking and reCAPTCHA configuration must be clarified before any further request under the card's stop rule.",
+    "No fresh version enumeration or complete ranking list was fetched.",
+    "No fetched ranking row was available for ID/name/club matching; the requested 20 opponent and 20 GSB-player linkage counts remain unknown.",
+    "Availability before August 2022 remains unknown in this run."
+  ],
+  "database_hashes_before": {
+    "gsb-statistik-normalized.db": "49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E",
+    "liga-landskab.db": "9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C",
+    "rangliste-historik.db": "6E9516DB643F88F88946A82CB76EC3B5C686C7D548ABF7084B3F60EE3DA0316F",
+    "national-spillere.db": "1E27C5D81CCE8E2D656DF2C924E4BF6931EEAAF86348ADD384AB6D58F7CBAC3E"
+  }
+}
