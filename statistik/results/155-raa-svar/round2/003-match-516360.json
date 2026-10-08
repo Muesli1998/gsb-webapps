@@ -1,0 +1,12 @@
+{
+  "label": "match-516360",
+  "retrievedAt": "2026-10-08T05:38:31.232Z",
+  "url": "https://app.nembadminton.dk/graphql",
+  "query": "query { badmintonPlayerTeamMatch(input:{leagueMatchId:516360,season:2026}){home{name squad{categories{name category results{homePoints guestPoints} players{name}}}} guest{name squad{categories{name category results{homePoints guestPoints} players{name}}}}} }",
+  "httpStatus": 200,
+  "contentType": "application/json",
+  "responseBytes": 234,
+  "sha256": "9ca4df7cc38510f66969bbc07d725edd0c0d7958cb121e77ee596d310a487225",
+  "captchaOrBot": false,
+  "bodyText": "{\"errors\":[{\"message\":\"Could not find any players on match\",\"locations\":[{\"line\":1,\"column\":9}],\"path\":[\"badmintonPlayerTeamMatch\"]}],\"data\":{\"badmintonPlayerTeamMatch\":null},\"extensions\":{\"lighthouse_subscriptions\":{\"channel\":null}}}"
+}

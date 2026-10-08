@@ -41,10 +41,19 @@ Skriv i "Spørgsmål".
 `arbejde/155-kampe-2026-27`, fra `main`. Christoffer opretter grenen og committer selv. Codex kører kun læsende git, ustaged, ingen `git add -A`, ingen push, ingen Co-Authored-By, ingen sub-agents.
 
 ## Spørgsmål
-(Tomt.)
+- Skal kort 156 begrænses til A (GSB-kampe), som er nok til at hente GSB's egne kampe og deres modstandere, eller ønsker Chris også alle kampe i GSB-puljerne (B)? C er væsentligt større og matcher ikke det afgrænsede GSB-formål.
+- Ranglistekobling: API-detaljen returnerede spillernavne, men ikke spiller-ID'er i det afprøvede feltvalg. Skal 156 kræve en særskilt verificeret ID-kobling før import af spilleropstillinger, eller må opstillingsdelen stå som gap?
 
 ## Tilbagefald
 Slet de nye filer, inklusive `155-raa-svar/`. Ingen database er berørt.
 
 ## Resultat
-(Udfyldes af Codex.)
+Undersøgelsen er udført uden import og uden databaseændringer. Alle fem databaser blev åbnet read-only. Seks offentlige, sekventielle GraphQL-kald blev kørt med mindst 2,2 sekunders afstand; ingen cookies, login, CAPTCHA eller botværn. Råsvar og SHA-256-log ligger i `statistik/results/155-raa-svar/` (en genprøve af almindelig U15-pulje ligger i `round2/`). Scriptet er `statistik/scripts/155-undersoegelse.mjs`.
+
+- Normaliseret DB: 2026/27 har 0 competitions, 0 teams og 0 team_matches. I 2025/26 er der 73 competitions, 77 teams og 400 team_matches; 395 med dato, 396 med ikke-tom result_raw, 396 browser_verified og 4 api_error. GSB-ungdom i 2025/26: 54 competitions, 271 holdkampe, 266 med dato, 267 med råresultat, 1.582 individual_match-rækker på 254 kamp-ID'er.
+- `liga-landskab.db`: 2025/26 har 564 ungdomspuljer/8.235 kamp-ID'er; de 54 GSB-ungdomspuljer indeholder 810 unikke kampe. For 2026/27 er der 30 GSB-ungdomspulje-ID'er og 36 GSB-holdposter.
+- `national-spillere.db`: 2026/27 har 253 GSB-ungdomskamprækker. 32 har dato til og med 8. oktober; 14 har et ikke-placeholder-resultat og 18 står `Resultat -`. 336 spiller-kamprækker dækker 14 af kamp-ID'erne og 100 spiller-ID'er. Det er ikke en import til den normaliserede DB.
+- API-kæden gav hold/puljer, kampliste og for kamp 509892 fulde kategorier med sætpoint og spillernavne. Kampens gemte holdresultat er 6-2. Almindelig U15-pulje 19106 returnerede fremtidige kampe; detaljekaldet for 516360 gav GraphQL-fejlen `Could not find any players on match`. Den tidligere frisk-browser-render-gate blev ikke kørt igen.
+- Referencetal 2025/26 og kaldestimat (Teams + Fights + én detalje pr. kamp): A = 326 kald, B = 865, C mindst 8.235 plus ukendt discovery for alle klubber. Browser-sider efter 119/120-ruten: 271, 810 og 8.235. Anbefalingen er scope A som første pilot; B/C kræver særskilt begrundelse.
+- De fem match-ID'er og faktiske kampoversigtsdatoer/resultater, importplan, ugentlig genoptagelig procedure, værn for de kendte undtagelser og forslag til kort 156 står i `statistik/results/155-kampe-2026-27.md` og `.json`.
+- Hashes før/efter sammenholdes i resultatrapporten; ingen database blev skrevet. `git diff --check` bestod. Ingen filer blev staged eller committed; eksisterende lokale ændringer blev efterladt urørte.

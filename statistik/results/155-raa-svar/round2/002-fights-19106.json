@@ -1,0 +1,12 @@
+{
+  "label": "fights-19106",
+  "retrievedAt": "2026-10-08T05:38:29.031Z",
+  "url": "https://app.nembadminton.dk/graphql",
+  "query": "query { badmintonPlayerTeamFights(input:{clubId:1093,season:2026,ageGroupId:5,leagueGroupId:19106,clubName:\"Gladsaxe Søborg 1\"}){matchId round roundDate gameTime teams} }",
+  "httpStatus": 200,
+  "contentType": "application/json",
+  "responseBytes": 1660,
+  "sha256": "bdc24ea4caa573bbc04f7061e9fa8ddb204aa292f8c1adadc3a4ceb0c72c8d13",
+  "captchaOrBot": false,
+  "bodyText": "{\"data\":{\"badmintonPlayerTeamFights\":[{\"matchId\":516360,\"round\":4,\"roundDate\":\"2026-10-24\",\"gameTime\":\"2026-10-25 10:00:00\",\"teams\":[\"VBC\\/FKIF 1\",\"Gladsaxe S\\u00f8borg 1\",\"VBC\\/FKIF\"]},{\"matchId\":516363,\"round\":4,\"roundDate\":\"2026-10-24\",\"gameTime\":\"2026-10-25 12:00:00\",\"teams\":[\"Gladsaxe S\\u00f8borg 1\",\"Nyk\\u00f8bing F 1\",\"VBC\\/FKIF\"]},{\"matchId\":515837,\"round\":5,\"roundDate\":\"2026-11-14\",\"gameTime\":\"2026-11-14 11:00:00\",\"teams\":[\"Gladsaxe S\\u00f8borg 1\",\"KBK Kbh. 2\",\"Gladsaxe S\\u00f8borg\"]},{\"matchId\":516372,\"round\":5,\"roundDate\":\"2026-11-14\",\"gameTime\":\"2026-11-14 14:00:00\",\"teams\":[\"BC37\\/IBB 1\",\"Gladsaxe S\\u00f8borg 1\",\"Gladsaxe S\\u00f8borg\"]},{\"matchId\":516390,\"round\":8,\"roundDate\":\"2027-02-06\",\"gameTime\":\"2027-02-06 10:30:00\",\"teams\":[\"Gladsaxe S\\u00f8borg 1\",\"K\\u00f8ge 1\",\"BC37\\/IBB\"]},{\"matchId\":516392,\"round\":8,\"roundDate\":\"2027-02-06\",\"gameTime\":\"2027-02-06 12:00:00\",\"teams\":[\"Holte 1\",\"Gladsaxe S\\u00f8borg 1\",\"BC37\\/IBB\"]},{\"matchId\":516399,\"round\":9,\"roundDate\":\"2027-03-06\",\"gameTime\":\"2027-03-07 13:00:00\",\"teams\":[\"Gladsaxe S\\u00f8borg 1\",\"H\\u00f8rsholm 1\",\"Gladsaxe S\\u00f8borg\"]},{\"matchId\":516401,\"round\":9,\"roundDate\":\"2027-03-06\",\"gameTime\":\"2027-03-07 17:00:00\",\"teams\":[\"Lyngby 1\",\"Gladsaxe S\\u00f8borg 1\",\"Gladsaxe S\\u00f8borg\"]},{\"matchId\":516409,\"round\":10,\"roundDate\":\"2027-03-20\",\"gameTime\":\"2027-03-20 13:30:00\",\"teams\":[\"Birker\\u00f8d BK13 1\",\"Gladsaxe S\\u00f8borg 1\",\"V\\u00e6rl\\u00f8se\"]},{\"matchId\":515877,\"round\":10,\"roundDate\":\"2027-03-20\",\"gameTime\":\"2027-03-20 12:00:00\",\"teams\":[\"Gladsaxe S\\u00f8borg 1\",\"V\\u00e6rl\\u00f8se 2\",\"V\\u00e6rl\\u00f8se\"]}]},\"extensions\":{\"lighthouse_subscriptions\":{\"channel\":null}}}"
+}

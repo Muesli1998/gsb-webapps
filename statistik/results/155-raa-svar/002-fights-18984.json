@@ -1,0 +1,12 @@
+{
+  "label": "fights-18984",
+  "retrievedAt": "2026-10-08T05:37:42.472Z",
+  "url": "https://app.nembadminton.dk/graphql",
+  "query": "query { badmintonPlayerTeamFights(input:{clubId:1093,season:2026,ageGroupId:5,leagueGroupId:18984,clubName:\"Gladsaxe Søborg 1\"}){matchId round roundDate gameTime teams} }",
+  "httpStatus": 200,
+  "contentType": "application/json",
+  "responseBytes": 418,
+  "sha256": "29a432f82cbefb88153a98e3969ebf18d67418511958cda6f593a2faa788e10f",
+  "captchaOrBot": false,
+  "bodyText": "{\"data\":{\"badmintonPlayerTeamFights\":[{\"matchId\":509892,\"round\":2,\"roundDate\":\"2026-09-19\",\"gameTime\":\"2026-09-20 09:30:00\",\"teams\":[\"Gladsaxe S\\u00f8borg 1\",\"FKIF Frederiksberg 1\",\"Badminton Roskilde\"]},{\"matchId\":509894,\"round\":2,\"roundDate\":\"2026-09-19\",\"gameTime\":\"2026-09-20 13:00:00\",\"teams\":[\"Gladsaxe S\\u00f8borg 1\",\"Drive 6\",\"Badminton Roskilde\"]}]},\"extensions\":{\"lighthouse_subscriptions\":{\"channel\":null}}}"
+}

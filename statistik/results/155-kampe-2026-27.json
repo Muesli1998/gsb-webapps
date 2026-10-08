@@ -1,0 +1,115 @@
+{
+  "task": 155,
+  "generated_at": "2026-10-08",
+  "season_id": 2026,
+  "database_hashes_before": {
+    "gsb-statistik-normalized.db": "49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E",
+    "liga-landskab.db": "9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C",
+    "national-spillere.db": "1E27C5D81CCE8E2D656DF2C924E4BF6931EEAAF86348ADD384AB6D58F7CBAC3E",
+    "rangliste-historik.db": "6E9516DB643F88F88946A82CB76EC3B5C686C7D548ABF7084B3F60EE3DA0316F",
+    "rangliste-point.db": "DABE3A12ACECD763E537087F0E16855AD39DF298234EB03FF111A3366100D1B9"
+  },
+  "database_status": {
+    "normalized_2025_26": {
+      "competitions": 73,
+      "teams": 77,
+      "team_matches": 400,
+      "with_date": 395,
+      "with_nonempty_result_raw": 396,
+      "status_counts": {"browser_verified": 396, "api_error": 4},
+      "youth_gsb": {
+        "age_group_ids": [2, 3, 4, 5, 6, 18],
+        "competitions": 54,
+        "team_matches": 271,
+        "with_date": 266,
+        "with_nonempty_result_raw": 267,
+        "individual_match_rows": 1582,
+        "distinct_matches_with_individual_rows": 254,
+        "status_counts": {"browser_verified": 267, "api_error": 4}
+      }
+    },
+    "normalized_2026_27": {"competitions": 0, "teams": 0, "team_matches": 0},
+    "league_landscape_2025_26": {
+      "league_groups_all_ages": 1441,
+      "league_group_team_rows_all_ages": 7226,
+      "league_matches_all_ages": 13618,
+      "youth_groups": 564,
+      "youth_distinct_match_ids": 8235,
+      "gsb_youth_groups": 54,
+      "matches_in_gsb_youth_groups": 810
+    },
+    "league_landscape_2026_27": {
+      "league_groups_all_ages": 391,
+      "league_group_team_rows_all_ages": 2724,
+      "league_matches_all_ages": 6721,
+      "gsb_youth_groups": 30,
+      "gsb_team_rows": 36
+    },
+    "national_players_2025_26": {
+      "matches": 13618,
+      "player_match_rows": 247520,
+      "matches_with_player_rows": 13152,
+      "distinct_players_with_match_rows": 18630
+    },
+    "national_players_2026_27": {
+      "matches_all_ages": 6721,
+      "gsb_youth_schedule_rows": 253,
+      "gsb_youth_distinct_match_ids": 253,
+      "gsb_youth_by_age_group": {"2": 24, "3": 39, "4": 76, "5": 71, "18": 43},
+      "gsb_youth_rows_dated_through_2026_10_08": 32,
+      "through_date_with_non_placeholder_result": 14,
+      "through_date_with_result_placeholder": 18,
+      "player_match_rows_on_gsb_youth_match_ids": 336,
+      "distinct_match_ids_with_player_rows": 14,
+      "distinct_players_in_those_rows": 100,
+      "all_ages_player_match_rows": 15697,
+      "all_ages_distinct_match_ids_with_player_rows": 507,
+      "all_ages_distinct_players": 5079
+    }
+  },
+  "network_probe": {
+    "endpoint": "https://app.nembadminton.dk/graphql",
+    "requests_total": 6,
+    "sequential": true,
+    "minimum_interval_ms": 2200,
+    "cookies": false,
+    "captcha_or_bot_response": false,
+    "requests": [
+      {"label": "teams-2026", "status": 200, "bytes": 6774, "sha256": "2daffd22df0f52a6b26f365a3cb491cfa9b98ea64095fc2f89b94988ce6d2b63", "purpose": "discover GSB teams and pools"},
+      {"label": "fights-18984", "status": 200, "bytes": 418, "sha256": "29a432f82cbefb88153a98e3969ebf18d67418511958cda6f593a2faa788e10f", "purpose": "UGE 38 U15 pool; returned IDs 509892 and 509894"},
+      {"label": "match-509892", "status": 200, "bytes": 3700, "sha256": "49c7e0e505d96c5004471bb6b4fdb3c606a024795aea1a89701f1316b72216cc", "purpose": "played match detail"},
+      {"label": "teams-2026-repeat", "status": 200, "bytes": 6774, "sha256": "2daffd22df0f52a6b26f365a3cb491cfa9b98ea64095fc2f89b94988ce6d2b63", "purpose": "repeat discovery to choose ordinary U15 pool"},
+      {"label": "fights-19106", "status": 200, "bytes": 1660, "sha256": "bdc24ea4caa573bbc04f7061e9fa8ddb204aa292f8c1adadc3a4ceb0c72c8d13", "purpose": "ordinary U15 A pool; returned future fixtures"},
+      {"label": "match-516360", "status": 200, "bytes": 234, "sha256": "9ca4df7cc38510f66969bbc07d725edd0c0d7958cb121e77ee596d310a487225", "purpose": "future fixture detail; GraphQL error Could not find any players on match"}
+    ],
+    "successful_detail": {
+      "match_id": 509892,
+      "season": 2026,
+      "home": "Gladsaxe Søborg 1",
+      "away": "FKIF Frederiksberg 1",
+      "database_team_result": "6-2",
+      "api_detail": {"categories_per_side": 8, "player_names_per_side_with_repetition": 12, "scored_games_per_side": 17, "player_ids_returned": false},
+      "note": "GraphQL detail returned roster names and set/game points; the selected fields do not expose player IDs or a single team-score field. The stored national-spillere match row independently has result_raw 'Resultat 6-2'."
+    },
+    "ordinary_pool": {"age_group_id": 5, "league_group_id": "19106", "league_label": "U15 A, 7200 (4 spillere)", "returned_first_match_id": 516360, "round_date": "2026-10-24", "detail_error": "Could not find any players on match"}
+  },
+  "sample_2026_27_games": [
+    {"external_match_id": "509892", "date": "2026-09-20", "age_group_id": 5, "league_group_id": "18984", "home": "Gladsaxe Søborg 1", "away": "FKIF Frederiksberg 1", "result": "6-2"},
+    {"external_match_id": "509894", "date": "2026-09-20", "age_group_id": 5, "league_group_id": "18984", "home": "Gladsaxe Søborg 1", "away": "Drive 6", "result": "4-5"},
+    {"external_match_id": "510076", "date": "2026-09-20", "age_group_id": 18, "league_group_id": "18994", "home": "Drive 8", "away": "Gladsaxe Søborg 2", "result": "2-6"},
+    {"external_match_id": "510077", "date": "2026-09-20", "age_group_id": 18, "league_group_id": "18994", "home": "Gladsaxe Søborg 2", "away": "KMB2010 7", "result": "7-1"},
+    {"external_match_id": "510081", "date": "2026-09-20", "age_group_id": 18, "league_group_id": "18996", "home": "Rudersdal 1", "away": "Gladsaxe Søborg 3", "result": "3-5"}
+  ],
+  "call_estimates_using_2025_26_reference": {
+    "A_gsb_matches_only": {"graphql_team_discovery": 1, "team_fights_group_discovery": 54, "team_match_details": 271, "estimated_total": 326, "browser_pages_if_119_120_route": 271},
+    "B_all_matches_in_gsb_pools": {"graphql_team_discovery": 1, "team_fights_group_discovery": 54, "team_match_details": 810, "estimated_total": 865, "browser_pages_if_119_120_route": 810},
+    "C_nationwide_youth": {"indexed_youth_match_details": 8235, "additional_discovery_calls": "unknown; the GSB-scoped team discovery query cannot enumerate all clubs", "browser_pages_if_119_120_route": 8235}
+  },
+  "database_hashes_after": {
+    "gsb-statistik-normalized.db": "49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E",
+    "liga-landskab.db": "9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C",
+    "national-spillere.db": "1E27C5D81CCE8E2D656DF2C924E4BF6931EEAAF86348ADD384AB6D58F7CBAC3E",
+    "rangliste-historik.db": "6E9516DB643F88F88946A82CB76EC3B5C686C7D548ABF7084B3F60EE3DA0316F",
+    "rangliste-point.db": "DABE3A12ACECD763E537087F0E16855AD39DF298234EB03FF111A3366100D1B9"
+  }
+}
