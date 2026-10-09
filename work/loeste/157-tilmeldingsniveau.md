@@ -49,10 +49,15 @@ Skriv i "Spørgsmål".
 `arbejde/157-tilmeldingsniveau`, fra `main`. Christoffer opretter grenen og committer selv. Codex kører kun læsende git, ustaged, ingen `git add -A`, ingen push, ingen Co-Authored-By, ingen sub-agents.
 
 ## Spørgsmål
-(Tomt.)
+- Ranglistepoint.db har 13 versioner, men 0 rækker fra liste 287. Komplet GSB-filterdækning estimeres til 50 kald inkl. frisk GET (49 POST-sider; historiske sidetal antaget fire pr. version), over loftet 40. Skal næste fase afgrænses til én seneste version pr. sæson (foreløbigt 6 kald), eller skal kaldeloftet hæves for alle 13 versioner?
+- Den præcise vægtformel, playerid-adfærd på liste 287, U09-dækning og M/K-sammenligning kan ikke afgøres uden flere versionsmatchede 287-svar. Ingen kandidatformler eller korrelationer er derfor beregnet.
 
 ## Tilbagefald
 Slet de nye filer, inklusive `157-raa-svar/`. Ingen database er berørt.
 
 ## Resultat
-(Udfyldes af Codex.)
+- Del 1: fandt Ranglistereglement 2023/24 (PDF, 13 sider; GET 200). §5 stk. 1 s. 3 siger vægtet gennemsnit af aktive kategorier, hvor kategorien med flest point vægter mest; eksakte koefficienter står ikke i kilden. Appendix A s. 9 har ungdomsintervaller pr. køn/årgang; s. 11 har voksenplaceringer pr. køn. Appendix B s. 12 definerer kampantal. 2020-artiklen beskriver én sæson tilbage i kampantal ved 2020/21. 2026/27-reglementets URL blev fundet, men ikke hentet inden for 10-kaldsloftet.
+- Del 2: rangliste-point.db indeholder 13 punktversioner (11 i 2025/26, 2 i 2026/27), men 0 liste-287-rækker. Genbrugte 150-svar viser 300 GSB-rækker på 3 af 4 sider for seneste 07-10-2026; global liste side 0/212. 2025/26 har intet 287-snapshot. Komplet GSB-filterdækning estimeres til 50 kald inkl. GET; derfor stoppede jeg her efter kortets trin-2-regel.
+- Del 3–5: ikke udført; ingen versionsmatchet datasæt. Spearman/Kendall/parrækkefølge er ikke tilgængelige, og der gives ingen kandidatformel eller pointopslagstabel. 287 playerid er ikke afprøvet; U09 er ukendt; gemt K-filter er 100 rækker, men der er ingen M-prøve.
+- Del 6: anbefaling og valg af næste dækningsniveau står i rapporten. Tre opslagseksempler: Jonas Trusell-Jensen (SEN M-A, lokal 1 / samlet 497, ID 92509), Morten Aarøe (SEN M-A, 2 / 507, ID 13216), Jonathan W. Hansen (SEN M-A, 3 / 599, ID 93216).
+- Leverancer: statistik/scripts/157-tilmeldingsniveau.py, statistik/results/157-tilmeldingsniveau.md/.json og 15 filer i statistik/results/157-raa-svar/. Kald: 10 badminton.dk GET, 0 nye badmintonplayer.dk-kald. Alle fem databasehashes før/efter stemmer med de forventede værdier; alle åbnet readOnly med PRAGMA query_only=ON. Scriptet kørte til ende; git diff --check exit 0.

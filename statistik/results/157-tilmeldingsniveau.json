@@ -1,0 +1,1212 @@
+{
+  "title": "Opgave 157 — tilmeldingsniveau",
+  "generated_at": "2026-10-09T16:39:38.465613+00:00",
+  "status": "stoppet_ved_trin_2",
+  "official_gets_to_badminton_dk": [
+    {
+      "n": 1,
+      "url": "https://badminton.dk/wp-content/uploads/2024/08/2024-08-02-Reglement-for-Rangliste_.pdf",
+      "status": 404,
+      "type": "text/html; charset=UTF-8",
+      "bytes": 95096,
+      "sha256": "2126fa6d19f746ce94a979f92278116384f11dc912201090936fb03c4fa0fd55",
+      "outcome": "HTML-fejlside, ikke PDF"
+    },
+    {
+      "n": 2,
+      "url": "https://badminton.dk/wp-content/uploads/2024/02/Reglement-for-Rangliste-2023-2024-070224.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "bytes": 190672,
+      "sha256": "1c43dc494dda1534a938ef6c72f69e8ca2d4b07c8e5ec44e9180ffb71b0d7966",
+      "pages": 13,
+      "outcome": "PDF-signatur og tekst kontrolleret"
+    },
+    {
+      "n": 3,
+      "url": "https://badminton.dk/2020/06/22/information-om-rangliste-i-forhold-til-saesonskifte/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "bytes": 190277,
+      "sha256": "75520a932d71e8258d7f017ec4dd1656b38ee1a093d5ce0e72fa0b9c47833c3c",
+      "outcome": "Historisk sæsonskifteartikel"
+    },
+    {
+      "n": 4,
+      "url": "https://badminton.dk/?s=Reglement%20for%20Rangliste",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "bytes": 106477,
+      "sha256": "5f2a622bfaabe26b18dc123e0c149181ef5b3daf4ab9bc0cac328eac5c59b100",
+      "outcome": "Offentlig site-søgning"
+    },
+    {
+      "n": 5,
+      "url": "https://badminton.dk/?s=pointintervalskema",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "bytes": 102114,
+      "sha256": "80346a1521c761f70021d83d7766681a00376af9c78287eb7982b9c69c7936c3",
+      "outcome": "Offentlig site-søgning"
+    },
+    {
+      "n": 6,
+      "url": "https://badminton.dk/?s=tilmeldingsniveau",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "bytes": 101272,
+      "sha256": "e4262f7cfc00db1344108da971a353d87e29a614f10c97b10ce12f9681478929",
+      "outcome": "Offentlig site-søgning"
+    },
+    {
+      "n": 7,
+      "url": "https://badminton.dk/rangliste/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "bytes": 148634,
+      "sha256": "1c9adc9e9a76b734bccd3888c5d45d45d6a86a51b5e9a2bce7757613f08e4779",
+      "outcome": "Landing page linker til 2026/27-reglement"
+    },
+    {
+      "n": 8,
+      "url": "https://badminton.dk/2024/07/05/faa-overblik-over-ranglistereguleringerne-ved-saesonskiftet-til-2024-2025/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "bytes": 194182,
+      "sha256": "d3407b778b1d486206b978daa113c22a2146fce6a9bb7a01cf40d4d6636e3751",
+      "outcome": "2024/25-reguleringer"
+    },
+    {
+      "n": 9,
+      "url": "https://badminton.dk/2024/01/26/rangliste-aendring-af-pointintervaller-i-u11-a-b-samt-for-u13-drenge/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "bytes": 186368,
+      "sha256": "b49ac6779df0629998bbee03d77ddbc2c1fe04ec0ae3fc27ae2d8407eaeac6f9",
+      "outcome": "U11/U13-intervaller ændret 29-01-2024"
+    },
+    {
+      "n": 10,
+      "url": "https://badminton.dk/2023/11/03/raekkeintervalskemaerne-til-ranglisten-er-opdateret/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "bytes": 184217,
+      "sha256": "b274474f4b7cc9f60a373c727132f9cfd772fb3d36840d32f3b6a8498c834636",
+      "outcome": "Ungdomsintervaller opdateret 01-11-2023"
+    }
+  ],
+  "badminton_dk_calls": 10,
+  "badmintonplayer_new_calls": 0,
+  "badmintonplayer_reused_request_log": [
+    {
+      "source_task": "150",
+      "number": 9,
+      "label": "agegroupid=5 gender=K list287",
+      "method": "POST",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "agegroupid": "5",
+        "gender": "K"
+      },
+      "status": 200,
+      "bytes": 63023,
+      "response_sha256": "f17dc3578b93def61e071edd2679073a3e37cc525c3c5641f5661a9d69a1aca8",
+      "saved_response": "statistik/results/150-raa-svar/09-q09-agegroupid-5-gender-K-list287.txt",
+      "callbackcontextkey": "redacted"
+    },
+    {
+      "source_task": "150",
+      "number": 10,
+      "label": "clubid=1093 list287",
+      "method": "POST",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "clubid": "1093"
+      },
+      "status": 200,
+      "bytes": 63502,
+      "response_sha256": "77eb56334edc2e54bc7384cdffb9af3a89ffedf980a65653d83197270669341d",
+      "saved_response": "statistik/results/150-raa-svar/10-q10-clubid-1093-list287.txt",
+      "callbackcontextkey": "redacted"
+    },
+    {
+      "source_task": "150",
+      "number": 18,
+      "label": "baseline list287 current page0",
+      "method": "POST",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {},
+      "status": 200,
+      "bytes": 59349,
+      "response_sha256": "4ccabd67fe5ce1d80c2f9cdc02e654783f5c998bbf6bdb9977d7caf156c67668",
+      "saved_response": "statistik/results/150-raa-svar/18-q18-baseline-list287-current-page0.txt",
+      "callbackcontextkey": "redacted"
+    },
+    {
+      "source_task": "150",
+      "number": 19,
+      "label": "clubid=1093 list287 pageindex=1",
+      "method": "POST",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "clubid": "1093",
+        "pageindex": "1"
+      },
+      "status": 200,
+      "bytes": 63630,
+      "response_sha256": "ca7ded06d122106ddb561f5210e59f00c451d7dd589ebdaf2b718f8fe97f3a83",
+      "saved_response": "statistik/results/150-raa-svar/19-q19-clubid-1093-list287-pageindex-1.txt",
+      "callbackcontextkey": "redacted"
+    },
+    {
+      "source_task": "150",
+      "number": 20,
+      "label": "clubid=1093 list287 pageindex=2",
+      "method": "POST",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "clubid": "1093",
+        "pageindex": "2"
+      },
+      "status": 200,
+      "bytes": 63897,
+      "response_sha256": "3b077c110cabd7b50ad739832e02f0051920374ae504f7bf637708edeb87b959",
+      "saved_response": "statistik/results/150-raa-svar/20-q20-clubid-1093-list287-pageindex-2.txt",
+      "callbackcontextkey": "redacted"
+    }
+  ],
+  "official_raw_responses": [
+    {
+      "saved": "statistik/results/157-raa-svar/01-rangliste-reglement-2024-08.html",
+      "bytes": 95096,
+      "sha256": "2126FA6D19F746CE94A979F92278116384F11DC912201090936FB03C4FA0FD55"
+    },
+    {
+      "saved": "statistik/results/157-raa-svar/02-rangliste-reglement-2024-02.pdf",
+      "bytes": 190672,
+      "sha256": "1C43DC494DDA1534A938EF6C72F69E8CA2D4B07C8E5EC44E9180FFB71B0D7966"
+    },
+    {
+      "saved": "statistik/results/157-raa-svar/03-information-rangliste-saesonskifte-2020.html",
+      "bytes": 190277,
+      "sha256": "75520A932D71E8258D7F017EC4DD1656B38EE1A093D5CE0E72FA0B9C47833C3C"
+    },
+    {
+      "saved": "statistik/results/157-raa-svar/04-site-search-ranglistereglement.html",
+      "bytes": 106477,
+      "sha256": "5F2A622BFAABE26B18DC123E0C149181EF5B3DAF4AB9BC0CAC328EAC5C59B100"
+    },
+    {
+      "saved": "statistik/results/157-raa-svar/05-site-search-pointintervalskema.html",
+      "bytes": 102114,
+      "sha256": "80346A1521C761F70021D83D7766681A00376AF9C78287EB7982B9C69C7936C3"
+    },
+    {
+      "saved": "statistik/results/157-raa-svar/06-site-search-tilmeldingsniveau.html",
+      "bytes": 101272,
+      "sha256": "E4262F7CFC00DB1344108DA971A353D87E29A614F10C97B10CE12F9681478929"
+    },
+    {
+      "saved": "statistik/results/157-raa-svar/07-rangliste-landing.html",
+      "bytes": 148634,
+      "sha256": "1C9ADC9E9A76B734BCCD3888C5D45D45D6A86A51B5E9A2BCE7757613F08E4779"
+    },
+    {
+      "saved": "statistik/results/157-raa-svar/08-rangliste-reguleringer-2024-25.html",
+      "bytes": 194182,
+      "sha256": "D3407B778B1D486206B978DAA113C22A2146FCE6A9BB7A01CF40D4D6636E3751"
+    },
+    {
+      "saved": "statistik/results/157-raa-svar/09-pointintervaller-u11-u13-2024.html",
+      "bytes": 186368,
+      "sha256": "B49AC6779DF0629998BBEE03D77DDBC2C1FE04EC0AE3FC27AE2D8407EAEAC6F9"
+    },
+    {
+      "saved": "statistik/results/157-raa-svar/10-pointintervaller-opdateret-2023.html",
+      "bytes": 184217,
+      "sha256": "B274474F4B7CC9F60A373C727132F9CFD772FB3D36840D32F3B6A8498C834636"
+    }
+  ],
+  "badmintonplayer_stop_reason": "287 findes ikke i pointdatabasen for 13 pointversioner. Ved fire GSB-sider pr. version mangler anslået 49 POST-sider samt 1 frisk GET (= 50 kald), over loftet 40. Historiske sidetal er ikke verificeret; ingen kald blev sendt.",
+  "saved_150_287_responses_reused": [
+    {
+      "source": "statistik/results/150-raa-svar/10-q10-clubid-1093-list287.txt",
+      "saved": "statistik/results/157-raa-svar/11-287-gsb-side-0-fra-150.txt",
+      "bytes": 63502,
+      "sha256": "77EB56334EDC2E54BC7384CDFFB9AF3A89FFEDF980A65653D83197270669341D"
+    },
+    {
+      "source": "statistik/results/150-raa-svar/19-q19-clubid-1093-list287-pageindex-1.txt",
+      "saved": "statistik/results/157-raa-svar/12-287-gsb-side-1-fra-150.txt",
+      "bytes": 63630,
+      "sha256": "CA7DED06D122106DDB561F5210E59F00C451D7DD589EBDAF2B718F8FE97F3A83"
+    },
+    {
+      "source": "statistik/results/150-raa-svar/20-q20-clubid-1093-list287-pageindex-2.txt",
+      "saved": "statistik/results/157-raa-svar/13-287-gsb-side-2-fra-150.txt",
+      "bytes": 63897,
+      "sha256": "3B077C110CABD7B50AD739832E02F0051920374AE504F7BF637708EDEB87B959"
+    },
+    {
+      "source": "statistik/results/150-raa-svar/18-q18-baseline-list287-current-page0.txt",
+      "saved": "statistik/results/157-raa-svar/14-287-global-side-0-fra-150.txt",
+      "bytes": 59349,
+      "sha256": "4CCABD67FE5CE1D80C2F9CDC02E654783F5C998BBF6BDB9977D7CAF156C67668"
+    },
+    {
+      "source": "statistik/results/150-raa-svar/09-q09-agegroupid-5-gender-K-list287.txt",
+      "saved": "statistik/results/157-raa-svar/15-287-U15-K-fra-150.txt",
+      "bytes": 63023,
+      "sha256": "F17DC3578B93DEF61E071EDD2679073A3E37CC525C3C5641F5661A9D69A1ACA8"
+    }
+  ],
+  "database_hashes_before": {
+    "gsb-statistik-normalized.db": "49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E",
+    "liga-landskab.db": "9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C",
+    "rangliste-historik.db": "6E9516DB643F88F88946A82CB76EC3B5C686C7D548ABF7084B3F60EE3DA0316F",
+    "national-spillere.db": "1E27C5D81CCE8E2D656DF2C924E4BF6931EEAAF86348ADD384AB6D58F7CBAC3E",
+    "rangliste-point.db": "DABE3A12ACECD763E537087F0E16855AD39DF298234EB03FF111A3366100D1B9"
+  },
+  "database_hashes_after": {
+    "gsb-statistik-normalized.db": "49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E",
+    "liga-landskab.db": "9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C",
+    "rangliste-historik.db": "6E9516DB643F88F88946A82CB76EC3B5C686C7D548ABF7084B3F60EE3DA0316F",
+    "national-spillere.db": "1E27C5D81CCE8E2D656DF2C924E4BF6931EEAAF86348ADD384AB6D58F7CBAC3E",
+    "rangliste-point.db": "DABE3A12ACECD763E537087F0E16855AD39DF298234EB03FF111A3366100D1B9"
+  },
+  "database_checks": {
+    "gsb-statistik-normalized.db": {
+      "expected": "49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E",
+      "before": "49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E",
+      "after": "49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E",
+      "unchanged": true
+    },
+    "liga-landskab.db": {
+      "expected": "9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C",
+      "before": "9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C",
+      "after": "9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C",
+      "unchanged": true
+    },
+    "rangliste-historik.db": {
+      "expected": "6E9516DB643F88F88946A82CB76EC3B5C686C7D548ABF7084B3F60EE3DA0316F",
+      "before": "6E9516DB643F88F88946A82CB76EC3B5C686C7D548ABF7084B3F60EE3DA0316F",
+      "after": "6E9516DB643F88F88946A82CB76EC3B5C686C7D548ABF7084B3F60EE3DA0316F",
+      "unchanged": true
+    },
+    "national-spillere.db": {
+      "expected": "1E27C5D81CCE8E2D656DF2C924E4BF6931EEAAF86348ADD384AB6D58F7CBAC3E",
+      "before": "1E27C5D81CCE8E2D656DF2C924E4BF6931EEAAF86348ADD384AB6D58F7CBAC3E",
+      "after": "1E27C5D81CCE8E2D656DF2C924E4BF6931EEAAF86348ADD384AB6D58F7CBAC3E",
+      "unchanged": true
+    },
+    "rangliste-point.db": {
+      "expected": "DABE3A12ACECD763E537087F0E16855AD39DF298234EB03FF111A3366100D1B9",
+      "before": "DABE3A12ACECD763E537087F0E16855AD39DF298234EB03FF111A3366100D1B9",
+      "after": "DABE3A12ACECD763E537087F0E16855AD39DF298234EB03FF111A3366100D1B9",
+      "unchanged": true
+    }
+  },
+  "schemas": {
+    "gsb-statistik-normalized.db": {
+      "open_mode": "readOnly",
+      "query_only": true,
+      "tables": [
+        {
+          "table": "clubs",
+          "columns": [
+            "club_id",
+            "badmintonplayer_id",
+            "nembadminton_id",
+            "name_raw",
+            "name_normalized"
+          ]
+        },
+        {
+          "table": "competitions",
+          "columns": [
+            "competition_id",
+            "season_id",
+            "league_group_id",
+            "age_group_id",
+            "name_raw",
+            "league_raw",
+            "phase_raw",
+            "source_url"
+          ]
+        },
+        {
+          "table": "extraction_errors",
+          "columns": [
+            "error_id",
+            "source_system",
+            "season_id",
+            "external_match_id",
+            "team_name_raw",
+            "error_type",
+            "error_message",
+            "fallback_status",
+            "retrieved_at"
+          ]
+        },
+        {
+          "table": "individual_match_players",
+          "columns": [
+            "individual_match_id",
+            "player_id",
+            "side",
+            "pair_number",
+            "role",
+            "points_at_match"
+          ]
+        },
+        {
+          "table": "individual_matches",
+          "columns": [
+            "individual_match_id",
+            "team_match_id",
+            "discipline_raw",
+            "game_number_raw",
+            "category_raw",
+            "home_score_raw",
+            "away_score_raw",
+            "winner_side",
+            "status",
+            "result_marker_raw"
+          ]
+        },
+        {
+          "table": "players",
+          "columns": [
+            "player_id",
+            "external_player_id",
+            "name_raw",
+            "name_normalized"
+          ]
+        },
+        {
+          "table": "raw_payloads",
+          "columns": [
+            "raw_payload_id",
+            "external_key",
+            "source_system",
+            "endpoint_or_url",
+            "retrieved_at",
+            "payload_json"
+          ]
+        },
+        {
+          "table": "seasons",
+          "columns": [
+            "season_id",
+            "label"
+          ]
+        },
+        {
+          "table": "standings",
+          "columns": [
+            "standing_id",
+            "competition_id",
+            "team_name_raw",
+            "snapshot_date",
+            "snapshot_type",
+            "position",
+            "matches_played",
+            "wins",
+            "draws",
+            "losses",
+            "score_raw",
+            "sets_raw",
+            "points",
+            "set_points",
+            "source_url"
+          ]
+        },
+        {
+          "table": "team_matches",
+          "columns": [
+            "team_match_id",
+            "external_match_id",
+            "season_id",
+            "competition_id",
+            "gsb_team_id",
+            "round_number",
+            "round_date",
+            "game_time",
+            "home_name_raw",
+            "away_name_raw",
+            "result_raw",
+            "points_raw",
+            "status",
+            "walkover_text_raw",
+            "source_status",
+            "raw_payload_id",
+            "walkover_winner_raw",
+            "remark_raw"
+          ]
+        },
+        {
+          "table": "teams",
+          "columns": [
+            "team_id",
+            "club_id",
+            "season_id",
+            "competition_id",
+            "name_raw"
+          ]
+        }
+      ]
+    },
+    "liga-landskab.db": {
+      "open_mode": "readOnly",
+      "query_only": true,
+      "tables": [
+        {
+          "table": "age_groups",
+          "columns": [
+            "age_group_id",
+            "name",
+            "years_from",
+            "years_to",
+            "years_from_tournament",
+            "years_to_tournament",
+            "source_endpoint",
+            "first_seen_at",
+            "last_seen_at"
+          ]
+        },
+        {
+          "table": "club_registry",
+          "columns": [
+            "club_id",
+            "club_name_raw",
+            "region_id",
+            "postal_code",
+            "fetched_at"
+          ]
+        },
+        {
+          "table": "fetch_errors",
+          "columns": [
+            "request_key",
+            "season_id",
+            "age_group_id",
+            "region_id",
+            "league_group_id",
+            "requested_url",
+            "http_status",
+            "error_kind",
+            "response_sha256",
+            "response_text",
+            "first_seen_at",
+            "last_seen_at",
+            "attempts"
+          ]
+        },
+        {
+          "table": "group_type_katalog",
+          "columns": [
+            "division_name_raw",
+            "group_name_raw",
+            "group_type",
+            "classification_basis",
+            "occurrence_count",
+            "first_season_id",
+            "last_season_id",
+            "distinct_region_count",
+            "generated_at"
+          ]
+        },
+        {
+          "table": "league_group_details",
+          "columns": [
+            "season_id",
+            "age_group_id",
+            "league_group_id",
+            "requested_url",
+            "fetched_at",
+            "http_status",
+            "raw_sha256",
+            "raw_response",
+            "parse_status",
+            "parser_version"
+          ]
+        },
+        {
+          "table": "league_group_match_counts",
+          "columns": [
+            "season_id",
+            "age_group_id",
+            "league_group_id",
+            "region_id",
+            "requested_url",
+            "fetched_at",
+            "http_status",
+            "match_count",
+            "parse_status"
+          ]
+        },
+        {
+          "table": "league_group_regions",
+          "columns": [
+            "season_id",
+            "age_group_id",
+            "league_group_id",
+            "region_id"
+          ]
+        },
+        {
+          "table": "league_group_teams",
+          "columns": [
+            "season_id",
+            "age_group_id",
+            "league_group_id",
+            "league_group_team_id",
+            "team_name_raw",
+            "standing_position",
+            "matches",
+            "wins",
+            "score_raw",
+            "sets_raw",
+            "points",
+            "set_points",
+            "source_url",
+            "fetched_at"
+          ]
+        },
+        {
+          "table": "league_groups",
+          "columns": [
+            "season_id",
+            "age_group_id",
+            "league_group_id",
+            "division_name_raw",
+            "group_name_raw",
+            "page_title_raw",
+            "first_seen_index_id",
+            "fetched_at"
+          ]
+        },
+        {
+          "table": "league_match_groups",
+          "columns": [
+            "external_match_id",
+            "season_id",
+            "age_group_id",
+            "league_group_id",
+            "region_id"
+          ]
+        },
+        {
+          "table": "league_match_requests",
+          "columns": [
+            "request_key",
+            "phase",
+            "external_match_id",
+            "season_id",
+            "age_group_id",
+            "league_group_id",
+            "attempts",
+            "http_status",
+            "status",
+            "error_kind",
+            "fetched_at"
+          ]
+        },
+        {
+          "table": "league_matches",
+          "columns": [
+            "external_match_id",
+            "season_id",
+            "age_group_id",
+            "league_group_id",
+            "region_id",
+            "round_raw",
+            "match_datetime_raw",
+            "match_date",
+            "venue_raw",
+            "organizer_raw",
+            "home_team_id",
+            "home_name_raw",
+            "away_team_id",
+            "away_name_raw",
+            "team_score_raw",
+            "point_score_raw",
+            "raw_sha256",
+            "raw_source_file",
+            "source_url",
+            "fetched_at"
+          ]
+        },
+        {
+          "table": "match_categories",
+          "columns": [
+            "external_match_id",
+            "category_order",
+            "category_raw",
+            "home_player_1_id",
+            "home_player_1_name_raw",
+            "home_player_2_id",
+            "home_player_2_name_raw",
+            "away_player_1_id",
+            "away_player_1_name_raw",
+            "away_player_2_id",
+            "away_player_2_name_raw",
+            "winner_side",
+            "walkover_marker"
+          ]
+        },
+        {
+          "table": "match_games",
+          "columns": [
+            "external_match_id",
+            "category_order",
+            "game_number",
+            "home_points",
+            "away_points",
+            "raw_score"
+          ]
+        },
+        {
+          "table": "regions",
+          "columns": [
+            "region_id",
+            "name",
+            "short_name",
+            "parent_id",
+            "source_endpoint",
+            "first_seen_at",
+            "last_seen_at"
+          ]
+        },
+        {
+          "table": "standing_indexes",
+          "columns": [
+            "standing_index_id",
+            "request_key",
+            "season_id",
+            "age_group_id",
+            "region_id",
+            "requested_url",
+            "fetched_at",
+            "http_status",
+            "raw_sha256",
+            "raw_response",
+            "parse_status",
+            "parser_version"
+          ]
+        }
+      ]
+    },
+    "rangliste-historik.db": {
+      "open_mode": "readOnly",
+      "query_only": true,
+      "tables": [
+        {
+          "table": "fetch_errors",
+          "columns": [
+            "nembadminton_member_id",
+            "requested_at",
+            "http_status",
+            "error_kind",
+            "response_text",
+            "attempts"
+          ]
+        },
+        {
+          "table": "player_link",
+          "columns": [
+            "gsb_player_id",
+            "nembadminton_member_id",
+            "match_confidence",
+            "match_method",
+            "matched_name_raw",
+            "first_seen_at"
+          ]
+        },
+        {
+          "table": "ranking_snapshots",
+          "columns": [
+            "nembadminton_member_id",
+            "discipline",
+            "version_date",
+            "points",
+            "source_query",
+            "fetched_at",
+            "raw_response_sha256"
+          ]
+        }
+      ]
+    },
+    "national-spillere.db": {
+      "open_mode": "readOnly",
+      "query_only": true,
+      "tables": [
+        {
+          "table": "matches",
+          "columns": [
+            "external_match_id",
+            "season_id",
+            "age_group_id",
+            "league_group_id",
+            "region_id",
+            "source_url",
+            "render_gate",
+            "result_raw",
+            "round_raw",
+            "home_team_raw",
+            "away_team_raw",
+            "context_raw",
+            "fetched_at",
+            "error_type",
+            "error_message"
+          ]
+        },
+        {
+          "table": "player_match_extras",
+          "columns": [
+            "external_match_id",
+            "external_player_id",
+            "discipline_code",
+            "slot",
+            "team_side",
+            "partner_player_id",
+            "opponent_player_id",
+            "set_scores_raw",
+            "walkover_raw",
+            "parse_status",
+            "parser_version",
+            "parsed_at"
+          ]
+        },
+        {
+          "table": "player_matches",
+          "columns": [
+            "external_player_id",
+            "external_match_id",
+            "name_raw",
+            "team_side",
+            "discipline_code",
+            "partner_player_id",
+            "opponent_player_id",
+            "set_scores_raw",
+            "walkover_raw",
+            "round_raw",
+            "context_raw"
+          ]
+        },
+        {
+          "table": "players",
+          "columns": [
+            "external_player_id",
+            "name_raw",
+            "gender_status",
+            "first_seen_at",
+            "last_seen_at"
+          ]
+        },
+        {
+          "table": "scrape_checkpoints",
+          "columns": [
+            "checkpoint_id",
+            "attempted",
+            "ok",
+            "no_player_links",
+            "render_gate_failed",
+            "fetch_error",
+            "players_found",
+            "updated_at"
+          ]
+        },
+        {
+          "table": "scrape_errors",
+          "columns": [
+            "external_match_id",
+            "error_type",
+            "error_message",
+            "occurred_at"
+          ]
+        },
+        {
+          "table": "scrape_progress",
+          "columns": [
+            "external_match_id",
+            "status",
+            "attempts",
+            "last_error",
+            "updated_at"
+          ]
+        }
+      ]
+    },
+    "rangliste-point.db": {
+      "open_mode": "readOnly",
+      "query_only": true,
+      "tables": [
+        {
+          "table": "harvest_pages",
+          "columns": [
+            "list_id",
+            "param",
+            "version_date",
+            "page_index",
+            "status",
+            "rows",
+            "response_sha256",
+            "fetched_at"
+          ]
+        },
+        {
+          "table": "ranking_needs",
+          "columns": [
+            "season_id",
+            "external_match_id",
+            "game_date",
+            "external_player_id",
+            "player_name",
+            "team_side",
+            "discipline",
+            "list_id",
+            "param",
+            "version_date",
+            "status",
+            "points",
+            "details"
+          ]
+        },
+        {
+          "table": "ranking_points",
+          "columns": [
+            "list_id",
+            "param",
+            "version_date",
+            "player_id",
+            "member_number",
+            "name",
+            "club",
+            "class",
+            "rank",
+            "points",
+            "page_index",
+            "fetched_at",
+            "response_sha256"
+          ]
+        }
+      ],
+      "ranking_points_summary": {
+        "row_count": 236762,
+        "list_287_rows": 0,
+        "snapshots": [
+          {
+            "version_date": "2025-09-19",
+            "rows": 11043,
+            "list_gender_pairs": 6
+          },
+          {
+            "version_date": "2025-10-03",
+            "rows": 18999,
+            "list_gender_pairs": 6
+          },
+          {
+            "version_date": "2025-10-24",
+            "rows": 9581,
+            "list_gender_pairs": 6
+          },
+          {
+            "version_date": "2025-11-14",
+            "rows": 19952,
+            "list_gender_pairs": 6
+          },
+          {
+            "version_date": "2025-12-05",
+            "rows": 9835,
+            "list_gender_pairs": 6
+          },
+          {
+            "version_date": "2026-01-09",
+            "rows": 20313,
+            "list_gender_pairs": 6
+          },
+          {
+            "version_date": "2026-01-30",
+            "rows": 9755,
+            "list_gender_pairs": 6
+          },
+          {
+            "version_date": "2026-02-20",
+            "rows": 19898,
+            "list_gender_pairs": 6
+          },
+          {
+            "version_date": "2026-03-06",
+            "rows": 19670,
+            "list_gender_pairs": 6
+          },
+          {
+            "version_date": "2026-03-20",
+            "rows": 18908,
+            "list_gender_pairs": 4
+          },
+          {
+            "version_date": "2026-04-10",
+            "rows": 38947,
+            "list_gender_pairs": 6
+          },
+          {
+            "version_date": "2026-07-01",
+            "rows": 238,
+            "list_gender_pairs": 6
+          },
+          {
+            "version_date": "2026-10-07",
+            "rows": 39623,
+            "list_gender_pairs": 6
+          }
+        ],
+        "by_list_param": [
+          {
+            "list_id": 288,
+            "param": "K",
+            "versions": 13,
+            "first_date": "2025-09-19",
+            "last_date": "2026-10-07",
+            "rows": 46062
+          },
+          {
+            "list_id": 288,
+            "param": "M",
+            "versions": 13,
+            "first_date": "2025-09-19",
+            "last_date": "2026-10-07",
+            "rows": 80855
+          },
+          {
+            "list_id": 289,
+            "param": "K",
+            "versions": 13,
+            "first_date": "2025-09-19",
+            "last_date": "2026-10-07",
+            "rows": 60229
+          },
+          {
+            "list_id": 289,
+            "param": "M",
+            "versions": 13,
+            "first_date": "2025-09-19",
+            "last_date": "2026-10-07",
+            "rows": 27709
+          },
+          {
+            "list_id": 292,
+            "param": "K",
+            "versions": 12,
+            "first_date": "2025-09-19",
+            "last_date": "2026-10-07",
+            "rows": 9717
+          },
+          {
+            "list_id": 292,
+            "param": "M",
+            "versions": 12,
+            "first_date": "2025-09-19",
+            "last_date": "2026-10-07",
+            "rows": 12190
+          }
+        ]
+      }
+    }
+  },
+  "point_versions": {
+    "all_dates": [
+      "2025-09-19",
+      "2025-10-03",
+      "2025-10-24",
+      "2025-11-14",
+      "2025-12-05",
+      "2026-01-09",
+      "2026-01-30",
+      "2026-02-20",
+      "2026-03-06",
+      "2026-03-20",
+      "2026-04-10",
+      "2026-07-01",
+      "2026-10-07"
+    ],
+    "total": 13,
+    "2025_26": [
+      "2025-09-19",
+      "2025-10-03",
+      "2025-10-24",
+      "2025-11-14",
+      "2025-12-05",
+      "2026-01-09",
+      "2026-01-30",
+      "2026-02-20",
+      "2026-03-06",
+      "2026-03-20",
+      "2026-04-10"
+    ],
+    "2026_27": [
+      "2026-07-01",
+      "2026-10-07"
+    ],
+    "list_287_rows_in_db": 0
+  },
+  "saved_list_287": {
+    "captured_at": "2026-10-07",
+    "selected_version_label": "Seneste",
+    "menu_includes_2026_10_07": true,
+    "gsb_rows_pages_0_2": 300,
+    "gsb_pages_observed": 4,
+    "saved_pages": [
+      0,
+      1,
+      2
+    ],
+    "missing_page": [
+      3
+    ],
+    "class_counts": {
+      "SEN M-A": 7,
+      "SEN A": 32,
+      "SEN M": 1,
+      "SEN A-B": 6,
+      "SEN B": 19,
+      "SEN B-C": 10,
+      "U19 A": 2,
+      "SEN C": 22,
+      "U15 M": 4,
+      "U13 M": 3,
+      "SEN C-D": 8,
+      "U15 A": 4,
+      "U17 B": 5,
+      "U19 B": 2,
+      "U13 M-A": 1,
+      "SEN D": 51,
+      "U13 A": 3,
+      "U17 A": 1,
+      "U15 B": 9,
+      "U17 C": 10,
+      "U19 C": 3,
+      "U11 A": 1,
+      "U11 A-B": 1,
+      "U11 B": 4,
+      "U13 B": 8,
+      "U15 C": 10,
+      "U19 D": 1,
+      "U13 C": 6,
+      "U17 D": 16,
+      "U15 D": 20,
+      "U11 C": 3,
+      "U13 D": 18,
+      "U11 D": 9
+    },
+    "u09_rows": 0,
+    "global_page_0_rows": 100,
+    "female_filter_rows": 100,
+    "female_filter_classes": {
+      "U17 E": 1,
+      "U15 E": 25,
+      "U15 E-M": 11,
+      "U15 M": 53,
+      "U15 A": 10
+    },
+    "public_lookup_examples": [
+      {
+        "rank_in_filter": 1,
+        "global_rank_in_parentheses": 497,
+        "name_and_club": "Jonas Trusell-Jensen, Gladsaxe Søborg",
+        "row_class": "SEN M-A",
+        "profile_player_id": "92509"
+      },
+      {
+        "rank_in_filter": 2,
+        "global_rank_in_parentheses": 507,
+        "name_and_club": "Morten Aarøe, Gladsaxe Søborg",
+        "row_class": "SEN M-A",
+        "profile_player_id": "13216"
+      },
+      {
+        "rank_in_filter": 3,
+        "global_rank_in_parentheses": 599,
+        "name_and_club": "Jonathan W. Hansen, Gladsaxe Søborg",
+        "row_class": "SEN M-A",
+        "profile_player_id": "93216"
+      }
+    ],
+    "playerid_behavior": "Ikke afprøvet for liste 287; HTML-profil-ID beviser ikke POST-filterets semantik.",
+    "u09": "U09 ikke fundet i 300 GSB-rækker på gemte side 0-2 eller i gemt K-prøve; ingen særskilt U09-forespørgsel, samlet tilstedeværelse ukendt.",
+    "gender": "Kun K-filterprøve gemt, ingen tilsvarende M-prøve; kønssammenligning ikke udført.",
+    "rank_semantics": "Filtreret første kolonne er lokal rank; parentes er samlet rank, ifølge 156 Del A."
+  },
+  "call_estimates": {
+    "gsb_filtered_all_versions": {
+      "point_versions": 13,
+      "observed_pages_per_version": 4,
+      "saved_pages_for_latest": 3,
+      "estimated_missing_post_pages": 49,
+      "fresh_get": 1,
+      "estimated_total": 50,
+      "historical_page_counts": "ukendt; estimat holder observerede fire sider konstant"
+    },
+    "global_unfiltered_all_versions": {
+      "observed_pages_latest": 212,
+      "saved_page_latest": 1,
+      "estimated_missing_post_pages": 2755,
+      "fresh_get": 1,
+      "estimated_total": 2756,
+      "historical_page_counts": "ukendt; 212 er seneste observerede sidetal"
+    }
+  },
+  "formula_tests": {
+    "status": "ikke_kørt (trin 2 stop)",
+    "candidates": [
+      "bedste disciplin",
+      "sum",
+      "gennemsnit",
+      "kampvægtet sum",
+      "gulv/loft pr. disciplin"
+    ],
+    "spearman": null,
+    "kendall": null,
+    "pair_order_rate": null,
+    "group_sizes": {
+      "M": null,
+      "K": null
+    }
+  },
+  "raw_sources": [
+    {
+      "saved": "statistik/results/157-raa-svar/11-287-gsb-side-0-fra-150.txt",
+      "bytes": 63502,
+      "sha256": "77EB56334EDC2E54BC7384CDFFB9AF3A89FFEDF980A65653D83197270669341D"
+    },
+    {
+      "saved": "statistik/results/157-raa-svar/12-287-gsb-side-1-fra-150.txt",
+      "bytes": 63630,
+      "sha256": "CA7DED06D122106DDB561F5210E59F00C451D7DD589EBDAF2B718F8FE97F3A83"
+    },
+    {
+      "saved": "statistik/results/157-raa-svar/13-287-gsb-side-2-fra-150.txt",
+      "bytes": 63897,
+      "sha256": "3B077C110CABD7B50AD739832E02F0051920374AE504F7BF637708EDEB87B959"
+    },
+    {
+      "saved": "statistik/results/157-raa-svar/14-287-global-side-0-fra-150.txt",
+      "bytes": 59349,
+      "sha256": "4CCABD67FE5CE1D80C2F9CDC02E654783F5C998BBF6BDB9977D7CAF156C67668"
+    },
+    {
+      "saved": "statistik/results/157-raa-svar/15-287-U15-K-fra-150.txt",
+      "bytes": 63023,
+      "sha256": "F17DC3578B93DEF61E071EDD2679073A3E37CC525C3C5641F5661A9D69A1ACA8"
+    }
+  ],
+  "official_rules": {
+    "document": "Fællesreglement for Ranglisten 2023/24, dateret 07-02-2024, 13 sider",
+    "formula": "§5 stk.1 s.3: vægtet gennemsnit af alle aktive kategorier; kategorien med flest point vægter højst; koefficienter/full formel ikke oplyst.",
+    "matches": "Appendiks A s.11: alle spillerens kampe indgår i samlet placering. Appendiks B s.12 definerer kampe som enkeltkampe pr. kategori fra sæsonstart til seneste relevante resultat. 2020-artikel beskriver én sæson tilbage i kampantal ved ændringen til 2020/21.",
+    "boundaries": "Appendiks A s.9 ungdom pointintervaller pr. køn/årgang; s.11 voksen placeringsintervaller pr. køn; vurdering kvartalsvis. Historisk 2023/24-tal ikke overført til nyere sæsoner.",
+    "2026_27_link_found_not_fetched": "https://badminton.dk/wp-content/uploads/2026/09/Reglement-for-Rangliste-2026-09-10.pdf"
+  },
+  "recommendation": "Få Chris til at vælge én repræsentativ version pr. sæson eller alle eksisterende pointversioner. Med alle 13 versioner overskrider GSB-filterestimatet 40 kald; derfor er reverse engineering ikke udført."
+}
