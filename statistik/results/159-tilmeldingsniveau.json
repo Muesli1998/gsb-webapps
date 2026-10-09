@@ -1,0 +1,254 @@
+{
+ "opgave": 159,
+ "note": "Kørt af Claude med Python-script (Codex kommandoværktøj kunne ikke starte). Kontekstnøgle redigeret ud af alle råsvar.",
+ "badmintonplayer_dk": [
+  {
+   "part": "159-log-part1.json",
+   "entries": [
+    {
+     "n": 1,
+     "method": "GET",
+     "url": "https://badmintonplayer.dk/DBF/Ranglister/",
+     "status": 200,
+     "bytes": 24149,
+     "sha256": "3f6d7bdf049546584fd855f6ff5b303a797fde2dedeb01b82420e568c93c6f06"
+    },
+    {
+     "n": 2,
+     "method": "POST",
+     "label": "gsb-287-K-p0",
+     "changes": {
+      "clubid": "1093",
+      "gender": "K"
+     },
+     "list": 287,
+     "param": "K",
+     "status": 200,
+     "bytes": 58616,
+     "sha256": "3fabdb7a2857b639fe7220025ea74afb3a4154a5fbaadcc47aa305436a6efe3b",
+     "file": "02-gsb-287-K-p0.txt"
+    },
+    {
+     "n": 3,
+     "method": "POST",
+     "label": "gsb-287-M-p0",
+     "changes": {
+      "clubid": "1093",
+      "gender": "M"
+     },
+     "list": 287,
+     "param": "M",
+     "status": 200,
+     "bytes": 63471,
+     "sha256": "5b5c5308349984939abf11d63375ebeaefe0ddf2ce6805884a8fdf7559bf9a12",
+     "file": "03-gsb-287-M-p0.txt"
+    }
+   ]
+  },
+  {
+   "part": "159-log-part2.json",
+   "entries": [
+    {
+     "n": 1,
+     "method": "POST",
+     "label": "gsb-287-M-p1",
+     "changes": {
+      "clubid": "1093",
+      "gender": "M",
+      "pageindex": "1"
+     },
+     "list": 287,
+     "param": "M",
+     "status": 200,
+     "bytes": 63810,
+     "sha256": "791ddb657e94d6985aca0e29559dd2d22805fc51ec5f5dc676502f46fb10b9ca",
+     "file": "01-gsb-287-M-p1.txt"
+    },
+    {
+     "n": 2,
+     "method": "POST",
+     "label": "gsb-287-M-p2",
+     "changes": {
+      "clubid": "1093",
+      "gender": "M",
+      "pageindex": "2"
+     },
+     "list": 287,
+     "param": "M",
+     "status": 200,
+     "bytes": 16572,
+     "sha256": "0c7b9d472c86a74f0cf8fa91dd187ac6601c7e3d64e158c4a0c1babec2cbdfbc",
+     "file": "02-gsb-287-M-p2.txt"
+    },
+    {
+     "n": 3,
+     "method": "POST",
+     "label": "ufiltreret-287-K-p0",
+     "changes": {
+      "gender": "K"
+     },
+     "list": 287,
+     "param": "K",
+     "status": 200,
+     "bytes": 62732,
+     "sha256": "c724b6a2678a82b33b8ea36b44ff29b1ab4bd33a081414971ff92ff08e80dae7",
+     "file": "03-ufiltreret-287-K-p0.txt"
+    },
+    {
+     "n": 4,
+     "method": "POST",
+     "label": "ufiltreret-287-M-p0",
+     "changes": {
+      "gender": "M"
+     },
+     "list": 287,
+     "param": "M",
+     "status": 200,
+     "bytes": 62711,
+     "sha256": "f3cad9e81d026455827da7fbf3992b77f7e6f00aca2b885c67022632efed3c6c",
+     "file": "04-ufiltreret-287-M-p0.txt"
+    }
+   ]
+  },
+  {
+   "part": "159-log-part4.json",
+   "entries": [
+    {
+     "n": 1,
+     "method": "POST",
+     "label": "ufiltreret-287-K-p5",
+     "changes": {
+      "gender": "K",
+      "pageindex": "5"
+     },
+     "list": 287,
+     "param": "K",
+     "status": 200,
+     "bytes": 62996,
+     "sha256": "ca0243d6ae1c7f75fe0c888f7c217e240d5c52aeed0be64ae76730eb9535c290",
+     "file": "01-ufiltreret-287-K-p5.txt"
+    },
+    {
+     "n": 2,
+     "method": "POST",
+     "label": "ufiltreret-287-K-p9",
+     "changes": {
+      "gender": "K",
+      "pageindex": "9"
+     },
+     "list": 287,
+     "param": "K",
+     "status": 200,
+     "bytes": 63039,
+     "sha256": "7196568c26fdc6a1ed0f777d015d169a6c8dae1f92020380f9158e1a9ff9eece",
+     "file": "02-ufiltreret-287-K-p9.txt"
+    },
+    {
+     "n": 3,
+     "method": "POST",
+     "label": "ufiltreret-287-K-p10",
+     "changes": {
+      "gender": "K",
+      "pageindex": "10"
+     },
+     "list": 287,
+     "param": "K",
+     "status": 200,
+     "bytes": 63280,
+     "sha256": "8568876f0c63b75d540aee79a1672434a1ee493d50c153937e4ba4e5e887ca4a",
+     "file": "03-ufiltreret-287-K-p10.txt"
+    },
+    {
+     "n": 4,
+     "method": "POST",
+     "label": "ufiltreret-287-K-p11",
+     "changes": {
+      "gender": "K",
+      "pageindex": "11"
+     },
+     "list": 287,
+     "param": "K",
+     "status": 200,
+     "bytes": 63186,
+     "sha256": "ff345b604d22c09c0c3b64da129f769aacd49285f60d2016a6b21276a19c36dc",
+     "file": "04-ufiltreret-287-K-p11.txt"
+    },
+    {
+     "n": 5,
+     "method": "POST",
+     "label": "ufiltreret-287-M-p2",
+     "changes": {
+      "gender": "M",
+      "pageindex": "2"
+     },
+     "list": 287,
+     "param": "M",
+     "status": 200,
+     "bytes": 62914,
+     "sha256": "8633fa2d1700a3a5d846f72916f055fcc8b8a6695a41a3f00a37f2e02cf8c301",
+     "file": "05-ufiltreret-287-M-p2.txt"
+    },
+    {
+     "n": 6,
+     "method": "POST",
+     "label": "ufiltreret-287-M-p3",
+     "changes": {
+      "gender": "M",
+      "pageindex": "3"
+     },
+     "list": 287,
+     "param": "M",
+     "status": 200,
+     "bytes": 62706,
+     "sha256": "8d3c8eb789b50d233111fa2047bd244c15bd4ac380df82f515fdd0d150a5e702",
+     "file": "06-ufiltreret-287-M-p3.txt"
+    },
+    {
+     "n": 7,
+     "method": "POST",
+     "label": "ufiltreret-287-M-p4",
+     "changes": {
+      "gender": "M",
+      "pageindex": "4"
+     },
+     "list": 287,
+     "param": "M",
+     "status": 200,
+     "bytes": 62965,
+     "sha256": "5cf95ba7b9b6d57101d4725d19856128cd101201b0bc757c362af09d087a6c18",
+     "file": "07-ufiltreret-287-M-p4.txt"
+    },
+    {
+     "n": 8,
+     "method": "POST",
+     "label": "ufiltreret-287-M-p6",
+     "changes": {
+      "gender": "M",
+      "pageindex": "6"
+     },
+     "list": 287,
+     "param": "M",
+     "status": 200,
+     "bytes": 62925,
+     "sha256": "634eb8e5c35afab783cdf1c87a743087940c02ca1c6b22dae6aff3167177d34d",
+     "file": "08-ufiltreret-287-M-p6.txt"
+    },
+    {
+     "n": 9,
+     "method": "POST",
+     "label": "ufiltreret-287-M-p7",
+     "changes": {
+      "gender": "M",
+      "pageindex": "7"
+     },
+     "list": 287,
+     "param": "M",
+     "status": 200,
+     "bytes": 62693,
+     "sha256": "3b64328a133ada32fb2ca65308cd1b7868c4e5273c0c349edfe97683df5758e3",
+     "file": "09-ufiltreret-287-M-p7.txt"
+    }
+   ]
+  }
+ ]
+}
