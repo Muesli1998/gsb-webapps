@@ -120,6 +120,40 @@ allerede i `.gitignore`.
 
 ---
 
+## Ranglisten (liste 287 m.fl.) — hvad der er målt
+
+Alt nedenfor er målt i opgave 156, 159 og 160; kortene og rapporterne i
+`results/` er facit. Hvad der er hypotese er mærket.
+
+- Kald: `GET /DBF/Ranglister/` giver `SR_CallbackContext`, derefter
+  `POST .../WebService1.asmx/GetRankingListPlayers`. 100 rækker pr. side.
+- **Kønsfilteret på liste 287 er feltet `gender`.** `param` alene gav
+  identiske svar for M og K (kort 160 mistede 10 kald på det). Efter de
+  første to kald i en serie med forskellige filtre: sammenlign svarenes
+  hash. Er de ens, virker filteret ikke; stop og ret, før resten køres.
+- 287 har tom `Point`-kolonne. I filtrerede svar er første tal den lokale
+  placering i filteret og tallet i parentes den fælles placering. I
+  ufiltrerede svar er der ét tal. Ufiltreret med `gender` = placering i
+  kønslisten.
+- `playerid` på 287 returnerer den fælles placering, ikke
+  kønsplaceringen. Kønsplaceringen findes kun i den ufiltrerede
+  kønsliste.
+- **Voksenrækken er kønsplaceringen** i reglementets intervaller (herrer
+  577 af 577, damer 833 af 837; afvigerne står på delte placeringer).
+- **Ungdom:** U13, U15 og U17 har placeringsrækker (U13 M 1–24, M-A 25–48,
+  A fra 49; U15/U17 E 1–24, E-M 25–36, M fra 37 over en pointtærskel) og
+  ellers pointrækker. 550 af 562 passer, pointtærsklen 322 af 323. Alle
+  afvigere ligger 1–3 pladser fra en grænse. Hypotese, ikke målt: rækken
+  vurderes kvartalsvis, mens placeringen opdateres tre gange om ugen.
+- Højeste disciplinpoint forudsiger ungdomsrækken i 93 % (kort 159);
+  koefficienterne til tilmeldingsniveau står ikke i reglementet.
+- `agegroupid` 2 viser kun U11-rækker på 287 (kort 160): om U09 vises, er
+  ikke afklaret.
+- Christoffer oplyser, at danske ranglistepoint er permanente og ikke
+  udløber. Ikke målt endnu (kort 158).
+
+---
+
 ## Hemmeligheder
 
 `SR_CallbackContext` hentes frisk fra sidens HTML ved hvert kald og gemmes

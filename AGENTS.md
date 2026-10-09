@@ -94,6 +94,50 @@ repoet.
 
 ---
 
+## Codex på Windows: kendte fejl og hvad man gør
+
+Tilføjet 2026-10-09 efter to fejl, der kostede tid. Læs diagnosen, før du
+prøver at rette noget på computeren.
+
+**Codex' shell starter ikke: `setup refresh had errors`.** Fejlen kommer,
+før kommandoen kører: `CreateProcess failed: Rejected("Failed to create
+unified exec process: helper_unknown_error: setup refresh had errors")`.
+Årsagen set 2026-10-09: ved hver shellstart opdaterer Codex' sandbox
+læserettigheder på filerne under
+`%LOCALAPPDATA%\OpenAI\Codex\runtimes\cua_node\...`. Det mislykkes med
+`os error 32` ("being used by another process"), når processer fra samme
+mappe holder filer åbne. Set: fire hængende `node_repl.exe` (med seks
+`node`-børn), derefter `codex-computer-use-swift.exe`. Loggen står i
+`%USERPROFILE%\.codex\.sandbox\sandbox.<dato>.log`; søg efter
+`setup error` og `os error 32`. Fix (PowerShell, rører ikke selve
+Codex-appen): stop de processer, hvis sti ligger under
+`OpenAI\Codex\runtimes\`:
+
+```
+Get-Process | Where-Object { $_.Path -like '*OpenAI\Codex\runtimes\*' } | Stop-Process -Force
+```
+
+Åbn derefter en NY tråd i Codex og test med `git status --short`. Hjælper
+det ikke: luk Codex-appen helt og prøv igen, ellers genstart computeren.
+Ret ikke ACL'er eller filer i `.codex` med hånden. Ikke afklaret: om
+fejlen kommer igen, så længe `notify` og pluginsene `computer-use` og
+`unified-computer-use` står i `.codex\config.toml`.
+
+**Starter shellen ikke, så stop.** Skriv fejlen i kortets `Spørgsmål`,
+og søg ikke omveje. Claude kan i stedet køre de dele af et kort, der kun
+er læsning og kald til `badmintonplayer.dk`, i sin egen container. Samme
+regler (kaldloft, pauser, read-only databaser, hash-kontrol), og
+rapporten skal skrive, at den er kørt af Claude (sådan blev 156 og 159
+kørt).
+
+**`apply_patch` fejler.** Brug Codex' egen patch-runner fra en forhøjet
+PowerShell: `codex.exe --codex-run-as-apply-patch <patchfil>`. Stien til
+`codex.exe` er versionsspecifik, fx
+`%LOCALAPPDATA%\OpenAI\Codex\bin\<hash>\codex.exe`. Find den aktuelle
+med `Get-ChildItem "$env:LOCALAPPDATA\OpenAI\Codex\bin" -Recurse -Filter codex.exe`.
+
+---
+
 ## Arbejdsform
 
 **Hent før du går i gang, send når du holder op.** `git pull` først,
