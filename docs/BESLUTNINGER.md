@@ -440,3 +440,18 @@ Dream Team-point, se ovenfor).
 **Mangler i selve arket:** omdøb Spillerpoint A3 fra "Andreas Drasbek" til
 "Andreas Ryun Drasbek". Resultater skal ikke ændres. Indtil da står han også i
 `statistik-spillere.js`, og tilmeldingssiden viser ham to gange.
+
+---
+
+## 2026-10-09 — Hentning fra badmintonplayer.dk, teknikbane, datarækkevidde
+
+**Besluttet (Christoffer):**
+- Vi må hente åbent fra badmintonplayer.dk, i moderat takt og kun det vi har brug for. Der findes ingen API-nøgle fra Badminton Danmark, og vi bruger ingen. Vi klikker ikke på samtykke, løser ikke CAPTCHA og logger ikke ind.
+- Al information vi kigger på er offentligt tilgængelig uden login eller registrering. Derfor lægges der ingen ekstra adgangsbegrænsning på spiller- og ungdomsdata i vores egne visninger ud over det, kilden selv viser.
+- Teknikbanen i kampsystemet bliver et loft, som den er bygget nu (tildeles kun hvis der er plads efter den almindelige fordeling).
+- Tilmeldingsperioden er slut, så Dream Team-forsidens nye rækkefølge (Historisk stilling, Statistik, Tilmelding, Admin) må laves, når Christoffer siger til.
+- Ny database til events og turneringer er i orden, hvis det er bedre end at udvide de eksisterende.
+
+**Hvorfor:** Data er allerede åbent tilgængeligt, og vi har allerede hentet fra siden i 154-161 uden at støde på et rigtigt værn. Det, der har kostet tid, er vores egne scripts (se opgave 162).
+
+**Fravalgt:** at skaffe en API-nøgle (findes ikke), og at gøre ungdomsdata særligt lukket i vores egne visninger, når kilden er offentlig.
