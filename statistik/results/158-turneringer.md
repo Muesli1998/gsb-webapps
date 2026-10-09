@@ -17,7 +17,7 @@ Observeret tabeloverskrift: Dato | Turnering/Holdkamp | Spillere | Point | (tom 
 Hver datarække har dato (nogle fortsættelsesrækker har tom datocelle), titel/link til turnering eller holdkamp, spillertekst med profillinks for andre deltagere, et Point-felt med værdier adskilt parallelt med spillerlinjerne samt en tom op/ned-indikator. De rå HTML-rækker er bevaret; parseren gemmer tomme datoceller som null og angiver arvet dato separat.
 Rækkens disciplin kan kun knyttes via opslagets rankinglistid (288=single, 289=double); selve tabellen har ingen disciplin-kolonne. Relationen mellem den anden spiller og hovedspilleren (partner/modstander) er ikke mærket i eventtabellen.
 Eventtabeller tilgængelige for 5 af 5 profiler. Profiler med holdkamprækker men uden turneringsrækker i den viste tabel: ingen observeret. Det afgør ikke nødvendigvis om spilleren aldrig spiller turneringer uden for denne tabel/sæson.
-Runde/fase, kampnummer, modstanderrolle, sætresultat/vinder, point før, point efter og pointændring: ikke vist som eventtabellens felter; derfor ukendt her. Point-feltet er ikke opdelt i før/efter/delta.
+Runde/fase, kampnummer, modstanderrolle og sætresultat/vinder er ikke eventtabellens felter. Der er ingen eksplicit før/efter/delta-kolonne, men spillerens egne point pr. event kan sammenlignes mellem rækker (se afsnit 2).
 
 ### Rækkeeksempler fra de gemte svar
 
@@ -36,15 +36,20 @@ Klassifikation turnering/holdkamp er alene ud fra linkets offentlige sti (VisRes
 
 ## 2. Hvilke begivenheder og pointændringer?
 
-Begge linktyper forekommer i 2025/26-svarene: turneringslinks og holdkamp-/DMU-holdlinks. Alle fem eventtabeller har daterede poster inden for 2025/26 (se rå rækker og JSON). De gemte 154-links har sæson-ID 2025; om eventhistorikken medtager tidligere sæsoner kan ikke afgøres fra disse fem svar.
-Tabellen viser Point-værdier ved eventrækker, men intet eksplicit før/efter- eller deltafelt. Nogle events gentager samme Point-værdi på flere spillerlinjer. Om pointændringen afregnes pr. kamp eller samlet pr. turnering: ukendt ud fra eventtabellen.
+Begge linktyper forekommer i 2025/26-svarene: turneringslinks og holdkamp-/DMU-holdlinks. Alle fem eventtabeller har daterede poster inden for 2025/26. De gemte 154-links har sæson-ID 2025; om eventhistorikken medtager tidligere sæsoner kan ikke afgøres fra disse fem svar.
 
-Fem konkrete, slå-op-venlige observationer (vist Point, ikke udledt ændring):
-- Badminton Esbjerg U13 M; dato 24-05-2026; spiller Josefine Bille-Ahmt (329159); vist Point 1771 | / 1783 |; pointændring ukendt.
-- Nordsjælland U13 A; dato 19-04-2026; spiller Benjamin Hinge Carlsson (330650); vist Point 1736 | / 1595 |; pointændring ukendt.
-- Taastrup BC U15 A; dato 14-06-2026; spiller Louis Valdemar Hedegaard Toftlund (330770); vist Point 1758 | 1714 / 1670 | 1544; pointændring ukendt.
-- Taastrup BC U15 A; dato 14-06-2026; spiller Theodor Lumby Jessen (327691); vist Point 1845 | / 1873 |; pointændring ukendt.
-- Farum U15 M Farum: Specielle tilmeldingsbetingelser; dato 17-05-2026; spiller Anna Rudolph (328195); vist Point 1781 | / 0 |; pointændring ukendt.
+**Eventtabellen er en tidsserie af spillerens egne point (tilføjet efter gennemgang af råsvaret for Anna Rudolph, 328195).** Første tal i Point-kolonnen på hver datoet række er hovedspillerens egne point på det tidspunkt; tallene efter skillelinjen hører til de andre spillere i rækken (partner/modstander). Spillerens egne point ændrer sig fra event til event, fx 21-06-2026: 1793, 17-05-2026: 1781, 10-05-2026: 1774, 26-04-2026: 1759, 12-04-2026: 1765, 11-04-2026: 1745. En pointændring kan derfor regnes som forskellen mellem to events i datorækkefølge. Op/ned-kolonnen er tom i alle 55 rækker for Anna Rudolph og giver intet.
+- Flere rækker pr. event (en pr. kamp eller modstander) gentager samme egne point inden for samme turnering/dato. Pointene ser derfor ud til at gælde pr. event, ikke pr. kamp. Dette er en observation fra få eksempler, ikke afprøvet systematisk.
+- **Ukendt:** om tallet er pointstanden før eller efter eventet, og om det er rangeringspoint eller en pointværdi i disciplinen. Det afgøres i Del B ved at sammenligne med ugeversioner.
+- "Sæsonskifte" (21-06-2026) er en systemrække med dato, uden turnering og med 0 i modstanderfeltet. Den må ikke tælles som en kamp.
+- "Afbud alle kategorier" står som modstander med 0 point og er ikke en spillet kamp.
+
+Fem konkrete, slå-op-venlige observationer (viste point, ikke udledt ændring):
+- Badminton Esbjerg U13 M; dato 24-05-2026; spiller Josefine Bille-Ahmt (329159); vist Point 1771 | / 1783 |.
+- Nordsjælland U13 A; dato 19-04-2026; spiller Benjamin Hinge Carlsson (330650); vist Point 1736 | / 1595 |.
+- Taastrup BC U15 A; dato 14-06-2026; spiller Louis Valdemar Hedegaard Toftlund (330770); vist Point 1758 | 1714 / 1670 | 1544.
+- Taastrup BC U15 A; dato 14-06-2026; spiller Theodor Lumby Jessen (327691); vist Point 1845 | / 1873 |.
+- Farum U15 M Farum: Specielle tilmeldingsbetingelser; dato 17-05-2026; spiller Anna Rudolph (328195); vist Point 1781 | / 0 | (afbud).
 
 ## 3. Offentlig turneringsoversigt
 
