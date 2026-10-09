@@ -24,7 +24,7 @@
 - Netværk: kun `badmintonplayer.dk`, højst **35 kald** i alt (inklusive friske GET af kontekstnøgle). Ingen kald til `badminton.dk`. Sekventielt, mindst 2,1 sekunder, backoff ved 429/5xx, stop ved 3 fejl i træk eller botværn. Ingen login, cookies, CAPTCHA eller samtykkeklik. Kontekstnøglen redigeres ud af alle gemte svar.
 - **Efter de to første kald med forskellige filtre (K og M): sammenlign svarenes hash.** Er de ens, virker filteret ikke; stop og ret, før resten køres.
 - Gæt ikke på formler eller koefficienter. Skriv "ukendt", hvor noget ikke kan afgøres.
-- Starter din shell ikke (`setup refresh had errors`), så stop og skriv det i Spørgsmål, og søg ikke omveje (se `AGENTS.md`, afsnittet om Codex på Windows). Fejler `apply_patch`, brug metoden i samme afsnit.
+- Din almindelige shell starter ikke på denne maskine (`setup refresh had errors`). Kør derfor alle kommandoer med **forhøjet adgang** (uden for sandboxen); Christoffer godkender hver gang. Stop ikke, fordi den almindelige shell fejler (se `AGENTS.md`, afsnittet om Codex på Windows). Kan du heller ikke køre med forhøjet adgang, så stop og skriv det i Spørgsmål. Fejler `apply_patch`, brug metoden i samme afsnit.
 
 ## Output
 - `statistik/scripts/161-point-ved-raekkegraenser.py` (eller `.mjs`)
