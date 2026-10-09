@@ -30,7 +30,7 @@ const { officieltNavn } = require('../lib/navne');
 // "MEN" via API'ens gender-felt på Member, tilføjet til HERRER_2627). Truppen er nu 44
 // spillere. Opdatér denne liste manuelt hvis spillere til-/framelder sig klubben.
 const HERRER_2627 = [
-  'Adnan Bacic', 'Andreas Drasbek', 'Brian Oddershede', 'Christian Staal',
+  'Adnan Bacic', 'Andreas Ryun Drasbek', 'Brian Oddershede', 'Christian Staal',
   'Christoffer Müller', 'Erik Juul', 'Jonas Trusell-Jensen',
   'Jonathan W. Hansen', 'Kenn Blæsbjerg Christensen', 'Kenneth Hasselby',
   'Linus Bergström Hesselballe', 'Louis Valdemar Hedegaard Toftlund', 'Malthe Baltzer',

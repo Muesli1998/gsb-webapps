@@ -11,7 +11,8 @@
 // køns-dropdowns på Dream Team-tilmeldingen, og Spillerpoint-formlerne giver dem Dream
 // Team-point. Derfor har statistikken sin egen liste her.
 //
-// TILFØJ EN SPILLER: skriv navnet som det står i Resultater-arket (efter alias, se navne.js).
+// TILFØJ EN SPILLER: skriv navnet præcis som det står i Resultater-arket. Det er altid BD's
+// (Nembadmintons) navn, og vi retter os efter det — ikke omvendt.
 // Hold listen sæson-uafhængig; gamle navne koster intet at beholde.
 //
 // KENDT BEGRÆNSNING / TODO: det er en manuel liste, der skal vedligeholdes. analyse.js melder nu
@@ -19,6 +20,7 @@
 // længere forsvinder i stilhed. Den varige løsning er at udlede "vores side" strukturelt (se
 // docs/BESLUTNINGER.md, 2026-10-04) i stedet for at matche mod en navneliste.
 const STATISTIK_SPILLERE = [
+  'Andreas Ryun Drasbek', // BD-navn. Spillerpoint A3 hedder stadig "Andreas Drasbek" (omdøb den, så kan denne linje slettes)
   'Carsten Yan',
   'Chaojun Li',
   'Charlotte Neerdal',

@@ -408,8 +408,8 @@ reproduceret ved at køre den rigtige `analyse.js` mod regnearket.
 **To årsager:**
 1. `analyse.js` finder "vores" side ved at slå navne op i Spillerpoint, som er
    Dream Team-truppen. Reserver på GSB 3/4 står der ikke, så en kamp uden en kendt
-   spiller blev ikke talt. Otte spillere manglede, plus en stavevariant
-   ("Andreas Ryun Drasbek").
+   spiller blev ikke talt. Otte spillere manglede, plus Andreas
+   (BD: "Andreas Ryun Drasbek", Spillerpoint: "Andreas Drasbek").
 2. Dedup-nøglen blev låst på første række i en double-kamp, også når den række ikke
    kunne tælles. Var makkeren på række to kendt, forsvandt kampen. Det gav 4 tabte
    kampe, selv med en delvist kendt double.
@@ -418,7 +418,11 @@ reproduceret ved at køre den rigtige `analyse.js` mod regnearket.
 - Statistikken får sin egen liste, `netlify/lib/statistik-spillere.js`. Spillerne
   lægges bevidst IKKE i Spillerpoint: `spillere.js` lægger alle navne dér i begge
   køns-dropdowns på tilmeldingen, og formlerne giver dem Dream Team-point.
-- Aliaset "Andreas Ryun Drasbek" -> "Andreas Drasbek" er tilføjet i `navne.js`.
+- Princip (Chris, 2026-10-04): Resultater har altid BD's navne, og vi retter os efter
+  dem, ikke omvendt. Derfor INGEN alias fra BD-navnet til et andet navn. Andreas
+  hedder "Andreas Ryun Drasbek" i `spillere.js` (HERRER_2627) og skal omdøbes i
+  Spillerpoint A3. Ingen har valgt ham som spiller i Dream Team (kun deltagernavn
+  i Tilmeldinger/Holdoversigt), så omdøbningen rammer ikke nogen.
 - Dedup-fejlen er rettet, og svaret fra `analyse` indeholder nu `ikkeTalt`
   (kampe uden kendt spiller, med navne). Siden viser dem i et gult kort, så en ny
   reserve ikke igen forsvinder i stilhed.
@@ -433,8 +437,6 @@ GSB-spillere, ikke kun Dream Team), så det er Chris' valg, ikke en del af denne
 **Fravalgt:** at tilføje spillerne til Spillerpoint (bivirkninger på tilmelding og
 Dream Team-point, se ovenfor).
 
-**Rettelse i selve arket mangler:** navnet "Andreas Ryun Drasbek" står i Resultater,
-række 105 (GSB 3, MD, vundet) og række 120 (GSB 3, HD, tabt). `analyse.js` er ligeglad
-(den bruger aliaset), men SUMIFS i Spillerpoint matcher på råteksten, så Andreas
-Drasbek mangler 1,5 Dream Team-point i runde 3. Ret begge celler i kolonne D til
-"Andreas Drasbek". `hent-resultater.js` retter fremtidige rækker selv via `navne.js`.
+**Mangler i selve arket:** omdøb Spillerpoint A3 fra "Andreas Drasbek" til
+"Andreas Ryun Drasbek". Resultater skal ikke ændres. Indtil da står han også i
+`statistik-spillere.js`, og tilmeldingssiden viser ham to gange.
