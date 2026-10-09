@@ -43,6 +43,7 @@ statistik/sql/normalized-import.sql
 *.db-journal
 *.sqlite
 *.sqlite3
+*.db.bak
 statistik/data/backups/
 
 # Medier og regneark - hoerer i Dropbox under dream-team-data
