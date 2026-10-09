@@ -96,39 +96,40 @@ repoet.
 
 ## Codex på Windows: kendte fejl og hvad man gør
 
-Tilføjet 2026-10-09 efter to fejl, der kostede tid. Læs diagnosen, før du
-prøver at rette noget på computeren.
+Tilføjet 2026-10-09 efter to fejl, der kostede tid, og rettet samme dag.
+Læs diagnosen, før du prøver at rette noget på computeren.
 
-**Codex' shell starter ikke: `setup refresh had errors`.** Fejlen kommer,
-før kommandoen kører: `CreateProcess failed: Rejected("Failed to create
-unified exec process: helper_unknown_error: setup refresh had errors")`.
-Årsagen set 2026-10-09: ved hver shellstart opdaterer Codex' sandbox
-læserettigheder på filerne under
-`%LOCALAPPDATA%\OpenAI\Codex\runtimes\cua_node\...`. Det mislykkes med
-`os error 32` ("being used by another process"), når processer fra samme
-mappe holder filer åbne. Set: fire hængende `node_repl.exe` (med seks
-`node`-børn), derefter `codex-computer-use-swift.exe`. Loggen står i
-`%USERPROFILE%\.codex\.sandbox\sandbox.<dato>.log`; søg efter
-`setup error` og `os error 32`. Fix (PowerShell, rører ikke selve
-Codex-appen): stop de processer, hvis sti ligger under
-`OpenAI\Codex\runtimes\`:
+**Codex' almindelige shell starter ikke: `setup refresh had errors`.**
+Fejlen kommer, før kommandoen kører: `CreateProcess failed:
+Rejected("Failed to create unified exec process: helper_unknown_error:
+setup refresh had errors")`. **Løsningen, der virker (set 2026-10-09):**
+bed Codex køre kommandoen med **forhøjet adgang** (uden for sandboxen);
+Christoffer godkender hver gang. Samme `git status --short`, der fejlede
+i sandboxen, lykkedes med forhøjet adgang. Skriv derfor i Codex-prompten,
+at alle kommandoer køres med forhøjet adgang, og stop ikke, fordi den
+almindelige shell fejler.
 
-```
-Get-Process | Where-Object { $_.Path -like '*OpenAI\Codex\runtimes\*' } | Stop-Process -Force
-```
+Årsagen (set i `%USERPROFILE%\.codex\.sandbox\sandbox.<dato>.log`): ved
+shellstart opdaterer sandboxen læserettigheder på filer under
+`%LOCALAPPDATA%\OpenAI\Codex\runtimes\cua_node\...` og mislykkes med
+`os error 32` ("being used by another process"), fordi `node_repl.exe` er
+åben i fire `node_repl`-processer (og seks `node`), som Codex selv starter
+få sekunder efter opstart. Derfor hjælper det ikke at lukke processerne og
+starte forfra: Codex starter dem igen. Stoppes de midt i en kørende
+session, kan det virke, til Codex åbner en ny tråd. Ikke afklaret: at
+fire plugins fra `openai-primary-runtime` i `.codex\config.toml`
+(`documents`, `pdf`, `spreadsheets`, `presentations`) er det, der starter
+dem; tidspunkterne passer, men det er ikke prøvet at slå dem fra. Ret
+ikke ACL'er eller filer i `.codex` med hånden. Fandt ikke fejlen på `.git`
+(ejeren er brugeren); en OpenAI-forumtråd om samme fejlmeddelelse
+handlede om `.git`-ejerskab og passede ikke her.
 
-Åbn derefter en NY tråd i Codex og test med `git status --short`. Hjælper
-det ikke: luk Codex-appen helt og prøv igen, ellers genstart computeren.
-Ret ikke ACL'er eller filer i `.codex` med hånden. Ikke afklaret: om
-fejlen kommer igen, så længe `notify` og pluginsene `computer-use` og
-`unified-computer-use` står i `.codex\config.toml`.
-
-**Starter shellen ikke, så stop.** Skriv fejlen i kortets `Spørgsmål`,
-og søg ikke omveje. Claude kan i stedet køre de dele af et kort, der kun
-er læsning og kald til `badmintonplayer.dk`, i sin egen container. Samme
-regler (kaldloft, pauser, read-only databaser, hash-kontrol), og
-rapporten skal skrive, at den er kørt af Claude (sådan blev 156 og 159
-kørt).
+**Kan Codex slet ikke køre**, heller ikke med forhøjet adgang, så stop,
+og skriv fejlen i kortets `Spørgsmål`. Claude kan i stedet køre de dele
+af et kort, der kun er læsning og kald til `badmintonplayer.dk`, i sin
+egen container efter at Christoffer har bedt om det. Samme regler
+(kaldloft, pauser, read-only databaser, hash-kontrol), og rapporten skal
+skrive, at den er kørt af Claude (sådan blev 156 og 159 kørt).
 
 **`apply_patch` fejler.** Brug Codex' egen patch-runner fra en forhøjet
 PowerShell: `codex.exe --codex-run-as-apply-patch <patchfil>`. Stien til
