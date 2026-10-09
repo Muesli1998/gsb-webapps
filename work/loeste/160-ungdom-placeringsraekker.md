@@ -49,10 +49,22 @@ Skriv i "Spørgsmål".
 `arbejde/160-ungdom-placeringsraekker`, fra `main`. Christoffer opretter grenen og committer selv. Codex kører kun læsende git, ustaged, ingen `git add -A`, ingen push, ingen Co-Authored-By, ingen sub-agents.
 
 ## Spørgsmål
-(Tomt.)
+- `agegroupid=2` er U09 i `liga-landskab.db`/AgeGroup-kataloget, men det korrekte 287-kald returnerede 23 rækker, alle med U11-rækkeetiketter (13 U11 B, 7 U11 C, 2 U11 A, 1 U11 A-B). Er dette forventet for ranglistens aldersgruppefilter, eller skal “U09 på 287” forstås som en særskilt rækkeetiket? Data alene afgør det ikke.
+- Tærskelafvigelse: Josefine Bille-Ahmt, U15/K, 287-rang 37, står U15 E-M, mens højeste disciplinpoint i 2026-10-07-databasen er 1835 (>1500), hvilket efter den afprøvede regel peger på U15 M. Listen er 09-10-2026; snapshotforskellen på to dage eller anden regeltilstand kan ikke afgøres her.
+- Fire E-spillere stod uden for top-24 (U15/M: 1; U15/K: 2; U17/M: 1). Ingen var top-8 på 288/289/292 i det gemte pointdatasæt. Top-8-undtagelsen forklarer derfor ikke disse fire ud fra den tilgængelige evidens. Skal grænsen behandles som ren 287-placering, eller undersøges der senere flere disciplin-/aldersplaceringer?
 
 ## Tilbagefald
 Slet de nye filer, inklusive `160-raa-svar/`. Ingen database er berørt.
 
 ## Resultat
-(Udfyldes af Codex.)
+Udført med `statistik/scripts/160-ungdom-placeringsraekker.py`. Alle detaljer, råsvar, fulde request-hashes, skemaer og række-for-række afvigere står i `statistik/results/160-ungdom-placeringsraekker.md/.json` og `statistik/results/160-raa-svar/`.
+
+- **Kald:** 20/20 til badmintonplayer.dk (2 GET af ranglistesiden + 18 POST); 0 til badminton.dk. Kald 1–10 var en fejlprobe: M/K blev sendt i `param` i stedet for `gender`, og M/K-svar blev identiske. De rå svar er bevaret under `attempt-1-param-only/`, markeret kasseret. Kald 11–20 satte `gender` korrekt og er analysegrundlaget. Ingen fejlstatus eller botværn.
+- **Aldersgruppe-ID’er, bekræftet i read-only `age_groups`:** U13=4, U15=5, U17=6, U09=2. Alle seks korrekte lister havde 100 rækker på side 0. Sidetal: U13 M/K 19/8; U15 M/K 20/8; U17 M/K 16/7.
+- **Rækkefordeling og intervaltest:** U13 M 24 M / 21 M-A / 55 A, 97/100 inden for intervallerne; U13 K 24/22/54, 98/100. U15 M 25 E / 11 E-M / 64 M, 99/100 af de 100 rækker tilhørte de testede placeringsklasser og lå rigtigt. U15 K: 25 E / 11 E-M / 53 M / 10 A samt 1 U17 E; 86/89 placeringsklasse-rækker bestod. U17 M: 25 E / 11 E-M / 58 M / 6 A, 93/94 bestod. U17 K: 23 E / 12 E-M / 44 M / 21 A, 77/79 bestod. Alle afvigende navne, placeringer og rækker er listet i rapporten.
+- **Tærskler:** Højeste disciplinpoint fra `rangliste-point.db` (version 2026-10-07, 288/289/292) blev matchet på profile-ID til alle 323 rækker fra U13 rang 49 og U15/U17 rang 37 og ned. 322 passede; én afveg: Josefine Bille-Ahmt (U15 K, rang 37, E-M, 1835 point mod tærsklen >1500). Ranglistepunkt-snapshot er to dage ældre end 287-versionen 09-10-2026.
+- **E/top-8:** Fire E-rækker stod uden for top-24 (U15 M én, U15 K to, U17 M én). Ingen havde top-8-placering i singler/double/mix blandt de tilgængelige ID-match i 288/289/292.
+- **Reserve:** U09-ID 2 gav 23 rækker på én side, men etiketterne var U11 A/B/C/A-B; se åbent spørgsmål. `playerid=325460` (Anja Thomsen) gav rang 1669, som matcher parentesplaceringen i den gemte 159 GSB-liste, ikke lokal rang 1. `playerid=293765` (Nikolaj Thorslund Hindsbo) gav rang 5437, som matcher parentesplaceringen, ikke lokal rang 47. Begge svar gav dermed den fælles placering, ikke lokal rang eller kønsrang. Rækkerne kan slås op på den offentlige side.
+- **Tre opslagseksempler:** Conrad Lercke — U13 M, rang 1; Liva Dunfeldt Heckmann — U15 E, rang 2; Marvin Jakob Galan Mogensen — U17 E, rang 1.
+- **Hashværn:** Alle fem databaser blev åbnet `mode=ro` med `PRAGMA query_only=ON`; SHA-256 før/efter matcher kortets forventede hash (alle fem fuldt gengivet i rapporten). Ingen databaseskrivning.
+- `git diff --check` og afsluttende `git status --short` skal fremgå af afleveringsbeskeden; rapporten og scriptet står ustaged.

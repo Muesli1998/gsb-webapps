@@ -1,0 +1,185 @@
+[
+  {
+    "n": 1,
+    "method": "GET",
+    "label": "context",
+    "url": "https://badmintonplayer.dk/DBF/Ranglister/",
+    "fields_changed": {},
+    "status": 200,
+    "bytes": 24149,
+    "sha256": "b6ae02eb38db423533bcd3e0f75d641dbf599c4ca9f141aff1fca9752a4428c3",
+    "error": null,
+    "file": "01-context-page.html"
+  },
+  {
+    "n": 2,
+    "method": "POST",
+    "label": "U13-M-page0",
+    "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+    "fields_changed": {
+      "agegroupid": "4",
+      "gender": "M"
+    },
+    "status": 200,
+    "bytes": 63638,
+    "sha256": "0a43b98706ea82bf515e985fc0bb3766722630a50c85ee9f87875a535d555373",
+    "error": null,
+    "file": "02-U13-M-page0.json",
+    "list_id": "287",
+    "param": "",
+    "rows_page0": 100,
+    "page_count": 19
+  },
+  {
+    "n": 3,
+    "method": "POST",
+    "label": "U13-K-page0",
+    "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+    "fields_changed": {
+      "agegroupid": "4",
+      "gender": "K"
+    },
+    "status": 200,
+    "bytes": 62577,
+    "sha256": "ea3bdbe88c21522b157b8ab4a0ddb36b57c199979ca3560c1365b32f007e2929",
+    "error": null,
+    "file": "03-U13-K-page0.json",
+    "list_id": "287",
+    "param": "",
+    "rows_page0": 100,
+    "page_count": 8
+  },
+  {
+    "n": 4,
+    "method": "POST",
+    "label": "U15-M-page0",
+    "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+    "fields_changed": {
+      "agegroupid": "5",
+      "gender": "M"
+    },
+    "status": 200,
+    "bytes": 64095,
+    "sha256": "749aa881d5764e0570bbf11c510854a2ca16fa98c110603751c613a70345a1e4",
+    "error": null,
+    "file": "04-U15-M-page0.json",
+    "list_id": "287",
+    "param": "",
+    "rows_page0": 100,
+    "page_count": 20
+  },
+  {
+    "n": 5,
+    "method": "POST",
+    "label": "U15-K-page0",
+    "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+    "fields_changed": {
+      "agegroupid": "5",
+      "gender": "K"
+    },
+    "status": 200,
+    "bytes": 63084,
+    "sha256": "2ee68a2585cfce9417dd7d0510d305cc806b74022b187dfd098a86d7978e77f7",
+    "error": null,
+    "file": "05-U15-K-page0.json",
+    "list_id": "287",
+    "param": "",
+    "rows_page0": 100,
+    "page_count": 8
+  },
+  {
+    "n": 6,
+    "method": "POST",
+    "label": "U17-M-page0",
+    "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+    "fields_changed": {
+      "agegroupid": "6",
+      "gender": "M"
+    },
+    "status": 200,
+    "bytes": 63765,
+    "sha256": "dbed24a7571a7b7e3d0ef7c58e4e6b4f28f521a910f2f7e6d0abf3ba57f01bb9",
+    "error": null,
+    "file": "06-U17-M-page0.json",
+    "list_id": "287",
+    "param": "",
+    "rows_page0": 100,
+    "page_count": 16
+  },
+  {
+    "n": 7,
+    "method": "POST",
+    "label": "U17-K-page0",
+    "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+    "fields_changed": {
+      "agegroupid": "6",
+      "gender": "K"
+    },
+    "status": 200,
+    "bytes": 62993,
+    "sha256": "e93f3c941b8719931626febc2a6e33cfbad678bb0f56b06fdfefa81834b1cac3",
+    "error": null,
+    "file": "07-U17-K-page0.json",
+    "list_id": "287",
+    "param": "",
+    "rows_page0": 100,
+    "page_count": 7
+  },
+  {
+    "n": 8,
+    "method": "POST",
+    "label": "U09-M-page0",
+    "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+    "fields_changed": {
+      "agegroupid": "2",
+      "gender": "M"
+    },
+    "status": 200,
+    "bytes": 17962,
+    "sha256": "963acaaeb526728bdc0c1ce510ec0bcb69c86c54b2221428869a2a272f5ff826",
+    "error": null,
+    "file": "08-U09-M-page0.json",
+    "list_id": "287",
+    "param": "",
+    "rows_page0": 23,
+    "page_count": 1
+  },
+  {
+    "n": 9,
+    "method": "POST",
+    "label": "playerid-GSB-K",
+    "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+    "fields_changed": {
+      "playerid": "325460",
+      "gender": "K"
+    },
+    "status": 200,
+    "bytes": 5736,
+    "sha256": "fcafa1428deb8658855c7ef77b58df7b91fc5681f462925e581719ae2a6ea25f",
+    "error": null,
+    "file": "09-playerid-GSB-K.json",
+    "list_id": "287",
+    "param": "",
+    "rows_page0": 1,
+    "page_count": 1
+  },
+  {
+    "n": 10,
+    "method": "POST",
+    "label": "playerid-GSB-M",
+    "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+    "fields_changed": {
+      "playerid": "293765",
+      "gender": "M"
+    },
+    "status": 200,
+    "bytes": 5762,
+    "sha256": "08eec50b613b724ee18ac8174c1772c782489a1bbe321f4f6c318c0231db8edc",
+    "error": null,
+    "file": "10-playerid-GSB-M.json",
+    "list_id": "287",
+    "param": "",
+    "rows_page0": 1,
+    "page_count": 1
+  }
+]
