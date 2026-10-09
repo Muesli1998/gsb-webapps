@@ -1,0 +1,101 @@
+{
+  "calls": [
+    {
+      "number": 1,
+      "method": "GET",
+      "label": "frisk callback-kontekst (HTML gemmes ikke)",
+      "url": "https://badmintonplayer.dk/DBF/Ranglister/",
+      "request_fields": null,
+      "status": "ukendt: scriptet stoppede på botværnsdetektion før metadata blev skrevet til log",
+      "bytes": null,
+      "sha256_saved_redacted_response": null,
+      "stop_reason": "Scriptets detector rejste: STOP: muligt botværn i frisk callback-kontekst (HTML gemmes ikke). Ingen POST-kald blev sendt. Råsvar blev ikke gemt."
+    },
+    {
+      "number": 2,
+      "method": "GET",
+      "label": "frisk callback-kontekst (HTML gemmes ikke)",
+      "url": "https://badmintonplayer.dk/DBF/Ranglister/",
+      "request_fields": null,
+      "status": 200,
+      "bytes": 21846,
+      "sha256_saved_redacted_response": "b8ad91a1858115bf54a2870428d2214271b2deefda6c524bc842bc8e8080db39",
+      "saved_file": "kald-002-get.txt.gz",
+      "attempt": 1,
+      "legacy_detector_matches": [
+        {
+          "term": "CAPTCHA",
+          "excerpt": "pe=\"text/javascript\"></script><script>window.__ENV__ = Object.assign(window.__ENV__ || {}, {\r\n    RECAPTCHA_SITE_KEY: '6Lc_uMorAAAAAJCXuEEFb-B7DZKBkNAQau3yRJqm',\r\n    RECAPTCHA_SECURITY: '6Lc_uMorAAAA"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "method": "POST",
+      "label": "eventtabel Theodor Lumby Jessen (327691)",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetPlayerRankingListPoints",
+      "request_fields": {
+        "callbackcontextkey": "[REDACTED]",
+        "seasonid": 2025,
+        "playerid": 327691,
+        "rankinglistid": 288,
+        "rankinglistplayerid": 8327268,
+        "getplayerdata": true
+      },
+      "status": 200,
+      "bytes": 49854,
+      "sha256_saved_redacted_response": "984f87a7d5bc6ab1c79ee09e7f5edc45ef1385c677b7b22ae5f387ed130f0f48",
+      "saved_file": "kald-003-post.txt.gz",
+      "attempt": 1
+    },
+    {
+      "number": 4,
+      "method": "POST",
+      "label": "eventtabel Anna Rudolph (328195)",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetPlayerRankingListPoints",
+      "request_fields": {
+        "callbackcontextkey": "[REDACTED]",
+        "seasonid": 2025,
+        "playerid": 328195,
+        "rankinglistid": 288,
+        "rankinglistplayerid": 8328337,
+        "getplayerdata": true
+      },
+      "status": 200,
+      "bytes": 44020,
+      "sha256_saved_redacted_response": "4f8c823141637349fe1a2be3674e0326a6b1b41a55fb41e3737196fd8cd641f9",
+      "saved_file": "kald-004-post.txt.gz",
+      "attempt": 1
+    }
+  ],
+  "equal_first_two_event_hashes": false,
+  "reused_154_responses": [
+    {
+      "player_id": "329159",
+      "source": "154-råsvar 009.gz",
+      "source_sha256": "450dad5b0b64a7e187c451285f0cf9367b7d77039788726ed17e39ff577497a5"
+    },
+    {
+      "player_id": "330650",
+      "source": "154-råsvar 010.gz",
+      "source_sha256": "0f17059f92e2b4a37aeb676316825bcba5eacc318a24d954158006c1806bcd9f"
+    },
+    {
+      "player_id": "330770",
+      "source": "154-råsvar 011.gz",
+      "source_sha256": "c09f4eab074e09af9509c4e0510b61fad69b22a15fc9bfc34f6bda2f0711c0e3"
+    }
+  ],
+  "new_event_responses": [
+    {
+      "player_id": "327691",
+      "source": "154-fase-0a detail_link",
+      "saved_file": "theodor-327691.json.gz"
+    },
+    {
+      "player_id": "328195",
+      "source": "154-fase-0a detail_link",
+      "saved_file": "anna-328195.json.gz"
+    }
+  ]
+}

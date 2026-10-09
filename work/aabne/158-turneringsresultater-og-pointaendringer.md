@@ -53,10 +53,14 @@ Skriv i "Spørgsmål". Gæt ikke på, hvorfor point ændrer sig.
 `arbejde/158-turneringer`, fra `main`. Christoffer opretter grenen og committer selv. Codex kører kun læsende git, ustaged, ingen `git add -A`, ingen push, ingen Co-Authored-By, ingen sub-agents.
 
 ## Spørgsmål
-(Tomt.)
+- Det første GET-forsøg har ikke bevaret status/bytes/hash, fordi den daværende kode kastede før logskrivning. Nyt GET-svar viste, at den gamle brede regex ramte `CAPTCHA` som del af `RECAPTCHA_SITE_KEY`; ingen tydelig udfordringsside-markør blev fundet, ja SR_CallbackContext blev fundet, og efterfølgende POST-kald lykkedes. Dette forklarer falsk alarmen stærkt, men præcis gammel svartekst kan ikke genskabes.
+- Ingen af de fem undersøgte profiler havde kun holdkamprækker: alle havde både turnerings- og holdkamprækker. 154-materialet og de udvalgte profilopslag afgør ikke, om en spiller findes, som kun spiller holdkampe.
+- Eventtabellen viser et `Point`-felt, men ikke point før/efter eller delta. Om tallet gælder pr. kamp eller samlet pr. turnering, og om tidligere sæsoner indgår, kan ikke afgøres fra de fem svar.
 
 ## Tilbagefald
 Slet de nye filer, inklusive `158-raa-svar/`. Ingen database er berørt.
 
 ## Resultat
-(Udfyldes af Codex.)
+**Del A udført.** Fem eventtabeller: Josefine Bille-Ahmt (42 rækker), Benjamin Hinge Carlsson (31), Louis Valdemar Hedegaard Toftlund (46), Theodor Lumby Jessen (63) og Anna Rudolph (56), i alt 238. Heraf 180 turneringsrækker, 48 holdkamprækker, 5 systemrækker og 5 med ukendt linktype. Tabellen viser Dato, Turnering/Holdkamp, Spillere, Point og en tom indikatorcelle; runde, modstanderrolle, resultat og pointdelta er ikke felter i tabellen. Alle fem havde både turnerings- og holdkamprækker.
+
+Samlet 4 netværkskald på badmintonplayer.dk: det tidligere afbrudte GET (status/bytes/hash ukendt), et nyt GET (HTTP 200) og to POST (begge HTTP 200; de to redigerede svarhashes var forskellige). Det nye GET viste, at den gamle løse regex matchede `CAPTCHA` inde i `RECAPTCHA_SITE_KEY`, ikke en challenge. Ingen GraphQL-kald; tournament overview/GraphQL-konklusioner bygger på eksisterende gemt evidens. Del B og Del C er ikke kørt. Alle fem databasehashes før/efter er uændrede, og `git diff --check` bestod. Kortet bliver i `work/aabne/`.

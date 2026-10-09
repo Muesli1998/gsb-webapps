@@ -1,0 +1,5122 @@
+{
+  "task": 158,
+  "executed_scope": "Del A only",
+  "current_run_calls": [
+    {
+      "number": 1,
+      "method": "GET",
+      "label": "frisk callback-kontekst (HTML gemmes ikke)",
+      "url": "https://badmintonplayer.dk/DBF/Ranglister/",
+      "request_fields": null,
+      "status": "ukendt: scriptet stoppede på botværnsdetektion før metadata blev skrevet til log",
+      "bytes": null,
+      "sha256_saved_redacted_response": null,
+      "stop_reason": "Scriptets detector rejste: STOP: muligt botværn i frisk callback-kontekst (HTML gemmes ikke). Ingen POST-kald blev sendt. Råsvar blev ikke gemt."
+    },
+    {
+      "number": 2,
+      "method": "GET",
+      "label": "frisk callback-kontekst (HTML gemmes ikke)",
+      "url": "https://badmintonplayer.dk/DBF/Ranglister/",
+      "request_fields": null,
+      "status": 200,
+      "bytes": 21846,
+      "sha256_saved_redacted_response": "b8ad91a1858115bf54a2870428d2214271b2deefda6c524bc842bc8e8080db39",
+      "saved_file": "kald-002-get.txt.gz",
+      "attempt": 1,
+      "legacy_detector_matches": [
+        {
+          "term": "CAPTCHA",
+          "excerpt": "pe=\"text/javascript\"></script><script>window.__ENV__ = Object.assign(window.__ENV__ || {}, {\r\n    RECAPTCHA_SITE_KEY: '[REDACTED]',\r\n    RECAPTCHA_SECURITY: '[REDACTED]"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "method": "POST",
+      "label": "eventtabel Theodor Lumby Jessen (327691)",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetPlayerRankingListPoints",
+      "request_fields": {
+        "callbackcontextkey": "[REDACTED]",
+        "seasonid": 2025,
+        "playerid": 327691,
+        "rankinglistid": 288,
+        "rankinglistplayerid": 8327268,
+        "getplayerdata": true
+      },
+      "status": 200,
+      "bytes": 49854,
+      "sha256_saved_redacted_response": "984f87a7d5bc6ab1c79ee09e7f5edc45ef1385c677b7b22ae5f387ed130f0f48",
+      "saved_file": "kald-003-post.txt.gz",
+      "attempt": 1
+    },
+    {
+      "number": 4,
+      "method": "POST",
+      "label": "eventtabel Anna Rudolph (328195)",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetPlayerRankingListPoints",
+      "request_fields": {
+        "callbackcontextkey": "[REDACTED]",
+        "seasonid": 2025,
+        "playerid": 328195,
+        "rankinglistid": 288,
+        "rankinglistplayerid": 8328337,
+        "getplayerdata": true
+      },
+      "status": 200,
+      "bytes": 44020,
+      "sha256_saved_redacted_response": "4f8c823141637349fe1a2be3674e0326a6b1b41a55fb41e3737196fd8cd641f9",
+      "saved_file": "kald-004-post.txt.gz",
+      "attempt": 1
+    }
+  ],
+  "event_profiles": [
+    {
+      "present": true,
+      "ranking_player_id": "329159",
+      "player_name": "Josefine Bille-Ahmt",
+      "ranking_list_id": 288,
+      "ranking_list_name": "single",
+      "detail_link_post_id": "8329564",
+      "season_id": 2025,
+      "headers": [
+        "Dato",
+        "Turnering/Holdkamp",
+        "Spillere",
+        "Point",
+        ""
+      ],
+      "row_count": 42,
+      "rows": [
+        {
+          "row_number": 1,
+          "date_raw": "21-06-2026",
+          "date_inherited": "21-06-2026",
+          "title": "Sæsonskifte",
+          "source_url": null,
+          "event_kind_from_link": "systemraekke",
+          "players_text_by_separator": [],
+          "linked_player_ids": [],
+          "point_text_by_separator": [
+            "1880 |",
+            "0 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 2,
+          "date_raw": "24-05-2026",
+          "date_inherited": "24-05-2026",
+          "title": "Badminton Esbjerg U13 M",
+          "source_url": "/DBF/Turnering/VisResultater/#113413,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Yrsa Enghave Højlyng , Humlebæk |"
+          ],
+          "linked_player_ids": [
+            "322979"
+          ],
+          "point_text_by_separator": [
+            "1771 |",
+            "1783 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 3,
+          "date_raw": null,
+          "date_inherited": "24-05-2026",
+          "title": "Badminton Esbjerg U13 M",
+          "source_url": "/DBF/Turnering/VisResultater/#113413,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Filippa Lund Christophersen , Humlebæk |"
+          ],
+          "linked_player_ids": [
+            "324911"
+          ],
+          "point_text_by_separator": [
+            "1771 |",
+            "1821 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 4,
+          "date_raw": null,
+          "date_inherited": "24-05-2026",
+          "title": "Badminton Esbjerg U13 M",
+          "source_url": "/DBF/Turnering/VisResultater/#113413,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Alma Ortmann-Ibsen , Gentofte |"
+          ],
+          "linked_player_ids": [
+            "330399"
+          ],
+          "point_text_by_separator": [
+            "1771 |",
+            "1944 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 5,
+          "date_raw": null,
+          "date_inherited": "24-05-2026",
+          "title": "Badminton Esbjerg U13 M",
+          "source_url": "/DBF/Turnering/VisResultater/#113413,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Emma H. Petersen , Rødekro |"
+          ],
+          "linked_player_ids": [
+            "333754"
+          ],
+          "point_text_by_separator": [
+            "1771 |",
+            "1993 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 6,
+          "date_raw": null,
+          "date_inherited": "24-05-2026",
+          "title": "Badminton Esbjerg U13 M",
+          "source_url": "/DBF/Turnering/VisResultater/#113413,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Nova Bro-Mørkeberg , Badminton Roskilde |"
+          ],
+          "linked_player_ids": [
+            "335247"
+          ],
+          "point_text_by_separator": [
+            "1771 |",
+            "1787 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 7,
+          "date_raw": null,
+          "date_inherited": "24-05-2026",
+          "title": "Badminton Esbjerg U13 M",
+          "source_url": "/DBF/Turnering/VisResultater/#113413,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Milea Ranaivo Bjerremand , Kolding BK |"
+          ],
+          "linked_player_ids": [
+            "350948"
+          ],
+          "point_text_by_separator": [
+            "1771 |",
+            "1728 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 8,
+          "date_raw": "12-04-2026",
+          "date_inherited": "12-04-2026",
+          "title": "DMU Hold U13 (4+3) #506012",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,506012,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Johanne Brogaard Baltzer , Gentofte |"
+          ],
+          "linked_player_ids": [
+            "331377"
+          ],
+          "point_text_by_separator": [
+            "1775 |",
+            "1875 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 9,
+          "date_raw": "11-04-2026",
+          "date_inherited": "11-04-2026",
+          "title": "DMU Hold U13 (4+3) #506001",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,506001,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Nova Bro-Mørkeberg , Badminton Roskilde |"
+          ],
+          "linked_player_ids": [
+            "335247"
+          ],
+          "point_text_by_separator": [
+            "1783 |",
+            "1760 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 10,
+          "date_raw": "02-04-2026",
+          "date_inherited": "02-04-2026",
+          "title": "Dalum Hjallese BK U13 M",
+          "source_url": "/DBF/Turnering/VisResultater/#110313,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Frida Davidsen Kannegaard , Randers BK |"
+          ],
+          "linked_player_ids": [
+            "325430"
+          ],
+          "point_text_by_separator": [
+            "1769 |",
+            "1657 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 11,
+          "date_raw": null,
+          "date_inherited": "02-04-2026",
+          "title": "Dalum Hjallese BK U13 M",
+          "source_url": "/DBF/Turnering/VisResultater/#110313,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Alma Fagernæs , Brønderslev |"
+          ],
+          "linked_player_ids": [
+            "319896"
+          ],
+          "point_text_by_separator": [
+            "1769 |",
+            "1619 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 12,
+          "date_raw": null,
+          "date_inherited": "02-04-2026",
+          "title": "Dalum Hjallese BK U13 M",
+          "source_url": "/DBF/Turnering/VisResultater/#110313,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Johanne Brogaard Baltzer , Gentofte |"
+          ],
+          "linked_player_ids": [
+            "331377"
+          ],
+          "point_text_by_separator": [
+            "1769 |",
+            "1826 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 13,
+          "date_raw": "24-03-2026",
+          "date_inherited": "24-03-2026",
+          "title": "U13 (4+3) #487688",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,487688,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Johanne Brogaard Baltzer , Gentofte |"
+          ],
+          "linked_player_ids": [
+            "331377"
+          ],
+          "point_text_by_separator": [
+            "1775 |",
+            "1813 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 14,
+          "date_raw": "17-03-2026",
+          "date_inherited": "17-03-2026",
+          "title": "U13 (4+3) #505708",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,505708,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Nova Bro-Mørkeberg , Badminton Roskilde |"
+          ],
+          "linked_player_ids": [
+            "335247"
+          ],
+          "point_text_by_separator": [
+            "1761 |",
+            "1739 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 15,
+          "date_raw": "15-03-2026",
+          "date_inherited": "15-03-2026",
+          "title": "Badminton Danmark U13 M VICTOR UDM, Brøndby",
+          "source_url": "/DBF/Turnering/VisResultater/#114840,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Alexandra Faye Kristensen , Randers BK |"
+          ],
+          "linked_player_ids": [
+            "330095"
+          ],
+          "point_text_by_separator": [
+            "1681 |",
+            "1832 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 16,
+          "date_raw": null,
+          "date_inherited": "15-03-2026",
+          "title": "Badminton Danmark U13 M VICTOR UDM, Brøndby",
+          "source_url": "/DBF/Turnering/VisResultater/#114840,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Maja Filippa Palada Poulsen , Køge |"
+          ],
+          "linked_player_ids": [
+            "332575"
+          ],
+          "point_text_by_separator": [
+            "1681 |",
+            "1839 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 17,
+          "date_raw": null,
+          "date_inherited": "15-03-2026",
+          "title": "Badminton Danmark U13 M VICTOR UDM, Brøndby",
+          "source_url": "/DBF/Turnering/VisResultater/#114840,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Josefine Grønnebæk , Rødekro |"
+          ],
+          "linked_player_ids": [
+            "333881"
+          ],
+          "point_text_by_separator": [
+            "1681 |",
+            "1696 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 18,
+          "date_raw": null,
+          "date_inherited": "15-03-2026",
+          "title": "Badminton Danmark U13 M VICTOR UDM, Brøndby",
+          "source_url": "/DBF/Turnering/VisResultater/#114840,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Ester Lind Effersøe , Højbjerg |"
+          ],
+          "linked_player_ids": [
+            "334165"
+          ],
+          "point_text_by_separator": [
+            "1681 |",
+            "1943 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 19,
+          "date_raw": null,
+          "date_inherited": "15-03-2026",
+          "title": "Badminton Danmark U13 M VICTOR UDM, Brøndby",
+          "source_url": "/DBF/Turnering/VisResultater/#114840,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Nikoline Møller Bjerg , Bjergby-Mygdal |"
+          ],
+          "linked_player_ids": [
+            "339370"
+          ],
+          "point_text_by_separator": [
+            "1681 |",
+            "1737 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 20,
+          "date_raw": "01-03-2026",
+          "date_inherited": "01-03-2026",
+          "title": "Ikast U13 M Ikast: U13M Badmintonhallen, Holing",
+          "source_url": "/DBF/Turnering/VisResultater/#110230,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Maja Ramberg Mortensen , Rødekro |"
+          ],
+          "linked_player_ids": [
+            "332877"
+          ],
+          "point_text_by_separator": [
+            "1653 |",
+            "1887 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 21,
+          "date_raw": null,
+          "date_inherited": "01-03-2026",
+          "title": "Ikast U13 M Ikast: U13M Badmintonhallen, Holing",
+          "source_url": "/DBF/Turnering/VisResultater/#110230,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Andrea Marie Møller Schjøth , Aarhus AB |"
+          ],
+          "linked_player_ids": [
+            "331575"
+          ],
+          "point_text_by_separator": [
+            "1653 |",
+            "1713 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 22,
+          "date_raw": null,
+          "date_inherited": "01-03-2026",
+          "title": "Ikast U13 M Ikast: U13M Badmintonhallen, Holing",
+          "source_url": "/DBF/Turnering/VisResultater/#110230,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Cecilie Adelheid Pedersen , Rødekro |"
+          ],
+          "linked_player_ids": [
+            "339995"
+          ],
+          "point_text_by_separator": [
+            "1653 |",
+            "1545 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 23,
+          "date_raw": "15-02-2026",
+          "date_inherited": "15-02-2026",
+          "title": "Badminton Roskilde U13 M",
+          "source_url": "/DBF/Turnering/VisResultater/#112794,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Alma Ortmann-Ibsen , Gentofte |"
+          ],
+          "linked_player_ids": [
+            "330399"
+          ],
+          "point_text_by_separator": [
+            "1643 |",
+            "1844 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 24,
+          "date_raw": null,
+          "date_inherited": "15-02-2026",
+          "title": "Badminton Roskilde U13 M",
+          "source_url": "/DBF/Turnering/VisResultater/#112794,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Athena Xie Overgaard , Holte |"
+          ],
+          "linked_player_ids": [
+            "339210"
+          ],
+          "point_text_by_separator": [
+            "1643 |",
+            "1514 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 25,
+          "date_raw": "04-01-2026",
+          "date_inherited": "04-01-2026",
+          "title": "Solrød Strand U13 M",
+          "source_url": "/DBF/Turnering/VisResultater/#112561,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Ameliya Susan Paul , Humlebæk |"
+          ],
+          "linked_player_ids": [
+            "326468"
+          ],
+          "point_text_by_separator": [
+            "1633 |",
+            "1712 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 26,
+          "date_raw": null,
+          "date_inherited": "04-01-2026",
+          "title": "Solrød Strand U13 M",
+          "source_url": "/DBF/Turnering/VisResultater/#112561,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Alma Ortmann-Ibsen , Gentofte |"
+          ],
+          "linked_player_ids": [
+            "330399"
+          ],
+          "point_text_by_separator": [
+            "1633 |",
+            "1731 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 27,
+          "date_raw": null,
+          "date_inherited": "04-01-2026",
+          "title": "Solrød Strand U13 M",
+          "source_url": "/DBF/Turnering/VisResultater/#112561,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Maja Filippa Palada Poulsen , Køge |"
+          ],
+          "linked_player_ids": [
+            "332575"
+          ],
+          "point_text_by_separator": [
+            "1633 |",
+            "1691 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 28,
+          "date_raw": "28-09-2025",
+          "date_inherited": "28-09-2025",
+          "title": "Aarhus AB U13 M",
+          "source_url": "/DBF/Turnering/VisResultater/#111168,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Alexandra Faye Kristensen , Randers BK |"
+          ],
+          "linked_player_ids": [
+            "330095"
+          ],
+          "point_text_by_separator": [
+            "1647 |",
+            "1692 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 29,
+          "date_raw": null,
+          "date_inherited": "28-09-2025",
+          "title": "Aarhus AB U13 M",
+          "source_url": "/DBF/Turnering/VisResultater/#111168,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Maja Filippa Palada Poulsen , Køge |"
+          ],
+          "linked_player_ids": [
+            "332575"
+          ],
+          "point_text_by_separator": [
+            "1647 |",
+            "1558 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 30,
+          "date_raw": null,
+          "date_inherited": "28-09-2025",
+          "title": "Aarhus AB U13 M",
+          "source_url": "/DBF/Turnering/VisResultater/#111168,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Josefine Grønnebæk , Rødekro |"
+          ],
+          "linked_player_ids": [
+            "333881"
+          ],
+          "point_text_by_separator": [
+            "1647 |",
+            "1530 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 31,
+          "date_raw": "20-09-2025",
+          "date_inherited": "20-09-2025",
+          "title": "Uge 38 - U13 A, 6000 (2+2) #487678",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,487678,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Siv Sofie Ors Nilsson , Skovshoved |"
+          ],
+          "linked_player_ids": [
+            "330713"
+          ],
+          "point_text_by_separator": [
+            "1627 |",
+            "1594 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 32,
+          "date_raw": null,
+          "date_inherited": "20-09-2025",
+          "title": "Uge 38 - U13 A, 6000 (2+2) #487676",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,487676,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Katia Lundby Bresemann , Gladsaxe Søborg |"
+          ],
+          "linked_player_ids": [
+            "352900"
+          ],
+          "point_text_by_separator": [
+            "1627 |",
+            "1346 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 33,
+          "date_raw": "14-09-2025",
+          "date_inherited": "14-09-2025",
+          "title": "Badminton Danmark U13 M VICTOR LBS i Hinnerup/Hammel SØFTEN KIC U13MD-U15B",
+          "source_url": "/DBF/Turnering/VisResultater/#114777,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Rada Kostov , Badminton Esbjerg |"
+          ],
+          "linked_player_ids": [
+            "319140"
+          ],
+          "point_text_by_separator": [
+            "1610 |",
+            "1497 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 34,
+          "date_raw": null,
+          "date_inherited": "14-09-2025",
+          "title": "Badminton Danmark U13 M VICTOR LBS i Hinnerup/Hammel SØFTEN KIC U13MD-U15B",
+          "source_url": "/DBF/Turnering/VisResultater/#114777,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Ester Lind Effersøe , Højbjerg |"
+          ],
+          "linked_player_ids": [
+            "334165"
+          ],
+          "point_text_by_separator": [
+            "1610 |",
+            "1798 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 35,
+          "date_raw": null,
+          "date_inherited": "14-09-2025",
+          "title": "Badminton Danmark U13 M VICTOR LBS i Hinnerup/Hammel SØFTEN KIC U13MD-U15B",
+          "source_url": "/DBF/Turnering/VisResultater/#114777,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Josefine Grønnebæk , Rødekro |"
+          ],
+          "linked_player_ids": [
+            "333881"
+          ],
+          "point_text_by_separator": [
+            "1610 |",
+            "1521 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 36,
+          "date_raw": "24-08-2025",
+          "date_inherited": "24-08-2025",
+          "title": "Lillerød U13 M",
+          "source_url": "/DBF/Turnering/VisResultater/#113866,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Maja Ramberg Mortensen , Rødekro |"
+          ],
+          "linked_player_ids": [
+            "332877"
+          ],
+          "point_text_by_separator": [
+            "1602 |",
+            "1535 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 37,
+          "date_raw": null,
+          "date_inherited": "24-08-2025",
+          "title": "Lillerød U13 M",
+          "source_url": "/DBF/Turnering/VisResultater/#113866,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Thanya Koppisetty , Sverige |"
+          ],
+          "linked_player_ids": [
+            "359704"
+          ],
+          "point_text_by_separator": [
+            "1602 |",
+            "-10000 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 38,
+          "date_raw": "17-08-2025",
+          "date_inherited": "17-08-2025",
+          "title": "Værløse U13 A",
+          "source_url": "/DBF/Turnering/VisResultater/#114395,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Miabell Plum Holm , Hvidovre |"
+          ],
+          "linked_player_ids": [
+            "337759"
+          ],
+          "point_text_by_separator": [
+            "1568 |",
+            "1535 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 39,
+          "date_raw": null,
+          "date_inherited": "17-08-2025",
+          "title": "Værløse U13 A",
+          "source_url": "/DBF/Turnering/VisResultater/#114395,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Ella Brink Sørensen , Lyngby |"
+          ],
+          "linked_player_ids": [
+            "340971"
+          ],
+          "point_text_by_separator": [
+            "1568 |",
+            "1352 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 40,
+          "date_raw": null,
+          "date_inherited": "17-08-2025",
+          "title": "Værløse U13 A",
+          "source_url": "/DBF/Turnering/VisResultater/#114395,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Billie-Betty Agger-McMenomy , Gentofte |"
+          ],
+          "linked_player_ids": [
+            "341892"
+          ],
+          "point_text_by_separator": [
+            "1568 |",
+            "1268 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 41,
+          "date_raw": null,
+          "date_inherited": "17-08-2025",
+          "title": "Værløse U13 A",
+          "source_url": "/DBF/Turnering/VisResultater/#114395,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Josefine Bille-Ahmt |",
+            "Marie Trier Henningsen , Humlebæk |"
+          ],
+          "linked_player_ids": [
+            "345647"
+          ],
+          "point_text_by_separator": [
+            "1568 |",
+            "1311 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 42,
+          "date_raw": null,
+          "date_inherited": "17-08-2025",
+          "title": "",
+          "source_url": null,
+          "event_kind_from_link": "ukendt",
+          "players_text_by_separator": [],
+          "linked_player_ids": [],
+          "point_text_by_separator": [],
+          "extra_cell": ""
+        }
+      ],
+      "row_kinds": {
+        "systemraekke": 1,
+        "turnering": 34,
+        "holdkamp": 6,
+        "ukendt": 1
+      },
+      "min_date": "17-08-2025",
+      "max_date": "21-06-2026",
+      "calendar_years": [
+        2025,
+        2026
+      ],
+      "raw_response_sha256": "450dad5b0b64a7e187c451285f0cf9367b7d77039788726ed17e39ff577497a5",
+      "source": "154-råsvar 009.gz"
+    },
+    {
+      "present": true,
+      "ranking_player_id": "330650",
+      "player_name": "Benjamin Hinge Carlsson",
+      "ranking_list_id": 288,
+      "ranking_list_name": "single",
+      "detail_link_post_id": "8329310",
+      "season_id": 2025,
+      "headers": [
+        "Dato",
+        "Turnering/Holdkamp",
+        "Spillere",
+        "Point",
+        ""
+      ],
+      "row_count": 31,
+      "rows": [
+        {
+          "row_number": 1,
+          "date_raw": "21-06-2026",
+          "date_inherited": "21-06-2026",
+          "title": "Sæsonskifte",
+          "source_url": null,
+          "event_kind_from_link": "systemraekke",
+          "players_text_by_separator": [],
+          "linked_player_ids": [],
+          "point_text_by_separator": [
+            "1740 |",
+            "0 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 2,
+          "date_raw": "19-04-2026",
+          "date_inherited": "19-04-2026",
+          "title": "Nordsjælland U13 A",
+          "source_url": "/DBF/Turnering/VisResultater/#110036,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Lauritz Bruun Gejpel , Frederiksberg |"
+          ],
+          "linked_player_ids": [
+            "344759"
+          ],
+          "point_text_by_separator": [
+            "1736 |",
+            "1595 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 3,
+          "date_raw": null,
+          "date_inherited": "19-04-2026",
+          "title": "Nordsjælland U13 A",
+          "source_url": "/DBF/Turnering/VisResultater/#110036,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Birk Lund Dujardin , Hørsholm |"
+          ],
+          "linked_player_ids": [
+            "352483"
+          ],
+          "point_text_by_separator": [
+            "1736 |",
+            "1769 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 4,
+          "date_raw": "12-04-2026",
+          "date_inherited": "12-04-2026",
+          "title": "DMU Hold U13A 2+2 (6000) #506571",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,506571,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Elias Wissing , Drive |"
+          ],
+          "linked_player_ids": [
+            "338746"
+          ],
+          "point_text_by_separator": [
+            "1736 |",
+            "1949 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 5,
+          "date_raw": "11-04-2026",
+          "date_inherited": "11-04-2026",
+          "title": "DMU Hold U13A 2+2 (6000) #506563",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,506563,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Peter Quan Zhang , Skovshoved |"
+          ],
+          "linked_player_ids": [
+            "326708"
+          ],
+          "point_text_by_separator": [
+            "1736 |",
+            "1960 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 6,
+          "date_raw": "29-03-2026",
+          "date_inherited": "29-03-2026",
+          "title": "Badminton Danmark U13 A VICTOR DMU, U13A SKOVPARKHALLEN, Nyborg)",
+          "source_url": "/DBF/Turnering/VisResultater/#114852,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Jonathan Nørgaard , Hvidovre |"
+          ],
+          "linked_player_ids": [
+            "328651"
+          ],
+          "point_text_by_separator": [
+            "1677 |",
+            "1771 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 7,
+          "date_raw": null,
+          "date_inherited": "29-03-2026",
+          "title": "Badminton Danmark U13 A VICTOR DMU, U13A SKOVPARKHALLEN, Nyborg)",
+          "source_url": "/DBF/Turnering/VisResultater/#114852,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Holger Groth Jensen , Frederiksberg |"
+          ],
+          "linked_player_ids": [
+            "328653"
+          ],
+          "point_text_by_separator": [
+            "1677 |",
+            "1546 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 8,
+          "date_raw": null,
+          "date_inherited": "29-03-2026",
+          "title": "Badminton Danmark U13 A VICTOR DMU, U13A SKOVPARKHALLEN, Nyborg)",
+          "source_url": "/DBF/Turnering/VisResultater/#114852,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Ludvig Dohn , Viby J |"
+          ],
+          "linked_player_ids": [
+            "329754"
+          ],
+          "point_text_by_separator": [
+            "1677 |",
+            "1762 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 9,
+          "date_raw": null,
+          "date_inherited": "29-03-2026",
+          "title": "Badminton Danmark U13 A VICTOR DMU, U13A SKOVPARKHALLEN, Nyborg)",
+          "source_url": "/DBF/Turnering/VisResultater/#114852,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Elliot Byrialsen , Lyngby |"
+          ],
+          "linked_player_ids": [
+            "334313"
+          ],
+          "point_text_by_separator": [
+            "1677 |",
+            "1696 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 10,
+          "date_raw": null,
+          "date_inherited": "29-03-2026",
+          "title": "Badminton Danmark U13 A VICTOR DMU, U13A SKOVPARKHALLEN, Nyborg)",
+          "source_url": "/DBF/Turnering/VisResultater/#114852,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Askild Krogh Johannsen , Dybbøl |"
+          ],
+          "linked_player_ids": [
+            "339577"
+          ],
+          "point_text_by_separator": [
+            "1677 |",
+            "1557 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 11,
+          "date_raw": null,
+          "date_inherited": "29-03-2026",
+          "title": "Badminton Danmark U13 A VICTOR DMU, U13A SKOVPARKHALLEN, Nyborg)",
+          "source_url": "/DBF/Turnering/VisResultater/#114852,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Lauritz Riber Dalager , Morud |"
+          ],
+          "linked_player_ids": [
+            "340996"
+          ],
+          "point_text_by_separator": [
+            "1677 |",
+            "1570 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 12,
+          "date_raw": "01-03-2026",
+          "date_inherited": "01-03-2026",
+          "title": "Gladsaxe Søborg U13 A",
+          "source_url": "/DBF/Turnering/VisResultater/#111062,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "August Sletting Østerberg , KBK Kbh. |"
+          ],
+          "linked_player_ids": [
+            "330710"
+          ],
+          "point_text_by_separator": [
+            "1658 |",
+            "1650 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 13,
+          "date_raw": null,
+          "date_inherited": "01-03-2026",
+          "title": "Gladsaxe Søborg U13 A",
+          "source_url": "/DBF/Turnering/VisResultater/#111062,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Alfred Vilhelm Fogelstrøm , KMB2010 |"
+          ],
+          "linked_player_ids": [
+            "337982"
+          ],
+          "point_text_by_separator": [
+            "1658 |",
+            "1633 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 14,
+          "date_raw": null,
+          "date_inherited": "01-03-2026",
+          "title": "Gladsaxe Søborg U13 A",
+          "source_url": "/DBF/Turnering/VisResultater/#111062,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Leo Emilsson , Sverige |"
+          ],
+          "linked_player_ids": [
+            "359305"
+          ],
+          "point_text_by_separator": [
+            "1658 |",
+            "-10000 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 15,
+          "date_raw": "30-12-2025",
+          "date_inherited": "30-12-2025",
+          "title": "Solrød Strand U13 A",
+          "source_url": "/DBF/Turnering/VisResultater/#110159,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Johan Styrmer Teglbjærg , Hillerød |"
+          ],
+          "linked_player_ids": [
+            "335311"
+          ],
+          "point_text_by_separator": [
+            "1633 |",
+            "1536 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 16,
+          "date_raw": null,
+          "date_inherited": "30-12-2025",
+          "title": "Solrød Strand U13 A",
+          "source_url": "/DBF/Turnering/VisResultater/#110159,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Jonathan Nørgaard , Hvidovre |"
+          ],
+          "linked_player_ids": [
+            "328651"
+          ],
+          "point_text_by_separator": [
+            "1633 |",
+            "1757 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 17,
+          "date_raw": null,
+          "date_inherited": "30-12-2025",
+          "title": "Solrød Strand U13 A",
+          "source_url": "/DBF/Turnering/VisResultater/#110159,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Birk Lund Dujardin , Hørsholm |"
+          ],
+          "linked_player_ids": [
+            "352483"
+          ],
+          "point_text_by_separator": [
+            "1633 |",
+            "1610 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 18,
+          "date_raw": "03-12-2025",
+          "date_inherited": "03-12-2025",
+          "title": "Badminton København U13 M",
+          "source_url": "/DBF/Turnering/VisResultater/#114696,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Conrad Lercke , Gentofte |"
+          ],
+          "linked_player_ids": [
+            "327571"
+          ],
+          "point_text_by_separator": [
+            "1637 |",
+            "2222 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 19,
+          "date_raw": null,
+          "date_inherited": "03-12-2025",
+          "title": "Badminton København U13 M",
+          "source_url": "/DBF/Turnering/VisResultater/#114696,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Elias Wissing , Drive |"
+          ],
+          "linked_player_ids": [
+            "338746"
+          ],
+          "point_text_by_separator": [
+            "1637 |",
+            "1769 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 20,
+          "date_raw": "09-11-2025",
+          "date_inherited": "09-11-2025",
+          "title": "Holte U13 A",
+          "source_url": "/DBF/Turnering/VisResultater/#113358,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Vincent Christian Fjeldborg-Ørntoft , Hvidovre |"
+          ],
+          "linked_player_ids": [
+            "337756"
+          ],
+          "point_text_by_separator": [
+            "1648 |",
+            "1774 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 21,
+          "date_raw": null,
+          "date_inherited": "09-11-2025",
+          "title": "Holte U13 A",
+          "source_url": "/DBF/Turnering/VisResultater/#113358,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Ebbe Rieks-Andersen , KMB2010 |"
+          ],
+          "linked_player_ids": [
+            "335899"
+          ],
+          "point_text_by_separator": [
+            "1648 |",
+            "1476 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 22,
+          "date_raw": null,
+          "date_inherited": "09-11-2025",
+          "title": "Holte U13 A",
+          "source_url": "/DBF/Turnering/VisResultater/#113358,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Otto Myrhøj Draminsky , Lyngby |"
+          ],
+          "linked_player_ids": [
+            "338234"
+          ],
+          "point_text_by_separator": [
+            "1648 |",
+            "1539 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 23,
+          "date_raw": "26-10-2025",
+          "date_inherited": "26-10-2025",
+          "title": "U13 A, 6000 (2+2) #487893",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,487893,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Edward Wu , Lyngby |"
+          ],
+          "linked_player_ids": [
+            "338185"
+          ],
+          "point_text_by_separator": [
+            "1636 |",
+            "1566 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 24,
+          "date_raw": "18-10-2025",
+          "date_inherited": "18-10-2025",
+          "title": "Badminton Danmark U13 A VICTOR DENMARK JUNIOR (U13A Næsby)",
+          "source_url": "/DBF/Turnering/VisResultater/#114869,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Sigurd Dam Andersen , Viby J |"
+          ],
+          "linked_player_ids": [
+            "330039"
+          ],
+          "point_text_by_separator": [
+            "1627 |",
+            "1691 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 25,
+          "date_raw": null,
+          "date_inherited": "18-10-2025",
+          "title": "Badminton Danmark U13 A VICTOR DENMARK JUNIOR (U13A Næsby)",
+          "source_url": "/DBF/Turnering/VisResultater/#114869,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Viktor Kihlstrøm Nielsen , Solrød Strand |"
+          ],
+          "linked_player_ids": [
+            "330396"
+          ],
+          "point_text_by_separator": [
+            "1627 |",
+            "1637 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 26,
+          "date_raw": "28-09-2025",
+          "date_inherited": "28-09-2025",
+          "title": "Jyllinge U13 A",
+          "source_url": "/DBF/Turnering/VisResultater/#113338,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Afbud alle kategorier |"
+          ],
+          "linked_player_ids": [],
+          "point_text_by_separator": [
+            "1623 |",
+            "0 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 27,
+          "date_raw": null,
+          "date_inherited": "28-09-2025",
+          "title": "Jyllinge U13 A",
+          "source_url": "/DBF/Turnering/VisResultater/#113338,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Theodor Wolff Manniche , Lyngby |"
+          ],
+          "linked_player_ids": [
+            "338228"
+          ],
+          "point_text_by_separator": [
+            "1623 |",
+            "1558 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 28,
+          "date_raw": null,
+          "date_inherited": "28-09-2025",
+          "title": "Jyllinge U13 A",
+          "source_url": "/DBF/Turnering/VisResultater/#113338,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Theo Grosen , KBK Kbh. |"
+          ],
+          "linked_player_ids": [
+            "339164"
+          ],
+          "point_text_by_separator": [
+            "1623 |",
+            "1555 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 29,
+          "date_raw": "20-09-2025",
+          "date_inherited": "20-09-2025",
+          "title": "Uge 38 - U13 A, 6000 (2+2) #487679",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,487679,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "Jonathan Nørgaard , Hvidovre |"
+          ],
+          "linked_player_ids": [
+            "328651"
+          ],
+          "point_text_by_separator": [
+            "1619 |",
+            "1596 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 30,
+          "date_raw": null,
+          "date_inherited": "20-09-2025",
+          "title": "Uge 38 - U13 A, 6000 (2+2) #487676",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,487676,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Benjamin Hinge Carlsson |",
+            "William Denning Larsen , Solrød Strand |"
+          ],
+          "linked_player_ids": [
+            "335022"
+          ],
+          "point_text_by_separator": [
+            "1619 |",
+            "1547 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 31,
+          "date_raw": null,
+          "date_inherited": "20-09-2025",
+          "title": "",
+          "source_url": null,
+          "event_kind_from_link": "ukendt",
+          "players_text_by_separator": [],
+          "linked_player_ids": [],
+          "point_text_by_separator": [],
+          "extra_cell": ""
+        }
+      ],
+      "row_kinds": {
+        "systemraekke": 1,
+        "turnering": 24,
+        "holdkamp": 5,
+        "ukendt": 1
+      },
+      "min_date": "20-09-2025",
+      "max_date": "21-06-2026",
+      "calendar_years": [
+        2025,
+        2026
+      ],
+      "raw_response_sha256": "0f17059f92e2b4a37aeb676316825bcba5eacc318a24d954158006c1806bcd9f",
+      "source": "154-råsvar 010.gz"
+    },
+    {
+      "present": true,
+      "ranking_player_id": "330770",
+      "player_name": "Louis Valdemar Hedegaard Toftlund",
+      "ranking_list_id": 289,
+      "ranking_list_name": "double",
+      "detail_link_post_id": "8368727",
+      "season_id": 2025,
+      "headers": [
+        "Dato",
+        "Turnering/Holdkamp",
+        "Spillere",
+        "Point",
+        ""
+      ],
+      "row_count": 46,
+      "rows": [
+        {
+          "row_number": 1,
+          "date_raw": "21-06-2026",
+          "date_inherited": "21-06-2026",
+          "title": "Sæsonskifte",
+          "source_url": null,
+          "event_kind_from_link": "systemraekke",
+          "players_text_by_separator": [],
+          "linked_player_ids": [],
+          "point_text_by_separator": [
+            "1793 |",
+            "0 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 2,
+          "date_raw": "14-06-2026",
+          "date_inherited": "14-06-2026",
+          "title": "Taastrup BC U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#114044,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Ludvig Alexander Rosager Pedas , Gladsaxe Søborg |",
+            "Lucas Holm Madsen , Næstved-Herlufsholm | Casper Nielsen , Næstved-Herlufsholm |"
+          ],
+          "linked_player_ids": [
+            "327293",
+            "312484",
+            "325023"
+          ],
+          "point_text_by_separator": [
+            "1758 | 1714",
+            "1670 | 1544"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 3,
+          "date_raw": null,
+          "date_inherited": "14-06-2026",
+          "title": "Taastrup BC U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#114044,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Ludvig Alexander Rosager Pedas , Gladsaxe Søborg |",
+            "Frederik Thygesen Rasmussen , Dragør | Lucas Strikert Mikkelsen , Dragør |"
+          ],
+          "linked_player_ids": [
+            "327293",
+            "327447",
+            "337879"
+          ],
+          "point_text_by_separator": [
+            "1758 | 1714",
+            "1628 | 1718"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 4,
+          "date_raw": null,
+          "date_inherited": "14-06-2026",
+          "title": "Taastrup BC U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#114044,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Ludvig Alexander Rosager Pedas , Gladsaxe Søborg |",
+            "Simon Thofte , KBK Kbh. | Sakarias Thornild Berthelsen , Gladsaxe Søborg |"
+          ],
+          "linked_player_ids": [
+            "327293",
+            "331076",
+            "332981"
+          ],
+          "point_text_by_separator": [
+            "1758 | 1714",
+            "1675 | 1743"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 5,
+          "date_raw": "24-05-2026",
+          "date_inherited": "24-05-2026",
+          "title": "Birkerød BK13 U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#114703,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Ludvig Alexander Rosager Pedas , Gladsaxe Søborg |",
+            "Jacob Hartmann , Drive | Marius Carstens-Hawaleschka , FKIF Frederiksberg |"
+          ],
+          "linked_player_ids": [
+            "327293",
+            "321122",
+            "330789"
+          ],
+          "point_text_by_separator": [
+            "1745 | 1717",
+            "1661 | 1706"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 6,
+          "date_raw": null,
+          "date_inherited": "24-05-2026",
+          "title": "Birkerød BK13 U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#114703,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Ludvig Alexander Rosager Pedas , Gladsaxe Søborg |",
+            "Noam Eide Viebæk , Badminton Roskilde | Kasper Ma , Værløse |"
+          ],
+          "linked_player_ids": [
+            "327293",
+            "335963",
+            "336276"
+          ],
+          "point_text_by_separator": [
+            "1745 | 1717",
+            "1660 | 1714"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 7,
+          "date_raw": null,
+          "date_inherited": "24-05-2026",
+          "title": "Birkerød BK13 U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#114703,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Ludvig Alexander Rosager Pedas , Gladsaxe Søborg |",
+            "Frederik Thygesen Rasmussen , Dragør | Sebastian Mikkelsen , KMB2010 |"
+          ],
+          "linked_player_ids": [
+            "327293",
+            "327447",
+            "328526"
+          ],
+          "point_text_by_separator": [
+            "1745 | 1717",
+            "1586 | 1623"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 8,
+          "date_raw": "12-04-2026",
+          "date_inherited": "12-04-2026",
+          "title": "DMU Hold U15B (6400) - 4 Spillere #506729",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,506729,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Marius Steenstrup Leth-Espensen , Gladsaxe Søborg |",
+            "Sigurd Askaa Jakobsen , Birkerød BK13 | Alfred Lindgreen , Birkerød BK13 |"
+          ],
+          "linked_player_ids": [
+            "328191",
+            "335454",
+            "329565"
+          ],
+          "point_text_by_separator": [
+            "1736 | 1758",
+            "1537 | 1594"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 9,
+          "date_raw": "11-04-2026",
+          "date_inherited": "11-04-2026",
+          "title": "DMU Hold U15B (6400) - 4 Spillere #506126",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,506126,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Anna Rudolph , Gladsaxe Søborg |",
+            "Alexander Klausen , Karlslunde | Valdemar Rasmussen , Karlslunde |"
+          ],
+          "linked_player_ids": [
+            "328195",
+            "341406",
+            "335378"
+          ],
+          "point_text_by_separator": [
+            "1686 | 1444",
+            "1536 | 1613"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 10,
+          "date_raw": null,
+          "date_inherited": "11-04-2026",
+          "title": "DMU Hold U15B (6400) - 4 Spillere #506124",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,506124,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Anna Rudolph , Gladsaxe Søborg |",
+            "Simon Højer Villadsen , Svenstrup | Christian Emmersen , Svenstrup |"
+          ],
+          "linked_player_ids": [
+            "328195",
+            "325413",
+            "310180"
+          ],
+          "point_text_by_separator": [
+            "1686 | 1444",
+            "1723 | 1575"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 11,
+          "date_raw": null,
+          "date_inherited": "11-04-2026",
+          "title": "DMU Hold U15B (6400) - 4 Spillere #506122",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,506122,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Theodor Lumby Jessen , Gladsaxe Søborg |",
+            "Advan Gerzic , Herning | David Lægaard Bindslev , Herning |"
+          ],
+          "linked_player_ids": [
+            "327691",
+            "357183",
+            "344568"
+          ],
+          "point_text_by_separator": [
+            "1686 | 1560",
+            "1706 | 1620"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 12,
+          "date_raw": "29-03-2026",
+          "date_inherited": "29-03-2026",
+          "title": "Badminton Danmark U15 A VICTOR DMU, U15ABCD ØRBÆKHALLEN",
+          "source_url": "/DBF/Turnering/VisResultater/#114856,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Ludvig Alexander Rosager Pedas , Gladsaxe Søborg |",
+            "Linus Vyff Balslev Petersen , Badminton Esbjerg | Jonathan Larsen , Badminton Esbjerg |"
+          ],
+          "linked_player_ids": [
+            "327293",
+            "320207",
+            "329106"
+          ],
+          "point_text_by_separator": [
+            "1670 | 1657",
+            "1593 | 1710"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 13,
+          "date_raw": null,
+          "date_inherited": "29-03-2026",
+          "title": "Badminton Danmark U15 A VICTOR DMU, U15ABCD ØRBÆKHALLEN",
+          "source_url": "/DBF/Turnering/VisResultater/#114856,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Ludvig Alexander Rosager Pedas , Gladsaxe Søborg |",
+            "Viktor Skov , Vejle | Gustav Rasmussen , Vejle |"
+          ],
+          "linked_player_ids": [
+            "327293",
+            "327253",
+            "327279"
+          ],
+          "point_text_by_separator": [
+            "1670 | 1657",
+            "1616 | 1542"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 14,
+          "date_raw": null,
+          "date_inherited": "29-03-2026",
+          "title": "Badminton Danmark U15 A VICTOR DMU, U15ABCD ØRBÆKHALLEN",
+          "source_url": "/DBF/Turnering/VisResultater/#114856,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Ludvig Alexander Rosager Pedas , Gladsaxe Søborg |",
+            "Marius Carstens-Hawaleschka , FKIF Frederiksberg | Asbjørn Kyhnæb Gantzhorn , FKIF Frederiksberg |"
+          ],
+          "linked_player_ids": [
+            "327293",
+            "330789",
+            "330790"
+          ],
+          "point_text_by_separator": [
+            "1670 | 1657",
+            "1640 | 1631"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 15,
+          "date_raw": "22-03-2026",
+          "date_inherited": "22-03-2026",
+          "title": "U15 B 6400 (4 spillere) BD #493927",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,493927,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Theodor Lumby Jessen , Gladsaxe Søborg |",
+            "Axel Emil Fogelstrøm , KMB2010 | Emil Guan , Dragør |"
+          ],
+          "linked_player_ids": [
+            "327691",
+            "326824",
+            "322027"
+          ],
+          "point_text_by_separator": [
+            "1660 | 1564",
+            "1870 | 1729"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 16,
+          "date_raw": null,
+          "date_inherited": "22-03-2026",
+          "title": "U15 B 6400 (4 spillere) BD #493926",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,493926,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Theodor Lumby Jessen , Gladsaxe Søborg |",
+            "Jakob Eskild Weigaard Kyed , Frederiksberg | Holger Groth Jensen , Frederiksberg |"
+          ],
+          "linked_player_ids": [
+            "327691",
+            "343608",
+            "328653"
+          ],
+          "point_text_by_separator": [
+            "1660 | 1564",
+            "1495 | 1457"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 17,
+          "date_raw": "01-03-2026",
+          "date_inherited": "01-03-2026",
+          "title": "Gladsaxe Søborg U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#111064,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Sylvester Østberg , Gladsaxe Søborg |",
+            "Axel Emil Fogelstrøm , KMB2010 | Christian Yu cheng , KMB2010 |"
+          ],
+          "linked_player_ids": [
+            "337789",
+            "326824",
+            "336121"
+          ],
+          "point_text_by_separator": [
+            "1655 | 1619",
+            "1814 | 1746"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 18,
+          "date_raw": null,
+          "date_inherited": "01-03-2026",
+          "title": "Gladsaxe Søborg U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#111064,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Sylvester Østberg , Gladsaxe Søborg |",
+            "Christian Hansen-Hersnap , Islands Brygge | Nelas de Montgomery Nørgård , Islands Brygge |"
+          ],
+          "linked_player_ids": [
+            "337789",
+            "330668",
+            "335590"
+          ],
+          "point_text_by_separator": [
+            "1655 | 1619",
+            "1535 | 1378"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 19,
+          "date_raw": "21-02-2026",
+          "date_inherited": "21-02-2026",
+          "title": "U15 B 6400 (4 spillere) BD #493917",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,493917,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Sylvester Østberg , Gladsaxe Søborg |",
+            "Karl August Bøje Kristensen , Skovshoved | Carl Roger Mortensen , Skovshoved |"
+          ],
+          "linked_player_ids": [
+            "337789",
+            "334292",
+            "328599"
+          ],
+          "point_text_by_separator": [
+            "1635 | 1599",
+            "1444 | 1437"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 20,
+          "date_raw": null,
+          "date_inherited": "21-02-2026",
+          "title": "U15 B 6400 (4 spillere) BD #493915",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,493915,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Sylvester Østberg , Gladsaxe Søborg |",
+            "Lucas Strikert Mikkelsen , Dragør | Frederik Thygesen Rasmussen , Dragør |"
+          ],
+          "linked_player_ids": [
+            "337789",
+            "337879",
+            "327447"
+          ],
+          "point_text_by_separator": [
+            "1635 | 1599",
+            "1578 | 1504"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 21,
+          "date_raw": "18-01-2026",
+          "date_inherited": "18-01-2026",
+          "title": "Nykøbing F U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#110259,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Sylvester Østberg , Gladsaxe Søborg |",
+            "Simon Juul Windahl , Valby BC | Bertram Vilhelm Arnskjold Kragh , Valby BC |"
+          ],
+          "linked_player_ids": [
+            "337789",
+            "326218",
+            "329145"
+          ],
+          "point_text_by_separator": [
+            "1623 | 1587",
+            "1616 | 1667"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 22,
+          "date_raw": null,
+          "date_inherited": "18-01-2026",
+          "title": "Nykøbing F U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#110259,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Sylvester Østberg , Gladsaxe Søborg |",
+            "Axel Emil Fogelstrøm , KMB2010 | Christian Yu cheng , KMB2010 |"
+          ],
+          "linked_player_ids": [
+            "337789",
+            "326824",
+            "336121"
+          ],
+          "point_text_by_separator": [
+            "1623 | 1587",
+            "1809 | 1725"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 23,
+          "date_raw": "11-01-2026",
+          "date_inherited": "11-01-2026",
+          "title": "U15 A, 6800 (2+2) #487801",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,487801,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Marius Steenstrup Leth-Espensen , Gladsaxe Søborg |",
+            "Malte Mejlstrup Jensen , Slagelse | Jacob Alban Rostkjær , Skælskør |"
+          ],
+          "linked_player_ids": [
+            "328191",
+            "352119",
+            "329338"
+          ],
+          "point_text_by_separator": [
+            "1615 | 1634",
+            "1313 | 1450"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 24,
+          "date_raw": "04-01-2026",
+          "date_inherited": "04-01-2026",
+          "title": "Gentofte U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#112437,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Sylvester Østberg , Gladsaxe Søborg |",
+            "Alfred Eskildsen , Gentofte | Sakarias Thornild Berthelsen , Gladsaxe Søborg |"
+          ],
+          "linked_player_ids": [
+            "337789",
+            "326660",
+            "332981"
+          ],
+          "point_text_by_separator": [
+            "1613 | 1563",
+            "1501 | 1633"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 25,
+          "date_raw": null,
+          "date_inherited": "04-01-2026",
+          "title": "Gentofte U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#112437,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Sylvester Østberg , Gladsaxe Søborg |",
+            "Axel Emil Fogelstrøm , KMB2010 | Christian Yu cheng , KMB2010 |"
+          ],
+          "linked_player_ids": [
+            "337789",
+            "326824",
+            "336121"
+          ],
+          "point_text_by_separator": [
+            "1613 | 1563",
+            "1781 | 1707"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 26,
+          "date_raw": null,
+          "date_inherited": "04-01-2026",
+          "title": "Gentofte U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#112437,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Sylvester Østberg , Gladsaxe Søborg |",
+            "Malthe Wetke F. Hallgren , Værløse | Matti Wandahl , Værløse |"
+          ],
+          "linked_player_ids": [
+            "337789",
+            "332900",
+            "335808"
+          ],
+          "point_text_by_separator": [
+            "1613 | 1563",
+            "1677 | 1524"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 27,
+          "date_raw": "07-12-2025",
+          "date_inherited": "07-12-2025",
+          "title": "U15 B 6400 (4 spillere) BD #493897",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,493897,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Sylvester Østberg , Gladsaxe Søborg |",
+            "Bastian Bæk-Sørensen , Værløse | Gustav Westergaard Clausen , FKIF Frederiksberg |"
+          ],
+          "linked_player_ids": [
+            "337789",
+            "332673",
+            "322454"
+          ],
+          "point_text_by_separator": [
+            "1600 | 1550",
+            "1558 | 1515"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 28,
+          "date_raw": "30-11-2025",
+          "date_inherited": "30-11-2025",
+          "title": "Badminton København U15 A KMU 2025",
+          "source_url": "/DBF/Turnering/VisResultater/#109858,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Ludvig Alexander Rosager Pedas , Gladsaxe Søborg |",
+            "Jacob Hartmann , Drive | Andreas Laubjerg Daugaard , Drive |"
+          ],
+          "linked_player_ids": [
+            "327293",
+            "321122",
+            "328168"
+          ],
+          "point_text_by_separator": [
+            "1562 | 1603",
+            "1560 | 1810"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 29,
+          "date_raw": null,
+          "date_inherited": "30-11-2025",
+          "title": "Badminton København U15 A KMU 2025",
+          "source_url": "/DBF/Turnering/VisResultater/#109858,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Ludvig Alexander Rosager Pedas , Gladsaxe Søborg |",
+            "Axel Emil Fogelstrøm , KMB2010 | Christian Yu cheng , KMB2010 |"
+          ],
+          "linked_player_ids": [
+            "327293",
+            "326824",
+            "336121"
+          ],
+          "point_text_by_separator": [
+            "1562 | 1603",
+            "1710 | 1636"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 30,
+          "date_raw": null,
+          "date_inherited": "30-11-2025",
+          "title": "Badminton København U15 A KMU 2025",
+          "source_url": "/DBF/Turnering/VisResultater/#109858,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Ludvig Alexander Rosager Pedas , Gladsaxe Søborg |",
+            "Simon Juul Windahl , Valby BC | Niels Albert Weigaard Kyed , Frederiksberg |"
+          ],
+          "linked_player_ids": [
+            "327293",
+            "326218",
+            "343260"
+          ],
+          "point_text_by_separator": [
+            "1562 | 1603",
+            "1571 | 1463"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 31,
+          "date_raw": null,
+          "date_inherited": "30-11-2025",
+          "title": "Badminton København U15 A KMU 2025",
+          "source_url": "/DBF/Turnering/VisResultater/#109858,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Ludvig Alexander Rosager Pedas , Gladsaxe Søborg |",
+            "Christian Hansen-Hersnap , Islands Brygge | Nelas de Montgomery Nørgård , Islands Brygge |"
+          ],
+          "linked_player_ids": [
+            "327293",
+            "330668",
+            "335590"
+          ],
+          "point_text_by_separator": [
+            "1562 | 1603",
+            "1512 | 1323"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 32,
+          "date_raw": "02-11-2025",
+          "date_inherited": "02-11-2025",
+          "title": "Slagelse U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#111119,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Sylvester Østberg , Gladsaxe Søborg |",
+            "Piet Saunte , Skovshoved | Julian Valentin Wallin , Skovshoved |"
+          ],
+          "linked_player_ids": [
+            "337789",
+            "319977",
+            "350792"
+          ],
+          "point_text_by_separator": [
+            "1554 | 1542",
+            "1542 | 1687"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 33,
+          "date_raw": null,
+          "date_inherited": "02-11-2025",
+          "title": "Slagelse U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#111119,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Sylvester Østberg , Gladsaxe Søborg |",
+            "Hjalte Elias Petersen , Badminton Roskilde | Villum Devantier Sjøholm , Badminton Roskilde |"
+          ],
+          "linked_player_ids": [
+            "337789",
+            "324779",
+            "332159"
+          ],
+          "point_text_by_separator": [
+            "1554 | 1542",
+            "1539 | 1497"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 34,
+          "date_raw": "05-10-2025",
+          "date_inherited": "05-10-2025",
+          "title": "Skalborg SK U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#110600,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Sylvester Østberg , Gladsaxe Søborg |",
+            "Alexander Aagaard , Herning | Mathias Pedersen , Herning |"
+          ],
+          "linked_player_ids": [
+            "337789",
+            "320420",
+            "320421"
+          ],
+          "point_text_by_separator": [
+            "1535 | 1523",
+            "1624 | 1627"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 35,
+          "date_raw": null,
+          "date_inherited": "05-10-2025",
+          "title": "Skalborg SK U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#110600,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Sylvester Østberg , Gladsaxe Søborg |",
+            "Marius Johansen , Hjørring | Villads Bornebusch Petersen , Svenstrup |"
+          ],
+          "linked_player_ids": [
+            "337789",
+            "331847",
+            "333159"
+          ],
+          "point_text_by_separator": [
+            "1535 | 1523",
+            "1828 | 1579"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 36,
+          "date_raw": "20-09-2025",
+          "date_inherited": "20-09-2025",
+          "title": "Uge 38 - U13 A, 6000 (2+2) #487679",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,487679,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Benjamin Hinge Carlsson , Gladsaxe Søborg |",
+            "Lucas Zheng , Hvidovre | Jonathan Nørgaard , Hvidovre |"
+          ],
+          "linked_player_ids": [
+            "330650",
+            "345642",
+            "328651"
+          ],
+          "point_text_by_separator": [
+            "1515 | 1565",
+            "1445 | 1426"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 37,
+          "date_raw": null,
+          "date_inherited": "20-09-2025",
+          "title": "Uge 38 - U13 A, 6000 (2+2) #487676",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,487676,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Benjamin Hinge Carlsson , Gladsaxe Søborg |",
+            "Sebastian Lundberg , Solrød Strand | William Denning Larsen , Solrød Strand |"
+          ],
+          "linked_player_ids": [
+            "330650",
+            "336397",
+            "335022"
+          ],
+          "point_text_by_separator": [
+            "1515 | 1565",
+            "1445 | 1411"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 38,
+          "date_raw": "07-09-2025",
+          "date_inherited": "07-09-2025",
+          "title": "Dalum Hjallese BK U15 B",
+          "source_url": "/DBF/Turnering/VisResultater/#110275,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Sylvester Østberg , Gladsaxe Søborg |",
+            "Andreas Bobjerg , Dalum Hjallese BK | Elias Rosenbæk , Dalum Hjallese BK |"
+          ],
+          "linked_player_ids": [
+            "337789",
+            "314938",
+            "328706"
+          ],
+          "point_text_by_separator": [
+            "1447 | 1455",
+            "1543 | 1654"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 39,
+          "date_raw": null,
+          "date_inherited": "07-09-2025",
+          "title": "Dalum Hjallese BK U15 B",
+          "source_url": "/DBF/Turnering/VisResultater/#110275,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Sylvester Østberg , Gladsaxe Søborg |",
+            "ELVIN JERSHOM KANNAIYAN RAJKUMAR , Ulkebøl | Jens Kaastrup Pind , Ulkebøl |"
+          ],
+          "linked_player_ids": [
+            "337789",
+            "322302",
+            "336925"
+          ],
+          "point_text_by_separator": [
+            "1447 | 1455",
+            "1529 | 1470"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 40,
+          "date_raw": null,
+          "date_inherited": "07-09-2025",
+          "title": "Dalum Hjallese BK U15 B",
+          "source_url": "/DBF/Turnering/VisResultater/#110275,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Sylvester Østberg , Gladsaxe Søborg |",
+            "Marius Birkelund Jørgensen , Dalum Hjallese BK | Jakob Obling , Dalum Hjallese BK |"
+          ],
+          "linked_player_ids": [
+            "337789",
+            "323658",
+            "333236"
+          ],
+          "point_text_by_separator": [
+            "1447 | 1455",
+            "1506 | 1457"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 41,
+          "date_raw": null,
+          "date_inherited": "07-09-2025",
+          "title": "Dalum Hjallese BK U15 B",
+          "source_url": "/DBF/Turnering/VisResultater/#110275,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Sylvester Østberg , Gladsaxe Søborg |",
+            "Nor Hoffmann Larsen , Kullerup/Refsvindinge | Sofus Skøtt , Dalum Hjallese BK |"
+          ],
+          "linked_player_ids": [
+            "337789",
+            "323791",
+            "328701"
+          ],
+          "point_text_by_separator": [
+            "1447 | 1455",
+            "1397 | 1480"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 42,
+          "date_raw": "24-08-2025",
+          "date_inherited": "24-08-2025",
+          "title": "Nr. Lyndelse U15 B",
+          "source_url": "/DBF/Turnering/VisResultater/#113724,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Sofus Skøtt , Dalum Hjallese BK |",
+            "Afbud alle kategorier | Afbud alle kategorier |"
+          ],
+          "linked_player_ids": [
+            "328701"
+          ],
+          "point_text_by_separator": [
+            "1413 | 1446",
+            "0 | 0"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 43,
+          "date_raw": null,
+          "date_inherited": "24-08-2025",
+          "title": "Nr. Lyndelse U15 B",
+          "source_url": "/DBF/Turnering/VisResultater/#113724,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Sofus Skøtt , Dalum Hjallese BK |",
+            "Andreas Bobjerg , Dalum Hjallese BK | Elias Rosenbæk , Dalum Hjallese BK |"
+          ],
+          "linked_player_ids": [
+            "328701",
+            "314938",
+            "328706"
+          ],
+          "point_text_by_separator": [
+            "1413 | 1446",
+            "1503 | 1614"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 44,
+          "date_raw": null,
+          "date_inherited": "24-08-2025",
+          "title": "Nr. Lyndelse U15 B",
+          "source_url": "/DBF/Turnering/VisResultater/#113724,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Sofus Skøtt , Dalum Hjallese BK |",
+            "Asger Mortensen , Nr. Lyndelse | Nicklas Bisgaard , Nr. Lyndelse |"
+          ],
+          "linked_player_ids": [
+            "328701",
+            "319826",
+            "327537"
+          ],
+          "point_text_by_separator": [
+            "1413 | 1446",
+            "1492 | 1504"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 45,
+          "date_raw": null,
+          "date_inherited": "24-08-2025",
+          "title": "Nr. Lyndelse U15 B",
+          "source_url": "/DBF/Turnering/VisResultater/#113724,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Louis Valdemar Hedegaard Toftlund | Sofus Skøtt , Dalum Hjallese BK |",
+            "Marius Bruun Westermark , Tarup-Pårup | Silas Dyrendal Rosenlund , Tarup-Pårup |"
+          ],
+          "linked_player_ids": [
+            "328701",
+            "319870",
+            "334186"
+          ],
+          "point_text_by_separator": [
+            "1413 | 1446",
+            "1485 | 1471"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 46,
+          "date_raw": null,
+          "date_inherited": "24-08-2025",
+          "title": "",
+          "source_url": null,
+          "event_kind_from_link": "ukendt",
+          "players_text_by_separator": [],
+          "linked_player_ids": [],
+          "point_text_by_separator": [],
+          "extra_cell": ""
+        }
+      ],
+      "row_kinds": {
+        "systemraekke": 1,
+        "turnering": 32,
+        "holdkamp": 12,
+        "ukendt": 1
+      },
+      "min_date": "24-08-2025",
+      "max_date": "21-06-2026",
+      "calendar_years": [
+        2025,
+        2026
+      ],
+      "raw_response_sha256": "c09f4eab074e09af9509c4e0510b61fad69b22a15fc9bfc34f6bda2f0711c0e3",
+      "source": "154-råsvar 011.gz"
+    },
+    {
+      "present": true,
+      "ranking_player_id": "327691",
+      "player_name": "Theodor Lumby Jessen",
+      "ranking_list_id": 288,
+      "ranking_list_name": "single",
+      "detail_link_post_id": "8327268",
+      "season_id": 2025,
+      "headers": [
+        "Dato",
+        "Turnering/Holdkamp",
+        "Spillere",
+        "Point",
+        ""
+      ],
+      "row_count": 63,
+      "rows": [
+        {
+          "row_number": 1,
+          "date_raw": "21-06-2026",
+          "date_inherited": "21-06-2026",
+          "title": "Sæsonskifte",
+          "source_url": null,
+          "event_kind_from_link": "systemraekke",
+          "players_text_by_separator": [],
+          "linked_player_ids": [],
+          "point_text_by_separator": [
+            "1859 |",
+            "0 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 2,
+          "date_raw": "14-06-2026",
+          "date_inherited": "14-06-2026",
+          "title": "Taastrup BC U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#114044,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Einar Martensen , Holbæk |"
+          ],
+          "linked_player_ids": [
+            "304907"
+          ],
+          "point_text_by_separator": [
+            "1845 |",
+            "1873 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 3,
+          "date_raw": null,
+          "date_inherited": "14-06-2026",
+          "title": "Taastrup BC U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#114044,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Alexander Vedel Nielsen , Lyngby |"
+          ],
+          "linked_player_ids": [
+            "320646"
+          ],
+          "point_text_by_separator": [
+            "1845 |",
+            "1968 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 4,
+          "date_raw": null,
+          "date_inherited": "14-06-2026",
+          "title": "Taastrup BC U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#114044,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Casper Nielsen , Næstved-Herlufsholm |"
+          ],
+          "linked_player_ids": [
+            "325023"
+          ],
+          "point_text_by_separator": [
+            "1845 |",
+            "1825 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 5,
+          "date_raw": null,
+          "date_inherited": "14-06-2026",
+          "title": "Taastrup BC U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#114044,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Sihan Lei , Taastrup BC |"
+          ],
+          "linked_player_ids": [
+            "334019"
+          ],
+          "point_text_by_separator": [
+            "1845 |",
+            "1697 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 6,
+          "date_raw": "07-06-2026",
+          "date_inherited": "07-06-2026",
+          "title": "Storstrømmen U15 A Storstrømmen (Tune)",
+          "source_url": "/DBF/Turnering/VisResultater/#110977,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Casper Nielsen , Næstved-Herlufsholm |"
+          ],
+          "linked_player_ids": [
+            "325023"
+          ],
+          "point_text_by_separator": [
+            "1841 |",
+            "1803 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 7,
+          "date_raw": null,
+          "date_inherited": "07-06-2026",
+          "title": "Storstrømmen U15 A Storstrømmen (Tune)",
+          "source_url": "/DBF/Turnering/VisResultater/#110977,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Sebastian Mikkelsen , KMB2010 |"
+          ],
+          "linked_player_ids": [
+            "328526"
+          ],
+          "point_text_by_separator": [
+            "1841 |",
+            "1791 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 8,
+          "date_raw": null,
+          "date_inherited": "07-06-2026",
+          "title": "Storstrømmen U15 A Storstrømmen (Tune)",
+          "source_url": "/DBF/Turnering/VisResultater/#110977,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Steffen Hanyang Zhang , Gentofte |"
+          ],
+          "linked_player_ids": [
+            "320640"
+          ],
+          "point_text_by_separator": [
+            "1841 |",
+            "1811 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 9,
+          "date_raw": null,
+          "date_inherited": "07-06-2026",
+          "title": "Storstrømmen U15 A Storstrømmen (Tune)",
+          "source_url": "/DBF/Turnering/VisResultater/#110977,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Villads Vinkel Blankenstejner , Tune |"
+          ],
+          "linked_player_ids": [
+            "333330"
+          ],
+          "point_text_by_separator": [
+            "1841 |",
+            "1810 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 10,
+          "date_raw": "24-05-2026",
+          "date_inherited": "24-05-2026",
+          "title": "Birkerød BK13 U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#114703,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Theodor Ljungberg Pedersen , Badminton Roskilde |"
+          ],
+          "linked_player_ids": [
+            "317857"
+          ],
+          "point_text_by_separator": [
+            "1825 |",
+            "1691 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 11,
+          "date_raw": null,
+          "date_inherited": "24-05-2026",
+          "title": "Birkerød BK13 U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#114703,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Julius Tolsøe , Hørsholm |"
+          ],
+          "linked_player_ids": [
+            "320930"
+          ],
+          "point_text_by_separator": [
+            "1825 |",
+            "1681 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 12,
+          "date_raw": null,
+          "date_inherited": "24-05-2026",
+          "title": "Birkerød BK13 U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#114703,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Kasper Ma , Værløse |"
+          ],
+          "linked_player_ids": [
+            "336276"
+          ],
+          "point_text_by_separator": [
+            "1825 |",
+            "1941 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 13,
+          "date_raw": "17-05-2026",
+          "date_inherited": "17-05-2026",
+          "title": "Farum U15 A Farum: Specielle tilmeldingsbetingelser",
+          "source_url": "/DBF/Turnering/VisResultater/#112484,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Asbjørn Kyhnæb Gantzhorn , FKIF Frederiksberg |"
+          ],
+          "linked_player_ids": [
+            "330790"
+          ],
+          "point_text_by_separator": [
+            "1805 |",
+            "1713 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 14,
+          "date_raw": null,
+          "date_inherited": "17-05-2026",
+          "title": "Farum U15 A Farum: Specielle tilmeldingsbetingelser",
+          "source_url": "/DBF/Turnering/VisResultater/#112484,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Felix Færch-Keldsen , Skovshoved |"
+          ],
+          "linked_player_ids": [
+            "331747"
+          ],
+          "point_text_by_separator": [
+            "1805 |",
+            "1904 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 15,
+          "date_raw": null,
+          "date_inherited": "17-05-2026",
+          "title": "Farum U15 A Farum: Specielle tilmeldingsbetingelser",
+          "source_url": "/DBF/Turnering/VisResultater/#112484,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Hákun Thorkildshøj , Færøerne |"
+          ],
+          "linked_player_ids": [
+            "336773"
+          ],
+          "point_text_by_separator": [
+            "1805 |",
+            "-10000 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 16,
+          "date_raw": "12-04-2026",
+          "date_inherited": "12-04-2026",
+          "title": "DMU Hold U15B (6400) - 4 Spillere #506730",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,506730,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Sigfred Bammeskov , Højbjerg |"
+          ],
+          "linked_player_ids": [
+            "307595"
+          ],
+          "point_text_by_separator": [
+            "1825 |",
+            "1827 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 17,
+          "date_raw": null,
+          "date_inherited": "12-04-2026",
+          "title": "DMU Hold U15B (6400) - 4 Spillere #506729",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,506729,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Oscar Gethmann , Sportsefterskolen SINE |"
+          ],
+          "linked_player_ids": [
+            "324921"
+          ],
+          "point_text_by_separator": [
+            "1825 |",
+            "1736 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 18,
+          "date_raw": "11-04-2026",
+          "date_inherited": "11-04-2026",
+          "title": "DMU Hold U15B (6400) - 4 Spillere #506122",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,506122,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Emil Kristian Eg , Herning |"
+          ],
+          "linked_player_ids": [
+            "340939"
+          ],
+          "point_text_by_separator": [
+            "1813 |",
+            "1747 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 19,
+          "date_raw": "06-04-2026",
+          "date_inherited": "06-04-2026",
+          "title": "Solrød Strand U15 A Påsketurnering i Havdrup",
+          "source_url": "/DBF/Turnering/VisResultater/#110210,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Lucas Holm Madsen , Næstved-Herlufsholm |"
+          ],
+          "linked_player_ids": [
+            "312484"
+          ],
+          "point_text_by_separator": [
+            "1808 |",
+            "1883 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 20,
+          "date_raw": null,
+          "date_inherited": "06-04-2026",
+          "title": "Solrød Strand U15 A Påsketurnering i Havdrup",
+          "source_url": "/DBF/Turnering/VisResultater/#110210,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Asbjørn Kyhnæb Gantzhorn , FKIF Frederiksberg |"
+          ],
+          "linked_player_ids": [
+            "330790"
+          ],
+          "point_text_by_separator": [
+            "1808 |",
+            "1703 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 21,
+          "date_raw": "29-03-2026",
+          "date_inherited": "29-03-2026",
+          "title": "Badminton Danmark U15 A VICTOR DMU, U15ABCD ØRBÆKHALLEN",
+          "source_url": "/DBF/Turnering/VisResultater/#114856,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Andreas Bobjerg , Dalum Hjallese BK |"
+          ],
+          "linked_player_ids": [
+            "314938"
+          ],
+          "point_text_by_separator": [
+            "1788 |",
+            "1719 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 22,
+          "date_raw": null,
+          "date_inherited": "29-03-2026",
+          "title": "Badminton Danmark U15 A VICTOR DMU, U15ABCD ØRBÆKHALLEN",
+          "source_url": "/DBF/Turnering/VisResultater/#114856,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Marius Bruun Westermark , Tarup-Pårup |"
+          ],
+          "linked_player_ids": [
+            "319870"
+          ],
+          "point_text_by_separator": [
+            "1788 |",
+            "1729 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 23,
+          "date_raw": null,
+          "date_inherited": "29-03-2026",
+          "title": "Badminton Danmark U15 A VICTOR DMU, U15ABCD ØRBÆKHALLEN",
+          "source_url": "/DBF/Turnering/VisResultater/#114856,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Noam Eide Viebæk , Badminton Roskilde |"
+          ],
+          "linked_player_ids": [
+            "335963"
+          ],
+          "point_text_by_separator": [
+            "1788 |",
+            "1956 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 24,
+          "date_raw": "22-03-2026",
+          "date_inherited": "22-03-2026",
+          "title": "U15 B 6400 (4 spillere) BD #493927",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,493927,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Axel Emil Fogelstrøm , KMB2010 |"
+          ],
+          "linked_player_ids": [
+            "326824"
+          ],
+          "point_text_by_separator": [
+            "1781 |",
+            "1920 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 25,
+          "date_raw": null,
+          "date_inherited": "22-03-2026",
+          "title": "U15 B 6400 (4 spillere) BD #493926",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,493926,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Niels Albert Weigaard Kyed , Frederiksberg |"
+          ],
+          "linked_player_ids": [
+            "343260"
+          ],
+          "point_text_by_separator": [
+            "1781 |",
+            "1690 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 26,
+          "date_raw": "15-03-2026",
+          "date_inherited": "15-03-2026",
+          "title": "Drive U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#114283,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Lucas Holm Madsen , Næstved-Herlufsholm |"
+          ],
+          "linked_player_ids": [
+            "312484"
+          ],
+          "point_text_by_separator": [
+            "1773 |",
+            "1865 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 27,
+          "date_raw": null,
+          "date_inherited": "15-03-2026",
+          "title": "Drive U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#114283,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Sebastian Mikkelsen , KMB2010 |"
+          ],
+          "linked_player_ids": [
+            "328526"
+          ],
+          "point_text_by_separator": [
+            "1773 |",
+            "1738 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 28,
+          "date_raw": "01-03-2026",
+          "date_inherited": "01-03-2026",
+          "title": "Gladsaxe Søborg U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#111064,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Aksel Trantow , KMB2010 |"
+          ],
+          "linked_player_ids": [
+            "309995"
+          ],
+          "point_text_by_separator": [
+            "1747 |",
+            "1823 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 29,
+          "date_raw": null,
+          "date_inherited": "01-03-2026",
+          "title": "Gladsaxe Søborg U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#111064,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Axel Emil Fogelstrøm , KMB2010 |"
+          ],
+          "linked_player_ids": [
+            "326824"
+          ],
+          "point_text_by_separator": [
+            "1747 |",
+            "1832 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 30,
+          "date_raw": null,
+          "date_inherited": "01-03-2026",
+          "title": "Gladsaxe Søborg U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#111064,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Christian Yu cheng , KMB2010 |"
+          ],
+          "linked_player_ids": [
+            "336121"
+          ],
+          "point_text_by_separator": [
+            "1747 |",
+            "1994 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 31,
+          "date_raw": null,
+          "date_inherited": "01-03-2026",
+          "title": "Gladsaxe Søborg U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#111064,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Alexander Klausen , Karlslunde |"
+          ],
+          "linked_player_ids": [
+            "341406"
+          ],
+          "point_text_by_separator": [
+            "1747 |",
+            "1641 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 32,
+          "date_raw": "21-02-2026",
+          "date_inherited": "21-02-2026",
+          "title": "U15 B 6400 (4 spillere) BD #493917",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,493917,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Karl August Bøje Kristensen , Skovshoved |"
+          ],
+          "linked_player_ids": [
+            "334292"
+          ],
+          "point_text_by_separator": [
+            "1727 |",
+            "1474 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 33,
+          "date_raw": null,
+          "date_inherited": "21-02-2026",
+          "title": "U15 B 6400 (4 spillere) BD #493915",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,493915,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Lucas Strikert Mikkelsen , Dragør |"
+          ],
+          "linked_player_ids": [
+            "337879"
+          ],
+          "point_text_by_separator": [
+            "1727 |",
+            "1678 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 34,
+          "date_raw": "18-01-2026",
+          "date_inherited": "18-01-2026",
+          "title": "Nykøbing F U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#110259,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Matti Wandahl , Værløse |"
+          ],
+          "linked_player_ids": [
+            "335808"
+          ],
+          "point_text_by_separator": [
+            "1719 |",
+            "1678 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 35,
+          "date_raw": null,
+          "date_inherited": "18-01-2026",
+          "title": "Nykøbing F U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#110259,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Noah Ellesøe , Solrød Strand |"
+          ],
+          "linked_player_ids": [
+            "329024"
+          ],
+          "point_text_by_separator": [
+            "1719 |",
+            "1958 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 36,
+          "date_raw": null,
+          "date_inherited": "18-01-2026",
+          "title": "Nykøbing F U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#110259,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Bertram Vilhelm Arnskjold Kragh , Valby BC |"
+          ],
+          "linked_player_ids": [
+            "329145"
+          ],
+          "point_text_by_separator": [
+            "1719 |",
+            "1797 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 37,
+          "date_raw": "11-01-2026",
+          "date_inherited": "11-01-2026",
+          "title": "U15 B 6400 (4 spillere) BD #493907",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,493907,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Niels Aggernæs , BC37 Amager |"
+          ],
+          "linked_player_ids": [
+            "333170"
+          ],
+          "point_text_by_separator": [
+            "1696 |",
+            "1523 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 38,
+          "date_raw": null,
+          "date_inherited": "11-01-2026",
+          "title": "U15 B 6400 (4 spillere) BD #493905",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,493905,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Valdemar Nørgaard , Vanløse |"
+          ],
+          "linked_player_ids": [
+            "325970"
+          ],
+          "point_text_by_separator": [
+            "1696 |",
+            "1686 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 39,
+          "date_raw": "14-12-2025",
+          "date_inherited": "14-12-2025",
+          "title": "Helsinge U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#110877,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Gustav Villads Jensen , Drive |"
+          ],
+          "linked_player_ids": [
+            "321068"
+          ],
+          "point_text_by_separator": [
+            "1712 |",
+            "2019 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 40,
+          "date_raw": null,
+          "date_inherited": "14-12-2025",
+          "title": "Helsinge U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#110877,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Hjalte Elias Petersen , Badminton Roskilde |"
+          ],
+          "linked_player_ids": [
+            "324779"
+          ],
+          "point_text_by_separator": [
+            "1712 |",
+            "1589 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 41,
+          "date_raw": "07-12-2025",
+          "date_inherited": "07-12-2025",
+          "title": "U15 B 6400 (4 spillere) BD #493897",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,493897,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Marius Carstens-Hawaleschka , FKIF Frederiksberg |"
+          ],
+          "linked_player_ids": [
+            "330789"
+          ],
+          "point_text_by_separator": [
+            "1728 |",
+            "1580 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 42,
+          "date_raw": "30-11-2025",
+          "date_inherited": "30-11-2025",
+          "title": "Badminton København U15 A KMU 2025",
+          "source_url": "/DBF/Turnering/VisResultater/#109858,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Sebastian Mikkelsen , KMB2010 |"
+          ],
+          "linked_player_ids": [
+            "328526"
+          ],
+          "point_text_by_separator": [
+            "1700 |",
+            "1718 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 43,
+          "date_raw": null,
+          "date_inherited": "30-11-2025",
+          "title": "Badminton København U15 A KMU 2025",
+          "source_url": "/DBF/Turnering/VisResultater/#109858,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Carl Roger Mortensen , Skovshoved |"
+          ],
+          "linked_player_ids": [
+            "328599"
+          ],
+          "point_text_by_separator": [
+            "1700 |",
+            "1688 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 44,
+          "date_raw": null,
+          "date_inherited": "30-11-2025",
+          "title": "Badminton København U15 A KMU 2025",
+          "source_url": "/DBF/Turnering/VisResultater/#109858,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Patrick Olsen , Drive |"
+          ],
+          "linked_player_ids": [
+            "345665"
+          ],
+          "point_text_by_separator": [
+            "1700 |",
+            "1905 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 45,
+          "date_raw": "23-11-2025",
+          "date_inherited": "23-11-2025",
+          "title": "Aabenraa U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#114501,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Simon Thofte , KBK Kbh. |"
+          ],
+          "linked_player_ids": [
+            "331076"
+          ],
+          "point_text_by_separator": [
+            "1657 |",
+            "1775 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 46,
+          "date_raw": null,
+          "date_inherited": "23-11-2025",
+          "title": "Aabenraa U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#114501,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Alexander Kring Praastrup , Holte |"
+          ],
+          "linked_player_ids": [
+            "331179"
+          ],
+          "point_text_by_separator": [
+            "1657 |",
+            "1747 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 47,
+          "date_raw": null,
+          "date_inherited": "23-11-2025",
+          "title": "Aabenraa U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#114501,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Mikkel Sørensen , Vinding SF |"
+          ],
+          "linked_player_ids": [
+            "333066"
+          ],
+          "point_text_by_separator": [
+            "1657 |",
+            "1865 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 48,
+          "date_raw": "09-11-2025",
+          "date_inherited": "09-11-2025",
+          "title": "KMB2010 U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#112884,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Hugo Munck Boesen , Drive |"
+          ],
+          "linked_player_ids": [
+            "321720"
+          ],
+          "point_text_by_separator": [
+            "1671 |",
+            "1740 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 49,
+          "date_raw": null,
+          "date_inherited": "09-11-2025",
+          "title": "KMB2010 U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#112884,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Emil Guan , Dragør |"
+          ],
+          "linked_player_ids": [
+            "322027"
+          ],
+          "point_text_by_separator": [
+            "1671 |",
+            "1734 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 50,
+          "date_raw": null,
+          "date_inherited": "09-11-2025",
+          "title": "KMB2010 U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#112884,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Alfred Eskildsen , Gentofte |"
+          ],
+          "linked_player_ids": [
+            "326660"
+          ],
+          "point_text_by_separator": [
+            "1671 |",
+            "1800 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 51,
+          "date_raw": "02-11-2025",
+          "date_inherited": "02-11-2025",
+          "title": "Slagelse U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#111119,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Lucas Holm Madsen , Næstved-Herlufsholm |"
+          ],
+          "linked_player_ids": [
+            "312484"
+          ],
+          "point_text_by_separator": [
+            "1683 |",
+            "1711 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 52,
+          "date_raw": null,
+          "date_inherited": "02-11-2025",
+          "title": "Slagelse U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#111119,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Lucas Strikert Mikkelsen , Dragør |"
+          ],
+          "linked_player_ids": [
+            "337879"
+          ],
+          "point_text_by_separator": [
+            "1683 |",
+            "1687 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 53,
+          "date_raw": "05-10-2025",
+          "date_inherited": "05-10-2025",
+          "title": "U15 B 6400 (4 spillere) BD #493887",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,493887,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Guanyan Chen , Gladsaxe Søborg |"
+          ],
+          "linked_player_ids": [
+            "343986"
+          ],
+          "point_text_by_separator": [
+            "1655 |",
+            "1641 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 54,
+          "date_raw": null,
+          "date_inherited": "05-10-2025",
+          "title": "U15 B 6400 (4 spillere) BD #493884",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,493884,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Buster Nygaard Bilenberg , Valby BC |"
+          ],
+          "linked_player_ids": [
+            "326888"
+          ],
+          "point_text_by_separator": [
+            "1655 |",
+            "1675 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 55,
+          "date_raw": "28-09-2025",
+          "date_inherited": "28-09-2025",
+          "title": "Jyllinge U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#113342,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Andreas Laubjerg Daugaard , Drive |"
+          ],
+          "linked_player_ids": [
+            "328168"
+          ],
+          "point_text_by_separator": [
+            "1664 |",
+            "1842 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 56,
+          "date_raw": null,
+          "date_inherited": "28-09-2025",
+          "title": "Jyllinge U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#113342,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Simon Thofte , KBK Kbh. |"
+          ],
+          "linked_player_ids": [
+            "331076"
+          ],
+          "point_text_by_separator": [
+            "1664 |",
+            "1757 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 57,
+          "date_raw": "21-09-2025",
+          "date_inherited": "21-09-2025",
+          "title": "Uge 38 - U15 A, 6800 (2+2) #487720",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,487720,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Julius Fensholt , Herlev/Hjorten |"
+          ],
+          "linked_player_ids": [
+            "327467"
+          ],
+          "point_text_by_separator": [
+            "1664 |",
+            "2063 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 58,
+          "date_raw": null,
+          "date_inherited": "21-09-2025",
+          "title": "Uge 38 - U15 A, 6800 (2+2) #487719",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,487719,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Marius Hansen , Jernløse |"
+          ],
+          "linked_player_ids": [
+            "328693"
+          ],
+          "point_text_by_separator": [
+            "1664 |",
+            "2036 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 59,
+          "date_raw": "07-09-2025",
+          "date_inherited": "07-09-2025",
+          "title": "Køge U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#110669,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Afbud alle kategorier |"
+          ],
+          "linked_player_ids": [],
+          "point_text_by_separator": [
+            "1665 |",
+            "0 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 60,
+          "date_raw": null,
+          "date_inherited": "07-09-2025",
+          "title": "Køge U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#110669,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Christian Yu cheng , KMB2010 |"
+          ],
+          "linked_player_ids": [
+            "336121"
+          ],
+          "point_text_by_separator": [
+            "1665 |",
+            "1716 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 61,
+          "date_raw": "24-08-2025",
+          "date_inherited": "24-08-2025",
+          "title": "Humlebæk U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#113350,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Magnus Kiellerup Bork , Humlebæk |"
+          ],
+          "linked_player_ids": [
+            "324854"
+          ],
+          "point_text_by_separator": [
+            "1674 |",
+            "1783 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 62,
+          "date_raw": null,
+          "date_inherited": "24-08-2025",
+          "title": "Humlebæk U15 A",
+          "source_url": "/DBF/Turnering/VisResultater/#113350,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Theodor Lumby Jessen |",
+            "Simon Thofte , KBK Kbh. |"
+          ],
+          "linked_player_ids": [
+            "331076"
+          ],
+          "point_text_by_separator": [
+            "1674 |",
+            "1739 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 63,
+          "date_raw": null,
+          "date_inherited": "24-08-2025",
+          "title": "",
+          "source_url": null,
+          "event_kind_from_link": "ukendt",
+          "players_text_by_separator": [],
+          "linked_player_ids": [],
+          "point_text_by_separator": [],
+          "extra_cell": ""
+        }
+      ],
+      "row_kinds": {
+        "systemraekke": 1,
+        "turnering": 47,
+        "holdkamp": 14,
+        "ukendt": 1
+      },
+      "min_date": "24-08-2025",
+      "max_date": "21-06-2026",
+      "calendar_years": [
+        2025,
+        2026
+      ],
+      "raw_response_sha256": "984f87a7d5bc6ab1c79ee09e7f5edc45ef1385c677b7b22ae5f387ed130f0f48",
+      "source": "154-fase-0a detail_link"
+    },
+    {
+      "present": true,
+      "ranking_player_id": "328195",
+      "player_name": "Anna Rudolph",
+      "ranking_list_id": 288,
+      "ranking_list_name": "single",
+      "detail_link_post_id": "8328337",
+      "season_id": 2025,
+      "headers": [
+        "Dato",
+        "Turnering/Holdkamp",
+        "Spillere",
+        "Point",
+        ""
+      ],
+      "row_count": 56,
+      "rows": [
+        {
+          "row_number": 1,
+          "date_raw": "21-06-2026",
+          "date_inherited": "21-06-2026",
+          "title": "Sæsonskifte",
+          "source_url": null,
+          "event_kind_from_link": "systemraekke",
+          "players_text_by_separator": [],
+          "linked_player_ids": [],
+          "point_text_by_separator": [
+            "1793 |",
+            "0 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 2,
+          "date_raw": "17-05-2026",
+          "date_inherited": "17-05-2026",
+          "title": "Farum U15 M Farum: Specielle tilmeldingsbetingelser",
+          "source_url": "/DBF/Turnering/VisResultater/#114741,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Afbud alle kategorier |"
+          ],
+          "linked_player_ids": [],
+          "point_text_by_separator": [
+            "1781 |",
+            "0 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 3,
+          "date_raw": null,
+          "date_inherited": "17-05-2026",
+          "title": "Farum U15 M Farum: Specielle tilmeldingsbetingelser",
+          "source_url": "/DBF/Turnering/VisResultater/#114741,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Alberte Mollerup , Drive |"
+          ],
+          "linked_player_ids": [
+            "337184"
+          ],
+          "point_text_by_separator": [
+            "1781 |",
+            "1720 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 4,
+          "date_raw": null,
+          "date_inherited": "17-05-2026",
+          "title": "Farum U15 M Farum: Specielle tilmeldingsbetingelser",
+          "source_url": "/DBF/Turnering/VisResultater/#114741,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Aadvika Menon , Sverige |"
+          ],
+          "linked_player_ids": [
+            "359545"
+          ],
+          "point_text_by_separator": [
+            "1781 |",
+            "-10000 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 5,
+          "date_raw": "10-05-2026",
+          "date_inherited": "10-05-2026",
+          "title": "Slangerup U15 M",
+          "source_url": "/DBF/Turnering/VisResultater/#112657,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Iben Andersen , Slagelse |"
+          ],
+          "linked_player_ids": [
+            "325344"
+          ],
+          "point_text_by_separator": [
+            "1774 |",
+            "1757 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 6,
+          "date_raw": null,
+          "date_inherited": "10-05-2026",
+          "title": "Slangerup U15 M",
+          "source_url": "/DBF/Turnering/VisResultater/#112657,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Afbud alle kategorier |"
+          ],
+          "linked_player_ids": [],
+          "point_text_by_separator": [
+            "1774 |",
+            "0 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 7,
+          "date_raw": null,
+          "date_inherited": "10-05-2026",
+          "title": "Slangerup U15 M",
+          "source_url": "/DBF/Turnering/VisResultater/#112657,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Erica Agnete Nygaard , Drive |"
+          ],
+          "linked_player_ids": [
+            "341535"
+          ],
+          "point_text_by_separator": [
+            "1774 |",
+            "1679 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 8,
+          "date_raw": "26-04-2026",
+          "date_inherited": "26-04-2026",
+          "title": "Badminton Danmark U15 M Badminton Danmark (Horsens)",
+          "source_url": "/DBF/Turnering/VisResultater/#115091,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Sofie Rasmussen , Horsens |"
+          ],
+          "linked_player_ids": [
+            "305490"
+          ],
+          "point_text_by_separator": [
+            "1759 |",
+            "1615 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 9,
+          "date_raw": null,
+          "date_inherited": "26-04-2026",
+          "title": "Badminton Danmark U15 M Badminton Danmark (Horsens)",
+          "source_url": "/DBF/Turnering/VisResultater/#115091,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Samina Lindstrøm , Kolding BK |"
+          ],
+          "linked_player_ids": [
+            "323433"
+          ],
+          "point_text_by_separator": [
+            "1759 |",
+            "1804 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 10,
+          "date_raw": null,
+          "date_inherited": "26-04-2026",
+          "title": "Badminton Danmark U15 M Badminton Danmark (Horsens)",
+          "source_url": "/DBF/Turnering/VisResultater/#115091,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Eva Marie Wium Bjerrum , BC37 Amager |"
+          ],
+          "linked_player_ids": [
+            "328445"
+          ],
+          "point_text_by_separator": [
+            "1759 |",
+            "1662 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 11,
+          "date_raw": "12-04-2026",
+          "date_inherited": "12-04-2026",
+          "title": "DMU Hold U15B (6400) - 4 Spillere #506730",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,506730,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Magnus Veilstrup , Højbjerg |"
+          ],
+          "linked_player_ids": [
+            "312351"
+          ],
+          "point_text_by_separator": [
+            "1765 |",
+            "1811 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 12,
+          "date_raw": "11-04-2026",
+          "date_inherited": "11-04-2026",
+          "title": "DMU Hold U15B (6400) - 4 Spillere #506126",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,506126,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Valdemar Rasmussen , Karlslunde |"
+          ],
+          "linked_player_ids": [
+            "335378"
+          ],
+          "point_text_by_separator": [
+            "1745 |",
+            "1617 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 13,
+          "date_raw": null,
+          "date_inherited": "11-04-2026",
+          "title": "DMU Hold U15B (6400) - 4 Spillere #506124",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,506124,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Christian Emmersen , Svenstrup |"
+          ],
+          "linked_player_ids": [
+            "310180"
+          ],
+          "point_text_by_separator": [
+            "1745 |",
+            "1618 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 14,
+          "date_raw": "29-03-2026",
+          "date_inherited": "29-03-2026",
+          "title": "Badminton Danmark U15 M VICTOR DMU, U13MB-U15M NYBORGHALLEN",
+          "source_url": "/DBF/Turnering/VisResultater/#114857,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Iben Andersen , Slagelse |"
+          ],
+          "linked_player_ids": [
+            "325344"
+          ],
+          "point_text_by_separator": [
+            "1755 |",
+            "1735 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 15,
+          "date_raw": null,
+          "date_inherited": "29-03-2026",
+          "title": "Badminton Danmark U15 M VICTOR DMU, U13MB-U15M NYBORGHALLEN",
+          "source_url": "/DBF/Turnering/VisResultater/#114857,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Karen Bonne Nejsig , Højbjerg |"
+          ],
+          "linked_player_ids": [
+            "330148"
+          ],
+          "point_text_by_separator": [
+            "1755 |",
+            "1750 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 16,
+          "date_raw": null,
+          "date_inherited": "29-03-2026",
+          "title": "Badminton Danmark U15 M VICTOR DMU, U13MB-U15M NYBORGHALLEN",
+          "source_url": "/DBF/Turnering/VisResultater/#114857,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Philippa Maria Thiel Parry , KMB2010 |"
+          ],
+          "linked_player_ids": [
+            "343461"
+          ],
+          "point_text_by_separator": [
+            "1755 |",
+            "1633 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 17,
+          "date_raw": "15-03-2026",
+          "date_inherited": "15-03-2026",
+          "title": "Solrød Strand U15 M",
+          "source_url": "/DBF/Turnering/VisResultater/#112562,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Sofia Bührmann , Ølstykke |"
+          ],
+          "linked_player_ids": [
+            "325135"
+          ],
+          "point_text_by_separator": [
+            "1737 |",
+            "1680 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 18,
+          "date_raw": null,
+          "date_inherited": "15-03-2026",
+          "title": "Solrød Strand U15 M",
+          "source_url": "/DBF/Turnering/VisResultater/#112562,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Lærke Lanther , Gentofte |"
+          ],
+          "linked_player_ids": [
+            "326662"
+          ],
+          "point_text_by_separator": [
+            "1737 |",
+            "1795 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 19,
+          "date_raw": null,
+          "date_inherited": "15-03-2026",
+          "title": "Solrød Strand U15 M",
+          "source_url": "/DBF/Turnering/VisResultater/#112562,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Eva Marie Wium Bjerrum , BC37 Amager |"
+          ],
+          "linked_player_ids": [
+            "328445"
+          ],
+          "point_text_by_separator": [
+            "1737 |",
+            "1664 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 20,
+          "date_raw": "08-03-2026",
+          "date_inherited": "08-03-2026",
+          "title": "U15 A, 6800 (2+2) #487807",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,487807,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Henriette Hovmand , Jernløse |"
+          ],
+          "linked_player_ids": [
+            "305985"
+          ],
+          "point_text_by_separator": [
+            "1737 |",
+            "1945 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 21,
+          "date_raw": "01-02-2026",
+          "date_inherited": "01-02-2026",
+          "title": "U15 A, 6800 (2+2) #487804",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,487804,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Solveig Troelsgaard Werling , KMB2010 |"
+          ],
+          "linked_player_ids": [
+            "329253"
+          ],
+          "point_text_by_separator": [
+            "1723 |",
+            "1707 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 22,
+          "date_raw": "25-01-2026",
+          "date_inherited": "25-01-2026",
+          "title": "Badminton Danmark U14 M VICTOR LMU U14M, Viby Badmintonhal",
+          "source_url": "/DBF/Turnering/VisResultater/#114805,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Maja Filippa Palada Poulsen , Køge |"
+          ],
+          "linked_player_ids": [
+            "332575"
+          ],
+          "point_text_by_separator": [
+            "1676 |",
+            "1707 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 23,
+          "date_raw": null,
+          "date_inherited": "25-01-2026",
+          "title": "Badminton Danmark U14 M VICTOR LMU U14M, Viby Badmintonhal",
+          "source_url": "/DBF/Turnering/VisResultater/#114805,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Caroline Rasmussen , Horsens |"
+          ],
+          "linked_player_ids": [
+            "318809"
+          ],
+          "point_text_by_separator": [
+            "1676 |",
+            "1614 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 24,
+          "date_raw": null,
+          "date_inherited": "25-01-2026",
+          "title": "Badminton Danmark U14 M VICTOR LMU U14M, Viby Badmintonhal",
+          "source_url": "/DBF/Turnering/VisResultater/#114805,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Yrsa Enghave Højlyng , Humlebæk |"
+          ],
+          "linked_player_ids": [
+            "322979"
+          ],
+          "point_text_by_separator": [
+            "1676 |",
+            "1738 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 25,
+          "date_raw": null,
+          "date_inherited": "25-01-2026",
+          "title": "Badminton Danmark U14 M VICTOR LMU U14M, Viby Badmintonhal",
+          "source_url": "/DBF/Turnering/VisResultater/#114805,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Jacey Mercilyn Matthew , Viby J |"
+          ],
+          "linked_player_ids": [
+            "324587"
+          ],
+          "point_text_by_separator": [
+            "1676 |",
+            "1637 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 26,
+          "date_raw": null,
+          "date_inherited": "25-01-2026",
+          "title": "Badminton Danmark U14 M VICTOR LMU U14M, Viby Badmintonhal",
+          "source_url": "/DBF/Turnering/VisResultater/#114805,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Emma Brink Kristensen , Gug |"
+          ],
+          "linked_player_ids": [
+            "330679"
+          ],
+          "point_text_by_separator": [
+            "1676 |",
+            "1567 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 27,
+          "date_raw": "11-01-2026",
+          "date_inherited": "11-01-2026",
+          "title": "U15 A, 6800 (2+2) #487801",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,487801,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Iben Andersen , Slagelse |"
+          ],
+          "linked_player_ids": [
+            "325344"
+          ],
+          "point_text_by_separator": [
+            "1662 |",
+            "1652 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 28,
+          "date_raw": "28-12-2025",
+          "date_inherited": "28-12-2025",
+          "title": "Greve U15 M",
+          "source_url": "/DBF/Turnering/VisResultater/#111135,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Vera Croona , Solrød Strand |"
+          ],
+          "linked_player_ids": [
+            "344102"
+          ],
+          "point_text_by_separator": [
+            "1686 |",
+            "1485 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 29,
+          "date_raw": null,
+          "date_inherited": "28-12-2025",
+          "title": "Greve U15 M",
+          "source_url": "/DBF/Turnering/VisResultater/#111135,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Lærke Lanther , Gentofte |"
+          ],
+          "linked_player_ids": [
+            "326662"
+          ],
+          "point_text_by_separator": [
+            "1686 |",
+            "1686 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 30,
+          "date_raw": "07-12-2025",
+          "date_inherited": "07-12-2025",
+          "title": "U15 A, 6800 (2+2) #487798",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,487798,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Alberte Mollerup , Drive |"
+          ],
+          "linked_player_ids": [
+            "337184"
+          ],
+          "point_text_by_separator": [
+            "1673 |",
+            "1632 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 31,
+          "date_raw": "03-12-2025",
+          "date_inherited": "03-12-2025",
+          "title": "Badminton København U15 E",
+          "source_url": "/DBF/Turnering/VisResultater/#114697,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Lærke Lanther , Gentofte |"
+          ],
+          "linked_player_ids": [
+            "326662"
+          ],
+          "point_text_by_separator": [
+            "1681 |",
+            "1672 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 32,
+          "date_raw": null,
+          "date_inherited": "03-12-2025",
+          "title": "Badminton København U15 E",
+          "source_url": "/DBF/Turnering/VisResultater/#114697,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Mathilde Grimm , KMB2010 |"
+          ],
+          "linked_player_ids": [
+            "327644"
+          ],
+          "point_text_by_separator": [
+            "1681 |",
+            "1902 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 33,
+          "date_raw": "23-11-2025",
+          "date_inherited": "23-11-2025",
+          "title": "Næstved-Herlufsholm U15 M",
+          "source_url": "/DBF/Turnering/VisResultater/#112335,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Emma Cassandra van Dijk , Værløse |"
+          ],
+          "linked_player_ids": [
+            "325136"
+          ],
+          "point_text_by_separator": [
+            "1683 |",
+            "1713 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 34,
+          "date_raw": null,
+          "date_inherited": "23-11-2025",
+          "title": "Næstved-Herlufsholm U15 M",
+          "source_url": "/DBF/Turnering/VisResultater/#112335,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Ingrid Baun Hørdum , Gentofte |"
+          ],
+          "linked_player_ids": [
+            "329492"
+          ],
+          "point_text_by_separator": [
+            "1683 |",
+            "1833 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 35,
+          "date_raw": null,
+          "date_inherited": "23-11-2025",
+          "title": "Næstved-Herlufsholm U15 M",
+          "source_url": "/DBF/Turnering/VisResultater/#112335,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Asta Sofie Holberg Blicher , KBK Kbh. |"
+          ],
+          "linked_player_ids": [
+            "334457"
+          ],
+          "point_text_by_separator": [
+            "1683 |",
+            "1604 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 36,
+          "date_raw": "16-11-2025",
+          "date_inherited": "16-11-2025",
+          "title": "U15 A, 6800 (2+2) #487796",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,487796,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Karoline Kruse , Værløse |"
+          ],
+          "linked_player_ids": [
+            "303750"
+          ],
+          "point_text_by_separator": [
+            "1669 |",
+            "1689 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 37,
+          "date_raw": "09-11-2025",
+          "date_inherited": "09-11-2025",
+          "title": "KMB2010 U15 M",
+          "source_url": "/DBF/Turnering/VisResultater/#112883,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Karoline Kruse , Værløse |"
+          ],
+          "linked_player_ids": [
+            "303750"
+          ],
+          "point_text_by_separator": [
+            "1663 |",
+            "1712 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 38,
+          "date_raw": null,
+          "date_inherited": "09-11-2025",
+          "title": "KMB2010 U15 M",
+          "source_url": "/DBF/Turnering/VisResultater/#112883,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Freja Nim , Badminton Esbjerg |"
+          ],
+          "linked_player_ids": [
+            "317383"
+          ],
+          "point_text_by_separator": [
+            "1663 |",
+            "1710 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 39,
+          "date_raw": null,
+          "date_inherited": "09-11-2025",
+          "title": "KMB2010 U15 M",
+          "source_url": "/DBF/Turnering/VisResultater/#112883,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Sole Uhrenholt Hermansen , Aalborg Triton |"
+          ],
+          "linked_player_ids": [
+            "317619"
+          ],
+          "point_text_by_separator": [
+            "1663 |",
+            "1765 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 40,
+          "date_raw": "25-10-2025",
+          "date_inherited": "25-10-2025",
+          "title": "U15 A, 6800 (2+2) #487794",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,487794,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Ingrid Baun Hørdum , Gentofte |"
+          ],
+          "linked_player_ids": [
+            "329492"
+          ],
+          "point_text_by_separator": [
+            "1667 |",
+            "1837 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 41,
+          "date_raw": "18-10-2025",
+          "date_inherited": "18-10-2025",
+          "title": "Badminton Danmark U15 M VICTOR DENMARK JUNIOR (U15M Paarup/U15A Paarup to.-Næsby fr.)",
+          "source_url": "/DBF/Turnering/VisResultater/#114883,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Jasmin Artsilarat , Humlebæk |"
+          ],
+          "linked_player_ids": [
+            "312243"
+          ],
+          "point_text_by_separator": [
+            "1675 |",
+            "1589 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 42,
+          "date_raw": null,
+          "date_inherited": "18-10-2025",
+          "title": "Badminton Danmark U15 M VICTOR DENMARK JUNIOR (U15M Paarup/U15A Paarup to.-Næsby fr.)",
+          "source_url": "/DBF/Turnering/VisResultater/#114883,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Signe Holmgaard Poulsen , Viby J |"
+          ],
+          "linked_player_ids": [
+            "326251"
+          ],
+          "point_text_by_separator": [
+            "1675 |",
+            "1732 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 43,
+          "date_raw": null,
+          "date_inherited": "18-10-2025",
+          "title": "Badminton Danmark U15 M VICTOR DENMARK JUNIOR (U15M Paarup/U15A Paarup to.-Næsby fr.)",
+          "source_url": "/DBF/Turnering/VisResultater/#114883,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Asta Sofie Holberg Blicher , KBK Kbh. |"
+          ],
+          "linked_player_ids": [
+            "334457"
+          ],
+          "point_text_by_separator": [
+            "1675 |",
+            "1584 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 44,
+          "date_raw": "21-09-2025",
+          "date_inherited": "21-09-2025",
+          "title": "Uge 38 - U15 A, 6800 (2+2) #487720",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,487720,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Alma Høybye Dall , Herlev/Hjorten |"
+          ],
+          "linked_player_ids": [
+            "324965"
+          ],
+          "point_text_by_separator": [
+            "1697 |",
+            "1536 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 45,
+          "date_raw": null,
+          "date_inherited": "21-09-2025",
+          "title": "Uge 38 - U15 A, 6800 (2+2) #487719",
+          "source_url": "/DBF/HoldTurnering/Stilling/#5,,,,,,487719,",
+          "event_kind_from_link": "holdkamp",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Henriette Hovmand , Jernløse |"
+          ],
+          "linked_player_ids": [
+            "305985"
+          ],
+          "point_text_by_separator": [
+            "1697 |",
+            "1788 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 46,
+          "date_raw": "14-09-2025",
+          "date_inherited": "14-09-2025",
+          "title": "Badminton Danmark U15 M VICTOR LBS i Hinnerup/Hammel HAMMEL IC U15M-U17M-U19M- U17/U19A",
+          "source_url": "/DBF/Turnering/VisResultater/#114778,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Tilde Johannsen , Kullerup/Refsvindinge |"
+          ],
+          "linked_player_ids": [
+            "323794"
+          ],
+          "point_text_by_separator": [
+            "1717 |",
+            "1509 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 47,
+          "date_raw": null,
+          "date_inherited": "14-09-2025",
+          "title": "Badminton Danmark U15 M VICTOR LBS i Hinnerup/Hammel HAMMEL IC U15M-U17M-U19M- U17/U19A",
+          "source_url": "/DBF/Turnering/VisResultater/#114778,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Signe Holmgaard Poulsen , Viby J |"
+          ],
+          "linked_player_ids": [
+            "326251"
+          ],
+          "point_text_by_separator": [
+            "1717 |",
+            "1752 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 48,
+          "date_raw": null,
+          "date_inherited": "14-09-2025",
+          "title": "Badminton Danmark U15 M VICTOR LBS i Hinnerup/Hammel HAMMEL IC U15M-U17M-U19M- U17/U19A",
+          "source_url": "/DBF/Turnering/VisResultater/#114778,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Mariia Shevchuk (udl.) , Hvidovre |"
+          ],
+          "linked_player_ids": [
+            "339384"
+          ],
+          "point_text_by_separator": [
+            "1717 |",
+            "1490 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 49,
+          "date_raw": "07-09-2025",
+          "date_inherited": "07-09-2025",
+          "title": "Køge U15 M",
+          "source_url": "/DBF/Turnering/VisResultater/#110693,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Agnes Gregersen , Skovshoved |"
+          ],
+          "linked_player_ids": [
+            "321132"
+          ],
+          "point_text_by_separator": [
+            "1708 |",
+            "1678 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 50,
+          "date_raw": null,
+          "date_inherited": "07-09-2025",
+          "title": "Køge U15 M",
+          "source_url": "/DBF/Turnering/VisResultater/#110693,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Ingrid Baun Hørdum , Gentofte |"
+          ],
+          "linked_player_ids": [
+            "329492"
+          ],
+          "point_text_by_separator": [
+            "1708 |",
+            "1835 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 51,
+          "date_raw": "24-08-2025",
+          "date_inherited": "24-08-2025",
+          "title": "Greve U15 M",
+          "source_url": "/DBF/Turnering/VisResultater/#111130,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Ella Elkjær Lundorf , Gentofte |"
+          ],
+          "linked_player_ids": [
+            "329678"
+          ],
+          "point_text_by_separator": [
+            "1697 |",
+            "1695 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 52,
+          "date_raw": null,
+          "date_inherited": "24-08-2025",
+          "title": "Greve U15 M",
+          "source_url": "/DBF/Turnering/VisResultater/#111130,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Ida Sejersbøl Yttri , Skælskør |"
+          ],
+          "linked_player_ids": [
+            "335989"
+          ],
+          "point_text_by_separator": [
+            "1697 |",
+            "1637 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 53,
+          "date_raw": null,
+          "date_inherited": "24-08-2025",
+          "title": "Greve U15 M",
+          "source_url": "/DBF/Turnering/VisResultater/#111130,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Vera Croona , Solrød Strand |"
+          ],
+          "linked_player_ids": [
+            "344102"
+          ],
+          "point_text_by_separator": [
+            "1697 |",
+            "1431 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 54,
+          "date_raw": "17-08-2025",
+          "date_inherited": "17-08-2025",
+          "title": "Værløse U15 M",
+          "source_url": "/DBF/Turnering/VisResultater/#114396,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Jasmin Artsilarat , Humlebæk |"
+          ],
+          "linked_player_ids": [
+            "312243"
+          ],
+          "point_text_by_separator": [
+            "1698 |",
+            "1606 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 55,
+          "date_raw": null,
+          "date_inherited": "17-08-2025",
+          "title": "Værløse U15 M",
+          "source_url": "/DBF/Turnering/VisResultater/#114396,",
+          "event_kind_from_link": "turnering",
+          "players_text_by_separator": [
+            "Anna Rudolph |",
+            "Iben Kamper , Køge |"
+          ],
+          "linked_player_ids": [
+            "313148"
+          ],
+          "point_text_by_separator": [
+            "1698 |",
+            "1631 |"
+          ],
+          "extra_cell": ""
+        },
+        {
+          "row_number": 56,
+          "date_raw": null,
+          "date_inherited": "17-08-2025",
+          "title": "",
+          "source_url": null,
+          "event_kind_from_link": "ukendt",
+          "players_text_by_separator": [],
+          "linked_player_ids": [],
+          "point_text_by_separator": [],
+          "extra_cell": ""
+        }
+      ],
+      "row_kinds": {
+        "systemraekke": 1,
+        "turnering": 43,
+        "holdkamp": 11,
+        "ukendt": 1
+      },
+      "min_date": "17-08-2025",
+      "max_date": "21-06-2026",
+      "calendar_years": [
+        2025,
+        2026
+      ],
+      "raw_response_sha256": "4f8c823141637349fe1a2be3674e0326a6b1b41a55fb41e3737196fd8cd641f9",
+      "source": "154-fase-0a detail_link"
+    }
+  ],
+  "winner_evidence": {
+    "source_file": "statistik/results/081-webservice-catalog-probe.json",
+    "service": "SearchTournamentMatches",
+    "tournamentclassid": 115342,
+    "tournamenteventid": 490920,
+    "status": 200,
+    "match_number": "294",
+    "player_1": {
+      "text": "(1) Jannick John Galan Mogensen , Jernløse |",
+      "ids": [
+        "283536"
+      ]
+    },
+    "player_2": {
+      "text": "(3/4) Alexandre Gimenez (EU) , Hvidovre |",
+      "ids": [
+        "355953"
+      ]
+    },
+    "set_result_raw": "15/5,15/7",
+    "fields": [
+      "runde/fase (grupperække)",
+      "kampnummer",
+      "spiller 1 + profil-ID-link",
+      "spiller 2 + profil-ID-link",
+      "sætresultat"
+    ]
+  },
+  "graphql": {
+    "current_run_calls": 0,
+    "query_surface": [
+      {
+        "name": "tournamentGroups",
+        "args": [
+          {
+            "name": "seasonId"
+          },
+          {
+            "name": "phaseType"
+          },
+          {
+            "name": "order"
+          }
+        ]
+      },
+      {
+        "name": "tournamentTiers",
+        "args": [
+          {
+            "name": "order"
+          }
+        ]
+      }
+    ],
+    "tournament_groups_2025_count": 0,
+    "tournament_tier_count": 17,
+    "conclusion": "Gemte evidencer viser katalogfelter, ikke offentlig turneringskamp-/resultatforespørgsel."
+  },
+  "tournament_overview": {
+    "prior_probe": "statistik/results/081-route-probe.json; statistik/results/081-webservice-catalog-probe.json",
+    "known_class_id": 115342,
+    "get_tournament_events": {
+      "status": 200,
+      "events": [
+        490920,
+        490921,
+        490922,
+        490923,
+        490924
+      ]
+    },
+    "search_tournament_matches": {
+      "status": 200,
+      "rows": 61,
+      "html_bytes": 30686
+    },
+    "search_tournament_class": {
+      "status_by_tests": [
+        500,
+        500,
+        500
+      ],
+      "tested_regions": [
+        1,
+        8
+      ],
+      "tested_seasons": [
+        2025,
+        2026
+      ]
+    },
+    "conclusion": "Ingen bevist offentlig sæson-/alle-turneringer-liste. Succesfulde kald kræver et kendt tournamentclassid/eventid."
+  },
+  "note": "All earlier-season coverage and point-change granularity are not inferred from the current-season samples.",
+  "database_sha256_before": {
+    "gsb-statistik-normalized.db": "49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E",
+    "liga-landskab.db": "9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C",
+    "rangliste-historik.db": "6E9516DB643F88F88946A82CB76EC3B5C686C7D548ABF7084B3F60EE3DA0316F",
+    "national-spillere.db": "1E27C5D81CCE8E2D656DF2C924E4BF6931EEAAF86348ADD384AB6D58F7CBAC3E",
+    "rangliste-point.db": "DABE3A12ACECD763E537087F0E16855AD39DF298234EB03FF111A3366100D1B9"
+  },
+  "database_sha256_after": {
+    "gsb-statistik-normalized.db": "49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E",
+    "liga-landskab.db": "9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C",
+    "rangliste-historik.db": "6E9516DB643F88F88946A82CB76EC3B5C686C7D548ABF7084B3F60EE3DA0316F",
+    "national-spillere.db": "1E27C5D81CCE8E2D656DF2C924E4BF6931EEAAF86348ADD384AB6D58F7CBAC3E",
+    "rangliste-point.db": "DABE3A12ACECD763E537087F0E16855AD39DF298234EB03FF111A3366100D1B9"
+  },
+  "database_hashes_unchanged": true
+}
