@@ -1,0 +1,3359 @@
+{
+  "prior_del_a_calls": 4,
+  "calls": [
+    {
+      "number": 5,
+      "method": "GET",
+      "label": "frisk offentlig kontekst",
+      "url": "https://badmintonplayer.dk/DBF/Ranglister/",
+      "fields_changed": null,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 21846,
+      "response_sha256_redacted": "B8AD91A1858115BF54A2870428D2214271B2DEEFDA6C524BC842BC8E8080DB39",
+      "saved_file": "call-005.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 6,
+      "method": "POST",
+      "label": "eventtabel Guanyan Chen 343986",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetPlayerRankingListPoints",
+      "fields_changed": {
+        "seasonid": 2025,
+        "playerid": 343986,
+        "rankinglistid": 288,
+        "rankinglistplayerid": 8337485,
+        "getplayerdata": true
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 50168,
+      "response_sha256_redacted": "4B0BA42BD0F1E60663DD2C39F5CEF9E29A509F4E64C3F28B677C024289D6A16F",
+      "saved_file": "call-006.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 7,
+      "method": "POST",
+      "label": "eventtabel Chastine Christiansen 328196",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetPlayerRankingListPoints",
+      "fields_changed": {
+        "seasonid": 2025,
+        "playerid": 328196,
+        "rankinglistid": 288,
+        "rankinglistplayerid": 8327461,
+        "getplayerdata": true
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 2878,
+      "response_sha256_redacted": "032446E49861D5240AFCD0A5620478AA3601E15506D9639E7C11FF5337C8BAA1",
+      "saved_file": "call-007.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 8,
+      "method": "POST",
+      "label": "eventtabel Sophia Rita Giuliani 362606",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetPlayerRankingListPoints",
+      "fields_changed": {
+        "seasonid": 2025,
+        "playerid": 362606,
+        "rankinglistid": 288,
+        "rankinglistplayerid": 8457425,
+        "getplayerdata": true
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 3055,
+      "response_sha256_redacted": "C6B0CE9771C5FB23E1FD466D4CD347CD2B80E93C156358B68699D7211495A3B8",
+      "saved_file": "call-008.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 9,
+      "method": "POST",
+      "label": "eventtabel Aanya Jha 355801",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetPlayerRankingListPoints",
+      "fields_changed": {
+        "seasonid": 2025,
+        "playerid": 355801,
+        "rankinglistid": 288,
+        "rankinglistplayerid": 8344299,
+        "getplayerdata": true
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 24853,
+      "response_sha256_redacted": "EF86C2A85213A2FFA28412B45E46FF39C37F1CBAA7E78CDD30C6BC888C60D550",
+      "saved_file": "call-009.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 10,
+      "method": "POST",
+      "label": "eventtabel Stuti Sharma 361644",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetPlayerRankingListPoints",
+      "fields_changed": {
+        "seasonid": 2025,
+        "playerid": 361644,
+        "rankinglistid": 288,
+        "rankinglistplayerid": 8455187,
+        "getplayerdata": true
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 12664,
+      "response_sha256_redacted": "C20985ED3AA6A94404A6CA805A415BA15D26BB7F643CE505D7B3D99CE1F835A3",
+      "saved_file": "call-010.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 11,
+      "method": "POST",
+      "label": "eventtabel Cornelia Viola Bender-Jacobsen 346938",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetPlayerRankingListPoints",
+      "fields_changed": {
+        "seasonid": 2025,
+        "playerid": 346938,
+        "rankinglistid": 288,
+        "rankinglistplayerid": 8339290,
+        "getplayerdata": true
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 53744,
+      "response_sha256_redacted": "D623BBCB574E3C4311A51EB19C90F421B4819A968EB9C5A02E8858F1CD5C6233",
+      "saved_file": "call-011.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 12,
+      "method": "POST",
+      "label": "eventtabel Oliver Rafah Peddinini Joe 353206",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetPlayerRankingListPoints",
+      "fields_changed": {
+        "seasonid": 2025,
+        "playerid": 353206,
+        "rankinglistid": 288,
+        "rankinglistplayerid": 8343738,
+        "getplayerdata": true
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 28406,
+      "response_sha256_redacted": "471475863CF0E3D552ACFD367E2CC3360B31E13FF17F99A9BEFC29561121E85E",
+      "saved_file": "call-012.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 13,
+      "method": "POST",
+      "label": "eventtabel Pontus Einar Anker Mikkelsen 343399",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetPlayerRankingListPoints",
+      "fields_changed": {
+        "seasonid": 2025,
+        "playerid": 343399,
+        "rankinglistid": 288,
+        "rankinglistplayerid": 8337333,
+        "getplayerdata": true
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13512,
+      "response_sha256_redacted": "FA6DF567FEC40CCB7808E98F1EFF65542D77FCFD6D3F690BEDB3775E0DE70C53",
+      "saved_file": "call-013.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 14,
+      "method": "POST",
+      "label": "eventtabel Ágúst Stensbo Knudsen 353220",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetPlayerRankingListPoints",
+      "fields_changed": {
+        "seasonid": 2025,
+        "playerid": 353220,
+        "rankinglistid": 288,
+        "rankinglistplayerid": 8343706,
+        "getplayerdata": true
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 30973,
+      "response_sha256_redacted": "D87896B7D7034B5B73CE25084D8C92E48235E35DB25D1456B01AC32620DC558F",
+      "saved_file": "call-014.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 15,
+      "method": "POST",
+      "label": "eventtabel Erik Kragh Winther 328253",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetPlayerRankingListPoints",
+      "fields_changed": {
+        "seasonid": 2025,
+        "playerid": 328253,
+        "rankinglistid": 288,
+        "rankinglistplayerid": 8327388,
+        "getplayerdata": true
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 34861,
+      "response_sha256_redacted": "2E61762C4D24499879DD969E9B16189624DE70E546E6399BBE6E15BFCCBA88E7",
+      "saved_file": "call-015.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 16,
+      "method": "POST",
+      "label": "eventtabel Akhila Sureddy 346148",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetPlayerRankingListPoints",
+      "fields_changed": {
+        "seasonid": 2025,
+        "playerid": 346148,
+        "rankinglistid": 288,
+        "rankinglistplayerid": 8338710,
+        "getplayerdata": true
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 50424,
+      "response_sha256_redacted": "EBC6360572ADC93A183C9C163E7603C97A2E9A5E128E3E0A5A8B6EFF24661436",
+      "saved_file": "call-016.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 17,
+      "method": "POST",
+      "label": "eventtabel Cecilie Johansen 346158",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetPlayerRankingListPoints",
+      "fields_changed": {
+        "seasonid": 2025,
+        "playerid": 346158,
+        "rankinglistid": 288,
+        "rankinglistplayerid": 8338716,
+        "getplayerdata": true
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 18863,
+      "response_sha256_redacted": "2730593EDD4E267F929BD327FA532A90A7D5647DD450BA77F5EB103AE3B57BB0",
+      "saved_file": "call-017.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 18,
+      "method": "POST",
+      "label": "eventtabel Aanya Sarma 328375",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetPlayerRankingListPoints",
+      "fields_changed": {
+        "seasonid": 2025,
+        "playerid": 328375,
+        "rankinglistid": 288,
+        "rankinglistplayerid": 8329039,
+        "getplayerdata": true
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 34378,
+      "response_sha256_redacted": "6288F02FB399086B3B24003185913FFC84CAFDCFC0F1F9FED30F2314BD5D6F6B",
+      "saved_file": "call-018.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 19,
+      "method": "POST",
+      "label": "eventtabel Luc Nørmark Jespersen 337802",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetPlayerRankingListPoints",
+      "fields_changed": {
+        "seasonid": 2025,
+        "playerid": 337802,
+        "rankinglistid": 288,
+        "rankinglistplayerid": 8334025,
+        "getplayerdata": true
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 35483,
+      "response_sha256_redacted": "575B6227D6A8AC9F38A0F6FC4F304E4B634A843CA3C69E8BACA97D3B7B754209",
+      "saved_file": "call-019.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 20,
+      "method": "POST",
+      "label": "eventtabel Kristian Almeida Møller 346285",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetPlayerRankingListPoints",
+      "fields_changed": {
+        "seasonid": 2025,
+        "playerid": 346285,
+        "rankinglistid": 288,
+        "rankinglistplayerid": 8338341,
+        "getplayerdata": true
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 34599,
+      "response_sha256_redacted": "F95948417422A07A836B2104D1B58DE60788AB9C6EDC2A1B78CEA4A5E89F61B4",
+      "saved_file": "call-020.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 21,
+      "method": "GET",
+      "label": "frisk offentlig kontekst",
+      "url": "https://badmintonplayer.dk/DBF/Ranglister/",
+      "fields_changed": null,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 21846,
+      "response_sha256_redacted": "B8AD91A1858115BF54A2870428D2214271B2DEEFDA6C524BC842BC8E8080DB39",
+      "saved_file": "call-021.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 22,
+      "method": "GET",
+      "label": "frisk offentlig kontekst",
+      "url": "https://badmintonplayer.dk/DBF/Ranglister/",
+      "fields_changed": null,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 21846,
+      "response_sha256_redacted": "B8AD91A1858115BF54A2870428D2214271B2DEEFDA6C524BC842BC8E8080DB39",
+      "saved_file": "call-022.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 23,
+      "method": "GET",
+      "label": "frisk offentlig kontekst",
+      "url": "https://badmintonplayer.dk/DBF/Ranglister/",
+      "fields_changed": null,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 21846,
+      "response_sha256_redacted": "B8AD91A1858115BF54A2870428D2214271B2DEEFDA6C524BC842BC8E8080DB39",
+      "saved_file": "call-023.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 24,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2025-07-21",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "07/21/2025",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "B5F1D025FC7E7D3E2600DC1C0AE2F4A37780C15A0D66667A437781BFC70DF386",
+      "saved_file": "call-024.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 25,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2025-07-28",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "07/28/2025",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "FFDBA22E80F6144905DA297B2F276641FDDABD6E511F4846637BF9A9250D324B",
+      "saved_file": "call-025.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 26,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2025-08-04",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "08/04/2025",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "9AD3C8078DC024FC20DA192B4C659DF4BA040321BAE4D0F1F52403EE6B6A2070",
+      "saved_file": "call-026.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 27,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2025-08-11",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "08/11/2025",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "68442DF3F3B4300A3C1BA67667B798437FF2BF2EFBB29F346F40A8A0916C90E7",
+      "saved_file": "call-027.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 28,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2025-08-18",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "08/18/2025",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "50AC6DC28072409FC24A7A992614E9A996BDE2466A069EE7FC3DAB5B72B36B6D",
+      "saved_file": "call-028.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 29,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2025-08-25",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "08/25/2025",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "BEA03B1B06289D783F2275FB5825AE7356A0D8CB54CCE72CC85145DD34AB7EFE",
+      "saved_file": "call-029.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 30,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2025-09-01",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "09/01/2025",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "ADB4C929B012789E56B9A16F635574FF676DCC72E77514335A66002A71C71722",
+      "saved_file": "call-030.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 31,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2025-09-08",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "09/08/2025",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "1F4141F13FDACBC6A9F3CDD72C4423E0C4938FCF6F8B9ED5AFEFB68C64CCC12A",
+      "saved_file": "call-031.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 32,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2025-09-15",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "09/15/2025",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "6AAE548AD71AFA9AD107C9A5F395F00D9CD619924D4575AC4BEB44D9A40AC758",
+      "saved_file": "call-032.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 33,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2025-09-22",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "09/22/2025",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "AA17C4786051F3360CAC1AB143EDC7FDABDB8B306DFB0866E1E6E6DDDB58633A",
+      "saved_file": "call-033.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 34,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2025-09-29",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "09/29/2025",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "2C878A8CA90046CE55B0317183C60DB4DB26CC6F9D4FF8318069969E7A9DC1AE",
+      "saved_file": "call-034.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 35,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2025-10-06",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "10/06/2025",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "BF95FC3669E91421581DD96421EE7183125FB389D20B7517C35C21528A11BF98",
+      "saved_file": "call-035.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 36,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2025-10-13",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "10/13/2025",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "3BA8B212273A0C3A006ED5A017F90A70E5639B31E893FC60C3DFBC31FD7DAE0B",
+      "saved_file": "call-036.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 37,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2025-10-20",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "10/20/2025",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "52E2499BCBEF9695595DD489EC778D7D85BAB5293EA65F2BC28942FDF36A21D0",
+      "saved_file": "call-037.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 38,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2025-10-27",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "10/27/2025",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "5EDB875DC992EB553BE55DBECA54FB675859C2988052AFD4845F816C81FEB69E",
+      "saved_file": "call-038.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 39,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2025-11-03",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "11/03/2025",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "F4A249CEF3EDC0441CB35A0A0C7F0EE91EAC990E6D7C9D63FAE1BAC38F828E5F",
+      "saved_file": "call-039.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 40,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2025-11-10",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "11/10/2025",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "8CC4CD839BFBA36E2DB74432FBBDAB508666B75EC1D62E7B7C337DCAE77B5B27",
+      "saved_file": "call-040.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 41,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2025-11-17",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "11/17/2025",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "5CBD6CE3045D7856FC476605034A47CAFE1A97A454A9F9D4EFE092B429712197",
+      "saved_file": "call-041.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 42,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2025-11-24",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "11/24/2025",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "EB75CDF27B04F89BA9B63F094E4332EF1F2CAB08170DDFC69D7CFCFFFE0986A5",
+      "saved_file": "call-042.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 43,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2025-12-01",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "12/01/2025",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "E40DF4FB32EB7C017440B2C741639097F5703EF793FEF183BEAAA422A17EA5C6",
+      "saved_file": "call-043.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 44,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2025-12-08",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "12/08/2025",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "3C5F5DEFC5191C82FF353C6ACC9FA0A7B2971AEA9AB392404D96A5FCA6232F41",
+      "saved_file": "call-044.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 45,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2025-12-15",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "12/15/2025",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "2EEA0FACD6B715FBB2D72FA13EDA20E0B82B638B5FCCCBB14A36AB55DF7E075D",
+      "saved_file": "call-045.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 46,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2025-12-22",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "12/22/2025",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "E12E47D675F9441813A0CF31FAC0D5FE5C7CBD8061F4DCA39DB7422461FD5FED",
+      "saved_file": "call-046.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 47,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2025-12-29",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "12/29/2025",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "38DEA7FC1C2923D72775DB3CB26A4F8F73241952F654D5BF34784D9F642E4A57",
+      "saved_file": "call-047.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 48,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2026-01-05",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "01/05/2026",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "DDE57560CE35153DDC8C0325D44F028BEDCD88F53D90561639EF91AA72506985",
+      "saved_file": "call-048.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 49,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2026-01-12",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "01/12/2026",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "64197369B563960A0493AAC6E5A1FE11F6B7D8FD1088A0CB46149D07E9975E8F",
+      "saved_file": "call-049.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 50,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2026-01-19",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "01/19/2026",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "850AA40B1E2178EC9F9D6EA6BD09BDCD8BF72FF9FD8C6DDCE8A4100747B83937",
+      "saved_file": "call-050.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 51,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2026-01-26",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "01/26/2026",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "08C71ABFD217DFCF602EB5AE741B4575D812A436E053824EE4573B4E69F36C07",
+      "saved_file": "call-051.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 52,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2026-02-02",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "02/02/2026",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "73F848FC748DF6C9ACA7299B2CE39A0F0F227C768080959A54AA4BD302DB827F",
+      "saved_file": "call-052.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 53,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2026-02-09",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "02/09/2026",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "2A94F6844F4DA1D593BA85119F9EB3485044EAD013885D1F8458CE4EDB89C354",
+      "saved_file": "call-053.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 54,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2026-02-16",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "02/16/2026",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "D12B14020484BF3161E49803B325A8D6CDFC596C85B4428C37BC0A04F423D731",
+      "saved_file": "call-054.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 55,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2026-02-23",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "02/23/2026",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "0857D787F0504398F39BC3CAA168A13E4A4AE426E1CAF702B55A5487A5F34728",
+      "saved_file": "call-055.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 56,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2026-03-02",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "03/02/2026",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "EC74E397C17AD4561A5483EC9A6437BA8DE7F4F09EE2B7CB46829F56B1468F14",
+      "saved_file": "call-056.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 57,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2026-03-09",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "03/09/2026",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "A3288411F7FD71A3FD3D614E11BA9ABC643F0BE0B8EC8431EC98787BFAEF9A38",
+      "saved_file": "call-057.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 58,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2026-03-16",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "03/16/2026",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "4D86825ED2BBE83BE0A345A7508A16B58D55C603D6F6D334B0DE944C2B5A1D50",
+      "saved_file": "call-058.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 59,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2026-03-23",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "03/23/2026",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "6A3B99C30FD1296ECAEC7AA1570AC3F7021E13A36EBCF8356375A07B34DA5657",
+      "saved_file": "call-059.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 60,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2026-03-30",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "03/30/2026",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "156971C6178EC155D3DB8FAAE306BCDE514D3D461793D5AC479F9FD78793F177",
+      "saved_file": "call-060.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 61,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2026-04-06",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "04/06/2026",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "95767ACECA8FE8F8CE9E9D1D87C0361A2ECACF8E13683265E43A8F81200C769F",
+      "saved_file": "call-061.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 62,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2026-04-13",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "04/13/2026",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "4290AD4EC39B488C60CB3CDDAA0A91A71B53EC147ACA65A140A6621B9B5CA639",
+      "saved_file": "call-062.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 63,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2026-04-20",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "04/20/2026",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "B228CFD2E8F1E3FE2F272CAD6CF0D5F1CC01A335D9F9C943779053B8B8B35A08",
+      "saved_file": "call-063.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 64,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2026-04-27",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "04/27/2026",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "E04340E1D25825A67034100ECC7DD0DA327C871B371AC3531E0CFA7CD1CD9EF5",
+      "saved_file": "call-064.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 65,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2026-05-04",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "05/04/2026",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "4386AE009844CBEA6EEF6EE0316960548C5572B07BCC658B82546BC45E82BE11",
+      "saved_file": "call-065.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 66,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2026-05-11",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "05/11/2026",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "C106C5AACEFFAE1ECE98E92E4458CE6620D8F73A0829A2DEF699E5C0A28CCC31",
+      "saved_file": "call-066.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 67,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2026-05-18",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "05/18/2026",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "38D783FB7904176E82A6058412A7BDAEE09607A7F25FDC20856BD69A39D9735C",
+      "saved_file": "call-067.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 68,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2026-05-25",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "05/25/2026",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "AC37ABEA2D719DD6918CC36A5D79A3571495F3202DDD72EA873AD6B8F0264FDA",
+      "saved_file": "call-068.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 69,
+      "method": "GET",
+      "label": "frisk offentlig kontekst",
+      "url": "https://badmintonplayer.dk/DBF/Ranglister/",
+      "fields_changed": null,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 21846,
+      "response_sha256_redacted": "B8AD91A1858115BF54A2870428D2214271B2DEEFDA6C524BC842BC8E8080DB39",
+      "saved_file": "call-069.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 70,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2026-06-01",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "06/01/2026",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "0BE4DFE23AFD012606741953EF56605A84D88766CB64C61DB092F392978A03B1",
+      "saved_file": "call-070.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 71,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2026-06-08",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "06/08/2026",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "1457552D6B54BDEC61FABD9C2908CD8C044C4432BAC6255FD2A768A38E460CBA",
+      "saved_file": "call-071.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 72,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2026-06-15",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "06/15/2026",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "ADA9D8DBAB38FA06DCFB9FE519D0AA9672CD7719818A1C9A6FEFCBF12BE17909",
+      "saved_file": "call-072.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 73,
+      "method": "POST",
+      "label": "ugeversion Josefine Bille-Ahmt 2026-06-29",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "06/29/2026",
+        "playerid": "329159",
+        "param": "K"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13037,
+      "response_sha256_redacted": "73259116A7A3EF9F9573C2ED36335F198BC8AFD11BACEB2111E5158B74D84A35",
+      "saved_file": "call-073.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 74,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2025-07-21",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "07/21/2025",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "22A972E1677239AB3735F9CE44C74EBC1C8D93C2F6D2A88B3EC6DBF6106647D3",
+      "saved_file": "call-074.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 75,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2025-07-28",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "07/28/2025",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "28A94D4163EB15FCF7B8817F5AF8940428A10A17F72FD5D220F4EBC771C93551",
+      "saved_file": "call-075.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 76,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2025-08-04",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "08/04/2025",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "CC5AE2B278809A071F08B256302755B775C8DE7FDEB967FAFD43FE9986F1D7B0",
+      "saved_file": "call-076.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 77,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2025-08-11",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "08/11/2025",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "B7C1CAAA755DFCC3C7863BCA93D88E92036BD9DB16F9DDF86D528C25B3E8B315",
+      "saved_file": "call-077.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 78,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2025-08-18",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "08/18/2025",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "21EE7D80C6073A4F2EA83EF5F4DEB93A0E0B5817D428987DFDE6AD1A70E904CB",
+      "saved_file": "call-078.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 79,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2025-08-25",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "08/25/2025",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "8F48A578F14D57E9A9B0B4E8FBDDFB261D8E14A219F92B85D2D5D0E61BDA4DAC",
+      "saved_file": "call-079.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 80,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2025-09-01",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "09/01/2025",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "74250C45B75078A0489D90CEA02216CFBEF7B1263BCF44134F441E967CDC8434",
+      "saved_file": "call-080.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 81,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2025-09-08",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "09/08/2025",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "8D0AC70AB9303250CD0CD83251BEEC1EDB28A5E751D7640189ED1E616B3119AD",
+      "saved_file": "call-081.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 82,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2025-09-15",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "09/15/2025",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "A4E66BB5E360F2FC8608EFC5AAB2976D1CD9DAA3946DCB61EADEE48F4125E80E",
+      "saved_file": "call-082.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 83,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2025-09-22",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "09/22/2025",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "FCEDD24AE18724B94D19E092D5C698C7C086B80C7BE2C9C757364AA5A0F013A5",
+      "saved_file": "call-083.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 84,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2025-09-29",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "09/29/2025",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "B62E1A5DABD840C62E0EDEA416C61188DB7DB2B1DAAD6F1F3AF2291FD61CE368",
+      "saved_file": "call-084.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 85,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2025-10-06",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "10/06/2025",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "D80159954A9AE31F961E17092EECD8B96094A14B85A86C79864A27AACAE7C068",
+      "saved_file": "call-085.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 86,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2025-10-13",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "10/13/2025",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "3B4DC5048EBB3135368FDF5451717CB1D32C9D824D2D65438FBE007A54D84AED",
+      "saved_file": "call-086.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 87,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2025-10-20",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "10/20/2025",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "3A05C8823175431A4B4B7EEAD7DF4200025121192A4CC0A517F812049B8931D4",
+      "saved_file": "call-087.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 88,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2025-10-27",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "10/27/2025",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "0FD278F5170D02BF91EDCD3BB5E5647BC7334979DD77E8BF8FF32C9F838CE15B",
+      "saved_file": "call-088.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 89,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2025-11-03",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "11/03/2025",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "79A4D2055707F00C57E65B4027358EC5BF45F47260EBDEB56AF479CFCD4892B5",
+      "saved_file": "call-089.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 90,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2025-11-10",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "11/10/2025",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "A65B8FCB41D344D841C5D08B3092A6E9C6CCE026B9B4FB0C468C81F1F9AE549A",
+      "saved_file": "call-090.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 91,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2025-11-17",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "11/17/2025",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "76DE5F3679D3C530E1C2804A0A7979CCE979417E2AF8C07A9EDD75EA1056E926",
+      "saved_file": "call-091.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 92,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2025-11-24",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "11/24/2025",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "BE9C1730AF34543BF5FD5C7302C9502DDB5F31654AAECA1D2E0D91C4AEB471F1",
+      "saved_file": "call-092.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 93,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2025-12-01",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "12/01/2025",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "0802439F07E539371427B59994AA63D874B42CF126A2635DF6DAA26F670613DC",
+      "saved_file": "call-093.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 94,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2025-12-08",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "12/08/2025",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "E1E67C6A8B5376EBCAA66617F4B18388357C37878BC267270F9ED15E4C5520A9",
+      "saved_file": "call-094.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 95,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2025-12-15",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "12/15/2025",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "12E1EAE7A8C77D7D0D1153756CE12E3C388AED054B1671F739CA2C3C4B8FFE67",
+      "saved_file": "call-095.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 96,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2025-12-22",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "12/22/2025",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "91614D98AE73B8061F6E7A784C7BDB13B991AD9B9FC567789FA9CD0BAF9C31E7",
+      "saved_file": "call-096.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 97,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2025-12-29",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "12/29/2025",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "1C5C1D5F99D2B3A162B289649DC24D7DA6B2458751EB79681EADD70E4340BBEE",
+      "saved_file": "call-097.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 98,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2026-01-05",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "01/05/2026",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "30A37510BF30FCBBF98444678C791DBF280B31405ECBEDF623A3A7E387EF7E4C",
+      "saved_file": "call-098.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 99,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2026-01-12",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "01/12/2026",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "89E2C0B138342EED7C2B003B265DF664E924E7D0C0FEACC6A69387A721788F5C",
+      "saved_file": "call-099.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 100,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2026-01-19",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "01/19/2026",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "148C8C0A57B442A01C3546BB699C21FBC001093BE81FCFBBF900E1CA99E0DD08",
+      "saved_file": "call-100.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 101,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2026-01-26",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "01/26/2026",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "629020445EB8A8B8FF41B38688D891E99F6DC950D45E0E7194F6A463CB880D0D",
+      "saved_file": "call-101.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 102,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2026-02-02",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "02/02/2026",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "F03368885DF813EEB8C9FDEEB5440279BF44BD6D096F19FB5FDF104F353FD09D",
+      "saved_file": "call-102.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 103,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2026-02-09",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "02/09/2026",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "E8A1A4A4C64B1D086E11880BC8F3A55003B3BFFF3A00F991F422E498CC994D0B",
+      "saved_file": "call-103.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 104,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2026-02-16",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "02/16/2026",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "7842902030814C5C64B69A9D8E1C4F2BEFF7FB8CC781F4394575F4E314D614CD",
+      "saved_file": "call-104.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 105,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2026-02-23",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "02/23/2026",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "6BF3518214C3819B68207DC261A980F57CC1058A70E9DC164F141B7DE5CC924E",
+      "saved_file": "call-105.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 106,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2026-03-02",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "03/02/2026",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "CBEFE2A0B4177A494F9E54E1FC11382D096282A2E3D06F7E87F8AAE807B7A36C",
+      "saved_file": "call-106.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 107,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2026-03-09",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "03/09/2026",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "DA8838D43D9584C2210843415BAB15EF204CAD6E4923372102302319CF1CC2E6",
+      "saved_file": "call-107.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 108,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2026-03-16",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "03/16/2026",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "5073A949777F18AC86D41B9E8C4D4BA52B5996C684A866AC24D9FD67A48E4071",
+      "saved_file": "call-108.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 109,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2026-03-23",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "03/23/2026",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "F020065850EDDCC03FA650A78D884D16012E09654F03B778A5D141B798890DEB",
+      "saved_file": "call-109.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 110,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2026-03-30",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "03/30/2026",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "1C307010578AC9B82C0FBF0CC6DB2FCDCAF8D8017C2864ACF837E5E5FE360EAF",
+      "saved_file": "call-110.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 111,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2026-04-06",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "04/06/2026",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "FD75FB62F16A8E247EA593DC43CA65A4EFAD354514EBAEF9D96B08C238892D26",
+      "saved_file": "call-111.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 112,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2026-04-13",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "04/13/2026",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "04B28C74F13BD985336B663C8899D4C729E6C6EAF35B853969A8F0F4264E5788",
+      "saved_file": "call-112.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 113,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2026-04-20",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "04/20/2026",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "D02651A896789628521E3E05DF3B207A2D18586538373985B0CAAC868872E5AD",
+      "saved_file": "call-113.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 114,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2026-04-27",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "04/27/2026",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "5C5AAE3D6F43BA5DEAFDD287E130AC3B193DD12131C45E6CE5C772DFA0BAC430",
+      "saved_file": "call-114.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 115,
+      "method": "GET",
+      "label": "frisk offentlig kontekst",
+      "url": "https://badmintonplayer.dk/DBF/Ranglister/",
+      "fields_changed": null,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 21846,
+      "response_sha256_redacted": "B8AD91A1858115BF54A2870428D2214271B2DEEFDA6C524BC842BC8E8080DB39",
+      "saved_file": "call-115.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 116,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2026-05-04",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "05/04/2026",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "074214C040F9107F32046C103F4DB5A2DA74F8A4FE49A3507AF6087DA204B66D",
+      "saved_file": "call-116.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 117,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2026-05-11",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "05/11/2026",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "F937C39EEDB29291BFFE667D1A1DECCC1832F4B2A62DA408B417A8B0C263843A",
+      "saved_file": "call-117.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 118,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2026-05-18",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "05/18/2026",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "A0A4D3F34932F849856976450A89E751F42D5F173C7CF8857A5FDC1867BCA72B",
+      "saved_file": "call-118.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 119,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2026-05-25",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "05/25/2026",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "CEEAD387110E9470E3FC4EAC6261E76CF91A1573E85111A4D7FB7D771E51E0EB",
+      "saved_file": "call-119.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 120,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2026-06-01",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "06/01/2026",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "035860B788859779E22CA62BDD4B3FAC69A36B78C3D86DD32CA60B02E0951748",
+      "saved_file": "call-120.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 121,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2026-06-08",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "06/08/2026",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "2F95B81ECBCE4EA5B0A1598CC2A7159DC3F9B57D3B5850A21B6DF9171FEC40BE",
+      "saved_file": "call-121.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 122,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2026-06-15",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "06/15/2026",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "6BBB664BFABCBF3E80A64A27241265332359862F636D6770C038C5B98C5562BB",
+      "saved_file": "call-122.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 123,
+      "method": "POST",
+      "label": "ugeversion Benjamin Hinge Carlsson 2026-06-29",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "06/29/2026",
+        "playerid": "330650"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13047,
+      "response_sha256_redacted": "F51DEF81D7E9FE89E2D01EB43C00BAD5E67993C245BB51B42C365CDFC3E1FD2C",
+      "saved_file": "call-123.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 124,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2025-07-21",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "07/21/2025",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "D76F8811FBF794F952093AACCE00285A00FC38B0E63AAD55631CC6332860FEDB",
+      "saved_file": "call-124.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 125,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2025-07-28",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "07/28/2025",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "FFD8121B6FBE8AFA316B4EDE2FD6BBC46B9C99ADADE846E6BA7637E52D4D28F3",
+      "saved_file": "call-125.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 126,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2025-08-04",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "08/04/2025",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "1256472D68E08BB9D4C9DE918CB23BCECCBDD716A4F26A43BC5D072BDF51A71B",
+      "saved_file": "call-126.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 127,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2025-08-11",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "08/11/2025",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "1D061C917E3D2C2C95DF643E7B5EB004BD26CBA591F9324C263AEB847A484BCD",
+      "saved_file": "call-127.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 128,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2025-08-18",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "08/18/2025",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "93B6B026B9CB993DC6E528B4D80895B28E06961DF6F223CB877D9B6CE9F38D68",
+      "saved_file": "call-128.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 129,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2025-08-25",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "08/25/2025",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "3AFF935F08D00DFD59383B300AA0388D1CB45AFBC309EB89475ACD1757A7B637",
+      "saved_file": "call-129.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 130,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2025-09-01",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "09/01/2025",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "77643D0246D87DEABA59B3D4B837C79B4206F606042A412B0AC28ACA4BFC2FF5",
+      "saved_file": "call-130.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 131,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2025-09-08",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "09/08/2025",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "81350EF309DA65E21EB77AAD034FEFB5A51C97B1A8555491E190D66227790C43",
+      "saved_file": "call-131.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 132,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2025-09-15",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "09/15/2025",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "1A1FA02DC0B6D6A24ECB9274B9501FD310459C3A1F44AA0DD7E7AAECDA3C8BC8",
+      "saved_file": "call-132.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 133,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2025-09-22",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "09/22/2025",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "AB62F3FFBE7A2A44DC94486DCC48511E9AA3CD82B16B6C73E5CEFE668FA83057",
+      "saved_file": "call-133.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 134,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2025-09-29",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "09/29/2025",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "DFBB74D0EC3EABB192C42C631F13C9AC00CC3A8CDCF9A5D389F6FE985937B9E8",
+      "saved_file": "call-134.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 135,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2025-10-06",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "10/06/2025",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "AC90F1F5C9E6B6EFC2066D0FB77AD9698B72249739E2249E7CC8488569FF6125",
+      "saved_file": "call-135.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 136,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2025-10-13",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "10/13/2025",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "5BC11A101109A0C3F4AF9BFF01AB72B31F2B0CB55E6A168654215DD44EB7937F",
+      "saved_file": "call-136.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 137,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2025-10-20",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "10/20/2025",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "9BC50E8C24735BC4E54BE5D9F1E93CA502C65B63213DD3191146D9CF5CF2D83C",
+      "saved_file": "call-137.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 138,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2025-10-27",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "10/27/2025",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "45C04378DBFDC967D56596A0EC16EE8495F5E97E6F87CEC5E8646F58E6AF220C",
+      "saved_file": "call-138.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 139,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2025-11-03",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "11/03/2025",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "2546D6286593F312C96DF5C98ED9AD4E516F5676E2B89EAEC01D1B114C5FCEBA",
+      "saved_file": "call-139.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 140,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2025-11-10",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "11/10/2025",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "1DDCC3CFF816F30D232DF7A1F2B4C55FF57305C6E626A1F62D89A526FB27EADD",
+      "saved_file": "call-140.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 141,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2025-11-17",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "11/17/2025",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "85B6DC1B73F135048E981495FBDC56640BBE38FE0A9F55460461F10D544BF59E",
+      "saved_file": "call-141.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 142,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2025-11-24",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "11/24/2025",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "86075F3E8A7A7E48679CE22F7E341E93891649814651DE1043F41EA6AC9042E3",
+      "saved_file": "call-142.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 143,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2025-12-01",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "12/01/2025",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "9BE8C6838DF00607C595524B88A63303F5DE6B24DD232DD41341F7427514BC97",
+      "saved_file": "call-143.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 144,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2025-12-08",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "12/08/2025",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "166645613AA8BB1A7D4C81586CE8C03185379BA7B20A2A0565A94151681F9081",
+      "saved_file": "call-144.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 145,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2025-12-15",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "12/15/2025",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "962E96CE7FE3D99B050852B12288311A88F138AB1FF84447FFDE5418CD114CCB",
+      "saved_file": "call-145.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 146,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2025-12-22",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "12/22/2025",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "1B05C74EEE9D33D4F2CDB678540579A8F9EF530E8330D6829E06E6FD54982C62",
+      "saved_file": "call-146.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 147,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2025-12-29",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "12/29/2025",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "6463FB900BE74AEC5F36B603778F03DB4EDF61F3C44AA273BE22ECA27A12269F",
+      "saved_file": "call-147.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 148,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2026-01-05",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "01/05/2026",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "0BE12764083C8D95FC43DDE6DF76A9D363E6D3E13EF1734589EF856A91EA5B98",
+      "saved_file": "call-148.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 149,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2026-01-12",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "01/12/2026",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "A1CEA0739AA836D34D441256E82B5D42D09942FD4A1DA1CDBB854943298621DE",
+      "saved_file": "call-149.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 150,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2026-01-19",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "01/19/2026",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "59952811CA75F38B75B5F73DF162E7F10F1794AF3CA22D532229F794DD1EF0A5",
+      "saved_file": "call-150.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 151,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2026-01-26",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "01/26/2026",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "2CAAA84EFF47316B36226BBDC5F82B0EBAFEEC3E4520AE01A8337958EFF91E2F",
+      "saved_file": "call-151.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 152,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2026-02-02",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "02/02/2026",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "B1D758087AE7431418C352111D082A25E9FB63EE7B6520DE8D14D8583CE011DA",
+      "saved_file": "call-152.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 153,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2026-02-09",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "02/09/2026",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "CCBCB16DDE0C34FDBF95B100FD40022CF7E0AAD834B1D71B479A6F13BC6DBDEE",
+      "saved_file": "call-153.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 154,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2026-02-16",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "02/16/2026",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "5287487E66E968694759438B06BC748B2ED9717B1FF1629EA3BFC9B71218F950",
+      "saved_file": "call-154.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 155,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2026-02-23",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "02/23/2026",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "45C75C2BF3EB108AFDD91C31F6C3C23238817E3CAD2E183A5F2CB1F4B243DDB5",
+      "saved_file": "call-155.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 156,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2026-03-02",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "03/02/2026",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "10E6FF7C53189529D74D3368C6D5475E655CC182E56711DC474FF1049D3D6C1D",
+      "saved_file": "call-156.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 157,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2026-03-09",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "03/09/2026",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "BAD81FE3D8F2F399514CAF92CB17C0C0F593DC2B0B40B3B123AF8486C0DEE666",
+      "saved_file": "call-157.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 158,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2026-03-16",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "03/16/2026",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "1E60BF7A16A07DDD3FC5BA161A15062F1E18409AB3AE6FBF392C06A4A168B8FD",
+      "saved_file": "call-158.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 159,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2026-03-23",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "03/23/2026",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "BB3EEEDDFA7A895910FAFD0A1FCE5FC6BF1B9242A0A3718060DA93430F33EE69",
+      "saved_file": "call-159.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 160,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2026-03-30",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "03/30/2026",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "2EFB2927AFA6D1DE10660FE70CD09F9FC82217C090B80B09ECBD49A211B6B750",
+      "saved_file": "call-160.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 161,
+      "method": "GET",
+      "label": "frisk offentlig kontekst",
+      "url": "https://badmintonplayer.dk/DBF/Ranglister/",
+      "fields_changed": null,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 21846,
+      "response_sha256_redacted": "B8AD91A1858115BF54A2870428D2214271B2DEEFDA6C524BC842BC8E8080DB39",
+      "saved_file": "call-161.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 162,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2026-04-06",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "04/06/2026",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "DB89623FA0915332BCE41B1558CF653519572C5B91232089485707E7FA41FF01",
+      "saved_file": "call-162.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 163,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2026-04-13",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "04/13/2026",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "FC574C09593846EA06896CA9BC0FB12721BA86D5E1F2E086ABAC2917B8FF0742",
+      "saved_file": "call-163.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 164,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2026-04-20",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "04/20/2026",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "907517C2CF6FF66F9F5AFA9DA5A55EBFCB76BD9F747470531E1B2724B4957EF9",
+      "saved_file": "call-164.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 165,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2026-04-27",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "04/27/2026",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "C53A72371C7313EA9AC5A48220CAC621C52C8FEDCEE98B92719A7941CD533ED2",
+      "saved_file": "call-165.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 166,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2026-05-04",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "05/04/2026",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "3C21C1EBA7E8161780AA30E09027749D5A3DB878687D3C1E9DD4EAA12ABE6B04",
+      "saved_file": "call-166.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 167,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2026-05-11",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "05/11/2026",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "9B21FFF83F89333201D97A75B5899534237FAE2F663AC663DB90F5B75D3A79BE",
+      "saved_file": "call-167.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 168,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2026-05-18",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "05/18/2026",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "558E21D6C8416FA82E9A86753AD457D84166E7AEA1617F74031C305B1FCF1933",
+      "saved_file": "call-168.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 169,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2026-05-25",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "05/25/2026",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "33BEFDB41A8FC0D5B6AB2CBAB6B508590725AF4887C20676525B92FE60BF140A",
+      "saved_file": "call-169.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 170,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2026-06-01",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "06/01/2026",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "6A124A96664001C4C887BFDD06F586DFA756D28470508C30723F83930FB80279",
+      "saved_file": "call-170.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 171,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2026-06-08",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "06/08/2026",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "2F2EA1B4BBEB1776617D2FD7A9933AA25AC3A407100F08C3577EC26F78A71C12",
+      "saved_file": "call-171.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 172,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2026-06-15",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "06/15/2026",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "D964FB45CCDF66715623FA497BAABEADE65C99C80BAFCA73211E4595A81F534D",
+      "saved_file": "call-172.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 173,
+      "method": "POST",
+      "label": "ugeversion Louis Valdemar Hedegaard Toftlund 2026-06-29",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistid": "289",
+        "rankinglistversiondate": "06/29/2026",
+        "playerid": "330770"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13067,
+      "response_sha256_redacted": "525C1F1DDDFE9DC96B84FBC6276FD9F1D24C274F39A5A1F20B878A0CF3293D48",
+      "saved_file": "call-173.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 174,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2025-07-21",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "07/21/2025",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "41629612E236F3C36B012EC39ED7A33F264621C027B7F809F1A7AE232A1E7693",
+      "saved_file": "call-174.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 175,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2025-07-28",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "07/28/2025",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "1F9F37F77B9411152B76B0449A0C9E3E4016C6033906713EB87E2FB6A166ABE3",
+      "saved_file": "call-175.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 176,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2025-08-04",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "08/04/2025",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "6BF81AE99290600F2F4469B4FF5ABF17D849C2E83BDBFAF05CCEC71E5064BC8B",
+      "saved_file": "call-176.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 177,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2025-08-11",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "08/11/2025",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "1C325B23621173E9287D5872B92DB407278A5C4B01D3C485DD2D8F83FCD660C4",
+      "saved_file": "call-177.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 178,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2025-08-18",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "08/18/2025",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "DC2CE27394B516E5853014336A4BD0C0A0E96E95E569E0ED6CA92F152EEC0A2E",
+      "saved_file": "call-178.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 179,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2025-08-25",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "08/25/2025",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "02443A3A0C6A9287A217A92A1F6151C755E820D7D95AE20AA8EAA57048711064",
+      "saved_file": "call-179.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 180,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2025-09-01",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "09/01/2025",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "861516DD9FE7E57640C1BF684153015D95D04F4F27138541129C765DD00C7743",
+      "saved_file": "call-180.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 181,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2025-09-08",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "09/08/2025",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "4A91B728CFD47E6E1F716AE41CD802CB67812DC17C6DD9F6BBF25E971DB32F82",
+      "saved_file": "call-181.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 182,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2025-09-15",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "09/15/2025",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "9C080969A8853EF9C59A4F831B8304D0DC6ACE489EC5C2D38F3F7C66EBC69C78",
+      "saved_file": "call-182.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 183,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2025-09-22",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "09/22/2025",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "B025079F4D78705098C8DC925112E4B88AAF262A022B2029102E57DA38CBC3BC",
+      "saved_file": "call-183.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 184,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2025-09-29",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "09/29/2025",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "D0E5BCE764DC756E8F8CB4A22D1F41B7FE7AF8D7C12220375F931D53473D3CEE",
+      "saved_file": "call-184.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 185,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2025-10-06",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "10/06/2025",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "B3896CCEEB3BFB583A57EF29012ADA0017B6C8AE3BDFF21171260CC8F5A864D0",
+      "saved_file": "call-185.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 186,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2025-10-13",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "10/13/2025",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "D770889D36BF8BC7A57F56225BAF88E3CA8EA84024D2C592C54FFBAD9335CF04",
+      "saved_file": "call-186.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 187,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2025-10-20",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "10/20/2025",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "B97D0BFA7B76AD6A42A3D67D0BBE208B8C07896808FE0F1BC442F177B3EC6012",
+      "saved_file": "call-187.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 188,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2025-10-27",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "10/27/2025",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "E117CD1235D3BB0C38E5EDB9A03D43AB3A522AB47838F8D3C0CF9F79CE80993A",
+      "saved_file": "call-188.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 189,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2025-11-03",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "11/03/2025",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "0CAE8BC4FB6F3D13AACABBB75DC29EDD29E2325972AFAD9280FA435F245B00DF",
+      "saved_file": "call-189.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 190,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2025-11-10",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "11/10/2025",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "EFD869643DD9126356B31B87771BBA75F11584C2AC17BA9DAB8F433B78910717",
+      "saved_file": "call-190.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 191,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2025-11-17",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "11/17/2025",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "07294DE6D4CD2148888018A02D454D0AC9C125B8F6CEFEDCAE82A9DCE6E1590E",
+      "saved_file": "call-191.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 192,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2025-11-24",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "11/24/2025",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "4CB6408547879F4ED72142DBB4508A1BF444C5FC1E3788912CFB9E9E6E37DC0D",
+      "saved_file": "call-192.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 193,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2025-12-01",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "12/01/2025",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "8C8A73105385C9E0BDF16345EB64D3FD1DE86A28E734760845B579CADC9C719B",
+      "saved_file": "call-193.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 194,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2025-12-08",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "12/08/2025",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "EB3B91A96AF29E02FAC45A7E970BA67984ACF6E054EF773B8246BF2119E9AC1E",
+      "saved_file": "call-194.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 195,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2025-12-15",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "12/15/2025",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "956D16CC49D7C4ABD75721E7D538776D0DAFB28696822031BBAAF6D37FDF79D0",
+      "saved_file": "call-195.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 196,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2025-12-22",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "12/22/2025",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "E897FBF1C56D1B4DEE6044E13D657302C29F7832160C1CBDA6D41E37DD887CC5",
+      "saved_file": "call-196.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 197,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2025-12-29",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "12/29/2025",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "326B5602FA5906B71A648E69AF83D1CEA9164FC0DCB41BCE7B3A3CE3BE9DA661",
+      "saved_file": "call-197.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 198,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2026-01-05",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "01/05/2026",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "BC9643019975F1274D105995D025CC0A1F7BC038103D0B9166474BA62EDEA7A9",
+      "saved_file": "call-198.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 199,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2026-01-12",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "01/12/2026",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "64659A276F5C5514BD993A9B80167BEFC13B7EFCFBA36043CA4B36BA5D67C1C7",
+      "saved_file": "call-199.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 200,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2026-01-19",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "01/19/2026",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "87EDBF9729D2F4A24AF0C3B611A79565D169A3B00C1663D8E6AAA38D9EAB8A4A",
+      "saved_file": "call-200.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 201,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2026-01-26",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "01/26/2026",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "70499352CEE935CC9EDFA4A33A8A6B0EFF794018357D090BBCD602A8520FCD77",
+      "saved_file": "call-201.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 202,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2026-02-02",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "02/02/2026",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "A39A98F2C8D77F10AADBA3C8AB504CEA4804E1BE2552B42BAF648B72725F6FA3",
+      "saved_file": "call-202.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 203,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2026-02-09",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "02/09/2026",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "6FD56FA02C24EFA4BE728EF4A1CBFBA4E2A3681C4A12A9C31773C4B9AC2DCBBB",
+      "saved_file": "call-203.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 204,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2026-02-16",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "02/16/2026",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "1C4CDF934B577DD5A684251121DC311BD991CB8F592DEE466BEF42D8579CE13C",
+      "saved_file": "call-204.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 205,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2026-02-23",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "02/23/2026",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "5B8D707C6ED38E9DC58BF151D416747FC8E5CF8A24E0DB89096DEF9300061320",
+      "saved_file": "call-205.json.gz",
+      "network_error": null
+    },
+    {
+      "number": 206,
+      "method": "POST",
+      "label": "ugeversion Theodor Lumby Jessen 2026-03-02",
+      "url": "https://badmintonplayer.dk/SportsResults/Components/WebService1.asmx/GetRankingListPlayers",
+      "fields_changed": {
+        "rankinglistversiondate": "03/02/2026",
+        "playerid": "327691"
+      },
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 13041,
+      "response_sha256_redacted": "CAC8D2967471A03537BD155E7ED08B8AF4DCF14E8D610A0878039300D9E7CE6B",
+      "saved_file": "call-206.json.gz",
+      "network_error": null
+    }
+  ]
+}

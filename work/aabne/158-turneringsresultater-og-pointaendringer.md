@@ -30,6 +30,9 @@ Skriv kort: er ugentlig hentning relevant, for hvilken gruppe (GSB-ungdom, komme
 - Gem rå svar uden kontekstnøgle i `statistik/results/158-raa-svar/` (komprimeret, under ca. 50 MB; ellers kun hash og de første tre svar pr. spiller).
 - Alle databaser åbnes readOnly. Ingen skrivning.
 
+### Opfølgning: Del B/Del C
+Del B blev påbegyndt, men standset efter 180 af 392 ugeopslag. Et kontekst-GET modtog svar, men checkpointskrivningen fejlede, før HTTP-status kunne gemmes. Der blev ikke udledt før/efter-forhold, falsk positive/negative eller aktivitetskonklusion. Del C er ikke kørt. Se delrapporten 158b-pointaendring-vs-kampe.md.
+
 ## Output
 - `statistik/scripts/158-turneringer.mjs`
 - `statistik/results/158-turneringer.md` (Del A–C, tabeller, forespørgselslog)
@@ -56,6 +59,10 @@ Skriv i "Spørgsmål". Gæt ikke på, hvorfor point ændrer sig.
 - Det første GET-forsøg har ikke bevaret status/bytes/hash, fordi den daværende kode kastede før logskrivning. Nyt GET-svar viste, at den gamle brede regex ramte `CAPTCHA` som del af `RECAPTCHA_SITE_KEY`; ingen tydelig udfordringsside-markør blev fundet, ja SR_CallbackContext blev fundet, og efterfølgende POST-kald lykkedes. Dette forklarer falsk alarmen stærkt, men præcis gammel svartekst kan ikke genskabes.
 - Ingen af de fem undersøgte profiler havde kun holdkamprækker: alle havde både turnerings- og holdkamprækker. 154-materialet og de udvalgte profilopslag afgør ikke, om en spiller findes, som kun spiller holdkampe.
 - Eventtabellen viser et `Point`-felt, men ikke point før/efter eller delta. Om tallet gælder pr. kamp eller samlet pr. turnering, og om tidligere sæsoner indgår, kan ikke afgøres fra de fem svar.
+
+## Spørgsmål — opfølgning Del B
+- Efter 15 nye eventprofilopslag blev to kun-holdprofiler bekræftet: Chastine Christiansen (328196) og Sophia Rita Giuliani (362606), hver med én holdkamprække, ingen turneringsrækker og ingen ukendte eventrækker. Dette supplerer den tidligere prøve på fem profiler, som alle havde begge typer.
+- Kørslen standsede efter 180/392 ugeopslag, da Node fejlede med UNKNOWN: unknown error ved skrivning af statistik/results/158b-raa-svar/state.json. Kald 207’s rå GET-svar er gemt og redigeret (21.760 bytes; SHA-256 B8AD91A1858115BF54A2870428D2214271B2DEEFDA6C524BC842BC8E8080DB39), men HTTP-status mangler i loggen. Skal checkpointskrivningen gøres atomisk, og Del B genoptages med de 212 manglende ugeopslag? Kaldtælling: 207 i alt inkl. fire Del A-kald; 202 kald er logget, ét råsvar mangler statusmetadata.
 
 ## Tilbagefald
 Slet de nye filer, inklusive `158-raa-svar/`. Ingen database er berørt.
