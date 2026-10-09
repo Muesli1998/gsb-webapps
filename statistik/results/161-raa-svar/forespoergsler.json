@@ -1,0 +1,398 @@
+{
+  "task": 161,
+  "calls": [
+    {
+      "n": 1,
+      "method": "GET",
+      "url": "https://badmintonplayer.dk/DBF/Ranglister/",
+      "status": 200,
+      "bytes": 24149,
+      "sha256": "4489b5790458659a5bb470efbce799006bbedb092ff3bd778d7f521d46ba3104",
+      "label": "GET context"
+    },
+    {
+      "n": 2,
+      "method": "POST",
+      "label": "ufiltreret-287-M-p1",
+      "changes": {
+        "rankinglistagegroupid": "15",
+        "seasonid": "2026",
+        "gender": "M",
+        "pageindex": "1"
+      },
+      "list": 287,
+      "param": "",
+      "status": 200,
+      "bytes": 62974,
+      "sha256": "7eaf0f0b4a85e8859329d93c1a392aa22f7632310fde7ada69b319bf881edcb8",
+      "file": "02-ufiltreret-287-M-p1.txt"
+    },
+    {
+      "n": 3,
+      "method": "POST",
+      "label": "ufiltreret-287-K-p12",
+      "changes": {
+        "rankinglistagegroupid": "15",
+        "seasonid": "2026",
+        "gender": "K",
+        "pageindex": "12"
+      },
+      "list": 287,
+      "param": "",
+      "status": 200,
+      "bytes": 62991,
+      "sha256": "481a2b6c6294f7fb989813124a0c0b39f0b21509e486a4456af5e5438eb3b797",
+      "file": "03-ufiltreret-287-K-p12.txt"
+    },
+    {
+      "n": 4,
+      "method": "POST",
+      "label": "ufiltreret-287-K-p16",
+      "changes": {
+        "rankinglistagegroupid": "15",
+        "seasonid": "2026",
+        "gender": "K",
+        "pageindex": "16"
+      },
+      "list": 287,
+      "param": "",
+      "status": 200,
+      "bytes": 62819,
+      "sha256": "be71bfbf4f50dc3c3ab77462068d1ec7b7173e4e6ed45d55703b9d0d3e07aafe",
+      "file": "04-ufiltreret-287-K-p16.txt"
+    },
+    {
+      "n": 5,
+      "method": "POST",
+      "label": "ufiltreret-287-K-p17",
+      "changes": {
+        "rankinglistagegroupid": "15",
+        "seasonid": "2026",
+        "gender": "K",
+        "pageindex": "17"
+      },
+      "list": 287,
+      "param": "",
+      "status": 200,
+      "bytes": 63473,
+      "sha256": "82dbcd20ec3f996e4fd4cf34f77e24533b0a370d164db5532144fb2880dc6f0c",
+      "file": "05-ufiltreret-287-K-p17.txt"
+    },
+    {
+      "n": 6,
+      "method": "POST",
+      "label": "ufiltreret-287-K-p18",
+      "changes": {
+        "rankinglistagegroupid": "15",
+        "seasonid": "2026",
+        "gender": "K",
+        "pageindex": "18"
+      },
+      "list": 287,
+      "param": "",
+      "status": 200,
+      "bytes": 63475,
+      "sha256": "d9e4d025fbf1f3802f3ef0c2ac6aaf786f04310dc7f3e15b75761233baa02859",
+      "file": "06-ufiltreret-287-K-p18.txt"
+    },
+    {
+      "n": 7,
+      "method": "POST",
+      "label": "ufiltreret-287-K-p19",
+      "changes": {
+        "rankinglistagegroupid": "15",
+        "seasonid": "2026",
+        "gender": "K",
+        "pageindex": "19"
+      },
+      "list": 287,
+      "param": "",
+      "status": 200,
+      "bytes": 63357,
+      "sha256": "85c86476d334acef5fd1e6262675828211b4f928d2fd65a47833ea6f75e36d35",
+      "file": "07-ufiltreret-287-K-p19.txt"
+    },
+    {
+      "n": 8,
+      "method": "POST",
+      "label": "ufiltreret-287-K-p23",
+      "changes": {
+        "rankinglistagegroupid": "15",
+        "seasonid": "2026",
+        "gender": "K",
+        "pageindex": "23"
+      },
+      "list": 287,
+      "param": "",
+      "status": 200,
+      "bytes": 63423,
+      "sha256": "211b7413807a9996876d177e9ff75d6de1e76784f623b6749bff94036117c84c",
+      "file": "08-ufiltreret-287-K-p23.txt"
+    },
+    {
+      "n": 9,
+      "method": "POST",
+      "label": "ufiltreret-287-K-p24",
+      "changes": {
+        "rankinglistagegroupid": "15",
+        "seasonid": "2026",
+        "gender": "K",
+        "pageindex": "24"
+      },
+      "list": 287,
+      "param": "",
+      "status": 200,
+      "bytes": 63144,
+      "sha256": "3adc6f96b2f4f75ca6834538398ce9ac9f97c42d6bbe8b4378c8bbc7dbb6670c",
+      "file": "09-ufiltreret-287-K-p24.txt"
+    },
+    {
+      "n": 10,
+      "method": "POST",
+      "label": "ufiltreret-287-K-p25",
+      "changes": {
+        "rankinglistagegroupid": "15",
+        "seasonid": "2026",
+        "gender": "K",
+        "pageindex": "25"
+      },
+      "list": 287,
+      "param": "",
+      "status": 200,
+      "bytes": 63459,
+      "sha256": "adb41a170655d77fd9d819b05b9944cd7e07cef5d592ae6a5d229781c0956d6d",
+      "file": "10-ufiltreret-287-K-p25.txt"
+    },
+    {
+      "n": 11,
+      "method": "POST",
+      "label": "ufiltreret-287-K-p26",
+      "changes": {
+        "rankinglistagegroupid": "15",
+        "seasonid": "2026",
+        "gender": "K",
+        "pageindex": "26"
+      },
+      "list": 287,
+      "param": "",
+      "status": 200,
+      "bytes": 63359,
+      "sha256": "1a9cfc64b585a8874bf1cf62fca755170ad0c699685caf55b7e0046233d33829",
+      "file": "11-ufiltreret-287-K-p26.txt"
+    },
+    {
+      "n": 12,
+      "method": "POST",
+      "label": "ufiltreret-287-M-p19",
+      "changes": {
+        "rankinglistagegroupid": "15",
+        "seasonid": "2026",
+        "gender": "M",
+        "pageindex": "19"
+      },
+      "list": 287,
+      "param": "",
+      "status": 200,
+      "bytes": 63099,
+      "sha256": "c32364b00e7b02be7b816789eefd5b0a3fbb61562fbd0b00cd19c02ea581301b",
+      "file": "12-ufiltreret-287-M-p19.txt"
+    },
+    {
+      "n": 13,
+      "method": "POST",
+      "label": "ufiltreret-287-M-p20",
+      "changes": {
+        "rankinglistagegroupid": "15",
+        "seasonid": "2026",
+        "gender": "M",
+        "pageindex": "20"
+      },
+      "list": 287,
+      "param": "",
+      "status": 200,
+      "bytes": 63314,
+      "sha256": "082e956a752f21b1ae047799b0ecaefdb7e1b8efc095741e0e15978477559112",
+      "file": "13-ufiltreret-287-M-p20.txt"
+    },
+    {
+      "n": 14,
+      "method": "POST",
+      "label": "ufiltreret-287-M-p24",
+      "changes": {
+        "rankinglistagegroupid": "15",
+        "seasonid": "2026",
+        "gender": "M",
+        "pageindex": "24"
+      },
+      "list": 287,
+      "param": "",
+      "status": 200,
+      "bytes": 63248,
+      "sha256": "7912b76776b41ed8cf6622223c2f117bbd79646b437033b8520d7d2387ddad7b",
+      "file": "14-ufiltreret-287-M-p24.txt"
+    },
+    {
+      "n": 15,
+      "method": "POST",
+      "label": "ufiltreret-287-M-p25",
+      "changes": {
+        "rankinglistagegroupid": "15",
+        "seasonid": "2026",
+        "gender": "M",
+        "pageindex": "25"
+      },
+      "list": 287,
+      "param": "",
+      "status": 200,
+      "bytes": 62815,
+      "sha256": "3b79de1c4ab7d5b053ffe1ad24d6ac0ee77db245bb8c5d5a6ecdab3595820546",
+      "file": "15-ufiltreret-287-M-p25.txt"
+    },
+    {
+      "n": 16,
+      "method": "POST",
+      "label": "ufiltreret-287-M-p34",
+      "changes": {
+        "rankinglistagegroupid": "15",
+        "seasonid": "2026",
+        "gender": "M",
+        "pageindex": "34"
+      },
+      "list": 287,
+      "param": "",
+      "status": 200,
+      "bytes": 63085,
+      "sha256": "3e53bacb2286e75b6d403841092b3d1d76a40b55726909a7175c795de6d61ce3",
+      "file": "16-ufiltreret-287-M-p34.txt"
+    },
+    {
+      "n": 17,
+      "method": "POST",
+      "label": "ufiltreret-287-M-p35",
+      "changes": {
+        "rankinglistagegroupid": "15",
+        "seasonid": "2026",
+        "gender": "M",
+        "pageindex": "35"
+      },
+      "list": 287,
+      "param": "",
+      "status": 200,
+      "bytes": 63307,
+      "sha256": "01e0346443b5b54bac11095e4d1f89ced34cf74941a151f9930762f844722c8e",
+      "file": "17-ufiltreret-287-M-p35.txt"
+    },
+    {
+      "n": 18,
+      "method": "POST",
+      "label": "ufiltreret-287-M-p39",
+      "changes": {
+        "rankinglistagegroupid": "15",
+        "seasonid": "2026",
+        "gender": "M",
+        "pageindex": "39"
+      },
+      "list": 287,
+      "param": "",
+      "status": 200,
+      "bytes": 63024,
+      "sha256": "5f73156a14e33939562f4eb7035acb4293f74eb82dcd576b7b274fc8de7288a1",
+      "file": "18-ufiltreret-287-M-p39.txt"
+    },
+    {
+      "n": 19,
+      "method": "POST",
+      "label": "ufiltreret-287-M-p40",
+      "changes": {
+        "rankinglistagegroupid": "15",
+        "seasonid": "2026",
+        "gender": "M",
+        "pageindex": "40"
+      },
+      "list": 287,
+      "param": "",
+      "status": 200,
+      "bytes": 63147,
+      "sha256": "c6a95247d98778ee2a5f204679ebe2a75bf9b563987d59782b013bb6b8b61e9c",
+      "file": "19-ufiltreret-287-M-p40.txt"
+    },
+    {
+      "n": 20,
+      "method": "POST",
+      "label": "ufiltreret-287-M-p49",
+      "changes": {
+        "rankinglistagegroupid": "15",
+        "seasonid": "2026",
+        "gender": "M",
+        "pageindex": "49"
+      },
+      "list": 287,
+      "param": "",
+      "status": 200,
+      "bytes": 63338,
+      "sha256": "7816348850a15f34f75a38e0c989fd828ae62057c393711acdecd584f4bc8d03",
+      "file": "20-ufiltreret-287-M-p49.txt"
+    },
+    {
+      "n": 21,
+      "method": "POST",
+      "label": "ufiltreret-287-M-p50",
+      "changes": {
+        "rankinglistagegroupid": "15",
+        "seasonid": "2026",
+        "gender": "M",
+        "pageindex": "50"
+      },
+      "list": 287,
+      "param": "",
+      "status": 200,
+      "bytes": 63025,
+      "sha256": "802848d3ccf12bfb6ae6fc57761f8d7c5dde1be3af9d8e1f8b2b6f1e50dca5ae",
+      "file": "21-ufiltreret-287-M-p50.txt"
+    },
+    {
+      "n": 22,
+      "method": "POST",
+      "label": "ufiltreret-287-M-p59",
+      "changes": {
+        "rankinglistagegroupid": "15",
+        "seasonid": "2026",
+        "gender": "M",
+        "pageindex": "59"
+      },
+      "list": 287,
+      "param": "",
+      "status": 200,
+      "bytes": 63258,
+      "sha256": "c194548e694e56fe6043d2a2e8ca2df31e0e8021b7293300dcbf1da314fdf227",
+      "file": "22-ufiltreret-287-M-p59.txt"
+    },
+    {
+      "n": 23,
+      "method": "POST",
+      "label": "ufiltreret-287-M-p60",
+      "changes": {
+        "rankinglistagegroupid": "15",
+        "seasonid": "2026",
+        "gender": "M",
+        "pageindex": "60"
+      },
+      "list": 287,
+      "param": "",
+      "status": 200,
+      "bytes": 63179,
+      "sha256": "70bf33314562a940e0b6b329a217b1cf0adb9085d0068feb0144e1a92538abd3",
+      "file": "23-ufiltreret-287-M-p60.txt"
+    }
+  ],
+  "filter_hash_check": {
+    "K baseline saved file": "statistik/results/159-raa-svar/01-ufiltreret-287-K-p1.txt",
+    "K_redacted_sha256": "b566c3022fb48708aa8f5c1134be252fd7d4eb253468336beca51ff2e117f454",
+    "M new file": "statistik\\results\\161-raa-svar\\02-ufiltreret-287-M-p1.txt",
+    "M_redacted_sha256": "7eaf0f0b4a85e8859329d93c1a392aa22f7632310fde7ada69b319bf881edcb8",
+    "equal": false,
+    "K_rows": 100,
+    "M_rows": 100
+  },
+  "stopped_reason": null
+}

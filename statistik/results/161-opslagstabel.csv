@@ -1,0 +1,37 @@
+﻿raekke,koen,placeringsinterval,hoejeste_point_p25-p75,single_p25-p75,double_p25-p75,mix_p25-p75,antal_randspillere,kilde
+E,M,1–40,4632.5–4850.0 (n=40),4561.5–4812.5 (n=15),4483.5–4772.5 (n=30),4343.75–4828.0 (n=22),40,287 + ranking_points 2026-10-07
+E-M,M,41–200,3578.0–4297.5 (n=59),3529.0–4299.0 (n=41),3459.75–3846.75 (n=56),3346.5–3952.5 (n=27),60,287 + ranking_points 2026-10-07
+M,M,201–400,3323.5–3504.0 (n=56),3286.0–3497.0 (n=41),3295.5–3436.5 (n=56),3206.75–3341.0 (n=24),60,287 + ranking_points 2026-10-07
+M-A,M,401–700,3162.75–3307.75 (n=66),3144.0–3291.0 (n=49),3130.5–3265.5 (n=66),2941.0–3243.0 (n=29),68,287 + ranking_points 2026-10-07
+A,M,701–2000,2667.0–3156.25 (n=52),2633.5–3123.0 (n=39),2610.0–3140.75 (n=52),2577.0–2862.0 (n=29),55,287 + ranking_points 2026-10-07
+A-B,M,2001–2500,2481.75–2633.75 (n=60),2507.75–2619.75 (n=32),2444.5–2616.25 (n=60),2227.25–2531.5 (n=28),61,287 + ranking_points 2026-10-07
+B,M,2501–3500,2170.0–2465.25 (n=62),2170.0–2479.5 (n=31),2151.0–2427.0 (n=61),2043.0–2352.0 (n=25),63,287 + ranking_points 2026-10-07
+B-C,M,3501–4000,2043.5–2166.5 (n=51),1984.0–2189.0 (n=21),2033.0–2146.0 (n=51),1685.5–2037.25 (n=22),55,287 + ranking_points 2026-10-07
+C,M,4001–5000,1858.5–2055.75 (n=54),1897.5–2100.75 (n=28),1848.25–2023.75 (n=54),1630.0–1963.0 (n=23),55,287 + ranking_points 2026-10-07
+C-D,M,5001–6000,1730.0–1870.0 (n=65),1748.25–1936.5 (n=26),1724.5–1843.0 (n=64),1574.0–1735.5 (n=27),65,287 + ranking_points 2026-10-07
+D,M,6001–∞,1727.0–1737.0 (n=30),1706.5–1761.5 (n=10),1727.0–1728.0 (n=29),1591.5–1702.5 (n=4),30,287 + ranking_points 2026-10-07
+E,K,1–40,3479.25–3654.75 (n=40),3486.0–3650.25 (n=20),3425.25–3492.25 (n=26),3306.0–3645.75 (n=22),40,287 + ranking_points 2026-10-07
+E-M,K,41–150,3030.5–3341.0 (n=59),2955.75–3321.25 (n=28),3005.0–3301.0 (n=53),2947.0–3252.75 (n=42),60,287 + ranking_points 2026-10-07
+M,K,151–300,2777.0–2963.0 (n=61),2776.5–2960.0 (n=39),2739.5–2927.0 (n=59),2694.75–2829.0 (n=44),65,287 + ranking_points 2026-10-07
+M-A,K,301–500,2624.0–2765.0 (n=53),2560.0–2723.0 (n=25),2577.0–2736.0 (n=53),2563.5–2697.25 (n=40),58,287 + ranking_points 2026-10-07
+A,K,501–1000,2320.5–2593.25 (n=60),2281.0–2572.0 (n=29),2275.0–2570.25 (n=60),2272.5–2573.5 (n=43),61,287 + ranking_points 2026-10-07
+A-B,K,1001–1200,2212.75–2297.25 (n=60),2171.25–2293.5 (n=30),2150.0–2234.5 (n=59),2105.5–2262.75 (n=44),63,287 + ranking_points 2026-10-07
+B,K,1201–1700,1899.75–2185.25 (n=56),1845.75–2181.0 (n=22),1877.75–2148.5 (n=52),1827.0–2145.0 (n=41),60,287 + ranking_points 2026-10-07
+B-C,K,1701–1900,1799.0–1896.0 (n=57),1785.5–1927.0 (n=27),1711.0–1806.0 (n=55),1622.0–1872.0 (n=49),59,287 + ranking_points 2026-10-07
+C,K,1901–2400,1573.5–1777.5 (n=63),1586.0–1790.0 (n=29),1545.0–1738.0 (n=61),1490.0–1668.0 (n=50),64,287 + ranking_points 2026-10-07
+C-D,K,2401–2600,1522.0–1569.0 (n=49),1544.0–1622.75 (n=16),1497.75–1541.5 (n=46),1328.5–1534.25 (n=40),53,287 + ranking_points 2026-10-07
+D,K,2601–∞,1518.0–1552.0 (n=25),1509.25–1578.5 (n=12),1466.0–1522.0 (n=25),1351.5–1515.0 (n=19),28,287 + ranking_points 2026-10-07
+
+alder,koen,raekker,interval,kilde
+U9,M,ukendt præcist; ingen placeringsrækker ifølge 159/160,ukendt i gemte rapporter,statistik/results/159-tilmeldingsniveau.md; statistik/results/160-ungdom-placeringsraekker.md
+U11,M,ukendt præcist; ingen placeringsrækker ifølge 159/160,ukendt i gemte rapporter,statistik/results/159-tilmeldingsniveau.md; statistik/results/160-ungdom-placeringsraekker.md
+U13,M,M; M-A; A,M placering 1–24; M-A 25–48; A fra 49 med >1525 point,statistik/results/159-tilmeldingsniveau.md; statistik/results/160-ungdom-placeringsraekker.md
+U15,M,E; E-M; M; A; B; C; D,E placering 1–24 (top-8-undtagelse pr. disciplin); E-M 25–36; M fra 37 hvis >1850; A >1601–1850; B >1375–1600; C >1200–1375; D ≤1200,statistik/results/159-tilmeldingsniveau.md; statistik/results/160-ungdom-placeringsraekker.md
+U17,M,E; E-M; M; lavere rækker ukendt,E placering 1–24 (top-8-undtagelse pr. disciplin); E-M 25–36; M fra 37 hvis >2150; lavere punktintervaller ukendt,statistik/results/159-tilmeldingsniveau.md; statistik/results/160-ungdom-placeringsraekker.md
+U19,M,ukendt præcist; ingen placeringsrækker ifølge 159/160,ukendt i gemte rapporter,statistik/results/159-tilmeldingsniveau.md; statistik/results/160-ungdom-placeringsraekker.md
+U9,K,ukendt præcist; ingen placeringsrækker ifølge 159/160,ukendt i gemte rapporter,statistik/results/159-tilmeldingsniveau.md; statistik/results/160-ungdom-placeringsraekker.md
+U11,K,ukendt præcist; ingen placeringsrækker ifølge 159/160,ukendt i gemte rapporter,statistik/results/159-tilmeldingsniveau.md; statistik/results/160-ungdom-placeringsraekker.md
+U13,K,M; M-A; A,M placering 1–24; M-A 25–48; A fra 49 med >1350 point,statistik/results/159-tilmeldingsniveau.md; statistik/results/160-ungdom-placeringsraekker.md
+U15,K,E; E-M; M; A; B; C; D,E placering 1–24 (top-8-undtagelse pr. disciplin); E-M 25–36; M fra 37 hvis >1500; A >1350–1500; B >1225–1350; C >1125–1225; D ≤1125,statistik/results/159-tilmeldingsniveau.md; statistik/results/160-ungdom-placeringsraekker.md
+U17,K,E; E-M; M; lavere rækker ukendt,E placering 1–24 (top-8-undtagelse pr. disciplin); E-M 25–36; M fra 37 hvis >1700; lavere punktintervaller ukendt,statistik/results/159-tilmeldingsniveau.md; statistik/results/160-ungdom-placeringsraekker.md
+U19,K,ukendt præcist; ingen placeringsrækker ifølge 159/160,ukendt i gemte rapporter,statistik/results/159-tilmeldingsniveau.md; statistik/results/160-ungdom-placeringsraekker.md

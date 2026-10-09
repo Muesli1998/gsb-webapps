@@ -50,10 +50,17 @@ Skriv i "Spørgsmål".
 `arbejde/161-point-ved-raekkegraenser`, fra `main`. Christoffer opretter grenen og committer selv. Codex kører kun læsende git, ustaged, ingen `git add -A`, ingen push, ingen Co-Authored-By, ingen sub-agents.
 
 ## Spørgsmål
-(Tomt.)
+Ingen blokkerende spørgsmål. Forbehold og ukendte forhold er dokumenteret i rapporten: de empiriske punktområder er ikke formler, og de gemte ungdomsrapporter mangler præcise oplysninger for enkelte aldersgrupper/rækker. Tilmeldingsniveauets vægtede double-/mixberegning kan ikke udledes af ranglistepoint uden de officielle koefficienter.
 
 ## Tilbagefald
 Slet de nye filer, inklusive `161-raa-svar/`. Ingen database er berørt.
 
 ## Resultat
-(Udfyldes af Codex.)
+Gennemført uden databaseændringer. Rapport og maskinlæsbare data ligger i statistik/results/161-point-ved-raekkegraenser.md, .json og 161-opslagstabel.csv; netværkssvar er i statistik/results/161-raa-svar/.
+
+- Hentning: 23 kald i alt (1 GET af offentlig kontekstside og 22 POST til liste 287); 15 nødvendige sider genbrugt fra 159 og 22 manglende sider hentet. Ingen badminton.dk-kald. De to første forskellige kønsfiltre gav forskellige SHA-256 (K gemt side 1: b566c3022fb48708aa8f5c1134be252fd7d4eb253468336beca51ff2e117f454; M side 1: 7eaf0f0b4a85e8859329d93c1a392aa22f7632310fde7ada69b319bf881edcb8). Alle nye POST-kald gav HTTP 200. Siderne blev hentet sekventielt med mindst 2,1 sekunders pause.
+- Analyse: 3.699 unikke kønsplaceringer, alle 20 grænsevinduer dækket, 22 køn/række-punktområder. ID-kobling på unionen af vinduer: M 601/619 (97,1 %), K 593/621 (95,5 %). Alle enkelte vinduer ligger over kortets 70 %-grænse. Pointområderne er empiriske p25–p75, ikke officielle adgangstærskler.
+- Ungdom: opslagstabellen indeholder U9–U19 for K og M, kun fra rapporterne 159/160; manglende detaljer står som ukendt.
+- Efterprøvelige eksempler: William Bøgebjerg (M, placering 40, SEN E, højeste disciplinpoint 4380); Sara Lundgaard (K, placering 40, SEN E, 3450); Thor Christtreu (M, placering 200, SEN E-M, 3529).
+- Databaser åbnet read-only (mode=ro, PRAGMA query_only=ON). SHA-256 før/efter var uændret og svarede til kortets forventninger: gsb-statistik-normalized.db 49BC62AC3AA8B5A003A4B4D1A8112A8F986D12C8667B22342027D42A1D01B41E; liga-landskab.db 9976723EAA61E248ADC7EE33348CAD41EEBF9F30DDFDF913B6D40EF9D0D4B74C; rangliste-historik.db 6E9516DB643F88F88946A82CB76EC3B5C686C7D548ABF7084B3F60EE3DA0316F; national-spillere.db 1E27C5D81CCE8E2D656DF2C924E4BF6931EEAAF86348ADD384AB6D58F7CBAC3E; rangliste-point.db DABE3A12ACECD763E537087F0E16855AD39DF298234EB03FF111A3366100D1B9.
+- Ingen filer blev staged eller committed. Nye/ændrede filer fremgår af den afsluttende git status --short.
