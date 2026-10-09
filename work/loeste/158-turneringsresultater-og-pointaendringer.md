@@ -31,7 +31,7 @@ Skriv kort: er ugentlig hentning relevant, for hvilken gruppe (GSB-ungdom, komme
 - Alle databaser åbnes readOnly. Ingen skrivning.
 
 ### Opfølgning: Del B/Del C
-Del B blev påbegyndt, men standset efter 180 af 392 ugeopslag. Et kontekst-GET modtog svar, men checkpointskrivningen fejlede, før HTTP-status kunne gemmes. Der blev ikke udledt før/efter-forhold, falsk positive/negative eller aktivitetskonklusion. Del C er ikke kørt. Se delrapporten 158b-pointaendring-vs-kampe.md.
+Del B blev genoptaget efter rettelse af logning/checkpoint og er fuldført med 392/392 ugeopslag; Del C er også vurderet kort. Se `statistik/results/158b-pointaendring-vs-kampe.md` for metode, fuld log og analyser.
 
 ## Output
 - `statistik/scripts/158-turneringer.mjs`
@@ -56,13 +56,12 @@ Skriv i "Spørgsmål". Gæt ikke på, hvorfor point ændrer sig.
 `arbejde/158-turneringer`, fra `main`. Christoffer opretter grenen og committer selv. Codex kører kun læsende git, ustaged, ingen `git add -A`, ingen push, ingen Co-Authored-By, ingen sub-agents.
 
 ## Spørgsmål
-- Det første GET-forsøg har ikke bevaret status/bytes/hash, fordi den daværende kode kastede før logskrivning. Nyt GET-svar viste, at den gamle brede regex ramte `CAPTCHA` som del af `RECAPTCHA_SITE_KEY`; ingen tydelig udfordringsside-markør blev fundet, ja SR_CallbackContext blev fundet, og efterfølgende POST-kald lykkedes. Dette forklarer falsk alarmen stærkt, men præcis gammel svartekst kan ikke genskabes.
-- Ingen af de fem undersøgte profiler havde kun holdkamprækker: alle havde både turnerings- og holdkamprækker. 154-materialet og de udvalgte profilopslag afgør ikke, om en spiller findes, som kun spiller holdkampe.
-- Eventtabellen viser et `Point`-felt, men ikke point før/efter eller delta. Om tallet gælder pr. kamp eller samlet pr. turnering, og om tidligere sæsoner indgår, kan ikke afgøres fra de fem svar.
+- Første GET's oprindelige status kan ikke genskabes. Den gamle brede regex matchede `CAPTCHA` inde i `RECAPTCHA_SITE_KEY`; nyt svar havde SR_CallbackContext og ingen tydelig udfordringsside, og de efterfølgende kald lykkedes.
+- Kald 207 (kontekst-GET) blev talt som brugt, men HTTP-status mangler, fordi den gamle checkpointskrivning fejlede før status blev gemt. Redigeret svar er bevaret: 21.760 bytes, SHA-256 `B8AD91A1858115BF54A2870428D2214271B2DEEFDA6C524BC842BC8E8080DB39`.
+- Genopbygget historiklog for kald 5–206 mangler de oprindelige tidspunkter; alle svarfelter, status, bytes, hashes og filnavne kunne genskabes fra state/råsvar. Kald 1–4 står i Del A-loggen.
 
 ## Spørgsmål — opfølgning Del B
-- Efter 15 nye eventprofilopslag blev to kun-holdprofiler bekræftet: Chastine Christiansen (328196) og Sophia Rita Giuliani (362606), hver med én holdkamprække, ingen turneringsrækker og ingen ukendte eventrækker. Dette supplerer den tidligere prøve på fem profiler, som alle havde begge typer.
-- Kørslen standsede efter 180/392 ugeopslag, da Node fejlede med UNKNOWN: unknown error ved skrivning af statistik/results/158b-raa-svar/state.json. Kald 207’s rå GET-svar er gemt og redigeret (21.760 bytes; SHA-256 B8AD91A1858115BF54A2870428D2214271B2DEEFDA6C524BC842BC8E8080DB39), men HTTP-status mangler i loggen. Skal checkpointskrivningen gøres atomisk, og Del B genoptages med de 212 manglende ugeopslag? Kaldtælling: 207 i alt inkl. fire Del A-kald; 202 kald er logget, ét råsvar mangler statusmetadata.
+Den resterende åbne begrænsning er status for kald 207 og manglende historiske tidsstempler for kald 5–206; ingen af delene forhindrede genoptagelse eller analyse.
 
 ## Tilbagefald
 Slet de nye filer, inklusive `158-raa-svar/`. Ingen database er berørt.
@@ -70,4 +69,9 @@ Slet de nye filer, inklusive `158-raa-svar/`. Ingen database er berørt.
 ## Resultat
 **Del A udført.** Fem eventtabeller: Josefine Bille-Ahmt (42 rækker), Benjamin Hinge Carlsson (31), Louis Valdemar Hedegaard Toftlund (46), Theodor Lumby Jessen (63) og Anna Rudolph (56), i alt 238. Heraf 180 turneringsrækker, 48 holdkamprækker, 5 systemrækker og 5 med ukendt linktype. Tabellen viser Dato, Turnering/Holdkamp, Spillere, Point og en tom indikatorcelle; runde, modstanderrolle, resultat og pointdelta er ikke felter i tabellen. Alle fem havde både turnerings- og holdkamprækker.
 
-Samlet 4 netværkskald på badmintonplayer.dk: det tidligere afbrudte GET (status/bytes/hash ukendt), et nyt GET (HTTP 200) og to POST (begge HTTP 200; de to redigerede svarhashes var forskellige). Det nye GET viste, at den gamle løse regex matchede `CAPTCHA` inde i `RECAPTCHA_SITE_KEY`, ikke en challenge. Ingen GraphQL-kald; tournament overview/GraphQL-konklusioner bygger på eksisterende gemt evidens. Del B og Del C er ikke kørt. Alle fem databasehashes før/efter er uændrede, og `git diff --check` bestod. Kortet bliver i `work/aabne/`.
+Samlet 4 netværkskald på badmintonplayer.dk: det tidligere afbrudte GET (status/bytes/hash ukendt), et nyt GET (HTTP 200) og to POST (begge HTTP 200; de to redigerede svarhashes var forskellige). Det nye GET viste, at den gamle løse regex matchede `CAPTCHA` inde i `RECAPTCHA_SITE_KEY`, ikke en challenge. Ingen GraphQL-kald; tournament overview/GraphQL-konklusioner bygger på eksisterende gemt evidens. Del B og Del C er fuldført som beskrevet nedenfor. Alle fem databasehashes før/efter er uændrede, og `git diff --check` bestod. Kortet bliver i `work/aabne/`.
+
+### Del B/Del C — genoptagelse
+Del B: 392/392 ugeopslag (49 pr. 8 spillere), samlet 424 kald inkl. Del A; 180 tidligere råsvar valideret, 212 nye ugeopslag hentet. Eventpoint matchede snapshot før event i 251 rækker, efter alene i 0, begge i 5, ingen i 35 og var ikke-sammenlignelige i 2; for de sammenlignelige observationer peger det på før-event-værdi. Ugeklassifikation: 103 ændringer med event, 12 ændringer uden event (falsk positive for “spillet”), 4 events uden ændring (falsk negative), 237 uger uden nogen af delene og 28 fraværsuger uden nulpoint. Chastine Christiansen og Sophia Rita Giuliani var væk fra listen 2025-07-21–2025-10-20 og tilbage 2025-10-27. Alle fem databasehashes er uændrede. Rapporten og append-only kaldeloggen ligger under `statistik/results/158b-...`; kald 207's HTTP-status er ukendt.
+
+Del C: for en kendt gruppe på N spillere er målrettet playerid-hentning N POST pr. uge og 49×N pr. sæson (8 i denne prøve: 8/uge, 392/sæson); fuldt snapshot er ca. 399 sider pr. version (19.551 ved 49 versioner). Eventtabeller pr. spiller er den verificerede resultatrute for afgrænset spillerudvalg; komplet offentlig turneringsoversigt kunne ikke påvises i Del A.
