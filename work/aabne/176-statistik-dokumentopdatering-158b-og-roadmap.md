@@ -35,10 +35,14 @@ Din almindelige shell starter ikke på denne maskine (`setup refresh had errors`
 Er du i tvivl om en påstand er forældet, så lad den stå og list den. Skriv i `## Spørgsmål`; gæt ikke, skriv "ukendt" og gem evidensen.
 
 ## Spørgsmål
-(Tomt.)
+- Ukendt: projektbeskrivelsen med navnene på de 23 claude.ai-spejldokumenter er ikke tilgængelig i repoet eller i denne session. Derfor kan listen over sandsynligt forældede spejlfiler og deres repo-modstykker ikke udledes uden at gætte. Spejlet er ikke ændret.
 
 ## Tilbagefald
 `git checkout` på de tre filer.
 
 ## Resultat
-(Udfyldes af Codex.)
+- `statistik/AGENTS.md`: tilføjet fire linjer fra opgave 158/158b. Kilder: 251/293 eventrækker matcher ugen før (158b); 12/115 uger med pointændring uden event = 10,4 % (158b, 8 unge, 2025/26); "Sæsonskifte" og "Afbud alle kategorier" er ikke kampe (158); CAPTCHA-regex-fundet `RECAPTCHA_SITE_KEY` frem for en udfordringsside (158).
+- Rodens `AGENTS.md`: `build3.py`-påstanden er rettet efter opgave 099's resultat, som dokumenterer to identiske builds og 0 gamle sti-træf. Preview-påstanden præciserer, at `.env` mangler: filteksten lover `.env`; `Test-Path apps/netlify-prod/.env` gav False. Dropbox-secret-placeringen: ikke tjekket. Docs-grep fandt `D:\Dropbox` og `gsb-roadmap.md` i `docs/opus-strategisk-review-prompt.md`; om de dér er aktive stier eller citeret eksempel-/historiktekst er ikke tjekket.
+- `docs/roadmap.md`: punkt 3 opdateret efter beslutningen 2026-10-09 i `docs/BESLUTNINGER.md`; punkt 7 suppleret efter beslutningen 2026-09-15 samme sted. Nummereringen er bevaret.
+- Spejlliste: ukendt, jf. Spørgsmål; projektbeskrivelsens 23 navne var ikke tilgængelige.
+- Genåbnet alle fire ændrede filer. `git diff --check`: uden fejl. `git diff --stat`: 4 filer, inkl. dette opgavekort som krævet; de 3 scope-filer er AGENTS.md, statistik/AGENTS.md og docs/roadmap.md. `git status --short --branch` bekræfter samme gren. `build3.py` sti-grep: 0 træf; lokal `.env`: fraværende. Ingen database berørt.

@@ -57,19 +57,21 @@ Ligger i Dropbox under `Projects\GSB-Webapps\`:
 
 Dette er det vigtigste afsnit i dokumentet.
 
-**`kampsystem/build3.py` kan ikke køre nogen steder.** Den har hårdkodede
-stier ind i en Claude-sandkasse (`/mnt/user-data/uploads/...`,
-`/home/claude/...`). Den skal laves om til at bruge `config.local.json`
-før den virker på en almindelig maskine.
+**`kampsystem/build3.py` var tidligere ikke kørbar.** Det blev rettet i
+opgave 099: `SRC` og `OUT` er nu repo-relative, og buildet blev kørt to gange
+med identiske output-hash. De tidligere Claude-sandkassestier forekommer ikke
+længere i `build3.py` (grep: 0 træf). Andre filer kan stadig indeholde gamle
+stihenvisninger; de er ikke omfattet af denne konstatering.
 
-**`apps/netlify-prod/START_LOKAL_PREVIEW.txt` lyver.** Den lover at der
-ligger en `.env` med Google-nøglen i mappen. Det gør der ikke; nøglerne
-ligger i Dropbox under `secrets\`.
+**`apps/netlify-prod/START_LOKAL_PREVIEW.txt` er forældet om `.env`.** Den
+lover en `.env` med Google-nøglen, men der er ingen `.env` i mappen. Om nøglerne
+stadig ligger i Dropbox under `secrets\` er ikke tjekket her.
 
 **Rettet siden omlægningen:** `docs/START-HER.md` blev skrevet om i opgave
 001, og sti-referencerne i roadmap, idébankerne og spec-filen i opgave 002.
-De er nu retvisende. Én overset reference til det gamle dokumentnavn
-`gsb-roadmap.md` er kendt og håndteres i opgave 003.
+En grep-kontrol 2026-10-10 fandt stadig `D:\Dropbox` og `gsb-roadmap.md` i
+`docs/opus-strategisk-review-prompt.md`. Om de dér er aktive stier eller
+citeret eksempel-/historiktekst er ikke tjekket; se også statuspunkt 2 nedenfor.
 
 ---
 

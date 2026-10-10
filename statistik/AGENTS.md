@@ -151,6 +151,10 @@ Alt nedenfor er målt i opgave 156, 159 og 160; kortene og rapporterne i
   ikke afklaret.
 - Christoffer oplyser, at danske ranglistepoint er permanente og ikke
   udløber. Ikke målt endnu (kort 158).
+- Eventtabellen er en tidsserie af spillerens egne point. Af 293 sammenlignelige eventrækker matcher 251 pointstanden ugen før eventet (kort 158b).
+- I stikprøven på 8 unge i 2025/26 var 12 af 115 uger med pointændring uden event, ca. 10 % (kort 158b); årsagen er ikke fastslået.
+- "Sæsonskifte" og "Afbud alle kategorier" er ikke spillede kampe (kort 158; Del A-resultatet).
+- Cookiebot/reCAPTCHA-tekst i HTML er ikke i sig selv et stopsignal: den tidligere CAPTCHA-regex ramte `RECAPTCHA_SITE_KEY`, ikke en udfordringsside (kort 158).
 
 ---
 

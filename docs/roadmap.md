@@ -41,10 +41,10 @@ Chris påpegede samtidig at Admin-siden (`index.html`) i dag slet ikke har nogen
 **2026-09-07, enogtyvende runde — SHIPPET:** ny hjælpefunktion `erWalkover(navne)` i `hent-resultater.js` (matcher "ikke fremmødt" case-/mellemrums-/parentes-uafhængigt). Vinder-beregningen tjekker nu FØRST om én (og kun én) af siderne er en walkover — i så fald får modstanderen automatisk sejren, uden at det afhænger af sætoptællingen (0-0 ved en walkover). Er ingen af siderne walkover, er logikken uændret (ren sætoptælling). Er BEGGE sider walkover (teoretisk edge case), falder koden tilbage til den gamle `'?'`-adfærd. Verificeret med `node --check` og en isoleret unit-test af alle seks scenarier. Skrevet til `apps/netlify-prod/`, verificeret via enhedsbroen. F1/F2 i `analyse.js` (samme underliggende følsomhed, men i Statistik-siden) er IKKE rettet denne runde — kun `hent-resultater.js`. Allerede-importerede 26/27-runder med en walkover der fik `Vinder: '?'` FØR dette fix er ikke rettet med tilbagevirkende kraft.
 **Afventer:** Chris' egen manuelle Netlify-upload for at gøre fixet live.
 
-### 3. Chris' standalone-test af Kampsystemet + afklaring af teknikbane-designet
-**Værdi: høj. Indsats: minimal (afklaring, ikke kode).**
-En stor mængde Kampsystem-arbejde ligger færdigt i preview og kan ikke rykke videre, før Chris har testet standalone-filen. Ét spørgsmål bør besvares samtidig: teknikbane-loftet er bygget "opportunistisk" (banen forhåndsreserveres ikke, den tildeles kun hvis der er plads til overs efter den almindelige fordeling). Det er eksplicit flagget som en mulig afvigelse fra det Chris bad om. Se også edge case-noten i reviewrapporten fra 2026-09-06.
-**Afventer:** Chris' test og et ja/nej på teknikbane-spørgsmålet. Låser punkt 4 og 5 op.
+### 3. Chris' standalone-test af Kampsystemet
+**Værdi: høj. Indsats: minimal (test, ikke kode).**
+En stor mængde Kampsystem-arbejde ligger færdigt i preview og kan ikke rykke videre, før Chris har testet standalone-filen. Teknikbanens loft er afklaret: det er med vilje opportunistisk — banen forhåndsreserveres ikke, men tildeles kun hvis der er plads efter den almindelige fordeling (besluttet 2026-10-09, `docs/BESLUTNINGER.md`).
+**Afventer:** Chris' standalone-test. Låser punkt 4 og 5 op.
 
 ### 4. "Normal rolle" til produktion
 **Værdi: mellem-høj. Indsats: lav-mellem. Status: 🟡.**
@@ -65,6 +65,7 @@ Fuldt specificeret i spec-filen, ingen tekniske blokeringer, aflysningshåndteri
 **Værdi: høj. Indsats: høj. Status: ⚪ (design aftalt).**
 Designet er aftalt og landet i spec-filen, og begge rankingmetoder ("værdi" = total fantasy-point, "effektivitet" = Bayesiansk-justeret vindprocent) er valideret på rigtig data. Men metodevalget for "effektivitet" er ikke låst (Bayesiansk vs. Wilson vs. minimumsgrænse vs. fremtidig ELO fra B4), og det valg er ikke kosmetisk — se edge case-noten i reviewrapporten fra 2026-09-06. Bør ligge efter punkt 2 (og efter code review-fundene F1/F2/F5 er adresseret), da B3 læser videre på `analyse.js`-data. **Bemærk (2026-09-07):** punkt 8's navnealias-opslag er nu shippet — F7 (ingen alias-normalisering) er dermed løst, men den hårde cap på 199 kendte spillere (`Spillerpoint!A2:A200`) er stadig urørt og bør stadig adresseres før B3 skal skalere til hele klubben.
 **Afventer:** metodevalg fra Chris, derefter byg-signal.
+**2026-09-15-beslutning:** `statistik/` med SQLite er den eneste backend for B3 Klubstatistik; B3s Google Sheets-backend og sync-pipeline bygges ikke. Frontend-designet fra B3 kan genbruges (`docs/BESLUTNINGER.md`).
 
 ### 8. Navnealias-opslag — AKUT DEL SHIPPET og efterfølgende KORRIGERET/UDVIDET 2026-09-07 (kode-baseret, ikke Sheets-baseret), resten fortsat design/idé
 **Værdi: høj (havde allerede kostet spillere point og skabt en synlig UI-fejl). Indsats brugt: lav (embedded alias-liste i kode, opdateret to gange samme dag). Resterende indsats: mellem (evt. Sheets-migrering senere). Status: 🟢 for den akutte del (dropdown-dublet + fremadrettet point-matching), nu verificeret programmatisk mod BD's egen API, ⚪ for Sheets-Stamdata-designet.**
