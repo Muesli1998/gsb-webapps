@@ -4,6 +4,7 @@ param(
     [string[]]$Kort,
     [switch]$Commit,
     [switch]$TillavNetvaerk,
+    [switch]$TillavDbAendring,
     [ValidateRange(1, 1440)]
     [int]$TimeoutMin = 90,
     [switch]$Toer
@@ -83,7 +84,8 @@ function Get-CardPrompt([string]$Text, [string]$Branch) {
         (('Du st' + [char]0xE5 + 'r allerede p' + [char]0xE5 + ' grenen ') + $Branch + '. Skift ikke gren.'),
         ('F' + [char]0xF8 + 'lg kortet nedenfor ordret og reglerne i AGENTS.md.'),
         ('Brug kun l' + [char]0xE6 + 'sende git-kommandoer (status, diff, log, show). Ingen add, commit, push, switch, checkout, ingen sub-agents.'),
-        ('R' + [char]0xF8 + 'r kun filer inden for kortets Afgr' + [char]0xE6 + 'nsning. Skriv i kortets Sp' + [char]0xF8 + 'rgsm' + [char]0xE5 + 'l og Resultat.'),
+        ('R' + [char]0xF8 + 'r kun filer inden for kortets Afgr' + [char]0xE6 + 'nsning.'),
+        ('Du skal altid udfylde afsnittene Sp' + [char]0xF8 + 'rgsm' + [char]0xE5 + 'l og Resultat i selve kortfilen, ogs' + [char]0xE5 + ' hvis Afgr' + [char]0xE6 + 'nsningen ikke n' + [char]0xE6 + 'vner den.'),
         ('Efterpr' + [char]0xF8 + 'v dine egne tal ved at gen' + [char]0xE5 + 'bne filerne, f' + [char]0xF8 + 'r du rapporterer. G' + [char]0xE6 + 't ikke; skriv "ukendt".'),
         ('Stop, n' + [char]0xE5 + 'r du er f' + [char]0xE6 + 'rdig, og afslut med en kort slutrapport.')
     ) -join [Environment]::NewLine
@@ -225,7 +227,7 @@ function Invoke-Codex($Plan) {
     if (-not $finished) { Stop-Kort (("Codex blev stoppet efter timeout p" + [char]0xE5 + " ") + $TimeoutMin + " minutter. Log: " + $logPath) }
     if ($process.ExitCode -ne 0) { Stop-Kort ("codex exec afsluttede med exit " + $process.ExitCode + ". Log: " + $logPath) }
 
-    $status = Invoke-GitText @('status', '--short')
+    $status = Invoke-GitText @('status', '--short', '--untracked-files=all')
     $changed = @()
     if (-not [string]::IsNullOrWhiteSpace($status)) {
         foreach ($line in ($status -split "\r?\n")) {
@@ -236,11 +238,12 @@ function Invoke-Codex($Plan) {
     $outside = @($changed | Where-Object { -not (Test-AllowedPath $_ $allowed) })
     $hashScript = Join-Path $script:RepoRoot 'tools/tjek/db-hashes.mjs'
     $hashResult = 'ikke tjekket: kort 162 mangler'
+    $hashFailed = $false
     if (Test-Path -LiteralPath $hashScript -PathType Leaf) {
         $global:LASTEXITCODE = 0
         $hashOutput = Invoke-Native { & node $hashScript }
         $hashResult = ($hashOutput -join [Environment]::NewLine)
-        if ($LASTEXITCODE -ne 0) { $hashResult = 'FEJLEDE: ' + $hashResult }
+        if ($LASTEXITCODE -ne 0) { $hashResult = 'FEJLEDE: ' + $hashResult; $hashFailed = $true }
     }
     $global:LASTEXITCODE = 0
     $diffCheck = Invoke-Native { & git -C $script:RepoRoot diff --check }
@@ -255,7 +258,7 @@ function Invoke-Codex($Plan) {
         ("Slutsvar: " + $answerPath)
     )
     Write-Output ($report -join [Environment]::NewLine)
-    if ($outside.Count -gt 0 -or $diffCode -ne 0) { Stop-Kort 'Efterkontrollen fandt afvigelser; commit er blokeret.' }
+    if ($outside.Count -gt 0 -or $diffCode -ne 0 -or ($hashFailed -and -not $TillavDbAendring)) { Stop-Kort 'Efterkontrollen fandt afvigelser; commit er blokeret.' }
     if ($Commit) {
         if ($changed.Count -eq 0) { Stop-Kort ('Ingen ' + [char]0xE6 + 'ndrede filer at committe.') }
         [void](Invoke-GitText (@('add') + $changed))
