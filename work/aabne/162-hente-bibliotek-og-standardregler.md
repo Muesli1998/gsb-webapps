@@ -2,6 +2,8 @@
 
 **Trin:** Værktøj til alle fremtidige hentekort. Bygger på erfaringerne fra 158 og 158b. Ingen netværkskald i dette kort.
 
+**Netværk:** ingen
+
 ## Gren
 `arbejde/162-hente-bibliotek`, fra `main`. Christoffer opretter grenen og committer selv. Codex kører kun læsende git, ustaged, ingen `git add -A`, ingen push, ingen Co-Authored-By, ingen sub-agents.
 

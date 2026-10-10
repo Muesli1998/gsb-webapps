@@ -2,6 +2,8 @@
 
 **Trin:** Forberedelse til at hente turneringskampe (modstander, resultat, runde) fra badmintonplayer.dk. Bygger på 081, 154, 158 og 158b. **Ingen netværkskald i dette kort.**
 
+**Netværk:** ingen
+
 ## Gren
 `arbejde/171-turneringsdata-kortlaegning`, fra `main`. Christoffer opretter grenen og committer selv. Codex kører kun læsende git, ustaged, ingen `git add -A`, ingen push, ingen Co-Authored-By, ingen sub-agents.
 
