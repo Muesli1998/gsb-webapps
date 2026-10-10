@@ -1,4 +1,4 @@
-﻿[CmdletBinding()]
+[CmdletBinding()]
 param(
     [Parameter(Mandatory = $true)]
     [string[]]$Kort,
@@ -41,14 +41,14 @@ function Get-BranchFromCard([string]$Text, [string]$Number) {
     }
     $branch = [regex]::Match($section.Groups[1].Value, '\x60([^\x60]+)\x60')
     if (-not $branch.Success -or $branch.Groups[1].Value -notmatch '^[A-Za-z0-9._/-]+$') {
-        Stop-Kort ("Kort " + $Number + " har ikke et gyldigt første kodeformateret branchnavn under ## Gren.")
+        Stop-Kort ("Kort " + $Number + (" har ikke et gyldigt f" + [char]0xF8 + "rste kodeformateret branchnavn under ## Gren."))
     }
     return $branch.Groups[1].Value.Trim()
 }
 
 function Get-NetworkLine([string]$Text) {
-    $match = [regex]::Match($Text, '(?im)^.*?Netværk:(?:\*\*)?\s*(?<value>[^\r\n·]+)')
-    if (-not $match.Success) { return 'ukendt (ingen Netværk-linje)' }
+    $match = [regex]::Match($Text, ('(?im)^.*?Netv' + [char]0xE6 + 'rk:(?:\*\*)?\s*(?<value>[^\r\n' + [char]0xB7 + ']+)'))
+    if (-not $match.Success) { return ('ukendt (ingen Netv' + [char]0xE6 + 'rk-linje)') }
     return $match.Groups['value'].Value.Trim().TrimEnd('.', ' ')
 }
 
@@ -66,13 +66,13 @@ function Get-CodexExe {
 
 function Get-CardPrompt([string]$Text, [string]$Branch) {
     $intro = @(
-        'Du kører via codex exec, uden dialog og uden sandbox. Ingen kan godkende noget undervejs, så spørg ikke og vent ikke; stop ikke på sandboxfejl.',
-        ('Du står allerede på grenen ' + $Branch + '. Skift ikke gren.'),
-        'Følg kortet nedenfor ordret og reglerne i AGENTS.md.',
-        'Brug kun læsende git-kommandoer (status, diff, log, show). Ingen add, commit, push, switch, checkout, ingen sub-agents.',
-        'Rør kun filer inden for kortets Afgrænsning. Skriv i kortets Spørgsmål og Resultat.',
-        'Efterprøv dine egne tal ved at genåbne filerne, før du rapporterer. Gæt ikke; skriv "ukendt".',
-        'Stop, når du er færdig, og afslut med en kort slutrapport.'
+        ('Du k' + [char]0xF8 + 'rer via codex exec, uden dialog og uden sandbox. Ingen kan godkende noget undervejs, s' + [char]0xE5 + ' sp' + [char]0xF8 + 'rg ikke og vent ikke; stop ikke p' + [char]0xE5 + ' sandboxfejl.'),
+        (('Du st' + [char]0xE5 + 'r allerede p' + [char]0xE5 + ' grenen ') + $Branch + '. Skift ikke gren.'),
+        ('F' + [char]0xF8 + 'lg kortet nedenfor ordret og reglerne i AGENTS.md.'),
+        ('Brug kun l' + [char]0xE6 + 'sende git-kommandoer (status, diff, log, show). Ingen add, commit, push, switch, checkout, ingen sub-agents.'),
+        ('R' + [char]0xF8 + 'r kun filer inden for kortets Afgr' + [char]0xE6 + 'nsning. Skriv i kortets Sp' + [char]0xF8 + 'rgsm' + [char]0xE5 + 'l og Resultat.'),
+        ('Efterpr' + [char]0xF8 + 'v dine egne tal ved at gen' + [char]0xE5 + 'bne filerne, f' + [char]0xF8 + 'r du rapporterer. G' + [char]0xE6 + 't ikke; skriv "ukendt".'),
+        ('Stop, n' + [char]0xE5 + 'r du er f' + [char]0xE6 + 'rdig, og afslut med en kort slutrapport.')
     ) -join [Environment]::NewLine
     return $intro + [Environment]::NewLine + [Environment]::NewLine + $Text
 }
@@ -85,21 +85,21 @@ function Test-Preflight([string]$Number, [switch]$DryRun) {
 
     $status = Invoke-GitText @('status', '--short')
     if (-not [string]::IsNullOrWhiteSpace($status)) {
-        Stop-Kort ("Arbejdstræet er ikke rent. git status --short:" + [Environment]::NewLine + $status)
+        Stop-Kort (("Arbejdstr" + [char]0xE6 + "et er ikke rent. git status --short:") + [Environment]::NewLine + $status)
     }
     $current = Invoke-GitText @('branch', '--show-current')
     if ($current -ne 'main') {
-        Stop-Kort ("Forkert gren: står på '" + $current + "', forventede 'main'.")
+        Stop-Kort (("Forkert gren: st" + [char]0xE5 + "r p" + [char]0xE5 + " '") + $current + "', forventede 'main'.")
     }
     if (-not $DryRun) {
         [void](Invoke-GitText @('pull', '--ff-only'))
     }
     $existing = Invoke-GitText @('branch', '--list', $branch)
     if (-not [string]::IsNullOrWhiteSpace($existing)) {
-        Stop-Kort ("Målgrenen findes allerede: " + $branch)
+        Stop-Kort (("M" + [char]0xE5 + "lgrenen findes allerede: ") + $branch)
     }
     if ($network -notmatch '^(?i:ingen|nej|no)(?:\s|$)' -and -not $TillavNetvaerk) {
-        Stop-Kort ("Kortet kræver/angiver netværk ('" + $network + "'). Brug kun -TillavNetvaerk efter særskilt godkendelse.")
+        Stop-Kort (("Kortet kr" + [char]0xE6 + "ver/angiver netv" + [char]0xE6 + "rk ('") + $network + ("'). Brug kun -TillavNetvaerk efter s" + [char]0xE6 + "rskilt godkendelse."))
     }
 
     $codex = Get-CodexExe
@@ -107,7 +107,7 @@ function Test-Preflight([string]$Number, [switch]$DryRun) {
     if (-not $node) { Stop-Kort 'node kan ikke findes i PATH.' }
     $global:LASTEXITCODE = 0
     $nodeVersion = @(& node --version 2>&1)
-    if ($LASTEXITCODE -ne 0) { Stop-Kort ("node kan ikke køres: " + ($nodeVersion -join ' ')) }
+    if ($LASTEXITCODE -ne 0) { Stop-Kort (("node kan ikke k" + [char]0xF8 + "res: ") + ($nodeVersion -join ' ')) }
 
     return [pscustomobject]@{
         Number = $Number
@@ -124,14 +124,14 @@ function Test-Preflight([string]$Number, [switch]$DryRun) {
 function Show-DryRun($Plan) {
     Write-Output ("Kort: " + $Plan.Number + " (" + $Plan.CardPath + ")")
     Write-Output ("Aktuel gren: " + (Invoke-GitText @('branch', '--show-current')))
-    Write-Output ("Målgren: " + $Plan.Branch)
-    Write-Output ("Netværk: " + $Plan.Network)
+    Write-Output (("M" + [char]0xE5 + "lgren: ") + $Plan.Branch)
+    Write-Output (("Netv" + [char]0xE6 + "rk: ") + $Plan.Network)
     Write-Output ("Codex: " + $Plan.Codex)
     Write-Output ("Node: " + $Plan.Node)
-    Write-Output 'Ville køre: git pull --ff-only'
+    Write-Output ('Ville k' + [char]0xF8 + 're: git pull --ff-only')
     Write-Output ("Ville oprette gren: git switch -c " + $Plan.Branch)
-    Write-Output ("Ville køre: codex exec --sandbox danger-full-access -o work/koersler/" + $Plan.Number + "/slutsvar.md -")
-    Write-Output 'Prompt — første 20 linjer:'
+    Write-Output (("Ville k" + [char]0xF8 + "re: codex exec --sandbox danger-full-access -o work/koersler/") + $Plan.Number + "/slutsvar.md -")
+    Write-Output ('Prompt ' + [char]0x2014 + ' f' + [char]0xF8 + 'rste 20 linjer:')
     $lines = $Plan.Prompt -split "\r?\n"
     $limit = [Math]::Min(20, $lines.Count)
     for ($i = 0; $i -lt $limit; $i++) { Write-Output $lines[$i] }
@@ -141,9 +141,9 @@ function Get-AllowedPaths([string]$Text, [string]$CardPath) {
     $allowed = New-Object System.Collections.Generic.List[string]
     $allowed.Add('work/koersler/')
     $allowed.Add(('work/aabne/' + [System.IO.Path]::GetFileName($CardPath)))
-    $section = [regex]::Match($Text, '(?ms)^## Afgrænsning\s*(.*?)(?=^##\s|\z)')
+    $section = [regex]::Match($Text, ('(?ms)^## Afgr' + [char]0xE6 + 'nsning\s*(.*?)(?=^##\s|\z)'))
     if ($section.Success) {
-        $mayTouch = [regex]::Match($section.Groups[1].Value, '(?ms)Må røres(?::\*\*|\*\*\s*:|:)\s*(.*?)(?=Må ikke røres|\z)')
+        $mayTouch = [regex]::Match($section.Groups[1].Value, ('(?ms)M' + [char]0xE5 + ' r' + [char]0xF8 + 'res(?::\*\*|\*\*\s*:|:)\s*(.*?)(?=M' + [char]0xE5 + ' ikke r' + [char]0xF8 + 'res|\z)'))
         if ($mayTouch.Success) {
             foreach ($item in [regex]::Matches($mayTouch.Groups[1].Value, '\x60([^\x60]+)\x60')) {
                 $path = $item.Groups[1].Value.Replace('\', '/').Trim()
@@ -197,7 +197,7 @@ function Invoke-Codex($Plan) {
     [void]$process.Start()
     $stdoutTask = $process.StandardOutput.ReadToEndAsync()
     $stderrTask = $process.StandardError.ReadToEndAsync()
-    # Prompten sendes som UTF-8-bytes; StandardInput.Write ville bruge konsollens kodesider og ødelægge æ, ø og å.
+    # Prompten sendes som UTF-8-bytes; StandardInput.Write ville bruge konsollens kodesider og ?del?gge ?, ? og ?.
     $promptBytes = (New-Object System.Text.UTF8Encoding($false)).GetBytes($Plan.Prompt)
     $process.StandardInput.BaseStream.Write($promptBytes, 0, $promptBytes.Length)
     $process.StandardInput.BaseStream.Flush()
@@ -209,7 +209,7 @@ function Invoke-Codex($Plan) {
     }
     $log = 'STDOUT' + [Environment]::NewLine + $stdoutTask.Result + [Environment]::NewLine + 'STDERR' + [Environment]::NewLine + $stderrTask.Result
     [System.IO.File]::WriteAllText($logPath, $log, (New-Object System.Text.UTF8Encoding($false)))
-    if (-not $finished) { Stop-Kort ("Codex blev stoppet efter timeout på " + $TimeoutMin + " minutter. Log: " + $logPath) }
+    if (-not $finished) { Stop-Kort (("Codex blev stoppet efter timeout p" + [char]0xE5 + " ") + $TimeoutMin + " minutter. Log: " + $logPath) }
     if ($process.ExitCode -ne 0) { Stop-Kort ("codex exec afsluttede med exit " + $process.ExitCode + ". Log: " + $logPath) }
 
     $status = Invoke-GitText @('status', '--short')
@@ -234,9 +234,9 @@ function Invoke-Codex($Plan) {
     $diffCode = $LASTEXITCODE
     $report = @(
         ("Gren: " + $Plan.Branch)
-        ("Ændrede filer: " + $changed.Count)
+        (("" + [char]0xC6 + "ndrede filer: ") + $changed.Count)
         ("Filer: " + ($changed -join ', '))
-        ("Uden for afgrænsning: " + $(if ($outside.Count) { $outside -join ', ' } else { 'ingen' }))
+        (("Uden for afgr" + [char]0xE6 + "nsning: ") + $(if ($outside.Count) { $outside -join ', ' } else { 'ingen' }))
         ("Databasehashes: " + $hashResult)
         ("git diff --check: " + $(if ($diffCode -eq 0) { 'bestod' } else { 'FEJLEDE: ' + ($diffCheck -join ' ') }))
         ("Slutsvar: " + $answerPath)
@@ -244,16 +244,16 @@ function Invoke-Codex($Plan) {
     Write-Output ($report -join [Environment]::NewLine)
     if ($outside.Count -gt 0 -or $diffCode -ne 0) { Stop-Kort 'Efterkontrollen fandt afvigelser; commit er blokeret.' }
     if ($Commit) {
-        if ($changed.Count -eq 0) { Stop-Kort 'Ingen ændrede filer at committe.' }
+        if ($changed.Count -eq 0) { Stop-Kort ('Ingen ' + [char]0xE6 + 'ndrede filer at committe.') }
         [void](Invoke-GitText (@('add') + $changed))
-        [void](Invoke-GitText @('commit', '-m', ("Kort " + $number + ': kørt med koer-kort')))
+        [void](Invoke-GitText @('commit', '-m', ("Kort " + $number + (': k' + [char]0xF8 + 'rt med koer-kort'))))
         return $true
     }
     return $false
 }
 
 if ($Kort.Count -gt 1 -and -not $Commit) {
-    Stop-Kort 'Uden -Commit må listen kun indeholde ét kort.'
+    Stop-Kort ('Uden -Commit m' + [char]0xE5 + ' listen kun indeholde ' + [char]0xE9 + 't kort.')
 }
 
 foreach ($raw in $Kort) {
