@@ -46,10 +46,15 @@ Din almindelige shell starter ikke på denne maskine (`setup refresh had errors`
 Skriv i "Spørgsmål".
 
 ## Spørgsmål
-(Tomt.)
+- Hvilken konkret turneringssøge-side/component kalder `SearchTournamentClass`, og hvilke argumentværdier bruger den? Det fremgår ikke af de gemte HTML-/JS-uddrag.
+- Er link-id'erne `113413` og `114741` altid `tournamentclassid`? Det er kun direkte bekræftet for `115342`.
+- Er offentlige `VisSpiller/#...`-id'er formelt BadmintonID, og hvad betyder alle felter i holdturnerings-hash-id'et? Ukendt ud fra gemt evidens.
+- Komplet sæsonoversigt kan ikke estimeres uden fungerende klasse-enumeration og antal events pr. klasse.
 
 ## Tilbagefald
 Slet de nye filer. Ingen database er berørt.
 
 ## Resultat
-(Udfyldes af Codex.)
+Del A gennemført på `arbejde/171-turneringsdata-kortlaegning`; gren ikke skiftet. Ingen netværkskald (0). Gennemgået 4.348 gzip-filer; fundet 45 profil-eventtabeller, 20 unikke profiler, 738 deduplikerede rækker og 269 links: 133 `VisResultater` (529 rækker) og 136 `HoldTurnering` (209 rækker). CSV, JSON, rapport og reproducerbart Node-script er oprettet som angivet i Output. Gemte matchresultater for klasse 115342 overlapper med 0 eventlink-id'er.
+
+De fem database-SHA-256 matcher alle kortets forventninger. `git diff --check` gav ingen whitespacefejl (Git viste kun en LF/CRLF-advisory for kortfilen); `git status --short statistik/data/` var tom. Ingen database eller afgrænset kildefil er ændret. Ikke staged, committed eller pushed.
