@@ -33,10 +33,10 @@ Din almindelige shell starter ikke på denne maskine (`setup refresh had errors`
 Findes preview-koden ikke i repoet, så stop og skriv det. Skriv i `## Spørgsmål`; gæt ikke, skriv "ukendt" og gem evidensen.
 
 ## Spørgsmål
-(Tomt.)
+Se `docs/182-soendagstraening-plan.md`, afsnittet “Spørgsmål til Christoffer” (3 spørgsmål).
 
 ## Tilbagefald
 Slet dokumentet.
 
 ## Resultat
-(Udfyldes af Codex.)
+Udført uden kode. Previewet er `kampsystem/sondag_source.html`; 8 eksempelspillere, 3 forudgående “Kommer”, 1 “Afbud”, 4 ubesvarede; status/kommentarer findes kun i JavaScript-hukommelsen. Se `docs/182-soendagstraening-plan.md` for 3 × 3 løsningsmuligheder, anbefalinger og 6-trins produktionsplan inkl. QA og rollback. 3 spørgsmål står i rapporten. Ingen kode eller produktionsfiler ændret. `git diff --check` afsluttede uden fejl. `git status --short` viser kun dette kort og `docs/182-soendagstraening-plan.md`.
