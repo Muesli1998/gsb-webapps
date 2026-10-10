@@ -1,4 +1,4 @@
-# Opgave 192 — ukendte vindere: klassificér og udled vinderen ved walkover, tilbagetrækning og protest
+﻿# Opgave 192 — ukendte vindere: klassificér og udled vinderen ved walkover, tilbagetrækning og protest
 
 **Status:** `work/aabne/` — besluttet af Christoffer 2026-10-10.
 **Kategori:** statistik · **Bølge:** 1 · **Afhænger af:** — (kan køres nu) · **Netværk:** ingen
@@ -49,10 +49,14 @@ Din almindelige shell starter ikke på denne maskine (`setup refresh had errors`
 Gæt ikke. Hvis en regel ikke kan bekræftes af data, så skriv `uafklaret` og forklar hvorfor. Skriv i `## Spørgsmål`.
 
 ## Spørgsmål
-(Tomt.)
+Markørbetydninger der mangler bekræftelse: A(1), B(6), C(9), D(23), F(28), H(19), I(1), K(15), L(4), N(1), P(4), R(3), S(12), T(4), V(18), samt (1)(5), (2)(4) og Ø(2). Betydningen er ukendt. E, J, M, O, Q og U forekommer 0 gange. Kan Christoffer bekræfte de observerede markører?
 
 ## Tilbagefald
 Slet de nye filer. Ingen database er berørt.
 
 ## Resultat
-(Udfyldes af Codex.)
+967 ukendte kampe katalogiseret i CSV, alle med klasse; 889 udledt og 78 uafklaret. For 2025/26: 112 udledt af 116, 4 uafklaret. Udledningsmetoder: holdresultat entydigt 878 (heraf 11 G med delvist scorede sæt), holdresultat ikke entydigt 69, og Ikke fremmødt med deltagersiden ukendt 9. Sikkerhed: entydig 889, uafklaret 78.
+
+Af 2.048 kendte holdkampe med parsebart resultat stemmer individuelle sejre præcist i 1.908; 140 afviger. G ses i 17/140 (12,1 %) afvigende holdkampe mod 34/1.908 (1,8 %) præcise. For 117 holdkampe med Ikke fremmødt stemmer walkover_winner_raw med holdresultatet i 110, afviger i 0 og er uafklaret i 7. A-V-antal står i rapporten; ikke-G betydning er ukendt.
+
+Ingen af de sammenlignelige spillere flyttede sig mere end 5 pladser i kort 177s raw, Bayes, Wilson, minimum- eller ELO-rangering (N=5/10/20). Netværkskald: 0. Databaser urørt, read-only. Vurdering: gem udledninger som sporbare afledte værdier; skriv ikke rå databasevindere uden en særskilt importbeslutning.
