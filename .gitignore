@@ -69,3 +69,4 @@ dist/
 .netlify/
 *.db-shm
 *.db-wal
+work/koersler/
