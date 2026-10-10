@@ -15,23 +15,59 @@ const JOBS = process.env.GSB_SHELL_JOBS || path.join(HERE, 'jobs');
 const MAX_UD = 20000;
 
 // GULV: gælder uanset hvad tilladelser.json siger.
-const GIT_OK = new Set(['status', 'diff', 'log', 'show', 'add', 'commit', 'switch', 'merge', 'branch', 'pull']);
-const GIT_FORBUDT = /^(--force|-f|-D|--hard|-c|--git-dir|--work-tree|--exec-path|--amend|--no-verify)$/;
+// Git: kun disse underkommandoer, og kun de angivne flag (alt andet der starter med - afvises).
+const GIT_FLAG = {
+  status: ['--short', '--untracked-files=all'],
+  diff: ['--check', '--stat'],
+  log: ['--oneline', '-n'],
+  show: ['--stat', '--oneline'],
+  add: ['--'],
+  commit: ['-m'],
+  switch: [],
+  merge: ['--ff-only'],
+  branch: ['-d', '--show-current'],
+  pull: ['--ff-only'],
+};
+const TEST_FIL = /^(tools|statistik\/scripts)\/[A-Za-z0-9_.\/-]+\.test\.mjs$/;
+const PS_START = ['-NoProfile', '-ExecutionPolicy', 'Bypass', '-File'];
 
 const sha = buf => crypto.createHash('sha256').update(buf).digest('hex');
-const laesJson = fil => JSON.parse(fs.readFileSync(fil, 'utf8').replace(/^﻿/, ''));
+const laesJson = fil => JSON.parse(fs.readFileSync(fil, 'utf8').replace(/^\uFEFF/, ''));
 const laesConfig = () => laesJson(CONFIG);
 
-export function gulv(cmd, args) {
+export function gulv(cmd, args, laas = []) {
   if (!['git', 'node', 'powershell'].includes(cmd)) throw new Error(`Kommandoen ${cmd} er ikke tilladt`);
   if (cmd === 'git') {
-    if (!GIT_OK.has(args[0])) throw new Error(`git ${args[0]} er ikke tilladt`);
-    for (const a of args) if (GIT_FORBUDT.test(a)) throw new Error(`git-argumentet ${a} er forbudt`);
+    const tilladt = GIT_FLAG[args[0]];
+    if (!tilladt) throw new Error(`git ${args[0]} er ikke tilladt`);
+    for (const a of args.slice(1)) {
+      if (a === '--') break; // efter -- er alt stier
+      if (a.startsWith('-') && !tilladt.includes(a)) throw new Error(`git ${args[0]}: argumentet ${a} er ikke tilladt`);
+    }
   }
   if (cmd === 'powershell') {
-    if (!args.includes('-File') || args.some(a => /^-(Command|EncodedCommand|c)$/i.test(a))) throw new Error('powershell må kun køre -File');
+    if (PS_START.some((x, i) => args[i] !== x)) throw new Error(`powershell skal starte med ${PS_START.join(' ')}`);
+    if (!laas.includes(args[4])) throw new Error(`powershell-scriptet ${args[4]} er ikke på værktøjets låste liste`);
   }
-  if (cmd === 'node' && args.some(a => /^(-e|--eval|-p|--print|--input-type)/.test(a))) throw new Error('node -e er forbudt');
+  if (cmd === 'node') {
+    if (args[0] === '--test') {
+      if (!TEST_FIL.test(args[1] || '') || args[1].includes('..') || args.length !== 2) throw new Error('node --test: kun én testfil under tools/ eller statistik/scripts/');
+    } else if (!laas.includes(args[0])) throw new Error(`node-scriptet ${args[0]} er ikke på værktøjets låste liste`);
+  }
+}
+
+// Sti-tjek med symlinks/junctions: sammenlign de rigtige stier.
+const norm = s => (process.platform === 'win32' ? s.toLowerCase() : s);
+function aegte(p) {
+  const rest = [];
+  let cur = p;
+  while (!fs.existsSync(cur)) {
+    const op = path.dirname(cur);
+    if (op === cur) break;
+    rest.unshift(path.basename(cur));
+    cur = op;
+  }
+  return path.join(fs.realpathSync.native(cur), ...rest);
 }
 
 export function tjekParametre(def = {}, given = {}, repo) {
@@ -54,6 +90,9 @@ export function tjekParametre(def = {}, given = {}, repo) {
         if (s.startsWith('-') || s.startsWith('/') || dele.includes('..') || dele[0] === '.git') throw new Error(`Ugyldig sti: ${s}`);
         const fuld = path.resolve(repo, s);
         if (fuld !== repo && !fuld.startsWith(repo + path.sep)) throw new Error(`Stien ligger uden for repoet: ${s}`);
+        const ar = norm(fs.realpathSync.native(repo));
+        const af = norm(aegte(fuld));
+        if (af !== ar && !af.startsWith(ar + path.sep)) throw new Error(`Stien peger uden for repoet (symlink/junction): ${s}`);
       }
       ud[navn] = v;
     } else {
@@ -98,24 +137,42 @@ function tjekLaas(laas, repo) {
   }
 }
 
+const HEAD = 10000;
+const TAIL = 10000;
 function koerTrin(cmd, args, cwd, tidSek, onData) {
   return new Promise(resolve => {
-    let ud = '';
-    const give = d => { const t = d.toString('utf8'); ud += t; if (onData) onData(t); };
+    let head = '', tail = '', total = 0;
+    const saml = () => (total <= HEAD + TAIL ? head + tail : head + '\n[...klippet...]\n' + tail);
+    const give = d => {
+      const tekst = d.toString('utf8');
+      total += tekst.length;
+      if (onData) onData(tekst);
+      if (head.length < HEAD) {
+        const plads = HEAD - head.length;
+        head += tekst.slice(0, plads);
+        tail = (tail + tekst.slice(plads)).slice(-TAIL);
+      } else tail = (tail + tekst).slice(-TAIL);
+    };
+    const hooks = path.join(JOBS, 'tomme-hooks');
+    fs.mkdirSync(hooks, { recursive: true });
+    const env = { ...process.env, GIT_TERMINAL_PROMPT: '0', GIT_CONFIG_COUNT: '1', GIT_CONFIG_KEY_0: 'core.hooksPath', GIT_CONFIG_VALUE_0: hooks };
     let barn;
     try {
-      barn = spawn(cmd, args, { cwd, shell: false, windowsHide: true, env: { ...process.env, GIT_TERMINAL_PROMPT: '0' } });
+      barn = spawn(cmd, args, { cwd, shell: false, windowsHide: true, env });
     } catch (e) { return resolve({ kode: -1, ud: String(e.message) }); }
     const ur = setTimeout(() => { give(Buffer.from(`\n[afbrudt efter ${tidSek} sek]`)); try { barn.kill(); } catch {} }, tidSek * 1000);
     barn.stdout.on('data', give);
     barn.stderr.on('data', give);
-    barn.on('error', e => { clearTimeout(ur); resolve({ kode: -1, ud: ud + String(e.message) }); });
-    barn.on('close', kode => { clearTimeout(ur); resolve({ kode, ud }); });
+    barn.on('error', e => { clearTimeout(ur); give(Buffer.from(String(e.message))); resolve({ kode: -1, ud: saml() }); });
+    barn.on('close', kode => { clearTimeout(ur); resolve({ kode, ud: saml() }); });
   });
 }
 
 const klip = t => (t.length > MAX_UD ? t.slice(0, MAX_UD / 2) + '\n[...klippet...]\n' + t.slice(-MAX_UD / 2) : t);
 const koerer = new Map();
+const LOG_MAX = 5 * 1024 * 1024;
+let koe = Promise.resolve();
+const iKoe = f => { const p = koe.then(f, f); koe = p.catch(() => {}); return p; };
 
 async function koerVaerktoej(navn, given) {
   const cfg = laesConfig();
@@ -124,11 +181,13 @@ async function koerVaerktoej(navn, given) {
   if (!v) throw new Error(`Ukendt værktøj: ${navn}`);
   const p = tjekParametre(v.parametre, given, repo);
   const trin = v.trin.map(t => ({ cmd: t.cmd, args: udvid(t.args, p) }));
-  for (const t of trin) gulv(t.cmd, t.args);
+  for (const t of trin) gulv(t.cmd, t.args, v.laas || []);
   tjekLaas(v.laas, repo);
+  if (v.skriver && koerer.size > 0) throw new Error(`Et job kører (${[...koerer.keys()].join(', ')}); ${navn} ændrer arbejdstræet og afvises indtil det er færdigt`);
   const tid = v.tidsgraenseSek || 120;
 
   if (v.baggrund) {
+    if (koerer.size > 0) throw new Error(`Et job kører allerede: ${[...koerer.keys()].join(', ')}`);
     fs.mkdirSync(JOBS, { recursive: true });
     const id = `${Date.now().toString(36)}-${navn}`;
     const logFil = path.join(JOBS, `${id}.log`);
@@ -138,7 +197,12 @@ async function koerVaerktoej(navn, given) {
       let sidste = 0;
       for (const t of trin) {
         fs.appendFileSync(logFil, `$ ${t.cmd} ${t.args.join(' ')}\n`);
-        const r = await koerTrin(t.cmd, t.args, repo, tid, d => fs.appendFileSync(logFil, d));
+        let skrevet = 0;
+        const r = await koerTrin(t.cmd, t.args, repo, tid, d => {
+          skrevet += d.length;
+          if (skrevet <= LOG_MAX) fs.appendFileSync(logFil, d);
+          else if (skrevet - d.length <= LOG_MAX) fs.appendFileSync(logFil, '\n[log afkortet ved 5 MB]\n');
+        });
         sidste = r.kode;
         fs.appendFileSync(logFil, `\n[exit ${r.kode}]\n`);
         if (r.kode !== 0) break;
@@ -210,7 +274,7 @@ async function haandter(msg) {
       const n = params?.name;
       const a = params?.arguments || {};
       try {
-        const tekst = n === 'job_status' ? jobStatus(a.id) : n === 'job_liste' ? jobListe() : await koerVaerktoej(n, a);
+        const tekst = n === 'job_status' ? jobStatus(a.id) : n === 'job_liste' ? jobListe() : await iKoe(() => koerVaerktoej(n, a));
         return svar({ content: [{ type: 'text', text: tekst }] });
       } catch (e) {
         return svar({ content: [{ type: 'text', text: `FEJL: ${e.message}` }], isError: true });

@@ -22,7 +22,14 @@ Genstart Claude Desktop.
 
 Se `tilladelser.json`. Hvert værktøj har faste kommandoer og parametre med et `moenster` (regulært udtryk), som værdierne skal matche. Der køres aldrig gennem en shell, så parametre kan ikke indeholde ekstra kommandoer.
 
-**Gulv i koden** (gælder uanset tilladelser.json): kun `git`, `node`, `powershell -File`; kun git-underkommandoerne status, diff, log, show, add, commit, switch, merge, branch, pull; aldrig `--force`, `-f`, `-D`, `--hard`, `-c`, `--amend`, `--no-verify`. Der er ingen `push`, `reset`, `clean`, `rm`.
+**Gulv i koden** (gælder uanset tilladelser.json):
+- Kun `git`, `node` og `powershell`.
+- Git: kun underkommandoerne status, diff, log, show, add, commit, switch, merge, branch, pull, og kun de flag, der står i listen i `server.mjs` (`GIT_FLAG`). Alt andet, der starter med `-`, afvises (også `-C`, `-f`, `--force`, `--hard`, `--amend`). Git-hooks slås fra for alle kald.
+- `powershell`: skal starte med `-NoProfile -ExecutionPolicy Bypass -File <script>`, og scriptet skal stå på værktøjets `laas`-liste.
+- `node`: enten `--test <én testfil under tools/ eller statistik/scripts/>` eller et script på værktøjets `laas`-liste.
+- Stier til `git_add`: ingen `..`, ingen absolutte stier, intet under `.git`, ingen jokertegn, og den rigtige sti (efter symlinks/junctions) skal ligge i repoet.
+- Kørsler stilles i kø. Et baggrundsjob ad gangen. Mens et job kører, afvises `git_add`, `git_commit` og `git_flet_gren`.
+- Output klippes i hukommelsen (10.000 tegn i hver ende); baggrundslog afkortes ved 5 MB.
 
 **Låste filer** (`"laas"`): `tools/koer-kort.ps1` og `tools/tjek/db-hashes.mjs` har en SHA-256 i `laas.json`. Ændres filen, afvises kørsel, til du har gennemlæst den og kørt `node server.mjs --laas`.
 
@@ -31,9 +38,11 @@ Se `tilladelser.json`. Hvert værktøj har faste kommandoer og parametre med et 
 - **Ny tilladelse eller ændret mønster:** ret `tilladelser.json` i installationsmappen. Det virker ved næste kald uden genstart (nye *navne* kræver genstart af Claude Desktop).
 - **Husk:** ret også kopien i repoet, så de to ikke driver fra hinanden.
 - **Slå netværk/DB-ændring/commit til for `kort_koer`:** tilføj en parameter og et `{"naar": "...", "vaerdi": ["-TillavNetvaerk"]}`-led i `args`. Det er slået fra som standard.
-- **Test:** `node --test tools/mcp-shell/server.test.mjs` (kører mod et midlertidigt git-repo). Testet på Linux; Windows ikke testet endnu.
+- **Test:** `node --test tools/mcp-shell/server.test.mjs` (kører mod et midlertidigt git-repo). Kørt på Linux og Windows. Dækker ikke PowerShell-argumentvarianter på Windows eller junctions med rettighedsproblemer; symlink-testen springes over, hvis de ikke kan oprettes.
 
 ## Hullerne, ærligt
 
-- `kort_koer` kører Codex med fuld adgang. Serveren begrænser ikke, hvad Codex gør inde i kørslen; det gør kortets afgrænsning og efterkontrollen.
-- `node_test` kører testkode fra repoet. Hvis nogen kan skrive en testfil, kan den køre. Fjern værktøjet, hvis det er for bredt.
+- **`kort_koer` er en bekvemmelighed med fuld adgang, ikke en sandbox.** Den starter Codex med `--sandbox danger-full-access`. Serveren styrer hvornår og med hvilke parametre, men ikke hvad Codex gør derefter; det begrænser kortets afgrænsning og scriptets efterkontrol. Vil du kun have snæver git-adgang, så fjern `kort_koer` og `tjek_hashes` fra `tilladelser.json`.
+- **`node_test` kører testkode fra repoet.** Hvis nogen kan skrive en testfil under `tools/` eller `statistik/scripts/`, kan den køres. Fjern værktøjet, hvis det er for bredt.
+- **Låsen** på `koer-kort.ps1` og `db-hashes.mjs` beskytter mod stille ændringer, men gennemlæsning er stadig dit ansvar, før du kører `--laas`.
+- **Git-kommandoer ændrer arbejdstræet** (`add`, `commit`, `switch`, `merge`). De er med vilje de eneste skrivende.
