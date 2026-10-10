@@ -1,0 +1,76 @@
+{
+  "repo": "C:\\Users\\Christoffer\\Code\\gsb-webapps",
+  "tools": {
+    "git_status": {
+      "beskrivelse": "git status --short (alle filer, ikke kun mapper)",
+      "trin": [{ "cmd": "git", "args": ["status", "--short", "--untracked-files=all"] }]
+    },
+    "git_gren": {
+      "beskrivelse": "Vis aktuel gren",
+      "trin": [{ "cmd": "git", "args": ["branch", "--show-current"] }]
+    },
+    "git_diff_check": {
+      "beskrivelse": "git diff --check (blanktegn-fejl)",
+      "trin": [{ "cmd": "git", "args": ["diff", "--check"] }]
+    },
+    "git_diff_stat": {
+      "beskrivelse": "git diff --stat (hvad er ændret, ikke committet)",
+      "trin": [{ "cmd": "git", "args": ["diff", "--stat"] }]
+    },
+    "git_log": {
+      "beskrivelse": "De seneste commits, en linje hver",
+      "parametre": { "antal": { "moenster": "^\\d{1,2}$", "paakraevet": true, "beskrivelse": "1-99" } },
+      "trin": [{ "cmd": "git", "args": ["log", "--oneline", "-n", "{antal}"] }]
+    },
+    "git_add": {
+      "beskrivelse": "git add med eksplicitte stier (ingen jokertegn, ingen -A)",
+      "parametre": { "stier": { "type": "stier", "paakraevet": true } },
+      "trin": [{ "cmd": "git", "args": ["add", "--", "{stier*}"] }]
+    },
+    "git_commit": {
+      "beskrivelse": "git commit -m med en enkelt linje. Ingen Co-Authored-By.",
+      "parametre": { "besked": { "moenster": "^[^\\r\\n]{5,200}$", "forbyd": "co-authored-by", "paakraevet": true } },
+      "trin": [{ "cmd": "git", "args": ["commit", "-m", "{besked}"] }]
+    },
+    "git_flet_gren": {
+      "beskrivelse": "Skift til main, flet grenen med --ff-only og slet den med -d (kun arbejde/...)",
+      "parametre": { "gren": { "moenster": "^arbejde/[A-Za-z0-9._-]+$", "paakraevet": true } },
+      "trin": [
+        { "cmd": "git", "args": ["switch", "main"] },
+        { "cmd": "git", "args": ["merge", "--ff-only", "{gren}"] },
+        { "cmd": "git", "args": ["branch", "-d", "{gren}"] }
+      ]
+    },
+    "tjek_hashes": {
+      "beskrivelse": "Tjek de fem databasers hashes (node tools/tjek/db-hashes.mjs)",
+      "laas": ["tools/tjek/db-hashes.mjs"],
+      "trin": [{ "cmd": "node", "args": ["tools/tjek/db-hashes.mjs"] }]
+    },
+    "node_test": {
+      "beskrivelse": "Kør én testfil med node --test (kun *.test.mjs under tools/ eller statistik/scripts/)",
+      "parametre": { "fil": { "moenster": "^(tools|statistik/scripts)/[A-Za-z0-9_./-]+\\.test\\.mjs$", "forbyd": "\\.\\.", "paakraevet": true } },
+      "trin": [{ "cmd": "node", "args": ["--test", "{fil}"] }]
+    },
+    "kort_koer": {
+      "beskrivelse": "Kør et kort via tools/koer-kort.ps1 (Codex) i baggrunden. Uden commit, uden netværk, uden DB-ændring.",
+      "baggrund": true,
+      "tidsgraenseSek": 6000,
+      "laas": ["tools/koer-kort.ps1"],
+      "parametre": {
+        "kort": { "moenster": "^\\d{1,3}$", "paakraevet": true },
+        "toer": { "type": "boolean", "beskrivelse": "Tørkørsel: viser kun hvad der ville ske" },
+        "model": { "moenster": "^[A-Za-z0-9._-]+$" },
+        "indsats": { "moenster": "^(low|medium|high)$" }
+      },
+      "trin": [{
+        "cmd": "powershell",
+        "args": [
+          "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "tools/koer-kort.ps1", "-Kort", "{kort}",
+          { "naar": "toer", "vaerdi": ["-Toer"] },
+          { "naar": "model", "vaerdi": ["-Model", "{model}"] },
+          { "naar": "indsats", "vaerdi": ["-Indsats", "{indsats}"] }
+        ]
+      }]
+    }
+  }
+}
