@@ -49,10 +49,12 @@ Ret `statistik/scripts/lib/hent.mjs` og `statistik/scripts/lib/hent.test.mjs`. O
 Skriv i "Spørgsmål". Gæt ikke. Hvis noget i kortets beskrivelse af den nuværende kode viser sig ikke at passe, så skriv hvad du fandt, og ret ud fra det.
 
 ## Spørgsmål
-(udfyldes af Codex)
+Ingen. Kortets beskrevne fejl passede med den fundne implementering.
 
 ## Tilbagefald
 Gendan `statistik/scripts/lib/hent.mjs` og `hent.test.mjs` fra `main` (`git restore`). Ingen database er berørt.
 
 ## Resultat
-(udfyldes af Codex)
+`hent.mjs` logger og gemmer hvert HTTP-svar separat; genforsøg tæller med i `antalKald` og kontrolleres mod loftet før afsendelse. Pausen før hvert efterfølgende forsøg beregnes fra forrige afsendelse. Hashkontrollen bruger kun status 200. `hent.test.mjs`: 16/16 tests bestået (a–p). Pauseberegning: `hent.mjs:116–117`; loftstjek før afsendelse: `hent.mjs:119`.
+
+Kontroller: `node tools/tjek/db-hashes.mjs` exit 0, fem ja; `git diff --check` exit 0; `git status --short` viste kun `hent.mjs`, `hent.test.mjs` og dette kort. Ingen netværkskald; tests brugte falsk `fetchFn`. Vurdering: første-gangs succes ændrer ikke funktionelt forløb, men tæller nu ét kald og gemmes særskilt som specificeret.

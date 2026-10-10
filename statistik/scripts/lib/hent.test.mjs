@@ -31,9 +31,10 @@ test('c) seks EBUSY fejler uden at ødelægge calls.jsonl', async () => {
 });
 
 test('d) 429 giver backoff og derefter 200', async () => {
-  const dir = temp(), waits = []; let calls = 0;
-  const client = opretKlient({ mappe: dir, loft: 3, minPauseMs: 0, fetchFn: async () => ({ status: calls++ ? 200 : 429, text: async () => 'ok' }), sovFn: async ms => waits.push(ms) });
-  await client.post('X', {}, 'backoff'); assert.ok(waits.includes(1000)); assert.equal(calls, 2);
+  let clock = 0; const starts = []; let calls = 0;
+  const client = opretKlient({ mappe: temp(), loft: 3, minPauseMs: 2100, fetchFn: async () => { starts.push(clock); return { status: calls++ ? 200 : 429, text: async () => 'ok' }; },
+    sovFn: async ms => { clock += ms; }, nowFn: () => clock });
+  await client.post('X', {}, 'backoff'); assert.ok(starts[1] - starts[0] >= 2100); assert.equal(calls, 2);
 });
 
 test('e) reCAPTCHA-konfiguration og Cookiebot er ikke stopårsager', () => {
@@ -89,4 +90,28 @@ test('l) arkiverede GET-svar uden allerede redigeret kontekst giver ikke stop', 
     const bytes = fs.readFileSync(path.join(root, relative)); const text = gzip ? zlib.gunzipSync(bytes).toString('utf8') : bytes.toString('utf8');
     assert.equal(vurderSvar({ status: 200, method: 'GET', url: 'https://badmintonplayer.dk/DBF/Ranglister/', text, kraevKontekst: false }).stop, false, relative);
   }
+});
+
+test('m) genforsøg logges og gemmes som separate kald', async () => {
+  const dir = temp(), client = opretKlient({ mappe: dir, loft: 3, minPauseMs: 0, fetchFn: fakeFetch({ status: 429, text: 'vent' }, { status: 200, text: 'ok' }), sovFn: noSleep });
+  await client.post('X', {}, 'retry-log');
+  const rows = fs.readFileSync(path.join(dir, 'calls.jsonl'), 'utf8').trim().split(/\r?\n/u).map(JSON.parse);
+  assert.deepEqual(rows.map(({ status, retry }) => ({ status, retry })), [{ status: 429, retry: 0 }, { status: 200, retry: 1 }]);
+  assert.deepEqual(fs.readdirSync(dir).filter(name => /^call-\d{3}\.json\.gz$/u.test(name)).sort(), ['call-001.json.gz', 'call-002.json.gz']);
+});
+
+test('n) genforsøg tæller i kaldloftet', async () => {
+  let sent = 0; const client = opretKlient({ mappe: temp(), loft: 2, minPauseMs: 0, fetchFn: async () => { sent++; return { status: 429, text: async () => 'vent' }; }, sovFn: noSleep });
+  await assert.rejects(client.post('X', {}, 'retry-loft'), /Kaldloft/); assert.equal(sent, 2); assert.equal(client.antalKald, 2);
+});
+
+test('o) samme 429-svar for forskellige anmodninger giver ikke filterfejl', async () => {
+  const client = opretKlient({ mappe: temp(), loft: 6, minPauseMs: 0, fetchFn: fakeFetch({ status: 429, text: 'vent' }, { status: 200, text: 'svar a' }, { status: 429, text: 'vent' }, { status: 200, text: 'svar b' }), sovFn: noSleep });
+  await client.post('X', { filter: 'a' }, '429-filter');
+  await client.post('X', { filter: 'b' }, '429-filter');
+});
+
+test('p) antalKald tæller begge anmodninger ved 429 + 200', async () => {
+  const client = opretKlient({ mappe: temp(), loft: 3, minPauseMs: 0, fetchFn: fakeFetch({ status: 429, text: 'vent' }, { status: 200, text: 'ok' }), sovFn: noSleep });
+  await client.post('X', {}, 'antal-retry'); assert.equal(client.antalKald, 2);
 });

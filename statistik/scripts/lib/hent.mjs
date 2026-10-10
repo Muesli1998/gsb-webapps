@@ -106,34 +106,37 @@ export function opretKlient({ mappe, loft, tidligereKald = 0, minPauseMs = 2100,
   }
 
   async function perform({ method, url, label, fields = {}, body, parse = text => text, requireContext = false }) {
-    const now = nowFn();
-    if (lastCallAt !== null) await sovFn(Math.max(0, minPauseMs - (now - lastCallAt)));
-    if (Number(tidligereKald) + count + 1 > loft) throw new Error(`Kaldloft overskredet (${loft}); anmodningen blev ikke sendt`);
     let response;
     let text;
     let status;
-    let retries = 0;
+    let record;
+    let retry = 0;
     do {
+      if (lastCallAt !== null) {
+        const pauseMs = retry === 0 ? minPauseMs : Math.max(minPauseMs, 1000 * retry);
+        await sovFn(Math.max(0, pauseMs - (nowFn() - lastCallAt)));
+      }
+      if (Number(tidligereKald) + count + 1 > loft) throw new Error(`Kaldloft overskredet (${loft}); anmodningen blev ikke sendt`);
+      count++;
       lastCallAt = nowFn();
       response = await fetchFn(url, { method, ...(body === undefined ? {} : { headers: { 'content-type': 'application/json; charset=utf-8' }, body: JSON.stringify(body) }) });
       status = response.status;
       text = await response.text();
+      const redacted = redigerSvar(text);
+      const filename = `call-${String(Number(tidligereKald) + count).padStart(3, '0')}.json.gz`;
+      fs.writeFileSync(path.join(mappe, filename), zlib.gzipSync(redacted));
+      record = { number: Number(tidligereKald) + count, timestamp: new Date().toISOString(), method, label, fields: cleanFields(fields), status, retry,
+        bytes: Buffer.byteLength(redacted), sha256: digest(redacted), saved_file: filename };
+      await tilfoejLinje(callLog, record, { sovFn });
+      savedCalls.push(record); checkpointDirty = true;
+      await checkpoint();
+      const prior = status === 200 ? savedCalls.slice(0, -1).find(row => row.status === 200 && row.label === label && JSON.stringify(row.fields) !== JSON.stringify(record.fields)) : null;
+      if (prior && prior.sha256.toLowerCase() === record.sha256.toLowerCase()) throw new Error('filteret virker ikke');
       if (status !== 429 && !(status >= 500 && status <= 599)) break;
-      retries++;
-      if (retries >= 3) break;
-      await sovFn(1000 * retries);
+      if (retry >= 2) break;
+      retry++;
     } while (true);
-    count++;
     const redacted = redigerSvar(text);
-    const filename = `call-${String(Number(tidligereKald) + count).padStart(3, '0')}.json.gz`;
-    fs.writeFileSync(path.join(mappe, filename), zlib.gzipSync(redacted));
-    const record = { number: Number(tidligereKald) + count, timestamp: new Date().toISOString(), method, label, fields: cleanFields(fields), status,
-      bytes: Buffer.byteLength(redacted), sha256: digest(redacted), saved_file: filename };
-    await tilfoejLinje(callLog, record, { sovFn });
-    savedCalls.push(record); checkpointDirty = true;
-    await checkpoint();
-    const prior = savedCalls.slice(0, -1).find(row => row.label === label && JSON.stringify(row.fields) !== JSON.stringify(record.fields));
-    if (prior && prior.sha256.toLowerCase() === record.sha256.toLowerCase()) throw new Error('filteret virker ikke');
     const verdict = vurderSvar({ status, text: redacted, method, url, kraevKontekst: requireContext });
     if (verdict.stop) {
       record.stop = verdict;
@@ -171,7 +174,7 @@ export function opretKlient({ mappe, loft, tidligereKald = 0, minPauseMs = 2100,
 
   async function sammenlignForsteTo(label) {
     const rows = fs.readFileSync(callLog, 'utf8').split(/\r?\n/u).filter(Boolean).map(line => { try { return JSON.parse(line); } catch { return null; } })
-      .filter(row => row?.label === label && row.sha256);
+      .filter(row => row?.label === label && row.status === 200 && row.sha256);
     if (rows.length < 2) throw new Error('Mindst to kald med samme label kræves');
     if (JSON.stringify(rows[0].fields) === JSON.stringify(rows[1].fields)) throw new Error('Kaldparametrene er ikke forskellige');
     if (rows[0].sha256.toLowerCase() === rows[1].sha256.toLowerCase()) throw new Error('filteret virker ikke');
