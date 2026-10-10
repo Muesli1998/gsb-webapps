@@ -139,6 +139,11 @@ PowerShell: `codex.exe --codex-run-as-apply-patch <patchfil>`. Stien til
 `%LOCALAPPDATA%\OpenAI\Codex\bin\<hash>\codex.exe`. Find den aktuelle
 med `Get-ChildItem "$env:LOCALAPPDATA\OpenAI\Codex\bin" -Recurse -Filter codex.exe`.
 
+**Kortfiler: skriv kun i Spørgsmål og Resultat, aldrig hele filen.**
+Under kort 172 (2026-10-10) blev æøå dobbeltkodet, og overvågningen stoppede kørslen; hvilket værktøj der skrev, er ukendt.
+Skriv kun `## Spørgsmål` og `## Resultat` med `node tools/skriv-kort-afsnit.mjs <kortsti> <Spørgsmål|Resultat> <tekstfil>`; gem først teksten under `work/koersler/<kortnummer>/`.
+`kort_koer_net`-overvågningen afbryder en kørsel, hvis kortets faste del ændres.
+
 ---
 
 ## Arbejdsform

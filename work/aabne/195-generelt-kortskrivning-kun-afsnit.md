@@ -42,10 +42,10 @@ Din almindelige shell starter ikke på denne maskine (`setup refresh had errors`
 Gæt ikke. Passer den eksisterende promptlinje ikke til beskrivelsen, så ret ingenting og skriv forskellen i `## Spørgsmål`.
 
 ## Spørgsmål
-(Tomt.)
+Ingen spørgsmål.
 
 ## Tilbagefald
 `git restore tools/koer-kort.ps1 AGENTS.md`. Ingen database er berørt.
 
 ## Resultat
-(Udfyldes af Codex.)
+Ændret tools/koer-kort.ps1: promptlinje 94 instruerer nu udelukkende brug af skriv-kort-afsnit.mjs til Spørgsmål/Resultat og forbyder omskrivning af hele kortfilen. AGENTS.md: nyt afsnit indsat efter apply_patch-vejledningen; det fylder linje 142–145 og beskriver hændelsen, skrive-reglen og kort_koer_net-overvågningen.

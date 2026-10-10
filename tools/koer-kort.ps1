@@ -91,7 +91,7 @@ function Get-CardPrompt([string]$Text, [string]$Branch) {
         ('F' + [char]0xF8 + 'lg kortet nedenfor ordret og reglerne i AGENTS.md.'),
         ('Brug kun l' + [char]0xE6 + 'sende git-kommandoer (status, diff, log, show). Ingen add, commit, push, switch, checkout, ingen sub-agents.'),
         ('R' + [char]0xF8 + 'r kun filer inden for kortets Afgr' + [char]0xE6 + 'nsning.'),
-        ('Du skal altid udfylde afsnittene Sp' + [char]0xF8 + 'rgsm' + [char]0xE5 + 'l og Resultat i selve kortfilen, ogs' + [char]0xE5 + ' hvis Afgr' + [char]0xE6 + 'nsningen ikke n' + [char]0xE6 + 'vner den.'),
+        ('Du skal altid udfylde afsnittene Sp' + [char]0xF8 + 'rgsm' + [char]0xE5 + 'l og Resultat i selve kortfilen, ogs' + [char]0xE5 + ' hvis Afgr' + [char]0xE6 + 'nsningen ikke n' + [char]0xE6 + 'vner den. Skriv dem KUN med `node tools/skriv-kort-afsnit.mjs <kortets repo-relative sti> <Sp' + [char]0xF8 + 'rgsm' + [char]0xE5 + 'l|Resultat> <tekstfil>` (`--tilfoej` for at tilf' + [char]0xF8 + 'je). Gem teksten f' + [char]0xF8 + 'rst i en fil under `work/koersler/<kortnummer>/`; den mappe m' + [char]0xE5 + ' du altid bruge. Skriv aldrig hele kortfilen: ikke med Set-Content, Out-File, WriteAllText, apply_patch eller nogen anden metode. Fejler scriptet, s' + [char]0xE5 + ' stop og skriv fejlen i dit slutsvar.'),
         ('Efterpr' + [char]0xF8 + 'v dine egne tal ved at gen' + [char]0xE5 + 'bne filerne, f' + [char]0xF8 + 'r du rapporterer. G' + [char]0xE6 + 't ikke; skriv "ukendt".'),
         ('Stop, n' + [char]0xE5 + 'r du er f' + [char]0xE6 + 'rdig, og afslut med en kort slutrapport.')
     ) -join [Environment]::NewLine
