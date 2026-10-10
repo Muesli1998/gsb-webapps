@@ -58,10 +58,16 @@ Din almindelige shell starter ikke på denne maskine (`setup refresh had errors`
 Gæt ikke. Kan en regel ikke bekræftes af data, så skriv `uafklaret` eller `ukendt` og forklar hvorfor. Skriv i `## Spørgsmål`.
 
 ## Spørgsmål
-(Tomt.)
+Codex kunne ikke udfylde Spørgsmål og Resultat: `node tools/skriv-kort-afsnit.mjs` blev kaldt med en gættet sti (`work/aabne/193-markoer-vinder-manglende-kampe.md`) i stedet for den rigtige (`work/aabne/193-statistik-markoer-vinder-og-manglende-kampe.md`), og scriptet afviste den. Afsnittene er derfor udfyldt af Claude efter kørslen, med samme script, ud fra Codex' slutsvar og rapporten `statistik/results/193-markoer-vinder.md`. Tallene er aflæst i rapporten og ikke genberegnet.
+Åbne punkter til Christoffer: markørbogstaver, der ikke matcher præcis ét holdnavn, og tvetydige værdier bør bekræftes (rapporten, afsnittet Vurdering).
 
 ## Tilbagefald
 Slet de nye filer. Ingen database er berørt.
 
 ## Resultat
-(Udfyldes af Codex.)
+Kørt 2026-10-10, 0 netværkskald, databaserne read-only, de fem hashes matcher, `git diff --check` uden fejl, ingen fil uden for afgrænsningen. Filer: `statistik/scripts/193-markoer-vinder.mjs`, `statistik/results/193-markoer-vinder.md`, `.json` og `.csv`, `statistik/results/193-manglende-kampe.csv` (431 rækker). Den store CSV har 20.319 rækker med 20.319 unikke kamp-id'er.
+- Vindermetode (20.319 individuelle kampe): markør 309, sætscore 19.083, holdresultat 858, uafklaret 69. Markør og score er uenige i 81 kampe; markøren vinder.
+- Holdresultater: af 2.682 parsebare holdkampe stemte 1.910, før markørreglen, og 2.221 (82,8 %) efter den.
+- Manglende kampe: 431 holdkampe har færre rækker end holdresultatet, 2.764 rækker i alt. De tre kontrolkampe passer: 452891 mangler 1 udesejr (3-3 bliver 3-4), 429489 mangler 1 hjemmesejr, 169020 mangler 2 udesejre; i alle tre er G-markøren evidens. Årsagen er delvist ukendt, da databasen ikke har kategorier for de manglende kampe.
+- 2025/26: 14 kampe skifter vinder (40 spiller-ID'er, pseudo-ID 176 udeladt) og 106 holdkampe tilføjes. Spillerne i de manglende kampe kan ikke rekonstrueres. Om andre tal i 187 påvirkes er ukendt.
+- Importforslag og vurdering: se rapporten. Markørreglen kan bruges afledt, men 82,8 % er ikke nok til automatisk at overskrive `winner_side`.
