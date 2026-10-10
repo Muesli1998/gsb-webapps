@@ -40,10 +40,14 @@ Din almindelige shell starter ikke på denne maskine (`setup refresh had errors`
 Er en kamps udfald ukendt (ikke vindermarkør), så udeluk den og tæl den. Skriv i `## Spørgsmål`; gæt ikke, skriv "ukendt" og gem evidensen.
 
 ## Spørgsmål
-(Tomt.)
+116 individuelle kampe har intet `winner_side=home/away` og er derfor udelukket. Det er ukendt, hvad rå markør `G` betyder; evidensen for alle 116 kampe (kamp-ID, dato, aldersgruppe, disciplin, status, rå markør og walkover-tekst) er gemt i `statistik/results/177-effektivitet-metoder.json`. Heraf er 23 eksplicit tekstmarkerede walkover-kampe uden kendt vinder. Ukendt udfald fordelt på rå aldersgruppe-ID: SEN 29, U13 1, U15 30, SEN40+ 24, SEN50+ 27, SEN60+ 5.
 
 ## Tilbagefald
 Slet de nye filer.
 
 ## Resultat
-(Udfyldes af Codex.)
+Kørt offline med SQLite read-only. Datagrundlag: 2025/26, 2.921 individuelle GSB-kampe i alle aldersgrupper, heraf 1.582 ungdomskampe og 289 spillere. 2.805 kampe havde kendt udfald; 116 blev udelukket. Walkover: 127 tekstligt identificerede, hvoraf 104 havde kendt udfald. Modstanderpoint var ukendt i alle 4.186 standardoptrædener.
+
+Sammenlignet fem metoder ved N=5/10/20 med top-10, spillerudelukkelser, Spearman-korrelation for lige/ulige og sæsonhalvdele, walkover ind/ud, single/double og rangskift. Bayes-justeret med rå procent og kampantal anbefales foreløbigt (vurdering). ELO bruger modstanderdeltagernes kampresultater, men bygger kun på kampe mod GSB og mangler ekstern/pointbaseret styrke. Tal og metodeforbehold står i resultatrapporten.
+
+Kontrol: scriptet bestod `node --check` og kørte; ingen netværkskald. `node tools/tjek/db-hashes.mjs` afsluttede med kode 0 (alle fem databaser uændrede); `git diff --check` afsluttede uden fejl.
