@@ -9,10 +9,10 @@
 `arbejde/192-ukendte-vindere`, fra `main`. Christoffer opretter grenen og committer selv. Codex kører kun læsende git, ustaged, ingen `git add -A`, ingen push, ingen Co-Authored-By, ingen sub-agents.
 
 ## Baggrund
-- Fra Christoffer (reglerne i badmintonspillet, ikke målt af os): resultatmarkøren `G` i `individual_matches.result_marker_raw` betyder, at kampen er afgjort ved walkover, protest eller lignende. Det kan ske før kampen, midt i kampen eller efter kampen. Eksempel: i holdkamp 486756 (Charlottenlund 1 mod Gladsaxe Søborg 1, 2026-01-11) står `1. HD` med sæt 21-6 og 12-21 og ingen vinder; Charlottenlund-parret trak sig efter 2. sæt.
+- **Rettet 2026-10-10 (Christoffer):** resultatmarkøren i `individual_matches.result_marker_raw` er **forbogstavet på den klub, der får tildelt sejren i kampen** (`G` = Gladsaxe Søborg). Den er ikke en kode for walkover. Er begge klubbers forbogstav ens, står `(1)` for hjemmeholdet og `(2)` for udeholdet. Markøren gælder over sætscoren, når kampen afgøres ved protest, tilbagetrækning eller walkover (fx kamp 169020, hvor Hvidovre står foran i alle scorede sæt, men Gladsaxe får sejren, fordi Hvidovre brugte ulovlige spillere). Kamp 486756: `1. HD` 21-6 og 12-21 med markør `G` betyder, at Gladsaxe får sejren, efter at Charlottenlund-parret trak sig. Kort 193 bygger videre på dette. Den oprindelige tekst om walkover/protest er erstattet.
 - Teksten "Ikke fremmødt" betyder, at holdet ikke har sat en spiller på holdkortet. Så tabes kampen automatisk.
 - Data i `gsb-statistik-normalized.db`: `individual_matches` har `winner_side` (`home`/`away`/tom), `result_marker_raw` (bogstaver; `G` er hyppigst), `status`, `home_score_raw`, `away_score_raw` (sæt adskilt af bindestreg). `team_matches` har `result_raw` (fx `5-3`, hjemmehold først), `walkover_text_raw`, `walkover_winner_raw`, `remark_raw`. 967 individuelle kampe har tom `winner_side`; 116 af dem er i 2025/26. Kun 7 af de 116 kan afledes entydigt af holdresultatet, hvis man kun tæller kampe i holdkampe med én ukendt.
-- Andre bogstaver end `G` findes i markøren (A–V). Deres betydning er ukendt for os.
+- Andre bogstaver end `G` (A–V) er forbogstaver på de øvrige klubber (fx B = Brøndby, H = Hvidovre). Rapporten i `192-ukendte-vindere.md` behandler dem som ukendte koder og er derfor forældet på dette punkt; se kort 193.
 - Kort 177 og 187 bruger kun kampe med kendt vinder. Hot streak, spillerstatistik og rekordbog skal kunne tælle disse kampe med.
 
 ## Mål
