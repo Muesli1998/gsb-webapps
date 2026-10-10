@@ -1,4 +1,4 @@
-﻿# Opgave 191 — personnøgle: kobl hvert spiller-ID i kampdata til én person
+# Opgave 191 — personnøgle: kobl hvert spiller-ID i kampdata til én person
 
 **Status:** `work/aabne/` — besluttet af Christoffer 2026-10-10 ("personnøgler SKAL fikses").
 **Kategori:** statistik · **Bølge:** 1 · **Afhænger af:** 164 (færdig) · **Netværk:** ingen
@@ -55,10 +55,13 @@ Din almindelige shell starter ikke på denne maskine (`setup refresh had errors`
 Gæt ikke. Er to ID'er muligvis samme person, så vælg `uafklaret` og skriv kandidaterne. "ukendt" er et gyldigt svar. Skriv i `## Spørgsmål`.
 
 ## Spørgsmål
-(Tomt.)
+- Ukendt: De navnebaserede kandidat-ID’er i 164 er ikke godkendt som personkoblinger. Christoffer skal afgøre kandidaterne i rapportens trupoversigt, især de 7 nævnte navne og Linda Bækgaard. Ingen er valgt her.
 
 ## Tilbagefald
 Slet de nye filer. Ingen database er berørt.
 
 ## Resultat
-(Udfyldes af Codex.)
+- Koblingstabellen indeholder 7.599 normalized player-ID’er: 677 på GSB-siden i alle sæsoner, heraf 289 i 2025/26, samt 6.910 øvrige ID’er. For 2025/26 er 262 sandsynlige og 27 uafklarede; for alle GSB-sæsoner er 617 sandsynlige og 60 uafklarede. Ingen sikre koblinger, samme_person eller navnebroedre kunne bevises. På tværs af alle kampdata: 617 sandsynlige og 6.982 uafklarede.
+- Alle 44 trupnavne har en klasse; 15 står uafklaret, herunder de 7 navne uden valgt identitet og Linda. Kandidat-ID’er og kampkontekst står i rapporten. 0 personnøglekonflikter. Netværkskald: 0.
+- Vurdering: 88,36 % af alle GSB-optrædener og 90,19 % i 2025/26 har en sandsynlig kandidat; 0 % er sikre. Kandidaterne er ikke godkendte personidentiteter, så datagrundlaget rækker ikke til spillertal uden forbehold. Stikprøve: 0 sikre tilgængelige; 10 deterministisk udvalgte uafklarede kandidater med evidens står i rapporten.
+- Kontrol: 5/5 databasehashes matcher; `git diff --check` uden fejl. Ingen databaser ændret. Forslag: behold filen som review-kilde; indlæs først godkendte koblinger i en mappingtabel.
