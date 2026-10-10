@@ -174,8 +174,8 @@ function Get-AllowedPaths([string]$Text, [string]$CardPath) {
         $mayTouch = [regex]::Match($section.Groups[1].Value, ('(?ms)M' + [char]0xE5 + ' r' + [char]0xF8 + 'res(?::\*\*|\*\*\s*:|:)\s*(.*?)(?=M' + [char]0xE5 + ' ikke r' + [char]0xF8 + 'res|\z)'))
         if ($mayTouch.Success) {
             $scanText = $mayTouch.Groups[1].Value
-            # Kort der skriver "de nye filer ovenfor" i Maa roere: tillad ogsaa de stier, der er navngivet under Maal og Output.
-            if ($scanText -match 'ovenfor') {
+            # Kort der skriver "de nye filer ovenfor/nedenfor" i Maa roere: tillad ogsaa de stier, der er navngivet under Maal og Output.
+            if ($scanText -match '(oven|neden)for') {
                 foreach ($secName in @(('M' + [char]0xE5 + 'l'), 'Output')) {
                     $sec = [regex]::Match($Text, ('(?ms)^## ' + $secName + '\s*(.*?)(?=^##\s|\z)'))
                     if ($sec.Success) { $scanText += [Environment]::NewLine + $sec.Groups[1].Value }
