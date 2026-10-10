@@ -50,10 +50,14 @@ Skriv `## Spørgsmål` og `## Resultat` i dette kort KUN med `node tools/skriv-k
 Gæt ikke. Er to ID'er muligvis samme person, så vælg `uafklaret` og skriv kandidaterne. Skriv i `## Spørgsmål`.
 
 ## Spørgsmål
-Ingen identitetsvalg foretaget. Kan rangliste-/national-ID-koblinger fra kort 164 behandles som kandidatbeviser uden uafhængig bekræftelse i de underliggende kilder? Kort 191 markerer dem fortsat uafklarede; denne kørsel nåede ikke at efterprøve fuldt navn, klub og sæson for hver kandidat.
+Christoffer: udfyld `christoffers_valg` i `statistik/results/194-personnoegle-manuel-gennemgang.csv` for de 27 rækker. Alle otte trupnavne er med; der er ikke foretaget identitetsvalg. Rapportens eneste `sikker` kobling er normalized ID 66 til `id:330770` efter R1. Ingen øvrige afklaringsspørgsmål.
 
 ## Tilbagefald
 Slet de nye filer. Ingen database er berørt.
 
 ## Resultat
-Arbejdet blev ikke gennemført. Ingen outputfiler for 194 blev oprettet, og ingen database blev åbnet eller ændret. Derfor er klasseantal efter, konflikttal, stikprøve, manuel CSV, GSB-dækning og kontrol af db-hashes ukendt. Netværkskald: 0. Gren kontrolleret: arbejde/194-personnoegle-runde-2. `git diff --check` gav ingen fejl ved start; `git status --short` var tom ved start.
+Gennemført på grenen `arbejde/194-personnoegle-runde-2`; ingen git-skrivekommandoer og ingen netværkskald (0). Oprettet script samt rapport, JSON, koblings-CSV og manuel CSV for opgave 194. Alle tre åbnede databaser var `mode=ro` med `PRAGMA query_only=ON`; ingen database blev ændret.
+
+Koblingen har 7.599 rækker/unikke ID'er: 677 GSB-side-ID'er på tværs af sæsoner, heraf 289 i 2025/26, og 6.922 øvrige ID'er. Før/efter klasseantal: sikker 0→1, sandsynlig 617→616, uafklaret 6.982→6.923, navnebroedre 0→58, samme_person 0→0, ikke_person 0→1. De 30 viste ændringer står i rapporten; 30 yderligere er optalt. 2025/26 har 1 sikker, 261 sandsynlig, 26 navnebroedre, 0 uafklaret, 0 samme_person og 1 ikke_person. ID 176 er `ikke_person`. Konflikter: 0. Af 4.537 GSB-kampoptrædener i 2025/26 er 28 knyttet til sikker person (0,62 %).
+
+Stikprøven: 1 tilgængelig sikker (af 15 ønskede) og 15 uafklarede; den separate konfliktkontrol afviste 0/1 sikre. Manuel CSV: 27 rækker, alle 8 trupnavne inkluderet, `christoffers_valg` tom. Netværkskald: 0. `node --check` og scriptkørsel afsluttede med kode 0; alle fem databasehashes var `ja`; `git diff --check` gav ingen fejl. Slutstatus viste alene dette kort og de fem nye script-/resultatfiler.
