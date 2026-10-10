@@ -39,10 +39,10 @@ Din almindelige shell starter ikke på denne maskine (`setup refresh had errors`
 Reproduceres tallene ikke, så stop og skriv forskellen. Skriv i `## Spørgsmål`; gæt ikke, skriv "ukendt" og gem evidensen.
 
 ## Spørgsmål
-(Tomt.)
+Liste 287 historik: ukendt. Ét GET-forsøg mod ranglistesiden returnerede uden genkendelig callback context; derfor blev ingen versions- eller placeringsforespørgsler sendt. Gemte 2019-svar gælder liste 288.
 
 ## Tilbagefald
 Slet de nye filer.
 
 ## Resultat
-(Udfyldes af Codex.)
+Afledte grænser: 550/562 placeringskontroller og 322/323 pointkontroller. Livehistorik kunne ikke afklares: ét GET, callback context kunne ikke udtrækkes, ingen POST (under loft 10). Gemte historiksvar tilbage til 01-07-2019 gælder liste 288; liste 287 er ukendt. Kvartalshypotesen ikke testet; nødvendige datoer/kaldetal i rapporten.

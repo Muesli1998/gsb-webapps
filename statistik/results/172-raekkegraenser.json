@@ -1,0 +1,551 @@
+﻿{
+    "task":  172,
+    "bounds":  [
+                   {
+                       "aldersgruppe":  "U13",
+                       "koen":  "M",
+                       "raekke":  "M",
+                       "type":  "placering",
+                       "nedre_graense":  1,
+                       "oevre_graense":  24,
+                       "testede_spillere":  100,
+                       "kilde":  {
+                                     "kort":  [
+                                                  160,
+                                                  161
+                                              ],
+                                     "filer":  [
+                                                   "statistik/results/160-ungdom-placeringsraekker.json",
+                                                   "statistik/results/161-point-ved-raekkegraenser.json",
+                                                   "statistik/results/161-ungdom-reglement-2026-27.md"
+                                               ]
+                                 }
+                   },
+                   {
+                       "aldersgruppe":  "U13",
+                       "koen":  "M",
+                       "raekke":  "M-A",
+                       "type":  "placering",
+                       "nedre_graense":  25,
+                       "oevre_graense":  48,
+                       "testede_spillere":  100,
+                       "kilde":  {
+                                     "kort":  [
+                                                  160,
+                                                  161
+                                              ],
+                                     "filer":  [
+                                                   "statistik/results/160-ungdom-placeringsraekker.json",
+                                                   "statistik/results/161-point-ved-raekkegraenser.json",
+                                                   "statistik/results/161-ungdom-reglement-2026-27.md"
+                                               ]
+                                 }
+                   },
+                   {
+                       "aldersgruppe":  "U13",
+                       "koen":  "M",
+                       "raekke":  "A",
+                       "type":  "point",
+                       "nedre_graense":  1525,
+                       "oevre_graense":  null,
+                       "testede_spillere":  100,
+                       "kilde":  {
+                                     "kort":  [
+                                                  160,
+                                                  161
+                                              ],
+                                     "filer":  [
+                                                   "statistik/results/160-ungdom-placeringsraekker.json",
+                                                   "statistik/results/161-point-ved-raekkegraenser.json",
+                                                   "statistik/results/161-ungdom-reglement-2026-27.md"
+                                               ]
+                                 }
+                   },
+                   {
+                       "aldersgruppe":  "U13",
+                       "koen":  "K",
+                       "raekke":  "M",
+                       "type":  "placering",
+                       "nedre_graense":  1,
+                       "oevre_graense":  24,
+                       "testede_spillere":  100,
+                       "kilde":  {
+                                     "kort":  [
+                                                  160,
+                                                  161
+                                              ],
+                                     "filer":  [
+                                                   "statistik/results/160-ungdom-placeringsraekker.json",
+                                                   "statistik/results/161-point-ved-raekkegraenser.json",
+                                                   "statistik/results/161-ungdom-reglement-2026-27.md"
+                                               ]
+                                 }
+                   },
+                   {
+                       "aldersgruppe":  "U13",
+                       "koen":  "K",
+                       "raekke":  "M-A",
+                       "type":  "placering",
+                       "nedre_graense":  25,
+                       "oevre_graense":  48,
+                       "testede_spillere":  100,
+                       "kilde":  {
+                                     "kort":  [
+                                                  160,
+                                                  161
+                                              ],
+                                     "filer":  [
+                                                   "statistik/results/160-ungdom-placeringsraekker.json",
+                                                   "statistik/results/161-point-ved-raekkegraenser.json",
+                                                   "statistik/results/161-ungdom-reglement-2026-27.md"
+                                               ]
+                                 }
+                   },
+                   {
+                       "aldersgruppe":  "U13",
+                       "koen":  "K",
+                       "raekke":  "A",
+                       "type":  "point",
+                       "nedre_graense":  1350,
+                       "oevre_graense":  null,
+                       "testede_spillere":  100,
+                       "kilde":  {
+                                     "kort":  [
+                                                  160,
+                                                  161
+                                              ],
+                                     "filer":  [
+                                                   "statistik/results/160-ungdom-placeringsraekker.json",
+                                                   "statistik/results/161-point-ved-raekkegraenser.json",
+                                                   "statistik/results/161-ungdom-reglement-2026-27.md"
+                                               ]
+                                 }
+                   },
+                   {
+                       "aldersgruppe":  "U15",
+                       "koen":  "M",
+                       "raekke":  "E",
+                       "type":  "placering",
+                       "nedre_graense":  1,
+                       "oevre_graense":  24,
+                       "testede_spillere":  100,
+                       "kilde":  {
+                                     "kort":  [
+                                                  160,
+                                                  161
+                                              ],
+                                     "filer":  [
+                                                   "statistik/results/160-ungdom-placeringsraekker.json",
+                                                   "statistik/results/161-point-ved-raekkegraenser.json",
+                                                   "statistik/results/161-ungdom-reglement-2026-27.md"
+                                               ]
+                                 }
+                   },
+                   {
+                       "aldersgruppe":  "U15",
+                       "koen":  "M",
+                       "raekke":  "E-M",
+                       "type":  "placering",
+                       "nedre_graense":  25,
+                       "oevre_graense":  36,
+                       "testede_spillere":  100,
+                       "kilde":  {
+                                     "kort":  [
+                                                  160,
+                                                  161
+                                              ],
+                                     "filer":  [
+                                                   "statistik/results/160-ungdom-placeringsraekker.json",
+                                                   "statistik/results/161-point-ved-raekkegraenser.json",
+                                                   "statistik/results/161-ungdom-reglement-2026-27.md"
+                                               ]
+                                 }
+                   },
+                   {
+                       "aldersgruppe":  "U15",
+                       "koen":  "M",
+                       "raekke":  "M",
+                       "type":  "point",
+                       "nedre_graense":  1850,
+                       "oevre_graense":  null,
+                       "testede_spillere":  100,
+                       "kilde":  {
+                                     "kort":  [
+                                                  160,
+                                                  161
+                                              ],
+                                     "filer":  [
+                                                   "statistik/results/160-ungdom-placeringsraekker.json",
+                                                   "statistik/results/161-point-ved-raekkegraenser.json",
+                                                   "statistik/results/161-ungdom-reglement-2026-27.md"
+                                               ]
+                                 }
+                   },
+                   {
+                       "aldersgruppe":  "U15",
+                       "koen":  "M",
+                       "raekke":  "A",
+                       "type":  "point",
+                       "nedre_graense":  1600,
+                       "oevre_graense":  1850,
+                       "testede_spillere":  100,
+                       "kilde":  {
+                                     "kort":  [
+                                                  160,
+                                                  161
+                                              ],
+                                     "filer":  [
+                                                   "statistik/results/160-ungdom-placeringsraekker.json",
+                                                   "statistik/results/161-point-ved-raekkegraenser.json",
+                                                   "statistik/results/161-ungdom-reglement-2026-27.md"
+                                               ]
+                                 }
+                   },
+                   {
+                       "aldersgruppe":  "U15",
+                       "koen":  "M",
+                       "raekke":  "B",
+                       "type":  "point",
+                       "nedre_graense":  1375,
+                       "oevre_graense":  1600,
+                       "testede_spillere":  100,
+                       "kilde":  {
+                                     "kort":  [
+                                                  160,
+                                                  161
+                                              ],
+                                     "filer":  [
+                                                   "statistik/results/160-ungdom-placeringsraekker.json",
+                                                   "statistik/results/161-point-ved-raekkegraenser.json",
+                                                   "statistik/results/161-ungdom-reglement-2026-27.md"
+                                               ]
+                                 }
+                   },
+                   {
+                       "aldersgruppe":  "U15",
+                       "koen":  "M",
+                       "raekke":  "C",
+                       "type":  "point",
+                       "nedre_graense":  1200,
+                       "oevre_graense":  1375,
+                       "testede_spillere":  100,
+                       "kilde":  {
+                                     "kort":  [
+                                                  160,
+                                                  161
+                                              ],
+                                     "filer":  [
+                                                   "statistik/results/160-ungdom-placeringsraekker.json",
+                                                   "statistik/results/161-point-ved-raekkegraenser.json",
+                                                   "statistik/results/161-ungdom-reglement-2026-27.md"
+                                               ]
+                                 }
+                   },
+                   {
+                       "aldersgruppe":  "U15",
+                       "koen":  "M",
+                       "raekke":  "D",
+                       "type":  "point",
+                       "nedre_graense":  null,
+                       "oevre_graense":  1200,
+                       "testede_spillere":  100,
+                       "kilde":  {
+                                     "kort":  [
+                                                  160,
+                                                  161
+                                              ],
+                                     "filer":  [
+                                                   "statistik/results/160-ungdom-placeringsraekker.json",
+                                                   "statistik/results/161-point-ved-raekkegraenser.json",
+                                                   "statistik/results/161-ungdom-reglement-2026-27.md"
+                                               ]
+                                 }
+                   },
+                   {
+                       "aldersgruppe":  "U15",
+                       "koen":  "K",
+                       "raekke":  "E",
+                       "type":  "placering",
+                       "nedre_graense":  1,
+                       "oevre_graense":  24,
+                       "testede_spillere":  89,
+                       "kilde":  {
+                                     "kort":  [
+                                                  160,
+                                                  161
+                                              ],
+                                     "filer":  [
+                                                   "statistik/results/160-ungdom-placeringsraekker.json",
+                                                   "statistik/results/161-point-ved-raekkegraenser.json",
+                                                   "statistik/results/161-ungdom-reglement-2026-27.md"
+                                               ]
+                                 }
+                   },
+                   {
+                       "aldersgruppe":  "U15",
+                       "koen":  "K",
+                       "raekke":  "E-M",
+                       "type":  "placering",
+                       "nedre_graense":  25,
+                       "oevre_graense":  36,
+                       "testede_spillere":  89,
+                       "kilde":  {
+                                     "kort":  [
+                                                  160,
+                                                  161
+                                              ],
+                                     "filer":  [
+                                                   "statistik/results/160-ungdom-placeringsraekker.json",
+                                                   "statistik/results/161-point-ved-raekkegraenser.json",
+                                                   "statistik/results/161-ungdom-reglement-2026-27.md"
+                                               ]
+                                 }
+                   },
+                   {
+                       "aldersgruppe":  "U15",
+                       "koen":  "K",
+                       "raekke":  "M",
+                       "type":  "point",
+                       "nedre_graense":  1500,
+                       "oevre_graense":  null,
+                       "testede_spillere":  89,
+                       "kilde":  {
+                                     "kort":  [
+                                                  160,
+                                                  161
+                                              ],
+                                     "filer":  [
+                                                   "statistik/results/160-ungdom-placeringsraekker.json",
+                                                   "statistik/results/161-point-ved-raekkegraenser.json",
+                                                   "statistik/results/161-ungdom-reglement-2026-27.md"
+                                               ]
+                                 }
+                   },
+                   {
+                       "aldersgruppe":  "U15",
+                       "koen":  "K",
+                       "raekke":  "A",
+                       "type":  "point",
+                       "nedre_graense":  1350,
+                       "oevre_graense":  1500,
+                       "testede_spillere":  89,
+                       "kilde":  {
+                                     "kort":  [
+                                                  160,
+                                                  161
+                                              ],
+                                     "filer":  [
+                                                   "statistik/results/160-ungdom-placeringsraekker.json",
+                                                   "statistik/results/161-point-ved-raekkegraenser.json",
+                                                   "statistik/results/161-ungdom-reglement-2026-27.md"
+                                               ]
+                                 }
+                   },
+                   {
+                       "aldersgruppe":  "U15",
+                       "koen":  "K",
+                       "raekke":  "B",
+                       "type":  "point",
+                       "nedre_graense":  1225,
+                       "oevre_graense":  1350,
+                       "testede_spillere":  89,
+                       "kilde":  {
+                                     "kort":  [
+                                                  160,
+                                                  161
+                                              ],
+                                     "filer":  [
+                                                   "statistik/results/160-ungdom-placeringsraekker.json",
+                                                   "statistik/results/161-point-ved-raekkegraenser.json",
+                                                   "statistik/results/161-ungdom-reglement-2026-27.md"
+                                               ]
+                                 }
+                   },
+                   {
+                       "aldersgruppe":  "U15",
+                       "koen":  "K",
+                       "raekke":  "C",
+                       "type":  "point",
+                       "nedre_graense":  1125,
+                       "oevre_graense":  1225,
+                       "testede_spillere":  89,
+                       "kilde":  {
+                                     "kort":  [
+                                                  160,
+                                                  161
+                                              ],
+                                     "filer":  [
+                                                   "statistik/results/160-ungdom-placeringsraekker.json",
+                                                   "statistik/results/161-point-ved-raekkegraenser.json",
+                                                   "statistik/results/161-ungdom-reglement-2026-27.md"
+                                               ]
+                                 }
+                   },
+                   {
+                       "aldersgruppe":  "U15",
+                       "koen":  "K",
+                       "raekke":  "D",
+                       "type":  "point",
+                       "nedre_graense":  null,
+                       "oevre_graense":  1125,
+                       "testede_spillere":  89,
+                       "kilde":  {
+                                     "kort":  [
+                                                  160,
+                                                  161
+                                              ],
+                                     "filer":  [
+                                                   "statistik/results/160-ungdom-placeringsraekker.json",
+                                                   "statistik/results/161-point-ved-raekkegraenser.json",
+                                                   "statistik/results/161-ungdom-reglement-2026-27.md"
+                                               ]
+                                 }
+                   },
+                   {
+                       "aldersgruppe":  "U17",
+                       "koen":  "M",
+                       "raekke":  "E",
+                       "type":  "placering",
+                       "nedre_graense":  1,
+                       "oevre_graense":  24,
+                       "testede_spillere":  94,
+                       "kilde":  {
+                                     "kort":  [
+                                                  160,
+                                                  161
+                                              ],
+                                     "filer":  [
+                                                   "statistik/results/160-ungdom-placeringsraekker.json",
+                                                   "statistik/results/161-point-ved-raekkegraenser.json",
+                                                   "statistik/results/161-ungdom-reglement-2026-27.md"
+                                               ]
+                                 }
+                   },
+                   {
+                       "aldersgruppe":  "U17",
+                       "koen":  "M",
+                       "raekke":  "E-M",
+                       "type":  "placering",
+                       "nedre_graense":  25,
+                       "oevre_graense":  36,
+                       "testede_spillere":  94,
+                       "kilde":  {
+                                     "kort":  [
+                                                  160,
+                                                  161
+                                              ],
+                                     "filer":  [
+                                                   "statistik/results/160-ungdom-placeringsraekker.json",
+                                                   "statistik/results/161-point-ved-raekkegraenser.json",
+                                                   "statistik/results/161-ungdom-reglement-2026-27.md"
+                                               ]
+                                 }
+                   },
+                   {
+                       "aldersgruppe":  "U17",
+                       "koen":  "M",
+                       "raekke":  "M",
+                       "type":  "point",
+                       "nedre_graense":  2150,
+                       "oevre_graense":  null,
+                       "testede_spillere":  94,
+                       "kilde":  {
+                                     "kort":  [
+                                                  160,
+                                                  161
+                                              ],
+                                     "filer":  [
+                                                   "statistik/results/160-ungdom-placeringsraekker.json",
+                                                   "statistik/results/161-point-ved-raekkegraenser.json",
+                                                   "statistik/results/161-ungdom-reglement-2026-27.md"
+                                               ]
+                                 }
+                   },
+                   {
+                       "aldersgruppe":  "U17",
+                       "koen":  "K",
+                       "raekke":  "E",
+                       "type":  "placering",
+                       "nedre_graense":  1,
+                       "oevre_graense":  24,
+                       "testede_spillere":  79,
+                       "kilde":  {
+                                     "kort":  [
+                                                  160,
+                                                  161
+                                              ],
+                                     "filer":  [
+                                                   "statistik/results/160-ungdom-placeringsraekker.json",
+                                                   "statistik/results/161-point-ved-raekkegraenser.json",
+                                                   "statistik/results/161-ungdom-reglement-2026-27.md"
+                                               ]
+                                 }
+                   },
+                   {
+                       "aldersgruppe":  "U17",
+                       "koen":  "K",
+                       "raekke":  "E-M",
+                       "type":  "placering",
+                       "nedre_graense":  25,
+                       "oevre_graense":  36,
+                       "testede_spillere":  79,
+                       "kilde":  {
+                                     "kort":  [
+                                                  160,
+                                                  161
+                                              ],
+                                     "filer":  [
+                                                   "statistik/results/160-ungdom-placeringsraekker.json",
+                                                   "statistik/results/161-point-ved-raekkegraenser.json",
+                                                   "statistik/results/161-ungdom-reglement-2026-27.md"
+                                               ]
+                                 }
+                   },
+                   {
+                       "aldersgruppe":  "U17",
+                       "koen":  "K",
+                       "raekke":  "M",
+                       "type":  "point",
+                       "nedre_graense":  1700,
+                       "oevre_graense":  null,
+                       "testede_spillere":  79,
+                       "kilde":  {
+                                     "kort":  [
+                                                  160,
+                                                  161
+                                              ],
+                                     "filer":  [
+                                                   "statistik/results/160-ungdom-placeringsraekker.json",
+                                                   "statistik/results/161-point-ved-raekkegraenser.json",
+                                                   "statistik/results/161-ungdom-reglement-2026-27.md"
+                                               ]
+                                 }
+                   }
+               ],
+    "coverage":  {
+                     "placement_pass":  550,
+                     "placement_tested":  562,
+                     "point_pass":  322,
+                     "point_tested":  323
+                 },
+    "historik":  {
+                     "earliest_saved_version_found":  "01-07-2019",
+                     "evidence_file":  "statistik/results/151-raa-svar/23-q23-GSB-oldest-historical-version.txt",
+                     "evidence_list_id":  288,
+                     "liste_287_historisk_test":  "ukendt",
+                     "aeldre_placeringer_og_graenser":  "ukendt",
+                     "calls_this_run":  1,
+                     "live_test":  "stopped: callback context not found; no POST sent"
+                 },
+    "kvartalshypotese":  {
+                             "test_not_run":  true,
+                             "candidate_dates":  [
+                                                     "2025-07-01",
+                                                     "2025-10-01",
+                                                     "2026-01-01",
+                                                     "2026-04-01",
+                                                     "2026-07-01"
+                                                 ],
+                             "minimum_calls":  "Ukendt; mindst versionsopslag og listehentning per dato/kohorte; fulde lister kan pagineres."
+                         }
+}
