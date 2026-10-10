@@ -1,0 +1,226 @@
+{
+  "dato": "2026-10-10",
+  "regel": {
+    "sikker": "Christoffer har selv valgt ID (8 stk.)",
+    "sandsynlig_plus (R1b)": "Præcis én kandidat har ranglisteoptrædener (>0) i evidensen fra kort 194; ikke bekræftet af Christoffer. R1b ramte rigtigt 8 af 8, hvor Christoffer selv tjekkede.",
+    "uafklaret": "Alle kandidater har 0 ranglisteoptrædener, ingen regel kan afgøre"
+  },
+  "valg": [
+    {
+      "navn": "Cecilie Johansen",
+      "normalized_id": "74",
+      "valgt_id": "346158",
+      "klasse": "sandsynlig_plus",
+      "kilde": "regel R1b",
+      "kandidater": "196670 (0) | 275756 (0) | 346158 (11)"
+    },
+    {
+      "navn": "Line Nielsen",
+      "normalized_id": "218",
+      "valgt_id": "14375",
+      "klasse": "sikker",
+      "kilde": "christoffer",
+      "kandidater": "14375 (5) | 211759 (0) | 319851 (0) | 346046 (0) | 60284 (0)"
+    },
+    {
+      "navn": "Jonathan W. Hansen",
+      "normalized_id": "226",
+      "valgt_id": "93216",
+      "klasse": "sikker",
+      "kilde": "christoffer",
+      "kandidater": "244750 (0) | 93216 (2)"
+    },
+    {
+      "navn": "Thor Pedersen",
+      "normalized_id": "356",
+      "valgt_id": "85360",
+      "klasse": "sikker",
+      "kilde": "christoffer",
+      "kandidater": "346163 (0) | 85360 (2)"
+    },
+    {
+      "navn": "Sebastian Almeida Møller",
+      "normalized_id": "460",
+      "valgt_id": "323997",
+      "klasse": "sikker",
+      "kilde": "christoffer",
+      "kandidater": "156553 (0) | 172328 (0) | 257822 (0) | 323755 (0) | 323997 (3) | 331929 (0)"
+    },
+    {
+      "navn": "Lene Sørensen",
+      "normalized_id": "461",
+      "valgt_id": "14764",
+      "klasse": "sikker",
+      "kilde": "christoffer",
+      "kandidater": "14764 (4) | 210991 (0) | 6170 (0) | 6926 (0)"
+    },
+    {
+      "navn": "Christian Staal",
+      "normalized_id": "466",
+      "valgt_id": "158750",
+      "klasse": "sikker",
+      "kilde": "christoffer",
+      "kandidater": "156578 (0) | 158750 (1)"
+    },
+    {
+      "navn": "Linda Bækgaard",
+      "normalized_id": "471",
+      "valgt_id": "16498",
+      "klasse": "sandsynlig_plus",
+      "kilde": "regel R1b",
+      "kandidater": "16498 (7)"
+    },
+    {
+      "navn": "Jens Møller",
+      "normalized_id": "488",
+      "valgt_id": "337313",
+      "klasse": "sikker",
+      "kilde": "christoffer",
+      "kandidater": "229018 (0) | 254438 (0) | 299417 (0) | 337313 (3)"
+    },
+    {
+      "navn": "Yiting Chen",
+      "normalized_id": "558",
+      "valgt_id": "251584",
+      "klasse": "sikker",
+      "kilde": "christoffer",
+      "kandidater": "251584 (2) | 306452 (0)"
+    },
+    {
+      "navn": "Carsten Nørgaard",
+      "normalized_id": "584",
+      "valgt_id": "238703",
+      "klasse": "sandsynlig_plus",
+      "kilde": "regel R1b",
+      "kandidater": "196704 (0) | 238703 (1)"
+    },
+    {
+      "navn": "Farshid Attarhamed",
+      "normalized_id": "686",
+      "valgt_id": "355361",
+      "klasse": "sandsynlig_plus",
+      "kilde": "regel R1b",
+      "kandidater": "355361 (1) | 363130 (0)"
+    },
+    {
+      "navn": "Martin Nielsen",
+      "normalized_id": "691",
+      "valgt_id": "",
+      "klasse": "uafklaret",
+      "kilde": "ingen regel",
+      "kandidater": "212589 (0) | 228123 (0) | 292653 (0) | 340168 (0) | 34166 (0) | 347588 (0) | 364776 (0) | 56997 (0) | 81705 (0) | 91951 (0)"
+    },
+    {
+      "navn": "Jan Pedersen",
+      "normalized_id": "740",
+      "valgt_id": "360676",
+      "klasse": "sandsynlig_plus",
+      "kilde": "regel R1b",
+      "kandidater": "178699 (0) | 238078 (0) | 252829 (0) | 309360 (0) | 360676 (1) | 7585 (0)"
+    },
+    {
+      "navn": "Chiori Nagatsuka",
+      "normalized_id": "752",
+      "valgt_id": "",
+      "klasse": "uafklaret",
+      "kilde": "ingen regel",
+      "kandidater": "253538 (0) | 348041 (0)"
+    },
+    {
+      "navn": "Morten Nielsen",
+      "normalized_id": "862",
+      "valgt_id": "",
+      "klasse": "uafklaret",
+      "kilde": "ingen regel",
+      "kandidater": "10824 (0) | 11869 (0) | 206496 (0) | 21524 (0) | 230123 (0) | 236510 (0) | 236858 (0) | 243073 (0) | 248329 (0) | 250064 (0) | 251682 (0) | 269497 (0) | 277855 (0) | 307144 (0) | 320154 (0) | 341447 (0) | 8612 (0)"
+    },
+    {
+      "navn": "Rasmus Kristensen",
+      "normalized_id": "954",
+      "valgt_id": "",
+      "klasse": "uafklaret",
+      "kilde": "ingen regel",
+      "kandidater": "234574 (0) | 269253 (0) | 325700 (0) | 344371 (0) | 366934 (0) | 81858 (0)"
+    },
+    {
+      "navn": "Torben Larsen",
+      "normalized_id": "965",
+      "valgt_id": "",
+      "klasse": "uafklaret",
+      "kilde": "ingen regel",
+      "kandidater": "14168 (0) | 296007 (0) | 355423 (0) | 359827 (0)"
+    },
+    {
+      "navn": "Christian Kjær",
+      "normalized_id": "1019",
+      "valgt_id": "356457",
+      "klasse": "sandsynlig_plus",
+      "kilde": "regel R1b",
+      "kandidater": "235147 (0) | 356457 (2)"
+    },
+    {
+      "navn": "Kim Jørgensen",
+      "normalized_id": "1026",
+      "valgt_id": "",
+      "klasse": "uafklaret",
+      "kilde": "ingen regel",
+      "kandidater": "15157 (0) | 165257 (0) | 178753 (0) | 199504 (0) | 211236 (0) | 211735 (0) | 223409 (0) | 228534 (0) | 276894 (0) | 69384 (0) | 8063 (0)"
+    },
+    {
+      "navn": "Gert Poulsen",
+      "normalized_id": "1084",
+      "valgt_id": "166793",
+      "klasse": "sandsynlig_plus",
+      "kilde": "regel R1b",
+      "kandidater": "166793 (1) | 322281 (0)"
+    },
+    {
+      "navn": "Frank Nielsen",
+      "normalized_id": "1204",
+      "valgt_id": "",
+      "klasse": "uafklaret",
+      "kilde": "ingen regel",
+      "kandidater": "199485 (0) | 213368 (0) | 231123 (0)"
+    },
+    {
+      "navn": "Jonathan Nielsen",
+      "normalized_id": "1952",
+      "valgt_id": "",
+      "klasse": "uafklaret",
+      "kilde": "ingen regel",
+      "kandidater": "338548 (0) | 359276 (0) | 361768 (0) | 89005 (0)"
+    },
+    {
+      "navn": "Leif Hansen",
+      "normalized_id": "2227",
+      "valgt_id": "",
+      "klasse": "uafklaret",
+      "kilde": "ingen regel",
+      "kandidater": "212382 (0) | 241625 (0)"
+    },
+    {
+      "navn": "Nicholas Andersen",
+      "normalized_id": "6848",
+      "valgt_id": "355150",
+      "klasse": "sandsynlig_plus",
+      "kilde": "regel R1b",
+      "kandidater": "212042 (0) | 355150 (3)"
+    },
+    {
+      "navn": "Noah larsen",
+      "normalized_id": "7026",
+      "valgt_id": "358233",
+      "klasse": "sandsynlig_plus",
+      "kilde": "regel R1b",
+      "kandidater": "267703 (0) | 358233 (5) | 362618 (0)"
+    },
+    {
+      "navn": "Philip Andersen",
+      "normalized_id": "7031",
+      "valgt_id": "357627",
+      "klasse": "sandsynlig_plus",
+      "kilde": "regel R1b",
+      "kandidater": "328895 (0) | 335301 (0) | 357627 (7)"
+    }
+  ]
+}
