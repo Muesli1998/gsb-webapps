@@ -177,3 +177,19 @@ test('ét job ad gangen, og skrivende værktøjer afvises mens et job kører', a
   assert.match(st, /FÆRDIG, exit 0/);
   assert.ok(!(await kald('git_add', { stier: ['d.txt'] })).fejl);
 });
+
+test('git_add afviser ".", "tools/.", "./x", tomme segmenter og mapper', async () => {
+  for (const sti of ['.', 'tools/.', './b.txt', 'tools//s.mjs', 'tools', 'tools/']) {
+    const r = await kald('git_add', { stier: [sti] });
+    assert.ok(r.fejl, sti);
+  }
+});
+
+test('node_test følger symlinks: en .test.mjs-symlink til kode uden for repoet afvises', async t => {
+  const udenfor = path.join(tmp, 'ekstern.test.mjs');
+  fs.writeFileSync(udenfor, 'import test from "node:test"; test("x", () => {});\n');
+  try { fs.symlinkSync(udenfor, path.join(repo, 'tools', 'ln.test.mjs'), 'file'); } catch { return t.skip('kan ikke oprette filsymlink her'); }
+  const r = await kald('node_test', { fil: 'tools/ln.test.mjs' });
+  assert.ok(r.fejl);
+  assert.match(r.tekst, /uden for repoet/);
+});

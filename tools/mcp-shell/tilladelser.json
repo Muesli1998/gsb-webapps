@@ -167,7 +167,8 @@
         "fil": {
           "moenster": "^(tools|statistik/scripts)/[A-Za-z0-9_./-]+\\.test\\.mjs$",
           "forbyd": "\\.\\.",
-          "paakraevet": true
+          "paakraevet": true,
+          "repoSti": true
         }
       },
       "trin": [

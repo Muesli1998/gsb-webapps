@@ -70,6 +70,22 @@ function aegte(p) {
   return path.join(fs.realpathSync.native(cur), ...rest);
 }
 
+// Fælles stitjek: relativ sti i repoet, ingen '.', '..', tomme segmenter eller .git, ingen mapper,
+// og den rigtige sti (efter symlinks/junctions) skal ligge i repoet.
+export function tjekRepoSti(s, repo, { kraevFil = false } = {}) {
+  if (typeof s !== 'string' || !/^[\p{L}\p{N}_.\/ -]+$/u.test(s)) throw new Error(`Ugyldig sti: ${s}`);
+  const dele = s.split('/');
+  if (s.startsWith('-') || s.startsWith('/') || dele.some(d => d === '' || d === '.' || d === '..') || dele[0] === '.git') throw new Error(`Ugyldig sti: ${s}`);
+  const fuld = path.resolve(repo, s);
+  if (!fuld.startsWith(repo + path.sep)) throw new Error(`Stien ligger uden for repoet: ${s}`);
+  const ar = norm(fs.realpathSync.native(repo));
+  const af = norm(aegte(fuld));
+  if (!af.startsWith(ar + path.sep)) throw new Error(`Stien peger uden for repoet (symlink/junction): ${s}`);
+  if (fs.existsSync(fuld)) {
+    if (fs.statSync(fuld).isDirectory()) throw new Error(`Stien er en mappe; angiv filer: ${s}`);
+  } else if (kraevFil) throw new Error(`Filen findes ikke: ${s}`);
+}
+
 export function tjekParametre(def = {}, given = {}, repo) {
   const ud = {};
   for (const k of Object.keys(given)) if (!(k in def)) throw new Error(`Ukendt parameter: ${k}`);
@@ -84,22 +100,14 @@ export function tjekParametre(def = {}, given = {}, repo) {
       ud[navn] = true;
     } else if (d.type === 'stier') {
       if (!Array.isArray(v) || v.length < 1 || v.length > 50) throw new Error(`${navn} skal være 1-50 stier`);
-      for (const s of v) {
-        if (typeof s !== 'string' || !/^[\p{L}\p{N}_.\/ -]+$/u.test(s)) throw new Error(`Ugyldig sti: ${s}`);
-        const dele = s.split('/');
-        if (s.startsWith('-') || s.startsWith('/') || dele.includes('..') || dele[0] === '.git') throw new Error(`Ugyldig sti: ${s}`);
-        const fuld = path.resolve(repo, s);
-        if (fuld !== repo && !fuld.startsWith(repo + path.sep)) throw new Error(`Stien ligger uden for repoet: ${s}`);
-        const ar = norm(fs.realpathSync.native(repo));
-        const af = norm(aegte(fuld));
-        if (af !== ar && !af.startsWith(ar + path.sep)) throw new Error(`Stien peger uden for repoet (symlink/junction): ${s}`);
-      }
+      for (const s of v) tjekRepoSti(s, repo, {});
       ud[navn] = v;
     } else {
       if (!d.moenster) throw new Error(`Konfigurationsfejl: ${navn} mangler "moenster"`);
       const t = String(v);
       if (!new RegExp(d.moenster, 'u').test(t)) throw new Error(`${navn} har ugyldig værdi`);
       if (d.forbyd && new RegExp(d.forbyd, 'iu').test(t)) throw new Error(`${navn} indeholder noget forbudt`);
+      if (d.repoSti) tjekRepoSti(t, repo, { kraevFil: true });
       ud[navn] = t;
     }
   }
