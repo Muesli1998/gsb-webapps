@@ -33,10 +33,12 @@ Din almindelige shell starter ikke på denne maskine (`setup refresh had errors`
 Mangler et felt i dagens data, så skriv 'findes ikke' og hvor det i så fald skulle komme fra. Skriv i `## Spørgsmål`; gæt ikke, skriv "ukendt" og gem evidensen.
 
 ## Spørgsmål
-(Tomt.)
+- Skal første version af hot streak være en pointstime pr. spiller, en rullende vindprocent eller deltagerens seneste runde-score?
+- Hvilken navnepolitik gælder for spillere under 18 år, hvis de indgår i visningen? Aldersgruppe/fødselsdato findes ikke i Dream Team-arkets felter, så dette er ukendt ud fra Sheet-data alene.
+- Forventede point kan ikke beregnes reelt fra 2025/26-eksemplet: ranglistepoint ved kampdato mangler. Opgaverne 169/170/173 er fremtidige afhængigheder, ikke udført datagrundlag.
 
 ## Tilbagefald
 Slet dokumentet.
 
 ## Resultat
-(Udfyldes af Codex.)
+Oprettet `docs/181-dreamteam-featuredesign.md` med alle fire kandidater, felter og datagaps, 2025/26-eksempler, indsats/risiko, afhængighedstabel, foreslået rækkefølge og Christoffers valg. Genlæste CSV-eksemplerne: 11 runder; Thor Pedersen har point i R1–R10 (2, 1, 1, 2, 1, 2, 2, 1, 2, 1); deltageren Thor har 17,5 i R7; højeste deltager-rundescore er 20 i R1 (delt af 6 deltagere), og højeste spiller-rundescore er 3. Müller–Almlund Højgaard-eksemplet har hjemme-sejr og 1 hjemme-point; forventningstal er ukendt uden ranglistepoint ved kampdato. `git diff --check` afsluttede uden whitespace-fejl. `git status --short` viste præcis kortfilen (udfyldning krævet af brugerens instruktion) og det nye designnotat. Ingen netværkskald, kode- eller databaseændringer.
