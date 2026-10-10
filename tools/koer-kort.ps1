@@ -7,6 +7,10 @@ param(
     [switch]$TillavDbAendring,
     [ValidateRange(1, 1440)]
     [int]$TimeoutMin = 90,
+    [ValidatePattern('^[A-Za-z0-9._-]+$')]
+    [string]$Model,
+    [ValidateSet('low', 'medium', 'high')]
+    [string]$Indsats,
     [switch]$Toer
 )
 
@@ -136,6 +140,13 @@ function Test-Preflight([string]$Number, [switch]$DryRun) {
     }
 }
 
+function Get-CodexModelArgs {
+    $parts = @()
+    if ($Model) { $parts += ('-m ' + $Model) }
+    if ($Indsats) { $parts += ('-c model_reasoning_effort=' + $Indsats) }
+    return ($parts -join ' ')
+}
+
 function Show-DryRun($Plan) {
     Write-Output ("Kort: " + $Plan.Number + " (" + $Plan.CardPath + ")")
     Write-Output ("Aktuel gren: " + (Invoke-GitText @('branch', '--show-current')))
@@ -145,7 +156,9 @@ function Show-DryRun($Plan) {
     Write-Output ("Node: " + $Plan.Node)
     Write-Output ('Ville k' + [char]0xF8 + 're: git pull --ff-only')
     Write-Output ("Ville oprette gren: git switch -c " + $Plan.Branch)
-    Write-Output (("Ville k" + [char]0xF8 + "re: codex exec --sandbox danger-full-access -o work/koersler/") + $Plan.Number + "/slutsvar.md -")
+    $extraArgs = Get-CodexModelArgs
+    Write-Output (("Ville k" + [char]0xF8 + "re: codex exec ") + $(if ($extraArgs) { $extraArgs + ' ' } else { '' }) + "--sandbox danger-full-access -o work/koersler/" + $Plan.Number + "/slutsvar.md -")
+    Write-Output ("Model: " + $(if ($Model) { $Model } else { '(standard fra config.toml)' }) + " | Indsats: " + $(if ($Indsats) { $Indsats } else { '(standard)' }))
     Write-Output ('Prompt ' + [char]0x2014 + ' f' + [char]0xF8 + 'rste 20 linjer:')
     $lines = $Plan.Prompt -split "\r?\n"
     $limit = [Math]::Min(20, $lines.Count)
@@ -206,7 +219,8 @@ function Invoke-Codex($Plan) {
     $logPath = Join-Path $outDir 'log.txt'
     $psi = New-Object System.Diagnostics.ProcessStartInfo
     $psi.FileName = $Plan.Codex
-    $psi.Arguments = 'exec --sandbox danger-full-access -o "' + $answerPath + '" -'
+    $extra = Get-CodexModelArgs
+    $psi.Arguments = 'exec ' + $(if ($extra) { $extra + ' ' } else { '' }) + '--sandbox danger-full-access -o "' + $answerPath + '" -'
     $psi.WorkingDirectory = $script:RepoRoot
     $psi.UseShellExecute = $false
     $psi.CreateNoWindow = $true
