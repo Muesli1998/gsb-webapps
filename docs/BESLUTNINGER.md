@@ -455,3 +455,21 @@ Dream Team-point, se ovenfor).
 **Hvorfor:** Data er allerede åbent tilgængeligt, og vi har allerede hentet fra siden i 154-161 uden at støde på et rigtigt værn. Det, der har kostet tid, er vores egne scripts (se opgave 162).
 
 **Fravalgt:** at skaffe en API-nøgle (findes ikke), og at gøre ungdomsdata særligt lukket i vores egne visninger, når kilden er offentlig.
+
+---
+
+## 2026-10-10 — Styring fra telefon: hvad gsb-shell må, og hvad den aldrig må
+
+**Besluttet (Christoffer):**
+- `apps/netlify-prod/` kan **aldrig** ændres fra telefonen eller via gsb-shell-værktøjerne. Kun på PC'en, af Christoffer selv.
+- Databaser: et kort, der skriver til en database, må godt køres fra telefonen, men kun med en ekstra godkendelse. Det er ikke bygget endnu (fase 2). Indtil da er 163, 169 og 175 blokeret for værktøjerne.
+- Push af main er tilladt som værktøj (`git_push`, kun `git push origin main`), fordi det kun handler om, at det er synkroniseret.
+- Netværkskort godkendes i chatten med `net_godkend` (hashen vises først, så godkendes præcis den version). Låsen genlåses af værktøjet selv; den skal ikke laves for hånd ved hver godkendelse.
+
+**Hvorfor:** PC'en kan stå tændt, og Christoffer vil starte og køre kort fra telefonen uden at skrive i PowerShell. Det, der ikke må gå galt (produktion på Netlify, databaser), får en hård regel eller en ekstra godkendelse; resten må være enkelt.
+
+**Hvad der er bygget (v1.5, `tools/mcp-shell/`):** Netlify-stier afvises i add/restore/mv; staged ændringer, flettegrene og push tjekkes for netlify-prod; kort i `blokeredeKort` (163, 169, 175 og 025, 026, 028, 029, 178, 180) kan ikke køres eller godkendes; kaldloft på 400 for godkendelse; en ændring i netlify-prod efter et job meldes.
+
+**Fravalgt:** at godkende alle kort automatisk, og en teknisk mur (egress-proxy med tæller og reelle skriverettigheder). Værnene er tillidsbaserede: Codex kører med fuld adgang, så reglerne er tjek og opdagelse, ikke en barriere. Se `tools/mcp-shell/README.md`, afsnittet "Hullerne".
+
+**Åbent:** fase 2 (databasekort med ekstra godkendelse og plangodkendelse for 163). PC'en må ikke gå i dvale, og Claude Desktop skal køre, for at fjernstyring virker.

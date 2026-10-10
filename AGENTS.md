@@ -146,6 +146,16 @@ Skriv kun `## Spørgsmål` og `## Resultat` med `node tools/skriv-kort-afsnit.mj
 
 ---
 
+## Styring fra telefon (gsb-shell)
+
+Claude kan køre git og kort via den begrænsede server `gsb-shell` (kilde i `tools/mcp-shell/`, kørende kopi i `%USERPROFILE%\gsb-shell-mcp`). Læs `tools/mcp-shell/README.md`, før du ændrer den.
+- `apps/netlify-prod/` kan aldrig ændres via værktøjerne. Kort, der rører den (025, 026, 028, 029, 178, 180), og kort, der skriver databaser (163, 169, 175), er blokeret for værktøjerne.
+- Netværkskort køres kun efter Christoffers ord i chatten: `net_godkend` viser først kortets hash og godkender så præcis den version. Ændres kortet bagefter (også linjeskift), skal det godkendes igen.
+- Værnene er tillidsbaserede (Codex kører med fuld adgang). Opdag og meld; antag ikke, at de forhindrer noget.
+- Beslutningen står i `docs/BESLUTNINGER.md`, 2026-10-10.
+
+---
+
 ## Arbejdsform
 
 **Hent før du går i gang, send når du holder op.** `git pull` først,

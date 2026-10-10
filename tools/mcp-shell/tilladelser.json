@@ -110,6 +110,29 @@
           ]
         }
       ],
+      "skriver": true,
+      "forkontrol": [
+        "ingen_netlify_staged"
+      ]
+    },
+    "git_gendan_fil": {
+      "beskrivelse": "git restore -- <stier>: kasserer ALLE ikke-committede ændringer i de angivne filer (kan ikke fortrydes). Aldrig apps/netlify-prod/. Tjek git_diff_stat først.",
+      "parametre": {
+        "stier": {
+          "type": "stier",
+          "paakraevet": true
+        }
+      },
+      "trin": [
+        {
+          "cmd": "git",
+          "args": [
+            "restore",
+            "--",
+            "{stier*}"
+          ]
+        }
+      ],
       "skriver": true
     },
     "git_flet_gren": {
@@ -145,7 +168,45 @@
           ]
         }
       ],
-      "skriver": true
+      "skriver": true,
+      "forkontrol": [
+        "ingen_netlify_gren"
+      ]
+    },
+    "git_skift_main": {
+      "beskrivelse": "git switch main (kun hvis arbejdstræet er rent)",
+      "trin": [
+        {
+          "cmd": "git",
+          "args": [
+            "switch",
+            "main"
+          ]
+        }
+      ],
+      "skriver": true,
+      "forkontrol": [
+        "rent_trae"
+      ]
+    },
+    "git_push": {
+      "beskrivelse": "git push origin main (kun fra main; afvises hvis det der pushes rører apps/netlify-prod/; ingen flag, ingen andre grene)",
+      "trin": [
+        {
+          "cmd": "git",
+          "args": [
+            "push",
+            "origin",
+            "main"
+          ]
+        }
+      ],
+      "skriver": true,
+      "tidsgraenseSek": 90,
+      "forkontrol": [
+        "paa_main",
+        "ingen_netlify_push"
+      ]
     },
     "tjek_hashes": {
       "beskrivelse": "Tjek de fem databasers hashes (node tools/tjek/db-hashes.mjs)",
@@ -238,6 +299,122 @@
           ]
         }
       ]
+    },
+    "kort_koer_net": {
+      "beskrivelse": "NETVÆRKSKORT. TILLIDSBASERET UDLØSER, IKKE EN SIKKERHEDSBARRIERE: Codex kører med fuld adgang (danger-full-access) inde i kørslen. Kun kort, hvis præcise indhold (SHA-256, verificeret af runneren efter dens git pull) Christoffer har godkendt i net-kort.json, kan startes, og -TillavDbAendring sendes aldrig. Netværksbudget og databaseforbud er regler i kortet, ikke tekniske grænser. Kører i baggrunden, ét job ad gangen, uden commit.",
+      "baggrund": true,
+      "tidsgraenseSek": 6000,
+      "laas": [
+        "tools/koer-kort.ps1",
+        "@net-kort.json"
+      ],
+      "parametre": {
+        "kort": {
+          "moenster": "^\\d{1,3}$",
+          "paakraevet": true
+        },
+        "toer": {
+          "type": "boolean",
+          "beskrivelse": "Tørkørsel: viser kun hvad der ville ske"
+        },
+        "model": {
+          "moenster": "^[A-Za-z0-9._-]+$",
+          "tilladte": [
+            "gpt-6-luna"
+          ]
+        },
+        "indsats": {
+          "moenster": "^(low|medium|high)$"
+        }
+      },
+      "trin": [
+        {
+          "cmd": "powershell",
+          "args": [
+            "-NoProfile",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-File",
+            "tools/koer-kort.ps1",
+            "-Kort",
+            "{kort}",
+            "-TillavNetvaerk",
+            {
+              "naar": "netHash",
+              "vaerdi": [
+                "-ForventetKortHash",
+                "{netHash}"
+              ]
+            },
+            {
+              "naar": "toer",
+              "vaerdi": [
+                "-Toer"
+              ]
+            },
+            {
+              "naar": "model",
+              "vaerdi": [
+                "-Model",
+                "{model}"
+              ]
+            },
+            {
+              "naar": "indsats",
+              "vaerdi": [
+                "-Indsats",
+                "{indsats}"
+              ]
+            }
+          ]
+        }
+      ],
+      "net": true
     }
-  }
+  },
+  "indbyggede": {
+    "net_godkend": {
+      "beskrivelse": "Godkend et netværkskort til kort_koer_net. Uden sha256: forhåndsvisning (hash + Netværk-linje) og intet godkendes. Med sha256 (mindst 12 tegn): godkender præcis den version og genlåser net-kort.json. Kald kun efter at Christoffer i chatten har sagt ja til netop dette kort. Kort der skriver database eller rører apps/netlify-prod/ kan ikke godkendes her.",
+      "parametre": {
+        "kort": {
+          "moenster": "^\\d{1,3}$",
+          "paakraevet": true
+        },
+        "sha256": {
+          "moenster": "^[0-9a-fA-F]{12,64}$",
+          "beskrivelse": "Kortets hash (mindst 12 tegn) fra forhåndsvisningen"
+        }
+      }
+    },
+    "net_traek": {
+      "beskrivelse": "Træk godkendelsen af et netværkskort tilbage og genlås net-kort.json",
+      "parametre": {
+        "kort": {
+          "moenster": "^\\d{1,3}$",
+          "paakraevet": true
+        }
+      }
+    },
+    "git_flyt_kort": {
+      "beskrivelse": "git mv af et kort fra work/future/ til work/aabne/ (kræver ren main). Flytningen er staged; commit bagefter med git_commit.",
+      "parametre": {
+        "kort": {
+          "moenster": "^\\d{1,3}$",
+          "paakraevet": true
+        }
+      }
+    }
+  },
+  "blokeredeKort": [
+    "163",
+    "169",
+    "175",
+    "025",
+    "026",
+    "028",
+    "029",
+    "178",
+    "180"
+  ],
+  "maxNetKald": 400
 }

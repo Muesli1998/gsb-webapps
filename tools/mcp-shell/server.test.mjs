@@ -89,7 +89,7 @@ test('add + commit med eksplicit sti; Co-Authored-By afvises', async () => {
 });
 
 test('gulvet: git push og ukendt kommando afvises selv hvis config tillader dem', async () => {
-  assert.match((await kald('sletter')).tekst, /ikke tilladt/);
+  assert.match((await kald('sletter')).tekst, /ikke tilladt|kun præcis/);
   assert.match((await kald('skal')).tekst, /ikke tilladt/);
 });
 
