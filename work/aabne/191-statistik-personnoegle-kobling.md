@@ -1,4 +1,4 @@
-# Opgave 191 — personnøgle: kobl hvert spiller-ID i kampdata til én person
+﻿# Opgave 191 — personnøgle: kobl hvert spiller-ID i kampdata til én person
 
 **Status:** `work/aabne/` — besluttet af Christoffer 2026-10-10 ("personnøgler SKAL fikses").
 **Kategori:** statistik · **Bølge:** 1 · **Afhænger af:** 164 (færdig) · **Netværk:** ingen
