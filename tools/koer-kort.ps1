@@ -160,7 +160,15 @@ function Get-AllowedPaths([string]$Text, [string]$CardPath) {
     if ($section.Success) {
         $mayTouch = [regex]::Match($section.Groups[1].Value, ('(?ms)M' + [char]0xE5 + ' r' + [char]0xF8 + 'res(?::\*\*|\*\*\s*:|:)\s*(.*?)(?=M' + [char]0xE5 + ' ikke r' + [char]0xF8 + 'res|\z)'))
         if ($mayTouch.Success) {
-            foreach ($item in [regex]::Matches($mayTouch.Groups[1].Value, '\x60([^\x60]+)\x60')) {
+            $scanText = $mayTouch.Groups[1].Value
+            # Kort der skriver "de nye filer ovenfor" i Maa roere: tillad ogsaa de stier, der er navngivet under Maal og Output.
+            if ($scanText -match 'ovenfor') {
+                foreach ($secName in @(('M' + [char]0xE5 + 'l'), 'Output')) {
+                    $sec = [regex]::Match($Text, ('(?ms)^## ' + $secName + '\s*(.*?)(?=^##\s|\z)'))
+                    if ($sec.Success) { $scanText += [Environment]::NewLine + $sec.Groups[1].Value }
+                }
+            }
+            foreach ($item in [regex]::Matches($scanText, '\x60([^\x60]+)\x60')) {
                 $path = $item.Groups[1].Value.Replace('\', '/').Trim()
                 if ($path -match '[*?]') {
                     $wildcard = $path.IndexOfAny([char[]]@('*', '?'))
