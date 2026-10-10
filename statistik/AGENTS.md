@@ -154,6 +154,18 @@ Alt nedenfor er målt i opgave 156, 159 og 160; kortene og rapporterne i
 
 ---
 
+## Standardregler for kort der henter data
+
+- Kør kommandoer med forhøjet adgang; se rodens `AGENTS.md`, “Codex på Windows: kendte fejl og hvad man gør”.
+- Brug `scripts/lib/hent.mjs`; gem råsvar og kaldlog før parsing.
+- Brug den smalle stopregel i biblioteket. `RECAPTCHA_SITE_KEY` og Cookiebot er konfiguration, ikke blokeringer.
+- Sammenlign hash efter de to første kald med forskellige parametre; ens svar betyder, at filteret ikke virker.
+- Beregn kaldloftet før start, og skriv loftet i rapporten.
+- Brug ikke login, cookies, CAPTCHA eller samtykkeklik.
+- Databaser er read-only. Kør `node tools/tjek/db-hashes.mjs` til sidst.
+- Efterprøv egne tal og genåbn rapportfiler før rapportering; se rodens `AGENTS.md`, “Efterprøv dit eget resultat”.
+- Åben hentning fra badmintonplayer.dk er tilladt uden API-nøgle efter Christoffers beslutning 2026-10-09.
+
 ## Hemmeligheder
 
 `SR_CallbackContext` hentes frisk fra sidens HTML ved hvert kald og gemmes

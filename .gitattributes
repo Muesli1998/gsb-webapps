@@ -5,3 +5,4 @@
 *.mp4 binary
 *.xlsx binary
 *.db binary
+*.gz binary

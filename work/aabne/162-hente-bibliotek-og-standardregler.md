@@ -58,10 +58,14 @@ Christoffer har besluttet (2026-10-09, se `docs/BESLUTNINGER.md`): vi må hente 
 Skriv i "Spørgsmål". Gæt ikke på, hvordan en gammel kontrakt (felter, URL'er) ser ud: læs `158b-pointaendring-vs-kampe.mjs` og `158-turneringer.mjs` og genbrug deres kald.
 
 ## Spørgsmål
-(Tomt.)
+Ingen åbne spørgsmål. `.gitattributes` fandtes allerede med otte regler; den blev ændret til de krævede præcis to linjer, så den står som ændret fil i `git status --short`.
 
 ## Tilbagefald
 Slet de nye filer og det nye afsnit i `statistik/AGENTS.md`. Ingen database er berørt.
 
 ## Resultat
-(Udfyldes af Codex.)
+12 tests bestod (`node --test statistik/scripts/lib/hent.test.mjs`), herunder tilfælde a–l. Hashkontrollen afsluttede med kode 0; alle fem databaser viste `ja`, og de fundne filer ligger under `statistik/data/`. `git diff --check` afsluttede uden fejl. Ingen netværkskald blev foretaget.
+
+`git status --short` viste `.gitattributes`, `statistik/AGENTS.md`, de nye `statistik/HASHES.txt`, `statistik/scripts/lib/` og `tools/tjek/db-hashes.mjs`. `.gitattributes` er ændret fra otte til præcis to krævede regler. Dette kort blev også udfyldt efter den udtrykkelige instruktion, selv om det ikke er nævnt i Afgrænsningen.
+
+(Vurdering) Standardafsnittet er 11 linjer og samler de krævede hente-regler.
