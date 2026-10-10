@@ -11,6 +11,8 @@ param(
     [string]$Model,
     [ValidateSet('low', 'medium', 'high')]
     [string]$Indsats,
+    [ValidatePattern('^[0-9a-fA-F]{64}$')]
+    [string]$ForventetKortHash,
     [switch]$Toer
 )
 
@@ -113,6 +115,20 @@ function Test-Preflight([string]$Number, [switch]$DryRun) {
     if (-not $DryRun) {
         [void](Invoke-GitText @('pull', '--ff-only'))
     }
+    # Kortet laeses igen EFTER pull. Prompten bygges af praecis de bytes, der er hashet (-ForventetKortHash),
+    # ikke af en tekst laest foer pull. Samme bytes bruges til branchnavn og netvaerkslinje.
+    $card = Get-CardFile $Number
+    $bytes = [System.IO.File]::ReadAllBytes($card.FullName)
+    if ($ForventetKortHash) {
+        $sha = [System.Security.Cryptography.SHA256]::Create()
+        $actual = ([System.BitConverter]::ToString($sha.ComputeHash($bytes)) -replace '-', '').ToLowerInvariant()
+        if ($actual -ne $ForventetKortHash.ToLowerInvariant()) {
+            Stop-Kort (("Kortet er " + [char]0xE6 + "ndret siden godkendelsen (forventede ") + $ForventetKortHash.ToLowerInvariant() + ", fik " + $actual + ").")
+        }
+    }
+    $text = ([System.Text.UTF8Encoding]::new($false)).GetString($bytes).TrimStart([char]0xFEFF)
+    $branch = Get-BranchFromCard $text $Number
+    $network = Get-NetworkLine $text
     $existing = Invoke-GitText @('branch', '--list', $branch)
     if (-not [string]::IsNullOrWhiteSpace($existing)) {
         Stop-Kort (("M" + [char]0xE5 + "lgrenen findes allerede: ") + $branch)
