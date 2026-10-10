@@ -32,10 +32,16 @@ Din almindelige shell starter ikke på denne maskine (`setup refresh had errors`
 Er en definition uklar (fx 'aktiv spiller'), så vælg ikke; skriv de mulige definitioner. Skriv i `## Spørgsmål`; gæt ikke, skriv "ukendt" og gem evidensen.
 
 ## Spørgsmål
-(Tomt.)
+- Aktiv spiller er ukendt som færdig definition. Mulige definitioner: mindst én kamp på GSB-siden i sæsonen, trupopført i sæsonen eller aktuelt medlem. Beregningen her bruger kun observeret kampdeltagelse.
+- Fysisk personantal er ukendt jf. 164; spilleroptællinger i rapporten er player_id-ID og kan ikke præsenteres som sikre persontal.
+- Aktuel sæson fra afhængighed 163 er ukendt/ikke fundet i checkoutet; denne rapport dækker kun 2025/26. Rangliste-snapshot er 10. april 2026 og er en særskilt måledato.
 
 ## Tilbagefald
 Slet de nye filer.
 
 ## Resultat
-(Udfyldes af Codex.)
+- Oprettet statistik/scripts/187-nogletal.mjs, statistik/results/187-nogletal.md og .json; 15 kandidatnøgletal har SQL, værdi og automatisk opdateringsvurdering.
+- 2025/26: 400 holdkampe, 396/400 med browser_verified; 73 holdidentifikatorer; 2.921 individuelle kampe; 4.537 GSB-side spiller-kamprelationer; 289 observerede spiller-ID (ikke fysiske personer). Gennemsnit: 15,70 relationer pr. ID.
+- Fordelingen af hold pr. aldersgruppe og histogrammet over kampe pr. spiller-ID skjules, fordi celler under fem findes. Aldersgruppe- og M/K-grupperinger på spiller-ID skjules også, fordi fem-person-grænsen ikke kan verificeres uden sikker personkobling.
+- Foreslået bestyrelsesside: 7 nøgletal om holdkampe, resultatdækning, holdantal, individuelle kampe, aldersgruppers holdbredde, turneringsrækker og sæsonudvikling. Sæsonudvikling kræver ensartet datadækning.
+- Kontrol: de tre anvendte DB-forbindelser er read-only og query_only=ON; ingen netværkskald. Databaser: 5/5 SHA-256 matcher statistik/HASHES.txt. git diff --check uden fejl.

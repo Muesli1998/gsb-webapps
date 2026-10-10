@@ -1,0 +1,202 @@
+{
+  "task": 187,
+  "season": "2025/26",
+  "season_id": 2025,
+  "sources": [
+    "gsb-statistik-normalized.db",
+    "rangliste-point.db",
+    "liga-landskab.db"
+  ],
+  "read_only": true,
+  "network_calls": 0,
+  "definitions": {
+    "gsb_side": "Eksakt match mellem team.name_raw og home_name_raw/away_name_raw for teamets tilknyttede GSB-klub (club_id 1093).",
+    "age_group": "competition.age_group_id som turneringskontekst; ikke fødselsår eller entydig alder.",
+    "player_count": "Distinct normalized player_id på den udledte GSB-side; fysisk personantal er ukendt jf. opgave 164.",
+    "new_player_proxy": "ID observeret i 2025/26, men ikke i 2024/25; må ikke kaldes nye personer.",
+    "suppression": "Ingen tabelcelle med under fem observationer vises; hele fordelingen skjules hvis en celle falder under fem for at undgå differensslutning."
+  },
+  "summary": {
+    "matches": 400,
+    "teams": 73,
+    "browser_verified": 396,
+    "api_errors": 4,
+    "individual_games": 2921,
+    "appearances": 4537,
+    "player_ids": 289,
+    "average_appearances_per_player_id": 15.698961937716263
+  },
+  "candidate_metrics": [
+    {
+      "id": 1,
+      "name": "Holdkampe med GSB-hold",
+      "value": 400,
+      "unit": "holdkampe",
+      "automatic": "Ja, efter sæsonens kampimport",
+      "query": "SELECT COUNT(*) AS matches,\n      COUNT(DISTINCT tm.gsb_team_id) AS teams,\n      SUM(tm.status = 'browser_verified') AS browser_verified,\n      SUM(tm.status = 'api_error') AS api_errors\n    FROM team_matches tm JOIN teams t ON t.team_id = tm.gsb_team_id\n    WHERE tm.season_id = 2025 AND t.club_id = 1093",
+      "caveat": "Omfatter alle kampstatusser; fire kampe har api_error."
+    },
+    {
+      "id": 2,
+      "name": "Kampresultater med browser-verificeret status",
+      "value": "396 / 400 (99,0 %)",
+      "unit": "holdkampe",
+      "automatic": "Ja, efter kampimport og statuskontrol",
+      "query": "SELECT COUNT(*) AS matches,\n      COUNT(DISTINCT tm.gsb_team_id) AS teams,\n      SUM(tm.status = 'browser_verified') AS browser_verified,\n      SUM(tm.status = 'api_error') AS api_errors\n    FROM team_matches tm JOIN teams t ON t.team_id = tm.gsb_team_id\n    WHERE tm.season_id = 2025 AND t.club_id = 1093",
+      "caveat": "Dækker statusfeltet, ikke en separat kontrol af hvert resultat."
+    },
+    {
+      "id": 3,
+      "name": "Hold med mindst én kamp",
+      "value": 73,
+      "unit": "hold-ID’er",
+      "automatic": "Ja",
+      "query": "SELECT COUNT(*) AS matches,\n      COUNT(DISTINCT tm.gsb_team_id) AS teams,\n      SUM(tm.status = 'browser_verified') AS browser_verified,\n      SUM(tm.status = 'api_error') AS api_errors\n    FROM team_matches tm JOIN teams t ON t.team_id = tm.gsb_team_id\n    WHERE tm.season_id = 2025 AND t.club_id = 1093",
+      "caveat": "Tæller hold-ID’er i sæsonen, ikke nødvendigvis aktive hold ved sæsonslut."
+    },
+    {
+      "id": 4,
+      "name": "Individuelle kampe i GSB-holdkampe",
+      "value": 2921,
+      "unit": "individuelle kampe",
+      "automatic": "Ja, hvis kampdetaljer er importeret",
+      "query": "SELECT COUNT(DISTINCT im.individual_match_id) AS individual_games\n    FROM individual_matches im JOIN team_matches tm USING (team_match_id)\n    JOIN teams t ON t.team_id = tm.gsb_team_id\n    WHERE tm.season_id = 2025 AND t.club_id = 1093",
+      "caveat": "Tæller single- og doublekampe på begge sider af GSB-holdkampene."
+    },
+    {
+      "id": 5,
+      "name": "Spilleroptrædener på GSB-siden",
+      "value": 4537,
+      "unit": "spiller-kamprelationer",
+      "automatic": "Ja, hvis kampdetaljer er importeret",
+      "query": "WITH g AS (\n      SELECT tm.team_match_id, t.name_raw,\n        CASE WHEN tm.home_name_raw = t.name_raw THEN 'home'\n             WHEN tm.away_name_raw = t.name_raw THEN 'away' END AS gsb_side\n      FROM team_matches tm JOIN teams t ON t.team_id = tm.gsb_team_id\n      WHERE tm.season_id = 2025 AND t.club_id = 1093\n    )\n    SELECT COUNT(*) AS appearances, COUNT(DISTINCT imp.player_id) AS player_ids,\n      COUNT(DISTINCT im.individual_match_id) AS individual_games\n    FROM g JOIN individual_matches im USING (team_match_id)\n    JOIN individual_match_players imp USING (individual_match_id)\n    WHERE imp.side = g.gsb_side",
+      "caveat": "Side bestemt via eksakt holdnavn; tæller en spiller én gang pr. individuel kamp."
+    },
+    {
+      "id": 6,
+      "name": "Observerede spiller-ID’er på GSB-siden",
+      "value": 289,
+      "unit": "ID’er",
+      "automatic": "Ja",
+      "query": "WITH g AS (\n      SELECT tm.team_match_id, t.name_raw,\n        CASE WHEN tm.home_name_raw = t.name_raw THEN 'home'\n             WHEN tm.away_name_raw = t.name_raw THEN 'away' END AS gsb_side\n      FROM team_matches tm JOIN teams t ON t.team_id = tm.gsb_team_id\n      WHERE tm.season_id = 2025 AND t.club_id = 1093\n    )\n    SELECT COUNT(*) AS appearances, COUNT(DISTINCT imp.player_id) AS player_ids,\n      COUNT(DISTINCT im.individual_match_id) AS individual_games\n    FROM g JOIN individual_matches im USING (team_match_id)\n    JOIN individual_match_players imp USING (individual_match_id)\n    WHERE imp.side = g.gsb_side",
+      "caveat": "Ikke et bevist antal fysiske personer; aliaser og ID-koblinger er uafklarede jf. 164."
+    },
+    {
+      "id": 7,
+      "name": "Gennemsnitlige optrædener pr. observeret spiller-ID",
+      "value": "15,70",
+      "unit": "optrædener pr. ID",
+      "automatic": "Ja",
+      "query": "WITH g AS (\n      SELECT tm.team_match_id, t.name_raw,\n        CASE WHEN tm.home_name_raw = t.name_raw THEN 'home'\n             WHEN tm.away_name_raw = t.name_raw THEN 'away' END AS gsb_side\n      FROM team_matches tm JOIN teams t ON t.team_id = tm.gsb_team_id\n      WHERE tm.season_id = 2025 AND t.club_id = 1093\n    )\n    SELECT COUNT(*) AS appearances, COUNT(DISTINCT imp.player_id) AS player_ids,\n      COUNT(DISTINCT im.individual_match_id) AS individual_games\n    FROM g JOIN individual_matches im USING (team_match_id)\n    JOIN individual_match_players imp USING (individual_match_id)\n    WHERE imp.side = g.gsb_side",
+      "caveat": "Gennemsnit af relationer over unikke ID’er; siger ikke noget om fordelingen."
+    },
+    {
+      "id": 8,
+      "name": "Antal aldersgrupper med GSB-holdkampe",
+      "value": "10 aldersgrupper; under-fem-hold-celler skjult",
+      "unit": "grupper",
+      "automatic": "Ja",
+      "query": "SELECT c.age_group_id, COUNT(DISTINCT tm.team_match_id) AS matches,\n      COUNT(DISTINCT tm.gsb_team_id) AS teams\n    FROM team_matches tm JOIN teams t ON t.team_id = tm.gsb_team_id\n    JOIN competitions c ON c.competition_id = tm.competition_id\n    WHERE tm.season_id = 2025 AND t.club_id = 1093\n    GROUP BY c.age_group_id ORDER BY c.age_group_id",
+      "caveat": "Antallet er turneringsgrupper, ikke spilleralder; under-fem-hold-celler skjules."
+    },
+    {
+      "id": 9,
+      "name": "Observerede spiller-ID pr. aldersgruppe",
+      "value": "10 aldersgrupper; ID/person-celler undertrykt",
+      "unit": "gruppeoversigt",
+      "automatic": "Ja",
+      "query": "WITH g AS (\n      SELECT tm.team_match_id, t.name_raw,\n        CASE WHEN tm.home_name_raw = t.name_raw THEN 'home'\n             WHEN tm.away_name_raw = t.name_raw THEN 'away' END AS gsb_side\n      FROM team_matches tm JOIN teams t ON t.team_id = tm.gsb_team_id\n      WHERE tm.season_id = 2025 AND t.club_id = 1093\n    )\n    SELECT c.age_group_id, COUNT(DISTINCT imp.player_id) AS player_ids\n    FROM g JOIN individual_matches im USING (team_match_id)\n    JOIN individual_match_players imp USING (individual_match_id)\n    JOIN team_matches tm USING (team_match_id)\n    JOIN competitions c USING (competition_id)\n    WHERE imp.side = g.gsb_side\n    GROUP BY c.age_group_id ORDER BY c.age_group_id",
+      "caveat": "Aldersgrupper overlapper. ID-tal er ikke fysisk personantal; kan ikke bruges som alderstrin pr. person."
+    },
+    {
+      "id": 10,
+      "name": "Først observerede spiller-ID’er i forhold til forrige sæson",
+      "value": "100 / 289 (34,6 %)",
+      "unit": "ID’er / sæson-ID’er",
+      "automatic": "Ja, som ID-proxy",
+      "query": "WITH g AS (\n      SELECT tm.season_id, tm.team_match_id, t.name_raw,\n        CASE WHEN tm.home_name_raw = t.name_raw THEN 'home'\n             WHEN tm.away_name_raw = t.name_raw THEN 'away' END AS gsb_side\n      FROM team_matches tm JOIN teams t ON t.team_id = tm.gsb_team_id\n      WHERE tm.season_id IN (2024, 2025) AND t.club_id = 1093\n    ), people AS (\n      SELECT g.season_id, imp.player_id FROM g\n      JOIN individual_matches im USING (team_match_id)\n      JOIN individual_match_players imp USING (individual_match_id)\n      WHERE imp.side = g.gsb_side GROUP BY g.season_id, imp.player_id\n    )\n    SELECT COUNT(*) AS ids_2025, SUM(NOT EXISTS (\n        SELECT 1 FROM people old WHERE old.season_id = 2024 AND old.player_id = cur.player_id\n      )) AS first_observed_ids\n    FROM people cur WHERE cur.season_id = 2025",
+      "caveat": "Ikke nye personer: manglende kampe, ændrede ID’er og historisk dækning kan ligne tilgang."
+    },
+    {
+      "id": 11,
+      "name": "Rangliste ID total i liste 288 (10. april 2026)",
+      "value": 182,
+      "unit": "ID-tal; M/K-fordeling skjult",
+      "automatic": "Ja, ved sammenligneligt snapshot",
+      "query": "SELECT COUNT(DISTINCT player_id) AS player_ids, ROUND(AVG(points), 1) AS mean_points\n    FROM ranking_points WHERE list_id = 288 AND version_date = '2026-04-10' AND LOWER(club) LIKE '%gladsaxe%'",
+      "caveat": "ID-total er ikke bevist personantal; M/K-celler skjules, fordi personkobling ikke er afklaret."
+    },
+    {
+      "id": 12,
+      "name": "Gennemsnitlige point samlet i liste 288",
+      "value": "1.523,7",
+      "unit": "point pr ID",
+      "automatic": "Ja, ved sammenligneligt snapshot",
+      "query": "SELECT COUNT(DISTINCT player_id) AS player_ids, ROUND(AVG(points), 1) AS mean_points\n    FROM ranking_points WHERE list_id = 288 AND version_date = '2026-04-10' AND LOWER(club) LIKE '%gladsaxe%'",
+      "caveat": "Afhænger af snapshotdato; parametrene M/K er ikke bekræftet personkøn."
+    },
+    {
+      "id": 13,
+      "name": "GSB-holdkampenes ligaomfang",
+      "value": "73 hold-ID’er i 73 turneringsrækker",
+      "unit": "hold / turneringsrækker",
+      "automatic": "Ja",
+      "query": "SELECT COUNT(DISTINCT c.competition_id) AS competitions,\n      COUNT(DISTINCT tm.gsb_team_id) AS teams,\n      COUNT(DISTINCT c.age_group_id) AS age_groups\n    FROM team_matches tm JOIN teams t ON t.team_id = tm.gsb_team_id\n    JOIN competitions c ON c.competition_id = tm.competition_id\n    WHERE tm.season_id = 2025 AND t.club_id = 1093",
+      "caveat": "Competition ID er sæsonspecifik og svarer til en kilde-/turneringsrække."
+    },
+    {
+      "id": 14,
+      "name": "Nationalt registreret liga-landskab",
+      "value": "877 puljer; 7.226 holdrækker",
+      "unit": "puljer / holdrækker",
+      "automatic": "Ja, efter landskabsimport",
+      "query": "SELECT COUNT(DISTINCT league_group_id) AS groups,\n      COUNT(*) AS team_rows, COUNT(DISTINCT team_name_raw) AS distinct_team_names\n    FROM league_group_teams WHERE season_id = 2025",
+      "caveat": "National kontekst, ikke et GSB-resultat; rå pulje- og holdrækker kan indeholde dubletter på tværs af grupper."
+    },
+    {
+      "id": 15,
+      "name": "GSB-holdkampe fra 2024/25 til 2025/26",
+      "value": "295 → 400",
+      "unit": "registrerede holdkampe",
+      "automatic": "Ja",
+      "query": "SELECT tm.season_id, COUNT(*) AS matches, COUNT(DISTINCT tm.gsb_team_id) AS teams\n    FROM team_matches tm JOIN teams t ON t.team_id = tm.gsb_team_id\n    WHERE tm.season_id IN (2024, 2025) AND t.club_id = 1093\n    GROUP BY tm.season_id ORDER BY tm.season_id",
+      "caveat": "Må ikke fortolkes som vækst uden kontrol af ensartet historisk datadækning."
+    }
+  ],
+  "tables": {
+    "ageGroups": null,
+    "ageMatchCounts": null,
+    "appearanceHistogram": null,
+    "rankingGender": null
+  },
+  "privacy": {
+    "person_level_rows": 0,
+    "names_or_player_ids_in_output": 0,
+    "small_cell_tables_withheld": [
+      "ageGroups",
+      "ageMatchCounts",
+      "appearanceHistogram",
+      "rankingGender (personkobling ukendt)"
+    ]
+  },
+  "recommended_page": {
+    "metrics": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      13,
+      15
+    ],
+    "rationale": "De viser aktivitet, kampdækning, antal hold, omfanget af spillede kampe, alders-/turneringsbredde og udvikling i registreret aktivitet uden at rangere eller identificere spillere. Vis 2024/25→2025/26 som datadækningsjusteret indikator og først efter sammenlignelighedskontrol.",
+    "exclude_for_now": [
+      6,
+      9,
+      10,
+      11,
+      12
+    ],
+    "exclusions": "Afhængighederne 163/164 giver ikke sikkert fysisk personantal, fødselsår, personkøn eller stabil historisk ID-identitet. Disse kan vises internt som datakvalitetsmål, men bør ikke stå som bestyrelsesfakta endnu."
+  }
+}
