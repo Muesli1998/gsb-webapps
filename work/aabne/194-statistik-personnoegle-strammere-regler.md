@@ -44,6 +44,7 @@
 
 ## Shell
 Din almindelige shell starter ikke på denne maskine (`setup refresh had errors`). Kør alle kommandoer med **forhøjet adgang**; Christoffer godkender hver gang. Se rodens `AGENTS.md`, afsnittet om Codex på Windows. Fejler `apply_patch`, brug metoden i samme afsnit.
+Skriv `## Spørgsmål` og `## Resultat` i dette kort KUN med `node tools/skriv-kort-afsnit.mjs work/aabne/194-statistik-personnoegle-strammere-regler.md <Spørgsmål|Resultat> work/koersler/194/tekst.md` (gem teksten først i den fil; kortstien skal være præcis denne). Rediger aldrig kortfilen på anden måde. Fejler scriptet, så stop og skriv fejlen i dit slutsvar. Scripts og rapporter med æøå skrives som UTF-8.
 
 ## Ved tvivl
 Gæt ikke. Er to ID'er muligvis samme person, så vælg `uafklaret` og skriv kandidaterne. Skriv i `## Spørgsmål`.
