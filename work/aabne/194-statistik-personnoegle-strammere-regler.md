@@ -50,10 +50,10 @@ Skriv `## Spørgsmål` og `## Resultat` i dette kort KUN med `node tools/skriv-k
 Gæt ikke. Er to ID'er muligvis samme person, så vælg `uafklaret` og skriv kandidaterne. Skriv i `## Spørgsmål`.
 
 ## Spørgsmål
-(Tomt.)
+Ingen identitetsvalg foretaget. Kan rangliste-/national-ID-koblinger fra kort 164 behandles som kandidatbeviser uden uafhængig bekræftelse i de underliggende kilder? Kort 191 markerer dem fortsat uafklarede; denne kørsel nåede ikke at efterprøve fuldt navn, klub og sæson for hver kandidat.
 
 ## Tilbagefald
 Slet de nye filer. Ingen database er berørt.
 
 ## Resultat
-(Udfyldes af Codex.)
+Arbejdet blev ikke gennemført. Ingen outputfiler for 194 blev oprettet, og ingen database blev åbnet eller ændret. Derfor er klasseantal efter, konflikttal, stikprøve, manuel CSV, GSB-dækning og kontrol af db-hashes ukendt. Netværkskald: 0. Gren kontrolleret: arbejde/194-personnoegle-runde-2. `git diff --check` gav ingen fejl ved start; `git status --short` var tom ved start.
