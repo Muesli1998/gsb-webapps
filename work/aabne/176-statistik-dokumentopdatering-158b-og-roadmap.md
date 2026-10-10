@@ -1,6 +1,6 @@
 # Opgave 176 — opdatér dokumenter efter 158b og den nye hentestandard (kun tekst, ingen kode)
 
-**Status:** `work/future/` — IKKE i køen. Flyttes til `work/aabne/` først når Christoffer siger det (se `work/future/000-kortplan-boelger-og-afhaengigheder.md`).  
+**Status:** `work/aabne/` — besluttet af Christoffer 2026-10-10 (plan: `work/future/000-kortplan-boelger-og-afhaengigheder.md`).  
 **Kategori:** statistik · **Bølge:** 1 · **Afhænger af:** 162; 158b færdig (er det) · **Netværk:** ingen
 
 **Trin:** Små, afgrænsede tekstrettelser, så fremtidige sessioner ikke arbejder ud fra forældet viden.

@@ -1,6 +1,6 @@
 # Opgave 164 — stamdata for GSB-spillere: navne, aliaser og ID'er på tværs af kilderne (kun læsning)
 
-**Status:** `work/future/` — IKKE i køen. Flyttes til `work/aabne/` først når Christoffer siger det (se `work/future/000-kortplan-boelger-og-afhaengigheder.md`).  
+**Status:** `work/aabne/` — besluttet af Christoffer 2026-10-10 (plan: `work/future/000-kortplan-boelger-og-afhaengigheder.md`).  
 **Kategori:** statistik · **Bølge:** 1 · **Afhænger af:** — (kan køres nu) · **Netværk:** ingen
 
 **Trin:** Forberedelse til alle kort, der skal slå en spiller op: 163, 169, 173, 186. Løser også det åbne spørgsmål om "vores side" (BESLUTNINGER 2026-10-04).

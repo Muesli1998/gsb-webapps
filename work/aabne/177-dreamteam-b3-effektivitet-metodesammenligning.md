@@ -1,6 +1,6 @@
 # Opgave 177 — B3 'effektivitet': sammenlign rangeringsmetoder på rigtige data (kun læsning)
 
-**Status:** `work/future/` — IKKE i køen. Flyttes til `work/aabne/` først når Christoffer siger det (se `work/future/000-kortplan-boelger-og-afhaengigheder.md`).  
+**Status:** `work/aabne/` — besluttet af Christoffer 2026-10-10 (plan: `work/future/000-kortplan-boelger-og-afhaengigheder.md`).  
 **Kategori:** dreamteam · **Bølge:** 1 · **Afhænger af:** — (kan køres nu) · **Netværk:** ingen
 
 **Trin:** Klargør Christoffers metodevalg (roadmap punkt 7): Bayes, Wilson, minimumsgrænse eller ELO.

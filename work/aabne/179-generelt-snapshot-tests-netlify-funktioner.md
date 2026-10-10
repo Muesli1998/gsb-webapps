@@ -1,6 +1,6 @@
 # Opgave 179 — tests der fastholder nuværende adfærd i navne.js, hent-resultater.js og analyse.js (uden at ændre dem)
 
-**Status:** `work/future/` — IKKE i køen. Flyttes til `work/aabne/` først når Christoffer siger det (se `work/future/000-kortplan-boelger-og-afhaengigheder.md`).  
+**Status:** `work/aabne/` — besluttet af Christoffer 2026-10-10 (plan: `work/future/000-kortplan-boelger-og-afhaengigheder.md`).  
 **Kategori:** generelt · **Bølge:** 1 · **Afhænger af:** — (kan køres nu) · **Netværk:** ingen
 
 **Trin:** Sikkerhedsnet før 029 (F1/F2), 026 (admin-gate) og enhver ny feature: ændres adfærd, ser vi det.

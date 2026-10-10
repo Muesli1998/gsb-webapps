@@ -1,6 +1,6 @@
 # Opgave 172 — rækkegrænser som afledt JSON og test af historiske versioner af liste 287 (højst 10 kald)
 
-**Status:** `work/future/` — IKKE i køen. Flyttes til `work/aabne/` først når Christoffer siger det (se `work/future/000-kortplan-boelger-og-afhaengigheder.md`).  
+**Status:** `work/aabne/` — besluttet af Christoffer 2026-10-10 (plan: `work/future/000-kortplan-boelger-og-afhaengigheder.md`).  
 **Kategori:** statistik · **Bølge:** 1 · **Afhænger af:** 162 (til kaldene) · **Netværk:** højst 10 kald
 
 **Trin:** Gør 160/161's fund til en maskinlæsbar tabel og afklarer, om grænserne kan følges bagud i tid.
