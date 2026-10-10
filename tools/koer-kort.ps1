@@ -16,9 +16,22 @@ function Stop-Kort([string]$Message) {
     throw ("KOER-KORT: " + $Message)
 }
 
+# Windows PowerShell 5.1 goer stderr fra eksterne programmer til fejl, der stopper scriptet
+# ($ErrorActionPreference = 'Stop'), ogsaa naar programmet lykkes (git skriver "Switched to..." paa stderr).
+# Her koeres programmet derfor med 'Continue', og kun exitkoden afgoer.
+function Invoke-Native([scriptblock]$Block) {
+    $old = $ErrorActionPreference
+    $ErrorActionPreference = 'Continue'
+    try {
+        $global:LASTEXITCODE = 0
+        return @(& $Block 2>&1 | ForEach-Object { [string]$_ })
+    } finally {
+        $ErrorActionPreference = $old
+    }
+}
+
 function Invoke-GitText([string[]]$Arguments) {
-    $global:LASTEXITCODE = 0
-    $output = @(& git -C $script:RepoRoot @Arguments 2>&1)
+    $output = Invoke-Native { & git -C $script:RepoRoot @Arguments }
     $code = $LASTEXITCODE
     if ($code -ne 0) {
         Stop-Kort ("git " + ($Arguments -join ' ') + " fejlede (exit " + $code + "): " + ($output -join [Environment]::NewLine))
@@ -106,7 +119,7 @@ function Test-Preflight([string]$Number, [switch]$DryRun) {
     $node = Get-Command node -ErrorAction SilentlyContinue
     if (-not $node) { Stop-Kort 'node kan ikke findes i PATH.' }
     $global:LASTEXITCODE = 0
-    $nodeVersion = @(& node --version 2>&1)
+    $nodeVersion = Invoke-Native { & node --version }
     if ($LASTEXITCODE -ne 0) { Stop-Kort (("node kan ikke k" + [char]0xF8 + "res: ") + ($nodeVersion -join ' ')) }
 
     return [pscustomobject]@{
@@ -225,12 +238,12 @@ function Invoke-Codex($Plan) {
     $hashResult = 'ikke tjekket: kort 162 mangler'
     if (Test-Path -LiteralPath $hashScript -PathType Leaf) {
         $global:LASTEXITCODE = 0
-        $hashOutput = @(& node $hashScript 2>&1)
+        $hashOutput = Invoke-Native { & node $hashScript }
         $hashResult = ($hashOutput -join [Environment]::NewLine)
         if ($LASTEXITCODE -ne 0) { $hashResult = 'FEJLEDE: ' + $hashResult }
     }
     $global:LASTEXITCODE = 0
-    $diffCheck = @(& git -C $script:RepoRoot diff --check 2>&1)
+    $diffCheck = Invoke-Native { & git -C $script:RepoRoot diff --check }
     $diffCode = $LASTEXITCODE
     $report = @(
         ("Gren: " + $Plan.Branch)
