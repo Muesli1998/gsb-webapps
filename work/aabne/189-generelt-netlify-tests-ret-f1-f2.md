@@ -38,10 +38,14 @@ Din almindelige shell starter ikke på denne maskine (`setup refresh had errors`
 Kan F2 ikke afgøres ud fra koden, så skriv det og lad testen stå som todo. Skriv i `## Spørgsmål`; gæt ikke, skriv "ukendt" og gem evidensen.
 
 ## Spørgsmål
-(Tomt.)
+- Fixture (a), singles HS: **tælles**. Ukendt række efterfulgt af kendt række gav 1 sejr. Bemærk: analyse.js definerer HS som én række pr. board, så fixturet kan ikke have begge rækker på samme board; den afprøver senere kendt række efter et ukendt singles-board.
+- Fixture (b), doubles HD: **tælles**. Ukendt første række og kendt spiller i anden række på samme board gav 1 sejr.
 
 ## Tilbagefald
 `git checkout` på testfilen og 029.
 
 ## Resultat
-(Udfyldes af Codex.)
+- Testfilen har 12 tests: 11 bestået, 0 fejlet, 1 todo. Todo F1 fejlede som forventet (`not ok ... # TODO`, `1 !== 0`); de øvrige F2-fixtures består.
+- F2 vurderes rettet i begge testede forløb. 029 fik den anviste baggrundslinje.
+- Ubrugt `analyse`-konstant fjernet; snapshot-testen navngiver nuværende F1-adfærd.
+- Kontrol: `git diff --check` uden fejl; `git status --short apps/` tom; ændrede filer er dette kort, 029 og testfilen.

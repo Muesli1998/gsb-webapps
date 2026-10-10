@@ -46,10 +46,6 @@ for (const [label, input, expected] of [
   ['none', ['Ada Spiller'], false],
 ]) test(`erWalkover: ${label}`, () => assert.equal(erWalkover(input), expected));
 
-const analyse = load(path.join(functions, 'analyse.js'), {
-  googleapis: { google: {} }, '../lib/navne': names.module.exports,
-  '../lib/statistik-spillere': { STATISTIK_SPILLERE: [] },
-});
 const runAnalyse = async (rows, players = ['Alice', 'Bob', 'Cara']) => {
   const google = { auth: { GoogleAuth: class {} }, sheets: () => ({ spreadsheets: { values: { get: async ({ range }) => ({ data: { values: range.startsWith('Resultater') ? rows : players.map((n) => [n]) } }) } } }) };
   const ctx = load(path.join(functions, 'analyse.js'), { googleapis: { google }, '../lib/navne': names.module.exports, '../lib/statistik-spillere': { STATISTIK_SPILLERE: [] } });
@@ -58,18 +54,26 @@ const runAnalyse = async (rows, players = ['Alice', 'Bob', 'Cara']) => {
   return JSON.parse(response.body);
 };
 const row = (home, away, winner, set1 = '21-10') => ['1', 'GSB 1', 'HS', home, away, ...set1.split('-'), '', winner];
-test('analyse aggregation: ordinary home and away wins plus unknown winner', async () => {
+test("analyse snapshot: vinder '?' tælles i dag som tab (F1)", async () => {
   const out = await runAnalyse([row('Alice', 'X', 'Hjemme'), row('Bob', 'X', 'Ude'), row('Cara', 'X', '?')]);
   assert.deepEqual(JSON.parse(JSON.stringify(out.teams)), [{ hold: 'GSB 1', wins: 1, losses: 2, total: 3, winPct: 33.3 }]);
   assert.equal(out.totalRows, 3);
 });
 test('KENDT FEJL — F1: walkover must not collapse to away win', { todo: 'Forventet at fejle indtil 029' }, async () => {
-  const out = await runAnalyse([row('Ikke fremmødt', 'Alice', 'Ude')]);
+  const out = await runAnalyse([row('Alice', 'Rival', '?')]);
+  assert.equal(out.teams[0].wins, 0);
   assert.equal(out.teams[0].losses, 0);
 });
-test('KENDT FEJL — F2: uncounted first row must not hide a later countable row', { todo: 'Forventet at fejle indtil 029' }, async () => {
-  const out = await runAnalyse([row('Unknown', 'Rival', 'Hjemme'), row('Alice', 'Rival', 'Hjemme')]);
-  assert.equal(out.teams[0].wins, 1);
+test('F2: later known singles board and second row of doubles board are counted', async () => {
+  // Singles: each row is its own board; the later known-player row must count.
+  const singles = await runAnalyse([row('Unknown', 'Rival', 'Hjemme'), row('Alice', 'Rival', 'Hjemme')]);
+  assert.equal(singles.teams[0].wins, 1);
+  // Doubles: rows 1 and 2 share board 1; recognition on row 2 must count it.
+  const doubles = await runAnalyse([
+    ['1', 'GSB 1', 'HD', 'Unknown', 'Rival', '21', '10', '', 'Hjemme'],
+    ['1', 'GSB 1', 'HD', 'Alice', 'Rival', '21', '10', '', 'Hjemme'],
+  ]);
+  assert.equal(doubles.teams[0].wins, 1);
 });
 
 

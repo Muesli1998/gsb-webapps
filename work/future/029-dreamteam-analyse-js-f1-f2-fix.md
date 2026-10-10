@@ -16,6 +16,8 @@ til stede i den live fil (efterset 2026-09-15, linjenumre nedenfor).
 
 ## Kontekst
 
+Opdatering 2026-10-10 (kort 189): F2 er rettet i analyse.js (countedMatches); kun F1 mangler.
+
 **F1 (linje 109):** `const hjemmeWon = vinder === 'Hjemme';` — enhver
 værdi der ikke er præcis strengen `'Hjemme'` (inkl. `'?'`, som
 `hent-resultater.js` skriver ved en walkover) tolkes som udesejr, ikke
